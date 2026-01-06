@@ -21,8 +21,14 @@ if %errorlevel% neq 0 (
     exit /b 0
 )
 
-REM Stop the container
+REM Gracefully stop xrdp services before stopping the container
 echo.
+echo Stopping RDP services gracefully...
+docker exec debian-dev-container bash -c "pkill -TERM xrdp-sesman 2>/dev/null || true" >nul 2>&1
+docker exec debian-dev-container bash -c "pkill -TERM xrdp 2>/dev/null || true" >nul 2>&1
+timeout /t 2 /nobreak >nul
+
+REM Stop the container
 echo Stopping container 'debian-dev-container'...
 docker stop debian-dev-container
 
