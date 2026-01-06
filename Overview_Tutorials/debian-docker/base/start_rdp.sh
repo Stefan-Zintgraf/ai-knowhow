@@ -21,6 +21,15 @@ if [ ! -S /var/run/dbus/system_bus_socket ]; then
     service dbus start || true
 fi
 
+# Start SSH server
+echo "Starting SSH server..."
+mkdir -p /var/run/sshd
+if [ ! -f /etc/ssh/ssh_host_rsa_key ]; then
+    ssh-keygen -A
+fi
+/usr/sbin/sshd
+echo "SSH server started."
+
 # Start xrdp sesman service in background
 /usr/sbin/xrdp-sesman
 

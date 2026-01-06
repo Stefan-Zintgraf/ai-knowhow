@@ -7,9 +7,6 @@ REM Set VNC port mapping (host port -> container port 5901)
 set VNC_PORT=15901
 REM Set SSH port mapping (host port -> container port 22)
 set SSH_PORT=2222
-REM Set SMB port mappings (host ports -> container ports 139, 445)
-set SMB_PORT_139=1139
-set SMB_PORT_445=1445
 
 REM VNC checking/starting is currently disabled
 REM set USE_VNC=1
@@ -20,7 +17,7 @@ if not defined CONTAINER_NAME (
     echo.
     echo Container 'debian-dev-container' does not exist. Creating it...
     echo.
-    docker run -d -p %RDP_PORT%:3389 -p %VNC_PORT%:5901 -p %SSH_PORT%:22 -p %SMB_PORT_139%:139 -p %SMB_PORT_445%:445 --user root --name debian-dev-container debian-dev:latest
+    docker run -d -p %RDP_PORT%:3389 -p %VNC_PORT%:5901 -p %SSH_PORT%:22 --user root --name debian-dev-container debian-dev:latest
     REM Verify container was created (docker run might return non-zero even on success)
     timeout /t 1 /nobreak >nul
     set CONTAINER_NAME=
@@ -101,7 +98,7 @@ if defined CONTAINER_RUNNING (
         )
     )
     echo Checking SSH service status...
-    docker exec debian-dev-container bash -c "service ssh status >nul 2>&1 || service sshd status >nul 2>&1" >nul 2>&1
+    docker exec debian-dev-container bash -c "ps aux | grep '[s]shd' | grep -v grep" >nul 2>&1
     set SSH_RUNNING=0
     if %errorlevel% equ 0 (
         set SSH_RUNNING=1
@@ -109,29 +106,12 @@ if defined CONTAINER_RUNNING (
     ) else (
         echo SSH service is not running.
     )
-    echo Checking SMB service status...
-    docker exec debian-dev-container bash -c "service smbd status >nul 2>&1" >nul 2>&1
-    set SMB_RUNNING=0
-    if %errorlevel% equ 0 (
-        set SMB_RUNNING=1
-        echo SMB service is running.
-    ) else (
-        echo SMB service is not running.
-    )
     echo.
     if !SSH_RUNNING! equ 1 (
         echo Container is ready for SSH connection:
         echo   Address: localhost:%SSH_PORT%
         echo   Username: dev
         echo   Password: dev
-        echo.
-    )
-    if !SMB_RUNNING! equ 1 (
-        echo Container is ready for SMB connection:
-        echo   Address: \\localhost\share
-        echo   Username: dev
-        echo   Password: dev
-        echo   Or: \\localhost:%SMB_PORT_445%\share
         echo.
     )
     pause
@@ -215,25 +195,13 @@ if defined USE_VNC (
     )
 )
 
-REM Start SSH server
-echo Starting SSH server...
-docker exec debian-dev-container bash -c "service ssh start || service sshd start" >nul 2>&1
-timeout /t 1 /nobreak >nul
-docker exec debian-dev-container bash -c "service ssh status >nul 2>&1 || service sshd status >nul 2>&1" >nul 2>&1
+REM Check SSH server status (it should start automatically via entrypoint)
+echo Checking SSH server status...
+timeout /t 2 /nobreak >nul
+docker exec debian-dev-container bash -c "ps aux | grep '[s]shd' | grep -v grep" >nul 2>&1
 set SSH_RUNNING=0
 if %errorlevel% equ 0 (
     set SSH_RUNNING=1
-)
-
-REM Start SMB server
-echo Starting SMB server...
-docker exec debian-dev-container bash -c "service smbd start" >nul 2>&1
-docker exec debian-dev-container bash -c "service nmbd start" >nul 2>&1
-timeout /t 1 /nobreak >nul
-docker exec debian-dev-container bash -c "service smbd status >nul 2>&1" >nul 2>&1
-set SMB_RUNNING=0
-if %errorlevel% equ 0 (
-    set SMB_RUNNING=1
 )
 
 if !SSH_RUNNING! equ 1 (
@@ -246,20 +214,6 @@ if !SSH_RUNNING! equ 1 (
     echo.
 ) else (
     echo [WARNING] SSH service may not be running properly.
-    echo.
-)
-
-if !SMB_RUNNING! equ 1 (
-    echo [SUCCESS] SMB service is running!
-    echo.
-    echo You can now connect via SMB:
-    echo   Address: \\localhost\share
-    echo   Username: dev
-    echo   Password: dev
-    echo   Or: \\localhost:%SMB_PORT_445%\share
-    echo.
-) else (
-    echo [WARNING] SMB service may not be running properly.
     echo.
 )
 

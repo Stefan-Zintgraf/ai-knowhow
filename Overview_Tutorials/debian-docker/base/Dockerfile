@@ -26,11 +26,14 @@ RUN \
     sudo \
     nano \
     mousepad \
+    chromium \
     curl \
     wget \
     git \
+    git-cola \
     iproute2 \
     net-tools \
+    iputils-ping \
     \
     # C/C++ build essentials
     build-essential \
@@ -86,14 +89,12 @@ RUN \
 ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US:en
 ENV LC_ALL=en_US.UTF-8
+ENV PATH="/usr/local/sbin:/usr/sbin:/sbin:${PATH}"
 
 # Accept build arguments for user credentials
 ARG DOCKER_USERNAME=dev
 ARG DOCKER_PASSWORD=dev
 ARG VNC_PASSWORD=password
-# Optional: Set USE_SSH=1 to enable SSH server, USE_SMB=1 to enable SMB server
-ARG USE_SSH=
-ARG USE_SMB=
 
 # Set up VNC environment
 ENV VNC_RESOLUTION=1920x1080
@@ -107,52 +108,33 @@ RUN \
   && git config --system --add safe.directory '*' \
   && /bin/dbus-uuidgen > /etc/machine-id # XFCE Config
 
-# Conditionally install and configure SSH server
+# Add common aliases to user's bash configuration files
 RUN \
-  --mount=type=cache,target=/var/cache/apt,sharing=locked \
-  --mount=type=cache,target=/var/lib/apt,sharing=locked \
-  if [ -n "${USE_SSH}" ]; then \
-    apt-get -y update \
-    && DEBIAN_FRONTEND=noninteractive apt-get -y --no-install-recommends install openssh-server \
-    && mkdir -p /var/run/sshd \
-    && sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin no/' /etc/ssh/sshd_config \
-    && sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config \
-    && sed -i 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/' /etc/ssh/sshd_config \
-    && rm -rf /var/lib/apt/lists/*; \
-  fi
+  echo "alias ll='ls -l'" >> /home/${DOCKER_USERNAME}/.bashrc \
+  && echo "shopt -s expand_aliases" > /home/${DOCKER_USERNAME}/.bash_profile \
+  && echo "alias ll='ls -l'" >> /home/${DOCKER_USERNAME}/.bash_profile \
+  && echo "[ -f ~/.bashrc ] && . ~/.bashrc" >> /home/${DOCKER_USERNAME}/.bash_profile \
+  && chown ${DOCKER_USERNAME}:${DOCKER_USERNAME} /home/${DOCKER_USERNAME}/.bashrc \
+  && chown ${DOCKER_USERNAME}:${DOCKER_USERNAME} /home/${DOCKER_USERNAME}/.bash_profile
 
-# Conditionally install and configure Samba server
+# Install and configure SSH server
 RUN \
   --mount=type=cache,target=/var/cache/apt,sharing=locked \
   --mount=type=cache,target=/var/lib/apt,sharing=locked \
-  if [ -n "${USE_SMB}" ]; then \
-    apt-get -y update \
-    && DEBIAN_FRONTEND=noninteractive apt-get -y --no-install-recommends install samba \
-    && mkdir -p /var/lib/samba/private \
-    && mkdir -p /var/run/samba \
-    && mkdir -p /home/${DOCKER_USERNAME}/share \
-    && chown ${DOCKER_USERNAME}:${DOCKER_USERNAME} /home/${DOCKER_USERNAME}/share \
-    && chmod 755 /home/${DOCKER_USERNAME}/share \
-    && echo "[global]" > /etc/samba/smb.conf \
-    && echo "   workgroup = WORKGROUP" >> /etc/samba/smb.conf \
-    && echo "   server string = Debian Dev Server" >> /etc/samba/smb.conf \
-    && echo "   security = user" >> /etc/samba/smb.conf \
-    && echo "   map to guest = Bad User" >> /etc/samba/smb.conf \
-    && echo "   dns proxy = no" >> /etc/samba/smb.conf \
-    && echo "" >> /etc/samba/smb.conf \
-    && echo "[share]" >> /etc/samba/smb.conf \
-    && echo "   comment = Shared Folder" >> /etc/samba/smb.conf \
-    && echo "   path = /home/${DOCKER_USERNAME}/share" >> /etc/samba/smb.conf \
-    && echo "   browseable = yes" >> /etc/samba/smb.conf \
-    && echo "   read only = no" >> /etc/samba/smb.conf \
-    && echo "   guest ok = no" >> /etc/samba/smb.conf \
-    && echo "   valid users = ${DOCKER_USERNAME}" >> /etc/samba/smb.conf \
-    && echo "   create mask = 0664" >> /etc/samba/smb.conf \
-    && echo "   directory mask = 0775" >> /etc/samba/smb.conf \
-    && (echo "${DOCKER_PASSWORD}"; echo "${DOCKER_PASSWORD}") | smbpasswd -a -s ${DOCKER_USERNAME} \
-    && smbpasswd -e ${DOCKER_USERNAME} \
-    && rm -rf /var/lib/apt/lists/*; \
-  fi
+  apt-get -y update \
+  && DEBIAN_FRONTEND=noninteractive apt-get -y --no-install-recommends install openssh-server \
+  && mkdir -p /var/run/sshd \
+  && ssh-keygen -A \
+  && sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin no/' /etc/ssh/sshd_config \
+  && sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config \
+  && sed -i 's/#PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config \
+  && sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config \
+  && sed -i 's/#PubkeyAuthentication yes/PubkeyAuthentication yes/' /etc/ssh/sshd_config \
+  && if ! grep -q "^PasswordAuthentication" /etc/ssh/sshd_config; then echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config; fi \
+  && if ! grep -q "^PermitRootLogin" /etc/ssh/sshd_config; then echo "PermitRootLogin no" >> /etc/ssh/sshd_config; fi \
+  && if ! grep -q "^PubkeyAuthentication" /etc/ssh/sshd_config; then echo "PubkeyAuthentication yes" >> /etc/ssh/sshd_config; fi \
+  && rm -rf /var/lib/apt/lists/*
+
 
 COPY start_rdp.sh /usr/bin/start_rdp.sh
 RUN sed -i 's/\r$//' /usr/bin/start_rdp.sh && chmod +x /usr/bin/start_rdp.sh
@@ -165,11 +147,7 @@ WORKDIR /home/${DOCKER_USERNAME}
 
 EXPOSE 3389/tcp
 EXPOSE 5901/tcp
-# SSH port (only exposed if USE_SSH is set)
-# EXPOSE 22/tcp
-# SMB ports (only exposed if USE_SMB is set)
-# EXPOSE 139/tcp
-# EXPOSE 445/tcp
+EXPOSE 22/tcp
 
 ENTRYPOINT [ "/usr/bin/start_rdp.sh" ]
 

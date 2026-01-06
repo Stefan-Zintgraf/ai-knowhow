@@ -4,6 +4,47 @@ setlocal enabledelayedexpansion
 REM Change to the script's directory
 cd /d "%~dp0"
 
+REM Parse command-line arguments
+set FORCE_REBUILD=0
+set NO_CACHE=
+:parse_args
+if "%~1"=="" goto args_done
+if /i "%~1"=="-r" (
+    set FORCE_REBUILD=1
+    set NO_CACHE=--no-cache
+    shift
+    goto parse_args
+)
+if /i "%~1"=="--rebuild" (
+    set FORCE_REBUILD=1
+    set NO_CACHE=--no-cache
+    shift
+    goto parse_args
+)
+if /i "%~1"=="-h" goto show_help
+if /i "%~1"=="--help" goto show_help
+shift
+goto parse_args
+
+:show_help
+echo.
+echo Usage: %~nx0 [OPTIONS]
+echo.
+echo Options:
+echo   -r, --rebuild    Force a complete rebuild from scratch (removes existing image
+echo                    and builds without cache)
+echo   -h, --help       Show this help message
+echo.
+echo Examples:
+echo   %~nx0              Build normally (prompts if image exists)
+echo   %~nx0 -r           Force complete rebuild from scratch
+echo   %~nx0 --rebuild    Force complete rebuild from scratch
+echo.
+pause
+exit /b 0
+
+:args_done
+
 REM Check if .env file exists
 if not exist ".env" (
     echo.
@@ -56,14 +97,6 @@ if not exist ".env.example" (
         echo # If not set, DOCKER_PASSWORD will be used as the VNC password
         echo # VNC_PASSWORD=dev
         echo.
-        echo # USE_SSH: Enable SSH server in the container ^(optional^)
-        echo # Set to 1 to install and configure SSH server ^(port 22^)
-        echo # USE_SSH=1
-        echo.
-        echo # USE_SMB: Enable SMB/CIFS server in the container ^(optional^)
-        echo # Set to 1 to install and configure Samba server ^(ports 139, 445^)
-        echo # USE_SMB=1
-        echo.
     ) > .env.example
 )
 
@@ -71,16 +104,12 @@ REM Read credentials from .env file
 set DOCKER_USERNAME=
 set DOCKER_PASSWORD=
 set VNC_PASSWORD=
-set USE_SSH=
-set USE_SMB=
 
 for /f "usebackq eol=# tokens=1,2 delims==" %%a in (".env") do (
     REM Read key-value pairs, skip comment lines (handled by eol=#)
     if /i "%%a"=="DOCKER_USERNAME" set "DOCKER_USERNAME=%%b"
     if /i "%%a"=="DOCKER_PASSWORD" set "DOCKER_PASSWORD=%%b"
     if /i "%%a"=="VNC_PASSWORD" set "VNC_PASSWORD=%%b"
-    if /i "%%a"=="USE_SSH" set "USE_SSH=%%b"
-    if /i "%%a"=="USE_SMB" set "USE_SMB=%%b"
 )
 
 REM Check if credentials were found
@@ -104,18 +133,11 @@ if "!VNC_PASSWORD!"=="" (
 REM Check if Docker image already exists
 docker images debian-dev:latest --format "{{.Repository}}:{{.Tag}}" 2>nul | findstr /C:"debian-dev:latest" >nul
 if !errorlevel! equ 0 (
-    echo.
-    echo [WARNING] Docker image 'debian-dev:latest' already exists!
-    echo.
-    echo What would you like to do?
-    echo   1. Remove the existing image and build a new one
-    echo   2. Cancel and exit
-    echo.
-    set /p choice="Enter your choice (1 or 2): "
-    
-    if "!choice!"=="1" (
+    if !FORCE_REBUILD! equ 1 (
+        REM Force rebuild: automatically remove existing image
         echo.
-        echo Removing existing image and associated containers...
+        echo [INFO] Force rebuild requested. Removing existing image and associated containers...
+        echo.
         
         REM Find and stop all containers using this image
         for /f "tokens=*" %%c in ('docker ps -a --filter "ancestor=debian-dev:latest" --format "{{.ID}}" 2^>nul') do (
@@ -136,10 +158,44 @@ if !errorlevel! equ 0 (
         echo Existing image removed successfully.
         echo.
     ) else (
+        REM Normal mode: prompt user
         echo.
-        echo Build cancelled by user.
-        pause
-        exit /b 0
+        echo [WARNING] Docker image 'debian-dev:latest' already exists!
+        echo.
+        echo What would you like to do?
+        echo   1. Remove the existing image and build a new one
+        echo   2. Cancel and exit
+        echo.
+        set /p choice="Enter your choice (1 or 2): "
+        
+        if "!choice!"=="1" (
+            echo.
+            echo Removing existing image and associated containers...
+            
+            REM Find and stop all containers using this image
+            for /f "tokens=*" %%c in ('docker ps -a --filter "ancestor=debian-dev:latest" --format "{{.ID}}" 2^>nul') do (
+                echo Stopping container %%c...
+                docker stop %%c >nul 2>&1
+                echo Removing container %%c...
+                docker rm %%c >nul 2>&1
+            )
+            
+            REM Force remove the image
+            echo Removing image...
+            docker rmi -f debian-dev:latest
+            if !errorlevel! neq 0 (
+                echo [ERROR] Failed to remove existing image.
+                pause
+                exit /b 1
+            )
+            echo Existing image removed successfully.
+            echo.
+        ) else (
+            echo.
+            echo Build cancelled by user.
+            pause
+            exit /b 0
+        )
     )
 )
 
@@ -160,26 +216,22 @@ if "!VNC_PASSWORD!"=="!DOCKER_PASSWORD!" (
 ) else (
     echo   VNC Password: ********
 )
-if defined USE_SSH (
-    echo   SSH Server: Enabled
-)
-if defined USE_SMB (
-    echo   SMB Server: Enabled
+echo   SSH Server: Enabled
+if !FORCE_REBUILD! equ 1 (
+    echo   Rebuild mode: Complete rebuild from scratch (no cache)
 )
 echo.
 echo This may take several minutes...
 echo.
 
-REM Build command with conditional build args
+REM Build command
 set BUILD_ARGS=--build-arg DOCKER_USERNAME=!DOCKER_USERNAME! --build-arg DOCKER_PASSWORD=!DOCKER_PASSWORD! --build-arg VNC_PASSWORD=!VNC_PASSWORD!
-if defined USE_SSH (
-    set BUILD_ARGS=!BUILD_ARGS! --build-arg USE_SSH=!USE_SSH!
-)
-if defined USE_SMB (
-    set BUILD_ARGS=!BUILD_ARGS! --build-arg USE_SMB=!USE_SMB!
-)
 
-docker build !BUILD_ARGS! -t debian-dev:latest .
+if !FORCE_REBUILD! equ 1 (
+    docker build --no-cache !BUILD_ARGS! -t debian-dev:latest .
+) else (
+    docker build !BUILD_ARGS! -t debian-dev:latest .
+)
 
 REM Verify the image was created successfully (check if image exists, not just exit code)
 timeout /t 1 /nobreak >nul
