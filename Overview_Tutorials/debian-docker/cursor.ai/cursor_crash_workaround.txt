@@ -1,0 +1,131 @@
+I ran this command:
+sudo apt-get install -y strace
+strace -f -o /tmp/cursor.strace -s 200 /usr/share/cursor/bin/cursor --no-sandbox --disable-gpu --disable-dev-shm-usage --ozone-platform=x11
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+strace is already the newest version (6.13+ds-1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+To use Cursor with the Windows Subsystem for Linux, please install Cursor in Windows and uninstall the Linux version in WSL. You can then use the cursor command in a WSL terminal just as you would in a normal command prompt.
+Do you want to continue anyway? [y/N] y
+To no longer see this prompt, start Cursor with the environment variable DONT_PROMPT_WSL_INSTALL defined.
+dev@2e9f66b57144:~/Downloads$ 
+
+Then cursor does not crash.
+Now i can even start cursor from the menu. Why does it work now?
+
+What changed is not your packages — you tripped a WSL guard prompt in Cursor’s launcher.
+
+What likely happened
+
+When you ran:
+
+strace ... /usr/share/cursor/bin/cursor ...
+
+
+Cursor detected it’s running in WSL and printed:
+
+“To use Cursor with WSL, please install Cursor in Windows … Do you want to continue anyway? [y/N]”
+
+Before, when you started Cursor from the menu, it probably ran in a way where:
+
+stdin wasn’t interactive (or the launcher didn’t have a terminal attached), so it couldn’t ask you that question.
+
+Many apps in that situation will either exit immediately or end up in a weird half-start that can look like a crash (and you may see noise in dmesg from a child process dying).
+
+When you ran it under strace, you launched it from an interactive shell, answered y, and Cursor proceeded to start normally. After that, starting from the menu now “works” because of state that got created on first successful run.
+
+Why it keeps working now
+
+On the first successful run Cursor likely created one or more of:
+
+config files under ~/.config/Cursor/…
+
+caches under ~/.cache/…
+
+possibly a sentinel like “don’t show WSL prompt again” (or it changed startup mode once the initial setup completed)
+
+So subsequent launches don’t hit the same “blocked on prompt” path.
+
+You can confirm by searching your home directory for the relevant config:
+
+ls -la ~/.config | egrep -i 'cursor|Cursor'
+ls -la ~/.cache  | egrep -i 'cursor|Cursor'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Make it reliable (so it never blocks again)
+
+Cursor literally told you how:
+
+set DONT_PROMPT_WSL_INSTALL to suppress the prompt.
+
+In a terminal:
+
+export DONT_PROMPT_WSL_INSTALL=1
+cursor
+
+
+To make it permanent, add to ~/.bashrc (or /etc/environment):
+
+echo 'export DONT_PROMPT_WSL_INSTALL=1' >> ~/.bashrc
+
+
+For menu/desktop launches, environment variables from .bashrc often don’t apply. For XFCE you can patch the desktop file:
+
+grep -n '^Exec=' /usr/share/applications/cursor.desktop
+
+
+Then create a user override:
+
+mkdir -p ~/.local/share/applications
+cp /usr/share/applications/cursor.desktop ~/.local/share/applications/
+sed -i 's|^Exec=.*|Exec=env DONT_PROMPT_WSL_INSTALL=1 /usr/share/cursor/bin/cursor %U|' ~/.local/share/applications/cursor.desktop
+update-desktop-database ~/.local/share/applications 2>/dev/null || true
+
+
+(Log out/in or restart the panel if it doesn’t show immediately.)
+
+But what about the earlier SIGILL in dmesg?
+
+Two possibilities:
+
+You were actually seeing a different failed child process from an earlier attempt (Electron apps spawn a lot).
+
+The “crash” you perceived was really the app exiting because it couldn’t get confirmation for the WSL prompt, and the kernel log you saw wasn’t the true root cause of the GUI failure.
+
+If you want to be 100% sure, check your /tmp/cursor.strace for SIGILL now:
+
+grep -n 'SIGILL' /tmp/cursor.strace | tail
+
+
+If it’s empty, then the “invalid opcode” was either from a different run or a different binary.
+
+If you paste the Exec= line from cursor.desktop, I’ll give you the exact one-liner to make the menu launcher always start Cursor without prompting.
+
+
+
+Run 2 instances in parallel:
+
+cursor --no-sandbox --disable-gpu --disable-dev-shm-usage --ozone-platform=x11
+cursor --no-sandbox --disable-gpu --disable-dev-shm-usage --ozone-platform=x11
+
+temporary and separate profiles (settings!)
+/usr/share/cursor/bin/cursor --user-data-dir=/tmp/cursor-profile-1 --no-sandbox --disable-gpu --disable-dev-shm-usage --ozone-platform=x11
+/usr/share/cursor/bin/cursor --user-data-dir=/tmp/cursor-profile-2 --no-sandbox --disable-gpu --disable-dev-shm-usage --ozone-platform=x11
+
+
