@@ -1,0 +1,23 @@
+{#
+Copyright       acontis technologies GmbH, Ravensburg, Germany
+Response        Holger Oelhaf
+Description     jinja2 template to generate space-saving hlist for doxygengroups.
+Usage          
+    .. datatemplate:xml:: PCI_DEVICES_EMLLINTELGBE
+        :source: doxygen/xml/combined.xml
+        :template: doxygengroups.jinja
+
+    First argument of the datatemplate directive contains the doxygengroup name.
+    Option :source: takes a combined doxygen xml output, :template: this jinja template
+ #}
+.. -*- mode: rst -*-
+
+{% set group = data.find("./compounddef[@kind='group']/[compoundname='" + args[0] +"']") %}
+{{ group.find("title").text }}
+
+.. hlist::
+    :columns: 2
+    
+    {% for member in group.findall("./*memberdef[@kind='define']") %}
+    * **{{member.find("name").text}}** {{member.find("detaileddescription/para").text}}
+    {% endfor %}

@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{math}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{0.125pt}
+
+\newcommand\scale{1.0}
+
+\begin{document}
+\tdplotsetmaincoords{80}{120}
+\begin{tikzpicture}[scale=\scale]
+	\draw[white, use as bounding box] (-7.6, -3.5) rectangle (6, 5.5);
+	
+	\draw[thick] (-3, -3.5) rectangle (3.2, 5.25);
+	
+	\foreach \y/\type/\name in {-3.0/EC\_T\_LREAL/Jerk, -2.5/EC\_T\_LREAL/Deceleration, -2.0/EC\_T\_LREAL/Acceleration, -1.5/EC\_T\_LREAL/Velocity, -1.0/MC\_T\_BUFFER\_MODE/BufferMode, -0.5/MC\_T\_CAM\_ID/CamTableID, 0.0/MC\_T\_SOURCE/MasterValueSource, 0.5/MC\_T\_START\_MODE/StartMode, 1.0/EC\_T\_LREAL/SlaveScaling, 1.5/EC\_T\_LREAL/MasterScaling, 2.0/EC\_T\_LREAL/SlaveOffset, 2.5/EC\_T\_LREAL/MasterOffset, 3.0/EC\_T\_BOOL/ContinuousUpdate, 3.5/EC\_T\_BOOL/Execute, 4.0/AxisRef/Axis, 4.5/AxisRef/Master}
+	{
+		\draw[thick] (-3.5, \y) -- (-3, \y);
+		\node[scale=\scale, anchor=east] at (-3.5, 0.25 + \y) {\type};
+		\node[scale=\scale, anchor=west] at (-2.9, 0.25 + \y) {\name};
+	}
+	
+	\draw[dashed] (-3, 4.) -- (3.2, 4.);
+	\node[scale=\scale] at (0, 5.) {McCamIn};
+	
+	\foreach \y/\type/\name in {0.5/EC\_T\_BOOL/EndOfProfile, 1.0/EC\_T\_DWORD/ErrorID, 1.5/EC\_T\_BOOL/Error, 2.0/EC\_T\_BOOL/CommandAborted, 2.5/EC\_T\_BOOL/Active, 3.0/EC\_T\_BOOL/Busy, 3.5/EC\_T\_BOOL/InSync, 4.0/AxisRef/Axis, 4.5/AxisRef/Master}
+	{
+		\draw[thick] (3.7, \y) -- (3.2, \y);
+		\node[scale=\scale, anchor=west] at (3.7, 0.25 + \y) {\type};
+		\node[scale=\scale, anchor=east] at (3.1, 0.25 + \y) {\name};
+	}
+\end{tikzpicture}
+\end{document}

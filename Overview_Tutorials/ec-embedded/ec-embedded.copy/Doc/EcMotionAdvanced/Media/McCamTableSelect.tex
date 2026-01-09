@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{math}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{0.125pt}
+
+\newcommand\scale{1.0}
+
+\begin{document}
+\tdplotsetmaincoords{80}{120}
+\begin{tikzpicture}[scale=\scale]
+	\draw[white, use as bounding box] (-7.6, 0.5) rectangle (6, 5.5);
+	
+	\draw[thick] (-3, 0.5) rectangle (3.2, 5.25);
+	
+	\foreach \y/\type/\name in {1.5/EC\_T\_BOOL/SlaveAbsolute, 2.0/EC\_T\_BOOL/MasterAbsolute, 2.5/EC\_T\_BOOL/Periodic, 3.0/EC\_T\_BOOL/Execute, 3.5/MC\_T\_CAM\_REF/CamTable, 4.0/AxisRef/Axis, 4.5/AxisRef/Master}
+	{
+		\draw[thick] (-3.5, \y) -- (-3, \y);
+		\node[scale=\scale, anchor=east] at (-3.5, 0.25 + \y) {\type};
+		\node[scale=\scale, anchor=west] at (-2.9, 0.25 + \y) {\name};
+	}
+	
+	\draw[dashed] (-3, 3.5) -- (3.2, 3.5);
+	\node[scale=\scale] at (0, 5.) {McCamTableSelect};
+	
+	\foreach \y/\type/\name in {1.0/MC\_T\_CAM\_ID/CamTableID, 1.5/EC\_T\_DWORD/ErrorID, 2.0/EC\_T\_BOOL/Error, 2.5/EC\_T\_BOOL/Busy, 3.0/EC\_T\_BOOL/Done, 3.5/MC\_T\_CAM\_REF/CamTable, 4.0/AxisRef/Axis, 4.5/AxisRef/Master}
+	{
+		\draw[thick] (3.7, \y) -- (3.2, \y);
+		\node[scale=\scale, anchor=west] at (3.7, 0.25 + \y) {\type};
+		\node[scale=\scale, anchor=east] at (3.1, 0.25 + \y) {\name};
+	}
+\end{tikzpicture}
+\end{document}

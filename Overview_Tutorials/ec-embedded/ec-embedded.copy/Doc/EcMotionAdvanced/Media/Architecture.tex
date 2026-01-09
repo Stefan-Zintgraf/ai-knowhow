@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{math}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{0.125pt}
+
+\newcommand\scale{1.0}
+
+\begin{document}
+\tdplotsetmaincoords{80}{120}
+\begin{tikzpicture}
+	\draw[very thick, rounded corners=1cm, fill={rgb, 255:red,207;green,91;blue,27}] (0, 0) rectangle (14, 4.5);
+	
+	\draw[thick, rounded corners, fill={rgb, 255:red,242;green,106;blue,32}] (.5, .5) -- (5.5, .5) -- (5.5, 3.5) -- (2.5, 3.5) -- (2.5, 4.1) -- (0.5, 4.1) -- (0.5, 0.5);
+	\draw[dashed] (2.5, 3.5) -- (0.5, 3.5);
+	\node[anchor=north west, scale=1.25] at (0.5, 4.15) {Init};
+	\node[anchor=west, scale=1.00] at (0.5, 3.00) {mcInit};
+	\node[anchor=west, scale=1.00] at (0.5, 2.50) {mcDeinit};
+	\node[anchor=west, scale=1.00] at (0.5, 2.00) {mcSetEthercatApiFunctions};
+	
+	\draw[thick, rounded corners, fill={rgb, 255:red,242;green,106;blue,32}] (6.0, .5) -- (10., .5) -- (10., 3.5) -- (8.2, 3.5) -- (8.2, 4.1) -- (6., 4.1) -- (6., 0.5);
+	\draw[dashed] (8., 3.5) -- (6., 3.5);
+	\node[anchor=north west, scale=1.25] at (6., 4.15) {Axis-IF};
+	\node[anchor=west, scale=1.00] at (6., 3.00) {mcCreateVirtualAxis};
+	\node[anchor=west, scale=1.00] at (6., 2.50) {mcCreateDS402Axis};
+	\node[anchor=west, scale=1.00] at (6., 2.00) {mcRefreshAxisInputs};
+	\node[anchor=west, scale=1.00] at (6., 1.50) {mcRefreshAxisOutputs};
+	\node[anchor=west, scale=1.00] at (6., 1.00) {mcCyclicTask};
+
+	\draw[thick, rounded corners, fill={rgb, 255:red,242;green,106;blue,32}] (10.5, .5) -- (13.5, .5) -- (13.5, 3.5) -- (12.5, 3.5) -- (12.5, 4.1) -- (10.5, 4.1) -- (10.5, 0.5);
+	\draw[dashed] (12.5, 3.5) -- (10.5, 3.5);
+	\node[anchor=north west, scale=1.25] at (10.5, 4.15) {MCFB};
+	\node[anchor=west, scale=1.00] at (10.5, 3.00) {McPower};
+	\node[anchor=west, scale=1.00] at (10.5, 2.50) {McMoveRelative};
+	\node[anchor=west, scale=1.00] at (10.5, 2.00) {McReset};
+	\node[anchor=west, scale=1.00] at (10.5, 1.50) {$\ldots$};
+\end{tikzpicture}
+\end{document}

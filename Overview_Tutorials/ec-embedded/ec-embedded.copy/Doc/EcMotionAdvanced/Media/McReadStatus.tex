@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{math}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{0.125pt}
+
+\newcommand\scale{1.0}
+
+\begin{document}
+\tdplotsetmaincoords{80}{120}
+\begin{tikzpicture}[scale=\scale]
+	\draw[white, use as bounding box] (-6.0, -2.5) rectangle (6, 5.5);
+	
+	\draw[thick] (-3, -2.5) rectangle (3, 5.25);
+	
+	\foreach \y/\type/\name in {3.5/EC\_T\_BOOL/Enable, 4.0/AxisRef/Axis}
+	{
+		\draw[thick] (-3.5, \y) -- (-3, \y);
+		\node[scale=\scale, anchor=east] at (-3.5, 0.25 + \y) {\type};
+		\node[scale=\scale, anchor=west] at (-2.9, 0.25 + \y) {\name};
+	}
+	
+	\draw[dashed] (-3, 4.) -- (3, 4.);
+	\node[scale=\scale] at (0, 5.) {McReadStatus};
+	
+	\foreach \y/\type/\name in {-2.0/EC\_T\_BOOL/SynchronizedMotion, -1.5/EC\_T\_BOOL/ContinuousMotion, -1.0/EC\_T\_BOOL/DiscreteMotion, -0.5/EC\_T\_BOOL/Standstill, 0.0/EC\_T\_BOOL/Homing, 0.5/EC\_T\_BOOL/Stopping, 1.0/EC\_T\_BOOL/Disabled, 1.5/EC\_T\_BOOL/ErrorStop, 2.0/EC\_T\_DWORD/ErrorID, 2.5/EC\_T\_BOOL/Error, 3.0/EC\_T\_BOOL/Busy, 3.5/EC\_T\_BOOL/Valid, 4.0/AxisRef/Axis}
+	{
+		\draw[thick] (3.5, \y) -- (3, \y);
+		\node[scale=\scale, anchor=west] at (3.5, 0.25 + \y) {\type};
+		\node[scale=\scale, anchor=east] at (2.9, 0.25 + \y) {\name};
+	}
+\end{tikzpicture}
+\end{document}

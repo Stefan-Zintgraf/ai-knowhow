@@ -1,0 +1,99 @@
+{#
+Copyright       acontis technologies GmbH, Ravensburg, Germany
+Response        Holger Oelhaf
+Description     jinja2 template to generate supported NIC table from PackagesFileList.txt
+Usage          
+    .. datatemplate:import-module:: "../../Build/70_Tests/SetupOutputTests/**/PackagesFileList.txt
+        :source: PackagesFileListParser
+        :template: supported-nics.jinja
+
+    Argument
+      Pathname pattern
+      List type: Os-Emll-Arch | Emll-Os-Arch
+      LinkLayer name. Only for list type Emll-Os-Arch
+
+
+    Option 
+      :source: Path to recursively search for PackagesFileList.txt 
+      :template: this jinja template
+ #}
+.. -*- mode: rst -*-
+
+{% set arglist = args[0].split(' ') %}
+{% set arg_matrix = arglist[0] %}
+{% set arg_ll = arglist[1] %}
+
+
+{# OS-EMLL-ARCH mapping #}
+{% if arg_matrix|length == 0 or arg_matrix == 'Os-Emll-Arch' %}
+.. list-table::
+    :header-rows: 1
+    :name: Os-Emll-ArchList
+    :class: no-sphinx-material-strip datatable stripe
+
+    * -
+{% for ll in data['linklayer'] %}
+      - :ref:`{{ ll }}`
+{% endfor %}
+
+{% for os in data['matrix'] %}
+    * - {{ os }}
+  {% for ll in data['linklayer'] %}
+      - 
+    {% if ll in data['matrix'][os] %}
+      {% for arch in data['matrix'][os][ll]|sort %}
+        | {{ arch }}
+      {% endfor %}
+    {% endif %}
+  {% endfor%}
+{% endfor%}
+{% endif %}
+
+{# EMLL-OS-ARCH mapping #}
+{% if arg_matrix == 'Emll-Os-Arch' %}
+{% set ll = arg_ll %}
+
+.. list-table::
+    :header-rows: 1
+
+    * -
+{% for os in data['matrix'] %}
+  {% if ll in data['matrix'][os] %}
+      - {{ os }}
+  {% endif %}
+{% endfor %}
+
+    * - Architecture
+{% for os in data['matrix'] %}
+  {% if ll in data['matrix'][os] %}
+      - 
+    {% for arch in data['matrix'][os][ll]|sort %}
+        | {{ arch }}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+    * - Interrupt 
+        supported
+{% for os in data['matrix'] %}
+  {% if ll in data['matrix'][os] %}
+      - {{ "✅" if ll in data['linklayer_irq'] and os in data['os_irq'] else "❌" }}
+  {% endif %}
+{% endfor %}
+
+    * - Fingerprint
+        supported
+{% for os in data['matrix'] %}
+  {% if ll in data['matrix'][os] %}
+    {% set arch_fp_os_merged = data['arch_fingerprint'] | select("in", data['matrix'][os][ll]) | list %}
+    {% if (ll in data['linklayer_fingerprint']) and (os in data['os_fingerprint']) and (arch_fp_os_merged | length > 0) %}
+      - 
+      {% for arch in data['arch_fingerprint']|sort %}
+        | :ref:`fingerprint-{{ arch }}`
+      {% endfor %}
+    {% else %}
+      - ❌
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% endif %}

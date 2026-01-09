@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{math}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{0.125pt}
+
+\newcommand\scale{1.0}
+
+\begin{document}
+\tdplotsetmaincoords{80}{120}
+\begin{tikzpicture}[scale=\scale]
+	\draw[white, use as bounding box] (-6.0, 0) rectangle (6, 3.5);
+	
+	\draw[thick] (-3, 0) rectangle (3, 3.25);
+	
+	\foreach \y/\type/\name in {1.0/EC\_T\_LREAL/Value, 1.5/EC\_T\_DWORD/ParameterNumber, 2.0/EC\_T\_BOOL/Execute, 2.5/AxisRef/Axis}
+	{
+		\draw[thick] (-3.5, \y) -- (-3, \y);
+		\node[scale=\scale, anchor=east] at (-3.5, 0.25 + \y) {\type};
+		\node[scale=\scale, anchor=west] at (-2.9, 0.25 + \y) {\name};
+	}
+	
+	\draw[dashed] (-3, 2.5) -- (3, 2.5);
+	\node[scale=\scale] at (0, 3.) {McWriteParameter};
+	
+	\foreach \y/\type/\name in {0.5/EC\_T\_DWORD/ErrorID, 1/EC\_T\_BOOL/Error, 1.5/EC\_T\_BOOL/Busy, 2.0/EC\_T\_BOOL/Done, 2.5/AxisRef/Axis}
+	{
+		\draw[thick] (3.5, \y) -- (3, \y);
+		\node[scale=\scale, anchor=west] at (3.5, 0.25 + \y) {\type};
+		\node[scale=\scale, anchor=east] at (2.9, 0.25 + \y) {\name};
+	}
+\end{tikzpicture}
+\end{document}

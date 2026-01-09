@@ -1,0 +1,69 @@
+{#
+Copyright       acontis technologies GmbH, Ravensburg, Germany
+Response        Holger Oelhaf
+Description     jinja2 template to generate release notes from EcHistory.xml
+Usage          
+    .. datatemplate:xml:: EC-Master
+        :source: ../../EcHistory.xml
+        :template: release-notes.jinja
+
+    Argument
+      Product name
+
+
+    Option 
+      :source: Path to history
+      :template: this jinja template
+ #}
+.. -*- mode: rst -*-
+
+{% set product = args[0] %}
+{% set latest_version = data[0] %}
+
+{% for version in data.iter('Version'): %}
+{#   get all categories for this version of specific product #}
+{%   set categories = {} %}
+{%   for category in version.findall(".//*[@release_notes='1']/[Product='" + product + "']/Category"): %}
+{%     set main_category = category.text.split(" ")[0] %}
+{%     set sub_category = category.text %}
+{%     if main_category not in categories: %}
+{%       set _ = categories.update({main_category: []}) %}
+{%     endif %}
+{%     if sub_category not in categories[main_category]: %}
+{%       set _ = categories[main_category].append(sub_category) %}
+{%     endif %}
+{%   endfor %}
+{#   write issues if available #}
+{%   if categories: %}
+
+{{ version.get('name') }}
+*********
+
+{#     write release notes related issues sorted by category #}
+{%     for main_category, sub_categories in categories|dictsort: %}
+**{{ main_category }}**
+{%       for sub_category in sub_categories|sort: %}
+{%         for issue in version.findall(".//*[@release_notes='1']/[Product='" + product + "']/[Category='" + sub_category +"']"): %}
+{%           if issue.attrib["number"]: %}
+- #{{issue.attrib["number"]}} - {{ issue.findtext("Name") }}
+{%           else %}
+- {{ issue.findtext("Name") }}
+{%           endif %}
+{#           write issues with extended descritpion #}
+{%           for description_item in issue.findall("Description/Item"): %}
+  - {{ description_item.text }}
+{%           endfor %} 
+
+{%         endfor %} 
+{%       endfor %}   
+{%     endfor %} 
+{#   no issues in this version, if it's latest add a comment otherwise skip #}
+{%   else %}
+{%     if latest_version == version: %}
+{{ latest_version.get('name') }}
+*********
+
+No changes in this version.
+{%     endif %}
+{%   endif %}
+{% endfor %} 

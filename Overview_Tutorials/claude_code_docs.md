@@ -67,6 +67,11 @@ This table summarizes the key mechanisms in Claude Code, combining the feature m
 
 # PART I: Core Operation & Basics
 
+## Links
+
+- Anthropic Kurs: https://code.claude.com/docs/en/quickstart#npm 
+- Skilljar: https://anthropic.skilljar.com/claude-code-in-action 
+
 ## 1. CLI Modes & Core Operation
 
 ### What it is
@@ -78,6 +83,7 @@ This table summarizes the key mechanisms in Claude Code, combining the feature m
 - **Common workflows (advanced usage patterns)**: https://code.claude.com/docs/en/common-workflows
 
 ### Useful deep dives (written)
+- **DeepWiki "Claude Code"**: https://deepwiki.com/anthropics/claude-code
 - **DeepWiki “CLI Commands & Interaction Modes”**: https://deepwiki.com/anthropics/claude-code/2.3-cli-commands-and-interaction-modes  
 - **Shipyard CLI cheatsheet (text)**: https://shipyard.build/blog/claude-code-cheat-sheet/
 
