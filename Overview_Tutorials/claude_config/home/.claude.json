@@ -1,0 +1,270 @@
+{
+  "numStartups": 45,
+  "installMethod": "native",
+  "autoUpdates": false,
+  "tipsHistory": {
+    "new-user-warmup": 3,
+    "plan-mode-for-complex-tasks": 22,
+    "terminal-setup": 42,
+    "memory-command": 40,
+    "theme-command": 29,
+    "status-line": 39,
+    "stickers-command": 31,
+    "prompt-queue": 45,
+    "colorterm-truecolor": 15,
+    "enter-to-steer-in-relatime": 39,
+    "todo-list": 39,
+    "install-github-app": 40,
+    "install-slack-app": 40,
+    "permissions": 40,
+    "drag-and-drop-images": 40,
+    "double-esc-code-restore": 40,
+    "continue": 40,
+    "rename-conversation": 33,
+    "custom-commands": 39,
+    "shift-tab": 40,
+    "image-paste": 40,
+    "ultrathink-keyword": 40,
+    "custom-agents": 40,
+    "desktop-app": 40,
+    "shift-enter-setup": 42,
+    "web-app": 40,
+    "mobile-app": 40,
+    "default-permission-mode-config": 40
+  },
+  "promptQueueUseCount": 1,
+  "cachedStatsigGates": {
+    "tengu_prompt_suggestion": true,
+    "tengu_streaming_tool_execution2": false,
+    "tengu_session_memory": false
+  },
+  "cachedGrowthBookFeatures": {
+    "tengu_1p_event_batch_config": {
+      "scheduledDelayMillis": 5000,
+      "maxExportBatchSize": 200,
+      "maxQueueSize": 8192
+    },
+    "tengu_mcp_tool_search": true,
+    "strawberry_granite_flag": "N/A",
+    "persimmon_marble_flag": "N/A",
+    "tengu_pid_based_version_locking": true,
+    "tengu_event_sampling_config": {},
+    "tengu_tool_pear": false,
+    "tengu_thinkback": false,
+    "tengu_sumi": true,
+    "tengu_disable_bypass_permissions_mode": false,
+    "tengu_c4w_usage_limit_notifications_enabled": true,
+    "tengu-top-of-feed-tip": {
+      "tip": "",
+      "color": ""
+    },
+    "tengu_react_vulnerability_warning": false,
+    "tengu_tool_search_unsupported_models": null,
+    "tengu_ant_attribution_header_new": true,
+    "tengu_accept_with_feedback": true,
+    "tengu_permission_explainer": false,
+    "tengu_scratch": false,
+    "tengu_log_segment_events": false,
+    "tengu_log_datadog_events": true,
+    "tengu_streaming_tool_execution2": false,
+    "tengu_post_compact_survey": false,
+    "tengu_prompt_suggestion": true
+  },
+  "userID": "1ff4a5ceb4aeee069e01e45cc68a9de7ade5b70996af0fa183ccbb4c24915144",
+  "firstStartTime": "2026-01-09T14:33:31.694Z",
+  "sonnet45MigrationComplete": true,
+  "opus45MigrationComplete": true,
+  "thinkingMigrationComplete": true,
+  "changelogLastFetched": 1768042398749,
+  "autoUpdatesProtectedForNative": true,
+  "oauthAccount": {
+    "accountUuid": "9571a8f4-e394-40e1-86ac-f3a690f29f39",
+    "emailAddress": "s.zintgraf@acontis.com",
+    "organizationUuid": "ecf1220a-e4d8-4068-8e80-80e8d055a030",
+    "hasExtraUsageEnabled": false,
+    "displayName": "Stefan",
+    "organizationRole": "admin",
+    "workspaceRole": null,
+    "organizationName": "s.zintgraf@acontis.com's Organization"
+  },
+  "claudeCodeFirstTokenDate": "2025-12-20T15:29:13.343618Z",
+  "hasCompletedOnboarding": true,
+  "lastOnboardingVersion": "2.1.2",
+  "projects": {
+    "/home/dev/proj/claude.code": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 2,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "lastCost": 0.012692599999999998,
+      "lastAPIDuration": 15006,
+      "lastAPIDurationWithoutRetries": 14998,
+      "lastToolDuration": 0,
+      "lastDuration": 10159,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 780,
+      "lastTotalOutputTokens": 586,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 25908,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 774,
+          "outputTokens": 251,
+          "cacheReadInputTokens": 10759,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.0031049
+        },
+        "claude-sonnet-4-5-20250929": {
+          "inputTokens": 6,
+          "outputTokens": 335,
+          "cacheReadInputTokens": 15149,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.0095877
+        }
+      },
+      "lastSessionId": "254c7802-b04d-4a71-aa12-237235f237c0"
+    },
+    "/home/dev": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [],
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "lastCost": 0.0918469,
+      "lastAPIDuration": 76132,
+      "lastAPIDurationWithoutRetries": 69985,
+      "lastToolDuration": 0,
+      "lastDuration": 3002594,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 4711,
+      "lastTotalOutputTokens": 5495,
+      "lastTotalCacheCreationInputTokens": 33852,
+      "lastTotalCacheReadInputTokens": 173459,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 4711,
+          "outputTokens": 5495,
+          "cacheReadInputTokens": 173459,
+          "cacheCreationInputTokens": 33852,
+          "webSearchRequests": 0,
+          "costUSD": 0.0918469
+        }
+      },
+      "lastSessionId": "614665aa-b089-4720-8987-e6ad67cf8132"
+    },
+    "/home/dev/.local/bin": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "reactVulnerabilityCache": {
+        "detected": false,
+        "package": null,
+        "packageName": null,
+        "version": null,
+        "packageManager": null
+      },
+      "lastCost": 0.0220694,
+      "lastAPIDuration": 7031,
+      "lastAPIDurationWithoutRetries": 7027,
+      "lastToolDuration": 0,
+      "lastDuration": 4659,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastTotalInputTokens": 3960,
+      "lastTotalOutputTokens": 188,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 10254,
+      "lastTotalWebSearchRequests": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 194,
+          "outputTokens": 134,
+          "cacheReadInputTokens": 10254,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.0018893999999999998
+        },
+        "claude-opus-4-5-20251101": {
+          "inputTokens": 3766,
+          "outputTokens": 54,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.02018
+        }
+      },
+      "lastSessionId": "e72045a8-aa0e-4d82-919e-88bd6a8041dc"
+    }
+  },
+  "githubRepoPaths": {
+    "stefan-zintgraf/ai-knowhow-claude-code": [
+      "/home/dev/proj/claude.code/Overview_Tutorials/ec-embedded/ec-embedded.copy",
+      "/home/dev/proj/claude.code/Overview_Tutorials/ec-master_demo/linux/ec-simulator/Doc",
+      "/home/dev/proj/claude.code/Overview_Tutorials/ec-embedded/ec-embedded.copy/Doc",
+      "/home/dev/proj/claude.code/Overview_Tutorials/ec-master_demo/linux/ec-simulator",
+      "/home/dev/proj/claude.code"
+    ]
+  },
+  "lastReleaseNotesSeen": "2.1.3",
+  "hasShownOpus45Notice": {
+    "ecf1220a-e4d8-4068-8e80-80e8d055a030": true
+  },
+  "s1mAccessCache": {
+    "ecf1220a-e4d8-4068-8e80-80e8d055a030": {
+      "hasAccess": false,
+      "hasAccessNotAsDefault": false,
+      "timestamp": 1768052634683
+    }
+  },
+  "groveConfigCache": {
+    "9571a8f4-e394-40e1-86ac-f3a690f29f39": {
+      "grove_enabled": true,
+      "timestamp": 1767969610461
+    }
+  },
+  "officialMarketplaceAutoInstallAttempted": true,
+  "officialMarketplaceAutoInstalled": true,
+  "hasIdeOnboardingBeenShown": {
+    "cursor": true
+  },
+  "lastPlanModeUse": 1767981168377,
+  "feedbackSurveyState": {
+    "lastShownTime": 1768051707110
+  }
+}

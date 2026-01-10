@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Bash(rm -rf *)"
+    ]
+  },
+  "allowManagedHooksOnly": false,
+  "companyAnnouncements": [
+    "Welcome! company managed settings are located in /etc/claude-code folder"
+  ]
+}
