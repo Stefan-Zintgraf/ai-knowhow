@@ -232,20 +232,75 @@ For CPU-only Windows 11 workstations, **LM Studio** is the optimal choice:
 > - 8 GB RAM → Use 3B model with Q4 quantization
 > - 16 GB RAM → Use 7B model with Q4_K_M quantization
 > - 32 GB RAM → Use 7B model with Q6_K or higher
+ 
+#### Performance Optimization (LM Studio Settings)
 
-#### 3. Start the Local Server
+To avoid unnecessary delays after the model has finished responding:
 
-1. Go to the **Local Server** tab (left sidebar, server icon)
-2. Select your downloaded model from the dropdown
-3. Configure server settings:
+1. In LM Studio, open **App Settings** (bottom-left).
+2. Go to the **Chat** tab.
+3. Scroll down to **Chat AI Naming**.
+4. Set **AI-generated Chat Names** to **Never**.
+
+![LM Studio Chat AI Naming setting](images/lmstudio-chat-ai-naming.png)
+
+[Open the full-size screenshot of the LM Studio Chat AI Naming setting](images/lmstudio-chat-ai-naming.png)
+
+This disables automatic name generation for each chat, which otherwise triggers an extra model call and can cause several seconds of additional waiting time on local hardware—without improving response quality.
+
+Additionally, **force the model to run on CPU only**. Intel integrated GPUs are typically *slower* than your CPU for local LLMs, so GPU execution can hurt performance instead of helping:
+
+1. Open the model/server configuration in LM Studio.
+2. Locate the **GPU / CPU** device settings.
+3. Disable GPU usage (or explicitly select **CPU only**).
+
+![LM Studio model GPU / CPU settings](images/lmstudio-model-gpu-cpu-settings.png)
+
+[Open the full-size screenshot of the LM Studio model GPU / CPU settings](images/lmstudio-model-gpu-cpu-settings.png)
+
+If you need to troubleshoot or measure performance more precisely, you can also adjust LM Studio’s **debug logging** level in the App Settings. Use higher logging levels only while debugging, as very verbose logs can slightly impact performance and fill disk space faster.
+
+![LM Studio logging settings](images/lmstudio-logging-settings.png)
+
+[Open the full-size screenshot of the LM Studio logging settings](images/lmstudio-logging-settings.png)
+
+#### 3. Configure the Model Prompt
+
+Proper prompt template configuration is essential for instruct models like Qwen2.5-Coder to understand their role and respond correctly. The prompt template defines how system instructions, user messages, and assistant responses are formatted when sent to the model.
+
+1. In LM Studio, open the model settings (click the gear icon or right-click the model).
+2. Navigate to the **Prompt** tab.
+3. In the **Prompt Template** section, select **ChatML** from the template dropdown.
+
+![LM Studio model prompt settings](images/lmstudio-model-prompt-settings.png)
+
+[Open the full-size screenshot of the LM Studio model prompt settings](images/lmstudio-model-prompt-settings.png)
+
+**Background on Prompt Templates:**
+
+- **ChatML (Chat Markup Language)** is a standardized format that uses special tokens like `<|im_start|>` and `<|im_end|>` to delimit different message roles (system, user, assistant). This format is widely supported by modern instruct models and ensures consistent behavior across different applications.
+- When you select ChatML, LM Studio automatically configures the template fields (Before/After System, User, Assistant) with the correct ChatML tokens. This tells the model where system instructions begin and end, where user messages are, and where it should generate assistant responses.
+- **Additional Stop Strings** are tokens that signal the model to stop generating text. By default, ChatML templates may include `<|im_start|>` and `<|im_end|>` as stop strings to prevent the model from generating these control tokens. However, if you're using ChatML properly, these stop strings are often redundant and can sometimes interfere with generation. You may optionally remove them from the **Additional Stop Strings** section if you experience issues with truncated responses.
+
+This configuration ensures that when AnythingLLM sends requests to your local model, the messages are properly formatted and the model understands its role as a coding assistant.
+
+#### 4. Start the Local Server
+
+1. In the bottom-left **mode selector** in LM Studio, switch from **User** to **Power User** (or **Developer**). This reveals the **Local Server** tab in the left sidebar.
+2. Go to the **Local Server** tab (left sidebar, server icon).
+3. Select your downloaded model from the dropdown.
+4. Configure server settings:
    - **Port:** `1234` (default)
-   - **Context Length:** `4096` (increase to 8192 if you have 32GB+ RAM)
-4. Click **Start Server**
-5. Verify the server is running (green status indicator)
+5. Click **Start Server**.
+6. Verify the server is running (green status indicator).
 
 The API will be available at: `http://localhost:1234/v1`
 
-#### 4. Test the Server
+![LM Studio local server settings](images/lmstudio-server-settings.png)
+
+[Open the full-size screenshot of the LM Studio local server settings](images/lmstudio-server-settings.png)
+
+#### 5. Test the Server
 
 Open PowerShell and run:
 
@@ -285,7 +340,7 @@ ollama pull deepseek-coder-v2:lite
 #### 3. Start the Server
 
 Ollama runs automatically as a service. The API is available at:
-`http://localhost:11434/v1`
+`http://localhost:11434`
 
 ---
 
@@ -356,7 +411,41 @@ For code search to work well, configure a local embedding model:
 4. Click **Save and Embed**
 5. Wait for embedding to complete
 
-### 6. Start Code Review Conversations
+### 6. Chat Settings
+
+Configure how your workspace interacts with the LLM:
+
+![AnythingLLM Chat Settings](images/anythingllm-chat-settings.png)
+
+**Key Settings:**
+
+- **Workspace LLM Provider**: Select the LLM provider (e.g., LM Studio) for this workspace. Overrides system defaults.
+- **Workspace Chat Model**: Choose the specific model to use. If empty, uses the system default.
+- **Chat Mode**: 
+  - **Chat**: Uses LLM general knowledge + document context
+  - **Query**: Strictly uses only document context (no general knowledge)
+- **Chat History**: Number of previous messages included in context (recommended: 20, max ~45 to avoid failures)
+- **System Prompt**: Instructions defining the AI's behavior and response style. Supports variables like `{time}`, `{date}`, `{datetime}`.
+- **Query Mode Refusal Response**: Custom message shown when Query mode finds no relevant context.
+- **LLM Temperature**: Controls response creativity (0.0 = deterministic, higher = more creative). Default: 0.7. Consult your model's documentation for valid ranges.
+
+**Note:** Model, Agent Skills and System Prompt are taken from the global settings.
+
+### 7. Start Code Review Conversations 
+
+**Note:** You may switch to query mode to strictly only use the uploaded documents and no model knowledge.
+You may then lower the model temparature to 0.2 for example.
+
+A system prompt that minimizes halluzination and output token consumption may look as follows:
+```
+You are an AI assistant. You must answer the user's query based on the context provided. If the answer is not in the context, state that you cannot clearly find an answer. Do not hallucinate, using outside knowledge is ok. IMPORANT: keep the response absolutely minimal, do not make any explanations.
+```
+
+Example system prompt for real-time C++ code review:
+```
+You are an expert in real-time embedded C/C++ programming. You must answer the user's query based on the context provided.  IMPORANT: keep the response short but provide minimal explanations.
+Return only your response to the question given the above information following the users instructions as needed.
+```
 
 Example prompts for C++ code review:
 
