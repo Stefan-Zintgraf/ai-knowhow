@@ -1,0 +1,21 @@
+{
+  "_comment MCP Servers": "MCP Servers",
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"],
+      "env": {
+        "NODE_ENV": "production",
+        "CONTEXT7_API_KEY": "${CONTEXT7_API_KEY}"
+      }
+    }
+  },
+  "_comment": "Example: Add additional MCP servers by uncommenting and configuring the section below",
+  "_example_other_server": {
+    "command": "node",
+    "args": ["/path/to/server.js"],
+    "env": {
+      "API_KEY": "${API_KEY}"
+    }
+  }
+}

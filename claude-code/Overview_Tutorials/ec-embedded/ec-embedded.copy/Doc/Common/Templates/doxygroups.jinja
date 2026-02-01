@@ -1,0 +1,21 @@
+{#
+Copyright       acontis technologies GmbH, Weingarten, Germany
+Response        Holger Oelhaf
+Description     jinja2 template to replace doxygengroup :content-only: with working reference.
+Usage          
+    .. datatemplate:xml:: EC_ERROR_CODES_GENERIC
+        :source: doxygen/xml/combined.xml
+        :template: doxygengroups.jinja
+
+    First argument of the datatemplate directive contains the doxygengroup name.
+    Option :source: takes a combined doxygen xml output, :template: this jinja template
+#}
+.. -*- mode: rst -*-
+
+{% set group = data.find("./compounddef[@kind='group']/[compoundname='" + args[0] +"']") %}
+
+.. _{{group.attrib['id']}}:
+    
+{% for member in group.findall("./*memberdef") %}
+.. doxygen{{member.attrib['kind']}}:: {{member.find("name").text}}
+{% endfor %}

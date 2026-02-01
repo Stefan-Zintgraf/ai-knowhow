@@ -1,0 +1,58 @@
+
+\usepackage{enumitem}
+\setlist[description]{style = nextline}
+
+\usepackage{lastpage}
+\setlength{\headheight}{24pt}
+\makeatletter
+  \fancypagestyle{normal}{
+    \fancyhf{}
+    \fancyhead[L]{{\@title}}
+    \fancyhead[R]{{\includegraphics[height=20pt]{\headerlogo}}}
+    \fancyfoot[L]{{\@author}}
+    \fancyfoot[C]{{\atnumber}}
+    \fancyfoot[R]{{Page \thepage /\pageref*{LastPage}}}
+    \renewcommand{\headrulewidth}{0.4pt}
+    \renewcommand{\footrulewidth}{0.4pt}
+  }
+\makeatother
+
+\usepackage{tocloft}
+\setlength{\cftbeforetoctitleskip}{0pt}
+\setlength{\cftaftertoctitleskip}{10pt}
+\tocloftpagestyle{normal}
+\makeatletter
+\renewcommand{\cfttoctitlefont}{\py@HeaderFamily\py@TitleColor\Huge}
+\renewcommand{\sphinxtableofcontents}{\pagestyle{normal}\tableofcontents}
+\makeatother
+
+\usepackage{titlesec}
+\makeatletter
+\titleformat{\chapter}{\Large\py@HeaderFamily}{\py@TitleColor\thechapter}{0.5em}{\py@TitleColor}{\py@NormalColor}
+\titlespacing{\chapter}{0em}{-1em}{2em}
+\assignpagestyle{\chapter}{normal}
+\makeatother
+
+\usepackage{listofitems}
+\makeatletter
+\newlength{\py@siglinewithargsretwidth}
+\renewcommand{\pysiglinewithargsret}[3]{%
+  \settowidth{\py@argswidth}{#1\sphinxcode{(}}%
+  \addtolength{\py@argswidth}{-2\py@argswidth}%
+  \addtolength{\py@argswidth}{\linewidth}%
+  \settowidth{\py@siglinewithargsretwidth}{#1\sphinxcode{(}#2\sphinxcode{)}#3}%
+  \ifdim\py@siglinewithargsretwidth<\linewidth\relax
+    \item[{#1\sphinxcode{(}\py@sigparams{#2}{#3}}]%
+  \else
+    \setsepchar{,}\readlist*\params{#2}%
+    \item[{\parbox[t]{\linewidth}{#1\sphinxcode{(} \\ \foreachitem\param\in\params{\hspace*{1cm}\param \ifnum\paramcnt<\paramslen ,\fi \\ }\sphinxcode{)}#3}}]%
+  \fi
+}%
+\makeatother
+
+\usepackage[draft]{minted}
+\fvset{breaklines=true}
+
+\usepackage{newunicodechar}
+\newunicodechar{✅}{{\color{green}✔}}
+\newunicodechar{❌}{{\color{red}✘}}

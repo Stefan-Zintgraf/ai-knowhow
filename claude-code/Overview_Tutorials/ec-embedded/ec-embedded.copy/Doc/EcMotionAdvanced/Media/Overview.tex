@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{math}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength\PreviewBorder{0.125pt}
+
+\newcommand\scale{1.0}
+
+\begin{document}
+\tdplotsetmaincoords{80}{120}
+\begin{tikzpicture}[scale=\scale]
+	\draw[white, use as bounding box] (-9.1, -1) rectangle (9.1, 13.6);
+
+	%\draw[white, fill={rgb:red,53;green,178;blue,213}] (-5, -1) rectangle (5,0);
+	%\node[white] at (0, -0.5)  {Ethernet};
+	
+	\node[rounded corners, rectangle, white, align=center, minimum width=10.5cm, minimum height=0.575cm, scale=1.6,
+		shade, fill={rgb, 255:red,46;green,159;blue,189}] at (0, 0)  {Ethernet};
+	\node[rounded corners, rectangle, white, align=center, minimum width=10.5cm, minimum height=0.575cm, scale=1.6,
+		shade, fill={rgb, 255:red,46;green,159;blue,189}] at (0, 1.25)  {EtherCAT};
+	
+	\node[rounded corners, rectangle, white, align=center, 
+		text width=3.0cm, minimum height=2.25cm, scale=1.6, anchor=south east,
+		shade, fill={rgb, 255:red,51;green,109;blue,179}] at (8.3, 1.9)  {IEC 618000-7-301\\[10pt] CiA 402 profile};
+	\node[rounded corners, rectangle, white, align=center, 
+		text width=3.0cm, minimum height=2.25cm, scale=1.6, anchor=south east,
+		shade, fill={rgb, 255:red,109;green,76;blue,148}] at (8.3, 5.75)  {IEC 618000-7-201\\[10pt] CiA 402};
+		
+	\node[rounded corners, rectangle, white, align=center, 
+		text width=3.35cm, minimum height=5.00cm, scale=1.6, anchor=south west,
+		shade, fill={rgb, 255:red,51;green,109;blue,179}] at (-8.3, 1.9)  {IEC 618000-7-301\\[5pt] CiA 402 profile\\[20pt] EtherCAT Technology\\ Group ETG.6010\\ Implementation\\ Directive for CiA 402\\ Drive Profile};
+		
+	\draw[rounded corners, 	shade, fill=black!30!red] (-8.3, 10.0) rectangle (-2.6, 13.0);
+	\draw[rounded corners, 	shade, fill=black!30!red] (-8.1, 10.2) rectangle (-2.4, 13.2);
+	\node[rounded corners, rectangle, white, align=center, draw=black,
+		minimum width=3.6cm, minimum height=1.9cm, scale=1.6, anchor=south west, 
+		shade, fill=black!30!red] at (-7.9, 10.4) {MCFB};
+		
+	\node[rotate=90, scale=1.6] at (8.75, 5.5) {EtherCAT Slave};
+	\node[rotate=90, scale=1.6] at (-8.75, 7.0) {EtherCAT Master};
+\end{tikzpicture}
+\end{document}

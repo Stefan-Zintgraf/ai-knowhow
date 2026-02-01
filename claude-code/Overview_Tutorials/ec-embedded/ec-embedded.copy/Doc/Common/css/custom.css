@@ -1,0 +1,84 @@
+.md-typeset{
+    font-size:.8rem;
+    line-height:1.3;
+    -webkit-print-color-adjust:exact
+}
+
+.md-content {
+    margin-right: 0;
+}
+
+.simple
+{
+    margin-top: 0px;
+    margin-bottom: 40px; 
+}
+
+/* function name bold */
+.function .sig-name {
+    font-weight:bold;
+}
+/* line breaks in function parameter list */
+/* line break after function name + ( */
+.sig-paren + .n::before {
+    content: "\a\20\20\20\20\20\20\20\20\20\20\20\20\20\20\20\20";
+    white-space: pre;
+}
+.sig-paren + .reference::before {
+    content: "\a\20\20\20\20\20\20\20\20\20\20\20\20\20\20\20\20";
+    white-space: pre;
+}
+/* line breaks for following parameters */
+.sig-param + .n::before {
+    content: "\a\20\20\20\20\20\20\20\20\20\20\20\20\20\20\20\20";
+    white-space: pre;
+}
+.sig-param + .k::before {
+    content: "\a\20\20\20\20\20\20\20\20\20\20\20\20\20\20\20\20";
+    white-space: pre;
+}
+.sig-param + .reference::before {
+    content: "\a\20\20\20\20\20\20\20\20\20\20\20\20\20\20\20\20";
+    white-space: pre;
+}
+.sig-param + .kt::before {
+    content: "\a\20\20\20\20\20\20\20\20\20\20\20\20\20\20\20\20";
+    white-space: pre;
+}
+/* typedef type name bold */
+.type .sig-name {
+    font-weight:bold;
+}
+/* example dropdown */
+details.sd-mb-3 {
+    width:auto;
+}
+details.sd-mb-3 summary {
+    padding-left:2rem
+}
+details.sd-mb-3 summary div.sd-summary-down {
+    visibility:hidden;
+}
+details.sd-mb-3 summary div.sd-summary-up {
+    visibility:hidden;
+}
+details.sd-mb-3 div.sd-summary-content {
+    padding:unset;
+}
+
+.datatable {
+    overflow-y: scroll !important;
+    font-size: smaller;
+}
+.datatable th p {
+    margin: 100% -130%;
+    transform: rotate(315deg);
+    display: inline-block;
+}
+.dataTables_wrapper .dataTables_length {
+    float: right;
+}
+.dataTables_wrapper .dataTables_filter {
+    float: left;
+    text-align: right;
+}
