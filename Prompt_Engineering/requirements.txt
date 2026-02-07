@@ -48,6 +48,7 @@ mypy-extensions==1.0.0
 nest-asyncio==1.6.0
 networkx==3.3
 numpy==1.26.4
+ollama==0.6.1
 openai==1.51.1
 orjson==3.10.7
 packaging==24.1

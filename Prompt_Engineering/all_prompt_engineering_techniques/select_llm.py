@@ -126,7 +126,7 @@ def get_supported_ollama_models():
     return [m["name"] for m in models]
 
 
-def get_llm(ollama_model=None, force_port=None):
+def get_llm(ollama_model=None, force_port=None, temperature=None):
     """
     Return an LLM instance: ChatOllama if ollama_model is set, else ChatOpenAI.
     Prefers MAC (GPU/VRAM) over Windows when the model is available on both.
@@ -134,7 +134,12 @@ def get_llm(ollama_model=None, force_port=None):
 
     ollama_model: e.g. "llama3.2:1b", or None / "" / "none" for OpenAI (gpt-4o-mini).
     force_port: If set (e.g. 11434 for Windows), use that port instead of auto-detect.
+    temperature: If set, override the model's default temperature (0.0–1.0). If None, use default.
     """
+    llm_kwargs = {}
+    if temperature is not None:
+        llm_kwargs["temperature"] = temperature
+
     if ollama_model and str(ollama_model).strip().lower() != "none":
         try:
             ollama_base_url = _get_ollama_base_url(ollama_model, force_port)
@@ -146,12 +151,13 @@ def get_llm(ollama_model=None, force_port=None):
         return ChatOllama(
             model=ollama_model,
             base_url=ollama_base_url,
+            **llm_kwargs,
         )
     else:
         os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
         from langchain_openai import ChatOpenAI
 
-        return ChatOpenAI(model="gpt-4o-mini")
+        return ChatOpenAI(model="gpt-4o-mini", **llm_kwargs)
 
 
 TEST_MODELS = [
