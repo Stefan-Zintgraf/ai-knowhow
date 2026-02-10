@@ -11,12 +11,15 @@ This document is a know how document, how to work with Claude Code.
    - [1.2 Windows PowerShell](#12-windows-powershell)
    - [1.3 Windows CMD](#13-windows-cmd)
    - [1.4 Login](#14-login)
+   - [1.5 Visual Studio Code Extension](#15-visual-studio-code-extension)
 2. [Cheat Sheet (important commands)](#2-cheat-sheet-important-commands)
    - [2.1 CLI commands](#21-cli-commands)
-   - [2.2 Keyboard shortcuts](#22-keyboard-shortcuts)
-   - [2.3 Key CLI flags](#23-key-cli-flags)
-   - [2.4 Advanced CLI flags](#24-advanced-cli-flags)
+   - [2.2 Key CLI flags](#22-key-cli-flags)
+   - [2.3 Advanced CLI flags](#23-advanced-cli-flags)
+   - [2.4 Keyboard shortcuts and special commands](#24-keyboard-shortcuts-and-special-commands)
    - [2.5 Built-in slash commands](#25-built-in-slash-commands)
+     - [2.5.1 Using `/compact` with instructions](#251-using-compact-with-instructions)
+     - [2.5.2 Using `/rewind` to undo changes](#252-using-rewind-to-undo-changes)
 3. [Settings and Configuration](#3-settings-and-configuration)
    - [3.1 Configuration scopes](#31-configuration-scopes)
    - [3.2 Settings files](#32-settings-files)
@@ -37,11 +40,15 @@ This document is a know how document, how to work with Claude Code.
    - [3.17 Bash tool behavior](#317-bash-tool-behavior)
    - [3.18 Extending tools with hooks](#318-extending-tools-with-hooks)
 4. [Sessions](#4-sessions)
-   - [4.1 workflow](#41-workflow)
+   - [4.1 Session handling workflow](#41-session-handling-workflow)
 5. [MCP Servers](#5-mcp-servers)
    - [5.1 Overview](#51-overview)
    - [5.2 Server Types](#52-server-types)
    - [5.3 Configuration via JSON Files](#53-configuration-via-json-files)
+     - [5.3.1 Stdio Server (Local Process)](#531-stdio-server-local-process)
+     - [5.3.2 SSE Server (Server-Sent Events)](#532-sse-server-server-sent-events)
+     - [5.3.3 Server with Environment Variables](#533-server-with-environment-variables)
+     - [5.3.4 Configuration Locations](#534-configuration-locations)
    - [5.4 Using MCP Tools in Commands](#54-using-mcp-tools-in-commands)
 
 ---
@@ -77,6 +84,40 @@ claude
 # Follow the prompts to log in with your account
 ```
 
+### 1.5 Visual Studio Code Extension
+
+The Claude Code extension for Visual Studio Code provides seamless integration between Claude Code and your VS Code editor. You can install it directly from the VS Code Extensions marketplace.
+
+#### Installation Steps
+
+1. **Open VS Code Extensions view:**
+   - Click the Extensions icon in the Activity Bar (or press `Ctrl+Shift+X` / `Cmd+Shift+X`)
+   - Alternatively, use the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`) and type "Extensions: Install Extensions"
+
+2. **Search for Claude Code:**
+   - In the Extensions marketplace search bar, type "Claude Code for VS Code"
+   - Look for the extension published by **Anthropic** with the orange starburst icon
+
+3. **Install the extension:**
+   - Click the "Install" button on the Claude Code for VS Code extension card
+   - The extension will download and install automatically
+
+4. **Verify installation:**
+   - Once installed, the extension will appear in the "INSTALLED" section of your Extensions view
+   - You should see "Claude Code for VS Code" with the Anthropic publisher badge
+   - Configure the Claude icon visibility via the ... menu: *Claude Code: Open*
+
+![Claude Code VS Code Extension](images/claude_code_vs_extension.png)
+
+#### Using the Extension
+
+After installation, the Claude Code extension integrates with your VS Code workflow:
+- Access Claude Code features directly from the VS Code interface
+- Use the extension's icon in the Activity Bar to open Claude Code panels
+- The extension works alongside the CLI version of Claude Code
+
+**Note:** The VS Code extension complements the CLI installation. You may need to have Claude Code CLI installed separately depending on your use case.
+
 ## 2 Cheat Sheet (important commands)
 
 ### 2.1 CLI commands
@@ -94,18 +135,8 @@ claude
 | `claude commit` | Create a Git commit |
 | `claude update` | Update Claude Code to latest version |
 | `claude mcp` | Configure Model Context Protocol (MCP) servers |
-| `/clear` | Clear conversation history |
-| `/help` | Show available commands |
-| `exit` or `Ctrl+C` | Exit Claude Code |
-| `! command` | Run a bash command (e.g., `! ls`, `! git status`) |
 
-### 2.2 Keyboard shortcuts
-
-| Shortcut | Description |
-|----------|-------------|
-| `Shift+Tab` | Switch between modes in Claude Code |
-
-### 2.3 Key CLI flags
+### 2.2 Key CLI flags
 
 | Flag | Description | Example |
 |------|-------------|---------|
@@ -120,7 +151,7 @@ claude
 | `--debug` | Enable debug mode | `claude --debug` |
 | `--version, -v` | Output version number | `claude --version` |
 
-### 2.4 Advanced CLI flags
+### 2.3 Advanced CLI flags
 
 | Flag | Description | Example |
 |------|-------------|---------|
@@ -141,6 +172,66 @@ claude
 | `--ide` | Auto-connect to IDE if available | `claude --ide` |
 | `--chrome` | Enable Claude in Chrome integration | `claude --chrome` |
 | `--fallback-model` | Fallback model if primary is overloaded | `claude -p "task" --fallback-model sonnet` |
+
+### 2.4 Keyboard shortcuts and special commands
+
+#### 2.4.1 Quick Input Commands
+
+| Input | Description |
+|-------|-------------|
+| `!` at start | **Bash mode** - Run shell commands directly without Claude interpretation (output added to session) |
+| `/` at start | **Slash command** - Trigger skills/commands (e.g., `/help`, `/git`, `/commit`) |
+| `@` | **File mention** - Trigger file path autocomplete for referencing files |
+
+#### 2.4.2 Essential Keyboard Shortcuts
+
+| Shortcut | Description |
+|----------|-------------|
+| `Shift+Tab` or `Alt+M` | **Toggle permission modes** - Switch between Auto-Accept Mode, Plan Mode, and normal mode |
+| `Esc` + `Esc` | **Rewind** - Restore code and/or conversation to a previous checkpoint |
+| `Ctrl+O` | **Toggle verbose output** - Show detailed tool usage and execution information |
+| `Ctrl+V` / `Cmd+V` (iTerm2) / `Alt+V` (Windows) | **Paste image** from clipboard or image file path |
+| `Ctrl+B` | **Background tasks** - Background running bash commands and agents |
+| `Option+P` (macOS) / `Alt+P` (Windows/Linux) | **Switch model** without clearing your current prompt |
+| `Option+T` (macOS) / `Alt+T` (Windows/Linux) | **Toggle extended thinking** mode |
+| `Left/Right arrows` | **Cycle through dialog tabs** in permission dialogs and menus |
+| `?` | **Show available shortcuts** for your terminal environment |
+
+#### 2.4.3 Standard Controls
+
+| Shortcut | Description |
+|----------|-------------|
+| `Ctrl+C` | Cancel current input or generation |
+| `Ctrl+D` | Exit Claude Code session (EOF signal) |
+| `Ctrl+L` | Clear terminal screen (keeps conversation history) |
+| `Ctrl+R` | Reverse search command history (interactive search) |
+| `Up/Down arrows` | Navigate command history (recall previous inputs) |
+
+#### 2.4.4 Multiline Input Methods
+
+| Method | Shortcut | Context |
+|--------|----------|---------|
+| Quick escape | `\` + `Enter` | Works in all terminals |
+| macOS default | `Option+Enter` | Default on macOS |
+| Modern terminals | `Shift+Enter` | Works in iTerm2, WezTerm, Ghostty, Kitty |
+| Control sequence | `Ctrl+J` | Line feed character for multiline |
+
+#### 2.4.5 Text Editing Shortcuts
+
+| Shortcut | Description |
+|----------|-------------|
+| `Ctrl+K` | Delete to end of line (stores for pasting) |
+| `Ctrl+U` | Delete entire line (stores for pasting) |
+| `Ctrl+Y` | Paste deleted text |
+| `Alt+Y` | Cycle paste history (after `Ctrl+Y`) |
+| `Alt+B` | Move cursor back one word |
+| `Alt+F` | Move cursor forward one word |
+
+
+**Notes:**
+- Press `?` at any time to see shortcuts available for your specific terminal/platform
+- On macOS, Option/Alt key shortcuts require configuring Option as Meta in terminal settings
+- Syntax highlighting toggle (`Ctrl+T`) only works inside the `/theme` picker menu (native build only)
 
 ### 2.5 Built-in slash commands
 
@@ -193,6 +284,51 @@ claude
 | `/vim` | Enter vim mode for alternating insert and command modes |
 
 **Custom slash commands:** Create reusable commands by saving `.md` files in `.claude/commands/` (project) or `~/.claude/commands/` (personal). The filename becomes the command (e.g., `fix-tests.md` → `/fix-tests`).
+
+### 2.5.1 Using `/compact` with instructions
+
+The `/compact` command compresses conversation history to free up context space. You can provide optional instructions in natural language to specify what to preserve:
+
+- `/compact` - General summary of everything
+- `/compact preserve the coding patterns we established` - Keep specific information
+- `/compact keep the solution we found, remove debugging steps` - Filter content
+- `/compact focus on authentication logic` - Focus on specific topics
+- `/compact only keep the names of the websites we reviewed` - Limit to specific items
+
+**Best practice:** Compact at logical breakpoints (debugging → implementation → testing) rather than waiting for automatic compaction. Be specific about what you want to preserve to maintain relevant context for ongoing work.
+
+### 2.5.2 Using `/rewind` to undo changes
+
+The `/rewind` command undoes code changes by rolling back your conversation and file modifications. It's like a time machine for your coding session.
+
+**Examples:**
+
+1. **Undo broken changes:**
+   ```
+   You: Refactor the authentication module
+   Claude: [Makes changes to auth.js, login.js, middleware.js]
+   You: The tests are failing now. /rewind
+   → Select message before refactoring, all files restored
+   ```
+
+2. **Try different approach:**
+   ```
+   You: Add Redis caching to the API
+   Claude: [Implements Redis caching]
+   You: This is too complex. /rewind
+   You: Let's use in-memory caching instead
+   ```
+
+3. **Remove experimental code:**
+   ```
+   You: Add debug logging throughout the app
+   Claude: [Adds console.log statements everywhere]
+   You: [Tests and confirms it works]
+   You: /rewind
+   → Remove all debug logging but keep the knowledge
+   ```
+
+**Key features:** Reverts both conversation history and file changes synchronously, works independently of git, allows safe experimentation. Use it when Claude's changes didn't work out or when you want to try a different direction.
 
 ## 3 Settings and Configuration
 
@@ -357,6 +493,51 @@ Permissions control which tools Claude can use and which files it can access. Co
   }
 }
 ```
+
+#### Default permission mode
+
+You can set a default permission mode in your settings file using the `defaultMode` setting inside the `permissions` object. This controls how Claude Code handles permission requests by default:
+
+```json
+{
+  "permissions": {
+    "defaultMode": "acceptEdits"
+  }
+}
+```
+
+Available permission modes:
+
+| Mode | Description | Use case |
+|------|-------------|----------|
+| `default` | Prompts for permission on first use of each tool | Standard interactive development |
+| `acceptEdits` | Automatically accepts file edits without prompting | Faster workflow for trusted projects |
+| `plan` | Can analyze files but cannot modify files or execute commands | Safe exploration and planning |
+| `bypassPermissions` | Automatically accepts all permission prompts (no safety checks) | Automation scripts only |
+
+Example with combined settings:
+
+```json
+{
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Bash(npm run test:*)",
+      "Read(~/.zshrc)"
+    ],
+    "deny": [
+      "Bash(curl:*)",
+      "Read(./.env)"
+    ]
+  }
+}
+```
+
+**Security warning**: Never use `bypassPermissions` mode in production or with sensitive codebases, as this mode skips all safety checks and can lead to unintended modifications or security issues.
+
+**Alternative**: You can also set permission mode when starting Claude Code using the CLI flag: `claude --permission-mode bypassPermissions`
+
+#### Permission patterns and wildcards
 
 Permission rules support wildcards and patterns:
 - `Bash(npm run *)` - Allow all npm run commands

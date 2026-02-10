@@ -1,0 +1,57 @@
+#!/bin/bash
+# Extract user prompts from current Claude Code session
+
+CURRENT_SESSION=$(find ~/.claude/projects -name "*.jsonl" -type f | grep -v subagents | xargs ls -t 2>/dev/null | head -1)
+
+if [ -z "$CURRENT_SESSION" ]; then
+    echo "No session file found"
+    exit 1
+fi
+
+echo "Current Session Transcript"
+echo "File: $(basename $CURRENT_SESSION)"
+echo "========================================"
+echo ""
+
+python3 - "$CURRENT_SESSION" << 'PYTHON'
+import sys, json, re
+
+session_file = sys.argv[1]
+count = 0
+skip_patterns = [
+    r'^<bash-input>',
+    r'^<bash-stdout>',
+    r'^<bash-stderr>',
+    r'^<command-name>',
+    r'^<local-command-',
+]
+
+with open(session_file, 'r') as f:
+    for line in f:
+        try:
+            data = json.loads(line.strip())
+            if data.get('type') == 'user' and not data.get('isMeta'):
+                content = data.get('message', {}).get('content', '').strip()
+                
+                # Skip system-generated messages
+                skip = any(re.match(pattern, content) for pattern in skip_patterns)
+                if skip or not content:
+                    continue
+                    
+                count += 1
+                timestamp = data.get('timestamp', 'unknown')
+                
+                print(f"[#{count}] {timestamp}")
+                print("-" * 60)
+                # Show first 300 chars of prompt
+                if len(content) <= 300:
+                    print(content)
+                else:
+                    print(content[:300] + "...")
+                    print(f"[Total length: {len(content)} chars]")
+                print("\n")
+        except:
+            pass
+            
+print(f"Total user prompts: {count}")
+PYTHON

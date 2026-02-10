@@ -8,6 +8,11 @@
   },
   "allowManagedHooksOnly": false,
   "companyAnnouncements": [
-    "Welcome! company managed settings are located in /etc/claude-code folder"
-  ]
+    "Welcome! Company managed settings are located in /etc/claude-code folder"
+  ],
+  "statusLine": {
+    "type": "command",
+    "command": "/etc/claude-code/statusline.sh",
+    "padding": 0
+  }
 }
