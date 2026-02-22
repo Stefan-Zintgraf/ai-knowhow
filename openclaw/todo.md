@@ -1,4 +1,17 @@
-    - [ ] Backup erweitern (kein .venv Ordner)
+    - [x] /testnode geht nicht
+    - [x] Backup erweitern (kein .venv Ordner)
+    - [ ] backup_cred.sh anpassen
+          - user.config statt user.systemd, dort auch gogcli etc. dazu? siehe backup.sh
+    - [ ] auch backup.sh nochmal anpassen (kein ~/.openclaw mehr, env variable)
+    - [ ] /home/dev/proj/ai-knowhow/openclaw/ in repo
+          - Credentials nicht (problem openclaw.json ist wichtig)
+          - siehe ~/.openclaw/plans/env_only_credentials.md
+    - [ ] webclaw als Interface im Vergleich zu Telegram (ist WebApp)
+    - [ ] acp client: man kann cursor, claude code dranhaengen
+          - [ ] helloworld gw Client App, soll Message an Whatsapp oder email senden
+          - [ ] cursor/Claude Desktop via acp an openclaw anbinden 
+                (Mail senden, hello-node, ...)
+          - [ ] Langchain via acp an openclaw anbinden (dto. wie cursor/claude)
     - [ ] Anpassen dieser Dateien (generisch, nicht mehr nur sbom), Test mit hello-node: 
           /home/dev/.openclaw/examples/plan/
     - [ ] hello-node via slash command starten

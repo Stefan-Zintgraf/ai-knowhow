@@ -14,7 +14,7 @@
 # -----------------------------------------------------------------------------
 # Full backup (-full): what is backed up
 # -----------------------------------------------------------------------------
-# ~/.openclaw/          OpenClaw config, hooks, sessions (last 3/agent), workspace
+# ~/.openclaw/          OpenClaw config, hooks, sessions (last 3/agent), workspace, workspace-wolfgang
 # ~/.config/systemd/    User systemd units (gateway, GOG_KEYRING_PASSWORD, etc.)
 # ~/.config/gogcli/     Google CLI (gog) config, credentials, keyring, gmail-watch
 # ~/.config/gcloud/     Google Cloud SDK auth (excl. logs)
@@ -23,7 +23,8 @@
 # Credentials-only (-cred or default): what is backed up
 # -----------------------------------------------------------------------------
 # $OPENCLAW_STATE_DIR/credentials/, .env, identity/, devices/, openclaw.json,
-# exec-approvals.json, cron/, agents/*/agent/; ~/.config/openclaw/, systemd/, gogcli/, gcloud/
+# exec-approvals.json, cron/, agents/, workspace-wolfgang/client_secret_gmail.json;
+# ~/.config/openclaw/, systemd/, gogcli/, gcloud/
 # (Default OPENCLAW_STATE_DIR: ~/.openclaw)
 #
 # -----------------------------------------------------------------------------
@@ -145,6 +146,7 @@ else
   [[ -f "$STATE_DIR/exec-approvals.json" ]] && ITEMS+=("$STATE_PREFIX/exec-approvals.json")
   [[ -d "$STATE_DIR/cron" ]]          && ITEMS+=("$STATE_PREFIX/cron")
   [[ -d "$STATE_DIR/agents" ]]        && ITEMS+=("$STATE_PREFIX/agents")
+  [[ -f "$STATE_DIR/workspace-wolfgang/client_secret_gmail.json" ]] && ITEMS+=("$STATE_PREFIX/workspace-wolfgang/client_secret_gmail.json")
   [[ -d "$HOME/.config/openclaw" ]]   && ITEMS+=(".config/openclaw")
   [[ -d "$HOME/.config/systemd" ]]    && ITEMS+=(".config/systemd")
   [[ -d "$HOME/.config/gogcli" ]]     && ITEMS+=(".config/gogcli")
