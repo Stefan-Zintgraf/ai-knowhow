@@ -11,7 +11,8 @@
 **/client_secret_gmail.json
 **/openclaw.json.bak*
 
-# OpenClaw mele: runtime, credentials, backup copies (aligned with addgit.sh / backup.sh)
+# OpenClaw mele: runtime, credentials, backup copies (aligned with backup.sh)
+openclaw/addgit.sh
 openclaw/mele/backup.deleteme/
 **/user.openclaw/agents/
 **/user.openclaw/completions/
@@ -28,6 +29,8 @@ openclaw/mele/backup.deleteme/
 **/user.openclaw/update-check.json
 *deleteme*
 *delete.me*
+*.cred.zip
+*.full.zip
 **/identity.json
 **/.cursor-debug*.log
 **/*plugin-debug.log
