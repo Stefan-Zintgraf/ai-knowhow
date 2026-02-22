@@ -1,0 +1,25 @@
+[Unit]
+Description=OpenClaw Gateway (v2026.2.9)
+After=network-online.target tailscaled.service
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=..
+Environment=OPENCLAW_STATE_DIR=user.openclaw
+ExecStartPre=-/usr/bin/tailscale funnel --bg --set-path /gmail-pubsub --yes 8788
+ExecStartPre=-/usr/bin/curl -s -X POST --unix-socket /var/run/tailscale/tailscaled.sock http://local-tailscaled.sock/localapi/v0/debug?action=rebind
+ExecStart="/usr/bin/node" "/home/dev/.nvm/versions/node/v22.22.0/lib/node_modules/openclaw/dist/index.js" gateway --port 18789
+#ExecStart=/home/dev/.nvm/versions/node/v22.22.0/bin/node /home/dev/openclaw/dist/index.js gateway --port 18789
+Restart=always
+RestartSec=5
+KillMode=process
+Environment=HOME=/home/dev
+Environment="PATH=/home/dev/.nvm/current/bin:/home/dev/.local/bin:/home/dev/.npm-global/bin:/home/dev/bin:/home/dev/.fnm/current/bin:/home/dev/.volta/bin:/home/dev/.asdf/shims:/home/dev/.local/share/pnpm:/home/dev/.bun/bin:/usr/local/bin:/usr/bin:/bin"
+Environment=OPENCLAW_GATEWAY_PORT=18789
+Environment="OPENCLAW_SYSTEMD_UNIT=openclaw-gateway.service"
+Environment=OPENCLAW_SERVICE_MARKER=openclaw
+Environment=OPENCLAW_SERVICE_KIND=gateway
+Environment=OPENCLAW_SERVICE_VERSION=2026.2.9
+
+[Install]
+WantedBy=default.target

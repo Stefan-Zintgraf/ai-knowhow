@@ -1,0 +1,23 @@
+[Unit]
+Description=OpenClaw Gateway
+After=network-online.target tailscaled.service
+Wants=network-online.target
+
+[Service]
+ExecStartPre=/usr/bin/tailscale funnel --bg --set-path /gmail-pubsub --yes 8788
+ExecStart=/usr/bin/node /path/to/openclaw/dist/index.js gateway --port 18789
+Restart=always
+RestartSec=5
+KillMode=process
+Environment=HOME=%h
+Environment=OPENCLAW_GATEWAY_PORT=18789
+# Set via: systemctl --user set-environment OPENCLAW_GATEWAY_TOKEN=... or drop-in override
+Environment=OPENCLAW_GATEWAY_TOKEN=
+Environment=GROQ_API_KEY=
+Environment=OLLAMA_API_KEY=ollama-local
+Environment="OPENCLAW_SYSTEMD_UNIT=openclaw-gateway.service"
+Environment=OPENCLAW_SERVICE_MARKER=openclaw
+Environment=OPENCLAW_SERVICE_KIND=gateway
+
+[Install]
+WantedBy=default.target

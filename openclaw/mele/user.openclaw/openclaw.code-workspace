@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "../openclaw"
+		},
+		{
+			"path": "../openclawcourse"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../.config"
+		},
+		{
+			"path": "../proj/ai-knowhow"
+		}
+	],
+	"settings": {
+		"typescript.reportStyleChecksAsWarnings": false,
+		"typescript.tsdk": "node_modules/typescript/lib",
+		"typescript.experimental.useTsgo": true
+	}
+}

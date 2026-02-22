@@ -1,0 +1,10 @@
+{
+  "id": "testnode",
+  "name": "Testnode",
+  "description": "Start/stop the Testnode (Python example node) or send it a message via testnode.echo. Use /testnode on|off|restart or /testnode <message>.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

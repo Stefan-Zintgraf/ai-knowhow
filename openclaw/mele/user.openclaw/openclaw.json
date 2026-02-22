@@ -1,0 +1,536 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.17",
+    "lastTouchedAt": "2026-02-22T19:40:47.850Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-22T19:40:47.823Z",
+    "lastRunVersion": "2026.2.17",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "openrouter:default": {
+        "provider": "openrouter",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "groq": {
+        "baseUrl": "https://api.groq.com/openai/v1",
+        "models": []
+      },
+      "ollama": {
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "apiKey": "OLLAMA_API_KEY",
+        "api": "openai-completions",
+        "models": []
+      },
+      "openrouter": {
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "models": [
+          {
+            "id": "qwen/qwen3-vl-30b-a3b-thinking",
+            "name": "Qwen3 VL 30B A3B Thinking · vision · 128k ctx",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 2e-7,
+              "output": 0.000001,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 65536
+          },
+          {
+            "id": "anthropic/claude-opus-4.5",
+            "name": "Claude Opus 4.5 · vision · 200k ctx",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0.000005,
+              "output": 0.000025,
+              "cacheRead": 5e-7,
+              "cacheWrite": 0.00000625
+            },
+            "contextWindow": 200000,
+            "maxTokens": 128000
+          },
+          {
+            "id": "anthropic/claude-sonnet-4.5",
+            "name": "Claude Sonnet 4.5 · vision · 200k ctx",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0.000003,
+              "output": 0.000015,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 128000
+          },
+          {
+            "id": "moonshotai/kimi-k2.5",
+            "name": "Kimi K2.5 · vision · 256k ctx",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 2.3e-7,
+              "output": 3e-7,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 262144
+          },
+          {
+            "id": "z-ai/glm-5",
+            "name": "GLM 5 · 205k ctx",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 3e-7,
+              "output": 0.00000255,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          },
+          {
+            "id": "google/gemini-3-pro-preview",
+            "name": "Gemini 3 Pro · vision · 1M ctx",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0.000002,
+              "output": 0.000012,
+              "cacheRead": 2e-7,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 66000
+          },
+          {
+            "id": "mistralai/devstral-2512",
+            "name": "Devstral 2 · coding · 256k ctx",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 5e-8,
+              "output": 2.2e-7,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 66000
+          },
+          {
+            "id": "qwen/qwen3-coder",
+            "name": "Qwen3 Coder 480B · coding · 256k ctx",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 2.2e-7,
+              "output": 9.5e-7,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 65536
+          },
+          {
+            "id": "xiaomi/mimo-v2-flash",
+            "name": "MiMo V2 Flash · coding · 262k ctx",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 9e-8,
+              "output": 2.9e-7,
+              "cacheRead": 4.5e-8,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 16384
+          },
+          {
+            "id": "google/gemini-2.0-flash-lite-001",
+            "name": "Gemini 2.0 Flash Lite · vision · 1M ctx",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 7.5e-8,
+              "output": 3e-7,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 8192
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openrouter/moonshotai/kimi-k2.5",
+        "fallbacks": [
+          "ollama/glm-5:cloud",
+          "openrouter/qwen/qwen3-vl-30b-a3b-thinking"
+        ]
+      },
+      "models": {
+        "openrouter/auto": {
+          "alias": "OpenRouter"
+        },
+        "ollama/glm-5:cloud": {
+          "alias": "Ollama glm-5 cloud"
+        },
+        "openrouter/anthropic/claude-opus-4.5": {
+          "alias": "Opus 4.5"
+        },
+        "openrouter/anthropic/claude-sonnet-4.5": {
+          "alias": "Sonnet 4.5"
+        },
+        "openrouter/moonshotai/kimi-k2.5": {
+          "alias": "Kimi K2.5"
+        },
+        "openrouter/z-ai/glm-5": {
+          "alias": "GLM 5"
+        },
+        "openrouter/google/gemini-3-pro-preview": {
+          "alias": "Gemini 3 Pro"
+        },
+        "openrouter/mistralai/devstral-2512": {
+          "alias": "Devstral 2"
+        },
+        "openrouter/qwen/qwen3-coder": {
+          "alias": "Qwen3 Coder"
+        },
+        "openrouter/xiaomi/mimo-v2-flash": {
+          "alias": "MiMo V2 Flash"
+        },
+        "openrouter/google/gemini-2.0-flash-lite-001": {
+          "alias": "Gemini 2.0 Flash Lite"
+        }
+      },
+      "workspace": "${OPENCLAW_STATE_DIR}/workspace",
+      "memorySearch": {
+        "provider": "openai",
+        "remote": {
+          "baseUrl": "http://192.168.178.14:11434/v1",
+          "apiKey": "ollama"
+        },
+        "model": "nomic-embed-text"
+      },
+      "compaction": {
+        "mode": "safeguard",
+        "maxHistoryShare": 0.4,
+        "memoryFlush": {
+          "enabled": true,
+          "softThresholdTokens": 6000
+        }
+      },
+      "elevatedDefault": "on",
+      "heartbeat": {
+        "every": "30m",
+        "model": "openrouter/google/gemini-2.0-flash-lite-001"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    },
+    "list": [
+      {
+        "id": "main"
+      },
+      {
+        "id": "wolfgang",
+        "name": "wolfgang",
+        "workspace": "${OPENCLAW_STATE_DIR}/workspace-wolfgang",
+        "agentDir": "${OPENCLAW_STATE_DIR}/agents/wolfgang/agent",
+        "model": "openrouter/moonshotai/kimi-k2.5",
+        "tools": {
+          "alsoAllow": [
+            "exec"
+          ],
+          "elevated": {
+            "enabled": true,
+            "allowFrom": {
+              "telegram": [
+                "*"
+              ],
+              "whatsapp": [
+                "*"
+              ]
+            }
+          },
+          "exec": {
+            "host": "gateway",
+            "security": "full",
+            "ask": "off"
+          }
+        }
+      }
+    ]
+  },
+  "tools": {
+    "alsoAllow": [
+      "exec"
+    ],
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "perplexity",
+        "perplexity": {
+          "apiKey": "${PERPLEXITY_API_KEY}",
+          "baseUrl": "https://api.perplexity.ai",
+          "model": "perplexity/sonar-pro"
+        }
+      }
+    },
+    "media": {
+      "audio": {
+        "enabled": true,
+        "scope": {
+          "default": "allow",
+          "rules": [
+            {
+              "action": "deny",
+              "match": {
+                "chatType": "group"
+              }
+            }
+          ]
+        },
+        "maxBytes": 5242880,
+        "timeoutSeconds": 30,
+        "models": [
+          {
+            "provider": "groq",
+            "model": "whisper-large-v3"
+          }
+        ]
+      }
+    },
+    "elevated": {
+      "enabled": true,
+      "allowFrom": {
+        "telegram": [
+          "*"
+        ],
+        "whatsapp": [
+          "*"
+        ]
+      }
+    },
+    "exec": {
+      "host": "gateway",
+      "security": "full",
+      "ask": "off"
+    }
+  },
+  "bindings": [
+    {
+      "agentId": "wolfgang",
+      "match": {
+        "channel": "whatsapp",
+        "accountId": "default"
+      }
+    },
+    {
+      "agentId": "wolfgang",
+      "match": {
+        "channel": "telegram",
+        "accountId": "wolfgang"
+      }
+    }
+  ],
+  "messages": {
+    "ackReactionScope": "group-mentions",
+    "tts": {
+      "auto": "inbound",
+      "provider": "edge",
+      "edge": {
+        "voice": "en-US-ChristopherNeural",
+        "lang": "en-US"
+      }
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "bash": true,
+    "restart": true
+  },
+  "hooks": {
+    "enabled": true,
+    "path": "/hooks",
+    "token": "${OPENCLAW_HOOKS_TOKEN}",
+    "presets": [],
+    "transformsDir": "hooks/transforms",
+    "mappings": [
+      {
+        "id": "gmail",
+        "match": {
+          "path": "gmail"
+        },
+        "action": "agent",
+        "wakeMode": "now",
+        "name": "Gmail",
+        "sessionKey": "hook:gmail:{{messages[0].id}}",
+        "messageTemplate": "New email from {{messages[0].from}}\nSubject: {{messages[0].subject}}\n{{messages[0].snippet}}\n{{messages[0].body}}",
+        "transform": {
+          "module": "gmail-trusted-sender.mjs"
+        }
+      }
+    ],
+    "gmail": {
+      "account": "${GMAIL_ACCOUNT}",
+      "label": "INBOX",
+      "topic": "projects/${GCP_PROJECT_ID}/topics/gog-gmail-watch",
+      "subscription": "gog-gmail-watch-push",
+      "pushToken": "${GMAIL_PUSH_TOKEN}",
+      "hookUrl": "http://127.0.0.1:18789/hooks/gmail",
+      "includeBody": true,
+      "maxBytes": 20000,
+      "renewEveryMinutes": 720,
+      "serve": {
+        "bind": "127.0.0.1",
+        "port": 8788,
+        "path": "/"
+      },
+      "tailscale": {
+        "mode": "off",
+        "path": "/gmail-pubsub"
+      }
+    },
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "boot-md": {
+          "enabled": true
+        },
+        "command-logger": {
+          "enabled": true
+        },
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "channels": {
+    "whatsapp": {
+      "dmPolicy": "pairing",
+      "selfChatMode": false,
+      "groupPolicy": "allowlist",
+      "debounceMs": 0,
+      "mediaMaxMb": 50
+    },
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "botToken": "${TELEGRAM_BOT_TOKEN}",
+      "groupPolicy": "allowlist",
+      "streamMode": "partial",
+      "accounts": {
+        "wolfgang": {
+          "dmPolicy": "pairing",
+          "botToken": "${TELEGRAM_BOT_TOKEN}",
+          "groupPolicy": "allowlist",
+          "streamMode": "partial"
+        }
+      }
+    }
+  },
+  "canvasHost": {
+    "enabled": true,
+    "root": "${OPENCLAW_STATE_DIR}/workspace-wolfgang/canvas",
+    "port": 18793,
+    "liveReload": true
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "${OPENCLAW_GATEWAY_TOKEN}"
+    },
+    "trustedProxies": [
+      "127.0.0.1"
+    ],
+    "tailscale": {
+      "mode": "serve",
+      "resetOnExit": true
+    },
+    "nodes": {
+      "allowCommands": [
+        "testnode.echo"
+      ],
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "calendar.add",
+        "contacts.add",
+        "reminders.add"
+      ]
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  },
+  "plugins": {
+    "load": {
+      "paths": [
+        "${OPENCLAW_STATE_DIR}/examples/plugins/hello",
+        "${OPENCLAW_STATE_DIR}/examples/plugins/testnode"
+      ]
+    },
+    "entries": {
+      "whatsapp": {
+        "enabled": true
+      },
+      "telegram": {
+        "enabled": true
+      }
+    }
+  }
+}

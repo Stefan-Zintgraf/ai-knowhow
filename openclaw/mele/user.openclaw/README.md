@@ -1,0 +1,1 @@
+Copy `openclaw.json.example` to `openclaw.json` and set the environment variables listed in [ENV.md](ENV.md). The example uses `${VAR}` substitution so secrets stay out of the repo. See repo root README for systemd and clone instructions.

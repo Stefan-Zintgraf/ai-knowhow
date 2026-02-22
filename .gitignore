@@ -8,3 +8,29 @@
 # Never commit secrets
 **/env.txt
 **/.env
+**/client_secret_gmail.json
+**/openclaw.json.bak*
+
+# OpenClaw mele: runtime, credentials, backup copies (aligned with addgit.sh / backup.sh)
+openclaw/mele/backup.deleteme/
+**/user.openclaw/agents/
+**/user.openclaw/completions/
+**/user.openclaw/config/
+**/user.openclaw/credentials/
+**/user.openclaw/cron/
+**/user.openclaw/deleteme/
+**/user.openclaw/devices/
+**/user.openclaw/identity/
+**/user.openclaw/logs/
+**/user.openclaw/media/
+**/user.openclaw/memory/
+**/user.openclaw/exec-approvals.json
+**/user.openclaw/update-check.json
+*deleteme*
+*delete.me*
+**/identity.json
+**/.cursor-debug*.log
+**/*plugin-debug.log
+**/*.pid
+openclaw/mele/user.openclaw/examples/nodes/testnode/*.log
+openclaw/mele/user.systemd/*.deleteme
