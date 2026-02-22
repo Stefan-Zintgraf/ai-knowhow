@@ -1,0 +1,10 @@
+# IDE, OS and tooling (.claude/ is intentionally not ignored)
+.obsidian/
+**/.vs/
+**/desktop.ini
+.obsidian
+.vs
+
+# Never commit secrets
+**/env.txt
+**/.env
