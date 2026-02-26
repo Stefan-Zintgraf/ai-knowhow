@@ -280,6 +280,7 @@
       {
         "id": "wolfgang",
         "name": "wolfgang",
+        "default": true,
         "workspace": "${OPENCLAW_STATE_DIR}/workspace-wolfgang",
         "agentDir": "${OPENCLAW_STATE_DIR}/agents/wolfgang/agent",
         "model": "openrouter/moonshotai/kimi-k2.5",

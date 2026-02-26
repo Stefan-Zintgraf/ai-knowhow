@@ -6,7 +6,11 @@
     - [x] /home/dev/proj/ai-knowhow/openclaw/ in repo
           - Credentials nicht (problem openclaw.json ist wichtig)
           - siehe ~/.openclaw/plans/env_only_credentials.md
-    - [ ] webclaw als Interface im Vergleich zu Telegram (ist WebApp)
+    - [x] webclaw als Interface im Vergleich zu Telegram (ist WebApp)
+    - [ ] openclaw_knowledgebase.md erweitern um Kapitel node und plugin und skill
+          - fuer alles sollte es ein helloworld geben 
+          - Verweis auf die Demos
+    - [ ] hello-world aehnliche Variante von webclaw (Gateway Client)
     - [ ] acp client: man kann cursor, claude code dranhaengen
           - [ ] helloworld gw Client App, soll Message an Whatsapp oder email senden
           - [ ] cursor/Claude Desktop via acp an openclaw anbinden 
