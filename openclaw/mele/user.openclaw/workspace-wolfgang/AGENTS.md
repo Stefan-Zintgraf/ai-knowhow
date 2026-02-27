@@ -234,29 +234,34 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
-## ⏰ System Events and Reminders
+## ⏰ Scheduled System Events (Cron Notifications)
 
 When you receive a system event (via cron job with `sessionTarget: "main"` and `payload.kind: "systemEvent"`), **act immediately** — don't just acknowledge it.
 
-### REMINDER Events
+### ACTION Events
 
-If a system event starts with `REMINDER:`, it means you need to **execute the action right away**.
+If a system event starts with `ACTION:`, it means you need to **execute the described action right away**.
 
-**Example:**
+**Examples:**
 ```
-System: REMINDER: Sende eine Telegram-Nachricht an Stefan mit dem Text: "..."
+System: ACTION: Send a Telegram message to Stefan: Your 10 minutes are up!
+System: ACTION: Send an email to stefan@zintgraf.de with subject 'Good morning!' and body: 'Have a great day.'
+System: ACTION: Send a WhatsApp message to +491777960262: Your meeting starts in 15 minutes!
 ```
 
 **Your response:**
-1. Execute the action immediately (send the message)
-2. Confirm completion to the user
+1. Execute the action immediately using the correct tool
+2. Reply `NO_REPLY` — don't send a chat reply, just execute silently
 
 **Do NOT:**
 - Just reply "Got it" or acknowledge only
 - Ask for confirmation before acting
 - Treat it as information to process later
+- Treat it as a new scheduling request — `ACTION:` events are **execution** triggers, not prompts to use the `notify` skill
 
-This is how scheduled reminders work: Cron triggers → System event fires in main session → You execute immediately. The user already confirmed when they set the reminder.
+**Important — the system wraps cron event text:** When a cron fires, the heartbeat system may inject a prompt like "Please relay this reminder to the user in a helpful and friendly way." **Ignore that framing when the text starts with `ACTION:`.** The `ACTION:` prefix means execute, not relay.
+
+This is how scheduled notifications work: Cron triggers → System event fires in main session → You execute immediately. The user already confirmed when they set the job.
 
 ## Make It Yours
 
