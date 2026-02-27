@@ -7,22 +7,25 @@
           - Credentials nicht (problem openclaw.json ist wichtig)
           - siehe ~/.openclaw/plans/env_only_credentials.md
     - [x] webclaw als Interface im Vergleich zu Telegram (ist WebApp)
-    - [ ] openclaw_knowledgebase.md erweitern um Kapitel node und plugin und skill
+    - [x] openclaw_knowledgebase.md erweitern um Kapitel node und plugin und skill
           - fuer alles sollte es ein helloworld geben 
           - Verweis auf die Demos
-    - [ ] hello-world aehnliche Variante von webclaw (Gateway Client)
-    - [ ] acp client: man kann cursor, claude code dranhaengen
-          - [ ] helloworld gw Client App, soll Message an Whatsapp oder email senden
-          - [ ] cursor/Claude Desktop via acp an openclaw anbinden 
-                (Mail senden, hello-node, ...)
-          - [ ] Langchain via acp an openclaw anbinden (dto. wie cursor/claude)
+    - [x] hello-world aehnliche Variante von webclaw (Gateway Client)
+    - [x] acp client, OpenAI Chat Completions, OpenResponses
+      - [x] OpenAI Chat completions: https://openclawcn.com/en/docs/gateway/openai-http-api/
+      - [x] OpenResponses API: https://openclawcn.com/en/docs/gateway/openresponses-http-api/
+    - [ ] Automation: https://openclawcn.com/en/docs/automation/
+    - [ ] OpenProse: https://openclawcn.com/en/docs/prose/
+    - [ ] Pi agent: 
+          - https://openclawcn.com/en/docs/pi-dev/ 
+          - https://openclawcn.com/en/docs/pi/
     - [ ] Anpassen dieser Dateien (generisch, nicht mehr nur sbom), Test mit hello-node: 
           /home/dev/.openclaw/examples/plan/
     - [ ] hello-node via slash command starten
-    - [ ] WebChat, was ist das: https://docs.openclaw.ai/web/webchat
     - [ ] hello-node mit Canvas verbinden, geht auch Eingabe dann Message an Telegram?
           im workspace-wolfgang/canvas!
     - [ ] Canvas (Agent-Web-Interface): https://github.com/openclaw/openclaw/blob/main/skills/canvas/SKILL.md 
+    - [ ] macht das Sinn, in openclaw zu integrieren https://github.com/disler/pi-vs-claude-code 
 
 
 
