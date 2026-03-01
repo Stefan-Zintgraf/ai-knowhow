@@ -14,6 +14,14 @@
     - [x] acp client, OpenAI Chat Completions, OpenResponses
       - [x] OpenAI Chat completions: https://openclawcn.com/en/docs/gateway/openai-http-api/
       - [x] OpenResponses API: https://openclawcn.com/en/docs/gateway/openresponses-http-api/
+    - [ ] Kapitel 12 genau durchlesen, dann Debugging einfacher cron job 
+          - Prompt-Analyse
+          - gleichen Prompt mal in ChatGPT eingeben?
+          - Prompt-Hardening 
+          - /notify plugin fuer 100% Sicherheit (fix parametriert, wohin die Notification geht)
+    - [ ] whatsapp notification geht nicht, Prompts untersuchen
+    - [ ] Analyse agentic RAG (Prompt-Debugging), siehe Kapitel 10 am Ende
+    - [ ] Evtl. via bmad den OpenClaw Code parsen, damit Infos spaeter schneller gefunden werden
     - [ ] Automation: https://openclawcn.com/en/docs/automation/
     - [ ] OpenProse: https://openclawcn.com/en/docs/prose/
     - [ ] Pi agent: 
