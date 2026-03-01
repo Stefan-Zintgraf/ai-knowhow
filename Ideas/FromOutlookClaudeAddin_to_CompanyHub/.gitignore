@@ -1,0 +1,49 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+UpgradeLog.htm
+
+# IDE / AI tool settings
+.cursor/
+.gemini/
+.claude/
+
+# NuGet
+packages/
+nuget.exe
+*.nupkg
+
+# Build tools
+build.bat
+
+# VS log
+vs_log.xml
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Credentials / Secrets
+*.env
+env.txt
+**/appsettings.*.json
+**/secrets.json
+
+# Temporary files
+*.tmp
+*.temp
+~$*
