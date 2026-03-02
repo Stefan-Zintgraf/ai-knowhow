@@ -14,6 +14,7 @@
     - [x] acp client, OpenAI Chat Completions, OpenResponses
       - [x] OpenAI Chat completions: https://openclawcn.com/en/docs/gateway/openai-http-api/
       - [x] OpenResponses API: https://openclawcn.com/en/docs/gateway/openresponses-http-api/
+    - [ ] bmad brainstormer einbinden
     - [ ] Kapitel 12 genau durchlesen, dann Debugging einfacher cron job 
           - Prompt-Analyse
           - gleichen Prompt mal in ChatGPT eingeben?

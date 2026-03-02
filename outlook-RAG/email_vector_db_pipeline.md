@@ -1,6 +1,6 @@
 # Email Export & Vector Database Pipeline for Outlook Mails
 
-## Overview
+## Overview![[BMAD_OpenClaw_Autonomous_Implementation_Spec]]
 
 This guide covers how to export Outlook PST emails and use them as input for a vector database, enabling semantic search and RAG (Retrieval-Augmented Generation) pipelines.
 
