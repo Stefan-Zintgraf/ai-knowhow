@@ -11,9 +11,9 @@ scamper_decisions: 30
 new_ideas_from_scamper: 4
 design_principles_established: 5
 technique_execution_complete: false
-facilitation_notes: 'Session 1: Deep First Principles (104 ideas). Session 2: User added 30 ideas across 4 new categories. Session 3: POC scope defined, roadmap framed (POC/MVP/V1/V2), SCAMPER applied to 26 POC ideas — 30 decisions across 7 lenses, 5 new design principles established, significant simplification achieved (5 files eliminated/merged, TDD build order adopted, convention-over-configuration principle, AI-generative brainstorming mode added).'
-session_state: 'scamper_complete_roadmap_next'
-next_action: 'Build refined POC roadmap with spec dependency ordering, then Solution Matrix for MVP+ phasing'
+facilitation_notes: 'Session 1: Deep First Principles (104 ideas). Session 2: User added 30 ideas across 4 new categories. Session 3: POC scope defined, roadmap framed (POC/MVP/V1/V2), SCAMPER applied to 26 POC ideas — 30 decisions across 7 lenses, 5 new design principles established, significant simplification achieved (5 files eliminated/merged, TDD build order adopted, convention-over-configuration principle, AI-generative brainstorming mode added). Session 4: POC roadmap detailed — 5 build phases with spec dependency DAG, dual-mode execution model (script-first), hybrid BMad integration (strategy C), sophisticated Python spec runner, AI Test User Agent (single-invocation), spec files from day one (dogfooding).'
+session_state: 'poc_roadmap_detailed_solution_matrix_next'
+next_action: 'Solution Matrix for MVP/V1/V2 idea allocation, then finalize spec file format (SPEC-000) and begin Phase 1 spec writing'
 session_continued: true
 continuation_date: '2026-03-11'
 context_file: ''
@@ -850,13 +850,219 @@ Before applying SCAMPER, the session established a phased roadmap framework and 
 
 **No stored derived state. No config.yaml. No separate docs. Filesystem is truth.**
 
-### Updated Open Threads
+### Updated Open Threads (Post-Session 3)
 
 1. ~~**SCAMPER pass**~~ — COMPLETED
 2. **Solution Matrix** — Apply to MVP/V1/V2 idea allocation
-3. **POC Roadmap detailing** — Break POC into concrete build phases with spec dependency ordering
-4. **Spec file format design** — Finalize the unified spec format (build + test + docs + dependencies + phase)
+3. ~~**POC Roadmap detailing**~~ — COMPLETED (Session 4)
+4. **Spec file format design** — Finalize the unified spec format (SPEC-000 bootstrap)
 5. **REPL step definition** — Define exact REPL steps and their spec coverage
 6. **Session.md format design** — Finalize PRD-structured synthesis + append-only history format
 7. **Structural validator design** — Shared assertions for health checks and Layer 1 tests
 8. **AI-generative mode design** — How AI burst generation + human curation works in practice
+
+---
+
+## Session 4: POC Roadmap Detailing (2026-03-11)
+
+### Architectural Decisions Made
+
+Seven key architectural decisions were debated and resolved during this session:
+
+#### Decision 1: Layer Ordering — Test Infrastructure Before Platform Shell
+
+**Decision:** Layer 1 (test infrastructure) is built before Layer 2 (platform shell).
+
+**Reasoning:** TDD approach. Specs are contracts that describe what the system SHOULD look like. The structural validator checks filesystem state against conventions. Neither requires a working REPL — they need Layer 0's definitions (schemas, naming, folder layout). The platform then grows inside the pre-existing test harness.
+
+**Dependency chain:**
+- Layer 0: Define conventions (schemas, naming, folder layout)
+- Layer 1: Build tooling that verifies conventions + spec contracts for everything
+- Layer 2: Build the REPL (which Layer 1's specs already describe)
+- Layer 3: Brainstorming plugin (which Layer 1's specs already describe)
+
+#### Decision 2: Dual-Mode Execution — Script Mode First
+
+**Decision:** Two execution modes: Script Mode (Python orchestrator, invokes AI CLIs) and Conversational Mode (AI reads workflow files directly). Script mode is built first.
+
+**Reasoning:** Script mode enables automated testing — the foundation the TDD approach demands. It forces specs to be precise enough for automated execution, which also makes conversational mode more reliable when built later. Without script mode, the autonomous build-test loop can't close.
+
+**Key properties:**
+- The spec file is identical in both modes — only the execution mechanism differs
+- Script mode: Python script invokes AI CLI, captures filesystem output, runs validator, reports results
+- Conversational mode: AI reads workflow/spec files and follows instructions directly
+- Execution mode is implicit from the runtime environment, not configured per-topic
+- Script mode invocation: `python spec-runner.py --spec specs/SPEC-020.md --ai claude`
+- Conversational mode invocation: "Read specs/SPEC-020.md and follow the build instructions"
+
+#### Decision 3: POC Is Not a Monolith
+
+**Decision:** Clean platform/plugin separation from day one. The REPL shell is one layer, brainstorming plugs into it through a defined interface contract.
+
+**Plugin interface contract (thin):** A plugin is a folder containing a `workflow.md`. The REPL loads it, passes `{topic_path}` and `{session_path}`, and expects the plugin to manage files within the topic folder. WORKFLOW.md content must be clear enough for any AI agent to follow reliably.
+
+#### Decision 4: Hybrid BMad Integration (Strategy C)
+
+**Decision:** Platform handles inter-session concerns (which topic, which session, re-entry brief). BMad handles intra-session concerns (technique selection, facilitation, idea generation). Frontmatter serves both — platform fields and BMad fields coexist.
+
+**The orchestrator model — Platform wraps BMad, doesn't replace it:**
+
+1. **Platform pre-processes** → Reads `topic.md`, resolves paths, generates re-entry brief from `session.md` frontmatter, presents topic context
+2. **Platform configures BMad** → Sets `output_folder` to topic's path, points to platform's PRD-structured template, passes `user_name` and language settings
+3. **BMad takes over** → Runs its own continuation detection from `session.md` frontmatter, executes techniques, manages ideas — all existing logic, unchanged
+4. **BMad finishes** → Session document written/updated
+5. **Platform post-processes** → Archives previous session if needed (R-5), updates platform fields in `topic.md`, returns to REPL
+
+**BMad files are never modified.** When BMad updates, the platform benefits automatically.
+
+**Frontmatter ownership split:**
+
+Platform-owned fields (in `topic.md`):
+- `name`, `type`, `platform_version`, `created`, `state`, `ai_generative_mode`
+
+BMad-owned fields (in `session.md`):
+- `stepsCompleted`, `techniques_used`, `techniques_remaining`, `ideas_generated`, `selected_approach`, `facilitation_notes`, `write_status`
+
+#### Decision 5: Spec Files from Day One (Dogfooding)
+
+**Decision:** Phase 1 produces actual spec files in the `specs/` folder using the platform's own spec format (Option A). No intermediate design documents.
+
+**Reasoning:** Embodies P-1 (One Artifact, Many Purposes). Phase 2's spec runner has real inputs to parse from its first test. The spec format is validated by being used. Bootstrapping is natural: SPEC-000 (Spec File Format) is self-describing and is the first file written.
+
+#### Decision 6: AI Test User Agent — Single Invocation Approach
+
+**Decision:** The test user agent is a prompt prepended to the platform agent's context, not a separate agent. One AI CLI invocation simulates both the platform workflow and the user responses.
+
+**How it works:**
+1. Test scenario file defines: topic name, goals, scripted responses at each decision point (technique selection, facilitation responses, completion triggers)
+2. Scenario-to-prompt compiler prepends test user behavior to the agent's context
+3. Single AI CLI invocation runs: the agent follows the workflow AND provides scripted user responses
+4. Python spec runner validates filesystem state matches spec assertions
+
+**Reasoning:** Avoids the complexity of orchestrating two AI agents in conversation. One invocation, deterministic inputs, filesystem-verifiable outputs. The test user is a prompt, not a separate agent.
+
+**POC scope confirmed:** Without the test user agent, Phase 4 (brainstorming integration) can't be tested autonomously.
+
+#### Decision 7: Sophisticated Python Spec Runner
+
+**Decision:** The spec runner is a full-featured Python application with test reporting, retry logic, dependency DAG resolution, and the complete build-test-fix loop.
+
+**Capabilities:**
+- Spec file parser (reads SPEC-000 format)
+- Dependency DAG resolver (topological sort, upstream failures block downstream)
+- AI CLI invoker (configurable: claude, gemini, etc.)
+- Build-test-fix loop with configurable max retries
+- Structural validator integration
+- Test reporter (pass/fail per spec, summary, build log)
+- Fully autonomous operation (no human interaction within a phase)
+
+**This is the heaviest engineering in the POC and the most critical component.** Phases 3-5 go faster because the pipeline does the heavy lifting.
+
+---
+
+### POC Build Phases with Spec Dependency Ordering
+
+#### Phase 1: Conventions, Contracts & Spec Files
+
+**Output:** Real spec files in `specs/` — the foundation everything validates against. No code, pure definition work.
+
+| Spec | Name | Depends On |
+|------|------|------------|
+| SPEC-000 | Spec File Format (self-describing bootstrap) | — |
+| SPEC-001 | Folder Structure Conventions | SPEC-000 |
+| SPEC-002 | topic.md Schema | SPEC-000, SPEC-001 |
+| SPEC-003 | session.md Format (PRD-structured synthesis + history) | SPEC-000, SPEC-001 |
+| SPEC-004 | Plugin Interface Contract | SPEC-000 |
+| SPEC-005 | Frontmatter Ownership Map (platform vs. BMad fields) | SPEC-002, SPEC-003 |
+| SPEC-006 | Platform Versioning Scheme | SPEC-002 |
+
+#### Phase 2: Test Infrastructure
+
+**Output:** Working autonomous test pipeline. The harness everything else grows inside.
+
+| Component | Description |
+|-----------|-------------|
+| Structural Validator | Python module. Takes a folder path, checks against SPEC-001/002/003. Returns structured pass/fail with details. Shared by health checks and Layer 1 tests (P-4). |
+| Spec Runner | Python. Parses spec files, resolves dependency DAG (topological sort), invokes AI CLI, runs build-test-fix loop with retries, generates test reports and build logs. Fully autonomous. |
+| Synthetic Test Fixtures | Pre-built folder structures: empty workspace, single-topic, multi-topic, malformed-topic. |
+| Test User Agent Infrastructure | Test scenario format + scenario-to-prompt compiler. Single AI invocation simulates both platform workflow and user responses. |
+| Meta-test | Spec runner validates its own fixtures pass SPEC-001/002/003. |
+
+#### Phase 3: Platform Shell
+
+**Output:** Working REPL that creates and manages topics, validated by Phase 2's pipeline.
+
+| Spec | Name | Depends On |
+|------|------|------------|
+| SPEC-020 | WORKFLOW.md REPL Loop (invoke → scan → present → select → load → brief → act → save → return) | SPEC-001, SPEC-004 |
+| SPEC-021 | Topic Creation Ceremony (progressive enrichment) | SPEC-002, SPEC-020 |
+| SPEC-022 | Dynamic Workspace Scanning (no stored index) | SPEC-001, SPEC-002, SPEC-020 |
+| SPEC-023 | Health Check & Self-Repair | SPEC-001, SPEC-002, SPEC-020 |
+
+After Phase 3: working platform shell that scans workspaces, lists topics, creates new topics, hands off to plugins. No brainstorming yet.
+
+#### Phase 4: Brainstorming Plugin & BMad Integration
+
+**Output:** End-to-end brainstorming through the platform, using the real BMad engine. Validated by test user agent.
+
+| Spec | Name | Depends On |
+|------|------|------------|
+| SPEC-030 | BMad Config Injection (pre-processor) | SPEC-004, SPEC-002 |
+| SPEC-031 | PRD-Structured Session Template | SPEC-003 |
+| SPEC-032 | BMad Workflow Passthrough | SPEC-030, SPEC-004 |
+| SPEC-033 | Platform State Post-Processing | SPEC-032, SPEC-002, SPEC-003 |
+| SPEC-034 | AI-Generative Mode | SPEC-002, SPEC-032 |
+| SPEC-035 | Session Archive Management (R-5 automatic archiving) | SPEC-003, SPEC-001 |
+
+End-to-end test: spec runner invokes platform with test scenario → test user drives through create topic → brainstorm → complete session → structural validator checks all outputs.
+
+#### Phase 5: Integration, Hardening & Phase Report
+
+**Output:** POC complete, ready for human evaluation.
+
+| Component | Description |
+|-----------|-------------|
+| Platform versioning & migration stubs | SPEC-006 implementation — platform_version in topic.md, migration detection |
+| Full regression suite | All specs pass, end-to-end scenarios green |
+| Conversational mode spec runner | Instructions-based execution for Claude Desktop / non-CLI environments |
+| Phase report | What was built, what passes, what was deferred to MVP, human evaluation checklist |
+
+### Spec Dependency DAG
+
+```
+SPEC-000 (Spec Format)
+  ├── SPEC-001 (Folders)
+  │     ├── SPEC-002 (topic.md)
+  │     │     ├── SPEC-005 (Frontmatter Map)
+  │     │     ├── SPEC-006 (Versioning)
+  │     │     ├── SPEC-021 (Topic Creation)
+  │     │     ├── SPEC-022 (Workspace Scan)
+  │     │     ├── SPEC-030 (Config Injection)
+  │     │     └── SPEC-034 (AI-Generative)
+  │     ├── SPEC-003 (session.md)
+  │     │     ├── SPEC-005 (Frontmatter Map)
+  │     │     ├── SPEC-031 (PRD Template)
+  │     │     ├── SPEC-033 (Post-Processing)
+  │     │     └── SPEC-035 (Archive Mgmt)
+  │     ├── SPEC-020 (REPL Loop)
+  │     │     ├── SPEC-021, SPEC-022, SPEC-023
+  │     │     └── SPEC-032 (BMad Passthrough)
+  │     └── SPEC-023 (Health Check)
+  └── SPEC-004 (Plugin Contract)
+        ├── SPEC-020 (REPL Loop)
+        ├── SPEC-030 (Config Injection)
+        └── SPEC-032 (BMad Passthrough)
+```
+
+### Updated Open Threads (Post-Session 4)
+
+1. ~~**SCAMPER pass**~~ — COMPLETED (Session 3)
+2. **Solution Matrix** — Apply to MVP/V1/V2 idea allocation (remaining technique)
+3. ~~**POC Roadmap detailing**~~ — COMPLETED (Session 4)
+4. **SPEC-000 design** — Finalize the unified spec file format (bootstrap spec, first deliverable)
+5. **REPL step definition** — Define exact REPL steps (invoke → scan → present → select → load → brief → act → save → return) and their behavioral contracts
+6. **Session.md format design** — Finalize PRD-structured synthesis + append-only history format
+7. **Structural validator assertion library** — Define the shared assertions for health checks and Layer 1 tests
+8. **AI-generative mode design** — How AI burst generation + human curation works in practice
+9. **Test scenario format design** — Define the scripted scenario format for the test user agent
+10. **Spec runner CLI interface** — Define the Python spec runner's command-line interface and configuration
