@@ -8,6 +8,7 @@ This document is a know how document, how to work with Claude Code.
 
 1. [Installation](#1-installation)
    - [1.1 macOS, Linux, WSL](#11-macos-linux-wsl)
+   - [1.1.1 Debian 13, Claude Desktop](#debian-13-claude-desktop)
    - [1.2 Windows PowerShell](#12-windows-powershell)
    - [1.3 Windows CMD](#13-windows-cmd)
    - [1.4 Login](#14-login)
@@ -60,6 +61,23 @@ This document is a know how document, how to work with Claude Code.
 curl -fsSL https://claude.ai/install.sh | bash
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
 ```
+
+#### Debian 13, Claude Desktop
+1. Add the repository and GPG key
+```
+curl -fsSL https://aaddrick.github.io/claude-desktop-debian/KEY.gpg \
+  | sudo gpg --dearmor -o /usr/share/keyrings/claude-desktop.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/claude-desktop.gpg arch=amd64] \
+  https://aaddrick.github.io/claude-desktop-debian stable main" \
+  | sudo tee /etc/apt/sources.list.d/claude-desktop.list
+```
+2. Install
+```
+sudo apt update
+sudo apt install claude-desktop
+```
+
 
 ### 1.2 Windows PowerShell:
 ```

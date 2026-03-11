@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """
-Minimal OpenClaw gateway client.
+OpenClaw gateway client — CLI tool and importable library.
 
-Sends a prompt to the OpenClaw gateway and streams the agent's response to
-stdout, token by token. Exits cleanly when the agent finishes.
+Sends a prompt to the OpenClaw gateway and returns (or streams) the agent's
+response.  Works both as a standalone command-line tool and as a Python library
+that test scripts or AI agents can import.
 
-Usage:
+CLI usage (unchanged):
     python claw_client.py "your prompt here"
     python claw_client.py --session myproject "what did we discuss?"
     echo "some text" | python claw_client.py
@@ -13,6 +14,24 @@ Usage:
     cat file.txt    | python claw_client.py "summarise this"
     git diff HEAD~1 | python claw_client.py --session codereview "review this diff"
     cat file.txt    | python claw_client.py - --session notes
+
+Library usage (synchronous):
+    from claw_client import prompt_sync, ClawResponse
+
+    response = prompt_sync("/bmad help", session_key="test")
+    print(response.text)
+    assert "brainstorm" in response.text.lower()
+
+Library usage (async):
+    from claw_client import prompt_async, GatewayConfig
+
+    config = GatewayConfig(token="secret")
+    response = await prompt_async("/bmad help", config=config)
+
+Library usage with streaming:
+    from claw_client import prompt_sync
+
+    response = prompt_sync("hello", on_token=lambda t: print(t, end="", flush=True))
 
 Stdin is read only when no CLI argument is given (or when the sole argument
 is "-"). This avoids hanging when the script is run from a non-interactive
@@ -93,6 +112,8 @@ import os
 import sys
 import time
 import uuid
+from collections.abc import Callable
+from dataclasses import dataclass, field
 from pathlib import Path
 
 import websockets
@@ -129,6 +150,63 @@ DEFAULT_SESSION_KEY = "claw_client"
 
 IDENTITY_FILE = _HERE / "identity.json"
 
+__all__ = [
+    "ClawResponse",
+    "GatewayConfig",
+    "GatewayClient",
+    "prompt_async",
+    "prompt_sync",
+    "DEFAULT_SESSION_KEY",
+]
+
+
+# ── public data types ─────────────────────────────────────────────────────────
+
+@dataclass
+class GatewayConfig:
+    """
+    Connection parameters for the OpenClaw gateway.
+
+    Construct manually to override defaults, or use ``GatewayConfig.from_env()``
+    to load from environment variables / .env file (the same vars the CLI reads).
+    """
+    host: str = "localhost"
+    port: int = 18789
+    token: str = ""
+    identity_file: Path | None = None
+
+    @property
+    def url(self) -> str:
+        return f"ws://{self.host}:{self.port}"
+
+    @classmethod
+    def from_env(cls) -> "GatewayConfig":
+        """Create a config from environment variables (reads .env automatically on import)."""
+        return cls(
+            host=os.getenv("OPENCLAW_GATEWAY_HOST", "localhost"),
+            port=int(os.getenv("OPENCLAW_GATEWAY_PORT", "18789")),
+            token=os.getenv("OPENCLAW_GATEWAY_TOKEN", ""),
+        )
+
+
+@dataclass
+class ClawResponse:
+    """
+    Structured response from an agent prompt.
+
+    Attributes:
+        text:            Full response text (all token deltas concatenated).
+        run_id:          Gateway-assigned run identifier (useful for log correlation).
+        elapsed_seconds: Wall-clock time from connection open to lifecycle:end.
+        events:          Raw event payloads received during the run (for debugging /
+                         advanced assertions). Only populated when ``capture_events``
+                         is True in prompt_async().
+    """
+    text: str = ""
+    run_id: str | None = None
+    elapsed_seconds: float = 0.0
+    events: list[dict] = field(default_factory=list)
+
 
 # ── identity / signing ────────────────────────────────────────────────────────
 # The gateway requires a device identity (Ed25519 key pair) to grant
@@ -153,7 +231,6 @@ def _generate_identity() -> dict:
     priv_pem = key.private_bytes(Encoding.PEM, PrivateFormat.PKCS8, NoEncryption()).decode()
     pub_pem = key.public_key().public_bytes(Encoding.PEM, PublicFormat.SubjectPublicKeyInfo).decode()
     raw_pub = key.public_key().public_bytes(Encoding.Raw, PublicFormat.Raw)
-    # Device ID is deterministic from the public key so it survives restarts.
     device_id = hashlib.sha256(raw_pub).hexdigest()
     return {
         "version": 1,
@@ -164,19 +241,20 @@ def _generate_identity() -> dict:
     }
 
 
-def _load_or_create_identity() -> dict:
+def _load_or_create_identity(identity_file: Path | None = None) -> dict:
     """
-    Load the identity from identity.json if it exists and is valid, otherwise
-    generate a new one and persist it. File permissions are set to 0600 to
-    protect the private key.
+    Load the identity from disk if it exists and is valid, otherwise generate a
+    new one and persist it. File permissions are set to 0600 to protect the
+    private key.
     """
-    if IDENTITY_FILE.exists():
-        data = json.loads(IDENTITY_FILE.read_text())
+    path = identity_file or IDENTITY_FILE
+    if path.exists():
+        data = json.loads(path.read_text())
         if data.get("version") == 1 and data.get("deviceId") and data.get("privateKeyPem"):
             return data
     identity = _generate_identity()
-    IDENTITY_FILE.write_text(json.dumps(identity, indent=2))
-    IDENTITY_FILE.chmod(0o600)
+    path.write_text(json.dumps(identity, indent=2))
+    path.chmod(0o600)
     return identity
 
 
@@ -249,9 +327,10 @@ class GatewayClient:
     independently, without either blocking the other.
     """
 
-    def __init__(self, ws, identity: dict):
+    def __init__(self, ws, identity: dict, *, token: str = ""):
         self._ws = ws
         self._identity = identity
+        self._token = token
         # Maps request id → Future that resolves when the matching res arrives.
         self._pending: dict[str, asyncio.Future] = {}
         # All event frames land here in arrival order.
@@ -276,7 +355,6 @@ class GatewayClient:
         async for raw in self._ws:
             msg = json.loads(raw)
             if msg.get("type") == "res":
-                # Wake up the coroutine waiting for this specific request id.
                 fut = self._pending.pop(msg.get("id", ""), None)
                 if fut and not fut.done():
                     fut.set_result(msg)
@@ -316,9 +394,6 @@ class GatewayClient:
         After this method returns, operator.admin scope is active and chat
         methods can be called.
         """
-        # The gateway sends connect.challenge as the very first event; drain
-        # the queue until we find it (other event types are unlikely here but
-        # we skip them defensively rather than assuming first = challenge).
         nonce = None
         while True:
             msg = await asyncio.wait_for(self._events.get(), timeout=10)
@@ -329,7 +404,7 @@ class GatewayClient:
         identity = self._identity
         device_id = identity["deviceId"]
         signed_at_ms = int(time.time() * 1000)
-        token = GATEWAY_TOKEN or ""
+        token = self._token
 
         auth_payload = _build_device_payload(
             device_id=device_id,
@@ -347,22 +422,22 @@ class GatewayClient:
             "minProtocol": 3,
             "maxProtocol": 3,
             "client": {
-                "id": CLIENT_ID,          # must be "gateway-client" (gateway allowlist)
+                "id": CLIENT_ID,
                 "displayName": "claw-client-py",
                 "version": "1.0",
                 "platform": sys.platform,
-                "mode": CLIENT_MODE,      # "ui" = operator UI client
-                "instanceId": device_id,  # stable ID for this client instance
+                "mode": CLIENT_MODE,
+                "instanceId": device_id,
             },
             "role": ROLE,
             "scopes": SCOPES,
             "auth": {"token": token} if token else None,
             "device": {
                 "id": device_id,
-                "publicKey": _pub_b64url(identity["publicKeyPem"]),  # raw Ed25519 pubkey, base64url
-                "signature": signature,   # signs the auth payload string above
+                "publicKey": _pub_b64url(identity["publicKeyPem"]),
+                "signature": signature,
                 "signedAt": signed_at_ms,
-                "nonce": nonce,           # ties this signature to the challenge
+                "nonce": nonce,
             },
         })
         if not resp.get("ok"):
@@ -380,10 +455,191 @@ class GatewayClient:
             "sessionKey": session_key,
             "message": message,
             "idempotencyKey": str(uuid.uuid4()),
-            "deliver": True,  # trigger the agent immediately (vs. draft mode)
+            "deliver": True,
         })
         if not resp.get("ok"):
             raise RuntimeError(f"chat.send failed: {resp.get('error')}")
+
+
+# ── public API ────────────────────────────────────────────────────────────────
+
+async def prompt_async(
+    message: str,
+    *,
+    session_key: str = DEFAULT_SESSION_KEY,
+    config: GatewayConfig | None = None,
+    on_token: Callable[[str], None] | None = None,
+    timeout: float | None = None,
+    capture_events: bool = False,
+) -> ClawResponse:
+    """
+    Send a message to the agent and return the complete response.
+
+    This is the primary library entry point.  It opens a WebSocket connection,
+    authenticates, sends the message, collects every token delta until the agent
+    run completes, and returns a ``ClawResponse`` with the full text.
+
+    Args:
+        message:        The prompt to send to the agent.
+        session_key:    Gateway session key — the agent retains conversation
+                        context across calls that share the same key.
+        config:         Gateway connection parameters.  If *None*, loads from
+                        environment variables / ``.env`` (same as the CLI).
+        on_token:       Optional callback invoked with each token delta string
+                        as it arrives.  Useful for live-streaming output (e.g.
+                        ``lambda t: print(t, end="", flush=True)``).  The
+                        callback is called synchronously inside the event loop;
+                        keep it lightweight.
+        timeout:        Maximum seconds to wait for the complete response.
+                        *None* means no limit.  Raises ``asyncio.TimeoutError``
+                        if exceeded.
+        capture_events: When *True*, every raw event dict received during the
+                        run is appended to ``ClawResponse.events``.  Useful for
+                        debugging or protocol-level assertions in test scripts.
+
+    Returns:
+        A ``ClawResponse`` containing the full text, run ID, elapsed time,
+        and (optionally) the raw event log.
+
+    Raises:
+        ValueError:           If ``OPENCLAW_GATEWAY_TOKEN`` is not configured.
+        RuntimeError:         If the gateway rejects the connection or message,
+                              or if the agent reports an error.
+        asyncio.TimeoutError: If *timeout* is exceeded before the run finishes.
+    """
+    cfg = config or GatewayConfig.from_env()
+    if not cfg.token:
+        raise ValueError(
+            "OPENCLAW_GATEWAY_TOKEN is not set — "
+            "pass a GatewayConfig(token=...) or set the environment variable"
+        )
+
+    identity = _load_or_create_identity(cfg.identity_file)
+    t0 = time.monotonic()
+
+    async def _execute() -> ClawResponse:
+        async with websockets.connect(cfg.url) as ws:
+            client = GatewayClient(ws, identity, token=cfg.token)
+            await client.start()
+            try:
+                await client.connect()
+                await client.send(session_key, message)
+
+                run_id = None
+                chunks: list[str] = []
+                raw_events: list[dict] = []
+
+                while True:
+                    msg = await client.next_event()
+                    event = msg.get("event", "")
+                    payload = msg.get("payload", {})
+
+                    if capture_events:
+                        raw_events.append(msg)
+
+                    if event == "agent" and payload.get("stream") == "lifecycle":
+                        phase = payload.get("data", {}).get("phase")
+                        if phase == "start":
+                            run_id = payload.get("runId")
+                        elif phase == "end":
+                            if run_id is None or payload.get("runId") == run_id:
+                                break
+
+                    elif event == "agent" and payload.get("stream") == "assistant":
+                        delta = payload.get("data", {}).get("delta", "")
+                        if delta:
+                            chunks.append(delta)
+                            if on_token is not None:
+                                on_token(delta)
+
+                    elif event == "chat.error":
+                        raise RuntimeError(f"Agent error: {payload}")
+            finally:
+                await client.stop()
+
+        return ClawResponse(
+            text="".join(chunks),
+            run_id=run_id,
+            elapsed_seconds=time.monotonic() - t0,
+            events=raw_events if capture_events else [],
+        )
+
+    if timeout is not None:
+        return await asyncio.wait_for(_execute(), timeout=timeout)
+    return await _execute()
+
+
+def prompt_sync(
+    message: str,
+    *,
+    session_key: str = DEFAULT_SESSION_KEY,
+    config: GatewayConfig | None = None,
+    on_token: Callable[[str], None] | None = None,
+    timeout: float | None = None,
+    capture_events: bool = False,
+) -> ClawResponse:
+    """
+    Synchronous wrapper around :func:`prompt_async`.
+
+    Convenience for scripts and test runners that don't use ``async/await``.
+    All parameters are forwarded directly — see :func:`prompt_async` for full
+    documentation.
+    """
+    return asyncio.run(
+        prompt_async(
+            message,
+            session_key=session_key,
+            config=config,
+            on_token=on_token,
+            timeout=timeout,
+            capture_events=capture_events,
+        )
+    )
+
+
+# ── CLI streaming (backward-compatible) ──────────────────────────────────────
+
+async def run(prompt: str, session_key: str) -> None:
+    """
+    Open a gateway connection, send the prompt, and stream the response to
+    stdout token by token.  This is the original CLI entry point.
+
+    For programmatic use prefer :func:`prompt_async` or :func:`prompt_sync`.
+
+    Event handling:
+    ───────────────
+    The gateway does not use a separate chat.token/chat.complete event schema
+    on operator.admin connections. Instead it broadcasts generic "agent" events:
+
+      agent { stream: "lifecycle", data: { phase: "start" } }
+        → agent run has begun; capture runId for matching the end event
+
+      agent { stream: "assistant", data: { delta: "..." } }
+        → incremental token; print immediately to stdout without newline
+
+      agent { stream: "lifecycle", data: { phase: "end" } }
+        → run complete; print trailing newline and exit the loop
+
+    Other event types (health, tick, chat, …) are silently ignored — they are
+    broadcast to all operator clients and are not relevant to this use case.
+
+    No explicit chat.subscribe call is needed: the gateway pushes events to all
+    connected operator.admin clients automatically. (chat.subscribe is only
+    valid on dedicated streaming connections opened by the web UI layer.)
+    """
+    if not GATEWAY_TOKEN:
+        print("Error: OPENCLAW_GATEWAY_TOKEN is not set.", file=sys.stderr)
+        sys.exit(1)
+
+    def _print_token(delta: str) -> None:
+        print(delta, end="", flush=True)
+
+    try:
+        await prompt_async(prompt, session_key=session_key, on_token=_print_token)
+        print()
+    except RuntimeError as exc:
+        print(f"\n{exc}", file=sys.stderr)
+        sys.exit(1)
 
 
 # ── CLI parsing ───────────────────────────────────────────────────────────────
@@ -452,74 +708,6 @@ def parse_args() -> tuple[str, str]:
 
 
 # ── main ──────────────────────────────────────────────────────────────────────
-
-async def run(prompt: str, session_key: str) -> None:
-    """
-    Open a gateway connection, send the prompt, and stream the response.
-
-    Event handling:
-    ───────────────
-    The gateway does not use a separate chat.token/chat.complete event schema
-    on operator.admin connections. Instead it broadcasts generic "agent" events:
-
-      agent { stream: "lifecycle", data: { phase: "start" } }
-        → agent run has begun; capture runId for matching the end event
-
-      agent { stream: "assistant", data: { delta: "..." } }
-        → incremental token; print immediately to stdout without newline
-
-      agent { stream: "lifecycle", data: { phase: "end" } }
-        → run complete; print trailing newline and exit the loop
-
-    Other event types (health, tick, chat, …) are silently ignored — they are
-    broadcast to all operator clients and are not relevant to this use case.
-
-    No explicit chat.subscribe call is needed: the gateway pushes events to all
-    connected operator.admin clients automatically. (chat.subscribe is only
-    valid on dedicated streaming connections opened by the web UI layer.)
-    """
-    if not GATEWAY_TOKEN:
-        print("Error: OPENCLAW_GATEWAY_TOKEN is not set.", file=sys.stderr)
-        sys.exit(1)
-
-    identity = _load_or_create_identity()
-    async with websockets.connect(GATEWAY_URL) as ws:
-        client = GatewayClient(ws, identity)
-        await client.start()
-        try:
-            await client.connect()
-            await client.send(session_key, prompt)
-
-            # Track the runId so we can match the lifecycle:end event to the
-            # correct run (other runs in other sessions could produce events too).
-            run_id = None
-            while True:
-                msg = await client.next_event()
-                event = msg.get("event", "")
-                payload = msg.get("payload", {})
-
-                if event == "agent" and payload.get("stream") == "lifecycle":
-                    phase = payload.get("data", {}).get("phase")
-                    if phase == "start":
-                        run_id = payload.get("runId")
-                    elif phase == "end":
-                        if run_id is None or payload.get("runId") == run_id:
-                            print()  # newline after the last streamed token
-                            break
-
-                elif event == "agent" and payload.get("stream") == "assistant":
-                    # data.delta is the new characters added since the last event;
-                    # data.text is the full accumulated text so far (we use delta).
-                    delta = payload.get("data", {}).get("delta", "")
-                    if delta:
-                        print(delta, end="", flush=True)
-
-                elif event == "chat.error":
-                    print(f"\nAgent error: {payload}", file=sys.stderr)
-                    sys.exit(1)
-        finally:
-            await client.stop()
-
 
 def main() -> None:
     prompt, session_key = parse_args()
