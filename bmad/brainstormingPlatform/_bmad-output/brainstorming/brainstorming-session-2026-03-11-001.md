@@ -4,13 +4,16 @@ inputDocuments: []
 session_topic: 'Designing a BMad-powered brainstorming platform for Claude Desktop and other AI tools'
 session_goals: 'Platform architecture, UX/interaction design, multi-topic folder management, BMad workflow integration with MD file storage, AI-agent testability, portability across AI tools'
 selected_approach: 'ai-recommended'
-techniques_used: ['First Principles Thinking']
-techniques_remaining: ['SCAMPER Method', 'Solution Matrix']
+techniques_used: ['First Principles Thinking', 'SCAMPER Method (POC-scoped)']
+techniques_remaining: ['Solution Matrix']
 ideas_generated: 134
+scamper_decisions: 30
+new_ideas_from_scamper: 4
+design_principles_established: 5
 technique_execution_complete: false
-facilitation_notes: 'Session 1: Deep First Principles (104 ideas). Session 2 continuation: User added 30 ideas across 4 new categories — bilingual support & AI persona (#105-108), multi-agent brainstorming architecture with mailbox protocol (#109-118), autonomous development & testing requirements (#123-130), and voice interface (#131-134). SCAMPER deferred to next session.'
-session_state: 'paused_before_scamper'
-next_action: 'Continue with SCAMPER Method applied to all 134 ideas'
+facilitation_notes: 'Session 1: Deep First Principles (104 ideas). Session 2: User added 30 ideas across 4 new categories. Session 3: POC scope defined, roadmap framed (POC/MVP/V1/V2), SCAMPER applied to 26 POC ideas — 30 decisions across 7 lenses, 5 new design principles established, significant simplification achieved (5 files eliminated/merged, TDD build order adopted, convention-over-configuration principle, AI-generative brainstorming mode added).'
+session_state: 'scamper_complete_roadmap_next'
+next_action: 'Build refined POC roadmap with spec dependency ordering, then Solution Matrix for MVP+ phasing'
 session_continued: true
 continuation_date: '2026-03-11'
 context_file: ''
@@ -708,7 +711,7 @@ This session used First Principles Thinking across 104 ideas, then added 30 idea
 
 ### Open Threads for Next Session
 
-1. **SCAMPER pass** — Apply all 7 lenses (Substitute, Combine, Adapt, Modify, Put to other uses, Eliminate, Reverse) to challenge and transform all 134 ideas
+1. ~~**SCAMPER pass**~~ — COMPLETED (Session 3). Applied all 7 lenses to 26 POC-scoped ideas.
 2. **Solution Matrix** — Map intersecting axes (complexity × value, phase × capability, etc.) to find optimal groupings
 3. **Roadmap synthesis** — Define concrete phases (POC → MVP → V1 → V2) using Solution Matrix output and phase gate model (#127)
 4. **MVP detailed design** — Flesh out ideas #93-94 into a buildable plan
@@ -720,4 +723,140 @@ This session used First Principles Thinking across 104 ideas, then added 30 idea
 
 ### Next Action
 
-Continue with **SCAMPER Method** applied to all 134 ideas. SCAMPER will systematically challenge design decisions through 7 lenses and generate simplification, combination, and reversal ideas. After SCAMPER, proceed to Solution Matrix and then Roadmap synthesis.
+Build refined POC roadmap integrating all SCAMPER results. Then proceed to Solution Matrix for MVP+ phasing.
+
+---
+
+## Session 3: SCAMPER on POC Scope (2026-03-11)
+
+### Pre-SCAMPER: POC Scope Definition & Roadmap Framing
+
+Before applying SCAMPER, the session established a phased roadmap framework and defined POC scope. Key decisions:
+
+- **POC must be a strict superset of native BMad brainstorming** — all 60+ techniques, all facilitation quality, plus multi-topic workspace, plus PRD-compatible output
+- **Autonomous build/test pipeline is a POC must-have**, not deferred
+- **Knowledge base loading deferred** to MVP
+- **Portability deferred** to MVP
+- **Multi-topic support required** in POC (single differentiator over native BMad)
+
+**Roadmap Phases Defined:**
+- **POC** — Persistent multi-topic brainstorming workspace with autonomous build/test pipeline and PRD-compatible output
+- **MVP** — Topic lifecycle, knowledge base management, context window tiering, portability, platform config, BMad-native installation
+- **V1** — Cross-topic knowledge graph, brownfield ingestion, contradiction detection, handoff synthesis, full AI agent test pipeline
+- **V2** — Multi-agent brainstorming, voice interface, AI personas, archaeology, self-healing systems
+
+### SCAMPER Method Results (7 Lenses × 26 POC Ideas)
+
+#### Lens 1: SUBSTITUTE — What can we replace with something simpler?
+
+| ID | Proposal | Decision | Impact |
+|----|----------|----------|--------|
+| S-1 | Substitute folder hierarchy with flat structure | **REJECT** | Keep separate folders per topic |
+| S-2 | Substitute topic.yaml + session_state.md with single topic.md | **ACCEPT** | Two files merged into one. Agent reads one file for all topic metadata and state |
+| S-3 | Substitute maintained _index.md with dynamic generation | **ACCEPT** | No stored index. Workspace overview generated fresh at each invocation by scanning topic.md files |
+| S-4 | Substitute BUILD.md with brainstorming session itself | **ACCEPT** | Session document IS the build spec. No separate translation step |
+| S-5 | Substitute write_status with Git | **REJECT** | Platform must work without Git. Keep #42 write_status mechanism |
+
+#### Lens 2: COMBINE — What can we merge to reduce moving parts?
+
+| ID | Proposal | Decision | Impact |
+|----|----------|----------|--------|
+| C-1 | Combine Zero-Friction Entry (#5) + Topic Creation Ceremony (#30) | **ACCEPT** | Progressive enrichment: name-only creation, ceremony questions at first session start |
+| C-2 | Combine Re-Entry Briefing (#17) + Platform Invocation (#29) | **ACCEPT** | Two-level briefing: workspace overview at invocation, topic deep-dive at selection |
+| C-3 | Combine Naming Conventions (#41) + Graceful Misread (#44) | **ACCEPT** | Convention-aware file discovery with visible warnings for violations |
+| C-4 | Combine BDD Specs (#71) + Synthetic Test Harness (#72) + Spec-Driven Dev (#125) | **ACCEPT** | Single spec file per capability: build instruction + test fixture + BDD scenarios |
+| C-5 | Combine Phase Gate (#127) + Phase Report (#128) | **ACCEPT** | Phase gate IS the phase report. Build-test loop with configurable max retries. Agent loops (implement → test → self-fix) until all pass or retries exhausted. Only then writes failure report for human review |
+
+#### Lens 3: ADAPT — What patterns can we borrow from other domains?
+
+| ID | Proposal | Decision | Impact |
+|----|----------|----------|--------|
+| A-1 | Adapt Makefile dependency pattern for spec build order | **ACCEPT** | Spec files declare dependencies. Build agent follows topological order (DAG). Upstream failures block downstream builds |
+| A-2 | Adapt microservices health check pattern | **ACCEPT** | Quick structural health check per topic at scan time. Health status computed, never stored |
+| A-3 | Adapt database migration pattern for platform upgrades | **ACCEPT** | Stamp `platform_version` in topic.md from day one. **#98 (Instruction Drift) pulled into POC scope** |
+| A-4 | Adapt REPL pattern for platform interaction | **ACCEPT** | Explicit REPL loop: Invoke → Scan → Present → Select → Load → Brief → Act → Save → Return. Each step is a testable spec |
+| A-5 | Adapt "convention over configuration" from Rails | **ACCEPT** | **New foundational design principle: "The Filesystem-as-Truth Principle" — never store what can be derived from filesystem state** |
+
+#### Lens 4: MODIFY — What can we magnify or minimize?
+
+| ID | Proposal | Decision | Impact |
+|----|----------|----------|--------|
+| M-1 | Minimize topic.md to non-derivable data only | **ACCEPT** | topic.md contains: name, type, platform_version, created, state (archived only), AI-generative mode flag, markdown body. Excludes session_count, last_session, open_thread_count (all derivable) |
+| M-2 | Minimize config.yaml to 4 fields | **ACCEPT** | (Later eliminated entirely in E-3) |
+| M-3 | Magnify spec files into "capability contracts" | **ACCEPT** | Specs declare: REPL step coverage, platform_version introduced, phase tag (poc/mvp/v1/v2). `specs/` folder IS the living roadmap |
+| M-4 | Modify session file granularity | **ACCEPT (modified)** | One living session.md per topic containing complete information. Old sessions archived to `_archive/` subfolder (debug only, agent never reads) |
+| M-5 | Magnify health checks into self-repair | **ACCEPT** | Platform offers to fix simple structural problems at scan time (missing fields, naming violations, orphaned files) |
+
+#### Lens 5: PUT TO OTHER USES — What can serve additional purposes?
+
+| ID | Proposal | Decision | Impact |
+|----|----------|----------|--------|
+| P-1 | Spec files as living documentation | **ACCEPT** | Specs = tests = docs = build instructions. One artifact, four purposes. No separate documentation |
+| P-2 | Archived sessions as regression baselines | **ACCEPT** | Real brainstorming sessions, once archived, become test fixtures automatically |
+| P-3 | REPL pattern reusable beyond brainstorming | **ACCEPT** | REPL kept generic. Brainstorming plugs into "Act" step. Other BMad workflows could reuse the shell later |
+| P-4 | Shared structural validator for health checks AND tests | **ACCEPT** | One validator, two triggers (invocation health check + Layer 1 test assertions) |
+| P-5 | Brainstorming output as PRD-compatible input | **ACCEPT** | Session synthesis structured with PRD-like headings. **Major scope clarification: POC must be strict superset of native BMad brainstorming, with output that flows directly into downstream BMad workflows** |
+
+#### Lens 6: ELIMINATE — What can we remove or defer?
+
+| ID | Proposal | Decision | Impact |
+|----|----------|----------|--------|
+| E-1 | Eliminate stored _index.md entirely | **ACCEPT** | Hard rule: platform has zero stored derived state. Dynamic scan only |
+| E-2 | Eliminate session archive for POC | **REJECT** | Archive stays in POC |
+| E-3 | Eliminate config.yaml for POC | **ACCEPT** | No config.yaml. max_build_retries is a constant in spec runner instructions. Language settings in topic.md |
+| E-4 | Eliminate Topic Creation Ceremony | **REJECT** | Ceremony stays (combined with progressive enrichment per C-1) |
+| E-5 | Eliminate platform/brainstorming distinction | **REJECT** | Keep two layers: thin REPL platform shell + brainstorming plugin. Clean separation for build pipeline and future extensibility |
+
+#### Lens 7: REVERSE — What if we flip order, roles, or assumptions?
+
+| ID | Proposal | Decision | Impact |
+|----|----------|----------|--------|
+| R-1 | Reverse build order: test infrastructure first | **ACCEPT** | TDD approach: spec runner + structural validator + synthetic fixtures built FIRST. Platform grows inside pre-existing test harness |
+| R-2 | Reverse brainstorming driver: AI-generative mode | **ACCEPT** | Opt-in AI-generative mode configured in Topic Creation Ceremony, stored in topic.md, changeable at any time. AI generates idea bursts, human curates |
+| R-3 | Reverse session document direction: synthesis first | **ACCEPT** | session.md starts with living synthesis at top, raw session history appended below (most recent first) |
+| R-4 | Reverse PRD relationship: synthesis IS PRD draft | **ACCEPT** | Living synthesis structured as PRD draft: Problem Statement, Goals, Feature Concepts, Technical Considerations, Open Questions, Roadmap Suggestion |
+| R-5 | Reverse archive trigger: automatic archiving | **ACCEPT** | New session start automatically snapshots previous session.md to `_archive/`. Default is clean, current state |
+
+### New Design Principles Established During SCAMPER
+
+1. **The Filesystem-as-Truth Principle (A-5):** Never store what can be derived from filesystem state. Zero stored derived state.
+2. **BMad Brainstorming Superset Requirement (P-5):** The platform must include all native BMad brainstorming capabilities plus multi-topic management, plus PRD-compatible output.
+3. **Test-First Build Philosophy (R-1):** Test infrastructure is the first deliverable. The platform grows inside a pre-existing test harness.
+4. **One Artifact, Many Purposes (P-1):** Spec files serve as tests, documentation, build instructions, and roadmap items simultaneously.
+5. **Convention Over Configuration (A-5 + E-3):** Filesystem structure and naming conventions replace configuration files wherever possible.
+
+### SCAMPER Impact Summary
+
+**Files eliminated:** _index.md, BUILD.md, config.yaml, topic.yaml (separate file), session_state.md (separate file)
+**Files merged:** topic.yaml + session_state.md → topic.md
+**Files restructured:** session.md now synthesis-first with append-only history below
+**Ideas pulled into POC:** #98 (platform versioning/migration)
+**Ideas added:** AI-generative brainstorming mode (R-2), spec dependency DAG (A-1), health check with self-repair (A-2 + M-5), structural validator shared between health checks and tests (P-4)
+**Architecture patterns adopted:** REPL (A-4), TDD build order (R-1), Makefile-style dependency DAG (A-1), microservice health checks (A-2), database migrations (A-3), convention over configuration (A-5)
+
+### Refined POC Scope After SCAMPER
+
+**Per-Topic Files (minimal):**
+- `topic.md` — name, type, platform_version, created, state, ai_generative_mode, markdown body
+- `session.md` — living synthesis (PRD-structured) at top + append-only session history below
+- `_archive/` — automatic session snapshots (debug only)
+
+**Platform Files:**
+- `WORKFLOW.md` — platform REPL shell (invoke, scan, present, select, load, brief, act, save, return)
+- `brainstorming/` — brainstorming plugin (all 60+ BMad techniques, facilitation, AI-generative mode)
+- `specs/` — capability contracts (build + test + docs + roadmap in one file per capability, with dependency DAG and phase tags)
+- Structural validator (shared by health checks and Layer 1 tests)
+- Spec runner (build-test-fix loop with max retries constant)
+
+**No stored derived state. No config.yaml. No separate docs. Filesystem is truth.**
+
+### Updated Open Threads
+
+1. ~~**SCAMPER pass**~~ — COMPLETED
+2. **Solution Matrix** — Apply to MVP/V1/V2 idea allocation
+3. **POC Roadmap detailing** — Break POC into concrete build phases with spec dependency ordering
+4. **Spec file format design** — Finalize the unified spec format (build + test + docs + dependencies + phase)
+5. **REPL step definition** — Define exact REPL steps and their spec coverage
+6. **Session.md format design** — Finalize PRD-structured synthesis + append-only history format
+7. **Structural validator design** — Shared assertions for health checks and Layer 1 tests
+8. **AI-generative mode design** — How AI burst generation + human curation works in practice
