@@ -1,6 +1,8 @@
 
 # TODO
 
+check rethinking folder (the current plan may be over-engineered)
+
 How to continue later:
 Start a new chat and run the same command: /bmad-bmm-create-prd
 The workflow's step 1 will detect the existing PRD file at _bmad-output/planning-artifacts/prd.md, read its frontmatter, see that steps are completed but step-11-complete is not yet in the list, and automatically trigger the Continuation Protocol — picking up right where you left off (Step 3: Success Criteria).
