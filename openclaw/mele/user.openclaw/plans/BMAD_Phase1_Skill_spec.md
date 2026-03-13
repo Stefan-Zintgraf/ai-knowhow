@@ -1,23 +1,30 @@
 ---
 description: "BMAD Phase 1: Skill-based brainstorming integration for the wolfgang workspace"
-name: bmad-method-skill
+name: bmad-brainstorm-skill
 ---
 
 # BMAD → OpenClaw — Phase 1: Skill Integration
 
-Version: 3.0
+Version: 4.0
 Purpose: Machine-executable build instructions for the **wolfgang** workspace
 
 ---
 
 # 0. OBJECTIVE
 
-Add a `bmad-method` skill to the **wolfgang** agent that enables structured
+Add a `bmad-brainstorm` skill to the **wolfgang** agent that enables structured
 brainstorming, idea refinement, and concept validation via any connected channel
 (Telegram, WhatsApp, voice).
 
-This is the required MVP. The optional plugin layer (slash-command routing) is
-covered in a separate spec: `BMAD_Phase2_Plugin_spec.md`.
+The skill registers a single slash command `/bmad-brainstorm` (derived from
+its `name` field). It also responds to prefixed commands (`bmad brainstorm`,
+`bmad discuss`, `bmad refine`, `bmad validate`) and natural language
+("let's brainstorm", "can we discuss", "help me think through").
+
+**Note:** OpenClaw skills can only register one slash command — the skill
+name itself. Convenience aliases like `/brainstorm`, `/discuss`, `/refine`,
+and `/validate` require a plugin and are covered in a separate spec:
+`BMAD_Phase2_Plugin_spec.md`.
 
 ---
 
@@ -85,7 +92,7 @@ The agent config is NOT a flat dict. The structure is:
 ```
 
 You must find the object in `agents.list[]` where `id` equals `"wolfgang"`
-and append `"bmad-method"` to its `skills` array. Do NOT create a new agent
+and append `"bmad-brainstorm"` to its `skills` array. Do NOT create a new agent
 object. Do NOT change any other fields.
 
 ### How skills are loaded
@@ -113,79 +120,89 @@ with `name`, `description`, `user-invocable`, then free-form markdown.
 ## Step 2 — Create the skill directory
 
 ```bash
-mkdir -p workspace-wolfgang/skills/bmad-method
+mkdir -p workspace-wolfgang/skills/bmad-brainstorm
 ```
 
 **Expected outcome:** Directory exists.
 
 ## Step 3 — Create SKILL.md
 
-**File:** `workspace-wolfgang/skills/bmad-method/SKILL.md`
+**File:** `workspace-wolfgang/skills/bmad-brainstorm/SKILL.md`
 
 Write this file with **exactly** the following content:
 
 ```markdown
 ---
-name: bmad-method
+name: bmad-brainstorm
 description: >-
-  BMAD brainstorming framework. Use when the user says /bmad, 'bmad',
-  'brainstorm', 'bmad help', 'bmad refine', 'bmad validate', or asks
-  to run a structured brainstorming session.
+  BMAD structured brainstorming skill. Triggers via /bmad-brainstorm slash
+  command, natural language ("let's brainstorm", "can we discuss", "help me
+  think through"), or prefixed commands ("bmad brainstorm", "bmad discuss").
+  Additional slash commands (/brainstorm, /discuss, /refine, /validate) are
+  available when the Phase 2 plugin is installed.
 user-invocable: true
 ---
 
-# BMAD — Agile-AI Driven Brainstorming
+# BMAD — Structured Brainstorming & Discussion
 
-You are operating under the BMAD methodology — a structured brainstorming
-and idea development framework.
+You are operating under the BMAD methodology — a structured brainstorming,
+discussion, and idea development framework.
 
 ## Triggers
 
 Activate this skill when the user message matches any of:
-- `/bmad` or `/bmad help`
-- `/bmad brainstorm <topic>`
-- `/bmad refine <idea>`
-- `/bmad validate <concept>`
-- Natural language: "let's brainstorm", "bmad session", "help me brainstorm"
+
+### Slash command
+- `/bmad-brainstorm` — the registered skill command (with optional arguments)
+
+### Prefixed commands (bmad qualifier)
+- `bmad brainstorm <topic>`, `bmad discuss <topic>`
+- `bmad refine <idea>`, `bmad validate <concept>`
+- `bmad help`
+
+### Natural language
+- "let's brainstorm", "help me brainstorm", "brainstorm session"
+- "let's discuss", "can we discuss", "discuss this idea"
+- "help me think through", "think through this with me"
+
+Do NOT activate on just "bmad" alone — that is too generic.
 
 ## Commands
 
-### /bmad (or /bmad help)
+### help (bmad help)
 
 Explain:
 - BMAD philosophy (structured brainstorming → refinement → validation)
-- Available commands: brainstorm, refine, validate
-- How to invoke (e.g. `/bmad brainstorm AI-powered robotics`)
+- Available modes: brainstorm/discuss, refine, validate
+- How to invoke (e.g. `bmad brainstorm AI-powered robotics`,
+  or `let's brainstorm about AI-powered robotics`)
 
-### /bmad brainstorm <topic>
+### brainstorm / discuss <topic>
 
 1. Clarify the objective — ask if the topic is ambiguous or missing
 2. Define constraints (time, budget, technology, scope)
 3. Generate 3–7 structured idea clusters
 4. Expand the top 3 ideas with pros, cons, and feasibility
-5. Recommend concrete next actions
+5. **Recommend concrete next actions** — always include a
+   "Recommended Next Steps" or "Recommended Actions" section at the end
 
 Output with clear headings, bullet clusters, and action steps.
+You MUST always include the words "Recommended" and "Next" in a heading
+for the action items.
 
-### /bmad refine <idea>
+### refine <idea>
 
 1. Restate the idea clearly
 2. Identify weaknesses and blind spots
 3. Improve clarity and positioning
 4. Suggest iteration steps and alternatives
 
-### /bmad validate <concept>
+### validate <concept>
 
 1. List underlying assumptions
 2. Identify failure risks and edge cases
 3. Suggest low-cost experiments to test the concept
 4. Propose validation metrics and success criteria
-
-### Unknown subcommand
-
-If the user sends `/bmad <something>` where `<something>` is not one of
-the known commands (help, brainstorm, refine, validate), respond with a
-helpful message listing the available commands.
 ```
 
 **Expected outcome:** File exists at the correct path with valid YAML
@@ -197,7 +214,7 @@ Edit `${OPENCLAW_STATE_DIR}/openclaw.json`:
 
 1. Parse the JSON.
 2. In `agents.list`, find the object where `id` equals `"wolfgang"`.
-3. Append `"bmad-method"` to its `skills` array (if not already present).
+3. Append `"bmad-brainstorm"` to its `skills` array (if not already present).
 4. Write the file back, preserving all other fields and formatting.
 
 **Before:**
@@ -219,11 +236,11 @@ Edit `${OPENCLAW_STATE_DIR}/openclaw.json`:
   "greet",
   "testnode-skill",
   "remind",
-  "bmad-method"
+  "bmad-brainstorm"
 ]
 ```
 
-**Expected outcome:** `"bmad-method"` appears in the skills array and no
+**Expected outcome:** `"bmad-brainstorm"` appears in the skills array and no
 other fields were modified.
 
 ## Step 5 — Restart the gateway
@@ -255,13 +272,14 @@ Fix any issues (usually a JSON syntax error in `openclaw.json`) and retry.
 Run these checks immediately after completing the implementation steps.
 Every item must pass before moving to the test phase.
 
-- [ ] `workspace-wolfgang/skills/bmad-method/SKILL.md` exists and is non-empty
-- [ ] YAML front-matter has `name: bmad-method`, `description:` (non-empty),
+- [ ] `workspace-wolfgang/skills/bmad-brainstorm/SKILL.md` exists and is non-empty
+- [ ] YAML front-matter has `name: bmad-brainstorm`, `description:` (non-empty),
       `user-invocable: true`
-- [ ] File body contains `/bmad help`, `/bmad brainstorm`, `/bmad refine`,
-      `/bmad validate`
+- [ ] File body contains `/bmad-brainstorm` as the registered slash command
+- [ ] File body contains `brainstorm`, `refine`, `validate` as subcommand instructions
+- [ ] File body does NOT treat bare `bmad` alone as a trigger
 - [ ] `openclaw.json` → `agents.list[]` → `id: "wolfgang"` → `skills` array
-      contains `"bmad-method"`
+      contains `"bmad-brainstorm"`
 - [ ] Gateway restarted successfully (`active (running)`)
 
 ---
@@ -346,7 +364,7 @@ and the script exits with code 0. Report the final test output to confirm.
 
 | File | Action | Purpose |
 |---|---|---|
-| `workspace-wolfgang/skills/bmad-method/SKILL.md` | Create | Skill instructions |
+| `workspace-wolfgang/skills/bmad-brainstorm/SKILL.md` | Create | Skill instructions |
 | `openclaw.json` (agent `skills` array) | Edit | Register skill for loading |
 | `examples/gateway_clients/claw_client/bmad_phase1_test.py` | Create | Automated test script |
 | `plans/BMAD_Phase1_Skill_test.md` | Read | Test plan and reference script |
@@ -358,7 +376,7 @@ and the script exits with code 0. Report the final test output to confirm.
 All of the following must be true:
 
 1. `SKILL.md` created with correct content and YAML front-matter.
-2. `"bmad-method"` registered in `openclaw.json` wolfgang agent skills.
+2. `"bmad-brainstorm"` registered in `openclaw.json` wolfgang agent skills.
 3. Gateway restarted and running.
 4. `bmad_phase1_test.py` created from the test spec reference script.
 5. Test script executed with **0 failures and 0 skips**.

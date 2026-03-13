@@ -1,13 +1,13 @@
 ---
-description: "BMAD Phase 1: Test instructions for validating the bmad-method skill"
-name: bmad-method-skill-test
+description: "BMAD Phase 1: Test instructions for validating the bmad-brainstorm skill"
+name: bmad-brainstorm-skill-test
 requires: BMAD_Phase1_Skill_spec.md
 ---
 
 # BMAD Phase 1 — Test Instructions
 
-Version: 2.0
-Purpose: Machine-executable test plan for verifying the `bmad-method` skill
+Version: 3.0
+Purpose: Machine-executable test plan for verifying the `bmad-brainstorm` skill
 deployment in the **wolfgang** workspace.
 
 Tests are split into three stages:
@@ -20,15 +20,20 @@ Tests are split into three stages:
 
 # 0. CONTEXT — What You Are Testing
 
-This test plan validates the **bmad-method** skill as specified in
+This test plan validates the **bmad-brainstorm** skill as specified in
 `BMAD_Phase1_Skill_spec.md`. That spec defines a brainstorming skill for the
 **wolfgang** agent in the OpenClaw framework. The skill:
 
-- Lives at `workspace-wolfgang/skills/bmad-method/SKILL.md`
+- Lives at `workspace-wolfgang/skills/bmad-brainstorm/SKILL.md`
 - Must be registered in `openclaw.json` under the `wolfgang` agent's `skills` array
-- Responds to slash commands: `/bmad`, `/bmad help`, `/bmad brainstorm <topic>`,
-  `/bmad refine <idea>`, `/bmad validate <concept>`
-- Responds to natural language triggers: "let's brainstorm", "bmad session", etc.
+- Registers `/bmad-brainstorm` as its slash command (the only real slash command
+  from the skill — additional slash commands like `/brainstorm` require the
+  Phase 2 plugin)
+- Responds to prefixed commands: `bmad brainstorm`, `bmad discuss`, `bmad refine`,
+  `bmad validate`, `bmad help`
+- Responds to natural language triggers: "let's brainstorm", "can we discuss",
+  "help me think through", etc.
+- Does NOT trigger on bare `bmad` alone (too generic)
 - Produces structured output with headings, bullet clusters, and action steps
 
 The skill file follows the standard OpenClaw SKILL.md pattern: YAML front-matter
@@ -77,8 +82,8 @@ source venv_activate.sh
 python bmad_phase1_test.py
 
 # 4. Or send individual prompts and inspect output
-python claw_client.py --session bmad-test "/bmad help"
-python claw_client.py --session bmad-test "/bmad brainstorm AI robotics"
+python claw_client.py --session bmad-test "/bmad-brainstorm help"
+python claw_client.py --session bmad-test "bmad brainstorm AI robotics"
 ```
 
 For programmatic testing in Python:
@@ -87,7 +92,7 @@ For programmatic testing in Python:
 import sys
 sys.path.insert(0, "mele/user.openclaw/examples/gateway_clients/claw_client")
 from claw_client import prompt_sync
-r = prompt_sync("/bmad help", session_key="agent-test", timeout=180)
+r = prompt_sync("/bmad-brainstorm help", session_key="agent-test", timeout=180)
 print(r.text)
 ```
 
@@ -131,7 +136,7 @@ with standard file operations.
 ## 3.1 SKILL.md exists
 
 ```
-workspace-wolfgang/skills/bmad-method/SKILL.md
+workspace-wolfgang/skills/bmad-brainstorm/SKILL.md
 ```
 
 Assert: file exists and is non-empty.
@@ -143,33 +148,32 @@ minimum these fields:
 
 ```yaml
 ---
-name: bmad-method
-description: <non-empty string mentioning "bmad" or "brainstorm">
+name: bmad-brainstorm
+description: <non-empty string mentioning "brainstorm">
 user-invocable: true
 ---
 ```
 
 Assert:
-- `name` equals `bmad-method` (exact match, accounting for quoting)
+- `name` equals `bmad-brainstorm` (exact match, accounting for quoting)
 - `description` is present and non-empty (may use YAML folded/block scalar `>-` or `|`)
 - `user-invocable` is `true`
 
 ## 3.3 Skill body contains required sections
 
-The markdown body (below the front-matter) must mention all command triggers
-defined in the spec:
+The markdown body (below the front-matter) must mention:
 
-- `/bmad help` (or `/bmad`)
-- `/bmad brainstorm`
-- `/bmad refine`
-- `/bmad validate`
+- `/bmad-brainstorm` (the registered slash command)
+- `brainstorm` (subcommand / mode)
+- `refine` (subcommand / mode)
+- `validate` (subcommand / mode)
 
 Assert: each of the four strings appears at least once in the file.
 
 ## 3.4 openclaw.json registers the skill
 
 In `${OPENCLAW_STATE_DIR}/openclaw.json`, the `wolfgang` agent's `skills`
-array must include `"bmad-method"`.
+array must include `"bmad-brainstorm"`.
 
 The `openclaw.json` structure uses:
 
@@ -184,7 +188,7 @@ The `openclaw.json` structure uses:
 ```
 
 Assert: in the `agents.list` array, the object with `"id": "wolfgang"` has
-`"bmad-method"` in its `skills` array.
+`"bmad-brainstorm"` in its `skills` array.
 
 ---
 
@@ -201,29 +205,16 @@ session key (e.g. with a timestamp suffix) to avoid context bleed from prior run
 ### Interpreting failures
 
 - **Response is empty or very short** → skill not loaded (check static checks)
-- **Response ignores the BMAD command** → triggers not matching (check SKILL.md trigger list)
+- **Response ignores the command** → triggers not matching (check SKILL.md trigger list)
 - **Response is relevant but missing structure** → skill loaded but instructions need refinement
 - **Timeout** → gateway overloaded or agent stuck (check `systemctl --user status openclaw-gateway`)
 
-## 4.1 Test: /bmad (bare command)
+## 4.1 Test: /bmad-brainstorm help (skill slash command)
 
-**Prompt:** `/bmad`
-
-**Expected:** The response explains the BMAD framework and lists the available
-commands — same as `/bmad help`.
-
-**Assertions:**
-- Response length > 100 characters
-- At least one of: `brainstorm`, `refine`, `validate` (case-insensitive)
-
-**Pass criteria:** All assertions pass.
-
-## 4.2 Test: /bmad help
-
-**Prompt:** `/bmad help`
+**Prompt:** `/bmad-brainstorm help`
 
 **Expected:** The response explains the BMAD framework and lists the available
-commands. Assert ALL of the following substrings appear (case-insensitive) in
+modes. Assert ALL of the following substrings appear (case-insensitive) in
 the response text:
 
 - `brainstorm`
@@ -232,9 +223,9 @@ the response text:
 
 **Pass criteria:** All three substrings found, response length > 100 characters.
 
-## 4.3 Test: /bmad brainstorm
+## 4.2 Test: bmad brainstorm <topic> (prefixed command)
 
-**Prompt:** `/bmad brainstorm AI-powered home automation`
+**Prompt:** `bmad brainstorm AI-powered home automation`
 
 **Expected:** A structured brainstorming output with multiple idea clusters,
 pros/cons, and action steps. Assert ALL of the following:
@@ -247,9 +238,22 @@ pros/cons, and action steps. Assert ALL of the following:
 
 **Pass criteria:** All assertion groups pass.
 
-## 4.4 Test: /bmad refine
+## 4.3 Test: bmad discuss <topic> (prefixed command)
 
-**Prompt:** `/bmad refine A voice-controlled smart mirror that displays calendar, weather, and news`
+**Prompt:** `bmad discuss sustainable packaging alternatives for e-commerce`
+
+**Expected:** The `bmad discuss` prefix should produce brainstorming output just
+like `bmad brainstorm`. Assert ALL of:
+
+- Response length > 300 characters
+- At least one of: `idea`, `concept`, `approach`, `option`, `alternative`
+  (case-insensitive)
+
+**Pass criteria:** All assertion groups pass.
+
+## 4.4 Test: bmad refine <idea> (prefixed command)
+
+**Prompt:** `bmad refine A voice-controlled smart mirror that displays calendar, weather, and news`
 
 **Expected:** The response restates the idea, identifies weaknesses, and
 suggests improvements. Assert ALL of:
@@ -262,9 +266,9 @@ suggests improvements. Assert ALL of:
 
 **Pass criteria:** All assertion groups pass.
 
-## 4.5 Test: /bmad validate
+## 4.5 Test: bmad validate <concept> (prefixed command)
 
-**Prompt:** `/bmad validate A subscription service for AI-generated bedtime stories for children`
+**Prompt:** `bmad validate A subscription service for AI-generated bedtime stories for children`
 
 **Expected:** The response lists assumptions, failure risks, and validation
 experiments. Assert ALL of:
@@ -277,37 +281,61 @@ experiments. Assert ALL of:
 
 **Pass criteria:** All assertion groups pass.
 
-## 4.6 Test: natural language trigger
+## 4.6 Test: natural language trigger (no bmad word)
+
+**Prompt:** `I'd like to discuss ideas for a community garden project`
+
+**Expected:** The skill activates from natural "discuss" language without
+any `/command` or `bmad` prefix and produces structured brainstorming output.
+Assert:
+
+- Response length > 200 characters
+- At least one of: `garden`, `community`, `idea`, `concept`
+  (case-insensitive)
+
+**Pass criteria:** Both assertions pass, confirming natural language activation
+without the word "bmad".
+
+## 4.7 Test: natural language "brainstorm" trigger (no bmad word)
 
 **Prompt:** `Let's brainstorm about decentralized identity systems`
 
-**Expected:** The skill activates without an explicit `/bmad` command and
-produces brainstorming output. Assert:
+**Expected:** The skill activates from natural "brainstorm" language without
+any `bmad` prefix. Assert:
 
 - Response length > 200 characters
 - At least one of: `identity`, `decentralized`, `idea`, `concept`
   (case-insensitive)
 
-**Pass criteria:** Both assertions pass, confirming natural language activation.
+**Pass criteria:** Both assertions pass.
 
-## 4.7 Test: edge case — unknown subcommand
+## 4.8 Test: "help me think through" trigger (no bmad word)
 
-**Prompt:** `/bmad foobar`
+**Prompt:** `Help me think through the pros and cons of remote work policies`
 
-**Expected:** The agent does not crash or ignore the message. It should either
-explain that `foobar` is not a known BMAD command and list the valid ones, or
-treat it as a general BMAD help request.
+**Expected:** The skill activates from the "think through" natural language
+trigger. Assert:
 
-**Assertions:**
-- Response length > 50 characters (agent responded meaningfully)
-- At least one of: `brainstorm`, `refine`, `validate`, `help`, `command`
-  (case-insensitive) — indicating guidance was offered
+- Response length > 200 characters
+- At least one of: `remote`, `work`, `pro`, `con` (case-insensitive)
 
 **Pass criteria:** Both assertions pass.
 
-## 4.8 Test: edge case — brainstorm with no topic
+## 4.9 Test: bmad brainstorm (additional prefixed command)
 
-**Prompt:** `/bmad brainstorm`
+**Prompt:** `bmad brainstorm renewable energy storage solutions`
+
+**Expected:** The `bmad brainstorm` prefix triggers the skill. Assert:
+
+- Response length > 300 characters
+- At least one of: `energy`, `storage`, `idea`, `concept`, `approach`
+  (case-insensitive)
+
+**Pass criteria:** Both assertions pass.
+
+## 4.10 Test: edge case — /bmad-brainstorm with no topic
+
+**Prompt:** `/bmad-brainstorm`
 
 **Expected:** Per the spec, the agent should "clarify the objective — ask if
 the topic is ambiguous". With no topic at all, it should ask for one.
@@ -336,7 +364,7 @@ venv active.
 """
 BMAD Phase 1 — automated test script.
 
-Validates the bmad-method skill: environment pre-flight, file layout,
+Validates the bmad-brainstorm skill: environment pre-flight, file layout,
 openclaw.json registration, and live agent responses via the gateway.
 
 Usage:
@@ -360,7 +388,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).resolve().parent
 STATE_DIR = SCRIPT_DIR.parents[2]  # mele/user.openclaw
 
-SKILL_FILE = STATE_DIR / "workspace-wolfgang" / "skills" / "bmad-method" / "SKILL.md"
+SKILL_FILE = STATE_DIR / "workspace-wolfgang" / "skills" / "bmad-brainstorm" / "SKILL.md"
 CONFIG_FILE = STATE_DIR / "openclaw.json"
 
 TIMEOUT = 180  # seconds per prompt; agent runs can be slow
@@ -459,16 +487,17 @@ def run_static_checks() -> bool:
     check("1.2 YAML front-matter block present", fm_match is not None)
     if fm_match:
         fm = fm_match.group(1)
-        name_ok = bool(re.search(r"name:\s*['\"]?bmad-method['\"]?", fm))
-        check("1.2a name: bmad-method", name_ok)
+        name_ok = bool(re.search(r"name:\s*['\"]?bmad-brainstorm['\"]?", fm))
+        check("1.2a name: bmad-brainstorm", name_ok)
         desc_ok = bool(re.search(r"description:\s*\S", fm))
         check("1.2b description present", desc_ok)
         invocable_ok = bool(re.search(r"user-invocable:\s*true", fm))
         check("1.2c user-invocable: true", invocable_ok)
 
-    # 1.3 Command triggers in body
-    for trigger in ["/bmad help", "/bmad brainstorm", "/bmad refine", "/bmad validate"]:
-        check(f"1.3 body contains '{trigger}'", trigger in content)
+    # 1.3 Required strings in body
+    check("1.3 body contains '/bmad-brainstorm'", "/bmad-brainstorm" in content)
+    for keyword in ["brainstorm", "refine", "validate"]:
+        check(f"1.3 body contains '{keyword}'", keyword in content)
 
     # 1.4 openclaw.json registration
     if not check("1.4 openclaw.json exists", CONFIG_FILE.exists()):
@@ -489,8 +518,8 @@ def run_static_checks() -> bool:
     else:
         check("1.4a wolfgang agent found in agents.list", True)
         skills = wolfgang.get("skills", [])
-        check("1.4b 'bmad-method' in wolfgang skills",
-              "bmad-method" in skills,
+        check("1.4b 'bmad-brainstorm' in wolfgang skills",
+              "bmad-brainstorm" in skills,
               f"current skills: {skills}")
 
     return True
@@ -520,41 +549,41 @@ def run_behavioral_checks() -> None:
             check(f"{label} prompt succeeded", False, str(e))
             return None
 
-    # 2.1 /bmad (bare)
-    text = send("2.1", "/bmad")
+    # 2.1 /bmad-brainstorm help (skill slash command)
+    text = send("2.1", "/bmad-brainstorm help")
     if text is not None:
         check("2.1 response length > 100", len(text) > 100, f"got {len(text)} chars")
-        check("2.1 lists commands",
-              any_present(text, ["brainstorm", "refine", "validate"]))
+        check("2.1 mentions 'brainstorm'", any_present(text, ["brainstorm"]))
+        check("2.1 mentions 'refine'", any_present(text, ["refine"]))
+        check("2.1 mentions 'validate'", any_present(text, ["validate"]))
     else:
         skip("2.1 assertions", "no response")
 
-    # 2.2 /bmad help
-    text = send("2.2", "/bmad help")
+    # 2.2 bmad brainstorm <topic> (prefixed command)
+    text = send("2.2", "bmad brainstorm AI-powered home automation")
     if text is not None:
-        check("2.2 response length > 100", len(text) > 100, f"got {len(text)} chars")
-        check("2.2 mentions 'brainstorm'", any_present(text, ["brainstorm"]))
-        check("2.2 mentions 'refine'", any_present(text, ["refine"]))
-        check("2.2 mentions 'validate'", any_present(text, ["validate"]))
+        check("2.2 response length > 300", len(text) > 300, f"got {len(text)} chars")
+        check("2.2 idea/cluster keywords",
+              any_present(text, ["idea", "cluster", "concept", "approach"]))
+        check("2.2 pros/cons keywords",
+              any_present(text, ["pro", "con", "advantage", "disadvantage", "feasibility"]))
+        check("2.2 action keywords",
+              any_present(text, ["next step", "action", "recommend"]))
     else:
         skip("2.2 assertions", "no response")
 
-    # 2.3 /bmad brainstorm
-    text = send("2.3", "/bmad brainstorm AI-powered home automation")
+    # 2.3 bmad discuss <topic> (prefixed command)
+    text = send("2.3", "bmad discuss sustainable packaging alternatives for e-commerce")
     if text is not None:
         check("2.3 response length > 300", len(text) > 300, f"got {len(text)} chars")
-        check("2.3 idea/cluster keywords",
-              any_present(text, ["idea", "cluster", "concept", "approach"]))
-        check("2.3 pros/cons keywords",
-              any_present(text, ["pro", "con", "advantage", "disadvantage", "feasibility"]))
-        check("2.3 action keywords",
-              any_present(text, ["next step", "action", "recommend"]))
+        check("2.3 idea/concept keywords",
+              any_present(text, ["idea", "concept", "approach", "option", "alternative"]))
     else:
         skip("2.3 assertions", "no response")
 
-    # 2.4 /bmad refine
+    # 2.4 bmad refine <idea> (prefixed command)
     text = send("2.4",
-                "/bmad refine A voice-controlled smart mirror that displays "
+                "bmad refine A voice-controlled smart mirror that displays "
                 "calendar, weather, and news")
     if text is not None:
         check("2.4 response length > 200", len(text) > 200, f"got {len(text)} chars")
@@ -565,9 +594,9 @@ def run_behavioral_checks() -> None:
     else:
         skip("2.4 assertions", "no response")
 
-    # 2.5 /bmad validate
+    # 2.5 bmad validate <concept> (prefixed command)
     text = send("2.5",
-                "/bmad validate A subscription service for AI-generated "
+                "bmad validate A subscription service for AI-generated "
                 "bedtime stories for children")
     if text is not None:
         check("2.5 response length > 200", len(text) > 200, f"got {len(text)} chars")
@@ -580,32 +609,50 @@ def run_behavioral_checks() -> None:
     else:
         skip("2.5 assertions", "no response")
 
-    # 2.6 Natural language trigger
-    text = send("2.6", "Let's brainstorm about decentralized identity systems")
+    # 2.6 Natural language: "discuss" (no bmad word)
+    text = send("2.6", "I'd like to discuss ideas for a community garden project")
     if text is not None:
         check("2.6 response length > 200", len(text) > 200, f"got {len(text)} chars")
         check("2.6 topic keywords",
-              any_present(text, ["identity", "decentralized", "idea", "concept"]))
+              any_present(text, ["garden", "community", "idea", "concept"]))
     else:
         skip("2.6 assertions", "no response")
 
-    # 2.7 Edge case: unknown subcommand
-    text = send("2.7", "/bmad foobar")
+    # 2.7 Natural language: "brainstorm" (no bmad word)
+    text = send("2.7", "Let's brainstorm about decentralized identity systems")
     if text is not None:
-        check("2.7 response length > 50", len(text) > 50, f"got {len(text)} chars")
-        check("2.7 offers guidance",
-              any_present(text, ["brainstorm", "refine", "validate", "help", "command"]))
+        check("2.7 response length > 200", len(text) > 200, f"got {len(text)} chars")
+        check("2.7 topic keywords",
+              any_present(text, ["identity", "decentralized", "idea", "concept"]))
     else:
         skip("2.7 assertions", "no response")
 
-    # 2.8 Edge case: brainstorm with no topic
-    text = send("2.8", "/bmad brainstorm")
+    # 2.8 Natural language: "think through" (no bmad word)
+    text = send("2.8", "Help me think through the pros and cons of remote work policies")
     if text is not None:
-        check("2.8 response length > 50", len(text) > 50, f"got {len(text)} chars")
-        check("2.8 asks for clarification",
-              any_present(text, ["topic", "what", "about", "specify", "provide", "?"]))
+        check("2.8 response length > 200", len(text) > 200, f"got {len(text)} chars")
+        check("2.8 topic keywords",
+              any_present(text, ["remote", "work", "pro", "con"]))
     else:
         skip("2.8 assertions", "no response")
+
+    # 2.9 bmad-prefixed command
+    text = send("2.9", "bmad brainstorm renewable energy storage solutions")
+    if text is not None:
+        check("2.9 response length > 300", len(text) > 300, f"got {len(text)} chars")
+        check("2.9 topic keywords",
+              any_present(text, ["energy", "storage", "idea", "concept", "approach"]))
+    else:
+        skip("2.9 assertions", "no response")
+
+    # 2.10 Edge case: /bmad-brainstorm with no topic
+    text = send("2.10", "/bmad-brainstorm")
+    if text is not None:
+        check("2.10 response length > 50", len(text) > 50, f"got {len(text)} chars")
+        check("2.10 asks for clarification",
+              any_present(text, ["topic", "what", "about", "specify", "provide", "?"]))
+    else:
+        skip("2.10 assertions", "no response")
 
 
 # ── main ──────────────────────────────────────────────────────────────────────
@@ -616,7 +663,7 @@ def main() -> None:
                         help="Run only static checks, skip behavioral tests")
     args = parser.parse_args()
 
-    print("BMAD Phase 1 — Skill Validation")
+    print("BMAD Phase 1 — Skill Validation (bmad-brainstorm)")
     print("=" * 50)
 
     preflight_ok = run_preflight()
@@ -665,23 +712,23 @@ Or replicate them with shell commands:
 
 ```bash
 # 1.1 File exists
-test -f workspace-wolfgang/skills/bmad-method/SKILL.md && echo PASS || echo FAIL
+test -f workspace-wolfgang/skills/bmad-brainstorm/SKILL.md && echo PASS || echo FAIL
 
 # 1.2 YAML front-matter
-head -5 workspace-wolfgang/skills/bmad-method/SKILL.md
+head -5 workspace-wolfgang/skills/bmad-brainstorm/SKILL.md
 
-# 1.3 Triggers present
-grep -q "/bmad help"      workspace-wolfgang/skills/bmad-method/SKILL.md && echo PASS || echo FAIL
-grep -q "/bmad brainstorm" workspace-wolfgang/skills/bmad-method/SKILL.md && echo PASS || echo FAIL
-grep -q "/bmad refine"    workspace-wolfgang/skills/bmad-method/SKILL.md && echo PASS || echo FAIL
-grep -q "/bmad validate"  workspace-wolfgang/skills/bmad-method/SKILL.md && echo PASS || echo FAIL
+# 1.3 Required strings present
+grep -q "/bmad-brainstorm" workspace-wolfgang/skills/bmad-brainstorm/SKILL.md && echo PASS || echo FAIL
+grep -q "brainstorm"       workspace-wolfgang/skills/bmad-brainstorm/SKILL.md && echo PASS || echo FAIL
+grep -q "refine"           workspace-wolfgang/skills/bmad-brainstorm/SKILL.md && echo PASS || echo FAIL
+grep -q "validate"         workspace-wolfgang/skills/bmad-brainstorm/SKILL.md && echo PASS || echo FAIL
 
 # 1.4 Registered in openclaw.json
 python3 -c "
 import json
 cfg = json.load(open('openclaw.json'))
 skills = next(a for a in cfg['agents']['list'] if a['id']=='wolfgang')['skills']
-print('PASS' if 'bmad-method' in skills else 'FAIL', '— skills:', skills)
+print('PASS' if 'bmad-brainstorm' in skills else 'FAIL', '— skills:', skills)
 "
 ```
 
@@ -690,12 +737,13 @@ print('PASS' if 'bmad-method' in skills else 'FAIL', '— skills:', skills)
 ```bash
 cd mele/user.openclaw/examples/gateway_clients/claw_client
 source venv_activate.sh
-python claw_client.py --session bmad-test "/bmad"
-python claw_client.py --session bmad-test "/bmad help"
-python claw_client.py --session bmad-test "/bmad brainstorm AI-powered home automation"
-python claw_client.py --session bmad-test "/bmad refine A voice-controlled smart mirror"
-python claw_client.py --session bmad-test "/bmad validate AI-generated bedtime stories"
+python claw_client.py --session bmad-test "/bmad-brainstorm help"
+python claw_client.py --session bmad-test "bmad brainstorm AI-powered home automation"
+python claw_client.py --session bmad-test "bmad discuss sustainable packaging"
+python claw_client.py --session bmad-test "bmad refine A voice-controlled smart mirror"
+python claw_client.py --session bmad-test "bmad validate AI-generated bedtime stories"
 python claw_client.py --session bmad-test "Let's brainstorm about decentralized identity systems"
+python claw_client.py --session bmad-test "I'd like to discuss ideas for a community garden project"
 ```
 
 Inspect stdout manually.
@@ -712,9 +760,8 @@ import sys
 sys.path.insert(0, "mele/user.openclaw/examples/gateway_clients/claw_client")
 from claw_client import prompt_sync
 
-r = prompt_sync("/bmad help", session_key="agent-test", timeout=180)
+r = prompt_sync("/bmad-brainstorm help", session_key="agent-test", timeout=180)
 print(r.text)
-# r.text contains the full agent reply — evaluate with keyword checks or LLM judgement
 ```
 
 ### Interpreting results as an agent
@@ -722,8 +769,9 @@ print(r.text)
 | Symptom | Likely cause | Fix |
 |---|---|---|
 | All behavioral tests fail with timeout | Gateway not running | `systemctl --user restart openclaw-gateway` |
-| All behavioral tests return empty/generic text | Skill not loaded | Check static tests — is `bmad-method` in `openclaw.json`? Did you restart the gateway? |
-| `/bmad help` works but `/bmad brainstorm` returns generic text | Trigger matching issue | Check the SKILL.md trigger section |
+| All behavioral tests return empty/generic text | Skill not loaded | Check static tests — is `bmad-brainstorm` in `openclaw.json`? Did you restart the gateway? |
+| `/bmad-brainstorm help` works but `bmad discuss` returns generic text | Trigger matching issue | Check the SKILL.md trigger section |
+| Natural language tests fail but slash commands work | SKILL.md natural language triggers need more examples | Add more trigger phrases to SKILL.md |
 | Static tests pass, behavioral tests partially fail | Skill instructions need tuning | Inspect the actual response text for clues |
 | `claw_client` import fails | venv not active | `source venv_activate.sh` |
 
