@@ -452,9 +452,13 @@ export function ChatScreen({
 
   const historyLoading = historyQuery.isLoading || isRedirecting
   const showGatewayDown = Boolean(gatewayStatusError)
+  const gatewayStatusSettledAt = Math.max(
+    gatewayStatusQuery.dataUpdatedAt,
+    gatewayStatusQuery.errorUpdatedAt,
+  )
   const showGatewayNotice =
     showGatewayDown &&
-    gatewayStatusQuery.errorUpdatedAt > gatewayStatusMountRef.current
+    gatewayStatusSettledAt > gatewayStatusMountRef.current
   const redirectToConnect = shouldRedirectToConnect({
     isRedirecting,
     shouldRedirectToNew,

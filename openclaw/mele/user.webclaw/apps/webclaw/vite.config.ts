@@ -9,8 +9,10 @@ import { defineConfig } from 'vite'
 import viteTsConfigPaths from 'vite-tsconfig-paths'
 
 const config = defineConfig({
+  // Default Node/Vite can bind [::1] only; browsers using 127.0.0.1 then get ERR_CONNECTION_REFUSED.
   server: {
-    allowedHosts: ['mele.tailfdf682.ts.net'],
+    host: '127.0.0.1',
+    port: 3000,
   },
   resolve: {
     alias: {

@@ -90,6 +90,28 @@ without main session context.
 }
 ```
 
+## WhatsApp — Two-Stage Scheduling
+
+WhatsApp notifications use a two-stage approach. The cron job fires ASAP (15s) and runs
+`schedule-send.sh`, which creates a systemd timer for the actual delivery time.
+
+```json
+{
+  "name": "WhatsApp reminder",
+  "schedule": { "kind": "at", "at": "<now + 15s as ISO 8601>" },
+  "deleteAfterRun": true,
+  "payload": {
+    "kind": "agentTurn",
+    "message": "Run this exact bash command: /home/dev/proj/ai-knowhow/openclaw/mele/user.openclaw/examples/send_whatsapp/schedule-send.sh --at <ACTUAL_DELIVERY_TIME as ISO 8601> --to +491777960262 \"MESSAGE_TEXT\""
+  },
+  "sessionTarget": "isolated"
+}
+```
+
+- `schedule.at`: always **now + 15s** (when stage 1 fires)
+- `--at` in the command: the **actual delivery time** (ISO 8601 or epoch seconds)
+- If target time has passed by the time stage 1 fires, delivery happens immediately
+
 ## Common Mistakes to Avoid
 
 1. **sessionTarget inside payload** → Must be at top level
@@ -97,3 +119,4 @@ without main session context.
 3. **Missing required fields** → Always include `name`, `schedule`, `payload`, `sessionTarget`
 4. **Invalid ISO timestamp** → Use proper timezone offset (+01:00 for Germany, +02:00 in summer)
 5. **Vague payload.text** → Must include action + channel + recipient + exact message body
+6. **WhatsApp: using send-safe.sh directly in cron** → Always use `schedule-send.sh` (two-stage); never schedule `send-safe.sh` at the target time via openclaw cron (wastes an LLM loop at delivery)

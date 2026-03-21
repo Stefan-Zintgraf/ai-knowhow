@@ -10,13 +10,11 @@ export const Route = createFileRoute('/api/ping')({
           await gatewayConnectCheck()
           return json({ ok: true })
         } catch (err) {
-          return json(
-            {
-              ok: false,
-              error: err instanceof Error ? err.message : String(err),
-            },
-            { status: 503 },
-          )
+          // Always 200 so the client can show ok: false + specific error (e.g. pairing).
+          return json({
+            ok: false,
+            error: err instanceof Error ? err.message : String(err),
+          })
         }
       },
     },

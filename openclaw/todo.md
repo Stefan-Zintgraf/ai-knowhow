@@ -21,7 +21,11 @@
           - Prompt-Hardening 
           - /notify plugin fuer 100% Sicherheit (fix parametriert, wohin die Notification geht)
     - [ ] whatsapp notification geht nicht, Prompts untersuchen
-    - [ ] Analyse agentic RAG (Prompt-Debugging), siehe Kapitel 10 am Ende
+    - [ ] Memory optimieren
+      - [ ] siehe auch openclaw, Memory + RAG Ideas in Notion
+      - [ ] https://www.perplexity.ai/search/image-jpg-KszyWexYQH6R6GMMyUteXQ
+      - [ ] Analyse agentic RAG (Prompt-Debugging), siehe Kapitel 10 am Ende
+      - [ ] https://www.reddit.com/r/openclaw/comments/1qz2d56/why_is_my_open_law_so_forgetful/
     - [ ] Evtl. via bmad den OpenClaw Code parsen, damit Infos spaeter schneller gefunden werden
     - [ ] Automation: https://openclawcn.com/en/docs/automation/
     - [ ] OpenProse: https://openclawcn.com/en/docs/prose/

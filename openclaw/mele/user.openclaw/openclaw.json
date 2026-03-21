@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.2.17",
-    "lastTouchedAt": "2026-02-27T17:20:47.475Z"
+    "lastTouchedVersion": "2026.3.12",
+    "lastTouchedAt": "2026-03-13T14:35:13.255Z"
   },
   "wizard": {
-    "lastRunAt": "2026-02-22T19:40:47.823Z",
-    "lastRunVersion": "2026.2.17",
+    "lastRunAt": "2026-03-13T14:35:13.225Z",
+    "lastRunVersion": "2026.3.12",
     "lastRunCommand": "doctor",
     "lastRunMode": "local"
   },
@@ -401,7 +401,8 @@
     "native": "auto",
     "nativeSkills": "auto",
     "bash": true,
-    "restart": true
+    "restart": true,
+    "ownerDisplay": "raw"
   },
   "hooks": {
     "enabled": true,
@@ -462,8 +463,12 @@
   },
   "channels": {
     "whatsapp": {
-      "dmPolicy": "pairing",
+      "enabled": true,
+      "dmPolicy": "allowlist",
       "selfChatMode": false,
+      "allowFrom": [
+        "+491777960262"
+      ],
       "groupPolicy": "allowlist",
       "debounceMs": 0,
       "mediaMaxMb": 50
@@ -471,17 +476,28 @@
     "telegram": {
       "enabled": true,
       "dmPolicy": "pairing",
-      "botToken": "${TELEGRAM_BOT_TOKEN}",
       "groupPolicy": "allowlist",
-      "streamMode": "partial",
       "accounts": {
         "wolfgang": {
-          "dmPolicy": "pairing",
-          "botToken": "${TELEGRAM_BOT_TOKEN}",
+          "dmPolicy": "allowlist",
+          "botToken": "${TELEGRAM_WOLFGANG_TOKEN}",
+          "allowFrom": [
+            "6672375440"
+          ],
           "groupPolicy": "allowlist",
-          "streamMode": "partial"
+          "streaming": "partial"
+        },
+        "default": {
+          "dmPolicy": "allowlist",
+          "botToken": "8419078303:AAEWLdG24Glum3US-iuP9yoo4OqBLw5yvNs",
+          "allowFrom": [
+            "6672375440"
+          ],
+          "groupPolicy": "allowlist",
+          "streaming": "partial"
         }
-      }
+      },
+      "streaming": "partial"
     }
   },
   "canvasHost": {

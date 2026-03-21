@@ -32,6 +32,7 @@
 # WebClaw: mele/user.webclaw/apps/webclaw/.env.local (CLAWDBOT_GATEWAY_*),
 #          mele/user.webclaw/apps/webclaw/.device-keys.json (ed25519 device identity);
 # Gateway client: mele/user.openclaw/examples/gateway_clients/claw_client/.env (OPENCLAW_GATEWAY_TOKEN);
+#                 mele/user.openclaw/examples/send_whatsapp/.env (WHATSAPP_RECIPIENT, OPENCLAW_SYSTEMD_UNIT, etc.);
 # ~/.config/openclaw/, systemd/, gogcli/, gcloud/
 # Shell/login files    ~/.bashrc, ~/.profile, ~/.bash_profile, ~/.zshrc, ~/.zshenv, ~/.zprofile
 #                      (only if present; may contain OPENCLAW_STATE_DIR and completion sourcing)
@@ -160,6 +161,7 @@ if [[ "$FULL" -eq 1 ]]; then
   # examples/ (gateway clients, etc.) — relative to user.openclaw (SCRIPT_DIR)
   if [[ -d "$SCRIPT_DIR/examples" ]]; then
     (cd "$SCRIPT_DIR" && zip -q -r -P "$PASSWORD" "$OUT" examples \
+      -x "examples/*/node_modules/*" \
       -x "examples/*/.venv/*" \
       -x "examples/*/venv/*" \
       -x "examples*/__pycache__/*" \
@@ -227,6 +229,12 @@ else
   CLAW_CLIENT_ENV="$SCRIPT_DIR/examples/gateway_clients/claw_client/.env"
   if [[ -f "$CLAW_CLIENT_ENV" ]]; then
     (cd "$SCRIPT_DIR" && zip -q -P "$PASSWORD" "$OUT" examples/gateway_clients/claw_client/.env)
+  fi
+
+  # send_whatsapp credentials (examples/send_whatsapp/.env → WHATSAPP_RECIPIENT, OPENCLAW_SYSTEMD_UNIT, etc.)
+  SEND_WHATSAPP_ENV="$SCRIPT_DIR/examples/send_whatsapp/.env"
+  if [[ -f "$SEND_WHATSAPP_ENV" ]]; then
+    (cd "$SCRIPT_DIR" && zip -q -P "$PASSWORD" "$OUT" examples/send_whatsapp/.env)
   fi
 fi
 

@@ -14,9 +14,17 @@ export function GatewayStatusMessage({
   className,
 }: GatewayStatusMessageProps) {
   const isChecking = state === 'checking'
+  const err = (error ?? '').toLowerCase()
+  const isPairing =
+    !isChecking &&
+    (err.includes('pairing') ||
+      err.includes('device') ||
+      err.includes('approve'))
   const title = isChecking
     ? 'Checking gateway connection...'
-    : 'OpenClaw gateway is unreachable'
+    : isPairing
+      ? 'Gateway pairing required'
+      : 'OpenClaw gateway is unreachable'
   const description = isChecking
     ? 'This dashboard needs access to the OpenClaw gateway configured by your server environment variables.'
     : ''
@@ -26,6 +34,15 @@ export function GatewayStatusMessage({
       description={
         isChecking ? (
           description
+        ) : isPairing ? (
+          <>
+            This machine&apos;s WebClaw device identity is not approved on the
+            gateway yet. On the gateway host run:{' '}
+            <span className="font-mono">openclaw devices approve &lt;device-id&gt;</span>{' '}
+            (see server logs for the device id), or copy an approved{' '}
+            <span className="font-mono">.device-keys.json</span> from another
+            setup.
+          </>
         ) : (
           <>
             We could not reach the gateway from the dashboard server. Start the

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.2.17",
-    "lastTouchedAt": "2026-02-22T19:40:47.850Z"
+    "lastTouchedVersion": "2026.3.12",
+    "lastTouchedAt": "2026-03-13T07:40:11.607Z"
   },
   "wizard": {
     "lastRunAt": "2026-02-22T19:40:47.823Z",
@@ -279,11 +279,17 @@
       },
       {
         "id": "wolfgang",
-        "name": "wolfgang",
         "default": true,
+        "name": "wolfgang",
         "workspace": "${OPENCLAW_STATE_DIR}/workspace-wolfgang",
         "agentDir": "${OPENCLAW_STATE_DIR}/agents/wolfgang/agent",
         "model": "openrouter/moonshotai/kimi-k2.5",
+        "skills": [
+          "backup",
+          "greet",
+          "testnode-skill",
+          "remind"
+        ],
         "tools": {
           "alsoAllow": [
             "exec"
@@ -395,7 +401,8 @@
     "native": "auto",
     "nativeSkills": "auto",
     "bash": true,
-    "restart": true
+    "restart": true,
+    "ownerDisplay": "raw"
   },
   "hooks": {
     "enabled": true,
@@ -456,7 +463,9 @@
   },
   "channels": {
     "whatsapp": {
-      "dmPolicy": "pairing",
+      "enabled": true,
+      "dmPolicy": "allowlist",
+      "allowFrom": ["+491746646705"],
       "selfChatMode": false,
       "groupPolicy": "allowlist",
       "debounceMs": 0,
@@ -464,18 +473,20 @@
     },
     "telegram": {
       "enabled": true,
-      "dmPolicy": "pairing",
-      "botToken": "${TELEGRAM_BOT_TOKEN}",
+      "dmPolicy": "allowlist",
+      "allowFrom": ["6672375440"],
+      "botToken": "${TELEGRAM_MELE_MAIN_TOKEN}",
       "groupPolicy": "allowlist",
-      "streamMode": "partial",
       "accounts": {
         "wolfgang": {
-          "dmPolicy": "pairing",
-          "botToken": "${TELEGRAM_BOT_TOKEN}",
+          "dmPolicy": "allowlist",
+          "allowFrom": ["6672375440"],
+          "botToken": "${TELEGRAM_WOLFGANG_TOKEN}",
           "groupPolicy": "allowlist",
-          "streamMode": "partial"
+          "streaming": "partial"
         }
-      }
+      },
+      "streaming": "partial"
     }
   },
   "canvasHost": {

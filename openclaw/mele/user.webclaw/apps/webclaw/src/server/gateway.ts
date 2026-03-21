@@ -23,45 +23,6 @@ const __dirname = dirname(__filename)
 const DEVICE_KEYS_PATH = pathResolve(__dirname, '../../.device-keys.json')
 const ED25519_SPKI_PREFIX = Buffer.from('302a300506032b6570032100', 'hex')
 
-// Ensure server has gateway env (e.g. when .env.local is not loaded by the framework's cwd)
-const ENV_LOCAL_CANDIDATES = [
-  pathResolve(__dirname, '../../.env.local'),
-  pathResolve(process.cwd(), '.env.local'),
-]
-function loadGatewayEnvIfMissing(): void {
-  if (
-    (process.env.CLAWDBOT_GATEWAY_TOKEN ?? '').trim() ||
-    (process.env.CLAWDBOT_GATEWAY_PASSWORD ?? '').trim()
-  ) {
-    return
-  }
-  for (const envPath of ENV_LOCAL_CANDIDATES) {
-    if (!existsSync(envPath)) continue
-    try {
-      const raw = readFileSync(envPath, 'utf8')
-      for (const line of raw.split('\n')) {
-        const trimmed = line.trim()
-        if (!trimmed || trimmed.startsWith('#')) continue
-        const eq = trimmed.indexOf('=')
-        if (eq <= 0) continue
-        const key = trimmed.slice(0, eq).trim()
-        if (
-          key === 'CLAWDBOT_GATEWAY_URL' ||
-          key === 'CLAWDBOT_GATEWAY_TOKEN' ||
-          key === 'CLAWDBOT_GATEWAY_PASSWORD'
-        ) {
-          const value = trimmed.slice(eq + 1).trim()
-          const unquoted = value.replace(/^["']|["']$/g, '')
-          if (!process.env[key]) process.env[key] = unquoted
-        }
-      }
-      return
-    } catch {
-      // ignore read/parse errors
-    }
-  }
-}
-
 type StoredDeviceKeys = {
   version: 2
   algorithm: 'ed25519'
@@ -297,7 +258,6 @@ type GatewayClientHandle = {
 const sharedGatewayClients = new Map<string, GatewayClientEntry>()
 
 function getGatewayConfig() {
-  loadGatewayEnvIfMissing()
   const url = process.env.CLAWDBOT_GATEWAY_URL?.trim() || 'ws://127.0.0.1:18789'
   const token = process.env.CLAWDBOT_GATEWAY_TOKEN?.trim() || ''
   const password = process.env.CLAWDBOT_GATEWAY_PASSWORD?.trim() || ''
@@ -315,6 +275,7 @@ function getGatewayConfig() {
 async function buildConnectParams(
   token: string,
   password: string,
+  nonce?: string,
 ): Promise<ConnectParams> {
   const clientId = 'gateway-client'
   const clientMode = 'ui'
@@ -343,8 +304,9 @@ async function buildConnectParams(
   try {
     const identity = await getDeviceIdentity()
     const signedAt = Date.now()
-    const payload = [
-      'v1',
+    const version = nonce ? 'v2' : 'v1'
+    const base = [
+      version,
       identity.deviceId,
       clientId,
       clientMode,
@@ -352,7 +314,9 @@ async function buildConnectParams(
       scopes.join(','),
       String(signedAt),
       token || '',
-    ].join('|')
+    ]
+    if (version === 'v2') base.push(nonce || '')
+    const payload = base.join('|')
     const signature = await signPayload(identity.privateKey, payload)
 
     params.device = {
@@ -360,6 +324,7 @@ async function buildConnectParams(
       publicKey: identity.publicKeyRawBase64Url,
       signature,
       signedAt,
+      nonce,
     }
   } catch (err) {
     console.warn(
@@ -371,11 +336,57 @@ async function buildConnectParams(
   return params
 }
 
+/**
+ * Open the WebSocket and read connect.challenge. The listener MUST be attached
+ * before `open` resolves — the gateway sends the challenge immediately, and
+ * otherwise the frame can be delivered before any handler exists (race).
+ */
+async function wsOpenAndReadConnectChallenge(
+  ws: WebSocket,
+  timeoutMs = 5000,
+): Promise<string> {
+  const noncePromise = new Promise<string>((resolve, reject) => {
+    const timer = setTimeout(() => {
+      ws.removeEventListener('message', onMessage)
+      reject(new Error('Timed out waiting for connect.challenge event'))
+    }, timeoutMs)
+
+    function onMessage(evt: MessageEvent) {
+      try {
+        const data = typeof evt.data === 'string' ? evt.data : ''
+        const parsed = JSON.parse(data) as GatewayFrame
+        if (
+          parsed.type === 'event' &&
+          (parsed as { event?: string }).event === 'connect.challenge'
+        ) {
+          const payload = (parsed as { payload?: { nonce?: string } }).payload
+          const nonce = payload?.nonce
+          if (typeof nonce === 'string' && nonce.trim()) {
+            clearTimeout(timer)
+            ws.removeEventListener('message', onMessage)
+            resolve(nonce.trim())
+          }
+        }
+      } catch {
+        // ignore parse errors
+      }
+    }
+
+    ws.addEventListener('message', onMessage)
+  })
+
+  await wsOpen(ws)
+  return noncePromise
+}
+
 async function connectGateway(ws: WebSocket): Promise<void> {
   const { token, password } = getGatewayConfig()
-  await wsOpen(ws)
+  const nonce = await wsOpenAndReadConnectChallenge(ws)
+  console.log(`[gateway-ws] Received connect challenge nonce: ${nonce.slice(0, 8)}...`)
+
+  // Send connect with the nonce
   const connectId = randomUUID()
-  const connectParams = await buildConnectParams(token, password)
+  const connectParams = await buildConnectParams(token, password, nonce)
   const connectReq: GatewayFrame = {
     type: 'req',
     id: connectId,
@@ -457,9 +468,12 @@ function createGatewayClient(): GatewayClient {
 
   async function connect() {
     if (connected || closed) return
-    await wsOpen(ws)
+    const nonce = await wsOpenAndReadConnectChallenge(ws)
+    console.log(`[gateway-ws] Received connect challenge nonce: ${nonce.slice(0, 8)}...`)
+
+    // Send connect with the nonce
     const connectId = randomUUID()
-    const connectParams = await buildConnectParams(token, password)
+    const connectParams = await buildConnectParams(token, password, nonce)
     const connectReq: GatewayFrame = {
       type: 'req',
       id: connectId,
@@ -741,12 +755,14 @@ export async function gatewayRpc<TPayload = unknown>(
 
   const ws = new WebSocket(url)
   try {
-    await wsOpen(ws)
+    const nonce = await wsOpenAndReadConnectChallenge(ws)
 
-    // 1) connect handshake (must be first request)
+    const waiter = createGatewayWaiter()
+    ws.addEventListener('message', waiter.handleMessage)
+
+    // 1) connect handshake with nonce
     const connectId = randomUUID()
-    const connectParams = await buildConnectParams(token, password)
-
+    const connectParams = await buildConnectParams(token, password, nonce)
     const connectReq: GatewayFrame = {
       type: 'req',
       id: connectId,
@@ -754,6 +770,10 @@ export async function gatewayRpc<TPayload = unknown>(
       params: connectParams,
     }
 
+    ws.send(JSON.stringify(connectReq))
+    await waiter.waitForRes(connectId)
+
+    // 2) send actual RPC request
     const requestId = randomUUID()
     const req: GatewayFrame = {
       type: 'req',
@@ -761,13 +781,6 @@ export async function gatewayRpc<TPayload = unknown>(
       method,
       params,
     }
-
-    const waiter = createGatewayWaiter()
-
-    ws.addEventListener('message', waiter.handleMessage)
-
-    ws.send(JSON.stringify(connectReq))
-    await waiter.waitForRes(connectId)
 
     ws.send(JSON.stringify(req))
     const payload = await waiter.waitForRes(requestId)
@@ -788,10 +801,10 @@ export async function gatewayConnectCheck(): Promise<void> {
 
   const ws = new WebSocket(url)
   try {
-    await wsOpen(ws)
+    const nonce = await wsOpenAndReadConnectChallenge(ws)
 
     const connectId = randomUUID()
-    const connectParams = await buildConnectParams(token, password)
+    const connectParams = await buildConnectParams(token, password, nonce)
     const connectReq: GatewayFrame = {
       type: 'req',
       id: connectId,

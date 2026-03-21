@@ -27,6 +27,9 @@ openclaw/mele/backup.deleteme/
 **/user.openclaw/logs/
 **/user.openclaw/media/
 **/user.openclaw/memory/
+**/user.openclaw/delivery-queue/
+**/user.openclaw/telegram/command-hash-*.txt
+**/user.webclaw.old/
 **/user.openclaw/exec-approvals.json
 **/user.openclaw/update-check.json
 *deleteme*

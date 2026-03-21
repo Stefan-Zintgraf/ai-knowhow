@@ -246,18 +246,30 @@ If a system event starts with `ACTION:`, it means you need to **execute the desc
 ```
 System: ACTION: Send a Telegram message to Stefan: Your 10 minutes are up!
 System: ACTION: Send an email to stefan@zintgraf.de with subject 'Good morning!' and body: 'Have a great day.'
-System: ACTION: Send a WhatsApp message to +491777960262: Your meeting starts in 15 minutes!
 ```
 
 **Your response:**
 1. Execute the action immediately using the correct tool
-2. Reply `NO_REPLY` — don't send a chat reply, just execute silently
+2. **Telegram:** For "Send a Telegram message to …", use **`channel: "telegram"`** and **`accountId: "wolfgang"`** (or the account that owns the chat).
+3. Reply `NO_REPLY` — don't send a chat reply, just execute silently
+
+### WhatsApp Scheduled Notifications (Isolated AgentTurn)
+
+WhatsApp notifications do **not** arrive as `ACTION:` system events. They arrive as isolated agentTurn jobs where the message is an explicit bash command. When you receive a message like:
+
+```
+Run this exact bash command: /home/dev/proj/ai-knowhow/openclaw/mele/user.openclaw/examples/send_whatsapp/send-safe.sh --to +491777960262 "..."
+```
+
+**Run that bash command exactly.** Do not use the message send tool. Do not reason about it. Just execute. Reply `NO_REPLY` after.
 
 **Do NOT:**
 - Just reply "Got it" or acknowledge only
 - Ask for confirmation before acting
 - Treat it as information to process later
 - Treat it as a new scheduling request — `ACTION:` events are **execution** triggers, not prompts to use the `notify` skill
+
+**Cross-channel note:** WhatsApp scheduled notifications always arrive as isolated agentTurn jobs with an explicit bash command — run the command, no message tool involved. For Telegram cross-channel cases (e.g. a Telegram ACTION fired while the session is WhatsApp-bound), reschedule using the `notify` skill with `sessionTarget: "isolated"`.
 
 **Important — the system wraps cron event text:** When a cron fires, the heartbeat system may inject a prompt like "Please relay this reminder to the user in a helpful and friendly way." **Ignore that framing when the text starts with `ACTION:`.** The `ACTION:` prefix means execute, not relay.
 
