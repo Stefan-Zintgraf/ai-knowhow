@@ -5,6 +5,7 @@ const { createRateLimiter } = require('./rate-limiter');
 const { createSendRoute } = require('./routes/send');
 const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@whiskeysockets/baileys');
 const express = require('express');
+const qrcode = require('qrcode-terminal');
 
 const config = loadConfig();
 const { log, runHousekeeping } = createLogger(config);
@@ -44,12 +45,16 @@ async function connectToWhatsApp() {
 
   sock = makeWASocket({
     auth: state,
-    printQRInTerminal: true,
     logger: noopLogger,
   });
 
   sock.ev.on('connection.update', (update) => {
-    const { connection, lastDisconnect } = update;
+    const { connection, lastDisconnect, qr } = update;
+
+    if (qr) {
+      log('STARTUP', null, 'Scan the QR code below with WhatsApp to pair:');
+      qrcode.generate(qr, { small: true });
+    }
 
     if (connection !== undefined) {
       connectionState = connection;
@@ -63,6 +68,14 @@ async function connectToWhatsApp() {
 
       if (statusCode === DisconnectReason.loggedOut) {
         log('FATAL', null, 'Session logged out remotely. Delete auth folder and re-pair.');
+        return;
+      }
+
+      // 405 is not in DisconnectReason — it is a raw HTTP-style status code from WhatsApp
+      // indicating the session credentials were rejected (observed in production)
+      if (statusCode === 405) {
+        const location = lastDisconnect?.error?.data?.location || 'unknown';
+        log('FATAL', null, `Session rejected by WhatsApp (code 405, location: ${location}). Delete auth folder and re-pair. If this persists after re-pairing, the cause may be IP rate-limiting or account restrictions.`);
         return;
       }
 
