@@ -30,6 +30,8 @@ openclaw/mele/backup.deleteme/
 **/user.openclaw/delivery-queue/
 **/user.openclaw/telegram/command-hash-*.txt
 **/user.webclaw.old/
+# user.webclaw is part of ai-knowhow only (no nested clone)
+openclaw/mele/user.webclaw/.git/
 **/user.openclaw/exec-approvals.json
 **/user.openclaw/update-check.json
 *deleteme*

@@ -4,6 +4,8 @@
 
 Fast web client for OpenClaw.
 
+**In this monorepo:** this directory is tracked only by [ai-knowhow](https://github.com/Stefan-Zintgraf/ai-knowhow) (upstream WebClaw reference: [ibelick/webclaw](https://github.com/ibelick/webclaw)). Do not run `git init` here; use the repository root for all Git operations.
+
 [webclaw.dev](https://webclaw.dev)
 
 Currently in beta.
