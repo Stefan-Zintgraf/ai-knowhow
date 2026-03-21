@@ -5,6 +5,9 @@
 .obsidian
 .vs
 
+# Python
+**/__pycache__/
+
 # Never commit secrets
 **/env.txt
 **/.env
