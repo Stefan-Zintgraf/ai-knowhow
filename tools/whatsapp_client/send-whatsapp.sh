@@ -14,7 +14,8 @@ ENV_FILE="${SCRIPT_DIR}/.env"
 
 NUMBER=""
 MESSAGE=""
-BASE_URL="${BASE_URL:-http://127.0.0.1:3000}"
+# Set after parsing args / .env: avoid defaulting to :3000 (often WebClaw/Vite; whatsapp_client uses PORT in .env).
+BASE_URL="${BASE_URL:-}"
 API_KEY="${WHATSAPP_SENDER_API_KEY:-}"
 
 usage() {
@@ -28,7 +29,7 @@ Usage:
 Options:
   -n, --number     Target phone number, digits only (no +); must be in ALLOWED_NUMBERS.
   -m, --message    Message body to send.
-  -u, --base-url   API root URL (default: http://127.0.0.1:3000, or env BASE_URL).
+  -u, --base-url   API root URL (default: http://127.0.0.1:<PORT> from .env, else http://127.0.0.1:3001; or env BASE_URL).
   -k, --api-key    x-api-key header. Else WHATSAPP_SENDER_API_KEY, else API_KEY from .env beside this script.
   -h, --help       Show this help.
 
@@ -60,6 +61,7 @@ dotenv_get() {
           v="${v:1:${#v}-2}"
         fi
       fi
+      v="${v//$'\r'/}"
       if [[ "$k" == "$want" ]]; then
         printf '%s' "$v"
         return 0
@@ -121,6 +123,14 @@ if [[ -z "${NUMBER// }" || -z "$MESSAGE" ]]; then
 fi
 
 NUMBER="${NUMBER//[[:space:]]/}"
+
+if [[ -z "${BASE_URL// }" ]]; then
+  if p="$(dotenv_get "$ENV_FILE" "PORT" 2>/dev/null)" && [[ -n "$p" ]]; then
+    BASE_URL="http://127.0.0.1:${p}"
+  else
+    BASE_URL="http://127.0.0.1:3001"
+  fi
+fi
 
 if [[ -z "${API_KEY// }" ]]; then
   if v="$(dotenv_get "$ENV_FILE" "API_KEY" 2>/dev/null)"; then

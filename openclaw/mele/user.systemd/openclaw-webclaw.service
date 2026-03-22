@@ -1,0 +1,5 @@
+# openclaw-webclaw.service — repository stub (not a runnable unit file).
+#
+# The real user unit is created automatically by webclaw_service.sh --install,
+# with resolved WorkingDirectory, pnpm path, and EnvironmentFile. It is written to:
+#   ${XDG_CONFIG_HOME:-$HOME/.config}/systemd/user/openclaw-webclaw.service

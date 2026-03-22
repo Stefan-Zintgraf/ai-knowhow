@@ -55,9 +55,8 @@ message body. When this fires, the agent has only this text to act on.
 Examples of good `payload.text` values:
 - `"ACTION: Send a Telegram message to Stefan: Good morning! Have a great day."`
 - `"ACTION: Send an email to stefan@zintgraf.de with subject 'Report' and body: 'Your daily report is ready.'"`
-- `"ACTION: Send a WhatsApp message to +491777960262: Your meeting starts in 15 minutes!"`
 
-Never use vague text like `"Time is up!"` or `"Do the thing"`.
+Never use vague text like `"Time is up!"` or `"Do the thing"`. For **WhatsApp**, do not use this notify/cron path — use the **whatsapp** skill and `send-whatsapp.sh` only.
 
 ### Agent Turn (for isolated session)
 ```json
@@ -90,27 +89,11 @@ without main session context.
 }
 ```
 
-## WhatsApp — Two-Stage Scheduling
+## WhatsApp
 
-WhatsApp notifications use a two-stage approach. The cron job fires ASAP (15s) and runs
-`schedule-send.sh`, which creates a systemd timer for the actual delivery time.
-
-```json
-{
-  "name": "WhatsApp reminder",
-  "schedule": { "kind": "at", "at": "<now + 15s as ISO 8601>" },
-  "deleteAfterRun": true,
-  "payload": {
-    "kind": "agentTurn",
-    "message": "Run this exact bash command: /home/dev/proj/ai-knowhow/openclaw/mele/user.openclaw/examples/send_whatsapp/schedule-send.sh --at <ACTUAL_DELIVERY_TIME as ISO 8601> --to +491777960262 \"MESSAGE_TEXT\""
-  },
-  "sessionTarget": "isolated"
-}
-```
-
-- `schedule.at`: always **now + 15s** (when stage 1 fires)
-- `--at` in the command: the **actual delivery time** (ISO 8601 or epoch seconds)
-- If target time has passed by the time stage 1 fires, delivery happens immediately
+Do **not** schedule WhatsApp through OpenClaw cron in this workflow. Use the **whatsapp** skill:
+outbound messages only via `/home/dev/proj/ai-knowhow/tools/whatsapp_client/send-whatsapp.sh`
+(see `skills/whatsapp/SKILL.md`).
 
 ## Common Mistakes to Avoid
 
@@ -119,4 +102,4 @@ WhatsApp notifications use a two-stage approach. The cron job fires ASAP (15s) a
 3. **Missing required fields** → Always include `name`, `schedule`, `payload`, `sessionTarget`
 4. **Invalid ISO timestamp** → Use proper timezone offset (+01:00 for Germany, +02:00 in summer)
 5. **Vague payload.text** → Must include action + channel + recipient + exact message body
-6. **WhatsApp: using send-safe.sh directly in cron** → Always use `schedule-send.sh` (two-stage); never schedule `send-safe.sh` at the target time via openclaw cron (wastes an LLM loop at delivery)
+6. **WhatsApp** → Use the **whatsapp** skill and `send-whatsapp.sh` only — not this notify/cron JSON path

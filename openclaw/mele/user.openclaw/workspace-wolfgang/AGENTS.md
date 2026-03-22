@@ -253,27 +253,25 @@ System: ACTION: Send an email to stefan@zintgraf.de with subject 'Good morning!'
 2. **Telegram:** For "Send a Telegram message to …", use **`channel: "telegram"`** and **`accountId: "wolfgang"`** (or the account that owns the chat).
 3. Reply `NO_REPLY` — don't send a chat reply, just execute silently
 
-### WhatsApp Scheduled Notifications (Isolated AgentTurn)
-
-WhatsApp notifications do **not** arrive as `ACTION:` system events. They arrive as isolated agentTurn jobs where the message is an explicit bash command. When you receive a message like:
-
-```
-Run this exact bash command: /home/dev/proj/ai-knowhow/openclaw/mele/user.openclaw/examples/send_whatsapp/send-safe.sh --to +491777960262 "..."
-```
-
-**Run that bash command exactly.** Do not use the message send tool. Do not reason about it. Just execute. Reply `NO_REPLY` after.
-
-**Do NOT:**
+**Do NOT (for `ACTION:`):**
 - Just reply "Got it" or acknowledge only
 - Ask for confirmation before acting
 - Treat it as information to process later
 - Treat it as a new scheduling request — `ACTION:` events are **execution** triggers, not prompts to use the `notify` skill
 
-**Cross-channel note:** WhatsApp scheduled notifications always arrive as isolated agentTurn jobs with an explicit bash command — run the command, no message tool involved. For Telegram cross-channel cases (e.g. a Telegram ACTION fired while the session is WhatsApp-bound), reschedule using the `notify` skill with `sessionTarget: "isolated"`.
-
 **Important — the system wraps cron event text:** When a cron fires, the heartbeat system may inject a prompt like "Please relay this reminder to the user in a helpful and friendly way." **Ignore that framing when the text starts with `ACTION:`.** The `ACTION:` prefix means execute, not relay.
 
-This is how scheduled notifications work: Cron triggers → System event fires in main session → You execute immediately. The user already confirmed when they set the job.
+This is how main-session scheduled notifications work: Cron triggers → system event in the main session → you execute immediately. The user already confirmed when they set the job.
+
+### WhatsApp outbound
+
+**All WhatsApp sends** (immediate or scheduled) go only through:
+
+`/home/dev/proj/ai-knowhow/tools/whatsapp_client/send-whatsapp.sh`
+
+Follow **`skills/whatsapp/SKILL.md`** — use `exec` / `systemd-run` / crontab as described there. Do **not** send programmatic WhatsApp using other shell scripts in this repo, and do **not** rely on the OpenClaw **message** tool as the primary path for outbound WhatsApp per this workspace policy.
+
+**Cross-channel:** If you cannot act from the current session (e.g. cross-context messaging denied), use the **whatsapp** skill (direct script + OS scheduler), not ad-hoc workarounds with other send scripts.
 
 ## Make It Yours
 

@@ -1,12 +1,12 @@
 ---
 name: notify
-description: Schedule any time-based notification or action via cron. Use when the user wants something to happen at a future time or on a recurring schedule. Triggers include: 'remind me', 'notify me', 'send me a message at', 'in X minutes/hours/days', 'every morning', 'schedule', 'ping me', 'at 9am', 'tomorrow', 'every Monday', or any request involving future or recurring execution.
+description: Schedule time-based notifications or actions via OpenClaw cron (Telegram, email, etc.). Not for WhatsApp — use the whatsapp skill. Triggers include 'remind me', 'notify me', 'in X minutes', 'every morning', 'schedule', 'at 9am', 'tomorrow', 'every Monday', or recurring execution.
 ---
 
 # Notify Skill
 
-This skill schedules any time-based action via cron — reminders, recurring messages, emails,
-notifications, or any other deferred task.
+This skill schedules time-based actions via OpenClaw **cron** — reminders, recurring messages,
+emails, and similar. **WhatsApp** is handled only by the **whatsapp** skill (`send-whatsapp.sh`).
 
 ## When to Use
 
@@ -14,13 +14,15 @@ Use this skill when:
 - User wants something sent or done at a future time: "in 5 minutes", "tomorrow at 9am"
 - User wants a recurring action: "every morning", "every Monday"
 - User says "remind me", "notify me", "ping me", "schedule"
-- User wants a message sent via any channel at a specific time
-- Any request involving future or recurring execution
+- User wants a message sent via **Telegram, email, or other non-WhatsApp channels** at a specific time
+- Any request involving future or recurring execution **that uses OpenClaw `cron.add`** as above
+
+**WhatsApp** (remind on WA, send via WhatsApp at a time): use the **`whatsapp`** skill — outbound messages are sent only via `tools/whatsapp_client/send-whatsapp.sh`; do **not** build OpenClaw cron jobs here for WhatsApp.
 
 ## Workflow
 
 1. **Parse**: Extract from the user's request:
-   - What action to perform (send Telegram, send email, send WhatsApp, etc.)
+   - What action to perform (send Telegram, send email, etc. — if WhatsApp, stop and use the **whatsapp** skill)
    - When to execute (relative: "in 10 minutes"; absolute: "tomorrow at 10am"; recurring: "every day at 7am")
    - Any relevant details (message text, recipient, channel)
 
@@ -31,9 +33,9 @@ Use this skill when:
 
    | Required | Example of missing | What to ask |
    |---|---|---|
-   | **Channel** (Telegram / WhatsApp / email / other) | "send me a message" | "Via which channel — Telegram, WhatsApp, or email?" |
+   | **Channel** (Telegram / email / other — not WhatsApp here) | "send me a message" | "Via which channel — Telegram or email?" (if they want WhatsApp, use the **whatsapp** skill) |
    | **Message content** | "remind me at 9am" | "What should the message say?" |
-   | **Timing** | "send me a WhatsApp" | "When should I send it?" |
+   | **Timing** | "remind me" (no when) | "When should I send it?" |
 
    **"send me a message in 2 seconds"** → channel missing → ask, stop, wait. Do not schedule.
    **"remind me tomorrow"** → channel + content missing → ask both, stop, wait.
@@ -49,10 +51,9 @@ Use this skill when:
 
    **Cross-channel rule:** The main session is bound to the channel you're chatting on (e.g.
    Telegram). If the user asks to send a message via a **different** channel, `sessionTarget: "main"`
-   will fail with "Cross-context messaging denied". Use `sessionTarget: "isolated"` for those cases.
-
-   **WhatsApp always uses `sessionTarget: "isolated"` regardless of current channel** — see the
-   **WhatsApp Rule** section below. Never use `sessionTarget: "main"` for WhatsApp.
+   will fail with "Cross-context messaging denied". Use `sessionTarget: "isolated"` for those cases
+   (for non-WhatsApp tasks). **WhatsApp** is handled only via the **whatsapp** skill and
+   `send-whatsapp.sh`, not via this notify/cron JSON path.
 
 4. **Validate**: Run `node skills/notify/scripts/validate.js '<job-json>'` to check the structure
 
@@ -93,13 +94,6 @@ set and the job silently never fires). LLM inference + tool call round-trip typi
 - User says "in 10 seconds" → schedule cron for **15 seconds** from now and tell the user
 - User says "in 15+ seconds" → use as-is (but never less than 15s)
 
-**For WhatsApp (two-stage):** The cron `schedule.at` is always **now + 15s** regardless of the
-user's requested time. The actual delivery time goes in the `--at` argument of `schedule-send.sh`.
-Even if the user says "in 5 minutes", stage 1 still fires in 15s — it just schedules the systemd
-timer for 5 minutes from the original request time.
-
-Always tell the user the actual scheduled delivery time, not the cron fire time.
-
 ## payload.text — Critical Rule
 
 **The `payload.text` must be a self-contained action command.**
@@ -110,7 +104,7 @@ this text available — include everything needed to execute the action without 
 The text should start with `ACTION:` for things you need to execute, or be a plain description
 of what to do. Include:
 - The action (send message, send email, etc.)
-- The channel / tool (Telegram, WhatsApp, email, ...)
+- The channel / tool (Telegram, email, …)
 - The recipient (name, address, phone — whatever the tool needs)
 - The exact content to deliver
 
@@ -120,100 +114,15 @@ of what to do. Include:
 
 Never use vague text like `"Time is up!"` — the agent won't know what to do.
 
-**WhatsApp notifications do NOT use `payload.text` / `systemEvent`.** They always use `payload.kind: "agentTurn"` with `sessionTarget: "isolated"`. See the **WhatsApp Rule** section below.
+Do **not** put WhatsApp sends in `payload.text` for this skill — use the **whatsapp** skill and `send-whatsapp.sh` instead.
 
-## WhatsApp Rule — Two-Stage Scheduling via schedule-send.sh
+## WhatsApp — use the `whatsapp` skill
 
-The native OpenClaw WhatsApp channel is **unreliable for scheduled/cron delivery** (the watchdog disconnects the listener between messages, and there are no retries as of OpenClaw 2026.3.12). **Never use the message tool for scheduled WhatsApp notifications.**
+Outbound WhatsApp is **only** sent via:
 
-Instead, use a **two-stage approach** that eliminates the LLM loop at delivery time:
+`/home/dev/proj/ai-knowhow/tools/whatsapp_client/send-whatsapp.sh`
 
-1. **Stage 1 (OpenClaw cron):** Fires ASAP (15s from now) → isolated agent runs `schedule-send.sh`
-2. **Stage 2 (systemd timer):** `schedule-send.sh` creates a transient systemd timer that fires
-   `send-safe.sh` at the exact target time — no LLM involved at delivery.
-
-If the target time has already passed by the time stage 1 fires (e.g. user said "in 10 seconds"
-but LLM inference took 15s), the systemd timer fires **immediately** — delivery is late but
-**guaranteed**.
-
-### Required structure for ALL WhatsApp notifications
-
-```json
-{
-  "name": "descriptive name",
-  "schedule": { "kind": "at", "at": "<15 seconds from now — ISO timestamp>" },
-  "deleteAfterRun": true,
-  "payload": {
-    "kind": "agentTurn",
-    "message": "Run this exact bash command: /home/dev/proj/ai-knowhow/openclaw/mele/user.openclaw/examples/send_whatsapp/schedule-send.sh --at TARGET_ISO_TIMESTAMP --to +491777960262 \"MESSAGE_TEXT_HERE\""
-  },
-  "sessionTarget": "isolated"
-}
-```
-
-**Critical:** The `schedule.at` is always **15 seconds from now** (fires ASAP to launch the
-scheduler). The **actual delivery time** goes in the `--at` argument of `schedule-send.sh`.
-
-**Rules — no exceptions:**
-
-| Rule | Value |
-|---|---|
-| `sessionTarget` | **always `"isolated"`** — never `"main"` |
-| `payload.kind` | **always `"agentTurn"`** — never `"systemEvent"` |
-| `schedule.at` | **always "now + 15s"** — this is when stage 1 fires, NOT the delivery time |
-| `--at` in command | The **actual target delivery time** as ISO 8601 or epoch seconds |
-| `payload.message` | Must contain the **exact bash command** with `schedule-send.sh` |
-| Recipient | Replace `+491777960262` with the actual number if different |
-| Message text | Replace `MESSAGE_TEXT_HERE` with the actual text; escape any `"` inside as `\"` |
-
-The isolated agent receives the `message` and **runs it as a bash command — no reasoning, no
-tool selection, just execute**. This is intentional and makes it work even with weak LLM models.
-
-### How it works
-
-```
-User: "send WhatsApp in 5 minutes: Hallo"
-  → cron.add: fires in 15s (stage 1)
-    → isolated agent runs: schedule-send.sh --at <now+5min ISO> --to +49... "Hallo"
-      → systemd-run --on-active=285s send-safe.sh --to +49... "Hallo"
-        → [5 min later] send.ts sends via Baileys — no LLM involved
-```
-
-`schedule-send.sh` computes the delay from now to the `--at` target and creates a `systemd-run
---user --on-active=<delay>s` timer. If the target is in the past, delay is 0 (fires immediately).
-
-### Why this two-stage approach?
-
-The old approach had the openclaw cron fire an `agentTurn` at the target time, which then called
-`send-safe.sh`. This meant an LLM had to spin up at delivery time just to run one bash command —
-adding 5-15s latency, wasting API tokens, and depending on exec allowlists and LLM compliance.
-
-The two-stage approach:
-- **No LLM at delivery time** — systemd fires the script directly
-- **No exec allowlist dependency at delivery** — systemd owns the process
-- **Guaranteed delivery** — even if stage 1 is late, the message still fires (immediately if past)
-- **Sub-second precision** — `--on-active` uses monotonic timers, not minute-resolution calendars
-
-### Why `send-safe.sh` and not `send.ts` directly?
-
-`send-safe.sh` launches `send.ts` via `systemd-run --user` in a **transient unit with
-`OPENCLAW_SYSTEMD_UNIT=` (empty)** so `send.ts` does **not** stop the gateway. This prevents the
-gateway from being killed before persisting job completion.
-
-### Exec allowlist (required for stage 1)
-
-The stage-1 cron agent runs `schedule-send.sh` via the exec tool. Add to the allowlist:
-
-- **File:** `~/.openclaw/exec-approvals.json`
-- **Per-agent allowlist:** Under `agents.wolfgang.allowlist` add entries for:
-  - `/home/dev/proj/ai-knowhow/openclaw/mele/user.openclaw/examples/send_whatsapp/schedule-send.sh`
-  - `/usr/bin/bash` (or `/bin/bash`) so the shell that runs the script is allowed
-
-### If WhatsApp cron keeps firing (loop)
-
-If a job is stuck (enabled, `runningAtMs` set but no `lastStatus`), disable it:
-`openclaw cron disable <jobId>` or set `enabled: false` in `mele/user.openclaw/cron/jobs.json`
-and restart the gateway.
+See **`skills/whatsapp/SKILL.md`** for immediate sends and OS-level scheduling (`systemd-run`, crontab, etc.). Do not add WhatsApp jobs through `cron.add` in this notify workflow.
 
 ## Job JSON Structure
 
@@ -262,33 +171,5 @@ See `references/cron-patterns.md` for all schedule types and examples.
   "schedule": { "kind": "at", "at": "<tomorrow 10:00+01:00>" },
   "payload": { "kind": "systemEvent", "text": "ACTION: Send a Telegram message to Stefan: Good morning! This is your scheduled message." },
   "sessionTarget": "main"
-}
-```
-
-**"Send me a WhatsApp message at 21:55"** (works regardless of which channel you're chatting on)
-```json
-{
-  "name": "WhatsApp 21:55",
-  "schedule": { "kind": "at", "at": "<now + 15s>" },
-  "deleteAfterRun": true,
-  "payload": {
-    "kind": "agentTurn",
-    "message": "Run this exact bash command: /home/dev/proj/ai-knowhow/openclaw/mele/user.openclaw/examples/send_whatsapp/schedule-send.sh --at <today 21:55+01:00 as ISO 8601> --to +491777960262 \"<the message content>\""
-  },
-  "sessionTarget": "isolated"
-}
-```
-
-**"Send me a WhatsApp in 30 seconds: Hallo"** (short delay — stage 1 fires ASAP, stage 2 may fire immediately if target passed)
-```json
-{
-  "name": "WhatsApp in 30s",
-  "schedule": { "kind": "at", "at": "<now + 15s>" },
-  "deleteAfterRun": true,
-  "payload": {
-    "kind": "agentTurn",
-    "message": "Run this exact bash command: /home/dev/proj/ai-knowhow/openclaw/mele/user.openclaw/examples/send_whatsapp/schedule-send.sh --at <now+30s as ISO 8601> --to +491777960262 \"Hallo\""
-  },
-  "sessionTarget": "isolated"
 }
 ```

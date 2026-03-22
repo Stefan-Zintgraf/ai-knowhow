@@ -36,6 +36,12 @@ node index.js
 
 Scan the QR code with WhatsApp on your phone (Linked Devices → Link a Device). Session data is saved in `auth_info_sender/` for subsequent starts.
 
+### Service mode (`--server`)
+
+For systemd or other non-interactive runs, use **`node index.js --server`** (or set **`WHATSAPP_SERVICE_MODE=1`**; systemd often sets **`INVOCATION_ID`**, which enables the same behavior). In this mode the process **exits with code 2** if pairing is still required, instead of printing a QR code to the log.
+
+**Pair first:** run `node index.js` **without** `--server` until the device is linked and session files exist under `AUTH_FOLDER`, then run under the service with `--server`. If the unit keeps restarting, pair interactively or temporarily remove `--server` from `ExecStart` until pairing succeeds.
+
 ## Running as a systemd Service (Linux)
 
 ```bash

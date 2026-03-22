@@ -18,10 +18,21 @@ const { version: appVersion } = require('./package.json');
 function parseCliArgs(argv) {
   let verbose = false;
   let help = false;
+  let server = false;
+  /** If true, do not delete auth folder on remote logout (default: clear for re-pair). */
+  let keepAuth = false;
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === '-h' || a === '--help') {
       help = true;
+      continue;
+    }
+    if (a === '-keep-auth' || a === '--keep-auth') {
+      keepAuth = true;
+      continue;
+    }
+    if (a === '-server' || a === '--server') {
+      server = true;
       continue;
     }
     if (a === '-v' || a === '--verbose') {
@@ -42,7 +53,7 @@ function parseCliArgs(argv) {
       continue;
     }
   }
-  return { verbose, help };
+  return { verbose, help, server, keepAuth };
 }
 
 function printHelp() {
@@ -55,6 +66,12 @@ Options:
   -v, --verbose       Print all log lines to stdout (same as -v 1).
   -v 1                Same as --verbose.
   --verbose=1         Same as --verbose.
+  -server, --server   Service / non-interactive mode: exit with an error if WhatsApp
+                      pairing is required (QR), instead of printing a QR to the log.
+                      Also enabled by env WHATSAPP_SERVICE_MODE=1 or systemd INVOCATION_ID.
+  -keep-auth, --keep-auth
+                      On remote logout, keep the auth folder (default: clear it so you
+                      can re-pair without deleting files manually).
   -h, --help          Show this help.
 
 Without -v, only essential lines are printed to stdout (errors, startup, shutdown);
@@ -64,6 +81,7 @@ Examples:
   node index.js
   node index.js -v
   node index.js --verbose
+  node index.js --server
 `);
 }
 
@@ -73,6 +91,12 @@ if (cli.help) {
   process.exit(0);
 }
 
+/** Non-interactive: no QR in stdout/journal; exit if pairing is needed. */
+const serviceMode =
+  cli.server ||
+  process.env.WHATSAPP_SERVICE_MODE === '1' ||
+  Boolean(process.env.INVOCATION_ID);
+
 const config = loadConfig();
 const { log, runHousekeeping } = createLogger(config, { verbose: cli.verbose });
 const rateLimiter = createRateLimiter(config);
@@ -81,6 +105,9 @@ let sock = null;
 let connectionState = null;
 let consecutiveFailures = 0;
 let server = null;
+let httpServerStarted = false;
+/** Set after `app` exists; `connectToWhatsApp` may call this on `open` in service mode. */
+let startHttpServerOnce = () => {};
 let isShuttingDown = false;
 /** One-shot: clear disk auth and reconnect so a new QR can be scanned (handles stale creds after 405). */
 let clearedAuthAfter405 = false;
@@ -139,6 +166,14 @@ async function connectToWhatsApp() {
     const { connection, lastDisconnect, qr } = update;
 
     if (qr) {
+      if (serviceMode) {
+        log(
+          'FATAL',
+          null,
+          'Pairing required but service/non-interactive mode is active. Run `node index.js` without --server (or unset WHATSAPP_SERVICE_MODE) to scan the QR code, then restart with --server.',
+        );
+        process.exit(2);
+      }
       log('STARTUP', null, 'Scan the QR code below with WhatsApp to pair:');
       qrcode.generate(qr, { small: true });
     }
@@ -154,7 +189,31 @@ async function connectToWhatsApp() {
       const statusCode = lastDisconnect?.error?.output?.statusCode;
 
       if (statusCode === DisconnectReason.loggedOut) {
-        log('FATAL', null, 'Session logged out remotely. Delete auth folder and re-pair.');
+        if (cli.keepAuth) {
+          log(
+            'FATAL',
+            null,
+            'Session logged out remotely. Delete auth folder and re-pair (or omit -keep-auth to clear automatically).',
+          );
+          return;
+        }
+        log(
+          'RECONNECT',
+          null,
+          'Session logged out remotely. Clearing stored auth and reconnecting — scan the new QR if shown.',
+        );
+        try {
+          sock?.end?.();
+        } catch (_) {}
+        sock = null;
+        connectionState = null;
+        consecutiveFailures = 0;
+        clearAuthFolder();
+        setImmediate(() => {
+          connectToWhatsApp().catch((err) => {
+            log('ERROR', null, `Reconnect after remote logout auth clear failed: ${err.message}`);
+          });
+        });
         return;
       }
 
@@ -219,6 +278,9 @@ async function connectToWhatsApp() {
     if (connection === 'open') {
       consecutiveFailures = 0;
       log('STARTUP', null, 'WhatsApp connection established');
+      if (serviceMode) {
+        startHttpServerOnce();
+      }
     }
   });
 
@@ -237,17 +299,25 @@ const app = express();
 app.use(express.json({ limit: '16kb' }));
 app.use(createSendRoute(getSocket, config, log, rateLimiter));
 
+startHttpServerOnce = () => {
+  if (httpServerStarted) {
+    return;
+  }
+  httpServerStarted = true;
+  server = app.listen(config.port, '127.0.0.1', () => {
+    log('STARTUP', null, `Server listening on 127.0.0.1:${config.port}, ${config.allowedNumbers.length} allowed numbers loaded`);
+  });
+  runHousekeeping();
+  setInterval(runHousekeeping, 24 * 60 * 60 * 1000);
+};
+
 // Start
 async function main() {
   await connectToWhatsApp();
 
-  server = app.listen(config.port, '127.0.0.1', () => {
-    log('STARTUP', null, `Server listening on 127.0.0.1:${config.port}, ${config.allowedNumbers.length} allowed numbers loaded`);
-  });
-
-  // Initial housekeeping + daily interval
-  runHousekeeping();
-  setInterval(runHousekeeping, 24 * 60 * 60 * 1000);
+  if (!serviceMode) {
+    startHttpServerOnce();
+  }
 }
 
 // Graceful shutdown
