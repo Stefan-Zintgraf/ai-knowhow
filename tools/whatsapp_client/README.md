@@ -18,7 +18,14 @@ cp .env.example .env
 Generate a secure API key:
 
 ```bash
+# Linux / Git Bash / macOS
 openssl rand -hex 32
+
+# Windows PowerShell
+-join ((1..32) | ForEach-Object { '{0:x2}' -f (Get-Random -Max 256) })
+
+# Windows CMD
+powershell -command "-join ((1..32) | ForEach-Object { '{0:x2}' -f (Get-Random -Max 256) })"
 ```
 
 ## First-Time Pairing

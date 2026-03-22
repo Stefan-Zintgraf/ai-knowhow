@@ -83,6 +83,31 @@ describe('logger.js - createLogger()', () => {
     expect(fs.existsSync(logDir)).toBe(true);
   });
 
+  test('quiet mode: SENT does not write to stdout; file still updated', () => {
+    const { log } = createLogger(config);
+    log('SENT', '4915111111111', 'Hi');
+
+    expect(process.stdout.write).not.toHaveBeenCalled();
+
+    const dateStr = getTodayDateStr();
+    const logFile = path.join(tmpDir, 'logs', `wa-sender-${dateStr}.log`);
+    expect(fs.readFileSync(logFile, 'utf8')).toContain('SENT');
+  });
+
+  test('verbose mode: SENT writes to stdout', () => {
+    const { log } = createLogger(config, { verbose: true });
+    log('SENT', '4915111111111', 'Hi');
+
+    expect(process.stdout.write).toHaveBeenCalled();
+  });
+
+  test('quiet mode: STARTUP still writes to stdout', () => {
+    const { log } = createLogger(config);
+    log('STARTUP', null, 'ready');
+
+    expect(process.stdout.write).toHaveBeenCalled();
+  });
+
   test('housekeeping deletes old log files and keeps recent ones', () => {
     const logDir = path.join(tmpDir, 'logs');
     fs.mkdirSync(logDir, { recursive: true });

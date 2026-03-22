@@ -1,7 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 
-function createLogger(config) {
+/** Events always echoed to stdout when verbose is off (full audit still goes to the log file). */
+const STDOUT_QUIET_ALLOW = new Set(['FATAL', 'ERROR', 'SHUTDOWN', 'STARTUP']);
+
+function createLogger(config, options = {}) {
+  const verboseStdout = Boolean(options.verbose);
   const logBase = config.logFile;
   const logDir = path.dirname(logBase);
   const logName = path.basename(logBase);
@@ -47,7 +51,9 @@ function createLogger(config) {
     const filePath = getLogFilePath();
     fs.appendFileSync(filePath, line);
 
-    process.stdout.write(line);
+    if (verboseStdout || STDOUT_QUIET_ALLOW.has(event)) {
+      process.stdout.write(line);
+    }
   }
 
   function runHousekeeping() {

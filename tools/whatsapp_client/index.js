@@ -3,12 +3,78 @@ const { loadConfig } = require('./config');
 const { createLogger } = require('./logger');
 const { createRateLimiter } = require('./rate-limiter');
 const { createSendRoute } = require('./routes/send');
-const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@whiskeysockets/baileys');
+const {
+  default: makeWASocket,
+  useMultiFileAuthState,
+  DisconnectReason,
+  fetchLatestBaileysVersion,
+  makeCacheableSignalKeyStore,
+} = require('@whiskeysockets/baileys');
 const express = require('express');
 const qrcode = require('qrcode-terminal');
 
+const { version: appVersion } = require('./package.json');
+
+function parseCliArgs(argv) {
+  let verbose = false;
+  let help = false;
+  for (let i = 0; i < argv.length; i++) {
+    const a = argv[i];
+    if (a === '-h' || a === '--help') {
+      help = true;
+      continue;
+    }
+    if (a === '-v' || a === '--verbose') {
+      verbose = true;
+      const next = argv[i + 1];
+      if (next === '1' || next === '2' || next === '3') {
+        i += 1;
+      }
+      continue;
+    }
+    if (a.startsWith('--verbose=')) {
+      const v = a.slice('--verbose='.length).trim();
+      verbose = v === '' || v === '1' || v === 'true' || v === 'yes';
+      continue;
+    }
+    if (/^-v\d+$/.test(a)) {
+      verbose = true;
+      continue;
+    }
+  }
+  return { verbose, help };
+}
+
+function printHelp() {
+  console.log(`whatsapp_client — HTTP API for sending WhatsApp messages
+
+Usage:
+  node index.js [options]
+
+Options:
+  -v, --verbose       Print all log lines to stdout (same as -v 1).
+  -v 1                Same as --verbose.
+  --verbose=1         Same as --verbose.
+  -h, --help          Show this help.
+
+Without -v, only essential lines are printed to stdout (errors, startup, shutdown);
+routine traffic (SENT, RECONNECT, housekeeping, etc.) is still written to the log file.
+
+Examples:
+  node index.js
+  node index.js -v
+  node index.js --verbose
+`);
+}
+
+const cli = parseCliArgs(process.argv.slice(2));
+if (cli.help) {
+  printHelp();
+  process.exit(0);
+}
+
 const config = loadConfig();
-const { log, runHousekeeping } = createLogger(config);
+const { log, runHousekeeping } = createLogger(config, { verbose: cli.verbose });
 const rateLimiter = createRateLimiter(config);
 
 let sock = null;
@@ -16,12 +82,23 @@ let connectionState = null;
 let consecutiveFailures = 0;
 let server = null;
 let isShuttingDown = false;
+/** One-shot: clear disk auth and reconnect so a new QR can be scanned (handles stale creds after 405). */
+let clearedAuthAfter405 = false;
 
 function getSocket() {
   if (connectionState === 'open' && sock) {
     return sock;
   }
   return null;
+}
+
+function clearAuthFolder() {
+  try {
+    fs.rmSync(config.authFolder, { recursive: true, force: true });
+  } catch (_) {
+    // ignore
+  }
+  fs.mkdirSync(config.authFolder, { recursive: true });
 }
 
 async function connectToWhatsApp() {
@@ -38,14 +115,24 @@ async function connectToWhatsApp() {
     child() { return this; },
   };
 
+  const { version } = await fetchLatestBaileysVersion();
+
   // Clean up old socket event listeners before creating new one (F2)
   if (sock) {
     try { sock.ev.removeAllListeners(); } catch (_) {}
   }
 
   sock = makeWASocket({
-    auth: state,
+    auth: {
+      creds: state.creds,
+      keys: makeCacheableSignalKeyStore(state.keys, noopLogger),
+    },
+    version,
     logger: noopLogger,
+    printQRInTerminal: false,
+    browser: ['whatsapp_client', 'http-api', appVersion],
+    syncFullHistory: false,
+    markOnlineOnConnect: false,
   });
 
   sock.ev.on('connection.update', (update) => {
@@ -75,7 +162,31 @@ async function connectToWhatsApp() {
       // indicating the session credentials were rejected (observed in production)
       if (statusCode === 405) {
         const location = lastDisconnect?.error?.data?.location || 'unknown';
-        log('FATAL', null, `Session rejected by WhatsApp (code 405, location: ${location}). Delete auth folder and re-pair. If this persists after re-pairing, the cause may be IP rate-limiting or account restrictions.`);
+        if (!clearedAuthAfter405) {
+          clearedAuthAfter405 = true;
+          log(
+            'RECONNECT',
+            null,
+            `Session rejected (405, location: ${location}). Clearing stored auth once and reconnecting — scan the new QR if shown. If this repeats, check IP rate limits or account restrictions.`,
+          );
+          try {
+            sock?.end?.();
+          } catch (_) {}
+          sock = null;
+          connectionState = null;
+          clearAuthFolder();
+          setImmediate(() => {
+            connectToWhatsApp().catch((err) => {
+              log('ERROR', null, `Reconnect after 405 auth clear failed: ${err.message}`);
+            });
+          });
+          return;
+        }
+        log(
+          'FATAL',
+          null,
+          `Session rejected by WhatsApp (code 405, location: ${location}) after auth reset. Delete auth folder manually and re-pair. If this persists, the cause may be IP rate-limiting or account restrictions.`,
+        );
         return;
       }
 
