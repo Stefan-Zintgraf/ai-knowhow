@@ -51,7 +51,7 @@ systemctl --user start wa-sender
 ### Send a Message
 
 ```bash
-curl -X POST http://127.0.0.1:3000/send \
+curl -X POST http://127.0.0.1:3001/send \
   -H "Content-Type: application/json" \
   -H "x-api-key: YOUR_API_KEY" \
   -d '{"number": "4915111111111", "message": "Hello from the API!"}'

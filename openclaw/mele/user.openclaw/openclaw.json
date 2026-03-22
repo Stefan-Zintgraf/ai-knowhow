@@ -489,7 +489,7 @@
         },
         "default": {
           "dmPolicy": "allowlist",
-          "botToken": "8419078303:AAEWLdG24Glum3US-iuP9yoo4OqBLw5yvNs",
+          "botToken": "${TELEGRAM_MELE_MAIN_TOKEN}",
           "allowFrom": [
             "6672375440"
           ],
