@@ -15,6 +15,8 @@ Do not use other send scripts (for example Baileys helpers elsewhere in the tree
 
 ## When to Use
 
+**Telegram → WhatsApp:** If the user sends from Telegram (or any channel) and asks to be notified or sent a message via WhatsApp, use **this** skill. Run `exec` with `systemd-run` + `send-whatsapp.sh` or direct `send-whatsapp.sh` — **never** `cron.add` with `agentTurn`.
+
 Use this skill when the user clearly wants **WhatsApp** as the channel, for example:
 
 - "Remind me on WhatsApp in 10 minutes …"

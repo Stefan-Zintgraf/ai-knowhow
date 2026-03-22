@@ -271,6 +271,8 @@ This is how main-session scheduled notifications work: Cron triggers → system 
 
 Follow **`skills/whatsapp/SKILL.md`** — use `exec` / `systemd-run` / crontab as described there. Do **not** send programmatic WhatsApp using other shell scripts in this repo, and do **not** rely on the OpenClaw **message** tool as the primary path for outbound WhatsApp per this workspace policy.
 
+**From Telegram (or other channel) asking for WhatsApp:** Use the **whatsapp** skill and run `send-whatsapp.sh` via `exec` (immediate) or `systemd-run --user --on-active=...` (delayed). Do **not** use `cron.add` — it fails for WhatsApp delivery.
+
 **Cross-channel:** If you cannot act from the current session (e.g. cross-context messaging denied), use the **whatsapp** skill (direct script + OS scheduler), not ad-hoc workarounds with other send scripts.
 
 ## Make It Yours
