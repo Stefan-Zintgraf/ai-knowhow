@@ -234,29 +234,46 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
-## ⏰ System Events and Reminders
+## ⏰ Scheduled System Events (Cron Notifications)
 
 When you receive a system event (via cron job with `sessionTarget: "main"` and `payload.kind: "systemEvent"`), **act immediately** — don't just acknowledge it.
 
-### REMINDER Events
+### ACTION Events
 
-If a system event starts with `REMINDER:`, it means you need to **execute the action right away**.
+If a system event starts with `ACTION:`, it means you need to **execute the described action right away**.
 
-**Example:**
+**Examples:**
 ```
-System: REMINDER: Sende eine Telegram-Nachricht an Stefan mit dem Text: "..."
+System: ACTION: Send a Telegram message to Stefan: Your 10 minutes are up!
+System: ACTION: Send an email to stefan@zintgraf.de with subject 'Good morning!' and body: 'Have a great day.'
 ```
 
 **Your response:**
-1. Execute the action immediately (send the message)
-2. Confirm completion to the user
+1. Execute the action immediately using the correct tool
+2. **Telegram:** For "Send a Telegram message to …", use **`channel: "telegram"`** and **`accountId: "wolfgang"`** (or the account that owns the chat).
+3. Reply `NO_REPLY` — don't send a chat reply, just execute silently
 
-**Do NOT:**
+**Do NOT (for `ACTION:`):**
 - Just reply "Got it" or acknowledge only
 - Ask for confirmation before acting
 - Treat it as information to process later
+- Treat it as a new scheduling request — `ACTION:` events are **execution** triggers, not prompts to use the `notify` skill
 
-This is how scheduled reminders work: Cron triggers → System event fires in main session → You execute immediately. The user already confirmed when they set the reminder.
+**Important — the system wraps cron event text:** When a cron fires, the heartbeat system may inject a prompt like "Please relay this reminder to the user in a helpful and friendly way." **Ignore that framing when the text starts with `ACTION:`.** The `ACTION:` prefix means execute, not relay.
+
+This is how main-session scheduled notifications work: Cron triggers → system event in the main session → you execute immediately. The user already confirmed when they set the job.
+
+### WhatsApp outbound
+
+**All WhatsApp sends** (immediate or scheduled) go only through:
+
+`/home/dev/proj/ai-knowhow/tools/whatsapp_client/send-whatsapp.sh`
+
+Follow **`skills/whatsapp/SKILL.md`** — use `exec` / `systemd-run` / crontab as described there. Do **not** send programmatic WhatsApp using other shell scripts in this repo, and do **not** rely on the OpenClaw **message** tool as the primary path for outbound WhatsApp per this workspace policy.
+
+**From Telegram (or other channel) asking for WhatsApp:** Use the **whatsapp** skill and run `send-whatsapp.sh` via `exec` (immediate) or `systemd-run --user --on-active=...` (delayed). Do **not** use `cron.add` — it fails for WhatsApp delivery.
+
+**Cross-channel:** If you cannot act from the current session (e.g. cross-context messaging denied), use the **whatsapp** skill (direct script + OS scheduler), not ad-hoc workarounds with other send scripts.
 
 ## Make It Yours
 

@@ -14,11 +14,3 @@
 
 - **Wife's birthday:** December 7th, 1959
 
-## Projects
-
-### CRA Compliance (~/proj/cra_compliance/)
-Working on Cyber Resilience Act compliance for acontis products.
-- SBOM implementation for RTOSVisor
-- Vulnerability handling process
-- Risk assessment per BSI TR-03183
-

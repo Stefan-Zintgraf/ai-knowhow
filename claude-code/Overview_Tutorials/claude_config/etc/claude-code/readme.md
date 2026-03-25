@@ -9,8 +9,8 @@ IMPORTANT: do never copy readme.md to /etc/claude-code!
 
 **Note:** Just in case you had made changes here, alwasy copy the files to `/etc/claude-code` (do not copy readme.md!):
 ```bash
-sudo cp /home/dev/proj/claude.code/Overview_Tutorials/claude_config/etc/claude-code/*.json /etc/claude-code/
-sudo cp /home/dev/proj/claude.code/Overview_Tutorials/claude_config/etc/claude-code/*.sh /etc/claude-code/
+sudo cp /home/dev/proj/ai-knowhow/claude-code/Overview_Tutorials/claude_config/etc/claude-code/*.json /etc/claude-code/
+sudo cp /home/dev/proj/ai-knowhow/claude-code/Overview_Tutorials/claude_config/etc/claude-code/*.sh /etc/claude-code/
 ```
 
 ## Files

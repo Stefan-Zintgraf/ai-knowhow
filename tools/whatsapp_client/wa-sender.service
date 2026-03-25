@@ -1,0 +1,15 @@
+[Unit]
+Description=WhatsApp Baileys Sender Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/node index.js
+WorkingDirectory=%h/wa-sender
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

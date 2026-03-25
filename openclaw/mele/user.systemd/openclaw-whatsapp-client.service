@@ -1,0 +1,5 @@
+# openclaw-whatsapp-client.service — repository stub (not a runnable unit file).
+#
+# The real user unit is created automatically by whatsapp-client.sh --install,
+# with resolved WorkingDirectory, node path, and EnvironmentFile. It is written to:
+#   ${XDG_CONFIG_HOME:-$HOME/.config}/systemd/user/openclaw-whatsapp-client.service

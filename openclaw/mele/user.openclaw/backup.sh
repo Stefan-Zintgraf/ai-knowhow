@@ -15,16 +15,27 @@
 # Full backup (-full): what is backed up
 # -----------------------------------------------------------------------------
 # ~/.openclaw/          OpenClaw config, hooks, sessions (last 3/agent), workspace, workspace-wolfgang
-# ~/.config/systemd/    User systemd units (gateway, GOG_KEYRING_PASSWORD, etc.)
-# ~/.config/gogcli/     Google CLI (gog) config, credentials, keyring, gmail-watch
-# ~/.config/gcloud/     Google Cloud SDK auth (excl. logs)
+# ~/.config/openclaw/  OpenClaw CLI state-dir.sh and related config (sources OPENCLAW_STATE_DIR)
+# ~/.config/systemd/   User systemd units (gateway, gateway-prep, GOG_KEYRING_PASSWORD, etc.)
+# ~/.config/gogcli/    Google CLI (gog) config, credentials, keyring, gmail-watch
+# ~/.config/gcloud/    Google Cloud SDK auth (excl. logs)
+# mele/user.webclaw/   WebClaw app (excl. node_modules, .git, dist, .turbo)
+# mele/user.openclaw/examples/  Gateway client examples (excl. .venv, __pycache__)
+# Shell/login files    ~/.bashrc, ~/.profile, ~/.bash_profile, ~/.zshrc, ~/.zshenv, ~/.zprofile
+#                      (only if present; may contain OPENCLAW_STATE_DIR and completion sourcing)
 #
 # -----------------------------------------------------------------------------
 # Credentials-only (-cred or default): what is backed up
 # -----------------------------------------------------------------------------
 # $OPENCLAW_STATE_DIR/credentials/, .env, identity/, devices/, openclaw.json,
 # exec-approvals.json, cron/, agents/, workspace-wolfgang/client_secret_gmail.json;
+# WebClaw: mele/user.webclaw/apps/webclaw/.env.local (CLAWDBOT_GATEWAY_*),
+#          mele/user.webclaw/apps/webclaw/.device-keys.json (ed25519 device identity);
+# Gateway client: mele/user.openclaw/examples/gateway_clients/claw_client/.env (OPENCLAW_GATEWAY_TOKEN);
+#                 mele/user.openclaw/examples/send_whatsapp/.env (WHATSAPP_RECIPIENT, OPENCLAW_SYSTEMD_UNIT, etc.);
 # ~/.config/openclaw/, systemd/, gogcli/, gcloud/
+# Shell/login files    ~/.bashrc, ~/.profile, ~/.bash_profile, ~/.zshrc, ~/.zshenv, ~/.zprofile
+#                      (only if present; may contain OPENCLAW_STATE_DIR and completion sourcing)
 # (Default OPENCLAW_STATE_DIR: ~/.openclaw)
 #
 # -----------------------------------------------------------------------------
@@ -100,11 +111,15 @@ else
 fi
 
 if [[ "$FULL" -eq 1 ]]; then
-  # Full backup: .openclaw + .config/systemd, gogcli, gcloud
+  # Full backup: .openclaw + .config/openclaw, systemd, gogcli, gcloud + shell/login files
   ITEMS=(".openclaw")
+  [ -d "$HOME/.config/openclaw" ] && ITEMS+=(".config/openclaw")
   [ -d "$HOME/.config/systemd" ]  && ITEMS+=(".config/systemd")
   [ -d "$HOME/.config/gogcli" ]   && ITEMS+=(".config/gogcli")
   [ -d "$HOME/.config/gcloud" ]   && ITEMS+=(".config/gcloud")
+  for f in .bashrc .profile .bash_profile .zshrc .zshenv .zprofile; do
+    [ -f "$HOME/$f" ] && ITEMS+=("$f")
+  done
 
   (cd "$HOME" && zip -q -r -P "$PASSWORD" "$OUT" "${ITEMS[@]}" \
     -x ".config/gcloud/logs/*" \
@@ -126,6 +141,36 @@ if [[ "$FULL" -eq 1 ]]; then
       (cd "$HOME" && zip -q -P "$PASSWORD" "$OUT" "${f#$HOME/}")
     done
   done
+
+  # WebClaw installation (mele/user.webclaw, relative to script's parent mele/)
+  MELE_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+  if [[ -d "${MELE_DIR}/user.webclaw" ]]; then
+    (cd "$MELE_DIR" && zip -q -r -P "$PASSWORD" "$OUT" user.webclaw \
+      -x "user.webclaw/node_modules/*" \
+      -x "user.webclaw/*/node_modules/*" \
+      -x "user.webclaw/.git/*" \
+      -x "user.webclaw/*/dist/*" \
+      -x "user.webclaw/.turbo/*" \
+      -x "user.webclaw/*/.turbo/*" \
+      -x "*deleteme*" \
+      -x "*delete.me*" \
+      -x "*.full.zip" \
+      -x "*.cred.zip")
+  fi
+
+  # examples/ (gateway clients, etc.) — relative to user.openclaw (SCRIPT_DIR)
+  if [[ -d "$SCRIPT_DIR/examples" ]]; then
+    (cd "$SCRIPT_DIR" && zip -q -r -P "$PASSWORD" "$OUT" examples \
+      -x "examples/*/node_modules/*" \
+      -x "examples/*/.venv/*" \
+      -x "examples/*/venv/*" \
+      -x "examples*/__pycache__/*" \
+      -x "examples*/*.pyc" \
+      -x "*deleteme*" \
+      -x "*delete.me*" \
+      -x "*.full.zip" \
+      -x "*.cred.zip")
+  fi
 else
   # Credentials-only: same set as former backup_cred.sh
   STATE_DIR="${OPENCLAW_STATE_DIR:-$HOME/.openclaw}"
@@ -151,6 +196,9 @@ else
   [[ -d "$HOME/.config/systemd" ]]    && ITEMS+=(".config/systemd")
   [[ -d "$HOME/.config/gogcli" ]]     && ITEMS+=(".config/gogcli")
   [[ -d "$HOME/.config/gcloud" ]]     && ITEMS+=(".config/gcloud")
+  for f in .bashrc .profile .bash_profile .zshrc .zshenv .zprofile; do
+    [[ -f "$HOME/$f" ]] && ITEMS+=("$f")
+  done
 
   [[ ${#ITEMS[@]} -eq 0 ]] && { echo "No credential paths found. Aborting." >&2; exit 1; }
 
@@ -165,6 +213,29 @@ else
     -x ".config/gcloud/logs/*" \
     -x "*/venv/*" \
     -x "*/.venv/*")
+
+  # WebClaw credentials (mele/user.webclaw/apps/webclaw/.env.local, .device-keys.json)
+  MELE_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+  WEBCLAW_ENV="${MELE_DIR}/user.webclaw/apps/webclaw/.env.local"
+  if [[ -f "$WEBCLAW_ENV" ]]; then
+    (cd "$MELE_DIR" && zip -q -r -P "$PASSWORD" "$OUT" user.webclaw/apps/webclaw/.env.local)
+  fi
+  WEBCLAW_KEYS="${MELE_DIR}/user.webclaw/apps/webclaw/.device-keys.json"
+  if [[ -f "$WEBCLAW_KEYS" ]]; then
+    (cd "$MELE_DIR" && zip -q -r -P "$PASSWORD" "$OUT" user.webclaw/apps/webclaw/.device-keys.json)
+  fi
+
+  # Gateway client credentials (examples/gateway_clients/claw_client/.env → OPENCLAW_GATEWAY_TOKEN)
+  CLAW_CLIENT_ENV="$SCRIPT_DIR/examples/gateway_clients/claw_client/.env"
+  if [[ -f "$CLAW_CLIENT_ENV" ]]; then
+    (cd "$SCRIPT_DIR" && zip -q -P "$PASSWORD" "$OUT" examples/gateway_clients/claw_client/.env)
+  fi
+
+  # send_whatsapp credentials (examples/send_whatsapp/.env → WHATSAPP_RECIPIENT, OPENCLAW_SYSTEMD_UNIT, etc.)
+  SEND_WHATSAPP_ENV="$SCRIPT_DIR/examples/send_whatsapp/.env"
+  if [[ -f "$SEND_WHATSAPP_ENV" ]]; then
+    (cd "$SCRIPT_DIR" && zip -q -P "$PASSWORD" "$OUT" examples/send_whatsapp/.env)
+  fi
 fi
 
 unset PASSWORD PASSWORD2 2>/dev/null

@@ -1,24 +1,44 @@
     - [x] /testnode geht nicht
     - [x] Backup erweitern (kein .venv Ordner)
-    - [ ] backup_cred.sh anpassen
+    - [x] backup_cred.sh anpassen
           - user.config statt user.systemd, dort auch gogcli etc. dazu? siehe backup.sh
-    - [ ] auch backup.sh nochmal anpassen (kein ~/.openclaw mehr, env variable)
-    - [ ] /home/dev/proj/ai-knowhow/openclaw/ in repo
+    - [x] auch backup.sh nochmal anpassen (kein ~/.openclaw mehr, env variable)
+    - [x] /home/dev/proj/ai-knowhow/openclaw/ in repo
           - Credentials nicht (problem openclaw.json ist wichtig)
           - siehe ~/.openclaw/plans/env_only_credentials.md
-    - [ ] webclaw als Interface im Vergleich zu Telegram (ist WebApp)
-    - [ ] acp client: man kann cursor, claude code dranhaengen
-          - [ ] helloworld gw Client App, soll Message an Whatsapp oder email senden
-          - [ ] cursor/Claude Desktop via acp an openclaw anbinden 
-                (Mail senden, hello-node, ...)
-          - [ ] Langchain via acp an openclaw anbinden (dto. wie cursor/claude)
+    - [x] webclaw als Interface im Vergleich zu Telegram (ist WebApp)
+    - [x] openclaw_knowledgebase.md erweitern um Kapitel node und plugin und skill
+          - fuer alles sollte es ein helloworld geben 
+          - Verweis auf die Demos
+    - [x] hello-world aehnliche Variante von webclaw (Gateway Client)
+    - [x] acp client, OpenAI Chat Completions, OpenResponses
+      - [x] OpenAI Chat completions: https://openclawcn.com/en/docs/gateway/openai-http-api/
+      - [x] OpenResponses API: https://openclawcn.com/en/docs/gateway/openresponses-http-api/
+    - [ ] bmad brainstormer einbinden
+    - [ ] Kapitel 12 genau durchlesen, dann Debugging einfacher cron job 
+          - Prompt-Analyse
+          - gleichen Prompt mal in ChatGPT eingeben?
+          - Prompt-Hardening 
+          - /notify plugin fuer 100% Sicherheit (fix parametriert, wohin die Notification geht)
+    - [ ] whatsapp notification geht nicht, Prompts untersuchen
+    - [ ] Memory optimieren
+      - [ ] siehe auch openclaw, Memory + RAG Ideas in Notion
+      - [ ] https://www.perplexity.ai/search/image-jpg-KszyWexYQH6R6GMMyUteXQ
+      - [ ] Analyse agentic RAG (Prompt-Debugging), siehe Kapitel 10 am Ende
+      - [ ] https://www.reddit.com/r/openclaw/comments/1qz2d56/why_is_my_open_law_so_forgetful/
+    - [ ] Evtl. via bmad den OpenClaw Code parsen, damit Infos spaeter schneller gefunden werden
+    - [ ] Automation: https://openclawcn.com/en/docs/automation/
+    - [ ] OpenProse: https://openclawcn.com/en/docs/prose/
+    - [ ] Pi agent: 
+          - https://openclawcn.com/en/docs/pi-dev/ 
+          - https://openclawcn.com/en/docs/pi/
     - [ ] Anpassen dieser Dateien (generisch, nicht mehr nur sbom), Test mit hello-node: 
           /home/dev/.openclaw/examples/plan/
     - [ ] hello-node via slash command starten
-    - [ ] WebChat, was ist das: https://docs.openclaw.ai/web/webchat
     - [ ] hello-node mit Canvas verbinden, geht auch Eingabe dann Message an Telegram?
           im workspace-wolfgang/canvas!
     - [ ] Canvas (Agent-Web-Interface): https://github.com/openclaw/openclaw/blob/main/skills/canvas/SKILL.md 
+    - [ ] macht das Sinn, in openclaw zu integrieren https://github.com/disler/pi-vs-claude-code 
 
 
 

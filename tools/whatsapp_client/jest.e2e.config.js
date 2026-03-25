@@ -1,0 +1,6 @@
+module.exports = {
+  testMatch: [
+    '<rootDir>/tests/e2e/**/*.test.js',
+  ],
+  testTimeout: 30000,
+};

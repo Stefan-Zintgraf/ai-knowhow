@@ -27,4 +27,14 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+## Network Devices
+
+### Wake-on-LAN
+
+| Hostname | IP Address | MAC Address | Notes |
+|----------|------------|-------------|-------|
+| SZF-14 | 192.168.178.14 | 9c:6b:00:10:2d:8a | Added 2026-03-10 |
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.

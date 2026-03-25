@@ -5,11 +5,16 @@
 .obsidian
 .vs
 
+# Python
+**/__pycache__/
+
 # Never commit secrets
 **/env.txt
 **/.env
+**/.env.local
 **/client_secret_gmail.json
 **/openclaw.json.bak*
+**/.device-keys.json
 
 # OpenClaw mele: runtime, credentials, backup copies (aligned with backup.sh)
 openclaw/addgit.sh
@@ -25,6 +30,11 @@ openclaw/mele/backup.deleteme/
 **/user.openclaw/logs/
 **/user.openclaw/media/
 **/user.openclaw/memory/
+**/user.openclaw/delivery-queue/
+**/user.openclaw/telegram/command-hash-*.txt
+**/user.webclaw.old/
+# user.webclaw is part of ai-knowhow only (no nested clone)
+openclaw/mele/user.webclaw/.git/
 **/user.openclaw/exec-approvals.json
 **/user.openclaw/update-check.json
 *deleteme*

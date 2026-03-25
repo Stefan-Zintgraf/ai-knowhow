@@ -1,0 +1,15 @@
+{"sessionId": "c533e3", "timestamp": 1772206526522, "location": "run", "message": "connecting", "data": {"url": "ws://localhost:18789", "deviceId": "a60b4e7aa1f48a6631fdf39f430974833d45aeb7827e1864d6046d2e437f697b"}, "hypothesisId": "B"}
+{"sessionId": "c533e3", "timestamp": 1772206526561, "location": "GatewayClient._reader", "message": "frame", "data": {"type": "event", "event": "connect.challenge", "ok": null}, "hypothesisId": "A_D_E"}
+{"sessionId": "c533e3", "timestamp": 1772206526561, "location": "GatewayClient.connect", "message": "got challenge", "data": {"nonce": "7f47cb92-dd72-4cf1-a433-f6115f4981c2"}, "hypothesisId": "A"}
+{"sessionId": "c533e3", "timestamp": 1772206526584, "location": "GatewayClient._reader", "message": "frame", "data": {"type": "res", "event": null, "ok": true}, "hypothesisId": "A_D_E"}
+{"sessionId": "c533e3", "timestamp": 1772206526584, "location": "GatewayClient.connect", "message": "connect response", "data": {"ok": true, "error": null}, "hypothesisId": "A"}
+{"sessionId": "c533e3", "timestamp": 1772206526596, "location": "GatewayClient._reader", "message": "frame", "data": {"type": "res", "event": null, "ok": true}, "hypothesisId": "A_D_E"}
+{"sessionId": "c533e3", "timestamp": 1772206526597, "location": "GatewayClient.send", "message": "chat.send response", "data": {"ok": true, "error": null}, "hypothesisId": "C"}
+{"sessionId": "c533e3", "timestamp": 1772206527198, "location": "GatewayClient._reader", "message": "frame", "data": {"type": "event", "event": "agent", "ok": null}, "hypothesisId": "A_D_E"}
+{"sessionId": "c533e3", "timestamp": 1772206527246, "location": "GatewayClient._reader", "message": "frame", "data": {"type": "event", "event": "health", "ok": null}, "hypothesisId": "A_D_E"}
+{"sessionId": "c533e3", "timestamp": 1772206535075, "location": "GatewayClient._reader", "message": "frame", "data": {"type": "event", "event": "tick", "ok": null}, "hypothesisId": "A_D_E"}
+{"sessionId": "c533e3", "timestamp": 1772206552304, "location": "GatewayClient._reader", "message": "frame", "data": {"type": "event", "event": "agent", "ok": null}, "hypothesisId": "A_D_E"}
+{"sessionId": "c533e3", "timestamp": 1772206552306, "location": "GatewayClient._reader", "message": "frame", "data": {"type": "event", "event": "chat", "ok": null}, "hypothesisId": "A_D_E"}
+{"sessionId": "c533e3", "timestamp": 1772206552325, "location": "GatewayClient._reader", "message": "frame", "data": {"type": "event", "event": "agent", "ok": null}, "hypothesisId": "A_D_E"}
+{"sessionId": "c533e3", "timestamp": 1772206552325, "location": "GatewayClient._reader", "message": "frame", "data": {"type": "event", "event": "chat", "ok": null}, "hypothesisId": "A_D_E"}
+{"sessionId": "c533e3", "timestamp": 1772206552325, "location": "run", "message": "agent lifecycle end", "data": {"runId": "973ed6de-da7d-4862-b1a7-d34bd09d47a3"}, "hypothesisId": "E"}
