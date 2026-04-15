@@ -5,7 +5,7 @@ You are continuing work on the security risk assessment for the acontis hypervis
 1. Read these files in order:
    - `bmad/security_assessment/security_risk_assessment_plan/security_risk_assessment_plan.md` (overview — find which step is next by looking at the Status column: the first `[ ]` is your step)
    - The step file for that step (e.g. `security_risk_assessment_plan.step1.md`)
-   - `bmad/security_assessment/security_risk_assessment_strategy.md` (strategy reference)
+   - `bmad/security_assessment/security_risk_assessment_plan/security_risk_assessment_strategy.md` (strategy reference)
 2. Inspect the output directory structure under `bmad/security_assessment/` to confirm which prior steps have produced output and the workspace is ready.
 3. Implement **only** the current step. Run its gate (verify output files exist and are non-empty, check file structure). Mark `[x]` in both the step file's Status and the overview's Status table. Then **stop**.
 

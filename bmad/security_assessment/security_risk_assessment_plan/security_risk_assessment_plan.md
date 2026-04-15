@@ -13,7 +13,7 @@ Execute a comprehensive, AI-agent-driven security risk assessment of the acontis
 
 This plan is an execution contract alongside:
 
-- [Strategy](../security_risk_assessment_strategy.md) — high-level assessment strategy and rationale
+- [Strategy](security_risk_assessment_strategy.md) — high-level assessment strategy and rationale
 - [QuBA-libre Analysis](../QuBA-libre/QuBA-libre_analyzation.md) — QuBA-libre methodology reference
 
 ### Session rule
@@ -198,6 +198,6 @@ A step is complete only when:
 
 ## Related documents
 
-- [security_risk_assessment_strategy.md](../security_risk_assessment_strategy.md)
+- [security_risk_assessment_strategy.md](security_risk_assessment_strategy.md)
 - [QuBA-libre_analyzation.md](../QuBA-libre/QuBA-libre_analyzation.md)
 - [implementation_prompt.md](implementation_prompt.md)

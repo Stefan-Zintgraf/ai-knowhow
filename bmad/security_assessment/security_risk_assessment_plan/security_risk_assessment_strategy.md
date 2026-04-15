@@ -164,7 +164,7 @@ The strategy follows a two-layer architecture:
 
 The full step-by-step plan with exact agent prompts, input/output specifications, and tool configurations is in:
 
-[security_risk_assessment_plan.md](./security_risk_assessment_plan.md)
+[security_risk_assessment_plan.md](security_risk_assessment_plan.md)
 
 ---
 
