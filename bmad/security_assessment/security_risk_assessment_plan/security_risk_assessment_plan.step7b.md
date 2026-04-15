@@ -71,6 +71,7 @@ IMPORTANT: Ignore all folders named brainstormingPlatform or brainstormingPlatfo
 ```bash
 cd C:\Users\s.zintgraf.ACONTIS\PROJ
 semgrep --config=ai-knowhow/bmad/security_assessment/07_semgrep/custom_rules/ \
+  --exclude="**/brainstormingPlatform/**" --exclude="**/brainstormingPlatformPlus/**" \
   --include="*.c" --include="*.cpp" --include="*.h" --include="*.cs" --include="*.ts" \
   rtv/ \
   --json -o ai-knowhow/bmad/security_assessment/07_semgrep/raw_custom_results.json

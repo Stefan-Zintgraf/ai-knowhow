@@ -25,6 +25,10 @@ Each step is implemented in its own fresh session when doing implementation work
 
 Planning artifacts in this folder may be edited in one session; implementation still follows the session rule per step.
 
+### Shell convention
+
+The active workspace shell is Windows PowerShell. If a step file shows a POSIX-style gate snippet, execute the equivalent PowerShell checks rather than assuming `bash` is available.
+
 ---
 
 ## External Tools Used
@@ -134,7 +138,7 @@ C:\Users\s.zintgraf.ACONTIS\PROJ\ai-knowhow\bmad\security_assessment\
 |------|------|-------|------|--------|
 | 0a | [step0a](security_risk_assessment_plan.step0a.md) | BMAD `document-project` baseline for `rtv` | `_bmad-output\index.md` exists with architecture + deep-dives | [ ] |
 | 0b | [step0b](security_risk_assessment_plan.step0b.md) | Create custom BMAD security-assessment agent | `.customize.yaml` in agents config, agent compiles | [ ] |
-| 1 | [step1](security_risk_assessment_plan.step1.md) | Extract artifact registry from build scripts | All 4 output files exist, non-empty, artifact counts documented | [ ] |
+| 1 | [step1](security_risk_assessment_plan.step1.md) | Extract artifact registry from build scripts | All 5 output files exist, artifact counts documented, `prebuilt_external.md` explicitly states when none are found | [ ] |
 | 2 | [step2](security_risk_assessment_plan.step2.md) | Map artifacts to products | Cross-reference matrix + per-product files exist | [ ] |
 | 3 | [step3](security_risk_assessment_plan.step3.md) | Document components (security overlay on BMAD baseline) | All component docs have §1-§10 sections, EN requirement mapping | [ ] |
 | 4 | [step4](security_risk_assessment_plan.step4.md) | Map interfaces and trust boundaries | Trust boundary diagram + per-boundary interface docs | [ ] |
@@ -145,8 +149,8 @@ C:\Users\s.zintgraf.ACONTIS\PROJ\ai-knowhow\bmad\security_assessment\
 | 6-review | [step6_review](security_risk_assessment_plan.step6_review.md) | BMAD adversarial review of risk assessment | `adversarial_review.md` with findings, scoring validated | [ ] |
 | 7a | [step7a](security_risk_assessment_plan.step7a.md) | Semgrep built-in scans | Raw JSON results + summarized markdown | [ ] |
 | 7b | [step7b](security_risk_assessment_plan.step7b.md) | Custom Semgrep rules for trust boundaries | Custom YAML rules + scan results | [ ] |
-| 7c | [step7c](security_risk_assessment_plan.step7c.md) | AI-driven code vulnerability deep-dive | Code-level findings appended to threat model, risk matrix updated | [ ] |
-| 8 | [step8](security_risk_assessment_plan.step8.md) | Compliance consolidation (QuBA-libre + EN matrices) | All 12 output files in `08_compliance_consolidation\` | [ ] |
+| 7c | [step7c](security_risk_assessment_plan.step7c.md) | Optional AI-driven code vulnerability deep-dive for unresolved High/Critical risks | Code-level findings appended to threat model, risk matrix updated | [ ] |
+| 8 | [step8](security_risk_assessment_plan.step8.md) | Compliance consolidation (QuBA-libre + EN matrices) | All 13 output files in `08_compliance_consolidation\` | [ ] |
 
 ## Version control rule
 
@@ -162,7 +166,8 @@ A step is complete only when:
 - Full assessment for RTOSVisor + LxWin; delta assessment for other Type II products.
 - EN 304 635 and EN 304 626 are interim drafts — re-evaluate when final standards publish (expected H2 2026).
 - Do not skip adversarial reviews (Steps 5-review, 6-review) — they catch blind spots.
-- Do not proceed to Step 8 without completed Steps 5-7.
+- Complete Step 5-review and incorporate material threat-model fixes before Step 6.
+- Do not proceed to Step 8 until Step 6-review, Step 7a, and Step 7b are complete. Step 7c is optional and only gates Step 8 if you decide to perform it.
 
 ## Parallelization Opportunities
 
@@ -183,14 +188,14 @@ A step is complete only when:
 ├─ Step 5b (~30 min) ← after Step 5
 ├─ Step 7b (~40 min) ← after Step 4
 │
-│  ... wait for Steps 5, 5b, 7a, 7b ...
+│  ... wait for Steps 5, 5-review, 5b, 7a, 7b ...
 │
 ├─ Step 6 (~25 min) → Step 6-review (~20 min)
 ├─ Step 7c (optional, ~2-3 hours) ← after Step 6
 │
-│  ... wait for Steps 6, 7 ...
+│  ... wait for reviewed risk outputs and required scans ...
 │
-├─ Step 8a: Parts A+B (~40 min) ← after Step 6
+├─ Step 8a: Parts A+B (~40 min) ← after Step 6-review
 ├─ Step 8b: Part C (~50 min)    ← parallel with 8a
 ```
 

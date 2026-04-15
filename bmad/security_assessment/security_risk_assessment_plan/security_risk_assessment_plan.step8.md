@@ -4,7 +4,7 @@
 
 **Session rule:** Due to scope, this step may require 2 sessions: one for Parts A+B, one for Part C. Run the gate after both are done, mark `[x]`, then stop.
 
-**Prerequisites:** Steps 2, 3, 4, 5, 5b, 6, and 7 must all be complete.
+**Prerequisites:** Steps 2, 3, 4, 5, 5-review, 5b, 6, 6-review, 7a, and 7b must be complete. Step 7c is optional and is included only if it was actually performed.
 
 ---
 
@@ -34,7 +34,7 @@ AT3350 FMEA format is insufficient for the hypervisor products because it lacks:
 - Risk register from Step 6: `06_risk_assessment\*.md`
 - Threagile risk data from Step 5b: `05b_threagile\output\risks.json`
 - Semgrep findings from Step 7: `07_semgrep\*.md`
-- Code-level findings from Step 7c: appended to `05_threat_model\*.md`
+- Optional code-level findings from Step 7c (if performed): appended to `05_threat_model\*.md`
 - Component docs from Step 3: `03_component_documentation\*.md` (§10 EN mapping)
 - Interface map from Step 4: `04_interface_map\*.md`
 - QuBA-libre reference: `security_assessment\QuBA-libre\QuBA-libre_analyzation.md`
@@ -158,22 +158,11 @@ Write to `C:\Users\s.zintgraf.ACONTIS\PROJ\ai-knowhow\bmad\security_assessment\0
 
 ## Gate
 
-```bash
-cd 08_compliance_consolidation
-expected_files="index.md hypervisor_quba_inputs.md hypervisor_attack_steps.md hypervisor_countermeasures.md hypervisor_assumptions.md lxwin_quba_inputs.md type2_product_deltas.md cra_annex_i_checklist.md en304_635_compliance.md en304_635_assessment_cases.md en304_626_compliance.md en304_626_risk_factors.md en304_635_risk_factors.md"
-
-pass=0; fail=0
-for f in $expected_files; do
-  if test -s "$f"; then
-    echo "PASS: $f"; pass=$((pass+1))
-  else
-    echo "FAIL: $f"; fail=$((fail+1))
-  fi
-done
-echo "Total: $pass PASS, $fail FAIL out of 13 files"
-
-# Spot-check: CRA Annex I covers items (a)-(m)
-grep -c "(a)\|(b)\|(c)\|(d)\|(e)\|(f)\|(g)\|(h)\|(i)\|(j)\|(k)\|(l)\|(m)" cra_annex_i_checklist.md
-```
+Verify that:
+- All 13 output files listed in the table above exist under `08_compliance_consolidation\` and are non-empty.
+- `cra_annex_i_checklist.md` covers CRA Annex I items (a) through (m).
+- `hypervisor_quba_inputs.md` addresses QI1-QI16 and QA1-QA21.
+- `en304_635_compliance.md` covers §5.1.1 and §5.1.3 requirements.
+- `en304_626_compliance.md` covers all TR-* requirements.
 
 **Human interaction:** Review QuBA-libre inputs before manually entering into the Excel workbook. The agent produces recommended answers and rationale — a human transfers these into the actual Excel file and verifies automated risk calculations. This is the primary human touchpoint in the entire plan.

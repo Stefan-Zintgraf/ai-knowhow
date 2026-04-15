@@ -68,7 +68,7 @@ Look for these patterns in .bat files:
 - candle/light (WiX MSI builds)
 - Remote Linux build outputs (plink, ssh, scp commands referencing .so or binary names)
 
-Organize output into four markdown files under:
+Organize output into five markdown files under:
 C:\Users\s.zintgraf.ACONTIS\PROJ\ai-knowhow\bmad\security_assessment\01_artifact_registry\
 
 Files: index.md (master list with counts), windows_artifacts.md, linux_artifacts.md,
@@ -93,14 +93,9 @@ IMPORTANT: Ignore all folders named brainstormingPlatform or brainstormingPlatfo
 
 ## Gate
 
-```bash
-# Verify all output files exist and are non-empty
-for f in index.md windows_artifacts.md linux_artifacts.md installer_artifacts.md prebuilt_external.md; do
-  test -s "01_artifact_registry/$f" && echo "PASS: $f" || echo "FAIL: $f"
-done
-
-# Verify index.md contains artifact count summary
-grep -qi "total\|count\|artifact" 01_artifact_registry/index.md && echo "PASS: counts present" || echo "FAIL: no counts"
-```
+Verify that:
+- `index.md`, `windows_artifacts.md`, `linux_artifacts.md`, and `installer_artifacts.md` exist and are non-empty.
+- `prebuilt_external.md` exists. If no prebuilt binaries are found, it must explicitly state that instead of being left blank.
+- `index.md` contains an artifact count summary.
 
 **Human interaction:** None required. Review output for completeness afterward.

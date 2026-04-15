@@ -3,11 +3,16 @@ You are continuing work on the security risk assessment for the acontis hypervis
 ## Session protocol
 
 1. Read these files in order:
-   - `bmad/security_assessment/security_risk_assessment_plan/security_risk_assessment_plan.md` (overview — find which step is next by looking at the Status column: the first `[ ]` is your step)
+   - `bmad/security_assessment/security_risk_assessment_plan/security_risk_assessment_plan.md` (overview — identify the assigned or ready step)
    - The step file for that step (e.g. `security_risk_assessment_plan.step1.md`)
    - `bmad/security_assessment/security_risk_assessment_plan/security_risk_assessment_strategy.md` (strategy reference)
-2. Inspect the output directory structure under `bmad/security_assessment/` to confirm which prior steps have produced output and the workspace is ready.
-3. Implement **only** the current step. Run its gate (verify output files exist and are non-empty, check file structure). Mark `[x]` in both the step file's Status and the overview's Status table. Then **stop**.
+2. Determine the step to execute:
+   - If the user or session assignment names a step, use that step.
+   - Otherwise, choose the first unchecked non-optional step whose prerequisites are satisfied.
+   - Optional steps are only selected when the user requests them or when the plan says they are needed to resolve outstanding High/Critical risks.
+   - If the plan explicitly allows parallel work, do not assume the first unchecked row in the overview is the only valid next step.
+3. Inspect the output directory structure under `bmad/security_assessment/` to confirm which prior steps have produced output and the workspace is ready.
+4. Implement **only** the current step. Run its gate (verify output files exist and are non-empty, check file structure). Mark `[x]` in both the step file's Status and the overview's Status table. Then **stop**.
 
 ## Constraints
 
@@ -15,6 +20,7 @@ You are continuing work on the security risk assessment for the acontis hypervis
 - The plan folder (`security_risk_assessment_plan/`) contains only planning documents (this prompt, the overview, step files). Do not write analysis output there.
 - Do not proceed to the next step.
 - Do not skip the gate verification.
+- Use PowerShell equivalents for any POSIX-style gate examples. The active workspace shell is Windows PowerShell.
 - If something is unclear or blocked, stop and ask rather than guessing.
 - **IMPORTANT:** Ignore all folders named `brainstormingPlatform` or `brainstormingPlatformPlus` in every analysis step.
 

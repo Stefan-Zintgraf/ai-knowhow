@@ -12,7 +12,7 @@
 
 Apply BMAD's adversarial review to the consolidated risk assessment, checking for scoring inconsistencies, missing mitigations, and recommendations that don't match the actual risk landscape.
 
-**Core rule:** You MUST find issues. No "looks good" allowed.
+**Core rule:** The review must be adversarial and evidence-seeking. Start by assuming the register has inconsistencies, but do not invent findings to satisfy a quota. If no material gaps remain, document what was checked and why.
 
 ---
 
@@ -20,7 +20,9 @@ Apply BMAD's adversarial review to the consolidated risk assessment, checking fo
 
 ```
 You are performing a BMAD adversarial review of a consolidated security risk
-assessment for a hypervisor product family. The core rule: you MUST find issues.
+assessment for a hypervisor product family. Default to a skeptical stance and look
+for inconsistencies, but do not manufacture findings. If a focus area appears sound,
+document what you checked and why it is sufficient.
 
 Read the complete risk assessment:
 C:\Users\s.zintgraf.ACONTIS\PROJ\ai-knowhow\bmad\security_assessment\06_risk_assessment\ (all files)
@@ -29,6 +31,10 @@ Also read the threat model it was derived from:
 C:\Users\s.zintgraf.ACONTIS\PROJ\ai-knowhow\bmad\security_assessment\05_threat_model\ (all files)
 
 For each finding, rate severity (HIGH/MEDIUM/LOW) and categorize.
+
+If you do not find any material gaps after checking the focus areas below, add an
+explicit conclusion section describing what you checked and why the risk assessment
+is adequate as written.
 
 Focus your adversarial review on:
 - Scoring consistency: Are similar threats scored differently?
@@ -54,16 +60,17 @@ C:\Users\s.zintgraf.ACONTIS\PROJ\ai-knowhow\bmad\security_assessment\06_risk_ass
 ## Verifiable result
 
 - [ ] `adversarial_review.md` exists and is non-empty.
-- [ ] Contains at least 5 findings with severity ratings.
+- [ ] Each finding has a severity rating and a concrete corrective action.
+- [ ] If no HIGH/MEDIUM findings remain, the review explicitly documents coverage across the listed focus areas and explains why no material gaps were found.
 - [ ] HIGH-severity findings are addressed in the risk assessment files or documented as accepted risks.
 
 ---
 
 ## Gate
 
-```bash
-test -s "06_risk_assessment/adversarial_review.md" && echo "PASS: file exists" || echo "FAIL: missing"
-grep -c "HIGH\|MEDIUM\|LOW" 06_risk_assessment/adversarial_review.md  # Expect >= 5
-```
+Verify that:
+- `06_risk_assessment\adversarial_review.md` exists and is non-empty.
+- Every finding includes severity and a concrete corrective action.
+- If no material findings remain, the review records the focus areas checked and the rationale for that conclusion.
 
 **Human interaction:** Review adversarial findings (~15-20 min). Update risk scores and recommendations where legitimate issues are identified.

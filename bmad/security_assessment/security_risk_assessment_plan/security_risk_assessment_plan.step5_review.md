@@ -12,7 +12,7 @@
 
 Apply BMAD's adversarial review technique to the STRIDE threat model output, forcing a second-pass thoroughness check that catches blind spots and gaps.
 
-**Core rule:** The reviewer **must** find issues — "zero findings triggers a halt." Adopt a cynical stance — assume the threat model has gaps and find them.
+**Core rule:** The review must be adversarial and evidence-seeking. Start from the assumption that the threat model has gaps, but do not invent findings to satisfy a quota. If no material gaps remain, document what was stress-tested and why.
 
 ---
 
@@ -20,8 +20,9 @@ Apply BMAD's adversarial review technique to the STRIDE threat model output, for
 
 ```
 You are performing a BMAD adversarial review of a STRIDE threat model for a
-hypervisor system. The core rule: you MUST find issues. No "looks good" allowed.
-Adopt a cynical stance — assume the threat model has gaps and find them.
+hypervisor system. Default to a cynical stance and actively look for gaps, but do
+not manufacture findings. If a focus area appears complete, state what you checked
+and why it is sufficient.
 
 Read the complete threat model:
 C:\Users\s.zintgraf.ACONTIS\PROJ\ai-knowhow\bmad\security_assessment\05_threat_model\ (all files)
@@ -34,6 +35,10 @@ For each finding, rate severity (HIGH/MEDIUM/LOW) and provide:
 1. What is missing or wrong
 2. Why it matters for a CRA Important Class 2 product
 3. Specific recommendation to fix it
+
+If you do not find any material gaps after checking the focus areas below, add an
+explicit conclusion section describing what you checked and why the threat model is
+adequate as written.
 
 Focus your adversarial review on:
 - Missing threat scenarios (what attack vectors are NOT modeled?)
@@ -59,17 +64,17 @@ C:\Users\s.zintgraf.ACONTIS\PROJ\ai-knowhow\bmad\security_assessment\05_threat_m
 ## Verifiable result
 
 - [ ] `adversarial_review.md` exists and is non-empty.
-- [ ] Contains at least 5 findings (adversarial review must find issues).
 - [ ] Each finding has severity rating (HIGH/MEDIUM/LOW) and recommendation.
+- [ ] If no HIGH/MEDIUM findings remain, the review explicitly documents coverage across the listed focus areas and explains why no material gaps were found.
 - [ ] HIGH-severity findings are addressed: either incorporated into Step 5 threat files or documented as accepted risks with rationale.
 
 ---
 
 ## Gate
 
-```bash
-test -s "05_threat_model/adversarial_review.md" && echo "PASS: file exists" || echo "FAIL: missing"
-grep -c "HIGH\|MEDIUM\|LOW" 05_threat_model/adversarial_review.md  # Expect >= 5 findings
-```
+Verify that:
+- `05_threat_model\adversarial_review.md` exists and is non-empty.
+- Every finding includes severity and a concrete recommendation.
+- If no material findings remain, the review records the focus areas checked and the rationale for that conclusion.
 
 **Human interaction:** Review adversarial findings (~15-20 min). Dismiss noise, incorporate valid findings back into threat model files before proceeding to Step 5b.

@@ -4,7 +4,7 @@
 
 **Session rule:** Run the scans, summarize results, run the gate, mark `[x]`, then stop.
 
-**Prerequisites:** None (can run in parallel with Steps 1-6). Source code at `rtv\` must be accessible.
+**Prerequisites:** Raw CLI scans can run at any time once `rtv\` is accessible. The summary can be completed before Step 5, but STRIDE cross-references are only added if the Step 5 threat model already exists.
 
 ---
 
@@ -23,23 +23,27 @@ cd C:\Users\s.zintgraf.ACONTIS\PROJ\rtv
 
 # C/C++ security rules — VMF core, drivers, RtosLib
 semgrep --config=p/c-lang-security --include="*.c" --include="*.cpp" --include="*.h" \
+  --exclude="**/brainstormingPlatform/**" --exclude="**/brainstormingPlatformPlus/**" \
   Framework/ Windows/Source/Driver/ Windows/Source/RtosLib/ \
   Linux/Source/ LxWin/Source/ Common/ \
   --json -o ../ai-knowhow/bmad/security_assessment/07_semgrep/raw_c_results.json
 
 # .NET / C# security rules — HvWeb, SystemManager, HvDeviceMgr
 semgrep --config=p/csharp-security --include="*.cs" \
+  --exclude="**/brainstormingPlatform/**" --exclude="**/brainstormingPlatformPlus/**" \
   Hypervisor/Source/HvWeb/ Hypervisor/Source/HvDeviceMgr/ \
   Windows/Source/SystemManager/ \
   --json -o ../ai-knowhow/bmad/security_assessment/07_semgrep/raw_csharp_results.json
 
 # OWASP Top 10 rules — web-facing components
 semgrep --config=p/owasp-top-ten --include="*.cs" --include="*.ts" --include="*.js" \
+  --exclude="**/brainstormingPlatform/**" --exclude="**/brainstormingPlatformPlus/**" \
   Hypervisor/Source/HvWeb/ \
   --json -o ../ai-knowhow/bmad/security_assessment/07_semgrep/raw_owasp_results.json
 
 # JavaScript/TypeScript rules — HvWeb Angular ClientApp
 semgrep --config=p/javascript-security --include="*.ts" --include="*.js" \
+  --exclude="**/brainstormingPlatform/**" --exclude="**/brainstormingPlatformPlus/**" \
   Hypervisor/Source/HvWeb/ClientApp/ \
   --json -o ../ai-knowhow/bmad/security_assessment/07_semgrep/raw_js_results.json
 ```
@@ -66,9 +70,9 @@ Produce:
 - builtin_scan_results.md: Full findings table grouped by component area.
   Columns: Severity | Rule ID | CWE | File | Line | Description | Component Area.
 
-Cross-reference with the threat model:
-Read C:\Users\s.zintgraf.ACONTIS\PROJ\ai-knowhow\bmad\security_assessment\05_threat_model\index.md
-For each Semgrep finding, note if it confirms a STRIDE threat ID.
+If the Step 5 threat model already exists, cross-reference against:
+C:\Users\s.zintgraf.ACONTIS\PROJ\ai-knowhow\bmad\security_assessment\05_threat_model\index.md
+For each Semgrep finding, note if it confirms a STRIDE threat ID. Otherwise, record that STRIDE cross-referencing is pending a later enrichment pass.
 
 Write output to:
 C:\Users\s.zintgraf.ACONTIS\PROJ\ai-knowhow\bmad\security_assessment\07_semgrep\
