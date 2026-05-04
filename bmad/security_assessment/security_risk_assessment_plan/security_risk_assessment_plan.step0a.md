@@ -33,6 +33,21 @@ Produce comprehensive baseline documentation of the `rtv` codebase — architect
 | 3e | Hypervisor Components (`Hypervisor\Source\*`) |
 | 3f | LxWin/VxWin/SDK (`LxWin\Source\*`, `VxWin\Source\*`, `Common\All\*`) |
 
+### How to run each deep-dive session
+
+The full scan (tasks 1–6) must be complete before starting deep-dives.
+Repeat the following procedure for each session (3a → 3f), using a **fresh chat** every time to avoid context exhaustion:
+
+1. Open a **new chat session** in your AI IDE.
+2. Load the Analyst agent: `bmad-analyst`.
+3. Invoke the skill: `document-project` (or menu code `DP`).
+4. The workflow finds the existing `index.md` and asks what to do — select **"Deep-dive into specific area"** (option 2).
+5. When prompted for a target, enter the folder path(s) from the table above (e.g. `Framework\Source\Core\` for session 3a). For sessions covering multiple folders (3c, 3d, 3f), provide all listed paths.
+6. The workflow shows a confirmation with the target name, path, and estimated file count. Review and confirm with **y**.
+7. Wait for the exhaustive scan to complete (reads every file, builds dependency graph, traces data flow). Expect 30–120 min per session depending on file count.
+8. When the workflow asks whether to deep-dive another area or finish, select **Finish** (option 2).
+9. Verify that `_bmad-output/deep-dive-{name}.md` was created and that `index.md` was updated with a link to it.
+
 ---
 
 ## Verifiable result

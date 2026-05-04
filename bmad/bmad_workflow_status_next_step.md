@@ -12,10 +12,9 @@
   - Phase 4: **Solution Matrix**
 - **Status**: paused **immediately after technique selection**; no ideation has been captured yet.
 
-## Related references (from `agents.md` section 5.1)
+## Related references
 
-- **Brainstorming feature overview**: `../BMAD-METHOD/docs/explanation/features/brainstorming-techniques.md`
-- **Practical how-to (workflow)**: `../BMAD-METHOD/docs/how-to/workflows/run-brainstorming-session.md`
+- **Brainstorming explanation**: [docs/explanation/brainstorming.md (GitHub)](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/docs/explanation/brainstorming.md)
 
 ## What’s missing (why this session isn’t “done” yet)
 

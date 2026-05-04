@@ -64,7 +64,7 @@ cd hello-world-bmad
 Run the BMad installer:
 
 ```bash
-npx bmad-method@alpha install
+npx bmad-method install
 ```
 
 **Interactive prompts:**
@@ -293,7 +293,7 @@ For more information on creating PRDs and understanding the requirements process
 **Purpose:** Design the technical architecture and break work into implementable stories.
 
 :::tip[Related Documentation]
-Learn about solutioning workflows in [Phase 3: Solutioning (bmad_knowhow.md)](bmad_knowhow.md#phase-3-solutioning-bmad-methodenterprise-only).
+Learn about solutioning workflows in [Phase 3: Solutioning (bmad_knowhow.md)](bmad_knowhow.md#phase-3-solutioning).
 :::
 
 ### 3.1: Create Architecture
@@ -1067,19 +1067,19 @@ Now that you understand the workflow:
 - [Installation (bmad_knowhow.md)](bmad_knowhow.md#1-installation) - Detailed installation and setup
 - [Workflows (bmad_knowhow.md)](bmad_knowhow.md#2-workflows) - Complete workflow reference
 - [Phase 1: Analysis (bmad_knowhow.md)](bmad_knowhow.md#phase-1-analysis-optional) - Brainstorming and research
-- [Phase 2: Planning (bmad_knowhow.md)](bmad_knowhow.md#phase-2-planning-required) - PRD and requirements
-- [Phase 3: Solutioning (bmad_knowhow.md)](bmad_knowhow.md#phase-3-solutioning-bmad-methodenterprise-only) - Architecture and epics
+- [Phase 2: Planning (bmad_knowhow.md)](bmad_knowhow.md#phase-2-planning) - PRD and requirements
+- [Phase 3: Solutioning (bmad_knowhow.md)](bmad_knowhow.md#phase-3-solutioning) - Architecture and epics
 - [Phase 4: Implementation (bmad_knowhow.md)](bmad_knowhow.md#phase-4-implementation) - Development workflows
-- [Testing & Quality Workflows (bmad_knowhow.md)](bmad_knowhow.md#testing--quality-workflows-tea-agent) - TEA workflows
-- [TEA Testing Strategy (bmad_knowhow.md)](bmad_knowhow.md#7-tea-testing-strategy) - TEA engagement models
+- [Testing & Quality (bmad_knowhow.md)](bmad_knowhow.md#testing--quality) - TEA workflows
+- [TEA Testing Strategy (bmad_knowhow.md)](bmad_knowhow.md#8-tea-testing-strategy) - TEA engagement models
 - [Key Principles (bmad_knowhow.md)](bmad_knowhow.md#key-principles) - Best practices
 - [Typical Workflow Sequence (bmad_knowhow.md)](bmad_knowhow.md#typical-workflow-sequence) - Standard workflow flow
 
 **Additional Resources:**
-- [Getting Started Guide](/docs/tutorials/getting-started/getting-started-bmadv6.md) - Overview of BMad
-- [Workflow Reference](/docs/reference/workflows/index.md) - All available workflows
-- [TEA Overview](/docs/explanation/features/tea-overview.md) - Testing workflows
-- [Agent Roles](/docs/explanation/core-concepts/agent-roles.md) - Understanding agents
+- [Getting Started Guide](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/docs/tutorials/getting-started.md) - Overview of BMad
+- [Workflow Map](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/docs/reference/workflow-map.md) - Visual overview of all workflows
+- [Testing Options](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/docs/reference/testing.md) - Testing workflows
+- [Agents Reference](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/docs/reference/agents.md) - Understanding agents
 
 ---
 

@@ -447,8 +447,8 @@ BMad provides two testing paths:
 ### Documentation
 
 For the full workflow map and visual diagram, see:
-- [Workflow Map](C:\PROJ\BMAD-METHOD\docs\reference\workflow-map.md)
-- [BMad Method Documentation](C:\PROJ\BMAD-METHOD\docs\index.md)
+- [Workflow Map](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/docs/reference/workflow-map.md)
+- [BMad Method Documentation](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/docs/index.md)
 
 ---
 
@@ -743,9 +743,9 @@ Consider using Quick Flow or full BMad Method when:
 ---
 
 For detailed brownfield guides, see:
-- [Established Projects Guide](C:\PROJ\BMAD-METHOD\docs\how-to\established-projects.md)
-- [Quick Fixes Guide](C:\PROJ\BMAD-METHOD\docs\how-to\quick-fixes.md)
-- [Established Projects FAQ](C:\PROJ\BMAD-METHOD\docs\explanation\established-projects-faq.md)
+- [Established Projects Guide](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/docs/how-to/established-projects.md)
+- [Quick Fixes Guide](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/docs/how-to/quick-fixes.md)
+- [Established Projects FAQ](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/docs/explanation/established-projects-faq.md)
 
 ---
 
@@ -964,7 +964,7 @@ docs/epics/
 ---
 
 For detailed sharding documentation, see:
-- [Document Sharding Guide](C:\PROJ\BMAD-METHOD\docs\how-to\shard-large-documents.md)
+- [Document Sharding Guide](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/docs/how-to/shard-large-documents.md)
 
 ---
 
@@ -1504,7 +1504,7 @@ prompts:
 ---
 
 For detailed customization documentation, see:
-- [Agent Customization Guide](C:\PROJ\BMAD-METHOD\docs\how-to\customize-bmad.md)
+- [Agent Customization Guide](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/docs/how-to/customize-bmad.md)
 
 ---
 
@@ -2521,4 +2521,4 @@ Per epic:
 
 For detailed TEA documentation, see:
 - [TEA Module Documentation](https://bmad-code-org.github.io/bmad-method-test-architecture-enterprise/)
-- [Testing Options Reference](C:\PROJ\BMAD-METHOD\docs\reference\testing.md)
+- [Testing Options Reference](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/docs/reference/testing.md)

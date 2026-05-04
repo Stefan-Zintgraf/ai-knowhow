@@ -114,6 +114,8 @@ The strategy follows a two-layer architecture:
 
 ### Phase D: Compliance Consolidation (Step 8)
 
+The hypervisor family uses **QuBA-libre** for the formal risk register rather than the **AT3350** FMEA template used for EC-Master. Rationale: [Why QuBA-libre (not AT3350)](security_risk_assessment_plan.step8.md#L21).
+
 | Step | What It Does |
 |---|---|
 | **8a** Risk Register Generation | Consolidates all findings into QuBA-libre format for RTOSVisor and LxWin (with CRA Annex I traceability, countermeasure catalog, assumption tracking). Produces delta assessments for the remaining Type II products referencing LxWin findings. |

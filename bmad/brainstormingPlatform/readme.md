@@ -86,7 +86,7 @@ install-bmad.bat <topic> <platform> [lang] [outlang]
 
 - **--mode** — `folder` (default) or `current`.
 - **topic** — Subfolder name (required in folder mode). No spaces; use underscores (e.g. `my_great_idea`).
-- **platform** — IDE/platform code (required). For Cursor use `cursor`, for Claude Code use `claude-code`. See `../../BMAD-METHOD/tools/platform-codes.yaml` for all codes.
+- **platform** — IDE/platform code (required). For Cursor use `cursor`, for Claude Code use `claude-code`. See [platform-codes.yaml](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/tools/platform-codes.yaml) for all codes.
 - **lang** — Communication and default document language: `English` or `German`. Default: `German`.
 - **outlang** — Document output language: `English` or `German`. Default: `English`.
 
@@ -115,7 +115,7 @@ install-bmad.bat my_great_idea cursor   REM backward compatible, folder mode
 | `BRAINSTORMING_FOLDER` not set | The skill will prompt you to set it. Or set it manually and restart the terminal/IDE. |
 | "topic must not contain blanks" | Use underscores in the topic name (e.g. `my_great_idea`). |
 | "topic folder already exists" | Pick another topic name or remove/rename the existing folder. |
-| "invalid platform" | Use a valid code from `../../BMAD-METHOD/tools/platform-codes.yaml` (e.g. `cursor`, `claude-code`). |
+| "invalid platform" | Use a valid code from [platform-codes.yaml](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/tools/platform-codes.yaml) (e.g. `cursor`, `claude-code`). |
 | "invalid mode" | Use `folder` or `current` with the `--mode` flag. |
 | "language must be English or German" | Use exactly `English` or `German` for `lang` and `outlang`. |
 | Install fails (npx / bmad-method) | Ensure Node.js and `npx` are available; check the script output for the exact error. |
@@ -124,6 +124,5 @@ install-bmad.bat my_great_idea cursor   REM backward compatible, folder mode
 
 ## More about BMAD brainstorming
 
-- **Brainstorming techniques**: [Brainstorming Techniques](../../BMAD-METHOD/docs/explanation/features/brainstorming-techniques.md)
-- **Run a session (how-to)**: [Run Brainstorming Session](../../BMAD-METHOD/docs/how-to/workflows/run-brainstorming-session.md)
-- **BMad knowledge index**: see [AGENTS.md](../AGENTS.md) in the BMad repo.
+- **Brainstorming**: [Brainstorming](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/docs/explanation/brainstorming.md)
+- **BMad knowledge index**: see [agents.md](../agents.md)

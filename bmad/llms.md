@@ -4,29 +4,25 @@
 
 Documentation: https://docs.bmad-method.org/
 Repository: https://github.com/bmad-code-org/BMAD-METHOD
-Full docs: https://docs.bmad-method.org/llms-full.txt (also saved locally as llms-full.md / llms-full.txt)
+Full docs: https://docs.bmad-method.org//llms-full.txt
 
 ## Quick Start
 
-- **[Quick Start](https://docs.bmad-method.org/docs/modules/bmm/quick-start)** - Get started with BMAD Method
-- **[Installation](https://docs.bmad-method.org/docs/getting-started/installation)** - Installation guide
+- **[Getting Started](https://docs.bmad-method.org//tutorials/getting-started/)** - Tutorial: install and learn how BMad works
+- **[Installation](https://docs.bmad-method.org//how-to/install-bmad/)** - How to install BMad Method
 
 ## Core Concepts
 
-- **[Scale Adaptive System](https://docs.bmad-method.org/docs/modules/bmm/scale-adaptive-system)** - Understand BMAD scaling
-- **[Quick Flow](https://docs.bmad-method.org/docs/modules/bmm/bmad-quick-flow)** - Fast development workflow
-- **[Party Mode](https://docs.bmad-method.org/docs/modules/bmm/party-mode)** - Multi-agent collaboration
+- **[Quick Flow](https://docs.bmad-method.org//explanation/quick-flow/)** - Unified quick workflow — clarify intent, plan, implement, review, present
+- **[Party Mode](https://docs.bmad-method.org//explanation/party-mode/)** - Multi-agent collaboration
+- **[Workflow Map](https://docs.bmad-method.org//reference/workflow-map/)** - Visual overview of phases and workflows
 
 ## Modules
 
-- **[BMM - Method](https://docs.bmad-method.org/docs/modules/bmm/quick-start)** - Core methodology module
-- **[BMB - Builder](https://docs.bmad-method.org/docs/modules/bmb/)** - Agent and workflow builder
-- **[BMGD - Game Dev](https://docs.bmad-method.org/docs/modules/bmgd/quick-start)** - Game development module
+- **[Official Modules](https://docs.bmad-method.org//reference/modules/)** - BMM, BMB, BMGD, and more
 
 ---
 
 ## Quick Links
 
-- [Full Documentation (llms-full.txt)](https://docs.bmad-method.org/llms-full.txt) - Complete docs for AI context
-- [Source Bundle](https://docs.bmad-method.org/downloads/bmad-sources.zip) - Complete source code
-- [Prompts Bundle](https://docs.bmad-method.org/downloads/bmad-prompts.zip) - Agent prompts and workflows
+- [Full Documentation (llms-full.txt)](https://docs.bmad-method.org//llms-full.txt) - Complete docs for AI context

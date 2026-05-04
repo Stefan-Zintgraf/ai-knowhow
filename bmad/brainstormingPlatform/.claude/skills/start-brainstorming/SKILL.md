@@ -121,7 +121,7 @@ If the user's request already makes the choice clear (e.g. "brainstorm here" →
 - **Mode**: `folder` or `current`. Default: `folder`.
 - **Topic**: No spaces; words separated by underscores. **Required in folder mode only.**
 - **Languages**: `English` or `German` only. Defaults: input German, output English.
-- **Platform**: **Required.** `claude-code` for this skill. Valid codes in BMAD-METHOD/tools/platform-codes.yaml.
+- **Platform**: **Required.** `claude-code` for this skill. Valid codes in [platform-codes.yaml](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/tools/platform-codes.yaml).
 
 ## Shortcuts
 

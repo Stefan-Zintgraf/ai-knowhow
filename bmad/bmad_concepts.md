@@ -1133,4 +1133,4 @@ Each fragment follows this structure:
 
 For detailed practical guides on using these concepts, see:
 - [BMad Know-How Document](./bmad_knowhow.md) - Practical workflows and procedures
-- [BMad Method Documentation](../BMAD-METHOD/docs/index.md) - Complete reference
+- [BMad Method Documentation](https://github.com/bmad-code-org/BMAD-METHOD/blob/main/docs/index.md) - Complete reference
