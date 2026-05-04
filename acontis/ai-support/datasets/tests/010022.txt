@@ -1,0 +1,116 @@
+### HEADER
+Id=10022
+Link=http://at-zammad/#ticket/zoom/10022
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Stryker (ID=471, Number=0, Country=US)
+Commission=Stryker, Mako (ID=549, Number=549)
+Number=7010022
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=mike.ford1@stryker.com (ID=1777, FirstName=Mike, LastName=Ford)
+CreatedBy=mike.ford1@stryker.com (ID=1777, FirstName=Mike, LastName=Ford)
+Type=
+TimeUnit=
+CreatedAt=21.02.2025 21:37:36 +00:00
+UpdatedAt=07.03.2025 07:04:13 +00:00
+CloseAt=07.03.2025 07:04:13 +00:00
+ArticlesCount=2
+
+### TITLE
+EC Notification Handling
+
+### ARTICLE00_HEADER
+Id=57284
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.02.2025 21:37:36 +00:00
+UpdatedAt=21.02.2025 21:37:46 +00:00
+
+### ARTICLE00_SUBJECT
+EC Notification Handling
+
+### ARTICLE00_BODY
+<div>Hello,</div><div> </div><div>I am working on EC Notification handling in my application and had a question about direct vs postponed notification handling. In my application I wanted to do some logging operations for any notification received. Therefore I wanted to do postponed notification handling so that the notification would not be processed and logged within the context it was detected.</div><div> </div><div>I am leveraging the EnqueueJob and DequeueJob functionalities provided by the CEmNotification class to do this.</div><div> </div><div>My question is when enqueuing a job, it seems like "T_SLAVEJOBS oCurJob;" is the only thing that is enqueued which contains the notification code and Job data. My question is it looks like the jobs only apply to a select number of notifications:</div><div>
+<img style="max-width:100%;max-width: 1075px;" src="/api/v1/ticket_attachment/10022/57284/238257?view=inline">
+</div><div> </div><div>whereas I know each notification is accompanied by EC_T_ERROR_NOTIFICATION_DESC or EC_T_NOTIFICATION_DESC which I see contains a lot more cases:</div><div>
+<img style="max-width:100%;width: 517.926px;max-height: 190px;max-width: 1075px;width:517px;max-height:190px;" src="/api/v1/ticket_attachment/10022/57284/238258?view=inline"><img style="max-width:100%;width: 517.926px;max-height: 190px;max-width: 1075px;width:517px;max-height:190px;" src="/api/v1/ticket_attachment/10022/57284/238259?view=inline">
+</div><div> </div><div>Is there any way to enqueue this information? Can I just modify T_SLAVEJOBS to contain this information as well or is there a reason it appears only limited to a certain amount of jobs? It would be nice to have access to the information the notification description gives you when doing postponed notification handling for the notifications.</div><div> </div><div>Thanks,</div><div>Mike</div><div> </div><div style="color: inherit;">
+<p><span style=" color: rgb(255, 181, 0);">Mike</span> Ford</p>
+<p>Staff Engineer, Robotic Platforms</p>
+<p>Stryker</p>
+<p>Digital, Robotics, and Enabling Technologies</p>
+<p>1941 Stryker Way</p>
+<p>Portage, MI, 49002</p>
+<p>mike.ford1@stryker.com</p>
+<p> </p>
+</div>Follow this link to read our<a href="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" rel="nofollow noreferrer noopener" title="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" target="_blank"> Privacy Statement</a>
+
+### ARTICLE01_HEADER
+Id=57302
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.02.2025 07:21:31 +00:00
+UpdatedAt=24.02.2025 07:21:40 +00:00
+
+### ARTICLE01_SUBJECT
+EC Notification Handling
+
+### ARTICLE01_BODY
+Hi Mike,<div><br></div><div>yes exactly, the code is only an example. You can take it as starting point or integrate EC-Master in your application on your own.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, February 21, 2025 at 10:37:36 PM, Mike Ford wrote:<br><br><div>Hello,</div>
+<div> </div>
+<div>I am working on EC Notification handling in my application and had a question about direct vs postponed notification handling. In my application I wanted to do some logging operations for any notification received. Therefore I wanted to do postponed notification handling so that the notification would not be processed and logged within the context it was detected.</div>
+<div> </div>
+<div>I am leveraging the EnqueueJob and DequeueJob functionalities provided by the CEmNotification class to do this.</div>
+<div> </div>
+<div>My question is when enqueuing a job, it seems like "T_SLAVEJOBS oCurJob;" is the only thing that is enqueued which contains the notification code and Job data. My question is it looks like the jobs only apply to a select number of notifications:</div>
+<div>
+<img style="max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/10022/57302/238301?view=inline">
+</div>
+<div> </div>
+<div>whereas I know each notification is accompanied by EC_T_ERROR_NOTIFICATION_DESC or EC_T_NOTIFICATION_DESC which I see contains a lot more cases:</div>
+<div>
+<img style="max-width:100%;max-width: 100%;width: 517px;max-height: 190px;" src="/api/v1/ticket_attachment/10022/57302/238302?view=inline"><img style="max-width:100%;max-width: 100%;width: 517px;max-height: 190px;" src="/api/v1/ticket_attachment/10022/57302/238303?view=inline">
+</div>
+<div> </div>
+<div>Is there any way to enqueue this information? Can I just modify T_SLAVEJOBS to contain this information as well or is there a reason it appears only limited to a certain amount of jobs? It would be nice to have access to the information the notification description gives you when doing postponed notification handling for the notifications.</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Mike</div>
+<div> </div>
+<div style="color: inherit;">
+<p><span style=" color: rgb(255, 181, 0);">Mike</span> Ford</p>
+<p>Staff Engineer, Robotic Platforms</p>
+<p>Stryker</p>
+<p>Digital, Robotics, and Enabling Technologies</p>
+<p>1941 Stryker Way</p>
+<p>Portage, MI, 49002</p>
+<p>mike.ford1@stryker.com</p>
+<p> </p>
+</div>Follow this link to read our<a href="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" rel="nofollow noreferrer noopener" title="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" target="_blank"> Privacy Statement</a><br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

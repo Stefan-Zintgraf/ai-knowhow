@@ -1,0 +1,107 @@
+### HEADER
+Id=8621
+Link=http://at-zammad/#ticket/zoom/8621
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Clemessy (ID=181, Number=40222, Country=FR)
+Commission=Clemessy, Bench Control (ID=210, Number=210)
+Number=708621
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=emmanuel.pinot@eiffage.com (ID=56, FirstName=Emmanuel, LastName=Pinot)
+CreatedBy=emmanuel.pinot@eiffage.com (ID=56, FirstName=Emmanuel, LastName=Pinot)
+Type=
+TimeUnit=
+CreatedAt=05.08.2024 07:40:07 +00:00
+UpdatedAt=19.08.2024 06:13:17 +00:00
+CloseAt=19.08.2024 06:13:17 +00:00
+ArticlesCount=2
+
+### TITLE
+Cyclic frames not received
+
+### ARTICLE00_HEADER
+Id=48304
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.08.2024 07:40:07 +00:00
+UpdatedAt=05.08.2024 07:40:12 +00:00
+
+### ARTICLE00_SUBJECT
+Cyclic frames not received
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Paul,</p>
+<p> </p>
+<p><span lang="EN-US">I hope you are doing well. </span><span lang="EN">I need detailed explanation about not receiving cyclic frames.</span></p>
+<p><span lang="EN">As usual I use the redundancy master (v3.1.4.11) and the cable redundancy cable features. In my configuration I use three ethernet frames for the cyclic frames.</span></p>
+<p><span lang="EN">What exactly generates the event EC_NOTIFY_FRAME_RESPONSE_ERROR with pErrorNotificationDesc-&gt;desc.FrameRspErrDesc.EerrorType equals eRspErr_NO_RESPONSE?</span></p>
+<p><span lang="EN">I guess some specific bits should be received (main and red links).</span></p>
+<p><span lang="EN"><p> </p></span></p>
+<p><span lang="EN">In the following code (interrupt mode), </span>
+<span lang="EN-US">if we have a timeout what is the meaning of the rxFramesJobParms.bAllCycFramesProcessed?</span><span lang="EN"></span></p>
+<p><span lang="EN"> </span></p>
+<p><span lang="EN">if (bWaitForCycRxEvent)</span></p>
+<p><span lang="EN"> {</span></p>
+<p><span lang="EN"> dwRes = OsWaitForEvent(pAppContext-&gt;pvCycFrameReceivedEvent, dwWaitForCycRxEventTimeout);</span></p>
+<p><span lang="EN"> </span><span lang="EN-US">if (EC_E_TIMEOUT == dwRes)</span></p>
+<p><span lang="EN-US"> {</span></p>
+<p><span lang="EN-US"> EcLogMsg(EC_LOG_LEVEL_VERBOSE_CYC, (pEcLogContext, EC_LOG_LEVEL_VERBOSE_CYC, "%d: bWaitForCycRxEvent timeout\n", pAppContext-&gt;dwInstanceId));</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"> EC_T_USER_JOB_PARMS rxFramesJobParms{};</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"> /* cyclic event not issued, but INPUTs may be in CableRed frame queue and must be provided before myAppWorkPd */</span></p>
+<p><span lang="EN-US"> dwRes = emExecJob(pAppContext-&gt;dwInstanceId, eUsrJob_ProcessAllRxFrames, &amp;rxFramesJobParms);</span></p>
+<p><span lang="EN-US"> }</span></p>
+<p><span lang="EN-US"> }</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">If there is no line break in my EtherCAT loop and just one ethernet frame (among the 3) from the redundancy link is not received, is the event </span><span lang="EN">EC_NOTIFY_FRAME_RESPONSE_ERROR generated and OsWaitForEvent returns </span><span lang="EN-US">EC_E_TIMEOUT?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Thank you in advance.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Emmanuel</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+</div><br> Cet e-mail et ses éventuelles pièces jointes peuvent contenir des informations confidentielles et sont exclusivement adressés au(x) destinataire(s) mentionné(s) ci-dessus. Toute diffusion, exploitation ou copie sans autorisation de cet e-mail et de ses pièces jointes est strictement interdite. Si vous recevez ce message par erreur, merci de le détruire et d' avertir immédiatement l'expéditeur. EIFFAGE décline toute responsabilité si ce message a été modifié ou falsifié. <br> This message and any attachments may contain confidential information and are established exclusively for his or its recipients. Any use of this message, for which it was not intended, any distribution or any total or partial publication is prohibited unless previously approved. If you receive this message in error, please destroy it and immediately notify the sender thereof. The EIFFAGE Group declines all responsibility concerning this message if it has been altered or tampered with.
+
+### ARTICLE01_HEADER
+Id=48318
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.08.2024 10:19:05 +00:00
+UpdatedAt=05.08.2024 10:19:06 +00:00
+
+### ARTICLE01_SUBJECT
+Cyclic frames not received
+
+### ARTICLE01_BODY
+<div>Hi,</div><div><br></div><div>1) possible reasons for a missing response of a cyclic frame are:</div><div>- timing task is broken.</div><div>- <span>the frame was not received (due to bus problems)</span>
+</div><div>- <span>too many or too long acyclic frames are sent in between sending cyclic frames by the master due to an improper configuration. </span><span>To avoid these error notifications the configuration may be changed as follows:</span><div>    1) lower value for master configuration parameter dwMaxAcycCmdsPerCycle</div>
+<div>    2) Use a higher cycle time</div>
+<br>
+</div><div>2) <span>bAllCycFramesProcessed: </span><span>This flag is set to a value of `EC_TRUE` it indicates that all previously initiated cyclic frames (eUsrJob_SendAllCycFrames) are received and processed within this call. If it is set to 'EC_FALSE', it means that there was at least a frame loss.</span>
+</div><div><span><br></span></div><div>
+<span>if </span><span>OsWaitForEvent returns a timeout. It means that the event that is triggering the cycle time did not occur. It means the timing task is not working properly. In this case </span><span>bAllCycFramesProcessed will be probably false.</span>
+</div><div><span><br></span></div><div>
+<span>3) </span><span>EC_NOTIFY_FRAME_RESPONSE_ERROR</span><span>  will be also generated if 1 of 3 frames is not received. </span><span> </span>
+</div><div>
+<span>EC_E_TIMEOUT. </span><span>EC_NOTIFY_FRAME_RESPONSE_ERROR</span><span> </span><span> is probably an implication of OsWaitForEvent returning </span><span>EC_E_TIMEOUT.</span>
+</div><div><span><br></span></div><div><span>Please control your timing task.</span></div><div><span><br></span></div><div data-signature="true" data-signature-id="2">
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>

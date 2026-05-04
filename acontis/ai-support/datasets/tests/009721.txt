@@ -1,0 +1,114 @@
+### HEADER
+Id=9721
+Link=http://at-zammad/#ticket/zoom/9721
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=709721
+Owner=s.romero@acontis.com (ID=2460, FirstName=Sebastian, LastName=Romero)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=20.01.2025 10:51:01 +00:00
+UpdatedAt=31.01.2025 07:14:06 +00:00
+CloseAt=31.01.2025 07:14:06 +00:00
+ArticlesCount=2
+
+### TITLE
+Issue from Refresh timing after Check of Menu is ON / OFF... (PNo.141)
+
+### ARTICLE00_HEADER
+Id=55264
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.01.2025 10:51:01 +00:00
+UpdatedAt=20.01.2025 10:51:05 +00:00
+
+### ARTICLE00_SUBJECT
+Issue from Refresh timing after Check of Menu is ON / OFF... (PNo.141)
+
+### ARTICLE00_BODY
+<div>Hi Support Team,</div><div> </div><div>This "Pointing Out" is from Mitsubishi (commission No. 40627).</div><div>EC-Engineer Ver.3.9.9</div><div> </div><div>[Issue]</div><div>At Diagnostics Mode, even if the check of [Hardware Diagnostics] is set to ON, the View of [Hardware Diagnostics] is not shown immediately.</div><div> </div><div>[How to Reproduce]</div><div>1. Run Diagnostics Mode.</div><div>2. Select General Tab of SubDevice</div><div>3. Check "ON" of [Network] - [Hardware Diagnostics] in the Menu</div><div>↓</div><div>[Hardware Diagnostics] information can’t be appeared</div><div><img alt="PastedGraphic-1.png" src="/api/v1/ticket_attachment/9721/55264/228972?view=inline" style="max-width:100%;width:769px;"></div><div> </div><div>↓</div><div>But, Select the other tab (for example, Variables) and return to "General Tab", [Hardware Diagnostics] is appeared.</div><div><img alt="PastedGraphic-2.png" src="/api/v1/ticket_attachment/9721/55264/228973?view=inline" style="max-width:100%;width:769px;"></div><div> </div><div>We think you have to refresh the view if Check is "ON"…</div><div>Could you fix it?</div><div> </div><div>Best regards,</div><div>Yuichi</div><div> </div><div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=55343
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.01.2025 08:42:32 +00:00
+UpdatedAt=21.01.2025 08:42:37 +00:00
+
+### ARTICLE01_SUBJECT
+Issue from Refresh timing after Check of Menu is ON / OFF... (PNo.141)
+
+### ARTICLE01_BODY
+Hi Yuichi,<br><br>
+we found the problem and it has been fixed. 
+
+<br><br>Best regards<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Sebastian Romero</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Monday, January 20, 2025 at 11:51:01 AM, Yuichi Ide wrote:<br><br><div>Hi Support Team,</div>
+<div> </div>
+<div>This "Pointing Out" is from Mitsubishi (commission No. 40627).</div>
+<div>EC-Engineer Ver.3.9.9</div>
+<div> </div>
+<div>[Issue]</div>
+<div>At Diagnostics Mode, even if the check of [Hardware Diagnostics] is set to ON, the View of [Hardware Diagnostics] is not shown immediately.</div>
+<div> </div>
+<div>[How to Reproduce]</div>
+<div>1. Run Diagnostics Mode.</div>
+<div>2. Select General Tab of SubDevice</div>
+<div>3. Check "ON" of [Network] - [Hardware Diagnostics] in the Menu</div>
+<div>↓</div>
+<div>[Hardware Diagnostics] information can’t be appeared</div>
+<div><img alt="PastedGraphic-1.png" src="/api/v1/ticket_attachment/9721/55343/229248?view=inline" style="max-width:100%;max-width:100%;width:769px;"></div>
+<div> </div>
+<div>↓</div>
+<div>But, Select the other tab (for example, Variables) and return to "General Tab", [Hardware Diagnostics] is appeared.</div>
+<div><img alt="PastedGraphic-2.png" src="/api/v1/ticket_attachment/9721/55343/229249?view=inline" style="max-width:100%;max-width:100%;width:769px;"></div>
+<div> </div>
+<div>We think you have to refresh the view if Check is "ON"…</div>
+<div>Could you fix it?</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

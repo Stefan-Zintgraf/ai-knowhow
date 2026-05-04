@@ -1,0 +1,126 @@
+### HEADER
+Id=8733
+Link=http://at-zammad/#ticket/zoom/8733
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Keyence (ID=223, Number=40219, Country=JP)
+Commission=Keyence, Control Division PLC product lines (ID=577, Number=577)
+Number=708733
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=maruyamad@keyence.co.jp (ID=1530, FirstName=Daisuke, LastName=Maruyama)
+CreatedBy=maruyamad@keyence.co.jp (ID=1530, FirstName=Daisuke, LastName=Maruyama)
+Type=
+TimeUnit=
+CreatedAt=27.08.2024 02:19:42 +00:00
+UpdatedAt=06.09.2024 06:07:40 +00:00
+CloseAt=06.09.2024 06:07:40 +00:00
+ArticlesCount=2
+
+### TITLE
+Regarding Transition in "set sm2(outputs)"
+
+### ARTICLE00_HEADER
+Id=49046
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.08.2024 02:19:42 +00:00
+UpdatedAt=27.08.2024 02:19:42 +00:00
+
+### ARTICLE00_SUBJECT
+Regarding Transition in "set sm2(outputs)"
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Dear Acontis Support.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">I have the trouble that the model STP-K551A made by TPM cannot be made set the AlStatus SafeOp when connecting.</span></p>
+<p><span lang="EN-US">When I captured the packets, I found that an AlStatus error occurred when writing SafeOp to the AlCtrl register,</span></p>
+<p><span lang="EN-US">and the AlStatusCode was 0x1d (Invalid output SyncManager configuration).</span></p>
+<p><span lang="EN-US">I also found that the InitCmd "set sm2 (outoput)" had not yet been sent by the time SafeOp was written to the AlCtrl register.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">When I checked the ENI output by EC-Engineer, I found that the Transition for InitCmd "set sm2 (outputs)" was SO.</span></p>
+<p><span lang="EN-US">Therefore, I think this is the cause. I think the transition should be PS, is that wrong?</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:3.5729in;max-height:1.427in;width:343px;max-height:137px;" src="/api/v1/ticket_attachment/8733/49046/203351?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Please tell me the following. I have attached the ESI file.</span></p>
+<p><span>$B!&amp;(B<span lang="EN-US">Why does EC-Engineer output SO as the transition for InitCmd "set sm2 (outoput)"?</span></span></p>
+<p><span>$B!&amp;(B<span lang="EN-US">How can I output PS as the transition for InitCmd "set sm2 (outoput)" in EC-Engineer?</span></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Daiuke Maruyama</span></p>
+<p><span lang="EN-US">KEYENCE</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=49073
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.08.2024 11:39:24 +00:00
+UpdatedAt=27.08.2024 11:39:24 +00:00
+
+### ARTICLE01_SUBJECT
+Regarding Transition in "set sm2(outputs)"
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>1. <span>Why does EC-Engineer output SO as the transition for InitCmd "set sm2 (outoput)"?</span>
+</div><div>--&gt; Because the device has no MCU and uses Device Emulation. This is read from the ESI file from the ConfigData. If the Device uses DeviceEmulation, this transition has to be SO</div><div><br></div><div>2. I think you have to talk to the vendor, to make sure this device needs DeviceEmulation or if they could patch the ESI file.</div><div><br></div><div>Best regards,</div><div>Kai Feifel</div><div>
+<span>_______________________________________________________________________________________</span><div>
+<div data-signature="true" data-signature-id="2">
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, August 27, 2024 at 4:19:42 AM, Daisuke Maruyama wrote:<br><br><div>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Dear Acontis Support.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">I have the trouble that the model STP-K551A made by TPM cannot be made set the AlStatus SafeOp when connecting.</span></p>
+<p><span lang="EN-US">When I captured the packets, I found that an AlStatus error occurred when writing SafeOp to the AlCtrl register,</span></p>
+<p><span lang="EN-US">and the AlStatusCode was 0x1d (Invalid output SyncManager configuration).</span></p>
+<p><span lang="EN-US">I also found that the InitCmd "set sm2 (outoput)" had not yet been sent by the time SafeOp was written to the AlCtrl register.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">When I checked the ENI output by EC-Engineer, I found that the Transition for InitCmd "set sm2 (outputs)" was SO.</span></p>
+<p><span lang="EN-US">Therefore, I think this is the cause. I think the transition should be PS, is that wrong?</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:3.5729in;max-height:1.427in;width:343px;max-height:137px;" src="/api/v1/ticket_attachment/8733/49073/203454?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Please tell me the following. I have attached the ESI file.</span></p>
+<p><span>$B!&amp;(B<span lang="EN-US">Why does EC-Engineer output SO as the transition for InitCmd "set sm2 (outoput)"?</span></span></p>
+<p><span>$B!&amp;(B<span lang="EN-US">How can I output PS as the transition for InitCmd "set sm2 (outoput)" in EC-Engineer?</span></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Daiuke Maruyama</span></p>
+<p><span lang="EN-US">KEYENCE</span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

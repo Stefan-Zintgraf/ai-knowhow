@@ -1,0 +1,140 @@
+### HEADER
+Id=4748
+Link=http://at-zammad/#ticket/zoom/4748
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Walt Disney Parks and Resorts (ID=588, Number=0, Country=US)
+Commission=Walt Disney, Real-Time Product Hub (ID=667, Number=667)
+Number=704748
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=jose.l.corpuz@disney.com (ID=1583, FirstName=Jose L, LastName=Corpuz)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=20.01.2023 05:06:21 +00:00
+UpdatedAt=24.01.2023 16:56:12 +00:00
+CloseAt=20.01.2023 16:59:46 +00:00
+ArticlesCount=4
+
+### TITLE
+Questions about EC-Sim API
+
+### ARTICLE00_HEADER
+Id=25121
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.01.2023 05:06:21 +00:00
+UpdatedAt=20.01.2023 09:12:44 +00:00
+
+### ARTICLE00_SUBJECT
+RE: Questions about EC-Sim API
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Jose,</p>
+<p> </p>
+<p>Sorry for the confusion. It seems the PDF documentation has an error in it. The function is <b>es</b>GetProcessImage…(). You’ll find this call from myAppworkPd() in EcDemoApp.cpp. </p>
+<p> </p>
+<p>The online documentation is typically updated right away and then the PDF, so perhaps the PDF didn’t get updated properly. I will be sure to correct this in the PDF for future releases.</p>
+<p> </p>
+<p><a href="https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/software-integration.html#accessing-process-data-in-the-application" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/software-integration.html#accessing-process-data-in-the-application</a></p>
+<p> </p>
+<div>
+<p>/Jon</p>
+</div>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Corpuz, Jose L &lt;Jose.L.Corpuz@disney.com&gt; <br><b>Sent:</b> Thursday, January 19, 2023 2:16 PM<br><b>To:</b> Jon Waters &lt;j.waters@acontis.com&gt;<br><b>Cc:</b> Dahlinger, Cecelia &lt;cecelia.dahlinger@disney.com&gt;<br><b>Subject:</b> Questions about EC-Sim API</p>
+</div>
+<p> </p>
+<p>Hi Jon,<br><br>Could you help me get in touch with somebody who knows the EC-Simulator API?<br>I have the demo running, but I can’t access the PDO buffer in the example code.<br>The documentation show in section 3.3, Accessing process data in the application, that there is a call emGetProcessImageInputPtr() and emGetProcessImageOutputPtr(). It is shown below in this screen capture.<br><img border="0" style="max-width:100%;width:5.1041in;max-height:2.8177in;width:490px;max-height:271px;" src="/api/v1/ticket_attachment/4748/25121/106408?view=inline"></p>
+<p>I don’t see any other mention of this call anywhere in the docs nor can I find the call anywhere in the demo project?<br>Could help me find somebody to assist me in accessing the data being sent over the wire to the EC-Sim instance?<br><br>Regards,<br>-Jose Corpuz</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=25126
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=20.01.2023 05:13:18 +00:00
+UpdatedAt=20.01.2023 05:13:18 +00:00
+
+### ARTICLE01_BODY
+<div>Hi Paul,</div><div><br></div><div>The PDF version of the EC-Simulator manual has a bug and references emGetProcess...() when it should be esGetProcess...().<br>
+</div>
+
+### ARTICLE02_HEADER
+Id=25138
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=20.01.2023 09:15:06 +00:00
+UpdatedAt=20.01.2023 09:15:06 +00:00
+
+### ARTICLE02_BODY
+Hi Jon! You are right. I fixed this in <span>V3.1.4.07 which is available since 12/2022.</span>
+
+### ARTICLE03_HEADER
+Id=25204
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.01.2023 21:56:32 +00:00
+UpdatedAt=24.01.2023 16:56:12 +00:00
+
+### ARTICLE03_SUBJECT
+Questions about EC-Sim API
+
+### ARTICLE03_BODY
+<div>
+<p>Hi Jon,<br>
+<br> Thanks for the link. I appreciate the information.<br>
+<br> Thanks,<br> -Jose</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Jon Waters &lt;j.waters@acontis.com&gt; <br>
+<b>Sent:</b> Friday, January 20, 2023 12:06 AM<br>
+<b>To:</b> Corpuz, Jose L &lt;Jose.L.Corpuz@disney.com&gt;<br>
+<b>Cc:</b> Dahlinger, Cecelia &lt;Cecelia.Dahlinger@disney.com&gt;; 'EtherCAT Support' &lt;ecsupport@acontis.com&gt;<br>
+<b>Subject:</b> RE: Questions about EC-Sim API</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p><b>This Message is From an External Sender</b><span><br> Caution: Do not click links or open attachments unless you recognize the sender and know the content is safe.</span></p>
+</div>
+<div>
+<p>Hi Jose,</p>
+<p> </p>
+<p>Sorry for the confusion. It seems the PDF documentation has an error in it. The function is <b>es</b>GetProcessImage…(). You’ll find this call from myAppworkPd() in EcDemoApp.cpp. </p>
+<p> </p>
+<p>The online documentation is typically updated right away and then the PDF, so perhaps the PDF didn’t get updated properly. I will be sure to correct this in the PDF for future releases.</p>
+<p> </p>
+<p><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpublic.acontis.com%2Fmanuals%2FEC-Simulator%2F3.1%2Fhtml%2Fec-simulator%2Fsoftware-integration.html%23accessing-process-data-in-the-application&amp;data=05%7C01%7CJose.L.Corpuz%40disney.com%7C43b35922e327482b5d8808dafaa41172%7C56b731a8a2ac4c32bf6b616810e913c6%7C1%7C0%7C638097879828764410%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=YSpIaOancGXNJoKCiprzbbo3HzssZySnQ3EAlp7mySA%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpublic.acontis.com%2Fmanuals%2FEC-Simulator%2F3.1%2Fhtml%2Fec-simulator%2Fsoftware-integration.html%23accessing-process-data-in-the-application&amp;data=05%7C01%7CJose.L.Corpuz%40disney.com%7C43b35922e327482b5d8808dafaa41172%7C56b731a8a2ac4c32bf6b616810e913c6%7C1%7C0%7C638097879828764410%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=YSpIaOancGXNJoKCiprzbbo3HzssZySnQ3EAlp7mySA%3D&amp;reserved=0" target="_blank">https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/software-integration.html#accessing-process-data-in-the-application</a></p>
+<p> </p>
+<div>
+<p>/Jon</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Corpuz, Jose L &lt;<a href="mailto:Jose.L.Corpuz@disney.com">Jose.L.Corpuz@disney.com</a>&gt; <br>
+<b>Sent:</b> Thursday, January 19, 2023 2:16 PM<br>
+<b>To:</b> Jon Waters &lt;<a href="mailto:j.waters@acontis.com">j.waters@acontis.com</a>&gt;<br>
+<b>Cc:</b> Dahlinger, Cecelia &lt;<a href="mailto:cecelia.dahlinger@disney.com">cecelia.dahlinger@disney.com</a>&gt;<br>
+<b>Subject:</b> Questions about EC-Sim API</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Jon,<br>
+<br> Could you help me get in touch with somebody who knows the EC-Simulator API?<br> I have the demo running, but I can’t access the PDO buffer in the example code.<br> The documentation show in section 3.3, Accessing process data in the application, that there is a call emGetProcessImageInputPtr() and emGetProcessImageOutputPtr(). It is shown below in this screen capture.<br>
+<img border="0" style="max-width:100%;width:5.1041in;max-height:2.8333in;width:490px;max-height:272px;" src="/api/v1/ticket_attachment/4748/25204/106715?view=inline"></p>
+<p>I don’t see any other mention of this call anywhere in the docs nor can I find the call anywhere in the demo project?<br> Could help me find somebody to assist me in accessing the data being sent over the wire to the EC-Sim instance?<br>
+<br> Regards,<br> -Jose Corpuz</p>
+<p> </p>
+</div>
+</div>

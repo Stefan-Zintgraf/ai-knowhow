@@ -1,0 +1,99 @@
+# MVP1: default-branch / MR checks (offline) + hybrid eval + NFR + E2E privacy on tagged runner.
+# SaaS shared runners run the `test` stage; self-hosted jobs use tag `rag-mvp1-eval`.
+# Eval jobs are excluded from merge-request pipelines by default. See README:
+# "MVP1 eval + perf CI" for blocking vs report-only and required CI variables.
+
+variables:
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+  PIP_NO_CACHE_DIR: "1"
+  # R-18: deterministic merge-gate test uses config binding only; optional Hub load is `@pytest.mark.slow`.
+  HF_HOME: "${CI_PROJECT_DIR}/.cache/huggingface"
+  SENTENCE_TRANSFORMERS_HOME: "${CI_PROJECT_DIR}/.cache/sentence-transformers"
+
+stages:
+  - test
+  - eval
+
+mvp1_script_help_golden:
+  stage: test
+  image: python:3.12-bookworm
+  cache:
+    key: r18-ml-caches
+    paths:
+      - .cache/huggingface/
+      - .cache/sentence-transformers/
+  before_script:
+    - python -V
+    - python -m pip install --upgrade pip
+    - python -m pip install -e ".[dev]"
+  script:
+    - set -euo pipefail
+    - python -m pytest tests/unit/test_mvp1_deliverable_cli.py -q
+    # R-18 (merge gate): frozen reranker model id (no Hub); `slow` Hub smoke is opt-in
+    - python -m pytest tests/unit/test_cross_encoder_r18_smoke.py -m "not slow" -q
+
+.eval_mvp1_template: &eval_mvp1_template
+  stage: eval
+  tags: [rag-mvp1-eval]
+  image: python:3.12-bookworm
+  resource_group: rag_mvp1_eval
+  before_script:
+    - python -V
+    - python -m pip install --upgrade pip
+    - python -m pip install "httpx>=0.28.0"
+  # Schedule / "Run pipeline" (web) / API: run. Push: manual button. MR: off.
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      when: never
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $CI_PIPELINE_SOURCE == "web"
+    - if: $CI_PIPELINE_SOURCE == "api"
+    - if: $CI_PIPELINE_SOURCE == "parent_pipeline"
+    - if: $CI_PIPELINE_SOURCE == "push"
+      when: manual
+      allow_failure: true
+    - when: never
+  # GitLab → Settings → CI/CD → Variables (mask where needed):
+  #   RAG_SERVICE_TOKEN (required for eval jobs)
+  #   RAG_ADMIN_TOKEN (required for e2e_privacy_allow_remote)
+  #   RAG_CONFIG — path to config YAML for E2E (default: config.e2e.example.yaml in repo)
+  #   RAG_EVAL_BASE_URL (e.g. http://host:8080 from the runner to the stack) — hybrid / NFR
+  #   ENFORCE_THRESHOLDS — set "1" on hybrid job to fail on PRD lift margin
+  #   NFR_ENFORCE — set "1" on NFR job to fail p95 / concurrency; default report-only
+  #   NFR_P95_BUDGET_SEC, NFR_P95_SAMPLES, NFR_CONCURRENT — see scripts/nfr_retrieve_smoke.py
+
+hybrid_golden_eval:
+  <<: *eval_mvp1_template
+  script:
+    - set -euo pipefail
+    - test -n "${RAG_SERVICE_TOKEN:-}" || (echo "RAG_SERVICE_TOKEN is required" >&2; exit 1)
+    - python eval/eval_hybrid_vs_dense.py --base-url "${RAG_EVAL_BASE_URL:-http://127.0.0.1:8080}"
+
+nfr_retrieve_smoke:
+  <<: *eval_mvp1_template
+  # While tuning SLOs on a real corpus, failures are non-blocking. Flip to
+  # `allow_failure: false` when this job should block the pipeline.
+  allow_failure: true
+  script:
+    - set -euo pipefail
+    - test -n "${RAG_SERVICE_TOKEN:-}" || (echo "RAG_SERVICE_TOKEN is required" >&2; exit 1)
+    - python scripts/nfr_retrieve_smoke.py --base-url "${RAG_EVAL_BASE_URL:-http://127.0.0.1:8080}"
+
+# §2.8(5): preflight + e2e_privacy on the same self-hosted tag as other MVP1 eval jobs.
+# Requires a running stack (LiteLLM + Ollama + Qdrant + support_rag) on the runner host
+# or reachable from it — see docs/runbook-allow-remote-false-e2e.md
+e2e_privacy_allow_remote:
+  <<: *eval_mvp1_template
+  before_script:
+    - python -V
+    - python -m pip install --upgrade pip
+    - python -m pip install -e ".[dev]"
+  script:
+    - set -euo pipefail
+    - test -n "${RAG_SERVICE_TOKEN:-}" || (echo "RAG_SERVICE_TOKEN is required" >&2; exit 1)
+    - test -n "${RAG_ADMIN_TOKEN:-}" || (echo "RAG_ADMIN_TOKEN is required" >&2; exit 1)
+    - export RAG_CONFIG="${RAG_CONFIG:-config.e2e.example.yaml}"
+    - test -f "$RAG_CONFIG" || (echo "RAG_CONFIG file missing: $RAG_CONFIG" >&2; exit 1)
+    - python scripts/e2e_gateway_preflight.py
+    - export RUN_E2E_PRIVACY=1
+    - python -m pytest tests/e2e -m e2e_privacy -q

@@ -1,0 +1,133 @@
+### HEADER
+Id=4787
+Link=http://at-zammad/#ticket/zoom/4787
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ASCon (ID=615, Number=0, Country=DE)
+Commission=ASCon, Gemini (ID=695, Number=695)
+Number=704787
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=martin.kurz@ascon-systems.de (ID=1472, FirstName=Martin, LastName=Kurz)
+CreatedBy=martin.kurz@ascon-systems.de (ID=1472, FirstName=Martin, LastName=Kurz)
+Type=
+TimeUnit=
+CreatedAt=26.01.2023 12:49:27 +00:00
+UpdatedAt=10.02.2023 07:04:11 +00:00
+CloseAt=10.02.2023 07:04:11 +00:00
+ArticlesCount=2
+
+### TITLE
+Fragen zu Byte-Copy Macros
+
+### ARTICLE00_HEADER
+Id=25313
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.01.2023 12:49:27 +00:00
+UpdatedAt=26.01.2023 12:49:30 +00:00
+
+### ARTICLE00_SUBJECT
+Fragen zu Byte-Copy Macros
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Support,</p>
+<p> </p>
+<p>ich bin gerade dabei statt eigener Methoden für den Transfer von little endian Typen nach big endian zu verwenden, Macros einzusetzen, die in EC-Master_UserManual.pdf dokumentiert und in OsCommon.h deklariert sind.</p>
+<p> </p>
+<p>Mein Problem: Macros wie EC_GET_FRM_WORD und andere Ganzzahl-Macros, sind dokumentiert, andere, wie EC_REALSWAP nicht. Sollten diese Macros nicht verwendet werden? Oder sollte man die dokumentierten Ganzzahl-Macros der passenden Länge auch für Floating-Point Zahlen einsetzen?</p>
+<p> </p>
+<p>EC_REALSWAP ist ausserdem unabhänging vom EC_BIG_ENDIAN define definiert – es gibt also nur eine Version – mir ist unklar, ob und wies dieses Makro überhaupt eingesetzt werden sollte.</p>
+<p> </p>
+<p>Bei mehrbyte BITARRAY Typen: ich vermute mal, dass hier kein Swapping nötig ist.</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p> </p>
+<p>Martin Kurz</p>
+<p> </p>
+<p><img style="max-width:100%;width:2.0416in;max-height:.2708in;width:196px;max-height:26px;" src="/api/v1/ticket_attachment/4787/25313/107091?view=inline"></p>
+<p><b><span style="color:#077380;"><p> </p></span></b></p>
+<p> </p>
+<p><b><span lang="EN-US">ASCon Systems Holding GmbH </span></b><span lang="EN-US">| Curiestraße 5 | 70563 Stuttgart</span><span lang="EN-US"></span></p>
+<p><a href="https://ascon-systems.de/" rel="nofollow noreferrer noopener" title="https://ascon-systems.de/" target="_blank"><span lang="EN-US" style="color:blue;">www.ascon-systems.de</span></a>
+<span lang="EN-US">| Social Media: </span>
+<a href="https://de.linkedin.com/company/ascon-systems-gmbh" rel="nofollow noreferrer noopener" title="https://de.linkedin.com/company/ascon-systems-gmbh" target="_blank"><span lang="EN-US" style="color:blue;">LinkedIn</span></a><span lang="EN-US">, </span><a href="https://www.xing.com/companies/asconsystemsgmbh" rel="nofollow noreferrer noopener" title="https://www.xing.com/companies/asconsystemsgmbh" target="_blank"><span lang="EN-US" style="color:blue;">Xing</span></a><span lang="EN-US">, </span><a href="https://www.facebook.com/asconsystemsgmbh/" rel="nofollow noreferrer noopener" title="https://www.facebook.com/asconsystemsgmbh/" target="_blank"><span lang="EN-US" style="color:blue;">Facebook</span></a><span lang="EN-US">, </span><a href="https://vimeo.com/ascon" rel="nofollow noreferrer noopener" title="https://vimeo.com/ascon" target="_blank"><span lang="EN-US" style="color:blue;">Vimeo</span></a><span lang="EN-US"></span></p>
+<p><b><i><span lang="EN-US"><p> </p></span></i></b></p>
+<p>Handelsregister Stuttgart HRB 722606, Geschäftsführer: Jens Müller, Uwe Reumuth</p>
+<p> </p>
+<p><a href="https://ascon-systems.de/download/vertraulich.html" rel="nofollow noreferrer noopener" title="https://ascon-systems.de/download/vertraulich.html" target="_blank"><i><span style="color:blue;">Informationen zum Datenschutz</span></i></a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=25320
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.01.2023 13:56:17 +00:00
+UpdatedAt=26.01.2023 13:56:21 +00:00
+
+### ARTICLE01_SUBJECT
+Fragen zu Byte-Copy Macros
+
+### ARTICLE01_BODY
+Hallo Herr Kurz,<div><br></div><div>Bitte verwenden Sie nur <span>EC_GET<b>_FRM_</b></span><span> und </span><span>EC_SET</span><b>_FRM_</b><span> </span><span>macros zu diesem Zweck. Die sind dazu gedacht Daten aus dem process data image oder hin zu kopieren. FRM steht für frame.</span>
+</div><div><br></div><div>Für Real können Sie mit der DWORD Makros arbeiten.</div><div><br></div><div>Alle Byte Streams müssen nicht geswapped werden.</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, January 26, 2023 at 1:49:27 PM, Martin Kurz wrote:<br><br><div>
+<p>Hallo Support,</p>
+<p> </p>
+<p>ich bin gerade dabei statt eigener Methoden für den Transfer von little endian Typen nach big endian zu verwenden, Macros einzusetzen, die in EC-Master_UserManual.pdf dokumentiert und in OsCommon.h deklariert sind.</p>
+<p> </p>
+<p>Mein Problem: Macros wie EC_GET_FRM_WORD und andere Ganzzahl-Macros, sind dokumentiert, andere, wie EC_REALSWAP nicht. Sollten diese Macros nicht verwendet werden? Oder sollte man die dokumentierten Ganzzahl-Macros der passenden Länge auch für Floating-Point Zahlen einsetzen?</p>
+<p> </p>
+<p>EC_REALSWAP ist ausserdem unabhänging vom EC_BIG_ENDIAN define definiert – es gibt also nur eine Version – mir ist unklar, ob und wies dieses Makro überhaupt eingesetzt werden sollte.</p>
+<p> </p>
+<p>Bei mehrbyte BITARRAY Typen: ich vermute mal, dass hier kein Swapping nötig ist.</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p> </p>
+<p>Martin Kurz</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:2.0416in;max-height:.2708in;width:196px;max-height:26px;" src="/api/v1/ticket_attachment/4787/25320/107152?view=inline"></p>
+<p><b><span style="color:#077380;"></span></b></p>
+<p><b> </b></p>
+<p></p>
+<p> </p>
+<p><b><span lang="EN-US">ASCon Systems Holding GmbH </span></b><span lang="EN-US">| Curiestraße 5 | 70563 Stuttgart</span><span lang="EN-US"></span></p>
+<p><a href="https://ascon-systems.de/" rel="nofollow noreferrer noopener" title="https://ascon-systems.de/" target="_blank"><span lang="EN-US" style="color:blue;">www.ascon-systems.de</span></a>
+<span lang="EN-US">| Social Media: </span>
+<a href="https://de.linkedin.com/company/ascon-systems-gmbh" rel="nofollow noreferrer noopener" title="https://de.linkedin.com/company/ascon-systems-gmbh" target="_blank"><span lang="EN-US" style="color:blue;">LinkedIn</span></a><span lang="EN-US">, </span><a href="https://www.xing.com/companies/asconsystemsgmbh" rel="nofollow noreferrer noopener" title="https://www.xing.com/companies/asconsystemsgmbh" target="_blank"><span lang="EN-US" style="color:blue;">Xing</span></a><span lang="EN-US">, </span><a href="https://www.facebook.com/asconsystemsgmbh/" rel="nofollow noreferrer noopener" title="https://www.facebook.com/asconsystemsgmbh/" target="_blank"><span lang="EN-US" style="color:blue;">Facebook</span></a><span lang="EN-US">, </span><a href="https://vimeo.com/ascon" rel="nofollow noreferrer noopener" title="https://vimeo.com/ascon" target="_blank"><span lang="EN-US" style="color:blue;">Vimeo</span></a><span lang="EN-US"></span></p>
+<p><b><i><span lang="EN-US"></span></i></b></p>
+<p><b><i> </i></b></p>
+<p></p>
+<p>Handelsregister Stuttgart HRB 722606, Geschäftsführer: Jens Müller, Uwe Reumuth</p>
+<p> </p>
+<p><a href="https://ascon-systems.de/download/vertraulich.html" rel="nofollow noreferrer noopener" title="https://ascon-systems.de/download/vertraulich.html" target="_blank"><i><span style="color:blue;">Informationen zum Datenschutz</span></i></a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

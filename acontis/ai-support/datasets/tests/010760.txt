@@ -1,0 +1,176 @@
+### HEADER
+Id=10760
+Link=http://at-zammad/#ticket/zoom/10760
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=7010760
+Owner=s.romero@acontis.com (ID=2460, FirstName=Sebastian, LastName=Romero)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=11.06.2025 01:38:32 +00:00
+UpdatedAt=23.06.2025 06:14:58 +00:00
+CloseAt=23.06.2025 06:14:58 +00:00
+ArticlesCount=3
+
+### TITLE
+Issue to input the value to Data Type [Real] of CoE Object-Dictionay (PNo.104)
+
+### ARTICLE00_HEADER
+Id=61596
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.06.2025 01:38:32 +00:00
+UpdatedAt=11.06.2025 01:38:33 +00:00
+
+### ARTICLE00_SUBJECT
+Issue to input the value to Data Type [Real] of CoE Object-Dictionay (PNo.104)
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi Support Team,</div><div dir="ltr">
+<br>
+</div><div>This is from Mitsubishi (commission No. 40627).</div><div>EC-Engineer V.3.9.11.</div><div dir="ltr">
+<br>
+</div><div dir="ltr">When the big data is input to the Value area of CoE Object-Dictionay, there is a strange behavior.</div><div dir="ltr">Please refer the attache PDF, and fix the issue.</div><div dir="ltr">
+<br>
+</div><div dir="ltr">Best regards,</div><div dir="ltr">Yuichi</div><div dir="ltr"> </div><div>
+<div>- $B%W%m%U%'%C%7%g%J%k=8CD$rL\;X$9#S#S#V%0%k!<div>--------------------------------------------------</div>
+<div>$B3t&lt;02q<div>$B1D6HK\It(B $B4XEl1D6HIt(B | Kanto Sales Dept.</div>
+<div>$B0f=P(B $BM50l(B | Yuichi Ide</div>
+<div>$B=;=j(B : $B")(B101-0062 $BEl5~ET@iBeED6h?@ED=Y2OBf(B4-4-1 $B#P#M#O8fCc%N?e(B7$B3,(B</div>
+<div>7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=61627
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.06.2025 10:14:29 +00:00
+UpdatedAt=11.06.2025 10:14:32 +00:00
+
+### ARTICLE01_SUBJECT
+Issue to input the value to Data Type [Real] of CoE Object-Dictionay (PNo.104)
+
+### ARTICLE01_BODY
+Hi Yuichi,<br><br>I will take a look into this issue, I will let you know when I have fixed it<br><br>Best regards<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Sebastian Romero</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Wednesday, June 11, 2025 at 3:38:32 AM, Yuichi Ide wrote:<br><br><div dir="ltr">Hi Support Team,</div>
+<div dir="ltr">
+<br>
+</div>
+<div>This is from Mitsubishi (commission No. 40627).</div>
+<div>EC-Engineer V.3.9.11.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">When the big data is input to the Value area of CoE Object-Dictionay, there is a strange behavior.</div>
+<div dir="ltr">Please refer the attache PDF, and fix the issue.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Best regards,</div>
+<div dir="ltr">Yuichi</div>
+<div dir="ltr"> </div>
+<div>
+<div>- $B%W%m%U%'%C%7%g%J%k=8CD$rL\;X$9#S#S#V%0%k!<div>--------------------------------------------------</div>
+<div>$B3t&lt;02q<div>$B1D6HK\It(B $B4XEl1D6HIt(B | Kanto Sales Dept.</div>
+<div>$B0f=P(B $BM50l(B | Yuichi Ide</div>
+<div>$B=;=j(B : $B")(B101-0062 $BEl5~ET@iBeED6h?@ED=Y2OBf(B4-4-1 $B#P#M#O8fCc%N?e(B7$B3,(B</div>
+<div>7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=61641
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.06.2025 13:41:19 +00:00
+UpdatedAt=11.06.2025 13:41:22 +00:00
+
+### ARTICLE02_SUBJECT
+Issue to input the value to Data Type [Real] of CoE Object-Dictionay (PNo.104)
+
+### ARTICLE02_BODY
+Hi Yuichi,<br><br>Issue 1: The Error box "Invalid Value" is from the control itself, this Error box is displayed  as long as the control is not in focus, even selecting the same subindex causes this.<br>Issue 2: This is our code, the code checks if the inserted value is within the range of valid values of the OD Entry, these values come from the ESI.<br>Issue 3: Due to the limitation of Real32 values, it only has <span>7 decimal digits precision, the number 99,999,999 is seen as 1E+08.  </span><br><br>Best regards<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Sebastian Romero</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Wednesday, June 11, 2025 at 3:38:32 AM, Yuichi Ide wrote:<br><br><div dir="ltr">Hi Support Team,</div>
+<div dir="ltr">
+<br>
+</div>
+<div>This is from Mitsubishi (commission No. 40627).</div>
+<div>EC-Engineer V.3.9.11.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">When the big data is input to the Value area of CoE Object-Dictionay, there is a strange behavior.</div>
+<div dir="ltr">Please refer the attache PDF, and fix the issue.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Best regards,</div>
+<div dir="ltr">Yuichi</div>
+<div dir="ltr"> </div>
+<div>
+<div>- $B%W%m%U%'%C%7%g%J%k=8CD$rL\;X$9#S#S#V%0%k!<div>--------------------------------------------------</div>
+<div>$B3t&lt;02q<div>$B1D6HK\It(B $B4XEl1D6HIt(B | Kanto Sales Dept.</div>
+<div>$B0f=P(B $BM50l(B | Yuichi Ide</div>
+<div>$B=;=j(B : $B")(B101-0062 $BEl5~ET@iBeED6h?@ED=Y2OBf(B4-4-1 $B#P#M#O8fCc%N?e(B7$B3,(B</div>
+<div>7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

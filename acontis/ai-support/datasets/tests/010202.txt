@@ -1,0 +1,151 @@
+### HEADER
+Id=10202
+Link=http://at-zammad/#ticket/zoom/10202
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Brooks Automation (ID=812, Number=50515, Country=US)
+Commission=Brooks, Unknown (ID=966, Number=966)
+Number=7010202
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=samantha.braun@brooks.com (ID=3052, FirstName=Samantha, LastName=Braun)
+CreatedBy=samantha.braun@brooks.com (ID=3052, FirstName=Samantha, LastName=Braun)
+Type=
+TimeUnit=
+CreatedAt=17.03.2025 18:49:19 +00:00
+UpdatedAt=26.03.2025 07:10:59 +00:00
+CloseAt=26.03.2025 07:10:59 +00:00
+ArticlesCount=2
+
+### TITLE
+Support Request: Configuration and Shutdown Processes for EcMaster
+
+### ARTICLE00_HEADER
+Id=58517
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.03.2025 18:49:19 +00:00
+UpdatedAt=17.03.2025 18:49:19 +00:00
+
+### ARTICLE00_SUBJECT
+Support Request: Configuration and Shutdown Processes for EcMaster
+
+### ARTICLE00_BODY
+<div>Hello! I work at Brooks Automation, and I have some questions regarding the configuration and shutdown processes for the EcMaster.<br>
+<br> As part of our existing set up, we require the ability to reconfigure our robots with different settings without a power cycle. To achieve this, we reset each of our components to a "default" state and then reconfigure them with the new settings. As we integrate your SDK, we want to mirror this with the EcMaster for various settings including but not limited to loading a different ENI file. </div><div> </div><div>It is our current understanding that to do this we must first shutdown the master (pausing and deinitializing various components) and then reinitialize everything with the new settings. For this process, we referenced the "Exit" section of your MotionDemo as a guide for the order in which components need to be shut down.</div><div> </div><div>We have successfully seen this reconfiguration work in our environment; however, we are experiencing issues where, after a couple of reconfigurations, the software crashes. We currently hypothesize that it is related to a memory management issue and want to know if there are additional steps we should take in our "shutdown" with respect to the EcMaster. Your demo seems to show how to safely shut down the various components before ceasing operation, but we are unsure if this procedure accounts for memory management when initializing and configuring a new master within the same runtime session.</div><div> </div><div>Please let us know if you have any specific examples or suggestions for actions we should take to safely reconfigure with respect to the acontis SDK.</div><div> </div><div>Thank you for any advice you may have!</div><div> </div><div>
+<p>
+<span style=" color: rgb(36, 36, 36);"><b>Samantha Braun</b></span></p>
+<p>
+<span style=" color: rgb(36, 36, 36);">Software Engineer</span></p>
+<p>
+<span style=" color: rgb(36, 36, 36);"><img alt="Logo
+
+Description automatically generated" style="max-width:100%;width: 124.2pt;max-height: 32.99pt;max-width: 553px;min-width: auto;min-height: auto;width:165px;max-height:43px;" src="/api/v1/ticket_attachment/10202/58517/243712?view=inline"></span></p>
+<p>
+<span style=" color: rgb(36, 36, 36);">Brooks Automation | 15 Elizabeth Drive, Chelmsford, MA 01824</span></p>
+<p>
+<span style=" color: blue;"><u>Samantha.Braun<a href="mailto:Samantha.Braun@brooksautomation.com" title="mailto:Samantha.Braun@brooksautomation.com">@brooksautomation.com</a></u></span></p>
+<div> </div>
+</div><div>_____________________________________________________________________<div>
+<span>This email message, including any attachments, may contain confidential and proprietary information for the sole use of the intended recipient. If you are not the intended recipient, please notify the sender and delete this message from your system, without making any copy or distribution. Our website and email privacy policy is available at <a href="https://www.brooks.com/privacy" rel="nofollow noreferrer noopener" target="_blank">https://www.brooks.com/privacy</a></span> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=58623
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.03.2025 11:38:36 +00:00
+UpdatedAt=19.03.2025 11:38:40 +00:00
+
+### ARTICLE01_SUBJECT
+Support Request: Configuration and Shutdown Processes for EcMaster
+
+### ARTICLE01_BODY
+Hi Samantha,<div><br></div><div>
+<div>nice to hear from you!</div>
+<div><br></div>
+<div>
+<div>In principle, multiple initialization and deinitialization with our EC-Master stack within a single process run should <b>not</b> be a problem.</div>
+<div>In our unit tests as well as our functional tests, we do this many hundreds to thousands of times within the same process run. We also use <a href="https://valgrind.org/" title="https://valgrind.org/" rel="nofollow noreferrer noopener" target="_blank">https://valgrind.org/</a> to ensure we do our memory/resource management correctly.</div>
+</div>
+<div><br></div>
+<div>
+<div>Many of our function calls come in pairs, e.g. ecatInitMaster and ecatDeinitMaster or ecatRegisterClient and ecatUnregisterClient.</div>
+<div><span>Personally, I would use the EcMasterDemo as a guide, as this is better maintained than the EcMasterDemoMotion.</span></div>
+<div><br></div>
+<div>In principle you should perform the following step with respect to the EC-Master:</div>
+<div>
+<ol>
+<li>Bring the network to Init</li>
+<li>Unregister your client</li>
+<li>Stop the RAS server if it is running</li>
+<li>Wait until the “JobTask” has finished ...</li>
+<li>... and then deinitialize the EC-Master.</li>
+</ol>
+<div>See also Examples/ECMasterDemo/EcDemoApp.cpp <span>EC_T_DWORD EcDemoApp(T_EC_DEMO_APP_CONTEXT* pAppContext) at the very end of the function.</span>
+</div>
+</div>
+</div>
+<div><span><br></span></div>
+<div data-signature="true" data-signature-id="2">
+<div><span>Your application SW must be considered separately.</span></div>
+<div><span><br></span></div>
+<div>I have a feeling it might be a threading problem. That possibly the "JobTask" (the loop that calls continuously <span>ecatExecJob(...)</span><span>) (or another thread) is still running whether the EC-Master has already been deinitialized. Can you ensure the "JobTask" has ended and stopping it did not run in to time out or something. I would take a closer look at this. I don't think you can avoid debugging this.</span><br>
+</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, March 17, 2025 at 7:49:19 PM, Samantha Braun wrote:<br><br><div>Hello! I work at Brooks Automation, and I have some questions regarding the configuration and shutdown processes for the EcMaster.<br>
+<br> As part of our existing set up, we require the ability to reconfigure our robots with different settings without a power cycle. To achieve this, we reset each of our components to a "default" state and then reconfigure them with the new settings. As we integrate your SDK, we want to mirror this with the EcMaster for various settings including but not limited to loading a different ENI file. </div>
+<div> </div>
+<div>It is our current understanding that to do this we must first shutdown the master (pausing and deinitializing various components) and then reinitialize everything with the new settings. For this process, we referenced the "Exit" section of your MotionDemo as a guide for the order in which components need to be shut down.</div>
+<div> </div>
+<div>We have successfully seen this reconfiguration work in our environment; however, we are experiencing issues where, after a couple of reconfigurations, the software crashes. We currently hypothesize that it is related to a memory management issue and want to know if there are additional steps we should take in our "shutdown" with respect to the EcMaster. Your demo seems to show how to safely shut down the various components before ceasing operation, but we are unsure if this procedure accounts for memory management when initializing and configuring a new master within the same runtime session.</div>
+<div> </div>
+<div>Please let us know if you have any specific examples or suggestions for actions we should take to safely reconfigure with respect to the acontis SDK.</div>
+<div> </div>
+<div>Thank you for any advice you may have!</div>
+<div> </div>
+<div>
+<p>
+<span style=" color: rgb(36, 36, 36);"><b>Samantha Braun</b></span></p>
+<p>
+<span style=" color: rgb(36, 36, 36);">Software Engineer</span></p>
+<p>
+<span style=" color: rgb(36, 36, 36);"><img alt="Logo
+
+Description automatically generated" style="max-width:100%;max-width: 100%;min-width: auto;min-height: auto;width: 165px;max-height: 43px;" src="/api/v1/ticket_attachment/10202/58623/244330?view=inline"></span></p>
+<p>
+<span style=" color: rgb(36, 36, 36);">Brooks Automation | 15 Elizabeth Drive, Chelmsford, MA 01824</span></p>
+<p>
+<span style=" color: blue;"><u>Samantha.Braun<a href="mailto:Samantha.Braun@brooksautomation.com" title="mailto:Samantha.Braun@brooksautomation.com">@brooksautomation.com</a></u></span></p>
+<div> </div>
+</div>
+<div>_____________________________________________________________________<div>
+<span>This email message, including any attachments, may contain confidential and proprietary information for the sole use of the intended recipient. If you are not the intended recipient, please notify the sender and delete this message from your system, without making any copy or distribution. Our website and email privacy policy is available at <a href="https://www.brooks.com/privacy" rel="nofollow noreferrer noopener" target="_blank">https://www.brooks.com/privacy</a></span> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

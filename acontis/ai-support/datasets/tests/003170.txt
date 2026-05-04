@@ -1,0 +1,198 @@
+### HEADER
+Id=3170
+Link=http://at-zammad/#ticket/zoom/3170
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Fuji electric, PLC (ID=256, Number=256)
+Number=703170
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=07.06.2022 02:39:47 +00:00
+UpdatedAt=12.12.2023 13:52:37 +00:00
+CloseAt=10.06.2022 06:09:20 +00:00
+ArticlesCount=4
+
+### TITLE
+Question About EC-Master (Fuji Electric) [No.276]
+
+### ARTICLE00_HEADER
+Id=16655
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=07.06.2022 02:39:47 +00:00
+UpdatedAt=07.06.2022 02:39:50 +00:00
+
+### ARTICLE00_SUBJECT
+Question About EC-Master (Fuji Electric) [No.276]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question About EC-Master (Fuji Electric) [No.276]
+
+There is no description in 'Class B manual 3.1' for EC_NOTIFY_COMMUNICATION_TIMEOUT.
+Can you provide customers with materials with detailed information?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=16657
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.06.2022 06:32:08 +00:00
+UpdatedAt=07.06.2022 06:32:09 +00:00
+
+### ARTICLE01_SUBJECT
+Question About EC-Master (Fuji Electric) [No.276]
+
+### ARTICLE01_BODY
+<div>Hi Takuya,</div><div><span><br></span></div><div><span>EC_NOTIFY_COMMUNICATION_TIMEOUT is a EC-Monitor specific notification.</span></div><div><span><br></span></div><div><span><div>Best regards,</div></span></div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Holger Oelhaf</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">Am Dienstag, 7. Juni 2022, 04:39:47, schrieb Takuya Fujikawa:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question About EC-Master (Fuji Electric) [No.276]</div>
+<div><br></div>
+<div>There is no description in 'Class B manual 3.1' for EC_NOTIFY_COMMUNICATION_TIMEOUT.</div>
+<div>Can you provide customers with materials with detailed information?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=16661
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=07.06.2022 07:09:18 +00:00
+UpdatedAt=07.06.2022 07:09:18 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question About EC-Master (Fuji Electric) [No.276] [Ticket#703170]
+
+### ARTICLE02_BODY
+Dear Holger san
+
+I have an additional question.
+When will EC_NOTIFY_TAP_LINK_STATUS be notified?
+
+Best regards,
+Takuya Fujikawa
+
+On 2022/06/07 15:32, Holger Oelhaf via EC-Support wrote:
+> Hi Takuya,
+> 
+> EC_NOTIFY_COMMUNICATION_TIMEOUT is a EC-Monitor specific notification.
+> 
+> Best regards,
+> __________________________________________________________________________________________
+> Holger Oelhaf
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> Am Dienstag, 7. Juni 2022, 04:39:47, schrieb Takuya Fujikawa:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question About EC-Master (Fuji Electric) [No.276]
+>>
+>> There is no description in 'Class B manual 3.1' for EC_NOTIFY_COMMUNICATION_TIMEOUT.
+>> Can you provide customers with materials with detailed information?
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+
+### ARTICLE03_HEADER
+Id=16663
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.06.2022 07:10:53 +00:00
+UpdatedAt=07.06.2022 07:10:56 +00:00
+
+### ARTICLE03_SUBJECT
+Question About EC-Master (Fuji Electric) [No.276]
+
+### ARTICLE03_BODY
+<div>Hi Takuya,</div>this is also an EC-Monitor specific notification.<div><br></div><div>
+<div>Best regards,</div>
+<div>Holger</div>
+<div><br></div>
+<div><blockquote type="cite">Am Dienstag, 7. Juni 2022, 09:09:18, schrieb Takuya Fujikawa:<br><br><div>Dear Holger san</div>
+<div><br></div>
+<div>I have an additional question.</div>
+<div>When will EC_NOTIFY_TAP_LINK_STATUS be notified?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2022/06/07 15:32, Holger Oelhaf via EC-Support wrote:</div>
+<div>&gt; Hi Takuya,</div>
+<div>&gt;</div>
+<div>&gt; EC_NOTIFY_COMMUNICATION_TIMEOUT is a EC-Monitor specific notification.</div>
+<div>&gt;</div>
+<div>&gt; Best regards,</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Holger Oelhaf</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; Am Dienstag, 7. Juni 2022, 04:39:47, schrieb Takuya Fujikawa:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question About EC-Master (Fuji Electric) [No.276]</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; There is no description in 'Class B manual 3.1' for EC_NOTIFY_COMMUNICATION_TIMEOUT.</div>
+<div>&gt;&gt; Can you provide customers with materials with detailed information?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

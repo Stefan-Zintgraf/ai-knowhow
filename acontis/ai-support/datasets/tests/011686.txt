@@ -1,0 +1,186 @@
+### HEADER
+Id=11686
+Link=http://at-zammad/#ticket/zoom/11686
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Yushin, Removal robot for molding machines (ID=922, Number=922)
+Number=7011686
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=27.10.2025 01:13:46 +00:00
+UpdatedAt=04.11.2025 15:39:46 +00:00
+CloseAt=04.11.2025 15:39:46 +00:00
+ArticlesCount=5
+
+### TITLE
+Question about EC-Master(YUSHIN) [E151]
+
+### ARTICLE00_HEADER
+Id=67558
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=27.10.2025 01:13:46 +00:00
+UpdatedAt=27.10.2025 01:13:46 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(YUSHIN) [E151]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(YUSHIN) [E151]
+
+  1. Transition the EtherCAT slave from OP state to INIT state (executed by a task other than the job task)
+  2. Execute emDeinitMaster() (executed in the job task)
+  3. Reboot the μC3
+
+The customer is starting the master following the procedure described above, but an exception error is occurring.
+By tracing the process through debugging, we found that the execution flow moves to the CEcTimer::ResetInstance function, and then an exception error occurs during a malloc-related process.
+Therefore, we would like to ask for your guidance on the following two points:
+
+Q1. Is it normal for the CEcTimer::ResetInstance function to be called from within the emDeinitMaster function?
+
+Q2. In the process of either the emDeinitMaster function or the CEcTimer::ResetInstance function, is the malloc or free function called?
+
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=67630
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=27.10.2025 23:43:32 +00:00
+UpdatedAt=27.10.2025 23:43:32 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(YUSHIN) [E151]
+
+### ARTICLE01_BODY
+Dear EtherCAT Support
+
+Please answer the following questions.
+
+Best regards,
+Takuya Fujikawa
+
+On 2025/10/27 10:13, Takuya Fujikawa(acontis) wrote:
+> Dear EtherCAT Support
+> 
+> Question about EC-Master(YUSHIN) [E151]
+> 
+>   1. Transition the EtherCAT slave from OP state to INIT state (executed by a task other than the job task)
+>   2. Execute emDeinitMaster() (executed in the job task)
+>   3. Reboot the μC3
+> 
+> The customer is starting the master following the procedure described above, but an exception error is occurring.
+> By tracing the process through debugging, we found that the execution flow moves to the CEcTimer::ResetInstance function, and then an exception error occurs during a malloc-related process.
+> Therefore, we would like to ask for your guidance on the following two points:
+> 
+> Q1. Is it normal for the CEcTimer::ResetInstance function to be called from within the emDeinitMaster function?
+> 
+> Q2. In the process of either the emDeinitMaster function or the CEcTimer::ResetInstance function, is the malloc or free function called?
+> 
+> 
+> Best regards,
+> Takuya Fujikawa
+
+
+
+### ARTICLE02_HEADER
+Id=67654
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.10.2025 10:48:27 +00:00
+UpdatedAt=28.10.2025 10:48:31 +00:00
+
+### ARTICLE02_SUBJECT
+Question about EC-Master(YUSHIN) [E151]
+
+### ARTICLE02_BODY
+Hi Takuya,<div><br></div><div>1. I set a breakpoint in CEcTimer::ResetInstance() during e<span style="background-color: initial; color: rgb(88, 88, 86);">mDeinitMaster() and could validate all places to be</span> as expected. The <span style="background-color: initial; color: rgb(88, 88, 86);">CEcTimer</span><span style="background-color: initial; color: rgb(88, 88, 86);"> class is an helper for timeout monitoring and is called about 10 times.</span>
+</div><div><span style="background-color: initial; color: rgb(88, 88, 86);"><br></span></div><div>
+<span style="background-color: initial; color: rgb(88, 88, 86);">2. No malloc / free are called. The </span><span style="background-color: initial; color: rgb(88, 88, 86);">CEcTimer I saw are all as stack variables.</span>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, October 28, 2025 at 12:43:32 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Please answer the following questions.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2025/10/27 10:13, Takuya Fujikawa(acontis) wrote:</div>
+<div>&gt; Dear EtherCAT Support</div>
+<div>&gt;</div>
+<div>&gt; Question about EC-Master(YUSHIN) [E151]</div>
+<div>&gt;</div>
+<div>&gt;   1. Transition the EtherCAT slave from OP state to INIT state (executed by a task other than the job task)</div>
+<div>&gt;   2. Execute emDeinitMaster() (executed in the job task)</div>
+<div>&gt;   3. Reboot the μC3</div>
+<div>&gt;</div>
+<div>&gt; The customer is starting the master following the procedure described above, but an exception error is occurring.</div>
+<div>&gt; By tracing the process through debugging, we found that the execution flow moves to the CEcTimer::ResetInstance function, and then an exception error occurs during a malloc-related process.</div>
+<div>&gt; Therefore, we would like to ask for your guidance on the following two points:</div>
+<div>&gt;</div>
+<div>&gt; Q1. Is it normal for the CEcTimer::ResetInstance function to be called from within the emDeinitMaster function?</div>
+<div>&gt;</div>
+<div>&gt; Q2. In the process of either the emDeinitMaster function or the CEcTimer::ResetInstance function, is the malloc or free function called?</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt; Best regards,</div>
+<div>&gt; Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=68003
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=04.11.2025 11:26:45 +00:00
+UpdatedAt=04.11.2025 11:26:45 +00:00
+
+### ARTICLE03_BODY
+Webmeeting
+
+### ARTICLE04_HEADER
+Id=68020
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=04.11.2025 15:39:46 +00:00
+UpdatedAt=04.11.2025 15:39:46 +00:00
+
+### ARTICLE04_BODY
+see Linked Ticket 

@@ -1,0 +1,124 @@
+### HEADER
+Id=2398
+Link=http://at-zammad/#ticket/zoom/2398
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=AIST, Hum.Rob., Linux x86 (ID=243, Number=243)
+Number=702398
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=07.02.2022 12:15:03 +00:00
+UpdatedAt=08.02.2022 13:14:52 +00:00
+CloseAt=08.02.2022 13:14:52 +00:00
+ArticlesCount=3
+
+### TITLE
+Update Request from Soft Service Co., Ltd.
+
+### ARTICLE00_HEADER
+Id=12733
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.02.2022 12:15:03 +00:00
+UpdatedAt=07.02.2022 12:15:03 +00:00
+
+### ARTICLE00_SUBJECT
+Update Request from Soft Service Co., Ltd.
+
+### ARTICLE00_BODY
+<p>Dear Mr./Ms. Ide,</p><p>thank you for your registration.<br><br></p><p>First Name: Yuichi<br> Last Name: Ide<br> Company: Soft Service Co., Ltd.<br> Country: Japan<br> City: Tokyo<br> E-Mail: yuichi.ide@soft-service.co.jp<br> Request update for: EC-Master<br>Update Type: Maintenance<br> Operating System: Linux, x86 64 Bit<br> Operating Sys. Version: <br> Any Questions?: Please provide the latest version for AIST (commission No. 41081). And provide Class A Add-on and Intel PRO/1000 Link Layer. Best regards. Yuichi<br><br></p><p><img src="/api/v1/ticket_attachment/2398/12733/50340?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p>acontis technologies GmbH<br>Gartenstraße 46, 88212 Ravensburg/Germany<br> Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br> eMail: sales@acontis.comFollow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/2398/12733/50339?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></p>
+
+### ARTICLE01_HEADER
+Id=12744
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.02.2022 14:22:25 +00:00
+UpdatedAt=07.02.2022 14:22:29 +00:00
+
+### ARTICLE01_SUBJECT
+Update Request from Soft Service Co., Ltd.
+
+### ARTICLE01_BODY
+Hi Yuichi,<div><br></div><div>please find below the delivery for AIST:</div><div>
+<div><a href="https://downloads.acontis.com/2022/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.3.01/EC-Master-ClassA-AddOn-V3.1.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2022/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.3.01/EC-Master-ClassA-AddOn-V3.1.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.3.01/EC-Master-ClassA-AddOn-V3.1.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2022/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.3.01/EC-Master-I8254x-V3.1.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2022/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.3.01/EC-Master-I8254x-V3.1.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.3.01/EC-Master-I8254x-V3.1.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2022/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.3.01/EC-Master-V3.1.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2022/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.3.01/EC-Master-V3.1.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.3.01/EC-Master-V3.1.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div>
+</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, February 7, 2022, 1:15:03 PM, sales acontis wrote:<br><br><p>Dear Mr./Ms. Ide,</p>
+<p>thank you for your registration.<br><br></p>
+<p>First Name: Yuichi<br> Last Name: Ide<br> Company: Soft Service Co., Ltd.<br> Country: Japan<br> City: Tokyo<br> E-Mail: yuichi.ide@soft-service.co.jp<br> Request update for: EC-Master<br>Update Type: Maintenance<br> Operating System: Linux, x86 64 Bit<br> Operating Sys. Version: <br> Any Questions?: Please provide the latest version for AIST (commission No. 41081). And provide Class A Add-on and Intel PRO/1000 Link Layer. Best regards. Yuichi<br><br></p>
+<p><img src="/api/v1/ticket_attachment/2398/12744/50389?view=inline" alt="" style="max-width:100%;max-width:100%;width:163px;max-height:85px;"></p>
+<p>acontis technologies GmbH<br>Gartenstraße 46, 88212 Ravensburg/Germany<br> Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br> eMail: sales@acontis.comFollow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/2398/12744/50390?view=inline" style="max-width:100%;max-width:100%;width:22px;max-height:22px;"></a></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=12806
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.02.2022 11:33:17 +00:00
+UpdatedAt=08.02.2022 11:33:17 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Update Request from Soft Service Co., Ltd. [Ticket#702398]
+
+### ARTICLE02_BODY
+Hi Cyril, <div> </div><div>Thank you very much for your support!</div><div> </div><div>Best regards,</div><div>Yuichi</div><div>
+<br>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 カスタマーサクセスＢＵ | Customer Success BU<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+<div>
+<br>
+<blockquote type="cite">
+<div>2022/02/07 23:22、Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;のメール:</div>
+<br>
+<div>Hi Yuichi,<div> </div>
+<div>please find below the delivery for AIST:</div>
+<div>
+<div><a href="https://downloads.acontis.com/2022/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.3.01/EC-Master-ClassA-AddOn-V3.1.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2022/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.3.01/EC-Master-ClassA-AddOn-V3.1.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.3.01/EC-Master-ClassA-AddOn-V3.1.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2022/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.3.01/EC-Master-I8254x-V3.1.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2022/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.3.01/EC-Master-I8254x-V3.1.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.3.01/EC-Master-I8254x-V3.1.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2022/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.3.01/EC-Master-V3.1.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2022/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.3.01/EC-Master-V3.1.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.3.01/EC-Master-V3.1.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div>
+</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Cyril<br>
+<div> </div>
+<div>
+<blockquote type="cite"> On Monday, February 7, 2022, 1:15:03 PM, sales acontis wrote:<br>
+<br>
+<div>Dear Mr./Ms. Ide,</div>
+<div>thank you for your registration.<br>
+<br>
+</div>
+<div>First Name: Yuichi<br> Last Name: Ide<br> Company: Soft Service Co., Ltd.<br> Country: Japan<br> City: Tokyo<br> yuichi.ide@soft-service.co.jp<br> Request update for: EC-Master<br> Update Type: Maintenance<br> Operating System: Linux, x86 64 Bit<br> Operating Sys. Version: <br> Any Questions?: Please provide the latest version for AIST (commission No. 41081). And provide Class A Add-on and Intel PRO/1000 Link Layer. Best regards. Yuichi<br>
+<br>
+</div>
+<div>&lt;メールの添付ファイル.png&gt;</div>
+<div>acontis technologies GmbH<br> Gartenstraße 46, 88212 Ravensburg/Germany<br> Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br> eMail: sales@acontis.comFollow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank">&lt;メールの添付ファイル.png&gt;</a>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

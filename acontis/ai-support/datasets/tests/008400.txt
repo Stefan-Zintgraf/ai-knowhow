@@ -1,0 +1,76 @@
+### HEADER
+Id=8400
+Link=http://at-zammad/#ticket/zoom/8400
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Walt Disney Imaging (WDI) (ID=395, Number=40160, Country=US)
+Commission=WDI, Ride Control (ID=469, Number=469)
+Number=708400
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=david.brennan.-nd@disney.com (ID=994, FirstName=David, LastName=Brennan)
+CreatedBy=david.brennan.-nd@disney.com (ID=994, FirstName=David, LastName=Brennan)
+Type=
+TimeUnit=
+CreatedAt=28.06.2024 20:17:26 +00:00
+UpdatedAt=21.01.2025 13:22:58 +00:00
+CloseAt=21.01.2025 13:22:58 +00:00
+ArticlesCount=2
+
+### TITLE
+Delivery for Walt Disney Imagineering, Ride Control, Commission 41091
+
+### ARTICLE00_HEADER
+Id=46752
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.06.2024 20:17:26 +00:00
+UpdatedAt=28.06.2024 20:17:26 +00:00
+
+### ARTICLE00_SUBJECT
+Delivery for Walt Disney Imagineering, Ride Control, Commission 41091
+
+### ARTICLE00_BODY
+<div>
+<p>Holger,</p>
+<p>I’m not sure what is supposed to be in this update (maybe just the SdoUpload thing for EC-monitor). But it doesn’t look like it has the changes needed to get it to compile under VxWorks 24.03:</p>
+<p> </p>
+<p><img style="max-width:100%;width:15.4479in;max-height:13.5in;width:1483px;max-height:1296px;" src="/api/v1/ticket_attachment/8400/46752/193665?view=inline"></p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> EtherCAT Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Friday, June 28, 2024 12:48 AM<br>
+<b>To:</b> Brennan, David -ND &lt;david.brennan.-nd@disney.com&gt;<br>
+<b>Subject:</b> Delivery for Walt Disney Imagineering, Ride Control, Commission 41091</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p><b><span lang="DE">This Message is From an External Sender</span></b><span lang="DE"><br> Caution: Do not click links or open attachments unless you recognize the sender and know the content is safe.</span></p>
+</div>
+<div>
+<p><span lang="DE">Dear Customer, </span></p>
+<p><span lang="DE">please find your new software version below: </span></p>
+<p><span lang="DE"><a href="https://urldefense.com/v3/__https:/downloads.acontis.com/2024/V-Z/Walt_Disney_Imagineering_(41091)(US)/EC-Master_VxWorks_x86_32Bit/3.2.2.01/EC-Master-ClassA-AddOn-V3.2.2.01-VxWorks70-x86_32Bit-SDK_Unrestricted.zip__;!!Om87Lau1Cg!MVBZYx6UGsn4oLQxOaOqgWN1VieA7nphRFMYu4MaCdzhT6AbU6AcacKGr6IuUcAgVxD26-gQDe-pNXO1LrczCWM6dg%24" rel="nofollow noreferrer noopener" title="https://urldefense.com/v3/__https:/downloads.acontis.com/2024/V-Z/Walt_Disney_Imagineering_(41091)(US)/EC-Master_VxWorks_x86_32Bit/3.2.2.01/EC-Master-ClassA-AddOn-V3.2.2.01-VxWorks70-x86_32Bit-SDK_Unrestricted.zip__;!!Om87Lau1Cg!MVBZYx6UGsn4oLQxOaOqgWN1VieA7nphRFMYu4MaCdzhT6AbU6AcacKGr6IuUcAgVxD26-gQDe-pNXO1LrczCWM6dg%24" target="_blank">https://downloads.acontis.com/2024/V-Z/Walt_Disney_Imagineering_(41091)(US)/EC-Master_VxWorks_x86_32Bit/3.2.2.01/EC-Master-ClassA-AddOn-V3.2.2.01-VxWorks70-x86_32Bit-SDK_Unrestricted.zip</a></span></p>
+<p><span lang="DE"><a href="https://urldefense.com/v3/__https:/downloads.acontis.com/2024/V-Z/Walt_Disney_Imagineering_(41091)(US)/EC-Master_VxWorks_x86_32Bit/3.2.2.01/EC-Master-V3.2.2.01-VxWorks70-x86_32Bit-SDK_Unrestricted.zip__;!!Om87Lau1Cg!MVBZYx6UGsn4oLQxOaOqgWN1VieA7nphRFMYu4MaCdzhT6AbU6AcacKGr6IuUcAgVxD26-gQDe-pNXO1LrcVA9mQVA%24" rel="nofollow noreferrer noopener" title="https://urldefense.com/v3/__https:/downloads.acontis.com/2024/V-Z/Walt_Disney_Imagineering_(41091)(US)/EC-Master_VxWorks_x86_32Bit/3.2.2.01/EC-Master-V3.2.2.01-VxWorks70-x86_32Bit-SDK_Unrestricted.zip__;!!Om87Lau1Cg!MVBZYx6UGsn4oLQxOaOqgWN1VieA7nphRFMYu4MaCdzhT6AbU6AcacKGr6IuUcAgVxD26-gQDe-pNXO1LrcVA9mQVA%24" target="_blank">https://downloads.acontis.com/2024/V-Z/Walt_Disney_Imagineering_(41091)(US)/EC-Master_VxWorks_x86_32Bit/3.2.2.01/EC-Master-V3.2.2.01-VxWorks70-x86_32Bit-SDK_Unrestricted.zip</a></span></p>
+<p><span lang="DE"><a href="https://urldefense.com/v3/__https:/downloads.acontis.com/2024/V-Z/Walt_Disney_Imagineering_(41091)(US)/EC-Master_VxWorks_x86_32Bit/3.2.2.01/EC-RtEth-CCAT-V3.2.2.01-VxWorks70-x86_32Bit-SDK_Unrestricted.zip__;!!Om87Lau1Cg!MVBZYx6UGsn4oLQxOaOqgWN1VieA7nphRFMYu4MaCdzhT6AbU6AcacKGr6IuUcAgVxD26-gQDe-pNXO1Lrf40O4qLA%24" rel="nofollow noreferrer noopener" title="https://urldefense.com/v3/__https:/downloads.acontis.com/2024/V-Z/Walt_Disney_Imagineering_(41091)(US)/EC-Master_VxWorks_x86_32Bit/3.2.2.01/EC-RtEth-CCAT-V3.2.2.01-VxWorks70-x86_32Bit-SDK_Unrestricted.zip__;!!Om87Lau1Cg!MVBZYx6UGsn4oLQxOaOqgWN1VieA7nphRFMYu4MaCdzhT6AbU6AcacKGr6IuUcAgVxD26-gQDe-pNXO1Lrf40O4qLA%24" target="_blank">https://downloads.acontis.com/2024/V-Z/Walt_Disney_Imagineering_(41091)(US)/EC-Master_VxWorks_x86_32Bit/3.2.2.01/EC-RtEth-CCAT-V3.2.2.01-VxWorks70-x86_32Bit-SDK_Unrestricted.zip</a></span></p>
+<p><span lang="DE"><a href="https://urldefense.com/v3/__https:/downloads.acontis.com/2024/V-Z/Walt_Disney_Imagineering_(41091)(US)/EC-Master_VxWorks_x86_32Bit/3.2.2.01/EC-RtEth-IntelGbe-V3.2.2.01-VxWorks70-x86_32Bit-SDK_Unrestricted.zip__;!!Om87Lau1Cg!MVBZYx6UGsn4oLQxOaOqgWN1VieA7nphRFMYu4MaCdzhT6AbU6AcacKGr6IuUcAgVxD26-gQDe-pNXO1Lre2b3OlgQ%24" rel="nofollow noreferrer noopener" title="https://urldefense.com/v3/__https:/downloads.acontis.com/2024/V-Z/Walt_Disney_Imagineering_(41091)(US)/EC-Master_VxWorks_x86_32Bit/3.2.2.01/EC-RtEth-IntelGbe-V3.2.2.01-VxWorks70-x86_32Bit-SDK_Unrestricted.zip__;!!Om87Lau1Cg!MVBZYx6UGsn4oLQxOaOqgWN1VieA7nphRFMYu4MaCdzhT6AbU6AcacKGr6IuUcAgVxD26-gQDe-pNXO1Lre2b3OlgQ%24" target="_blank">https://downloads.acontis.com/2024/V-Z/Walt_Disney_Imagineering_(41091)(US)/EC-Master_VxWorks_x86_32Bit/3.2.2.01/EC-RtEth-IntelGbe-V3.2.2.01-VxWorks70-x86_32Bit-SDK_Unrestricted.zip</a></span></p>
+<p><span lang="DE"><a href="https://urldefense.com/v3/__https:/downloads.acontis.com/2024/V-Z/Walt_Disney_Imagineering_(41091)(US)/EC-Monitor/3.2.2.01/EC-Monitor-V3.2.2.01-VxWorks70-x86_32Bit-SDK_Unrestricted.zip__;!!Om87Lau1Cg!MVBZYx6UGsn4oLQxOaOqgWN1VieA7nphRFMYu4MaCdzhT6AbU6AcacKGr6IuUcAgVxD26-gQDe-pNXO1LrduN9lcgA%24" rel="nofollow noreferrer noopener" title="https://urldefense.com/v3/__https:/downloads.acontis.com/2024/V-Z/Walt_Disney_Imagineering_(41091)(US)/EC-Monitor/3.2.2.01/EC-Monitor-V3.2.2.01-VxWorks70-x86_32Bit-SDK_Unrestricted.zip__;!!Om87Lau1Cg!MVBZYx6UGsn4oLQxOaOqgWN1VieA7nphRFMYu4MaCdzhT6AbU6AcacKGr6IuUcAgVxD26-gQDe-pNXO1LrduN9lcgA%24" target="_blank">https://downloads.acontis.com/2024/V-Z/Walt_Disney_Imagineering_(41091)(US)/EC-Monitor/3.2.2.01/EC-Monitor-V3.2.2.01-VxWorks70-x86_32Bit-SDK_Unrestricted.zip</a></span></p>
+<p><span lang="DE">Password: ECM88250 </span></p>
+<p><span lang="DE">Best Regards, <br> Holger Oelhaf <br> __________________________________________________________________________________________ <br> Holger Oelhaf <br> EtherCAT Support <br> eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30 <br> acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://urldefense.com/v3/__https:/www.acontis.com__;!!Om87Lau1Cg!MVBZYx6UGsn4oLQxOaOqgWN1VieA7nphRFMYu4MaCdzhT6AbU6AcacKGr6IuUcAgVxD26-gQDe-pNXO1LrdtPk3WFQ%24" rel="nofollow noreferrer noopener" title="https://urldefense.com/v3/__https:/www.acontis.com__;!!Om87Lau1Cg!MVBZYx6UGsn4oLQxOaOqgWN1VieA7nphRFMYu4MaCdzhT6AbU6AcacKGr6IuUcAgVxD26-gQDe-pNXO1LrdtPk3WFQ%24" target="_blank"> https://www.acontis.com</a> <br> __________________________________________________________________________________________ <br> Subscribe to our newsletter and stay updated: <a href="https://urldefense.com/v3/__https:/www.acontis.com/en/newsletter.html__;!!Om87Lau1Cg!MVBZYx6UGsn4oLQxOaOqgWN1VieA7nphRFMYu4MaCdzhT6AbU6AcacKGr6IuUcAgVxD26-gQDe-pNXO1LrflfPcl0Q%24" rel="nofollow noreferrer noopener" title="https://urldefense.com/v3/__https:/www.acontis.com/en/newsletter.html__;!!Om87Lau1Cg!MVBZYx6UGsn4oLQxOaOqgWN1VieA7nphRFMYu4MaCdzhT6AbU6AcacKGr6IuUcAgVxD26-gQDe-pNXO1LrflfPcl0Q%24" target="_blank"> https://www.acontis.com/en/newsletter.html</a> </span></p>
+<p><span lang="DE">This is an automatic generated eMail. </span></p>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=46883
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=03.07.2024 05:43:29 +00:00
+UpdatedAt=03.07.2024 05:43:29 +00:00
+
+### ARTICLE01_BODY
+War wohl nicht so erfolgreich...

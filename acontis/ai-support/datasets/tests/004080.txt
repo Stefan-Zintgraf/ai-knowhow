@@ -1,0 +1,225 @@
+### HEADER
+Id=4080
+Link=http://at-zammad/#ticket/zoom/4080
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies GmbH (ID=399, Number=1000, Country=DE)
+Commission=Acontis, Generic (ID=590, Number=590)
+Number=704080
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+CreatedBy=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Type=
+TimeUnit=
+CreatedAt=10.10.2022 12:40:19 +00:00
+UpdatedAt=10.10.2022 13:45:54 +00:00
+CloseAt=10.10.2022 13:02:15 +00:00
+ArticlesCount=3
+
+### TITLE
+EC-Simulator 12er Runtime
+
+### ARTICLE00_HEADER
+Id=21478
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.10.2022 12:40:19 +00:00
+UpdatedAt=10.10.2022 12:40:19 +00:00
+
+### ARTICLE00_SUBJECT
+WG: EC-Simulator 12er Runtime
+
+### ARTICLE00_BODY
+<div>
+<p><span style="color:#1f497d;">
+<p>Hallo Paul,</p></span></p>
+<p><span style="color:#1f497d;"><p> </p></span></p>
+<p><span style="color:#1f497d;">bitte in der Software die 12er Grenze einbauen. Ist nicht eilig.</span></p>
+<p><span style="color:#1f497d;"><p> </p></span></p>
+<p><span style="color:#1f497d;">Christoph</span></p>
+<p><span style="color:#1f497d;"><p> </p></span></p>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Ronnie Schele &lt;r.schele@acontis.com&gt; <br><b>Gesendet:</b> Montag, 10. Oktober 2022 13:12 <br><b>An:</b> 'Christoph Widmann' &lt;c.widmann@acontis.com&gt; <br><b>Cc:</b> 'Paul Bußmann' &lt;p.bussmann@acontis.com&gt;; 'Patricia Bauce' &lt;p.bauce@acontis.com&gt; <br><b>Betreff:</b> AW: EC-Simulator 12er Runtime</p>
+</div>
+<p> </p>
+<p>Ich würde für die 12 Slaves einen Preis von 300.-€ ansetzen.</p>
+<p> </p>
+<div>
+<p><b>Von:</b> Patricia Bauce &lt;<a href="mailto:p.bauce@acontis.com">p.bauce@acontis.com</a>&gt; <br><b>Gesendet:</b> Montag, 10. Oktober 2022 12:58 <br><b>An:</b> 'Christoph Widmann' &lt;<a href="mailto:c.widmann@acontis.com">c.widmann@acontis.com</a>&gt;; 'Ronnie Schele' &lt;<a href="mailto:r.schele@acontis.com">r.schele@acontis.com</a>&gt;; 'Paul Bußmann' &lt;<a href="mailto:p.bussmann@acontis.com">p.bussmann@acontis.com</a>&gt; <br><b>Betreff:</b> AW: EC-Simulator 12er Runtime</p>
+</div>
+<p><span lang="EN-US"><p> </p></span></p>
+<p>Ja, das stimmt schon. Aber bei Anfragen nach kleinerer Stückzahl haben wir sonst halt immer die für 24 Slaves verkauft…</p>
+<p> </p>
+<div>
+<p><b>Von:</b> Christoph Widmann &lt;<a href="mailto:c.widmann@acontis.com">c.widmann@acontis.com</a>&gt; <br><b>Gesendet:</b> Montag, 10. Oktober 2022 12:34 <br><b>An:</b> 'Patricia Bauce' &lt;<a href="mailto:p.bauce@acontis.com">p.bauce@acontis.com</a>&gt;; Ronnie Schele &lt;<a href="mailto:r.schele@acontis.com">r.schele@acontis.com</a>&gt;; 'Paul Bußmann' &lt;<a href="mailto:p.bussmann@acontis.com">p.bussmann@acontis.com</a>&gt; <br><b>Betreff:</b> EC-Simulator 12er Runtime</p>
+</div>
+<p> </p>
+<p>Wir haben schon öfters Anfragen zu einer kleineren Simulator Runtime erhalten</p>
+<p> </p>
+<p>Aktuell ist die kleinste Lizenz für 24 Slaves und kostet EUR 525.</p>
+<p>64 Slaves kosten bereits EUR 840</p>
+<p> </p>
+<p>Ich würde jetzt gerne noch eine 12er Lizenz einführen. Preis dann EUR 280 anbieten.</p>
+<p> </p>
+<p>Was denkt ihr?</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=21479
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.10.2022 13:02:15 +00:00
+UpdatedAt=10.10.2022 13:02:16 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Simulator 12er Runtime
+
+### ARTICLE01_BODY
+<div>Hi,</div><div><br></div>ist in V3.1.4.06 integriert.<div>Kai hat es auch schon ins Lizenztool aufgenommen.</div><div><div>
+<div data-signature="true" data-signature-id="2">
+<div><br></div>
+<div>Viele Grüße</div>
+<div>Paul</div>
+</div>
+<div><br></div>
+<div><blockquote type="cite">Am Montag, 10. Oktober 2022 um 14:40:19, schrieb Christoph Widmann:<br><br><div>
+<p><span style="color:#1f497d;">
+</span></p>
+<p>Hallo Paul,</p>
+<p></p>
+<p><span style="color:#1f497d;"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:#1f497d;">bitte in der Software die 12er Grenze einbauen. Ist nicht eilig.</span></p>
+<p><span style="color:#1f497d;"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:#1f497d;">Christoph</span></p>
+<p><span style="color:#1f497d;"></span></p>
+<p> </p>
+<p></p>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Ronnie Schele &lt;r.schele@acontis.com&gt; <br><b>Gesendet:</b> Montag, 10. Oktober 2022 13:12 <br><b>An:</b> 'Christoph Widmann' &lt;c.widmann@acontis.com&gt; <br><b>Cc:</b> 'Paul Bußmann' &lt;p.bussmann@acontis.com&gt;; 'Patricia Bauce' &lt;p.bauce@acontis.com&gt; <br><b>Betreff:</b> AW: EC-Simulator 12er Runtime</p>
+</div>
+<p> </p>
+<p>Ich würde für die 12 Slaves einen Preis von 300.-€ ansetzen.</p>
+<p> </p>
+<div>
+<p><b>Von:</b> Patricia Bauce &lt;<a href="mailto:p.bauce@acontis.com">p.bauce@acontis.com</a>&gt; <br><b>Gesendet:</b> Montag, 10. Oktober 2022 12:58 <br><b>An:</b> 'Christoph Widmann' &lt;<a href="mailto:c.widmann@acontis.com">c.widmann@acontis.com</a>&gt;; 'Ronnie Schele' &lt;<a href="mailto:r.schele@acontis.com">r.schele@acontis.com</a>&gt;; 'Paul Bußmann' &lt;<a href="mailto:p.bussmann@acontis.com">p.bussmann@acontis.com</a>&gt; <br><b>Betreff:</b> AW: EC-Simulator 12er Runtime</p>
+</div>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p>Ja, das stimmt schon. Aber bei Anfragen nach kleinerer Stückzahl haben wir sonst halt immer die für 24 Slaves verkauft…</p>
+<p> </p>
+<div>
+<p><b>Von:</b> Christoph Widmann &lt;<a href="mailto:c.widmann@acontis.com">c.widmann@acontis.com</a>&gt; <br><b>Gesendet:</b> Montag, 10. Oktober 2022 12:34 <br><b>An:</b> 'Patricia Bauce' &lt;<a href="mailto:p.bauce@acontis.com">p.bauce@acontis.com</a>&gt;; Ronnie Schele &lt;<a href="mailto:r.schele@acontis.com">r.schele@acontis.com</a>&gt;; 'Paul Bußmann' &lt;<a href="mailto:p.bussmann@acontis.com">p.bussmann@acontis.com</a>&gt; <br><b>Betreff:</b> EC-Simulator 12er Runtime</p>
+</div>
+<p> </p>
+<p>Wir haben schon öfters Anfragen zu einer kleineren Simulator Runtime erhalten</p>
+<p> </p>
+<p>Aktuell ist die kleinste Lizenz für 24 Slaves und kostet EUR 525.</p>
+<p>64 Slaves kosten bereits EUR 840</p>
+<p> </p>
+<p>Ich würde jetzt gerne noch eine 12er Lizenz einführen. Preis dann EUR 280 anbieten.</p>
+<p> </p>
+<p>Was denkt ihr?</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div></div>
+
+### ARTICLE02_HEADER
+Id=21480
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.10.2022 13:10:52 +00:00
+UpdatedAt=10.10.2022 13:10:52 +00:00
+
+### ARTICLE02_SUBJECT
+AW: EC-Simulator 12er Runtime [Ticket#704080]
+
+### ARTICLE02_BODY
+<div>
+<p><span style="color:#1f497d;">Super!</span></p>
+<p><span style="color:#1f497d;"><p> </p></span></p>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b><span> Paul Bußmann via EC-Support &lt;ecsupport@acontis.com&gt; <br><b>Gesendet:</b> Montag, 10. Oktober 2022 15:02<br><b>An:</b> c.widmann@acontis.com; r.schele@acontis.com; p.bauce@acontis.com; k.feifel@acontis.com<br><b>Betreff:</b> RE: EC-Simulator 12er Runtime [Ticket#704080]</span></p>
+</div>
+<p> </p>
+<div>
+<p>Hi,</p>
+</div>
+<div>
+<p> </p>
+</div>
+<p>ist in V3.1.4.06 integriert.</p>
+<div>
+<p>Kai hat es auch schon ins Lizenztool aufgenommen.</p>
+</div>
+<div>
+<div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Viele Grüße</p>
+</div>
+<div>
+<p>Paul</p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div><blockquote>
+<p>Am Montag, 10. Oktober 2022 um 14:40:19, schrieb Christoph Widmann:</p>
+<div>
+<p>Hallo Paul,</p>
+<p> </p>
+<p><span style="color:#1f497d;">bitte in der Software die 12er Grenze einbauen. Ist nicht eilig.</span></p>
+<p> </p>
+<p><span style="color:#1f497d;">Christoph</span></p>
+<p> </p>
+<div>
+<p><b>Von:</b> Ronnie Schele &lt;<a href="mailto:r.schele@acontis.com">r.schele@acontis.com</a>&gt; <br><b>Gesendet:</b> Montag, 10. Oktober 2022 13:12 <br><b>An:</b> 'Christoph Widmann' &lt;<a href="mailto:c.widmann@acontis.com">c.widmann@acontis.com</a>&gt; <br><b>Cc:</b> 'Paul Bußmann' &lt;<a href="mailto:p.bussmann@acontis.com">p.bussmann@acontis.com</a>&gt;; 'Patricia Bauce' &lt;<a href="mailto:p.bauce@acontis.com">p.bauce@acontis.com</a>&gt; <br><b>Betreff:</b> AW: EC-Simulator 12er Runtime</p>
+</div>
+<p> </p>
+<p>Ich würde für die 12 Slaves einen Preis von 300.-€ ansetzen.</p>
+<p> </p>
+<div>
+<p><b>Von:</b> Patricia Bauce &lt;<a href="mailto:p.bauce@acontis.com">p.bauce@acontis.com</a>&gt; <br><b>Gesendet:</b> Montag, 10. Oktober 2022 12:58 <br><b>An:</b> 'Christoph Widmann' &lt;<a href="mailto:c.widmann@acontis.com">c.widmann@acontis.com</a>&gt;; 'Ronnie Schele' &lt;<a href="mailto:r.schele@acontis.com">r.schele@acontis.com</a>&gt;; 'Paul Bußmann' &lt;<a href="mailto:p.bussmann@acontis.com">p.bussmann@acontis.com</a>&gt; <br><b>Betreff:</b> AW: EC-Simulator 12er Runtime</p>
+</div>
+<p> </p>
+<p>Ja, das stimmt schon. Aber bei Anfragen nach kleinerer Stückzahl haben wir sonst halt immer die für 24 Slaves verkauft…</p>
+<p> </p>
+<div>
+<p><b>Von:</b> Christoph Widmann &lt;<a href="mailto:c.widmann@acontis.com">c.widmann@acontis.com</a>&gt; <br><b>Gesendet:</b> Montag, 10. Oktober 2022 12:34 <br><b>An:</b> 'Patricia Bauce' &lt;<a href="mailto:p.bauce@acontis.com">p.bauce@acontis.com</a>&gt;; Ronnie Schele &lt;<a href="mailto:r.schele@acontis.com">r.schele@acontis.com</a>&gt;; 'Paul Bußmann' &lt;<a href="mailto:p.bussmann@acontis.com">p.bussmann@acontis.com</a>&gt; <br><b>Betreff:</b> EC-Simulator 12er Runtime</p>
+</div>
+<p> </p>
+<p>Wir haben schon öfters Anfragen zu einer kleineren Simulator Runtime erhalten</p>
+<p> </p>
+<p>Aktuell ist die kleinste Lizenz für 24 Slaves und kostet EUR 525.</p>
+<p>64 Slaves kosten bereits EUR 840</p>
+<p> </p>
+<p>Ich würde jetzt gerne noch eine 12er Lizenz einführen. Preis dann EUR 280 anbieten.</p>
+<p> </p>
+<p>Was denkt ihr?</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote></div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

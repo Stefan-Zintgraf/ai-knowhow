@@ -1,0 +1,174 @@
+### HEADER
+Id=405
+Link=http://at-zammad/#ticket/zoom/405
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Relativity Space (ID=385, Number=40410, Country=US)
+Commission=Relativity Space, Internal Controllers (ID=457, Number=457)
+Number=700405
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=chrdina@relativityspace.com (ID=91, FirstName=Chase, LastName=Hrdina)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=13.04.2021 15:24:32 +00:00
+UpdatedAt=14.04.2021 05:50:32 +00:00
+CloseAt=14.04.2021 05:50:32 +00:00
+ArticlesCount=3
+
+### TITLE
+Fwd: EC-Engineer
+
+### ARTICLE00_HEADER
+Id=2122
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.04.2021 15:24:32 +00:00
+UpdatedAt=13.04.2021 15:24:32 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: EC-Engineer
+
+### ARTICLE00_BODY
+Are there any plans, and how much effort is involved, to have a native Linux version of EC-Engineer rather than the EC-Engineer Web for Linux? I think there is probably significant effort to do the graphics side of EC-Engineer in Linux, yes?<br><br>/Jon<br><br><div>
+<strong> From: </strong> Chase Hrdina &lt;chrdina@relativityspace.com&gt; <br>
+<strong> To: </strong> Jon Waters &lt;j.waters@acontis.com&gt; <br>
+<strong> Cc: </strong> Jon Oliver &lt;joliver@relativityspace.com&gt;, Charney Thomas III &lt;cthomas@relativityspace.com&gt; <br>
+<strong> Sent: </strong> 4/13/2021 11:04 AM <br>
+<strong> Subject: </strong> EC-Engineer <br><br><blockquote><div>
+<div>Jon,<br>
+</div>
+<div> </div>
+<div>As we've discussed, the local EC-Engineer seems to be a bit further along than the web version, and we're leaning towards using that until the Web version is more aligned on features. That said, is there any plan to make the local EC-Engineer Linux compatible? If not, has your team looked at what it would take to do so?<br>
+</div>
+<div> </div>
+<div>Since (I believe) it's NET Core, it might be fairly simple. Would be super helpful if we could stick to all Linux based software, as our dev's work in Linux, and our tool chain has become all linux based with the addition of EC-Master.<br>
+</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Chase<br>
+</div>
+</div></blockquote>
+</div>
+
+### ARTICLE01_HEADER
+Id=2128
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.04.2021 16:36:34 +00:00
+UpdatedAt=13.04.2021 16:36:34 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: EC-Engineer
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>in the past we did a prototype based on the Qt Framework. </div><div>But we decided to go with Web technology, which is much more future save.</div><div>For a native Linux version we would have to program a complete new user interface.</div><div>This would take 1-2 years!</div><div><br></div><div>Christoph<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Christoph Widmann </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, April 13, 2021, 5:24:32 PM, Jon Waters wrote:<br><br>Are there any plans, and how much effort is involved, to have a native Linux version of EC-Engineer rather than the EC-Engineer Web for Linux? I think there is probably significant effort to do the graphics side of EC-Engineer in Linux, yes?<br><br>/Jon<br><br><div>
+<strong> From: </strong> Chase Hrdina &lt;chrdina@relativityspace.com&gt; <br>
+<strong> To: </strong> Jon Waters &lt;j.waters@acontis.com&gt; <br>
+<strong> Cc: </strong> Jon Oliver &lt;joliver@relativityspace.com&gt;, Charney Thomas III &lt;cthomas@relativityspace.com&gt; <br>
+<strong> Sent: </strong> 4/13/2021 11:04 AM <br>
+<strong> Subject: </strong> EC-Engineer <br><br><blockquote><div>
+<div>Jon,<br>
+</div>
+<div> </div>
+<div>As we've discussed, the local EC-Engineer seems to be a bit further along than the web version, and we're leaning towards using that until the Web version is more aligned on features. That said, is there any plan to make the local EC-Engineer Linux compatible? If not, has your team looked at what it would take to do so?<br>
+</div>
+<div> </div>
+<div>Since (I believe) it's NET Core, it might be fairly simple. Would be super helpful if we could stick to all Linux based software, as our dev's work in Linux, and our tool chain has become all linux based with the addition of EC-Master.<br>
+</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Chase<br>
+</div>
+</div></blockquote>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=2132
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.04.2021 20:29:58 +00:00
+UpdatedAt=13.04.2021 20:29:58 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Fwd: EC-Engineer [Ticket#700405]
+
+### ARTICLE02_BODY
+That is what I expected, thanks Christoph!<br><br>/Jon<br><br><div>
+<strong> From: </strong> Christoph Widmann via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<strong> To: </strong> &lt;j.waters@acontis.com&gt; <br>
+<strong> Sent: </strong> 4/13/2021 12:36 PM <br>
+<strong> Subject: </strong> RE: Fwd: EC-Engineer [Ticket#700405] <br><br><blockquote><div>Hi Jon,<div> </div>
+<div>in the past we did a prototype based on the Qt Framework.</div>
+<div>But we decided to go with Web technology, which is much more future save.</div>
+<div>For a native Linux version we would have to program a complete new user interface.</div>
+<div>This would take 1-2 years!</div>
+<div> </div>
+<div>Christoph<br><div> <div>____________________________________________________________________________<br> </div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>eMail: ecsupport@acontis.com<br> </div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Tuesday, April 13, 2021, 5:24:32 PM, Jon Waters wrote:<br><br>Are there any plans, and how much effort is involved, to have a native Linux version of EC-Engineer rather than the EC-Engineer Web for Linux? I think there is probably significant effort to do the graphics side of EC-Engineer in Linux, yes?<br><br>/Jon<br><br><div> <strong> From: </strong> Chase Hrdina &lt;chrdina@relativityspace.com&gt; <br> <strong> To: </strong> Jon Waters &lt;j.waters@acontis.com&gt; <br> <strong> Cc: </strong> Jon Oliver &lt;joliver@relativityspace.com&gt;, Charney Thomas III &lt;cthomas@relativityspace.com&gt; <br> <strong> Sent: </strong> 4/13/2021 11:04 AM <br> <strong> Subject: </strong> EC-Engineer <br><br><blockquote><div> <div>Jon,<br> </div>
+<div> </div>
+<div>As we've discussed, the local EC-Engineer seems to be a bit further along than the web version, and we're leaning towards using that until the Web version is more aligned on features. That said, is there any plan to make the local EC-Engineer Linux compatible? If not, has your team looked at what it would take to do so?<br> </div>
+<div> </div>
+<div>Since (I believe) it's NET Core, it might be fairly simple. Would be super helpful if we could stick to all Linux based software, as our dev's work in Linux, and our tool chain has become all linux based with the addition of EC-Master.<br> </div>
+<div> </div>
+<div>Thanks,</div>
+<div>Chase<br> </div>
+</div></blockquote> </div>
+<br> </blockquote></div>
+<div> </div>
+<br><br> </div>
+</div></blockquote>
+</div>

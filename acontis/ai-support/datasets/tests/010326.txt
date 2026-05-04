@@ -1,0 +1,197 @@
+### HEADER
+Id=10326
+Link=http://at-zammad/#ticket/zoom/10326
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Comau (ID=706, Number=0, Country=IT)
+Commission=Comau, Robot Controller (ID=790, Number=790)
+Number=7010326
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=vladimir.mudritsky@comau.com (ID=2212, FirstName=Vladimir, LastName=Mudritsky)
+CreatedBy=vladimir.mudritsky@comau.com (ID=2212, FirstName=Vladimir, LastName=Mudritsky)
+Type=
+TimeUnit=
+CreatedAt=02.04.2025 08:00:09 +00:00
+UpdatedAt=14.04.2025 12:54:25 +00:00
+CloseAt=14.04.2025 12:54:25 +00:00
+ArticlesCount=4
+
+### TITLE
+ESI File from BBH
+
+### ARTICLE00_HEADER
+Id=59222
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.04.2025 08:00:09 +00:00
+UpdatedAt=02.04.2025 08:00:09 +00:00
+
+### ARTICLE00_SUBJECT
+ESI File from BBH
+
+### ARTICLE00_BODY
+<div dir="ltr">
+<div>Dear Acontis,</div>
+<div>
+<div> </div>
+<div>I am writing to you today because I have encountered an issue with an ESI file I obtained from BBH company.</div>
+<div> </div>
+<div>Specifically, the ESI file works as expected when used with the Twincat tool. However, when I attempt to import the same file into EC-Engineer,</div>
+<div>the device does not appear in the catalog.</div>
+<div> </div>
+<div>Thank you for your time and assistance.</div>
+<div> </div>
+<div>Best regards,</div>
+<div> </div>
+<div>Vladimir Mudritsky</div>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/10326/59222/247010?view=inline" alt="image.png" style="max-width:100%;width:543px;max-height:324px;"><br>
+</div>
+<div> </div>
+<div>
+<img src="/api/v1/ticket_attachment/10326/59222/247009?view=inline" alt="image.png" style="max-width:100%;width:543px;max-height:361px;"><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/10326/59222/247011?view=inline" alt="image.png" style="max-width:100%;width:218px;max-height:258px;"><br>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=59237
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.04.2025 12:18:23 +00:00
+UpdatedAt=02.04.2025 12:18:25 +00:00
+
+### ARTICLE01_SUBJECT
+ESI File from BBH
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>it was because of the ParentGroupId. I will check if this is a bug in the ESI file or in EC-Engineer. Please use the attached ESI as a workarround so long.</div><div><br></div><div>Best regards,<br>Kai Feifel<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, April 2, 2025 at 10:00:09 AM, Vladimir Mudritsky wrote:<br><br><div dir="ltr">
+<div>Dear Acontis,</div>
+<div>
+<div> </div>
+<div>I am writing to you today because I have encountered an issue with an ESI file I obtained from BBH company.</div>
+<div> </div>
+<div>Specifically, the ESI file works as expected when used with the Twincat tool. However, when I attempt to import the same file into EC-Engineer,</div>
+<div>the device does not appear in the catalog.</div>
+<div> </div>
+<div>Thank you for your time and assistance.</div>
+<div> </div>
+<div>Best regards,</div>
+<div> </div>
+<div>Vladimir Mudritsky</div>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/10326/59237/247199?view=inline" alt="image.png" style="max-width:100%;max-width:100%;width:543px;max-height:324px;"><br>
+</div>
+<div> </div>
+<div>
+<img src="/api/v1/ticket_attachment/10326/59237/247200?view=inline" alt="image.png" style="max-width:100%;max-width:100%;width:543px;max-height:361px;"><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/10326/59237/247201?view=inline" alt="image.png" style="max-width:100%;max-width:100%;width:218px;max-height:258px;"><br>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=59595
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.04.2025 08:36:32 +00:00
+UpdatedAt=14.04.2025 08:36:34 +00:00
+
+### ARTICLE02_SUBJECT
+ESI File from BBH
+
+### ARTICLE02_BODY
+<div>Hi,</div><div><br></div><div>this seems to be a bug in the ESI File. Because there is only one group in "Groups". So the ParentGroup cannot be found because it is not there. So either there has to be a ParentGroup called FCU or the tag should be delete, as I did it in the workaround.</div><div><br></div><div>Best regards,</div><div>Kai</div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=59621
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.04.2025 12:51:10 +00:00
+UpdatedAt=14.04.2025 12:51:10 +00:00
+
+### ARTICLE03_SUBJECT
+Re: ESI File from BBH [Ticket#7010326]
+
+### ARTICLE03_BODY
+<div dir="ltr">Hi Kai,<br><br>Understood. Thanks for your help!<br><br>Best regards,<br><br>Vladimir Mudritsky<br><br>
+</div><br><div>
+<div dir="ltr">On Mon, Apr 14, 2025 at 10:36 AM Kai Feifel via EC-Support &lt;<a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>&gt; wrote:<br>
+</div>
+<blockquote><div> <div>
+<div>Hi,</div>
+<div> </div>
+<div>this seems to be a bug in the ESI File. Because there is only one group in "Groups". So the ParentGroup cannot be found because it is not there. So either there has to be a ParentGroup called FCU or the tag should be delete, as I did it in the workaround.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://urldefense.com/v3/__https://www.acontis.com/__;!!PL9jYlIBIw!5de4u6YAJ8QIkOQUSK6wfDLh86F5LJIwp0_Dj3l1doEPkcXv7yOgkZAE5fsCf8B9S9nCXnYF-UZxgRVZ2fWUpaFzyw%24" rel="nofollow noreferrer noopener" title="https://urldefense.com/v3/__https://www.acontis.com/__;!!PL9jYlIBIw!5de4u6YAJ8QIkOQUSK6wfDLh86F5LJIwp0_Dj3l1doEPkcXv7yOgkZAE5fsCf8B9S9nCXnYF-UZxgRVZ2fWUpaFzyw%24" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://urldefense.com/v3/__https://www.acontis.com/en/newsletter.html__;!!PL9jYlIBIw!5de4u6YAJ8QIkOQUSK6wfDLh86F5LJIwp0_Dj3l1doEPkcXv7yOgkZAE5fsCf8B9S9nCXnYF-UZxgRVZ2fX01CF6Nw%24" rel="nofollow noreferrer noopener" title="https://urldefense.com/v3/__https://www.acontis.com/en/newsletter.html__;!!PL9jYlIBIw!5de4u6YAJ8QIkOQUSK6wfDLh86F5LJIwp0_Dj3l1doEPkcXv7yOgkZAE5fsCf8B9S9nCXnYF-UZxgRVZ2fX01CF6Nw%24" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+</div>
+</div></blockquote>
+</div>

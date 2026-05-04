@@ -1,0 +1,227 @@
+### HEADER
+Id=6011
+Link=http://at-zammad/#ticket/zoom/6011
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Applied Materials, Inc. (ID=332, Number=50007, Country=US)
+Commission=Applied Materials, Maglev 2020 (ID=169, Number=169)
+Number=706011
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=timo_adler@amat.com (ID=1100, FirstName=Timo, LastName=Adler)
+CreatedBy=timo_adler@amat.com (ID=1100, FirstName=Timo, LastName=Adler)
+Type=
+TimeUnit=
+CreatedAt=20.07.2023 08:48:23 +00:00
+UpdatedAt=24.07.2023 06:04:52 +00:00
+CloseAt=24.07.2023 06:04:52 +00:00
+ArticlesCount=3
+
+### TITLE
+RAS Server Verbindung mit multimaster Ecat
+
+### ARTICLE00_HEADER
+Id=32046
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.07.2023 08:48:23 +00:00
+UpdatedAt=20.07.2023 08:48:27 +00:00
+
+### ARTICLE00_SUBJECT
+RAS Server Verbindung mit multimaster Ecat
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="en-DE">Hallo,</span></p>
+<p><span lang="en-DE"><p> </p></span></p>
+<p><span lang="en-DE">Wir haben mehrere ECAT Busse in einer Applikation zusammengefasst.<br> Jeder Master hat einen eigenen notification-context.<br> Für jeden dieser Master starten wir einen RAS-Server auf einem individuellen TCP-port. Den Ras Servern wird der Notification-context des Masters übergeben. Im Notification context ist die ID des Masters vermerkt.<br>
+<br> Nun das Problem:<br> Unabhängig davon an welchen RAS Server wir uns mit dem EC-Engineer verbinden, sehen wir nur die Slaves des ersten Masters. Die anderen Busse sind nicht zugreifbar.<br>
+<br> Braucht es da etwas in unserer Applikation um dem Ras Server beizubringen mit mehreren Mastern zu sprechen, oder muss man das im EC-Engineer irgendwie einstellen?<br>
+<br> Schöne Grüße,</span></p>
+<p><span lang="en-DE"><p> </p></span></p>
+<p><span lang="en-DE"><p> </p></span></p>
+<p><span lang="en-DE">Timo Adler</span></p>
+</div><p>The content of this message is APPLIED MATERIALS CONFIDENTIAL. If you are not the intended recipient, please notify me, delete this email and do not use or distribute this email.</p>
+
+### ARTICLE01_HEADER
+Id=32061
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.07.2023 11:55:12 +00:00
+UpdatedAt=20.07.2023 11:55:16 +00:00
+
+### ARTICLE01_SUBJECT
+RAS Server Verbindung mit multimaster Ecat
+
+### ARTICLE01_BODY
+Hallo Herr Adler,<div><br></div><div>eigentlich nicht. Im EC-Engineer müssen Sie nur folgendes einstellen:</div><div>- IP Adresse: 127.0.0.1</div><div>- Port: 6000</div><div>- Master-Instanz: 0</div><div><br></div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/6011/32061/133187?view=inline"><br>
+</div><div><br></div><div>Sicher dass Sie unterschiedliche Ports haben? Normalerweise wird der RAS Server gestartet und man verwendet nur unterschiedlichen Master-Instanzen z.B. 0, 1, 2, ...</div><div><br></div><div>Mit freundlichen Grüßen</div><div>Martin Gänzer</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, July 20, 2023 at 10:48:23 AM, Timo Adler wrote:<br><br><div>
+<p><span lang="en-DE">Hallo,</span></p>
+<p><span lang="en-DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="en-DE">Wir haben mehrere ECAT Busse in einer Applikation zusammengefasst.<br> Jeder Master hat einen eigenen notification-context.<br> Für jeden dieser Master starten wir einen RAS-Server auf einem individuellen TCP-port. Den Ras Servern wird der Notification-context des Masters übergeben. Im Notification context ist die ID des Masters vermerkt.<br>
+<br> Nun das Problem:<br> Unabhängig davon an welchen RAS Server wir uns mit dem EC-Engineer verbinden, sehen wir nur die Slaves des ersten Masters. Die anderen Busse sind nicht zugreifbar.<br>
+<br> Braucht es da etwas in unserer Applikation um dem Ras Server beizubringen mit mehreren Mastern zu sprechen, oder muss man das im EC-Engineer irgendwie einstellen?<br>
+<br> Schöne Grüße,</span></p>
+<p><span lang="en-DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="en-DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="en-DE">Timo Adler</span></p>
+</div>
+<p>The content of this message is APPLIED MATERIALS CONFIDENTIAL. If you are not the intended recipient, please notify me, delete this email and do not use or distribute this email.</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=32065
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.07.2023 12:58:29 +00:00
+UpdatedAt=20.07.2023 12:58:29 +00:00
+
+### ARTICLE02_SUBJECT
+RE: [EXTERNAL] RE: RAS Server Verbindung mit multimaster Ecat [Ticket#706011]
+
+### ARTICLE02_BODY
+<div>
+<p><span lang="en-DE">Hallo,</span></p>
+<p><span lang="en-DE"><p> </p></span></p>
+<p><span lang="en-DE">Ich habe ihre Anwort an das Feldteam weitergeleitet und das hat tatsächlich die Lösung gebracht. Die Option die Master Instanz auszuwählen wurde übersehen.</span></p>
+<p><span lang="en-DE"><p> </p></span></p>
+<p><span lang="en-DE">Vielen Dank für die schnelle Hilfe!</span></p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b><span lang="EN-US">From:</span></b><span lang="EN-US"> Martin Gaenzer via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Thursday, 20 July 2023 13:55<br>
+<b>To:</b> Timo Adler --TR &lt;Timo_Adler@amat.com&gt;<br>
+<b>Subject:</b> [EXTERNAL] RE: RAS Server Verbindung mit multimaster Ecat [Ticket#706011]</span></p>
+</div>
+<p> </p>
+<div>
+<p>Hallo Herr Adler, eigentlich nicht. Im EC-Engineer müssen Sie nur folgendes einstellen: - IP Adresse: 127. 0. 0. 1 - Port: 6000 - Master-Instanz: 0 Sicher dass Sie unterschiedliche Ports haben? Normalerweise wird der RAS Server gestartet und man</p>
+</div>
+<div>
+</div>
+<p>Hallo Herr Adler,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>eigentlich nicht. Im EC-Engineer müssen Sie nur folgendes einstellen:</p>
+</div>
+<div>
+<p>- IP Adresse: 127.0.0.1</p>
+</div>
+<div>
+<p>- Port: 6000</p>
+</div>
+<div>
+<p>- Master-Instanz: 0</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p><img border="0" style="max-width:100%;width:12.4479in;max-height:9.5208in;width:1195px;max-height:914px;" src="/api/v1/ticket_attachment/6011/32065/133199?view=inline"></p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Sicher dass Sie unterschiedliche Ports haben? Normalerweise wird der RAS Server gestartet und man verwendet nur unterschiedlichen Master-Instanzen z.B. 0, 1, 2, ...</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Mit freundlichen Grüßen</p>
+</div>
+<div>
+<p>Martin Gänzer</p>
+</div>
+<div>
+<p> </p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Martin Gaenzer</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p><span>eMail: <a href="mailto:ecsupport@acontis.com"> ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</span></p>
+</div>
+<div>
+<p><span>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://urldefense.com/v3/__https:/www.acontis.com/__;!!NH8t9uXaRvxizNEf!WoyH2SlJQnKg5oS89dvfi6Kh1Ou6mWT6a1B960IKwfxY1qPDH6CybjTg8hnut9lkYX2Q8-igxR4PQCeivUo%24" rel="nofollow noreferrer noopener" title="https://urldefense.com/v3/__https:/www.acontis.com/__;!!NH8t9uXaRvxizNEf!WoyH2SlJQnKg5oS89dvfi6Kh1Ou6mWT6a1B960IKwfxY1qPDH6CybjTg8hnut9lkYX2Q8-igxR4PQCeivUo%24" target="_blank">https://www.acontis.com</a>
+</span></p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p><span>Subscribe to our newsletter and stay updated: <a href="https://urldefense.com/v3/__https:/www.acontis.com/en/newsletter.html__;!!NH8t9uXaRvxizNEf!WoyH2SlJQnKg5oS89dvfi6Kh1Ou6mWT6a1B960IKwfxY1qPDH6CybjTg8hnut9lkYX2Q8-igxR4P4Gs8bMI%24" rel="nofollow noreferrer noopener" title="https://urldefense.com/v3/__https:/www.acontis.com/en/newsletter.html__;!!NH8t9uXaRvxizNEf!WoyH2SlJQnKg5oS89dvfi6Kh1Ou6mWT6a1B960IKwfxY1qPDH6CybjTg8hnut9lkYX2Q8-igxR4P4Gs8bMI%24" target="_blank">https://www.acontis.com/en/newsletter.html</a></span></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Thursday, July 20, 2023 at 10:48:23 AM, Timo Adler wrote:</p>
+<div>
+<p><span lang="en-DE">Hallo,</span></p>
+<p> </p>
+<p><span lang="en-DE">Wir haben mehrere ECAT Busse in einer Applikation zusammengefasst.<br> Jeder Master hat einen eigenen notification-context.<br> Für jeden dieser Master starten wir einen RAS-Server auf einem individuellen TCP-port. Den Ras Servern wird der Notification-context des Masters übergeben. Im Notification context ist die ID des Masters vermerkt.<br>
+<br> Nun das Problem:<br> Unabhängig davon an welchen RAS Server wir uns mit dem EC-Engineer verbinden, sehen wir nur die Slaves des ersten Masters. Die anderen Busse sind nicht zugreifbar.<br>
+<br> Braucht es da etwas in unserer Applikation um dem Ras Server beizubringen mit mehreren Mastern zu sprechen, oder muss man das im EC-Engineer irgendwie einstellen?<br>
+<br> Schöne Grüße,</span></p>
+<p> </p>
+<p><span lang="en-DE">Timo Adler</span></p>
+</div>
+<p>The content of this message is APPLIED MATERIALS CONFIDENTIAL. If you are not the intended recipient, please notify me, delete this email and do not use or distribute this email.</p>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

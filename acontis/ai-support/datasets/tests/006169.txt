@@ -1,0 +1,121 @@
+### HEADER
+Id=6169
+Link=http://at-zammad/#ticket/zoom/6169
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=706169
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=18.08.2023 23:01:47 +00:00
+UpdatedAt=02.09.2023 06:03:16 +00:00
+CloseAt=02.09.2023 06:03:16 +00:00
+ArticlesCount=2
+
+### TITLE
+EcMaster.cpp warning
+
+### ARTICLE00_HEADER
+Id=33086
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.08.2023 23:01:47 +00:00
+UpdatedAt=18.08.2023 23:01:50 +00:00
+
+### ARTICLE00_SUBJECT
+EcMaster.cpp warning
+
+### ARTICLE00_BODY
+<div>
+<p>There is a new compiler warning in V3.2.1.01 when building under my INTEGRITY project. I will suppress it, but maybe it is something that you guys can fix? Or maybe it would violate a coding standard to merge the <b>continue+break</b> into just <b>continue</b>:</p>
+<p> </p>
+<p><b>EcMaster.cpp (V3.2.1.01):</b></p>
+<p> </p>
+<p>1062: <span style="color:blue;">case</span>
+<span style="color:#6f008a;">ECM_DCS_SYSTIMEDIFF_FILTERDEPTH</span>: <span style="color:green;">/* see ecdcsm_configdccontrollers1 */</span></p>
+<p>1063: {</p>
+<p>1064: <span style="color:#6f008a;">EC_TRACE_SUBMEM</span>(<span style="color:#6f008a;">EC_MEMTRACE_CONFIG</span>, <span style="color:#a31515;">"CEcMaster::m_ppInitCmds[..]"</span>, pInitCmdDesc, <span style="color:#6f008a;">SIZEOF_EcInitCmdDesc</span>(pInitCmdDesc));</p>
+<p>1065: <span style="color:#6f008a;">OsFree</span>(pInitCmdDesc);</p>
+<p>1066: <span style="color:blue;">continue</span>;</p>
+<p>1067: } <span style="color:blue;">break</span>;</p>
+<p><span style="color:olive;">src-ecmaster\Sources\EcMaster\EcMaster.cpp(1067): warning #111-D:</span></p>
+<p><span style="color:gray;"> statement is unreachable</span></p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Computer Systems, Inc.<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=33092
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.08.2023 09:32:55 +00:00
+UpdatedAt=19.08.2023 09:32:58 +00:00
+
+### ARTICLE01_SUBJECT
+EcMaster.cpp warning
+
+### ARTICLE01_BODY
+Hi Quinton,<div><br></div><div>I am going to merge it into a <b>continue.</b>
+</div><div><b><br></b></div><div>Best Regards</div><div>Haithem Jebali<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Saturday, August 19, 2023 at 1:01:47 AM, Quinton Tormanen wrote:<br><br><div>
+<p>There is a new compiler warning in V3.2.1.01 when building under my INTEGRITY project. I will suppress it, but maybe it is something that you guys can fix? Or maybe it would violate a coding standard to merge the <b>continue+break</b> into just <b>continue</b>:</p>
+<p> </p>
+<p><b>EcMaster.cpp (V3.2.1.01):</b></p>
+<p> </p>
+<p>1062: <span style="color:blue;">case</span>
+<span style="color:#6f008a;">ECM_DCS_SYSTIMEDIFF_FILTERDEPTH</span>: <span style="color:green;">/* see ecdcsm_configdccontrollers1 */</span></p>
+<p>1063: {</p>
+<p>1064: <span style="color:#6f008a;">EC_TRACE_SUBMEM</span>(<span style="color:#6f008a;">EC_MEMTRACE_CONFIG</span>, <span style="color:#a31515;">"CEcMaster::m_ppInitCmds[..]"</span>, pInitCmdDesc, <span style="color:#6f008a;">SIZEOF_EcInitCmdDesc</span>(pInitCmdDesc));</p>
+<p>1065: <span style="color:#6f008a;">OsFree</span>(pInitCmdDesc);</p>
+<p>1066: <span style="color:blue;">continue</span>;</p>
+<p>1067: } <span style="color:blue;">break</span>;</p>
+<p><span style="color:olive;">src-ecmaster\Sources\EcMaster\EcMaster.cpp(1067): warning #111-D:</span></p>
+<p><span style="color:gray;"> statement is unreachable</span></p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Computer Systems, Inc.<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

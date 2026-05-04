@@ -1,0 +1,229 @@
+### HEADER
+Id=2212
+Link=http://at-zammad/#ticket/zoom/2212
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Daihen, Wafer Transfer Robot (ID=587, Number=587)
+Number=702212
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=12.01.2022 09:59:32 +00:00
+UpdatedAt=12.12.2023 13:52:33 +00:00
+CloseAt=21.01.2022 07:05:36 +00:00
+ArticlesCount=6
+
+### TITLE
+Question about EC-Master(DAIHEN)
+
+### ARTICLE00_HEADER
+Id=11681
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=12.01.2022 09:59:33 +00:00
+UpdatedAt=12.01.2022 09:59:35 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(DAIHEN)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(DAIHEN)
+
+Is there an API to get the index number of the object assigned by PDO mapping?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=11684
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.01.2022 10:16:01 +00:00
+UpdatedAt=12.01.2022 10:16:03 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(DAIHEN)
+
+### ARTICLE01_BODY
+<div>Hi Takuya,</div><div><br></div><div>you can read the PDO Mapping objects from the slave.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><br>
+</div><div><blockquote type="cite">On Wednesday, January 12, 2022, 10:59:33 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(DAIHEN)</div>
+<div><br></div>
+<div>Is there an API to get the index number of the object assigned by PDO mapping?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=11738
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=12.01.2022 23:55:05 +00:00
+UpdatedAt=12.01.2022 23:55:05 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master(DAIHEN) [Ticket#702212]
+
+### ARTICLE02_BODY
+Dear Cyril san
+
+ > you can read the PDO Mapping objects from the slave.
+
+Is there an API to read the index number of an object from ENI?
+
+Best regards,
+Takuya Fujikawa
+
+
+On 2022/01/12 19:16, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+> 
+> you can read the PDO Mapping objects from the slave.
+> 
+> Best Regards,
+> Cyril
+> 
+>> On Wednesday, January 12, 2022, 10:59:33 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Master(DAIHEN)
+>>
+>> Is there an API to get the index number of the object assigned by PDO mapping?
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+
+### ARTICLE03_HEADER
+Id=11753
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.01.2022 11:11:06 +00:00
+UpdatedAt=13.01.2022 11:11:08 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(DAIHEN)
+
+### ARTICLE03_BODY
+Hi Takuya,<div><br></div><div>
+<div>please look for</div>
+<div>
+<span>EC_T_PROCESS_VAR_INFO_EX::</span><span>wIndex</span>
+</div>
+<div>
+<span>EC_T_PROCESS_VAR_INFO_EX::</span><span>wSubIndex</span>
+</div>
+<div>EC_T_PROCESS_VAR_INFO_EX::<span>wPdoIndex</span><br>
+</div>
+<div><br></div>
+<div>returned by ecatGetSlaveInpVarInfoEx()</div>
+</div><div><br></div><div>Best Regards,</div><div>Cyril<div><br></div>
+<div><blockquote type="cite">On Thursday, January 13, 2022, 12:55:05 AM, Takuya Fujikawa wrote:<br><br><div>Dear Cyril san</div>
+<div><br></div>
+<div> &gt; you can read the PDO Mapping objects from the slave.</div>
+<div><br></div>
+<div>Is there an API to read the index number of an object from ENI?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2022/01/12 19:16, Cyril Eyssautier via EC-Support wrote:</div>
+<div>&gt; Hi Takuya,</div>
+<div>&gt;</div>
+<div>&gt; you can read the PDO Mapping objects from the slave.</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; Cyril</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Wednesday, January 12, 2022, 10:59:33 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Master(DAIHEN)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Is there an API to get the index number of the object assigned by PDO mapping?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE04_HEADER
+Id=12586
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=02.02.2022 08:31:49 +00:00
+UpdatedAt=02.02.2022 08:31:49 +00:00
+
+### ARTICLE04_SUBJECT
+Question about EC-Master(DAIHEN)
+
+### ARTICLE04_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(DAIHEN)
+
+Customers are testing in DC mode.
+When the communication cycle is 1000us, the master is working.
+When the communication cycle is 8000us, the master will fail.
+Please check the attachment and tell me why it fails.
+
+Best regards,
+Takuya Fujikawa
+
+### ARTICLE05_HEADER
+Id=12607
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.02.2022 15:36:59 +00:00
+UpdatedAt=02.02.2022 15:37:01 +00:00
+
+### ARTICLE05_SUBJECT
+Question about EC-Master(DAIHEN)
+
+### ARTICLE05_BODY
+Hi Takuya,<div><br></div><div>unfortunately, I don't see any error message in the log file. Perhaps they need to increase the timeout of emSetMasterState, but I don't see any timeout message. Additionally, you can require the dcmlog file to see if DCM is getting in  sync or not.</div><div><br></div><div>Best Regards,</div><div>Cyril<div><br></div>
+<div><blockquote type="cite">On Wednesday, February 2, 2022, 9:31:49 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(DAIHEN)</div>
+<div><br></div>
+<div>Customers are testing in DC mode.</div>
+<div>When the communication cycle is 1000us, the master is working.</div>
+<div>When the communication cycle is 8000us, the master will fail.</div>
+<div>Please check the attachment and tell me why it fails.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,179 @@
+### HEADER
+Id=4639
+Link=http://at-zammad/#ticket/zoom/4639
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Equinox Material Handling Equipment BV (ID=306, Number=40326, Country=NL)
+Commission=Equinox, Starsort (ID=362, Number=362)
+Number=704639
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=linas_k@equinox.lt (ID=926, FirstName=Linas, LastName=Kardasevicius)
+CreatedBy=linas_k@equinox.lt (ID=926, FirstName=Linas, LastName=Kardasevicius)
+Type=
+TimeUnit=
+CreatedAt=29.12.2022 12:51:27 +00:00
+UpdatedAt=29.12.2022 13:50:38 +00:00
+CloseAt=29.12.2022 13:50:38 +00:00
+ArticlesCount=3
+
+### TITLE
+Latest version of EC Master
+
+### ARTICLE00_HEADER
+Id=24476
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=29.12.2022 12:51:27 +00:00
+UpdatedAt=29.12.2022 12:51:28 +00:00
+
+### ARTICLE00_SUBJECT
+Latest version of EC Master
+
+### ARTICLE00_BODY
+Hello,
+
+We are currently porting our software to RTX 4. Could you provide a
+download link to the latest version of EC Master for RTX 4.x
+
+The version I curently have is RTX master 3.1.3.02 (March 2022).
+
+Thank you,
+
+Linas
+
+
+Įspėjimas dėl konfidencialumo / Confidentiality notice:
+https://www.equinox.lt/konfidencialumas
+
+
+### ARTICLE01_HEADER
+Id=24477
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.12.2022 13:37:43 +00:00
+UpdatedAt=29.12.2022 13:37:47 +00:00
+
+### ARTICLE01_SUBJECT
+Latest version of EC Master
+
+### ARTICLE01_BODY
+Hi Linas,<div><br></div><div>
+<span>Please find the update in the following link:</span><br>
+</div><div>
+<div><a href="https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-ClassA-AddOn-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip" title="https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-ClassA-AddOn-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-ClassA-AddOn-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip</a></div>
+<div><a href="https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-I8254x-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip" title="https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-I8254x-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-I8254x-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip</a></div>
+<div><a href="https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-RTL8169-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip" title="https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-RTL8169-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-RTL8169-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip</a></div>
+<div><a href="https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip" title="https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip</a></div>
+</div><div><br></div><div>Passowrd is ECM88250</div><div><br></div><div>Best regards</div><div>Haithem Jebali</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, December 29, 2022 at 1:51:27 PM, Linas Kardasevicius wrote:<br><br><div>Hello,</div>
+<div><br></div>
+<div>We are currently porting our software to RTX 4. Could you provide a</div>
+<div>download link to the latest version of EC Master for RTX 4.x</div>
+<div><br></div>
+<div>The version I curently have is RTX master 3.1.3.02 (March 2022).</div>
+<div><br></div>
+<div>Thank you,</div>
+<div><br></div>
+<div>Linas</div>
+<div><br></div>
+<div>Įspėjimas dėl konfidencialumo / Confidentiality notice:</div>
+<div><a href="https://www.equinox.lt/konfidencialumas" title="https://www.equinox.lt/konfidencialumas" rel="nofollow noreferrer noopener" target="_blank">https://www.equinox.lt/konfidencialumas</a></div>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=24478
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.12.2022 13:46:50 +00:00
+UpdatedAt=29.12.2022 13:46:50 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Latest version of EC Master [Ticket#704639]
+
+### ARTICLE02_BODY
+<p>Thank you.</p><p><br>
+</p><p>Linas</p><p><br>
+</p><div>On 12/29/2022 3:37 PM, Haithem Jebali via EC-Support wrote:<br>
+</div><blockquote type="cite" cite="mid:20221229133743.4639.6d1517ea-4d4e-43f2-bc4e-74a7a19fe8e8@at-zammad"> Hi Linas, <div> </div>
+<div>Please find the update in the following link:<br>
+</div>
+<div>
+<div><a href="https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-ClassA-AddOn-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip" title="https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-ClassA-AddOn-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-ClassA-AddOn-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip</a></div>
+<div><a href="https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-I8254x-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip" title="https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-I8254x-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-I8254x-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip</a></div>
+<div><a href="https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-RTL8169-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip" title="https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-RTL8169-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-RTL8169-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip</a></div>
+<div><a href="https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip" title="https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/D-F/Equinox_MHE_(40326)(NL)/EC-Master_RTX/3.1.4.07/EC-Master-V3.1.4.07-RTX64-x86_64Bit-SDK_Unrestricted.zip</a></div>
+</div>
+<div> </div>
+<div>Passowrd is ECM88250</div>
+<div> </div>
+<div>Best regards</div>
+<div>Haithem Jebali</div>
+<div>
+<br>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com"> ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Thursday, December 29, 2022 at 1:51:27 PM, Linas Kardasevicius wrote:<br>
+<br>
+<div>Hello,</div>
+<div> </div>
+<div>We are currently porting our software to RTX 4. Could you provide a</div>
+<div>download link to the latest version of EC Master for RTX 4.x</div>
+<div> </div>
+<div>The version I curently have is RTX master 3.1.3.02 (March 2022).</div>
+<div> </div>
+<div>Thank you,</div>
+<div> </div>
+<div>Linas</div>
+<div> </div>
+<div>Įspėjimas dėl konfidencialumo / Confidentiality notice:</div>
+<div><a href="https://www.equinox.lt/konfidencialumas" title="https://www.equinox.lt/konfidencialumas" rel="nofollow noreferrer noopener" target="_blank">https://www.equinox.lt/konfidencialumas</a></div>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</blockquote>
+<br> Įspėjimas dėl konfidencialumo / Confidentiality notice:<br>
+<a href="https://www.equinox.lt/konfidencialumas" rel="nofollow noreferrer noopener" target="_blank">https://www.equinox.lt/konfidencialumas</a>

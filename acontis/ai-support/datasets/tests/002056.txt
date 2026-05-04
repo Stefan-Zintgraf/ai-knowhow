@@ -1,0 +1,165 @@
+### HEADER
+Id=2056
+Link=http://at-zammad/#ticket/zoom/2056
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=OMRON China, Small PLC (ID=511, Number=511)
+Number=702056
+Owner=m.bachmann@acontis.com (ID=9, FirstName=Maximilian, LastName=Bachmann)
+Customer=ch_hu2@gc.omron.com (ID=293, FirstName=Chen-Hao, LastName=Hu)
+CreatedBy=ch_hu2@gc.omron.com (ID=293, FirstName=Chen-Hao, LastName=Hu)
+Type=
+TimeUnit=
+CreatedAt=10.12.2021 08:23:08 +00:00
+UpdatedAt=25.04.2022 12:34:24 +00:00
+CloseAt=01.02.2022 11:27:32 +00:00
+ArticlesCount=2
+
+### TITLE
+Delivery for OMRON Corporation, China, Small PLC, Commission 40497
+
+### ARTICLE00_HEADER
+Id=10827
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.12.2021 08:23:08 +00:00
+UpdatedAt=10.12.2021 08:23:10 +00:00
+
+### ARTICLE00_SUBJECT
+Delivery for OMRON Corporation, China, Small PLC, Commission 40497
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Christoph,</p>
+<p> </p>
+<p>We have downloaded the patch, our hardware architecture is:</p>
+<p> </p>
+<p>port0-&gt;EtherCAT</p>
+<p>port1-&gt;TCP/IP</p>
+<p> </p>
+<p>There are several questions:</p>
+<p>1. We should patch port0 or port1?</p>
+<p>2. If port0. The Linux version supported by the patch package is 4.4 4, 4.9.65 and 4.19.94. Does the patch package of the above version support both Linux RT (real time patch) and non RT versions, or only non RT versions?</p>
+<p>3. If port1. The Linux version supported by the patch package is 3.10.93, 4.1.6 and 4.4.4. Does the patch package of the above version support both Linux RT (real time patch) and non RT versions, or only non RT versions?</p>
+<p>In this condition, 3.10.93 and 4.1.6 linux source code cannot be found on internet, whether you can send me these 2 linux source code?</p>
+<p>4. If all the 6 linux patches you send me are non RT versions, whether there is Linux RT version patch available?</p>
+<p>5. What does the suffix Ti or canon in the patch package mean? Is it a specific version?</p>
+<p> </p>
+<p><img style="max-width:100%;width:3.3055in;max-height:.4375in;width:317px;max-height:42px;" src="/api/v1/ticket_attachment/2056/10827/41791?view=inline"></p>
+<p> </p>
+<p>6. Are there some documents about how to use this patch?</p>
+<p> </p>
+<p>Many thanks.</p>
+<p> </p>
+<p>Kind regards.</p>
+<p>Chenhao Hu</p>
+<p> </p>
+<div>
+<div>
+<p><b>发件人:</b> Christoph Widmann &lt;c.widmann@acontis.com&gt; <br>
+<b>发送时间:</b> 2021年12月8日 22:11<br>
+<b>收件人:</b> Chen-Hao Hu2/OMS/OMCC &lt;ch_hu2@gc.omron.com&gt;<br>
+<b>主题:</b> Delivery for OMRON Corporation, China, Small PLC, Commission 40497</p>
+</div>
+</div>
+<p> </p>
+<p>Dear Chenhao Hu,</p>
+<p>please find your new software version below:</p>
+<p><a href="https://downloads.acontis.com/2021/M-O/OMRON_Corporation_(40497)(JP)/EC-Master_Linux/3.1.1.08/Linux-Network-Driver-CPSW-patches.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/M-O/OMRON_Corporation_(40497)(JP)/EC-Master_Linux/3.1.1.08/Linux-Network-Driver-CPSW-patches.zip</a></p>
+<p>Best Regards,</p>
+<p><br> Christoph<span class="js-signatureMarker"></span><br> ________________ <br> EtherCAT Support <br> acontis technologies GmbH <br> Gartenstraße 46 <br> D-88212 Ravensburg <br> Http: <a href="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+<br> Phone: +49 (751) 56030-30 <br> Fax: +49 (751) 56030-31 <br> eMail: ecsupport@acontis.com </p>
+<p>This is an automatic generated eMail.</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=10834
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.12.2021 09:21:14 +00:00
+UpdatedAt=10.12.2021 09:21:17 +00:00
+
+### ARTICLE01_SUBJECT
+Delivery for OMRON Corporation, China, Small PLC, Commission 40497
+
+### ARTICLE01_BODY
+Dear Chenhao Hu,<div><br></div><div>1) The port number refers to the port number used by Linux. So in your case you need to use the port1 patch.</div><div>2/3) The patch should work both for Linux RT and non RT. For 4.9.65/4.19.94 it should be enough to replace</div><div>        `<span>#define EC_ETHERNET_PORT  0` with `</span><span>#define EC_ETHERNET_PORT  1` (occurs two times in the file) to get a patch for port1.</span>
+</div><div>
+<span>        I tested these two with the TI SDK for AM57xx version </span><span>04.03.00.05 (kernel </span><span>4.9.65)</span><span> / </span><span>06.03.00.106 (kernel </span><span>4.19.94)</span>
+</div><div>5) <span>These refer to the company, from whose SDK, we have got the Linux version. </span>
+</div><div>6) The documentation e on the usage can be found in the EcMaster Class B documentation: <a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/emllcpsw.html#cpsw-usage-under-linux" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/emllcpsw.html#cpsw-usage-under-linux" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/emllcpsw.html#cpsw-usage-under-linux</a>
+</div><div><span><br></span></div><div><span>Regards, </span></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Maximilian Bachmann </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Freitag, 10. Dezember 2021, 09:23:08, schrieb Chen-Hao Hu2/OMS/OMCC:<br><br><div>
+<p>Dear Christoph,</p>
+<p> </p>
+<p>We have downloaded the patch, our hardware architecture is:</p>
+<p> </p>
+<p>port0-&gt;EtherCAT</p>
+<p>port1-&gt;TCP/IP</p>
+<p> </p>
+<p>There are several questions:</p>
+<p>1. We should patch port0 or port1?</p>
+<p>2. If port0. The Linux version supported by the patch package is 4.4 4, 4.9.65 and 4.19.94. Does the patch package of the above version support both Linux RT (real time patch) and non RT versions, or only non RT versions?</p>
+<p>3. If port1. The Linux version supported by the patch package is 3.10.93, 4.1.6 and 4.4.4. Does the patch package of the above version support both Linux RT (real time patch) and non RT versions, or only non RT versions?</p>
+<p>In this condition, 3.10.93 and 4.1.6 linux source code cannot be found on internet, whether you can send me these 2 linux source code?</p>
+<p>4. If all the 6 linux patches you send me are non RT versions, whether there is Linux RT version patch available?</p>
+<p>5. What does the suffix Ti or canon in the patch package mean? Is it a specific version?</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:3.3055in;max-height:.4375in;width:317px;max-height:42px;" src="/api/v1/ticket_attachment/2056/10834/41803?view=inline"></p>
+<p> </p>
+<p>6. Are there some documents about how to use this patch?</p>
+<p> </p>
+<p>Many thanks.</p>
+<p> </p>
+<p>Kind regards.</p>
+<p>Chenhao Hu</p>
+<p> </p>
+<div>
+<div>
+<p><b>发件人:</b> Christoph Widmann &lt;c.widmann@acontis.com&gt; <br>
+<b>发送时间:</b> 2021年12月8日 22:11<br>
+<b>收件人:</b> Chen-Hao Hu2/OMS/OMCC &lt;ch_hu2@gc.omron.com&gt;<br>
+<b>主题:</b> Delivery for OMRON Corporation, China, Small PLC, Commission 40497</p>
+</div>
+</div>
+<p> </p>
+<p>Dear Chenhao Hu,</p>
+<p>please find your new software version below:</p>
+<p><a href="https://downloads.acontis.com/2021/M-O/OMRON_Corporation_(40497)(JP)/EC-Master_Linux/3.1.1.08/Linux-Network-Driver-CPSW-patches.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/M-O/OMRON_Corporation_(40497)(JP)/EC-Master_Linux/3.1.1.08/Linux-Network-Driver-CPSW-patches.zip</a></p>
+<p>Best Regards,</p>
+<p><br> Christoph<span class="js-signatureMarker"></span><br> ________________ <br> EtherCAT Support <br> acontis technologies GmbH <br> Gartenstraße 46 <br> D-88212 Ravensburg <br> Http: <a href="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+<br> Phone: +49 (751) 56030-30 <br> Fax: +49 (751) 56030-31 <br> eMail: ecsupport@acontis.com </p>
+<p>This is an automatic generated eMail.</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

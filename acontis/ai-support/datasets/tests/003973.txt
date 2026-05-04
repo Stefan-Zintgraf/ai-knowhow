@@ -1,0 +1,166 @@
+### HEADER
+Id=3973
+Link=http://at-zammad/#ticket/zoom/3973
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=Omron Corporation, Robotics Controller (ID=612, Number=612)
+Number=703973
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=h.sawada@omron.com (ID=949, FirstName=Hiroshi, LastName=Sawada)
+CreatedBy=h.sawada@omron.com (ID=949, FirstName=Hiroshi, LastName=Sawada)
+Type=
+TimeUnit=
+CreatedAt=26.09.2022 10:20:37 +00:00
+UpdatedAt=14.10.2022 06:10:47 +00:00
+CloseAt=14.10.2022 06:10:47 +00:00
+ArticlesCount=2
+
+### TITLE
+Inquery /  Master status at the time of error
+
+### ARTICLE00_HEADER
+Id=21067
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.09.2022 10:20:37 +00:00
+UpdatedAt=26.09.2022 10:20:39 +00:00
+
+### ARTICLE00_SUBJECT
+Inquery /  Master status at the time of error
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Dear acontis support team,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span>◇<span lang="EN-US">Information</span></span></p>
+<p><span>・<span lang="EN-US">Omron Corporation</span></span></p>
+<p><span>・<span lang="EN-US">target: Intel NUC11PAHi5(ether 1port)</span></span></p>
+<p><span>・<span lang="EN-US">target: i225-V ethernet controller</span></span></p>
+<p><span>・<span lang="EN-US">RTOS: VxWorks 21.11</span></span></p>
+<p><span>・<span lang="EN-US">Project name: Robotics Controller</span></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span>・<span lang="EN-US">Question1</span></span></p>
+<p><span lang="EN-US">When an error occurs, what state should the master be transitioned to? Is there any guideline?</span></p>
+<p><span lang="EN-US">In the answer to Ticket#703934, the answer was that in order to detect a DL status interrupt,</span></p>
+<p><span lang="EN-US">Ec-Master has to be at least in PREOP. So do you think it is reasonable to set the master</span></p>
+<p><span lang="EN-US">to PreOP</span><span>？<span lang="EN-US"></span></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span>・<span lang="EN-US">Question2</span></span></p>
+<p><span lang="EN-US">is there a case where it would be better to transition it to INIT?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best regards,<br> Hiroshi Sawada.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">***************************************************</span></p>
+<p><span lang="EN-US">Hiroshi Sawada</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Engineer</span></p>
+<p><span lang="EN-US">OMRON Corporation</span></p>
+<p><span lang="EN-US">Voyager project Dept. Robotics R&amp;D Center</span></p>
+<p><span lang="EN-US">Technology and Intellectual Property H.Q</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">9-1 Kizugawadai, Kizugawa-City</span></p>
+<p><span lang="EN-US">Kyoto,619-0283 JAPAN</span></p>
+<p><span lang="EN-US">Phone +81-50-1801-5403</span></p>
+<p><span lang="EN-US">Fax</span> <span lang="EN-US"> +81-774-74-2004</span></p>
+<p><span lang="EN-US">E-mail: <a href="mailto:h.sawada@omron.com"> h.sawada@omron.com</a></span></p>
+<p><span lang="EN-US">*****************************************</span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=21099
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.09.2022 09:09:29 +00:00
+UpdatedAt=27.09.2022 09:09:33 +00:00
+
+### ARTICLE01_SUBJECT
+Inquery /  Master status at the time of error
+
+### ARTICLE01_BODY
+Dear Sawada-san,<div><br></div><div>Q1. I<span>t depends on the error. I can imagine that going to SAFEOP is enough. You can read SDO and PDO for diagnostic. In PREOP, you cannot access to the PDO, only SDO. In INIT you don't have any diagnostic on the slave application level, only EtherCAT topology and status.</span>
+</div><div><span>Q2. I don't think so. PREOP is a good state for diagnostic. It can make sense to go to INIT and to OP again. In case of recovery. SO the slaves have a chance to "restart" from INIT.</span></div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/3973/21099/87530?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, September 26, 2022 at 12:20:37 PM, Hiroshi Sawada wrote:<br><br><div>
+<p><span lang="EN-US">Dear acontis support team,</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span>◇<span lang="EN-US">Information</span></span></p>
+<p><span>・<span lang="EN-US">Omron Corporation</span></span></p>
+<p><span>・<span lang="EN-US">target: Intel NUC11PAHi5(ether 1port)</span></span></p>
+<p><span>・<span lang="EN-US">target: i225-V ethernet controller</span></span></p>
+<p><span>・<span lang="EN-US">RTOS: VxWorks 21.11</span></span></p>
+<p><span>・<span lang="EN-US">Project name: Robotics Controller</span></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span>・<span lang="EN-US">Question1</span></span></p>
+<p><span lang="EN-US">When an error occurs, what state should the master be transitioned to? Is there any guideline?</span></p>
+<p><span lang="EN-US">In the answer to Ticket#703934, the answer was that in order to detect a DL status interrupt,</span></p>
+<p><span lang="EN-US">Ec-Master has to be at least in PREOP. So do you think it is reasonable to set the master</span></p>
+<p><span lang="EN-US">to PreOP</span><span>？<span lang="EN-US"></span></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span>・<span lang="EN-US">Question2</span></span></p>
+<p><span lang="EN-US">is there a case where it would be better to transition it to INIT?</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Best regards,<br> Hiroshi Sawada.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">***************************************************</span></p>
+<p><span lang="EN-US">Hiroshi Sawada</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Engineer</span></p>
+<p><span lang="EN-US">OMRON Corporation</span></p>
+<p><span lang="EN-US">Voyager project Dept. Robotics R&amp;D Center</span></p>
+<p><span lang="EN-US">Technology and Intellectual Property H.Q</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">9-1 Kizugawadai, Kizugawa-City</span></p>
+<p><span lang="EN-US">Kyoto,619-0283 JAPAN</span></p>
+<p><span lang="EN-US">Phone +81-50-1801-5403</span></p>
+<p><span lang="EN-US">Fax</span> <span lang="EN-US"> +81-774-74-2004</span></p>
+<p><span lang="EN-US">E-mail: <a href="mailto:h.sawada@omron.com"> h.sawada@omron.com</a></span></p>
+<p><span lang="EN-US">*****************************************</span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,261 @@
+### HEADER
+Id=9608
+Link=http://at-zammad/#ticket/zoom/9608
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Proface (ID=856, Number=50031, Country=FR)
+Commission=Proface, PS6000-Hypervisor (ID=940, Number=940)
+Number=709608
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=karthik.kondreddy@se.com (ID=3006, FirstName=Karthik, LastName=Kondreddy)
+CreatedBy=karthik.kondreddy@se.com (ID=3006, FirstName=Karthik, LastName=Kondreddy)
+Type=
+TimeUnit=
+CreatedAt=07.01.2025 07:39:15 +00:00
+UpdatedAt=23.01.2025 12:42:48 +00:00
+CloseAt=17.01.2025 07:11:56 +00:00
+ArticlesCount=4
+
+### TITLE
+Problem with EC-Engineer license when we connect from office network
+
+### ARTICLE00_HEADER
+Id=54566
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.01.2025 07:39:15 +00:00
+UpdatedAt=07.01.2025 07:39:15 +00:00
+
+### ARTICLE00_SUBJECT
+Problem with EC-Engineer license when we connect from office network
+
+### ARTICLE00_BODY
+<div>Hello</div><div>Wish you happy new year.</div><div>I have problem using EC-Engineer tool from office network as it is using proxy. It works fine from home network.</div><div>From office, it gives error with license.</div><div>I need a solution to be able to work from office.</div><div> </div><div>Thanks and Regards,</div><div>Karthik</div><br>
+<p>General<br>
+</p>
+
+### ARTICLE01_HEADER
+Id=54589
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.01.2025 09:17:15 +00:00
+UpdatedAt=07.01.2025 09:17:17 +00:00
+
+### ARTICLE01_SUBJECT
+Problem with EC-Engineer license when we connect from office network
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>this should only occure if you are using the evaluation version. Is this correct? Which version are you using?</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, January 7, 2025 at 8:39:15 AM, Karthik Kondreddy wrote:<br><br><div>Hello</div>
+<div>Wish you happy new year.</div>
+<div>I have problem using EC-Engineer tool from office network as it is using proxy. It works fine from home network.</div>
+<div>From office, it gives error with license.</div>
+<div>I need a solution to be able to work from office.</div>
+<div> </div>
+<div>Thanks and Regards,</div>
+<div>Karthik</div>
+<br>
+<p>General<br>
+</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=54593
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.01.2025 09:21:20 +00:00
+UpdatedAt=07.01.2025 09:21:20 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Problem with EC-Engineer license when we connect from office network [Ticket#709608]
+
+### ARTICLE02_BODY
+<div>Yes. I am using the evaluation version.</div><div>
+<img style="max-width:100%;width: 343.199px;max-height: 386px;max-width: 1622px;width:343px;max-height:386px;" src="/api/v1/ticket_attachment/9608/54593/226094?view=inline">
+</div><div> </div><br>
+<p>General<br>
+</p><hr>
+<div dir="ltr">
+<b>From:</b> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Tuesday, 7 January 2025 10:17<br>
+<b>To:</b> Karthik Kondreddy &lt;karthik.kondreddy@se.com&gt;<br>
+<b>Subject:</b> RE: Problem with EC-Engineer license when we connect from office network [Ticket#709608] <div> </div>
+</div><div>
+<p><span style="color:#ff0000;">[External email: Use caution with links and attachments]</span></p>
+<hr>
+<p> </p>
+<div>Hi,<div> </div>
+<div>this should only occure if you are using the evaluation version. Is this correct? Which version are you using?</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai<br>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Tuesday, January 7, 2025 at 8:39:15 AM, Karthik Kondreddy wrote:<br>
+<br>
+<div>Hello</div>
+<div>Wish you happy new year.</div>
+<div>I have problem using EC-Engineer tool from office network as it is using proxy. It works fine from home network.</div>
+<div>From office, it gives error with license.</div>
+<div>I need a solution to be able to work from office.</div>
+<div> </div>
+<div>Thanks and Regards,</div>
+<div>Karthik</div>
+<br>
+<p>General<br>
+</p>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=54594
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.01.2025 09:24:42 +00:00
+UpdatedAt=07.01.2025 09:24:44 +00:00
+
+### ARTICLE03_SUBJECT
+Problem with EC-Engineer license when we connect from office network
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>please unzip this file and add replace the existing EcOem.dat in the install directory with this one:</div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/temp/2025/1-7/EcOem.zip" title="https://downloads.acontis.com/temp/2025/1-7/EcOem.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/temp/2025/1-7/EcOem.zip</a></div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, January 7, 2025 at 10:21:20 AM, Karthik Kondreddy wrote:<br><br><div>Yes. I am using the evaluation version.</div>
+<div>
+<img style="max-width:100%;max-width: 100%;width: 343px;max-height: 386px;" src="/api/v1/ticket_attachment/9608/54594/226095?view=inline">
+</div>
+<div> </div>
+<br>
+<p>General<br>
+</p>
+<hr>
+<div dir="ltr">
+<b>From:</b> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Tuesday, 7 January 2025 10:17<br>
+<b>To:</b> Karthik Kondreddy &lt;karthik.kondreddy@se.com&gt;<br>
+<b>Subject:</b> RE: Problem with EC-Engineer license when we connect from office network [Ticket#709608] <div> </div>
+</div>
+<div>
+<p><span style="color:#ff0000;">[External email: Use caution with links and attachments]</span></p>
+<hr>
+<p> </p>
+<div>Hi,<div> </div>
+<div>this should only occure if you are using the evaluation version. Is this correct? Which version are you using?</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai<br>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Tuesday, January 7, 2025 at 8:39:15 AM, Karthik Kondreddy wrote:<br>
+<br>
+<div>Hello</div>
+<div>Wish you happy new year.</div>
+<div>I have problem using EC-Engineer tool from office network as it is using proxy. It works fine from home network.</div>
+<div>From office, it gives error with license.</div>
+<div>I need a solution to be able to work from office.</div>
+<div> </div>
+<div>Thanks and Regards,</div>
+<div>Karthik</div>
+<br>
+<p>General<br>
+</p>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

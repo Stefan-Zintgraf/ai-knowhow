@@ -1,0 +1,140 @@
+### HEADER
+Id=10188
+Link=http://at-zammad/#ticket/zoom/10188
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Williams Grand Prix Engineering Ltd (ID=324, Number=40082, Country=UK)
+Commission=Williams, Test Bench (ID=387, Number=387)
+Number=7010188
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=hannah.lagnado@williamsf1.com (ID=3197, FirstName=Hannah, LastName=Lagnado)
+CreatedBy=hannah.lagnado@williamsf1.com (ID=3197, FirstName=Hannah, LastName=Lagnado)
+Type=
+TimeUnit=
+CreatedAt=13.03.2025 16:27:17 +00:00
+UpdatedAt=24.03.2025 06:01:38 +00:00
+CloseAt=14.03.2025 11:13:48 +00:00
+ArticlesCount=2
+
+### TITLE
+EtherCAT configuration issue
+
+### ARTICLE00_HEADER
+Id=58393
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.03.2025 16:27:17 +00:00
+UpdatedAt=13.03.2025 16:27:17 +00:00
+
+### ARTICLE00_SUBJECT
+EtherCAT configuration issue
+
+### ARTICLE00_BODY
+<div>Hi,</div><div> </div><div>We have been having issues configuring our EtherCAT master and EtherCAT bridge (EL6695). We have connected our computers to the bridge via ethernet and we can see green lights for both ethernet ports and also for the power. However no slaves are discoverable. Our rig isn't running and we have no additional modules connected to the bridge, so no information is being transmitted. Do you have any immediate thoughts on what we could try?</div><div> </div><div>I have attached some images to try and help describe the issue.</div><div> </div><div>Kind regards,</div><div>Hannah</div><div> </div><div>
+<img style="max-width:100%;max-width: 1251px;" src="/api/v1/ticket_attachment/10188/58393/243167?view=inline">
+</div><div>
+<img style="max-width:100%;max-width: 1251px;" src="/api/v1/ticket_attachment/10188/58393/243168?view=inline">
+</div><div> </div><b><br>
+</b><br>
+<b><br>
+</b>Hannah Lagnado <br> R&amp;D Data Engineer <br><br><a href="https://www.williamsf1.com/" rel="nofollow noreferrer noopener" title="https://www.williamsf1.com/" target="_blank">
+<br>
+<br>
+</a><table style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td></td>
+<td> GROVE<br> OXFORDSHIRE<br> OX12 0DQ, UK<br>
+</td>
+<td> </td>
+<td> T. <br> M. <br> E. Hannah.Lagnado@williamsf1.com<br>
+</td>
+<td>
+<a href="https://instagram.com/williamsracing" rel="nofollow noreferrer noopener" title="https://instagram.com/williamsracing" target="_blank"></a> <a href="https://twitter.com/WilliamsRacing" rel="nofollow noreferrer noopener" title="https://twitter.com/WilliamsRacing" target="_blank"></a> <a href="http://www.facebook.com/williamsf1team" rel="nofollow noreferrer noopener" title="http://www.facebook.com/williamsf1team" target="_blank"></a> <a href="https://www.linkedin.com/company/williamsracing" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/williamsracing" target="_blank"></a> </td>
+</tr>
+</tbody>
+</table>
+<br><br>Williams Grand Prix Engineering Limited, registered in England, Co Reg No: 1297497. Registered address: Grove, Wantage, Oxfordshire, OX12 0DQ. VAT no. GB100190188<br> The contents of this email, including any attachments, are strictly confidential and are intended for the addressee only. If you are not the addressee, please return this email<br> and any attachments to the sender and permanently delete it from your records<i>.</i><i><br>
+</i>
+
+### ARTICLE01_HEADER
+Id=58429
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.03.2025 11:13:48 +00:00
+UpdatedAt=14.03.2025 11:13:53 +00:00
+
+### ARTICLE01_SUBJECT
+EtherCAT configuration issue
+
+### ARTICLE01_BODY
+Hi Hannah,<div><br></div><div><div>unfortunately, you no longer have maintenance. Your maintenance contract expired on 28.02.2022. For further support, please contact our sales team at sales@acontis.com.</div></div><div><br></div><div>The EL6695 connects two EtherCAT networks. There is a primary and a secondary side. The primary side is addressed via E-BUS and the secondary side via RJ45 connector. <span>The secondary side requires a separate power supply. See also: </span><a href="https://download.beckhoff.com/download/Document/io/ethercat-terminals/el6695_en.pdf" rel="nofollow noreferrer noopener" target="_blank">https://download.beckhoff.com/download/Document/io/ethercat-terminals/el6695_en.pdf</a>. "<span>The power supply for the secondary side (RJ 45) is via an external
+connection, the primary side is supplied via the E-bus. Thanks to the flexible CoE configuration, the bridge
+terminal can also be used to integrate a subordinate IPC systems as an EtherCAT slave."</span>
+</div><div><span><br></span></div><div><div>Normally you configure the device from the primary side, for which you will most likely need a bus coupler such as the EK1100.</div></div><div><div><a href="https://www.beckhoff.com/de-de/produkte/i-o/ethercat-klemmen/ek1xxx-bk1xx0-ethercat-koppler/" title="https://www.beckhoff.com/de-de/produkte/i-o/ethercat-klemmen/ek1xxx-bk1xx0-ethercat-koppler/" rel="nofollow noreferrer noopener" target="_blank">https://www.beckhoff.com/de-de/produkte/i-o/ethercat-klemmen/ek1xxx-bk1xx0-ethercat-koppler/</a></div></div><div><div><a href="https://www.beckhoff.com/de-de/produkte/i-o/ethercat-klemmen/ek1xxx-bk1xx0-ethercat-koppler/ek1100.html" title="https://www.beckhoff.com/de-de/produkte/i-o/ethercat-klemmen/ek1xxx-bk1xx0-ethercat-koppler/ek1100.html" rel="nofollow noreferrer noopener" target="_blank">https://www.beckhoff.com/de-de/produkte/i-o/ethercat-klemmen/ek1xxx-bk1xx0-ethercat-koppler/ek1100.html</a></div></div><div><br></div><div>Hope that helps so far.</div><div><br></div><div>Best regards,</div><div>
+<div><br></div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, March 13, 2025 at 5:27:17 PM, Hannah Lagnado wrote:<br><br><div>Hi,</div>
+<div> </div>
+<div>We have been having issues configuring our EtherCAT master and EtherCAT bridge (EL6695). We have connected our computers to the bridge via ethernet and we can see green lights for both ethernet ports and also for the power. However no slaves are discoverable. Our rig isn't running and we have no additional modules connected to the bridge, so no information is being transmitted. Do you have any immediate thoughts on what we could try?</div>
+<div> </div>
+<div>I have attached some images to try and help describe the issue.</div>
+<div> </div>
+<div>Kind regards,</div>
+<div>Hannah</div>
+<div> </div>
+<div>
+<img style="max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/10188/58429/243372?view=inline">
+</div>
+<div>
+<img style="max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/10188/58429/243373?view=inline">
+</div>
+<div> </div>
+<b><br>
+</b><br>
+<b><br>
+</b>Hannah Lagnado <br> R&amp;D Data Engineer <br><br><a href="https://www.williamsf1.com/" rel="nofollow noreferrer noopener" title="https://www.williamsf1.com/" target="_blank">
+<br>
+<br>
+</a><table style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td></td>
+<td> GROVE<br> OXFORDSHIRE<br> OX12 0DQ, UK<br>
+</td>
+<td> </td>
+<td> T. <br> M. <br> E. Hannah.Lagnado@williamsf1.com<br>
+</td>
+<td>
+<a href="https://instagram.com/williamsracing" rel="nofollow noreferrer noopener" title="https://instagram.com/williamsracing" target="_blank"></a> <a href="https://twitter.com/WilliamsRacing" rel="nofollow noreferrer noopener" title="https://twitter.com/WilliamsRacing" target="_blank"></a> <a href="http://www.facebook.com/williamsf1team" rel="nofollow noreferrer noopener" title="http://www.facebook.com/williamsf1team" target="_blank"></a> <a href="https://www.linkedin.com/company/williamsracing" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/williamsracing" target="_blank"></a> </td>
+</tr>
+</tbody>
+</table>
+<br><br>Williams Grand Prix Engineering Limited, registered in England, Co Reg No: 1297497. Registered address: Grove, Wantage, Oxfordshire, OX12 0DQ. VAT no. GB100190188<br> The contents of this email, including any attachments, are strictly confidential and are intended for the addressee only. If you are not the addressee, please return this email<br> and any attachments to the sender and permanently delete it from your records<i>.</i><i><br>
+</i><br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,157 @@
+### HEADER
+Id=10882
+Link=http://at-zammad/#ticket/zoom/10882
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=MTS Systems (ID=374, Number=41001, Country=US)
+Commission=MTS Systems, AeroPro (ID=953, Number=953)
+Number=7010882
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=mike.arens@mts.com (ID=2859, FirstName=Mike, LastName=Arens)
+CreatedBy=mike.arens@mts.com (ID=2859, FirstName=Mike, LastName=Arens)
+Type=
+TimeUnit=
+CreatedAt=26.06.2025 15:57:29 +00:00
+UpdatedAt=26.06.2025 16:37:45 +00:00
+CloseAt=26.06.2025 16:37:44 +00:00
+ArticlesCount=3
+
+### TITLE
+Changes to SDK
+
+### ARTICLE00_HEADER
+Id=62328
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.06.2025 15:57:29 +00:00
+UpdatedAt=26.06.2025 15:57:29 +00:00
+
+### ARTICLE00_SUBJECT
+Changes to SDK
+
+### ARTICLE00_BODY
+<img src="/api/v1/ticket_attachment/10882/62328/258802?view=inline" style="max-width:100%;width:0;max-height:0;width:0px;max-height:0px;">
+<div>
+<p><span style="color:windowtext;">We have been running EC Master SDK version 3.1.2.10</span></p>
+<p><span style="color:windowtext;">I’m trying to upgrade to SDK version 3.2.2.03</span></p>
+<p><span style="color:windowtext;"><p> </p></span></p>
+<p><span style="color:windowtext;">I’m having issue with some missing methods.</span></p>
+<p><span style="color:windowtext;">For example, emPerfMeasInit used to be in AtEthercat.h.</span></p>
+<p><span style="color:windowtext;">The release notes say AtEthercat.h has been replaced by EcMaster.h.</span></p>
+<p><span style="color:windowtext;">The missing methods are not in the EcMaster.h file.</span></p>
+<p><span style="color:windowtext;">These methods are also missing.</span></p>
+<p><span style="color:windowtext;">emPerfMeasDeinit, emPerfMeasEnable, emPerfMeasStart, emPerfMeasEnd, emPerfMeasReset</span></p>
+<p><span style="color:windowtext;"><p> </p></span></p>
+<p><span style="color:windowtext;">I’m I doing something wrong?</span></p>
+<p><span style="color:windowtext;">If not is there an easy way to correct the issue?</span></p>
+<p><span style="color:windowtext;"><p> </p></span></p>
+<p><span style="color:windowtext;">Mike Arens</span></p>
+<p><span style="color:windowtext;">MTS Systems.</span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=62331
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.06.2025 16:19:52 +00:00
+UpdatedAt=26.06.2025 16:19:52 +00:00
+
+### ARTICLE01_SUBJECT
+Changes to SDK
+
+### ARTICLE01_BODY
+Hi Mike,<div> </div><div>I believe the emPerf APIs have a new name with App in the function calls now. For example: emPerfMeas<b>App</b>Create(). You’ll find these in EcMaster.h.<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Jun 26, 2025, at 11:56 AM, Arens, Mike &lt;mike.arens@mts.com&gt; wrote:</div>
+<br><div>
+<div style=" color: rgb(0, 51, 153);"><span style=" color: windowtext;">We have been running EC Master SDK version 3.1.2.10</span></div>
+<div style=" color: rgb(0, 51, 153);"><span style=" color: windowtext;">I’m trying to upgrade to SDK version 3.2.2.03</span></div>
+<div style=" color: rgb(0, 51, 153);"><span style=" color: windowtext;"><p> </p></span></div>
+<div style=" color: rgb(0, 51, 153);"><span style=" color: windowtext;">I’m having issue with some missing methods.</span></div>
+<div style=" color: rgb(0, 51, 153);"><span style=" color: windowtext;">For example, emPerfMeasInit used to be in AtEthercat.h.</span></div>
+<div style=" color: rgb(0, 51, 153);"><span style=" color: windowtext;">The release notes say AtEthercat.h has been replaced by EcMaster.h.</span></div>
+<div style=" color: rgb(0, 51, 153);"><span style=" color: windowtext;">The missing methods are not in the EcMaster.h file.</span></div>
+<div style=" color: rgb(0, 51, 153);"><span style=" color: windowtext;">These methods are also missing.</span></div>
+<div style=" color: rgb(0, 51, 153);"><span style=" color: windowtext;">emPerfMeasDeinit, emPerfMeasEnable, emPerfMeasStart, emPerfMeasEnd, emPerfMeasReset</span></div>
+<div style=" color: rgb(0, 51, 153);"><span style=" color: windowtext;"><p> </p></span></div>
+<div style=" color: rgb(0, 51, 153);"><span style=" color: windowtext;">I’m I doing something wrong?</span></div>
+<div style=" color: rgb(0, 51, 153);"><span style=" color: windowtext;">If not is there an easy way to correct the issue?</span></div>
+<div style=" color: rgb(0, 51, 153);"><span style=" color: windowtext;"><p> </p></span></div>
+<div style=" color: rgb(0, 51, 153);"><span style=" color: windowtext;">Mike Arens</span></div>
+<div style=" color: rgb(0, 51, 153);"><span style=" color: windowtext;">MTS Systems.</span></div>
+<div style=" color: rgb(0, 51, 153);"><p> </p></div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE02_HEADER
+Id=62333
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.06.2025 16:37:45 +00:00
+UpdatedAt=26.06.2025 16:37:46 +00:00
+
+### ARTICLE02_SUBJECT
+Changes to SDK
+
+### ARTICLE02_BODY
+<div><span style="color: windowtext;">Hi,</span></div><div><span style="color: windowtext;"><br></span></div><div><span style="color: windowtext;">the API was deprecated. You can use emPerfMeasApp... instead.</span></div><div><br></div><div>
+Best regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, June 26, 2025 at 5:57:29 PM, Mike Arens wrote:<br><br><img src="/api/v1/ticket_attachment/10882/62333/258809?view=inline" style="max-width:100%;max-width:100%;width:0;max-height:0;width:0px;max-height:0px;">
+<div>
+<p><span style="color:windowtext;">We have been running EC Master SDK version 3.1.2.10</span></p>
+<p><span style="color:windowtext;">I’m trying to upgrade to SDK version 3.2.2.03</span></p>
+<p><span style="color:windowtext;"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:windowtext;">I’m having issue with some missing methods.</span></p>
+<p><span style="color:windowtext;">For example, emPerfMeasInit used to be in AtEthercat.h.</span></p>
+<p><span style="color:windowtext;">The release notes say AtEthercat.h has been replaced by EcMaster.h.</span></p>
+<p><span style="color:windowtext;">The missing methods are not in the EcMaster.h file.</span></p>
+<p><span style="color:windowtext;">These methods are also missing.</span></p>
+<p><span style="color:windowtext;">emPerfMeasDeinit, emPerfMeasEnable, emPerfMeasStart, emPerfMeasEnd, emPerfMeasReset</span></p>
+<p><span style="color:windowtext;"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:windowtext;">I’m I doing something wrong?</span></p>
+<p><span style="color:windowtext;">If not is there an easy way to correct the issue?</span></p>
+<p><span style="color:windowtext;"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:windowtext;">Mike Arens</span></p>
+<p><span style="color:windowtext;">MTS Systems.</span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,200 @@
+### HEADER
+Id=11167
+Link=http://at-zammad/#ticket/zoom/11167
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vector Simulations AG (ID=437, Number=0, Country=CH)
+Commission=Vector, CANoe (ID=189, Number=189)
+Number=7011167
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=gunter.spoecker@vector.com (ID=3188, FirstName=Gunter, LastName=Spöcker)
+CreatedBy=gunter.spoecker@vector.com (ID=3188, FirstName=Gunter, LastName=Spöcker)
+Type=
+TimeUnit=
+CreatedAt=05.08.2025 09:32:16 +00:00
+UpdatedAt=15.08.2025 06:09:35 +00:00
+CloseAt=15.08.2025 06:09:35 +00:00
+ArticlesCount=4
+
+### TITLE
+RtaccWinConfig / RtaccWinTimerDemo / RtaccWinDeviceDemo
+
+### ARTICLE00_HEADER
+Id=64074
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.08.2025 09:32:16 +00:00
+UpdatedAt=05.08.2025 09:32:16 +00:00
+
+### ARTICLE00_SUBJECT
+RtaccWinConfig / RtaccWinTimerDemo / RtaccWinDeviceDemo
+
+### ARTICLE00_BODY
+<div>Guten Tag,</div><div> </div><div>wir haben heute mit dem RealtimeAccelerator-Windows-x86_64Bit-SDK_Eval_V1.0.9 experimentiert. Ich habe mit dem RtaccWinConfig-Program eine CPU für den Real-time Betrieb eingerichtet, 1 von 4 CPUs. Die hat auch geklappt.</div><div> </div><div>Wenn ich nun aber, wie in der Dokumentation beschrieben, die Demoprogramme ausführe, erhalte ich eine Fehlermeldung:</div><div>"Memory allocation failed"</div><div>Sowohl mit RtaccWinTimerDemo.exe als auch mit RtaccWinDeviceDemo.exe</div><div> </div><div>Woran kann das liegen, bzw. wie kann ich das Problem beheben?</div><div> </div><div>
+<img style="max-width:100%;max-width: 1082px;" src="/api/v1/ticket_attachment/11167/64074/265513?view=inline">
+</div><div> </div><div>Vielen Dank</div><div> </div><div>
+<div> </div>
+<p>Grüße / Regards,</p>
+<p> </p>
+<p>Dr. Gunter Spöcker</p>
+<span class="js-signatureMarker"></span><p>----------------------------------------------</p>
+<p>Senior Software Development Engineer</p>
+<p>VG/PND10</p>
+<p>----------------------------------------------</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=64077
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=05.08.2025 09:44:48 +00:00
+UpdatedAt=05.08.2025 09:44:48 +00:00
+
+### ARTICLE01_BODY
+@Cyril:<div>Da ist die Eval abgelaufen.</div>
+
+### ARTICLE02_HEADER
+Id=64079
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.08.2025 10:01:48 +00:00
+UpdatedAt=05.08.2025 10:01:56 +00:00
+
+### ARTICLE02_SUBJECT
+RtaccWinConfig / RtaccWinTimerDemo / RtaccWinDeviceDemo
+
+### ARTICLE02_BODY
+Hallo Herr Spöcker,<div><br></div><div>Die Eval ist wahrscheinlich abgelaufen. Hier ist eine neue Eval: </div><div><a href="https://software.acontis.com/RtaccWin/1.0/RealtimeAccelerator-Windows-x86_64Bit-SDK_Eval_V1.1.0.zip" title="https://software.acontis.com/RtaccWin/1.0/RealtimeAccelerator-Windows-x86_64Bit-SDK_Eval_V1.1.0.zip" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/RtaccWin/1.0/RealtimeAccelerator-Windows-x86_64Bit-SDK_Eval_V1.1.0.zip</a></div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, August 5, 2025 at 11:32:16 AM, Gunter Spöcker wrote:<br><br><div>Guten Tag,</div>
+<div> </div>
+<div>wir haben heute mit dem RealtimeAccelerator-Windows-x86_64Bit-SDK_Eval_V1.0.9 experimentiert. Ich habe mit dem RtaccWinConfig-Program eine CPU für den Real-time Betrieb eingerichtet, 1 von 4 CPUs. Die hat auch geklappt.</div>
+<div> </div>
+<div>Wenn ich nun aber, wie in der Dokumentation beschrieben, die Demoprogramme ausführe, erhalte ich eine Fehlermeldung:</div>
+<div>"Memory allocation failed"</div>
+<div>Sowohl mit RtaccWinTimerDemo.exe als auch mit RtaccWinDeviceDemo.exe</div>
+<div> </div>
+<div>Woran kann das liegen, bzw. wie kann ich das Problem beheben?</div>
+<div> </div>
+<div>
+<img style="max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/11167/64079/265529?view=inline">
+</div>
+<div> </div>
+<div>Vielen Dank</div>
+<div> </div>
+<div>
+<div> </div>
+<p>Grüße / Regards,</p>
+<p> </p>
+<p>Dr. Gunter Spöcker</p>
+<span class="js-signatureMarker"></span><p>----------------------------------------------</p>
+<p>Senior Software Development Engineer</p>
+<p>VG/PND10</p>
+<p>----------------------------------------------</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=64080
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.08.2025 10:08:46 +00:00
+UpdatedAt=05.08.2025 10:08:46 +00:00
+
+### ARTICLE03_SUBJECT
+AW: RtaccWinConfig / RtaccWinTimerDemo / RtaccWinDeviceDemo [Ticket#7011167]
+
+### ARTICLE03_BODY
+<div>Vielen Dank,</div><div> </div><div>ich werde es mit der neuen Version versuchen.</div><div> </div><div>Viele Grüße</div><div>Gunter Spöcker</div><hr>
+<div dir="ltr">
+<b>Von:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Gesendet:</b> Dienstag, 5. August 2025 12:01<br>
+<b>An:</b> Spöcker, Gunter &lt;gunter.spoecker@vector.com&gt;<br>
+<b>Betreff:</b> RE: RtaccWinConfig / RtaccWinTimerDemo / RtaccWinDeviceDemo [Ticket#7011167] <div> </div>
+</div><div>Hallo Herr Spöcker,<div> </div>
+<div>Die Eval ist wahrscheinlich abgelaufen. Hier ist eine neue Eval:</div>
+<div><a href="https://software.acontis.com/RtaccWin/1.0/RealtimeAccelerator-Windows-x86_64Bit-SDK_Eval_V1.1.0.zip" title="https://software.acontis.com/RtaccWin/1.0/RealtimeAccelerator-Windows-x86_64Bit-SDK_Eval_V1.1.0.zip" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/RtaccWin/1.0/RealtimeAccelerator-Windows-x86_64Bit-SDK_Eval_V1.1.0.zip</a></div>
+<div> </div>
+<div>Schöne Grüße,<br>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Tuesday, August 5, 2025 at 11:32:16 AM, Gunter Spöcker wrote:<br>
+<br>
+<div>Guten Tag,</div>
+<div> </div>
+<div>wir haben heute mit dem RealtimeAccelerator-Windows-x86_64Bit-SDK_Eval_V1.0.9 experimentiert. Ich habe mit dem RtaccWinConfig-Program eine CPU für den Real-time Betrieb eingerichtet, 1 von 4 CPUs. Die hat auch geklappt.</div>
+<div> </div>
+<div>Wenn ich nun aber, wie in der Dokumentation beschrieben, die Demoprogramme ausführe, erhalte ich eine Fehlermeldung:</div>
+<div>"Memory allocation failed"</div>
+<div>Sowohl mit RtaccWinTimerDemo.exe als auch mit RtaccWinDeviceDemo.exe</div>
+<div> </div>
+<div>Woran kann das liegen, bzw. wie kann ich das Problem beheben?</div>
+<div> </div>
+<div>
+<img style="max-width:100%;max-width:100%;" src="/api/v1/ticket_attachment/11167/64080/265533?view=inline">
+</div>
+<div> </div>
+<div>Vielen Dank</div>
+<div> </div>
+<div>
+<div> </div>
+<p>Grüße / Regards,</p>
+<p> </p>
+<p>Dr. Gunter Spöcker</p>
+<span class="js-signatureMarker"></span><p>----------------------------------------------</p>
+<p>Senior Software Development Engineer</p>
+<p>VG/PND10</p>
+<p>----------------------------------------------</p>
+<p> </p>
+</div>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>

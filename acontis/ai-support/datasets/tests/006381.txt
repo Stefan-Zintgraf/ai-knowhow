@@ -1,0 +1,218 @@
+### HEADER
+Id=6381
+Link=http://at-zammad/#ticket/zoom/6381
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=The Mathworks (ID=391, Number=40135, Country=US)
+Commission=The Mathworks, Simulink Real-Time (ID=463, Number=463)
+Number=706381
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=mtrujill@mathworks.com (ID=1318, FirstName=Marlon, LastName=Trujillo)
+CreatedBy=mtrujill@mathworks.com (ID=1318, FirstName=Marlon, LastName=Trujillo)
+Type=
+TimeUnit=
+CreatedAt=18.09.2023 19:22:43 +00:00
+UpdatedAt=20.09.2023 15:59:48 +00:00
+CloseAt=20.09.2023 15:59:48 +00:00
+ArticlesCount=3
+
+### TITLE
+Cyclic command WKC error when doing emSetSlaveState with timeout = EC_NOWAIT
+
+### ARTICLE00_HEADER
+Id=34370
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.09.2023 19:22:44 +00:00
+UpdatedAt=18.09.2023 19:22:48 +00:00
+
+### ARTICLE00_SUBJECT
+Cyclic command WKC error when doing emSetSlaveState with timeout = EC_NOWAIT
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Acontis Support Team,</p>
+<p> </p>
+<p>I am currently using your ecmaster version 3.1.4.99, for Linux x86 and I have encountered an issue concerning Cyclic Command WKC errors when attempting to execute emSetSlaveState with the timeout parameter set to EC_NOWAIT. The function works and changes the state of the slave, but it returns WKC errors while using it.</p>
+<p> </p>
+<p>Could you please advise if this is a known issue or limitation within this specific version of your library?</p>
+<p> </p>
+<p>To elaborate this more, this is the reply I got:<br> Cyclic command WKC error: Command = LWR, Address (ADP/ADO) = 16777216, Actual WKC = 1, Set WKC = 2</p>
+<p>Cyclic command WKC error: Command = LWR, Address (ADP/ADO) = 16777216, Actual WKC = 1, Set WKC = 2</p>
+<p>Cyclic command WKC error: Command = LWR, Address (ADP/ADO) = 16777216, Actual WKC = 1, Set WKC = 2</p>
+<p>Cyclic command WKC error: Command = LWR, Address (ADP/ADO) = 16777216, Actual WKC = 1, Set WKC = 2</p>
+<p>Cyclic command WKC error: Command = LWR, Address (ADP/ADO) = 16777216, Actual WKC = 1, Set WKC = 2</p>
+<p> </p>
+<p>And this is the pseudo code I have:</p>
+<p>const EC_T_DWORD res = emSetSlaveState(0, 1003, newState, EC_NOWAIT);</p>
+<p> </p>
+<p>Marlon Trujillo (Simulink Real-Time)</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=34381
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.09.2023 05:50:51 +00:00
+UpdatedAt=19.09.2023 05:50:56 +00:00
+
+### ARTICLE01_SUBJECT
+Cyclic command WKC error when doing emSetSlaveState with timeout = EC_NOWAIT
+
+### ARTICLE01_BODY
+<div>Hi Marlon,</div><div><br></div>If you get the WKC error during the transition only, it could means that the slave change its state to the upper one but is not ready to process the cyclic frames. In this case you can ignore this notifications.<div>If you get them after the transition randomly. It could mean that you have some cycle accuracy issue.<br><div><br></div>
+<div>Best Regards,</div>
+<div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, September 18, 2023 at 9:22:44 PM, Marlon Trujillo wrote:<br><br><div>
+<p>Dear Acontis Support Team,</p>
+<p> </p>
+<p>I am currently using your ecmaster version 3.1.4.99, for Linux x86 and I have encountered an issue concerning Cyclic Command WKC errors when attempting to execute emSetSlaveState with the timeout parameter set to EC_NOWAIT. The function works and changes the state of the slave, but it returns WKC errors while using it.</p>
+<p> </p>
+<p>Could you please advise if this is a known issue or limitation within this specific version of your library?</p>
+<p> </p>
+<p>To elaborate this more, this is the reply I got:<br> Cyclic command WKC error: Command = LWR, Address (ADP/ADO) = 16777216, Actual WKC = 1, Set WKC = 2</p>
+<p>Cyclic command WKC error: Command = LWR, Address (ADP/ADO) = 16777216, Actual WKC = 1, Set WKC = 2</p>
+<p>Cyclic command WKC error: Command = LWR, Address (ADP/ADO) = 16777216, Actual WKC = 1, Set WKC = 2</p>
+<p>Cyclic command WKC error: Command = LWR, Address (ADP/ADO) = 16777216, Actual WKC = 1, Set WKC = 2</p>
+<p>Cyclic command WKC error: Command = LWR, Address (ADP/ADO) = 16777216, Actual WKC = 1, Set WKC = 2</p>
+<p> </p>
+<p>And this is the pseudo code I have:</p>
+<p>const EC_T_DWORD res = emSetSlaveState(0, 1003, newState, EC_NOWAIT);</p>
+<p> </p>
+<p>Marlon Trujillo (Simulink Real-Time)</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=34481
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.09.2023 15:58:41 +00:00
+UpdatedAt=20.09.2023 15:58:41 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Cyclic command WKC error when doing emSetSlaveState with timeout = EC_NOWAIT [Ticket#706381]
+
+### ARTICLE02_BODY
+<div>
+<p>Ok Cyril, thank you once again for your feedback.</p>
+<p> </p>
+<p>Marlon Trujillo (Simulink Real-Time)</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Tuesday, September 19, 2023 1:51 AM<br>
+<b>To:</b> Marlon Trujillo &lt;mtrujill@mathworks.com&gt;<br>
+<b>Subject:</b> RE: Cyclic command WKC error when doing emSetSlaveState with timeout = EC_NOWAIT [Ticket#706381]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Hi Marlon,</p>
+</div>
+<div>
+<p> </p>
+</div>
+<p>If you get the WKC error during the transition only, it could means that the slave change its state to the upper one but is not ready to process the cyclic frames. In this case you can ignore this notifications.</p>
+<div>
+<p>If you get them after the transition randomly. It could mean that you have some cycle accuracy issue.</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Cyril Eyssautier</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Monday, September 18, 2023 at 9:22:44 PM, Marlon Trujillo wrote:</p>
+<div>
+<p>Dear Acontis Support Team,</p>
+<p> </p>
+<p>I am currently using your ecmaster version <a href="http://3.1.4.99" rel="nofollow noreferrer noopener" target="_blank"> 3.1.4.99</a>, for Linux x86 and I have encountered an issue concerning Cyclic Command WKC errors when attempting to execute emSetSlaveState with the timeout parameter set to EC_NOWAIT. The function works and changes the state of the slave, but it returns WKC errors while using it.</p>
+<p> </p>
+<p>Could you please advise if this is a known issue or limitation within this specific version of your library?</p>
+<p> </p>
+<p>To elaborate this more, this is the reply I got:<br> Cyclic command WKC error: Command = LWR, Address (ADP/ADO) = 16777216, Actual WKC = 1, Set WKC = 2</p>
+<p>Cyclic command WKC error: Command = LWR, Address (ADP/ADO) = 16777216, Actual WKC = 1, Set WKC = 2</p>
+<p>Cyclic command WKC error: Command = LWR, Address (ADP/ADO) = 16777216, Actual WKC = 1, Set WKC = 2</p>
+<p>Cyclic command WKC error: Command = LWR, Address (ADP/ADO) = 16777216, Actual WKC = 1, Set WKC = 2</p>
+<p>Cyclic command WKC error: Command = LWR, Address (ADP/ADO) = 16777216, Actual WKC = 1, Set WKC = 2</p>
+<p> </p>
+<p>And this is the pseudo code I have:</p>
+<p>const EC_T_DWORD res = emSetSlaveState(0, 1003, newState, EC_NOWAIT);</p>
+<p> </p>
+<p>Marlon Trujillo (Simulink Real-Time)</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+</div>

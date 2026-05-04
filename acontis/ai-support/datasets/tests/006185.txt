@@ -1,0 +1,190 @@
+### HEADER
+Id=6185
+Link=http://at-zammad/#ticket/zoom/6185
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=706185
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=paul@deltamotion.com (ID=659, FirstName=Paul, LastName=Huumala)
+CreatedBy=paul@deltamotion.com (ID=659, FirstName=Paul, LastName=Huumala)
+Type=
+TimeUnit=
+CreatedAt=21.08.2023 22:38:03 +00:00
+UpdatedAt=25.08.2023 04:45:59 +00:00
+CloseAt=25.08.2023 04:45:59 +00:00
+ArticlesCount=3
+
+### TITLE
+Edit Topology Scan doesn't upload station addresses
+
+### ARTICLE00_HEADER
+Id=33146
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.08.2023 22:38:03 +00:00
+UpdatedAt=21.08.2023 22:38:06 +00:00
+
+### ARTICLE00_SUBJECT
+Edit Topology Scan doesn't upload station addresses
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>Edit Topology in EcEngineer doesn’t upload the station addresses when doing the online scan. This makes differencing confusing, as the proper slaves are shown in red. Hopefully, the below screenshot helps illustrate this. The tree on the right is a network scan. The view below is the scan from Edit Topology. Can you review this issue?</p>
+<p> </p>
+<p><img style="max-width:100%;width:9.9791in;max-height:2.5833in;width:958px;max-height:248px;" src="/api/v1/ticket_attachment/6185/33146/138404?view=inline"></p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Paul</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=33278
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.08.2023 10:26:04 +00:00
+UpdatedAt=24.08.2023 10:26:07 +00:00
+
+### ARTICLE01_SUBJECT
+Edit Topology Scan doesn't upload station addresses
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>I fixed this. Now we ignore the slave address.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, August 22, 2023 at 12:38:03 AM, Paul Huumala wrote:<br><br><div>
+<p>Hello,</p>
+<p> </p>
+<p>Edit Topology in EcEngineer doesn’t upload the station addresses when doing the online scan. This makes differencing confusing, as the proper slaves are shown in red. Hopefully, the below screenshot helps illustrate this. The tree on the right is a network scan. The view below is the scan from Edit Topology. Can you review this issue?</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:9.9791in;max-height:2.5833in;width:958px;max-height:248px;" src="/api/v1/ticket_attachment/6185/33278/138959?view=inline"></p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Paul</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=33308
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.08.2023 19:58:44 +00:00
+UpdatedAt=24.08.2023 19:58:44 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Edit Topology Scan doesn't upload station addresses [Ticket#706185]
+
+### ARTICLE02_BODY
+<div>
+<p>Hi Kai,</p>
+<p> </p>
+<p>Thank you!</p>
+<p> </p>
+<p>Paul</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Thursday, August 24, 2023 3:26 AM<br>
+<b>To:</b> Paul Huumala &lt;Paul@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: Edit Topology Scan doesn't upload station addresses [Ticket#706185]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>I fixed this. Now we ignore the slave address.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best regards,</p>
+</div>
+<div>
+<p>Kai</p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Kai Feifel</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Tuesday, August 22, 2023 at 12:38:03 AM, Paul Huumala wrote:</p>
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>Edit Topology in EcEngineer doesn’t upload the station addresses when doing the online scan. This makes differencing confusing, as the proper slaves are shown in red. Hopefully, the below screenshot helps illustrate this. The tree on the right is a network scan. The view below is the scan from Edit Topology. Can you review this issue?</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:9.9791in;max-height:2.5833in;width:958px;max-height:248px;" src="/api/v1/ticket_attachment/6185/33308/139158?view=inline"></p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Paul</p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

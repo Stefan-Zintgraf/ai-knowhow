@@ -1,0 +1,92 @@
+### HEADER
+Id=10069
+Link=http://at-zammad/#ticket/zoom/10069
+Group=EC-Support (ID=2)
+Priority=low (ID=1)
+State=closed (ID=4)
+Organization=Homag GmbH (ID=105, Number=53513, Country=DE)
+Commission=Homag, Power Control (ID=118, Number=118)
+Number=7010069
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=kurt.demarco@homag.com (ID=197, FirstName=Kurt, LastName=De Marco)
+CreatedBy=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Type=
+TimeUnit=
+CreatedAt=27.02.2025 14:29:06 +00:00
+UpdatedAt=26.05.2025 15:31:14 +00:00
+CloseAt=26.05.2025 15:31:14 +00:00
+ArticlesCount=3
+
+### TITLE
+Bus Mismatch
+
+### ARTICLE00_HEADER
+Id=57613
+ContentType=text/html
+Internal=False
+Type=phone
+CreatedAt=27.02.2025 14:29:06 +00:00
+UpdatedAt=27.02.2025 14:29:06 +00:00
+
+### ARTICLE00_BODY
+<p>Hallo Cyril,</p>
+<p> </p>
+<p>ich habe das jetzt mal so umgesetzt. Sieht so weit gut aus.</p>
+<p> </p>
+<p>Allerdings bin ich mit der Slave-Mismatch Fehlermeldung noch nicht ganz zufrieden:</p>
+<p> </p>
+<p><span lang="EN-US">09:34:42: echld (009645) : Starting occi DIO diagnostic server</span></p>
+<p><span lang="EN-US">09:34:42: echld (009645) : Performing bus scan...</span></p>
+<p><span lang="EN-US">09:34:42: echld (009759) : Line crossed at slave F6P_1032[021-N1B], EtherCAT auto-increment address=65493, station address=1032. Error at port 1.</span></p>
+<p><span lang="EN-US">09:34:42: echld (009766) : Slave mismatch after 1032, Auto-inc Address 0xffa8, port 0. Configured station address: 0</span></p>
+<p><span lang="EN-US">09:34:42: echld (009766) : Configured: VendorId: ---- (0x0); ProductCode: Unknown (0x0)</span></p>
+<p><span lang="EN-US">09:34:42: echld (009766) : Detected: VendorId: KEB, Karl E. Brinkmann GmbH (0x14); ProductCode: KEB_G6-G_400Hz (0x300000)</span></p>
+<p><span lang="EN-US">09:34:42: echld (009766) : Scan Bus returned with error: ERROR: Line crossed (0x9811017b)</span></p>
+<p><span lang="EN-US"></span></p><p> </p><p></p>
+<p>Eigentlich ist ja am Port 0 der Vorgänger konfiguriert und nicht nichts!</p>
+<p> </p>
+<p>Vielleicht ist es technisch nicht anders möglich, aber wenn doch, wäre es schön, wenn du das noch richten könntest.</p>
+<p> </p>
+<p>Zur Veranschaulichung noch ein Auschnitt aus der Topologie:</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:5.7916in;max-height:4.8333in;width:556px;max-height:464px;" src="/api/v1/ticket_attachment/10069/57613/239557?view=inline"></p>
+<p> </p>
+<p>Das ist der Gutfall. Im Fehlerfall (s. o.). Sind Eingangs- und Ausgangsport am F6P (1032) vertauscht.</p>
+<p> </p>
+<div>
+<p><span style="color:#000001;">Mit freundlichen Grüßen / With best regards<br>HOMAG GmbH <br>Schopfloch, Germany<br><br>Kurt De Marco <br>Control Platform<br><br>Phone +49 7443 13-3305 <br>MS Teams: <a href="https://teams.microsoft.com/l/chat/0/0?users=Kurt.DeMarco@homag.com" rel="nofollow noreferrer noopener" title="https://teams.microsoft.com/l/chat/0/0?users=Kurt.DeMarco@homag.com" target="_blank">Chat/Call</a><br><u><a href="mailto:Kurt.DeMarco@homag.com" title="Click to send email to De Marco, Kurt"><span style="color:#000001;">Kurt.DeMarco@homag.com</span></a></u><br><br></span><a href="https://www.homag.com/" rel="nofollow noreferrer noopener" title="https://www.homag.com/" target="_blank"><b><img border="0" style="max-width:100%;max-width:100%;width:1.8958in;max-height:.6354in;width:182px;max-height:61px;" src="/api/v1/ticket_attachment/10069/57613/239558?view=inline"></b></a><span style="color:#000001;"><br><br></span><a href="https://www.youtube.com/user/homaggroup" rel="nofollow noreferrer noopener" title="https://www.youtube.com/user/homaggroup" target="_blank"><b><img border="0" style="max-width:100%;max-width:100%;width:.3333in;max-height:.2291in;width:32px;max-height:22px;" src="/api/v1/ticket_attachment/10069/57613/239559?view=inline"></b></a><a href="http://www.linkedin.com/company/homag" rel="nofollow noreferrer noopener" title="http://www.linkedin.com/company/homag" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.3333in;max-height:.2291in;width:32px;max-height:22px;" src="/api/v1/ticket_attachment/10069/57613/239560?view=inline"></a><a href="https://www.xing.com/company/homag" rel="nofollow noreferrer noopener" title="https://www.xing.com/company/homag" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.3333in;max-height:.2291in;width:32px;max-height:22px;" src="/api/v1/ticket_attachment/10069/57613/239561?view=inline"></a><a href="https://www.facebook.com/HOMAG/" rel="nofollow noreferrer noopener" title="https://www.facebook.com/HOMAG/" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.3333in;max-height:.2291in;width:32px;max-height:22px;" src="/api/v1/ticket_attachment/10069/57613/239562?view=inline"></a><a href="https://www.instagram.com/homag.group/" rel="nofollow noreferrer noopener" title="https://www.instagram.com/homag.group/" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.3333in;max-height:.2291in;width:32px;max-height:22px;" src="/api/v1/ticket_attachment/10069/57613/239563?view=inline"></a><a href="https://www.homag.com/" rel="nofollow noreferrer noopener" title="https://www.homag.com/" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.3333in;max-height:.2291in;width:32px;max-height:22px;" src="/api/v1/ticket_attachment/10069/57613/239564?view=inline"></a><span style="color:#000001;"><br></span><b><span style="color:#000001;">HOMAG GmbH <br></span></b><span style="color:#000001;">Gesellschaft mit beschränkter Haftung mit Sitz in D-72296 Schopfloch, Homagstraße 3 - 5; Registergericht Stuttgart HRB 735174<br>Geschäftsführung: Panthea Behbahani, Dominik Breinlinger, Marco Huber (Sprecher)<br>Vorsitzender des Aufsichtsrats: Dr. Daniel Schmitt<br><br>Datenschutzhinweise: <a href="https://www.homag.com/fileadmin/policy/Informationspflichten-nach-Artikel-13-DSGVO-DE.pdf" rel="nofollow noreferrer noopener" title="https://www.homag.com/fileadmin/policy/Informationspflichten-nach-Artikel-13-DSGVO-DE.pdf" target="_blank">Art. 13 DSGVO</a></span><span style="color:#000001;"> </span></p>
+</div>
+<div>
+<span class="js-signatureMarker"></span><p><br></p>
+</div><div>
+<div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=59584
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.04.2025 00:01:27 +00:00
+UpdatedAt=13.04.2025 00:01:29 +00:00
+
+### ARTICLE01_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE01_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".
+
+### ARTICLE02_HEADER
+Id=60190
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.05.2025 00:04:48 +00:00
+UpdatedAt=04.05.2025 00:04:54 +00:00
+
+### ARTICLE02_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE02_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".

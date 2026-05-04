@@ -1,0 +1,233 @@
+### HEADER
+Id=6624
+Link=http://at-zammad/#ticket/zoom/6624
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Schneider Electric (Power M.), power meter (ID=459, Number=459)
+Number=706624
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=23.10.2023 06:51:22 +00:00
+UpdatedAt=24.10.2023 06:59:39 +00:00
+CloseAt=24.10.2023 06:59:39 +00:00
+ArticlesCount=3
+
+### TITLE
+The customer Schneider issue about dongle on EC-Inspector
+
+### ARTICLE00_HEADER
+Id=35822
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.10.2023 06:51:22 +00:00
+UpdatedAt=23.10.2023 06:51:24 +00:00
+
+### ARTICLE00_SUBJECT
+The customer Schneider issue about dongle on EC-Inspector
+
+### ARTICLE00_BODY
+<div>Dear,</div><div> </div><div>The customer open the EC-Inspector with dongle and get the following error:</div><div>"An invalid handle was specified, Error 106."</div><div>After click "Ignore", he can open the software.</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div>
+<div>
+<div><img src="/api/v1/ticket_attachment/6624/35822/149784?view=inline" style="max-width:100%;"></div>
+<div><b><i>2023.9.12-10.27 STM32全国巡回研讨会，盟通与您相约五城，期待与您见面！</i></b></div>
+</div>
+<p><i><br></i></p>
+<p>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</p>
+</div>
+<div>
+<p>Room 311, Building 2, Yiquanhui, No. 35 Shangdi East Road, Haidian District, Beijing</p>
+<p>北京市海淀区上地东路35号院颐泉汇2号楼311</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=35831
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.10.2023 08:46:33 +00:00
+UpdatedAt=23.10.2023 08:46:34 +00:00
+
+### ARTICLE01_SUBJECT
+The customer Schneider issue about dongle on EC-Inspector
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>this message comes from WIBU CodeMeter:</div><div><br></div><div>
+<p>The error 106 refers to an "invalid handle" and occurs if a handle was used CodeMeter does not know.</p>
+<p>This may, for instance, happen in the following cases:</p>
+<p> </p>
+<p>1. You use a protected software or a software applying CodeMeter Code API/Wupi API and while doing so restart the CodeMeter service. This renders all handles invalid and reusing handles in your software result in error 106.</p>
+<p> </p>
+<p>2. CodeMeter itself automatically release handles, if:</p>
+<p>a) the CmDongle was disconnected to which the handles previously referred to,</p>
+<p>b) the process which opened the handles no longer exists.</p>
+<p>The check for the processes is performed for each new license access, e.g. using 'CmAccess2()’,</p>
+<p>however at latest after 1 minute.</p>
+<p>c) the handles were not used longer than the specified CleanUpTimeOut value (default 120 minutes).</p>
+<p><br></p>
+<p>I cannot reproduce to get it on my side.</p>
+<p><br></p>
+<p>Best regards,</p>
+<p>Kai</p>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, October 23, 2023 at 8:51:22 AM, ec_support@motrotech.com wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>The customer open the EC-Inspector with dongle and get the following error:</div>
+<div>"An invalid handle was specified, Error 106."</div>
+<div>After click "Ignore", he can open the software.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>
+<div>
+<div><img src="/api/v1/ticket_attachment/6624/35831/149820?view=inline" style="max-width:100%;max-width:100%;"></div>
+<div><b><i>2023.9.12-10.27 STM32全国巡回研讨会，盟通与您相约五城，期待与您见面！</i></b></div>
+</div>
+<p><i><br></i></p>
+<p>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</p>
+</div>
+<div>
+<p>Room 311, Building 2, Yiquanhui, No. 35 Shangdi East Road, Haidian District, Beijing</p>
+<p>北京市海淀区上地东路35号院颐泉汇2号楼311</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=35900
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.10.2023 06:58:57 +00:00
+UpdatedAt=24.10.2023 06:58:57 +00:00
+
+### ARTICLE02_SUBJECT
+RE：The customer Schneider issue about dongle on EC-Inspector [Ticket#706624]
+
+### ARTICLE02_BODY
+<div>
+<div>Hi Kai,</div>
+<div> </div>
+<div>Thanks for your reply.</div>
+<div>The customer solved this problem with another PC.</div>
+<div>May the PC has some problems.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<span class="js-signatureMarker"></span><blockquote>
+<div>------------------------------------------------------------------</div>
+<div>发件人：Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt;</div>
+<div>发送时间：2023年10月23日(星期一) 16:46</div>
+<div>收件人：EtherCAT Support &lt;ec_support@motrotech.com&gt;</div>
+<div>主 题：RE: The customer Schneider issue about dongle on EC-Inspector [Ticket#706624]</div>
+<div> </div>Hi,<div> </div>
+<div>this message comes from WIBU CodeMeter:</div>
+<div> </div>
+<div>
+<p>The error 106 refers to an "invalid handle" and occurs if a handle was used CodeMeter does not know.</p>
+<p>This may, for instance, happen in the following cases:</p>
+<p> </p>
+<p>1. You use a protected software or a software applying CodeMeter Code API/Wupi API and while doing so restart the CodeMeter service. This renders all handles invalid and reusing handles in your software result in error 106.</p>
+<p> </p>
+<p>2. CodeMeter itself automatically release handles, if:</p>
+<p>a) the CmDongle was disconnected to which the handles previously referred to,</p>
+<p>b) the process which opened the handles no longer exists.</p>
+<p>The check for the processes is performed for each new license access, e.g. using 'CmAccess2()’,</p>
+<p>however at latest after 1 minute.</p>
+<p>c) the handles were not used longer than the specified CleanUpTimeOut value (default 120 minutes).</p>
+<p><br></p>
+<p>I cannot reproduce to get it on my side.</p>
+<p><br></p>
+<p>Best regards,</p>
+<p>Kai</p>
+<div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>On Monday, October 23, 2023 at 8:51:22 AM, ec_support@motrotech.com wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>The customer open the EC-Inspector with dongle and get the following error:</div>
+<div>"An invalid handle was specified, Error 106."</div>
+<div>After click "Ignore", he can open the software.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>
+<div>
+<div><img src="/api/v1/ticket_attachment/6624/35900/150015?view=inline" style="max-width:100%;max-width:100.0%;"></div>
+<div><b><i>2023.9.12-10.27 STM32全国巡回研讨会，盟通与您相约五城，期待与您见面！</i></b></div>
+</div>
+<p><i><br></i></p>
+<p>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</p>
+</div>
+<div>
+<p>Room 311, Building 2, Yiquanhui, No. 35 Shangdi East Road, Haidian District, Beijing</p>
+<p>北京市海淀区上地东路35号院颐泉汇2号楼311</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</div>
+<div> </div>
+<br><br>
+</div>
+</blockquote>
+<div> </div>
+</div>

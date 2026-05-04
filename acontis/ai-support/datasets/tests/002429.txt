@@ -1,0 +1,139 @@
+### HEADER
+Id=2429
+Link=http://at-zammad/#ticket/zoom/2429
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Smith & Nephew (ID=521, Number=0, Country=US)
+Commission=Smith & Nephew, Orca (ID=605, Number=605)
+Number=702429
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=ryan.sheehan@smith-nephew.com (ID=889, FirstName=Ryan, LastName=Sheehan)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=11.02.2022 01:26:10 +00:00
+UpdatedAt=18.02.2022 07:14:59 +00:00
+CloseAt=18.02.2022 07:14:59 +00:00
+ArticlesCount=2
+
+### TITLE
+Fwd: Ecat Motor Control
+
+### ARTICLE00_HEADER
+Id=12927
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.02.2022 01:26:10 +00:00
+UpdatedAt=11.02.2022 01:26:10 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Ecat Motor Control
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>I’m not very good with following how to use these macros for getting bits, bytes, words, etc. What do we recommend for what he is trying to access?<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><span class="js-signatureMarker"></span><div>
+<b>From: </b>"Sheehan, Ryan" &lt;Ryan.Sheehan@smith-nephew.com&gt;<br>
+</div>
+<div>
+<b>Subject: </b><b>RE: Ecat Motor Control</b><br>
+</div>
+<div>
+<b>Date: </b>February 10, 2022 at 5:25:46 PM EST<br>
+</div>
+<div>
+<b>To: </b>Jon Waters &lt;j.waters@acontis.com&gt;<br>
+</div>
+<br><div> <div>
+<div>Hi Jon,</div>
+<p> </p>
+<div>Dumb question. What is the best way to get or set a data type of EC_T_SBYTE. Currently I’m using mostly EC_GET_FRM_WORD or EC_SET_FRM_WORD but I’m not seeing an option for BYTE or SBYTE. Would I need to use EC_GETBITS here? Or is there a better option? For example accessing …_Modes_of_operation_display or setting ….Modes_of_operation in the attached header.</div>
+<p> </p>
+<div>Thanks,</div>
+<div>Ryan</div>
+<p> </p>
+<div>
+<b>From:</b> Sheehan, Ryan <br><b>Sent:</b> Thursday, February 3, 2022 1:26 PM<br><b>To:</b> Jon Waters &lt;j.waters@acontis.com&gt;<br><b>Subject:</b> Ecat Motor Control </div>
+<p> </p>
+<div>Hi Jon,</div>
+<p> </p>
+<div>I got the new motor drives we are going to use in this week so I got one of those connected up to a motor and ran through their auto-tune process. I can initiate simple commands through their gui to move to a target velocity or position. The drive is a Nanotec C5-E-1-21 btw. I then connected it up to my demo app and can read in the “actual position” of the motor shaft using emGetProcessImageInputPtr(), EC_SET_FRM_DWORD, and sdwTransmit_PDO_2_Mapping_Parameter_Position_actual_value from the generated header (attached) . So it seems like everything is up and running well.</div>
+<p> </p>
+<div>I am now moving onto attempting to get the motor moving to target positions from the EC-Master app. The documentation for the motor driver says it uses the state machine defined in CANopen standard 402 (CiA 402). To move through the state machine from the app should I be sending and requesting direct controlwords and statuswords from the CoE section of EC-Engineer? Or is there a way to include some of these when generating the process variables header? I know we talked about this briefly but I’m not remembering what was best for this particular part.</div>
+<p> </p>
+<div>Thank you,</div>
+<div>Ryan</div>
+<p> </p>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=12931
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.02.2022 07:56:54 +00:00
+UpdatedAt=11.02.2022 07:56:58 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: Ecat Motor Control
+
+### ARTICLE01_BODY
+<div>Hi Jon,</div><div><br></div><div>for a data type of one byte (EC_T_BYTE/EC_T_SBYTE) he can directly access the value without a macro.</div><div><br></div><div><div>The macros are only required for data types greater than 1 byte, since the bytes may have to be swapped. Since EtherCAT is little endian, the swap is only required on big endian systems (e.g. PowerPC).</div></div><div><div>The macro EC-GETBITS only makes sense for special data types with few bits.</div></div><div>See also our manual about this:</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html#process-data-access-functions" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html#process-data-access-functions" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html#process-data-access-functions</a></div></div><div><div>If something is missing or unclear in the manual, I'm happy to change it.</div></div><div><br></div><div></div><div data-signature="true" data-signature-id="2">
+<div>
+<span>Best regards,</span><br>
+</div>
+<div>Holger Oelhaf</div>
+</div><div><br></div><div><blockquote type="cite">Am Freitag, 11. Februar 2022, 02:26:10, schrieb Jon Waters:<br><br>Hi,<div> </div>
+<div>I’m not very good with following how to use these macros for getting bits, bytes, words, etc. What do we recommend for what he is trying to access?<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><span class="js-signatureMarker"></span><div>
+<b>From: </b>"Sheehan, Ryan" &lt;Ryan.Sheehan@smith-nephew.com&gt;<br>
+</div>
+<div>
+<b>Subject: </b><b>RE: Ecat Motor Control</b><br>
+</div>
+<div>
+<b>Date: </b>February 10, 2022 at 5:25:46 PM EST<br>
+</div>
+<div>
+<b>To: </b>Jon Waters &lt;j.waters@acontis.com&gt;<br>
+</div>
+<br><div> <div>
+<div>Hi Jon,</div>
+<p> </p>
+<div>Dumb question. What is the best way to get or set a data type of EC_T_SBYTE. Currently I’m using mostly EC_GET_FRM_WORD or EC_SET_FRM_WORD but I’m not seeing an option for BYTE or SBYTE. Would I need to use EC_GETBITS here? Or is there a better option? For example accessing …_Modes_of_operation_display or setting ….Modes_of_operation in the attached header.</div>
+<p> </p>
+<div>Thanks,</div>
+<div>Ryan</div>
+<p> </p>
+<div>
+<b>From:</b> Sheehan, Ryan <br><b>Sent:</b> Thursday, February 3, 2022 1:26 PM<br><b>To:</b> Jon Waters &lt;j.waters@acontis.com&gt;<br><b>Subject:</b> Ecat Motor Control </div>
+<p> </p>
+<div>Hi Jon,</div>
+<p> </p>
+<div>I got the new motor drives we are going to use in this week so I got one of those connected up to a motor and ran through their auto-tune process. I can initiate simple commands through their gui to move to a target velocity or position. The drive is a Nanotec C5-E-1-21 btw. I then connected it up to my demo app and can read in the “actual position” of the motor shaft using emGetProcessImageInputPtr(), EC_SET_FRM_DWORD, and sdwTransmit_PDO_2_Mapping_Parameter_Position_actual_value from the generated header (attached) . So it seems like everything is up and running well.</div>
+<p> </p>
+<div>I am now moving onto attempting to get the motor moving to target positions from the EC-Master app. The documentation for the motor driver says it uses the state machine defined in CANopen standard 402 (CiA 402). To move through the state machine from the app should I be sending and requesting direct controlwords and statuswords from the CoE section of EC-Engineer? Or is there a way to include some of these when generating the process variables header? I know we talked about this briefly but I’m not remembering what was best for this particular part.</div>
+<p> </p>
+<div>Thank you,</div>
+<div>Ryan</div>
+<p> </p>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

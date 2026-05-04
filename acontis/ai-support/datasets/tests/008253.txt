@@ -1,0 +1,109 @@
+### HEADER
+Id=8253
+Link=http://at-zammad/#ticket/zoom/8253
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Kleintges Elektrogerätebau GmbH (ID=691, Number=0, Country=DE)
+Commission=Kleintges Elektrogerätebau GmbH, Unknown (ID=772, Number=772)
+Number=708253
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=k.stier@kleintges.de (ID=1896, FirstName=Karlheinz, LastName=Stier)
+CreatedBy=k.stier@kleintges.de (ID=1896, FirstName=Karlheinz, LastName=Stier)
+Type=
+TimeUnit=
+CreatedAt=06.06.2024 06:14:48 +00:00
+UpdatedAt=04.07.2024 05:41:30 +00:00
+CloseAt=04.07.2024 05:41:30 +00:00
+ArticlesCount=2
+
+### TITLE
+AW: Unterstützung bei Entwicklung der EtherCAT Slave Firmware
+
+### ARTICLE00_HEADER
+Id=45651
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.06.2024 06:14:49 +00:00
+UpdatedAt=06.06.2024 06:14:53 +00:00
+
+### ARTICLE00_SUBJECT
+AW: Unterstützung bei Entwicklung der EtherCAT Slave Firmware
+
+### ARTICLE00_BODY
+<p> </p><div> <p>Hallo Hr. Widmann,</p>
+<p> </p>
+<p>ja ich denke, das bekomme ich hin. Senden Sie mir bitte ein Angebot zu, ich kläre das mit der GL ab.</p>
+<p>Mir käme das sehr entgegen, da ich mich dann weiterhin parallel mit der LeiEl-Hardware beschäftigen kann.</p>
+<p> </p>
+<p>Ich würde das aber gerne auf die aktualisierte Prozessdaten-Datei (EcSlave_240603.xls) beziehen.</p>
+<p>Die UNI hat uns kürzlich die endgültigen Slave Output Daten definiert (Adr. 0x6000 – 0x6010), ich habe diese in die Datei eingetragen.</p>
+<p>Es sind ein paar Arrays hinzugekommen.</p>
+<p>Die Slave Input Daten (Adr. 0x7000 – 0x700A) bleiben vorläufig unverändert.</p>
+<p>Außerdem werden von der UNI 5 IBN-Parameter (auch auf UINT32 Bit Basis) gewünscht, die aber azyklisch mit dem Slave ausgetauscht werden sollen:</p>
+<p> </p>
+<p>Master to Slave (Einstellwerte)</p>
+<ul type="disc"> <li>MSu32Voltage</li>
+<li>MSu32Current</li>
+<li>MSu32Impedance</li>
+<li>MSu32LinkVolt</li>
+<li>MSu32Freq</li>
+<li>MSu32Phi</li>
+</ul> <p> </p>
+<p>Slave to Master (Bestätigung Einstellwerte bzw. Antwort des bisherigen/alten Wertes)</p>
+<ul type="disc"> <li>SMu32Voltage</li>
+<li>SMu32Current</li>
+<li>SMu32Impedance</li>
+<li>SMu32LinkVolt</li>
+<li>SMu32Freq</li>
+<li>SMu32Phi</li>
+</ul> <p> </p>
+<p>Vermutlich werden später noch andere azyklische Parameter-Werte hinzukommen.</p>
+<p> </p>
+<p><u>Fragen:</u></p>
+<ul type="disc"> <li>Wird die Slave-SW dahingehend weiterentwickelt, dass diese im Sync Mode arbeitet und somit vom Master synchronisiert wird?</li>
+</ul> <p>(Oder wird weiterhin der FreeRun Mode genutzt)</p>
+<ul type="disc"> <li>Hinzufügen von zyklischen Prozessdaten und azyklischen Parameter-Werten kann man dann im Hause Kleintges ohne Probleme vornehmen?</li>
+</ul> <p> </p>
+<p>VG</p>
+<p> </p>
+<p>K. Stier</p>
+<p> </p>
+<div> <div> <span class="js-signatureMarker"></span><p><b>Von:</b><span> Christoph Widmann &lt;c.widmann@acontis.com&gt; <br> <b>Gesendet:</b> Mittwoch, 5. Juni 2024 12:19 <br> <b>An:</b> Karlheinz Stier &lt;K.Stier@kleintges.de&gt; <br> <b>Betreff:</b> Unterstützung bei Entwicklung der EtherCAT Slave Firmware</span></p>
+</div>
+</div>
+<p> </p>
+<p>Guten Tag Herr Stier,</p>
+<p> </p>
+<p>meine Kollegen haben mich informiert, dass sie weitere Unterstützung für die Entwicklung der Slave Firmware benötigen.</p>
+<p> </p>
+<p>Diese können wir leisten, aber nicht mehr unentgeltlich.</p>
+<p> </p>
+<p>Ich könnte ihnen ein Angebot über z. B. 20 Stunden zu je EUR 140 zukommen lassen. Auf dieses Budget würden wir dann die angefallenen Stunden abrechnen. Natürlich mit entsprechendem Nachweis.</p>
+<p> </p>
+<p>Passt das für sie?</p>
+<p> </p>
+<p>Viele Grüße</p>
+<p>Christoph Widmann</p>
+<p><span>------------------------------------------------------------------------------------------------- <br> </span><span>Christoph Widmann <span style="color:#ed7d31;"> |</span> <a href="mailto:c.widmann@acontis.com"><span style="color:blue;">c.widmann@acontis.com</span></a> <span style="color:#ed7d31;">|</span> Tel. +49 (0) 751 5 60 30 32 <br> acontis technologies GmbH <span style="color:#ed7d31;">|</span> Franz-Beer-Strasse 98 <span style="color:#ed7d31;">|</span> 88250 Weingarten/Germany <br> Handelsregister Ulm HRB 552320 <span style="color:#ed7d31;">|</span> USt-ID: DE 813265916</span></p>
+<p>Geschäftsführer: Christoph Widmann, Stefan Zintgraf</p>
+<p><a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" title="https://www.acontis.com/" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;width:.2291in;max-height:.2291in;width:22px;max-height:22px;" src="/api/v1/ticket_attachment/8253/45651/188268?view=inline"></span></a> <a href="https://www.linkedin.com/company/acontis-technologies" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;width:.302in;max-height:.25in;width:29px;max-height:24px;" src="/api/v1/ticket_attachment/8253/45651/188267?view=inline"></span></a> <a href="https://www.youtube.com/acontistechnologies" rel="nofollow noreferrer noopener" title="https://www.youtube.com/acontistechnologies" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;width:.3645in;max-height:.25in;width:35px;max-height:24px;" src="/api/v1/ticket_attachment/8253/45651/188266?view=inline"></span></a></p>
+<p> </p>
+<p><span>
+<br> <br> __________ ESET Mail Security __________ <br> <br> Diese E-Mail wurde gescannt und es wurden keine Bedrohungen gefunden. <br><br>Version der Erkennungsroutine: 29343 (20240605) <br> <br> <a href="https://www.eset.com" rel="nofollow noreferrer noopener" target="_blank">https://www.eset.com</a></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=46758
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.06.2024 00:04:47 +00:00
+UpdatedAt=30.06.2024 00:04:51 +00:00
+
+### ARTICLE01_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE01_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".

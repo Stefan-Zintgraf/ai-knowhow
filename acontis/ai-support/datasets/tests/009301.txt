@@ -1,0 +1,168 @@
+### HEADER
+Id=9301
+Link=http://at-zammad/#ticket/zoom/9301
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Soft Service, Generic (ID=476, Number=476)
+Number=709301
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=ecsupport@soft-service.co.jp (ID=33, FirstName=Ecsupport, LastName=)
+CreatedBy=ecsupport@soft-service.co.jp (ID=33, FirstName=Ecsupport, LastName=)
+Type=
+TimeUnit=
+CreatedAt=13.11.2024 12:20:22 +00:00
+UpdatedAt=29.11.2024 07:14:41 +00:00
+CloseAt=29.11.2024 07:14:41 +00:00
+ArticlesCount=2
+
+### TITLE
+About Ec-Inspector in Redundancy Environment
+
+### ARTICLE00_HEADER
+Id=52748
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.11.2024 12:20:22 +00:00
+UpdatedAt=13.11.2024 12:20:29 +00:00
+
+### ARTICLE00_SUBJECT
+About Ec-Inspector in Redundancy Environment
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Dear Support Team</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">We are currently testing Ec-Inspector in order to introduce it to our customers.</span></p>
+<p><span lang="EN-US">I have some questions. Please let me know.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">We are checking whether diagnosis is possible when connected to redundancy.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">First I connected it like this:</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:5.5104in;max-height:1.9791in;width:529px;max-height:190px;" src="/api/v1/ticket_attachment/9301/52748/219179?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">In this state, if the cable between the slaves is disconnected in one place (at the location marked with an "X"), </span></p>
+<p><span lang="EN-US">the master will be able to continue communicating with all slaves, </span></p>
+<p><span lang="EN-US">but since frames that have passed through all slaves will not be returned to the ET2000, </span></p>
+<p><span lang="EN-US">the cable will appear to be disconnected in Ec-Inspector.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">So I tried connecting it as follows:</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:5.2708in;max-height:2.6458in;width:506px;max-height:254px;" src="/api/v1/ticket_attachment/9301/52748/219180?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US">In this state, if the cable between the slaves is disconnected in one place (at the location marked with an "X"), </span></p>
+<p><span lang="EN-US">the master will be able to continue communicating with all slaves, </span></p>
+<p><span lang="EN-US">but it will still show as disconnected in Ec-Inspector.</span></p>
+<p><span lang="EN-US">(I was hoping it wouldn't be disconnected.)</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Before disconnect</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:4.0104in;max-height:1.1354in;width:385px;max-height:109px;" src="/api/v1/ticket_attachment/9301/52748/219184?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">After disconnect</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:4.0104in;max-height:.9062in;width:385px;max-height:87px;" src="/api/v1/ticket_attachment/9301/52748/219185?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">I took a capture of this moment,</span></p>
+<p><span lang="EN-US">but it seems that the WKC of the frames measured between Line2 is not being counted up.</span></p>
+<p><span lang="EN-US">If I disconnect both cables between Line1, WKC will start counting up.</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:8.8958in;max-height:3.9479in;width:854px;max-height:379px;" src="/api/v1/ticket_attachment/9301/52748/219181?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Is there an error in my measurement method?</span></p>
+<p><span lang="EN-US">Please tell me how to accurately record the operation at the time of redundancy connection.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best Regards,</span></p>
+<p><span lang="EN-US">Kenji Nakamura</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=52801
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.11.2024 10:19:48 +00:00
+UpdatedAt=14.11.2024 10:19:51 +00:00
+
+### ARTICLE01_SUBJECT
+About Ec-Inspector in Redundancy Environment
+
+### ARTICLE01_BODY
+<div>Hi <span>Kenji</span><span>,</span><br>
+</div><div><span>Sorry, Cable Redundancy isn't supported yet by EC-Inspector/EC-Monitor.</span></div><div><br></div><div>Best regards,</div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Holger Oelhaf</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">Am Mittwoch, 13. November 2024 um 13:20:22, schrieb Ecsupport:<br><br><div>
+<p><span lang="EN-US">Dear Support Team</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">We are currently testing Ec-Inspector in order to introduce it to our customers.</span></p>
+<p><span lang="EN-US">I have some questions. Please let me know.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">We are checking whether diagnosis is possible when connected to redundancy.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">First I connected it like this:</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:5.5104in;max-height:1.9791in;width:529px;max-height:190px;" src="/api/v1/ticket_attachment/9301/52801/219352?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">In this state, if the cable between the slaves is disconnected in one place (at the location marked with an "X"), </span></p>
+<p><span lang="EN-US">the master will be able to continue communicating with all slaves, </span></p>
+<p><span lang="EN-US">but since frames that have passed through all slaves will not be returned to the ET2000, </span></p>
+<p><span lang="EN-US">the cable will appear to be disconnected in Ec-Inspector.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">So I tried connecting it as follows:</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:5.2708in;max-height:2.6458in;width:506px;max-height:254px;" src="/api/v1/ticket_attachment/9301/52801/219353?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US">In this state, if the cable between the slaves is disconnected in one place (at the location marked with an "X"), </span></p>
+<p><span lang="EN-US">the master will be able to continue communicating with all slaves, </span></p>
+<p><span lang="EN-US">but it will still show as disconnected in Ec-Inspector.</span></p>
+<p><span lang="EN-US">(I was hoping it wouldn't be disconnected.)</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Before disconnect</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:4.0104in;max-height:1.1354in;width:385px;max-height:109px;" src="/api/v1/ticket_attachment/9301/52801/219354?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">After disconnect</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:4.0104in;max-height:.9062in;width:385px;max-height:87px;" src="/api/v1/ticket_attachment/9301/52801/219355?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">I took a capture of this moment,</span></p>
+<p><span lang="EN-US">but it seems that the WKC of the frames measured between Line2 is not being counted up.</span></p>
+<p><span lang="EN-US">If I disconnect both cables between Line1, WKC will start counting up.</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:8.8958in;max-height:3.9479in;width:854px;max-height:379px;" src="/api/v1/ticket_attachment/9301/52801/219356?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Is there an error in my measurement method?</span></p>
+<p><span lang="EN-US">Please tell me how to accurately record the operation at the time of redundancy connection.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Best Regards,</span></p>
+<p><span lang="EN-US">Kenji Nakamura</span></p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

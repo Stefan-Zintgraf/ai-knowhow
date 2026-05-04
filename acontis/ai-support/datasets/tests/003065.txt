@@ -1,0 +1,145 @@
+### HEADER
+Id=3065
+Link=http://at-zammad/#ticket/zoom/3065
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Eaton, BP2 (ID=528, Number=528)
+Number=703065
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=19.05.2022 16:18:51 +00:00
+UpdatedAt=20.05.2022 06:31:35 +00:00
+CloseAt=20.05.2022 06:31:35 +00:00
+ArticlesCount=2
+
+### TITLE
+Eaton Slave Code Question
+
+### ARTICLE00_HEADER
+Id=16133
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.05.2022 16:18:51 +00:00
+UpdatedAt=19.05.2022 16:18:51 +00:00
+
+### ARTICLE00_SUBJECT
+Eaton Slave Code Question
+
+### ARTICLE00_BODY
+<div>Hi Cyril,</div><div> </div><div>I have a question about how the slave stack works that came up from the Eaton project. There is a part in the slave stack code where the frame data relevant to the slave is copied from the ESC memory into the local slave memory. It uses the ESC address and the size of the process data to be copied, but in the actual routine there is a divide by 2 on the address. We want to understand why this divide by 2 is there and if this is correct. Do you have any experience about this?</div><div> </div><div>void <b>PDO_OutputMapping</b>( void)</div><div>{</div><div>/*ECATCHANGE_START(V5.12) ECAT1*/</div><div>UINT32 u32TimeValue = 0 ;</div><div>if ( MEASUREMENT_ACTIVE)</div><div>{</div><div>#if ((MIN_PD_CYCLE_TIME == 0) || (PD_OUTPUT_CALC_AND_COPY_TIME == 0))</div><div>u32TimeValue = GetSystemTimeDelay( 0) ;</div><div>u32MinCycleTimeStartValue = u32TimeValue ;</div><div> </div><div>bMinCycleTimeMeasurementStarted = TRUE ;</div><div>u32MinCycleTimeValue = 0 ;</div><div> </div><div>#endif /* ((MIN_PD_CYCLE_TIME == 0) || (PD_OUTPUT_CALC_AND_COPY_TIME == 0)) */</div><div> </div><div>HandleCycleTimeMeasurement() ;</div><div> </div><div>}</div><div>/*ECATCHANGE_END(V5.12) ECAT1*/</div><div> </div><div><b> HW_EscReadIsr(( ( MEM_ADDR *)aPdOutputData), nEscAddrOutputData, nPdOutputSize) ;</b></div><div>APPL_OutputMapping(( UINT16 *)aPdOutputData) ;</div><div> </div><div>/*ECATCHANGE_START(V5.12) ECAT1*/</div><div>#if ((MIN_PD_CYCLE_TIME == 0) || (PD_OUTPUT_CALC_AND_COPY_TIME == 0))</div><div>if ( MEASUREMENT_ACTIVE)</div><div>{</div><div>u32TimeValue = GetSystemTimeDelay( u32TimeValue) ;</div><div> </div><div>#if (PD_OUTPUT_CALC_AND_COPY_TIME == 0)</div><div>if ( sSyncManOutPar.u32CalcAndCopyTime &lt; u32TimeValue)</div><div>{</div><div>sSyncManOutPar.u32CalcAndCopyTime = u32TimeValue ;</div><div>}</div><div>#endif</div><div> </div><div>#if (MIN_PD_CYCLE_TIME == 0)</div><div>/* add the first part of the min cycle time */</div><div>u32MinCycleTimeValue = u32TimeValue ;</div><div>#endif</div><div>}</div><div>#endif /* #if ((MIN_PD_CYCLE_TIME == 0) || (PD_OUTPUT_CALC_AND_COPY_TIME == 0)) */</div><div>/*ECATCHANGE_END(V5.12) ECAT1*/</div><div>}</div><div> </div><div>void <b>ESC_readBlockISR</b>( ESCMEM_ADDR *pData, uint16_t address, uint16_t len)</div><div>{</div><div>// Create pointer to ESC Address</div><div><b> const void *escSource = ( void *)( ESC_BASE + ( uint32_t)( address / 2U)) ;</b></div><div> </div><div>// Copy ESC data to buffer. Convert lengths to words.</div><div>memcpy( pData, escSource, ( size_t)(( len + 1U) &gt;&gt; 1U));</div><div> </div><div>// Determine if length (in bytes) is even or odd</div><div>// (No action on even)</div><div>if (( len &amp; 0x1U) == 0x1U)</div><div>{</div><div>// Odd Length</div><div> </div><div>// Clear extra byte in buffer</div><div>pData[ (( len - 1U) / 2U)] = ( pData[ (( len - 1U) / 2U)] &amp; ESC_M_LSB) ;</div><div>}</div><div>}</div><div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+
+### ARTICLE01_HEADER
+Id=16151
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.05.2022 06:31:35 +00:00
+UpdatedAt=20.05.2022 06:31:36 +00:00
+
+### ARTICLE01_SUBJECT
+Eaton Slave Code Question
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>variables in SSC are typically WORD sized (16 bit) whereas ESC ADOs are byte offsets<span>, especially for data arrays this must be considered</span><span>.</span>
+</div><div>So this might explain "<span>pData[...]", but for memcpy, it simply looks wrong.</span>
+</div><div><br></div><div>Best regards,</div><div>Paul<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Donnerstag, 19. Mai 2022, 18:18:51, schrieb Jon Waters:<br><br><div>Hi Cyril,</div>
+<div> </div>
+<div>I have a question about how the slave stack works that came up from the Eaton project. There is a part in the slave stack code where the frame data relevant to the slave is copied from the ESC memory into the local slave memory. It uses the ESC address and the size of the process data to be copied, but in the actual routine there is a divide by 2 on the address. We want to understand why this divide by 2 is there and if this is correct. Do you have any experience about this?</div>
+<div> </div>
+<div>void <b>PDO_OutputMapping</b>( void)</div>
+<div>{</div>
+<div>/*ECATCHANGE_START(V5.12) ECAT1*/</div>
+<div>UINT32 u32TimeValue = 0 ;</div>
+<div>if ( MEASUREMENT_ACTIVE)</div>
+<div>{</div>
+<div>#if ((MIN_PD_CYCLE_TIME == 0) || (PD_OUTPUT_CALC_AND_COPY_TIME == 0))</div>
+<div>u32TimeValue = GetSystemTimeDelay( 0) ;</div>
+<div>u32MinCycleTimeStartValue = u32TimeValue ;</div>
+<div> </div>
+<div>bMinCycleTimeMeasurementStarted = TRUE ;</div>
+<div>u32MinCycleTimeValue = 0 ;</div>
+<div> </div>
+<div>#endif /* ((MIN_PD_CYCLE_TIME == 0) || (PD_OUTPUT_CALC_AND_COPY_TIME == 0)) */</div>
+<div> </div>
+<div>HandleCycleTimeMeasurement() ;</div>
+<div> </div>
+<div>}</div>
+<div>/*ECATCHANGE_END(V5.12) ECAT1*/</div>
+<div> </div>
+<div><b> HW_EscReadIsr(( ( MEM_ADDR *)aPdOutputData), nEscAddrOutputData, nPdOutputSize) ;</b></div>
+<div>APPL_OutputMapping(( UINT16 *)aPdOutputData) ;</div>
+<div> </div>
+<div>/*ECATCHANGE_START(V5.12) ECAT1*/</div>
+<div>#if ((MIN_PD_CYCLE_TIME == 0) || (PD_OUTPUT_CALC_AND_COPY_TIME == 0))</div>
+<div>if ( MEASUREMENT_ACTIVE)</div>
+<div>{</div>
+<div>u32TimeValue = GetSystemTimeDelay( u32TimeValue) ;</div>
+<div> </div>
+<div>#if (PD_OUTPUT_CALC_AND_COPY_TIME == 0)</div>
+<div>if ( sSyncManOutPar.u32CalcAndCopyTime &lt; u32TimeValue)</div>
+<div>{</div>
+<div>sSyncManOutPar.u32CalcAndCopyTime = u32TimeValue ;</div>
+<div>}</div>
+<div>#endif</div>
+<div> </div>
+<div>#if (MIN_PD_CYCLE_TIME == 0)</div>
+<div>/* add the first part of the min cycle time */</div>
+<div>u32MinCycleTimeValue = u32TimeValue ;</div>
+<div>#endif</div>
+<div>}</div>
+<div>#endif /* #if ((MIN_PD_CYCLE_TIME == 0) || (PD_OUTPUT_CALC_AND_COPY_TIME == 0)) */</div>
+<div>/*ECATCHANGE_END(V5.12) ECAT1*/</div>
+<div>}</div>
+<div> </div>
+<div>void <b>ESC_readBlockISR</b>( ESCMEM_ADDR *pData, uint16_t address, uint16_t len)</div>
+<div>{</div>
+<div>// Create pointer to ESC Address</div>
+<div><b> const void *escSource = ( void *)( ESC_BASE + ( uint32_t)( address / 2U)) ;</b></div>
+<div> </div>
+<div>// Copy ESC data to buffer. Convert lengths to words.</div>
+<div>memcpy( pData, escSource, ( size_t)(( len + 1U) &gt;&gt; 1U));</div>
+<div> </div>
+<div>// Determine if length (in bytes) is even or odd</div>
+<div>// (No action on even)</div>
+<div>if (( len &amp; 0x1U) == 0x1U)</div>
+<div>{</div>
+<div>// Odd Length</div>
+<div> </div>
+<div>// Clear extra byte in buffer</div>
+<div>pData[ (( len - 1U) / 2U)] = ( pData[ (( len - 1U) / 2U)] &amp; ESC_M_LSB) ;</div>
+<div>}</div>
+<div>}</div>
+<div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

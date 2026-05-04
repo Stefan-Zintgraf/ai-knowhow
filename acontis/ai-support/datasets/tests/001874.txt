@@ -1,0 +1,171 @@
+### HEADER
+Id=1874
+Link=http://at-zammad/#ticket/zoom/1874
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=none
+Commission=Okamura, Servomotor (ID=578, Number=578)
+Number=701874
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=22.11.2021 00:38:08 +00:00
+UpdatedAt=12.12.2023 13:49:54 +00:00
+CloseAt=06.12.2021 07:20:11 +00:00
+ArticlesCount=3
+
+### TITLE
+Question About EC-Engineer(OKAMURA)
+
+### ARTICLE00_HEADER
+Id=9900
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=22.11.2021 00:38:08 +00:00
+UpdatedAt=22.11.2021 00:38:13 +00:00
+
+### ARTICLE00_SUBJECT
+Question About EC-Engineer(OKAMURA)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question About EC-Engineer(OKAMURA)
+
+EC-Engineer does not work on their PC.
+I attach the screenshot and log.
+They tried installing the following drivers, but the problem is not solved.
+  - WinPcap 4.3.1
+  - NpCap
+
+Please tell me how to solve their problem.
+
+Best regards,
+Takuya Fujikawa
+
+### ARTICLE01_HEADER
+Id=9906
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.11.2021 06:57:59 +00:00
+UpdatedAt=22.11.2021 06:58:01 +00:00
+
+### ARTICLE01_SUBJECT
+Question About EC-Engineer(OKAMURA)
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>Winpcap does work well on Windows 10.</div><div>Did they try with Npcap (install in Winpcap compatible mode)?</div><div>Because in the screenshots they are trying with Ndis driver.</div><div>Please try with Npcap in Winpcap comaptible mode and check if this helps.</div><div><br></div><div>If not please cloes EC-Engineer. Go to C:\ProgramData\EC-Engineer and open the User.xx.xml. Search for MasterDebugMessageLevel and set it to 5. Search for GuiDebugMessageLevel and set it to 2.</div><div>Save Xml and close. Open EC-Engineer and try again. Then send me the log file please.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, November 22, 2021, 1:38:08 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question About EC-Engineer(OKAMURA)</div>
+<div><br></div>
+<div>EC-Engineer does not work on their PC.</div>
+<div>I attach the screenshot and log.</div>
+<div>They tried installing the following drivers, but the problem is not solved.</div>
+<div>  - WinPcap 4.3.1</div>
+<div>  - NpCap</div>
+<div><br></div>
+<div>Please tell me how to solve their problem.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=9928
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.11.2021 09:47:03 +00:00
+UpdatedAt=22.11.2021 09:47:04 +00:00
+
+### ARTICLE02_SUBJECT
+Question About EC-Engineer(OKAMURA)
+
+### ARTICLE02_BODY
+<div>Sorry I meant: Winpcap does NOT work well on Windows 10.<br><br>
+</div><div><blockquote type="cite">On Monday, November 22, 2021, 7:57:59 AM, Kai Feifel wrote:<br><br>Hi,<div><br></div>
+<div>Winpcap does work well on Windows 10.</div>
+<div>Did they try with Npcap (install in Winpcap compatible mode)?</div>
+<div>Because in the screenshots they are trying with Ndis driver.</div>
+<div>Please try with Npcap in Winpcap comaptible mode and check if this helps.</div>
+<div><br></div>
+<div>If not please cloes EC-Engineer. Go to C:\ProgramData\EC-Engineer and open the User.xx.xml. Search for MasterDebugMessageLevel and set it to 5. Search for GuiDebugMessageLevel and set it to 2.</div>
+<div>Save Xml and close. Open EC-Engineer and try again. Then send me the log file please.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, November 22, 2021, 1:38:08 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question About EC-Engineer(OKAMURA)</div>
+<div><br></div>
+<div>EC-Engineer does not work on their PC.</div>
+<div>I attach the screenshot and log.</div>
+<div>They tried installing the following drivers, but the problem is not solved.</div>
+<div>  - WinPcap 4.3.1</div>
+<div>  - NpCap</div>
+<div><br></div>
+<div>Please tell me how to solve their problem.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+<br>
+</blockquote></div><div><br></div>

@@ -1,0 +1,117 @@
+### HEADER
+Id=1207
+Link=http://at-zammad/#ticket/zoom/1207
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=KRONES AG (ID=131, Number=55010, Country=DE)
+Commission=Krones, Inspektionstechnik (ID=148, Number=148)
+Number=701207
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=andreas.stopfer@krones.com (ID=388, FirstName=Andreas, LastName=Stopfer)
+CreatedBy=andreas.stopfer@krones.com (ID=388, FirstName=Andreas, LastName=Stopfer)
+Type=
+TimeUnit=
+CreatedAt=11.08.2021 05:36:38 +00:00
+UpdatedAt=03.09.2021 06:10:11 +00:00
+CloseAt=03.09.2021 06:10:11 +00:00
+ArticlesCount=2
+
+### TITLE
+Möglichkeiten "unwichtiger" Busstrang
+
+### ARTICLE00_HEADER
+Id=6602
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.08.2021 05:36:38 +00:00
+UpdatedAt=11.08.2021 05:36:42 +00:00
+
+### ARTICLE00_SUBJECT
+Möglichkeiten "unwichtiger" Busstrang
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Support-Team,</p>
+<p>bei uns kam die Frage auf ob es möglich ist einen Strang am Bus als „unwichtig“ zu definieren.</p>
+<p>D.h. wenn die Maschine produziert muss der „wichtige Strang unbedingt sicher laufen. Der „unwichtige“ könnte theoretisch auch mal wegbrechen bzw. abgesteckt werden.</p>
+<p> </p>
+<p>Gibt es eine Lösung in diese Richtung?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p> </p>
+<p>Andreas Stopfer</p>
+<p>Software Developer of Sensor Technology</p>
+<p>CRD Development Inspection Technology</p>
+<p> </p>
+<p>Krones AG</p>
+<p>Böhmerwaldstraße 5</p>
+<p>93073 Neutraubling</p>
+<p>Germany</p>
+<p> </p>
+<p>Phone: +49 (0)9401 70-4810</p>
+<p>E-Mail: andreas.stopfer@krones.com</p>
+<p>Internet: <a href="http://www.krones.com" rel="nofollow noreferrer noopener" target="_blank">www.krones.com</a></p>
+<p> </p>
+</div><span class="js-signatureMarker"></span><p>______________________________________________________________<br>
+<br> Krones AG<br> Vorstand: Christoph Klenk, Vorstandsvorsitzender,<br> Norbert Broger, Thomas Ricker, Markus Tischer, Ralf Goldbrunner<br> Vorsitzender des Aufsichtsrats: Volker Kronseder<br> Registergericht: Regensburg HRB 23 44, Umsatzsteuer-ID-Nummer: DE 133 695 999<br>
+<br> ______________________________________________________________<br>
+<br> Der Inhalt dieser E-Mail und jeder Anhang ist vertraulich.<br> Diese Inhalte sind nur fuer die benannten Adressaten. <br> Wenn Sie diese E-Mail durch einen Fehler erhalten haben,<br> benachrichtigen Sie sofort Ihren Administrator oder den Absender.<br> Behandeln Sie die E-Mail vertraulich.<br>
+<br> * Diese E-Mail wurde auf Viren und gefaehrlichen Inhalt geprueft. *<br>
+<br> ______________________________________________________________<br>
+<br> The contents of this email and any attachments are confidential.<br> They are intended for the named recipient(s) only.<br> If you have received this email in error please notify the system manager<br> or the sender immediately and do not disclose the contents to anyone or<br> make copies.<br>
+<br> * This e-Mail was scanned for viruses, vandals and malicious content. *</p>
+
+### ARTICLE01_HEADER
+Id=6620
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.08.2021 09:49:35 +00:00
+UpdatedAt=11.08.2021 09:49:37 +00:00
+
+### ARTICLE01_SUBJECT
+Möglichkeiten "unwichtiger" Busstrang
+
+### ARTICLE01_BODY
+Hallo Herr Stopfer,<div><br></div><div>eine Möglichkeit wäre die "unwichtige" Teilnehmer als HC Gruppen zu definieren. Damit könnten sie während des Startvorgangs oder in Betrieb da oder nicht da sein ohne Fehlermeldungen zu verursachen. Ihre An-/Abwesenheit wird an Ihre Anwendung über Notification gemeldet.</div><div>Eine Andere Möglichkeit wäre die API <span>emSetSlaveDisabled zu verwenden. Damit können Sie die unwichtige Slaves als Disabled deklarieren. Die können dann nicht mehr über PREOP und verursachen keine Fehlermeldungen falls sie abwesend sind. Kombiniert mit </span><span>EC_IOCTL_SET_AUTO_ADJUST_CYCCMD_WKC_ENABLED sind dann alle Fehlermeldungen unterdrückt. Diese API können Sie beim Start oder in Betrieb aufrufen.</span>
+</div><div>
+<span>Die letzte Methode, die eher für in Betriebnahme gedacht ist wäre </span><span>EC_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE mit 0 aufzurufen. Damit kann der Master nach OP trotz fehlende oder fehlerhafte Slaves. Sie haben aber damit keine Kontrolle mehr falls sich das Netzwerk noch mehr degradiert.</span>
+</div><div><br></div><div>Schöne Grüße,</div><div>Cyril Eyssautier<div><br></div>
+<div><blockquote type="cite">On Wednesday, August 11, 2021, 7:36:38 AM, Andreas Stopfer wrote:<br><br><div>
+<p>Hallo Support-Team,</p>
+<p>bei uns kam die Frage auf ob es möglich ist einen Strang am Bus als „unwichtig“ zu definieren.</p>
+<p>D.h. wenn die Maschine produziert muss der „wichtige Strang unbedingt sicher laufen. Der „unwichtige“ könnte theoretisch auch mal wegbrechen bzw. abgesteckt werden.</p>
+<p> </p>
+<p>Gibt es eine Lösung in diese Richtung?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p> </p>
+<p>Andreas Stopfer</p>
+<p>Software Developer of Sensor Technology</p>
+<p>CRD Development Inspection Technology</p>
+<p> </p>
+<p>Krones AG</p>
+<p>Böhmerwaldstraße 5</p>
+<p>93073 Neutraubling</p>
+<p>Germany</p>
+<p> </p>
+<p>Phone: +49 (0)9401 70-4810</p>
+<p>E-Mail: andreas.stopfer@krones.com</p>
+<p>Internet: <a href="http://www.krones.com" rel="nofollow noreferrer noopener" target="_blank">www.krones.com</a></p>
+<p> </p>
+</div>
+<span class="js-signatureMarker"></span><p>______________________________________________________________<br>
+<br> Krones AG<br> Vorstand: Christoph Klenk, Vorstandsvorsitzender,<br> Norbert Broger, Thomas Ricker, Markus Tischer, Ralf Goldbrunner<br> Vorsitzender des Aufsichtsrats: Volker Kronseder<br> Registergericht: Regensburg HRB 23 44, Umsatzsteuer-ID-Nummer: DE 133 695 999<br>
+<br> ______________________________________________________________<br>
+<br> Der Inhalt dieser E-Mail und jeder Anhang ist vertraulich.<br> Diese Inhalte sind nur fuer die benannten Adressaten. <br> Wenn Sie diese E-Mail durch einen Fehler erhalten haben,<br> benachrichtigen Sie sofort Ihren Administrator oder den Absender.<br> Behandeln Sie die E-Mail vertraulich.<br>
+<br> * Diese E-Mail wurde auf Viren und gefaehrlichen Inhalt geprueft. *<br>
+<br> ______________________________________________________________<br>
+<br> The contents of this email and any attachments are confidential.<br> They are intended for the named recipient(s) only.<br> If you have received this email in error please notify the system manager<br> or the sender immediately and do not disclose the contents to anyone or<br> make copies.<br>
+<br> * This e-Mail was scanned for viruses, vandals and malicious content. *</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

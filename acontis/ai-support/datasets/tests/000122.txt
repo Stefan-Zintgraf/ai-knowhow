@@ -1,0 +1,238 @@
+### HEADER
+Id=122
+Link=http://at-zammad/#ticket/zoom/122
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=dSPACE GmbH (ID=94, Number=40282, Country=DE)
+Commission=dSpace, SCALEXIO (ID=103, Number=103)
+Number=700122
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=sschulte@dspace.de (ID=82, FirstName=Sebastian, LastName=Schulte)
+CreatedBy=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Type=
+TimeUnit=
+CreatedAt=05.03.2021 09:39:09 +00:00
+UpdatedAt=25.04.2022 13:00:28 +00:00
+CloseAt=12.03.2021 07:05:03 +00:00
+ArticlesCount=4
+
+### TITLE
+[EC-Simulator] esSetSlaveCoeObjectTransferCallbacks(): Slave Adresse in read- oder write-Callback
+
+### ARTICLE00_HEADER
+Id=502
+ContentType=text/html
+Internal=False
+Type=phone
+CreatedAt=05.03.2021 09:39:09 +00:00
+UpdatedAt=05.03.2021 09:39:09 +00:00
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Paul,</p>
+<p> </p>
+<p>Wenn ich mir die Signatur von den Callbacks für esSetSlaveCoeObjectTransferCallbacks() ansehe, dann fällt mir auf, dass ich beim registrieren zwar wCfgFixedAddress = 0 (all slaves) eintragen kann, aber wenn dann ein read- oder write-Callback aufgerufen wird, dann komme ich nicht mehr an die Slave Adresse ran.</p>
+<p> </p>
+<p>Fehlt da vielleicht was in dem Interface der beiden Callbacks, oder übersehe ich hier irgendwas?</p>
+<p> </p>
+<p>EC_T_BYTE (*pfRead)(EC_T_VOID* pvContext, EC_T_WORD wIndex, EC_T_BYTE bySubindex, EC_T_DWORD dwSize, EC_T_BYTE* pbyData, EC_T_BOOL bCompleteAccess)</p>
+<p>EC_T_BYTE (*pfWrite)(EC_T_VOID* pvContext, EC_T_WORD wIndex, EC_T_BYTE bySubindex, EC_T_DWORD dwSize, EC_T_BYTE* pbyData, EC_T_BOOL bCompleteAccess)</p>
+<p> </p>
+<p>Schöne Grüße</p>
+<p>Sebastian</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=560
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=08.03.2021 10:30:09 +00:00
+UpdatedAt=08.03.2021 10:30:09 +00:00
+
+### ARTICLE01_BODY
+<div>-----------</div><div>Simulator       02965 (A)    PBN - Add slave address in CoE object transfer callbacks</div><div>2021-03-08      T9211</div><div>-----------</div>
+
+### ARTICLE02_HEADER
+Id=609
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.03.2021 09:48:27 +00:00
+UpdatedAt=09.03.2021 09:48:28 +00:00
+
+### ARTICLE02_SUBJECT
+[EC-Simulator] esSetSlaveCoeObjectTransferCallbacks(): Slave Adresse in read- oder write-Callback
+
+### ARTICLE02_BODY
+Hi Sebastian,<div><br></div><div>ab V3.1.1.03 ist die Slave Adresse mit beinhaltet.<br><div data-signature="true" data-signature-id="2">
+<div><br></div>
+<div>Viele Grüße</div>
+<div>Paul</div>
+<div>____________________________________________________________________________</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>Fax: +49 (751) 56030-31</div>
+<div>eMail: ecsupport@acontis.com</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Freitag, 5. März 2021, 10:39:09, schrieb Paul Bußmann:<br><br><div>
+<p>Hi Paul,</p>
+<p> </p>
+<p>Wenn ich mir die Signatur von den Callbacks für esSetSlaveCoeObjectTransferCallbacks() ansehe, dann fällt mir auf, dass ich beim registrieren zwar wCfgFixedAddress = 0 (all slaves) eintragen kann, aber wenn dann ein read- oder write-Callback aufgerufen wird, dann komme ich nicht mehr an die Slave Adresse ran.</p>
+<p> </p>
+<p>Fehlt da vielleicht was in dem Interface der beiden Callbacks, oder übersehe ich hier irgendwas?</p>
+<p> </p>
+<p>EC_T_BYTE (*pfRead)(EC_T_VOID* pvContext, EC_T_WORD wIndex, EC_T_BYTE bySubindex, EC_T_DWORD dwSize, EC_T_BYTE* pbyData, EC_T_BOOL bCompleteAccess)</p>
+<p>EC_T_BYTE (*pfWrite)(EC_T_VOID* pvContext, EC_T_WORD wIndex, EC_T_BYTE bySubindex, EC_T_DWORD dwSize, EC_T_BYTE* pbyData, EC_T_BOOL bCompleteAccess)</p>
+<p> </p>
+<p>Schöne Grüße</p>
+<p>Sebastian</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=610
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.03.2021 09:51:15 +00:00
+UpdatedAt=09.03.2021 09:51:15 +00:00
+
+### ARTICLE03_SUBJECT
+RE: [EC-Simulator] esSetSlaveCoeObjectTransferCallbacks(): Slave Adresse in read- oder write-Callback [Ticket#700122]
+
+### ARTICLE03_BODY
+<div>
+<p>Hi,</p>
+<p> </p>
+<p>ja cool. Probiere ich aus, sobald verfügbar.</p>
+<p> </p>
+<p>Schöne Grüße und vielen Dank!</p>
+<p>Sebastian</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Paul Bußmann via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Tuesday, March 9, 2021 10:48 AM<br>
+<b>To:</b> Sebastian Schulte &lt;SSchulte@dspace.de&gt;<br>
+<b>Subject:</b> RE: [EC-Simulator] esSetSlaveCoeObjectTransferCallbacks(): Slave Adresse in read- oder write-Callback [Ticket#700122]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Sebastian,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>ab V3.1.1.03 ist die Slave Adresse mit beinhaltet.</p>
+<div>
+<div> <p> </p>
+</div>
+<div>
+<p>Viele Grüße</p>
+</div>
+<div>
+<p>Paul</p>
+</div>
+<div>
+<p>____________________________________________________________________________</p>
+</div>
+<div>
+<p>Paul Bußmann</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<p>acontis technologies GmbH</p>
+</div>
+<div>
+<p>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</p>
+</div>
+<div>
+<p>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com</a> </p>
+</div>
+<div>
+<p>Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>Fax: +49 (751) 56030-31</p>
+</div>
+<div>
+<p>eMail: ecsupport@acontis.com</p>
+</div>
+<div>
+<p>----------------------------------------------------------------------------</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</p>
+</div>
+<div>
+<p><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+<div>
+<p>----------------------------------------------------------------------------</p>
+</div>
+<div>
+<p>Eingetragene Rechtsform: GmbH</p>
+</div>
+<div>
+<p>Sitz der Gesellschaft: Ravensburg</p>
+</div>
+<div>
+<p>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</p>
+</div>
+<div>
+<p>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</p>
+</div>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<blockquote>
+<p>Am Freitag, 5. März 2021, 10:39:09, schrieb Paul Bußmann:</p>
+<p></p>
+<div>
+<p>Hi Paul,</p>
+<p> </p>
+<p>Wenn ich mir die Signatur von den Callbacks für esSetSlaveCoeObjectTransferCallbacks() ansehe, dann fällt mir auf, dass ich beim registrieren zwar wCfgFixedAddress = 0 (all slaves) eintragen kann, aber wenn dann ein read- oder write-Callback aufgerufen wird, dann komme ich nicht mehr an die Slave Adresse ran.</p>
+<p> </p>
+<p>Fehlt da vielleicht was in dem Interface der beiden Callbacks, oder übersehe ich hier irgendwas?</p>
+<p> </p>
+<p>EC_T_BYTE (*pfRead)(EC_T_VOID* pvContext, EC_T_WORD wIndex, EC_T_BYTE bySubindex, EC_T_DWORD dwSize, EC_T_BYTE* pbyData, EC_T_BOOL bCompleteAccess)</p>
+<p>EC_T_BYTE (*pfWrite)(EC_T_VOID* pvContext, EC_T_WORD wIndex, EC_T_BYTE bySubindex, EC_T_DWORD dwSize, EC_T_BYTE* pbyData, EC_T_BOOL bCompleteAccess)</p>
+<p> </p>
+<p>Schöne Grüße</p>
+<p>Sebastian</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>

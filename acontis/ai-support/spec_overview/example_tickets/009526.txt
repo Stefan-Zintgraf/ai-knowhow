@@ -1,0 +1,181 @@
+### HEADER
+Id=9526
+Link=http://at-zammad/#ticket/zoom/9526
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=709526
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=12.12.2024 10:57:28 +00:00
+UpdatedAt=20.12.2024 07:24:28 +00:00
+CloseAt=20.12.2024 07:24:28 +00:00
+ArticlesCount=2
+
+### TITLE
+What are the conditions for using the API used in Diagnosis Master General? [QNo.108]
+
+### ARTICLE00_HEADER
+Id=54080
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.12.2024 10:57:28 +00:00
+UpdatedAt=12.12.2024 10:57:31 +00:00
+
+### ARTICLE00_SUBJECT
+What are the conditions for using the API used in Diagnosis Master General? [QNo.108]
+
+### ARTICLE00_BODY
+<div>
+<div>Hi Support Team,</div>
+<div> </div>
+<div>This question is from Mitsubishi (commission No. 40627).</div>
+</div><div> </div><div>
+<div>What are the conditions for using the API used in "Diagnosis Master General"?</div>
+<div> </div>
+<div>(1) EcDevice.MasterVersion()</div>
+<div>What is the condition when the version of MainDevice could not be obtained? What are the conditions under which the displayed value becomes "Unknown"?</div>
+<div>(When the value of EcDevice.MasterVersion() could not be obtained)</div>
+<div> </div>
+<div>(2) EcDevice.MasterInfo.DcInSync()</div>
+<div>What are the conditions under which the contents displayed by DC in-sync become Yes/No?</div>
+<div>(Conditions for enabling/disabling EcDevice.MasterInfo.DcInSync())</div>
+<div> </div>
+<div>(3) EcDevice.MasterInfo.TopologyOk()</div>
+<div>What are the conditions for the display content of Topology OK to be Yes/No?</div>
+<div>(Conditions for enabling/disabling EcDevice.MasterInfo.TopologyOk())</div>
+<div> </div>
+<div>(4) EcDevice.MasterInfo.LinkConnected()</div>
+<div>
+<div>What are the conditions under which Link Connected display content becomes Yes/No?</div>
+<div>(Conditions for enabling/disabling EcDevice.MasterInfo.LinkConnected())</div>
+</div>
+<div> </div>
+<div>
+<div>(5) EcDevice.MasterInfo.SlavesInMasterState()</div>
+<div>What are the conditions under which Slaves in Master State display content becomes Yes/No?</div>
+<div>(Conditions for enabling/disabling EcDevice.MasterInfo.SlavesInMasterState())</div>
+<div> </div>
+<div>(6) EcDevice.GetMemoryUsage()</div>
+<div>What are the conditions under which the display content of Current [kB] becomes “-”?</div>
+<div>(When currentMemory cannot be obtained by EcDevice.GetMemoryUsage())</div>
+<div> </div>
+<div>(7) EcDevice.GetMemoryUsage()</div>
+<div>What are the conditions under which Max [kB] is displayed as Yes/No?</div>
+<div>(In case maxMemory cannot be obtained by EcDevice.GetMemoryUsage())</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+</div>
+</div><div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=54089
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.12.2024 11:46:18 +00:00
+UpdatedAt=12.12.2024 11:46:20 +00:00
+
+### ARTICLE01_SUBJECT
+What are the conditions for using the API used in Diagnosis Master General? [QNo.108]
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>(1): This value is initalizied with null. We try to read this version in the OD of MainDevice. If this does not work we have to check the value for null, to not get an exception. </div><div><br></div><div>(2): This is also read from the EC-Master object dictionary</div><div><br></div><div>(3): This is also read from the EC-Master object dictionary</div><div><br></div><div>(4): This is also read from the EC-Master object dictionary</div><div><br></div><div>(5): This is also read from the EC-Master object dictionary</div><div><br></div><div>(6): If the size was not read. E.g. Master Versions smaller 3.1.3.03 does not support this</div><div><br></div><div>(7): If the value was read from the master API.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, December 12, 2024 at 11:57:28 AM, Yuichi Ide wrote:<br><br><div>
+<div>Hi Support Team,</div>
+<div> </div>
+<div>This question is from Mitsubishi (commission No. 40627).</div>
+</div>
+<div> </div>
+<div>
+<div>What are the conditions for using the API used in "Diagnosis Master General"?</div>
+<div> </div>
+<div>(1) EcDevice.MasterVersion()</div>
+<div>What is the condition when the version of MainDevice could not be obtained? What are the conditions under which the displayed value becomes "Unknown"?</div>
+<div>(When the value of EcDevice.MasterVersion() could not be obtained)</div>
+<div> </div>
+<div>(2) EcDevice.MasterInfo.DcInSync()</div>
+<div>What are the conditions under which the contents displayed by DC in-sync become Yes/No?</div>
+<div>(Conditions for enabling/disabling EcDevice.MasterInfo.DcInSync())</div>
+<div> </div>
+<div>(3) EcDevice.MasterInfo.TopologyOk()</div>
+<div>What are the conditions for the display content of Topology OK to be Yes/No?</div>
+<div>(Conditions for enabling/disabling EcDevice.MasterInfo.TopologyOk())</div>
+<div> </div>
+<div>(4) EcDevice.MasterInfo.LinkConnected()</div>
+<div>
+<div>What are the conditions under which Link Connected display content becomes Yes/No?</div>
+<div>(Conditions for enabling/disabling EcDevice.MasterInfo.LinkConnected())</div>
+</div>
+<div> </div>
+<div>
+<div>(5) EcDevice.MasterInfo.SlavesInMasterState()</div>
+<div>What are the conditions under which Slaves in Master State display content becomes Yes/No?</div>
+<div>(Conditions for enabling/disabling EcDevice.MasterInfo.SlavesInMasterState())</div>
+<div> </div>
+<div>(6) EcDevice.GetMemoryUsage()</div>
+<div>What are the conditions under which the display content of Current [kB] becomes “-”?</div>
+<div>(When currentMemory cannot be obtained by EcDevice.GetMemoryUsage())</div>
+<div> </div>
+<div>(7) EcDevice.GetMemoryUsage()</div>
+<div>What are the conditions under which Max [kB] is displayed as Yes/No?</div>
+<div>(In case maxMemory cannot be obtained by EcDevice.GetMemoryUsage())</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+</div>
+</div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

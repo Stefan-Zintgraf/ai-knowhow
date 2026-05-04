@@ -1,0 +1,187 @@
+### HEADER
+Id=3829
+Link=http://at-zammad/#ticket/zoom/3829
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ITK Engineering GmbH (ID=120, Number=54016, Country=DE)
+Commission=ITK, Asimov Express (ID=134, Number=134)
+Number=703829
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=michael.wenz@itk-engineering.de (ID=107, FirstName=Michael, LastName=Wenz)
+CreatedBy=michael.wenz@itk-engineering.de (ID=107, FirstName=Michael, LastName=Wenz)
+Type=
+TimeUnit=
+CreatedAt=02.09.2022 09:44:51 +00:00
+UpdatedAt=04.10.2022 09:00:02 +00:00
+CloseAt=04.10.2022 09:00:02 +00:00
+ArticlesCount=3
+
+### TITLE
+emSetSlaveState
+
+### ARTICLE00_HEADER
+Id=20339
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.09.2022 09:44:51 +00:00
+UpdatedAt=02.09.2022 09:44:55 +00:00
+
+### ARTICLE00_SUBJECT
+emSetSlaveState
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Herr Oelhaf, hallo Herr Eyssautier,</p>
+<p> </p>
+<p>beim Testen mit EC-Master ist aufgefallen, dass emSetSlaveState und emGetSlaveState unterschiedlichen Rückgabewert haben bezüglich Hot Connect Slave, welcher nicht present ist.</p>
+<p> </p>
+<p>0000009805: emGetSlaveId(1039) = 38</p>
+<p>0000009805: emGetSlaveState(38, --, --) = Command not executed (slave not present on bus)</p>
+<p>0000009805: emGetSlaveState failed : wStationAddress=1039, Command not executed (slave not present on bus) (0x9811010e))</p>
+<p>0000009805: emGetSlaveId(1039) = 38</p>
+<p>0000009805: emSetSlaveState(38, OP, 1000) ...</p>
+<p>0000009805: emSetSlaveState(38, OP, 1000) = ERROR: Not found</p>
+<p>0000009805: emSetSlaveState failed : wStationAddress=1039, ERROR: Not found (0x9811000c))</p>
+<p> </p>
+<p><b>EC_E_SLAVE_NOT_PRESENT</b></p>
+<p>0x9811010E: APP / SLV: command not executed (slave not present on bus) (e.g. slave disappeared or was never present)</p>
+<p> </p>
+<p><b>EC_E_NOTFOUND</b></p>
+<p>0x9811000C: APP: Not found (e.g. Network Information File ENI not found or API called with invalid slave ID)</p>
+<p> </p>
+<p>Deswegen hätte ich erwartet, dass emSetSlaveState auch EC_E_SLAVE_NOT_PRESENT zurückgibt wie es bei emGetSlaveState der Fall ist.</p>
+<p> </p>
+<p>Anbei EcMasterDemo Logausgaben -5, leicht modifiziertes EcMasterDemo und eni Datei.</p>
+<p>Können Sie bitte schauen?</p>
+<p> </p>
+<p>Viele Grüße</p>
+<p>Michael Wenz</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>--</p>
+<p>Dr.-Ing. Michael Wenz</p>
+<p>Software Engineering</p>
+<p> </p>
+<p>ITK Engineering GmbH</p>
+<p>Im Speyerer Tal 6</p>
+<p>D-76761 Rülzheim</p>
+<p> </p>
+<p>Tel.: +49 7272 7703-456</p>
+<p>Fax: +49 7272 7703-100</p>
+<p>Mobil: +49 174 9480570</p>
+<p> </p>
+<p>mailto: michael.wenz@itk-engineering.de</p>
+<p> </p>
+<p>_____________________________________________________________</p>
+<p>ITK Engineering GmbH Im Speyerer Tal 6 76761 Rülzheim</p>
+<p>Tel.: +49 7272 7703-0 Fax: +49 7272 7703-100</p>
+<p><span>mailto:info@itk-engineering.de <a href="http://www.itk-engineering.de" rel="nofollow noreferrer noopener" target="_blank">http://www.itk-engineering.de</a></span></p>
+<p> </p>
+<p>Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board:</p>
+<p>Dr. Rudolf Maier</p>
+<p>Geschäftsführung/Executive Board:</p>
+<p>Dr. Frank Schmidt (Vorsitzender/Chairman), Bernd Gohlicke</p>
+<p>Sitz der Gesellschaft/Registered Office: 76761 Rülzheim</p>
+<p>Registergericht/Registered Court: Amtsgericht Landau, HRB 32046</p>
+<p>USt.-ID-Nr./VAT-ID-No. DE813165046</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=20372
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.09.2022 06:17:59 +00:00
+UpdatedAt=05.09.2022 06:18:02 +00:00
+
+### ARTICLE01_SUBJECT
+emSetSlaveState
+
+### ARTICLE01_BODY
+Hallo Herr Wenz,<div>wir haben das Problem untersucht. Sie haben natürlich Recht, EC_E_NOTFOUND ist für HC-Slaves falsch.</div><div>Das Problem ist in der nächsten Version gefixt.</div><div><br></div><div>Mit freundlichen Grüßen,<div data-signature="true" data-signature-id="2"><div>Holger Oelhaf</div></div>
+<div><br></div>
+<div><blockquote type="cite">Am Freitag, 2. September 2022 um 11:44:51, schrieb Michael Wenz:<br><br><div>
+<p>Hallo Herr Oelhaf, hallo Herr Eyssautier,</p>
+<p> </p>
+<p>beim Testen mit EC-Master ist aufgefallen, dass emSetSlaveState und emGetSlaveState unterschiedlichen Rückgabewert haben bezüglich Hot Connect Slave, welcher nicht present ist.</p>
+<p> </p>
+<p>0000009805: emGetSlaveId(1039) = 38</p>
+<p>0000009805: emGetSlaveState(38, --, --) = Command not executed (slave not present on bus)</p>
+<p>0000009805: emGetSlaveState failed : wStationAddress=1039, Command not executed (slave not present on bus) (0x9811010e))</p>
+<p>0000009805: emGetSlaveId(1039) = 38</p>
+<p>0000009805: emSetSlaveState(38, OP, 1000) ...</p>
+<p>0000009805: emSetSlaveState(38, OP, 1000) = ERROR: Not found</p>
+<p>0000009805: emSetSlaveState failed : wStationAddress=1039, ERROR: Not found (0x9811000c))</p>
+<p> </p>
+<p><b>EC_E_SLAVE_NOT_PRESENT</b></p>
+<p>0x9811010E: APP / SLV: command not executed (slave not present on bus) (e.g. slave disappeared or was never present)</p>
+<p> </p>
+<p><b>EC_E_NOTFOUND</b></p>
+<p>0x9811000C: APP: Not found (e.g. Network Information File ENI not found or API called with invalid slave ID)</p>
+<p> </p>
+<p>Deswegen hätte ich erwartet, dass emSetSlaveState auch EC_E_SLAVE_NOT_PRESENT zurückgibt wie es bei emGetSlaveState der Fall ist.</p>
+<p> </p>
+<p>Anbei EcMasterDemo Logausgaben -5, leicht modifiziertes EcMasterDemo und eni Datei.</p>
+<p>Können Sie bitte schauen?</p>
+<p> </p>
+<p>Viele Grüße</p>
+<p>Michael Wenz</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>--</p>
+<p>Dr.-Ing. Michael Wenz</p>
+<p>Software Engineering</p>
+<p> </p>
+<p>ITK Engineering GmbH</p>
+<p>Im Speyerer Tal 6</p>
+<p>D-76761 Rülzheim</p>
+<p> </p>
+<p>Tel.: +49 7272 7703-456</p>
+<p>Fax: +49 7272 7703-100</p>
+<p>Mobil: +49 174 9480570</p>
+<p> </p>
+<p>mailto: michael.wenz@itk-engineering.de</p>
+<p> </p>
+<p>_____________________________________________________________</p>
+<p>ITK Engineering GmbH Im Speyerer Tal 6 76761 Rülzheim</p>
+<p>Tel.: +49 7272 7703-0 Fax: +49 7272 7703-100</p>
+<p><span>mailto:info@itk-engineering.de <a href="http://www.itk-engineering.de" rel="nofollow noreferrer noopener" target="_blank">http://www.itk-engineering.de</a></span></p>
+<p> </p>
+<p>Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board:</p>
+<p>Dr. Rudolf Maier</p>
+<p>Geschäftsführung/Executive Board:</p>
+<p>Dr. Frank Schmidt (Vorsitzender/Chairman), Bernd Gohlicke</p>
+<p>Sitz der Gesellschaft/Registered Office: 76761 Rülzheim</p>
+<p>Registergericht/Registered Court: Amtsgericht Landau, HRB 32046</p>
+<p>USt.-ID-Nr./VAT-ID-No. DE813165046</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=21291
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.10.2022 08:24:22 +00:00
+UpdatedAt=04.10.2022 08:59:51 +00:00
+
+### ARTICLE02_SUBJECT
+Delivery for ITK Engineering AG, Asimov Express, Commission 40132
+
+### ARTICLE02_BODY
+<div>
+<p>Dear Customer,</p>
+<p>please find your new software version below:</p>
+<p><a href="https://downloads.acontis.com/2022/G-I/ITK_Engineering_AG_(40132)(DE)/EC-Master_64-Bit/3.1.4.05/EC-Master-ClassA-AddOn-V3.1.4.05-Xenomai3-x86_64Bit-SDK_Source.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/G-I/ITK_Engineering_AG_(40132)(DE)/EC-Master_64-Bit/3.1.4.05/EC-Master-ClassA-AddOn-V3.1.4.05-Xenomai3-x86_64Bit-SDK_Source.tar.gz</a></p>
+<p><a href="https://downloads.acontis.com/2022/G-I/ITK_Engineering_AG_(40132)(DE)/EC-Master_64-Bit/3.1.4.05/EC-Master-I8254x-V3.1.4.05-Xenomai3-x86_64Bit-SDK_Source.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/G-I/ITK_Engineering_AG_(40132)(DE)/EC-Master_64-Bit/3.1.4.05/EC-Master-I8254x-V3.1.4.05-Xenomai3-x86_64Bit-SDK_Source.tar.gz</a></p>
+<p><a href="https://downloads.acontis.com/2022/G-I/ITK_Engineering_AG_(40132)(DE)/EC-Master_64-Bit/3.1.4.05/EC-Master-V3.1.4.05-Xenomai3-x86_64Bit-SDK_Source.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/G-I/ITK_Engineering_AG_(40132)(DE)/EC-Master_64-Bit/3.1.4.05/EC-Master-V3.1.4.05-Xenomai3-x86_64Bit-SDK_Source.tar.gz</a></p>
+<p>Password: ECM88250</p>
+<p>Best Regards,<br>Holger Oelhaf <span class="js-signatureMarker"></span><br>________________ <br>EtherCAT Support <br>acontis technologies GmbH <br>Gartenstraße 46 <br>D-88212 Ravensburg <br>Http: <a href="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> <br>Phone: +49 (751) 56030-30 <br>Fax: +49 (751) 56030-31 <br>eMail: ecsupport@acontis.com </p>
+<p>This is an automatic generated eMail.</p>
+</div>

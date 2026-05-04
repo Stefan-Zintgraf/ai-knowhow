@@ -1,0 +1,128 @@
+### HEADER
+Id=10068
+Link=http://at-zammad/#ticket/zoom/10068
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ESAB Welding & Cutting GmbH (ID=96, Number=52010, Country=DE)
+Commission=ESAB, CNC-Steuerung (ID=107, Number=107)
+Number=7010068
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=g.neeb@esab-cutting.de (ID=100, FirstName=Gerold, LastName=Neeb)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=27.02.2025 14:05:22 +00:00
+UpdatedAt=06.03.2025 08:46:30 +00:00
+CloseAt=27.02.2025 14:49:34 +00:00
+ArticlesCount=3
+
+### TITLE
+Acontis software update request from ESAB Welding & Cutting GmbH
+
+### ARTICLE00_HEADER
+Id=57611
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.02.2025 14:05:22 +00:00
+UpdatedAt=27.02.2025 14:05:24 +00:00
+
+### ARTICLE00_SUBJECT
+Acontis software update request from ESAB Welding & Cutting GmbH
+
+### ARTICLE00_BODY
+<p>Dear Mr./Ms. Neeb,</p><p>thank you for your registration.<br><br></p><p>First Name: Gerold<br>Last Name: Neeb<br>Company: ESAB Welding &amp; Cutting GmbH<br><span>Commission Number: <br></span><span>Country: Germany<br></span><span>City: Karben<br></span><span>E-Mail: G.Neeb@esab-cutting.de<br></span>Product: <span>EC-Engineer<br></span>Update Type: <br><span>Operating System Version: <br></span>Additional information: </p><p><img src="/api/v1/ticket_attachment/10068/57611/239549?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/10068/57611/239548?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=57615
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.02.2025 14:39:37 +00:00
+UpdatedAt=27.02.2025 14:39:39 +00:00
+
+### ARTICLE01_SUBJECT
+Acontis software update request from ESAB Welding & Cutting GmbH
+
+### ARTICLE01_BODY
+<div>
+<div>Hi,</div>
+<div><br></div>
+<div>es gibt keine neuere 3.9.x, als die Version die Sie schon haben. Ich schicke Ihnen mal unsere Neuste 4.0:</div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2025/D-F/ESAB_Welding_&amp;_Cutting_(45068)(DE)/EC-Engineer/4.0.5/EC-Engineer_Dongle_V4.0.5.zip" title="https://downloads.acontis.com/2025/D-F/ESAB_Welding_&amp;_Cutting_(45068)(DE)/EC-Engineer/4.0.5/EC-Engineer_Dongle_V4.0.5.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/D-F/ESAB_Welding_&amp;_Cutting_(45068)(DE)/EC-Engineer/4.0.5/EC-Engineer_Dongle_V4.0.5.zip</a></div>
+</div><div><br></div><div>Viele Grüße</div><div>Kai Feifel</div><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=57616
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.02.2025 14:41:30 +00:00
+UpdatedAt=27.02.2025 14:41:30 +00:00
+
+### ARTICLE02_SUBJECT
+AW: [EXT] RE: Acontis software update request from ESAB Welding & Cutting GmbH [Ticket#7010068]
+
+### ARTICLE02_BODY
+<div>Danke</div><div> </div><div>
+<p> </p>
+<p><span style=" color: rgb(34, 34, 34);"> </span></p>
+<p><span style=" color: rgb(34, 34, 34);">Mit freundlichen Grüßen / Best regards</span></p>
+<p><span style=" color: rgb(34, 34, 34);">Gerold Neeb</span></p>
+<p><span style=" color: rgb(34, 34, 34);"> </span></p>
+</div><div> </div><hr>
+<div dir="ltr">
+<b>Von:</b> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Gesendet:</b> Donnerstag, 27. Februar 2025 15:39<br>
+<b>An:</b> Gerold Neeb &lt;G.Neeb@esab-cutting.de&gt;<br>
+<b>Betreff:</b> [EXT] RE: Acontis software update request from ESAB Welding &amp; Cutting GmbH [Ticket#7010068] <div> </div>
+</div><div>
+<div>
+<span style="color:#9c6500;">CAUTION:</span> This email originated outside of ESAB. Do not click links or open attachments unless you recognize the sender and know the content is safe. NEVER provide or enter your network logon credentials when asked through an external email or website. Please feel free to forward suspicious messages to security@esab.com</div>
+<br>
+<div>
+<div>
+<div>Hi,</div>
+<div> </div>
+<div>es gibt keine neuere 3.9.x, als die Version die Sie schon haben. Ich schicke Ihnen mal unsere Neuste 4.0:</div>
+<div> </div>
+<div><a href="https://downloads.acontis.com/2025/D-F/ESAB_Welding_&amp;_Cutting_(45068)(DE)/EC-Engineer/4.0.5/EC-Engineer_Dongle_V4.0.5.zip" title="https://downloads.acontis.com/2025/D-F/ESAB_Welding_&amp;_Cutting_(45068)(DE)/EC-Engineer/4.0.5/EC-Engineer_Dongle_V4.0.5.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/D-F/ESAB_Welding_&amp;_Cutting_(45068)(DE)/EC-Engineer/4.0.5/EC-Engineer_Dongle_V4.0.5.zip</a></div>
+</div>
+<div> </div>
+<div>Viele Grüße</div>
+<div>Kai Feifel</div>
+<br>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+</div>
+</div><p>Confidentiality Notice: This message, together with any attachments, is intended only for the use of the individual or entity to which it is addressed and may contain confidential or privileged information. It is strictly forbidden to share any part of this message with any third party without a written consent of the sender. If you think you have received this message in error, please advise the sender and then delete this message and any attachments immediately.</p>

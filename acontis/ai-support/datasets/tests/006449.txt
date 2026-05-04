@@ -1,0 +1,103 @@
+### HEADER
+Id=6449
+Link=http://at-zammad/#ticket/zoom/6449
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Zetatek Technologies (ID=664, Number=50263, Country=IN)
+Commission=Zetatek Technologies.com, Rate Table (ID=745, Number=745)
+Number=706449
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=bhaskar.gc@zetatektechnologies.com (ID=1626, FirstName=Bhaskar, LastName=Gc)
+CreatedBy=bhaskar.gc@zetatektechnologies.com (ID=1626, FirstName=Bhaskar, LastName=Gc)
+Type=
+TimeUnit=
+CreatedAt=28.09.2023 10:03:59 +00:00
+UpdatedAt=02.10.2023 07:06:59 +00:00
+CloseAt=02.10.2023 07:06:59 +00:00
+ArticlesCount=2
+
+### TITLE
+List of Parameter Numbers to be used for MC_ReadParameter / MC_WriteParameter
+
+### ARTICLE00_HEADER
+Id=34792
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.09.2023 10:03:59 +00:00
+UpdatedAt=28.09.2023 10:03:59 +00:00
+
+### ARTICLE00_SUBJECT
+List of Parameter Numbers to be used for MC_ReadParameter / MC_WriteParameter
+
+### ARTICLE00_BODY
+<div dir="ltr"><div dir="ltr">Cyril / Chris,<br><div> </div>
+<div>I am trying to find the list of unique Parameter Numbers that can be passed to</div>
+<div> </div>
+<div>* MC_ReadParameter</div>
+<div>* MC_WriteParameter</div>
+<div> </div>
+<div>It is the enum MC_T_PN that is defined in ECMotionControl.h ?</div>
+<div> </div>
+<div>There are only 7 defined that are below 999 and so I was wondering if I am looking at the right place.<br>
+</div>
+<div> </div>
+<div>Pls let me know.<br>
+</div>
+<div> </div>
+<div>Thx,</div>
+<div>GCB</div>
+<div> </div>
+</div></div>
+
+### ARTICLE01_HEADER
+Id=34877
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.10.2023 07:06:54 +00:00
+UpdatedAt=02.10.2023 07:06:55 +00:00
+
+### ARTICLE01_SUBJECT
+List of Parameter Numbers to be used for MC_ReadParameter / MC_WriteParameter
+
+### ARTICLE01_BODY
+<div>Hello,</div><div><br></div><div>the parameter IDs are defined in EcMotionControl.h:</div><div><br></div><div>/* Parameter numbers for FB MC_ReadParameter / MC_WriteParameter and boolean versions */</div><div>/* Parameter-numbers from 0 to 999 are reserved for the standard */</div><div>enum MC_T_PN</div><div>{</div><div>   MCFB_PN_COMMANDED_POSITION     = 1,           /* REAL: Commanded position */</div><div>   MCFB_PN_SW_LIMIT_POS           = 2,           /* REAL: Positive Software limit switch position */</div><div>   MCFB_PN_SW_LIMIT_NEG           = 3,           /* REAL: Negative Software limit switch position */</div><div>   MCFB_PN_ENA_LIMIT_POS          = 4,           /* BOOL: Enable positive software limit switch */</div><div>   MCFB_PN_ENA_LIMIT_NEG          = 5,           /* BOOL: Enable negative software limit switch */</div><div>   // MCFB_PN_ENA_POS_LAG_MONITORING = 6,           /* BOOL: Enable monitoring of position lag */</div><div>   // MCFB_PN_MAX_POSITION_LAG       = 7,           /* REAL: Maximal position lag */</div><div>   // MCFB_PN_MAX_VELOCITY_SYSTEM    = 8,           /* REAL: Maximal allowed velocity of the axis in the motion system */</div><div>   // MCFB_PN_MAX_VELOCITY_APPL      = 9,           /* REAL: Maximal allowed velocity of the axis in the application */</div><div>   MCFB_PN_ACTUAL_VELOCITY        = 10,          /* REAL: Actual velocity */</div><div>   MCFB_PN_COMMANDED_VELOCITY     = 11,          /* REAL: Commanded velocity */</div><div>   // MCFB_PN_MAX_ACCELERATION_SYSTEM= 12,          /* REAL: Maximal allowed acceleration of the axis in the motion system */</div><div>   // MCFB_PN_MAX_ACCELERATION_APPL  = 13,          /* REAL: Maximal allowed acceleration of the axis in the application   */</div><div>   // MCFB_PN_MAX_DECELERATION_SYSTEM= 14,          /* REAL: Maximal allowed deceleration of the axis in the motion system */</div><div>   // MCFB_PN_MAX_DECELERATION_APPL  = 15,          /* REAL: Maximal allowed deceleration of the axis in the application */</div><div>   // MCFB_PN_MAX_JERKSYSTEM         = 16,          /* REAL: Maximum allowed jerk of the axis in the motion system */</div><div>   // MCFB_PN_MAX_JERKAPPL           = 17,          /* REAL: Maximum allowed jerk of the axis in the application   */</div><div><br></div><div>   /* Numbers greater than 999 indicate supplier-specific parameters */</div><div>   MCFB_PN_COMMANDED_ACCELERATION = 1000,        /* REAL: Commanded acceleration */</div><div>   MCFB_PN_COMMANDED_JERK = 1001,                /* REAL: Commanded jerk */</div><div>   MCFB_PN_ACTUAL_POSITION = 1002                /* REAL: Actual position */</div><div>};</div><div><br></div><div>Best Regards</div><div><br></div><div>Christoph</div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Thursday, September 28, 2023 at 12:03:59 PM, Bhaskar Gc wrote:<br><br><div dir="ltr"><div dir="ltr">Cyril / Chris,<br><div> </div>
+<div>I am trying to find the list of unique Parameter Numbers that can be passed to</div>
+<div> </div>
+<div>* MC_ReadParameter</div>
+<div>* MC_WriteParameter</div>
+<div> </div>
+<div>It is the enum MC_T_PN that is defined in ECMotionControl.h ?</div>
+<div> </div>
+<div>There are only 7 defined that are below 999 and so I was wondering if I am looking at the right place.<br>
+</div>
+<div> </div>
+<div>Pls let me know.<br>
+</div>
+<div> </div>
+<div>Thx,</div>
+<div>GCB</div>
+<div> </div>
+</div></div>
+<br>
+</blockquote></div><div><br></div><br><br>

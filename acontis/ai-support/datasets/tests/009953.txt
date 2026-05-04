@@ -1,0 +1,191 @@
+### HEADER
+Id=9953
+Link=http://at-zammad/#ticket/zoom/9953
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Schneider Electric (ID=858, Number=0, Country=FR)
+Commission=Schneider Electric, iPCs with PLC function (ID=944, Number=944)
+Number=709953
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=imen.benhassen@non.se.com (ID=2849, FirstName=Imen, LastName=BEN-HASSEN)
+CreatedBy=imen.benhassen@non.se.com (ID=2849, FirstName=Imen, LastName=BEN-HASSEN)
+Type=
+TimeUnit=
+CreatedAt=17.02.2025 15:21:03 +00:00
+UpdatedAt=18.02.2025 07:38:57 +00:00
+CloseAt=18.02.2025 07:38:57 +00:00
+ArticlesCount=3
+
+### TITLE
+Inquiry About DCX Feature Usage with Current ECMASTER Library
+
+### ARTICLE00_HEADER
+Id=56843
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.02.2025 15:21:03 +00:00
+UpdatedAt=17.02.2025 15:21:03 +00:00
+
+### ARTICLE00_SUBJECT
+Inquiry About DCX Feature Usage with Current ECMASTER Library
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Hi Cyril,</span></p>
+<p><span lang="EN-US">I wanted to reach out regarding the DCX feature that you implemented in your DCdemoApp. From the Class A user manual, it appears that this feature is part of a feature pack. Could you please clarify if we can use this feature with the current ECMASTER library and Class A license?</span></p>
+<p><span lang="EN-US">If it is indeed possible, I would appreciate any additional details on how to test it.</span></p>
+<p><span lang="EN-US">Thank you for your assistance!</span></p>
+<p>Best regards,</p>
+<p>Imen</p>
+<p> </p>
+</div><br>
+<p>General<br>
+</p>
+
+### ARTICLE01_HEADER
+Id=56856
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.02.2025 17:24:53 +00:00
+UpdatedAt=17.02.2025 17:24:53 +00:00
+
+### ARTICLE01_SUBJECT
+Inquiry About DCX Feature Usage with Current ECMASTER Library
+
+### ARTICLE01_BODY
+Hi Imen,<div><br></div><div>DCX is a feature pack and must be licensed separetly. It is not included in the ClassA license</div><div>
+<a href="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" title="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf</a><span> Page 5</span>
+</div><div><br></div><div>To test it you will need some specific slaves like EL6695 or EL6692:</div><div><div><a href="https://www.beckhoff.com/en-en/products/i-o/ethercat-terminals/el6xxx-communication/el6692.html" title="https://www.beckhoff.com/en-en/products/i-o/ethercat-terminals/el6xxx-communication/el6692.html" rel="nofollow noreferrer noopener" target="_blank">https://www.beckhoff.com/en-en/products/i-o/ethercat-terminals/el6xxx-communication/el6692.html</a></div></div><div><div><a href="https://www.beckhoff.com/en-en/products/i-o/ethercat-terminals/el6xxx-communication/el6695.html" title="https://www.beckhoff.com/en-en/products/i-o/ethercat-terminals/el6xxx-communication/el6695.html" rel="nofollow noreferrer noopener" target="_blank">https://www.beckhoff.com/en-en/products/i-o/ethercat-terminals/el6xxx-communication/el6695.html</a></div></div><div><br></div><div>Best Regards,</div><div>
+<div><span>__________________________________________________________________________________________</span></div>
+<div>
+<div data-signature="true" data-signature-id="2">
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, February 17, 2025 at 4:21:03 PM, Imen BEN-HASSEN wrote:<br><br><div>
+<p><span lang="EN-US">Hi Cyril,</span></p>
+<p><span lang="EN-US">I wanted to reach out regarding the DCX feature that you implemented in your DCdemoApp. From the Class A user manual, it appears that this feature is part of a feature pack. Could you please clarify if we can use this feature with the current ECMASTER library and Class A license?</span></p>
+<p><span lang="EN-US">If it is indeed possible, I would appreciate any additional details on how to test it.</span></p>
+<p><span lang="EN-US">Thank you for your assistance!</span></p>
+<p>Best regards,</p>
+<p>Imen</p>
+<p> </p>
+</div>
+<br>
+<p>General<br>
+</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=56859
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.02.2025 20:38:41 +00:00
+UpdatedAt=17.02.2025 20:38:41 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Inquiry About DCX Feature Usage with Current ECMASTER Library [Ticket#709953]
+
+### ARTICLE02_BODY
+<div dir="ltr">
+<div>
+<div dir="ltr">
+<div dir="ltr">Hi Cyril,</div>
+<div dir="ltr">Thanks for your clarification, so that is fine we will not support it for the moment, maybe in the future .</div>
+<div dir="ltr">Best regards</div>
+<div dir="ltr">Imen</div>
+<div dir="ltr"></div>
+</div>
+</div>
+<div dir="ltr"></div>
+</div><br>
+<p>General<br>
+</p><hr>
+<div dir="ltr">
+<b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Monday, February 17, 2025 6:24:53 PM<br>
+<b>To:</b> Imen BEN-HASSEN &lt;imen.benhassen@non.se.com&gt;<br>
+<b>Cc:</b> Abuzr Elfadul &lt;abuzr.elfadul@non.se.com&gt;; Rainer HERRMANN &lt;rainer.herrmann@non.se.com&gt;; Alexis GARNIER &lt;alexis.garnier@non.se.com&gt;<br>
+<b>Subject:</b> RE: Inquiry About DCX Feature Usage with Current ECMASTER Library [Ticket#709953] <div> </div>
+</div><div>
+<p><span style="color:#ff0000;">[External email: Use caution with links and attachments]</span></p>
+<hr>
+<p> </p>
+<div>Hi Imen,<div> </div>
+<div>DCX is a feature pack and must be licensed separetly. It is not included in the ClassA license</div>
+<div>
+<a href="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" title="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf</a> Page 5 </div>
+<div> </div>
+<div>To test it you will need some specific slaves like EL6695 or EL6692:</div>
+<div>
+<div><a href="https://www.beckhoff.com/en-en/products/i-o/ethercat-terminals/el6xxx-communication/el6692.html" title="https://www.beckhoff.com/en-en/products/i-o/ethercat-terminals/el6xxx-communication/el6692.html" rel="nofollow noreferrer noopener" target="_blank">https://www.beckhoff.com/en-en/products/i-o/ethercat-terminals/el6xxx-communication/el6692.html</a></div>
+</div>
+<div>
+<div><a href="https://www.beckhoff.com/en-en/products/i-o/ethercat-terminals/el6xxx-communication/el6695.html" title="https://www.beckhoff.com/en-en/products/i-o/ethercat-terminals/el6xxx-communication/el6695.html" rel="nofollow noreferrer noopener" target="_blank">https://www.beckhoff.com/en-en/products/i-o/ethercat-terminals/el6xxx-communication/el6695.html</a></div>
+</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>
+<div>__________________________________________________________________________________________</div>
+<div>
+<div data-signature="true" data-signature-id="2">
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Monday, February 17, 2025 at 4:21:03 PM, Imen BEN-HASSEN wrote:<br>
+<br>
+<div>
+<p><span lang="EN-US">Hi Cyril,</span></p>
+<p><span lang="EN-US">I wanted to reach out regarding the DCX feature that you implemented in your DCdemoApp. From the Class A user manual, it appears that this feature is part of a feature pack. Could you please clarify if we can use this feature with the current ECMASTER library and Class A license?</span></p>
+<p><span lang="EN-US">If it is indeed possible, I would appreciate any additional details on how to test it.</span></p>
+<p><span lang="EN-US">Thank you for your assistance!</span></p>
+<p>Best regards,</p>
+<p>Imen</p>
+<p> </p>
+</div>
+<br>
+<p>General<br>
+</p>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>
+</div>
+</div>

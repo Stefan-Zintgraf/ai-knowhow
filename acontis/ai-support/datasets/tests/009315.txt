@@ -1,0 +1,172 @@
+### HEADER
+Id=9315
+Link=http://at-zammad/#ticket/zoom/9315
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Yushin, Removal robot for molding machines (ID=922, Number=922)
+Number=709315
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=14.11.2024 08:09:01 +00:00
+UpdatedAt=06.12.2024 07:06:47 +00:00
+CloseAt=06.12.2024 07:06:47 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Master(YUSHIN) [M072]
+
+### ARTICLE00_HEADER
+Id=52777
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=14.11.2024 08:09:01 +00:00
+UpdatedAt=14.11.2024 08:09:05 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(YUSHIN) [M072]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(YUSHIN) [M072]
+
+The member variables dwErrorCode and achErrorString are defined in the EC_T_MBOX_SDO_ABORT_DESC and EC_T_MBOX_FOE_ABORT_DESC structures.
+Is it correct to understand that dwErrorCode represents the error codes listed in Chapter 8 of the manual, "Error Codes"?
+What kind of string is stored in achErrorString?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=52802
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.11.2024 10:20:00 +00:00
+UpdatedAt=14.11.2024 10:20:01 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(YUSHIN) [M072]
+
+### ARTICLE01_BODY
+<div>Hi,</div><div><br></div><div>Q: <span>Is it correct to understand that dwErrorCode represents the error codes listed in Chapter 8 of the manual, "Error Codes"?</span>
+</div><div><span>A: Yes</span></div><div><span><br></span></div><div>
+<span>Q:</span><span>What kind of string is stored in achErrorString?</span>
+</div><div><span>A: It is the FoE file , that needs to be downloaded or uploaded.</span></div><div><br></div><div>
+<span>Haithem Jebali</span><br>
+</div><div data-signature="true" data-signature-id="2">
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=53212
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=22.11.2024 02:23:41 +00:00
+UpdatedAt=22.11.2024 02:23:41 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master(YUSHIN) [M072] [Ticket#709315]
+
+### ARTICLE02_BODY
+Dear Haithem san
+
+I don't fully understand the answer. Just to confirm, is dwErrorCode the error code listed in Chapter 8, Error Codes of the manual?
+
+Best regards,
+Takuya Fujikawa
+
+
+On 2024/11/14 19:20, Haithem Jebali via EC-Support wrote:
+> Hi,
+>
+> Q: Is it correct to understand that dwErrorCode represents the error codes listed in Chapter 8 of the manual, "Error Codes"?
+> A: Yes
+>
+> Q:What kind of string is stored in achErrorString?
+> A: It is the FoE file , that needs to be downloaded or uploaded.
+>
+> Haithem Jebali
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+
+
+### ARTICLE03_HEADER
+Id=53233
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.11.2024 08:28:00 +00:00
+UpdatedAt=22.11.2024 08:28:05 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(YUSHIN) [M072]
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>Yes.</div><div><br></div><div>Best Regards<div data-signature="true" data-signature-id="2">
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, November 22, 2024 at 3:23:41 AM, Takuya Fujikawa wrote:<br><br><div>Dear Haithem san</div>
+<div><br></div>
+<div>I don't fully understand the answer. Just to confirm, is dwErrorCode the error code listed in Chapter 8, Error Codes of the manual?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2024/11/14 19:20, Haithem Jebali via EC-Support wrote:</div>
+<div>&gt; Hi,</div>
+<div>&gt;</div>
+<div>&gt; Q: Is it correct to understand that dwErrorCode represents the error codes listed in Chapter 8 of the manual, "Error Codes"?</div>
+<div>&gt; A: Yes</div>
+<div>&gt;</div>
+<div>&gt; Q:What kind of string is stored in achErrorString?</div>
+<div>&gt; A: It is the FoE file , that needs to be downloaded or uploaded.</div>
+<div>&gt;</div>
+<div>&gt; Haithem Jebali</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

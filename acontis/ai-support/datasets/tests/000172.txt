@@ -1,0 +1,119 @@
+### HEADER
+Id=172
+Link=http://at-zammad/#ticket/zoom/172
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Relativity Space, Internal Controllers (ID=457, Number=457)
+Number=700172
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=10.03.2021 22:59:28 +00:00
+UpdatedAt=11.03.2021 07:00:39 +00:00
+CloseAt=11.03.2021 07:00:26 +00:00
+ArticlesCount=2
+
+### TITLE
+RE: Delivery for Relativity Space, Internal Controllers, Commission 40410
+
+### ARTICLE00_HEADER
+Id=721
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.03.2021 22:59:28 +00:00
+UpdatedAt=10.03.2021 22:59:28 +00:00
+
+### ARTICLE00_SUBJECT
+RE: Delivery for Relativity Space, Internal Controllers, Commission 40410
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Paul,</p>
+<p> </p>
+<p>Just wanted to check, why was the unrestricted version of EC-Master sent out?</p>
+<p> </p>
+<p>/Jon</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p><b>From: </b>ecsupport@acontis.com<br><b>Sent: </b>Wednesday, March 10, 2021 4:59 PM<br><b>To: </b>jsridharan@relativityspace.com; chrdina@relativityspace.com; asahasrabudhe@relativityspace.com<br><b>Cc: </b>j.waters@acontis.com<br><b>Subject: </b>Delivery for Relativity Space, Internal Controllers, Commission 40410</p>
+<p> </p>
+</div><div>
+<p>Dear Customer,</p>
+<p>please find your new software version below:</p>
+<p><a href="http://Downloads.acontis.com/2021/P-R/Relativity_Space_(40410)(US)/EC-Master/3.1.1.03/EC-Master-CCAT-V3.1.1.03-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">http://Downloads.acontis.com/2021/P-R/Relativity_Space_(40410)(US)/EC-Master/3.1.1.03/EC-Master-CCAT-V3.1.1.03-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a> </p>
+<p><a href="http://Downloads.acontis.com/2021/P-R/Relativity_Space_(40410)(US)/EC-Master/3.1.1.03/EC-Master-ClassB-V3.1.1.03-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">http://Downloads.acontis.com/2021/P-R/Relativity_Space_(40410)(US)/EC-Master/3.1.1.03/EC-Master-ClassB-V3.1.1.03-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a> </p>
+<p>Password: ECM88250</p>
+<p>Please find the corresponding EC-Simulator evaluation version at:</p>
+<p><a href="http://Downloads.acontis.com/temp/pbn/2021/P-R/Relativity_Space_(40410)(US)/EC-Simulator_Linux_x64/3.1.1.03/EC-Simulator-SiL-V3.1.1.03-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">http://Downloads.acontis.com/temp/pbn/2021/P-R/Relativity_Space_(40410)(US)/EC-Simulator_Linux_x64/3.1.1.03/EC-Simulator-SiL-V3.1.1.03-Linux-x86_64Bit-SDK_Protected.tar.gz</a> </p>
+<p>It includes RAS server stack size parameter now.</p>
+<p>Best Regards,<br>Paul<br>________________ <br>EtherCAT Support <br>acontis technologies GmbH <br>Gartenstraße 46 <br>D-88212 Ravensburg <br>Http: <a href="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> <br>Phone: +49 (751) 56030-30 <br>Fax: +49 (751) 56030-31 <br>eMail: ecsupport@acontis.com </p>
+<p>This is an automatic generated eMail.</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=727
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.03.2021 07:00:26 +00:00
+UpdatedAt=11.03.2021 07:00:28 +00:00
+
+### ARTICLE01_SUBJECT
+Delivery for Relativity Space, Internal Controllers, Commission 40410
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>this was my mistake! I have chosen "Class B" instead of "Protected" according to at-LiWa.</div><div>Thank you for reporting!</div><div><br></div><div>Best regards,</div><div>Paul<br><div data-signature="true" data-signature-id="2">
+<div><br></div>
+<div>____________________________________________________________________________</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>Fax: +49 (751) 56030-31</div>
+<div>eMail: ecsupport@acontis.com</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Mittwoch, 10. März 2021, 23:59:28, schrieb Jon Waters:<br><br><div>
+<p>Hi Paul,</p>
+<p> </p>
+<p>Just wanted to check, why was the unrestricted version of EC-Master sent out?</p>
+<p> </p>
+<p>/Jon</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p><b>From: </b>ecsupport@acontis.com<br><b>Sent: </b>Wednesday, March 10, 2021 4:59 PM<br><b>To: </b>jsridharan@relativityspace.com; chrdina@relativityspace.com; asahasrabudhe@relativityspace.com<br><b>Cc: </b>j.waters@acontis.com<br><b>Subject: </b>Delivery for Relativity Space, Internal Controllers, Commission 40410</p>
+<p> </p>
+</div>
+<div>
+<p>Dear Customer,</p>
+<p>please find your new software version below:</p>
+<p><a href="http://Downloads.acontis.com/2021/P-R/Relativity_Space_(40410)(US)/EC-Master/3.1.1.03/EC-Master-CCAT-V3.1.1.03-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">http://Downloads.acontis.com/2021/P-R/Relativity_Space_(40410)(US)/EC-Master/3.1.1.03/EC-Master-CCAT-V3.1.1.03-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a> </p>
+<p><a href="http://Downloads.acontis.com/2021/P-R/Relativity_Space_(40410)(US)/EC-Master/3.1.1.03/EC-Master-ClassB-V3.1.1.03-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">http://Downloads.acontis.com/2021/P-R/Relativity_Space_(40410)(US)/EC-Master/3.1.1.03/EC-Master-ClassB-V3.1.1.03-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a> </p>
+<p>Password: ECM88250</p>
+<p>Please find the corresponding EC-Simulator evaluation version at:</p>
+<p><a href="http://Downloads.acontis.com/temp/pbn/2021/P-R/Relativity_Space_(40410)(US)/EC-Simulator_Linux_x64/3.1.1.03/EC-Simulator-SiL-V3.1.1.03-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">http://Downloads.acontis.com/temp/pbn/2021/P-R/Relativity_Space_(40410)(US)/EC-Simulator_Linux_x64/3.1.1.03/EC-Simulator-SiL-V3.1.1.03-Linux-x86_64Bit-SDK_Protected.tar.gz</a> </p>
+<p>It includes RAS server stack size parameter now.</p>
+<p>Best Regards,<br>Paul<br>________________ <br>EtherCAT Support <br>acontis technologies GmbH <br>Gartenstraße 46 <br>D-88212 Ravensburg <br>Http: <a href="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> <br>Phone: +49 (751) 56030-30 <br>Fax: +49 (751) 56030-31 <br>eMail: ecsupport@acontis.com </p>
+<p>This is an automatic generated eMail.</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

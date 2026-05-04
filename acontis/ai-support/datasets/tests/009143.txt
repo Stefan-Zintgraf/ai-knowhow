@@ -1,0 +1,230 @@
+### HEADER
+Id=9143
+Link=http://at-zammad/#ticket/zoom/9143
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Soft Service, Generic (ID=476, Number=476)
+Number=709143
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=ecsupport@soft-service.co.jp (ID=33, FirstName=Ecsupport, LastName=)
+CreatedBy=ecsupport@soft-service.co.jp (ID=33, FirstName=Ecsupport, LastName=)
+Type=
+TimeUnit=
+CreatedAt=23.10.2024 12:08:00 +00:00
+UpdatedAt=28.10.2024 07:12:01 +00:00
+CloseAt=28.10.2024 07:12:01 +00:00
+ArticlesCount=3
+
+### TITLE
+about ENIBuilder
+
+### ARTICLE00_HEADER
+Id=51810
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.10.2024 12:08:00 +00:00
+UpdatedAt=23.10.2024 12:08:02 +00:00
+
+### ARTICLE00_SUBJECT
+about ENIBuilder
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Dear Support Team</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">We received a question about ENIBuilder from Kyoto Seisakusho.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">If they are using the evaluation version of ENIBuilder, </span></p>
+<p><span lang="EN-US">is it possible to output ENI using an EBI file?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Is there a way to make this possible?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best Regards,</span></p>
+<p><span lang="EN-US">Kenji Nakamura</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=51836
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.10.2024 16:32:11 +00:00
+UpdatedAt=23.10.2024 16:32:14 +00:00
+
+### ARTICLE01_SUBJECT
+about ENIBuilder
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes, this is possible as long as the EVAL date is valid. If the version is too old, the EVAL version will no longer be able to export an ENI and you have to send the customer a newer version.</div><div>In that case it report an error like "this is a restricted version which can not create an ENI file...".</div><div><br></div><div>Does this anwer your question? If not, which EVAL version did you send to the customer?</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, October 23, 2024 at 2:08:00 PM, Ecsupport wrote:<br><br><div>
+<p><span lang="EN-US">Dear Support Team</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">We received a question about ENIBuilder from Kyoto Seisakusho.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">If they are using the evaluation version of ENIBuilder, </span></p>
+<p><span lang="EN-US">is it possible to output ENI using an EBI file?</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Is there a way to make this possible?</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Best Regards,</span></p>
+<p><span lang="EN-US">Kenji Nakamura</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=51845
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.10.2024 00:04:33 +00:00
+UpdatedAt=24.10.2024 00:04:33 +00:00
+
+### ARTICLE02_SUBJECT
+RE: about ENIBuilder [Ticket#709143]
+
+### ARTICLE02_BODY
+<div>
+<p><span lang="EN-US">Dear Martin</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Thank you for your reply.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">I was contacted about the fact that the evaluation version could not output an ENI file, </span></p>
+<p><span lang="EN-US">and I thought it was about ENIBuilder, so I asked about it.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">I will check whether an evaluation version of ENIBuilder was provided, and if so, what version.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best Regards,</span></p>
+<p><span lang="EN-US">Kenji Nakamura</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b><span lang="EN-US">From:</span></b><span lang="EN-US"> Martin Gaenzer via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Thursday, October 24, 2024 1:32 AM<br>
+<b>To:</b> ecsupport &lt;ecsupport@soft-service.co.jp&gt;<br>
+<b>Subject:</b> RE: about ENIBuilder [Ticket#709143]</span></p>
+</div>
+</div>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Hi,</span></p>
+<div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+<div>
+<p><span lang="EN-US">yes, this is possible as long as the EVAL date is valid. If the version is too old, the EVAL version will no longer be able to export an ENI and you have to send the customer a newer version.</span></p>
+</div>
+<div>
+<p><span lang="EN-US">In that case it report an error like "this is a restricted version which can not create an ENI file...".</span></p>
+</div>
+<div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+<div>
+<p><span lang="EN-US">Does this anwer your question? If not, which EVAL version did you send to the customer?</span></p>
+</div>
+<div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+<div>
+<p><span lang="EN-US">Best Regards,</span></p>
+</div>
+<div>
+<p><span lang="EN-US">Martin</span></p>
+<div>
+<div>
+<p><span lang="EN-US">__________________________________________________________________________________________</span></p>
+</div>
+<div>
+<p><span lang="EN-US">Martin Gaenzer</span></p>
+</div>
+<div>
+<p><span lang="EN-US">EtherCAT Support</span></p>
+</div>
+<div>
+<div>
+<p><span lang="EN-US">eMail: <a href="mailto:ecsupport@acontis.com"> ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</span></p>
+</div>
+<div>
+<p><span lang="EN-US">acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</span></p>
+</div>
+</div>
+<div>
+<p><span lang="EN-US">__________________________________________________________________________________________ </span></p>
+</div>
+<div>
+<p><span lang="EN-US">Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></span></p>
+</div>
+</div>
+<div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+<div>
+<blockquote>
+<p><span lang="EN-US">On Wednesday, October 23, 2024 at 2:08:00 PM, Ecsupport wrote:</span></p>
+<div>
+<p><span lang="EN-US">Dear Support Team</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">We received a question about ENIBuilder from Kyoto Seisakusho.</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">If they are using the evaluation version of ENIBuilder, </span></p>
+<p><span lang="EN-US">is it possible to output ENI using an EBI file?</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Is there a way to make this possible?</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Best Regards,</span></p>
+<p><span lang="EN-US">Kenji Nakamura</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US"> </span></p>
+</div>
+<p><span lang="EN-US"><p> </p></span></p>
+</blockquote>
+</div>
+<div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+</div>

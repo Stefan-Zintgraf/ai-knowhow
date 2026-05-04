@@ -1,0 +1,111 @@
+### HEADER
+Id=11048
+Link=http://at-zammad/#ticket/zoom/11048
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=none
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=7011048
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=piotrmarczewski@lucidmotors.com (ID=3450, FirstName=Tomek, LastName=Marczewski)
+CreatedBy=piotrmarczewski@lucidmotors.com (ID=3450, FirstName=Tomek, LastName=Marczewski)
+Type=
+TimeUnit=
+CreatedAt=22.07.2025 01:54:37 +00:00
+UpdatedAt=06.08.2025 06:38:49 +00:00
+CloseAt=06.08.2025 06:38:49 +00:00
+ArticlesCount=2
+
+### TITLE
+Simulink/EtherCAT integration
+
+### ARTICLE00_HEADER
+Id=63362
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.07.2025 01:54:37 +00:00
+UpdatedAt=22.07.2025 01:54:37 +00:00
+
+### ARTICLE00_SUBJECT
+Simulink/EtherCAT integration
+
+### ARTICLE00_BODY
+<div>
+<p>Hello!<br>
+<br> I’m reaching out to this email since I know that Jon Waters is on vacation. He and I spoke a few weeks ago about the possibility of Simulink control of EtherCAT networks setup with EC-Engineer, and he mentioned that he would talk to some of Acontis’s contacts at MathWorks about it to gather some more details. Would you have any more information on this topic? Thank you so much for the help!</p>
+<p> </p>
+<p><b><span style="color:#4d4d4d;">Tomek Marczewski </span></b><span style="color:#4d4d4d;">He/Him</span></p>
+<p><span style="color:#4d4d4d;"> </span></p>
+<p><span style="color:#4d4d4d;">Intern, Chassis &amp; Vehicle Dynamics</span></p>
+<p><span style="color:#4d4d4d;"> </span></p>
+<p>piotrmarczewski@lucidmotors.com</p>
+<p><span style="color:#4d4d4d;">Office: (650) 802-8181</span></p>
+<p><span style="color:#4d4d4d;">Direct: (972) 632-7188</span></p>
+<p><span style="color:#4d4d4d;"> </span></p>
+<p><span style="color:#4d4d4d;">lucidmotors.com</span></p>
+<p><span style="color:#4d4d4d;">7373 Gateway Blvd, Newark, CA 94560</span></p>
+<p> </p>
+<p>This message and any attachments are Confidential Information, for the exclusive use of the addressee and may be legally privileged. Any receipt by anyone other than the intended addressee does not constitute a loss of the confidential or privileged nature of the communication. Any other distribution, use or reproduction is unauthorized and prohibited. If you are not the intended recipient, please contact the sender by return electronic mail and delete all copies of this communication.</p>
+<p> </p>
+</div><br><br><p>This message and any attachments are Confidential Information, for the exclusive use of the addressee and may be legally privileged. Any receipt by anyone other than the intended addressee does not constitute a loss of the confidential or privileged nature of the communication. Any other distribution, use or reproduction is unauthorized and prohibited. If you are not the intended recipient, please contact the sender by return electronic mail and delete all copies of this communication</p>
+
+### ARTICLE01_HEADER
+Id=63454
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.07.2025 15:40:19 +00:00
+UpdatedAt=22.07.2025 15:40:22 +00:00
+
+### ARTICLE01_SUBJECT
+Simulink/EtherCAT integration
+
+### ARTICLE01_BODY
+Hello Tomek,<div><br></div><div>thank you very much for your inquiry.</div><div><br></div><div>Mathworks is using our EtherCAT protocol stack EC-Master since many years.</div><div><br></div><div>For creating the network configuration you can use various tool, also our tool EC-Engineer.</div><div><a href="https://www.mathworks.com/help/slrealtime/io_ref/modeling-ethercat-networks-on-target-computer.html?s_tid=srchtitle_site_search_2_ethercat" title="https://www.mathworks.com/help/slrealtime/io_ref/modeling-ethercat-networks-on-target-computer.html?s_tid=srchtitle_site_search_2_ethercat" rel="nofollow noreferrer noopener" target="_blank">https://www.mathworks.com/help/slrealtime/io_ref/modeling-ethercat-networks-on-target-computer.html?s_tid=srchtitle_site_search_2_ethercat</a></div><div><br></div><div>The evaluation version you will get here: <a href="https://software.acontis.com/EC-Tools/V4x0/EC-Engineer_Eval_V4.0.7.zip" title="https://software.acontis.com/EC-Tools/V4x0/EC-Engineer_Eval_V4.0.7.zip" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/EC-Tools/V4x0/EC-Engineer_Eval_V4.0.7.zip</a>
+</div><div><br></div><div>Please note, that we have no Simulink system at acontis and don´t know the solution of Mathworks.</div><div>Mathworks has purchased the EC-Master development kit and build the solution by themselves.</div><div><br></div><div>Please let us know your further questions.</div><div><br></div><div>Best Regards</div><div><br></div><div>Christoph</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, 88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, July 22, 2025 at 3:54:37 AM, Tomek Marczewski wrote:<br><br><div>
+<p>Hello!<br>
+<br> I’m reaching out to this email since I know that Jon Waters is on vacation. He and I spoke a few weeks ago about the possibility of Simulink control of EtherCAT networks setup with EC-Engineer, and he mentioned that he would talk to some of Acontis’s contacts at MathWorks about it to gather some more details. Would you have any more information on this topic? Thank you so much for the help!</p>
+<p> </p>
+<p><b><span style="color:#4d4d4d;">Tomek Marczewski </span></b><span style="color:#4d4d4d;">He/Him</span></p>
+<p><span style="color:#4d4d4d;"> </span></p>
+<p><span style="color:#4d4d4d;">Intern, Chassis &amp; Vehicle Dynamics</span></p>
+<p><span style="color:#4d4d4d;"> </span></p>
+<p>piotrmarczewski@lucidmotors.com</p>
+<p><span style="color:#4d4d4d;">Office: (650) 802-8181</span></p>
+<p><span style="color:#4d4d4d;">Direct: (972) 632-7188</span></p>
+<p><span style="color:#4d4d4d;"> </span></p>
+<p><span style="color:#4d4d4d;">lucidmotors.com</span></p>
+<p><span style="color:#4d4d4d;">7373 Gateway Blvd, Newark, CA 94560</span></p>
+<p> </p>
+<p>This message and any attachments are Confidential Information, for the exclusive use of the addressee and may be legally privileged. Any receipt by anyone other than the intended addressee does not constitute a loss of the confidential or privileged nature of the communication. Any other distribution, use or reproduction is unauthorized and prohibited. If you are not the intended recipient, please contact the sender by return electronic mail and delete all copies of this communication.</p>
+<p> </p>
+</div>
+<br><br><p>This message and any attachments are Confidential Information, for the exclusive use of the addressee and may be legally privileged. Any receipt by anyone other than the intended addressee does not constitute a loss of the confidential or privileged nature of the communication. Any other distribution, use or reproduction is unauthorized and prohibited. If you are not the intended recipient, please contact the sender by return electronic mail and delete all copies of this communication</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

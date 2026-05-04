@@ -1,0 +1,130 @@
+### HEADER
+Id=3532
+Link=http://at-zammad/#ticket/zoom/3532
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=AJINEXTEK, Motion-Controller (ID=332, Number=332)
+Number=703532
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=22.07.2022 10:32:38 +00:00
+UpdatedAt=30.09.2022 06:11:37 +00:00
+CloseAt=30.09.2022 06:11:37 +00:00
+ArticlesCount=2
+
+### TITLE
+About using PHY Chip in AM572x of TI
+
+### ARTICLE00_HEADER
+Id=18720
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.07.2022 10:32:39 +00:00
+UpdatedAt=22.07.2022 10:32:42 +00:00
+
+### ARTICLE00_SUBJECT
+About using PHY Chip in AM572x of TI
+
+### ARTICLE00_BODY
+<p>Hi.</p><p><br></p><p>The customer is Ajinextek.</p><p><br></p><p>&amp; using TI RTOS &amp; CPSW Link Layer.</p><p><br></p><p>Due to global semiconductor issues. they are considering changing the Phy chip from KSZ9031RNX(RGMII V2.0) to KSZ9021RL/RN(RGMII V1.3)</p><p><br></p><p>But there is a problem with EtherCAT communication in case of using KSZ9021RL/RN Phy chip.</p><p><br></p><p>Below is the content of the different features between two PHY Chip.</p><p><br></p><p>Please advise.</p><p><br></p><p>Have a nice weekend.</p><p><br></p><p><img src="/api/v1/ticket_attachment/3532/18720/76458?view=inline" style="max-width:100%;width: 9.4687in;max-height: 5.9583in;width:909px;max-height:572px;" alt=""></p><p><br></p><p><br></p><p><br></p><br><br><p><br></p><table style=" border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><tbody>
+<tr>
+<td style="border: rgb(0, 0, 0); background-color: transparent;"><p> </p></td>
+<td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;">
+<p><b><br></b></p>
+<p><b>선덕한 위원 / 연구소</b></p>
+<p><b><span style="color: red;"><span style="color: red;"><strong>T.</strong></span> </span></b>070-7167-8601</p>
+<p><b><span style="color: red;"><span style="color: red;"><strong>E.</strong></span> </span></b><i><u><span style="color: blue;"><a href="mailto:ysundukhan@prestosolution.co.kr"><span style="color: rgb(5, 99, 193);">sundukhan@prestosolution.co.kr</span></a></span></u></i></p>
+</td>
+</tr>
+<tr><td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;" colspan="2"><p><span style="color: rgb(99, 101, 99);"><br></span></p></td></tr>
+<tr><td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;" colspan="2">
+<p><br></p>
+<p><span style="color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressed.</span></p>
+<p><span style="color: rgb(99, 101, 99);">Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+</td></tr>
+</tbody></table><p><br></p>
+
+### ARTICLE01_HEADER
+Id=18779
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.07.2022 10:31:23 +00:00
+UpdatedAt=25.07.2022 10:31:27 +00:00
+
+### ARTICLE01_SUBJECT
+About using PHY Chip in AM572x of TI
+
+### ARTICLE01_BODY
+Hi Hans,<div><br></div><div>&gt;&gt; <span>But there is a problem with EtherCAT communication in case of using </span><span>KSZ9021RL/RN Phy chip.</span>
+</div><div>What kind of issue do they have? The communication is instabil or is n't working at all? Sometimes it help to add OsSleep(5000) just after ecatInitMaster() to workaround some autoneg timeout.</div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, July 22, 2022 at 12:32:39 PM, DukHan Sun wrote:<br><br><p>Hi.</p>
+<p><br></p>
+<p>The customer is Ajinextek.</p>
+<p><br></p>
+<p>&amp; using TI RTOS &amp; CPSW Link Layer.</p>
+<p><br></p>
+<p>Due to global semiconductor issues. they are considering changing the Phy chip from KSZ9031RNX(RGMII V2.0) to KSZ9021RL/RN(RGMII V1.3)</p>
+<p><br></p>
+<p>But there is a problem with EtherCAT communication in case of using KSZ9021RL/RN Phy chip.</p>
+<p><br></p>
+<p>Below is the content of the different features between two PHY Chip.</p>
+<p><br></p>
+<p>Please advise.</p>
+<p><br></p>
+<p>Have a nice weekend.</p>
+<p><br></p>
+<p><img src="/api/v1/ticket_attachment/3532/18779/76727?view=inline" style="max-width:100%;max-width:100%;width: 9.4687in;max-height: 5.9583in;width:909px;max-height:572px;" alt=""></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<br><br><p><br></p>
+<table style=" border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><tbody>
+<tr>
+<td style="border: rgb(0, 0, 0); background-color: transparent;"><p> </p></td>
+<td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;">
+<p><b><br></b></p>
+<p><b>선덕한 위원 / 연구소</b></p>
+<p><b><span style="color: red;"><span style="color: red;"><strong>T.</strong></span> </span></b>070-7167-8601</p>
+<p><b><span style="color: red;"><span style="color: red;"><strong>E.</strong></span> </span></b><i><u><span style="color: blue;"><a href="mailto:ysundukhan@prestosolution.co.kr"><span style="color: rgb(5, 99, 193);">sundukhan@prestosolution.co.kr</span></a></span></u></i></p>
+</td>
+</tr>
+<tr><td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;" colspan="2"><p><span style="color: rgb(99, 101, 99);"><br></span></p></td></tr>
+<tr><td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;" colspan="2">
+<p><br></p>
+<p><span style="color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressed.</span></p>
+<p><span style="color: rgb(99, 101, 99);">Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+</td></tr>
+</tbody></table>
+<p><br></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

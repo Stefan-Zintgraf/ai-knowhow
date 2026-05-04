@@ -1,0 +1,186 @@
+### HEADER
+Id=4376
+Link=http://at-zammad/#ticket/zoom/4376
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vector Informatik GmbH (ID=167, Number=40366, Country=DE)
+Commission=Vector, CANoe (ID=189, Number=189)
+Number=704376
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+CreatedBy=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+Type=
+TimeUnit=
+CreatedAt=22.11.2022 12:27:55 +00:00
+UpdatedAt=28.11.2022 07:01:27 +00:00
+CloseAt=28.11.2022 07:01:27 +00:00
+ArticlesCount=4
+
+### TITLE
+Integration des EC-Engineer in CANoe für die Konfiguration der EtherCAT Slave Simulation
+
+### ARTICLE00_HEADER
+Id=23095
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.11.2022 12:27:55 +00:00
+UpdatedAt=22.11.2022 12:27:57 +00:00
+
+### ARTICLE00_SUBJECT
+Integration des EC-Engineer in CANoe für die Konfiguration der EtherCAT Slave Simulation
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo,</p>
+<p>für die Integration des EC-Simulators in CANoe wird der EC-Engineer wie bei der Implementierung mit Kommandozeilenparametern aufgerufen und als Dialog angezeigt. Gibt es die Möglichkeit, dass der EC-Engineer über Kommandozeilenparameter für die Konfiguration des EC-Simulators gestartet wird? Es sollte dann ein „Simulator (linked)“ im Projektbau vorhanden sein und beim Verlassen des Dialogs mit „Speichern“ automatisch eine „EXI“ Datei für den EC-Simulator erzeugt werden, mit welcher der EC-Simulator dann gestartet wird.</p>
+<p> </p>
+<p>Gibt es für die „Simulator“ Einstellungen des EC-Engineer noch weitere Informationen zu den Einzelnen einstellbaren Werten? In der Dokumentation es EC-Engineer gibt es dazu kaum Informationen. Was hat es mit dem Objekt „Simulator (linked)“ auf sich? Ich vermute, dass hier allgemeine Daten zur Simulation eingestellt werden können, die sonst nicht zu einem andere Objekt gehören und deshalb in diesem Objekt untergebracht wurden. Auf dieser Seite des „Simulator (linked)“ gibt es die „Cycle Time [us]“ – wofür wird dieser Wert benötigt? Die Cycle Time wird doch durch den Master vorgegeben. Hier sind auch in Vergleich zum Master nur sehr wenige und ziemlich kleine Zeiten auswählbar. Muss bei diesem Wert nicht die gleiche Zeit eingestellt werden wie beim Master? Was soll eingestellt werden, wenn die Zeit nicht in der Liste vorhanden ist? Wofür wird die RAS-Verbindung auf dem „Simulator (linked)“ Tab benötigt?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>-----------------------------------------------------</p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">PND10</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><b><span lang="EN-US">Vector Informatik GmbH</span></b><span lang="EN-US"></span></p>
+<p>Besucheranschrift: Holderäckerstraße 36 | 70499 Stuttgart | Deutschland</p>
+<p>Tel.: +49 711 80670-4791</p>
+<p><span lang="EN-US"><a href="mailto:tobias.lange@vector.com"><span lang="DE" style="color:blue;">tobias.lange@vector.com</span></a></span></p>
+<p><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.vector.com</span></a></p>
+<p> </p>
+<p>Sitz der Gesellschaft: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p>Handelsregister: Amtsgericht Stuttgart | HRB 17317</p>
+<p>Geschäftsführer: Dr. Thomas Beck, Dr. Stefan Krauß, Thomas Riegraf</p>
+<p><span lang="EN-US">-----------------------------------------------------</span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=23137
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=22.11.2022 18:01:28 +00:00
+UpdatedAt=22.11.2022 18:01:28 +00:00
+
+### ARTICLE01_BODY
+@Paul: <span>Der ober Teil ist klar. Aber was muss er da einstellen? Cycle Time, RAS?</span>
+
+### ARTICLE02_HEADER
+Id=23146
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=23.11.2022 07:09:13 +00:00
+UpdatedAt=23.11.2022 07:09:13 +00:00
+
+### ARTICLE02_BODY
+@Martin: <div>
+<div><br></div>
+<div>Zum Thema RAS, Zykluszeit:</div>
+<div>Cyril hatte bei der Implementierung entschieden, die Verbindung nicht direkt .NET -&gt; C++, sondern über RAS zumachen.<div>Herr Lange hat recht, die Zykluszeit muss gleich sein wie die Masterzeit, sonst wird DC wohl nicht funktionieren. </div>
+<div>Beides findest du an den emllSimulator Link Layer Parametern: </div>
+<div><pre><span style="color: rgb(43, 145, 175);">EC_T_LINK_PARMS_SIMULATOR::</span>dwBusCycleTimeUsec, bStartRasServer</pre></div>
+<div>
+<div>Wenn die Kommandozeilenoption das gleiche wie die Funktion "<i>Add EC-Simulator Unit (linked)</i>"  macht, könnte schon alles klappen. </div>
+<div>
+<br>
+</div>
+</div>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=23168
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.11.2022 12:04:34 +00:00
+UpdatedAt=23.11.2022 12:04:35 +00:00
+
+### ARTICLE03_SUBJECT
+Integration des EC-Engineer in CANoe für die Konfiguration der EtherCAT Slave Simulation
+
+### ARTICLE03_BODY
+Hallo Herr Lange,<div><br></div><div>Antworten siehe unten.</div><div><br></div><div>Mit freundlichen Grüßen</div><div>Martin Gänzer<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, November 22, 2022 at 1:27:55 PM, Tobias Lange wrote:<br><br><div>
+<p>Hallo,</p>
+<p>für die Integration des EC-Simulators in CANoe wird der EC-Engineer wie bei der Implementierung mit Kommandozeilenparametern aufgerufen und als Dialog angezeigt. Gibt es die Möglichkeit, dass der EC-Engineer über Kommandozeilenparameter für die Konfiguration des EC-Simulators gestartet wird? Es sollte dann ein „Simulator (linked)“ im Projektbau vorhanden sein und beim Verlassen des Dialogs mit „Speichern“ automatisch eine „EXI“ Datei für den EC-Simulator erzeugt werden, mit welcher der EC-Simulator dann gestartet wird.</p>
+<p>MG: Leider nein, ein Aufruf über Kommandozeilenparametern ist derzeit nicht möglich. Ich denke, das es aber durchaus sinnvoll wäre. Ich setze es auf TODO.</p>
+<p> </p>
+<p>Gibt es für die „Simulator“ Einstellungen des EC-Engineer noch weitere Informationen zu den Einzelnen einstellbaren Werten? </p>
+<p>MG: Leider nein.</p>
+<p><br></p>
+<p>In der Dokumentation es EC-Engineer gibt es dazu kaum Informationen. Was hat es mit dem Objekt „Simulator (linked)“ auf sich? </p>
+<p>MG: Die Dokumentation ist hier wirklich sehr spärlich. Wir werden versuchen das zu verbessern.</p>
+<p><br></p>
+<p>Ich vermute, dass hier allgemeine Daten zur Simulation eingestellt werden können, die sonst nicht zu einem andere Objekt gehören und deshalb in diesem Objekt untergebracht wurden. </p>
+<p>MG: Richtig, hier können die allgemeinen Einstellungen für den Simulator gemacht werden.</p>
+<p><br></p>
+<p>Auf dieser Seite des „Simulator (linked)“ gibt es die „Cycle Time [us]“ – wofür wird dieser Wert benötigt? <span>Die Cycle Time wird doch durch den Master vorgegeben. Hier sind auch in Vergleich zum Master nur sehr wenige und ziemlich kleine Zeiten auswählbar. Muss bei diesem Wert nicht die gleiche Zeit eingestellt werden wie beim Master?</span></p>
+<p>MG: Genau. Die Zykluszeit muss die gleiche sein wie sie beim Master eingestellt wird, ansonsten wird es Probleme bei DC geben. Weshalb es dafür eine eigene Box gibt muss ich noch klären. </p>
+</div>
+</blockquote></div>
+<div>
+<blockquote type="cite"><div>
+<p> Was soll eingestellt werden, wenn die Zeit nicht in der Liste vorhanden ist? </p>
+<p>MG: <span>Falls Sie hier andere Zykluszeiten benötigen sollten, können Sie als Workaround die EMI vom Simulator editieren: </span></p>
+</div></blockquote>
+<div><div><blockquote>
+<p>C:\ProgramData\EC-Engineer\EMI\EtherCATSimulator.emi</p>
+<p><img src="/api/v1/ticket_attachment/4376/23168/97887?view=inline" style="max-width:100%;width:898px;"><br></p>
+</blockquote></div></div>
+<br><blockquote type="cite">
+<div>
+<p>Wofür wird die RAS-Verbindung auf dem „Simulator (linked)“ Tab benötigt?</p>
+<p>MG: Vom Master/Simulator Team wurde damals entschieden, das es hier besser ist eine Verbindung über RAS zu machen als den Simulator direkt aufzurufen. Genaueres kann ich dazu auch nicht sagen. Hat ggfs. historische Gründe. Ich werde das ebenso auf TODO setzen damit es geprüft wird ob das jetzt noch nötig ist.</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>-----------------------------------------------------</p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">PND10</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><b><span lang="EN-US">Vector Informatik GmbH</span></b><span lang="EN-US"></span></p>
+<p>Besucheranschrift: Holderäckerstraße 36 | 70499 Stuttgart | Deutschland</p>
+<p>Tel.: +49 711 80670-4791</p>
+<p><span lang="EN-US"><a href="mailto:tobias.lange@vector.com"><span lang="DE" style="color:blue;">tobias.lange@vector.com</span></a></span></p>
+<p><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.vector.com</span></a></p>
+<p> </p>
+<p>Sitz der Gesellschaft: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p>Handelsregister: Amtsgericht Stuttgart | HRB 17317</p>
+<p>Geschäftsführer: Dr. Thomas Beck, Dr. Stefan Krauß, Thomas Riegraf</p>
+<p><span lang="EN-US">-----------------------------------------------------</span></p>
+<p> </p>
+</div>
+<br>
+</blockquote>
+</div>
+<div><br></div>
+<br><br>
+</div>

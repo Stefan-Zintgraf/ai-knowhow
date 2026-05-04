@@ -1,0 +1,186 @@
+### HEADER
+Id=9332
+Link=http://at-zammad/#ticket/zoom/9332
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Qiushi, EP300 Controller (ID=927, Number=927)
+Number=709332
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=15.11.2024 05:08:01 +00:00
+UpdatedAt=19.11.2024 07:11:46 +00:00
+CloseAt=19.11.2024 07:11:46 +00:00
+ArticlesCount=3
+
+### TITLE
+The EC-Engineer memory usage abnormally high when swith configuration/diagnosis modes
+
+### ARTICLE00_HEADER
+Id=52844
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.11.2024 05:08:02 +00:00
+UpdatedAt=15.11.2024 05:08:03 +00:00
+
+### ARTICLE00_SUBJECT
+The EC-Engineer memory usage abnormally high when swith configuration/diagnosis modes
+
+### ARTICLE00_BODY
+<div>
+<div>Dear,</div>
+<div> </div>
+<div>The customer Qiushi found that the momory will increase when repeatedly switch between different modes.</div>
+<div>They think that there is a memory leak, and the memory usage will up to 1.5GB, then they have to restart the EC-Engineer.</div>
+<div>Please refer to the attached test.ecc for the network topology.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<div>---------------------------------------------------------------------------------------------------------</div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+<div>
+<div>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</div>
+<div>北京市海淀区上地三街9号C座C309</div>
+</div>
+<div> </div>
+<div>
+<div>Tel: +86-10-62740270 (北京)</div>
+<div>0571-56125098 (杭州)</div>
+<div>+886-2-25222206 (台北)</div>Fax: +86-10-62740270<br>Email ：ec_support@motrotech.com</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=52885
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.11.2024 10:47:41 +00:00
+UpdatedAt=15.11.2024 10:47:43 +00:00
+
+### ARTICLE01_SUBJECT
+The EC-Engineer memory usage abnormally high when swith configuration/diagnosis modes
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes, you are right. I can reproduce it. I will notify you as soon as I have more details.</div><div><br></div><div>Best Regards,</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, November 15, 2024 at 6:08:02 AM, ec_support@motrotech.com wrote:<br><br><div>
+<div>Dear,</div>
+<div> </div>
+<div>The customer Qiushi found that the momory will increase when repeatedly switch between different modes.</div>
+<div>They think that there is a memory leak, and the memory usage will up to 1.5GB, then they have to restart the EC-Engineer.</div>
+<div>Please refer to the attached test.ecc for the network topology.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<div>---------------------------------------------------------------------------------------------------------</div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+<div>
+<div>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</div>
+<div>北京市海淀区上地三街9号C座C309</div>
+</div>
+<div> </div>
+<div>
+<div>Tel: +86-10-62740270 (北京)</div>
+<div>0571-56125098 (杭州)</div>
+<div>+886-2-25222206 (台北)</div>Fax: +86-10-62740270<br>Email ：ec_support@motrotech.com</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=52903
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.11.2024 17:59:31 +00:00
+UpdatedAt=15.11.2024 17:59:32 +00:00
+
+### ARTICLE02_SUBJECT
+The EC-Engineer memory usage abnormally high when swith configuration/diagnosis modes
+
+### ARTICLE02_BODY
+<div>Hi,</div><div><br></div><div>I found the memory leak. It will be fixed in the next version. I will notify you as soon as the new version is available.</div><div><br></div><div>Best Regards,</div><div>Martin<br><br>
+</div><div><blockquote type="cite">On Friday, November 15, 2024 at 11:47:41 AM, Martin Gaenzer wrote:<br><br>Hi,<div><br></div>
+<div>yes, you are right. I can reproduce it. I will notify you as soon as I have more details.</div>
+<div><br></div>
+<div>Best Regards,</div>
+<div>Martin</div>
+<div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, November 15, 2024 at 6:08:02 AM, ec_support@motrotech.com wrote:<br><br><div>
+<div>Dear,</div>
+<div> </div>
+<div>The customer Qiushi found that the momory will increase when repeatedly switch between different modes.</div>
+<div>They think that there is a memory leak, and the memory usage will up to 1.5GB, then they have to restart the EC-Engineer.</div>
+<div>Please refer to the attached test.ecc for the network topology.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<div>---------------------------------------------------------------------------------------------------------</div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+<div>
+<div>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</div>
+<div>北京市海淀区上地三街9号C座C309</div>
+</div>
+<div> </div>
+<div>
+<div>Tel: +86-10-62740270 (北京)</div>
+<div>0571-56125098 (杭州)</div>
+<div>+886-2-25222206 (台北)</div>Fax: +86-10-62740270<br>Email ：ec_support@motrotech.com</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+<br>
+</blockquote></div><div><br></div>

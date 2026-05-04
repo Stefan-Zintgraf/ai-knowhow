@@ -1,0 +1,195 @@
+### HEADER
+Id=8705
+Link=http://at-zammad/#ticket/zoom/8705
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Komatsu-Sanki, Machine Controller (ID=731, Number=731)
+Number=708705
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=22.08.2024 08:06:51 +00:00
+UpdatedAt=13.09.2024 07:33:24 +00:00
+CloseAt=05.09.2024 06:04:58 +00:00
+ArticlesCount=5
+
+### TITLE
+Question about EC-Master(KOMATSU)
+
+### ARTICLE00_HEADER
+Id=48883
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=22.08.2024 08:06:51 +00:00
+UpdatedAt=22.08.2024 08:06:55 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(KOMATSU)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(KOMATSU)
+
+Please check the attached log.
+There was no issue previously, but after updating the firmware on the FANUC slave, errors have started occurring.
+What could be the cause of the problem?
+
+Best regards,
+Takuya Fujikawa
+
+### ARTICLE01_HEADER
+Id=48892
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.08.2024 10:04:25 +00:00
+UpdatedAt=22.08.2024 10:04:29 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(KOMATSU)
+
+### ARTICLE01_BODY
+Hi Takuya-san <div><br></div><div>The FANUC slave is reporting an EEPROM error. When we try to read the product code at the beginning from the EEPROM the slave delivers the following:</div><div><span>Product Code........: 0x00000003 = Unknown</span></div><div><span><br></span></div><div><span>This is not expected. Afterwards it is reporting an EEPROM error. It looks like a firmware bug for us. Komatsu need to report this to FANUC.</span></div><div><span><br></span></div><div><span>Best Regards </span></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, August 22, 2024 at 10:06:51 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(KOMATSU)</div>
+<div><br></div>
+<div>Please check the attached log.</div>
+<div>There was no issue previously, but after updating the firmware on the FANUC slave, errors have started occurring.</div>
+<div>What could be the cause of the problem?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=49689
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=09.09.2024 01:56:19 +00:00
+UpdatedAt=09.09.2024 01:56:19 +00:00
+
+### ARTICLE02_SUBJECT
+Question about EC-Master(KOMATSU)
+
+### ARTICLE02_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(KOMATSU)
+
+I am instructed by the slave vendor to write 0x0001 to 0x1C32:01.
+Is it necessary to write this index from the user application?
+If it can be configured by the EC-Engineer, please let me know how to do it.
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE03_HEADER
+Id=49998
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=13.09.2024 07:29:45 +00:00
+UpdatedAt=13.09.2024 07:29:45 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(KOMATSU)
+
+### ARTICLE03_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(KOMATSU)
+
+I have a question regarding the treatment of "/Mailbox/CoE/InitCmd/Transition" listed in ESI.
+Is my interpretation of the following correct?
+
+IP: Execute InitCmd immediately after switching from INIT to PreOP.
+PS: Execute InitCmd before switching from PreOP to SafeOP.
+SO: Execute InitCmd before switching from SafeOP to OP.
+
+I interpreted that InitCmd for IP is executed after the state transition.
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE04_HEADER
+Id=50000
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.09.2024 07:33:24 +00:00
+UpdatedAt=13.09.2024 07:33:28 +00:00
+
+### ARTICLE04_SUBJECT
+Question about EC-Master(KOMATSU)
+
+### ARTICLE04_BODY
+Hi Takuya-san,<div><br></div><div>please send us the new questions always in new seperate mails.</div><div><br></div><div>Best Regards<div data-signature="true" data-signature-id="2">
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, September 13, 2024 at 9:29:45 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(KOMATSU)</div>
+<div><br></div>
+<div>I have a question regarding the treatment of "/Mailbox/CoE/InitCmd/Transition" listed in ESI.</div>
+<div>Is my interpretation of the following correct?</div>
+<div><br></div>
+<div>IP: Execute InitCmd immediately after switching from INIT to PreOP.</div>
+<div>PS: Execute InitCmd before switching from PreOP to SafeOP.</div>
+<div>SO: Execute InitCmd before switching from SafeOP to OP.</div>
+<div><br></div>
+<div>I interpreted that InitCmd for IP is executed after the state transition.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

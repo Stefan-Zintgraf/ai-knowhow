@@ -1,0 +1,171 @@
+### HEADER
+Id=1299
+Link=http://at-zammad/#ticket/zoom/1299
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=701299
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=26.08.2021 21:44:39 +00:00
+UpdatedAt=30.08.2021 05:24:58 +00:00
+CloseAt=30.08.2021 05:24:58 +00:00
+ArticlesCount=4
+
+### TITLE
+Status of EC-Simulator support with EC-Engineer Web
+
+### ARTICLE00_HEADER
+Id=7035
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.08.2021 21:44:39 +00:00
+UpdatedAt=26.08.2021 21:44:39 +00:00
+
+### ARTICLE00_SUBJECT
+Status of EC-Simulator support with EC-Engineer Web
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>What is the current status of EC-Engineer Web integration with EC-Simulator?<br><br>/Jon</div>
+
+### ARTICLE01_HEADER
+Id=7040
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.08.2021 05:21:29 +00:00
+UpdatedAt=27.08.2021 05:21:31 +00:00
+
+### ARTICLE01_SUBJECT
+Status of EC-Simulator support with EC-Engineer Web
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>the EC-Engineer Web can export EXI files. Also with EEPROM, CoE and registers.</div><div>SiL is not possible, but the RAS connection to HiL should work.</div><div><br></div><div>Best regards,</div><div>Kai</div><div><div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, August 26, 2021, 11:44:39 PM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>What is the current status of EC-Engineer Web integration with EC-Simulator?<br><br>/Jon</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div></div>
+
+### ARTICLE02_HEADER
+Id=7048
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.08.2021 14:12:28 +00:00
+UpdatedAt=27.08.2021 14:12:28 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Status of EC-Simulator support with EC-Engineer Web [Ticket#701299]
+
+### ARTICLE02_BODY
+OK but there is no Simulator tab like in EC-Engineer classic?<br><br>/Jon<br><br><div>
+<strong> From: </strong> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<strong> To: </strong> &lt;j.waters@acontis.com&gt; <br>
+<strong> Sent: </strong> 8/27/2021 1:21 AM <br>
+<strong> Subject: </strong> RE: Status of EC-Simulator support with EC-Engineer Web [Ticket#701299] <br><br><blockquote><div>Hi Jon,<div> </div>
+<div>the EC-Engineer Web can export EXI files. Also with EEPROM, CoE and registers.</div>
+<div>SiL is not possible, but the RAS connection to HiL should work.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div> <div> <div>____________________________________________________________________________<br> </div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>eMail: ecsupport@acontis.com<br> </div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Thursday, August 26, 2021, 11:44:39 PM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>What is the current status of EC-Engineer Web integration with EC-Simulator?<br><br>/Jon</div>
+<br> </blockquote></div>
+<div> </div>
+<br><br> </div>
+</div></blockquote>
+</div>
+
+### ARTICLE03_HEADER
+Id=7050
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.08.2021 15:23:38 +00:00
+UpdatedAt=27.08.2021 15:23:38 +00:00
+
+### ARTICLE03_SUBJECT
+Re: Status of EC-Simulator support with EC-Engineer Web [Ticket#701299]
+
+### ARTICLE03_BODY
+Nevermind, I see that this tab is in EC-Engineer Web now after testing myself.<br><br>/Jon<br><br><div>
+<strong> From: </strong> Jon Waters &lt;j.waters@acontis.com&gt; <br>
+<strong> To: </strong> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<strong> Sent: </strong> 8/27/2021 10:13 AM <br>
+<strong> Subject: </strong> Re: Status of EC-Simulator support with EC-Engineer Web [Ticket#701299] <br><br><blockquote><div>OK but there is no Simulator tab like in EC-Engineer classic?<br><br>/Jon<br><br><div>
+<strong> From: </strong> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<strong> To: </strong> &lt;j.waters@acontis.com&gt; <br>
+<strong> Sent: </strong> 8/27/2021 1:21 AM <br>
+<strong> Subject: </strong> RE: Status of EC-Simulator support with EC-Engineer Web [Ticket#701299] <br><br><blockquote><div>Hi Jon,<div> </div>
+<div>the EC-Engineer Web can export EXI files. Also with EEPROM, CoE and registers.</div>
+<div>SiL is not possible, but the RAS connection to HiL should work.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div> <div> <div>____________________________________________________________________________<br> </div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>eMail: ecsupport@acontis.com<br> </div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Thursday, August 26, 2021, 11:44:39 PM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>What is the current status of EC-Engineer Web integration with EC-Simulator?<br><br>/Jon</div>
+<br> </blockquote></div>
+<div> </div>
+<br><br> </div>
+</div></blockquote>
+</div>
+</div></blockquote>
+</div>

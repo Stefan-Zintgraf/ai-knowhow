@@ -1,0 +1,114 @@
+### HEADER
+Id=7516
+Link=http://at-zammad/#ticket/zoom/7516
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=707516
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=27.02.2024 04:25:37 +00:00
+UpdatedAt=11.03.2024 14:33:55 +00:00
+CloseAt=11.03.2024 14:33:55 +00:00
+ArticlesCount=2
+
+### TITLE
+About ecmaster for RtaccWin
+
+### ARTICLE00_HEADER
+Id=41400
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.02.2024 04:25:38 +00:00
+UpdatedAt=27.02.2024 04:25:41 +00:00
+
+### ARTICLE00_SUBJECT
+About ecmaster for RtaccWin
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently some customer ask windows realtime soluation RtaccWin. But we didn't find the EcMaster for RtaccWin eval.</div>
+<div>Dose the EcMaster support RtaccWin? Did you test the ecmaster for RtaccWin, Dose this realtime soluation have any problem for ethercat?</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=41405
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.02.2024 06:36:52 +00:00
+UpdatedAt=27.02.2024 06:36:53 +00:00
+
+### ARTICLE01_SUBJECT
+About ecmaster for RtaccWin
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>yes of course, we have EC-Master running on RtaccWin. It is a feature pack:</div><div><div><a href="http://software.acontis.com/EC-Master/3.2/Windows/EC-Master-FP-Real-Time-Accelerator-V3.2-Windows-x86_64Bit-SDK_Unrestricted.zip" title="http://software.acontis.com/EC-Master/3.2/Windows/EC-Master-FP-Real-Time-Accelerator-V3.2-Windows-x86_64Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/EC-Master/3.2/Windows/EC-Master-FP-Real-Time-Accelerator-V3.2-Windows-x86_64Bit-SDK_Unrestricted.zip</a></div></div><div><br></div><div>Please note that the eval restriction is currently not implemented with the FP. It is coming in the next versions.</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div>
+<div><br></div>
+<div><blockquote type="cite">On Tuesday, February 27, 2024 at 5:25:38 AM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently some customer ask windows realtime soluation RtaccWin. But we didn't find the EcMaster for RtaccWin eval.</div>
+<div>Dose the EcMaster support RtaccWin? Did you test the ecmaster for RtaccWin, Dose this realtime soluation have any problem for ethercat?</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

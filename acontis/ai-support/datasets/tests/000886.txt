@@ -1,0 +1,101 @@
+### HEADER
+Id=886
+Link=http://at-zammad/#ticket/zoom/886
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=CRRC, Bus controller (ID=529, Number=529)
+Number=700886
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=24.06.2021 08:03:12 +00:00
+UpdatedAt=24.06.2021 08:09:45 +00:00
+CloseAt=24.06.2021 08:09:45 +00:00
+ArticlesCount=2
+
+### TITLE
+Checking the Linklayer for arm64 for the protential customer CRRCGC
+
+### ARTICLE00_HEADER
+Id=4927
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.06.2021 08:03:13 +00:00
+UpdatedAt=24.06.2021 08:03:17 +00:00
+
+### ARTICLE00_SUBJECT
+Checking the Linklayer for arm64 for the protential customer CRRCGC
+
+### ARTICLE00_BODY
+<div>
+<div>Dear,</div>
+<div>The protential customer CRRCGC use LP1046 CPU, now their robot project maybe order the EcMaster. Because of the ECMaster linklayer didn't support the LP1046, So we suggest the customer consider the PCI soluation.</div>
+<div>So we double check whether the ECMaster arm64 could support realtek or intel adapter via pci/pcie? Because we could find the linklayer in the eval version, but we didn't have the LP1046 hardware, we didn't test it.</div>
+<div> </div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=4929
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.06.2021 08:09:45 +00:00
+UpdatedAt=24.06.2021 08:09:50 +00:00
+
+### ARTICLE01_SUBJECT
+Checking the Linklayer for arm64 for the protential customer CRRCGC
+
+### ARTICLE01_BODY
+<div>Hi John,</div><div><br></div><div>emllRTL8169 and emllI8254x are available for ARM_64Bit and tested on a Nvidia Jetson board.</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div><br></div><div><blockquote type="cite">On Thursday, June 24, 2021, 10:03:13 AM, John Zhang wrote:<br><br><div>
+<div>Dear,</div>
+<div>The protential customer CRRCGC use LP1046 CPU, now their robot project maybe order the EcMaster. Because of the ECMaster linklayer didn't support the LP1046, So we suggest the customer consider the PCI soluation.</div>
+<div>So we double check whether the ECMaster arm64 could support realtek or intel adapter via pci/pcie? Because we could find the linklayer in the eval version, but we didn't have the LP1046 hardware, we didn't test it.</div>
+<div> </div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+<div> </div>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

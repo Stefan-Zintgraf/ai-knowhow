@@ -1,0 +1,124 @@
+### HEADER
+Id=8005
+Link=http://at-zammad/#ticket/zoom/8005
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=708005
+Owner=s.zintgraf@acontis.com (ID=10, FirstName=Stefan, LastName=Zintgraf)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=28.04.2024 11:02:59 +00:00
+UpdatedAt=08.05.2024 08:19:14 +00:00
+CloseAt=08.05.2024 08:19:14 +00:00
+ArticlesCount=2
+
+### TITLE
+The potential customer firstd requirement for the new CPU semidrive
+
+### ARTICLE00_HEADER
+Id=44084
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.04.2024 11:02:59 +00:00
+UpdatedAt=28.04.2024 11:03:01 +00:00
+
+### ARTICLE00_SUBJECT
+The potential customer firstd requirement for the new CPU semidrive
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently, We connected with a new potential customer firstd, They plan to using the semidrive D9 CPU.</div>
+<div>Semidrive D9 is a Chinese company. The D9 is a A55/A53 CPU. They plan to using D9 with sylixOS.</div>
+<div>And we learn that the customer estun will choose one of rockchip RK3399 or semidrive D9. And phoenix ask us to prepring a demo when we could provide it.</div>
+<div>We guess the MAC of D9 is base on synopsys Ethernet Qos MAC, We think it is same as dw3504. The following link is the user manual, and the passwd is 8aP1BD.</div>
+<div>Could you please calculate a period for the customer? They want to getting a period end of this month.</div>
+<div> </div>
+<div><a href="https://drive.google.com/file/d/1EKZK5n7iG71FLQdu_ca2uE1D0iSMPj9X/view?usp=sharing" rel="nofollow noreferrer noopener" target="_blank">https://drive.google.com/file/d/1EKZK5n7iG71FLQdu_ca2uE1D0iSMPj9X/view?usp=sharing</a></div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=44176
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.05.2024 07:46:15 +00:00
+UpdatedAt=01.05.2024 07:46:18 +00:00
+
+### ARTICLE01_SUBJECT
+The potential customer firstd requirement for the new CPU semidrive
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>it is 3 to 4 weeks effort on our side. </div><div>Will the customer accept to pay for the porting? It will cost around 12,000.00 EUR to 15,000.00 EUR.</div><div><br></div><div>Best regards,</div><div>Stefan<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><br></div>
+<div><blockquote type="cite">On Sunday, April 28, 2024 at 1:02:59 PM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently, We connected with a new potential customer firstd, They plan to using the semidrive D9 CPU.</div>
+<div>Semidrive D9 is a Chinese company. The D9 is a A55/A53 CPU. They plan to using D9 with sylixOS.</div>
+<div>And we learn that the customer estun will choose one of rockchip RK3399 or semidrive D9. And phoenix ask us to prepring a demo when we could provide it.</div>
+<div>We guess the MAC of D9 is base on synopsys Ethernet Qos MAC, We think it is same as dw3504. The following link is the user manual, and the passwd is 8aP1BD.</div>
+<div>Could you please calculate a period for the customer? They want to getting a period end of this month.</div>
+<div> </div>
+<div><a href="https://drive.google.com/file/d/1EKZK5n7iG71FLQdu_ca2uE1D0iSMPj9X/view?usp=sharing" rel="nofollow noreferrer noopener" target="_blank">https://drive.google.com/file/d/1EKZK5n7iG71FLQdu_ca2uE1D0iSMPj9X/view?usp=sharing</a></div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

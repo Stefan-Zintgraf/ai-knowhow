@@ -1,0 +1,168 @@
+### HEADER
+Id=4923
+Link=http://at-zammad/#ticket/zoom/4923
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=The Mathworks (ID=391, Number=40135, Country=US)
+Commission=The Mathworks, Simulink Real-Time (ID=463, Number=463)
+Number=704923
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=mtrujill@mathworks.com (ID=1318, FirstName=Marlon, LastName=Trujillo)
+CreatedBy=mtrujill@mathworks.com (ID=1318, FirstName=Marlon, LastName=Trujillo)
+Type=
+TimeUnit=
+CreatedAt=14.02.2023 16:46:12 +00:00
+UpdatedAt=21.02.2023 07:42:42 +00:00
+CloseAt=14.02.2023 20:23:55 +00:00
+ArticlesCount=3
+
+### TITLE
+EtherCAT on Linux - Demo with EC Master and Simulator
+
+### ARTICLE00_HEADER
+Id=26010
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.02.2023 16:46:12 +00:00
+UpdatedAt=14.02.2023 16:46:12 +00:00
+
+### ARTICLE00_SUBJECT
+EtherCAT on Linux - Demo with EC Master and Simulator
+
+### ARTICLE00_BODY
+<div>
+<p> </p>
+<div>
+<p><span style="color:#5f5f5f;">________________________________________________________________________________</span>
+</p>
+</div>
+<div>
+<div>
+<p><span style="color:#252424;">Microsoft Teams meeting</span><span style="color:#252424;">
+</span></p>
+</div>
+<div>
+<div>
+<p><b><span style="color:#252424;">Join on your computer, mobile app or room device</span></b><b><span style="color:#252424;">
+</span></b></p>
+</div>
+<p><span style="color:#252424;"><a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_Yzc2OTI1OTktZWIwMS00ZjllLTg2MzUtYTU1MWJiNDA3N2Ex%40thread.v2/0?context=%7b%22Tid%22%3a%2299dd3a11-4348-4468-9bdd-e5072b1dc1e6%22%2c%22Oid%22%3a%22aa20a7ab-7154-4a1e-ab57-47d53ea96356%22%7d" rel="nofollow noreferrer noopener" title="https://teams.microsoft.com/l/meetup-join/19%3ameeting_Yzc2OTI1OTktZWIwMS00ZjllLTg2MzUtYTU1MWJiNDA3N2Ex%40thread.v2/0?context=%7b%22Tid%22%3a%2299dd3a11-4348-4468-9bdd-e5072b1dc1e6%22%2c%22Oid%22%3a%22aa20a7ab-7154-4a1e-ab57-47d53ea96356%22%7d" target="_blank"><span style="color:#6264a7;">Click here to join the meeting</span></a> </span></p>
+</div>
+<div>
+<div>
+<p><span style="color:#252424;">Meeting ID: </span><span style="color:#252424;">258 418 008 42</span><span style="color:#252424;">
+</span><span style="color:#252424;"><br>
+</span><span style="color:#252424;">Passcode: </span><span style="color:#252424;">KNFaZD </span><span style="color:#252424;"></span></p>
+<div>
+<p><span style="color:#252424;"><a href="https://www.microsoft.com/en-us/microsoft-teams/download-app" rel="nofollow noreferrer noopener" title="https://www.microsoft.com/en-us/microsoft-teams/download-app" target="_blank"><span style="color:#6264a7;">Download Teams</span></a> | <a href="https://www.microsoft.com/microsoft-teams/join-a-meeting" rel="nofollow noreferrer noopener" title="https://www.microsoft.com/microsoft-teams/join-a-meeting" target="_blank">
+<span style="color:#6264a7;">Join on the web</span></a></span></p>
+</div>
+</div>
+</div>
+<div>
+<div>
+<p><b><span style="color:#252424;">Or call in (audio only)</span></b><span style="color:#252424;">
+</span></p>
+</div>
+<div>
+<p><span style="color:#252424;"><a href="http://tel:+15083873519,,519890056#%20" rel="nofollow noreferrer noopener" title="http://tel:+15083873519,,519890056#%20" target="_blank"><span style="color:#6264a7;">+1 508-387-3519,,519890056#</span></a>
+</span><span style="color:#252424;"> United States, Worcester </span><span style="color:#252424;"></span></p>
+</div>
+</div>
+<p><span style="color:#252424;">Phone Conference ID: </span><span style="color:#252424;">519 890 056# </span><span style="color:#252424;"></span></p>
+<div>
+<p><span style="color:#252424;"><a href="https://dialin.teams.microsoft.com/20b175e3-248e-44f5-95e0-12b3db30e764?id=519890056" rel="nofollow noreferrer noopener" title="https://dialin.teams.microsoft.com/20b175e3-248e-44f5-95e0-12b3db30e764?id=519890056" target="_blank"><span style="color:#6264a7;">Find a local number</span></a> | <a href="https://dialin.teams.microsoft.com/usp/pstnconferencing" rel="nofollow noreferrer noopener" title="https://dialin.teams.microsoft.com/usp/pstnconferencing" target="_blank">
+<span style="color:#6264a7;">Reset PIN</span></a> </span></p>
+</div>
+<div>
+<p><span style="color:#252424;"><a href="https://aka.ms/JoinTeamsMeeting" rel="nofollow noreferrer noopener" title="https://aka.ms/JoinTeamsMeeting" target="_blank"><span style="color:#6264a7;">Learn More</span></a> | <a href="https://teams.microsoft.com/meetingOptions/?organizerId=aa20a7ab-7154-4a1e-ab57-47d53ea96356&amp;tenantId=99dd3a11-4348-4468-9bdd-e5072b1dc1e6&amp;threadId=19_meeting_Yzc2OTI1OTktZWIwMS00ZjllLTg2MzUtYTU1MWJiNDA3N2Ex@thread.v2&amp;messageId=0&amp;language=en-US" rel="nofollow noreferrer noopener" title="https://teams.microsoft.com/meetingOptions/?organizerId=aa20a7ab-7154-4a1e-ab57-47d53ea96356&amp;tenantId=99dd3a11-4348-4468-9bdd-e5072b1dc1e6&amp;threadId=19_meeting_Yzc2OTI1OTktZWIwMS00ZjllLTg2MzUtYTU1MWJiNDA3N2Ex@thread.v2&amp;messageId=0&amp;language=en-US" target="_blank">
+<span style="color:#6264a7;">Meeting options</span></a> </span></p>
+</div>
+</div>
+<div>
+<p><span style="color:#5f5f5f;">________________________________________________________________________________</span>
+</p>
+</div>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=26014
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=14.02.2023 20:23:50 +00:00
+UpdatedAt=14.02.2023 20:23:50 +00:00
+
+### ARTICLE01_BODY
+Thanks, must have been an auto-fill issue when trying to invite me to the meeting.
+
+### ARTICLE02_HEADER
+Id=26094
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.02.2023 18:07:51 +00:00
+UpdatedAt=21.02.2023 07:42:42 +00:00
+
+### ARTICLE02_SUBJECT
+EtherCAT on Linux - Demo with EC Master and Simulator
+
+### ARTICLE02_BODY
+<div>
+<p> </p>
+<div>
+<p><span style="color:#5f5f5f;">________________________________________________________________________________</span>
+</p>
+</div>
+<div>
+<div>
+<p><span style="color:#252424;">Microsoft Teams meeting</span><span style="color:#252424;">
+</span></p>
+</div>
+<div>
+<div>
+<p><b><span style="color:#252424;">Join on your computer, mobile app or room device</span></b><b><span style="color:#252424;">
+</span></b></p>
+</div>
+<p><span style="color:#252424;"><a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_Yzc2OTI1OTktZWIwMS00ZjllLTg2MzUtYTU1MWJiNDA3N2Ex%40thread.v2/0?context=%7b%22Tid%22%3a%2299dd3a11-4348-4468-9bdd-e5072b1dc1e6%22%2c%22Oid%22%3a%22aa20a7ab-7154-4a1e-ab57-47d53ea96356%22%7d" rel="nofollow noreferrer noopener" title="https://teams.microsoft.com/l/meetup-join/19%3ameeting_Yzc2OTI1OTktZWIwMS00ZjllLTg2MzUtYTU1MWJiNDA3N2Ex%40thread.v2/0?context=%7b%22Tid%22%3a%2299dd3a11-4348-4468-9bdd-e5072b1dc1e6%22%2c%22Oid%22%3a%22aa20a7ab-7154-4a1e-ab57-47d53ea96356%22%7d" target="_blank"><span style="color:#6264a7;">Click here to join the meeting</span></a> </span></p>
+</div>
+<div>
+<div>
+<p><span style="color:#252424;">Meeting ID: </span><span style="color:#252424;">258 418 008 42</span><span style="color:#252424;">
+</span><span style="color:#252424;"><br>
+</span><span style="color:#252424;">Passcode: </span><span style="color:#252424;">KNFaZD </span><span style="color:#252424;"></span></p>
+<div>
+<p><span style="color:#252424;"><a href="https://www.microsoft.com/en-us/microsoft-teams/download-app" rel="nofollow noreferrer noopener" title="https://www.microsoft.com/en-us/microsoft-teams/download-app" target="_blank"><span style="color:#6264a7;">Download Teams</span></a> | <a href="https://www.microsoft.com/microsoft-teams/join-a-meeting" rel="nofollow noreferrer noopener" title="https://www.microsoft.com/microsoft-teams/join-a-meeting" target="_blank">
+<span style="color:#6264a7;">Join on the web</span></a></span></p>
+</div>
+</div>
+</div>
+<div>
+<div>
+<p><b><span style="color:#252424;">Or call in (audio only)</span></b><span style="color:#252424;">
+</span></p>
+</div>
+<div>
+<p><span style="color:#252424;"><a href="http://tel:+15083873519,,519890056#%20" rel="nofollow noreferrer noopener" title="http://tel:+15083873519,,519890056#%20" target="_blank"><span style="color:#6264a7;">+1 508-387-3519,,519890056#</span></a>
+</span><span style="color:#252424;"> United States, Worcester </span><span style="color:#252424;"></span></p>
+</div>
+</div>
+<p><span style="color:#252424;">Phone Conference ID: </span><span style="color:#252424;">519 890 056# </span><span style="color:#252424;"></span></p>
+<div>
+<p><span style="color:#252424;"><a href="https://dialin.teams.microsoft.com/20b175e3-248e-44f5-95e0-12b3db30e764?id=519890056" rel="nofollow noreferrer noopener" title="https://dialin.teams.microsoft.com/20b175e3-248e-44f5-95e0-12b3db30e764?id=519890056" target="_blank"><span style="color:#6264a7;">Find a local number</span></a> | <a href="https://dialin.teams.microsoft.com/usp/pstnconferencing" rel="nofollow noreferrer noopener" title="https://dialin.teams.microsoft.com/usp/pstnconferencing" target="_blank">
+<span style="color:#6264a7;">Reset PIN</span></a> </span></p>
+</div>
+<div>
+<p><span style="color:#252424;"><a href="https://aka.ms/JoinTeamsMeeting" rel="nofollow noreferrer noopener" title="https://aka.ms/JoinTeamsMeeting" target="_blank"><span style="color:#6264a7;">Learn More</span></a> | <a href="https://teams.microsoft.com/meetingOptions/?organizerId=aa20a7ab-7154-4a1e-ab57-47d53ea96356&amp;tenantId=99dd3a11-4348-4468-9bdd-e5072b1dc1e6&amp;threadId=19_meeting_Yzc2OTI1OTktZWIwMS00ZjllLTg2MzUtYTU1MWJiNDA3N2Ex@thread.v2&amp;messageId=0&amp;language=en-US" rel="nofollow noreferrer noopener" title="https://teams.microsoft.com/meetingOptions/?organizerId=aa20a7ab-7154-4a1e-ab57-47d53ea96356&amp;tenantId=99dd3a11-4348-4468-9bdd-e5072b1dc1e6&amp;threadId=19_meeting_Yzc2OTI1OTktZWIwMS00ZjllLTg2MzUtYTU1MWJiNDA3N2Ex@thread.v2&amp;messageId=0&amp;language=en-US" target="_blank">
+<span style="color:#6264a7;">Meeting options</span></a> </span></p>
+</div>
+</div>
+<div>
+<p><span style="color:#5f5f5f;">________________________________________________________________________________</span>
+</p>
+</div>
+<p> </p>
+</div>

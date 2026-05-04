@@ -1,0 +1,209 @@
+### HEADER
+Id=7759
+Link=http://at-zammad/#ticket/zoom/7759
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=707759
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=28.03.2024 21:34:12 +00:00
+UpdatedAt=05.04.2024 06:47:28 +00:00
+CloseAt=05.04.2024 06:47:28 +00:00
+ArticlesCount=4
+
+### TITLE
+CoE Read via EC-Inspector?
+
+### ARTICLE00_HEADER
+Id=42836
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.03.2024 21:34:12 +00:00
+UpdatedAt=28.03.2024 21:34:12 +00:00
+
+### ARTICLE00_SUBJECT
+CoE Read via EC-Inspector?
+
+### ARTICLE00_BODY
+Is it possible to read object dictionaries via EC-Inspector? I didn’t think EC-Inspector sent anything onto the network, so how would this be possible?<div> </div><div>The documentation indicates variables can be read via CoE: <a href="https://public.acontis.com/manuals/EC-Inspector/3.8/html/diagnosis-mode.html?highlight=coe#coe-object-dictionary" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Inspector/3.8/html/diagnosis-mode.html?highlight=coe#coe-object-dictionary</a><div> </div>
+<div>
+<img alt="_images_diag-slave-coe_3.png" src="/api/v1/ticket_attachment/7759/42836/177289?view=inline" style="max-width:100%;"><br><div>
+<br>/Jon </div>
+<br>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=42862
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.04.2024 06:30:43 +00:00
+UpdatedAt=02.04.2024 06:30:46 +00:00
+
+### ARTICLE01_SUBJECT
+CoE Read via EC-Inspector?
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>not all values can be read. Only the ones that were already on the bus. So EC-Inspector will show all read values, but is not able to actively read them.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, March 28, 2024 at 10:34:12 PM, Jon Waters wrote:<br><br>Is it possible to read object dictionaries via EC-Inspector? I didn’t think EC-Inspector sent anything onto the network, so how would this be possible?<div> </div>
+<div>The documentation indicates variables can be read via CoE: <a href="https://public.acontis.com/manuals/EC-Inspector/3.8/html/diagnosis-mode.html?highlight=coe#coe-object-dictionary" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Inspector/3.8/html/diagnosis-mode.html?highlight=coe#coe-object-dictionary</a><div> </div>
+<div>
+<img alt="_images_diag-slave-coe_3.png" src="/api/v1/ticket_attachment/7759/42862/177393?view=inline" style="max-width:100%;max-width:100%;"><br><div>
+<br>/Jon </div>
+<br>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=42923
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.04.2024 13:30:33 +00:00
+UpdatedAt=02.04.2024 13:30:33 +00:00
+
+### ARTICLE02_SUBJECT
+Re: CoE Read via EC-Inspector? [Ticket#707759]
+
+### ARTICLE02_BODY
+Ok that makes sense. So as long as the actual master sent the EtherCAT datagram to read the object dictionary, then EC-Inspector can display this value?<br><div>
+<br>/Jon </div><div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Apr 2, 2024, at 2:30 AM, Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>Hi Jon,<div> </div>
+<div>not all values can be read. Only the ones that were already on the bus. So EC-Inspector will show all read values, but is not able to actively read them.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Thursday, March 28, 2024 at 10:34:12 PM, Jon Waters wrote:<br><br>Is it possible to read object dictionaries via EC-Inspector? I didn’t think EC-Inspector sent anything onto the network, so how would this be possible?<div> </div>
+<div>The documentation indicates variables can be read via CoE: <a href="https://public.acontis.com/manuals/EC-Inspector/3.8/html/diagnosis-mode.html?highlight=coe#coe-object-dictionary" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Inspector/3.8/html/diagnosis-mode.html?highlight=coe#coe-object-dictionary</a><div> </div>
+<div>
+<img alt="Mail Attachment.png" style="max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/7759/42923/177543?view=inline"><br><div>
+<br>/Jon </div>
+</div>
+</div>
+</blockquote></div>
+</div>
+</div>
+</blockquote>
+</div>
+
+### ARTICLE03_HEADER
+Id=42924
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.04.2024 13:33:37 +00:00
+UpdatedAt=02.04.2024 13:33:39 +00:00
+
+### ARTICLE03_SUBJECT
+CoE Read via EC-Inspector?
+
+### ARTICLE03_BODY
+Yes exactly.<div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, April 2, 2024 at 3:30:33 PM, Jon Waters wrote:<br><br>Ok that makes sense. So as long as the actual master sent the EtherCAT datagram to read the object dictionary, then EC-Inspector can display this value?<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Apr 2, 2024, at 2:30 AM, Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>Hi Jon,<div> </div>
+<div>not all values can be read. Only the ones that were already on the bus. So EC-Inspector will show all read values, but is not able to actively read them.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Thursday, March 28, 2024 at 10:34:12 PM, Jon Waters wrote:<br><br>Is it possible to read object dictionaries via EC-Inspector? I didn’t think EC-Inspector sent anything onto the network, so how would this be possible?<div> </div>
+<div>The documentation indicates variables can be read via CoE: <a href="https://public.acontis.com/manuals/EC-Inspector/3.8/html/diagnosis-mode.html?highlight=coe#coe-object-dictionary" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Inspector/3.8/html/diagnosis-mode.html?highlight=coe#coe-object-dictionary</a><div> </div>
+<div>
+<img alt="Mail Attachment.png" style="max-width:100%;max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/7759/42924/177544?view=inline"><br><div>
+<br>/Jon </div>
+</div>
+</div>
+</blockquote></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

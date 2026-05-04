@@ -1,0 +1,238 @@
+### HEADER
+Id=5643
+Link=http://at-zammad/#ticket/zoom/5643
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Noah Medical (ID=379, Number=40367, Country=US)
+Commission=Noah Medical, Surgical Robot R&D (ID=450, Number=450)
+Number=705643
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=ravimirakhur@noahmed.com (ID=1954, FirstName=Ravi, LastName=Mirakhur)
+CreatedBy=ravimirakhur@noahmed.com (ID=1954, FirstName=Ravi, LastName=Mirakhur)
+Type=
+TimeUnit=
+CreatedAt=24.05.2023 22:29:36 +00:00
+UpdatedAt=26.05.2023 18:45:12 +00:00
+CloseAt=26.05.2023 18:45:12 +00:00
+ArticlesCount=5
+
+### TITLE
+need some urgent support for EC engineer
+
+### ARTICLE00_HEADER
+Id=30085
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=24.05.2023 22:29:36 +00:00
+UpdatedAt=24.05.2023 22:29:36 +00:00
+
+### ARTICLE00_SUBJECT
+need some urgent support for EC engineer
+
+### ARTICLE00_BODY
+Hi ,
+
+I am using EC engineer and I need some urgent support. I see the
+object dictionary and the variables mapped into EC engineer dont agree
+in value.
+
+regards,
+
+Ravi Mirakhur
+Noah Medical
+5104938437
+
+
+### ARTICLE01_HEADER
+Id=30089
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.05.2023 00:48:11 +00:00
+UpdatedAt=25.05.2023 00:48:14 +00:00
+
+### ARTICLE01_SUBJECT
+need some urgent support for EC engineer
+
+### ARTICLE01_BODY
+Hi Ravi,<div><br></div><div>Can you elaborate further on the issue so we can help? Are you using EC-Engineer connected to EC-Master via RAS? What about the variables don't agree?<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Jon Waters</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +1-508-809-7200</div>
+<div>acontis technologies Inc.,  945 Concord Street, Framingham, MA 01701, United States, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, May 24, 2023 at 6:29:36 PM, Ravi Mirakhur wrote:<br><br><div>Hi ,</div>
+<div><br></div>
+<div>I am using EC engineer and I need some urgent support. I see the</div>
+<div>object dictionary and the variables mapped into EC engineer dont agree</div>
+<div>in value.</div>
+<div><br></div>
+<div>regards,</div>
+<div><br></div>
+<div>Ravi Mirakhur</div>
+<div>Noah Medical</div>
+<div>5104938437</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=30093
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=25.05.2023 03:51:00 +00:00
+UpdatedAt=25.05.2023 03:51:00 +00:00
+
+### ARTICLE02_SUBJECT
+Re: need some urgent support for EC engineer [Ticket#705643]
+
+### ARTICLE02_BODY
+Hi Jon,
+
+I am using EC engineer as a master. I am not sure if RAS server is
+built inside it. I think if we can have a call then I can explain
+better and may be share my screen and show you in real time.
+
+Best regards,
+
+Ravi Mirakhur
+5104938437
+
+On Wed, May 24, 2023 at 5:48 PM Jon Waters via EC-Support
+<ecsupport@acontis.com> wrote:
+>
+> Hi Ravi,
+>
+> Can you elaborate further on the issue so we can help? Are you using EC-Engineer connected to EC-Master via RAS? What about the variables don't agree?
+> __________________________________________________________________________________________
+> Jon Waters
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +1-508-809-7200
+> acontis technologies Inc.,  945 Concord Street, Framingham, MA 01701, United States, https://www.acontis.com
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html
+>
+>
+> On Wednesday, May 24, 2023 at 6:29:36 PM, Ravi Mirakhur wrote:
+>
+> Hi ,
+>
+> I am using EC engineer and I need some urgent support. I see the
+> object dictionary and the variables mapped into EC engineer dont agree
+> in value.
+>
+> regards,
+>
+> Ravi Mirakhur
+> Noah Medical
+> 5104938437
+>
+>
+>
+>
+
+
+### ARTICLE03_HEADER
+Id=30147
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.05.2023 15:34:02 +00:00
+UpdatedAt=26.05.2023 06:39:07 +00:00
+
+### ARTICLE03_SUBJECT
+Happening now: Ravi Mirakhur is inviting you to a video call
+
+### ARTICLE03_BODY
+<table style="background-color: #f1f3f4; border-spacing: 0; color: #202124; padding-bottom: 40px;" lang="en">
+<tr><td style="padding: 32px 41px 0 41px;"></td></tr>
+<tr><td style=" font-size: 15px; padding: 24px 41px;">Ravi Mirakhur &lt;<a href="mailto:ravimirakhur@noahmed.com">ravimirakhur@noahmed.com</a>&gt; is inviting you to join a video call happening now</td></tr>
+<tr><td><table style="background: #fff; color: #263238; margin: 0 40px; text-align: center;">
+<tr><td style="padding-top: 40px;"></td></tr>
+<tr><td><table style="margin-left: auto; margin-right: auto;" cellspacing="0" cellpadding="0"><tr><td><a href="https://meet.google.com/vxq-cvoi-tyd?hs=151" rel="nofollow noreferrer noopener" title="https://meet.google.com/vxq-cvoi-tyd?hs=151" target="_blank">Join Call</a></td></tr></table></td></tr>
+<tr><td style="padding-top: 24px;"><a href="https://meet.google.com/vxq-cvoi-tyd?hs=151" rel="nofollow noreferrer noopener" title="https://meet.google.com/vxq-cvoi-tyd?hs=151" target="_blank">meet.google.com/vxq-cvoi-tyd</a></td></tr>
+<tr><td> Dial-in: (US) +1 225-522-1109 PIN: 717 321 039# <a href="https://tel.meet/VXQCVOITYD?pin=6959825678462&amp;hs=151" rel="nofollow noreferrer noopener" title="https://tel.meet/VXQCVOITYD?pin=6959825678462&amp;hs=151" target="_blank">More numbers</a>
+</td></tr>
+<tr><td style="padding-top: 40px;"></td></tr>
+</table></td></tr>
+</table>
+
+### ARTICLE04_HEADER
+Id=30149
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=25.05.2023 15:39:07 +00:00
+UpdatedAt=25.05.2023 15:39:07 +00:00
+
+### ARTICLE04_SUBJECT
+Re: need some urgent support for EC engineer [Ticket#705643]
+
+### ARTICLE04_BODY
+meet.google.com/vxq-cvoi-tyd
+
+On Wed, May 24, 2023 at 8:50 PM Ravi Mirakhur <ravimirakhur@noahmed.com> wrote:
+>
+> Hi Jon,
+>
+> I am using EC engineer as a master. I am not sure if RAS server is
+> built inside it. I think if we can have a call then I can explain
+> better and may be share my screen and show you in real time.
+>
+> Best regards,
+>
+> Ravi Mirakhur
+> 5104938437
+>
+> On Wed, May 24, 2023 at 5:48 PM Jon Waters via EC-Support
+> <ecsupport@acontis.com> wrote:
+> >
+> > Hi Ravi,
+> >
+> > Can you elaborate further on the issue so we can help? Are you using EC-Engineer connected to EC-Master via RAS? What about the variables don't agree?
+> > __________________________________________________________________________________________
+> > Jon Waters
+> > EtherCAT Support
+> > eMail: ecsupport@acontis.com, Phone: +1-508-809-7200
+> > acontis technologies Inc.,  945 Concord Street, Framingham, MA 01701, United States, https://www.acontis.com
+> > __________________________________________________________________________________________
+> > Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html
+> >
+> >
+> > On Wednesday, May 24, 2023 at 6:29:36 PM, Ravi Mirakhur wrote:
+> >
+> > Hi ,
+> >
+> > I am using EC engineer and I need some urgent support. I see the
+> > object dictionary and the variables mapped into EC engineer dont agree
+> > in value.
+> >
+> > regards,
+> >
+> > Ravi Mirakhur
+> > Noah Medical
+> > 5104938437
+> >
+> >
+> >
+> >
+

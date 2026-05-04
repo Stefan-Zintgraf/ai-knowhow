@@ -1,0 +1,194 @@
+### HEADER
+Id=5591
+Link=http://at-zammad/#ticket/zoom/5591
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=JSLT (ID=402, Number=0, Country=JP)
+Commission=Rorze, Wafer handling system (ID=782, Number=782)
+Number=705591
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=17.05.2023 08:53:11 +00:00
+UpdatedAt=01.08.2023 15:30:29 +00:00
+CloseAt=01.08.2023 15:30:29 +00:00
+ArticlesCount=6
+
+### TITLE
+Question about EC-Master(rorze)
+
+### ARTICLE00_HEADER
+Id=29747
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=17.05.2023 08:53:11 +00:00
+UpdatedAt=17.05.2023 08:53:14 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(rorze)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master for LxWin(rorze)
+
+I'm testing the distributed binaries.
+Do you know why you are getting an error on the command line?
+Please refer to the attached file.
+
+Best regards,
+Takuya Fujikawa
+
+### ARTICLE01_HEADER
+Id=29749
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=17.05.2023 09:15:28 +00:00
+UpdatedAt=17.05.2023 09:15:28 +00:00
+
+### ARTICLE01_BODY
+Gab es nicht ein Fehler bei rtfiles? Muss er vielleicht (Ausführ-) Rechte ändern... Oder war es doch die 32Bit/64Bit Verwechslung?
+
+### ARTICLE02_HEADER
+Id=29755
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=17.05.2023 11:10:21 +00:00
+UpdatedAt=17.05.2023 11:10:21 +00:00
+
+### ARTICLE02_BODY
+es ist doch die 32Bit/64Bit Verwechslung?
+
+### ARTICLE03_HEADER
+Id=29788
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.05.2023 14:45:41 +00:00
+UpdatedAt=17.05.2023 14:45:44 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(rorze)
+
+### ARTICLE03_BODY
+Hi Takuya,<div><br></div><div>this kind of error can be related to a 32Bit / 64Bit mismatch between the selected Linux image and the executed binaries. The customer should double check that they are using the matching binaries.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, May 17, 2023 at 10:53:11 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master for LxWin(rorze)</div>
+<div><br></div>
+<div>I'm testing the distributed binaries.</div>
+<div>Do you know why you are getting an error on the command line?</div>
+<div>Please refer to the attached file.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE04_HEADER
+Id=30839
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=19.06.2023 00:21:24 +00:00
+UpdatedAt=19.06.2023 00:21:24 +00:00
+
+### ARTICLE04_SUBJECT
+Question about EC-Master(rorze)
+
+### ARTICLE04_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(rorze)
+
+They are considering the following architecture using AM2434:
+  Core0:
+   Implement EtherCAT slave using Ethernet's PRU.
+   Implementation will be done using TI's SDK.
+
+Core1:
+   Implement EC-Master using Ethernet's PRU or GigaEthernet.
+
+Q1. Is it possible to simultaneously use PRU Ethernet on both Core0 and Core1 as described above?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE05_HEADER
+Id=30889
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.06.2023 06:40:12 +00:00
+UpdatedAt=20.06.2023 06:40:16 +00:00
+
+### ARTICLE05_SUBJECT
+Question about EC-Master(rorze)
+
+### ARTICLE05_BODY
+<div>Hi Takuya,</div><div>Yes this should work but I expected they won't be completely independent.</div><div>I think this "<span>Implementation will be done using TI's SDK." applies to all.</span>
+</div><div><span><br></span></div><div><span>Best Regards</span></div><div><span>Daniel</span></div><div><span><br></span></div><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Monday, 19 June 2023 at 02:21:24, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(rorze)</div>
+<div><br></div>
+<div>They are considering the following architecture using AM2434:</div>
+<div>  Core0:</div>
+<div>   Implement EtherCAT slave using Ethernet's PRU.</div>
+<div>   Implementation will be done using TI's SDK.</div>
+<div><br></div>
+<div>Core1:</div>
+<div>   Implement EC-Master using Ethernet's PRU or GigaEthernet.</div>
+<div><br></div>
+<div>Q1. Is it possible to simultaneously use PRU Ethernet on both Core0 and Core1 as described above?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div><div><br></div><br><br>

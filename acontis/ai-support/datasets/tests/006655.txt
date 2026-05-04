@@ -1,0 +1,152 @@
+### HEADER
+Id=6655
+Link=http://at-zammad/#ticket/zoom/6655
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=intrinsic (ID=597, Number=0, Country=DE)
+Commission=X (Intrinsic), Real-time robot motion control (ID=676, Number=676)
+Number=706655
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=sesc@intrinsic.ai (ID=1649, FirstName=Sebastian, LastName=Schneider)
+CreatedBy=sesc@intrinsic.ai (ID=1649, FirstName=Sebastian, LastName=Schneider)
+Type=
+TimeUnit=
+CreatedAt=25.10.2023 00:26:08 +00:00
+UpdatedAt=17.11.2023 07:06:31 +00:00
+CloseAt=17.11.2023 07:06:31 +00:00
+ArticlesCount=3
+
+### TITLE
+Job execution timing
+
+### ARTICLE00_HEADER
+Id=35971
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.10.2023 00:26:08 +00:00
+UpdatedAt=25.10.2023 00:26:12 +00:00
+
+### ARTICLE00_SUBJECT
+Job execution timing
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi Jon,<div> </div>
+<div>I've a question regarding the expected timing of calling the various eUserJobs. Currently we have it implemented like this:</div>
+<div> </div>
+<div>We aim for a fixed cycle time with distributed clock synchronization of the devices on the bus. At the start of a cycle, we call eUsrJob_MasterTimer, immediately followed by eUsrJob_ProcessAllRxFrames. Then our application performs some calculation on that data, which may vary a little in time. Sometimes this may be 200us, sometimes 250, give or take. Once the calculation is done, we call eUsrJob_SendAllCycFrames, immediately followed by eUsrJob_SendAcycFrames. We then determine the number of microseconds still left of the cycle time and sleep for that amount of time. The next cycle will then start as described above.</div>
+<div> </div>
+<div>Is this scheme in any way problematic? In particular, while the time between two eUsrJob_MasterTimer calls can be expected to be constant (=cycle time), the time between two calls of</div>
+<div>
+<div>eUsrJob_SendAllCycFrames varies depending on how long our application was calculating.<br>
+</div>
+<div> </div>
+<div>Which job is taking care of the distributed clock sync, and is it robust for not always being called in fixed cycles?</div>
+<div> </div>
+<div>The calculations will always be fast enough, though, that the beginning of a cycle is never delayed.</div>
+<div> </div>
+<div>Thanks in advance!</div>
+<div> </div>
+<div>Best,</div>
+<div> </div>
+<div>Sebastian</div>
+<div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr">
+<table style="color:rgb(0,0,0);font-size:22px;border:0px;"><tbody><tr>
+<td style="padding:20px;"></td>
+<td style="padding:20px 0px 20px 10px;font-size:14px;">
+<b>Sebastian Schneider (he/him)</b><br>Safety Software Engineer<br><a href="mailto:sesc@intrinsic.ai">sesc@intrinsic.ai</a> <span style="color:rgb(209,209,209);">|</span> <a href="http://intrinsic.ai" rel="nofollow noreferrer noopener" target="_blank">intrinsic.ai</a><br>
+</td>
+</tr></tbody></table>
+<p>Intrinsic Innovation GmbH, ABC-Straße 19, 20354 Hamburg</p>
+<p>Geschäftsführer: Jennifer R. Wall, Brett E. Koons<br>Registergericht und -nummer: Hamburg, HRB 161662<br>Sitz der Gesellschaft: Hamburg</p>
+<p>Diese E-Mail ist vertraulich. Falls sie diese fälschlicherweise erhalten haben sollten, leiten Sie diese bitte nicht an jemand anderes weiter, löschen Sie alle Kopien und Anhänge davon und lassen Sie mich bitte wissen, dass die E-Mail an die falsche Person gesendet wurde.</p>
+<p>This email is confidential. If you received this communication by mistake, please don't forward it to anyone else, please erase all copies and attachments, and please let me know that it has gone to the wrong person.</p>
+</div></div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=35973
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=25.10.2023 00:32:54 +00:00
+UpdatedAt=25.10.2023 00:32:54 +00:00
+
+### ARTICLE01_BODY
+Please assist here.<br>
+
+### ARTICLE02_HEADER
+Id=35976
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.10.2023 05:52:15 +00:00
+UpdatedAt=25.10.2023 05:52:19 +00:00
+
+### ARTICLE02_SUBJECT
+Job execution timing
+
+### ARTICLE02_BODY
+Hi Sebastian,<div><br></div><div><div>eUsrJob_MasterTimer doesn't have to be called very accurate. It execute the internal state machines and process the API calls. It is typically called after processing and sending the cyclic frames, because it execution time is variable and introduce some additional jitter to the cyclic frames.</div></div><div><br></div><div>Here is an overview of our typical timing:</div><div><div>
+<a href="https://software.acontis.com/Documents/AT1020_V1.1_EC-Master-Technical.pdf" title="https://software.acontis.com/Documents/AT1020_V1.1_EC-Master-Technical.pdf" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/Documents/AT1020_V1.1_EC-Master-Technical.pdf</a> Page 15</div></div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, October 25, 2023 at 2:26:08 AM, Sebastian Schneider wrote:<br><br><div dir="ltr">Hi Jon,<div> </div>
+<div>I've a question regarding the expected timing of calling the various eUserJobs. Currently we have it implemented like this:</div>
+<div> </div>
+<div>We aim for a fixed cycle time with distributed clock synchronization of the devices on the bus. At the start of a cycle, we call eUsrJob_MasterTimer, immediately followed by eUsrJob_ProcessAllRxFrames. Then our application performs some calculation on that data, which may vary a little in time. Sometimes this may be 200us, sometimes 250, give or take. Once the calculation is done, we call eUsrJob_SendAllCycFrames, immediately followed by eUsrJob_SendAcycFrames. We then determine the number of microseconds still left of the cycle time and sleep for that amount of time. The next cycle will then start as described above.</div>
+<div> </div>
+<div>Is this scheme in any way problematic? In particular, while the time between two eUsrJob_MasterTimer calls can be expected to be constant (=cycle time), the time between two calls of</div>
+<div>
+<div>eUsrJob_SendAllCycFrames varies depending on how long our application was calculating.<br>
+</div>
+<div> </div>
+<div>Which job is taking care of the distributed clock sync, and is it robust for not always being called in fixed cycles?</div>
+<div> </div>
+<div>The calculations will always be fast enough, though, that the beginning of a cycle is never delayed.</div>
+<div> </div>
+<div>Thanks in advance!</div>
+<div> </div>
+<div>Best,</div>
+<div> </div>
+<div>Sebastian</div>
+<div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr">
+<table style="color:rgb(0,0,0);font-size:22px;border:0px;"><tbody><tr>
+<td style="padding:20px;"></td>
+<td style="padding:20px 0px 20px 10px;font-size:14px;">
+<b>Sebastian Schneider (he/him)</b><br>Safety Software Engineer<br><a href="mailto:sesc@intrinsic.ai">sesc@intrinsic.ai</a> <span style="color:rgb(209,209,209);">|</span> <a href="http://intrinsic.ai" rel="nofollow noreferrer noopener" target="_blank">intrinsic.ai</a><br>
+</td>
+</tr></tbody></table>
+<p>Intrinsic Innovation GmbH, ABC-Straße 19, 20354 Hamburg</p>
+<p>Geschäftsführer: Jennifer R. Wall, Brett E. Koons<br>Registergericht und -nummer: Hamburg, HRB 161662<br>Sitz der Gesellschaft: Hamburg</p>
+<p>Diese E-Mail ist vertraulich. Falls sie diese fälschlicherweise erhalten haben sollten, leiten Sie diese bitte nicht an jemand anderes weiter, löschen Sie alle Kopien und Anhänge davon und lassen Sie mich bitte wissen, dass die E-Mail an die falsche Person gesendet wurde.</p>
+<p>This email is confidential. If you received this communication by mistake, please don't forward it to anyone else, please erase all copies and attachments, and please let me know that it has gone to the wrong person.</p>
+</div></div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

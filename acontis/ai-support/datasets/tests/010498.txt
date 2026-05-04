@@ -1,0 +1,115 @@
+### HEADER
+Id=10498
+Link=http://at-zammad/#ticket/zoom/10498
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=AJINEXTEK, Motion-Controller (ID=332, Number=332)
+Number=7010498
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=30.04.2025 12:46:39 +00:00
+UpdatedAt=05.05.2025 06:07:48 +00:00
+CloseAt=05.05.2025 06:07:48 +00:00
+ArticlesCount=2
+
+### TITLE
+Regarding creating the enibuilder.xml file [ thread::VBmWKnYZNRWB2M5RFhanwi0:: ]
+
+### ARTICLE00_HEADER
+Id=60141
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.04.2025 12:46:39 +00:00
+UpdatedAt=30.04.2025 12:46:43 +00:00
+
+### ARTICLE00_SUBJECT
+Regarding creating the enibuilder.xml file [ thread::VBmWKnYZNRWB2M5RFhanwi0:: ]
+
+### ARTICLE00_BODY
+<p>Hi.</p><p><br></p><p>The customer is Ajin. they are using EC-Engineer GUI SDK.</p><p><br></p><p>They said, when running the option command(<span style=" color: rgb(32, 32, 32);"> </span><span style=" color: rgb(32, 32, 32);">/ENIBUILDER)</span> in the evaulation version, the export enibuilder configuration menu appears,</p><p><br></p><p>but in the full(official) version, the menu does not appear.</p><p><br></p><p>Please advise.</p><p><br></p><p><img src="/api/v1/ticket_attachment/10498/60141/250350?view=inline" style="max-width:100%;width: 1.3958in;max-height: 0.6458in;width:134px;max-height:62px;" alt=""></p><br><br><p>감사합니다.</p><p><br></p><p>Thank you</p><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p><img src="/api/v1/ticket_attachment/10498/60141/250351?view=inline" title="" alt="" style="max-width:100%;"></p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sund</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">u</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">khan@prestosolution.co.kr</a></span></u></i></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table><p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+
+### ARTICLE01_HEADER
+Id=60145
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.04.2025 13:36:49 +00:00
+UpdatedAt=30.04.2025 13:36:50 +00:00
+
+### ARTICLE01_SUBJECT
+Regarding creating the enibuilder.xml file [ thread::VBmWKnYZNRWB2M5RFhanwi0:: ]
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>you are talking about the SDK View Layer 2? </div><div><br></div><div>The demo has no cmdline parsing support. You can implement it by yourself or simply activate the setting directly in code.</div><div><br></div><div>E.g. you can set this to true, so the menu will appear always:</div><div>MainDialogViewModel.<span>EnableEniBuilderSupport = true</span>
+</div><div><span><br></span></div><div><span>... or implement some kind of cmdline parsing and active it only if the cmdline option is set:</span></div><div><span><br></span></div><div>
+<img style="max-width:100%;width: 684px;max-width: 100%;" src="/api/v1/ticket_attachment/10498/60145/250361?view=inline"><span></span>
+</div><div><br></div><div>Best Regads,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, April 30, 2025 at 2:46:39 PM, DukHan Sun wrote:<br><br><p>Hi.</p>
+<p><br></p>
+<p>The customer is Ajin. they are using EC-Engineer GUI SDK.</p>
+<p><br></p>
+<p>They said, when running the option command(<span style=" color: rgb(32, 32, 32);"> </span><span style=" color: rgb(32, 32, 32);">/ENIBUILDER)</span> in the evaulation version, the export enibuilder configuration menu appears,</p>
+<p><br></p>
+<p>but in the full(official) version, the menu does not appear.</p>
+<p><br></p>
+<p>Please advise.</p>
+<p><br></p>
+<p><img src="/api/v1/ticket_attachment/10498/60145/250362?view=inline" style="max-width:100%;max-width:100%;width: 1.3958in;max-height: 0.6458in;width:134px;max-height:62px;" alt=""></p>
+<br><br><p>감사합니다.</p>
+<p><br></p>
+<p>Thank you</p>
+<p><br></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p><img src="/api/v1/ticket_attachment/10498/60145/250363?view=inline" title="" alt="" style="max-width:100%;max-width:100%;"></p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sund</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">u</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">khan@prestosolution.co.kr</a></span></u></i></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

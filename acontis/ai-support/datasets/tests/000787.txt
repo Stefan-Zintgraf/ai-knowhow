@@ -1,0 +1,142 @@
+### HEADER
+Id=787
+Link=http://at-zammad/#ticket/zoom/787
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Dualis (ID=545, Number=0, Country=DE)
+Commission=Exail Robotics, OPSYS (ID=219, Number=219)
+Number=700787
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=dominique.chapuis@dualis.com (ID=169, FirstName=Dominique, LastName=Chapuis)
+CreatedBy=dominique.chapuis@dualis.com (ID=169, FirstName=Dominique, LastName=Chapuis)
+Type=
+TimeUnit=
+CreatedAt=10.06.2021 08:49:31 +00:00
+UpdatedAt=28.04.2022 05:49:12 +00:00
+CloseAt=18.06.2021 06:02:39 +00:00
+ArticlesCount=2
+
+### TITLE
+Slave relative offset in EC-Engineer
+
+### ARTICLE00_HEADER
+Id=4331
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.06.2021 08:49:31 +00:00
+UpdatedAt=10.06.2021 08:49:35 +00:00
+
+### ARTICLE00_SUBJECT
+Slave relative offset in EC-Engineer
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Support team,</p>
+<p> </p>
+<p>I have a question about offsets in EC-Engineer.</p>
+<p>On the runtime, I work with slave relative offsets for process data : the goal is to be able to add data to a slave without changing mapping for all slaves</p>
+<ul type="disc">
+<li>call emGetCfgSlaveInfo, and use dwPdOffsIn, dwPdOffsOut as slave base offset<p></p>
+</li>
+<li>then read/write proces data at relative offset.<p></p>
+</li>
+</ul> <p> </p>
+<p>I try to find a way to display variable offsets as slave relative, not absolute in EC-Engineer, but did not found a solution.</p>
+<p> </p>
+<p>Ex : with such configuration, the mapping table shows absolute offsets</p>
+<p><img style="max-width:100%;width:.3645in;max-height:.3229in;width:35px;max-height:31px;" src="/api/v1/ticket_attachment/787/4331/15447?view=inline"><img style="max-width:100%;width:2.6666in;max-height:2.5104in;width:256px;max-height:241px;" src="/api/v1/ticket_attachment/787/4331/15446?view=inline"><img style="max-width:100%;width:7.302in;max-height:7.375in;width:701px;max-height:708px;" src="/api/v1/ticket_attachment/787/4331/15448?view=inline"></p>
+<p> </p>
+<p>I would like displayed offset to restart at 0.0 for Slave_1005 [EL1819] channel 1 input for example</p>
+<p> </p>
+<p>Best regards</p>
+<p> </p>
+<p>Dominique CHAPUIS</p>
+<p>Dualis Technologies</p>
+<p>dominique.chapuis@dualis.com</p>
+<p>14 rue Jean Neyret</p>
+<p>42000 SAINT ETIENNE</p>
+<p>Tel: 04 77 30 09 10</p>
+<p>Fax: 04 77 30 85 16</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=4343
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.06.2021 10:22:09 +00:00
+UpdatedAt=10.06.2021 10:22:11 +00:00
+
+### ARTICLE01_SUBJECT
+Slave relative offset in EC-Engineer
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>no you cannot show these offsets. We always show the absolut values from the ENI. For easy slaves you can just calculate it by subtract the offset from the first variable with the actual variable of the slave.</div><div><br></div><div>You can also use Pinned Groups to pin a slave to a specific offset. So the slave will always start at this specific offset.</div><div><br></div><div>You can also use the process variable by name API from the EC-Master. This is the better way to get your process variable. Because what you want to do will not work for slaves with more SyncUnits. </div><div><br></div><div>Best regards,</div><div>Kai   <br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, June 10, 2021, 10:49:31 AM, Dominique Chapuis wrote:<br><br><div>
+<p>Hi Support team,</p>
+<p> </p>
+<p>I have a question about offsets in EC-Engineer.</p>
+<p>On the runtime, I work with slave relative offsets for process data : the goal is to be able to add data to a slave without changing mapping for all slaves</p>
+<ul type="disc">
+<li>call emGetCfgSlaveInfo, and use dwPdOffsIn, dwPdOffsOut as slave base offset<p></p>
+</li>
+<li>then read/write proces data at relative offset.<p></p>
+</li>
+</ul> <p> </p>
+<p>I try to find a way to display variable offsets as slave relative, not absolute in EC-Engineer, but did not found a solution.</p>
+<p> </p>
+<p>Ex : with such configuration, the mapping table shows absolute offsets</p>
+<p><img style="max-width:100%;max-width:100%;width:.3645in;max-height:.3229in;width:35px;max-height:31px;" src="/api/v1/ticket_attachment/787/4343/15472?view=inline"><img style="max-width:100%;max-width:100%;width:2.6666in;max-height:2.5104in;width:256px;max-height:241px;" src="/api/v1/ticket_attachment/787/4343/15473?view=inline"><img style="max-width:100%;max-width:100%;width:7.302in;max-height:7.375in;width:701px;max-height:708px;" src="/api/v1/ticket_attachment/787/4343/15474?view=inline"></p>
+<p> </p>
+<p>I would like displayed offset to restart at 0.0 for Slave_1005 [EL1819] channel 1 input for example</p>
+<p> </p>
+<p>Best regards</p>
+<p> </p>
+<p>Dominique CHAPUIS</p>
+<p>Dualis Technologies</p>
+<p>dominique.chapuis@dualis.com</p>
+<p>14 rue Jean Neyret</p>
+<p>42000 SAINT ETIENNE</p>
+<p>Tel: 04 77 30 09 10</p>
+<p>Fax: 04 77 30 85 16</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

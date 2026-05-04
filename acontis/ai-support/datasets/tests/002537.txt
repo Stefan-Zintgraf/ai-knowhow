@@ -1,0 +1,167 @@
+### HEADER
+Id=2537
+Link=http://at-zammad/#ticket/zoom/2537
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ITK Engineering GmbH (ID=120, Number=54016, Country=DE)
+Commission=ITK, Asimov Express (ID=134, Number=134)
+Number=702537
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=michael.wenz@itk-engineering.de (ID=107, FirstName=Michael, LastName=Wenz)
+CreatedBy=michael.wenz@itk-engineering.de (ID=107, FirstName=Michael, LastName=Wenz)
+Type=
+TimeUnit=
+CreatedAt=02.03.2022 14:09:26 +00:00
+UpdatedAt=11.03.2022 07:09:33 +00:00
+CloseAt=11.03.2022 07:09:33 +00:00
+ArticlesCount=2
+
+### TITLE
+EcMasterDemo Compiler Warnings
+
+### ARTICLE00_HEADER
+Id=13505
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.03.2022 14:09:26 +00:00
+UpdatedAt=02.03.2022 14:09:28 +00:00
+
+### ARTICLE00_SUBJECT
+EcMasterDemo Compiler Warnings
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Herr Oelhaf, hallo Herr Eyssautier,</p>
+<p> </p>
+<p>bisher haben wir verwendet</p>
+<p><img style="max-width:100%;width:4.4666in;max-height:.5333in;width:429px;max-height:51px;" src="/api/v1/ticket_attachment/2537/13505/53875?view=inline"></p>
+<p> </p>
+<p>Jetzt verwenden wir</p>
+<p><img style="max-width:100%;width:5.9083in;max-height:.7083in;width:567px;max-height:68px;" src="/api/v1/ticket_attachment/2537/13505/53876?view=inline"></p>
+<p> </p>
+<p>Beim Compilieren von EcMasterDemo gibt es nun sehr viele Compilerwarnings (siehe Anhang), welche bei uns bisher nicht aufgetreten sind.</p>
+<p>Z.B.</p>
+<p>../SDK/INC/EcInterfaceCommon.h:1641:11: warning: alignment 4 of ‘_EC_T_NOTIFICATION_DESC::_EC_T_NOTIFICATION_PARM’ is less than 8 [-Wpacked-not-aligned]</p>
+<p>../SDK/INC/EcInterfaceCommon.h:1641:11: warning: alignment 4 of ‘_EC_T_NOTIFICATION_DESC::_EC_T_NOTIFICATION_PARM’ is less than 8 [-Wpacked-not-aligned]</p>
+<p>../SDK/INC/EcInterfaceCommon.h:1641:11: warning: alignment 4 of ‘_EC_T_NOTIFICATION_DESC::_EC_T_NOTIFICATION_PARM’ is less than 8 [-Wpacked-not-aligned]</p>
+<p>In file included from ../SDK/INC/AtEthercat.h:16,</p>
+<p>from ./EcMasterDemo/EcDemoApp.h:17,</p>
+<p>from Common/EcDemoParms.cpp:9:</p>
+<p>../SDK/INC/EcInterfaceCommon.h:2580:21: warning: ‘_EC_T_DCM_CONFIG::u’ offset 4 in ‘_EC_T_DCM_CONFIG’ isn’t aligned to 8 [-Wpacked-not-aligned]</p>
+<p>} EC_PACKED_API u;</p>
+<p> </p>
+<p>Können Sie bitte danach sehen?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Michael Wenz</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>--</p>
+<p>Dr.-Ing. Michael Wenz</p>
+<p>Software Engineering</p>
+<p> </p>
+<p>ITK Engineering GmbH</p>
+<p>Im Speyerer Tal 6</p>
+<p>D-76761 Rülzheim</p>
+<p> </p>
+<p>Tel.: +49 7272 7703-456</p>
+<p>Fax: +49 7272 7703-100</p>
+<p>Mobil: +49 174 9480570</p>
+<p> </p>
+<p>mailto: michael.wenz@itk-engineering.de</p>
+<p> </p>
+<p>_____________________________________________________________</p>
+<p>ITK Engineering GmbH Im Speyerer Tal 6 76761 Rülzheim</p>
+<p>Tel.: +49 7272 7703-0 Fax: +49 7272 7703-100</p>
+<p>mailto:info@itk-engineering.de <a href="http://www.itk-engineering.de" rel="nofollow noreferrer noopener" target="_blank">http://www.itk-engineering.de</a></p>
+<p> </p>
+<p>Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board:</p>
+<p>Dr. Rudolf Maier</p>
+<p>Geschäftsführung/Executive Board:</p>
+<p>Dr. Frank Schmidt (Vorsitzender/Chairman), Bernd Gohlicke</p>
+<p>Sitz der Gesellschaft/Registered Office: 76761 Rülzheim</p>
+<p>Registergericht/Registered Court: Amtsgericht Landau, HRB 32046</p>
+<p>USt.-ID-Nr./VAT-ID-No. DE813165046</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=13550
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.03.2022 07:27:51 +00:00
+UpdatedAt=03.03.2022 07:27:53 +00:00
+
+### ARTICLE01_SUBJECT
+EcMasterDemo Compiler Warnings
+
+### ARTICLE01_BODY
+Hallo Herr Wenz,<div>die Probleme sind uns bereits bekannt. Leider können wir diese erst im nächsten Major-Release 3.2 beheben, da wir sonst mit der Kompatibilität innerhalb der Version ein Bruch haben.</div><div>Sie können die Warnungen mit dem Kompilerschalter "<span>-Wno-packed-not-aligned</span><span>" abschalten.</span>
+</div><div><span><br></span></div><div><span></span></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>Mit freundlichen Grüßen,</span><br>
+</div>
+<div>Holger Oelhaf</div>
+</div>
+<div><br></div>
+<div><blockquote type="cite">Am Mittwoch, 2. März 2022, 15:09:26, schrieb Michael Wenz:<br><br><div>
+<p>Hallo Herr Oelhaf, hallo Herr Eyssautier,</p>
+<p> </p>
+<p>bisher haben wir verwendet</p>
+<p><img style="max-width:100%;max-width:100%;width:4.4666in;max-height:.5333in;width:429px;max-height:51px;" src="/api/v1/ticket_attachment/2537/13550/53971?view=inline"></p>
+<p> </p>
+<p>Jetzt verwenden wir</p>
+<p><img style="max-width:100%;max-width:100%;width:5.9083in;max-height:.7083in;width:567px;max-height:68px;" src="/api/v1/ticket_attachment/2537/13550/53972?view=inline"></p>
+<p> </p>
+<p>Beim Compilieren von EcMasterDemo gibt es nun sehr viele Compilerwarnings (siehe Anhang), welche bei uns bisher nicht aufgetreten sind.</p>
+<p>Z.B.</p>
+<p>../SDK/INC/EcInterfaceCommon.h:1641:11: warning: alignment 4 of ‘_EC_T_NOTIFICATION_DESC::_EC_T_NOTIFICATION_PARM’ is less than 8 [-Wpacked-not-aligned]</p>
+<p>../SDK/INC/EcInterfaceCommon.h:1641:11: warning: alignment 4 of ‘_EC_T_NOTIFICATION_DESC::_EC_T_NOTIFICATION_PARM’ is less than 8 [-Wpacked-not-aligned]</p>
+<p>../SDK/INC/EcInterfaceCommon.h:1641:11: warning: alignment 4 of ‘_EC_T_NOTIFICATION_DESC::_EC_T_NOTIFICATION_PARM’ is less than 8 [-Wpacked-not-aligned]</p>
+<p>In file included from ../SDK/INC/AtEthercat.h:16,</p>
+<p>from ./EcMasterDemo/EcDemoApp.h:17,</p>
+<p>from Common/EcDemoParms.cpp:9:</p>
+<p>../SDK/INC/EcInterfaceCommon.h:2580:21: warning: ‘_EC_T_DCM_CONFIG::u’ offset 4 in ‘_EC_T_DCM_CONFIG’ isn’t aligned to 8 [-Wpacked-not-aligned]</p>
+<p>} EC_PACKED_API u;</p>
+<p> </p>
+<p>Können Sie bitte danach sehen?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Michael Wenz</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>--</p>
+<p>Dr.-Ing. Michael Wenz</p>
+<p>Software Engineering</p>
+<p> </p>
+<p>ITK Engineering GmbH</p>
+<p>Im Speyerer Tal 6</p>
+<p>D-76761 Rülzheim</p>
+<p> </p>
+<p>Tel.: +49 7272 7703-456</p>
+<p>Fax: +49 7272 7703-100</p>
+<p>Mobil: +49 174 9480570</p>
+<p> </p>
+<p>mailto: michael.wenz@itk-engineering.de</p>
+<p> </p>
+<p>_____________________________________________________________</p>
+<p>ITK Engineering GmbH Im Speyerer Tal 6 76761 Rülzheim</p>
+<p>Tel.: +49 7272 7703-0 Fax: +49 7272 7703-100</p>
+<p>mailto:info@itk-engineering.de <a href="http://www.itk-engineering.de" rel="nofollow noreferrer noopener" target="_blank">http://www.itk-engineering.de</a></p>
+<p> </p>
+<p>Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board:</p>
+<p>Dr. Rudolf Maier</p>
+<p>Geschäftsführung/Executive Board:</p>
+<p>Dr. Frank Schmidt (Vorsitzender/Chairman), Bernd Gohlicke</p>
+<p>Sitz der Gesellschaft/Registered Office: 76761 Rülzheim</p>
+<p>Registergericht/Registered Court: Amtsgericht Landau, HRB 32046</p>
+<p>USt.-ID-Nr./VAT-ID-No. DE813165046</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

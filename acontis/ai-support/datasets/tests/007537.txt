@@ -1,0 +1,246 @@
+### HEADER
+Id=7537
+Link=http://at-zammad/#ticket/zoom/7537
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=FANUC, EtherCAT model CNC (ID=487, Number=487)
+Number=707537
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=29.02.2024 09:14:46 +00:00
+UpdatedAt=12.03.2024 09:47:46 +00:00
+CloseAt=12.03.2024 09:47:46 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Engineer(FANUC)
+
+### ARTICLE00_HEADER
+Id=41560
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=29.02.2024 09:14:46 +00:00
+UpdatedAt=29.02.2024 09:14:50 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Engineer(FANUC)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Engineer(FANUC)
+
+Please answer the following questions from them.
+
+I understood that these slaves can be used as Reference Clock in EC-Master.
+However, I don't know how to configure this in EC-Engineer.
+I configured it in EC-Engineer according to the attached pdf, but I think it is probably not configured as a Reference Clock.
+The EL1100 manual includes procedure for explicitly setting the DC to "Enable" in addition to setting the "Poetical　Reference clock".
+In EC-Engineer, “Distributed Clocks” tab does not appear on the EL1100, and I was unable to find any other settings to explicitly "enable" DC.
+Please let me know if there is anything missing in the settings on EC-Engineer.
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=41568
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.02.2024 13:19:53 +00:00
+UpdatedAt=29.02.2024 13:19:55 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Engineer(FANUC)
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>it is supported since EC-Engineer 3.7.4. I guessed you are using 3.7.11 because you already got this delivery.</div><div><br></div><div>Best regards,</div><div>Kai Feifel<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, February 29, 2024 at 10:14:46 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Engineer(FANUC)</div>
+<div><br></div>
+<div>Please answer the following questions from them.</div>
+<div><br></div>
+<div>I understood that these slaves can be used as Reference Clock in EC-Master.</div>
+<div>However, I don't know how to configure this in EC-Engineer.</div>
+<div>I configured it in EC-Engineer according to the attached pdf, but I think it is probably not configured as a Reference Clock.</div>
+<div>The EL1100 manual includes procedure for explicitly setting the DC to "Enable" in addition to setting the "Poetical　Reference clock".</div>
+<div>In EC-Engineer, “Distributed Clocks” tab does not appear on the EL1100, and I was unable to find any other settings to explicitly "enable" DC.</div>
+<div>Please let me know if there is anything missing in the settings on EC-Engineer.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=41588
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=29.02.2024 23:55:47 +00:00
+UpdatedAt=29.02.2024 23:55:47 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Engineer(FANUC) [Ticket#707537]
+
+### ARTICLE02_BODY
+Dear Kai san
+
+They say they don't know how to configure it.
+Please answer how to set it up.
+
+Best regards,
+Takuya Fujikawa
+
+
+On 2024/02/29 22:19, Kai Feifel via EC-Support wrote:
+> Hi,
+> 
+> it is supported since EC-Engineer 3.7.4. I guessed you are using 3.7.11 because you already got this delivery.
+> 
+> Best regards,
+> Kai Feifel
+> __________________________________________________________________________________________
+> Kai Feifel
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> On Thursday, February 29, 2024 at 10:14:46 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Engineer(FANUC)
+>>
+>> Please answer the following questions from them.
+>>
+>> I understood that these slaves can be used as Reference Clock in EC-Master.
+>> However, I don't know how to configure this in EC-Engineer.
+>> I configured it in EC-Engineer according to the attached pdf, but I think it is probably not configured as a Reference Clock.
+>> The EL1100 manual includes procedure for explicitly setting the DC to "Enable" in addition to setting the "Poetical　Reference clock".
+>> In EC-Engineer, “Distributed Clocks” tab does not appear on the EL1100, and I was unable to find any other settings to explicitly "enable" DC.
+>> Please let me know if there is anything missing in the settings on EC-Engineer.
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+
+### ARTICLE03_HEADER
+Id=41634
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.03.2024 13:00:31 +00:00
+UpdatedAt=01.03.2024 13:00:31 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Engineer(FANUC)
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>as I described in one of my previous mails, they have to go the master DC tab. Then they have to unselect Auto ref clock. Then they can choose the ref clock in the combo box. Then it is set.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, March 1, 2024 at 12:55:47 AM, Takuya Fujikawa wrote:<br><br><div>Dear Kai san</div>
+<div><br></div>
+<div>They say they don't know how to configure it.</div>
+<div>Please answer how to set it up.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2024/02/29 22:19, Kai Feifel via EC-Support wrote:</div>
+<div>&gt; Hi,</div>
+<div>&gt;</div>
+<div>&gt; it is supported since EC-Engineer 3.7.4. I guessed you are using 3.7.11 because you already got this delivery.</div>
+<div>&gt;</div>
+<div>&gt; Best regards,</div>
+<div>&gt; Kai Feifel</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Kai Feifel</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Thursday, February 29, 2024 at 10:14:46 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Engineer(FANUC)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Please answer the following questions from them.</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; I understood that these slaves can be used as Reference Clock in EC-Master.</div>
+<div>&gt;&gt; However, I don't know how to configure this in EC-Engineer.</div>
+<div>&gt;&gt; I configured it in EC-Engineer according to the attached pdf, but I think it is probably not configured as a Reference Clock.</div>
+<div>&gt;&gt; The EL1100 manual includes procedure for explicitly setting the DC to "Enable" in addition to setting the "Poetical　Reference clock".</div>
+<div>&gt;&gt; In EC-Engineer, “Distributed Clocks” tab does not appear on the EL1100, and I was unable to find any other settings to explicitly "enable" DC.</div>
+<div>&gt;&gt; Please let me know if there is anything missing in the settings on EC-Engineer.</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

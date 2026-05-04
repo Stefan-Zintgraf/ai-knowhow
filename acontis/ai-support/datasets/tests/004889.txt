@@ -1,0 +1,100 @@
+### HEADER
+Id=4889
+Link=http://at-zammad/#ticket/zoom/4889
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=JENOPTIK Industrial Metrology Germany GmbH (ID=123, Number=54506, Country=DE)
+Commission=Jenoptik, Messtechnik (ID=137, Number=137)
+Number=704889
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=alexander.mueller1@jenoptik.com (ID=1579, FirstName=Alexander, LastName=MÃ¼ller)
+CreatedBy=alexander.mueller1@jenoptik.com (ID=1579, FirstName=Alexander, LastName=MÃ¼ller)
+Type=
+TimeUnit=
+CreatedAt=08.02.2023 08:13:32 +00:00
+UpdatedAt=24.02.2023 07:05:39 +00:00
+CloseAt=24.02.2023 07:05:39 +00:00
+ArticlesCount=2
+
+### TITLE
+Superset Eni mit verschiedenen Productcodes
+
+### ARTICLE00_HEADER
+Id=25790
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.02.2023 08:13:32 +00:00
+UpdatedAt=08.02.2023 08:13:32 +00:00
+
+### ARTICLE00_SUBJECT
+Superset Eni mit verschiedenen Productcodes
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo,</p>
+<p> </p>
+<p>gibt es eine bequeme Möglichkeit, in der Eni-Datei verschiedene verwandte Slaves mit unterschiedlichen Productcodes zu unterstützen? Im speziellen Fall geht es um einen IPos-Achscontroller, den es in verschiedenen Ausführungen gibt (z.B. mit STO und ohne STO, zum Teil auch in verschiedenen Ständen). Aktuell habe ich 4 verschiedene Versionen: 27014221, 27214221, 27314221, 27314121. Aus Sicht des EtherCAT-Masters sollen diese alle gleich behandelt werden – also insbesondere gleiche PDOs verwenden.</p>
+<p> </p>
+<p>Da aus Sicht des Service-Technikers kein Unterschied zu erkennen ist und auch nicht ausgeschlossen werden kann, dass die verschiedenen Varianten vermischt werden (z.B. im Falle eines Umbaus aufgrund eines Defektes), würde ich gerne eine gemeinsame ENI-Datei für alle Varianten erstellen. Soweit ich es verstehe, muss ich für jede Variante die maximale Anzahl an Slaves vorsehen. Wenn ich also 5 Achsen pro Typ erlaube, so enthält die fertige ENI-Datei 20 IPos-Kompenenten. Gibt es hier eine Möglichkeit, dies zu reduzieren?</p>
+<p> </p>
+<p>Des weiteren müssen die Slave-Nummern entsprechend der HotConnect-Group für jeden Typ einzeln durchnummeriert werden – hier ist es wahrscheinlich nicht möglich, alle derselben HotConnect-Group zuzuordnen?</p>
+<p> </p>
+<p>Wenn ich jetzt eine neue Komponente von einen neuen Typ hinzufüge, dann sind die PDOs immer auf Standardeinstellungen. Gibt es eine Möglichkeit, alle PDOs von einer Komponente auf eine andere zu übertragen? Die manuelle Editierung ist sehr aufwendig und fehleranfällig – insbesondere, wenn man es für 20 Komponenten machen muss…</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Alexander Müller</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=25805
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.02.2023 10:20:55 +00:00
+UpdatedAt=08.02.2023 10:20:56 +00:00
+
+### ARTICLE01_SUBJECT
+Superset Eni mit verschiedenen Productcodes
+
+### ARTICLE01_BODY
+Hallo Herr Müller,<div><br></div><div>für so einen Fall, würde ich versuchen die ENI Datei zu patchen. Angenommen alle Slaves füllen sich wirklich gleich an und unterscheiden sich EtherCAT technisch nur durch Ihre Produktnummer, würde ich einmal den Bus nach emInitMaster() scannen und alle Antriebe identifizieren. Danach würde ich die ENI laden, nach einem bekannten Produktnummer suchen und sie mit den am Bus gefundenen ersetzen.</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, February 8, 2023 at 9:13:32 AM, Alexander Müller wrote:<br><br><div>
+<p>Hallo,</p>
+<p> </p>
+<p>gibt es eine bequeme Möglichkeit, in der Eni-Datei verschiedene verwandte Slaves mit unterschiedlichen Productcodes zu unterstützen? Im speziellen Fall geht es um einen IPos-Achscontroller, den es in verschiedenen Ausführungen gibt (z.B. mit STO und ohne STO, zum Teil auch in verschiedenen Ständen). Aktuell habe ich 4 verschiedene Versionen: 27014221, 27214221, 27314221, 27314121. Aus Sicht des EtherCAT-Masters sollen diese alle gleich behandelt werden – also insbesondere gleiche PDOs verwenden.</p>
+<p> </p>
+<p>Da aus Sicht des Service-Technikers kein Unterschied zu erkennen ist und auch nicht ausgeschlossen werden kann, dass die verschiedenen Varianten vermischt werden (z.B. im Falle eines Umbaus aufgrund eines Defektes), würde ich gerne eine gemeinsame ENI-Datei für alle Varianten erstellen. Soweit ich es verstehe, muss ich für jede Variante die maximale Anzahl an Slaves vorsehen. Wenn ich also 5 Achsen pro Typ erlaube, so enthält die fertige ENI-Datei 20 IPos-Kompenenten. Gibt es hier eine Möglichkeit, dies zu reduzieren?</p>
+<p> </p>
+<p>Des weiteren müssen die Slave-Nummern entsprechend der HotConnect-Group für jeden Typ einzeln durchnummeriert werden – hier ist es wahrscheinlich nicht möglich, alle derselben HotConnect-Group zuzuordnen?</p>
+<p> </p>
+<p>Wenn ich jetzt eine neue Komponente von einen neuen Typ hinzufüge, dann sind die PDOs immer auf Standardeinstellungen. Gibt es eine Möglichkeit, alle PDOs von einer Komponente auf eine andere zu übertragen? Die manuelle Editierung ist sehr aufwendig und fehleranfällig – insbesondere, wenn man es für 20 Komponenten machen muss…</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Alexander Müller</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

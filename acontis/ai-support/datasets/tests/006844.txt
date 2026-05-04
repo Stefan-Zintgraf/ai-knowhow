@@ -1,0 +1,241 @@
+### HEADER
+Id=6844
+Link=http://at-zammad/#ticket/zoom/6844
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=706844
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=16.11.2023 17:58:16 +00:00
+UpdatedAt=20.11.2023 16:12:29 +00:00
+CloseAt=20.11.2023 16:12:29 +00:00
+ArticlesCount=5
+
+### TITLE
+OsSocketGetLastError() for INTEGRITY
+
+### ARTICLE00_HEADER
+Id=37087
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.11.2023 17:58:16 +00:00
+UpdatedAt=16.11.2023 17:58:20 +00:00
+
+### ARTICLE00_SUBJECT
+OsSocketGetLastError() for INTEGRITY
+
+### ARTICLE00_BODY
+<div>
+<p>Is there a reason why OsSocketGetLastError() is defined as ‘<b>0</b>’ in INTEGRITY\EcOsPlatform.h instead of ‘<b>errno</b>’?</p>
+<p> </p>
+<p><span style="color:gray;">#ifdef</span>
+<span style="color:#6f008a;">EC_SOCKET_IP_SUPPORTED</span></p>
+<p><span style="color:gray;">#define</span>
+<span style="color:#6f008a;">INVALID_SOCKET</span> (-1)</p>
+<p><span style="color:gray;">#define</span>
+<span style="color:#6f008a;">SOCKET_ERROR</span> (-1)</p>
+<p><span style="color:red;">-#define OsSocketGetLastError() 0</span></p>
+<p><span style="color:red;">+#define OsSocketGetLastError() errno</span></p>
+<p><span style="color:gray;">#endif</span>
+<span style="color:green;">/* EC_SOCKET_IP_SUPPORTED */</span></p>
+<p> </p>
+<p>It appears to compile just fine for me at least.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Motion<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=37194
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.11.2023 10:35:33 +00:00
+UpdatedAt=20.11.2023 10:35:37 +00:00
+
+### ARTICLE01_SUBJECT
+OsSocketGetLastError() for INTEGRITY
+
+### ARTICLE01_BODY
+Hi Quinton,<div><br></div><div>it appears that we define it with 0 since V3.1.2.11 at least. We can define it to 'errno' and run our tests with it, if you like.</div><div><br></div><div>Best regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: -</div>
+<div>acontis technologies GmbH,  -, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, November 16, 2023 at 6:58:16 PM, Quinton Tormanen wrote:<br><br><div>
+<p>Is there a reason why OsSocketGetLastError() is defined as ‘<b>0</b>’ in INTEGRITY\EcOsPlatform.h instead of ‘<b>errno</b>’?</p>
+<p> </p>
+<p><span style="color:gray;">#ifdef</span>
+<span style="color:#6f008a;">EC_SOCKET_IP_SUPPORTED</span></p>
+<p><span style="color:gray;">#define</span>
+<span style="color:#6f008a;">INVALID_SOCKET</span> (-1)</p>
+<p><span style="color:gray;">#define</span>
+<span style="color:#6f008a;">SOCKET_ERROR</span> (-1)</p>
+<p><span style="color:red;">-#define OsSocketGetLastError() 0</span></p>
+<p><span style="color:red;">+#define OsSocketGetLastError() errno</span></p>
+<p><span style="color:gray;">#endif</span>
+<span style="color:green;">/* EC_SOCKET_IP_SUPPORTED */</span></p>
+<p> </p>
+<p>It appears to compile just fine for me at least.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Motion<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=37195
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=20.11.2023 10:38:33 +00:00
+UpdatedAt=20.11.2023 10:38:33 +00:00
+
+### ARTICLE02_BODY
+<div><a href="http://at-dev-git/ec-embedded/ec-embedded/-/issues/5188" title="http://at-dev-git/ec-embedded/ec-embedded/-/issues/5188" rel="nofollow noreferrer noopener" target="_blank">http://at-dev-git/ec-embedded/ec-embedded/-/issues/5188</a></div>
+
+### ARTICLE03_HEADER
+Id=37249
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.11.2023 16:02:08 +00:00
+UpdatedAt=20.11.2023 16:02:08 +00:00
+
+### ARTICLE03_SUBJECT
+RE: OsSocketGetLastError() for INTEGRITY [Ticket#706844]
+
+### ARTICLE03_BODY
+<div>
+<p>It does seem more correct to use ‘errno’, so that is what I prefer. I do not know if you tests cause situations where you actually get socket errors or not.</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p>--Quinton</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Timo Nußbaumer via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Monday, November 20, 2023 2:36 AM<br>
+<b>To:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: OsSocketGetLastError() for INTEGRITY [Ticket#706844]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Quinton,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>it appears that we define it with 0 since V3.1.2.11 at least. We can define it to 'errno' and run our tests with it, if you like.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best regards,</p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Timo Nußbaumer</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: -</p>
+</div>
+<div>
+<p>acontis technologies GmbH, -, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Thursday, November 16, 2023 at 6:58:16 PM, Quinton Tormanen wrote:</p>
+<div>
+<p>Is there a reason why OsSocketGetLastError() is defined as ‘<b>0</b>’ in INTEGRITY\EcOsPlatform.h instead of ‘<b>errno</b>’?</p>
+<p> </p>
+<p><span style="color:gray;">#ifdef</span> <span style="color:#6f008a;"> EC_SOCKET_IP_SUPPORTED</span></p>
+<p><span style="color:gray;">#define</span> <span style="color:#6f008a;"> INVALID_SOCKET</span> (-1)</p>
+<p><span style="color:gray;">#define</span> <span style="color:#6f008a;"> SOCKET_ERROR</span> (-1)</p>
+<p><span style="color:red;">-#define OsSocketGetLastError() 0</span></p>
+<p><span style="color:red;">+#define OsSocketGetLastError() errno</span></p>
+<p><span style="color:gray;">#endif</span> <span style="color:green;"> /* EC_SOCKET_IP_SUPPORTED */</span></p>
+<p> </p>
+<p>It appears to compile just fine for me at least.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><br>
+<i>Principal Software Engineer</i><br> Delta Motion<br>
+<br>
+<span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" title="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span><a href="http://tel:+1-360-702-0150" title="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+
+### ARTICLE04_HEADER
+Id=37253
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=20.11.2023 16:12:16 +00:00
+UpdatedAt=20.11.2023 16:12:16 +00:00
+
+### ARTICLE04_BODY
+I had a successful build and test. But the test, as you already guessed, does not really test this call. It will be part of V3.2.1.03.

@@ -1,0 +1,99 @@
+### HEADER
+Id=3589
+Link=http://at-zammad/#ticket/zoom/3589
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Arburg (ID=586, Number=0, Country=DE)
+Commission=Arburg, Unknown (ID=665, Number=665)
+Number=703589
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=leon_jerke@arburg.com (ID=1211, FirstName=Leon, LastName=Jerke)
+CreatedBy=leon_jerke@arburg.com (ID=1211, FirstName=Leon, LastName=Jerke)
+Type=
+TimeUnit=
+CreatedAt=29.07.2022 09:57:58 +00:00
+UpdatedAt=19.08.2022 06:12:57 +00:00
+CloseAt=19.08.2022 06:12:57 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-Master EtherCAT Master Stack Fragen
+
+### ARTICLE00_HEADER
+Id=19022
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.07.2022 09:57:58 +00:00
+UpdatedAt=29.07.2022 09:57:58 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Master EtherCAT Master Stack Fragen
+
+### ARTICLE00_BODY
+Guten Tag, <br>
+<br>vielen Dank für das schnelle Beantworten meiner Mails, ich hätte nun jedoch noch ein paar weitere Fragen: <br>
+<br><span>Wir verwenden in unseren Maschinen u.a. AMK KW-R07 Reglerkarten, die auch EtherCAT fähig sind. Jedoch besitzen diese keine ESI-Dateien.<br> Im EC-Engineer wird die Reglerkarte zwar erkannt, jedoch konnte ich keine Möglichkeit finden eine ENI-Datei mit solch einem Slave-Gerät zu erstellen, da immer zuerst eine ESI-Datei für jeden Slave verlangt wird.<br> Gibt es dafür eine Möglichkeit oder können nur Slave-Geräte die vom Hersteller eine ESI-Datei mitbekommen, verwendet werden?<br>
+</span>
+<br>Desweiteren würde ich gerne mehr über die Kosten/Lizenzen der einzelnen Produkte (vorallem für: EC-Master, EC-Engineer und EC-Simulator) erfahren. <br>
+<br><span>Vielen Dank schon mal im voraus!<br>
+<br> Mit freundlichen Grüßen<br> Leon Jerke</span>
+<br><br>******************** <br>
+<br>ARBURG GmbH + Co KG <br>Leon Jerke <br>Dualer Student Informatik <br>
+<br>- Entwicklung Software - / - Research and Development - <br>
+<br>leon_jerke@arburg.com <br><div>
+<p><a href="http://de.sitestat.com/arburg/com/s?ARBURG_Mailfooter_wirsindda_ab0117&amp;ns_type=clickin" rel="nofollow noreferrer noopener" title="http://de.sitestat.com/arburg/com/s?ARBURG_Mailfooter_wirsindda_ab0117&amp;ns_type=clickin" target="_blank"></a> <br><br>Unseren ARBURG E-Mail-Disclaimer finden Sie <a href="http://www.arburg.com/de/pages/disclaimer" rel="nofollow noreferrer noopener" title="http://www.arburg.com/de/pages/disclaimer" target="_blank">hier</a> / our ARBURG e-mail disclaimer you may find <a href="http://www.arburg.com/en/pages/disclaimer" rel="nofollow noreferrer noopener" title="http://www.arburg.com/en/pages/disclaimer" target="_blank">here</a></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=19027
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.07.2022 11:43:55 +00:00
+UpdatedAt=29.07.2022 11:43:59 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Master EtherCAT Master Stack Fragen
+
+### ARTICLE01_BODY
+Hallo Herr Jerke,<div><br></div><div>Mit dem EC-Engineer können Sie keine ENI konfigurieren, wenn die ESI von bestimmten Slaves fehlen.</div><div>Für die <span>Kosten/Lizenzen der einzelnen Produkte kontaktieren Sie bitte die Sales-Abteilung unter </span><a href="mailto:sales@acontis.com" rel="noopener">sales@acontis.com</a> .</div><div><br></div><div>Mit feundlichen grüßen</div><div>Haithem Jebali</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, July 29, 2022 at 11:57:58 AM, Leon_Jerke@arburg.com wrote:<br><br>Guten Tag, <br>
+<br>vielen Dank für das schnelle Beantworten meiner Mails, ich hätte nun jedoch noch ein paar weitere Fragen: <br>
+<br><span>Wir verwenden in unseren Maschinen u.a. AMK KW-R07 Reglerkarten, die auch EtherCAT fähig sind. Jedoch besitzen diese keine ESI-Dateien.<br> Im EC-Engineer wird die Reglerkarte zwar erkannt, jedoch konnte ich keine Möglichkeit finden eine ENI-Datei mit solch einem Slave-Gerät zu erstellen, da immer zuerst eine ESI-Datei für jeden Slave verlangt wird.<br> Gibt es dafür eine Möglichkeit oder können nur Slave-Geräte die vom Hersteller eine ESI-Datei mitbekommen, verwendet werden?<br>
+</span>
+<br>Desweiteren würde ich gerne mehr über die Kosten/Lizenzen der einzelnen Produkte (vorallem für: EC-Master, EC-Engineer und EC-Simulator) erfahren. <br>
+<br><span>Vielen Dank schon mal im voraus!<br>
+<br> Mit freundlichen Grüßen<br> Leon Jerke</span>
+<br><br>******************** <br>
+<br>ARBURG GmbH + Co KG <br>Leon Jerke <br>Dualer Student Informatik <br>
+<br>- Entwicklung Software - / - Research and Development - <br>
+<br>leon_jerke@arburg.com <br><div>
+<p><a href="http://de.sitestat.com/arburg/com/s?ARBURG_Mailfooter_wirsindda_ab0117&amp;ns_type=clickin" rel="nofollow noreferrer noopener" title="http://de.sitestat.com/arburg/com/s?ARBURG_Mailfooter_wirsindda_ab0117&amp;ns_type=clickin" target="_blank"></a> <br><br>Unseren ARBURG E-Mail-Disclaimer finden Sie <a href="http://www.arburg.com/de/pages/disclaimer" rel="nofollow noreferrer noopener" title="http://www.arburg.com/de/pages/disclaimer" target="_blank">hier</a> / our ARBURG e-mail disclaimer you may find <a href="http://www.arburg.com/en/pages/disclaimer" rel="nofollow noreferrer noopener" title="http://www.arburg.com/en/pages/disclaimer" target="_blank">here</a></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

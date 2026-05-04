@@ -1,0 +1,269 @@
+### HEADER
+Id=2727
+Link=http://at-zammad/#ticket/zoom/2727
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=GE Power Autom.&Cont.Salem (ID=349, Number=40199, Country=US)
+Commission=GE Power Autom.&Cont.Salem, Mark VIe (ID=415, Number=415)
+Number=702727
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=william.cygielnik@ge.com (ID=966, FirstName=Bill, LastName=Cygielnik)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=31.03.2022 16:09:38 +00:00
+UpdatedAt=29.04.2022 14:41:25 +00:00
+CloseAt=29.04.2022 14:41:25 +00:00
+ArticlesCount=4
+
+### TITLE
+Fwd: Ethercat Master Fault
+
+### ARTICLE00_HEADER
+Id=14571
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.03.2022 16:09:38 +00:00
+UpdatedAt=31.03.2022 16:09:38 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Ethercat Master Fault
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>Can you please look into these questions from our customer at GE?<br><div> <br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><span class="js-signatureMarker"></span><div>
+<b>From: </b>"Cygielnik, William A (GE Gas Power)" &lt;william.cygielnik@ge.com&gt;<br>
+</div>
+<div>
+<b>Subject: </b><b>Ethercat Master Fault</b><br>
+</div>
+<div>
+<b>Date: </b>March 31, 2022 at 11:17:15 AM EDT<br>
+</div>
+<div>
+<b>To: </b>Jon Waters &lt;j.waters@acontis.com&gt;<br>
+</div>
+<div>
+<b>Cc: </b>"Ramakrishna, Prasad (GE Gas Power)" &lt;prasad.ramakrishna@ge.com&gt;<br>
+</div>
+<br><div> <div>
+<div>Jon,</div>
+<p> </p>
+<div>I hope all is well. We are currently running Ethercat stack version 2.9.2.26 in the field and have questions on observed behavior in the field related to Slave faults. Attached are three scenarios where we do not understand if the behavior is correct. We reviewed your release notes from 2.9 to the current 3.1 version and could not say definitively if these issues are corrected in a later release.</div>
+<p> </p>
+<div>Would you mind forwarding to your engineers to help clarify the situation? Our current plan was to upgrade to 64bit next year but this issue may alter that plan.</div>
+<p> </p>
+<div>Thanks,</div>
+<p> </p>
+<div>
+<b>Bill Cygielnik</b>
+</div>
+<div>Product Line Leader</div>
+<div>Gas Power</div>
+<div>General Electric</div>
+<div> </div>
+<div>M +1 540 419 3066</div>
+<div>william.cygielnik@ge.com</div>
+<div>
+<a href="http://www.ge.com/" rel="nofollow noreferrer noopener" target="_blank">www.ge.com</a>
+</div>
+<div> </div>
+<div>22648 Lemon Tree Ln</div>
+<div>Boca Raton, FL 33428</div>
+<div> </div>
+<div>GE imagination at work</div>
+<p> </p>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=14579
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.04.2022 07:23:53 +00:00
+UpdatedAt=01.04.2022 07:23:57 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: Ethercat Master Fault
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>We need more details about how the signals "EC_MasterFault", "<span>EC_SlaveFault" and "</span><span>EC_SlavesInOP" are generated.</span><br>
+</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Thursday, March 31, 2022, 6:09:38 PM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>Can you please look into these questions from our customer at GE?<br><div> <br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><span class="js-signatureMarker"></span><div>
+<b>From: </b>"Cygielnik, William A (GE Gas Power)" &lt;william.cygielnik@ge.com&gt;<br>
+</div>
+<div>
+<b>Subject: </b><b>Ethercat Master Fault</b><br>
+</div>
+<div>
+<b>Date: </b>March 31, 2022 at 11:17:15 AM EDT<br>
+</div>
+<div>
+<b>To: </b>Jon Waters &lt;j.waters@acontis.com&gt;<br>
+</div>
+<div>
+<b>Cc: </b>"Ramakrishna, Prasad (GE Gas Power)" &lt;prasad.ramakrishna@ge.com&gt;<br>
+</div>
+<br><div> <div>
+<div>Jon,</div>
+<p> </p>
+<div>I hope all is well. We are currently running Ethercat stack version 2.9.2.26 in the field and have questions on observed behavior in the field related to Slave faults. Attached are three scenarios where we do not understand if the behavior is correct. We reviewed your release notes from 2.9 to the current 3.1 version and could not say definitively if these issues are corrected in a later release.</div>
+<p> </p>
+<div>Would you mind forwarding to your engineers to help clarify the situation? Our current plan was to upgrade to 64bit next year but this issue may alter that plan.</div>
+<p> </p>
+<div>Thanks,</div>
+<p> </p>
+<div>
+<b>Bill Cygielnik</b>
+</div>
+<div>Product Line Leader</div>
+<div>Gas Power</div>
+<div>General Electric</div>
+<div> </div>
+<div>M +1 540 419 3066</div>
+<div>william.cygielnik@ge.com</div>
+<div>
+<a href="http://www.ge.com/" rel="nofollow noreferrer noopener" target="_blank">www.ge.com</a>
+</div>
+<div> </div>
+<div>22648 Lemon Tree Ln</div>
+<div>Boca Raton, FL 33428</div>
+<div> </div>
+<div>GE imagination at work</div>
+<p> </p>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=14605
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.04.2022 20:51:59 +00:00
+UpdatedAt=01.04.2022 20:52:10 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Ethercat Master Fault
+
+### ARTICLE02_BODY
+Hello Bill,<div> </div><div>Nice to hear from you. I’m copying our developer support team on CC here as well. Firstly we are hoping that you can provide us with some more details about how the signals "EC_MasterFault", “EC_SlaveFault", and "EC_SlavesInOP" are generated.</div><div>
+<div> <br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Mar 31, 2022, at 11:17 AM, Cygielnik, William A (GE Gas Power) &lt;william.cygielnik@ge.com&gt; wrote:</div>
+<br><div> <div>
+<div>Jon,</div>
+<p> </p>
+<div>I hope all is well. We are currently running Ethercat stack version 2.9.2.26 in the field and have questions on observed behavior in the field related to Slave faults. Attached are three scenarios where we do not understand if the behavior is correct. We reviewed your release notes from 2.9 to the current 3.1 version and could not say definitively if these issues are corrected in a later release.</div>
+<p> </p>
+<div>Would you mind forwarding to your engineers to help clarify the situation? Our current plan was to upgrade to 64bit next year but this issue may alter that plan.</div>
+<p> </p>
+<div>Thanks,</div>
+<p> </p>
+<div>
+<b>Bill Cygielnik</b>
+</div>
+<div>Product Line Leader</div>
+<div>Gas Power</div>
+<div>General Electric</div>
+<div> </div>
+<div>M +1 540 419 3066</div>
+<div>william.cygielnik@ge.com</div>
+<div>
+<a href="http://www.ge.com/" rel="nofollow noreferrer noopener" target="_blank">www.ge.com</a>
+</div>
+<div> </div>
+<div>22648 Lemon Tree Ln</div>
+<div>Boca Raton, FL 33428</div>
+<div> </div>
+<div>GE imagination at work</div>
+<p> </p>
+</div>&lt;Mark6e.UCSC.Ethercat.driver.issue.docx&gt;</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE03_HEADER
+Id=15044
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.04.2022 16:05:29 +00:00
+UpdatedAt=15.04.2022 16:05:49 +00:00
+
+### ARTICLE03_SUBJECT
+Ethercat Master Fault
+
+### ARTICLE03_BODY
+Hi Bill,<div> </div><div>Just checking if you have an update and more information for us to continue?<br><div> <br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Apr 1, 2022, at 4:51 PM, Jon Waters &lt;j.waters@acontis.com&gt; wrote:</div>
+<br><div> <div>Hello Bill,<div> </div>
+<div>Nice to hear from you. I’m copying our developer support team on CC here as well. Firstly we are hoping that you can provide us with some more details about how the signals "EC_MasterFault", “EC_SlaveFault", and "EC_SlavesInOP" are generated.</div>
+<div>
+<div> <br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><blockquote type="cite">
+<div>On Mar 31, 2022, at 11:17 AM, Cygielnik, William A (GE Gas Power) &lt;william.cygielnik@ge.com&gt; wrote:</div>
+<br><div> <div>
+<div>Jon,</div>
+<p> </p>
+<div>I hope all is well. We are currently running Ethercat stack version 2.9.2.26 in the field and have questions on observed behavior in the field related to Slave faults. Attached are three scenarios where we do not understand if the behavior is correct. We reviewed your release notes from 2.9 to the current 3.1 version and could not say definitively if these issues are corrected in a later release.</div>
+<p> </p>
+<div>Would you mind forwarding to your engineers to help clarify the situation? Our current plan was to upgrade to 64bit next year but this issue may alter that plan.</div>
+<p> </p>
+<div>Thanks,</div>
+<p> </p>
+<div>
+<b>Bill Cygielnik</b>
+</div>
+<div>Product Line Leader</div>
+<div>Gas Power</div>
+<div>General Electric</div>
+<div> </div>
+<div>M +1 540 419 3066</div>
+<div>william.cygielnik@ge.com</div>
+<div>
+<a href="http://www.ge.com/" rel="nofollow noreferrer noopener" target="_blank">www.ge.com</a>
+</div>
+<div> </div>
+<div>22648 Lemon Tree Ln</div>
+<div>Boca Raton, FL 33428</div>
+<div> </div>
+<div>GE imagination at work</div>
+<p> </p>
+</div>&lt;Mark6e.UCSC.Ethercat.driver.issue.docx&gt;</div>
+</blockquote>
+</div>
+<br>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

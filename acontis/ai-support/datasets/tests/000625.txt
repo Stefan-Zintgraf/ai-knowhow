@@ -1,0 +1,189 @@
+### HEADER
+Id=625
+Link=http://at-zammad/#ticket/zoom/625
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=none
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=700625
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=ian.j.sherman@gmail.com (ID=326, FirstName=Ian, LastName=Sherman)
+CreatedBy=ian.j.sherman@gmail.com (ID=326, FirstName=Ian, LastName=Sherman)
+Type=
+TimeUnit=
+CreatedAt=20.05.2021 20:21:11 +00:00
+UpdatedAt=28.05.2021 06:10:35 +00:00
+CloseAt=28.05.2021 06:10:35 +00:00
+ArticlesCount=2
+
+### TITLE
+bus shift to master shift DC
+
+### ARTICLE00_HEADER
+Id=3477
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.05.2021 20:21:12 +00:00
+UpdatedAt=20.05.2021 20:21:12 +00:00
+
+### ARTICLE00_SUBJECT
+bus shift to master shift DC
+
+### ARTICLE00_BODY
+<div dir="ltr">A bit more detail for our contact at developer support:<div> </div>
+<div>Specifically, one of our goals is to implement a distributed clock on a bus that includes three EL6695 blocks (for communication with Kuka robots).</div>
+<div> </div>
+<div>Reading section 6.7 of this document:</div>
+<div>
+<a href="https://download.beckhoff.com/download/Document/io/ethercat-terminals/el6695en.pdf" rel="nofollow noreferrer noopener" target="_blank">https://download.beckhoff.com/download/Document/io/ethercat-terminals/el6695en.pdf</a><br>
+</div>
+<div>It appears that this component is really very specific in terms of the DC modes it will support.</div>
+<div> </div>
+<div>In fact, attempting to run the bus in BusShift mode with these blocks present resulted in errors similar to what that document warns about at the bottom of page 158.</div>
+<div>(log is attached).</div>
+<div> </div>
+<div>In addition to any guidance you can offer on MasterShift implementation in general, if you have any guidance on how to use DC, with Acontis, with an EL6695, I would much appreciate it.</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Ian</div>
+</div><br><div>
+<div dir="ltr">On Thu, May 20, 2021 at 10:10 AM Ian Sherman &lt;ian.j.sherman@gmail.com&gt; wrote:<br>
+</div>
+<blockquote>
+<div dir="ltr">Thanks Jon.</div>
+<br><div>
+<div dir="ltr">On Thu, May 20, 2021 at 10:09 AM Jon Waters &lt;j.waters@acontis.com&gt; wrote:<br>
+</div>
+<blockquote><div>
+<div>Hi Ian,</div>
+<div> </div>
+<div>I'm looping in our developer support to better assist with this question.<br>
+</div>
+<br>/Jon<br><br><div>
+<strong> From: </strong> Ian Sherman &lt;ian.j.sherman@gmail.com&gt; <br>
+<strong> To: </strong> Jon Waters &lt;j.waters@acontis.com&gt; <br>
+<strong> Sent: </strong> 5/20/2021 4:15 AM <br>
+<strong> Subject: </strong> bus shift to master shift DC <br><br><blockquote>
+<div>Hi Jon,<div> </div>
+<div>Hope all is well.</div>
+<div> </div>
+<div>I spent some time integrating DC (bus shift mode) into our codebase this evening, and I see it "working", though it appears to fall in and out of sync -- I think I'm currently limited by the jitter of my dev workstation. I'll be testing on our RT-Preempt patched machine tomorrow.</div>
+<div> </div>
+<div>Do you have any guidance you could offer around the next step of supporting master shift mode? I <a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm_intro.html#dcm-master-shift-mode" rel="nofollow noreferrer noopener" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm_intro.html#dcm-master-shift-mode" target="_blank">see in the manual</a> that these two function pointers must be implemented -- do you have any examples or documentation you could offer on that topic?</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Ian Sherman</div>
+<div> </div>
+</div>
+</blockquote>
+</div>
+</div></blockquote>
+</div>
+</blockquote>
+</div>
+
+### ARTICLE01_HEADER
+Id=3506
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.05.2021 08:29:06 +00:00
+UpdatedAt=21.05.2021 08:29:10 +00:00
+
+### ARTICLE01_SUBJECT
+bus shift to master shift DC
+
+### ARTICLE01_BODY
+<div>Hi Ian,</div><div>running MasterShift on Linux is pretty straightforward, it works out of the box.</div><div>You only have to set the DCM mode to MasterShift, look for <span>eDcmMode_MasterShift in EcDemoApp.cpp of the EcMasterDemoDc expample.</span>
+</div><div><span>The necessary Function pointers etc. are already implemented in the Linux OS layer.</span></div><div><span>You can also run EcMasterDemoDc with additional command line parameter "-dcmmode mastershift"</span></div><div><span><br></span></div><div><blockquote><div><div>Specifically, one of our goals is to implement a distributed clock on a bus that includes three EL6695 blocks (for communication with Kuka robots).</div></div></blockquote></div><div data-signature="true" data-signature-id="2">
+<div><div>Would you like your application to be synchronized with the three Kuka robots?</div></div>
+<div><br></div>
+<div></div>
+<div>
+<span>Best regards,</span>
+</div>
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Holger Oelhaf </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">Am Donnerstag, 20. Mai 2021, 22:21:12, schrieb Ian Sherman:<br><br><div dir="ltr">A bit more detail for our contact at developer support:<div> </div>
+<div>Specifically, one of our goals is to implement a distributed clock on a bus that includes three EL6695 blocks (for communication with Kuka robots).</div>
+<div> </div>
+<div>Reading section 6.7 of this document:</div>
+<div>
+<a href="https://download.beckhoff.com/download/Document/io/ethercat-terminals/el6695en.pdf" rel="nofollow noreferrer noopener" target="_blank">https://download.beckhoff.com/download/Document/io/ethercat-terminals/el6695en.pdf</a><br>
+</div>
+<div>It appears that this component is really very specific in terms of the DC modes it will support.</div>
+<div> </div>
+<div>In fact, attempting to run the bus in BusShift mode with these blocks present resulted in errors similar to what that document warns about at the bottom of page 158.</div>
+<div>(log is attached).</div>
+<div> </div>
+<div>In addition to any guidance you can offer on MasterShift implementation in general, if you have any guidance on how to use DC, with Acontis, with an EL6695, I would much appreciate it.</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Ian</div>
+</div>
+<br><div>
+<div dir="ltr">On Thu, May 20, 2021 at 10:10 AM Ian Sherman &lt;ian.j.sherman@gmail.com&gt; wrote:<br>
+</div>
+<blockquote>
+<div dir="ltr">Thanks Jon.</div>
+<br><div>
+<div dir="ltr">On Thu, May 20, 2021 at 10:09 AM Jon Waters &lt;j.waters@acontis.com&gt; wrote:<br>
+</div>
+<blockquote><div>
+<div>Hi Ian,</div>
+<div> </div>
+<div>I'm looping in our developer support to better assist with this question.<br>
+</div>
+<br>/Jon<br><br><div>
+<strong> From: </strong> Ian Sherman &lt;ian.j.sherman@gmail.com&gt; <br>
+<strong> To: </strong> Jon Waters &lt;j.waters@acontis.com&gt; <br>
+<strong> Sent: </strong> 5/20/2021 4:15 AM <br>
+<strong> Subject: </strong> bus shift to master shift DC <br><br><blockquote>
+<div>Hi Jon,<div> </div>
+<div>Hope all is well.</div>
+<div> </div>
+<div>I spent some time integrating DC (bus shift mode) into our codebase this evening, and I see it "working", though it appears to fall in and out of sync -- I think I'm currently limited by the jitter of my dev workstation. I'll be testing on our RT-Preempt patched machine tomorrow.</div>
+<div> </div>
+<div>Do you have any guidance you could offer around the next step of supporting master shift mode? I <a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm_intro.html#dcm-master-shift-mode" rel="nofollow noreferrer noopener" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm_intro.html#dcm-master-shift-mode" target="_blank">see in the manual</a> that these two function pointers must be implemented -- do you have any examples or documentation you could offer on that topic?</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Ian Sherman</div>
+<div> </div>
+</div>
+</blockquote>
+</div>
+</div></blockquote>
+</div>
+</blockquote>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

@@ -1,0 +1,88 @@
+### HEADER
+Id=6051
+Link=http://at-zammad/#ticket/zoom/6051
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ASML Netherlands BV (ID=302, Number=45002, Country=NL)
+Commission=ASML, Lithography (Bluetron) (ID=359, Number=359)
+Number=706051
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=haris.shaw@asml.com (ID=455, FirstName=Haris, LastName=Shaw)
+CreatedBy=haris.shaw@asml.com (ID=455, FirstName=Haris, LastName=Shaw)
+Type=
+TimeUnit=
+CreatedAt=26.07.2023 16:51:51 +00:00
+UpdatedAt=27.07.2023 06:21:16 +00:00
+CloseAt=27.07.2023 06:21:15 +00:00
+ArticlesCount=2
+
+### TITLE
+Reg. sending DcDemo application to supplier for debugging
+
+### ARTICLE00_HEADER
+Id=32291
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.07.2023 16:51:51 +00:00
+UpdatedAt=26.07.2023 16:51:51 +00:00
+
+### ARTICLE00_SUBJECT
+Reg. sending DcDemo application to supplier for debugging
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>We have an Acontis license and use the Ethercat software stack on our machines.</p>
+<p>We have some issues with a new hardware we received from our supplier, and to debug further we need they asked for the DcDemo application.</p>
+<p> </p>
+<p>Can we ship the binary version of the DcDemo application to our supplier, so they can reproduce the problem and see for themselves in their lab ?</p>
+<p><br> Regards,</p>
+<p>Haris</p>
+<span class="js-signatureMarker"></span>
+</div>-- The information contained in this communication and any attachments is confidential and may be privileged, and is for the sole use of the intended recipient(s). Any unauthorized review, use, disclosure or distribution is prohibited. Unless explicitly stated otherwise in the body of this communication or the attachment thereto (if any), the information is provided on an AS-IS basis without any express or implied warranties or liabilities. To the extent you are relying on this information, you are doing so at your own risk. If you are not the intended recipient, please notify the sender immediately by replying to this message and destroy all copies of this message and any attachments. Neither the sender nor the company/group of companies he or she represents shall be liable for the proper and complete transmission of the information contained in this communication, or for any delay in its receipt. -- The information contained in this communication and any attachments is confidential and may be privileged, and is for the sole use of the intended recipient(s). Any unauthorized review, use, disclosure or distribution is prohibited. Unless explicitly stated otherwise in the body of this communication or the attachment thereto (if any), the information is provided on an AS-IS basis without any express or implied warranties or liabilities. To the extent you are relying on this information, you are doing so at your own risk. If you are not the intended recipient, please notify the sender immediately by replying to this message and destroy all copies of this message and any attachments. Neither the sender nor the company/group of companies he or she represents shall be liable for the proper and complete transmission of the information contained in this communication, or for any delay in its receipt.
+
+### ARTICLE01_HEADER
+Id=32297
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.07.2023 06:21:16 +00:00
+UpdatedAt=27.07.2023 06:21:17 +00:00
+
+### ARTICLE01_SUBJECT
+Reg. sending DcDemo application to supplier for debugging
+
+### ARTICLE01_BODY
+<div>Hi Haris,</div><div><br></div><div>yes for sure.</div><div><br></div><div>Best Regards,</div><div>
+<span>__________________________________________________________________________________________</span><br>
+</div><div data-signature="true" data-signature-id="2">
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Wednesday, July 26, 2023 at 6:51:51 PM, Haris Shaw wrote:<br><br><div>
+<p>Hello,</p>
+<p> </p>
+<p>We have an Acontis license and use the Ethercat software stack on our machines.</p>
+<p>We have some issues with a new hardware we received from our supplier, and to debug further we need they asked for the DcDemo application.</p>
+<p> </p>
+<p>Can we ship the binary version of the DcDemo application to our supplier, so they can reproduce the problem and see for themselves in their lab ?</p>
+<p><br> Regards,</p>
+<p>Haris</p>
+<span class="js-signatureMarker"></span>
+</div>-- The information contained in this communication and any attachments is confidential and may be privileged, and is for the sole use of the intended recipient(s). Any unauthorized review, use, disclosure or distribution is prohibited. Unless explicitly stated otherwise in the body of this communication or the attachment thereto (if any), the information is provided on an AS-IS basis without any express or implied warranties or liabilities. To the extent you are relying on this information, you are doing so at your own risk. If you are not the intended recipient, please notify the sender immediately by replying to this message and destroy all copies of this message and any attachments. Neither the sender nor the company/group of companies he or she represents shall be liable for the proper and complete transmission of the information contained in this communication, or for any delay in its receipt. -- The information contained in this communication and any attachments is confidential and may be privileged, and is for the sole use of the intended recipient(s). Any unauthorized review, use, disclosure or distribution is prohibited. Unless explicitly stated otherwise in the body of this communication or the attachment thereto (if any), the information is provided on an AS-IS basis without any express or implied warranties or liabilities. To the extent you are relying on this information, you are doing so at your own risk. If you are not the intended recipient, please notify the sender immediately by replying to this message and destroy all copies of this message and any attachments. Neither the sender nor the company/group of companies he or she represents shall be liable for the proper and complete transmission of the information contained in this communication, or for any delay in its receipt.<br>
+</blockquote></div><div><br></div><br><br>

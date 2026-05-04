@@ -1,0 +1,96 @@
+### HEADER
+Id=9749
+Link=http://at-zammad/#ticket/zoom/9749
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Medtronic GmbH (ID=138, Number=45057, Country=DE)
+Commission=Medtronic, Surgical Controller (ID=157, Number=157)
+Number=709749
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=abhimanyu.bari@medtronic.com (ID=2821, FirstName=Abhimanyu [DEU25], LastName=Bari)
+CreatedBy=abhimanyu.bari@medtronic.com (ID=2821, FirstName=Abhimanyu [DEU25], LastName=Bari)
+Type=
+TimeUnit=
+CreatedAt=22.01.2025 17:04:38 +00:00
+UpdatedAt=30.01.2025 07:08:53 +00:00
+CloseAt=30.01.2025 07:08:53 +00:00
+ArticlesCount=2
+
+### TITLE
+Sync0 and Snych1 sequence
+
+### ARTICLE00_HEADER
+Id=55511
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.01.2025 17:04:39 +00:00
+UpdatedAt=22.01.2025 17:04:39 +00:00
+
+### ARTICLE00_SUBJECT
+Sync0 and Snych1 sequence
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>Does Synch1 always follow Sync0?</p>
+<p>eni file is attached to email. It seems that sync1 occurs after Process data available at slave instead of 140us after sync0.</p>
+<p> </p>
+<p>Could you help to understand how it is set in our eni file?</p>
+<p> </p>
+<p>Best regards and thank you for help in advance,</p>
+<p>Abhimanyu Bari</p>
+<p> </p>
+</div>[CONFIDENTIALITY AND PRIVACY NOTICE] Information transmitted by this email is proprietary to Medtronic and is intended for use only by the individual or entity to which it is addressed, and may contain information that is private, privileged, confidential or exempt from disclosure under applicable law. If you are not the intended recipient or it appears that this mail has been forwarded to you without proper authority, you are notified that any use or dissemination of this information in any manner is strictly prohibited. In such cases, please delete this mail from your records. To view this notice in other languages you can either select the following link or manually copy and paste the link into the address bar of a web browser:<a href="http://emaildisclaimer.medtronic.com" rel="nofollow noreferrer noopener" target="_blank">http://emaildisclaimer.medtronic.com</a>
+
+### ARTICLE01_HEADER
+Id=55535
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.01.2025 10:53:24 +00:00
+UpdatedAt=23.01.2025 10:53:27 +00:00
+
+### ARTICLE01_SUBJECT
+Sync0 and Snych1 sequence
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>I checked your ENI could not find any issue. It might that your slave is doing wrong. SYNC1 is always tied to SYNC0 in DC mode.</div><div><br></div><div>Further information can be found in the following documents (search for SYNC1):</div><div><div><a href="https://download.beckhoff.com/download/document/io/ethercat-development-products/ethercat_esc_datasheet_sec1_technology_2i3.pdf" title="https://download.beckhoff.com/download/document/io/ethercat-development-products/ethercat_esc_datasheet_sec1_technology_2i3.pdf" rel="nofollow noreferrer noopener" target="_blank">https://download.beckhoff.com/download/document/io/ethercat-development-products/ethercat_esc_datasheet_sec1_technology_2i3.pdf</a></div></div><div><div><a href="https://download.beckhoff.com/download/document/io/ethercat-development-products/ethercat_esc_datasheet_sec2_registers_3i0.pdf" title="https://download.beckhoff.com/download/document/io/ethercat-development-products/ethercat_esc_datasheet_sec2_registers_3i0.pdf" rel="nofollow noreferrer noopener" target="_blank">https://download.beckhoff.com/download/document/io/ethercat-development-products/ethercat_esc_datasheet_sec2_registers_3i0.pdf</a></div></div><div><div><a href="https://infosys.beckhoff.com/english.php?content=../content/1033/ethercatsystem/2469122443.html&amp;id=" title="https://infosys.beckhoff.com/english.php?content=../content/1033/ethercatsystem/2469122443.html&amp;id=" rel="nofollow noreferrer noopener" target="_blank">https://infosys.beckhoff.com/english.php?content=../content/1033/ethercatsystem/2469122443.html&amp;id=</a></div></div><div><br></div><div>Best regards,</div><div><br></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, January 22, 2025 at 6:04:39 PM, Abhimanyu [DEU25] Bari wrote:<br><br><div>
+<p>Hello,</p>
+<p> </p>
+<p>Does Synch1 always follow Sync0?</p>
+<p>eni file is attached to email. It seems that sync1 occurs after Process data available at slave instead of 140us after sync0.</p>
+<p> </p>
+<p>Could you help to understand how it is set in our eni file?</p>
+<p> </p>
+<p>Best regards and thank you for help in advance,</p>
+<p>Abhimanyu Bari</p>
+<p> </p>
+</div>[CONFIDENTIALITY AND PRIVACY NOTICE] Information transmitted by this email is proprietary to Medtronic and is intended for use only by the individual or entity to which it is addressed, and may contain information that is private, privileged, confidential or exempt from disclosure under applicable law. If you are not the intended recipient or it appears that this mail has been forwarded to you without proper authority, you are notified that any use or dissemination of this information in any manner is strictly prohibited. In such cases, please delete this mail from your records. To view this notice in other languages you can either select the following link or manually copy and paste the link into the address bar of a web browser:<a href="http://emaildisclaimer.medtronic.com" rel="nofollow noreferrer noopener" target="_blank">http://emaildisclaimer.medtronic.com</a><br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

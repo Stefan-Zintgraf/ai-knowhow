@@ -1,0 +1,187 @@
+### HEADER
+Id=9316
+Link=http://at-zammad/#ticket/zoom/9316
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Yushin, Removal robot for molding machines (ID=922, Number=922)
+Number=709316
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=14.11.2024 08:09:32 +00:00
+UpdatedAt=07.12.2024 07:02:15 +00:00
+CloseAt=07.12.2024 07:02:15 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Master(YUSHIN) [M073]
+
+### ARTICLE00_HEADER
+Id=52778
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=14.11.2024 08:09:32 +00:00
+UpdatedAt=14.11.2024 08:09:33 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(YUSHIN) [M073]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(YUSHIN) [M073]
+
+In what cases is the emBadConnectionsReset API used? For example,
+it is understood that EtherCAT communication automatically recovers after reconnection following a disconnection.
+Are there any errors that cannot be cleared without using this API?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=52803
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.11.2024 10:31:03 +00:00
+UpdatedAt=14.11.2024 10:31:04 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(YUSHIN) [M073]
+
+### ARTICLE01_BODY
+<div>Hi,</div><div><br></div><div>Q: 
+
+In what cases is the emBadConnectionsReset API used?</div><div>A: <span>It is recommended to call emBadConnectionsReset() on startup of EC-Master to ensure that all error counters of all slaves are in a defined state.</span>
+</div><div>
+<span>Q: </span><span>Are there any errors that cannot be cleared without using this API?</span>
+</div><div><span>A: This API reset only the following counters in the slave:</span></div><div>
+<div>* - Invalid Frame Counter (0x0300),</div>
+<div> * - RX Error Counter (0x0301),</div>
+<div> * - Lost Link Counter (0x0310)</div>
+</div><div>
+<br>Best Regards</div><div data-signature="true" data-signature-id="2">
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=53213
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=22.11.2024 02:24:42 +00:00
+UpdatedAt=22.11.2024 02:24:42 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master(YUSHIN) [M073] [Ticket#709316]
+
+### ARTICLE02_BODY
+Dear Haithem san
+
+If emBadConnectionsReset is not executed at startup, could it lead to any false detections or issues?
+
+Best regards,
+Takuya Fujikawa
+
+
+
+On 2024/11/14 19:31, Haithem Jebali via EC-Support wrote:
+> Hi,
+>
+> Q: In what cases is the emBadConnectionsReset API used?
+> A: It is recommended to call emBadConnectionsReset() on startup of EC-Master to ensure that all error counters of all slaves are in a defined state.
+> Q: Are there any errors that cannot be cleared without using this API?
+> A: This API reset only the following counters in the slave:
+> * - Invalid Frame Counter (0x0300),
+> * - RX Error Counter (0x0301),
+> * - Lost Link Counter (0x0310)
+>
+> Best Regards
+> Haithem Jebali
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+
+
+### ARTICLE03_HEADER
+Id=53236
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.11.2024 08:33:29 +00:00
+UpdatedAt=22.11.2024 08:34:22 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(YUSHIN) [M073]
+
+### ARTICLE03_BODY
+Hi Takuya-san,<div><br></div><div>only if you are going to call <span>BadConnectionsDetect() then you need to execute </span><span>emBadConnectionsReset at startup or this may lead to false detections.</span>
+</div><div><span><br></span></div><div><span>Best Regards</span></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, November 22, 2024 at 3:24:42 AM, Takuya Fujikawa wrote:<br><br><div>Dear Haithem san</div>
+<div><br></div>
+<div>If emBadConnectionsReset is not executed at startup, could it lead to any false detections or issues?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2024/11/14 19:31, Haithem Jebali via EC-Support wrote:</div>
+<div>&gt; Hi,</div>
+<div>&gt;</div>
+<div>&gt; Q: In what cases is the emBadConnectionsReset API used?</div>
+<div>&gt; A: It is recommended to call emBadConnectionsReset() on startup of EC-Master to ensure that all error counters of all slaves are in a defined state.</div>
+<div>&gt; Q: Are there any errors that cannot be cleared without using this API?</div>
+<div>&gt; A: This API reset only the following counters in the slave:</div>
+<div>&gt; * - Invalid Frame Counter (0x0300),</div>
+<div>&gt; * - RX Error Counter (0x0301),</div>
+<div>&gt; * - Lost Link Counter (0x0310)</div>
+<div>&gt;</div>
+<div>&gt; Best Regards</div>
+<div>&gt; Haithem Jebali</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

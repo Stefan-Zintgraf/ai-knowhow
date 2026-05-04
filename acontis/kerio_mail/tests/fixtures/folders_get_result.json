@@ -1,0 +1,18 @@
+{
+  "list": [
+    {
+      "id": "fld-inbox",
+      "parentId": "root",
+      "name": "Inbox",
+      "type": "FMail",
+      "subType": "FSubInbox"
+    },
+    {
+      "id": "fld-sent",
+      "parentId": "root",
+      "name": "Sent Items",
+      "type": "FMail",
+      "subType": "FSubSentItems"
+    }
+  ]
+}

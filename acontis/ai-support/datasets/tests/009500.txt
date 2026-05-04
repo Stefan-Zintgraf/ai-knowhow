@@ -1,0 +1,186 @@
+### HEADER
+Id=9500
+Link=http://at-zammad/#ticket/zoom/9500
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Todeschini (ID=851, Number=40737, Country=IT)
+Commission=TECNOLOGIX, Generic (ID=479, Number=479)
+Number=709500
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=andrea.spini@rebeldynamics.it (ID=3004, FirstName=Andrea, LastName=Spini)
+CreatedBy=andrea.spini@rebeldynamics.it (ID=3004, FirstName=Andrea, LastName=Spini)
+Type=
+TimeUnit=
+CreatedAt=09.12.2024 12:32:27 +00:00
+UpdatedAt=09.04.2025 05:44:04 +00:00
+CloseAt=10.12.2024 07:51:33 +00:00
+ArticlesCount=3
+
+### TITLE
+W607 BRIDGESTONE: Richiesta tool Acontis
+
+### ARTICLE00_HEADER
+Id=53895
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.12.2024 12:32:27 +00:00
+UpdatedAt=09.12.2024 12:32:27 +00:00
+
+### ARTICLE00_SUBJECT
+W607 BRIDGESTONE: Richiesta tool Acontis
+
+### ARTICLE00_BODY
+<div>Buongiorno,</div><div>Le scrivo per sottoporre alcuni quesiti relativi alla licenza flottante per EC Inspector.</div><div>La nostra specifica necessità è la seguente:</div><ul>
+<li> “Virtualizzare” la licenza su un server e successivamente “sganciarla” per l'utilizzo sul dispositivo che ne fa uso.</li>
+</ul>
+<div>Avremmo bisogno di chiarimenti su alcuni punti:</div><ol start="1">
+<li> La licenza flottante si ottiene partendo da una licenza con dongle e successivamente effettuando un upgrade?</li>
+<li> Come è possibile “virtualizzare” la licenza per soddisfare la necessità sopra descritta?</li>
+</ol>
+<div>Ci era stato indicato che questa configurazione potrebbe essere gestita tramite una VPN, ma al momento non disponiamo di ulteriori dettagli in merito.<br> Potrebbe gentilmente fornirci maggiori informazioni o specifiche tecniche su questa modalità di utilizzo?</div><div>Resto a disposizione per eventuali chiarimenti e La ringrazio anticipatamente per il Suo supporto.</div><div>Cordiali saluti,</div><div>
+<table cellspacing="0" cellpadding="0" style=" border-collapse: collapse; border-spacing: 0px;">
+<tbody>
+<tr>
+<td colspan="2" style="padding: 0cm 5.4pt; vertical-align: top;">
+<p>
+<b>Andrea Spini</b></p>
+</td>
+</tr>
+<tr>
+<td style="padding: 0cm 5.4pt; vertical-align: top;">
+<p><img style="max-width:100%;width: 98px;max-height: 258px;width:98px;max-height:258px;" src="/api/v1/ticket_attachment/9500/53895/223470?view=inline"></p>
+</td>
+<td style="padding: 0cm 5.4pt; vertical-align: top;">
+<p>
+<b>Rebel Dynamics srl</b></p>
+<p>
+<span style="color: red;"><b><a href="http://www.rebeldynamics.it/" rel="nofollow noreferrer noopener" target="_blank">www.rebeldynamics.it</a></b></span></p>
+<p>c/o <b> SIDE3 centre</b></p>
+<p>Via Carlo Porta, 38.</p>
+<p>23861 – Cesana Brianza - Lecco.</p>
+<p>Italy</p>
+<p>Ph.: +39.031.655870</p>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><i>Tutela dati personali (D.Lgs 101/2018) - Questo messaggio può contenere informazioni di carattere confidenziale o riservato. Qualora non foste i destinatari, vi preghiamo di telefonare o di inviare una e-mail al mittente e di cancellare questo messaggio e gli allegati dal vostro sistema, senza trattenerne copia.</i></p>
+<p><i>This message may contain information which is confidential or privileged. If you are not the intended recipient, please telephone or email the sender and delete this message and any attachment from your system, without retaining a copy.</i></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=53901
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.12.2024 14:06:12 +00:00
+UpdatedAt=09.12.2024 14:06:40 +00:00
+
+### ARTICLE01_SUBJECT
+W607 BRIDGESTONE: Richiesta tool Acontis
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>kannst du dir das mal anschauen? Ist glaub eher was für Sales. Oder soll ich der schreiben? Oder muss das nicht eigentlich sogar tecnologix machen? Können wir sonst auch zusammen beantworten. </div><div>Hab dir mal die Übersetzung angehängt:</div><div><br></div><div>
+<div>Guten Morgen!</div>
+<div>ich wende mich an Sie, um Ihnen einige Fragen bezüglich der unbefristeten Lizenz für EC Inspector zu stellen.</div>
+<div>Unser spezifischer Bedarf ist wie folgt:</div>
+<div>Wir möchten die Lizenz auf einem Server „virtualisieren“ und sie dann für die Verwendung auf dem Gerät, das sie nutzt, „aushängen“.</div>
+<div>Wir benötigen eine Klarstellung zu einigen Punkten:</div>
+<div>Erhält man die Floating-Lizenz, indem man mit einer Dongle-Lizenz beginnt und dann ein Upgrade durchführt?</div>
+<div>Wie kann die Lizenz „virtualisiert“ werden, um den oben erwähnten Bedarf zu decken?</div>
+<div>Es wurde uns gesagt, dass diese Konfiguration über ein VPN verwaltet werden kann, aber wir haben im Moment keine weiteren Details dazu.</div>
+<div>Könnten Sie uns bitte weitere Informationen oder technische Spezifikationen zu dieser Art der Nutzung zukommen lassen?</div>
+<div>Ich stehe Ihnen gerne für weitere Auskünfte zur Verfügung und danke Ihnen im Voraus für Ihre Unterstützung.</div>
+<div>Mit freundlichen Grüßen,</div>
+<div>Andrea Spini</div>
+<div><br></div>
+<div>Danke</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<br><div>---Begin forwarded message:---<br><br>
+</div>
+<div><blockquote type="cite">
+<div>Subject: W607 BRIDGESTONE: Richiesta tool Acontis<br>Date: 12/09/2024 13:32<br>From: Andrea Spini &lt;andrea.spini@rebeldynamics.it&gt;<br>To: "ecsupport@acontis.com" &lt;ecsupport@acontis.com&gt;<br>CC: Andrea Pirovano &lt;andrea.pirovano@todema.it&gt;, "andrea.martina.perelli@tecnologix.it" &lt;andrea.martina.perelli@tecnologix.it&gt;, Maria Bernasconi &lt;maria.bernasconi@todema.it&gt;<br><br>
+</div>
+<div>Buongiorno,</div>
+<div>Le scrivo per sottoporre alcuni quesiti relativi alla licenza flottante per EC Inspector.</div>
+<div>La nostra specifica necessità è la seguente:</div>
+<ul>
+<li> “Virtualizzare” la licenza su un server e successivamente “sganciarla” per l'utilizzo sul dispositivo che ne fa uso.</li>
+</ul>
+<div>Avremmo bisogno di chiarimenti su alcuni punti:</div>
+<ol start="1">
+<li> La licenza flottante si ottiene partendo da una licenza con dongle e successivamente effettuando un upgrade?</li>
+<li> Come è possibile “virtualizzare” la licenza per soddisfare la necessità sopra descritta?</li>
+</ol>
+<div>Ci era stato indicato che questa configurazione potrebbe essere gestita tramite una VPN, ma al momento non disponiamo di ulteriori dettagli in merito.<br> Potrebbe gentilmente fornirci maggiori informazioni o specifiche tecniche su questa modalità di utilizzo?</div>
+<div>Resto a disposizione per eventuali chiarimenti e La ringrazio anticipatamente per il Suo supporto.</div>
+<div>Cordiali saluti,</div>
+<div>
+<table cellspacing="0" cellpadding="0" style=" border-collapse: collapse; border-spacing: 0px;">
+<tbody>
+<tr>
+<td colspan="2" style="padding: 0cm 5.4pt; vertical-align: top;">
+<p>
+<b>Andrea Spini</b></p>
+</td>
+</tr>
+<tr>
+<td style="padding: 0cm 5.4pt; vertical-align: top;">
+<p><img style="max-width:100%;max-width:100%;width: 98px;max-height: 258px;width:98px;max-height:258px;" src="/api/v1/ticket_attachment/9500/53901/223491?view=inline"></p>
+</td>
+<td style="padding: 0cm 5.4pt; vertical-align: top;">
+<p>
+<b>Rebel Dynamics srl</b></p>
+<p>
+<span style="color: red;"><b><a href="http://www.rebeldynamics.it/" rel="nofollow noreferrer noopener" target="_blank">www.rebeldynamics.it</a></b></span></p>
+<p>c/o <b> SIDE3 centre</b></p>
+<p>Via Carlo Porta, 38.</p>
+<p>23861 – Cesana Brianza - Lecco.</p>
+<p>Italy</p>
+<p>Ph.: +39.031.655870</p>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><i>Tutela dati personali (D.Lgs 101/2018) - Questo messaggio può contenere informazioni di carattere confidenziale o riservato. Qualora non foste i destinatari, vi preghiamo di telefonare o di inviare una e-mail al mittente e di cancellare questo messaggio e gli allegati dal vostro sistema, senza trattenerne copia.</i></p>
+<p><i>This message may contain information which is confidential or privileged. If you are not the intended recipient, please telephone or email the sender and delete this message and any attachment from your system, without retaining a copy.</i></p>
+<p> </p>
+</div>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=53936
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=10.12.2024 07:51:34 +00:00
+UpdatedAt=10.12.2024 07:51:34 +00:00
+
+### ARTICLE02_BODY
+Von Sales erledigt

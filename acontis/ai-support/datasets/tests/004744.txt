@@ -1,0 +1,159 @@
+### HEADER
+Id=4744
+Link=http://at-zammad/#ticket/zoom/4744
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=YASKAWA Europe GmbH (ID=174, Number=60502, Country=DE)
+Commission=VIPA, PLC (ID=197, Number=197)
+Number=704744
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=bernd.schubart@yaskawa.eu (ID=1009, FirstName=Bernd, LastName=Schubart)
+CreatedBy=bernd.schubart@yaskawa.eu (ID=1009, FirstName=Bernd, LastName=Schubart)
+Type=
+TimeUnit=
+CreatedAt=19.01.2023 12:44:10 +00:00
+UpdatedAt=27.01.2023 07:18:43 +00:00
+CloseAt=27.01.2023 07:18:43 +00:00
+ArticlesCount=2
+
+### TITLE
+EoE endpoint driver Linux
+
+### ARTICLE00_HEADER
+Id=25102
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.01.2023 12:44:10 +00:00
+UpdatedAt=19.01.2023 12:44:12 +00:00
+
+### ARTICLE00_SUBJECT
+EoE endpoint driver Linux
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo,</p>
+<p> </p>
+<p>wir benötigen noch den Code für die Anbindung des TAP an den EtherCAT Stack zur Verwendung von EoE.</p>
+<p>Wenn ich es richtig weiß müsste dass das FP-EoE-Endpoint für Linux sein, was wir kürzlich für Windows bekommen haben.</p>
+<p>Können wir dies für die Stack-Version 3.1.4.05 bekommen für Linux?</p>
+<p> </p>
+<p>Danke und Grüße</p>
+<p>Bernd</p>
+<p> </p>
+<div>
+<p><b><span lang="EN-US">Bernd Schubart</span></b></p>
+</div>
+<div>
+<p><span lang="EN-US">Software Engineer</span></p>
+</div>
+<div>
+<p><span lang="EN-US">Firmware<br>
+<br>
+</span></p>
+</div>
+<p><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" title="http://www.yaskawa.eu.com/" target="_blank"><span style="color:blue;"></span></a><span lang="EN-US"><br>
+<br>
+</span></p>
+<div>
+<p><b><span lang="EN-US">YASKAWA Europe GmbH</span></b><span lang="EN-US"></span></p>
+</div>
+<div>
+<p><span lang="EN-US">Drives Motion Controls Division</span></p>
+</div>
+<div>
+<p>Hugo-Junkers-Straße 13</p>
+</div>
+<div>
+<p>90411 Nürnberg</p>
+</div>
+<div>
+<p>Germany</p>
+</div>
+<div>
+<p><span><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.yaskawa.eu.com</span></a><br>
+<br>
+</span></p>
+</div>
+<div>
+<p><b>P </b>+49 9132 744-1088</p>
+</div>
+<div>
+<p><a href="mailto:bernd.schubart@yaskawa.eu"><span style="color:blue;">bernd.schubart@yaskawa.eu</span></a></p>
+</div>
+<p> </p>
+</div><br>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------------<br> Geschaeftsfuehrer/Managing Directors: Bruno J. Schnekenburger, Marcus Mead, Bobbie Linkenbach <br> Amtsgericht/Local Court: Frankfurt, Commercial register no. 88369 <br> Headquarters: YASKAWA Europe GmbH, Hauptstr. 185, D-65760 Eschborn<br> ------------------------------------------------------------------------------------------------------------------------------<br> CONFIDENTIALITY: This e-mail and any attachments are confidential and may also be privileged.<br> If you are not the named recipient, please notify the sender immediately and do not disclose the contents to another person,<br> use it for any purpose, or store or copy the information in any medium.
+
+### ARTICLE01_HEADER
+Id=25109
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.01.2023 15:27:06 +00:00
+UpdatedAt=19.01.2023 15:27:10 +00:00
+
+### ARTICLE01_SUBJECT
+EoE endpoint driver Linux
+
+### ARTICLE01_BODY
+Hallo Bernd,<div><br></div><div>hier wäre das Paket:</div><div><div><a href="https://downloads.acontis.com/2023/V-Z/YASKAWA_Europe_GmbH_(40319)(DE)/EC-Master_Linux/3.1.4.05/FP-EoE-Endpoint-V3.1.4.06-Linux.zip" title="https://downloads.acontis.com/2023/V-Z/YASKAWA_Europe_GmbH_(40319)(DE)/EC-Master_Linux/3.1.4.05/FP-EoE-Endpoint-V3.1.4.06-Linux.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/V-Z/YASKAWA_Europe_GmbH_(40319)(DE)/EC-Master_Linux/3.1.4.05/FP-EoE-Endpoint-V3.1.4.06-Linux.zip</a></div></div><div><br></div><div>Schöne Grüße,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Thursday, January 19, 2023 at 1:44:10 PM, Bernd Schubart wrote:<br><br><div>
+<p>Hallo,</p>
+<p> </p>
+<p>wir benötigen noch den Code für die Anbindung des TAP an den EtherCAT Stack zur Verwendung von EoE.</p>
+<p>Wenn ich es richtig weiß müsste dass das FP-EoE-Endpoint für Linux sein, was wir kürzlich für Windows bekommen haben.</p>
+<p>Können wir dies für die Stack-Version 3.1.4.05 bekommen für Linux?</p>
+<p> </p>
+<p>Danke und Grüße</p>
+<p>Bernd</p>
+<p> </p>
+<div>
+<p><b><span lang="EN-US">Bernd Schubart</span></b></p>
+</div>
+<div>
+<p><span lang="EN-US">Software Engineer</span></p>
+</div>
+<div>
+<p><span lang="EN-US">Firmware<br>
+<br>
+</span></p>
+</div>
+<p><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" title="http://www.yaskawa.eu.com/" target="_blank"><span style="color:blue;"></span></a><span lang="EN-US"><br>
+<br>
+</span></p>
+<div>
+<p><b><span lang="EN-US">YASKAWA Europe GmbH</span></b><span lang="EN-US"></span></p>
+</div>
+<div>
+<p><span lang="EN-US">Drives Motion Controls Division</span></p>
+</div>
+<div>
+<p>Hugo-Junkers-Straße 13</p>
+</div>
+<div>
+<p>90411 Nürnberg</p>
+</div>
+<div>
+<p>Germany</p>
+</div>
+<div>
+<p><span><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.yaskawa.eu.com</span></a><br>
+<br>
+</span></p>
+</div>
+<div>
+<p><b>P </b>+49 9132 744-1088</p>
+</div>
+<div>
+<p><a href="mailto:bernd.schubart@yaskawa.eu"><span style="color:blue;">bernd.schubart@yaskawa.eu</span></a></p>
+</div>
+<p> </p>
+</div>
+<br>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------------<br> Geschaeftsfuehrer/Managing Directors: Bruno J. Schnekenburger, Marcus Mead, Bobbie Linkenbach <br> Amtsgericht/Local Court: Frankfurt, Commercial register no. 88369 <br> Headquarters: YASKAWA Europe GmbH, Hauptstr. 185, D-65760 Eschborn<br> ------------------------------------------------------------------------------------------------------------------------------<br> CONFIDENTIALITY: This e-mail and any attachments are confidential and may also be privileged.<br> If you are not the named recipient, please notify the sender immediately and do not disclose the contents to another person,<br> use it for any purpose, or store or copy the information in any medium.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

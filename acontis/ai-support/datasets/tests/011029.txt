@@ -1,0 +1,103 @@
+### HEADER
+Id=11029
+Link=http://at-zammad/#ticket/zoom/11029
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Robert Bosch GmbH (ID=149, Number=40339, Country=DE)
+Commission=Robert Bosch, Testing Systems (ID=168, Number=168)
+Number=7011029
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=michael.kolb@de.bosch.com (ID=127, FirstName=Michael, LastName=Kolb)
+CreatedBy=michael.kolb@de.bosch.com (ID=127, FirstName=Michael, LastName=Kolb)
+Type=
+TimeUnit=
+CreatedAt=17.07.2025 10:53:58 +00:00
+UpdatedAt=01.09.2025 07:13:10 +00:00
+CloseAt=01.09.2025 07:13:10 +00:00
+ArticlesCount=2
+
+### TITLE
+NTP Date synchronization causes RT crash
+
+### ARTICLE00_HEADER
+Id=63206
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.07.2025 10:53:58 +00:00
+UpdatedAt=17.07.2025 10:54:01 +00:00
+
+### ARTICLE00_SUBJECT
+NTP Date synchronization causes RT crash
+
+### ARTICLE00_BODY
+<div>Hallo Cyril,</div><div> </div><div>Wir haben Systeme, die einmal am Tag per "ntpdate -s TIMESERVER" ihre Systemzeit synchronisieren. Dabei kommt der Ethercat dann aus dem Konzept und unsere Applikation beendet sich.</div><div> </div><div>Gibt es da irgendwie eine Best-Practise Ansatz, oder wie sollten wir denn am besten damit umgehen?</div><div> </div><div>Besten Dank schon mal.</div><div>
+<div> </div>
+<div>
+<span style=" background-color: rgb(255, 255, 255);">Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Michael Kolb</b><br>
+<br> (BhP/TEF-EAT33-BAS)<br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | [www.bosch.com]</span><span style=" color: blue; background-color: rgb(255, 255, 255);">www.bosch.com</span><span style=" background-color: rgb(255, 255, 255);"><br> Tel. +49 8323 20-2247 | Mobil +49 151 54336473 | </span><span style=" color: blue; background-color: rgb(255, 255, 255);"><a href="mailto:Michael.Kolb@de.bosch.com">Michael.Kolb@de.bosch.com</a></span><span style=" background-color: rgb(255, 255, 255);"><br>
+<br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000;<br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer;<br> Geschäftsführung: Dr. Stefan Hartung, Dr. Christian Fischer, Dr. Markus Forschner,<br> Stefan Grosch, Dr. Markus Heyn, Dr. Frank Meyer, Dr. Tanja Rückert</span>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=63216
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.07.2025 12:37:33 +00:00
+UpdatedAt=17.07.2025 12:37:34 +00:00
+
+### ARTICLE01_SUBJECT
+NTP Date synchronization causes RT crash
+
+### ARTICLE01_BODY
+Hallo Michael,<div><br></div><div>wir empfehlen meistens NTP abzuschalten :) Wenn es nicht geht, vielleicht funktioniert  die -x option:</div><div><a href="https://linux.die.net/man/8/ntpd" title="https://linux.die.net/man/8/ntpd" rel="nofollow noreferrer noopener" target="_blank">https://linux.die.net/man/8/ntpd</a></div><div><dl>
+<dt><b>-x</b></dt>
+<dd>Normally, the time is slewed if the offset is less than the step threshold, which is 128 ms by default, and stepped if above the threshold. This option sets the threshold to 600 s, which is well within the accuracy window to set the clock manually. Note: Since the slew rate of typical Unix kernels is limited to 0.5 ms/s, each second of adjustment requires an amortization interval of 2000 s. Thus, an adjustment as much as 600 s will take almost 14 days to complete. This option can be used with the <b>-g</b> and <b>-q</b> options. See the <b>tinker</b> command for other options. Note: The kernel time discipline is disabled with this option.</dd>
+</dl></div><div><span style="background-color: initial; color: rgb(88, 88, 86);">Grüße,</span></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, July 17, 2025 at 12:53:58 PM, Michael Kolb wrote:<br><br><div>Hallo Cyril,</div>
+<div> </div>
+<div>Wir haben Systeme, die einmal am Tag per "ntpdate -s TIMESERVER" ihre Systemzeit synchronisieren. Dabei kommt der Ethercat dann aus dem Konzept und unsere Applikation beendet sich.</div>
+<div> </div>
+<div>Gibt es da irgendwie eine Best-Practise Ansatz, oder wie sollten wir denn am besten damit umgehen?</div>
+<div> </div>
+<div>Besten Dank schon mal.</div>
+<div>
+<div> </div>
+<div>
+<span style=" background-color: rgb(255, 255, 255);">Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Michael Kolb</b><br>
+<br> (BhP/TEF-EAT33-BAS)<br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | [www.bosch.com]</span><span style=" color: blue; background-color: rgb(255, 255, 255);">www.bosch.com</span><span style=" background-color: rgb(255, 255, 255);"><br> Tel. +49 8323 20-2247 | Mobil +49 151 54336473 | </span><span style=" color: blue; background-color: rgb(255, 255, 255);"><a href="mailto:Michael.Kolb@de.bosch.com">Michael.Kolb@de.bosch.com</a></span><span style=" background-color: rgb(255, 255, 255);"><br>
+<br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000;<br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer;<br> Geschäftsführung: Dr. Stefan Hartung, Dr. Christian Fischer, Dr. Markus Forschner,<br> Stefan Grosch, Dr. Markus Heyn, Dr. Frank Meyer, Dr. Tanja Rückert</span>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

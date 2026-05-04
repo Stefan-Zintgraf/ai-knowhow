@@ -1,0 +1,156 @@
+### HEADER
+Id=7763
+Link=http://at-zammad/#ticket/zoom/7763
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=cpc Chieftek (ID=590, Number=50234, Country=TW)
+Commission=cpc Chieftek, cpcStudio (ID=669, Number=669)
+Number=707763
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=lm003@mail2.chieftek.com (ID=1237, FirstName=Kuanghan, LastName=)
+CreatedBy=lm003@mail2.chieftek.com (ID=1237, FirstName=Kuanghan, LastName=)
+Type=
+TimeUnit=
+CreatedAt=29.03.2024 11:32:00 +00:00
+UpdatedAt=05.04.2024 06:11:49 +00:00
+CloseAt=05.04.2024 06:11:49 +00:00
+ArticlesCount=2
+
+### TITLE
+[Chieftek]Variable read values parameter
+
+### ARTICLE00_HEADER
+Id=42844
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.03.2024 11:32:00 +00:00
+UpdatedAt=29.03.2024 11:32:01 +00:00
+
+### ARTICLE00_SUBJECT
+[Chieftek]Variable read values parameter
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi,<div>we went through EcSlaveDiagVariables.Create(EcDevice.Slaves[i]).ReadValues(rowNumber of pdo) to get a specific monitored PDO variable value.</div>
+<div>In some cases, we only know the pdo main index and sub index.<br><div>How to get pdo variable value through it's main index and sub index?</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan</div>
+<div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+</div><br>
+<div> </div><div>
+<a href="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" target="_blank"></a><br>
+</div>
+
+### ARTICLE01_HEADER
+Id=42895
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.04.2024 10:16:28 +00:00
+UpdatedAt=02.04.2024 10:16:32 +00:00
+
+### ARTICLE01_SUBJECT
+[Chieftek]Variable read values parameter
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>you can do:</div><div><div>EcSlaveDiagVariables.<span>Create(mySlave)</span>
+</div></div><div>EcSlaveDiagVariables.Read()<span><br></span>
+</div><div>
+<div><br></div>
+<div>search the variable which you want e.g. by PDO index, ... in:</div>
+<div>EcSlaveDiagVariables.Variables</div>
+</div><div><br></div><div>read the value of this variable with:</div><div>EcSlaveDiagVariables.Read(myVariable)<br>
+</div><div><br></div><div>Best Regards,</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, March 29, 2024 at 12:32:00 PM, Kuanghan wrote:<br><br><div dir="ltr">Hi,<div>we went through EcSlaveDiagVariables.Create(EcDevice.Slaves[i]).ReadValues(rowNumber of pdo) to get a specific monitored PDO variable value.</div>
+<div>In some cases, we only know the pdo main index and sub index.<br><div>How to get pdo variable value through it's main index and sub index?</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan</div>
+<div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+</div>
+<br>
+<div> </div>
+<div>
+<a href="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" target="_blank"></a><br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

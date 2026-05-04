@@ -1,0 +1,150 @@
+### HEADER
+Id=3696
+Link=http://at-zammad/#ticket/zoom/3696
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Flow Europe GmbH (ID=587, Number=0, Country=DE)
+Commission=Flow Europe, Unknown (ID=666, Number=666)
+Number=703696
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=michael.knaupp@shapetechnologies.com (ID=1223, FirstName=Michael, LastName=Knaupp)
+CreatedBy=michael.knaupp@shapetechnologies.com (ID=1223, FirstName=Michael, LastName=Knaupp)
+Type=
+TimeUnit=
+CreatedAt=15.08.2022 10:40:10 +00:00
+UpdatedAt=26.08.2022 06:21:28 +00:00
+CloseAt=26.08.2022 06:21:28 +00:00
+ArticlesCount=2
+
+### TITLE
+ECAT-Master aktivieren
+
+### ARTICLE00_HEADER
+Id=19575
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.08.2022 10:40:10 +00:00
+UpdatedAt=15.08.2022 10:40:12 +00:00
+
+### ARTICLE00_SUBJECT
+ECAT-Master aktivieren
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="DE">Für Training habe ich an meiner Teststeuerung ein Mini Netzwerk siehe Bild,</span></p>
+<p><span lang="DE"><img style="max-width:100%;width:6.5416in;max-height:6.6875in;width:628px;max-height:642px;" src="/api/v1/ticket_attachment/3696/19575/80379?view=inline"></span><span lang="DE"></span></p>
+<p><span lang="DE">Bislang ist an den IO´s nichts angeschlossen. Der Ecat-Master (Acontis) ist nicht aktiv.</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Wie wird dieser aktiviert – kann das in EC- engineer erfolgen?</span></p>
+<p><span lang="DE">Ist das der Grund das ein Netzwerkscann erfolglos ist, bzw. folgendes Fenster produziert: </span></p>
+<p><span lang="DE"><img style="max-width:100%;width:3.8333in;max-height:1.6875in;width:368px;max-height:162px;" src="/api/v1/ticket_attachment/3696/19575/80380?view=inline"></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">MfG</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span style="color:#00929f;">DR.-ING. MICHAEL KNAUPP</span></p>
+<p><span style="color:teal;"><p> </p></span></p>
+<p><i><span style="color:gray;">Application Advanced</span></i></p>
+<p><i><span style="color:gray;"><p> </p></span></i></p>
+<p><span style="color:gray;">Shape Technologies Group</span></p>
+<p><span style="color:#5b6770;"><p> </p></span></p>
+<p><span style="color:#5b6770;">Flow Europe GmbH | </span><span lang="DE" style="color:#5b6770;"><a href="http://www.flowwaterjet.com/" rel="nofollow noreferrer noopener" target="_blank"><span lang="EN-US" style="color:#5b6770;">www.FlowWaterjet.com</span></a></span><span style="color:#5b6770;"><br> Marienburgstraße 35 | 64297 Darmstadt | Germany</span></p>
+<p><span lang="DE" style="color:#585d61;">Phone: +49 6151 3095 170 | <a href="mailto:michael.knaupp@shapetechnologies.com"><span style="color:#585d61;">michael.knaupp@shapetechnologies.com</span></a></span></p>
+<p><span lang="DE" style="color:#585d61;">Mobile: +49 172 680 13 22</span></p>
+<p><span lang="DE" style="color:#5b6770;">Amtsgericht Darmstadt HRB 96686 | Geschäftsführer: Per Uwe Josefsson</span></p>
+<p><span lang="DE" style="color:#5b6770;"><p> </p></span></p>
+<p><span style="color:#5b6770;">This electronic message contains information that may be confidential and is the property <br> of SHAPE Technologies Group®. It is for the use of the intended addressee only. If you are <br> not the addressee, any disclosure, copying, distribution, or use of the contents is prohibited. <br> The information about our data privacy can be found under <a href="https://www.flowwaterjet.com/" rel="nofollow noreferrer noopener" target="_blank">
+<span style="color:#5b6770;">https://www.FlowWaterjet.com</span></a>. </span></p>
+<p><span style="color:#5b6770;"><p> </p></span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=19581
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.08.2022 12:45:56 +00:00
+UpdatedAt=15.08.2022 12:45:59 +00:00
+
+### ARTICLE01_SUBJECT
+ECAT-Master aktivieren
+
+### ARTICLE01_BODY
+Hallo Herr Knaupp,<div><br></div><div>ich denke Sie müssen den EC-Master im Pmac starten. Mit dem EC-Engineer können Sie dann über RAS Scannen. Den Lokalen Master vom EC-Engineer können Sie mit dem Pmac normalerweise nicht verwenden.</div><div><br></div><div>Viele Grüße</div><div>Kai Feifel<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, August 15, 2022 at 12:40:10 PM, Michael Knaupp wrote:<br><br><div>
+<p><span lang="DE">Für Training habe ich an meiner Teststeuerung ein Mini Netzwerk siehe Bild,</span></p>
+<p><span lang="DE"><img style="max-width:100%;max-width:100%;width:6.5416in;max-height:6.6875in;width:628px;max-height:642px;" src="/api/v1/ticket_attachment/3696/19581/80402?view=inline"></span><span lang="DE"></span></p>
+<p><span lang="DE">Bislang ist an den IO´s nichts angeschlossen. Der Ecat-Master (Acontis) ist nicht aktiv.</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Wie wird dieser aktiviert – kann das in EC- engineer erfolgen?</span></p>
+<p><span lang="DE">Ist das der Grund das ein Netzwerkscann erfolglos ist, bzw. folgendes Fenster produziert: </span></p>
+<p><span lang="DE"><img style="max-width:100%;max-width:100%;width:3.8333in;max-height:1.6875in;width:368px;max-height:162px;" src="/api/v1/ticket_attachment/3696/19581/80403?view=inline"></span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">MfG</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:#00929f;">DR.-ING. MICHAEL KNAUPP</span></p>
+<p><span style="color:teal;"></span></p>
+<p> </p>
+<p></p>
+<p><i><span style="color:gray;">Application Advanced</span></i></p>
+<p><i><span style="color:gray;"></span></i></p>
+<p><i> </i></p>
+<p></p>
+<p><span style="color:gray;">Shape Technologies Group</span></p>
+<p><span style="color:#5b6770;"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:#5b6770;">Flow Europe GmbH | </span><span lang="DE" style="color:#5b6770;"><a href="http://www.flowwaterjet.com/" rel="nofollow noreferrer noopener" target="_blank"><span lang="EN-US" style="color:#5b6770;">www.FlowWaterjet.com</span></a></span><span style="color:#5b6770;"><br> Marienburgstraße 35 | 64297 Darmstadt | Germany</span></p>
+<p><span lang="DE" style="color:#585d61;">Phone: +49 6151 3095 170 | <a href="mailto:michael.knaupp@shapetechnologies.com"><span style="color:#585d61;">michael.knaupp@shapetechnologies.com</span></a></span></p>
+<p><span lang="DE" style="color:#585d61;">Mobile: +49 172 680 13 22</span></p>
+<p><span lang="DE" style="color:#5b6770;">Amtsgericht Darmstadt HRB 96686 | Geschäftsführer: Per Uwe Josefsson</span></p>
+<p><span lang="DE" style="color:#5b6770;"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:#5b6770;">This electronic message contains information that may be confidential and is the property <br> of SHAPE Technologies Group®. It is for the use of the intended addressee only. If you are <br> not the addressee, any disclosure, copying, distribution, or use of the contents is prohibited. <br> The information about our data privacy can be found under <a href="https://www.flowwaterjet.com/" rel="nofollow noreferrer noopener" target="_blank">
+<span style="color:#5b6770;">https://www.FlowWaterjet.com</span></a>. </span></p>
+<p><span style="color:#5b6770;"></span></p>
+<p> </p>
+<p></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

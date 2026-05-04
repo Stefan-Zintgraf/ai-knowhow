@@ -1,0 +1,185 @@
+### HEADER
+Id=1054
+Link=http://at-zammad/#ticket/zoom/1054
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Rheinmetall (ID=448, Number=50070, Country=DE)
+Commission=Rheinmetall, EC-Engineer (ID=526, Number=526)
+Number=701054
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=steffen.christiansen@rheinmetall.com (ID=518, FirstName=Steffen, LastName=Christiansen)
+CreatedBy=steffen.christiansen@rheinmetall.com (ID=518, FirstName=Steffen, LastName=Christiansen)
+Type=
+TimeUnit=
+CreatedAt=19.07.2021 11:54:09 +00:00
+UpdatedAt=25.04.2022 10:42:20 +00:00
+CloseAt=30.07.2021 06:35:16 +00:00
+ArticlesCount=2
+
+### TITLE
+EtherCAT - Unterschiedliche Zykluszeiten für PDOs
+
+### ARTICLE00_HEADER
+Id=5858
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.07.2021 11:54:09 +00:00
+UpdatedAt=19.07.2021 11:54:09 +00:00
+
+### ARTICLE00_SUBJECT
+EtherCAT - Unterschiedliche Zykluszeiten für PDOs
+
+### ARTICLE00_BODY
+<div>
+<p>Guten Tag,</p>
+<p>wir untersuchen derzeit Möglichkeiten die Auslastung unseres Busses zu reduzieren und versuchen mit mehreren Zykluszeiten in einem EtherCAT-Netzwerk zu arbeiten. Können Sie uns sagen ob die Möglichkeit besteht die PDOs eines Slaves mit unterschiedlichen Zykluszeiten zu betreiben? Welche Möglichkeiten bietet der EC-Master/EC-Engineer dahingehend?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Yours Sincerely</p>
+<p> </p>
+<p>Steffen Christiansen</p>
+<p>Softwareentwickler</p>
+<p>Business Unit Integrated Electronic Systems</p>
+<p> </p>
+<p>Rheinmetall Electronics GmbH</p>
+<p>Steffen.Christiansen@rheinmetall.com</p>
+<p><a href="http://www.rheinmetall-defence.com/" rel="nofollow noreferrer noopener" target="_blank">www.rheinmetall-defence.com</a></p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:1.9166in;max-height:.8958in;width:184px;max-height:86px;" src="/api/v1/ticket_attachment/1054/5858/21515?view=inline" alt="https://portal.rh-int.de:54401/FIRSTspiritWeb/Defence/media/content/rh_rheinmetall/meinunternehmen_3/marketing/corporate_design/logos_3/01_Rheinmetall_Group_RGB_pos.png"></p>
+<p> </p>
+</div><div>
+<br>
+<table border="0" cellspacing="0" cellpadding="0" style=" border-collapse:collapse; margin-left:4.8pt; margin-right:4.8pt;">
+<tbody>
+<tr>
+<td valign="top" style=" padding:.75pt .75pt .75pt .75pt;">
+<p><span style=" color:gray;">Rheinmetall Electronics GmbH <br> Brüggeweg 54<br> 28309 Bremen / Germany</span> </p>
+</td>
+<td valign="top" style=" padding:.75pt .75pt .75pt .75pt;">
+<span style=" color:gray;">Sitz der Gesellschaft : Bremen<br> Amtsgericht Bremen HRB 9659</span>
+</td>
+</tr>
+<tr>
+<td valign="top" style=" padding:.75pt .75pt .75pt .75pt;">
+<p><u><span style=" color:gray;">Geschäftsführung:</span></u><span style=" color:gray;">
+<br> Christoph Müller (Vorsitzender der GF) <br> Thomas Müller</span></p>
+</td>
+<td valign="top" style=" padding:.75pt .75pt .75pt .75pt;">
+<p><u><span style=" color:gray;">Vorsitzender des Aufsichtsrats:</span></u><span style=" color:gray;">
+<br> Dr. Alexander Sagel</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top" style=" padding:.0pt .0pt .0pt .0pt;">
+<span style=" color:gray;">This email may contain confidential information. If you are not the intended addressee, or if the information provided in this email including any attachments) is evidently not destined for you, kindly inform us promptly and delete the message received in error [including any attachments) by erasing it from all your computers and other storage devices or media and destroying any hard copies thereof. Any unauthorized processing, forwarding, disclosure, distribution, divulgation, storage, printout or other use of this message or its attachment is prohibited. If your system is infected or otherwise bugged by any virus that is carried by this email, we disclaim any liability whatsoever for the ensuing loss or damage unless caused by our intention or gross negligence. </span>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p> </p>
+<p><br>
+</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=5862
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.07.2021 12:44:46 +00:00
+UpdatedAt=19.07.2021 12:44:50 +00:00
+
+### ARTICLE01_SUBJECT
+EtherCAT - Unterschiedliche Zykluszeiten für PDOs
+
+### ARTICLE01_BODY
+Hallo Herr Christiansen,<div><br></div><div>Sie können im EC-Engineer über den Tasks + Sync Units, mehrere Tasks mit unteschiedlichen Zykluszeiten anlegen. Anschließend können Sie einen Slave markieren und über den Tab Sync Units, die Slave Sync Units einem Task zuweisen. Die PDOs eines Slaves können aber nur in verschiedenen Tasks sein, wenn der Slave mehrere Sync Units hat. </div><div>Unterschiedliche Slaves können aber ohne Probleme auf mehrere Tasks verteilt werden.</div><div><br></div><div>Viele Grüße</div><div>Kai Feifel<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, July 19, 2021, 1:54:09 PM, Steffen Christiansen wrote:<br><br><div>
+<p>Guten Tag,</p>
+<p>wir untersuchen derzeit Möglichkeiten die Auslastung unseres Busses zu reduzieren und versuchen mit mehreren Zykluszeiten in einem EtherCAT-Netzwerk zu arbeiten. Können Sie uns sagen ob die Möglichkeit besteht die PDOs eines Slaves mit unterschiedlichen Zykluszeiten zu betreiben? Welche Möglichkeiten bietet der EC-Master/EC-Engineer dahingehend?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Yours Sincerely</p>
+<p> </p>
+<p>Steffen Christiansen</p>
+<p>Softwareentwickler</p>
+<p>Business Unit Integrated Electronic Systems</p>
+<p> </p>
+<p>Rheinmetall Electronics GmbH</p>
+<p>Steffen.Christiansen@rheinmetall.com</p>
+<p><a href="http://www.rheinmetall-defence.com/" rel="nofollow noreferrer noopener" target="_blank">www.rheinmetall-defence.com</a></p>
+<p> </p>
+<p><img border="0" style="max-width:100%;max-width:100%;width:1.9166in;max-height:.8958in;width:184px;max-height:86px;" src="/api/v1/ticket_attachment/1054/5862/21520?view=inline" alt="https://portal.rh-int.de:54401/FIRSTspiritWeb/Defence/media/content/rh_rheinmetall/meinunternehmen_3/marketing/corporate_design/logos_3/01_Rheinmetall_Group_RGB_pos.png"></p>
+<p> </p>
+</div>
+<div>
+<br>
+<table border="0" cellspacing="0" cellpadding="0" style=" border-collapse:collapse; margin-left:4.8pt; margin-right:4.8pt;">
+<tbody>
+<tr>
+<td valign="top" style=" padding:.75pt .75pt .75pt .75pt;">
+<p><span style=" color:gray;">Rheinmetall Electronics GmbH <br> Brüggeweg 54<br> 28309 Bremen / Germany</span> </p>
+</td>
+<td valign="top" style=" padding:.75pt .75pt .75pt .75pt;">
+<span style=" color:gray;">Sitz der Gesellschaft : Bremen<br> Amtsgericht Bremen HRB 9659</span>
+</td>
+</tr>
+<tr>
+<td valign="top" style=" padding:.75pt .75pt .75pt .75pt;">
+<p><u><span style=" color:gray;">Geschäftsführung:</span></u><span style=" color:gray;">
+<br> Christoph Müller (Vorsitzender der GF) <br> Thomas Müller</span></p>
+</td>
+<td valign="top" style=" padding:.75pt .75pt .75pt .75pt;">
+<p><u><span style=" color:gray;">Vorsitzender des Aufsichtsrats:</span></u><span style=" color:gray;">
+<br> Dr. Alexander Sagel</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top" style=" padding:.0pt .0pt .0pt .0pt;">
+<span style=" color:gray;">This email may contain confidential information. If you are not the intended addressee, or if the information provided in this email including any attachments) is evidently not destined for you, kindly inform us promptly and delete the message received in error [including any attachments) by erasing it from all your computers and other storage devices or media and destroying any hard copies thereof. Any unauthorized processing, forwarding, disclosure, distribution, divulgation, storage, printout or other use of this message or its attachment is prohibited. If your system is infected or otherwise bugged by any virus that is carried by this email, we disclaim any liability whatsoever for the ensuing loss or damage unless caused by our intention or gross negligence. </span>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p> </p>
+<p><br>
+</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

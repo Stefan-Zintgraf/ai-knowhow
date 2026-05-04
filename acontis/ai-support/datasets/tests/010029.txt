@@ -1,0 +1,200 @@
+### HEADER
+Id=10029
+Link=http://at-zammad/#ticket/zoom/10029
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Schneider Electric (ID=858, Number=0, Country=FR)
+Commission=Schneider Electric, iPCs with PLC function (ID=944, Number=944)
+Number=7010029
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=rainer.herrmann@non.se.com (ID=2857, FirstName=Rainer, LastName=Herrmann)
+CreatedBy=rainer.herrmann@non.se.com (ID=2857, FirstName=Rainer, LastName=Herrmann)
+Type=
+TimeUnit=
+CreatedAt=24.02.2025 10:08:24 +00:00
+UpdatedAt=24.02.2025 10:47:19 +00:00
+CloseAt=24.02.2025 10:47:19 +00:00
+ArticlesCount=4
+
+### TITLE
+Renaming of Devices
+
+### ARTICLE00_HEADER
+Id=57327
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.02.2025 10:08:24 +00:00
+UpdatedAt=24.02.2025 10:08:24 +00:00
+
+### ARTICLE00_SUBJECT
+Renaming of Devices
+
+### ARTICLE00_BODY
+<div>Hi,</div><div>We got the request from SE to rename terms like "Slave" and "Master" to "SubDevice" and "MainDevice" for internal compliance to nondiscriminatory language and we have to comply with that. For a lot of strings in the GUI I already accomplished this. The part that I struggle with is the naming of the Slaves that get added to a Master that are according to this schema:</div><div> Slave_1001, Slave_1002 etc. Where can I change this prefix "Slave_" so that it becomes SubDevice? <img style="max-width:100%;max-width: 999px;" src="/api/v1/ticket_attachment/10029/57327/238420?view=inline">
+</div><div>I have the impression that this name comes from a core component of the SDK. Is it even possible ot change this?</div><div>Thank you very much for your insights,</div><div>Best regards,</div><div>Rainer</div><br>
+<p>General<br>
+</p>
+
+### ARTICLE01_HEADER
+Id=57328
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=24.02.2025 10:15:16 +00:00
+UpdatedAt=24.02.2025 10:15:16 +00:00
+
+### ARTICLE01_BODY
+In Master kann er <span>EC_IOCTL_SET_GEN_ENI_PARM verwenden:</span><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=genpreop#emiocontrol-ec-ioctl-set-gen-eni-parm" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=genpreop#emiocontrol-ec-ioctl-set-gen-eni-parm" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=genpreop#emiocontrol-ec-ioctl-set-gen-eni-parm</a></div></div>
+
+### ARTICLE02_HEADER
+Id=57335
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.02.2025 10:43:40 +00:00
+UpdatedAt=24.02.2025 10:44:29 +00:00
+
+### ARTICLE02_SUBJECT
+Renaming of Devices
+
+### ARTICLE02_BODY
+Hi,<div><br></div><div>we have global Variables:</div><div><br></div><div>
+<div>public static string DefaultMasterName = "<span>Master</span><span>";</span><br>
+</div>
+<div>public static string DefaultMasterNameCapital = "<span>MASTER</span><span>";</span><br>
+</div>
+<div>public static string DefaultSlaveName = "<span>Slave</span><span>";</span><br>
+</div>
+<div><span><br></span></div>
+<div><span>you can just overwrite them like this:</span></div>
+<div><span><br></span></div>
+<div><div>EcEniEngineDefaults.DefaultSlaveName = "SubDevice";</div></div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div><span><br></span></div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, February 24, 2025 at 11:08:24 AM, Rainer Herrmann wrote:<br><br><div>Hi,</div>
+<div>We got the request from SE to rename terms like "Slave" and "Master" to "SubDevice" and "MainDevice" for internal compliance to nondiscriminatory language and we have to comply with that. For a lot of strings in the GUI I already accomplished this. The part that I struggle with is the naming of the Slaves that get added to a Master that are according to this schema:</div>
+<div> Slave_1001, Slave_1002 etc. Where can I change this prefix "Slave_" so that it becomes SubDevice? <img style="max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/10029/57335/238435?view=inline">
+</div>
+<div>I have the impression that this name comes from a core component of the SDK. Is it even possible ot change this?</div>
+<div>Thank you very much for your insights,</div>
+<div>Best regards,</div>
+<div>Rainer</div>
+<br>
+<p>General<br>
+</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=57338
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.02.2025 10:46:13 +00:00
+UpdatedAt=24.02.2025 10:46:13 +00:00
+
+### ARTICLE03_SUBJECT
+Re: Renaming of Devices [Ticket#7010029]
+
+### ARTICLE03_BODY
+<div>Thank you so much Kai!</div><div>Have a great day</div><div> </div><br>
+<p>General<br>
+</p><hr>
+<div dir="ltr">
+<b>From:</b> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Monday, February 24, 2025 11:44<br>
+<b>To:</b> Rainer HERRMANN &lt;rainer.herrmann@non.se.com&gt;<br>
+<b>Cc:</b> Imen BEN-HASSEN &lt;imen.benhassen@non.se.com&gt;; Abuzr Elfadul &lt;abuzr.elfadul@non.se.com&gt;<br>
+<b>Subject:</b> RE: Renaming of Devices [Ticket#7010029] <div> </div>
+</div><div>
+<p><span style="color:#ff0000;">[External email: Use caution with links and attachments]</span></p>
+<hr>
+<p> </p>
+<div>Hi,<div> </div>
+<div>we have global Variables:</div>
+<div> </div>
+<div>
+<div>public static string DefaultMasterName = "Master";<br>
+</div>
+<div>public static string DefaultMasterNameCapital = "MASTER";<br>
+</div>
+<div>public static string DefaultSlaveName = "Slave";<br>
+</div>
+<div><span><br>
+</span></div>
+<div>you can just overwrite them like this:</div>
+<div><span><br>
+</span></div>
+<div>
+<div>EcEniEngineDefaults.DefaultSlaveName = "SubDevice";</div>
+</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div><span><br>
+</span></div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Monday, February 24, 2025 at 11:08:24 AM, Rainer Herrmann wrote:<br>
+<br>
+<div>Hi,</div>
+<div>We got the request from SE to rename terms like "Slave" and "Master" to "SubDevice" and "MainDevice" for internal compliance to nondiscriminatory language and we have to comply with that. For a lot of strings in the GUI I already accomplished this. The part that I struggle with is the naming of the Slaves that get added to a Master that are according to this schema:</div>
+<div>Slave_1001, Slave_1002 etc. Where can I change this prefix "Slave_" so that it becomes SubDevice? <img style="max-width:100%;max-width:100%;" src="/api/v1/ticket_attachment/10029/57338/238439?view=inline">
+</div>
+<div>I have the impression that this name comes from a core component of the SDK. Is it even possible ot change this?</div>
+<div>Thank you very much for your insights,</div>
+<div>Best regards,</div>
+<div>Rainer</div>
+<br>
+<p>General<br>
+</p>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>
+</div>

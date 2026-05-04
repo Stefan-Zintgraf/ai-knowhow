@@ -1,0 +1,219 @@
+### HEADER
+Id=5636
+Link=http://at-zammad/#ticket/zoom/5636
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Sunita Engineering Corporation (ID=430, Number=0, Country=IND)
+Commission=Secengraving, Unknown (ID=569, Number=569)
+Number=705636
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=rnk@secengraving.com (ID=263, FirstName=Rohan, LastName=Kelkar)
+CreatedBy=rnk@secengraving.com (ID=263, FirstName=Rohan, LastName=Kelkar)
+Type=
+TimeUnit=
+CreatedAt=24.05.2023 09:04:59 +00:00
+UpdatedAt=29.05.2023 06:12:26 +00:00
+CloseAt=29.05.2023 06:12:26 +00:00
+ArticlesCount=3
+
+### TITLE
+Cannot scan network using Ec-engineer
+
+### ARTICLE00_HEADER
+Id=30045
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.05.2023 09:04:59 +00:00
+UpdatedAt=24.05.2023 09:05:02 +00:00
+
+### ARTICLE00_SUBJECT
+Cannot scan network using Ec-engineer
+
+### ARTICLE00_BODY
+<div dir="ltr">
+<p>Hi,</p>
+<div> </div>
+<div>We're trying to scan our network using EC-Engineer but the software is showing the following error :</div>
+<div> </div>
+<div>
+<img src="/api/v1/ticket_attachment/5636/30045/125876?view=inline" alt="Error during scanning the network.png" style="max-width:100%;width:521px;max-height:281px;">
+<br><div dir="ltr"><div dir="ltr">
+<div> </div>
+<div>Can you tell me what the problem is? Also please let me know how to resolve this issue.</div>
+<div> </div>
+<div>Just for your information : I am using a USB-C to Ethernet adapter in my PC to scan the network since I do not have a dedicated ethernet port on my laptop.</div>
+<div> </div>
+<div>Regards,</div>
+<div><b>
+<br></b></div>
+<div><b>Rohan Kelkar</b></div>Head of Business Development<div>
+<div>Sunita Engineering Corporation</div>
+<div>Address : D-3, MIDC, Ambad, Nashik - 422010, Maharashtra, India</div>
+<div>Phone - +91-7722048007</div>
+<div>Website - <a href="https://www.secengraving.com" rel="nofollow noreferrer noopener" target="_blank">https://www.secengraving.com</a>
+</div>
+<div>Email - <a href="mailto:rnk@secengraving.com">rnk@secengraving.com</a>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=30056
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.05.2023 10:22:24 +00:00
+UpdatedAt=24.05.2023 10:22:29 +00:00
+
+### ARTICLE01_SUBJECT
+Cannot scan network using Ec-engineer
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>can you increase the log level? Menu-&gt;Settings-&gt;Messages-&gt;All Messages?</div><div>Can you see some hints in the message window about what is the problem?</div><div><br></div><div>If not can you reboot your system? This is sometimes necessary with USB network cards.</div><div><br></div><div>
+<div>Best Regards,</div>
+<div>Martin</div>
+<div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, May 24, 2023 at 11:04:59 AM, Rohan Kelkar wrote:<br><br><div dir="ltr">
+<p>Hi,</p>
+<div> </div>
+<div>We're trying to scan our network using EC-Engineer but the software is showing the following error :</div>
+<div> </div>
+<div>
+<img src="/api/v1/ticket_attachment/5636/30056/125914?view=inline" alt="Error during scanning the network.png" style="max-width:100%;max-width:100%;width:521px;max-height:281px;">
+<br><div dir="ltr"><div dir="ltr">
+<div> </div>
+<div>Can you tell me what the problem is? Also please let me know how to resolve this issue.</div>
+<div> </div>
+<div>Just for your information : I am using a USB-C to Ethernet adapter in my PC to scan the network since I do not have a dedicated ethernet port on my laptop.</div>
+<div> </div>
+<div>Regards,</div>
+<div><b>
+<br></b></div>
+<div><b>Rohan Kelkar</b></div>Head of Business Development<div>
+<div>Sunita Engineering Corporation</div>
+<div>Address : D-3, MIDC, Ambad, Nashik - 422010, Maharashtra, India</div>
+<div>Phone - +91-7722048007</div>
+<div>Website - <a href="https://www.secengraving.com" rel="nofollow noreferrer noopener" target="_blank">https://www.secengraving.com</a>
+</div>
+<div>Email - <a href="mailto:rnk@secengraving.com">rnk@secengraving.com</a>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=30069
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.05.2023 13:02:34 +00:00
+UpdatedAt=24.05.2023 13:02:34 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Cannot scan network using Ec-engineer [Ticket#705636]
+
+### ARTICLE02_BODY
+<div dir="ltr">
+<p>Hi Martin,</p>
+<div> </div>
+<div>Thanks for your reply. We were able to troubleshoot the problem mentioned in my previous email.<br>
+<br>At the moment we are trying to run EcMasterDemoMotion on our texas instruments ICE_AM3359 board. We successfully followed the entire process of loading the .out file on the board and tried running it. But nothing happens. There were no errors displayed while building the project and not even while running it and therefore we're not able to understand how to debug this issue. Can you please help us?</div>
+<div> </div>
+<div>The .OUT file which we used was from the release folder and not the debug folder. Is that the right file?</div>
+<div> </div>
+<div>Awaiting your reply.<br>
+<br><div dir="ltr"><div dir="ltr">
+<div><b>Rohan Kelkar</b></div>Head of Business Development<div>
+<div>Sunita Engineering Corporation</div>
+<div>Address : D-3, MIDC, Ambad, Nashik - 422010, Maharashtra, India</div>
+<div>Phone - +91-7722048007</div>
+<div>Website - <a href="https://www.secengraving.com" rel="nofollow noreferrer noopener" target="_blank">https://www.secengraving.com</a>
+</div>
+<div>Email - <a href="mailto:rnk@secengraving.com">rnk@secengraving.com</a>
+</div>
+</div>
+</div></div>
+<br>
+</div>
+</div><br><div>
+<div dir="ltr">On Wed, May 24, 2023 at 3:52 PM Martin Gaenzer via EC-Support &lt;<a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>&gt; wrote: <br>
+</div>
+<blockquote><div> <div>Hi,<div> </div>
+<div>can you increase the log level? Menu-&gt;Settings-&gt;Messages-&gt;All Messages?</div>
+<div>Can you see some hints in the message window about what is the problem?</div>
+<div> </div>
+<div>If not can you reboot your system? This is sometimes necessary with USB network cards.</div>
+<div> </div>
+<div> <div>Best Regards,</div>
+<div>Martin</div>
+<div> <br><div> <div>__________________________________________________________________________________________<br> </div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div> <div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>
+<br> </div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Wednesday, May 24, 2023 at 11:04:59 AM, Rohan Kelkar wrote: <br>
+<br><div dir="ltr"> <p>Hi,</p>
+<div> </div>
+<div>We're trying to scan our network using EC-Engineer but the software is showing the following error :</div>
+<div> </div>
+<div> <img src="/api/v1/ticket_attachment/5636/30069/125978?view=inline" alt="Error during scanning the network.png" style="max-width:100%;max-width: 100%;width: 521px;max-height: 281px;"> <br><div dir="ltr"><div dir="ltr"> <div> </div>
+<div>Can you tell me what the problem is? Also please let me know how to resolve this issue.</div>
+<div> </div>
+<div>Just for your information : I am using a USB-C to Ethernet adapter in my PC to scan the network since I do not have a dedicated ethernet port on my laptop.</div>
+<div> </div>
+<div>Regards,</div>
+<div><b> <br></b></div>
+<div><b>Rohan Kelkar</b></div>Head of Business Development<div> <div>Sunita Engineering Corporation</div>
+<div>Address : D-3, MIDC, Ambad, Nashik - 422010, Maharashtra, India</div>
+<div>Phone - +91-7722048007</div>
+<div>Website - <a href="https://www.secengraving.com" rel="nofollow noreferrer noopener" target="_blank">https://www.secengraving.com</a> </div>
+<div>Email - <a href="mailto:rnk@secengraving.com">rnk@secengraving.com</a> </div>
+</div>
+</div></div>
+</div>
+</div>
+<br> </blockquote></div>
+<div> </div>
+<br>
+<br> </div>
+</div>
+</div>
+</div></blockquote>
+</div>

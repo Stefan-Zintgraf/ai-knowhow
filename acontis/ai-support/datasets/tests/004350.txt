@@ -1,0 +1,153 @@
+### HEADER
+Id=4350
+Link=http://at-zammad/#ticket/zoom/4350
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=Omron Corporation, Robotics Controller (ID=612, Number=612)
+Number=704350
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=h.sawada@omron.com (ID=949, FirstName=Hiroshi, LastName=Sawada)
+CreatedBy=h.sawada@omron.com (ID=949, FirstName=Hiroshi, LastName=Sawada)
+Type=
+TimeUnit=
+CreatedAt=17.11.2022 06:05:09 +00:00
+UpdatedAt=09.12.2022 07:11:02 +00:00
+CloseAt=09.12.2022 07:11:02 +00:00
+ArticlesCount=2
+
+### TITLE
+Inquery /　cache memory operation
+
+### ARTICLE00_HEADER
+Id=22870
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.11.2022 06:05:09 +00:00
+UpdatedAt=17.11.2022 06:05:12 +00:00
+
+### ARTICLE00_SUBJECT
+Inquery /　cache memory operation
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Dear acontis support team,<br>
+<br>
+</span></p>
+<p><span>◇<span lang="EN-US">Information</span></span></p>
+<p><span>・<span lang="EN-US">Omron Corporation</span></span></p>
+<p><span>・<span lang="EN-US">target: Intel NUC11PAHi5(ether 1port)</span></span></p>
+<p><span>・<span lang="EN-US">target: i225-V ethernet controller</span></span></p>
+<p><span>・<span lang="EN-US">RTOS: VxWorks 21.11</span></span></p>
+<p><span>・<span lang="EN-US">Project name: Robotics Controller</span></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span>◇<span lang="EN-US">Question</span></span></p>
+<p><span lang="EN-US">Do I need to do an explicit cache flush in the Application?</span></p>
+<p><span lang="EN-US">What I am concerned about is that if we are using DMA inside the Ether Controller </span></p>
+<p><span lang="EN-US">to read/write data in MainMemory,I understand that we need to return the cache</span></p>
+<p><span lang="EN-US">data to Main Memory before DMA transfer.</span></p>
+<p><span lang="EN-US">Are cache-aware memory operations performed in the etherCAT driver?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best regards,<br> Hiroshi Sawada<br>
+<br> ***************************************************</span></p>
+<p><span lang="EN-US">Hiroshi Sawada</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Engineer</span></p>
+<p><span lang="EN-US">OMRON Corporation</span></p>
+<p><span lang="EN-US">Voyager project Dept. Robotics R&amp;D Center</span></p>
+<p><span lang="EN-US">Technology and Intellectual Property H.Q</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">9-1 Kizugawadai, Kizugawa-City</span></p>
+<p><span lang="EN-US">Kyoto,619-0283 JAPAN</span></p>
+<p><span lang="EN-US">Phone +81-50-1801-5403</span></p>
+<p><span lang="EN-US">Fax</span> <span lang="EN-US"> +81-774-74-2004</span></p>
+<p><span lang="EN-US">E-mail: <a href="mailto:h.sawada@omron.com"> h.sawada@omron.com</a></span></p>
+<p><span lang="EN-US">***************************************************</span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=22878
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.11.2022 08:05:58 +00:00
+UpdatedAt=17.11.2022 08:06:00 +00:00
+
+### ARTICLE01_SUBJECT
+Inquery /　cache memory operation
+
+### ARTICLE01_BODY
+Dear Sawada-san,<div><br></div><div>The x86 is cache coherent, that means that the DMA should not be explicitly flush, but filling it from different core can lead to incoherence on the processor side. For example using owner flags in shared memory between the the cores. I f you do such read/write access from your application, you can use <span>OsMemoryBarrier(); to flush the pipes before changing the owner flag.</span>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, November 17, 2022 at 7:05:09 AM, Hiroshi Sawada wrote:<br><br><div>
+<p><span lang="EN-US">Dear acontis support team,<br>
+<br>
+</span></p>
+<p><span>◇<span lang="EN-US">Information</span></span></p>
+<p><span>・<span lang="EN-US">Omron Corporation</span></span></p>
+<p><span>・<span lang="EN-US">target: Intel NUC11PAHi5(ether 1port)</span></span></p>
+<p><span>・<span lang="EN-US">target: i225-V ethernet controller</span></span></p>
+<p><span>・<span lang="EN-US">RTOS: VxWorks 21.11</span></span></p>
+<p><span>・<span lang="EN-US">Project name: Robotics Controller</span></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span>◇<span lang="EN-US">Question</span></span></p>
+<p><span lang="EN-US">Do I need to do an explicit cache flush in the Application?</span></p>
+<p><span lang="EN-US">What I am concerned about is that if we are using DMA inside the Ether Controller </span></p>
+<p><span lang="EN-US">to read/write data in MainMemory,I understand that we need to return the cache</span></p>
+<p><span lang="EN-US">data to Main Memory before DMA transfer.</span></p>
+<p><span lang="EN-US">Are cache-aware memory operations performed in the etherCAT driver?</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Best regards,<br> Hiroshi Sawada<br>
+<br> ***************************************************</span></p>
+<p><span lang="EN-US">Hiroshi Sawada</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Engineer</span></p>
+<p><span lang="EN-US">OMRON Corporation</span></p>
+<p><span lang="EN-US">Voyager project Dept. Robotics R&amp;D Center</span></p>
+<p><span lang="EN-US">Technology and Intellectual Property H.Q</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">9-1 Kizugawadai, Kizugawa-City</span></p>
+<p><span lang="EN-US">Kyoto,619-0283 JAPAN</span></p>
+<p><span lang="EN-US">Phone +81-50-1801-5403</span></p>
+<p><span lang="EN-US">Fax</span> <span lang="EN-US"> +81-774-74-2004</span></p>
+<p><span lang="EN-US">E-mail: <a href="mailto:h.sawada@omron.com"> h.sawada@omron.com</a></span></p>
+<p><span lang="EN-US">***************************************************</span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

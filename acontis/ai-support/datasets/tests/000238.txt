@@ -1,0 +1,120 @@
+### HEADER
+Id=238
+Link=http://at-zammad/#ticket/zoom/238
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=dSPACE GmbH (ID=94, Number=40282, Country=DE)
+Commission=dSpace, SCALEXIO (ID=103, Number=103)
+Number=700238
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=sschulte@dspace.de (ID=82, FirstName=Sebastian, LastName=Schulte)
+CreatedBy=sschulte@dspace.de (ID=82, FirstName=Sebastian, LastName=Schulte)
+Type=
+TimeUnit=
+CreatedAt=17.03.2021 15:15:59 +00:00
+UpdatedAt=25.04.2022 13:00:27 +00:00
+CloseAt=18.03.2021 08:24:16 +00:00
+ArticlesCount=2
+
+### TITLE
+[EC-Engineer] Update Anfrage
+
+### ARTICLE00_HEADER
+Id=1025
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.03.2021 15:15:59 +00:00
+UpdatedAt=17.03.2021 15:15:59 +00:00
+
+### ARTICLE00_SUBJECT
+[EC-Engineer] Update Anfrage
+
+### ARTICLE00_BODY
+<div>
+<p>Moin,</p>
+<p> </p>
+<p>könnt ihr mir die aktuellste Version vom EC-Engineer (OEM) bereitstellen?</p>
+<p> </p>
+<p>Merci und schöne Grüße</p>
+<p>Sebastian</p>
+<p> </p>
+<p><img style="max-width:100%;width:.9375in;max-height:.2083in;width:90px;max-height:20px;" src="/api/v1/ticket_attachment/238/1025/2412?view=inline"><br>
+<br>
+<b>Sebastian Schulte </b><br> Senior Application Engineer</p>
+<p>RTDS-ES-ADSYS<br>
+<br> dSPACE GmbH <br> Rathenaustraße 26 <br> 33102 Paderborn <br>
+<br> Tel.: +49 5251 1638-411<br> Mail: SSchulte@dspace.de<br> Web: <a href="http://www.dspace.com/" rel="nofollow noreferrer noopener" target="_blank">www.dspace.com</a><br>
+<br> We comply with our obligation to inform you about data protection according to Art. 13-14 of the GDPR by publishing said information on our website. Read our data protection regulations <a href="https://www.dspace.com/en/pub/home/privacypolicy.cfm" rel="nofollow noreferrer noopener" title="https://www.dspace.com/en/pub/home/privacypolicy.cfm" target="_blank">here</a>.</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=1050
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.03.2021 08:23:58 +00:00
+UpdatedAt=18.03.2021 08:24:01 +00:00
+
+### ARTICLE01_SUBJECT
+[EC-Engineer] Update Anfrage
+
+### ARTICLE01_BODY
+Hallo Sebastian,<div><br></div><div>anbei die Links zur neuen Version:</div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/2021/D-F/dSPACE_GmbH_(40282)(DE)/EC-Engineer_OEM/3.4.0/EC-Engineer_SDK_View_Layer2_OEM_Src_V3.4.0.zip" title="https://downloads.acontis.com/2021/D-F/dSPACE_GmbH_(40282)(DE)/EC-Engineer_OEM/3.4.0/EC-Engineer_SDK_View_Layer2_OEM_Src_V3.4.0.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/D-F/dSPACE_GmbH_(40282)(DE)/EC-Engineer_OEM/3.4.0/EC-Engineer_SDK_View_Layer2_OEM_Src_V3.4.0.zip</a></div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2021/D-F/dSPACE_GmbH_(40282)(DE)/EC-Engineer_OEM/3.4.0/EC-Engineer_SDK_View_Layer2_x64_OEM_Src_V3.4.0.zip" title="https://downloads.acontis.com/2021/D-F/dSPACE_GmbH_(40282)(DE)/EC-Engineer_OEM/3.4.0/EC-Engineer_SDK_View_Layer2_x64_OEM_Src_V3.4.0.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/D-F/dSPACE_GmbH_(40282)(DE)/EC-Engineer_OEM/3.4.0/EC-Engineer_SDK_View_Layer2_x64_OEM_Src_V3.4.0.zip</a></div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2021/D-F/dSPACE_GmbH_(40282)(DE)/EC-Engineer_OEM/3.4.0/EC-Engineer_SDK_Brand_Labeling_Layer1_V3.4.0.zip" title="https://downloads.acontis.com/2021/D-F/dSPACE_GmbH_(40282)(DE)/EC-Engineer_OEM/3.4.0/EC-Engineer_SDK_Brand_Labeling_Layer1_V3.4.0.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/D-F/dSPACE_GmbH_(40282)(DE)/EC-Engineer_OEM/3.4.0/EC-Engineer_SDK_Brand_Labeling_Layer1_V3.4.0.zip</a></div>
+</div><div><br></div><div>Viele Grüße</div><div>Kai Feifel</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, March 17, 2021, 4:15:59 PM, Sebastian Schulte wrote:<br><br><div>
+<p>Moin,</p>
+<p> </p>
+<p>könnt ihr mir die aktuellste Version vom EC-Engineer (OEM) bereitstellen?</p>
+<p> </p>
+<p>Merci und schöne Grüße</p>
+<p>Sebastian</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:.9375in;max-height:.2083in;width:90px;max-height:20px;" src="/api/v1/ticket_attachment/238/1050/2514?view=inline"><br>
+<br>
+<b>Sebastian Schulte </b><br> Senior Application Engineer</p>
+<p>RTDS-ES-ADSYS<br>
+<br> dSPACE GmbH <br> Rathenaustraße 26 <br> 33102 Paderborn <br>
+<br> Tel.: +49 5251 1638-411<br> Mail: SSchulte@dspace.de<br> Web: <a href="http://www.dspace.com/" rel="nofollow noreferrer noopener" target="_blank">www.dspace.com</a><br>
+<br> We comply with our obligation to inform you about data protection according to Art. 13-14 of the GDPR by publishing said information on our website. Read our data protection regulations <a href="https://www.dspace.com/en/pub/home/privacypolicy.cfm" rel="nofollow noreferrer noopener" title="https://www.dspace.com/en/pub/home/privacypolicy.cfm" target="_blank">here</a>.</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

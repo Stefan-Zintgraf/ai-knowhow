@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kerio-mail-read"
+version = "0.1.0"
+description = "Kerio Connect mailbox tools via the Client JSON-RPC API."
+requires-python = ">=3.12"
+dependencies = [
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+read-mailbox = "kerio_mail.read_mailbox:main"
+create-draft = "kerio_mail.create_draft:main"
+export-attachments = "kerio_mail.export_attachments:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "responses>=0.25.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["kerio_mail"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "integration: optional tests against a real Kerio server (enable with KERIO_INTEGRATION=1)",
+]

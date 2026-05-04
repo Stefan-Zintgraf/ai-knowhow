@@ -1,0 +1,169 @@
+### HEADER
+Id=9607
+Link=http://at-zammad/#ticket/zoom/9607
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=Presto Solutions, Generic (ID=478, Number=478)
+Number=709607
+Owner=s.krug@acontis.com (ID=2027, FirstName=Steven, LastName=Krug)
+Customer=phatv@prestosolution.co.kr (ID=47, FirstName=Pha, LastName=Tv)
+CreatedBy=phatv@prestosolution.co.kr (ID=47, FirstName=Pha, LastName=Tv)
+Type=
+TimeUnit=
+CreatedAt=07.01.2025 03:15:48 +00:00
+UpdatedAt=22.01.2025 07:11:07 +00:00
+CloseAt=22.01.2025 07:11:07 +00:00
+ArticlesCount=4
+
+### TITLE
+Request HIL 3.2.2.03 Protected Version License Or Latest Source Code Dongled Version
+
+### ARTICLE00_HEADER
+Id=54563
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.01.2025 03:15:49 +00:00
+UpdatedAt=07.01.2025 03:15:53 +00:00
+
+### ARTICLE00_SUBJECT
+Request HIL 3.2.2.03 Protected Version License Or Latest Source Code Dongled Version
+
+### ARTICLE00_BODY
+<p>Hi Acontis Supporter,</p><p><br></p><p>This is Pha from PrestoSolution Korea.</p><p>Perhaps you already known that ETG will host a roadshow in Jan-15 in Korea.</p><p>I already prepared same functionalities (Servo On/Off, PTP) with HIL.</p><p>My current HIL version (Dongled-V3.1.4.15), it showed not good Realtime performance, jitter too high.</p><p>This leaded to lost frames problem in Master side.</p><p><br></p><p>Dongled-V3.1.4.15 cycletime - 500us - 15Salves</p><p><img src="/api/v1/ticket_attachment/9607/54563/225999?view=inline" title="" alt="" style="max-width:100%;"></p><p><br></p><p>However, with version 3.2, I find it performs better.</p><p>When I compared the two versions using the same ESI file.</p><p>The image below shows the performance of version 3.2. Although it is not the same ESI file, you can use it as a reference.</p><p><br></p><p>Protected-V3.2.2.03 cycletime - 500us - 5Salves</p><p><img src="/api/v1/ticket_attachment/9607/54563/226000?view=inline" title="" alt="" style="max-width:100%;"></p><p><br></p><p><br></p><p>So, if it's possible please share the license of protected version with MAC address: <b>CC-82-7F-6D-D3-DF</b></p><p>Or the latest source code with Dongled version (I already bought USB-Dongle license)</p><p><br></p><p>Best Regards,</p><p>Pha</p><br><br><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-size: 12px; background-color: rgb(255, 255, 255); border-collapse: collapse;"><tbody>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px;"><tbody>
+<tr>
+<td style=" border-style: initial;"><p> </p></td>
+<td valign="top" style=" border-style: initial;">
+<p>탄반파 책임/ 연구 1팀</p>
+<p><span style=" color: red;">M. </span>010-4021-5399</p>
+<p><span style=" color: red;">E. </span><i><u><span style=" color: blue;"><a href="mailto:bjyseo@prestosolution.co.kr"><span style=" color: rgb(5, 99, 193);">phatv@prestosolution.co.kr</span></a></span></u></i></p>
+</td>
+</tr>
+<tr><td valign="top" colspan="2" style=" border-style: initial;"><p><span style=" color: rgb(99, 101, 99);"><br></span></p></td></tr>
+<tr><td valign="top" colspan="2" style=" border-style: initial;">
+<p><br></p>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressed.</span></p>
+<p><span style=" color: rgb(99, 101, 99);">Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+</td></tr>
+</tbody></table></td>
+<td valign="top" style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><p><br></p></td>
+</tr>
+<tr style="margin: 0px; padding: 0px;"><td valign="top" colspan="2" style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><p><br></p></td></tr>
+<tr style="margin: 0px; padding: 0px;"><td valign="top" colspan="2" style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><p><br></p></td></tr>
+</tbody></table>
+
+### ARTICLE01_HEADER
+Id=54564
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=07.01.2025 06:43:04 +00:00
+UpdatedAt=07.01.2025 06:43:04 +00:00
+
+### ARTICLE01_BODY
+<a href="http://at-zammad/#user/profile/14" data-mention-user-id="14" rel="nofollow noreferrer noopener" title="http://at-zammad/#user/profile/14">Paul Bußmann</a> ich würde ihm gerne die V3.2.2.03 Dongled schicken.<div>Maintenance<span> </span><span>lt. LiWa</span><span> ist seit ende 2023 abgelaufen (&gt;1 Jahr)</span>
+</div><div><span><br></span></div><div><span>Aus Kulanz trotzdem zusenden?</span></div>
+
+### ARTICLE02_HEADER
+Id=54578
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.01.2025 08:40:02 +00:00
+UpdatedAt=07.01.2025 08:40:06 +00:00
+
+### ARTICLE02_SUBJECT
+Request HIL 3.2.2.03 Protected Version License Or Latest Source Code Dongled Version
+
+### ARTICLE02_BODY
+Hier ist noch eine Anfrage von Presto was wohl den Vertrieb noch betrifft.<div><br></div><div>Viele Grüße</div><div>Steven<br><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Steven Krug</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<br><div>---Begin forwarded message:---<br><br>
+</div>
+<div><blockquote type="cite">
+<div>Subject: Request HIL 3.2.2.03 Protected Version License Or Latest Source Code Dongled Version<br>Date: 01/07/2025 04:15<br>From: Pha Tv &lt;phatv@prestosolution.co.kr&gt;<br>To: ecsupport@acontis.com<br>CC: DukHan Sun &lt;sundukhan@prestosolution.co.kr&gt;, "연구2팀-윤영구 " &lt;ygyoon@prestosolution.co.kr&gt;, TaeGon Park &lt;tgpark@prestosolution.co.kr&gt;<br><br>
+</div>
+<p>Hi Acontis Supporter,</p>
+<p><br></p>
+<p>This is Pha from PrestoSolution Korea.</p>
+<p>Perhaps you already known that ETG will host a roadshow in Jan-15 in Korea.</p>
+<p>I already prepared same functionalities (Servo On/Off, PTP) with HIL.</p>
+<p>My current HIL version (Dongled-V3.1.4.15), it showed not good Realtime performance, jitter too high.</p>
+<p>This leaded to lost frames problem in Master side.</p>
+<p><br></p>
+<p>Dongled-V3.1.4.15 cycletime - 500us - 15Salves</p>
+<p><img src="/api/v1/ticket_attachment/9607/54578/226036?view=inline" title="" alt="" style="max-width:100%;max-width:100%;"></p>
+<p><br></p>
+<p>However, with version 3.2, I find it performs better.</p>
+<p>When I compared the two versions using the same ESI file.</p>
+<p>The image below shows the performance of version 3.2. Although it is not the same ESI file, you can use it as a reference.</p>
+<p><br></p>
+<p>Protected-V3.2.2.03 cycletime - 500us - 5Salves</p>
+<p><img src="/api/v1/ticket_attachment/9607/54578/226037?view=inline" title="" alt="" style="max-width:100%;max-width:100%;"></p>
+<p><br></p>
+<p><br></p>
+<p>So, if it's possible please share the license of protected version with MAC address: <b>CC-82-7F-6D-D3-DF</b></p>
+<p>Or the latest source code with Dongled version (I already bought USB-Dongle license)</p>
+<p><br></p>
+<p>Best Regards,</p>
+<p>Pha</p>
+<br><br><p><br></p>
+<table border="0" cellspacing="0" cellpadding="0" style="margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-size: 12px; background-color: rgb(255, 255, 255); border-collapse: collapse;"><tbody>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px;"><tbody>
+<tr>
+<td style=" border-style: initial;"><p> </p></td>
+<td valign="top" style=" border-style: initial;">
+<p>탄반파 책임/ 연구 1팀</p>
+<p><span style=" color: red;">M. </span>010-4021-5399</p>
+<p><span style=" color: red;">E. </span><i><u><span style=" color: blue;"><a href="mailto:bjyseo@prestosolution.co.kr"><span style=" color: rgb(5, 99, 193);">phatv@prestosolution.co.kr</span></a></span></u></i></p>
+</td>
+</tr>
+<tr><td valign="top" colspan="2" style=" border-style: initial;"><p><span style=" color: rgb(99, 101, 99);"><br></span></p></td></tr>
+<tr><td valign="top" colspan="2" style=" border-style: initial;">
+<p><br></p>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressed.</span></p>
+<p><span style=" color: rgb(99, 101, 99);">Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+</td></tr>
+</tbody></table></td>
+<td valign="top" style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><p><br></p></td>
+</tr>
+<tr style="margin: 0px; padding: 0px;"><td valign="top" colspan="2" style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><p><br></p></td></tr>
+<tr style="margin: 0px; padding: 0px;"><td valign="top" colspan="2" style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><p><br></p></td></tr>
+</tbody></table>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=54677
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=08.01.2025 07:33:31 +00:00
+UpdatedAt=08.01.2025 07:33:31 +00:00
+
+### ARTICLE03_BODY
+Patricia hat einen EC-Simulator HiL Key 12 slaves gesendet

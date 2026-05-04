@@ -1,0 +1,135 @@
+### HEADER
+Id=264
+Link=http://at-zammad/#ticket/zoom/264
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=700264
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=19.03.2021 19:52:15 +00:00
+UpdatedAt=23.03.2021 05:59:24 +00:00
+CloseAt=23.03.2021 05:59:24 +00:00
+ArticlesCount=3
+
+### TITLE
+Problem with Maxon EPOS4 drive in EC-Engineer Web
+
+### ARTICLE00_HEADER
+Id=1177
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.03.2021 19:52:15 +00:00
+UpdatedAt=19.03.2021 19:52:15 +00:00
+
+### ARTICLE00_SUBJECT
+Problem with Maxon EPOS4 drive in EC-Engineer Web
+
+### ARTICLE00_BODY
+<div>Hi,</div><div> </div><div>We have a potential customer that was using EC-Engineer Web and Maxon EPOS4 drives (ESI attached). They want to change the mode via the module tab but EC-Engineer is not displaying the available modules. I checked with EC-Engineer for Windows and it is working fine. Is this a bug in EC-Engineer Web or a bug in the ESI file that only shows up in EC-Engineer Web?<br>
+</div><br>/Jon
+
+### ARTICLE01_HEADER
+Id=1196
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.03.2021 08:40:09 +00:00
+UpdatedAt=22.03.2021 08:40:11 +00:00
+
+### ARTICLE01_SUBJECT
+Problem with Maxon EPOS4 drive in EC-Engineer Web
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>I checked it. It is a bug in EC-Engineer Web because of the missing name of the module groups in ESI. But it is not mandatory to have that as far as i know. We try to group the modules in WebEngineer that is why the can be only found there. </div><div>I fixed it and it should be working with the next version.</div><div><br></div><div>Best regards,</div><div>Kai</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, March 19, 2021, 8:52:15 PM, Jon Waters wrote:<br><br><div>Hi,</div>
+<div> </div>
+<div>We have a potential customer that was using EC-Engineer Web and Maxon EPOS4 drives (ESI attached). They want to change the mode via the module tab but EC-Engineer is not displaying the available modules. I checked with EC-Engineer for Windows and it is working fine. Is this a bug in EC-Engineer Web or a bug in the ESI file that only shows up in EC-Engineer Web?<br>
+</div>
+<br>/Jon<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=1220
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.03.2021 15:12:09 +00:00
+UpdatedAt=22.03.2021 15:12:09 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Problem with Maxon EPOS4 drive in EC-Engineer Web [Ticket#700264]
+
+### ARTICLE02_BODY
+Thanks for the update Kai.<br><br>/Jon<br><br><div>
+<strong> From: </strong> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<strong> To: </strong> &lt;j.waters@acontis.com&gt; <br>
+<strong> Sent: </strong> 3/22/2021 4:40 AM <br>
+<strong> Subject: </strong> RE: Problem with Maxon EPOS4 drive in EC-Engineer Web [Ticket#700264] <br><br><blockquote><div>Hi Jon,<div> </div>
+<div>I checked it. It is a bug in EC-Engineer Web because of the missing name of the module groups in ESI. But it is not mandatory to have that as far as i know. We try to group the modules in WebEngineer that is why the can be only found there.</div>
+<div>I fixed it and it should be working with the next version.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div> <br><div> <div>____________________________________________________________________________<br> </div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>eMail: ecsupport@acontis.com<br> </div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Friday, March 19, 2021, 8:52:15 PM, Jon Waters wrote:<br><br><div>Hi,</div>
+<div> </div>
+<div>We have a potential customer that was using EC-Engineer Web and Maxon EPOS4 drives (ESI attached). They want to change the mode via the module tab but EC-Engineer is not displaying the available modules. I checked with EC-Engineer for Windows and it is working fine. Is this a bug in EC-Engineer Web or a bug in the ESI file that only shows up in EC-Engineer Web?<br> </div>
+<br>/Jon<br> </blockquote></div>
+<div> </div>
+<br><br> </div>
+</div></blockquote>
+</div>

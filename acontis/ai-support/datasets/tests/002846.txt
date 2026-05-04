@@ -1,0 +1,229 @@
+### HEADER
+Id=2846
+Link=http://at-zammad/#ticket/zoom/2846
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Digital Dynamics Inc. (ID=342, Number=40370, Country=US)
+Commission=Digital Dynamics, Internal Slave Testing (ID=408, Number=408)
+Number=702846
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=stomaszewski@digitaldynamics.com (ID=297, FirstName=Shaun, LastName=Tomaszewski)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=19.04.2022 15:32:22 +00:00
+UpdatedAt=22.04.2022 00:20:42 +00:00
+CloseAt=22.04.2022 00:20:42 +00:00
+ArticlesCount=5
+
+### TITLE
+Re: Max Acyclic Frames that can be queued
+
+### ARTICLE00_HEADER
+Id=15099
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.04.2022 15:32:22 +00:00
+UpdatedAt=19.04.2022 15:32:22 +00:00
+
+### ARTICLE00_SUBJECT
+Re: Max Acyclic Frames that can be queued
+
+### ARTICLE00_BODY
+Hi Shaun,<div> </div><div>This parameter is hard coded and cannot be changed without an update to our library. Can you help me understand the need for this to be increased? In general if you have a lot of CoE parameters settings via SDO download then these should be in the slave InitCmds. They get applied by the stack automatically without you needing to call the ecatCoeSdoUploadReq() function.<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Apr 18, 2022, at 11:03 PM, Shaun Tomaszewski &lt;stomaszewski@digitaldynamics.com&gt; wrote:</div>
+<br><div> <div>
+<div>Hi Jon,</div>
+<p> </p>
+<div>Is there any way to increase the MAX_QUEUED_COE_CMDS limit in the Acontis library?</div>
+<p> </p>
+<div>Are there any suggested workarounds for when we encounter a EC_E_INSERTMAILBOX error? We are hitting this when driving COE access across multiple threads.</div>
+<p> </p>
+<div>Thanks,</div>
+<p> </p>
+<div>Shaun</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=15134
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.04.2022 18:07:30 +00:00
+UpdatedAt=20.04.2022 20:22:19 +00:00
+
+### ARTICLE01_SUBJECT
+Max Acyclic Frames that can be queued
+
+### ARTICLE01_BODY
+<div>
+<p>Hi Jon,</p>
+<p> </p>
+<p>Some of our DDI EtherCAT modules use COE communication for asynchronous updates. By using COE for these EtherCAT modules we avoid unnecessary process data allocations. We noticed during stress-testing (greater than 20 threads) this slot-card that we were hitting the MAX_QUEUED_COE_CMDS limit.</p>
+<p> </p>
+<p>DDI provides a wrapper to abstract the COE functionality from the end user. We can possibly retry or queue the COE messages ourselves, we don’t believe an update to the Acontis library is required at this time.</p>
+<p> </p>
+<p>Is the MAX_QUEUED_COE_CMDS a global limit or is this per-EtherCAT master instance?</p>
+<p> </p>
+<p>Thank you,</p>
+<p> </p>
+<p>Shaun</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Jon Waters &lt;j.waters@acontis.com&gt; <br>
+<b>Sent:</b> Tuesday, April 19, 2022 8:32 AM<br>
+<b>To:</b> Shaun Tomaszewski &lt;stomaszewski@digitaldynamics.com&gt;<br>
+<b>Cc:</b> Haithem Jebali via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Subject:</b> Re: Max Acyclic Frames that can be queued</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Shaun,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>This parameter is hard coded and cannot be changed without an update to our library. Can you help me understand the need for this to be increased? In general if you have a lot of CoE parameters settings via SDO download then these should be in the slave InitCmds. They get applied by the stack automatically without you needing to call the ecatCoeSdoUploadReq() function.</p>
+<div>
+<p><br> /Jon </p>
+</div>
+<div>
+<p><br>
+<br>
+</p>
+<blockquote>
+<div>
+<p>On Apr 18, 2022, at 11:03 PM, Shaun Tomaszewski &lt;stomaszewski@digitaldynamics.com&gt; wrote:</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p>Hi Jon,</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Is there any way to increase the MAX_QUEUED_COE_CMDS limit in the Acontis library?</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Are there any suggested workarounds for when we encounter a EC_E_INSERTMAILBOX error? We are hitting this when driving COE access across multiple threads.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Thanks,</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Shaun</p>
+</div>
+</div>
+</blockquote>
+</div>
+<p> </p>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=15136
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=20.04.2022 20:23:07 +00:00
+UpdatedAt=20.04.2022 20:23:07 +00:00
+
+### ARTICLE02_BODY
+Hi Cyril,<div><br></div><div>Is this #define per instance or for the total number of instances?</div>
+
+### ARTICLE03_HEADER
+Id=15138
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=21.04.2022 05:42:12 +00:00
+UpdatedAt=21.04.2022 05:42:12 +00:00
+
+### ARTICLE03_BODY
+per Instance
+
+### ARTICLE04_HEADER
+Id=15169
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.04.2022 14:53:53 +00:00
+UpdatedAt=22.04.2022 00:20:33 +00:00
+
+### ARTICLE04_SUBJECT
+Max Acyclic Frames that can be queued
+
+### ARTICLE04_BODY
+Hi Shaun,<div> </div><div>This limit is per instance.<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Apr 20, 2022, at 2:06 PM, Shaun Tomaszewski &lt;stomaszewski@digitaldynamics.com&gt; wrote:</div>
+<br><div> <div>
+<div>Hi Jon,</div>
+<p> </p>
+<div>Some of our DDI EtherCAT modules use COE communication for asynchronous updates. By using COE for these EtherCAT modules we avoid unnecessary process data allocations. We noticed during stress-testing (greater than 20 threads) this slot-card that we were hitting the MAX_QUEUED_COE_CMDS limit.</div>
+<p> </p>
+<div>DDI provides a wrapper to abstract the COE functionality from the end user. We can possibly retry or queue the COE messages ourselves, we don’t believe an update to the Acontis library is required at this time.</div>
+<p> </p>
+<div>Is the MAX_QUEUED_COE_CMDS a global limit or is this per-EtherCAT master instance?</div>
+<p> </p>
+<div>Thank you,</div>
+<p> </p>
+<div>Shaun</div>
+<p> </p>
+<div>
+<b>From:</b> Jon Waters &lt;j.waters@acontis.com&gt; <br><b>Sent:</b> Tuesday, April 19, 2022 8:32 AM<br><b>To:</b> Shaun Tomaszewski &lt;stomaszewski@digitaldynamics.com&gt;<br><b>Cc:</b> Haithem Jebali via EC-Support &lt;ecsupport@acontis.com&gt;<br><b>Subject:</b> Re: Max Acyclic Frames that can be queued </div>
+<p> </p>
+<div>Hi Shaun,</div>
+<p> </p>
+<div>
+<div>This parameter is hard coded and cannot be changed without an update to our library. Can you help me understand the need for this to be increased? In general if you have a lot of CoE parameters settings via SDO download then these should be in the slave InitCmds. They get applied by the stack automatically without you needing to call the ecatCoeSdoUploadReq() function.</div>
+<div>
+<br>/Jon </div>
+<div>
+<div> </div>
+<blockquote>
+<div>On Apr 18, 2022, at 11:03 PM, Shaun Tomaszewski &lt;stomaszewski@digitaldynamics.com&gt; wrote:</div>
+<p> </p>
+<div>
+<div>Hi Jon,</div>
+<div> </div>
+<div>Is there any way to increase the MAX_QUEUED_COE_CMDS limit in the Acontis library?</div>
+<div> </div>
+<div>Are there any suggested workarounds for when we encounter a EC_E_INSERTMAILBOX error? We are hitting this when driving COE access across multiple threads.</div>
+<div> </div>
+<div>Thanks,</div>
+<div> </div>
+<div>Shaun</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

@@ -1,0 +1,111 @@
+### HEADER
+Id=5927
+Link=http://at-zammad/#ticket/zoom/5927
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Dewesoft d.o.o. (ID=316, Number=40264, Country=SI)
+Commission=Dewesoft, data acquisition system (ID=372, Number=372)
+Number=705927
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=dino.florjancic@dewesoft.com (ID=2028, FirstName=Dino, LastName=Florjančič)
+CreatedBy=dino.florjancic@dewesoft.com (ID=2028, FirstName=Dino, LastName=Florjančič)
+Type=
+TimeUnit=
+CreatedAt=07.07.2023 12:01:13 +00:00
+UpdatedAt=31.07.2023 06:07:17 +00:00
+CloseAt=31.07.2023 06:07:17 +00:00
+ArticlesCount=2
+
+### TITLE
+EcMaster v3.1.1 for Linux x64 and Intel I210-IT driver
+
+### ARTICLE00_HEADER
+Id=31642
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.07.2023 12:01:13 +00:00
+UpdatedAt=07.07.2023 12:01:13 +00:00
+
+### ARTICLE00_SUBJECT
+EcMaster v3.1.1 for Linux x64 and Intel I210-IT driver
+
+### ARTICLE00_BODY
+<div dir="ltr">
+<div>Dear EcMaster team,</div>
+<div> </div>
+<div>we are starting a project to port our RT application to another hardware platform. For that we will need a new set of EcMaster libs and binaries. The platform is as follows:</div>
+<div> </div>
+<div>CPU: Intel Celeron N4200</div>
+<div>Operating system: Linux 64bit, Ubuntu</div>
+<div>NIC: Intel I210-IT</div>
+<div> </div>
+<div>We would need the EcMaster version 3.1.1., as it was built according to our needs on the original platform, <a href="mailto:rok.brumec@dewesoft.com">@Rok Brumec</a> in the cc was in contact with you about that.</div>
+<div> </div>
+<div>We believe we need the following:</div>
+<div>- EcMaster binaries for Linux x64</div>
+<div>- Acontis driver for Intel I210-IT</div>
+<div> </div>
+<div>Let us know if there is something else needed and how this impacts our present licensing agreement. Sure we would like to start with a demo version of EcMaster for Linux x64 to test if this is going to work.</div>
+<div> </div>
+<div>Thank you and best regards,</div>
+<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<div><strong>Dino Florjančič</strong></div>
+<div>Managing Director</div>
+<div>Dewesoft Monitoring</div>
+<br><div style="color:rgb(90,90,90);"><table border="0" cellspacing="0" cellpadding="0"><tbody><tr>
+<td style="vertical-align:middle;"> </td>
+<td> DEWESoft Monitoring d.o.o. <br>Gabrsko 12, 1420 Trbovlje, Slovenia (SI) , VAT ID: SI68739516<br>T:+386 3 56 25 300<br><a href="http://www.dewesoft.com/" rel="nofollow noreferrer noopener" target="_blank">www.dewesoft.com</a>
+</td>
+</tr></tbody></table></div>
+<div><hr></div>District Court in Ljubljana, Entry No: 1/34043/00 - Share capital: 5,000,000.00 EUR. This e-mail may contain confidential and/or privileged information. If you are not the intended recipient (or have received this e-mail in error) please notify the sender immediately and destroy this e-mail. Any unauthorized copying, disclosure or distribution of the material in this e-mail is strictly forbidden.</div></div></div></div></div></div></div></div></div></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=31643
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.07.2023 12:56:10 +00:00
+UpdatedAt=07.07.2023 12:56:10 +00:00
+
+### ARTICLE01_SUBJECT
+EcMaster v3.1.1 for Linux x64 and Intel I210-IT driver
+
+### ARTICLE01_BODY
+Hi Dino,<div><br></div><div>please find below the current eval for Linux x86_64Bit:</div><div><div><a href="http://software.acontis.com/EC-Master/3.1/Linux/EC-Master-V3.1-Linux-x86_64Bit-Eval.tar.gz" title="http://software.acontis.com/EC-Master/3.1/Linux/EC-Master-V3.1-Linux-x86_64Bit-Eval.tar.gz" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/EC-Master/3.1/Linux/EC-Master-V3.1-Linux-x86_64Bit-Eval.tar.gz</a></div></div><div><br></div><div>In the next weeks we will release V3.2 containing some changes regarding the DCM API to register some callback providing the timestamp. I think this is what we did together with Roc, but in a more comfortable and durable way. Updating to V3.2  should be the best next step for your project.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Friday, July 7, 2023 at 2:01:13 PM, Dino Florjančič wrote:<br><br><div dir="ltr">
+<div>Dear EcMaster team,</div>
+<div> </div>
+<div>we are starting a project to port our RT application to another hardware platform. For that we will need a new set of EcMaster libs and binaries. The platform is as follows:</div>
+<div> </div>
+<div>CPU: Intel Celeron N4200</div>
+<div>Operating system: Linux 64bit, Ubuntu</div>
+<div>NIC: Intel I210-IT</div>
+<div> </div>
+<div>We would need the EcMaster version 3.1.1., as it was built according to our needs on the original platform, <a href="mailto:rok.brumec@dewesoft.com">@Rok Brumec</a> in the cc was in contact with you about that.</div>
+<div> </div>
+<div>We believe we need the following:</div>
+<div>- EcMaster binaries for Linux x64</div>
+<div>- Acontis driver for Intel I210-IT</div>
+<div> </div>
+<div>Let us know if there is something else needed and how this impacts our present licensing agreement. Sure we would like to start with a demo version of EcMaster for Linux x64 to test if this is going to work.</div>
+<div> </div>
+<div>Thank you and best regards,</div>
+<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<div><strong>Dino Florjančič</strong></div>
+<div>Managing Director</div>
+<div>Dewesoft Monitoring</div>
+<br><div style="color:rgb(90,90,90);"><table border="0" cellspacing="0" cellpadding="0"><tbody><tr>
+<td style="vertical-align:middle;"> </td>
+<td> DEWESoft Monitoring d.o.o. <br>Gabrsko 12, 1420 Trbovlje, Slovenia (SI) , VAT ID: SI68739516<br>T:+386 3 56 25 300<br><a href="http://www.dewesoft.com/" rel="nofollow noreferrer noopener" target="_blank">www.dewesoft.com</a>
+</td>
+</tr></tbody></table></div>
+<div><hr></div>District Court in Ljubljana, Entry No: 1/34043/00 - Share capital: 5,000,000.00 EUR. This e-mail may contain confidential and/or privileged information. If you are not the intended recipient (or have received this e-mail in error) please notify the sender immediately and destroy this e-mail. Any unauthorized copying, disclosure or distribution of the material in this e-mail is strictly forbidden.</div></div></div></div></div></div></div></div></div></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

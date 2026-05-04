@@ -1,0 +1,113 @@
+### HEADER
+Id=7342
+Link=http://at-zammad/#ticket/zoom/7342
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vector Informatik GmbH (ID=167, Number=40366, Country=DE)
+Commission=Vector, CANoe (ID=189, Number=189)
+Number=707342
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+CreatedBy=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+Type=
+TimeUnit=
+CreatedAt=29.01.2024 09:12:29 +00:00
+UpdatedAt=09.02.2024 07:11:20 +00:00
+CloseAt=09.02.2024 07:11:20 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-Engineer und Datenmapping
+
+### ARTICLE00_HEADER
+Id=40230
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.01.2024 09:12:29 +00:00
+UpdatedAt=29.01.2024 09:12:31 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Engineer und Datenmapping
+
+### ARTICLE00_BODY
+<div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>ein Kunde verwendet ein Beckhoff EL6695 Modul und verwendet für die Konfiguration KPA Studio. Für die Konfiguration in CANoe wird der EC-Engineer verwendet. Der Kunde möchte alle Daten aus einer DBC-Datei mappen. Beim Anlegen der Datentypen hat er das Problem, dass es nicht von allen Datentypen eine „ARRAY [0..X] OF TYPE“ Version gibt. Dies wird wohl auch vom KPA Studio unterstützt (so wie ich es auch schon bei TwinCAT von Beckhoff gesehen habe). Als ich schon einmal bei ihnen danach gefragt habe, wurde mir gesagt, dass dies nicht von EtherCAT-Standard vorgesehen ist. Wäre es möglich, dass diese Datentypen auch wie bei anderen Herstellern umgesetzt werden, damit es unsere Kunden bei der Zusammenarbeit mit anderen Tools leichter haben? Beim Anlegen von umfangreicheren Konfigurationen haben die Kunden sonst sehr viel Arbeit, um die Variablen anzulegen und dann per Hand anzupassen.</p>
+<p> </p>
+<p>Im EC-Engineer wird beim Anlegen von mehreren Variablen der Index inkrementiert und der Subindex ist 01.</p>
+<p><img style="max-width:100%;width:6.9895in;max-height:2.25in;width:671px;max-height:216px;" src="/api/v1/ticket_attachment/7342/40230/166956?view=inline"></p>
+<p> </p>
+<p>Bei den Daten, die im KPA Studio erzeugt werden, ist es nach Aussage unseres Kunden so, dass der Index für alle Variablen identisch ist und der Subindex inkrementiert wird. Gibt es eine Möglichkeit, dass dies im EC-Engineer auch so ausgeführt wird? Ansonsten ist der manuelle Nachbearbeitungsaufwand bei vielen Variablen sehr hoch und er möchte eine Möglichkeit finden, den Vorgang zu vereinfachen.</p>
+<p> </p>
+<p>Grüße / Regards,</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>----------------------------------------------</p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">VG/PND10</span></p>
+<p><span lang="EN-US">Tel.: +49 711 80670-4791</span></p>
+<p>----------------------------------------------</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=40250
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.01.2024 13:21:00 +00:00
+UpdatedAt=29.01.2024 13:21:01 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Engineer und Datenmapping
+
+### ARTICLE01_BODY
+Hallo Herr Lange,<div><br></div><div>der Master kennt die Arrays dann nicht. Dann steht in der GUI "Unknown". Es ist eigentlich nicht zu empfehlen bei EtherCAT diese Variablen Typen zu verwenden. Und im Engineer hilft die Ansicht dann auch nicht. Denke das ist hier auch nicht zielführend.</div><div><br></div><div>Das mit den Indizes war ein Bug. Das ist mittlerweile behoben. Bei der 6695 muss es so sein, dass die Sub Indizes hochgezählt werden.</div><div><br></div><div>Also in Ihrer 3.8.6 sollte das wie gewünscht funktionieren.</div><div><br></div><div>Viele Grüße</div><div>Kai Feifel</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, January 29, 2024 at 10:12:29 AM, Tobias Lange wrote:<br><br><div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>ein Kunde verwendet ein Beckhoff EL6695 Modul und verwendet für die Konfiguration KPA Studio. Für die Konfiguration in CANoe wird der EC-Engineer verwendet. Der Kunde möchte alle Daten aus einer DBC-Datei mappen. Beim Anlegen der Datentypen hat er das Problem, dass es nicht von allen Datentypen eine „ARRAY [0..X] OF TYPE“ Version gibt. Dies wird wohl auch vom KPA Studio unterstützt (so wie ich es auch schon bei TwinCAT von Beckhoff gesehen habe). Als ich schon einmal bei ihnen danach gefragt habe, wurde mir gesagt, dass dies nicht von EtherCAT-Standard vorgesehen ist. Wäre es möglich, dass diese Datentypen auch wie bei anderen Herstellern umgesetzt werden, damit es unsere Kunden bei der Zusammenarbeit mit anderen Tools leichter haben? Beim Anlegen von umfangreicheren Konfigurationen haben die Kunden sonst sehr viel Arbeit, um die Variablen anzulegen und dann per Hand anzupassen.</p>
+<p> </p>
+<p>Im EC-Engineer wird beim Anlegen von mehreren Variablen der Index inkrementiert und der Subindex ist 01.</p>
+<p><img style="max-width:100%;max-width:100%;width:6.9895in;max-height:2.25in;width:671px;max-height:216px;" src="/api/v1/ticket_attachment/7342/40250/167035?view=inline"></p>
+<p> </p>
+<p>Bei den Daten, die im KPA Studio erzeugt werden, ist es nach Aussage unseres Kunden so, dass der Index für alle Variablen identisch ist und der Subindex inkrementiert wird. Gibt es eine Möglichkeit, dass dies im EC-Engineer auch so ausgeführt wird? Ansonsten ist der manuelle Nachbearbeitungsaufwand bei vielen Variablen sehr hoch und er möchte eine Möglichkeit finden, den Vorgang zu vereinfachen.</p>
+<p> </p>
+<p>Grüße / Regards,</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>----------------------------------------------</p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">VG/PND10</span></p>
+<p><span lang="EN-US">Tel.: +49 711 80670-4791</span></p>
+<p>----------------------------------------------</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

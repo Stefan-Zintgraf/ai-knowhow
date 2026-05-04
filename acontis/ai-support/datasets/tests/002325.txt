@@ -1,0 +1,140 @@
+### HEADER
+Id=2325
+Link=http://at-zammad/#ticket/zoom/2325
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies GmbH (ID=399, Number=1000, Country=DE)
+Commission=Thagora, Cutter Pilot (ID=525, Number=525)
+Number=702325
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=z.trajkov@acontis.com (ID=7, FirstName=Zan, LastName=Trajkov)
+CreatedBy=z.trajkov@acontis.com (ID=7, FirstName=Zan, LastName=Trajkov)
+Type=
+TimeUnit=
+CreatedAt=26.01.2022 13:12:03 +00:00
+UpdatedAt=22.02.2022 07:06:10 +00:00
+CloseAt=22.02.2022 07:06:10 +00:00
+ArticlesCount=1
+
+### TITLE
+WG: MC_STOP_T function
+
+### ARTICLE00_HEADER
+Id=12285
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.01.2022 13:12:03 +00:00
+UpdatedAt=26.01.2022 13:12:03 +00:00
+
+### ARTICLE00_SUBJECT
+WG: MC_STOP_T function
+
+### ARTICLE00_BODY
+<div>
+<p>Hi,</p>
+<p> </p>
+<p>keine Ahnung, warum er mir direkt geschrieben hat…</p>
+<p> </p>
+<p>Gruß</p>
+<p>Žan</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Cristian ROTARU &lt;Cristian.ROTARU@thagora.com&gt; <br><b>Gesendet:</b> Mittwoch, 26. Januar 2022 13:07<br><b>An:</b> Zan Trajkov &lt;z.trajkov@acontis.com&gt;<br><b>Cc:</b> Vlad COVACI &lt;vlad.covaci@thagora.com&gt;<br><b>Betreff:</b> RE: MC_STOP_T function</p>
+</div>
+<p> </p>
+<p>Hello,</p>
+<p> </p>
+<p>My name is Cristi and I am a colleague of Vlad. I will try to clarify our problem and simplify the actual question, in order not to get too deep into unnecessary details about the internals of your motion library.</p>
+<p> </p>
+<p>As Vlad mentioned earlier, we want to use the already implemented function block <b>MC_STOP_T</b> to ‘gracefully’ stop the motion in various situations (when a sensor is activated, for ex.). We already written the code, the function block gets executed when we needed and it works, its fine. The problem is that we didn’t entirely understand the <b>measurement unit</b> for the parameters of the function block. More precisely for the <b>Deceleration</b> and <b>Jerk</b> parameters. Your documentation states that the measurement units are <b>u/s^2</b> and <b>u/s^3</b> respectively, where <b>u</b> is “<i>increments per physical unit</i>”. Below I will detail the actual situation we have:</p>
+<p> </p>
+<p>The stop function is implemented as follows:</p>
+<p> </p>
+<p>static void MotionStop(T_RTOS_THREAD_PARAM* pRtosThreadParam, EC_T_RTOS_AXIS *pRtosAxis)</p>
+<p>{</p>
+<p>TRC("MotionStop");</p>
+<p> </p>
+<p>if(pRtosAxis &amp;&amp; !pRtosAxis-&gt;pFb-&gt;Stop.Execute)</p>
+<p>{</p>
+<p>pRtosAxis-&gt;pFb-&gt;Stop.Deceleration = pRtosAxis-&gt;m_StopAcc;</p>
+<p>pRtosAxis-&gt;pFb-&gt;Stop.Jerk = pRtosAxis-&gt;m_StopJerk;</p>
+<p>pRtosAxis-&gt;pFb-&gt;Stop.Execute = MC_TRUE;</p>
+<p> </p>
+<p>if (pRtosAxis-&gt;pdwDigOutputs)</p>
+<p>*pRtosAxis-&gt;pdwDigOutputs = pRtosAxis-&gt;m_StopOutputs;</p>
+<p>}</p>
+<p>}</p>
+<p> </p>
+<p>The values <b>pRtosAxis</b><b>-&gt;m_StopAcc</b> and <b>pRtosAxis</b><b>-&gt;m_StopJerk </b>are set from our desktop application and can have different values for different scenarios of motion stopping. In our application, these values are set in <b>microns/s^2</b> and <b>microns/s^3</b>, respectively. A usual value for acceleration/deceleration is 10.000.000, for example. Also, we compute a calibration factor, from increments to microns. This factor is set in your motion library in <b>pAxis-&gt;dwIncPerMM</b>, <b>pAxis-&gt;dwCalcIncPerMM</b> (and possibly other variables) and we use it to convert from increments to microns and vice versa. A usual value for this factor is 40, for example. It can be positive or negative depending on the direction the axis motion vs the orientation of our coordinate system. The frequency of the RTOS loop is 1 millisecond.</p>
+<p> </p>
+<p>As I said before, the function block works, but we are not entirely capable of properly controlling the deceleration. So, <b>the question</b> is: what do we have to set for the deceleration parameter of the function block (<b>pRtosAxis</b><b>-&gt;pFb-&gt;Stop.Deceleration</b>), having the following data in our software:</p>
+<p>- deceleration in microns/s^2 = 10.000.000</p>
+<p>- increments per micron = 40/-40</p>
+<p> </p>
+<p>I hope I managed to explain the issue clearly.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Cristi.</p>
+<p> </p>
+<div>
+<p><b>From:</b> Vlad COVACI &lt;Vlad.COVACI@thagora.com&gt; <br><b>Sent:</b> 26 January 2022 12:43<br><b>To:</b> Zan Trajkov &lt;z.trajkov@acontis.com&gt;<br><b>Cc:</b> Cristian ROTARU &lt;Cristian.ROTARU@thagora.com&gt;<br><b>Subject:</b> RE: MC_STOP_T function </p>
+</div>
+<p> </p>
+<p>As a corrections :</p>
+<p> </p>
+<p>Um – microns , and the deceleration is 10.000.000 microns /s^2 .</p>
+<p> </p>
+<p>As we see in this function , the motion parameters : fVelToInc , fAccToInc , fAccToInc are being calculated from dwCalcIncPerMM , is dwCalcIncPerMM the only parameter required to set up MC_STOP_T ?</p>
+<p>What are the required parameters to set up MC_STOP_T function correctly ?</p>
+<p>void MC_POWER_T::InitAxis()</p>
+<p>{</p>
+<p>/* calculate conversion factors */</p>
+<p>if (pAxis-&gt;dwIncPerMM != 0.0)</p>
+<p>pAxis-&gt;dwCalcIncPerMM = pAxis-&gt;dwIncPerMM;</p>
+<p>else</p>
+<p>pAxis-&gt;dwCalcIncPerMM = 1.0;</p>
+<p> </p>
+<p>if ((pAxis-&gt;eOperationMode == OPMODE_PP) || (pAxis-&gt;eOperationMode == OPMODE_HOMING))</p>
+<p>{</p>
+<p>// In position profile mode (homing as well) there is no parameter conversion</p>
+<p>// for velocity, acceleration and jerk</p>
+<p>pAxis-&gt;fVelToInc = 1;</p>
+<p>pAxis-&gt;fAccToInc = 1;</p>
+<p>pAxis-&gt;fJerkToInc = 1;</p>
+<p>}</p>
+<p>else</p>
+<p>{</p>
+<p><b> pAxis-&gt;fVelToInc = (</b><b>MC_T_REAL</b><b>)(fabs(pAxis-&gt;dwCalcIncPerMM) * pAxis-&gt;dwCycleTime / 1E6);</b></p>
+<p><b> pAxis-&gt;fAccToInc = (</b><b>MC_T_REAL</b><b>)(pAxis-&gt;fVelToInc * pAxis-&gt;dwCycleTime / 1E6);</b></p>
+<p><b> pAxis-&gt; fAccToInc = (</b><b>MC_T_REAL</b><b>)(pAxis-&gt;fAccToInc * pAxis-&gt;dwCycleTime / 1E6);</b></p>
+<p>}</p>
+<p> </p>
+<p>pAxis-&gt;lVeltoAcc = EC_MAX((MC_T_INT)(1E6 / pAxis-&gt;dwCycleTime), 1);</p>
+<p> </p>
+<p>/* calculate maximum values */</p>
+<p>pAxis-&gt;fMaxDistance = ((sizeof(MC_T_POS_CALC) == 4) ? EC_INT32_MAX : EC_INT64_MAX) / fabs(pAxis-&gt;dwCalcIncPerMM);</p>
+<p>pAxis-&gt;fMaxVel = LONG_MAX / pAxis-&gt;fVelToInc;</p>
+<p>pAxis-&gt;fMaxAcc = LONG_MAX / pAxis-&gt;fAccToInc;</p>
+<p>pAxis-&gt;fMaxDec = LONG_MAX / pAxis-&gt;fAccToInc;</p>
+<p>pAxis-&gt;fMaxJerk = LONG_MAX / pAxis-&gt;fJerkToInc;</p>
+<p> </p>
+<p>/* Check if Bit 12: Drive follows the command value is supported */</p>
+<p>/* pAxis-&gt;bDriveFollowBitSupp = pAxis-&gt;CheckDrvFollowBitSupported(pAxis-&gt;wProfileOperationMode); */</p>
+<p> </p>
+<p>MC_BufferClear(pAxis); /* initialize FB buffer queue */</p>
+<p>}</p>
+<p> </p>
+<div>
+<p><b>From:</b> Vlad COVACI <br><b>Sent:</b> 26 January 2022 10:59<br><b>To:</b> Zan Trajkov &lt;z.trajkov@acontis.com&gt;<br><b>Cc:</b> Cristian ROTARU &lt;Cristian.ROTARU@thagora.com&gt;<br><b>Subject:</b> MC_STOP_T function </p>
+</div>
+<p> </p>
+<p>Hello Zan ,</p>
+<p> </p>
+<p>We want to use MC_STOP_T function to safely stop the axis . We have the following situation , a deceleration of 10.000.000 Um/s^3 , a calibration factor of around 40 imp/Um and/or -40imp/Um , how should we initialise and use the function to work as expected ?</p>
+<p> </p>
+<p>Best regards ,</p>
+<p> </p>
+<p>Vlad</p>
+</div>

@@ -1,0 +1,326 @@
+### HEADER
+Id=2463
+Link=http://at-zammad/#ticket/zoom/2463
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Ono Sokki, Measuring System for Bench (ID=597, Number=597)
+Number=702463
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=ecsupport@soft-service.co.jp (ID=33, FirstName=Ecsupport, LastName=)
+CreatedBy=ecsupport@soft-service.co.jp (ID=33, FirstName=Ecsupport, LastName=)
+Type=
+TimeUnit=
+CreatedAt=17.02.2022 10:38:31 +00:00
+UpdatedAt=11.03.2022 07:09:31 +00:00
+CloseAt=11.03.2022 07:09:31 +00:00
+ArticlesCount=4
+
+### TITLE
+about EC_NOTIFY_FRAME_RESPONSE_ERROR
+
+### ARTICLE00_HEADER
+Id=13122
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.02.2022 10:38:31 +00:00
+UpdatedAt=17.02.2022 10:38:31 +00:00
+
+### ARTICLE00_SUBJECT
+about EC_NOTIFY_FRAME_RESPONSE_ERROR
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Support Team</p>
+<p> </p>
+<p>I got a question about EC_NOTIFY_FRAME_RESPONSE_ERROR from Ono Sokki.</p>
+<p> </p>
+<p>Their usage environment is as follows.</p>
+<p>CPU: Intel Xeon D-1567</p>
+<p>OS: VxWorks7 SR650</p>
+<p>(Used on the same CPU as Windows10 using Hypervisor)</p>
+<p> </p>
+<p>There is no problem when running at 1ms,</p>
+<p>but if they run at 100us EC_NOTIFY_FRAME_RESPONSE_ERROR seems to occur.</p>
+<p> </p>
+<p>I asked them to review the BIOS settings as it might be the effect of SMI.</p>
+<p>However, EC_NOTIFY_FRAME_RESPONSE_ERROR still occurs after the review.</p>
+<p> </p>
+<p>During their verification, they found the following trends:</p>
+<p>If they move the mouse connected via USB during communication,</p>
+<p>the processing time of eUsrJob_ProcessAllRxFrames and eUsrJob_SendAllCycFrames will increase,</p>
+<p>and it seems that the cycle will not be in time.</p>
+<p> </p>
+<p>Q1</p>
+<p>Is there a possibility that mouse operation will affect VxWorks?</p>
+<p>Is there anything that could be tried for this phenomenon, such as settings?</p>
+<p> </p>
+<p>Q2</p>
+<p>In the first place, is it possible to communicate with 100us in an environment</p>
+<p>where Windows and VxWorks are running at the same time with Hypervisor?</p>
+<p>Do you have a track record of communication?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=13166
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.02.2022 09:17:31 +00:00
+UpdatedAt=18.02.2022 09:17:33 +00:00
+
+### ARTICLE01_SUBJECT
+about EC_NOTIFY_FRAME_RESPONSE_ERROR
+
+### ARTICLE01_BODY
+<div>Hi Kenji,</div><div><br></div><div>Q1. Yes it is possible.</div><div><br></div><div>Q2. We have customers running 100us with VxWin. <span>Which hypervisor are they using?</span>
+</div><div><br></div><div>Best Regards,</div><div>Cyril<br><br>
+</div><div><blockquote type="cite">On Thursday, February 17, 2022, 11:38:31 AM, Ecsupport wrote:<br><br><div>
+<p>Dear Support Team</p>
+<p> </p>
+<p>I got a question about EC_NOTIFY_FRAME_RESPONSE_ERROR from Ono Sokki.</p>
+<p> </p>
+<p>Their usage environment is as follows.</p>
+<p>CPU: Intel Xeon D-1567</p>
+<p>OS: VxWorks7 SR650</p>
+<p>(Used on the same CPU as Windows10 using Hypervisor)</p>
+<p> </p>
+<p>There is no problem when running at 1ms,</p>
+<p>but if they run at 100us EC_NOTIFY_FRAME_RESPONSE_ERROR seems to occur.</p>
+<p> </p>
+<p>I asked them to review the BIOS settings as it might be the effect of SMI.</p>
+<p>However, EC_NOTIFY_FRAME_RESPONSE_ERROR still occurs after the review.</p>
+<p> </p>
+<p>During their verification, they found the following trends:</p>
+<p>If they move the mouse connected via USB during communication,</p>
+<p>the processing time of eUsrJob_ProcessAllRxFrames and eUsrJob_SendAllCycFrames will increase,</p>
+<p>and it seems that the cycle will not be in time.</p>
+<p> </p>
+<p>Q1</p>
+<p>Is there a possibility that mouse operation will affect VxWorks?</p>
+<p>Is there anything that could be tried for this phenomenon, such as settings?</p>
+<p> </p>
+<p>Q2</p>
+<p>In the first place, is it possible to communicate with 100us in an environment</p>
+<p>where Windows and VxWorks are running at the same time with Hypervisor?</p>
+<p>Do you have a track record of communication?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=13192
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.02.2022 07:55:24 +00:00
+UpdatedAt=21.02.2022 07:55:24 +00:00
+
+### ARTICLE02_SUBJECT
+RE: about EC_NOTIFY_FRAME_RESPONSE_ERROR [Ticket#702463]
+
+### ARTICLE02_BODY
+<div>
+<p>Dear Cyril</p>
+<p> </p>
+<p>Thank you for your reply.</p>
+<p> </p>
+<p>About the effect of mouse operation to VxWorks:</p>
+<p>Do you have any solution?</p>
+<p> </p>
+<p>&gt;Q2. We have customers running 100us with VxWin. Which hypervisor are they using?</p>
+<p>They are using Real-Time Hypervisor from Real-Time Systems.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Friday, February 18, 2022 6:18 PM<br>
+<b>To:</b> ecsupport &lt;ecsupport@soft-service.co.jp&gt;<br>
+<b>Subject:</b> RE: about EC_NOTIFY_FRAME_RESPONSE_ERROR [Ticket#702463]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Hi Kenji,</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Q1. Yes it is possible.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Q2. We have customers running 100us with VxWin. Which hypervisor are they using?</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Cyril</p>
+</div>
+<div>
+<blockquote>
+<p>On Thursday, February 17, 2022, 11:38:31 AM, Ecsupport wrote:</p>
+<p></p>
+<div>
+<p>Dear Support Team</p>
+<p> </p>
+<p>I got a question about EC_NOTIFY_FRAME_RESPONSE_ERROR from Ono Sokki.</p>
+<p> </p>
+<p>Their usage environment is as follows.</p>
+<p>CPU: Intel Xeon D-1567</p>
+<p>OS: VxWorks7 SR650</p>
+<p>(Used on the same CPU as Windows10 using Hypervisor)</p>
+<p> </p>
+<p>There is no problem when running at 1ms,</p>
+<p>but if they run at 100us EC_NOTIFY_FRAME_RESPONSE_ERROR seems to occur.</p>
+<p> </p>
+<p>I asked them to review the BIOS settings as it might be the effect of SMI.</p>
+<p>However, EC_NOTIFY_FRAME_RESPONSE_ERROR still occurs after the review.</p>
+<p> </p>
+<p>During their verification, they found the following trends:</p>
+<p>If they move the mouse connected via USB during communication,</p>
+<p>the processing time of eUsrJob_ProcessAllRxFrames and eUsrJob_SendAllCycFrames will increase,</p>
+<p>and it seems that the cycle will not be in time.</p>
+<p> </p>
+<p>Q1</p>
+<p>Is there a possibility that mouse operation will affect VxWorks?</p>
+<p>Is there anything that could be tried for this phenomenon, such as settings?</p>
+<p> </p>
+<p>Q2</p>
+<p>In the first place, is it possible to communicate with 100us in an environment</p>
+<p>where Windows and VxWorks are running at the same time with Hypervisor?</p>
+<p>Do you have a track record of communication?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+
+### ARTICLE03_HEADER
+Id=13193
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.02.2022 08:05:15 +00:00
+UpdatedAt=21.02.2022 08:05:19 +00:00
+
+### ARTICLE03_SUBJECT
+about EC_NOTIFY_FRAME_RESPONSE_ERROR
+
+### ARTICLE03_BODY
+<div>Hi Kenji,</div><div><br></div><div>the influence of the mouse movement under Windows or Linux on the real-time behavior of VxWorks in their hypervisor environment is a typical  topic for the Real-Time Systems support department.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><br>
+</div><div><blockquote type="cite">On Monday, February 21, 2022, 8:55:24 AM, Ecsupport wrote:<br><br><div>
+<p>Dear Cyril</p>
+<p> </p>
+<p>Thank you for your reply.</p>
+<p> </p>
+<p>About the effect of mouse operation to VxWorks:</p>
+<p>Do you have any solution?</p>
+<p> </p>
+<p>&gt;Q2. We have customers running 100us with VxWin. Which hypervisor are they using?</p>
+<p>They are using Real-Time Hypervisor from Real-Time Systems.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Friday, February 18, 2022 6:18 PM<br>
+<b>To:</b> ecsupport &lt;ecsupport@soft-service.co.jp&gt;<br>
+<b>Subject:</b> RE: about EC_NOTIFY_FRAME_RESPONSE_ERROR [Ticket#702463]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Hi Kenji,</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Q1. Yes it is possible.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Q2. We have customers running 100us with VxWin. Which hypervisor are they using?</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Cyril</p>
+</div>
+<div>
+<blockquote>
+<p>On Thursday, February 17, 2022, 11:38:31 AM, Ecsupport wrote:</p>
+<p></p>
+<div>
+<p>Dear Support Team</p>
+<p> </p>
+<p>I got a question about EC_NOTIFY_FRAME_RESPONSE_ERROR from Ono Sokki.</p>
+<p> </p>
+<p>Their usage environment is as follows.</p>
+<p>CPU: Intel Xeon D-1567</p>
+<p>OS: VxWorks7 SR650</p>
+<p>(Used on the same CPU as Windows10 using Hypervisor)</p>
+<p> </p>
+<p>There is no problem when running at 1ms,</p>
+<p>but if they run at 100us EC_NOTIFY_FRAME_RESPONSE_ERROR seems to occur.</p>
+<p> </p>
+<p>I asked them to review the BIOS settings as it might be the effect of SMI.</p>
+<p>However, EC_NOTIFY_FRAME_RESPONSE_ERROR still occurs after the review.</p>
+<p> </p>
+<p>During their verification, they found the following trends:</p>
+<p>If they move the mouse connected via USB during communication,</p>
+<p>the processing time of eUsrJob_ProcessAllRxFrames and eUsrJob_SendAllCycFrames will increase,</p>
+<p>and it seems that the cycle will not be in time.</p>
+<p> </p>
+<p>Q1</p>
+<p>Is there a possibility that mouse operation will affect VxWorks?</p>
+<p>Is there anything that could be tried for this phenomenon, such as settings?</p>
+<p> </p>
+<p>Q2</p>
+<p>In the first place, is it possible to communicate with 100us in an environment</p>
+<p>where Windows and VxWorks are running at the same time with Hypervisor?</p>
+<p>Do you have a track record of communication?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

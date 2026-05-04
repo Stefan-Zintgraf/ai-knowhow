@@ -1,0 +1,127 @@
+### HEADER
+Id=2600
+Link=http://at-zammad/#ticket/zoom/2600
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=TECNOLOGIX (ID=196, Number=0, Country=IT)
+Commission=TECNOLOGIX, Generic (ID=479, Number=479)
+Number=702600
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=martino.sykora@tecnologix.it (ID=924, FirstName=Martino, LastName=Sykora)
+CreatedBy=martino.sykora@tecnologix.it (ID=924, FirstName=Martino, LastName=Sykora)
+Type=
+TimeUnit=
+CreatedAt=09.03.2022 15:18:52 +00:00
+UpdatedAt=08.04.2022 06:01:43 +00:00
+CloseAt=08.04.2022 06:01:43 +00:00
+ArticlesCount=2
+
+### TITLE
+Issues in using EC-STA
+
+### ARTICLE00_HEADER
+Id=13772
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.03.2022 15:18:52 +00:00
+UpdatedAt=09.03.2022 15:18:52 +00:00
+
+### ARTICLE00_SUBJECT
+Issues in using EC-STA
+
+### ARTICLE00_BODY
+<p>Hi,</p><p>my name is Martino Sykora, CTO at Tecnologix Srl, which is the Italian distributor of Acontis EC technologies.<br> </p><p>Bruno Coppi, the owner (here in copy), previsouly submitted some support case to you.</p><p>Now we are preparing a demo-panel for an exhibition that will take place in Parma at the end of May (SPS Parma).</p><p>I am trying to use the EC-STA on my PC.<br> The PC is directly connected to our EtherCAT Slave (BCS_ECAT_SLAVE): the slave is based on Backhoff ET1100 and Beckhoff EtherCAT Slave Stack version 5.10.</p><p>A premise: usually (for developing, at customer place and on-field) the slave is connected to a dedicated Beckhoff Master, controlled through TwinCAT.<br> Under this configuration, no issues are reported.<br> Please refer to the attached file <b>twincat.jpg</b></p><p>About using EC-STA:</p><ol> <li>First of all I started from EC-Engineering, generating the ENI file from the attached ESI file (BCS_ECAT_SLAVE_20210630.xml) and the configuration shown in<b> EC_Eng_1.jpg</b> and <b>EC_Eng_2.jpg</b>
+</li> <li>Then, I've imported the generated ENI (BCS_ECAT_SLAVE_ENI.xml) into EC-STA, configured as shown in <b>EC_STA_1.jpg</b>
+</li> <li>In <b>EC_STA_2.jpg</b> is shown the Master Initialization</li> <li>In <b>EC_STA_3.jpg</b> is shown a cyclic error, which occurs when the Slave is in PREOP state. What does it mean?</li> <li>Finally, <b>EC_STA_4.jpg</b> shows a Synch Watchdog Error, which occurs while trying to pass from PREOP to OPERATIONAL state.</li> </ol> <p>What am I missing?<br> Is there some configuration that I have forgot to settle?</p><p>You can find all the cited images and files in the attached zip file (it is a zip, must be renamed).</p><p>Many thanks for your help,</p><p>Martino<br> </p><p><br> </p><p><br> </p><p><br> </p><div>--<br> <pre><img src="/api/v1/ticket_attachment/2600/13772/54577?view=inline" alt="Tecnologix logo" style="max-width:100%;"></pre> <pre>-- 
+Martino Sykora 
+CTO
+
+TECNOLOGIX s.r.l.
+Via dei Biancospini 6
+I 20146 Milano Italy
+Tel    +39 02 48954230
+Fax    +39 02 471106
+e-mail martino.sykora@tecnologix.it
+web    <a href="http://www.tecnologix.it" rel="nofollow noreferrer noopener" target="_blank">http://www.tecnologix.it</a>
+
+Le informazioni contenute nella presente comunicazione e i relativi allegati possono essere riservate e sono, comunque, destinate esclusivamente alle persone o alla Società sopraindicati e non sono da considerarsi comunicazioni personali, quindi eventuali risposte potranno essere conosciute da persone appartenenti all’azienda.
+
+The information in this communication (which includes any documents with it) is confidential and meant only for above-mentioned persons and/or Companies; the information is not personal therefore, it is intended for the addressee only and any replies will be known by people belonging to the company.
+
+</pre> </div>
+
+### ARTICLE01_HEADER
+Id=13787
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.03.2022 18:07:29 +00:00
+UpdatedAt=09.03.2022 18:07:31 +00:00
+
+### ARTICLE01_SUBJECT
+Issues in using EC-STA
+
+### ARTICLE01_BODY
+Hi Martino,<div><br></div><div>4. It is possible that you get some WKC error during the PS transition. Because the cyclic frames are sent before the slave reach the state, if the slave firmware has some delay, it can happen.</div><div>5. Sync Manager watchdog error happen if the SyncSM Watchdog is active (default) and the slave didn't receive cyclic frames  for more than 100ms (default). Your Windows environment is not reliable for the slave currently. It is possible to disbale the Watchdog by setting it to 0 in the EC-Engineer.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, March 9, 2022, 4:18:52 PM, Martino Sykora wrote:<br><br><p>Hi,</p>
+<p>my name is Martino Sykora, CTO at Tecnologix Srl, which is the Italian distributor of Acontis EC technologies.<br> </p>
+<p>Bruno Coppi, the owner (here in copy), previsouly submitted some support case to you.</p>
+<p>Now we are preparing a demo-panel for an exhibition that will take place in Parma at the end of May (SPS Parma).</p>
+<p>I am trying to use the EC-STA on my PC.<br> The PC is directly connected to our EtherCAT Slave (BCS_ECAT_SLAVE): the slave is based on Backhoff ET1100 and Beckhoff EtherCAT Slave Stack version 5.10.</p>
+<p>A premise: usually (for developing, at customer place and on-field) the slave is connected to a dedicated Beckhoff Master, controlled through TwinCAT.<br> Under this configuration, no issues are reported.<br> Please refer to the attached file <b>twincat.jpg</b></p>
+<p>About using EC-STA:</p>
+<ol> <li>First of all I started from EC-Engineering, generating the ENI file from the attached ESI file (BCS_ECAT_SLAVE_20210630.xml) and the configuration shown in<b> EC_Eng_1.jpg</b> and <b>EC_Eng_2.jpg</b>
+</li> <li>Then, I've imported the generated ENI (BCS_ECAT_SLAVE_ENI.xml) into EC-STA, configured as shown in <b>EC_STA_1.jpg</b>
+</li> <li>In <b>EC_STA_2.jpg</b> is shown the Master Initialization</li> <li>In <b>EC_STA_3.jpg</b> is shown a cyclic error, which occurs when the Slave is in PREOP state. What does it mean?</li> <li>Finally, <b>EC_STA_4.jpg</b> shows a Synch Watchdog Error, which occurs while trying to pass from PREOP to OPERATIONAL state.</li> </ol> <p>What am I missing?<br> Is there some configuration that I have forgot to settle?</p>
+<p>You can find all the cited images and files in the attached zip file (it is a zip, must be renamed).</p>
+<p>Many thanks for your help,</p>
+<p>Martino<br> </p>
+<p><br> </p>
+<p><br> </p>
+<p><br> </p>
+<div>--<br> <pre><img src="/api/v1/ticket_attachment/2600/13787/54614?view=inline" alt="Tecnologix logo" style="max-width:100%;max-width:100%;"></pre> <pre>--
+Martino Sykora
+CTO
+
+TECNOLOGIX s.r.l.
+Via dei Biancospini 6
+I 20146 Milano Italy
+Tel    +39 02 48954230
+Fax    +39 02 471106
+e-mail martino.sykora@tecnologix.it
+web    <a href="http://www.tecnologix.it" rel="nofollow noreferrer noopener" target="_blank">http://www.tecnologix.it</a>
+
+Le informazioni contenute nella presente comunicazione e i relativi allegati possono essere riservate e sono, comunque, destinate esclusivamente alle persone o alla Società sopraindicati e non sono da considerarsi comunicazioni personali, quindi eventuali risposte potranno essere conosciute da persone appartenenti all’azienda.
+
+The information in this communication (which includes any documents with it) is confidential and meant only for above-mentioned persons and/or Companies; the information is not personal therefore, it is intended for the addressee only and any replies will be known by people belonging to the company.
+
+</pre> </div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

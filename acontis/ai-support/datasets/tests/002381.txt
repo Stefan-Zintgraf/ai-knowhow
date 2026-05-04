@@ -1,0 +1,69 @@
+### HEADER
+Id=2381
+Link=http://at-zammad/#ticket/zoom/2381
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Jumo GmbH & Co.KG (ID=126, Number=54502, Country=DE)
+Commission=Jumo, Registriergeräte, Linux (ID=141, Number=141)
+Number=702381
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=dirk.kliegel@jumo.net (ID=128, FirstName=Dirk, LastName=Kliegel)
+CreatedBy=dirk.kliegel@jumo.net (ID=128, FirstName=Dirk, LastName=Kliegel)
+Type=
+TimeUnit=
+CreatedAt=02.02.2022 12:35:14 +00:00
+UpdatedAt=04.02.2022 08:14:20 +00:00
+CloseAt=04.02.2022 08:14:20 +00:00
+ArticlesCount=3
+
+### TITLE
+VLAN
+
+### ARTICLE00_HEADER
+Id=12595
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.02.2022 12:35:14 +00:00
+UpdatedAt=02.02.2022 12:35:18 +00:00
+
+### ARTICLE00_SUBJECT
+VLAN
+
+### ARTICLE00_BODY
+Hallo,<br><br>ist es mit unserem EtherCAT Master möglich zwischen zwei Routern VLAN zu verwenden?<br><br>Mit freundlichen Grüßen / Best regards<br><br>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Software / Global Development - Software<br>Applikationen embedded Linux / Applications embedded Linux<br><br>i. A. Dirk Kliegel<br><br>Tel: +49 (0)661 6003-324<br>Fax: +49 (0)661 6003-604<br>Adresse: Moritz-Juchheim-Straße 1 <br> 36039 Fulda, Germany <br>E-Mail: Dirk.Kliegel@jumo.net<br>Internet: <a href="https://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">https://www.jumo.net</a><br><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dipl.-Ing. Bernhard Juchheim, Dipl.-Kfm. Michael Juchheim, Dipl.-Ing. Dimitrios Charisiadis<br> Ust.-Id.-Nr.: DE 112411234</p>
+
+### ARTICLE01_HEADER
+Id=12616
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.02.2022 17:28:39 +00:00
+UpdatedAt=02.02.2022 17:28:40 +00:00
+
+### ARTICLE01_SUBJECT
+VLAN
+
+### ARTICLE01_BODY
+Hallo Herr Kliegel,<div><br></div><div>ehrlich gesagt, weiß ich es nicht. Wir bitten die Möglichkeit an ein VLAN IF in dem Frame einzufügen. Mir ist aber nur ein Kunde bekannt der das verwendet und sie haben einen speziellen Anwendungsfall mit einem eigen VLAN router.</div><div>Ich befürchte, dass es stark an den Routern Eigenschaft abhängt.</div><div><br></div><div>Schöne Grüße,</div><div>Cyril Eyssautier<div><br></div>
+<div><blockquote type="cite">On Wednesday, February 2, 2022, 1:35:14 PM, Dirk Kliegel wrote:<br><br>Hallo,<br><br>ist es mit unserem EtherCAT Master möglich zwischen zwei Routern VLAN zu verwenden?<br><br>Mit freundlichen Grüßen / Best regards<br><br>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Software / Global Development - Software<br>Applikationen embedded Linux / Applications embedded Linux<br><br>i. A. Dirk Kliegel<br><br>Tel: +49 (0)661 6003-324<br>Fax: +49 (0)661 6003-604<br>Adresse: Moritz-Juchheim-Straße 1 <br> 36039 Fulda, Germany <br>E-Mail: Dirk.Kliegel@jumo.net<br>Internet: <a href="https://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">https://www.jumo.net</a><br><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dipl.-Ing. Bernhard Juchheim, Dipl.-Kfm. Michael Juchheim, Dipl.-Ing. Dimitrios Charisiadis<br> Ust.-Id.-Nr.: DE 112411234</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=12662
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.02.2022 16:01:26 +00:00
+UpdatedAt=03.02.2022 16:01:26 +00:00
+
+### ARTICLE02_SUBJECT
+Antwort: RE: VLAN [Ticket#702381]
+
+### ARTICLE02_BODY
+Hallo HerrEyssautier,<br><br>vielen Dank für die schnelle Antwort.<br><br>Mit freundlichen Grüßen / Best regards<br><br>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Software / Global Development - Software<br>Applikationen embedded Linux / Applications embedded Linux<br><br>i. A. Dirk Kliegel<br><br>Tel: +49 (0)661 6003-324<br>Fax: +49 (0)661 6003-604<br>Adresse: Moritz-Juchheim-Straße 1 <br> 36039 Fulda, Germany <br>E-Mail: Dirk.Kliegel@jumo.net<br>Internet: <a href="https://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">https://www.jumo.net</a><span class="js-signatureMarker"></span><br><br>Von: "Cyril Eyssautier via EC-Support" &lt;ecsupport@acontis.com&gt;<br>An: dirk.kliegel@jumo.net<br>Datum: 02.02.2022 18:28<br>Betreff: RE: VLAN [Ticket#702381]<br><hr><br><br>Hallo Herr Kliegel,<br><br>ehrlich gesagt, weiß ich es nicht. Wir bitten die Möglichkeit an ein VLAN IF in dem Frame einzufügen. Mir ist aber nur ein Kunde bekannt der das verwendet und sie haben einen speziellen Anwendungsfall mit einem eigen VLAN router.<br>Ich befürchte, dass es stark an den Routern Eigenschaft abhängt.<br><br>Schöne Grüße,<br>Cyril Eyssautier<br><br>On Wednesday, February 2, 2022, 1:35:14 PM, Dirk Kliegel wrote:<br><br>Hallo,<br><br>ist es mit unserem EtherCAT Master möglich zwischen zwei Routern VLAN zu verwenden?<br><br>Mit freundlichen Grüßen / Best regards<br><br>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Software / Global Development - Software<br>Applikationen embedded Linux / Applications embedded Linux<br><br>i. A. Dirk Kliegel<br><br>Tel: +49 (0)661 6003-324<br>Fax: +49 (0)661 6003-604<br>Adresse: Moritz-Juchheim-Straße 1 <br>36039 Fulda, Germany <br>E-Mail: Dirk.Kliegel@jumo.net<br>Internet: <a href="https://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank"><u>https://www.jumo.net</u></a><br>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br>Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dipl.-Ing. Bernhard Juchheim, Dipl.-Kfm. Michael Juchheim, Dipl.-Ing. Dimitrios Charisiadis<br>Ust.-Id.-Nr.: DE 112411234<p><br><br></p><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dipl.-Ing. Bernhard Juchheim, Dipl.-Kfm. Michael Juchheim, Dipl.-Ing. Dimitrios Charisiadis<br> Ust.-Id.-Nr.: DE 112411234</p>

@@ -1,0 +1,168 @@
+### HEADER
+Id=639
+Link=http://at-zammad/#ticket/zoom/639
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=UIH-ST, Unknown (ID=517, Number=517)
+Number=700639
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=24.05.2021 08:41:49 +00:00
+UpdatedAt=28.05.2021 08:40:02 +00:00
+CloseAt=28.05.2021 08:40:02 +00:00
+ArticlesCount=3
+
+### TITLE
+The customer UIH-ST scan their own slave problem  with EcMaster on QNX7
+
+### ARTICLE00_HEADER
+Id=3549
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.05.2021 08:41:50 +00:00
+UpdatedAt=24.05.2021 08:41:54 +00:00
+
+### ARTICLE00_SUBJECT
+The customer UIH-ST scan their own slave problem  with EcMaster on QNX7
+
+### ARTICLE00_BODY
+<div>Dear,</div><div> </div><div>The customer can't found their own designed slave with EcMaster on QNX7, but it can be found with EC-Engineer.</div><div>The attached is the EcMaster log with "-v 6", can you find what went wrong?</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740270</div>
+<div>Email:ec_support@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=3569
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.05.2021 06:56:34 +00:00
+UpdatedAt=25.05.2021 06:56:37 +00:00
+
+### ARTICLE01_SUBJECT
+The customer UIH-ST scan their own slave problem  with EcMaster on QNX7
+
+### ARTICLE01_BODY
+<div>Hi Lishan,</div><div><br></div><div>The following values are looking weird:</div><div><br></div><div>
+<div>0000008741: RefreshDlStatus(1002): LinkPort PA= 0x0013, PD=0x0000, PB=0x0017, PC=0x0000</div>
+<div>0000008741: {0x37, 0x5D}, /* AutoInc 0x0000 ESC:0x0110 */</div>
+</div><div><br></div><div>They should check the value 0x5D37 in register 0x0110. The ESC is probably getting bad information about port connection. </div><div><br></div><div>Best Regards,</div><div>Cyril</div><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+
+### ARTICLE02_HEADER
+Id=3787
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.05.2021 08:04:56 +00:00
+UpdatedAt=28.05.2021 08:04:56 +00:00
+
+### ARTICLE02_SUBJECT
+Re: RE: The customer UIH-ST scan their own slave problem  with EcMaster on QNX7 [Ticket#700639]
+
+### ARTICLE02_BODY
+<div>Hi Cyril,</div><div> </div><div>Thanks for the information you provided, the customer found the cause of the problem(Slave PHY circuit problem) and solved it</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740270</div>
+<div>Email:ec_support@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+</div><blockquote>
+<div> </div>
+<div>
+<span class="js-signatureMarker"></span><div>
+<b>From:</b> ecsupport@acontis.com </div>
+<div>
+<b>Date:</b> 2021-05-25 14:56</div>
+<div>
+<b>To:</b> ec_support@motrotech.com </div>
+<div>
+<b>Subject:</b> RE: The customer UIH-ST scan their own slave problem with EcMaster on QNX7 [Ticket#700639]</div>
+</div>
+<div> <div>Hi Lishan,</div>
+<div> </div>
+<div>The following values are looking weird:</div>
+<div> </div>
+<div>
+<div>0000008741: RefreshDlStatus(1002): LinkPort PA= 0x0013, PD=0x0000, PB=0x0017, PC=0x0000</div>
+<div>0000008741: {0x37, 0x5D}, /* AutoInc 0x0000 ESC:0x0110 */</div>
+</div>
+<div> </div>
+<div>They should check the value 0x5D37 in register 0x0110. The ESC is probably getting bad information about port connection.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Cyril</div>
+<div data-signature="true" data-signature-id="2">
+<div>____________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>eMail: ecsupport@acontis.com<br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>
+<div>Eingetragene Rechtsform: GmbH<br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+</div>
+</div>
+</blockquote>

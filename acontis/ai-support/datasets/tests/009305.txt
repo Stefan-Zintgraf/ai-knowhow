@@ -1,0 +1,145 @@
+### HEADER
+Id=9305
+Link=http://at-zammad/#ticket/zoom/9305
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Brooks Automation (ID=812, Number=50515, Country=US)
+Commission=Brooks Automation, Titan/LEAP (ID=896, Number=896)
+Number=709305
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=hsiao-lung.chang@brooks.com (ID=2479, FirstName=Hsiao-Lung, LastName=Chang)
+CreatedBy=hsiao-lung.chang@brooks.com (ID=2479, FirstName=Hsiao-Lung, LastName=Chang)
+Type=
+TimeUnit=
+CreatedAt=13.11.2024 19:59:06 +00:00
+UpdatedAt=13.01.2025 17:35:24 +00:00
+CloseAt=29.11.2024 07:14:41 +00:00
+ArticlesCount=3
+
+### TITLE
+Another Quick Question on Finding the Station Address and Slave ID after ecatConfigureMaster()...
+
+### ARTICLE00_HEADER
+Id=52760
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.11.2024 19:59:08 +00:00
+UpdatedAt=13.11.2024 19:59:21 +00:00
+
+### ARTICLE00_SUBJECT
+Another Quick Question on Finding the Station Address and Slave ID after ecatConfigureMaster()...
+
+### ARTICLE00_BODY
+<div>
+<div>
+<div>
+<p>Hi, Cyril and Daniel,</p>
+<p> </p>
+<p>Another quick question: How can I find out the number of configured/connected slave devices after loading the ENI file?</p>
+<p> </p>
+<p>In Brooks use case, we will first find the robot hardware configuration, identify the type, and then decide which ENI file to load. After loading the hardware configuration, we will then establish the PDI memory layout and link these data to robot controls.</p>
+<p> </p>
+<p>I understand that there exists API <b>“ecatGetNumConfiguredSlaves()”</b> but not the Station Address, which seems to the key on getting all other slave information. </p>
+<p> </p>
+<p>Would you please let me know how to find the Station Address? Or is there an alternative way to get the information of PI input variables (like name and CoE ID)?</p>
+<p> </p>
+<p>Thanks a lot!</p>
+<p>Hsiao-Lung</p>
+<p> </p>
+</div>
+</div>
+</div><div>_____________________________________________________________________<div>
+<span>This email message, including any attachments, may contain confidential and proprietary information for the sole use of the intended recipient. If you are not the intended recipient, please notify the sender and delete this message from your system, without making any copy or distribution. Our website and email privacy policy is available at <a href="https://www.brooks.com/privacy" rel="nofollow noreferrer noopener" target="_blank">https://www.brooks.com/privacy</a></span> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=52771
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.11.2024 07:14:06 +00:00
+UpdatedAt=15.11.2024 07:01:47 +00:00
+
+### ARTICLE01_SUBJECT
+Another Quick Question on Finding the Station Address and Slave ID after ecatConfigureMaster()...
+
+### ARTICLE01_BODY
+<p> </p><div> <div> <div> <p>Hi, Cyril and Daniel,</p>
+<p> </p>
+<p>Another quick question: How can I find out the number of configured/connected slave devices after loading the ENI file?</p>
+<p> </p>
+<p>In Brooks use case, we will first find the robot hardware configuration, identify the type, and then decide which ENI file to load. After loading the hardware configuration, we will then establish the PDI memory layout and link these data to robot controls.</p>
+<p> </p>
+<p>I understand that there exists API <b>“ecatGetNumConfiguredSlaves()”</b> but not the Station Address, which seems to the key on getting all other slave information. </p>
+<p> </p>
+<p>Would you please let me know how to find the Station Address? Or is there an alternative way to get the information of PI input variables (like name and CoE ID)?</p>
+<p> </p>
+<p>Thanks a lot!</p>
+<p>Hsiao-Lung</p>
+<p> </p>
+</div>
+</div>
+</div><div>_____________________________________________________________________<div>
+<span>This email message, including any attachments, may contain confidential and proprietary information for the sole use of the intended recipient. If you are not the intended recipient, please notify the sender and delete this message from your system, without making any copy or distribution. Our website and email privacy policy is available at <a href="https://www.brooks.com/privacy" rel="nofollow noreferrer noopener" target="_blank">https://www.brooks.com/privacy</a></span> </div>
+</div>
+
+### ARTICLE02_HEADER
+Id=52898
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.11.2024 15:30:10 +00:00
+UpdatedAt=15.11.2024 15:30:13 +00:00
+
+### ARTICLE02_SUBJECT
+Another Quick Question on Finding the Station Address and Slave ID after ecatConfigureMaster()...
+
+### ARTICLE02_BODY
+Hi <span>Hsiao-Lung,</span><div><br></div><div>you can look for <span>PrintCfgSlavesInfo </span><span>in EcMasterDemo, the function is going through all the configured slaves.</span><br>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, November 14, 2024 at 8:14:06 AM, Hsiao-Lung Chang wrote:<br><br><p> </p>
+<div> <div> <div> <p>Hi, Cyril and Daniel,</p>
+<p> </p>
+<p>Another quick question: How can I find out the number of configured/connected slave devices after loading the ENI file?</p>
+<p> </p>
+<p>In Brooks use case, we will first find the robot hardware configuration, identify the type, and then decide which ENI file to load. After loading the hardware configuration, we will then establish the PDI memory layout and link these data to robot controls.</p>
+<p> </p>
+<p>I understand that there exists API <b>“ecatGetNumConfiguredSlaves()”</b> but not the Station Address, which seems to the key on getting all other slave information. </p>
+<p> </p>
+<p>Would you please let me know how to find the Station Address? Or is there an alternative way to get the information of PI input variables (like name and CoE ID)?</p>
+<p> </p>
+<p>Thanks a lot!</p>
+<p>Hsiao-Lung</p>
+<p> </p>
+</div>
+</div>
+</div>
+<div>_____________________________________________________________________<div>
+<span>This email message, including any attachments, may contain confidential and proprietary information for the sole use of the intended recipient. If you are not the intended recipient, please notify the sender and delete this message from your system, without making any copy or distribution. Our website and email privacy policy is available at <a href="https://www.brooks.com/privacy" rel="nofollow noreferrer noopener" target="_blank">https://www.brooks.com/privacy</a></span> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

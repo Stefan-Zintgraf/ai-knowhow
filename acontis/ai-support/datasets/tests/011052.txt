@@ -1,0 +1,151 @@
+### HEADER
+Id=11052
+Link=http://at-zammad/#ticket/zoom/11052
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Xiaopeng, IRON Robot (ID=990, Number=990)
+Number=7011052
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=22.07.2025 10:01:59 +00:00
+UpdatedAt=08.08.2025 06:25:04 +00:00
+CloseAt=08.08.2025 06:25:04 +00:00
+ArticlesCount=2
+
+### TITLE
+The customer Xpeng double check about wibu CmASIC support
+
+### ARTICLE00_HEADER
+Id=63403
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.07.2025 10:01:59 +00:00
+UpdatedAt=22.07.2025 10:02:00 +00:00
+
+### ARTICLE00_SUBJECT
+The customer Xpeng double check about wibu CmASIC support
+
+### ARTICLE00_BODY
+<div style="color: #1f497d;">
+<div style=" color: rgb(31, 73, 125);">Dear</div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);">We made a meeting with Xpeng, They are arranging the production plan for the next generation.</span></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);">They consider 2 ways for our protected</span></div>
+<div style=" color: rgb(31, 73, 125);">
+<span style="color: rgb(31, 73, 125);">1- </span>CmASIC, we are preparing the quotation about this part.</div>
+<div style=" color: rgb(31, 73, 125);">We want to double check, Dose the EcMaster wibu support CmAsic, and no cost for CmASIC support?</div>
+<div style=" color: rgb(31, 73, 125);">2- They could provide the Turing UID part usermanual and linux kernel and evalboard in China.</div>
+<div style=" color: rgb(31, 73, 125);">Do you think possiable to integrate into the EcMaster like fingerprint, and the cost?</div>
+<div style=" color: rgb(31, 73, 125);">I think We could prepare a demo integrate into EcMaster or a linux thread when we get it, if it is not too difficult. And we could help to test it.</div>
+<div style=" color: rgb(31, 73, 125);"><br></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);"><br></span></div>
+<div><div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋</div>
+<div>
+<div>
+<br>盟通科技 <br>
+</div>
+<div>Motrotech Technology<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div> <span style=" background-color: rgb(255, 255, 255);">+86-</span> 571- 56125098 （杭州）</div>
+<div>+886-2-25222206 （台北）</div>
+<div>+86-133-72551162</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" title="http://www.motrotech.com/" target="_blank"></a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=63463
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.07.2025 15:56:55 +00:00
+UpdatedAt=22.07.2025 15:56:55 +00:00
+
+### ARTICLE01_SUBJECT
+The customer Xpeng double check about wibu CmASIC support
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>if you think that we can trust the chip unique ID, it would be the best way for all of us.<span style="background-color: initial; color: rgb(88, 88, 86);"> If you cannot send us the HW, we would add some code to read the UID registers according the manual to the fingerprint procedure. We can provide a first test version printing the read values additionally to the finger print.</span>
+</div><div>Because we don't expect other customers to use the Turing chip, we would charge 5000€ to support it.<span style="background-color: initial; color: rgb(88, 88, 86);"></span>
+</div><div><br></div><div>Do you already know which linklayer they need?</div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, July 22, 2025 at 12:01:59 PM, John Zhang wrote:<br><br><div style="color: #1f497d;">
+<div style=" color: rgb(31, 73, 125);">Dear</div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);">We made a meeting with Xpeng, They are arranging the production plan for the next generation.</span></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);">They consider 2 ways for our protected</span></div>
+<div style=" color: rgb(31, 73, 125);">
+<span style="color: rgb(31, 73, 125);">1- </span>CmASIC, we are preparing the quotation about this part.</div>
+<div style=" color: rgb(31, 73, 125);">We want to double check, Dose the EcMaster wibu support CmAsic, and no cost for CmASIC support?</div>
+<div style=" color: rgb(31, 73, 125);">2- They could provide the Turing UID part usermanual and linux kernel and evalboard in China.</div>
+<div style=" color: rgb(31, 73, 125);">Do you think possiable to integrate into the EcMaster like fingerprint, and the cost?</div>
+<div style=" color: rgb(31, 73, 125);">I think We could prepare a demo integrate into EcMaster or a linux thread when we get it, if it is not too difficult. And we could help to test it.</div>
+<div style=" color: rgb(31, 73, 125);"><br></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);"><br></span></div>
+<div><div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋</div>
+<div>
+<div>
+<br>盟通科技 <br>
+</div>
+<div>Motrotech Technology<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div> <span style=" background-color: rgb(255, 255, 255);">+86-</span> 571- 56125098 （杭州）</div>
+<div>+886-2-25222206 （台北）</div>
+<div>+86-133-72551162</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" title="http://www.motrotech.com/" target="_blank"></a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

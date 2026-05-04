@@ -1,0 +1,125 @@
+### HEADER
+Id=10663
+Link=http://at-zammad/#ticket/zoom/10663
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=7010663
+Owner=s.romero@acontis.com (ID=2460, FirstName=Sebastian, LastName=Romero)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=28.05.2025 00:47:27 +00:00
+UpdatedAt=04.06.2025 06:10:39 +00:00
+CloseAt=04.06.2025 06:10:39 +00:00
+ArticlesCount=2
+
+### TITLE
+Some questions about Copy and Paste SubDevices (PNo.30)
+
+### ARTICLE00_HEADER
+Id=61066
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.05.2025 00:47:27 +00:00
+UpdatedAt=28.05.2025 00:47:31 +00:00
+
+### ARTICLE00_SUBJECT
+Some questions about Copy and Paste SubDevices (PNo.30)
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi Support Team,</div><div dir="ltr">
+<br>
+</div><div dir="ltr">This is from Mitsubishi (commission No. 40627).</div><div dir="ltr">
+<br>
+</div><div dir="ltr">Please let me know the meaning of [Selected output port is already connected, select new output port:].</div><div dir="ltr">
+<br>
+</div><div dir="ltr">
+<img src="/api/v1/ticket_attachment/10663/61066/254217?view=inline" alt="image.png" style="max-width:100%;width: 505px;max-height: 278px;width:505px;max-height:278px;">
+</div><div dir="ltr">
+<br>
+</div><div dir="ltr">Next, please refer the attached pdf.</div><div dir="ltr">I$B!G(Bm not sure the reason why Case 1 is OK but Case 2 is NG.</div><div dir="ltr">
+<br>
+</div><div dir="ltr">Best regards,</div><div dir="ltr">Yuichi</div><div dir="ltr"> </div><div>
+<p>- $B%W%m%U%'%C%7%g%J%k=8CD$rL\;X$9#S#S#V%0%k!</p>
+<span class="js-signatureMarker"></span><p>--------------------------------------------------</p>
+<p>$B3t&lt;02q</p>
+<p><span>$B1D6HK\It(B $B4XEl1D6HIt(B | Kanto Sales Dept.<br> $B0f=P(B $BM50l(B | Yuichi Ide<br> $B=;=j(B : $B")(B101-0062 $BEl5~ET@iBeED6h?@ED=Y2OBf(B4-4-1 $B#P#M#O8fCc%N?e(B7$B3,(B</span></p>
+<p>
+<span>7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail : </span><span style=" color: rgb(70, 120, 134);"><u><a href="mailto:yuichi.ide@soft-service.co.jp" title="mailto:yuichi.ide@soft-service.co.jp">yuichi.ide@soft-service.co.jp</a></u></span><span><br> --------------------------------------------------</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=61097
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.05.2025 09:49:19 +00:00
+UpdatedAt=28.05.2025 09:49:21 +00:00
+
+### ARTICLE01_SUBJECT
+Some questions about Copy and Paste SubDevices (PNo.30)
+
+### ARTICLE01_BODY
+Hi Yuichi,<br><br>I remember this problem, it is not so clear, but I will try to explain why is it like this.<br><img style="max-width:100%;width: 379px;max-width: 100%;" src="/api/v1/ticket_attachment/10663/61097/254315?view=inline"><br>The user wants to copy Subdevices 1001-1003 and wants to paste them between the MainDevice and the first Subdevice(1001)<br>The selected output port of parent is easy to understand, the user wants to paste them as "Children" of the MainDevice.<br> Now the not so clear part, "Selected output port is already connected, select new output port" is basically, there were some SubDevices already connected to the port we selected, where does the user wants to connect the Subdevices that were originally conected to this port on the MainDevice. So we have two cases:<br>
+Case 1 (Green):  In this case, the port 1 of the "copied version" of SubDevice_1003 is empty, so selecting this port should not cause any issues. The original SubDevices will be reconnected to the selected port of the new pasted SubDevice. <br>Case 2 (Red): In this case, the port 2 of the "copied version" of SubDevice_1001 is already connected to port 0 of the "copied version" of SubDevice_1003, so trying to reconnect the original SubDevices to this port will cause the original SubDevices to "float as unconnected". If the pasted SubDevice that was connected to the selected port is deleted, then the original SubDevices will be reconnected to the selected port.<br>
+After pasting the SubDevices, the copied SubDevices recieved a new unique ID. 
+
+But before that, they are just copies of the original devices.<br><br><div>Best regards</div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Sebastian Romero</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Wednesday, May 28, 2025 at 2:47:27 AM, Yuichi Ide wrote:<br><br><div dir="ltr">Hi Support Team,</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">This is from Mitsubishi (commission No. 40627).</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Please let me know the meaning of [Selected output port is already connected, select new output port:].</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">
+<img src="/api/v1/ticket_attachment/10663/61097/254316?view=inline" alt="image.png" style="max-width:100%;max-width:100%;width: 505px;max-height: 278px;width:505px;max-height:278px;">
+</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Next, please refer the attached pdf.</div>
+<div dir="ltr">I$B!G(Bm not sure the reason why Case 1 is OK but Case 2 is NG.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Best regards,</div>
+<div dir="ltr">Yuichi</div>
+<div dir="ltr"> </div>
+<div>
+<p>- $B%W%m%U%'%C%7%g%J%k=8CD$rL\;X$9#S#S#V%0%k!</p>
+<span class="js-signatureMarker"></span><p>--------------------------------------------------</p>
+<p>$B3t&lt;02q</p>
+<p><span>$B1D6HK\It(B $B4XEl1D6HIt(B | Kanto Sales Dept.<br> $B0f=P(B $BM50l(B | Yuichi Ide<br> $B=;=j(B : $B")(B101-0062 $BEl5~ET@iBeED6h?@ED=Y2OBf(B4-4-1 $B#P#M#O8fCc%N?e(B7$B3,(B</span></p>
+<p>
+<span>7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail : </span><span style=" color: rgb(70, 120, 134);"><u><a href="mailto:yuichi.ide@soft-service.co.jp" title="mailto:yuichi.ide@soft-service.co.jp">yuichi.ide@soft-service.co.jp</a></u></span><span><br> --------------------------------------------------</span></p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

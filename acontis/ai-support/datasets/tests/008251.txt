@@ -1,0 +1,231 @@
+### HEADER
+Id=8251
+Link=http://at-zammad/#ticket/zoom/8251
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=708251
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=paul@deltamotion.com (ID=659, FirstName=Paul, LastName=Huumala)
+CreatedBy=paul@deltamotion.com (ID=659, FirstName=Paul, LastName=Huumala)
+Type=
+TimeUnit=
+CreatedAt=05.06.2024 18:37:54 +00:00
+UpdatedAt=12.06.2024 06:00:44 +00:00
+CloseAt=12.06.2024 06:00:44 +00:00
+ArticlesCount=3
+
+### TITLE
+Help hiding tasks  but showing sync units
+
+### ARTICLE00_HEADER
+Id=45642
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.06.2024 18:37:54 +00:00
+UpdatedAt=05.06.2024 18:38:04 +00:00
+
+### ARTICLE00_SUBJECT
+Help hiding tasks  but showing sync units
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>I have a question on a Delta specific feature. I think this is something you won’t want to implement but was hoping you could give me a little direction anyway. We are trying to add a feature where we remove the Tasks aspect of the Sync Units tab. We have this almost working but the UI doesn’t refresh automatically. If we click New to add a new tasks, the Task is added but doesn’t show up until we press F5 or leave the tab and return to it.</p>
+<p> </p>
+<p>Below is the UI with the changes listed below. This look like we desire, but we can’t get the changes to show up the UI. Can you give me some ideas on what we could do differently so UI refresh will work?</p>
+<p> </p>
+<p><img style="max-width:100%;width:7.9166in;max-height:4.3645in;width:760px;max-height:419px;" src="/api/v1/ticket_attachment/8251/45642/188203?view=inline"></p>
+<p> </p>
+<p>Below are the changes we’ve made to the XAML. Everything works except the UI doesn’t refresh when expected.</p>
+<p><img style="max-width:100%;width:19.2916in;max-height:9.7395in;width:1852px;max-height:935px;" src="/api/v1/ticket_attachment/8251/45642/188204?view=inline"></p>
+<p> </p>
+<p>Below are the key changes we’ve made to CfgMasterCyclicTasks. The attached file also contains some other changes we’ve made to try get the UI to refresh.</p>
+<p><img style="max-width:100%;width:11.9583in;max-height:5.625in;width:1148px;max-height:540px;" src="/api/v1/ticket_attachment/8251/45642/188205?view=inline"></p>
+<p> </p>
+<p>Also attached these two files for your reference. They may have other unrelated changes in them.</p>
+<p> </p>
+<p>Thanks!</p>
+<p> </p>
+<p>Paul</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=45689
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.06.2024 12:21:31 +00:00
+UpdatedAt=06.06.2024 12:21:35 +00:00
+
+### ARTICLE01_SUBJECT
+Help hiding tasks  but showing sync units
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>your problem is that after pressing "new" button the list will be not updated?</div><div>
+<span>If yes, attached you can find the fixed version "</span><span>CfgMasterCyclicTasks.cs".</span><br>
+</div><div><span><br></span></div><div><span>I added also some comments and tried to explain the basic concept.</span></div><div><span><br></span></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, June 5, 2024 at 8:37:54 PM, Paul Huumala wrote:<br><br><div>
+<p>Hello,</p>
+<p> </p>
+<p>I have a question on a Delta specific feature. I think this is something you won’t want to implement but was hoping you could give me a little direction anyway. We are trying to add a feature where we remove the Tasks aspect of the Sync Units tab. We have this almost working but the UI doesn’t refresh automatically. If we click New to add a new tasks, the Task is added but doesn’t show up until we press F5 or leave the tab and return to it.</p>
+<p> </p>
+<p>Below is the UI with the changes listed below. This look like we desire, but we can’t get the changes to show up the UI. Can you give me some ideas on what we could do differently so UI refresh will work?</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:7.9166in;max-height:4.3645in;width:760px;max-height:419px;" src="/api/v1/ticket_attachment/8251/45689/188430?view=inline"></p>
+<p> </p>
+<p>Below are the changes we’ve made to the XAML. Everything works except the UI doesn’t refresh when expected.</p>
+<p><img style="max-width:100%;max-width:100%;width:19.2916in;max-height:9.7395in;width:1852px;max-height:935px;" src="/api/v1/ticket_attachment/8251/45689/188431?view=inline"></p>
+<p> </p>
+<p>Below are the key changes we’ve made to CfgMasterCyclicTasks. The attached file also contains some other changes we’ve made to try get the UI to refresh.</p>
+<p><img style="max-width:100%;max-width:100%;width:11.9583in;max-height:5.625in;width:1148px;max-height:540px;" src="/api/v1/ticket_attachment/8251/45689/188432?view=inline"></p>
+<p> </p>
+<p>Also attached these two files for your reference. They may have other unrelated changes in them.</p>
+<p> </p>
+<p>Thanks!</p>
+<p> </p>
+<p>Paul</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=45790
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.06.2024 15:23:48 +00:00
+UpdatedAt=07.06.2024 15:23:48 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Help hiding tasks  but showing sync units [Ticket#708251]
+
+### ARTICLE02_BODY
+<div>
+<p>Hi Martin,</p>
+<p> </p>
+<p>That worked well, thank you for sharing that.</p>
+<p> </p>
+<p>Paul</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b><span> Martin Gaenzer via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Thursday, June 6, 2024 5:22 AM<br>
+<b>To:</b> Paul Huumala &lt;Paul@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: Help hiding tasks but showing sync units [Ticket#708251]</span></p>
+</div>
+</div>
+<p> </p>
+<p>Hi,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>your problem is that after pressing "new" button the list will be not updated?</p>
+</div>
+<div>
+<p>If yes, attached you can find the fixed version "CfgMasterCyclicTasks.cs".</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>I added also some comments and tried to explain the basic concept.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Martin</p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Martin Gaenzer</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Wednesday, June 5, 2024 at 8:37:54 PM, Paul Huumala wrote:</p>
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>I have a question on a Delta specific feature. I think this is something you won’t want to implement but was hoping you could give me a little direction anyway. We are trying to add a feature where we remove the Tasks aspect of the Sync Units tab. We have this almost working but the UI doesn’t refresh automatically. If we click New to add a new tasks, the Task is added but doesn’t show up until we press F5 or leave the tab and return to it.</p>
+<p> </p>
+<p>Below is the UI with the changes listed below. This look like we desire, but we can’t get the changes to show up the UI. Can you give me some ideas on what we could do differently so UI refresh will work?</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:7.9166in;max-height:4.3645in;width:760px;max-height:419px;" src="/api/v1/ticket_attachment/8251/45790/188974?view=inline"></p>
+<p> </p>
+<p>Below are the changes we’ve made to the XAML. Everything works except the UI doesn’t refresh when expected.</p>
+<p><img border="0" style="max-width:100%;width:18.75in;max-height:9.4687in;width:1800px;max-height:909px;" src="/api/v1/ticket_attachment/8251/45790/188975?view=inline"></p>
+<p> </p>
+<p>Below are the key changes we’ve made to CfgMasterCyclicTasks. The attached file also contains some other changes we’ve made to try get the UI to refresh.</p>
+<p><img border="0" style="max-width:100%;width:11.9583in;max-height:5.625in;width:1148px;max-height:540px;" src="/api/v1/ticket_attachment/8251/45790/188976?view=inline"></p>
+<p> </p>
+<p>Also attached these two files for your reference. They may have other unrelated changes in them.</p>
+<p> </p>
+<p>Thanks!</p>
+<p> </p>
+<p>Paul</p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

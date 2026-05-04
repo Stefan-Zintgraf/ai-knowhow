@@ -1,0 +1,179 @@
+### HEADER
+Id=11463
+Link=http://at-zammad/#ticket/zoom/11463
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vector Informatik GmbH (ID=167, Number=40366, Country=DE)
+Commission=Vector Simulations AG, Unknown (ID=514, Number=514)
+Number=7011463
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+CreatedBy=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+Type=
+TimeUnit=
+CreatedAt=23.09.2025 14:56:08 +00:00
+UpdatedAt=18.11.2025 12:46:35 +00:00
+CloseAt=06.10.2025 06:08:04 +00:00
+ArticlesCount=3
+
+### TITLE
+EcSimulator Konfiguration mit 2 Netzwerken
+
+### ARTICLE00_HEADER
+Id=66245
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.09.2025 14:56:08 +00:00
+UpdatedAt=23.09.2025 14:56:11 +00:00
+
+### ARTICLE00_SUBJECT
+EcSimulator Konfiguration mit 2 Netzwerken
+
+### ARTICLE00_BODY
+<div>
+<p>Guten Tag,</p>
+<p>ich versuche gerade, einen Ec-Simulator mit 3 Netzwerken zu konfigurieren. Ich habe den folgenden Aufbau angelegt:</p>
+<p><img style="max-width:100%;width:3.3854in;max-height:2.1041in;" src="/api/v1/ticket_attachment/11463/66245/276258?view=inline"></p>
+<p>Das Ec-Engineer-Projekt ist im Anhang zu finden. Ich habe den Ec-Enigeer mit den Komandozeilenparametern aus der Datei Comandline_Parameter.txt aufgerufen und es wurden die Dateien 2Sim_1.exi und 2Sim_2.exi erstellt. Allerdings sind die beiden *.exi Dateien binär identisch und enthalten die Daten des Netzwerks Sim1. Ist an den Komandozeilemparametern etwas falsch, so dass nur das erste Netzwerk exportiert wird?</p>
+<p>Wenn ich von Hand „Export EXI“ für das zweite Netzwerk aufrufe, werden die Daten dieses Netzes exportiert (siehe Sim2.xml).</p>
+<p> </p>
+<p>Grüße / Regards,</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>----------------------------------------------</p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">VG/PND10</span></p>
+<p><span lang="EN-US">Tel.: +49 711 80670-4791</span></p>
+<p>----------------------------------------------</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=66263
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.09.2025 06:15:29 +00:00
+UpdatedAt=24.09.2025 06:15:31 +00:00
+
+### ARTICLE01_SUBJECT
+EcSimulator Konfiguration mit 2 Netzwerken
+
+### ARTICLE01_BODY
+Hallo Herr Lange,<div><br></div><div>das ist ein Bug im EC-Engineer. Für den Simulator wird immer nur das erste Device exportiert. Egal wie die CommandLine lautet. Ich habe das jetzt gefixt / hinzugefügt.</div><div>Kommt mit der nächsten Version.</div><div><br></div><div>Viele Grüße</div><div>Kai Feifel</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, September 23, 2025 at 4:56:08 PM, Tobias Lange wrote:<br><br><div>
+<p>Guten Tag,</p>
+<p>ich versuche gerade, einen Ec-Simulator mit 3 Netzwerken zu konfigurieren. Ich habe den folgenden Aufbau angelegt:</p>
+<p><img style="max-width:100%;max-width:100%;width:3.3854in;max-height:2.1041in;" src="/api/v1/ticket_attachment/11463/66263/276319?view=inline"></p>
+<p>Das Ec-Engineer-Projekt ist im Anhang zu finden. Ich habe den Ec-Enigeer mit den Komandozeilenparametern aus der Datei Comandline_Parameter.txt aufgerufen und es wurden die Dateien 2Sim_1.exi und 2Sim_2.exi erstellt. Allerdings sind die beiden *.exi Dateien binär identisch und enthalten die Daten des Netzwerks Sim1. Ist an den Komandozeilemparametern etwas falsch, so dass nur das erste Netzwerk exportiert wird?</p>
+<p>Wenn ich von Hand „Export EXI“ für das zweite Netzwerk aufrufe, werden die Daten dieses Netzes exportiert (siehe Sim2.xml).</p>
+<p> </p>
+<p>Grüße / Regards,</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>----------------------------------------------</p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">VG/PND10</span></p>
+<p><span lang="EN-US">Tel.: +49 711 80670-4791</span></p>
+<p>----------------------------------------------</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=68698
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.11.2025 12:46:34 +00:00
+UpdatedAt=18.11.2025 12:46:35 +00:00
+
+### ARTICLE02_SUBJECT
+EcSimulator Konfiguration mit 2 Netzwerken
+
+### ARTICLE02_BODY
+<div>Hallo Herr Lange,</div><div><br></div><div>anbei die neue Version:</div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/2025/V-Z/Vector_Informatik_(40366)(DE)/EC-Engineer_OEM/3.9.16/EC-Engineer_OEM_V3.9.16.zip" title="https://downloads.acontis.com/2025/V-Z/Vector_Informatik_(40366)(DE)/EC-Engineer_OEM/3.9.16/EC-Engineer_OEM_V3.9.16.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/V-Z/Vector_Informatik_(40366)(DE)/EC-Engineer_OEM/3.9.16/EC-Engineer_OEM_V3.9.16.zip</a></div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2025/V-Z/Vector_Informatik_(40366)(DE)/EC-Engineer_OEM/3.9.16/EC-Engineer_SDK_Brand_Labeling_Layer1_V3.9.16.zip" title="https://downloads.acontis.com/2025/V-Z/Vector_Informatik_(40366)(DE)/EC-Engineer_OEM/3.9.16/EC-Engineer_SDK_Brand_Labeling_Layer1_V3.9.16.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/V-Z/Vector_Informatik_(40366)(DE)/EC-Engineer_OEM/3.9.16/EC-Engineer_SDK_Brand_Labeling_Layer1_V3.9.16.zip</a></div>
+<div><br></div>
+<div>Viele Grüße</div>
+<div>Kai Feifel</div>
+<br>
+</div><div><blockquote type="cite">On Wednesday, September 24, 2025 at 8:15:29 AM, Kai Feifel via EC-Support wrote:<br><br>Hallo Herr Lange,<div><br></div>
+<div>das ist ein Bug im EC-Engineer. Für den Simulator wird immer nur das erste Device exportiert. Egal wie die CommandLine lautet. Ich habe das jetzt gefixt / hinzugefügt.</div>
+<div>Kommt mit der nächsten Version.</div>
+<div><br></div>
+<div>Viele Grüße</div>
+<div>Kai Feifel</div>
+<div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, September 23, 2025 at 4:56:08 PM, Tobias Lange wrote:<br><br><div>
+<p>Guten Tag,</p>
+<p>ich versuche gerade, einen Ec-Simulator mit 3 Netzwerken zu konfigurieren. Ich habe den folgenden Aufbau angelegt:</p>
+<p><img style="max-width:100%;max-width:100%;max-width:100%;width:3.3854in;max-height:2.1041in;" src="/api/v1/ticket_attachment/11463/68698/287603?view=inline"></p>
+<p>Das Ec-Engineer-Projekt ist im Anhang zu finden. Ich habe den Ec-Enigeer mit den Komandozeilenparametern aus der Datei Comandline_Parameter.txt aufgerufen und es wurden die Dateien 2Sim_1.exi und 2Sim_2.exi erstellt. Allerdings sind die beiden *.exi Dateien binär identisch und enthalten die Daten des Netzwerks Sim1. Ist an den Komandozeilemparametern etwas falsch, so dass nur das erste Netzwerk exportiert wird?</p>
+<p>Wenn ich von Hand „Export EXI“ für das zweite Netzwerk aufrufe, werden die Daten dieses Netzes exportiert (siehe Sim2.xml).</p>
+<p> </p>
+<p>Grüße / Regards,</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>----------------------------------------------</p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">VG/PND10</span></p>
+<p><span lang="EN-US">Tel.: +49 711 80670-4791</span></p>
+<p>----------------------------------------------</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+<br>
+</blockquote></div><div><br></div>

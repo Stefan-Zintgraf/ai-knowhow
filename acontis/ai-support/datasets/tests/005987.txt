@@ -1,0 +1,148 @@
+### HEADER
+Id=5987
+Link=http://at-zammad/#ticket/zoom/5987
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=705987
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=18.07.2023 03:00:52 +00:00
+UpdatedAt=24.07.2023 06:04:52 +00:00
+CloseAt=24.07.2023 06:04:52 +00:00
+ArticlesCount=3
+
+### TITLE
+Software/Hardware Diagnostics suggestion
+
+### ARTICLE00_HEADER
+Id=31921
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.07.2023 03:00:52 +00:00
+UpdatedAt=18.07.2023 03:00:56 +00:00
+
+### ARTICLE00_SUBJECT
+Software/Hardware Diagnostics suggestion
+
+### ARTICLE00_BODY
+<div>
+<p>In V3.8.1, we found the new help icons after “Software Diagnostics” and “Hardware Diagnostics” to be confusing.</p>
+<p> </p>
+<p>It looked to us like the user would receive information on what the feature is (rather than analysis on the information actually shown). We were particularly confused when there were no errors and the “help” buttons were shown but did nothing.</p>
+<p> </p>
+<p>After understanding what the feature is, we decided to move this button to a new location with the text “Analyze”. Another possible name for this button would be “More Info”. This seems easier to understand, especially when it is disabled because there are no errors.</p>
+<p> </p>
+<p><img style="max-width:100%;width:5.0312in;max-height:2.7291in;width:483px;max-height:262px;" src="/api/v1/ticket_attachment/5987/31921/132723?view=inline" alt="A screenshot of a computer
+
+Description automatically generated"></p>
+<p> </p>
+<p>I have attached our updated copy of <b>SlaveDiagGeneralTabView.xaml</b>.</p>
+<p> </p>
+<p>Notice that it there is a small bug that becomes visible with this change. The bug is that the enable/disable status of the Analyze button is not updated when errors are cleared using the Acknowledge button. The Analyze button gets left enabled even though there are no errors.</p>
+<p> </p>
+<p>Are you guys interested in adopting this alternate interface for the additional info? It is OK if not, of course. We can just have the different XAML in our product.</p>
+<p> </p>
+<p><b>Question:</b> Does the “Acknowledge” button only acknowledge Hardware Diagnostics errors? Or does it also acknowledge Software Diagnostics errors? If it does both, then its position under “Hardware Diagnostics” might be confusing.</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Computer Systems, Inc.<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank">+1-360-254-8688</a><span style="color:#2a2a2a;"><br> Direct: </span><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank">+1-360-702-0150</a><br>
+</span><a href="mailto:quintont@deltamotion.com">quintont@deltamotion.com</a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=31932
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=18.07.2023 06:45:43 +00:00
+UpdatedAt=18.07.2023 06:45:43 +00:00
+
+### ARTICLE01_BODY
+Kannst du entscheiden was dir besser gefällt. Christoph wollte ja glaub ich das Fragezeichen Icon
+
+### ARTICLE02_HEADER
+Id=31992
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.07.2023 11:22:02 +00:00
+UpdatedAt=19.07.2023 11:22:05 +00:00
+
+### ARTICLE02_SUBJECT
+Software/Hardware Diagnostics suggestion
+
+### ARTICLE02_BODY
+  Hi,<div><br></div><div>see answers below.</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature-id="2"></div>
+</div><div data-signature="true" data-signature-id="2">
+<div><br></div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div>
+<blockquote type="cite">On Tuesday, July 18, 2023 at 5:00:52 AM, Quinton Tormanen wrote:<br><br><div>
+<p>In V3.8.1, we found the new help icons after “Software Diagnostics” and “Hardware Diagnostics” to be confusing.</p>
+<p> </p>
+<p>It looked to us like the user would receive information on what the feature is (rather than analysis on the information actually shown). We were particularly confused when there were no errors and the “help” buttons were shown but did nothing.</p>
+<p> </p>
+<p>After understanding what the feature is, we decided to move this button to a new location with the text “Analyze”. Another possible name for this button would be “More Info”. This seems easier to understand, especially when it is disabled because there are no errors.</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:5.0312in;max-height:2.7291in;width:483px;max-height:262px;" src="/api/v1/ticket_attachment/5987/31992/132972?view=inline" alt="A screenshot of a computer
+
+Description automatically generated"></p>
+<p> </p>
+<p>I have attached our updated copy of <b>SlaveDiagGeneralTabView.xaml</b>.</p>
+<p>MG: May be "more info" would be better, because this button shows simply more information or a help text. The analysis was already done before in background.</p>
+<p> </p>
+<p>Notice that it there is a small bug that becomes visible with this change. The bug is that the enable/disable status of the Analyze button is not updated when errors are cleared using the Acknowledge button. The Analyze button gets left enabled even though there are no errors.</p>
+<p>MG: Yes, this is a bug. It seams that after click on "Acknowlege" the device editor will loose the focus. This causes that the dialog will be not reloaded correctly. If you click somewhere into the device editor, it will get the focus and the dialog will be reloaded:</p>
+<p><br></p>
+<p><img src="/api/v1/ticket_attachment/5987/31992/132973?view=inline" style="max-width:100%;width: 1000px;max-width: 100%;">... <span> I will open an issue for that, because I don't know how to fix it now.</span><span> </span><br></p>
+</div>
+</blockquote>
+<blockquote type="cite">
+<div>
+<p> </p>
+<p>Are you guys interested in adopting this alternate interface for the additional info? It is OK if not, of course. We can just have the different XAML in our product.</p>
+<p>MG: Sorry we will not change this. We had a lot of discussions until we decided to implement it like it is now.</p>
+<p><br></p>
+<p><b>Question:</b> Does the “Acknowledge” button only acknowledge Hardware Diagnostics errors? Or does it also acknowledge Software Diagnostics errors? If it does both, then its position under “Hardware Diagnostics” might be confusing.</p>
+<p>MG: This button acknowlegde only hardware diagnostics.</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Computer Systems, Inc.<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank">+1-360-254-8688</a><span style="color:#2a2a2a;"><br> Direct: </span><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank">+1-360-702-0150</a><br>
+</span><a href="mailto:quintont@deltamotion.com">quintont@deltamotion.com</a></p>
+<p> </p>
+</div>
+<br>
+</blockquote>
+</div><div><br></div><br><br>

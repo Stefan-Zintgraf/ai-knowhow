@@ -1,0 +1,165 @@
+### HEADER
+Id=8150
+Link=http://at-zammad/#ticket/zoom/8150
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=firstd, Unknown (ID=919, Number=919)
+Number=708150
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=22.05.2024 10:59:18 +00:00
+UpdatedAt=03.06.2024 06:01:00 +00:00
+CloseAt=03.06.2024 06:01:00 +00:00
+ArticlesCount=3
+
+### TITLE
+The potential customer firstd requirement for semidrive D9
+
+### ARTICLE00_HEADER
+Id=44945
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.05.2024 10:59:18 +00:00
+UpdatedAt=22.05.2024 10:59:22 +00:00
+
+### ARTICLE00_SUBJECT
+The potential customer firstd requirement for semidrive D9
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>The potential customer want to order the porting for the semidrive D9, But the time is not enough.</div>
+<div>We had order a eval board from semidrive, But the sylios told the customer and us, they suggest to changing another evalboard. And the customer didn't make sure the evalboard they plan to porting until now.</div>
+<div>But the different between the eval board is phy, we bought the board with YT 8521, the sylixos eval board integrate the YT8531SH.</div>
+<div>If we send the eval board with YT8531SH to your side, Do you think it will have some problem when they run in <span style="color:#1f497d;">the board with YT 8521?</span>
+</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=44952
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=22.05.2024 11:41:42 +00:00
+UpdatedAt=22.05.2024 11:41:42 +00:00
+
+### ARTICLE01_BODY
+<div>Phylib supports:</div><div>Motorcomm YT8511</div><div>Motorcomm YT8521</div><div>Motorcomm YT8531</div><div><br></div>
+
+### ARTICLE02_HEADER
+Id=44954
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.05.2024 11:57:34 +00:00
+UpdatedAt=22.05.2024 11:57:36 +00:00
+
+### ARTICLE02_SUBJECT
+The potential customer firstd requirement for semidrive D9
+
+### ARTICLE02_BODY
+Hi John<div><br></div><div>
+<div>
+<div>For the various Rockschip board we had some Motorcomm PHYs</div>
+<div>Motorcomm YT8511</div>
+<div>Motorcomm YT8521</div>
+<div>Motorcomm YT8531</div>
+</div>
+<div>All have the same initialization.</div>
+<div><br></div>
+<div>You have a rk3568 dev board with a YT8521, while the eval board is with <span>YT8531</span><span>.</span>
+</div>
+<div>For this we had to adjust a Phy RX TX Delay value</div>
+<div><br></div>
+<div>Best Regards</div>
+<div>Daniel</div>
+<div><br></div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, 22 May 2024 at 12:59:18, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>The potential customer want to order the porting for the semidrive D9, But the time is not enough.</div>
+<div>We had order a eval board from semidrive, But the sylios told the customer and us, they suggest to changing another evalboard. And the customer didn't make sure the evalboard they plan to porting until now.</div>
+<div>But the different between the eval board is phy, we bought the board with YT 8521, the sylixos eval board integrate the YT8531SH.</div>
+<div>If we send the eval board with YT8531SH to your side, Do you think it will have some problem when they run in <span style="color:#1f497d;">the board with YT 8521?</span>
+</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

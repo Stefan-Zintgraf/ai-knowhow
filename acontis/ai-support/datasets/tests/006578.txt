@@ -1,0 +1,140 @@
+### HEADER
+Id=6578
+Link=http://at-zammad/#ticket/zoom/6578
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vector Informatik GmbH (ID=167, Number=40366, Country=DE)
+Commission=Vector Simulations AG, Unknown (ID=514, Number=514)
+Number=706578
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+CreatedBy=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+Type=
+TimeUnit=
+CreatedAt=16.10.2023 07:36:27 +00:00
+UpdatedAt=19.10.2023 06:13:52 +00:00
+CloseAt=19.10.2023 06:13:52 +00:00
+ArticlesCount=3
+
+### TITLE
+Enum Support im EC-Engineer-Diagnosis Mode
+
+### ARTICLE00_HEADER
+Id=35513
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.10.2023 07:36:27 +00:00
+UpdatedAt=16.10.2023 07:36:29 +00:00
+
+### ARTICLE00_SUBJECT
+Enum Support im EC-Engineer-Diagnosis Mode
+
+### ARTICLE00_BODY
+<div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>ein Kunde hat eine Konfiguration mit einem Enum-Datentyp erstellt. Dieser wird in der Konfiguration wir erwartet angezeigt. Im Diagnosis Mode wird der Datentyp allerdings als „unknown“ angezeigt und die Werte müssen als Ganzzahl angegeben werden (z.B. 01 für einen Enum-Wert 1). Ist eine direkte Verwendung von Enum-Datentypen im Diagnosis-Mode denkbar / gelpant, oder ist diese grundsätzlich nicht möglich?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>-----------------------------------------------------</p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">PND10</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><b><span lang="EN-US">Vector Informatik GmbH</span></b><span lang="EN-US"></span></p>
+<p>Besucheranschrift: Holderäckerstraße 36 | 70499 Stuttgart | Deutschland</p>
+<p><span>Tel.: +49 711 80670-4791 <p> </p></span></p>
+<p><span lang="EN-US"><a href="mailto:tobias.lange@vector.com"><span lang="DE" style="color:blue;">tobias.lange@vector.com</span></a></span></p>
+<p><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.vector.com</span></a></p>
+<p> </p>
+<p>Sitz der Gesellschaft: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p>Handelsregister: Amtsgericht Stuttgart | HRB 17317</p>
+<p>Geschäftsführer: Dr. Thomas Beck, Dr. Stefan Krauß, Thomas Riegraf</p>
+<p><span lang="EN-US">-----------------------------------------------------</span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=35522
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=16.10.2023 09:08:21 +00:00
+UpdatedAt=16.10.2023 09:08:21 +00:00
+
+### ARTICLE01_BODY
+@Christoph:<div>Her Lange möchte, dass wir hier im Diagnose Modus anstatt Unknown auch wie im Config Modus das richtige ENUM anzeigen:</div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/6578/35522/148638?view=inline"><br>
+</div><div><br></div><div>Derzeit zeigen wir hier nur die Daten an die wir vom Master bekommen. Aber ich denke wir können das schon verbessern.</div><div><br></div><div>Den Datentyp könnten wir ggfs. aus dem OD auslesen, sofern verfügbar:</div><div><br></div><div>
+<img style="max-width:100%;width: 665px;max-width: 100%;" src="/api/v1/ticket_attachment/6578/35522/148639?view=inline"><br>
+</div><div><br></div><div>Sollen wir hier was machen? Denke in 1-2 Tagen kommt man hier schon weit.</div>
+
+### ARTICLE02_HEADER
+Id=35529
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.10.2023 11:04:23 +00:00
+UpdatedAt=16.10.2023 11:04:24 +00:00
+
+### ARTICLE02_SUBJECT
+Enum Support im EC-Engineer-Diagnosis Mode
+
+### ARTICLE02_BODY
+Hallo Herr Lange,<div><br></div><div>sofern das ESI der jeweiligen Klemme verfügbar ist, ist das grundsätzlich möglich.</div><div>Ich werde das auf unsere TODO schreiben.</div><div><br></div><div>Mit freundlichen Grüßen</div><div>Martin Gänzer</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, October 16, 2023 at 9:36:27 AM, Tobias Lange wrote:<br><br><div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>ein Kunde hat eine Konfiguration mit einem Enum-Datentyp erstellt. Dieser wird in der Konfiguration wir erwartet angezeigt. Im Diagnosis Mode wird der Datentyp allerdings als „unknown“ angezeigt und die Werte müssen als Ganzzahl angegeben werden (z.B. 01 für einen Enum-Wert 1). Ist eine direkte Verwendung von Enum-Datentypen im Diagnosis-Mode denkbar / gelpant, oder ist diese grundsätzlich nicht möglich?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>-----------------------------------------------------</p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">PND10</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><b><span lang="EN-US">Vector Informatik GmbH</span></b><span lang="EN-US"></span></p>
+<p>Besucheranschrift: Holderäckerstraße 36 | 70499 Stuttgart | Deutschland</p>
+<p><span>Tel.: +49 711 80670-4791 </span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"><a href="mailto:tobias.lange@vector.com"><span lang="DE" style="color:blue;">tobias.lange@vector.com</span></a></span></p>
+<p><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.vector.com</span></a></p>
+<p> </p>
+<p>Sitz der Gesellschaft: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p>Handelsregister: Amtsgericht Stuttgart | HRB 17317</p>
+<p>Geschäftsführer: Dr. Thomas Beck, Dr. Stefan Krauß, Thomas Riegraf</p>
+<p><span lang="EN-US">-----------------------------------------------------</span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

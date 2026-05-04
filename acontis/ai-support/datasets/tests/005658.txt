@@ -1,0 +1,196 @@
+### HEADER
+Id=5658
+Link=http://at-zammad/#ticket/zoom/5658
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Soft Service, Generic (ID=476, Number=476)
+Number=705658
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=30.05.2023 04:18:46 +00:00
+UpdatedAt=20.06.2023 06:11:35 +00:00
+CloseAt=20.06.2023 06:11:35 +00:00
+ArticlesCount=3
+
+### TITLE
+How to use Slave-to-Slave function with Cable Redundancy
+
+### ARTICLE00_HEADER
+Id=30204
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.05.2023 04:18:46 +00:00
+UpdatedAt=30.05.2023 04:18:51 +00:00
+
+### ARTICLE00_SUBJECT
+How to use Slave-to-Slave function with Cable Redundancy
+
+### ARTICLE00_BODY
+<div>Hi Support team,</div><div> </div><div>The manual of EC-Engineer mention that LRD is needed when Slave-to-Slave is used.</div><div>But if users would like to use Cable Redundancy, they have to disabled LRW.</div><div> </div><div>If users would like to Slave-to-Slave with Cable Redundancy, How should they do?</div><div> </div><div>Best regards,</div><div>Yuichi</div><div> </div><div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 カスタマーサクセスＢＵ | Customer Success BU<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=30211
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.05.2023 07:18:52 +00:00
+UpdatedAt=30.05.2023 07:18:52 +00:00
+
+### ARTICLE01_SUBJECT
+How to use Slave-to-Slave function with Cable Redundancy
+
+### ARTICLE01_BODY
+Hi Support Team, <div> </div><div>Sorry, I took mistakes…</div><div> </div><div>
+<div>The manual of EC-Engineer mentions that <b>LRW</b> is needed when Slave-to-Slave is used.</div>
+<div>But if users would like to use Cable Redundancy, they have to disabled LRW.</div>
+<div> </div>
+<div>If users would like to Slave-to-Slave with Cable Redundancy, How should they do?</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 カスタマーサクセスＢＵ | Customer Success BU<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+<div>
+<br>
+<blockquote type="cite">
+<div>2023/05/30 12:18、SSV_IDEYuichi &lt;yuichi.ide@soft-service.co.jp&gt;のメール:</div>
+<br>
+<div>
+<div>
+<div>Hi Support team,</div>
+<div> </div>
+<div>The manual of EC-Engineer mention that LRD is needed when Slave-to-Slave is used.</div>
+<div>But if users would like to use Cable Redundancy, they have to disabled LRW.</div>
+<div> </div>
+<div>If users would like to Slave-to-Slave with Cable Redundancy, How should they do?</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 カスタマーサクセスＢＵ | Customer Success BU<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+<br>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE02_HEADER
+Id=30223
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.05.2023 08:19:46 +00:00
+UpdatedAt=30.05.2023 08:19:49 +00:00
+
+### ARTICLE02_SUBJECT
+How to use Slave-to-Slave function with Cable Redundancy
+
+### ARTICLE02_BODY
+Hi,<div><br></div><div>In-Cycle Slave-to-Slave copy will not work with cable redundancy! But default Slave-to-Slave Copy should work!</div><div>The default Copy costs you two cycles, in the first cycle the Master read the process data from the first slave and store it  and in the second cycle it writes it to the second slave!</div><div>You can configure this in EC-Engineer under the Slave to Slave tab: Select Default and map your Slave-to-Slave copies</div><div><br></div><div><br></div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/5658/30223/126485?view=inline"><br>
+</div><div><br></div><div>Best Regards</div><div>Haithem Jebali</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, May 30, 2023 at 9:18:52 AM, Yuichi Ide wrote:<br><br>Hi Support Team, <div> </div>
+<div>Sorry, I took mistakes…</div>
+<div> </div>
+<div>
+<div>The manual of EC-Engineer mentions that <b>LRW</b> is needed when Slave-to-Slave is used.</div>
+<div>But if users would like to use Cable Redundancy, they have to disabled LRW.</div>
+<div> </div>
+<div>If users would like to Slave-to-Slave with Cable Redundancy, How should they do?</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 カスタマーサクセスＢＵ | Customer Success BU<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+<div>
+<br>
+<blockquote type="cite">
+<div>2023/05/30 12:18、SSV_IDEYuichi &lt;yuichi.ide@soft-service.co.jp&gt;のメール:</div>
+<br>
+<div>
+<div>
+<div>Hi Support team,</div>
+<div> </div>
+<div>The manual of EC-Engineer mention that LRD is needed when Slave-to-Slave is used.</div>
+<div>But if users would like to use Cable Redundancy, they have to disabled LRW.</div>
+<div> </div>
+<div>If users would like to Slave-to-Slave with Cable Redundancy, How should they do?</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 カスタマーサクセスＢＵ | Customer Success BU<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+<br>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

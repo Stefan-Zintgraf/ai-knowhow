@@ -1,0 +1,110 @@
+### HEADER
+Id=11901
+Link=http://at-zammad/#ticket/zoom/11901
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Lam Research Corporation (ID=363, Number=55504, Country=US)
+Commission=LAM, Semi EC-Master Linux (ID=431, Number=431)
+Number=7011901
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=thaotam.trinh@lamresearch.com (ID=50, FirstName=Thaotam, LastName=Trinh)
+CreatedBy=thaotam.trinh@lamresearch.com (ID=50, FirstName=Thaotam, LastName=Trinh)
+Type=
+TimeUnit=
+CreatedAt=18.11.2025 02:14:42 +00:00
+UpdatedAt=28.11.2025 07:05:39 +00:00
+CloseAt=28.11.2025 07:05:39 +00:00
+ArticlesCount=2
+
+### TITLE
+Linux ECAT master
+
+### ARTICLE00_HEADER
+Id=68659
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.11.2025 02:14:42 +00:00
+UpdatedAt=18.11.2025 02:14:47 +00:00
+
+### ARTICLE00_SUBJECT
+Linux ECAT master
+
+### ARTICLE00_BODY
+<div>
+<p>Hi,</p>
+<p> </p>
+<p>Can you please send me the latest Linux ECAT master that supports both x86 and ARM?</p>
+<p> </p>
+<p>Regards,</p>
+<p> </p>
+<p>Thao Tom Trinh</p>
+<p>Software &amp; Controls</p>
+<p>Desk +1 510.572.5795</p>
+<p> </p>
+</div><div>
+<br> LAM RESEARCH CONFIDENTIALITY NOTICE: This e-mail transmission, and any documents, files, or previous e-mail messages attached to it, (collectively, "E-mail Transmission") may be subject to one or more of the following based on the associated sensitivity level: E-mail Transmission (i) contains confidential information, (ii) is prohibited from distribution outside of Lam, and/or (iii) is intended solely for and restricted to the specified recipient(s). If you are not the intended recipient, or a person responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying, distribution or use of any of the information contained in or attached to this message is STRICTLY PROHIBITED. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without reading them or saving them to disk. Thank you.</div><br>
+<p>Confidential – Limited Access and Use<br>
+</p>
+
+### ARTICLE01_HEADER
+Id=68693
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.11.2025 12:28:46 +00:00
+UpdatedAt=18.11.2025 12:28:50 +00:00
+
+### ARTICLE01_SUBJECT
+Linux ECAT master
+
+### ARTICLE01_BODY
+<div>Dear Customer,</div><div><br></div><div>Please find your new software version below:</div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-Master-ClassA-AddOn-V3.2.3.04-Linux-x86_32Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-Master-ClassA-AddOn-V3.2.3.04-Linux-x86_32Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-Master-ClassA-AddOn-V3.2.3.04-Linux-x86_32Bit-SDK_Protected.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-Master-V3.2.3.04-Linux-x86_32Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-Master-V3.2.3.04-Linux-x86_32Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-Master-V3.2.3.04-Linux-x86_32Bit-SDK_Protected.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-RtEth-IntelGbe-V3.2.3.04-Linux-x86_32Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-RtEth-IntelGbe-V3.2.3.04-Linux-x86_32Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-RtEth-IntelGbe-V3.2.3.04-Linux-x86_32Bit-SDK_Protected.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-RtEth-RTL8169-V3.2.3.04-Linux-x86_32Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-RtEth-RTL8169-V3.2.3.04-Linux-x86_32Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-RtEth-RTL8169-V3.2.3.04-Linux-x86_32Bit-SDK_Protected.tar.gz</a></div>
+</div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-Master-ClassA-AddOn-V3.2.3.04-Linux-ARM_32Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-Master-ClassA-AddOn-V3.2.3.04-Linux-ARM_32Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-Master-ClassA-AddOn-V3.2.3.04-Linux-ARM_32Bit-SDK_Protected.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-Master-V3.2.3.04-Linux-ARM_32Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-Master-V3.2.3.04-Linux-ARM_32Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-Master-V3.2.3.04-Linux-ARM_32Bit-SDK_Protected.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-RtEth-IntelGbe-V3.2.3.04-Linux-ARM_32Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-RtEth-IntelGbe-V3.2.3.04-Linux-ARM_32Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-RtEth-IntelGbe-V3.2.3.04-Linux-ARM_32Bit-SDK_Protected.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-RtEth-RTL8169-V3.2.3.04-Linux-ARM_32Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-RtEth-RTL8169-V3.2.3.04-Linux-ARM_32Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/J-L/Lam_Research_(40116)(US)/EC-Master_Linux_x86_32Bit/3.2.3.04/EC-RtEth-RTL8169-V3.2.3.04-Linux-ARM_32Bit-SDK_Protected.tar.gz</a></div>
+</div><div><br></div><div>Password: ECM88250<br><br>
+</div><div>If you want to get notified if a new version is released, please answer to this e-mail.</div><div><br></div><div>Best Regards,</div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Tuesday, November 18, 2025 at 3:14:42 AM, Thaotam Trinh wrote:<br><br><div>
+<p>Hi,</p>
+<p> </p>
+<p>Can you please send me the latest Linux ECAT master that supports both x86 and ARM?</p>
+<p> </p>
+<p>Regards,</p>
+<p> </p>
+<p>Thao Tom Trinh</p>
+<p>Software &amp; Controls</p>
+<p>Desk +1 510.572.5795</p>
+<p> </p>
+</div>
+<div>
+<br> LAM RESEARCH CONFIDENTIALITY NOTICE: This e-mail transmission, and any documents, files, or previous e-mail messages attached to it, (collectively, "E-mail Transmission") may be subject to one or more of the following based on the associated sensitivity level: E-mail Transmission (i) contains confidential information, (ii) is prohibited from distribution outside of Lam, and/or (iii) is intended solely for and restricted to the specified recipient(s). If you are not the intended recipient, or a person responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying, distribution or use of any of the information contained in or attached to this message is STRICTLY PROHIBITED. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without reading them or saving them to disk. Thank you.</div>
+<br>
+<p>Confidential – Limited Access and Use<br>
+</p>
+<br>
+</blockquote></div><div><br></div><br><br>

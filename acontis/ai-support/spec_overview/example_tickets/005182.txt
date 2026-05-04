@@ -1,0 +1,400 @@
+### HEADER
+Id=5182
+Link=http://at-zammad/#ticket/zoom/5182
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=705182
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=17.03.2023 23:10:18 +00:00
+UpdatedAt=07.04.2023 06:07:15 +00:00
+CloseAt=07.04.2023 06:07:15 +00:00
+ArticlesCount=4
+
+### TITLE
+TAP devices
+
+### ARTICLE00_HEADER
+Id=27476
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.03.2023 23:10:19 +00:00
+UpdatedAt=17.03.2023 23:10:22 +00:00
+
+### ARTICLE00_SUBJECT
+TAP devices
+
+### ARTICLE00_BODY
+<div>
+<p>You guys list these four recommended TAP devices:</p>
+<p> </p>
+<p>
+<span style="color:#676767;">· </span><span style="color:#676767;">Dualcomm, <a href="https://www.dualcomm.com/products/zero-delay-fast-ethernet-copper-tap" rel="nofollow noreferrer noopener" title="https://www.dualcomm.com/products/zero-delay-fast-ethernet-copper-tap" target="_blank"><span style="color:#ff931e;">Zero-Delay Fast Ethernet Copper ETAP-1000</span></a></span></p>
+<p>
+<span style="color:#676767;">· </span><span style="color:#676767;">PROFITAP, <a href="https://www.profitap.com/profishark-100m/" rel="nofollow noreferrer noopener" title="https://www.profitap.com/profishark-100m/" target="_blank"><span style="color:#ff931e;">ProfiShark 100M</span></a></span></p>
+<p>
+<span style="color:#676767;">· </span><span style="color:#676767;">PROFITAP, <a href="https://www.profitap.com/profishark-1g/" rel="nofollow noreferrer noopener" title="https://www.profitap.com/profishark-1g/" target="_blank"><span style="color:#ff931e;">ProfiShark 1G</span></a></span></p>
+<p>
+<span style="color:#676767;">· </span><span style="color:#676767;">Beckhoff, <a href="https://www.beckhoff.com/en-us/products/i-o/ethercat-development-products/elxxxx-etxxxx-fbxxxx-hardware/et2000.html" rel="nofollow noreferrer noopener" title="https://www.beckhoff.com/en-us/products/i-o/ethercat-development-products/elxxxx-etxxxx-fbxxxx-hardware/et2000.html" target="_blank"><span style="color:#ff931e;">Industrial Ethernet multichannel probe ET2000</span></a></span></p>
+<p> </p>
+<p>We’re ready to buy a couple taps. I’m not happy with any of the taps I’ve bought in the past, so I’d like to try one of these. Which of these four would you recommend for our team? Or maybe they are equally good?</p>
+<p> </p>
+<p>Thanks.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Computer Systems, Inc.<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=27515
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.03.2023 12:13:52 +00:00
+UpdatedAt=20.03.2023 12:13:55 +00:00
+
+### ARTICLE01_SUBJECT
+TAP devices
+
+### ARTICLE01_BODY
+<div>Hi Quinton,</div><div>
+<div>depending on your needs, I would recommend the Beckhoff ET2000 or the Dualcomm.</div>
+<div><br></div>
+<div>The ET2000 is ideal for EtherCAT networks. <span>4x 100MBit/s Ports,</span><span> Timestamps [ns]. We use it for almost everything, analyse Cable-/Master -redundancy networks, time measurements ...</span>
+</div>
+<div><span><br></span></div>
+<div><span>The Dualcomm is cheap, simple and robust. I use it everyday for EC-Monitor development.</span></div>
+<div><span><br></span></div>
+<div>
+<span>I personally don't like the ProfiTap devices, because of their USB-Port and the need of a driver. </span><span>Also, they cost as much as an ET2000.</span>
+</div>
+<div><br></div>
+<div><br></div>
+<div><div>Best regards,</div></div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Holger Oelhaf</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Samstag, 18. März 2023 um 00:10:19, schrieb Quinton Tormanen:<br><br><div>
+<p>You guys list these four recommended TAP devices:</p>
+<p> </p>
+<p>
+<span style="color:#676767;">· </span><span style="color:#676767;">Dualcomm, <a href="https://www.dualcomm.com/products/zero-delay-fast-ethernet-copper-tap" rel="nofollow noreferrer noopener" title="https://www.dualcomm.com/products/zero-delay-fast-ethernet-copper-tap" target="_blank"><span style="color:#ff931e;">Zero-Delay Fast Ethernet Copper ETAP-1000</span></a></span></p>
+<p>
+<span style="color:#676767;">· </span><span style="color:#676767;">PROFITAP, <a href="https://www.profitap.com/profishark-100m/" rel="nofollow noreferrer noopener" title="https://www.profitap.com/profishark-100m/" target="_blank"><span style="color:#ff931e;">ProfiShark 100M</span></a></span></p>
+<p>
+<span style="color:#676767;">· </span><span style="color:#676767;">PROFITAP, <a href="https://www.profitap.com/profishark-1g/" rel="nofollow noreferrer noopener" title="https://www.profitap.com/profishark-1g/" target="_blank"><span style="color:#ff931e;">ProfiShark 1G</span></a></span></p>
+<p>
+<span style="color:#676767;">· </span><span style="color:#676767;">Beckhoff, <a href="https://www.beckhoff.com/en-us/products/i-o/ethercat-development-products/elxxxx-etxxxx-fbxxxx-hardware/et2000.html" rel="nofollow noreferrer noopener" title="https://www.beckhoff.com/en-us/products/i-o/ethercat-development-products/elxxxx-etxxxx-fbxxxx-hardware/et2000.html" target="_blank"><span style="color:#ff931e;">Industrial Ethernet multichannel probe ET2000</span></a></span></p>
+<p> </p>
+<p>We’re ready to buy a couple taps. I’m not happy with any of the taps I’ve bought in the past, so I’d like to try one of these. Which of these four would you recommend for our team? Or maybe they are equally good?</p>
+<p> </p>
+<p>Thanks.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Computer Systems, Inc.<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=27784
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.03.2023 01:06:41 +00:00
+UpdatedAt=28.03.2023 01:06:41 +00:00
+
+### ARTICLE02_SUBJECT
+RE: TAP devices [Ticket#705182]
+
+### ARTICLE02_BODY
+<div>
+<p>Thank you, Holger. I received my Dualcomm ETAP-1000 today. I noticed that it seems to only capture frames in one direction for the first part of the capture when my EC-Master is starting up. Do you ever see this problem? I am power-cycling my EC-Master product, and the first portion of the startup, up through part of the DC burst, only shows half the frames—sometimes the outgoing and sometimes the incoming—and then it starts showing both. I suspect that this is caused by the Ethernet link having just come up recently, but I am not sure yet.</p>
+<p> </p>
+<p>Of course, I do not expect you to do technical support for ETAP-1000, but I was curious if you see the same problem.</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p>--Quinton</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Holger Oelhaf via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Monday, March 20, 2023 5:14 AM<br>
+<b>To:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: TAP devices [Ticket#705182]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Hi Quinton,</p>
+</div>
+<div>
+<div>
+<p>depending on your needs, I would recommend the Beckhoff ET2000 or the Dualcomm.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>The ET2000 is ideal for EtherCAT networks. 4x 100MBit/s Ports, Timestamps [ns]. We use it for almost everything, analyse Cable-/Master -redundancy networks, time measurements ...</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>The Dualcomm is cheap, simple and robust. I use it everyday for EC-Monitor development.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>I personally don't like the ProfiTap devices, because of their USB-Port and the need of a driver. Also, they cost as much as an ET2000.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<div>
+<p>Best regards,</p>
+</div>
+</div>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Holger Oelhaf</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>Am Samstag, 18. März 2023 um 00:10:19, schrieb Quinton Tormanen:</p>
+<div>
+<p>You guys list these four recommended TAP devices:</p>
+<p> </p>
+<p><span style="color:#676767;">· Dualcomm, <a href="https://www.dualcomm.com/products/zero-delay-fast-ethernet-copper-tap" title="https://www.dualcomm.com/products/zero-delay-fast-ethernet-copper-tap" rel="nofollow noreferrer noopener" target="_blank">
+<span style="color:#ff931e;">Zero-Delay Fast Ethernet Copper ETAP-1000</span></a></span></p>
+<p><span style="color:#676767;">· PROFITAP, <a href="https://www.profitap.com/profishark-100m/" title="https://www.profitap.com/profishark-100m/" rel="nofollow noreferrer noopener" target="_blank">
+<span style="color:#ff931e;">ProfiShark 100M</span></a></span></p>
+<p><span style="color:#676767;">· PROFITAP, <a href="https://www.profitap.com/profishark-1g/" title="https://www.profitap.com/profishark-1g/" rel="nofollow noreferrer noopener" target="_blank">
+<span style="color:#ff931e;">ProfiShark 1G</span></a></span></p>
+<p><span style="color:#676767;">· Beckhoff, <a href="https://www.beckhoff.com/en-us/products/i-o/ethercat-development-products/elxxxx-etxxxx-fbxxxx-hardware/et2000.html" title="https://www.beckhoff.com/en-us/products/i-o/ethercat-development-products/elxxxx-etxxxx-fbxxxx-hardware/et2000.html" rel="nofollow noreferrer noopener" target="_blank">
+<span style="color:#ff931e;">Industrial Ethernet multichannel probe ET2000</span></a></span></p>
+<p> </p>
+<p>We’re ready to buy a couple taps. I’m not happy with any of the taps I’ve bought in the past, so I’d like to try one of these. Which of these four would you recommend for our team? Or maybe they are equally good?</p>
+<p> </p>
+<p>Thanks.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><br>
+<i>Principal Software Engineer</i><br> Delta Computer Systems, Inc.<br>
+<br>
+<span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" title="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span><a href="http://tel:+1-360-702-0150" title="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=28035
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.03.2023 05:12:05 +00:00
+UpdatedAt=31.03.2023 05:12:09 +00:00
+
+### ARTICLE03_SUBJECT
+TAP devices
+
+### ARTICLE03_BODY
+<div>Hi Quinton,</div><div>I have not observed this phenomenon until now. I could imagine that it might be because of the network card in the host PC. Perhaps the receiving buffers are too small and frames are therefore lost.</div><div><br></div><div><div>Best regards,</div></div><div data-signature="true" data-signature-id="2"><div>Holger </div></div><div><br></div><div><blockquote type="cite">Am Dienstag, 28. März 2023 um 03:06:41, schrieb Quinton Tormanen:<br><br><div>
+<p>Thank you, Holger. I received my Dualcomm ETAP-1000 today. I noticed that it seems to only capture frames in one direction for the first part of the capture when my EC-Master is starting up. Do you ever see this problem? I am power-cycling my EC-Master product, and the first portion of the startup, up through part of the DC burst, only shows half the frames—sometimes the outgoing and sometimes the incoming—and then it starts showing both. I suspect that this is caused by the Ethernet link having just come up recently, but I am not sure yet.</p>
+<p> </p>
+<p>Of course, I do not expect you to do technical support for ETAP-1000, but I was curious if you see the same problem.</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p>--Quinton</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Holger Oelhaf via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Monday, March 20, 2023 5:14 AM<br>
+<b>To:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: TAP devices [Ticket#705182]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Hi Quinton,</p>
+</div>
+<div>
+<div>
+<p>depending on your needs, I would recommend the Beckhoff ET2000 or the Dualcomm.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>The ET2000 is ideal for EtherCAT networks. 4x 100MBit/s Ports, Timestamps [ns]. We use it for almost everything, analyse Cable-/Master -redundancy networks, time measurements ...</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>The Dualcomm is cheap, simple and robust. I use it everyday for EC-Monitor development.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>I personally don't like the ProfiTap devices, because of their USB-Port and the need of a driver. Also, they cost as much as an ET2000.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<div>
+<p>Best regards,</p>
+</div>
+</div>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Holger Oelhaf</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>Am Samstag, 18. März 2023 um 00:10:19, schrieb Quinton Tormanen:</p>
+<div>
+<p>You guys list these four recommended TAP devices:</p>
+<p> </p>
+<p><span style="color:#676767;">· Dualcomm, <a href="https://www.dualcomm.com/products/zero-delay-fast-ethernet-copper-tap" title="https://www.dualcomm.com/products/zero-delay-fast-ethernet-copper-tap" rel="nofollow noreferrer noopener" target="_blank">
+<span style="color:#ff931e;">Zero-Delay Fast Ethernet Copper ETAP-1000</span></a></span></p>
+<p><span style="color:#676767;">· PROFITAP, <a href="https://www.profitap.com/profishark-100m/" title="https://www.profitap.com/profishark-100m/" rel="nofollow noreferrer noopener" target="_blank">
+<span style="color:#ff931e;">ProfiShark 100M</span></a></span></p>
+<p><span style="color:#676767;">· PROFITAP, <a href="https://www.profitap.com/profishark-1g/" title="https://www.profitap.com/profishark-1g/" rel="nofollow noreferrer noopener" target="_blank">
+<span style="color:#ff931e;">ProfiShark 1G</span></a></span></p>
+<p><span style="color:#676767;">· Beckhoff, <a href="https://www.beckhoff.com/en-us/products/i-o/ethercat-development-products/elxxxx-etxxxx-fbxxxx-hardware/et2000.html" title="https://www.beckhoff.com/en-us/products/i-o/ethercat-development-products/elxxxx-etxxxx-fbxxxx-hardware/et2000.html" rel="nofollow noreferrer noopener" target="_blank">
+<span style="color:#ff931e;">Industrial Ethernet multichannel probe ET2000</span></a></span></p>
+<p> </p>
+<p>We’re ready to buy a couple taps. I’m not happy with any of the taps I’ve bought in the past, so I’d like to try one of these. Which of these four would you recommend for our team? Or maybe they are equally good?</p>
+<p> </p>
+<p>Thanks.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><br>
+<i>Principal Software Engineer</i><br> Delta Computer Systems, Inc.<br>
+<br>
+<span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" title="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span><a href="http://tel:+1-360-702-0150" title="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

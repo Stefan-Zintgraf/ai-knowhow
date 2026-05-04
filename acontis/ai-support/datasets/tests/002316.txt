@@ -1,0 +1,130 @@
+### HEADER
+Id=2316
+Link=http://at-zammad/#ticket/zoom/2316
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Liebherr-Werk Nenzing GmbH (ID=8, Number=40314, Country=AT)
+Commission=Liebherr, tower crane control (ID=8, Number=8)
+Number=702316
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=hannes.mahlfeld2@liebherr.com (ID=611, FirstName=Hannes, LastName=Mahlfeld)
+CreatedBy=hannes.mahlfeld2@liebherr.com (ID=611, FirstName=Hannes, LastName=Mahlfeld)
+Type=
+TimeUnit=
+CreatedAt=25.01.2022 07:55:11 +00:00
+UpdatedAt=25.04.2022 12:45:51 +00:00
+CloseAt=31.01.2022 07:34:05 +00:00
+ArticlesCount=2
+
+### TITLE
+EC Engineer  - Error
+
+### ARTICLE00_HEADER
+Id=12218
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.01.2022 07:55:11 +00:00
+UpdatedAt=25.01.2022 07:55:15 +00:00
+
+### ARTICLE00_SUBJECT
+EC Engineer  - Error
+
+### ARTICLE00_BODY
+<div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>bei der Einbindung einer externen Steuerung (LCFLES300) mit dem EC-Engineer wird der folgende Error ausgegeben:</p>
+<p><img style="max-width:100%;width:9.4375in;max-height:.4583in;width:906px;max-height:44px;" src="/api/v1/ticket_attachment/2316/12218/47577?view=inline"></p>
+<p> </p>
+<p>Eine Überprüfung des ESI-Files mit TwinCAT3 und CODESYS V3.5 zeigt diesen Fehler nicht, weshalb ich vermute, dass EC-Engineer hier sehr sensibel reagiert. Können Sie mir bitte ein paar Informationen zu dem Fehler geben? Wie kann der Fehler behoben werden?</p>
+<p> </p>
+<div>
+<p>Mit freundlichen Grüßen</p>
+<p><b>i. A. Hannes Mahlfeld</b></p>
+<p>Produktentwicklung Elektrik / Software MC</p>
+<p> </p>
+<p><b>Liebherr-MCCtec Rostock GmbH</b></p>
+<p>Liebherrstraße 1</p>
+<p>18147 Rostock</p>
+<p>Deutschland</p>
+<p>Tel.: +49 381 6006 4943<br> E-Mail: Hannes.Mahlfeld2@liebherr.com<br> Internet: <a href="http://www.liebherr.com" rel="nofollow noreferrer noopener" target="_blank">www.liebherr.com</a><br> Aufsichtsratsvorsitzender: Andreas Böhm</p>
+<p>Geschäftsführer: Steffen Bartke, Leopold Berthold, Rudolf Ganser, Steffen Pohl</p>
+<p>Sitz: 18147 Rostock, Liebherrstrasse 1, HRB 9219, Amtsgericht Rostock, USt-IdNr.: DE 81 36 54 985</p>
+<p><a href="https://www.liebherr.com/privacydocs/MCR/MCR-DSE-Geschaeftspartner.pdf" rel="nofollow noreferrer noopener" title="https://www.liebherr.com/privacydocs/MCR/MCR-DSE-Geschaeftspartner.pdf" target="_blank">Datenschutzerklärung</a><br> </p>
+<p><a href="https://www.facebook.com/LiebherrMaritime" rel="nofollow noreferrer noopener" title="https://www.facebook.com/LiebherrMaritime" target="_blank"></a> <a href="https://www.youtube.com/liebherr" rel="nofollow noreferrer noopener" title="https://www.youtube.com/liebherr" target="_blank"></a> <a href="http://www.linkedin.com/company/liebherr-maritime-cranes" rel="nofollow noreferrer noopener" title="http://www.linkedin.com/company/liebherr-maritime-cranes" target="_blank"></a> <a href="https://twitter.com/LH_Maritime" rel="nofollow noreferrer noopener" title="https://twitter.com/LH_Maritime" target="_blank"></a> <a href="https://www.instagram.com/liebherrmaritime" rel="nofollow noreferrer noopener" title="https://www.instagram.com/liebherrmaritime" target="_blank"></a> <br> </p>
+<p> </p>
+</div>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=12234
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.01.2022 09:08:17 +00:00
+UpdatedAt=25.01.2022 09:08:19 +00:00
+
+### ARTICLE01_SUBJECT
+EC Engineer  - Error
+
+### ARTICLE01_BODY
+Hallo Herr Mahlfeld,<div><br></div><div>der Engineer behebt das Problem automatisch:</div><div><br></div><div>
+<img style="max-width:100%;width: 763px;max-width: 100%;" src="/api/v1/ticket_attachment/2316/12234/47669?view=inline"><br>
+</div><div><br></div><div>Er benennt die Variable einfach in den Namen + _1 usw. um.</div><div><br></div><div>Viele Grüße</div><div>Kai Feifel</div><div><div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, January 25, 2022, 8:55:11 AM, Hannes Mahlfeld wrote:<br><br><div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>bei der Einbindung einer externen Steuerung (LCFLES300) mit dem EC-Engineer wird der folgende Error ausgegeben:</p>
+<p><img style="max-width:100%;max-width:100%;width:9.4375in;max-height:.4583in;width:906px;max-height:44px;" src="/api/v1/ticket_attachment/2316/12234/47670?view=inline"></p>
+<p> </p>
+<p>Eine Überprüfung des ESI-Files mit TwinCAT3 und CODESYS V3.5 zeigt diesen Fehler nicht, weshalb ich vermute, dass EC-Engineer hier sehr sensibel reagiert. Können Sie mir bitte ein paar Informationen zu dem Fehler geben? Wie kann der Fehler behoben werden?</p>
+<p> </p>
+<div>
+<p>Mit freundlichen Grüßen</p>
+<p><b>i. A. Hannes Mahlfeld</b></p>
+<p>Produktentwicklung Elektrik / Software MC</p>
+<p> </p>
+<p><b>Liebherr-MCCtec Rostock GmbH</b></p>
+<p>Liebherrstraße 1</p>
+<p>18147 Rostock</p>
+<p>Deutschland</p>
+<p>Tel.: +49 381 6006 4943<br> E-Mail: Hannes.Mahlfeld2@liebherr.com<br> Internet: <a href="http://www.liebherr.com" rel="nofollow noreferrer noopener" target="_blank">www.liebherr.com</a><br> Aufsichtsratsvorsitzender: Andreas Böhm</p>
+<p>Geschäftsführer: Steffen Bartke, Leopold Berthold, Rudolf Ganser, Steffen Pohl</p>
+<p>Sitz: 18147 Rostock, Liebherrstrasse 1, HRB 9219, Amtsgericht Rostock, USt-IdNr.: DE 81 36 54 985</p>
+<p><a href="https://www.liebherr.com/privacydocs/MCR/MCR-DSE-Geschaeftspartner.pdf" rel="nofollow noreferrer noopener" title="https://www.liebherr.com/privacydocs/MCR/MCR-DSE-Geschaeftspartner.pdf" target="_blank">Datenschutzerklärung</a><br> </p>
+<p><a href="https://www.facebook.com/LiebherrMaritime" rel="nofollow noreferrer noopener" title="https://www.facebook.com/LiebherrMaritime" target="_blank"></a> <a href="https://www.youtube.com/liebherr" rel="nofollow noreferrer noopener" title="https://www.youtube.com/liebherr" target="_blank"></a> <a href="http://www.linkedin.com/company/liebherr-maritime-cranes" rel="nofollow noreferrer noopener" title="http://www.linkedin.com/company/liebherr-maritime-cranes" target="_blank"></a> <a href="https://twitter.com/LH_Maritime" rel="nofollow noreferrer noopener" title="https://twitter.com/LH_Maritime" target="_blank"></a> <a href="https://www.instagram.com/liebherrmaritime" rel="nofollow noreferrer noopener" title="https://www.instagram.com/liebherrmaritime" target="_blank"></a> <br> </p>
+<p> </p>
+</div>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div></div>

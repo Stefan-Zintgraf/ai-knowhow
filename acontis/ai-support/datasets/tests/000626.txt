@@ -1,0 +1,369 @@
+### HEADER
+Id=626
+Link=http://at-zammad/#ticket/zoom/626
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=JSLT, Generic (ID=477, Number=477)
+Number=700626
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=21.05.2021 01:11:32 +00:00
+UpdatedAt=12.12.2023 13:52:35 +00:00
+CloseAt=21.05.2021 10:12:05 +00:00
+ArticlesCount=6
+
+### TITLE
+Question about EC-Master(JTEKT)
+
+### ARTICLE00_HEADER
+Id=3480
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=21.05.2021 01:11:33 +00:00
+UpdatedAt=21.05.2021 01:11:34 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(JTEKT)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(JTEKT)
+
+Does EC-Master support the following NICs connected by PCIe?
+
+CPU: X86
+OS: Windows10+RTX64
+
+1.
+   NIC: Intel 82580DB Gigabit Ethernet Controller
+   DeviceID: 0x1509
+
+2.
+   NIC: >Intel WGI210IT Gigabit Ethernet Controller
+   DeviceID: 0x157B
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=3496
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.05.2021 07:26:55 +00:00
+UpdatedAt=21.05.2021 07:26:59 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(JTEKT)
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>The I210 adapter is supported. We don't support the <span>82580DB</span><span> adapter today and its device ID is not included in the linklayer.</span>
+</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div>
+<div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Friday, May 21, 2021, 3:11:33 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(JTEKT)</div>
+<div><br></div>
+<div>Does EC-Master support the following NICs connected by PCIe?</div>
+<div><br></div>
+<div>CPU: X86</div>
+<div>OS: Windows10+RTX64</div>
+<div><br></div>
+<div>1.</div>
+<div>   NIC: Intel 82580DB Gigabit Ethernet Controller</div>
+<div>   DeviceID: 0x1509</div>
+<div><br></div>
+<div>2.</div>
+<div>   NIC: &gt;Intel WGI210IT Gigabit Ethernet Controller</div>
+<div>   DeviceID: 0x157B</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=3507
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=21.05.2021 09:27:25 +00:00
+UpdatedAt=21.05.2021 09:27:25 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master(JTEKT) [Ticket#700626]
+
+### ARTICLE02_BODY
+Dear Cyril san
+
+Is there a problem controlling using PCIE?
+Is there a delay issue?
+
+Best regards,
+Takuya Fujikawa
+
+
+
+On 2021/05/21 16:26, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+> 
+> The I210 adapter is supported. We don't support the 82580DB adapter today and its device ID is not included in the linklayer.
+> 
+> Best Regards,
+> Cyril
+> 
+>> On Friday, May 21, 2021, 3:11:33 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Master(JTEKT)
+>>
+>> Does EC-Master support the following NICs connected by PCIe?
+>>
+>> CPU: X86
+>> OS: Windows10+RTX64
+>>
+>> 1.
+>>   NIC: Intel 82580DB Gigabit Ethernet Controller
+>>   DeviceID: 0x1509
+>>
+>> 2.
+>>   NIC: >Intel WGI210IT Gigabit Ethernet Controller
+>>   DeviceID: 0x157B
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+
+### ARTICLE03_HEADER
+Id=3510
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.05.2021 09:50:09 +00:00
+UpdatedAt=21.05.2021 09:50:12 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(JTEKT)
+
+### ARTICLE03_BODY
+<div>Hi Takuya,</div><div><br></div><div>does JTEKT have an issue with I210? If yes which version are they using? We made some fixes in the I8254x link layer the last weeks.</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div><br></div><div><blockquote type="cite">On Friday, May 21, 2021, 11:27:25 AM, Takuya Fujikawa wrote:<br><br><div>Dear Cyril san</div>
+<div><br></div>
+<div>Is there a problem controlling using PCIE?</div>
+<div>Is there a delay issue?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2021/05/21 16:26, Cyril Eyssautier via EC-Support wrote:</div>
+<div>&gt; Hi Takuya,</div>
+<div>&gt;</div>
+<div>&gt; The I210 adapter is supported. We don't support the 82580DB adapter today and its device ID is not included in the linklayer.</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; Cyril</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Friday, May 21, 2021, 3:11:33 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Master(JTEKT)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Does EC-Master support the following NICs connected by PCIe?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; CPU: X86</div>
+<div>&gt;&gt; OS: Windows10+RTX64</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; 1.</div>
+<div>&gt;&gt;   NIC: Intel 82580DB Gigabit Ethernet Controller</div>
+<div>&gt;&gt;   DeviceID: 0x1509</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; 2.</div>
+<div>&gt;&gt;   NIC: &gt;Intel WGI210IT Gigabit Ethernet Controller</div>
+<div>&gt;&gt;   DeviceID: 0x157B</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE04_HEADER
+Id=3513
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=21.05.2021 10:02:05 +00:00
+UpdatedAt=21.05.2021 10:02:05 +00:00
+
+### ARTICLE04_SUBJECT
+Re: Question about EC-Master(JTEKT) [Ticket#700626]
+
+### ARTICLE04_BODY
+Dear Cyril san
+
+They are not testing now.
+They are investigating issues with future PCIE + I210 adoption.
+
+Best regards,
+Takuya Fujikawa
+
+
+
+On 2021/05/21 18:50, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+> 
+> does JTEKT have an issue with I210? If yes which version are they using? We made some fixes in the I8254x link layer the last weeks.
+> 
+> Best Regards,
+> Cyril
+> 
+>> On Friday, May 21, 2021, 11:27:25 AM, Takuya Fujikawa wrote:
+>>
+>> Dear Cyril san
+>>
+>> Is there a problem controlling using PCIE?
+>> Is there a delay issue?
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+>> On 2021/05/21 16:26, Cyril Eyssautier via EC-Support wrote:
+>> > Hi Takuya,
+>> >
+>> > The I210 adapter is supported. We don't support the 82580DB adapter today and its device ID is not included in the linklayer.
+>> >
+>> > Best Regards,
+>> > Cyril
+>> >
+>> >> On Friday, May 21, 2021, 3:11:33 AM, Takuya Fujikawa wrote:
+>> >>
+>> >> Dear EtherCAT Support
+>> >>
+>> >> Question about EC-Master(JTEKT)
+>> >>
+>> >> Does EC-Master support the following NICs connected by PCIe?
+>> >>
+>> >> CPU: X86
+>> >> OS: Windows10+RTX64
+>> >>
+>> >> 1.
+>> >>   NIC: Intel 82580DB Gigabit Ethernet Controller
+>> >>   DeviceID: 0x1509
+>> >>
+>> >> 2.
+>> >>   NIC: >Intel WGI210IT Gigabit Ethernet Controller
+>> >>   DeviceID: 0x157B
+>> >>
+>> >> Best regards,
+>> >> Takuya Fujikawa
+>> >>
+>> >
+>> >
+>> >
+>>
+> 
+> 
+> 
+
+
+### ARTICLE05_HEADER
+Id=3514
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.05.2021 10:12:02 +00:00
+UpdatedAt=21.05.2021 10:12:04 +00:00
+
+### ARTICLE05_SUBJECT
+Question about EC-Master(JTEKT)
+
+### ARTICLE05_BODY
+We don't know about issue related to delay on PCIe and I210. Several our customers are using I210.<div><br></div><div>Best Regards,</div><div>Cyril</div><div>
+<div><br></div>
+<div><blockquote type="cite">On Friday, May 21, 2021, 12:02:05 PM, Takuya Fujikawa wrote:<br><br><div>Dear Cyril san</div>
+<div><br></div>
+<div>They are not testing now.</div>
+<div>They are investigating issues with future PCIE + I210 adoption.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2021/05/21 18:50, Cyril Eyssautier via EC-Support wrote:</div>
+<div>&gt; Hi Takuya,</div>
+<div>&gt;</div>
+<div>&gt; does JTEKT have an issue with I210? If yes which version are they using? We made some fixes in the I8254x link layer the last weeks.</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; Cyril</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Friday, May 21, 2021, 11:27:25 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear Cyril san</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Is there a problem controlling using PCIE?</div>
+<div>&gt;&gt; Is there a delay issue?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; On 2021/05/21 16:26, Cyril Eyssautier via EC-Support wrote:</div>
+<div>&gt;&gt; &gt; Hi Takuya,</div>
+<div>&gt;&gt; &gt;</div>
+<div>&gt;&gt; &gt; The I210 adapter is supported. We don't support the 82580DB adapter today and its device ID is not included in the linklayer.</div>
+<div>&gt;&gt; &gt;</div>
+<div>&gt;&gt; &gt; Best Regards,</div>
+<div>&gt;&gt; &gt; Cyril</div>
+<div>&gt;&gt; &gt;</div>
+<div>&gt;&gt; &gt;&gt; On Friday, May 21, 2021, 3:11:33 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt; &gt;&gt;</div>
+<div>&gt;&gt; &gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt; &gt;&gt;</div>
+<div>&gt;&gt; &gt;&gt; Question about EC-Master(JTEKT)</div>
+<div>&gt;&gt; &gt;&gt;</div>
+<div>&gt;&gt; &gt;&gt; Does EC-Master support the following NICs connected by PCIe?</div>
+<div>&gt;&gt; &gt;&gt;</div>
+<div>&gt;&gt; &gt;&gt; CPU: X86</div>
+<div>&gt;&gt; &gt;&gt; OS: Windows10+RTX64</div>
+<div>&gt;&gt; &gt;&gt;</div>
+<div>&gt;&gt; &gt;&gt; 1.</div>
+<div>&gt;&gt; &gt;&gt;   NIC: Intel 82580DB Gigabit Ethernet Controller</div>
+<div>&gt;&gt; &gt;&gt;   DeviceID: 0x1509</div>
+<div>&gt;&gt; &gt;&gt;</div>
+<div>&gt;&gt; &gt;&gt; 2.</div>
+<div>&gt;&gt; &gt;&gt;   NIC: &gt;Intel WGI210IT Gigabit Ethernet Controller</div>
+<div>&gt;&gt; &gt;&gt;   DeviceID: 0x157B</div>
+<div>&gt;&gt; &gt;&gt;</div>
+<div>&gt;&gt; &gt;&gt; Best regards,</div>
+<div>&gt;&gt; &gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt; &gt;&gt;</div>
+<div>&gt;&gt; &gt;</div>
+<div>&gt;&gt; &gt;</div>
+<div>&gt;&gt; &gt;</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

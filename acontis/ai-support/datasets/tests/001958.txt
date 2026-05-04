@@ -1,0 +1,193 @@
+### HEADER
+Id=1958
+Link=http://at-zammad/#ticket/zoom/1958
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Keyence (ID=223, Number=40219, Country=JP)
+Commission=Keyence, Control Division PLC product lines (ID=577, Number=577)
+Number=701958
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=fukatsug@keyence.co.jp (ID=686, FirstName=Gen, LastName=Fukatsu)
+CreatedBy=fukatsug@keyence.co.jp (ID=686, FirstName=Gen, LastName=Fukatsu)
+Type=
+TimeUnit=
+CreatedAt=02.12.2021 08:03:17 +00:00
+UpdatedAt=25.04.2022 13:10:42 +00:00
+CloseAt=03.12.2021 07:00:29 +00:00
+ArticlesCount=3
+
+### TITLE
+How to scan bus
+
+### ARTICLE00_HEADER
+Id=10340
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.12.2021 08:03:17 +00:00
+UpdatedAt=02.12.2021 08:03:17 +00:00
+
+### ARTICLE00_SUBJECT
+How to scan bus
+
+### ARTICLE00_BODY
+<div>
+<p>Hello Acontis Support,</p>
+<p> </p>
+<p>Let me ask about scanning bus.</p>
+<p>I want to get detail topology information from current EtherCAT bus.</p>
+<p>(e.g.)</p>
+<p>Number of slaves,</p>
+<p>ID information (vendor ID, product ID, etc) of each slaves,</p>
+<p>Port information of each slaves.</p>
+<p>Not only link status but also which slave is connected to this port.</p>
+<p> </p>
+<p>Could you tell me which API is suitable for it?</p>
+<p>I think EC-Engineer uses this kind of function.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Gen</p>
+<p>KEYENCE</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=10343
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.12.2021 08:18:46 +00:00
+UpdatedAt=02.12.2021 08:18:50 +00:00
+
+### ARTICLE01_SUBJECT
+How to scan bus
+
+### ARTICLE01_BODY
+<div>Hi Gen,</div><div><br></div><div>you can use the API emGetNumConnectedSlaves():</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=numconnec#emgetnumconnectedslaves" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=numconnec#emgetnumconnectedslaves" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=numconnec#emgetnumconnectedslaves</a></div></div><div>and emGetBusSlaveInfo() for detailed information about the slave and the topology (<span>adwPortSlaveIds):</span>
+</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=getbusslave#emgetbusslaveinfo" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=getbusslave#emgetbusslaveinfo" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=getbusslave#emgetbusslaveinfo</a></div></div><div data-signature="true" data-signature-id="2">
+<div><span><br></span></div>
+<div>
+<span>See also </span><span style=" color: rgb(51, 51, 51);">PrintSlaveInfos() </span><span>in EcSlaveInfo.cpp of the EcMasterDemo example code.</span>
+</div>
+<div><span><br></span></div>
+<div><span></span></div>
+<div>
+<span>Best regards,</span><br>
+</div>
+<div>Holger Oelhaf</div>
+</div><div><br></div><div><blockquote type="cite">Am Donnerstag, 2. Dezember 2021, 09:03:17, schrieb Gen Fukatsu:<br><br><div>
+<p>Hello Acontis Support,</p>
+<p> </p>
+<p>Let me ask about scanning bus.</p>
+<p>I want to get detail topology information from current EtherCAT bus.</p>
+<p>(e.g.)</p>
+<p>Number of slaves,</p>
+<p>ID information (vendor ID, product ID, etc) of each slaves,</p>
+<p>Port information of each slaves.</p>
+<p>Not only link status but also which slave is connected to this port.</p>
+<p> </p>
+<p>Could you tell me which API is suitable for it?</p>
+<p>I think EC-Engineer uses this kind of function.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Gen</p>
+<p>KEYENCE</p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=10346
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.12.2021 08:35:24 +00:00
+UpdatedAt=02.12.2021 08:35:24 +00:00
+
+### ARTICLE02_SUBJECT
+RE: How to scan bus [Ticket#701958]
+
+### ARTICLE02_BODY
+<div>
+<p>Hello Holger-san,</p>
+<p> </p>
+<p>Thank you very much for your support.</p>
+<p> </p>
+<p>Gen</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Holger Oelhaf via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Thursday, December 2, 2021 5:19 PM<br>
+<b>To:</b> 深津 元 (1695.8960) Gen Fukatsu &lt;fukatsug@keyence.co.jp&gt;<br>
+<b>Subject:</b> RE: How to scan bus [Ticket#701958]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Hi Gen,</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>you can use the API emGetNumConnectedSlaves():</p>
+</div>
+<div>
+<div>
+<p><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=numconnec#emgetnumconnectedslaves" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=numconnec#emgetnumconnectedslaves" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=numconnec#emgetnumconnectedslaves</a></p>
+</div>
+</div>
+<div>
+<p>and emGetBusSlaveInfo() for detailed information about the slave and the topology (adwPortSlaveIds):</p>
+</div>
+<div>
+<div>
+<p><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=getbusslave#emgetbusslaveinfo" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=getbusslave#emgetbusslaveinfo" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=getbusslave#emgetbusslaveinfo</a></p>
+</div>
+</div>
+<div>
+<div> <p> </p>
+</div>
+<div>
+<p>See also PrintSlaveInfos() in EcSlaveInfo.cpp of the EcMasterDemo example code.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Best regards,</p>
+</div>
+<div>
+<p>Holger Oelhaf</p>
+</div>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<blockquote>
+<p>Am Donnerstag, 2. Dezember 2021, 09:03:17, schrieb Gen Fukatsu:</p>
+<p></p>
+<div>
+<p>Hello Acontis Support,</p>
+<p> </p>
+<p>Let me ask about scanning bus.</p>
+<p>I want to get detail topology information from current EtherCAT bus.</p>
+<p>(e.g.)</p>
+<p>Number of slaves,</p>
+<p>ID information (vendor ID, product ID, etc) of each slaves,</p>
+<p>Port information of each slaves.</p>
+<p>Not only link status but also which slave is connected to this port.</p>
+<p> </p>
+<p>Could you tell me which API is suitable for it?</p>
+<p>I think EC-Engineer uses this kind of function.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Gen</p>
+<p>KEYENCE</p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>

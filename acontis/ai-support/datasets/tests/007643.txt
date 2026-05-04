@@ -1,0 +1,75 @@
+### HEADER
+Id=7643
+Link=http://at-zammad/#ticket/zoom/7643
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Jumo GmbH & Co.KG (ID=126, Number=54502, Country=DE)
+Commission=Jumo, Registriergeräte, Linux (ID=141, Number=141)
+Number=707643
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=dirk.kliegel@jumo.net (ID=128, FirstName=Dirk, LastName=Kliegel)
+CreatedBy=dirk.kliegel@jumo.net (ID=128, FirstName=Dirk, LastName=Kliegel)
+Type=
+TimeUnit=
+CreatedAt=13.03.2024 08:05:38 +00:00
+UpdatedAt=26.04.2024 06:06:14 +00:00
+CloseAt=26.04.2024 06:06:14 +00:00
+ArticlesCount=2
+
+### TITLE
+WKC error
+
+### ARTICLE00_HEADER
+Id=42154
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.03.2024 08:05:38 +00:00
+UpdatedAt=13.03.2024 08:05:40 +00:00
+
+### ARTICLE00_SUBJECT
+WKC error
+
+### ARTICLE00_BODY
+Hallo,<br><br>wir bekommen zyklisch EC_NOTIFY_CYCCMD_WKC_ERROR, z. B. <br>Debug EtherCatGateway 13.03.2024 09:01:35.131 EtherCatMaster/EtherCatMasterNotification.cpp:657 "Cyclic command WKC error on LWR - Address: 0x10100000 - WKC act/set=2/1"<br><br>Debug EtherCatGateway 13.03.2024 09:01:35.180 EtherCatMaster/EtherCatMasterNotification.cpp:657 "Cyclic command WKC error on LWR - Address: 0x10100000 - WKC act/set=2/1"<br><br>Debug EtherCatGateway 13.03.2024 09:01:35.205 EtherCatMaster/EtherCatMasterNotification.cpp:657 "Cyclic command WKC error on LWR - Address: 0x10100000 - WKC act/set=2/1"<br><br>Debug EtherCatGateway 13.03.2024 09:01:35.255 EtherCatMaster/EtherCatMasterNotification.cpp:657 "Cyclic command WKC error on LWR - Address: 0x10100000 - WKC act/set=2/1"<br><br>Debug EtherCatGateway 13.03.2024 09:01:35.280 EtherCatMaster/EtherCatMasterNotification.cpp:657 "Cyclic command WKC error on LWR - Address: 0x10100000 - WKC act/set=2/1"<br><br>Wir bekommen den Fehler immer von der gleichen logischen Adresse. Wenn es sich um Störungen handeln würde, würde man erwarten dass alle Frames betroffen sind. Was kann die Ursache sein?<br><br><img src="/api/v1/ticket_attachment/7643/42154/174917?view=inline" style="max-width:100%;"><br><br><span>Mit freundlichen Grüßen / Best regards<br><br>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Software / Global Development - Software<br>Applikationen embedded Linux / Applications embedded Linux<br><br>i. A. Dirk Kliegel<br><br>Tel: +49 (0)661 6003-324<br>Fax: +49 (0)661 6003-604<br>Adresse: Moritz-Juchheim-Straße 1 <br> 36039 Fulda, Germany <br>E-Mail: </span><a href="mailto:Dirk.Kliegel@jumo.net">mailto:Dirk.Kliegel@jumo.net</a><span><br>Internet: </span><a href="https://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">https://www.jumo.net</a><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dimitrios Charisiadis, Dr. Steffen Hoßfeld<br> Ust.-Id.-Nr.: DE 112411234</p>
+
+### ARTICLE01_HEADER
+Id=42287
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.03.2024 09:49:58 +00:00
+UpdatedAt=15.03.2024 09:50:02 +00:00
+
+### ARTICLE01_SUBJECT
+WKC error
+
+### ARTICLE01_BODY
+Hallo Herr Kliegel,<div><br></div><div>Ist das Problem temporär oder dauerhaft?</div><div><br></div><div>Wenn dauerhaft, könnte es sein, dass ein Slave in Error Zustand zurückgefallen ist.</div><div><br></div><div>Es kann aber sein, dass ein bestimmter Slave in "mailbox" und nicht in "tripple buffer" Mode konfiguriert ist. In diesem Fall, der Zugriff auf den Prozessdaten ist manchmal slaveseitig gesperrt. Wenn die zyklische Frames in dieser Zeit kommen, werden Sie temporär WKC=0 sehen. Das kann meistens mit DC und ShiftTime gelöst werden.</div><div><br></div><div>Schöne Grüße,</div><div>
+<span>__________________________________________________________________________________________</span><br>
+</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, March 13, 2024 at 9:05:38 AM, Dirk Kliegel wrote:<br><br>Hallo,<br><br>wir bekommen zyklisch EC_NOTIFY_CYCCMD_WKC_ERROR, z. B. <br>Debug EtherCatGateway 13.03.2024 09:01:35.131 EtherCatMaster/EtherCatMasterNotification.cpp:657 "Cyclic command WKC error on LWR - Address: 0x10100000 - WKC act/set=2/1"<br><br>Debug EtherCatGateway 13.03.2024 09:01:35.180 EtherCatMaster/EtherCatMasterNotification.cpp:657 "Cyclic command WKC error on LWR - Address: 0x10100000 - WKC act/set=2/1"<br><br>Debug EtherCatGateway 13.03.2024 09:01:35.205 EtherCatMaster/EtherCatMasterNotification.cpp:657 "Cyclic command WKC error on LWR - Address: 0x10100000 - WKC act/set=2/1"<br><br>Debug EtherCatGateway 13.03.2024 09:01:35.255 EtherCatMaster/EtherCatMasterNotification.cpp:657 "Cyclic command WKC error on LWR - Address: 0x10100000 - WKC act/set=2/1"<br><br>Debug EtherCatGateway 13.03.2024 09:01:35.280 EtherCatMaster/EtherCatMasterNotification.cpp:657 "Cyclic command WKC error on LWR - Address: 0x10100000 - WKC act/set=2/1"<br><br>Wir bekommen den Fehler immer von der gleichen logischen Adresse. Wenn es sich um Störungen handeln würde, würde man erwarten dass alle Frames betroffen sind. Was kann die Ursache sein?<br><br><img src="/api/v1/ticket_attachment/7643/42287/175408?view=inline" style="max-width:100%;max-width:100%;"><br><br><span>Mit freundlichen Grüßen / Best regards<br><br>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Software / Global Development - Software<br>Applikationen embedded Linux / Applications embedded Linux<br><br>i. A. Dirk Kliegel<br><br>Tel: +49 (0)661 6003-324<br>Fax: +49 (0)661 6003-604<br>Adresse: Moritz-Juchheim-Straße 1 <br> 36039 Fulda, Germany <br>E-Mail: </span><a href="mailto:Dirk.Kliegel@jumo.net">mailto:Dirk.Kliegel@jumo.net</a><span><br>Internet: </span><a href="https://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">https://www.jumo.net</a><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dimitrios Charisiadis, Dr. Steffen Hoßfeld<br> Ust.-Id.-Nr.: DE 112411234</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

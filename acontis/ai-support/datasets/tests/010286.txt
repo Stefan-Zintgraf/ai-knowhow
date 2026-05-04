@@ -1,0 +1,160 @@
+### HEADER
+Id=10286
+Link=http://at-zammad/#ticket/zoom/10286
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=YASKAWA Europe GmbH (ID=174, Number=60502, Country=DE)
+Commission=Yaskawa, Unknown (ID=647, Number=647)
+Number=7010286
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=azhar.iftikhar@yaskawa.eu (ID=2330, FirstName=Azhar, LastName=Iftikhar)
+CreatedBy=azhar.iftikhar@yaskawa.eu (ID=2330, FirstName=Azhar, LastName=Iftikhar)
+Type=
+TimeUnit=
+CreatedAt=27.03.2025 07:25:13 +00:00
+UpdatedAt=17.04.2025 06:05:51 +00:00
+CloseAt=17.04.2025 06:05:51 +00:00
+ArticlesCount=3
+
+### TITLE
+Read Only (RO) Entries in Init Commands can be copied but then not deleted.
+
+### ARTICLE00_HEADER
+Id=58999
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.03.2025 07:25:13 +00:00
+UpdatedAt=27.03.2025 07:25:18 +00:00
+
+### ARTICLE00_SUBJECT
+Read Only (RO) Entries in Init Commands can be copied but then not deleted.
+
+### ARTICLE00_BODY
+<div>Hello Martin,</div><div> </div><div>I am facing an issue while deleting the init command. Normally If I create a new init command by copying 'RO' or 'RW', the newly created init command will be 'RW'. However, I have an ESI that I am also attaching. If I create an init command by copying the last read-only init command, it again creates an 'RO' command, and I am unable to delete it.</div><div> </div><div>Thanks,</div><div>Azhar</div><br>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------------<br> Geschaeftsfuehrer/Managing Directors: Marcus Mead, Bobbie Linkenbach <br> Amtsgericht/Local Court: Frankfurt, Commercial register no. 88369 <br> Headquarter: YASKAWA Europe GmbH, Philipp-Reis-Str. 6, D-65795 Hattersheim<br> ------------------------------------------------------------------------------------------------------------------------------<br> CONFIDENTIALITY: This e-mail and any attachments are confidential and may also be privileged.<br> If you are not the named recipient, please notify the sender immediately and do not disclose the contents to another person,<br> use it for any purpose, or store or copy the information in any medium.
+
+### ARTICLE01_HEADER
+Id=59388
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.04.2025 08:05:13 +00:00
+UpdatedAt=07.04.2025 08:05:16 +00:00
+
+### ARTICLE01_SUBJECT
+Read Only (RO) Entries in Init Commands can be copied but then not deleted.
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>sorry for the delay. Martin is on vacation. He will be back next week. </div><div>I will have a look at it and Martin will contact you next week.</div><div><br></div><div>Best regards,</div><div>Kai</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, March 27, 2025 at 8:25:13 AM, Azhar Iftikhar wrote:<br><br><div>Hello Martin,</div>
+<div> </div>
+<div>I am facing an issue while deleting the init command. Normally If I create a new init command by copying 'RO' or 'RW', the newly created init command will be 'RW'. However, I have an ESI that I am also attaching. If I create an init command by copying the last read-only init command, it again creates an 'RO' command, and I am unable to delete it.</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Azhar</div>
+<br>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------------<br> Geschaeftsfuehrer/Managing Directors: Marcus Mead, Bobbie Linkenbach <br> Amtsgericht/Local Court: Frankfurt, Commercial register no. 88369 <br> Headquarter: YASKAWA Europe GmbH, Philipp-Reis-Str. 6, D-65795 Hattersheim<br> ------------------------------------------------------------------------------------------------------------------------------<br> CONFIDENTIALITY: This e-mail and any attachments are confidential and may also be privileged.<br> If you are not the named recipient, please notify the sender immediately and do not disclose the contents to another person,<br> use it for any purpose, or store or copy the information in any medium.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=59617
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.04.2025 11:49:32 +00:00
+UpdatedAt=14.04.2025 11:49:35 +00:00
+
+### ARTICLE02_SUBJECT
+Read Only (RO) Entries in Init Commands can be copied but then not deleted.
+
+### ARTICLE02_BODY
+Hi,<div><br></div><div>those init commands are read-only, because they are part of "<span>CiA 402</span><span>" and will be calculated based on the configured cycle time:</span>
+</div><div><br></div><div><img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/10286/59617/248626?view=inline"></div><div>I am also not sure if a slave has those init commands in his ESI file, if it is able to run without.</div><div><br></div><div>Do you realy need this? If yes, why?</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, April 7, 2025 at 10:05:13 AM, Kai Feifel wrote:<br><br>Hi,<div><br></div>
+<div>sorry for the delay. Martin is on vacation. He will be back next week. </div>
+<div>I will have a look at it and Martin will contact you next week.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, March 27, 2025 at 8:25:13 AM, Azhar Iftikhar wrote:<br><br><div>Hello Martin,</div>
+<div> </div>
+<div>I am facing an issue while deleting the init command. Normally If I create a new init command by copying 'RO' or 'RW', the newly created init command will be 'RW'. However, I have an ESI that I am also attaching. If I create an init command by copying the last read-only init command, it again creates an 'RO' command, and I am unable to delete it.</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Azhar</div>
+<br>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------------<br> Geschaeftsfuehrer/Managing Directors: Marcus Mead, Bobbie Linkenbach <br> Amtsgericht/Local Court: Frankfurt, Commercial register no. 88369 <br> Headquarter: YASKAWA Europe GmbH, Philipp-Reis-Str. 6, D-65795 Hattersheim<br> ------------------------------------------------------------------------------------------------------------------------------<br> CONFIDENTIALITY: This e-mail and any attachments are confidential and may also be privileged.<br> If you are not the named recipient, please notify the sender immediately and do not disclose the contents to another person,<br> use it for any purpose, or store or copy the information in any medium.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

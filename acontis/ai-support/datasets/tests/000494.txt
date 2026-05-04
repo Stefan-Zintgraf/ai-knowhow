@@ -1,0 +1,186 @@
+### HEADER
+Id=494
+Link=http://at-zammad/#ticket/zoom/494
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bucher Automation (ID=124, Number=54505, Country=DE)
+Commission=Bucher Industries, JetControl (ID=139, Number=139)
+Number=700494
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=tfoell@jetter.de (ID=35, FirstName=Tobias, LastName=Föll)
+CreatedBy=tfoell@jetter.de (ID=35, FirstName=Tobias, LastName=Föll)
+Type=
+TimeUnit=
+CreatedAt=26.04.2021 13:02:28 +00:00
+UpdatedAt=21.05.2021 06:11:46 +00:00
+CloseAt=21.05.2021 06:11:46 +00:00
+ArticlesCount=2
+
+### TITLE
+Ecat Master Version 2.9 bzw. 3.1 + RTOS-32 + DC
+
+### ARTICLE00_HEADER
+Id=2632
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.04.2021 13:02:29 +00:00
+UpdatedAt=26.04.2021 13:02:30 +00:00
+
+### ARTICLE00_SUBJECT
+Ecat Master Version 2.9 bzw. 3.1 + RTOS-32 + DC
+
+### ARTICLE00_BODY
+<div> </div><div>
+<p>Hallo Support,</p>
+<p> </p>
+<p>wir haben da mal eine Frage zu Distributed Clock (DC).</p>
+<p> </p>
+<p>Folgendes:</p>
+<p> </p>
+<p>Wir haben aktuell keine direkten Problem, dass DC Fehler melden würde. Ganz am Anfang „schwingt“ sich der Regler kurz ein.</p>
+<p>Es kommt meine ich eine DC Log Ausgabe, das wars dann auch.</p>
+<p> </p>
+<p>Wir müssen jedoch wegen einer Optimierung der Performanz die Verwaltung der Ecat Puffer umbauen.</p>
+<p> </p>
+<p>Jitter für diese 4 Aufrufe aktuell ca. max. +-13 usec</p>
+<p> </p>
+<p>Nun die Frage:</p>
+<p>============</p>
+<p> </p>
+<p>Leitet sich die „Genauigkeit“ des DC Mechanismus nur aus der Aufrufgenauigkeit (Jitter) vom Aufruf 3. ab ?</p>
+<p> </p>
+<p>Oder haben alle 4 Aufrufgenauigkeiten (Jitter) Einfluss auf die DC Genauigkeit ?</p>
+<p> </p>
+<p>Grund:</p>
+<p> </p>
+<p>Wir möchten den Aufrufe 1. 2 . und 4. über einen RTOS-32 Mutex schützen und den 3. Aufruf priorisieren ( ohne Mutex) , damit der DC nicht durch die Mutexe beeinflusst wird.</p>
+<p> </p>
+<p>D.h. nach diesem Umbau würde der Aufruf 3. Jitter mit +- 15usec gleich bleiben, jedoch hätte dann der Aufruf 1. 2. und 4. Max. einen Jitter von +- 80usec.</p>
+<p> </p>
+<ol start="1" type="1">
+<li> dwRes = ecatExecJob( eUsrJob_ProcessAllRxFrames, &amp;bPrevCycProcessed );<p></p>
+</li>
+</ol> <p> </p>
+<ol start="2" type="1">
+<li> dwRes = ecatExecJob( eUsrJob_SendAllCycFrames, EC_NULL );<p></p>
+</li>
+</ol> <p> </p>
+<ol start="3" type="1">
+<li> dwRes = ecatExecJob( eUsrJob_MasterTimer, EC_NULL );<p></p>
+</li>
+</ol> <p> </p>
+<ol start="4" type="1">
+<li> dwRes = ecatExecJob( eUsrJob_SendAcycFrames, EC_NULL );<p></p>
+</li>
+</ol> <p> </p>
+<p>Danke.</p>
+</div><br>
+<p>Mit freundlichen Grüßen / Kind regards</p><p>i.V. Tobias Föll</p><p>Head of System Engineering</p><p>Jetter AG<br> Gräterstraße 2 <br> DE-71642 Ludwigsburg <br> Tel: +49-7141-2550-0 <br> Fax: +49-7141-2550-425 <br> tfoell@jetter.de <br>
+<a href="http://www.jetter.de/" rel="nofollow noreferrer noopener" target="_blank">www.jetter.de</a><br> Datenschutzerklärung / Privacy Policy: <a href="https://www.jetter.de/kontakt/datenschutz.html" rel="nofollow noreferrer noopener" target="_blank"> www.jetter.de/kontakt/datenschutz.html</a></p><p>Ust.-Id.: DE 812 643 615<br> Amtsgericht Stuttgart HRB 205545 <br> Vorstandsvorsitzender: Christian Benz <br> Vorsitzender des Aufsichtsrates: Martin Jetter </p><p>VAT Reg.-No.: DE 812 643 615<br> Registered: Stuttgart HRB 205545 <br> CEO: Christian Benz <br> Chairman of the Supervisory Board: Martin Jetter</p>
+
+### ARTICLE01_HEADER
+Id=2665
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.04.2021 15:22:55 +00:00
+UpdatedAt=26.04.2021 15:22:57 +00:00
+
+### ARTICLE01_SUBJECT
+Ecat Master Version 2.9 bzw. 3.1 + RTOS-32 + DC
+
+### ARTICLE01_BODY
+Hallo Herr Föll,<div><br></div><div>nein alles hängt an dem Aufruf 2. <span>dwRes = ecatExecJob( eUsrJob_SendAllCycFrames, EC_NULL );</span>
+</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, April 26, 2021, 3:02:29 PM, Tobias Föll wrote:<br><br><div> </div>
+<div>
+<p>Hallo Support,</p>
+<p> </p>
+<p>wir haben da mal eine Frage zu Distributed Clock (DC).</p>
+<p> </p>
+<p>Folgendes:</p>
+<p> </p>
+<p>Wir haben aktuell keine direkten Problem, dass DC Fehler melden würde. Ganz am Anfang „schwingt“ sich der Regler kurz ein.</p>
+<p>Es kommt meine ich eine DC Log Ausgabe, das wars dann auch.</p>
+<p> </p>
+<p>Wir müssen jedoch wegen einer Optimierung der Performanz die Verwaltung der Ecat Puffer umbauen.</p>
+<p> </p>
+<p>Jitter für diese 4 Aufrufe aktuell ca. max. +-13 usec</p>
+<p> </p>
+<p>Nun die Frage:</p>
+<p>============</p>
+<p> </p>
+<p>Leitet sich die „Genauigkeit“ des DC Mechanismus nur aus der Aufrufgenauigkeit (Jitter) vom Aufruf 3. ab ?</p>
+<p> </p>
+<p>Oder haben alle 4 Aufrufgenauigkeiten (Jitter) Einfluss auf die DC Genauigkeit ?</p>
+<p> </p>
+<p>Grund:</p>
+<p> </p>
+<p>Wir möchten den Aufrufe 1. 2 . und 4. über einen RTOS-32 Mutex schützen und den 3. Aufruf priorisieren ( ohne Mutex) , damit der DC nicht durch die Mutexe beeinflusst wird.</p>
+<p> </p>
+<p>D.h. nach diesem Umbau würde der Aufruf 3. Jitter mit +- 15usec gleich bleiben, jedoch hätte dann der Aufruf 1. 2. und 4. Max. einen Jitter von +- 80usec.</p>
+<p> </p>
+<ol start="1" type="1">
+<li> dwRes = ecatExecJob( eUsrJob_ProcessAllRxFrames, &amp;bPrevCycProcessed );<p></p>
+</li>
+</ol> <p> </p>
+<ol start="2" type="1">
+<li> dwRes = ecatExecJob( eUsrJob_SendAllCycFrames, EC_NULL );<p></p>
+</li>
+</ol> <p> </p>
+<ol start="3" type="1">
+<li> dwRes = ecatExecJob( eUsrJob_MasterTimer, EC_NULL );<p></p>
+</li>
+</ol> <p> </p>
+<ol start="4" type="1">
+<li> dwRes = ecatExecJob( eUsrJob_SendAcycFrames, EC_NULL );<p></p>
+</li>
+</ol> <p> </p>
+<p>Danke.</p>
+</div>
+<br>
+<p>Mit freundlichen Grüßen / Kind regards</p>
+<p>i.V. Tobias Föll</p>
+<p>Head of System Engineering</p>
+<p>Jetter AG<br> Gräterstraße 2 <br> DE-71642 Ludwigsburg <br> Tel: +49-7141-2550-0 <br> Fax: +49-7141-2550-425 <br> tfoell@jetter.de <br>
+<a href="http://www.jetter.de/" rel="nofollow noreferrer noopener" target="_blank">www.jetter.de</a><br> Datenschutzerklärung / Privacy Policy: <a href="https://www.jetter.de/kontakt/datenschutz.html" rel="nofollow noreferrer noopener" target="_blank"> www.jetter.de/kontakt/datenschutz.html</a></p>
+<p>Ust.-Id.: DE 812 643 615<br> Amtsgericht Stuttgart HRB 205545 <br> Vorstandsvorsitzender: Christian Benz <br> Vorsitzender des Aufsichtsrates: Martin Jetter </p>
+<p>VAT Reg.-No.: DE 812 643 615<br> Registered: Stuttgart HRB 205545 <br> CEO: Christian Benz <br> Chairman of the Supervisory Board: Martin Jetter</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

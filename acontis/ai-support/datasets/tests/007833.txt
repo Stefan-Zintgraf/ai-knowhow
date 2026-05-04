@@ -1,0 +1,147 @@
+### HEADER
+Id=7833
+Link=http://at-zammad/#ticket/zoom/7833
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OVJP Corporation (ID=605, Number=0, Country=US)
+Commission=OVJP, Organic Vapor Jet Printer (ID=684, Number=684)
+Number=707833
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=achekfa@ovjp.com (ID=2155, FirstName=Abdulla, LastName=Chekfa)
+CreatedBy=achekfa@ovjp.com (ID=2155, FirstName=Abdulla, LastName=Chekfa)
+Type=
+TimeUnit=
+CreatedAt=09.04.2024 21:14:06 +00:00
+UpdatedAt=19.04.2024 06:28:11 +00:00
+CloseAt=19.04.2024 06:28:11 +00:00
+ArticlesCount=2
+
+### TITLE
+static library
+
+### ARTICLE00_HEADER
+Id=43213
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.04.2024 21:14:06 +00:00
+UpdatedAt=09.04.2024 21:14:06 +00:00
+
+### ARTICLE00_SUBJECT
+static library
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Cyril:</p>
+<p> </p>
+<p>I am getting on the average, reading/writing a single IO, or PDO, a time delay of 1.22 msecond.</p>
+<p>I did investigate the issue on my side. I noticed the following calls are causing the 1 mescond above. To me I concluded the following 2-function causing the problem</p>
+<p> </p>
+<p>EC_T_DWORD RValue= emGetProcessDataBits( MasterIndex, EC_TRUE/*output data*/, Offset, pData, DataBitLength, 100);</p>
+<p>EC_T_DWORD RValue= emSetProcessDataBits( MasterIndex, EC_TRUE/*Output Data*/, Offset, pData, DataBitLength,100/*TimeOUt*/);</p>
+<p> </p>
+<p>Below is the code I am using to read a single IO. Including timing.</p>
+<p> </p>
+<p>unsigned int</p>
+<p>EtherCATAcontis::ReadOutProcessDataBits( unsigned char *pData, unsigned int Offset, unsigned int DataBitLength)</p>
+<p>{</p>
+<p>struct timeval Start;</p>
+<p>struct timeval End;</p>
+<p>gettimeofday( &amp;Start, NULL);</p>
+<p>//printf(" EtherCATAcontis::ReadOutProcessDataBits: pData= %x Offset= %d, DataLength= %d", *pData, Offset, DataBitLength);</p>
+<p>EC_T_DWORD RValue= emGetProcessDataBits( MasterIndex, EC_TRUE/*output data*/, Offset, pData, DataBitLength, 100);</p>
+<p>gettimeofday( &amp;End, NULL);</p>
+<p>std::cout &lt;&lt; "EtherCATAcontis::ReadOutProcessDataBits:" &lt;&lt; (End.tv_sec * 1000 + End.tv_usec/1000.) - (Start.tv_sec * 1000 + Start.tv_usec/1000.) &lt;&lt; std::endl;</p>
+<p>return RValue;</p>
+<p>}</p>
+<p> </p>
+<p>I am using the dynamic library, as well as raw socket.</p>
+<p>Do you think I can get the static library, if it is available, to run the time performance and compare it with the Dynamic one?</p>
+<p>Any feedback regarding this problem will help.</p>
+<p> </p>
+<p>Currently, I am switching to real time, instead of using raw socket, I do the same test to compare.</p>
+<p> </p>
+<p>Cheers.</p>
+<p>-Abdulla</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=43221
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.04.2024 06:22:09 +00:00
+UpdatedAt=10.04.2024 06:22:13 +00:00
+
+### ARTICLE01_SUBJECT
+static library
+
+### ARTICLE01_BODY
+Hi Abdulla,<div><br></div><div>please check the following chapters:</div><div>
+<div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/software-integration.html#process-data-access" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/software-integration.html#process-data-access" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/software-integration.html#process-data-access</a></div>
+<div>
+<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=getprocessdata#emgetprocessdata" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=getprocessdata#emgetprocessdata" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=getprocessdata#emgetprocessdata</a><br>
+</div>
+<div><br></div>
+<div>Best Regards,</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, April 9, 2024 at 11:14:06 PM, Abdulla Chekfa wrote:<br><br><div>
+<p>Hi Cyril:</p>
+<p> </p>
+<p>I am getting on the average, reading/writing a single IO, or PDO, a time delay of 1.22 msecond.</p>
+<p>I did investigate the issue on my side. I noticed the following calls are causing the 1 mescond above. To me I concluded the following 2-function causing the problem</p>
+<p> </p>
+<p>EC_T_DWORD RValue= emGetProcessDataBits( MasterIndex, EC_TRUE/*output data*/, Offset, pData, DataBitLength, 100);</p>
+<p>EC_T_DWORD RValue= emSetProcessDataBits( MasterIndex, EC_TRUE/*Output Data*/, Offset, pData, DataBitLength,100/*TimeOUt*/);</p>
+<p> </p>
+<p>Below is the code I am using to read a single IO. Including timing.</p>
+<p> </p>
+<p>unsigned int</p>
+<p>EtherCATAcontis::ReadOutProcessDataBits( unsigned char *pData, unsigned int Offset, unsigned int DataBitLength)</p>
+<p>{</p>
+<p>struct timeval Start;</p>
+<p>struct timeval End;</p>
+<p>gettimeofday( &amp;Start, NULL);</p>
+<p>//printf(" EtherCATAcontis::ReadOutProcessDataBits: pData= %x Offset= %d, DataLength= %d", *pData, Offset, DataBitLength);</p>
+<p>EC_T_DWORD RValue= emGetProcessDataBits( MasterIndex, EC_TRUE/*output data*/, Offset, pData, DataBitLength, 100);</p>
+<p>gettimeofday( &amp;End, NULL);</p>
+<p>std::cout &lt;&lt; "EtherCATAcontis::ReadOutProcessDataBits:" &lt;&lt; (End.tv_sec * 1000 + End.tv_usec/1000.) - (Start.tv_sec * 1000 + Start.tv_usec/1000.) &lt;&lt; std::endl;</p>
+<p>return RValue;</p>
+<p>}</p>
+<p> </p>
+<p>I am using the dynamic library, as well as raw socket.</p>
+<p>Do you think I can get the static library, if it is available, to run the time performance and compare it with the Dynamic one?</p>
+<p>Any feedback regarding this problem will help.</p>
+<p> </p>
+<p>Currently, I am switching to real time, instead of using raw socket, I do the same test to compare.</p>
+<p> </p>
+<p>Cheers.</p>
+<p>-Abdulla</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,135 @@
+### HEADER
+Id=7866
+Link=http://at-zammad/#ticket/zoom/7866
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Syntec Technology, Robot (ID=901, Number=901)
+Number=707866
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=12.04.2024 12:34:26 +00:00
+UpdatedAt=26.04.2024 07:50:00 +00:00
+CloseAt=26.04.2024 07:49:54 +00:00
+ArticlesCount=2
+
+### TITLE
+The potential customer SYNTEC requirement about EFT test for EcMaster
+
+### ARTICLE00_HEADER
+Id=43347
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.04.2024 12:34:26 +00:00
+UpdatedAt=12.04.2024 12:34:29 +00:00
+
+### ARTICLE00_SUBJECT
+The potential customer SYNTEC requirement about EFT test for EcMaster
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently, We are discusing the ethercat application with SYNTEC, they said they need do some test before the order.</div>
+<div>The test include EFT test. We search it is same EMC test. They said they test themselvse ethercat master with twincat, the twincat is better than them in EFT test. And beckhoff engineer told them twincat consider it in software.</div>
+<div>We don't have experience, Dose the EFT could be optimazed in software? Dose the EcMaster consider it?</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=43350
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.04.2024 13:20:45 +00:00
+UpdatedAt=12.04.2024 13:20:45 +00:00
+
+### ARTICLE01_SUBJECT
+The potential customer SYNTEC requirement about EFT test for EcMaster
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>I don't fully understand the customer request, because I don't know what they are really testing.</div><div><br></div><div>The lost cyclic frames are lost and cannot be repeated. But the acyclic frames are repeated by EC-Master following a lot of different rules related to their meaning like Mailbox or scanbus... Making EC-Master as robust as possible.</div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, April 12, 2024 at 2:34:26 PM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently, We are discusing the ethercat application with SYNTEC, they said they need do some test before the order.</div>
+<div>The test include EFT test. We search it is same EMC test. They said they test themselvse ethercat master with twincat, the twincat is better than them in EFT test. And beckhoff engineer told them twincat consider it in software.</div>
+<div>We don't have experience, Dose the EFT could be optimazed in software? Dose the EcMaster consider it?</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

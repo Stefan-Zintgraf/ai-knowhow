@@ -1,0 +1,238 @@
+### HEADER
+Id=1657
+Link=http://at-zammad/#ticket/zoom/1657
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Hanslaser, motion controller (ID=49, Number=49)
+Number=701657
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=18.10.2021 10:17:50 +00:00
+UpdatedAt=22.10.2021 06:11:57 +00:00
+CloseAt=22.10.2021 06:11:57 +00:00
+ArticlesCount=4
+
+### TITLE
+The customer hacontrol want to know the support status of Intel 2.5G NIC
+
+### ARTICLE00_HEADER
+Id=8892
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.10.2021 10:17:50 +00:00
+UpdatedAt=18.10.2021 10:17:55 +00:00
+
+### ARTICLE00_SUBJECT
+The customer hacontrol want to know the support status of Intel 2.5G NIC
+
+### ARTICLE00_BODY
+<div>Dear,</div><div> </div><div>The customer hacontrol want to know if you have a plan to support Intel 2.5G NIC(eg:I225) on EcMaster.</div><div>If so, is there a planned schedule?</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740270</div>
+<div>Email:ec_support@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=8893
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.10.2021 10:24:33 +00:00
+UpdatedAt=18.10.2021 10:24:35 +00:00
+
+### ARTICLE01_SUBJECT
+The customer hacontrol want to know the support status of Intel 2.5G NIC
+
+### ARTICLE01_BODY
+Hi Lishan,<div><br></div><div>EC-Master supports I225 since V3.1.0.19.</div><div><br></div><div>Best Regards,</div><div>Cyril<div><br></div>
+<div><blockquote type="cite">On Monday, October 18, 2021, 12:17:50 PM, EtherCAT Support wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>The customer hacontrol want to know if you have a plan to support Intel 2.5G NIC(eg:I225) on EcMaster.</div>
+<div>If so, is there a planned schedule?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740270</div>
+<div>Email:ec_support@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=8897
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.10.2021 10:35:16 +00:00
+UpdatedAt=18.10.2021 10:35:16 +00:00
+
+### ARTICLE02_SUBJECT
+Re: RE: The customer hacontrol want to know the support status of Intel 2.5G NIC [Ticket#701657]
+
+### ARTICLE02_BODY
+<div>Hi Cyril,</div><div> </div><div>Thanks for the reply, please confirm whether RTX2011 and RTX64 are also supported?</div><div>Is the driver still i8254x?</div><div> </div><div>Best Regards,</div><div>lishan</div><hr>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740270</div>
+<div>Email:ec_support@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+</div><blockquote>
+<div> </div>
+<div>
+<span class="js-signatureMarker"></span><div>
+<b>From:</b> ecsupport@acontis.com </div>
+<div>
+<b>Date:</b> 2021-10-18 18:24</div>
+<div>
+<b>To:</b> ec_support@motrotech.com </div>
+<div>
+<b>Subject:</b> RE: The customer hacontrol want to know the support status of Intel 2.5G NIC [Ticket#701657]</div>
+</div>
+<div>Hi Lishan,<div> </div>
+<div>EC-Master supports I225 since V3.1.0.19.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Cyril<div> </div>
+<div><blockquote type="cite">On Monday, October 18, 2021, 12:17:50 PM, EtherCAT Support wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>The customer hacontrol want to know if you have a plan to support Intel 2.5G NIC(eg:I225) on EcMaster.</div>
+<div>If so, is there a planned schedule?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740270</div>
+<div>Email:ec_support@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div> </div>
+<br><br>
+</div>
+</div>
+</blockquote>
+
+### ARTICLE03_HEADER
+Id=8913
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.10.2021 14:48:14 +00:00
+UpdatedAt=18.10.2021 14:48:17 +00:00
+
+### ARTICLE03_SUBJECT
+The customer hacontrol want to know the support status of Intel 2.5G NIC
+
+### ARTICLE03_BODY
+Hi Lishan,<div><br></div><div>only RTX64 3.x and 4.x. Yes the linklayer is I8254x</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Monday, October 18, 2021, 12:35:16 PM, EtherCAT Support wrote:<br><br><div>Hi Cyril,</div>
+<div> </div>
+<div>Thanks for the reply, please confirm whether RTX2011 and RTX64 are also supported?</div>
+<div>Is the driver still i8254x?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>lishan</div>
+<hr>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740270</div>
+<div>Email:ec_support@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+</div>
+<blockquote>
+<div> </div>
+<div>
+<span class="js-signatureMarker"></span><div>
+<b>From:</b> ecsupport@acontis.com </div>
+<div>
+<b>Date:</b> 2021-10-18 18:24</div>
+<div>
+<b>To:</b> ec_support@motrotech.com </div>
+<div>
+<b>Subject:</b> RE: The customer hacontrol want to know the support status of Intel 2.5G NIC [Ticket#701657]</div>
+</div>
+<div>Hi Lishan,<div> </div>
+<div>EC-Master supports I225 since V3.1.0.19.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Cyril<div> </div>
+<div><blockquote type="cite">On Monday, October 18, 2021, 12:17:50 PM, EtherCAT Support wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>The customer hacontrol want to know if you have a plan to support Intel 2.5G NIC(eg:I225) on EcMaster.</div>
+<div>If so, is there a planned schedule?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740270</div>
+<div>Email:ec_support@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div> </div>
+<br><br>
+</div>
+</div>
+</blockquote>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

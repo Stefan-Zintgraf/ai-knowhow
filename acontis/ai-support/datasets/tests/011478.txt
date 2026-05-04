@@ -1,0 +1,78 @@
+### HEADER
+Id=11478
+Link=http://at-zammad/#ticket/zoom/11478
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Yaskawa America, Inc. (ID=397, Number=40184, Country=US)
+Commission=Yaskawa, Motion Controller (ID=472, Number=472)
+Number=7011478
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=roman_skorupa@yaskawa.com (ID=3112, FirstName=roman_skorupa@yaskawa.com, LastName=)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=25.09.2025 06:13:39 +00:00
+UpdatedAt=20.10.2025 09:07:07 +00:00
+CloseAt=10.10.2025 06:02:56 +00:00
+ArticlesCount=2
+
+### TITLE
+Acontis software update request from Yaskawa
+
+### ARTICLE00_HEADER
+Id=66312
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.09.2025 06:13:39 +00:00
+UpdatedAt=25.09.2025 06:13:43 +00:00
+
+### ARTICLE00_SUBJECT
+Acontis software update request from Yaskawa
+
+### ARTICLE00_BODY
+<p>Dear Mr./Ms. Skorupa,</p><p>thank you for your registration.<br><br></p><p>First Name: Roman<br>Last Name: Skorupa<br>Company: Yaskawa<br><span>Commission Number: <br></span><span>Country: United States<br></span><span>City: Waukegan<br></span><span>E-Mail: roman_skorupa@yaskawa.com<br></span>Product: <span>EC-Master,EC-Engineer,EC-Inspector,EC-Lyser<br></span>Update Type: Upgrade (newest API)<br><span>Operating System Version: Windows 11<br></span>Additional information: </p><p><img src="/api/v1/ticket_attachment/11478/66312/276577?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/11478/66312/276576?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=66492
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.09.2025 16:03:35 +00:00
+UpdatedAt=29.09.2025 16:03:39 +00:00
+
+### ARTICLE01_SUBJECT
+Acontis software update request from Yaskawa
+
+### ARTICLE01_BODY
+Hi Roman,<div><br></div><div>please find below the requested updates:</div><div><a href="https://downloads.acontis.com/2025/V-Z/Yaskawa_America_(40184)(US)/EC-STA_Windows_x86/3.2.3.03/EC-STA-V3.2.3.03-Windows-x86_32Bit-Dongled.zip" title="https://downloads.acontis.com/2025/V-Z/Yaskawa_America_(40184)(US)/EC-STA_Windows_x86/3.2.3.03/EC-STA-V3.2.3.03-Windows-x86_32Bit-Dongled.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/V-Z/Yaskawa_America_(40184)(US)/EC-STA_Windows_x86/3.2.3.03/EC-STA-V3.2.3.03-Windows-x86_32Bit-Dongled.zip</a></div><div><a href="https://downloads.acontis.com/2025/V-Z/Yaskawa_America_(40184)(US)/EC-Engineer/4.0.7/EC-Engineer_Dongle_V4.0.7.zip" title="https://downloads.acontis.com/2025/V-Z/Yaskawa_America_(40184)(US)/EC-Engineer/4.0.7/EC-Engineer_Dongle_V4.0.7.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/V-Z/Yaskawa_America_(40184)(US)/EC-Engineer/4.0.7/EC-Engineer_Dongle_V4.0.7.zip</a></div><div><a href="https://downloads.acontis.com/2025/V-Z/Yaskawa_America_(40184)(US)/EC-Lyser/4.0.7/EC-Lyser_Dongle_V4.0.7.zip" title="https://downloads.acontis.com/2025/V-Z/Yaskawa_America_(40184)(US)/EC-Lyser/4.0.7/EC-Lyser_Dongle_V4.0.7.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/V-Z/Yaskawa_America_(40184)(US)/EC-Lyser/4.0.7/EC-Lyser_Dongle_V4.0.7.zip</a></div><div><a href="https://downloads.acontis.com/2025/V-Z/Yaskawa_America_(40184)(US)/EC-Inspector/4.0.7/EC-Inspector_Dongle_V4.0.7.zip" title="https://downloads.acontis.com/2025/V-Z/Yaskawa_America_(40184)(US)/EC-Inspector/4.0.7/EC-Inspector_Dongle_V4.0.7.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/V-Z/Yaskawa_America_(40184)(US)/EC-Inspector/4.0.7/EC-Inspector_Dongle_V4.0.7.zip</a></div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, September 25, 2025 at 8:13:39 AM, sales acontis wrote:<br><br><p>Dear Mr./Ms. Skorupa,</p>
+<p>thank you for your registration.<br><br></p>
+<p>First Name: Roman<br>Last Name: Skorupa<br>Company: Yaskawa<br><span>Commission Number: <br></span><span>Country: United States<br></span><span>City: Waukegan<br></span><span>E-Mail: roman_skorupa@yaskawa.com<br></span>Product: <span>EC-Master,EC-Engineer,EC-Inspector,EC-Lyser<br></span>Update Type: Upgrade (newest API)<br><span>Operating System Version: Windows 11<br></span>Additional information: </p>
+<p><img src="/api/v1/ticket_attachment/11478/66492/277367?view=inline" alt="" style="max-width:100%;max-width:100%;width:163px;max-height:85px;"></p>
+<p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/11478/66492/277368?view=inline" style="max-width:100%;max-width:100%;width:22px;max-height:22px;"></a></span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

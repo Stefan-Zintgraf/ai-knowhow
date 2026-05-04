@@ -1,0 +1,189 @@
+### HEADER
+Id=9681
+Link=http://at-zammad/#ticket/zoom/9681
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=709681
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=15.01.2025 03:34:27 +00:00
+UpdatedAt=20.01.2025 07:11:57 +00:00
+CloseAt=20.01.2025 07:11:57 +00:00
+ArticlesCount=2
+
+### TITLE
+About the condition which the messages are appeared... (QNo.116)
+
+### ARTICLE00_HEADER
+Id=55028
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.01.2025 03:34:27 +00:00
+UpdatedAt=15.01.2025 03:34:30 +00:00
+
+### ARTICLE00_SUBJECT
+About the condition which the messages are appeared... (QNo.116)
+
+### ARTICLE00_BODY
+<div>Hi Support Team,</div><div> </div><div>This question is from Mitsubishi (commission No. 40627).</div><div> </div><div>At this view, this is Device Editor of pointed Slave at Diagnosis Mode, if Help mark ("?" in circle) near "Software Diagnostics" and "Hardware Diagnostics" is clicked, a pop-up window is appeared.</div><div>As you know, there are some messages in this window.</div><div> </div><div><img alt="PastedGraphic-1.tiff" src="/api/v1/ticket_attachment/9681/55028/228074?view=inline" style="max-width:100%;"></div><div> </div><div><img alt="PastedGraphic-3.png" src="/api/v1/ticket_attachment/9681/55028/228073?view=inline" style="max-width:100%;width:350px;"></div><div> </div><div>
+<div>Question 1</div>
+<div>Is there any difference in the contents that can be displayed when starting from the Help mark near "Software Diagnostics" and when starting from the Help mark near "Hardware Diagnostics"?</div>
+<div> </div>
+<div>If YES, please teach us the following messages are shown from Software’ Help or from Hardware’s Help or from Both...</div>
+<div> </div>
+<div>S or H or Both ID:3361 No more details found</div>
+<div>S or H or Both ID:3362 Disable sync manager watchdog on advanced options</div>
+<div>S or H or Both ID:3363 Check realtime support</div>
+<div>S or H or Both ID:3364 Check MDP configuration</div>
+<div>S or H or Both ID:3365 Check PDO configuration</div>
+<div>S or H or Both ID:3366 Link missing on input port of slave '{0}'</div>
+<div>S or H or Both ID:3367 Line break detected before slave '{0}'</div>
+<div>S or H or Both ID:3368 Check connection on port '{2}' of slave '{0}'</div>
+<div>S or H or Both ID:3369 Check connection between slave '{0}' and slave '{1}'</div>
+<div> </div>
+<div>Question 2</div>
+<div>Please teach us the condition of the each following errors are occurred…</div>
+<div> </div>
+<div>
+<div>ID:3361 No more details found</div>
+<div>ID:3362 Disable sync manager watchdog on advanced options</div>
+<div>ID:3363 Check realtime support</div>
+<div>ID:3364 Check MDP configuration</div>
+<div>ID:3365 Check PDO configuration</div>
+<div>ID:3366 Link missing on input port of slave '{0}'</div>
+<div>ID:3367 Line break detected before slave '{0}'</div>
+<div>ID:3368 Check connection on port '{2}' of slave '{0}'</div>
+<div>ID:3369 Check connection between slave '{0}' and slave '{1}'</div>
+</div>
+<div> </div>
+<div>Best regards,</div>
+</div><div>Yuichi</div><div> </div><div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=55060
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.01.2025 10:38:53 +00:00
+UpdatedAt=15.01.2025 10:38:53 +00:00
+
+### ARTICLE01_SUBJECT
+About the condition which the messages are appeared... (QNo.116)
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>see answers below.</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div>
+<blockquote type="cite">On Wednesday, January 15, 2025 at 4:34:27 AM, Yuichi Ide wrote:<br><br><div>Hi Support Team,</div>
+<div> </div>
+<div>This question is from Mitsubishi (commission No. 40627).</div>
+<div> </div>
+<div>At this view, this is Device Editor of pointed Slave at Diagnosis Mode, if Help mark ("?" in circle) near "Software Diagnostics" and "Hardware Diagnostics" is clicked, a pop-up window is appeared.</div>
+<div>As you know, there are some messages in this window.</div>
+<div> </div>
+<div></div>
+<div> </div>
+<div><img alt="PastedGraphic-3.png" src="/api/v1/ticket_attachment/9681/55060/228150?view=inline" style="max-width:100%;max-width:100%;width:350px;"></div>
+<div> </div>
+<div>
+<div>Question 1</div>
+<div>Is there any difference in the contents that can be displayed when starting from the Help mark near "Software Diagnostics" and when starting from the Help mark near "Hardware Diagnostics"?</div>
+<div>MG: Yes, currently software related errors are simply state machine based errors this means:</div>
+<div>Software<span> </span><span>&gt;= </span>EErrStateMachineBase</div>
+<div>
+<span>Hardware &lt;</span><span> </span><span>EErrStateMachineBase</span>
+</div>
+</div>
+</blockquote>
+<blockquote type="cite"><div>
+<div> </div>
+<div>If YES, please teach us the following messages are shown from Software’ Help or from Hardware’s Help or from Both...</div>
+<div> </div>
+<div>S or H or Both ID:3361 No more details found // MG: both</div>
+<div>S or H or Both ID:3362 Disable sync manager watchdog on advanced options // MG: S</div>
+<div>S or H or Both ID:3363 Check realtime support // MG: S</div>
+<div>S or H or Both ID:3364 Check MDP configuration // MG: S</div>
+<div>S or H or Both ID:3365 Check PDO configuration // MG: S</div>
+<div>S or H or Both ID:3366 Link missing on input port of slave '{0}' // MG: H</div>
+<div>S or H or Both ID:3367 Line break detected before slave '{0}' // MG: H</div>
+<div>S or H or Both ID:3368 Check connection on port '{2}' of slave '{0}' // MG: H</div>
+<div>S or H or Both ID:3369 Check connection between slave '{0}' and slave '{1}' // MG: H</div>
+<div> </div>
+<div>Question 2</div>
+<div>Please teach us the condition of the each following errors are occurred…</div>
+<div> </div>
+<div>
+<div>ID:3361 No more details found</div>
+<div>MG: Default text if we currently do not have more details. Maybe in future we will add more.</div>
+<div><br></div>
+<div>ID:3362 Disable sync manager watchdog on advanced options // MG: ALStatus 0x001B</div>
+<div>ID:3363 Check realtime support // MG: ALStatus 0x001B</div>
+<div>ID:3364 Check MDP configuration // MG: ALStatus 0x001D / 0x001E (MDP Slave)</div>
+<div>ID:3365 Check PDO configuration // MG: ALStatus 0x001D / 0x001E (No MDP Slave)</div>
+<div>MG: Depending on the specific state machine error (ALStatus), we display one or more of those messages</div>
+<div><br></div>
+<div>ID:3366 Link missing on input port of slave '{0}'</div>
+<div>ID:3367 Line break detected before slave '{0}'</div>
+<div>ID:3368 Check connection on port '{2}' of slave '{0}'</div>
+<div>ID:3369 Check connection between slave '{0}' and slave '{1}'</div>
+<div>MG: Those erros will be generated currently based on the error codes of the slave. I mean depending on which port has which error, we try to give the user more details about what is the reason of the problem:</div>
+<div></div>
+</div>
+</div></blockquote>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/9681/55060/228151?view=inline"><blockquote type="cite">
+<div>
+<div>
+</div>
+<div> </div>
+<div>Best regards,</div>
+</div>
+<div>Yuichi</div>
+<div> </div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+</blockquote>
+</div>
+<div><br></div>
+<br><br>
+</div>

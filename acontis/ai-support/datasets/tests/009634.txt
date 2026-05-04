@@ -1,0 +1,107 @@
+### HEADER
+Id=9634
+Link=http://at-zammad/#ticket/zoom/9634
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Auris Surgical Robotics Inc (ID=336, Number=40288, Country=US)
+Commission=Auris Surgical Robotics Inc, R&D (ID=402, Number=402)
+Number=709634
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=szalawad@its.jnj.com (ID=2482, FirstName=Saatyan [ETHUS], LastName=Zalawadia)
+CreatedBy=szalawad@its.jnj.com (ID=2482, FirstName=Saatyan [ETHUS], LastName=Zalawadia)
+Type=
+TimeUnit=
+CreatedAt=09.01.2025 19:41:06 +00:00
+UpdatedAt=25.02.2025 15:40:56 +00:00
+CloseAt=15.01.2025 14:58:05 +00:00
+ArticlesCount=2
+
+### TITLE
+Multi Master Question
+
+### ARTICLE00_HEADER
+Id=54786
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.01.2025 19:41:08 +00:00
+UpdatedAt=09.01.2025 19:42:56 +00:00
+
+### ARTICLE00_SUBJECT
+Re: Multi Master Question
+
+### ARTICLE00_BODY
+<p> </p><div dir="auto">Jon,</div><div dir="auto">Yes, tomorrow will work. Please also include Nick (cc'd) on the invite.</div><div dir="auto">
+<br> </div><div dir="auto">The control PC is the primary controller with full functionality and would be located away from the robot. The two SOMs are redundant controllers collocated on the robot that have reduced functionality. The idea is that if the control PC is not present (disconnected) or it fails, some basic operations can continue.</div><div dir="auto">
+<br> </div><div dir="auto">As for the second question, let's discuss that in the meeting. I don't quite understand.</div><div dir="auto">
+<br> </div><div dir="auto">Thanks,</div><div dir="auto">Sutyen</div><div dir="auto">
+<br> <hr> <div>
+<strong>From:</strong> Jon Waters &lt;j.waters@acontis.com&gt; <br> <strong>Sent:</strong> Wednesday, January 8, 2025 6:57:17 AM <br> <strong>To:</strong> Zalawadia, Saatyan [ETHUS] &lt;SZalawad@ITS.JNJ.com&gt; <br> <strong>Cc:</strong> p.bussmann@acontis.com &lt;p.bussmann@acontis.com&gt; <br> <strong>Subject:</strong> [EXTERNAL] Re: Multi Master Question <br> </div>
+<br> Hi Sutyen, <div> </div>
+<div>Sorry, I didn’t get confirmation from Paul before sending the invite. In fact, the meeting time is too late for him (in Germany) today. Would this same time work for you tomorrow (Thursday)? Paul can make that time tomorrow.</div>
+<div> </div>
+<div>He had some questions we would like to mention ahead of the meeting:</div>
+<div> </div>
+<span class="js-signatureMarker"></span><blockquote> <div> <div>1. What is the purpose of the control PC?</div>
+</div>
+<div> <div>2. “single hub failure”: All communication will be lost if the software at the Hub at SOM A stops working.</div>
+</div>
+</blockquote> <div> <div>
+<br> Jon Waters <br> General Manager <br> <br> acontis technologies Inc. <br> 945 Concord Street <br> Framingham, MA 01701 <br> Phone: +1-508-809-7201 </div>
+<div>
+<br> <blockquote type="cite"> <div>On Jan 7, 2025, at 1:54 PM, Jon Waters &lt;j.waters@acontis.com&gt; wrote:</div>
+<br> <div> <div>Hi Sutyen,<div> </div>
+<div>Sorry for the delay. Paul is available tomorrow, January 8th. I will send out a meeting invitation.<br> <div>
+<br> Jon Waters <br> General Manager <br> <br> acontis technologies Inc. <br> 945 Concord Street <br> Framingham, MA 01701 <br> Phone: +1-508-809-7201 </div>
+<div>
+<br> <blockquote type="cite"> <div>On Dec 23, 2024, at 1:34 PM, Zalawadia, Saatyan [ETHUS] &lt;SZalawad@ITS.JNJ.com&gt; wrote:</div>
+<br> <div> <div>Hi Jon,</div>
+<div>I think having a call to discuss is a good idea. I will be out of office until the week of the 6th. I see you put something on the calendar at 10:30 on the prior Friday. How about a similar time on either Monday (Jan 6) or Wednesday (Jan 8)?</div>
+<div> </div>
+<div>Thank you,</div>
+<div>Sutyen</div>
+<div> </div>
+<hr> <div dir="ltr"> <b>From:</b> Jon Waters &lt;<a href="mailto:j.waters@acontis.com">j.waters@acontis.com</a>&gt; <br> <b>Sent:</b> Thursday, December 19, 2024 2:01 PM <br> <b>To:</b> Zalawadia, Saatyan [ETHUS] &lt;<a href="mailto:SZalawad@ITS.JNJ.com">SZalawad@ITS.JNJ.com</a>&gt; <br> <b>Cc:</b> <a href="mailto:p.bussmann@acontis.com">p.bussmann@acontis.com</a> &lt;<a href="mailto:p.bussmann@acontis.com">p.bussmann@acontis.com</a>&gt; <br> <b>Subject:</b> [EXTERNAL] Re: Multi Master Question <div> </div>
+</div>
+<div>Hi Sutyen,<div> </div>
+<div>I discussed briefly with Paul and if he understands things correctly from your email and diagram, it should be straightforward and possible, but there are still some challenges and topics to discuss.</div>
+<div> </div>
+<div>I propose that we schedule a call for in the new year, together with Paul from Germany. Would that be OK for you?<br> <div>
+<br> Jon Waters <br> General Manager <br> <br> acontis technologies Inc. <br> 945 Concord Street <br> Framingham, MA 01701 <br> Phone: +1-508-809-7201 </div>
+<div>
+<br> <blockquote type="cite"> <div>On Dec 11, 2024, at 1:57 PM, Zalawadia, Saatyan [ETHUS] &lt;<a href="mailto:SZalawad@ITS.JNJ.com">SZalawad@ITS.JNJ.com</a>&gt; wrote:</div>
+<br> <div> <div>Hello Jon &amp; Paul,</div>
+<div>We are currently exploring topology options for our system with functional safety / single fault tolerance. All of these options will include dual master and redundant cabling. There has been one interesting idea that was proposed that would actually require 3 ethercat masters. To that end, I am wondering if there is a supported topology that includes 3 masters?</div>
+<div> </div>
+<div>We do not require that the switchover between masters' occur instantly without freezing the system. By this I mean that it is ok if the system goes into a fault state and requires some time (e.g. to restart the remaining masters with new ENI files) before another master takes over.</div>
+<div> <br> I have attached an image below of what I imagine the cabling for something like that would look like. I think SOM A and SOM B require redundant cabling, but we could do with a single cable from the Control PC. We would like to be tolerant to any single hub failure.</div>
+<div> </div>
+<div>Thank you,</div>
+<div>Sutyen Zalawadia</div>
+<div> </div>
+<div> <img alt="image.png" src="/api/v1/ticket_attachment/9634/54786/226878?view=inline" style="max-width:100%;max-width: 100%;">
+</div>
+</div>
+</blockquote> </div>
+</div>
+</div>
+</div>
+</blockquote> </div>
+<br> </div>
+</div>
+</div>
+</blockquote> </div>
+<br> </div>
+<br> </div>
+
+### ARTICLE01_HEADER
+Id=55096
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=15.01.2025 14:58:05 +00:00
+UpdatedAt=15.01.2025 14:58:05 +00:00
+
+### ARTICLE01_BODY
+<a href="file://at-nas-1/users/jws/JNJ-MasterRed.pptm">U:\jws\JNJ-MasterRed.pptm</a> an @jws geschickt

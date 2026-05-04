@@ -1,0 +1,167 @@
+### HEADER
+Id=10681
+Link=http://at-zammad/#ticket/zoom/10681
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=7010681
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=29.05.2025 17:45:59 +00:00
+UpdatedAt=06.06.2025 06:09:51 +00:00
+CloseAt=06.06.2025 06:09:51 +00:00
+ArticlesCount=6
+
+### TITLE
+Customer Using Motion Demo with Python
+
+### ARTICLE00_HEADER
+Id=61145
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.05.2025 17:45:59 +00:00
+UpdatedAt=29.05.2025 17:45:59 +00:00
+
+### ARTICLE00_SUBJECT
+Customer Using Motion Demo with Python
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>Do we have any Python-specific documentation about the implementation of the motion example application? I see there is a command line argument “—motion” but no documentation about it. What is this doing and how do you get started with it? Sometimes there is also a message printed to the terminal window about “feature not supported”, so is this not supported in the eval?</div><div>
+<div>
+<br>/Jon </div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=61211
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=02.06.2025 09:15:19 +00:00
+UpdatedAt=02.06.2025 09:15:19 +00:00
+
+### ARTICLE01_BODY
+@Cyril:<div>Currently the motion part is only available on Windows. Do we want to change the build system and add the motion lib on all platforms?</div>
+
+### ARTICLE02_HEADER
+Id=61213
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=02.06.2025 09:20:17 +00:00
+UpdatedAt=02.06.2025 09:20:17 +00:00
+
+### ARTICLE02_BODY
+Hi Jon,<div><br></div><div>we currently support the motion lib only on Windows. Do you have a customer request?</div>
+
+### ARTICLE03_HEADER
+Id=61398
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=04.06.2025 19:10:09 +00:00
+UpdatedAt=04.06.2025 19:10:09 +00:00
+
+### ARTICLE03_BODY
+<div>Hi Cyril,</div><div><br></div><div>Yes, a potential new customer Coronal: <a href="https://coronal.tech" title="https://coronal.tech" rel="nofollow noreferrer noopener" target="_blank">https://coronal.tech</a>. They are evaluating with EC-Master for Linux and the Python add-on, and saw the code area in the python example application mentioning the motion command line argument.</div>
+
+### ARTICLE04_HEADER
+Id=61434
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.06.2025 09:39:21 +00:00
+UpdatedAt=05.06.2025 09:39:22 +00:00
+
+### ARTICLE04_SUBJECT
+Customer Using Motion Demo with Python
+
+### ARTICLE04_BODY
+Hi Jon,<div><br></div><div>until today the Python wrapper and example are no commercial success.</div><div>Supporting the motion lib in Python is quite some effort (several weeks).</div><div><br></div><div>How much revenue do you expect with Coronal? SDK and runtimes?</div><div><br></div><div>Christoph<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, May 29, 2025 at 7:45:59 PM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>Do we have any Python-specific documentation about the implementation of the motion example application? I see there is a command line argument “—motion” but no documentation about it. What is this doing and how do you get started with it? Sometimes there is also a message printed to the terminal window about “feature not supported”, so is this not supported in the eval?</div>
+<div>
+<div>
+<br>/Jon </div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE05_HEADER
+Id=61452
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.06.2025 15:05:44 +00:00
+UpdatedAt=05.06.2025 15:05:44 +00:00
+
+### ARTICLE05_SUBJECT
+Re: Customer Using Motion Demo with Python [Ticket#7010681]
+
+### ARTICLE05_BODY
+Hi Christoph,<div> </div><div>I don’t know these answers yet. I also don’t know how much they will really use the motion library vs. just implementing some simple motion commands themselves. So we can hold off on this until we hear otherwise from the customer and I learn more about the commercial potential.<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Jun 5, 2025, at 5:39 AM, Christoph Widmann via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>Hi Jon,<div> </div>
+<div>until today the Python wrapper and example are no commercial success.</div>
+<div>Supporting the motion lib in Python is quite some effort (several weeks).</div>
+<div> </div>
+<div>How much revenue do you expect with Coronal? SDK and runtimes?</div>
+<div> </div>
+<div>Christoph<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Thursday, May 29, 2025 at 7:45:59 PM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>Do we have any Python-specific documentation about the implementation of the motion example application? I see there is a command line argument “—motion” but no documentation about it. What is this doing and how do you get started with it? Sometimes there is also a message printed to the terminal window about “feature not supported”, so is this not supported in the eval?</div>
+<div>
+<br>/Jon </div>
+</blockquote></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

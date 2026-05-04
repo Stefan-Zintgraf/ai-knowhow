@@ -1,0 +1,112 @@
+### HEADER
+Id=11980
+Link=http://at-zammad/#ticket/zoom/11980
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ADLINK Technology, Inc. (ID=318, Number=40110, Country=TW)
+Commission=ADLINK, RT-Linux (ID=377, Number=377)
+Number=7011980
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=peter.kao@adlinktech.com (ID=40, FirstName=Peter, LastName=Kao)
+CreatedBy=peter.kao@adlinktech.com (ID=40, FirstName=Peter, LastName=Kao)
+Type=
+TimeUnit=
+CreatedAt=01.12.2025 09:23:10 +00:00
+UpdatedAt=12.12.2025 08:16:21 +00:00
+CloseAt=12.12.2025 08:16:21 +00:00
+ArticlesCount=3
+
+### TITLE
+EC-engineer configure Sync Unit Cycle behavior check
+
+### ARTICLE00_HEADER
+Id=69125
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.12.2025 09:23:11 +00:00
+UpdatedAt=01.12.2025 09:23:17 +00:00
+
+### ARTICLE00_SUBJECT
+EC-engineer configure Sync Unit Cycle behavior check
+
+### ARTICLE00_BODY
+<div>Dear acontis,</div><div>We previously discovered that by configuring EC-Engineer—specifically using Overwrite Mode and setting the Sync Unit Cycle—we can allow EtherCAT slaves on the same bus to operate with different cycle-time multiples. I would like to confirm a few points with you:</div><ol start="1">
+<li>
+<div>Is any additional handling or parameter adjustment required inside the master code when using this configuration?</div>
+</li>
+<li>
+<div>If the master cycle time is 1 ms, and there are 10 devices in the topology, but only Slave #3 is configured with x2, meaning 2 ms, will Slave #3 indeed operate at a 2 ms cycle time?</div>
+</li>
+<li>
+<div>Can this feature be used together with cable redundancy, or are there any limitations?</div>
+</li>
+</ol>
+<div>We would appreciate your help in clarifying the above questions.<br> Thanks a lot.</div><div>Peter.K</div><div> </div><p><span><em><strong>CONFIDENTIALITY, DATA PROTECTION &amp; PRIVACY</strong></em><br> This message may contain confidential and/or legally privileged information. If you are not the intended recipient(s), then you are hereby notified that any disclosure, copying, distribution or the taking of any action in reliance on the contents of this email transmission is strictly prohibited and that you please delete the email in its entirety. Sender does not in any way waive confidentiality or privilege even if this message has reached you in error. ADLINK Technology Inc. and its affiliates are committed to ensuring the security and protection of the personal information that we have processed as well as to provide a compliant and consistent approach to data protection and privacy. <a href="https://www.adlinktech.com/en/PrivacyPolicy" rel="nofollow noreferrer noopener" title="https://www.adlinktech.com/en/PrivacyPolicy" target="_blank">Privacy Policy</a><br> 這封電子郵件及其傳輸的文件屬於機密資訊，僅供其所指定的收件人使用。如果您不是所指定之接收人，嚴格禁止揭露、複製、散布或採取任何依據此訊息之行動，並且請您刪除此電子郵件。即使您錯誤地收到此訊息，亦不代表我方同意放棄此訊息之機密性。凌華科技及其附屬公司致力於保障所處理的個人資訊的安全，並提供合規且一致的資料保護和隱私方法。</span></p>
+
+### ARTICLE01_HEADER
+Id=69137
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=01.12.2025 11:40:36 +00:00
+UpdatedAt=01.12.2025 11:40:36 +00:00
+
+### ARTICLE01_BODY
+Die Fragen sind bei mir eher falsch. Betreffen den Master
+
+### ARTICLE02_HEADER
+Id=69185
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.12.2025 10:29:57 +00:00
+UpdatedAt=02.12.2025 10:29:58 +00:00
+
+### ARTICLE02_SUBJECT
+EC-engineer configure Sync Unit Cycle behavior check
+
+### ARTICLE02_BODY
+Hi Peter,<div><br></div><div>1. No</div><div>2. It depends</div><div>3. Yes</div><div><br></div><div>There is no specification about how DC is used on the slave side. All the settings you can do are from the EtherCAT point OK, but the slave s must handle / tolerate them correctly.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, December 1, 2025 at 10:23:11 AM, Peter Kao wrote:<br><br><div>Dear acontis,</div>
+<div>We previously discovered that by configuring EC-Engineer—specifically using Overwrite Mode and setting the Sync Unit Cycle—we can allow EtherCAT slaves on the same bus to operate with different cycle-time multiples. I would like to confirm a few points with you:</div>
+<ol start="1">
+<li>
+<div>Is any additional handling or parameter adjustment required inside the master code when using this configuration?</div>
+</li>
+<li>
+<div>If the master cycle time is 1 ms, and there are 10 devices in the topology, but only Slave #3 is configured with x2, meaning 2 ms, will Slave #3 indeed operate at a 2 ms cycle time?</div>
+</li>
+<li>
+<div>Can this feature be used together with cable redundancy, or are there any limitations?</div>
+</li>
+</ol>
+<div>We would appreciate your help in clarifying the above questions.<br> Thanks a lot.</div>
+<div>Peter.K</div>
+<div> </div>
+<p><span><em><strong>CONFIDENTIALITY, DATA PROTECTION &amp; PRIVACY</strong></em><br> This message may contain confidential and/or legally privileged information. If you are not the intended recipient(s), then you are hereby notified that any disclosure, copying, distribution or the taking of any action in reliance on the contents of this email transmission is strictly prohibited and that you please delete the email in its entirety. Sender does not in any way waive confidentiality or privilege even if this message has reached you in error. ADLINK Technology Inc. and its affiliates are committed to ensuring the security and protection of the personal information that we have processed as well as to provide a compliant and consistent approach to data protection and privacy. <a href="https://www.adlinktech.com/en/PrivacyPolicy" rel="nofollow noreferrer noopener" title="https://www.adlinktech.com/en/PrivacyPolicy" target="_blank">Privacy Policy</a><br> 這封電子郵件及其傳輸的文件屬於機密資訊，僅供其所指定的收件人使用。如果您不是所指定之接收人，嚴格禁止揭露、複製、散布或採取任何依據此訊息之行動，並且請您刪除此電子郵件。即使您錯誤地收到此訊息，亦不代表我方同意放棄此訊息之機密性。凌華科技及其附屬公司致力於保障所處理的個人資訊的安全，並提供合規且一致的資料保護和隱私方法。</span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

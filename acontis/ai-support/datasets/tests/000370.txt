@@ -1,0 +1,167 @@
+### HEADER
+Id=370
+Link=http://at-zammad/#ticket/zoom/370
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ESAB Welding & Cutting GmbH (ID=96, Number=52010, Country=DE)
+Commission=ESAB, CNC-Steuerung (ID=107, Number=107)
+Number=700370
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=n.roth@esab-cutting.de (ID=254, FirstName=Norbert, LastName=Roth)
+CreatedBy=n.roth@esab-cutting.de (ID=254, FirstName=Norbert, LastName=Roth)
+Type=
+TimeUnit=
+CreatedAt=07.04.2021 17:02:05 +00:00
+UpdatedAt=16.04.2021 06:04:34 +00:00
+CloseAt=16.04.2021 06:04:34 +00:00
+ArticlesCount=2
+
+### TITLE
+EtherCAT Master Frage
+
+### ARTICLE00_HEADER
+Id=1836
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.04.2021 17:02:05 +00:00
+UpdatedAt=07.04.2021 17:02:05 +00:00
+
+### ARTICLE00_SUBJECT
+EtherCAT Master Frage
+
+### ARTICLE00_BODY
+<div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>wir setzen den EtherCAT Master und weitere Produkte von Ihnen ein.</p>
+<p>Ich hätte da eine Frage.</p>
+<p> </p>
+<p>Im PDO Bereich nutze ich die Funktion „GetSlaveInpVarInfoEx" um Objektnamen den Adressen zu zuordnen.</p>
+<p>So etwas benötige ich auch im COE Bereich auch.</p>
+<p> </p>
+<p><img style="max-width:100%;width:5.4583in;max-height:2.552in;width:524px;max-height:245px;" src="/api/v1/ticket_attachment/370/1836/5502?view=inline"></p>
+<p> </p>
+<p>Ich möchte also im in der SDO Gruppe 8002 die Adresse von „Data“ haben (15).</p>
+<p>Welche Funktion vom EC-Master sollte ich Ihrer Meinung da nutzen.</p>
+<p> </p>
+<p>Schon einmal vielen Dank für eine kurze Info.</p>
+<p> </p>
+<p>Freundliche Grüße</p>
+<p>Best Regards</p>
+<p> </p>
+<p>Norbert Roth</p>
+<span class="js-signatureMarker"></span><p>___________________________________________________________________</p>
+<p>ESAB Welding &amp; Cutting GmbH</p>
+<p>Norbert Roth</p>
+<p>Electronics Engineer</p>
+<p>Robert-Bosch-Str. 20</p>
+<p>61184 Karben</p>
+<p>Germany</p>
+<p> </p>
+<p>Phone: +49 (6039) 40-131</p>
+<p>Fax: +49 (6039) 40-51131</p>
+<p>Mailto:N.Roth@esab-cutting.de</p>
+<p>Web: <a href="http://www.esab.de" rel="nofollow noreferrer noopener" target="_blank">http://www.esab.de</a></p>
+<p> </p>
+<p>Geschäftsführer: John A. Boisvert, Daniel A. Pryor, Tomas Janecek</p>
+<p>Amtsgericht: Frankfurt am Main HRB 71395</p>
+<p>USt-IdNr.: DE811147300 / St.Nr.: 020/225/18205</p>
+<p> </p>
+<p>___________________________________________________________________</p>
+<p> </p>
+<p>Bitte denken Sie an unsere Umwelt, bevor Sie diese Email oder Anhänge ausdrucken.</p>
+<p>Please think about our environment before printing this email or attachments.</p>
+<p>___________________________________________________________________</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=1854
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.04.2021 08:11:00 +00:00
+UpdatedAt=08.04.2021 08:11:05 +00:00
+
+### ARTICLE01_SUBJECT
+EtherCAT Master Frage
+
+### ARTICLE01_BODY
+Hallo Herr roth,<div><br></div><div><div>Sie müssen dafür die Funktion emCoeGetObjectDesc() verwenden und durch alle Subindex iterieren. Damit können sie den Offset von "Data" innerhalb des durch complete access gefülltes Buffers ermitteln.</div></div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, April 7, 2021, 7:02:05 PM, Norbert Roth wrote:<br><br><div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>wir setzen den EtherCAT Master und weitere Produkte von Ihnen ein.</p>
+<p>Ich hätte da eine Frage.</p>
+<p> </p>
+<p>Im PDO Bereich nutze ich die Funktion „GetSlaveInpVarInfoEx" um Objektnamen den Adressen zu zuordnen.</p>
+<p>So etwas benötige ich auch im COE Bereich auch.</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:5.4583in;max-height:2.552in;width:524px;max-height:245px;" src="/api/v1/ticket_attachment/370/1854/5585?view=inline"></p>
+<p> </p>
+<p>Ich möchte also im in der SDO Gruppe 8002 die Adresse von „Data“ haben (15).</p>
+<p>Welche Funktion vom EC-Master sollte ich Ihrer Meinung da nutzen.</p>
+<p> </p>
+<p>Schon einmal vielen Dank für eine kurze Info.</p>
+<p> </p>
+<p>Freundliche Grüße</p>
+<p>Best Regards</p>
+<p> </p>
+<p>Norbert Roth</p>
+<span class="js-signatureMarker"></span><p>___________________________________________________________________</p>
+<p>ESAB Welding &amp; Cutting GmbH</p>
+<p>Norbert Roth</p>
+<p>Electronics Engineer</p>
+<p>Robert-Bosch-Str. 20</p>
+<p>61184 Karben</p>
+<p>Germany</p>
+<p> </p>
+<p>Phone: +49 (6039) 40-131</p>
+<p>Fax: +49 (6039) 40-51131</p>
+<p>Mailto:N.Roth@esab-cutting.de</p>
+<p>Web: <a href="http://www.esab.de" rel="nofollow noreferrer noopener" target="_blank">http://www.esab.de</a></p>
+<p> </p>
+<p>Geschäftsführer: John A. Boisvert, Daniel A. Pryor, Tomas Janecek</p>
+<p>Amtsgericht: Frankfurt am Main HRB 71395</p>
+<p>USt-IdNr.: DE811147300 / St.Nr.: 020/225/18205</p>
+<p> </p>
+<p>___________________________________________________________________</p>
+<p> </p>
+<p>Bitte denken Sie an unsere Umwelt, bevor Sie diese Email oder Anhänge ausdrucken.</p>
+<p>Please think about our environment before printing this email or attachments.</p>
+<p>___________________________________________________________________</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,181 @@
+### HEADER
+Id=2558
+Link=http://at-zammad/#ticket/zoom/2558
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=KRONES AG (ID=131, Number=55010, Country=DE)
+Commission=Krones, Inspektionstechnik (ID=148, Number=148)
+Number=702558
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=andreas.stopfer@krones.com (ID=388, FirstName=Andreas, LastName=Stopfer)
+CreatedBy=andreas.stopfer@krones.com (ID=388, FirstName=Andreas, LastName=Stopfer)
+Type=
+TimeUnit=
+CreatedAt=03.03.2022 13:47:45 +00:00
+UpdatedAt=14.03.2022 14:39:12 +00:00
+CloseAt=14.03.2022 14:39:12 +00:00
+ArticlesCount=4
+
+### TITLE
+096692 : DCM in sync Cur=" -68163", Avg="    -16", Max=" -68163"
+
+### ARTICLE00_HEADER
+Id=13575
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.03.2022 13:47:45 +00:00
+UpdatedAt=03.03.2022 13:47:49 +00:00
+
+### ARTICLE00_SUBJECT
+096692 : DCM in sync Cur=" -68163", Avg="    -16", Max=" -68163"
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Support Team,</p>
+<p>wir hätten gerne einen Termin zur Klärung der Einträge im Log.</p>
+<p>Wann wäre für Sie ein passender Termin?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p> </p>
+<p>Andreas Stopfer</p>
+<p>Software Developer of Sensor Technology</p>
+<p>CRD Development Inspection Technology</p>
+<p> </p>
+<p>Krones AG</p>
+<p>Böhmerwaldstraße 5</p>
+<p>93073 Neutraubling</p>
+<p>Germany</p>
+<p> </p>
+<p>Phone: +49 (0)9401 70-4810</p>
+<p>E-Mail: andreas.stopfer@krones.com</p>
+<p>Internet: <a href="http://www.krones.com" rel="nofollow noreferrer noopener" target="_blank">www.krones.com</a></p>
+<p> </p>
+</div><span class="js-signatureMarker"></span><p>______________________________________________________________<br>
+<br> Krones AG<br> Vorstand: Christoph Klenk, Vorstandsvorsitzender,<br> Norbert Broger, Thomas Ricker, Markus Tischer, Ralf Goldbrunner<br> Vorsitzender des Aufsichtsrats: Volker Kronseder<br> Registergericht: Regensburg HRB 23 44, Umsatzsteuer-ID-Nummer: DE 133 695 999<br>
+<br> ______________________________________________________________<br>
+<br> Der Inhalt dieser E-Mail und jeder Anhang ist vertraulich.<br> Diese Inhalte sind nur fuer die benannten Adressaten. <br> Wenn Sie diese E-Mail durch einen Fehler erhalten haben,<br> benachrichtigen Sie sofort Ihren Administrator oder den Absender.<br> Behandeln Sie die E-Mail vertraulich.<br>
+<br> * Diese E-Mail wurde auf Viren und gefaehrlichen Inhalt geprueft. *<br>
+<br> ______________________________________________________________<br>
+<br> The contents of this email and any attachments are confidential.<br> They are intended for the named recipient(s) only.<br> If you have received this email in error please notify the system manager<br> or the sender immediately and do not disclose the contents to anyone or<br> make copies.<br>
+<br> * This e-Mail was scanned for viruses, vandals and malicious content. *</p>
+
+### ARTICLE01_HEADER
+Id=13585
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.03.2022 15:35:09 +00:00
+UpdatedAt=03.03.2022 15:35:11 +00:00
+
+### ARTICLE01_SUBJECT
+096692 : DCM in sync Cur=" -68163", Avg="    -16", Max=" -68163"
+
+### ARTICLE01_BODY
+<div>Hallo Herr Stopfer,</div><div><br></div><div>096692 : DCM in sync Cur=" -68163", Avg=" -16", Max=" -68163"<br>
+</div><div><br></div><div>Diese Meldung bedeutet dass die zyklische Frames 68us zu früh verschickt worden sind. Ich gehe davon aus, dass Ihre DCM <span>dwInSyncLimit 50us beträgt. Vielleicht reicht es schon die Grenze auf 75 zu setzen, falls sonst alles normal verlief. Wir können auch es in einem Remote Meeting besprechen. Morgen um 09:00? Schicken Sie mir dann eine Zoom oder Teams Einladung.</span>
+</div><div><br></div><div>Schöne Grüße,</div><div>
+<span>____________________________________________________________________________</span><br>
+</div><div data-signature="true" data-signature-id="2">
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Thursday, March 3, 2022, 2:47:45 PM, Andreas Stopfer wrote:<br><br><div>
+<p>Hallo Support Team,</p>
+<p>wir hätten gerne einen Termin zur Klärung der Einträge im Log.</p>
+<p>Wann wäre für Sie ein passender Termin?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p> </p>
+<p>Andreas Stopfer</p>
+<p>Software Developer of Sensor Technology</p>
+<p>CRD Development Inspection Technology</p>
+<p> </p>
+<p>Krones AG</p>
+<p>Böhmerwaldstraße 5</p>
+<p>93073 Neutraubling</p>
+<p>Germany</p>
+<p> </p>
+<p>Phone: +49 (0)9401 70-4810</p>
+<p>E-Mail: andreas.stopfer@krones.com</p>
+<p>Internet: <a href="http://www.krones.com" rel="nofollow noreferrer noopener" target="_blank">www.krones.com</a></p>
+<p> </p>
+</div>
+<span class="js-signatureMarker"></span><p>______________________________________________________________<br>
+<br> Krones AG<br> Vorstand: Christoph Klenk, Vorstandsvorsitzender,<br> Norbert Broger, Thomas Ricker, Markus Tischer, Ralf Goldbrunner<br> Vorsitzender des Aufsichtsrats: Volker Kronseder<br> Registergericht: Regensburg HRB 23 44, Umsatzsteuer-ID-Nummer: DE 133 695 999<br>
+<br> ______________________________________________________________<br>
+<br> Der Inhalt dieser E-Mail und jeder Anhang ist vertraulich.<br> Diese Inhalte sind nur fuer die benannten Adressaten. <br> Wenn Sie diese E-Mail durch einen Fehler erhalten haben,<br> benachrichtigen Sie sofort Ihren Administrator oder den Absender.<br> Behandeln Sie die E-Mail vertraulich.<br>
+<br> * Diese E-Mail wurde auf Viren und gefaehrlichen Inhalt geprueft. *<br>
+<br> ______________________________________________________________<br>
+<br> The contents of this email and any attachments are confidential.<br> They are intended for the named recipient(s) only.<br> If you have received this email in error please notify the system manager<br> or the sender immediately and do not disclose the contents to anyone or<br> make copies.<br>
+<br> * This e-Mail was scanned for viruses, vandals and malicious content. *</p>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=13612
+ContentType=text/html
+Internal=False
+Type=phone
+CreatedAt=04.03.2022 08:50:15 +00:00
+UpdatedAt=04.03.2022 08:50:15 +00:00
+
+### ARTICLE02_BODY
+Wireshark muss ausgewertet werden.
+
+### ARTICLE03_HEADER
+Id=13945
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.03.2022 14:37:43 +00:00
+UpdatedAt=14.03.2022 14:39:03 +00:00
+
+### ARTICLE03_SUBJECT
+Ticket:  096692 -->Problem der letzten Woche
+
+### ARTICLE03_BODY
+<div>
+<p>Hallo Herr Eyssautier,</p>
+<p>wie Sie vermutet hatten lag der Fehler in unserem JobTask.</p>
+<p>Wir hatten die Grenzen zur Verarbeitung der Daten zu eng, für die Größe des Frames, gesetzt.</p>
+<p>Außerdem müssen wir nochmal einen Blick über unseren SDO-Verkehr werfen.</p>
+<p> </p>
+<p>Vielen Dank</p>
+<p> </p>
+<p>Andreas Stopfer</p>
+<p>Software Developer of Sensor Technology</p>
+<p>CRD Development Inspection Technology</p>
+<p> </p>
+<p>Krones AG</p>
+<p>Böhmerwaldstraße 5</p>
+<p>93073 Neutraubling</p>
+<p>Germany</p>
+<p> </p>
+<p>Phone: +49 (0)9401 70-4810</p>
+<p>E-Mail: andreas.stopfer@krones.com</p>
+<p>Internet: <a href="http://www.krones.com" rel="nofollow noreferrer noopener" target="_blank">www.krones.com</a></p>
+<p> </p>
+</div><span class="js-signatureMarker"></span><p>______________________________________________________________<br>
+<br> Krones AG<br> Vorstand: Christoph Klenk, Vorstandsvorsitzender,<br> Norbert Broger, Thomas Ricker, Markus Tischer, Ralf Goldbrunner<br> Vorsitzender des Aufsichtsrats: Volker Kronseder<br> Registergericht: Regensburg HRB 23 44, Umsatzsteuer-ID-Nummer: DE 133 695 999<br>
+<br> ______________________________________________________________<br>
+<br> Der Inhalt dieser E-Mail und jeder Anhang ist vertraulich.<br> Diese Inhalte sind nur fuer die benannten Adressaten. <br> Wenn Sie diese E-Mail durch einen Fehler erhalten haben,<br> benachrichtigen Sie sofort Ihren Administrator oder den Absender.<br> Behandeln Sie die E-Mail vertraulich.<br>
+<br> * Diese E-Mail wurde auf Viren und gefaehrlichen Inhalt geprueft. *<br>
+<br> ______________________________________________________________<br>
+<br> The contents of this email and any attachments are confidential.<br> They are intended for the named recipient(s) only.<br> If you have received this email in error please notify the system manager<br> or the sender immediately and do not disclose the contents to anyone or<br> make copies.<br>
+<br> * This e-Mail was scanned for viruses, vandals and malicious content. *</p>

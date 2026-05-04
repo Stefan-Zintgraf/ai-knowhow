@@ -1,0 +1,170 @@
+### HEADER
+Id=9920
+Link=http://at-zammad/#ticket/zoom/9920
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Mattson Thermal Products GmbH (ID=137, Number=56007, Country=DE)
+Commission=Mattson, Thermal Products (ID=156, Number=156)
+Number=709920
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=calvin.glas@mattson.com (ID=1715, FirstName=Calvin, LastName=Glas)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=13.02.2025 11:34:18 +00:00
+UpdatedAt=14.02.2025 15:23:37 +00:00
+CloseAt=14.02.2025 15:23:37 +00:00
+ArticlesCount=3
+
+### TITLE
+Acontis software update request from Mattson Thermal Products GmbH
+
+### ARTICLE00_HEADER
+Id=56630
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.02.2025 11:34:18 +00:00
+UpdatedAt=13.02.2025 11:34:22 +00:00
+
+### ARTICLE00_SUBJECT
+Acontis software update request from Mattson Thermal Products GmbH
+
+### ARTICLE00_BODY
+<p>Dear Mr./Ms. Glas,</p><p>thank you for your registration.<br><br></p><p>First Name: Calvin<br>Last Name: Glas<br>Company: Mattson Thermal Products GmbH<br><span>Commission Number: 40224<br></span><span>Country: Germany<br></span><span>City: Dornstadt<br></span><span>E-Mail: calvin.glas@mattson.com<br></span>Product: <span>EC-Master<br></span>Update Type: Upgrade (newest API)<br><span>Operating System Version: QNX7<br></span>Additional information: </p><p><img src="/api/v1/ticket_attachment/9920/56630/235244?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/9920/56630/235243?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=56700
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.02.2025 07:55:46 +00:00
+UpdatedAt=14.02.2025 07:55:49 +00:00
+
+### ARTICLE01_SUBJECT
+Acontis software update request from Mattson Thermal Products GmbH
+
+### ARTICLE01_BODY
+<p>Hallo Herr Glas, </p><p><br></p>
+
+<div>Ihre neue Softwareversion finden Sie unten:</div><div><br></div>
+
+<p><a href="https://downloads.acontis.com/2025/M-O/Mattson_Thermal_Products_(40224)(DE)/EC-Master_QNX_x86_32Bit/3.2.2.04/EC-Master-ClassA-AddOn-V3.2.2.04-QNX7-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/M-O/Mattson_Thermal_Products_(40224)(DE)/EC-Master_QNX_x86_32Bit/3.2.2.04/EC-Master-ClassA-AddOn-V3.2.2.04-QNX7-x86_32Bit-SDK_Unrestricted.zip</a></p>
+
+<p><a href="https://downloads.acontis.com/2025/M-O/Mattson_Thermal_Products_(40224)(DE)/EC-Master_QNX_x86_32Bit/3.2.2.04/EC-Master-V3.2.2.04-QNX7-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/M-O/Mattson_Thermal_Products_(40224)(DE)/EC-Master_QNX_x86_32Bit/3.2.2.04/EC-Master-V3.2.2.04-QNX7-x86_32Bit-SDK_Unrestricted.zip</a></p>
+
+<p><a href="https://downloads.acontis.com/2025/M-O/Mattson_Thermal_Products_(40224)(DE)/EC-Master_QNX_x86_32Bit/3.2.2.04/EC-RtEth-IntelGbe-V3.2.2.04-QNX7-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/M-O/Mattson_Thermal_Products_(40224)(DE)/EC-Master_QNX_x86_32Bit/3.2.2.04/EC-RtEth-IntelGbe-V3.2.2.04-QNX7-x86_32Bit-SDK_Unrestricted.zip</a></p>
+
+<p>Password: ECM88250 </p><p><br></p><div>in unserer neueren Version ist I8254x in IntelGbe enthalten</div><div><br></div><div><br></div>LG, <br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=56741
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.02.2025 14:26:37 +00:00
+UpdatedAt=14.02.2025 14:26:37 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Acontis software update request from Mattson Thermal Products GmbH [Ticket#709920]
+
+### ARTICLE02_BODY
+<div>
+<p>Hallo,</p>
+<p> </p>
+<p><span lang="DE">vielen Dank für die zeitnahe Bearbeitung.</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Mit freundlichen Grüßen,</span></p>
+<div>
+<p><b><span lang="DE">Calvin Glas</span></b><b><span lang="DE"></span></b></p>
+<p>Software Design Engineer</p>
+<p>Tel: (+49)734-8981-356</p>
+<p><span lang="DE">E-Mail: <a href="mailto:calvin.glas@mattson.com"><span style="color:#0563c1;">calvin.glas@mattson.com</span></a></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span style="color:#212121;">Mattson Thermal Products GmbH | Daimlerstr. 10 | 89160 Dornstadt</span><span style="color:#212121;"></span></p>
+<p><span style="color:#212121;">Registered office of the company: Dornstadt | Commercial register: HRB Ulm 3736 | District Court: Ulm</span><span style="color:#212121;"></span></p>
+<p><span lang="DE" style="color:#212121;">Managing Director : Hao Allen Lu, Schubert Chu, Joachim Janisch</span><span lang="DE" style="color:#212121;"></span></p>
+</div>
+<p><span lang="DE"><p> </p></span></p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b><span> Miran Bhattarai via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Friday, February 14, 2025 8:56 AM<br>
+<b>To:</b> Calvin Glas &lt;calvin.glas@mattson.com&gt;<br>
+<b>Subject:</b> Acontis software update request from Mattson Thermal Products GmbH [Ticket#709920]</span></p>
+</div>
+</div>
+<p> </p>
+<div>
+<p><b><span style="color:#9c6500;">CAUTION:</span></b> This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.</p>
+</div>
+<div>
+<p>Hallo Herr Glas,</p>
+<p> </p>
+<div>
+<p>Ihre neue Softwareversion finden Sie unten:</p>
+</div>
+<div>
+<p> </p>
+</div>
+<p><a href="https://downloads.acontis.com/2025/M-O/Mattson_Thermal_Products_(40224)(DE)/EC-Master_QNX_x86_32Bit/3.2.2.04/EC-Master-ClassA-AddOn-V3.2.2.04-QNX7-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/M-O/Mattson_Thermal_Products_(40224)(DE)/EC-Master_QNX_x86_32Bit/3.2.2.04/EC-Master-ClassA-AddOn-V3.2.2.04-QNX7-x86_32Bit-SDK_Unrestricted.zip</a></p>
+<p><a href="https://downloads.acontis.com/2025/M-O/Mattson_Thermal_Products_(40224)(DE)/EC-Master_QNX_x86_32Bit/3.2.2.04/EC-Master-V3.2.2.04-QNX7-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/M-O/Mattson_Thermal_Products_(40224)(DE)/EC-Master_QNX_x86_32Bit/3.2.2.04/EC-Master-V3.2.2.04-QNX7-x86_32Bit-SDK_Unrestricted.zip</a></p>
+<p><a href="https://downloads.acontis.com/2025/M-O/Mattson_Thermal_Products_(40224)(DE)/EC-Master_QNX_x86_32Bit/3.2.2.04/EC-RtEth-IntelGbe-V3.2.2.04-QNX7-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/M-O/Mattson_Thermal_Products_(40224)(DE)/EC-Master_QNX_x86_32Bit/3.2.2.04/EC-RtEth-IntelGbe-V3.2.2.04-QNX7-x86_32Bit-SDK_Unrestricted.zip</a></p>
+<p>Password: ECM88250</p>
+<p> </p>
+<div>
+<p>in unserer neueren Version ist I8254x in IntelGbe enthalten</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p> </p>
+</div>
+<p>LG,</p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Miran Bhattarai</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+</div>
+</div>Page Title<br>
+<p>This message and any attached documents may contain information that is confidential, privileged or private. If you are not an intended recipient, you are directed not to read, disclose, copy, distribute or otherwise use this transmission. Delivery of this message is not intended to waive confidentiality. If you have received this email in error, please notify the sender immediately and delete this message from your system.</p>

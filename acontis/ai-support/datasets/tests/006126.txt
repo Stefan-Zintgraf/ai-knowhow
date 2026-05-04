@@ -1,0 +1,158 @@
+### HEADER
+Id=6126
+Link=http://at-zammad/#ticket/zoom/6126
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=cpc Chieftek (ID=590, Number=50234, Country=TW)
+Commission=cpc Chieftek, cpcStudio (ID=669, Number=669)
+Number=706126
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=lm003@mail2.chieftek.com (ID=1237, FirstName=Kuanghan, LastName=)
+CreatedBy=lm003@mail2.chieftek.com (ID=1237, FirstName=Kuanghan, LastName=)
+Type=
+TimeUnit=
+CreatedAt=09.08.2023 11:43:09 +00:00
+UpdatedAt=14.08.2023 06:02:47 +00:00
+CloseAt=14.08.2023 06:02:47 +00:00
+ArticlesCount=2
+
+### TITLE
+[Chieftek]assign slave as reference clock
+
+### ARTICLE00_HEADER
+Id=32787
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.08.2023 11:43:09 +00:00
+UpdatedAt=09.08.2023 11:43:11 +00:00
+
+### ARTICLE00_SUBJECT
+[Chieftek]assign slave as reference clock
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi,<div>We got a problem in sync when we control with one junction and two robots.</div>
+<div>Network is like master--coupler+junction--Robot1</div>
+<div>|---Robot2</div>
+<div>because we do't assign any slave as reference clock, then we guess it using the first slave (coupler) as the reference clock. Thus cause the problem. How to assign second or other possible slave as reference clock by SDK library?</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan<br><div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+</div><br>
+<div>
+<a href="http://www.chieftek.com" rel="nofollow noreferrer noopener" title="http://www.chieftek.com" target="_blank"></a><br>
+</div><div>
+<a href="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" target="_blank"></a><br>
+</div>
+
+### ARTICLE01_HEADER
+Id=32805
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.08.2023 14:58:13 +00:00
+UpdatedAt=09.08.2023 14:58:13 +00:00
+
+### ARTICLE01_SUBJECT
+[Chieftek]assign slave as reference clock
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes, normally we use the first DC slave as reference clock.</div><div><br></div><div>If you want to use another slave as reference clock you can do:</div><div>myEcDevice.<span>SettingsData.Settings.ManualRefClock </span><span>= 1003 // Your slave address</span>
+</div><div>
+<span>myEcDevice</span>.<span>SettingsData.</span><span>Write(</span>myEcDevice.SettingsData.Settings<span>);</span>
+</div><div><br></div><div>Best Regards,</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, August 9, 2023 at 1:43:09 PM, Kuanghan wrote:<br><br><div dir="ltr">Hi,<div>We got a problem in sync when we control with one junction and two robots.</div>
+<div>Network is like master--coupler+junction--Robot1</div>
+<div>|---Robot2</div>
+<div>because we do't assign any slave as reference clock, then we guess it using the first slave (coupler) as the reference clock. Thus cause the problem. How to assign second or other possible slave as reference clock by SDK library?</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan<br><div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+</div>
+<br>
+<div>
+<a href="http://www.chieftek.com" rel="nofollow noreferrer noopener" title="http://www.chieftek.com" target="_blank"></a><br>
+</div>
+<div>
+<a href="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" target="_blank"></a><br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

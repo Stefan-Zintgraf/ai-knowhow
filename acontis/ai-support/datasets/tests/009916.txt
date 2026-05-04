@@ -1,0 +1,88 @@
+### HEADER
+Id=9916
+Link=http://at-zammad/#ticket/zoom/9916
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=MicroStep (ID=690, Number=0, Country=SK)
+Commission=MicroStep, CyberFab Control (ID=771, Number=771)
+Number=709916
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=busam@microstep.sk (ID=1884, FirstName=Martin, LastName=Busa)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=13.02.2025 08:13:05 +00:00
+UpdatedAt=21.02.2025 07:03:56 +00:00
+CloseAt=21.02.2025 07:03:56 +00:00
+ArticlesCount=2
+
+### TITLE
+Acontis software update request from Microstep
+
+### ARTICLE00_HEADER
+Id=56614
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.02.2025 08:13:05 +00:00
+UpdatedAt=13.02.2025 08:13:10 +00:00
+
+### ARTICLE00_SUBJECT
+Acontis software update request from Microstep
+
+### ARTICLE00_BODY
+<p>Dear Mr./Ms. Busa,</p><p>thank you for your registration.<br><br></p><p>First Name: Martin<br>Last Name: Busa<br>Company: Microstep<br><span>Commission Number: 40625 CyberFab Control<br></span><span>Country: Slovakia<br></span><span>City: Bratislava<br></span><span>E-Mail: busam@microstep.sk<br></span>Product: <span>EC-Engineer,EC-Lyser<br></span>Update Type: Upgrade (newest API)<br><span>Operating System Version: Linux (EC-ENI-Builder)/Windows (EC-Engineer,EC-Lyser OEM)<br></span>Additional information: Please provide also update of .Net Core version of EC-ENI-Builder for Linux</p><p><img src="/api/v1/ticket_attachment/9916/56614/235163?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/9916/56614/235162?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=56621
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.02.2025 09:18:49 +00:00
+UpdatedAt=13.02.2025 09:18:52 +00:00
+
+### ARTICLE01_SUBJECT
+Acontis software update request from Microstep
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>please find the requested updates here:</div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/2025/M-O/MicroStep_(40625)(SK)/EC-ENI-Builder/3.9.10/ENI-Builder_Dongle_DotNetCore_Linux-x64_V3.9.10.zip" title="https://downloads.acontis.com/2025/M-O/MicroStep_(40625)(SK)/EC-ENI-Builder/3.9.10/ENI-Builder_Dongle_DotNetCore_Linux-x64_V3.9.10.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/M-O/MicroStep_(40625)(SK)/EC-ENI-Builder/3.9.10/ENI-Builder_Dongle_DotNetCore_Linux-x64_V3.9.10.zip</a></div>
+<div><br></div>
+<div><div><a href="https://downloads.acontis.com/2025/M-O/MicroStep_(40625)(SK)/EC-Engineer/3.9.10/EC-Engineer_Dongle_V3.9.10.zip" title="https://downloads.acontis.com/2025/M-O/MicroStep_(40625)(SK)/EC-Engineer/3.9.10/EC-Engineer_Dongle_V3.9.10.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/M-O/MicroStep_(40625)(SK)/EC-Engineer/3.9.10/EC-Engineer_Dongle_V3.9.10.zip</a></div></div>
+<div><br></div>
+<div><div><a href="https://downloads.acontis.com/2025/M-O/MicroStep_(40625)(SK)/EC-Lyser_OEM/3.9.10/EC-Lyser_OEM_V3.9.10.zip" title="https://downloads.acontis.com/2025/M-O/MicroStep_(40625)(SK)/EC-Lyser_OEM/3.9.10/EC-Lyser_OEM_V3.9.10.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/M-O/MicroStep_(40625)(SK)/EC-Lyser_OEM/3.9.10/EC-Lyser_OEM_V3.9.10.zip</a></div></div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div><br></div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, February 13, 2025 at 9:13:05 AM, sales acontis wrote:<br><br><p>Dear Mr./Ms. Busa,</p>
+<p>thank you for your registration.<br><br></p>
+<p>First Name: Martin<br>Last Name: Busa<br>Company: Microstep<br><span>Commission Number: 40625 CyberFab Control<br></span><span>Country: Slovakia<br></span><span>City: Bratislava<br></span><span>E-Mail: busam@microstep.sk<br></span>Product: <span>EC-Engineer,EC-Lyser<br></span>Update Type: Upgrade (newest API)<br><span>Operating System Version: Linux (EC-ENI-Builder)/Windows (EC-Engineer,EC-Lyser OEM)<br></span>Additional information: Please provide also update of .Net Core version of EC-ENI-Builder for Linux</p>
+<p><img src="/api/v1/ticket_attachment/9916/56621/235190?view=inline" alt="" style="max-width:100%;max-width:100%;width:163px;max-height:85px;"></p>
+<p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/9916/56621/235191?view=inline" style="max-width:100%;max-width:100%;width:22px;max-height:22px;"></a></span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

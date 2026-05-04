@@ -1,0 +1,192 @@
+### HEADER
+Id=7756
+Link=http://at-zammad/#ticket/zoom/7756
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Formosa Plastics Corporation, Unknown (ID=892, Number=892)
+Number=707756
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=28.03.2024 10:08:40 +00:00
+UpdatedAt=02.05.2024 06:12:57 +00:00
+CloseAt=02.05.2024 06:12:57 +00:00
+ArticlesCount=4
+
+### TITLE
+The potentail customer Taiwan Formosa Plastics Corporation requriement about Master Redundancy
+
+### ARTICLE00_HEADER
+Id=42805
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.03.2024 10:08:40 +00:00
+UpdatedAt=28.03.2024 10:08:43 +00:00
+
+### ARTICLE00_SUBJECT
+The potentail customer Taiwan Formosa Plastics Corporation requriement about Master Redundancy
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently We supported the potential customer Formosa Plastics Corporation.</div>
+<div>Now they could run the EcMaster in x86 QNX6.5 with DI/DO/AI/AO, But they still have 2 requirement that we need to checking with your side:</div>
+<div>1- their network maybe need 8k byte data in pdo with master redundancy, Do you think the master redundancy could support that data?</div>
+<div>2- Do you think possiable provide a binary demo with master redundancy for x86 QNX6.5 for this customer? They still want to running it in their location.</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=43013
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.04.2024 07:08:56 +00:00
+UpdatedAt=04.04.2024 07:08:58 +00:00
+
+### ARTICLE01_SUBJECT
+The potentail customer Taiwan Formosa Plastics Corporation requriement about Master Redundancy
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>We stop the support for QNX6.5 in V3.2</div><div>
+<img style="max-width:100%;width: 533.4px;max-width: 100%;max-height: 193.525px;" src="/api/v1/ticket_attachment/7756/43013/177773?view=inline"><br>
+</div><div><br></div><div>We could only deliver V3.1, but we don't have binaries out of the box. We will prepare a delivery.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, March 28, 2024 at 11:08:40 AM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently We supported the potential customer Formosa Plastics Corporation.</div>
+<div>Now they could run the EcMaster in x86 QNX6.5 with DI/DO/AI/AO, But they still have 2 requirement that we need to checking with your side:</div>
+<div>1- their network maybe need 8k byte data in pdo with master redundancy, Do you think the master redundancy could support that data?</div>
+<div>2- Do you think possiable provide a binary demo with master redundancy for x86 QNX6.5 for this customer? They still want to running it in their location.</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=43310
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=11.04.2024 14:43:29 +00:00
+UpdatedAt=11.04.2024 14:43:29 +00:00
+
+### ARTICLE02_BODY
+V3.1.5.03 liefern
+
+### ARTICLE03_HEADER
+Id=43615
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.04.2024 10:20:25 +00:00
+UpdatedAt=18.04.2024 10:20:29 +00:00
+
+### ARTICLE03_SUBJECT
+The potentail customer Taiwan Formosa Plastics Corporation requriement about Master Redundancy
+
+### ARTICLE03_BODY
+Hi John,<div><br></div><div>I've prepared V3.1 for QNX6.5 with FP Master R<span style="color: rgb(31, 73, 125);">edundancy. The download link is below :</span>
+</div><div><span style="color: rgb(31, 73, 125);"><br></span></div><div>
+<p><a href="http://downloads.acontis.com/temp/mbi/Formosa%20Plastics%20Corporation/2024-04-18/EC-Master-V3.1.5.99-QNX6-x86_32Bit-Eval.zip" rel="nofollow noreferrer noopener" target="_blank">http://downloads.acontis.com/temp/mbi/Formosa%20Plastics%20Corporation/2024-04-18/EC-Master-V3.1.5.99-QNX6-x86_32Bit-Eval.zip</a></p>
+
+<p><a href="http://downloads.acontis.com/temp/mbi/Formosa%20Plastics%20Corporation/2024-04-18/EC-Master-FP-Master-Redundancy-V3.1.5.99-QNX6-x86_32Bit-Eval.zip" rel="nofollow noreferrer noopener" target="_blank">http://downloads.acontis.com/temp/mbi/Formosa%20Plastics%20Corporation/2024-04-18/EC-Master-FP-Master-Redundancy-V3.1.5.99-QNX6-x86_32Bit-Eval.zip</a></p>
+
+<p><br></p>
+<p><br></p>
+<p>Please let me know if you have any quries. </p>
+<p><br></p>
+<p>Regards, </p>
+<p><br></p>
+<p><br></p>
+</div><br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>

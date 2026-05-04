@@ -1,0 +1,129 @@
+### HEADER
+Id=1811
+Link=http://at-zammad/#ticket/zoom/1811
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=701811
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=11.11.2021 07:57:13 +00:00
+UpdatedAt=18.11.2021 07:05:31 +00:00
+CloseAt=18.11.2021 07:05:31 +00:00
+ArticlesCount=2
+
+### TITLE
+about the protential customer advantech requirement
+
+### ARTICLE00_HEADER
+Id=9621
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.11.2021 07:57:13 +00:00
+UpdatedAt=11.11.2021 07:57:16 +00:00
+
+### ARTICLE00_SUBJECT
+about the protential customer advantech requirement
+
+### ARTICLE00_BODY
+<div>
+<div>Dear,</div>
+<div>We made a online meeting with the advantech taiwan to introducing the acontis product yesterday. And they ask a slave for supporting. The slave introduction in the attachment, it is a beckhoff slave, EL3702 serial with oversampling.</div>
+<div>As I know that the ecengineer and ecmaster could support the oversampling setting, So I double check with your side. Dose the ecmaster And ECEngineer support this kind of slaves?</div>
+<div> </div>
+<div> <div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=9636
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.11.2021 10:27:13 +00:00
+UpdatedAt=11.11.2021 10:27:14 +00:00
+
+### ARTICLE01_SUBJECT
+about the protential customer advantech requirement
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes we support this slave.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, November 11, 2021, 8:57:13 AM, John Zhang wrote:<br><br><div>
+<div>Dear,</div>
+<div>We made a online meeting with the advantech taiwan to introducing the acontis product yesterday. And they ask a slave for supporting. The slave introduction in the attachment, it is a beckhoff slave, EL3702 serial with oversampling.</div>
+<div>As I know that the ecengineer and ecmaster could support the oversampling setting, So I double check with your side. Dose the ecmaster And ECEngineer support this kind of slaves?</div>
+<div> </div>
+<div> <div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

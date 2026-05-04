@@ -1,0 +1,114 @@
+### HEADER
+Id=11126
+Link=http://at-zammad/#ticket/zoom/11126
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ABB E-mobility (ID=701, Number=0, Country=IT)
+Commission=ABB E-mobility, Charger System (ID=785, Number=785)
+Number=7011126
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=silvio.scaletti@it.abb.com (ID=2938, FirstName=Silvio, LastName=Scaletti)
+CreatedBy=silvio.scaletti@it.abb.com (ID=2938, FirstName=Silvio, LastName=Scaletti)
+Type=
+TimeUnit=
+CreatedAt=30.07.2025 15:52:16 +00:00
+UpdatedAt=29.08.2025 06:00:58 +00:00
+CloseAt=29.08.2025 06:00:58 +00:00
+ArticlesCount=2
+
+### TITLE
+Runtime EtherCAT ring diagnosis on a real application
+
+### ARTICLE00_HEADER
+Id=63850
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.07.2025 15:52:16 +00:00
+UpdatedAt=30.07.2025 15:52:16 +00:00
+
+### ARTICLE00_SUBJECT
+Runtime EtherCAT ring diagnosis on a real application
+
+### ARTICLE00_BODY
+<div>
+<p>Hello Christoph, Cyril,</p>
+<p> </p>
+<p>We are experiencing some issues on a setup running EtherCAT ring on multiple power converter system (our use case you know yet from our meetings).<br> It seems these are communication problems, and I’m attaching here a log for your reference.</p>
+<p> </p>
+<p>We saw there exists quite a lot of different tools (HW/SW) to diagnose problems, but I would like to ask you some suggestions on this fact, coming from your expertise.<br>
+<br>
+</p>
+<ul type="disc">
+<li>The goal is to have something to troubleshoot our application in lab.
+
+</li>
+<li>Besides, as a second level priority, we would also like to eventually do the on a product on the field, in the future.<br>
+<br>
+
+</li>
+</ul>
+<p>Thanks in advance for your support,</p>
+<p>Best Regards<br> Silvio</p>
+</div><br> Il Gruppo ABB in Italia ha adottato il Modello Organizzativo ai sensi del D.Lgs. 231/2001, in forza del quale l'assunzione di obbligazioni da parte di societa' ABB avviene a firma congiunta di due procuratori muniti di idonei poteri. Le informazioni contenute in questo messaggio di posta elettronica sono riservate e confidenziali e ne e' vietata la diffusione in qualunque modo eseguita. Qualora Lei non fosse la persona cui il presente messaggio e' destinato, e' invitata a non diffonderlo, e ad eliminarlo, dandone gentilmente comunicazione al mittente.<br> ABB Group in Italy adopts a Compliance Programme under the Italian Law (D.Lgs.231/2001). According to this ABB Compliance Programme, any commitment of ABB Italian Companies is taken by the double signature of ABB Representatives granted by a proper Power of Attorney. The information included in this e-mail and any attachments are confidential and may also be privileged. If you are not the correct recipient, you are kindly requested to notify the sender immediately, to cancel it and not to disclose the contents to any other person.
+
+### ARTICLE01_HEADER
+Id=63906
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.07.2025 08:57:41 +00:00
+UpdatedAt=31.07.2025 08:57:43 +00:00
+
+### ARTICLE01_SUBJECT
+Runtime EtherCAT ring diagnosis on a real application
+
+### ARTICLE01_BODY
+Hi Silvio,<div><br></div><div>the log file you sent me shows different issues. EC-Master generates some notifications:</div><div><br></div><div>[2025-07-29 14:41:30]  0000322345: Notify <b>EC_NOTIFY_FRAME_RESPONSE_ERROR</b>(No response error for cyclic frame IDX=0x19, CycFrameNum=0, TaskId=0)</div><div>-&gt; These notification are for diagnosis purpose: Perhaps there are some electro magnetic or wiring issues</div><div><br></div><div>[2025-07-29 14:54:54]  0001126301: Notify <b>EC_NOTIFY_CYCCMD_WKC_ERROR</b>(12, 0x10000000, 18, 48, 0, 0)</div><div>-&gt; These notification are for the application: In the current cycle the process data haven't been refresh as expected. Perhaps the application need to skip the cycle or ignore a part of it or should not take some decision</div><div><br></div><div><div>[2025-07-29 14:54:54]  0001126303: Notify <b>EC_NOTIFY_SLAVE_ERROR_STATUS_INFO</b>(1005, 0x0014, Fatal Sync Error (0x002C))</div></div><div>-&gt; These notification <span style="background-color: initial; color: rgb(88, 88, 86);">are for diagnosis purpose: Some slaves notify some errors</span>
+</div><div><br></div><div>[2025-07-29 14:54:57]  0001128829: Notify <b>EC_NOTIFY_SB_MISMATCH</b>(0, 0, 255, 3001)</div><div>-&gt; These notification are for diagnosis purpose: The network doesn't match the configuration</div><div><br></div><div>I would start with the mismatch errors. If all slaves are present on the network, they should exist. The slave error should be checked in the manual or by the slave manufacturer under which condition this error is generated. <span style="background-color: initial; color: rgb(88, 88, 86);">EC_NOTIFY_CYCCMD_WKC_ERROR is a subsequent error.</span>
+</div><div><br></div><div>EC_NOTIFY_FRAME_RESPONSE_ERROR can be tracked by checking the slave error counters. We have an API doing that:</div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=badconnection#embadconnectionsdetect" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=badconnection#embadconnectionsdetect" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=badconnection#embadconnectionsdetect</a></div><div><br></div><div>In the field later, you need to collect these information somehow and present them. Perhaps you need to render the topology like EC-Engineer does to accelerate the diagnostic...</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, July 30, 2025 at 5:52:16 PM, Silvio Scaletti wrote:<br><br><div>
+<p>Hello Christoph, Cyril,</p>
+<p> </p>
+<p>We are experiencing some issues on a setup running EtherCAT ring on multiple power converter system (our use case you know yet from our meetings).<br> It seems these are communication problems, and I’m attaching here a log for your reference.</p>
+<p> </p>
+<p>We saw there exists quite a lot of different tools (HW/SW) to diagnose problems, but I would like to ask you some suggestions on this fact, coming from your expertise.<br>
+<br>
+</p>
+<ul type="disc">
+<li>The goal is to have something to troubleshoot our application in lab.
+
+</li>
+<li>Besides, as a second level priority, we would also like to eventually do the on a product on the field, in the future.<br>
+<br>
+
+</li>
+</ul>
+<p>Thanks in advance for your support,</p>
+<p>Best Regards<br> Silvio</p>
+</div>
+<br> Il Gruppo ABB in Italia ha adottato il Modello Organizzativo ai sensi del D.Lgs. 231/2001, in forza del quale l'assunzione di obbligazioni da parte di societa' ABB avviene a firma congiunta di due procuratori muniti di idonei poteri. Le informazioni contenute in questo messaggio di posta elettronica sono riservate e confidenziali e ne e' vietata la diffusione in qualunque modo eseguita. Qualora Lei non fosse la persona cui il presente messaggio e' destinato, e' invitata a non diffonderlo, e ad eliminarlo, dandone gentilmente comunicazione al mittente.<br> ABB Group in Italy adopts a Compliance Programme under the Italian Law (D.Lgs.231/2001). According to this ABB Compliance Programme, any commitment of ABB Italian Companies is taken by the double signature of ABB Representatives granted by a proper Power of Attorney. The information included in this e-mail and any attachments are confidential and may also be privileged. If you are not the correct recipient, you are kindly requested to notify the sender immediately, to cancel it and not to disclose the contents to any other person.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

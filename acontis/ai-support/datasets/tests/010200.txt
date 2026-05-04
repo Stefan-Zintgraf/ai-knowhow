@@ -1,0 +1,127 @@
+### HEADER
+Id=10200
+Link=http://at-zammad/#ticket/zoom/10200
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Yushin, Removal robot for molding machines (ID=922, Number=922)
+Number=7010200
+Owner=m.danilau@acontis.com (ID=4, FirstName=Maksim, LastName=Danilau)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=17.03.2025 09:49:40 +00:00
+UpdatedAt=18.03.2025 09:05:15 +00:00
+CloseAt=18.03.2025 09:05:15 +00:00
+ArticlesCount=2
+
+### TITLE
+Question about EC-Master(YUSHIN) [M107]
+
+### ARTICLE00_HEADER
+Id=58489
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=17.03.2025 09:49:40 +00:00
+UpdatedAt=17.03.2025 09:49:43 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(YUSHIN) [M107]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(YUSHIN) [M107]
+
+When trying to boot EC-Master (Core 3) and Linux (Core 0, 1, 2) simultaneously, both Linux and EC-Master attempted to access Ether, causing an error.
+The issue was resolved by making ENET1 invisible to Linux.
+However, when booting EC-Master and Linux together, a new problem occurred.
+The following error message appeared on the Linux side, and Linux could no longer be controlled.
+
+　root@imx8mpevk:~# [   36.926597] cpu cpu0: _set_opp_voltage: failed to set voltage (950000 950000 950000 mV): -110
+　[   36.935156] cpu cpu0: Failed to set regulator voltages: -110
+　[   36.940844] cpufreq: __target_index: Failed to change cpu frequency: -110
+　[   37.366589] cpu cpu0: _set_opp_voltage: failed to set voltage (950000 950000 950000 mV): -110
+　[   37.375144] cpu cpu0: Failed to set regulator voltages: -110
+　[   37.380821] cpufreq: __target_index: Failed to change cpu frequency: -110
+
+According to the explanation from the μC3 vendor, in order to avoid the above error,
+they suggest commenting out the clock control in the clock_init() function in the attached hw_init.c.
+However, in the hw_init.c provided by Acontis, it is already commented out.
+We believe that the corresponding process for clock_init() might be handled elsewhere.
+
+  (Q1) Is there a corresponding process for clock_init() implemented within the Acontis stack or elsewhere? If so, could the removed part be provided?
+  (Q2) If there is any other information related to the error message in Linux, please let us know.
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=58529
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.03.2025 07:52:23 +00:00
+UpdatedAt=18.03.2025 07:52:23 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(YUSHIN) [M107]
+
+### ARTICLE01_BODY
+Dear Mr. Fujikawa,<div><br></div><div>A1. No, there is no clock configuration for ENET1 in LinkLayer. There is already a LinkLayer parameter called 'bNoPinMuxing', but it does not affect IMX8MPlus anyway for there is no clock configuration for this chip in our software.</div><div>A2. Unfortunately we cannot give you any additional information concerning this particular Linux issue.</div><div><br></div><div>
+<div>Best regards,</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Maksim Danilau, M.Sc.</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Montag, 17. März 2025 um 10:49:40, schrieb Takuya Fujikawa:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(YUSHIN) [M107]</div>
+<div><br></div>
+<div>When trying to boot EC-Master (Core 3) and Linux (Core 0, 1, 2) simultaneously, both Linux and EC-Master attempted to access Ether, causing an error.</div>
+<div>The issue was resolved by making ENET1 invisible to Linux.</div>
+<div>However, when booting EC-Master and Linux together, a new problem occurred.</div>
+<div>The following error message appeared on the Linux side, and Linux could no longer be controlled.</div>
+<div><br></div>
+<div>　root@imx8mpevk:~# [   36.926597] cpu cpu0: _set_opp_voltage: failed to set voltage (950000 950000 950000 mV): -110</div>
+<div>　[   36.935156] cpu cpu0: Failed to set regulator voltages: -110</div>
+<div>　[   36.940844] cpufreq: __target_index: Failed to change cpu frequency: -110</div>
+<div>　[   37.366589] cpu cpu0: _set_opp_voltage: failed to set voltage (950000 950000 950000 mV): -110</div>
+<div>　[   37.375144] cpu cpu0: Failed to set regulator voltages: -110</div>
+<div>　[   37.380821] cpufreq: __target_index: Failed to change cpu frequency: -110</div>
+<div><br></div>
+<div>According to the explanation from the μC3 vendor, in order to avoid the above error,</div>
+<div>they suggest commenting out the clock control in the clock_init() function in the attached hw_init.c.</div>
+<div>However, in the hw_init.c provided by Acontis, it is already commented out.</div>
+<div>We believe that the corresponding process for clock_init() might be handled elsewhere.</div>
+<div><br></div>
+<div>  (Q1) Is there a corresponding process for clock_init() implemented within the Acontis stack or elsewhere? If so, could the removed part be provided?</div>
+<div>  (Q2) If there is any other information related to the error message in Linux, please let us know.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

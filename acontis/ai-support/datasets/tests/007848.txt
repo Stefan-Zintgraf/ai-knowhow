@@ -1,0 +1,214 @@
+### HEADER
+Id=7848
+Link=http://at-zammad/#ticket/zoom/7848
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Flashcut CNC (ID=819, Number=0, Country=US)
+Commission=Flashcut CNC, EtherCAT Control (ID=891, Number=891)
+Number=707848
+Owner=m.danilau@acontis.com (ID=4, FirstName=Maksim, LastName=Danilau)
+Customer=chad@flashcutcnc.com (ID=2520, FirstName=Chad, LastName=Barth)
+CreatedBy=chad@flashcutcnc.com (ID=2520, FirstName=Chad, LastName=Barth)
+Type=
+TimeUnit=
+CreatedAt=10.04.2024 17:04:21 +00:00
+UpdatedAt=19.04.2024 08:24:45 +00:00
+CloseAt=12.04.2024 07:23:16 +00:00
+ArticlesCount=3
+
+### TITLE
+Time Based Issue
+
+### ARTICLE00_HEADER
+Id=43262
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.04.2024 17:04:21 +00:00
+UpdatedAt=10.04.2024 17:04:21 +00:00
+
+### ARTICLE00_SUBJECT
+Time Based Issue
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>I’m having one more issue on the Raspberry Pi 4 (aarch64). When it starts correctly (i.e., avoid the issue in Ticket#707733), everything runs great for what appears to be 62 minutes, then I start getting some “Duplicate” (0x9811000d) errors returned from `ecatExecJob(eUsrJob_SendAllCycFrames)`. Then I eventually (within a second) see `ecatExecJob(eUsrJob_SendAllCycFrames): ERROR: Evaluation time limit reached / slave count limit exceeded (0x98110038)`.</p>
+<p> </p>
+<p>I have attached a log file containing what I see.</p>
+<p> </p>
+<p>I believe I should be fully licensed. As you can see from the log:</p>
+<p> </p>
+<p>License is 00001080-7FF822C3-45EAB1D6-880B7D79-5D8FB289-BA65B0D3</p>
+<p>EtherCAT network adapter MAC: D8-3A-DD-0B-99-39</p>
+<p> </p>
+<p>Any ideas on why this is occurring?</p>
+<p> </p>
+<p>Thanks,</p>
+<p>-Chad Barth</p>
+<p>FlashCut CNC</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=43327
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.04.2024 07:22:54 +00:00
+UpdatedAt=12.04.2024 07:22:55 +00:00
+
+### ARTICLE01_SUBJECT
+Time Based Issue
+
+### ARTICLE01_BODY
+Dear Mr. Barth,<div><br></div><div>thank you for the feedback. I have reproduced and fixed this issue, please download the new LinkLayer from <a href="https://downloads.acontis.com/2024/D-F/FlashCut_CNC_%2840694%29%28US%29/EC-RtEth-BcmGenet-V3.2.1.99-Linux-ARM_64Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2024/D-F/FlashCut_CNC_%2840694%29%28US%29/EC-RtEth-BcmGenet-V3.2.1.99-Linux-ARM_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/D-F/FlashCut_CNC_%2840694%29%28US%29/EC-RtEth-BcmGenet-V3.2.1.99-Linux-ARM_64Bit-SDK_Protected.tar.gz</a>
+</div><div><br></div><div>
+<div>Best regards,</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Maksim Danilau, M.Sc.</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Mittwoch, 10. April 2024 um 19:04:21, schrieb Chad Barth:<br><br><div>
+<p>Hello,</p>
+<p> </p>
+<p>I’m having one more issue on the Raspberry Pi 4 (aarch64). When it starts correctly (i.e., avoid the issue in Ticket#707733), everything runs great for what appears to be 62 minutes, then I start getting some “Duplicate” (0x9811000d) errors returned from `ecatExecJob(eUsrJob_SendAllCycFrames)`. Then I eventually (within a second) see `ecatExecJob(eUsrJob_SendAllCycFrames): ERROR: Evaluation time limit reached / slave count limit exceeded (0x98110038)`.</p>
+<p> </p>
+<p>I have attached a log file containing what I see.</p>
+<p> </p>
+<p>I believe I should be fully licensed. As you can see from the log:</p>
+<p> </p>
+<p>License is 00001080-7FF822C3-45EAB1D6-880B7D79-5D8FB289-BA65B0D3</p>
+<p>EtherCAT network adapter MAC: D8-3A-DD-0B-99-39</p>
+<p> </p>
+<p>Any ideas on why this is occurring?</p>
+<p> </p>
+<p>Thanks,</p>
+<p>-Chad Barth</p>
+<p>FlashCut CNC</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=43362
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.04.2024 21:36:30 +00:00
+UpdatedAt=12.04.2024 21:36:30 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Time Based Issue [Ticket#707848]
+
+### ARTICLE02_BODY
+<div>
+<p>Maksim,</p>
+<p> </p>
+<p>This does resolve the issue. Many Thanks!</p>
+<p> </p>
+<p>-Chad</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b><span> Maksim Danilau via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Friday, April 12, 2024 2:23 AM<br>
+<b>To:</b> Chad Barth &lt;chad@FlashcutCNC.com&gt;<br>
+<b>Subject:</b> RE: Time Based Issue [Ticket#707848]</span></p>
+</div>
+</div>
+<p> </p>
+<p>Dear Mr. Barth,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>thank you for the feedback. I have reproduced and fixed this issue, please download the new LinkLayer from <a href="https://downloads.acontis.com/2024/D-F/FlashCut_CNC_%2840694%29%28US%29/EC-RtEth-BcmGenet-V3.2.1.99-Linux-ARM_64Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2024/D-F/FlashCut_CNC_%2840694%29%28US%29/EC-RtEth-BcmGenet-V3.2.1.99-Linux-ARM_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/D-F/FlashCut_CNC_%2840694%29%28US%29/EC-RtEth-BcmGenet-V3.2.1.99-Linux-ARM_64Bit-SDK_Protected.tar.gz</a>
+</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<div>
+<p>Best regards,</p>
+</div>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Maksim Danilau, M.Sc.</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>Am Mittwoch, 10. April 2024 um 19:04:21, schrieb Chad Barth:</p>
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>I’m having one more issue on the Raspberry Pi 4 (aarch64). When it starts correctly (i.e., avoid the issue in Ticket#707733), everything runs great for what appears to be 62 minutes, then I start getting some “Duplicate” (0x9811000d) errors returned from `ecatExecJob(eUsrJob_SendAllCycFrames)`. Then I eventually (within a second) see `ecatExecJob(eUsrJob_SendAllCycFrames): ERROR: Evaluation time limit reached / slave count limit exceeded (0x98110038)`.</p>
+<p> </p>
+<p>I have attached a log file containing what I see.</p>
+<p> </p>
+<p>I believe I should be fully licensed. As you can see from the log:</p>
+<p> </p>
+<p>License is 00001080-7FF822C3-45EAB1D6-880B7D79-5D8FB289-BA65B0D3</p>
+<p>EtherCAT network adapter MAC: D8-3A-DD-0B-99-39</p>
+<p> </p>
+<p>Any ideas on why this is occurring?</p>
+<p> </p>
+<p>Thanks,</p>
+<p>-Chad Barth</p>
+<p>FlashCut CNC</p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

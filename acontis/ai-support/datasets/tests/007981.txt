@@ -1,0 +1,250 @@
+### HEADER
+Id=7981
+Link=http://at-zammad/#ticket/zoom/7981
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=NUMCAD GmbH (ID=142, Number=40238, Country=DE)
+Commission=NUMCAD, CNC 64 (ID=161, Number=161)
+Number=707981
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=g.buerger@numcad.de (ID=473, FirstName=Günter, LastName=Bürger)
+CreatedBy=g.buerger@numcad.de (ID=473, FirstName=Günter, LastName=Bürger)
+Type=
+TimeUnit=
+CreatedAt=25.04.2024 12:59:48 +00:00
+UpdatedAt=26.04.2024 05:19:16 +00:00
+CloseAt=26.04.2024 05:19:16 +00:00
+ArticlesCount=4
+
+### TITLE
+XML driver error
+
+### ARTICLE00_HEADER
+Id=43948
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.04.2024 12:59:48 +00:00
+UpdatedAt=25.04.2024 12:59:48 +00:00
+
+### ARTICLE00_SUBJECT
+XML driver error
+
+### ARTICLE00_BODY
+<p> </p><div>
+<p><span style="color:#1f497d;">Hallo Herr Widmann,</span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p><span style="color:#1f497d;">Hoffe es geht euch gut!</span></p>
+<p><span style="color:#1f497d;">Habe ein Problem mit einem INVT driver.</span></p>
+<p><span style="color:#1f497d;">Bitte könntet ihr danach schauen. Vielleicht kann ich das XML-file patchen?</span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p><span style="color:#1f497d;">Danke und Grüße,</span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p>NUMCAD GmbH, Günter Bürger</p>
+<p><span lang="EN-US">… from home office:</span></p>
+<p><span lang="EN-US">A-8530 Deutschlandsberg</span></p>
+<p><span lang="EN-US">mobile: +43 681 – 10717166</span></p>
+<p>mobile: +49 160 – 1543178</p>
+<p>Tel.: +49 700 – 68622333</p>
+<p><a href="http://www.numcad.de" rel="nofollow noreferrer noopener" target="_blank">www.numcad.de</a><span style="color:#1f497d;"> </span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p> </p>
+<p><span style="color:#1f497d;"> </span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=43952
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.04.2024 13:10:10 +00:00
+UpdatedAt=25.04.2024 14:03:59 +00:00
+
+### ARTICLE01_SUBJECT
+XML driver error
+
+### ARTICLE01_BODY
+<p> </p><div>
+<p><span style="color:#1f497d;">Hallo Herr Widmann,</span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p><span style="color:#1f497d;">Hoffe es geht euch gut!</span></p>
+<p><span style="color:#1f497d;">Habe ein Problem mit einem INVT driver.</span></p>
+<p><span style="color:#1f497d;">Bitte könntet ihr danach schauen. Vielleicht kann ich das XML-file patchen?</span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p><span style="color:#1f497d;">Danke und Grüße,</span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p>NUMCAD GmbH, Günter Bürger</p>
+<p><span lang="EN-US">… from home office:</span></p>
+<p><span lang="EN-US">A-8530 Deutschlandsberg</span></p>
+<p><span lang="EN-US">mobile: +43 681 – 10717166</span></p>
+<p>mobile: +49 160 – 1543178</p>
+<p>Tel.: +49 700 – 68622333</p>
+<p><a href="http://www.numcad.de" rel="nofollow noreferrer noopener" target="_blank">www.numcad.de</a><span style="color:#1f497d;"> </span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p> </p>
+<p><span style="color:#1f497d;"> </span></p>
+<p> </p>
+</div>
+
+### ARTICLE02_HEADER
+Id=43962
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.04.2024 14:09:16 +00:00
+UpdatedAt=25.04.2024 14:09:20 +00:00
+
+### ARTICLE02_SUBJECT
+XML driver error
+
+### ARTICLE02_BODY
+Hallo Herr Bürger,<div><br></div><div>anbei das gepatchte File. Es war lediglich ein Leerzeichen am Ende der ID. Da hier ein check auf eine Zahl drin ist, darf kein Leerzeichen enthalten sein.</div><div><br></div><div>Viele Grüße</div><div>Kai Feifel<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, April 25, 2024 at 3:10:10 PM, Günter Bürger wrote:<br><br><p> </p>
+<div>
+<p><span style="color:#1f497d;">Hallo Herr Widmann,</span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p><span style="color:#1f497d;">Hoffe es geht euch gut!</span></p>
+<p><span style="color:#1f497d;">Habe ein Problem mit einem INVT driver.</span></p>
+<p><span style="color:#1f497d;">Bitte könntet ihr danach schauen. Vielleicht kann ich das XML-file patchen?</span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p><span style="color:#1f497d;">Danke und Grüße,</span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p>NUMCAD GmbH, Günter Bürger</p>
+<p><span lang="EN-US">… from home office:</span></p>
+<p><span lang="EN-US">A-8530 Deutschlandsberg</span></p>
+<p><span lang="EN-US">mobile: +43 681 – 10717166</span></p>
+<p>mobile: +49 160 – 1543178</p>
+<p>Tel.: +49 700 – 68622333</p>
+<p><a href="http://www.numcad.de" rel="nofollow noreferrer noopener" target="_blank">www.numcad.de</a><span style="color:#1f497d;"> </span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p> </p>
+<p><span style="color:#1f497d;"> </span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=43970
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.04.2024 15:09:58 +00:00
+UpdatedAt=25.04.2024 15:09:58 +00:00
+
+### ARTICLE03_SUBJECT
+AW: XML driver error [Ticket#707981]
+
+### ARTICLE03_BODY
+<div>
+<p><span style="color:#1f497d;">Hallo Herr Feifel,</span></p>
+<p><span style="color:#1f497d;"><p> </p></span></p>
+<p><span style="color:#1f497d;">vielen herzlichen Dank!</span></p>
+<p><span style="color:#1f497d;">Funktioniert!</span></p>
+<p><span style="color:#1f497d;"><p> </p></span></p>
+<p><span style="color:#1f497d;">Viele Grüße,</span></p>
+<p><span style="color:#1f497d;">Günter</span></p>
+<p><span style="color:#1f497d;"><p> </p></span></p>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b><span> Kai Feifel via EC-Support [mailto:ecsupport@acontis.com] <br><b>Gesendet:</b> Donnerstag, 25. April 2024 16:09<br><b>An:</b> c.widmann@acontis.com; g.buerger@numcad.de<br><b>Betreff:</b> RE: XML driver error [Ticket#707981]</span></p>
+</div>
+<p> </p>
+<p>Hallo Herr Bürger,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>anbei das gepatchte File. Es war lediglich ein Leerzeichen am Ende der ID. Da hier ein check auf eine Zahl drin ist, darf kein Leerzeichen enthalten sein.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Viele Grüße</p>
+</div>
+<div>
+<p>Kai Feifel</p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Kai Feifel</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div><blockquote>
+<p>On Thursday, April 25, 2024 at 3:10:10 PM, Günter Bürger wrote:</p>
+<p> </p>
+<div>
+<p><span style="color:#1f497d;">Hallo Herr Widmann,</span></p>
+<p><span style="color:#1f497d;">Hoffe es geht euch gut!</span></p>
+<p><span style="color:#1f497d;">Habe ein Problem mit einem INVT driver.</span></p>
+<p><span style="color:#1f497d;">Bitte könntet ihr danach schauen. Vielleicht kann ich das XML-file patchen?</span></p>
+<p><span style="color:#1f497d;">Danke und Grüße,</span></p>
+<p>NUMCAD GmbH, Günter Bürger</p>
+<p><span lang="EN-US">… from home office:</span></p>
+<p><span lang="EN-US">A-8530 Deutschlandsberg</span></p>
+<p><span lang="EN-US">mobile: +43 681 – 10717166</span></p>
+<p>mobile: +49 160 – 1543178</p>
+<p>Tel.: +49 700 – 68622333</p>
+<p><a href="http://www.numcad.de" rel="nofollow noreferrer noopener" target="_blank">www.numcad.de</a><span style="color:#1f497d;"> </span></p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote></div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

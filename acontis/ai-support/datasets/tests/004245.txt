@@ -1,0 +1,78 @@
+### HEADER
+Id=4245
+Link=http://at-zammad/#ticket/zoom/4245
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Jumo GmbH & Co.KG (ID=126, Number=54502, Country=DE)
+Commission=Jumo, Registriergeräte, Linux (ID=141, Number=141)
+Number=704245
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=michael.mueller@jumo.net (ID=1441, FirstName=Michael, LastName=Mueller)
+CreatedBy=michael.mueller@jumo.net (ID=1441, FirstName=Michael, LastName=Mueller)
+Type=
+TimeUnit=
+CreatedAt=03.11.2022 07:31:25 +00:00
+UpdatedAt=11.11.2022 07:32:35 +00:00
+CloseAt=11.11.2022 07:32:35 +00:00
+ArticlesCount=2
+
+### TITLE
+EBI -> Prozessdaten filtern/ reduzieren
+
+### ARTICLE00_HEADER
+Id=22347
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.11.2022 07:31:25 +00:00
+UpdatedAt=03.11.2022 07:31:25 +00:00
+
+### ARTICLE00_SUBJECT
+EBI -> Prozessdaten filtern/ reduzieren
+
+### ARTICLE00_BODY
+Sehr geehrte Damen und Herren,<br><br>Aktuell erstellen wir mit einem EBI-File und dem ENI-Builder die ENI-Datei.<br>Dabei werden alle im ESI angelegten RxPDO und TxPDO Daten in die Busbeschreibung übernommen.<br><br>Wir möchten auf dem Ethercat Bus unsere Prozessdaten reduzieren.<br>Können Sie mir bitte mitteilen/ beschreiben wie wir in der EBI-Datei festlegen, welche Prozessdaten in die ENI-Datei eingehen bzw nicht übernommen werden.<br><br>Danke,<br><br><span>Mit freundlichen Grüßen<br><br>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Software - Desktop Anwendungen<br><br>i.A. Dipl.-Ing.(FH) Michael Müller<br><br>Tel: +49 661 6003-9328<br>Fax: +49 661 6003-889328<br>Adresse: Moritz-Juchheim-Str. 1<br> 36039 Fulda, Germany<br>E-Mail: </span><a href="mailto:Michael.Mueller@jumo.net">mailto:Michael.Mueller@jumo.net</a><span><br>Internet: </span><a href="http://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">http://www.jumo.net</a><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dipl.-Ingenieur Dimitrios Charisiadis, Dipl.-Betriebswirt Steffen Hoßfeld<br> Ust.-Id.-Nr.: DE 112411234</p>
+
+### ARTICLE01_HEADER
+Id=22358
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.11.2022 08:12:58 +00:00
+UpdatedAt=03.11.2022 08:13:01 +00:00
+
+### ARTICLE01_SUBJECT
+EBI -> Prozessdaten filtern/ reduzieren
+
+### ARTICLE01_BODY
+Hallo Herr Müller,<div><br></div><div>Sie können über die Tags Slave --&gt; PdoEntry --&gt; Remove, einzelne Variablen entfernen. </div><div>In unseren Beispielen die mit dem EniBuilder ausgeliefert werden ist das auch drin (z.B. config_full.xml)</div><div><br></div><div><img style="max-width:100%;width: 555px;max-width: 100%;" src="/api/v1/ticket_attachment/4245/22358/94257?view=inline"></div><div><br></div><div>Sie können außerdem Ihren EC-Engineer mit dem Aufrufparamter /ENIBUILDER starten. Dann können Sie ihr Projekt konfigurieren / Variablen löschen. Dann rechtsklick auf den Master und Export EniBuilder Configuration. Dann exportieren wir ein EBI, welches Sie als Beispiel nehmen und gegebenenfalls anpassen können.</div><div><br></div><div>Viele Grüße</div><div>Kai Feifel</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/4245/22358/94258?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, November 3, 2022 at 8:31:25 AM, Michael Mueller wrote:<br><br>Sehr geehrte Damen und Herren,<br><br>Aktuell erstellen wir mit einem EBI-File und dem ENI-Builder die ENI-Datei.<br>Dabei werden alle im ESI angelegten RxPDO und TxPDO Daten in die Busbeschreibung übernommen.<br><br>Wir möchten auf dem Ethercat Bus unsere Prozessdaten reduzieren.<br>Können Sie mir bitte mitteilen/ beschreiben wie wir in der EBI-Datei festlegen, welche Prozessdaten in die ENI-Datei eingehen bzw nicht übernommen werden.<br><br>Danke,<br><br><span>Mit freundlichen Grüßen<br><br>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Software - Desktop Anwendungen<br><br>i.A. Dipl.-Ing.(FH) Michael Müller<br><br>Tel: +49 661 6003-9328<br>Fax: +49 661 6003-889328<br>Adresse: Moritz-Juchheim-Str. 1<br> 36039 Fulda, Germany<br>E-Mail: </span><a href="mailto:Michael.Mueller@jumo.net">mailto:Michael.Mueller@jumo.net</a><span><br>Internet: </span><a href="http://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">http://www.jumo.net</a><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dipl.-Ingenieur Dimitrios Charisiadis, Dipl.-Betriebswirt Steffen Hoßfeld<br> Ust.-Id.-Nr.: DE 112411234</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

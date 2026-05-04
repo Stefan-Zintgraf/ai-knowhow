@@ -1,0 +1,124 @@
+### HEADER
+Id=9918
+Link=http://at-zammad/#ticket/zoom/9918
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vitestro (ID=413, Number=0, Country=NL)
+Commission=Vitestro, Vitestro Medical robotics (ID=491, Number=491)
+Number=709918
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=rogier.van.sterkenburg@vitestro.com (ID=264, FirstName=Rogier, LastName=Van Sterkenburg)
+CreatedBy=rogier.van.sterkenburg@vitestro.com (ID=264, FirstName=Rogier, LastName=Van Sterkenburg)
+Type=
+TimeUnit=
+CreatedAt=13.02.2025 09:53:26 +00:00
+UpdatedAt=21.02.2025 07:03:56 +00:00
+CloseAt=21.02.2025 07:03:56 +00:00
+ArticlesCount=2
+
+### TITLE
+Xenomai 3 version of Class A EtherCAT master
+
+### ARTICLE00_HEADER
+Id=56625
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.02.2025 09:53:26 +00:00
+UpdatedAt=13.02.2025 09:53:28 +00:00
+
+### ARTICLE00_SUBJECT
+Xenomai 3 version of Class A EtherCAT master
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Sir/Madam.</p>
+<p> </p>
+<p>Can you point us to the location where we can download the latest officially release Xenomai 3 version of the Class A EtherCAT Master stack? I believe it is version v3.2.2.03.</p>
+<p> </p>
+<p>Thank you,</p>
+<p> </p>
+<p>Regards,</p>
+<p> </p>
+<p>Rogier</p>
+<p> </p>
+<p><b><span lang="NL">Rogier van Sterkenburg</span></b><span lang="NL"></span></p>
+<p><span lang="NL" style="color:#262626;">Software </span><span lang="NL">Team Lead</span></p>
+<p><span lang="NL"><p> </p></span></p>
+<p><span style="color:#201f1e;"><img style="max-width:100%;width:1.4583in;max-height:.2708in;width:140px;max-height:26px;" src="/api/v1/ticket_attachment/9918/56625/235205?view=inline"></span></p>
+<p><span lang="NL">Europalaan 500, 3526 KS, Utrecht, </span><span lang="EN-GB">The Netherlands </span>
+</p>
+<p><span lang="EN-GB">Office: </span>+31 30 200 45 51</p>
+<p><span><br>
+</span><a href="https://www.linkedin.com/company/vitestro" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/vitestro" target="_blank"><span style="color:blue;"><img border="0" style="max-width:100%;width:1.375in;max-height:.3125in;width:132px;max-height:30px;" src="/api/v1/ticket_attachment/9918/56625/235206?view=inline"></span></a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=56705
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.02.2025 08:03:50 +00:00
+UpdatedAt=14.02.2025 08:03:53 +00:00
+
+### ARTICLE01_SUBJECT
+Xenomai 3 version of Class A EtherCAT master
+
+### ARTICLE01_BODY
+<p>Hello Rogier<span>,</span></p><p><span><br></span></p>
+
+<p>We have V3.2.2.04 currently available. Please find your new software
+version below: </p><p><br></p>
+
+<p><a href="https://downloads.acontis.com/2025/V-Z/Vitestro_(40456)(NL)/EC-Master_Xenomai_x86_64Bit/3.2.2.04/EC-Master-ClassA-AddOn-V3.2.2.04-Xenomai3-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/V-Z/Vitestro_(40456)(NL)/EC-Master_Xenomai_x86_64Bit/3.2.2.04/EC-Master-ClassA-AddOn-V3.2.2.04-Xenomai3-x86_64Bit-SDK_Protected.tar.gz</a></p>
+
+<p><a href="https://downloads.acontis.com/2025/V-Z/Vitestro_(40456)(NL)/EC-Master_Xenomai_x86_64Bit/3.2.2.04/EC-Master-V3.2.2.04-Xenomai3-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/V-Z/Vitestro_(40456)(NL)/EC-Master_Xenomai_x86_64Bit/3.2.2.04/EC-Master-V3.2.2.04-Xenomai3-x86_64Bit-SDK_Protected.tar.gz</a></p>
+
+<p><a href="https://downloads.acontis.com/2025/V-Z/Vitestro_(40456)(NL)/EC-Master_Xenomai_x86_64Bit/3.2.2.04/EC-RtEth-IntelGbe-V3.2.2.04-Xenomai3-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/V-Z/Vitestro_(40456)(NL)/EC-Master_Xenomai_x86_64Bit/3.2.2.04/EC-RtEth-IntelGbe-V3.2.2.04-Xenomai3-x86_64Bit-SDK_Protected.tar.gz</a></p><p><br></p>
+
+<p>Password: ECM88250 </p><p><br></p><p><br></p><p>Regards, </p><p><br></p><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Thursday, February 13, 2025 at 10:53:26 AM, Rogier Van Sterkenburg wrote:<br><br><div>
+<p>Dear Sir/Madam.</p>
+<p> </p>
+<p>Can you point us to the location where we can download the latest officially release Xenomai 3 version of the Class A EtherCAT Master stack? I believe it is version v3.2.2.03.</p>
+<p> </p>
+<p>Thank you,</p>
+<p> </p>
+<p>Regards,</p>
+<p> </p>
+<p>Rogier</p>
+<p> </p>
+<p><b><span lang="NL">Rogier van Sterkenburg</span></b><span lang="NL"></span></p>
+<p><span lang="NL" style="color:#262626;">Software </span><span lang="NL">Team Lead</span></p>
+<p><span lang="NL"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:#201f1e;"><img style="max-width:100%;max-width:100%;width:1.4583in;max-height:.2708in;width:140px;max-height:26px;" src="/api/v1/ticket_attachment/9918/56705/235541?view=inline"></span></p>
+<p><span lang="NL">Europalaan 500, 3526 KS, Utrecht, </span><span lang="EN-GB">The Netherlands </span>
+</p>
+<p><span lang="EN-GB">Office: </span>+31 30 200 45 51</p>
+<p><span><br>
+</span><a href="https://www.linkedin.com/company/vitestro" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/vitestro" target="_blank"><span style="color:blue;"><img border="0" style="max-width:100%;max-width:100%;width:1.375in;max-height:.3125in;width:132px;max-height:30px;" src="/api/v1/ticket_attachment/9918/56705/235542?view=inline"></span></a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

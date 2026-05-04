@@ -1,0 +1,238 @@
+### HEADER
+Id=6585
+Link=http://at-zammad/#ticket/zoom/6585
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=JSLT (ID=402, Number=0, Country=JP)
+Commission=Shibaura Machine, Die casting machine (ID=576, Number=576)
+Number=706585
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=eiji.kumakura@jslt.co.jp (ID=21, FirstName=Eiji, LastName=Kumakura)
+CreatedBy=eiji.kumakura@jslt.co.jp (ID=21, FirstName=Eiji, LastName=Kumakura)
+Type=
+TimeUnit=
+CreatedAt=17.10.2023 00:46:37 +00:00
+UpdatedAt=19.12.2023 13:59:22 +00:00
+CloseAt=19.12.2023 13:59:22 +00:00
+ArticlesCount=2
+
+### TITLE
+Question about "properties Setting of EC-Master-V3.1-FreeRTOS-ARM_32Bit-Eval" for SHIBAURA MACHINE.
+
+### ARTICLE00_HEADER
+Id=35567
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=17.10.2023 00:46:38 +00:00
+UpdatedAt=17.10.2023 00:46:41 +00:00
+
+### ARTICLE00_SUBJECT
+Question about "properties Setting of EC-Master-V3.1-FreeRTOS-ARM_32Bit-Eval" for SHIBAURA MACHINE.
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+*This question is different from "Question about "EC-Master-V3.1-FreeRTOS-ARM_32Bit-Eval" for SHIBAURA MACHINE. [Ticket#706476]".
+
+They are currently checking the operation using the evaluation version below.
+    "EC-Master-V3.1-FreeRTOS-ARM_32Bit-Eval"
+    "EC-Master-ClassA-AddOn-V3.1-FreeRTOS-ARM_32Bit-Eval"
+
+They are evaluating the ZC702 environment without any changes from the evaluation version.
+
+When you open the following project with the evaluation version you received using Xilinx SDK, the properties of EcMasterDemo_ZC702Rev are "EcMasterDemo_ZC702Rev_properties_NG.png".
+    "Workspace\FreeRTOS_Xilinx\EcMasterDemo_ZC702Rev"
+    "Workspace\FreeRTOS_Xilinx\ZC702Rev_hw_platform"
+
+ From this state, when you download it with DEBUGGER and start it, the following error will occur.
+    "EcMasterDemo_ZC702Rev_properties_NG_Problem_Occurred.png"
+
+If you remove the following selections from this property state, download it with DEBUGGER, and run it, you can run it without any problems.
+
+    ・EcMaster_ps7_cortexa9
+    ・emllGEM_ps7_cortexa9
+    ・ZC702Rev_hw_platform
+
+The property setting at this time is "EcMasterDemo_ZC702Rev_properties_OK.png".
+
+So here's a question.
+
+Are the property settings in "EcMasterDemo_ZC702Rev_properties_OK.png" correct?
+
+Thank you for your confirmation.
+
+----------------------------------------------------------------------
+----- The Japanese translation is as follows: -----
+----------------------------------------------------------------------
+
+*この質問は"Question about "EC-Master-V3.1-FreeRTOS-ARM_32Bit-Eval" for SHIBAURA MACHINE. [Ticket#706476]"とは別の質問です。
+
+
+SHIBAURA MACHINEは以下評価版を使って動作確認中です。
+   "EC-Master-V3.1-FreeRTOS-ARM_32Bit-Eval"
+   "EC-Master-ClassA-AddOn-V3.1-FreeRTOS-ARM_32Bit-Eval"
+
+評価版から何も変更していないZC702環境を評価しています。
+
+頂いた評価版をXilinx SDKで以下プロジェクトを開くとEcMasterDemo_ZC702Revのプロパティーは"EcMasterDemo_ZC702Rev_properties_NG.png"です。
+   "Workspace\FreeRTOS_Xilinx\EcMasterDemo_ZC702Rev"
+   "Workspace\FreeRTOS_Xilinx\ZC702Rev_hw_platform"
+
+この状態からDEBUGGERにてダウンロードを行い、起動すると以下Errorが発生致します。
+   "EcMasterDemo_ZC702Rev_properties_NG_Problem_Occurred.png"
+
+このプロパティーの状態から以下の選択を外してDEBUGGERにてダウンロード行いRUNをすると正常にRUN出来ます。
+
+   ・EcMaster_ps7_cortexa9
+   ・emllGEM_ps7_cortexa9
+   ・ZC702Rev_hw_platform
+
+この時のプロパティーは"EcMasterDemo_ZC702Rev_properties_OK.png"です。
+
+質問です。
+
+プロパティーの設定は"EcMasterDemo_ZC702Rev_properties_OK.png"の内容で正しいですか？
+
+----------------------------------------------------------------------
+
+Best regards,
+Eiji Kumakura
+
+====================
+JSL Technology Co.,Ltd
+
+2F 911-1 Tanaka-cho, Ashikaga-shi,
+Tochigi 326-0822 Japan
+
+Email: eiji.kumakura@jslt.co.jp
+URL: http://www.jslt.co.jp/
+
+Tel: 81-284-22-7091
+Fax: 81-284-24-7092
+====================
+
+### ARTICLE01_HEADER
+Id=35711
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.10.2023 11:15:59 +00:00
+UpdatedAt=19.10.2023 11:16:01 +00:00
+
+### ARTICLE01_SUBJECT
+Question about "properties Setting of EC-Master-V3.1-FreeRTOS-ARM_32Bit-Eval" for SHIBAURA MACHINE.
+
+### ARTICLE01_BODY
+Hi Eiji,<div>you can uncheck it for Gem and Master Lib.</div><div>It was just for tests on my system.</div><div><br></div><div>Best Regards</div><div>Daniel</div><div><br></div><div>
+<br><div>
+<br><div><br></div>
+<div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, 17 October 2023 at 02:46:38, Eiji Kumakura wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>*This question is different from "Question about "EC-Master-V3.1-FreeRTOS-ARM_32Bit-Eval" for SHIBAURA MACHINE. [Ticket#706476]".</div>
+<div><br></div>
+<div>They are currently checking the operation using the evaluation version below.</div>
+<div>    "EC-Master-V3.1-FreeRTOS-ARM_32Bit-Eval"</div>
+<div>    "EC-Master-ClassA-AddOn-V3.1-FreeRTOS-ARM_32Bit-Eval"</div>
+<div><br></div>
+<div>They are evaluating the ZC702 environment without any changes from the evaluation version.</div>
+<div><br></div>
+<div>When you open the following project with the evaluation version you received using Xilinx SDK, the properties of EcMasterDemo_ZC702Rev are "EcMasterDemo_ZC702Rev_properties_NG.png".</div>
+<div>    "Workspace\FreeRTOS_Xilinx\EcMasterDemo_ZC702Rev"</div>
+<div>    "Workspace\FreeRTOS_Xilinx\ZC702Rev_hw_platform"</div>
+<div><br></div>
+<div> From this state, when you download it with DEBUGGER and start it, the following error will occur.</div>
+<div>    "EcMasterDemo_ZC702Rev_properties_NG_Problem_Occurred.png"</div>
+<div><br></div>
+<div>If you remove the following selections from this property state, download it with DEBUGGER, and run it, you can run it without any problems.</div>
+<div><br></div>
+<div>    ・EcMaster_ps7_cortexa9</div>
+<div>    ・emllGEM_ps7_cortexa9</div>
+<div>    ・ZC702Rev_hw_platform</div>
+<div><br></div>
+<div>The property setting at this time is "EcMasterDemo_ZC702Rev_properties_OK.png".</div>
+<div><br></div>
+<div>So here's a question.</div>
+<div><br></div>
+<div>Are the property settings in "EcMasterDemo_ZC702Rev_properties_OK.png" correct?</div>
+<div><br></div>
+<div>Thank you for your confirmation.</div>
+<div><br></div>
+<div>----------------------------------------------------------------------</div>
+<div>----- The Japanese translation is as follows: -----</div>
+<div>----------------------------------------------------------------------</div>
+<div><br></div>
+<div>*この質問は"Question about "EC-Master-V3.1-FreeRTOS-ARM_32Bit-Eval" for SHIBAURA MACHINE. [Ticket#706476]"とは別の質問です。</div>
+<div><br></div>
+<div>SHIBAURA MACHINEは以下評価版を使って動作確認中です。</div>
+<div>   "EC-Master-V3.1-FreeRTOS-ARM_32Bit-Eval"</div>
+<div>   "EC-Master-ClassA-AddOn-V3.1-FreeRTOS-ARM_32Bit-Eval"</div>
+<div><br></div>
+<div>評価版から何も変更していないZC702環境を評価しています。</div>
+<div><br></div>
+<div>頂いた評価版をXilinx SDKで以下プロジェクトを開くとEcMasterDemo_ZC702Revのプロパティーは"EcMasterDemo_ZC702Rev_properties_NG.png"です。</div>
+<div>   "Workspace\FreeRTOS_Xilinx\EcMasterDemo_ZC702Rev"</div>
+<div>   "Workspace\FreeRTOS_Xilinx\ZC702Rev_hw_platform"</div>
+<div><br></div>
+<div>この状態からDEBUGGERにてダウンロードを行い、起動すると以下Errorが発生致します。</div>
+<div>   "EcMasterDemo_ZC702Rev_properties_NG_Problem_Occurred.png"</div>
+<div><br></div>
+<div>このプロパティーの状態から以下の選択を外してDEBUGGERにてダウンロード行いRUNをすると正常にRUN出来ます。</div>
+<div><br></div>
+<div>   ・EcMaster_ps7_cortexa9</div>
+<div>   ・emllGEM_ps7_cortexa9</div>
+<div>   ・ZC702Rev_hw_platform</div>
+<div><br></div>
+<div>この時のプロパティーは"EcMasterDemo_ZC702Rev_properties_OK.png"です。</div>
+<div><br></div>
+<div>質問です。</div>
+<div><br></div>
+<div>プロパティーの設定は"EcMasterDemo_ZC702Rev_properties_OK.png"の内容で正しいですか？</div>
+<div><br></div>
+<div>----------------------------------------------------------------------</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Eiji Kumakura</div>
+<div><br></div>
+<div>====================</div>
+<div>JSL Technology Co.,Ltd</div>
+<div><br></div>
+<div>2F 911-1 Tanaka-cho, Ashikaga-shi,</div>
+<div>Tochigi 326-0822 Japan</div>
+<div><br></div>
+<div>Email: eiji.kumakura@jslt.co.jp</div>
+<div>URL: <a href="http://www.jslt.co.jp/" title="http://www.jslt.co.jp/" rel="nofollow noreferrer noopener" target="_blank">http://www.jslt.co.jp/</a>
+</div>
+<div><br></div>
+<div>Tel: 81-284-22-7091</div>
+<div>Fax: 81-284-24-7092</div>
+<div>====================</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>
+</div>

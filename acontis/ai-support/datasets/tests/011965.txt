@@ -1,0 +1,144 @@
+### HEADER
+Id=11965
+Link=http://at-zammad/#ticket/zoom/11965
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=7011965
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=27.11.2025 01:33:26 +00:00
+UpdatedAt=05.12.2025 07:14:16 +00:00
+CloseAt=05.12.2025 07:14:16 +00:00
+ArticlesCount=3
+
+### TITLE
+About the policy and rule to update the metadata (FileFormatVersion) (QNo.148)
+
+### ARTICLE00_HEADER
+Id=69035
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.11.2025 01:33:27 +00:00
+UpdatedAt=27.11.2025 01:33:31 +00:00
+
+### ARTICLE00_SUBJECT
+About the policy and rule to update the metadata (FileFormatVersion) (QNo.148)
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi Support Team,</div><div dir="ltr">
+<br>
+</div><div dir="ltr">This question is from Mitsubishi (commission No. 40627).</div><div dir="ltr">
+<br>
+</div><div>When trying to open an ECC file created with a newer version using an older version of EC-Engineer, a “version not supported” error occurs and the ECC file cannot be opened.</div><div>Example:</div><div>Project file is not supported, because it was created by a newer version (Version: 3.9.1 [35], Expected: 3.8.3 [34]).</div><div dir="ltr">
+<br>
+</div><div>In this case, the above “34” and “35” are the values of the metadata (FileFormatVersion) stored in the ECC file, and our understanding is that EC-Engineer cannot open ECC files whose FileFormatVersion value is larger than the version it supports.</div><div dir="ltr">
+<br>
+</div><div>Regarding the metadata (FileFormatVersion) inside the ECC file, according to what rule or policy is this value incremented (updated) when the version is upgraded?</div><div dir="ltr">
+<br>
+</div><div dir="ltr">Best regards,</div><div dir="ltr">Yuichi</div><div dir="ltr">
+<br>
+</div><div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span style=" background-color: rgb(255, 255, 255);"><br>
+</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=69039
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=27.11.2025 07:39:55 +00:00
+UpdatedAt=27.11.2025 07:39:55 +00:00
+
+### ARTICLE01_BODY
+Hi Kai, ist 3.9 eine neue Hauptversion oder erst 4.0?
+
+### ARTICLE02_HEADER
+Id=69041
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.11.2025 08:05:10 +00:00
+UpdatedAt=27.11.2025 08:05:12 +00:00
+
+### ARTICLE02_SUBJECT
+About the policy and rule to update the metadata (FileFormatVersion) (QNo.148)
+
+### ARTICLE02_BODY
+Hi,<div><br></div><div>it is only upgraded if neccessary. So not every version will get an upgrade. </div><div>If it has to be upgraded, the second number of the version will change. The second number can also be changed for other reasons, but there will never be a version upgrade if only the third number is increased.</div><div><br></div><div>So 3.8.x -&gt; 3.9.0 --&gt; Upgrade possible</div><div>3.9.x -&gt; 3.9.x --&gt; Never an upgrade.</div><div><br></div><div>Best regards,</div><div>Kai <br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, November 27, 2025 at 2:33:27 AM, Yuichi Ide wrote:<br><br><div dir="ltr">Hi Support Team,</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">This question is from Mitsubishi (commission No. 40627).</div>
+<div dir="ltr">
+<br>
+</div>
+<div>When trying to open an ECC file created with a newer version using an older version of EC-Engineer, a “version not supported” error occurs and the ECC file cannot be opened.</div>
+<div>Example:</div>
+<div>Project file is not supported, because it was created by a newer version (Version: 3.9.1 [35], Expected: 3.8.3 [34]).</div>
+<div dir="ltr">
+<br>
+</div>
+<div>In this case, the above “34” and “35” are the values of the metadata (FileFormatVersion) stored in the ECC file, and our understanding is that EC-Engineer cannot open ECC files whose FileFormatVersion value is larger than the version it supports.</div>
+<div dir="ltr">
+<br>
+</div>
+<div>Regarding the metadata (FileFormatVersion) inside the ECC file, according to what rule or policy is this value incremented (updated) when the version is upgraded?</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Best regards,</div>
+<div dir="ltr">Yuichi</div>
+<div dir="ltr">
+<br>
+</div>
+<div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span style=" background-color: rgb(255, 255, 255);"><br>
+</span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

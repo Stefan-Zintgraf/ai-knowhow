@@ -1,0 +1,219 @@
+### HEADER
+Id=1161
+Link=http://at-zammad/#ticket/zoom/1161
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=701161
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=02.08.2021 19:48:26 +00:00
+UpdatedAt=13.08.2021 06:12:16 +00:00
+CloseAt=13.08.2021 06:12:16 +00:00
+ArticlesCount=6
+
+### TITLE
+ESI Generator for LAN 9252
+
+### ARTICLE00_HEADER
+Id=6356
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.08.2021 19:48:27 +00:00
+UpdatedAt=02.08.2021 19:48:27 +00:00
+
+### ARTICLE00_SUBJECT
+ESI Generator for LAN 9252
+
+### ARTICLE00_BODY
+<div>Hi,</div><div> </div><div>We have a potential customer that is also doing custom slave development with the Microchip LAN 9252 as the ESC. They are struggling with generating the ESI file, and I was wondering if anyone had any experience with another customer and some useful tool for helping with this.<br>
+</div><br>/Jon
+
+### ARTICLE01_HEADER
+Id=6374
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.08.2021 08:11:53 +00:00
+UpdatedAt=03.08.2021 08:11:55 +00:00
+
+### ARTICLE01_SUBJECT
+ESI Generator for LAN 9252
+
+### ARTICLE01_BODY
+<br><div>---Begin forwarded message:---<br><br>
+</div><div><blockquote type="cite">
+<div>Betreff: ESI Generator for LAN 9252<br>Datum: 02.08.2021 21:48<br>Von: Jon Waters<br>An: EtherCAT Support &lt;ecsupport@acontis.com&gt;<br><br>
+</div>
+<div>Hi,</div>
+<div> </div>
+<div>We have a potential customer that is also doing custom slave development with the Microchip LAN 9252 as the ESC. They are struggling with generating the ESI file, and I was wondering if anyone had any experience with another customer and some useful tool for helping with this.<br>
+</div>
+<br>/Jon</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=6388
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.08.2021 11:55:08 +00:00
+UpdatedAt=03.08.2021 11:55:13 +00:00
+
+### ARTICLE02_SUBJECT
+ESI Generator for LAN 9252
+
+### ARTICLE02_BODY
+Hi Jon,<div><br></div><div>from the following resources, there are docs available:</div><div><br></div><div>
+<p> </p>
+
+<p> </p>
+
+<p><a href="https://www.microchip.com/en-us/development-tool/EVB-LAN9252-HBIPLUS" rel="nofollow noreferrer noopener" target="_blank">https://www.microchip.com/en-us/development-tool/EVB-LAN9252-HBIPLUS</a>
+</p>
+<p><br></p>
+
+<p> </p>
+
+
+
+<p> </p>
+
+<p> </p>
+
+<p><img style="max-width:100%;width: 701px;max-width: 100%;" src="/api/v1/ticket_attachment/1161/6388/23290?view=inline"><br></p>
+<p><br></p>
+<p>E.g. the user’s guide:</p>
+<p><br></p>
+<p><img style="max-width:100%;width: 986px;max-width: 100%;" src="/api/v1/ticket_attachment/1161/6388/23291?view=inline"><br></p>
+<p><br></p>
+<p>It references the software Application Note with a step-by-step tutorial including location of sample ESI files:</p>
+<p><br></p>
+<p><img style="max-width:100%;width: 645px;max-width: 100%;" src="/api/v1/ticket_attachment/1161/6388/23292?view=inline"><br></p>
+<p><br></p>
+
+<p> </p>
+
+
+
+<p> </p>
+
+<p> </p>
+
+<p>Does this answer the question about generating the needed ESI file?</p>
+<p><br></p>
+<p>Best regards,</p>
+<p>Paul</p>
+<p><br></p>
+</div>
+
+### ARTICLE03_HEADER
+Id=6393
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.08.2021 13:06:57 +00:00
+UpdatedAt=03.08.2021 13:06:57 +00:00
+
+### ARTICLE03_SUBJECT
+Re: ESI Generator for LAN 9252 [Ticket#701161]
+
+### ARTICLE03_BODY
+Thanks for the suggestions Paul. I think this is for the example ESI file, yes? What if the customer is customizing the slave application software to their specific needs, creating their own process data, object dictionary entires, etc. Is there anything to help create the new custom ESI file from that? How is this typically done?<br><div> </div><div>/Jon</div><br><br><div>
+<strong> From: </strong> Paul Bußmann via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<strong> To: </strong> &lt;j.waters@acontis.com&gt; <br>
+<strong> Sent: </strong> 8/3/2021 7:55 AM <br>
+<strong> Subject: </strong> RE: ESI Generator for LAN 9252 [Ticket#701161] <br><br><blockquote><div>Hi Jon,<div> </div>
+<div>from the following resources, there are docs available:</div>
+<div> </div>
+<div> <p> </p>
+<p><a href="https://www.microchip.com/en-us/development-tool/EVB-LAN9252-HBIPLUS" rel="nofollow noreferrer noopener" target="_blank">https://www.microchip.com/en-us/development-tool/EVB-LAN9252-HBIPLUS</a> </p>
+<p><br></p>
+<p> </p>
+<p><img style="max-width:100%;width: 701px;max-width: 100%;" src="/api/v1/ticket_attachment/1161/6393/23310?view=inline"><br></p>
+<p><br></p>
+<p>E.g. the user’s guide:</p>
+<p><br></p>
+<p><img style="max-width:100%;width: 986px;max-width: 100%;" src="/api/v1/ticket_attachment/1161/6393/23309?view=inline"><br></p>
+<p><br></p>
+<p>It references the software Application Note with a step-by-step tutorial including location of sample ESI files:</p>
+<p><br></p>
+<p><img style="max-width:100%;width: 645px;max-width: 100%;" src="/api/v1/ticket_attachment/1161/6393/23308?view=inline"><br></p>
+<p><br></p>
+<p> </p>
+<p>Does this answer the question about generating the needed ESI file?</p>
+<p><br></p>
+<p>Best regards,</p>
+<p>Paul</p>
+<p><br></p>
+</div>
+</div></blockquote>
+</div>
+
+### ARTICLE04_HEADER
+Id=6401
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.08.2021 15:27:28 +00:00
+UpdatedAt=03.08.2021 15:27:29 +00:00
+
+### ARTICLE04_SUBJECT
+ESI Generator for LAN 9252
+
+### ARTICLE04_BODY
+<div>
+<span>"Create new slave files" -&gt; "Start" generates an ESI file and it should apply all changes from the SSCs Excel sheet, too.</span><br>
+</div><div>
+<span>The SSC contains various settings. These settings are </span><span>a </span><span>starting point for a <u>generated</u> ESI file that is </span><span>likely</span><span> </span><span>almost matching</span><span> the needs.</span>
+</div><div><span>Unfortunately I don't know about which settings aren't reflected in generation using the SSC dialogs.</span></div><div><div>
+<div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">Am Dienstag, 3. August 2021, 15:06:57, schrieb Jon Waters:<br><br>Thanks for the suggestions Paul. I think this is for the example ESI file, yes? What if the customer is customizing the slave application software to their specific needs, creating their own process data, object dictionary entires, etc. Is there anything to help create the new custom ESI file from that? How is this typically done?<br><div> </div>
+<div>/Jon</div>
+</blockquote></div>
+<br>
+</div></div>
+
+### ARTICLE05_HEADER
+Id=6403
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.08.2021 15:38:05 +00:00
+UpdatedAt=03.08.2021 15:38:19 +00:00
+
+### ARTICLE05_SUBJECT
+ESI Generator for LAN 9252
+
+### ARTICLE05_BODY
+<div><blockquote type="cite">creating their own process data, object dictionary entires, etc. Is there anything to help create the new custom ESI file from that? How is this typically done?<br>
+</blockquote></div><div>Sorry, I didn't answer.</div><div><br></div><div>About process data, see AN ET9300:</div><div><br></div><div>
+<img style="max-width:100%;width: 598px;max-width: 100%;" src="/api/v1/ticket_attachment/1161/6403/23349?view=inline"><br>
+</div><div><br></div><div>About CoE there is e.g. "<span>SSC OD Tool.exe</span><span>" although I never used it.</span>
+</div><div><span><br></span></div><div>
+<img style="max-width:100%;width: 622px;max-width: 100%;" src="/api/v1/ticket_attachment/1161/6403/23350?view=inline"><span><br></span>
+</div><div><span><br></span></div><div><span>Best regards,</span></div><div><span>Paul</span></div><br><br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>

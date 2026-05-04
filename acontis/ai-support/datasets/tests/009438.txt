@@ -1,0 +1,214 @@
+### HEADER
+Id=9438
+Link=http://at-zammad/#ticket/zoom/9438
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ACS Motion Control LTD (ID=184, Number=50006, Country=IL)
+Commission=ACS, Motion Controller (ID=223, Number=223)
+Number=709438
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=borisb@acsmotioncontrol.com (ID=83, FirstName=Boris, LastName=Brevdo)
+CreatedBy=borisb@acsmotioncontrol.com (ID=83, FirstName=Boris, LastName=Brevdo)
+Type=
+TimeUnit=
+CreatedAt=02.12.2024 09:36:45 +00:00
+UpdatedAt=03.12.2024 07:36:33 +00:00
+CloseAt=03.12.2024 07:36:33 +00:00
+ArticlesCount=3
+
+### TITLE
+Synchronization between PCIe and EtherCAT network
+
+### ARTICLE00_HEADER
+Id=53573
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.12.2024 09:36:45 +00:00
+UpdatedAt=02.12.2024 09:36:45 +00:00
+
+### ARTICLE00_SUBJECT
+Synchronization between PCIe and EtherCAT network
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Dear EC Support,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">I hope everyone is well.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">We are starting a new project, and I would like your opinion on what is the best approach.</span></p>
+<p><span lang="EN-US">In this project, our controller is getting interrupt from FPGA via PCIe.</span></p>
+<p><span lang="EN-US">In addition, we have the EtherCAT master that should control an EtherCAT network (as usual). </span></p>
+<p><span lang="EN-US">In your opinion, what should be the synchronization mode that we should use for the EC master?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Thank you,</span></p>
+<p><span lang="EN-US">Boris Brevdo</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=53592
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.12.2024 17:31:25 +00:00
+UpdatedAt=02.12.2024 17:31:28 +00:00
+
+### ARTICLE01_SUBJECT
+Synchronization between PCIe and EtherCAT network
+
+### ARTICLE01_BODY
+Hi Boris,<div><br></div><div>we are going well thanks! I missed you at the last plugfests.</div><div><br></div><div>I you can get a running counter synchronized with the FPGA signal (register of the FPGA), MasterRefClock will be the best solution. If not, you need BusShift.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, December 2, 2024 at 10:36:45 AM, Boris Brevdo wrote:<br><br><div>
+<p><span lang="EN-US">Dear EC Support,</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">I hope everyone is well.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">We are starting a new project, and I would like your opinion on what is the best approach.</span></p>
+<p><span lang="EN-US">In this project, our controller is getting interrupt from FPGA via PCIe.</span></p>
+<p><span lang="EN-US">In addition, we have the EtherCAT master that should control an EtherCAT network (as usual). </span></p>
+<p><span lang="EN-US">In your opinion, what should be the synchronization mode that we should use for the EC master?</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Thank you,</span></p>
+<p><span lang="EN-US">Boris Brevdo</span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=53604
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.12.2024 07:22:27 +00:00
+UpdatedAt=03.12.2024 07:22:27 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Synchronization between PCIe and EtherCAT network [Ticket#709438]
+
+### ARTICLE02_BODY
+<div>
+<p><span lang="EN-US">Hi Cyril,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">I hope you enjoyed the PlugFest event last week </span><span lang="EN-US">😊</span><span lang="EN-US">
+</span></p>
+<p><span lang="EN-US">I really hope to attend it next year.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Thank you for your input, I will probably ask you more questions soon.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best Regards,</span></p>
+<p><span lang="EN-US">Boris Brevdo</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b><span lang="EN-US">From:</span></b><span lang="EN-US"> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Monday, December 2, 2024 7:31 PM<br>
+<b>To:</b> Boris Brevdo &lt;borisb@acsmotioncontrol.com&gt;<br>
+<b>Cc:</b> Oleg Romanov &lt;olegr@acsmotioncontrol.com&gt;<br>
+<b>Subject:</b> RE: Synchronization between PCIe and EtherCAT network [Ticket#709438]</span></p>
+</div>
+</div>
+<p> </p>
+<p>Hi Boris,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>we are going well thanks! I missed you at the last plugfests.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>I you can get a running counter synchronized with the FPGA signal (register of the FPGA), MasterRefClock will be the best solution. If not, you need BusShift.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Cyril Eyssautier</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Monday, December 2, 2024 at 10:36:45 AM, Boris Brevdo wrote:</p>
+<div>
+<p><span lang="EN-US">Dear EC Support,</span></p>
+<p> </p>
+<p><span lang="EN-US">I hope everyone is well.</span></p>
+<p> </p>
+<p><span lang="EN-US">We are starting a new project, and I would like your opinion on what is the best approach.</span></p>
+<p><span lang="EN-US">In this project, our controller is getting interrupt from FPGA via PCIe.</span></p>
+<p><span lang="EN-US">In addition, we have the EtherCAT master that should control an EtherCAT network (as usual). </span></p>
+<p><span lang="EN-US">In your opinion, what should be the synchronization mode that we should use for the EC master?</span></p>
+<p> </p>
+<p><span lang="EN-US">Thank you,</span></p>
+<p><span lang="EN-US">Boris Brevdo</span></p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

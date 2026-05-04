@@ -1,0 +1,194 @@
+### HEADER
+Id=2452
+Link=http://at-zammad/#ticket/zoom/2452
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ProCom GmbH (ID=146, Number=57505, Country=DE)
+Commission=ProCom, CNC, Class A RTOS-32, EC-Lyser (ID=165, Number=165)
+Number=702452
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=andreas.mueller@procom.de (ID=139, FirstName=Andreas, LastName=MÃ¼ller)
+CreatedBy=andreas.mueller@procom.de (ID=139, FirstName=Andreas, LastName=MÃ¼ller)
+Type=
+TimeUnit=
+CreatedAt=16.02.2022 08:56:29 +00:00
+UpdatedAt=11.03.2022 07:09:29 +00:00
+CloseAt=11.03.2022 07:09:29 +00:00
+ArticlesCount=2
+
+### TITLE
+Cx5140
+
+### ARTICLE00_HEADER
+Id=13055
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.02.2022 08:56:29 +00:00
+UpdatedAt=16.02.2022 08:56:31 +00:00
+
+### ARTICLE00_SUBJECT
+Cx5140
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo zusammen.</p>
+<p> </p>
+<p>Ein Kunde will eine Beckhoff CX5140 integrieren.</p>
+<p>Die Konfiguration ist angehängt.</p>
+<p> </p>
+<p>Beim Start entstehen die ebenfalls angehängten Log-Files.</p>
+<p> </p>
+<p>Ist ggf. bekannt, was hier das Problem sein könnte?</p>
+<p> </p>
+<p>Wenn nicht: Was müsste man tun, um das Problem genauer zu verstehen?</p>
+<p> </p>
+<p>Vielen Dank und viele Grüße</p>
+<p>Andreas Müller</p>
+<p> </p>
+</div><p>Mit freundlichen Grüßen/ Kind regards</p><p>
+<strong>Andreas Müller</strong><br> Technology Expert CNC<br>
+<br>
+</p><table>
+<tbody>
+<tr>
+<td>Email<br>
+</td>
+<td>Andreas.Mueller@procom.de</td>
+</tr>
+<tr>
+<td>Tel.</td>
+<td>+49 241 51804-136</td>
+</tr>
+<tr>
+<td>Mobil</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p> </p><p>Alexander.Braun@procom.de<br>
+<br> ProCom Automation GmbH | Luisenstraße 41 | D-52070 Aachen<br>
+<a href="http://www.procom-automation.de/" rel="nofollow noreferrer noopener" target="_blank">http://www.procom-automation.de</a><br>
+</p><p>Amtsgericht Aachen | HRB 25178 | DE 346 628 296<br> Geschäftsführung: Bernd Göttgens</p><table style="border: none;border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding: 0cm 5.4pt;vertical-align: top;">
+<p>
+<a href="https://linkedin.com/company/74259033/admin/" rel="nofollow noreferrer noopener" title="https://linkedin.com/company/74259033/admin/" target="_blank"></a></p>
+</td>
+<td style="padding: 0cm 5.4pt;vertical-align: top;">
+<p>
+<a href="https://www.facebook.com/procom.automation.clouver" rel="nofollow noreferrer noopener" title="https://www.facebook.com/procom.automation.clouver" target="_blank"></a></p>
+</td>
+<td style="padding: 0cm 5.4pt;vertical-align: top;">
+<p>
+<a href="https://www.instagram.com/procomautomation/" rel="nofollow noreferrer noopener" title="https://www.instagram.com/procomautomation/" target="_blank"></a></p>
+</td>
+<td style="padding: 0cm 5.4pt;vertical-align: top;">
+<p>
+<a href="https://twitter.com/ClouverProCom" rel="nofollow noreferrer noopener" title="https://twitter.com/ClouverProCom" target="_blank"></a></p>
+</td>
+<td style="padding: 0cm 5.4pt;vertical-align: top;">
+<p>
+<a href="https://www.youtube.com/channel/UCTag7OPqZhvt7pJmrrtpyTQ" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCTag7OPqZhvt7pJmrrtpyTQ" target="_blank"></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+</p>
+
+### ARTICLE01_HEADER
+Id=13056
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.02.2022 09:01:22 +00:00
+UpdatedAt=16.02.2022 09:01:24 +00:00
+
+### ARTICLE01_SUBJECT
+Cx5140
+
+### ARTICLE01_BODY
+Hallo Herr Müller,<div><br></div><div>Die slaves brechen mit "no sync error" meistens ab, wenn der DC SYNC Signal nicht wie erwartet kommt. Passt die tatsächliche Zykluszeit mit der aus Sicht des Slaves Konfigurierten zusammen?</div><div>
+<br><div>Schöne Grüße,</div>
+<div>Cyril Eyssautier<div><br></div>
+<div><blockquote type="cite">On Wednesday, February 16, 2022, 9:56:29 AM, Andreas Müller wrote:<br><br><div>
+<p>Hallo zusammen.</p>
+<p> </p>
+<p>Ein Kunde will eine Beckhoff CX5140 integrieren.</p>
+<p>Die Konfiguration ist angehängt.</p>
+<p> </p>
+<p>Beim Start entstehen die ebenfalls angehängten Log-Files.</p>
+<p> </p>
+<p>Ist ggf. bekannt, was hier das Problem sein könnte?</p>
+<p> </p>
+<p>Wenn nicht: Was müsste man tun, um das Problem genauer zu verstehen?</p>
+<p> </p>
+<p>Vielen Dank und viele Grüße</p>
+<p>Andreas Müller</p>
+<p> </p>
+</div>
+<p>Mit freundlichen Grüßen/ Kind regards</p>
+<p>
+<strong>Andreas Müller</strong><br> Technology Expert CNC<br>
+<br>
+</p>
+<table>
+<tbody>
+<tr>
+<td>Email<br>
+</td>
+<td>Andreas.Mueller@procom.de</td>
+</tr>
+<tr>
+<td>Tel.</td>
+<td>+49 241 51804-136</td>
+</tr>
+<tr>
+<td>Mobil</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>Alexander.Braun@procom.de<br>
+<br> ProCom Automation GmbH | Luisenstraße 41 | D-52070 Aachen<br>
+<a href="http://www.procom-automation.de/" rel="nofollow noreferrer noopener" target="_blank">http://www.procom-automation.de</a><br>
+</p>
+<p>Amtsgericht Aachen | HRB 25178 | DE 346 628 296<br> Geschäftsführung: Bernd Göttgens</p>
+<table style="border: none;border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding: 0cm 5.4pt;vertical-align: top;">
+<p>
+<a href="https://linkedin.com/company/74259033/admin/" rel="nofollow noreferrer noopener" title="https://linkedin.com/company/74259033/admin/" target="_blank"></a></p>
+</td>
+<td style="padding: 0cm 5.4pt;vertical-align: top;">
+<p>
+<a href="https://www.facebook.com/procom.automation.clouver" rel="nofollow noreferrer noopener" title="https://www.facebook.com/procom.automation.clouver" target="_blank"></a></p>
+</td>
+<td style="padding: 0cm 5.4pt;vertical-align: top;">
+<p>
+<a href="https://www.instagram.com/procomautomation/" rel="nofollow noreferrer noopener" title="https://www.instagram.com/procomautomation/" target="_blank"></a></p>
+</td>
+<td style="padding: 0cm 5.4pt;vertical-align: top;">
+<p>
+<a href="https://twitter.com/ClouverProCom" rel="nofollow noreferrer noopener" title="https://twitter.com/ClouverProCom" target="_blank"></a></p>
+</td>
+<td style="padding: 0cm 5.4pt;vertical-align: top;">
+<p>
+<a href="https://www.youtube.com/channel/UCTag7OPqZhvt7pJmrrtpyTQ" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCTag7OPqZhvt7pJmrrtpyTQ" target="_blank"></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

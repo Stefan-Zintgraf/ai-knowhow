@@ -1,0 +1,232 @@
+### HEADER
+Id=10205
+Link=http://at-zammad/#ticket/zoom/10205
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Apple (ID=523, Number=0, Country=US)
+Commission=Apple, Automation Controls Project (ID=607, Number=607)
+Number=7010205
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=pchang22@apple.com (ID=3198, FirstName=Andy, LastName=Chang)
+CreatedBy=pchang22@apple.com (ID=3198, FirstName=Andy, LastName=Chang)
+Type=
+TimeUnit=
+CreatedAt=18.03.2025 06:02:50 +00:00
+UpdatedAt=20.03.2025 15:30:59 +00:00
+CloseAt=20.03.2025 15:30:59 +00:00
+ArticlesCount=4
+
+### TITLE
+[Need Help] does ec-master support MacOS
+
+### ARTICLE00_HEADER
+Id=58524
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.03.2025 06:02:50 +00:00
+UpdatedAt=18.03.2025 06:02:50 +00:00
+
+### ARTICLE00_SUBJECT
+[Need Help] does ec-master support MacOS
+
+### ARTICLE00_BODY
+Hi ecsupport team,<div>This is Andy from Camera testing team, Apple.</div><div>Would you mind to check if there’s a solution for supporting etherCAT through MacOS on Mac mini?<br><div>
+<div dir="auto"><div dir="auto">
+<div dir="auto">
+<br>Kind regards,<br><br><br>Andy Chang<br>Apple<br>Camera<br>No.88, LongYuan 8th Rd Longtan District<br>Longtan, Taoyuan, 32542, Taiwan<br>Office +886-2-8729-8500<br>iPhone +886-972-092-173</div>
+<div dir="auto">Apple email address: pchang22@apple.com<br><br>
+</div>
+</div></div>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=58532
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.03.2025 08:35:59 +00:00
+UpdatedAt=18.03.2025 08:36:02 +00:00
+
+### ARTICLE01_SUBJECT
+[Need Help] does ec-master support MacOS
+
+### ARTICLE01_BODY
+Hi Andy,<div><br></div><div>thank you very much for your inquiry.</div><div>We are currently working with a team in CA on this. </div><div>This project is mainly handled by our US subsidiary. <span>I put the general manager Mr. Jon Waters on cc. He can link you with the team in CA.</span>
+</div><div><br></div><div>Best Regards</div><div><br></div><div>Christoph</div><div><br></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, March 18, 2025 at 7:02:50 AM, Andy Chang wrote:<br><br>Hi ecsupport team,<div>This is Andy from Camera testing team, Apple.</div>
+<div>Would you mind to check if there’s a solution for supporting etherCAT through MacOS on Mac mini?<br><div>
+<div dir="auto"><div dir="auto">
+<div dir="auto">
+<br>Kind regards,<br><br><br>Andy Chang<br>Apple<br>Camera<br>No.88, LongYuan 8th Rd Longtan District<br>Longtan, Taoyuan, 32542, Taiwan<br>Office +886-2-8729-8500<br>iPhone +886-972-092-173</div>
+<div dir="auto">Apple email address: pchang22@apple.com<br><br>
+</div>
+</div></div>
+</div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=58574
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.03.2025 14:44:11 +00:00
+UpdatedAt=18.03.2025 14:44:11 +00:00
+
+### ARTICLE02_SUBJECT
+Re: [Need Help] does ec-master support MacOS [Ticket#7010205]
+
+### ARTICLE02_BODY
+Hi Waters,<div>It’s good to hear that your team is working on this feature. Could you bridge me to the team that works on it?</div><div>I’d like to get more information about the progress from them. Thank you.<br><div>
+<div dir="auto"><div dir="auto">
+<div dir="auto">
+<br>Kind regards,<br><br><br>Andy Chang<br>Apple<br>Camera<br>No.88, LongYuan 8th Rd Longtan District<br>Longtan, Taoyuan, 32542, Taiwan<br>Office +886-2-8729-8500<br>iPhone +886-972-092-173</div>
+<div dir="auto">Apple email address: pchang22@apple.com<br><br>
+</div>
+</div></div>
+</div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Mar 18, 2025, at 4:36 PM, Christoph Widmann via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>Hi Andy,<div> </div>
+<div>thank you very much for your inquiry.</div>
+<div>We are currently working with a team in CA on this.</div>
+<div>This project is mainly handled by our US subsidiary. I put the general manager Mr. Jon Waters on cc. He can link you with the team in CA.</div>
+<div> </div>
+<div>Best Regards</div>
+<div> </div>
+<div>Christoph</div>
+<div> </div>
+<div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Tuesday, March 18, 2025 at 7:02:50 AM, Andy Chang wrote:<br><br>Hi ecsupport team,<div>This is Andy from Camera testing team, Apple.</div>
+<div>Would you mind to check if there’s a solution for supporting etherCAT through MacOS on Mac mini?<br><div dir="auto"><div dir="auto">
+<div dir="auto">
+<br>Kind regards,<br><br><br>Andy Chang<br>Apple<br>Camera<br>No.88, LongYuan 8th Rd Longtan District<br>Longtan, Taoyuan, 32542, Taiwan<br>Office +886-2-8729-8500<br>iPhone +886-972-092-173</div>
+<div dir="auto">Apple email address: pchang22@apple.com</div>
+</div></div>
+</div>
+</blockquote></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE03_HEADER
+Id=58591
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.03.2025 21:36:53 +00:00
+UpdatedAt=18.03.2025 21:36:53 +00:00
+
+### ARTICLE03_SUBJECT
+Re: [Need Help] does ec-master support MacOS [Ticket#7010205]
+
+### ARTICLE03_BODY
+Hello Andy,<div> </div><div>Nice to meet you. My primary contact at Apple in California is Nick Bergantz: <a href="mailto:nbergantz@apple.com">nbergantz@apple.com</a>. Please let me know after you check and discuss with him how we can assist further.<br><div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Mar 18, 2025, at 10:43 AM, Andy Chang &lt;pchang22@apple.com&gt; wrote:</div>
+<br><div>Hi Waters,<div>It’s good to hear that your team is working on this feature. Could you bridge me to the team that works on it?</div>
+<div>I’d like to get more information about the progress from them. Thank you.<br><div>
+<div dir="auto"><div dir="auto">
+<div dir="auto">
+<br>Kind regards,<br><br><br>Andy Chang<br>Apple<br>Camera<br>No.88, LongYuan 8th Rd Longtan District<br>Longtan, Taoyuan, 32542, Taiwan<br>Office +886-2-8729-8500<br>iPhone +886-972-092-173</div>
+<div dir="auto">Apple email address: pchang22@apple.com<br><br>
+</div>
+</div></div>
+</div>
+<div>
+<br><blockquote type="cite">
+<div>On Mar 18, 2025, at 4:36 PM, Christoph Widmann via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>Hi Andy,<div> </div>
+<div>thank you very much for your inquiry.</div>
+<div>We are currently working with a team in CA on this.</div>
+<div>This project is mainly handled by our US subsidiary. I put the general manager Mr. Jon Waters on cc. He can link you with the team in CA.</div>
+<div> </div>
+<div>Best Regards</div>
+<div> </div>
+<div>Christoph</div>
+<div> </div>
+<div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Tuesday, March 18, 2025 at 7:02:50 AM, Andy Chang wrote:<br><br>Hi ecsupport team,<div>This is Andy from Camera testing team, Apple.</div>
+<div>Would you mind to check if there’s a solution for supporting etherCAT through MacOS on Mac mini?<br><div dir="auto"><div dir="auto">
+<div dir="auto">
+<br>Kind regards,<br><br><br>Andy Chang<br>Apple<br>Camera<br>No.88, LongYuan 8th Rd Longtan District<br>Longtan, Taoyuan, 32542, Taiwan<br>Office +886-2-8729-8500<br>iPhone +886-972-092-173</div>
+<div dir="auto">Apple email address: pchang22@apple.com</div>
+</div></div>
+</div>
+</blockquote></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

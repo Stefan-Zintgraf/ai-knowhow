@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "support-rag": {
+      "command": "py",
+      "args": [
+        "-3.12",
+        "-m",
+        "support_rag.mcp_server"
+      ],
+      "env": {
+        "RAG_MCP_BASE_URL": "http://127.0.0.1:8080",
+        "RAG_SERVICE_TOKEN": "replace-with-service-token",
+        "RAG_ADMIN_TOKEN": "replace-with-admin-token"
+      }
+    }
+  }
+}

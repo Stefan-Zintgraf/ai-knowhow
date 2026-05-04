@@ -1,0 +1,164 @@
+### HEADER
+Id=1255
+Link=http://at-zammad/#ticket/zoom/1255
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bucher Automation (ID=124, Number=54505, Country=DE)
+Commission=Bucher Industries, JetControl (ID=139, Number=139)
+Number=701255
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=tfoell@jetter.de (ID=35, FirstName=Tobias, LastName=Föll)
+CreatedBy=tfoell@jetter.de (ID=35, FirstName=Tobias, LastName=Föll)
+Type=
+TimeUnit=
+CreatedAt=18.08.2021 07:35:41 +00:00
+UpdatedAt=20.08.2021 06:14:01 +00:00
+CloseAt=20.08.2021 06:14:01 +00:00
+ArticlesCount=2
+
+### TITLE
+Ecat Porrtierung RTOS-32 Masterstack von 2.9.x.x nach 3.1.x.x   ---> Problem EC_T_PFMEMREQ
+
+### ARTICLE00_HEADER
+Id=6800
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.08.2021 07:35:41 +00:00
+UpdatedAt=18.08.2021 07:35:43 +00:00
+
+### ARTICLE00_SUBJECT
+Ecat Porrtierung RTOS-32 Masterstack von 2.9.x.x nach 3.1.x.x   ---> Problem EC_T_PFMEMREQ
+
+### ARTICLE00_BODY
+<div> </div><div>
+<p>Hallo Support,</p>
+<p> </p>
+<p>wir verwenden in der Version 2.9 des EC Master Stack</p>
+<p> </p>
+<p>EC_T_MEMREQ_DESC stMemDescr;</p>
+<p>EC_T_MEMPROV_DESC stProvDescr;</p>
+<p> </p>
+<p>Ab dem gelben Teil bekommen wir nun mit der Version RTOS-32 3.1.1.01 Fehlermeldungen</p>
+<p> </p>
+<p>…</p>
+<p> </p>
+<p>//!Register PDO memory provider in master stack</p>
+<p>// setup the memory provider</p>
+<p>stProvDescr.pvContext = (EC_T_PVOID)pstContext;</p>
+<p>stProvDescr.pbyPDOutData = EC_NULL; // no fixed buffers</p>
+<p>stProvDescr.dwPDOutDataLength = stMemDescr.dwPDOutSize;</p>
+<p>stProvDescr.pbyPDInData = EC_NULL; // no fixed buffers</p>
+<p>stProvDescr.dwPDInDataLength = stMemDescr.dwPDInSize;</p>
+<p>stProvDescr.pfPDOutDataReadRequest = PDOutDataReadRequest; // callbacks for cyclic</p>
+<p>stProvDescr.pfPDOutDataReadRelease = PDOutDataReadRelease; // PDO data transmit</p>
+<p>stProvDescr.pfPDInDataWriteRequest = PDInDataWriteRequest; // callbacks for cyclic</p>
+<p>stProvDescr.pfPDInDataWriteRelease = PDInDataWriteRelease; // PDO data receive</p>
+<p>…</p>
+<p> </p>
+<p>Version RTOS-32 3.1.1.01 ?</p>
+<p> </p>
+<p><img style="max-width:100%;width:9.1875in;max-height:1.4479in;width:882px;max-height:139px;" src="/api/v1/ticket_attachment/1255/6800/24627?view=inline"></p>
+<p> </p>
+<p>EC_T_PFMEMREQ hat sich geändert.</p>
+<p> </p>
+<p>typedef EC_T_VOID (*EC_T_PFMEMREQ)(EC_T_PVOID pvContext, EC_T_DWORD dwTaskId, EC_T_PBYTE* ppbyPDData);</p>
+<p> </p>
+<p>Was bedeutet der neue Parameter dwTaskID ?</p>
+<p>Was muss hier übergeben werden ?</p>
+<p> </p>
+<p>Danke.</p>
+<p> </p>
+</div><br>
+<p>Mit freundlichen Grüßen / Kind regards</p><p>i.V. Tobias Föll</p><p>Head of System Engineering</p><p>Jetter AG<br> Gräterstraße 2 <br> DE-71642 Ludwigsburg <br> Tel: +49-7141-2550-0 <br> Fax: +49-7141-2550-425 <br> tfoell@jetter.de <br>
+<a href="http://www.jetter.de/" rel="nofollow noreferrer noopener" target="_blank">www.jetter.de</a><br> Datenschutzerklärung / Privacy Policy: <a href="https://www.jetter.de/kontakt/datenschutz.html" rel="nofollow noreferrer noopener" target="_blank"> www.jetter.de/kontakt/datenschutz.html</a></p><p>Ust.-Id.: DE 812 643 615<br> Amtsgericht Stuttgart HRB 205545 <br> Vorstandsvorsitzender: Christian Benz <br> Vorsitzender des Aufsichtsrates: Martin Jetter </p><p>VAT Reg.-No.: DE 812 643 615<br> Registered: Stuttgart HRB 205545 <br> CEO: Christian Benz <br> Chairman of the Supervisory Board: Martin Jetter</p>
+
+### ARTICLE01_HEADER
+Id=6804
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.08.2021 08:52:47 +00:00
+UpdatedAt=18.08.2021 08:52:50 +00:00
+
+### ARTICLE01_SUBJECT
+Ecat Porrtierung RTOS-32 Masterstack von 2.9.x.x nach 3.1.x.x   ---> Problem EC_T_PFMEMREQ
+
+### ARTICLE01_BODY
+Hallo Herr Föll,<div><br></div><div>mit dwTaskID wird die Information für welche Zyklische Task der Speicher vom Master angefordert wird zur Applikation weitergegeben. Das ist für Applikationen wichtig die verschiedene EtherCAT Tasks mit unterschiedlichen Zykluszeiten betreiben.</div><div><br></div><div>Sie müssen nur ihren jetzigen Callback um dwTaskId erweitern und können die Variable dann ignorieren.</div><div><br></div><div>Mit freundlichen Grüßen,<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Holger Oelhaf </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Mittwoch, 18. August 2021, 09:35:41, schrieb Tobias Föll:<br><br><div> </div>
+<div>
+<p>Hallo Support,</p>
+<p> </p>
+<p>wir verwenden in der Version 2.9 des EC Master Stack</p>
+<p> </p>
+<p>EC_T_MEMREQ_DESC stMemDescr;</p>
+<p>EC_T_MEMPROV_DESC stProvDescr;</p>
+<p> </p>
+<p>Ab dem gelben Teil bekommen wir nun mit der Version RTOS-32 3.1.1.01 Fehlermeldungen</p>
+<p> </p>
+<p>…</p>
+<p> </p>
+<p>//!Register PDO memory provider in master stack</p>
+<p>// setup the memory provider</p>
+<p>stProvDescr.pvContext = (EC_T_PVOID)pstContext;</p>
+<p>stProvDescr.pbyPDOutData = EC_NULL; // no fixed buffers</p>
+<p>stProvDescr.dwPDOutDataLength = stMemDescr.dwPDOutSize;</p>
+<p>stProvDescr.pbyPDInData = EC_NULL; // no fixed buffers</p>
+<p>stProvDescr.dwPDInDataLength = stMemDescr.dwPDInSize;</p>
+<p>stProvDescr.pfPDOutDataReadRequest = PDOutDataReadRequest; // callbacks for cyclic</p>
+<p>stProvDescr.pfPDOutDataReadRelease = PDOutDataReadRelease; // PDO data transmit</p>
+<p>stProvDescr.pfPDInDataWriteRequest = PDInDataWriteRequest; // callbacks for cyclic</p>
+<p>stProvDescr.pfPDInDataWriteRelease = PDInDataWriteRelease; // PDO data receive</p>
+<p>…</p>
+<p> </p>
+<p>Version RTOS-32 3.1.1.01 ?</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:9.1875in;max-height:1.4479in;width:882px;max-height:139px;" src="/api/v1/ticket_attachment/1255/6804/24632?view=inline"></p>
+<p> </p>
+<p>EC_T_PFMEMREQ hat sich geändert.</p>
+<p> </p>
+<p>typedef EC_T_VOID (*EC_T_PFMEMREQ)(EC_T_PVOID pvContext, EC_T_DWORD dwTaskId, EC_T_PBYTE* ppbyPDData);</p>
+<p> </p>
+<p>Was bedeutet der neue Parameter dwTaskID ?</p>
+<p>Was muss hier übergeben werden ?</p>
+<p> </p>
+<p>Danke.</p>
+<p> </p>
+</div>
+<br>
+<p>Mit freundlichen Grüßen / Kind regards</p>
+<p>i.V. Tobias Föll</p>
+<p>Head of System Engineering</p>
+<p>Jetter AG<br> Gräterstraße 2 <br> DE-71642 Ludwigsburg <br> Tel: +49-7141-2550-0 <br> Fax: +49-7141-2550-425 <br> tfoell@jetter.de <br>
+<a href="http://www.jetter.de/" rel="nofollow noreferrer noopener" target="_blank">www.jetter.de</a><br> Datenschutzerklärung / Privacy Policy: <a href="https://www.jetter.de/kontakt/datenschutz.html" rel="nofollow noreferrer noopener" target="_blank"> www.jetter.de/kontakt/datenschutz.html</a></p>
+<p>Ust.-Id.: DE 812 643 615<br> Amtsgericht Stuttgart HRB 205545 <br> Vorstandsvorsitzender: Christian Benz <br> Vorsitzender des Aufsichtsrates: Martin Jetter </p>
+<p>VAT Reg.-No.: DE 812 643 615<br> Registered: Stuttgart HRB 205545 <br> CEO: Christian Benz <br> Chairman of the Supervisory Board: Martin Jetter</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

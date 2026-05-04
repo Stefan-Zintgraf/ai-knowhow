@@ -1,0 +1,159 @@
+### HEADER
+Id=3055
+Link=http://at-zammad/#ticket/zoom/3055
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bosch Rexroth AG (ID=88, Number=50510, Country=DE)
+Commission=Bosch Rexroth, ctrlX CORE (ID=96, Number=96)
+Number=703055
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=stefan.loehlein@boschrexroth.de (ID=431, FirstName=Stefan, LastName=Loehlein)
+CreatedBy=stefan.loehlein@boschrexroth.de (ID=431, FirstName=Stefan, LastName=Loehlein)
+Type=
+TimeUnit=
+CreatedAt=18.05.2022 20:42:35 +00:00
+UpdatedAt=27.05.2022 06:04:52 +00:00
+CloseAt=27.05.2022 06:04:52 +00:00
+ArticlesCount=2
+
+### TITLE
+Fragen zu Funktion emGetMasterStateEx
+
+### ARTICLE00_HEADER
+Id=16062
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.05.2022 20:42:35 +00:00
+UpdatedAt=18.05.2022 20:42:40 +00:00
+
+### ARTICLE00_SUBJECT
+Fragen zu Funktion emGetMasterStateEx
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo,</p>
+<p> </p>
+<p>Im Rahmen der Integration der Stackversion 3.1.3.03 habe wir uns die neue Funktion emGetMasterStateEx angeschaut und haben zu dieser einige Fragen.</p>
+<p> </p>
+<p><img style="max-width:100%;width:6.6458in;max-height:3.6875in;width:638px;max-height:354px;" src="/api/v1/ticket_attachment/3055/16062/63311?view=inline"></p>
+<p> </p>
+<p>In der Dokumentation ist nicht beschrieben welche Werte die Parameter pwCurrState und pwReqState annehmen können.</p>
+<p>Können Sie das bitte in der Dokumentation noch ergänzen.</p>
+<p> </p>
+<p>Vermutlich sind es folgende Defines, die eigentlich für den Slave definiert sind. Wenn es diese defines sind, kann der Master alle define Werte annehmen, auch DEVICE_STATE_BOOTSTRAP, auch Bitkombinationen?</p>
+<p><img style="max-width:100%;width:20.7222in;max-height:4.3263in;width:1989px;max-height:415px;" src="/api/v1/ticket_attachment/3055/16062/63312?view=inline"></p>
+<p> </p>
+<p>Wenn Wir mit der Funktion</p>
+<p><b><span lang="EN-US">emSetMasterState</span></b><span lang="EN-US">(</span><span lang="EN-US">dwInstanceID = 0, dwTimeout = </span><span lang="EN-US">EC_NOWAIT, eReqState = eEcatState_OP)</span></p>
+<p><span lang="EN-US">aufrufen und danach</span></p>
+<p><b>emGetMasterStateEx</b>()</p>
+<p>würden wir erwarten, daß der zurückgelieferte Parameter <b>pwReqState</b><span> den Wert DEVICE<b>_</b>STATE_OP hat.</span></p>
+<p>Dies ist nicht der Fall.</p>
+<p> </p>
+<p>Wir müssen nach dem Aufruf von <b>emSetMasterState </b>einige Zeit warten und dann<b>
+</b><b>emGetMasterStateEx</b> aufrufen, um im zurückgelieferte Parameter <b>pwReqState</b><span> den Wert DEVICE<b>_</b>STATE_OP zu erhalten.</span></p>
+<p> </p>
+<p>Wie ist das zu erklären?</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Stefan Loehlein</b></span> <span>
+<br> Enigineering Software Firmware DC-AE/ESW2<br>
+<br> Tel. +49 9352 18-4227<br> Fax +49 9352 18-4024<br>
+<a href="mailto:Stefan.Loehlein@boschrexroth.de"><span style="color:blue;">Stefan.Loehlein@boschrexroth.de</span></a><br>
+<a href="http://www.boschrexroth.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.boschrexroth.com</span></a><br>
+<br> Bosch Rexroth AG<br> Bgm.-Dr.-Nebel-Str. </span><span lang="EN-US">2<br> 97816 Lohr am Main<br> GERMANY</span><span lang="EN-US"><br>
+<br>
+</span><a href="http://www.boschrexroth.com/" rel="nofollow noreferrer noopener" title="http://www.boschrexroth.com/" target="_blank"><span style="color:blue;"></span></a><span lang="EN-US"><br>
+<br>
+</span><span lang="EN-US"><br>
+<br> Registered Office: Stuttgart, Registration Court: Amtsgericht Stuttgart HRB 23192<br> Executive Board: Rolf Najork (President), Dr. Steffen Haack, Holger von Hebel, Reinhard Schäfer, Dr. Marc Wucherer, Thomas Donato<br> Chairman of the Supervisory Board: Filiz Albrecht</span><span lang="EN-US"><br> ​</span><span lang="EN-US"></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=16209
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.05.2022 08:16:54 +00:00
+UpdatedAt=23.05.2022 08:16:57 +00:00
+
+### ARTICLE01_SUBJECT
+Fragen zu Funktion emGetMasterStateEx
+
+### ARTICLE01_BODY
+Hallo Herr Loehlein,<div><span><br></span></div><div><span><b>Können Sie das bitte in der Dokumentation noch ergänzen.</b></span></div><div>Hab ich hinzugefügt. Danke für den Hinweis.</div><div><img style="max-width:100%;width: 912px;max-width: 100%;" src="/api/v1/ticket_attachment/3055/16209/64228?view=inline"></div><div><span><br></span></div><div><span><b>Kann der Master alle define Werte annehmen, auch DEVICE_STATE_BOOTSTRAP, auch Bitkombinationen?</b></span></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>Nein, nur die oben angegeben. Bitkombinationen werden gefiltert.</div>
+<div><span><br></span></div>
+<div><b><span>der zurückgelieferte Parameter </span><span>pwReqState</span><span> </span><span>den Wert DEVICE</span><span>_</span><span>STATE_OP hat. </span><span>Dies ist nicht der Fall.</span></b></div>
+<div>Der Aufruf von emSetMasterState(dwTimeout=EC_NOWAIT) wird in einer internen Warteschlange hinzugefügt und kehrt sofort zurück. Die Warteschlange wird beim nächsten Aufruf von emExecJob(<span style=" color: rgba(0, 0, 0, 0.87);">eUsrJob_</span><span style=" color: rgba(0, 0, 0, 0.87);">MasterTimer) bearbeitet.</span>
+</div>
+<div><span style=" color: rgba(0, 0, 0, 0.87);">D.h. es kann bis zu einem Zyklus dauern bis der Wert aktualisiert wird.</span></div>
+<div><span style=" color: rgba(0, 0, 0, 0.87);"><br></span></div>
+<div><span style=" color: rgba(0, 0, 0, 0.87);">Mit freundlichen Grüßen,</span></div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Holger Oelhaf</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Mittwoch, 18. Mai 2022, 22:42:35, schrieb Stefan Loehlein:<br><br><div>
+<p>Hallo,</p>
+<p> </p>
+<p>Im Rahmen der Integration der Stackversion 3.1.3.03 habe wir uns die neue Funktion emGetMasterStateEx angeschaut und haben zu dieser einige Fragen.</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:6.6458in;max-height:3.6875in;width:638px;max-height:354px;" src="/api/v1/ticket_attachment/3055/16209/64229?view=inline"></p>
+<p> </p>
+<p>In der Dokumentation ist nicht beschrieben welche Werte die Parameter pwCurrState und pwReqState annehmen können.</p>
+<p>Können Sie das bitte in der Dokumentation noch ergänzen.</p>
+<p> </p>
+<p>Vermutlich sind es folgende Defines, die eigentlich für den Slave definiert sind. Wenn es diese defines sind, kann der Master alle define Werte annehmen, auch DEVICE_STATE_BOOTSTRAP, auch Bitkombinationen?</p>
+<p><img style="max-width:100%;max-width:100%;width:20.7222in;max-height:4.3263in;width:1989px;max-height:415px;" src="/api/v1/ticket_attachment/3055/16209/64230?view=inline"></p>
+<p> </p>
+<p>Wenn Wir mit der Funktion</p>
+<p><b><span lang="EN-US">emSetMasterState</span></b><span lang="EN-US">(</span><span lang="EN-US">dwInstanceID = 0, dwTimeout = </span><span lang="EN-US">EC_NOWAIT, eReqState = eEcatState_OP)</span></p>
+<p><span lang="EN-US">aufrufen und danach</span></p>
+<p><b>emGetMasterStateEx</b>()</p>
+<p>würden wir erwarten, daß der zurückgelieferte Parameter <b>pwReqState</b><span> den Wert DEVICE<b>_</b>STATE_OP hat.</span></p>
+<p>Dies ist nicht der Fall.</p>
+<p> </p>
+<p>Wir müssen nach dem Aufruf von <b>emSetMasterState </b>einige Zeit warten und dann<b>
+</b><b>emGetMasterStateEx</b> aufrufen, um im zurückgelieferte Parameter <b>pwReqState</b><span> den Wert DEVICE<b>_</b>STATE_OP zu erhalten.</span></p>
+<p> </p>
+<p>Wie ist das zu erklären?</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Stefan Loehlein</b></span> <span>
+<br> Enigineering Software Firmware DC-AE/ESW2<br>
+<br> Tel. +49 9352 18-4227<br> Fax +49 9352 18-4024<br>
+<a href="mailto:Stefan.Loehlein@boschrexroth.de"><span style="color:blue;">Stefan.Loehlein@boschrexroth.de</span></a><br>
+<a href="http://www.boschrexroth.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.boschrexroth.com</span></a><br>
+<br> Bosch Rexroth AG<br> Bgm.-Dr.-Nebel-Str. </span><span lang="EN-US">2<br> 97816 Lohr am Main<br> GERMANY</span><span lang="EN-US"><br>
+<br>
+</span><a href="http://www.boschrexroth.com/" rel="nofollow noreferrer noopener" title="http://www.boschrexroth.com/" target="_blank"><span style="color:blue;"></span></a><span lang="EN-US"><br>
+<br>
+</span><span lang="EN-US"><br>
+<br> Registered Office: Stuttgart, Registration Court: Amtsgericht Stuttgart HRB 23192<br> Executive Board: Rolf Najork (President), Dr. Steffen Haack, Holger von Hebel, Reinhard Schäfer, Dr. Marc Wucherer, Thomas Donato<br> Chairman of the Supervisory Board: Filiz Albrecht</span><span lang="EN-US"><br> ​</span><span lang="EN-US"></span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

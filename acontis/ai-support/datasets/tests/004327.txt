@@ -1,0 +1,72 @@
+### HEADER
+Id=4327
+Link=http://at-zammad/#ticket/zoom/4327
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Philips Innovation Services (ID=309, Number=40181, Country=NL)
+Commission=Philips Innovation Services, Automated Testtool (ID=364, Number=364)
+Number=704327
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=theon.vliegenthart@philips.com (ID=71, FirstName=Theon, LastName=Vliegenthart)
+CreatedBy=theon.vliegenthart@philips.com (ID=71, FirstName=Theon, LastName=Vliegenthart)
+Type=
+TimeUnit=
+CreatedAt=15.11.2022 11:57:40 +00:00
+UpdatedAt=24.10.2025 08:22:00 +00:00
+CloseAt=28.11.2022 15:14:39 +00:00
+ArticlesCount=1
+
+### TITLE
+FW: New image with new bootline/telnet server
+
+### ARTICLE00_HEADER
+Id=22760
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.11.2022 11:57:40 +00:00
+UpdatedAt=15.11.2022 11:57:44 +00:00
+
+### ARTICLE00_SUBJECT
+FW: New image with new bootline/telnet server
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Daniel</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Here I send you the new image:</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<ul type="disc">
+<li><span lang="EN-US">Telnet server enabled</span></li>
+<ul type="circle">
+<li><span lang="EN-US">telnet port 23 (default)</span></li>
+</ul>
+<li><span lang="EN-US">boot line:</span></li>
+<ul type="circle">
+<li><span lang="DE">"gei(1,0)host:/vxWorks h=192.168.157.1 e=192.168.157.2 u=Arches2 pw=Arches2 o=gei"</span></li>
+</ul>
+</ul>
+<p><span lang="DE"><p> </p></span></p>
+<p>I have also build, but now the FTP connection fails with the shell command “ls”</p>
+<p> </p>
+<p>Dear user,</p>
+<p>The sender of this e-mail has created a file directory for you.</p>
+<p>Please use one of the following links to access the directory:</p>
+<ul type="disc">
+<li>
+<b>HTTPS/WEBDAV</b><br>
+<a href="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffileshare.ehv.campus.philips.com%2Fprivate%2F20221122-R1F34DDB46A8249F4B33BB0489CFA806C&amp;data=05%7C01%7C%7Cf4361b70af474ad9dbd508dac70062b6%7C1a407a2d76754d178692b3ac285306e4%7C0%7C0%7C638041101707887964%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=v1ioox7xLfivr0A0UhQblx2H%2FITw21NO08XgFi6biG0%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffileshare.ehv.campus.philips.com%2Fprivate%2F20221122-R1F34DDB46A8249F4B33BB0489CFA806C&amp;data=05%7C01%7C%7Cf4361b70af474ad9dbd508dac70062b6%7C1a407a2d76754d178692b3ac285306e4%7C0%7C0%7C638041101707887964%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=v1ioox7xLfivr0A0UhQblx2H%2FITw21NO08XgFi6biG0%3D&amp;reserved=0" target="_blank">https://fileshare.ehv.campus.philips.com/private/20221122-R1F34DDB46A8249F4B33BB0489CFA806C</a><br> Note: This link can be used in a web browser or in Windows File Explorer.</li>
+<li>
+<b>Secure FTP link (recommended for advanced users)</b><br> Opening this link requires a secure FTP client, such as <a href="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffilezilla-project.org%2Fdownload.php%3Fshow_all%3D1&amp;data=05%7C01%7C%7Cf4361b70af474ad9dbd508dac70062b6%7C1a407a2d76754d178692b3ac285306e4%7C0%7C0%7C638041101707887964%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=wZC%2B5D187t5vMna99gZUvBpgr4JSD6uSgLpZV1MrDCE%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffilezilla-project.org%2Fdownload.php%3Fshow_all%3D1&amp;data=05%7C01%7C%7Cf4361b70af474ad9dbd508dac70062b6%7C1a407a2d76754d178692b3ac285306e4%7C0%7C0%7C638041101707887964%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=wZC%2B5D187t5vMna99gZUvBpgr4JSD6uSgLpZV1MrDCE%3D&amp;reserved=0" target="_blank"> FileZilla</a> or <a href="https://eur01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwinscp.net%2F&amp;data=05%7C01%7C%7Cf4361b70af474ad9dbd508dac70062b6%7C1a407a2d76754d178692b3ac285306e4%7C0%7C0%7C638041101707887964%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=4yiwVE6UqJ6O9JsD9zgTGG6MtoMVAgTBt7GJlPPIJDA%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://eur01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwinscp.net%2F&amp;data=05%7C01%7C%7Cf4361b70af474ad9dbd508dac70062b6%7C1a407a2d76754d178692b3ac285306e4%7C0%7C0%7C638041101707887964%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=4yiwVE6UqJ6O9JsD9zgTGG6MtoMVAgTBt7GJlPPIJDA%3D&amp;reserved=0" target="_blank"> WinSCP</a>.<br>
+<a href="sftp://anonymous@fileshare.ehv.campus.philips.com/private/20221122-R1F34DDB46A8249F4B33BB0489CFA806C/">sftp://anonymous@fileshare.ehv.campus.philips.com/private/20221122-R1F34DDB46A8249F4B33BB0489CFA806C/</a><br> Note: no limitations, but possible FileZilla or WinSCP configuration required.</li>
+</ul>
+<p><b><span style="color:red;">IMPORTANT! </span></b>This directory will automatically be removed after Tuesday, November 22, 2022</p>
+<p>The File Droplet Service is hosted by Philips.</p>
+<p><b>DISCLAIMER:</b> The information contained in this message is confidential and may be legally privileged. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, dissemination, or reproduction is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.</p>
+<p> </p>
+<div>
+<hr>
+</div>
+<p><span style="color:gray;">The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.</span></p>
+</div>

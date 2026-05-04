@@ -1,0 +1,111 @@
+### HEADER
+Id=5776
+Link=http://at-zammad/#ticket/zoom/5776
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=705776
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=16.06.2023 19:18:40 +00:00
+UpdatedAt=30.06.2023 06:54:16 +00:00
+CloseAt=30.06.2023 06:54:16 +00:00
+ArticlesCount=3
+
+### TITLE
+Customer Suggestions for EC-Engineer
+
+### ARTICLE00_HEADER
+Id=30831
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.06.2023 19:18:40 +00:00
+UpdatedAt=16.06.2023 19:18:40 +00:00
+
+### ARTICLE00_SUBJECT
+Customer Suggestions for EC-Engineer
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>We received a customer suggestion for EC-Engineer that I wanted to pass along and see if this was a useful feature to have in your opinion.</div><div> </div><div>1. The first was for the an additional data point when in Diagnosis mode to show the master offset from the system time (so how well the master is in sync when using DC). The customer indicates that it would be helpful to diagnosis issues with DC during startup and in steady state to see this value quickly in EC-Engineer, perhaps even with a chart showing the value plotted over time.</div><div> </div><div>2. The second suggestion was for a button in EC-Engineer to download the log files including the DCM log file. This way they could save time in going to the controller and getting the log file from there to bring to a Windows PC for analysis. They could leave the master running on the controller and pull the log file off over the network and then analyze them in their Windows PC where EC-Engineer is running.<br><div>
+<br>/Jon </div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=30848
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.06.2023 09:12:38 +00:00
+UpdatedAt=19.06.2023 09:12:40 +00:00
+
+### ARTICLE01_SUBJECT
+Customer Suggestions for EC-Engineer
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>I discussed these topics with Kai.</div><div><br></div><div>1. Does the customer want in fact to see the DCM min/actual/max values? I think this should be OK We will need to support <span>DcmGetStatus over RAS. This is not supported currently.</span>
+</div><div><span><br></span></div><div>2. Today, it is not possible to download the dcm log through EC-Engineer over RAS: The EC-Master API just provides 1 dcm log line per cycle. It generates a big amount of data and it is always an issue how and where to store them. Especially on embedded systems without file system for example... I would try to block this request.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><br></div>
+<div><blockquote type="cite">On Friday, June 16, 2023 at 9:18:40 PM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>We received a customer suggestion for EC-Engineer that I wanted to pass along and see if this was a useful feature to have in your opinion.</div>
+<div> </div>
+<div>1. The first was for the an additional data point when in Diagnosis mode to show the master offset from the system time (so how well the master is in sync when using DC). The customer indicates that it would be helpful to diagnosis issues with DC during startup and in steady state to see this value quickly in EC-Engineer, perhaps even with a chart showing the value plotted over time.</div>
+<div> </div>
+<div>2. The second suggestion was for a button in EC-Engineer to download the log files including the DCM log file. This way they could save time in going to the controller and getting the log file from there to bring to a Windows PC for analysis. They could leave the master running on the controller and pull the log file off over the network and then analyze them in their Windows PC where EC-Engineer is running.<br><div>
+<br>/Jon </div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=30908
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.06.2023 06:32:24 +00:00
+UpdatedAt=21.06.2023 06:32:24 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Customer Suggestions for EC-Engineer [Ticket#705776]
+
+### ARTICLE02_BODY
+Hi Cyril,<div> </div><div>1) Mostly the customer wants to see the DCM actual values over time. So maybe there is a call to DcmGetStatus over RAS at some interval (certainly not every cycle) to display the current DCM sync value and then plot it on some graph like we do for variables.</div><div> </div><div>2) OK thanks<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Jun 19, 2023, at 5:12 AM, Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>Hi Jon,<div> </div>
+<div>I discussed these topics with Kai.</div>
+<div> </div>
+<div>1. Does the customer want in fact to see the DCM min/actual/max values? I think this should be OK We will need to support DcmGetStatus over RAS. This is not supported currently.</div>
+<div> </div>
+<div>2. Today, it is not possible to download the dcm log through EC-Engineer over RAS: The EC-Master API just provides 1 dcm log line per cycle. It generates a big amount of data and it is always an issue how and where to store them. Especially on embedded systems without file system for example... I would try to block this request.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Cyril<br><div data-signature="true" data-signature-id="2"><br></div>
+<div> </div>
+<div><blockquote type="cite">On Friday, June 16, 2023 at 9:18:40 PM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>We received a customer suggestion for EC-Engineer that I wanted to pass along and see if this was a useful feature to have in your opinion.</div>
+<div> </div>
+<div>1. The first was for the an additional data point when in Diagnosis mode to show the master offset from the system time (so how well the master is in sync when using DC). The customer indicates that it would be helpful to diagnosis issues with DC during startup and in steady state to see this value quickly in EC-Engineer, perhaps even with a chart showing the value plotted over time.</div>
+<div> </div>
+<div>2. The second suggestion was for a button in EC-Engineer to download the log files including the DCM log file. This way they could save time in going to the controller and getting the log file from there to bring to a Windows PC for analysis. They could leave the master running on the controller and pull the log file off over the network and then analyze them in their Windows PC where EC-Engineer is running.<br><div>
+<br>/Jon </div>
+</div>
+</blockquote></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

@@ -1,0 +1,193 @@
+### HEADER
+Id=480
+Link=http://at-zammad/#ticket/zoom/480
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Kristl, Seibt & Co Ges.m.b.H. (ID=7, Number=40106, Country=AT)
+Commission=KS ENGINEERS, Tornado (ID=7, Number=7)
+Number=700480
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=matthias.pfragner@ksengineers.at (ID=280, FirstName=Matthias, LastName=Pfragner)
+CreatedBy=matthias.pfragner@ksengineers.at (ID=280, FirstName=Matthias, LastName=Pfragner)
+Type=
+TimeUnit=
+CreatedAt=23.04.2021 09:13:29 +00:00
+UpdatedAt=27.04.2022 06:08:24 +00:00
+CloseAt=28.05.2021 06:10:34 +00:00
+ArticlesCount=3
+
+### TITLE
+Absturz in LinkOsLayer
+
+### ARTICLE00_HEADER
+Id=2560
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.04.2021 09:13:29 +00:00
+UpdatedAt=23.04.2021 09:13:32 +00:00
+
+### ARTICLE00_SUBJECT
+Absturz in LinkOsLayer
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Herr Eyssautier!</p>
+<p> </p>
+<p>Wir hatten eben einen Absturz gemeldet bekommen. Nach Recherche haben wir gefunden, dass die Ursache ein fehlender Heap-Lock beim Freigeben von Speicher den Absturz verursachte. Genau ist dies in LinkOsLayer.cpp Zeilen 746 und 763 (Release 3.1.1.01) passiert:</p>
+<p> </p>
+<p>/* check for errors */</p>
+<p>if (EC_NULL == pbyVirtual)</p>
+<p>{</p>
+<p>EcLogMsg(EC_LOG_LEVEL_ERROR, (pEcLogContext, EC_LOG_LEVEL_ERROR, "Error: LinkOsMapMemory(pbyPhysical = 0x%x, dwLen = 0x%x).RTReserveVirtualAddress(dwLen =0x%x) failed nRes = 0x%x. pbyPhysical = 0x%x\n", EC_LODWORD(qwPhysAddrAligned), dwLen, dwLen, nRes, EC_LODWORD(qwPhysAddrAligned) ));</p>
+<p>goto Exit;</p>
+<p>}</p>
+<p> if (nRes &lt; <i>RT_MAP_SUCCESS</i>)</p>
+<p>{</p>
+<p>EcLogMsg(EC_LOG_LEVEL_ERROR, (pEcLogContext, EC_LOG_LEVEL_ERROR, "Error: LinkOsMapMemory(pbyPhysicalAligned = 0x%x, dwLen = 0x%x).RTMapMem(pbyPhysicalAligned = 0x%x, dwLen = %d) failed. nRes = 0x%x\n", EC_LODWORD(qwPhysAddrAligned), dwLen, EC_LODWORD(qwPhysAddrAligned), dwLen, nRes));</p>
+<p> <i>RTReleaseVirtualAddress</i>(pbyVirtual, dwLen);</p>
+<p>pbyVirtual = EC_NULL;</p>
+<p>goto Exit;</p>
+<p>}</p>
+<p>/* no errors */</p>
+<p>pbyVirtual = pbyVirtual + dwOffset;</p>
+<p> </p>
+<p>Exit:</p>
+<p>return pbyVirtual;</p>
+<p>}</p>
+<p> </p>
+<p>EC_T_VOID LinkOsUnmapMemory(EC_T_VOID* pvLinkOsContext, EC_T_BYTE* pbyVirtual, EC_T_DWORD dwLen)</p>
+<p>{</p>
+<p>EC_UNREFPARM(pvLinkOsContext);</p>
+<p> </p>
+<p>if (EC_NULL != pbyVirtual)</p>
+<p>{</p>
+<p> <i>RTReleaseVirtualAddress</i>((EcPtrAlignDown(pbyVirtual, 0x1000)), EcSizeAlignUp(dwLen, 0x1000));</p>
+<p>}</p>
+<p>}</p>
+<p> </p>
+<p>Bitte um Kontrolle und Korrektur!</p>
+<p> </p>
+<p><b>Mit freundlichen Grüßen,</b></p>
+<p><b>DI Matthias Pfragner</b></p>
+<span class="js-signatureMarker"></span><p>---------------------------------------------------------------------------------</p>
+<p><b>Kristl, Seibt &amp; Co Ges.m.b.H. </b>Tel.: (+43 316) 5995 - 1481</p>
+<p>Baiernstraße 122a Fax.: (+43 316) 5995 - 3030</p>
+<p>A-8052 Graz</p>
+<p><u>matthias.pfragner@ksengineers.at</u></p>
+<p><u><a href="http://www.ksengineers.at/" title="http://www.ksengineers.at/" rel="nofollow noreferrer noopener" target="_blank">http://www.ksengineers.at</a></u></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=2671
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.04.2021 15:50:44 +00:00
+UpdatedAt=26.04.2021 15:50:47 +00:00
+
+### ARTICLE01_SUBJECT
+Absturz in LinkOsLayer
+
+### ARTICLE01_BODY
+<div>Hallo Herr Pfragner,</div><div><br></div><div>OK sorry. Ich habe sie eingefügt. Sie werden in V3.1.1.06 drin sein. Die Version ist für Ende nächster Woche geplant. </div><div><br></div><div>Schöne Grüße,</div><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+
+### ARTICLE02_HEADER
+Id=3108
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.05.2021 13:13:09 +00:00
+UpdatedAt=10.05.2021 13:13:11 +00:00
+
+### ARTICLE02_SUBJECT
+Absturz in LinkOsLayer
+
+### ARTICLE02_BODY
+<div>Hallo Herr Pfragner,</div><div><br></div><div>hier die neuste Version mit dem Heap-Lock Fix:</div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/2021/J-L/KRISTL,_SEIBT_&amp;_CO_GmbH_(40106)(AT)/EC-Master/3.1.1.06/EC-Master-ClassA-AddOn-V3.1.1.06-RTOS-32-x86_32Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/J-L/KRISTL,_SEIBT_&amp;_CO_GmbH_(40106)(AT)/EC-Master/3.1.1.06/EC-Master-ClassA-AddOn-V3.1.1.06-RTOS-32-x86_32Bit-SDK_Source.zip</a></div>
+<div><a href="https://downloads.acontis.com/2021/J-L/KRISTL,_SEIBT_&amp;_CO_GmbH_(40106)(AT)/EC-Master/3.1.1.06/EC-Master-I8254x-V3.1.1.06-RTOS-32-x86_32Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/J-L/KRISTL,_SEIBT_&amp;_CO_GmbH_(40106)(AT)/EC-Master/3.1.1.06/EC-Master-I8254x-V3.1.1.06-RTOS-32-x86_32Bit-SDK_Source.zip</a></div>
+<div><a href="https://downloads.acontis.com/2021/J-L/KRISTL,_SEIBT_&amp;_CO_GmbH_(40106)(AT)/EC-Master/3.1.1.06/EC-Master-V3.1.1.06-RTOS-32-x86_32Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/J-L/KRISTL,_SEIBT_&amp;_CO_GmbH_(40106)(AT)/EC-Master/3.1.1.06/EC-Master-V3.1.1.06-RTOS-32-x86_32Bit-SDK_Source.zip</a></div>
+</div><div><br></div><div><div><a href="https://downloads.acontis.com/2021/J-L/KRISTL,_SEIBT_&amp;_CO_GmbH_(40106)(AT)/EC-Master_64_Bit/3.1.1.06/EC-Master-RTL8169-V3.1.1.06-Windows-x86_64Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/J-L/KRISTL,_SEIBT_&amp;_CO_GmbH_(40106)(AT)/EC-Master_64_Bit/3.1.1.06/EC-Master-RTL8169-V3.1.1.06-Windows-x86_64Bit-SDK_Source.zip</a></div></div><div><br></div>Schöne Grüße,<div>Cyril Eyssautier<div><br></div>
+<div><blockquote type="cite">On Friday, April 23, 2021, 11:13:29 AM, Pfragner Matthias wrote:<br><br><div>
+<p>Hallo Herr Eyssautier!</p>
+<p> </p>
+<p>Wir hatten eben einen Absturz gemeldet bekommen. Nach Recherche haben wir gefunden, dass die Ursache ein fehlender Heap-Lock beim Freigeben von Speicher den Absturz verursachte. Genau ist dies in LinkOsLayer.cpp Zeilen 746 und 763 (Release 3.1.1.01) passiert:</p>
+<p> </p>
+<p>/* check for errors */</p>
+<p>if (EC_NULL == pbyVirtual)</p>
+<p>{</p>
+<p>EcLogMsg(EC_LOG_LEVEL_ERROR, (pEcLogContext, EC_LOG_LEVEL_ERROR, "Error: LinkOsMapMemory(pbyPhysical = 0x%x, dwLen = 0x%x).RTReserveVirtualAddress(dwLen =0x%x) failed nRes = 0x%x. pbyPhysical = 0x%x\n", EC_LODWORD(qwPhysAddrAligned), dwLen, dwLen, nRes, EC_LODWORD(qwPhysAddrAligned) ));</p>
+<p>goto Exit;</p>
+<p>}</p>
+<p> if (nRes &lt; <i>RT_MAP_SUCCESS</i>)</p>
+<p>{</p>
+<p>EcLogMsg(EC_LOG_LEVEL_ERROR, (pEcLogContext, EC_LOG_LEVEL_ERROR, "Error: LinkOsMapMemory(pbyPhysicalAligned = 0x%x, dwLen = 0x%x).RTMapMem(pbyPhysicalAligned = 0x%x, dwLen = %d) failed. nRes = 0x%x\n", EC_LODWORD(qwPhysAddrAligned), dwLen, EC_LODWORD(qwPhysAddrAligned), dwLen, nRes));</p>
+<p> <i>RTReleaseVirtualAddress</i>(pbyVirtual, dwLen);</p>
+<p>pbyVirtual = EC_NULL;</p>
+<p>goto Exit;</p>
+<p>}</p>
+<p>/* no errors */</p>
+<p>pbyVirtual = pbyVirtual + dwOffset;</p>
+<p> </p>
+<p>Exit:</p>
+<p>return pbyVirtual;</p>
+<p>}</p>
+<p> </p>
+<p>EC_T_VOID LinkOsUnmapMemory(EC_T_VOID* pvLinkOsContext, EC_T_BYTE* pbyVirtual, EC_T_DWORD dwLen)</p>
+<p>{</p>
+<p>EC_UNREFPARM(pvLinkOsContext);</p>
+<p> </p>
+<p>if (EC_NULL != pbyVirtual)</p>
+<p>{</p>
+<p> <i>RTReleaseVirtualAddress</i>((EcPtrAlignDown(pbyVirtual, 0x1000)), EcSizeAlignUp(dwLen, 0x1000));</p>
+<p>}</p>
+<p>}</p>
+<p> </p>
+<p>Bitte um Kontrolle und Korrektur!</p>
+<p> </p>
+<p><b>Mit freundlichen Grüßen,</b></p>
+<p><b>DI Matthias Pfragner</b></p>
+<span class="js-signatureMarker"></span><p>---------------------------------------------------------------------------------</p>
+<p><b>Kristl, Seibt &amp; Co Ges.m.b.H. </b>Tel.: (+43 316) 5995 - 1481</p>
+<p>Baiernstraße 122a Fax.: (+43 316) 5995 - 3030</p>
+<p>A-8052 Graz</p>
+<p><u>matthias.pfragner@ksengineers.at</u></p>
+<p><u><a href="http://www.ksengineers.at/" title="http://www.ksengineers.at/" rel="nofollow noreferrer noopener" target="_blank">http://www.ksengineers.at</a></u></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

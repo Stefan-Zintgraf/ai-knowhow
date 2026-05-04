@@ -1,0 +1,181 @@
+### HEADER
+Id=10008
+Link=http://at-zammad/#ticket/zoom/10008
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Inovance, PAC Controller (ID=483, Number=483)
+Number=7010008
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=21.02.2025 07:25:25 +00:00
+UpdatedAt=24.02.2025 07:03:49 +00:00
+CloseAt=24.02.2025 07:03:49 +00:00
+ArticlesCount=3
+
+### TITLE
+The customer Inovance's question about "at-LicenseManager"
+
+### ARTICLE00_HEADER
+Id=57205
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.02.2025 07:25:25 +00:00
+UpdatedAt=21.02.2025 07:25:27 +00:00
+
+### ARTICLE00_SUBJECT
+The customer Inovance's question about "at-LicenseManager"
+
+### ARTICLE00_BODY
+<div>Dear,</div><div> </div><div>The customer tell us that their license-manager server which based on "at-licenseManager" is unable to "move" the last one license in the dongle.</div><div>Can you help confirm if this is caused by their software server or the "at-licenseManager"?</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+<div>
+<p>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</p>
+<p>北京市海淀区上地三街9号C座C309</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div>+886-2-25222206（台北）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=57249
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.02.2025 13:04:58 +00:00
+UpdatedAt=21.02.2025 13:05:01 +00:00
+
+### ARTICLE01_SUBJECT
+The customer Inovance's question about "at-LicenseManager"
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>just to make sure: they tell, that the last license cannot be moved? But they had no problem with all other licenses?</div><div>I created a dongle on my side (exact the same way I created it for them) with 2 licenses. I was able to move both of them. </div><div>Is it always the last liceses that is not working? Can they provide some screenshots? What is the error?</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, February 21, 2025 at 8:25:25 AM, ec_support@motrotech.com wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>The customer tell us that their license-manager server which based on "at-licenseManager" is unable to "move" the last one license in the dongle.</div>
+<div>Can you help confirm if this is caused by their software server or the "at-licenseManager"?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+<div>
+<p>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</p>
+<p>北京市海淀区上地三街9号C座C309</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div>+886-2-25222206（台北）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=57264
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.02.2025 14:53:17 +00:00
+UpdatedAt=21.02.2025 14:53:17 +00:00
+
+### ARTICLE02_SUBJECT
+Re: RE: The customer Inovance's question about "at-LicenseManager" [Ticket#7010008]
+
+### ARTICLE02_BODY
+<div>Hi Kai,</div><div> </div><div>According to your repsonse message, I can confirm that this issue is caused by the customer's software.</div><div>The customer has developed a software which will call "at-LicenseManager" to automatically generating licenses according request, the software is running a server computer. When the dongle only have one license left, their software will not be able to create the license according.</div><div>Since I do not have a testing environment, I have to confirm it with you. Your testing is sufficient to prove that there is a problem with the customer's software.</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>ec_support@motrotech.com</div><blockquote>
+<div> </div>
+<div>
+<span class="js-signatureMarker"></span><div>
+<b>From:</b> <a href="mailto:ecsupport@acontis.com">Kai Feifel via EC-Support</a>
+</div>
+<div>
+<b>Date:</b> 2025-02-21 21:05</div>
+<div>
+<b>To:</b> <a href="mailto:ec_support@motrotech.com">ec_support</a>
+</div>
+<div>
+<b>Subject:</b> RE: The customer Inovance's question about "at-LicenseManager" [Ticket#7010008]</div>
+</div>
+<div>Hi,<div> </div>
+<div>just to make sure: they tell, that the last license cannot be moved? But they had no problem with all other licenses?</div>
+<div>I created a dongle on my side (exact the same way I created it for them) with 2 licenses. I was able to move both of them.</div>
+<div>Is it always the last liceses that is not working? Can they provide some screenshots? What is the error?</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Friday, February 21, 2025 at 8:25:25 AM, ec_support@motrotech.com wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>The customer tell us that their license-manager server which based on "at-licenseManager" is unable to "move" the last one license in the dongle.</div>
+<div>Can you help confirm if this is caused by their software server or the "at-licenseManager"?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+<div>
+<p>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</p>
+<p>北京市海淀区上地三街9号C座C309</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div>+886-2-25222206（台北）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div> </div>
+<br><br>
+</div>
+</div>
+</blockquote>

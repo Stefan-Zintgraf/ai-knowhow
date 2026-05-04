@@ -1,0 +1,122 @@
+### HEADER
+Id=3864
+Link=http://at-zammad/#ticket/zoom/3864
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=703864
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=09.09.2022 10:52:36 +00:00
+UpdatedAt=16.09.2022 06:58:53 +00:00
+CloseAt=16.09.2022 06:58:53 +00:00
+ArticlesCount=2
+
+### TITLE
+A demo show about using
+
+### ARTICLE00_HEADER
+Id=20538
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.09.2022 10:52:36 +00:00
+UpdatedAt=09.09.2022 10:52:40 +00:00
+
+### ARTICLE00_SUBJECT
+A demo show about using
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>
+<p>Dear,</p>
+</div>
+<div>We are preparing serial video in bilibili in China, we have make the first one. it have about 750 visit in one week. It is better than any before weixin paper and video.</div>
+<div>So we want to showing the ECMaster could work with different hot connect and redundancy, we plan to make 4-5 videos.</div>
+<div>And we want to make a video same as "Feature Pack: Cable Redundancy with one network card" same as following:</div>
+<div><img src="/api/v1/ticket_attachment/3864/20538/84616?view=inline" style="max-width:100%;width:573px;max-height:390px;"></div>
+<div>But ecmaster always report linecross error at the boot up, Do you have any suggestion about run the <span style="color:#1f497d;">"Feature Pack: Cable Redundancy with one network card"</span>
+</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=20546
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.09.2022 13:32:10 +00:00
+UpdatedAt=09.09.2022 13:32:15 +00:00
+
+### ARTICLE01_SUBJECT
+A demo show about using
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>please find as attachment the cable redundancy documentation. You need to call the IOCTL or configure the junction red connection explicitly with <span>ecatConfigAddJunctionRedundancyConnection()</span>
+</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Friday, September 9, 2022 at 12:52:36 PM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>
+<p>Dear,</p>
+</div>
+<div>We are preparing serial video in bilibili in China, we have make the first one. it have about 750 visit in one week. It is better than any before weixin paper and video.</div>
+<div>So we want to showing the ECMaster could work with different hot connect and redundancy, we plan to make 4-5 videos.</div>
+<div>And we want to make a video same as "Feature Pack: Cable Redundancy with one network card" same as following:</div>
+<div><img src="/api/v1/ticket_attachment/3864/20546/84693?view=inline" style="max-width:100%;max-width:100%;width:573px;max-height:390px;"></div>
+<div>But ecmaster always report linecross error at the boot up, Do you have any suggestion about run the <span style="color:#1f497d;">"Feature Pack: Cable Redundancy with one network card"</span>
+</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

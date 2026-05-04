@@ -1,0 +1,133 @@
+### HEADER
+Id=5041
+Link=http://at-zammad/#ticket/zoom/5041
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=705041
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=02.03.2023 02:07:24 +00:00
+UpdatedAt=10.03.2023 09:00:39 +00:00
+CloseAt=10.03.2023 09:00:39 +00:00
+ArticlesCount=2
+
+### TITLE
+Create/Remove Group does not update workspaces
+
+### ARTICLE00_HEADER
+Id=26649
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.03.2023 02:07:24 +00:00
+UpdatedAt=02.03.2023 02:07:27 +00:00
+
+### ARTICLE00_SUBJECT
+Create/Remove Group does not update workspaces
+
+### ARTICLE00_BODY
+<div>
+<p>When I do a <b>Create Group</b> or <b>Remove Group </b>action, the available workspaces for the active selection do no change to add or remove the ‘Group’ tab. Also, the context menu is not updated and still shows the same operation (Create Group or Remove Group) as available and the other as disabled.</p>
+<p> </p>
+<p>To reproduce:</p>
+<ol start="1" type="1">
+<li>Right click the slave and select “Create Group”.</li>
+</ol>
+<p><img style="max-width:100%;width:9.2916in;max-height:4.9479in;width:892px;max-height:475px;" src="/api/v1/ticket_attachment/5041/26649/111870?view=inline"></p>
+<p> </p>
+<ol start="2" type="1">
+<li>This is what is shown. Notice the Group icon, but that the ‘Group’ tab is missing.</li>
+</ol>
+<p><img style="max-width:100%;width:7.6145in;max-height:3.7395in;width:731px;max-height:359px;" src="/api/v1/ticket_attachment/5041/26649/111871?view=inline"></p>
+<p> </p>
+<p>Also, if I right click the slave, the context menu still shows “Create Group” as enabled, but “Remove Group” as disabled, which confused me more.</p>
+<p> </p>
+<ol start="3" type="1">
+<li>Select a different slave and then re-select the EK1100, and it shows up correctly:</li>
+</ol>
+<p><img style="max-width:100%;width:8.5in;max-height:4.2291in;width:816px;max-height:406px;" src="/api/v1/ticket_attachment/5041/26649/111872?view=inline"></p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Computer Systems, Inc.<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=26680
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.03.2023 11:57:02 +00:00
+UpdatedAt=02.03.2023 11:57:05 +00:00
+
+### ARTICLE01_SUBJECT
+Create/Remove Group does not update workspaces
+
+### ARTICLE01_BODY
+Hi Quinton,<div><br></div><div>we fixed this problem. </div><div>Thank you.</div><div><br></div><div>Best regards,</div><div>Kai</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, March 2, 2023 at 3:07:24 AM, Quinton Tormanen wrote:<br><br><div>
+<p>When I do a <b>Create Group</b> or <b>Remove Group </b>action, the available workspaces for the active selection do no change to add or remove the ‘Group’ tab. Also, the context menu is not updated and still shows the same operation (Create Group or Remove Group) as available and the other as disabled.</p>
+<p> </p>
+<p>To reproduce:</p>
+<ol start="1" type="1">
+<li>Right click the slave and select “Create Group”.</li>
+</ol>
+<p><img style="max-width:100%;max-width:100%;width:9.2916in;max-height:4.9479in;width:892px;max-height:475px;" src="/api/v1/ticket_attachment/5041/26680/112007?view=inline"></p>
+<p> </p>
+<ol start="2" type="1">
+<li>This is what is shown. Notice the Group icon, but that the ‘Group’ tab is missing.</li>
+</ol>
+<p><img style="max-width:100%;max-width:100%;width:7.6145in;max-height:3.7395in;width:731px;max-height:359px;" src="/api/v1/ticket_attachment/5041/26680/112008?view=inline"></p>
+<p> </p>
+<p>Also, if I right click the slave, the context menu still shows “Create Group” as enabled, but “Remove Group” as disabled, which confused me more.</p>
+<p> </p>
+<ol start="3" type="1">
+<li>Select a different slave and then re-select the EK1100, and it shows up correctly:</li>
+</ol>
+<p><img style="max-width:100%;max-width:100%;width:8.5in;max-height:4.2291in;width:816px;max-height:406px;" src="/api/v1/ticket_attachment/5041/26680/112009?view=inline"></p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Computer Systems, Inc.<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

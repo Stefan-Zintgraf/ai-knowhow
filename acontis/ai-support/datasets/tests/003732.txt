@@ -1,0 +1,161 @@
+### HEADER
+Id=3732
+Link=http://at-zammad/#ticket/zoom/3732
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Lam Research Corporation (ID=363, Number=55504, Country=US)
+Commission=LAM, Semi EC-Master VxWorks (ID=430, Number=430)
+Number=703732
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=thaotam.trinh@lamresearch.com (ID=50, FirstName=Thaotam, LastName=Trinh)
+CreatedBy=thaotam.trinh@lamresearch.com (ID=50, FirstName=Thaotam, LastName=Trinh)
+Type=
+TimeUnit=
+CreatedAt=21.08.2022 15:40:21 +00:00
+UpdatedAt=22.08.2022 09:46:42 +00:00
+CloseAt=22.08.2022 09:46:42 +00:00
+ArticlesCount=2
+
+### TITLE
+Master stack questions
+
+### ARTICLE00_HEADER
+Id=19794
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.08.2022 15:40:21 +00:00
+UpdatedAt=21.08.2022 15:40:23 +00:00
+
+### ARTICLE00_SUBJECT
+Master stack questions
+
+### ARTICLE00_BODY
+<div>
+<p>Hi,</p>
+<p> </p>
+<p>Can you please help the below questions?</p>
+<p> </p>
+<p>1) I wonder how the master generates slave id. Is the below assumption is correct</p>
+<p> </p>
+<p>If slaves in an ENI as following</p>
+<p>· PhysAddr = 1001, AutoIncAddr = 0</p>
+<p>· PhysAddr = 1002, AutoIncAddr = 65535 (-1)</p>
+<p>· PhysAddr = 1003, AutoIncAddr = 65534 (-2)</p>
+<p> </p>
+<p>Then</p>
+<p>· ecatGetCfgSlaveInfo(1, 1001, &amp;config_slave);</p>
+<p><b>=&gt;slaveId = 0</b></p>
+<p>· ecatGetCfgSlaveInfo(1, 1002, &amp;config_slave);</p>
+<p><b>=&gt;slaveId = 1</b></p>
+<p>· ecatGetCfgSlaveInfo(1, 1003, &amp;config_slave);</p>
+<p><b>=&gt;slaveId = 2</b></p>
+<p> </p>
+<p>2)Shall a slave id always be less than ecatGetNumberConfigSlaves() ?</p>
+<p>From the above example where an ENI has 3 slaves, then slave ids are in the range of 0 to 2</p>
+<p> </p>
+<p>3)Are EC_T_CFG_SLAVE_INFO<span style="color:#010001;">::dwSlaveId And EC_T_BUS_SLAVE_INFO::dwSlaveId the same? If not, what is the difference? And when/how can EC_T_BUS_SLAVE_INFO::dwSlaveId be used?</span></p>
+<p> </p>
+<p>Regards,</p>
+<p> </p>
+<p>Thao Tom Trinh</p>
+<p>Software &amp; Controls</p>
+<p>Desk +1 510.572.5795</p>
+<p> </p>
+</div><div>
+<br> LAM RESEARCH CONFIDENTIALITY NOTICE: This e-mail transmission, and any documents, files, or previous e-mail messages attached to it, (collectively, "E-mail Transmission") may be subject to one or more of the following based on the associated sensitivity level: E-mail Transmission (i) contains confidential information, (ii) is prohibited from distribution outside of Lam, and/or (iii) is intended solely for and restricted to the specified recipient(s). If you are not the intended recipient, or a person responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying, distribution or use of any of the information contained in or attached to this message is STRICTLY PROHIBITED. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without reading them or saving them to disk. Thank you.</div><br>
+<p>Confidential – Limited Access and Use<br>
+</p>
+
+### ARTICLE01_HEADER
+Id=19811
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.08.2022 09:46:42 +00:00
+UpdatedAt=22.08.2022 09:46:45 +00:00
+
+### ARTICLE01_SUBJECT
+Master stack questions
+
+### ARTICLE01_BODY
+Hi Thao,<div><br></div><div>
+<span>1)</span><br>
+</div><div><div>the EC-Master assigns the slave IDs. The assignment algorithm might change in future, so p<span>lease get the slave ID from EC-Master using </span><span>emGetSlaveId() or </span><span>emGetSlaveIdAtPosition().</span>
+</div></div><div><br></div><div>2)</div><div>No. T<span>he EC-Master assigns Slave IDs to configured slaves and slaves found on network that aren't part of the ENI file so it is clearly exceeded e.g. if unknown slaves are found on network.</span>
+</div><div>
+<div>
+<div>Please get the slave ID from EC-Master using emGetSlaveId() or emGetSlaveIdAtPosition().</div>
+<div>
+<br>
+</div>
+</div>
+<div>3)</div>
+<div>Yes, it is the same.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Paul</div>
+<div><br></div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Sonntag, 21. August 2022 um 17:40:21, schrieb Thaotam Trinh:<br><br><div>
+<p>Hi,</p>
+<p> </p>
+<p>Can you please help the below questions?</p>
+<p> </p>
+<p>1) I wonder how the master generates slave id. Is the below assumption is correct</p>
+<p> </p>
+<p>If slaves in an ENI as following</p>
+<p>· PhysAddr = 1001, AutoIncAddr = 0</p>
+<p>· PhysAddr = 1002, AutoIncAddr = 65535 (-1)</p>
+<p>· PhysAddr = 1003, AutoIncAddr = 65534 (-2)</p>
+<p> </p>
+<p>Then</p>
+<p>· ecatGetCfgSlaveInfo(1, 1001, &amp;config_slave);</p>
+<p><b>=&gt;slaveId = 0</b></p>
+<p>· ecatGetCfgSlaveInfo(1, 1002, &amp;config_slave);</p>
+<p><b>=&gt;slaveId = 1</b></p>
+<p>· ecatGetCfgSlaveInfo(1, 1003, &amp;config_slave);</p>
+<p><b>=&gt;slaveId = 2</b></p>
+<p> </p>
+<p>2)Shall a slave id always be less than ecatGetNumberConfigSlaves() ?</p>
+<p>From the above example where an ENI has 3 slaves, then slave ids are in the range of 0 to 2</p>
+<p> </p>
+<p>3)Are EC_T_CFG_SLAVE_INFO<span style="color:#010001;">::dwSlaveId And EC_T_BUS_SLAVE_INFO::dwSlaveId the same? If not, what is the difference? And when/how can EC_T_BUS_SLAVE_INFO::dwSlaveId be used?</span></p>
+<p> </p>
+<p>Regards,</p>
+<p> </p>
+<p>Thao Tom Trinh</p>
+<p>Software &amp; Controls</p>
+<p>Desk +1 510.572.5795</p>
+<p> </p>
+</div>
+<div>
+<br> LAM RESEARCH CONFIDENTIALITY NOTICE: This e-mail transmission, and any documents, files, or previous e-mail messages attached to it, (collectively, "E-mail Transmission") may be subject to one or more of the following based on the associated sensitivity level: E-mail Transmission (i) contains confidential information, (ii) is prohibited from distribution outside of Lam, and/or (iii) is intended solely for and restricted to the specified recipient(s). If you are not the intended recipient, or a person responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying, distribution or use of any of the information contained in or attached to this message is STRICTLY PROHIBITED. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without reading them or saving them to disk. Thank you.</div>
+<br>
+<p>Confidential – Limited Access and Use<br>
+</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

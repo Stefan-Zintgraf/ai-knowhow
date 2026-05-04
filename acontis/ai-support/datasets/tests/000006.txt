@@ -1,0 +1,223 @@
+### HEADER
+Id=6
+Link=http://at-zammad/#ticket/zoom/6
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Spuehl GmbH (ID=23, Number=59025, Country=CH)
+Commission=Spühl, Strg. Federkernmach.(No Maint) (ID=25, Number=25)
+Number=70006
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=martin.uhland@spuhl.com (ID=18, FirstName=Martin, LastName=Uhland)
+CreatedBy=martin.uhland@spuhl.com (ID=18, FirstName=Martin, LastName=Uhland)
+Type=
+TimeUnit=
+CreatedAt=04.02.2021 09:02:22 +00:00
+UpdatedAt=04.02.2021 10:04:17 +00:00
+CloseAt=04.02.2021 10:04:17 +00:00
+ArticlesCount=3
+
+### TITLE
+Abfragen am EtherCAT-Master
+
+### ARTICLE00_HEADER
+Id=9
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.02.2021 09:02:22 +00:00
+UpdatedAt=04.02.2021 09:02:22 +00:00
+
+### ARTICLE00_SUBJECT
+Abfragen am EtherCAT-Master
+
+### ARTICLE00_BODY
+<div>
+<p>Guten Tag</p>
+<p> </p>
+<p>Ich bin am Überarbeiten des Zugriffs auf den EC-Master (Java-Applikation, Zugriff auf die EC-Master-Library via JNI und C++). Dazu einige Fragen.</p>
+<p>Wir verwenden noch den EC-Master 2.9.1.10</p>
+<p>Ich habe die beiden Dokumente:</p>
+<p>EC-Master EtherCAT® Master Stack Class B, Version 2.9, Edition: 2018-05-28</p>
+<p>EC-Master EtherCAT® Master Stack Class A, Version 2.9, Edition: 2018-05-28</p>
+<p> </p>
+<p>Wir rufen die Methode EC_T_DWORD ecatGetSlaveId (EC_T_WORD wStationAddress) auf. Einmal mit einem short, an anderer Stelle mit einem int. Das scheint funktioniert zu haben!? Was passiert genau beim Aufruf mit dem falschen Typ? Wäre das zulässig? (ich würde das durchgehend auf short korrigieren</p>
+<p> </p>
+<p>Ich möchte die Version des EtherCAT-Masters von der Library abfragen. Im Handbuch "EC-Master EtherCAT® Master Stack Class B Version 2.9" wird im Kapitel "4.3.27 ecatGetVersion" die Methode angegeben.</p>
+<p>Wie viele DWORD werden empfangen und wie sind diese auszuwerten (Major, Minor, usw.)?</p>
+<p>Welche Werte kann der Error Code annehmen?</p>
+<p>Im EcVersion.h steht #define ATECAT_FILEVERSIONSTR "2.9.1.10\0". Ist das gleichwertig?</p>
+<p> </p>
+<p>Bei ecatGetBusSlaveInfo (Kapitel 4.6.34) muss wSlaveAddress angegeben werden. bFixedAddressing ist bei unserer Software false (auto-inkrement), die Adresse wird mit 0, -1, -2, usw. abgefragt.</p>
+<p>Wo ist beschrieben, wie die Adresse angegeben werden muss? Was bedeuten die Adressen 0, -1, -2, usw.?</p>
+<p>(Diese Art der Adresseingabe wird bei uns an verschiedenen anderen Stellen ebenfalls benützt)</p>
+<p> </p>
+<p>Vielen Dank &amp; freundliche Grüsse</p>
+<p> </p>
+<p>Martin Uhland</p>
+<p>Entwicklungsingenieur Elektronik / Electronic Development Engineer</p>
+<p> </p>
+<p><b>Spühl GmbH</b></p>
+<p>Grüntalstrasse 23</p>
+<p>9300 Wittenbach</p>
+<p>SWITZERLAND</p>
+<p> </p>
+<p>Phone: +41 71 292 11 68</p>
+<p>Fax: +41 71 292 11 24</p>
+<p>martin.uhland@spuhl.com</p>
+<p>www.spuhl.com</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=11
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.02.2021 09:30:27 +00:00
+UpdatedAt=04.02.2021 09:30:28 +00:00
+
+### ARTICLE01_SUBJECT
+Abfragen am EtherCAT-Master
+
+### ARTICLE01_BODY
+Hallo Herr Uhland,<div><br></div><div>1) ecatGetSlaveId() short/int Der Compiler wird es irgendwie gecastet haben. Short ist natürlich besser.</div><div><br></div><div>2) ecatGetVersion() diese Funktion liefert 1 DWORD und zwar aus EcVersion.h ATECAT_VERSION </div><div><br></div><div>3) ecatGetBusSlaveInfo() Die Adressen 0, -1, -2, usw entsprechen die sogenannten Auto Inkrementale Adressen beschrieben in der EtherCAT Spezifikation. Hier sind sie auch beschrieben:</div><div>
+<a href="http://www.ethercat.org/download/documents/EtherCAT_Device_Protocol_Poster.pdf" rel="nofollow noreferrer noopener" target="_blank">http://www.ethercat.org/download/documents/EtherCAT_Device_Protocol_Poster.pdf</a> </div><div><br></div><div>Schöne Grüße,</div><div>
+<span>____________________________________________________________________________</span><br>
+</div><div data-signature="true" data-signature-id="3">
+<div>Cyril Eyssautier </div>
+<div>Realtime Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>Fax: +49 (751) 56030-31</div>
+<div>eMail: ecsupport@acontis.com</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=12
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.02.2021 10:00:15 +00:00
+UpdatedAt=04.02.2021 10:00:15 +00:00
+
+### ARTICLE02_SUBJECT
+AW: [EXTERNAL] RE: Abfragen am EtherCAT-Master [Ticket#70006]
+
+### ARTICLE02_BODY
+<div>
+<p>Vielen Dank!</p>
+<p> </p>
+<div>
+<p>Martin Uhland</p>
+<p>Entwicklungsingenieur Elektronik / Electronic Development Engineer</p>
+<p> </p>
+<p><b>Spühl GmbH</b></p>
+<p>Grüntalstrasse 23</p>
+<p>9300 Wittenbach</p>
+<p>SWITZERLAND</p>
+<p> </p>
+<p>Phone: +41 71 292 11 68</p>
+<p>Fax: +41 71 292 11 24</p>
+<p>martin.uhland@spuhl.com</p>
+<p>www.spuhl.com</p>
+</div>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Gesendet:</b> Donnerstag, 4. Februar 2021 10:30<br>
+<b>An:</b> Martin Uhland &lt;martin.uhland@spuhl.com&gt;<br>
+<b>Betreff:</b> [EXTERNAL] RE: Abfragen am EtherCAT-Master [Ticket#70006]</p>
+</div>
+</div>
+<p> </p>
+<p>Hallo Herr Uhland,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>1) ecatGetSlaveId() short/int Der Compiler wird es irgendwie gecastet haben. Short ist natürlich besser.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>2) ecatGetVersion() diese Funktion liefert 1 DWORD und zwar aus EcVersion.h ATECAT_VERSION</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>3) ecatGetBusSlaveInfo() Die Adressen 0, -1, -2, usw entsprechen die sogenannten Auto Inkrementale Adressen beschrieben in der EtherCAT Spezifikation. Hier sind sie auch beschrieben:</p>
+</div>
+<div>
+<p><a href="https://urldefense.proofpoint.com/v2/url?u=http-3A__www.ethercat.org_download_documents_EtherCAT-5FDevice-5FProtocol-5FPoster.pdf&amp;d=DwMFaQ&amp;c=y2CoG5YnjIJpazuVfWQ7cQ&amp;r=rN-VxlH-4XdsixQVBTlCafsVUOtfVMOvZt2QLJWISk0&amp;m=qxwP6dIZNQtE6R4qx53hEjZ_LrnR2rtRCuNuzSfTKkk&amp;s=aPLx0p0vuKbk_GfSDHwcA7ICJyB8Mn8g2KF5SqSw0Fo&amp;e=" rel="nofollow noreferrer noopener" title="https://urldefense.proofpoint.com/v2/url?u=http-3A__www.ethercat.org_download_documents_EtherCAT-5FDevice-5FProtocol-5FPoster.pdf&amp;d=DwMFaQ&amp;c=y2CoG5YnjIJpazuVfWQ7cQ&amp;r=rN-VxlH-4XdsixQVBTlCafsVUOtfVMOvZt2QLJWISk0&amp;m=qxwP6dIZNQtE6R4qx53hEjZ_LrnR2rtRCuNuzSfTKkk&amp;s=aPLx0p0vuKbk_GfSDHwcA7ICJyB8Mn8g2KF5SqSw0Fo&amp;e=" target="_blank">http://www.ethercat.org/download/documents/EtherCAT_Device_Protocol_Poster.pdf</a> </p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Schöne Grüße,</p>
+</div>
+<div>
+<p>____________________________________________________________________________</p>
+</div>
+<div>
+<div>
+<p>Cyril Eyssautier</p>
+</div>
+<div>
+<p>Realtime Support</p>
+</div>
+<div>
+<p>acontis technologies GmbH</p>
+</div>
+<div>
+<p>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</p>
+</div>
+<div>
+<p>Http: <a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__www.acontis.com&amp;d=DwMFaQ&amp;c=y2CoG5YnjIJpazuVfWQ7cQ&amp;r=rN-VxlH-4XdsixQVBTlCafsVUOtfVMOvZt2QLJWISk0&amp;m=qxwP6dIZNQtE6R4qx53hEjZ_LrnR2rtRCuNuzSfTKkk&amp;s=v2akbZ3hLTy48BB6rKnmvc6ajQnJLJagLG55Cagu4pU&amp;e=" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com</a> </p>
+</div>
+<div>
+<p>Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>Fax: +49 (751) 56030-31</p>
+</div>
+<div>
+<p>eMail: ecsupport@acontis.com</p>
+</div>
+<div>
+<p>----------------------------------------------------------------------------</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</p>
+</div>
+<div>
+<p><a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__www.acontis.com_en_newsletter.html&amp;d=DwMFaQ&amp;c=y2CoG5YnjIJpazuVfWQ7cQ&amp;r=rN-VxlH-4XdsixQVBTlCafsVUOtfVMOvZt2QLJWISk0&amp;m=qxwP6dIZNQtE6R4qx53hEjZ_LrnR2rtRCuNuzSfTKkk&amp;s=-2OzYmRqPwvEnG3cH1dolLiQQVuiNf2_OnrR5J2_cJ8&amp;e=" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+<div>
+<p>----------------------------------------------------------------------------</p>
+</div>
+<div>
+<p>Eingetragene Rechtsform: GmbH</p>
+</div>
+<div>
+<p>Sitz der Gesellschaft: Ravensburg</p>
+</div>
+<div>
+<p>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</p>
+</div>
+<div>
+<p>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</p>
+</div>
+</div>
+</div>

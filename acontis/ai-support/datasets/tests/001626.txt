@@ -1,0 +1,208 @@
+### HEADER
+Id=1626
+Link=http://at-zammad/#ticket/zoom/1626
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Sophion (ID=428, Number=0, Country=DK)
+Commission=Sophion,  QPatch Compact (ID=536, Number=536)
+Number=701626
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=wjn@sophion.com (ID=250, FirstName=Wenxi, LastName=Jin)
+CreatedBy=wjn@sophion.com (ID=250, FirstName=Wenxi, LastName=Jin)
+Type=
+TimeUnit=
+CreatedAt=14.10.2021 10:08:41 +00:00
+UpdatedAt=26.04.2022 05:19:05 +00:00
+CloseAt=14.10.2021 15:04:58 +00:00
+ArticlesCount=5
+
+### TITLE
+ECAT driver installation
+
+### ARTICLE00_HEADER
+Id=8767
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.10.2021 10:08:41 +00:00
+UpdatedAt=14.10.2021 10:08:45 +00:00
+
+### ARTICLE00_SUBJECT
+ECAT driver installation
+
+### ARTICLE00_BODY
+<div>
+<p>Hi,</p>
+<p> </p>
+<p>Good day.</p>
+<p>I am wondering if acontis provides any automation utility (like a batch script) of installing the link layer driver.</p>
+<p>Sure, manually installing the driver is fine during R&amp;D development.</p>
+<p> </p>
+<p>It would be very nice to have the whole procedure automated.</p>
+<p>Windows has “dpinst[64/32].exe” for installing driver. Do you have something already in place?</p>
+<p> </p>
+<p>Looking forward to your reply. Thanks. 😊</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Wenxi Jin</p>
+<p>Senior Hardware &amp; Software Engineer</p>
+<p> </p>
+<p><img style="max-width:100%;width:2.0833in;max-height:.9375in;width:200px;max-height:90px;" src="/api/v1/ticket_attachment/1626/8767/35037?view=inline" alt="SophionBioscience_logo"></p>
+<p><br> Office: +45 44 60 88 00 / Direct: +45 44 60 88 22 - <b><u><a href="http://www.sophion.com/" rel="nofollow noreferrer noopener" title="http://www.sophion.com/" target="_blank">sophion.com</a></u></b><u><br>
+</u>Sophion Bioscience A/S, Baltorpvej 154, 2750 Ballerup, Denmark</p>
+<p> </p>
+<p><a href="https://sophion.com/sophion-user-meeting-virtual/" rel="nofollow noreferrer noopener" title="https://sophion.com/sophion-user-meeting-virtual/" target="_blank"><img border="0" style="max-width:100%;width:6.9166in;max-height:1.7291in;width:664px;max-height:166px;" src="/api/v1/ticket_attachment/1626/8767/35038?view=inline"></a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=8768
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=14.10.2021 10:09:54 +00:00
+UpdatedAt=14.10.2021 10:09:54 +00:00
+
+### ARTICLE01_BODY
+Habt Ihr solche Script?
+
+### ARTICLE02_HEADER
+Id=8794
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=14.10.2021 14:20:48 +00:00
+UpdatedAt=14.10.2021 14:20:48 +00:00
+
+### ARTICLE02_BODY
+ZTV: Nein. Die Funktionalität ist im Uploader.exe
+
+### ARTICLE03_HEADER
+Id=8795
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.10.2021 14:22:28 +00:00
+UpdatedAt=14.10.2021 14:22:29 +00:00
+
+### ARTICLE03_SUBJECT
+ECAT driver installation
+
+### ARTICLE03_BODY
+<div>Hi Wenxi,</div><div><br></div><div>unfortunately not. I ask our real-time team but the functionality is embedded in some proprietary tools.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><br>
+</div><div><blockquote type="cite">On Thursday, October 14, 2021, 12:08:41 PM, Wenxi Jin wrote:<br><br><div>
+<p>Hi,</p>
+<p> </p>
+<p>Good day.</p>
+<p>I am wondering if acontis provides any automation utility (like a batch script) of installing the link layer driver.</p>
+<p>Sure, manually installing the driver is fine during R&amp;D development.</p>
+<p> </p>
+<p>It would be very nice to have the whole procedure automated.</p>
+<p>Windows has “dpinst[64/32].exe” for installing driver. Do you have something already in place?</p>
+<p> </p>
+<p>Looking forward to your reply. Thanks. 😊</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Wenxi Jin</p>
+<p>Senior Hardware &amp; Software Engineer</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:2.0833in;max-height:.9375in;width:200px;max-height:90px;" src="/api/v1/ticket_attachment/1626/8795/35102?view=inline" alt="SophionBioscience_logo"></p>
+<p><br> Office: +45 44 60 88 00 / Direct: +45 44 60 88 22 - <b><u><a href="http://www.sophion.com/" rel="nofollow noreferrer noopener" title="http://www.sophion.com/" target="_blank">sophion.com</a></u></b><u><br>
+</u>Sophion Bioscience A/S, Baltorpvej 154, 2750 Ballerup, Denmark</p>
+<p> </p>
+<p><a href="https://sophion.com/sophion-user-meeting-virtual/" rel="nofollow noreferrer noopener" title="https://sophion.com/sophion-user-meeting-virtual/" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:6.9166in;max-height:1.7291in;width:664px;max-height:166px;" src="/api/v1/ticket_attachment/1626/8795/35103?view=inline"></a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE04_HEADER
+Id=8796
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.10.2021 14:27:57 +00:00
+UpdatedAt=14.10.2021 14:27:57 +00:00
+
+### ARTICLE04_SUBJECT
+RE: ECAT driver installation [Ticket#701626]
+
+### ARTICLE04_BODY
+<div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>No problem at all. Thank you very much for the help still.</p>
+<p>Have a lovely day. 😊</p>
+<p> </p>
+<div>
+<p>Best regards,</p>
+<p>Wenxi Jin</p>
+<p>Senior Hardware &amp; Software Engineer</p>
+<p> </p>
+<p><img style="max-width:100%;width:2.0833in;max-height:.9375in;width:200px;max-height:90px;" src="/api/v1/ticket_attachment/1626/8796/35107?view=inline" alt="SophionBioscience_logo"></p>
+<p><br> Office: +45 44 60 88 00 / Direct: +45 44 60 88 22 - <b><u><a href="http://www.sophion.com/" rel="nofollow noreferrer noopener" title="http://www.sophion.com/" target="_blank">sophion.com</a></u></b><u><br>
+</u>Sophion Bioscience A/S, Baltorpvej 154, 2750 Ballerup, Denmark</p>
+<p> </p>
+<p><a href="https://sophion.com/sophion-user-meeting-virtual/" rel="nofollow noreferrer noopener" title="https://sophion.com/sophion-user-meeting-virtual/" target="_blank"><img border="0" style="max-width:100%;width:6.9166in;max-height:1.7291in;width:664px;max-height:166px;" src="/api/v1/ticket_attachment/1626/8796/35108?view=inline"></a></p>
+</div>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Thursday, October 14, 2021 4:22 PM<br>
+<b>To:</b> Wenxi Jin &lt;wjn@sophion.com&gt;<br>
+<b>Subject:</b> RE: ECAT driver installation [Ticket#701626]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Hi Wenxi,</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>unfortunately not. I ask our real-time team but the functionality is embedded in some proprietary tools.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Cyril</p>
+</div>
+<div>
+<blockquote>
+<p>On Thursday, October 14, 2021, 12:08:41 PM, Wenxi Jin wrote:</p>
+<p></p>
+<div>
+<p>Hi,</p>
+<p> </p>
+<p>Good day.</p>
+<p>I am wondering if acontis provides any automation utility (like a batch script) of installing the link layer driver.</p>
+<p>Sure, manually installing the driver is fine during R&amp;D development.</p>
+<p> </p>
+<p>It would be very nice to have the whole procedure automated.</p>
+<p>Windows has “dpinst[64/32].exe” for installing driver. Do you have something already in place?</p>
+<p> </p>
+<p>Looking forward to your reply. Thanks. 😊</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Wenxi Jin</p>
+<p>Senior Hardware &amp; Software Engineer</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:2.0833in;max-height:.9375in;width:200px;max-height:90px;" src="/api/v1/ticket_attachment/1626/8796/35109?view=inline" alt="SophionBioscience_logo"></p>
+<p><br> Office: +45 44 60 88 00 / Direct: +45 44 60 88 22 - <b><u><a href="http://www.sophion.com/" title="http://www.sophion.com/" rel="nofollow noreferrer noopener" target="_blank">sophion.com</a></u></b><u><br>
+</u>Sophion Bioscience A/S, Baltorpvej 154, 2750 Ballerup, Denmark</p>
+<p> </p>
+<p><a href="https://sophion.com/sophion-user-meeting-virtual/" title='"https://sophion.com/sophion-user-meeting-virtual/" t ' rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;width:6.25in;max-height:1.5625in;width:600px;max-height:150px;" src="/api/v1/ticket_attachment/1626/8796/35110?view=inline"></a></p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>

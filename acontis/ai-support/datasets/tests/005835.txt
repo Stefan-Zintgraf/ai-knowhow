@@ -1,0 +1,142 @@
+### HEADER
+Id=5835
+Link=http://at-zammad/#ticket/zoom/5835
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Robert Bosch GmbH (ID=149, Number=40339, Country=DE)
+Commission=Bosch Rexroth, ctrlX COREplus , ctrlX IPC (ID=95, Number=95)
+Number=705835
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=marc.velten@de.bosch.com (ID=2010, FirstName=Marc, LastName=Velten)
+CreatedBy=marc.velten@de.bosch.com (ID=2010, FirstName=Marc, LastName=Velten)
+Type=
+TimeUnit=
+CreatedAt=27.06.2023 13:14:32 +00:00
+UpdatedAt=07.11.2023 07:28:43 +00:00
+CloseAt=30.06.2023 06:04:00 +00:00
+ArticlesCount=3
+
+### TITLE
+Support EC-Engineer
+
+### ARTICLE00_HEADER
+Id=31155
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.06.2023 13:14:32 +00:00
+UpdatedAt=27.06.2023 13:14:32 +00:00
+
+### ARTICLE00_SUBJECT
+Support EC-Engineer
+
+### ARTICLE00_BODY
+<div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>bei der Inbetriebnahme von einer Anlage habe ich ein Profibus-Koppler Beckhoff EL6731-0010 (slave), den ich in meinem EtherCAT-Bus mit Acontis Master class A einbinden muss.</p>
+<p>Wenn ich folgende Parameter ändere, ändern sich unter der Ansicht „Init Commands“ die Slave Parameter aber leider nicht. Speichern, schließen und neustarten von EC-Engineer hat nicht geholfen:</p>
+<p><img style="max-width:100%;width:11.875in;max-height:3.4666in;width:1140px;max-height:333px;" src="/api/v1/ticket_attachment/5835/31155/129782?view=inline"></p>
+<p> </p>
+<p><img style="max-width:100%;width:11.7833in;max-height:4.4666in;width:1131px;max-height:429px;" src="/api/v1/ticket_attachment/5835/31155/129783?view=inline"></p>
+<p> </p>
+<p>Die exportierte eni-Datei scheint die Adresse zumindest richtig zu beinhalten, aber ich kann nicht alle Änderungen aus EC-Engineer in der eni-Datei kontrollieren… Und mein Bus fährt nicht hoch: <i>init(ecMaster) -&gt; Error #12001028</i></p>
+<p><img style="max-width:100%;width:8.475in;max-height:4.3083in;width:814px;max-height:414px;" src="/api/v1/ticket_attachment/5835/31155/129784?view=inline"></p>
+<p>Der Parameter-Satz lässt sich in EC-Engineer auch nicht von Hand ändern.</p>
+<p> </p>
+<p>Ich bitte Sie um eine schnelle Rückmeldung.</p>
+<p> </p>
+<p>Vielen Dank vorab!</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Marc Velten</b></span> <span><br>
+<br> (BhP/TEF-EAT34)<br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bosch.com</span></a><br> Tel. +49 8323 20-3341 | Telefax +49 8323 20 | <a href="mailto:Marc.Velten@de.bosch.com">
+<span style="color:blue;">Marc.Velten@de.bosch.com</span></a></span><span><br>
+<br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000;<br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; Geschäftsführung: Dr. Stefan Hartung, <br> Dr. Christian Fischer, Dr. Markus Forschner, Stefan Grosch, Dr. Markus Heyn, Dr. Tanja Rückert </span><span><br> ​</span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=31158
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=27.06.2023 13:30:56 +00:00
+UpdatedAt=27.06.2023 13:30:56 +00:00
+
+### ARTICLE01_BODY
+Passt ja wenn du gerade eh an der Klemme dran bist
+
+### ARTICLE02_HEADER
+Id=31168
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.06.2023 15:49:03 +00:00
+UpdatedAt=27.06.2023 15:49:07 +00:00
+
+### ARTICLE02_SUBJECT
+Support EC-Engineer
+
+### ARTICLE02_BODY
+Hallo Herr Velten,<div><br></div><div>
+<span>das Init Kommando wird erst aktualisiert sobald sobald mind. ein Modul konfiguriert wurde:</span><br>
+</div><div><span><br></span></div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/5835/31168/129808?view=inline"><span><br></span>
+</div><div><br></div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/5835/31168/129809?view=inline"><br>
+</div><div><br></div><div>Warum genau fährt der Bus nicht hoch? Probleme mit dem Slave? Oder macht ein anderer Probleme?</div><div>Was liefert der Master genau für eine Fehlermeldung?</div><div><br></div><div>Mit freundlichen Grüßen</div><div>Martin Gänzer</div><div>
+<br><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, June 27, 2023 at 3:14:32 PM, Marc Velten wrote:<br><br><div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>bei der Inbetriebnahme von einer Anlage habe ich ein Profibus-Koppler Beckhoff EL6731-0010 (slave), den ich in meinem EtherCAT-Bus mit Acontis Master class A einbinden muss.</p>
+<p>Wenn ich folgende Parameter ändere, ändern sich unter der Ansicht „Init Commands“ die Slave Parameter aber leider nicht. Speichern, schließen und neustarten von EC-Engineer hat nicht geholfen:</p>
+<p><img style="max-width:100%;max-width:100%;width:11.875in;max-height:3.4666in;width:1140px;max-height:333px;" src="/api/v1/ticket_attachment/5835/31168/129810?view=inline"></p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:11.7833in;max-height:4.4666in;width:1131px;max-height:429px;" src="/api/v1/ticket_attachment/5835/31168/129811?view=inline"></p>
+<p> </p>
+<p>Die exportierte eni-Datei scheint die Adresse zumindest richtig zu beinhalten, aber ich kann nicht alle Änderungen aus EC-Engineer in der eni-Datei kontrollieren… Und mein Bus fährt nicht hoch: <i>init(ecMaster) -&gt; Error #12001028</i></p>
+<p><img style="max-width:100%;max-width:100%;width:8.475in;max-height:4.3083in;width:814px;max-height:414px;" src="/api/v1/ticket_attachment/5835/31168/129812?view=inline"></p>
+<p>Der Parameter-Satz lässt sich in EC-Engineer auch nicht von Hand ändern.</p>
+<p> </p>
+<p>Ich bitte Sie um eine schnelle Rückmeldung.</p>
+<p> </p>
+<p>Vielen Dank vorab!</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Marc Velten</b></span> <span><br>
+<br> (BhP/TEF-EAT34)<br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bosch.com</span></a><br> Tel. +49 8323 20-3341 | Telefax +49 8323 20 | <a href="mailto:Marc.Velten@de.bosch.com">
+<span style="color:blue;">Marc.Velten@de.bosch.com</span></a></span><span><br>
+<br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000;<br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; Geschäftsführung: Dr. Stefan Hartung, <br> Dr. Christian Fischer, Dr. Markus Forschner, Stefan Grosch, Dr. Markus Heyn, Dr. Tanja Rückert </span><span><br> ​</span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

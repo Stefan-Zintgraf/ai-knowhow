@@ -1,0 +1,274 @@
+### HEADER
+Id=2459
+Link=http://at-zammad/#ticket/zoom/2459
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Digital Dynamics Inc. (ID=342, Number=40370, Country=US)
+Commission=Digital Dynamics, Internal Slave Testing (ID=408, Number=408)
+Number=702459
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=stomaszewski@digitaldynamics.com (ID=297, FirstName=Shaun, LastName=Tomaszewski)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=16.02.2022 15:48:51 +00:00
+UpdatedAt=18.02.2022 07:40:39 +00:00
+CloseAt=18.02.2022 07:40:39 +00:00
+ArticlesCount=5
+
+### TITLE
+Re: Acontis COE performance
+
+### ARTICLE00_HEADER
+Id=13092
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.02.2022 15:48:51 +00:00
+UpdatedAt=16.02.2022 15:48:51 +00:00
+
+### ARTICLE00_SUBJECT
+Re: Acontis COE performance
+
+### ARTICLE00_BODY
+Hi Shaun,<div> </div><div>I will check if this large deviation makes sense, but I think it could be possible because CoE is using the mailbox protocol which is acyclic communication. So there is no guarantee when the CoE request and CoE response are sent/received on the network. It depends on the mailbox buffer size and how much bytes are available in the overall frame for when it can execute this transfer.<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Feb 16, 2022, at 9:40 AM, Shaun Tomaszewski &lt;stomaszewski@digitaldynamics.com&gt; wrote:</div>
+<br><div> <div>
+<div>Hi Jon,</div>
+<p> </p>
+<div>I’m performing a COE read operation of 4 bytes periodically.</div>
+<p> </p>
+<div>Typically, the operation COE read takes ~3 milliseconds to complete.</div>
+<p> </p>
+<div>Occasionally, the operation takes ~90 to 160 milliseconds to complete.</div>
+<p> </p>
+<div>It’s possible this is a slave device issue.</div>
+<p> </p>
+<div>Is this large of a deviation expected COE behavior for Acontis? Any guidance you can provide would be welcome.</div>
+<p> </p>
+<div>Thanks,</div>
+<p> </p>
+<div>Shaun</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=13093
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=16.02.2022 15:49:40 +00:00
+UpdatedAt=16.02.2022 15:49:40 +00:00
+
+### ARTICLE01_BODY
+Hi Cyril,<div><br></div><div>Can you provide some further clarification about CoE and if it is possible that sometimes it takes just a few milliseconds and other times it takes hundreds of milliseconds?</div>
+
+### ARTICLE02_HEADER
+Id=13095
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=16.02.2022 16:34:48 +00:00
+UpdatedAt=16.02.2022 16:34:48 +00:00
+
+### ARTICLE02_BODY
+Hi Jon, the CoE communication is depending on a lot of things, like the amount of slaves, the amount of parallel acyclic transfer, configured bandwidth or CPU usage restriction...<div>I would try to reduce the test to 1 slave and not under stress. A wireshark record would show the transfer timing and if the slave immediately notify data or if it takes a long time.</div>
+
+### ARTICLE03_HEADER
+Id=13145
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.02.2022 17:13:27 +00:00
+UpdatedAt=17.02.2022 17:14:01 +00:00
+
+### ARTICLE03_SUBJECT
+Acontis COE performance
+
+### ARTICLE03_BODY
+Hi Shaun,<div> </div><div>As I thought, the CoE communication is depending on a lot of things like the amount of slaves, the amount of parallel acyclic transfer, the configured bandwidth, and the CPU usage restrictions, etc.</div><div> </div><div>One idea from Cyril was to reduce the test to 1 slave and not under stress. A wireshark record would show the transfer timing and if the slave is immediately responding with the data or if it takes a long time.</div><div>
+<div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Feb 16, 2022, at 10:48 AM, Jon Waters &lt;j.waters@acontis.com&gt; wrote:</div>
+<br><div> <div>Hi Shaun,<div> </div>
+<div>I will check if this large deviation makes sense, but I think it could be possible because CoE is using the mailbox protocol which is acyclic communication. So there is no guarantee when the CoE request and CoE response are sent/received on the network. It depends on the mailbox buffer size and how much bytes are available in the overall frame for when it can execute this transfer.<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>On Feb 16, 2022, at 9:40 AM, Shaun Tomaszewski &lt;stomaszewski@digitaldynamics.com&gt; wrote:</div>
+<br><div> <div>
+<div>Hi Jon,</div>
+<p> </p>
+<div>I’m performing a COE read operation of 4 bytes periodically.</div>
+<p> </p>
+<div>Typically, the operation COE read takes ~3 milliseconds to complete.</div>
+<p> </p>
+<div>Occasionally, the operation takes ~90 to 160 milliseconds to complete.</div>
+<p> </p>
+<div>It’s possible this is a slave device issue.</div>
+<p> </p>
+<div>Is this large of a deviation expected COE behavior for Acontis? Any guidance you can provide would be welcome.</div>
+<p> </p>
+<div>Thanks,</div>
+<p> </p>
+<div>Shaun</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE04_HEADER
+Id=13149
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.02.2022 00:20:18 +00:00
+UpdatedAt=18.02.2022 07:40:27 +00:00
+
+### ARTICLE04_SUBJECT
+Acontis COE performance
+
+### ARTICLE04_BODY
+<div>
+<p>Hi Jon,</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p>It ended up being a Linux scheduler issue on a highly loaded system. We are using a Linux RT kernel and our COE thread was being starved out.</p>
+<p> </p>
+<p>We increased the COE thread priority and used SCHED_FIFO (RT scheduling) and that resolved our immediate issue.</p>
+<p> </p>
+<p>Thanks for your help!</p>
+<p> </p>
+<p>Shaun</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Jon Waters &lt;j.waters@acontis.com&gt; <br>
+<b>Sent:</b> Thursday, February 17, 2022 9:13 AM<br>
+<b>To:</b> Shaun Tomaszewski &lt;stomaszewski@digitaldynamics.com&gt;<br>
+<b>Cc:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Subject:</b> Re: Acontis COE performance</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Shaun,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>As I thought, the CoE communication is depending on a lot of things like the amount of slaves, the amount of parallel acyclic transfer, the configured bandwidth, and the CPU usage restrictions, etc.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>One idea from Cyril was to reduce the test to 1 slave and not under stress. A wireshark record would show the transfer timing and if the slave is immediately responding with the data or if it takes a long time.</p>
+</div>
+<div>
+<div>
+<p><br> /Jon </p>
+</div>
+<div>
+<p><br>
+<br>
+</p>
+<blockquote>
+<div>
+<p>On Feb 16, 2022, at 10:48 AM, Jon Waters &lt;j.waters@acontis.com&gt; wrote:</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p>Hi Shaun,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>I will check if this large deviation makes sense, but I think it could be possible because CoE is using the mailbox protocol which is acyclic communication. So there is no guarantee when the CoE request and CoE response are sent/received on the network. It depends on the mailbox buffer size and how much bytes are available in the overall frame for when it can execute this transfer.</p>
+<div>
+<p><br> /Jon </p>
+<p> </p>
+</div>
+<div>
+<p><br>
+<br>
+</p>
+<blockquote>
+<div>
+<p>On Feb 16, 2022, at 9:40 AM, Shaun Tomaszewski &lt;stomaszewski@digitaldynamics.com&gt; wrote:</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p>Hi Jon,</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>I’m performing a COE read operation of 4 bytes periodically.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Typically, the operation COE read takes ~3 milliseconds to complete.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Occasionally, the operation takes ~90 to 160 milliseconds to complete.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>It’s possible this is a slave device issue.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Is this large of a deviation expected COE behavior for Acontis? Any guidance you can provide would be welcome.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Thanks,</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Shaun</p>
+</div>
+</div>
+</blockquote>
+</div>
+<p> </p>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<p> </p>
+</div>
+</div>

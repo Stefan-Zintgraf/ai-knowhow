@@ -1,0 +1,174 @@
+### HEADER
+Id=1712
+Link=http://at-zammad/#ticket/zoom/1712
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bosch Rexroth AG (ID=88, Number=50510, Country=DE)
+Commission=Bosch Rexroth, ctrlX CORE (ID=96, Number=96)
+Number=701712
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=elmar.ott@boschrexroth.de (ID=158, FirstName=Elmar, LastName=Ott)
+CreatedBy=elmar.ott@boschrexroth.de (ID=158, FirstName=Elmar, LastName=Ott)
+Type=
+TimeUnit=
+CreatedAt=25.10.2021 14:12:22 +00:00
+UpdatedAt=26.10.2021 08:55:01 +00:00
+CloseAt=26.10.2021 08:55:01 +00:00
+ArticlesCount=3
+
+### TITLE
+Bus Load Object
+
+### ARTICLE00_HEADER
+Id=9175
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.10.2021 14:12:22 +00:00
+UpdatedAt=25.10.2021 14:12:26 +00:00
+
+### ARTICLE00_SUBJECT
+Bus Load Object
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo,</p>
+<p> </p>
+<p>eine Frage zum Objekt 0x2200 im Master OD:</p>
+<p> </p>
+<p>Lassen sich die Min / Max Werte des Objektes rücksetzen, bzw. wann werden diese rückgesetzt?</p>
+<p>Oder beziehen sich die Min / Max Werte immer nur auf die letzte Sekunde?</p>
+<p> </p>
+<p><img style="max-width:100%;width:6.1666in;max-height:3.9791in;width:592px;max-height:382px;" src="/api/v1/ticket_attachment/1712/9175/36235?view=inline"></p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Elmar Ott</b>
+<br> Engineering Software Firmware DC-AE/ESW2<br>
+<br> Tel. +49 9352 18-5585<br> Elmar.Ott@boschrexroth.de<br>
+<a href="http://www.boschrexroth.com" rel="nofollow noreferrer noopener" target="_blank">www.boschrexroth.com</a><br>
+<br> Bosch Rexroth AG<br> Bgm.-Dr.-Nebel-Str. 2<br> 97816 Lohr am Main<br> GERMANY<br>
+<br>
+<a href="http://www.boschrexroth.com/" rel="nofollow noreferrer noopener" title="http://www.boschrexroth.com/" target="_blank"></a><br><br>Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart HRB 23192<br> Vorstand: Rolf Najork (Vorsitzender), Dr. Steffen Haack, Holger von Hebel, Reinhard Schäfer, Dr. Marc Wucherer<br> Vorsitzende des Aufsichtsrats: Filiz Albrecht<br> ​</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=9181
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.10.2021 15:22:11 +00:00
+UpdatedAt=25.10.2021 15:22:17 +00:00
+
+### ARTICLE01_SUBJECT
+Bus Load Object
+
+### ARTICLE01_BODY
+Hallo Herr Ott,<div><br></div><div>Die Werte können leider nicht zurückgesetzt werden. Die "actual values" beziehen sich auf die letzte Sekunde. Min / Max beziehen sich auf dem letzten ecatConfigureMaster() Aufruf.</div><div><br></div><div>Schöne Grüße,</div><div>Cyril Eyssautier<br><div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, October 25, 2021, 4:12:22 PM, Elmar Ott wrote:<br><br><div>
+<p>Hallo,</p>
+<p> </p>
+<p>eine Frage zum Objekt 0x2200 im Master OD:</p>
+<p> </p>
+<p>Lassen sich die Min / Max Werte des Objektes rücksetzen, bzw. wann werden diese rückgesetzt?</p>
+<p>Oder beziehen sich die Min / Max Werte immer nur auf die letzte Sekunde?</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:6.1666in;max-height:3.9791in;width:592px;max-height:382px;" src="/api/v1/ticket_attachment/1712/9181/36275?view=inline"></p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Elmar Ott</b>
+<br> Engineering Software Firmware DC-AE/ESW2<br>
+<br> Tel. +49 9352 18-5585<br> Elmar.Ott@boschrexroth.de<br>
+<a href="http://www.boschrexroth.com" rel="nofollow noreferrer noopener" target="_blank">www.boschrexroth.com</a><br>
+<br> Bosch Rexroth AG<br> Bgm.-Dr.-Nebel-Str. 2<br> 97816 Lohr am Main<br> GERMANY<br>
+<br>
+<a href="http://www.boschrexroth.com/" rel="nofollow noreferrer noopener" title="http://www.boschrexroth.com/" target="_blank"></a><br><br>Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart HRB 23192<br> Vorstand: Rolf Najork (Vorsitzender), Dr. Steffen Haack, Holger von Hebel, Reinhard Schäfer, Dr. Marc Wucherer<br> Vorsitzende des Aufsichtsrats: Filiz Albrecht<br> ​</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=9202
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.10.2021 08:17:58 +00:00
+UpdatedAt=26.10.2021 08:17:58 +00:00
+
+### ARTICLE02_SUBJECT
+AW: Bus Load Object [Ticket#701712]
+
+### ARTICLE02_BODY
+<div>
+<p>Hallo,</p>
+<p> </p>
+<p>Danke – passt so für uns.</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Elmar Ott</b> <br> Engineering Software Firmware DC-AE/ESW2<br>
+<br> Tel. +49 9352 18-5585<br> Elmar.Ott@boschrexroth.de<br>
+<a href="http://www.boschrexroth.com" rel="nofollow noreferrer noopener" target="_blank">www.boschrexroth.com</a><br>
+<br> Bosch Rexroth AG<br> Bgm.-Dr.-Nebel-Str. 2<br> 97816 Lohr am Main<br> GERMANY<br>
+<br>
+<a href="http://www.boschrexroth.com/" rel="nofollow noreferrer noopener" title="http://www.boschrexroth.com/" target="_blank"></a><br><br>Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart HRB 23192<br> Vorstand: Rolf Najork (Vorsitzender), Dr. Steffen Haack, Holger von Hebel, Reinhard Schäfer, Dr. Marc Wucherer<br> Vorsitzende des Aufsichtsrats: Filiz Albrecht<br> ​</p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Gesendet:</b> Montag, 25. Oktober 2021 17:22<br>
+<b>An:</b> Ott Elmar (DC-AE/ESW2) &lt;Elmar.Ott@boschrexroth.de&gt;<br>
+<b>Betreff:</b> RE: Bus Load Object [Ticket#701712]</p>
+</div>
+</div>
+<p> </p>
+<p>Hallo Herr Ott,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>Die Werte können leider nicht zurückgesetzt werden. Die "actual values" beziehen sich auf die letzte Sekunde. Min / Max beziehen sich auf dem letzten ecatConfigureMaster() Aufruf.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Schöne Grüße,</p>
+</div>
+<div>
+<p>Cyril Eyssautier</p>
+<div> <p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Monday, October 25, 2021, 4:12:22 PM, Elmar Ott wrote:</p>
+<p></p>
+<div>
+<p>Hallo,</p>
+<p> </p>
+<p>eine Frage zum Objekt 0x2200 im Master OD:</p>
+<p> </p>
+<p>Lassen sich die Min / Max Werte des Objektes rücksetzen, bzw. wann werden diese rückgesetzt?</p>
+<p>Oder beziehen sich die Min / Max Werte immer nur auf die letzte Sekunde?</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:6.1666in;max-height:3.9791in;width:592px;max-height:382px;" src="/api/v1/ticket_attachment/1712/9202/36330?view=inline"></p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Elmar Ott</b> <br> Engineering Software Firmware DC-AE/ESW2<br>
+<br> Tel. +49 9352 18-5585<br> Elmar.Ott@boschrexroth.de<br>
+<a href="https://eur03.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.boschrexroth.com%2F&amp;data=04%7C01%7Celmar.ott%40boschrexroth.de%7C850cdd83c3624d943e1408d997cb3cfa%7C0ae51e1907c84e4bbb6d648ee58410f4%7C0%7C0%7C637707721413034251%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=8ROGcW1AAYC5vPxqObIniOF5SD%2FUj1wKqky6kO0s4BQ%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://eur03.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.boschrexroth.com%2F&amp;data=04%7C01%7Celmar.ott%40boschrexroth.de%7C850cdd83c3624d943e1408d997cb3cfa%7C0ae51e1907c84e4bbb6d648ee58410f4%7C0%7C0%7C637707721413034251%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=8ROGcW1AAYC5vPxqObIniOF5SD%2FUj1wKqky6kO0s4BQ%3D&amp;reserved=0" target="_blank">www.boschrexroth.com</a><br>
+<br> Bosch Rexroth AG<br> Bgm.-Dr.-Nebel-Str. 2<br> 97816 Lohr am Main<br> GERMANY<br><br>Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart HRB 23192<br> Vorstand: Rolf Najork (Vorsitzender), Dr. Steffen Haack, Holger von Hebel, Reinhard Schäfer, Dr. Marc Wucherer<br> Vorsitzende des Aufsichtsrats: Filiz Albrecht<br> ​</p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>

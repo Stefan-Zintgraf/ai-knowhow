@@ -1,0 +1,203 @@
+### HEADER
+Id=876
+Link=http://at-zammad/#ticket/zoom/876
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Thagora (ID=447, Number=0, Country=RO)
+Commission=Thagora, Cutter Pilot (ID=525, Number=525)
+Number=700876
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=vlad.covaci@thagora.com (ID=446, FirstName=Vlad, LastName=Covaci)
+CreatedBy=vlad.covaci@thagora.com (ID=446, FirstName=Vlad, LastName=Covaci)
+Type=
+TimeUnit=
+CreatedAt=23.06.2021 15:00:18 +00:00
+UpdatedAt=25.04.2022 10:36:28 +00:00
+CloseAt=02.07.2021 06:01:08 +00:00
+ArticlesCount=4
+
+### TITLE
+Delivery for Thagora, Cutter Pilot
+
+### ARTICLE00_HEADER
+Id=4890
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.06.2021 15:00:18 +00:00
+UpdatedAt=23.06.2021 15:00:18 +00:00
+
+### ARTICLE00_SUBJECT
+Delivery for Thagora, Cutter Pilot
+
+### ARTICLE00_BODY
+<div>
+<p>Hello ,</p>
+<p> </p>
+<p>Thank you for collaboration and the proof of professionalism that you showed to us .We are glad that your software is a good solution for our project . However after we received the email with your delivery we reviewed the software items that you provided to us and found some problems :</p>
+<ul type="disc">
+<li> The <b>Ec-Motion SDK</b> suite <b>.zip</b> was missing ;<p></p>
+</li>
+<li> The <b>x64 libraries</b> (<b>libAtemRasSrv.a, libEcMaster.a, libEcMotionControl.a</b>) that we require for our project development are also not in the shipment links ;<p></p>
+</li>
+<li> Please take care that the version of each component that you deliver to be compatible and/or the same . Eg EC-Master-<b>V3.1.0.18</b> with EC-Motion-<b>V3.1.0.18 </b><p></p>
+</li>
+</ul>
+<p>I am looking forward for your response . Since our project development evolution depends on this matter hope to get a reply from you as soon as possible .</p>
+<p> </p>
+<p>Best regards ,</p>
+<p> </p>
+<p>Vlad</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=4892
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.06.2021 15:10:57 +00:00
+UpdatedAt=23.06.2021 15:11:13 +00:00
+
+### ARTICLE01_SUBJECT
+Delivery for Thagora, Cutter Pilot
+
+### ARTICLE01_BODY
+<div>Hi Vlad,</div><div><br></div><div>Please find the missing components. I fix our delieveries now and they will be part of the next EC-WinRT-Linux deliveries.</div><div><br></div><div>Best Regards,</div><div>
+<span>____________________________________________________________________________</span><br>
+</div><div data-signature="true" data-signature-id="2">
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+
+### ARTICLE02_HEADER
+Id=4893
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.06.2021 15:13:34 +00:00
+UpdatedAt=23.06.2021 15:13:38 +00:00
+
+### ARTICLE02_SUBJECT
+Delivery for Thagora, Cutter Pilot
+
+### ARTICLE02_BODY
+<div>Hi Vlad,</div><div><br></div><div>sorry I just see now that you received V3.1.2.01. I will send you the matching package soon.<br><br>
+</div><div>Best Regards,</div><div>Cyril</div><div><br></div><div><blockquote type="cite">On Wednesday, June 23, 2021, 5:10:57 PM, Cyril Eyssautier wrote:<br><br><div>Hi Vlad,</div>
+<div><br></div>
+<div>Please find the missing components. I fix our delieveries now and they will be part of the next EC-WinRT-Linux deliveries.</div>
+<div><br></div>
+<div>Best Regards,</div>
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div data-signature="true" data-signature-id="2">
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<br>
+</blockquote></div><div><br></div>
+
+### ARTICLE03_HEADER
+Id=4894
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.06.2021 15:24:32 +00:00
+UpdatedAt=23.06.2021 15:24:43 +00:00
+
+### ARTICLE03_SUBJECT
+Delivery for Thagora, Cutter Pilot
+
+### ARTICLE03_BODY
+<div>Hi Vlad,</div><div><br></div><div>Please find as attachment the missing components.</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div><br></div><div><blockquote type="cite">On Wednesday, June 23, 2021, 5:13:34 PM, Cyril Eyssautier wrote:<br><br><div>Hi Vlad,</div>
+<div><br></div>
+<div>sorry I just see now that you received V3.1.2.01. I will send you the matching package soon.<br><br>
+</div>
+<div>Best Regards,</div>
+<div>Cyril</div>
+<div><br></div>
+<div><blockquote type="cite">On Wednesday, June 23, 2021, 5:10:57 PM, Cyril Eyssautier wrote:<br><br><div>Hi Vlad,</div>
+<div><br></div>
+<div>Please find the missing components. I fix our delieveries now and they will be part of the next EC-WinRT-Linux deliveries.</div>
+<div><br></div>
+<div>Best Regards,</div>
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div data-signature="true" data-signature-id="2">
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br>
+</blockquote></div><div><br></div>

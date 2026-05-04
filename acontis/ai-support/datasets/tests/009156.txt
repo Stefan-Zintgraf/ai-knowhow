@@ -1,0 +1,227 @@
+### HEADER
+Id=9156
+Link=http://at-zammad/#ticket/zoom/9156
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Yushin, Removal robot for molding machines (ID=922, Number=922)
+Number=709156
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=25.10.2024 03:20:04 +00:00
+UpdatedAt=22.11.2024 07:08:59 +00:00
+CloseAt=25.10.2024 06:24:36 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Master(YUSHIN) [M046]
+
+### ARTICLE00_HEADER
+Id=51899
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=25.10.2024 03:20:04 +00:00
+UpdatedAt=25.10.2024 03:20:07 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(YUSHIN) [M046]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(YUSHIN) [M046]
+
+Is it not possible to unify TimingTask and ECMasterJobTask?
+I plan to set the priority of TimingTask to the highest and the priority of ECMasterJobTask to the next level.
+However, I would like to minimize factors that could cause delays in the execution cycles of other tasks, which is why I am asking this question.
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=51903
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.10.2024 06:24:36 +00:00
+UpdatedAt=25.10.2024 06:24:37 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(YUSHIN) [M046]
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>These 2 function are only an example. <span>By timing issue, we will always take the example as reference</span><span>, but you can implement the timing as you want.</span>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, October 25, 2024 at 5:20:04 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(YUSHIN) [M046]</div>
+<div><br></div>
+<div>Is it not possible to unify TimingTask and ECMasterJobTask?</div>
+<div>I plan to set the priority of TimingTask to the highest and the priority of ECMasterJobTask to the next level.</div>
+<div>However, I would like to minimize factors that could cause delays in the execution cycles of other tasks, which is why I am asking this question.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=52177
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=31.10.2024 02:36:06 +00:00
+UpdatedAt=31.10.2024 02:36:06 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master(YUSHIN) [M046] [Ticket#709156]
+
+### ARTICLE02_BODY
+Dear Cyril san
+
+I apologize for asking you the same question over and over again.
+They are considering ways to minimize the jitter in the PDO communication cycle.
+
+1. Since having tasks split into two—TimingTask and ECMasterJobTask—increases overhead from the scheduler and dispatcher,
+    They  would like to eliminate the TimingTask and modify the ECMasterJobTask to be triggered at specified intervals by the hardware timer interrupt handler.
+    Is this change possible?
+
+2. If the above change is possible, They  understand that we can achieve this by modifying the wai_flg in the OsWaitForEvent of the ECMasterJobTask from "set_flg from TimingTask" to "set_flg from the hardware timer interrupt handler.
+    Is that correct?
+
+3. If both points 1 and 2 are feasible, can we set the cycle of the hardware timer interrupt handler using the variable AppContext.AppParms.dwBusCycleTimeUsec from the sample code?
+
+Best regards,
+Takuya Fujikawa
+
+
+On 2024/10/25 15:24, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+>
+> These 2 function are only an example. By timing issue, we will always take the example as reference, but you can implement the timing as you want.
+>
+> Best Regards,
+> __________________________________________________________________________________________
+> Cyril Eyssautier
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+>
+>
+>> On Friday, October 25, 2024 at 5:20:04 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Master(YUSHIN) [M046]
+>>
+>> Is it not possible to unify TimingTask and ECMasterJobTask?
+>> I plan to set the priority of TimingTask to the highest and the priority of ECMasterJobTask to the next level.
+>> However, I would like to minimize factors that could cause delays in the execution cycles of other tasks, which is why I am asking this question.
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+>
+>
+>
+
+
+### ARTICLE03_HEADER
+Id=52195
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.10.2024 07:28:17 +00:00
+UpdatedAt=31.10.2024 07:28:18 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(YUSHIN) [M046]
+
+### ARTICLE03_BODY
+Hi Takuya,<div><br></div><div>please find my comments [CER] below.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Thursday, October 31, 2024 at 3:36:06 AM, Takuya Fujikawa wrote:<br><br><div>Dear Cyril san</div>
+<div><br></div>
+<div>I apologize for asking you the same question over and over again.</div>
+<div>They are considering ways to minimize the jitter in the PDO communication cycle.</div>
+<div><br></div>
+<div>1. Since having tasks split into two—TimingTask and ECMasterJobTask—increases overhead from the scheduler and dispatcher,</div>
+<div>    They  would like to eliminate the TimingTask and modify the ECMasterJobTask to be triggered at specified intervals by the hardware timer interrupt handler.</div>
+<div>    Is this change possible?</div>
+<div>[CER] Yes</div>
+<div><br></div>
+<div>2. If the above change is possible, They  understand that we can achieve this by modifying the wai_flg in the OsWaitForEvent of the ECMasterJobTask from "set_flg from TimingTask" to "set_flg from the hardware timer interrupt handler.</div>
+<div>    Is that correct?</div>
+<div>[CER] Yes</div>
+<div><br></div>
+<div>3. If both points 1 and 2 are feasible, can we set the cycle of the hardware timer interrupt handler using the variable AppContext.AppParms.dwBusCycleTimeUsec from the sample code?</div>
+<div>[CER] Yes</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2024/10/25 15:24, Cyril Eyssautier via EC-Support wrote:</div>
+<div>&gt; Hi Takuya,</div>
+<div>&gt;</div>
+<div>&gt; These 2 function are only an example. By timing issue, we will always take the example as reference, but you can implement the timing as you want.</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Cyril Eyssautier</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Friday, October 25, 2024 at 5:20:04 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Master(YUSHIN) [M046]</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Is it not possible to unify TimingTask and ECMasterJobTask?</div>
+<div>&gt;&gt; I plan to set the priority of TimingTask to the highest and the priority of ECMasterJobTask to the next level.</div>
+<div>&gt;&gt; However, I would like to minimize factors that could cause delays in the execution cycles of other tasks, which is why I am asking this question.</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,230 @@
+### HEADER
+Id=1842
+Link=http://at-zammad/#ticket/zoom/1842
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=701842
+Owner=m.bachmann@acontis.com (ID=9, FirstName=Maximilian, LastName=Bachmann)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=16.11.2021 18:09:22 +00:00
+UpdatedAt=10.12.2021 09:23:23 +00:00
+CloseAt=10.12.2021 09:23:23 +00:00
+ArticlesCount=1
+
+### TITLE
+EC-Master Progress
+
+### ARTICLE00_HEADER
+Id=9753
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.11.2021 18:09:22 +00:00
+UpdatedAt=16.11.2021 18:09:22 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Master Progress
+
+### ARTICLE00_BODY
+<div dir="auto">Max, can you send your ecmasterdemo log set to verbose? Also, could you send me your complete project, including the pci driver file, linklayer, and LinkOsLayer? That would be good to have as I look at this when I am back to the office on Wednesday. I'm just concerned because I think I already had that line fixed in my implementation.<br>
+<br>
+</div><div dir="auto">Quinton</div><div> </div><hr>
+<div dir="ltr">
+<b>From:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt;<br>
+<b>Sent:</b> Monday, November 15, 2021 11:26:09 AM<br>
+<b>To:</b> Jon Waters &lt;j.waters@acontis.com&gt;; ecsupport@acontis.com &lt;ecsupport@acontis.com&gt;<br>
+<b>Cc:</b> Paul Huumala &lt;Paul@deltamotion.com&gt;<br>
+<b>Subject:</b> Re: EC-Master Progress <div> </div>
+</div><div dir="ltr">
+<div>Thanks for the update, Jon (and Max)!</div>
+<div> </div>
+<div>I will look at that when I return to the office Wednesday. I think I may have already made a change like that since I sent Cyril the files several weeks ago, but I will double check. Regardless, seeing that they can run the demo is encouraging, and I hope that we can get my system working without too much effort.</div>
+<div> </div>
+<div>Thanks again.</div>
+<div> </div>
+<div>--Quinton</div>
+<hr>
+<div dir="ltr">
+<b>From:</b> Jon Waters &lt;j.waters@acontis.com&gt;<br>
+<b>Sent:</b> Monday, November 15, 2021 11:03 AM<br>
+<b>To:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt;<br>
+<b>Cc:</b> Paul Huumala &lt;Paul@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: EC-Master Progress <div> </div>
+</div>
+<div lang="EN-US">
+<div>
+<p>Hi Quinton,</p>
+<p> </p>
+<p>I hope that you had a productive week and also enjoyed some experiences in Germany with your family. Hopefully all went well on your travels back to the US.</p>
+<p> </p>
+<p>Our engineer Max was able to reproduce the issue you have with this. He suggests the below workaround for now to keep you moving forward until we complete the portation work and official support:</p>
+<p> </p>
+<p>It is possible to change the `LinkOsAllocDmaBuffer` function in `LinkOsLayer.cpp`</p>
+<p>from</p>
+<p>```</p>
+<p>EC_FNNAME EC_T_VOID EC_FNCALL LinkOsAllocDmaBuffer(</p>
+<p>EC_T_VOID* pvLinkOsContext,</p>
+<p>EC_T_BYTE** pbyVirtAddrCached,</p>
+<p>EC_T_BYTE** ppbyVirtAddrUncached,</p>
+<p>EC_T_UINT64* pqwPhysAddr,</p>
+<p>EC_T_DWORD dwSize)</p>
+<p>{</p>
+<p>ExtendedAddress dma_bus_addr;</p>
+<p> </p>
+<p>EC_UNREFPARM(pvLinkOsContext);</p>
+<p>EC_UNREFPARM(dwSize);</p>
+<p> </p>
+<p>*pbyVirtAddrCached = (EC_T_BYTE*)S_dma_virt;</p>
+<p>*ppbyVirtAddrUncached = (EC_T_BYTE*)S_dma_virt;</p>
+<p>dma_bus_addr = *((ExtendedAddress*)(S_dma_virt + 0x100000 - sizeof(ExtendedAddress)));</p>
+<p>*pqwPhysAddr = dma_bus_addr;</p>
+<p> </p>
+<p>return;</p>
+<p>}</p>
+<p>```</p>
+<p>to</p>
+<p>```</p>
+<p>EC_FNNAME EC_T_VOID EC_FNCALL LinkOsAllocDmaBuffer(</p>
+<p>EC_T_VOID* pvLinkOsContext,</p>
+<p>EC_T_BYTE** pbyVirtAddrCached,</p>
+<p>EC_T_BYTE** ppbyVirtAddrUncached,</p>
+<p>EC_T_UINT64* pqwPhysAddr,</p>
+<p>EC_T_DWORD dwSize)</p>
+<p>{</p>
+<p>ExtendedAddress dma_bus_addr;</p>
+<p> </p>
+<p>EC_UNREFPARM(pvLinkOsContext);</p>
+<p>EC_UNREFPARM(dwSize);</p>
+<p> </p>
+<p>*pbyVirtAddrCached = (EC_T_BYTE*)S_dma_virt;</p>
+<p>*ppbyVirtAddrUncached = (EC_T_BYTE*)S_dma_virt;</p>
+<p>*pqwPhysAddr = S_dma_phys;</p>
+<p>}</p>
+<p>```</p>
+<p> </p>
+<p>With this change I could successfully run the EcMasterDemo</p>
+<p> </p>
+<div>
+<p>/Jon</p>
+</div>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt; <br>
+<b>Sent:</b> Tuesday, November 2, 2021 3:52 PM<br>
+<b>To:</b> Jon Waters &lt;j.waters@acontis.com&gt;<br>
+<b>Cc:</b> Paul Huumala &lt;paul@deltamotion.com&gt;<br>
+<b>Subject:</b> Re: EC-Master Progress</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Thanks for the update. I'll bring a unit with me to see if we can work together on figuring this out, if time allows.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<hr>
+</div>
+<div>
+<p><b>From:</b> Jon Waters &lt;j.waters@acontis.com&gt;<br>
+<b>Sent:</b> Tuesday, November 2, 2021 7:42:30 AM<br>
+<b>To:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt;<br>
+<b>Cc:</b> Paul Huumala &lt;Paul@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: EC-Master Progress </p>
+<div>
+<p> </p>
+</div>
+</div>
+<div>
+<div>
+<p>Hi Quinton,</p>
+<p> </p>
+<p>We were dealing with some Green Hills licensing issues last week and weren’t able to spend much time on this yet. The primary engineering working on this phase of the project is off this week and will be back on Monday.</p>
+<p> </p>
+<p>According to the EC-Master project manager, it sounds like there is an issue with the DMA. It could help to increase the logging verbosity level to EC_LOG_LEVEL_VERBOSE and checking the address values could be enough to see what is going wrong. Otherwise we can for sure work on this next week when you are in the office with the developers.</p>
+<p> </p>
+<div>
+<p>/Jon</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt; <br>
+<b>Sent:</b> Monday, November 1, 2021 11:15 PM<br>
+<b>To:</b> Jon Waters &lt;j.waters@acontis.com&gt;<br>
+<b>Cc:</b> Paul Huumala &lt;paul@deltamotion.com&gt;<br>
+<b>Subject:</b> Re: EC-Master Progress</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Jon, have you heard back from your engineers on this? I'm still stuck on my end getting the driver to work, although I haven't had much time to work on it.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<hr>
+</div>
+<div>
+<p><b>From:</b> Jon Waters &lt;j.waters@acontis.com&gt;<br>
+<b>Sent:</b> Wednesday, October 27, 2021 11:01:06 AM<br>
+<b>To:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt;<br>
+<b>Cc:</b> Paul Huumala &lt;Paul@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: EC-Master Progress </p>
+<div>
+<p> </p>
+</div>
+</div>
+<div>
+<div>
+<p>Thanks for the update Quinton, I will check and see what they say.</p>
+<p> </p>
+<div>
+<p>/Jon</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt; <br>
+<b>Sent:</b> Wednesday, October 27, 2021 12:12 PM<br>
+<b>To:</b> Jon Waters &lt;j.waters@acontis.com&gt;<br>
+<b>Cc:</b> Paul Huumala &lt;paul@deltamotion.com&gt;<br>
+<b>Subject:</b> EC-Master Progress</p>
+</div>
+</div>
+<p> </p>
+<p>Jon,</p>
+<p> </p>
+<p>I have updated my PCI enumeration code in the INTEGRITY kernel to allocate MAC and DMA memory mappings that the I8254x driver can use. Once I got that completed, the existing I8254x driver was able to access the Intel I210 ethernet controllers, read their MAC addresses, and detect link up/down transitions. That was exciting!</p>
+<p> </p>
+<p>However, at this point I am not able to get it to send or receive any data. I’ll be looking at it again this afternoon after a few meetings, but I thought I would mention where my current roadblock is in case your developers have gotten past this point and have something they can share.</p>
+<p> </p>
+<p>Thanks.</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

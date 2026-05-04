@@ -1,0 +1,135 @@
+### HEADER
+Id=7709
+Link=http://at-zammad/#ticket/zoom/7709
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=707709
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=21.03.2024 06:22:30 +00:00
+UpdatedAt=02.04.2024 07:59:10 +00:00
+CloseAt=02.04.2024 07:59:10 +00:00
+ArticlesCount=2
+
+### TITLE
+The potential customer JSG requirement for connecting with beckhoff FSoE slave
+
+### ARTICLE00_HEADER
+Id=42527
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.03.2024 06:22:30 +00:00
+UpdatedAt=21.03.2024 06:22:31 +00:00
+
+### ARTICLE00_SUBJECT
+The potential customer JSG requirement for connecting with beckhoff FSoE slave
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently we are connecting with the JSG, they used the twincat and beckhoff Safety PLC / safety IO.</div>
+<div>We find that the UDP mailbox FP discuss some information about TwinSAFE, Dose the UDP mailbox FP necessary if they want to download and monitor the Safety PLC?</div>
+<div><img src="/api/v1/ticket_attachment/7709/42527/176301?view=inline" style="max-width:100%;width:747px;max-height:517px;"></div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=42530
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.03.2024 06:54:58 +00:00
+UpdatedAt=21.03.2024 06:54:59 +00:00
+
+### ARTICLE01_SUBJECT
+The potential customer JSG requirement for connecting with beckhoff FSoE slave
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>Yes our <span>FP UDP Mailbox Gateway</span><span> is mandatory to use the TwinSafe Loader tool.</span><br>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, March 21, 2024 at 7:22:30 AM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently we are connecting with the JSG, they used the twincat and beckhoff Safety PLC / safety IO.</div>
+<div>We find that the UDP mailbox FP discuss some information about TwinSAFE, Dose the UDP mailbox FP necessary if they want to download and monitor the Safety PLC?</div>
+<div><img src="/api/v1/ticket_attachment/7709/42530/176309?view=inline" style="max-width:100%;max-width:100%;width:747px;max-height:517px;"></div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

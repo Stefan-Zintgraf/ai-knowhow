@@ -1,0 +1,229 @@
+### HEADER
+Id=2307
+Link=http://at-zammad/#ticket/zoom/2307
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Beckhoff (ID=543, Number=0, Country=DE)
+Commission=ETG, Generic (ID=509, Number=509)
+Number=702307
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=f.hammel@beckhoff.com (ID=752, FirstName=Florian, LastName=Hammel)
+CreatedBy=f.hammel@beckhoff.com (ID=752, FirstName=Florian, LastName=Hammel)
+Type=
+TimeUnit=
+CreatedAt=24.01.2022 10:31:04 +00:00
+UpdatedAt=28.04.2022 05:42:51 +00:00
+CloseAt=25.01.2022 08:56:59 +00:00
+ArticlesCount=3
+
+### TITLE
+EC-Engineer
+
+### ARTICLE00_HEADER
+Id=12161
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.01.2022 10:31:04 +00:00
+UpdatedAt=24.01.2022 10:31:09 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Engineer
+
+### ARTICLE00_BODY
+<div>
+</div><div>
+<p>Hallo Acontis,</p>
+<p> </p>
+<p>Wir haben hier im ETG Büro ja einen Acontis PC. Bei dem kam gerade dieses hier:</p>
+<p> </p>
+<p><img style="max-width:100%;width:3.6041in;max-height:2.2708in;width:346px;max-height:218px;" src="/api/v1/ticket_attachment/2307/12161/47234?view=inline"></p>
+<p> </p>
+<p>Bitte einmal wieder freischalten.</p>
+<p> </p>
+<p>Danke und Gruß,</p>
+<p>Florian HAMMEL</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>------------------------------------</p>
+<p>Florian HAMMEL</p>
+<p><b>Beckhoff Automation GmbH &amp; Co. KG</b></p>
+<p>Ostendstr. 196</p>
+<p>90482 Nuremberg</p>
+<p>Germany</p>
+<p> </p>
+<p>phone: +49 (0) 911 - 54056 - 21</p>
+<p>fax: +49 (0) 911 - 54056 - 29</p>
+<p>mail: f.hammel@beckhoff.com</p>
+<p>web: <a href="http://www.beckhoff.com" rel="nofollow noreferrer noopener" target="_blank">http://www.beckhoff.com</a></p>
+<p>------------------------------------</p>
+<p> </p>
+</div><br> Beckhoff Automation GmbH &amp; Co. KG | Managing Director: Dipl. Phys. Hans Beckhoff<br> Registered office: Verl, Germany | Register court: Guetersloh HRA 7075
+
+### ARTICLE01_HEADER
+Id=12180
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.01.2022 13:44:23 +00:00
+UpdatedAt=24.01.2022 13:44:26 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Engineer
+
+### ARTICLE01_BODY
+<div data-signature="true" data-signature-id="2">
+<div><span>Hallo Florian,</span></div>
+<div><span><br></span></div>
+<div><span>du kannst die Eval deinstallieren, und die nächste installieren:</span></div>
+<div><span><br></span></div>
+<div><div><a href="http://software.acontis.com/EC-Tools/V36/EC-Engineer_Eval_V3.6.4.zip" title="http://software.acontis.com/EC-Tools/V36/EC-Engineer_Eval_V3.6.4.zip" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/EC-Tools/V36/EC-Engineer_Eval_V3.6.4.zip</a></div></div>
+<div><br></div>
+<div><span>Grüße,</span></div>
+<div><span>Cyril</span></div>
+<div><br></div>
+</div><div><blockquote type="cite">On Monday, January 24, 2022, 11:31:04 AM, Florian Hammel wrote:<br><br><div>
+</div>
+<div>
+<p>Hallo Acontis,</p>
+<p> </p>
+<p>Wir haben hier im ETG Büro ja einen Acontis PC. Bei dem kam gerade dieses hier:</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:3.6041in;max-height:2.2708in;width:346px;max-height:218px;" src="/api/v1/ticket_attachment/2307/12180/47342?view=inline"></p>
+<p> </p>
+<p>Bitte einmal wieder freischalten.</p>
+<p> </p>
+<p>Danke und Gruß,</p>
+<p>Florian HAMMEL</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>------------------------------------</p>
+<p>Florian HAMMEL</p>
+<p><b>Beckhoff Automation GmbH &amp; Co. KG</b></p>
+<p>Ostendstr. 196</p>
+<p>90482 Nuremberg</p>
+<p>Germany</p>
+<p> </p>
+<p>phone: +49 (0) 911 - 54056 - 21</p>
+<p>fax: +49 (0) 911 - 54056 - 29</p>
+<p>mail: f.hammel@beckhoff.com</p>
+<p>web: <a href="http://www.beckhoff.com" rel="nofollow noreferrer noopener" target="_blank">http://www.beckhoff.com</a></p>
+<p>------------------------------------</p>
+<p> </p>
+</div>
+<br> Beckhoff Automation GmbH &amp; Co. KG | Managing Director: Dipl. Phys. Hans Beckhoff<br> Registered office: Verl, Germany | Register court: Guetersloh HRA 7075<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=12195
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.01.2022 16:36:51 +00:00
+UpdatedAt=24.01.2022 16:36:51 +00:00
+
+### ARTICLE02_SUBJECT
+RE: EC-Engineer [Ticket#702307]
+
+### ARTICLE02_BODY
+<div>
+</div><div>
+<p>Hat geklappt. Danke!</p>
+<p> </p>
+<div>
+<p>Kind regards,</p>
+<p>Florian HAMMEL</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>------------------------------------</p>
+<p>Florian HAMMEL</p>
+<p><b>Beckhoff Automation GmbH &amp; Co. KG</b></p>
+<p>Ostendstr. 196</p>
+<p>90482 Nuremberg</p>
+<p>Germany</p>
+<p> </p>
+<p>phone: +49 (0) 911 - 54056 - 21</p>
+<p>fax: +49 (0) 911 - 54056 - 29</p>
+<p>mail: f.hammel@beckhoff.com</p>
+<p>web: <a href="http://www.beckhoff.com" rel="nofollow noreferrer noopener" target="_blank">http://www.beckhoff.com</a></p>
+<p>------------------------------------</p>
+</div>
+<p> </p>
+<div>
+<br> Beckhoff Automation GmbH &amp; Co. KG | Managing Director: Dipl. Phys. Hans Beckhoff<br> Registered office: Verl, Germany | Register court: Guetersloh HRA 7075 <br>
+<br>
+<div>
+<p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Montag, 24. Januar 2022 14:44<br>
+<b>To:</b> Florian Hammel &lt;F.Hammel@beckhoff.com&gt;<br>
+<b>Subject:</b> RE: EC-Engineer [Ticket#702307]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p><b>CAUTION:</b> External Email!! </p>
+</div>
+<p> </p>
+<div>
+<div>
+<p>Hallo Florian,</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>du kannst die Eval deinstallieren, und die nächste installieren:</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<div>
+<p><a href="https://nospamproxywebp.beckhoff.com/enqsig/link?id=BCAAAABGd7m3lfMOLOIhx3uNR_1Qav4Ffx8-jQB0torD82ts_JsAAADT0PGc-DICQ9mmGd_3e37UMpaOJ3zFfh-OaqG90uUIabQ3okNF7n9d4zf7p1JRDHD72WqDI3zLeB-DPjHwcrtnUv9bOImyP3jd0VKYfxhPFNlRVLoczQUE-l_XY8rLL6HnFSr8r8fGbbmUYwQlsyFdllz2frnDvorllDqC_JY0pDOVU0nvvwEhRbOsMWxExorLoVLXRqWFjGwq1g2" title="https://nospamproxywebp.beckhoff.com/enqsig/link?id=BCAAAABGd7m3lfMOLOIhx3uNR_1Qav4Ffx8-jQB0torD82ts_JsAAADZor-zQHv2EqY3H1_lw88pVE_yTVwfdwjKyAuqXIPyTDmgIp5DUY8jS9OnitUy36YvaxxOIbClv--o3nhI8l9NblDXdXpiBvCoLWOJYySMJ0o5aebuYlG6qiGfIYkzke3X80hXznHG6didNOETBsO" rel="nofollow noreferrer noopener" target="_blank">Protected link</a></p>
+</div>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Grüße,</p>
+</div>
+<div>
+<p>Cyril</p>
+</div>
+<div> <p> </p>
+</div>
+</div>
+<div>
+<blockquote>
+<p>On Monday, January 24, 2022, 11:31:04 AM, Florian Hammel wrote:</p>
+<p></p>
+<div>
+<p>Hallo Acontis,</p>
+<p> </p>
+<p>Wir haben hier im ETG Büro ja einen Acontis PC. Bei dem kam gerade dieses hier:</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:3.6041in;max-height:2.2708in;width:346px;max-height:218px;" src="/api/v1/ticket_attachment/2307/12195/47467?view=inline"></p>
+<p> </p>
+<p>Bitte einmal wieder freischalten.</p>
+<p> </p>
+<p>Danke und Gruß,</p>
+<p>Florian HAMMEL</p>
+<p> </p>
+<p>------------------------------------</p>
+<p>Florian HAMMEL</p>
+<p><b>Beckhoff Automation GmbH &amp; Co. KG</b></p>
+<p>Ostendstr. 196</p>
+<p>90482 Nuremberg</p>
+<p>Germany</p>
+<p> </p>
+<p>phone: +49 (0) 911 - 54056 - 21</p>
+<p>fax: +49 (0) 911 - 54056 - 29</p>
+<p>mail: f.hammel@beckhoff.com</p>
+<p>web: <a href="http://www.beckhoff.com" rel="nofollow noreferrer noopener" target="_blank">http://www.beckhoff.com</a></p>
+<p>------------------------------------</p>
+<p> </p>
+</div>
+<p><br> Beckhoff Automation GmbH &amp; Co. KG | Managing Director: Dipl. Phys. Hans Beckhoff<br> Registered office: Verl, Germany | Register court: Guetersloh HRA 7075</p>
+<p></p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>

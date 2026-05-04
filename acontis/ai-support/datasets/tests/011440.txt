@@ -1,0 +1,116 @@
+### HEADER
+Id=11440
+Link=http://at-zammad/#ticket/zoom/11440
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=Hyundai Robotics., Robot Cont. (ID=340, Number=340)
+Number=7011440
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=19.09.2025 02:45:23 +00:00
+UpdatedAt=31.10.2025 07:12:14 +00:00
+CloseAt=31.10.2025 07:12:15 +00:00
+ArticlesCount=2
+
+### TITLE
+Regarding Platforms(OS & CPU & Linklayer) that support mastershift mode [ thread::RJXQr6obPb6K3PBzyKMQ9y0:: ]
+
+### ARTICLE00_HEADER
+Id=66093
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.09.2025 02:45:23 +00:00
+UpdatedAt=19.09.2025 02:45:25 +00:00
+
+### ARTICLE00_SUBJECT
+Regarding Platforms(OS & CPU & Linklayer) that support mastershift mode [ thread::RJXQr6obPb6K3PBzyKMQ9y0:: ]
+
+### ARTICLE00_BODY
+<p>Hi.</p><p><br></p><p>The customer is Hyundai Robotics.</p><p><br></p><p>&amp; They want to test a DCM Mastershift mode to improve DC jitter.</p><p><br></p><p>When i checked the error log, it seems that the platform they are using does not support matershift mode. (Please refer to attached log file)</p><p><br></p><p>Is there any information to check which platforms(OS &amp; CPU &amp; Linklayer) support mastershift mode ?</p><p><br></p><p>Please advise.</p><p><br></p><p><br></p><br><br><p>감사합니다.</p><p><br></p><p>Thank you</p><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px; width: 610px;"><tbody><tr>
+<td style=" padding: 0px; width: 127px;"><p><img src="/api/v1/ticket_attachment/11440/66093/275572?view=inline" title="" alt="" style="max-width:100%;"></p></td>
+<td style=" padding: 0px; width: 480px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sund</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">u</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">khan@prestosolution.co.kr</a></span></u></i></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table><p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+
+### ARTICLE01_HEADER
+Id=66105
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.09.2025 07:11:35 +00:00
+UpdatedAt=19.09.2025 07:11:36 +00:00
+
+### ARTICLE01_SUBJECT
+Regarding Platforms(OS & CPU & Linklayer) that support mastershift mode [ thread::RJXQr6obPb6K3PBzyKMQ9y0:: ]
+
+### ARTICLE01_BODY
+Hi Hans,<div><br></div><div>yes MasterShift under Vxworks is not supported out of the box, they need today some specific HW Layer depending on the timer HW (local APIC timer or 8254) they use for they EtherCAT cycle.</div><div><br></div><div>This is one restriction of MasterShift:</div><div>
+<a href="https://software.acontis.com/Documents/AT1020_V1.3_EC-Master-Technical.pdf" title="https://software.acontis.com/Documents/AT1020_V1.3_EC-Master-Technical.pdf" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/Documents/AT1020_V1.3_EC-Master-Technical.pdf</a> Page 35</div><div><br></div><div>In V3.2, we extend the API with <span style="background-color: initial; color: rgb(88, 88, 86);">pfnAdjustCycleTime</span><span style="background-color: initial; color: rgb(88, 88, 86);">, to enable the customers to implement the time adjustment by themselves:</span>
+</div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-a/dcm_api.html#_CPPv427EC_T_DCM_CONFIG_MASTERSHIFT" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-a/dcm_api.html#_CPPv427EC_T_DCM_CONFIG_MASTERSHIFT" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-a/dcm_api.html#_CPPv427EC_T_DCM_CONFIG_MASTERSHIFT</a></div><div><br></div><div>Unfortunately, we don't have an official overview but if the OS provide some nanosleep functions like Linux, the implementation is easy. They can ask WindRiver.</div><div><a href="https://pubs.opengroup.org/onlinepubs/007904975/functions/nanosleep.html" title="https://pubs.opengroup.org/onlinepubs/007904975/functions/nanosleep.html" rel="nofollow noreferrer noopener" target="_blank">https://pubs.opengroup.org/onlinepubs/007904975/functions/nanosleep.html</a></div><div><br></div><div>Today we have some unmaintained source code for 8254 support on QNX, RTOS-32, VxWorks and for LoAPIC on RTOS-32 and VxWorks.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, September 19, 2025 at 4:45:23 AM, DukHan Sun wrote:<br><br><p>Hi.</p>
+<p><br></p>
+<p>The customer is Hyundai Robotics.</p>
+<p><br></p>
+<p>&amp; They want to test a DCM Mastershift mode to improve DC jitter.</p>
+<p><br></p>
+<p>When i checked the error log, it seems that the platform they are using does not support matershift mode. (Please refer to attached log file)</p>
+<p><br></p>
+<p>Is there any information to check which platforms(OS &amp; CPU &amp; Linklayer) support mastershift mode ?</p>
+<p><br></p>
+<p>Please advise.</p>
+<p><br></p>
+<p><br></p>
+<br><br><p>감사합니다.</p>
+<p><br></p>
+<p>Thank you</p>
+<p><br></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px; width: 610px;"><tbody><tr>
+<td style=" padding: 0px; width: 127px;"><p><img src="/api/v1/ticket_attachment/11440/66105/275600?view=inline" title="" alt="" style="max-width:100%;max-width:100%;"></p></td>
+<td style=" padding: 0px; width: 480px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sund</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">u</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">khan@prestosolution.co.kr</a></span></u></i></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

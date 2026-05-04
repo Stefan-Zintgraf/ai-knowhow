@@ -1,0 +1,140 @@
+### HEADER
+Id=1457
+Link=http://at-zammad/#ticket/zoom/1457
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Maesot Heavy Industries (ID=491, Number=0, Country=TH)
+Commission=Maesot Heavy Industries, Unknown (ID=567, Number=567)
+Number=701457
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=dchiu@mhi.co.th (ID=636, FirstName=Derek, LastName=Chiu)
+CreatedBy=dchiu@mhi.co.th (ID=636, FirstName=Derek, LastName=Chiu)
+Type=
+TimeUnit=
+CreatedAt=20.09.2021 01:49:14 +00:00
+UpdatedAt=27.04.2022 07:40:47 +00:00
+CloseAt=20.09.2021 16:08:52 +00:00
+ArticlesCount=3
+
+### TITLE
+EtherCAT Master Programming Interface Inquiry
+
+### ARTICLE00_HEADER
+Id=7857
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.09.2021 01:49:14 +00:00
+UpdatedAt=20.09.2021 01:49:14 +00:00
+
+### ARTICLE00_SUBJECT
+EtherCAT Master Programming Interface Inquiry
+
+### ARTICLE00_BODY
+<div dir="ltr">
+<div>Dear Sir/Madam,</div>
+<div> </div>
+<div>We are a foundry plant and machine manufacturer located in Tak, Thailand. Our products include sand casting parts and also offer automation for general machinery with the expertise focused in the foundry industry.<br>
+</div>
+<div> </div>
+<div>Our current project is focused on foundry purposed robotics with the following architecture:</div>
+<div>1) Kinematic solver, trajectory generation, main controller and user interface(all written in C++ and Python) on a Linux PC with PREEMPTIVE_RT patch<br>
+</div>
+<div>2) EtherCAT servo drives (Yaskawa Sigma 7, and/or Delta ASDA A2)<br>
+</div>
+<div>3) EtherCAT slave station (Digital Inputs and Outputs)</div>
+<div> </div>
+<div>As the developers are closing in to the integration stage, we require a EtherCAT master solution for the Linux PC to connect with the EtherCAT slave devices. From the documentations found, acontis technology EC-Master is suitable for various operating systems such as Windows, Linux and many other various OS.<br>
+</div>
+<div>However upon closer inspection, it appears that the EC-Master can even be used to integrate into a full fledged general purpose controller( for example PLC). This is quite excessive for our current application.<br>
+</div>
+<div>In order to speed up the developing process, we are wondering if acontis also offers:</div>
+<div>1) C++ motion control library similar to that of IEC-61131 PLCopen. (MC_Power, MC_MoveAbsolute(continous update), MC_GearIn...).<br>
+</div>
+<div>2) C++ interface to read and write simple digital input/outputs from/to the EtherCAT slave station.<br>
+</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Derek Chiu</div>
+<div>Mechatronic Engineer</div>
+<div>Maesot Heavy Industry<br>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=7887
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=20.09.2021 16:08:52 +00:00
+UpdatedAt=20.09.2021 16:08:52 +00:00
+
+### ARTICLE01_BODY
+An sales weitergeleitet
+
+### ARTICLE02_HEADER
+Id=15383
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.04.2022 07:40:47 +00:00
+UpdatedAt=27.04.2022 07:40:50 +00:00
+
+### ARTICLE02_SUBJECT
+EtherCAT Master Programming Interface Inquiry
+
+### ARTICLE02_BODY
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Christoph Widmann </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div><br><div>---Begin forwarded message:---<br><br>
+</div><div><blockquote type="cite">
+<div>Subject: EtherCAT Master Programming Interface Inquiry<br>Date: 09/20/2021 03:49<br>From: Derek Chiu &lt;dchiu@mhi.co.th&gt;<br>To: ecsupport@acontis.com<br><br>
+</div>
+<div dir="ltr">
+<div>Dear Sir/Madam,</div>
+<div> </div>
+<div>We are a foundry plant and machine manufacturer located in Tak, Thailand. Our products include sand casting parts and also offer automation for general machinery with the expertise focused in the foundry industry.<br>
+</div>
+<div> </div>
+<div>Our current project is focused on foundry purposed robotics with the following architecture:</div>
+<div>1) Kinematic solver, trajectory generation, main controller and user interface(all written in C++ and Python) on a Linux PC with PREEMPTIVE_RT patch<br>
+</div>
+<div>2) EtherCAT servo drives (Yaskawa Sigma 7, and/or Delta ASDA A2)<br>
+</div>
+<div>3) EtherCAT slave station (Digital Inputs and Outputs)</div>
+<div> </div>
+<div>As the developers are closing in to the integration stage, we require a EtherCAT master solution for the Linux PC to connect with the EtherCAT slave devices. From the documentations found, acontis technology EC-Master is suitable for various operating systems such as Windows, Linux and many other various OS.<br>
+</div>
+<div>However upon closer inspection, it appears that the EC-Master can even be used to integrate into a full fledged general purpose controller( for example PLC). This is quite excessive for our current application.<br>
+</div>
+<div>In order to speed up the developing process, we are wondering if acontis also offers:</div>
+<div>1) C++ motion control library similar to that of IEC-61131 PLCopen. (MC_Power, MC_MoveAbsolute(continous update), MC_GearIn...).<br>
+</div>
+<div>2) C++ interface to read and write simple digital input/outputs from/to the EtherCAT slave station.<br>
+</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Derek Chiu</div>
+<div>Mechatronic Engineer</div>
+<div>Maesot Heavy Industry<br>
+</div>
+</div>
+</blockquote></div><div><br></div><br><br>

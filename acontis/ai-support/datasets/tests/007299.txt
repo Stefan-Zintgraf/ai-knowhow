@@ -1,0 +1,173 @@
+### HEADER
+Id=7299
+Link=http://at-zammad/#ticket/zoom/7299
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Neocis (ID=707, Number=0, Country=US)
+Commission=Neocis, Yomi Robot Gen 2 (ID=792, Number=792)
+Number=707299
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=arimozes@neocis.com (ID=2100, FirstName=Ari, LastName=Mozes)
+CreatedBy=arimozes@neocis.com (ID=2100, FirstName=Ari, LastName=Mozes)
+Type=
+TimeUnit=
+CreatedAt=23.01.2024 13:38:27 +00:00
+UpdatedAt=29.01.2024 12:52:57 +00:00
+CloseAt=24.01.2024 14:30:44 +00:00
+ArticlesCount=3
+
+### TITLE
+NETDEV WATCHDOG and machine freezing
+
+### ARTICLE00_HEADER
+Id=40004
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.01.2024 13:38:27 +00:00
+UpdatedAt=23.01.2024 13:38:27 +00:00
+
+### ARTICLE00_SUBJECT
+NETDEV WATCHDOG and machine freezing
+
+### ARTICLE00_BODY
+<div dir="ltr">Hello.<div>I have been troubleshooting an issue with our computer running the ECMaster application where the computer freezes and needs a hard reboot to recover.</div>
+<div> </div>
+<div>Looking through the logs, I see entries like:</div>
+<div>Jan 17 18:25:36 neok-PC kernel: [ 191.064536] NETDEV WATCHDOG: enp46s0 (igc): transmit queue 1 timed out<br>Jan 17 18:25:36 neok-PC kernel: [ 191.064562] WARNING: CPU: 7 PID: 68 at net/sched/sch_generic.c:477 dev_watchdog+0x2f3/0x300<br>Jan 17 18:25:36 neok-PC kernel: [ 191.064571] Modules linked in: atemsys(OE) ... <br><div> </div>
+<div>which I think occurs right before the freeze.</div>
+<div>I have just tried to use isolcpus to isolate the ECMaster application thread which handles the ethercat network to a single CPU unavailable to others, but unsure if that will do it. Also looked into isolated IRQs for that network adapter to a CPU (either the same or another), but I didn't see anything in acontis documentation about this.</div>
+<div> </div>
+<div>Can you provide some guidance on troubleshooting this?</div>
+<div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><span><p dir="ltr"><span style="color:rgb(245,126,32);">Ari Mozes</span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);">Chief Software Architect</span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);"><a href="mailto:arimozes@neocis.com">arimozes@neocis.com</a></span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);">781.266.6553</span></p>
+<p dir="ltr"><span style="color:#666666;"></span><span style="color:#666666;"></span><span style="color:#666666;"></span><span style="color:#666666;"></span></p>
+<p dir="ltr"><span style="color:#666666;"></span></p>
+<p dir="ltr"></p>
+<p dir="ltr"><br></p></span></div></div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=40065
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.01.2024 13:46:20 +00:00
+UpdatedAt=24.01.2024 13:46:20 +00:00
+
+### ARTICLE01_SUBJECT
+NETDEV WATCHDOG and machine freezing
+
+### ARTICLE01_BODY
+<div dir="ltr">I just realized this ethernet device is not the one used for the ethercat bus - it is a different ethernet port on the same system, and I suspect it is caused by a faulty USBC-ethernet adapter.<div>So, I don't think this is related to EC Master - but do let me know if there are things you think might be helpful for troubleshooting in future.</div>
+</div><br><div>
+<div dir="ltr">On Tue, Jan 23, 2024 at 8:37 AM Ari Mozes &lt;<a href="mailto:arimozes@neocis.com">arimozes@neocis.com</a>&gt; wrote:<br>
+</div>
+<blockquote>
+<div dir="ltr">Hello.<div>I have been troubleshooting an issue with our computer running the ECMaster application where the computer freezes and needs a hard reboot to recover.</div>
+<div> </div>
+<div>Looking through the logs, I see entries like:</div>
+<div>Jan 17 18:25:36 neok-PC kernel: [ 191.064536] NETDEV WATCHDOG: enp46s0 (igc): transmit queue 1 timed out<br>Jan 17 18:25:36 neok-PC kernel: [ 191.064562] WARNING: CPU: 7 PID: 68 at net/sched/sch_generic.c:477 dev_watchdog+0x2f3/0x300<br>Jan 17 18:25:36 neok-PC kernel: [ 191.064571] Modules linked in: atemsys(OE) ... <br><div> </div>
+<div>which I think occurs right before the freeze.</div>
+<div>I have just tried to use isolcpus to isolate the ECMaster application thread which handles the ethercat network to a single CPU unavailable to others, but unsure if that will do it. Also looked into isolated IRQs for that network adapter to a CPU (either the same or another), but I didn't see anything in acontis documentation about this.</div>
+<div> </div>
+<div>Can you provide some guidance on troubleshooting this?</div>
+<div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><span><p dir="ltr"><span style="color:rgb(245,126,32);">Ari Mozes</span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);">Chief Software Architect</span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);"><a href="mailto:arimozes@neocis.com">arimozes@neocis.com</a></span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);">781.266.6553</span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);"></span><span style="color:rgb(102,102,102);"></span><span style="color:rgb(102,102,102);"></span><span style="color:rgb(102,102,102);"></span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);"></span></p>
+<p dir="ltr"></p>
+<p dir="ltr"><br></p></span></div></div>
+</div>
+</div>
+</blockquote>
+</div><br><div> </div>--<br><div dir="ltr"><div dir="ltr"><span><p dir="ltr"><span style="color:rgb(245,126,32);">Ari Mozes</span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);">Chief Software Architect</span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);"><a href="mailto:arimozes@neocis.com">arimozes@neocis.com</a></span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);">781.266.6553</span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);"></span><span style="color:rgb(102,102,102);"></span><span style="color:rgb(102,102,102);"></span><span style="color:rgb(102,102,102);"></span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);"></span></p>
+<p dir="ltr"></p>
+<p dir="ltr"><br></p></span></div></div>
+
+### ARTICLE02_HEADER
+Id=40067
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.01.2024 14:30:44 +00:00
+UpdatedAt=24.01.2024 14:30:46 +00:00
+
+### ARTICLE02_SUBJECT
+NETDEV WATCHDOG and machine freezing
+
+### ARTICLE02_BODY
+Hi Ari,<div><br></div><div>OK thank you for the feedback.</div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, January 24, 2024 at 2:46:20 PM, Ari Mozes wrote:<br><br><div dir="ltr">I just realized this ethernet device is not the one used for the ethercat bus - it is a different ethernet port on the same system, and I suspect it is caused by a faulty USBC-ethernet adapter.<div>So, I don't think this is related to EC Master - but do let me know if there are things you think might be helpful for troubleshooting in future.</div>
+</div>
+<br><div>
+<div dir="ltr">On Tue, Jan 23, 2024 at 8:37 AM Ari Mozes &lt;<a href="mailto:arimozes@neocis.com">arimozes@neocis.com</a>&gt; wrote:<br>
+</div>
+<blockquote>
+<div dir="ltr">Hello.<div>I have been troubleshooting an issue with our computer running the ECMaster application where the computer freezes and needs a hard reboot to recover.</div>
+<div> </div>
+<div>Looking through the logs, I see entries like:</div>
+<div>Jan 17 18:25:36 neok-PC kernel: [ 191.064536] NETDEV WATCHDOG: enp46s0 (igc): transmit queue 1 timed out<br>Jan 17 18:25:36 neok-PC kernel: [ 191.064562] WARNING: CPU: 7 PID: 68 at net/sched/sch_generic.c:477 dev_watchdog+0x2f3/0x300<br>Jan 17 18:25:36 neok-PC kernel: [ 191.064571] Modules linked in: atemsys(OE) ... <br><div> </div>
+<div>which I think occurs right before the freeze.</div>
+<div>I have just tried to use isolcpus to isolate the ECMaster application thread which handles the ethercat network to a single CPU unavailable to others, but unsure if that will do it. Also looked into isolated IRQs for that network adapter to a CPU (either the same or another), but I didn't see anything in acontis documentation about this.</div>
+<div> </div>
+<div>Can you provide some guidance on troubleshooting this?</div>
+<div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><span><p dir="ltr"><span style="color:rgb(245,126,32);">Ari Mozes</span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);">Chief Software Architect</span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);"><a href="mailto:arimozes@neocis.com">arimozes@neocis.com</a></span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);">781.266.6553</span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);"></span><span style="color:rgb(102,102,102);"></span><span style="color:rgb(102,102,102);"></span><span style="color:rgb(102,102,102);"></span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);"></span></p>
+<p dir="ltr"></p>
+<p dir="ltr"><br></p></span></div></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br><div> </div>--<br><div dir="ltr"><div dir="ltr"><span><p dir="ltr"><span style="color:rgb(245,126,32);">Ari Mozes</span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);">Chief Software Architect</span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);"><a href="mailto:arimozes@neocis.com">arimozes@neocis.com</a></span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);">781.266.6553</span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);"></span><span style="color:rgb(102,102,102);"></span><span style="color:rgb(102,102,102);"></span><span style="color:rgb(102,102,102);"></span></p>
+<p dir="ltr"><span style="color:rgb(102,102,102);"></span></p>
+<p dir="ltr"></p>
+<p dir="ltr"><br></p></span></div></div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

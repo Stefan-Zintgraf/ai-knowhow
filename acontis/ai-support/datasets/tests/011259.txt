@@ -1,0 +1,168 @@
+### HEADER
+Id=11259
+Link=http://at-zammad/#ticket/zoom/11259
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=7011259
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=20.08.2025 12:16:47 +00:00
+UpdatedAt=29.08.2025 06:00:58 +00:00
+CloseAt=29.08.2025 06:00:58 +00:00
+ArticlesCount=5
+
+### TITLE
+Don't show Message Window ID:324 (PNo.160)
+
+### ARTICLE00_HEADER
+Id=64696
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.08.2025 12:16:48 +00:00
+UpdatedAt=20.08.2025 12:16:52 +00:00
+
+### ARTICLE00_SUBJECT
+Don't show Message Window ID:324 (PNo.160)
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi Support team,</div><div dir="ltr">
+<br>
+</div><div>This is from Mitsubishi (commission No. 40627).</div><div dir="ltr">
+<br>
+</div><div dir="ltr">When Self Test Scan is performed, message ID:324 is displayed, but the slave configuration does not change before and after Self Test Scan so that you should not show the message window ID:324.</div><div dir="ltr">
+<br>
+</div><div dir="ltr">
+<img src="/api/v1/ticket_attachment/11259/64696/268240?view=inline" alt="image.png" style="max-width:100%;width: 300px;max-width: 100%;">
+</div><div dir="ltr">
+<br>
+</div><div dir="ltr">Please fix it.</div><div dir="ltr">
+<br>
+</div><div dir="ltr">Best regards,</div><div dir="ltr">Yuichi</div><div dir="ltr">
+<br>
+</div><div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span style=" background-color: rgb(255, 255, 255);"><br>
+</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=64709
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=20.08.2025 13:39:22 +00:00
+UpdatedAt=20.08.2025 13:39:22 +00:00
+
+### ARTICLE01_BODY
+@Kai:<div>Richtig. Wenn z.B. einen Yaskawa konfiguriere, den SelfTest Scan ausführe, dann hängt der Yaskawa danach immer noch dran obwohl ich komplett andere Slaves habe.</div><div>Die Meldung von oben ist schon richtig, das Problem ist nur das der Self Test Scan irgendwie keinen Scan macht. Ist schon seit v3.9.0 so. Master Bug?</div>
+
+### ARTICLE02_HEADER
+Id=64733
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=21.08.2025 06:23:54 +00:00
+UpdatedAt=21.08.2025 06:23:54 +00:00
+
+### ARTICLE02_BODY
+Beim Master gibt es einen Bug mit Auto Close. Darum haben wir den SelfTest Scan auch noch nicht richtig promoted in 4.0. Mit der 3.3 und der 4.1 müsste es eigentlich wieder gehen. Ich schau es mir nachher mal noch an
+
+### ARTICLE03_HEADER
+Id=64756
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=21.08.2025 10:20:27 +00:00
+UpdatedAt=21.08.2025 10:20:27 +00:00
+
+### ARTICLE03_BODY
+Ok. War mir nicht bewusst. Evtl. sollten wir es unsichtbar schalten bis es dann funktioniert? ggfs. auch mit Schalter?
+
+### ARTICLE04_HEADER
+Id=64805
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.08.2025 14:15:40 +00:00
+UpdatedAt=21.08.2025 14:15:42 +00:00
+
+### ARTICLE04_SUBJECT
+Don't show Message Window ID:324 (PNo.160)
+
+### ARTICLE04_BODY
+Hi Yuichi,<div><br></div><div>I fixed this and do not show this message box again.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, August 20, 2025 at 2:16:48 PM, Yuichi Ide wrote:<br><br><div dir="ltr">Hi Support team,</div>
+<div dir="ltr">
+<br>
+</div>
+<div>This is from Mitsubishi (commission No. 40627).</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">When Self Test Scan is performed, message ID:324 is displayed, but the slave configuration does not change before and after Self Test Scan so that you should not show the message window ID:324.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">
+<img src="/api/v1/ticket_attachment/11259/64805/268801?view=inline" alt="image.png" style="max-width:100%;max-width:100%;width: 300px;max-width: 100%;">
+</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Please fix it.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Best regards,</div>
+<div dir="ltr">Yuichi</div>
+<div dir="ltr">
+<br>
+</div>
+<div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span style=" background-color: rgb(255, 255, 255);"><br>
+</span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

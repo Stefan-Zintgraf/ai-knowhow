@@ -1,0 +1,141 @@
+### HEADER
+Id=3908
+Link=http://at-zammad/#ticket/zoom/3908
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=703908
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=15.09.2022 19:41:30 +00:00
+UpdatedAt=23.09.2022 06:23:37 +00:00
+CloseAt=23.09.2022 06:23:37 +00:00
+ArticlesCount=3
+
+### TITLE
+Ingenia MotionLab software via EoE
+
+### ARTICLE00_HEADER
+Id=20757
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.09.2022 19:41:30 +00:00
+UpdatedAt=15.09.2022 19:41:30 +00:00
+
+### ARTICLE00_SUBJECT
+Ingenia MotionLab software via EoE
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>We have a potential customer wanting to use Ingenia drives. They already demonstrated TwinCAT as the master and running the Ingenia MotionLab software via EoE for controlling the drives. Now they want to test this with EC-Engineer and move to EC-Master.</div><div> </div><div>I couldn’t get the Ingenia software working via EoE with EC-Engineer, and suspect I just forgot some setting. I had him install the OpenVPN tap driver, and enable this in EC-Engineer. We also specified the IP address in EC-Engineer that should be written down to the Ingenia drive. However, the MotionLab software still didn’t find it.</div><div> </div><div>Has anyone set this up and tested it? Or worked with Ingenia to confirm this is all working? Ingenia has a link right on their main configuration page in MotionLab for “how to setup with TwinCAT”, I think it would be great if they also had a “how to setup with EC-Engineer” as well.</div><div>
+<div>
+<br>/Jon </div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=20767
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.09.2022 05:32:24 +00:00
+UpdatedAt=16.09.2022 05:32:27 +00:00
+
+### ARTICLE01_SUBJECT
+Ingenia MotionLab software via EoE
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>you can schedule a remote session to setup the connection. I'm available today and next week except Wednesday. 14:30 my time is great.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, September 15, 2022 at 9:41:30 PM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>We have a potential customer wanting to use Ingenia drives. They already demonstrated TwinCAT as the master and running the Ingenia MotionLab software via EoE for controlling the drives. Now they want to test this with EC-Engineer and move to EC-Master.</div>
+<div> </div>
+<div>I couldn’t get the Ingenia software working via EoE with EC-Engineer, and suspect I just forgot some setting. I had him install the OpenVPN tap driver, and enable this in EC-Engineer. We also specified the IP address in EC-Engineer that should be written down to the Ingenia drive. However, the MotionLab software still didn’t find it.</div>
+<div> </div>
+<div>Has anyone set this up and tested it? Or worked with Ingenia to confirm this is all working? Ingenia has a link right on their main configuration page in MotionLab for “how to setup with TwinCAT”, I think it would be great if they also had a “how to setup with EC-Engineer” as well.</div>
+<div>
+<div>
+<br>/Jon </div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=20782
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.09.2022 12:49:07 +00:00
+UpdatedAt=16.09.2022 12:49:07 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Ingenia MotionLab software via EoE [Ticket#703908]
+
+### ARTICLE02_BODY
+Hi Cyril,<div> </div><div>OK thank you. He is currently moving forward with the EcMasterDemo example application and starting to write some code in myAppWorkPd() to interact with the process data. So I don’t think this is urgent but I know he would like to see this working at some point.</div><div> </div><div>I will check his availability for next week and see if he wants to set up a time then.<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Sep 16, 2022, at 1:32 AM, Cyril Eyssautier via EC-Support &lt;<a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>&gt; wrote:</div>
+<br><div>Hi Jon,<div> </div>
+<div>you can schedule a remote session to setup the connection. I'm available today and next week except Wednesday. 14:30 my time is great.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Cyril<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Thursday, September 15, 2022 at 9:41:30 PM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>We have a potential customer wanting to use Ingenia drives. They already demonstrated TwinCAT as the master and running the Ingenia MotionLab software via EoE for controlling the drives. Now they want to test this with EC-Engineer and move to EC-Master.</div>
+<div> </div>
+<div>I couldn’t get the Ingenia software working via EoE with EC-Engineer, and suspect I just forgot some setting. I had him install the OpenVPN tap driver, and enable this in EC-Engineer. We also specified the IP address in EC-Engineer that should be written down to the Ingenia drive. However, the MotionLab software still didn’t find it.</div>
+<div> </div>
+<div>Has anyone set this up and tested it? Or worked with Ingenia to confirm this is all working? Ingenia has a link right on their main configuration page in MotionLab for “how to setup with TwinCAT”, I think it would be great if they also had a “how to setup with EC-Engineer” as well.</div>
+<div>
+<br>/Jon </div>
+</blockquote></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

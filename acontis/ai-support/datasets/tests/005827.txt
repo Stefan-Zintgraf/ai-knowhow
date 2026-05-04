@@ -1,0 +1,85 @@
+### HEADER
+Id=5827
+Link=http://at-zammad/#ticket/zoom/5827
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Jumo GmbH & Co.KG (ID=126, Number=54502, Country=DE)
+Commission=Jumo, Registriergeräte, Linux (ID=141, Number=141)
+Number=705827
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=michael.mueller@jumo.net (ID=1441, FirstName=Michael, LastName=Mueller)
+CreatedBy=michael.mueller@jumo.net (ID=1441, FirstName=Michael, LastName=Mueller)
+Type=
+TimeUnit=
+CreatedAt=27.06.2023 06:16:05 +00:00
+UpdatedAt=30.06.2023 06:06:15 +00:00
+CloseAt=30.06.2023 06:06:15 +00:00
+ArticlesCount=2
+
+### TITLE
+COE
+
+### ARTICLE00_HEADER
+Id=31117
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.06.2023 06:16:05 +00:00
+UpdatedAt=27.06.2023 06:16:07 +00:00
+
+### ARTICLE00_SUBJECT
+COE
+
+### ARTICLE00_BODY
+Hallo Herr Eyssautier,<br><br>vielen Dank nochmals für Ihre Unterstützung gestern, die Prozessdaten funktionieren.<br><br>Leider habe ich noch ein Problem mit SDO, möglicherweise auch einen Implementierungsfehler. <br><br>emCoeSdoUpload =&gt; funktioniert<br><br>emCoeSdoDownload=&gt; wirkungslos, kein Fehler im Returnwert<br><br>Woran kann das liegen? brauchen die Funktionen noch einen zusätzlichen MailboxTransferBefehl?<br>Haben sie ein Implementierungsbeispiel?<br><br>Danke<br><br><span>Mit freundlichen Grüßen<br><br>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Software - Desktop Anwendungen<br><br>i.A. Dipl.-Ing.(FH) Michael Müller<br><br>Tel: +49 661 6003-9328<br>Fax: +49 661 6003-889328<br>Adresse: Moritz-Juchheim-Str. 1<br> 36039 Fulda, Germany<br>E-Mail: </span><a href="mailto:Michael.Mueller@jumo.net">mailto:Michael.Mueller@jumo.net</a><span><br>Internet: </span><a href="http://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">http://www.jumo.net</a><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dimitrios Charisiadis, Dr. Steffen Hoßfeld<br> Ust.-Id.-Nr.: DE 112411234</p>
+
+### ARTICLE01_HEADER
+Id=31130
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.06.2023 08:22:33 +00:00
+UpdatedAt=27.06.2023 08:22:36 +00:00
+
+### ARTICLE01_SUBJECT
+COE
+
+### ARTICLE01_BODY
+Hallo Herr Müller,<div><br></div><div>Das kann ich Ihnen geben:</div><div><br></div><div>
+<div>#define MBX_TIMEOUT                         5000</div>
+<div>
+<span>#define EL4132_INDEX_USER_SCALE             0x40A2</span><br>
+</div>
+<div>#define EL4132_SUBINDEX_USRSCL_NUMELEM         0</div>
+<div>#define EL4132_SUBINDEX_USRSCL_OFFSET          1</div>
+<div>#define EL4132_SUBINDEX_USRSCL_GAIN            2</div>
+</div><div><br></div><div>
+<div>dwRes = emCoeSdoDownload(dwMasterID, dwSlaveId, EL4132_INDEX_USER_SCALE, EL4132_SUBINDEX_USRSCL_OFFSET,</div>
+<div>            (EC_T_BYTE*)&amp;wOffsetTmp, sizeof(EC_T_WORD), MBX_TIMEOUT, 0);</div>
+</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, June 27, 2023 at 8:16:05 AM, Michael Mueller wrote:<br><br>Hallo Herr Eyssautier,<br><br>vielen Dank nochmals für Ihre Unterstützung gestern, die Prozessdaten funktionieren.<br><br>Leider habe ich noch ein Problem mit SDO, möglicherweise auch einen Implementierungsfehler. <br><br>emCoeSdoUpload =&gt; funktioniert<br><br>emCoeSdoDownload=&gt; wirkungslos, kein Fehler im Returnwert<br><br>Woran kann das liegen? brauchen die Funktionen noch einen zusätzlichen MailboxTransferBefehl?<br>Haben sie ein Implementierungsbeispiel?<br><br>Danke<br><br><span>Mit freundlichen Grüßen<br><br>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Software - Desktop Anwendungen<br><br>i.A. Dipl.-Ing.(FH) Michael Müller<br><br>Tel: +49 661 6003-9328<br>Fax: +49 661 6003-889328<br>Adresse: Moritz-Juchheim-Str. 1<br> 36039 Fulda, Germany<br>E-Mail: </span><a href="mailto:Michael.Mueller@jumo.net">mailto:Michael.Mueller@jumo.net</a><span><br>Internet: </span><a href="http://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">http://www.jumo.net</a><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dimitrios Charisiadis, Dr. Steffen Hoßfeld<br> Ust.-Id.-Nr.: DE 112411234</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

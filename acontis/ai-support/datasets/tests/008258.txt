@@ -1,0 +1,157 @@
+### HEADER
+Id=8258
+Link=http://at-zammad/#ticket/zoom/8258
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=708258
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=06.06.2024 17:58:32 +00:00
+UpdatedAt=12.06.2024 06:00:45 +00:00
+CloseAt=12.06.2024 06:00:45 +00:00
+ArticlesCount=2
+
+### TITLE
+WKC error is occurred with Multiple SM Slave (No.76)
+
+### ARTICLE00_HEADER
+Id=45727
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.06.2024 17:58:32 +00:00
+UpdatedAt=06.06.2024 17:58:35 +00:00
+
+### ARTICLE00_SUBJECT
+WKC error is occurred with Multiple SM Slave (No.76)
+
+### ARTICLE00_BODY
+<div>
+<div>Hi Support Team,</div>
+<div> </div>
+<div>This is from Mitsubishi.</div>
+<div> </div>
+<div>For example, EL2889 is appended and all PDO is set to SM0, WKC error is occurred with the ENI.</div>
+<div> </div>
+<div>EL2889 has 2 SM of Type Outputs, and in default setting, Channel 1 - 8 is using SM0 and 9 - 16 is using SM1.</div>
+<div>So, Edit Channel 9 - 16 to use SM0, and exporting ENI.</div>
+<div>Mitsubishi run EC-Master application with this ENI, but WKC error is occurred.</div>
+<div> </div>
+<div>So, Mitsubishi find a wrong point.</div>
+<div>After above setting, EC-Engineer shows that "enable" contents of SM1 is "0", this means SM1 is not used because PDO is 0 length.</div>
+<div> </div>
+</div><div>
+<img src="/api/v1/ticket_attachment/8258/45727/188652?view=inline" style="max-width:100%;">
+</div><div>
+<div> </div>
+<div>But in the ENI file with this setting, SM1 is still "Enable (= Enable tag is "1"), I attach the ENI with this setting.</div>
+</div><div>
+<img src="/api/v1/ticket_attachment/8258/45727/188653?view=inline" style="max-width:100%;">
+</div><div>
+<div> </div>I think &lt;Enable&gt;1&lt;/Enable&gt; of Sm1 has to be &lt;Enable&gt;0&lt;/Enable&gt;.<div>How do you think?</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+<div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div>
+</div>
+
+### ARTICLE01_HEADER
+Id=45791
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.06.2024 15:24:42 +00:00
+UpdatedAt=07.06.2024 15:24:45 +00:00
+
+### ARTICLE01_SUBJECT
+WKC error is occurred with Multiple SM Slave (No.76)
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes, you're right. This is a bug. It will be fixed in the next version (v3.9.6).</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, June 6, 2024 at 7:58:32 PM, Yuichi Ide wrote:<br><br><div>
+<div>Hi Support Team,</div>
+<div> </div>
+<div>This is from Mitsubishi.</div>
+<div> </div>
+<div>For example, EL2889 is appended and all PDO is set to SM0, WKC error is occurred with the ENI.</div>
+<div> </div>
+<div>EL2889 has 2 SM of Type Outputs, and in default setting, Channel 1 - 8 is using SM0 and 9 - 16 is using SM1.</div>
+<div>So, Edit Channel 9 - 16 to use SM0, and exporting ENI.</div>
+<div>Mitsubishi run EC-Master application with this ENI, but WKC error is occurred.</div>
+<div> </div>
+<div>So, Mitsubishi find a wrong point.</div>
+<div>After above setting, EC-Engineer shows that "enable" contents of SM1 is "0", this means SM1 is not used because PDO is 0 length.</div>
+<div> </div>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/8258/45791/188977?view=inline" style="max-width:100%;max-width:100%;">
+</div>
+<div>
+<div> </div>
+<div>But in the ENI file with this setting, SM1 is still "Enable (= Enable tag is "1"), I attach the ENI with this setting.</div>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/8258/45791/188978?view=inline" style="max-width:100%;max-width:100%;">
+</div>
+<div>
+<div> </div>I think &lt;Enable&gt;1&lt;/Enable&gt; of Sm1 has to be &lt;Enable&gt;0&lt;/Enable&gt;.<div>How do you think?</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+<div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

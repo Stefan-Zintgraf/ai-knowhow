@@ -1,0 +1,136 @@
+### HEADER
+Id=3314
+Link=http://at-zammad/#ticket/zoom/3314
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=Omron, PLC (ID=282, Number=282)
+Number=703314
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=redmine@my.redmine.jp (ID=190, FirstName=Baba, LastName=Kojiro)
+CreatedBy=redmine@my.redmine.jp (ID=190, FirstName=Baba, LastName=Kojiro)
+Type=
+TimeUnit=
+CreatedAt=27.06.2022 06:59:10 +00:00
+UpdatedAt=31.10.2023 12:49:27 +00:00
+CloseAt=22.07.2022 06:03:22 +00:00
+ArticlesCount=3
+
+### TITLE
+[C1-OAproject - Bug #424] (New) emRescueScan() returns EC_E_TIMEOUT
+
+### ARTICLE00_HEADER
+Id=17518
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.06.2022 06:59:10 +00:00
+UpdatedAt=27.06.2022 06:59:11 +00:00
+
+### ARTICLE00_SUBJECT
+[C1-OAproject - Bug #424] (New) emRescueScan() returns EC_E_TIMEOUT
+
+### ARTICLE00_BODY
+Issue <a href="https://my.redmine.jp/pbd-rdc/issues/424" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/424" target="_blank">#424</a> has been reported by Baba Kojiro. <hr>
+<h1> <a href="https://my.redmine.jp/pbd-rdc/issues/424" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/424" target="_blank">Bug #424: emRescueScan() returns EC_E_TIMEOUT</a> <span style="color:#205d86;">open</span>
+</h1> <ul>
+<li>
+<strong>Author: </strong>Baba Kojiro</li>
+<li>
+<strong>Status: </strong>New</li>
+<li>
+<strong>Priority: </strong>Normal</li>
+<li>
+<strong>Assignee: </strong>acontis acontis</li>
+<li>
+<strong>Start date: </strong>2022-06-27</li>
+<li>
+<strong>Category: </strong>Bug</li>
+<li>
+<strong>Category for Omron: </strong>TroubleShooting</li>
+<li>
+<strong>Owner: </strong>Baba Kojiro</li>
+</ul> <h2>Problem<a href="http:#Problem" rel="nofollow noreferrer noopener" title="http://#Problem" target="_blank">¶</a>
+</h2> <p>When EC-Master starts in the situation of which all frames are lost, emRescueScan() sometimes returns EC_E_TIMEOUT and an application can not be notified of the location of the error port.<br>EcSyslog shows that the ScanBus() during the rescue scan falls an endless loop (the state of BusTopology changes cyclically).</p><p>I think this endless loop is caused by an incorrect slave detection during the rescue scan, but I'm not make sure.</p><h2>Our analysis<a href="http:#Our-analysis" rel="nofollow noreferrer noopener" title="http://#Our-analysis" target="_blank">¶</a>
+</h2> <p>Please see attached Description_and_analysis_results.</p><h2>Version<a href="http:#Version" rel="nofollow noreferrer noopener" title="http://#Version" target="_blank">¶</a>
+</h2> <p>EC-Master V3.0.2.36</p><legend>Files</legend> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1651/Description_and_analysis_results_rescueScan_timeout.xlsx" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1651/Description_and_analysis_results_rescueScan_timeout.xlsx" target="_blank">Description_and_analysis_results_rescueScan_timeout.xlsx</a> (244 KB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1652/EcSyslog.7z" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1652/EcSyslog.7z" target="_blank">EcSyslog.7z</a> (4.75 MB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1653/packet.7z" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1653/packet.7z" target="_blank">packet.7z</a> (577 KB)<br> <hr>
+<p>My Redmine (プロジェクト運営支援SaaS) から送信<br><a href="http://hosting.redmine.jp/" rel="nofollow noreferrer noopener" target="_blank">http://hosting.redmine.jp/</a></p>
+
+### ARTICLE01_HEADER
+Id=17526
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.06.2022 07:30:19 +00:00
+UpdatedAt=27.06.2022 07:30:19 +00:00
+
+### ARTICLE01_SUBJECT
+[C1-OAproject - Bug #424] emRescueScan() returns EC_E_TIMEOUT
+
+### ARTICLE01_BODY
+Issue <a href="https://my.redmine.jp/pbd-rdc/issues/424#change-3490" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/424#change-3490" target="_blank">#424</a> has been updated by Baba Kojiro. <hr> <ul> <li>
+<strong>File</strong> deleted (<del><i>Description_and_analysis_results_rescueScan_timeout.xlsx</i></del>)</li>
+</ul> <hr>
+<h1> <a href="https://my.redmine.jp/pbd-rdc/issues/424#change-3490" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/424#change-3490" target="_blank">Bug #424: emRescueScan() returns EC_E_TIMEOUT</a> <span style="color:#205d86;">open</span>
+</h1> <ul>
+<li>
+<strong>Author: </strong>Baba Kojiro</li>
+<li>
+<strong>Status: </strong>New</li>
+<li>
+<strong>Priority: </strong>Normal</li>
+<li>
+<strong>Assignee: </strong>acontis acontis</li>
+<li>
+<strong>Start date: </strong>2022-06-27</li>
+<li>
+<strong>Category: </strong>Bug</li>
+<li>
+<strong>Category for Omron: </strong>TroubleShooting</li>
+<li>
+<strong>Owner: </strong>Baba Kojiro</li>
+</ul> <h2>Problem<a href="http:#Problem" rel="nofollow noreferrer noopener" title="http://#Problem" target="_blank">¶</a>
+</h2> <p>When EC-Master starts in the situation of which all frames are lost, emRescueScan() sometimes returns EC_E_TIMEOUT and an application can not be notified of the location of the error port.<br>EcSyslog shows that the ScanBus() during the rescue scan falls an endless loop (the state of BusTopology changes cyclically).</p><p>I think this endless loop is caused by an incorrect slave detection during the rescue scan, but I'm not make sure.</p><h2>Our analysis<a href="http:#Our-analysis" rel="nofollow noreferrer noopener" title="http://#Our-analysis" target="_blank">¶</a>
+</h2> <p>Please see attached Description_and_analysis_results.</p><h2>Version<a href="http:#Version" rel="nofollow noreferrer noopener" title="http://#Version" target="_blank">¶</a>
+</h2> <p>EC-Master V3.0.2.36</p><legend>Files</legend> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1652/EcSyslog.7z" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1652/EcSyslog.7z" target="_blank">EcSyslog.7z</a> (4.75 MB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1653/packet.7z" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1653/packet.7z" target="_blank">packet.7z</a> (577 KB)<br> <hr>
+<p>My Redmine (プロジェクト運営支援SaaS) から送信<br><a href="http://hosting.redmine.jp/" rel="nofollow noreferrer noopener" target="_blank">http://hosting.redmine.jp/</a></p>
+
+### ARTICLE02_HEADER
+Id=17527
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.06.2022 07:30:51 +00:00
+UpdatedAt=27.06.2022 07:30:51 +00:00
+
+### ARTICLE02_SUBJECT
+[C1-OAproject - Bug #424] emRescueScan() returns EC_E_TIMEOUT
+
+### ARTICLE02_BODY
+Issue <a href="https://my.redmine.jp/pbd-rdc/issues/424#change-3491" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/424#change-3491" target="_blank">#424</a> has been updated by Baba Kojiro. <hr> <ul> <li>
+<strong>File</strong> <a href="https://my.redmine.jp/pbd-rdc/attachments/1658" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/1658" target="_blank">Description_and_analysis_results_rescueScan_timeout.xlsx</a> added</li>
+</ul> <hr>
+<h1> <a href="https://my.redmine.jp/pbd-rdc/issues/424#change-3491" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/424#change-3491" target="_blank">Bug #424: emRescueScan() returns EC_E_TIMEOUT</a> <span style="color:#205d86;">open</span>
+</h1> <ul>
+<li>
+<strong>Author: </strong>Baba Kojiro</li>
+<li>
+<strong>Status: </strong>New</li>
+<li>
+<strong>Priority: </strong>Normal</li>
+<li>
+<strong>Assignee: </strong>acontis acontis</li>
+<li>
+<strong>Start date: </strong>2022-06-27</li>
+<li>
+<strong>Category: </strong>Bug</li>
+<li>
+<strong>Category for Omron: </strong>TroubleShooting</li>
+<li>
+<strong>Owner: </strong>Baba Kojiro</li>
+</ul> <h2>Problem<a href="http:#Problem" rel="nofollow noreferrer noopener" title="http://#Problem" target="_blank">¶</a>
+</h2> <p>When EC-Master starts in the situation of which all frames are lost, emRescueScan() sometimes returns EC_E_TIMEOUT and an application can not be notified of the location of the error port.<br>EcSyslog shows that the ScanBus() during the rescue scan falls an endless loop (the state of BusTopology changes cyclically).</p><p>I think this endless loop is caused by an incorrect slave detection during the rescue scan, but I'm not make sure.</p><h2>Our analysis<a href="http:#Our-analysis" rel="nofollow noreferrer noopener" title="http://#Our-analysis" target="_blank">¶</a>
+</h2> <p>Please see attached Description_and_analysis_results.</p><h2>Version<a href="http:#Version" rel="nofollow noreferrer noopener" title="http://#Version" target="_blank">¶</a>
+</h2> <p>EC-Master V3.0.2.36</p><legend>Files</legend> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1652/EcSyslog.7z" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1652/EcSyslog.7z" target="_blank">EcSyslog.7z</a> (4.75 MB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1653/packet.7z" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1653/packet.7z" target="_blank">packet.7z</a> (577 KB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1658/Description_and_analysis_results_rescueScan_timeout.xlsx" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1658/Description_and_analysis_results_rescueScan_timeout.xlsx" target="_blank">Description_and_analysis_results_rescueScan_timeout.xlsx</a> (245 KB)<br> <hr>
+<p>My Redmine (プロジェクト運営支援SaaS) から送信<br><a href="http://hosting.redmine.jp/" rel="nofollow noreferrer noopener" target="_blank">http://hosting.redmine.jp/</a></p>

@@ -1,0 +1,124 @@
+### HEADER
+Id=7681
+Link=http://at-zammad/#ticket/zoom/7681
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bobst Mex SA (ID=14, Number=50513, Country=CH)
+Commission=Bobst, CUBE RTOS-32 (ID=15, Number=15)
+Number=707681
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=didier.moret@bobst.com (ID=61, FirstName=Moret, LastName=Didier)
+CreatedBy=didier.moret@bobst.com (ID=61, FirstName=Moret, LastName=Didier)
+Type=
+TimeUnit=
+CreatedAt=19.03.2024 12:22:21 +00:00
+UpdatedAt=21.06.2024 07:46:29 +00:00
+CloseAt=21.06.2024 07:46:29 +00:00
+ArticlesCount=3
+
+### TITLE
+problem with Safetyloader
+
+### ARTICLE00_HEADER
+Id=42417
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.03.2024 12:22:21 +00:00
+UpdatedAt=19.03.2024 12:22:23 +00:00
+
+### ARTICLE00_SUBJECT
+problem with Safetyloader
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Hi Cyril</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p>J’ai toujours un problème avec ce programme safety loader qui utilise le mailbox gateway et l’ api ClientSendRawMbx , parfois le thread server se bloque, ou plutôt il tourne indéfiniment ici (atethercat. cpp 2.9.2.43 ligne: 7937)</p>
+<p> </p>
+<p>/* send mailbox command */</p>
+<p>dwRes = m_oAtEcatDesc.poMaster-&gt;SendMailboxCmd(dwSlaveId, &amp;pMbxTferPriv-&gt;oEcMbxCmd);</p>
+<p> <span lang="EN-US">if (EC_E_NOERROR != dwRes)</span></p>
+<p><span lang="EN-US"> {</span></p>
+<p><span lang="EN-US"> pMbxTferPriv-&gt;MbxTfer.eTferStatus = eMbxTferStatus_TferReqError;</span></p>
+<p><span lang="EN-US"> pMbxTferPriv-&gt;MbxTfer.dwErrorCode = dwRes;</span></p>
+<p><span lang="EN-US"> pMbxTferPriv-&gt;oEcMbxCmd.bInUseByInterface = EC_FALSE;</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"> dwRetVal = dwRes;</span></p>
+<p><span lang="EN-US"> goto Exit;</span></p>
+<p><span lang="EN-US"> }</span></p>
+<p><span lang="EN-US"> /* in case of timeout: wait until transfer has finished */</span></p>
+<p><span lang="EN-US"> if (bWait)</span></p>
+<p><span lang="EN-US"> {</span></p>
+<p><span lang="EN-US"> /* wait for transfer finish or timeout */</span></p>
+<p><span lang="EN-US"> while (pMbxTferPriv-&gt;MbxTfer.eTferStatus == eMbxTferStatus_Pend)</span></p>
+<p><span lang="EN-US"> {</span></p>
+<p> OsSleep(1); <b>// Tournee en boucle ici , comme eMbxTferStatus_Pend reste indéfiniment, on sort plus.</b></p>
+<p>}</p>
+<p> <span lang="EN-US">if (pMbxTferPriv-&gt;MbxTfer.eTferStatus == eMbxTferStatus_TferReqError)</span></p>
+<p><span lang="EN-US"> {</span></p>
+<p><span lang="EN-US"> dwRetVal = pMbxTferPriv-&gt;MbxTfer.dwErrorCode;</span></p>
+<p><span lang="EN-US"> goto Exit;</span></p>
+<p><span lang="EN-US"> }</span></p>
+<p><span lang="EN-US"> }</span></p>
+<p><span lang="EN-US"> /* no error */</span></p>
+<p><span lang="EN-US"> dwRetVal = EC_E_NOERROR;</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p>Le thread est bien appelé, il a une priorité inférieure au temps réel, mais supérieur au pooling lui-même supérieur au Idle.</p>
+<p> </p>
+<p>La tâche qui appelle ExecEcatJob fonctionne bien, la machine fonctionne d’ailleurs correctement . Ce phénomène se produit plus facilement si la connexion est chargée.</p>
+<p> </p>
+<p>Avez-vous une idée ?</p>
+<p> </p>
+<p><b><span lang="EN-US">Moret Didier</span></b><span lang="EN-US">
+</span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"> </span></p>
+<p><b><span lang="EN-US">BOBST </span></b><span lang="EN-US">
+</span></p>
+<p><span lang="EN-US">CORES, R&amp;D engineer</span></p>
+<p>Tél.: + Tél.: +41 21 547 12 09</p>
+<p> </p>
+<p>Email: <a href="mailto:Didier.Moret@bobst.com"><span style="color:blue;">Didier.Moret@bobst.com</span></a>
+</p>
+<p> </p>
+<p><b>Bobst Mex SA</b>
+</p>
+<p><span>PO Box, CH-1001 Lausanne<br> Tél.: +41 21 621 21 11<br> Fax: +41 21 621 20 70</span></p>
+<p><a href="http://www.bobst.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bobst.com</span></a>
+</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:1.4687in;max-height:1.4583in;width:141px;max-height:140px;" src="/api/v1/ticket_attachment/7681/42417/175932?view=inline"></p>
+<p> </p>
+</div><p><a href="https://www.bobst.com/drupa24" rel="nofollow noreferrer noopener" title="https://www.bobst.com/drupa24" target="_blank"></a></p><p><strong>Learn more and register on <a href="https://bobst.com/drupa24" rel="nofollow noreferrer noopener" target="_blank">bobst.com/drupa24</a></strong><br> <br> Visit BOBST social media channels:<br>
+<strong><a href="https://bobst.com/linkedin" rel="nofollow noreferrer noopener" title="https://bobst.com/linkedin" target="_blank">LinkedIn</a> - <a href="https://bobst.com/facebook" rel="nofollow noreferrer noopener" title="https://bobst.com/facebook" target="_blank"> Facebook</a> - </strong><a href="https://bobst.com/youtube" rel="nofollow noreferrer noopener" title="https://bobst.com/youtube" target="_blank"><strong>YouTube</strong></a></p><hr>
+<p>This message and any attachments (the message) are intended solely for the addressees and are confidential. If you receive this message in error, please delete it and immediately notify the sender. Any use not in accordance with its purpose, any dissemination, copying or disclosure, either whole or partial is prohibited without prior formal approval. The internet cannot guarantee the integrity of the message. The companies of Bobst Group do not accept any liability for data corruption, delay, interception or any modification to this message.</p><hr>
+<p> </p>
+
+### ARTICLE01_HEADER
+Id=43371
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.04.2024 00:04:45 +00:00
+UpdatedAt=14.04.2024 00:04:49 +00:00
+
+### ARTICLE01_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE01_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".
+
+### ARTICLE02_HEADER
+Id=44463
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.05.2024 00:00:11 +00:00
+UpdatedAt=12.05.2024 00:00:16 +00:00
+
+### ARTICLE02_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE02_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".

@@ -1,0 +1,121 @@
+### HEADER
+Id=6551
+Link=http://at-zammad/#ticket/zoom/6551
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Toyota Motor Corporation, Partner Robot Dev. (ID=321, Number=321)
+Number=706551
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=ecsupport@soft-service.co.jp (ID=33, FirstName=Ecsupport, LastName=)
+CreatedBy=ecsupport@soft-service.co.jp (ID=33, FirstName=Ecsupport, LastName=)
+Type=
+TimeUnit=
+CreatedAt=11.10.2023 10:49:59 +00:00
+UpdatedAt=20.10.2023 14:14:16 +00:00
+CloseAt=20.10.2023 14:14:16 +00:00
+ArticlesCount=2
+
+### TITLE
+about i226V
+
+### ARTICLE00_HEADER
+Id=35300
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.10.2023 10:49:59 +00:00
+UpdatedAt=11.10.2023 10:50:03 +00:00
+
+### ARTICLE00_SUBJECT
+about i226V
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Dear Support Team</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">I received a question from TOYOTA.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">They want to use i226V for the link layer.</span></p>
+<p><span lang="EN-US">They are currently using Ver2.9.2.42.</span></p>
+<p><span lang="EN-US">I previously heard that this would be supported starting with Ver3.1.4.10, so I told them about it.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Q1</span></p>
+<p><span lang="EN-US">Has Ver3.1.4.10 been released already?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Q2</span></p>
+<p><span lang="EN-US">If it is releasable and you provide it to them, will it be difficult to migrate from Ver2.9.2.42 to Ver3.1.4.10?</span></p>
+<p><span lang="EN-US">(kenji)</span></p>
+<p><span lang="EN-US">I imagine that since the major version has changed, </span></p>
+<p><span lang="EN-US">the detailed function specifications have also changed, so it is not easy.</span></p>
+<p><span lang="EN-US">(I remember that the log output method was also changed.)</span></p>
+<p><span lang="EN-US">What do you think about it?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Kenji Nakamura</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=35330
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.10.2023 16:12:50 +00:00
+UpdatedAt=11.10.2023 16:12:52 +00:00
+
+### ARTICLE01_SUBJECT
+about i226V
+
+### ARTICLE01_BODY
+Hi Kenji,<div><br></div><div>Q1. Yes here is the newest V3.1 version:</div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/2023/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.1.4.13/EC-Master-ClassA-AddOn-V3.1.4.13-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2023/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.1.4.13/EC-Master-ClassA-AddOn-V3.1.4.13-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.1.4.13/EC-Master-ClassA-AddOn-V3.1.4.13-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2023/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.1.4.13/EC-Master-I8254x-V3.1.4.13-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2023/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.1.4.13/EC-Master-I8254x-V3.1.4.13-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.1.4.13/EC-Master-I8254x-V3.1.4.13-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2023/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.1.4.13/EC-Master-V3.1.4.13-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2023/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.1.4.13/EC-Master-V3.1.4.13-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.1.4.13/EC-Master-V3.1.4.13-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div>
+</div><div><br></div><div>Q2. Yes adapting the logging is perhaps difficult, depending on how much dependencies they have. The other changes should not be too challenging.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Wednesday, October 11, 2023 at 12:49:59 PM, Ecsupport wrote:<br><br><div>
+<p><span lang="EN-US">Dear Support Team</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">I received a question from TOYOTA.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">They want to use i226V for the link layer.</span></p>
+<p><span lang="EN-US">They are currently using Ver2.9.2.42.</span></p>
+<p><span lang="EN-US">I previously heard that this would be supported starting with Ver3.1.4.10, so I told them about it.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Q1</span></p>
+<p><span lang="EN-US">Has Ver3.1.4.10 been released already?</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Q2</span></p>
+<p><span lang="EN-US">If it is releasable and you provide it to them, will it be difficult to migrate from Ver2.9.2.42 to Ver3.1.4.10?</span></p>
+<p><span lang="EN-US">(kenji)</span></p>
+<p><span lang="EN-US">I imagine that since the major version has changed, </span></p>
+<p><span lang="EN-US">the detailed function specifications have also changed, so it is not easy.</span></p>
+<p><span lang="EN-US">(I remember that the log output method was also changed.)</span></p>
+<p><span lang="EN-US">What do you think about it?</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Kenji Nakamura</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

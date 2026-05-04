@@ -1,0 +1,85 @@
+### HEADER
+Id=2038
+Link=http://at-zammad/#ticket/zoom/2038
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Murrelektronik GmbH (ID=139, Number=40435, Country=DE)
+Commission=Murrelektronik, Vario-X (ID=158, Number=158)
+Number=702038
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=michael.klank@murrelektronik.de (ID=85, FirstName=Michael, LastName=Klank)
+CreatedBy=michael.klank@murrelektronik.de (ID=85, FirstName=Michael, LastName=Klank)
+Type=
+TimeUnit=
+CreatedAt=08.12.2021 10:37:51 +00:00
+UpdatedAt=25.04.2022 13:12:33 +00:00
+CloseAt=08.12.2021 11:49:16 +00:00
+ArticlesCount=2
+
+### TITLE
+Update EC-Master
+
+### ARTICLE00_HEADER
+Id=10678
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.12.2021 10:37:51 +00:00
+UpdatedAt=08.12.2021 10:37:55 +00:00
+
+### ARTICLE00_SUBJECT
+Update EC-Master
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo,</p>
+<p> </p>
+<p>gibt es ein Update für den EC-Master + Link Layer?</p>
+<p>Aktuell verwenden wir die Version 3.1.2.01 Linux x86_84 + DW3504 und I8254x Link Layer.</p>
+<p> </p>
+<p>Vielen Dank im Voraus.</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Best regards,</p>
+<p> </p>
+<p><b>i.A. Michael Klank<br>
+</b>Senior System Engineer | GBU Automation</p>
+<p> </p>
+<p><a href="https://www.murrelektronik.com/de/" rel="nofollow noreferrer noopener" title="https://www.murrelektronik.com/de/" target="_blank"><img border="0" style="max-width:100%;width:.2812in;max-height:.2812in;width:27px;max-height:27px;" src="/api/v1/ticket_attachment/2038/10678/41245?view=inline"></a> <a href="https://de.linkedin.com/company/murrelektronik-gmbh" rel="nofollow noreferrer noopener" title="https://de.linkedin.com/company/murrelektronik-gmbh" target="_blank"><img border="0" style="max-width:100%;width:.2916in;max-height:.2812in;width:28px;max-height:27px;" src="/api/v1/ticket_attachment/2038/10678/41246?view=inline"></a> <a href="https://www.youtube.com/user/Murrelektronik" rel="nofollow noreferrer noopener" title="https://www.youtube.com/user/Murrelektronik" target="_blank"><img border="0" style="max-width:100%;width:.2812in;max-height:.2812in;width:27px;max-height:27px;" src="/api/v1/ticket_attachment/2038/10678/41247?view=inline"></a> <a href="https://www.facebook.com/Murrelektronikworldwide/" rel="nofollow noreferrer noopener" title="https://www.facebook.com/Murrelektronikworldwide/" target="_blank"><img border="0" style="max-width:100%;width:.2812in;max-height:.2812in;width:27px;max-height:27px;" src="/api/v1/ticket_attachment/2038/10678/41248?view=inline"></a></p>
+<p> <br> Cell: +49 174 3314695</p>
+<p>michael.klank@murrelektronik.de</p>
+<p><br> Murrelektronik GmbH</p>
+<p>Falkenstraße 3 | 71570 Oppenweiler<br>
+<br>
+<b>stay connected</b></p>
+<p> </p>
+</div><br>
+<div> </div><br>
+<hr> Murrelektronik GmbH - Sitz: 71570 Oppenweiler, Falkenstraße 3<br> Geschäftsführer: Dr. Ulrich Viethen, Jürgen Zeltwanger<br> Registergericht: Amtsgericht Stuttgart, HRB 270279<br>
+<hr> This email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you have received this email in error please notify the system manager.
+
+### ARTICLE01_HEADER
+Id=10686
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.12.2021 11:48:38 +00:00
+UpdatedAt=08.12.2021 11:48:58 +00:00
+
+### ARTICLE01_SUBJECT
+Delivery for Murrelektronik, Vario-X, Commission 40435
+
+### ARTICLE01_BODY
+<div>
+<p>Dear Customer,</p>
+<p>please find your new software version below:</p>
+<p><a href="https://downloads.acontis.com/2021/M-O/Murrelektronik_(40435)(DE)/EC-Master/3.1.2.10/EC-Master-ClassA-AddOn-V3.1.2.10-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/M-O/Murrelektronik_(40435)(DE)/EC-Master/3.1.2.10/EC-Master-ClassA-AddOn-V3.1.2.10-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></p>
+<p><a href="https://downloads.acontis.com/2021/M-O/Murrelektronik_(40435)(DE)/EC-Master/3.1.2.10/EC-Master-DW3504-V3.1.2.10-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/M-O/Murrelektronik_(40435)(DE)/EC-Master/3.1.2.10/EC-Master-DW3504-V3.1.2.10-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></p>
+<p><a href="https://downloads.acontis.com/2021/M-O/Murrelektronik_(40435)(DE)/EC-Master/3.1.2.10/EC-Master-I8254x-V3.1.2.10-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/M-O/Murrelektronik_(40435)(DE)/EC-Master/3.1.2.10/EC-Master-I8254x-V3.1.2.10-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></p>
+<p><a href="https://downloads.acontis.com/2021/M-O/Murrelektronik_(40435)(DE)/EC-Master/3.1.2.10/EC-Master-V3.1.2.10-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/M-O/Murrelektronik_(40435)(DE)/EC-Master/3.1.2.10/EC-Master-V3.1.2.10-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></p>
+<p><a href="https://downloads.acontis.com/2021/M-O/Murrelektronik_(40435)(DE)/EC-Master/3.1.2.10/EC-Master-RAS-V3.1.2.10-Windows-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/M-O/Murrelektronik_(40435)(DE)/EC-Master/3.1.2.10/EC-Master-RAS-V3.1.2.10-Windows-x86_32Bit-SDK_Unrestricted.zip</a></p>
+<p><a href="https://downloads.acontis.com/2021/M-O/Murrelektronik_(40435)(DE)/EC-Master/3.1.2.10/EC-Master-RAS-V3.1.2.10-Windows-x86_64Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/M-O/Murrelektronik_(40435)(DE)/EC-Master/3.1.2.10/EC-Master-RAS-V3.1.2.10-Windows-x86_64Bit-SDK_Unrestricted.zip</a></p>
+<p>Password: ECM88250</p>
+<p>Best Regards,<br>Holger Oelhaf <span class="js-signatureMarker"></span><br>________________ <br>EtherCAT Support <br>acontis technologies GmbH <br>Gartenstraße 46 <br>D-88212 Ravensburg <br>Http: <a href="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> <br>Phone: +49 (751) 56030-30 <br>Fax: +49 (751) 56030-31 <br>eMail: ecsupport@acontis.com </p>
+<p>This is an automatic generated eMail.</p>
+</div>

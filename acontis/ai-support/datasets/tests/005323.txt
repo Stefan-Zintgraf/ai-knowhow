@@ -1,0 +1,222 @@
+### HEADER
+Id=5323
+Link=http://at-zammad/#ticket/zoom/5323
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=705323
+Owner=m.danilau@acontis.com (ID=4, FirstName=Maksim, LastName=Danilau)
+Customer=t.hudson@acontis.com (ID=1075, FirstName=Troy, LastName=Hudson)
+CreatedBy=t.hudson@acontis.com (ID=1075, FirstName=Troy, LastName=Hudson)
+Type=
+TimeUnit=
+CreatedAt=05.04.2023 03:11:33 +00:00
+UpdatedAt=12.04.2023 05:57:42 +00:00
+CloseAt=12.04.2023 05:57:42 +00:00
+ArticlesCount=6
+
+### TITLE
+EC-Master Evaluation for Zephyr RTOS on ARM
+
+### ARTICLE00_HEADER
+Id=28200
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=05.04.2023 03:11:33 +00:00
+UpdatedAt=05.04.2023 03:11:33 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Master Evaluation for Zephyr RTOS on ARM
+
+### ARTICLE00_BODY
+Hello,
+
+We recently had an EC-Master evaluation request for ARM running Zephyr RTOS. I see that we have a version available on x86 and wanted to check to see what the development effort would be to offer an eval for ARM.
+
+Thank you,
+
+Troy
+
+### ARTICLE01_HEADER
+Id=28240
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.04.2023 14:50:42 +00:00
+UpdatedAt=05.04.2023 14:50:44 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Master Evaluation for Zephyr RTOS on ARM
+
+### ARTICLE01_BODY
+Hi Troy,<div><br></div><div>on which HW? Unfortunately Max did the Zephyr port. We need to rebuild the Zephyr know-how. We only have the build process to generate the binaries for x86</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, April 5, 2023 at 5:11:33 AM, Troy Hudson wrote:<br><br><div>Hello,</div>
+<div><br></div>
+<div>We recently had an EC-Master evaluation request for ARM running Zephyr RTOS. I see that we have a version available on x86 and wanted to check to see what the development effort would be to offer an eval for ARM.</div>
+<div><br></div>
+<div>Thank you,</div>
+<div><br></div>
+<div>Troy</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=28241
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.04.2023 14:55:40 +00:00
+UpdatedAt=05.04.2023 14:55:40 +00:00
+
+### ARTICLE02_SUBJECT
+Re: EC-Master Evaluation for Zephyr RTOS on ARM [Ticket#705323]
+
+### ARTICLE02_BODY
+Hi Cyril,<div> </div><div>The customer mentioned they are interested in running on the “ST Micro ARM Cortex-M7”.</div><div> </div><div>/Troy<br><div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Apr 5, 2023, at 8:50 AM, Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>Hi Troy,<div> </div>
+<div>on which HW? Unfortunately Max did the Zephyr port. We need to rebuild the Zephyr know-how. We only have the build process to generate the binaries for x86</div>
+<div> </div>
+<div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Wednesday, April 5, 2023 at 5:11:33 AM, Troy Hudson wrote:<br><br><div>Hello,</div>
+<div> </div>
+<div>We recently had an EC-Master evaluation request for ARM running Zephyr RTOS. I see that we have a version available on x86 and wanted to check to see what the development effort would be to offer an eval for ARM.</div>
+<div> </div>
+<div>Thank you,</div>
+<div> </div>
+<div>Troy</div>
+</blockquote></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE03_HEADER
+Id=28360
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=10.04.2023 15:10:23 +00:00
+UpdatedAt=10.04.2023 15:10:23 +00:00
+
+### ARTICLE03_BODY
+Hi Maksim and Cyril,<div><br></div><div>Please don't spend any effort on this request yet. We are still at the very early stages with this customer, and I just wanted to understand what the effort would be if we wanted to deliver this in the future.</div><div><br></div><div>Thank you!</div>
+
+### ARTICLE04_HEADER
+Id=28373
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.04.2023 06:20:20 +00:00
+UpdatedAt=11.04.2023 06:20:24 +00:00
+
+### ARTICLE04_SUBJECT
+EC-Master Evaluation for Zephyr RTOS on ARM
+
+### ARTICLE04_BODY
+Hi Troy,<div><br></div><div>just to clarify, we do not have a Zephyr EC-Master package for ST. Actually it is not a big deal to create one, but of course it requires some effort and time on first place. Anyway, it would be nice to know what <span>“ST Micro ARM Cortex-M7” does customer mean and how the development environment looks like.</span>
+</div><div><br></div><div>Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Maksim Danilau</div>
+<div>EtherCAT Support</div>
+<div>
+<div><br></div>
+</div>
+</div>
+<div><blockquote type="cite">Am Mittwoch, 5. April 2023 um 16:55:40, schrieb Troy Hudson:<br><br>Hi Cyril,<div> </div>
+<div>The customer mentioned they are interested in running on the “ST Micro ARM Cortex-M7”.</div>
+<div> </div>
+<div>/Troy<br><div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Apr 5, 2023, at 8:50 AM, Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>Hi Troy,<div> </div>
+<div>on which HW? Unfortunately Max did the Zephyr port. We need to rebuild the Zephyr know-how. We only have the build process to generate the binaries for x86</div>
+<div> </div>
+<div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Wednesday, April 5, 2023 at 5:11:33 AM, Troy Hudson wrote:<br><br><div>Hello,</div>
+<div> </div>
+<div>We recently had an EC-Master evaluation request for ARM running Zephyr RTOS. I see that we have a version available on x86 and wanted to check to see what the development effort would be to offer an eval for ARM.</div>
+<div> </div>
+<div>Thank you,</div>
+<div> </div>
+<div>Troy</div>
+</blockquote></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE05_HEADER
+Id=28449
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=11.04.2023 16:03:02 +00:00
+UpdatedAt=11.04.2023 16:03:02 +00:00
+
+### ARTICLE05_BODY
+Hi Maksim,<div><br></div><div>Thank you for the information. The customer indicated today that they are happy to start with the x86 eval version that we already have available. They are still in the discovery phase and have not committed to a specific platform yet. I think we can close this ticket now.</div><div><br></div><div>Thank you</div>

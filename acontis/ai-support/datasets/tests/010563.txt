@@ -1,0 +1,132 @@
+### HEADER
+Id=10563
+Link=http://at-zammad/#ticket/zoom/10563
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=dSPACE GmbH (ID=94, Number=40282, Country=DE)
+Commission=dSpace, SCALEXIO (ID=103, Number=103)
+Number=7010563
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=aadithya.iyer@bertrandt.com (ID=3292, FirstName=Aadithya, LastName=Iyer)
+CreatedBy=aadithya.iyer@bertrandt.com (ID=3292, FirstName=Aadithya, LastName=Iyer)
+Type=
+TimeUnit=
+CreatedAt=13.05.2025 11:01:29 +00:00
+UpdatedAt=30.07.2025 10:12:24 +00:00
+CloseAt=20.05.2025 06:00:05 +00:00
+ArticlesCount=3
+
+### TITLE
+Error while running EC-Engineer Software
+
+### ARTICLE00_HEADER
+Id=60581
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.05.2025 11:01:29 +00:00
+UpdatedAt=13.05.2025 11:01:29 +00:00
+
+### ARTICLE00_SUBJECT
+Error while running EC-Engineer Software
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Sir / Madam,</p>
+<p>I am working on setting up dSPACE configuration desk project for reading ETHERCAT Bus data via SCALEXIO PC. I am using EC-Engineer software to scan the bus for ETHERCAT Slaves and generate Slave ENI file.</p>
+<p>I am getting the following error while scanning:</p>
+<p><img style="max-width:100%;width:6.5208in;max-height:3.2361in;width:626px;max-height:311px;" src="/api/v1/ticket_attachment/10563/60581/252199?view=inline"></p>
+<p> </p>
+<p>I am also getting following error while building the Configuration desk project</p>
+<p><img style="max-width:100%;width:12.3819in;max-height:6.3263in;width:1189px;max-height:607px;" src="/api/v1/ticket_attachment/10563/60581/252200?view=inline"></p>
+<p> </p>
+<p>What could be the issue here? Do I need to install something along with the EC-Engineer software?</p>
+<p>Looking forward to your reply,</p>
+<p>Best Regards,</p>
+<p>Aadithya Iyer</p>
+<p> </p>
+<p><span lang="DE">i. A. Aadithya Iyer</span><span lang="DE"><br> Entwicklungsingenieuer<br> eMobility Systems | 1.3_MH_EnerSys Eng<br>
+<br>
+<a href="mailto:aadithya.iyer@bertrandt.com"><span style="color:#0563c1;">aadithya.iyer@bertrandt.com</span></a> | <a href="http://www.bertrandt.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">www.bertrandt.com</span></a> | <span>Mobil: +49 160 8494428<br>
+<br>
+</span></span><b><span lang="DE">Bertrandt Technologie GmbH</span></b><span lang="DE"> | Friedrichshof 5, 71297 Mönsheim</span><span lang="DE"><br>
+</span><span lang="DE">Geschäftsführer: Christian Frost, Florian Fuest, Michael Hage, Jesko Herrmann, Frank Sander, Christian Ruland, Jürgen Stadler | Sitz der Gesellschaft: Mönsheim | Amtsgericht: Mannheim HRB 722251</span><span lang="DE"><br>
+<br>
+</span><span lang="EN-US" style="color:#7f7f7f;">The contents of this e-mail are confidential. If you are not the named addressee or if this transmission has been addressed to you in error, please notify the sender immediately and then delete this e-mail. Any unauthorized copying and transmission is forbidden. E-mail transmission cannot be guaranteed to be secure. If verification is required, please request a hard copy version. Please note, that incoming e-mail is not checked regularly. This may result in a failure to comply with legal or contractual terms. Therefore it is not sufficient, to send any legal or contractual declarations by e-mail. In no event will Bertrandt be liable to you or any third party for any direct, indirect, consequential, special or exemplary damages or lost profit resulting from this failure.</span><span lang="EN-US"></span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=60586
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=13.05.2025 12:58:06 +00:00
+UpdatedAt=13.05.2025 12:58:06 +00:00
+
+### ARTICLE01_BODY
+Antwort oben: Sein Master muss laufen wenn er über RAS scannen will. Ich geh mal davon aus, dass sein Master nicht läuft. <div><br></div><div>Den unteren Teil muss du beantworten. Da ist er im AtEthercat.h</div>
+
+### ARTICLE02_HEADER
+Id=60589
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.05.2025 13:16:45 +00:00
+UpdatedAt=13.05.2025 13:16:47 +00:00
+
+### ARTICLE02_SUBJECT
+Error while running EC-Engineer Software
+
+### ARTICLE02_BODY
+Hi,<div><br></div><div>as the dialog box writes your remote EtherCAT master should run on the remote address. Can you ensure this?</div><div><br></div><div>Under Windows we include <span>&lt;pshpack##Bytes.h&gt; and </span><span>&lt;poppack.h&gt; with this construct. Under Linux we simply include the </span><span>"EcOsPlatform.h" header as you can See in the SDK/INC/Linux/EcOsPlatform.h. To me it looks like the OPUS MKMF tool is generating this warning/error. I don't know this tool. What is it? Is it a kind of make? Can you switch this warning off? Our build pipelines for around 20 Platforms with 6 architectures don't seam to have this issue. Maybe dSpace can help.</span>
+</div><div><br></div><div>Best regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, May 13, 2025 at 1:01:29 PM, Aadithya Iyer wrote:<br><br><div>
+<p>Dear Sir / Madam,</p>
+<p>I am working on setting up dSPACE configuration desk project for reading ETHERCAT Bus data via SCALEXIO PC. I am using EC-Engineer software to scan the bus for ETHERCAT Slaves and generate Slave ENI file.</p>
+<p>I am getting the following error while scanning:</p>
+<p><img style="max-width:100%;max-width:100%;width:6.5208in;max-height:3.2361in;width:626px;max-height:311px;" src="/api/v1/ticket_attachment/10563/60589/252216?view=inline"></p>
+<p> </p>
+<p>I am also getting following error while building the Configuration desk project</p>
+<p><img style="max-width:100%;max-width:100%;width:12.3819in;max-height:6.3263in;width:1189px;max-height:607px;" src="/api/v1/ticket_attachment/10563/60589/252217?view=inline"></p>
+<p> </p>
+<p>What could be the issue here? Do I need to install something along with the EC-Engineer software?</p>
+<p>Looking forward to your reply,</p>
+<p>Best Regards,</p>
+<p>Aadithya Iyer</p>
+<p> </p>
+<p><span lang="DE">i. A. Aadithya Iyer</span><span lang="DE"><br> Entwicklungsingenieuer<br> eMobility Systems | 1.3_MH_EnerSys Eng<br>
+<br>
+<a href="mailto:aadithya.iyer@bertrandt.com"><span style="color:#0563c1;">aadithya.iyer@bertrandt.com</span></a> | <a href="http://www.bertrandt.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">www.bertrandt.com</span></a> | <span>Mobil: +49 160 8494428<br>
+<br>
+</span></span><b><span lang="DE">Bertrandt Technologie GmbH</span></b><span lang="DE"> | Friedrichshof 5, 71297 Mönsheim</span><span lang="DE"><br>
+</span><span lang="DE">Geschäftsführer: Christian Frost, Florian Fuest, Michael Hage, Jesko Herrmann, Frank Sander, Christian Ruland, Jürgen Stadler | Sitz der Gesellschaft: Mönsheim | Amtsgericht: Mannheim HRB 722251</span><span lang="DE"><br>
+<br>
+</span><span lang="EN-US" style="color:#7f7f7f;">The contents of this e-mail are confidential. If you are not the named addressee or if this transmission has been addressed to you in error, please notify the sender immediately and then delete this e-mail. Any unauthorized copying and transmission is forbidden. E-mail transmission cannot be guaranteed to be secure. If verification is required, please request a hard copy version. Please note, that incoming e-mail is not checked regularly. This may result in a failure to comply with legal or contractual terms. Therefore it is not sufficient, to send any legal or contractual declarations by e-mail. In no event will Bertrandt be liable to you or any third party for any direct, indirect, consequential, special or exemplary damages or lost profit resulting from this failure.</span><span lang="EN-US"></span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

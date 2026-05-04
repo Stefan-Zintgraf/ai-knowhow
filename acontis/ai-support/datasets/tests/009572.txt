@@ -1,0 +1,132 @@
+### HEADER
+Id=9572
+Link=http://at-zammad/#ticket/zoom/9572
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=LECTRA (ID=747, Number=0, Country=FR)
+Commission=LECTRA, CUT GEN 5 (ID=839, Number=839)
+Number=709572
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=r.gobard-ext@lectra.com (ID=2801, FirstName=Gobard, LastName=Romain)
+CreatedBy=r.gobard-ext@lectra.com (ID=2801, FirstName=Gobard, LastName=Romain)
+Type=
+TimeUnit=
+CreatedAt=20.12.2024 14:28:26 +00:00
+UpdatedAt=23.01.2025 12:42:26 +00:00
+CloseAt=10.01.2025 11:08:33 +00:00
+ArticlesCount=2
+
+### TITLE
+Question Synchronisation Esclave Distributed Clock
+
+### ARTICLE00_HEADER
+Id=54449
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.12.2024 14:28:27 +00:00
+UpdatedAt=20.12.2024 14:28:27 +00:00
+
+### ARTICLE00_SUBJECT
+Question Synchronisation Esclave Distributed Clock
+
+### ARTICLE00_BODY
+<div>
+<p>Bonjour,</p>
+<p> </p>
+<p>Nous constatons certaines pertes de trame Ethercat durant des tests en endurance. Nous soupçonnons le système de Distributed Clock (DC) d’en être la cause.</p>
+<p> </p>
+<p>Actuellement, notre configuration de synchronisation est en Master Shift Mode avec génération de signaux HW SYNC0 (pas de SYNC1). Nous utilisons les paramètres générés par défaut par EC-Engineer (ShiftTime, CycleTime0 etc…).</p>
+<p> </p>
+<p>En consultant votre documentation en ligne (lien : <i><a href="https://www.acontis.com/en/dcm.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/dcm.html</a></i>) , nous nous demandions s’il était possible de modifier les valeurs du DCM Controller (ControllerSetVal, nCtlGain etc…) lors de l’initialisation du master ou bien en cours de fonctionnement de la communication Ethercat ? Comment savoir si le DCM Controller Set Value est en mode Default ou Enhanced ? Nous n’avons pas trouvé d’information sur ce point dans la documentation bien que des PDO existent. </p>
+<p> </p>
+<p>J’ai également trouvé sur votre site un guide détaillant le fonctionnement du DC (lien : <i><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm.html" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm.html</a></i>). Est-il possible de nous fournir une copie du projet de démonstration <b>EcMasterDemoDc</b> ? Nous ne l’avons pas trouvé dans les sources que vous nous avez transmis. </p>
+<p> </p>
+<p>Hormis les logs spécifiques au DCM, avez-vous des conseils ou des outils pour débugger le DC ?</p>
+<p> </p>
+<p>Nous reviendrons vers vous si d’autres questions se présentent à nous.</p>
+<p> </p>
+<p>Bonne journée.</p>
+<p> </p>
+<p><b>Romain GOBARD</b></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=54453
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.12.2024 14:57:48 +00:00
+UpdatedAt=20.12.2024 14:57:50 +00:00
+
+### ARTICLE01_SUBJECT
+Question Synchronisation Esclave Distributed Clock
+
+### ARTICLE01_BODY
+Bonsoir,<div><br></div><div>vous pouvez utiliser le dcmlog comme dans notre Example EcMasterDemoDc. En suivant la colonne CtlErr avec un diagramme, vous pouvez voir si les erreurs sont dues à un jitter ou un drift.</div><div><br></div><div>vous pouvez changer les parametres DCM, mais normalement les parametres suivant n'ont pas besoin d'être ajustés:</div><div>
+<dl>
+<dt><br></dt>
+<dt>EC_T_INT nCtlGain<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-a/dcm_api.html#_CPPv4N24EC_T_DCM_CONFIG_BUSSHIFT8nCtlGainE" rel="nofollow noreferrer noopener" target="_blank" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-a/dcm_api.html#_CPPv4N24EC_T_DCM_CONFIG_BUSSHIFT8nCtlGainE"></a><br>
+</dt>
+<dd><p>[in] Proportional gain in ppt (part per thousand). Default is value 2. A value of 0 let the current setting unmodified.</p></dd>
+</dl>
+<dl>
+<dt>
+<span></span>EC_T_INT nCtlDriftErrorGain<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-a/dcm_api.html#_CPPv4N24EC_T_DCM_CONFIG_BUSSHIFT18nCtlDriftErrorGainE" rel="nofollow noreferrer noopener" target="_blank" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-a/dcm_api.html#_CPPv4N24EC_T_DCM_CONFIG_BUSSHIFT18nCtlDriftErrorGainE"></a><br>
+</dt>
+<dd><p>[in] Multiplier for drift error. Default value is 3. A value of 0 let the current setting unmodified</p></dd>
+</dl>
+<dl>
+<dt>
+<span></span>EC_T_INT nMaxValidVal<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-a/dcm_api.html#_CPPv4N24EC_T_DCM_CONFIG_BUSSHIFT12nMaxValidValE" rel="nofollow noreferrer noopener" target="_blank" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-a/dcm_api.html#_CPPv4N24EC_T_DCM_CONFIG_BUSSHIFT12nMaxValidValE"></a><br>
+</dt>
+<dd><p>[in] Error inputs above this value are considered invalid. If error input prediction is valid then the difference between the error input and the expected value is taken. Default value is 3000. A value of 0 let the current setting unmodified</p></dd>
+</dl>
+</div><div><span>Cordialement,</span></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, December 20, 2024 at 3:28:27 PM, Gobard Romain wrote:<br><br><div>
+<p>Bonjour,</p>
+<p> </p>
+<p>Nous constatons certaines pertes de trame Ethercat durant des tests en endurance. Nous soupçonnons le système de Distributed Clock (DC) d’en être la cause.</p>
+<p> </p>
+<p>Actuellement, notre configuration de synchronisation est en Master Shift Mode avec génération de signaux HW SYNC0 (pas de SYNC1). Nous utilisons les paramètres générés par défaut par EC-Engineer (ShiftTime, CycleTime0 etc…).</p>
+<p> </p>
+<p>En consultant votre documentation en ligne (lien : <i><a href="https://www.acontis.com/en/dcm.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/dcm.html</a></i>) , nous nous demandions s’il était possible de modifier les valeurs du DCM Controller (ControllerSetVal, nCtlGain etc…) lors de l’initialisation du master ou bien en cours de fonctionnement de la communication Ethercat ? Comment savoir si le DCM Controller Set Value est en mode Default ou Enhanced ? Nous n’avons pas trouvé d’information sur ce point dans la documentation bien que des PDO existent. </p>
+<p> </p>
+<p>J’ai également trouvé sur votre site un guide détaillant le fonctionnement du DC (lien : <i><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm.html" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm.html</a></i>). Est-il possible de nous fournir une copie du projet de démonstration <b>EcMasterDemoDc</b> ? Nous ne l’avons pas trouvé dans les sources que vous nous avez transmis. </p>
+<p> </p>
+<p>Hormis les logs spécifiques au DCM, avez-vous des conseils ou des outils pour débugger le DC ?</p>
+<p> </p>
+<p>Nous reviendrons vers vous si d’autres questions se présentent à nous.</p>
+<p> </p>
+<p>Bonne journée.</p>
+<p> </p>
+<p><b>Romain GOBARD</b></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

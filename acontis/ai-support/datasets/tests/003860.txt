@@ -1,0 +1,131 @@
+### HEADER
+Id=3860
+Link=http://at-zammad/#ticket/zoom/3860
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=intrinsic (ID=597, Number=0, Country=DE)
+Commission=X (Intrinsic), Real-time robot motion control (ID=676, Number=676)
+Number=703860
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=halbrock@intrinsic.ai (ID=1291, FirstName=Benjamin, LastName=Bremer)
+CreatedBy=halbrock@intrinsic.ai (ID=1291, FirstName=Benjamin, LastName=Bremer)
+Type=
+TimeUnit=
+CreatedAt=08.09.2022 12:47:21 +00:00
+UpdatedAt=14.10.2022 07:07:39 +00:00
+CloseAt=16.09.2022 06:58:36 +00:00
+ArticlesCount=2
+
+### TITLE
+Reading EtherCAT Diag History for a slave
+
+### ARTICLE00_HEADER
+Id=20492
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.09.2022 12:47:21 +00:00
+UpdatedAt=08.09.2022 12:47:21 +00:00
+
+### ARTICLE00_SUBJECT
+Reading EtherCAT Diag History for a slave
+
+### ARTICLE00_BODY
+<div dir="ltr">Hello,<br><br>We would like to read and surface the detailed debug information out of the Diagnosis History object 0x10F3 (<a href="https://infosys.beckhoff.com/english.php?content=../content/1033/el70x1/2328200331.html&amp;id=" rel="nofollow noreferrer noopener" target="_blank">https://infosys.beckhoff.com/english.php?content=../content/1033/el70x1/2328200331.html&amp;id=</a>)<div>
+<br>Using 0x10F3 I was able to find ParseDiagMsg in ECMaster, but no example code or documentation.<br>
+</div>
+<div>
+<div> </div>
+<div>The closest documentation I could find is</div>
+<div><ul>
+<li>
+<a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emnotify-ec-notify-status-slave-error" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emnotify-ec-notify-status-slave-error</a><br>
+</li>
+<li>
+<a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#error-notifications-general-information" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#error-notifications-general-information</a><br>
+</li>
+</ul></div>
+<div>Could you please point me in the right direction or provide example code to access the information?<br><br>Best regards,<br>Benjamin Bremer<span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr">
+<table style="color:rgb(0,0,0);font-size:22px;border:0px;"><tbody><tr>
+<td style="padding:20px;"></td>
+<td style="padding:20px 20px 20px 10px;font-size:14px;">
+<b>Benjamin Bremer</b><br>Software Engineer<br><a href="mailto:halbrock@intrinsic.ai">halbrock@intrinsic.ai</a> <span style="color:rgb(209,209,209);">|</span> <a href="http://intrinsic.ai" rel="nofollow noreferrer noopener" target="_blank">intrinsic.ai</a>
+</td>
+</tr></tbody></table>
+<p>Intrinsic Innovation GmbH, ABC-Straße 19, 20354 Hamburg<br></p>
+<p>Geschäftsführer: Jennifer R. Wall, Brett E. Koons<br>Registergericht und -nummer: Hamburg, HRB 161662<br>Sitz der Gesellschaft: Hamburg</p>
+<p>Diese E-Mail ist vertraulich. Falls sie diese fälschlicherweise erhalten haben sollten, leiten Sie diese bitte nicht an jemand anderes weiter, löschen Sie alle Kopien und Anhänge davon und lassen Sie mich bitte wissen, dass die E-Mail an die falsche Person gesendet wurde.</p>
+<p>This email is confidential. If you received this communication by mistake, please don't forward it to anyone else, please erase all copies and attachments, and please let me know that it has gone to the wrong person.</p>
+</div></div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=20507
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.09.2022 14:54:44 +00:00
+UpdatedAt=08.09.2022 14:54:46 +00:00
+
+### ARTICLE01_SUBJECT
+Reading EtherCAT Diag History for a slave
+
+### ARTICLE01_BODY
+Hallo Herr Bremer,<div><br></div><div>die Funktion <span>ParseDiagMsg</span><span> ist Teil unserem Demo Code aus </span><span>[...]\Examples\Common\EcSdoServices.cpp Wir haben keine weitere Dokumentation dafür.</span>
+</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, September 8, 2022 at 2:47:21 PM, Benjamin Bremer wrote:<br><br><div dir="ltr">Hello,<br><br>We would like to read and surface the detailed debug information out of the Diagnosis History object 0x10F3 (<a href="https://infosys.beckhoff.com/english.php?content=../content/1033/el70x1/2328200331.html&amp;id=" rel="nofollow noreferrer noopener" target="_blank">https://infosys.beckhoff.com/english.php?content=../content/1033/el70x1/2328200331.html&amp;id=</a>)<div>
+<br>Using 0x10F3 I was able to find ParseDiagMsg in ECMaster, but no example code or documentation.<br>
+</div>
+<div>
+<div> </div>
+<div>The closest documentation I could find is</div>
+<div><ul>
+<li>
+<a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emnotify-ec-notify-status-slave-error" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emnotify-ec-notify-status-slave-error</a><br>
+</li>
+<li>
+<a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#error-notifications-general-information" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#error-notifications-general-information</a><br>
+</li>
+</ul></div>
+<div>Could you please point me in the right direction or provide example code to access the information?<br><br>Best regards,<br>Benjamin Bremer<span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr">
+<table style="color:rgb(0,0,0);font-size:22px;border:0px;"><tbody><tr>
+<td style="padding:20px;"></td>
+<td style="padding:20px 20px 20px 10px;font-size:14px;">
+<b>Benjamin Bremer</b><br>Software Engineer<br><a href="mailto:halbrock@intrinsic.ai">halbrock@intrinsic.ai</a> <span style="color:rgb(209,209,209);">|</span> <a href="http://intrinsic.ai" rel="nofollow noreferrer noopener" target="_blank">intrinsic.ai</a>
+</td>
+</tr></tbody></table>
+<p>Intrinsic Innovation GmbH, ABC-Straße 19, 20354 Hamburg<br></p>
+<p>Geschäftsführer: Jennifer R. Wall, Brett E. Koons<br>Registergericht und -nummer: Hamburg, HRB 161662<br>Sitz der Gesellschaft: Hamburg</p>
+<p>Diese E-Mail ist vertraulich. Falls sie diese fälschlicherweise erhalten haben sollten, leiten Sie diese bitte nicht an jemand anderes weiter, löschen Sie alle Kopien und Anhänge davon und lassen Sie mich bitte wissen, dass die E-Mail an die falsche Person gesendet wurde.</p>
+<p>This email is confidential. If you received this communication by mistake, please don't forward it to anyone else, please erase all copies and attachments, and please let me know that it has gone to the wrong person.</p>
+</div></div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

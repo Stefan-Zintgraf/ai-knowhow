@@ -1,0 +1,240 @@
+### HEADER
+Id=1918
+Link=http://at-zammad/#ticket/zoom/1918
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Keyence (ID=223, Number=40219, Country=JP)
+Commission=Keyence, C141B PLC (ID=267, Number=267)
+Number=701918
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=fukatsug@keyence.co.jp (ID=686, FirstName=Gen, LastName=Fukatsu)
+CreatedBy=fukatsug@keyence.co.jp (ID=686, FirstName=Gen, LastName=Fukatsu)
+Type=
+TimeUnit=
+CreatedAt=26.11.2021 11:00:32 +00:00
+UpdatedAt=25.04.2022 13:10:42 +00:00
+CloseAt=29.11.2021 09:56:21 +00:00
+ArticlesCount=3
+
+### TITLE
+About slave specific Tab in EC-Enginner
+
+### ARTICLE00_HEADER
+Id=10103
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.11.2021 11:00:32 +00:00
+UpdatedAt=26.11.2021 11:00:32 +00:00
+
+### ARTICLE00_SUBJECT
+About slave specific Tab in EC-Enginner
+
+### ARTICLE00_BODY
+<div>
+<p>Hello Cyril,</p>
+<p> </p>
+<p>Let me ask about EC-Engineer.</p>
+<p>I found the special TAB when I use specific slaves as the following figure.</p>
+<p>$B!!!!!!(B(e.g.)EL6224$B!'(BIO-Link Master</p>
+<p>$B!!!!!!!!!!!!!!(B<img style="max-width:100%;width:5.2291in;max-height:1.0729in;width:502px;max-height:103px;" src="/api/v1/ticket_attachment/1918/10103/39162?view=inline"></p>
+<p>$B!!!!!!!!(B(e.g.)EL6751$B!'(BCANopen Master</p>
+<p>$B!!!!!!!!!!!!!!(B<img style="max-width:100%;width:5.9166in;max-height:2.2083in;width:568px;max-height:212px;" src="/api/v1/ticket_attachment/1918/10103/39163?view=inline"></p>
+<p> </p>
+<p>Q1 : Please let me know why this special TAB shows.</p>
+<p>Q2 : Are these parameters included into ENI file?</p>
+<p>Q3 : If I don$B!G(Bt use this special TAB, can I set these parameters using ecatCoeSdoUpload/ecatCoeSdoDownload from my applications?</p>
+<p> </p>
+<p>Best Regards,</p>
+<p>Gen</p>
+<p>KEYENCE</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=10106
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.11.2021 11:26:17 +00:00
+UpdatedAt=26.11.2021 11:26:20 +00:00
+
+### ARTICLE01_SUBJECT
+About slave specific Tab in EC-Enginner
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>see answers below.</div><div><br></div><div>Best Regards,</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Martin Gaenzer </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, November 26, 2021, 12:00:32 PM, Gen Fukatsu wrote:<br><br><div>
+<p>Hello Cyril,</p>
+<p> </p>
+<p>Let me ask about EC-Engineer.</p>
+<p>I found the special TAB when I use specific slaves as the following figure.</p>
+<p>$B!!!!!!(B(e.g.)EL6224$B!'(BIO-Link Master</p>
+<p>$B!!!!!!!!!!!!!!(B<img style="max-width:100%;max-width:100%;width:5.2291in;max-height:1.0729in;width:502px;max-height:103px;" src="/api/v1/ticket_attachment/1918/10106/39166?view=inline"></p>
+<p>$B!!!!!!!!(B(e.g.)EL6751$B!'(BCANopen Master</p>
+<p>$B!!!!!!!!!!!!!!(B<img style="max-width:100%;max-width:100%;width:5.9166in;max-height:2.2083in;width:568px;max-height:212px;" src="/api/v1/ticket_attachment/1918/10106/39167?view=inline"></p>
+<p> </p>
+<p>Q1 : Please let me know why this special TAB shows.</p>
+<p>MG: These tabs are shown, because those slaves are more complex "gateway" slaves. This means configuration of those slaves by adding PDOs and CoE InitCmds manually is possible but very complicated. This is the reason why we added a special tab for those slaves and help the user to configure those slaves. </p>
+<p><br></p>
+<p>Q2 : Are these parameters included into ENI file?</p>
+<p>MG: Yes. The most of all parameters will result into PDOs and CoE InitCmds.</p>
+<p><br></p>
+<p>Q3 : If I don$B!G(Bt use this special TAB, can I set these parameters using ecatCoeSdoUpload/ecatCoeSdoDownload from my applications?</p>
+<p>MG: Maybe, but I am not sure if this is possible. I recommend to use those tabs.</p>
+<p> </p>
+<p>Best Regards,</p>
+<p>Gen</p>
+<p>KEYENCE</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=10122
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.11.2021 06:57:54 +00:00
+UpdatedAt=29.11.2021 06:57:54 +00:00
+
+### ARTICLE02_SUBJECT
+RE: About slave specific Tab in EC-Enginner [Ticket#701918]
+
+### ARTICLE02_BODY
+<div>
+<p>Hello Martin,</p>
+<p> </p>
+<p>Thank you very much for your prompt reply.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Gen</p>
+<p>KEYENCE</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Martin Gaenzer via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Friday, November 26, 2021 8:26 PM<br>
+<b>To:</b> 深津 元 (1695.8960) Gen Fukatsu &lt;fukatsug@keyence.co.jp&gt;<br>
+<b>Subject:</b> RE: About slave specific Tab in EC-Enginner [Ticket#701918]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>see answers below.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Martin</p>
+</div>
+<div> <p> </p>
+<div>
+<div>
+<p>____________________________________________________________________________</p>
+</div>
+<div>
+<p>Martin Gaenzer</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>acontis technologies GmbH</p>
+</div>
+</div>
+<div>
+<p>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</p>
+</div>
+<div>
+<p>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com</a> </p>
+</div>
+<div>
+<p>Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>eMail: ecsupport@acontis.com</p>
+</div>
+<div>
+<p>----------------------------------------------------------------------------</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</p>
+</div>
+<div>
+<p><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Friday, November 26, 2021, 12:00:32 PM, Gen Fukatsu wrote:</p>
+<p></p>
+<div>
+<p>Hello Cyril,</p>
+<p> </p>
+<p>Let me ask about EC-Engineer.</p>
+<p>I found the special TAB when I use specific slaves as the following figure.</p>
+<p>$B!!!!!!(B(e.g.)EL6224$B!'(BIO-Link Master</p>
+<p>$B!!!!!!!!!!!!!!(B<img border="0" style="max-width:100%;width:5.2291in;max-height:1.0729in;width:502px;max-height:103px;" src="/api/v1/ticket_attachment/1918/10122/39223?view=inline"></p>
+<p>$B!!!!!!!!(B(e.g.)EL6751$B!'(BCANopen Master</p>
+<p>$B!!!!!!!!!!!!!!(B<img border="0" style="max-width:100%;width:5.9166in;max-height:2.2083in;width:568px;max-height:212px;" src="/api/v1/ticket_attachment/1918/10122/39224?view=inline"></p>
+<p> </p>
+<p>Q1 : Please let me know why this special TAB shows.</p>
+<p>MG: These tabs are shown, because those slaves are more complex "gateway" slaves. This means configuration of those slaves by adding PDOs and CoE InitCmds manually is possible but very complicated. This is the reason why we added a special tab for those slaves and help the user to configure those slaves.</p>
+<p> </p>
+<p>Q2 : Are these parameters included into ENI file?</p>
+<p>MG: Yes. The most of all parameters will result into PDOs and CoE InitCmds.</p>
+<p> </p>
+<p>Q3 : If I don$B!G(Bt use this special TAB, can I set these parameters using ecatCoeSdoUpload/ecatCoeSdoDownload from my applications?</p>
+<p>MG: Maybe, but I am not sure if this is possible. I recommend to use those tabs.</p>
+<p> </p>
+<p>Best Regards,</p>
+<p>Gen</p>
+<p>KEYENCE</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>

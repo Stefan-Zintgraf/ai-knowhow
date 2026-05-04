@@ -1,0 +1,155 @@
+### HEADER
+Id=1953
+Link=http://at-zammad/#ticket/zoom/1953
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Digital Dynamics Inc. (ID=342, Number=40370, Country=US)
+Commission=Digital Dynamics, Internal Slave Testing (ID=408, Number=408)
+Number=701953
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=stomaszewski@digitaldynamics.com (ID=297, FirstName=Shaun, LastName=Tomaszewski)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=02.12.2021 03:09:01 +00:00
+UpdatedAt=02.12.2021 15:48:06 +00:00
+CloseAt=02.12.2021 15:48:05 +00:00
+ArticlesCount=4
+
+### TITLE
+Fwd: Linking against libEcMaster.a
+
+### ARTICLE00_HEADER
+Id=10329
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.12.2021 03:09:01 +00:00
+UpdatedAt=02.12.2021 03:09:01 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Linking against libEcMaster.a
+
+### ARTICLE00_BODY
+Can you guys help with this one?<br><br><div dir="ltr">/Jon</div><div dir="ltr">
+<br>Begin forwarded message:<br><br>
+</div><blockquote type="cite"><div dir="ltr">
+<b>From:</b> Shaun Tomaszewski &lt;STomaszewski@digitaldynamics.com&gt;<br><b>Date:</b> December 1, 2021 at 9:07:10 PM EST<br><b>To:</b> Jon Waters &lt;j.waters@acontis.com&gt;<br><b>Subject:</b> <b>Linking against libEcMaster.a</b><br><br>
+</div></blockquote><blockquote type="cite"><div>
+<p>Hi Jon,</p>
+<p> </p>
+<p>It looks like when we create a library that links against libEcMaster.a, the library output needs to be in a shared library.</p>
+<p> </p>
+<p>It looks like when I try to compile our library as a static library I get these errors:</p>
+<p> </p>
+<p>../acontis_lib/SDK/LIB/Linux/x64/libEcMaster.a(EcOs.o): In function `OsGetLinkLayerRegFunc':</p>
+<p>EcOs.cpp:(.text+0xfc9): undefined reference to `dlerror'</p>
+<p>EcOs.cpp:(.text+0x1159): undefined reference to `dlopen'</p>
+<p>EcOs.cpp:(.text+0x116a): undefined reference to `dlerror'</p>
+<p>EcOs.cpp:(.text+0x128d): undefined reference to `dlopen'</p>
+<p>EcOs.cpp:(.text+0x129a): undefined reference to `dlerror'</p>
+<p>EcOs.cpp:(.text+0x1332): undefined reference to `dlerror'</p>
+<p>EcOs.cpp:(.text+0x133d): undefined reference to `dlsym'</p>
+<p>EcOs.cpp:(.text+0x134b): undefined reference to `dlerror'</p>
+<p> </p>
+<p>I don’t see a way to resolve that by creating our library as a static version.</p>
+<p> </p>
+<p>Does being able to only create our library as a shared library that’s linking the libEcMaster.a sound correct to you?</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Shaun</p>
+<p> </p>
+</div></blockquote>
+
+### ARTICLE01_HEADER
+Id=10336
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.12.2021 06:56:15 +00:00
+UpdatedAt=02.12.2021 06:56:16 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: Linking against libEcMaster.a
+
+### ARTICLE01_BODY
+Yes, this is correct. The EC-Master loads the Link Layer dynamically, therefore the "dl" lib is needed.<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">Am Donnerstag, 2. Dezember 2021, 04:09:01, schrieb Jon Waters:<br><br>Can you guys help with this one?<br><br><div dir="ltr">/Jon</div>
+<div dir="ltr">
+<br>Begin forwarded message:<br><br>
+</div>
+<blockquote type="cite"><div dir="ltr">
+<b>From:</b> Shaun Tomaszewski &lt;STomaszewski@digitaldynamics.com&gt;<br><b>Date:</b> December 1, 2021 at 9:07:10 PM EST<br><b>To:</b> Jon Waters &lt;j.waters@acontis.com&gt;<br><b>Subject:</b> <b>Linking against libEcMaster.a</b><br><br>
+</div></blockquote>
+<blockquote type="cite"><div>
+<p>Hi Jon,</p>
+<p> </p>
+<p>It looks like when we create a library that links against libEcMaster.a, the library output needs to be in a shared library.</p>
+<p> </p>
+<p>It looks like when I try to compile our library as a static library I get these errors:</p>
+<p> </p>
+<p>../acontis_lib/SDK/LIB/Linux/x64/libEcMaster.a(EcOs.o): In function `OsGetLinkLayerRegFunc':</p>
+<p>EcOs.cpp:(.text+0xfc9): undefined reference to `dlerror'</p>
+<p>EcOs.cpp:(.text+0x1159): undefined reference to `dlopen'</p>
+<p>EcOs.cpp:(.text+0x116a): undefined reference to `dlerror'</p>
+<p>EcOs.cpp:(.text+0x128d): undefined reference to `dlopen'</p>
+<p>EcOs.cpp:(.text+0x129a): undefined reference to `dlerror'</p>
+<p>EcOs.cpp:(.text+0x1332): undefined reference to `dlerror'</p>
+<p>EcOs.cpp:(.text+0x133d): undefined reference to `dlsym'</p>
+<p>EcOs.cpp:(.text+0x134b): undefined reference to `dlerror'</p>
+<p> </p>
+<p>I don’t see a way to resolve that by creating our library as a static version.</p>
+<p> </p>
+<p>Does being able to only create our library as a shared library that’s linking the libEcMaster.a sound correct to you?</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Shaun</p>
+<p> </p>
+</div></blockquote>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=10381
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=02.12.2021 15:40:19 +00:00
+UpdatedAt=02.12.2021 15:40:19 +00:00
+
+### ARTICLE02_BODY
+@Jon: I didn't send an answer to the customer. Should I?
+
+### ARTICLE03_HEADER
+Id=10383
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=02.12.2021 15:48:06 +00:00
+UpdatedAt=02.12.2021 15:48:06 +00:00
+
+### ARTICLE03_BODY
+No it's OK Paul, I already sent an answer to them after your response to me. So we can close this.<br>

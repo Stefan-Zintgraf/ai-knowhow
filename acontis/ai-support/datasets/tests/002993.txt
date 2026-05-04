@@ -1,0 +1,135 @@
+### HEADER
+Id=2993
+Link=http://at-zammad/#ticket/zoom/2993
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies GmbH (ID=399, Number=1000, Country=DE)
+Commission=Acontis, Generic (ID=590, Number=590)
+Number=702993
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+CreatedBy=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Type=
+TimeUnit=
+CreatedAt=11.05.2022 06:35:39 +00:00
+UpdatedAt=11.05.2022 06:59:17 +00:00
+CloseAt=11.05.2022 06:59:17 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-Embedded nightly
+
+### ARTICLE00_HEADER
+Id=15781
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.05.2022 06:35:39 +00:00
+UpdatedAt=11.05.2022 06:35:39 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Embedded nightly
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo zusammen,</p>
+<p> </p>
+<p>der <a href="http://at-vbld-ec-3:8080/job/EC-Embedded/job/main%2FV3.1/141/" rel="nofollow noreferrer noopener" title="http://at-vbld-ec-3:8080/job/EC-Embedded/job/main%2FV3.1/141/" target="_blank">EC-Embedded Build</a> von heute Nacht <a href="http://at-vbld-ec-3:8080/blue/organizations/jenkins/EC-Embedded/detail/main%2FV3.1/141/pipeline" rel="nofollow noreferrer noopener" title="http://at-vbld-ec-3:8080/blue/organizations/jenkins/EC-Embedded/detail/main%2FV3.1/141/pipeline" target="_blank">sieht gut aus</a>. Bis auf <a href="http://at-vbld-ec-3:8080/job/EC-Embedded/job/main%2FV3.1/141/parsed_console/" rel="nofollow noreferrer noopener" title="http://at-vbld-ec-3:8080/job/EC-Embedded/job/main%2FV3.1/141/parsed_console/" target="_blank">2 Fehler</a> in den Tests war alles grün.</p>
+<p> </p>
+<p>Wir haben in der Nacht in 5h 41min</p>
+<p> </p>
+<ul type="disc">
+<li>WINCE600</li>
+<li>VXWORKS69</li>
+<li>QNX6</li>
+<li>SYSBIOS</li>
+<li><span lang="EN-US">RTX64</span></li>
+<li><span lang="EN-US">Linux</span></li>
+<li><span lang="EN-US">Windows</span></li>
+<li><span lang="EN-US">XENOMAI3</span></li>
+<li><span lang="EN-US">INTEGRITY</span></li>
+<li><span lang="EN-US">Zephyr</span></li>
+<li><span lang="EN-US">FreeRTOS</span></li>
+<li>
+<span style="color:#4a4a4a;">QNX71</span>
+</li>
+</ul>
+<p> </p>
+<p>erfolgreich aus <a href="http://at-dev-git/ec-embedded/ec-embedded/-/tree/main/V3.1" rel="nofollow noreferrer noopener" title="http://at-dev-git/ec-embedded/ec-embedded/-/tree/main/V3.1" target="_blank">git</a> heraus parallel gebaut, <a href="http://at-vbld-ec-3:8080/blue/organizations/jenkins/EC-Embedded/detail/main%2FV3.1/141/tests" rel="nofollow noreferrer noopener" title="http://at-vbld-ec-3:8080/blue/organizations/jenkins/EC-Embedded/detail/main%2FV3.1/141/tests" target="_blank">getestet</a> und <a href="file://At-srv-dev-2/ec/EC-Embedded/Temp/Builds/EC-Embedded/main_V3.1/141">abgelegt</a>. –bis auf die zwei Fehler (Paul und ich sind dran)–</p>
+<p> </p>
+<p>Denke dies ist ein guter Zwischenerfolg.</p>
+<p> </p>
+<p>Frohes schaffen,</p>
+<p> </p>
+<p>Timo.</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=15785
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.05.2022 06:56:41 +00:00
+UpdatedAt=11.05.2022 06:56:44 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Embedded nightly
+
+### ARTICLE01_BODY
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div><br><div>---Begin forwarded message:---<br><br>
+</div><div><blockquote type="cite">
+<div>Betreff: EC-Embedded nightly<br>Datum: 11.05.2022 08:35<br>Von: Timo Nußbaumer<br>An: EtherCAT Support &lt;ecsupport@acontis.com&gt;<br><br>
+</div>
+<div>
+<p>Hallo zusammen,</p>
+<p> </p>
+<p>der <a href="http://at-vbld-ec-3:8080/job/EC-Embedded/job/main%2FV3.1/141/" rel="nofollow noreferrer noopener" title="http://at-vbld-ec-3:8080/job/EC-Embedded/job/main%2FV3.1/141/" target="_blank">EC-Embedded Build</a> von heute Nacht <a href="http://at-vbld-ec-3:8080/blue/organizations/jenkins/EC-Embedded/detail/main%2FV3.1/141/pipeline" rel="nofollow noreferrer noopener" title="http://at-vbld-ec-3:8080/blue/organizations/jenkins/EC-Embedded/detail/main%2FV3.1/141/pipeline" target="_blank">sieht gut aus</a>. Bis auf <a href="http://at-vbld-ec-3:8080/job/EC-Embedded/job/main%2FV3.1/141/parsed_console/" rel="nofollow noreferrer noopener" title="http://at-vbld-ec-3:8080/job/EC-Embedded/job/main%2FV3.1/141/parsed_console/" target="_blank">2 Fehler</a> in den Tests war alles grün.</p>
+<p> </p>
+<p>Wir haben in der Nacht in 5h 41min</p>
+<p> </p>
+<ul type="disc">
+<li>WINCE600</li>
+<li>VXWORKS69</li>
+<li>QNX6</li>
+<li>SYSBIOS</li>
+<li><span lang="EN-US">RTX64</span></li>
+<li><span lang="EN-US">Linux</span></li>
+<li><span lang="EN-US">Windows</span></li>
+<li><span lang="EN-US">XENOMAI3</span></li>
+<li><span lang="EN-US">INTEGRITY</span></li>
+<li><span lang="EN-US">Zephyr</span></li>
+<li><span lang="EN-US">FreeRTOS</span></li>
+<li>
+<span style="color:#4a4a4a;">QNX71</span>
+</li>
+</ul>
+<p> </p>
+<p>erfolgreich aus <a href="http://at-dev-git/ec-embedded/ec-embedded/-/tree/main/V3.1" rel="nofollow noreferrer noopener" title="http://at-dev-git/ec-embedded/ec-embedded/-/tree/main/V3.1" target="_blank">git</a> heraus parallel gebaut, <a href="http://at-vbld-ec-3:8080/blue/organizations/jenkins/EC-Embedded/detail/main%2FV3.1/141/tests" rel="nofollow noreferrer noopener" title="http://at-vbld-ec-3:8080/blue/organizations/jenkins/EC-Embedded/detail/main%2FV3.1/141/tests" target="_blank">getestet</a> und <a href="file://At-srv-dev-2/ec/EC-Embedded/Temp/Builds/EC-Embedded/main_V3.1/141">abgelegt</a>. –bis auf die zwei Fehler (Paul und ich sind dran)–</p>
+<p> </p>
+<p>Denke dies ist ein guter Zwischenerfolg.</p>
+<p> </p>
+<p>Frohes schaffen,</p>
+<p> </p>
+<p>Timo.</p>
+</div>
+</blockquote></div><div><br></div><br><br>

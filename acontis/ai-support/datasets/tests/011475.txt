@@ -1,0 +1,239 @@
+### HEADER
+Id=11475
+Link=http://at-zammad/#ticket/zoom/11475
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Auris Surgical Robotics Inc (ID=336, Number=40288, Country=US)
+Commission=Auris Surgical Robotics Inc, R&D (ID=402, Number=402)
+Number=7011475
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=jpiszcze@its.jnj.com (ID=2776, FirstName=Jakub [JNJPL], LastName=Piszczek)
+CreatedBy=jpiszcze@its.jnj.com (ID=2776, FirstName=Jakub [JNJPL], LastName=Piszczek)
+Type=
+TimeUnit=
+CreatedAt=24.09.2025 17:51:14 +00:00
+UpdatedAt=05.11.2025 16:49:20 +00:00
+CloseAt=05.11.2025 16:49:20 +00:00
+ArticlesCount=4
+
+### TITLE
+EC-Simulator initialization fails on QNX in HiL mode
+
+### ARTICLE00_HEADER
+Id=66304
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.09.2025 17:51:14 +00:00
+UpdatedAt=24.09.2025 17:51:16 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Simulator initialization fails on QNX in HiL mode
+
+### ARTICLE00_BODY
+<div>Hi Jon,</div><div> </div><div>I'm trying to run simulator version 3.2.2 in HiL mode on QNX and I get the following error:</div><div> </div><div>EC-Simulator V3.2.2.03 (Protected) for QNX_x64 Copyright acontis technologies GmbH @ 2024</div><div>CEcDeviceBase::Open(): Set EC_T_LINK_PARMS_INTELGBE::bNoPhyCtrlOnConnect = 1</div><div>CEcDeviceBase::Open() Failed to open link layer!</div><div>esInitSimulator() = -1743716352</div><div>Cannot initialize EC-Simulator: Unspecific Error</div><div> </div><div>How can I solve this problem?</div><div>
+<div> </div>
+<p>
+<b>Jakub Piszczek</b></p>
+<p>Senior Software Engineer Real-Time Software</p>
+<p>
+<span style=" background-color: rgb(255, 255, 255);"><a href="https://home.jnj.com/redir/657743" rel="nofollow noreferrer noopener" title="https://home.jnj.com/redir/657743" target="_blank">MedTech R&amp;D</a></span></p>
+<p>
+<b>MedTech</b></p>
+<p>
+<i>Real-Time Simulation</i></p>
+<p>
+<span><br>
+</span></p>
+<p>jpiszcze@its.jnj.com</p>
+<p>M: +48 889 821 933</p>
+<p>
+<a href="http://www.jnj.com/" rel="nofollow noreferrer noopener" title="http://www.jnj.com/" target="_blank">jnj.com</a></p>
+<p>
+<span><img style="max-width:100%;max-width: 765px;" src="/api/v1/ticket_attachment/11475/66304/276550?view=inline"><br>
+</span></p>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=66305
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.09.2025 19:27:26 +00:00
+UpdatedAt=24.09.2025 19:27:29 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Simulator initialization fails on QNX in HiL mode
+
+### ARTICLE01_BODY
+<div>Hi Jakub,</div><div><br></div><div>Seems like something is not set up properly with the link layer. Either the link layer isn’t loaded, the existing OS driver is still loaded, or you are providing the wrong instance parameter.</div><div><br></div><div>Can you please provide the complete log file and make sure to use logging verbosity level 3 (-v 3)?</div><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Jon Waters</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +1-508-809-7200</div>
+<div>acontis technologies Inc.,  <span>945 Concord Street, Framingham, MA 01701, United States</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Wednesday, September 24, 2025 at 1:51:14 PM, Jakub [JNJPL] Piszczek wrote:<br><br><div>Hi Jon,</div>
+<div> </div>
+<div>I'm trying to run simulator version 3.2.2 in HiL mode on QNX and I get the following error:</div>
+<div> </div>
+<div>EC-Simulator V3.2.2.03 (Protected) for QNX_x64 Copyright acontis technologies GmbH @ 2024</div>
+<div>CEcDeviceBase::Open(): Set EC_T_LINK_PARMS_INTELGBE::bNoPhyCtrlOnConnect = 1</div>
+<div>CEcDeviceBase::Open() Failed to open link layer!</div>
+<div>esInitSimulator() = -1743716352</div>
+<div>Cannot initialize EC-Simulator: Unspecific Error</div>
+<div> </div>
+<div>How can I solve this problem?</div>
+<div>
+<div> </div>
+<p>
+<b>Jakub Piszczek</b></p>
+<p>Senior Software Engineer Real-Time Software</p>
+<p>
+<span style=" background-color: rgb(255, 255, 255);"><a href="https://home.jnj.com/redir/657743" rel="nofollow noreferrer noopener" title="https://home.jnj.com/redir/657743" target="_blank">MedTech R&amp;D</a></span></p>
+<p>
+<b>MedTech</b></p>
+<p>
+<i>Real-Time Simulation</i></p>
+<p>
+<span><br>
+</span></p>
+<p>jpiszcze@its.jnj.com</p>
+<p>M: +48 889 821 933</p>
+<p>
+<a href="http://www.jnj.com/" rel="nofollow noreferrer noopener" title="http://www.jnj.com/" target="_blank">jnj.com</a></p>
+<p>
+<span><img style="max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/11475/66305/276551?view=inline"><br>
+</span></p>
+<div> </div>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=66355
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.09.2025 16:36:39 +00:00
+UpdatedAt=25.09.2025 16:36:39 +00:00
+
+### ARTICLE02_SUBJECT
+Re: EC-Simulator initialization fails on QNX in HiL mode [Ticket#7011475]
+
+### ARTICLE02_BODY
+<div>Hi Jon,</div><div> </div><div>I'll check it tomorrow and let you know if I managed to improve the link layer settings.</div><div>I have another question regarding the possibility of running the Simulator in HiL mode on Linux so that it communicates with the master via localhost without the need for a cable connection.</div><div>We talked about this in the context of QNX, but it turns out that it can be useful for us, especially on Linux.<br> Could you give me some details about this solution?</div><div>
+<div> </div>
+<p>
+<b>Jakub Piszczek</b></p>
+<p>Senior Software Engineer Real-Time Software</p>
+<p>
+<span style=" background-color: rgb(255, 255, 255);"><a href="https://home.jnj.com/redir/657743" rel="nofollow noreferrer noopener" title="https://home.jnj.com/redir/657743" target="_blank">MedTech R&amp;D</a></span></p>
+<p>
+<b>MedTech</b></p>
+<p>
+<i>Real-Time Simulation</i></p>
+<p>
+<span><br>
+</span></p>
+<p>jpiszcze@its.jnj.com</p>
+<p>M: +48 889 821 933</p>
+<p>
+<a href="http://www.jnj.com/" rel="nofollow noreferrer noopener" title="http://www.jnj.com/" target="_blank">jnj.com</a></p>
+<p>
+<span><img style="max-width:100%;max-width: 765px;" src="/api/v1/ticket_attachment/11475/66355/276766?view=inline"><br>
+</span></p>
+<div> </div>
+</div><hr>
+<div dir="ltr">
+<b>From:</b> Jon Waters via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Wednesday, September 24, 2025 9:27 PM<br>
+<b>To:</b> Piszczek, Jakub [JNJPL] &lt;JPiszcze@ITS.JNJ.com&gt;<br>
+<b>Cc:</b> Nalecz-Laczynski, Maciej [JNJPL] &lt;MNaleczL@ITS.JNJ.com&gt;; Anne, Yugesh [ETHUS] &lt;YAnne@ITS.JNJ.com&gt;; Tehrani-saleh, Ali [ETHUS] &lt;ATehrani@ITS.JNJ.com&gt;<br>
+<b>Subject:</b> [EXTERNAL] RE: EC-Simulator initialization fails on QNX in HiL mode [Ticket#7011475] <div> </div>
+</div><div>
+<div>Hi Jakub,</div>
+<div> </div>
+<div>Seems like something is not set up properly with the link layer. Either the link layer isn’t loaded, the existing OS driver is still loaded, or you are providing the wrong instance parameter.</div>
+<div> </div>
+<div>Can you please provide the complete log file and make sure to use logging verbosity level 3 (-v 3)?</div>
+<br>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Jon Waters</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +1-508-809-7200</div>
+<div>acontis technologies Inc., 945 Concord Street, Framingham, MA 01701, United States, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Wednesday, September 24, 2025 at 1:51:14 PM, Jakub [JNJPL] Piszczek wrote:<br>
+<br>
+<div>Hi Jon,</div>
+<div> </div>
+<div>I'm trying to run simulator version 3.2.2 in HiL mode on QNX and I get the following error:</div>
+<div> </div>
+<div>EC-Simulator V3.2.2.03 (Protected) for QNX_x64 Copyright acontis technologies GmbH @ 2024</div>
+<div>CEcDeviceBase::Open(): Set EC_T_LINK_PARMS_INTELGBE::bNoPhyCtrlOnConnect = 1</div>
+<div>CEcDeviceBase::Open() Failed to open link layer!</div>
+<div>esInitSimulator() = -1743716352</div>
+<div>Cannot initialize EC-Simulator: Unspecific Error</div>
+<div> </div>
+<div>How can I solve this problem?</div>
+<div>
+<div> </div>
+<p><b>Jakub Piszczek</b></p>
+<p>Senior Software Engineer Real-Time Software</p>
+<p><span style="background-color:rgb(255,255,255);"><a href="https://home.jnj.com/redir/657743" rel="nofollow noreferrer noopener" title="https://home.jnj.com/redir/657743" target="_blank">MedTech R&amp;D</a></span></p>
+<p><b>MedTech</b></p>
+<p><i>Real-Time Simulation</i></p>
+<p><span><br>
+</span></p>
+<p>jpiszcze@its.jnj.com</p>
+<p>M: +48 889 821 933</p>
+<p><a href="http://www.jnj.com/" rel="nofollow noreferrer noopener" title="http://www.jnj.com/" target="_blank">jnj.com</a></p>
+<p><span><img style="max-width:100%;max-width:100%;" src="/api/v1/ticket_attachment/11475/66355/276765?view=inline"><br>
+</span></p>
+<div> </div>
+</div>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+
+### ARTICLE03_HEADER
+Id=67189
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.10.2025 00:04:50 +00:00
+UpdatedAt=19.10.2025 00:04:53 +00:00
+
+### ARTICLE03_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE03_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".<div><br></div><div>NOTE:</div><div>Please try to close this ticket, if everything is discussed with the customer and create a new issue in git lab if necessary.</div>

@@ -1,0 +1,152 @@
+### HEADER
+Id=6015
+Link=http://at-zammad/#ticket/zoom/6015
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vector Informatik GmbH (ID=167, Number=40366, Country=DE)
+Commission=Vector, CANoe (ID=189, Number=189)
+Number=706015
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+CreatedBy=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+Type=
+TimeUnit=
+CreatedAt=20.07.2023 13:39:56 +00:00
+UpdatedAt=28.07.2023 06:38:34 +00:00
+CloseAt=28.07.2023 06:38:34 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-Simulator - bus configuration missmatch
+
+### ARTICLE00_HEADER
+Id=32073
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.07.2023 13:39:56 +00:00
+UpdatedAt=20.07.2023 13:39:59 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Simulator - bus configuration missmatch
+
+### ARTICLE00_BODY
+<div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>ich habe von einem Kunden eine ecc Datei erhalten, mit welcher der Kunde ein Problem mit dem EtherCAT-Master in CANoe hat. Mit dieser Datei habe ich eine exi-Datei für den EC-Simulator erstellt und konnte den EC-Simulator damit ausführen (Version 3.1.4.11). Wenn ich mich dann mit dem EC-Engineer mit dem EC-Simulator verbinde, dann erhalte ich die Fehlermeldung „ESI not found for at least on slave“ oder „bus configuration missmatch“. Was muss ich tun, damit ich den EC-Simulator mit einem EC-Master oder den EC-Engineer ausführen kann?</p>
+<p> </p>
+<p>Beim Ausführen des EC-Simulators mit dem EC-Engineer (Dieser hat die Medlung: „ESI not found for at least on slave“ angezeigt), sind plötzlich sehr viele Meldungen im EC-Simulator ausgegeben worden:</p>
+<p><span lang="EN-US">0000598627: CPcapRecorder overflow!</span></p>
+<p><span lang="EN-US">0000598630: CPcapRecorder overflow!</span></p>
+<p><span lang="EN-US">0000598630: CPcapRecorder overflow!</span></p>
+<p><span lang="EN-US">0000598633: CPcapRecorder overflow!</span></p>
+<p><span lang="EN-US">0000598633: CPcapRecorder overflow!</span></p>
+<p><span lang="EN-US">0000598636: CPcapRecorder overflow!</span></p>
+<p><span lang="EN-US">0000598636: CPcapRecorder overflow!</span></p>
+<p><span lang="EN-US">0000598639: CPcapRecorder overflow!</span></p>
+<p><span lang="EN-US">0000598639: CPcapRecorder overflow!</span></p>
+<p>0000598642: CPcapRecorder overflow!</p>
+<p> </p>
+<p>Woran kann das liegen?</p>
+<p> </p>
+<p>Mit freundlichen Gruessen / Best regards,</p>
+<p> </p>
+<p><span lang="EN-US">Tobias Lange</span></p>
+<p><span lang="EN-US">-----------------------------------------------------</span></p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">PND10</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><b>Vector Informatik GmbH</b></p>
+<p>Besucheranschrift / Visitor address: Holderäckerstraße 36 | 70499 Stuttgart | Germany</p>
+<p><span>Tel.: +49 711 80670-4791 <p> </p></span></p>
+<p><span lang="EN-US"><a href="mailto:tobias.lange@vector.com"><span lang="DE" style="color:blue;">tobias.lange@vector.com</span></a></span></p>
+<p><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.vector.com</span></a></p>
+<p> </p>
+<p>Sitz der Gesellschaft / Registered Office: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p>Handelsregister / Commercial Register: Amtsgericht Stuttgart | HRB 17317</p>
+<p>Geschaeftsfuehrer / Managing Directors: Dr. Thomas Beck, Dr. Stefan Krauß, Thomas Riegraf</p>
+<p><span lang="EN-US">-----------------------------------------------------</span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=32103
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.07.2023 06:58:43 +00:00
+UpdatedAt=21.07.2023 06:58:47 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Simulator - bus configuration missmatch
+
+### ARTICLE01_BODY
+Hallo Herr Lange,<div><br></div><div>Sie sollten das ESI von dem Slave hinzufügen, dass Ihnen fehlt.</div><div><br></div><div>Die Meldungen kommen daher, dass Sie den Simulator mit dem PcapRecorder starten. Das sollten Sie nicht tun, sofern Sie ihn nicht brauchen, da der sonst ewig mitläuft.</div><div><br></div><div>Viele Grüße</div><div>Kai Feifel<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, July 20, 2023 at 3:39:56 PM, Tobias Lange wrote:<br><br><div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>ich habe von einem Kunden eine ecc Datei erhalten, mit welcher der Kunde ein Problem mit dem EtherCAT-Master in CANoe hat. Mit dieser Datei habe ich eine exi-Datei für den EC-Simulator erstellt und konnte den EC-Simulator damit ausführen (Version 3.1.4.11). Wenn ich mich dann mit dem EC-Engineer mit dem EC-Simulator verbinde, dann erhalte ich die Fehlermeldung „ESI not found for at least on slave“ oder „bus configuration missmatch“. Was muss ich tun, damit ich den EC-Simulator mit einem EC-Master oder den EC-Engineer ausführen kann?</p>
+<p> </p>
+<p>Beim Ausführen des EC-Simulators mit dem EC-Engineer (Dieser hat die Medlung: „ESI not found for at least on slave“ angezeigt), sind plötzlich sehr viele Meldungen im EC-Simulator ausgegeben worden:</p>
+<p><span lang="EN-US">0000598627: CPcapRecorder overflow!</span></p>
+<p><span lang="EN-US">0000598630: CPcapRecorder overflow!</span></p>
+<p><span lang="EN-US">0000598630: CPcapRecorder overflow!</span></p>
+<p><span lang="EN-US">0000598633: CPcapRecorder overflow!</span></p>
+<p><span lang="EN-US">0000598633: CPcapRecorder overflow!</span></p>
+<p><span lang="EN-US">0000598636: CPcapRecorder overflow!</span></p>
+<p><span lang="EN-US">0000598636: CPcapRecorder overflow!</span></p>
+<p><span lang="EN-US">0000598639: CPcapRecorder overflow!</span></p>
+<p><span lang="EN-US">0000598639: CPcapRecorder overflow!</span></p>
+<p>0000598642: CPcapRecorder overflow!</p>
+<p> </p>
+<p>Woran kann das liegen?</p>
+<p> </p>
+<p>Mit freundlichen Gruessen / Best regards,</p>
+<p> </p>
+<p><span lang="EN-US">Tobias Lange</span></p>
+<p><span lang="EN-US">-----------------------------------------------------</span></p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">PND10</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><b>Vector Informatik GmbH</b></p>
+<p>Besucheranschrift / Visitor address: Holderäckerstraße 36 | 70499 Stuttgart | Germany</p>
+<p><span>Tel.: +49 711 80670-4791 </span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"><a href="mailto:tobias.lange@vector.com"><span lang="DE" style="color:blue;">tobias.lange@vector.com</span></a></span></p>
+<p><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.vector.com</span></a></p>
+<p> </p>
+<p>Sitz der Gesellschaft / Registered Office: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p>Handelsregister / Commercial Register: Amtsgericht Stuttgart | HRB 17317</p>
+<p>Geschaeftsfuehrer / Managing Directors: Dr. Thomas Beck, Dr. Stefan Krauß, Thomas Riegraf</p>
+<p><span lang="EN-US">-----------------------------------------------------</span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,100 @@
+### HEADER
+Id=6397
+Link=http://at-zammad/#ticket/zoom/6397
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ABB E-mobility (ID=701, Number=0, Country=IT)
+Commission=ABB E-mobility, Charger System (ID=785, Number=785)
+Number=706397
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=davide.marzona@it.abb.com (ID=1982, FirstName=Davide, LastName=Marzona)
+CreatedBy=davide.marzona@it.abb.com (ID=1982, FirstName=Davide, LastName=Marzona)
+Type=
+TimeUnit=
+CreatedAt=20.09.2023 08:17:01 +00:00
+UpdatedAt=18.10.2023 11:01:14 +00:00
+CloseAt=13.10.2023 06:01:22 +00:00
+ArticlesCount=2
+
+### TITLE
+TCP dump with atemsys
+
+### ARTICLE00_HEADER
+Id=34454
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.09.2023 08:17:01 +00:00
+UpdatedAt=20.09.2023 08:17:04 +00:00
+
+### ARTICLE00_SUBJECT
+TCP dump with atemsys
+
+### ARTICLE00_BODY
+<p> </p><div> <p>Hello,</p>
+<p> </p>
+<p>For tests purposes we want to see the traffic on the EtherCAT network. The solution that I have in mind is used tcpdump tool, but this requires the interface to use as input argument. As you now, in my current implementation I installed by default atemsys driver for the interface that I use for EtherCAT, and this interface cannot be seen anymore by launching an ifconfig command. Do you know some way to perform a TCP dump also with atemsys drivers?</p>
+<p> </p>
+<p>Thank you,</p>
+<p> <img style="max-width:100%;width:.9062in;max-height:.3437in;width:87px;max-height:33px;" src="/api/v1/ticket_attachment/6397/34454/143757?view=inline" alt="ABB logotype"></p>
+<p><span style="color:#ff000f;">—</span></p>
+<p><b>Davide Marzona</b><span>
+<br> R&amp;D, Power Electronic FW Developer </span></p>
+<p><b><span lang="IT">ABB E-mobility S.p.A</span></b><span lang="IT"> <br> San Giovanni Valdarno-AR, Italy</span><span lang="IT"></span></p>
+<p><span lang="IT"><p> </p></span></p>
+</div><br> Il Gruppo ABB in Italia ha adottato il Modello Organizzativo ai sensi del D.Lgs. 231/2001, in forza del quale l'assunzione di obbligazioni da parte di societa' ABB avviene a firma congiunta di due procuratori muniti di idonei poteri, con la sola eccezione delle persone che rivestono la carica di Amministratore Delegato o di Direttore Generale.Le informazioni contenute in questo messaggio di posta elettronica sono riservate e confidenziali e ne e' vietata la diffusione in qualunque modo eseguita.Qualora Lei non fosse la persona cui il presente messaggio e' destinato, e' invitata a non diffonderlo, e ad eliminarlo, dandone gentilmente comunicazione al mittente. <br> ABB Group in Italy adopts a Compliance Programme under the Italian Law (D.Lgs.231/2001). According to this ABB Compliance Programme, any commitment of ABB Italian Companies is taken by the double signature of ABB Representatives granted by a proper Power of Attorney with the only exception of Managing Director or General Manager.The information included in this e-mail and any attachments are confidential and may also be privileged. If you are not the correct recipient, you are kindly requested to notify the sender immediately, to cancel it and not to disclose the contents to any other person.
+
+### ARTICLE01_HEADER
+Id=34460
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.09.2023 08:48:00 +00:00
+UpdatedAt=20.09.2023 08:48:05 +00:00
+
+### ARTICLE01_SUBJECT
+TCP dump with atemsys
+
+### ARTICLE01_BODY
+Hi Davide,<div><br></div><div>You can use a TAP device between the master and the first slave and catch the communication. Alternatively you can use our frame logging API: </div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=logframe#emlogframeenable" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=logframe#emlogframeenable" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=logframe#emlogframeenable</a></div></div><div><br></div><div>There is an example implementation in EcLogging.cp. ou can look for <span>INCLUDE_PCAP_RECORDER</span>
+</div><div><span>Starting our EcMasterDemo with -rec would for example store all the IN and OUT frames in a cap file.</span></div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, September 20, 2023 at 10:17:01 AM, Davide Marzona wrote:<br><br><p> </p>
+<div> <p>Hello,</p>
+<p> </p>
+<p>For tests purposes we want to see the traffic on the EtherCAT network. The solution that I have in mind is used tcpdump tool, but this requires the interface to use as input argument. As you now, in my current implementation I installed by default atemsys driver for the interface that I use for EtherCAT, and this interface cannot be seen anymore by launching an ifconfig command. Do you know some way to perform a TCP dump also with atemsys drivers?</p>
+<p> </p>
+<p>Thank you,</p>
+<p> <img style="max-width:100%;max-width:100%;width:.9062in;max-height:.3437in;width:87px;max-height:33px;" src="/api/v1/ticket_attachment/6397/34460/143782?view=inline" alt="ABB logotype"></p>
+<p><span style="color:#ff000f;">—</span></p>
+<p><b>Davide Marzona</b><span>
+<br> R&amp;D, Power Electronic FW Developer </span></p>
+<p><b><span lang="IT">ABB E-mobility S.p.A</span></b><span lang="IT"> <br> San Giovanni Valdarno-AR, Italy</span><span lang="IT"></span></p>
+<p><span lang="IT"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br> Il Gruppo ABB in Italia ha adottato il Modello Organizzativo ai sensi del D.Lgs. 231/2001, in forza del quale l'assunzione di obbligazioni da parte di societa' ABB avviene a firma congiunta di due procuratori muniti di idonei poteri, con la sola eccezione delle persone che rivestono la carica di Amministratore Delegato o di Direttore Generale.Le informazioni contenute in questo messaggio di posta elettronica sono riservate e confidenziali e ne e' vietata la diffusione in qualunque modo eseguita.Qualora Lei non fosse la persona cui il presente messaggio e' destinato, e' invitata a non diffonderlo, e ad eliminarlo, dandone gentilmente comunicazione al mittente. <br> ABB Group in Italy adopts a Compliance Programme under the Italian Law (D.Lgs.231/2001). According to this ABB Compliance Programme, any commitment of ABB Italian Companies is taken by the double signature of ABB Representatives granted by a proper Power of Attorney with the only exception of Managing Director or General Manager.The information included in this e-mail and any attachments are confidential and may also be privileged. If you are not the correct recipient, you are kindly requested to notify the sender immediately, to cancel it and not to disclose the contents to any other person.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

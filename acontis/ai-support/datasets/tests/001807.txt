@@ -1,0 +1,235 @@
+### HEADER
+Id=1807
+Link=http://at-zammad/#ticket/zoom/1807
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=701807
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=10.11.2021 20:17:55 +00:00
+UpdatedAt=06.12.2021 07:13:33 +00:00
+CloseAt=06.12.2021 07:13:34 +00:00
+ArticlesCount=5
+
+### TITLE
+Hot Connect Groups
+
+### ARTICLE00_HEADER
+Id=9613
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.11.2021 20:17:55 +00:00
+UpdatedAt=10.11.2021 20:17:55 +00:00
+
+### ARTICLE00_SUBJECT
+Hot Connect Groups
+
+### ARTICLE00_BODY
+<div>
+<p>If I define a configuration with 1 slave device and set it as a Hot Connect Group, why does EC-Master report that 2 HC groups are found in the log file?</p>
+<p> </p>
+<p>Hot Connect detect all groups successful - 2 groups found, 1 groups present</p>
+<p> </p>
+<p>/Jon</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=9625
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=11.11.2021 08:38:48 +00:00
+UpdatedAt=11.11.2021 08:38:48 +00:00
+
+### ARTICLE01_BODY
+Bitte einmal aufsetzen und validieren, dass es so ist. Es geht wahrscheinlich darum dass die Mandatory Gruppe immer als Present gemeldet wird. Das könnten wir ändern in dem Fall wo die Gruppe keine Slaves beinhaltet
+
+### ARTICLE02_HEADER
+Id=9633
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.11.2021 10:02:02 +00:00
+UpdatedAt=11.11.2021 10:02:06 +00:00
+
+### ARTICLE02_SUBJECT
+Hot Connect Groups
+
+### ARTICLE02_BODY
+Hallo Jon,<div><br></div><div>we were able to reproduce this behaviour. this is a bug in the Hot-Connect detect group notification descriptor! </div><div>We fixed it and it will be part of the next release</div><div><br></div><div>Best Regards</div><div>Haithem Jebali <br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Haithem Jebali </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, November 10, 2021, 9:17:55 PM, Jon Waters wrote:<br><br><div>
+<p>If I define a configuration with 1 slave device and set it as a Hot Connect Group, why does EC-Master report that 2 HC groups are found in the log file?</p>
+<p> </p>
+<p>Hot Connect detect all groups successful - 2 groups found, 1 groups present</p>
+<p> </p>
+<p>/Jon</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=9641
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.11.2021 13:23:00 +00:00
+UpdatedAt=11.11.2021 13:23:00 +00:00
+
+### ARTICLE03_SUBJECT
+Re: Hot Connect Groups [Ticket#701807]
+
+### ARTICLE03_BODY
+Thanks Haithem. Was this just a bug related to the reported number of groups or was there any other behavioral effect? The customer is having trouble with hot connect so just want to understand if there is anything working incorrectly. <br><br><div dir="ltr">/Jon</div><div dir="ltr">
+<br><blockquote type="cite">On Nov 11, 2021, at 5:02 AM, Haithem Jebali via EC-Support &lt;ecsupport@acontis.com&gt; wrote:<br><br>
+</blockquote>
+</div><blockquote type="cite"><div dir="ltr">Hallo Jon,<div> </div>
+<div>we were able to reproduce this behaviour. this is a bug in the Hot-Connect detect group notification descriptor!</div>
+<div>We fixed it and it will be part of the next release</div>
+<div> </div>
+<div>Best Regards</div>
+<div>Haithem Jebali<br><div data-signature="true" data-signature-id="2">
+<div>____________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>eMail: ecsupport@acontis.com<br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Wednesday, November 10, 2021, 9:17:55 PM, Jon Waters wrote:<br><br><div>
+<p>If I define a configuration with 1 slave device and set it as a Hot Connect Group, why does EC-Master report that 2 HC groups are found in the log file?</p>
+<p> </p>
+<p>Hot Connect detect all groups successful - 2 groups found, 1 groups present</p>
+<p> </p>
+<p>/Jon</p>
+</div>
+<br>
+</blockquote></div>
+<div> </div>
+<br><br>
+</div>
+</div></blockquote>
+
+### ARTICLE04_HEADER
+Id=9644
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.11.2021 13:48:21 +00:00
+UpdatedAt=11.11.2021 13:48:23 +00:00
+
+### ARTICLE04_SUBJECT
+Hot Connect Groups
+
+### ARTICLE04_BODY
+Hallo Jon, <div><br></div><div>This was only a bug in the displayed number of groups and has actually no behavioral effect. </div><div>But I think the customer should check that the configurated station alias in the EEPROM of the slave is the same as the identification value of the Hot-Connect group configured by the customer in the ENI.</div><div><br></div><div><img src="/api/v1/ticket_attachment/1807/9644/37686?view=inline" style="max-width:100%;width: 1000px;max-width: 100%;"></div><div><span><br></span></div><div>
+<img src="/api/v1/ticket_attachment/1807/9644/37687?view=inline" style="max-width:100%;width: 1000px;max-width: 100%;"><span> </span>
+</div><div><span>Best Regards</span></div><div><span>Haithem Jebali</span></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Haithem Jebali </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, November 11, 2021, 2:23:00 PM, Jon Waters wrote:<br><br>Thanks Haithem. Was this just a bug related to the reported number of groups or was there any other behavioral effect? The customer is having trouble with hot connect so just want to understand if there is anything working incorrectly. <br><br><div dir="ltr">/Jon</div>
+<div dir="ltr">
+<br><blockquote type="cite">On Nov 11, 2021, at 5:02 AM, Haithem Jebali via EC-Support &lt;ecsupport@acontis.com&gt; wrote:<br><br>
+</blockquote>
+</div>
+<blockquote type="cite"><div dir="ltr">Hallo Jon,<div> </div>
+<div>we were able to reproduce this behaviour. this is a bug in the Hot-Connect detect group notification descriptor!</div>
+<div>We fixed it and it will be part of the next release</div>
+<div> </div>
+<div>Best Regards</div>
+<div>Haithem Jebali<br><div data-signature="true" data-signature-id="2">
+<div>____________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>eMail: ecsupport@acontis.com<br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Wednesday, November 10, 2021, 9:17:55 PM, Jon Waters wrote:<br><br><div>
+<p>If I define a configuration with 1 slave device and set it as a Hot Connect Group, why does EC-Master report that 2 HC groups are found in the log file?</p>
+<p> </p>
+<p>Hot Connect detect all groups successful - 2 groups found, 1 groups present</p>
+<p> </p>
+<p>/Jon</p>
+</div>
+<br>
+</blockquote></div>
+<div> </div>
+<br><br>
+</div>
+</div></blockquote>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

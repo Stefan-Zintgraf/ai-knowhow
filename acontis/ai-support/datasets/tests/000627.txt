@@ -1,0 +1,126 @@
+### HEADER
+Id=627
+Link=http://at-zammad/#ticket/zoom/627
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Philips Healthcare (ID=381, Number=40395, Country=US)
+Commission=Philips Healthcare, CT Advanced Development (ID=453, Number=453)
+Number=700627
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=naji.karkour@philips.com (ID=166, FirstName=Naji, LastName=Karkour)
+CreatedBy=naji.karkour@philips.com (ID=166, FirstName=Naji, LastName=Karkour)
+Type=
+TimeUnit=
+CreatedAt=21.05.2021 05:07:29 +00:00
+UpdatedAt=28.05.2021 06:10:35 +00:00
+CloseAt=28.05.2021 06:10:35 +00:00
+ArticlesCount=3
+
+### TITLE
+Method to get the Sync0 time
+
+### ARTICLE00_HEADER
+Id=3481
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.05.2021 05:07:29 +00:00
+UpdatedAt=21.05.2021 05:07:32 +00:00
+
+### ARTICLE00_SUBJECT
+Method to get the Sync0 time
+
+### ARTICLE00_BODY
+<div>
+<p>Hi,</p>
+<p>A few months ago, I sent you the formula we are using to get the Sync 0time (as we need this time to have accurate node Output and input times).</p>
+<p>I wanted you to confirm that this is the correct formula, and you confirmed it (1<sup>st</sup> question in the attached e-mail).</p>
+<p> </p>
+<p>The formula that I sent you (and that you confirmed that it is correct) is:</p>
+<p>///////////////////////////////////</p>
+<p><i>nodeSync0Time = busTime - pnDiffCur - cycleTime + Sync0Shift;</i></p>
+<p><i>where:</i></p>
+<p><i>busTime is the value from ecatGetBusTime(busTime)</i></p>
+<p><i>pnDiffCur is the value from ecatDcmGetStatus(pdwErrorCode, pnDiffCur, pnDiffAvg, pnDiffMax)</i></p>
+<p><i>cycleTime = 1ms</i></p>
+<p><i>Sync0Shift = 300 MicroSeconds (30% of cycletime)</i></p>
+<p>///////////////////////////////////</p>
+<p> </p>
+<p>According to my tests (and calculations), we should add nDiffCur instead of subtracting it.</p>
+<p>Shouldn’t the formula be:<br>
+<b>nodeSync0Time = busTime </b><b>+ pnDiffCur - cycleTime + Sync0Shift;</b></p>
+<p> </p>
+<p>If we should really subtract, then I have another question and it relates to tests that we have where from time to time(random time between 10 minutes to an hour), the computed time value of <i>nodeSync0Time </i>is earlier than the last computed value (which points to an incorrect behavior as this value should be incrementing)</p>
+<p>Iteration (n): nodeSync0Time: 674841800085524, busTimeUs: 674841800086229, nDiffCur: 5</p>
+<p>Iteration (n-1): nodeSync0Time: 674841800085533, busTimeUs: 674841800085734, nDiffCur: -499</p>
+<p>If we add the nDiffCur in our calculation (instead of subtracting it), then the nodeSync0Time of (n-1) would be OK</p>
+<p> </p>
+<p>Can you please confirm if we should subtract or add nDiffCur in our formula?</p>
+<p>Also, if we really should subtract it, would you know what would cause a Sync0 time that is very near the Sync0 time of the last cycle? Is this behavior somewhat expected?</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Naji</p>
+<p> </p>
+</div><br>
+<hr> The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.
+
+### ARTICLE01_HEADER
+Id=3522
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=21.05.2021 13:27:33 +00:00
+UpdatedAt=21.05.2021 13:27:33 +00:00
+
+### ARTICLE01_BODY
+Calculation
+
+### ARTICLE02_HEADER
+Id=3523
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.05.2021 13:42:25 +00:00
+UpdatedAt=21.05.2021 13:42:27 +00:00
+
+### ARTICLE02_SUBJECT
+Method to get the Sync0 time
+
+### ARTICLE02_BODY
+Hi Naji,<div><br></div><div>I double checked in a dcmlog:</div><div><br></div><div>
+<img style="max-width:100%;width: 559px;max-width: 100%;" src="/api/v1/ticket_attachment/627/3523/11631?view=inline"><br>
+</div><div><br></div><div>It looks like DcmDiffCur is negative when the cyclic frame is delayed. You are right it should be added. I'm sorry for this confusion.</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div><br></div><div><blockquote type="cite">On Friday, May 21, 2021, 7:07:29 AM, Naji Karkour wrote:<br><br><div>
+<p>Hi,</p>
+<p>A few months ago, I sent you the formula we are using to get the Sync 0time (as we need this time to have accurate node Output and input times).</p>
+<p>I wanted you to confirm that this is the correct formula, and you confirmed it (1<sup>st</sup> question in the attached e-mail).</p>
+<p> </p>
+<p>The formula that I sent you (and that you confirmed that it is correct) is:</p>
+<p>///////////////////////////////////</p>
+<p><i>nodeSync0Time = busTime - pnDiffCur - cycleTime + Sync0Shift;</i></p>
+<p><i>where:</i></p>
+<p><i>busTime is the value from ecatGetBusTime(busTime)</i></p>
+<p><i>pnDiffCur is the value from ecatDcmGetStatus(pdwErrorCode, pnDiffCur, pnDiffAvg, pnDiffMax)</i></p>
+<p><i>cycleTime = 1ms</i></p>
+<p><i>Sync0Shift = 300 MicroSeconds (30% of cycletime)</i></p>
+<p>///////////////////////////////////</p>
+<p> </p>
+<p>According to my tests (and calculations), we should add nDiffCur instead of subtracting it.</p>
+<p>Shouldn’t the formula be:<br>
+<b>nodeSync0Time = busTime </b><b>+ pnDiffCur - cycleTime + Sync0Shift;</b></p>
+<p> </p>
+<p>If we should really subtract, then I have another question and it relates to tests that we have where from time to time(random time between 10 minutes to an hour), the computed time value of <i>nodeSync0Time </i>is earlier than the last computed value (which points to an incorrect behavior as this value should be incrementing)</p>
+<p>Iteration (n): nodeSync0Time: 674841800085524, busTimeUs: 674841800086229, nDiffCur: 5</p>
+<p>Iteration (n-1): nodeSync0Time: 674841800085533, busTimeUs: 674841800085734, nDiffCur: -499</p>
+<p>If we add the nDiffCur in our calculation (instead of subtracting it), then the nodeSync0Time of (n-1) would be OK</p>
+<p> </p>
+<p>Can you please confirm if we should subtract or add nDiffCur in our formula?</p>
+<p>Also, if we really should subtract it, would you know what would cause a Sync0 time that is very near the Sync0 time of the last cycle? Is this behavior somewhat expected?</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Naji</p>
+<p> </p>
+</div>
+<br>
+<hr> The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.<br>
+</blockquote></div><div><br></div><br><br>

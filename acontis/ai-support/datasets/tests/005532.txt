@@ -1,0 +1,150 @@
+### HEADER
+Id=5532
+Link=http://at-zammad/#ticket/zoom/5532
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=705532
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=03.05.2023 20:38:34 +00:00
+UpdatedAt=25.05.2023 06:09:02 +00:00
+CloseAt=25.05.2023 06:09:02 +00:00
+ArticlesCount=4
+
+### TITLE
+EC-Master Linux with Python root privileges
+
+### ARTICLE00_HEADER
+Id=29371
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.05.2023 20:38:34 +00:00
+UpdatedAt=03.05.2023 20:38:34 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Master Linux with Python root privileges
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>We have a potential customer evaluating the EC-Master for Linux with the Python package. They are using the raw socket driver and they have come up with a way to provide root privileges without giving full root access by giving their application “cap_net_raw” capabilities. They mentioned that when they do this for a Python script it is a little strange because it means they're giving the Python executable in general those permissions, rather than their individual application.</div><div> </div><div>They are wondering if we are aware of how other users deal with this and what our suggestions are.</div><div>
+<div>
+<br>/Jon </div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=29380
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=04.05.2023 07:03:05 +00:00
+UpdatedAt=04.05.2023 07:03:05 +00:00
+
+### ARTICLE01_BODY
+Hi Haithem,<div><br></div><div>das Thema hatten wir doch vor kurz. Wenn <span>cap_net_raw hilft, sollten wir es in der Doku aufnehmen. Wir haben den gleichen Bedarf für den atemsys.</span>
+</div><div><br></div><div>Grüße,</div><div>Cyril</div>
+
+### ARTICLE02_HEADER
+Id=29401
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.05.2023 13:04:31 +00:00
+UpdatedAt=04.05.2023 13:04:34 +00:00
+
+### ARTICLE02_SUBJECT
+EC-Master Linux with Python root privileges
+
+### ARTICLE02_BODY
+<div>Hi Jon,</div><div><br></div><div>What the customer can do is that they can create a virtual python environment. Preferably, they should do this in our package home directory:</div><div>cd Bin/Linux</div><div>
+<mark>python3 -m venv --copies PyEnv/</mark><span style="color:rgb(41, 41, 41);"> </span><br>
+</div><div>A new directory PyEnv will appear, Now they can activate the environment with the following command:</div><div><span style="color:rgb(41, 41, 41);">source PyEnv/bin/activate</span></div><div>
+<span style="color: rgb(41, 41, 41);">They can now give "</span><span>cap_net_raw” capabilities to their python exe under </span>
+
+<span style="color:rgb(41, 41, 41);">PyEnv/bin/</span> <span>!</span>
+</div><div>The Python demo won't need any root priviliges when the environment is activated!</div><div><br></div><div>When the user quit the environment using the command deactivate. The original python under /usr/bin is again active and it has no "cap_net_raw" capabilities!</div><div><br></div><div>Of course for more security, Only the users who are going to start the python Demo should have access to the folder PyEnv! All others should be excluded!   </div><div><br></div><div>Mit freundlichen Grüßen</div><div>Haithem Jebali</div><div> <br><br>
+</div><div><blockquote type="cite">On Wednesday, May 3, 2023 at 10:38:34 PM, Jon Waters wrote:<br><br>ap_net_raw” capa<br>
+</blockquote></div><div><br></div><br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=29411
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.05.2023 15:28:23 +00:00
+UpdatedAt=04.05.2023 15:28:23 +00:00
+
+### ARTICLE03_SUBJECT
+Re: EC-Master Linux with Python root privileges [Ticket#705532]
+
+### ARTICLE03_BODY
+Hi Haithem,<div> </div><div>Wow that sounds really cool and should address their concerns. Thank you for that! I will let you know what they say.<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On May 4, 2023, at 9:04 AM, Haithem Jebali via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>
+<div>Hi Jon,</div>
+<div> </div>
+<div>What the customer can do is that they can create a virtual python environment. Preferably, they should do this in our package home directory:</div>
+<div>cd Bin/Linux</div>
+<div>
+<mark>python3 -m venv --copies PyEnv/</mark><span style="color: rgb(41, 41, 41);"> </span><br>
+</div>
+<div>A new directory PyEnv will appear, Now they can activate the environment with the following command:</div>
+<div><span style="color: rgb(41, 41, 41);">source PyEnv/bin/activate</span></div>
+<div>
+<span style="color: rgb(41, 41, 41);">They can now give "</span>cap_net_raw” capabilities to their python exe under <span style="color: rgb(41, 41, 41);">PyEnv/bin/</span> ! </div>
+<div>The Python demo won't need any root priviliges when the environment is activated!</div>
+<div> </div>
+<div>When the user quit the environment using the command deactivate. The original python under /usr/bin is again active and it has no "cap_net_raw" capabilities!</div>
+<div> </div>
+<div>Of course for more security, Only the users who are going to start the python Demo should have access to the folder PyEnv! All others should be excluded!</div>
+<div> </div>
+<div>Mit freundlichen Grüßen</div>
+<div>Haithem Jebali</div>
+<div> </div>
+<div><blockquote type="cite">On Wednesday, May 3, 2023 at 10:38:34 PM, Jon Waters wrote:<br><br>ap_net_raw” capa<br>
+</blockquote></div>
+<div> </div>
+<br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

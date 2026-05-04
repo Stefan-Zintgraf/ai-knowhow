@@ -1,0 +1,234 @@
+### HEADER
+Id=1817
+Link=http://at-zammad/#ticket/zoom/1817
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=none
+Commission=FANUC, EtherCAT model CNC (ID=487, Number=487)
+Number=701817
+Owner=m.danilau@acontis.com (ID=4, FirstName=Maksim, LastName=Danilau)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=12.11.2021 01:00:38 +00:00
+UpdatedAt=12.12.2023 13:49:54 +00:00
+CloseAt=26.11.2021 07:04:26 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Master (FANUC)
+
+### ARTICLE00_HEADER
+Id=9660
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=12.11.2021 01:00:39 +00:00
+UpdatedAt=12.11.2021 01:00:44 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master (FANUC)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master (FANUC)
+
+Q48. When they call "emIoControl - EC_LINKIOCTL_GET_SPEED", they get an Invalid parameter error.
+      At this time, the return value is zero.
+      Please tell me the reason for the error.
+
+The reproduction environment is attached.
+
+Best regards,
+Takuya Fujikawa
+
+### ARTICLE01_HEADER
+Id=9678
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.11.2021 11:43:36 +00:00
+UpdatedAt=12.11.2021 11:43:40 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master (FANUC)
+
+### ARTICLE01_BODY
+Dear Mr. Fujikawa,<div><br></div><div>in order to proceed further with your request i need either a LOG file or some other output information. The reason: in the environment you attached to the request there is no direct call to <span>"emIoControl - EC_LINKIOCTL_GET_SPEED", whereas according to my information such a call should return "</span><span>EC_E_NOTSUPPORTED</span><span>" and not "</span><span>an Invalid parameter error". Please provide me with a proper error description and/or proper description of a way to reproduce the issue you mentioned.</span><br>
+</div><div><br></div><div>With best regards,<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Maksim Danilau, M.Sc.</div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Freitag, 12. November 2021, 02:00:39, schrieb Takuya Fujikawa:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master (FANUC)</div>
+<div><br></div>
+<div>Q48. When they call "emIoControl - EC_LINKIOCTL_GET_SPEED", they get an Invalid parameter error.</div>
+<div>      At this time, the return value is zero.</div>
+<div>      Please tell me the reason for the error.</div>
+<div><br></div>
+<div>The reproduction environment is attached.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=9682
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=15.11.2021 01:29:43 +00:00
+UpdatedAt=15.11.2021 01:29:43 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master (FANUC) [Ticket#701817]
+
+### ARTICLE02_BODY
+Dear Maksim san
+
+I send you a screenshot of where the error is being returned.
+Does your answer mean that R-IN32 does not support EC_LINKIOCTL_GET_SPEED?
+
+Best regards,
+Takuya Fujikawa
+
+
+
+On 2021/11/12 20:43, Maksim Danilau via EC-Support wrote:
+> Dear Mr. Fujikawa,
+> 
+> in order to proceed further with your request i need either a LOG file or some other output information. The reason: in the environment you attached to the request there is no direct call to "emIoControl - EC_LINKIOCTL_GET_SPEED", whereas according to my information such a call should return "EC_E_NOTSUPPORTED" and not "an Invalid parameter error". Please provide me with a proper error description and/or proper description of a way to reproduce the issue you mentioned.
+> 
+> With best regards,
+> ____________________________________________________________________________
+> Maksim Danilau, M.Sc.
+> EtherCAT Support
+> acontis technologies GmbH
+> Address: Gartenstraße 46, D-88212 Ravensburg, Germany
+> Http: https://www.acontis.com <https://www.acontis.com>
+> Phone: +49 (751) 56030-30
+> eMail: ecsupport@acontis.com
+> ----------------------------------------------------------------------------
+> Subscribe to our newsletter and stay updated on the latest developments and upcoming events.
+> https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> Am Freitag, 12. November 2021, 02:00:39, schrieb Takuya Fujikawa:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Master (FANUC)
+>>
+>> Q48. When they call "emIoControl - EC_LINKIOCTL_GET_SPEED", they get an Invalid parameter error.
+>>      At this time, the return value is zero.
+>>      Please tell me the reason for the error.
+>>
+>> The reproduction environment is attached.
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+### ARTICLE03_HEADER
+Id=9684
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.11.2021 07:11:41 +00:00
+UpdatedAt=15.11.2021 10:41:44 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master (FANUC)
+
+### ARTICLE03_BODY
+Dear Mr. Fujikawa,<div><br></div><div>would you please replace the call:</div><div><br></div><div><div>dwRes = emIoControl(pAppContext-&gt;dwInstanceId, EC_LINKIOCTL_GET_SPEED, &amp;oIoCtlParms);</div></div><div><br></div><div>with:</div><div><br></div><div><div>dwRes = emIoControl(pAppContext-&gt;dwInstanceId, <b>EC_IOCTL_LINKLAYER | </b>EC_LINKIOCTL_GET_SPEED, &amp;oIoCtlParms);</div></div><div><br></div><div>and test it?</div><div><br></div><div>Concerning your question: if you call <span>EcLinkIoctl(</span><span>EC_LINKIOCTL_GET_SPEED</span><span>) directly, you will get </span><span>EC_E_NOTSUPPORTED, but if you  call </span><span>emIoControl() as i showed above everything should work.</span>
+</div><div><span><br></span></div><div><span>With best regards,</span></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Maksim Danilau, M.Sc.</div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div><br></div>
+</div>
+<div><blockquote type="cite">Am Montag, 15. November 2021, 02:29:43, schrieb Takuya Fujikawa:<br><br><div>Dear Maksim san</div>
+<div><br></div>
+<div>I send you a screenshot of where the error is being returned.</div>
+<div>Does your answer mean that R-IN32 does not support EC_LINKIOCTL_GET_SPEED?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2021/11/12 20:43, Maksim Danilau via EC-Support wrote:</div>
+<div>&gt; Dear Mr. Fujikawa,</div>
+<div>&gt;</div>
+<div>&gt; in order to proceed further with your request i need either a LOG file or some other output information. The reason: in the environment you attached to the request there is no direct call to "emIoControl - EC_LINKIOCTL_GET_SPEED", whereas according to my information such a call should return "EC_E_NOTSUPPORTED" and not "an Invalid parameter error". Please provide me with a proper error description and/or proper description of a way to reproduce the issue you mentioned.</div>
+<div>&gt;</div>
+<div>&gt; With best regards,</div>
+<div>&gt; ____________________________________________________________________________</div>
+<div>&gt; Maksim Danilau, <a href="http://M.Sc" title="http://M.Sc" rel="nofollow noreferrer noopener" target="_blank">M.Sc</a>.</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; acontis technologies GmbH</div>
+<div>&gt; Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>&gt; Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>&gt;</div>
+<div>&gt; Phone: +49 (751) 56030-30</div>
+<div>&gt; eMail: ecsupport@acontis.com</div>
+<div>&gt; ----------------------------------------------------------------------------</div>
+<div>&gt; Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div>&gt; <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; Am Freitag, 12. November 2021, 02:00:39, schrieb Takuya Fujikawa:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Master (FANUC)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Q48. When they call "emIoControl - EC_LINKIOCTL_GET_SPEED", they get an Invalid parameter error.</div>
+<div>&gt;&gt;      At this time, the return value is zero.</div>
+<div>&gt;&gt;      Please tell me the reason for the error.</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; The reproduction environment is attached.</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

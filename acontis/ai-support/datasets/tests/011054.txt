@@ -1,0 +1,206 @@
+### HEADER
+Id=11054
+Link=http://at-zammad/#ticket/zoom/11054
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Sipro (ID=537, Number=0, Country=IT)
+Commission=Sipro, SIAX XPC (ID=236, Number=236)
+Number=7011054
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=luca.leopardi@sipro.vr.it (ID=165, FirstName=Luca, LastName=Leopardi)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=22.07.2025 11:38:05 +00:00
+UpdatedAt=06.08.2025 06:12:34 +00:00
+CloseAt=06.08.2025 06:12:34 +00:00
+ArticlesCount=4
+
+### TITLE
+Acontis software update request from SIPRO
+
+### ARTICLE00_HEADER
+Id=63415
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.07.2025 11:38:05 +00:00
+UpdatedAt=22.07.2025 11:38:10 +00:00
+
+### ARTICLE00_SUBJECT
+Acontis software update request from SIPRO
+
+### ARTICLE00_BODY
+<p>Dear Mr./Ms. Leopardi,</p><p>thank you for your registration.<br><br></p><p>First Name: Luca<br>Last Name: Leopardi<br>Company: SIPRO<br><span>Commission Number: <br></span><span>Country: Italy<br></span><span>City: Verona<br></span><span>E-Mail: luca.leopardi@sipro.vr.it<br></span>Product: <span>EC-Master<br></span>Update Type: Upgrade (newest API)<br><span>Operating System Version: Keil - RTX<br></span>Additional information: package for STM32H743</p><p><img src="/api/v1/ticket_attachment/11054/63415/262866?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/11054/63415/262865?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=63489
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.07.2025 07:00:39 +00:00
+UpdatedAt=23.07.2025 07:00:41 +00:00
+
+### ARTICLE01_SUBJECT
+Acontis software update request from SIPRO
+
+### ARTICLE01_BODY
+Hello Mr.Leopardi, <div><br></div><div>I have already delivered the packages for 
+
+CMSIS-RTOS and STM32 on Monday. </div><div>I can see in my system you also have a purchase for RTX, are you requesting update for the one(commission no. 40386) ?</div><div><br></div><div>Regards, <br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=63497
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.07.2025 07:40:03 +00:00
+UpdatedAt=23.07.2025 07:40:03 +00:00
+
+### ARTICLE02_SUBJECT
+R: [ESTERNO] Acontis software update request from SIPRO [Ticket#7011054]
+
+### ARTICLE02_BODY
+<div>
+<p>Hello Mr. Bhattarai,</p>
+<p>yes, I request the update for the same operative system (Keil – RTX for STM32H743)</p>
+<p> </p>
+<p><span>In June 2024 I asked how to mantain license compatibility for the release 3.2 and Mr Maksim Danilau told me that the <b>EC_LINKIOCTL_USE_LEGACY_ETHERNET_ADDRESS</b> value for the ioctl function has been implemented only for our system.</span></p>
+<p>Please can you check if this feature is present in the update I requested?</p>
+<p> </p>
+<p>Thank you very much</p>
+<p> </p>
+<p>Best Regards</p>
+<p> </p>
+<p>Luca Leopardi<span><br>
+</span>____________________________________</p>
+<p><span>SIPRO s.r.l.<br> Viale dell'Industria 7<br> 37135 Verona - Italy<br> Tel +39 045 - 508822 Fax +39 045 - 585477<br> e-mail <a href="mailto:luca.leopardi@sipro.vr.it">luca.leopardi@sipro.vr.it</a></span><span><br>
+</span>Web <span><a href="http://blocked::http://www.sipro.vr.it/" title="blocked::http://www.sipro.vr.it/" rel="nofollow noreferrer noopener" target="_blank">http://www.sipro.vr.it</a><br>
+</span>_____________________________________</p>
+<p> </p>
+<div>
+<div>
+<p><b>Da:</b><span> Miran Bhattarai via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Inviato:</b> mercoledì 23 luglio 2025 09:01<br>
+<b>A:</b> Luca Leopardi - SIPRO &lt;luca.leopardi@sipro.vr.it&gt;<br>
+<b>Oggetto:</b> [ESTERNO] Acontis software update request from SIPRO [Ticket#7011054]</span></p>
+</div>
+</div>
+<p> </p>
+<p>Hello Mr.Leopardi,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>I have already delivered the packages for CMSIS-RTOS and STM32 on Monday.</p>
+</div>
+<div>
+<p>I can see in my system you also have a purchase for RTX, are you requesting update for the one(commission no. 40386) ?</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Regards,</p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Miran Bhattarai</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p><span>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</span></p>
+</div>
+<div>
+<p><span>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</span></p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p><span>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></span></p>
+</div>
+</div>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=63544
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.07.2025 15:27:47 +00:00
+UpdatedAt=23.07.2025 15:27:50 +00:00
+
+### ARTICLE03_SUBJECT
+Acontis software update request from SIPRO
+
+### ARTICLE03_BODY
+<div>
+<div>Dear Customer,</div>
+<div><br></div>
+<div>Please find your new software version below:</div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2025/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.3.02/EC-Master-ClassA-AddOn-V3.2.3.02-RTX64-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.3.02/EC-Master-ClassA-AddOn-V3.2.3.02-RTX64-x86_64Bit-SDK_Protected.zip</a></div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2025/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.3.02/EC-Master-V3.2.3.02-RTX64-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.3.02/EC-Master-V3.2.3.02-RTX64-x86_64Bit-SDK_Protected.zip</a></div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2025/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.3.02/EC-RtEth-IntelGbe-V3.2.3.02-RTX64-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.3.02/EC-RtEth-IntelGbe-V3.2.3.02-RTX64-x86_64Bit-SDK_Protected.zip</a></div>
+<div><br></div>
+<div>Also the latest version for CMSIS-RTOS, for which I delivered you <b>V3.1.6.07</b> on Monday :</div>
+<div><br></div>
+<div>
+<div><a href="https://downloads.acontis.com/2025/S/Sipro_(40387)(IT)/EC-Master_CMSIS-RTOS_ARM_32Bit/3.2.3.02/EC-Master-ClassA-AddOn-V3.2.3.02-CMSIS-RTOS-ARM_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/S/Sipro_(40387)(IT)/EC-Master_CMSIS-RTOS_ARM_32Bit/3.2.3.02/EC-Master-ClassA-AddOn-V3.2.3.02-CMSIS-RTOS-ARM_32Bit-SDK_Protected.zip</a></div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2025/S/Sipro_(40387)(IT)/EC-Master_CMSIS-RTOS_ARM_32Bit/3.2.3.02/EC-Master-V3.2.3.02-CMSIS-RTOS-ARM_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/S/Sipro_(40387)(IT)/EC-Master_CMSIS-RTOS_ARM_32Bit/3.2.3.02/EC-Master-V3.2.3.02-CMSIS-RTOS-ARM_32Bit-SDK_Protected.zip</a></div>
+</div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2025/S/Sipro_(40387)(IT)/EC-Master_CMSIS-RTOS_ARM_32Bit/3.2.3.02/EC-RtEth-CmsisEth-V3.2.3.02-CMSIS-RTOS-ARM_32Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2025/S/Sipro_(40387)(IT)/EC-Master_CMSIS-RTOS_ARM_32Bit/3.2.3.02/EC-RtEth-CmsisEth-V3.2.3.02-CMSIS-RTOS-ARM_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/S/Sipro_(40387)(IT)/EC-Master_CMSIS-RTOS_ARM_32Bit/3.2.3.02/EC-RtEth-CmsisEth-V3.2.3.02-CMSIS-RTOS-ARM_32Bit-SDK_Protected.zip</a></div>
+<div>Password: ECM88250</div>
+<div><br></div>
+<div>If you want to get notified if a new version is released, please answer to this e-mail.</div>
+<div><br></div>
+<div>Best Regards,</div>
+<br>
+</div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>

@@ -1,0 +1,144 @@
+### HEADER
+Id=9601
+Link=http://at-zammad/#ticket/zoom/9601
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=cpc Chieftek (ID=590, Number=50234, Country=TW)
+Commission=cpc Chieftek, cpcStudio (ID=669, Number=669)
+Number=709601
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=lm003@mail2.chieftek.com (ID=1237, FirstName=Kuanghan, LastName=)
+CreatedBy=lm003@mail2.chieftek.com (ID=1237, FirstName=Kuanghan, LastName=)
+Type=
+TimeUnit=
+CreatedAt=06.01.2025 07:59:05 +00:00
+UpdatedAt=10.01.2025 07:03:15 +00:00
+CloseAt=10.01.2025 07:03:15 +00:00
+ArticlesCount=2
+
+### TITLE
+[Chieftek]Trace data with input property
+
+### ARTICLE00_HEADER
+Id=54554
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.01.2025 07:59:05 +00:00
+UpdatedAt=06.01.2025 07:59:08 +00:00
+
+### ARTICLE00_SUBJECT
+[Chieftek]Trace data with input property
+
+### ARTICLE00_BODY
+<div dir="ltr">
+<div>Hi,</div>
+<div>We tested trace data with Ec-Engineer V3.9.8 (TRACEVAR.png) . We wonder why trace data only appeared in the output ProcessImage? Also, we tried on SDK and set EcDeviceCfgTraceData.Variable.IsInput = true (codesnapshot.png) , the generated ENI showed trace data still in the output ProcessImage (SetTraceDataInputResult.png).</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan</div>
+<div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div><br>
+<div> </div><div><a href="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" target="_blank"></a></div>
+
+### ARTICLE01_HEADER
+Id=54607
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.01.2025 10:32:41 +00:00
+UpdatedAt=07.01.2025 10:32:44 +00:00
+
+### ARTICLE01_SUBJECT
+[Chieftek]Trace data with input property
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>this correct. Currently the user can create only OUT variables. </div><div><br></div><div>In EC-Engineer, if you add a new variable, you can only choose data type and count. Not the direction:</div><div><br></div><div><img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/9601/54607/226169?view=inline"></div><div><br></div><div>Maybe the API is currently not clear enough.</div><div><br></div><div>In diag mode, there are also IN variables. They will be added automatically from EC-Master. </div><div>E.g. "Inputs.DeviceState":</div><div><br></div><div><img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/9601/54607/226170?view=inline"></div><div><br></div><div><span>Best Regards,</span></div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, January 6, 2025 at 8:59:05 AM, Kuanghan wrote:<br><br><div dir="ltr">
+<div>Hi,</div>
+<div>We tested trace data with Ec-Engineer V3.9.8 (TRACEVAR.png) . We wonder why trace data only appeared in the output ProcessImage? Also, we tried on SDK and set EcDeviceCfgTraceData.Variable.IsInput = true (codesnapshot.png) , the generated ENI showed trace data still in the output ProcessImage (SetTraceDataInputResult.png).</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan</div>
+<div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+<br>
+<div> </div>
+<div><a href="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" target="_blank"></a></div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

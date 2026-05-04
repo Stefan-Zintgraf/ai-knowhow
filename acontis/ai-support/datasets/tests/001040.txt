@@ -1,0 +1,174 @@
+### HEADER
+Id=1040
+Link=http://at-zammad/#ticket/zoom/1040
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=dSPACE GmbH (ID=94, Number=40282, Country=DE)
+Commission=dSpace, SCALEXIO (ID=103, Number=103)
+Number=701040
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=sschulte@dspace.de (ID=82, FirstName=Sebastian, LastName=Schulte)
+CreatedBy=sschulte@dspace.de (ID=82, FirstName=Sebastian, LastName=Schulte)
+Type=
+TimeUnit=
+CreatedAt=15.07.2021 13:14:57 +00:00
+UpdatedAt=25.04.2022 13:00:26 +00:00
+CloseAt=23.07.2021 06:06:36 +00:00
+ArticlesCount=4
+
+### TITLE
+[EC-Simulator] Output-Prozessdaten kommen nicht beim Slave an
+
+### ARTICLE00_HEADER
+Id=5753
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.07.2021 13:14:57 +00:00
+UpdatedAt=15.07.2021 13:14:57 +00:00
+
+### ARTICLE00_SUBJECT
+[EC-Simulator] Output-Prozessdaten kommen nicht beim Slave an
+
+### ARTICLE00_BODY
+<div>
+<p>Moin Paul,</p>
+<p> </p>
+<p>wir haben hier folgenden Workflow:</p>
+<ul type="disc">
+<li>Unser Kunde exportiert aus seiner Toolchain eine ENI<p></p>
+</li>
+<li>Wir importieren die ENI in EC-Engineer und generieren eine EXI<p></p>
+</li>
+</ul> <p> </p>
+<p>Laden wir die (original) ENI, dann werden die Prozessdaten richtig ausgetauscht. Laden wir die EXI, dann kommen die Prozessdaten vom (CODESYS-)Master nicht beim Slave im EC-Simulator an. In Richtung vom EC-Simulator zum Master klappts.</p>
+<p> </p>
+<p>Wir haben die unterschiedlichen FMMU-Settings in Verdacht, können diese in EC-Engineer aber nicht beeinflussen.</p>
+<ul type="disc">
+<li>Wir hätten jetzt erwartet, dass die FMMU-Settings, die vom Master beim initialisieren geschickt werden, dann vom EC-Simulator auch übernommen werden. Aber vielleicht liegt das Problem auch wo ganz anders<p></p>
+</li>
+</ul> <p> </p>
+<p>Hast du eine Idee?</p>
+<p> </p>
+<p>Anbei:</p>
+<ul type="disc">
+<li>EC-Engineer-Projekt: C6ESS_S6A_v28.ecc<p></p>
+</li>
+<li>original ENI aus der CODESYS-Toolchain: COMBIVIS_eni__EtherCAT_Master.xml<p></p>
+<ul type="circle">
+<li>und die ESI: KEB_S6A_v28_Prod_0x700001_Rev_0x244C.xml<p></p>
+</li>
+</ul>
+</li>
+<li>EXI die wir erhalten (EC-Engineer 3.4.0): C6ESS_S6A_v28_EXI.xml<p></p>
+</li>
+<li>Wireshark Dump: S6A_v28_port0.pcap<p></p>
+<ul type="circle">
+<li>Man sieht hier gut, dass der Master für FMMU0 die log. Adresse 0x1000000 verwendet (wie in EC-Engineer auch vorgeschlagen), für die FMMU1 wird 0x2000000 verwendet. Die Daten aus FMMU2 (EC-Simulator -&gt; Master) kommen allerdings an<p></p>
+</li>
+<li>In FMMU0 werden 8 Variablen gesendet. Jede Variable ist auf „1“ eingestellt.<p></p>
+</li>
+</ul>
+</li>
+</ul> <p> </p>
+<p>Schöne Grüße</p>
+<p>Sebastian</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=5757
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.07.2021 13:33:56 +00:00
+UpdatedAt=15.07.2021 13:34:00 +00:00
+
+### ARTICLE01_SUBJECT
+[EC-Simulator] Output-Prozessdaten kommen nicht beim Slave an
+
+### ARTICLE01_BODY
+Hi Sebastian,<div><br></div><div>der EC-Simulator kann die Anpassungen am Prozess Daten Abbild (s. "<span>&lt;ProcessImage&gt;</span><span>") nach dem Start nicht mehr ändern und reagiert daher auch nicht auf andere FMMU Settings. </span><span>Der Aufbau der Kommandos ist nicht standardisiert, d.h. der EC-Engineer seinerseits macht keine ungültige EXI, doch die EXI passt offensichtlich nicht zur ENI. </span>
+</div><div><span><br></span></div><div>
+<span>Benötigst du erweiterte Einstellungen aus der EXI oder reicht dir die ENI? Falls du die e</span><span>rweiterten Einstellungen aus der EXI</span><span> brauchst, kannst du den &lt;</span><span>ExtendedConfig&gt;-Knoten aus der EXI in die ENI kopieren und so eine neue EXI erzeugen, die passen sollte, s. Anhang. </span>
+</div><div><span><br></span></div><div><span>Klappt damit dann alles?</span></div><div><br></div><div>Viele Grüße</div><div>Paul<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+</div>
+
+### ARTICLE02_HEADER
+Id=5895
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.07.2021 11:22:04 +00:00
+UpdatedAt=20.07.2021 11:22:04 +00:00
+
+### ARTICLE02_SUBJECT
+RE: [EC-Simulator] Output-Prozessdaten kommen nicht beim Slave an [Ticket#701040]
+
+### ARTICLE02_BODY
+<div>
+<p>Hi Paul,</p>
+<p> </p>
+<p>hat geklappt. Danke für den Tip, dass man die ENI mit der ExtendedConfig-Tag aus der EXI mischen kann.</p>
+<p> </p>
+<p>Schöne Grüße</p>
+<p>Sebastian</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Paul Bußmann via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Thursday, July 15, 2021 3:34 PM<br>
+<b>To:</b> Sebastian Schulte &lt;SSchulte@dspace.de&gt;<br>
+<b>Subject:</b> RE: [EC-Simulator] Output-Prozessdaten kommen nicht beim Slave an [Ticket#701040]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>CAUTION: This e-mail originates from outside our organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.</p>
+</div>
+<p> </p>
+<div>
+<p>Hi Sebastian,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>der EC-Simulator kann die Anpassungen am Prozess Daten Abbild (s. "&lt;ProcessImage&gt;") nach dem Start nicht mehr ändern und reagiert daher auch nicht auf andere FMMU Settings. Der Aufbau der Kommandos ist nicht standardisiert, d.h. der EC-Engineer seinerseits macht keine ungültige EXI, doch die EXI passt offensichtlich nicht zur ENI.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Benötigst du erweiterte Einstellungen aus der EXI oder reicht dir die ENI? Falls du die erweiterten Einstellungen aus der EXI brauchst, kannst du den &lt;ExtendedConfig&gt;-Knoten aus der EXI in die ENI kopieren und so eine neue EXI erzeugen, die passen sollte, s. Anhang.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Klappt damit dann alles?</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Viele Grüße</p>
+</div>
+<div>
+<p>Paul</p>
+<div>
+<div> <p> </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=5907
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.07.2021 14:29:51 +00:00
+UpdatedAt=20.07.2021 14:29:52 +00:00
+
+### ARTICLE03_SUBJECT
+[EC-Simulator] Output-Prozessdaten kommen nicht beim Slave an
+
+### ARTICLE03_BODY
+Hi Sebastian,<div><br></div><div>super, dass es klappt! Danke für das Feedback! :-)</div><div><br></div><div>Viele Grüße</div><div>Paul</div><div><div><br></div></div>

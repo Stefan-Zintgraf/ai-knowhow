@@ -1,0 +1,122 @@
+### HEADER
+Id=2225
+Link=http://at-zammad/#ticket/zoom/2225
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=INSTRON GmbH (ID=116, Number=54010, Country=DE)
+Commission=INSTRON, Testing Systems (ID=130, Number=130)
+Number=702225
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=daniel_kuhles@instron.com (ID=258, FirstName=Daniel, LastName=Kuhles)
+CreatedBy=daniel_kuhles@instron.com (ID=258, FirstName=Daniel, LastName=Kuhles)
+Type=
+TimeUnit=
+CreatedAt=13.01.2022 13:33:32 +00:00
+UpdatedAt=17.01.2022 13:49:28 +00:00
+CloseAt=17.01.2022 13:49:28 +00:00
+ArticlesCount=2
+
+### TITLE
+[DaTS#10007653] Beckhoff CU1128 Unterstützung
+
+### ARTICLE00_HEADER
+Id=11758
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.01.2022 13:33:32 +00:00
+UpdatedAt=13.01.2022 13:33:36 +00:00
+
+### ARTICLE00_SUBJECT
+[DaTS#10007653] Beckhoff CU1128 Unterstützung
+
+### ARTICLE00_BODY
+<div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>wir haben einen Kunden, der eine Stern-Topologie aufbauen will und mehrere Beckhoff EK1101 + Analog/DigitalIO-Module über eine CU1128-Klemme anschließen will.</p>
+<p>Der erste Versuch war leider nicht erfolgreich.</p>
+<p>Die Klemme wurde einfach vor der EK1101 angeschlossen und im EC-Engineer zeigten sich bei der Slave-Suche nur irgendwelche Zahlen statt den vorher gewohnten Slave-Namen.</p>
+<p>Leider hat dieser Kunde inzwischen wieder auf den vorherigen Aufbau zurückgebaut, da der Prüfstand weiterlaufen musste. Wir haben aktuell weder einen Screenshot vom EC-Engineer noch ENI/ECC-Files. Das kann bei Bedarf in den nächsten Tagen noch nachgeholt werden.</p>
+<p> </p>
+<p>Wissen sie etwas zu der Klemme, dass man da erst noch etwas konfigurieren muss, damit die wie erwartet ihre „Switch-Funktion“ erfüllt?</p>
+<p>In der ESI-Datenbank ist die enthalten, daher gehe ich von grundsätzlicher Unterstützung aus, allerdings als „6x Junction“ – auch seltsam, weil die ja eigentlich 8 Ports hat und ich bei Beckhoff auch keine 6x-Variante gesehen habe?</p>
+<p> </p>
+<p>Vielen Dank und Gruß,</p>
+<p>Daniel Kuhles</p>
+<p>R&amp;D | Software Developer</p>
+<p><u>daniel_kuhles@instron.com</u></p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:1.5104in;max-height:.2812in;width:145px;max-height:27px;" src="/api/v1/ticket_attachment/2225/11758/45810?view=inline" alt="logo"></p>
+<p>Instron<sup>®</sup> GmbH | Schenck Technologie- und Industriepark | Landwehrstrasse 65 | 64293 Darmstadt, Germany | <u><a href="http://www.instron.com/" rel="nofollow noreferrer noopener" target="_blank">www.instron.com</a></u></p>
+<p> </p>
+<p>President: Graham Rogers, Registered in Darmstadt HRB 7494<br> USt-ID-Nr. DE 149 147 189</p>
+<p>Commerzbank AG, IBAN: DE96 5084 0005 0138 3074 00, BIC: COBADEFFXXX</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=11760
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.01.2022 13:59:35 +00:00
+UpdatedAt=13.01.2022 13:59:40 +00:00
+
+### ARTICLE01_SUBJECT
+[DaTS#10007653] Beckhoff CU1128 Unterstützung
+
+### ARTICLE01_BODY
+Hallo Herr Kuhles,<div><br></div><div>Wir haben viele Kunden die CU1128 Slaves erfolgreich einsetzen. Vielleicht müssen sie die ESI updaten. In dem CU1128 sind 3 ESC verbaut. Deswegen erscheinen 3 Slaves. Es sind 1 Input Port, 6 Erweiterung Ports und 1 Output Port:</div><div><div><a href="https://infosys.beckhoff.com/index.php?content=../content/1031/cu112x/2171886859.html&amp;id=7414387113749539445" title="https://infosys.beckhoff.com/index.php?content=../content/1031/cu112x/2171886859.html&amp;id=7414387113749539445" rel="nofollow noreferrer noopener" target="_blank">https://infosys.beckhoff.com/index.php?content=../content/1031/cu112x/2171886859.html&amp;id=7414387113749539445</a></div></div><div><br></div><div>Schöne Grüße,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, January 13, 2022, 2:33:32 PM, Daniel Kuhles wrote:<br><br><div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>wir haben einen Kunden, der eine Stern-Topologie aufbauen will und mehrere Beckhoff EK1101 + Analog/DigitalIO-Module über eine CU1128-Klemme anschließen will.</p>
+<p>Der erste Versuch war leider nicht erfolgreich.</p>
+<p>Die Klemme wurde einfach vor der EK1101 angeschlossen und im EC-Engineer zeigten sich bei der Slave-Suche nur irgendwelche Zahlen statt den vorher gewohnten Slave-Namen.</p>
+<p>Leider hat dieser Kunde inzwischen wieder auf den vorherigen Aufbau zurückgebaut, da der Prüfstand weiterlaufen musste. Wir haben aktuell weder einen Screenshot vom EC-Engineer noch ENI/ECC-Files. Das kann bei Bedarf in den nächsten Tagen noch nachgeholt werden.</p>
+<p> </p>
+<p>Wissen sie etwas zu der Klemme, dass man da erst noch etwas konfigurieren muss, damit die wie erwartet ihre „Switch-Funktion“ erfüllt?</p>
+<p>In der ESI-Datenbank ist die enthalten, daher gehe ich von grundsätzlicher Unterstützung aus, allerdings als „6x Junction“ – auch seltsam, weil die ja eigentlich 8 Ports hat und ich bei Beckhoff auch keine 6x-Variante gesehen habe?</p>
+<p> </p>
+<p>Vielen Dank und Gruß,</p>
+<p>Daniel Kuhles</p>
+<p>R&amp;D | Software Developer</p>
+<p><u>daniel_kuhles@instron.com</u></p>
+<p> </p>
+<p><img border="0" style="max-width:100%;max-width:100%;width:1.5104in;max-height:.2812in;width:145px;max-height:27px;" src="/api/v1/ticket_attachment/2225/11760/45814?view=inline" alt="logo"></p>
+<p>Instron<sup>®</sup> GmbH | Schenck Technologie- und Industriepark | Landwehrstrasse 65 | 64293 Darmstadt, Germany | <u><a href="http://www.instron.com/" rel="nofollow noreferrer noopener" target="_blank">www.instron.com</a></u></p>
+<p> </p>
+<p>President: Graham Rogers, Registered in Darmstadt HRB 7494<br> USt-ID-Nr. DE 149 147 189</p>
+<p>Commerzbank AG, IBAN: DE96 5084 0005 0138 3074 00, BIC: COBADEFFXXX</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

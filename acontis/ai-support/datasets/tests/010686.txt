@@ -1,0 +1,133 @@
+### HEADER
+Id=10686
+Link=http://at-zammad/#ticket/zoom/10686
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Dewesoft d.o.o. (ID=316, Number=40264, Country=SI)
+Commission=Dewesoft, data acquisition system (ID=372, Number=372)
+Number=7010686
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=rok.brumec@dewesoft.com (ID=93, FirstName=Rok, LastName=Brumec)
+CreatedBy=rok.brumec@dewesoft.com (ID=93, FirstName=Rok, LastName=Brumec)
+Type=
+TimeUnit=
+CreatedAt=30.05.2025 10:52:57 +00:00
+UpdatedAt=20.06.2025 06:02:10 +00:00
+CloseAt=20.06.2025 06:02:10 +00:00
+ArticlesCount=2
+
+### TITLE
+Question about ecatConfigureMaster behavior
+
+### ARTICLE00_HEADER
+Id=61155
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.05.2025 10:52:57 +00:00
+UpdatedAt=30.05.2025 10:53:02 +00:00
+
+### ARTICLE00_SUBJECT
+Question about ecatConfigureMaster behavior
+
+### ARTICLE00_BODY
+<div dir="ltr">
+<div>Hello</div>
+<div> </div>
+<div>I have a question about the behavior of <i>ecatConfigureMaster </i>function. We are using the 3.1 version of acontis master for arm CPU on linux.</div>
+<div> </div>
+<div>After the <i>ecatConfigureMaster </i>is executed the master state is UNKNOWN (0) and we always need to do another INIT or UNKNOWN -&gt;PREOP transition after calling it. Is there a way for the master to stay in PREOP state after configure? </div>
+<div> </div>
+<div>We would like to avoid going to UNKNOWN or INIT state during the runtime of our application because the transition back to PREOP takes around a second to do. We would only want to do it once at the start. But we need to call <i>ecatConfigureMaster </i>after modifying the size of the process image in the ENI file which can happen during the runtime of the application. </div>
+<div> </div>
+<div>Another solution I was thinking about is to remove some of the InitCmds from the ENI file after the first INIT-&gt;PREOP transition to avoid sending them all the time if not needed which would probably lower the transition time to PREOP after <i>ecatConfigureMaster </i>in case we can't avoid the UNKNOWN state after configure.<i> </i>
+</div>
+<div> </div>
+<div>Thanks you for you response</div>
+<div> </div>
+<div>Best regards</div>
+<div dir="ltr"><div dir="ltr">
+<div>
+<div><b>Rok Brumec</b></div>
+<div style="color:rgb(34,34,34);"><div dir="ltr"><div dir="ltr"><div dir="ltr">Software engineer</div></div></div></div>
+</div>
+<div><b><div> </div></b></div>
+<div>
+<div style="color:rgb(90,90,90);"><table border="0" cellspacing="0" cellpadding="0"><tbody><tr>
+<td> </td>
+<td>Dewesoft d.o.o. <br>Gabrsko 11a, 1420 Trbovlje, Slovenia (SI) <br>T:+386 41 532 799 <br><a href="http://www.dewesoft.com/" rel="nofollow noreferrer noopener" target="_blank">www.dewesoft.com</a>
+</td>
+</tr></tbody></table></div>
+<div><hr></div>District Court in Ljubljana, Entry No: 1/34043/00 - Share capital: 5,000,000.00 EUR. This e-mail may contain confidential and/or privileged information. If you are not the intended recipient (or have received this e-mail in error) please notify the sender immediately and destroy this e-mail. Any unauthorised copying, disclosure or distribution of the material in this e-mail is strictly forbidden.</div>
+</div></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=61177
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.06.2025 05:56:04 +00:00
+UpdatedAt=02.06.2025 05:56:06 +00:00
+
+### ARTICLE01_SUBJECT
+Question about ecatConfigureMaster behavior
+
+### ARTICLE01_BODY
+Hi Rok,<div><br></div><div>unfortunately not. The ENI defined InitCmds that have to be applied during the transitions.</div><div><br></div><div>It probably makes sense to not include the long run-once InitCmd from the ENI and send it manually  from the application during  the transitions.</div><div>It is possible to use <span>EC_IOCTL_ADD_COE_INITCMD to register a callback </span><span>m_pfnSlaveCoeInitCmdCallback that will be called for each CoeInitCmd and filter out the long InitCmd during the following startup procedures.</span>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, May 30, 2025 at 12:52:57 PM, Rok Brumec wrote:<br><br><div dir="ltr">
+<div>Hello</div>
+<div> </div>
+<div>I have a question about the behavior of <i>ecatConfigureMaster </i>function. We are using the 3.1 version of acontis master for arm CPU on linux.</div>
+<div> </div>
+<div>After the <i>ecatConfigureMaster </i>is executed the master state is UNKNOWN (0) and we always need to do another INIT or UNKNOWN -&gt;PREOP transition after calling it. Is there a way for the master to stay in PREOP state after configure? </div>
+<div> </div>
+<div>We would like to avoid going to UNKNOWN or INIT state during the runtime of our application because the transition back to PREOP takes around a second to do. We would only want to do it once at the start. But we need to call <i>ecatConfigureMaster </i>after modifying the size of the process image in the ENI file which can happen during the runtime of the application. </div>
+<div> </div>
+<div>Another solution I was thinking about is to remove some of the InitCmds from the ENI file after the first INIT-&gt;PREOP transition to avoid sending them all the time if not needed which would probably lower the transition time to PREOP after <i>ecatConfigureMaster </i>in case we can't avoid the UNKNOWN state after configure.<i> </i>
+</div>
+<div> </div>
+<div>Thanks you for you response</div>
+<div> </div>
+<div>Best regards</div>
+<div dir="ltr"><div dir="ltr">
+<div>
+<div><b>Rok Brumec</b></div>
+<div style="color:rgb(34,34,34);"><div dir="ltr"><div dir="ltr"><div dir="ltr">Software engineer</div></div></div></div>
+</div>
+<div><b><div> </div></b></div>
+<div>
+<div style="color:rgb(90,90,90);"><table border="0" cellspacing="0" cellpadding="0"><tbody><tr>
+<td> </td>
+<td>Dewesoft d.o.o. <br>Gabrsko 11a, 1420 Trbovlje, Slovenia (SI) <br>T:+386 41 532 799 <br><a href="http://www.dewesoft.com/" rel="nofollow noreferrer noopener" target="_blank">www.dewesoft.com</a>
+</td>
+</tr></tbody></table></div>
+<div><hr></div>District Court in Ljubljana, Entry No: 1/34043/00 - Share capital: 5,000,000.00 EUR. This e-mail may contain confidential and/or privileged information. If you are not the intended recipient (or have received this e-mail in error) please notify the sender immediately and destroy this e-mail. Any unauthorised copying, disclosure or distribution of the material in this e-mail is strictly forbidden.</div>
+</div></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

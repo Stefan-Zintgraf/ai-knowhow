@@ -1,0 +1,198 @@
+### HEADER
+Id=4856
+Link=http://at-zammad/#ticket/zoom/4856
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=TFP (ID=516, Number=0, Country=PL)
+Commission=TFP, EC-Lyser (ID=600, Number=600)
+Number=704856
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=hubert.czeterbok@tfp.com.pl (ID=1616, FirstName=Hubert, LastName=Czeterbok)
+CreatedBy=hubert.czeterbok@tfp.com.pl (ID=1616, FirstName=Hubert, LastName=Czeterbok)
+Type=
+TimeUnit=
+CreatedAt=03.02.2023 08:21:20 +00:00
+UpdatedAt=10.02.2023 07:50:43 +00:00
+CloseAt=10.02.2023 07:16:37 +00:00
+ArticlesCount=5
+
+### TITLE
+Older version of the application
+
+### ARTICLE00_HEADER
+Id=25621
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.02.2023 08:21:20 +00:00
+UpdatedAt=03.02.2023 08:21:20 +00:00
+
+### ARTICLE00_SUBJECT
+Older version of the application
+
+### ARTICLE00_BODY
+<p> </p><div> <p>Hi,</p>
+<p>We’ve license for the EC lyser but it doesn’t work properly in this version 3.6.2,</p>
+<p>We need an older version 3.3.1 for windows 7</p>
+<p> </p>
+<p>Regards</p>
+<p>Hubert Czeterbok</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=25623
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=03.02.2023 08:38:02 +00:00
+UpdatedAt=03.02.2023 08:38:02 +00:00
+
+### ARTICLE01_BODY
+Achtung: Wartung ist nicht aktiv! Das musst du mit dem Christoph klären!
+
+### ARTICLE02_HEADER
+Id=25629
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.02.2023 09:43:47 +00:00
+UpdatedAt=03.02.2023 09:43:51 +00:00
+
+### ARTICLE02_SUBJECT
+Older version of the application
+
+### ARTICLE02_BODY
+Hallo zusammen,<div><br></div><div>der Kunde will eine alte Version (3.3.1). Hat keine Wartung. Bekommt er die? Die Frage ist, wie kommt er genau auf die 3.3.1? Er hat bisher nur eine 3.6.2 geliefert bekommen und sonst noch nichts. Die ha er jetzt schon über ein Jahr. Hattet ihr mit ihm Kontakt? Oder gehört der irgendwo dazu?</div><div><br></div><div>Grüße Kai</div><div>
+<br><div>---Begin forwarded message:---<br><br>
+</div>
+<div><blockquote type="cite">
+<div>Subject: Older version of the application<br>Date: 02/03/2023 09:21<br>From: Hubert Czeterbok &lt;hubert.czeterbok@tfp.com.pl&gt;<br>To: "info@acontis.com" &lt;info@acontis.com&gt;<br>CC: Patryk Łazarenko &lt;patryk.lazarenko@tfp.com.pl&gt;<br><br>
+</div>
+<p> </p>
+<div> <p>Hi,</p>
+<p>We’ve license for the EC lyser but it doesn’t work properly in this version 3.6.2,</p>
+<p>We need an older version 3.3.1 for windows 7</p>
+<p> </p>
+<p>Regards</p>
+<p>Hubert Czeterbok</p>
+<p> </p>
+</div>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=25633
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.02.2023 09:57:36 +00:00
+UpdatedAt=03.02.2023 09:57:36 +00:00
+
+### ARTICLE03_SUBJECT
+AW: Older version of the application [Ticket#704856]
+
+### ARTICLE03_BODY
+<div>
+<p>Hi Kai,</p>
+<p> </p>
+<p>vielleicht hat er mal ne Eval bekommen.</p>
+<p>Er hatte ja noch Wartung bis Ende 2022, von daher kann er ja alle Versionen, die bis zu diesem Daten released worden sind erhalten.</p>
+<p> </p>
+<p>Gruß,</p>
+<p> </p>
+<p>Patricia</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; <br><b>Gesendet:</b> Freitag, 3. Februar 2023 10:44<br><b>An:</b> sales@acontis.com<br><b>Betreff:</b> FWD: Older version of the application [Ticket#704856]</p>
+</div>
+<p> </p>
+<p>Hallo zusammen,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>der Kunde will eine alte Version (3.3.1). Hat keine Wartung. Bekommt er die? Die Frage ist, wie kommt er genau auf die 3.3.1? Er hat bisher nur eine 3.6.2 geliefert bekommen und sonst noch nichts. Die ha er jetzt schon über ein Jahr. Hattet ihr mit ihm Kontakt? Oder gehört der irgendwo dazu?</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Grüße Kai</p>
+</div>
+<div>
+<p> </p>
+<div>
+<p>---Begin forwarded message:---</p>
+</div>
+<div><blockquote>
+<div>
+<p>Subject: Older version of the application<br>Date: 02/03/2023 09:21<br>From: Hubert Czeterbok &lt;<a href="mailto:hubert.czeterbok@tfp.com.pl">hubert.czeterbok@tfp.com.pl</a>&gt;<br>To: "<a href="mailto:info@acontis.com">info@acontis.com</a>" &lt;<a href="mailto:info@acontis.com">info@acontis.com</a>&gt;<br>CC: Patryk Łazarenko &lt;<a href="mailto:patryk.lazarenko@tfp.com.pl">patryk.lazarenko@tfp.com.pl</a>&gt;</p>
+</div>
+<p> </p>
+<div>
+<p>Hi,</p>
+<p>We’ve license for the EC lyser but it doesn’t work properly in this version 3.6.2,</p>
+<p>We need an older version 3.3.1 for windows 7</p>
+<p> </p>
+<p>Regards</p>
+<p>Hubert Czeterbok</p>
+<p> </p>
+</div>
+</blockquote></div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+
+### ARTICLE04_HEADER
+Id=25643
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.02.2023 11:21:25 +00:00
+UpdatedAt=03.02.2023 11:21:27 +00:00
+
+### ARTICLE04_SUBJECT
+Older version of the application
+
+### ARTICLE04_BODY
+Hi,<div><br></div><div>what does not work?</div><div>Why excatly the 3.3.1?</div><div><br></div><div>Please find 3.3.2 here. 3.3.1 has some bugs.</div><div><br></div><div><div><a href="https://downloads.acontis.com/2023/T-U/TFP_(40526)(PL)/EC-Lyser/3.3.1/EC-Lyser_Dongle_V3.3.2.zip" title="https://downloads.acontis.com/2023/T-U/TFP_(40526)(PL)/EC-Lyser/3.3.1/EC-Lyser_Dongle_V3.3.2.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/T-U/TFP_(40526)(PL)/EC-Lyser/3.3.1/EC-Lyser_Dongle_V3.3.2.zip</a></div></div><div><br></div><div>Best regards,</div><div>Kai <br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, February 3, 2023 at 9:21:20 AM, Hubert Czeterbok wrote:<br><br><p> </p>
+<div> <p>Hi,</p>
+<p>We’ve license for the EC lyser but it doesn’t work properly in this version 3.6.2,</p>
+<p>We need an older version 3.3.1 for windows 7</p>
+<p> </p>
+<p>Regards</p>
+<p>Hubert Czeterbok</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

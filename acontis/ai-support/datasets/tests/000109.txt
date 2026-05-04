@@ -1,0 +1,97 @@
+### HEADER
+Id=109
+Link=http://at-zammad/#ticket/zoom/109
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Rethink Robotics GmbH (ID=406, Number=0, Country=DE)
+Commission=Rethink Robotics GmbH, Unknown (ID=484, Number=484)
+Number=700109
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=q.shi@rethinkrobotics.com (ID=53, FirstName=Qiyao, LastName=Shi)
+CreatedBy=q.shi@rethinkrobotics.com (ID=53, FirstName=Qiyao, LastName=Shi)
+Type=
+TimeUnit=
+CreatedAt=03.03.2021 13:06:34 +00:00
+UpdatedAt=27.04.2022 05:29:06 +00:00
+CloseAt=12.03.2021 07:04:59 +00:00
+ArticlesCount=2
+
+### TITLE
+Frage über ecatGetProcessImageOutputPtr() 
+
+### ARTICLE00_HEADER
+Id=415
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.03.2021 13:06:34 +00:00
+UpdatedAt=03.03.2021 13:06:35 +00:00
+
+### ARTICLE00_SUBJECT
+Frage über ecatGetProcessImageOutputPtr() 
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo,</p>
+<p> </p>
+<p>Ich möchte gerne wissen, wann sollte ich die APIs ecatGetProcessImageOutputPtr() und ecatGetProcessImageInputPtr() ausrufen?</p>
+<p>Es ist klar, dass ich diese APIs innerhalb cycle wie myAppWorkpd()(in EcDemoApp.cpp) ausführen kann. Aber muss ich diese APIs nur nach ecatInitMaster ausrufen?</p>
+<p>Oder sind die Pointer zu ProcessImageOutput/ProcessImageInput schon initialisiert bevor ecatInitMaster, damit ich die APIs direkt nutzen kann(z.B direkt in EcDemoMain.cpp)?</p>
+<p> </p>
+<p>Danke für die Hilfe!</p>
+<p> </p>
+<p><br> Mit freundlichem Gruß / best regards <br>
+<br> Qiyao Shi <br> Robotics Software Engineer <br>
+<b><br>
+</b><b><img style="max-width:100%;width:2.0833in;max-height:1.55in;width:200px;max-height:149px;" src="/api/v1/ticket_attachment/109/415/840?view=inline"></b><b><br><br>Rethink Robotics GmbH <br>
+</b>Industriestraße 38c<br> 44894 Bochum<br>
+<br>
+<img style="max-width:100%;width:1.1166in;max-height:.3083in;width:107px;max-height:30px;" src="/api/v1/ticket_attachment/109/415/841?view=inline"><br>
+<br>
+<a href="https://www.linkedin.com/company/rethink-robotics/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/rethink-robotics/" target="_blank"><img border="0" style="max-width:100%;width:.3083in;max-height:.3083in;width:30px;max-height:30px;" src="/api/v1/ticket_attachment/109/415/842?view=inline"></a> <a href="https://www.facebook.com/rethinkrobotics" rel="nofollow noreferrer noopener" title="https://www.facebook.com/rethinkrobotics" target="_blank"><img border="0" style="max-width:100%;width:.3083in;max-height:.3083in;width:30px;max-height:30px;" src="/api/v1/ticket_attachment/109/415/843?view=inline"></a> <a href="https://twitter.com/RethinkRobotics" rel="nofollow noreferrer noopener" title="https://twitter.com/RethinkRobotics" target="_blank"><img border="0" style="max-width:100%;width:.3083in;max-height:.3083in;width:30px;max-height:30px;" src="/api/v1/ticket_attachment/109/415/844?view=inline"></a> <a href="https://www.instagram.com/rethinkrobotics/" rel="nofollow noreferrer noopener" title="https://www.instagram.com/rethinkrobotics/" target="_blank"><img border="0" style="max-width:100%;width:.3083in;max-height:.3083in;width:30px;max-height:30px;" src="/api/v1/ticket_attachment/109/415/845?view=inline"></a> <a href="https://www.youtube.com/user/RethinkRobotics" title='"" t ' rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;width:.3083in;max-height:.3083in;width:30px;max-height:30px;" src="/api/v1/ticket_attachment/109/415/846?view=inline"></a><br><br>Mobil: +49 172 3506728 <br> E-Mail: q.shi@rethinkrobotics.com <br>
+<a href="http://www.rethinkrobotics.com" rel="nofollow noreferrer noopener" target="_blank">www.rethinkrobotics.com</a><br><br>Handelsregister: AG Bochum, HRB 18700 <br> Geschäftsführer: Daniel Bunse, Daniel Otto <br>
+<br> Diese E-Mail enthält vertrauliche und/oder rechtlich geschützte Informationen. Wenn Sie nicht der richtige Adressat sind oder diese E-Mail irrtümlich erhalten haben, informieren Sie bitte sofort den Absender und vernichten Sie diese Mail. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail ist nicht gestattet. <br>
+<br> This e-mail may contain confidential and/or privileged information. If you are not the intended recipient (or have received this e-mail in error) please notify the sender immediately and destroy this e-mail. Any unauthorised copying, disclosure or distribution of the material in this e-mail is strictly forbidden. </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=416
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.03.2021 13:24:13 +00:00
+UpdatedAt=03.03.2021 13:24:15 +00:00
+
+### ARTICLE01_SUBJECT
+Frage über ecatGetProcessImageOutputPtr()
+
+### ARTICLE01_BODY
+<div>Hallo Herr Shy,</div><div><br></div><div>diese Funktionen müssen Sie nach ecatConfigureMaster() <span>aufrufen. Erst dann sind die Prozessdaten aus der ENI bekannt.</span>
+</div><div><br></div><div>Schöne Grüße,</div><div>
+<div>
+<div>____________________________________________________________________________</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>Fax: +49 (751) 56030-31</div>
+<div>eMail: ecsupport@acontis.com</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<br>
+</div><div><blockquote type="cite">On Wednesday, March 3, 2021, 2:06:34 PM, Qiyao Shi wrote:<br><br><p>Ich möchte gerne wissen, wann sollte ich die APIs ecatGetProcessImageOutputPtr() und ecatGetProcessImageInputPtr() ausrufen?</p>
+<p>Es ist klar, dass ich diese APIs innerhalb cycle wie myAppWorkpd()(in EcDemoApp.cpp) ausführen kann. Aber muss ich diese APIs nur nach ecatInitMaster ausrufen?</p>
+<p>Oder sind die Pointer zu ProcessImageOutput/ProcessImageInput schon initialisiert bevor ecatInitMaster, damit ich die APIs direkt nutzen kann(z.B direkt in EcDemoMain.cpp)?</p>
+<br>
+</blockquote></div><div><br></div><br>

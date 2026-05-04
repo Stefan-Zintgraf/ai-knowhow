@@ -1,0 +1,176 @@
+### HEADER
+Id=2054
+Link=http://at-zammad/#ticket/zoom/2054
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=702054
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=10.12.2021 02:16:27 +00:00
+UpdatedAt=16.12.2021 07:02:56 +00:00
+CloseAt=16.12.2021 07:02:56 +00:00
+ArticlesCount=3
+
+### TITLE
+The customer problem about the connecting the slave
+
+### ARTICLE00_HEADER
+Id=10811
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.12.2021 02:16:27 +00:00
+UpdatedAt=10.12.2021 02:16:31 +00:00
+
+### ARTICLE00_SUBJECT
+The customer problem about the connecting the slave
+
+### ARTICLE00_BODY
+<div>
+<div>Dear,</div>
+<div>We have a customer have a problem about connecting the slave, they used lxwin with ecmaster. I'm sorry that I didn't find the customer english name and id, I will send to you later when our colleague reply to me.</div>
+<div>They connected a Korea servo driver, if they connected 1 driver, they need to insert a sleep about 2000ms after ecatInitMaster, If they connect this slave more than 1. They need to insert more sleep time. following the picture.</div>
+<div><img src="/api/v1/ticket_attachment/2054/10811/41754?view=inline" style="max-width:100%;"></div>
+<div>The problem is if their controller is flexible, no body know the number of slave, they can't set the sleep time.</div>
+<div>So, they want to checking 2 problem:</div>
+<div>1- why they need to insert the sleep.</div>
+<div>2- Is there any way to checking the prepare status, then they don't need to worry about the time of the sleep.</div>
+<div> </div>
+<div> <div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=10820
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.12.2021 06:55:14 +00:00
+UpdatedAt=10.12.2021 06:55:16 +00:00
+
+### ARTICLE01_SUBJECT
+The customer problem about the connecting the slave
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>after init master, they could issue scan bus in a loop until it finds the slaves. While doing so, they can ignore frame loss and 0 slaves found.</div><div><br></div><div>After this, they can configure master and get OPERATIONAL.</div><div><br></div><div>Best regards,</div><div>Paul<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Freitag, 10. Dezember 2021, 03:16:27, schrieb John Zhang:<br><br><div>
+<div>Dear,</div>
+<div>We have a customer have a problem about connecting the slave, they used lxwin with ecmaster. I'm sorry that I didn't find the customer english name and id, I will send to you later when our colleague reply to me.</div>
+<div>They connected a Korea servo driver, if they connected 1 driver, they need to insert a sleep about 2000ms after ecatInitMaster, If they connect this slave more than 1. They need to insert more sleep time. following the picture.</div>
+<div><img src="/api/v1/ticket_attachment/2054/10820/41774?view=inline" style="max-width:100%;max-width:100%;"></div>
+<div>The problem is if their controller is flexible, no body know the number of slave, they can't set the sleep time.</div>
+<div>So, they want to checking 2 problem:</div>
+<div>1- why they need to insert the sleep.</div>
+<div>2- Is there any way to checking the prepare status, then they don't need to worry about the time of the sleep.</div>
+<div> </div>
+<div> <div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=10821
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.12.2021 06:57:57 +00:00
+UpdatedAt=10.12.2021 06:57:58 +00:00
+
+### ARTICLE02_SUBJECT
+The customer problem about the connecting the slave
+
+### ARTICLE02_BODY
+<div>Sorry, I forgot to answer the following question:<br><br>
+</div><div><blockquote type="cite">1- why they need to insert the sleep<br>
+</blockquote></div><div>That's not clear. I only heard once about slaves accepting other protocols beside EtherCAT that are switching operation. </div><div>
+<span>If this is an issue</span><span> </span>I suggest to contact the slave vendor to provide a solution.</div><div><br></div><div>Best regards,</div><div>Paul</div><div data-signature="true" data-signature-id="2">
+<div><span><br></span></div>
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>

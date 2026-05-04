@@ -1,0 +1,249 @@
+### HEADER
+Id=2722
+Link=http://at-zammad/#ticket/zoom/2722
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=swissQprint (ID=24, Number=40359, Country=CH)
+Commission=swissQprint, Grossformatdrucker Steuerung (ID=26, Number=26)
+Number=702722
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=bsp@swissqprint.com (ID=230, FirstName=Bernhard, LastName=Sprenger)
+CreatedBy=bsp@swissqprint.com (ID=230, FirstName=Bernhard, LastName=Sprenger)
+Type=
+TimeUnit=
+CreatedAt=29.03.2022 13:07:10 +00:00
+UpdatedAt=29.04.2022 06:09:16 +00:00
+CloseAt=29.04.2022 06:09:16 +00:00
+ArticlesCount=4
+
+### TITLE
+Texas Instruments IDKAM437x - EC-Engineer & Masterstack
+
+### ARTICLE00_HEADER
+Id=14515
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.03.2022 13:07:10 +00:00
+UpdatedAt=29.03.2022 13:07:11 +00:00
+
+### ARTICLE00_SUBJECT
+Texas Instruments IDKAM437x - EC-Engineer & Masterstack
+
+### ARTICLE00_BODY
+<div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>wir integrieren derzeit unseren eigenen EtherCAT-Slave in unsere Steuerung (EC-Masterstack) und sind dabei in Probleme gelaufen. Der Slave funktioniert inzwischen zuverlässig unter TwinCAT, jedoch noch nicht auf unserer Steuerung, bzw. auch nicht mit EC-Engineer.</p>
+<p> </p>
+<p>Zum Debuggen haben wir versucht das Ti-Entwicklerboard IDKAM437x mit der original Test-FW-Binaries (pru_icss_ethercat_slave_prebuilt_01.00.10.00, bzw. 01.00.08.01, und 01.00.07.02) von TI als einziger Slave im EC-Engineer (V3.6.5 &amp; v.3.5.3) mit DC-enabled im Diagnois-Mode ‘operational’ zu schalten, aber leider ist dies nicht möglich:</p>
+<p> </p>
+<p><img style="max-width:100%;width:5.625in;max-height:1.9479in;width:540px;max-height:187px;" src="/api/v1/ticket_attachment/2722/14515/57000?view=inline"></p>
+<p> </p>
+<p>Können Sie uns hier weiterhelfen?</p>
+<p> </p>
+<p>Vielen Dank für Ihre Hilfe,</p>
+<p>mit freundlichen Grüssen,</p>
+<p> </p>
+<p>Bernd Sprenger</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=14516
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.03.2022 13:13:32 +00:00
+UpdatedAt=29.03.2022 13:13:33 +00:00
+
+### ARTICLE01_SUBJECT
+Texas Instruments IDKAM437x - EC-Engineer & Masterstack
+
+### ARTICLE01_BODY
+Hallo Herr Sprenger,<div><br></div><div>Falls der Slave eine DC Konfiguration benötigt, kann es sein dass es mit EC-Engineer gar nicht geht. Sie müssten mit unseren EcMasterDemoDc aus einer Echtzeitumgebung starten. Für weitere Analyse würden wir dann die log Datei aus der Demo brauchen.</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2"><div>Cyril Eyssautier</div></div>
+<div><br></div>
+<div><blockquote type="cite">On Tuesday, March 29, 2022, 3:07:10 PM, Bernhard Sprenger wrote:<br><br><div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>wir integrieren derzeit unseren eigenen EtherCAT-Slave in unsere Steuerung (EC-Masterstack) und sind dabei in Probleme gelaufen. Der Slave funktioniert inzwischen zuverlässig unter TwinCAT, jedoch noch nicht auf unserer Steuerung, bzw. auch nicht mit EC-Engineer.</p>
+<p> </p>
+<p>Zum Debuggen haben wir versucht das Ti-Entwicklerboard IDKAM437x mit der original Test-FW-Binaries (pru_icss_ethercat_slave_prebuilt_01.00.10.00, bzw. 01.00.08.01, und 01.00.07.02) von TI als einziger Slave im EC-Engineer (V3.6.5 &amp; v.3.5.3) mit DC-enabled im Diagnois-Mode ‘operational’ zu schalten, aber leider ist dies nicht möglich:</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:5.625in;max-height:1.9479in;width:540px;max-height:187px;" src="/api/v1/ticket_attachment/2722/14516/57001?view=inline"></p>
+<p> </p>
+<p>Können Sie uns hier weiterhelfen?</p>
+<p> </p>
+<p>Vielen Dank für Ihre Hilfe,</p>
+<p>mit freundlichen Grüssen,</p>
+<p> </p>
+<p>Bernd Sprenger</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=14521
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.03.2022 14:56:58 +00:00
+UpdatedAt=29.03.2022 14:56:58 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Texas Instruments IDKAM437x - EC-Engineer & Masterstack [Ticket#702722]
+
+### ARTICLE02_BODY
+<div>
+<p>Sehr geehrter Herr Eyssautier,</p>
+<p> </p>
+<p>vielen Dank für Ihre schnelle Antwort.</p>
+<p> </p>
+<p>Falls wir bei EC-Engineer als ersten Slave einen MAXPOS-ServoDrive von maxon und als zweiten Slave das IDKAM437x nehmen, kann EC-Engineer den MAXPOS in den DC-Mode schalten, das IDKAM437x jedoch nicht… Ist das noch kein Problem?</p>
+<p> </p>
+<p>Mit freundlichen Grüssen,</p>
+<p> </p>
+<p>Bernd Sprenger</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Tuesday, March 29, 2022 3:14 PM<br>
+<b>To:</b> Bernhard Sprenger swissQprint &lt;bsp@swissqprint.com&gt;<br>
+<b>Subject:</b> RE: Texas Instruments IDKAM437x - EC-Engineer &amp; Masterstack [Ticket#702722]</p>
+</div>
+</div>
+<p> </p>
+<p>Hallo Herr Sprenger,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>Falls der Slave eine DC Konfiguration benötigt, kann es sein dass es mit EC-Engineer gar nicht geht. Sie müssten mit unseren EcMasterDemoDc aus einer Echtzeitumgebung starten. Für weitere Analyse würden wir dann die log Datei aus der Demo brauchen.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Schöne Grüße,</p>
+<div>
+<div>
+<p>Cyril Eyssautier</p>
+</div>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Tuesday, March 29, 2022, 3:07:10 PM, Bernhard Sprenger wrote:</p>
+<p></p>
+<div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>wir integrieren derzeit unseren eigenen EtherCAT-Slave in unsere Steuerung (EC-Masterstack) und sind dabei in Probleme gelaufen. Der Slave funktioniert inzwischen zuverlässig unter TwinCAT, jedoch noch nicht auf unserer Steuerung, bzw. auch nicht mit EC-Engineer.</p>
+<p> </p>
+<p>Zum Debuggen haben wir versucht das Ti-Entwicklerboard IDKAM437x mit der original Test-FW-Binaries (pru_icss_ethercat_slave_prebuilt_01.00.10.00, bzw. 01.00.08.01, und 01.00.07.02) von TI als einziger Slave im EC-Engineer (V3.6.5 &amp; v.3.5.3) mit DC-enabled im Diagnois-Mode ‘operational’ zu schalten, aber leider ist dies nicht möglich:</p>
+<p> </p>
+<p><img style="max-width:100%;width:5.625in;max-height:1.9479in;width:540px;max-height:187px;" src="/api/v1/ticket_attachment/2722/14521/57025?view=inline"></p>
+<p> </p>
+<p>Können Sie uns hier weiterhelfen?</p>
+<p> </p>
+<p>Vielen Dank für Ihre Hilfe,</p>
+<p>mit freundlichen Grüssen,</p>
+<p> </p>
+<p>Bernd Sprenger</p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=14523
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.03.2022 16:01:38 +00:00
+UpdatedAt=29.03.2022 16:01:42 +00:00
+
+### ARTICLE03_SUBJECT
+Texas Instruments IDKAM437x - EC-Engineer & Masterstack
+
+### ARTICLE03_BODY
+Hallo Herr Sprenger,<div><br></div><div>Es kommt darauf an. Manche Slaves überwachen die Zykluszeit und warten ab bis das es passt. Das könnte das Problem verursachen.</div><div><br></div><div>Schöne Grüße,</div><div>Cyril Eyssautier</div><div>
+<div><br></div>
+<div><blockquote type="cite">On Tuesday, March 29, 2022, 4:56:58 PM, Bernhard Sprenger wrote:<br><br><div>
+<p>Sehr geehrter Herr Eyssautier,</p>
+<p> </p>
+<p>vielen Dank für Ihre schnelle Antwort.</p>
+<p> </p>
+<p>Falls wir bei EC-Engineer als ersten Slave einen MAXPOS-ServoDrive von maxon und als zweiten Slave das IDKAM437x nehmen, kann EC-Engineer den MAXPOS in den DC-Mode schalten, das IDKAM437x jedoch nicht… Ist das noch kein Problem?</p>
+<p> </p>
+<p>Mit freundlichen Grüssen,</p>
+<p> </p>
+<p>Bernd Sprenger</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Tuesday, March 29, 2022 3:14 PM<br>
+<b>To:</b> Bernhard Sprenger swissQprint &lt;bsp@swissqprint.com&gt;<br>
+<b>Subject:</b> RE: Texas Instruments IDKAM437x - EC-Engineer &amp; Masterstack [Ticket#702722]</p>
+</div>
+</div>
+<p> </p>
+<p>Hallo Herr Sprenger,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>Falls der Slave eine DC Konfiguration benötigt, kann es sein dass es mit EC-Engineer gar nicht geht. Sie müssten mit unseren EcMasterDemoDc aus einer Echtzeitumgebung starten. Für weitere Analyse würden wir dann die log Datei aus der Demo brauchen.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Schöne Grüße,</p>
+<div>
+<div>
+<p>Cyril Eyssautier</p>
+</div>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Tuesday, March 29, 2022, 3:07:10 PM, Bernhard Sprenger wrote:</p>
+<p></p>
+<div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>wir integrieren derzeit unseren eigenen EtherCAT-Slave in unsere Steuerung (EC-Masterstack) und sind dabei in Probleme gelaufen. Der Slave funktioniert inzwischen zuverlässig unter TwinCAT, jedoch noch nicht auf unserer Steuerung, bzw. auch nicht mit EC-Engineer.</p>
+<p> </p>
+<p>Zum Debuggen haben wir versucht das Ti-Entwicklerboard IDKAM437x mit der original Test-FW-Binaries (pru_icss_ethercat_slave_prebuilt_01.00.10.00, bzw. 01.00.08.01, und 01.00.07.02) von TI als einziger Slave im EC-Engineer (V3.6.5 &amp; v.3.5.3) mit DC-enabled im Diagnois-Mode ‘operational’ zu schalten, aber leider ist dies nicht möglich:</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:5.625in;max-height:1.9479in;width:540px;max-height:187px;" src="/api/v1/ticket_attachment/2722/14523/57028?view=inline"></p>
+<p> </p>
+<p>Können Sie uns hier weiterhelfen?</p>
+<p> </p>
+<p>Vielen Dank für Ihre Hilfe,</p>
+<p>mit freundlichen Grüssen,</p>
+<p> </p>
+<p>Bernd Sprenger</p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

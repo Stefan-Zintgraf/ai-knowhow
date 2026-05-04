@@ -1,0 +1,235 @@
+### HEADER
+Id=2619
+Link=http://at-zammad/#ticket/zoom/2619
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ITK Engineering GmbH (ID=120, Number=54016, Country=DE)
+Commission=ITK, Asimov Express (ID=134, Number=134)
+Number=702619
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=michael.wenz@itk-engineering.de (ID=107, FirstName=Michael, LastName=Wenz)
+CreatedBy=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Type=
+TimeUnit=
+CreatedAt=11.03.2022 09:33:48 +00:00
+UpdatedAt=11.03.2022 12:21:33 +00:00
+CloseAt=11.03.2022 09:54:59 +00:00
+ArticlesCount=3
+
+### TITLE
+Atemsys Compilierfehler Xenomai 3
+
+### ARTICLE00_HEADER
+Id=13882
+ContentType=text/html
+Internal=False
+Type=phone
+CreatedAt=11.03.2022 09:33:48 +00:00
+UpdatedAt=11.03.2022 09:33:48 +00:00
+
+### ARTICLE00_BODY
+<p>Hallo Herr Oelhaf,</p><p><br></p>
+<p>Beim Compilieren von atemsys erhalte ich übrigens</p>
+<p> </p>
+<p>#define ATEMSYS_VERSION_STR "1.4.18"</p>
+<p>#define ATEMSYS_VERSION_NUM 1,4,18</p>
+<p>#if (defined ATEMSYS_C)</p>
+<p>#define USE_ATEMSYS_API_VERSION EC_ATEMSYSVERSION(1,4,<b>16</b>)</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:11.7583in;max-height:2.325in;width:1129px;max-height:223px;" src="/api/v1/ticket_attachment/2619/13882/54843?view=inline"></p>
+<p> </p>
+<p>Viele Grüße</p>
+<p>Michael Wenz</p>
+<p> </p><div>
+</div>
+
+### ARTICLE01_HEADER
+Id=13884
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.03.2022 09:54:59 +00:00
+UpdatedAt=11.03.2022 09:55:02 +00:00
+
+### ARTICLE01_SUBJECT
+Atemsys Compilierfehler Xenomai 3
+
+### ARTICLE01_BODY
+Hallo Herr Wenz,<div>Danke für die Information<br><div>
+<div>Da hab ich wohl Unsinn eingecheckt.</div>
+<div><br></div>
+<div>Hier ist es "fehlerfrei"</div>
+<div><a href="https://github.com/acontis/atemsys" title="https://github.com/acontis/atemsys" rel="nofollow noreferrer noopener" target="_blank">https://github.com/acontis/atemsys</a></div>
+<div><br></div>
+<div>Mit freundlichen Grüßen</div>
+<div>Daniel Schmid</div>
+<div><br></div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Daniel Schmid </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, 11 March 2022, 10:33:48, Holger Oelhaf wrote:<br><br><p>Hallo Herr Oelhaf,</p>
+<p><br></p>
+<p>Beim Compilieren von atemsys erhalte ich übrigens</p>
+<p> </p>
+<p>#define ATEMSYS_VERSION_STR "1.4.18"</p>
+<p>#define ATEMSYS_VERSION_NUM 1,4,18</p>
+<p>#if (defined ATEMSYS_C)</p>
+<p>#define USE_ATEMSYS_API_VERSION EC_ATEMSYSVERSION(1,4,<b>16</b>)</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;max-width:100%;width:11.7583in;max-height:2.325in;width:1129px;max-height:223px;" src="/api/v1/ticket_attachment/2619/13884/54846?view=inline"></p>
+<p> </p>
+<p>Viele Grüße</p>
+<p>Michael Wenz</p>
+<p> </p>
+<div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=13889
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.03.2022 10:25:17 +00:00
+UpdatedAt=11.03.2022 10:25:17 +00:00
+
+### ARTICLE02_SUBJECT
+AW: Atemsys Compilierfehler Xenomai 3 [Ticket#702619]
+
+### ARTICLE02_BODY
+<div>
+<p>Hallo Herr Schmid,</p>
+<p> </p>
+<p>vielen Dank für die schnelle Antwort. Es kompiliert jetzt.</p>
+<p>Viele Grüße</p>
+<p>Michael Wenz</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Daniel Schmid via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Gesendet:</b> Freitag, 11. März 2022 10:55<br>
+<b>An:</b> Michael Wenz &lt;Michael.Wenz@itk-engineering.de&gt;<br>
+<b>Betreff:</b> RE: Atemsys Compilierfehler Xenomai 3 [Ticket#702619]</p>
+</div>
+</div>
+<p> </p>
+<p>Hallo Herr Wenz,</p>
+<div>
+<p>Danke für die Information</p>
+<div>
+<div>
+<p>Da hab ich wohl Unsinn eingecheckt.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Hier ist es "fehlerfrei"</p>
+</div>
+<div>
+<p><a href="https://github.com/acontis/atemsys" title="https://github.com/acontis/atemsys" rel="nofollow noreferrer noopener" target="_blank">https://github.com/acontis/atemsys</a></p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Mit freundlichen Grüßen</p>
+</div>
+<div>
+<p>Daniel Schmid</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<div>
+<p>____________________________________________________________________________</p>
+</div>
+<div>
+<p>Daniel Schmid</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>acontis technologies GmbH</p>
+</div>
+</div>
+<div>
+<p>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</p>
+</div>
+<div>
+<p>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com</a> </p>
+</div>
+<div>
+<p>Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>eMail: ecsupport@acontis.com</p>
+</div>
+<div>
+<p>----------------------------------------------------------------------------</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</p>
+</div>
+<div>
+<p><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Friday, 11 March 2022, 10:33:48, Holger Oelhaf wrote:</p>
+<p></p>
+<p>Hallo Herr Oelhaf,</p>
+<p> </p>
+<p>Beim Compilieren von atemsys erhalte ich übrigens</p>
+<p> </p>
+<p>#define ATEMSYS_VERSION_STR "1.4.18"</p>
+<p></p>
+<p>#define ATEMSYS_VERSION_NUM 1,4,18</p>
+<p></p>
+<p>#if (defined ATEMSYS_C)</p>
+<p></p>
+<p>#define USE_ATEMSYS_API_VERSION EC_ATEMSYSVERSION(1,4,<b>16</b>)</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:14.7in;max-height:2.9083in;width:1411px;max-height:279px;" src="/api/v1/ticket_attachment/2619/13889/54862?view=inline"></p>
+<p> </p>
+<p>Viele Grüße</p>
+<p></p>
+<p>Michael Wenz</p>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+</div>

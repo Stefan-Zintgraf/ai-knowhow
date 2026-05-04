@@ -1,0 +1,164 @@
+### HEADER
+Id=388
+Link=http://at-zammad/#ticket/zoom/388
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=700388
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=12.04.2021 02:52:25 +00:00
+UpdatedAt=16.04.2021 06:46:49 +00:00
+CloseAt=12.04.2021 15:30:05 +00:00
+ArticlesCount=3
+
+### TITLE
+Instructions for installing Linux on Beckhoff CX hardware
+
+### ARTICLE00_HEADER
+Id=1963
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=12.04.2021 02:52:26 +00:00
+UpdatedAt=12.04.2021 02:52:26 +00:00
+
+### ARTICLE00_SUBJECT
+Instructions for installing Linux on Beckhoff CX hardware
+
+### ARTICLE00_BODY
+Is there a document or website that you are aware of for how a customer can install Linux on Beckhoff CX hardware? I know many of our customers do this, but Beckhoff seems to not officially support it or describe how to do it. 
+
+A potential customer is interested in testing this setup on a CX2040 and a CX2072. 
+
+/Jon
+
+### ARTICLE01_HEADER
+Id=1985
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.04.2021 08:14:13 +00:00
+UpdatedAt=12.04.2021 08:14:16 +00:00
+
+### ARTICLE01_SUBJECT
+Instructions for installing Linux on Beckhoff CX hardware
+
+### ARTICLE01_BODY
+<div>
+<span>Hi Jon,</span><br>
+</div><div><span><br></span></div><div>I don't have an "Linux on CX installation" manual availble as it was straigt forward by connecting an USB DVD drive, enable it for booting and installing Linux from DVD.</div><div><br></div><div>If you <span>additionally</span><span> </span><span>need Realt Time, then you will need to </span><span>integrate atemsys, this is easy, but you will also need to </span><span>make it real-time capable, etc. This is neither straight forward, nor documented. ;-) </span>
+</div><div><span><br></span></div><div>
+<span>I found an old CFast image that should still work</span><span>. Please find it at:</span>
+</div><div><span><br></span></div><div>
+<div><a href="http://Software.acontis.com/EC-Master/cx2020/EC-Master-Beckhoff-CX2020-Linux_Readme.pdf" title="http://Software.acontis.com/EC-Master/cx2020/EC-Master-Beckhoff-CX2020-Linux_Readme.pdf" rel="nofollow noreferrer noopener" target="_blank">http://Software.acontis.com/EC-Master/cx2020/EC-Master-Beckhoff-CX2020-Linux_Readme.pdf</a></div>
+<div><a href="http://Software.acontis.com/EC-Master/cx2020/EC-Master-V2.6.3.03-Linux_x64-Eval-CX2020-2.1GB-CFast-Image.zip" title="http://Software.acontis.com/EC-Master/cx2020/EC-Master-V2.6.3.03-Linux_x64-Eval-CX2020-2.1GB-CFast-Image.zip" rel="nofollow noreferrer noopener" target="_blank">http://Software.acontis.com/EC-Master/cx2020/EC-Master-V2.6.3.03-Linux_x64-Eval-CX2020-2.1GB-CFast-Image.zip</a></div>
+</div><div><br></div><div>Please note that this image is not 100% tuned for real-time and it contains an old EC-Master (V2.6).</div><div><br></div><div>Best regards,</div><div>Paul</div><div>
+<br><div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Montag, 12. April 2021, 04:52:26, schrieb Jon Waters:<br><br><div>Is there a document or website that you are aware of for how a customer can install Linux on Beckhoff CX hardware? I know many of our customers do this, but Beckhoff seems to not officially support it or describe how to do it.</div>
+<div><br></div>
+<div>A potential customer is interested in testing this setup on a CX2040 and a CX2072.</div>
+<div><br></div>
+<div>/Jon</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=2033
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.04.2021 14:31:37 +00:00
+UpdatedAt=12.04.2021 14:31:37 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Instructions for installing Linux on Beckhoff CX hardware [Ticket#700388]
+
+### ARTICLE02_BODY
+<div>OK thanks Paul, I thought it was more or less like installing a Linux distribution onto a regular PC, but wasn't sure so wanted to check.</div><div> </div><div>I don't think I would send the customer the integrated example for the CX2020 since it is an old EC-Master version. I think once they are booting Linux the usual process for evaluating EC-Master on Linux should be fine.<br>
+</div><div> </div>/Jon<br><br><div>
+<strong> From: </strong> Paul Bußmann via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<strong> To: </strong> &lt;j.waters@acontis.com&gt; <br>
+<strong> Sent: </strong> 4/12/2021 4:14 AM <br>
+<strong> Subject: </strong> RE: Instructions for installing Linux on Beckhoff CX hardware [Ticket#700388] <br><br><blockquote><div>
+<div>Hi Jon,<br> </div>
+<div> </div>
+<div>I don't have an "Linux on CX installation" manual availble as it was straigt forward by connecting an USB DVD drive, enable it for booting and installing Linux from DVD.</div>
+<div> </div>
+<div>If you additionally need Realt Time, then you will need to integrate atemsys, this is easy, but you will also need to make it real-time capable, etc. This is neither straight forward, nor documented. ;-)</div>
+<div> </div>
+<div>I found an old CFast image that should still work. Please find it at:</div>
+<div> </div>
+<div> <div><a href="http://Software.acontis.com/EC-Master/cx2020/EC-Master-Beckhoff-CX2020-Linux_Readme.pdf" title="http://Software.acontis.com/EC-Master/cx2020/EC-Master-Beckhoff-CX2020-Linux_Readme.pdf" rel="nofollow noreferrer noopener" target="_blank">http://Software.acontis.com/EC-Master/cx2020/EC-Master-Beckhoff-CX2020-Linux_Readme.pdf</a></div>
+<div><a href="http://Software.acontis.com/EC-Master/cx2020/EC-Master-V2.6.3.03-Linux_x64-Eval-CX2020-2.1GB-CFast-Image.zip" title="http://Software.acontis.com/EC-Master/cx2020/EC-Master-V2.6.3.03-Linux_x64-Eval-CX2020-2.1GB-CFast-Image.zip" rel="nofollow noreferrer noopener" target="_blank">http://Software.acontis.com/EC-Master/cx2020/EC-Master-V2.6.3.03-Linux_x64-Eval-CX2020-2.1GB-CFast-Image.zip</a></div>
+</div>
+<div> </div>
+<div>Please note that this image is not 100% tuned for real-time and it contains an old EC-Master (V2.6).</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Paul</div>
+<div> <br><div> <div> <div>____________________________________________________________________________<br> </div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>eMail: ecsupport@acontis.com<br> </div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">Am Montag, 12. April 2021, 04:52:26, schrieb Jon Waters:<br><br><div>Is there a document or website that you are aware of for how a customer can install Linux on Beckhoff CX hardware? I know many of our customers do this, but Beckhoff seems to not officially support it or describe how to do it.</div>
+<div> </div>
+<div>A potential customer is interested in testing this setup on a CX2040 and a CX2072.</div>
+<div> </div>
+<div>/Jon</div>
+<br> </blockquote></div>
+<div> </div>
+<br><br> </div>
+</div>
+</div></blockquote>
+</div>

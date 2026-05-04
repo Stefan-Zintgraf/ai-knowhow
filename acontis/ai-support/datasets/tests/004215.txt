@@ -1,0 +1,164 @@
+### HEADER
+Id=4215
+Link=http://at-zammad/#ticket/zoom/4215
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Canon Nanotechnologies (ID=613, Number=0, Country=US)
+Commission=Canon Nanotechnologies, Semiconductor Process Tools (ID=693, Number=693)
+Number=704215
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=shartmann@cnt.canon.com (ID=1256, FirstName=Steve, LastName=Hartmann)
+CreatedBy=shartmann@cnt.canon.com (ID=1256, FirstName=Steve, LastName=Hartmann)
+Type=
+TimeUnit=
+CreatedAt=28.10.2022 21:02:07 +00:00
+UpdatedAt=04.11.2022 15:04:17 +00:00
+CloseAt=04.11.2022 15:04:17 +00:00
+ArticlesCount=8
+
+### TITLE
+License key with EcMasterDemo
+
+### ARTICLE00_HEADER
+Id=22219
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.10.2022 21:02:08 +00:00
+UpdatedAt=28.10.2022 21:02:08 +00:00
+
+### ARTICLE00_SUBJECT
+License key with EcMasterDemo
+
+### ARTICLE00_BODY
+<div>
+<p>Hi,</p>
+<p> </p>
+<p>The license key you sent me seems to work ok with my own application, but with ECMasterDemo I get this:</p>
+<p> </p>
+<p>militho@eltnuc1:/opt/EC-Master/Bin/Linux/x64$ ./EcMasterDemo -i8254x 1 1 -lic A202BF9C-2930B254-596B0283</p>
+<p>0000000000: EcMasterDemo V3.1.4.04 (Unrestricted) for Linux_x64 Copyright acontis technologies GmbH @ 2022</p>
+<p>0000000000: Full command line: -i8254x 1 1 -lic A202BF9C-2930B254-596B0283</p>
+<p>0000000001: EC-Master V3.1.4.04 (Unrestricted) for Linux_x64 Copyright acontis technologies GmbH @ 2022</p>
+<p>0000000002: emllI8254x V3.1.4.04 (Unrestricted) Copyright acontis technologies GmbH @ 2022</p>
+<p>0000002364: ERROR: Cannot set license key: ERROR: Feature not supported (0x98110001))</p>
+<p>0000008621: EcMasterDemo stop.</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=22255
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=01.11.2022 15:52:43 +00:00
+UpdatedAt=01.11.2022 15:52:43 +00:00
+
+### ARTICLE01_BODY
+Hi Cyril,<div><br></div><div>I'm not sure about this. I also don't know why it says "EcMasterDemo V3.1.4.04 (unrestricted)". They only received the eval link and then the official delivery was the protected packages from here:</div><div><br></div><div><div><a href="https://downloads.acontis.com/2022/B-C/Canon_Nanotechnologies_(40583)(US)/EC-Master/3.1.4.04/EC-Master-V3.1.4.04-Linux-x86_64Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2022/B-C/Canon_Nanotechnologies_(40583)(US)/EC-Master/3.1.4.04/EC-Master-V3.1.4.04-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/B-C/Canon_Nanotechnologies_(40583)(US)/EC-Master/3.1.4.04/EC-Master-V3.1.4.04-Linux-x86_64Bit-SDK_Protected.tar.gz</a></div></div><div><br></div><div><div><a href="https://downloads.acontis.com/2022/B-C/Canon_Nanotechnologies_(40583)(US)/EC-Master/3.1.4.04/EC-Master-ClassA-AddOn-V3.1.4.04-Linux-x86_64Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2022/B-C/Canon_Nanotechnologies_(40583)(US)/EC-Master/3.1.4.04/EC-Master-ClassA-AddOn-V3.1.4.04-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/B-C/Canon_Nanotechnologies_(40583)(US)/EC-Master/3.1.4.04/EC-Master-ClassA-AddOn-V3.1.4.04-Linux-x86_64Bit-SDK_Protected.tar.gz</a></div></div><div><br></div><div><div><a href="https://downloads.acontis.com/2022/B-C/Canon_Nanotechnologies_(40583)(US)/EC-Master/3.1.4.04/EC-Master-I8254x-V3.1.4.04-Linux-x86_64Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2022/B-C/Canon_Nanotechnologies_(40583)(US)/EC-Master/3.1.4.04/EC-Master-I8254x-V3.1.4.04-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/B-C/Canon_Nanotechnologies_(40583)(US)/EC-Master/3.1.4.04/EC-Master-I8254x-V3.1.4.04-Linux-x86_64Bit-SDK_Protected.tar.gz</a></div></div><div><br></div><div><br></div>
+
+### ARTICLE02_HEADER
+Id=22287
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=02.11.2022 10:49:18 +00:00
+UpdatedAt=02.11.2022 10:49:18 +00:00
+
+### ARTICLE02_BODY
+This is because the Linux examples are still linked to the unrestricted library
+
+### ARTICLE03_HEADER
+Id=22298
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=02.11.2022 13:02:03 +00:00
+UpdatedAt=02.11.2022 13:02:03 +00:00
+
+### ARTICLE03_BODY
+Can you explain further? They never received the unrestricted library from us.
+
+### ARTICLE04_HEADER
+Id=22306
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=02.11.2022 14:07:58 +00:00
+UpdatedAt=02.11.2022 14:07:58 +00:00
+
+### ARTICLE04_BODY
+The example binaries which are part of the eval / protected package are linked to the unrestricted library.
+
+### ARTICLE05_HEADER
+Id=22319
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=02.11.2022 15:16:36 +00:00
+UpdatedAt=02.11.2022 15:16:36 +00:00
+
+### ARTICLE05_BODY
+So what is causing the example binaries in the eval / protected packages to timeout after 1 hour of operation? I thought that was something embedded into the library that the example application was linked to.<div><br></div><div>Are you saying that it is not possible to stick with the precompiled binaries from these eval/protected packages and pass the license key parameter? The only option is to recompile the example application against the delivered library file and then they can use the license key parameter?</div>
+
+### ARTICLE06_HEADER
+Id=22331
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=02.11.2022 16:13:05 +00:00
+UpdatedAt=02.11.2022 16:13:05 +00:00
+
+### ARTICLE06_BODY
+<div>&gt;&gt;So what is causing the example binaries in the eval / protected packages to timeout after 1 hour of operation? I thought that was <br>&gt;&gt; something embedded into the library that the example application was linked to.<br>
+</div><div>[CER] Yes it's true</div><div><br></div>The shipped EcMasterDemo  will never expired, only the self compiled one. In the build process, we don't compile the examples twice with different libraries.
+
+### ARTICLE07_HEADER
+Id=22446
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.11.2022 15:04:17 +00:00
+UpdatedAt=04.11.2022 15:04:22 +00:00
+
+### ARTICLE07_SUBJECT
+License key with EcMasterDemo
+
+### ARTICLE07_BODY
+<div>Hi Steve,</div><div><br></div><div>The binary included with the delivery is linked against a different library during our build process and doesn't need any license key passed to it. If you compile the example application from the sources and link with the library we deliver then it is the protected library and you need to pass the license key either via the command line or directly in the API.<br>
+</div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Jon Waters</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +1-508-809-7200</div>
+<div>acontis technologies Inc.,  945 Concord Street, Framingham, MA 01701, United States, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/4215/22446/94672?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Friday, October 28, 2022 at 5:02:08 PM, Steve Hartmann wrote:<br><br><div>
+<p>Hi,</p>
+<p> </p>
+<p>The license key you sent me seems to work ok with my own application, but with ECMasterDemo I get this:</p>
+<p> </p>
+<p>militho@eltnuc1:/opt/EC-Master/Bin/Linux/x64$ ./EcMasterDemo -i8254x 1 1 -lic A202BF9C-2930B254-596B0283</p>
+<p>0000000000: EcMasterDemo V3.1.4.04 (Unrestricted) for Linux_x64 Copyright acontis technologies GmbH @ 2022</p>
+<p>0000000000: Full command line: -i8254x 1 1 -lic A202BF9C-2930B254-596B0283</p>
+<p>0000000001: EC-Master V3.1.4.04 (Unrestricted) for Linux_x64 Copyright acontis technologies GmbH @ 2022</p>
+<p>0000000002: emllI8254x V3.1.4.04 (Unrestricted) Copyright acontis technologies GmbH @ 2022</p>
+<p>0000002364: ERROR: Cannot set license key: ERROR: Feature not supported (0x98110001))</p>
+<p>0000008621: EcMasterDemo stop.</p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

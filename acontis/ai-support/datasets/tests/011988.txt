@@ -1,0 +1,231 @@
+### HEADER
+Id=11988
+Link=http://at-zammad/#ticket/zoom/11988
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Yushin, Removal robot for molding machines (ID=922, Number=922)
+Number=7011988
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=02.12.2025 07:07:03 +00:00
+UpdatedAt=12.12.2025 08:16:08 +00:00
+CloseAt=12.12.2025 08:16:08 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Master(YUSHIN) [E179]
+
+### ARTICLE00_HEADER
+Id=69163
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=02.12.2025 07:07:03 +00:00
+UpdatedAt=02.12.2025 07:07:03 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(YUSHIN) [E179]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(YUSHIN) [E179]
+
+Related No178.
+In those 2 cases, we change to operation that call emSetMasterState(eEcatState_SafeOP)→PreOP→INIT→PreOP→SafeOP→OP steply, instead of emSetMasterState(eEcatState_OP) only.
+
+Both of cases, all slaves change their state OP, but in secondly case(disconnection between slave1 and 2), EC_NOTIFY_SLAVE_INITCMD_RESPONSE_ERROR occurred when reflesh object data through PDO.
+
+Is there any problem changing state of slave that has no error?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=69170
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.12.2025 07:51:35 +00:00
+UpdatedAt=02.12.2025 07:51:36 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(YUSHIN) [E179]
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>it should work without error to loop INIT -&gt; PREOP -&gt; SAFEOP -&gt; OP -&gt; INIT -&gt; PREOP -&gt; ...</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, December 2, 2025 at 8:07:03 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(YUSHIN) [E179]</div>
+<div><br></div>
+<div>Related No178.</div>
+<div>In those 2 cases, we change to operation that call emSetMasterState(eEcatState_SafeOP)→PreOP→INIT→PreOP→SafeOP→OP steply, instead of emSetMasterState(eEcatState_OP) only.</div>
+<div><br></div>
+<div>Both of cases, all slaves change their state OP, but in secondly case(disconnection between slave1 and 2), EC_NOTIFY_SLAVE_INITCMD_RESPONSE_ERROR occurred when reflesh object data through PDO.</div>
+<div><br></div>
+<div>Is there any problem changing state of slave that has no error?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=69326
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=04.12.2025 07:36:11 +00:00
+UpdatedAt=04.12.2025 07:36:11 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master(YUSHIN) [E179] [Ticket#7011988]
+
+### ARTICLE02_BODY
+Dear Cyril san
+
+Just to be sure, please let me check.
+When the Master State is OP and each Slave State is Safe-OP by the disconnection, to turn the system to INIT we must call is only emSetMasterState(eEcatState_INIT)? i.e. we do not need call emSetMasterState(eEcatState_Safe-OP) and emSetMasterState(eEcatState_PreOP)?
+On the other hand, to turn the system to OP again, we need to call API steply (PreOP→SafeOP→OP), right?
+
+ >Both of cases, all slaves change their state OP, but in secondly case(disconnection between slave1 and 2),
+ >EC_NOTIFY_SLAVE_INITCMD_RESPONSE_ERROR occurred when reflesh object data through PDO.
+Close this my question please. We can get the PDO data, so we think it is ploblem of Slave module.
+
+Best regards,
+Takuya Fujikawa
+
+On 2025/12/02 16:51, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+> 
+> it should work without error to loop INIT -> PREOP -> SAFEOP -> OP -> INIT -> PREOP -> ...
+> 
+> Best Regards,
+> __________________________________________________________________________________________
+> Cyril Eyssautier
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30
+> acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> On Tuesday, December 2, 2025 at 8:07:03 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Master(YUSHIN) [E179]
+>>
+>> Related No178.
+>> In those 2 cases, we change to operation that call emSetMasterState(eEcatState_SafeOP)→PreOP→INIT→PreOP→SafeOP→OP steply, instead of emSetMasterState(eEcatState_OP) only.
+>>
+>> Both of cases, all slaves change their state OP, but in secondly case(disconnection between slave1 and 2), EC_NOTIFY_SLAVE_INITCMD_RESPONSE_ERROR occurred when reflesh object data through PDO.
+>>
+>> Is there any problem changing state of slave that has no error?
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+
+
+### ARTICLE03_HEADER
+Id=69329
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.12.2025 07:41:12 +00:00
+UpdatedAt=04.12.2025 07:41:16 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(YUSHIN) [E179]
+
+### ARTICLE03_BODY
+Hi Takuya,<div><br></div><div>please find my answer [CER] below.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2"><div><span style="background-color: initial; color: rgb(88, 88, 86);">Cyril</span></div></div>
+<div><br></div>
+<div><blockquote type="cite">On Thursday, December 4, 2025 at 8:36:11 AM, Takuya Fujikawa wrote:<br><br><div>Dear Cyril san</div>
+<div><br></div>
+<div>Just to be sure, please let me check.</div>
+<div>When the Master State is OP and each Slave State is Safe-OP by the disconnection, to turn the system to INIT we must call is only emSetMasterState(eEcatState_INIT)? i.e. we do not need call emSetMasterState(eEcatState_Safe-OP) and emSetMasterState(eEcatState_PreOP)?</div>
+<div>[CER] Yes exactly.</div>
+<div>On the other hand, to turn the system to OP again, we need to call API steply (PreOP→SafeOP→OP), right?</div>
+<div>[CER] You don't need it too, you can call emSetMasterState(OP) directly, but you perhaps need smore timeout to be sure to pass the transition.</div>
+<div><br></div>
+<div> &gt;Both of cases, all slaves change their state OP, but in secondly case(disconnection between slave1 and 2),</div>
+<div> &gt;EC_NOTIFY_SLAVE_INITCMD_RESPONSE_ERROR occurred when reflesh object data through PDO.</div>
+<div>Close this my question please. We can get the PDO data, so we think it is ploblem of Slave module.</div>
+<div>[CER] They can validate if the slave is able to loop through the states with a simple test program.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2025/12/02 16:51, Cyril Eyssautier via EC-Support wrote:</div>
+<div>&gt; Hi Takuya,</div>
+<div>&gt;</div>
+<div>&gt; it should work without error to loop INIT -&gt; PREOP -&gt; SAFEOP -&gt; OP -&gt; INIT -&gt; PREOP -&gt; ...</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Cyril Eyssautier</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: <a href="mailto:ecsupport@acontis.com" title="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030 30</div>
+<div>&gt; acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Tuesday, December 2, 2025 at 8:07:03 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Master(YUSHIN) [E179]</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Related No178.</div>
+<div>&gt;&gt; In those 2 cases, we change to operation that call emSetMasterState(eEcatState_SafeOP)→PreOP→INIT→PreOP→SafeOP→OP steply, instead of emSetMasterState(eEcatState_OP) only.</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Both of cases, all slaves change their state OP, but in secondly case(disconnection between slave1 and 2), EC_NOTIFY_SLAVE_INITCMD_RESPONSE_ERROR occurred when reflesh object data through PDO.</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Is there any problem changing state of slave that has no error?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

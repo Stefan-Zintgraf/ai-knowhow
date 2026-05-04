@@ -1,0 +1,78 @@
+# Minimal E2E config with **legacy** spelling `anythingllm_models_source: litellm_gateway`.
+# For Playwright backward-compat test: start support_rag with
+#   set RAG_CONFIG=tests/e2e/fixtures/legacy_litellm_web_ui.yaml
+# (path from repo root). The UI must show Option B as `llm_gateway` after coercion.
+
+service:
+  bind: 0.0.0.0:8080
+  service_token_env: RAG_SERVICE_TOKEN
+  admin_token_env: RAG_ADMIN_TOKEN
+  version: 0.1.0
+  langfuse_header_name: "x-langfuse-trace-id"
+
+llm_gateway:
+  base_url: http://127.0.0.1:4000
+  api_key: ""
+  timeout_s: 120
+  embedding_slot: embedding
+  retrieval_slot: retrieval_llm
+  chat_slot: retrieval_llm
+  chat_model: retrieval
+  display_models:
+    embedding: ""
+    retrieval_llm: ""
+    chat: ""
+
+qdrant:
+  url: http://127.0.0.1:6333
+  collection_prefix: support_rag_e2e_
+  vector_size: 384
+  distance: cosine
+
+retrieval:
+  hybrid: true
+  rerank_enabled: true
+  top_k_dense: 30
+  top_k_sparse: 30
+  top_k_final: 6
+  fusion: rrf
+  rrf_k: 60
+  query_rewrite:
+    enabled: false
+    n_alternatives: 3
+  hyde:
+    enabled: false
+  reranker:
+    model: BAAI/bge-reranker-v2-m3
+    device: cpu
+
+chunking:
+  kb:
+    strategy: sentence_window
+    chunk_size: 512
+    window_size: 3
+  tickets:
+    strategy: qa_pair
+
+chunker_version:
+  kb: kb-v1
+  tickets: tickets-v1
+
+observability:
+  otel_endpoint: ""
+  service_name: support-rag
+
+web_ui:
+  folder_path: ""
+  namespace: kb
+  use_rag: false
+  message_draft: ""
+  anythingllm_models_source: litellm_gateway
+  anythingllm_completion: gateway
+  show_retrieval_context: true
+  top_k: 6
+  anythingllm_top_n: 4
+  anythingllm_score_threshold: null
+  anythingllm_workspace_slug_override: ""
+  retrieval_chunk_char_cap: 12000
+  anythingllm_ingest_state_path: "var/anythingllm_ingest_state.json"

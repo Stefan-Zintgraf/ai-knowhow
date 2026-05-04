@@ -1,0 +1,138 @@
+### HEADER
+Id=1853
+Link=http://at-zammad/#ticket/zoom/1853
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=HIMS, Motion Controller Development (ID=339, Number=339)
+Number=701853
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=jtjung@prestosolution.co.kr (ID=46, FirstName=Jintae, LastName=Jung)
+CreatedBy=jtjung@prestosolution.co.kr (ID=46, FirstName=Jintae, LastName=Jung)
+Type=
+TimeUnit=
+CreatedAt=18.11.2021 07:01:19 +00:00
+UpdatedAt=18.11.2021 09:35:57 +00:00
+CloseAt=18.11.2021 09:35:56 +00:00
+ArticlesCount=2
+
+### TITLE
+Request the latest version of EC-Master SDK
+
+### ARTICLE00_HEADER
+Id=9801
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.11.2021 07:01:20 +00:00
+UpdatedAt=18.11.2021 07:01:23 +00:00
+
+### ARTICLE00_SUBJECT
+Request the latest version of EC-Master SDK
+
+### ARTICLE00_BODY
+<div>
+<p>Hi, All</p>
+<p> </p>
+<p>The customer is HIMS(#40404) want to get the latest version below.</p>
+<table border="0" cellspacing="0" cellpadding="0" style="margin-left:-.15pt;border-collapse:collapse;">
+<tr><td style="border:solid windowtext 1.0pt;background:#d9d9d9;padding:0cm 4.95pt 0cm 4.95pt;"><span lang="EN-US" style="color:black;">MODEL</span></td></tr>
+<tr><td style="border:solid windowtext 1.0pt;border-top:none;padding:0cm 4.95pt 0cm 4.95pt;"><span lang="EN-US">100-603-2-1 EC-Master Class A, Core SDK, TI-RTOS Kernel, ARM, 32 Bit</span></td></tr>
+<tr><td style="border:solid windowtext 1.0pt;border-top:none;padding:0cm 4.95pt 0cm 4.95pt;"><span lang="EN-US">100-617-2-1 EC-Master Link Layer, CPSW, TI-RTOS Kernel, ARM, 32 Bit</span></td></tr>
+<tr><td style="border:solid windowtext 1.0pt;border-top:none;padding:0cm 4.95pt 0cm 4.95pt;"><span lang="EN-US">100-801-0-0 EC-Master Class A, FP Hot Connect SDK</span></td></tr>
+<tr><td style="border:solid windowtext 1.0pt;border-top:none;padding:0cm 4.95pt 0cm 4.95pt;"><span lang="EN-US">100-811-0-0 EC-Master Class A, FP Cable Redundancy SDK</span></td></tr>
+</table>
+<p>Have a nice day.</p>
+<p> </p>
+<p>Best Regards,</p>
+<p>Jintae</p>
+<p> </p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span lang="EN-US" style="color:#1f497d;"><img src="/api/v1/ticket_attachment/1853/9801/38134?view=inline" alt="http://gw.prestosolution.co.kr/_Repository/_XTagFree2/20190110/IMG_000942.png" style="max-width:100%;width:120px;max-height:43px;"></span><p></p>
+</td>
+<td valign="top" style="padding:0cm 0cm 0cm 0cm;">
+<p><b><span lang="EN-US">Jintae Jung / Sales Team</span></b></p>
+<p></p>
+<p><b><span lang="EN-US">Prestosolution</span></b></p>
+<p></p>
+<p><u><span lang="EN-US" style="color:#1f4e79;">jtjung@prestosolution.co.kr</span></u></p>
+<p></p>
+</td>
+</tr>
+<tr><td colspan="2" valign="top" style="padding:0cm 0cm 0cm 0cm;"></td></tr>
+<tr><td colspan="2" valign="top" style="padding:0cm 0cm 0cm 0cm;">
+<p> </p>
+<span lang="EN-US" style="color:#636563;">The information in this email is confidential and may be legally privileged. It is intended solely for the addressed.</span><p></p>
+<span lang="EN-US" style="color:#636563;">Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are not the intended addressee please contact the sender and dispose of this e-mail.</span><p></p>
+</td></tr>
+</table> <p> </p>
+</div><table><tr><td></td></tr></table>
+
+### ARTICLE01_HEADER
+Id=9807
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.11.2021 09:35:56 +00:00
+UpdatedAt=18.11.2021 09:36:19 +00:00
+
+### ARTICLE01_SUBJECT
+Request the latest version of EC-Master SDK
+
+### ARTICLE01_BODY
+Hi Jintae,<div><br></div><div>please find the requested version below / as attachment:</div><div>
+<div><a href="https://downloads.acontis.com/2021/G-I/HIMS_(40404)(KR)/EC-Master/3.1.2.09/EC-Master-ClassA-AddOn-V3.1.2.09-SYSBIOS-ARM_32Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2021/G-I/HIMS_(40404)(KR)/EC-Master/3.1.2.09/EC-Master-ClassA-AddOn-V3.1.2.09-SYSBIOS-ARM_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/G-I/HIMS_(40404)(KR)/EC-Master/3.1.2.09/EC-Master-ClassA-AddOn-V3.1.2.09-SYSBIOS-ARM_32Bit-SDK_Protected.zip</a></div>
+<div><a href="https://downloads.acontis.com/2021/G-I/HIMS_(40404)(KR)/EC-Master/3.1.2.09/EC-Master-CPSW-V3.1.2.09-SYSBIOS-ARM_32Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2021/G-I/HIMS_(40404)(KR)/EC-Master/3.1.2.09/EC-Master-CPSW-V3.1.2.09-SYSBIOS-ARM_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/G-I/HIMS_(40404)(KR)/EC-Master/3.1.2.09/EC-Master-CPSW-V3.1.2.09-SYSBIOS-ARM_32Bit-SDK_Protected.zip</a></div>
+<div><a href="https://downloads.acontis.com/2021/G-I/HIMS_(40404)(KR)/EC-Master/3.1.2.09/EC-Master-V3.1.2.09-SYSBIOS-ARM_32Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2021/G-I/HIMS_(40404)(KR)/EC-Master/3.1.2.09/EC-Master-V3.1.2.09-SYSBIOS-ARM_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/G-I/HIMS_(40404)(KR)/EC-Master/3.1.2.09/EC-Master-V3.1.2.09-SYSBIOS-ARM_32Bit-SDK_Protected.zip</a></div>
+</div><div><br></div><div>Best Regards,</div><div>Cyril<div><br></div>
+<div><blockquote type="cite">On Thursday, November 18, 2021, 8:01:20 AM, 정진태 wrote:<br><br><div>
+<p>Hi, All</p>
+<p> </p>
+<p>The customer is HIMS(#40404) want to get the latest version below.</p>
+<table border="0" cellspacing="0" cellpadding="0" style="margin-left:-.15pt;border-collapse:collapse;">
+<tbody>
+<tr><td style="border:solid windowtext 1.0pt;background:#d9d9d9;padding:0cm 4.95pt 0cm 4.95pt;"><span lang="EN-US" style="color:black;">MODEL</span></td></tr>
+<tr><td style="border:solid windowtext 1.0pt;border-top:none;padding:0cm 4.95pt 0cm 4.95pt;"><span lang="EN-US">100-603-2-1 EC-Master Class A, Core SDK, TI-RTOS Kernel, ARM, 32 Bit</span></td></tr>
+<tr><td style="border:solid windowtext 1.0pt;border-top:none;padding:0cm 4.95pt 0cm 4.95pt;"><span lang="EN-US">100-617-2-1 EC-Master Link Layer, CPSW, TI-RTOS Kernel, ARM, 32 Bit</span></td></tr>
+<tr><td style="border:solid windowtext 1.0pt;border-top:none;padding:0cm 4.95pt 0cm 4.95pt;"><span lang="EN-US">100-801-0-0 EC-Master Class A, FP Hot Connect SDK</span></td></tr>
+<tr><td style="border:solid windowtext 1.0pt;border-top:none;padding:0cm 4.95pt 0cm 4.95pt;"><span lang="EN-US">100-811-0-0 EC-Master Class A, FP Cable Redundancy SDK</span></td></tr>
+</tbody>
+</table>
+<p>Have a nice day.</p>
+<p> </p>
+<p>Best Regards,</p>
+<p>Jintae</p>
+<p> </p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span lang="EN-US" style="color:#1f497d;"><img src="/api/v1/ticket_attachment/1853/9807/38151?view=inline" alt="http://gw.prestosolution.co.kr/_Repository/_XTagFree2/20190110/IMG_000942.png" style="max-width:100%;max-width:100%;width:120px;max-height:43px;"></span><p></p>
+</td>
+<td valign="top" style="padding:0cm 0cm 0cm 0cm;">
+<p><b><span lang="EN-US">Jintae Jung / Sales Team</span></b></p>
+<p></p>
+<p><b><span lang="EN-US">Prestosolution</span></b></p>
+<p></p>
+<p><u><span lang="EN-US" style="color:#1f4e79;">jtjung@prestosolution.co.kr</span></u></p>
+<p></p>
+</td>
+</tr>
+<tr><td colspan="2" valign="top" style="padding:0cm 0cm 0cm 0cm;"></td></tr>
+<tr><td colspan="2" valign="top" style="padding:0cm 0cm 0cm 0cm;">
+<p> </p>
+<span lang="EN-US" style="color:#636563;">The information in this email is confidential and may be legally privileged. It is intended solely for the addressed.</span><p></p>
+<span lang="EN-US" style="color:#636563;">Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are not the intended addressee please contact the sender and dispose of this e-mail.</span><p></p>
+</td></tr>
+</tbody>
+</table> <p> </p>
+</div>
+<table><tbody><tr><td></td></tr></tbody></table>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

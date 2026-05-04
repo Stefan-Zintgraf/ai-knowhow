@@ -1,0 +1,157 @@
+### HEADER
+Id=8069
+Link=http://at-zammad/#ticket/zoom/8069
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Kyoto Denkiki, Sub Device Product Eval (ID=916, Number=916)
+Number=708069
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=10.05.2024 01:28:41 +00:00
+UpdatedAt=03.06.2024 06:55:16 +00:00
+CloseAt=03.06.2024 06:55:16 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Master (Kyoto Denkiki)
+
+### ARTICLE00_HEADER
+Id=44443
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=10.05.2024 01:28:41 +00:00
+UpdatedAt=10.05.2024 01:28:45 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master (Kyoto Denkiki)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master (Kyoto Denkiki)
+
+They are trying the evaluation version of the software below.
+
+https://software.acontis.com/EC-Master/3.2/Windows/EC-Master-V3.2-Windows-x86_64Bit-Eval.zip
+https://software.acontis.com/EC-Master/3.2/Windows/EC-Master-ClassA-AddOn-V3.2-Windows-x86_64Bit-Eval.zip
+
+They are building the C# source code in the following folder with Microsoft Visual Studio Express 2017:
+"C:\Program Files\acontis_technologies\EC-Master-Windows-x86_64Bit\Examples\EcMasterDemoDotNet"
+
+Q1. Could you please provide the Microsoft Visual Studio solution file to build EcMasterDemoDotNet? Alternatively, could you provide information on where to obtain it?
+
+Q2. In the EcMasterDemoDotNet mentioned above, there is the following statement on line 15 of Form1.cs:
+     "using EcWrapperDotNet;"
+     To build this, I believe we need the source files for EcWrapperDotNet. Could you provide these source files? Alternatively, could you provide information on where to obtain them?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=44483
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.05.2024 08:00:31 +00:00
+UpdatedAt=13.05.2024 08:00:33 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master (Kyoto Denkiki)
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>We don't have the solution file, the customer can create one in <span>EC-Master-Windows-x86_64Bit\Workspace\WindowsVS2015 and add the project files.</span>
+</div><div><span><br></span></div><div><div>EcWrapperDotNet is not provide as source, only as binary:</div></div><div><br></div><div>
+<img style="max-width:100%;width: 566.8px;max-width: 100%;max-height: 357.288px;" src="/api/v1/ticket_attachment/8069/44483/183386?view=inline"><br>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, May 10, 2024 at 3:28:41 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master (Kyoto Denkiki)</div>
+<div><br></div>
+<div>They are trying the evaluation version of the software below.</div>
+<div><br></div>
+<div><a href="https://software.acontis.com/EC-Master/3.2/Windows/EC-Master-V3.2-Windows-x86_64Bit-Eval.zip" title="https://software.acontis.com/EC-Master/3.2/Windows/EC-Master-V3.2-Windows-x86_64Bit-Eval.zip" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/EC-Master/3.2/Windows/EC-Master-V3.2-Windows-x86_64Bit-Eval.zip</a></div>
+<div><a href="https://software.acontis.com/EC-Master/3.2/Windows/EC-Master-ClassA-AddOn-V3.2-Windows-x86_64Bit-Eval.zip" title="https://software.acontis.com/EC-Master/3.2/Windows/EC-Master-ClassA-AddOn-V3.2-Windows-x86_64Bit-Eval.zip" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/EC-Master/3.2/Windows/EC-Master-ClassA-AddOn-V3.2-Windows-x86_64Bit-Eval.zip</a></div>
+<div><br></div>
+<div>They are building the C# source code in the following folder with Microsoft Visual Studio Express 2017:</div>
+<div>"C:\Program Files\acontis_technologies\EC-Master-Windows-x86_64Bit\Examples\EcMasterDemoDotNet"</div>
+<div><br></div>
+<div>Q1. Could you please provide the Microsoft Visual Studio solution file to build EcMasterDemoDotNet? Alternatively, could you provide information on where to obtain it?</div>
+<div><br></div>
+<div>Q2. In the EcMasterDemoDotNet mentioned above, there is the following statement on line 15 of Form1.cs:</div>
+<div>     "using EcWrapperDotNet;"</div>
+<div>     To build this, I believe we need the source files for EcWrapperDotNet. Could you provide these source files? Alternatively, could you provide information on where to obtain them?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=44738
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.05.2024 05:01:15 +00:00
+UpdatedAt=17.05.2024 05:01:15 +00:00
+
+### ARTICLE02_SUBJECT
+Question about EC-Master (Kyoto Denkiki)
+
+### ARTICLE02_BODY
+Dear EtherCAT Support<br> <br> Question about EC-Master (Kyoto Denkiki)<br> <br> They are trying the evaluation version of the software below.<br> <br>
+<a href="https://software.acontis.com/EC-Master/3.2/Windows/EC-Master-V3.2-Windows-x86_64Bit-Eval.zip" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/EC-Master/3.2/Windows/EC-Master-V3.2-Windows-x86_64Bit-Eval.zip</a><br>
+<a href="https://software.acontis.com/EC-Master/3.2/Windows/EC-Master-ClassA-AddOn-V3.2-Windows-x86_64Bit-Eval.zip" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/EC-Master/3.2/Windows/EC-Master-ClassA-AddOn-V3.2-Windows-x86_64Bit-Eval.zip</a><br> <br> They have the following inquiries.<br> <br> I attempted to build EcMasterDemoDotNet.<br> The attached "EcMasterDemoDotNet_build.pdf" documents the process. An error message stating, "Reference component 'EcWrapperDotNet' was not found," <br> appeared. Lines 152 to 157 of EcMasterDemoDotNet.csproj seem to contain references to "..\EcWrapperDotNet\EcWrapperDotNet.csproj".<br> <img src="/api/v1/ticket_attachment/8069/44738/184502?view=inline" style="max-width:100%;"><br> <br> However, in the folder location that appears to correspond to "..\EcWrapperDotNet\EcWrapperDotNet.csproj," there is no "EcWrapperDotNet" folder present.<br> <img src="/api/v1/ticket_attachment/8069/44738/184503?view=inline" style="max-width:100%;"><br> Could you please provide the folder corresponding to "..\EcWrapperDotNet\EcWrapperDotNet.csproj"?<br> Alternatively, could you provide the destination for input?<br> If it seems that the method of building EcMasterDemoDotNet is incorrect,<br> could you please instruct me on how to build it?<br> <br> Best regards,<br> Takuya Fujikawa
+
+### ARTICLE03_HEADER
+Id=44749
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.05.2024 06:48:36 +00:00
+UpdatedAt=17.05.2024 06:48:38 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master (Kyoto Denkiki)
+
+### ARTICLE03_BODY
+Hi Takuya,<div><br></div><div>they can change the reference in Visual Studio:</div><div>
+<img style="max-width:100%;width: 312px;max-width: 100%;" src="/api/v1/ticket_attachment/8069/44749/184596?view=inline"><br>
+</div><div><br></div><div>Remove EcWrapperDotNet and Add a reference to <span>[...]\Bin\Windows\x64\EcWrapper.dll or </span><span>[...]\Bin\Windows\x86\EcWrapper.dll</span>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2"><div><span>Cyril</span></div></div>
+<div><br></div>
+<div><blockquote type="cite">On Friday, May 17, 2024 at 7:01:15 AM, Takuya Fujikawa wrote:<br><br>Dear EtherCAT Support<br> <br> Question about EC-Master (Kyoto Denkiki)<br> <br> They are trying the evaluation version of the software below.<br> <br>
+<a href="https://software.acontis.com/EC-Master/3.2/Windows/EC-Master-V3.2-Windows-x86_64Bit-Eval.zip" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/EC-Master/3.2/Windows/EC-Master-V3.2-Windows-x86_64Bit-Eval.zip</a><br>
+<a href="https://software.acontis.com/EC-Master/3.2/Windows/EC-Master-ClassA-AddOn-V3.2-Windows-x86_64Bit-Eval.zip" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/EC-Master/3.2/Windows/EC-Master-ClassA-AddOn-V3.2-Windows-x86_64Bit-Eval.zip</a><br> <br> They have the following inquiries.<br> <br> I attempted to build EcMasterDemoDotNet.<br> The attached "EcMasterDemoDotNet_build.pdf" documents the process. An error message stating, "Reference component 'EcWrapperDotNet' was not found," <br> appeared. Lines 152 to 157 of EcMasterDemoDotNet.csproj seem to contain references to "..\EcWrapperDotNet\EcWrapperDotNet.csproj".<br> <img src="/api/v1/ticket_attachment/8069/44749/184597?view=inline" style="max-width:100%;max-width:100%;"><br> <br> However, in the folder location that appears to correspond to "..\EcWrapperDotNet\EcWrapperDotNet.csproj," there is no "EcWrapperDotNet" folder present.<br> <img src="/api/v1/ticket_attachment/8069/44749/184598?view=inline" style="max-width:100%;max-width:100%;"><br> Could you please provide the folder corresponding to "..\EcWrapperDotNet\EcWrapperDotNet.csproj"?<br> Alternatively, could you provide the destination for input?<br> If it seems that the method of building EcMasterDemoDotNet is incorrect,<br> could you please instruct me on how to build it?<br> <br> Best regards,<br> Takuya Fujikawa<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

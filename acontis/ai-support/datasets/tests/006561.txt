@@ -1,0 +1,223 @@
+### HEADER
+Id=6561
+Link=http://at-zammad/#ticket/zoom/6561
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Philips Healthcare (ID=381, Number=40395, Country=US)
+Commission=Philips Healthcare, CT Advanced Development (ID=453, Number=453)
+Number=706561
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=naji.karkour@philips.com (ID=166, FirstName=Naji, LastName=Karkour)
+CreatedBy=naji.karkour@philips.com (ID=166, FirstName=Naji, LastName=Karkour)
+Type=
+TimeUnit=
+CreatedAt=11.10.2023 18:02:13 +00:00
+UpdatedAt=16.10.2023 15:48:25 +00:00
+CloseAt=12.10.2023 13:01:56 +00:00
+ArticlesCount=3
+
+### TITLE
+Using 2 EtherCAT bus(es)
+
+### ARTICLE00_HEADER
+Id=35341
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.10.2023 18:02:13 +00:00
+UpdatedAt=11.10.2023 18:02:14 +00:00
+
+### ARTICLE00_SUBJECT
+Using 2 EtherCAT bus(es)
+
+### ARTICLE00_BODY
+<div>
+<p>Hi,</p>
+<p>We are using LxWin.</p>
+<p>We are contemplating using 2 distinct EtherCAT bus(es) on the same machine (that of course has 2 NICs).</p>
+<p>The bus(es) and their HW do not need to be synchronized between themselves. We know that the Data we receive will have the same clock source.</p>
+<p> </p>
+<ul type="disc">
+<li>Is it possible to use the same instance of EC-Master to create 2 EtherCAT bus(es) each on one NIC card?</li>
+<li>If not, can we create 2 instances of EC-Master (each will use 1 NIC card)? If so, can these 2 instances co-exist on the same Linux process, or should they be in 2 separate processes?</li>
+</ul>
+<p>I understand the complexity of thread priority that will come with this idea, but just wanted to explore the possibilities.</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Naji</p>
+<p> </p>
+</div><br>
+<hr> The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.
+
+### ARTICLE01_HEADER
+Id=35351
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.10.2023 06:03:19 +00:00
+UpdatedAt=12.10.2023 06:03:23 +00:00
+
+### ARTICLE01_SUBJECT
+Using 2 EtherCAT bus(es)
+
+### ARTICLE01_BODY
+Hi Naji,<div><br></div><div>It is possible to control 2 networks within the same application:</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#multiple-ethercat-bus-support" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#multiple-ethercat-bus-support" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#multiple-ethercat-bus-support</a></div></div><div><br></div><div>
+<span>Best Regards,</span><br>
+</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, October 11, 2023 at 8:02:13 PM, Naji Karkour wrote:<br><br><div>
+<p>Hi,</p>
+<p>We are using LxWin.</p>
+<p>We are contemplating using 2 distinct EtherCAT bus(es) on the same machine (that of course has 2 NICs).</p>
+<p>The bus(es) and their HW do not need to be synchronized between themselves. We know that the Data we receive will have the same clock source.</p>
+<p> </p>
+<ul type="disc">
+<li>Is it possible to use the same instance of EC-Master to create 2 EtherCAT bus(es) each on one NIC card?</li>
+<li>If not, can we create 2 instances of EC-Master (each will use 1 NIC card)? If so, can these 2 instances co-exist on the same Linux process, or should they be in 2 separate processes?</li>
+</ul>
+<p>I understand the complexity of thread priority that will come with this idea, but just wanted to explore the possibilities.</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Naji</p>
+<p> </p>
+</div>
+<br>
+<hr> The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=35413
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.10.2023 12:59:24 +00:00
+UpdatedAt=12.10.2023 12:59:24 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Using 2 EtherCAT bus(es) [Ticket#706561]
+
+### ARTICLE02_BODY
+<div>
+<p>Thanks for the prompt answer,</p>
+<p>Regards,</p>
+<p>Naji</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> 2023 Oct 12 2:03 AM<br>
+<b>To:</b> Karkour, Naji &lt;naji.karkour@philips.com&gt;<br>
+<b>Cc:</b> j.waters@acontis.com<br>
+<b>Subject:</b> RE: Using 2 EtherCAT bus(es) [Ticket#706561]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p><b><span style="color:#9c6500;">Caution: </span></b>This e-mail originated from outside of Philips, be careful for phishing. </p>
+</div>
+<p> </p>
+<div>
+<p>Hi Naji,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>It is possible to control 2 networks within the same application:</p>
+</div>
+<div>
+<div>
+<p><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#multiple-ethercat-bus-support" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#multiple-ethercat-bus-support" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#multiple-ethercat-bus-support</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Cyril Eyssautier</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Wednesday, October 11, 2023 at 8:02:13 PM, Naji Karkour wrote:</p>
+<div>
+<p>Hi,</p>
+<p>We are using LxWin.</p>
+<p>We are contemplating using 2 distinct EtherCAT bus(es) on the same machine (that of course has 2 NICs).</p>
+<p>The bus(es) and their HW do not need to be synchronized between themselves. We know that the Data we receive will have the same clock source.</p>
+<p> </p>
+<ul type="disc">
+<li> Is it possible to use the same instance of EC-Master to create 2 EtherCAT bus(es) each on one NIC card?</li>
+<li> If not, can we create 2 instances of EC-Master (each will use 1 NIC card)? If so, can these 2 instances co-exist on the same Linux process, or should they be in 2 separate processes?</li>
+</ul>
+<p>I understand the complexity of thread priority that will come with this idea, but just wanted to explore the possibilities.</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Naji</p>
+<p> </p>
+</div>
+<p> </p>
+<div>
+<hr>
+</div>
+<p>The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.</p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+</div>

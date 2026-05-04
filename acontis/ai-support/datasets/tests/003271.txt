@@ -1,0 +1,124 @@
+### HEADER
+Id=3271
+Link=http://at-zammad/#ticket/zoom/3271
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Sierra CP Engineering Limited (ID=322, Number=40369, Country=UK)
+Commission=Sierra CP, CADET Controller  (ID=384, Number=384)
+Number=703271
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=gjm@sierra-cp.com (ID=156, FirstName=Greg, LastName=McElroy)
+CreatedBy=gjm@sierra-cp.com (ID=156, FirstName=Greg, LastName=McElroy)
+Type=
+TimeUnit=
+CreatedAt=21.06.2022 09:00:21 +00:00
+UpdatedAt=08.07.2022 06:09:36 +00:00
+CloseAt=08.07.2022 06:09:36 +00:00
+ArticlesCount=2
+
+### TITLE
+ProfiNET Support EL6631in EC-Engineer
+
+### ARTICLE00_HEADER
+Id=17284
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.06.2022 09:00:21 +00:00
+UpdatedAt=21.06.2022 09:00:23 +00:00
+
+### ARTICLE00_SUBJECT
+ProfiNET Support EL6631in EC-Engineer
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>Is the Beckhoff EL6631 ProfiNET slave device supported in EC-Engineer?</p>
+<p> </p>
+<p><span lang="EN-US">Regards,</span></p>
+<p><span lang="EN-US">Greg McElroy</span></p>
+<p><span lang="EN-US">Software Engineer<span style="color:#00b0f0;"></span></span></p>
+<p><span lang="EN-US">Sierra CP Engineering Limited</span></p>
+<p><b><img src="/api/v1/ticket_attachment/3271/17284/70220?view=inline" alt="sierra-cp-logo-01" style="max-width:100%;width:227px;max-height:69px;"></b><span lang="EN-US"></span></p>
+<p><span lang="EN-US">Website: <a href="http://www.sierra-cp.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.sierra-cp.com</span></a></span></p>
+<p><span lang="EN-US">Sandy’s Road Malvern, WR14 1JJ, UK</span></p>
+<p> </p>
+<p><img border="0" src="/api/v1/ticket_attachment/3271/17284/70221?view=inline" alt="cid:image002.png@01D6CCA1.41599840" style="max-width:100%;width:277px;max-height:85px;"><span><img border="0" src="/api/v1/ticket_attachment/3271/17284/70222?view=inline" alt="See the source image" style="max-width:100%;width:82px;max-height:82px;"><span style="color:navy;"></span></span></p>
+<p> </p>
+<p>Sierra CP Engineering Limited is registered in England and Wales. Registered Number: 2827565.</p>
+<p><b><span lang="EN-US" style="color:#8e7771;"><p> </p></span></b></p>
+<p><b><span lang="EN-US" style="color:#8e7771;">NOTICE: This message may contain confidential and/or privileged information. If you are not the addressee or authorized to receive this for the addressee, you must not use, copy, disclose, or take any action based on this message or any information herein. If you have received this message in error, please advise the sender immediately by reply e-mail and delete this message. Thank you for your cooperation.</span></b></p>
+<p><b><span lang="EN-US" style="color:#8e7771;"><p> </p></span></b></p>
+<p><span style="color:green;"><img border="0" src="/api/v1/ticket_attachment/3271/17284/70223?view=inline" alt="Untitled.jpg" style="max-width:100%;width:19px;max-height:18px;"></span>
+<span lang="EN-US" style="color:green;">PLEASE CONSIDER THE ENVIRONMENT BEFORE YOU PRINT THIS E-MAIL</span><span lang="EN-US"></span></p>
+<p> </p>
+</div><span class="js-signatureMarker"></span><br> ________________________________________________________________________<br> This e-mail has been scanned for all viruses by Claranet. The<br> service is powered by MessageLabs. For more information on a proactive<br> anti-virus service working around the clock, around the globe, visit:<br>
+<a href="http://www.claranet.co.uk" rel="nofollow noreferrer noopener" target="_blank">http://www.claranet.co.uk</a><br> ________________________________________________________________________
+
+### ARTICLE01_HEADER
+Id=17291
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.06.2022 09:30:15 +00:00
+UpdatedAt=21.06.2022 09:30:18 +00:00
+
+### ARTICLE01_SUBJECT
+ProfiNET Support EL6631in EC-Engineer
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>we support the "EL6631-0010" ProfiNET IO Device in EC-Engineer. Which one do you mean exactly?</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, June 21, 2022, 11:00:21 AM, Greg McElroy wrote:<br><br><div>
+<p>Hello,</p>
+<p> </p>
+<p>Is the Beckhoff EL6631 ProfiNET slave device supported in EC-Engineer?</p>
+<p> </p>
+<p><span lang="EN-US">Regards,</span></p>
+<p><span lang="EN-US">Greg McElroy</span></p>
+<p><span lang="EN-US">Software Engineer<span style="color:#00b0f0;"></span></span></p>
+<p><span lang="EN-US">Sierra CP Engineering Limited</span></p>
+<p><b><img src="/api/v1/ticket_attachment/3271/17291/70265?view=inline" alt="sierra-cp-logo-01" style="max-width:100%;max-width:100%;width:227px;max-height:69px;"></b><span lang="EN-US"></span></p>
+<p><span lang="EN-US">Website: <a href="http://www.sierra-cp.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.sierra-cp.com</span></a></span></p>
+<p><span lang="EN-US">Sandy’s Road Malvern, WR14 1JJ, UK</span></p>
+<p> </p>
+<p><img border="0" src="/api/v1/ticket_attachment/3271/17291/70266?view=inline" alt="cid:image002.png@01D6CCA1.41599840" style="max-width:100%;max-width:100%;width:277px;max-height:85px;"><span><img border="0" src="/api/v1/ticket_attachment/3271/17291/70267?view=inline" alt="See the source image" style="max-width:100%;max-width:100%;width:82px;max-height:82px;"><span style="color:navy;"></span></span></p>
+<p> </p>
+<p>Sierra CP Engineering Limited is registered in England and Wales. Registered Number: 2827565.</p>
+<p><b><span lang="EN-US" style="color:#8e7771;"></span></b></p>
+<p><b> </b></p>
+<p></p>
+<p><b><span lang="EN-US" style="color:#8e7771;">NOTICE: This message may contain confidential and/or privileged information. If you are not the addressee or authorized to receive this for the addressee, you must not use, copy, disclose, or take any action based on this message or any information herein. If you have received this message in error, please advise the sender immediately by reply e-mail and delete this message. Thank you for your cooperation.</span></b></p>
+<p><b><span lang="EN-US" style="color:#8e7771;"></span></b></p>
+<p><b> </b></p>
+<p></p>
+<p><span style="color:green;"><img border="0" src="/api/v1/ticket_attachment/3271/17291/70268?view=inline" alt="Untitled.jpg" style="max-width:100%;max-width:100%;width:19px;max-height:18px;"></span>
+<span lang="EN-US" style="color:green;">PLEASE CONSIDER THE ENVIRONMENT BEFORE YOU PRINT THIS E-MAIL</span><span lang="EN-US"></span></p>
+<p> </p>
+</div>
+<span class="js-signatureMarker"></span><br> ________________________________________________________________________<br> This e-mail has been scanned for all viruses by Claranet. The<br> service is powered by MessageLabs. For more information on a proactive<br> anti-virus service working around the clock, around the globe, visit:<br>
+<a href="http://www.claranet.co.uk" rel="nofollow noreferrer noopener" target="_blank">http://www.claranet.co.uk</a><br> ________________________________________________________________________<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,78 @@
+### HEADER
+Id=4195
+Link=http://at-zammad/#ticket/zoom/4195
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Jumo GmbH & Co.KG (ID=126, Number=54502, Country=DE)
+Commission=Carl Cloos, Robotersteuerung (ID=99, Number=99)
+Number=704195
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=dirk.kliegel@jumo.net (ID=128, FirstName=Dirk, LastName=Kliegel)
+CreatedBy=dirk.kliegel@jumo.net (ID=128, FirstName=Dirk, LastName=Kliegel)
+Type=
+TimeUnit=
+CreatedAt=26.10.2022 08:06:57 +00:00
+UpdatedAt=18.11.2022 07:06:50 +00:00
+CloseAt=18.11.2022 07:06:50 +00:00
+ArticlesCount=2
+
+### TITLE
+Application as process data memory provider with dynamic buffers
+
+### ARTICLE00_HEADER
+Id=22097
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.10.2022 08:06:58 +00:00
+UpdatedAt=26.10.2022 08:07:01 +00:00
+
+### ARTICLE00_SUBJECT
+Application as process data memory provider with dynamic buffers
+
+### ARTICLE00_BODY
+Hallo,<br><br>ich habe eine Frage zu dem Kapitel "3.4.3. Application as process data memory provider with dynamic buffers" in dem Dokument: <a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html#process-data-update-and-memory" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html#process-data-update-and-memory</span></a><br><br>Ist es möglich eine seperaten Speicher für jede Task-ID (Frame) zu übergeben und zwar für beide Richtungen lesend wie schreibend?<br><br><span>Mit freundlichen Grüßen / Best regards<br><br>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Software / Global Development - Software<br>Applikationen embedded Linux / Applications embedded Linux<br><br>i. A. Dirk Kliegel<br><br>Tel: +49 (0)661 6003-324<br>Fax: +49 (0)661 6003-604<br>Adresse: Moritz-Juchheim-Straße 1 <br> 36039 Fulda, Germany <br>E-Mail: </span><a href="mailto:Dirk.Kliegel@jumo.net">mailto:Dirk.Kliegel@jumo.net</a><span><br>Internet: </span><a href="https://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">https://www.jumo.net</a><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dipl.-Ingenieur Dimitrios Charisiadis, Dipl.-Betriebswirt Steffen Hoßfeld<br> Ust.-Id.-Nr.: DE 112411234</p>
+
+### ARTICLE01_HEADER
+Id=22134
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.10.2022 15:09:26 +00:00
+UpdatedAt=26.10.2022 15:09:29 +00:00
+
+### ARTICLE01_SUBJECT
+Application as process data memory provider with dynamic buffers
+
+### ARTICLE01_BODY
+Hallo Herr Kliegel,<div><br></div><div>ja das geht die Callbacks, die Sie über <span>EC_T_MEMPROV_DESC melden, werden aufgerufen. Die TaskId wird als Parameter übergeben:</span>
+</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=ec_t_memprov_desc#_CPPv413EC_T_PFMEMREQ" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=ec_t_memprov_desc#_CPPv413EC_T_PFMEMREQ" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=ec_t_memprov_desc#_CPPv413EC_T_PFMEMREQ</a></div></div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/4195/22134/93015?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, October 26, 2022 at 10:06:58 AM, Dirk Kliegel wrote:<br><br>Hallo,<br><br>ich habe eine Frage zu dem Kapitel "3.4.3. Application as process data memory provider with dynamic buffers" in dem Dokument: <a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html#process-data-update-and-memory" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html#process-data-update-and-memory</span></a><br><br>Ist es möglich eine seperaten Speicher für jede Task-ID (Frame) zu übergeben und zwar für beide Richtungen lesend wie schreibend?<br><br><span>Mit freundlichen Grüßen / Best regards<br><br>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Software / Global Development - Software<br>Applikationen embedded Linux / Applications embedded Linux<br><br>i. A. Dirk Kliegel<br><br>Tel: +49 (0)661 6003-324<br>Fax: +49 (0)661 6003-604<br>Adresse: Moritz-Juchheim-Straße 1 <br> 36039 Fulda, Germany <br>E-Mail: </span><a href="mailto:Dirk.Kliegel@jumo.net">mailto:Dirk.Kliegel@jumo.net</a><span><br>Internet: </span><a href="https://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">https://www.jumo.net</a><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dipl.-Ingenieur Dimitrios Charisiadis, Dipl.-Betriebswirt Steffen Hoßfeld<br> Ust.-Id.-Nr.: DE 112411234</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

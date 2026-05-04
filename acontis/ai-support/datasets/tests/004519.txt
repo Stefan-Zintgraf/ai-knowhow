@@ -1,0 +1,69 @@
+### HEADER
+Id=4519
+Link=http://at-zammad/#ticket/zoom/4519
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Energid (ID=343, Number=45061, Country=US)
+Commission=Energid, Actin (ID=409, Number=409)
+Number=704519
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=chli@universal-robots.com (ID=1506, FirstName=Changshuo, LastName=Li)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=09.12.2022 19:54:05 +00:00
+UpdatedAt=07.11.2023 07:53:53 +00:00
+CloseAt=16.12.2022 13:09:23 +00:00
+ArticlesCount=1
+
+### TITLE
+Re: Help needed to resolve errors from EC-Master
+
+### ARTICLE00_HEADER
+Id=23876
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.12.2022 19:54:05 +00:00
+UpdatedAt=09.12.2022 19:54:05 +00:00
+
+### ARTICLE00_SUBJECT
+Re: Help needed to resolve errors from EC-Master
+
+### ARTICLE00_BODY
+Hi Changshuo,<div> </div><div>Thanks for the updated contact information, and congrats on the integration with UR. I thought actually that Energid was getting integrated with Teradyne, which I know also owns UR, so I didn’t realize that actually Energid was going into UR. Either way I hope it is good for you!</div><div> </div><div>A working counter error is an EtherCAT error that occurs when a slave does not interact with the process data. So EC-Master is sending out the cyclic frame with a known working counter based on the configuration (number of slaves, mapped process data, etc.). Each slave will then decrement the working counter accordingly so that when the frame comes back to the master the working counter should be 0 and that means everything was as expected. So if something happens on the network and a slave doesn’t interact with the frame then it wouldn’t decrement the working counter and it wouldn’t be 0 when the frame got back to the master. So the WKC error doesn’t help so much in pinpointing the problem, but it indicates there was a problem.</div><div> </div><div>The frame loss error can be due to a couple of things. Most often this is due to the frame being sent out and the master timer task starting up again before the frame is received back. The cause of this is due to the the frame taking too long to go around the network in the given cycle time. This could be because the cycle time is just too fast for how many slaves are in the network and how much data needs to travel around the network. It could also be because the jitter of the timing on the master system is too high, so sometimes the timer is shorter than expected by some significant margin and the frame isn’t back yet.</div><div> </div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html#error-detection-and-diagnosis" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html#error-detection-and-diagnosis</a></div><div> </div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emnotify-ec-notify-status-slave-error" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emnotify-ec-notify-status-slave-error</a></div><div> </div><div>Hope this helps, and happy to look at some log files or some more information from a network capture to further assist. Are you using any tool like EC-Engineer for diagnosis?</div><div>
+<div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Dec 8, 2022, at 5:52 PM, Changshuo Li &lt;chli@universal-robots.com&gt; wrote:</div>
+<br><div>
+<div>
+<div>Hi Jon,</div>
+<div><p> </p></div>
+<div>This is Changshuo. Hope you’re doing well.</div>
+<div>As you may already know, Energid is now officially part of Universal Robots, so our emails also change to UR domain.</div>
+<div><p> </p></div>
+<div>One of our customer, when using EC-Master, encounters the following error messages:</div>
+<div><p> </p></div>
+<div>Cyclic command WKC error on LRW – Address: 0x1000000 -WKC act/set=17/21</div>
+<div>EC_NOTIFY_STATUS_SLAVE_ERROR code = 10013</div>
+<div>eUsrJob_ProcessAllRxFrames – not all previously sent frames are received/processed (frame loss)!</div>
+<div><p> </p></div>
+<div><p> </p></div>
+<div>Do you know what may be the cause of these errors?</div>
+<div>What further information you may need, and how to get them?</div>
+<div><p> </p></div>
+<div><p> </p></div>
+</div>
+<div>
+<p><span><span lang="EN-GB">Best Regards<br><br><strong>Changshuo Li </strong><br><em>Engineering<br></em></span><br><a href="https://www.universal-robots.com/" rel="nofollow noreferrer noopener" title="https://www.universal-robots.com/" target="_blank"><span lang="DA"><img alt="bf7ba435-7676-4507-b5d6-6014de35082e.jpeg" src="/api/v1/ticket_attachment/4519/23876/100827?view=inline" style="max-width:100%;"></span></a></span><span lang="EN-GB"></span></p>
+<p><br><span><strong><span lang="EN-GB">Energid<br></span></strong><span lang="EN-GB">Universal Robots Boston - Corporate Offices 27-43 Wormwood Street<br>Boston, MA 02210<br></span><br><span lang="EN-GB">Cell: +1 774 312-1760<br></span><br><span lang="DA"><a href="mailto:chli@universal-robots.com"><span lang="EN-GB">chli@universal-robots.com<br></span></a></span></span></p>
+<span>Please note that this message may contain confidential information. If you have received this message by mistake,<br>please inform the sender of the mistake, then delete the message from your system without making,<br>distributing or retaining any copies of it. Although we believe that the message and any attachments are free<br>from viruses and other errors that might affect the computer or IT system where it is received and read,<br>the recipient opens the message at his or her own risk. We assume no responsibility for any loss or damage arising from the receipt or use of this message.<br><br>If Universal Robots A/S processes personal data relating to physical persons, such processing will meet the requirements of applicable data protection legislation.<br><a href="https://www.universal-robots.com/about-universal-robots/privacy-policy/" rel="nofollow noreferrer noopener" title="https://www.universal-robots.com/about-universal-robots/privacy-policy/" target="_blank">Please see our Privacy Policy here</a>.</span>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

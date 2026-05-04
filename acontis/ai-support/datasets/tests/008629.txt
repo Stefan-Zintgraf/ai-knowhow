@@ -1,0 +1,235 @@
+### HEADER
+Id=8629
+Link=http://at-zammad/#ticket/zoom/8629
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Panasonic Industry SUNX, AFPXHECM series (ID=910, Number=910)
+Number=708629
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=06.08.2024 08:14:44 +00:00
+UpdatedAt=12.08.2024 06:07:13 +00:00
+CloseAt=12.08.2024 06:07:13 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Engineer SDK(Panasonic Industry) [E024]
+
+### ARTICLE00_HEADER
+Id=48370
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=06.08.2024 08:14:44 +00:00
+UpdatedAt=06.08.2024 08:14:46 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Engineer SDK(Panasonic Industry) [E024]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Engineer SDK(Panasonic Industry) [E024]
+
+In Edit Topology, if the scan is failed by error code "0x9811002D" (Link not connected), the configuration items are displayed in Scanned configuration.
+Is it correct?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=48381
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.08.2024 09:28:40 +00:00
+UpdatedAt=06.08.2024 09:28:44 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Engineer SDK(Panasonic Industry) [E024]
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>No. If I press on "Scan" and the link is not connected, the "scanned configuration" is still empty:</div><div><br></div><div>
+<img style="max-width:100%;width: 766px;max-width: 100%;" src="/api/v1/ticket_attachment/8629/48381/201007?view=inline"><br>
+</div><div><br></div><div>Does this answer your question? If not, can you send me a screenshot about your problem?</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, August 6, 2024 at 10:14:44 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Engineer SDK(Panasonic Industry) [E024]</div>
+<div><br></div>
+<div>In Edit Topology, if the scan is failed by error code "0x9811002D" (Link not connected), the configuration items are displayed in Scanned configuration.</div>
+<div>Is it correct?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=48416
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=07.08.2024 02:56:00 +00:00
+UpdatedAt=07.08.2024 02:56:00 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Engineer SDK(Panasonic Industry) [E024] [Ticket#708629]
+
+### ARTICLE02_BODY
+Dear Martin san
+
+We tested with EC-Simulator.
+If the EC-Simulator is stopped but the LAN cable is connected, the phenomenon is not occurred.
+But if the LAN cable is disconnected, the phenomenon is occurred.
+Please confirm.
+
+Best regards,
+Takuya Fujikawa
+
+On 2024/08/06 18:28, Martin Gaenzer via EC-Support wrote:
+> Hi,
+>
+> No. If I press on "Scan" and the link is not connected, the "scanned configuration" is still empty:
+>
+>
+>
+> Does this answer your question? If not, can you send me a screenshot about your problem?
+>
+> Best Regards,
+> Martin
+> __________________________________________________________________________________________
+> Martin Gaenzer
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+>
+>
+>> On Tuesday, August 6, 2024 at 10:14:44 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Engineer SDK(Panasonic Industry) [E024]
+>>
+>> In Edit Topology, if the scan is failed by error code "0x9811002D" (Link not connected), the configuration items are displayed in Scanned configuration.
+>> Is it correct?
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+>
+>
+>
+
+
+### ARTICLE03_HEADER
+Id=48446
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.08.2024 10:36:22 +00:00
+UpdatedAt=07.08.2024 10:36:22 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Engineer SDK(Panasonic Industry) [E024]
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>can you give me more details how your setup looks like?</div><div>EC-Engineer -&gt; RAS?</div><div>EC-SimulaterHil?</div><div>or EC-Engineer with linked Simulator?</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, August 7, 2024 at 4:56:00 AM, Takuya Fujikawa wrote:<br><br><div>Dear Martin san</div>
+<div><br></div>
+<div>We tested with EC-Simulator.</div>
+<div>If the EC-Simulator is stopped but the LAN cable is connected, the phenomenon is not occurred.</div>
+<div>But if the LAN cable is disconnected, the phenomenon is occurred.</div>
+<div>Please confirm.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2024/08/06 18:28, Martin Gaenzer via EC-Support wrote:</div>
+<div>&gt; Hi,</div>
+<div>&gt;</div>
+<div>&gt; No. If I press on "Scan" and the link is not connected, the "scanned configuration" is still empty:</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt; Does this answer your question? If not, can you send me a screenshot about your problem?</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; Martin</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Martin Gaenzer</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Tuesday, August 6, 2024 at 10:14:44 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Engineer SDK(Panasonic Industry) [E024]</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; In Edit Topology, if the scan is failed by error code "0x9811002D" (Link not connected), the configuration items are displayed in Scanned configuration.</div>
+<div>&gt;&gt; Is it correct?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

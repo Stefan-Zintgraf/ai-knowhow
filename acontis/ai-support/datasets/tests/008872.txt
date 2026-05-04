@@ -1,0 +1,180 @@
+### HEADER
+Id=8872
+Link=http://at-zammad/#ticket/zoom/8872
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=none
+Commission=Acontis, Generic (ID=590, Number=590)
+Number=708872
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=eichel@aixcontrol.de (ID=2837, FirstName=Benjamin, LastName=Eichel)
+CreatedBy=eichel@aixcontrol.de (ID=2837, FirstName=Benjamin, LastName=Eichel)
+Type=
+TimeUnit=
+CreatedAt=13.09.2024 08:50:14 +00:00
+UpdatedAt=18.09.2024 06:09:14 +00:00
+CloseAt=18.09.2024 06:09:14 +00:00
+ArticlesCount=2
+
+### TITLE
+Schadsoftware in etherCAT erkannt
+
+### ARTICLE00_HEADER
+Id=50020
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.09.2024 08:50:14 +00:00
+UpdatedAt=13.09.2024 08:50:14 +00:00
+
+### ARTICLE00_SUBJECT
+Schadsoftware in etherCAT erkannt
+
+### ARTICLE00_BODY
+<div>
+<div>Sehr geehrte Damen und Herren,<br><br>wir wollten uns hier mal ihre Software etherCAT ansehen. Dabei fiel uns auf, dass der Virenscanner VBA32 die ZIP von EC-Engineer als Schadsoftware detektiert.<br>
+</div>
+<div> </div>
+<div><img src="/api/v1/ticket_attachment/8872/50020/207504?view=inline" style="max-width:100%;"></div>
+<div> </div>
+<div>Was sind hier die Gründe? Wir möchte von einem False / Positive ausgehen, allerdings sind wir uns hier nicht sicher. Sie können uns sicherlich sagen, was dazu führt.<br>
+</div>
+<div> </div>
+<div>Mit freundlichen Grüßen<br>
+</div>
+<div>
+<br><div>
+<table border="0"><tbody>
+<tr>
+<td colspan="2"><p>Leiter IT</p></td>
+<td><p> </p></td>
+<td><p>AixControl GmbH</p></td>
+</tr>
+<tr>
+<td colspan="2"><p><strong>Benjamin Eichel<br></strong></p></td>
+<td><p> </p></td>
+<td><p>Sonnenweg 13</p></td>
+</tr>
+<tr>
+<td colspan="2"> </td>
+<td><p> </p></td>
+<td><p>52070 Aachen, Germany</p></td>
+</tr>
+<tr><td colspan="4"><p> </p></td></tr>
+<tr>
+<td><p>Zentral:</p></td>
+<td><p>+49 241 510083 - 0</p></td>
+<td><p> </p></td>
+<td><p>Handelsregister: Aachen HRB 9024</p></td>
+</tr>
+<tr>
+<td><p>Direkt:</p></td>
+<td><p>+49 241 510083 - 23</p></td>
+<td><p> </p></td>
+<td><p>Geschäftsführer: Dr. Jochen von Bloh</p></td>
+</tr>
+<tr>
+<td><p>E-Mail:</p></td>
+<td><p><u><a href="mailto:it@aixcontrol.de" rel="nofollow noopener noreferrer nofollow noopener noreferrer">it@aixcontrol.de</a></u><br></p></td>
+<td><p> </p></td>
+<td><p><a href="https://fgfjbaj.r.af.d.sendibt2.com/tr/cl/7Jzmt-pC73MwZhrsOTz0AYvJEh011CjqtFSrvzHhoXzVeq3PW4Jc7bQfYUuohoyiQagvTu7lgFK1MCwtRdwVlm44jYCAEPNFsCEUsWSVRBN76h3aL63aLz0n9HOJaGaHxMzeTIWjmonOspL2BZZ7Tc-Q7RA50uNzUw5lQnlpjJ_eaKPuGwewmy1NfH6hg5pzAnsxRb3bCGdq_vWEAu3TQN7AY6Hej80paXI6YNrN5tSe5dl-BG-yQ-UqQf0TVFQxk5gMGHfFXsOq" rel="nofollow noreferrer noopener" title="https://fgfjbaj.r.af.d.sendibt2.com/tr/cl/7Jzmt-pC73MwZhrsOTz0AYvJEh011CjqtFSrvzHhoXzVeq3PW4Jc7bQfYUuohoyiQagvTu7lgFK1MCwtRdwVlm44jYCAEPNFsCEUsWSVRBN76h3aL63aLz0n9HOJaGaHxMzeTIWjmonOspL2BZZ7Tc-Q7RA50uNzUw5lQnlpjJ_eaKPuGwewmy1NfH6hg5pzAnsxRb3bCGdq_vWEAu3TQN7AY6Hej80paXI6YNrN5tSe5dl-BG-yQ-UqQf0TVFQxk5gMGHfFXsOq" target="_blank">https://www.aixcontrol.de</a><br></p></td>
+</tr>
+</tbody></table>
+<div> </div>
+</div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=50036
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.09.2024 11:17:09 +00:00
+UpdatedAt=13.09.2024 11:17:11 +00:00
+
+### ARTICLE01_SUBJECT
+Schadsoftware in etherCAT erkannt
+
+### ARTICLE01_BODY
+Hallo Herr Eichel,<div><br></div><div>ich denke es handelt sich hier um einen False-Positive. Unser Setup ist ein Standard MSI ohne weitere Skripte o.ä. Wie heißt das ZIP genau? Dann lasse ich es wenn Sie möchten auch mal von unserem Virenscanner prüfen.</div><div><br></div><div>Mit freundlichen Grüßen</div><div>Martin Gänzer<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, September 13, 2024 at 10:50:14 AM, Benjamin Eichel wrote:<br><br><div>
+<div>Sehr geehrte Damen und Herren,<br><br>wir wollten uns hier mal ihre Software etherCAT ansehen. Dabei fiel uns auf, dass der Virenscanner VBA32 die ZIP von EC-Engineer als Schadsoftware detektiert.<br>
+</div>
+<div> </div>
+<div><img src="/api/v1/ticket_attachment/8872/50036/207569?view=inline" style="max-width:100%;max-width:100%;"></div>
+<div> </div>
+<div>Was sind hier die Gründe? Wir möchte von einem False / Positive ausgehen, allerdings sind wir uns hier nicht sicher. Sie können uns sicherlich sagen, was dazu führt.<br>
+</div>
+<div> </div>
+<div>Mit freundlichen Grüßen<br>
+</div>
+<div>
+<br><div>
+<table border="0"><tbody>
+<tr>
+<td colspan="2"><p>Leiter IT</p></td>
+<td><p> </p></td>
+<td><p>AixControl GmbH</p></td>
+</tr>
+<tr>
+<td colspan="2"><p><strong>Benjamin Eichel<br></strong></p></td>
+<td><p> </p></td>
+<td><p>Sonnenweg 13</p></td>
+</tr>
+<tr>
+<td colspan="2"> </td>
+<td><p> </p></td>
+<td><p>52070 Aachen, Germany</p></td>
+</tr>
+<tr><td colspan="4"><p> </p></td></tr>
+<tr>
+<td><p>Zentral:</p></td>
+<td><p>+49 241 510083 - 0</p></td>
+<td><p> </p></td>
+<td><p>Handelsregister: Aachen HRB 9024</p></td>
+</tr>
+<tr>
+<td><p>Direkt:</p></td>
+<td><p>+49 241 510083 - 23</p></td>
+<td><p> </p></td>
+<td><p>Geschäftsführer: Dr. Jochen von Bloh</p></td>
+</tr>
+<tr>
+<td><p>E-Mail:</p></td>
+<td><p><u><a href="mailto:it@aixcontrol.de" rel="nofollow noopener noreferrer nofollow noopener noreferrer">it@aixcontrol.de</a></u><br></p></td>
+<td><p> </p></td>
+<td><p><a href="https://fgfjbaj.r.af.d.sendibt2.com/tr/cl/7Jzmt-pC73MwZhrsOTz0AYvJEh011CjqtFSrvzHhoXzVeq3PW4Jc7bQfYUuohoyiQagvTu7lgFK1MCwtRdwVlm44jYCAEPNFsCEUsWSVRBN76h3aL63aLz0n9HOJaGaHxMzeTIWjmonOspL2BZZ7Tc-Q7RA50uNzUw5lQnlpjJ_eaKPuGwewmy1NfH6hg5pzAnsxRb3bCGdq_vWEAu3TQN7AY6Hej80paXI6YNrN5tSe5dl-BG-yQ-UqQf0TVFQxk5gMGHfFXsOq" rel="nofollow noreferrer noopener" title="https://fgfjbaj.r.af.d.sendibt2.com/tr/cl/7Jzmt-pC73MwZhrsOTz0AYvJEh011CjqtFSrvzHhoXzVeq3PW4Jc7bQfYUuohoyiQagvTu7lgFK1MCwtRdwVlm44jYCAEPNFsCEUsWSVRBN76h3aL63aLz0n9HOJaGaHxMzeTIWjmonOspL2BZZ7Tc-Q7RA50uNzUw5lQnlpjJ_eaKPuGwewmy1NfH6hg5pzAnsxRb3bCGdq_vWEAu3TQN7AY6Hej80paXI6YNrN5tSe5dl-BG-yQ-UqQf0TVFQxk5gMGHfFXsOq" target="_blank">https://www.aixcontrol.de</a><br></p></td>
+</tr>
+</tbody></table>
+<div> </div>
+</div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

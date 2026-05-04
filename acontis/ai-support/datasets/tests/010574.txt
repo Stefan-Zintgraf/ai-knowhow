@@ -1,0 +1,138 @@
+### HEADER
+Id=10574
+Link=http://at-zammad/#ticket/zoom/10574
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Rokae, LIRA (Lithotek) (ID=70, Number=70)
+Number=7010574
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=15.05.2025 06:31:22 +00:00
+UpdatedAt=22.05.2025 07:15:54 +00:00
+CloseAt=22.05.2025 07:15:54 +00:00
+ArticlesCount=3
+
+### TITLE
+The customer Rokae's issue: the emllDW3504 not support RMII on RK3588
+
+### ARTICLE00_HEADER
+Id=60641
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.05.2025 06:31:22 +00:00
+UpdatedAt=15.05.2025 06:31:24 +00:00
+
+### ARTICLE00_SUBJECT
+The customer Rokae's issue: the emllDW3504 not support RMII on RK3588
+
+### ARTICLE00_BODY
+<div>Dear,</div><div> </div><div>The customer Rokae is testing an embedded board provided by their supplier, and the PHY mode is RMII.</div><div>When the EcMaster uses this gmac, the driver will promt "InitRockchip() onlu RGMII supported".</div><div>So the customer want to you if you can add RMII support for Rockchip.</div><div><img src="/api/v1/ticket_attachment/10574/60641/252367?view=inline" border="0" style="max-width:100%;"></div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+<div>
+<p>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</p>
+<p>北京市海淀区上地三街9号C座C309</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div>+886-2-25222206（台北）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=60674
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.05.2025 07:08:13 +00:00
+UpdatedAt=16.05.2025 07:08:14 +00:00
+
+### ARTICLE01_SUBJECT
+The customer Rokae's issue: the emllDW3504 not support RMII on RK3588
+
+### ARTICLE01_BODY
+<div>
+<div>Hi Lishan,</div>
+<div>I've added some Linux code around</div>
+<div><div><a href="https://elixir.bootlin.com/linux/v6.6.83/source/drivers/net/ethernet/stmicro/stmmac/dwmac-rk.c#L1191" title="https://elixir.bootlin.com/linux/v6.6.83/source/drivers/net/ethernet/stmicro/stmmac/dwmac-rk.c#L1191" rel="nofollow noreferrer noopener" target="_blank">https://elixir.bootlin.com/linux/v6.6.83/source/drivers/net/ethernet/stmicro/stmmac/dwmac-rk.c#L1191</a></div></div>
+<div><br></div>
+<div>Unfortunately I can't test it. So there is still a change that is doesn't work.</div>
+<div><a href="http://downloads.acontis.com/temp/dsd/2025/Rokae/EC-Master-V3.2.3.99_20250516-Linux-ARM_64Bit-Eval.tar.gz" title="http://downloads.acontis.com/temp/dsd/2025/Rokae/EC-Master-V3.2.3.99_20250516-Linux-ARM_64Bit-Eval.tar.gz" rel="nofollow noreferrer noopener" target="_blank">http://downloads.acontis.com/temp/dsd/2025/Rokae/EC-Master-V3.2.3.99_20250516-Linux-ARM_64Bit-Eval.tar.gz</a></div>
+</div><br>Best Regards<div>Daniel<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=60870
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.05.2025 06:00:54 +00:00
+UpdatedAt=22.05.2025 06:00:54 +00:00
+
+### ARTICLE02_SUBJECT
+Re: RE: The customer Rokae's issue: the emllDW3504 not support RMII on RK3588 [Ticket#7010574]
+
+### ARTICLE02_BODY
+<div>Hi Daniel,</div><div> </div><div>The customer decided not to use RMII and continued to use RGMII, so they did not conduct any testing.</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>ec_support@motrotech.com</div><blockquote>
+<div> </div>
+<div>
+<span class="js-signatureMarker"></span><div>
+<b>From:</b> <a href="mailto:ecsupport@acontis.com">Daniel Schmid via EC-Support</a>
+</div>
+<div>
+<b>Date:</b> 2025-05-16 15:08</div>
+<div>
+<b>To:</b> <a href="mailto:ec_support@motrotech.com">ec_support</a>
+</div>
+<div>
+<b>Subject:</b> RE: The customer Rokae's issue: the emllDW3504 not support RMII on RK3588 [Ticket#7010574]</div>
+</div>
+<div> <div>
+<div>Hi Lishan,</div>
+<div>I've added some Linux code around</div>
+<div><a href="https://elixir.bootlin.com/linux/v6.6.83/source/drivers/net/ethernet/stmicro/stmmac/dwmac-rk.c#L1191" title="https://elixir.bootlin.com/linux/v6.6.83/source/drivers/net/ethernet/stmicro/stmmac/dwmac-rk.c#L1191" rel="nofollow noreferrer noopener" target="_blank">https://elixir.bootlin.com/linux/v6.6.83/source/drivers/net/ethernet/stmicro/stmmac/dwmac-rk.c#L1191</a></div>
+<div> </div>
+<div>Unfortunately I can't test it. So there is still a change that is doesn't work.</div>
+<div><a href="http://downloads.acontis.com/temp/dsd/2025/Rokae/EC-Master-V3.2.3.99_20250516-Linux-ARM_64Bit-Eval.tar.gz" title="http://downloads.acontis.com/temp/dsd/2025/Rokae/EC-Master-V3.2.3.99_20250516-Linux-ARM_64Bit-Eval.tar.gz" rel="nofollow noreferrer noopener" target="_blank">http://downloads.acontis.com/temp/dsd/2025/Rokae/EC-Master-V3.2.3.99_20250516-Linux-ARM_64Bit-Eval.tar.gz</a></div>
+</div>
+<br>Best Regards<div>Daniel<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+</div>
+</div>
+</blockquote>

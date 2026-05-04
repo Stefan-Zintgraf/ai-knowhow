@@ -1,0 +1,139 @@
+### HEADER
+Id=11815
+Link=http://at-zammad/#ticket/zoom/11815
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=INSTRON GmbH (ID=116, Number=54010, Country=DE)
+Commission=none
+Number=7011815
+Owner=1
+Customer=steve_squires@instron.com (ID=970, FirstName=Steve, LastName=Squires)
+CreatedBy=steve_squires@instron.com (ID=970, FirstName=Steve, LastName=Squires)
+Type=
+TimeUnit=
+CreatedAt=08.11.2025 15:06:53 +00:00
+UpdatedAt=10.11.2025 07:50:00 +00:00
+CloseAt=10.11.2025 07:50:00 +00:00
+ArticlesCount=1
+
+### TITLE
+RE: Angebot: Wartung für Kommission 45005 Prüfstandautomatisierung
+
+### ARTICLE00_HEADER
+Id=68249
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.11.2025 15:06:53 +00:00
+UpdatedAt=08.11.2025 15:06:56 +00:00
+
+### ARTICLE00_SUBJECT
+RE: Angebot: Wartung für Kommission 45005 Prüfstandautomatisierung
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Isabell (CC support),</p>
+<p> </p>
+<p>I’m trying to tidy everything up on the Instron side in preparation for our license renewal with Acontis (your offer attached). I think I have spotted some loose-ends – hence this email.</p>
+<p> </p>
+<p>My goal is to ensure that Instron:</p>
+<ol start="1" type="a">
+<li> Has everything that we need to build and support our Acontis/EC-Master based products </li>
+<li> Is properly licensed </li>
+<li> Receives timely product updates </li>
+<li> Receives good technical support (very good so far) </li>
+<li> and Acontis contact details are up to date </li>
+</ol>
+<p> </p>
+<p>FYI, below are the product and contact details of the teams. Please kindly update your records as required.</p>
+<p>(please remove Emily Torode from your contact list and include Clare Brosh instead)</p>
+<p> </p>
+<ul type="disc">
+<li>Instron IST:</li>
+<ul type="circle">
+<li>EC-Master for PPC and x86 32-bit targets on VxWorks 7</li>
+<li>high-performance emllETSEC and emllIntelGbe network support</li>
+<li>project managed in Darmstadt by Timo Sandkühler</li>
+<li>technically managed by Burkhard Bertemes and Andrew Moulden</li>
+<li>procurement: Dieter Hermann</li>
+</ul>
+</ul>
+<p> </p>
+<ul type="disc">
+<li>Instron Dynamic Systems:</li>
+<ul type="circle">
+<li>EC-Master for x86 32-bit target on VxWorks 7 (our product with PPC for VxWorks 6.9 is still shipping but firmware is mature and no longer built)</li>
+<li>high-performance emllIntelGbe network support</li>
+<li>project managed in High Wycombe by Clare Brosh</li>
+<li>technically managed by Steve Squires and Carl Parker</li>
+<li>procurement: Jennifer Shaikh</li>
+</ul>
+</ul>
+<p> </p>
+<p>Both teams also build a test version of our firmware in Visual Studio that runs on Windows. This is to facilitate unit-testing of our code only – this is not a product that we sell.</p>
+<p> </p>
+<p>My understanding is that there is an agreement in place where Plexus (our contract electronics manufacturer) purchase the run-time license for each product using EC-Master that they build for Instron.</p>
+<p> </p>
+<p>Observations (loose-ends):</p>
+<ul type="disc">
+<li>I note that we do not receive the source code for EC_Master for x86 32-bit on VxWorks70. We are currently working-around this by using the source code from PPC 32-bit EC-Master. Because it ‘build and works’, I presume the source is identical. Nevertheless, please ensure that EC-Master for x86 32-bit source code is included in the maintenance deliverables.</li>
+<li>I note that we do not receive the high-performance emllIntelGbe for x86. Please ensure that this is included in the deliverables.</li>
+<li>I note that we do not receive the Windows source/drivers – this may be an informal arrangement as this is only used internally and is not sold. Nevertheless, please ensure that the Windows x86 source/libraries (for internal testing purposes only) is included in the deliverables.</li>
+</ul>
+<p> </p>
+<p>To summarise, I think we need ongoing maintenance for:</p>
+<ul type="disc">
+<li>High-performance EC-Master source code for PPC (NXP 8548) platforms running VxWorks 7 (runtime licenses purchased as required by Plexus)</li>
+<li>High-performance EC-Master source code for Intel x86 platforms for VxWorks 7 (runtime licenses purchased as required by Plexus)</li>
+<li>High-performance network drivers: emllETSEC and emllIntelGbe</li>
+<li>EC-Master source code/libraries Windows x86 platforms to facilitate our unit testing (not to be sold)</li>
+<li>4 dongle-protected EC-Engineer licenses (two on each site)</li>
+<li>1 Simulator license.</li>
+<li>OEM-license for EC-Engineer (for IST).</li>
+</ul>
+<p> </p>
+<p>Isabell, please kindly review and confirm this list is part of the annual agreement – I will then ensure the PO is raised.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Steve</p>
+<p> </p>
+<p><span lang="EN-US" style="color:#d31145;">Steve Squires</span></p>
+<p><span lang="EN-US" style="color:#797979;">Technical Director – Dynamic Systems</span></p>
+<p><span lang="EN-US" style="color:#d31145;">tel</span><span lang="EN-US" style="color:gray;"> +44 (0)1494 456690</span><b><span lang="EN-US" style="color:#548dd4;">
+</span></b><span lang="EN-US" style="color:#548dd4;">|</span><span lang="EN-US" style="color:#717073;">
+</span><span lang="EN-US" style="color:#d31145;">mobile</span><span lang="EN-US" style="color:gray;"> +44 (0)7880 187290</span></p>
+<p><span lang="EN-US" style="color:gray;"> </span></p>
+<p><span style="color:gray;"><img style="max-width:100%;width:1.3333in;max-height:.2395in;" src="/api/v1/ticket_attachment/11815/68249/285724?view=inline"></span><span lang="EN-US" style="color:gray;"></span></p>
+<p><span lang="EN-US" style="color:gray;">In</span></p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b><span lang="EN-US">From:</span></b><span lang="EN-US"> acontis technologies &lt;sales@acontis.com&gt; <br>
+<b>Sent:</b> 11 September 2025 14:03<br>
+<b>To:</b> Bertemes, Burkhard &lt;burkhard_bertemes@instron.com&gt;<br>
+<b>Cc:</b> Squires, Steve &lt;Steve_Squires@instron.com&gt;; Moulden, Andrew &lt;Andrew_Moulden@instron.com&gt;<br>
+<b>Subject:</b> Angebot: Wartung für Kommission 45005 Prüfstandautomatisierung</span></p>
+</div>
+</div>
+<p> </p>
+<table border="1" cellpadding="0" style="background:#ffeb9c;border:solid #9c6500 1.0pt;">
+<tbody>
+<tr>
+<td style="border:none;padding:2.0pt 2.0pt 2.0pt 2.0pt;">
+<p><strong><span style="color:#9c6500;">CAUTION:</span></strong> This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br><br>Good day,<br>
+<br> We would like to inform you that the maintenance period for your licensed software expires on 31 Dec 2025.<br>
+<br> To continue benefiting from comprehensive support and the latest versions, we recommend that you take advantage of the renewal Offer attached.<br>
+<br> We look forward to receiving your order.<br>
+<br> Best regards,<br> Isabell Dreher<br> order processor &amp; maintenance administrator<br> Phone: +49 751 560 30 52<br>
+<br> acontis technologies GmbH | Franz-Beer-Str. 98 | 88250 Weingarten <br> Handelsregister Ulm HRB 552320 | VAT-ID: DE813265916<br> Managing Director: Christoph Widmann &amp; Stefan Zintgraf<br>
+<br> Subscribe to our newsletter and stay updated on the latest developments and upcoming events <br>
+<a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+<br>
+</p>
+</div>

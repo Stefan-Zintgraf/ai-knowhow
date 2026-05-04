@@ -1,0 +1,170 @@
+### HEADER
+Id=2548
+Link=http://at-zammad/#ticket/zoom/2548
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Sophion (ID=428, Number=0, Country=DK)
+Commission=Sophion,  QPatch Compact (ID=536, Number=536)
+Number=702548
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=wjn@sophion.com (ID=250, FirstName=Wenxi, LastName=Jin)
+CreatedBy=wjn@sophion.com (ID=250, FirstName=Wenxi, LastName=Jin)
+Type=
+TimeUnit=
+CreatedAt=03.03.2022 08:08:37 +00:00
+UpdatedAt=26.04.2022 05:19:05 +00:00
+CloseAt=25.03.2022 07:08:23 +00:00
+ArticlesCount=2
+
+### TITLE
+DLL sign (strong name)
+
+### ARTICLE00_HEADER
+Id=13552
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.03.2022 08:08:37 +00:00
+UpdatedAt=03.03.2022 08:08:39 +00:00
+
+### ARTICLE00_SUBJECT
+DLL sign (strong name)
+
+### ARTICLE00_BODY
+<div>
+<p>Hi,</p>
+<p> </p>
+<p>Good morning. 😉</p>
+<p>I have a quick question regarding the signing of the DLLs. As you may see from the console output below, the DLLs like “emllI8254x.dll” and “EcMaster.dll” are not signed from Acontis.</p>
+<p>Is this desired or can I request a signed version of them?</p>
+<p> </p>
+<p>I am quite newbie on the signing part of DLLs and EXEs.</p>
+<p>So if I am asking some kind of naive question, please bear with me. And Thank you very much for that.</p>
+<p> </p>
+<p>Looking forward to your reply.</p>
+<p> </p>
+<p>// ***********************************************************</p>
+<p>PS C:\Users\wjn.SOPHION\wk\QPatch\sssw_iadapt\QPatchII&gt; sigcheck -a -u -e "C:\Users\wjn.SOPHION\wk\QPatch\sssw_main\Acontis\Bin\Windows\x86\emllI8254x.dll"</p>
+<p> </p>
+<p>Sigcheck v2.82 - File version and signature viewer</p>
+<p>Copyright (C) 2004-2021 Mark Russinovich</p>
+<p>Sysinternals - <a href="http://www.sysinternals.com" rel="nofollow noreferrer noopener" target="_blank"> www.sysinternals.com</a></p>
+<p> </p>
+<p>c:\users\wjn.sophion\wk\qpatch\sssw_main\acontis\bin\windows\x86\emllI8254x.dll:</p>
+<p>Verified: Unsigned</p>
+<p>Link date: 17:36 21-05-2021</p>
+<p>Publisher: n/a</p>
+<p>Company: acontis technologies GmbH</p>
+<p>Description: EC-Master Link Layer</p>
+<p>Product: EC-Master Link Layer</p>
+<p>Prod version: 3.1.1.07 (Unrestricted)</p>
+<p>File version: 3.1.1.07 (Unrestricted)</p>
+<p>MachineType: 32-bit</p>
+<p>Binary Version: 3.1.1.7</p>
+<p>Original Name: EC-Master Link Layer</p>
+<p>Internal Name: n/a</p>
+<p>Copyright: Copyright acontis technologies GmbH @ 2021</p>
+<p>Comments: n/a</p>
+<p>Entropy: 5.097</p>
+<p>// ***********************************************************</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Wenxi Jin</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:2.0833in;max-height:.9375in;width:200px;max-height:90px;" src="/api/v1/ticket_attachment/2548/13552/53977?view=inline" alt="SophionBioscience_logo"></p>
+<p> </p>
+<p>Office: +45 44 60 88 00 / Direct: +45 44 60 88 22 - <a href="http://www.sophion.com/" rel="nofollow noreferrer noopener" title="http://www.sophion.com/" target="_blank"><b>sophion.com</b></a><u><br>
+</u>Sophion Bioscience A/S, Baltorpvej 154, 2750 Ballerup, Denmark</p>
+<p><a href="https://sophion.com/products/qpatch-compact/" rel="nofollow noreferrer noopener" title="https://sophion.com/products/qpatch-compact/" target="_blank"><img border="0" style="max-width:100%;width:6.927in;max-height:2.9687in;width:665px;max-height:285px;" src="/api/v1/ticket_attachment/2548/13552/53978?view=inline"></a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=13567
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.03.2022 10:45:42 +00:00
+UpdatedAt=03.03.2022 10:45:44 +00:00
+
+### ARTICLE01_SUBJECT
+DLL sign (strong name)
+
+### ARTICLE01_BODY
+Hi Wenxi,<div><br></div><div>we don't sign our dll today.</div><div><br></div><div>You can link the static library SDK\Lib\Windows\<span>x86\EcMasterStaticVS2015.lib or buy the source code of the library and generate your own signed DLL.</span>
+</div><div><br></div><div>Best Regards,</div><div>
+<span>____________________________________________________________________________</span><br>
+</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, March 3, 2022, 9:08:37 AM, Wenxi Jin wrote:<br><br><div>
+<p>Hi,</p>
+<p> </p>
+<p>Good morning. 😉</p>
+<p>I have a quick question regarding the signing of the DLLs. As you may see from the console output below, the DLLs like “emllI8254x.dll” and “EcMaster.dll” are not signed from Acontis.</p>
+<p>Is this desired or can I request a signed version of them?</p>
+<p> </p>
+<p>I am quite newbie on the signing part of DLLs and EXEs.</p>
+<p>So if I am asking some kind of naive question, please bear with me. And Thank you very much for that.</p>
+<p> </p>
+<p>Looking forward to your reply.</p>
+<p> </p>
+<p>// ***********************************************************</p>
+<p>PS C:\Users\wjn.SOPHION\wk\QPatch\sssw_iadapt\QPatchII&gt; sigcheck -a -u -e "C:\Users\wjn.SOPHION\wk\QPatch\sssw_main\Acontis\Bin\Windows\x86\emllI8254x.dll"</p>
+<p> </p>
+<p>Sigcheck v2.82 - File version and signature viewer</p>
+<p>Copyright (C) 2004-2021 Mark Russinovich</p>
+<p>Sysinternals - <a href="http://www.sysinternals.com" rel="nofollow noreferrer noopener" target="_blank"> www.sysinternals.com</a></p>
+<p> </p>
+<p>c:\users\wjn.sophion\wk\qpatch\sssw_main\acontis\bin\windows\x86\emllI8254x.dll:</p>
+<p>Verified: Unsigned</p>
+<p>Link date: 17:36 21-05-2021</p>
+<p>Publisher: n/a</p>
+<p>Company: acontis technologies GmbH</p>
+<p>Description: EC-Master Link Layer</p>
+<p>Product: EC-Master Link Layer</p>
+<p>Prod version: 3.1.1.07 (Unrestricted)</p>
+<p>File version: 3.1.1.07 (Unrestricted)</p>
+<p>MachineType: 32-bit</p>
+<p>Binary Version: 3.1.1.7</p>
+<p>Original Name: EC-Master Link Layer</p>
+<p>Internal Name: n/a</p>
+<p>Copyright: Copyright acontis technologies GmbH @ 2021</p>
+<p>Comments: n/a</p>
+<p>Entropy: 5.097</p>
+<p>// ***********************************************************</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Wenxi Jin</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;max-width:100%;width:2.0833in;max-height:.9375in;width:200px;max-height:90px;" src="/api/v1/ticket_attachment/2548/13567/54015?view=inline" alt="SophionBioscience_logo"></p>
+<p> </p>
+<p>Office: +45 44 60 88 00 / Direct: +45 44 60 88 22 - <a href="http://www.sophion.com/" rel="nofollow noreferrer noopener" title="http://www.sophion.com/" target="_blank"><b>sophion.com</b></a><u><br>
+</u>Sophion Bioscience A/S, Baltorpvej 154, 2750 Ballerup, Denmark</p>
+<p><a href="https://sophion.com/products/qpatch-compact/" rel="nofollow noreferrer noopener" title="https://sophion.com/products/qpatch-compact/" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:6.927in;max-height:2.9687in;width:665px;max-height:285px;" src="/api/v1/ticket_attachment/2548/13567/54016?view=inline"></a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

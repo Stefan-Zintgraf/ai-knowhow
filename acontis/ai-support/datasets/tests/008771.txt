@@ -1,0 +1,217 @@
+### HEADER
+Id=8771
+Link=http://at-zammad/#ticket/zoom/8771
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Panasonic Industry SUNX, PLC (ID=288, Number=288)
+Number=708771
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=02.09.2024 01:11:22 +00:00
+UpdatedAt=09.09.2024 06:14:01 +00:00
+CloseAt=09.09.2024 06:14:01 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Engineer SDK(Panasonic Industry) [E037]
+
+### ARTICLE00_HEADER
+Id=49278
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.09.2024 01:11:22 +00:00
+UpdatedAt=02.09.2024 01:11:27 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Engineer SDK(Panasonic Industry) [E037]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support<br> <br> Question about EC-Engineer SDK(Panasonic Industry) [E037]<br> <br> Is there any solution to deactivate the items in the project tree?<br> I want to deactivate the items from 001:Module 1 to 004:Module 4 so that customer cannot click these items in diagnosis mode.<br> <img src="/api/v1/ticket_attachment/8771/49278/204295?view=inline" style="max-width:100%;"><br> <br> Best regards,<br> Takuya Fujikawa
+
+### ARTICLE01_HEADER
+Id=49299
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.09.2024 10:11:10 +00:00
+UpdatedAt=02.09.2024 10:11:10 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Engineer SDK(Panasonic Industry) [E037]
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>without changing code it not possible to hide those items.</div><div><br></div><div>You use EC-Engineer SDK View Layer 2? In that case you can search for "<span>MdpSlotViewModel.Create</span><span>" and modify the code as you want. If you need more details please tell me the SDK version which you use.</span>
+</div><div><span><br></span></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, September 2, 2024 at 3:11:22 AM, Takuya Fujikawa wrote:<br><br>Dear EtherCAT Support<br> <br> Question about EC-Engineer SDK(Panasonic Industry) [E037]<br> <br> Is there any solution to deactivate the items in the project tree?<br> I want to deactivate the items from 001:Module 1 to 004:Module 4 so that customer cannot click these items in diagnosis mode.<br> <img src="/api/v1/ticket_attachment/8771/49299/204365?view=inline" style="max-width:100%;max-width:100%;"><br> <br> Best regards,<br> Takuya Fujikawa<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=49426
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=04.09.2024 04:31:43 +00:00
+UpdatedAt=04.09.2024 04:31:43 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Engineer SDK(Panasonic Industry) [E037] [Ticket#708771]
+
+### ARTICLE02_BODY
+Dear Martin san
+
+We use the EC-Engineer SDK View Layer 2 and the version is 3.9.2.
+I've understood that the "MdpSlotViewModel.Create" creates the slot.
+Thank you for information.
+By the way, how to change the return value from  "EcGatewayMdp.GetLastUsedSlotIdx()"?
+Is the "EcGatewayMdp.SlotModulePairs"?
+
+Best regards,
+Takuya Fujikawa
+
+On 2024/09/02 19:11, Martin Gaenzer via EC-Support wrote:
+> Hi,
+>
+> without changing code it not possible to hide those items.
+>
+> You use EC-Engineer SDK View Layer 2? In that case you can search for "MdpSlotViewModel.Create" and modify the code as you want. If you need more details please tell me the SDK version which you use.
+>
+> Best Regards,
+> Martin
+> __________________________________________________________________________________________
+> Martin Gaenzer
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+>
+>
+>> On Monday, September 2, 2024 at 3:11:22 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Engineer SDK(Panasonic Industry) [E037]
+>>
+>> Is there any solution to deactivate the items in the project tree?
+>> I want to deactivate the items from 001:Module 1 to 004:Module 4 so that customer cannot click these items in diagnosis mode.
+>>
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>
+>
+>
+
+
+### ARTICLE03_HEADER
+Id=49448
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.09.2024 09:29:47 +00:00
+UpdatedAt=04.09.2024 09:30:35 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Engineer SDK(Panasonic Industry) [E037]
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>Maybe I do not understand your question. I try to explain how <span>"EcGatewayMdp.GetLastUsedSlotIdx()" works:</span>
+</div><div><span>It iterate over all slots, search for the first "empty" slot and returns this slot nr.</span></div><div><br></div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/8771/49448/205077?view=inline"><br>
+</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, September 4, 2024 at 6:31:43 AM, Takuya Fujikawa wrote:<br><br><div>Dear Martin san</div>
+<div><br></div>
+<div>We use the EC-Engineer SDK View Layer 2 and the version is 3.9.2.</div>
+<div>I've understood that the "MdpSlotViewModel.Create" creates the slot.</div>
+<div>Thank you for information.</div>
+<div>By the way, how to change the return value from  "EcGatewayMdp.GetLastUsedSlotIdx()"?</div>
+<div>Is the "EcGatewayMdp.SlotModulePairs"?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2024/09/02 19:11, Martin Gaenzer via EC-Support wrote:</div>
+<div>&gt; Hi,</div>
+<div>&gt;</div>
+<div>&gt; without changing code it not possible to hide those items.</div>
+<div>&gt;</div>
+<div>&gt; You use EC-Engineer SDK View Layer 2? In that case you can search for "MdpSlotViewModel.Create" and modify the code as you want. If you need more details please tell me the SDK version which you use.</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; Martin</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Martin Gaenzer</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Monday, September 2, 2024 at 3:11:22 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Engineer SDK(Panasonic Industry) [E037]</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Is there any solution to deactivate the items in the project tree?</div>
+<div>&gt;&gt; I want to deactivate the items from 001:Module 1 to 004:Module 4 so that customer cannot click these items in diagnosis mode.</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

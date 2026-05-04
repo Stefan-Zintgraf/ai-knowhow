@@ -1,0 +1,169 @@
+### HEADER
+Id=5813
+Link=http://at-zammad/#ticket/zoom/5813
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=eCential Robotics (ID=536, Number=0, Country=FR)
+Commission=eCential Robotics, Surgical assistance system (ID=218, Number=218)
+Number=705813
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=valentin.levesy@ecential-robotics.com (ID=1159, FirstName=Valentin, LastName=Levesy)
+CreatedBy=valentin.levesy@ecential-robotics.com (ID=1159, FirstName=Valentin, LastName=Levesy)
+Type=
+TimeUnit=
+CreatedAt=26.06.2023 02:00:09 +00:00
+UpdatedAt=30.06.2023 06:05:59 +00:00
+CloseAt=30.06.2023 06:05:59 +00:00
+ArticlesCount=3
+
+### TITLE
+Bug tracking or release notes of EC-Master latest versions
+
+### ARTICLE00_HEADER
+Id=31051
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.06.2023 02:00:09 +00:00
+UpdatedAt=26.06.2023 02:00:13 +00:00
+
+### ARTICLE00_SUBJECT
+Bug tracking or release notes of EC-Master latest versions
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,</p>
+<p> </p>
+<p><span lang="EN-GB">I am software developer at eCential Robotics, and for our medical robot we are using your EC-Master stack on QNX (EC-Master-I8254x at version 3.1.0.15).</span></p>
+<p><span lang="EN-GB">I contact you because for annual bug/issues monitoring, we would need some king of bug tracking on your side, listing issues that could have been discovered since our version was released, so that we can perform impact analysis.</span></p>
+<p><span lang="EN-GB">Would you have such a list ? It could also be release notes of further versions listing previous anomalies that were corrected, …</span></p>
+<p><span lang="EN-GB"><p> </p></span></p>
+<p><span lang="EN-GB">Thank you very much,</span></p>
+<p><span lang="EN-GB"><p> </p></span></p>
+<p><span lang="EN-GB">Best regards,</span></p>
+<p><span lang="EN-GB"><p> </p></span></p>
+<p> </p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td valign="top" style="padding:0cm 5.4pt 0cm 5.4pt;">
+<p><img style="max-width:100%;width:3.1562in;max-height:.9687in;width:303px;max-height:93px;" src="/api/v1/ticket_attachment/5813/31051/129529?view=inline"></p>
+</td>
+<td style="padding:0cm 5.4pt 0cm 5.4pt;">
+<p><b><span lang="EN-GB">Valentin LEVESY</span></b><span lang="EN-GB"></span></p>
+<p><i><span lang="EN-GB">Software Engineer</span></i><span lang="EN-GB"></span></p>
+<p><span lang="EN-GB"><a href="mailto:valentin.levesy@ecential-robotics.com">valentin.levesy@ecential-robotics.com</a>
+</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top" style="padding:0cm 5.4pt 0cm 5.4pt;">
+<p><b>eCential</b> Robotics - Zone Mayencin II – Parc Equation – Bâtiment 1 - 2 avenue de Vignate – 38610 Gières – France</p>
+<p><a href="http://www.ecential-robotics.com/" title="https://fra01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.ecential-robotics.com%2F&amp;data=04%7C01%7Cvalentin.levesy%40ecential-robotics.com%7C09d2606bd5fb4bdc0ecc08d91b86e483%7C257e153ed399493c8b942425235618be%7C0%7C0%7C637571088450044343%7CUnkno" rel="nofollow noreferrer noopener" target="_blank">www.ecential-robotics.com</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span lang="EN-GB"><p> </p></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=31053
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=26.06.2023 04:09:14 +00:00
+UpdatedAt=26.06.2023 07:30:34 +00:00
+
+### ARTICLE01_SUBJECT
+Recall: Bug tracking or release notes of EC-Master latest versions
+
+### ARTICLE01_BODY
+Valentin Levesy would like to recall the message, "Bug tracking or release notes of EC-Master latest versions".
+
+### ARTICLE02_HEADER
+Id=31065
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.06.2023 07:35:55 +00:00
+UpdatedAt=26.06.2023 07:35:58 +00:00
+
+### ARTICLE02_SUBJECT
+Bug tracking or release notes of EC-Master latest versions
+
+### ARTICLE02_BODY
+Hi Valentin,<div><br></div><div>you can check:</div><div>
+<div><a href="http://software.acontis.com/EC-Master/3.1/ReleaseNotes_V3.1.pdf" title="http://software.acontis.com/EC-Master/3.1/ReleaseNotes_V3.1.pdf" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/EC-Master/3.1/ReleaseNotes_V3.1.pdf</a></div>
+<div><br></div>
+<div>Best Regards,</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div data-signature="true" data-signature-id="2">
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, June 26, 2023 at 4:00:09 AM, Valentin Levesy wrote:<br><br><div>
+<p>Hello,</p>
+<p> </p>
+<p><span lang="EN-GB">I am software developer at eCential Robotics, and for our medical robot we are using your EC-Master stack on QNX (EC-Master-I8254x at version 3.1.0.15).</span></p>
+<p><span lang="EN-GB">I contact you because for annual bug/issues monitoring, we would need some king of bug tracking on your side, listing issues that could have been discovered since our version was released, so that we can perform impact analysis.</span></p>
+<p><span lang="EN-GB">Would you have such a list ? It could also be release notes of further versions listing previous anomalies that were corrected, …</span></p>
+<p><span lang="EN-GB"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-GB">Thank you very much,</span></p>
+<p><span lang="EN-GB"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-GB">Best regards,</span></p>
+<p><span lang="EN-GB"></span></p>
+<p> </p>
+<p></p>
+<p> </p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td valign="top" style="padding:0cm 5.4pt 0cm 5.4pt;">
+<p><img style="max-width:100%;max-width:100%;width:3.1562in;max-height:.9687in;width:303px;max-height:93px;" src="/api/v1/ticket_attachment/5813/31065/129563?view=inline"></p>
+</td>
+<td style="padding:0cm 5.4pt 0cm 5.4pt;">
+<p><b><span lang="EN-GB">Valentin LEVESY</span></b><span lang="EN-GB"></span></p>
+<p><i><span lang="EN-GB">Software Engineer</span></i><span lang="EN-GB"></span></p>
+<p><span lang="EN-GB"><a href="mailto:valentin.levesy@ecential-robotics.com">valentin.levesy@ecential-robotics.com</a>
+</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top" style="padding:0cm 5.4pt 0cm 5.4pt;">
+<p><b>eCential</b> Robotics - Zone Mayencin II – Parc Equation – Bâtiment 1 - 2 avenue de Vignate – 38610 Gières – France</p>
+<p><a href="http://www.ecential-robotics.com/" title="https://fra01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.ecential-robotics.com%2F&amp;data=04%7C01%7Cvalentin.levesy%40ecential-robotics.com%7C09d2606bd5fb4bdc0ecc08d91b86e483%7C257e153ed399493c8b942425235618be%7C0%7C0%7C637571088450044343%7CUnkno" rel="nofollow noreferrer noopener" target="_blank">www.ecential-robotics.com</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span lang="EN-GB"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

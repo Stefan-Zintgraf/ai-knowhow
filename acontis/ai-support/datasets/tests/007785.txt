@@ -1,0 +1,145 @@
+### HEADER
+Id=7785
+Link=http://at-zammad/#ticket/zoom/7785
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=First Automation, GRANi motion controller (ID=934, Number=934)
+Number=707785
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=03.04.2024 08:32:38 +00:00
+UpdatedAt=17.07.2024 08:01:23 +00:00
+CloseAt=12.04.2024 06:50:25 +00:00
+ArticlesCount=2
+
+### TITLE
+The potential customer Botai requirement about RZ/G2M
+
+### ARTICLE00_HEADER
+Id=42967
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.04.2024 08:32:38 +00:00
+UpdatedAt=03.04.2024 08:32:42 +00:00
+
+### ARTICLE00_SUBJECT
+The potential customer Botai requirement about RZ/G2M
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>
+<p>Dear,</p>
+</div>
+<div>Recently, We connected a potential Botai, they want to using EcMaster in renesas RZ/G2M.</div>
+<div>Dose the CPU support it in EcMaster, Do you think this CPU could be protected ?</div>
+<div><span>
+<br></span></div>
+<div><span>
+<br></span></div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=42976
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.04.2024 12:31:18 +00:00
+UpdatedAt=03.04.2024 12:31:20 +00:00
+
+### ARTICLE01_SUBJECT
+The potential customer Botai requirement about RZ/G2M
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>we don't support <span>RZ/G2 today out of the box. </span><span style="color: rgba(0, 0, 0, 0.87);">It looks similar to the network adapter on RZ/G1. The MAC address is a parameter of the linklayer and is not usable for licensing.</span>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, April 3, 2024 at 10:32:38 AM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>
+<p>Dear,</p>
+</div>
+<div>Recently, We connected a potential Botai, they want to using EcMaster in renesas RZ/G2M.</div>
+<div>Dose the CPU support it in EcMaster, Do you think this CPU could be protected ?</div>
+<div><span>
+<br></span></div>
+<div><span>
+<br></span></div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

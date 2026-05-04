@@ -1,0 +1,144 @@
+### HEADER
+Id=619
+Link=http://at-zammad/#ticket/zoom/619
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=KUKA Deutschland GmbH (ID=132, Number=55001, Country=DE)
+Commission=KUKA, KRC5 Linux (ID=150, Number=150)
+Number=700619
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=florian.graetz@kuka.com (ID=177, FirstName=Florian, LastName=Grätz)
+CreatedBy=florian.graetz@kuka.com (ID=177, FirstName=Florian, LastName=Grätz)
+Type=
+TimeUnit=
+CreatedAt=20.05.2021 12:25:39 +00:00
+UpdatedAt=28.05.2021 06:10:35 +00:00
+CloseAt=28.05.2021 06:10:35 +00:00
+ArticlesCount=2
+
+### TITLE
+Anfrage Sourcen für EtherCAT Remote API Linux 64-Bit
+
+### ARTICLE00_HEADER
+Id=3444
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.05.2021 12:25:39 +00:00
+UpdatedAt=20.05.2021 12:25:39 +00:00
+
+### ARTICLE00_SUBJECT
+Anfrage Sourcen für EtherCAT Remote API Linux 64-Bit
+
+### ARTICLE00_BODY
+<div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>können Sie mir für die Sourcen des Remote APIs unter Linux 64-Bit bitte ein Angebot erstelln?</p>
+<p> </p>
+<p>Vielen herzlichen Dank für Ihre Bemühungen im Voraus!</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Kind regards</p>
+<p> </p>
+<p><b>i. A. Florian Grätz </b></p>
+<p>Dr.-Ing.</p>
+<p>Product Owner</p>
+<p>Research and Development</p>
+<p> </p>
+<p><b>KUKA Deutschland GmbH </b>Zugspitzstraße 140, 86165 Augsburg / Germany www.kuka.com<br>Florian.Graetz@kuka.com T +49 821 797‑4025 F +49 821 797‑414025</p>
+<p> </p>
+<p><b>Geschäftsführung / Board of Directors: </b>Klaus König (Vorsitzender), Michael Albert, Michael Otto</p>
+<p><b>Sitz und Registergericht / Registered Office:</b> Augsburg HRB 14914</p>
+<p> </p>
+<p><b>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen enthalten. Wenn Sie nicht der richtige Adressat sind oder diese E-Mail irrtümlich erhalten haben, informieren Sie bitte sofort den Absender und vernichten Sie diese Mail. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail ist nicht gestattet.</b></p>
+<p>This e-mail may contain confidential and/or privileged information. If you are not the intended recipient (or have received this e-mail in error) please notify the sender immediately and destroy this e-mail. Any unauthorized copying, disclosure or distribution of contents of this e-mail is strictly forbidden.</p>
+<p> </p>
+<p><b>Please consider the environment before printing this e-mail.</b></p>
+<p> </p>
+<br><p>Internal</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=3457
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.05.2021 14:44:08 +00:00
+UpdatedAt=20.05.2021 14:44:10 +00:00
+
+### ARTICLE01_SUBJECT
+Anfrage Sourcen für EtherCAT Remote API Linux 64-Bit
+
+### ARTICLE01_BODY
+Hallo Herr Grätz,<div>die Sourcen für den RAS-Server sind schon im EC-Master Paket enthalten. Aufgrund eines Paketierungsfehlers fehlen sie aber in dem Paket das Sie bekommen haben.</div><div> </div><div>Hier die Sourcen als separates Paket:</div><div>
+<div><a href="https://downloads.acontis.com/2021/J-L/KUKA_Roboter_GmbH_%2840307%29%28DE%29/EC-Master_Linux/3.1.1.02/EC-Master-RAS-Server-V3.1.1.02-Linux-x86_32Bit-SDK_Source.tar.gz" title="https://downloads.acontis.com/2021/J-L/KUKA_Roboter_GmbH_%2840307%29%28DE%29/EC-Master_Linux/3.1.1.02/EC-Master-RAS-Server-V3.1.1.02-Linux-x86_32Bit-SDK_Source.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/J-L/KUKA_Roboter_GmbH_%2840307%29%28DE%29/EC-Master_Linux/3.1.1.02/EC-Master-RAS-Server-V3.1.1.02-Linux-x86_32Bit-SDK_Source.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2021/J-L/KUKA_Roboter_GmbH_%2840307%29%28DE%29/EC-Master_Linux/3.1.1.02/EC-Master-RAS-Server-V3.1.1.02-Linux-x86_64Bit-SDK_Source.tar.gz" title="https://downloads.acontis.com/2021/J-L/KUKA_Roboter_GmbH_%2840307%29%28DE%29/EC-Master_Linux/3.1.1.02/EC-Master-RAS-Server-V3.1.1.02-Linux-x86_64Bit-SDK_Source.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/J-L/KUKA_Roboter_GmbH_%2840307%29%28DE%29/EC-Master_Linux/3.1.1.02/EC-Master-RAS-Server-V3.1.1.02-Linux-x86_64Bit-SDK_Source.tar.gz</a></div>
+<div data-signature="true" data-signature-id="2">
+<div><span></span></div>
+<div><span><br></span></div>
+<div>
+<span>Mit freundlichen Grüßen,</span>
+</div>
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Holger Oelhaf </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Donnerstag, 20. Mai 2021, 14:25:39, schrieb Florian Grätz:<br><br><div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>können Sie mir für die Sourcen des Remote APIs unter Linux 64-Bit bitte ein Angebot erstelln?</p>
+<p> </p>
+<p>Vielen herzlichen Dank für Ihre Bemühungen im Voraus!</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Kind regards</p>
+<p> </p>
+<p><b>i. A. Florian Grätz </b></p>
+<p>Dr.-Ing.</p>
+<p>Product Owner</p>
+<p>Research and Development</p>
+<p> </p>
+<p><b>KUKA Deutschland GmbH </b>Zugspitzstraße 140, 86165 Augsburg / Germany www.kuka.com<br>Florian.Graetz@kuka.com T +49 821 797‑4025 F +49 821 797‑414025</p>
+<p> </p>
+<p><b>Geschäftsführung / Board of Directors: </b>Klaus König (Vorsitzender), Michael Albert, Michael Otto</p>
+<p><b>Sitz und Registergericht / Registered Office:</b> Augsburg HRB 14914</p>
+<p> </p>
+<p><b>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen enthalten. Wenn Sie nicht der richtige Adressat sind oder diese E-Mail irrtümlich erhalten haben, informieren Sie bitte sofort den Absender und vernichten Sie diese Mail. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail ist nicht gestattet.</b></p>
+<p>This e-mail may contain confidential and/or privileged information. If you are not the intended recipient (or have received this e-mail in error) please notify the sender immediately and destroy this e-mail. Any unauthorized copying, disclosure or distribution of contents of this e-mail is strictly forbidden.</p>
+<p> </p>
+<p><b>Please consider the environment before printing this e-mail.</b></p>
+<p> </p>
+<br><p>Internal</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

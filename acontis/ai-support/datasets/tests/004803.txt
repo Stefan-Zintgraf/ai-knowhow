@@ -1,0 +1,216 @@
+### HEADER
+Id=4803
+Link=http://at-zammad/#ticket/zoom/4803
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Siemens Corporation (ID=663, Number=0, Country=US)
+Commission=Siemens Corporation, Internal Tests and Investigations (ID=743, Number=743)
+Number=704803
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=tao.cui@siemens.com (ID=1103, FirstName=Tao, LastName=Cui)
+CreatedBy=tao.cui@siemens.com (ID=1103, FirstName=Tao, LastName=Cui)
+Type=
+TimeUnit=
+CreatedAt=27.01.2023 15:27:34 +00:00
+UpdatedAt=06.02.2023 11:01:31 +00:00
+CloseAt=06.02.2023 11:01:31 +00:00
+ArticlesCount=4
+
+### TITLE
+OsCreateThread failed
+
+### ARTICLE00_HEADER
+Id=25386
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.01.2023 15:27:34 +00:00
+UpdatedAt=27.01.2023 15:27:34 +00:00
+
+### ARTICLE00_SUBJECT
+OsCreateThread failed
+
+### ARTICLE00_BODY
+<div>
+<p>Dear EC Support,</p>
+<p> </p>
+<p>We recently encountered another problem with EC Master stack, see below:</p>
+<p> </p>
+<p>Whenever we call OsCreateThread, the encountered pthread_create error 22.</p>
+<p> </p>
+<p><img style="max-width:100%;width:13.0583in;max-height:4.95in;width:1254px;max-height:475px;" src="/api/v1/ticket_attachment/4803/25386/107341?view=inline"></p>
+<p> </p>
+<p>Do you know what might be the cause, and what do you suggest we should try to debug this error?</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Tao</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=25387
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.01.2023 15:31:59 +00:00
+UpdatedAt=27.01.2023 15:32:01 +00:00
+
+### ARTICLE01_SUBJECT
+OsCreateThread failed
+
+### ARTICLE01_BODY
+Hi Tao,<div><br></div><div>do you call OsCreateThread from your own application?</div><div><br></div><div>Please double check the parameters. You can compare against our EcMasterDemo calling OsCreateThread too. We don't know about any issue in this area until today...</div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, January 27, 2023 at 4:27:34 PM, Tao Cui wrote:<br><br><div>
+<p>Dear EC Support,</p>
+<p> </p>
+<p>We recently encountered another problem with EC Master stack, see below:</p>
+<p> </p>
+<p>Whenever we call OsCreateThread, the encountered pthread_create error 22.</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:13.0583in;max-height:4.95in;width:1254px;max-height:475px;" src="/api/v1/ticket_attachment/4803/25387/107342?view=inline"></p>
+<p> </p>
+<p>Do you know what might be the cause, and what do you suggest we should try to debug this error?</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Tao</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=25654
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.02.2023 12:47:25 +00:00
+UpdatedAt=03.02.2023 12:47:25 +00:00
+
+### ARTICLE02_SUBJECT
+RE: OsCreateThread failed [Ticket#704803]
+
+### ARTICLE02_BODY
+<div>
+<p>We are running EC Master Demo. We found the cause for this is our other part of the software changed the pthread minimum stack size… we are looking for resolve this from our side, I think we can close this ticket from your side for now.</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Friday, January 27, 2023 10:32 AM<br>
+<b>To:</b> Cui, Tao (T FOA ART-US) &lt;tao.cui@siemens.com&gt;<br>
+<b>Cc:</b> Philip, Paul (T FOA ART-US) &lt;paul.philip@siemens.com&gt;; j.waters@acontis.com<br>
+<b>Subject:</b> RE: OsCreateThread failed [Ticket#704803]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Tao,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>do you call OsCreateThread from your own application?</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Please double check the parameters. You can compare against our EcMasterDemo calling OsCreateThread too. We don't know about any issue in this area until today...</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Cyril Eyssautier</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.acontis.com%2F&amp;data=05%7C01%7Ctao.cui%40siemens.com%7C55814e8ca7e145db0f2108db007ba3b8%7C38ae3bcd95794fd4addab42e1495d55a%7C1%7C0%7C638104303653666242%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000%7C%7C%7C&amp;sdata=t%2BcLq0g9iJ%2FhzPAy3%2FKyQMYjHpRwPG%2B0n3JFPUUDADc%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.acontis.com%2F&amp;data=05%7C01%7Ctao.cui%40siemens.com%7C55814e8ca7e145db0f2108db007ba3b8%7C38ae3bcd95794fd4addab42e1495d55a%7C1%7C0%7C638104303653666242%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000%7C%7C%7C&amp;sdata=t%2BcLq0g9iJ%2FhzPAy3%2FKyQMYjHpRwPG%2B0n3JFPUUDADc%3D&amp;reserved=0" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.acontis.com%2Fen%2Fnewsletter.html&amp;data=05%7C01%7Ctao.cui%40siemens.com%7C55814e8ca7e145db0f2108db007ba3b8%7C38ae3bcd95794fd4addab42e1495d55a%7C1%7C0%7C638104303653666242%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000%7C%7C%7C&amp;sdata=VJweMIFSXkdDJ65Wk1OtU2WkJH4%2FCtWgTm%2B0oAEbtNY%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.acontis.com%2Fen%2Fnewsletter.html&amp;data=05%7C01%7Ctao.cui%40siemens.com%7C55814e8ca7e145db0f2108db007ba3b8%7C38ae3bcd95794fd4addab42e1495d55a%7C1%7C0%7C638104303653666242%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000%7C%7C%7C&amp;sdata=VJweMIFSXkdDJ65Wk1OtU2WkJH4%2FCtWgTm%2B0oAEbtNY%3D&amp;reserved=0" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Friday, January 27, 2023 at 4:27:34 PM, Tao Cui wrote:</p>
+<div>
+<p>Dear EC Support,</p>
+<p> </p>
+<p>We recently encountered another problem with EC Master stack, see below:</p>
+<p> </p>
+<p>Whenever we call OsCreateThread, the encountered pthread_create error 22.</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:16.3229in;max-height:6.1875in;width:1567px;max-height:594px;" src="/api/v1/ticket_attachment/4803/25654/108261?view=inline"></p>
+<p> </p>
+<p>Do you know what might be the cause, and what do you suggest we should try to debug this error?</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Tao</p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=25664
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=03.02.2023 15:14:15 +00:00
+UpdatedAt=03.02.2023 15:14:15 +00:00
+
+### ARTICLE03_BODY
+Hi Cyril,<div><br></div><div>FYI This guy Tao is from the main Siemens organization, not the Siemens Healthineers. This project is related to commission #40496. I think we need this organization and commission created in LiWa.</div>

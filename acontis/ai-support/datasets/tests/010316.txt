@@ -1,0 +1,131 @@
+### HEADER
+Id=10316
+Link=http://at-zammad/#ticket/zoom/10316
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Cyberdontics (ID=617, Number=0, Country=US)
+Commission=Cyberdontics, Unknown (ID=697, Number=697)
+Number=7010316
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=jbraley@perceptive.io (ID=3107, FirstName=Jason, LastName=Braley)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=31.03.2025 21:25:31 +00:00
+UpdatedAt=25.04.2025 06:13:55 +00:00
+CloseAt=25.04.2025 06:13:55 +00:00
+ArticlesCount=2
+
+### TITLE
+Re: Ethercat chain configuration order
+
+### ARTICLE00_HEADER
+Id=59152
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.03.2025 21:25:31 +00:00
+UpdatedAt=31.03.2025 21:25:31 +00:00
+
+### ARTICLE00_SUBJECT
+Re: Ethercat chain configuration order
+
+### ARTICLE00_BODY
+Hi Jason,<div> </div><div>Thanks for your questions. I’m copying our EtherCAT developer support team to see if they can help address this, as I’m not sure.<br><div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Mar 31, 2025, at 10:53 AM, Jason Braley &lt;jbraley@perceptive.io&gt; wrote:</div>
+<br><div>
+<div dir="ltr">
+<div>Hi, Jon.</div>
+<div> </div>
+<div>I've got a little configuration mystery that I was hoping you could help me with.</div>
+<div> </div>
+<div>Background: I've brought up some drives, tuned them, and written the configuration into the NVS of the drives. Three of these configs (profiler max vel/acc/dec) are manufacturer specific in the 0x2000 block, and I'd like to not re-configure them in the application if I don't have to.</div>
+<div> </div>
+<div>Problem: When I bring up EcMasterDemo with no ENI file and then connect EC-Engineer, I can see that these configs retain their NVS values. However, when I add the drive's profile velocity to the PDO (not the *profiler* config; in the 0x6000s) and boot EcMasterDemo with that eni file, both the profile vel (0x6000s) and profiler max velocity (0x2000s) are re-initialized to zero. When I use EC-Engineer to create an ENI that puts the profiler max velocity back to its NVS default, I still see it being initialized to zero. If I add this config to the PDO and set it via the master application, it takes the value and uses it.</div>
+<div> </div>
+<div>Questions:</div>
+<div>1) It seems like these variables are linked somehow, probably in the drive software, but is it possible EC-Engineer is generating an InitCmd that's doing this? How does EC-Engineer decide what it's going to initialize and how to treat its PDO values?</div>
+<div>2) If I create an ENI file that sets this config, it doesn't seem to take. I was wondering if that was a matter of timing. I'm unclear on the timing of when the InitCmds are sent across. Is there a way to add a delay to when the configs are passed to the ethercat chain?</div>
+<div> </div>--<br><div dir="ltr"><div dir="ltr">Jason Braley<div>Principal Software Engineer</div>
+<div>Perceptive.io</div>
+<div>179 Lincoln Street</div>
+<div>Boston, MA 02111</div>
+</div></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=59158
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.04.2025 05:45:51 +00:00
+UpdatedAt=01.04.2025 05:45:53 +00:00
+
+### ARTICLE01_SUBJECT
+Ethercat chain configuration order
+
+### ARTICLE01_BODY
+Hi Jason,<div><br></div><div>please double checkt hat if the values are part of the process data, EcMasterDemo will send zero in SAFEOP and OP state to all of them by default. It can be the reason why. starting without ENI, EcMasterDemo stay in PREOP.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, March 31, 2025 at 11:25:31 PM, Jon Waters wrote:<br><br>Hi Jason,<div> </div>
+<div>Thanks for your questions. I’m copying our EtherCAT developer support team to see if they can help address this, as I’m not sure.<br><div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Mar 31, 2025, at 10:53 AM, Jason Braley &lt;jbraley@perceptive.io&gt; wrote:</div>
+<br><div>
+<div dir="ltr">
+<div>Hi, Jon.</div>
+<div> </div>
+<div>I've got a little configuration mystery that I was hoping you could help me with.</div>
+<div> </div>
+<div>Background: I've brought up some drives, tuned them, and written the configuration into the NVS of the drives. Three of these configs (profiler max vel/acc/dec) are manufacturer specific in the 0x2000 block, and I'd like to not re-configure them in the application if I don't have to.</div>
+<div> </div>
+<div>Problem: When I bring up EcMasterDemo with no ENI file and then connect EC-Engineer, I can see that these configs retain their NVS values. However, when I add the drive's profile velocity to the PDO (not the *profiler* config; in the 0x6000s) and boot EcMasterDemo with that eni file, both the profile vel (0x6000s) and profiler max velocity (0x2000s) are re-initialized to zero. When I use EC-Engineer to create an ENI that puts the profiler max velocity back to its NVS default, I still see it being initialized to zero. If I add this config to the PDO and set it via the master application, it takes the value and uses it.</div>
+<div> </div>
+<div>Questions:</div>
+<div>1) It seems like these variables are linked somehow, probably in the drive software, but is it possible EC-Engineer is generating an InitCmd that's doing this? How does EC-Engineer decide what it's going to initialize and how to treat its PDO values?</div>
+<div>2) If I create an ENI file that sets this config, it doesn't seem to take. I was wondering if that was a matter of timing. I'm unclear on the timing of when the InitCmds are sent across. Is there a way to add a delay to when the configs are passed to the ethercat chain?</div>
+<div> </div>--<br><div dir="ltr"><div dir="ltr">Jason Braley<div>Principal Software Engineer</div>
+<div>Perceptive.io</div>
+<div>179 Lincoln Street</div>
+<div>Boston, MA 02111</div>
+</div></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

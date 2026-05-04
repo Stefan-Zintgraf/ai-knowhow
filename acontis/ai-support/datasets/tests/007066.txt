@@ -1,0 +1,105 @@
+### HEADER
+Id=7066
+Link=http://at-zammad/#ticket/zoom/7066
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies GmbH (ID=399, Number=1000, Country=DE)
+Commission=Karl Storz, Medical Robot (ID=853, Number=853)
+Number=707066
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=l.janischek@acontis.com (ID=2090, FirstName=Lisa, LastName=Janischek)
+CreatedBy=l.janischek@acontis.com (ID=2090, FirstName=Lisa, LastName=Janischek)
+Type=
+TimeUnit=
+CreatedAt=13.12.2023 14:41:12 +00:00
+UpdatedAt=27.12.2023 07:02:00 +00:00
+CloseAt=13.12.2023 15:14:17 +00:00
+ArticlesCount=2
+
+### TITLE
+Delivery for Karl Storz, Medical Robot , Commission 40687
+
+### ARTICLE00_HEADER
+Id=38455
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.12.2023 14:41:12 +00:00
+UpdatedAt=13.12.2023 14:41:12 +00:00
+
+### ARTICLE00_SUBJECT
+Delivery for Karl Storz, Medical Robot , Commission 40687
+
+### ARTICLE00_BODY
+<div>
+<p>Please deliver software to customer.(Tobias.Blume@itk-engineering.de)<br>Do not forget to append the delivery note and sales@acontis.com in CC! </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=38465
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.12.2023 16:29:34 +00:00
+UpdatedAt=13.12.2023 16:29:35 +00:00
+
+### ARTICLE01_SUBJECT
+Delivery for Karl Storz, Medical Robot , Commission 40687
+
+### ARTICLE01_BODY
+<div>Lieber Kunde,</div><div><br></div><div>Hier ist die neueste Version der von Ihnen bestellten Software</div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Master_QNX_x86_64Bit/3.2.1.02/EC-Master-ClassA-AddOn-V3.2.1.02-QNX71-x86_64Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Master_QNX_x86_64Bit/3.2.1.02/EC-Master-ClassA-AddOn-V3.2.1.02-QNX71-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Master_QNX_x86_64Bit/3.2.1.02/EC-Master-ClassA-AddOn-V3.2.1.02-QNX71-x86_64Bit-SDK_Protected.zip</a></div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Master_QNX_x86_64Bit/3.2.1.02/EC-Master-IntelGbe-V3.2.1.02-QNX71-x86_64Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Master_QNX_x86_64Bit/3.2.1.02/EC-Master-IntelGbe-V3.2.1.02-QNX71-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Master_QNX_x86_64Bit/3.2.1.02/EC-Master-IntelGbe-V3.2.1.02-QNX71-x86_64Bit-SDK_Protected.zip</a></div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Master_QNX_x86_64Bit/3.2.1.02/EC-Master-V3.2.1.02-QNX71-x86_64Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Master_QNX_x86_64Bit/3.2.1.02/EC-Master-V3.2.1.02-QNX71-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Master_QNX_x86_64Bit/3.2.1.02/EC-Master-V3.2.1.02-QNX71-x86_64Bit-SDK_Protected.zip</a></div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Simulator_HiL_QNX_x86/3.2.1.02/EC-Simulator-HiL-V3.2.1.02-QNX71-x86_64Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Simulator_HiL_QNX_x86/3.2.1.02/EC-Simulator-HiL-V3.2.1.02-QNX71-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Simulator_HiL_QNX_x86/3.2.1.02/EC-Simulator-HiL-V3.2.1.02-QNX71-x86_64Bit-SDK_Protected.zip</a></div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Master_Linux_x86_64Bit/3.2.1.02/EC-Master-ClassA-AddOn-V3.2.1.02-Linux-x86_64Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Master_Linux_x86_64Bit/3.2.1.02/EC-Master-ClassA-AddOn-V3.2.1.02-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Master_Linux_x86_64Bit/3.2.1.02/EC-Master-ClassA-AddOn-V3.2.1.02-Linux-x86_64Bit-SDK_Protected.tar.gz</a></div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Master_Linux_x86_64Bit/3.2.1.02/EC-Master-IntelGbe-V3.2.1.02-Linux-x86_64Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Master_Linux_x86_64Bit/3.2.1.02/EC-Master-IntelGbe-V3.2.1.02-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Master_Linux_x86_64Bit/3.2.1.02/EC-Master-IntelGbe-V3.2.1.02-Linux-x86_64Bit-SDK_Protected.tar.gz</a></div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Master_Linux_x86_64Bit/3.2.1.02/EC-Master-V3.2.1.02-Linux-x86_64Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Master_Linux_x86_64Bit/3.2.1.02/EC-Master-V3.2.1.02-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Master_Linux_x86_64Bit/3.2.1.02/EC-Master-V3.2.1.02-Linux-x86_64Bit-SDK_Protected.tar.gz</a></div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Engineer/3.8.5/EC-Engineer_Dongle_V3.8.5.zip" title="https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Engineer/3.8.5/EC-Engineer_Dongle_V3.8.5.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Engineer/3.8.5/EC-Engineer_Dongle_V3.8.5.zip</a></div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Simulator_SiL_Linux_x86/3.2.1.02/EC-Simulator-SiL-V3.2.1.02-Linux-x86_64Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Simulator_SiL_Linux_x86/3.2.1.02/EC-Simulator-SiL-V3.2.1.02-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/J-L/Karl_Storz_(40687)(DE)/EC-Simulator_SiL_Linux_x86/3.2.1.02/EC-Simulator-SiL-V3.2.1.02-Linux-x86_64Bit-SDK_Protected.tar.gz</a></div>
+<div><br></div>
+<div><div>Das Passwort für Dateien lautet: ECM88250</div></div>
+<div><br></div>
+<div><div>Im Anhang finden Sie auch die Lieferschein. </div></div>
+<div><br></div>
+<div><br></div>
+<div>LG, </div>
+<div><br></div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: -</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<br><div>---Begin forwarded message:---<br><br>
+</div>
+<div><blockquote type="cite">
+<div>Subject: Delivery for Karl Storz, Medical Robot , Commission 40687<br>Date: 12/13/2023 15:41<br>From: Lisa Janischek<br>To: ecsupport@acontis.com<br><br>
+</div>
+<div>
+<p>Please deliver software to customer.(Tobias.Blume@itk-engineering.de)<br>Do not forget to append the delivery note and sales@acontis.com in CC! </p>
+</div>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

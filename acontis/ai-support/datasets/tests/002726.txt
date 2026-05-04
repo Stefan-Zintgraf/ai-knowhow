@@ -1,0 +1,202 @@
+### HEADER
+Id=2726
+Link=http://at-zammad/#ticket/zoom/2726
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ACS Motion Control LTD (ID=184, Number=50006, Country=IL)
+Commission=ACS, Motion Controller (ID=223, Number=223)
+Number=702726
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=olegr@acsmotioncontrol.com (ID=84, FirstName=Oleg, LastName=Romanov)
+CreatedBy=olegr@acsmotioncontrol.com (ID=84, FirstName=Oleg, LastName=Romanov)
+Type=
+TimeUnit=
+CreatedAt=31.03.2022 14:12:11 +00:00
+UpdatedAt=29.04.2022 06:09:16 +00:00
+CloseAt=29.04.2022 06:09:16 +00:00
+ArticlesCount=2
+
+### TITLE
+Intel I225 network card for EtherCAT communication
+
+### ARTICLE00_HEADER
+Id=14570
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.03.2022 14:12:11 +00:00
+UpdatedAt=31.03.2022 14:12:12 +00:00
+
+### ARTICLE00_SUBJECT
+Intel I225 network card for EtherCAT communication
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>How are you ?</p>
+<p> </p>
+<p>We are checking the possibility to use Intel I225 network card for EtherCAT communication in our products.</p>
+<p>I see that it is supported by i8254x driver we are using.</p>
+<p> </p>
+<p>Do you have any experience with this device ?</p>
+<p> </p>
+<p>Comparing to I219, are there any differences related to I225 (I see that there is no special code for I225 in the driver) ?</p>
+<p> </p>
+<p>What is your recommendation - I219 or I225 ?</p>
+<p> </p>
+<p><b><i>Best regards,</i></b></p>
+<p> </p>
+<p><b><i>Oleg Romanov</i></b><i><br> R&amp;D Software Group Manager</i></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding:0in 0in 0in 0in;"></td>
+</tr>
+<tr>
+<td style="border:none;border-top:solid #f8193f 1.0pt;padding:0in 0in 0in 0in;"></td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;">
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding:0in 7.5pt 0in 0in;">
+<p><b><i><span style="color:#f8193f;">T</span></i></b></p>
+<p></p>
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><i><span style="color:black;">972 4 654 6440 ext. 211</span></i></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 7.5pt 0in 0in;">
+<p><b><i><span style="color:#f8193f;">E</span></i></b></p>
+<p></p>
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><i>olegr@acsmotioncontrol.com</i></p>
+<p></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 7.5pt 0in 0in;">
+<p><b><i><span style="color:#f8193f;">W</span></i></b></p>
+<p></p>
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><a href="http://acsmotioncontrol.com/" rel="nofollow noreferrer noopener" target="_blank"><i>AcsMotionControl.com</i></a></p>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border:none;border-bottom:solid #f8193f 1.0pt;padding:0in 0in 0in 0in;">
+</td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;"></td>
+</tr>
+</tbody>
+</table>
+<p><img border="0" style="max-width:100%;width:2.1562in;max-height:.7187in;width:207px;max-height:69px;" src="/api/v1/ticket_attachment/2726/14570/57248?view=inline"></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=14578
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.04.2022 07:19:33 +00:00
+UpdatedAt=01.04.2022 07:19:37 +00:00
+
+### ARTICLE01_SUBJECT
+Intel I225 network card for EtherCAT communication
+
+### ARTICLE01_BODY
+Hi Oleg,<div><br></div><div>I'm going well thanks! I hope you're not too much involved with the current situation in Israel.</div><div><br></div><div>We have a lot of i219  in the field. We did some test here with the i225, but <span>we don't have any feedback regarding the i225 family. I don't think that any customer of us release any application.</span><span> </span>
+</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div><br></div><div>
+<div><blockquote type="cite">On Thursday, March 31, 2022, 4:12:11 PM, Oleg Romanov wrote:<br><br><div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>How are you ?</p>
+<p> </p>
+<p>We are checking the possibility to use Intel I225 network card for EtherCAT communication in our products.</p>
+<p>I see that it is supported by i8254x driver we are using.</p>
+<p> </p>
+<p>Do you have any experience with this device ?</p>
+<p> </p>
+<p>Comparing to I219, are there any differences related to I225 (I see that there is no special code for I225 in the driver) ?</p>
+<p> </p>
+<p>What is your recommendation - I219 or I225 ?</p>
+<p> </p>
+<p><b><i>Best regards,</i></b></p>
+<p> </p>
+<p><b><i>Oleg Romanov</i></b><i><br> R&amp;D Software Group Manager</i></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding:0in 0in 0in 0in;"></td>
+</tr>
+<tr>
+<td style="border:none;border-top:solid #f8193f 1.0pt;padding:0in 0in 0in 0in;"></td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;">
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding:0in 7.5pt 0in 0in;">
+<p><b><i><span style="color:#f8193f;">T</span></i></b></p>
+<p></p>
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><i><span style="color:black;">972 4 654 6440 ext. 211</span></i></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 7.5pt 0in 0in;">
+<p><b><i><span style="color:#f8193f;">E</span></i></b></p>
+<p></p>
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><i>olegr@acsmotioncontrol.com</i></p>
+<p></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 7.5pt 0in 0in;">
+<p><b><i><span style="color:#f8193f;">W</span></i></b></p>
+<p></p>
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><a href="http://acsmotioncontrol.com/" rel="nofollow noreferrer noopener" target="_blank"><i>AcsMotionControl.com</i></a></p>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border:none;border-bottom:solid #f8193f 1.0pt;padding:0in 0in 0in 0in;">
+</td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;"></td>
+</tr>
+</tbody>
+</table>
+<p><img border="0" style="max-width:100%;max-width:100%;width:2.1562in;max-height:.7187in;width:207px;max-height:69px;" src="/api/v1/ticket_attachment/2726/14578/57263?view=inline"></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

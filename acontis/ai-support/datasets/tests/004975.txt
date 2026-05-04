@@ -1,0 +1,124 @@
+### HEADER
+Id=4975
+Link=http://at-zammad/#ticket/zoom/4975
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Robert Bosch GmbH (ID=149, Number=40339, Country=DE)
+Commission=Robert Bosch, Testing Systems (ID=168, Number=168)
+Number=704975
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=adrian.koch@de.bosch.com (ID=1177, FirstName=Adrian, LastName=Koch)
+CreatedBy=adrian.koch@de.bosch.com (ID=1177, FirstName=Adrian, LastName=Koch)
+Type=
+TimeUnit=
+CreatedAt=22.02.2023 08:53:10 +00:00
+UpdatedAt=17.03.2023 07:06:48 +00:00
+CloseAt=17.03.2023 07:06:48 +00:00
+ArticlesCount=2
+
+### TITLE
+Linux "Real Time Clock" vs. NTP daemon
+
+### ARTICLE00_HEADER
+Id=26275
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.02.2023 08:53:10 +00:00
+UpdatedAt=22.02.2023 08:53:10 +00:00
+
+### ARTICLE00_SUBJECT
+Linux "Real Time Clock" vs. NTP daemon
+
+### ARTICLE00_BODY
+<p> </p><div> <p>Hallo Herr Bußmann,</p>
+<p> </p>
+<p>wir stehen gerade von einem Uhren-Problem, bei dem Sie uns vielleicht weiterhelfen können. Als wir begonnen haben Ihren EC-Master-Stack zu nutzen, hatten wir Probleme mit dem NTP-Dienst, weil dieser an der RTC Veränderungen vorgenommen und damit die Uhr des EC-Master manipuliert hat. Die Konsequenz war dann, dass die zeitliche Regelabweichung auf dem Bus sprunghaft angestiegen ist, was natürlich zu Problemen beim Zeitverständnis geführt hat.</p>
+<p>Das wiederum führt dazu, dass wir den NTP nicht nutzen und damit die Systemzeit synchronisieren können. Wir sind kurz davor, dass wir einen Service implementieren, der die Systemzeit manuell holt und das System synchronisiert. Bevor wir aber damit starten wollte ich mit Ihnen Rücksprache halten:</p>
+<p> </p>
+<ul type="disc"> <li>Kennen Sie einen Ansatz, der die Koexistenz von NTP daemon und EC-Master erlaubt? Evtl. kann der NTP so eingestellt werden, dass die RTC nicht manipuliert wird.</li>
+<li>Sind Ihnen vielleicht andere Lösungen bekannt? </li>
+</ul> <p> </p>
+<p>Vielen Dank vorab!</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards <br> <br> <b>Adrian Koch</b></span> <span>
+<br> <br> (BhP/TEF-EAT35-BAS) <br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bosch.com</span></a>
+<br> Tel. +49 8323 20-3948 | Mobil +49 172 7457470 | Telefax +49 8323 20-0 | <a href="mailto:Adrian.Koch@de.bosch.com"> <span style="color:blue;">Adrian.Koch@de.bosch.com</span></a></span><span>
+<br> <br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000; <br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; Geschäftsführung: Dr. Stefan Hartung, <br> Dr. Christian Fischer, Filiz Albrecht, Dr. Markus Forschner, Dr. Markus Heyn, Dr. Tanja Rückert </span><span>
+<br> ​</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=26277
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.02.2023 08:57:04 +00:00
+UpdatedAt=22.02.2023 08:57:06 +00:00
+
+### ARTICLE01_SUBJECT
+Linux "Real Time Clock" vs. NTP daemon
+
+### ARTICLE01_BODY
+<div>
+<p>Guten Tag Herr Koch,</p>
+<p><br></p>
+
+<p> </p>
+
+<p>vielleicht ließe es sich mit der CLOCK_MONOTONIC_RAW
+realisieren:</p>
+
+<p><a href="https://stackoverflow.com/questions/3523442/difference-between-clock-realtime-and-clock-monotonic#comment16071127_3527632" rel="nofollow noreferrer noopener" target="_blank">https://stackoverflow.com/questions/3523442/difference-between-clock-realtime-and-clock-monotonic#comment16071127_3527632</a>
+</p>
+
+<p> </p>
+
+<p><br></p>
+<p>Ich habe allerdings
+keine Erfahrung damit.</p>
+
+<p> </p>
+
+<p><br></p>
+<p>Viele Grüße</p>
+
+<p>Paul Bußmann</p>
+</div><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">Am Mittwoch, 22. Februar 2023 um 09:53:10, schrieb Adrian Koch:<br><br><p> </p>
+<div> <p>Hallo Herr Bußmann,</p>
+<p> </p>
+<p>wir stehen gerade von einem Uhren-Problem, bei dem Sie uns vielleicht weiterhelfen können. Als wir begonnen haben Ihren EC-Master-Stack zu nutzen, hatten wir Probleme mit dem NTP-Dienst, weil dieser an der RTC Veränderungen vorgenommen und damit die Uhr des EC-Master manipuliert hat. Die Konsequenz war dann, dass die zeitliche Regelabweichung auf dem Bus sprunghaft angestiegen ist, was natürlich zu Problemen beim Zeitverständnis geführt hat.</p>
+<p>Das wiederum führt dazu, dass wir den NTP nicht nutzen und damit die Systemzeit synchronisieren können. Wir sind kurz davor, dass wir einen Service implementieren, der die Systemzeit manuell holt und das System synchronisiert. Bevor wir aber damit starten wollte ich mit Ihnen Rücksprache halten:</p>
+<p> </p>
+<ul type="disc"> <li>Kennen Sie einen Ansatz, der die Koexistenz von NTP daemon und EC-Master erlaubt? Evtl. kann der NTP so eingestellt werden, dass die RTC nicht manipuliert wird.</li>
+<li>Sind Ihnen vielleicht andere Lösungen bekannt? </li>
+</ul> <p> </p>
+<p>Vielen Dank vorab!</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards <br> <br> <b>Adrian Koch</b></span> <span>
+<br> <br> (BhP/TEF-EAT35-BAS) <br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bosch.com</span></a>
+<br> Tel. +49 8323 20-3948 | Mobil +49 172 7457470 | Telefax +49 8323 20-0 | <a href="mailto:Adrian.Koch@de.bosch.com"> <span style="color:blue;">Adrian.Koch@de.bosch.com</span></a></span><span>
+<br> <br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000; <br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; Geschäftsführung: Dr. Stefan Hartung, <br> Dr. Christian Fischer, Filiz Albrecht, Dr. Markus Forschner, Dr. Markus Heyn, Dr. Tanja Rückert </span><span>
+<br> ​</span></p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

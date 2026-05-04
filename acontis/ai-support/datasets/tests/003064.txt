@@ -1,0 +1,136 @@
+### HEADER
+Id=3064
+Link=http://at-zammad/#ticket/zoom/3064
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Auris Health (ID=544, Number=0, Country=US)
+Commission=Auris Surgical Robotics Inc, R&D (ID=402, Number=402)
+Number=703064
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=kwong26@its.jnj.com (ID=1061, FirstName=Catherine, LastName=Wong)
+CreatedBy=kwong26@its.jnj.com (ID=1061, FirstName=Catherine, LastName=Wong)
+Type=
+TimeUnit=
+CreatedAt=19.05.2022 16:11:43 +00:00
+UpdatedAt=26.07.2022 11:10:24 +00:00
+CloseAt=17.06.2022 12:08:32 +00:00
+ArticlesCount=3
+
+### TITLE
+Suggestion on an EtherCAT Interceptor
+
+### ARTICLE00_HEADER
+Id=16132
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.05.2022 16:11:43 +00:00
+UpdatedAt=19.05.2022 16:11:43 +00:00
+
+### ARTICLE00_SUBJECT
+Suggestion on an EtherCAT Interceptor
+
+### ARTICLE00_BODY
+<div>Dear Acontis EtherCAT support,</div><div> </div><div>My name is Catherine and I am one of the Robotics Engineers at JnJ (Auris Heath). We have been using the Acontis software for EtherCAT. Recently, we would like to test some of the failure modes of our EtherCAT system by creating artificial communication interrupts. Do you have any suggestions in terms of a hardware interceptor that can create these interrupts?</div><div> </div><div>Thanks for your help,</div><div>Catherine</div>
+
+### ARTICLE01_HEADER
+Id=16164
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.05.2022 08:16:16 +00:00
+UpdatedAt=20.05.2022 08:16:18 +00:00
+
+### ARTICLE01_SUBJECT
+Suggestion on an EtherCAT Interceptor
+
+### ARTICLE01_BODY
+Hi Catherine,<div><br></div><div>you can register a callback with <span style=" color: rgba(0, 0, 0, 0.87);">em</span><span style=" color: rgba(0, 0, 0, 0.87);">LogFrame</span><span style=" color: rgba(0, 0, 0, 0.87);">Enable() in this callback, you can destroy outgoing or incoming frames by writing in the frame buffer. </span><span style=" color: rgba(0, 0, 0, 0.87);">Perhaps it helps you already.</span>
+</div><div><span style=" color: rgba(0, 0, 0, 0.87);"><br></span></div><div>Additionally, we have an EC-Simulator product. With this product you can simulate slave errors or disconnection, frame loss. Perhaps it could be useful to test your application.</div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, May 19, 2022, 6:11:43 PM, Catherine [ETHUS] Wong wrote:<br><br><div>Dear Acontis EtherCAT support,</div>
+<div> </div>
+<div>My name is Catherine and I am one of the Robotics Engineers at JnJ (Auris Heath). We have been using the Acontis software for EtherCAT. Recently, we would like to test some of the failure modes of our EtherCAT system by creating artificial communication interrupts. Do you have any suggestions in terms of a hardware interceptor that can create these interrupts?</div>
+<div> </div>
+<div>Thanks for your help,</div>
+<div>Catherine</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=16192
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.05.2022 14:34:25 +00:00
+UpdatedAt=20.05.2022 14:34:25 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Suggestion on an EtherCAT Interceptor [Ticket#703064]
+
+### ARTICLE02_BODY
+Hi Catherine,<div> </div><div>I am the account manager for Auris and have worked a lot with the Robotics teams at JnJ / Auris. The Monarch group is using our EC-Simulator product, and as Cyril mentioned I think this could be an interesting option for you in the type of testing you want to do. Here is some more information on our website: <a href="https://www.acontis.com/en/ethercat-simulation.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/ethercat-simulation.html</a>. </div><div> </div><div>Please let me know if you’d like more information or a presentation about the simulator, we can arrange a web meeting.</div><div>
+<div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On May 20, 2022, at 4:16 AM, Cyril Eyssautier via EC-Support &lt;<a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>&gt; wrote:</div>
+<br><div>Hi Catherine,<div> </div>
+<div>you can register a callback with emLogFrameEnable() in this callback, you can destroy outgoing or incoming frames by writing in the frame buffer. Perhaps it helps you already.</div>
+<div> </div>
+<div>Additionally, we have an EC-Simulator product. With this product you can simulate slave errors or disconnection, frame loss. Perhaps it could be useful to test your application.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Thursday, May 19, 2022, 6:11:43 PM, Catherine [ETHUS] Wong wrote:<br><br><div>Dear Acontis EtherCAT support,</div>
+<div> </div>
+<div>My name is Catherine and I am one of the Robotics Engineers at JnJ (Auris Heath). We have been using the Acontis software for EtherCAT. Recently, we would like to test some of the failure modes of our EtherCAT system by creating artificial communication interrupts. Do you have any suggestions in terms of a hardware interceptor that can create these interrupts?</div>
+<div> </div>
+<div>Thanks for your help,</div>
+<div>Catherine</div>
+</blockquote></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

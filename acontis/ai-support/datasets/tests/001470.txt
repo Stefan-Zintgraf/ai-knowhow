@@ -1,0 +1,206 @@
+### HEADER
+Id=1470
+Link=http://at-zammad/#ticket/zoom/1470
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OSAIcnc S.r.l. (ID=195, Number=57504, Country=IT)
+Commission=OSAIcnc S.r.l., OPENcontrol WinCE (ID=234, Number=234)
+Number=701470
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=gianluca.pasqualotto@osaicnc.com (ID=41, FirstName=Gianluca, LastName=Pasqualotto)
+CreatedBy=gianluca.pasqualotto@osaicnc.com (ID=41, FirstName=Gianluca, LastName=Pasqualotto)
+Type=
+TimeUnit=
+CreatedAt=21.09.2021 09:53:10 +00:00
+UpdatedAt=25.04.2022 12:28:04 +00:00
+CloseAt=29.09.2021 05:36:29 +00:00
+ArticlesCount=3
+
+### TITLE
+Ec-Engineer question #74
+
+### ARTICLE00_HEADER
+Id=7922
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.09.2021 09:53:10 +00:00
+UpdatedAt=21.09.2021 09:53:13 +00:00
+
+### ARTICLE00_SUBJECT
+Ec-Engineer question #74
+
+### ARTICLE00_BODY
+<div>
+<p>Dear EC-Support,</p>
+<p> </p>
+<p>Using the attached ESI, the adding of that slave causes an exception. Please, can give a look ? Thanks.</p>
+<p> </p>
+<p><img style="max-width:100%;width:9.2666in;max-height:4.3833in;width:890px;max-height:421px;" src="/api/v1/ticket_attachment/1470/7922/30285?view=inline"></p>
+<p> </p>
+<p>Best Regards,</p>
+<p>Gianluca</p>
+<p> </p>
+<p><img style="max-width:100%;width:1.4916in;max-height:.4583in;width:143px;max-height:44px;" src="/api/v1/ticket_attachment/1470/7922/30284?view=inline"></p>
+<p><b>Gianluca Pasqualotto</b></p>
+<p>R&amp;D - CNC/Servo Software Development Senior Engineer</p>
+<p>Ufficio +39 0125 190 6267</p>
+<p>Mobile +39 335 699 7678</p>
+<p> </p>
+<p>OSAIcnc s.r.l.</p>
+<p>Sede Legale e Operativa: Via Jervis, 11 – 10015 Ivrea (TO) Italia</p>
+<p>Sede Logistica: Via Torino, 14 – 10010 Barone Canavese (TO) Italia</p>
+<p>Indirizzo PEC: osaicncsrl@pec.osaicncsrl.it</p>
+<p><a href="http://www.osaicnc.com" rel="nofollow noreferrer noopener" target="_blank">www.osaicnc.com</a></p>
+<p> </p>
+<p>Questo messaggio e i suoi allegati sono indirizzati esclusivamente ai destinatari. La diffusione, copia o qualsiasi altra azione derivante dalla conoscenza di queste informazioni sono rigorosamente vietate. Qualora abbiate ricevuto questo messaggio per errore siete invitati a comunicarlo al mittente e a provvedere alla sua distruzione.</p>
+<p><i>This e-mail and any attachments are confidential and may contain privileged information intended for the addressee(s) only. Dissemination, copying, printing or use by anybody else is unauthorized. If you are not the intended recipient, please delete this message and any attachments and advise the sender by return e-mail.</i></p>
+<p> </p>
+<p>P <i>Please consider the environment before printing!</i></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=7924
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.09.2021 10:48:07 +00:00
+UpdatedAt=21.09.2021 10:48:10 +00:00
+
+### ARTICLE01_SUBJECT
+Ec-Engineer question #74
+
+### ARTICLE01_BODY
+Hi Gianluca,<div><br></div><div>this is because of the '*' in the Device Type in the ESI. I use the device type to create the bin file, and this character is not allowed in a file name. Please use the attached ESI (I changed the name there). I will try to remove this character in the next version automatically from the file name.</div><div><br></div><div>Best regards,<br>Kai<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, September 21, 2021, 11:53:10 AM, Gianluca Pasqualotto wrote:<br><br><div>
+<p>Dear EC-Support,</p>
+<p> </p>
+<p>Using the attached ESI, the adding of that slave causes an exception. Please, can give a look ? Thanks.</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:9.2666in;max-height:4.3833in;width:890px;max-height:421px;" src="/api/v1/ticket_attachment/1470/7924/30292?view=inline"></p>
+<p> </p>
+<p>Best Regards,</p>
+<p>Gianluca</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:1.4916in;max-height:.4583in;width:143px;max-height:44px;" src="/api/v1/ticket_attachment/1470/7924/30293?view=inline"></p>
+<p><b>Gianluca Pasqualotto</b></p>
+<p>R&amp;D - CNC/Servo Software Development Senior Engineer</p>
+<p>Ufficio +39 0125 190 6267</p>
+<p>Mobile +39 335 699 7678</p>
+<p> </p>
+<p>OSAIcnc s.r.l.</p>
+<p>Sede Legale e Operativa: Via Jervis, 11 – 10015 Ivrea (TO) Italia</p>
+<p>Sede Logistica: Via Torino, 14 – 10010 Barone Canavese (TO) Italia</p>
+<p>Indirizzo PEC: osaicncsrl@pec.osaicncsrl.it</p>
+<p><a href="http://www.osaicnc.com" rel="nofollow noreferrer noopener" target="_blank">www.osaicnc.com</a></p>
+<p> </p>
+<p>Questo messaggio e i suoi allegati sono indirizzati esclusivamente ai destinatari. La diffusione, copia o qualsiasi altra azione derivante dalla conoscenza di queste informazioni sono rigorosamente vietate. Qualora abbiate ricevuto questo messaggio per errore siete invitati a comunicarlo al mittente e a provvedere alla sua distruzione.</p>
+<p><i>This e-mail and any attachments are confidential and may contain privileged information intended for the addressee(s) only. Dissemination, copying, printing or use by anybody else is unauthorized. If you are not the intended recipient, please delete this message and any attachments and advise the sender by return e-mail.</i></p>
+<p> </p>
+<p>P <i>Please consider the environment before printing!</i></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=7925
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.09.2021 10:52:37 +00:00
+UpdatedAt=21.09.2021 10:52:40 +00:00
+
+### ARTICLE02_SUBJECT
+Ec-Engineer question #74
+
+### ARTICLE02_BODY
+<div>I found a way to do it. It will be fixed in the next version.<br><br>
+</div><div><blockquote type="cite">On Tuesday, September 21, 2021, 12:48:07 PM, Kai Feifel wrote:<br><br>Hi Gianluca,<div><br></div>
+<div>this is because of the '*' in the Device Type in the ESI. I use the device type to create the bin file, and this character is not allowed in a file name. Please use the attached ESI (I changed the name there). I will try to remove this character in the next version automatically from the file name.</div>
+<div><br></div>
+<div>Best regards,<br>Kai<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, September 21, 2021, 11:53:10 AM, Gianluca Pasqualotto wrote:<br><br><div>
+<p>Dear EC-Support,</p>
+<p> </p>
+<p>Using the attached ESI, the adding of that slave causes an exception. Please, can give a look ? Thanks.</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;max-width:100%;width:9.2666in;max-height:4.3833in;width:890px;max-height:421px;" src="/api/v1/ticket_attachment/1470/7925/30295?view=inline"></p>
+<p> </p>
+<p>Best Regards,</p>
+<p>Gianluca</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;max-width:100%;width:1.4916in;max-height:.4583in;width:143px;max-height:44px;" src="/api/v1/ticket_attachment/1470/7925/30296?view=inline"></p>
+<p><b>Gianluca Pasqualotto</b></p>
+<p>R&amp;D - CNC/Servo Software Development Senior Engineer</p>
+<p>Ufficio +39 0125 190 6267</p>
+<p>Mobile +39 335 699 7678</p>
+<p> </p>
+<p>OSAIcnc s.r.l.</p>
+<p>Sede Legale e Operativa: Via Jervis, 11 – 10015 Ivrea (TO) Italia</p>
+<p>Sede Logistica: Via Torino, 14 – 10010 Barone Canavese (TO) Italia</p>
+<p>Indirizzo PEC: osaicncsrl@pec.osaicncsrl.it</p>
+<p><a href="http://www.osaicnc.com" rel="nofollow noreferrer noopener" target="_blank">www.osaicnc.com</a></p>
+<p> </p>
+<p>Questo messaggio e i suoi allegati sono indirizzati esclusivamente ai destinatari. La diffusione, copia o qualsiasi altra azione derivante dalla conoscenza di queste informazioni sono rigorosamente vietate. Qualora abbiate ricevuto questo messaggio per errore siete invitati a comunicarlo al mittente e a provvedere alla sua distruzione.</p>
+<p><i>This e-mail and any attachments are confidential and may contain privileged information intended for the addressee(s) only. Dissemination, copying, printing or use by anybody else is unauthorized. If you are not the intended recipient, please delete this message and any attachments and advise the sender by return e-mail.</i></p>
+<p> </p>
+<p>P <i>Please consider the environment before printing!</i></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+<br>
+</blockquote></div><div><br></div>

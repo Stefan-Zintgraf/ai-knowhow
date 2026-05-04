@@ -1,0 +1,153 @@
+### HEADER
+Id=2966
+Link=http://at-zammad/#ticket/zoom/2966
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ITK Engineering GmbH (ID=120, Number=54016, Country=DE)
+Commission=ITK, Asimov Express (ID=134, Number=134)
+Number=702966
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=michael.wenz@itk-engineering.de (ID=107, FirstName=Michael, LastName=Wenz)
+CreatedBy=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Type=
+TimeUnit=
+CreatedAt=05.05.2022 13:06:55 +00:00
+UpdatedAt=10.06.2022 06:09:19 +00:00
+CloseAt=10.06.2022 06:09:19 +00:00
+ArticlesCount=2
+
+### TITLE
+EC_NOTIFY_TAP_LINK_STATUS wird nicht im Interrupt Mode gemeldet
+
+### ARTICLE00_HEADER
+Id=15614
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.05.2022 13:06:56 +00:00
+UpdatedAt=05.05.2022 13:06:58 +00:00
+
+### ARTICLE00_SUBJECT
+EC_NOTIFY_TAP_LINK_STATUS wird nicht im Interrupt Mode gemeldet
+
+### ARTICLE00_BODY
+<p>Hallo Herr Oelhaf,</p>
+<p> </p>
+<p>vielen Dank für das Update. Bisher sieht es gut aus.</p>
+<p>Beim Testen ist etwas aufgefallen.</p>
+<p> </p>
+<p>Master ist in OP und das Kabel zwischen QNX Rechner und ET2000 Uplink wird gezogen.</p>
+<p>In Polling Mode kommen folgende Meldungen</p>
+<p> </p>
+<p><span>0000024366: <b><span style="color:#00b0f0;">Notify EC_NOTIFY_TAP_LINK_STATUS(0)</span></b></span></p>
+<p><span>0000024366: <b><span style="color:#00b0f0;">Connection between EC-Monitor and Ethernet TAP changed, link connected=0</span></b></span></p>
+<p>0000024367: emllI8254x(0x00000001): LinkStatus Disconnecting -&gt; Disconnected</p>
+<p>0000026618: SetTopologyChanged() Slave count = 0, BusSlave count = 62</p>
+<p>0000026618: Notify EC_NOTIFY_COMMUNICATION_TIMEOUT(1, 0)</p>
+<p>0000026618: Communication timeout at Ethernet TAP port in=1, port out=0</p>
+<p> </p>
+<p>In Interrupt Mode hingegen „nur“</p>
+<p>0000028798: SetTopologyChanged() Slave count = 0, BusSlave count = 62</p>
+<p>0000028798: Notify EC_NOTIFY_COMMUNICATION_TIMEOUT(1, 0)</p>
+<p>0000028798: Communication timeout at Ethernet TAP port in=1, port out=0</p>
+<p> </p>
+<p>Anbei ECMonitorDemo Logausgaben -v 5.</p>
+<p> </p>
+<p>Sollte <b><span style="color:#20435c;">EC_NOTIFY_TAP_LINK_STATUS </span></b></p>
+<p>auch in Interrupt Mode gemeldet werden?</p>
+<p> </p>
+<p>Bzgl. Abspielen von Wireshark Dateien.</p>
+<p>Kann dies auch in Interrupt Mode gemacht werden oder spricht etwas dagegen?</p>
+<p> </p>
+<p>Viele Grüße</p>
+<p>Michael Wenz</p><div>
+</div>
+<br><br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Holger Oelhaf </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=15615
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.05.2022 13:14:20 +00:00
+UpdatedAt=05.05.2022 13:14:21 +00:00
+
+### ARTICLE01_SUBJECT
+EC_NOTIFY_TAP_LINK_STATUS wird nicht im Interrupt Mode gemeldet
+
+### ARTICLE01_BODY
+<div>Hallo Herr Wenz,</div><div>ich schau mir das Problem  an.</div><div>Für das Abspielen von Wireshark Dateien wird kein LinkLayer verwendet, daher ist es egal.</div><div><br></div><div>Mit freundlichen Grüßen,</div><div>Holger Oelhaf<br><br>
+</div><div><blockquote type="cite">Am Donnerstag, 5. Mai 2022, 15:06:56, schrieb Holger Oelhaf:<br><br><p>Hallo Herr Oelhaf,</p>
+<p> </p>
+<p>vielen Dank für das Update. Bisher sieht es gut aus.</p>
+<p>Beim Testen ist etwas aufgefallen.</p>
+<p> </p>
+<p>Master ist in OP und das Kabel zwischen QNX Rechner und ET2000 Uplink wird gezogen.</p>
+<p>In Polling Mode kommen folgende Meldungen</p>
+<p> </p>
+<p><span>0000024366: <b><span style="color:#00b0f0;">Notify EC_NOTIFY_TAP_LINK_STATUS(0)</span></b></span></p>
+<p><span>0000024366: <b><span style="color:#00b0f0;">Connection between EC-Monitor and Ethernet TAP changed, link connected=0</span></b></span></p>
+<p>0000024367: emllI8254x(0x00000001): LinkStatus Disconnecting -&gt; Disconnected</p>
+<p>0000026618: SetTopologyChanged() Slave count = 0, BusSlave count = 62</p>
+<p>0000026618: Notify EC_NOTIFY_COMMUNICATION_TIMEOUT(1, 0)</p>
+<p>0000026618: Communication timeout at Ethernet TAP port in=1, port out=0</p>
+<p> </p>
+<p>In Interrupt Mode hingegen „nur“</p>
+<p>0000028798: SetTopologyChanged() Slave count = 0, BusSlave count = 62</p>
+<p>0000028798: Notify EC_NOTIFY_COMMUNICATION_TIMEOUT(1, 0)</p>
+<p>0000028798: Communication timeout at Ethernet TAP port in=1, port out=0</p>
+<p> </p>
+<p>Anbei ECMonitorDemo Logausgaben -v 5.</p>
+<p> </p>
+<p>Sollte <b><span style="color:#20435c;">EC_NOTIFY_TAP_LINK_STATUS </span></b></p>
+<p>auch in Interrupt Mode gemeldet werden?</p>
+<p> </p>
+<p>Bzgl. Abspielen von Wireshark Dateien.</p>
+<p>Kann dies auch in Interrupt Mode gemacht werden oder spricht etwas dagegen?</p>
+<p> </p>
+<p>Viele Grüße</p>
+<p>Michael Wenz</p>
+<div>
+</div>
+<br><br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Holger Oelhaf </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<br>
+</blockquote></div><div><br></div>

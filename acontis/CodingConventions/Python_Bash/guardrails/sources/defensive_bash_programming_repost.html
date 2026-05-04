@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Defensive BASH Programming | Frippertronics</title>
+<meta name="keywords" content="programming">
+<meta name="description" content="Preface This is a repost of Defensive BASH programming by Kfir Lavi from 2012-11-14.
+The original blog post has a tendency to go offline quite often. It is a set of Katas I regularly go back to when writing bash-scripts.
+Intro Here are my Katas for creating BASH programs that work. Nothing is new here, but from my experience pepole like to abuse BASH, forget computer science and create a Big ball of mud from their programs.">
+<meta name="author" content="">
+<link rel="canonical" href="http://frippertronics.com/posts/defensive_bash_programming.html">
+<link crossorigin="anonymous" href="../assets/css/stylesheet.bccfefac377bc340f06c260aed1bddf49a4354816d7c570d6aac75a997986c95.css" integrity="sha256-vM/vrDd7w0DwbCYK7Rvd9JpDVIFtfFcNaqx1qZeYbJU=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="../assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="http://frippertronics.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://frippertronics.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://frippertronics.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://frippertronics.com/apple-touch-icon.png">
+<link rel="mask-icon" href="http://frippertronics.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Defensive BASH Programming" />
+<meta property="og:description" content="Preface This is a repost of Defensive BASH programming by Kfir Lavi from 2012-11-14.
+The original blog post has a tendency to go offline quite often. It is a set of Katas I regularly go back to when writing bash-scripts.
+Intro Here are my Katas for creating BASH programs that work. Nothing is new here, but from my experience pepole like to abuse BASH, forget computer science and create a Big ball of mud from their programs." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://frippertronics.com/posts/defensive_bash_programming.html" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-01-31T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Defensive BASH Programming"/>
+<meta name="twitter:description" content="Preface This is a repost of Defensive BASH programming by Kfir Lavi from 2012-11-14.
+The original blog post has a tendency to go offline quite often. It is a set of Katas I regularly go back to when writing bash-scripts.
+Intro Here are my Katas for creating BASH programs that work. Nothing is new here, but from my experience pepole like to abuse BASH, forget computer science and create a Big ball of mud from their programs."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Defensive BASH Programming",
+      "item": "http://frippertronics.com/posts/defensive_bash_programming.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Defensive BASH Programming",
+  "name": "Defensive BASH Programming",
+  "description": "Preface This is a repost of Defensive BASH programming by Kfir Lavi from 2012-11-14.\nThe original blog post has a tendency to go offline quite often. It is a set of Katas I regularly go back to when writing bash-scripts.\nIntro Here are my Katas for creating BASH programs that work. Nothing is new here, but from my experience pepole like to abuse BASH, forget computer science and create a Big ball of mud from their programs.",
+  "keywords": [
+    "programming"
+  ],
+  "articleBody": "Preface This is a repost of Defensive BASH programming by Kfir Lavi from 2012-11-14.\nThe original blog post has a tendency to go offline quite often. It is a set of Katas I regularly go back to when writing bash-scripts.\nIntro Here are my Katas for creating BASH programs that work. Nothing is new here, but from my experience pepole like to abuse BASH, forget computer science and create a Big ball of mud from their programs. Here I provide methods to defend your programs from braking, and keep the code tidy and clean.\nImmutable global variables  Try to keep globals to minimum UPPER_CASE naming readonly decleration Use globals to replace cryptic $0, $1, etc. Globals I allways use in my programs:  readonly PROGNAME=$(basename $0) readonly PROGDIR=$(readlink -m $(dirname $0)) readonly ARGS=\"$@\" Everything is local All variables should be local.\nchange_owner_of_file() { local filename=$1 local user=$2 local group=$3 chown $user:$group $filename } change_owner_of_files() { local user=$1; shift local group=$1; shift local files=$@ local i for i in $files do chown $user:$group $i done }  Self documenting parameters Usually for loop use i variable, so it is very important that you declare it as local. Local does not work on global scope.  main()  Help keep all variables local Intuitive for functional programming The only global command in the code is: main  main() { local files=\"/tmp/a /tmp/b\" local i for i in $files do change_owner_of_file kfir users $i done } main Everything is a function  The only code that is running globaly is:  Global declarations that are immutable. main   Keep code clean Procedures become descriptive  main() { local files=$(ls /tmp | grep pid | grep -v daemon) } temporary_files() { local dir=$1 ls $dir \\  | grep pid \\  | grep -v daemon } main() { local files=$(temporary_files /tmp) }  Second example is much better. Finding files is the problem of temporary_files() and not of main()’s. This code is also testable, by unit testing of temporary_files(). If you try to test the first example, you will mish mash finding temporary files with main algorithm.  test_temporary_files() { local dir=/tmp touch $dir/a-pid1232.tmp touch $dir/a-pid1232-daemon.tmp returns \"$dir/a-pid1232.tmp\" temporary_files $dir touch $dir/b-pid1534.tmp returns \"$dir/a-pid1232.tmp $dir/b-pid1534.tmp\" temporary_files $dir } As we see, this test does not concern main().\nDebugging functions  Run program with -x flag:  bash -x my_prog.sh  Debug just a small section of code using set -x and set +x, which will print debug info just for the current code wrapped with set -x … set +x.  temporary_files() { local dir=$1 set -x ls $dir \\  | grep pid \\  | grep -v daemon set +x }  Printing function name and its arguments:  temporary_files() { echo $FUNCNAME $@ local dir=$1 ls $dir \\  | grep pid \\  | grep -v daemon } So calling the function:\ntemporary_files /tmp will print the standard output:\ntemporary_files /tmp Code clarity What does this code do?\nmain() { local dir=/tmp [[ -z $dir ]] \\  \u0026\u0026 do_something... [[ -n $dir ]] \\  \u0026\u0026 do_something... [[ -f $dir ]] \\  \u0026\u0026 do_something... [[ -d $dir ]] \\  \u0026\u0026 do_something... } main Let your code speak:\nis_empty() { local var=$1 [[ -z $var ]] } is_not_empty() { local var=$1 [[ -n $var ]] } is_file() { local file=$1 [[ -f $file ]] } is_dir() { local dir=$1 [[ -d $dir ]] } main() { local dir=/tmp is_empty $dir \\  \u0026\u0026 do_something... is_not_empty $dir \\  \u0026\u0026 do_something... is_file $dir \\  \u0026\u0026 do_something... is_dir $dir \\  \u0026\u0026 do_something... } main Each line does just one thing  Break expression with backslash “\\\"  For example:\ntemporary_files() { local dir=$1 ls $dir | grep pid | grep -v daemon } Can be written much cleaner:\ntemporary_files() { local dir=$1 ls $dir \\  | grep pid \\  | grep -v daemon }  Symbols at the start of the line indented  Bad example of symbols at the end:\ntemporary_files() { local dir=$1 ls $dir | \\  grep pid | \\  grep -v daemon } Good example where we clearly see the connection between lines and the connecting rods:\nprint_dir_if_not_empty() { local dir=$1 is_empty $dir \\  \u0026\u0026 echo \"dir is empty\" \\  || echo \"dir=$dir\" } Printing usage Don’t do this:\necho \"this prog does:...\" echo \"flags:\" echo \"-h print help\" It should be a function:\nusage() { echo \"this prog does:...\" echo \"flags:\" echo \"-h print help\" } echo is repeated in each line. For that we have Here Document:\nusage() { cat usage: $PROGNAME options Program deletes files from filesystems to release space. It gets config file that define fileystem paths to work on, and whitelist rules to keep certain files. OPTIONS: -c --config configuration file containing the rules. use --help-config to see the syntax. -n --pretend do not really delete, just how what you are going to do. -t --test run unit test to check the program -v --verbose Verbose. You can specify more then one -v to have more verbose -x --debug debug -h --help show this help --help-config configuration help Examples: Run all tests: $PROGNAME --test all Run specific test: $PROGNAME --test test_string.sh Run: $PROGNAME --config /path/to/config/$PROGNAME.conf Just show what you are going to do: $PROGNAME -vn -c /path/to/config/$PROGNAME.conf EOF } Pay attention that there should be real tab ‘\\t’ in the start of the line for each line. In vim you can use this replace command if your tab is 4 spaces:\n:s/^ /\\t/ Command line arguments Here is an example to comlement the usage function above. I got this from Kirk’s blog post - bash shell script to use getopts with gnu style long positional parameters:\ncmdline() { # got this idea from here: # http://kirk.webfinish.com/2009/10/bash-shell-script-to-use-getopts-with-gnu-style-long-positional-parameters/ local arg= for arg do local delim=\"\" case \"$arg\" in #translate --gnu-long-options to -g (short options) --config) args=\"${args}-c \";; --pretend) args=\"${args}-n \";; --test) args=\"${args}-t \";; --help-config) usage_config \u0026\u0026 exit 0;; --help) args=\"${args}-h \";; --verbose) args=\"${args}-v \";; --debug) args=\"${args}-x \";; #pass through anything else *) [[ \"${arg:0:1}\" == \"-\" ]] || delim=\"\\\"\" args=\"${args}${delim}${arg}${delim}\";; esac done #Reset the positional parameters to the short options eval set -- $args while getopts \"nvhxt:c:\" OPTION do case $OPTION in v) readonly VERBOSE=1 ;; h) usage exit 0 ;; x) readonly DEBUG='-x' set -x ;; t) RUN_TESTS=$OPTARG verbose VINFO \"Running tests\" ;; c) readonly CONFIG_FILE=$OPTARG ;; n) readonly PRETEND=1 ;; esac done if [[ $recursive_testing || -z $RUN_TESTS ]]; then [[ ! -f $CONFIG_FILE ]] \\  \u0026\u0026 eexit \"You must provide --config file\" fi return 0 } You can use it like this, using the immutable ARGS variable we defined at the top:\nmain() { cmdline $ARGS } main Unit testing  Very important in higher-level language Use shuint2 for unit testing  test_config_line_paths() { local s='partition cpm-all, 80-90,' returns \"/a\" \"config_line_paths '$s/a, '\" returns \"/a /b/c\" \"config_line_paths '$s/a:/b/c, '\" returns \"/a /b /c\" \"config_line_paths '$s/a : /b : /c, '\" } config_line_paths() { local partition_line=\"$@\" echo $partition_line \\  | csv_column 3 \\  | delete_spaces \\  | column 1 \\  | colons_to_spaces } source /usr/bin/shunit2 Here is another example using the df command:\nDF=df mock_df_with_eols() { cat Filesystem 1K-blocks Used Available Use% Mounted on /very/long/device/path 124628916 23063572 100299192 19% / EOF } test_disk_size() { returns 1000 \"disk_size /dev/sda1\" DF=mock_df_with_eols returns 124628916 \"disk_size /very/long/device/path\" } df_column() { local disk_device=$1 local column=$2 $DF $disk_device \\  | grep -v 'Use%' \\  | tr '\\n' ' ' \\  | awk \"{print \\$$column}\" } disk_size() { local disk_device=$1 df_column $disk_device 2 } Here I have exception, for testing, I declare DF in the global scope not readonly. This is because of shunit2 not allowing to change global scope functions.\n",
+  "wordCount" : "1253",
+  "inLanguage": "en",
+  "datePublished": "2023-01-31T00:00:00Z",
+  "dateModified": "2023-01-31T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://frippertronics.com/posts/defensive_bash_programming.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Frippertronics",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://frippertronics.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://frippertronics.com/" accesskey="h" title="Frippertronics (Alt + H)">Frippertronics</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Defensive BASH Programming
+    </h1>
+    <div class="post-meta"><span title='2023-01-31 00:00:00 +0000 UTC'>January 31, 2023</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="preface">Preface<a hidden class="anchor" aria-hidden="true" href="#preface">#</a></h2>
+<p>This is a repost of <a href="https://kfirlavi.herokuapp.com/blog/2012/11/14/defensive-bash-programming/">Defensive BASH programming</a> by Kfir Lavi from 2012-11-14.</p>
+<p>The original blog post has a tendency to go offline quite often.
+It is a set of <a href="https://en.wiktionary.org/wiki/kata#English">Katas</a> I regularly go back to when writing bash-scripts.</p>
+<h2 id="intro">Intro<a hidden class="anchor" aria-hidden="true" href="#intro">#</a></h2>
+<p>Here are my Katas for creating BASH programs that work. Nothing is new here, but from my experience pepole like to abuse BASH, forget computer science and create a Big ball of mud from their programs.
+Here I provide methods to defend your programs from braking, and keep the code tidy and clean.</p>
+<h2 id="immutable-global-variables">Immutable global variables<a hidden class="anchor" aria-hidden="true" href="#immutable-global-variables">#</a></h2>
+<ul>
+<li>Try to keep globals to minimum</li>
+<li>UPPER_CASE naming</li>
+<li>readonly decleration</li>
+<li>Use globals to replace cryptic $0, $1, etc.</li>
+<li>Globals I allways use in my programs:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">readonly PROGNAME<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>basename $0<span style="color:#66d9ef">)</span>
+readonly PROGDIR<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>readlink -m <span style="color:#66d9ef">$(</span>dirname $0<span style="color:#66d9ef">))</span>
+readonly ARGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
+</code></pre></div><h2 id="everything-is-local">Everything is local<a hidden class="anchor" aria-hidden="true" href="#everything-is-local">#</a></h2>
+<p>All variables should be local.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">change_owner_of_file<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local filename<span style="color:#f92672">=</span>$1
+    local user<span style="color:#f92672">=</span>$2
+    local group<span style="color:#f92672">=</span>$3
+
+    chown $user:$group $filename
+<span style="color:#f92672">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">change_owner_of_files<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local user<span style="color:#f92672">=</span>$1; shift
+    local group<span style="color:#f92672">=</span>$1; shift
+    local files<span style="color:#f92672">=</span>$@
+    local i
+
+    <span style="color:#66d9ef">for</span> i in $files
+    <span style="color:#66d9ef">do</span>
+        chown $user:$group $i
+    <span style="color:#66d9ef">done</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li>Self documenting parameters</li>
+<li>Usually for loop use i variable, so it is very important that you declare it as local.</li>
+<li>Local does not work on global scope.</li>
+</ul>
+<h2 id="main">main()<a hidden class="anchor" aria-hidden="true" href="#main">#</a></h2>
+<ul>
+<li>Help keep all variables local</li>
+<li>Intuitive for functional programming</li>
+<li>The only global command in the code is: main</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">main<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local files<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/tmp/a /tmp/b&#34;</span>
+    local i
+
+    <span style="color:#66d9ef">for</span> i in $files
+    <span style="color:#66d9ef">do</span>
+        change_owner_of_file kfir users $i
+    <span style="color:#66d9ef">done</span>
+<span style="color:#f92672">}</span>
+main
+</code></pre></div><h2 id="everything-is-a-function">Everything is a function<a hidden class="anchor" aria-hidden="true" href="#everything-is-a-function">#</a></h2>
+<ul>
+<li>The only code that is running globaly is:
+<ul>
+<li>Global declarations that are immutable.</li>
+<li>main</li>
+</ul>
+</li>
+<li>Keep code clean</li>
+<li>Procedures become descriptive</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">main<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local files<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>ls /tmp | grep pid | grep -v daemon<span style="color:#66d9ef">)</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">temporary_files<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local dir<span style="color:#f92672">=</span>$1
+
+    ls $dir <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        | grep pid <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        | grep -v daemon
+<span style="color:#f92672">}</span>
+
+main<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local files<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>temporary_files /tmp<span style="color:#66d9ef">)</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li><em>Second example is much better</em>. Finding files is the problem of temporary_files() and not of main()’s. This code is also testable, by unit testing of temporary_files().</li>
+<li>If you try to test the first example, you will mish mash finding temporary files with main algorithm.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">test_temporary_files<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local dir<span style="color:#f92672">=</span>/tmp
+
+    touch $dir/a-pid1232.tmp
+    touch $dir/a-pid1232-daemon.tmp
+
+    returns <span style="color:#e6db74">&#34;</span>$dir<span style="color:#e6db74">/a-pid1232.tmp&#34;</span> temporary_files $dir
+
+    touch $dir/b-pid1534.tmp
+
+    returns <span style="color:#e6db74">&#34;</span>$dir<span style="color:#e6db74">/a-pid1232.tmp </span>$dir<span style="color:#e6db74">/b-pid1534.tmp&#34;</span> temporary_files $dir
+<span style="color:#f92672">}</span>
+</code></pre></div><p>As we see, this test does not concern main().</p>
+<h2 id="debugging-functions">Debugging functions<a hidden class="anchor" aria-hidden="true" href="#debugging-functions">#</a></h2>
+<ul>
+<li>Run program with -x flag:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">bash -x my_prog.sh
+</code></pre></div><ul>
+<li>Debug just a small section of code using set -x and set +x, which will print debug info just for the current code wrapped with set -x … set +x.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">temporary_files<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local dir<span style="color:#f92672">=</span>$1
+
+    set -x
+    ls $dir <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        | grep pid <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        | grep -v daemon
+    set +x
+<span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li>Printing function name and its arguments:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">temporary_files<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    echo $FUNCNAME $@
+    local dir<span style="color:#f92672">=</span>$1
+
+    ls $dir <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        | grep pid <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        | grep -v daemon
+<span style="color:#f92672">}</span>
+</code></pre></div><p>So calling the function:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-console" data-lang="console">temporary_files /tmp
+</code></pre></div><p>will print the standard output:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-console" data-lang="console">temporary_files /tmp
+</code></pre></div><h2 id="code-clarity">Code clarity<a hidden class="anchor" aria-hidden="true" href="#code-clarity">#</a></h2>
+<p>What does this code do?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">main<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local dir<span style="color:#f92672">=</span>/tmp
+
+    <span style="color:#f92672">[[</span> -z $dir <span style="color:#f92672">]]</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        <span style="color:#f92672">&amp;&amp;</span> do_something...
+
+    <span style="color:#f92672">[[</span> -n $dir <span style="color:#f92672">]]</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        <span style="color:#f92672">&amp;&amp;</span> do_something...
+
+    <span style="color:#f92672">[[</span> -f $dir <span style="color:#f92672">]]</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        <span style="color:#f92672">&amp;&amp;</span> do_something...
+
+    <span style="color:#f92672">[[</span> -d $dir <span style="color:#f92672">]]</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        <span style="color:#f92672">&amp;&amp;</span> do_something...
+<span style="color:#f92672">}</span>
+main
+</code></pre></div><p>Let your code speak:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">is_empty<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local var<span style="color:#f92672">=</span>$1
+
+    <span style="color:#f92672">[[</span> -z $var <span style="color:#f92672">]]</span>
+<span style="color:#f92672">}</span>
+
+is_not_empty<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local var<span style="color:#f92672">=</span>$1
+
+    <span style="color:#f92672">[[</span> -n $var <span style="color:#f92672">]]</span>
+<span style="color:#f92672">}</span>
+
+is_file<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local file<span style="color:#f92672">=</span>$1
+
+    <span style="color:#f92672">[[</span> -f $file <span style="color:#f92672">]]</span>
+<span style="color:#f92672">}</span>
+
+is_dir<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local dir<span style="color:#f92672">=</span>$1
+
+    <span style="color:#f92672">[[</span> -d $dir <span style="color:#f92672">]]</span>
+<span style="color:#f92672">}</span>
+
+main<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local dir<span style="color:#f92672">=</span>/tmp
+
+    is_empty $dir <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        <span style="color:#f92672">&amp;&amp;</span> do_something...
+
+    is_not_empty $dir <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        <span style="color:#f92672">&amp;&amp;</span> do_something...
+
+    is_file $dir <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        <span style="color:#f92672">&amp;&amp;</span> do_something...
+
+    is_dir $dir <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        <span style="color:#f92672">&amp;&amp;</span> do_something...
+<span style="color:#f92672">}</span>
+main
+</code></pre></div><h2 id="each-line-does-just-one-thing">Each line does just one thing<a hidden class="anchor" aria-hidden="true" href="#each-line-does-just-one-thing">#</a></h2>
+<ul>
+<li>Break expression with backslash &ldquo;\&quot;</li>
+</ul>
+<p>For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">temporary_files<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local dir<span style="color:#f92672">=</span>$1
+
+    ls $dir | grep pid | grep -v daemon
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Can be written much cleaner:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">temporary_files<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local dir<span style="color:#f92672">=</span>$1
+
+    ls $dir <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        | grep pid <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        | grep -v daemon
+<span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li>Symbols at the start of the line indented</li>
+</ul>
+<p>Bad example of symbols at the end:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">temporary_files<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local dir<span style="color:#f92672">=</span>$1
+
+    ls $dir | <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        grep pid | <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        grep -v daemon
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Good example where we clearly see the connection between lines and the connecting rods:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">print_dir_if_not_empty<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local dir<span style="color:#f92672">=</span>$1
+
+    is_empty $dir <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        <span style="color:#f92672">&amp;&amp;</span> echo <span style="color:#e6db74">&#34;dir is empty&#34;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        <span style="color:#f92672">||</span> echo <span style="color:#e6db74">&#34;dir=</span>$dir<span style="color:#e6db74">&#34;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h2 id="printing-usage">Printing usage<a hidden class="anchor" aria-hidden="true" href="#printing-usage">#</a></h2>
+<p>Don&rsquo;t do this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">echo <span style="color:#e6db74">&#34;this prog does:...&#34;</span>
+echo <span style="color:#e6db74">&#34;flags:&#34;</span>
+echo <span style="color:#e6db74">&#34;-h print help&#34;</span>
+</code></pre></div><p>It should be a function:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">usage<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    echo <span style="color:#e6db74">&#34;this prog does:...&#34;</span>
+    echo <span style="color:#e6db74">&#34;flags:&#34;</span>
+    echo <span style="color:#e6db74">&#34;-h print help&#34;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>echo is repeated in each line. For that we have Here Document:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">usage<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    cat <span style="color:#e6db74">&lt;&lt;- EOF
+</span><span style="color:#e6db74">    usage: $PROGNAME options
+</span><span style="color:#e6db74">    
+</span><span style="color:#e6db74">    Program deletes files from filesystems to release space. 
+</span><span style="color:#e6db74">    It gets config file that define fileystem paths to work on, and whitelist rules to 
+</span><span style="color:#e6db74">    keep certain files.
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">    OPTIONS:
+</span><span style="color:#e6db74">       -c --config              configuration file containing the rules. use --help-config to see the syntax.
+</span><span style="color:#e6db74">       -n --pretend             do not really delete, just how what you are going to do.
+</span><span style="color:#e6db74">       -t --test                run unit test to check the program
+</span><span style="color:#e6db74">       -v --verbose             Verbose. You can specify more then one -v to have more verbose
+</span><span style="color:#e6db74">       -x --debug               debug
+</span><span style="color:#e6db74">       -h --help                show this help
+</span><span style="color:#e6db74">          --help-config         configuration help
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">    
+</span><span style="color:#e6db74">    Examples:
+</span><span style="color:#e6db74">       Run all tests:
+</span><span style="color:#e6db74">       $PROGNAME --test all
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">       Run specific test:
+</span><span style="color:#e6db74">       $PROGNAME --test test_string.sh
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">       Run:
+</span><span style="color:#e6db74">       $PROGNAME --config /path/to/config/$PROGNAME.conf
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">       Just show what you are going to do:
+</span><span style="color:#e6db74">       $PROGNAME -vn -c /path/to/config/$PROGNAME.conf
+</span><span style="color:#e6db74">    EOF</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Pay attention that there should be real tab ‘\t’ in the start of the line for each line.
+In vim you can use this replace command if your tab is 4 spaces:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-console" data-lang="console">:s/^    /\t/
+</code></pre></div><h2 id="command-line-arguments">Command line arguments<a hidden class="anchor" aria-hidden="true" href="#command-line-arguments">#</a></h2>
+<p>Here is an example to comlement the usage function above. I got this from <a href="http://kirk.webfinish.com/2009/10/bash-shell-script-to-use-getopts-with-gnu-style-long-positional-parameters/">Kirk’s blog post - bash shell script to use getopts with gnu style long
+positional parameters:</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cmdline<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    <span style="color:#75715e"># got this idea from here:</span>
+    <span style="color:#75715e"># http://kirk.webfinish.com/2009/10/bash-shell-script-to-use-getopts-with-gnu-style-long-positional-parameters/</span>
+    local arg<span style="color:#f92672">=</span>
+    <span style="color:#66d9ef">for</span> arg
+    <span style="color:#66d9ef">do</span>
+        local delim<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>
+        <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;</span>$arg<span style="color:#e6db74">&#34;</span> in
+            <span style="color:#75715e">#translate --gnu-long-options to -g (short options)</span>
+            --config<span style="color:#f92672">)</span>         args<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>args<span style="color:#e6db74">}</span><span style="color:#e6db74">-c &#34;</span>;;
+            --pretend<span style="color:#f92672">)</span>        args<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>args<span style="color:#e6db74">}</span><span style="color:#e6db74">-n &#34;</span>;;
+            --test<span style="color:#f92672">)</span>           args<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>args<span style="color:#e6db74">}</span><span style="color:#e6db74">-t &#34;</span>;;
+            --help-config<span style="color:#f92672">)</span>    usage_config <span style="color:#f92672">&amp;&amp;</span> exit 0;;
+            --help<span style="color:#f92672">)</span>           args<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>args<span style="color:#e6db74">}</span><span style="color:#e6db74">-h &#34;</span>;;
+            --verbose<span style="color:#f92672">)</span>        args<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>args<span style="color:#e6db74">}</span><span style="color:#e6db74">-v &#34;</span>;;
+            --debug<span style="color:#f92672">)</span>          args<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>args<span style="color:#e6db74">}</span><span style="color:#e6db74">-x &#34;</span>;;
+            <span style="color:#75715e">#pass through anything else</span>
+            *<span style="color:#f92672">)</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>arg:0:1<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;-&#34;</span> <span style="color:#f92672">]]</span> <span style="color:#f92672">||</span> delim<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;\&#34;&#34;</span>
+                args<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>args<span style="color:#e6db74">}${</span>delim<span style="color:#e6db74">}${</span>arg<span style="color:#e6db74">}${</span>delim<span style="color:#e6db74">}</span><span style="color:#e6db74"> &#34;</span>;;
+        <span style="color:#66d9ef">esac</span>
+    <span style="color:#66d9ef">done</span>
+
+    <span style="color:#75715e">#Reset the positional parameters to the short options</span>
+    eval set -- $args
+
+    <span style="color:#66d9ef">while</span> getopts <span style="color:#e6db74">&#34;nvhxt:c:&#34;</span> OPTION
+    <span style="color:#66d9ef">do</span>
+         <span style="color:#66d9ef">case</span> $OPTION in
+         v<span style="color:#f92672">)</span>
+             readonly VERBOSE<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+             ;;
+         h<span style="color:#f92672">)</span>
+             usage
+             exit <span style="color:#ae81ff">0</span>
+             ;;
+         x<span style="color:#f92672">)</span>
+             readonly DEBUG<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;-x&#39;</span>
+             set -x
+             ;;
+         t<span style="color:#f92672">)</span>
+             RUN_TESTS<span style="color:#f92672">=</span>$OPTARG
+             verbose VINFO <span style="color:#e6db74">&#34;Running tests&#34;</span>
+             ;;
+         c<span style="color:#f92672">)</span>
+             readonly CONFIG_FILE<span style="color:#f92672">=</span>$OPTARG
+             ;;
+         n<span style="color:#f92672">)</span>
+             readonly PRETEND<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+             ;;
+        <span style="color:#66d9ef">esac</span>
+    <span style="color:#66d9ef">done</span>
+
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> $recursive_testing <span style="color:#f92672">||</span> -z $RUN_TESTS <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+        <span style="color:#f92672">[[</span> ! -f $CONFIG_FILE <span style="color:#f92672">]]</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>            <span style="color:#f92672">&amp;&amp;</span> eexit <span style="color:#e6db74">&#34;You must provide --config file&#34;</span>
+    <span style="color:#66d9ef">fi</span>
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>You can use it like this, using the immutable ARGS variable we defined at the top:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">main<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    cmdline $ARGS
+<span style="color:#f92672">}</span>
+main
+</code></pre></div><h2 id="unit-testing">Unit testing<a hidden class="anchor" aria-hidden="true" href="#unit-testing">#</a></h2>
+<ul>
+<li>Very important in higher-level language</li>
+<li>Use <a href="http://code.google.com/p/shunit2/">shuint2</a> for unit testing</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">test_config_line_paths<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local s<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;partition cpm-all, 80-90,&#39;</span>
+
+    returns <span style="color:#e6db74">&#34;/a&#34;</span> <span style="color:#e6db74">&#34;config_line_paths &#39;</span>$s<span style="color:#e6db74"> /a, &#39;&#34;</span>
+    returns <span style="color:#e6db74">&#34;/a /b/c&#34;</span> <span style="color:#e6db74">&#34;config_line_paths &#39;</span>$s<span style="color:#e6db74"> /a:/b/c, &#39;&#34;</span>
+    returns <span style="color:#e6db74">&#34;/a /b /c&#34;</span> <span style="color:#e6db74">&#34;config_line_paths &#39;</span>$s<span style="color:#e6db74">   /a  :    /b : /c, &#39;&#34;</span>
+<span style="color:#f92672">}</span>
+
+config_line_paths<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local partition_line<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$@<span style="color:#e6db74">&#34;</span>
+
+    echo $partition_line <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        | csv_column <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        | delete_spaces <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        | column <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        | colons_to_spaces
+<span style="color:#f92672">}</span>
+
+source /usr/bin/shunit2
+</code></pre></div><p>Here is another example using the df command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">DF<span style="color:#f92672">=</span>df
+
+mock_df_with_eols<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    cat <span style="color:#e6db74">&lt;&lt;- EOF
+</span><span style="color:#e6db74">    Filesystem           1K-blocks      Used Available Use% Mounted on
+</span><span style="color:#e6db74">    /very/long/device/path
+</span><span style="color:#e6db74">                         124628916  23063572 100299192  19% /
+</span><span style="color:#e6db74">    EOF</span>
+<span style="color:#f92672">}</span>
+
+test_disk_size<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    returns <span style="color:#ae81ff">1000</span> <span style="color:#e6db74">&#34;disk_size /dev/sda1&#34;</span>
+
+    DF<span style="color:#f92672">=</span>mock_df_with_eols
+    returns <span style="color:#ae81ff">124628916</span> <span style="color:#e6db74">&#34;disk_size /very/long/device/path&#34;</span>
+<span style="color:#f92672">}</span>
+
+df_column<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local disk_device<span style="color:#f92672">=</span>$1
+    local column<span style="color:#f92672">=</span>$2
+
+    $DF $disk_device <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        | grep -v <span style="color:#e6db74">&#39;Use%&#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        | tr <span style="color:#e6db74">&#39;\n&#39;</span> <span style="color:#e6db74">&#39; &#39;</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>        | awk <span style="color:#e6db74">&#34;{print \$</span>$column<span style="color:#e6db74">}&#34;</span>
+<span style="color:#f92672">}</span>
+
+disk_size<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local disk_device<span style="color:#f92672">=</span>$1
+
+    df_column $disk_device <span style="color:#ae81ff">2</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Here I have exception, for testing, I declare DF in the global scope not readonly. This is because of shunit2 not allowing to change global scope functions.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://frippertronics.com/tags/programming.html">programming</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="http://frippertronics.com/">Frippertronics</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

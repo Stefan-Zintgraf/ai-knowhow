@@ -1,0 +1,218 @@
+### HEADER
+Id=10967
+Link=http://at-zammad/#ticket/zoom/10967
+Group=EC-Support (ID=2)
+Priority=low (ID=1)
+State=closed (ID=4)
+Organization=Applied Materials, Inc. (ID=332, Number=50007, Country=US)
+Commission=Applied Materials, Silicon and Solar (ID=397, Number=397)
+Number=7010967
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=evgueni_lobovski@amat.com (ID=1281, FirstName=Evgueni, LastName=Lobovski)
+CreatedBy=evgueni_lobovski@amat.com (ID=1281, FirstName=Evgueni, LastName=Lobovski)
+Type=
+TimeUnit=
+CreatedAt=09.07.2025 08:51:08 +00:00
+UpdatedAt=19.12.2025 08:50:07 +00:00
+CloseAt=19.12.2025 08:50:07 +00:00
+ArticlesCount=7
+
+### TITLE
+new request Tx deadline callback
+
+### ARTICLE00_HEADER
+Id=62828
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.07.2025 08:51:08 +00:00
+UpdatedAt=09.07.2025 08:51:13 +00:00
+
+### ARTICLE00_SUBJECT
+new request Tx deadline callback
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>I have new request for you. We need an ability to not send frames if it’s ‘too late’. There are cases when our application stalls inside acontis Tx call for long enough to cause DCM to go out of sync. So we’d better not send frames at all, rather than sending them late.</p>
+<p> </p>
+<p>Below is the way I modified code in 2.8 (main goal was to make minimal changes) and is for illustration purpose only.</p>
+<p> </p>
+<ol start="1" type="1">
+<li>typedef EC_T_BOOL (*EC_T_LINK_TX_DEADLINE_CB)(EC_T_PVOID pCallerData); </li>
+</ol>
+<p> </p>
+<ol start="2" type="1">
+<li>… </li>
+</ol>
+<p>EC_T_LINK_TX_DEADLINE_CB pfnIsTxDeadlineMet;</p>
+<p>EC_T_PVOID pvTxDeadlineContext;</p>
+<p>} EC_PACKED(8) EC_T_LINK_FRAMEDESC;</p>
+<p> </p>
+<ol start="3" type="1">
+<li>static EC_T_DWORD EcLinkSendFrame( </li>
+</ol>
+<p>…</p>
+<p>/* if too late to send frame, reset frame's size to 0 - i.e. send frame of 0 size */</p>
+<p>EC_T_BOOL bSkip = EC_NULL != pLinkFrameDesc-&gt;pfnIsTxDeadlineMet &amp;&amp; !pLinkFrameDesc-&gt;pfnIsTxDeadlineMet(pLinkFrameDesc-&gt;pvTxDeadlineContext);</p>
+<p>if (bSkip)</p>
+<p>{</p>
+<p>EC_LL_T_TransDescriptor_SET_LENGTH(pPhysDesc, 0U);</p>
+<p>}</p>
+<p>REGISTER_WRITE(pAdapter-&gt;pbyRegisterBase, I8254X_REGOFFS_TRANSMIT_TDT, pAdapter-&gt;dwTxNextTail);</p>
+<p>…</p>
+<p>dwRetVal = bSkip ? EC_E_FRAME_LOST : EC_E_NOERROR;</p>
+<p>)</p>
+<p> </p>
+<p>Regards,</p>
+<p>Eugene</p>
+<p><span style="color:gray;"> </span></p>
+<p><span style="color:gray;">The content of this message is Applied Materials Confidential. If you are not the intended recipient and have received this message in error, any use or distribution is prohibited. Please notify me immediately by reply e-mail and delete this message from your computer system. Thank you.</span><span style="color:#1f497d;"></span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=63660
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.07.2025 00:32:01 +00:00
+UpdatedAt=26.07.2025 00:32:01 +00:00
+
+### ARTICLE01_SUBJECT
+new request Tx deadline callback
+
+### ARTICLE01_BODY
+<div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>Not sure if you missed this request, but please let me know if you consider it valid/not valid improvement or need more info.</p>
+<p> </p>
+<p>Another request is, please provide latest official build of Acontis master. Need following targets:</p>
+<ol start="1" type="1">
+<li>Windows, 32 and 64 bits, WinPcap and opt link layer </li>
+<li>Windows CE, 32 bits and opt link layer </li>
+<li>Linux, 64 bits and opt link layer </li>
+</ol>
+<p> </p>
+<div>
+<p>Thanks in advance,</p>
+<p>Eugene</p>
+<p><span style="color:gray;"> </span></p>
+<p><span style="color:gray;">The content of this message is Applied Materials Confidential. If you are not the intended recipient and have received this message in error, any use or distribution is prohibited. Please notify me immediately by reply e-mail and delete this message from your computer system. Thank you.</span><span style="color:#1f497d;"></span></p>
+<p> </p>
+</div>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b><span> Eugene Lobovski <br>
+<b>Sent:</b> Tuesday, July 8, 2025 10:36 AM<br>
+<b>To:</b> Cyril Eyssautier (c.eyssautier@acontis.com) &lt;c.eyssautier@acontis.com&gt;<br>
+<b>Cc:</b> Brett Hoogensen &lt;Brett_Hoogensen@amat.com&gt;<br>
+<b>Subject:</b> new request Tx deadline callback</span></p>
+</div>
+</div>
+<p> </p>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>I have new request for you. We need an ability to not send frames if it’s ‘too late’. There are cases when our application stalls inside acontis Tx call for long enough to cause DCM to go out of sync. So we’d better not send frames at all, rather than sending them late.</p>
+<p> </p>
+<p>Below is the way I modified code in 2.8 (main goal was to make minimal changes) and is for illustration purpose only.</p>
+<p> </p>
+<ol start="1" type="1">
+<li>typedef EC_T_BOOL (*EC_T_LINK_TX_DEADLINE_CB)(EC_T_PVOID pCallerData); </li>
+</ol>
+<p> </p>
+<ol start="2" type="1">
+<li>… </li>
+</ol>
+<p>EC_T_LINK_TX_DEADLINE_CB pfnIsTxDeadlineMet;</p>
+<p>EC_T_PVOID pvTxDeadlineContext;</p>
+<p>} EC_PACKED(8) EC_T_LINK_FRAMEDESC;</p>
+<p> </p>
+<ol start="3" type="1">
+<li>static EC_T_DWORD EcLinkSendFrame( </li>
+</ol>
+<p>…</p>
+<p>/* if too late to send frame, reset frame's size to 0 - i.e. send frame of 0 size */</p>
+<p>EC_T_BOOL bSkip = EC_NULL != pLinkFrameDesc-&gt;pfnIsTxDeadlineMet &amp;&amp; !pLinkFrameDesc-&gt;pfnIsTxDeadlineMet(pLinkFrameDesc-&gt;pvTxDeadlineContext);</p>
+<p>if (bSkip)</p>
+<p>{</p>
+<p>EC_LL_T_TransDescriptor_SET_LENGTH(pPhysDesc, 0U);</p>
+<p>}</p>
+<p>REGISTER_WRITE(pAdapter-&gt;pbyRegisterBase, I8254X_REGOFFS_TRANSMIT_TDT, pAdapter-&gt;dwTxNextTail);</p>
+<p>…</p>
+<p>dwRetVal = bSkip ? EC_E_FRAME_LOST : EC_E_NOERROR;</p>
+<p>)</p>
+<p> </p>
+<p>Regards,</p>
+<p>Eugene</p>
+<p><span style="color:gray;"> </span></p>
+<p><span style="color:gray;">The content of this message is Applied Materials Confidential. If you are not the intended recipient and have received this message in error, any use or distribution is prohibited. Please notify me immediately by reply e-mail and delete this message from your computer system. Thank you.</span><span style="color:#1f497d;"></span></p>
+<p> </p>
+</div>
+
+### ARTICLE02_HEADER
+Id=66402
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.09.2025 00:02:13 +00:00
+UpdatedAt=28.09.2025 00:02:15 +00:00
+
+### ARTICLE02_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE02_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".<div><br></div><div>NOTE:</div><div>Please try to close this ticket, if everything is discussed with the customer and create a new issue in git lab if necessary.</div>
+
+### ARTICLE03_HEADER
+Id=67064
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=15.10.2025 09:42:13 +00:00
+UpdatedAt=15.10.2025 09:42:13 +00:00
+
+### ARTICLE03_BODY
+V3.2.3.02 delivered on 2025-07-28 
+
+### ARTICLE04_HEADER
+Id=68254
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.11.2025 01:04:44 +00:00
+UpdatedAt=09.11.2025 01:04:48 +00:00
+
+### ARTICLE04_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE04_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".<div><br></div><div>NOTE:</div><div>Please try to close this ticket, if everything is discussed with the customer and create a new issue in git lab if necessary.</div>
+
+### ARTICLE05_HEADER
+Id=69404
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.12.2025 01:04:11 +00:00
+UpdatedAt=07.12.2025 01:04:17 +00:00
+
+### ARTICLE05_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE05_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".<div><br></div><div>NOTE:</div><div>Please try to close this ticket, if everything is discussed with the customer and create a new issue in git lab if necessary.</div>
+
+### ARTICLE06_HEADER
+Id=70033
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=19.12.2025 08:50:07 +00:00
+UpdatedAt=19.12.2025 08:50:07 +00:00
+
+### ARTICLE06_BODY
+<a href="http://at-dev-git/ec-embedded/ec-embedded/-/issues/6515" title="http://at-dev-git/ec-embedded/ec-embedded/-/issues/6515" rel="nofollow noreferrer noopener" target="_blank">http://at-dev-git/ec-embedded/ec-embedded/-/issues/6515</a>

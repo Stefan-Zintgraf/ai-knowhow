@@ -1,0 +1,126 @@
+### HEADER
+Id=1190
+Link=http://at-zammad/#ticket/zoom/1190
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Chroma, Unknown (ID=550, Number=550)
+Number=701190
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=06.08.2021 13:00:17 +00:00
+UpdatedAt=01.12.2021 09:46:48 +00:00
+CloseAt=01.12.2021 09:46:48 +00:00
+ArticlesCount=2
+
+### TITLE
+The protential customer chroma problem about support AM654x
+
+### ARTICLE00_HEADER
+Id=6502
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.08.2021 13:00:18 +00:00
+UpdatedAt=06.08.2021 13:00:20 +00:00
+
+### ARTICLE00_SUBJECT
+The protential customer chroma problem about support AM654x
+
+### ARTICLE00_BODY
+<div>
+<div>Dear,</div>
+<div>The protential customer want to using the TI AM654x with D83822 PHY, Do you think ECMaster could support it?</div>
+<div>And If the customer want to supporting the PRU, Do you think it is the problem for the ECMaster?</div>
+<div>And we didn't find the download from Acontis EtherCAT Download-links, So we are not sure the ECMaster could support AM654x.</div>
+<div> </div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=6570
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.08.2021 07:11:39 +00:00
+UpdatedAt=10.08.2021 07:11:41 +00:00
+
+### ARTICLE01_SUBJECT
+The protential customer chroma problem about support AM654x
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>DP83822 is currently not supported. Here is the list of the supported PHYs:</div><div><br></div><div>
+<div>#define PHY_ID_AM79C874      0x0022561b   /**&lt; AMD Am79C874 NetPHY-1LP */</div>
+<div>#define PHY_ID_AR8031        0x004dd074   /**&lt; Qualcomm Atheros AR8031 */</div>
+<div>#define PHY_ID_AR8035        0x004dd072   /**&lt; Qualcomm Atheros AR8035 */</div>
+<div>#define PHY_ID_DP83640       0x20005ce1   /**&lt; Texas Instruments DP83640 */</div>
+<div>#define PHY_ID_DP83867       0x2000A231   /**&lt; Texas Instruments DP83867 */</div>
+<div>#define PHY_ID_KSZ8041       0x00221512   /**&lt; Microchip KSZ8041 */</div>
+<div>#define PHY_ID_KSZ8051       0x00221550   /**&lt; Microchip KSZ8051 */</div>
+<div>#define PHY_ID_KSZ8061RN     0x00221573   /**&lt; Microchip KSZ8061RN */</div>
+<div>#define PHY_ID_KSZ8081       0x00221560   /**&lt; Microchip KSZ8081 */</div>
+<div>#define PHY_ID_KSZ9021       0x00221610   /**&lt; Microchip KSZ9021 */</div>
+<div>#define PHY_ID_KSZ9031       0x00221620   /**&lt; Microchip KSZ9031 */</div>
+<div>#define PHY_ID_KSZ9131       0x00221640   /**&lt; Microchip KSZ9131 */</div>
+<div>#define PHY_ID_LAN8700       0x0007c0c3   /**&lt; Microchip LAN8700 */</div>
+<div>#define PHY_ID_LAN8720       0x0007c0f1   /**&lt; Microchip LAN8720 */</div>
+<div>#define PHY_ID_M88E1510      0x01410dd0   /**&lt; MARVELL 88E1510 */</div>
+<div>#define PHY_ID_RTL8211B      0x001CC912   /**&lt; Realtek RTL8211N */</div>
+<div>#define PHY_ID_TLK1XX        0x2000A210   /**&lt; Texas Instruments TLK1xx */</div>
+</div><div><br></div><div>Supporting <span>DP83822 would means some adaptation effort. Additionally on the </span><span>AM654x platform we currently support only ICSS Linklayer under TI-RTOS. But we don't have an official delivery. It will be done by Daniel in September.</span>
+</div><div><br></div><div>Best Regards,</div><div>Cyril<div><br></div>
+<div><blockquote type="cite">On Friday, August 6, 2021, 3:00:18 PM, John Zhang wrote:<br><br><div>
+<div>Dear,</div>
+<div>The protential customer want to using the TI AM654x with D83822 PHY, Do you think ECMaster could support it?</div>
+<div>And If the customer want to supporting the PRU, Do you think it is the problem for the ECMaster?</div>
+<div>And we didn't find the download from Acontis EtherCAT Download-links, So we are not sure the ECMaster could support AM654x.</div>
+<div> </div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

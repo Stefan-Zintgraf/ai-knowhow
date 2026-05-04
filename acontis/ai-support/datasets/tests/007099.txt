@@ -1,0 +1,118 @@
+### HEADER
+Id=7099
+Link=http://at-zammad/#ticket/zoom/7099
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=Hyundai Robotics., Robot Cont. (ID=340, Number=340)
+Number=707099
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=18.12.2023 07:10:18 +00:00
+UpdatedAt=22.12.2023 08:55:03 +00:00
+CloseAt=22.12.2023 08:55:03 +00:00
+ArticlesCount=2
+
+### TITLE
+Problem with EC-Engineer not being installed even though installed the latest CodeMeter Runtime Kit v8.00
+
+### ARTICLE00_HEADER
+Id=38643
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.12.2023 07:10:18 +00:00
+UpdatedAt=18.12.2023 07:10:19 +00:00
+
+### ARTICLE00_SUBJECT
+Problem with EC-Engineer not being installed even though installed the latest CodeMeter Runtime Kit v8.00
+
+### ARTICLE00_BODY
+<p>Hi.</p><p><br></p><p>The custimer is Hyndai Robotics.</p><p><br></p><p>EC Engineer(Dongle version) was not installed even though installed the latest CodeMeter Runtime(V8.00)</p><p><br></p><p><br></p><p><img border="0" src="/api/v1/ticket_attachment/7099/38643/160743?view=inline" style="max-width:100%;width: 4.2916in;max-height: 1.5833in;width:412px;max-height:152px;" alt=""></p><p><br></p><p><br></p><p>We checked there is no problem if installing old version(Code Meter Runtime v7.6) that we had</p><p><br></p><p>But the customer can only download the latest version from the Wibu Website.</p><p><br></p><p>Please advise.</p><p><br></p><p><br></p><p><br></p><br><br><p>감사합니다.</p><p><br></p><p>Thank you</p><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p> </p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sundukhan@prestosolution.co.kr</a></span></u></i><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table><p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+
+### ARTICLE01_HEADER
+Id=38646
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.12.2023 07:22:36 +00:00
+UpdatedAt=18.12.2023 07:22:40 +00:00
+
+### ARTICLE01_SUBJECT
+Problem with EC-Engineer not being installed even though installed the latest CodeMeter Runtime Kit v8.00
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>this is a known issue, due to changes in the WIBU Software. With the latest EC-Engineer it will work again:</div><div><br></div><div> <a href="https://downloads.acontis.com/2023/G-I/Hyundai_Robotics_(40103)(KR)/EC-Engineer/3.8.6/EC-Engineer_Dongle_V3.8.6.zip" title="https://downloads.acontis.com/2023/G-I/Hyundai_Robotics_(40103)(KR)/EC-Engineer/3.8.6/EC-Engineer_Dongle_V3.8.6.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/G-I/Hyundai_Robotics_(40103)(KR)/EC-Engineer/3.8.6/EC-Engineer_Dongle_V3.8.6.zip</a>
+</div><div><br></div><div>Otherwise the customer has to use an older WIBU version.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, December 18, 2023 at 8:10:18 AM, DukHan Sun wrote:<br><br><p>Hi.</p>
+<p><br></p>
+<p>The custimer is Hyndai Robotics.</p>
+<p><br></p>
+<p>EC Engineer(Dongle version) was not installed even though installed the latest CodeMeter Runtime(V8.00)</p>
+<p><br></p>
+<p><br></p>
+<p><img border="0" src="/api/v1/ticket_attachment/7099/38646/160759?view=inline" style="max-width:100%;max-width:100%;width: 4.2916in;max-height: 1.5833in;width:412px;max-height:152px;" alt=""></p>
+<p><br></p>
+<p><br></p>
+<p>We checked there is no problem if installing old version(Code Meter Runtime v7.6) that we had</p>
+<p><br></p>
+<p>But the customer can only download the latest version from the Wibu Website.</p>
+<p><br></p>
+<p>Please advise.</p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<br><br><p>감사합니다.</p>
+<p><br></p>
+<p>Thank you</p>
+<p><br></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p> </p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sundukhan@prestosolution.co.kr</a></span></u></i><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

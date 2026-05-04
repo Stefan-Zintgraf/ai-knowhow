@@ -1,0 +1,160 @@
+### HEADER
+Id=6254
+Link=http://at-zammad/#ticket/zoom/6254
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=NRSC (ID=728, Number=0, Country=IN)
+Commission=NRSC, Unknown (ID=815, Number=815)
+Number=706254
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=nama_naresh@nrsc.gov.in (ID=2169, FirstName=Nama, LastName=Naresh)
+CreatedBy=nama_naresh@nrsc.gov.in (ID=2169, FirstName=Nama, LastName=Naresh)
+Type=
+TimeUnit=
+CreatedAt=31.08.2023 07:03:58 +00:00
+UpdatedAt=31.10.2023 12:43:00 +00:00
+CloseAt=22.09.2023 06:11:07 +00:00
+ArticlesCount=2
+
+### TITLE
+Regarding Computer PC as EtherCAT Master
+
+### ARTICLE00_HEADER
+Id=33532
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.08.2023 07:03:58 +00:00
+UpdatedAt=31.08.2023 07:03:58 +00:00
+
+### ARTICLE00_SUBJECT
+Regarding Computer PC as EtherCAT Master
+
+### ARTICLE00_BODY
+<div>
+<div> <p><span lang="EN-GB"><p>Dear Sir,</p></span></p>
+<p><span lang="EN-GB"><p> </p></span></p>
+<p><span lang="EN-GB">We have recently started working with EC Engineer software and Slave test Application evaluation versions.</span></p>
+<p><span lang="EN-GB">We are using EC Engineer and EC Master to make Computer PC as EtherCAT master and the slave is E180 Servo drive manufactured by ABB.</span></p>
+<p><span lang="EN-GB">In this process we are testing few Process data Objects (PDO's).</span></p>
+<p><span lang="EN-GB">We have followed the procedure of EC Master quickstart guide, and everything worked fine.</span></p>
+<p><span lang="EN-GB">But we are unable to find out the configuration with PDO Mapping. When we connect the slave and Motor position, servo drives fault are not updating in respective PDO's such as Actual Position (6064), Status Word PDO (6041).</span></p>
+<p><span lang="EN-GB">We have also installed Lx Win, but whenever we operate the Lx Win, the Ethernet ports of CPU are converted to virtual ports. And the PC does not recognise any Ethernet ports. We are unable to resolve these issues.</span></p>
+<p> </p>
+<p>Following PDO’s are defined for servo drive:</p>
+<p>Input PDO’s:</p>
+<p>#define Slave_0_6041_0_AX0_StatusWord</p>
+<p>#define Slave_0_6064_0_AX0_ActualPosition</p>
+<p>#define Slave_0_6078_0_AX0_CurrentActual</p>
+<p>#define Slave_0_6079_0_AX0_DCLinkCircuit</p>
+<p>#define Slave_0_60FD_0_AX0_DigitalInputs</p>
+<p>#define Slave_0_606C_0_AX0_ActualVelocit</p>
+<p>#define Slave_0_603F_0_AX0_ErrorCode</p>
+<p> </p>
+<p>Output PDO’s:</p>
+<p>#define Slave_0_6040_0_AX0_ControlWord</p>
+<p>#define Slave_0_607A_0_AX0_TargetPosition</p>
+<p>#define Slave_0_6060_0_AX0_ModesOfOperate</p>
+<p>#define Slave_0_6071_0_AX0_TargetTorque</p>
+<p> </p>
+<p><span>I request you to kindly send a full procedure to make PC as EtherCAT master and Servo drive as EtherCAT slave to work through EtherCAT real time protocol.<span lang="EN-GB"></span></span></p>
+<p> <br></p>
+<p> </p>
+<div> <p>Regards,</p>
+</div>
+<div> <p>Nama Naresh,</p>
+</div>
+<div> <p>SSD/S&amp;ASG/SDR&amp;ISA,</p>
+</div>
+<div> <p>NRSC, Hyderabad.</p>
+</div>
+<p> </p>
+<p>Phone No:08542225206/5209</p>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=33652
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.09.2023 15:27:27 +00:00
+UpdatedAt=01.09.2023 15:27:28 +00:00
+
+### ARTICLE01_SUBJECT
+Regarding Computer PC as EtherCAT Master
+
+### ARTICLE01_BODY
+Hi Nama,<div><br></div><div>Unfortunately, we don't have this kind of document :)</div><div><br></div><div>Using LxWin, you need to program in the real-time Linux context running on top of Windows. The network adapters are not available under Windows anymore. You can connect EC-Engineer remotely to the real-time application.</div><div><br></div><div>Regarding the PDO mapping, it should be possible to select the mapping, that you need in EC-Engineer. I don't have the ESI file of the ABB drive, but it should be similar the other drives like this:</div><div>
+<img style="max-width:100%;width: 973px;max-width: 100%;" src="/api/v1/ticket_attachment/6254/33652/140636?view=inline"><br>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, August 31, 2023 at 9:03:58 AM, nama_naresh@nrsc.gov.in wrote:<br><br><div>
+<div> <p><span lang="EN-GB"></span></p>
+<p>Dear Sir,</p>
+<p></p>
+<p><span lang="EN-GB"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-GB">We have recently started working with EC Engineer software and Slave test Application evaluation versions.</span></p>
+<p><span lang="EN-GB">We are using EC Engineer and EC Master to make Computer PC as EtherCAT master and the slave is E180 Servo drive manufactured by ABB.</span></p>
+<p><span lang="EN-GB">In this process we are testing few Process data Objects (PDO's).</span></p>
+<p><span lang="EN-GB">We have followed the procedure of EC Master quickstart guide, and everything worked fine.</span></p>
+<p><span lang="EN-GB">But we are unable to find out the configuration with PDO Mapping. When we connect the slave and Motor position, servo drives fault are not updating in respective PDO's such as Actual Position (6064), Status Word PDO (6041).</span></p>
+<p><span lang="EN-GB">We have also installed Lx Win, but whenever we operate the Lx Win, the Ethernet ports of CPU are converted to virtual ports. And the PC does not recognise any Ethernet ports. We are unable to resolve these issues.</span></p>
+<p> </p>
+<p>Following PDO’s are defined for servo drive:</p>
+<p>Input PDO’s:</p>
+<p>#define Slave_0_6041_0_AX0_StatusWord</p>
+<p>#define Slave_0_6064_0_AX0_ActualPosition</p>
+<p>#define Slave_0_6078_0_AX0_CurrentActual</p>
+<p>#define Slave_0_6079_0_AX0_DCLinkCircuit</p>
+<p>#define Slave_0_60FD_0_AX0_DigitalInputs</p>
+<p>#define Slave_0_606C_0_AX0_ActualVelocit</p>
+<p>#define Slave_0_603F_0_AX0_ErrorCode</p>
+<p> </p>
+<p>Output PDO’s:</p>
+<p>#define Slave_0_6040_0_AX0_ControlWord</p>
+<p>#define Slave_0_607A_0_AX0_TargetPosition</p>
+<p>#define Slave_0_6060_0_AX0_ModesOfOperate</p>
+<p>#define Slave_0_6071_0_AX0_TargetTorque</p>
+<p> </p>
+<p><span>I request you to kindly send a full procedure to make PC as EtherCAT master and Servo drive as EtherCAT slave to work through EtherCAT real time protocol.<span lang="EN-GB"></span></span></p>
+<p> <br></p>
+<p> </p>
+<div> <p>Regards,</p>
+</div>
+<div> <p>Nama Naresh,</p>
+</div>
+<div> <p>SSD/S&amp;ASG/SDR&amp;ISA,</p>
+</div>
+<div> <p>NRSC, Hyderabad.</p>
+</div>
+<p> </p>
+<p>Phone No:08542225206/5209</p>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,107 @@
+### HEADER
+Id=6966
+Link=http://at-zammad/#ticket/zoom/6966
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=Doosan DRA, Robot Controller (ID=335, Number=335)
+Number=706966
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=30.11.2023 08:56:12 +00:00
+UpdatedAt=08.12.2023 11:21:44 +00:00
+CloseAt=08.12.2023 11:21:44 +00:00
+ArticlesCount=2
+
+### TITLE
+About RealTek Ethernet Controller.
+
+### ARTICLE00_HEADER
+Id=37813
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.11.2023 08:56:12 +00:00
+UpdatedAt=30.11.2023 08:56:15 +00:00
+
+### ARTICLE00_SUBJECT
+About RealTek Ethernet Controller.
+
+### ARTICLE00_BODY
+<p>Hi.</p><p><br></p><p>The customer is DooSan Robotics.</p><p><br></p><p>Due to the discontinuation of the RTL8111 chipset, they are considering changing to the RTL8119 chipset.</p><p><br></p><p>As a result of checking the device code using the command below, it is the same device code, but only the revision number is different.</p><p><br></p><p>I saw at the manual that device code 0x8168 was supported, Is RTL8119 chipset also supported for link layer ?</p><p><br></p><p>Please advise.</p><p><br></p><p><span style="color: rgb(32, 32, 32);"><b>lspci -nn -vvv | grep Ethernet</b></span></p><p><span style="color: rgb(32, 32, 32);"></span></p><p><b><span style="color: rgb(32, 32, 32);"></span></b></p><p><b><span style="color: rgb(32, 32, 32);">RTL8111 Chipset's device code</span></b></p><p><b><img src="/api/v1/ticket_attachment/6966/37813/158087?view=inline" style="max-width:100%;width: 12.6979in;max-height: 0.8854in;" alt=""></b></p><p><b><br></b></p><p><b><br></b></p><p><b>RTL8119 Chipset's device code</b></p><p><span style="color: rgb(68, 84, 106);">aimb-285@aimb285-Default-string:~/Desktop$ lspci -nn -vvv | grep Ethernet</span></p><p><span style=" color: rgb(68, 84, 106);">01:00.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [10ec:8168] (rev 19)</span></p><p><span style=" color: rgb(68, 84, 106);"> Subsystem: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [10ec:0123]</span></p><p><span style=" color: rgb(68, 84, 106);">02:00.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [10ec:8168] (rev 19)</span></p><p><span style="color: rgb(68, 84, 106);"> Subsystem: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [10ec:0123]</span><b> </b></p><p><img src="/api/v1/ticket_attachment/6966/37813/158088?view=inline" style="max-width:100%;width: 4.7812in;max-height: 3.802in;" alt=""></p><p><b><br></b></p><br><br><p>감사합니다.</p><p><br></p><p>Thank you</p><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p> </p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sundukhan@prestosolution.co.kr</a></span></u></i><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table><p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+
+### ARTICLE01_HEADER
+Id=37829
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.11.2023 11:54:18 +00:00
+UpdatedAt=30.11.2023 11:54:22 +00:00
+
+### ARTICLE01_SUBJECT
+About RealTek Ethernet Controller.
+
+### ARTICLE01_BODY
+Hi Hans,<div><br></div><div>yes it should work.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Thursday, November 30, 2023 at 9:56:12 AM, DukHan Sun wrote:<br><br><p>Hi.</p>
+<p><br></p>
+<p>The customer is DooSan Robotics.</p>
+<p><br></p>
+<p>Due to the discontinuation of the RTL8111 chipset, they are considering changing to the RTL8119 chipset.</p>
+<p><br></p>
+<p>As a result of checking the device code using the command below, it is the same device code, but only the revision number is different.</p>
+<p><br></p>
+<p>I saw at the manual that device code 0x8168 was supported, Is RTL8119 chipset also supported for link layer ?</p>
+<p><br></p>
+<p>Please advise.</p>
+<p><br></p>
+<p><span style="color: rgb(32, 32, 32);"><b>lspci -nn -vvv | grep Ethernet</b></span></p>
+<p><span style="color: rgb(32, 32, 32);"></span></p>
+<p><b><span style="color: rgb(32, 32, 32);"></span></b></p>
+<p><b><span style="color: rgb(32, 32, 32);">RTL8111 Chipset's device code</span></b></p>
+<p><b><img src="/api/v1/ticket_attachment/6966/37829/158115?view=inline" style="max-width:100%;max-width:100%;width: 12.6979in;max-height: 0.8854in;" alt=""></b></p>
+<p><b><br></b></p>
+<p><b><br></b></p>
+<p><b>RTL8119 Chipset's device code</b></p>
+<p><span style="color: rgb(68, 84, 106);">aimb-285@aimb285-Default-string:~/Desktop$ lspci -nn -vvv | grep Ethernet</span></p>
+<p><span style=" color: rgb(68, 84, 106);">01:00.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [10ec:8168] (rev 19)</span></p>
+<p><span style=" color: rgb(68, 84, 106);"> Subsystem: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [10ec:0123]</span></p>
+<p><span style=" color: rgb(68, 84, 106);">02:00.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [10ec:8168] (rev 19)</span></p>
+<p><span style="color: rgb(68, 84, 106);"> Subsystem: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [10ec:0123]</span><b> </b></p>
+<p><img src="/api/v1/ticket_attachment/6966/37829/158116?view=inline" style="max-width:100%;max-width:100%;width: 4.7812in;max-height: 3.802in;" alt=""></p>
+<p><b><br></b></p>
+<br><br><p>감사합니다.</p>
+<p><br></p>
+<p>Thank you</p>
+<p><br></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p> </p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sundukhan@prestosolution.co.kr</a></span></u></i><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,163 @@
+### HEADER
+Id=5008
+Link=http://at-zammad/#ticket/zoom/5008
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=705008
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=25.02.2023 00:48:46 +00:00
+UpdatedAt=03.03.2023 07:27:19 +00:00
+CloseAt=03.03.2023 07:27:19 +00:00
+ArticlesCount=3
+
+### TITLE
+EC-Engineer Data Acquisition tabs
+
+### ARTICLE00_HEADER
+Id=26464
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.02.2023 00:48:46 +00:00
+UpdatedAt=25.02.2023 00:48:49 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Engineer Data Acquisition tabs
+
+### ARTICLE00_BODY
+<div>
+<p>We do not expect to use the Data Acquisition feature, which I understand to be a separate library that can be purchased. We have our own logging capability in our products. However, I see that the <b>_workspaceMasterCfgDaq</b> is unconditionally added to the master configuration workspace, although it appears to always have all controls disabled. I see that _<b>workspaceMasterDiagDaq</b> is conditioned behind <b>UseEcInspectorMode</b>.</p>
+<p> </p>
+<p>Could you help us understand when it makes sense to show <b> _workspaceMasterCfgDaq</b>?</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Computer Systems, Inc.<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=26465
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.02.2023 00:56:54 +00:00
+UpdatedAt=25.02.2023 00:56:54 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Engineer Data Acquisition tabs
+
+### ARTICLE01_BODY
+<div>
+<p>I think I see a little bit more, in that there is a drop-down menu (it looked like it was disabled) that has a little “Add” command, and from there I was able to create a recorder, and export it as an XML file. Since we don’t plan to include the Real-time Data Acquisition (DAQ) Library, then we should just remove this tab from our workspace correct?</p>
+<p> </p>
+<p>Thanks!</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p>--Quinton</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Quinton Tormanen <br>
+<b>Sent:</b> Friday, February 24, 2023 4:48 PM<br>
+<b>To:</b> 'ecsupport@acontis.com' &lt;ecsupport@acontis.com&gt;<br>
+<b>Cc:</b> Sam Juvonen &lt;SJuvonen@deltamotion.com&gt;<br>
+<b>Subject:</b> EC-Engineer Data Acquisition tabs</p>
+</div>
+</div>
+<p> </p>
+<p>We do not expect to use the Data Acquisition feature, which I understand to be a separate library that can be purchased. We have our own logging capability in our products. However, I see that the <b>_workspaceMasterCfgDaq</b> is unconditionally added to the master configuration workspace, although it appears to always have all controls disabled. I see that _<b>workspaceMasterDiagDaq</b> is conditioned behind <b>UseEcInspectorMode</b>.</p>
+<p> </p>
+<p>Could you help us understand when it makes sense to show <b> _workspaceMasterCfgDaq</b>?</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Computer Systems, Inc.<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank">+1-360-254-8688</a><span style="color:#2a2a2a;"><br> Direct: </span><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank">+1-360-702-0150</a><br>
+</span><a href="mailto:quintont@deltamotion.com">quintont@deltamotion.com</a></p>
+<p> </p>
+</div>
+
+### ARTICLE02_HEADER
+Id=26475
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.02.2023 07:01:49 +00:00
+UpdatedAt=27.02.2023 07:01:51 +00:00
+
+### ARTICLE02_SUBJECT
+EC-Engineer Data Acquisition tabs
+
+### ARTICLE02_BODY
+Hi Quinton,<div><br></div><div>if you do not want to use the DAQ library you can just remove the tab from the workspace. That is correct.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Saturday, February 25, 2023 at 1:56:54 AM, Quinton Tormanen wrote:<br><br><div>
+<p>I think I see a little bit more, in that there is a drop-down menu (it looked like it was disabled) that has a little “Add” command, and from there I was able to create a recorder, and export it as an XML file. Since we don’t plan to include the Real-time Data Acquisition (DAQ) Library, then we should just remove this tab from our workspace correct?</p>
+<p> </p>
+<p>Thanks!</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p>--Quinton</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Quinton Tormanen <br>
+<b>Sent:</b> Friday, February 24, 2023 4:48 PM<br>
+<b>To:</b> 'ecsupport@acontis.com' &lt;ecsupport@acontis.com&gt;<br>
+<b>Cc:</b> Sam Juvonen &lt;SJuvonen@deltamotion.com&gt;<br>
+<b>Subject:</b> EC-Engineer Data Acquisition tabs</p>
+</div>
+</div>
+<p> </p>
+<p>We do not expect to use the Data Acquisition feature, which I understand to be a separate library that can be purchased. We have our own logging capability in our products. However, I see that the <b>_workspaceMasterCfgDaq</b> is unconditionally added to the master configuration workspace, although it appears to always have all controls disabled. I see that _<b>workspaceMasterDiagDaq</b> is conditioned behind <b>UseEcInspectorMode</b>.</p>
+<p> </p>
+<p>Could you help us understand when it makes sense to show <b> _workspaceMasterCfgDaq</b>?</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Computer Systems, Inc.<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank">+1-360-254-8688</a><span style="color:#2a2a2a;"><br> Direct: </span><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank">+1-360-702-0150</a><br>
+</span><a href="mailto:quintont@deltamotion.com">quintont@deltamotion.com</a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

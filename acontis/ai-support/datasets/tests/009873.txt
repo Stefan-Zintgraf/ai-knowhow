@@ -1,0 +1,171 @@
+### HEADER
+Id=9873
+Link=http://at-zammad/#ticket/zoom/9873
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Cyberdontics (ID=617, Number=0, Country=US)
+Commission=Cyberdontics, Unknown (ID=697, Number=697)
+Number=709873
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=jbraley@perceptive.io (ID=3107, FirstName=Jason, LastName=Braley)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=07.02.2025 20:50:02 +00:00
+UpdatedAt=31.03.2025 21:27:12 +00:00
+CloseAt=12.02.2025 15:35:05 +00:00
+ArticlesCount=7
+
+### TITLE
+Re: Compatibility between generated pdlayout header files and SDK versions
+
+### ARTICLE00_HEADER
+Id=56297
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.02.2025 20:50:02 +00:00
+UpdatedAt=07.02.2025 20:50:02 +00:00
+
+### ARTICLE00_SUBJECT
+Re: Compatibility between generated pdlayout header files and SDK versions
+
+### ARTICLE00_BODY
+Hi Jason,<div> </div><div>I’m copying our developer support email here because I want to check with them.<br><div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Feb 7, 2025, at 3:32 PM, Jason Braley &lt;jbraley@perceptive.io&gt; wrote:</div>
+<br><div>
+<div dir="ltr">
+<div>Hi, Jon.</div>
+<div> </div>
+<div>I hope the new year is treating you well.</div>
+<div> </div>
+<div>I had a quick question about compatibility. I'm in the process of upgrading the version of the SDK we were using with a newer version, and I ran into an issue I hope you can help me with.</div>
+<div> </div>
+<div>We have generated pdlayout.h header files that are included in our build that lay out the mapping of the PDO data. I'm told they were generated from EC-Engineer. When I try to update the SDK, I'm getting a compilation error because the EC_T_FLOAT typedef was removed from the EcType.h header.</div>
+<div> </div>
+<div>The version of the pdlayout.h file in source control is filled with references to this type. I'm wondering what version of EC-Engineer I should use to re-generate the pdlayout.h file that is compatible with version 3.2.1 of the SDK.</div>
+<div> </div>--<br><div dir="ltr"><div dir="ltr">Jason Braley<div>Principal Software Engineer</div>
+<div>Perceptive.io</div>
+<div>179 Lincoln Street</div>
+<div>Boston, MA 02111</div>
+</div></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=56298
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=07.02.2025 20:50:33 +00:00
+UpdatedAt=07.02.2025 20:50:33 +00:00
+
+### ARTICLE01_BODY
+Did we change the PD layout types?
+
+### ARTICLE02_HEADER
+Id=56318
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=10.02.2025 07:12:39 +00:00
+UpdatedAt=10.02.2025 07:12:39 +00:00
+
+### ARTICLE02_BODY
+Hi Kai,<div><br></div><div>ich habe gerade die History der Datei EcType.h und habe keine Float gefunden. Exportiert ihr ein PD Layout mit EC_T_FLOAT?</div><div>Es stehen folgende Types zur Verfügung:</div><div><br></div><div>
+<div>typedef float           EC_T_REAL;      /**&lt; Real, floating point */</div>
+<div>typedef double          EC_T_LREAL;     /**&lt; long Real, floating point */</div>
+</div><div><br></div><div>Grüße,</div><div>Cyril</div>
+
+### ARTICLE03_HEADER
+Id=56419
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=11.02.2025 08:03:54 +00:00
+UpdatedAt=11.02.2025 08:03:54 +00:00
+
+### ARTICLE03_BODY
+Hi Jon,<div><br></div><div>yes we changed this. Because a customer complained that Float is not an official type here. This was a bug. So we changed this to REAL and fixed the bug. </div>
+
+### ARTICLE04_HEADER
+Id=56470
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.02.2025 15:43:27 +00:00
+UpdatedAt=11.02.2025 15:43:27 +00:00
+
+### ARTICLE04_SUBJECT
+Re: Compatibility between generated pdlayout header files and SDK versions [Ticket#709873]
+
+### ARTICLE04_BODY
+Hi Jason,<div> </div><div>We changed this because we learned that Float is not an official type here. This was a bug. So we changed this to REAL and fixed the bug.</div><div>
+<div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Feb 7, 2025, at 3:49 PM, Jon Waters &lt;j.waters@acontis.com&gt; wrote:</div>
+<br><div>Hi Jason,<div> </div>
+<div>I’m copying our developer support email here because I want to check with them.<br><div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><blockquote type="cite">
+<div>On Feb 7, 2025, at 3:32 PM, Jason Braley &lt;jbraley@perceptive.io&gt; wrote:</div>
+<br><div>
+<div dir="ltr">
+<div>Hi, Jon.</div>
+<div> </div>
+<div>I hope the new year is treating you well.</div>
+<div> </div>
+<div>I had a quick question about compatibility. I'm in the process of upgrading the version of the SDK we were using with a newer version, and I ran into an issue I hope you can help me with.</div>
+<div> </div>
+<div>We have generated pdlayout.h header files that are included in our build that lay out the mapping of the PDO data. I'm told they were generated from EC-Engineer. When I try to update the SDK, I'm getting a compilation error because the EC_T_FLOAT typedef was removed from the EcType.h header.</div>
+<div> </div>
+<div>The version of the pdlayout.h file in source control is filled with references to this type. I'm wondering what version of EC-Engineer I should use to re-generate the pdlayout.h file that is compatible with version 3.2.1 of the SDK.</div>
+<div> </div>--<br><div dir="ltr"><div dir="ltr">Jason Braley<div>Principal Software Engineer</div>
+<div>Perceptive.io</div>
+<div>179 Lincoln Street</div>
+<div>Boston, MA 02111</div>
+</div></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE05_HEADER
+Id=56481
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=11.02.2025 20:54:01 +00:00
+UpdatedAt=11.02.2025 20:54:01 +00:00
+
+### ARTICLE05_BODY
+What version of EC-Engineer do they need for the new correct pdlayout.h?
+
+### ARTICLE06_HEADER
+Id=56497
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=12.02.2025 07:06:01 +00:00
+UpdatedAt=12.02.2025 07:06:01 +00:00
+
+### ARTICLE06_BODY
+I guess they have this version. Because I think, that the fix is the problem of this customer. In 4.0.5 it is correct

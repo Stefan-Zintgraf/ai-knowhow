@@ -1,0 +1,161 @@
+### HEADER
+Id=8507
+Link=http://at-zammad/#ticket/zoom/8507
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Ronovo, Robot v1 (ID=508, Number=508)
+Number=708507
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=18.07.2024 12:59:37 +00:00
+UpdatedAt=22.07.2024 07:14:35 +00:00
+CloseAt=22.07.2024 07:14:35 +00:00
+ArticlesCount=3
+
+### TITLE
+The customer RONOVO's qustion about the "Mutex Lock" in APIs
+
+### ARTICLE00_HEADER
+Id=47600
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.07.2024 12:59:37 +00:00
+UpdatedAt=18.07.2024 12:59:40 +00:00
+
+### ARTICLE00_SUBJECT
+The customer RONOVO's qustion about the "Mutex Lock" in APIs
+
+### ARTICLE00_BODY
+<div>Dear,</div><div> </div><div>Is there any (mutex) lock in ecatIsSlavePresent or ecatGetSlaveState?</div><div>When the customer calls the two APIs in multiple threads at the same time, there will be a bad cycle time.</div><div>They think that it is may be related to this, so they need us to confirm.</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div>
+<div><i><img src="/api/v1/ticket_attachment/8507/47600/197770?view=inline" border="0" style="max-width:100%;width:700px;max-height:127px;"></i></div>
+<div><i>2024年8月21-24日，台北南港展览馆1馆四楼L308，期待与您见面！</i></div>
+<div> </div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+</div>
+<div>
+<p>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</p>
+<p>北京市海淀区上地三街9号C座C309</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=47677
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.07.2024 13:49:49 +00:00
+UpdatedAt=19.07.2024 13:49:52 +00:00
+
+### ARTICLE01_SUBJECT
+The customer RONOVO's qustion about the "Mutex Lock" in APIs
+
+### ARTICLE01_BODY
+Hi Lishan,<div><br></div><div>yes there are some mutex in these call. They could try to use <span>bApiLockByApp to verify if this help. But if they want to use it, they need to guarantee, that no API are called during emInitMaster() and emDeinitMaster().</span>
+</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Thursday, July 18, 2024 at 2:59:37 PM, ec_support@motrotech.com wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>Is there any (mutex) lock in ecatIsSlavePresent or ecatGetSlaveState?</div>
+<div>When the customer calls the two APIs in multiple threads at the same time, there will be a bad cycle time.</div>
+<div>They think that it is may be related to this, so they need us to confirm.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>
+<div><i><img src="/api/v1/ticket_attachment/8507/47677/198070?view=inline" border="0" style="max-width:100%;max-width:100%;width:700px;max-height:127px;"></i></div>
+<div><i>2024年8月21-24日，台北南港展览馆1馆四楼L308，期待与您见面！</i></div>
+<div> </div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+</div>
+<div>
+<p>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</p>
+<p>北京市海淀区上地三街9号C座C309</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=47716
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.07.2024 23:55:25 +00:00
+UpdatedAt=21.07.2024 23:55:25 +00:00
+
+### ARTICLE02_SUBJECT
+Re: RE: The customer RONOVO's qustion about the "Mutex Lock" in APIs [Ticket#708507]
+
+### ARTICLE02_BODY
+<div>Hi Cyril,</div><div> </div><div>OK, got it.</div><div>Thanks for your reply.</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>ec_support@motrotech.com</div><blockquote>
+<div> </div>
+<div>
+<span class="js-signatureMarker"></span><div>
+<b>From:</b> <a href="mailto:ecsupport@acontis.com">Cyril Eyssautier via EC-Support</a>
+</div>
+<div>
+<b>Date:</b> 2024-07-19 21:49</div>
+<div>
+<b>To:</b> <a href="mailto:ec_support@motrotech.com">ec_support</a>
+</div>
+<div>
+<b>Subject:</b> RE: The customer RONOVO's qustion about the "Mutex Lock" in APIs [Ticket#708507]</div>
+</div>
+<div>Hi Lishan,<div> </div>
+<div>yes there are some mutex in these call. They could try to use bApiLockByApp to verify if this help. But if they want to use it, they need to guarantee, that no API are called during emInitMaster() and emDeinitMaster().</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Cyril<br><div data-signature="true" data-signature-id="2"><br></div>
+<div><blockquote type="cite">On Thursday, July 18, 2024 at 2:59:37 PM, ec_support@motrotech.com wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>Is there any (mutex) lock in ecatIsSlavePresent or ecatGetSlaveState?</div>
+<div>When the customer calls the two APIs in multiple threads at the same time, there will be a bad cycle time.</div>
+<div>They think that it is may be related to this, so they need us to confirm.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>
+<div><i><img src="/api/v1/ticket_attachment/8507/47716/198205?view=inline" border="0" style="max-width:100%;max-width: 100%;width: 700px;max-height: 127px;"></i></div>
+<div><i>2024年8月21-24日，台北南港展览馆1馆四楼L308，期待与您见面！</i></div>
+<div> </div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+</div>
+<div>
+<p>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</p>
+<p>北京市海淀区上地三街9号C座C309</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div> </div>
+<br><br>
+</div>
+</div>
+</blockquote>

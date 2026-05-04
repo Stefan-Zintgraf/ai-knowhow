@@ -1,0 +1,160 @@
+### HEADER
+Id=8393
+Link=http://at-zammad/#ticket/zoom/8393
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Panasonic Industry SUNX, FP-HX EtherCAT casette (ID=806, Number=806)
+Number=708393
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=28.06.2024 03:01:38 +00:00
+UpdatedAt=05.07.2024 07:01:45 +00:00
+CloseAt=05.07.2024 07:01:45 +00:00
+ArticlesCount=2
+
+### TITLE
+The customer hacontrols problem report for FSoE device configuration
+
+### ARTICLE00_HEADER
+Id=46689
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.06.2024 03:01:38 +00:00
+UpdatedAt=28.06.2024 03:01:40 +00:00
+
+### ARTICLE00_SUBJECT
+The customer hacontrols problem report for FSoE device configuration
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently the customer hacontrols development FSoE device and config the eni file, they find a problem it is different with beckhoff twincat.</div>
+<div>They get the ixxat fsoe sdk, and porting the demo(ixxat fsoe integrate with ecmaster) to their target platform, But they find a problem when they config the EL1904 &amp; EL2904.</div>
+<div>The attachemnt is the eni and twincat project, The demo eni integrate all the fsoe data into 1 PDO variable. The customer used the twincat and generate a eni, it is same as demo eni.</div>
+<div>But the EcEngineer's eni seperate the pdo data. please checking the following picture:</div>
+<div><img src="/api/v1/ticket_attachment/8393/46689/193372?view=inline" style="max-width:100%;width:1185px;max-height:397px;"></div>
+<div> </div>
+<div>From our experience, The twincat mode is easy for FSoE app development, it is integrate the FSoE CMD, data and CRC and so on. The FSoE stack could get the all the FSoE data and seperate it in stack. If the customer use the EcEngineer's ENI, they need mapping all the PDO in app.</div>
+<div>So, Dose the EcEngineer support to integrate all the PDO in one variable same as twincat?</div>
+<div> </div>
+<div>We consider that they could use variable alias(the alias length define as 48bits), and get the data via variable name in pdo. But do you have better suggestion to generate a eni same as twincat?</div>
+<div> </div>
+<div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div>
+<br><img src="/api/v1/ticket_attachment/8393/46689/193373?view=inline" style="max-width:100%;width:508px;max-height:92px;">
+</div>
+</div>
+<div> </div>
+<div><i> 2024年8月21-24日，台北南港展览馆1馆四楼L308，期待与您见面！ </i></div>
+<div> </div>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>+86- 571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<i><br></i>
+</div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=46716
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.06.2024 11:03:57 +00:00
+UpdatedAt=28.06.2024 11:03:59 +00:00
+
+### ARTICLE01_SUBJECT
+The customer hacontrols problem report for FSoE device configuration
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>EC-Engineer does not support the configuration of the safety devices. We are not allowed to do this. The customer has to do the safety config in TwinCAT and then the ENI can be imported to EC-Engineer and the rest of the configuration can be done. But the safety part, has to be done in TwinCAT.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, June 28, 2024 at 5:01:38 AM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently the customer hacontrols development FSoE device and config the eni file, they find a problem it is different with beckhoff twincat.</div>
+<div>They get the ixxat fsoe sdk, and porting the demo(ixxat fsoe integrate with ecmaster) to their target platform, But they find a problem when they config the EL1904 &amp; EL2904.</div>
+<div>The attachemnt is the eni and twincat project, The demo eni integrate all the fsoe data into 1 PDO variable. The customer used the twincat and generate a eni, it is same as demo eni.</div>
+<div>But the EcEngineer's eni seperate the pdo data. please checking the following picture:</div>
+<div><img src="/api/v1/ticket_attachment/8393/46716/193470?view=inline" style="max-width:100%;max-width:100%;width:1185px;max-height:397px;"></div>
+<div> </div>
+<div>From our experience, The twincat mode is easy for FSoE app development, it is integrate the FSoE CMD, data and CRC and so on. The FSoE stack could get the all the FSoE data and seperate it in stack. If the customer use the EcEngineer's ENI, they need mapping all the PDO in app.</div>
+<div>So, Dose the EcEngineer support to integrate all the PDO in one variable same as twincat?</div>
+<div> </div>
+<div>We consider that they could use variable alias(the alias length define as 48bits), and get the data via variable name in pdo. But do you have better suggestion to generate a eni same as twincat?</div>
+<div> </div>
+<div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div>
+<br><img src="/api/v1/ticket_attachment/8393/46716/193471?view=inline" style="max-width:100%;max-width:100%;width:508px;max-height:92px;">
+</div>
+</div>
+<div> </div>
+<div><i> 2024年8月21-24日，台北南港展览馆1馆四楼L308，期待与您见面！ </i></div>
+<div> </div>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>+86- 571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<i><br></i>
+</div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

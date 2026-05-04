@@ -1,0 +1,131 @@
+### HEADER
+Id=3890
+Link=http://at-zammad/#ticket/zoom/3890
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bucher Automation (ID=124, Number=54505, Country=DE)
+Commission=Bucher Industries, JetControl (ID=139, Number=139)
+Number=703890
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=tfoell@jetter.de (ID=35, FirstName=Tobias, LastName=Föll)
+CreatedBy=tfoell@jetter.de (ID=35, FirstName=Tobias, LastName=Föll)
+Type=
+TimeUnit=
+CreatedAt=13.09.2022 16:05:28 +00:00
+UpdatedAt=16.09.2022 06:11:10 +00:00
+CloseAt=16.09.2022 06:11:10 +00:00
+ArticlesCount=2
+
+### TITLE
+EtherCat + ENI Engine
+
+### ARTICLE00_HEADER
+Id=20634
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.09.2022 16:05:29 +00:00
+UpdatedAt=13.09.2022 16:05:30 +00:00
+
+### ARTICLE00_SUBJECT
+EtherCat + ENI Engine
+
+### ARTICLE00_BODY
+<div> </div><div>
+<p>Hallo Support,</p>
+<p> </p>
+<p>wir möchten unser EtherCAT ENI Buildsystem updaten.</p>
+<p> </p>
+<p>Die letzte Version war diese.</p>
+<p><a href="https://downloads.acontis.com/2022/J-L/Jetter_AG_(40078)(DE)/EC-ENI-Builder/3.6.4/EC-Engineer_SDK_EniEngine_Layer5_DotNet4_Src_V3.6.4.zip" title="https://downloads.acontis.com/2022/J-L/Jetter_AG_(40078)(DE)/EC-ENI-Builder/3.6.4/EC-Engineer_SDK_EniEngine_Layer5_DotNet4_Src_V3.6.4.zip" rel="nofollow noreferrer noopener" target="_blank">Jetter_AG_(40078)(DE)/EC-ENI-Builder/3.6.4/EC-Engineer_SDK_EniEngine_Layer5_DotNet4_Src_V3.6.4.zip</a></p>
+<p> </p>
+<p>Gibt es eine neuere ?</p>
+<p> </p>
+<p>Falls ja, wo stehen die relevanten Änderungen drin ?</p>
+<p> </p>
+<p>Danke.</p>
+<p> </p>
+</div><br>
+<p>Mit freundlichen Grüßen / Kind regards</p><p>i.V. Tobias Föll</p><p>Head of System Engineering</p><p>
+<span>Jetter AG <br> Gräterstraße 2 <br> DE-71642 Ludwigsburg <br> Tel: +49-7141-2550-0 <br> Fax: +49-7141-2550-425 <br>
+<a href="mailto:tfoell@jetter.de" title="mailto:tfoell@jetter.de">tfoell@jetter.de</a>
+<br>
+</span><span lang="EN-US"><a href="http://www.jetter.de/" rel="nofollow noreferrer noopener" target="_blank">www.jetter.de</a><br> Datenschutzerklärung / Privacy Policy: <a href="https://www.jetter.de/kontakt/datenschutz.html" rel="nofollow noreferrer noopener" target="_blank"> www.jetter.de/kontakt/datenschutz.html</a></span></p><p><span>Ust.-Id.: DE 812 643 615 <br> Amtsgericht Stuttgart HRB 205545 <br> Vorstandsvorsitzender: Christian Benz <br> Vorsitzender des Aufsichtsrates: Martin Jetter </span></p><p>
+<span lang="EN-US">VAT Reg.-No.: DE 812 643 615 <br> Registered: Stuttgart HRB 205545 <br> CEO: Christian Benz <br> Chairman of the Supervisory Board: Martin Jetter</span></p><p><b><img src="/api/v1/ticket_attachment/3890/20634/85057?view=inline" style="max-width:100%;"></b></p>
+
+### ARTICLE01_HEADER
+Id=20645
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.09.2022 05:08:37 +00:00
+UpdatedAt=14.09.2022 05:08:40 +00:00
+
+### ARTICLE01_SUBJECT
+EtherCat + ENI Engine
+
+### ARTICLE01_BODY
+Hallo Herr Föll,<div><br></div><div>die neuste "stable" Version ist die 3.6.7:</div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/2022/J-L/Jetter_AG_(40078)(DE)/EC-ENI-Builder/3.6.7/EC-Engineer_SDK_EniEngine_Layer5_DotNet4_Src_V3.6.7.zip" title="https://downloads.acontis.com/2022/J-L/Jetter_AG_(40078)(DE)/EC-ENI-Builder/3.6.7/EC-Engineer_SDK_EniEngine_Layer5_DotNet4_Src_V3.6.7.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/J-L/Jetter_AG_(40078)(DE)/EC-ENI-Builder/3.6.7/EC-Engineer_SDK_EniEngine_Layer5_DotNet4_Src_V3.6.7.zip</a></div>
+<div><br></div>
+<div>Es gibt auch eine 3.7.4 allerdings wird die 3.6.x auch noch länger gepflegt.</div>
+<div><br></div>
+<div>In dem zip finden Sie ReleaseNotes. Alles mit [L5] betrifft die ENI-Engine.</div>
+<div><br></div>
+<div>Viele Grüße</div>
+<div>Kai Feifel</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, September 13, 2022 at 6:05:29 PM, Tobias Föll wrote:<br><br><div> </div>
+<div>
+<p>Hallo Support,</p>
+<p> </p>
+<p>wir möchten unser EtherCAT ENI Buildsystem updaten.</p>
+<p> </p>
+<p>Die letzte Version war diese.</p>
+<p><a href="https://downloads.acontis.com/2022/J-L/Jetter_AG_(40078)(DE)/EC-ENI-Builder/3.6.4/EC-Engineer_SDK_EniEngine_Layer5_DotNet4_Src_V3.6.4.zip" title="https://downloads.acontis.com/2022/J-L/Jetter_AG_(40078)(DE)/EC-ENI-Builder/3.6.4/EC-Engineer_SDK_EniEngine_Layer5_DotNet4_Src_V3.6.4.zip" rel="nofollow noreferrer noopener" target="_blank">Jetter_AG_(40078)(DE)/EC-ENI-Builder/3.6.4/EC-Engineer_SDK_EniEngine_Layer5_DotNet4_Src_V3.6.4.zip</a></p>
+<p> </p>
+<p>Gibt es eine neuere ?</p>
+<p> </p>
+<p>Falls ja, wo stehen die relevanten Änderungen drin ?</p>
+<p> </p>
+<p>Danke.</p>
+<p> </p>
+</div>
+<br>
+<p>Mit freundlichen Grüßen / Kind regards</p>
+<p>i.V. Tobias Föll</p>
+<p>Head of System Engineering</p>
+<p>
+<span>Jetter AG <br> Gräterstraße 2 <br> DE-71642 Ludwigsburg <br> Tel: +49-7141-2550-0 <br> Fax: +49-7141-2550-425 <br>
+<a href="mailto:tfoell@jetter.de" title="mailto:tfoell@jetter.de">tfoell@jetter.de</a>
+<br>
+</span><span lang="EN-US"><a href="http://www.jetter.de/" rel="nofollow noreferrer noopener" target="_blank">www.jetter.de</a><br> Datenschutzerklärung / Privacy Policy: <a href="https://www.jetter.de/kontakt/datenschutz.html" rel="nofollow noreferrer noopener" target="_blank"> www.jetter.de/kontakt/datenschutz.html</a></span></p>
+<p><span>Ust.-Id.: DE 812 643 615 <br> Amtsgericht Stuttgart HRB 205545 <br> Vorstandsvorsitzender: Christian Benz <br> Vorsitzender des Aufsichtsrates: Martin Jetter </span></p>
+<p>
+<span lang="EN-US">VAT Reg.-No.: DE 812 643 615 <br> Registered: Stuttgart HRB 205545 <br> CEO: Christian Benz <br> Chairman of the Supervisory Board: Martin Jetter</span></p>
+<p><b><img src="/api/v1/ticket_attachment/3890/20645/85085?view=inline" style="max-width:100%;max-width:100%;"></b></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

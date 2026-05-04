@@ -1,0 +1,153 @@
+### HEADER
+Id=1431
+Link=http://at-zammad/#ticket/zoom/1431
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Weiss Umwelttechnik GmbH (ID=172, Number=61008, Country=DE)
+Commission=Weiss, NCG-Steuerung (ID=195, Number=195)
+Number=701431
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=martin.brand@weiss-technik.com (ID=203, FirstName=Martin, LastName=Brand)
+CreatedBy=martin.brand@weiss-technik.com (ID=203, FirstName=Martin, LastName=Brand)
+Type=
+TimeUnit=
+CreatedAt=15.09.2021 06:42:37 +00:00
+UpdatedAt=26.04.2022 05:23:38 +00:00
+CloseAt=29.09.2021 09:30:00 +00:00
+ArticlesCount=2
+
+### TITLE
+ProcessAllRxFrames - not all previously sent frames are received
+
+### ARTICLE00_HEADER
+Id=7723
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.09.2021 06:42:37 +00:00
+UpdatedAt=15.09.2021 06:42:40 +00:00
+
+### ARTICLE00_SUBJECT
+Integrationsunterstützung
+
+### ARTICLE00_BODY
+<div>
+<p>Guten Morgen Herr Bußmann,</p>
+<p> </p>
+<p>ich benötige nochmal Ihre Hilfe:</p>
+<p> </p>
+<p>Gestern habe ich lediglich alle LogMsg- und LogError-Aufrufe auf EcLogMsg umgestellt.</p>
+<p>Jetzt funktioniert der Ablauf aber nur bis zu ecatInitMaster.</p>
+<p>Beim Start der JobTask wird „System overload“ angezeigt:</p>
+<p> </p>
+<p>root@raspidevelop:/home/pi/RTS/bin# ./TestPicDriver</p>
+<p>TestPicDriver</p>
+<p> </p>
+<p>Create Shm</p>
+<p>Shm Create 3::PIC Driver: Attach Shm</p>
+<p>::PIC Driver: Shm attached.</p>
+<p>0000000000: Start Remote API Server now</p>
+<p>0000000001: EC-Master V3.1.1.02 (Unrestricted) for Linux_aarch64 Copyright acontis technologies GmbH @ 2021</p>
+<p>0000000045: ECAT-Master initialized</p>
+<p>0000000047: eUsrJob_ProcessAllRxFrames - not all previously sent frames are received/processed (frame loss)!</p>
+<p>0000000111: 3 identical messages skipped</p>
+<p>0000000111: Error: System overload: Cycle time too short or huge jitter!</p>
+<p>0000003100: 372 identical messages skipped</p>
+<p>[…]</p>
+<p> </p>
+<p>Das passiert in der EcMasterDemo bei gleicher Konfiguration allerdings nicht.</p>
+<p>Könnten wir das Problem (heute vielleicht wieder um 10:00) in Teams untersuchen?</p>
+<p> </p>
+<p>Freundliche Grüße / Kind regards</p>
+<p> </p>
+<p>Martin Brand</p>
+<p>Technische EDV / ProduktEntwicklung</p>
+<p><b>weiss</b>technik</p>
+<p> </p>
+<p>Weiss Technik GmbH<br> Greizer Straße 41-49<br> 35447 Reiskirchen, Germany</p>
+<p>Phone +49 6408 84-6121<br> Fax +49 6408 84-8741<br> mailto:martin.brand@weiss-technik.com<br> www.weiss-technik.com</p>
+<p>Weiss Technik GmbH<br> Sitz/Domicile: Reiskirchen<br> Geschäftsführung/Board of Management: Peter R. Manolopoulos, Peter Kuisle<br> Reg. Nr./Commercial Reg. No.: HRB 596 <br> Amtsgericht/Court of Registry: Gießen</p>
+<p>Test it. Heat it. Cool it.</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=7734
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.09.2021 08:33:30 +00:00
+UpdatedAt=15.09.2021 08:33:34 +00:00
+
+### ARTICLE01_SUBJECT
+ProcessAllRxFrames - not all previously sent frames are received
+
+### ARTICLE01_BODY
+Guten Tag Herr Brand,<div><br></div><div>das liegt vermutlich am Timing. </div><div>Welche Zykluszeit fahren Sie?</div><div>Welche Ergebnisse liefert Ihnen die Performance Messung (s. EcMasterDemo "-perf -v 3")?</div><div>Gibt es Verzögerungen z.B. durch geschützten Zugriff auf den Shared Memory Bereich?</div><div><br></div><div>Sie können mir gerne eine Teams Einladung schicken.</div><div><br></div><div>Viele Grüße</div><div>Paul Bußmann<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Mittwoch, 15. September 2021, 08:42:37, schrieb Martin Brand:<br><br><div>
+<p>Guten Morgen Herr Bußmann,</p>
+<p> </p>
+<p>ich benötige nochmal Ihre Hilfe:</p>
+<p> </p>
+<p>Gestern habe ich lediglich alle LogMsg- und LogError-Aufrufe auf EcLogMsg umgestellt.</p>
+<p>Jetzt funktioniert der Ablauf aber nur bis zu ecatInitMaster.</p>
+<p>Beim Start der JobTask wird „System overload“ angezeigt:</p>
+<p> </p>
+<p>root@raspidevelop:/home/pi/RTS/bin# ./TestPicDriver</p>
+<p>TestPicDriver</p>
+<p> </p>
+<p>Create Shm</p>
+<p>Shm Create 3::PIC Driver: Attach Shm</p>
+<p>::PIC Driver: Shm attached.</p>
+<p>0000000000: Start Remote API Server now</p>
+<p>0000000001: EC-Master V3.1.1.02 (Unrestricted) for Linux_aarch64 Copyright acontis technologies GmbH @ 2021</p>
+<p>0000000045: ECAT-Master initialized</p>
+<p>0000000047: eUsrJob_ProcessAllRxFrames - not all previously sent frames are received/processed (frame loss)!</p>
+<p>0000000111: 3 identical messages skipped</p>
+<p>0000000111: Error: System overload: Cycle time too short or huge jitter!</p>
+<p>0000003100: 372 identical messages skipped</p>
+<p>[…]</p>
+<p> </p>
+<p>Das passiert in der EcMasterDemo bei gleicher Konfiguration allerdings nicht.</p>
+<p>Könnten wir das Problem (heute vielleicht wieder um 10:00) in Teams untersuchen?</p>
+<p> </p>
+<p>Freundliche Grüße / Kind regards</p>
+<p> </p>
+<p>Martin Brand</p>
+<p>Technische EDV / ProduktEntwicklung</p>
+<p><b>weiss</b>technik</p>
+<p> </p>
+<p>Weiss Technik GmbH<br> Greizer Straße 41-49<br> 35447 Reiskirchen, Germany</p>
+<p>Phone +49 6408 84-6121<br> Fax +49 6408 84-8741<br> mailto:martin.brand@weiss-technik.com<br> www.weiss-technik.com</p>
+<p>Weiss Technik GmbH<br> Sitz/Domicile: Reiskirchen<br> Geschäftsführung/Board of Management: Peter R. Manolopoulos, Peter Kuisle<br> Reg. Nr./Commercial Reg. No.: HRB 596 <br> Amtsgericht/Court of Registry: Gießen</p>
+<p>Test it. Heat it. Cool it.</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

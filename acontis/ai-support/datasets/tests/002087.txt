@@ -1,0 +1,263 @@
+### HEADER
+Id=2087
+Link=http://at-zammad/#ticket/zoom/2087
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vector Informatik GmbH (ID=167, Number=40366, Country=DE)
+Commission=Vector Simulations AG, Unknown (ID=514, Number=514)
+Number=702087
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+CreatedBy=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Type=
+TimeUnit=
+CreatedAt=14.12.2021 16:02:17 +00:00
+UpdatedAt=16.12.2021 14:11:32 +00:00
+CloseAt=16.12.2021 14:11:31 +00:00
+ArticlesCount=4
+
+### TITLE
+OsDeinit() am Ende von main()
+
+### ARTICLE00_HEADER
+Id=10984
+ContentType=text/html
+Internal=False
+Type=phone
+CreatedAt=14.12.2021 16:02:18 +00:00
+UpdatedAt=14.12.2021 16:02:18 +00:00
+
+### ARTICLE00_BODY
+<p>Guten Tag Herr Lange,</p><p><br></p><p>ich habe diese Frage von Ticket# 701888  "<span>EC-Simulator zwischen echten EtherCAT Slaves</span><span>" abgelöst. </span></p><p>OsInit
+und OsDeinit werden von unseren Core Bibliotheken (EC-Master, EC-Simulator,
+RAS-Bibliotheken, ...) aufgerufen. </p><p>Ihre
+Applikation muss das normalerweise nicht machen.</p><p>Leider kann ich Ihnen im Moment nicht sagen, weshalb OsDeinit(...) aufgerufen wird. Ggf. wird es aus der main() verschwinden.</p><p><br></p><p>Viele
+Grüße</p><p>
+
+
+
+
+
+</p><p>Paul
+Bußmann</p><p><br></p><p><br></p><p>-----------------------------------------------------</p><br><p>Hallo Herr Bußmann,</p>
+<p> </p>
+<p>[...] Am Ende der Main-Funktion gibt es den Aufruf:</p>
+<p>/* final OS layer cleanup */</p>
+<p>OsDeinit();</p>
+<p> </p>
+<p>In der EcOs.h gibt es auch einen Aufruf OsInit(…). Dieser Aufruf wird aber nicht aufgerufen. Ich kann in der Dokumentation aber keine Informationen zu diesen Aufrufen finden. Können sie mir sagen, wozu diese Aufrufe benötigt werden und warum ich dazu keine Dokumentation finden kann?</p>
+<p> </p>
+<p>Mit freundlichen Gruessen / Best regards,</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>-----------------------------------------------------</p>
+<p>Software Development Engineer</p>
+<p>PND10</p>
+<p> </p>
+<p><b>Vector Informatik GmbH</b></p>
+<p>Besucheranschrift / Visitor address: Holderäckerstraße 36 | 70499 Stuttgart | Germany</p>
+<p>Tel.: +49 711 80670-4791</p>
+<p>tobias.lange@vector.com</p>
+<p><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank">www.vector.com</a></p>
+<p> </p>
+<p>Sitz der Gesellschaft / Registered Office: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p>Handelsregister / Commercial Register: Amtsgericht Stuttgart | HRB 17317</p>
+<p>Geschaeftsfuehrer / Managing Directors: Dr. Thomas Beck, Dr. Stefan Krauß, Thomas Riegraf</p>
+<p>-----------------------------------------------------</p>
+<p> </p><div>
+</div>
+
+### ARTICLE01_HEADER
+Id=10985
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.12.2021 16:03:59 +00:00
+UpdatedAt=14.12.2021 16:04:01 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Simulator zwischen echten EtherCAT Slaves
+
+### ARTICLE01_BODY
+<div>Hi Cyril,</div><div><br></div>können wir OsDeinit() am Ende von main() entfernen? Es war wohl schon am ersten Tag drin, ohne dass es das symmetrische OsInit() darin gibt.<div>
+<div data-signature="true" data-signature-id="2"><br></div>
+<div data-signature="true" data-signature-id="2">Viele Grüße</div>
+<div data-signature="true" data-signature-id="2">Paul</div>
+<div data-signature="true" data-signature-id="2"><br></div>
+<br><div>---Begin forwarded message:---<br><br>
+</div>
+<div><blockquote type="cite">
+<div>Datum: 14.12.2021 17:02<br>Von: Tobias Lange &lt;tobias.lange@vector.com&gt;<br>An: EC-Support &lt;ecsupport@acontis.com&gt;<br><br>
+</div>
+<p>Guten Tag Herr Lange,</p>
+<p><br></p>
+<p>ich habe diese Frage von Ticket# 701888  "<span>EC-Simulator zwischen echten EtherCAT Slaves</span><span>" abgelöst. </span></p>
+<p>OsInit
+und OsDeinit werden von unseren Core Bibliotheken (EC-Master, EC-Simulator,
+RAS-Bibliotheken, ...) aufgerufen. </p>
+<p>Ihre
+Applikation muss das normalerweise nicht machen.</p>
+<p>Leider kann ich Ihnen im Moment nicht sagen, weshalb OsDeinit(...) aufgerufen wird. Ggf. wird es aus der main() verschwinden.</p>
+<p><br></p>
+<p>Viele
+Grüße</p>
+<p>
+
+</p>
+<p>Paul
+Bußmann</p>
+<p><br></p>
+<p><br></p>
+<p>-----------------------------------------------------</p>
+<br><p>Hallo Herr Bußmann,</p>
+<p> </p>
+<p>[...] Am Ende der Main-Funktion gibt es den Aufruf:</p>
+<p>/* final OS layer cleanup */</p>
+<p>OsDeinit();</p>
+<p> </p>
+<p>In der EcOs.h gibt es auch einen Aufruf OsInit(…). Dieser Aufruf wird aber nicht aufgerufen. Ich kann in der Dokumentation aber keine Informationen zu diesen Aufrufen finden. Können sie mir sagen, wozu diese Aufrufe benötigt werden und warum ich dazu keine Dokumentation finden kann?</p>
+<p> </p>
+<p>Mit freundlichen Gruessen / Best regards,</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>-----------------------------------------------------</p>
+<p>Software Development Engineer</p>
+<p>PND10</p>
+<p> </p>
+<p><b>Vector Informatik GmbH</b></p>
+<p>Besucheranschrift / Visitor address: Holderäckerstraße 36 | 70499 Stuttgart | Germany</p>
+<p>Tel.: +49 711 80670-4791</p>
+<p>tobias.lange@vector.com</p>
+<p><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank">www.vector.com</a></p>
+<p> </p>
+<p>Sitz der Gesellschaft / Registered Office: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p>Handelsregister / Commercial Register: Amtsgericht Stuttgart | HRB 17317</p>
+<p>Geschaeftsfuehrer / Managing Directors: Dr. Thomas Beck, Dr. Stefan Krauß, Thomas Riegraf</p>
+<p>-----------------------------------------------------</p>
+<p> </p>
+<div>
+</div>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=10992
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.12.2021 16:21:38 +00:00
+UpdatedAt=14.12.2021 16:21:38 +00:00
+
+### ARTICLE02_SUBJECT
+AW: EC-Simulator zwischen echten EtherCAT Slaves [Ticket#702087]
+
+### ARTICLE02_BODY
+<div>
+<p>OsDeinit wird in MasterDeinitEx aufgerufen. Von dem her passt es.</p>
+<p> </p>
+<p>Grüße,</p>
+<p>Cyril</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Paul Bußmann via EC-Support [mailto:ecsupport@acontis.com] <br><b>Gesendet:</b> Dienstag, 14. Dezember 2021 17:04<br><b>An:</b> c.eyssautier@acontis.com<br><b>Cc:</b> h.oelhaf@acontis.com<br><b>Betreff:</b> FWD: EC-Simulator zwischen echten EtherCAT Slaves [Ticket#702087]</p>
+</div>
+<p> </p>
+<div>
+<p>Hi Cyril,</p>
+</div>
+<div> <p> </p>
+</div>
+<p>können wir OsDeinit() am Ende von main() entfernen? Es war wohl schon am ersten Tag drin, ohne dass es das symmetrische OsInit() darin gibt.</p>
+<div>
+<div> <p> </p>
+</div>
+<div>
+<p>Viele Grüße</p>
+</div>
+<div>
+<p>Paul</p>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+<div>
+<p>---Begin forwarded message:---</p>
+</div>
+<div><blockquote>
+<div>
+<p>Datum: 14.12.2021 17:02<br>Von: Tobias Lange &lt;tobias.lange@vector.com&gt;<br>An: EC-Support &lt;ecsupport@acontis.com&gt;</p>
+</div>
+<p>Guten Tag Herr Lange,</p>
+<p> </p>
+<p>ich habe diese Frage von Ticket# 701888 "EC-Simulator zwischen echten EtherCAT Slaves" abgelöst.</p>
+<p></p>
+<p>OsInit und OsDeinit werden von unseren Core Bibliotheken (EC-Master, EC-Simulator, RAS-Bibliotheken, ...) aufgerufen.</p>
+<p></p>
+<p>Ihre Applikation muss das normalerweise nicht machen.</p>
+<p></p>
+<p>Leider kann ich Ihnen im Moment nicht sagen, weshalb OsDeinit(...) aufgerufen wird. Ggf. wird es aus der main() verschwinden.</p>
+<p> </p>
+<p>Viele Grüße</p>
+<p></p>
+<p>Paul Bußmann</p>
+<p> </p>
+<p>-----------------------------------------------------</p>
+<p> </p>
+<p>Hallo Herr Bußmann,</p>
+<p> </p>
+<p>[...] Am Ende der Main-Funktion gibt es den Aufruf:</p>
+<p></p>
+<p>/* final OS layer cleanup */</p>
+<p></p>
+<p>OsDeinit();</p>
+<p> </p>
+<p>In der EcOs.h gibt es auch einen Aufruf OsInit(…). Dieser Aufruf wird aber nicht aufgerufen. Ich kann in der Dokumentation aber keine Informationen zu diesen Aufrufen finden. Können sie mir sagen, wozu diese Aufrufe benötigt werden und warum ich dazu keine Dokumentation finden kann?</p>
+<p> </p>
+<p>Mit freundlichen Gruessen / Best regards,</p>
+<p> </p>
+<p>Tobias Lange</p>
+<p></p>
+<p>-----------------------------------------------------</p>
+<p></p>
+<p>Software Development Engineer</p>
+<p></p>
+<p>PND10</p>
+<p> </p>
+<p><b>Vector Informatik GmbH</b></p>
+<p></p>
+<p>Besucheranschrift / Visitor address: Holderäckerstraße 36 | 70499 Stuttgart | Germany</p>
+<p></p>
+<p>Tel.: +49 711 80670-4791</p>
+<p></p>
+<p>tobias.lange@vector.com</p>
+<p></p>
+<p><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank">www.vector.com</a></p>
+<p> </p>
+<p>Sitz der Gesellschaft / Registered Office: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p></p>
+<p>Handelsregister / Commercial Register: Amtsgericht Stuttgart | HRB 17317</p>
+<p></p>
+<p>Geschaeftsfuehrer / Managing Directors: Dr. Thomas Beck, Dr. Stefan Krauß, Thomas Riegraf</p>
+<p></p>
+<p>-----------------------------------------------------</p>
+<p> </p>
+</blockquote></div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=11128
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=16.12.2021 14:11:32 +00:00
+UpdatedAt=16.12.2021 14:11:32 +00:00
+
+### ARTICLE03_BODY
+Hab's gelöscht (V3.1.3.01)

@@ -1,0 +1,255 @@
+### HEADER
+Id=8845
+Link=http://at-zammad/#ticket/zoom/8845
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Relativity Space, Internal Controllers (ID=457, Number=457)
+Number=708845
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=11.09.2024 13:31:21 +00:00
+UpdatedAt=16.10.2024 16:30:42 +00:00
+CloseAt=16.10.2024 16:30:42 +00:00
+ArticlesCount=7
+
+### TITLE
+FW: [External] Re: EC-Master Class A quote
+
+### ARTICLE00_HEADER
+Id=49886
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.09.2024 13:31:22 +00:00
+UpdatedAt=11.09.2024 13:31:22 +00:00
+
+### ARTICLE00_SUBJECT
+FW: [External] Re: EC-Master Class A quote
+
+### ARTICLE00_BODY
+<div>
+<p>Hi,</p>
+<p> </p>
+<p>Can you please generate the deliveries for Xenomai4?</p>
+<p> </p>
+<div><p>/Jon</p></div>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b><span> Jeremy Mika &lt;jmika@relativityspace.com&gt; <br><b>Sent:</b> Tuesday, September 10, 2024 5:20 PM<br><b>To:</b> Jon Waters &lt;j.waters@acontis.com&gt;<br><b>Subject:</b> Re: [External] Re: EC-Master Class A quote</span></p>
+</div>
+<p> </p>
+<div><p>Thanks for this Jon.</p></div>
+<div>
+<p> </p>
+</div>
+<div><p>By any chance, do you have updated Xen4 binaries for EC-Master and the intel driver?</p></div>
+<div><hr></div>
+<div>
+<p><b>From:</b><span> Jon Waters &lt;<a href="mailto:j.waters@acontis.com">j.waters@acontis.com</a>&gt;<br><b>Sent:</b> Tuesday, September 3, 2024 1:25 PM<br><b>To:</b> Jeremy Mika &lt;<a href="mailto:jmika@relativityspace.com">jmika@relativityspace.com</a>&gt;<br><b>Subject:</b> [External] Re: EC-Master Class A quote</span> </p>
+<div>
+<p> </p>
+</div>
+</div>
+<div>
+<div>
+<p>Hi Jeremy,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Sorry for the delay. I've attached the quote for upgrading the Linux and Xenomai SDK from Class B to Class A. We included the discount for the 2nd SDK, like on the initial Class B SDK purchase, and we will include the Maintenance through the end of the year. For 2025, you will just need to order the Class A Maintenance for both SDKs and won’t need to order the Class B Maintenance as you have in previous years.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Beckhoff abandoned the TwinSAFE Editor/Viewer plans for UDP Mailbox in favor of a new MQTT support. We already have support for MQTT in EC-Master, but Beckhoff and the ETG have not finalized this specification. Unfortunately, this has delayed the ability to connect the TwinSAFE Editor/Viewer to EC-Master, but we do expect it to finally be realized.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Here are the latest deliveries:</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p><b>EC-Engineer</b></p>
+</div>
+<div>
+<div>
+<p><a href="https://downloads.acontis.com/2024/P-R/Relativity_Space_(40530)(US)/EC-Engineer_Plus/3.9.7/EC-Engineer_Dongle_V3.9.7.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/P-R/Relativity_Space_(40530)(US)/EC-Engineer_Plus/3.9.7/EC-Engineer_Dongle_V3.9.7.zip</a></p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p><b>EC-Master Xenomai</b></p>
+</div>
+<div>
+<div>
+<p><a href="https://downloads.acontis.com/2024/P-R/Relativity_Space_(40530)(US)/EC-Master_Xenomai_x86_64Bit/3.2.1.05/EC-Master-V3.2.1.05-Xenomai3-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/P-R/Relativity_Space_(40530)(US)/EC-Master_Xenomai_x86_64Bit/3.2.1.05/EC-Master-V3.2.1.05-Xenomai3-x86_64Bit-SDK_Protected.tar.gz</a></p>
+</div>
+<div>
+<p><a href="https://downloads.acontis.com/2024/P-R/Relativity_Space_(40530)(US)/EC-Master_Xenomai_x86_64Bit/3.2.1.05/EC-RtEth-CCAT-V3.2.1.05-Xenomai3-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/P-R/Relativity_Space_(40530)(US)/EC-Master_Xenomai_x86_64Bit/3.2.1.05/EC-RtEth-CCAT-V3.2.1.05-Xenomai3-x86_64Bit-SDK_Protected.tar.gz</a></p>
+</div>
+<div>
+<p><a href="https://downloads.acontis.com/2024/P-R/Relativity_Space_(40530)(US)/EC-Master_Xenomai_x86_64Bit/3.2.1.05/EC-RtEth-IntelGbe-V3.2.1.05-Xenomai3-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/P-R/Relativity_Space_(40530)(US)/EC-Master_Xenomai_x86_64Bit/3.2.1.05/EC-RtEth-IntelGbe-V3.2.1.05-Xenomai3-x86_64Bit-SDK_Protected.tar.gz</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p><b>EC-Master Linux</b></p>
+</div>
+<div>
+<div>
+<p><a href="https://downloads.acontis.com/2024/P-R/Relativity_Space_(40530)(US)/EC-Master_Linux_x86_64Bit/3.2.1.05/EC-Master-V3.2.1.05-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/P-R/Relativity_Space_(40530)(US)/EC-Master_Linux_x86_64Bit/3.2.1.05/EC-Master-V3.2.1.05-Linux-x86_64Bit-SDK_Protected.tar.gz</a></p>
+</div>
+<div>
+<p><a href="https://downloads.acontis.com/2024/P-R/Relativity_Space_(40530)(US)/EC-Master_Linux_x86_64Bit/3.2.1.05/EC-RtEth-CCAT-V3.2.1.05-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/P-R/Relativity_Space_(40530)(US)/EC-Master_Linux_x86_64Bit/3.2.1.05/EC-RtEth-CCAT-V3.2.1.05-Linux-x86_64Bit-SDK_Protected.tar.gz</a></p>
+</div>
+<div>
+<p><a href="https://downloads.acontis.com/2024/P-R/Relativity_Space_(40530)(US)/EC-Master_Linux_x86_64Bit/3.2.1.05/EC-RtEth-IntelGbe-V3.2.1.05-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/P-R/Relativity_Space_(40530)(US)/EC-Master_Linux_x86_64Bit/3.2.1.05/EC-RtEth-IntelGbe-V3.2.1.05-Linux-x86_64Bit-SDK_Protected.tar.gz</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p> </p>
+</div>
+</div>
+<p>WARNING: This message was sent by an external party. Send suspicious messages to <a href="mailto:securityalerts@relativityspace.com">securityalerts@relativityspace.com</a> </p>
+</div>
+<div>
+<div>
+<p><br><span>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201</span> </p>
+</div>
+<div>
+<p><br><br></p>
+<blockquote>
+<div>
+<p>On Aug 20, 2024, at 12:56 PM, Jeremy Mika &lt;<a href="mailto:jmika@relativityspace.com">jmika@relativityspace.com</a>&gt; wrote:</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p>At long last... we have a project that likely requires the Class A version of EC-Master.</p>
+</div>
+<div>
+<p><br>Can you quote us for the SDK for both Linux and Linux+Xenomai? (6 licenses for each)</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Also – would love to catch up on the latest</p>
+</div>
+<div><ul type="disc"><li>EC-Engineer</li></ul></div>
+<div><ul type="disc"><li>EC-Master Class B builds for Linux and Xen 4</li></ul></div>
+<div>
+<p> </p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Finally – you mentioned having a build of TwinSAFE Editor/Viewer that supports the UDP Mailbox. Were you able to test and confirm, and how close is that to something we could actually use?</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Thanks as always!</p>
+</div>
+<div>
+<p>=Jeremy Mika</p>
+</div>
+<p><span><br><br></span></p>
+<p>This email may include confidential content. If you are not the intended recipient, please notify the sender immediately, delete the e-mail and do not use or transmit the contents to any third parties. Relativity Space, Inc. reserves and asserts all rights to confidentiality and intellectual property included in this email and its attachments.</p>
+</div>
+</blockquote>
+</div>
+<p> </p>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=49899
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=11.09.2024 16:04:21 +00:00
+UpdatedAt=11.09.2024 16:04:21 +00:00
+
+### ARTICLE01_BODY
+Können wir ein NightlyBuild schicken? Sind die Crashes verstanden / gefixt?
+
+### ARTICLE02_HEADER
+Id=49937
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=12.09.2024 08:48:41 +00:00
+UpdatedAt=12.09.2024 08:48:41 +00:00
+
+### ARTICLE02_BODY
+Die Crashes sind noch nicht verstanden bzw. gefixt. Ich habe eine Version mit extra Debug-Info an den verdächtigen Stellen zur Relativity Space geschickt. Gleichzeitig läuft 
+
+seit 06.09.2024  bei mir ein Test auf unserem CX2030. So oder so es ist nicht bewiesen, dass wir an diesen Crashes schuldig sind. Deswegen, glaube ich, spricht Nichts dagegen, eine neue Version zu bauen.
+
+### ARTICLE03_HEADER
+Id=50003
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=13.09.2024 07:41:07 +00:00
+UpdatedAt=13.09.2024 07:41:07 +00:00
+
+### ARTICLE03_BODY
+Kannst du ihm bitte das NightlyBuild schicken wenn es fertig ist. Danke!
+
+### ARTICLE04_HEADER
+Id=50259
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=18.09.2024 12:54:40 +00:00
+UpdatedAt=18.09.2024 12:54:40 +00:00
+
+### ARTICLE04_BODY
+Hi Maksim, is this delivery available?<br>
+
+### ARTICLE05_HEADER
+Id=50265
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=18.09.2024 13:00:01 +00:00
+UpdatedAt=18.09.2024 13:00:01 +00:00
+
+### ARTICLE05_BODY
+Hi Jon,<div><br></div><div>we have for now a NightlyBuild only, the official release comes at end of the month approximately. Should i send a NightlyBuild or do they want to wait for an official release?</div>
+
+### ARTICLE06_HEADER
+Id=50270
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=18.09.2024 14:08:19 +00:00
+UpdatedAt=18.09.2024 14:08:19 +00:00
+
+### ARTICLE06_BODY
+Thanks Maksim, we can wait for the official release.<br>

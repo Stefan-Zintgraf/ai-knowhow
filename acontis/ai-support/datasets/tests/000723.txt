@@ -1,0 +1,209 @@
+### HEADER
+Id=723
+Link=http://at-zammad/#ticket/zoom/723
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Fuji electric, PLC (ID=256, Number=256)
+Number=700723
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=02.06.2021 00:56:08 +00:00
+UpdatedAt=12.12.2023 13:52:37 +00:00
+CloseAt=02.07.2021 06:01:05 +00:00
+ArticlesCount=5
+
+### TITLE
+Question About EC-Master Q263 (Fuji Electric)
+
+### ARTICLE00_HEADER
+Id=3964
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=02.06.2021 00:56:08 +00:00
+UpdatedAt=02.06.2021 00:56:12 +00:00
+
+### ARTICLE00_SUBJECT
+Question About EC-Master Q263 (Fuji Electric)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question About EC-Master Q263 (Fuji Electric)
+
+--------------------------------------------------------------------------
+Question about ecatReadSlaveRegisterReq().
+
+The customer has read an insubstantial register. (REG0x450,size=2byte)
+The dwResult for EC_NOTIFY_SLAVE_REGISTER_TRANSFER was returned as 0.
+Is this result correct?
+
+-------------------------------------------------------------------------
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=4085
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.06.2021 09:34:53 +00:00
+UpdatedAt=07.06.2021 09:34:55 +00:00
+
+### ARTICLE01_SUBJECT
+Question About EC-Master Q263 (Fuji Electric)
+
+### ARTICLE01_BODY
+<div>Hi Takuya,</div><div><br></div><div>ecatReadSlaveRegisterReq() is a non-blocking API and returns as soon as the command could be queued. EC_E_NOERROR is the expected return value disregarding any register accessibility.<br>
+</div><div><br></div><div>Unfortunately EC_NOTIFY_SLAVE_REGISTER_TRANSFER doesn't contain the WKC information.</div><div><br></div><div>using ecatReadSlaveRegister() should return EC_E_NOTREADY if WKC == 0.</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Wednesday, June 2, 2021, 2:56:08 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question About EC-Master Q263 (Fuji Electric)</div>
+<div><br></div>
+<div>--------------------------------------------------------------------------</div>
+<div>Question about ecatReadSlaveRegisterReq().</div>
+<div><br></div>
+<div>The customer has read an insubstantial register. (REG0x450,size=2byte)</div>
+<div>The dwResult for EC_NOTIFY_SLAVE_REGISTER_TRANSFER was returned as 0.</div>
+<div>Is this result correct?</div>
+<div><br></div>
+<div>-------------------------------------------------------------------------</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=4177
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=08.06.2021 07:30:06 +00:00
+UpdatedAt=08.06.2021 07:30:06 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question About EC-Master Q263 (Fuji Electric) [Ticket#700723]
+
+### ARTICLE02_BODY
+Dear Cyril san
+
+They claim that the lack of WKC information is a bug in the user interface.
+They want a fix, can you handle it?
+
+Best regards,
+Takuya Fujikawa
+
+
+On 2021/06/07 18:34, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+> 
+> ecatReadSlaveRegisterReq() is a non-blocking API and returns as soon as the command could be queued. EC_E_NOERROR is the expected return value disregarding any register accessibility.
+> 
+> Unfortunately EC_NOTIFY_SLAVE_REGISTER_TRANSFER doesn't contain the WKC information.
+> 
+> using ecatReadSlaveRegister() should return EC_E_NOTREADY if WKC == 0.
+> 
+> Best Regards,
+> Cyril
+> 
+> 
+>> On Wednesday, June 2, 2021, 2:56:08 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question About EC-Master Q263 (Fuji Electric)
+>>
+>> --------------------------------------------------------------------------
+>> Question about ecatReadSlaveRegisterReq().
+>>
+>> The customer has read an insubstantial register. (REG0x450,size=2byte)
+>> The dwResult for EC_NOTIFY_SLAVE_REGISTER_TRANSFER was returned as 0.
+>> Is this result correct?
+>>
+>> -------------------------------------------------------------------------
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+
+### ARTICLE03_HEADER
+Id=4181
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.06.2021 08:11:25 +00:00
+UpdatedAt=08.06.2021 08:11:26 +00:00
+
+### ARTICLE03_SUBJECT
+Question About EC-Master Q263 (Fuji Electric)
+
+### ARTICLE03_BODY
+<div>Hi Takuya,</div><div><br></div><div>we will add EC_T_SLAVEREGISTER_TRANSFER_NTFY_DESC::wWkc in V3.1.1.08, scheduled for end of June.</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div><br></div><div><blockquote type="cite">On Tuesday, June 8, 2021, 9:30:06 AM, Takuya Fujikawa wrote:<br><br><div>Dear Cyril san</div>
+<div><br></div>
+<div>They claim that the lack of WKC information is a bug in the user interface.</div>
+<div>They want a fix, can you handle it?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2021/06/07 18:34, Cyril Eyssautier via EC-Support wrote:</div>
+<div>&gt; Hi Takuya,</div>
+<div>&gt;</div>
+<div>&gt; ecatReadSlaveRegisterReq() is a non-blocking API and returns as soon as the command could be queued. EC_E_NOERROR is the expected return value disregarding any register accessibility.</div>
+<div>&gt;</div>
+<div>&gt; Unfortunately EC_NOTIFY_SLAVE_REGISTER_TRANSFER doesn't contain the WKC information.</div>
+<div>&gt;</div>
+<div>&gt; using ecatReadSlaveRegister() should return EC_E_NOTREADY if WKC == 0.</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; Cyril</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Wednesday, June 2, 2021, 2:56:08 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question About EC-Master Q263 (Fuji Electric)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; --------------------------------------------------------------------------</div>
+<div>&gt;&gt; Question about ecatReadSlaveRegisterReq().</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; The customer has read an insubstantial register. (REG0x450,size=2byte)</div>
+<div>&gt;&gt; The dwResult for EC_NOTIFY_SLAVE_REGISTER_TRANSFER was returned as 0.</div>
+<div>&gt;&gt; Is this result correct?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; -------------------------------------------------------------------------</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE04_HEADER
+Id=4520
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=15.06.2021 09:01:27 +00:00
+UpdatedAt=15.06.2021 09:01:27 +00:00
+
+### ARTICLE04_BODY
+<div>Teams Meeting<br>
+</div>Deliver Testversion immediately for Q263. Official until 2021-06-21

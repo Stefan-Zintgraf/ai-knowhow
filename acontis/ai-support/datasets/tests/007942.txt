@@ -1,0 +1,223 @@
+### HEADER
+Id=7942
+Link=http://at-zammad/#ticket/zoom/7942
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Panasonic Industry SUNX, FP-HX EtherCAT casette (ID=806, Number=806)
+Number=707942
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=22.04.2024 03:27:11 +00:00
+UpdatedAt=26.04.2024 06:06:15 +00:00
+CloseAt=26.04.2024 06:06:16 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Engineer SDK(Panasonic Industry) [E002]
+
+### ARTICLE00_HEADER
+Id=43701
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=22.04.2024 03:27:11 +00:00
+UpdatedAt=22.04.2024 03:27:15 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Engineer SDK(Panasonic Industry) [E002]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Engineer SDK(Panasonic Industry) [E002]
+
+We want to replace the .NET Framework from 4.0 to the latest version (e.g. 4.8) because 4.0 is not supported by Microsoft in official.
+Is there any problem to replace it?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=43713
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.04.2024 07:02:30 +00:00
+UpdatedAt=22.04.2024 07:02:36 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Engineer SDK(Panasonic Industry) [E002]
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>there should not be a problem when you are using 4.8. This is compatible.</div><div><br></div><div>Best regards,</div><div>Kai<br><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, April 22, 2024 at 5:27:11 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Engineer SDK(Panasonic Industry) [E002]</div>
+<div><br></div>
+<div>We want to replace the .NET Framework from 4.0 to the latest version (e.g. 4.8) because 4.0 is not supported by Microsoft in official.</div>
+<div>Is there any problem to replace it?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=43774
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=23.04.2024 06:26:57 +00:00
+UpdatedAt=23.04.2024 06:26:57 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Engineer SDK(Panasonic Industry) [E002] [Ticket#707942]
+
+### ARTICLE02_BODY
+Dear Kai san
+
+Do you have a plan to update the SDK which has latest .NET framework as a default environment?
+
+Best regards,
+Takuya Fujikawa
+
+
+
+On 2024/04/22 16:02, Kai Feifel via EC-Support wrote:
+> Hi,
+>
+> there should not be a problem when you are using 4.8. This is compatible.
+>
+> Best regards,
+> Kai
+> __________________________________________________________________________________________
+> Kai Feifel
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+>
+>
+>> On Monday, April 22, 2024 at 5:27:11 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Engineer SDK(Panasonic Industry) [E002]
+>>
+>> We want to replace the .NET Framework from 4.0 to the latest version (e.g. 4.8) because 4.0 is not supported by Microsoft in official.
+>> Is there any problem to replace it?
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+>
+>
+>
+
+
+### ARTICLE03_HEADER
+Id=43804
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.04.2024 11:01:24 +00:00
+UpdatedAt=23.04.2024 11:01:27 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Engineer SDK(Panasonic Industry) [E002]
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>yes we will update this to the EC-Engineer Version 4.0.x. But this is only our minimum required runtimes. Windows uses automatically the version you have on your computer. So if you have Windows 11 with 4.8, it will automatically use 4.8.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, April 23, 2024 at 8:26:57 AM, Takuya Fujikawa wrote:<br><br><div>Dear Kai san</div>
+<div><br></div>
+<div>Do you have a plan to update the SDK which has latest .NET framework as a default environment?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2024/04/22 16:02, Kai Feifel via EC-Support wrote:</div>
+<div>&gt; Hi,</div>
+<div>&gt;</div>
+<div>&gt; there should not be a problem when you are using 4.8. This is compatible.</div>
+<div>&gt;</div>
+<div>&gt; Best regards,</div>
+<div>&gt; Kai</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Kai Feifel</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Monday, April 22, 2024 at 5:27:11 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Engineer SDK(Panasonic Industry) [E002]</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; We want to replace the .NET Framework from 4.0 to the latest version (e.g. 4.8) because 4.0 is not supported by Microsoft in official.</div>
+<div>&gt;&gt; Is there any problem to replace it?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

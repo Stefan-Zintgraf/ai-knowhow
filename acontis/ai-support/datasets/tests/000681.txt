@@ -1,0 +1,196 @@
+### HEADER
+Id=681
+Link=http://at-zammad/#ticket/zoom/681
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=700681
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=31.05.2021 06:09:16 +00:00
+UpdatedAt=31.05.2021 11:36:30 +00:00
+CloseAt=31.05.2021 07:49:37 +00:00
+ArticlesCount=3
+
+### TITLE
+EC-Engineer supported on Windows7
+
+### ARTICLE00_HEADER
+Id=3838
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.05.2021 06:09:16 +00:00
+UpdatedAt=31.05.2021 06:09:19 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Engineer supported on Windows7
+
+### ARTICLE00_BODY
+<div>Dear,</div><div> </div><div>I noticed that the new version of EC-Engineer only supports Windows 10. If the customer needs to run on Windows 7, is there any way to solve it?</div><div><img src="/api/v1/ticket_attachment/681/3838/13727?view=inline" border="0" style="max-width:100%;"></div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740270</div>
+<div>Email:ec_support@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=3846
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.05.2021 07:41:58 +00:00
+UpdatedAt=31.05.2021 07:42:00 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Engineer supported on Windows7
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>the only possibility is to use a version 3.3.3 and lower. </div><div>We have to cancel Windows 7 support because of WIBU.</div><div>But Windows 7 is also not supported from Microsoft itself anymore. So the best thing would be to update to Windows 10 I guess.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, May 31, 2021, 8:09:16 AM, EtherCAT Support wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>I noticed that the new version of EC-Engineer only supports Windows 10. If the customer needs to run on Windows 7, is there any way to solve it?</div>
+<div><img src="/api/v1/ticket_attachment/681/3846/13743?view=inline" border="0" style="max-width:100%;max-width:100%;"></div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740270</div>
+<div>Email:ec_support@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=3866
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.05.2021 11:36:30 +00:00
+UpdatedAt=31.05.2021 11:36:30 +00:00
+
+### ARTICLE02_SUBJECT
+EC-Engineer supported on Windows7
+
+### ARTICLE02_BODY
+<div>Hi again,</div><div><br></div><div>please use 3.0.x for this customers. 3.0.12 is the latest long term support.</div><div><br></div><div>Best regards,</div><div>Kai<br><br>
+</div><div><blockquote type="cite">On Monday, May 31, 2021, 9:41:58 AM, Kai Feifel wrote:<br><br>Hi,<div><br></div>
+<div>the only possibility is to use a version 3.3.3 and lower. </div>
+<div>We have to cancel Windows 7 support because of WIBU.</div>
+<div>But Windows 7 is also not supported from Microsoft itself anymore. So the best thing would be to update to Windows 10 I guess.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, May 31, 2021, 8:09:16 AM, EtherCAT Support wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>I noticed that the new version of EC-Engineer only supports Windows 10. If the customer needs to run on Windows 7, is there any way to solve it?</div>
+<div><img src="/api/v1/ticket_attachment/681/3866/13771?view=inline" border="0" style="max-width:100%;max-width:100%;max-width:100%;"></div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740270</div>
+<div>Email:ec_support@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+<br>
+</blockquote></div><div><br></div>

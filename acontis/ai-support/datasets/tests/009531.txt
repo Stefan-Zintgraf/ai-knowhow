@@ -1,0 +1,141 @@
+### HEADER
+Id=9531
+Link=http://at-zammad/#ticket/zoom/9531
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=709531
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=12.12.2024 15:19:01 +00:00
+UpdatedAt=18.12.2024 07:07:02 +00:00
+CloseAt=18.12.2024 07:07:03 +00:00
+ArticlesCount=2
+
+### TITLE
+About "Inspection Report" [QNo.111]
+
+### ARTICLE00_HEADER
+Id=54117
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.12.2024 15:19:01 +00:00
+UpdatedAt=12.12.2024 15:19:05 +00:00
+
+### ARTICLE00_SUBJECT
+About "Inspection Report" [QNo.111]
+
+### ARTICLE00_BODY
+<div>Hi Support Team,</div><div> </div><div>This question is from Mitsubishi (commission No. 40627).</div><div> </div><div>
+<div>Please provide a specific breakdown of the list that appears when “Notifications” is selected in the “Inspection Report” dialog.</div>
+<div> </div>
+<div>(1) Is there any relationship between the “Inspection Report” dialog and CoE Object-Dictionary index 0x2004?</div>
+<div>(2) What notifications are counted at index 0x2004 in the CoE Object-Dictionary?</div>
+<div>(3) Of (2), what is the distinction between those that are displayed in the “Inspection Report” dialog and those that are not?</div>
+<div>(4) What notifications are not listed in (2) but are displayed in the “Inspection Report” dialog?</div>
+<div> </div>
+<div>Background:</div>
+<div>I thought that the contents of index 0x2004 of the CoE Object-Dictionary of Master were displayed, but there are excesses and deficiencies.</div>
+</div><div> </div><div>If you have some list about the Notifications in XML format or like that, please provide it.</div><div> </div><div>Best regards,</div><div>Yuichi</div><div> </div><div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=54173
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.12.2024 15:37:37 +00:00
+UpdatedAt=13.12.2024 15:37:39 +00:00
+
+### ARTICLE01_SUBJECT
+About "Inspection Report" [QNo.111]
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>see answers below.</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div>
+<blockquote type="cite">On Thursday, December 12, 2024 at 4:19:01 PM, Yuichi Ide wrote:<br><br><div>Hi Support Team,</div>
+<div> </div>
+<div>This question is from Mitsubishi (commission No. 40627).</div>
+<div> </div>
+<div>
+<div>Please provide a specific breakdown of the list that appears when “Notifications” is selected in the “Inspection Report” dialog.</div>
+<div> </div>
+<div>(1) Is there any relationship between the “Inspection Report” dialog and CoE Object-Dictionary index 0x2004?</div>
+<div>MG: Yes. This object contains the master notifications. The inspection reports collects them too in "Notificatons":</div>
+<div></div>
+</div>
+</blockquote>
+<img style="max-width:100%;width: 782px;max-width: 100%;" src="/api/v1/ticket_attachment/9531/54173/224426?view=inline">
+</div>
+<div>
+<br><blockquote type="cite">
+<div>
+<div>(2) What notifications are counted at index 0x2004 in the CoE Object-Dictionary?</div>
+<div>MG: The master counts all notifcations as soon as they were sent.</div>
+<div><br></div>
+<div>(3) Of (2), what is the distinction between those that are displayed in the “Inspection Report” dialog and those that are not?</div>
+<div>MG: If they are not available in the inspection report or in the object 0x2004, they were not sent until now from the EC-Master.</div>
+<div><br></div>
+<div>(4) What notifications are not listed in (2) but are displayed in the “Inspection Report” dialog?</div>
+<div>MG: As far as I know the master counts all notifications in that object. If you think some are missing, can you tell me which one are missing?</div>
+<div>At least in the inspection report we count all notifications which we receive from master.</div>
+<div> </div>
+<div>Background:</div>
+<div>I thought that the contents of index 0x2004 of the CoE Object-Dictionary of Master were displayed, but there are excesses and deficiencies.</div>
+</div>
+<div> </div>
+<div>If you have some list about the Notifications in XML format or like that, please provide it.</div>
+<div>MG: Sorry, we do not have a list. You can check master code to get all the available notifications, e.g. EC_NOTIFY_...</div>
+</blockquote>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/9531/54173/224427?view=inline"><br><blockquote type="cite">
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+</blockquote>
+</div>
+<div><br></div>
+<br><br>
+</div>

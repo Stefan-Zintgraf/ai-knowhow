@@ -1,0 +1,134 @@
+### HEADER
+Id=3601
+Link=http://at-zammad/#ticket/zoom/3601
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Flow Europe GmbH (ID=587, Number=0, Country=DE)
+Commission=Flow Europe, Unknown (ID=666, Number=666)
+Number=703601
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=michael.knaupp@shapetechnologies.com (ID=1223, FirstName=Michael, LastName=Knaupp)
+CreatedBy=michael.knaupp@shapetechnologies.com (ID=1223, FirstName=Michael, LastName=Knaupp)
+Type=
+TimeUnit=
+CreatedAt=02.08.2022 06:53:50 +00:00
+UpdatedAt=16.08.2022 09:24:12 +00:00
+CloseAt=03.08.2022 07:33:49 +00:00
+ArticlesCount=2
+
+### TITLE
+EoE Endpoint Configuration
+
+### ARTICLE00_HEADER
+Id=19094
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.08.2022 06:53:50 +00:00
+UpdatedAt=02.08.2022 06:53:51 +00:00
+
+### ARTICLE00_SUBJECT
+EoE Endpoint Configuration
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="DE">Wie kann die erste IP-Adresse eliminiert werden. Von Wo wird sie gesetzt?</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><img style="max-width:100%;width:6.3854in;max-height:2.2604in;width:613px;max-height:217px;" src="/api/v1/ticket_attachment/3601/19094/78313?view=inline"></span><span lang="DE"></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">MfG</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span style="color:#00929f;">DR.-ING. MICHAEL KNAUPP</span></p>
+<p><span style="color:teal;"><p> </p></span></p>
+<p><i><span style="color:gray;">Application Advanced</span></i></p>
+<p><i><span style="color:gray;"><p> </p></span></i></p>
+<p><span style="color:gray;">Shape Technologies Group</span></p>
+<p><span style="color:#5b6770;"><p> </p></span></p>
+<p><span style="color:#5b6770;">Flow Europe GmbH | </span><span lang="DE" style="color:#5b6770;"><a href="http://www.flowwaterjet.com/" rel="nofollow noreferrer noopener" target="_blank"><span lang="EN-US" style="color:#5b6770;">www.FlowWaterjet.com</span></a></span><span style="color:#5b6770;"><br> Marienburgstraße 35 | 64297 Darmstadt | Germany</span></p>
+<p><span lang="DE" style="color:#585d61;">Phone: +49 6151 3095 170 | <a href="mailto:michael.knaupp@shapetechnologies.com"><span style="color:#585d61;">michael.knaupp@shapetechnologies.com</span></a></span></p>
+<p><span lang="DE" style="color:#585d61;">Mobile: +49 172 680 13 22</span></p>
+<p><span lang="DE" style="color:#5b6770;">Amtsgericht Darmstadt HRB 96686 | Geschäftsführer: Per Uwe Josefsson</span></p>
+<p><span lang="DE" style="color:#5b6770;"><p> </p></span></p>
+<p><span style="color:#5b6770;">This electronic message contains information that may be confidential and is the property <br> of SHAPE Technologies Group®. It is for the use of the intended addressee only. If you are <br> not the addressee, any disclosure, copying, distribution, or use of the contents is prohibited. <br> The information about our data privacy can be found under <a href="https://www.flowwaterjet.com/" rel="nofollow noreferrer noopener" target="_blank">
+<span style="color:#5b6770;">https://www.FlowWaterjet.com</span></a>. </span></p>
+<p><span style="color:#5b6770;"><p> </p></span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=19102
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.08.2022 08:12:35 +00:00
+UpdatedAt=02.08.2022 08:12:36 +00:00
+
+### ARTICLE01_SUBJECT
+EoE Endpoint Configuration
+
+### ARTICLE01_BODY
+Hallo Herr Knaupp,<div><br></div><div>es gibt eine API in C#, die die IP Properties ausliest. Diese erhält manchmal mehrere IPs. Wo genau die IP herkommt weiß ich nicht. Denke von OpenVPN selbst. Aber die sollte auch nicht stören. </div><div><br></div><div>Viele Grüße</div><div>Kai Feifel<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, August 2, 2022 at 8:53:50 AM, Michael Knaupp wrote:<br><br><div>
+<p><span lang="DE">Wie kann die erste IP-Adresse eliminiert werden. Von Wo wird sie gesetzt?</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE"><img style="max-width:100%;max-width:100%;width:6.3854in;max-height:2.2604in;width:613px;max-height:217px;" src="/api/v1/ticket_attachment/3601/19102/78337?view=inline"></span><span lang="DE"></span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">MfG</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:#00929f;">DR.-ING. MICHAEL KNAUPP</span></p>
+<p><span style="color:teal;"></span></p>
+<p> </p>
+<p></p>
+<p><i><span style="color:gray;">Application Advanced</span></i></p>
+<p><i><span style="color:gray;"></span></i></p>
+<p><i> </i></p>
+<p></p>
+<p><span style="color:gray;">Shape Technologies Group</span></p>
+<p><span style="color:#5b6770;"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:#5b6770;">Flow Europe GmbH | </span><span lang="DE" style="color:#5b6770;"><a href="http://www.flowwaterjet.com/" rel="nofollow noreferrer noopener" target="_blank"><span lang="EN-US" style="color:#5b6770;">www.FlowWaterjet.com</span></a></span><span style="color:#5b6770;"><br> Marienburgstraße 35 | 64297 Darmstadt | Germany</span></p>
+<p><span lang="DE" style="color:#585d61;">Phone: +49 6151 3095 170 | <a href="mailto:michael.knaupp@shapetechnologies.com"><span style="color:#585d61;">michael.knaupp@shapetechnologies.com</span></a></span></p>
+<p><span lang="DE" style="color:#585d61;">Mobile: +49 172 680 13 22</span></p>
+<p><span lang="DE" style="color:#5b6770;">Amtsgericht Darmstadt HRB 96686 | Geschäftsführer: Per Uwe Josefsson</span></p>
+<p><span lang="DE" style="color:#5b6770;"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:#5b6770;">This electronic message contains information that may be confidential and is the property <br> of SHAPE Technologies Group®. It is for the use of the intended addressee only. If you are <br> not the addressee, any disclosure, copying, distribution, or use of the contents is prohibited. <br> The information about our data privacy can be found under <a href="https://www.flowwaterjet.com/" rel="nofollow noreferrer noopener" target="_blank">
+<span style="color:#5b6770;">https://www.FlowWaterjet.com</span></a>. </span></p>
+<p><span style="color:#5b6770;"></span></p>
+<p> </p>
+<p></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,195 @@
+### HEADER
+Id=4310
+Link=http://at-zammad/#ticket/zoom/4310
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=AMP Robotics (ID=593, Number=0, Country=Us)
+Commission=AMP Robotics, Vortex (ID=672, Number=672)
+Number=704310
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=peter.march@amprobotics.com (ID=1276, FirstName=Peter, LastName=March)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=11.11.2022 19:19:09 +00:00
+UpdatedAt=09.12.2022 07:11:01 +00:00
+CloseAt=09.12.2022 07:11:01 +00:00
+ArticlesCount=5
+
+### TITLE
+EC-Master Frame Response Error
+
+### ARTICLE00_HEADER
+Id=22676
+ContentType=text/html
+Internal=False
+Type=phone
+CreatedAt=11.11.2022 19:19:09 +00:00
+UpdatedAt=11.11.2022 19:19:09 +00:00
+
+### ARTICLE00_BODY
+Hi Peter,<div> </div><div>Is that a message you generate with your software? That isn’t a typical error code or message that we generate from our logging functionality. Can you send the complete log for us to review?</div><div>
+<div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Nov 10, 2022, at 6:06 PM, Peter March &lt;peter.march@amprobotics.com&gt; wrote:</div>
+<br><div>
+<div dir="ltr">Hi Jon,<div> </div>
+<div>We are seeing occasional (infrequent) "0x0001000a: Got no response on a sent Ethernet frame" errors in the ecat logs. Does this mean the packet was completely lost or will acontis master re-send internally? Is this error caused by not meeting the specified cycle rate in SW?</div>
+</div>
+<br>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=22785
+ContentType=text/html
+Internal=False
+Type=phone
+CreatedAt=15.11.2022 16:37:50 +00:00
+UpdatedAt=15.11.2022 16:37:56 +00:00
+
+### ARTICLE01_BODY
+<div dir="ltr">Jon,<div> </div>
+<div>Just to clarify: we are capturing that error code (0x1000a). The text I displayed is just what I found in the acontis code by doing a search.</div>
+</div><br><div>
+<div dir="ltr">On Fri, Nov 11, 2022 at 12:18 PM Jon Waters &lt;<a href="mailto:j.waters@acontis.com">j.waters@acontis.com</a>&gt; wrote:<br>
+</div>
+<span class="js-signatureMarker"></span><blockquote><div>Hi Peter,<div> </div>
+<div>Is that a message you generate with your software? That isn’t a typical error code or message that we generate from our logging functionality. Can you send the complete log for us to review?</div>
+<div>
+<div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><blockquote type="cite">
+<div>On Nov 10, 2022, at 6:06 PM, Peter March &lt;<a href="mailto:peter.march@amprobotics.com">peter.march@amprobotics.com</a>&gt; wrote:</div>
+<br><div>
+<div dir="ltr">Hi Jon,<div> </div>
+<div>We are seeing occasional (infrequent) "0x0001000a: Got no response on a sent Ethernet frame" errors in the ecat logs. Does this mean the packet was completely lost or will acontis master re-send internally? Is this error caused by not meeting the specified cycle rate in SW?</div>
+</div>
+<br>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+</div></blockquote>
+</div>
+
+### ARTICLE02_HEADER
+Id=22795
+ContentType=text/html
+Internal=False
+Type=phone
+CreatedAt=15.11.2022 21:24:59 +00:00
+UpdatedAt=15.11.2022 21:26:09 +00:00
+
+### ARTICLE02_BODY
+<div dir="ltr">Hi Jon,<div> </div>
+<div>Just following up on this. I think the official acontis master error for this is EC_NOTIFY_FRAME_RESPONSE_ERROR. I'm just wondering if this actually indicates that a packet could be lost, or is it just a warning that there was a hiccup/slowdown on the network but everything is still working?</div>
+</div><br><div>
+<div dir="ltr">On Fri, Nov 11, 2022 at 12:31 PM Peter March &lt;<a href="mailto:peter.march@amprobotics.com">peter.march@amprobotics.com</a>&gt; wrote:<br>
+</div>
+<span class="js-signatureMarker"></span><blockquote>
+<div dir="ltr">Jon,<div> </div>
+<div>Just to clarify: we are capturing that error code (0x1000a). The text I displayed is just what I found in the acontis code by doing a search.</div>
+</div>
+<br><div>
+<div dir="ltr">On Fri, Nov 11, 2022 at 12:18 PM Jon Waters &lt;<a href="mailto:j.waters@acontis.com">j.waters@acontis.com</a>&gt; wrote:<br>
+</div>
+<blockquote><div>Hi Peter,<div> </div>
+<div>Is that a message you generate with your software? That isn’t a typical error code or message that we generate from our logging functionality. Can you send the complete log for us to review?</div>
+<div>
+<div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><blockquote type="cite">
+<div>On Nov 10, 2022, at 6:06 PM, Peter March &lt;<a href="mailto:peter.march@amprobotics.com">peter.march@amprobotics.com</a>&gt; wrote:</div>
+<br><div>
+<div dir="ltr">Hi Jon,<div> </div>
+<div>We are seeing occasional (infrequent) "0x0001000a: Got no response on a sent Ethernet frame" errors in the ecat logs. Does this mean the packet was completely lost or will acontis master re-send internally? Is this error caused by not meeting the specified cycle rate in SW?</div>
+</div>
+<br>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+</div></blockquote>
+</div>
+</blockquote>
+</div>
+
+### ARTICLE03_HEADER
+Id=22891
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=17.11.2022 08:49:47 +00:00
+UpdatedAt=17.11.2022 08:49:47 +00:00
+
+### ARTICLE03_BODY
+EC-Master can only notify missing frames at the time ProcessAllRxFrames is called. In the next cycle, the previously missed frame would be notified as unexpected if they have only be delayed but not lost.
+
+### ARTICLE04_HEADER
+Id=22957
+ContentType=text/html
+Internal=False
+Type=phone
+CreatedAt=17.11.2022 16:43:39 +00:00
+UpdatedAt=17.11.2022 16:43:58 +00:00
+
+### ARTICLE04_BODY
+Hi Peter,<div> </div><div>
+<div>EC-Master can only notify missing frames at the time ProcessAllRxFrames is called. In the next cycle, the previously missed frame would be notified as unexpected if the frames were just delayed but not lost.</div>
+<div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Nov 15, 2022, at 1:57 PM, Peter March &lt;peter.march@amprobotics.com&gt; wrote:</div>
+<br><div>
+<div dir="ltr">Hi Jon,<div> </div>
+<div>Just following up on this. I think the official acontis master error for this is EC_NOTIFY_FRAME_RESPONSE_ERROR. I'm just wondering if this actually indicates that a packet could be lost, or is it just a warning that there was a hiccup/slowdown on the network but everything is still working?</div>
+</div>
+<br><div>
+<div dir="ltr">On Fri, Nov 11, 2022 at 12:31 PM Peter March &lt;<a href="mailto:peter.march@amprobotics.com">peter.march@amprobotics.com</a>&gt; wrote:<br>
+</div>
+<blockquote>
+<div dir="ltr">Jon,<div> </div>
+<div>Just to clarify: we are capturing that error code (0x1000a). The text I displayed is just what I found in the acontis code by doing a search.</div>
+</div>
+<br><div>
+<div dir="ltr">On Fri, Nov 11, 2022 at 12:18 PM Jon Waters &lt;<a href="mailto:j.waters@acontis.com">j.waters@acontis.com</a>&gt; wrote:<br>
+</div>
+<blockquote><div>Hi Peter,<div> </div>
+<div>Is that a message you generate with your software? That isn’t a typical error code or message that we generate from our logging functionality. Can you send the complete log for us to review?</div>
+<div>
+<div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><blockquote type="cite">
+<div>On Nov 10, 2022, at 6:06 PM, Peter March &lt;<a href="mailto:peter.march@amprobotics.com">peter.march@amprobotics.com</a>&gt; wrote:</div>
+<br><div>
+<div dir="ltr">Hi Jon,<div> </div>
+<div>We are seeing occasional (infrequent) "0x0001000a: Got no response on a sent Ethernet frame" errors in the ecat logs. Does this mean the packet was completely lost or will acontis master re-send internally? Is this error caused by not meeting the specified cycle rate in SW?</div>
+</div>
+<br>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+</div></blockquote>
+</div>
+</blockquote>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

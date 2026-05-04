@@ -1,0 +1,153 @@
+### HEADER
+Id=10666
+Link=http://at-zammad/#ticket/zoom/10666
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=7010666
+Owner=s.romero@acontis.com (ID=2460, FirstName=Sebastian, LastName=Romero)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=28.05.2025 06:45:54 +00:00
+UpdatedAt=02.06.2025 06:14:04 +00:00
+CloseAt=02.06.2025 06:14:04 +00:00
+ArticlesCount=2
+
+### TITLE
+The issue about calculation of Sync Unit Cycle Time (PNo.65)
+
+### ARTICLE00_HEADER
+Id=61080
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.05.2025 06:45:54 +00:00
+UpdatedAt=28.05.2025 06:45:57 +00:00
+
+### ARTICLE00_SUBJECT
+The issue about calculation of Sync Unit Cycle Time (PNo.65)
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi Support Team,</div><div dir="ltr">
+<br>
+</div><div dir="ltr">This is from Mitsubishi (commission No. 40627).</div><div dir="ltr">
+<br>
+</div><div dir="ltr">Before, they ask you to fix the following issue.</div><div dir="ltr">
+<br>
+</div><div dir="ltr">----------</div><div dir="ltr">【Identified Event】</div><div>When [Sync Unit Cycle] of [Sync Unit 0] is set to [/30], the calculation result of [User defined] is not the value obtained by dividing [Sync Unit Cycle (us)] by 30, but by 29. For example, if the [Sync Unit Cycle (us) is 1000, the result should be 33.33 but the result is 34.48.</div><div dir="ltr">
+<br>
+</div><div>【Expected behavior】</div><div>The calculation result of "User defined" is divided by 30. For example, if "Sync Unit Cycle (us)" is 1000, the result is 33.33.</div><div>Since the calculation result is correct, the other items do not change.</div><div dir="ltr">
+<br>
+</div><div>【Reproduction steps】</div><div>1. Add a slave with DC function.</div><div>2. Check "Overwrite Mode".</div><div>3. Check "Sync Unit</div><div>4. Check "Sync Unit0".</div><div>5. Check "Sync Unit Cycle</div><div>6. Select "/30" from the "Sync Unit Cycle" drop-down list</div><div dir="ltr">
+<br>
+</div><div>Result:</div><div>・Sync Unit Cycle" is unchecked.</div><div>・The drop-down list of "Sync Unit Cycle" is changed to "/100".</div><div>・User defined" is checked.</div><div>・User defined" is calculated as "Sync Unit Cycle (us)" divided by 29.</div><div dir="ltr">----------</div><div>
+<p><span><br>
+</span></p>
+<p>So, acontis has removed [/30] from this select item on Ver.3.9.11, but it is not good solution.</p>
+<p>Please add [/30] and fix this issue to calculate correctly, if selecting [/30] at the case that Sync Cycle Unit = 1000, Result is 33.33us.</p>
+<p><span><br>
+</span></p>
+<p>Best regards,</p>
+<p>Yuichi</p>
+<p> </p>
+<p>- プロフェッショナル集団を目指すＳＳＶグループ -</p>
+<span class="js-signatureMarker"></span><p>--------------------------------------------------</p>
+<p>株式会社ソフトサービス | Soft Service Co., Ltd.</p>
+<p><span>営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所 : 〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階</span></p>
+<p>
+<span>7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail : </span><span style=" color: rgb(70, 120, 134);"><u><a href="mailto:yuichi.ide@soft-service.co.jp" title="mailto:yuichi.ide@soft-service.co.jp">yuichi.ide@soft-service.co.jp</a></u></span><span><br> --------------------------------------------------</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=61123
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.05.2025 16:40:22 +00:00
+UpdatedAt=28.05.2025 16:40:24 +00:00
+
+### ARTICLE01_SUBJECT
+The issue about calculation of Sync Unit Cycle Time (PNo.65)
+
+### ARTICLE01_BODY
+Hi Yuichi,<br><br>I have fixed this issue now, I have added the "/30" back and found why it was not working. Should also come in the next version.<br><br>Best regards<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Sebastian Romero</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Wednesday, May 28, 2025 at 8:45:54 AM, Yuichi Ide wrote:<br><br><div dir="ltr">Hi Support Team,</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">This is from Mitsubishi (commission No. 40627).</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Before, they ask you to fix the following issue.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">----------</div>
+<div dir="ltr">【Identified Event】</div>
+<div>When [Sync Unit Cycle] of [Sync Unit 0] is set to [/30], the calculation result of [User defined] is not the value obtained by dividing [Sync Unit Cycle (us)] by 30, but by 29. For example, if the [Sync Unit Cycle (us) is 1000, the result should be 33.33 but the result is 34.48.</div>
+<div dir="ltr">
+<br>
+</div>
+<div>【Expected behavior】</div>
+<div>The calculation result of "User defined" is divided by 30. For example, if "Sync Unit Cycle (us)" is 1000, the result is 33.33.</div>
+<div>Since the calculation result is correct, the other items do not change.</div>
+<div dir="ltr">
+<br>
+</div>
+<div>【Reproduction steps】</div>
+<div>1. Add a slave with DC function.</div>
+<div>2. Check "Overwrite Mode".</div>
+<div>3. Check "Sync Unit</div>
+<div>4. Check "Sync Unit0".</div>
+<div>5. Check "Sync Unit Cycle</div>
+<div>6. Select "/30" from the "Sync Unit Cycle" drop-down list</div>
+<div dir="ltr">
+<br>
+</div>
+<div>Result:</div>
+<div>・Sync Unit Cycle" is unchecked.</div>
+<div>・The drop-down list of "Sync Unit Cycle" is changed to "/100".</div>
+<div>・User defined" is checked.</div>
+<div>・User defined" is calculated as "Sync Unit Cycle (us)" divided by 29.</div>
+<div dir="ltr">----------</div>
+<div>
+<p><span><br>
+</span></p>
+<p>So, acontis has removed [/30] from this select item on Ver.3.9.11, but it is not good solution.</p>
+<p>Please add [/30] and fix this issue to calculate correctly, if selecting [/30] at the case that Sync Cycle Unit = 1000, Result is 33.33us.</p>
+<p><span><br>
+</span></p>
+<p>Best regards,</p>
+<p>Yuichi</p>
+<p> </p>
+<p>- プロフェッショナル集団を目指すＳＳＶグループ -</p>
+<span class="js-signatureMarker"></span><p>--------------------------------------------------</p>
+<p>株式会社ソフトサービス | Soft Service Co., Ltd.</p>
+<p><span>営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所 : 〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階</span></p>
+<p>
+<span>7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail : </span><span style=" color: rgb(70, 120, 134);"><u><a href="mailto:yuichi.ide@soft-service.co.jp" title="mailto:yuichi.ide@soft-service.co.jp">yuichi.ide@soft-service.co.jp</a></u></span><span><br> --------------------------------------------------</span></p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

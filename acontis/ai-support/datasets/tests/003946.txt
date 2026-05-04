@@ -1,0 +1,146 @@
+### HEADER
+Id=3946
+Link=http://at-zammad/#ticket/zoom/3946
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=703946
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=21.09.2022 12:58:51 +00:00
+UpdatedAt=31.10.2022 14:40:38 +00:00
+CloseAt=31.10.2022 14:40:38 +00:00
+ArticlesCount=3
+
+### TITLE
+NDIS Driver for Copley Controls
+
+### ARTICLE00_HEADER
+Id=20944
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.09.2022 12:58:51 +00:00
+UpdatedAt=21.09.2022 12:58:51 +00:00
+
+### ARTICLE00_SUBJECT
+NDIS Driver for Copley Controls
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>I visited Copley Controls yesterday, they have a software for Windows for setting up their drives called CME: <a href="https://www.copleycontrols.com/en/software/" rel="nofollow noreferrer noopener" target="_blank">https://www.copleycontrols.com/en/software/</a>. I was showing them EC-Engineer and discussing the history with WinPcap, Npcap, and our own NDIS Filter driver, and they said they had the same problems with how their CME software works. They were very surprised to hear that we did our own NDIS driver, and they said they would love to also have their own NDIS driver but didn’t know this was even possible.</div><div> </div><div>I’m wondering if there is some possibility to offer our NDIS driver to them so that they could make their CME software work with it. Maybe we license them the source code? Please let me know your thoughts about this.<br><div>
+<br>/Jon </div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=20974
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.09.2022 07:27:13 +00:00
+UpdatedAt=22.09.2022 07:27:17 +00:00
+
+### ARTICLE01_SUBJECT
+NDIS Driver for Copley Controls
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>yes, I think we can offer them a license. For me source code is fine.</div><div><br></div><div>What do you think about $15,000 SDK including maintenance until end of 2023.</div><div>Further maintenance $3,000 per year?</div><div><br></div><div>Christoph</div><div><br></div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/3946/20974/86910?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, September 21, 2022 at 2:58:51 PM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>I visited Copley Controls yesterday, they have a software for Windows for setting up their drives called CME: <a href="https://www.copleycontrols.com/en/software/" rel="nofollow noreferrer noopener" target="_blank">https://www.copleycontrols.com/en/software/</a>. I was showing them EC-Engineer and discussing the history with WinPcap, Npcap, and our own NDIS Filter driver, and they said they had the same problems with how their CME software works. They were very surprised to hear that we did our own NDIS driver, and they said they would love to also have their own NDIS driver but didn’t know this was even possible.</div>
+<div> </div>
+<div>I’m wondering if there is some possibility to offer our NDIS driver to them so that they could make their CME software work with it. Maybe we license them the source code? Please let me know your thoughts about this.<br><div>
+<br>/Jon </div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=21002
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.09.2022 15:27:23 +00:00
+UpdatedAt=22.09.2022 15:27:23 +00:00
+
+### ARTICLE02_SUBJECT
+Re: NDIS Driver for Copley Controls [Ticket#703946]
+
+### ARTICLE02_BODY
+Thanks Christoph. I will propose this to them. Copley has always seems quite reluctant to pay for things, so I’m not sure if they will go for this, but let’s see.<div> </div><div>I will make a note to discuss together in our next call the meeting we had Tuesday at Copley. They are quite difficult to work with on EtherCAT.<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Sep 22, 2022, at 3:27 AM, Christoph Widmann via EC-Support &lt;<a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>&gt; wrote:</div>
+<br><div>Hi Jon,<div> </div>
+<div>yes, I think we can offer them a license. For me source code is fine.</div>
+<div> </div>
+<div>What do you think about $15,000 SDK including maintenance until end of 2023.</div>
+<div>Further maintenance $3,000 per year?</div>
+<div> </div>
+<div>Christoph</div>
+<div> </div>
+<div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>
+<img style="max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/3946/21002/87086?view=inline"><br>
+</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Wednesday, September 21, 2022 at 2:58:51 PM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>I visited Copley Controls yesterday, they have a software for Windows for setting up their drives called CME: <a href="https://www.copleycontrols.com/en/software/" rel="nofollow noreferrer noopener" target="_blank">https://www.copleycontrols.com/en/software/</a>. I was showing them EC-Engineer and discussing the history with WinPcap, Npcap, and our own NDIS Filter driver, and they said they had the same problems with how their CME software works. They were very surprised to hear that we did our own NDIS driver, and they said they would love to also have their own NDIS driver but didn’t know this was even possible.</div>
+<div> </div>
+<div>I’m wondering if there is some possibility to offer our NDIS driver to them so that they could make their CME software work with it. Maybe we license them the source code? Please let me know your thoughts about this.<br><div>
+<br>/Jon </div>
+</div>
+</blockquote></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

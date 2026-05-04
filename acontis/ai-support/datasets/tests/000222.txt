@@ -1,0 +1,106 @@
+### HEADER
+Id=222
+Link=http://at-zammad/#ticket/zoom/222
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=AIST, Hum.Rob., Linux x86 (ID=243, Number=243)
+Number=700222
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=16.03.2021 11:01:54 +00:00
+UpdatedAt=16.03.2021 12:08:17 +00:00
+CloseAt=16.03.2021 12:08:17 +00:00
+ArticlesCount=2
+
+### TITLE
+Please provide the latest version for AIST (commission No.  41081)
+
+### ARTICLE00_HEADER
+Id=949
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.03.2021 11:01:55 +00:00
+UpdatedAt=16.03.2021 11:01:59 +00:00
+
+### ARTICLE00_SUBJECT
+Please provide the latest version for AIST (commission No.  41081)
+
+### ARTICLE00_BODY
+<div>Hi Support Team,</div><div> </div><div>AIST would like to receive the latest version of of EC-Master.</div><div>They are using it with the following platform.</div><div>- Class A</div><div>- Linux</div><div>- x86 64bit</div><div>- Intel PRO 1000 Link Layer</div><div> </div><div>Please provide the download link.</div><div> </div><div>Best regards,</div><div>Yuichi</div><div> </div><div>
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業所 | Tokyo Sales Office<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=954
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.03.2021 12:08:17 +00:00
+UpdatedAt=16.03.2021 12:08:20 +00:00
+
+### ARTICLE01_SUBJECT
+Please provide the latest version for AIST (commission No.  41081)
+
+### ARTICLE01_BODY
+<div>Hi Yuichi,</div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/2021/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.1.02/EC-Master-ClassA-AddOn-V3.1.1.02-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2021/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.1.02/EC-Master-ClassA-AddOn-V3.1.1.02-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.1.02/EC-Master-ClassA-AddOn-V3.1.1.02-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2021/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.1.02/EC-Master-I8254x-V3.1.1.02-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2021/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.1.02/EC-Master-I8254x-V3.1.1.02-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.1.02/EC-Master-I8254x-V3.1.1.02-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2021/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.1.02/EC-Master-V3.1.1.02-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2021/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.1.02/EC-Master-V3.1.1.02-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/A/AIST_(41081)(JP)/EC-Master_64_Bit/3.1.1.02/EC-Master-V3.1.1.02-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div>
+</div><div></div><div data-signature="true" data-signature-id="2">
+<div><span><br></span></div>
+<div>
+<span>Best regards,</span>
+</div>
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Holger Oelhaf </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">Am Dienstag, 16. März 2021, 12:01:55, schrieb SSV_IDEYuichi:<br><br><div>Hi Support Team,</div>
+<div> </div>
+<div>AIST would like to receive the latest version of of EC-Master.</div>
+<div>They are using it with the following platform.</div>
+<div>- Class A</div>
+<div>- Linux</div>
+<div>- x86 64bit</div>
+<div>- Intel PRO 1000 Link Layer</div>
+<div> </div>
+<div>Please provide the download link.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+<div>
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業所 | Tokyo Sales Office<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

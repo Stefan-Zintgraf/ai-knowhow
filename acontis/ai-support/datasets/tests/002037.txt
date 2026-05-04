@@ -1,0 +1,229 @@
+### HEADER
+Id=2037
+Link=http://at-zammad/#ticket/zoom/2037
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies GmbH (ID=399, Number=1000, Country=DE)
+Commission=Acontis, Generic (ID=590, Number=590)
+Number=702037
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+CreatedBy=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Type=
+TimeUnit=
+CreatedAt=08.12.2021 10:33:45 +00:00
+UpdatedAt=14.01.2022 10:36:14 +00:00
+CloseAt=14.01.2022 10:36:14 +00:00
+ArticlesCount=4
+
+### TITLE
+Re: EC-Simulator Schutz
+
+### ARTICLE00_HEADER
+Id=10675
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.12.2021 10:33:45 +00:00
+UpdatedAt=08.12.2021 10:33:45 +00:00
+
+### ARTICLE00_SUBJECT
+Re: EC-Simulator Schutz
+
+### ARTICLE00_BODY
+<div dir="auto">Das geht nicht. Ich füge noch ein Bit, das angibt, ob die MAC Adresse ignoriert werden soll, als Merkmal hinzu.</div><div dir="auto">
+<div> </div>Holen Sie sich<a href="https://aka.ms/ghei36" rel="nofollow noreferrer noopener" title="https://aka.ms/ghei36" target="_blank">Outlook für Android</a>
+</div><hr>
+<div dir="ltr">
+<b>From:</b> Christoph Widmann &lt;c.widmann@acontis.com&gt;<br>
+<b>Sent:</b> Thursday, December 2, 2021 9:39:27 AM<br>
+<b>To:</b> 'Paul Bußmann' &lt;p.bussmann@acontis.com&gt;<br>
+<b>Subject:</b> EC-Simulator Schutz <div> </div>
+</div><div lang="DE">
+<div>
+<p>Hallo Paul,</p>
+<p> </p>
+<p>können wir beim Simulator auf einen Key nur für die Begrenzung der Slaveanzahl setzen?</p>
+<p> </p>
+<p>Die MAC soll nicht geprüft werden, aber es soll eben eine Obergrenze für die Slaves geben, Z. B. 24.</p>
+<p> </p>
+<p>Christoph</p>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=10683
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=08.12.2021 11:10:41 +00:00
+UpdatedAt=08.12.2021 11:10:41 +00:00
+
+### ARTICLE01_BODY
+<div><a href="http://at-dev-git/ec-embedded/ec-embedded/-/issues/4060" title="http://at-dev-git/ec-embedded/ec-embedded/-/issues/4060" rel="nofollow noreferrer noopener" target="_blank">http://at-dev-git/ec-embedded/ec-embedded/-/issues/4060</a></div>
+
+### ARTICLE02_HEADER
+Id=11796
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.01.2022 09:51:14 +00:00
+UpdatedAt=14.01.2022 09:51:18 +00:00
+
+### ARTICLE02_SUBJECT
+EC-Simulator Schutz
+
+### ARTICLE02_BODY
+Hallo Christoph,<div><br></div><div>das Feature ist Teil von V3.1.3.01, die gestern freigegeben wurde.</div><div><br></div><div>Viele Grüße</div><div>Paul<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Mittwoch, 8. Dezember 2021, 11:33:45, schrieb Paul Bußmann:<br><br><div dir="auto">Das geht nicht. Ich füge noch ein Bit, das angibt, ob die MAC Adresse ignoriert werden soll, als Merkmal hinzu.</div>
+<div dir="auto">
+<div> </div>Holen Sie sich<a href="https://aka.ms/ghei36" rel="nofollow noreferrer noopener" title="https://aka.ms/ghei36" target="_blank">Outlook für Android</a>
+</div>
+<hr>
+<div dir="ltr">
+<b>From:</b> Christoph Widmann &lt;c.widmann@acontis.com&gt;<br>
+<b>Sent:</b> Thursday, December 2, 2021 9:39:27 AM<br>
+<b>To:</b> 'Paul Bußmann' &lt;p.bussmann@acontis.com&gt;<br>
+<b>Subject:</b> EC-Simulator Schutz <div> </div>
+</div>
+<div lang="DE">
+<div>
+<p>Hallo Paul,</p>
+<p> </p>
+<p>können wir beim Simulator auf einen Key nur für die Begrenzung der Slaveanzahl setzen?</p>
+<p> </p>
+<p>Die MAC soll nicht geprüft werden, aber es soll eben eine Obergrenze für die Slaves geben, Z. B. 24.</p>
+<p> </p>
+<p>Christoph</p>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=11799
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.01.2022 10:35:59 +00:00
+UpdatedAt=14.01.2022 10:35:59 +00:00
+
+### ARTICLE03_SUBJECT
+AW: EC-Simulator Schutz [Ticket#702037]
+
+### ARTICLE03_BODY
+<div>
+<p>Danke für die Info.</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Paul Bußmann via EC-Support &lt;ecsupport@acontis.com&gt; <br><b>Gesendet:</b> Freitag, 14. Januar 2022 10:51<br><b>An:</b> c.widmann@acontis.com<br><b>Betreff:</b> RE: EC-Simulator Schutz [Ticket#702037]</p>
+</div>
+<p> </p>
+<p>Hallo Christoph,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>das Feature ist Teil von V3.1.3.01, die gestern freigegeben wurde.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Viele Grüße</p>
+</div>
+<div>
+<p>Paul</p>
+<div>
+<div>
+<p>____________________________________________________________________________</p>
+</div>
+<div>
+<p>Paul Bußmann</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<p>acontis technologies GmbH</p>
+</div>
+<div>
+<p>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</p>
+</div>
+<div>
+<p>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </p>
+</div>
+<div>
+<p>Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>eMail: ecsupport@acontis.com</p>
+</div>
+<div>
+<p>----------------------------------------------------------------------------</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</p>
+</div>
+<div>
+<p><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div> <p> </p>
+</div>
+<div><blockquote>
+<p>Am Mittwoch, 8. Dezember 2021, 11:33:45, schrieb Paul Bußmann:</p>
+<p></p>
+<div>
+<p>Das geht nicht. Ich füge noch ein Bit, das angibt, ob die MAC Adresse ignoriert werden soll, als Merkmal hinzu.</p>
+</div>
+<div>
+<div>
+<p> </p>
+</div>
+<p>Holen Sie sich<a href="https://aka.ms/ghei36" title="https://aka.ms/ghei36" rel="nofollow noreferrer noopener" target="_blank">Outlook für Android</a> </p>
+</div>
+<div><hr></div>
+<div>
+<p><b>From:</b> Christoph Widmann &lt;c.widmann@acontis.com&gt;<br><b>Sent:</b> Thursday, December 2, 2021 9:39:27 AM<br><b>To:</b> 'Paul Bußmann' &lt;p.bussmann@acontis.com&gt;<br><b>Subject:</b> EC-Simulator Schutz </p>
+</div>
+<div>
+<p>Hallo Paul,</p>
+<p> </p>
+<p>können wir beim Simulator auf einen Key nur für die Begrenzung der Slaveanzahl setzen?</p>
+<p> </p>
+<p>Die MAC soll nicht geprüft werden, aber es soll eben eine Obergrenze für die Slaves geben, Z. B. 24.</p>
+<p> </p>
+<p>Christoph</p>
+</div>
+<p> </p>
+</blockquote></div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>

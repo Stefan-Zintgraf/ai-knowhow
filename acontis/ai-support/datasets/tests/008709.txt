@@ -1,0 +1,164 @@
+### HEADER
+Id=8709
+Link=http://at-zammad/#ticket/zoom/8709
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=708709
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=22.08.2024 13:17:03 +00:00
+UpdatedAt=30.08.2024 06:31:10 +00:00
+CloseAt=30.08.2024 06:31:10 +00:00
+ArticlesCount=2
+
+### TITLE
+Want to change DeviceName... (No.83)
+
+### ARTICLE00_HEADER
+Id=48904
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.08.2024 13:17:03 +00:00
+UpdatedAt=22.08.2024 13:17:05 +00:00
+
+### ARTICLE00_SUBJECT
+Want to change DeviceName... (No.83)
+
+### ARTICLE00_BODY
+Hi Support Team, <div> </div><div>Mitsubishi would like to change "DeviceName".</div><div> </div><div>
+<div>1. At first, Append 2 sets of "VIPA 053-1EC00".</div>
+<div>2. Copy them all.</div>
+<div>3. Paste them after select Master.</div>
+<div>4. "MASTER / B" is shown on pop up Window "Select Output Port".</div>
+<div> </div>
+<div>They would like to change the name "MASTER / B".</div>
+<div> </div>
+<div>And they check the source code of "EcVieModel" and "EcCore".</div>
+<div>
+<div> </div>
+<div>EcVeiwModel ↓</div>
+</div>
+<div>
+<img alt="PastedGraphic-3.tiff" src="/api/v1/ticket_attachment/8709/48904/202802?view=inline" style="max-width:100%;">
+</div>
+<div> </div>
+<div>At above capture, please see the line 60 of EcViewModel.</div>
+<div>"MASTER" is DeviceName, so that we check EcCore and find "DeviceName", "DeviceName" doesn’t have "set", it has only "get".</div>
+<div>Please see the following capture line 102.</div>
+<div> </div>
+<div>EcCore ↓</div>
+<div>
+<img alt="PastedGraphic-4.tiff" src="/api/v1/ticket_attachment/8709/48904/202803?view=inline" style="max-width:100%;">
+</div>
+<div> </div>
+<div>Mitsubishi think it is the problem, so that they would like you to add "set" to "DeviceName".</div>
+<div> </div>
+<div>Could you do that?</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=48913
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.08.2024 14:07:13 +00:00
+UpdatedAt=22.08.2024 14:07:15 +00:00
+
+### ARTICLE01_SUBJECT
+Want to change DeviceName... (No.83)
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>I Martin implemented the functionality to replace the <span>EcEniEngineDefaults.DefaultMasterName and the </span><span>EcEniEngineDefaults.DefaultSlaveName. I added the possibility to change the </span><span>EcEniEngineDefaults.DefaultMasterNameCapital. So they have to set this global variable. Then they can change. </span>
+</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, August 22, 2024 at 3:17:03 PM, Yuichi Ide wrote:<br><br>Hi Support Team, <div> </div>
+<div>Mitsubishi would like to change "DeviceName".</div>
+<div> </div>
+<div>
+<div>1. At first, Append 2 sets of "VIPA 053-1EC00".</div>
+<div>2. Copy them all.</div>
+<div>3. Paste them after select Master.</div>
+<div>4. "MASTER / B" is shown on pop up Window "Select Output Port".</div>
+<div> </div>
+<div>They would like to change the name "MASTER / B".</div>
+<div> </div>
+<div>And they check the source code of "EcVieModel" and "EcCore".</div>
+<div>
+<div> </div>
+<div>EcVeiwModel ↓</div>
+</div>
+<div>
+
+</div>
+<div> </div>
+<div>At above capture, please see the line 60 of EcViewModel.</div>
+<div>"MASTER" is DeviceName, so that we check EcCore and find "DeviceName", "DeviceName" doesn’t have "set", it has only "get".</div>
+<div>Please see the following capture line 102.</div>
+<div> </div>
+<div>EcCore ↓</div>
+<div>
+
+</div>
+<div> </div>
+<div>Mitsubishi think it is the problem, so that they would like you to add "set" to "DeviceName".</div>
+<div> </div>
+<div>Could you do that?</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

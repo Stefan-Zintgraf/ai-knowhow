@@ -1,0 +1,155 @@
+### HEADER
+Id=6425
+Link=http://at-zammad/#ticket/zoom/6425
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=swissQprint (ID=24, Number=40359, Country=CH)
+Commission=swissQprint, Grossformatdrucker Steuerung (ID=26, Number=26)
+Number=706425
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=sei@swissqprint.com (ID=231, FirstName=Sven, LastName=Eicher)
+CreatedBy=sei@swissqprint.com (ID=231, FirstName=Sven, LastName=Eicher)
+Type=
+TimeUnit=
+CreatedAt=25.09.2023 14:12:23 +00:00
+UpdatedAt=09.10.2023 06:17:49 +00:00
+CloseAt=09.10.2023 06:17:49 +00:00
+ArticlesCount=2
+
+### TITLE
+Unterstützte Prozessoren
+
+### ARTICLE00_HEADER
+Id=34646
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.09.2023 14:12:23 +00:00
+UpdatedAt=25.09.2023 14:12:23 +00:00
+
+### ARTICLE00_SUBJECT
+Unterstützte Prozessoren
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="DE">Guten Tag</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Ich bin aktuell mit der Evaluierung einer neuen Maschinensteuerung beschäftigt, welche in rund 2 Jahren unsere aktuelle Maschinensteuerung ablösen wird, welche den Acontis EtherCAT-Stack verwendet.</span></p>
+<p><span lang="DE">Wir wollen auf der Maschinensteuerung zum einen einen „normalen“ Gigabit-Ethernet-Port (Standard-Treiber) und den EtherCAT-fähigen 100Mbit Port (Atemsys-Treiber) verwenden.</span></p>
+<p><span lang="DE">Die folgenden Prozessoren stehen zur Auswahl:</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">NXP i.MX 8MPlus Quad</span></p>
+<p><span lang="DE">TI AM6232</span></p>
+<p><span lang="DE">TI AM6548</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Können Sie mir eine Auskunft bezüglich Kompatiblität zum Acontis EtherCAT-Master Stack geben?</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Vielen Dank</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Freundliche Grüsse<br>
+<br> Sven Eicher<br>
+<br> swissQprint | Sven Eicher | R&amp;D Hardware/Firmware Manager<br> Schützenwiese 8 | CH-9451 Kriessern | T +41 71 727 05 24 <br> sei@swissqprint.com | www.swissqprint.com</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><p> </p></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=34657
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.09.2023 15:24:19 +00:00
+UpdatedAt=25.09.2023 15:24:22 +00:00
+
+### ARTICLE01_SUBJECT
+Unterstützte Prozessoren
+
+### ARTICLE01_BODY
+<div>Sehr geehrter Herr Eicher,</div><div><br></div><div>eine Liste von unterstützten Betriebssystemen und Plattformen finden Sie auf <a href="https://www.acontis.com/en/os.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/os.html</a>. Aus aktueller Sicht empfehlen wir den NXP, da uns beim AM6 noch gewisse Unterstützungen fehlen. Dies hängt jedoch stark von der Ethernet/EtherCAT Anbindung ab.</div><div>Interessant für Sie ist eventuell auch unsere Kooperation mit Toradex <a href="https://developer.toradex.com/software/industrial-automation/acontis-technologies/" rel="nofollow noreferrer noopener" target="_blank">https://developer.toradex.com/software/industrial-automation/acontis-technologies/</a>.</div><div><br></div><div>Sie bleiben bei Linux?</div><div>
+<br>
+</div><div>Welcher NIC/PHY/Transceiver wäre es in Ihrem Fall konkret? Eine recht vollständige List unserer <span>Real-time </span><span>Ethernet Driver finden Sie unter </span><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/index.html" title="https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/index.html" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/index.html</a><span>.</span>
+</div><div><span><br></span></div><div>
+<div>
+<div>Ein weiterer eventuell interessanter Link zum AM6:</div>
+<div><a href="https://www.acontis.com/en/ethercat-master-on-solidruns-compact-am64x-som/articles/ethercat-master-stack-on-solidrun-s-ti-am64x-system-on-module.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/ethercat-master-on-solidruns-compact-am64x-som/articles/ethercat-master-stack-on-solidrun-s-ti-am64x-system-on-module.html</a></div>
+</div>
+<div>
+<br>
+</div>
+</div><div>Sollten Sie noch mehr Informationen benötigen lassen Sie es uns gerne wissen. <span>Sehr gerne verbessern und erweitern wir auch unsere bestehende Unterstützungen. Sprechen Sie uns einfach darauf an.</span>
+</div><div><br></div><div>Mit freundlichen Grüßen,</div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: -</div>
+<div>acontis technologies GmbH,  -, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Monday, September 25, 2023 at 4:12:23 PM, Sven Eicher wrote:<br><br><div>
+<p><span lang="DE">Guten Tag</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Ich bin aktuell mit der Evaluierung einer neuen Maschinensteuerung beschäftigt, welche in rund 2 Jahren unsere aktuelle Maschinensteuerung ablösen wird, welche den Acontis EtherCAT-Stack verwendet.</span></p>
+<p><span lang="DE">Wir wollen auf der Maschinensteuerung zum einen einen „normalen“ Gigabit-Ethernet-Port (Standard-Treiber) und den EtherCAT-fähigen 100Mbit Port (Atemsys-Treiber) verwenden.</span></p>
+<p><span lang="DE">Die folgenden Prozessoren stehen zur Auswahl:</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">NXP i.MX 8MPlus Quad</span></p>
+<p><span lang="DE">TI AM6232</span></p>
+<p><span lang="DE">TI AM6548</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Können Sie mir eine Auskunft bezüglich Kompatiblität zum Acontis EtherCAT-Master Stack geben?</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Vielen Dank</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Freundliche Grüsse<br>
+<br> Sven Eicher<br>
+<br> swissQprint | Sven Eicher | R&amp;D Hardware/Firmware Manager<br> Schützenwiese 8 | CH-9451 Kriessern | T +41 71 727 05 24 <br> sei@swissqprint.com | www.swissqprint.com</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: -</div>
+<div>-,  -, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>

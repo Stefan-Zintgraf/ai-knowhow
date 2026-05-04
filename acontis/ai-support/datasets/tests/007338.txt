@@ -1,0 +1,238 @@
+### HEADER
+Id=7338
+Link=http://at-zammad/#ticket/zoom/7338
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Rorze, Wafer handling system (ID=782, Number=782)
+Number=707338
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=29.01.2024 00:56:47 +00:00
+UpdatedAt=09.02.2024 07:11:20 +00:00
+CloseAt=09.02.2024 07:11:20 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Engineer(rorze)
+
+### ARTICLE00_HEADER
+Id=40211
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=29.01.2024 00:56:47 +00:00
+UpdatedAt=29.01.2024 00:56:49 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Engineer(rorze)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Engineer(rorze)
+
+They have questioon about "Task + Sync Units" tab.
+This feature is not described in the User Manual.
+
+  - What kind of things can this function do?
+  - What is MSU?
+  - Please also tell me how to operate it.
+
+Best regards,
+Takuya Fujikawa
+
+### ARTICLE01_HEADER
+Id=40216
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.01.2024 07:03:57 +00:00
+UpdatedAt=29.01.2024 07:04:01 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Engineer(rorze)
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>this feature is described here in the manual in chapter 5.2.9.</div><div>You can create Tasks there an let them run with different cycle times. So it would be possible to have faster and slower process data for example. </div><div>Every MSU (Master Sync Unit) is getting an own command in the ENI file. Mean you can set the variables which are in there to a different offset for example.</div><div><br></div><div>Best regards,</div><div>Kai <div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, January 29, 2024 at 1:56:47 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Engineer(rorze)</div>
+<div><br></div>
+<div>They have questioon about "Task + Sync Units" tab.</div>
+<div>This feature is not described in the User Manual.</div>
+<div><br></div>
+<div>  - What kind of things can this function do?</div>
+<div>  - What is MSU?</div>
+<div>  - Please also tell me how to operate it.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=40279
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=29.01.2024 23:44:35 +00:00
+UpdatedAt=29.01.2024 23:44:35 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Engineer(rorze) [Ticket#707338]
+
+### ARTICLE02_BODY
+Dear Kai san
+
+I have attached additional questions from customers.
+
+Best regards,
+Takuya Fujikawa
+
+
+On 2024/01/29 16:04, Kai Feifel via EC-Support wrote:
+> Hi,
+> 
+> this feature is described here in the manual in chapter 5.2.9.
+> You can create Tasks there an let them run with different cycle times. So it would be possible to have faster and slower process data for example.
+> Every MSU (Master Sync Unit) is getting an own command in the ENI file. Mean you can set the variables which are in there to a different offset for example.
+> 
+> Best regards,
+> Kai
+> __________________________________________________________________________________________
+> Kai Feifel
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> On Monday, January 29, 2024 at 1:56:47 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Engineer(rorze)
+>>
+>> They have questioon about "Task + Sync Units" tab.
+>> This feature is not described in the User Manual.
+>>
+>>  - What kind of things can this function do?
+>>  - What is MSU?
+>>  - Please also tell me how to operate it.
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+### ARTICLE03_HEADER
+Id=40317
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.01.2024 14:36:42 +00:00
+UpdatedAt=30.01.2024 14:36:46 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Engineer(rorze)
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>Q1: You have to select the slave --&gt; Open the Sync UnitTab --&gt; There you can see in the right of the table which MSU or Task the Slave SyncUnit is --&gt; Then click on it and you can select an other Task oder MSU</div><div><br></div><div>Q2: You can only export the DAQ configuration here. The recording can only be done with an additional library. The DAQ library. </div><div><br></div><div>Best regards,</div><div>Kai <br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, January 30, 2024 at 12:44:35 AM, Takuya Fujikawa wrote:<br><br><div>Dear Kai san</div>
+<div><br></div>
+<div>I have attached additional questions from customers.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2024/01/29 16:04, Kai Feifel via EC-Support wrote:</div>
+<div>&gt; Hi,</div>
+<div>&gt;</div>
+<div>&gt; this feature is described here in the manual in chapter 5.2.9.</div>
+<div>&gt; You can create Tasks there an let them run with different cycle times. So it would be possible to have faster and slower process data for example.</div>
+<div>&gt; Every MSU (Master Sync Unit) is getting an own command in the ENI file. Mean you can set the variables which are in there to a different offset for example.</div>
+<div>&gt;</div>
+<div>&gt; Best regards,</div>
+<div>&gt; Kai</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Kai Feifel</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Monday, January 29, 2024 at 1:56:47 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Engineer(rorze)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; They have questioon about "Task + Sync Units" tab.</div>
+<div>&gt;&gt; This feature is not described in the User Manual.</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt;  - What kind of things can this function do?</div>
+<div>&gt;&gt;  - What is MSU?</div>
+<div>&gt;&gt;  - Please also tell me how to operate it.</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,306 @@
+### HEADER
+Id=352
+Link=http://at-zammad/#ticket/zoom/352
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=Omron, PLC (ID=282, Number=282)
+Number=700352
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=yoshinobu.seno@omron.com (ID=244, FirstName=Yoshinobu, LastName=Seno)
+CreatedBy=yoshinobu.seno@omron.com (ID=244, FirstName=Yoshinobu, LastName=Seno)
+Type=
+TimeUnit=
+CreatedAt=01.04.2021 11:57:46 +00:00
+UpdatedAt=25.04.2022 12:35:03 +00:00
+CloseAt=06.04.2021 09:36:57 +00:00
+ArticlesCount=4
+
+### TITLE
+RE: About huge jitter log
+
+### ARTICLE00_HEADER
+Id=1729
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.04.2021 11:57:46 +00:00
+UpdatedAt=01.04.2021 11:57:46 +00:00
+
+### ARTICLE00_SUBJECT
+RE: About huge jitter log
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Cyril san,</p>
+<p> </p>
+<p>We heard from an important customer that something is wrong.</p>
+<p>We got log files.</p>
+<p>Please check and some advice to us.</p>
+<p> </p>
+<p>I can find “Ethernet link cable disconnected”. But I can’t find the root cause.</p>
+<p> </p>
+<p>Thank you in advance.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Yoshinobu Seno</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Yoshinobu Seno / OC-IAB PBD-C CONTROLLER <br>
+<b>Sent:</b> Wednesday, October 9, 2019 9:07 AM<br>
+<b>To:</b> ecsupport@acontis.com<br>
+<b>Cc:</b> Tsutomu Miyawaki / OSK FA 1KAI4 &lt;Tsutomu.Miyawaki@omron.com&gt;<br>
+<b>Subject:</b> About huge jitter log</p>
+</div>
+</div>
+<p> </p>
+<p>Dear Cyril san,</p>
+<p> </p>
+<p>I'm in charge of Industrial PC Product of OMRON Co..</p>
+<p>Please tell me about "huge jitter"of Acontis Master instead of Miyawaki..</p>
+<p> </p>
+<p>Under what conditions is the log output? and Please tell me the details about the specifications.</p>
+<p>&gt;Error: System overload: Cycle time too short or huge jitter!</p>
+<p> </p>
+<p>Thank you for your support.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Yoshinobu Seno</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=1731
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.04.2021 12:04:53 +00:00
+UpdatedAt=01.04.2021 12:04:54 +00:00
+
+### ARTICLE01_SUBJECT
+About huge jitter log
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>due to holidays the answer will be delayed some days. </div><div><br></div><div>Best regards,</div><div>Paul<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Donnerstag, 1. April 2021, 13:57:46, schrieb yoshinobu.seno@omron.com:<br><br><div>
+<p>Dear Cyril san,</p>
+<p> </p>
+<p>We heard from an important customer that something is wrong.</p>
+<p>We got log files.</p>
+<p>Please check and some advice to us.</p>
+<p> </p>
+<p>I can find “Ethernet link cable disconnected”. But I can’t find the root cause.</p>
+<p> </p>
+<p>Thank you in advance.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Yoshinobu Seno</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Yoshinobu Seno / OC-IAB PBD-C CONTROLLER <br>
+<b>Sent:</b> Wednesday, October 9, 2019 9:07 AM<br>
+<b>To:</b> ecsupport@acontis.com<br>
+<b>Cc:</b> Tsutomu Miyawaki / OSK FA 1KAI4 &lt;Tsutomu.Miyawaki@omron.com&gt;<br>
+<b>Subject:</b> About huge jitter log</p>
+</div>
+</div>
+<p> </p>
+<p>Dear Cyril san,</p>
+<p> </p>
+<p>I'm in charge of Industrial PC Product of OMRON Co..</p>
+<p>Please tell me about "huge jitter"of Acontis Master instead of Miyawaki..</p>
+<p> </p>
+<p>Under what conditions is the log output? and Please tell me the details about the specifications.</p>
+<p>&gt;Error: System overload: Cycle time too short or huge jitter!</p>
+<p> </p>
+<p>Thank you for your support.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Yoshinobu Seno</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=1784
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.04.2021 08:39:08 +00:00
+UpdatedAt=06.04.2021 08:39:12 +00:00
+
+### ARTICLE02_SUBJECT
+About huge jitter log
+
+### ARTICLE02_BODY
+<div>Dear Seno-san,</div><div><br></div><div>it checked your log files. It really looks like the cable is shortly disconnected. It can be an unstable physical connection or a power supply issue on the slave side...</div><div><br></div><div>Best Regards,</div><div>Cyril<br><br>
+</div><div><blockquote type="cite">On Thursday, April 1, 2021, 1:57:46 PM, yoshinobu.seno@omron.com wrote:<br><br><div>
+<p>Dear Cyril san,</p>
+<p> </p>
+<p>We heard from an important customer that something is wrong.</p>
+<p>We got log files.</p>
+<p>Please check and some advice to us.</p>
+<p> </p>
+<p>I can find “Ethernet link cable disconnected”. But I can’t find the root cause.</p>
+<p> </p>
+<p>Thank you in advance.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Yoshinobu Seno</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Yoshinobu Seno / OC-IAB PBD-C CONTROLLER <br>
+<b>Sent:</b> Wednesday, October 9, 2019 9:07 AM<br>
+<b>To:</b> ecsupport@acontis.com<br>
+<b>Cc:</b> Tsutomu Miyawaki / OSK FA 1KAI4 &lt;Tsutomu.Miyawaki@omron.com&gt;<br>
+<b>Subject:</b> About huge jitter log</p>
+</div>
+</div>
+<p> </p>
+<p>Dear Cyril san,</p>
+<p> </p>
+<p>I'm in charge of Industrial PC Product of OMRON Co..</p>
+<p>Please tell me about "huge jitter"of Acontis Master instead of Miyawaki..</p>
+<p> </p>
+<p>Under what conditions is the log output? and Please tell me the details about the specifications.</p>
+<p>&gt;Error: System overload: Cycle time too short or huge jitter!</p>
+<p> </p>
+<p>Thank you for your support.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Yoshinobu Seno</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE03_HEADER
+Id=1793
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.04.2021 09:23:36 +00:00
+UpdatedAt=06.04.2021 09:23:36 +00:00
+
+### ARTICLE03_SUBJECT
+RE: About huge jitter log [Ticket#700352]
+
+### ARTICLE03_BODY
+<div>
+<p>Dear Cyril san,</p>
+<p> </p>
+<p>Thank you for your reply.</p>
+<p>I heard from our customer that the situation of slave side was power off and on.</p>
+<p>It was in your opinion.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Yoshinobu Seno</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Tuesday, April 6, 2021 5:39 PM<br>
+<b>To:</b> Yoshinobu Seno / OC-IAB PBD-C CONTROLLER &lt;yoshinobu.seno@omron.com&gt;<br>
+<b>Subject:</b> RE: About huge jitter log [Ticket#700352]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Dear Seno-san,</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>it checked your log files. It really looks like the cable is shortly disconnected. It can be an unstable physical connection or a power supply issue on the slave side...</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Cyril</p>
+</div>
+<div>
+<blockquote>
+<p>On Thursday, April 1, 2021, 1:57:46 PM, yoshinobu.seno@omron.com wrote:</p>
+<p></p>
+<div>
+<p>Dear Cyril san,</p>
+<p> </p>
+<p>We heard from an important customer that something is wrong.</p>
+<p>We got log files.</p>
+<p>Please check and some advice to us.</p>
+<p> </p>
+<p>I can find “Ethernet link cable disconnected”. But I can’t find the root cause.</p>
+<p> </p>
+<p>Thank you in advance.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Yoshinobu Seno</p>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Yoshinobu Seno / OC-IAB PBD-C CONTROLLER <br>
+<b>Sent:</b> Wednesday, October 9, 2019 9:07 AM<br>
+<b>To:</b> ecsupport@acontis.com<br>
+<b>Cc:</b> Tsutomu Miyawaki / OSK FA 1KAI4 &lt;Tsutomu.Miyawaki@omron.com&gt;<br>
+<b>Subject:</b> About huge jitter log</p>
+</div>
+</div>
+<p> </p>
+<p>Dear Cyril san,</p>
+<p> </p>
+<p>I'm in charge of Industrial PC Product of OMRON Co..</p>
+<p>Please tell me about "huge jitter"of Acontis Master instead of Miyawaki..</p>
+<p> </p>
+<p>Under what conditions is the log output? and Please tell me the details about the specifications.</p>
+<p>&gt;Error: System overload: Cycle time too short or huge jitter!</p>
+<p> </p>
+<p>Thank you for your support.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Yoshinobu Seno</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>

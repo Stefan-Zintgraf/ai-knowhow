@@ -1,0 +1,103 @@
+### HEADER
+Id=9192
+Link=http://at-zammad/#ticket/zoom/9192
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Murata Machinery, Unknown (ID=928, Number=928)
+Number=709192
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=31.10.2024 06:05:02 +00:00
+UpdatedAt=08.11.2024 07:35:27 +00:00
+CloseAt=08.11.2024 07:35:27 +00:00
+ArticlesCount=2
+
+### TITLE
+Question about EC-Master(Murata Machinery) [M029]
+
+### ARTICLE00_HEADER
+Id=52178
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=31.10.2024 06:05:02 +00:00
+UpdatedAt=31.10.2024 06:05:07 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(Murata Machinery) [M029]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(Murata Machinery) [M029]
+
+I would like to know the differences between Class A and Class B.
+In the EC-Master_UserManual.pdf under "1.2 The EC-Master - Features," there seems to be a table showing how Class A and Class B correspond to the various features of the EC-Master.
+Regarding the columns for "EC-Master Class A" and "EC-Master Class B," there are four types of values: check mark, Value, check mark, and FP.
+Could you please explain what each of these means?
+
+Please check the attached file.
+
+Best regards,
+Takuya Fujikawa
+
+### ARTICLE01_HEADER
+Id=52191
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.10.2024 07:21:10 +00:00
+UpdatedAt=31.10.2024 07:21:14 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(Murata Machinery) [M029]
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>check mark = included</div><div><br></div><div>value = not included with the specific reason:</div><div>
+<dt>1(<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id2" rel="nofollow noreferrer noopener" target="_blank" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id2">1</a>,<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id4" rel="nofollow noreferrer noopener" target="_blank" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id4">2</a>,<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id6" rel="nofollow noreferrer noopener" target="_blank" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id6">3</a>)<span>: According to ETG.1500 Master Classes not mandatory for Class A</span>
+</dt>
+<dt>2(<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id1" rel="nofollow noreferrer noopener" target="_blank" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id1">1</a>,<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id3" rel="nofollow noreferrer noopener" target="_blank" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id3">2</a>,<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id5" rel="nofollow noreferrer noopener" target="_blank" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id5">3</a>,<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id7" rel="nofollow noreferrer noopener" target="_blank" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id7">4</a>,<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id8" rel="nofollow noreferrer noopener" target="_blank" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id8">5</a>,<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id9" rel="nofollow noreferrer noopener" target="_blank" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id9">6</a>,<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id10" rel="nofollow noreferrer noopener" target="_blank" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id10">7</a>,<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id11" rel="nofollow noreferrer noopener" target="_blank" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id11">8</a>,<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id12" rel="nofollow noreferrer noopener" target="_blank" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#id12">9</a>)<span>: According to ETG.1500 Master Classes not mandatory for Class B</span>
+</dt>
+</div><div><br></div><div>? = print error, fixed in the next version:</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#the-ec-master-features" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#the-ec-master-features" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#the-ec-master-features</a></div></div><div><br></div><div>FP = Feature pack. That can be ordered separatly:</div><div><div><a href="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" title="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf</a></div></div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, October 31, 2024 at 7:05:02 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(Murata Machinery) [M029]</div>
+<div><br></div>
+<div>I would like to know the differences between Class A and Class B.</div>
+<div>In the EC-Master_UserManual.pdf under "1.2 The EC-Master - Features," there seems to be a table showing how Class A and Class B correspond to the various features of the EC-Master.</div>
+<div>Regarding the columns for "EC-Master Class A" and "EC-Master Class B," there are four types of values: check mark, Value, check mark, and FP.</div>
+<div>Could you please explain what each of these means?</div>
+<div><br></div>
+<div>Please check the attached file.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

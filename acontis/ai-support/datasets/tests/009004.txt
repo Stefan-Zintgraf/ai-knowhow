@@ -1,0 +1,132 @@
+### HEADER
+Id=9004
+Link=http://at-zammad/#ticket/zoom/9004
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Rorze, Wafer handling system (ID=782, Number=782)
+Number=709004
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=07.10.2024 02:02:37 +00:00
+UpdatedAt=15.10.2024 06:10:32 +00:00
+CloseAt=15.10.2024 06:10:32 +00:00
+ArticlesCount=2
+
+### TITLE
+Question about EC-Master (rorze)
+
+### ARTICLE00_HEADER
+Id=50937
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=07.10.2024 02:02:38 +00:00
+UpdatedAt=07.10.2024 02:02:41 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master (rorze)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master (rorze)
+
+I have summarized their questions in the attached file, so please check the content.
+
+Best regards,
+Takuya Fujikawa
+
+### ARTICLE01_HEADER
+Id=50996
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.10.2024 10:58:17 +00:00
+UpdatedAt=07.10.2024 10:58:21 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master (rorze)
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>
+<span>1:
+When transitioning to OP mode, what factors could cause an out of sync situation
+during a period of normal operation?</span><br>
+</div><div>
+<span>Answer: </span><span>A deviation of the clocks can have various reasons. The most common reason is probably too narrow limits for the permitted deviation. The second most common is probably a (temporarily) “too slow or too fast master clock”, due to an incorrectly configured operating system (energy management, displacement of the master stack process from the CPU by other processes). The same applies in principle to slaves, but is somewhat less likely here (as there is usually no OS and no parallel processes). Delays when sending or forwarding messages. Programming errors in the master or in the slaves that lead to changed program runtimes in certain situations/cases. Message loss, etc.</span>
+</div><div><br></div><div>2: Is
+it possible that the PDO data (for example, encoder values from the driver) at
+the timing when out of sync is detected contains invalid values?</div><div><div>
+<span>Answer: </span><span>Yes, that is in principal possible. However, temporal behavior and sent values must initially be considered independently. If masters and/or slaves are “out-of-sync”, the values are in a different temporal context.</span>
+</div></div><div><span><br></span></div><div>
+3: Could you explain in simpler terms the settings for deviation limit and
+settle time mentioned in the explanation in the photo '1.1.5 Sync Window
+Monitoring'?"<br>
+</div><div>Answer: <span>The deviation may not be greater than the specification over a certain period of time. </span><span>e.g.: dwInSyncLimit is 4000ns and dwInSyncSettleTime is 1500ms (which are both the default values). </span><span>Then the clock deviation over a duration of 1500ms must not be greater than 4000ns in order to be “in-sync”. After that, any deviation above 4000ns, however small, leads to “out-of-sync”. If you are in “out-of-sync”, the deviation must again be less than 4000ns over the duration of 1500ms in order to get “in-sync” again.</span>
+</div><div><span><br></span></div><div>
+<p>4: I would also like you to explain in
+simpler terms the meaning of the EC_T_INT nCtlSetVal setting.</p>
+<p>Answer: <span>nCtlSetVal defines when the SYNC0 signal is to be triggered within a cycle. At the beginning, in the middle or at the end. In our demos, we select SYNC0 at 66% of the cycle time.</span></p>
+<p><span>EcMasterDemoDC EcDemoApp.cpp around line 402:</span><br></p>
+<div>EC_T_INT nCtlSetValNsec = dwCycleTimeNsec * 2 / 3 /* 66% */; /* distance between cyclic frame send time and DC base on bus */</div>
+<div>
+<span>So frame is sent, frame is received and then a bit later the SYNC0 is to become signaled. The nCtlSetVal time says when.</span><br>
+</div>
+<div>
+<span>See also:</span><br>
+</div>
+<div><div><a href="https://www.acontis.com/files/acontis_partner_arena_public/sales_tools/presentations/ethercat/pdf/AT1020_V1.3_EC-Master-Technical.pdf" title="https://www.acontis.com/files/acontis_partner_arena_public/sales_tools/presentations/ethercat/pdf/AT1020_V1.3_EC-Master-Technical.pdf" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/files/acontis_partner_arena_public/sales_tools/presentations/ethercat/pdf/AT1020_V1.3_EC-Master-Technical.pdf</a></div></div>
+<div>Slide 31 and 32. Slide 32 (special case) is bit outdated with V3.2 <span>bus or master shift callback </span><span>pfnGetTimeElapsedSinceCycleStart</span><span> has to
+be set. New text is:</span>
+</div>
+<div>
+<span style=" color: rgb(237, 108, 38);">•</span><span>Reduced DCM controller error</span>
+</div>
+
+<div>
+<span style="color:rgb(237, 108, 38);">•</span>Quality independent from cyclic
+frame send time jitter</div>
+
+<div>
+<span style="color:rgb(237, 108, 38);">•</span>Requires bus or master shift callback pfnGetTimeElapsedSinceCycleStart to
+be set</div>
+<div><span>But as said, default is Slide 31.</span></div>
+</div><div><span><br></span></div><div><span>Best regards,</span></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, October 7, 2024 at 4:02:38 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master (rorze)</div>
+<div><br></div>
+<div>I have summarized their questions in the attached file, so please check the content.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,110 @@
+### HEADER
+Id=5748
+Link=http://at-zammad/#ticket/zoom/5748
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=Presto Solutions, Generic (ID=478, Number=478)
+Number=705748
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=14.06.2023 02:44:01 +00:00
+UpdatedAt=20.06.2023 06:36:45 +00:00
+CloseAt=20.06.2023 06:36:45 +00:00
+ArticlesCount=2
+
+### TITLE
+About EC-Simulator HIL
+
+### ARTICLE00_HEADER
+Id=30690
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.06.2023 02:44:01 +00:00
+UpdatedAt=14.06.2023 02:44:02 +00:00
+
+### ARTICLE00_SUBJECT
+About EC-Simulator HIL
+
+### ARTICLE00_BODY
+<p>Dear</p><p><br></p><p>We are reviewing to buy EC-Simulator HIL.</p><p><br></p><p>I have a question about product selection.</p><p><br></p><p>- We want to edit a slave application(For example, To check motion algorithm)</p><p>- Sync between Master and Slaves are also important and need to use fast cycle time.</p><p><br></p><p>I think i have to chose product with Realtime OS(Except for Windows)</p><p>Is it correct ?</p><p><br></p><p>If so,</p><p>I want to use it on RT(Realtime) Linux</p><p>In this case, Can i choose products below ?</p><p>120-101-1-1 EC-Simulator HiL Edition, SDK, Linux, x86, Ethernet Driver (Link Layer) Intel Pro/1000</p><p>120-112-1-1 EC-Simulator HiL Edition Runtime 128 Slaves, Linux, x86</p><p><br></p><p>Please advise.</p><br><br><p>감사합니다.</p><p><br></p><p>Thank you</p><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p> </p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sundukhan@prestosolution.co.kr</a></span></u></i><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table><p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+
+### ARTICLE01_HEADER
+Id=30695
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.06.2023 07:15:35 +00:00
+UpdatedAt=14.06.2023 07:15:37 +00:00
+
+### ARTICLE01_SUBJECT
+About EC-Simulator HIL
+
+### ARTICLE01_BODY
+<div>
+<span>Das kam über </span><span>ecsupport@acontis.com .</span><br>
+</div><div>Muss ich was tun?<br><div data-signature="true" data-signature-id="2">
+<div><br></div>
+<div>Viele Grüße</div>
+<div>Paul</div>
+<div><br></div>
+</div>
+<div>---Begin forwarded message:---<br><br>
+</div>
+<div><blockquote type="cite">
+<div>Betreff: About EC-Simulator HIL<br>Datum: 14.06.2023 04:44<br>Von: DukHan Sun &lt;sundukhan@prestosolution.co.kr&gt;<br>An: ecsupport@acontis.com<br>CC: Jintae Jung &lt;jtjung@prestosolution.co.kr&gt;<br><br>
+</div>
+<p>Dear</p>
+<p><br></p>
+<p>We are reviewing to buy EC-Simulator HIL.</p>
+<p><br></p>
+<p>I have a question about product selection.</p>
+<p><br></p>
+<p>- We want to edit a slave application(For example, To check motion algorithm)</p>
+<p>- Sync between Master and Slaves are also important and need to use fast cycle time.</p>
+<p><br></p>
+<p>I think i have to chose product with Realtime OS(Except for Windows)</p>
+<p>Is it correct ?</p>
+<p><br></p>
+<p>If so,</p>
+<p>I want to use it on RT(Realtime) Linux</p>
+<p>In this case, Can i choose products below ?</p>
+<p>120-101-1-1 EC-Simulator HiL Edition, SDK, Linux, x86, Ethernet Driver (Link Layer) Intel Pro/1000</p>
+<p>120-112-1-1 EC-Simulator HiL Edition Runtime 128 Slaves, Linux, x86</p>
+<p><br></p>
+<p>Please advise.</p>
+<br><br><p>감사합니다.</p>
+<p><br></p>
+<p>Thank you</p>
+<p><br></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p> </p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sundukhan@prestosolution.co.kr</a></span></u></i><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

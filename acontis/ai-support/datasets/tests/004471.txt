@@ -1,0 +1,206 @@
+### HEADER
+Id=4471
+Link=http://at-zammad/#ticket/zoom/4471
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ACS Motion Control LTD (ID=184, Number=50006, Country=IL)
+Commission=ACS, Motion Controller RTHV (ID=222, Number=222)
+Number=704471
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=olegr@acsmotioncontrol.com (ID=84, FirstName=Oleg, LastName=Romanov)
+CreatedBy=olegr@acsmotioncontrol.com (ID=84, FirstName=Oleg, LastName=Romanov)
+Type=
+TimeUnit=
+CreatedAt=04.12.2022 12:48:26 +00:00
+UpdatedAt=16.12.2022 07:14:16 +00:00
+CloseAt=16.12.2022 07:14:16 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-Master-V3.1.4.05 - faulty frame loss errors
+
+### ARTICLE00_HEADER
+Id=23615
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.12.2022 12:48:26 +00:00
+UpdatedAt=04.12.2022 12:48:30 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Master-V3.1.4.05 - faulty frame loss errors
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Hi Cyril,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">We are currently using EC-Master-V3.1.4.05 and it looks like we have an issue with faulty errors regarding frame losses during power-up - </span></p>
+<p><span lang="EN-US">(we did not saw such an issue with EC-Master-V3.1.1.11 we used in our previous release)</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">[2022/12/04][10:21:33.391.000] low-level ethercat notification (EC_NOTIFY_SLAVE_PRESENCE): Slave with station address 1001 present</span></p>
+<p><span lang="EN-US">[2022/12/04][10:21:33.398.000] low-level ethercat notification (EC_NOTIFY_SB_STATUS): Scan Bus returned with error: Bus configuration mismatch (0x9811001e)</span></p>
+<p><span lang="EN-US">[2022/12/04][10:21:33.398.000] low-level ethercat notification (EC_NOTIFY_HC_TOPOCHGDONE): Topology Change Performed ERROR: Frameloss after Slave (0x9811017f)</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">It does not happen each power-up.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Is there any known issue with the version we are using ?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p> </p>
+<p><b><i><span lang="EN-US">Best regards,</span></i></b></p>
+<p><b><i><span lang="EN-US"><p> </p></span></i></b></p>
+<p><b><i><span lang="EN-US">Oleg Romanov</span></i></b><i><span lang="EN-US"><br> R&amp;D Software Group Manager</span></i><span lang="EN-US"></span></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding:0in 0in 0in 0in;"></td>
+</tr>
+<tr>
+<td style="border:none;border-top:solid #f8193f 1.0pt;padding:0in 0in 0in 0in;"></td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;">
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding:0in 7.5pt 0in 0in;">
+<p><b><i><span style="color:#f8193f;">T</span></i></b><i><span style="color:#f8193f;"></span></i></p>
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><i>972 4 654 6440 ext. 211</i></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 7.5pt 0in 0in;">
+<p><b><i><span style="color:#f8193f;">E</span></i></b><i><span style="color:#f8193f;"></span></i></p>
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><i><a href="mailto:olegr@acsmotioncontrol.com"><span style="color:#0563c1;">olegr@acsmotioncontrol.com</span></a></i></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 7.5pt 0in 0in;">
+<p><b><i><span style="color:#f8193f;">W</span></i></b><i><span style="color:#f8193f;"></span></i></p>
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><a href="http://acsmotioncontrol.com/" rel="nofollow noreferrer noopener" target="_blank"><i>AcsMotionControl.com</i></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border:none;border-bottom:solid #f8193f 1.0pt;padding:0in 0in 0in 0in;">
+</td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;"></td>
+</tr>
+</tbody>
+</table>
+<p><span lang="EN-US"><img border="0" style="max-width:100%;width:2.1562in;max-height:.7187in;width:207px;max-height:69px;" src="/api/v1/ticket_attachment/4471/23615/99806?view=inline"></span><span lang="EN-US"></span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=23643
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.12.2022 09:56:38 +00:00
+UpdatedAt=05.12.2022 09:56:43 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Master-V3.1.4.05 - faulty frame loss errors
+
+### ARTICLE01_BODY
+Hi Oleg,<div><br></div><div><div>EC_E_FRAMELOSS_AFTER_SLAVE is returned if your application call emBadConnectionDetect. If it is not thecase, I can imagine that the topology change delay is too short for a specific type of slave. You can increase it by calling <span>EC_IOCTL_SB_SET_TOPOLOGY_CHANGED_DELAY.</span>
+</div></div><div><span><br></span></div><div><span>I currently don't see any reason for any bugs related to EcBusTopology.cpp by comparing both version.</span></div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Sunday, December 4, 2022 at 1:48:26 PM, Oleg Romanov wrote:<br><br><div>
+<p><span lang="EN-US">Hi Cyril,</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">We are currently using EC-Master-V3.1.4.05 and it looks like we have an issue with faulty errors regarding frame losses during power-up - </span></p>
+<p><span lang="EN-US">(we did not saw such an issue with EC-Master-V3.1.1.11 we used in our previous release)</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">[2022/12/04][10:21:33.391.000] low-level ethercat notification (EC_NOTIFY_SLAVE_PRESENCE): Slave with station address 1001 present</span></p>
+<p><span lang="EN-US">[2022/12/04][10:21:33.398.000] low-level ethercat notification (EC_NOTIFY_SB_STATUS): Scan Bus returned with error: Bus configuration mismatch (0x9811001e)</span></p>
+<p><span lang="EN-US">[2022/12/04][10:21:33.398.000] low-level ethercat notification (EC_NOTIFY_HC_TOPOCHGDONE): Topology Change Performed ERROR: Frameloss after Slave (0x9811017f)</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">It does not happen each power-up.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Is there any known issue with the version we are using ?</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p><b><i><span lang="EN-US">Best regards,</span></i></b></p>
+<p><b><i><span lang="EN-US"></span></i></b></p>
+<p><b><i> </i></b></p>
+<p></p>
+<p><b><i><span lang="EN-US">Oleg Romanov</span></i></b><i><span lang="EN-US"><br> R&amp;D Software Group Manager</span></i><span lang="EN-US"></span></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding:0in 0in 0in 0in;"></td>
+</tr>
+<tr>
+<td style="border:none;border-top:solid #f8193f 1.0pt;padding:0in 0in 0in 0in;"></td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;">
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding:0in 7.5pt 0in 0in;">
+<p><b><i><span style="color:#f8193f;">T</span></i></b><i><span style="color:#f8193f;"></span></i></p>
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><i>972 4 654 6440 ext. 211</i></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 7.5pt 0in 0in;">
+<p><b><i><span style="color:#f8193f;">E</span></i></b><i><span style="color:#f8193f;"></span></i></p>
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><i><a href="mailto:olegr@acsmotioncontrol.com"><span style="color:#0563c1;">olegr@acsmotioncontrol.com</span></a></i></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 7.5pt 0in 0in;">
+<p><b><i><span style="color:#f8193f;">W</span></i></b><i><span style="color:#f8193f;"></span></i></p>
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><a href="http://acsmotioncontrol.com/" rel="nofollow noreferrer noopener" target="_blank"><i>AcsMotionControl.com</i></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border:none;border-bottom:solid #f8193f 1.0pt;padding:0in 0in 0in 0in;">
+</td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;"></td>
+</tr>
+</tbody>
+</table>
+<p><span lang="EN-US"><img border="0" style="max-width:100%;max-width:100%;width:2.1562in;max-height:.7187in;width:207px;max-height:69px;" src="/api/v1/ticket_attachment/4471/23643/99855?view=inline"></span><span lang="EN-US"></span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

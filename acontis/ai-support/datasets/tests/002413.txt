@@ -1,0 +1,125 @@
+### HEADER
+Id=2413
+Link=http://at-zammad/#ticket/zoom/2413
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=John Deere Electronic Solutions  (ID=360, Number=54508, Country=US)
+Commission=John Deere, Slave development (ID=140, Number=140)
+Number=702413
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=rodriguezdaniela4@johndeere.com (ID=895, FirstName=Daniel A., LastName=Rodriguez)
+CreatedBy=rodriguezdaniela4@johndeere.com (ID=895, FirstName=Daniel A., LastName=Rodriguez)
+Type=
+TimeUnit=
+CreatedAt=08.02.2022 19:19:57 +00:00
+UpdatedAt=25.02.2022 07:04:37 +00:00
+CloseAt=25.02.2022 07:04:37 +00:00
+ArticlesCount=2
+
+### TITLE
+Support for EtherCAT slave
+
+### ARTICLE00_HEADER
+Id=12833
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.02.2022 19:19:58 +00:00
+UpdatedAt=08.02.2022 19:19:58 +00:00
+
+### ARTICLE00_SUBJECT
+Support for EtherCAT slave
+
+### ARTICLE00_BODY
+<div>
+<p>Good day,</p>
+<p> </p>
+<p>I recently joined the John Deere team working to support the CSM team within the Intelligent Solutions Group, I have been working on the development of an EtherCAT slave device, we recall getting support using EC-Engineer in the past.</p>
+<p>Currently we are having issues testing our updated slave stack code from version 11 to 13, almost all the conformance tests are passing except for a few of them that are not consistent.</p>
+<p>All the remaining errors are associated with lost frames and invalid working counters. We believe this is associated with timing issues.</p>
+<p> </p>
+<p>Our current version of EC Engineer is 2.9, any suggestion on how to diagnose this problems is highly appreciated. My question is if there’s some document or additional information about the following errors?</p>
+<p> </p>
+<p><img style="max-width:100%;width:8.6083in;max-height:1.7583in;width:826px;max-height:169px;" src="/api/v1/ticket_attachment/2413/12833/51042?view=inline"></p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p><b>Daniel Alejandro Rodríguez Castro<br> Embedded Software Engineer / Power electronics</b><br> John Deere Shared Services México S. de R. L. de C. V. </p>
+<p>ETECmx – Enterprise Technology Engineering Center</p>
+<p>Blvd. Díaz Ordaz No. 500, San Pedro Garza García</p>
+<p>Monterrey, Nuevo León, MX 66210</p>
+<p> </p>
+<p>This message, including attachments, may be confidential. If you believe the message was sent to you in error, do not read the contents and please reply to the sender that you have received the message in error. If you are not the intended recipient, retention, dissemination, distribution, or copying of this communication is strictly prohibited. Thank you.</p>
+<p> </p>
+<br>
+<p>Company Use</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=12857
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.02.2022 09:54:57 +00:00
+UpdatedAt=09.02.2022 09:54:59 +00:00
+
+### ARTICLE01_SUBJECT
+Support for EtherCAT slave
+
+### ARTICLE01_BODY
+Hi Daniel,<div><br></div><div>WKC errors would be generated under the following circumstances:</div><div><br></div><div>1- If some slaves are missing on the network</div><div><br></div><div>2- Slaves are in error state</div><div><br></div><div>3- Sync managers are configured <span>in mailbox mode and the slave firmware access to the process data during the cyclic frame processing.</span>
+</div><div>a- They only appears during startup in transition (mostly SO)</div><div>-&gt; Could be ignored</div><div>
+<span>b- They appears in OP cyclically (typically every 4-5s)</span><br>
+</div><div><span>-&gt; Using DC and ShiftTime can adjust the position of the SYNC signal and move it in a "safe area"</span></div><div>c- They appears sometimes</div><div>-&gt; Real-time violation or some jitter applied to the cyclic frames within the cycle</div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, February 8, 2022, 8:19:58 PM, Rodriguez Daniel A wrote:<br><br><div>
+<p>Good day,</p>
+<p> </p>
+<p>I recently joined the John Deere team working to support the CSM team within the Intelligent Solutions Group, I have been working on the development of an EtherCAT slave device, we recall getting support using EC-Engineer in the past.</p>
+<p>Currently we are having issues testing our updated slave stack code from version 11 to 13, almost all the conformance tests are passing except for a few of them that are not consistent.</p>
+<p>All the remaining errors are associated with lost frames and invalid working counters. We believe this is associated with timing issues.</p>
+<p> </p>
+<p>Our current version of EC Engineer is 2.9, any suggestion on how to diagnose this problems is highly appreciated. My question is if there’s some document or additional information about the following errors?</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:8.6083in;max-height:1.7583in;width:826px;max-height:169px;" src="/api/v1/ticket_attachment/2413/12857/51256?view=inline"></p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p><b>Daniel Alejandro Rodríguez Castro<br> Embedded Software Engineer / Power electronics</b><br> John Deere Shared Services México S. de R. L. de C. V. </p>
+<p>ETECmx – Enterprise Technology Engineering Center</p>
+<p>Blvd. Díaz Ordaz No. 500, San Pedro Garza García</p>
+<p>Monterrey, Nuevo León, MX 66210</p>
+<p> </p>
+<p>This message, including attachments, may be confidential. If you believe the message was sent to you in error, do not read the contents and please reply to the sender that you have received the message in error. If you are not the intended recipient, retention, dissemination, distribution, or copying of this communication is strictly prohibited. Thank you.</p>
+<p> </p>
+<br>
+<p>Company Use</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

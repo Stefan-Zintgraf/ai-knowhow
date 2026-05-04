@@ -1,0 +1,143 @@
+### HEADER
+Id=8421
+Link=http://at-zammad/#ticket/zoom/8421
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=Presto Solutions, Generic (ID=478, Number=478)
+Number=708421
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=phatv@prestosolution.co.kr (ID=47, FirstName=Pha, LastName=Tv)
+CreatedBy=phatv@prestosolution.co.kr (ID=47, FirstName=Pha, LastName=Tv)
+Type=
+TimeUnit=
+CreatedAt=04.07.2024 09:03:50 +00:00
+UpdatedAt=19.07.2024 14:33:44 +00:00
+CloseAt=19.07.2024 14:33:44 +00:00
+ArticlesCount=2
+
+### TITLE
+Mailbox init command Time out
+
+### ARTICLE00_HEADER
+Id=46935
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.07.2024 09:03:50 +00:00
+UpdatedAt=04.07.2024 09:03:53 +00:00
+
+### ARTICLE00_SUBJECT
+Mailbox init command Time out
+
+### ARTICLE00_BODY
+<p>Hi Acontis Supporter,</p><p><br></p><p>This is Pha from Presto Solution in Korea.</p><p><br></p><p>Sometimes, when I start the EcMaster with our drivers the "Mailbox init command" Time-out happen.</p><p><br></p><p><br></p><p><img src="/api/v1/ticket_attachment/8421/46935/194333?view=inline" title="" alt="" style="max-width:100%;"></p><p><br></p><p><br></p><p>So,I would like to increase the time out value of Mailbox init command, which parameters I have to modify.</p><p>I tried to look around the initial Ethercat stage source code. However, I cannot find it out. Please guide me.</p><p><br></p><p>Thank you so much.</p><p><br></p><p>Best Regards,</p><p>Pha.</p><p><br></p><p><br></p><br><br><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-size: 12px; background-color: rgb(255, 255, 255); border-collapse: collapse;"><tbody>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px;"><tbody>
+<tr>
+<td style=" border-style: initial;"><p> </p></td>
+<td valign="top" style=" border-style: initial;">
+<p>탄반파 책임/ 연구 1팀</p>
+<p><span style=" color: red;">M. </span>010-4021-5399</p>
+<p><span style=" color: red;">E. </span><i><u><span style=" color: blue;"><a href="mailto:bjyseo@prestosolution.co.kr"><span style=" color: rgb(5, 99, 193);">phatv@prestosolution.co.kr</span></a></span></u></i></p>
+</td>
+</tr>
+<tr><td valign="top" colspan="2" style=" border-style: initial;"><p><span style=" color: rgb(99, 101, 99);"><br></span></p></td></tr>
+<tr><td valign="top" colspan="2" style=" border-style: initial;">
+<p><br></p>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressed.</span></p>
+<p><span style=" color: rgb(99, 101, 99);">Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+</td></tr>
+</tbody></table></td>
+<td valign="top" style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><p><br></p></td>
+</tr>
+<tr style="margin: 0px; padding: 0px;"><td valign="top" colspan="2" style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><p><br></p></td></tr>
+<tr style="margin: 0px; padding: 0px;"><td valign="top" colspan="2" style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><p><br></p></td></tr>
+</tbody></table><p><img src="/api/v1/ticket_attachment/8421/46935/194334?view=inline" title="" alt="" style="max-width:100%;"></p>
+
+### ARTICLE01_HEADER
+Id=46951
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.07.2024 06:11:21 +00:00
+UpdatedAt=05.07.2024 06:11:27 +00:00
+
+### ARTICLE01_SUBJECT
+Mailbox init command Time out
+
+### ARTICLE01_BODY
+Hi Pha,<div><br></div><div>I think this can help:</div><div><img style="max-width:100%;width: 592.8px;max-width: 100%;max-height: 545.2px;" src="/api/v1/ticket_attachment/8421/46951/194402?view=inline"></div><div><br></div><div>
+<span>Or you can modify the ENI:</span><br>
+</div><div><span><br></span></div><div>
+<img style="max-width:100%;width: 601.8px;max-width: 100%;max-height: 423.75px;" src="/api/v1/ticket_attachment/8421/46951/194403?view=inline"><span><br></span>
+</div><div><br></div><div>Or you can increase the timeout by the API:</div><div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=ec_ioctl_set_master_default_timeouts#emiocontrol-ec-ioctl-set-master-default-timeouts" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=ec_ioctl_set_master_default_timeouts#emiocontrol-ec-ioctl-set-master-default-timeouts" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=ec_ioctl_set_master_default_timeouts#emiocontrol-ec-ioctl-set-master-default-timeouts</a></div></div></div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, July 4, 2024 at 11:03:50 AM, Pha Tv wrote:<br><br><p>Hi Acontis Supporter,</p>
+<p><br></p>
+<p>This is Pha from Presto Solution in Korea.</p>
+<p><br></p>
+<p>Sometimes, when I start the EcMaster with our drivers the "Mailbox init command" Time-out happen.</p>
+<p><br></p>
+<p><br></p>
+<p><img src="/api/v1/ticket_attachment/8421/46951/194404?view=inline" title="" alt="" style="max-width:100%;max-width:100%;"></p>
+<p><br></p>
+<p><br></p>
+<p>So,I would like to increase the time out value of Mailbox init command, which parameters I have to modify.</p>
+<p>I tried to look around the initial Ethercat stage source code. However, I cannot find it out. Please guide me.</p>
+<p><br></p>
+<p>Thank you so much.</p>
+<p><br></p>
+<p>Best Regards,</p>
+<p>Pha.</p>
+<p><br></p>
+<p><br></p>
+<br><br><p><br></p>
+<table border="0" cellspacing="0" cellpadding="0" style="margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-size: 12px; background-color: rgb(255, 255, 255); border-collapse: collapse;"><tbody>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px;"><tbody>
+<tr>
+<td style=" border-style: initial;"><p> </p></td>
+<td valign="top" style=" border-style: initial;">
+<p>탄반파 책임/ 연구 1팀</p>
+<p><span style=" color: red;">M. </span>010-4021-5399</p>
+<p><span style=" color: red;">E. </span><i><u><span style=" color: blue;"><a href="mailto:bjyseo@prestosolution.co.kr"><span style=" color: rgb(5, 99, 193);">phatv@prestosolution.co.kr</span></a></span></u></i></p>
+</td>
+</tr>
+<tr><td valign="top" colspan="2" style=" border-style: initial;"><p><span style=" color: rgb(99, 101, 99);"><br></span></p></td></tr>
+<tr><td valign="top" colspan="2" style=" border-style: initial;">
+<p><br></p>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressed.</span></p>
+<p><span style=" color: rgb(99, 101, 99);">Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+</td></tr>
+</tbody></table></td>
+<td valign="top" style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><p><br></p></td>
+</tr>
+<tr style="margin: 0px; padding: 0px;"><td valign="top" colspan="2" style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><p><br></p></td></tr>
+<tr style="margin: 0px; padding: 0px;"><td valign="top" colspan="2" style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><p><br></p></td></tr>
+</tbody></table>
+<p><img src="/api/v1/ticket_attachment/8421/46951/194405?view=inline" title="" alt="" style="max-width:100%;max-width:100%;"></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

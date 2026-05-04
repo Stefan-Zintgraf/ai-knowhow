@@ -1,0 +1,133 @@
+### HEADER
+Id=6418
+Link=http://at-zammad/#ticket/zoom/6418
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=706418
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=abruckelmyer@deltamotion.com (ID=745, FirstName=Aaron, LastName=Bruckelmyer)
+CreatedBy=abruckelmyer@deltamotion.com (ID=745, FirstName=Aaron, LastName=Bruckelmyer)
+Type=
+TimeUnit=
+CreatedAt=22.09.2023 17:55:26 +00:00
+UpdatedAt=13.10.2023 06:01:23 +00:00
+CloseAt=13.10.2023 06:01:23 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-Master - Automatic Topology Update Feature Request
+
+### ARTICLE00_HEADER
+Id=34595
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.09.2023 17:55:26 +00:00
+UpdatedAt=22.09.2023 17:55:28 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Master - Automatic Topology Update Feature Request
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Acontis Support,</p>
+<p> </p>
+<p>When using EC-Master with automatic topology turned on, it requires the master to at least achieve INIT state before it will automatically process topology updates. This means that EC-Master cannot automatically detect and recover a master that has a topology mismatch at startup, but then gets cable corrected after startup.</p>
+<p> </p>
+<p>For example, CAtEmInterface::McStateMachine() has the following code which explicitly blocks automatic topology updates while the master state is UNKNOWN.</p>
+<p> </p>
+<p> <span style="color:blue;">if</span> (bTopologyChangedDetected || bDlStatusIrqDetected)</p>
+<p>{</p>
+<p> <span style="color:green;">/* ignore topology changes if master is in UNKNOWN state */</span></p>
+<p> <span style="color:blue;">if</span> (DEVICE_STATE_UNKNOWN == m_oAtEcatDesc.poMaster-&gt;GetMasterDeviceState())</p>
+<p>{</p>
+<p>m_oAtEcatDesc.poMaster-&gt;m_pBusTopology-&gt;TopologyChangeDone();</p>
+<p>bTopologyChangedDetected = EC_FALSE;</p>
+<p> </p>
+<p>m_oAtEcatDesc.poMaster-&gt;SetDlStatusIrqDone();</p>
+<p>bDlStatusIrqDetected = EC_FALSE;</p>
+<p>}</p>
+<p>}</p>
+<p> </p>
+<p>During experimentation, I commented out the above code and verified that topology updates can come through when the master state is still UNKNOWN (albeit with various errors).</p>
+<p> </p>
+<p>Please consider supporting one of my feature ideas here to allow us to provide this experience on startup.</p>
+<p> </p>
+<ol start="1" type="1">
+<li>Consider a new feature that allows processing of automatic topology updates when the master state still UNKNOWN due to topology mismatch, but is otherwise ready to move into INIT.</li>
+<li>Consider a new feature that returns a new notification in this case where topology changes are detected but cannot be processed because the master state is UNKNOWN.</li>
+</ol>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p><b><span style="color:#0f1964;">Aaron</span></b><b><span style="color:#3b4908;">
+</span></b><b>Bruckelmyer</b><span><br>
+</span><i>Software Engineer</i><span><br> Delta Computer Systems, Inc.</span></p>
+<p><span><br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0169" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0169" target="_blank"><span style="color:#0563c1;">+1-360-702-0169</span></a></span></p>
+<p><span><a href="mailto:abruckelmyer@deltamotion.com"><span style="color:#0563c1;">abruckelmyer@deltamotion.com</span></a>
+</span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=34807
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.09.2023 14:53:28 +00:00
+UpdatedAt=28.09.2023 14:53:32 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Master - Automatic Topology Update Feature Request
+
+### ARTICLE01_BODY
+Hi Aaron,<div><br></div><div>our requirement is that the master send zero self generated frames in state UNKNOWN after InitMaster or ConfigureMaster(NULL). All the network activities should be related to API calls.</div><div><br></div><div>if you want automatic topology update, you should command the master to INIT.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Friday, September 22, 2023 at 7:55:26 PM, Aaron Bruckelmyer wrote:<br><br><div>
+<p>Hi Acontis Support,</p>
+<p> </p>
+<p>When using EC-Master with automatic topology turned on, it requires the master to at least achieve INIT state before it will automatically process topology updates. This means that EC-Master cannot automatically detect and recover a master that has a topology mismatch at startup, but then gets cable corrected after startup.</p>
+<p> </p>
+<p>For example, CAtEmInterface::McStateMachine() has the following code which explicitly blocks automatic topology updates while the master state is UNKNOWN.</p>
+<p> </p>
+<p> <span style="color:blue;">if</span> (bTopologyChangedDetected || bDlStatusIrqDetected)</p>
+<p>{</p>
+<p> <span style="color:green;">/* ignore topology changes if master is in UNKNOWN state */</span></p>
+<p> <span style="color:blue;">if</span> (DEVICE_STATE_UNKNOWN == m_oAtEcatDesc.poMaster-&gt;GetMasterDeviceState())</p>
+<p>{</p>
+<p>m_oAtEcatDesc.poMaster-&gt;m_pBusTopology-&gt;TopologyChangeDone();</p>
+<p>bTopologyChangedDetected = EC_FALSE;</p>
+<p> </p>
+<p>m_oAtEcatDesc.poMaster-&gt;SetDlStatusIrqDone();</p>
+<p>bDlStatusIrqDetected = EC_FALSE;</p>
+<p>}</p>
+<p>}</p>
+<p> </p>
+<p>During experimentation, I commented out the above code and verified that topology updates can come through when the master state is still UNKNOWN (albeit with various errors).</p>
+<p> </p>
+<p>Please consider supporting one of my feature ideas here to allow us to provide this experience on startup.</p>
+<p> </p>
+<ol start="1" type="1">
+<li>Consider a new feature that allows processing of automatic topology updates when the master state still UNKNOWN due to topology mismatch, but is otherwise ready to move into INIT.</li>
+<li>Consider a new feature that returns a new notification in this case where topology changes are detected but cannot be processed because the master state is UNKNOWN.</li>
+</ol>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p><b><span style="color:#0f1964;">Aaron</span></b><b><span style="color:#3b4908;">
+</span></b><b>Bruckelmyer</b><span><br>
+</span><i>Software Engineer</i><span><br> Delta Computer Systems, Inc.</span></p>
+<p><span><br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0169" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0169" target="_blank"><span style="color:#0563c1;">+1-360-702-0169</span></a></span></p>
+<p><span><a href="mailto:abruckelmyer@deltamotion.com"><span style="color:#0563c1;">abruckelmyer@deltamotion.com</span></a>
+</span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

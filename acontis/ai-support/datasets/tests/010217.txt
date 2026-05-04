@@ -1,0 +1,192 @@
+### HEADER
+Id=10217
+Link=http://at-zammad/#ticket/zoom/10217
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Stryker (ID=471, Number=0, Country=US)
+Commission=Stryker, Mako (ID=549, Number=549)
+Number=7010217
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=mike.ford1@stryker.com (ID=1777, FirstName=Mike, LastName=Ford)
+CreatedBy=mike.ford1@stryker.com (ID=1777, FirstName=Mike, LastName=Ford)
+Type=
+TimeUnit=
+CreatedAt=18.03.2025 17:59:43 +00:00
+UpdatedAt=19.03.2025 15:28:44 +00:00
+CloseAt=19.03.2025 15:28:44 +00:00
+ArticlesCount=3
+
+### TITLE
+SDO Download question
+
+### ARTICLE00_HEADER
+Id=58590
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.03.2025 17:59:43 +00:00
+UpdatedAt=18.03.2025 17:59:48 +00:00
+
+### ARTICLE00_SUBJECT
+SDO Download question
+
+### ARTICLE00_BODY
+<div>Hello,</div><div> </div><div>For the function emCoeSdoDownload() I see the following error codes:</div><div>
+<img style="max-width:100%;max-width: 2723px;" src="/api/v1/ticket_attachment/10217/58590/244111?view=inline">
+</div><div> </div><div>Does EC_E_NOERROR guarantee that the provided value has been written to the desired register? Or does it just guarantee the download request is compatible with the desired object dictionary entry and the SDO request was made? Would I still need to read the object dictionary entry back after to confirm the value was written correctly, or is that captured in the return value?</div><div> </div><div>Thanks,</div><div>Mike Ford</div><div> </div><div style="color: inherit;">
+<p><span style=" color: rgb(255, 181, 0);">Mike</span> Ford</p>
+<p>Staff Engineer, Robotic Platforms</p>
+<p>Stryker</p>
+<p>Digital, Robotics, and Enabling Technologies</p>
+<p>1941 Stryker Way</p>
+<p>Portage, MI, 49002</p>
+<p>mike.ford1@stryker.com</p>
+<p> </p>
+</div>Follow this link to read our<a href="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" rel="nofollow noreferrer noopener" title="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" target="_blank"> Privacy Statement</a>
+
+### ARTICLE01_HEADER
+Id=58597
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.03.2025 08:07:51 +00:00
+UpdatedAt=19.03.2025 08:07:55 +00:00
+
+### ARTICLE01_SUBJECT
+SDO Download question
+
+### ARTICLE01_BODY
+Hi Mike,<div><br></div><div>the SDO download and upload services are request response services. They provide a confirmed interaction. CoE SDO services are based on a server and client principle. The client sends an SDO request, the
+server responds with either an SDO Response or an SDO Abort.</div><div><br></div><div><blockquote><div>Does EC_E_NOERROR guarantee that the provided value has been written to the desired register? <b>YES!</b> Or does it just guarantee the download request is compatible with the desired object dictionary entry and the SDO request was made? <b>NO, it is also written!</b> Would I still need to read the object dictionary entry back after to confirm the value was written correctly, or is that captured in the return value? <b>That's captured with the return value!</b>
+</div></blockquote></div><div>Best regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, March 18, 2025 at 6:59:43 PM, Mike Ford wrote:<br><br><div>Hello,</div>
+<div> </div>
+<div>For the function emCoeSdoDownload() I see the following error codes:</div>
+<div>
+<img style="max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/10217/58597/244137?view=inline">
+</div>
+<div> </div>
+<div>Does EC_E_NOERROR guarantee that the provided value has been written to the desired register? Or does it just guarantee the download request is compatible with the desired object dictionary entry and the SDO request was made? Would I still need to read the object dictionary entry back after to confirm the value was written correctly, or is that captured in the return value?</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Mike Ford</div>
+<div> </div>
+<div style="color: inherit;">
+<p><span style=" color: rgb(255, 181, 0);">Mike</span> Ford</p>
+<p>Staff Engineer, Robotic Platforms</p>
+<p>Stryker</p>
+<p>Digital, Robotics, and Enabling Technologies</p>
+<p>1941 Stryker Way</p>
+<p>Portage, MI, 49002</p>
+<p>mike.ford1@stryker.com</p>
+<p> </p>
+</div>Follow this link to read our<a href="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" rel="nofollow noreferrer noopener" title="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" target="_blank"> Privacy Statement</a><br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=58630
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.03.2025 12:39:08 +00:00
+UpdatedAt=19.03.2025 12:39:08 +00:00
+
+### ARTICLE02_SUBJECT
+Re: SDO Download question [Ticket#7010217]
+
+### ARTICLE02_BODY
+<div>Great, thanks for the response.</div><div> </div><div>Mike</div><div> </div><hr>
+<div dir="ltr">
+<b>From:</b> Timo Nußbaumer via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Wednesday, March 19, 2025 4:07 AM<br>
+<b>To:</b> Ford, Mike &lt;mike.ford1@stryker.com&gt;<br>
+<b>Subject:</b> RE: SDO Download question [Ticket#7010217] <div> </div>
+</div><div>EXTERNAL EMAIL<div>Hi Mike,<div> </div>
+<div>the SDO download and upload services are request response services. They provide a confirmed interaction. CoE SDO services are based on a server and client principle. The client sends an SDO request, the server responds with either an SDO Response or an SDO Abort.</div>
+<div> </div>
+<div>
+<blockquote>
+<div>Does EC_E_NOERROR guarantee that the provided value has been written to the desired register? <b>YES!</b> Or does it just guarantee the download request is compatible with the desired object dictionary entry and the SDO request was made? <b>NO, it is also written!</b> Would I still need to read the object dictionary entry back after to confirm the value was written correctly, or is that captured in the return value? <b>That's captured with the return value!</b> </div>
+</blockquote>
+</div>
+<div>Best regards,</div>
+<div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Tuesday, March 18, 2025 at 6:59:43 PM, Mike Ford wrote:<br>
+<br>
+<div>Hello,</div>
+<div> </div>
+<div>For the function emCoeSdoDownload() I see the following error codes:</div>
+<div>
+<img style="max-width:100%;max-width:100%;" src="/api/v1/ticket_attachment/10217/58630/244350?view=inline">
+</div>
+<div> </div>
+<div>Does EC_E_NOERROR guarantee that the provided value has been written to the desired register? Or does it just guarantee the download request is compatible with the desired object dictionary entry and the SDO request was made? Would I still need to read the object dictionary entry back after to confirm the value was written correctly, or is that captured in the return value?</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Mike Ford</div>
+<div> </div>
+<div style="color:inherit;">
+<p><span style="color:rgb(255,181,0);">Mike</span> Ford</p>
+<p>Staff Engineer, Robotic Platforms</p>
+<p>Stryker</p>
+<p>Digital, Robotics, and Enabling Technologies</p>
+<p>1941 Stryker Way</p>
+<p>Portage, MI, 49002</p>
+<p>mike.ford1@stryker.com</p>
+<p> </p>
+</div>Follow this link to read our<a href="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" title="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" rel="nofollow noreferrer noopener" target="_blank"> Privacy Statement</a><br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>
+<table border="solid">
+<tbody>
+<tr>
+<td>
+<strong>CAUTION:</strong> External email. Do not click links or open attachments unless you recognize the sender and know the content is safe. Please forward all suspicious emails to informationsecurity@stryker.com </td>
+</tr>
+</tbody>
+</table> </div>Follow this link to read our<a href="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" rel="nofollow noreferrer noopener" title="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" target="_blank"> Privacy Statement</a>

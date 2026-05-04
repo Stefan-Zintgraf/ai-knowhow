@@ -1,0 +1,180 @@
+### HEADER
+Id=5470
+Link=http://at-zammad/#ticket/zoom/5470
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Robert Bosch GmbH (ID=149, Number=40339, Country=DE)
+Commission=Robert Bosch, Testing Systems (ID=168, Number=168)
+Number=705470
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=michael.kolb@de.bosch.com (ID=127, FirstName=Michael, LastName=Kolb)
+CreatedBy=michael.kolb@de.bosch.com (ID=127, FirstName=Michael, LastName=Kolb)
+Type=
+TimeUnit=
+CreatedAt=26.04.2023 11:05:14 +00:00
+UpdatedAt=26.04.2023 11:42:32 +00:00
+CloseAt=26.04.2023 11:42:32 +00:00
+ArticlesCount=3
+
+### TITLE
+EC-Engineer und Templates
+
+### ARTICLE00_HEADER
+Id=29041
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.04.2023 11:05:14 +00:00
+UpdatedAt=26.04.2023 11:05:17 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Engineer und Templates
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Ethercat-Support Team,</p>
+<p> </p>
+<p>wir haben bei uns die Beckhoff Bridge Klemme EL6695 im Einsatz. Darauf haben wir einen ordentlichen Schwung an Variablen definiert (verschiedene Konfigurationsmöglichkeiten) und weißen die über das Template Projekt zu. Das funktioniert soweit prima.</p>
+<p> </p>
+<p>Unschön ist, dass Beckhoff jetzt bereits die dritte Revision der EL6695 herausgibt und damit das Template nicht mehr passt. (Im Bild 0x00050002, ansonsten noch 0x00060002, und jetzt auch noch 0x00060000).</p>
+<p>Gäbe es eine Möglichkeit, den Revisionscheck irgendwie zu ignorieren? Danke!!</p>
+<p> </p>
+<p><img style="max-width:100%;width:10.2604in;max-height:4.4583in;width:985px;max-height:428px;" src="/api/v1/ticket_attachment/5470/29041/122427?view=inline"></p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Michael Kolb</b></span> <span><br>
+<br> (BhP/TEF-EAT35-BAS)<br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bosch.com</span></a><br> Tel. +49 8323 20-2247 | Mobil +49 151 54336473 | <a href="mailto:Michael.Kolb@de.bosch.com">
+<span style="color:blue;">Michael.Kolb@de.bosch.com</span></a></span><span><br>
+<br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000;<br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; Geschäftsführung: Dr. Stefan Hartung, <br> Dr. Christian Fischer, Dr. Markus Forschner, Stefan Grosch, Dr. Markus Heyn, Dr. Tanja Rückert </span><span><br> ​</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=29044
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.04.2023 11:17:57 +00:00
+UpdatedAt=26.04.2023 11:17:58 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Engineer und Templates
+
+### ARTICLE01_BODY
+Hallo Herr Kolb,<div><br></div><div>auf dem Advanced Options Tab können Sie den Revision Check deaktivieren. Und auf dem Projekt Template Dialog können Sie ebenfalls den Haken setzen: Ignore Revision.</div><div><br></div><div>Viele Grüße</div><div>Kai Feifel<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, April 26, 2023 at 1:05:14 PM, Michael Kolb wrote:<br><br><div>
+<p>Hallo Ethercat-Support Team,</p>
+<p> </p>
+<p>wir haben bei uns die Beckhoff Bridge Klemme EL6695 im Einsatz. Darauf haben wir einen ordentlichen Schwung an Variablen definiert (verschiedene Konfigurationsmöglichkeiten) und weißen die über das Template Projekt zu. Das funktioniert soweit prima.</p>
+<p> </p>
+<p>Unschön ist, dass Beckhoff jetzt bereits die dritte Revision der EL6695 herausgibt und damit das Template nicht mehr passt. (Im Bild 0x00050002, ansonsten noch 0x00060002, und jetzt auch noch 0x00060000).</p>
+<p>Gäbe es eine Möglichkeit, den Revisionscheck irgendwie zu ignorieren? Danke!!</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:10.2604in;max-height:4.4583in;width:985px;max-height:428px;" src="/api/v1/ticket_attachment/5470/29044/122435?view=inline"></p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Michael Kolb</b></span> <span><br>
+<br> (BhP/TEF-EAT35-BAS)<br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bosch.com</span></a><br> Tel. +49 8323 20-2247 | Mobil +49 151 54336473 | <a href="mailto:Michael.Kolb@de.bosch.com">
+<span style="color:blue;">Michael.Kolb@de.bosch.com</span></a></span><span><br>
+<br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000;<br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; Geschäftsführung: Dr. Stefan Hartung, <br> Dr. Christian Fischer, Dr. Markus Forschner, Stefan Grosch, Dr. Markus Heyn, Dr. Tanja Rückert </span><span><br> ​</span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=29047
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.04.2023 11:40:58 +00:00
+UpdatedAt=26.04.2023 11:40:58 +00:00
+
+### ARTICLE02_SUBJECT
+AW: EC-Engineer und Templates [Ticket#705470]
+
+### ARTICLE02_BODY
+<p> </p><div> <p>Hallo Herr Feifel,</p>
+<p> </p>
+<p>super, vielen Dank, war mir so noch nicht aufgefallen!</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards <br> <br> <b>Michael Kolb</b></span> <span> <br> <br> (BhP/TEF-EAT35-BAS) <br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com/" rel="nofollow noreferrer noopener" target="_blank">www.bosch.com</a>
+<br> Tel. +49 8323 20-2247 | Mobil +49 151 54336473 | <a href="mailto:Michael.Kolb@de.bosch.com"> Michael.Kolb@de.bosch.com</a></span><span>
+<br> <br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000; <br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; Geschäftsführung: Dr. Stefan Hartung, <br> Dr. Christian Fischer, Dr. Markus Forschner, Stefan Grosch, Dr. Markus Heyn, Dr. Tanja Rückert </span>
+<br> ​</p>
+<div> <div> <span class="js-signatureMarker"></span><p><b>Von:</b> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; <br> <b>Gesendet:</b> Mittwoch, 26. April 2023 13:18 <br> <b>An:</b> Kolb Michael (BhP/TEF-EAT35-BAS) &lt;michael.kolb@de.bosch.com&gt; <br> <b>Betreff:</b> RE: EC-Engineer und Templates [Ticket#705470]</p>
+</div>
+</div>
+<p> </p>
+<p>Hallo Herr Kolb,</p>
+<div> <p> </p>
+</div>
+<div> <p>auf dem Advanced Options Tab können Sie den Revision Check deaktivieren. Und auf dem Projekt Template Dialog können Sie ebenfalls den Haken setzen: Ignore Revision.</p>
+</div>
+<div> <p> </p>
+</div>
+<div> <p>Viele Grüße</p>
+</div>
+<div> <p>Kai Feifel</p>
+<div> <div> <p>__________________________________________________________________________________________</p>
+</div>
+<div> <p>Kai Feifel</p>
+</div>
+<div> <p>EtherCAT Support</p>
+</div>
+<div> <div> <p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div> <p>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </p>
+</div>
+</div>
+<div> <p>__________________________________________________________________________________________</p>
+</div>
+<div> <p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div> <p> </p>
+</div>
+<div> <blockquote> <p>On Wednesday, April 26, 2023 at 1:05:14 PM, Michael Kolb wrote:</p>
+<div> <p>Hallo Ethercat-Support Team,</p>
+<p> </p>
+<p>wir haben bei uns die Beckhoff Bridge Klemme EL6695 im Einsatz. Darauf haben wir einen ordentlichen Schwung an Variablen definiert (verschiedene Konfigurationsmöglichkeiten) und weißen die über das Template Projekt zu. Das funktioniert soweit prima.</p>
+<p> </p>
+<p>Unschön ist, dass Beckhoff jetzt bereits die dritte Revision der EL6695 herausgibt und damit das Template nicht mehr passt. (Im Bild 0x00050002, ansonsten noch 0x00060002, und jetzt auch noch 0x00060000).</p>
+<p>Gäbe es eine Möglichkeit, den Revisionscheck irgendwie zu ignorieren? Danke!!</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:10.2604in;max-height:4.4583in;width:985px;max-height:428px;" src="/api/v1/ticket_attachment/5470/29047/122446?view=inline"></p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Best regards<br> <br> <b>Michael Kolb</b> <br> <br> (BhP/TEF-EAT35-BAS) <br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com/" rel="nofollow noreferrer noopener" target="_blank"> www.bosch.com</a>
+<br> Tel. +49 8323 20-2247 | Mobil +49 151 54336473 | <a href="mailto:Michael.Kolb@de.bosch.com"> Michael.Kolb@de.bosch.com</a>
+<br> <br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000; <br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; Geschäftsführung: Dr. Stefan Hartung, <br> Dr. Christian Fischer, Dr. Markus Forschner, Stefan Grosch, Dr. Markus Heyn, Dr. Tanja Rückert <br> ​</p>
+</div>
+<p> </p>
+</blockquote> </div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>

@@ -1,0 +1,96 @@
+### HEADER
+Id=135
+Link=http://at-zammad/#ticket/zoom/135
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=VOLLMER WERKE Maschinenfabrik GmbH (ID=169, Number=45049, Country=DE)
+Commission=Vollmer, PMC5Lite (ID=191, Number=191)
+Number=700135
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=p.augustin@vollmer-group.com (ID=117, FirstName=Philipp, LastName=Augustin)
+CreatedBy=p.augustin@vollmer-group.com (ID=117, FirstName=Philipp, LastName=Augustin)
+Type=
+TimeUnit=
+CreatedAt=08.03.2021 14:20:12 +00:00
+UpdatedAt=26.04.2022 05:08:02 +00:00
+CloseAt=12.03.2021 07:25:52 +00:00
+ArticlesCount=3
+
+### TITLE
+EC Master unter Linux
+
+### ARTICLE00_HEADER
+Id=572
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.03.2021 14:20:12 +00:00
+UpdatedAt=08.03.2021 14:20:12 +00:00
+
+### ARTICLE00_SUBJECT
+EC Master unter Linux
+
+### ARTICLE00_BODY
+<div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p>aktuell verwenden wir Ihren EC-Master mit der Os-Abstraktion für uCOS-III auf einem NXP i.MX6ull.</p>
+<p> </p>
+<p>Für ein aufkommendes Projekt möchten wir den EC Master auch unter einem Linux System ausführen.</p>
+<p>Das Linux läuft auf einem i.MX6 Quad mit einem BCM54610 als PHY.<br> Gibt es dafür bereits eine OS-Abstrahierung? Können wir die Hardwareschnittstelle des i.MX6ull auch für den i.MX6 Quad wiederverwenden und die generische PHY Ansteuerung verwenden?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Best regards<br>
+<br> i.A. Philipp Augustin, Bachelor of Engineering<b><br>
+</b>// Entwicklung &amp; Konstruktion / Design &amp; Development<b><br>
+</b><br> // Tel.: +49(7351)571-733<br> // email: p.augustin@vollmer-group.com<br>
+<br> // VOLLMER WERKE Maschinenfabrik GmbH // Ehinger Straße 34 // 88400 Biberach/Riß // Germany<br> // Sitz der Gesellschaft: Biberach // Amtsgericht Ulm HRB 640007 // USt-Id Nr. DE 144889422<br> // Geschäftsführer: Dr.-Ing. Stefan Brand, Jürgen Hauger // Aufsichtsratsvorsitzender: Martin Kapp<br> // <u><a href="http://www.vollmer-group.com" rel="nofollow noreferrer noopener" target="_blank">www.vollmer-group.com</a></u> // <a href="http://www.facebook.com/vollmergroup" rel="nofollow noreferrer noopener" target="_blank">www.facebook.com/vollmergroup</a> // <u><a href="http://www.youtube.com/vollmergroup" rel="nofollow noreferrer noopener" target="_blank">www.youtube.com/vollmergroup</a></u> </p>
+<p><img border="0" src="/api/v1/ticket_attachment/135/572/1199?view=inline" alt="2021_01_VOLLMER_Signaturbanner_AHAL" style="max-width:100%;width:540px;max-height:135px;"></p>
+<p>Diese E-Mail enthält vertrauliche und/oder rechtlich geschützte Informationen. Wenn Sie nicht der richtige Adressat sind, oder<br> diese E-Mail irrtümlich erhalten haben, informieren Sie bitte sofort den Absender und vernichten Sie diese E-Mail. Das unerlaubte <br> Kopieren sowie die unbefugte Weitergabe dieser E-Mail ist nicht gestattet.This email may contain confidential and/or privileged <br> information. If you are not the intended recipient (or have received this email in error) please notify the sender immediately and <br> destroy this email. Any unauthorized copying, disclosure or distribution of the material in this email is strictly forbidden.<br>
+</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=575
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.03.2021 14:23:27 +00:00
+UpdatedAt=08.03.2021 14:23:31 +00:00
+
+### ARTICLE01_SUBJECT
+EC Master unter Linux
+
+### ARTICLE01_BODY
+<div><blockquote type="cite">
+<div>Subject: EC Master unter Linux<br>Date: 03/08/2021 15:20<br>From: Augustin Philipp &lt;p.augustin@vollmer-group.com&gt;<br>To: EtherCAT Support &lt;ecsupport@acontis.com&gt;<br>CC: Mayr Markus &lt;m.mayr@vollmer-group.com&gt;, Koch Benjamin &lt;B.Koch@vollmer-group.com&gt;, Sauer Alexander &lt;A.Sauer@vollmer-group.com&gt;<br><br>
+</div>
+<div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p>aktuell verwenden wir Ihren EC-Master mit der Os-Abstraktion für uCOS-III auf einem NXP i.MX6ull.</p>
+<p> </p>
+<p>Für ein aufkommendes Projekt möchten wir den EC Master auch unter einem Linux System ausführen.</p>
+<p>Das Linux läuft auf einem i.MX6 Quad mit einem BCM54610 als PHY.<br> Gibt es dafür bereits eine OS-Abstrahierung? Können wir die Hardwareschnittstelle des i.MX6ull auch für den i.MX6 Quad wiederverwenden und die generische PHY Ansteuerung verwenden?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Best regards<br>
+<br> i.A. Philipp Augustin, Bachelor of Engineering<b><br>
+</b>// Entwicklung &amp; Konstruktion / Design &amp; Development<b><br>
+</b><br> // Tel.: +49(7351)571-733<br> // email: p.augustin@vollmer-group.com<br>
+<br> // VOLLMER WERKE Maschinenfabrik GmbH // Ehinger Straße 34 // 88400 Biberach/Riß // Germany<br> // Sitz der Gesellschaft: Biberach // Amtsgericht Ulm HRB 640007 // USt-Id Nr. DE 144889422<br> // Geschäftsführer: Dr.-Ing. Stefan Brand, Jürgen Hauger // Aufsichtsratsvorsitzender: Martin Kapp<br> // <u><a href="http://www.vollmer-group.com" rel="nofollow noreferrer noopener" target="_blank">www.vollmer-group.com</a></u> // <a href="http://www.facebook.com/vollmergroup" rel="nofollow noreferrer noopener" target="_blank">www.facebook.com/vollmergroup</a> // <u><a href="http://www.youtube.com/vollmergroup" rel="nofollow noreferrer noopener" target="_blank">www.youtube.com/vollmergroup</a></u> </p>
+<p><img border="0" src="/api/v1/ticket_attachment/135/575/1204?view=inline" alt="2021_01_VOLLMER_Signaturbanner_AHAL" style="max-width:100%;max-width:100%;width:540px;max-height:135px;"></p>
+<p>Diese E-Mail enthält vertrauliche und/oder rechtlich geschützte Informationen. Wenn Sie nicht der richtige Adressat sind, oder<br> diese E-Mail irrtümlich erhalten haben, informieren Sie bitte sofort den Absender und vernichten Sie diese E-Mail. Das unerlaubte <br> Kopieren sowie die unbefugte Weitergabe dieser E-Mail ist nicht gestattet.This email may contain confidential and/or privileged <br> information. If you are not the intended recipient (or have received this email in error) please notify the sender immediately and <br> destroy this email. Any unauthorized copying, disclosure or distribution of the material in this email is strictly forbidden.<br>
+</p>
+<p> </p>
+</div>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=576
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=08.03.2021 14:24:01 +00:00
+UpdatedAt=08.03.2021 14:24:01 +00:00
+
+### ARTICLE02_BODY
+Forwarding TEST to sales -&gt; SPAM

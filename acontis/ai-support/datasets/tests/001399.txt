@@ -1,0 +1,137 @@
+### HEADER
+Id=1399
+Link=http://at-zammad/#ticket/zoom/1399
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Liebherr-Werk Nenzing GmbH (ID=8, Number=40314, Country=AT)
+Commission=Liebherr, tower crane control (ID=8, Number=8)
+Number=701399
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=michael.neyer2@liebherr.com (ID=537, FirstName=Michael, LastName=Neyer)
+CreatedBy=michael.neyer2@liebherr.com (ID=537, FirstName=Michael, LastName=Neyer)
+Type=
+TimeUnit=
+CreatedAt=09.09.2021 14:37:35 +00:00
+UpdatedAt=25.04.2022 12:15:52 +00:00
+CloseAt=17.09.2021 06:11:31 +00:00
+ArticlesCount=2
+
+### TITLE
+CanOpen und Eval Software vom EC-Engeneer
+
+### ARTICLE00_HEADER
+Id=7524
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.09.2021 14:37:35 +00:00
+UpdatedAt=09.09.2021 14:37:39 +00:00
+
+### ARTICLE00_SUBJECT
+CanOpen und Eval Software vom EC-Engeneer
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Paul,</p>
+<p> </p>
+<p>einer unserer Kollegen aus Rostock (Andre Werschmöler) hat dich meines wissen zu einem EtherCAT &lt;-&gt; CanOpen Gateway kontaktiert.</p>
+<p>Mit Hilfe dieses Gateways möchten die Kollegen eine Klimaanlage in einer Maschine ansteuern.</p>
+<p> </p>
+<p>Laut Info von Andre ist hierzu aber eine spezielle Version des EC-Engeneer notwendig.</p>
+<p>Kannst Du mir hier weiterhelfen was hier genau benötigt wird und ob es hierzu eine Testversion gibt?</p>
+<p> </p>
+<p>Besten Dank für Deine Rückmeldung</p>
+<p> </p>
+<p>Gruß Michael</p>
+<p> </p>
+<div>
+<p>Mit freundlichen Grüßen</p>
+<p><b>i. A. Michael Neyer</b></p>
+<p>VE Elektroniksysteme MCC</p>
+<p> </p>
+<p><b>Liebherr-Werk Nenzing GmbH</b></p>
+<p>Dr. Hans Liebherr Str. 1</p>
+<p>6710 Nenzing</p>
+<p>Österreich</p>
+<p>Tel.: +43 50809 42833<br> E-Mail: Michael.Neyer2@liebherr.com<br> Internet: <a href="http://www.liebherr.com" rel="nofollow noreferrer noopener" target="_blank">www.liebherr.com</a><br> </p>
+<p>Offenlegung nach § 14 UGB: Liebherr-Werk Nenzing GmbH, 6710 Nenzing.</p>
+<p>Die Gesellschaft ist registriert beim Landesgericht Feldkirch unter FN 64821a.</p>
+<p><a href="https://www.liebherr.com/privacydocs/LWN/LWN-DSE-Geschaeftspartner.pdf" rel="nofollow noreferrer noopener" title="https://www.liebherr.com/privacydocs/LWN/LWN-DSE-Geschaeftspartner.pdf" target="_blank">Datenschutzerklärung</a><br> </p>
+<p><a href="https://www.facebook.com/LiebherrConstruction" rel="nofollow noreferrer noopener" title="https://www.facebook.com/LiebherrConstruction" target="_blank"></a> <a href="https://www.youtube.com/liebherr" rel="nofollow noreferrer noopener" title="https://www.youtube.com/liebherr" target="_blank"></a> <a href="http://www.linkedin.com/company/liebherr" rel="nofollow noreferrer noopener" title="http://www.linkedin.com/company/liebherr" target="_blank"></a> <a href="https://twitter.com/liebherr" rel="nofollow noreferrer noopener" title="https://twitter.com/liebherr" target="_blank"></a> <a href="https://www.instagram.com/liebherrconstruction" rel="nofollow noreferrer noopener" title="https://www.instagram.com/liebherrconstruction" target="_blank"></a> <a href="https://www.pinterest.com/liebherrgroup" rel="nofollow noreferrer noopener" title="https://www.pinterest.com/liebherrgroup" target="_blank"></a> <br> </p>
+<p> </p>
+</div>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=7548
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.09.2021 05:32:01 +00:00
+UpdatedAt=10.09.2021 05:32:03 +00:00
+
+### ARTICLE01_SUBJECT
+CanOpen und Eval Software vom EC-Engeneer
+
+### ARTICLE01_BODY
+Hallo Michael,<div><br></div><div>man braucht hier eine EC-Engineer Plus Version. Diese wird durch ein Dongle Update freigeschalten.</div><div><br></div><div>In der Standard Eval Version, kann man das CANopen Gateway aber testen. Es wird hier in den nächsten Wochen auch eine deutlich verbesserte Version rauskommen was die EL6751 angeht. Aber ansonsten kann man mit der normalen Eval Version evaluieren.</div><div><br></div><div><a href="http://software.acontis.com/EC-Tools/V3-5/EC-Engineer_Eval_V3.5.3.zip" rel="nofollow noreferrer noopener" target="_blank" title="http://software.acontis.com/EC-Tools/V3-5/EC-Engineer_Eval_V3.5.3.zip">EC-Engineer_Eval_V3.5.3.zip</a></div><div><br></div><div>Viele Grüße</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, September 9, 2021, 4:37:35 PM, Michael neyer2 wrote:<br><br><div>
+<p>Hallo Paul,</p>
+<p> </p>
+<p>einer unserer Kollegen aus Rostock (Andre Werschmöler) hat dich meines wissen zu einem EtherCAT &lt;-&gt; CanOpen Gateway kontaktiert.</p>
+<p>Mit Hilfe dieses Gateways möchten die Kollegen eine Klimaanlage in einer Maschine ansteuern.</p>
+<p> </p>
+<p>Laut Info von Andre ist hierzu aber eine spezielle Version des EC-Engeneer notwendig.</p>
+<p>Kannst Du mir hier weiterhelfen was hier genau benötigt wird und ob es hierzu eine Testversion gibt?</p>
+<p> </p>
+<p>Besten Dank für Deine Rückmeldung</p>
+<p> </p>
+<p>Gruß Michael</p>
+<p> </p>
+<div>
+<p>Mit freundlichen Grüßen</p>
+<p><b>i. A. Michael Neyer</b></p>
+<p>VE Elektroniksysteme MCC</p>
+<p> </p>
+<p><b>Liebherr-Werk Nenzing GmbH</b></p>
+<p>Dr. Hans Liebherr Str. 1</p>
+<p>6710 Nenzing</p>
+<p>Österreich</p>
+<p>Tel.: +43 50809 42833<br> E-Mail: Michael.Neyer2@liebherr.com<br> Internet: <a href="http://www.liebherr.com" rel="nofollow noreferrer noopener" target="_blank">www.liebherr.com</a><br> </p>
+<p>Offenlegung nach § 14 UGB: Liebherr-Werk Nenzing GmbH, 6710 Nenzing.</p>
+<p>Die Gesellschaft ist registriert beim Landesgericht Feldkirch unter FN 64821a.</p>
+<p><a href="https://www.liebherr.com/privacydocs/LWN/LWN-DSE-Geschaeftspartner.pdf" rel="nofollow noreferrer noopener" title="https://www.liebherr.com/privacydocs/LWN/LWN-DSE-Geschaeftspartner.pdf" target="_blank">Datenschutzerklärung</a><br> </p>
+<p><a href="https://www.facebook.com/LiebherrConstruction" rel="nofollow noreferrer noopener" title="https://www.facebook.com/LiebherrConstruction" target="_blank"></a> <a href="https://www.youtube.com/liebherr" rel="nofollow noreferrer noopener" title="https://www.youtube.com/liebherr" target="_blank"></a> <a href="http://www.linkedin.com/company/liebherr" rel="nofollow noreferrer noopener" title="http://www.linkedin.com/company/liebherr" target="_blank"></a> <a href="https://twitter.com/liebherr" rel="nofollow noreferrer noopener" title="https://twitter.com/liebherr" target="_blank"></a> <a href="https://www.instagram.com/liebherrconstruction" rel="nofollow noreferrer noopener" title="https://www.instagram.com/liebherrconstruction" target="_blank"></a> <a href="https://www.pinterest.com/liebherrgroup" rel="nofollow noreferrer noopener" title="https://www.pinterest.com/liebherrgroup" target="_blank"></a> <br> </p>
+<p> </p>
+</div>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

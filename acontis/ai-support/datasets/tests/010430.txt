@@ -1,0 +1,151 @@
+### HEADER
+Id=10430
+Link=http://at-zammad/#ticket/zoom/10430
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=7010430
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=20.04.2025 13:34:21 +00:00
+UpdatedAt=25.04.2025 06:13:56 +00:00
+CloseAt=25.04.2025 06:13:56 +00:00
+ArticlesCount=2
+
+### TITLE
+The access rights of CoE objects specified on the ESI and that displayed on the EC-Engineer are different...(PNo.184)
+
+### ARTICLE00_HEADER
+Id=59759
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.04.2025 13:34:21 +00:00
+UpdatedAt=20.04.2025 13:34:23 +00:00
+
+### ARTICLE00_SUBJECT
+The access rights of CoE objects specified on the ESI and that displayed on the EC-Engineer are different...(PNo.184)
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Hi</span><span lang="EN-US"> </span><span lang="EN-US">Support</span><span lang="EN-US"> </span><span lang="EN-US">Team</span></p>
+<p><span lang="EN-US"> </span><span lang="EN-US"></span></p>
+<p><span lang="EN-US">This is from Mitsubishi (commission No. 40627).</span></p>
+<p><span lang="EN-US">EC-Engineer V.3.9.11</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">The access rights of CoE objects specified on the ESI and the access rights displayed on the EC-Engineer are different.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">For example, in the case of an ESI (</span><span lang="EN-US">$B!H!I(B</span><span lang="EN-US">&lt;Access WriteRestrictions=""PreOP</span><span lang="EN-US">$B!H!I(B</span><span lang="EN-US">&gt;rw&lt;/Access&gt;</span><span lang="EN-US">$B!F!G(B</span><span lang="EN-US">) in which access rights for PreOP are specified, all access rights in State are displayed the same in EC-Engineer as </span><span lang="EN-US">$B!H(B</span><span lang="EN-US">-- -- - - - ( RW RW RW )</span><span lang="EN-US">$B!I(B</span><span lang="EN-US">. The same access rights are displayed in the EC-Engineer.</span></p>
+<p><span lang="EN-US">* The same is reproduced in the Simulator.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">The access rights of CoE objects on ESI and the display of access rights in EC-Engineer should be the same, and we think that the access rights of State without specification are RO.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">[Reproduction Procedure]</span></p>
+<p><span lang="EN-US">1. Use ESI with the access right specified as rw only for the PreOP state.</span></p>
+<p><span lang="EN-US">2. Add the Slave from 1. and display the CoE Object-Dictionary.</span></p>
+<p><span lang="EN-US">3. Swithc to </span><span lang="EN-US">$B!H(B</span><span lang="EN-US">Diagnostic mode</span><span lang="EN-US">$B!I(B</span><span lang="EN-US"> and display </span><span lang="EN-US">$B!H(B</span><span lang="EN-US">Description from ESI</span><span lang="EN-US">$B!I(B</span><span lang="EN-US">.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Please refer the attached PDF and ESI file.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Yuichi</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span>$B!A%W%m%U%'%C%7%g%J%k=8CD$rL\;X$9#S#S#V%0%k!<br>
+</span>$B!<br> $B3t&lt;02q| Soft Service Co., Ltd.<br> $B1D6HK\It(B $B4XEl1D6HIt(B <span lang="EN-US">| Kanto Sales Dept.<br>
+</span>$B0f=P(B $BM50l(B <span lang="EN-US">| Yuichi Ide<br>
+</span>$B=;=j!'")(B<span lang="EN-US">101-0062 </span>$BEl5~ET@iBeED6h?@ED=Y2OBf(B<span lang="EN-US">4-4-1 </span>$B#P#M#O8fCc%N?e(B<span lang="EN-US">7</span>$B3,(B<span lang="EN-US"><br>
+</span>$B!!!!!!(B<span lang="EN-US">7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail</span>$B!'(B<span lang="EN-US"><a href="mailto:yuichi.ide@soft-service.co.jp" title="mailto:yuichi.ide@soft-service.co.jp"><span style="color:#467886;">yuichi.ide@soft-service.co.jp</span></a><span><br>
+</span></span><span>$B!<span lang="EN-US"></span></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=59835
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.04.2025 15:28:18 +00:00
+UpdatedAt=22.04.2025 15:28:20 +00:00
+
+### ARTICLE01_SUBJECT
+The access rights of CoE objects specified on the ESI and that displayed on the EC-Engineer are different...(P[...]
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes, this is a bug in the offline OD. It will be fixed in the next version (v3.9.12).</div><div>(in <span>"Diagnostic mode" with</span><span> </span><span>“Description from ESI” is the same, so it will be fixed too)</span>
+</div><div><div><br></div></div><div><img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/10430/59835/249492?view=inline"></div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Sunday, April 20, 2025 at 3:34:21 PM, Yuichi Ide wrote:<br><br><div>
+<p><span lang="EN-US">Hi</span><span lang="EN-US"> </span><span lang="EN-US">Support</span><span lang="EN-US"> </span><span lang="EN-US">Team</span></p>
+<p><span lang="EN-US"> </span><span lang="EN-US"></span></p>
+<p><span lang="EN-US">This is from Mitsubishi (commission No. 40627).</span></p>
+<p><span lang="EN-US">EC-Engineer V.3.9.11</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">The access rights of CoE objects specified on the ESI and the access rights displayed on the EC-Engineer are different.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">For example, in the case of an ESI (</span><span lang="EN-US">$B!H!I(B</span><span lang="EN-US">&lt;Access WriteRestrictions=""PreOP</span><span lang="EN-US">$B!H!I(B</span><span lang="EN-US">&gt;rw&lt;/Access&gt;</span><span lang="EN-US">$B!F!G(B</span><span lang="EN-US">) in which access rights for PreOP are specified, all access rights in State are displayed the same in EC-Engineer as </span><span lang="EN-US">$B!H(B</span><span lang="EN-US">-- -- - - - ( RW RW RW )</span><span lang="EN-US">$B!I(B</span><span lang="EN-US">. The same access rights are displayed in the EC-Engineer.</span></p>
+<p><span lang="EN-US">* The same is reproduced in the Simulator.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">The access rights of CoE objects on ESI and the display of access rights in EC-Engineer should be the same, and we think that the access rights of State without specification are RO.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">[Reproduction Procedure]</span></p>
+<p><span lang="EN-US">1. Use ESI with the access right specified as rw only for the PreOP state.</span></p>
+<p><span lang="EN-US">2. Add the Slave from 1. and display the CoE Object-Dictionary.</span></p>
+<p><span lang="EN-US">3. Swithc to </span><span lang="EN-US">$B!H(B</span><span lang="EN-US">Diagnostic mode</span><span lang="EN-US">$B!I(B</span><span lang="EN-US"> and display </span><span lang="EN-US">$B!H(B</span><span lang="EN-US">Description from ESI</span><span lang="EN-US">$B!I(B</span><span lang="EN-US">.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Please refer the attached PDF and ESI file.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Yuichi</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span>$B!A%W%m%U%'%C%7%g%J%k=8CD$rL\;X$9#S#S#V%0%k!<br>
+</span>$B!<br> $B3t&lt;02q| Soft Service Co., Ltd.<br> $B1D6HK\It(B $B4XEl1D6HIt(B <span lang="EN-US">| Kanto Sales Dept.<br>
+</span>$B0f=P(B $BM50l(B <span lang="EN-US">| Yuichi Ide<br>
+</span>$B=;=j!'")(B<span lang="EN-US">101-0062 </span>$BEl5~ET@iBeED6h?@ED=Y2OBf(B<span lang="EN-US">4-4-1 </span>$B#P#M#O8fCc%N?e(B<span lang="EN-US">7</span>$B3,(B<span lang="EN-US"><br>
+</span>$B!!!!!!(B<span lang="EN-US">7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail</span>$B!'(B<span lang="EN-US"><a href="mailto:yuichi.ide@soft-service.co.jp" title="mailto:yuichi.ide@soft-service.co.jp"><span style="color:#467886;">yuichi.ide@soft-service.co.jp</span></a><span><br>
+</span></span><span>$B!<span lang="EN-US"></span></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

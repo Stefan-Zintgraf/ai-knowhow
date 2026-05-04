@@ -1,0 +1,216 @@
+### HEADER
+Id=8118
+Link=http://at-zammad/#ticket/zoom/8118
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=708118
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=16.05.2024 14:23:26 +00:00
+UpdatedAt=22.05.2024 19:37:11 +00:00
+CloseAt=22.05.2024 19:37:11 +00:00
+ArticlesCount=8
+
+### TITLE
+Fwd: Can EC work with Beckhoff XFC terminals
+
+### ARTICLE00_HEADER
+Id=44722
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.05.2024 14:23:26 +00:00
+UpdatedAt=16.05.2024 14:23:26 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Can EC work with Beckhoff XFC terminals
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>Do we support these slaves in EC-Engineer? Do we support them in EC-Master if they are configured in the ENI file (like from TwinCAT)?<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>Bob Trask - ETG &lt;bob@ethercat.org&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Can EC work with Beckhoff XFC terminals</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>May 15, 2024 at 6:44:43 AM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<br><div>
+<div>The time stamping and oversampling inputs and outputs to be specific.</div>
+<div><p> </p></div>
+<div><a href="https://www.beckhoff.com/en-us/products/i-o/xfc/" rel="nofollow noreferrer noopener" title="https://www.beckhoff.com/en-us/products/i-o/xfc/" target="_blank">XFC - eXtreme Fast Control Technology | Beckhoff USA</a></div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=44724
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=16.05.2024 14:36:55 +00:00
+UpdatedAt=16.05.2024 14:36:55 +00:00
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>from the communication point of view, they are probably slaves as the others, but you need a specific motion library to control them in a sinnfull way.</div><div><br></div><div>@Kai have you seen them in EC-Engineer before?</div><div><br></div><div>Best Regards,</div><div>Cyril</div>
+
+### ARTICLE02_HEADER
+Id=44814
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=21.05.2024 07:00:54 +00:00
+UpdatedAt=21.05.2024 07:00:54 +00:00
+
+### ARTICLE02_BODY
+Hi,<div><br></div><div>I have not seen them in EC-Engineer so far. I know that the AX8xxx does not work. But I have the ESIs from the others and I do not see a reason why they should not work. I added them to EC-Engineer and it looks good so far.</div><div><br></div><div>Best regards,</div><div>Kai</div>
+
+### ARTICLE03_HEADER
+Id=44864
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.05.2024 13:14:15 +00:00
+UpdatedAt=21.05.2024 13:14:15 +00:00
+
+### ARTICLE03_SUBJECT
+Fwd: Can EC work with Beckhoff XFC terminals [Ticket#708118]
+
+### ARTICLE03_BODY
+<p>Here is some more information from ETG regarding these slaves. Does this change any expectations for working with EC-Engineer and EC-Master?<br></p><div> <br>/Jon </div><div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>Bob Trask - ETG &lt;bob@ethercat.org&gt; <br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>RE: Can EC work with Beckhoff XFC terminals</b>
+<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>May 16, 2024 at 11:28:03 AM EDT <br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt; <br></span>
+</div>
+<br><div>
+<div>The basic requirements are a tight DC with the reference clock on a slave instead of the master.</div>
+<div><p> </p></div>
+<ol start="1" type="1"><li><span>XFC involves either of two things, <b>time stamping</b> an event independent of the cycle, either through Latch (timestamping) an event at the slave or Sync (interrupting the SSC) interrupting the higher-level code to attend to the event.</span></li></ol>
+<div><p> </p></div>
+<ol start="2" type="1"><li>
+<b>Oversampling</b> (recording multiple values at the slave in between cycle) or generating multiple values at the slave in each cycle. </li></ol>
+<div><p> </p></div>
+<div>The functionality is built into the XFC Beckhoff terminals; the master just needs to handle it.</div>
+<div><p> </p></div>
+<div>It requires three things:</div>
+<div><p> </p></div>
+<ol start="1" type="1">
+<li>High cycle determinism</li>
+<li>Beckhoff XFC terminals</li>
+<li>Historically TwinCAT</li>
+</ol>
+<div><p> </p></div>
+<div>All parameters are in the XFC ESI files but no one else besides Beckhoff has ever implemented it.</div>
+<div><p> </p></div>
+<div>The Beckhoff XFC terminals have been around for more than 15 years. It also is occasionally used in drives.</div>
+<div><p> </p></div>
+<div>It is nothing that Acontis cannot handle. Clearly a niche product which is why I was asking.</div>
+<div><p> </p></div>
+<div>I know the XFC terminals well so let me know if you have any other questions.</div>
+<div><p> </p></div>
+<div><p> </p></div>
+<div><p> </p></div>
+<div>
+<b>From:</b><span> Jon Waters &lt;<a href="mailto:j.waters@acontis.com">j.waters@acontis.com</a>&gt; <br><b>Sent:</b> Thursday, May 16, 2024 7:25 AM <br><b>To:</b> Bob Trask - ETG &lt;<a href="mailto:bob@ethercat.org">bob@ethercat.org</a>&gt; <br><b>Subject:</b> Re: Can EC work with Beckhoff XFC terminals</span>
+</div>
+<div><p> </p></div>
+<div>
+<b><span style=" color: rgb(156, 101, 0);">CAUTION:</span></b> External Email!! </div>
+<div>
+<br>Hi Bob,</div>
+<div><p> </p></div>
+<div>
+<div>I’m double-checking, but I think so. I never heard of this XFC. Do you have some more information about this? Is it something specific in the slave? Or is it just that the master needs to be able to run a fast cycle time (so the OS needs to be very stable and deterministic)?</div>
+<div>
+<br><span>Jon Waters <br>General Manager <br> <br>acontis technologies Inc. <br>945 Concord Street <br>Framingham, MA 01701 <br>Phone: +1-508-809-7201</span>
+</div>
+<div>
+<div> </div>
+<blockquote>
+<div>On May 15, 2024, at 6:44 AM, Bob Trask - ETG &lt;<a href="mailto:bob@ethercat.org">bob@ethercat.org</a>&gt; wrote:</div>
+<div><p> </p></div>
+<div>
+<div>The time stamping and oversampling inputs and outputs to be specific.</div>
+<div> </div>
+<div><a href="https://www.beckhoff.com/en-us/products/i-o/xfc/" rel="nofollow noreferrer noopener" title="https://www.beckhoff.com/en-us/products/i-o/xfc/" target="_blank"><span style="color: rgb(70, 120, 134);">XFC - eXtreme Fast Control Technology | Beckhoff USA</span></a></div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+
+### ARTICLE04_HEADER
+Id=44865
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=21.05.2024 13:15:55 +00:00
+UpdatedAt=21.05.2024 13:15:55 +00:00
+
+### ARTICLE04_BODY
+<div>Hi Cyril,</div><div><br></div><div>You mention a motion library, is that really needed for these IO? Why a motion library for IO?<br>
+</div>
+
+### ARTICLE05_HEADER
+Id=44880
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=21.05.2024 16:28:52 +00:00
+UpdatedAt=21.05.2024 16:28:52 +00:00
+
+### ARTICLE05_BODY
+Hi Jon,<div><br></div><div>sorry for the confusion, I was thinking about XTS. Under <span>XFC is a collection of standard EtherCAT slaves.</span>
+</div><div><br></div><div>Best Regards,</div><div>Cyril</div>
+
+### ARTICLE06_HEADER
+Id=44881
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=21.05.2024 16:36:29 +00:00
+UpdatedAt=21.05.2024 16:36:29 +00:00
+
+### ARTICLE06_BODY
+<div>OK that makes more sense now :)</div><div><br></div><div>Do you think there is any special requirements on EC-Master to support these slaves under XFC? Seems like just a good timing on the master is needed for the fast cycle and sync rate.</div><div><br></div><div>Maybe I could get ETG/Beckhoff to send us some to test with, would we want that?<br>
+</div>
+
+### ARTICLE07_HEADER
+Id=44890
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=22.05.2024 05:55:40 +00:00
+UpdatedAt=22.05.2024 05:55:40 +00:00
+
+### ARTICLE07_BODY
+The slaves are using timestamping &amp; oversampling. I don't think we need to have them here explicitely first.<div><a href="https://www.beckhoff.com/en-en/products/i-o/xfc/" title="https://www.beckhoff.com/en-en/products/i-o/xfc/" rel="nofollow noreferrer noopener" target="_blank">https://www.beckhoff.com/en-en/products/i-o/xfc/</a></div><div><br></div>

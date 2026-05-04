@@ -1,0 +1,175 @@
+### HEADER
+Id=7980
+Link=http://at-zammad/#ticket/zoom/7980
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Panasonic Industry SUNX, FP-HX EtherCAT casette (ID=806, Number=806)
+Number=707980
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=25.04.2024 09:50:23 +00:00
+UpdatedAt=03.05.2024 11:01:58 +00:00
+CloseAt=03.05.2024 11:01:58 +00:00
+ArticlesCount=3
+
+### TITLE
+Question about EC-Engineer SDK(Panasonic Industry) [E009]
+
+### ARTICLE00_HEADER
+Id=43927
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=25.04.2024 09:50:23 +00:00
+UpdatedAt=25.04.2024 09:50:25 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Engineer SDK(Panasonic Industry) [E009]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Engineer SDK(Panasonic Industry) [E009]
+
+When the .NET Framework is changed to 4.8 in the following project
+(EtherCATSuite, EcView, EcViewControls, EcViewModel, EcViewPlugin, EcViewResources), there is a case that it takes a little bit time to switch the tab.
+The procedure is below.
+1. Start EtherCATSuite.sln
+2. Change the framework to ".Net Framework 4.8" in each project.
+3. Execute the build and start debugging.
+4. Click the "New Project" on "EtherCAT Suite" dialog.
+5. Click the "EtherCAT Dialog" button.
+6. Select "Slave_1008" in Project Explorer and click "Advanced Options" tab.
+7. Select "EtherCATSuite Master" in Project Explorer.
+What is the problem?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=43947
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.04.2024 12:54:22 +00:00
+UpdatedAt=25.04.2024 12:54:27 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Engineer SDK(Panasonic Industry) [E009]
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>I can reproduce it. But I have to look deeper, what causes this. </div><div><br></div><div>Best regards,</div><div>Kai</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, April 25, 2024 at 11:50:23 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Engineer SDK(Panasonic Industry) [E009]</div>
+<div><br></div>
+<div>When the .NET Framework is changed to 4.8 in the following project</div>
+<div>(EtherCATSuite, EcView, EcViewControls, EcViewModel, EcViewPlugin, EcViewResources), there is a case that it takes a little bit time to switch the tab.</div>
+<div>The procedure is below.</div>
+<div>1. Start EtherCATSuite.sln</div>
+<div>2. Change the framework to ".Net Framework 4.8" in each project.</div>
+<div>3. Execute the build and start debugging.</div>
+<div>4. Click the "New Project" on "EtherCAT Suite" dialog.</div>
+<div>5. Click the "EtherCAT Dialog" button.</div>
+<div>6. Select "Slave_1008" in Project Explorer and click "Advanced Options" tab.</div>
+<div>7. Select "EtherCATSuite Master" in Project Explorer.</div>
+<div>What is the problem?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=44131
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.04.2024 06:43:19 +00:00
+UpdatedAt=30.04.2024 06:43:20 +00:00
+
+### ARTICLE02_SUBJECT
+Question about EC-Engineer SDK(Panasonic Industry) [E009]
+
+### ARTICLE02_BODY
+<div>Hi,</div><div><br></div><div>I found out, that it seems to be the OnPropertyChanged which is slower in .NET4.8. It is also just the first click, that this happens. </div><div>We will see what we can do here. But these changes may not come in a 3.9.x version. </div><div>Hint: With .NET4.6 it is fast. It seems to be a problem from Microsoft here. But we will also investigate more time into this. </div><div><br></div><div>Best regards,</div><div>Kai<br><br>
+</div><div><blockquote type="cite">On Thursday, April 25, 2024 at 2:54:22 PM, Kai Feifel wrote:<br><br>Hi,<div><br></div>
+<div>I can reproduce it. But I have to look deeper, what causes this. </div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, April 25, 2024 at 11:50:23 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Engineer SDK(Panasonic Industry) [E009]</div>
+<div><br></div>
+<div>When the .NET Framework is changed to 4.8 in the following project</div>
+<div>(EtherCATSuite, EcView, EcViewControls, EcViewModel, EcViewPlugin, EcViewResources), there is a case that it takes a little bit time to switch the tab.</div>
+<div>The procedure is below.</div>
+<div>1. Start EtherCATSuite.sln</div>
+<div>2. Change the framework to ".Net Framework 4.8" in each project.</div>
+<div>3. Execute the build and start debugging.</div>
+<div>4. Click the "New Project" on "EtherCAT Suite" dialog.</div>
+<div>5. Click the "EtherCAT Dialog" button.</div>
+<div>6. Select "Slave_1008" in Project Explorer and click "Advanced Options" tab.</div>
+<div>7. Select "EtherCATSuite Master" in Project Explorer.</div>
+<div>What is the problem?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+<br>
+</blockquote></div><div><br></div>

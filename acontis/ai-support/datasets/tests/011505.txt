@@ -1,0 +1,181 @@
+### HEADER
+Id=11505
+Link=http://at-zammad/#ticket/zoom/11505
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=KLA-Tencor Corporation (ID=186, Number=55013, Country=IL)
+Commission=KLA, PSG (ID=225, Number=225)
+Number=7011505
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=wassim.nimri@kla.com (ID=1334, FirstName=Wassim, LastName=Nimri)
+CreatedBy=wassim.nimri@kla.com (ID=1334, FirstName=Wassim, LastName=Nimri)
+Type=
+TimeUnit=
+CreatedAt=28.09.2025 10:15:11 +00:00
+UpdatedAt=02.12.2025 08:46:11 +00:00
+CloseAt=02.12.2025 08:46:11 +00:00
+ArticlesCount=2
+
+### TITLE
+Multi master ECAT sniffing under Linux
+
+### ARTICLE00_HEADER
+Id=66404
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.09.2025 10:15:11 +00:00
+UpdatedAt=28.09.2025 10:15:15 +00:00
+
+### ARTICLE00_SUBJECT
+Multi master ECAT sniffing under Linux
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Martin.</p>
+<p>How are you today? ,hope everything is fine with you.</p>
+<p>We are negotiating the options we have today to debug the multi ECAT master under Linux OS.</p>
+<p>I saw the following in your website:</p>
+<p><a href="https://www.acontis.com/en/ec-monitor.html" rel="nofollow noreferrer noopener" title="https://www.acontis.com/en/ec-monitor.html" target="_blank">EC-Monitor - Software for monitoring (sniffing) of EtherCAT® networks - acontis</a></p>
+<p> </p>
+<p>I need more information about this package, in term of computer performance requirements.</p>
+<ol start="1" type="1">
+<li>Did this package impact ECAT real time performance once we activate it?</li>
+<li>How can we synchronize the data from several masters?</li>
+<li>Where the sniffing data saved? (how many Mbyte per period time we need to allocate for it?)</li>
+</ol>
+<p> </p>
+<p>Your prompt reply is highly appreciated.</p>
+<p> </p>
+<p>Have a wonderful and safe day</p>
+<p> </p>
+<p>BR</p>
+<p> </p>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<p>
+<b><span style="color:#41007f;">Wassim Nimri</span></b><b><span style="color:#41007f;"></span></b></p>
+<p>
+<span style="color:#5a5a64;">Senior Electronics Engineer</span></p>
+<p><b><span style="color:#00a7e1;">W</span></b><span style="color:#5a5a64;">
+</span>+972-4- 6449753 <b><span style="color:#00a7e1;"> M</span></b><span style="color:#5a5a64;">
+</span>+972-54-5246459</p>
+<p>
+<span style="color:#5a5a64;"> </span></p>
+<p><span style="color:#5a5a64;"><img border="0" style="max-width:100%;width:2.3958in;max-height:.9375in;" src="/api/v1/ticket_attachment/11505/66404/276912?view=inline"></span></p>
+<p>
+<span style="color:#9b9ba0;">Please consider the environment before printing this e-mail.</span></p>
+<p>
+<span style="color:#9b9ba0;"> </span></p>
+<p>
+<span style="color:#9b9ba0;">CONFIDENTIALITY NOTICE: This e-mail transmission, and any documents, files or previous e-mail messages attached to it, does contain confidential information. If you are not the intended recipient, or a person responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying, distribution or use of any of the information contained in or attached to this message is STRICTLY PROHIBITED. If you have received this transmission in error, please immediately notify us by reply e-mail at Wassim.Nimri@kla.com or by telephone at , and destroy the original transmission and its attachments without reading them or saving them to disk. Thank you.</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div> <br>
+<span style=" color:#9b9ba0;">CONFIDENTIALITY NOTICE: This email transmission, and any documents, files or previous email messages attached to it, may contain confidential information. If you are not the intended recipient or a person responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying, distribution or use of any of the information contained in or attached to this message is STRICTLY PROHIBITED. If you have received this transmission in error, please immediately destroy the original transmission and its attachments without reading them or saving them to disk. Email communications may be monitored by KLA as permitted by applicable law and regulations. For more information, read our Privacy Policy at </span><span style=" color:#00a7e1;"><a href="http://www.kla.com/privacy-policy" rel="nofollow noreferrer noopener" title="http://www.kla.com/privacy-policy" target="_blank">www.kla.com/privacy-policy.</a></span>
+<span style=" color:#9b9ba0;"> Thank you.</span>
+</div>
+
+### ARTICLE01_HEADER
+Id=66509
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.09.2025 08:21:50 +00:00
+UpdatedAt=30.09.2025 08:21:52 +00:00
+
+### ARTICLE01_SUBJECT
+Multi master ECAT sniffing under Linux
+
+### ARTICLE01_BODY
+<div>Hi Wassim,</div><div>about your questions:</div><div>1. If you are using a external TAP device, there is no impact on the real time performance. You can run EC-Monitor on a external controller.</div><div>2. With a ET2000 Tap, you can monitor 4 EtherCAT Networks at once.</div><div>3. You can use our EC-DAQ library to store the process data in CSV format. The file size highly depend on the amount of process data and the cycle time.</div><div><br></div><div></div><div data-signature="true" data-signature-id="2">
+<div><span style="background-color: initial; color: rgb(88, 88, 86);">Best regards,</span></div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Holger Oelhaf</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">Am Sonntag, 28. September 2025 um 12:15:11, schrieb Wassim Nimri:<br><br><div>
+<p>Hi Martin.</p>
+<p>How are you today? ,hope everything is fine with you.</p>
+<p>We are negotiating the options we have today to debug the multi ECAT master under Linux OS.</p>
+<p>I saw the following in your website:</p>
+<p><a href="https://www.acontis.com/en/ec-monitor.html" rel="nofollow noreferrer noopener" title="https://www.acontis.com/en/ec-monitor.html" target="_blank">EC-Monitor - Software for monitoring (sniffing) of EtherCAT® networks - acontis</a></p>
+<p> </p>
+<p>I need more information about this package, in term of computer performance requirements.</p>
+<ol start="1" type="1">
+<li>Did this package impact ECAT real time performance once we activate it?</li>
+<li>How can we synchronize the data from several masters?</li>
+<li>Where the sniffing data saved? (how many Mbyte per period time we need to allocate for it?)</li>
+</ol>
+<p> </p>
+<p>Your prompt reply is highly appreciated.</p>
+<p> </p>
+<p>Have a wonderful and safe day</p>
+<p> </p>
+<p>BR</p>
+<p> </p>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<p>
+<b><span style="color:#41007f;">Wassim Nimri</span></b><b><span style="color:#41007f;"></span></b></p>
+<p>
+<span style="color:#5a5a64;">Senior Electronics Engineer</span></p>
+<p><b><span style="color:#00a7e1;">W</span></b><span style="color:#5a5a64;">
+</span>+972-4- 6449753 <b><span style="color:#00a7e1;"> M</span></b><span style="color:#5a5a64;">
+</span>+972-54-5246459</p>
+<p>
+<span style="color:#5a5a64;"> </span></p>
+<p><span style="color:#5a5a64;"><img border="0" style="max-width:100%;max-width:100%;width:2.3958in;max-height:.9375in;" src="/api/v1/ticket_attachment/11505/66509/277424?view=inline"></span></p>
+<p>
+<span style="color:#9b9ba0;">Please consider the environment before printing this e-mail.</span></p>
+<p>
+<span style="color:#9b9ba0;"> </span></p>
+<p>
+<span style="color:#9b9ba0;">CONFIDENTIALITY NOTICE: This e-mail transmission, and any documents, files or previous e-mail messages attached to it, does contain confidential information. If you are not the intended recipient, or a person responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying, distribution or use of any of the information contained in or attached to this message is STRICTLY PROHIBITED. If you have received this transmission in error, please immediately notify us by reply e-mail at Wassim.Nimri@kla.com or by telephone at , and destroy the original transmission and its attachments without reading them or saving them to disk. Thank you.</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div> <br>
+<span style=" color:#9b9ba0;">CONFIDENTIALITY NOTICE: This email transmission, and any documents, files or previous email messages attached to it, may contain confidential information. If you are not the intended recipient or a person responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying, distribution or use of any of the information contained in or attached to this message is STRICTLY PROHIBITED. If you have received this transmission in error, please immediately destroy the original transmission and its attachments without reading them or saving them to disk. Email communications may be monitored by KLA as permitted by applicable law and regulations. For more information, read our Privacy Policy at </span><span style=" color:#00a7e1;"><a href="http://www.kla.com/privacy-policy" rel="nofollow noreferrer noopener" title="http://www.kla.com/privacy-policy" target="_blank">www.kla.com/privacy-policy.</a></span>
+<span style=" color:#9b9ba0;"> Thank you.</span>
+</div>
+<br>
+</blockquote></div><div><br></div><br>

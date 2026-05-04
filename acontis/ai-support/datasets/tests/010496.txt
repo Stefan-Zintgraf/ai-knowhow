@@ -1,0 +1,87 @@
+### HEADER
+Id=10496
+Link=http://at-zammad/#ticket/zoom/10496
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=STÄHLE GmbH (ID=764, Number=0, Country=DE)
+Commission=Stähle GmbH (ID=878, Number=878)
+Number=7010496
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=frank.voigt@stahle.com (ID=2181, FirstName=Frank, LastName=Voigt)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=30.04.2025 11:10:00 +00:00
+UpdatedAt=19.05.2025 09:10:47 +00:00
+CloseAt=14.05.2025 06:14:36 +00:00
+ArticlesCount=4
+
+### TITLE
+Acontis software update request from Stähle GmbH
+
+### ARTICLE00_HEADER
+Id=60127
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.04.2025 11:10:00 +00:00
+UpdatedAt=30.04.2025 11:10:04 +00:00
+
+### ARTICLE00_SUBJECT
+Acontis software update request from Stähle GmbH
+
+### ARTICLE00_BODY
+<p>Dear Mr./Ms. Voigt,</p><p>thank you for your registration.<br><br></p><p>First Name: Frank<br>Last Name: Voigt<br>Company: Stähle GmbH<br><span>Commission Number: 40771<br></span><span>Country: Deutschland<br></span><span>City: Wimsheim<br></span><span>E-Mail: frank.voigt@stahle.com<br></span>Product: <span>EC-Master,EC-Simulator,EC-Monitor,EC-Engineer,EC-Inspector<br></span>Update Type: Update (binary compatible)<br><span>Operating System Version: WIN10/11<br></span>Additional information: </p><p><img src="/api/v1/ticket_attachment/10496/60127/250291?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/10496/60127/250292?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=60134
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=30.04.2025 12:23:38 +00:00
+UpdatedAt=30.04.2025 12:23:38 +00:00
+
+### ARTICLE01_BODY
+Nur EC-Master und EC-Inspector wie in LiWa
+
+### ARTICLE02_HEADER
+Id=60138
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=30.04.2025 12:38:20 +00:00
+UpdatedAt=30.04.2025 12:38:20 +00:00
+
+### ARTICLE02_BODY
+Nur EC-Master und EC-Engineer sorry
+
+### ARTICLE03_HEADER
+Id=60139
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.04.2025 12:38:39 +00:00
+UpdatedAt=30.04.2025 12:38:40 +00:00
+
+### ARTICLE03_SUBJECT
+Acontis software update request from Stähle GmbH
+
+### ARTICLE03_BODY
+<div>Dear Customer,</div><div><br></div><div>Please find your new software version below:</div><div><br></div><div><a href="https://downloads.acontis.com/2025/S/St%C3%A4hle_(40771)(DE)/EC-Master_Intime_x86_32Bit/3.2.3.01/EC-Master-ClassA-AddOn-V3.2.3.01-INtime6-x86_32Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2025/S/Stähle_(40771)(DE)/EC-Master_Intime_x86_32Bit/3.2.3.01/EC-Master-ClassA-AddOn-V3.2.3.01-INtime6-x86_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/S/Stähle_(40771)(DE)/EC-Master_Intime_x86_32Bit/3.2.3.01/EC-Master-ClassA-AddOn-V3.2.3.01-INtime6-x86_32Bit-SDK_Protected.zip</a></div><div><br></div><div><a href="https://downloads.acontis.com/2025/S/St%C3%A4hle_(40771)(DE)/EC-Master_Intime_x86_32Bit/3.2.3.01/EC-Master-V3.2.3.01-INtime6-x86_32Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2025/S/Stähle_(40771)(DE)/EC-Master_Intime_x86_32Bit/3.2.3.01/EC-Master-V3.2.3.01-INtime6-x86_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/S/Stähle_(40771)(DE)/EC-Master_Intime_x86_32Bit/3.2.3.01/EC-Master-V3.2.3.01-INtime6-x86_32Bit-SDK_Protected.zip</a></div><div><br></div><div><a href="https://downloads.acontis.com/2025/S/St%C3%A4hle_(40771)(DE)/EC-Master_Intime_x86_32Bit/3.2.3.01/EC-RtEth-IntelGbe-V3.2.3.01-INtime6-x86_32Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2025/S/Stähle_(40771)(DE)/EC-Master_Intime_x86_32Bit/3.2.3.01/EC-RtEth-IntelGbe-V3.2.3.01-INtime6-x86_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/S/Stähle_(40771)(DE)/EC-Master_Intime_x86_32Bit/3.2.3.01/EC-RtEth-IntelGbe-V3.2.3.01-INtime6-x86_32Bit-SDK_Protected.zip</a></div><div><br></div><div><a href="https://downloads.acontis.com/2025/S/St%C3%A4hle_(40771)(DE)/EC-Engineer/4.0.6/EC-Engineer_Dongle_V4.0.6.zip" title="https://downloads.acontis.com/2025/S/Stähle_(40771)(DE)/EC-Engineer/4.0.6/EC-Engineer_Dongle_V4.0.6.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/S/Stähle_(40771)(DE)/EC-Engineer/4.0.6/EC-Engineer_Dongle_V4.0.6.zip</a></div><div><br></div><div>Password: ECM88250</div><div><br></div><div>If you want to get notified if a new version is released, please answer to this e-mail.</div><div><br></div><div>Best Regards,</div><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>

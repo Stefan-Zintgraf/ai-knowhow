@@ -1,0 +1,101 @@
+### HEADER
+Id=8485
+Link=http://at-zammad/#ticket/zoom/8485
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=KRONES AG (ID=131, Number=55010, Country=DE)
+Commission=Krones, Inspektionstechnik (ID=148, Number=148)
+Number=708485
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=andreas.stopfer@krones.com (ID=388, FirstName=Andreas, LastName=Stopfer)
+CreatedBy=andreas.stopfer@krones.com (ID=388, FirstName=Andreas, LastName=Stopfer)
+Type=
+TimeUnit=
+CreatedAt=15.07.2024 05:28:21 +00:00
+UpdatedAt=30.08.2024 06:06:27 +00:00
+CloseAt=30.08.2024 06:06:27 +00:00
+ArticlesCount=2
+
+### TITLE
+Product code vs Revision Code
+
+### ARTICLE00_HEADER
+Id=47416
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.07.2024 05:28:22 +00:00
+UpdatedAt=15.07.2024 05:28:27 +00:00
+
+### ARTICLE00_SUBJECT
+Product code vs Revision Code
+
+### ARTICLE00_BODY
+<div>Hallo EC Support,</div><div>ich suche gerade den Unterschied von Product code vs. Revision Code.</div><div>D.h. wann nehme ich was.</div><div>Konkret habe ich einen Slave, der je nach Einstellung verschiedene Prozessabbilder haben kann.</div><div> </div><div>Bedeutet ein neues Prozessabbild einen neuen Produktcode oder eine neue Revision?</div><div> </div><div>Die ETG-Dokumente geben hier wenig konkrete Aussagen.</div><div>Wie handhaben Sie diese Problematik?</div><div> </div><div>Danke</div><div> </div><div>Andreas Stopfer</div><p><span>______________________________________________________________<br>
+<br> Krones AG<br> Vorstand: Christoph Klenk, Vorstandsvorsitzender,<br> Uta Anders, Thomas Ricker, Markus Tischer, Ralf Goldbrunner<br> Vorsitzender des Aufsichtsrats: Volker Kronseder<br> Registergericht: Regensburg HRB 23 44, Umsatzsteuer-ID-Nummer: DE 133 695 999<br>
+<span class="js-signatureMarker"></span><br> ______________________________________________________________<br>
+<br> Der Inhalt dieser E-Mail und jeder Anhang ist vertraulich.<br> Diese Inhalte sind nur fuer die benannten Adressaten. <br> Wenn Sie diese E-Mail durch einen Fehler erhalten haben,<br> benachrichtigen Sie sofort Ihren Administrator oder den Absender.<br> Behandeln Sie die E-Mail vertraulich.<br>
+<br> * Diese E-Mail wurde auf Viren und gefaehrlichen Inhalt geprueft. *<br>
+<br> ______________________________________________________________<br>
+<br> The contents of this email and any attachments are confidential.<br> They are intended for the named recipient(s) only.<br> If you have received this email in error please notify the system manager<br> or the sender immediately and do not disclose the contents to anyone or<br> make copies.<br>
+<br> * This e-Mail was scanned for viruses, vandals and malicious content. *</span></p>
+
+### ARTICLE01_HEADER
+Id=47422
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.07.2024 06:43:48 +00:00
+UpdatedAt=15.07.2024 06:44:16 +00:00
+
+### ARTICLE01_SUBJECT
+Product code vs Revision Code
+
+### ARTICLE01_BODY
+Hallo Herr Stopfer,<div><br></div><div>das wäre eine Frage für die ETG. Für interne Geräte spielt es wahrscheinlich keine Rolle. Ersetzt eine Variante die Andere ist es für mich eher eine Revision. Ansonsten wenn die Funktionalität grundsätzlich anders ist, ist es ein Produkt.</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, July 15, 2024 at 7:28:22 AM, Andreas Stopfer wrote:<br><br><div>Hallo EC Support,</div>
+<div>ich suche gerade den Unterschied von Product code vs. Revision Code.</div>
+<div>D.h. wann nehme ich was.</div>
+<div>Konkret habe ich einen Slave, der je nach Einstellung verschiedene Prozessabbilder haben kann.</div>
+<div> </div>
+<div>Bedeutet ein neues Prozessabbild einen neuen Produktcode oder eine neue Revision?</div>
+<div> </div>
+<div>Die ETG-Dokumente geben hier wenig konkrete Aussagen.</div>
+<div>Wie handhaben Sie diese Problematik?</div>
+<div> </div>
+<div>Danke</div>
+<div> </div>
+<div>Andreas Stopfer</div>
+<p><span>______________________________________________________________<br>
+<br> Krones AG<br> Vorstand: Christoph Klenk, Vorstandsvorsitzender,<br> Uta Anders, Thomas Ricker, Markus Tischer, Ralf Goldbrunner<br> Vorsitzender des Aufsichtsrats: Volker Kronseder<br> Registergericht: Regensburg HRB 23 44, Umsatzsteuer-ID-Nummer: DE 133 695 999<br>
+<span class="js-signatureMarker"></span><br> ______________________________________________________________<br>
+<br> Der Inhalt dieser E-Mail und jeder Anhang ist vertraulich.<br> Diese Inhalte sind nur fuer die benannten Adressaten. <br> Wenn Sie diese E-Mail durch einen Fehler erhalten haben,<br> benachrichtigen Sie sofort Ihren Administrator oder den Absender.<br> Behandeln Sie die E-Mail vertraulich.<br>
+<br> * Diese E-Mail wurde auf Viren und gefaehrlichen Inhalt geprueft. *<br>
+<br> ______________________________________________________________<br>
+<br> The contents of this email and any attachments are confidential.<br> They are intended for the named recipient(s) only.<br> If you have received this email in error please notify the system manager<br> or the sender immediately and do not disclose the contents to anyone or<br> make copies.<br>
+<br> * This e-Mail was scanned for viruses, vandals and malicious content. *</span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,218 @@
+### HEADER
+Id=1983
+Link=http://at-zammad/#ticket/zoom/1983
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=701983
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=03.12.2021 20:07:46 +00:00
+UpdatedAt=07.12.2021 19:44:50 +00:00
+CloseAt=07.12.2021 19:20:55 +00:00
+ArticlesCount=4
+
+### TITLE
+Notification of software updates
+
+### ARTICLE00_HEADER
+Id=10443
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.12.2021 20:07:46 +00:00
+UpdatedAt=03.12.2021 20:07:48 +00:00
+
+### ARTICLE00_SUBJECT
+Notification of software updates
+
+### ARTICLE00_BODY
+<div>
+<p>Is there any way that we can get notified of software updates to EC-Engineer OEM SDK and EC-Master SDK going forward?</p>
+<p> </p>
+<p>I think we have the most current version of EC-Engineer OEM SDK (V3.6.2) , but I know that we are at least 4 patches behind on EC-Master (V3.1.2.06).</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=10446
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=03.12.2021 20:44:15 +00:00
+UpdatedAt=03.12.2021 20:44:15 +00:00
+
+### ARTICLE01_BODY
+I will handle this.<br>
+
+### ARTICLE02_HEADER
+Id=10620
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.12.2021 19:20:55 +00:00
+UpdatedAt=07.12.2021 19:20:59 +00:00
+
+### ARTICLE02_SUBJECT
+Notification of software updates
+
+### ARTICLE02_BODY
+<div>Hi Quinton,</div><div><br></div><div>We do not have a formal notification system for every build release. Typically customers are not interested in every minor build release, and we do not even create the release for all platforms for each minor build.</div><div><br></div><div>The typical way we handle notifications to customers about new software versions is during our newsletter which is a few times a year: <div>
+<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> (I think you are already signed up). Based on this newsletter information, or perhaps the customer is already engaged in a technical support inquiry, the customer would get a new version if they wanted it.<br>
+</div>
+</div><div><br></div><div>Of course customers can request a software update any time from us via this form: <a href="https://developer.acontis.com/ethercat-latest-versions.html" title="https://developer.acontis.com/ethercat-latest-versions.html" rel="nofollow noreferrer noopener" target="_blank">https://developer.acontis.com/ethercat-latest-versions.html</a>
+</div><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Jon Waters </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies Inc.</div></div>
+<div>Address: <span>945 Concord Street, Framingham, MA 01701, United States</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+1-508-809-7200</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Friday, December 3, 2021, 3:07:46 PM, Quinton Tormanen wrote:<br><br><div>
+<p>Is there any way that we can get notified of software updates to EC-Engineer OEM SDK and EC-Master SDK going forward?</p>
+<p> </p>
+<p>I think we have the most current version of EC-Engineer OEM SDK (V3.6.2) , but I know that we are at least 4 patches behind on EC-Master (V3.1.2.06).</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE03_HEADER
+Id=10622
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.12.2021 19:30:39 +00:00
+UpdatedAt=07.12.2021 19:30:39 +00:00
+
+### ARTICLE03_SUBJECT
+RE: Notification of software updates [Ticket#701983]
+
+### ARTICLE03_BODY
+<div>
+<p>Thank you, Jon. I wasn’t aware of the software request form. Let’s chat briefly so that I understand a little more about the significance of minor releases, as I suggested in #701984. I’ll look at using the software update request form going forward.</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p>--Quinton</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Jon Waters via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Tuesday, December 7, 2021 11:21 AM<br>
+<b>To:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: Notification of software updates [Ticket#701983]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Hi Quinton,</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>We do not have a formal notification system for every build release. Typically customers are not interested in every minor build release, and we do not even create the release for all platforms for each minor build.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>The typical way we handle notifications to customers about new software versions is during our newsletter which is a few times a year:</p>
+<div>
+<p><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> (I think you are already signed up). Based on this newsletter information, or perhaps the customer is already engaged in a technical support inquiry, the customer would get a new version if they wanted it.</p>
+</div>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Of course customers can request a software update any time from us via this form: <a href="https://developer.acontis.com/ethercat-latest-versions.html" title="https://developer.acontis.com/ethercat-latest-versions.html" rel="nofollow noreferrer noopener" target="_blank"> https://developer.acontis.com/ethercat-latest-versions.html</a> </p>
+</div>
+<div>
+<div>
+<p>____________________________________________________________________________</p>
+</div>
+<div>
+<p>Jon Waters</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>acontis technologies Inc.</p>
+</div>
+</div>
+<div>
+<p>Address: 945 Concord Street, Framingham, MA 01701, United States</p>
+</div>
+<div>
+<p>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com</a> </p>
+</div>
+<div>
+<p>Phone: +1-508-809-7200</p>
+</div>
+<div>
+<p>eMail: ecsupport@acontis.com</p>
+</div>
+<div>
+<p>----------------------------------------------------------------------------</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</p>
+</div>
+<div>
+<p><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Friday, December 3, 2021, 3:07:46 PM, Quinton Tormanen wrote:</p>
+<p></p>
+<div>
+<p>Is there any way that we can get notified of software updates to EC-Engineer OEM SDK and EC-Master SDK going forward?</p>
+<p> </p>
+<p>I think we have the most current version of EC-Engineer OEM SDK (V3.6.2) , but I know that we are at least 4 patches behind on EC-Master (V3.1.2.06).</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>

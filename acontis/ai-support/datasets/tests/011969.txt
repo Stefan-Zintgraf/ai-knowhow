@@ -1,0 +1,103 @@
+### HEADER
+Id=11969
+Link=http://at-zammad/#ticket/zoom/11969
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ABB E-mobility (ID=701, Number=0, Country=IT)
+Commission=none
+Number=7011969
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=silvio.scaletti@it.abb.com (ID=2938, FirstName=Silvio, LastName=Scaletti)
+CreatedBy=silvio.scaletti@it.abb.com (ID=2938, FirstName=Silvio, LastName=Scaletti)
+Type=
+TimeUnit=
+CreatedAt=27.11.2025 11:01:04 +00:00
+UpdatedAt=28.11.2025 07:32:51 +00:00
+CloseAt=28.11.2025 07:32:51 +00:00
+ArticlesCount=1
+
+### TITLE
+EtherCAT Master Licenses
+
+### ARTICLE00_HEADER
+Id=69054
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.11.2025 11:01:04 +00:00
+UpdatedAt=27.11.2025 11:01:04 +00:00
+
+### ARTICLE00_SUBJECT
+EtherCAT Master Licenses
+
+### ARTICLE00_BODY
+<div>Hello Christoph, Cyril,</div><div> </div><div>While it is still ongoing the development activity on the new Ti Sitara processor + FreeRTOS, we are still using in our test setups the "old" solution with the Imx.93 + Linux and the free licenses we got for it are now all in use.<br> For these reasons I'm asking you for:<br>
+<br>
+</div><div> </div><ul>
+<li>
+<div>A quote for an additional bunch of 10 Linux based licenses to be used in the test setup (to be clear: the final product WILL NOT USE it).</div>
+</li>
+<li>
+<div>A quote for a first bunch of 10 licenses to run on the TI Sitara Processor + freeRTOS</div>
+</li>
+<li>
+<div>A per pcs updated quote/plan for the final release on the field, that is supposed to start 2<sup>nd</sup> half next year.</div>
+</li>
+</ul>
+<div>
+<br> Thanks in advance<br> BR<br> Silvio</div><div> </div><hr>
+<div dir="ltr">
+<b>From:</b> Christoph Widmann &lt;c.widmann@acontis.com&gt;<br>
+<b>Sent:</b> Wednesday, March 26, 2025 5:01 PM<br>
+<b>To:</b> Silvio Scaletti &lt;silvio.scaletti@it.abb.com&gt;<br>
+<b>Cc:</b> Dario Giannelli &lt;dario.giannelli@it.abb.com&gt;; Giulia Andreini &lt;giulia.andreini@it.abb.com&gt;<br>
+<b>Subject:</b> EtherCAT Master Licenses for testing <div> </div>
+</div><div lang="DE">
+<div>
+<table border="0" cellspacing="0" cellpadding="0" style="width:100.0%; border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="width:7.5pt; border:none; background:#ff000f; padding:3.0pt 3.0pt 3.0pt 3.0pt;">
+<b>BeSecure!</b>
+</td>
+<td style="border:none; background:red; padding:3.0pt 3.0pt 3.0pt 3.0pt;"><span>This email comes from outside of ABB. Make sure you <b>verify the sender</b> before clicking any links or downloading/opening attachments. <br> If this email looks suspicious, <b>report it</b> by clicking 'Report Phishing' button in Outlook or raising a ticket on MyIS. </span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+<div>
+<div>
+<p><span style="color:#1f497d;">Hi Silvio,</span></p>
+<p><span style="color:#1f497d;"> </span></p>
+<p><span lang="EN-US" style="color:#1f497d;">I created a new email thread for this topic.</span></p>
+<p><span lang="EN-US" style="color:#1f497d;">For sure we can up to 5 license keys to enable the full functionality.</span></p>
+<p><span lang="EN-US" style="color:#1f497d;"> </span></p>
+<p><span lang="EN-US" style="color:#1f497d;">Please provide us the fingerprint of the controller as described here:</span></p>
+<p><span lang="EN-US" style="color:#1f497d;"><a href="https://urldefense.com/v3/__https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html*licensing-procedure-for-development-licenses__;Iw!!NLW3fF9v!KBNiTgckJiP8QYO-qA7ynItjd2h5uWjmEcoS8ndjU1LXJN5192rd3YxW_GCdYZCOmP2V0qFq4BszsN_pW_8PIPnJ$" rel="nofollow noreferrer noopener" title="https://urldefense.com/v3/__https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html*licensing-procedure-for-development-licenses__;Iw!!NLW3fF9v!KBNiTgckJiP8QYO-qA7ynItjd2h5uWjmEcoS8ndjU1LXJN5192rd3YxW_GCdYZCOmP2V0qFq4BszsN_pW_8PIPnJ$" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/intro.html#licensing-procedure-for-development-licenses</a></span></p>
+<p><span lang="EN-US" style="color:#1f497d;"></span></p>
+<p><span lang="EN-US" style="color:#1f497d;">Best Regards</span></p>
+<p><span lang="EN-US" style="color:#1f497d;"> </span></p>
+<p><span lang="EN-US" style="color:#1f497d;">Christoph</span></p>
+<p><span lang="EN-US" style="color:#1f497d;"> </span></p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b><span> Silvio Scaletti &lt;silvio.scaletti@it.abb.com&gt; <br>
+<b>Gesendet:</b> Mittwoch, 26. März 2025 15:26<br>
+<b>An:</b> Christoph Widmann &lt;c.widmann@acontis.com&gt;<br>
+<b>Cc:</b> Dario Giannelli &lt;dario.giannelli@it.abb.com&gt;; Giulia Andreini &lt;giulia.andreini@it.abb.com&gt;<br>
+<b>Betreff:</b> RE: EtherCAT Software Licensing</span></p>
+</div>
+</div>
+<p> </p>
+<p><span lang="EN-US">Hi Christoph,</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Let me add the fact that all of the steps described below, which we are trying to do as quick as possible, will probably take some days.</span></p>
+<p><span lang="EN-US">This is getting us into some troubles with the test we are going to start in our factory in China next week, and we are still forced to go on using the 1h temporary license. Is there any chance to get at least 2 licenses having a bit of time extension?</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Again, thanks for your support</span></p>
+<p><span lang="EN-US">Regards<br> Silvio</span></p>
+</div>
+</div>
+</div><br> Il Gruppo ABB in Italia ha adottato il Modello Organizzativo ai sensi del D.Lgs. 231/2001, in forza del quale l'assunzione di obbligazioni da parte di societa' ABB avviene a firma congiunta di due procuratori muniti di idonei poteri. Le informazioni contenute in questo messaggio di posta elettronica sono riservate e confidenziali e ne e' vietata la diffusione in qualunque modo eseguita. Qualora Lei non fosse la persona cui il presente messaggio e' destinato, e' invitata a non diffonderlo, e ad eliminarlo, dandone gentilmente comunicazione al mittente.<br> ABB Group in Italy adopts a Compliance Programme under the Italian Law (D.Lgs.231/2001). According to this ABB Compliance Programme, any commitment of ABB Italian Companies is taken by the double signature of ABB Representatives granted by a proper Power of Attorney. The information included in this e-mail and any attachments are confidential and may also be privileged. If you are not the correct recipient, you are kindly requested to notify the sender immediately, to cancel it and not to disclose the contents to any other person.

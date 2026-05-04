@@ -1,0 +1,175 @@
+### HEADER
+Id=9990
+Link=http://at-zammad/#ticket/zoom/9990
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=The Mathworks, Simulink Real-Time (ID=463, Number=463)
+Number=709990
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=19.02.2025 22:28:36 +00:00
+UpdatedAt=24.02.2025 17:54:53 +00:00
+CloseAt=24.02.2025 17:54:53 +00:00
+ArticlesCount=4
+
+### TITLE
+Fwd: Optimized driver for Intel i210 Ethernet driver in ARM
+
+### ARTICLE00_HEADER
+Id=57103
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.02.2025 22:28:36 +00:00
+UpdatedAt=19.02.2025 22:28:36 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Optimized driver for Intel i210 Ethernet driver in ARM
+
+### ARTICLE00_BODY
+<div>Hi,</div><div> </div>I’m having a hard time interpreting these scope captures to understand what they are observing that is “more costly”. Of course, I would expect better performance using our optimized driver compared to the raw socket driver, but can you confirm the results he is seeing here are as expected?<br><div>
+<br>/Jon </div><div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>Marlon Trujillo &lt;mtrujill@mathworks.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>RE: Optimized driver for Intel i210 Ethernet driver in ARM</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>February 19, 2025 at 2:20:19 PM EST<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<br><div>
+<div>Hi Jon,</div>
+<div><p> </p></div>
+<div>Thanks once more for your responses. I'm currently assessing a few things and awaiting the arrival of an ARM board to test this optimized driver. Additionally, I'm conducting benchmarks on the Linux EcMaster. Regarding this, I've noticed that when using the raw driver in Linux, the call to emSetMasterState is considerably more costly compared to QNX, which utilizes the optimized driver. Please see the difference below:</div>
+<div><p> </p></div>
+<table border="1" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: medium;"><tbody>
+<tr>
+<td valign="top" style=" border: 1pt solid windowtext; padding: 0in 5.4pt;"><div>Linux</div></td>
+<td valign="top" style=" border-style: solid solid solid none; padding: 0in 5.4pt;"><div>QNX</div></td>
+</tr>
+<tr>
+<td valign="top" style=" border-style: none solid solid; padding: 0in 5.4pt;"><div>
+<img style="max-width:100%;width: 6.3645in;max-height: 9.7187in;max-height:933px;" alt="image001.png" src="/api/v1/ticket_attachment/9990/57103/237223?view=inline">
+</div></td>
+<td valign="top" style=" border-style: none solid solid none; padding: 0in 5.4pt;"><div>
+<img style="max-width:100%;width: 7.6354in;max-height: 9.7916in;max-height:940px;" alt="image002.png" src="/api/v1/ticket_attachment/9990/57103/237224?view=inline">
+</div></td>
+</tr>
+</tbody></table>
+<div><p> </p></div>
+<div><p> </p></div>
+<div>Can you please confirm you have seen this? Can you please send me an evaluation of the optimized driver for Linux (we use the same hardware than in QNX: IntelGbe-V3.2.1.01)</div>
+<div><p> </p></div>
+<div>Thank you.</div>
+<div>Marlon Trujillo (Dev @ Simulink Real-Time)</div>
+<div><p> </p></div>
+<div>
+<b>From:</b><span> Jon Waters &lt;<a href="mailto:j.waters@acontis.com">j.waters@acontis.com</a>&gt;<br><b>Sent:</b> Tuesday, January 14, 2025 10:15 PM<br><b>To:</b> Marlon Trujillo &lt;<a href="mailto:mtrujill@mathworks.com">mtrujill@mathworks.com</a>&gt;<br><b>Subject:</b> Re: Optimized driver for Intel i210 Ethernet driver in ARM</span>
+</div>
+<div><p> </p></div>
+<div>
+<div>Hi Marlon,</div>
+<div><p> </p></div>
+<div>Here is the quote, and here is the eval: <a href="https://downloads.acontis.com/2025/M-O/Mathworks_(40135)(US)/EC-Master_Linux_ARM_64Bit/3.2.1.02/EC-Master-IntelGbe-V3.2.1.02-Linux-ARM_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/M-O/Mathworks_(40135)(US)/EC-Master_Linux_ARM_64Bit/3.2.1.02/EC-Master-IntelGbe-V3.2.1.02-Linux-ARM_64Bit-SDK_Protected.tar.gz</a>
+</div>
+<div>
+<div>
+<br><span>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201</span>
+</div>
+<div>
+<div> </div>
+<blockquote>
+<div>On Jan 13, 2025, at 9:29 PM, Marlon Trujillo &lt;<a href="mailto:mtrujill@mathworks.com">mtrujill@mathworks.com</a>&gt; wrote:</div>
+<div><p> </p></div>
+<div>
+<div>Hi Jon,</div>
+<div> </div>
+<div>Yes please, send me a quote. Also, is there a chance I can test it in the meantime?</div>
+<div> </div>
+<div>Thank you</div>
+<div> </div>
+<div>Marlon Trujillo (Dev @ Simulink Real-Time)</div>
+<div> </div>
+<div>
+<b>From:</b> Jon Waters &lt;<a href="mailto:j.waters@acontis.com"><span style=" color: rgb(70, 120, 134);">j.waters@acontis.com</span></a><span>&gt;<br><b>Sent:</b> Monday, January 13, 2025 4:50 PM<br><b>To:</b> Marlon Trujillo &lt;</span><a href="mailto:mtrujill@mathworks.com"><span style=" color: rgb(70, 120, 134);">mtrujill@mathworks.com</span></a><span>&gt;<br><b>Subject:</b> Re: Optimized driver for Intel i210 Ethernet driver in ARM</span>
+</div>
+<div> </div>
+<div>Hi Marlon,</div>
+<div> </div>
+<div>
+<div>Yes, we have an optimized driver for Intel i210 running under Linux on ARM for V3.1. It has the same functionality as under QNX, but the driver is a different product/component due to the OS difference and, therefore, requires a license order for it. Do you want me to prepare a quote for you?</div>
+<div>
+<br><span>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201</span>
+</div>
+<div>
+<div>
+<p> </p>
+</div>
+<blockquote>
+<div>On Jan 13, 2025, at 4:34 PM, Marlon Trujillo &lt;<a href="mailto:mtrujill@mathworks.com"><span style="color: rgb(70, 120, 134);">mtrujill@mathworks.com</span></a>&gt; wrote:</div>
+<div> </div>
+<div>
+<div>Hi Jon,</div>
+<div> </div>
+<div>As you may recall, we're currently utilizing raw sockets for our licensed Linux ARM EC-Master library. We've recently received confirmation that we'll be integrating an Intel i210 Ethernet port into our ARM boards. I would like to confirm whether Acontis provides an optimized driver for the Intel i210.</div>
+<div> </div>
+<div>According to Acontis' EC-Master 3.1 documentation, the Intel i210 is among the supported PCI devices for the Intel Pro/1000 Link Layer. Could you please confirm this compatibility? Is it the same driver we are using for QNX?</div>
+<div> </div>
+<div>Marlon Trujillo (Dev @ Simulink Real-Time)</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+
+### ARTICLE01_HEADER
+Id=57127
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=20.02.2025 08:09:51 +00:00
+UpdatedAt=20.02.2025 08:09:51 +00:00
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>I think Marlon was happy to share some diagrams :)</div><div><br></div><div>1) State: I don't see any difference, this is the state of the slaves during <span>emSetMasterState()</span>
+</div><div>2) Slave Diff: It looks like some DC related curve. With sockraw the curve is not smooth and doesn't really get in SYNC after reaching PREOP.</div><div>3) Task Duration: Here is for me the only real benefit: There is a factor 10 between QNX and sockraw.</div><div><br></div><div>I think that Marlon see more CPU load with sockraw in the "3) Task Duration" diagram during the call to emSetMasterState() 1) State. In anyway, using the optimized linklayer is the best choice, getting closer to the QNX behavior.</div><div><br></div><div>Best Regards,</div><div>Cyril</div>
+
+### ARTICLE02_HEADER
+Id=57181
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=20.02.2025 16:13:49 +00:00
+UpdatedAt=20.02.2025 16:13:49 +00:00
+
+### ARTICLE02_BODY
+What in the task duration graph indicates the factor of 10 difference? Is the X axis time? It seems the width of that initial measurement is nearly the same, around 0.5 on the X axis. I don't doubt there is the factor of 10 difference between optimized and regular Linux driver, I just am trying to see it in the graphs.
+
+### ARTICLE03_HEADER
+Id=57212
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=21.02.2025 08:01:04 +00:00
+UpdatedAt=21.02.2025 08:01:04 +00:00
+
+### ARTICLE03_BODY
+No this is the Y axis: 0.00005 vs 1.6E-5 But yesterday I saw 0.0005. sorry for this :) It is only factor 3.

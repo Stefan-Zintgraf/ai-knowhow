@@ -1,0 +1,10 @@
+# Team override for bmad-quick-dev (merges with skill `customize.toml`).
+# Arrays append: base `persistent_facts` (e.g. project-context glob) stay; these add on.
+
+[workflow]
+
+persistent_facts = [
+  "MVP1 RAG work: PRD lives at _bmad-output/implementation-artifacts/support_rag_mvp1_prd.md. Follow mvp1-prd-automation-first-gap-table.md: everything automatable must be tested; refresh mvp1-prd-to-automated-tests-gap-table.md when a row moves from gap to covered.",
+  "file:{project-root}/_bmad-output/implementation-artifacts/mvp1-prd-automation-first-gap-table.md",
+  "file:{project-root}/_bmad-output/implementation-artifacts/mvp1-prd-to-automated-tests-gap-table.md",
+]

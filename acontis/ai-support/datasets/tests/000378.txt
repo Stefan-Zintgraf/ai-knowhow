@@ -1,0 +1,236 @@
+### HEADER
+Id=378
+Link=http://at-zammad/#ticket/zoom/378
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=JSLT, Generic (ID=477, Number=477)
+Number=700378
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=09.04.2021 05:15:12 +00:00
+UpdatedAt=12.12.2023 13:52:33 +00:00
+CloseAt=09.04.2021 07:17:05 +00:00
+ArticlesCount=4
+
+### TITLE
+Question About EC-Master(Intel)
+
+### ARTICLE00_HEADER
+Id=1896
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=09.04.2021 05:15:12 +00:00
+UpdatedAt=09.04.2021 05:15:15 +00:00
+
+### ARTICLE00_SUBJECT
+Question About EC-Master(Intel)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question About EC-Master(Intel)
+
+Does EC-Master support the following NICs?
+
+"Intel i225"
+
+Best regards,
+Takuya Fujikawa
+
+
+
+### ARTICLE01_HEADER
+Id=1904
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.04.2021 07:17:06 +00:00
+UpdatedAt=09.04.2021 07:17:09 +00:00
+
+### ARTICLE01_SUBJECT
+Question About EC-Master(Intel)
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>yes, we test here explicitly the device ID 0x15F2 and it is included in EC-Master V3.1</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, April 9, 2021, 7:15:12 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question About EC-Master(Intel)</div>
+<div><br></div>
+<div>Does EC-Master support the following NICs?</div>
+<div><br></div>
+<div>"Intel i225"</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=1960
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=12.04.2021 00:13:53 +00:00
+UpdatedAt=12.04.2021 00:13:53 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question About EC-Master(Intel) [Ticket#700378]
+
+### ARTICLE02_BODY
+Dear Cyril san
+
+Does the latest version of EC-Master also support the following devices?
+
+i225-V (DeviceID 0x15F3)
+
+Best regards,
+Takuya Fujikawa
+
+
+
+
+On 2021/04/09 16:17, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+> 
+> yes, we test here explicitly the device ID 0x15F2 and it is included in EC-Master V3.1
+> 
+> Best Regards,
+> Cyril
+> 
+> ____________________________________________________________________________
+> Cyril Eyssautier
+> EtherCAT Support
+> acontis technologies GmbH
+> Address: Gartenstraße 46, D-88212 Ravensburg, Germany
+> Http: https://www.acontis.com <https://www.acontis.com>
+> Phone: +49 (751) 56030-30
+> eMail: ecsupport@acontis.com
+> ----------------------------------------------------------------------------
+> Subscribe to our newsletter and stay updated on the latest developments and upcoming events.
+> https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> ----------------------------------------------------------------------------
+> Eingetragene Rechtsform: GmbH
+> Sitz der Gesellschaft: Ravensburg
+> Sitz und Registergericht: Amtsgericht Ulm, HRB 552320
+> Geschäftsführung: Christoph Widmann, Stefan Zintgraf
+> 
+> 
+>> On Friday, April 9, 2021, 7:15:12 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question About EC-Master(Intel)
+>>
+>> Does EC-Master support the following NICs?
+>>
+>> "Intel i225"
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+
+### ARTICLE03_HEADER
+Id=1973
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.04.2021 07:16:47 +00:00
+UpdatedAt=12.04.2021 07:16:48 +00:00
+
+### ARTICLE03_SUBJECT
+Question About EC-Master(Intel)
+
+### ARTICLE03_BODY
+<div>Hi Takuya,</div><div><br></div><div>No, we only add the device ID described previously. Do you need a test version containing this additional ID? If yes, please tell which OS, architecture and the potential customer.</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div><br></div><div><blockquote type="cite">On Monday, April 12, 2021, 2:13:53 AM, Takuya Fujikawa wrote:<br><br><div>Dear Cyril san</div>
+<div><br></div>
+<div>Does the latest version of EC-Master also support the following devices?</div>
+<div><br></div>
+<div>i225-V (DeviceID 0x15F3)</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2021/04/09 16:17, Cyril Eyssautier via EC-Support wrote:</div>
+<div>&gt; Hi Takuya,</div>
+<div>&gt;</div>
+<div>&gt; yes, we test here explicitly the device ID 0x15F2 and it is included in EC-Master V3.1</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; Cyril</div>
+<div>&gt;</div>
+<div>&gt; ____________________________________________________________________________</div>
+<div>&gt; Cyril Eyssautier</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; acontis technologies GmbH</div>
+<div>&gt; Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>&gt; Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>&gt;</div>
+<div>&gt; Phone: +49 (751) 56030-30</div>
+<div>&gt; eMail: ecsupport@acontis.com</div>
+<div>&gt; ----------------------------------------------------------------------------</div>
+<div>&gt; Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div>&gt; <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt; ----------------------------------------------------------------------------</div>
+<div>&gt; Eingetragene Rechtsform: GmbH</div>
+<div>&gt; Sitz der Gesellschaft: Ravensburg</div>
+<div>&gt; Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>&gt; Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Friday, April 9, 2021, 7:15:12 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question About EC-Master(Intel)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Does EC-Master support the following NICs?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; "Intel i225"</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div><div><br></div><br><br>

@@ -1,0 +1,127 @@
+### HEADER
+Id=6642
+Link=http://at-zammad/#ticket/zoom/6642
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ZF (ID=539, Number=0, Country=DE)
+Commission=ZF, PASU (ID=129, Number=129)
+Number=706642
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=daniel.blancoramos@zf.com (ID=2246, FirstName=Blanco, LastName=Ramos Daniel FRD IATIF2)
+CreatedBy=daniel.blancoramos@zf.com (ID=2246, FirstName=Blanco, LastName=Ramos Daniel FRD IATIF2)
+Type=
+TimeUnit=
+CreatedAt=24.10.2023 06:34:33 +00:00
+UpdatedAt=30.10.2023 07:25:14 +00:00
+CloseAt=30.10.2023 07:25:14 +00:00
+ArticlesCount=2
+
+### TITLE
+Lizenzproblem mit dem EC-Engineer
+
+### ARTICLE00_HEADER
+Id=35897
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.10.2023 06:34:33 +00:00
+UpdatedAt=24.10.2023 06:34:33 +00:00
+
+### ARTICLE00_SUBJECT
+Lizenzproblem mit dem EC-Engineer
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Herr Jebali,</p>
+<p> </p>
+<p>Ich bin Daniel Blanco, ich bin Arbeitskollege von Ivo und Matthias Ibold. Ich bin jetzt in das Thema Ethercat tätig.</p>
+<p>Ich brauche die Software EC-Engineer in habe auch einen Dongle leider es funktioniert nicht</p>
+<p> </p>
+<p>Irgendwie erkennt er nicht die Lizenz</p>
+<p><img style="max-width:100%;width:6.5729in;max-height:4.9375in;width:631px;max-height:474px;" src="/api/v1/ticket_attachment/6642/35897/150006?view=inline"></p>
+<p> </p>
+<p>Ich habe eine Lizenzaktualisierung mit dem CodeMeter erzeugt und anbei finden Sie die Datei Vielleich kann man das Helfen.</p>
+<p>Vielleicht haben Sie ein anderen Vorschlag, der das Problem fixen kann.</p>
+<p> </p>
+<p>Vielen Dank im Voraus.</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen/Kind regards<br> Daniel Blanco Ramos<br>
+<br> Industrial Software Projects/Industrielle Software Projekte (IATIF2)<b><br>
+<br> ZF Group</b><br> Prüfsysteme/Test Systems <br> ZF Friedrichshafen AG<br> Ehlersstraße 50, 88046 Friedrichshafen, Deutschland/Germany<br> Telefon/Phone: +49 7541 77-3677, Mobil/Cell phone: +49 151 26174561<br>
+<a href="mailto:daniel.blancoramos@zf.com"><span style="color:blue;">daniel.blancoramos@zf.com</span></a>
+</span><span><br>
+<br>
+</span><span>Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board: Dr. Heinrich Hiesinger<br> Vorstand/Board of Management: Dr. Holger Klein (Vorsitzender/CEO), Dr. Lea Corzilius, Dr. Martin Fischer, Michael Frick, Dr. Peter Laier, Stephan von Schuckmann<br> Sitz/Headquarters: Friedrichshafen<br> Handelsregistereintrag Amtsgericht Ulm HRB 630206/Trade register of the municipal court of Ulm HRB 630206<br>
+<br> Informationen zur Verarbeitung Ihrer Daten und zu Ihren Rechten erhalten Sie jederzeit in unseren Datenschutzhinweisen: <a href="https://www.zf.com/de/data-protection-notice" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">https://www.zf.com/de/data-protection-notice</span></a>
+<br> You can find information about how we process your data and your rights in our data protection notice: <a href="https://www.zf.com/en/data-protection-notice" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">https://www.zf.com/en/data-protection-notice</span></a>
+</span><span><br> ­ </span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=35916
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.10.2023 08:09:19 +00:00
+UpdatedAt=24.10.2023 08:09:22 +00:00
+
+### ARTICLE01_SUBJECT
+Lizenzproblem mit dem EC-Engineer
+
+### ARTICLE01_BODY
+Hallo Herr Blanco Ramos,<div><br></div><div>Sie haben noch die Eval Version installiert. Die läuft nicht mit Dongle. Sie brauchen die Dongle Version. Diese hat Ihr Kollege am 20.03. zugeschickt bekommen. Ich sende Ihnen hier noch die aktuelle:</div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/2023/V-Z/ZF_(40345)(DE)/EC-Engineer/3.8.4/EC-Engineer_Dongle_V3.8.4.zip" title="https://downloads.acontis.com/2023/V-Z/ZF_(40345)(DE)/EC-Engineer/3.8.4/EC-Engineer_Dongle_V3.8.4.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/V-Z/ZF_(40345)(DE)/EC-Engineer/3.8.4/EC-Engineer_Dongle_V3.8.4.zip</a></div>
+<div><br></div>
+<div>Viele Grüße</div>
+<div>Kai Feifel</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, October 24, 2023 at 8:34:33 AM, Blanco Ramos Daniel FRD IATIF2 wrote:<br><br><div>
+<p>Hallo Herr Jebali,</p>
+<p> </p>
+<p>Ich bin Daniel Blanco, ich bin Arbeitskollege von Ivo und Matthias Ibold. Ich bin jetzt in das Thema Ethercat tätig.</p>
+<p>Ich brauche die Software EC-Engineer in habe auch einen Dongle leider es funktioniert nicht</p>
+<p> </p>
+<p>Irgendwie erkennt er nicht die Lizenz</p>
+<p><img style="max-width:100%;max-width:100%;width:6.5729in;max-height:4.9375in;width:631px;max-height:474px;" src="/api/v1/ticket_attachment/6642/35916/150091?view=inline"></p>
+<p> </p>
+<p>Ich habe eine Lizenzaktualisierung mit dem CodeMeter erzeugt und anbei finden Sie die Datei Vielleich kann man das Helfen.</p>
+<p>Vielleicht haben Sie ein anderen Vorschlag, der das Problem fixen kann.</p>
+<p> </p>
+<p>Vielen Dank im Voraus.</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen/Kind regards<br> Daniel Blanco Ramos<br>
+<br> Industrial Software Projects/Industrielle Software Projekte (IATIF2)<b><br>
+<br> ZF Group</b><br> Prüfsysteme/Test Systems <br> ZF Friedrichshafen AG<br> Ehlersstraße 50, 88046 Friedrichshafen, Deutschland/Germany<br> Telefon/Phone: +49 7541 77-3677, Mobil/Cell phone: +49 151 26174561<br>
+<a href="mailto:daniel.blancoramos@zf.com"><span style="color:blue;">daniel.blancoramos@zf.com</span></a>
+</span><span><br>
+<br>
+</span><span>Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board: Dr. Heinrich Hiesinger<br> Vorstand/Board of Management: Dr. Holger Klein (Vorsitzender/CEO), Dr. Lea Corzilius, Dr. Martin Fischer, Michael Frick, Dr. Peter Laier, Stephan von Schuckmann<br> Sitz/Headquarters: Friedrichshafen<br> Handelsregistereintrag Amtsgericht Ulm HRB 630206/Trade register of the municipal court of Ulm HRB 630206<br>
+<br> Informationen zur Verarbeitung Ihrer Daten und zu Ihren Rechten erhalten Sie jederzeit in unseren Datenschutzhinweisen: <a href="https://www.zf.com/de/data-protection-notice" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">https://www.zf.com/de/data-protection-notice</span></a>
+<br> You can find information about how we process your data and your rights in our data protection notice: <a href="https://www.zf.com/en/data-protection-notice" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">https://www.zf.com/en/data-protection-notice</span></a>
+</span><span><br> ­ </span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

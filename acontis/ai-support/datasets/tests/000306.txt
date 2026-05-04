@@ -1,0 +1,183 @@
+### HEADER
+Id=306
+Link=http://at-zammad/#ticket/zoom/306
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Relativity Space (ID=385, Number=40410, Country=US)
+Commission=Relativity Space, Internal Controllers (ID=457, Number=457)
+Number=700306
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=jsridharan@relativityspace.com (ID=90, FirstName=Jay, LastName=Sridharan)
+CreatedBy=jsridharan@relativityspace.com (ID=90, FirstName=Jay, LastName=Sridharan)
+Type=
+TimeUnit=
+CreatedAt=26.03.2021 05:26:28 +00:00
+UpdatedAt=02.04.2021 06:09:02 +00:00
+CloseAt=02.04.2021 06:09:02 +00:00
+ArticlesCount=3
+
+### TITLE
+Slave Timeout in EC-Master
+
+### ARTICLE00_HEADER
+Id=1456
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.03.2021 05:26:28 +00:00
+UpdatedAt=26.03.2021 05:26:30 +00:00
+
+### ARTICLE00_SUBJECT
+Slave Timeout in EC-Master
+
+### ARTICLE00_BODY
+<div>Hi Paul!</div><div> </div><div>I have a question for you – an application I am building with the EC-Master stack will sometimes have a slow operation upon initialization and might miss a few cycles of the EC-Master lifecycle methods. During this time, I receive the following error from what I presume to be the watchdog timers on the EtherCAT Slaves. Is there a way to configure the watchdog timeout in EC-Master or in the ENI file?</div><div> </div><div>Notify EC_NOTIFY_STATUS_SLAVE_ERROR</div><div>ERROR: At least one slave in error status</div><div>Notify EC_NOTIFY_CYCCMD_WKC_ERROR(11, 0x10000000, 2, 8)</div><div>Cyclic command WKC error on LWR - Address: 0x10000000 - WKC act/set=2/8</div><div>CONTINUING</div><div>AEON1.P-MC: 170.626</div><div>Not all EtherCAT slave devices in operational state</div><div>Notify EC_NOTIFY_NOT_ALL_DEVICES_OPERATIONAL</div><div>Notify EC_NOTIFY_STATUS_SLAVE_ERROR</div><div>Notify EC_NOTIFY_CYCCMD_WKC_ERROR(11, 0x10000000, 2, 8)</div><div>Notify EC_NOTIFY_SLAVE_ERROR_STATUS_INFO(1003, 0x0014, 0x001B)</div><div>Slave error " Slave_1003 [EJ4008]</div><div>": - EtherCAT address=1003 - State &lt;SAFEOP ERROR&gt;(0x14), control status &lt;Sync manager watchdog&gt;(0x1b)</div><div>Notify EC_NOTIFY_SLAVE_ERROR_STATUS_INFO(1004, 0x0014, 0x001B)</div><div>Slave error " Slave_1004 [EJ4008]</div><div>": - EtherCAT address=1004 - State &lt;SAFEOP ERROR&gt;(0x14), control status &lt;Sync manager watchdog&gt;(0x1b)</div><div>Notify EC_NOTIFY_SLAVE_ERROR_STATUS_INFO(1005, 0x0014, 0x001B)</div><div>Slave error " Slave_1005 [EJ4008]</div><div>": - EtherCAT address=1005 - State &lt;SAFEOP ERROR&gt;(0x14), control status &lt;Sync manager watchdog&gt;(0x1b)</div><div>Notify EC_NOTIFY_SLAVE_ERROR_STATUS_INFO(1006, 0x0014, 0x001B)</div><div>Slave error " Slave_1006 [EJ4008]</div><div>": - EtherCAT address=1006 - State &lt;SAFEOP ERROR&gt;(0x14), control status &lt;Sync manager watchdog&gt;(0x1b)</div><div>Notify EC_NOTIFY_SLAVE_ERROR_STATUS_INFO(1007, 0x0014, 0x001B)</div><div>Slave error " Slave_1007 [EJ4008]</div><div>": - EtherCAT address=1007 - State &lt;SAFEOP ERROR&gt;(0x14), control status &lt;Sync manager watchdog&gt;(0x1b)</div><div>Notify EC_NOTIFY_SLAVE_ERROR_STATUS_INFO(1008, 0x0014, 0x001B)</div><div>Slave error " Slave_1008 [EJ4008]</div><div>": - EtherCAT address=1008 - State &lt;SAFEOP ERROR&gt;(0x14), control status &lt;Sync manager watchdog&gt;(0x1b)</div><div> </div><div>Thank you for the help!</div><div> </div><div>Jay Sridharan</div><div>Relativity Space</div><div> </div>
+
+### ARTICLE01_HEADER
+Id=1459
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.03.2021 07:08:06 +00:00
+UpdatedAt=26.03.2021 07:08:07 +00:00
+
+### ARTICLE01_SUBJECT
+Slave Timeout in EC-Master
+
+### ARTICLE01_BODY
+<div>Hi,</div><div><br></div><div>yes, you can configure the watchdog timeout values in the slave's "Advanced Options" tab in EC-Engineer.</div><div><br></div><div>If it is not configured as shown, below, the ESC defaults to 100ms:</div><div><br></div><div>
+<img style="max-width:100%;width: 525px;max-width: 100%;" src="/api/v1/ticket_attachment/306/1459/3839?view=inline"><br>
+</div><div><br></div><div>Setting it to "0" should disable it at the slave.</div><div><br></div>Best regards,<div>Paul<br><br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=1500
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.03.2021 16:22:37 +00:00
+UpdatedAt=26.03.2021 16:22:37 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Slave Timeout in EC-Master [Ticket#700306]
+
+### ARTICLE02_BODY
+<div>
+<p>Thank you, Paul!</p>
+<p>I will give this a try</p>
+<p> </p>
+<p>Jay</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Paul Bußmann via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Friday, March 26, 2021 12:08 AM<br>
+<b>To:</b> Jay Sridharan &lt;jsridharan@relativityspace.com&gt;<br>
+<b>Subject:</b> RE: Slave Timeout in EC-Master [Ticket#700306]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Hi,</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>yes, you can configure the watchdog timeout values in the slave's "Advanced Options" tab in EC-Engineer.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>If it is not configured as shown, below, the ESC defaults to 100ms:</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p><img style="max-width:100%;width:5.4666in;max-height:3.9833in;width:525px;max-height:382px;" src="/api/v1/ticket_attachment/306/1500/4027?view=inline"></p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Setting it to "0" should disable it at the slave.</p>
+</div>
+<div> <p> </p>
+</div>
+<p>Best regards,</p>
+<div>
+<p>Paul</p>
+<div>
+<div>
+<p>____________________________________________________________________________</p>
+</div>
+<div>
+<p>Paul Bußmann</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<p>acontis technologies GmbH</p>
+</div>
+<div>
+<p>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</p>
+</div>
+<div>
+<p>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com</a> </p>
+</div>
+<div>
+<p>Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>eMail: ecsupport@acontis.com</p>
+</div>
+<div>
+<p>----------------------------------------------------------------------------</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</p>
+</div>
+<div>
+<p><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+<div>
+<p>----------------------------------------------------------------------------</p>
+</div>
+<div>
+<p>Eingetragene Rechtsform: GmbH</p>
+</div>
+<div>
+<p>Sitz der Gesellschaft: Ravensburg</p>
+</div>
+<div>
+<p>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</p>
+</div>
+<div>
+<p>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</p>
+</div>
+</div>
+</div>
+</div>

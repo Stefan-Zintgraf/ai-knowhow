@@ -1,0 +1,92 @@
+### HEADER
+Id=1933
+Link=http://at-zammad/#ticket/zoom/1933
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Carl Zeiss SMT GmbH (ID=91, Number=40113, Country=DE)
+Commission=Carl Zeiss SMT, Mot.Serv.7+Mot.Cont.NG (ID=100, Number=100)
+Number=701933
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=steffen.issler@zeiss.com (ID=751, FirstName=Steffen, LastName=Issler)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=30.11.2021 12:29:59 +00:00
+UpdatedAt=25.04.2022 12:55:36 +00:00
+CloseAt=03.12.2021 07:00:28 +00:00
+ArticlesCount=2
+
+### TITLE
+Update Request from Carl Zeiss SMT GmbH
+
+### ARTICLE00_HEADER
+Id=10197
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.11.2021 12:29:59 +00:00
+UpdatedAt=30.11.2021 12:29:59 +00:00
+
+### ARTICLE00_SUBJECT
+Update Request from Carl Zeiss SMT GmbH
+
+### ARTICLE00_BODY
+<p>Dear Mr./Ms. Ißler,</p><p>thank you for your registration.<br><br></p><p>First Name: Steffen<br> Last Name: Ißler<br> Company: Carl Zeiss SMT GmbH<br> Country: Deutschland<br> City: Oberkochen<br> E-Mail: steffen.issler@zeiss.com<br> Request update for: EC-Master,EC-Engineer<br>Update Type: Major<br> Operating System: VxWorks<br> Operating Sys. Version: 7<br> Any Questions?: <br><br></p><p><img src="/api/v1/ticket_attachment/1933/10197/39485?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p>acontis technologies GmbH<br>Gartenstraße 46, 88212 Ravensburg/Germany<br> Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br> eMail: sales@acontis.comFollow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/1933/10197/39484?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></p>
+
+### ARTICLE01_HEADER
+Id=10224
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.11.2021 17:27:20 +00:00
+UpdatedAt=30.11.2021 17:27:21 +00:00
+
+### ARTICLE01_SUBJECT
+Update Request from Carl Zeiss SMT GmbH
+
+### ARTICLE01_BODY
+Hallo Herr Issler,<div><br></div><div>hier sind die angefragte Updates:</div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Master_VxWorks_PPC/3.1.2.10/EC-Master-ClassA-AddOn-V3.1.2.10-VxWorks70-PPC_32Bit-SDK_Source.zip" title="https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Master_VxWorks_PPC/3.1.2.10/EC-Master-ClassA-AddOn-V3.1.2.10-VxWorks70-PPC_32Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Master_VxWorks_PPC/3.1.2.10/EC-Master-ClassA-AddOn-V3.1.2.10-VxWorks70-PPC_32Bit-SDK_Source.zip</a></div>
+<div><a href="https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Master_VxWorks_PPC/3.1.2.10/EC-Master-V3.1.2.10-VxWorks70-PPC_32Bit-SDK_Source.zip" title="https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Master_VxWorks_PPC/3.1.2.10/EC-Master-V3.1.2.10-VxWorks70-PPC_32Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Master_VxWorks_PPC/3.1.2.10/EC-Master-V3.1.2.10-VxWorks70-PPC_32Bit-SDK_Source.zip</a></div>
+<div><a href="https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Engineer/3.6.2/EC-Engineer_Dongle_V3.6.2.zip" title="https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Engineer/3.6.2/EC-Engineer_Dongle_V3.6.2.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Engineer/3.6.2/EC-Engineer_Dongle_V3.6.2.zip</a></div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Master_VxWorks_x86/3.1.2.10/EC-Master-ClassA-AddOn-V3.1.2.10-VxWorks70-x86_32Bit-SDK_Source.zip" title="https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Master_VxWorks_x86/3.1.2.10/EC-Master-ClassA-AddOn-V3.1.2.10-VxWorks70-x86_32Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Master_VxWorks_x86/3.1.2.10/EC-Master-ClassA-AddOn-V3.1.2.10-VxWorks70-x86_32Bit-SDK_Source.zip</a></div>
+<div><a href="https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Master_VxWorks_x86/3.1.2.10/EC-Master-I8254x-V3.1.2.10-VxWorks70-x86_32Bit-SDK_Source.zip" title="https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Master_VxWorks_x86/3.1.2.10/EC-Master-I8254x-V3.1.2.10-VxWorks70-x86_32Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Master_VxWorks_x86/3.1.2.10/EC-Master-I8254x-V3.1.2.10-VxWorks70-x86_32Bit-SDK_Source.zip</a></div>
+<div><a href="https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Master_VxWorks_x86/3.1.2.10/EC-Master-V3.1.2.10-VxWorks70-x86_32Bit-SDK_Source.zip" title="https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Master_VxWorks_x86/3.1.2.10/EC-Master-V3.1.2.10-VxWorks70-x86_32Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Master_VxWorks_x86/3.1.2.10/EC-Master-V3.1.2.10-VxWorks70-x86_32Bit-SDK_Source.zip</a></div>
+<div><a href="https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Engineer/3.6.2/EC-Engineer_Dongle_V3.6.2.zip" title="https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Engineer/3.6.2/EC-Engineer_Dongle_V3.6.2.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/B-C/Carl_Zeiss_SMT_GmbH_(40113)(DE)/EC-Engineer/3.6.2/EC-Engineer_Dongle_V3.6.2.zip</a></div>
+<div><br></div>
+<div>Schöne Grüße,</div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, November 30, 2021, 1:29:59 PM, sales acontis wrote:<br><br><p>Dear Mr./Ms. Ißler,</p>
+<p>thank you for your registration.<br><br></p>
+<p>First Name: Steffen<br> Last Name: Ißler<br> Company: Carl Zeiss SMT GmbH<br> Country: Deutschland<br> City: Oberkochen<br> E-Mail: steffen.issler@zeiss.com<br> Request update for: EC-Master,EC-Engineer<br>Update Type: Major<br> Operating System: VxWorks<br> Operating Sys. Version: 7<br> Any Questions?: <br><br></p>
+<p><img src="/api/v1/ticket_attachment/1933/10224/39627?view=inline" alt="" style="max-width:100%;max-width:100%;width:163px;max-height:85px;"></p>
+<p>acontis technologies GmbH<br>Gartenstraße 46, 88212 Ravensburg/Germany<br> Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br> eMail: sales@acontis.comFollow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/1933/10224/39628?view=inline" style="max-width:100%;max-width:100%;width:22px;max-height:22px;"></a></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,131 @@
+### HEADER
+Id=10407
+Link=http://at-zammad/#ticket/zoom/10407
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vector Informatik GmbH (ID=167, Number=40366, Country=DE)
+Commission=Vector, CANoe (ID=189, Number=189)
+Number=7010407
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+CreatedBy=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+Type=
+TimeUnit=
+CreatedAt=15.04.2025 13:38:10 +00:00
+UpdatedAt=25.04.2025 06:28:46 +00:00
+CloseAt=25.04.2025 06:28:46 +00:00
+ArticlesCount=2
+
+### TITLE
+Treiber
+
+### ARTICLE00_HEADER
+Id=59652
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.04.2025 13:38:10 +00:00
+UpdatedAt=15.04.2025 13:38:12 +00:00
+
+### ARTICLE00_SUBJECT
+Treiber
+
+### ARTICLE00_BODY
+<div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>bei unseren Tests hat ein Kollege festgestellt, dass mit dem Intel Gigabit CT Desktop Adapter (mit Intel® 82574L Gigabit Ethernet Controller) SubDevice nicht funktioniert hat, MainDevice aber schon. Mit dem ECAT Treiber hat beides funktioniert.</p>
+<p> </p>
+<p>Mit dem Intel® Ethernet Network Adapter X710-TL war nur der NDIS-Treiber verwendbar.</p>
+<p> </p>
+<p>Wenn sie dies nicht so erwarten würden und weitere Informationen oder Log-Daten benötigen, dann lassen sie es mit wissen.</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Best regards,</p>
+<p> </p>
+<p><span lang="EN-US">Tobias Lange</span></p>
+<p><span lang="EN-US">-----------------------------------------------------</span></p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">PND10</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><b>Vector Informatik GmbH</b></p>
+<p>Besucheranschrift / Visitor address: Holderäckerstr. 36 | 70499 Stuttgart | Germany</p>
+<p>Tel.: +49 711 80670-4791</p>
+<p><span lang="EN-US"><a href="mailto:tobias.lange@vector.com"><span lang="DE" style="color:blue;">tobias.lange@vector.com</span></a></span></p>
+<p><span lang="EN-US"><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank"><span lang="DE" style="color:blue;">www.vector.com</span></a></span></p>
+<p> </p>
+<p>Sitz der Gesellschaft / Registered Office: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p>Handelsregister / Commercial Register: Amtsgericht Stuttgart | HRB 17317</p>
+<p>Geschäftsführer / Managing Directors: Dr. Thomas Beck, Dr. Matthias Traub</p>
+<span class="js-signatureMarker"></span><p>-----------------------------------------------------</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=59669
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.04.2025 16:08:31 +00:00
+UpdatedAt=15.04.2025 16:08:33 +00:00
+
+### ARTICLE01_SUBJECT
+Treiber
+
+### ARTICLE01_BODY
+Hallo Herr Lange,<div><br></div><div><div>X710 unterstützen wir nur mit emllNdis. Das ist richtig.</div></div><div><br></div><div>Ich gehe davon aus dass bei dem <span>82574L, emllNdis nicht geht aber emllIntelGbe dafür geht. Das könnte an den Promiscuous mode Einstellungen des Windows Treibers liegen.</span>
+</div><div><span>Es gibt dafür eine Beschreibung darüber in der Doku:</span></div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/emllndis.html?highlight=emllndis#emllndis--page-root" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/emllndis.html?highlight=emllndis#emllndis--page-root" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/emllndis.html?highlight=emllndis#emllndis--page-root</a></div></div><div><span><br></span></div><div><span>Sie könnten damit probieren.</span></div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, April 15, 2025 at 3:38:10 PM, Tobias Lange wrote:<br><br><div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>bei unseren Tests hat ein Kollege festgestellt, dass mit dem Intel Gigabit CT Desktop Adapter (mit Intel® 82574L Gigabit Ethernet Controller) SubDevice nicht funktioniert hat, MainDevice aber schon. Mit dem ECAT Treiber hat beides funktioniert.</p>
+<p> </p>
+<p>Mit dem Intel® Ethernet Network Adapter X710-TL war nur der NDIS-Treiber verwendbar.</p>
+<p> </p>
+<p>Wenn sie dies nicht so erwarten würden und weitere Informationen oder Log-Daten benötigen, dann lassen sie es mit wissen.</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Best regards,</p>
+<p> </p>
+<p><span lang="EN-US">Tobias Lange</span></p>
+<p><span lang="EN-US">-----------------------------------------------------</span></p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">PND10</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><b>Vector Informatik GmbH</b></p>
+<p>Besucheranschrift / Visitor address: Holderäckerstr. 36 | 70499 Stuttgart | Germany</p>
+<p>Tel.: +49 711 80670-4791</p>
+<p><span lang="EN-US"><a href="mailto:tobias.lange@vector.com"><span lang="DE" style="color:blue;">tobias.lange@vector.com</span></a></span></p>
+<p><span lang="EN-US"><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank"><span lang="DE" style="color:blue;">www.vector.com</span></a></span></p>
+<p> </p>
+<p>Sitz der Gesellschaft / Registered Office: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p>Handelsregister / Commercial Register: Amtsgericht Stuttgart | HRB 17317</p>
+<p>Geschäftsführer / Managing Directors: Dr. Thomas Beck, Dr. Matthias Traub</p>
+<span class="js-signatureMarker"></span><p>-----------------------------------------------------</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

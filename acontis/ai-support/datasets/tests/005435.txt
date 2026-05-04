@@ -1,0 +1,87 @@
+### HEADER
+Id=5435
+Link=http://at-zammad/#ticket/zoom/5435
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies GmbH (ID=399, Number=1000, Country=DE)
+Commission=Acontis, Generic (ID=590, Number=590)
+Number=705435
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+CreatedBy=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Type=
+TimeUnit=
+CreatedAt=20.04.2023 14:08:46 +00:00
+UpdatedAt=20.04.2023 14:09:04 +00:00
+CloseAt=20.04.2023 14:08:46 +00:00
+ArticlesCount=1
+
+### TITLE
+emllProxy für Trumpf
+
+### ARTICLE00_HEADER
+Id=28812
+ContentType=text/html
+Internal=False
+Type=phone
+CreatedAt=20.04.2023 14:08:46 +00:00
+UpdatedAt=20.04.2023 14:08:46 +00:00
+
+### ARTICLE00_BODY
+Hallo Christoph,<div><br></div><div>s. Mail unten wegen der Pakete, die ich an HOMAG geschickt habe.</div><div><br></div><div>Hier ein Beispiel für die Kommandozeile:</div><div><br></div><div>
+<div><b>EcSimulatorHilDemo (emllProxy TCP Server)</b></div>
+<div>EcSimulatorHilDemo -t 0 -f d:\test\eni.xml -proxy 1 0 <a href="http://0.0.0.0" title="http://0.0.0.0" rel="nofollow noreferrer noopener" target="_blank">0.0.0.0</a> 10001 <a href="http://0.0.0.0" title="http://0.0.0.0" rel="nofollow noreferrer noopener" target="_blank">0.0.0.0</a> 0</div>
+<div><br></div>
+<div><b>EcMasterDemo (emllProxy TCP Client)</b></div>
+<div>EcMasterDemo -t 1 -f d:\test\eni.xml -proxy 1 1 <a href="http://0.0.0.0" title="http://0.0.0.0" rel="nofollow noreferrer noopener" target="_blank">0.0.0.0</a> 0 <a href="http://127.0.0.1" title="http://127.0.0.1" rel="nofollow noreferrer noopener" target="_blank">127.0.0.1</a> 10001</div>
+</div><div><br></div><div>Viele Grüße</div><div>Paul</div><div>
+<br><div>---Begin forwarded message:---<br><br>
+</div>
+<div><blockquote type="cite">
+<div>Betreff: EtherCAT Simulation in der Cloud mit Virtuos<br>Datum: 07.03.2023 10:58<br>Von: Paul Bußmann<br>An: Kurt De Marco &lt;kurt.demarco@homag.com&gt;<br><br>
+</div>Hallo Kurt,<div><br></div>
+<div>
+<span>hier noch die zugehörigen Pakete zu Entwicklungszwecke mit ISG:</span><br>
+</div>
+<div><br></div>
+<div>
+<div><a href="http://Downloads.acontis.com/temp/pbn/2023/HOMAG_ISG_Simulator_Zammad_703426/2023-03-07/EC-Master-Proxy-V3.1.4.09-Linux-x86_32Bit-SDK_Unrestricted.tar.gz" title="http://Downloads.acontis.com/temp/pbn/2023/HOMAG_ISG_Simulator_Zammad_703426/2023-03-07/EC-Master-Proxy-V3.1.4.09-Linux-x86_32Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">http://Downloads.acontis.com/temp/pbn/2023/HOMAG_ISG_Simulator_Zammad_703426/2023-03-07/EC-Master-Proxy-V3.1.4.09-Linux-x86_32Bit-SDK_Unrestricted.tar.gz</a></div>
+<div><a href="http://Downloads.acontis.com/temp/pbn/2023/HOMAG_ISG_Simulator_Zammad_703426/2023-03-07/EC-Simulator-HiL-V3.1.4.09-Windows-x86_32Bit-SDK_Unrestricted.zip" title="http://Downloads.acontis.com/temp/pbn/2023/HOMAG_ISG_Simulator_Zammad_703426/2023-03-07/EC-Simulator-HiL-V3.1.4.09-Windows-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">http://Downloads.acontis.com/temp/pbn/2023/HOMAG_ISG_Simulator_Zammad_703426/2023-03-07/EC-Simulator-HiL-V3.1.4.09-Windows-x86_32Bit-SDK_Unrestricted.zip</a></div>
+<div><a href="http://Downloads.acontis.com/temp/pbn/2023/HOMAG_ISG_Simulator_Zammad_703426/2023-03-07/EC-Simulator-HiL-V3.1.4.09-Windows-x86_64Bit-SDK_Unrestricted.zip" title="http://Downloads.acontis.com/temp/pbn/2023/HOMAG_ISG_Simulator_Zammad_703426/2023-03-07/EC-Simulator-HiL-V3.1.4.09-Windows-x86_64Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">http://Downloads.acontis.com/temp/pbn/2023/HOMAG_ISG_Simulator_Zammad_703426/2023-03-07/EC-Simulator-HiL-V3.1.4.09-Windows-x86_64Bit-SDK_Unrestricted.zip</a></div>
+<div><a href="http://Downloads.acontis.com/temp/pbn/2023/HOMAG_ISG_Simulator_Zammad_703426/2023-03-07/EC-Simulator-Proxy-V3.1.4.09-Windows-x86_32Bit-SDK_Unrestricted.zip" title="http://Downloads.acontis.com/temp/pbn/2023/HOMAG_ISG_Simulator_Zammad_703426/2023-03-07/EC-Simulator-Proxy-V3.1.4.09-Windows-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">http://Downloads.acontis.com/temp/pbn/2023/HOMAG_ISG_Simulator_Zammad_703426/2023-03-07/EC-Simulator-Proxy-V3.1.4.09-Windows-x86_32Bit-SDK_Unrestricted.zip</a></div>
+<div><a href="http://Downloads.acontis.com/temp/pbn/2023/HOMAG_ISG_Simulator_Zammad_703426/2023-03-07/EC-Simulator-Proxy-V3.1.4.09-Windows-x86_64Bit-SDK_Unrestricted.zip" title="http://Downloads.acontis.com/temp/pbn/2023/HOMAG_ISG_Simulator_Zammad_703426/2023-03-07/EC-Simulator-Proxy-V3.1.4.09-Windows-x86_64Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">http://Downloads.acontis.com/temp/pbn/2023/HOMAG_ISG_Simulator_Zammad_703426/2023-03-07/EC-Simulator-Proxy-V3.1.4.09-Windows-x86_64Bit-SDK_Unrestricted.zip</a></div>
+</div>
+<div><br></div>
+<div>Sie passen zu dem heutigen EC-Master Update V3.1.4.09.<br>
+</div>
+<div><br></div>
+<div>Darin sollten alle Punkte umgesetzt sein, darunter:</div>
+<div><br></div>
+<div><div>- esSetSlaveAoeObjectTransferCallbacks(), um AoE Read, Write und ReadWrite <span>in der </span><span>Simulator Applikation</span><span> zu beantworten</span>
+</div></div>
+<div>- es<span>SetCoeObjectTransferCallbacks(..., </span><span>0xFFFF == wObjectIndex, ...), um CoE Transfer Callbacks bei einem Slave auch für unbekannte Objekte anzumelden.</span>
+</div>
+<div>
+<span>- </span><span>esSetSlaveSscApplication(...): </span><span>pfnEoeSettingInd, um EoE Settings vom Master in der </span><span>Simulator Applikation zu</span><span> empfangen</span>
+</div>
+<div>
+<span>- </span><span>esSetSlaveSscApplication(...): </span><span>pfnEoeReceive, </span><span>um Frames über EoE vom Master </span><span>in der </span><span>Simulator Applikation</span><span> zu empfangen</span>
+</div>
+<div>
+<span>- </span><span>esEoeSendFrame(...), um Frames über EoE von der Simulator Applikation an den Master zu schicken</span>
+</div>
+<div><br></div>
+<div>- emllProxy: Umstellung von UDP zu TCP</div>
+<div>- emllProxy: Link Layer wartet auf Rückkehr aller gesendeter Frames, wenn Master nach Frames fragt<br>
+</div>
+<div><br></div>
+<div>Viele Grüße</div>
+<div>Paul<br>
+<div>
+<br><br>
+</div>
+</div>
+</blockquote></div>
+<div><br></div>
+</div>

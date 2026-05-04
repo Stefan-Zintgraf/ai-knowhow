@@ -1,0 +1,127 @@
+### HEADER
+Id=8962
+Link=http://at-zammad/#ticket/zoom/8962
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=708962
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=30.09.2024 10:47:27 +00:00
+UpdatedAt=01.11.2024 07:09:53 +00:00
+CloseAt=01.11.2024 07:09:54 +00:00
+ArticlesCount=2
+
+### TITLE
+A question from Mitsubishi about DCM functionality, EC-Master (QNo.94)
+
+### ARTICLE00_HEADER
+Id=50761
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.09.2024 10:47:27 +00:00
+UpdatedAt=30.09.2024 10:47:30 +00:00
+
+### ARTICLE00_SUBJECT
+A question from Mitsubishi about DCM functionality, EC-Master (QNo.94)
+
+### ARTICLE00_BODY
+<div>Hi Support Team,</div><div> </div><div>This is a question from Mitsubishi (commission No.40627).</div><div>This question is about the functionality of DCM, EC-Master.</div><div>Please refer the following questions from Mitsubishi and answer it.</div><div> </div><div>===</div><div>[Objective]</div><div>When the DC synchronization and the DCM synchronization are enabled and the communication cycle is increased from 1 ms to 8 ms, it is desired to operate while maintaining the accuracy of the DC synchronization.</div><div> </div><div>[Question]</div><div>Is there an appropriate way to set up EC-Master (DCM setting) or any know-how?</div><div>Or, if the communication cycle is lengthened, will the accuracy inevitably decrease?</div><div> </div><div>[Example]</div><div>I want to set the threshold for window monitoring of DC synchronization to 2us.</div><div>The above accuracy was achieved when the communication period was 1 ms. (No error)</div><div>When the communication cycle was set to 8ms, the above could not be maintained and error occurred.</div><div>However, if the accuracy of DC synchronization is lowered (from 2us to 16us), it seems to be possible to avoid error.</div><div> </div><div>[Our understanding]</div><div>Our understanding is as follows:</div><div>With DC synchronization alone, there is a reasonable chance that accuracy (as above) can be maintained. (Depends on Slave H/W)</div><div>In the case of DC+DCM synchronization, there is a high possibility that the accuracy of DC synchronization will be degraded after the correction of the reference clock by the Master. (Depends on Slave H/W and Master operation)</div><div>===</div><div> </div><div>Best regards,</div><div>Yuichi</div><div> </div><div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=50782
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.09.2024 14:47:44 +00:00
+UpdatedAt=30.09.2024 14:47:45 +00:00
+
+### ARTICLE01_SUBJECT
+A question from Mitsubishi about DCM functionality, EC-Master (QNo.94)
+
+### ARTICLE01_BODY
+Hi Yuichi,<div><br></div><div><blockquote>
+<div>With DC synchronization alone, there is a reasonable chance that accuracy (as above) can be maintained. (Depends on Slave H/W)</div>
+<div>In the case of DC+DCM synchronization, there is a high possibility that the accuracy of DC synchronization will be degraded after the correction of the reference clock by the Master. (Depends on Slave H/W and Master operation)</div>
+</blockquote></div><div>Yes, the system time difference between the reference clock and the rest of the network can be impacted by the cycle time yes in case of BusShift.</div><div><br></div><div>The DC synchronization is triggered by write access to the 0x910 register. Running with 8ms means less access. We have a mechanism to add write access.</div><div><br></div><div>This can be controled with this parameter (set to EC_FALSE):</div><div>
+<span>EC_T_DC_CONFIGURE::</span><span style="color:rgba(0, 0, 0, 0.87);">bAcycDistributionDisabled</span><br>
+</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-a/dc_api.html?highlight=dcconfigure#_CPPv417EC_T_DC_CONFIGURE" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-a/dc_api.html?highlight=dcconfigure#_CPPv417EC_T_DC_CONFIGURE" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-a/dc_api.html?highlight=dcconfigure#_CPPv417EC_T_DC_CONFIGURE</a></div></div><div><br></div><div>Combined with more acyclic frames:</div><div>
+<span>EC_T_INIT_MASTER_PARMS::</span><span style="color:rgba(0, 0, 0, 0.87);">dwMaxAcycFramesQueued</span><br>
+</div><div><br></div><div>Using these parameters, EC-Master fills the unused acyclic bandwidth with frames distributing the system time. They can run a test by increasing <span>dwMaxAcycFramesQueued and check that </span><span>bAcycDistributionDisabled is EC_FALSE.</span>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, September 30, 2024 at 12:47:27 PM, Yuichi Ide wrote:<br><br><div>Hi Support Team,</div>
+<div> </div>
+<div>This is a question from Mitsubishi (commission No.40627).</div>
+<div>This question is about the functionality of DCM, EC-Master.</div>
+<div>Please refer the following questions from Mitsubishi and answer it.</div>
+<div> </div>
+<div>===</div>
+<div>[Objective]</div>
+<div>When the DC synchronization and the DCM synchronization are enabled and the communication cycle is increased from 1 ms to 8 ms, it is desired to operate while maintaining the accuracy of the DC synchronization.</div>
+<div> </div>
+<div>[Question]</div>
+<div>Is there an appropriate way to set up EC-Master (DCM setting) or any know-how?</div>
+<div>Or, if the communication cycle is lengthened, will the accuracy inevitably decrease?</div>
+<div> </div>
+<div>[Example]</div>
+<div>I want to set the threshold for window monitoring of DC synchronization to 2us.</div>
+<div>The above accuracy was achieved when the communication period was 1 ms. (No error)</div>
+<div>When the communication cycle was set to 8ms, the above could not be maintained and error occurred.</div>
+<div>However, if the accuracy of DC synchronization is lowered (from 2us to 16us), it seems to be possible to avoid error.</div>
+<div> </div>
+<div>[Our understanding]</div>
+<div>Our understanding is as follows:</div>
+<div>With DC synchronization alone, there is a reasonable chance that accuracy (as above) can be maintained. (Depends on Slave H/W)</div>
+<div>In the case of DC+DCM synchronization, there is a high possibility that the accuracy of DC synchronization will be degraded after the correction of the reference clock by the Master. (Depends on Slave H/W and Master operation)</div>
+<div>===</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

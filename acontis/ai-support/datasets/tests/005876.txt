@@ -1,0 +1,154 @@
+### HEADER
+Id=5876
+Link=http://at-zammad/#ticket/zoom/5876
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=EtherCAT Technology Group (ETG) (ID=432, Number=0, Country=DE)
+Commission=ETG, Generic (ID=509, Number=509)
+Number=705876
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=a.figini@ethercat.org (ID=243, FirstName=Alessandro, LastName=Figini)
+CreatedBy=a.figini@ethercat.org (ID=243, FirstName=Alessandro, LastName=Figini)
+Type=
+TimeUnit=
+CreatedAt=30.06.2023 12:25:04 +00:00
+UpdatedAt=07.07.2023 07:18:47 +00:00
+CloseAt=07.07.2023 07:18:47 +00:00
+ArticlesCount=2
+
+### TITLE
+Frage bezüglich der Einstellung der DCs
+
+### ARTICLE00_HEADER
+Id=31408
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.06.2023 12:25:04 +00:00
+UpdatedAt=30.06.2023 12:25:04 +00:00
+
+### ARTICLE00_SUBJECT
+Frage bezüglich der Einstellung der DCs
+
+### ARTICLE00_BODY
+<p> </p><div> <p>Hi Cyrill,</p>
+<p> </p>
+<p><span lang="DE">Wie geht’s? Ich hoffe du hattest eine gute Heimfahrt vom Plug fest :).</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Ich habe eine Supportfrage von einem Kunden bekommen, der ein Omron/PMAC System mit einer TwinCAT Steuerung über der Beckhoff Klemme EL6692 synchronisieren möchte und wollte mit dir ein paar Punkte klären (wenn du Zeit hast :)).</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<ol start="1" type="1"> <li><span lang="DE">Wann schickt der PMAC-Master die zyklischen EtherCAT Frames? Ich würde sagen am Ende der SPS_Task, aber vielleicht gibt es andere Auslöser…</span></li>
+</ol> <p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><img style="max-width:100%;width:3.4166in;max-height:2.9062in;width:328px;max-height:279px;" src="/api/v1/ticket_attachment/5876/31408/130677?view=inline"></span><span lang="DE"></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<ol start="2" type="1"> <li><span lang="DE">Ich sehe dass man im PMAC eine Shift für die SYNC Interrupts im Slave manuell eintragen kann, allergings habe ich keine „globale“ SYNC Shift im Master gefunden, die standardmäßig &gt; 0 ist (TwinCAT setzt z.B. diese globale SYNC Shift im Master == 30% der Zykluszeit). Hat trotzdem der PMAC-Master einen eigenen Default für die Shifts, oder soll der Anwender wirklich den ganzen Beitrag bei Bedarf in den einzelnen DC-Slaves manuell eintragen?</span></li>
+</ol> <p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><img style="max-width:100%;width:4.7604in;max-height:3.875in;width:457px;max-height:372px;" src="/api/v1/ticket_attachment/5876/31408/130676?view=inline"></span><span lang="DE"></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<ol start="3" type="1"> <li><span lang="DE">Weißt du, ob die Controller von Omron auch den „Master Shift“ oder nur den “Bus Shift“ Modus unterstützen?</span></li>
+</ol> <p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><img style="max-width:100%;width:4.1979in;max-height:1.2916in;width:403px;max-height:124px;" src="/api/v1/ticket_attachment/5876/31408/130675?view=inline"></span><span lang="DE"></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<ol start="4" type="1"> <li><span lang="DE">Kann man das Jitter der EtherCAT-Kommunikation im PMAC irgendwo überwachen/messen?</span></li>
+</ol> <p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Wenn es offene Dokumentation zu diesen Aspekten gibt, würde ich sie mir gerne durchlesen ;).</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Vielen Dank, und ich wünsche dir ein schönes WE!</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Viele Grüße</span></p>
+<p><span lang="DE">Alessandro</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=31410
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.06.2023 13:01:27 +00:00
+UpdatedAt=30.06.2023 13:01:30 +00:00
+
+### ARTICLE01_SUBJECT
+Frage bezüglich der Einstellung der DCs
+
+### ARTICLE01_BODY
+Hi Alessandro,<div><br></div><div>ja wir sind gut nach Hause gekommen. Danke!</div><div><br></div><div><span>1. Ob sie die Frames am Anfang oder am Ende der Task verschicken weiß ich leider nicht. Bei uns kannst du verschiedene Variante implementieren.</span></div><div><span><br></span></div><div><span>2. Im EC-Engineer, kann man diese globale "SYNC Shift" Einstellung nicht vornehmen, weil sie nicht Teil der ENI ist. Vielleicht kann man es in Sysmac Studio irgendwie ändern. Das solltest du Anthony fragen.</span></div><div><br></div><div>3. <span>Omron verwendet DCM </span><span>LinkLayerRefClock. Sie haben ein eigenen Treiber für den Netzwerkadapter und schreiben Ihre lokale Zeit auf dem Netzwerk. Das ist nicht geheim, im Wireshark sollte es ein BWR </span><span>anstatt APRMW </span><span>zu sehen sein. Ich denke nicht dass MasterShift oder BusShift freiwählbar sei... Aber in deinem Fall bräuchten Sie unter Umstände External Clock...</span>
+</div><div><span><br></span></div><div><span>4. Das ist auch eine Frage für Anthony...</span></div><div><span><br></span></div><div>
+<span>Ich befürchte die Fragen müssen an Anthony raus. </span><span>Ich kann die Fragen ihn gerne stellen (falls es für dich irgendwie ein Problem darstellen sollte)</span>
+</div><div><span><br></span></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2"><div><span>Cyril</span></div></div>
+<div><br></div>
+<div><blockquote type="cite">On Friday, June 30, 2023 at 2:25:04 PM, Alessandro Figini wrote:<br><br><p> </p>
+<div> <p>Hi Cyrill,</p>
+<p> </p>
+<p><span lang="DE">Wie geht’s? Ich hoffe du hattest eine gute Heimfahrt vom Plug fest :).</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Ich habe eine Supportfrage von einem Kunden bekommen, der ein Omron/PMAC System mit einer TwinCAT Steuerung über der Beckhoff Klemme EL6692 synchronisieren möchte und wollte mit dir ein paar Punkte klären (wenn du Zeit hast :)).</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<ol start="1" type="1"> <li><span lang="DE">Wann schickt der PMAC-Master die zyklischen EtherCAT Frames? Ich würde sagen am Ende der SPS_Task, aber vielleicht gibt es andere Auslöser…</span></li>
+</ol> <p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE"><img style="max-width:100%;max-width:100%;width:3.4166in;max-height:2.9062in;width:328px;max-height:279px;" src="/api/v1/ticket_attachment/5876/31410/130687?view=inline"></span><span lang="DE"></span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<ol start="2" type="1"> <li><span lang="DE">Ich sehe dass man im PMAC eine Shift für die SYNC Interrupts im Slave manuell eintragen kann, allergings habe ich keine „globale“ SYNC Shift im Master gefunden, die standardmäßig &gt; 0 ist (TwinCAT setzt z.B. diese globale SYNC Shift im Master == 30% der Zykluszeit). Hat trotzdem der PMAC-Master einen eigenen Default für die Shifts, oder soll der Anwender wirklich den ganzen Beitrag bei Bedarf in den einzelnen DC-Slaves manuell eintragen?</span></li>
+</ol> <p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE"><img style="max-width:100%;max-width:100%;width:4.7604in;max-height:3.875in;width:457px;max-height:372px;" src="/api/v1/ticket_attachment/5876/31410/130688?view=inline"></span><span lang="DE"></span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<ol start="3" type="1"> <li><span lang="DE">Weißt du, ob die Controller von Omron auch den „Master Shift“ oder nur den “Bus Shift“ Modus unterstützen?</span></li>
+</ol> <p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE"><img style="max-width:100%;max-width:100%;width:4.1979in;max-height:1.2916in;width:403px;max-height:124px;" src="/api/v1/ticket_attachment/5876/31410/130689?view=inline"></span><span lang="DE"></span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<ol start="4" type="1"> <li><span lang="DE">Kann man das Jitter der EtherCAT-Kommunikation im PMAC irgendwo überwachen/messen?</span></li>
+</ol> <p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Wenn es offene Dokumentation zu diesen Aspekten gibt, würde ich sie mir gerne durchlesen ;).</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Vielen Dank, und ich wünsche dir ein schönes WE!</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Viele Grüße</span></p>
+<p><span lang="DE">Alessandro</span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

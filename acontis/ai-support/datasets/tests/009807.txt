@@ -1,0 +1,133 @@
+### HEADER
+Id=9807
+Link=http://at-zammad/#ticket/zoom/9807
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=budatec GmbH (ID=414, Number=0, Country=DE)
+Commission=budatec GmbH, Thermische Fügetechnik (ID=492, Number=492)
+Number=709807
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=urban@budatec.de (ID=136, FirstName=Marco, LastName=Urban)
+CreatedBy=urban@budatec.de (ID=136, FirstName=Marco, LastName=Urban)
+Type=
+TimeUnit=
+CreatedAt=30.01.2025 20:53:07 +00:00
+UpdatedAt=14.02.2025 07:02:43 +00:00
+CloseAt=14.02.2025 07:02:43 +00:00
+ArticlesCount=2
+
+### TITLE
+Slave errorState
+
+### ARTICLE00_HEADER
+Id=55921
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.01.2025 20:53:08 +00:00
+UpdatedAt=30.01.2025 20:53:15 +00:00
+
+### ARTICLE00_SUBJECT
+Slave errorState
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo,</p>
+<p>leider habe ich immer noch bei einigen Anlagen das Problem, dass der EtherCAT Zyklus ab und zu viel länger braucht und dadurch ein oder mehrere Slaves in Error-Zustand gehen.</p>
+<p>Im aktuellen Fall stehen 3 identische Anlagen direkt nebeneinander und eine davon hat dieses Problem.</p>
+<p>Ich habe schon den WatchDog-Timer auf 2000ms geändert und trotzdem kommt es.</p>
+<p>Tritt dieser Fehler auf, bleibt unsere gesamte Steuerung stehen.</p>
+<p>Der EventViewer von Windows zeigt leider kein Ereignis, was das verursacht haben könnte.</p>
+<p>Im aktuellen Fall war ich auch direkt vor Ort und die Anlage wurde zum Zeitpunkt nicht bedient und lief schon längere Zeit</p>
+<ol start="1" type="1">
+<li>Wo kann man noch schauen, warum dort dieser Fehler auftritt</li>
+<li>Gibt es eine Funktion die automatisch wieder in den OP-State schaltet?</li>
+<li>Aktuell ist noch die Version 3.0.3…. installiert.</li>
+</ol>
+<p>Leider ist dieser Zustand nicht tragbar und ich brauche hier zeitnah eine Lösung.</p>
+<p>Andere Anlagen laufen mit der gleichen Software/Steuerung, da läuft es zumindest mit einem eingestellten WatchDog von 1000ms.</p>
+<p> </p>
+<p>Vielen Dank</p>
+<p>Grüße Marco Urban</p>
+<p> </p>
+<p>budatec GmbH</p>
+<p>Geschäftsführer Dirk Buße, Alexander Dahlbüdding</p>
+<p><span lang="IT">Melli-Beese-Straße 28</span></p>
+<p><span lang="IT">12487 Berlin</span></p>
+<p><span lang="IT">Tel.: +49 (0) 30 – 921 05 12 - 81</span></p>
+<p><span lang="IT">Fax: +49 (0) 30 - 63 22 40 71</span></p>
+<p><a href="http://www.budatec.de/" rel="nofollow noreferrer noopener" target="_blank"><span lang="IT" style="color:#467886;">www.budatec.de</span></a><span lang="IT"></span></p>
+<p><a href="mailto:info@budatec.de"><span lang="IT" style="color:#467886;">info@budatec.de</span></a><span lang="IT"></span></p>
+<p>Eingetragen im Handelsregister Nr. HRB 122897 B beim Amtsgericht Charlottenburg</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=55930
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.01.2025 06:51:28 +00:00
+UpdatedAt=31.01.2025 06:51:30 +00:00
+
+### ARTICLE01_SUBJECT
+Slave errorState
+
+### ARTICLE01_BODY
+Hallo Herr Urban,<div><br></div><div>1. Vielleicht können Sie im Fehlerfall mit einem Monitoring Record <a href="https://learn.microsoft.com/de-de/sysinternals/downloads/procmon" title="https://learn.microsoft.com/de-de/sysinternals/downloads/procmon" rel="nofollow noreferrer noopener" target="_blank">https://learn.microsoft.com/de-de/sysinternals/downloads/procmon</a> mehr erfahren.</div><div>2. Sie können in Ihren Anwendung im Fehlerfall emSetMasterState(INIT); und <span>emSetMasterState(OP); aufrufen oder emSetSlaveState(INIT); </span><span>emSetSlaveState(OP); für die jeweilige Slaves.</span>
+</div><div>3. Ein Update wird momentan Ihnen nicht weiter helfen.</div><div><br></div><div>Wir haben mittlerweile ein Produkt, was hilft im Windows Kontext das Echtzeit Verhalten zu verbessern:</div><div><div><a href="https://www.acontis.com/de/windows-realtime.html" title="https://www.acontis.com/de/windows-realtime.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/de/windows-realtime.html</a></div></div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, January 30, 2025 at 9:53:08 PM, Marco Urban wrote:<br><br><div>
+<p>Hallo,</p>
+<p>leider habe ich immer noch bei einigen Anlagen das Problem, dass der EtherCAT Zyklus ab und zu viel länger braucht und dadurch ein oder mehrere Slaves in Error-Zustand gehen.</p>
+<p>Im aktuellen Fall stehen 3 identische Anlagen direkt nebeneinander und eine davon hat dieses Problem.</p>
+<p>Ich habe schon den WatchDog-Timer auf 2000ms geändert und trotzdem kommt es.</p>
+<p>Tritt dieser Fehler auf, bleibt unsere gesamte Steuerung stehen.</p>
+<p>Der EventViewer von Windows zeigt leider kein Ereignis, was das verursacht haben könnte.</p>
+<p>Im aktuellen Fall war ich auch direkt vor Ort und die Anlage wurde zum Zeitpunkt nicht bedient und lief schon längere Zeit</p>
+<ol start="1" type="1">
+<li>Wo kann man noch schauen, warum dort dieser Fehler auftritt</li>
+<li>Gibt es eine Funktion die automatisch wieder in den OP-State schaltet?</li>
+<li>Aktuell ist noch die Version 3.0.3…. installiert.</li>
+</ol>
+<p>Leider ist dieser Zustand nicht tragbar und ich brauche hier zeitnah eine Lösung.</p>
+<p>Andere Anlagen laufen mit der gleichen Software/Steuerung, da läuft es zumindest mit einem eingestellten WatchDog von 1000ms.</p>
+<p> </p>
+<p>Vielen Dank</p>
+<p>Grüße Marco Urban</p>
+<p> </p>
+<p>budatec GmbH</p>
+<p>Geschäftsführer Dirk Buße, Alexander Dahlbüdding</p>
+<p><span lang="IT">Melli-Beese-Straße 28</span></p>
+<p><span lang="IT">12487 Berlin</span></p>
+<p><span lang="IT">Tel.: +49 (0) 30 – 921 05 12 - 81</span></p>
+<p><span lang="IT">Fax: +49 (0) 30 - 63 22 40 71</span></p>
+<p><a href="http://www.budatec.de/" rel="nofollow noreferrer noopener" target="_blank"><span lang="IT" style="color:#467886;">www.budatec.de</span></a><span lang="IT"></span></p>
+<p><a href="mailto:info@budatec.de"><span lang="IT" style="color:#467886;">info@budatec.de</span></a><span lang="IT"></span></p>
+<p>Eingetragen im Handelsregister Nr. HRB 122897 B beim Amtsgericht Charlottenburg</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

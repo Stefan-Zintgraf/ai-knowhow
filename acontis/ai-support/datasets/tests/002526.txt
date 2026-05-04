@@ -1,0 +1,192 @@
+### HEADER
+Id=2526
+Link=http://at-zammad/#ticket/zoom/2526
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Midea Air, Equipment (ID=582, Number=582)
+Number=702526
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=01.03.2022 12:33:42 +00:00
+UpdatedAt=01.03.2022 15:08:32 +00:00
+CloseAt=01.03.2022 15:08:32 +00:00
+ArticlesCount=3
+
+### TITLE
+Question about linklayer support for intel from the customer Midea
+
+### ARTICLE00_HEADER
+Id=13452
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.03.2022 12:33:42 +00:00
+UpdatedAt=01.03.2022 12:33:46 +00:00
+
+### ARTICLE00_SUBJECT
+Question about linklayer support for intel from the customer Midea
+
+### ARTICLE00_BODY
+<div>
+<div>Dear,</div>
+<div>The customer Midea want to using intel i225, but the support list didn't include this adapter.</div>
+<div>Do you test and support this adapter? And do you have shedule about this adapter if not?</div>
+<div> </div>
+<div> <div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=13453
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.03.2022 13:30:20 +00:00
+UpdatedAt=01.03.2022 13:30:22 +00:00
+
+### ARTICLE01_SUBJECT
+Question about linklayer support for intel from the customer Midea
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>we support in V3.1 the following IDs:</div><div>
+<div>#define PCI_DEVICE_I225LM                   ((EC_T_WORD)0x15F2)     /**&lt; (0x8086, 0x15F2) */</div>
+<div>#define PCI_DEVICE_I225V                    ((EC_T_WORD)0x15F3)     /**&lt; (0x8086, 0x15F3) */</div>
+<div>#define PCI_DEVICE_I225I                    ((EC_T_WORD)0x15F8)     /**&lt; (0x8086, 0x15F8) */</div>
+<div>#define PCI_DEVICE_I225K                    ((EC_T_WORD)0x3100)     /**&lt; (0x8086, 0x3100) */</div>
+<div>#define PCI_DEVICE_I225K_2                  ((EC_T_WORD)0x3101)     /**&lt; (0x8086, 0x3101) */</div>
+<div>#define PCI_DEVICE_I225LMVP                 ((EC_T_WORD)0x5502)     /**&lt; (0x8086, 0x5502) */</div>
+<div>#define PCI_DEVICE_I225IT                   ((EC_T_WORD)0x0D9F)     /**&lt; (0x8086, 0x0D9F) */</div>
+<div><br></div>
+<div>Best Regards,</div>
+<div>Cyril</div>
+<div><br></div>
+<div><blockquote type="cite">On Tuesday, March 1, 2022, 1:33:42 PM, John Zhang wrote:<br><br><div>
+<div>Dear,</div>
+<div>The customer Midea want to using intel i225, but the support list didn't include this adapter.</div>
+<div>Do you test and support this adapter? And do you have shedule about this adapter if not?</div>
+<div> </div>
+<div> <div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=13455
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.03.2022 14:15:21 +00:00
+UpdatedAt=01.03.2022 14:15:21 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about linklayer support for intel from the customer Midea [Ticket#702526]
+
+### ARTICLE02_BODY
+<div>
+<div>Hi Cyril,<br>
+</div>
+<div>Thanks for your reply. I will transfer to the customer and ask the customer to checking the detial type.</div>
+<div> </div>
+<span class="js-signatureMarker"></span><blockquote>
+<div>------------------------------------------------------------------</div>
+<div>From:ecsupport &lt;ecsupport@acontis.com&gt;</div>
+<div>Send Time:2022年3月1日(星期二) 21:30</div>
+<div>To:John.zhang &lt;john.zhang@motrotech.com&gt;</div>
+<div>Cc:EtherCAT Support &lt;ec_support@motrotech.com&gt;</div>
+<div>Subject:RE: Question about linklayer support for intel from the customer Midea [Ticket#702526]</div>
+<div> </div>Hi John,<div> </div>
+<div>we support in V3.1 the following IDs:</div>
+<div>
+<div>#define PCI_DEVICE_I225LM ((EC_T_WORD)0x15F2) /**&lt; (0x8086, 0x15F2) */</div>
+<div>#define PCI_DEVICE_I225V ((EC_T_WORD)0x15F3) /**&lt; (0x8086, 0x15F3) */</div>
+<div>#define PCI_DEVICE_I225I ((EC_T_WORD)0x15F8) /**&lt; (0x8086, 0x15F8) */</div>
+<div>#define PCI_DEVICE_I225K ((EC_T_WORD)0x3100) /**&lt; (0x8086, 0x3100) */</div>
+<div>#define PCI_DEVICE_I225K_2 ((EC_T_WORD)0x3101) /**&lt; (0x8086, 0x3101) */</div>
+<div>#define PCI_DEVICE_I225LMVP ((EC_T_WORD)0x5502) /**&lt; (0x8086, 0x5502) */</div>
+<div>#define PCI_DEVICE_I225IT ((EC_T_WORD)0x0D9F) /**&lt; (0x8086, 0x0D9F) */</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Cyril</div>
+<div> </div>
+<div>On Tuesday, March 1, 2022, 1:33:42 PM, John Zhang wrote:<br><br><div>
+<div>Dear,</div>
+<div>The customer Midea want to using intel i225, but the support list didn't include this adapter.</div>
+<div>Do you test and support this adapter? And do you have shedule about this adapter if not?</div>
+<div> </div>
+<div> <div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</div>
+<div> </div>
+<br><br>
+</div>
+</blockquote>
+<div> </div>
+</div>

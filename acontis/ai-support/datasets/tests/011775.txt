@@ -1,0 +1,236 @@
+### HEADER
+Id=11775
+Link=http://at-zammad/#ticket/zoom/11775
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=7011775
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=04.11.2025 11:31:58 +00:00
+UpdatedAt=21.11.2025 07:14:12 +00:00
+CloseAt=21.11.2025 07:14:12 +00:00
+ArticlesCount=4
+
+### TITLE
+About the timing for displaying Message ID:4241 (PNo.161)
+
+### ARTICLE00_HEADER
+Id=68005
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.11.2025 11:31:58 +00:00
+UpdatedAt=04.11.2025 11:32:01 +00:00
+
+### ARTICLE00_SUBJECT
+About the timing for displaying Message ID:4241 (PNo.161)
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi Support Team</div><div> </div><div>This is from Mitsubishi (commission No. 40627).</div><div>EC-Engineer V.3.9.15</div><div dir="ltr">
+<br>
+</div><div dir="ltr">It seems that the timing for displaying Message ID:4241 is incorrect.</div><div>When, at first, performing [Rescue Scan] while no SubDevice exists on the network, Message ID:4241 is not displayed.</div><div>But, next, performing any of the following actions again—Scan EtherCAT Network, Self Test Scan, or Rescue Scan—will display the message.</div><div dir="ltr">
+<br>
+</div><div dir="ltr">[ERR | 2025-11-04 20:21:06 | Changing topology failed: ERROR: Frame lost, IDX mismatch (ErrCode: 0x98110025)</div><div>INF | 2025-11-04 20:21:06 | Network scan successful - 0 slaves found]</div><div dir="ltr">
+<br>
+</div><div>They think that when, at first, performing a Rescue Scan while no SubDevice exists on the network, Message ID:4241 should be displayed.</div><div dir="ltr">
+<br>
+</div><div dir="ltr">Please check it with the attached PDF.</div><div dir="ltr">
+<br>
+</div><div dir="ltr">Best regards,</div><div dir="ltr">Yuichi</div><div dir="ltr">
+<br>
+</div><div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span style=" background-color: rgb(255, 255, 255);"><br>
+</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=68028
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=04.11.2025 16:32:11 +00:00
+UpdatedAt=04.11.2025 16:32:11 +00:00
+
+### ARTICLE01_BODY
+@Kai:<div>Hier geht es um Rescue &amp; Selftest Scan. Das ist glaub eher deine Baustelle.</div>
+
+### ARTICLE02_HEADER
+Id=68085
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.11.2025 08:57:41 +00:00
+UpdatedAt=05.11.2025 08:57:44 +00:00
+
+### ARTICLE02_SUBJECT
+About the timing for displaying Message ID:4241 (PNo.161)
+
+### ARTICLE02_BODY
+Hi Yuichi,<div><br></div><div>this is a notification from the EC-Master. It depends on timing if this message appears or not. It has nothing to do with the amount of slaves or if no slaves are configured.</div><div>Cyril will have a look at it. </div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, November 4, 2025 at 12:31:58 PM, Yuichi Ide wrote:<br><br><div dir="ltr">Hi Support Team</div>
+<div> </div>
+<div>This is from Mitsubishi (commission No. 40627).</div>
+<div>EC-Engineer V.3.9.15</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">It seems that the timing for displaying Message ID:4241 is incorrect.</div>
+<div>When, at first, performing [Rescue Scan] while no SubDevice exists on the network, Message ID:4241 is not displayed.</div>
+<div>But, next, performing any of the following actions again—Scan EtherCAT Network, Self Test Scan, or Rescue Scan—will display the message.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">[ERR | 2025-11-04 20:21:06 | Changing topology failed: ERROR: Frame lost, IDX mismatch (ErrCode: 0x98110025)</div>
+<div>INF | 2025-11-04 20:21:06 | Network scan successful - 0 slaves found]</div>
+<div dir="ltr">
+<br>
+</div>
+<div>They think that when, at first, performing a Rescue Scan while no SubDevice exists on the network, Message ID:4241 should be displayed.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Please check it with the attached PDF.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Best regards,</div>
+<div dir="ltr">Yuichi</div>
+<div dir="ltr">
+<br>
+</div>
+<div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span style=" background-color: rgb(255, 255, 255);"><br>
+</span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=68505
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.11.2025 08:04:17 +00:00
+UpdatedAt=14.11.2025 08:04:20 +00:00
+
+### ARTICLE03_SUBJECT
+About the timing for displaying Message ID:4241 (PNo.161)
+
+### ARTICLE03_BODY
+<div>Hi Yuichi,</div><div><br></div><div>the issue is fixed. It was a timing issue in EC-Engineer. These notifications should be there at all. So now there are no notifications. Because while scanning we disable notifications.</div><div><br></div><div>It will be fixed in the next version.</div><div><br></div><div>Best regards,</div><div>Kai<br><br>
+</div><div><blockquote type="cite">On Wednesday, November 5, 2025 at 9:57:41 AM, Kai Feifel via EC-Support wrote:<br><br>Hi Yuichi,<div><br></div>
+<div>this is a notification from the EC-Master. It depends on timing if this message appears or not. It has nothing to do with the amount of slaves or if no slaves are configured.</div>
+<div>Cyril will have a look at it. </div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, November 4, 2025 at 12:31:58 PM, Yuichi Ide wrote:<br><br><div dir="ltr">Hi Support Team</div>
+<div> </div>
+<div>This is from Mitsubishi (commission No. 40627).</div>
+<div>EC-Engineer V.3.9.15</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">It seems that the timing for displaying Message ID:4241 is incorrect.</div>
+<div>When, at first, performing [Rescue Scan] while no SubDevice exists on the network, Message ID:4241 is not displayed.</div>
+<div>But, next, performing any of the following actions again—Scan EtherCAT Network, Self Test Scan, or Rescue Scan—will display the message.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">[ERR | 2025-11-04 20:21:06 | Changing topology failed: ERROR: Frame lost, IDX mismatch (ErrCode: 0x98110025)</div>
+<div>INF | 2025-11-04 20:21:06 | Network scan successful - 0 slaves found]</div>
+<div dir="ltr">
+<br>
+</div>
+<div>They think that when, at first, performing a Rescue Scan while no SubDevice exists on the network, Message ID:4241 should be displayed.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Please check it with the attached PDF.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Best regards,</div>
+<div dir="ltr">Yuichi</div>
+<div dir="ltr">
+<br>
+</div>
+<div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span style=" background-color: rgb(255, 255, 255);"><br>
+</span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+<br>
+</blockquote></div><div><br></div>

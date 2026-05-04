@@ -1,0 +1,135 @@
+### HEADER
+Id=6753
+Link=http://at-zammad/#ticket/zoom/6753
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=706753
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=06.11.2023 13:45:40 +00:00
+UpdatedAt=07.11.2023 10:31:23 +00:00
+CloseAt=07.11.2023 10:31:23 +00:00
+ArticlesCount=3
+
+### TITLE
+the potential customer netease requirement at orin nano with rtl8111ut 
+
+### ARTICLE00_HEADER
+Id=36516
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.11.2023 13:45:40 +00:00
+UpdatedAt=06.11.2023 13:45:43 +00:00
+
+### ARTICLE00_SUBJECT
+the potential customer netease requirement at orin nano with rtl8111ut 
+
+### ARTICLE00_BODY
+<div style="color:#494f50;">
+<div>Dear,</div>
+<div>Recently, the potential customer wants to evaluate the ecmaster in JETION Orion nano, the linklayer is Realtek rtl8111. The mac external on the board. We worried the protection will be the problem.</div>
+<div>Anyway, I remember that the nividia cpu have many problems for running the ecmaster, do you have experience about running the ecmaster on this platform? Does it need to change anything in kernel for running the ecmaster?</div>
+<div> </div>
+<div><a href="https://mail.alibaba-inc.com" rel="nofollow noreferrer noopener" title="https://mail.alibaba-inc.com" target="_blank">from 阿里邮箱 iPhone</a></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=36563
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.11.2023 09:42:52 +00:00
+UpdatedAt=07.11.2023 09:42:54 +00:00
+
+### ARTICLE01_SUBJECT
+the potential customer netease requirement at orin nano with rtl8111ut
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>using the Realtek adapter should work. I assume that the RTL8111 is delivered with a valid MAC address, but I don't know how easy it is to modify it. Until today we don't have more feedback.</div><div>Last year you ask for the Orin platform already for the pxing project. Did you get in touch with NVIDIA China? Perhaps we could support the onboard adapter if they provide us some datasheets.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Monday, November 6, 2023 at 2:45:40 PM, John Zhang wrote:<br><br><div style="color:#494f50;">
+<div>Dear,</div>
+<div>Recently, the potential customer wants to evaluate the ecmaster in JETION Orion nano, the linklayer is Realtek rtl8111. The mac external on the board. We worried the protection will be the problem.</div>
+<div>Anyway, I remember that the nividia cpu have many problems for running the ecmaster, do you have experience about running the ecmaster on this platform? Does it need to change anything in kernel for running the ecmaster?</div>
+<div> </div>
+<div><a href="https://mail.alibaba-inc.com" rel="nofollow noreferrer noopener" title="https://mail.alibaba-inc.com" target="_blank">from 阿里邮箱 iPhone</a></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=36566
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.11.2023 09:55:07 +00:00
+UpdatedAt=07.11.2023 09:55:07 +00:00
+
+### ARTICLE02_SUBJECT
+Re: the potential customer netease requirement at orin nano with rtl8111ut [Ticket#706753]
+
+### ARTICLE02_BODY
+<div style="color:#1f497d;">
+<div>Hi Cyril,</div>
+<div>We connected with nividia China, they didn't provide the datasheet, too.</div>
+<div>Thanks for your reply, I will consider how to give this customer a suggestion.</div>
+<div> </div>
+<div>
+<div><b><br></b></div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.:+86-010-62740270 (北京）<div>0571- 56125098 （杭州）</div>
+</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+<span class="js-signatureMarker"></span><blockquote>
+<div>------------------------------------------------------------------</div>
+<div>From:ecsupport &lt;ecsupport@acontis.com&gt;</div>
+<div>Send Time:2023年11月7日(星期二) 17:43</div>
+<div>To:John.zhang &lt;john.zhang@motrotech.com&gt;</div>
+<div>Subject:RE: the potential customer netease requirement at orin nano with rtl8111ut [Ticket#706753]</div>
+<div> </div>Hi John,<div> </div>
+<div>using the Realtek adapter should work. I assume that the RTL8111 is delivered with a valid MAC address, but I don't know how easy it is to modify it. Until today we don't have more feedback.</div>
+<div>Last year you ask for the Orin platform already for the pxing project. Did you get in touch with NVIDIA China? Perhaps we could support the onboard adapter if they provide us some datasheets.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Cyril<br><div> </div>
+<div>On Monday, November 6, 2023 at 2:45:40 PM, John Zhang wrote:<br><br><div style="color:#494f50;">
+<div>Dear,</div>
+<div>Recently, the potential customer wants to evaluate the ecmaster in JETION Orion nano, the linklayer is Realtek rtl8111. The mac external on the board. We worried the protection will be the problem.</div>
+<div>Anyway, I remember that the nividia cpu have many problems for running the ecmaster, do you have experience about running the ecmaster on this platform? Does it need to change anything in kernel for running the ecmaster?</div>
+<div> </div>
+<div><a href="https://mail.alibaba-inc.com" title="https://mail.alibaba-inc.com" rel="nofollow noreferrer noopener" target="_blank">from 阿里邮箱 iPhone</a></div>
+</div>
+<br>
+</div>
+<div> </div>
+<br><br>
+</div>
+</blockquote>
+<div> </div>
+</div>

@@ -1,0 +1,145 @@
+### HEADER
+Id=1063
+Link=http://at-zammad/#ticket/zoom/1063
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Auris Surgical Robotics Inc, R&D (ID=402, Number=402)
+Number=701063
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=20.07.2021 14:23:23 +00:00
+UpdatedAt=30.07.2021 06:30:55 +00:00
+CloseAt=30.07.2021 06:30:55 +00:00
+ArticlesCount=2
+
+### TITLE
+Fwd: Code Review for ENI Files
+
+### ARTICLE00_HEADER
+Id=5906
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.07.2021 14:23:23 +00:00
+UpdatedAt=20.07.2021 14:23:23 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Code Review for ENI Files
+
+### ARTICLE00_BODY
+<div>Hi,</div><div> </div><div>What would you recommend for this?<br>
+</div><br>/Jon<br><br><div>
+<strong> From: </strong> "Abu qamar, Razn [ETHUS]" &lt;RAbuQama@ITS.JNJ.com&gt; <br>
+<strong> To: </strong> "j.waters@acontis.com" &lt;j.waters@acontis.com&gt; <br>
+<strong> Cc: </strong> "Cam, Bruce [ETHUS]" &lt;BCam1@ITS.JNJ.com&gt;, "Pang, Henry [ETHUS]" &lt;HPang3@ITS.JNJ.com&gt; <br>
+<strong> Sent: </strong> 7/19/2021 7:03 PM <br>
+<strong> Subject: </strong> Code Review for ENI Files <br><br><blockquote><div>
+<div>
+<p>Hey Jon,</p>
+<p> </p>
+<p>Hope all is well!<br> I’m reaching out as I’d like to ask if your team/your engineers have a method for conducting Code Reviews on ENI files. <br> We’d like to perform line by line Diff comparisons between ENI Files on BitBucket so we can review changes as we update to newer ENIs.<br> We’d like to break out the information in the XMLs to a digestible collection of parameters so we can review changes before merging the new ENIs into our code.</p>
+<p> </p>
+<p>Do you have any recommendations for parsing these ENIs to be Diff-able, or an output that ECE can produce that we can use to validate changes between ENIs?<br>
+<br> Thank you for your time,<br> Regards,</p>
+<p><b>Razn Abu Qamar</b></p>
+<p>Systems Integration Engineer, Robotics &amp; Digital Solutions</p>
+<p> </p>
+<p>Johnson &amp; Johnson</p>
+<p>5490 Great America Pkwy</p>
+<p>Santa Clara, CA 95054</p>
+<p>M (949) 566-1636</p>
+<p>rabuqama@its.jnj.com</p>
+<p><a href="http://www.ethicon.com/" rel="nofollow noreferrer noopener" target="_blank">www.ethicon.com</a></p>
+<p> </p>
+<p>Disclaimer: This electronic message may contain information that is Proprietary, Confidential, or legally privileged or protected. It is intended only for the use of the individual(s) and entity named in the message. If you are not an intended recipient of this message, please notify the sender immediately and delete the material from your computer. Do not deliver, distribute or copy this message and do not disclose its contents or take any action in reliance on the information it contains.</p>
+<p> </p>
+</div>
+</div></blockquote>
+</div>
+
+### ARTICLE01_HEADER
+Id=5924
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.07.2021 05:40:45 +00:00
+UpdatedAt=21.07.2021 05:40:48 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: Code Review for ENI Files
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>in the User.xml in ProgramData\EC-Engineer is a setting called IndentXmlFiles. When this is true the ENI comes formatted as readable XML. This is really good for diffs. But the ENI will be a bit bigger of course. But this is the best and easiest way. </div><div><br></div><div>They could also use XML Notepad, open the ENI and save it. Then it should be also formatted. </div><div><br></div><div>I guess they have a tool for diff? Otherwise I would recommend Beyond Compare. </div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, July 20, 2021, 4:23:23 PM, Jon Waters wrote:<br><br><div>Hi,</div>
+<div> </div>
+<div>What would you recommend for this?<br>
+</div>
+<br>/Jon<br><br><div>
+<strong> From: </strong> "Abu qamar, Razn [ETHUS]" &lt;RAbuQama@ITS.JNJ.com&gt; <br>
+<strong> To: </strong> "j.waters@acontis.com" &lt;j.waters@acontis.com&gt; <br>
+<strong> Cc: </strong> "Cam, Bruce [ETHUS]" &lt;BCam1@ITS.JNJ.com&gt;, "Pang, Henry [ETHUS]" &lt;HPang3@ITS.JNJ.com&gt; <br>
+<strong> Sent: </strong> 7/19/2021 7:03 PM <br>
+<strong> Subject: </strong> Code Review for ENI Files <br><br><blockquote><div>
+<div>
+<p>Hey Jon,</p>
+<p> </p>
+<p>Hope all is well!<br> I’m reaching out as I’d like to ask if your team/your engineers have a method for conducting Code Reviews on ENI files. <br> We’d like to perform line by line Diff comparisons between ENI Files on BitBucket so we can review changes as we update to newer ENIs.<br> We’d like to break out the information in the XMLs to a digestible collection of parameters so we can review changes before merging the new ENIs into our code.</p>
+<p> </p>
+<p>Do you have any recommendations for parsing these ENIs to be Diff-able, or an output that ECE can produce that we can use to validate changes between ENIs?<br>
+<br> Thank you for your time,<br> Regards,</p>
+<p><b>Razn Abu Qamar</b></p>
+<p>Systems Integration Engineer, Robotics &amp; Digital Solutions</p>
+<p> </p>
+<p>Johnson &amp; Johnson</p>
+<p>5490 Great America Pkwy</p>
+<p>Santa Clara, CA 95054</p>
+<p>M (949) 566-1636</p>
+<p>rabuqama@its.jnj.com</p>
+<p><a href="http://www.ethicon.com/" rel="nofollow noreferrer noopener" target="_blank">www.ethicon.com</a></p>
+<p> </p>
+<p>Disclaimer: This electronic message may contain information that is Proprietary, Confidential, or legally privileged or protected. It is intended only for the use of the individual(s) and entity named in the message. If you are not an intended recipient of this message, please notify the sender immediately and delete the material from your computer. Do not deliver, distribute or copy this message and do not disclose its contents or take any action in reliance on the information it contains.</p>
+<p> </p>
+</div>
+</div></blockquote>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

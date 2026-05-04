@@ -1,0 +1,145 @@
+### HEADER
+Id=9596
+Link=http://at-zammad/#ticket/zoom/9596
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=Presto Solutions, Generic (ID=478, Number=478)
+Number=709596
+Owner=s.krug@acontis.com (ID=2027, FirstName=Steven, LastName=Krug)
+Customer=phatv@prestosolution.co.kr (ID=47, FirstName=Pha, LastName=Tv)
+CreatedBy=phatv@prestosolution.co.kr (ID=47, FirstName=Pha, LastName=Tv)
+Type=
+TimeUnit=
+CreatedAt=03.01.2025 10:19:09 +00:00
+UpdatedAt=21.01.2025 07:14:21 +00:00
+CloseAt=21.01.2025 07:14:22 +00:00
+ArticlesCount=2
+
+### TITLE
+HIL Problem when Enable -ds402 Parameter
+
+### ARTICLE00_HEADER
+Id=54530
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.01.2025 10:19:09 +00:00
+UpdatedAt=03.01.2025 10:19:13 +00:00
+
+### ARTICLE00_SUBJECT
+HIL Problem when Enable -ds402 Parameter
+
+### ARTICLE00_BODY
+<p>Hi Acontis Supporter,</p><p><br></p><p>I am Pha from PrestoSolution in Korea.</p><p>I'm preparing HIL with some simple functions like (Servo On/Off and PTP) for ETG RoadShow in Korea.</p><p>So I try to look at the "EcSimulatorHilDemoMotion" sample code and enable the -ds402 parameter like below</p><p><br></p><p><img src="/api/v1/ticket_attachment/9596/54530/225911?view=inline" title="" alt="" style="max-width:100%;"></p><p><br></p><p>Here is the problem:</p><p><br></p><p><img src="/api/v1/ticket_attachment/9596/54530/225912?view=inline" title="" alt="" style="max-width:100%;"></p><p><br></p><p>Function : esSetSlaveCoeObjectTransferCallbacks return error code : 0x9811000b (EC_E_INVALIDPARM)</p><p>it means that "dwInstanceId is out of range". However, the dwInstanceId value is 0.</p><p><br></p><p>I have been stuck at that problem. Please help me deeply investigate it.</p><p><br></p><p>Other thing, please share the latest source of HIL with USB-DONGLE license. (I already by the USB-DONGLE license)</p><p><br></p><p>The EXI file is in the attached file. If you need anything feel free to let me know.</p><p><br></p><p>Best Regards,</p><p>Pha</p><p><br></p><p><br></p><p><br></p><br><br><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-size: 12px; background-color: rgb(255, 255, 255); border-collapse: collapse;"><tbody>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px;"><tbody>
+<tr>
+<td style=" border-style: initial;"><p> </p></td>
+<td valign="top" style=" border-style: initial;">
+<p>탄반파 책임/ 연구 1팀</p>
+<p><span style=" color: red;">M. </span>010-4021-5399</p>
+<p><span style=" color: red;">E. </span><i><u><span style=" color: blue;"><a href="mailto:bjyseo@prestosolution.co.kr"><span style=" color: rgb(5, 99, 193);">phatv@prestosolution.co.kr</span></a></span></u></i></p>
+</td>
+</tr>
+<tr><td valign="top" colspan="2" style=" border-style: initial;"><p><span style=" color: rgb(99, 101, 99);"><br></span></p></td></tr>
+<tr><td valign="top" colspan="2" style=" border-style: initial;">
+<p><br></p>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressed.</span></p>
+<p><span style=" color: rgb(99, 101, 99);">Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+</td></tr>
+</tbody></table></td>
+<td valign="top" style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><p><br></p></td>
+</tr>
+<tr style="margin: 0px; padding: 0px;"><td valign="top" colspan="2" style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><p><br></p></td></tr>
+<tr style="margin: 0px; padding: 0px;"><td valign="top" colspan="2" style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><p><br></p></td></tr>
+</tbody></table>
+
+### ARTICLE01_HEADER
+Id=54605
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.01.2025 10:21:51 +00:00
+UpdatedAt=07.01.2025 10:21:54 +00:00
+
+### ARTICLE01_SUBJECT
+HIL Problem when Enable -ds402 Parameter
+
+### ARTICLE01_BODY
+Hi Pha,<div><br></div><div>thank you for your message. I wish you a happy new year, first of all!</div><div><br></div><div>I checked the Exi file you provided and it looks like you are using the default CoE object dictionary.<span> </span>
+</div><div>The problem should be solved by unchecking "Use Default Objectdictionary" in the Simulator tab of the EC-Engineer for the according slaves.</div><div><br></div><div>Please let me know if that fixed your problem.</div><div><br></div><div><span>Best regards</span></div><div><span>Steven</span></div><div><span>__________________________________________________________________________________________</span></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>Steven Krug</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, January 3, 2025 at 11:19:09 AM, Pha Tv wrote:<br><br><p>Hi Acontis Supporter,</p>
+<p><br></p>
+<p>I am Pha from PrestoSolution in Korea.</p>
+<p>I'm preparing HIL with some simple functions like (Servo On/Off and PTP) for ETG RoadShow in Korea.</p>
+<p>So I try to look at the "EcSimulatorHilDemoMotion" sample code and enable the -ds402 parameter like below</p>
+<p><br></p>
+<p><img src="/api/v1/ticket_attachment/9596/54605/226162?view=inline" title="" alt="" style="max-width:100%;max-width:100%;"></p>
+<p><br></p>
+<p>Here is the problem:</p>
+<p><br></p>
+<p><img src="/api/v1/ticket_attachment/9596/54605/226163?view=inline" title="" alt="" style="max-width:100%;max-width:100%;"></p>
+<p><br></p>
+<p>Function : esSetSlaveCoeObjectTransferCallbacks return error code : 0x9811000b (EC_E_INVALIDPARM)</p>
+<p>it means that "dwInstanceId is out of range". However, the dwInstanceId value is 0.</p>
+<p><br></p>
+<p>I have been stuck at that problem. Please help me deeply investigate it.</p>
+<p><br></p>
+<p>Other thing, please share the latest source of HIL with USB-DONGLE license. (I already by the USB-DONGLE license)</p>
+<p><br></p>
+<p>The EXI file is in the attached file. If you need anything feel free to let me know.</p>
+<p><br></p>
+<p>Best Regards,</p>
+<p>Pha</p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<br><br><p><br></p>
+<table border="0" cellspacing="0" cellpadding="0" style="margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-size: 12px; background-color: rgb(255, 255, 255); border-collapse: collapse;"><tbody>
+<tr style="margin: 0px; padding: 0px;">
+<td style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px;"><tbody>
+<tr>
+<td style=" border-style: initial;"><p> </p></td>
+<td valign="top" style=" border-style: initial;">
+<p>탄반파 책임/ 연구 1팀</p>
+<p><span style=" color: red;">M. </span>010-4021-5399</p>
+<p><span style=" color: red;">E. </span><i><u><span style=" color: blue;"><a href="mailto:bjyseo@prestosolution.co.kr"><span style=" color: rgb(5, 99, 193);">phatv@prestosolution.co.kr</span></a></span></u></i></p>
+</td>
+</tr>
+<tr><td valign="top" colspan="2" style=" border-style: initial;"><p><span style=" color: rgb(99, 101, 99);"><br></span></p></td></tr>
+<tr><td valign="top" colspan="2" style=" border-style: initial;">
+<p><br></p>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressed.</span></p>
+<p><span style=" color: rgb(99, 101, 99);">Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+</td></tr>
+</tbody></table></td>
+<td valign="top" style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><p><br></p></td>
+</tr>
+<tr style="margin: 0px; padding: 0px;"><td valign="top" colspan="2" style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><p><br></p></td></tr>
+<tr style="margin: 0px; padding: 0px;"><td valign="top" colspan="2" style="margin: 0px; padding: 0px; border: rgb(0, 0, 0); background-color: transparent;"><p><br></p></td></tr>
+</tbody></table>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

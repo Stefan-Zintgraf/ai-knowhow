@@ -1,0 +1,148 @@
+### HEADER
+Id=1761
+Link=http://at-zammad/#ticket/zoom/1761
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ACUTRONIC Switzerland Ltd (ID=12, Number=40141, Country=CH)
+Commission=ACUTRONIC, Bewegungssimulatoren (No Maint) (ID=13, Number=13)
+Number=701761
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=awilliot@acutronic.ch (ID=680, FirstName=Axel, LastName=Williot)
+CreatedBy=awilliot@acutronic.ch (ID=680, FirstName=Axel, LastName=Williot)
+Type=
+TimeUnit=
+CreatedAt=02.11.2021 18:32:30 +00:00
+UpdatedAt=25.04.2022 12:47:56 +00:00
+CloseAt=26.11.2021 07:04:25 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-Master Zustand lesen
+
+### ARTICLE00_HEADER
+Id=9424
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.11.2021 18:32:31 +00:00
+UpdatedAt=02.11.2021 18:32:32 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Master Zustand lesen
+
+### ARTICLE00_BODY
+<div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>Ich möchte mit dem EC-Master an einem bestimmten Zeitpunkt prüfen ob das EtherCAT richtig funktioniert, sodass ich ein Fehler darstellen kann wenn es ein Problem gibt wenn der Benutzer fängt an den System zu benutzen.</p>
+<p>Ich könnte (ecatGetMasterState() == eEcatState_OP) &amp;&amp; pNotification-&gt;AllDevsOperational() schauen, aber sie bleiben z.B bei Kabel Disconnect beide TRUE.</p>
+<p>Gibt es ein zuverlässiges Weg zu prüfen ob der Master gerade jetzt richtig läuft? Idealerweise mit einem Fehlercode zu wissen was falsch ist.</p>
+<p>Es würde im Main Thread laufen.</p>
+<p> </p>
+<p>Ich möchte auch wissen ob ich meinen Fehlerrecovery verbessern kann, momentan ist es so, es kommt aus einem alten Beispiel aber ich sehe kein solches Code im neuen Beispiel:</p>
+<p>if (!pNotification-&gt;AllDevsOperational() &amp;&amp; ((EC_T_BYTE*)&amp;oMasterData.szENIFilename[0] != EC_NULL))</p>
+<p>{</p>
+<p>if (ecatGetMasterState() == eEcatState_OP)</p>
+<p>{</p>
+<p>ecatSetMasterState(ETHERCAT_STATE_CHANGE_TIMEOUT, eEcatState_SAFEOP);</p>
+<p>}</p>
+<p> </p>
+<p>if (ecatGetNumConnectedSlaves() == ecatGetNumConfiguredSlaves())</p>
+<p>{</p>
+<p>LogError("Not all slaves are operational, try to set master into INIT state.\n");</p>
+<p>if (EC_E_NOERROR == ecatSetMasterState(ETHERCAT_STATE_CHANGE_TIMEOUT, eEcatState_INIT))</p>
+<p>{</p>
+<p>LogError("Not all slaves are operational, try to set master into OP state.\n");</p>
+<p>ecatSetMasterState(ETHERCAT_STATE_CHANGE_TIMEOUT, eEcatState_OP);</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>Ich verstehe nicht was genau AllDevsOperational() und ecatGetNumConnectedSlaves() bedeuten, und auch nicht warum man zu SAFEOP gehen sollte.</p>
+<p> </p>
+<p>Beste Grüsse</p>
+<p><b>Axel Williot</b></p>
+<p>Software Engineer</p>
+<p>Acutronic S&amp;T Intl.</p>
+<p>Simulation &amp; Test Division<br> <br> Office: +41 55 253 55 13 <br> awilliot@acutronic.ch</p>
+<p> </p>
+<p><a href="http://www.acutronic.com" rel="nofollow noreferrer noopener" target="_blank">www.acutronic.com</a></p>
+<p> </p>
+<p>This message and any attachments contain business confidential information and is intended only for the individual named herein. If you are not the herein named addressee you should not review, disseminate, distribute, copy or otherwise make any use of this e-mail. Please notify the sender immediately by e-mail if you have received this e-mail by mistake and delete this e-mail from your system.</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=9428
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.11.2021 07:53:30 +00:00
+UpdatedAt=03.11.2021 07:53:34 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Master Zustand lesen
+
+### ARTICLE01_BODY
+Hallo Herr Williot,<div><br></div><div>AllDevsOperational() sollte FALSE zurück liefern, sobald irgendein Slave nicht mehr in OP ist. Es handelt sich dabei um eine Variable außerhalb des Masters. Sie wird durch Notification verändert.</div><div>ecatGetNumConnectedSlaves() liefert die Anzahl von Slaves am Netzwerk und sollte zum Beispiel 0 zurück liefern wenn der Netzwerkadapter nicht mehr mit dem Netzwerk verbunden ist.</div><div><br></div><div>Allgemein liefern Ihnen folgende Notification synchrone Informationen sobald Änderungen detektiert wurden:</div><div><div>EC_NOTIFY_ETH_LINK_NOT_CONNECTED / <span>EC_NOTIFY_ETH_LINK_CONNECTED</span>
+</div></div><div>
+<div><div>
+<span>EC_NOTIFY_NOT_ALL_DEVICES_OPERATIONAL / </span><span>EC_NOTIFY_ALL_DEVICES_OPERATIONAL</span><br>
+</div></div>
+<div>
+<span>EC_NOTIFY_SB_STATUS</span><br>
+</div>
+<div><br></div>
+<div>Folgende Notification geben Ihnen detaillierte Informationen:</div>
+<div>
+<span>EC_NOTIFY_CYCCMD_WKC_ERROR</span><br>
+</div>
+</div><div><div>
+<span>EC_NOTIFY_STATUS_SLAVE_ERROR</span><br>
+</div></div><div><div>EC_NOTIFY_SLAVE_ERROR_STATUS_INFO</div></div><div><div>EC_NOTIFY_PDIWATCHDOG</div></div><div><div>EC_NOTIFY_SLAVE_UNEXPECTED_STATE</div></div><div><br></div><div>EC_NOTIFY_SLAVES_PRESENCE<br>
+</div><div>EC_NOTIFY_SB_MISMATCH<br>
+</div><div><br></div><div>Schöne Grüße,</div><div>Cyril Eyssautier<br><div><br></div>
+<div><blockquote type="cite">On Tuesday, November 2, 2021, 7:32:31 PM, awilliot@acutronic.ch wrote:<br><br><div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>Ich möchte mit dem EC-Master an einem bestimmten Zeitpunkt prüfen ob das EtherCAT richtig funktioniert, sodass ich ein Fehler darstellen kann wenn es ein Problem gibt wenn der Benutzer fängt an den System zu benutzen.</p>
+<p>Ich könnte (ecatGetMasterState() == eEcatState_OP) &amp;&amp; pNotification-&gt;AllDevsOperational() schauen, aber sie bleiben z.B bei Kabel Disconnect beide TRUE.</p>
+<p>Gibt es ein zuverlässiges Weg zu prüfen ob der Master gerade jetzt richtig läuft? Idealerweise mit einem Fehlercode zu wissen was falsch ist.</p>
+<p>Es würde im Main Thread laufen.</p>
+<p> </p>
+<p>Ich möchte auch wissen ob ich meinen Fehlerrecovery verbessern kann, momentan ist es so, es kommt aus einem alten Beispiel aber ich sehe kein solches Code im neuen Beispiel:</p>
+<p>if (!pNotification-&gt;AllDevsOperational() &amp;&amp; ((EC_T_BYTE*)&amp;oMasterData.szENIFilename[0] != EC_NULL))</p>
+<p>{</p>
+<p>if (ecatGetMasterState() == eEcatState_OP)</p>
+<p>{</p>
+<p>ecatSetMasterState(ETHERCAT_STATE_CHANGE_TIMEOUT, eEcatState_SAFEOP);</p>
+<p>}</p>
+<p> </p>
+<p>if (ecatGetNumConnectedSlaves() == ecatGetNumConfiguredSlaves())</p>
+<p>{</p>
+<p>LogError("Not all slaves are operational, try to set master into INIT state.\n");</p>
+<p>if (EC_E_NOERROR == ecatSetMasterState(ETHERCAT_STATE_CHANGE_TIMEOUT, eEcatState_INIT))</p>
+<p>{</p>
+<p>LogError("Not all slaves are operational, try to set master into OP state.\n");</p>
+<p>ecatSetMasterState(ETHERCAT_STATE_CHANGE_TIMEOUT, eEcatState_OP);</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>Ich verstehe nicht was genau AllDevsOperational() und ecatGetNumConnectedSlaves() bedeuten, und auch nicht warum man zu SAFEOP gehen sollte.</p>
+<p> </p>
+<p>Beste Grüsse</p>
+<p><b>Axel Williot</b></p>
+<p>Software Engineer</p>
+<p>Acutronic S&amp;T Intl.</p>
+<p>Simulation &amp; Test Division<br> <br> Office: +41 55 253 55 13 <br> awilliot@acutronic.ch</p>
+<p> </p>
+<p><a href="http://www.acutronic.com" rel="nofollow noreferrer noopener" target="_blank">www.acutronic.com</a></p>
+<p> </p>
+<p>This message and any attachments contain business confidential information and is intended only for the individual named herein. If you are not the herein named addressee you should not review, disseminate, distribute, copy or otherwise make any use of this e-mail. Please notify the sender immediately by e-mail if you have received this e-mail by mistake and delete this e-mail from your system.</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

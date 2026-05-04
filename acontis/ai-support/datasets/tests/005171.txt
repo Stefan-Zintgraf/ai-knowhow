@@ -1,0 +1,180 @@
+### HEADER
+Id=5171
+Link=http://at-zammad/#ticket/zoom/5171
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Korea Inst. Fusion Energy (ID=497, Number=0, Country=KR)
+Commission=Korea Inst. fusion Energy, Motion Controller (ID=583, Number=583)
+Number=705171
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=yunsw@kfe.re.kr (ID=1763, FirstName=Yun, LastName=Sangwon)
+CreatedBy=yunsw@kfe.re.kr (ID=1763, FirstName=Yun, LastName=Sangwon)
+Type=
+TimeUnit=
+CreatedAt=17.03.2023 01:31:29 +00:00
+UpdatedAt=28.03.2023 09:17:26 +00:00
+CloseAt=17.03.2023 08:16:11 +00:00
+ArticlesCount=3
+
+### TITLE
+Cycle time on an EC-EngineerWeb for Linux v2.1.2
+
+### ARTICLE00_HEADER
+Id=27406
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.03.2023 01:31:29 +00:00
+UpdatedAt=17.03.2023 01:31:29 +00:00
+
+### ARTICLE00_SUBJECT
+Cycle time on an EC-EngineerWeb for Linux v2.1.2
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Acontis Support,</p>
+<p><br></p>
+<p>I'm Sangwon Yun working for the KFE (Korea Institute of Fusion Energy) in the South Korea.</p>
+<p><br></p>
+<p>I'm using the EC-EngineerWeb for Linux v2.1.2 and it can scan all slaves on an EtherCAT network and switch into Diag. mode without any issue.</p>
+<p><br></p>
+<p>But it seems Cycle Time setting on the "Master" page is not applied on Diag. mode.<br></p>
+<p>As you can see below screenshots, Cycle Time was set to 1000 us but Performance page shows Cycle Time as 2000 us.</p>
+<p>For your information, number of sent frames is around 700 per second.</p>
+<p><br></p>
+<p>It think I missed something from my side but I have no idea for the moment.</p>
+<p>So I would appreciate if you guide how to check further or any information.</p>
+<p>Please let me know if you need any further information.</p>
+<p><br></p>
+<p>Thanks in advance for your help.</p>
+<p><br></p>
+<p>Regards,</p>
+<p>Sangwon</p>
+<p><br></p>
+<p>1) Setting Cycle Time on Config mode</p>
+<p><img alt="image.16790157641090.png" src="/api/v1/ticket_attachment/5171/27406/115544?view=inline" border="0" style="max-width:100%;width:347px;max-height:146px;"></p>
+<p><br></p>
+<p>2) Cycle Time on Diag mode<img alt="image.16790158359341.png" src="/api/v1/ticket_attachment/5171/27406/115545?view=inline" border="0" style="max-width:100%;width:1084px;max-height:810px;"></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=27409
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.03.2023 06:52:59 +00:00
+UpdatedAt=17.03.2023 06:53:03 +00:00
+
+### ARTICLE01_SUBJECT
+Cycle time on an EC-EngineerWeb for Linux v2.1.2
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>it is difficult to run 1000us on a non real-time system. So with the integrated master in EC-Engineer WEB, we always use at least 2000. You cannot decrease this number through the UI.</div><div>If you select 1000 in the UI it will be in the ENI file. And if you use this ENI file to start a master you will get the 1000. But we limited all integrated master versions to 2000.</div><div><br></div><div>Best regards,</div><div>Kai</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, March 17, 2023 at 2:31:29 AM, 윤상원 wrote:<br><br><div>
+<p>Dear Acontis Support,</p>
+<p><br></p>
+<p>I'm Sangwon Yun working for the KFE (Korea Institute of Fusion Energy) in the South Korea.</p>
+<p><br></p>
+<p>I'm using the EC-EngineerWeb for Linux v2.1.2 and it can scan all slaves on an EtherCAT network and switch into Diag. mode without any issue.</p>
+<p><br></p>
+<p>But it seems Cycle Time setting on the "Master" page is not applied on Diag. mode.<br></p>
+<p>As you can see below screenshots, Cycle Time was set to 1000 us but Performance page shows Cycle Time as 2000 us.</p>
+<p>For your information, number of sent frames is around 700 per second.</p>
+<p><br></p>
+<p>It think I missed something from my side but I have no idea for the moment.</p>
+<p>So I would appreciate if you guide how to check further or any information.</p>
+<p>Please let me know if you need any further information.</p>
+<p><br></p>
+<p>Thanks in advance for your help.</p>
+<p><br></p>
+<p>Regards,</p>
+<p>Sangwon</p>
+<p><br></p>
+<p>1) Setting Cycle Time on Config mode</p>
+<p><img alt="image.16790157641090.png" src="/api/v1/ticket_attachment/5171/27409/115549?view=inline" border="0" style="max-width:100%;max-width:100%;width:347px;max-height:146px;"></p>
+<p><br></p>
+<p>2) Cycle Time on Diag mode<img alt="image.16790158359341.png" src="/api/v1/ticket_attachment/5171/27409/115550?view=inline" border="0" style="max-width:100%;max-width:100%;width:1084px;max-height:810px;"></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=27412
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.03.2023 08:15:19 +00:00
+UpdatedAt=17.03.2023 08:15:19 +00:00
+
+### ARTICLE02_SUBJECT
+[RE]RE: Cycle time on an EC-EngineerWeb for Linux v2.1.2 [Ticket#705171]
+
+### ARTICLE02_BODY
+<p>Hello,</p><p><br></p><p>Thank you very much for your prompt reply.</p><p>Ok. It is now clear for me.</p><p><br></p><p>Have a nice day!</p><p><br></p><p>Best regards,</p><p>Sangwon</p><span class="js-signatureMarker"></span><br>----- Original Message -----<br>From : Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt;<br>To : &lt;yunsw@kfe.re.kr&gt;<br>Sent : 2023-03-17 15:53:20<br>Subject : RE: Cycle time on an EC-EngineerWeb for Linux v2.1.2 [Ticket#705171]<br><br>Hi,<br><div>it is difficult to run 1000us on a non real-time system. So with the integrated master in EC-Engineer WEB, we always use at least 2000. You cannot decrease this number through the UI.</div><div>If you select 1000 in the UI it will be in the ENI file. And if you use this ENI file to start a master you will get the 1000. But we limited all integrated master versions to 2000.</div><br><div>Best regards,</div><div>Kai</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Friday, March 17, 2023 at 2:31:29 AM, 윤상원 wrote:<br><br><div>
+<p>Dear Acontis Support,</p>
+<p><br></p>
+<p>I'm Sangwon Yun working for the KFE (Korea Institute of Fusion Energy) in the South Korea.</p>
+<p><br></p>
+<p>I'm using the EC-EngineerWeb for Linux v2.1.2 and it can scan all slaves on an EtherCAT network and switch into Diag. mode without any issue.</p>
+<p><br></p>
+<p>But it seems Cycle Time setting on the "Master" page is not applied on Diag. mode.<br></p>
+<p>As you can see below screenshots, Cycle Time was set to 1000 us but Performance page shows Cycle Time as 2000 us.</p>
+<p>For your information, number of sent frames is around 700 per second.</p>
+<p><br></p>
+<p>It think I missed something from my side but I have no idea for the moment.</p>
+<p>So I would appreciate if you guide how to check further or any information.</p>
+<p>Please let me know if you need any further information.</p>
+<p><br></p>
+<p>Thanks in advance for your help.</p>
+<p><br></p>
+<p>Regards,</p>
+<p>Sangwon</p>
+<p><br></p>
+<p>1) Setting Cycle Time on Config mode</p>
+<p><br></p>
+<p>2) Cycle Time on Diag mode</p>
+</div>
+<br>
+</blockquote></div>
+<br><br>
+</div>

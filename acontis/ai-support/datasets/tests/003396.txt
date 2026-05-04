@@ -1,0 +1,246 @@
+### HEADER
+Id=3396
+Link=http://at-zammad/#ticket/zoom/3396
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=swissQprint (ID=24, Number=40359, Country=CH)
+Commission=swissQprint, Grossformatdrucker Steuerung (ID=26, Number=26)
+Number=703396
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=bsp@swissqprint.com (ID=230, FirstName=Bernhard, LastName=Sprenger)
+CreatedBy=bsp@swissqprint.com (ID=230, FirstName=Bernhard, LastName=Sprenger)
+Type=
+TimeUnit=
+CreatedAt=06.07.2022 10:52:44 +00:00
+UpdatedAt=15.07.2022 06:14:11 +00:00
+CloseAt=15.07.2022 06:14:11 +00:00
+ArticlesCount=3
+
+### TITLE
+Frage zu SDO-Access
+
+### ARTICLE00_HEADER
+Id=18009
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.07.2022 10:52:44 +00:00
+UpdatedAt=06.07.2022 10:52:44 +00:00
+
+### ARTICLE00_SUBJECT
+Frage zu SDO-Access
+
+### ARTICLE00_BODY
+<div>
+<p>Sehr geehrter Herr Eyssautier,</p>
+<p> </p>
+<p><span lang="DE-CH">wir haben eine Frage zum SDO-Access. Wieviele SDO-Access-Zugriffe sind möglich während einer zyklischen Periode (e.g. 1ms) wenn wir im SafeOp- oder Op-Status sind (Natürlich unter der Premise, dass wir den Bus nicht überlasten)? Ist dies vom EtherCAT-Standard limitiert, Slave-limitiert oder vom Master-limitiert? Gibt es eine Möglichkeit diese Anzahl der SDO-Access zu erhöhen?</span></p>
+<p><span lang="DE-CH"><p> </p></span></p>
+<p><span lang="DE-CH">Vielen Dank für Ihre Hilfe,</span></p>
+<p><span lang="DE-CH">mit freundlichen Grüssen,</span></p>
+<p><span lang="DE-CH"><p> </p></span></p>
+<p><span lang="DE-CH">Bernd Sprenger</span></p>
+<p><span lang="DE-CH"><p> </p></span></p>
+<p><span lang="DE-CH"><br> swissQprint | Bernd Sprenger, Dr.sc.techn.ETHZ | F&amp;E Elektronik <br> Schützenwiese 8 | T +41 71 727 05 26 | bsp@swissqprint.com <br> CH-9451 Kriessern | F +41 71 727 05 06 | www.swissqprint.com <br>
+<br>
+</span><span lang="DE-CH"></span></p>
+<p><span lang="DE-CH"><p> </p></span></p>
+<p><span lang="DE-CH"><p> </p></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=18010
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.07.2022 11:20:12 +00:00
+UpdatedAt=06.07.2022 11:20:16 +00:00
+
+### ARTICLE01_SUBJECT
+Frage zu SDO-Access
+
+### ARTICLE01_BODY
+Hallo Bernd,<div><br></div><div>im besten Fall dauert ein SDO Transfer 2-3 Zyklen:</div><div>1. Master: Send Request </div><div>2. Slave: Data available</div><div>3. Master: Send Response read</div><div>Je nach Slave kann die Zeit zwischen 1. und 2. variieren. Die Dauer von 3. ist je nach Daten/Mailboxgröße unterschiedlich.</div><div><br></div><div>Theoretisch ist pro Slave und Protokoll ein Transfer möglich, d.h. bei 10 Slaves kann der Master 10 parallele SDO Transfers ausführen.</div><div>Über die Struktur EC_T_INIT_MASTER_PARMS lässt sich die azyklischen Buslast beschränken. Siehe <a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=ec_t_init#_CPPv4N22EC_T_INIT_MASTER_PARMS22dwMaxAcycBytesPerCycleE" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=ec_t_init#_CPPv4N22EC_T_INIT_MASTER_PARMS22dwMaxAcycBytesPerCycleE" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=ec_t_init#_CPPv4N22EC_T_INIT_MASTER_PARMS22dwMaxAcycBytesPerCycleE</a>
+</div><div>
+<span> sowie </span><span>dwMaxAcycFramesPerCycle und </span><span>dwMaxAcycCmdsPerCycle.</span>
+</div><div><br></div><div>Mit freundlichen Grüßen,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Holger Oelhaf</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Mittwoch, 6. Juli 2022 um 12:52:44, schrieb Bernhard Sprenger:<br><br><div>
+<p>Sehr geehrter Herr Eyssautier,</p>
+<p> </p>
+<p><span lang="DE-CH">wir haben eine Frage zum SDO-Access. Wieviele SDO-Access-Zugriffe sind möglich während einer zyklischen Periode (e.g. 1ms) wenn wir im SafeOp- oder Op-Status sind (Natürlich unter der Premise, dass wir den Bus nicht überlasten)? Ist dies vom EtherCAT-Standard limitiert, Slave-limitiert oder vom Master-limitiert? Gibt es eine Möglichkeit diese Anzahl der SDO-Access zu erhöhen?</span></p>
+<p><span lang="DE-CH"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE-CH">Vielen Dank für Ihre Hilfe,</span></p>
+<p><span lang="DE-CH">mit freundlichen Grüssen,</span></p>
+<p><span lang="DE-CH"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE-CH">Bernd Sprenger</span></p>
+<p><span lang="DE-CH"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE-CH"><br> swissQprint | Bernd Sprenger, Dr.sc.techn.ETHZ | F&amp;E Elektronik <br> Schützenwiese 8 | T +41 71 727 05 26 | bsp@swissqprint.com <br> CH-9451 Kriessern | F +41 71 727 05 06 | www.swissqprint.com <br>
+<br>
+</span><span lang="DE-CH"></span></p>
+<p><span lang="DE-CH"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE-CH"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=18024
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.07.2022 06:21:49 +00:00
+UpdatedAt=07.07.2022 06:21:49 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Frage zu SDO-Access [Ticket#703396]
+
+### ARTICLE02_BODY
+<div>
+<p>Hallo Holger,</p>
+<p> </p>
+<p><span lang="DE-CH">vielen Dank für deine Auskunft,</span></p>
+<p><span lang="DE-CH"><p> </p></span></p>
+<p><span lang="DE-CH">mit freundlichen Grüssen,</span></p>
+<p><span lang="DE-CH"><p> </p></span></p>
+<p><span lang="DE-CH">Bernd</span></p>
+<p><span lang="DE-CH"><p> </p></span></p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Holger Oelhaf via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Wednesday, July 6, 2022 1:20 PM<br>
+<b>To:</b> Bernhard Sprenger swissQprint &lt;bsp@swissqprint.com&gt;<br>
+<b>Subject:</b> RE: Frage zu SDO-Access [Ticket#703396]</p>
+</div>
+</div>
+<p> </p>
+<p>Hallo Bernd,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>im besten Fall dauert ein SDO Transfer 2-3 Zyklen:</p>
+</div>
+<div>
+<p>1. Master: Send Request</p>
+</div>
+<div>
+<p>2. Slave: Data available</p>
+</div>
+<div>
+<p>3. Master: Send Response read</p>
+</div>
+<div>
+<p>Je nach Slave kann die Zeit zwischen 1. und 2. variieren. Die Dauer von 3. ist je nach Daten/Mailboxgröße unterschiedlich.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Theoretisch ist pro Slave und Protokoll ein Transfer möglich, d.h. bei 10 Slaves kann der Master 10 parallele SDO Transfers ausführen.</p>
+</div>
+<div>
+<p>Über die Struktur EC_T_INIT_MASTER_PARMS lässt sich die azyklischen Buslast beschränken. Siehe <a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=ec_t_init#_CPPv4N22EC_T_INIT_MASTER_PARMS22dwMaxAcycBytesPerCycleE" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=ec_t_init#_CPPv4N22EC_T_INIT_MASTER_PARMS22dwMaxAcycBytesPerCycleE" rel="nofollow noreferrer noopener" target="_blank"> https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=ec_t_init#_CPPv4N22EC_T_INIT_MASTER_PARMS22dwMaxAcycBytesPerCycleE</a>
+</p>
+</div>
+<div>
+<p>sowie dwMaxAcycFramesPerCycle und dwMaxAcycCmdsPerCycle.</p>
+<p> </p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Mit freundlichen Grüßen,</p>
+</div>
+<div>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Holger Oelhaf</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>Am Mittwoch, 6. Juli 2022 um 12:52:44, schrieb Bernhard Sprenger:</p>
+<div>
+<p>Sehr geehrter Herr Eyssautier,</p>
+<p> </p>
+<p><span lang="DE-CH">wir haben eine Frage zum SDO-Access. Wieviele SDO-Access-Zugriffe sind möglich während einer zyklischen Periode (e.g. 1ms) wenn wir im SafeOp- oder Op-Status sind (Natürlich unter der Premise, dass wir den Bus nicht überlasten)? Ist dies vom EtherCAT-Standard limitiert, Slave-limitiert oder vom Master-limitiert? Gibt es eine Möglichkeit diese Anzahl der SDO-Access zu erhöhen?</span></p>
+<p> </p>
+<p><span lang="DE-CH">Vielen Dank für Ihre Hilfe,</span></p>
+<p><span lang="DE-CH">mit freundlichen Grüssen,</span></p>
+<p> </p>
+<p><span lang="DE-CH">Bernd Sprenger</span></p>
+<p> </p>
+<p>
+<span lang="DE-CH"><br> swissQprint | Bernd Sprenger, Dr.sc.techn.ETHZ | F&amp;E Elektronik <br> Schützenwiese 8 | T +41 71 727 05 26 | <a href="mailto:bsp@swissqprint.com">bsp@swissqprint.com</a>
+<br> CH-9451 Kriessern | F +41 71 727 05 06 | <a href="http://www.swissqprint.com" rel="nofollow noreferrer noopener" target="_blank">www.swissqprint.com</a>
+</span></p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

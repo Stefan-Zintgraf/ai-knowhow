@@ -1,0 +1,132 @@
+### HEADER
+Id=4437
+Link=http://at-zammad/#ticket/zoom/4437
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=TECNOLOGIX (ID=196, Number=0, Country=IT)
+Commission=Sipro, SIAX EVO (ID=237, Number=237)
+Number=704437
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=andrea.martina.perelli@tecnologix.it (ID=956, FirstName=Andrea Martina, LastName=Perelli)
+CreatedBy=andrea.martina.perelli@tecnologix.it (ID=956, FirstName=Andrea Martina, LastName=Perelli)
+Type=
+TimeUnit=
+CreatedAt=29.11.2022 10:47:50 +00:00
+UpdatedAt=29.11.2022 13:30:04 +00:00
+CloseAt=29.11.2022 10:57:49 +00:00
+ArticlesCount=3
+
+### TITLE
+Support - SIPRO
+
+### ARTICLE00_HEADER
+Id=23391
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.11.2022 10:47:50 +00:00
+UpdatedAt=29.11.2022 10:47:50 +00:00
+
+### ARTICLE00_SUBJECT
+Support - SIPRO
+
+### ARTICLE00_BODY
+Hi,<br> Our customer SIPRO, wrote us the following e-mail for support:<br> <br> "We are testing the boards and we burnt one, it will probably also happen to our customers in the future. How is it possible to recover the Ethercat license in cases like these?"<br> <br> Before answering them, I would like to receive a feedback from you.<br> <br> Thank you in advance.<br> Best Regards,<br> Andrea Martina<span lang="en"><br> </span><span lang="en"></span> <div>--<br> <pre><img src="/api/v1/ticket_attachment/4437/23391/98848?view=inline" alt="Tecnologix logo" style="max-width:100%;"></pre> <pre>-- 
+Andrea Martina Perelli
+
+TECNOLOGIX s.r.l.
+Via dei Biancospini 6
+I 20146 Milano Italy
+Tel    +39 02 48954230
+Fax    +39 02 471106
+e-mail <a href="mailto:andrea.martina.perelli@tecnologix.it">andrea.martina.perelli@tecnologix.it</a>
+web    <a href="http://www.tecnologix.it" rel="nofollow noreferrer noopener" target="_blank">http://www.tecnologix.it</a>
+
+Le informazioni contenute nella presente comunicazione e i relativi allegati possono essere riservate e sono, comunque, destinate esclusivamente alle persone o alla Società sopraindicati e non sono da considerarsi comunicazioni personali, quindi eventuali risposte potranno essere conosciute da persone appartenenti all’azienda.
+
+The information in this communication (which includes any documents with it) is confidential and meant only for above-mentioned persons and/or Companies; the information is not personal therefore, it is intended for the addressee only and any replies will be known by people belonging to the company.
+
+</pre> </div>
+
+### ARTICLE01_HEADER
+Id=23393
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.11.2022 10:57:49 +00:00
+UpdatedAt=29.11.2022 10:57:52 +00:00
+
+### ARTICLE01_SUBJECT
+Support - SIPRO
+
+### ARTICLE01_BODY
+<div data-signature="true" data-signature-id="2"><div>
+<span>---Begin forwarded message:---</span><br>
+</div></div><div><br></div><div><blockquote type="cite">
+<div>Subject: Support - SIPRO<br>Date: 11/29/2022 11:47<br>From: Andrea Martina Perelli &lt;andrea.martina.perelli@tecnologix.it&gt;<br>To: Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt;<br>CC: Patricia Bauce &lt;p.bauce@acontis.com&gt;, Christoph Widmann<br><br>
+</div>Hi,<br> Our customer SIPRO, wrote us the following e-mail for support:<br> <br> "We are testing the boards and we burnt one, it will probably also happen to our customers in the future. How is it possible to recover the Ethercat license in cases like these?"<br> <br> Before answering them, I would like to receive a feedback from you.<br> <br> Thank you in advance.<br> Best Regards,<br> Andrea Martina<span lang="en"><br> </span><span lang="en"></span> <div>--<br> <pre><img src="/api/v1/ticket_attachment/4437/23393/98853?view=inline" alt="Tecnologix logo" style="max-width:100%;max-width:100%;"></pre> <pre>--
+Andrea Martina Perelli
+
+TECNOLOGIX s.r.l.
+Via dei Biancospini 6
+I 20146 Milano Italy
+Tel    +39 02 48954230
+Fax    +39 02 471106
+e-mail <a href="mailto:andrea.martina.perelli@tecnologix.it">andrea.martina.perelli@tecnologix.it</a>
+web    <a href="http://www.tecnologix.it" rel="nofollow noreferrer noopener" target="_blank">http://www.tecnologix.it</a>
+
+Le informazioni contenute nella presente comunicazione e i relativi allegati possono essere riservate e sono, comunque, destinate esclusivamente alle persone o alla Società sopraindicati e non sono da considerarsi comunicazioni personali, quindi eventuali risposte potranno essere conosciute da persone appartenenti all’azienda.
+
+The information in this communication (which includes any documents with it) is confidential and meant only for above-mentioned persons and/or Companies; the information is not personal therefore, it is intended for the addressee only and any replies will be known by people belonging to the company.
+
+</pre> </div>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=23406
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.11.2022 12:11:50 +00:00
+UpdatedAt=29.11.2022 12:11:50 +00:00
+
+### ARTICLE02_SUBJECT
+Support - SIPRO
+
+### ARTICLE02_BODY
+<div>
+<p>Ciao Andrea Martina,</p>
+<p> </p>
+<p>If a customer burnt one license he will need to provide us the related serial number of the sticker with the corresponding MAC address. Then he has to send us the new MAC address and will therefore receive a replacement key from us.</p>
+<p> </p>
+<p>Regards,</p>
+<p> </p>
+<p>Patricia</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Tecnologix - Andrea Martina Perelli &lt;andrea.martina.perelli@tecnologix.it&gt; <br><b>Gesendet:</b> Dienstag, 29. November 2022 11:47<br><b>An:</b> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt;<br><b>Cc:</b> Patricia Bauce &lt;p.bauce@acontis.com&gt;; Christoph Widmann &lt;c.widmann@acontis.com&gt;<br><b>Betreff:</b> Support - SIPRO</p>
+</div>
+<p> </p>
+<p><span>Hi,<br>Our customer SIPRO, wrote us the following e-mail for support:<br><br></span>"We are testing the boards and we burnt one, it will probably also happen to our customers in the future. How is it possible to recover the Ethercat license in cases like these?"<span><br><br>Before answering them, I would like to receive a feedback from you.<br><br>Thank you in advance.<br>Best Regards,<br>Andrea Martina</span></p>
+<div>
+<p>--<br><br></p>
+<pre><img style="max-width:100%;width:2.0833in;max-height:.4375in;width:200px;max-height:42px;" src="/api/v1/ticket_attachment/4437/23406/98897?view=inline" alt="Tecnologix logo"></pre>
+<pre>-- </pre>
+<pre>Andrea Martina Perelli</pre>
+<pre>        </pre>
+<pre>TECNOLOGIX s.r.l.</pre>
+<pre>Via dei Biancospini 6</pre>
+<pre>I 20146 Milano Italy</pre>
+<pre>Tel    +39 02 48954230</pre>
+<pre>Fax    +39 02 471106</pre>
+<pre>e-mail <a href="mailto:andrea.martina.perelli@tecnologix.it">andrea.martina.perelli@tecnologix.it</a></pre>
+<pre>web    <a href="http://www.tecnologix.it" rel="nofollow noreferrer noopener" target="_blank">http://www.tecnologix.it</a></pre>
+<pre><p> </p></pre>
+<pre><p> </p></pre>
+<pre>Le informazioni contenute nella presente comunicazione e i relativi allegati possono essere riservate e sono, comunque, destinate esclusivamente alle persone o alla Società sopraindicati e non sono da considerarsi comunicazioni personali, quindi eventuali risposte potranno essere conosciute da persone appartenenti all’azienda.</pre>
+<pre><p> </p></pre>
+<pre>The information in this communication (which includes any documents with it) is confidential and meant only for above-mentioned persons and/or Companies; the information is not personal therefore, it is intended for the addressee only and any replies will be known by people belonging to the company.</pre>
+<pre><p> </p></pre>
+</div>
+</div>

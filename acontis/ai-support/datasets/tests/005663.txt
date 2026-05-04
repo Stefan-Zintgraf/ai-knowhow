@@ -1,0 +1,193 @@
+### HEADER
+Id=5663
+Link=http://at-zammad/#ticket/zoom/5663
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=Omron, PLC (ID=282, Number=282)
+Number=705663
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=redmine@my.redmine.jp (ID=190, FirstName=Baba, LastName=Kojiro)
+CreatedBy=redmine@my.redmine.jp (ID=190, FirstName=Baba, LastName=Kojiro)
+Type=
+TimeUnit=
+CreatedAt=30.05.2023 08:21:40 +00:00
+UpdatedAt=31.10.2023 12:49:28 +00:00
+CloseAt=10.07.2023 07:28:05 +00:00
+ArticlesCount=7
+
+### TITLE
+[C1-OAproject - Question #435] (New) Ask for windows version of RAS of V3.1.4.02
+
+### ARTICLE00_HEADER
+Id=30224
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.05.2023 08:21:40 +00:00
+UpdatedAt=30.05.2023 08:21:44 +00:00
+
+### ARTICLE00_SUBJECT
+[C1-OAproject - Question #435] (New) Ask for windows version of RAS of V3.1.4.02
+
+### ARTICLE00_BODY
+Issue <a href="https://my.redmine.jp/pbd-rdc/issues/435" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/435" target="_blank">#435</a> has been reported by Chenhao Hu. <hr>
+<h1> <a href="https://my.redmine.jp/pbd-rdc/issues/435" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/435" target="_blank">Question #435: Ask for windows version of RAS of V3.1.4.02</a> <span style="color:#205d86;">open</span>
+</h1> <ul>
+<li>
+<strong>Author: </strong>Chenhao Hu</li>
+<li>
+<strong>Status: </strong>New</li>
+<li>
+<strong>Priority: </strong>Normal</li>
+<li>
+<strong>Assignee: </strong>acontis acontis</li>
+<li>
+<strong>Start date: </strong>2023-05-30</li>
+<li>
+<strong>Category: </strong>Question</li>
+<li>
+<strong>Category for Omron: </strong>Misc</li>
+<li>
+<strong>Owner: </strong>Chenhao Hu</li>
+</ul> <p>Hi,</p><p>Could you send me the windows version of RAS project of V3.1.4.02, in another word, the windows version of the project below (not linux version):</p><p>EC-Master-RAS-V3.1.4.02-Linux-ARM_32Bit-SDK_Source.tar.gz</p><p>Kind regards,<br>Chenhao Hu.</p><hr>
+<p>My Redmine (プロジェクト運営支援SaaS) から送信<br><a href="http://hosting.redmine.jp/" rel="nofollow noreferrer noopener" target="_blank">http://hosting.redmine.jp/</a></p>
+
+### ARTICLE01_HEADER
+Id=30229
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=30.05.2023 08:45:17 +00:00
+UpdatedAt=30.05.2023 08:45:17 +00:00
+
+### ARTICLE01_BODY
+beantwortet via redmine
+
+### ARTICLE02_HEADER
+Id=30443
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.06.2023 08:26:26 +00:00
+UpdatedAt=06.06.2023 08:26:26 +00:00
+
+### ARTICLE02_SUBJECT
+[C1-OAproject - Question #435] Ask for windows version of RAS of V3.1.4.02
+
+### ARTICLE02_BODY
+Issue <a href="https://my.redmine.jp/pbd-rdc/issues/435#change-3737" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/435#change-3737" target="_blank">#435</a> has been updated by Chenhao Hu. <hr> <ul> <li>
+<strong>File</strong> <a href="https://my.redmine.jp/pbd-rdc/attachments/1810" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/1810" target="_blank">clipboard-202306061624-61ju5.png</a> added</li> <li>
+<strong>Assignee</strong> changed from <i>acontis acontis</i> to <i>Chenhao Hu</i>
+</li>
+</ul> <p>Hi,</p><p>Thank you for your quick reply.<br>I find there is 1 package that cannot be compiled and reports the following error:</p><p>Also, is there a version of x64?</p><p>Kind regards,<br>Chenhao Hu.</p><hr>
+<h1> <a href="https://my.redmine.jp/pbd-rdc/issues/435#change-3737" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/435#change-3737" target="_blank">Question #435: Ask for windows version of RAS of V3.1.4.02</a> <span style="color:#205d86;">open</span>
+</h1> <ul>
+<li>
+<strong>Author: </strong>Chenhao Hu</li>
+<li>
+<strong>Status: </strong>New</li>
+<li>
+<strong>Priority: </strong>Normal</li>
+<li>
+<strong>Assignee: </strong>Chenhao Hu</li>
+<li>
+<strong>Start date: </strong>2023-05-30</li>
+<li>
+<strong>Category: </strong>Question</li>
+<li>
+<strong>Category for Omron: </strong>Misc</li>
+<li>
+<strong>Owner: </strong>Chenhao Hu</li>
+</ul> <p>Hi,</p><p>Could you send me the windows version of RAS project of V3.1.4.02, in another word, the windows version of the project below (not linux version):</p><p>EC-Master-RAS-V3.1.4.02-Linux-ARM_32Bit-SDK_Source.tar.gz</p><p>Kind regards,<br>Chenhao Hu.</p><legend>Files</legend> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1810/clipboard-202306061624-61ju5.png" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1810/clipboard-202306061624-61ju5.png" target="_blank">clipboard-202306061624-61ju5.png</a> (34.9 KB)<br> <hr>
+<p>My Redmine (プロジェクト運営支援SaaS) から送信<br><a href="http://hosting.redmine.jp/" rel="nofollow noreferrer noopener" target="_blank">http://hosting.redmine.jp/</a></p>
+
+### ARTICLE03_HEADER
+Id=30444
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.06.2023 08:26:27 +00:00
+UpdatedAt=06.06.2023 08:26:27 +00:00
+
+### ARTICLE03_SUBJECT
+[C1-OAproject - Question #435] Ask for windows version of RAS of V3.1.4.02
+
+### ARTICLE03_BODY
+<p> </p>Issue<a href="https://my.redmine.jp/pbd-rdc/issues/435#change-3738" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/435#change-3738" target="_blank">#435</a> has been updated by Chenhao Hu. <hr> <ul> <li>
+<strong>Assignee</strong> changed from <i>Chenhao Hu</i> to <i>acontis acontis</i>
+</li> </ul> <hr> <h1> <a href="https://my.redmine.jp/pbd-rdc/issues/435#change-3738" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/435#change-3738" target="_blank">Question #435: Ask for windows version of RAS of V3.1.4.02</a> <span style="color:#205d86;">open</span> </h1> <ul>
+<li>
+<strong>Author: </strong>Chenhao Hu</li> <li>
+<strong>Status: </strong>New</li> <li>
+<strong>Priority: </strong>Normal</li> <li>
+<strong>Assignee: </strong>acontis acontis</li> <li>
+<strong>Start date: </strong>2023-05-30</li> <li>
+<strong>Category: </strong>Question</li> <li>
+<strong>Category for Omron: </strong>Misc</li> <li>
+<strong>Owner: </strong>Chenhao Hu</li>
+</ul> <p>Hi,</p><p>Could you send me the windows version of RAS project of V3.1.4.02, in another word, the windows version of the project below (not linux version):</p><p>EC-Master-RAS-V3.1.4.02-Linux-ARM_32Bit-SDK_Source.tar.gz</p><p>Kind regards,<br>Chenhao Hu.</p><legend>Files</legend> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1810/clipboard-202306061624-61ju5.png" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1810/clipboard-202306061624-61ju5.png" target="_blank">clipboard-202306061624-61ju5.png</a> (34.9 KB) <br> <hr> <span>
+<p>My Redmine (プロジェクト運営支援SaaS) から送信<br><a href="http://hosting.redmine.jp/" rel="nofollow noreferrer noopener" target="_blank">http://hosting.redmine.jp/</a></p></span>
+
+### ARTICLE04_HEADER
+Id=30449
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=06.06.2023 09:37:38 +00:00
+UpdatedAt=06.06.2023 09:37:38 +00:00
+
+### ARTICLE04_BODY
+deliverd fixed RAS and Master source packages 
+
+### ARTICLE05_HEADER
+Id=30801
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.06.2023 04:42:47 +00:00
+UpdatedAt=16.06.2023 04:42:47 +00:00
+
+### ARTICLE05_SUBJECT
+[C1-OAproject - Question #435] (Closed) Ask for windows version of RAS of V3.1.4.02
+
+### ARTICLE05_BODY
+Issue <a href="https://my.redmine.jp/pbd-rdc/issues/435#change-3740" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/435#change-3740" target="_blank">#435</a> has been updated by Chenhao Hu. <hr> <ul> <li>
+<strong>Status</strong> changed from <i>New</i> to <i>Closed</i>
+</li>
+</ul> <hr>
+<h1> <a href="https://my.redmine.jp/pbd-rdc/issues/435#change-3740" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/435#change-3740" target="_blank">Question #435: Ask for windows version of RAS of V3.1.4.02</a> <span style="color:#1d781d;">closed</span>
+</h1> <ul>
+<li>
+<strong>Author: </strong>Chenhao Hu</li>
+<li>
+<strong>Status: </strong>Closed</li>
+<li>
+<strong>Priority: </strong>Normal</li>
+<li>
+<strong>Assignee: </strong>acontis acontis</li>
+<li>
+<strong>Start date: </strong>2023-05-30</li>
+<li>
+<strong>Category: </strong>Question</li>
+<li>
+<strong>Category for Omron: </strong>Misc</li>
+<li>
+<strong>Owner: </strong>Chenhao Hu</li>
+</ul> <p>Hi,</p><p>Could you send me the windows version of RAS project of V3.1.4.02, in another word, the windows version of the project below (not linux version):</p><p>EC-Master-RAS-V3.1.4.02-Linux-ARM_32Bit-SDK_Source.tar.gz</p><p>Kind regards,<br>Chenhao Hu.</p><legend>Files</legend> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1810/clipboard-202306061624-61ju5.png" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1810/clipboard-202306061624-61ju5.png" target="_blank">clipboard-202306061624-61ju5.png</a> (34.9 KB)<br> <hr>
+<p>My Redmine (プロジェクト運営支援SaaS) から送信<br><a href="http://hosting.redmine.jp/" rel="nofollow noreferrer noopener" target="_blank">http://hosting.redmine.jp/</a></p>
+
+### ARTICLE06_HEADER
+Id=31661
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.07.2023 00:02:41 +00:00
+UpdatedAt=09.07.2023 00:02:42 +00:00
+
+### ARTICLE06_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE06_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".

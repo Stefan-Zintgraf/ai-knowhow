@@ -1,0 +1,123 @@
+### HEADER
+Id=6052
+Link=http://at-zammad/#ticket/zoom/6052
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=Omron Automation Americas, PPMAC (ID=562, Number=562)
+Number=706052
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=farooq.ahmad@omron.com (ID=233, FirstName=Farooq, LastName=Ahmad)
+CreatedBy=farooq.ahmad@omron.com (ID=233, FirstName=Farooq, LastName=Ahmad)
+Type=
+TimeUnit=
+CreatedAt=26.07.2023 20:48:15 +00:00
+UpdatedAt=22.08.2023 06:13:02 +00:00
+CloseAt=22.08.2023 06:13:02 +00:00
+ArticlesCount=2
+
+### TITLE
+Realtek chip8111H does not work on first try
+
+### ARTICLE00_HEADER
+Id=32292
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.07.2023 20:48:16 +00:00
+UpdatedAt=26.07.2023 20:48:23 +00:00
+
+### ARTICLE00_SUBJECT
+Realtek chip8111H does not work on first try
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Cyril,</p>
+<p> </p>
+<p>Last year, we upgraded the network port with updated chip from Realtek (version 8111H). You provided the new RTL8169 driver and it works on second try but NOT first time. On a cold boot I have to run the EcMasterDemo twice for the EtherCAT to initialize the ring.</p>
+<p> </p>
+<p>I have created three log files using verbose level to 7</p>
+<p>1. <span dir="LTR"></span>R8111H (1<sup>st</sup> time trying to connect to a Copley slave): ecmaster0.0.log_NG_r8111H</p>
+<p>2. <span dir="LTR"></span>R8111H (2<sup>nd</sup> time trying to connect to a Copley slave): ecmaster0.0.log_r8111H_2ndtry</p>
+<p>3. <span dir="LTR"></span>R8111F (1<sup>st</sup> time works fine): ecmaster0.0.log_r8111F</p>
+<p> </p>
+<p>Can you look at the attached log files and suggest correction so that R8111H works the first time?</p>
+<p><span style="color:#0075b0;"><img style="max-width:100%;width:4.5083in;max-height:.4666in;width:433px;max-height:45px;" src="/api/v1/ticket_attachment/6052/32292/134460?view=inline" alt="signature_1559069281"></span></p>
+<p><span style="color:#0075b0;">Farooq Ahmad</span></p>
+<p><span style="color:#929292;">Firmware Engineering Manager</span></p>
+<p><span style="color:#929292;">Direct: 818.717.5667 | </span><span> <a href="mailto:farooq.ahmad@omron.com"><span style="color:blue;">farooq.ahmad@omron.com</span></a></span></p>
+<p> </p>
+<p><span lang="FR" style="color:#0075b0;">Omron Automation Americas</span></p>
+<p><span lang="FR" style="color:#929292;">9200 Oakdale Ave. Suite 900, Chatsworth, CA 91311</span></p>
+<p><a href="https://bit.ly/3dz9EH3" title="https://automation.omron.com/en/us/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">automation.omron.com</span></a></p>
+<p> </p>
+<p><a href="https://bit.ly/3szOY5T" title="https://www.linkedin.com/company/omron-automation-americas/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0075b0;"><img border="0" style="max-width:100%;width:.325in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/6052/32292/134461?view=inline" alt="signature_1593825543"></span></a><a href="https://bit.ly/3vh2lKb" rel="nofollow noreferrer noopener" title="https://bit.ly/3vh2lKb" target="_blank"><span style="color:#0095cb;"><img border="0" style="max-width:100%;width:.25in;max-height:.25in;width:24px;max-height:24px;" src="/api/v1/ticket_attachment/6052/32292/134462?view=inline" alt="signature_48633699"></span></a><a href="https://bit.ly/3n2AOt1" title="https://www.instagram.com/omronautomation" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0095cb;"><img border="0" style="max-width:100%;width:.325in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/6052/32292/134463?view=inline" alt="signature_1432883732"></span></a><a href="https://bit.ly/3ehqxF3" title="https://twitter.com/OmronAutomation" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0095cb;"><img border="0" style="max-width:100%;width:.2916in;max-height:.25in;width:28px;max-height:24px;" src="/api/v1/ticket_attachment/6052/32292/134464?view=inline" alt="signature_1894500672"></span></a><a href="https://bit.ly/3n3lgoL" title="http://www.youtube.com/OmronAutomationTech" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0095cb;"><img border="0" style="max-width:100%;width:.3666in;max-height:.25in;width:35px;max-height:24px;" src="/api/v1/ticket_attachment/6052/32292/134465?view=inline" alt="signature_1099395179"></span></a></p>
+<p> </p>
+<p><i><span style="color:#cbcbcb;">This is a confidential message. If received in error, delete it and notify the sender.</span></i><span style="color:#cbcbcb;"> </span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=32490
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.08.2023 10:19:38 +00:00
+UpdatedAt=01.08.2023 10:19:40 +00:00
+
+### ARTICLE01_SUBJECT
+Realtek chip8111H does not work on first try
+
+### ARTICLE01_BODY
+Hi Farooq,<div><br></div><div>I see in your logs, that the linklayer is still V3.1.1.03, but Haithem provide you V3.1.3.02 containing the fix in March 2022. Can you please double check. Thanks!</div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, July 26, 2023 at 10:48:16 PM, Farooq Ahmad wrote:<br><br><div>
+<p>Dear Cyril,</p>
+<p> </p>
+<p>Last year, we upgraded the network port with updated chip from Realtek (version 8111H). You provided the new RTL8169 driver and it works on second try but NOT first time. On a cold boot I have to run the EcMasterDemo twice for the EtherCAT to initialize the ring.</p>
+<p> </p>
+<p>I have created three log files using verbose level to 7</p>
+<p>1. <span dir="LTR"></span>R8111H (1<sup>st</sup> time trying to connect to a Copley slave): ecmaster0.0.log_NG_r8111H</p>
+<p>2. <span dir="LTR"></span>R8111H (2<sup>nd</sup> time trying to connect to a Copley slave): ecmaster0.0.log_r8111H_2ndtry</p>
+<p>3. <span dir="LTR"></span>R8111F (1<sup>st</sup> time works fine): ecmaster0.0.log_r8111F</p>
+<p> </p>
+<p>Can you look at the attached log files and suggest correction so that R8111H works the first time?</p>
+<p><span style="color:#0075b0;"><img style="max-width:100%;max-width:100%;width:4.5083in;max-height:.4666in;width:433px;max-height:45px;" src="/api/v1/ticket_attachment/6052/32490/135577?view=inline" alt="signature_1559069281"></span></p>
+<p><span style="color:#0075b0;">Farooq Ahmad</span></p>
+<p><span style="color:#929292;">Firmware Engineering Manager</span></p>
+<p><span style="color:#929292;">Direct: 818.717.5667 | </span><span> <a href="mailto:farooq.ahmad@omron.com"><span style="color:blue;">farooq.ahmad@omron.com</span></a></span></p>
+<p> </p>
+<p><span lang="FR" style="color:#0075b0;">Omron Automation Americas</span></p>
+<p><span lang="FR" style="color:#929292;">9200 Oakdale Ave. Suite 900, Chatsworth, CA 91311</span></p>
+<p><a href="https://bit.ly/3dz9EH3" title="https://automation.omron.com/en/us/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">automation.omron.com</span></a></p>
+<p> </p>
+<p><a href="https://bit.ly/3szOY5T" title="https://www.linkedin.com/company/omron-automation-americas/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0075b0;"><img border="0" style="max-width:100%;max-width:100%;width:.325in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/6052/32490/135578?view=inline" alt="signature_1593825543"></span></a><a href="https://bit.ly/3vh2lKb" rel="nofollow noreferrer noopener" title="https://bit.ly/3vh2lKb" target="_blank"><span style="color:#0095cb;"><img border="0" style="max-width:100%;max-width:100%;width:.25in;max-height:.25in;width:24px;max-height:24px;" src="/api/v1/ticket_attachment/6052/32490/135579?view=inline" alt="signature_48633699"></span></a><a href="https://bit.ly/3n2AOt1" title="https://www.instagram.com/omronautomation" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0095cb;"><img border="0" style="max-width:100%;max-width:100%;width:.325in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/6052/32490/135580?view=inline" alt="signature_1432883732"></span></a><a href="https://bit.ly/3ehqxF3" title="https://twitter.com/OmronAutomation" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0095cb;"><img border="0" style="max-width:100%;max-width:100%;width:.2916in;max-height:.25in;width:28px;max-height:24px;" src="/api/v1/ticket_attachment/6052/32490/135581?view=inline" alt="signature_1894500672"></span></a><a href="https://bit.ly/3n3lgoL" title="http://www.youtube.com/OmronAutomationTech" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0095cb;"><img border="0" style="max-width:100%;max-width:100%;width:.3666in;max-height:.25in;width:35px;max-height:24px;" src="/api/v1/ticket_attachment/6052/32490/135582?view=inline" alt="signature_1099395179"></span></a></p>
+<p> </p>
+<p><i><span style="color:#cbcbcb;">This is a confidential message. If received in error, delete it and notify the sender.</span></i><span style="color:#cbcbcb;"> </span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

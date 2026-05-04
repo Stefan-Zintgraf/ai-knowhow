@@ -1,0 +1,159 @@
+### HEADER
+Id=10450
+Link=http://at-zammad/#ticket/zoom/10450
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=John Deere Electronic Solutions  (ID=360, Number=54508, Country=US)
+Commission=John Deere,Tractor Impl.Electr. (ID=427, Number=427)
+Number=7010450
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=zitzowkirklandj@johndeere.com (ID=3140, FirstName=Kirkland, LastName=Zitzow)
+CreatedBy=zitzowkirklandj@johndeere.com (ID=3140, FirstName=Kirkland, LastName=Zitzow)
+Type=
+TimeUnit=
+CreatedAt=23.04.2025 20:57:08 +00:00
+UpdatedAt=06.05.2025 06:08:02 +00:00
+CloseAt=24.04.2025 10:22:58 +00:00
+ArticlesCount=3
+
+### TITLE
+EtherCAT Master SDK Support
+
+### ARTICLE00_HEADER
+Id=59903
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.04.2025 20:57:08 +00:00
+UpdatedAt=23.04.2025 20:57:08 +00:00
+
+### ARTICLE00_SUBJECT
+EtherCAT Master SDK Support
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,<br>
+<br> I’m reaching out to ask some questions about development with the EC Master SDK.<br> I’m working to actually compile the ECMaster Demo software that was included in the package to better understand it so we can then tweak it to create an EEPROM Read executable.<br>
+<br> What compiling method is used for the EC Master Demo?</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p><b><span style="color:#367c2b;">Kirkland Zitzow</span></b></p>
+<p><b><span style="color:#367c2b;">ICT Engineer</span></b></p>
+<p><b><span style="color:#367c2b;">(He/Him/His)</span></b></p>
+<p><b><span style="color:#367c2b;">John Deere NPI</span></b></p>
+<p>1750 NDSU Research Park Dr N</p>
+<p>Fargo, ND 58102</p>
+<p>Office: 701-451-3600</p>
+<p> </p>
+</div><br>
+<p>Company Use<br>
+</p>
+
+### ARTICLE01_HEADER
+Id=59909
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.04.2025 10:22:48 +00:00
+UpdatedAt=24.04.2025 10:22:49 +00:00
+
+### ARTICLE01_SUBJECT
+EtherCAT Master SDK Support
+
+### ARTICLE01_BODY
+<div>
+<br><br>
+</div><div><blockquote type="cite">
+<div>Subject: EtherCAT Master SDK Support<br>Date: 04/23/2025 22:57<br>From: Kirkland Zitzow &lt;zitzowkirklandj@johndeere.com&gt;<br>To: EtherCAT Support &lt;ecsupport@acontis.com&gt;, C Judson Beemer &lt;BeemerCJudson@JohnDeere.com&gt;<br><br>
+</div>
+<div>
+<p>Hello,<br>
+<br> I’m reaching out to ask some questions about development with the EC Master SDK.<br> I’m working to actually compile the ECMaster Demo software that was included in the package to better understand it so we can then tweak it to create an EEPROM Read executable.<br>
+<br> What compiling method is used for the EC Master Demo?</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p><b><span style="color:#367c2b;">Kirkland Zitzow</span></b></p>
+<p><b><span style="color:#367c2b;">ICT Engineer</span></b></p>
+<p><b><span style="color:#367c2b;">(He/Him/His)</span></b></p>
+<p><b><span style="color:#367c2b;">John Deere NPI</span></b></p>
+<p>1750 NDSU Research Park Dr N</p>
+<p>Fargo, ND 58102</p>
+<p>Office: 701-451-3600</p>
+<p> </p>
+</div>
+<br>
+<p>Company Use<br>
+</p>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=59926
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.04.2025 14:23:47 +00:00
+UpdatedAt=24.04.2025 14:23:50 +00:00
+
+### ARTICLE02_SUBJECT
+EtherCAT Master SDK Support
+
+### ARTICLE02_BODY
+Hi Kirkland,<div><br></div><div>thank you for sharing the detail.</div><div><br></div><div>If you are new to EC-Master and EC-STA, I recommend the resources in our development center:</div><div>
+<div><a href="https://developer.acontis.com/ec-master" title="https://developer.acontis.com/ec-master" rel="nofollow noreferrer noopener" target="_blank">https://developer.acontis.com/ec-master</a></div>
+<div><br></div>
+<div>Beside this, also these slides maybe helpful:</div>
+<div><div><a href="https://www.acontis.com/files/apa/sales/slides/ectraining/pdf/AT3010_V1.3_Training-EtherCAT-Master-Hands-On.pdf" title="https://www.acontis.com/files/apa/sales/slides/ectraining/pdf/AT3010_V1.3_Training-EtherCAT-Master-Hands-On.pdf" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/files/apa/sales/slides/ectraining/pdf/AT3010_V1.3_Training-EtherCAT-Master-Hands-On.pdf</a></div></div>
+<div><div><a href="https://www.acontis.com/files/apa/sales/slides/ectraining/pdf/AT3011_V1.4_Training-EC-Master-Demo-Application-Hands-On.pdf" title="https://www.acontis.com/files/apa/sales/slides/ectraining/pdf/AT3011_V1.4_Training-EC-Master-Demo-Application-Hands-On.pdf" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/files/apa/sales/slides/ectraining/pdf/AT3011_V1.4_Training-EC-Master-Demo-Application-Hands-On.pdf</a></div></div>
+<div><br></div>
+<div>Please let us know your further questions.</div>
+<div><br></div>
+<div>Best Regards</div>
+<div><br></div>
+<div>Christoph</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, April 23, 2025 at 10:57:08 PM, Kirkland Zitzow wrote:<br><br><div>
+<p>Hello,<br>
+<br> I’m reaching out to ask some questions about development with the EC Master SDK.<br> I’m working to actually compile the ECMaster Demo software that was included in the package to better understand it so we can then tweak it to create an EEPROM Read executable.<br>
+<br> What compiling method is used for the EC Master Demo?</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p><b><span style="color:#367c2b;">Kirkland Zitzow</span></b></p>
+<p><b><span style="color:#367c2b;">ICT Engineer</span></b></p>
+<p><b><span style="color:#367c2b;">(He/Him/His)</span></b></p>
+<p><b><span style="color:#367c2b;">John Deere NPI</span></b></p>
+<p>1750 NDSU Research Park Dr N</p>
+<p>Fargo, ND 58102</p>
+<p>Office: 701-451-3600</p>
+<p> </p>
+</div>
+<br>
+<p>Company Use<br>
+</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

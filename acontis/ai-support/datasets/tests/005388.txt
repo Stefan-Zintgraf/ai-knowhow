@@ -1,0 +1,118 @@
+### HEADER
+Id=5388
+Link=http://at-zammad/#ticket/zoom/5388
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=AMESS, Motion Controller (ID=730, Number=730)
+Number=705388
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=13.04.2023 11:25:37 +00:00
+UpdatedAt=01.08.2023 15:27:43 +00:00
+CloseAt=01.08.2023 15:27:43 +00:00
+ArticlesCount=2
+
+### TITLE
+About some question when using master stack with TI RTOS
+
+### ARTICLE00_HEADER
+Id=28541
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.04.2023 11:25:37 +00:00
+UpdatedAt=13.04.2023 11:25:41 +00:00
+
+### ARTICLE00_SUBJECT
+About some question when using master stack with TI RTOS
+
+### ARTICLE00_BODY
+<p>Hi.</p><p><br></p><p>The customer is Ames &amp; using TI/RTOS</p><p><br></p><p>They have some question as below.</p><p><br></p><p>1. Can multi-bus be used in CPSW or ICSS Link layer ?</p><p><br></p><p>2. Is there a way to leave the log of Acontis as a file ?</p><p>(Currently, log can only be viewed in the console window and cannot be saved)</p><p><br></p><p>3. They want to check the hardware jitter(between the time the master sends cyclic data and the last slave receive data)</p><p>Can we confirm it through Acontis log ?</p><p><br></p><p>Have a nice day.</p><br><br><p><br></p><p>감사합니다.</p><p><br></p><p>Thank you</p><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p><img src="/api/v1/ticket_attachment/5388/28541/120608?view=inline" title="" alt="" style="max-width:100%;width: 129px;max-height: 103px;"></p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sundukhan@prestosolution.co.kr</a></span></u></i><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table><p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+
+### ARTICLE01_HEADER
+Id=28662
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.04.2023 12:31:53 +00:00
+UpdatedAt=17.04.2023 12:31:57 +00:00
+
+### ARTICLE01_SUBJECT
+About some question when using master stack with TI RTOS
+
+### ARTICLE01_BODY
+<div>Hi,</div><div>1. </div><div>Yes you can use the ports for different Master, but the first of each has to be started with the bMaster flag.</div><div><br></div><div>2.</div><div>For the Dcm Log you can change "<span>bPrintConsole" "</span><span>/* print message on console? */" </span><span>flag </span><span>in the EcLogging.cpp for the DCM message buffer</span>
+</div><div><span>so it's printed on the console.</span></div><div><span>You maybe need to enlarge the message buffer and stop the other logs.</span></div><div><span><br></span></div><div>I'm working on SD card access for sysbios for the eni-file and logging</div><div><div>You need EcMaster.cfg, main.c, EcOs.cpp and <span>EcDemoPlatform.h from this packages (maybe some more)</span>
+</div></div><div>
+<a href="https://downloads.acontis.com/temp/dsd/2023/AMESS/EC-Master-ClassA-AddOn-V3.1.4.99-SYSBIOS-ARM_32Bit-Eval.zip" title="https://downloads.acontis.com/temp/dsd/2023/AMESS/EC-Master-ClassA-AddOn-V3.1.4.99-SYSBIOS-ARM_32Bit-Eval.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/temp/dsd/2023/AMESS/EC-Master-ClassA-AddOn-V3.1.4.99-SYSBIOS-ARM_32Bit-Eval.zip</a><br>
+</div><div><div>
+<a href="https://downloads.acontis.com/temp/dsd/2023/AMESS/EC-Master-V3.1.4.99-SYSBIOS-ARM_32Bit-Eval.zip" title="https://downloads.acontis.com/temp/dsd/2023/AMESS/EC-Master-V3.1.4.99-SYSBIOS-ARM_32Bit-Eval.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/temp/dsd/2023/AMESS/EC-Master-V3.1.4.99-SYSBIOS-ARM_32Bit-Eval.zip</a><br>
+</div></div><div><br></div><div>3.</div><div>can you use a gpio pin for your tests, I made some test with the timer 2 years ago.</div><div>
+<a href="https://downloads.acontis.com/temp/dsd/2023/AMESS/am57xx_free_gpio_pin_SYSBIOS.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/temp/dsd/2023/AMESS/am57xx_free_gpio_pin_SYSBIOS.zip</a><br>
+</div><div><br></div><div>Best regards</div><div>Daniel</div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Thursday, 13 April 2023 at 13:25:37, DukHan Sun wrote:<br><br><p>Hi.</p>
+<p><br></p>
+<p>The customer is Ames &amp; using TI/RTOS</p>
+<p><br></p>
+<p>They have some question as below.</p>
+<p><br></p>
+<p>1. Can multi-bus be used in CPSW or ICSS Link layer ?</p>
+<p><br></p>
+<p>2. Is there a way to leave the log of Acontis as a file ?</p>
+<p>(Currently, log can only be viewed in the console window and cannot be saved)</p>
+<p><br></p>
+<p>3. They want to check the hardware jitter(between the time the master sends cyclic data and the last slave receive data)</p>
+<p>Can we confirm it through Acontis log ?</p>
+<p><br></p>
+<p>Have a nice day.</p>
+<br><br><p><br></p>
+<p>감사합니다.</p>
+<p><br></p>
+<p>Thank you</p>
+<p><br></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p><img src="/api/v1/ticket_attachment/5388/28662/121024?view=inline" title="" alt="" style="max-width:100%;max-width:100%;width: 129px;max-height: 103px;"></p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sundukhan@prestosolution.co.kr</a></span></u></i><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+<br>
+</blockquote></div><div><br></div><br><br>

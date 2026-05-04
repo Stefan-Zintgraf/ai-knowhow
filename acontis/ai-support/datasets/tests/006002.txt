@@ -1,0 +1,125 @@
+### HEADER
+Id=6002
+Link=http://at-zammad/#ticket/zoom/6002
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=intrinsic (ID=597, Number=0, Country=DE)
+Commission=X (Intrinsic), Real-time robot motion control (ID=676, Number=676)
+Number=706002
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=sesc@intrinsic.ai (ID=1649, FirstName=Sebastian, LastName=Schneider)
+CreatedBy=sesc@intrinsic.ai (ID=1649, FirstName=Sebastian, LastName=Schneider)
+Type=
+TimeUnit=
+CreatedAt=19.07.2023 11:42:49 +00:00
+UpdatedAt=19.07.2023 18:42:11 +00:00
+CloseAt=19.07.2023 18:42:07 +00:00
+ArticlesCount=3
+
+### TITLE
+Support for Intel network controllers
+
+### ARTICLE00_HEADER
+Id=31994
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.07.2023 11:42:49 +00:00
+UpdatedAt=19.07.2023 11:42:49 +00:00
+
+### ARTICLE00_SUBJECT
+Support for Intel network controllers
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi Jon,<div> </div>
+<div>We've come across some hardware that uses this ethernet controller from intel: <a href="https://ark.intel.com/content/www/us/en/ark/products/64404/intel-ethernet-controller-i211at.html" rel="nofollow noreferrer noopener" target="_blank">https://ark.intel.com/content/www/us/en/ark/products/64404/intel-ethernet-controller-i211at.html</a>
+</div>
+<div> </div>
+<div>Currently, we only have the link layer for I8254X, RTL8169 and sockraw. Do you know if I211-AT is also supported? Do you show the supported controllers on your website? I did a quick search earlier, but didn't find anything.</div>
+<div> </div>
+<div>Best,</div>
+<div> </div>
+<div>Sebastian<br><div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr">
+<table style="color:rgb(0,0,0);font-size:22px;border:0px;"><tbody><tr>
+<td style="padding:20px;"></td>
+<td style="padding:20px 0px 20px 10px;font-size:14px;">
+<b>Sebastian Schneider (he/him)</b><br>Safety Software Engineer<br><a href="mailto:sesc@intrinsic.ai">sesc@intrinsic.ai</a> <span style="color:rgb(209,209,209);">|</span> <a href="http://intrinsic.ai" rel="nofollow noreferrer noopener" target="_blank">intrinsic.ai</a><br>
+</td>
+</tr></tbody></table>
+<p>Intrinsic Innovation GmbH, ABC-Straße 19, 20354 Hamburg</p>
+<p>Geschäftsführer: Jennifer R. Wall, Brett E. Koons<br>Registergericht und -nummer: Hamburg, HRB 161662<br>Sitz der Gesellschaft: Hamburg</p>
+<p>Diese E-Mail ist vertraulich. Falls sie diese fälschlicherweise erhalten haben sollten, leiten Sie diese bitte nicht an jemand anderes weiter, löschen Sie alle Kopien und Anhänge davon und lassen Sie mich bitte wissen, dass die E-Mail an die falsche Person gesendet wurde.</p>
+<p>This email is confidential. If you received this communication by mistake, please don't forward it to anyone else, please erase all copies and attachments, and please let me know that it has gone to the wrong person.</p>
+</div></div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=32009
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=19.07.2023 16:44:32 +00:00
+UpdatedAt=19.07.2023 16:44:32 +00:00
+
+### ARTICLE01_BODY
+<div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/supported-nics/emllI8254x.html#emlli8254x" title="https://public.acontis.com/manuals/EC-Master/3.1/html/supported-nics/emllI8254x.html#emlli8254x" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/supported-nics/emllI8254x.html#emlli8254x</a></div>
+
+### ARTICLE02_HEADER
+Id=32022
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.07.2023 18:42:07 +00:00
+UpdatedAt=19.07.2023 18:42:11 +00:00
+
+### ARTICLE02_SUBJECT
+Support for Intel network controllers
+
+### ARTICLE02_BODY
+<div>Hi Sebastian,</div><div><br></div><div>Yes this is supported already in the I8254x link layer (Intel Gigabit controllers). We maintain a list of the network controllers we support for each link layer at this link on our Developer Center area: <br><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/supported-nics/emllI8254x.html#emlli8254x" title="https://public.acontis.com/manuals/EC-Master/3.1/html/supported-nics/emllI8254x.html#emlli8254x" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/supported-nics/emllI8254x.html#emlli8254x</a></div>
+</div><div><br></div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Jon Waters</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +1-508-809-7200</div>
+<div>acontis technologies Inc.,  945 Concord Street, Framingham, MA 01701, United States, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Wednesday, July 19, 2023 at 7:42:49 AM, Sebastian Schneider wrote:<br><br><div dir="ltr">Hi Jon,<div> </div>
+<div>We've come across some hardware that uses this ethernet controller from intel: <a href="https://ark.intel.com/content/www/us/en/ark/products/64404/intel-ethernet-controller-i211at.html" rel="nofollow noreferrer noopener" target="_blank">https://ark.intel.com/content/www/us/en/ark/products/64404/intel-ethernet-controller-i211at.html</a>
+</div>
+<div> </div>
+<div>Currently, we only have the link layer for I8254X, RTL8169 and sockraw. Do you know if I211-AT is also supported? Do you show the supported controllers on your website? I did a quick search earlier, but didn't find anything.</div>
+<div> </div>
+<div>Best,</div>
+<div> </div>
+<div>Sebastian<br><div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr">
+<table style="color:rgb(0,0,0);font-size:22px;border:0px;"><tbody><tr>
+<td style="padding:20px;"></td>
+<td style="padding:20px 0px 20px 10px;font-size:14px;">
+<b>Sebastian Schneider (he/him)</b><br>Safety Software Engineer<br><a href="mailto:sesc@intrinsic.ai">sesc@intrinsic.ai</a> <span style="color:rgb(209,209,209);">|</span> <a href="http://intrinsic.ai" rel="nofollow noreferrer noopener" target="_blank">intrinsic.ai</a><br>
+</td>
+</tr></tbody></table>
+<p>Intrinsic Innovation GmbH, ABC-Straße 19, 20354 Hamburg</p>
+<p>Geschäftsführer: Jennifer R. Wall, Brett E. Koons<br>Registergericht und -nummer: Hamburg, HRB 161662<br>Sitz der Gesellschaft: Hamburg</p>
+<p>Diese E-Mail ist vertraulich. Falls sie diese fälschlicherweise erhalten haben sollten, leiten Sie diese bitte nicht an jemand anderes weiter, löschen Sie alle Kopien und Anhänge davon und lassen Sie mich bitte wissen, dass die E-Mail an die falsche Person gesendet wurde.</p>
+<p>This email is confidential. If you received this communication by mistake, please don't forward it to anyone else, please erase all copies and attachments, and please let me know that it has gone to the wrong person.</p>
+</div></div>
+</div>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

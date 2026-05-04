@@ -1,0 +1,147 @@
+### HEADER
+Id=5304
+Link=http://at-zammad/#ticket/zoom/5304
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Dinghan, PSDES-4 door system (ID=770, Number=770)
+Number=705304
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=03.04.2023 05:35:27 +00:00
+UpdatedAt=21.04.2023 06:29:34 +00:00
+CloseAt=21.04.2023 06:29:34 +00:00
+ArticlesCount=4
+
+### TITLE
+The potential customer dinghan requirement
+
+### ARTICLE00_HEADER
+Id=28087
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.04.2023 05:35:27 +00:00
+UpdatedAt=03.04.2023 05:35:30 +00:00
+
+### ARTICLE00_SUBJECT
+The potential customer dinghan requirement
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>We are connecting with a potential customer dinghan, this department is metro screen door. And they want to using EtherCAT master redundancy.</div>
+<div>But they have a requirement is different from ECMaster master redundancy.</div>
+<div>We introduce the master redundancy as following picture:</div>
+<div><img src="/api/v1/ticket_attachment/5304/28087/118611?view=inline" style="max-width:100%;width:533px;max-height:229px;"></div>
+<div> </div>
+<div>But they consider it is a little bit different for field service, They want to using the following struct:</div>
+<div><img src="/api/v1/ticket_attachment/5304/28087/118612?view=inline" style="max-width:100%;width:539px;max-height:241px;"></div>
+<div> I learn that they want to inserting the inactive master between the slave. <span style="color:#1f497d;">Do you think it could support?</span>
+</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=28100
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=03.04.2023 07:52:11 +00:00
+UpdatedAt=03.04.2023 07:52:11 +00:00
+
+### ARTICLE01_BODY
+Hi Paul,<div><br></div><div>was waren dabei die Einschränkungen?</div>
+
+### ARTICLE02_HEADER
+Id=28101
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=03.04.2023 08:08:45 +00:00
+UpdatedAt=03.04.2023 08:08:45 +00:00
+
+### ARTICLE02_BODY
+Es dürfen keine OUTPUTs vom Safety-Vorgängerzyklus an den Safety Slave geschickt werden, sonst steigt er aus.
+
+### ARTICLE03_HEADER
+Id=28105
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.04.2023 08:52:39 +00:00
+UpdatedAt=03.04.2023 08:52:41 +00:00
+
+### ARTICLE03_SUBJECT
+The potential customer dinghan requirement
+
+### ARTICLE03_BODY
+Hi John,<div><br></div><div>We currently not support to have the Master "in the middle". This was a design simplification for the implementation. I think that it is technically possible but it will mean some effort.</div><div>Our BusScan must be aware of it for example and perhaps the application needs to configure the position of the master by calling a new API... We need to estimate this effort. (I think several months of work)</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Monday, April 3, 2023 at 7:35:27 AM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>We are connecting with a potential customer dinghan, this department is metro screen door. And they want to using EtherCAT master redundancy.</div>
+<div>But they have a requirement is different from ECMaster master redundancy.</div>
+<div>We introduce the master redundancy as following picture:</div>
+<div><img src="/api/v1/ticket_attachment/5304/28105/118675?view=inline" style="max-width:100%;max-width:100%;width:533px;max-height:229px;"></div>
+<div> </div>
+<div>But they consider it is a little bit different for field service, They want to using the following struct:</div>
+<div><img src="/api/v1/ticket_attachment/5304/28105/118676?view=inline" style="max-width:100%;max-width:100%;width:539px;max-height:241px;"></div>
+<div> I learn that they want to inserting the inactive master between the slave. <span style="color:#1f497d;">Do you think it could support?</span>
+</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

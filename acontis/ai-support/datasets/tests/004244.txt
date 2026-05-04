@@ -1,0 +1,240 @@
+### HEADER
+Id=4244
+Link=http://at-zammad/#ticket/zoom/4244
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=704244
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=paul@deltamotion.com (ID=659, FirstName=Paul, LastName=Huumala)
+CreatedBy=paul@deltamotion.com (ID=659, FirstName=Paul, LastName=Huumala)
+Type=
+TimeUnit=
+CreatedAt=02.11.2022 21:12:55 +00:00
+UpdatedAt=04.11.2022 05:48:22 +00:00
+CloseAt=04.11.2022 05:48:22 +00:00
+ArticlesCount=3
+
+### TITLE
+Bus Scan
+
+### ARTICLE00_HEADER
+Id=22340
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.11.2022 21:12:56 +00:00
+UpdatedAt=02.11.2022 21:12:59 +00:00
+
+### ARTICLE00_SUBJECT
+Bus Scan
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Support,</p>
+<p> </p>
+<p>I am trying to better understand how Bus Scan works in EcEngineer. In EcDevice::ScanWithNotifications(…), I see that we only configure the master when <i>!rasIsConfigured </i>is true. This corresponds to the master not having an ENI file downloaded. Calling ConfigureMaster(true) results in GenPreOp being called. This works best for us when we change our network. </p>
+<p> </p>
+<p>Questions:</p>
+<ul type="disc">
+<li>Why shouldn’t you invoke GePreOp when doing a network scan?</li>
+<li>When you start a network scan, EcEngineer indicates that all slaves will be removed. Does this process preserve any slave data? For example, you only added one slave?</li>
+</ul>
+<p> </p>
+<p>I’m trying to better understand how the Bus Scan works. If you could provide a general overview of how EcEngineer performs a network scan, that would be great!</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Paul Huumala</p>
+<p>Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p>360-254-8688</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=22364
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.11.2022 09:58:31 +00:00
+UpdatedAt=03.11.2022 09:58:33 +00:00
+
+### ARTICLE01_SUBJECT
+Bus Scan
+
+### ARTICLE01_BODY
+Hi Paul,<div><br></div><div>you have to look at that on an other way: we always use ConfigureMaster(true). Just not if we scan a configured RAS master. So you have to invoke GenPreOp ENI when you doing a network scan. </div><div>"RasIsConfigured" means that there is a Master running with an ENI file and we try to scan the running system over RAS. So we would override the running configuration with GenPreOpEni and that should not be done. </div><div>But if you scan a RAS master without an ENI file or your local master, then you should always call GenPreOpEni.</div><div><br></div><div>If you scan the network all information from your config will be gone. For the case that you just want to add one slave, we have the Edit Topology Dialog under the Network Menu. There you can scan and merge the result into your existing config.</div><div><br></div><div>Best regards,</div><div>Kai <br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/4244/22364/94295?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, November 2, 2022 at 10:12:56 PM, Paul Huumala wrote:<br><br><div>
+<p>Hi Support,</p>
+<p> </p>
+<p>I am trying to better understand how Bus Scan works in EcEngineer. In EcDevice::ScanWithNotifications(…), I see that we only configure the master when <i>!rasIsConfigured </i>is true. This corresponds to the master not having an ENI file downloaded. Calling ConfigureMaster(true) results in GenPreOp being called. This works best for us when we change our network. </p>
+<p> </p>
+<p>Questions:</p>
+<ul type="disc">
+<li>Why shouldn’t you invoke GePreOp when doing a network scan?</li>
+<li>When you start a network scan, EcEngineer indicates that all slaves will be removed. Does this process preserve any slave data? For example, you only added one slave?</li>
+</ul>
+<p> </p>
+<p>I’m trying to better understand how the Bus Scan works. If you could provide a general overview of how EcEngineer performs a network scan, that would be great!</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Paul Huumala</p>
+<p>Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p>360-254-8688</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=22389
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.11.2022 21:17:50 +00:00
+UpdatedAt=03.11.2022 21:17:50 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Bus Scan [Ticket#704244]
+
+### ARTICLE02_BODY
+<div>
+<p>Hi Kai,</p>
+<p> </p>
+<p>Thanks for the explanation, that makes sense.</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Paul</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Thursday, November 3, 2022 2:59 AM<br>
+<b>To:</b> Paul Huumala &lt;Paul@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: Bus Scan [Ticket#704244]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Paul,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>you have to look at that on an other way: we always use ConfigureMaster(true). Just not if we scan a configured RAS master. So you have to invoke GenPreOp ENI when you doing a network scan.</p>
+</div>
+<div>
+<p>"RasIsConfigured" means that there is a Master running with an ENI file and we try to scan the running system over RAS. So we would override the running configuration with GenPreOpEni and that should not be done.</p>
+</div>
+<div>
+<p>But if you scan a RAS master without an ENI file or your local master, then you should always call GenPreOpEni.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>If you scan the network all information from your config will be gone. For the case that you just want to add one slave, we have the Edit Topology Dialog under the Network Menu. There you can scan and merge the result into your existing config.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best regards,</p>
+</div>
+<div>
+<p>Kai</p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Kai Feifel</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p><img border="0" style="max-width:100%;width:5.2083in;max-height:1.4583in;width:500px;max-height:140px;" src="/api/v1/ticket_attachment/4244/22389/94400?view=inline"></p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Wednesday, November 2, 2022 at 10:12:56 PM, Paul Huumala wrote:</p>
+<div>
+<p>Hi Support,</p>
+<p> </p>
+<p>I am trying to better understand how Bus Scan works in EcEngineer. In EcDevice::ScanWithNotifications(…), I see that we only configure the master when <i>!rasIsConfigured </i>is true. This corresponds to the master not having an ENI file downloaded. Calling ConfigureMaster(true) results in GenPreOp being called. This works best for us when we change our network. </p>
+<p> </p>
+<p>Questions:</p>
+<ul type="disc">
+<li> Why shouldn’t you invoke GePreOp when doing a network scan?</li>
+<li> When you start a network scan, EcEngineer indicates that all slaves will be removed. Does this process preserve any slave data? For example, you only added one slave?</li>
+</ul>
+<p> </p>
+<p>I’m trying to better understand how the Bus Scan works. If you could provide a general overview of how EcEngineer performs a network scan, that would be great!</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Paul Huumala</p>
+<p>Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p>360-254-8688</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

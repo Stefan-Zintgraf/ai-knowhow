@@ -1,0 +1,100 @@
+### HEADER
+Id=528
+Link=http://at-zammad/#ticket/zoom/528
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Rethink Robotics GmbH (ID=406, Number=0, Country=DE)
+Commission=Rethink Robotics GmbH, Unknown (ID=484, Number=484)
+Number=700528
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=q.shi@rethinkrobotics.com (ID=53, FirstName=Qiyao, LastName=Shi)
+CreatedBy=q.shi@rethinkrobotics.com (ID=53, FirstName=Qiyao, LastName=Shi)
+Type=
+TimeUnit=
+CreatedAt=30.04.2021 09:24:15 +00:00
+UpdatedAt=27.04.2022 05:29:06 +00:00
+CloseAt=30.04.2021 09:28:17 +00:00
+ArticlesCount=2
+
+### TITLE
+Get Frame counter
+
+### ARTICLE00_HEADER
+Id=2869
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.04.2021 09:24:15 +00:00
+UpdatedAt=30.04.2021 09:24:20 +00:00
+
+### ARTICLE00_SUBJECT
+Get Frame counter
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Herr Eyssautier,</p>
+<p> </p>
+<p>Ich möchte gerne wissen wie kann ich irgendwie frame counter bekommen?</p>
+<p>Ich hab in Doku gesucht leider hab nicht gefunden.</p>
+<p> </p>
+<p>Danke im Voraus!</p>
+<p> </p>
+<p><br> Mit freundlichem Gruß / best regards <br>
+<br> Qiyao Shi <br> Robotics Software Engineer <br>
+<b><br>
+</b><b><img style="max-width:100%;width:2.0833in;max-height:1.55in;width:200px;max-height:149px;" src="/api/v1/ticket_attachment/528/2869/9266?view=inline"></b><b><br><br>Rethink Robotics GmbH <br>
+</b>Industriestraße 38c<br> 44894 Bochum<br>
+<br>
+<img style="max-width:100%;width:1.1166in;max-height:.3083in;width:107px;max-height:30px;" src="/api/v1/ticket_attachment/528/2869/9267?view=inline"><br>
+<br>
+<a href="https://www.linkedin.com/company/rethink-robotics/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/rethink-robotics/" target="_blank"><img border="0" style="max-width:100%;width:.3083in;max-height:.3083in;width:30px;max-height:30px;" src="/api/v1/ticket_attachment/528/2869/9268?view=inline"></a> <a href="https://www.facebook.com/rethinkrobotics" rel="nofollow noreferrer noopener" title="https://www.facebook.com/rethinkrobotics" target="_blank"><img border="0" style="max-width:100%;width:.3083in;max-height:.3083in;width:30px;max-height:30px;" src="/api/v1/ticket_attachment/528/2869/9269?view=inline"></a> <a href="https://twitter.com/RethinkRobotics" rel="nofollow noreferrer noopener" title="https://twitter.com/RethinkRobotics" target="_blank"><img border="0" style="max-width:100%;width:.3083in;max-height:.3083in;width:30px;max-height:30px;" src="/api/v1/ticket_attachment/528/2869/9270?view=inline"></a> <a href="https://www.instagram.com/rethinkrobotics/" rel="nofollow noreferrer noopener" title="https://www.instagram.com/rethinkrobotics/" target="_blank"><img border="0" style="max-width:100%;width:.3083in;max-height:.3083in;width:30px;max-height:30px;" src="/api/v1/ticket_attachment/528/2869/9271?view=inline"></a> <a href="https://www.youtube.com/user/RethinkRobotics" title='"" t ' rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;width:.3083in;max-height:.3083in;width:30px;max-height:30px;" src="/api/v1/ticket_attachment/528/2869/9272?view=inline"></a><br><br>Mobil: +49 172 3506728 <br> E-Mail: q.shi@rethinkrobotics.com <br>
+<a href="http://www.rethinkrobotics.com" rel="nofollow noreferrer noopener" target="_blank">www.rethinkrobotics.com</a><br><br>Handelsregister: AG Bochum, HRB 18700 <br> Geschäftsführer: Daniel Bunse, Daniel Otto <br>
+<br> Diese E-Mail enthält vertrauliche und/oder rechtlich geschützte Informationen. Wenn Sie nicht der richtige Adressat sind oder diese E-Mail irrtümlich erhalten haben, informieren Sie bitte sofort den Absender und vernichten Sie diese Mail. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail ist nicht gestattet. <br>
+<br> This e-mail may contain confidential and/or privileged information. If you are not the intended recipient (or have received this e-mail in error) please notify the sender immediately and destroy this e-mail. Any unauthorised copying, disclosure or distribution of the material in this e-mail is strictly forbidden. </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=2871
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.04.2021 09:28:17 +00:00
+UpdatedAt=30.04.2021 09:28:20 +00:00
+
+### ARTICLE01_SUBJECT
+Get Frame counter
+
+### ARTICLE01_BODY
+Hallo Herr Shi,<div><br></div><div>
+<div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=masterinfo#emgetmasterinfo" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=masterinfo#emgetmasterinfo" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=masterinfo#emgetmasterinfo</a></div>
+<div><br></div>
+<div>Schöne Grüße,</div>
+<div>Cyril Eyssautier</div>
+<div><br></div>
+<div><blockquote type="cite">On Friday, April 30, 2021, 11:24:15 AM, Qiyao Shi wrote:<br><br><div>
+<p>Hallo Herr Eyssautier,</p>
+<p> </p>
+<p>Ich möchte gerne wissen wie kann ich irgendwie frame counter bekommen?</p>
+<p>Ich hab in Doku gesucht leider hab nicht gefunden.</p>
+<p> </p>
+<p>Danke im Voraus!</p>
+<p> </p>
+<p><br> Mit freundlichem Gruß / best regards <br>
+<br> Qiyao Shi <br> Robotics Software Engineer <br>
+<b><br>
+</b><b><img style="max-width:100%;max-width:100%;width:2.0833in;max-height:1.55in;width:200px;max-height:149px;" src="/api/v1/ticket_attachment/528/2871/9273?view=inline"></b><b><br><br>Rethink Robotics GmbH <br>
+</b>Industriestraße 38c<br> 44894 Bochum<br>
+<br>
+<img style="max-width:100%;max-width:100%;width:1.1166in;max-height:.3083in;width:107px;max-height:30px;" src="/api/v1/ticket_attachment/528/2871/9274?view=inline"><br>
+<br>
+<a href="https://www.linkedin.com/company/rethink-robotics/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/rethink-robotics/" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.3083in;max-height:.3083in;width:30px;max-height:30px;" src="/api/v1/ticket_attachment/528/2871/9275?view=inline"></a> <a href="https://www.facebook.com/rethinkrobotics" rel="nofollow noreferrer noopener" title="https://www.facebook.com/rethinkrobotics" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.3083in;max-height:.3083in;width:30px;max-height:30px;" src="/api/v1/ticket_attachment/528/2871/9276?view=inline"></a> <a href="https://twitter.com/RethinkRobotics" rel="nofollow noreferrer noopener" title="https://twitter.com/RethinkRobotics" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.3083in;max-height:.3083in;width:30px;max-height:30px;" src="/api/v1/ticket_attachment/528/2871/9277?view=inline"></a> <a href="https://www.instagram.com/rethinkrobotics/" rel="nofollow noreferrer noopener" title="https://www.instagram.com/rethinkrobotics/" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.3083in;max-height:.3083in;width:30px;max-height:30px;" src="/api/v1/ticket_attachment/528/2871/9278?view=inline"></a> <a href="https://www.youtube.com/user/RethinkRobotics" title='"" t ' rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.3083in;max-height:.3083in;width:30px;max-height:30px;" src="/api/v1/ticket_attachment/528/2871/9279?view=inline"></a><br><br>Mobil: +49 172 3506728 <br> E-Mail: q.shi@rethinkrobotics.com <br>
+<a href="http://www.rethinkrobotics.com" rel="nofollow noreferrer noopener" target="_blank">www.rethinkrobotics.com</a><br><br>Handelsregister: AG Bochum, HRB 18700 <br> Geschäftsführer: Daniel Bunse, Daniel Otto <br>
+<br> Diese E-Mail enthält vertrauliche und/oder rechtlich geschützte Informationen. Wenn Sie nicht der richtige Adressat sind oder diese E-Mail irrtümlich erhalten haben, informieren Sie bitte sofort den Absender und vernichten Sie diese Mail. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail ist nicht gestattet. <br>
+<br> This e-mail may contain confidential and/or privileged information. If you are not the intended recipient (or have received this e-mail in error) please notify the sender immediately and destroy this e-mail. Any unauthorised copying, disclosure or distribution of the material in this e-mail is strictly forbidden. </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

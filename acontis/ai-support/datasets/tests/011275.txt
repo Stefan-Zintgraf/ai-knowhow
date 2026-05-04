@@ -1,0 +1,229 @@
+### HEADER
+Id=11275
+Link=http://at-zammad/#ticket/zoom/11275
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Yushin, Removal robot for molding machines (ID=922, Number=922)
+Number=7011275
+Owner=m.danilau@acontis.com (ID=4, FirstName=Maksim, LastName=Danilau)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=25.08.2025 03:40:26 +00:00
+UpdatedAt=01.09.2025 06:00:29 +00:00
+CloseAt=01.09.2025 06:00:29 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Master(YUSHIN) [E123]
+
+### ARTICLE00_HEADER
+Id=64879
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=25.08.2025 03:40:26 +00:00
+UpdatedAt=25.08.2025 03:40:31 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(YUSHIN) [E123]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(YUSHIN) [E123]
+
+The provided Makefile has the "-O0" compile option specified, which disables compiler optimization.
+Is EC-Master not guaranteed to operate correctly with higher optimization levels such as "-O2" or "-O3"?
+
+Best regards,
+Takuya Fujikawa
+
+
+
+
+### ARTICLE01_HEADER
+Id=64881
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.08.2025 06:46:32 +00:00
+UpdatedAt=25.08.2025 06:46:32 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(YUSHIN) [E123]
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>it should also work with -O3, if you are compiling it as a Release.</div><div>For Debug versions we compile with -O0.</div><div><br></div><div>Best Regards </div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, August 25, 2025 at 5:40:26 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(YUSHIN) [E123]</div>
+<div><br></div>
+<div>The provided Makefile has the "-O0" compile option specified, which disables compiler optimization.</div>
+<div>Is EC-Master not guaranteed to operate correctly with higher optimization levels such as "-O2" or "-O3"?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=64898
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=25.08.2025 08:35:04 +00:00
+UpdatedAt=25.08.2025 08:35:04 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master(YUSHIN) [E123] [Ticket#7011275]
+
+### ARTICLE02_BODY
+Dear Haithem san
+
+ > it should also work with -O3, if you are compiling it as a Release.
+
+Please tell me how to compile it as a release.
+
+Best regards,
+Takuya Fujikawa
+
+On 2025/08/25 15:46, Haithem Jebali via EC-Support wrote:
+> Hi,
+> 
+> it should also work with -O3, if you are compiling it as a Release.
+> For Debug versions we compile with -O0.
+> 
+> Best Regards
+> __________________________________________________________________________________________
+> Haithem Jebali
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> On Monday, August 25, 2025 at 5:40:26 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Master(YUSHIN) [E123]
+>>
+>> The provided Makefile has the "-O0" compile option specified, which disables compiler optimization.
+>> Is EC-Master not guaranteed to operate correctly with higher optimization levels such as "-O2" or "-O3"?
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+
+
+### ARTICLE03_HEADER
+Id=64904
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.08.2025 08:57:27 +00:00
+UpdatedAt=25.08.2025 08:57:31 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(YUSHIN) [E123]
+
+### ARTICLE03_BODY
+Dear Mr. Fujikawa,<div><br></div><div>actually the EC-Master library is compiled with '-O3'. The only reason '-O0' switch is used for EcMasterDemo is debugging comfort: if you build your application with '-O3' you will probably get strange debugger behavior.</div><div>If you still want to switch the optimization on for your application change 'OPT += -O0' to i.e. 'OPT += -O3' in 'Workspace\uC3_iMX8\EcMasterDemo\config.mk' (line 10) and rebuild EcMasterDemo and EcMasterDemo_XXXX respectively. Please note: this will not affect optimization level of delivered 'libEcMaster.a' and 'libFslFec.a', they will be still '-O3' optimized.</div><div><br></div><div>
+<div>Best regards,</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Maksim Danilau, M.Sc.</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Montag, 25. August 2025 um 10:35:04, schrieb Takuya Fujikawa:<br><br><div>Dear Haithem san</div>
+<div><br></div>
+<div> &gt; it should also work with -O3, if you are compiling it as a Release.</div>
+<div><br></div>
+<div>Please tell me how to compile it as a release.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2025/08/25 15:46, Haithem Jebali via EC-Support wrote:</div>
+<div>&gt; Hi,</div>
+<div>&gt;</div>
+<div>&gt; it should also work with -O3, if you are compiling it as a Release.</div>
+<div>&gt; For Debug versions we compile with -O0.</div>
+<div>&gt;</div>
+<div>&gt; Best Regards</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Haithem Jebali</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: <a href="mailto:ecsupport@acontis.com" title="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Monday, August 25, 2025 at 5:40:26 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Master(YUSHIN) [E123]</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; The provided Makefile has the "-O0" compile option specified, which disables compiler optimization.</div>
+<div>&gt;&gt; Is EC-Master not guaranteed to operate correctly with higher optimization levels such as "-O2" or "-O3"?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

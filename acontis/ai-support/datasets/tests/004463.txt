@@ -1,0 +1,190 @@
+### HEADER
+Id=4463
+Link=http://at-zammad/#ticket/zoom/4463
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Weiss Umwelttechnik GmbH (ID=172, Number=61008, Country=DE)
+Commission=Weiss, NCG-Steuerung (ID=195, Number=195)
+Number=704463
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=christian.schlosser@weiss-technik.com (ID=469, FirstName=Christian, LastName=Schlosser)
+CreatedBy=christian.schlosser@weiss-technik.com (ID=469, FirstName=Christian, LastName=Schlosser)
+Type=
+TimeUnit=
+CreatedAt=02.12.2022 11:34:17 +00:00
+UpdatedAt=09.12.2022 07:11:03 +00:00
+CloseAt=09.12.2022 07:11:03 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-Engineer - Slave ändern
+
+### ARTICLE00_HEADER
+Id=23564
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.12.2022 11:34:17 +00:00
+UpdatedAt=02.12.2022 11:34:23 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Engineer - Slave ändern
+
+### ARTICLE00_BODY
+<div>Sehr geehrtes Acontis Support Team,</div><div> </div><div>die Fa. Beckhoff hat eine neue Klemme vom Typ EL2809-0015, welche wir jetzt anstatt der Klemme EL2809 verwenden müssen (EL2809 nicht verfügbar).</div><div> </div><div>Frage:</div><div>Gibt es eine einfache Möglichkeit die Klemme EL2809 durch die neue EL2809-0015 zu ersetzen?</div><div>Es müssten dann auch die SPS Variable und der Kommentar ersetzt werden.</div><div> </div><div>Anbei ein Beispielprojekt mit beiden Klemmen und die dazugehörige ESI Datei.</div><div> </div><div>
+<div> </div>
+<div>
+<div>
+<div>
+<div>
+<p>
+<u>Freundliche Grüße / Kind regards</u></p>
+<p> </p>
+<p><u><br>
+</u></p>
+<p>
+<u>i.A. Christian Schlosser</u><span><u><br> R&amp;D Software - Produktentwicklung / R&amp;D Software - Product Development<span><br>
+</span><b>weiss</b>technik</u><p> </p></span></p>
+<p>
+<u><br>
+</u></p>
+<p>
+<u>Weiss Technik GmbH</u><u><br>
+</u><u>Greizer Straße 41-49</u><u><br>
+</u><u>35447 Reiskirchen, Germany </u></p>
+<p> </p>
+<p>
+<span lang="EN-US"><u><br>
+</u></span></p>
+<p>
+<u><span lang="EN-US">Phone +49 6408 84-6779</span><span lang="EN-US"><br>
+</span><a href="mailto:christian.schlosser@weiss-technik.com"><span lang="EN-US" style=" color: blue;">mailto:christian.schlosser@weiss-technik.com</span></a><span lang="EN-US"><br>
+</span><a href="https://eur01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.weiss-technik.com%2F&amp;data=05%7C01%7Cchristian.schlosser%40weiss-technik.com%7C6a9f545121464d7d081208da810934ef%7Cbd99493e72604fb58bc6fd4815f008d0%7C0%7C0%7C637964174099639612%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=2VlGO5yyHD29i47u8sAW41frX0KKdAEUcl6ZSwaAZpI%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://eur01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.weiss-technik.com%2F&amp;data=05%7C01%7Cchristian.schlosser%40weiss-technik.com%7C6a9f545121464d7d081208da810934ef%7Cbd99493e72604fb58bc6fd4815f008d0%7C0%7C0%7C637964174099639612%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=2VlGO5yyHD29i47u8sAW41frX0KKdAEUcl6ZSwaAZpI%3D&amp;reserved=0" target="_blank"><span lang="EN-US" style=" color: blue;">www.weiss-technik.com</span></a><span lang="EN-US"><p> </p></span></u></p>
+<p>
+<span lang="EN-US"><u><br>
+</u></span></p>
+<p>
+<span lang="EN-US"><u>Weiss Technik GmbH</u></span><span lang="EN-US"><u><br>
+</u></span><span lang="EN-US"><u>Sitz/Domicile: Reiskirchen</u></span><span lang="EN-US"><u><br>
+</u></span><span lang="EN-US"><u>Geschäftsführung/Board of Management: Peter R. Manolopoulos, Peter Kuisle</u></span><span lang="EN-US"><u><br>
+</u></span><span lang="EN-US"><u>Reg. Nr./Commercial Reg. No.: HRB 596</u></span><span lang="EN-US"><u><br>
+</u></span><span lang="EN-US"><u>Amtsgericht/Court of Registry: Gießen</u></span><span lang="EN-US"><p> </p></span></p>
+<p>
+<span lang="EN-US"><u><br>
+</u></span></p>
+<p>
+<span lang="EN-US"><u>Test it. Heat it. Cool it.</u></span><span lang="EN-US"><p> </p></span></p>
+<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=23659
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.12.2022 13:47:33 +00:00
+UpdatedAt=05.12.2022 13:47:34 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Engineer - Slave ändern
+
+### ARTICLE01_BODY
+Hallo Herr Schlosser,<div><br></div><div>dafür haben wir eigentlich die Funktion "Change Slave". In dieser wird aber derzeit noch nach dem Typ gefiltert wodurch die neue Klemme EL2809-0015 nicht angezeigt wird.</div><div><br></div><div>Das könne ich entsprechend anpassen, sodass hier die Klemme erscheint:</div><div><br></div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/4463/23659/99907?view=inline"><br>
+</div><div><br></div><div>Falls sich dann in Ihrem Projekt mehrere Klemmen befinden würden, kommt anschließend auch die Frage ob "alle" ersetzt werden sollen.</div><div>Bei "Change Slave" bleiben außerdem autom. auch die SPS Variablen erhalten.</div><div><br></div><div>Wäre das so hilfreich für Sie? Wenn ja, würde ich in der nächsten Version die "Typ-Prüfung" entfernen.</div><div> </div><div>Mit freundlichen Grüßen</div><div>Martin Gänzer<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, December 2, 2022 at 12:34:17 PM, Christian Schlosser wrote:<br><br><div>Sehr geehrtes Acontis Support Team,</div>
+<div> </div>
+<div>die Fa. Beckhoff hat eine neue Klemme vom Typ EL2809-0015, welche wir jetzt anstatt der Klemme EL2809 verwenden müssen (EL2809 nicht verfügbar).</div>
+<div> </div>
+<div>Frage:</div>
+<div>Gibt es eine einfache Möglichkeit die Klemme EL2809 durch die neue EL2809-0015 zu ersetzen?</div>
+<div>Es müssten dann auch die SPS Variable und der Kommentar ersetzt werden.</div>
+<div> </div>
+<div>Anbei ein Beispielprojekt mit beiden Klemmen und die dazugehörige ESI Datei.</div>
+<div> </div>
+<div>
+<div> </div>
+<div>
+<div>
+<div>
+<div>
+<p>
+<u>Freundliche Grüße / Kind regards</u></p>
+<p> </p>
+<p><u><br>
+</u></p>
+<p>
+<u>i.A. Christian Schlosser</u><span><u><br> R&amp;D Software - Produktentwicklung / R&amp;D Software - Product Development<span><br>
+</span><b>weiss</b>technik</u></span></p>
+<p> </p>
+<p></p>
+<p>
+<u><br>
+</u></p>
+<p>
+<u>Weiss Technik GmbH</u><u><br>
+</u><u>Greizer Straße 41-49</u><u><br>
+</u><u>35447 Reiskirchen, Germany </u></p>
+<p> </p>
+<p>
+<span lang="EN-US"><u><br>
+</u></span></p>
+<p>
+<u><span lang="EN-US">Phone +49 6408 84-6779</span><span lang="EN-US"><br>
+</span><a href="mailto:christian.schlosser@weiss-technik.com"><span lang="EN-US" style=" color: blue;">mailto:christian.schlosser@weiss-technik.com</span></a><span lang="EN-US"><br>
+</span><a href="https://eur01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.weiss-technik.com%2F&amp;data=05%7C01%7Cchristian.schlosser%40weiss-technik.com%7C6a9f545121464d7d081208da810934ef%7Cbd99493e72604fb58bc6fd4815f008d0%7C0%7C0%7C637964174099639612%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=2VlGO5yyHD29i47u8sAW41frX0KKdAEUcl6ZSwaAZpI%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://eur01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.weiss-technik.com%2F&amp;data=05%7C01%7Cchristian.schlosser%40weiss-technik.com%7C6a9f545121464d7d081208da810934ef%7Cbd99493e72604fb58bc6fd4815f008d0%7C0%7C0%7C637964174099639612%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=2VlGO5yyHD29i47u8sAW41frX0KKdAEUcl6ZSwaAZpI%3D&amp;reserved=0" target="_blank"><span lang="EN-US" style=" color: blue;">www.weiss-technik.com</span></a><span lang="EN-US"></span></u></p>
+<p><u> </u></p>
+<p></p>
+<p>
+<span lang="EN-US"><u><br>
+</u></span></p>
+<p>
+<span lang="EN-US"><u>Weiss Technik GmbH</u></span><span lang="EN-US"><u><br>
+</u></span><span lang="EN-US"><u>Sitz/Domicile: Reiskirchen</u></span><span lang="EN-US"><u><br>
+</u></span><span lang="EN-US"><u>Geschäftsführung/Board of Management: Peter R. Manolopoulos, Peter Kuisle</u></span><span lang="EN-US"><u><br>
+</u></span><span lang="EN-US"><u>Reg. Nr./Commercial Reg. No.: HRB 596</u></span><span lang="EN-US"><u><br>
+</u></span><span lang="EN-US"><u>Amtsgericht/Court of Registry: Gießen</u></span><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p>
+<span lang="EN-US"><u><br>
+</u></span></p>
+<p>
+<span lang="EN-US"><u>Test it. Heat it. Cool it.</u></span><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

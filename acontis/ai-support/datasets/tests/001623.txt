@@ -1,0 +1,204 @@
+### HEADER
+Id=1623
+Link=http://at-zammad/#ticket/zoom/1623
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bosch Rexroth AG (ID=88, Number=50510, Country=DE)
+Commission=Bosch Rexroth, ctrlX CORE (ID=96, Number=96)
+Number=701623
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=elmar.ott@boschrexroth.de (ID=158, FirstName=Elmar, LastName=Ott)
+CreatedBy=elmar.ott@boschrexroth.de (ID=158, FirstName=Elmar, LastName=Ott)
+Type=
+TimeUnit=
+CreatedAt=14.10.2021 08:07:55 +00:00
+UpdatedAt=14.10.2021 10:04:27 +00:00
+CloseAt=14.10.2021 10:04:27 +00:00
+ArticlesCount=3
+
+### TITLE
+EC_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE
+
+### ARTICLE00_HEADER
+Id=8753
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.10.2021 08:07:55 +00:00
+UpdatedAt=14.10.2021 08:07:57 +00:00
+
+### ARTICLE00_SUBJECT
+EC_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo,</p>
+<p> </p>
+<p><b><i>ein Anwender hat folgenden Anwendungsfall:</i></b></p>
+<p>Eine Anlage bei der immer alle Slaves vorhanden sein müssen.</p>
+<p>Fehlt ein Teilnehmer, so soll die Anlage nicht in Betrieb / der Master nicht nach OP gehen.</p>
+<p> </p>
+<p><b><i>Aktuelle Lösung:</i></b></p>
+<p>Der Anwender hat eine Option gesetzt welche letztendlich in EC_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE resultiert.</p>
+<p>Dies funktioniert soweit auch gut.</p>
+<p> </p>
+<p><b><i>Problem:</i></b></p>
+<p>Besser fände es der Anwender, wenn die vorhandenen Teilnehmer bzw. Master nach PreOP schalten könnten und danach die Umschaltung verhindert würde, bzw. danach erst der Mechanismus von EC_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE greifen würde.</p>
+<p>So wäre es möglich mit den vorhandenen Teilnehmer zu kommunizieren und Diagnose zu betreiben.</p>
+<p> </p>
+<p><b><i>Frage:</i></b></p>
+<p>Wie ließe sich am Einfachsten das gewünschte Verhalten realisieren?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Elmar Ott</b>
+<br> Engineering Software Firmware DC-AE/ESW2<br>
+<br> Tel. +49 9352 18-5585<br> Elmar.Ott@boschrexroth.de<br>
+<a href="http://www.boschrexroth.com" rel="nofollow noreferrer noopener" target="_blank">www.boschrexroth.com</a><br>
+<br> Bosch Rexroth AG<br> Bgm.-Dr.-Nebel-Str. 2<br> 97816 Lohr am Main<br> GERMANY<br>
+<br>
+<a href="http://www.boschrexroth.com/" rel="nofollow noreferrer noopener" title="http://www.boschrexroth.com/" target="_blank"></a><br><br>Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart HRB 23192<br> Vorstand: Rolf Najork (Vorsitzender), Dr. Steffen Haack, Holger von Hebel, Reinhard Schäfer, Dr. Marc Wucherer<br> Vorsitzende des Aufsichtsrats: Filiz Albrecht<br> ​</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=8762
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.10.2021 09:25:16 +00:00
+UpdatedAt=14.10.2021 09:25:20 +00:00
+
+### ARTICLE01_SUBJECT
+EC_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE
+
+### ARTICLE01_BODY
+Hallo Herr Ott,<div><br></div><div>Vielleicht bräuchten Sie eine eigene Option "Allow PREOP transition on bus mismatch". Dafür müssten Sie nach dem ersten BusScan, im Fall von BusMismatch <span>C_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE und </span><span>EC_IOCTL_SET_MASTER_MAX_STATE aufrufen. Nach einem erfolgreichen BusScan, können sie nach INIT und </span><span>EC_IOCTL_SET_MASTER_MAX_STATE oder </span><span>IOCTL wieder abbauen.</span>
+</div><div><br></div><div>Schöne Grüße,</div><div>Cyril Eyssautier<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Thursday, October 14, 2021, 10:07:55 AM, Elmar Ott wrote:<br><br><div>
+<p>Hallo,</p>
+<p> </p>
+<p><b><i>ein Anwender hat folgenden Anwendungsfall:</i></b></p>
+<p>Eine Anlage bei der immer alle Slaves vorhanden sein müssen.</p>
+<p>Fehlt ein Teilnehmer, so soll die Anlage nicht in Betrieb / der Master nicht nach OP gehen.</p>
+<p> </p>
+<p><b><i>Aktuelle Lösung:</i></b></p>
+<p>Der Anwender hat eine Option gesetzt welche letztendlich in EC_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE resultiert.</p>
+<p>Dies funktioniert soweit auch gut.</p>
+<p> </p>
+<p><b><i>Problem:</i></b></p>
+<p>Besser fände es der Anwender, wenn die vorhandenen Teilnehmer bzw. Master nach PreOP schalten könnten und danach die Umschaltung verhindert würde, bzw. danach erst der Mechanismus von EC_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE greifen würde.</p>
+<p>So wäre es möglich mit den vorhandenen Teilnehmer zu kommunizieren und Diagnose zu betreiben.</p>
+<p> </p>
+<p><b><i>Frage:</i></b></p>
+<p>Wie ließe sich am Einfachsten das gewünschte Verhalten realisieren?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Elmar Ott</b>
+<br> Engineering Software Firmware DC-AE/ESW2<br>
+<br> Tel. +49 9352 18-5585<br> Elmar.Ott@boschrexroth.de<br>
+<a href="http://www.boschrexroth.com" rel="nofollow noreferrer noopener" target="_blank">www.boschrexroth.com</a><br>
+<br> Bosch Rexroth AG<br> Bgm.-Dr.-Nebel-Str. 2<br> 97816 Lohr am Main<br> GERMANY<br>
+<br>
+<a href="http://www.boschrexroth.com/" rel="nofollow noreferrer noopener" title="http://www.boschrexroth.com/" target="_blank"></a><br><br>Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart HRB 23192<br> Vorstand: Rolf Najork (Vorsitzender), Dr. Steffen Haack, Holger von Hebel, Reinhard Schäfer, Dr. Marc Wucherer<br> Vorsitzende des Aufsichtsrats: Filiz Albrecht<br> ​</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=8764
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.10.2021 09:53:55 +00:00
+UpdatedAt=14.10.2021 09:53:55 +00:00
+
+### ARTICLE02_SUBJECT
+AW: EC_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE [Ticket#701623]
+
+### ARTICLE02_BODY
+<div>
+<p>Hallo Herr Eyssautier,</p>
+<p> </p>
+<p>danke für die schnelle Antwort.</p>
+<p> </p>
+<p>Das Thema brennt jetzt nicht akut bei uns, sondern wurde vom Anwender nur angemerkt.</p>
+<p>Aktuell arbeiten wir auch noch an anderen Features.</p>
+<p> </p>
+<p>Sollte es zwingend gefordert werden und bei uns akut werden würde ich mich nochmal melden…</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Elmar Ott</b> <br> Engineering Software Firmware DC-AE/ESW2<br>
+<br> Tel. +49 9352 18-5585<br> Elmar.Ott@boschrexroth.de<br>
+<a href="http://www.boschrexroth.com" rel="nofollow noreferrer noopener" target="_blank">www.boschrexroth.com</a><br>
+<br> Bosch Rexroth AG<br> Bgm.-Dr.-Nebel-Str. 2<br> 97816 Lohr am Main<br> GERMANY<br>
+<br>
+<a href="http://www.boschrexroth.com/" rel="nofollow noreferrer noopener" title="http://www.boschrexroth.com/" target="_blank"></a><br><br>Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart HRB 23192<br> Vorstand: Rolf Najork (Vorsitzender), Dr. Steffen Haack, Holger von Hebel, Reinhard Schäfer, Dr. Marc Wucherer<br> Vorsitzende des Aufsichtsrats: Filiz Albrecht<br> ​</p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Gesendet:</b> Donnerstag, 14. Oktober 2021 11:25<br>
+<b>An:</b> Ott Elmar (DC-AE/ESW2) &lt;Elmar.Ott@boschrexroth.de&gt;<br>
+<b>Betreff:</b> RE: EC_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE [Ticket#701623]</p>
+</div>
+</div>
+<p> </p>
+<p>Hallo Herr Ott,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>Vielleicht bräuchten Sie eine eigene Option "Allow PREOP transition on bus mismatch". Dafür müssten Sie nach dem ersten BusScan, im Fall von BusMismatch C_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE und EC_IOCTL_SET_MASTER_MAX_STATE aufrufen. Nach einem erfolgreichen BusScan, können sie nach INIT und EC_IOCTL_SET_MASTER_MAX_STATE oder IOCTL wieder abbauen.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Schöne Grüße,</p>
+</div>
+<div>
+<p>Cyril Eyssautier</p>
+<div>
+<div> <p> </p>
+</div>
+</div>
+<div>
+<blockquote>
+<p>On Thursday, October 14, 2021, 10:07:55 AM, Elmar Ott wrote:</p>
+<p></p>
+<div>
+<p>Hallo,</p>
+<p> </p>
+<p><b><i>ein Anwender hat folgenden Anwendungsfall:</i></b></p>
+<p>Eine Anlage bei der immer alle Slaves vorhanden sein müssen.</p>
+<p>Fehlt ein Teilnehmer, so soll die Anlage nicht in Betrieb / der Master nicht nach OP gehen.</p>
+<p> </p>
+<p><b><i>Aktuelle Lösung:</i></b></p>
+<p>Der Anwender hat eine Option gesetzt welche letztendlich in EC_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE resultiert.</p>
+<p>Dies funktioniert soweit auch gut.</p>
+<p> </p>
+<p><b><i>Problem:</i></b></p>
+<p>Besser fände es der Anwender, wenn die vorhandenen Teilnehmer bzw. Master nach PreOP schalten könnten und danach die Umschaltung verhindert würde, bzw. danach erst der Mechanismus von EC_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE greifen würde.</p>
+<p>So wäre es möglich mit den vorhandenen Teilnehmer zu kommunizieren und Diagnose zu betreiben.</p>
+<p> </p>
+<p><b><i>Frage:</i></b></p>
+<p>Wie ließe sich am Einfachsten das gewünschte Verhalten realisieren?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Elmar Ott</b> <br> Engineering Software Firmware DC-AE/ESW2<br>
+<br> Tel. +49 9352 18-5585<br> Elmar.Ott@boschrexroth.de<br>
+<a href="https://eur03.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.boschrexroth.com%2F&amp;data=04%7C01%7Celmar.ott%40boschrexroth.de%7C0ad4e1c811384c5689d908d98ef48c7e%7C0ae51e1907c84e4bbb6d648ee58410f4%7C0%7C0%7C637698003239131107%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=si8WY46dOk9Tfn4PQh83nV0aUOJmb99dA3C89NFZVcU%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://eur03.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.boschrexroth.com%2F&amp;data=04%7C01%7Celmar.ott%40boschrexroth.de%7C0ad4e1c811384c5689d908d98ef48c7e%7C0ae51e1907c84e4bbb6d648ee58410f4%7C0%7C0%7C637698003239131107%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=si8WY46dOk9Tfn4PQh83nV0aUOJmb99dA3C89NFZVcU%3D&amp;reserved=0" target="_blank">www.boschrexroth.com</a><br>
+<br> Bosch Rexroth AG<br> Bgm.-Dr.-Nebel-Str. 2<br> 97816 Lohr am Main<br> GERMANY<br><br>Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart HRB 23192<br> Vorstand: Rolf Najork (Vorsitzender), Dr. Steffen Haack, Holger von Hebel, Reinhard Schäfer, Dr. Marc Wucherer<br> Vorsitzende des Aufsichtsrats: Filiz Albrecht<br> ​</p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>

@@ -1,0 +1,214 @@
+### HEADER
+Id=6424
+Link=http://at-zammad/#ticket/zoom/6424
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=KRONES AG (ID=131, Number=55010, Country=DE)
+Commission=Krones, Inspektionstechnik (ID=148, Number=148)
+Number=706424
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=andreas.stopfer@krones.com (ID=388, FirstName=Andreas, LastName=Stopfer)
+CreatedBy=andreas.stopfer@krones.com (ID=388, FirstName=Andreas, LastName=Stopfer)
+Type=
+TimeUnit=
+CreatedAt=25.09.2023 13:28:10 +00:00
+UpdatedAt=28.09.2023 06:10:36 +00:00
+CloseAt=28.09.2023 06:10:36 +00:00
+ArticlesCount=3
+
+### TITLE
+ENI-Builder EBI erzeugen.
+
+### ARTICLE00_HEADER
+Id=34641
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.09.2023 13:28:10 +00:00
+UpdatedAt=25.09.2023 13:28:14 +00:00
+
+### ARTICLE00_SUBJECT
+ENI-Builder EBI erzeugen.
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Herr Gänzer,</p>
+<p>es gibt doch die Option aus dem ENI-Builder den EBI-Builder-Code zu erzeugen.</p>
+<p>Ich habe leider vergessen wie das ging.</p>
+<p>Können Sie mir helfen?</p>
+<p> </p>
+<p>Danke</p>
+<p>Andreas Stopfer</p>
+</div><p><span>______________________________________________________________<br>
+<br> Krones AG<br> Vorstand: Christoph Klenk, Vorstandsvorsitzender,<br> Uta Anders, Thomas Ricker, Markus Tischer, Ralf Goldbrunner<br> Vorsitzender des Aufsichtsrats: Volker Kronseder<br> Registergericht: Regensburg HRB 23 44, Umsatzsteuer-ID-Nummer: DE 133 695 999<br>
+<span class="js-signatureMarker"></span><br> ______________________________________________________________<br>
+<br> Der Inhalt dieser E-Mail und jeder Anhang ist vertraulich.<br> Diese Inhalte sind nur fuer die benannten Adressaten. <br> Wenn Sie diese E-Mail durch einen Fehler erhalten haben,<br> benachrichtigen Sie sofort Ihren Administrator oder den Absender.<br> Behandeln Sie die E-Mail vertraulich.<br>
+<br> * Diese E-Mail wurde auf Viren und gefaehrlichen Inhalt geprueft. *<br>
+<br> ______________________________________________________________<br>
+<br> The contents of this email and any attachments are confidential.<br> They are intended for the named recipient(s) only.<br> If you have received this email in error please notify the system manager<br> or the sender immediately and do not disclose the contents to anyone or<br> make copies.<br>
+<br> * This e-Mail was scanned for viruses, vandals and malicious content. *</span></p>
+
+### ARTICLE01_HEADER
+Id=34642
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.09.2023 14:00:12 +00:00
+UpdatedAt=25.09.2023 14:00:13 +00:00
+
+### ARTICLE01_SUBJECT
+ENI-Builder EBI erzeugen.
+
+### ARTICLE01_BODY
+Hallo Herr Stopfer,<div><br></div><div>was genau meinen Sie? Wenn Sie aus dem EC-Engineer eine EBI exportieren möchten, dann können Sie den EC-Engineer mit "/ENIBUILDER" aufrufen, dann erscheint ein weiteres Menü beim Kontext-Menu vom Master.</div><div><br></div><div>Mit freundlichen Grüßen</div><div>Martin Gänzer</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, September 25, 2023 at 3:28:10 PM, Andreas Stopfer wrote:<br><br><div>
+<p>Hallo Herr Gänzer,</p>
+<p>es gibt doch die Option aus dem ENI-Builder den EBI-Builder-Code zu erzeugen.</p>
+<p>Ich habe leider vergessen wie das ging.</p>
+<p>Können Sie mir helfen?</p>
+<p> </p>
+<p>Danke</p>
+<p>Andreas Stopfer</p>
+</div>
+<p><span>______________________________________________________________<br>
+<br> Krones AG<br> Vorstand: Christoph Klenk, Vorstandsvorsitzender,<br> Uta Anders, Thomas Ricker, Markus Tischer, Ralf Goldbrunner<br> Vorsitzender des Aufsichtsrats: Volker Kronseder<br> Registergericht: Regensburg HRB 23 44, Umsatzsteuer-ID-Nummer: DE 133 695 999<br>
+<span class="js-signatureMarker"></span><br> ______________________________________________________________<br>
+<br> Der Inhalt dieser E-Mail und jeder Anhang ist vertraulich.<br> Diese Inhalte sind nur fuer die benannten Adressaten. <br> Wenn Sie diese E-Mail durch einen Fehler erhalten haben,<br> benachrichtigen Sie sofort Ihren Administrator oder den Absender.<br> Behandeln Sie die E-Mail vertraulich.<br>
+<br> * Diese E-Mail wurde auf Viren und gefaehrlichen Inhalt geprueft. *<br>
+<br> ______________________________________________________________<br>
+<br> The contents of this email and any attachments are confidential.<br> They are intended for the named recipient(s) only.<br> If you have received this email in error please notify the system manager<br> or the sender immediately and do not disclose the contents to anyone or<br> make copies.<br>
+<br> * This e-Mail was scanned for viruses, vandals and malicious content. *</span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=34647
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.09.2023 14:27:08 +00:00
+UpdatedAt=25.09.2023 14:27:08 +00:00
+
+### ARTICLE02_SUBJECT
+AW: ENI-Builder EBI erzeugen. [Ticket#706424]
+
+### ARTICLE02_BODY
+<div>
+<p>Perfekt danke!</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Martin Gaenzer via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Gesendet:</b> Montag, 25. September 2023 16:00<br>
+<b>An:</b> Stopfer, Andreas &lt;Andreas.Stopfer@krones.com&gt;<br>
+<b>Betreff:</b> RE: ENI-Builder EBI erzeugen. [Ticket#706424]</p>
+</div>
+</div>
+<p> </p>
+<p>Hallo Herr Stopfer,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>was genau meinen Sie? Wenn Sie aus dem EC-Engineer eine EBI exportieren möchten, dann können Sie den EC-Engineer mit "/ENIBUILDER" aufrufen, dann erscheint ein weiteres Menü beim Kontext-Menu vom Master.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Mit freundlichen Grüßen</p>
+</div>
+<div>
+<p>Martin Gänzer</p>
+</div>
+<div>
+<p> </p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Martin Gaenzer</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Monday, September 25, 2023 at 3:28:10 PM, Andreas Stopfer wrote:</p>
+<div>
+<p>Hallo Herr Gänzer,</p>
+<p>es gibt doch die Option aus dem ENI-Builder den EBI-Builder-Code zu erzeugen.</p>
+<p>Ich habe leider vergessen wie das ging.</p>
+<p>Können Sie mir helfen?</p>
+<p> </p>
+<p>Danke</p>
+<p>Andreas Stopfer</p>
+</div>
+<p>______________________________________________________________<br>
+<br> Krones AG<br> Vorstand: Christoph Klenk, Vorstandsvorsitzender,<br> Uta Anders, Thomas Ricker, Markus Tischer, Ralf Goldbrunner<br> Vorsitzender des Aufsichtsrats: Volker Kronseder<br> Registergericht: Regensburg HRB 23 44, Umsatzsteuer-ID-Nummer: DE 133 695 999<br>
+<br> ______________________________________________________________<br>
+<br> Der Inhalt dieser E-Mail und jeder Anhang ist vertraulich.<br> Diese Inhalte sind nur fuer die benannten Adressaten. <br> Wenn Sie diese E-Mail durch einen Fehler erhalten haben,<br> benachrichtigen Sie sofort Ihren Administrator oder den Absender.<br> Behandeln Sie die E-Mail vertraulich.<br>
+<br> * Diese E-Mail wurde auf Viren und gefaehrlichen Inhalt geprueft. *<br>
+<br> ______________________________________________________________<br>
+<br> The contents of this email and any attachments are confidential.<br> They are intended for the named recipient(s) only.<br> If you have received this email in error please notify the system manager<br> or the sender immediately and do not disclose the contents to anyone or<br> make copies.<br>
+<br> * This e-Mail was scanned for viruses, vandals and malicious content. *</p>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div><p><span>______________________________________________________________<br>
+<br> Krones AG<br> Vorstand: Christoph Klenk, Vorstandsvorsitzender,<br> Uta Anders, Thomas Ricker, Markus Tischer, Ralf Goldbrunner<br> Vorsitzender des Aufsichtsrats: Volker Kronseder<br> Registergericht: Regensburg HRB 23 44, Umsatzsteuer-ID-Nummer: DE 133 695 999<br>
+<br> ______________________________________________________________<br>
+<br> Der Inhalt dieser E-Mail und jeder Anhang ist vertraulich.<br> Diese Inhalte sind nur fuer die benannten Adressaten. <br> Wenn Sie diese E-Mail durch einen Fehler erhalten haben,<br> benachrichtigen Sie sofort Ihren Administrator oder den Absender.<br> Behandeln Sie die E-Mail vertraulich.<br>
+<br> * Diese E-Mail wurde auf Viren und gefaehrlichen Inhalt geprueft. *<br>
+<br> ______________________________________________________________<br>
+<br> The contents of this email and any attachments are confidential.<br> They are intended for the named recipient(s) only.<br> If you have received this email in error please notify the system manager<br> or the sender immediately and do not disclose the contents to anyone or<br> make copies.<br>
+<br> * This e-Mail was scanned for viruses, vandals and malicious content. *</span></p>

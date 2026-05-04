@@ -1,0 +1,229 @@
+### HEADER
+Id=7062
+Link=http://at-zammad/#ticket/zoom/7062
+Group=EC-Support (ID=2)
+Priority=high (ID=3)
+State=closed (ID=4)
+Organization=Robert Bosch GmbH (ID=149, Number=40339, Country=DE)
+Commission=Robert Bosch, Testing Systems (ID=168, Number=168)
+Number=707062
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=michael.kolb@de.bosch.com (ID=127, FirstName=Michael, LastName=Kolb)
+CreatedBy=michael.kolb@de.bosch.com (ID=127, FirstName=Michael, LastName=Kolb)
+Type=
+TimeUnit=
+CreatedAt=13.12.2023 10:28:52 +00:00
+UpdatedAt=14.12.2023 10:46:19 +00:00
+CloseAt=14.12.2023 10:46:19 +00:00
+ArticlesCount=4
+
+### TITLE
+Support-Anfrage
+
+### ARTICLE00_HEADER
+Id=38421
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.12.2023 10:28:52 +00:00
+UpdatedAt=13.12.2023 10:28:54 +00:00
+
+### ARTICLE00_SUBJECT
+Support-Anfrage
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Support-Team,</p>
+<p> </p>
+<p>ich arbeite gerade an einem Update des Masters von 3.0.5 auf 3.2.1</p>
+<p> </p>
+<p>Ich komme leider nicht wie gewünscht weiter. Könnten sie mich bei Gelegenheit telefonisch kontaktieren?</p>
+<p> </p>
+<p>Besten Dank!</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Michael Kolb</b></span> <span><br>
+<br> (BhP/TEF-EAT35-BAS)<br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bosch.com</span></a><br> Tel. +49 8323 20-2247 | Mobil +49 151 54336473 | <a href="mailto:Michael.Kolb@de.bosch.com">
+<span style="color:blue;">Michael.Kolb@de.bosch.com</span></a></span><span><br>
+<br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000;<br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; <br> Geschäftsführung: Dr. Stefan Hartung, Dr. Christian Fischer, Dr. Markus Forschner, <br> Stefan Grosch, Dr. Markus Heyn, Dr. Tanja Rückert </span><span><br> ​</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=38476
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.12.2023 17:50:29 +00:00
+UpdatedAt=13.12.2023 17:50:46 +00:00
+
+### ARTICLE01_SUBJECT
+Update ECM 3.0.3 -> 3.2.1
+
+### ARTICLE01_BODY
+<p> </p><div> <p>Hallo Herr Eyssautier,</p>
+<p> </p>
+<p>ich würde gerne die eingesetzte Masterversion in unserer Applikation updaten.</p>
+<p>Da stellen sich mir ein paar Fragen. Hätten sie hierfür mal etwas Zeit für mich?</p>
+<p> </p>
+<p>Besten Dank!</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards <br> <br> <b>Michael Kolb</b></span> <span>
+<br> <br> (BhP/TEF-EAT35-BAS) <br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bosch.com</span></a>
+<br> Tel. +49 8323 20-2247 | Mobil +49 151 54336473 | <a href="mailto:Michael.Kolb@de.bosch.com"> <span style="color:blue;">Michael.Kolb@de.bosch.com</span></a></span><span>
+<br> <br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000; <br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; <br> Geschäftsführung: Dr. Stefan Hartung, Dr. Christian Fischer, Dr. Markus Forschner, <br> Stefan Grosch, Dr. Markus Heyn, Dr. Tanja Rückert </span><span>
+<br> ​</span></p>
+</div>
+
+### ARTICLE02_HEADER
+Id=38478
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.12.2023 17:51:30 +00:00
+UpdatedAt=13.12.2023 17:51:33 +00:00
+
+### ARTICLE02_SUBJECT
+Support-Anfrage
+
+### ARTICLE02_BODY
+Hallo Herr Kolb,<div><br></div><div>ich habe heute versucht Sie zu erreichen. Ich werde morgen früh nochmal probieren.</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, December 13, 2023 at 6:50:29 PM, Michael Kolb wrote:<br><br><p> </p>
+<div> <p>Hallo Herr Eyssautier,</p>
+<p> </p>
+<p>ich würde gerne die eingesetzte Masterversion in unserer Applikation updaten.</p>
+<p>Da stellen sich mir ein paar Fragen. Hätten sie hierfür mal etwas Zeit für mich?</p>
+<p> </p>
+<p>Besten Dank!</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards <br> <br> <b>Michael Kolb</b></span> <span>
+<br> <br> (BhP/TEF-EAT35-BAS) <br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bosch.com</span></a>
+<br> Tel. +49 8323 20-2247 | Mobil +49 151 54336473 | <a href="mailto:Michael.Kolb@de.bosch.com"> <span style="color:blue;">Michael.Kolb@de.bosch.com</span></a></span><span>
+<br> <br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000; <br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; <br> Geschäftsführung: Dr. Stefan Hartung, Dr. Christian Fischer, Dr. Markus Forschner, <br> Stefan Grosch, Dr. Markus Heyn, Dr. Tanja Rückert </span><span>
+<br> ​</span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=38490
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.12.2023 05:25:11 +00:00
+UpdatedAt=14.12.2023 05:25:11 +00:00
+
+### ARTICLE03_SUBJECT
+AW: Support-Anfrage [Ticket#707062]
+
+### ARTICLE03_BODY
+<div>
+<p>Hallo Herr Eyssautier,</p>
+<p> </p>
+<p>ja gestern war ich dann schon weg. Ich freue mich auf ihren Anruf, bis dann.</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Michael Kolb</b></span> <span>
+<br>
+<br> (BhP/TEF-EAT35-BAS)<br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com/" rel="nofollow noreferrer noopener" target="_blank">www.bosch.com</a><br> Tel. +49 8323 20-2247 | Mobil +49 151 54336473 | <a href="mailto:Michael.Kolb@de.bosch.com"> Michael.Kolb@de.bosch.com</a></span><span><br>
+<br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000;<br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; <br> Geschäftsführung: Dr. Stefan Hartung, Dr. Christian Fischer, Dr. Markus Forschner, <br> Stefan Grosch, Dr. Markus Heyn, Dr. Tanja Rückert </span><br> ​</p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Gesendet:</b> Mittwoch, 13. Dezember 2023 18:52<br>
+<b>An:</b> c.eyssautier@acontis.com; Kolb Michael (BhP/TEF-EAT33-BAS) &lt;michael.kolb@de.bosch.com&gt;<br>
+<b>Betreff:</b> RE: Support-Anfrage [Ticket#707062]</p>
+</div>
+</div>
+<p> </p>
+<p>Hallo Herr Kolb,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>ich habe heute versucht Sie zu erreichen. Ich werde morgen früh nochmal probieren.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Schöne Grüße,</p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Cyril Eyssautier</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Wednesday, December 13, 2023 at 6:50:29 PM, Michael Kolb wrote:</p>
+<p> </p>
+<div>
+<p>Hallo Herr Eyssautier,</p>
+<p> </p>
+<p>ich würde gerne die eingesetzte Masterversion in unserer Applikation updaten.</p>
+<p>Da stellen sich mir ein paar Fragen. Hätten sie hierfür mal etwas Zeit für mich?</p>
+<p> </p>
+<p>Besten Dank!</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Michael Kolb</b> <br>
+<br> (BhP/TEF-EAT35-BAS) <br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com/" rel="nofollow noreferrer noopener" target="_blank"> www.bosch.com</a> <br> Tel. +49 8323 20-2247 | Mobil +49 151 54336473 | <a href="mailto:Michael.Kolb@de.bosch.com"> Michael.Kolb@de.bosch.com</a> <br>
+<br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000; <br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; <br> Geschäftsführung: Dr. Stefan Hartung, Dr. Christian Fischer, Dr. Markus Forschner, <br> Stefan Grosch, Dr. Markus Heyn, Dr. Tanja Rückert <br> ​</p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

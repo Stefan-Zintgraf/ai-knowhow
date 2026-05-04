@@ -1,0 +1,223 @@
+### HEADER
+Id=350
+Link=http://at-zammad/#ticket/zoom/350
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Clemessy (ID=181, Number=40222, Country=FR)
+Commission=Clemessy, Bench Control, no Master Redundancy (ID=217, Number=217)
+Number=700350
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=emmanuel.pinot@eiffage.com (ID=56, FirstName=Emmanuel, LastName=Pinot)
+CreatedBy=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Type=
+TimeUnit=
+CreatedAt=01.04.2021 08:43:34 +00:00
+UpdatedAt=25.04.2022 12:32:24 +00:00
+CloseAt=28.04.2021 06:18:48 +00:00
+ArticlesCount=9
+
+### TITLE
+EC_NOTIFY_SLAVE_STATECHANGED at the inactive master
+
+### ARTICLE00_HEADER
+Id=1713
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.04.2021 08:43:35 +00:00
+UpdatedAt=01.04.2021 08:46:15 +00:00
+
+### ARTICLE00_SUBJECT
+EC_NOTIFY_SLAVE_STATECHANGED at the inactive master
+
+### ARTICLE00_BODY
+<p>Hi Paul,</p>
+<p> </p>
+<p>[...]</p>
+<p> </p>
+<p>I have another request. I need to have the EtherCAT state of all the slaves at the inactive master. Currently at each EtherCAT bus cycle I use the emGetSlaveState function for each EtherCAT slaves.</p>
+<p>I have an EtherCAT loop with 2500 slaves and in this situation I found my method inefficient. Is it possible to have the notification EC_NOTIFY_SLAVE_STATECHANGED at the inactive master?</p>
+<p>Thank you in advance.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Emmanuel.</p>
+<p><br></p>
+
+### ARTICLE01_HEADER
+Id=1714
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.04.2021 08:45:33 +00:00
+UpdatedAt=01.04.2021 08:45:34 +00:00
+
+### ARTICLE01_SUBJECT
+EC_NOTIFY_SLAVE_STATECHANGED at the inactive master
+
+### ARTICLE01_BODY
+Hi Emmanuel,<div><br></div><div>
+<span>I forwarded your request to Cyril for decission and planning.</span><br>
+</div><div><br></div><div>Best regards,</div><div>Paul</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Donnerstag, 1. April 2021, 10:43:35, schrieb Paul Bußmann:<br><br><p>Hi Paul,</p>
+<p> </p>
+<p>[...]</p>
+<p> </p>
+<p>I have another request. I need to have the EtherCAT state of all the slaves at the inactive master. Currently at each EtherCAT bus cycle I use the emGetSlaveState function for each EtherCAT slaves.</p>
+<p>I have an EtherCAT loop with 2500 slaves and in this situation I found my method inefficient. Is it possible to have the notification EC_NOTIFY_SLAVE_STATECHANGED at the inactive master?</p>
+<p>Thank you in advance.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Emmanuel.</p>
+<p><br></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=1715
+ContentType=text/plain
+Internal=True
+Type=note
+CreatedAt=01.04.2021 08:46:15 +00:00
+UpdatedAt=01.04.2021 08:46:15 +00:00
+
+### ARTICLE02_BODY
+Unable to send email to 'Pinot Emmanuel [EIFFAGE ENERGIE SYSTEMES] <emmanuel.pinot@eiffage.com>': Can't use Channel::Driver::Smtp: #<Net::SMTPSyntaxError: 501 5.5.4 Syntax error in address
+>
+
+### ARTICLE03_HEADER
+Id=2532
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=22.04.2021 10:26:52 +00:00
+UpdatedAt=22.04.2021 10:26:52 +00:00
+
+### ARTICLE03_BODY
+<div>U:\pbn\BuildOverlay\V3.1\Clemessy\NotifySlaveStateChanged</div><div><div><a href="http://at-vbld-ec-2:8080/job/EC-Master/7826/" title="http://at-vbld-ec-2:8080/job/EC-Master/7826/" rel="nofollow noreferrer noopener" target="_blank">http://at-vbld-ec-2:8080/job/EC-Master/7826/</a></div></div>
+
+### ARTICLE04_HEADER
+Id=2689
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=27.04.2021 06:50:11 +00:00
+UpdatedAt=27.04.2021 06:50:11 +00:00
+
+### ARTICLE04_BODY
+In V3.1.1.06:<div>
+<div>---------------------------------------------------------------------------------------------------------------</div>
+<div>MasterRed       03008 (A)    CER - Add EC_NOTIFY_SLAVE_STATECHANGED at inactive master</div>
+<div>2021-04-27</div>
+<div>---------------------------------------------------------------------------------------------------------------</div>
+</div>
+
+### ARTICLE05_HEADER
+Id=2690
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.04.2021 06:50:46 +00:00
+UpdatedAt=27.04.2021 06:50:48 +00:00
+
+### ARTICLE05_SUBJECT
+EC_NOTIFY_SLAVE_STATECHANGED at the inactive master
+
+### ARTICLE05_BODY
+Hi Emmanuel,<div><br></div><div>it will be included in V3.1.1.06.</div><div><br></div><div>Best regards,</div><div>Paul<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<div>
+<br><br>
+</div>
+</div>
+
+### ARTICLE06_HEADER
+Id=2691
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=27.04.2021 06:57:57 +00:00
+UpdatedAt=27.04.2021 06:57:57 +00:00
+
+### ARTICLE06_BODY
+Neuer Test Case nötig?
+
+### ARTICLE07_HEADER
+Id=2695
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=27.04.2021 07:40:43 +00:00
+UpdatedAt=27.04.2021 07:40:43 +00:00
+
+### ARTICLE07_BODY
+Ja
+
+### ARTICLE08_HEADER
+Id=2747
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=28.04.2021 06:18:49 +00:00
+UpdatedAt=28.04.2021 06:18:49 +00:00
+
+### ARTICLE08_BODY
+<p>TEST(MasterRedundancy,
+DEVSIM_DEVMR_T8984NotifySlaveStateChangeAtInactiveMaster)</p>

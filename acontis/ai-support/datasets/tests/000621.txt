@@ -1,0 +1,174 @@
+### HEADER
+Id=621
+Link=http://at-zammad/#ticket/zoom/621
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=none
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=700621
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=ian.j.sherman@gmail.com (ID=326, FirstName=Ian, LastName=Sherman)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=20.05.2021 17:09:48 +00:00
+UpdatedAt=28.05.2021 06:10:35 +00:00
+CloseAt=28.05.2021 06:10:35 +00:00
+ArticlesCount=3
+
+### TITLE
+Re: bus shift to master shift DC
+
+### ARTICLE00_HEADER
+Id=3471
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.05.2021 17:09:49 +00:00
+UpdatedAt=20.05.2021 17:09:49 +00:00
+
+### ARTICLE00_SUBJECT
+Re: bus shift to master shift DC
+
+### ARTICLE00_BODY
+<div>Hi Ian,</div><div> </div><div>I'm looping in our developer support to better assist with this question.<br>
+</div><br>/Jon<br><br><div>
+<strong> From: </strong> Ian Sherman &lt;ian.j.sherman@gmail.com&gt; <br>
+<strong> To: </strong> Jon Waters &lt;j.waters@acontis.com&gt; <br>
+<strong> Sent: </strong> 5/20/2021 4:15 AM <br>
+<strong> Subject: </strong> bus shift to master shift DC <br><br><blockquote>
+<div>Hi Jon,<div> </div>
+<div>Hope all is well.</div>
+<div> </div>
+<div>I spent some time integrating DC (bus shift mode) into our codebase this evening, and I see it "working", though it appears to fall in and out of sync -- I think I'm currently limited by the jitter of my dev workstation. I'll be testing on our RT-Preempt patched machine tomorrow.</div>
+<div> </div>
+<div>Do you have any guidance you could offer around the next step of supporting master shift mode? I <a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm_intro.html#dcm-master-shift-mode" rel="nofollow noreferrer noopener" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm_intro.html#dcm-master-shift-mode" target="_blank">see in the manual</a> that these two function pointers must be implemented -- do you have any examples or documentation you could offer on that topic?</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Ian Sherman</div>
+<div> </div>
+</div>
+</blockquote>
+</div>
+
+### ARTICLE01_HEADER
+Id=3472
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.05.2021 17:11:21 +00:00
+UpdatedAt=20.05.2021 17:12:34 +00:00
+
+### ARTICLE01_SUBJECT
+bus shift to master shift DC
+
+### ARTICLE01_BODY
+<div dir="ltr">Thanks Jon.</div><br><div>
+<div dir="ltr">On Thu, May 20, 2021 at 10:09 AM Jon Waters &lt;j.waters@acontis.com&gt; wrote:<br>
+</div>
+<blockquote><div>
+<div>Hi Ian,</div>
+<div> </div>
+<div>I'm looping in our developer support to better assist with this question.<br>
+</div>
+<br>/Jon<br><br><div>
+<strong> From: </strong> Ian Sherman &lt;ian.j.sherman@gmail.com&gt; <br>
+<strong> To: </strong> Jon Waters &lt;j.waters@acontis.com&gt; <br>
+<strong> Sent: </strong> 5/20/2021 4:15 AM <br>
+<strong> Subject: </strong> bus shift to master shift DC <br><br><blockquote>
+<div>Hi Jon,<div> </div>
+<div>Hope all is well.</div>
+<div> </div>
+<div>I spent some time integrating DC (bus shift mode) into our codebase this evening, and I see it "working", though it appears to fall in and out of sync -- I think I'm currently limited by the jitter of my dev workstation. I'll be testing on our RT-Preempt patched machine tomorrow.</div>
+<div> </div>
+<div>Do you have any guidance you could offer around the next step of supporting master shift mode? I <a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm_intro.html#dcm-master-shift-mode" rel="nofollow noreferrer noopener" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm_intro.html#dcm-master-shift-mode" target="_blank">see in the manual</a> that these two function pointers must be implemented -- do you have any examples or documentation you could offer on that topic?</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Ian Sherman</div>
+<div> </div>
+</div>
+</blockquote>
+</div>
+</div></blockquote>
+</div>
+
+### ARTICLE02_HEADER
+Id=3503
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.05.2021 08:14:23 +00:00
+UpdatedAt=21.05.2021 08:14:27 +00:00
+
+### ARTICLE02_SUBJECT
+bus shift to master shift DC
+
+### ARTICLE02_BODY
+Hi Ian,<div><br></div><div>using Linux, MasterShift mode is automatically supported by using the AuxClk implementation. It should be possible to use our EcMasterDemoDc with the parameter -dcmmode mastershift</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, May 20, 2021, 7:11:21 PM, Ian Sherman wrote:<br><br><div dir="ltr">Thanks Jon.</div>
+<br><div>
+<div dir="ltr">On Thu, May 20, 2021 at 10:09 AM Jon Waters &lt;j.waters@acontis.com&gt; wrote:<br>
+</div>
+<blockquote><div>
+<div>Hi Ian,</div>
+<div> </div>
+<div>I'm looping in our developer support to better assist with this question.<br>
+</div>
+<br>/Jon<br><br><div>
+<strong> From: </strong> Ian Sherman &lt;ian.j.sherman@gmail.com&gt; <br>
+<strong> To: </strong> Jon Waters &lt;j.waters@acontis.com&gt; <br>
+<strong> Sent: </strong> 5/20/2021 4:15 AM <br>
+<strong> Subject: </strong> bus shift to master shift DC <br><br><blockquote>
+<div>Hi Jon,<div> </div>
+<div>Hope all is well.</div>
+<div> </div>
+<div>I spent some time integrating DC (bus shift mode) into our codebase this evening, and I see it "working", though it appears to fall in and out of sync -- I think I'm currently limited by the jitter of my dev workstation. I'll be testing on our RT-Preempt patched machine tomorrow.</div>
+<div> </div>
+<div>Do you have any guidance you could offer around the next step of supporting master shift mode? I <a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm_intro.html#dcm-master-shift-mode" rel="nofollow noreferrer noopener" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm_intro.html#dcm-master-shift-mode" target="_blank">see in the manual</a> that these two function pointers must be implemented -- do you have any examples or documentation you could offer on that topic?</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Ian Sherman</div>
+<div> </div>
+</div>
+</blockquote>
+</div>
+</div></blockquote>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

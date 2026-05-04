@@ -1,0 +1,165 @@
+### HEADER
+Id=11240
+Link=http://at-zammad/#ticket/zoom/11240
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=7011240
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=19.08.2025 07:31:40 +00:00
+UpdatedAt=19.12.2025 07:30:13 +00:00
+CloseAt=19.12.2025 07:30:13 +00:00
+ArticlesCount=4
+
+### TITLE
+orangepi5_armbian_rt image
+
+### ARTICLE00_HEADER
+Id=64619
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.08.2025 07:31:40 +00:00
+UpdatedAt=19.08.2025 07:31:41 +00:00
+
+### ARTICLE00_SUBJECT
+orangepi5_armbian_rt image
+
+### ARTICLE00_BODY
+<div>
+<div>
+<div>Dear,</div>
+<div> </div>
+<div>I noticed in the following documentation that EcMaster performs poorly on the RK3588s (orangepi5) platform:</div>
+<div><a href="https://public.acontis.com/manuals/EC-Master/AT2411_EC-Master-Performance-Datasheet.pdf" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/AT2411_EC-Master-Performance-Datasheet.pdf</a></div>
+<div><img src="/api/v1/ticket_attachment/11240/64619/267896?view=inline" style="max-width:100%;width:1179px;max-height:90px;"></div>
+<div>Maybe you are not using a realtime kernel, please find the armbian image with realtime kernel which I am using. The username and password of this image: motrotech</div>
+<div> </div>
+<div>In addition, the A76 cores of rk3588s corresponds to CPU4~CPU7, and the EcMaster will have better performance running on these cores. For rk3399, the A72 cores should be CPU4 and CPU5.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<div>
+<div>---------------------------------------------------------------------------------------------------------</div>
+<div><img src="/api/v1/ticket_attachment/11240/64619/267897?view=inline" style="max-width:100%;width:596px;max-height:219px;"></div>
+<div>2025年8月20-23日，台北南港展览馆1馆4楼N324，期待与您见面！</div>
+<div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司<br>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing </div>
+<div>北京市海淀区上地三街9号C座C309<br><br>
+</div>
+<div><span>Tel: +86-10-62740270<span style=" background-color: transparent;"> （北京）</span></span></div>
+<div><span> <span style=" background-color: transparent;">0571-56125098 </span><span style=" background-color: transparent;">（杭州）</span></span></div>
+<div><span style=" background-color: transparent;"> +886-2-25222206 （台北）</span></div>
+<div>Fax: +86-10-62740270<br>Email ：ec_support@motrotech.com </div>
+</div>
+</div>
+</div>
+<br><br> <div style="color:#333;"> <div>超大附件列表‍</div>
+<div> <div> </div>
+<div> <span title="orangepi5_armbian.7z(559.3MB)">orangepi5_armbian.7z<span style="color:#888;">[559.3MB]</span></span>‍ </div>
+<div> <a href="http://mail.motrotech.com/alimail/openLinks/downloadMimeMetaDiskBigAttach?id=netdiskid%3Av001%3Afile%3ADzzzzzzNqWm%3BG6tTBJDi9YSs1eoLCdT1nLQEgo%2B3koRWZKPG0RwecJQmUnb%2BBwr6PmOmjudCr%2Fey265%2Fdp9vpPo00zCZ50kR9LSPOgitCzy4fHWAtE5Cyoeswwh%2B%2F4SxVUVks2WFE0pR" rel="nofollow noreferrer noopener" title="http://mail.motrotech.com/alimail/openLinks/downloadMimeMetaDiskBigAttach?id=netdiskid%3Av001%3Afile%3ADzzzzzzNqWm%3BG6tTBJDi9YSs1eoLCdT1nLQEgo%2B3koRWZKPG0RwecJQmUnb%2BBwr6PmOmjudCr%2Fey265%2Fdp9vpPo00zCZ50kR9LSPOgitCzy4fHWAtE5Cyoeswwh%2B%2F4SxVUVks2WFE0pR" target="_blank">进入下载页面</a> </div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=64622
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=19.08.2025 07:50:36 +00:00
+UpdatedAt=19.08.2025 07:50:36 +00:00
+
+### ARTICLE01_BODY
+Ich weiß nicht, was er/sie will, wahrscheinlich nur als Info.
+
+### ARTICLE02_HEADER
+Id=64626
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.08.2025 09:06:30 +00:00
+UpdatedAt=19.08.2025 09:06:34 +00:00
+
+### ARTICLE02_SUBJECT
+orangepi5_armbian_rt image
+
+### ARTICLE02_BODY
+Hi Lishan,<div>you're right this value is ugly.</div><div>I'm going to re-run this measurement</div><div><br></div><div>Best Regards</div><div>Daniel</div><div><br></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, August 19, 2025 at 9:31:40 a.m., ec_support@motrotech.com  wrote:<br><br><div>
+<div>
+<div>Dear,</div>
+<div> </div>
+<div>I noticed in the following documentation that EcMaster performs poorly on the RK3588s (orangepi5) platform:</div>
+<div><a href="https://public.acontis.com/manuals/EC-Master/AT2411_EC-Master-Performance-Datasheet.pdf" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/AT2411_EC-Master-Performance-Datasheet.pdf</a></div>
+<div><img src="/api/v1/ticket_attachment/11240/64626/267904?view=inline" style="max-width:100%;max-width:100%;width:1179px;max-height:90px;"></div>
+<div>Maybe you are not using a realtime kernel, please find the armbian image with realtime kernel which I am using. The username and password of this image: motrotech</div>
+<div> </div>
+<div>In addition, the A76 cores of rk3588s corresponds to CPU4~CPU7, and the EcMaster will have better performance running on these cores. For rk3399, the A72 cores should be CPU4 and CPU5.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<div>
+<div>---------------------------------------------------------------------------------------------------------</div>
+<div><img src="/api/v1/ticket_attachment/11240/64626/267905?view=inline" style="max-width:100%;max-width:100%;width:596px;max-height:219px;"></div>
+<div>2025年8月20-23日，台北南港展览馆1馆4楼N324，期待与您见面！</div>
+<div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司<br>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing </div>
+<div>北京市海淀区上地三街9号C座C309<br><br>
+</div>
+<div><span>Tel: +86-10-62740270<span style=" background-color: transparent;"> （北京）</span></span></div>
+<div><span> <span style=" background-color: transparent;">0571-56125098 </span><span style=" background-color: transparent;">（杭州）</span></span></div>
+<div><span style=" background-color: transparent;"> +886-2-25222206 （台北）</span></div>
+<div>Fax: +86-10-62740270<br>Email ：ec_support@motrotech.com </div>
+</div>
+</div>
+</div>
+<br><br> <div style="color:#333;"> <div>超大附件列表‍</div>
+<div> <div> </div>
+<div> <span title="orangepi5_armbian.7z(559.3MB)">orangepi5_armbian.7z<span style="color:#888;">[559.3MB]</span></span>‍ </div>
+<div> <a href="http://mail.motrotech.com/alimail/openLinks/downloadMimeMetaDiskBigAttach?id=netdiskid%3Av001%3Afile%3ADzzzzzzNqWm%3BG6tTBJDi9YSs1eoLCdT1nLQEgo%2B3koRWZKPG0RwecJQmUnb%2BBwr6PmOmjudCr%2Fey265%2Fdp9vpPo00zCZ50kR9LSPOgitCzy4fHWAtE5Cyoeswwh%2B%2F4SxVUVks2WFE0pR" rel="nofollow noreferrer noopener" title="http://mail.motrotech.com/alimail/openLinks/downloadMimeMetaDiskBigAttach?id=netdiskid%3Av001%3Afile%3ADzzzzzzNqWm%3BG6tTBJDi9YSs1eoLCdT1nLQEgo%2B3koRWZKPG0RwecJQmUnb%2BBwr6PmOmjudCr%2Fey265%2Fdp9vpPo00zCZ50kR9LSPOgitCzy4fHWAtE5Cyoeswwh%2B%2F4SxVUVks2WFE0pR" target="_blank">进入下载页面</a> </div>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=69046
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=27.11.2025 08:30:46 +00:00
+UpdatedAt=27.11.2025 08:30:46 +00:00
+
+### ARTICLE03_BODY
+In EC-Master_Performance.xlsm ist die falsche Messung für die Veröffentlichung ausgewählt.

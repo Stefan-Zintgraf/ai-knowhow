@@ -1,0 +1,215 @@
+### HEADER
+Id=2825
+Link=http://at-zammad/#ticket/zoom/2825
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies GmbH (ID=399, Number=1000, Country=DE)
+Commission=WINMOD GmbH (ID=561, Number=561)
+Number=702825
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+CreatedBy=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Type=
+TimeUnit=
+CreatedAt=14.04.2022 14:16:43 +00:00
+UpdatedAt=14.04.2022 14:23:20 +00:00
+CloseAt=14.04.2022 14:16:43 +00:00
+ArticlesCount=2
+
+### TITLE
+WinMOD / Acontis / Umgang mit Projekten ohne .ENI Datei
+
+### ARTICLE00_HEADER
+Id=15027
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.04.2022 14:16:44 +00:00
+UpdatedAt=14.04.2022 14:16:44 +00:00
+
+### ARTICLE00_SUBJECT
+WinMOD / Acontis / Umgang mit Projekten ohne .ENI Datei
+
+### ARTICLE00_BODY
+<div>
+<p><br></p>
+<p><br></p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Christoph Widmann [mailto:c.widmann@acontis.com] <br>
+<b>Sent:</b> Friday, 1 April 2022 14:02<br>
+<b>To:</b> Günther Reinecker<br>
+<b>Cc:</b> Holger Wünsche; Alexander Miseler; 'Paul Bußmann'<br>
+<b>Subject:</b> AW: WinMOD / Acontis / Umgang mit Projekten ohne .ENI Datei</p>
+</div>
+</div>
+<p> </p>
+<p>Hallo Herr Reinecker,</p>
+<p> </p>
+<p>vielen Dank für die Erläuterung ihrer vorhandenen Mechanismen. Das werden wir in unsere Überlegungen einbeziehen.</p>
+<p>Zu Omron:</p>
+<p>Sie verwenden in neueren Steuerungen (ca. seit 2-3 Jahren) unseren EtherCAT Master und somit ist die ENI vorhanden.</p>
+<p>Problem: In der Omron-Programmierumgebung „Sysmac“ kann die ENI nicht einfach exportiert werden. Es geht aktuell nur über „versteckte“ Wege.<br> Wir haben Omron schon vor 6-8 Monaten darauf aufmerksam gemacht, dass die ENI-Export Funktion einfach zugänglich sein sollte. Wir werden hier nochmals nachforschen.</p>
+<p> </p>
+<p>Omron verwendet aktuell bereits unseren Simulator für interne Tests und somit haben sie auch die ENI.</p>
+<p> </p>
+<p>Wenn ihr Kunde die Sysmac EtherCAT Konfiguration im EC-Engineer nachbaut, dann wäre das ein Workaround.</p>
+<p> </p>
+<p>Ich melde mich nächste Woche wieder bei ihnen.</p>
+<p> </p>
+<p>Viele Grüße</p>
+<p> </p>
+<p>Christoph Widmann</p>
+<p> </p>
+<div>
+<div>
+<p><b>Von:</b> Günther Reinecker &lt;G.Reinecker@mewes-partner.de&gt; <br>
+<b>Gesendet:</b> Freitag, 1. April 2022 10:56<br>
+<b>An:</b> Christoph Widmann &lt;c.widmann@acontis.com&gt;<br>
+<b>Cc:</b> Holger Wünsche &lt;h.wuensche@mewes-partner.de&gt;; Alexander Miseler &lt;a.miseler@mewes-partner.de&gt;; 'Paul Bußmann' &lt;p.bussmann@acontis.com&gt;<br>
+<b>Betreff:</b> RE: WinMOD / Acontis / Umgang mit Projekten ohne .ENI Datei</p>
+</div>
+</div>
+<p> </p>
+<p>Hallo Herr Widmann,</p>
+<p>Danke für die schnelle und qualifizierte Antwort.</p>
+<p>· Wenn wir die Busstruktur bei anderen Systemen (EtherNet/IP, PROFINET, …) online einlesen, fehlen uns auch die <b>Variablen</b>. Für die Zuordnung haben wir aber entsprechende Mechanismen entwickelt.</p>
+<p>· Es wäre uns sehr Recht, wenn Sie das <b>Online einlesen</b> mit Ihren Tools anbieten. Dann hätten wir keinen Entwicklungsaufwand und könnten dafür Ihre Tools weiterempfehlen. </p>
+<p>· Konkret liegt uns eine Kundenanfrage zu <b>OMRON</b> Steuerungen mit EtherCAT vor. Zum Test konnte uns keine .ENI Datei gesendet werden. <br> Wir befürchten, dass es keinen Export gibt oder der Kunde weiß nicht wie es geht L</p>
+<p>1. Wissen Sie ob OMRON den Export unterstützt und können vielleicht sogar einen entsprechenden Screenshot schicken?<br> Die Anfrage kommt aus China…</p>
+<p>Viele Grüße</p>
+<p>Guenther Reinecker</p>
+<div>
+<div>
+<p><b>From:</b> Christoph Widmann [c.widmann@acontis.com] <br>
+<b>Sent:</b> Friday, 1 April 2022 10:39<br>
+<b>To:</b> Günther Reinecker<br>
+<b>Cc:</b> Holger Wünsche; Alexander Miseler; 'Paul Bußmann'<br>
+<b>Subject:</b> AW: WinMOD / Acontis / Umgang mit Projekten ohne .ENI Datei</p>
+</div>
+</div>
+<p> </p>
+<p>Hallo Herr Reinecker,</p>
+<p> </p>
+<p>das ist ein komplexes Thema und muss vermutlich für jeden Master ohne ENI spezifisch gelöst werden.</p>
+<p>Es gibt bei uns schon Ansätze dafür, aber wir müssen das noch zu Ende denken, implementieren und testen.</p>
+<p>Das Grundproblem ist, dass die Variablennamen nicht über EtherCAT gesendet werden, auch nicht beim Aufstartvorgang.</p>
+<p> </p>
+<p>Beispiel: Ein Antrieb hat 6 Bytes Input und 6 Bytes Output.</p>
+<p>Der Simulator könnte zwar erkennen, dass mit einen bestimmten Slave (Adresse ist bekannt) 6 Bytes In+Out ausgetauscht werden. Aber, man hat weder den Datentyp noch den Namen.</p>
+<p> </p>
+<p><img border="0" src="/api/v1/ticket_attachment/2825/15027/59164?view=inline" style="max-width:100%;max-width:100%;width:1127px;max-height:211px;"></p>
+<p> </p>
+<p>Lösungsansatz:</p>
+<p>Wenn der Simulator den Aufstartvorgang des Masters komplett erfasst, dann sind schon etliche Infos vorhanden.</p>
+<p>Im nächsten Schritt müsste man mit dem Engineer den Simulator scannen und dann die Konfiguration händisch fertigstellen und die ENI exportieren.</p>
+<p>Dies wäre dann nur einmalig notwendig. In diese Richtung gehen die Überlegungen.</p>
+<p> </p>
+<p>Mit der aktuellen Version des Simulators werden neben Steuerungen mit unserem Master die Steuerungen der Hersteller:</p>
+<p>- Beckhoff</p>
+<p>- Codesys ab V3.5.17</p>
+<p>- Koenig PA</p>
+<p>unterstützt.</p>
+<p>Ich gehen davon aus, dass diese Steuerungen (Master-Software) sehr verbreitet sind. Der Marktanteil liegt sicher deutlich über 50%.</p>
+<p> </p>
+<p>Sobald wir mit diesem Thema weiter sind, setzen wir ein Webmeeting an. Wir haben ein sehr großes Interesse das zu lösen.</p>
+<p> </p>
+<p>Viele Grüße</p>
+<p> </p>
+<p>Christoph Widmann</p>
+<p> </p>
+<div>
+<div>
+<p><b>Von:</b> Günther Reinecker &lt;G.Reinecker@mewes-partner.de&gt; <br>
+<b>Gesendet:</b> Donnerstag, 31. März 2022 16:01<br>
+<b>An:</b> c.widmann@acontis.com<br>
+<b>Cc:</b> Holger Wünsche &lt;h.wuensche@mewes-partner.de&gt;; Alexander Miseler &lt;a.miseler@mewes-partner.de&gt;<br>
+<b>Betreff:</b> WinMOD / Acontis / Umgang mit Projekten ohne .ENI Datei</p>
+</div>
+</div>
+<p> </p>
+<p>Hallo Herr Widmann,</p>
+<p>wir befinden uns jetzt in den abschließenden internen Tests und überlegen wie wir mit Projekten umgehen sollen, wo keine .ENI Datei exportiert werden kann. Sie hatten den Fall mal in einem Webmeeting erwähnt.</p>
+<p>1. Können Sie 1-2 Hersteller benennen, die KEINE .ENI Datei schreiben?</p>
+<p>2. Besteht die Möglichkeit mit dem EC Engineer den Bus einzulesen und als .ENI Datei zu speichern?<br> Ansonsten müssten wir (unter Nutzung Ihrer API) selbst eine Funktion implementieren, den Bus online einzulesen und als .ENI zu speichern…</p>
+<p> </p>
+<p>Vielen Dank</p>
+<p>Guenther Reinecker</p>
+<div>
+<div>
+<p><b>From:</b> Christoph Widmann [c.widmann@acontis.com] <br>
+<b>Sent:</b> Monday, 31 January 2022 13:28<br>
+<b>To:</b> Günther Reinecker<br>
+<b>Cc:</b> Holger Wünsche<br>
+<b>Subject:</b> AW: WinMOD / Acontis / Vertrag auf Deutsch ?</p>
+</div>
+</div>
+<p> </p>
+<p>Hallo Herr Reinecker,</p>
+<p> </p>
+<p>wir hatten vor etlichen Jahren auch eine deutsche Version der Vereinbarung. Diese ist aber leider inzwischen veraltet.</p>
+<p>Da wir rund 70-80% unserer Kunden im nicht deutschsprachigen Raum haben, pflegen wir nur noch die englische Version.</p>
+<p> </p>
+<p>Im Anhang finden sie die Vereinbarung als WORD-Datei.</p>
+<p>Gerne können sie ihre Fragen und Anmerkungen dort eintragen. Diese können wir dann ggf. telefonisch besprechen.</p>
+<p> </p>
+<p>Viele Grüße</p>
+<p>Christoph Widmann</p>
+<p>--------------------------------------------------------------------------------------------------------------------------------------<br> acontis technologies GmbH, Gartenstrasse 46, 88212 Ravensburg/Germany<br> Christoph Widmann<br> Geschäftsführer / Managing Director<br> Phone: +49 (0) 751 5 60 30 32</p>
+<p>Email: c.widmann@acontis.com</p>
+<p>Web: <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com</a></p>
+<p> </p>
+<p>Subscribe to our newsletter and stay updated on the latest developments and upcoming events <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+<p> </p>
+<div>
+<div>
+<p><b>Von:</b> Günther Reinecker &lt;G.Reinecker@mewes-partner.de&gt; <br>
+<b>Gesendet:</b> Montag, 31. Januar 2022 11:42<br>
+<b>An:</b> Christoph Widmann &lt;c.widmann@acontis.com&gt;<br>
+<b>Cc:</b> Holger Wünsche &lt;h.wuensche@mewes-partner.de&gt;<br>
+<b>Betreff:</b> WinMOD / Acontis / Vertrag auf Deutsch ?</p>
+</div>
+</div>
+<p> </p>
+<p>Hallo Herr Widmann,</p>
+<p>Sie haben uns einen Vertrag zur Unterschrift zugesendet, leider ist dieser auf Englisch.</p>
+<p>Gibt es den Vertrag vielleicht auch auf Deutsch? Das wäre für uns wesentlich einfacher.</p>
+<p> </p>
+<p>Vielen Dank,</p>
+<p><b>Guenther Reinecker<br>
+</b><i>Manager System Development </i></p>
+<p> </p>
+</div><br><br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=15028
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=14.04.2022 14:23:20 +00:00
+UpdatedAt=14.04.2022 14:23:20 +00:00
+
+### ARTICLE01_BODY
+<div>
+<a href="http://at-dev-git/ec-embedded/ec-embedded/-/issues/4215" rel="nofollow noreferrer noopener" target="_blank">http://at-dev-git/ec-embedded/ec-embedded/-/issues/4215</a>: <span>Add fallback to generic Process Data Image offsets (e.g. OEM ENI)</span>
+</div>

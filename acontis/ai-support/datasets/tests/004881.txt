@@ -1,0 +1,226 @@
+### HEADER
+Id=4881
+Link=http://at-zammad/#ticket/zoom/4881
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=704881
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=07.02.2023 19:55:23 +00:00
+UpdatedAt=09.02.2023 06:17:57 +00:00
+CloseAt=09.02.2023 06:17:57 +00:00
+ArticlesCount=3
+
+### TITLE
+EMI DC/ClockAdjustment/Visible ignored
+
+### ARTICLE00_HEADER
+Id=25777
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.02.2023 19:55:23 +00:00
+UpdatedAt=07.02.2023 19:55:24 +00:00
+
+### ARTICLE00_SUBJECT
+EMI DC/ClockAdjustment/Visible ignored
+
+### ARTICLE00_BODY
+<div>
+<p>We need the Clock Adjustment section of the Distributed Clocks master tab to be hidden. I expected that the Visible attribute on the Clock Adjustment property in the EMI to do this, but it is ignored.</p>
+<p> </p>
+<p>&lt;PropertyGroup Name="DC" Visible="1"&gt;</p>
+<p>&lt;Property Name="ClockAdjustment" Visible="0" Fixed="1"&gt;</p>
+<p>&lt;Value DataType="Uint32"&gt;1&lt;/Value&gt;</p>
+<p>&lt;/Property&gt;</p>
+<p> </p>
+<p>Would you consider supporting this in the standard EcView/EcViewModel? If not, then we will just hide it in our codebase. The change was quite trivial:</p>
+<p> </p>
+<p>In MasterCfgDCTabView.xaml:</p>
+<p> </p>
+<p>&lt;!-- Mode --&gt;</p>
+<p><span style="color:red;">- &lt;Grid Grid.Column="1" Grid.Row="3"&gt;</span></p>
+<p><span style="color:red;">+ &lt;Grid Grid.Column="1" Grid.Row="3"</span></p>
+<p><span style="color:red;">+ Visibility="{Binding IsClockAdjustmentVisible, Converter={StaticResource booleanToVisibilityConverter}, ConverterParameter='collapse'}"&gt;</span></p>
+<p> </p>
+<p>In CfgMasterDCViewModel.cs:</p>
+<p> </p>
+<p><span style="color:red;">+ /// &lt;summary&gt;</span></p>
+<p><span style="color:red;">+ /// IsClockAdjustmentVisible</span></p>
+<p><span style="color:red;">+ /// &lt;/summary&gt;</span></p>
+<p><span style="color:red;">+ public bool IsClockAdjustmentVisible</span></p>
+<p><span style="color:red;">+ {</span></p>
+<p><span style="color:red;">+ get { return Device.Emi.DcGrp["ClockAdjustment"].Visible; }</span></p>
+<p><span style="color:red;">+ }</span></p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Computer Systems, Inc.<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank">+1-360-254-8688</a><span style="color:#2a2a2a;"><br> Direct: </span><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank">+1-360-702-0150</a><br>
+</span><a href="mailto:quintont@deltamotion.com">quintont@deltamotion.com</a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=25795
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.02.2023 08:30:51 +00:00
+UpdatedAt=08.02.2023 08:30:52 +00:00
+
+### ARTICLE01_SUBJECT
+EMI DC/ClockAdjustment/Visible ignored
+
+### ARTICLE01_BODY
+Hi Quinton,<div><br></div><div>I added this function. It will arrive with the 3.8.x.</div><div>It is also possible to hide it in EMI-Manager, now.</div><div><br></div><div>Best regards,</div><div>Kai</div><div>
+<div><br></div>
+<div><blockquote type="cite">On Tuesday, February 7, 2023 at 8:55:23 PM, Quinton Tormanen wrote:<br><br><div>
+<p>We need the Clock Adjustment section of the Distributed Clocks master tab to be hidden. I expected that the Visible attribute on the Clock Adjustment property in the EMI to do this, but it is ignored.</p>
+<p> </p>
+<p>&lt;PropertyGroup Name="DC" Visible="1"&gt;</p>
+<p>&lt;Property Name="ClockAdjustment" Visible="0" Fixed="1"&gt;</p>
+<p>&lt;Value DataType="Uint32"&gt;1&lt;/Value&gt;</p>
+<p>&lt;/Property&gt;</p>
+<p> </p>
+<p>Would you consider supporting this in the standard EcView/EcViewModel? If not, then we will just hide it in our codebase. The change was quite trivial:</p>
+<p> </p>
+<p>In MasterCfgDCTabView.xaml:</p>
+<p> </p>
+<p>&lt;!-- Mode --&gt;</p>
+<p><span style="color:red;">- &lt;Grid Grid.Column="1" Grid.Row="3"&gt;</span></p>
+<p><span style="color:red;">+ &lt;Grid Grid.Column="1" Grid.Row="3"</span></p>
+<p><span style="color:red;">+ Visibility="{Binding IsClockAdjustmentVisible, Converter={StaticResource booleanToVisibilityConverter}, ConverterParameter='collapse'}"&gt;</span></p>
+<p> </p>
+<p>In CfgMasterDCViewModel.cs:</p>
+<p> </p>
+<p><span style="color:red;">+ /// &lt;summary&gt;</span></p>
+<p><span style="color:red;">+ /// IsClockAdjustmentVisible</span></p>
+<p><span style="color:red;">+ /// &lt;/summary&gt;</span></p>
+<p><span style="color:red;">+ public bool IsClockAdjustmentVisible</span></p>
+<p><span style="color:red;">+ {</span></p>
+<p><span style="color:red;">+ get { return Device.Emi.DcGrp["ClockAdjustment"].Visible; }</span></p>
+<p><span style="color:red;">+ }</span></p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Computer Systems, Inc.<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank">+1-360-254-8688</a><span style="color:#2a2a2a;"><br> Direct: </span><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank">+1-360-702-0150</a><br>
+</span><a href="mailto:quintont@deltamotion.com">quintont@deltamotion.com</a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=25837
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.02.2023 16:42:34 +00:00
+UpdatedAt=08.02.2023 16:42:34 +00:00
+
+### ARTICLE02_SUBJECT
+RE: EMI DC/ClockAdjustment/Visible ignored [Ticket#704881]
+
+### ARTICLE02_BODY
+<div>
+<p>Excellent. Thank you.</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p>--Quinton</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Wednesday, February 8, 2023 12:31 AM<br>
+<b>To:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: EMI DC/ClockAdjustment/Visible ignored [Ticket#704881]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Quinton,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>I added this function. It will arrive with the 3.8.x.</p>
+</div>
+<div>
+<p>It is also possible to hide it in EMI-Manager, now.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best regards,</p>
+</div>
+<div>
+<p>Kai</p>
+</div>
+<div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Tuesday, February 7, 2023 at 8:55:23 PM, Quinton Tormanen wrote:</p>
+<div>
+<p>We need the Clock Adjustment section of the Distributed Clocks master tab to be hidden. I expected that the Visible attribute on the Clock Adjustment property in the EMI to do this, but it is ignored.</p>
+<p> </p>
+<p>&lt;PropertyGroup Name="DC" Visible="1"&gt;</p>
+<p>&lt;Property Name="ClockAdjustment" Visible="0" Fixed="1"&gt;</p>
+<p>&lt;Value DataType="Uint32"&gt;1&lt;/Value&gt;</p>
+<p>&lt;/Property&gt;</p>
+<p> </p>
+<p>Would you consider supporting this in the standard EcView/EcViewModel? If not, then we will just hide it in our codebase. The change was quite trivial:</p>
+<p> </p>
+<p>In MasterCfgDCTabView.xaml:</p>
+<p> </p>
+<p>&lt;!-- Mode --&gt;</p>
+<p><span style="color:red;">- &lt;Grid Grid.Column="1" Grid.Row="3"&gt;</span></p>
+<p><span style="color:red;">+ &lt;Grid Grid.Column="1" Grid.Row="3"</span></p>
+<p><span style="color:red;">+ Visibility="{Binding IsClockAdjustmentVisible, Converter={StaticResource booleanToVisibilityConverter}, ConverterParameter='collapse'}"&gt;</span></p>
+<p> </p>
+<p>In CfgMasterDCViewModel.cs:</p>
+<p> </p>
+<p><span style="color:red;">+ /// &lt;summary&gt;</span></p>
+<p><span style="color:red;">+ /// IsClockAdjustmentVisible</span></p>
+<p><span style="color:red;">+ /// &lt;/summary&gt;</span></p>
+<p><span style="color:red;">+ public bool IsClockAdjustmentVisible</span></p>
+<p><span style="color:red;">+ {</span></p>
+<p><span style="color:red;">+ get { return Device.Emi.DcGrp["ClockAdjustment"].Visible; }</span></p>
+<p><span style="color:red;">+ }</span></p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><br>
+<i>Principal Software Engineer</i><br> Delta Computer Systems, Inc.<br>
+<br>
+<span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" title="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" target="_blank">+1-360-254-8688</a><span style="color:#2a2a2a;"><br> Direct: </span><a href="http://tel:+1-360-702-0150" title="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" target="_blank">+1-360-702-0150</a><br>
+</span><a href="mailto:quintont@deltamotion.com">quintont@deltamotion.com</a></p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

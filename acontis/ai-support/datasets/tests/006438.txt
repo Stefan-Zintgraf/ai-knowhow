@@ -1,0 +1,169 @@
+### HEADER
+Id=6438
+Link=http://at-zammad/#ticket/zoom/6438
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=JSLT (ID=402, Number=0, Country=JP)
+Commission=Fuji electric, PLC (ID=256, Number=256)
+Number=706438
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=27.09.2023 06:58:44 +00:00
+UpdatedAt=29.09.2023 06:18:24 +00:00
+CloseAt=29.09.2023 06:18:24 +00:00
+ArticlesCount=5
+
+### TITLE
+Question about EC-Master(Fuji_Electric)
+
+### ARTICLE00_HEADER
+Id=34705
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=27.09.2023 06:58:44 +00:00
+UpdatedAt=27.09.2023 06:58:46 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(Fuji_Electric)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(Fuji_Electric)
+
+I have a technical question regarding a new project.
+Please check the attached file and respond.
+
+Best regards,
+Takuya Fujikawa
+
+### ARTICLE01_HEADER
+Id=34764
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=28.09.2023 06:07:17 +00:00
+UpdatedAt=28.09.2023 06:07:17 +00:00
+
+### ARTICLE01_BODY
+Hi Daniel,<div><br></div><div>Fuji möchte den R5 Core1/PRU1 auf <span>AM243X verwenden. </span><span>R5 </span><span>Core0/PRU0 wollen sie für eine Slave Implementierung verwenden.</span>
+</div><div><span><br></span></div><div>
+<span>Heute läuft der Master auf </span><span>R5 </span><span>Core0/PRU0 </span><span>AM64x</span>
+</div><div><span><br></span></div><div><span>Geht es? Wieviel Aufwand wäre es?</span></div><div><span><br></span></div><div><span>Grüße,</span></div><div><span>Cyril</span></div>
+
+### ARTICLE02_HEADER
+Id=34771
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=28.09.2023 06:48:40 +00:00
+UpdatedAt=28.09.2023 06:48:40 +00:00
+
+### ARTICLE02_BODY
+<div>Hi Cyril,</div><div>Das heißt die schicken ein custom-board mit mehr Ports</div><div><div><a href="https://www.ti.com/tool/TMDS243EVM" title="https://www.ti.com/tool/TMDS243EVM" rel="nofollow noreferrer noopener" target="_blank">https://www.ti.com/tool/TMDS243EVM</a></div></div><div>Das Eval board hat 2 ICSSG und ein CPSWG</div><div><br></div><div>Auf dem alten SDK geht es tendenziell schneller </div><div><a href="https://www.ti.com/tool/download/MCU-PLUS-SDK-AM64X/08.01.00.36" title="https://www.ti.com/tool/download/MCU-PLUS-SDK-AM64X/08.01.00.36" rel="nofollow noreferrer noopener" target="_blank">https://www.ti.com/tool/download/MCU-PLUS-SDK-AM64X/08.01.00.36</a></div><div><div><a href="https://www.ti.com/tool/download/MCU-PLUS-SDK-AM243X/08.01.00.36" title="https://www.ti.com/tool/download/MCU-PLUS-SDK-AM243X/08.01.00.36" rel="nofollow noreferrer noopener" target="_blank">https://www.ti.com/tool/download/MCU-PLUS-SDK-AM243X/08.01.00.36</a></div></div><div><br></div><div>Ich denk in zwei Woche bekomm ich auf dem AM243 Eval board den Stand vom AM64 zum laufen</div><div>(wenn die SDK version mit dem verfügbaren Eval Board kompatibel ist).</div><div>mit Optimierungen und Build Prozess.</div><div><br></div><div>Bei einem anderen SDK eher 3 Wochen.</div><div><br></div><div>Der zweite Pru kommt dann noch oben drauf.</div><div><br></div><div>
+<span>Alstom hätte auch gern ein anderes SDK aber die wolle eine spezielle Version.</span><br>
+</div><div><br></div><div>Grüße</div><div>Daniel</div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div> </div><div><br></div><div><br></div><div><br></div>
+
+### ARTICLE03_HEADER
+Id=34776
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.09.2023 07:38:49 +00:00
+UpdatedAt=28.09.2023 07:38:52 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(Fuji_Electric)
+
+### ARTICLE03_BODY
+Hi Takuya,<div><br></div><div>yes we will need to do some work. Can it be implemented on a standard reference board? Which one? Which TI SDK will be used?</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, September 27, 2023 at 8:58:44 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(Fuji_Electric)</div>
+<div><br></div>
+<div>I have a technical question regarding a new project.</div>
+<div>Please check the attached file and respond.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE04_HEADER
+Id=34818
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=28.09.2023 23:45:30 +00:00
+UpdatedAt=28.09.2023 23:45:30 +00:00
+
+### ARTICLE04_SUBJECT
+Re: Question about EC-Master(Fuji_Electric) [Ticket#706438]
+
+### ARTICLE04_BODY
+Dear Cyril san
+
+Thank you for answering.
+You will probably have to implement it on your customer's board.
+
+Best regards,
+Takuya Fujikawa
+
+On 2023/09/28 16:38, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+> 
+> yes we will need to do some work. Can it be implemented on a standard reference board? Which one? Which TI SDK will be used?
+> 
+> Best Regards,
+> __________________________________________________________________________________________
+> Cyril Eyssautier
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> On Wednesday, September 27, 2023 at 8:58:44 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Master(Fuji_Electric)
+>>
+>> I have a technical question regarding a new project.
+>> Please check the attached file and respond.
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+

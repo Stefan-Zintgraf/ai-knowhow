@@ -1,0 +1,105 @@
+### HEADER
+Id=6697
+Link=http://at-zammad/#ticket/zoom/6697
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=AJINEXTEK, Motion-Controller (ID=332, Number=332)
+Number=706697
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=31.10.2023 08:04:35 +00:00
+UpdatedAt=17.11.2023 07:06:31 +00:00
+CloseAt=17.11.2023 07:06:31 +00:00
+ArticlesCount=2
+
+### TITLE
+About DCM Sync Error
+
+### ARTICLE00_HEADER
+Id=36250
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.10.2023 08:04:36 +00:00
+UpdatedAt=31.10.2023 08:04:36 +00:00
+
+### ARTICLE00_SUBJECT
+About DCM Sync Error
+
+### ARTICLE00_BODY
+<p>Hi.</p><p><br></p><p>The customer is Ajin.</p><p><br></p><p>Frame loss does not occurs, but sometimes DCM Sync Error below occurs.</p><p><br></p><p>Why does the error below occurs ?</p><p><br></p><p>Could we adjust the "dwInSyncLimit" variable in DCM Configuration ?</p><p>(Should we reduce it ? or incurease it ? )</p><p><br></p><p>If this problem occurs, Are there any additional communication errors to be expected ?</p><p>or Can we just ignore it ?</p><p><br></p><p>Please advise.</p><p><br></p><dt> DCM_E_MAX_CTL_ERROR_EXCEED<a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/error-codes.html#c.DCM_E_MAX_CTL_ERROR_EXCEED" title="Permalink to this definition" rel="nofollow noreferrer noopener" target="_blank"></a><br>
+</dt><dd>
+<p>0x981201C2: DCM controller - synchronization out of limi</p>
+</dd><br><br><p>감사합니다.</p><p><br></p><p>Thank you</p><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p> </p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sundukhan@prestosolution.co.kr</a></span></u></i><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table><p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+
+### ARTICLE01_HEADER
+Id=36357
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.11.2023 11:50:31 +00:00
+UpdatedAt=02.11.2023 11:50:35 +00:00
+
+### ARTICLE01_SUBJECT
+About DCM Sync Error
+
+### ARTICLE01_BODY
+Hi Hans,<div><br></div><div>increasing <span>dwInSyncLimit should help as long as this limit is supported by the application / slave.</span>
+</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Tuesday, October 31, 2023 at 9:04:36 AM, DukHan Sun wrote:<br><br><p>Hi.</p>
+<p><br></p>
+<p>The customer is Ajin.</p>
+<p><br></p>
+<p>Frame loss does not occurs, but sometimes DCM Sync Error below occurs.</p>
+<p><br></p>
+<p>Why does the error below occurs ?</p>
+<p><br></p>
+<p>Could we adjust the "dwInSyncLimit" variable in DCM Configuration ?</p>
+<p>(Should we reduce it ? or incurease it ? )</p>
+<p><br></p>
+<p>If this problem occurs, Are there any additional communication errors to be expected ?</p>
+<p>or Can we just ignore it ?</p>
+<p><br></p>
+<p>Please advise.</p>
+<p><br></p>
+<dt> DCM_E_MAX_CTL_ERROR_EXCEED<a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/error-codes.html#c.DCM_E_MAX_CTL_ERROR_EXCEED" title="Permalink to this definition" rel="nofollow noreferrer noopener" target="_blank"></a><br>
+</dt>
+<dd>
+<p>0x981201C2: DCM controller - synchronization out of limi</p>
+</dd>
+<br><br><p>감사합니다.</p>
+<p><br></p>
+<p>Thank you</p>
+<p><br></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p> </p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sundukhan@prestosolution.co.kr</a></span></u></i><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,217 @@
+### HEADER
+Id=892
+Link=http://at-zammad/#ticket/zoom/892
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=Omron, PLC (ID=282, Number=282)
+Number=700892
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=kojiro.baba@omron.com (ID=215, FirstName=Kojiro, LastName=Baba)
+CreatedBy=kojiro.baba@omron.com (ID=215, FirstName=Kojiro, LastName=Baba)
+Type=
+TimeUnit=
+CreatedAt=24.06.2021 11:17:19 +00:00
+UpdatedAt=25.04.2022 12:36:59 +00:00
+CloseAt=07.07.2021 07:23:36 +00:00
+ArticlesCount=4
+
+### TITLE
+Technical questions for developing the new product using EC-Master
+
+### ARTICLE00_HEADER
+Id=4950
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.06.2021 11:17:20 +00:00
+UpdatedAt=24.06.2021 11:17:23 +00:00
+
+### ARTICLE00_SUBJECT
+Technical questions for developing the new product using EC-Master
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Cyril-san,</p>
+<p> </p>
+<p>It has been a long time to see.</p>
+<p>Thank you for your kind support as usual. I hope you are fine.</p>
+<p> </p>
+<p>We are developing the new product using EC-Master and we have some questions.</p>
+<p>Could you check them?</p>
+<p> </p>
+<p>If you have any questions, please feel free to contact us.</p>
+<p> </p>
+<p><b>[Questions]</b></p>
+<p><a href="https://my.redmine.jp/pbd-rdc/issues/362" rel="nofollow noreferrer noopener" target="_blank">https://my.redmine.jp/pbd-rdc/issues/362</a></p>
+<p><a href="https://my.redmine.jp/pbd-rdc/issues/363" rel="nofollow noreferrer noopener" target="_blank">https://my.redmine.jp/pbd-rdc/issues/363</a></p>
+<p><a href="https://my.redmine.jp/pbd-rdc/issues/364" rel="nofollow noreferrer noopener" target="_blank">https://my.redmine.jp/pbd-rdc/issues/364</a></p>
+<p> </p>
+<p><b>[EC-Master Version]</b></p>
+<p>3.1.1.02</p>
+<p> </p>
+<p>PPT file describing these questions is attached. (Question List_6-24.pptx)</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kojiro Baba</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=5069
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.06.2021 15:57:27 +00:00
+UpdatedAt=25.06.2021 15:57:30 +00:00
+
+### ARTICLE01_SUBJECT
+Technical questions for developing the new product using EC-Master
+
+### ARTICLE01_BODY
+<div>Dear Baba-san,</div><div><br></div><div>yes it is sad to not have more contact. But it means that we were pretty successful!</div><div>Give my greetings to Fukuda-san, Sawada-san, Maekawa-san, <span>Ishimura-san</span><span> </span><span>and the rest of the team.</span>
+</div><div><br></div><div>I will answer the question directly in RedMine</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div><br></div><div><blockquote type="cite">On Thursday, June 24, 2021, 1:17:20 PM, kojiro.baba@omron.com wrote:<br><br><div>
+<p>Dear Cyril-san,</p>
+<p> </p>
+<p>It has been a long time to see.</p>
+<p>Thank you for your kind support as usual. I hope you are fine.</p>
+<p> </p>
+<p>We are developing the new product using EC-Master and we have some questions.</p>
+<p>Could you check them?</p>
+<p> </p>
+<p>If you have any questions, please feel free to contact us.</p>
+<p> </p>
+<p><b>[Questions]</b></p>
+<p><a href="https://my.redmine.jp/pbd-rdc/issues/362" rel="nofollow noreferrer noopener" target="_blank">https://my.redmine.jp/pbd-rdc/issues/362</a></p>
+<p><a href="https://my.redmine.jp/pbd-rdc/issues/363" rel="nofollow noreferrer noopener" target="_blank">https://my.redmine.jp/pbd-rdc/issues/363</a></p>
+<p><a href="https://my.redmine.jp/pbd-rdc/issues/364" rel="nofollow noreferrer noopener" target="_blank">https://my.redmine.jp/pbd-rdc/issues/364</a></p>
+<p> </p>
+<p><b>[EC-Master Version]</b></p>
+<p>3.1.1.02</p>
+<p> </p>
+<p>PPT file describing these questions is attached. (Question List_6-24.pptx)</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kojiro Baba</p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=5070
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=25.06.2021 15:57:51 +00:00
+UpdatedAt=25.06.2021 15:57:51 +00:00
+
+### ARTICLE02_BODY
+Check Redmine
+
+### ARTICLE03_HEADER
+Id=5489
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.07.2021 02:07:47 +00:00
+UpdatedAt=08.07.2021 02:07:47 +00:00
+
+### ARTICLE03_SUBJECT
+RE: Technical questions for developing the new product using EC-Master [Ticket#700892]
+
+### ARTICLE03_BODY
+<div>
+<p>Dear Cyril-san,</p>
+<p> </p>
+<p>Sorry for my late reply.</p>
+<p>Thank you for your kind cooperation.</p>
+<p> </p>
+<p>We can see that you answered following tickets. Thank you so much!</p>
+<ul type="disc">
+<li>
+<a href="https://my.redmine.jp/pbd-rdc/issues/361" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/361" target="_blank">#361</a> … Test version worked fine. I will let you know when we would like you to release the official version.<p></p>
+</li>
+<li>
+<a href="https://my.redmine.jp/pbd-rdc/issues/362" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/362" target="_blank">#362</a><p></p>
+</li>
+<li>
+<a href="https://my.redmine.jp/pbd-rdc/issues/364" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/364" target="_blank">#364</a><p></p>
+</li>
+</ul> <p> </p>
+<p><u>Could you please answer the rest question <a href="https://my.redmine.jp/pbd-rdc/issues/363" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/363" target="_blank">#363</a> ?</u></p>
+<p> </p>
+<p>By the way, I am planning the VC so that you can see the overview of our new product. I will let you know the schedule of the VC.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kojiro Baba</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Saturday, June 26, 2021 12:58 AM<br>
+<b>To:</b> c.eyssautier@acontis.com; Kojiro Baba / OC-IAB PBD-C DEVEL 1-1 &lt;kojiro.baba@omron.com&gt;<br>
+<b>Subject:</b> RE: Technical questions for developing the new product using EC-Master [Ticket#700892]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Dear Baba-san,</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>yes it is sad to not have more contact. But it means that we were pretty successful!</p>
+</div>
+<div>
+<p>Give my greetings to Fukuda-san, Sawada-san, Maekawa-san, Ishimura-san and the rest of the team.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>I will answer the question directly in RedMine</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Cyril</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Thursday, June 24, 2021, 1:17:20 PM, kojiro.baba@omron.com wrote:</p>
+<p></p>
+<div>
+<p>Dear Cyril-san,</p>
+<p> </p>
+<p>It has been a long time to see.</p>
+<p>Thank you for your kind support as usual. I hope you are fine.</p>
+<p> </p>
+<p>We are developing the new product using EC-Master and we have some questions.</p>
+<p>Could you check them?</p>
+<p> </p>
+<p>If you have any questions, please feel free to contact us.</p>
+<p> </p>
+<p><b>[Questions]</b></p>
+<p><a href="https://my.redmine.jp/pbd-rdc/issues/362" rel="nofollow noreferrer noopener" target="_blank">https://my.redmine.jp/pbd-rdc/issues/362</a></p>
+<p><a href="https://my.redmine.jp/pbd-rdc/issues/363" rel="nofollow noreferrer noopener" target="_blank">https://my.redmine.jp/pbd-rdc/issues/363</a></p>
+<p><a href="https://my.redmine.jp/pbd-rdc/issues/364" rel="nofollow noreferrer noopener" target="_blank">https://my.redmine.jp/pbd-rdc/issues/364</a></p>
+<p> </p>
+<p><b>[EC-Master Version]</b></p>
+<p>3.1.1.02</p>
+<p> </p>
+<p>PPT file describing these questions is attached. (Question List_6-24.pptx)</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kojiro Baba</p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>

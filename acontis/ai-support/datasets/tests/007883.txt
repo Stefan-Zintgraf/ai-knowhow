@@ -1,0 +1,227 @@
+### HEADER
+Id=7883
+Link=http://at-zammad/#ticket/zoom/7883
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Hexagon Technology Center GmbH (ID=17, Number=53510, Country=CH)
+Commission=Hexagon, Metrology Machine Controller (ID=230, Number=230)
+Number=707883
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=francesco.casadei-ext@hexagon.com (ID=113, FirstName=Francesco, LastName=casadei-ext)
+CreatedBy=francesco.casadei-ext@hexagon.com (ID=113, FirstName=Francesco, LastName=casadei-ext)
+Type=
+TimeUnit=
+CreatedAt=15.04.2024 13:22:30 +00:00
+UpdatedAt=26.04.2024 06:06:14 +00:00
+CloseAt=26.04.2024 06:06:14 +00:00
+ArticlesCount=4
+
+### TITLE
+Timing of notifications
+
+### ARTICLE00_HEADER
+Id=43411
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.04.2024 13:22:30 +00:00
+UpdatedAt=15.04.2024 13:22:30 +00:00
+
+### ARTICLE00_SUBJECT
+Timing of notifications
+
+### ARTICLE00_BODY
+<div>Hello,</div><div> </div><div>when are notifications actually delivered?</div><div>Is it as soon as the related "event" occurs, or is it sometime later?</div><div> </div><div>In particular, I'm interested in EC_NOTIFY_STATECHANGED and EC_NOTIFY_SLAVE_STATECHANGED.</div><div>Do I get these notifications immediately when the state change is detected?</div><div> </div><div>Best regards,</div><div>Francesco Casadei</div>
+
+### ARTICLE01_HEADER
+Id=43422
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.04.2024 13:57:14 +00:00
+UpdatedAt=15.04.2024 13:57:17 +00:00
+
+### ARTICLE01_SUBJECT
+Timing of notifications
+
+### ARTICLE01_BODY
+Hi Francesco,<div><br></div><div>The notification are mostly generated synchronously. <span>EC_NOTIFY_STATECHANGED</span><span> is generated at the end of the transition in the slave state machine. It is not immediately after the AL Status register has been read for the specific slave. This could be after several cycles.</span>
+</div><div><br></div><div>Best Regards<br><div data-signature="true" data-signature-id="2">
+<div>_________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, April 15, 2024 at 3:22:30 PM, Francesco casadei-ext wrote:<br><br><div>Hello,</div>
+<div> </div>
+<div>when are notifications actually delivered?</div>
+<div>Is it as soon as the related "event" occurs, or is it sometime later?</div>
+<div> </div>
+<div>In particular, I'm interested in EC_NOTIFY_STATECHANGED and EC_NOTIFY_SLAVE_STATECHANGED.</div>
+<div>Do I get these notifications immediately when the state change is detected?</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Francesco Casadei</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=43427
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.04.2024 14:53:11 +00:00
+UpdatedAt=15.04.2024 14:53:11 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Timing of notifications [Ticket#707883]
+
+### ARTICLE02_BODY
+<div>Ok, thank you.</div><div> </div><div>If I understand correctly, the notification mechanism is "immediate" enough for my purposes.</div><div> </div><div>Basically, there is no difference if I call emGetMasterState() every cycle to know the state, or I catch the corresponding notification.</div><div>Both will give "current" information, i.e. "current" as determined by EC-Master.</div><div> </div><div>Cheers,</div><div>Francesco Casadei</div><hr>
+<div dir="ltr">
+<b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Monday, 15 April 2024 15:57<br>
+<b>To:</b> CASADEI Francesco &lt;francesco.casadei-ext@hexagon.com&gt;<br>
+<b>Subject:</b> RE: Timing of notifications [Ticket#707883] <div> </div>
+</div><div>
+<div style=" color:#ff0000;">This email is not from Hexagon’s Office 365 instance. Please be careful while clicking links, opening attachments, or replying to this email.</div>
+<br>
+<div>Hi Francesco,<div> </div>
+<div>The notification are mostly generated synchronously. EC_NOTIFY_STATECHANGED is generated at the end of the transition in the slave state machine. It is not immediately after the AL Status register has been read for the specific slave. This could be after several cycles.</div>
+<div> </div>
+<div>Best Regards<br>
+<div data-signature="true" data-signature-id="2">
+<div>_________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Monday, April 15, 2024 at 3:22:30 PM, Francesco casadei-ext wrote:<br>
+<br>
+<div>Hello,</div>
+<div> </div>
+<div>when are notifications actually delivered?</div>
+<div>Is it as soon as the related "event" occurs, or is it sometime later?</div>
+<div> </div>
+<div>In particular, I'm interested in EC_NOTIFY_STATECHANGED and EC_NOTIFY_SLAVE_STATECHANGED.</div>
+<div>Do I get these notifications immediately when the state change is detected?</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Francesco Casadei</div>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=43431
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.04.2024 15:38:27 +00:00
+UpdatedAt=15.04.2024 15:38:29 +00:00
+
+### ARTICLE03_SUBJECT
+Timing of notifications
+
+### ARTICLE03_BODY
+Yes exactly.<div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2"><div><span>Cyril</span></div></div>
+<div><br></div>
+<div><blockquote type="cite">On Monday, April 15, 2024 at 4:53:11 PM, Francesco casadei-ext wrote:<br><br><div>Ok, thank you.</div>
+<div> </div>
+<div>If I understand correctly, the notification mechanism is "immediate" enough for my purposes.</div>
+<div> </div>
+<div>Basically, there is no difference if I call emGetMasterState() every cycle to know the state, or I catch the corresponding notification.</div>
+<div>Both will give "current" information, i.e. "current" as determined by EC-Master.</div>
+<div> </div>
+<div>Cheers,</div>
+<div>Francesco Casadei</div>
+<hr>
+<div dir="ltr">
+<b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Monday, 15 April 2024 15:57<br>
+<b>To:</b> CASADEI Francesco &lt;francesco.casadei-ext@hexagon.com&gt;<br>
+<b>Subject:</b> RE: Timing of notifications [Ticket#707883] <div> </div>
+</div>
+<div>
+<div style=" color:#ff0000;">This email is not from Hexagon’s Office 365 instance. Please be careful while clicking links, opening attachments, or replying to this email.</div>
+<br>
+<div>Hi Francesco,<div> </div>
+<div>The notification are mostly generated synchronously. EC_NOTIFY_STATECHANGED is generated at the end of the transition in the slave state machine. It is not immediately after the AL Status register has been read for the specific slave. This could be after several cycles.</div>
+<div> </div>
+<div>Best Regards<br>
+<div data-signature="true" data-signature-id="2">
+<div>_________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Monday, April 15, 2024 at 3:22:30 PM, Francesco casadei-ext wrote:<br>
+<br>
+<div>Hello,</div>
+<div> </div>
+<div>when are notifications actually delivered?</div>
+<div>Is it as soon as the related "event" occurs, or is it sometime later?</div>
+<div> </div>
+<div>In particular, I'm interested in EC_NOTIFY_STATECHANGED and EC_NOTIFY_SLAVE_STATECHANGED.</div>
+<div>Do I get these notifications immediately when the state change is detected?</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Francesco Casadei</div>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

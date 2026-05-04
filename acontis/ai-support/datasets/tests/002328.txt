@@ -1,0 +1,173 @@
+### HEADER
+Id=2328
+Link=http://at-zammad/#ticket/zoom/2328
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bobst Mex SA (ID=14, Number=50513, Country=CH)
+Commission=Bobst, CUBE RTOS-32 (ID=15, Number=15)
+Number=702328
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=didier.moret@bobst.com (ID=61, FirstName=Moret, LastName=Didier)
+CreatedBy=didier.moret@bobst.com (ID=61, FirstName=Moret, LastName=Didier)
+Type=
+TimeUnit=
+CreatedAt=26.01.2022 15:09:52 +00:00
+UpdatedAt=18.02.2022 07:14:58 +00:00
+CloseAt=18.02.2022 07:14:58 +00:00
+ArticlesCount=2
+
+### TITLE
+problème dans ecatnotification
+
+### ARTICLE00_HEADER
+Id=12298
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.01.2022 15:09:52 +00:00
+UpdatedAt=26.01.2022 15:09:56 +00:00
+
+### ARTICLE00_SUBJECT
+problème dans ecatnotification
+
+### ARTICLE00_BODY
+<div>
+<p>Bonjour Mr Eyssautier,</p>
+<p> </p>
+<p>Dans ecatnotification ProcessNotification</p>
+<p> </p>
+<p>Ne manque-t-il pas les traitements des notifications EC_NOTIFY_RAWCMD_DONE et EC_NOTIFY_RAWCMD_DONE qui sont mises en queue de job, mais non traitée ?</p>
+<p> </p>
+<p>Dans le code :</p>
+<p> </p>
+<p>} break;</p>
+<p>#ifdef INCLUDE_FOE_SUPPORT</p>
+<p>case eMbxTferType_FOE_SEG_DOWNLOAD:</p>
+<p>{</p>
+<p>EC_T_MBXTFER* pMbxTfer = &amp;(TmpJob.JobData.MbxTferJob);</p>
+<p>if (eMbxTferStatus_TferWaitingForContinue == pMbxTfer-&gt;eTferStatus)</p>
+<p>{</p>
+<p>/* read from file to application's buffer */</p>
+<p>m_SegmentedFoeDownload.dwDataLen =</p>
+<p>(EC_T_DWORD)OsFread(pMbxTfer-&gt;MbxTferDesc.pbyMbxTferDescData, 1, pMbxTfer-&gt;MbxData.FoE.dwRequestedBytes, (FILE *)m_SegmentedFoeDownload.hFile);</p>
+<p> </p>
+<p>/* queue application's buffer to be transferred to slave */</p>
+<p>emFoeSegmentedDownloadReq(m_dwMasterInstance, pMbxTfer, 0, EC_NULL, 0, 0, 0, 0);</p>
+<p>}</p>
+<p>} break;</p>
+<p>#endif /* INCLUDE_FOE_SUPPORT */</p>
+<p> </p>
+<p>Si INCLUDE_FOE_SUPPORT est défini, le code ne compile pas, car eMbxTferType_FOE_SEG_DOWNLOAD n’est pas une notification, mais un champ de la notification EC_NOTIFY_MBOXRCV</p>
+<p> </p>
+<p><b>Moret Didier</b>
+</p>
+<p> </p>
+<p><b>BOBST </b>
+</p>
+<p>CORES, R&amp;D engineer</p>
+<p>Tél.: +41 21 621 48 86</p>
+<p>Email: Didier.Moret@bobst.com</p>
+<p> </p>
+<p><b>Bobst Mex SA</b>
+</p>
+<p>PO Box, CH-1001 Lausanne<br> Tél.: +41 21 621 21 11<br> Fax: +41 21 621 20 70</p>
+<p><a href="http://www.bobst.com/" rel="nofollow noreferrer noopener" target="_blank">www.bobst.com</a>
+</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:1.0312in;max-height:1.0312in;width:99px;max-height:99px;" src="/api/v1/ticket_attachment/2328/12298/48157?view=inline"></p>
+<p> </p>
+</div><table border="0" cellpadding="0" style="font-size:8.0pt;color:#0000cc;" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<hr>
+<p><a href="https://www.bobst.com/linkedin" rel="nofollow noreferrer noopener" title="https://www.bobst.com/linkedin" target="_blank">LinkedIn</a> - <a href="https://www.bobst.com/facebook" rel="nofollow noreferrer noopener" title="https://www.bobst.com/facebook" target="_blank"> Facebook</a> - <a href="https://www.bobst.com/twitter" rel="nofollow noreferrer noopener" title="https://www.bobst.com/twitter" target="_blank">Twitter</a> - <a href="https://www.bobst.com/youtube" rel="nofollow noreferrer noopener" title="https://www.bobst.com/youtube" target="_blank"> YouTube</a></p>
+<hr>
+<span style="color:#000000;">This message and any attachments (the message) are intended solely for the addressees and are confidential. If you receive this message in error, please delete it and immediately notify the sender. Any use not in accordance with its purpose, any dissemination, copying or disclosure, either whole or partial is prohibited without prior formal approval. The internet cannot guarantee the integrity of the message. The companies of Bobst Group do not accept any liability for data corruption, delay, interception or any modification in relation with this message.</span>
+<hr>
+</td>
+</tr>
+</tbody>
+</table>
+
+### ARTICLE01_HEADER
+Id=12347
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.01.2022 10:37:44 +00:00
+UpdatedAt=27.01.2022 10:37:48 +00:00
+
+### ARTICLE01_SUBJECT
+problème dans ecatnotification
+
+### ARTICLE01_BODY
+Bonjour Monsieur Moret,<div><br></div><div>Vous avez raison pour EC_NOTIFY_RAWCMD_DONE, je vais les enlever complétement. <span>EC_NOTIFY_SLAVE_REGISTER_TRANSFER n'est également pas dans EcNotification.cpp</span>
+</div><div><span><br></span></div><div>
+<span>J'ai également corrigé </span><span>eMbxTferType_FOE_SEG_DOWNLOAD</span>
+</div><div><br></div><div>Veuillez trouver en attachement la version actuelle de EcNotification.cpp.</div><div><br></div><div>Cordialement,</div><div>Cyril Eyssautier<div><br></div>
+<div><blockquote type="cite">On Wednesday, January 26, 2022, 4:09:52 PM, Moret Didier wrote:<br><br><div>
+<p>Bonjour Mr Eyssautier,</p>
+<p> </p>
+<p>Dans ecatnotification ProcessNotification</p>
+<p> </p>
+<p>Ne manque-t-il pas les traitements des notifications EC_NOTIFY_RAWCMD_DONE et EC_NOTIFY_RAWCMD_DONE qui sont mises en queue de job, mais non traitée ?</p>
+<p> </p>
+<p>Dans le code :</p>
+<p> </p>
+<p>} break;</p>
+<p>#ifdef INCLUDE_FOE_SUPPORT</p>
+<p>case eMbxTferType_FOE_SEG_DOWNLOAD:</p>
+<p>{</p>
+<p>EC_T_MBXTFER* pMbxTfer = &amp;(TmpJob.JobData.MbxTferJob);</p>
+<p>if (eMbxTferStatus_TferWaitingForContinue == pMbxTfer-&gt;eTferStatus)</p>
+<p>{</p>
+<p>/* read from file to application's buffer */</p>
+<p>m_SegmentedFoeDownload.dwDataLen =</p>
+<p>(EC_T_DWORD)OsFread(pMbxTfer-&gt;MbxTferDesc.pbyMbxTferDescData, 1, pMbxTfer-&gt;MbxData.FoE.dwRequestedBytes, (FILE *)m_SegmentedFoeDownload.hFile);</p>
+<p> </p>
+<p>/* queue application's buffer to be transferred to slave */</p>
+<p>emFoeSegmentedDownloadReq(m_dwMasterInstance, pMbxTfer, 0, EC_NULL, 0, 0, 0, 0);</p>
+<p>}</p>
+<p>} break;</p>
+<p>#endif /* INCLUDE_FOE_SUPPORT */</p>
+<p> </p>
+<p>Si INCLUDE_FOE_SUPPORT est défini, le code ne compile pas, car eMbxTferType_FOE_SEG_DOWNLOAD n’est pas une notification, mais un champ de la notification EC_NOTIFY_MBOXRCV</p>
+<p> </p>
+<p><b>Moret Didier</b>
+</p>
+<p> </p>
+<p><b>BOBST </b>
+</p>
+<p>CORES, R&amp;D engineer</p>
+<p>Tél.: +41 21 621 48 86</p>
+<p>Email: Didier.Moret@bobst.com</p>
+<p> </p>
+<p><b>Bobst Mex SA</b>
+</p>
+<p>PO Box, CH-1001 Lausanne<br> Tél.: +41 21 621 21 11<br> Fax: +41 21 621 20 70</p>
+<p><a href="http://www.bobst.com/" rel="nofollow noreferrer noopener" target="_blank">www.bobst.com</a>
+</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;max-width:100%;width:1.0312in;max-height:1.0312in;width:99px;max-height:99px;" src="/api/v1/ticket_attachment/2328/12347/48364?view=inline"></p>
+<p> </p>
+</div>
+<table border="0" cellpadding="0" style="font-size:8.0pt;color:#0000cc;" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<hr>
+<p><a href="https://www.bobst.com/linkedin" rel="nofollow noreferrer noopener" title="https://www.bobst.com/linkedin" target="_blank">LinkedIn</a> - <a href="https://www.bobst.com/facebook" rel="nofollow noreferrer noopener" title="https://www.bobst.com/facebook" target="_blank"> Facebook</a> - <a href="https://www.bobst.com/twitter" rel="nofollow noreferrer noopener" title="https://www.bobst.com/twitter" target="_blank">Twitter</a> - <a href="https://www.bobst.com/youtube" rel="nofollow noreferrer noopener" title="https://www.bobst.com/youtube" target="_blank"> YouTube</a></p>
+<hr>
+<span style="color:#000000;">This message and any attachments (the message) are intended solely for the addressees and are confidential. If you receive this message in error, please delete it and immediately notify the sender. Any use not in accordance with its purpose, any dissemination, copying or disclosure, either whole or partial is prohibited without prior formal approval. The internet cannot guarantee the integrity of the message. The companies of Bobst Group do not accept any liability for data corruption, delay, interception or any modification in relation with this message.</span>
+<hr>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

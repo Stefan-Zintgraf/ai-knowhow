@@ -1,0 +1,132 @@
+### HEADER
+Id=9886
+Link=http://at-zammad/#ticket/zoom/9886
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Ackermann Automation GmbH (ID=82, Number=50012, Country=DE)
+Commission=Ackermann Automation, Datenerfassung (ID=959, Number=959)
+Number=709886
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=d.ackermann@ackermann-automation.com (ID=2891, FirstName=Dermot, LastName=Ackermann)
+CreatedBy=d.ackermann@ackermann-automation.com (ID=2891, FirstName=Dermot, LastName=Ackermann)
+Type=
+TimeUnit=
+CreatedAt=10.02.2025 09:29:33 +00:00
+UpdatedAt=14.02.2025 07:22:44 +00:00
+CloseAt=14.02.2025 07:22:44 +00:00
+ArticlesCount=3
+
+### TITLE
+NDIS
+
+### ARTICLE00_HEADER
+Id=56339
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.02.2025 09:29:33 +00:00
+UpdatedAt=10.02.2025 09:29:38 +00:00
+
+### ARTICLE00_SUBJECT
+NDIS
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="DE">Guten Morgen</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Ich verstehen nicht ganz, wie ich bei ndis die Netzwerkkarte über den Namen anspreche.</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:5.0104in;max-height:3.9583in;width:481px;max-height:380px;" src="/api/v1/ticket_attachment/9886/56339/233963?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="DE">Wäre dies korrekt?</span></p>
+<p><span lang="DE">-ndis 0.0.0.0 0 --Ethernet</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Zudem müsste ich die Installation des NDIS Treibers in unseren Installer einbauen. Dazu benötige ich die Dateien und die auszuführenden Schritte. Oder gibt es eine Installationsroutine nur für die Treiberinstallation, die mit silent Option ausgeführt werden kann?</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p> </p>
+<p><span lang="EN-US" style="color:#1f497d;">With kind regards<br>Dermot Ackermann<br></span><span lang="EN-US" style="color:#1f497d;">(Managing Director)</span><span lang="EN-US"></span></p>
+<p><span lang="EN-US" style="color:#1f497d;">Phone: +34 960 13 59 61<br>Mobile: +34 668 524 706</span><span lang="EN-US"><br></span><span lang="EN-US" style="color:#1f497d;">Email: <a href="mailto:d.ackermann@ackermann-automation.com"><span style="color:#0563c1;">d.ackermann@ackermann-automation.com</span></a></span></p>
+<p><span lang="EN-US" style="color:#1f497d;">Ackermann Automation S.L.U<br>Ronda Narciso Monturiol 17<br>Parque tecnológico<br>46980 Paterna, (Valencia)<br>España</span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"><a href="http://www.ackermann-automation.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">www.ackermann-automation.com</span></a></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US" style="color:#44546a;">Registro Mercantil de Valencia: </span></p>
+<p><span lang="EN-US" style="color:#44546a;">Tomo 11408, Libro 8686, Folio 212, Hoja V-212157</span></p>
+<p> </p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=56350
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=10.02.2025 10:23:05 +00:00
+UpdatedAt=10.02.2025 10:23:05 +00:00
+
+### ARTICLE01_BODY
+@Cyril:<div>Denke nicht das er hier einen Namen eingeben kann. Eher die GUID oder so. Evtl. ist die Doku hier falsch.</div><div><br></div><div>Zum NDIS Installer:</div><div>Die Dateien stellen wir nicht separat zur Verfügung. </div><div><br></div><div>Er kann unseren MSI Installer einfach im "Silent" Mode ausführen.</div><div><br></div><div>Siehe auch:</div><div><div><a href="https://stackoverflow.com/questions/8560166/silent-installation-of-an-msi-package" title="https://stackoverflow.com/questions/8560166/silent-installation-of-an-msi-package" rel="nofollow noreferrer noopener" target="_blank">https://stackoverflow.com/questions/8560166/silent-installation-of-an-msi-package</a></div></div><div><br></div><div>... könnte man ggfs. auch ins Handbuch aufnehmen.</div><div><br></div>
+
+### ARTICLE02_HEADER
+Id=56358
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.02.2025 11:36:45 +00:00
+UpdatedAt=10.02.2025 11:36:47 +00:00
+
+### ARTICLE02_SUBJECT
+NDIS
+
+### ARTICLE02_BODY
+Hallo Herr Ackermann,<div><br></div><div>wir haben keine Möglichkeit die Karte über ihren Namen zu selektieren. Nur über ihre GUID. Ab V3.2.2.05, wäre es auch möglich die Karte über ihre PCI Location wie bei dem IntelGbe Linklayer zu adressieren.</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/emll_init.html#real-time-ethernet-driver-instance-selection-via-pci-location" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/emll_init.html#real-time-ethernet-driver-instance-selection-via-pci-location" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/emll_init.html#real-time-ethernet-driver-instance-selection-via-pci-location</a></div></div><div><br></div><div>Den NDIS Treiber können Sie mit dem <span>MSI Installer auch in "Silent" Mode deployen.</span>
+</div><div><a href="https://stackoverflow.com/questions/8560166/silent-installation-of-an-msi-package" rel="nofollow noreferrer noopener" target="_blank">https://stackoverflow.com/questions/8560166/silent-installation-of-an-msi-package</a></div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div><span>Cyril Eyssautier</span></div>
+<div><br></div>
+</div>
+<div><blockquote type="cite">On Monday, February 10, 2025 at 10:29:33 AM, Dermot Ackermann wrote:<br><br><div>
+<p><span lang="DE">Guten Morgen</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Ich verstehen nicht ganz, wie ich bei ndis die Netzwerkkarte über den Namen anspreche.</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:5.0104in;max-height:3.9583in;width:481px;max-height:380px;" src="/api/v1/ticket_attachment/9886/56358/234086?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Wäre dies korrekt?</span></p>
+<p><span lang="DE">-ndis 0.0.0.0 0 --Ethernet</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Zudem müsste ich die Installation des NDIS Treibers in unseren Installer einbauen. Dazu benötige ich die Dateien und die auszuführenden Schritte. Oder gibt es eine Installationsroutine nur für die Treiberinstallation, die mit silent Option ausgeführt werden kann?</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p><span lang="EN-US" style="color:#1f497d;">With kind regards<br>Dermot Ackermann<br></span><span lang="EN-US" style="color:#1f497d;">(Managing Director)</span><span lang="EN-US"></span></p>
+<p><span lang="EN-US" style="color:#1f497d;">Phone: +34 960 13 59 61<br>Mobile: +34 668 524 706</span><span lang="EN-US"><br></span><span lang="EN-US" style="color:#1f497d;">Email: <a href="mailto:d.ackermann@ackermann-automation.com"><span style="color:#0563c1;">d.ackermann@ackermann-automation.com</span></a></span></p>
+<p><span lang="EN-US" style="color:#1f497d;">Ackermann Automation S.L.U<br>Ronda Narciso Monturiol 17<br>Parque tecnológico<br>46980 Paterna, (Valencia)<br>España</span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"><a href="http://www.ackermann-automation.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">www.ackermann-automation.com</span></a></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US" style="color:#44546a;">Registro Mercantil de Valencia: </span></p>
+<p><span lang="EN-US" style="color:#44546a;">Tomo 11408, Libro 8686, Folio 212, Hoja V-212157</span></p>
+<p> </p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

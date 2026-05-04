@@ -1,0 +1,214 @@
+### HEADER
+Id=4185
+Link=http://at-zammad/#ticket/zoom/4185
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Microport, Unknown (ID=637, Number=637)
+Number=704185
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=24.10.2022 13:29:44 +00:00
+UpdatedAt=28.10.2022 06:13:40 +00:00
+CloseAt=28.10.2022 06:13:40 +00:00
+ArticlesCount=3
+
+### TITLE
+The customer microport's problem about DAQ under 250us cycle
+
+### ARTICLE00_HEADER
+Id=22021
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.10.2022 13:29:44 +00:00
+UpdatedAt=24.10.2022 13:29:46 +00:00
+
+### ARTICLE00_SUBJECT
+The customer microport's problem about DAQ under 250us cycle
+
+### ARTICLE00_BODY
+<div>Dear,</div><div> </div><div>The customer could run the DAQ under 250us, the EcMaster report:</div><div>
+<div>0000008354: CEcDaqWriterAsync::DataSetStart(): No free DataSets available</div>
+<div>0000008354: ecDaqProcessRt: ERROR: No memory left (0x9811000a))</div>
+</div><div>This seems to be caused by insufficeient stack allocated by Daq.</div><div>How should the customer solve this problem?</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div><p>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</p></div>
+<div>
+<p>Room 311, Building 2, Yiquanhui, No. 35 Shangdi East Road, Haidian District, Beijing</p>
+<p>北京市海淀区上地东路35号院颐泉汇2号楼311</p>
+<p>Tel: +86-10-62740270</p>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=22034
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.10.2022 16:19:57 +00:00
+UpdatedAt=24.10.2022 16:20:01 +00:00
+
+### ARTICLE01_SUBJECT
+The customer microport's problem about DAQ under 250us cycle
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>Yes, the max pending data sets are too small.</div><div><br></div><div>This value can be adjusted with this setting: </div><div><div>EC_T_DAQ_REC_PARMS.<span>dwThreadMaxPendingDataSets // 0 = default and this is 1000</span>
+</div></div><div><br></div><div>If this doesn't help, can you tell mit which version/architecture does this customer use?</div><div><br></div><div>
+<span>Best Regards,</span><br>
+</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/4185/22034/92347?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, October 24, 2022 at 3:29:44 PM, EtherCAT Support wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>The customer could run the DAQ under 250us, the EcMaster report:</div>
+<div>
+<div>0000008354: CEcDaqWriterAsync::DataSetStart(): No free DataSets available</div>
+<div>0000008354: ecDaqProcessRt: ERROR: No memory left (0x9811000a))</div>
+</div>
+<div>This seems to be caused by insufficeient stack allocated by Daq.</div>
+<div>How should the customer solve this problem?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div><p>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</p></div>
+<div>
+<p>Room 311, Building 2, Yiquanhui, No. 35 Shangdi East Road, Haidian District, Beijing</p>
+<p>北京市海淀区上地东路35号院颐泉汇2号楼311</p>
+<p>Tel: +86-10-62740270</p>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=22049
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.10.2022 08:01:58 +00:00
+UpdatedAt=25.10.2022 08:01:58 +00:00
+
+### ARTICLE02_SUBJECT
+Re: RE: The customer microport's problem about DAQ under 250us cycle [Ticket#704185]
+
+### ARTICLE02_BODY
+<div>Hi Martin,</div><div> </div><div>It works with the bigger value.</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div><p>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</p></div>
+<div>
+<p>Room 311, Building 2, Yiquanhui, No. 35 Shangdi East Road, Haidian District, Beijing</p>
+<p>北京市海淀区上地东路35号院颐泉汇2号楼311</p>
+<p>Tel: +86-10-62740270</p>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div><blockquote>
+<div> </div>
+<div>
+<span class="js-signatureMarker"></span><div>
+<b>From:</b> <a href="mailto:ecsupport@acontis.com">Martin Gaenzer via EC-Support</a>
+</div>
+<div>
+<b>Date:</b> 2022-10-25 00:20</div>
+<div>
+<b>To:</b> <a href="mailto:ec_support@motrotech.com">ec_support</a>
+</div>
+<div>
+<b>Subject:</b> RE: The customer microport's problem about DAQ under 250us cycle [Ticket#704185]</div>
+</div>
+<div>Hi,<div> </div>
+<div>Yes, the max pending data sets are too small.</div>
+<div> </div>
+<div>This value can be adjusted with this setting:</div>
+<div>EC_T_DAQ_REC_PARMS.dwThreadMaxPendingDataSets // 0 = default and this is 1000</div>
+<div> </div>
+<div>If this doesn't help, can you tell mit which version/architecture does this customer use?</div>
+<div> </div>
+<div>Best Regards,<br>
+</div>
+<div>Martin</div>
+<div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/4185/22049/92478?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Monday, October 24, 2022 at 3:29:44 PM, EtherCAT Support wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>The customer could run the DAQ under 250us, the EcMaster report:</div>
+<div>
+<div>0000008354: CEcDaqWriterAsync::DataSetStart(): No free DataSets available</div>
+<div>0000008354: ecDaqProcessRt: ERROR: No memory left (0x9811000a))</div>
+</div>
+<div>This seems to be caused by insufficeient stack allocated by Daq.</div>
+<div>How should the customer solve this problem?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div><p>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</p></div>
+<div>
+<p>Room 311, Building 2, Yiquanhui, No. 35 Shangdi East Road, Haidian District, Beijing</p>
+<p>北京市海淀区上地东路35号院颐泉汇2号楼311</p>
+<p>Tel: +86-10-62740270</p>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div> </div>
+<br><br>
+</div>
+</div>
+</blockquote>

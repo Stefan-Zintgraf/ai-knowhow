@@ -1,0 +1,161 @@
+### HEADER
+Id=294
+Link=http://at-zammad/#ticket/zoom/294
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Medtronic GmbH (ID=138, Number=45057, Country=DE)
+Commission=Medtronic, Surgical Controller (ID=157, Number=157)
+Number=700294
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=jinlong.shen@medtronic.com (ID=193, FirstName=Jinlong, LastName=Shen)
+CreatedBy=jinlong.shen@medtronic.com (ID=193, FirstName=Jinlong, LastName=Shen)
+Type=
+TimeUnit=
+CreatedAt=24.03.2021 09:11:42 +00:00
+UpdatedAt=26.04.2022 05:09:43 +00:00
+CloseAt=09.04.2021 07:10:19 +00:00
+ArticlesCount=3
+
+### TITLE
+Ethercat link configuration
+
+### ARTICLE00_HEADER
+Id=1346
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.03.2021 09:11:43 +00:00
+UpdatedAt=24.03.2021 09:11:47 +00:00
+
+### ARTICLE00_SUBJECT
+Ethercat link configuration
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Kai,</p>
+<p>Wir versuchen viel mehr Daten in 0x6004 zu kommunizieren als wir jetzt haben. Etwa 840 bytes in 0x6004 und insgesamt 5 Ethercat Slaves. (Die anderen Records in 0x6000, 0x6001, 0x6002, 0x6003 haben viel weniger Datenmenge. )</p>
+<p>Bei uns die Rx and Tx Buffers werden erst nicht konfiguriert, damit default Einstellung in Acontis Master Stack angenommen wird.</p>
+<p> </p>
+<p>Ich bekomme die folgende Fehlmeldung auf Ethercat Master:</p>
+<p>2021-03-23 17:58:54.117 ACONTIS: FrameAlloc::EcLinkAllocSendFrame() supported but reports no memory!!</p>
+<p> </p>
+<p>Bedeutet es, dass es kein genug Speicherplatz gibt? Wie kann man die Einstellung für Buffers (Prozessdaten und Mailbox daten umso) adjustieren?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen,</p>
+<p>Jinlong</p>
+<p> </p>
+<p><b>Jinlong Shen</b></p>
+<p>Principal Software Engineer | Early Technologies</p>
+<p> </p>
+<p><b>Medtronic</b></p>
+<p>Medtronic GmbH</p>
+<p>Earl-Bakken-Platz 1 | 40670 Meerbusch | Germany</p>
+<p>Phone: +49 8153 9087 142 | Mobile: +49- 151- 6496 3497 | Fax: +49 8153 9087 300</p>
+<p>jinlong.shen@medtronic.com</p>
+<p>
+<a href="http://www.medtronic.de/" rel="nofollow noreferrer noopener" title="http://www.medtronic.de/" target="_blank">medtronic.de</a> | <a href="https://www.linkedin.com/company/medtronic-gmbh/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/medtronic-gmbh/" target="_blank">LinkedIn</a> | <a href="https://www.facebook.com/medtronicdeutschland" rel="nofollow noreferrer noopener" title="https://www.facebook.com/medtronicdeutschland" target="_blank">Facebook</a><u>
+</u> | <a href="https://www.youtube.com/user/medtronicdeutschland" rel="nofollow noreferrer noopener" title="https://www.youtube.com/user/medtronicdeutschland" target="_blank">YouTube </a></p>
+<p> </p>
+<p>
+<b>LET’S TAKE HEALTHCARE</b></p>
+<p><b>FURTHER, TOGETHER</b></p>
+<p> </p>
+<p>Geschäftsführung: Mike Genau, Sylvia Theis</p>
+<p>Sitz der Gesellschaft: Meerbusch</p>
+<p>Handelsregister: Amtsgericht Neuss HRB 14798</p>
+<p> </p>
+<p>Die in dieser E-Mail übermittelten Informationen sind vertraulich und ggf. rechtlich geschützt. Sie sind nur für den Gebrauch durch die Person oder die Organisation bestimmt, an die diese E-Mail adressiert ist. Wenn Sie nicht der beabsichtigte Empfänger sind oder Ihnen diese E-Mail unbefugt zugeleitet wurde, ist jedwede Verbreitung oder sonstige Verwendung dieser Informationen streng untersagt. Bitte löschen Sie in diesem Fall diese E-Mail.</p>
+<p> </p>
+</div>[CONFIDENTIALITY AND PRIVACY NOTICE] Information transmitted by this email is proprietary to Medtronic and is intended for use only by the individual or entity to which it is addressed, and may contain information that is private, privileged, confidential or exempt from disclosure under applicable law. If you are not the intended recipient or it appears that this mail has been forwarded to you without proper authority, you are notified that any use or dissemination of this information in any manner is strictly prohibited. In such cases, please delete this mail from your records. To view this notice in other languages you can either select the following link or manually copy and paste the link into the address bar of a web browser:<a href="http://emaildisclaimer.medtronic.com" rel="nofollow noreferrer noopener" target="_blank">http://emaildisclaimer.medtronic.com</a>
+
+### ARTICLE01_HEADER
+Id=1352
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=24.03.2021 10:04:55 +00:00
+UpdatedAt=24.03.2021 10:04:55 +00:00
+
+### ARTICLE01_BODY
+Hallo Cyril,<div><br></div><div>außer das Kai hat das glaub leider nicht viel bei mir verloren :)</div><div><br></div><div>Grüße Kai</div>
+
+### ARTICLE02_HEADER
+Id=1367
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.03.2021 13:28:45 +00:00
+UpdatedAt=24.03.2021 13:28:46 +00:00
+
+### ARTICLE02_SUBJECT
+Ethercat link configuration
+
+### ARTICLE02_BODY
+Hallo Herr Shen,<div><br></div><div>"EcLinkAllocSendFrame() supported but reports no memory!!" wird normalerweise angezeigt wenn parallele Zugriffe auf die HW stattfinden. Es sollte mit den Objekten 0x6000 nichts zu tun haben. Maximal, dass Sie die DMA buffers des Linklayers irgendwie überschreiben würden, oder dass massive Speicherüberschreibungen statt finden.</div><div><br></div><div>Sie sollten die ENI in unsere unmodifzierte EcMasterDemoDc ausprobieren. Falls sie die Meldungen noch sehen, bitte schicken Sie mir die generierte Logdatei mit einer Verbosity von -v 5.</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, March 24, 2021, 10:11:43 AM, Jinlong Shen wrote:<br><br><div>
+<p>Hallo Kai,</p>
+<p>Wir versuchen viel mehr Daten in 0x6004 zu kommunizieren als wir jetzt haben. Etwa 840 bytes in 0x6004 und insgesamt 5 Ethercat Slaves. (Die anderen Records in 0x6000, 0x6001, 0x6002, 0x6003 haben viel weniger Datenmenge. )</p>
+<p>Bei uns die Rx and Tx Buffers werden erst nicht konfiguriert, damit default Einstellung in Acontis Master Stack angenommen wird.</p>
+<p> </p>
+<p>Ich bekomme die folgende Fehlmeldung auf Ethercat Master:</p>
+<p>2021-03-23 17:58:54.117 ACONTIS: FrameAlloc::EcLinkAllocSendFrame() supported but reports no memory!!</p>
+<p> </p>
+<p>Bedeutet es, dass es kein genug Speicherplatz gibt? Wie kann man die Einstellung für Buffers (Prozessdaten und Mailbox daten umso) adjustieren?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen,</p>
+<p>Jinlong</p>
+<p> </p>
+<p><b>Jinlong Shen</b></p>
+<p>Principal Software Engineer | Early Technologies</p>
+<p> </p>
+<p><b>Medtronic</b></p>
+<p>Medtronic GmbH</p>
+<p>Earl-Bakken-Platz 1 | 40670 Meerbusch | Germany</p>
+<p>Phone: +49 8153 9087 142 | Mobile: +49- 151- 6496 3497 | Fax: +49 8153 9087 300</p>
+<p>jinlong.shen@medtronic.com</p>
+<p>
+<a href="http://www.medtronic.de/" rel="nofollow noreferrer noopener" title="http://www.medtronic.de/" target="_blank">medtronic.de</a> | <a href="https://www.linkedin.com/company/medtronic-gmbh/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/medtronic-gmbh/" target="_blank">LinkedIn</a> | <a href="https://www.facebook.com/medtronicdeutschland" rel="nofollow noreferrer noopener" title="https://www.facebook.com/medtronicdeutschland" target="_blank">Facebook</a><u>
+</u> | <a href="https://www.youtube.com/user/medtronicdeutschland" rel="nofollow noreferrer noopener" title="https://www.youtube.com/user/medtronicdeutschland" target="_blank">YouTube </a></p>
+<p> </p>
+<p>
+<b>LET’S TAKE HEALTHCARE</b></p>
+<p><b>FURTHER, TOGETHER</b></p>
+<p> </p>
+<p>Geschäftsführung: Mike Genau, Sylvia Theis</p>
+<p>Sitz der Gesellschaft: Meerbusch</p>
+<p>Handelsregister: Amtsgericht Neuss HRB 14798</p>
+<p> </p>
+<p>Die in dieser E-Mail übermittelten Informationen sind vertraulich und ggf. rechtlich geschützt. Sie sind nur für den Gebrauch durch die Person oder die Organisation bestimmt, an die diese E-Mail adressiert ist. Wenn Sie nicht der beabsichtigte Empfänger sind oder Ihnen diese E-Mail unbefugt zugeleitet wurde, ist jedwede Verbreitung oder sonstige Verwendung dieser Informationen streng untersagt. Bitte löschen Sie in diesem Fall diese E-Mail.</p>
+<p> </p>
+</div>[CONFIDENTIALITY AND PRIVACY NOTICE] Information transmitted by this email is proprietary to Medtronic and is intended for use only by the individual or entity to which it is addressed, and may contain information that is private, privileged, confidential or exempt from disclosure under applicable law. If you are not the intended recipient or it appears that this mail has been forwarded to you without proper authority, you are notified that any use or dissemination of this information in any manner is strictly prohibited. In such cases, please delete this mail from your records. To view this notice in other languages you can either select the following link or manually copy and paste the link into the address bar of a web browser:<a href="http://emaildisclaimer.medtronic.com" rel="nofollow noreferrer noopener" target="_blank">http://emaildisclaimer.medtronic.com</a><br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

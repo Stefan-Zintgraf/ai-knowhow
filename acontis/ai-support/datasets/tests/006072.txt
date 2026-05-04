@@ -1,0 +1,190 @@
+### HEADER
+Id=6072
+Link=http://at-zammad/#ticket/zoom/6072
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Digital Dynamics Inc. (ID=342, Number=40370, Country=US)
+Commission=Digital Dynamics, Internal Slave Testing (ID=408, Number=408)
+Number=706072
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=stomaszewski@digitaldynamics.com (ID=297, FirstName=Shaun, LastName=Tomaszewski)
+CreatedBy=stomaszewski@digitaldynamics.com (ID=297, FirstName=Shaun, LastName=Tomaszewski)
+Type=
+TimeUnit=
+CreatedAt=31.07.2023 19:14:08 +00:00
+UpdatedAt=04.08.2023 06:06:13 +00:00
+CloseAt=04.08.2023 06:06:13 +00:00
+ArticlesCount=3
+
+### TITLE
+Re: EC Engineer new warning
+
+### ARTICLE00_HEADER
+Id=32449
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.07.2023 19:14:08 +00:00
+UpdatedAt=31.07.2023 19:14:08 +00:00
+
+### ARTICLE00_SUBJECT
+Re: EC Engineer new warning
+
+### ARTICLE00_BODY
+<div>Adding ecsupport@acontis.com since Jon is out.</div><hr>
+<div dir="ltr">
+<b>From:</b> Shaun Tomaszewski &lt;stomaszewski@digitaldynamics.com&gt;<br>
+<b>Sent:</b> Monday, July 31, 2023 12:12 PM<br>
+<b>To:</b> Christian Jensen &lt;cjensen@digitaldynamics.com&gt;; j.waters@acontis.com &lt;j.waters@acontis.com&gt;<br>
+<b>Cc:</b> Jeff Soehl &lt;Jsoehl@digitaldynamics.com&gt;; Bob Bumbaca &lt;BBumbaca@digitaldynamics.com&gt;; Dawit Yerdea &lt;dyerdea@digitaldynamics.com&gt;<br>
+<b>Subject:</b> Re: EC Engineer new warning <div> </div>
+</div><div dir="ltr">
+<div>Hi Jon,</div>
+<div> </div>
+<div>We have multiple firmware versions that use the same revisionNo: 0xfbac1090 because this firmware is common to each ESI file we produce.</div>
+<div> </div>
+<div>If there's a way to disable this warning, it would be appreciated.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div> </div>
+<div>Shaun<br>
+</div>
+<hr>
+<div dir="ltr">
+<b>From:</b> Christian Jensen &lt;cjensen@digitaldynamics.com&gt;<br>
+<b>Sent:</b> Monday, July 31, 2023 10:33 AM<br>
+<b>To:</b> j.waters@acontis.com &lt;j.waters@acontis.com&gt;<br>
+<b>Cc:</b> Shaun Tomaszewski &lt;stomaszewski@digitaldynamics.com&gt;; Jeff Soehl &lt;Jsoehl@digitaldynamics.com&gt;; Bob Bumbaca &lt;BBumbaca@digitaldynamics.com&gt;; Dawit Yerdea &lt;dyerdea@digitaldynamics.com&gt;<br>
+<b>Subject:</b> EC Engineer new warning <div> </div>
+</div>
+<div lang="EN-US">
+<div>
+<p>Hi there Jon,</p>
+<p> </p>
+<p>We’ve been using EC Engineer in the NPI area for awhile now. However, I got this warning for the first time today:</p>
+<p> </p>
+<p><img style="max-width:100%;width:4.3333in;max-height:4.3437in;width:416px;max-height:417px;" src="/api/v1/ticket_attachment/6072/32449/135390?view=inline"></p>
+<p> </p>
+<p>It’s asking me to delete every other preloaded ESI files in order to use the new one I’m trying to load.</p>
+<p> </p>
+<p>We’ve <i>always</i> been able to have multiple ESI files loaded and EC recognizes which to use when our units are connected.</p>
+<p> </p>
+<p>I’ve never seen this warning before and would like to know if it’s possible to fix this mistake or whatever is going on.</p>
+<p> </p>
+<p>Thanks so much,</p>
+<p>_christian</p>
+<p> </p>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=32493
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.08.2023 10:51:15 +00:00
+UpdatedAt=01.08.2023 10:51:17 +00:00
+
+### ARTICLE01_SUBJECT
+EC Engineer new warning
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>sorry. This is not just a warning. EC-Engineer is not able to handle multiple devices with same VendorID&amp;ProductCode&amp;RevisionNo. The reason for that is, if you scan your network it is not clear which device to take.</div><div><br></div><div>Why do you think that you need this? </div><div><br></div><div>Normally ESI vendors create theire ESI files compatible between the revisions. You can see the ESI settings of the specific device e.g. on Advanced tab:</div><div><br></div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/6072/32493/135589?view=inline"><br>
+</div><div><br></div><div>... they include also older revisions into the same ESI file. So the default behaviour is to delete the old ESI file and replace it with a newer one. </div><div><br></div><div>Best Regards,</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, July 31, 2023 at 9:14:08 PM, Shaun Tomaszewski wrote:<br><br><div>Adding ecsupport@acontis.com since Jon is out.</div>
+<hr>
+<div dir="ltr">
+<b>From:</b> Shaun Tomaszewski &lt;stomaszewski@digitaldynamics.com&gt;<br>
+<b>Sent:</b> Monday, July 31, 2023 12:12 PM<br>
+<b>To:</b> Christian Jensen &lt;cjensen@digitaldynamics.com&gt;; j.waters@acontis.com &lt;j.waters@acontis.com&gt;<br>
+<b>Cc:</b> Jeff Soehl &lt;Jsoehl@digitaldynamics.com&gt;; Bob Bumbaca &lt;BBumbaca@digitaldynamics.com&gt;; Dawit Yerdea &lt;dyerdea@digitaldynamics.com&gt;<br>
+<b>Subject:</b> Re: EC Engineer new warning <div> </div>
+</div>
+<div dir="ltr">
+<div>Hi Jon,</div>
+<div> </div>
+<div>We have multiple firmware versions that use the same revisionNo: 0xfbac1090 because this firmware is common to each ESI file we produce.</div>
+<div> </div>
+<div>If there's a way to disable this warning, it would be appreciated.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div> </div>
+<div>Shaun<br>
+</div>
+<hr>
+<div dir="ltr">
+<b>From:</b> Christian Jensen &lt;cjensen@digitaldynamics.com&gt;<br>
+<b>Sent:</b> Monday, July 31, 2023 10:33 AM<br>
+<b>To:</b> j.waters@acontis.com &lt;j.waters@acontis.com&gt;<br>
+<b>Cc:</b> Shaun Tomaszewski &lt;stomaszewski@digitaldynamics.com&gt;; Jeff Soehl &lt;Jsoehl@digitaldynamics.com&gt;; Bob Bumbaca &lt;BBumbaca@digitaldynamics.com&gt;; Dawit Yerdea &lt;dyerdea@digitaldynamics.com&gt;<br>
+<b>Subject:</b> EC Engineer new warning <div> </div>
+</div>
+<div lang="EN-US">
+<div>
+<p>Hi there Jon,</p>
+<p> </p>
+<p>We’ve been using EC Engineer in the NPI area for awhile now. However, I got this warning for the first time today:</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:4.3333in;max-height:4.3437in;width:416px;max-height:417px;" src="/api/v1/ticket_attachment/6072/32493/135590?view=inline"></p>
+<p> </p>
+<p>It’s asking me to delete every other preloaded ESI files in order to use the new one I’m trying to load.</p>
+<p> </p>
+<p>We’ve <i>always</i> been able to have multiple ESI files loaded and EC recognizes which to use when our units are connected.</p>
+<p> </p>
+<p>I’ve never seen this warning before and would like to know if it’s possible to fix this mistake or whatever is going on.</p>
+<p> </p>
+<p>Thanks so much,</p>
+<p>_christian</p>
+<p> </p>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=32494
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=01.08.2023 10:51:32 +00:00
+UpdatedAt=01.08.2023 10:51:32 +00:00
+
+### ARTICLE02_SUBJECT
+RE: EC Engineer new warning [Ticket#706072]
+
+### ARTICLE02_BODY
+I am on vacation and my availability is limited until Monday August 28, 2023 and emails will not be read during this time.
+
+If you need assistance:
+- for orders and licenses, please email us-sales@acontis.com
+- for technical support with our EtherCAT products, please email ecsupport@acontis.com
+- for technical support with our Real-time products, please email rtsupport@acontis.com
+
+If your matter is urgent, you can reach me at +1-508-809-7201 and please leave a voicemail. Otherwise, I will respond to your email as soon as possible upon my return.

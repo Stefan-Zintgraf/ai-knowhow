@@ -1,0 +1,211 @@
+### HEADER
+Id=8905
+Link=http://at-zammad/#ticket/zoom/8905
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Leisai, Field Bus Cont. (ID=641, Number=641)
+Number=708905
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=19.09.2024 06:39:35 +00:00
+UpdatedAt=13.12.2024 07:12:51 +00:00
+CloseAt=13.12.2024 07:12:51 +00:00
+ArticlesCount=3
+
+### TITLE
+The customer Leisai's problem: "ecatCoeSdoUpload" sometimes gets stuck
+
+### ARTICLE00_HEADER
+Id=50308
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.09.2024 06:39:35 +00:00
+UpdatedAt=19.09.2024 06:39:39 +00:00
+
+### ARTICLE00_SUBJECT
+The customer Leisai's problem: "ecatCoeSdoUpload" sometimes gets stuck
+
+### ARTICLE00_BODY
+<div>Dear,</div><div> </div><div>The customer meet an issue that when the EtherCAT bus is in OP state, if the "ecatCoeSdoUpload" is repeatedly called, there is a very low probability of getting stuck in this API.</div><div>When getting stuck, there will be no more log. But if the slave that is accessed removed, the log will start refreshing.</div><div>
+<div>0011624273: emCoeSdoUpload(5, 0x2018, 0, --, 4, --,60, 0) = No Error</div>
+<div>0011624379: emCoeSdoUpload(5, 0x2018, 0, --, 4, --,60, 0) ...</div>
+<div>0011624379: QueueMailboxCmd(1006) Slave added to pending mailbox slave fifo(0/256)</div>
+<div> </div>
+<div>^[[A^[[A^[[A^[[A^[[B0012767781: SendCycFramesByEntry(0): wFramesMonitoringProcCnt (0) &lt; wFramesMonitoringSndCnt (1)</div>
+<div>0012767781: Notify EC_NOTIFY_FRAME_RESPONSE_ERROR(No response error for cyclic frame IDX=0x6d, CycFrameNum=0, TaskId=0)</div>
+</div><div> </div><div>I noticed some differences in the log, when normal:</div><div>QueueMailboxCmd(1006) Slave added to pending mailbox slave fifo(1/256)</div><div>when abnormal:</div><div>QueueMailboxCmd(1006) Slave added to pending mailbox slave fifo(0/256)</div><div> </div><div>The EcMaster is V3.1.4.15 on Zynq, due to this issue occurring at their customer site, they are unable to test with the new version.</div><div>Please also find the log attached.</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div>
+<div><i><img src="/api/v1/ticket_attachment/8905/50308/208787?view=inline" border="0" style="max-width:100%;width:675.2px;max-height:144px;"></i></div>
+<div><span style="color: rgb(31, 73, 125);">2024.9.24-28 上海工博会，盟通展位号6.1H-E200，期待与您见面！</span></div>
+<div> </div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+</div>
+<div>
+<p>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</p>
+<p>北京市海淀区上地三街9号C座C309</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div>+886-2-25222206（台北）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=50564
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.09.2024 07:18:19 +00:00
+UpdatedAt=25.09.2024 07:18:22 +00:00
+
+### ARTICLE01_SUBJECT
+The customer Leisai's problem: "ecatCoeSdoUpload" sometimes gets stuck
+
+### ARTICLE01_BODY
+Hi Lishan,<div><br></div><div><span>In the V3.1.5.04 we have the following fix:</span></div><div><br></div><div>
+<img style="max-width:100%;width: 713.6px;max-width: 100%;max-height: 507.137px;" src="/api/v1/ticket_attachment/8905/50564/210213?view=inline"><br>
+</div><div><br></div><div>Because of the missing memory barrier, the FIFO was not working safely. <span>In your log, the message "</span><span>Slave added to pending mailbox slave fifo(</span><b>0/256</b><span>)" would match this kind of issue.</span><br>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2"><div><span>Cyril</span></div></div>
+<div><br></div>
+<div><blockquote type="cite">On Thursday, September 19, 2024 at 8:39:35 AM, ec_support@motrotech.com wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>The customer meet an issue that when the EtherCAT bus is in OP state, if the "ecatCoeSdoUpload" is repeatedly called, there is a very low probability of getting stuck in this API.</div>
+<div>When getting stuck, there will be no more log. But if the slave that is accessed removed, the log will start refreshing.</div>
+<div>
+<div>0011624273: emCoeSdoUpload(5, 0x2018, 0, --, 4, --,60, 0) = No Error</div>
+<div>0011624379: emCoeSdoUpload(5, 0x2018, 0, --, 4, --,60, 0) ...</div>
+<div>0011624379: QueueMailboxCmd(1006) Slave added to pending mailbox slave fifo(0/256)</div>
+<div> </div>
+<div>^[[A^[[A^[[A^[[A^[[B0012767781: SendCycFramesByEntry(0): wFramesMonitoringProcCnt (0) &lt; wFramesMonitoringSndCnt (1)</div>
+<div>0012767781: Notify EC_NOTIFY_FRAME_RESPONSE_ERROR(No response error for cyclic frame IDX=0x6d, CycFrameNum=0, TaskId=0)</div>
+</div>
+<div> </div>
+<div>I noticed some differences in the log, when normal:</div>
+<div>QueueMailboxCmd(1006) Slave added to pending mailbox slave fifo(1/256)</div>
+<div>when abnormal:</div>
+<div>QueueMailboxCmd(1006) Slave added to pending mailbox slave fifo(0/256)</div>
+<div> </div>
+<div>The EcMaster is V3.1.4.15 on Zynq, due to this issue occurring at their customer site, they are unable to test with the new version.</div>
+<div>Please also find the log attached.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>
+<div><i><img src="/api/v1/ticket_attachment/8905/50564/210214?view=inline" border="0" style="max-width:100%;max-width:100%;width:675.2px;max-height:144px;"></i></div>
+<div><span style="color: rgb(31, 73, 125);">2024.9.24-28 上海工博会，盟通展位号6.1H-E200，期待与您见面！</span></div>
+<div> </div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+</div>
+<div>
+<p>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</p>
+<p>北京市海淀区上地三街9号C座C309</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div>+886-2-25222206（台北）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=50592
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.09.2024 11:02:57 +00:00
+UpdatedAt=25.09.2024 11:02:57 +00:00
+
+### ARTICLE02_SUBJECT
+Re: RE: The customer Leisai's problem: "ecatCoeSdoUpload" sometimes gets stuck [Ticket#708905]
+
+### ARTICLE02_BODY
+<div>Hi Cyril,</div><div> </div><div>Thank you for your reply.</div><div>I have informed the customer of this information and will let you know if they have the test result on new version.</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>ec_support@motrotech.com</div><blockquote>
+<div> </div>
+<div>
+<span class="js-signatureMarker"></span><div>
+<b>From:</b> <a href="mailto:ecsupport@acontis.com">Cyril Eyssautier via EC-Support</a>
+</div>
+<div>
+<b>Date:</b> 2024-09-25 15:18</div>
+<div>
+<b>To:</b> <a href="mailto:ec_support@motrotech.com">ec_support</a>
+</div>
+<div>
+<b>Subject:</b> RE: The customer Leisai's problem: "ecatCoeSdoUpload" sometimes gets stuck [Ticket#708905]</div>
+</div>
+<div>Hi Lishan,<div> </div>
+<div>In the V3.1.5.04 we have the following fix:</div>
+<div> </div>
+<div>
+<img style="max-width:100%;width: 713.6px;max-width: 100%;max-height: 507.137px;" src="/api/v1/ticket_attachment/8905/50592/210398?view=inline"><br>
+</div>
+<div> </div>
+<div>Because of the missing memory barrier, the FIFO was not working safely. In your log, the message "Slave added to pending mailbox slave fifo(<b>0/256</b>)" would match this kind of issue.<br>
+</div>
+<div> </div>
+<div>Best Regards,<br><div data-signature="true" data-signature-id="2">Cyril</div>
+<div> </div>
+<div><blockquote type="cite">On Thursday, September 19, 2024 at 8:39:35 AM, ec_support@motrotech.com wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>The customer meet an issue that when the EtherCAT bus is in OP state, if the "ecatCoeSdoUpload" is repeatedly called, there is a very low probability of getting stuck in this API.</div>
+<div>When getting stuck, there will be no more log. But if the slave that is accessed removed, the log will start refreshing.</div>
+<div>
+<div>0011624273: emCoeSdoUpload(5, 0x2018, 0, --, 4, --,60, 0) = No Error</div>
+<div>0011624379: emCoeSdoUpload(5, 0x2018, 0, --, 4, --,60, 0) ...</div>
+<div>0011624379: QueueMailboxCmd(1006) Slave added to pending mailbox slave fifo(0/256)</div>
+<div> </div>
+<div>^[[A^[[A^[[A^[[A^[[B0012767781: SendCycFramesByEntry(0): wFramesMonitoringProcCnt (0) &lt; wFramesMonitoringSndCnt (1)</div>
+<div>0012767781: Notify EC_NOTIFY_FRAME_RESPONSE_ERROR(No response error for cyclic frame IDX=0x6d, CycFrameNum=0, TaskId=0)</div>
+</div>
+<div> </div>
+<div>I noticed some differences in the log, when normal:</div>
+<div>QueueMailboxCmd(1006) Slave added to pending mailbox slave fifo(1/256)</div>
+<div>when abnormal:</div>
+<div>QueueMailboxCmd(1006) Slave added to pending mailbox slave fifo(0/256)</div>
+<div> </div>
+<div>The EcMaster is V3.1.4.15 on Zynq, due to this issue occurring at their customer site, they are unable to test with the new version.</div>
+<div>Please also find the log attached.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>
+<div><i><img src="/api/v1/ticket_attachment/8905/50592/210399?view=inline" border="0" style="max-width:100%;max-width: 100%;width: 675.2px;max-height: 144px;"></i></div>
+<div><span style="color: rgb(31, 73, 125);">2024.9.24-28 上海工博会，盟通展位号6.1H-E200，期待与您见面！</span></div>
+<div> </div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+</div>
+<div>
+<p>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</p>
+<p>北京市海淀区上地三街9号C座C309</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div>+886-2-25222206（台北）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div> </div>
+<br><br>
+</div>
+</div>
+</blockquote>

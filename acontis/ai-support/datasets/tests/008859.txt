@@ -1,0 +1,120 @@
+### HEADER
+Id=8859
+Link=http://at-zammad/#ticket/zoom/8859
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Stryker (ID=471, Number=0, Country=US)
+Commission=Stryker, Mako (ID=549, Number=549)
+Number=708859
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=mike.ford1@stryker.com (ID=1777, FirstName=Mike, LastName=Ford)
+CreatedBy=mike.ford1@stryker.com (ID=1777, FirstName=Mike, LastName=Ford)
+Type=
+TimeUnit=
+CreatedAt=12.09.2024 21:30:54 +00:00
+UpdatedAt=01.11.2024 07:09:53 +00:00
+CloseAt=01.11.2024 07:09:53 +00:00
+ArticlesCount=2
+
+### TITLE
+Linux EC-Master timing glitches
+
+### ARTICLE00_HEADER
+Id=49976
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.09.2024 21:30:55 +00:00
+UpdatedAt=12.09.2024 21:30:58 +00:00
+
+### ARTICLE00_SUBJECT
+Linux EC-Master timing glitches
+
+### ARTICLE00_BODY
+<div>Hello,</div><div> </div><div>We are using the Acontis EC Master stack A on Linux for out application.</div><div> </div><div>In out realtime loop that is receiving and sending PDO data, we are seeing frame loss errors at roughly a 10 second interval. Usualy 1-3 frame loss errors at 10 second intervals.</div><div> </div><div>We have used the performance API to measure the execution time of certain sections of code and noticed that when frame loss happens this portion of code is spiking in execution time. The spike in execution time is causing us to overrun our frame window:<br>
+<img style="max-width:100%;max-width: 1515px;" src="/api/v1/ticket_attachment/8859/49976/207360?view=inline">
+</div><div> </div><div>This is basically the same as what I see in the software integration guide for EC master:</div><div>
+<img style="max-width:100%;max-width: 1515px;" src="/api/v1/ticket_attachment/8859/49976/207361?view=inline">
+</div><div> </div><div>We are not using Async frames at the moment.</div><div> </div><div>Any suggestions on what to look at for periodic frame loss events? Also are there any debugging tools Acontis would suggest to debug the Ethercat traffic on the bus and observe what is happening during frame loss events. Any way to tell if we are truly not getting frames back and it is an issue with the bus/electronics?</div><div> </div><div>Thanks,</div><div> </div><div style="color: inherit;">
+<p><span style=" color: rgb(255, 181, 0);">Mike</span> Ford</p>
+<p>Staff Engineer, Platforms</p>
+<p>Stryker</p>
+<p>Digital, Robotics, and Enabling Technologies</p>
+<p>1941 Stryker Way</p>
+<p>Portage, MI, 49002</p>
+<p>mike.ford1@stryker.com</p>
+<p> </p>
+</div>Follow this link to read our<a href="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" rel="nofollow noreferrer noopener" title="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" target="_blank"> Privacy Statement</a>
+
+### ARTICLE01_HEADER
+Id=49996
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.09.2024 07:27:07 +00:00
+UpdatedAt=13.09.2024 07:27:08 +00:00
+
+### ARTICLE01_SUBJECT
+Linux EC-Master timing glitches
+
+### ARTICLE01_BODY
+Hi Mike,<div><br></div><div>if you only receive <span>eRspErr_NO_RESPONSE, it will means real frame loss. Receiving </span><span>eRspErr_NO_RESPONSE and </span><span>eRspErr_UNEXPECTED means a timing issue.</span>
+</div><div><br></div><div>*Frame loss:</div><div><br></div><div>This API can help you to find the location where the frames get lost</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=badconnection#embadconnectionsdetect" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=badconnection#embadconnectionsdetect" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=badconnection#embadconnectionsdetect</a></div></div><div><br></div><div>*Timing issue:</div><div><br></div><div>we have an integrated performance measurement in EC-Master:</div><div>
+<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api_perfmeas.html?highlight=histog#api-perfmeas--page-root" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api_perfmeas.html?highlight=histog#api-perfmeas--page-root" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api_perfmeas.html?highlight=histog#api-perfmeas--page-root</a><br>
+</div><div><br></div><div>You can test it by starting our EcMasterDemo with -perf 2 -sp and attached to it with EC-Engineer:</div><div><div><a href="https://public.acontis.com/manuals/EC-Engineer/3.9/html/diagnosis-mode.html#performance" title="https://public.acontis.com/manuals/EC-Engineer/3.9/html/diagnosis-mode.html#performance" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Engineer/3.9/html/diagnosis-mode.html#performance</a></div></div><div><br></div><div>Doing this, you can monitor the cycle it self and the offset in the cycle where <span style=" color: rgba(0, 0, 0, 0.87);">eUsrJob_</span><span style=" color: rgba(0, 0, 0, 0.87);">SendAllCyc</span><span style=" color: rgba(0, 0, 0, 0.87);">Frames is called.</span>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, September 12, 2024 at 11:30:55 PM, Mike Ford wrote:<br><br><div>Hello,</div>
+<div> </div>
+<div>We are using the Acontis EC Master stack A on Linux for out application.</div>
+<div> </div>
+<div>In out realtime loop that is receiving and sending PDO data, we are seeing frame loss errors at roughly a 10 second interval. Usualy 1-3 frame loss errors at 10 second intervals.</div>
+<div> </div>
+<div>We have used the performance API to measure the execution time of certain sections of code and noticed that when frame loss happens this portion of code is spiking in execution time. The spike in execution time is causing us to overrun our frame window:<br>
+<img style="max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/8859/49996/207424?view=inline">
+</div>
+<div> </div>
+<div>This is basically the same as what I see in the software integration guide for EC master:</div>
+<div>
+<img style="max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/8859/49996/207425?view=inline">
+</div>
+<div> </div>
+<div>We are not using Async frames at the moment.</div>
+<div> </div>
+<div>Any suggestions on what to look at for periodic frame loss events? Also are there any debugging tools Acontis would suggest to debug the Ethercat traffic on the bus and observe what is happening during frame loss events. Any way to tell if we are truly not getting frames back and it is an issue with the bus/electronics?</div>
+<div> </div>
+<div>Thanks,</div>
+<div> </div>
+<div style="color: inherit;">
+<p><span style=" color: rgb(255, 181, 0);">Mike</span> Ford</p>
+<p>Staff Engineer, Platforms</p>
+<p>Stryker</p>
+<p>Digital, Robotics, and Enabling Technologies</p>
+<p>1941 Stryker Way</p>
+<p>Portage, MI, 49002</p>
+<p>mike.ford1@stryker.com</p>
+<p> </p>
+</div>Follow this link to read our<a href="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" rel="nofollow noreferrer noopener" title="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" target="_blank"> Privacy Statement</a><br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,141 @@
+### HEADER
+Id=225
+Link=http://at-zammad/#ticket/zoom/225
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies GmbH (ID=399, Number=1000, Country=DE)
+Commission=KUKA, KRC5 Linux (ID=150, Number=150)
+Number=700225
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=m.mueller@acontis.com (ID=122, FirstName=Marion, LastName=Müller)
+CreatedBy=m.mueller@acontis.com (ID=122, FirstName=Marion, LastName=Müller)
+Type=
+TimeUnit=
+CreatedAt=16.03.2021 12:23:15 +00:00
+UpdatedAt=16.03.2021 13:26:16 +00:00
+CloseAt=16.03.2021 13:26:16 +00:00
+ArticlesCount=4
+
+### TITLE
+Delivery for KUKA Roboter GmbH, KRC Linux, Commission 40307
+
+### ARTICLE00_HEADER
+Id=957
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.03.2021 12:23:15 +00:00
+UpdatedAt=16.03.2021 12:23:15 +00:00
+
+### ARTICLE00_SUBJECT
+Delivery for KUKA Roboter GmbH, KRC Linux, Commission 40307
+
+### ARTICLE00_BODY
+<div>
+<p>Please deliver software to customer.<br>Do not forget to append the delivery note! And sales@acontis.com in copy</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=960
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.03.2021 13:06:00 +00:00
+UpdatedAt=16.03.2021 13:06:02 +00:00
+
+### ARTICLE01_SUBJECT
+Delivery for KUKA Roboter GmbH, KRC Linux, Commission 40307
+
+### ARTICLE01_BODY
+Hallo Marion,<div><br></div><div>laut LiWa bekommt Kuka kein Sourcecode für Linux.</div><div>Kannst du das prüfen?</div><div><br></div><div>Danke,</div><div>Holger<div><br></div>
+<div><blockquote type="cite">Am Dienstag, 16. März 2021, 13:23:15, schrieb Marion Müller:<br><br><div>
+<p>Please deliver software to customer.<br>Do not forget to append the delivery note! And sales@acontis.com in copy</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=963
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.03.2021 13:16:40 +00:00
+UpdatedAt=16.03.2021 13:16:40 +00:00
+
+### ARTICLE02_SUBJECT
+AW: Delivery for KUKA Roboter GmbH, KRC Linux, Commission 40307 [Ticket#700225]
+
+### ARTICLE02_BODY
+<div>
+<p>Hallo Holger,</p>
+<p> </p>
+<p>ups, gar nicht geändert. Aber jetzt</p>
+<p> </p>
+<p>Gruß,</p>
+<p>Marion</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Holger Oelhaf via EC-Support [mailto:ecsupport@acontis.com] <br><b>Gesendet:</b> Dienstag, 16. März 2021 14:06<br><b>An:</b> m.mueller@acontis.com<br><b>Betreff:</b> RE: Delivery for KUKA Roboter GmbH, KRC Linux, Commission 40307 [Ticket#700225]</p>
+</div>
+<p> </p>
+<p>Hallo Marion,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>laut LiWa bekommt Kuka kein Sourcecode für Linux.</p>
+</div>
+<div>
+<p>Kannst du das prüfen?</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Danke,</p>
+</div>
+<div>
+<p>Holger</p>
+<div> <p> </p>
+</div>
+<div><blockquote>
+<p>Am Dienstag, 16. März 2021, 13:23:15, schrieb Marion Müller:</p>
+<p></p>
+<div>
+<p>Please deliver software to customer.<br>Do not forget to append the delivery note! And sales@acontis.com in copy</p>
+</div>
+<p> </p>
+</blockquote></div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=964
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.03.2021 13:25:19 +00:00
+UpdatedAt=16.03.2021 13:25:54 +00:00
+
+### ARTICLE03_SUBJECT
+Delivery for KUKA Roboter GmbH, KRC Linux, Commission 40307
+
+### ARTICLE03_BODY
+<div>
+<p>Dear Customer,</p>
+<p>please find your new software version below:</p>
+<p><a href="https://downloads.acontis.com/2021/J-L/KUKA_Roboter_GmbH_(40307)(DE)/EC-Master_Linux/3.1.1.02/EC-Master-ClassA-AddOn-V3.1.1.02-Linux-x86_32Bit-SDK_Source.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/J-L/KUKA_Roboter_GmbH_(40307)(DE)/EC-Master_Linux/3.1.1.02/EC-Master-ClassA-AddOn-V3.1.1.02-Linux-x86_32Bit-SDK_Source.tar.gz</a></p>
+<p><a href="https://downloads.acontis.com/2021/J-L/KUKA_Roboter_GmbH_(40307)(DE)/EC-Master_Linux/3.1.1.02/EC-Master-ClassA-AddOn-V3.1.1.02-Linux-x86_64Bit-SDK_Source.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/J-L/KUKA_Roboter_GmbH_(40307)(DE)/EC-Master_Linux/3.1.1.02/EC-Master-ClassA-AddOn-V3.1.1.02-Linux-x86_64Bit-SDK_Source.tar.gz</a></p>
+<p><a href="https://downloads.acontis.com/2021/J-L/KUKA_Roboter_GmbH_(40307)(DE)/EC-Master_Linux/3.1.1.02/EC-Master-I8254x-V3.1.1.02-Linux-x86_32Bit-SDK_Source.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/J-L/KUKA_Roboter_GmbH_(40307)(DE)/EC-Master_Linux/3.1.1.02/EC-Master-I8254x-V3.1.1.02-Linux-x86_32Bit-SDK_Source.tar.gz</a></p>
+<p><a href="https://downloads.acontis.com/2021/J-L/KUKA_Roboter_GmbH_(40307)(DE)/EC-Master_Linux/3.1.1.02/EC-Master-I8254x-V3.1.1.02-Linux-x86_64Bit-SDK_Source.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/J-L/KUKA_Roboter_GmbH_(40307)(DE)/EC-Master_Linux/3.1.1.02/EC-Master-I8254x-V3.1.1.02-Linux-x86_64Bit-SDK_Source.tar.gz</a></p>
+<p><a href="https://downloads.acontis.com/2021/J-L/KUKA_Roboter_GmbH_(40307)(DE)/EC-Master_Linux/3.1.1.02/EC-Master-V3.1.1.02-Linux-x86_32Bit-SDK_Source.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/J-L/KUKA_Roboter_GmbH_(40307)(DE)/EC-Master_Linux/3.1.1.02/EC-Master-V3.1.1.02-Linux-x86_32Bit-SDK_Source.tar.gz</a></p>
+<p><a href="https://downloads.acontis.com/2021/J-L/KUKA_Roboter_GmbH_(40307)(DE)/EC-Master_Linux/3.1.1.02/EC-Master-V3.1.1.02-Linux-x86_64Bit-SDK_Source.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/J-L/KUKA_Roboter_GmbH_(40307)(DE)/EC-Master_Linux/3.1.1.02/EC-Master-V3.1.1.02-Linux-x86_64Bit-SDK_Source.tar.gz</a></p>
+<p>Password: ECM88250</p>
+<p>Best Regards,<br>Holger Oelhaf <span class="js-signatureMarker"></span><br>________________ <br>EtherCAT Support <br>acontis technologies GmbH <br>Gartenstraße 46 <br>D-88212 Ravensburg <br>Http: <a href="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> <br>Phone: +49 (751) 56030-30 <br>Fax: +49 (751) 56030-31 <br>eMail: ecsupport@acontis.com </p>
+<p>This is an automatic generated eMail.</p>
+</div>

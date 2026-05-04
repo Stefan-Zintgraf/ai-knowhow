@@ -1,0 +1,115 @@
+### HEADER
+Id=7915
+Link=http://at-zammad/#ticket/zoom/7915
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=PHOENIX CONTACT Electronics GmbH (ID=143, Number=57501, Country=DE)
+Commission=PHOENIX CONTACT Software, eCLR (ID=163, Number=163)
+Number=707915
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=c.schmidt@phoenixcontact.com (ID=2514, FirstName=Christoph, LastName=Schmidt)
+CreatedBy=c.schmidt@phoenixcontact.com (ID=2514, FirstName=Christoph, LastName=Schmidt)
+Type=
+TimeUnit=
+CreatedAt=18.04.2024 08:13:41 +00:00
+UpdatedAt=26.04.2024 07:50:46 +00:00
+CloseAt=26.04.2024 07:50:46 +00:00
+ArticlesCount=2
+
+### TITLE
+Ethercat-Treiber für Intel I226
+
+### ARTICLE00_HEADER
+Id=43597
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.04.2024 08:13:41 +00:00
+UpdatedAt=18.04.2024 08:13:44 +00:00
+
+### ARTICLE00_SUBJECT
+Ethercat-Treiber für Intel I226
+
+### ARTICLE00_BODY
+<div>Hallo,</div><div> </div><div>wir entwickeln gerade mit ihrem Ethercat-Stack (v3.1.4.08 Linux x86/64bit) einen Ethercat Master mit dem atemsys Kerneltreiber für den I210. Ist dieser Treiber kompatibel mit dem I226 oder brauchen wir da einen neuen Treiber?</div><div> </div><div style="color: inherit;">
+<p>Mit freundlichen Grüßen / Best regards</p>
+<p>
+<span><br> Dipl.-Inf. Christoph Schmidt<br>
+</span> <span><br> PHOENIX CONTACT Software GmbH</span>
+</p>
+<p>
+<span>Manager PROFINET and eCLR<br> Campusallee 6</span>
+<span><br> 32657 Lemgo</span>
+<span><br> Germany</span></p>
+<p>
+<span><br> Phone: +49 5261 9373-778<br> Fax: +49 5261 9373-726</span>
+<span><br> Email: c.schmidt@phoenixcontact.com</span>
+<span><br> Internet: </span><a href="http://www.phoenixcontact-software.com/" rel="nofollow noreferrer noopener" target="_blank">www.phoenixcontact-software.com</a></p>
+<p> </p>
+<span><br>
+</span>
+</div><p dir="ltr"><br>..................................................................<br>PHOENIX CONTACT ELECTRONICS GmbH<br><br>Sitz der Gesellschaft / registered office of the company: 31812 Bad Pyrmont<br>USt-Id-Nr.: DE811742156<br>Amtsgericht Hannover HRB 100528 / district court Hannover HRB 100528<br>Geschäftsführer / Executive Board: Hans-Jürgen Koch, Dr. Martin Wetter </p><span class="js-signatureMarker"></span><p>__________________________________________________________________<br>Diese E-Mail enthält vertrauliche und/oder rechtlich geschützte Informationen. Wenn Sie nicht der richtige Adressat sind oder diese E-Mail irrtümlich erhalten haben, informieren Sie bitte sofort den Absender und vernichten Sie diese Mail. Das unerlaubte Kopieren, jegliche anderweitige Verwendung sowie die unbefugte Weitergabe dieser Mail ist nicht gestattet.<br>----------------------------------------------------------------------------------------------------<br>This e-mail may contain confidential and/or privileged information. If you are not the intended recipient (or have received this e-mail in error) please notify the sender immediately and destroy this e-mail. Any unauthorized copying, disclosure, distribution or other use of the material or parts thereof is strictly forbidden.<br>___________________________________________________________________</p><p> </p>
+
+### ARTICLE01_HEADER
+Id=43612
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.04.2024 10:12:58 +00:00
+UpdatedAt=18.04.2024 10:12:59 +00:00
+
+### ARTICLE01_SUBJECT
+Ethercat-Treiber für Intel I226
+
+### ARTICLE01_BODY
+Hallo Herr Schmidt,<div><br></div><div>Sie haben am 20.10.2023 die Version V3.1.4.13 bekommen. In der Version sind die Device IDS für I226 enthalten.</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, April 18, 2024 at 10:13:41 AM, Christoph Schmidt wrote:<br><br><div>Hallo,</div>
+<div> </div>
+<div>wir entwickeln gerade mit ihrem Ethercat-Stack (v3.1.4.08 Linux x86/64bit) einen Ethercat Master mit dem atemsys Kerneltreiber für den I210. Ist dieser Treiber kompatibel mit dem I226 oder brauchen wir da einen neuen Treiber?</div>
+<div> </div>
+<div style="color: inherit;">
+<p>Mit freundlichen Grüßen / Best regards</p>
+<p>
+<span><br> Dipl.-Inf. Christoph Schmidt<br>
+</span> <span><br> PHOENIX CONTACT Software GmbH</span>
+</p>
+<p>
+<span>Manager PROFINET and eCLR<br> Campusallee 6</span>
+<span><br> 32657 Lemgo</span>
+<span><br> Germany</span></p>
+<p>
+<span><br> Phone: +49 5261 9373-778<br> Fax: +49 5261 9373-726</span>
+<span><br> Email: c.schmidt@phoenixcontact.com</span>
+<span><br> Internet: </span><a href="http://www.phoenixcontact-software.com/" rel="nofollow noreferrer noopener" target="_blank">www.phoenixcontact-software.com</a></p>
+<p> </p>
+<span><br>
+</span>
+</div>
+<p dir="ltr"><br>..................................................................<br>PHOENIX CONTACT ELECTRONICS GmbH<br><br>Sitz der Gesellschaft / registered office of the company: 31812 Bad Pyrmont<br>USt-Id-Nr.: DE811742156<br>Amtsgericht Hannover HRB 100528 / district court Hannover HRB 100528<br>Geschäftsführer / Executive Board: Hans-Jürgen Koch, Dr. Martin Wetter </p>
+<span class="js-signatureMarker"></span><p>__________________________________________________________________<br>Diese E-Mail enthält vertrauliche und/oder rechtlich geschützte Informationen. Wenn Sie nicht der richtige Adressat sind oder diese E-Mail irrtümlich erhalten haben, informieren Sie bitte sofort den Absender und vernichten Sie diese Mail. Das unerlaubte Kopieren, jegliche anderweitige Verwendung sowie die unbefugte Weitergabe dieser Mail ist nicht gestattet.<br>----------------------------------------------------------------------------------------------------<br>This e-mail may contain confidential and/or privileged information. If you are not the intended recipient (or have received this e-mail in error) please notify the sender immediately and destroy this e-mail. Any unauthorized copying, disclosure, distribution or other use of the material or parts thereof is strictly forbidden.<br>___________________________________________________________________</p>
+<p> </p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

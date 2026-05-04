@@ -1,0 +1,185 @@
+### HEADER
+Id=2487
+Link=http://at-zammad/#ticket/zoom/2487
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=702487
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=23.02.2022 02:27:53 +00:00
+UpdatedAt=24.02.2022 07:00:28 +00:00
+CloseAt=24.02.2022 07:00:28 +00:00
+ArticlesCount=3
+
+### TITLE
+Unused DCM constants
+
+### ARTICLE00_HEADER
+Id=13247
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.02.2022 02:27:54 +00:00
+UpdatedAt=23.02.2022 02:27:55 +00:00
+
+### ARTICLE00_SUBJECT
+Unused DCM constants
+
+### ARTICLE00_BODY
+<div>
+<p>I may be missing it, but I could not see where the following constants, which are defined in EcMasterDemoDc\EcDemoApp.h, are used:</p>
+<p> </p>
+<p>/* DCM controller set value: Distance between frame send time and sync impulse */</p>
+<p>#define DCM_CONTROLLER_SETVAL_NANOSEC ((BASE_PERIOD/2)*1000) /* 50% */</p>
+<p>/* maximum controller error in nanoseconds */</p>
+<p>#if (defined EC_VERSION_WINDOWS)</p>
+<p>#define DCM_MAX_CTL_ERROR_NANOSEC 90000</p>
+<p>#else</p>
+<p>#define DCM_MAX_CTL_ERROR_NANOSEC 30000</p>
+<p>#endif</p>
+<p>/* maximum time to get in-sync */</p>
+<p>#define DCM_SETVAL_TIMEOUT_MSEC 12000</p>
+<p> </p>
+<p>Perhaps I am missing it? I do see one of them used in <b>EcMasterDemoMotion\MotionDemo.cpp</b>, but that’s a different demo, of course, and I can’t see where it gets used in the end. I was looking for a good example of how these constants are used.</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com/" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=13270
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.02.2022 16:02:39 +00:00
+UpdatedAt=23.02.2022 16:02:42 +00:00
+
+### ARTICLE01_SUBJECT
+Unused DCM constants
+
+### ARTICLE01_BODY
+Hi Quinton,<div><br></div><div>I will delete these constant from the example source code. Please ignore them.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Wednesday, February 23, 2022, 3:27:54 AM, Quinton Tormanen wrote:<br><br><div>
+<p>I may be missing it, but I could not see where the following constants, which are defined in EcMasterDemoDc\EcDemoApp.h, are used:</p>
+<p> </p>
+<p>/* DCM controller set value: Distance between frame send time and sync impulse */</p>
+<p>#define DCM_CONTROLLER_SETVAL_NANOSEC ((BASE_PERIOD/2)*1000) /* 50% */</p>
+<p>/* maximum controller error in nanoseconds */</p>
+<p>#if (defined EC_VERSION_WINDOWS)</p>
+<p>#define DCM_MAX_CTL_ERROR_NANOSEC 90000</p>
+<p>#else</p>
+<p>#define DCM_MAX_CTL_ERROR_NANOSEC 30000</p>
+<p>#endif</p>
+<p>/* maximum time to get in-sync */</p>
+<p>#define DCM_SETVAL_TIMEOUT_MSEC 12000</p>
+<p> </p>
+<p>Perhaps I am missing it? I do see one of them used in <b>EcMasterDemoMotion\MotionDemo.cpp</b>, but that’s a different demo, of course, and I can’t see where it gets used in the end. I was looking for a good example of how these constants are used.</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com/" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=13276
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.02.2022 17:38:48 +00:00
+UpdatedAt=23.02.2022 17:38:48 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Unused DCM constants [Ticket#702487]
+
+### ARTICLE02_BODY
+<div>
+<p>Thanks, Cyril! We have been mostly focused on integrating EC-Engineer into our product and I am just now turning my attention toward EC-Master. You may be hearing more from me in coming weeks.</p>
+<p> </p>
+<p>Take care!</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p>--Quinton</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Wednesday, February 23, 2022 8:03 AM<br>
+<b>To:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: Unused DCM constants [Ticket#702487]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Quinton,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>I will delete these constant from the example source code. Please ignore them.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Cyril</p>
+<div>
+<div> <p> </p>
+</div>
+</div>
+<div>
+<blockquote>
+<p>On Wednesday, February 23, 2022, 3:27:54 AM, Quinton Tormanen wrote:</p>
+<p></p>
+<div>
+<p>I may be missing it, but I could not see where the following constants, which are defined in EcMasterDemoDc\EcDemoApp.h, are used:</p>
+<p> </p>
+<p>/* DCM controller set value: Distance between frame send time and sync impulse */</p>
+<p>#define DCM_CONTROLLER_SETVAL_NANOSEC ((BASE_PERIOD/2)*1000) /* 50% */</p>
+<p>/* maximum controller error in nanoseconds */</p>
+<p>#if (defined EC_VERSION_WINDOWS)</p>
+<p>#define DCM_MAX_CTL_ERROR_NANOSEC 90000</p>
+<p>#else</p>
+<p>#define DCM_MAX_CTL_ERROR_NANOSEC 30000</p>
+<p>#endif</p>
+<p>/* maximum time to get in-sync */</p>
+<p>#define DCM_SETVAL_TIMEOUT_MSEC 12000</p>
+<p> </p>
+<p>Perhaps I am missing it? I do see one of them used in <b>EcMasterDemoMotion\MotionDemo.cpp</b>, but that’s a different demo, of course, and I can’t see where it gets used in the end. I was looking for a good example of how these constants are used.</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com/" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>

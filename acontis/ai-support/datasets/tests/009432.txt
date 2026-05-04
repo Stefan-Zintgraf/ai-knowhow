@@ -1,0 +1,150 @@
+### HEADER
+Id=9432
+Link=http://at-zammad/#ticket/zoom/9432
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bobst Mex SA (ID=14, Number=50513, Country=CH)
+Commission=Bobst, CUBE RTOS-32 (ID=15, Number=15)
+Number=709432
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=didier.moret@bobst.com (ID=61, FirstName=Moret, LastName=Didier)
+CreatedBy=didier.moret@bobst.com (ID=61, FirstName=Moret, LastName=Didier)
+Type=
+TimeUnit=
+CreatedAt=29.11.2024 07:27:56 +00:00
+UpdatedAt=29.11.2024 10:33:54 +00:00
+CloseAt=29.11.2024 10:33:53 +00:00
+ArticlesCount=4
+
+### TITLE
+ec-inspector
+
+### ARTICLE00_HEADER
+Id=53492
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.11.2024 07:27:56 +00:00
+UpdatedAt=29.11.2024 07:27:59 +00:00
+
+### ARTICLE00_SUBJECT
+ec-inspector
+
+### ARTICLE00_BODY
+<div>
+<p> </p>
+<p><span lang="EN-US">Bonjour,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p>Nous avons un problème de stop d’urgence intempestif sur une machine qui demanderait l’utilisation d’un outil comme ec-inspector. Mais dans notre cas, on voudrait faire une capture Wireshark directement depuis notre iPC qui à ceci intégré dans son software et ensuite analysé les signaux avec ec-inspector. J’ai vu dans sa documentation qu’on peut donner un fichier .pcap et le fichier Eni pour ensuite faire l’analyse. Mais dans notre cas d’utilisation, nous utilisons le SuperSetEni qui exclut 40% des bornes, de plus, ici il s’agit de la machine qui a beaucoup de groupes hot-connect. Est-ce que le logiciel va fonctionner correctement avec une partie des bornes exclues, dans ce mode hors ligne?</p>
+<p> </p>
+<p>Pouvez-vous me faire une offre pour 1 exemplaire de ec-inspector, si la réponse est oui à la question ci-dessus ?</p>
+<p><b>Moret Didier</b>
+</p>
+<p> </p>
+<p><b><span lang="EN-US">BOBST </span></b><span lang="EN-US">
+</span></p>
+<p><span lang="EN-US">CORES, R&amp;D engineer</span></p>
+<p>Tél.: + Tél.: +41 21 547 12 09</p>
+<p> </p>
+<p>Email: <a href="mailto:Didier.Moret@bobst.com"><span style="color:blue;">Didier.Moret@bobst.com</span></a>
+</p>
+<p> </p>
+<p><b>Bobst Mex SA</b>
+</p>
+<p><span>PO Box, CH-1001 Lausanne<br> Tél.: +41 21 621 21 11<br> Fax: +41 21 621 20 70</span></p>
+<p><a href="http://www.bobst.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bobst.com</span></a>
+</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:1.4687in;max-height:1.4583in;width:141px;max-height:140px;" src="/api/v1/ticket_attachment/9432/53492/222090?view=inline"></p>
+<p> </p>
+</div><p><br> Visit BOBST social media channels:<br>
+<strong><a href="https://bobst.com/linkedin" rel="nofollow noreferrer noopener" title="https://bobst.com/linkedin" target="_blank">LinkedIn</a> - <a href="https://bobst.com/facebook" rel="nofollow noreferrer noopener" title="https://bobst.com/facebook" target="_blank"> Facebook</a> - </strong><a href="https://bobst.com/youtube" rel="nofollow noreferrer noopener" title="https://bobst.com/youtube" target="_blank"><strong>YouTube</strong></a></p><br>
+<hr>
+<p>This message and any attachments (the message) are intended solely for the addressees and are confidential. If you receive this message in error, please delete it and immediately notify the sender. Any use not in accordance with its purpose, any dissemination, copying or disclosure, either whole or partial is prohibited without prior formal approval. The internet cannot guarantee the integrity of the message. The companies of Bobst Group do not accept any liability for data corruption, delay, interception or any modification to this message.</p><hr>
+<p> </p>
+
+### ARTICLE01_HEADER
+Id=53502
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=29.11.2024 09:11:05 +00:00
+UpdatedAt=29.11.2024 09:11:05 +00:00
+
+### ARTICLE01_BODY
+Geht HC und SuperSetENI?
+
+### ARTICLE02_HEADER
+Id=53514
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=29.11.2024 10:29:32 +00:00
+UpdatedAt=29.11.2024 10:29:32 +00:00
+
+### ARTICLE02_BODY
+Ha klar
+
+### ARTICLE03_HEADER
+Id=53515
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.11.2024 10:33:54 +00:00
+UpdatedAt=29.11.2024 10:33:55 +00:00
+
+### ARTICLE03_SUBJECT
+ec-inspector
+
+### ARTICLE03_BODY
+Hallo,<div><br></div><div>bitte ein Angebot für EC-Inspector an Didier Moret schicken, mit dem Kommentar, dass HC und SupersetENI gehen.<div><br></div>
+<div>Danke!</div>
+<div>
+<div data-signature="true" data-signature-id="2"><div>Cyril</div></div>
+<br><div>---Begin forwarded message:---<br><br>
+</div>
+<div><blockquote type="cite">
+<div>Subject: ec-inspector<br>Date: 11/29/2024 08:27<br>From: Moret Didier &lt;didier.moret@bobst.com&gt;<br>To: Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;<br><br>
+</div>
+<div>
+<p> </p>
+<p><span lang="EN-US">Bonjour,</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p>Nous avons un problème de stop d’urgence intempestif sur une machine qui demanderait l’utilisation d’un outil comme ec-inspector. Mais dans notre cas, on voudrait faire une capture Wireshark directement depuis notre iPC qui à ceci intégré dans son software et ensuite analysé les signaux avec ec-inspector. J’ai vu dans sa documentation qu’on peut donner un fichier .pcap et le fichier Eni pour ensuite faire l’analyse. Mais dans notre cas d’utilisation, nous utilisons le SuperSetEni qui exclut 40% des bornes, de plus, ici il s’agit de la machine qui a beaucoup de groupes hot-connect. Est-ce que le logiciel va fonctionner correctement avec une partie des bornes exclues, dans ce mode hors ligne?</p>
+<p> </p>
+<p>Pouvez-vous me faire une offre pour 1 exemplaire de ec-inspector, si la réponse est oui à la question ci-dessus ?</p>
+<p><b>Moret Didier</b>
+</p>
+<p> </p>
+<p><b><span lang="EN-US">BOBST </span></b><span lang="EN-US">
+</span></p>
+<p><span lang="EN-US">CORES, R&amp;D engineer</span></p>
+<p>Tél.: + Tél.: +41 21 547 12 09</p>
+<p> </p>
+<p>Email: <a href="mailto:Didier.Moret@bobst.com"><span style="color:blue;">Didier.Moret@bobst.com</span></a>
+</p>
+<p> </p>
+<p><b>Bobst Mex SA</b>
+</p>
+<p><span>PO Box, CH-1001 Lausanne<br> Tél.: +41 21 621 21 11<br> Fax: +41 21 621 20 70</span></p>
+<p><a href="http://www.bobst.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bobst.com</span></a>
+</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;max-width:100%;width:1.4687in;max-height:1.4583in;width:141px;max-height:140px;" src="/api/v1/ticket_attachment/9432/53515/222187?view=inline"></p>
+<p> </p>
+</div>
+<p><br> Visit BOBST social media channels:<br>
+<strong><a href="https://bobst.com/linkedin" rel="nofollow noreferrer noopener" title="https://bobst.com/linkedin" target="_blank">LinkedIn</a> - <a href="https://bobst.com/facebook" rel="nofollow noreferrer noopener" title="https://bobst.com/facebook" target="_blank"> Facebook</a> - </strong><a href="https://bobst.com/youtube" rel="nofollow noreferrer noopener" title="https://bobst.com/youtube" target="_blank"><strong>YouTube</strong></a></p>
+<br>
+<hr>
+<p>This message and any attachments (the message) are intended solely for the addressees and are confidential. If you receive this message in error, please delete it and immediately notify the sender. Any use not in accordance with its purpose, any dissemination, copying or disclosure, either whole or partial is prohibited without prior formal approval. The internet cannot guarantee the integrity of the message. The companies of Bobst Group do not accept any liability for data corruption, delay, interception or any modification to this message.</p>
+<hr>
+<p> </p>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

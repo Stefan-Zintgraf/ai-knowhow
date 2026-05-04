@@ -1,0 +1,223 @@
+### HEADER
+Id=11932
+Link=http://at-zammad/#ticket/zoom/11932
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=7011932
+Owner=s.romero@acontis.com (ID=2460, FirstName=Sebastian, LastName=Romero)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=20.11.2025 13:20:10 +00:00
+UpdatedAt=28.11.2025 07:05:41 +00:00
+CloseAt=28.11.2025 07:05:41 +00:00
+ArticlesCount=3
+
+### TITLE
+[Reload ESI data] causes Update unsuccessfully (PNo.237)
+
+### ARTICLE00_HEADER
+Id=68846
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.11.2025 13:20:10 +00:00
+UpdatedAt=20.11.2025 13:20:13 +00:00
+
+### ARTICLE00_SUBJECT
+[Reload ESI data] causes Update unsuccessfully (PNo.237)
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi Support Team</div><div dir="ltr">
+<br>
+</div><div>This is from Mitsubishi (commission No. 40627).</div><div>EC-Engineer V.3.9.16</div><div dir="ltr">
+<br>
+</div><div dir="ltr">When executing [Reload ESI data] on a SubDevice that has multiple SubDevices registered simultaneously, an exception occurs, and child node information ceases to be displayed thereafter.</div><div dir="ltr">
+<br>
+</div><div>【Reproduction Steps】</div><div>1. Add a SubDevice (e.g., GX-JC06).</div><div>2. Select “Slave_1001[GX-JC06(IN,X2,X3) Main Device]” and execute “Reload ESI data”.</div><div>3. Select “Slave_1002[GX-JC06(X4,X5,X6) Sub-Device]” and display the “General” tab. The “General” tab display becomes blank.</div><div dir="ltr">
+<br>
+</div><div>※After executing step 2, a [►] icon is added to [Slave_1002[GX-JC06(X4,X5,X6) Sub-Device]] in [Classic View]. Clicking it displays an exception message box. Subsequently, selecting any other Slave will also display this message box.</div><div dir="ltr">
+<br>
+</div><div dir="ltr">Please refer the attached PDF.</div><div dir="ltr">
+<br>
+</div><div dir="ltr">Best regards,</div><div dir="ltr">Yuichi</div><div dir="ltr">
+<br>
+</div><div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span style=" background-color: rgb(255, 255, 255);"><br>
+</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=68853
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.11.2025 13:54:57 +00:00
+UpdatedAt=20.11.2025 13:54:58 +00:00
+
+### ARTICLE01_SUBJECT
+[Reload ESI data] causes Update unsuccessfully (PNo.237)
+
+### ARTICLE01_BODY
+Hi Yuichi,<br><br>I will look into this issue and let you know when it is fixed.<br><br>Best regards
+
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Sebastian Romero</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Thursday, November 20, 2025 at 2:20:10 PM, Yuichi Ide wrote:<br><br><div dir="ltr">Hi Support Team</div>
+<div dir="ltr">
+<br>
+</div>
+<div>This is from Mitsubishi (commission No. 40627).</div>
+<div>EC-Engineer V.3.9.16</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">When executing [Reload ESI data] on a SubDevice that has multiple SubDevices registered simultaneously, an exception occurs, and child node information ceases to be displayed thereafter.</div>
+<div dir="ltr">
+<br>
+</div>
+<div>【Reproduction Steps】</div>
+<div>1. Add a SubDevice (e.g., GX-JC06).</div>
+<div>2. Select “Slave_1001[GX-JC06(IN,X2,X3) Main Device]” and execute “Reload ESI data”.</div>
+<div>3. Select “Slave_1002[GX-JC06(X4,X5,X6) Sub-Device]” and display the “General” tab. The “General” tab display becomes blank.</div>
+<div dir="ltr">
+<br>
+</div>
+<div>※After executing step 2, a [►] icon is added to [Slave_1002[GX-JC06(X4,X5,X6) Sub-Device]] in [Classic View]. Clicking it displays an exception message box. Subsequently, selecting any other Slave will also display this message box.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Please refer the attached PDF.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Best regards,</div>
+<div dir="ltr">Yuichi</div>
+<div dir="ltr">
+<br>
+</div>
+<div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span style=" background-color: rgb(255, 255, 255);"><br>
+</span></p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=68958
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.11.2025 13:37:03 +00:00
+UpdatedAt=24.11.2025 13:37:03 +00:00
+
+### ARTICLE02_SUBJECT
+[Reload ESI data] causes Update unsuccessfully (PNo.237)
+
+### ARTICLE02_BODY
+<div>Hi Yuichi, <br><br>I have fixed the problem, the children attached to the reloaded device were not updated properly, it was referencing the old (pre reload) SubDevice which did not exist anymore after the reload of the ESI data.<br>The fix should come with the next version.<br><br>Best Regards<br><br>Sebastian<br><br>
+</div><div><blockquote type="cite">On Thursday, November 20, 2025 at 2:54:57 PM, Sebastian Romero via EC-Support wrote:<br><br>Hi Yuichi,<br><br>I will look into this issue and let you know when it is fixed.<br><br>Best regards
+
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Sebastian Romero</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, November 20, 2025 at 2:20:10 PM, Yuichi Ide wrote:<br><br><div dir="ltr">Hi Support Team</div>
+<div dir="ltr">
+<br>
+</div>
+<div>This is from Mitsubishi (commission No. 40627).</div>
+<div>EC-Engineer V.3.9.16</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">When executing [Reload ESI data] on a SubDevice that has multiple SubDevices registered simultaneously, an exception occurs, and child node information ceases to be displayed thereafter.</div>
+<div dir="ltr">
+<br>
+</div>
+<div>【Reproduction Steps】</div>
+<div>1. Add a SubDevice (e.g., GX-JC06).</div>
+<div>2. Select “Slave_1001[GX-JC06(IN,X2,X3) Main Device]” and execute “Reload ESI data”.</div>
+<div>3. Select “Slave_1002[GX-JC06(X4,X5,X6) Sub-Device]” and display the “General” tab. The “General” tab display becomes blank.</div>
+<div dir="ltr">
+<br>
+</div>
+<div>※After executing step 2, a [►] icon is added to [Slave_1002[GX-JC06(X4,X5,X6) Sub-Device]] in [Classic View]. Clicking it displays an exception message box. Subsequently, selecting any other Slave will also display this message box.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Please refer the attached PDF.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Best regards,</div>
+<div dir="ltr">Yuichi</div>
+<div dir="ltr">
+<br>
+</div>
+<div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span style=" background-color: rgb(255, 255, 255);"><br>
+</span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br><br>
+</blockquote></div><div><br></div>

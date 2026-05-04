@@ -1,0 +1,124 @@
+### HEADER
+Id=3859
+Link=http://at-zammad/#ticket/zoom/3859
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OSAIcnc S.r.l. (ID=195, Number=57504, Country=IT)
+Commission=OSAIcnc S.r.l., OPENcontrol CeWin (No Maint) (ID=235, Number=235)
+Number=703859
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=roberto.roagna@osaicnc.com (ID=593, FirstName=Roberto, LastName=Roagna)
+CreatedBy=roberto.roagna@osaicnc.com (ID=593, FirstName=Roberto, LastName=Roagna)
+Type=
+TimeUnit=
+CreatedAt=08.09.2022 11:43:38 +00:00
+UpdatedAt=16.09.2022 06:58:23 +00:00
+CloseAt=16.09.2022 06:58:23 +00:00
+ArticlesCount=2
+
+### TITLE
+RTL8110SC
+
+### ARTICLE00_HEADER
+Id=20491
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.09.2022 11:43:38 +00:00
+UpdatedAt=08.09.2022 11:43:38 +00:00
+
+### ARTICLE00_SUBJECT
+RTL8110SC
+
+### ARTICLE00_BODY
+<div>
+<p> </p>
+<p>Hi Christoph,</p>
+<p><span lang="EN-US">hope all is fine to you.</span></p>
+<p><span lang="EN-US">I would need to know if the LAN controller RTL8110SC is managed by your EtherCAT stack.</span></p>
+<p><span lang="EN-US">In your compatibility list (I do not know if it is updated) there is the controller RTL8110 but not the RTL8110SC.</span></p>
+<p><span lang="EN-US">Is the “SC” version managed as well?</span></p>
+<p><span lang="EN-US">Thank you</span></p>
+<p><span lang="EN-US">Regards</span></p>
+<p><span lang="EN-US">Roberto</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span style="color:#1f497d;"><img style="max-width:100%;width:1.3125in;max-height:.3958in;width:126px;max-height:38px;" src="/api/v1/ticket_attachment/3859/20491/84419?view=inline" alt="logo_osai_positive_version"></span></p>
+<p><b><span lang="EN-US" style="color:#dc006b;">Roberto Roagna</span></b><span lang="EN-US"></span></p>
+<p><span lang="EN-US" style="color:#616365;">R&amp;D Manager and Product Marketing</span><span lang="EN-US"></span></p>
+<p><span lang="EN-US" style="color:#616365;">m. +39 335 730 22 21</span><span lang="EN-US"> </span></p>
+<p><span style="color:#1f497d;"><p> </p></span></p>
+<p><span lang="EN-US" style="color:#616265;">OSAIcnc s.r.l.</span><span lang="EN-US"></span></p>
+<p><span style="color:#616265;">Sede Legale e Operativa: Via Jervis, 11 – 10015 Ivrea (TO) Italia</span></p>
+<p><span style="color:#616265;">Sede Logistica: Via Torino, 14 – 10010 Barone Canavese (TO) Italia</span></p>
+<p><a href="http://www.osaicnc.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.osaicnc.com</span></a></p>
+<p> </p>
+<p><span style="color:#dc006b;">P</span><span lang="EN-US"> </span><i><span lang="EN-US" style="color:#dc006b;">Please consider the environment before printing!</span></i><span lang="EN-US"></span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=20506
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.09.2022 14:52:29 +00:00
+UpdatedAt=08.09.2022 14:52:33 +00:00
+
+### ARTICLE01_SUBJECT
+RTL8110SC
+
+### ARTICLE01_BODY
+Hi Roberto,<div><br></div><div><div><a href="https://linux-hardware.org/index.php?id=pci:10ec-8167-1043-820d" title="https://linux-hardware.org/index.php?id=pci:10ec-8167-1043-820d" rel="nofollow noreferrer noopener" target="_blank">https://linux-hardware.org/index.php?id=pci:10ec-8167-1043-820d</a></div></div><div><br></div><div>the device ID 0x8167 is available in our emllRTL8169 Linklayer:</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/supported-nics/emllRTL8169.html#supported-pci-devices" title="https://public.acontis.com/manuals/EC-Master/3.1/html/supported-nics/emllRTL8169.html#supported-pci-devices" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/supported-nics/emllRTL8169.html#supported-pci-devices</a></div></div><div><br></div><div>Please make a try.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, September 8, 2022 at 1:43:38 PM, Roberto Roagna wrote:<br><br><div>
+<p> </p>
+<p>Hi Christoph,</p>
+<p><span lang="EN-US">hope all is fine to you.</span></p>
+<p><span lang="EN-US">I would need to know if the LAN controller RTL8110SC is managed by your EtherCAT stack.</span></p>
+<p><span lang="EN-US">In your compatibility list (I do not know if it is updated) there is the controller RTL8110 but not the RTL8110SC.</span></p>
+<p><span lang="EN-US">Is the “SC” version managed as well?</span></p>
+<p><span lang="EN-US">Thank you</span></p>
+<p><span lang="EN-US">Regards</span></p>
+<p><span lang="EN-US">Roberto</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:#1f497d;"><img style="max-width:100%;max-width:100%;width:1.3125in;max-height:.3958in;width:126px;max-height:38px;" src="/api/v1/ticket_attachment/3859/20506/84453?view=inline" alt="logo_osai_positive_version"></span></p>
+<p><b><span lang="EN-US" style="color:#dc006b;">Roberto Roagna</span></b><span lang="EN-US"></span></p>
+<p><span lang="EN-US" style="color:#616365;">R&amp;D Manager and Product Marketing</span><span lang="EN-US"></span></p>
+<p><span lang="EN-US" style="color:#616365;">m. +39 335 730 22 21</span><span lang="EN-US"> </span></p>
+<p><span style="color:#1f497d;"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US" style="color:#616265;">OSAIcnc s.r.l.</span><span lang="EN-US"></span></p>
+<p><span style="color:#616265;">Sede Legale e Operativa: Via Jervis, 11 – 10015 Ivrea (TO) Italia</span></p>
+<p><span style="color:#616265;">Sede Logistica: Via Torino, 14 – 10010 Barone Canavese (TO) Italia</span></p>
+<p><a href="http://www.osaicnc.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.osaicnc.com</span></a></p>
+<p> </p>
+<p><span style="color:#dc006b;">P</span><span lang="EN-US"> </span><i><span lang="EN-US" style="color:#dc006b;">Please consider the environment before printing!</span></i><span lang="EN-US"></span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

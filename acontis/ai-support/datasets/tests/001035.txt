@@ -1,0 +1,270 @@
+### HEADER
+Id=1035
+Link=http://at-zammad/#ticket/zoom/1035
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Dualis (ID=545, Number=0, Country=DE)
+Commission=Exail Robotics, OPSYS (ID=219, Number=219)
+Number=701035
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=dominique.chapuis@dualis.com (ID=169, FirstName=Dominique, LastName=Chapuis)
+CreatedBy=dominique.chapuis@dualis.com (ID=169, FirstName=Dominique, LastName=Chapuis)
+Type=
+TimeUnit=
+CreatedAt=15.07.2021 07:07:21 +00:00
+UpdatedAt=28.04.2022 05:49:12 +00:00
+CloseAt=16.07.2021 14:33:39 +00:00
+ArticlesCount=3
+
+### TITLE
+EcMaster - non operational state if one station is missing during startup
+
+### ARTICLE00_HEADER
+Id=5718
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.07.2021 07:07:21 +00:00
+UpdatedAt=15.07.2021 07:07:25 +00:00
+
+### ARTICLE00_SUBJECT
+EcMaster - non operational state if one station is missing during startup
+
+### ARTICLE00_BODY
+<div>
+<p>Hi support team,</p>
+<p> </p>
+<p>After more tests on the EtherCAT master we have identified issues in the following case.</p>
+<p>The network is composed of</p>
+<ul type="disc">
+<li>Master with cable redundancy<p></p>
+</li>
+<li>Station 1 : Beckhoff EK1100 + 8 modules<p></p>
+</li>
+<li>Station 2 : Beckhoff EK1100 + 3 modules, or WAGO 750-354 + 5 modules<p></p>
+</li>
+</ul> <p> </p>
+<p>We start the master with only one of the 2 stations powered on (Station1), station 2 is OFF.</p>
+<p>The bus scan reports a “Mismatch configuration error”.</p>
+<p> </p>
+<p><b>ISSUE1 : </b></p>
+<p>The master cannot be set in operationnel state, the reported error by emSetMasterState is Bus configuration mismatch (0x9811001e)</p>
+<p>The station 1 also remains in non operationnal state.</p>
+<p>We expect the master to be able to reach the Operational state and also station 1 to be in operationnal state in this case.</p>
+<ul type="disc">
+<li>Is there a setting we can change to allow operational state whereas the bus real configuration mismatch the expected one ?<br>I have attached configuration file and logs for EK1100 + WAGO 750-354 test<p></p>
+</li>
+<li>Can you suggest a way to manage such a case from our source code ? Is it necessary to scan the network permanently until exact configuration match ?<p></p>
+</li>
+</ul> <p> </p>
+<p><b>ISSUE2 : </b></p>
+<p>When we power on station2, stations 1 and 2 remains in non operational state.</p>
+<p>We expect of course master and both stations to be in operational state.</p>
+<p>May be this second issue will be solved automatically when the first one is solved : We suppose this is because the master is not in OP state due to station 2 off during startup.</p>
+<p> </p>
+<p>These issues have a much greater impact than issue reported as Ticket #700743.</p>
+<p> </p>
+<p>Best regards</p>
+<p> </p>
+<p>Dominique CHAPUIS</p>
+<p>Dualis Technologies</p>
+<p>dominique.chapuis@dualis.com</p>
+<p>14 rue Jean Neyret</p>
+<p>42000 SAINT ETIENNE</p>
+<p>Tel: 04 77 30 09 10</p>
+<p>Fax: 04 77 30 85 16</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=5746
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.07.2021 10:12:54 +00:00
+UpdatedAt=15.07.2021 10:12:55 +00:00
+
+### ARTICLE01_SUBJECT
+EcMaster - non operational state if one station is missing during startup
+
+### ARTICLE01_BODY
+Hi Dominique,<div><br></div><div><b>ISSUE1:</b></div><div>You can use <span>EC_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE to allow EC-Master to switch the present slaves to OP. Additionally, you can use </span><span>EC_IOCTL_SET_AUTO_ADJUST_CYCCMD_WKC_ENABLED to not get WKC errors all the time.</span>
+</div><div><span><br></span></div><div><span><b>ISSUE2:</b></span></div><div>This issue will be solved by solving issue 1.</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div>
+<div><br></div>
+<div><blockquote type="cite">On Thursday, July 15, 2021, 9:07:21 AM, Dominique Chapuis wrote:<br><br><div>
+<p>Hi support team,</p>
+<p> </p>
+<p>After more tests on the EtherCAT master we have identified issues in the following case.</p>
+<p>The network is composed of</p>
+<ul type="disc">
+<li>Master with cable redundancy<p></p>
+</li>
+<li>Station 1 : Beckhoff EK1100 + 8 modules<p></p>
+</li>
+<li>Station 2 : Beckhoff EK1100 + 3 modules, or WAGO 750-354 + 5 modules<p></p>
+</li>
+</ul> <p> </p>
+<p>We start the master with only one of the 2 stations powered on (Station1), station 2 is OFF.</p>
+<p>The bus scan reports a “Mismatch configuration error”.</p>
+<p> </p>
+<p><b>ISSUE1 : </b></p>
+<p>The master cannot be set in operationnel state, the reported error by emSetMasterState is Bus configuration mismatch (0x9811001e)</p>
+<p>The station 1 also remains in non operationnal state.</p>
+<p>We expect the master to be able to reach the Operational state and also station 1 to be in operationnal state in this case.</p>
+<ul type="disc">
+<li>Is there a setting we can change to allow operational state whereas the bus real configuration mismatch the expected one ?<br>I have attached configuration file and logs for EK1100 + WAGO 750-354 test<p></p>
+</li>
+<li>Can you suggest a way to manage such a case from our source code ? Is it necessary to scan the network permanently until exact configuration match ?<p></p>
+</li>
+</ul> <p> </p>
+<p><b>ISSUE2 : </b></p>
+<p>When we power on station2, stations 1 and 2 remains in non operational state.</p>
+<p>We expect of course master and both stations to be in operational state.</p>
+<p>May be this second issue will be solved automatically when the first one is solved : We suppose this is because the master is not in OP state due to station 2 off during startup.</p>
+<p> </p>
+<p>These issues have a much greater impact than issue reported as Ticket #700743.</p>
+<p> </p>
+<p>Best regards</p>
+<p> </p>
+<p>Dominique CHAPUIS</p>
+<p>Dualis Technologies</p>
+<p>dominique.chapuis@dualis.com</p>
+<p>14 rue Jean Neyret</p>
+<p>42000 SAINT ETIENNE</p>
+<p>Tel: 04 77 30 09 10</p>
+<p>Fax: 04 77 30 85 16</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=5818
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.07.2021 13:32:57 +00:00
+UpdatedAt=16.07.2021 13:32:57 +00:00
+
+### ARTICLE02_SUBJECT
+RE: EcMaster - non operational state if one station is missing during startup [Ticket#701035]
+
+### ARTICLE02_BODY
+<div>
+<div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>Thank you for your answer.</p>
+<p>I tried your suggestion with success :</p>
+<ul type="disc">
+<li>the master reaches operationnal state even if some slaves are not present during startup.<p></p>
+</li>
+<li>When slaves are powered on they also reach the operational state after the master being notified with EC_NOTIFY_SLAVE_PRESENCE, then calling emSetSlaveState<p></p>
+</li>
+</ul> <p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p>Best regards</p>
+<p> </p>
+<p>Dominique CHAPUIS</p>
+<p>Dualis Technologies</p>
+<p>dominique.chapuis@dualis.com</p>
+<p>14 rue Jean Neyret</p>
+<p>42000 SAINT ETIENNE</p>
+<p>Tel: 04 77 30 09 10</p>
+<p>Fax: 04 77 30 85 16</p>
+<p> </p>
+</div>
+<p> </p>
+<div>
+<p><b>De :</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br><b>Envoyé :</b> jeudi 15 juillet 2021 12:13<br><b>À :</b> dominique.chapuis@dualis.com<br><b>Objet :</b> RE: EcMaster - non operational state if one station is missing during startup [Ticket#701035]</p>
+</div>
+<p> </p>
+<p>Hi Dominique,</p>
+<div> <p> </p>
+</div>
+<div>
+<p><b>ISSUE1:</b></p>
+</div>
+<div>
+<p>You can use EC_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE to allow EC-Master to switch the present slaves to OP. Additionally, you can use EC_IOCTL_SET_AUTO_ADJUST_CYCCMD_WKC_ENABLED to not get WKC errors all the time.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p><b>ISSUE2:</b></p>
+</div>
+<div>
+<p>This issue will be solved by solving issue 1.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Cyril</p>
+</div>
+<div>
+<div> <p> </p>
+</div>
+<div><blockquote>
+<p>On Thursday, July 15, 2021, 9:07:21 AM, Dominique Chapuis wrote:</p>
+<p></p>
+<div>
+<p>Hi support team,</p>
+<p> </p>
+<p>After more tests on the EtherCAT master we have identified issues in the following case.</p>
+<p>The network is composed of</p>
+<ul type="disc">
+<li>Master with cable redundancy<p></p>
+</li>
+<li>Station 1 : Beckhoff EK1100 + 8 modules<p></p>
+</li>
+<li>Station 2 : Beckhoff EK1100 + 3 modules, or WAGO 750-354 + 5 modules<p></p>
+</li>
+</ul>
+<p> </p>
+<p>We start the master with only one of the 2 stations powered on (Station1), station 2 is OFF.</p>
+<p>The bus scan reports a “Mismatch configuration error”.</p>
+<p> </p>
+<p><b>ISSUE1 : </b></p>
+<p>The master cannot be set in operationnel state, the reported error by emSetMasterState is Bus configuration mismatch (0x9811001e)</p>
+<p>The station 1 also remains in non operationnal state.</p>
+<p>We expect the master to be able to reach the Operational state and also station 1 to be in operationnal state in this case.</p>
+<ul type="disc">
+<li>Is there a setting we can change to allow operational state whereas the bus real configuration mismatch the expected one ?<br>I have attached configuration file and logs for EK1100 + WAGO 750-354 test<p></p>
+</li>
+<li>Can you suggest a way to manage such a case from our source code ? Is it necessary to scan the network permanently until exact configuration match ?<p></p>
+</li>
+</ul>
+<p> </p>
+<p><b>ISSUE2 : </b></p>
+<p>When we power on station2, stations 1 and 2 remains in non operational state.</p>
+<p>We expect of course master and both stations to be in operational state.</p>
+<p>May be this second issue will be solved automatically when the first one is solved : We suppose this is because the master is not in OP state due to station 2 off during startup.</p>
+<p> </p>
+<p>These issues have a much greater impact than issue reported as Ticket #700743.</p>
+<p> </p>
+<p>Best regards</p>
+<p> </p>
+<p>Dominique CHAPUIS</p>
+<p>Dualis Technologies</p>
+<p>dominique.chapuis@dualis.com</p>
+<p>14 rue Jean Neyret</p>
+<p>42000 SAINT ETIENNE</p>
+<p>Tel: 04 77 30 09 10</p>
+<p>Fax: 04 77 30 85 16</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote></div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>

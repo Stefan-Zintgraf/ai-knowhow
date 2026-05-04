@@ -1,0 +1,132 @@
+### HEADER
+Id=8090
+Link=http://at-zammad/#ticket/zoom/8090
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Akribis, VMC-EC (ID=728, Number=728)
+Number=708090
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=14.05.2024 08:46:54 +00:00
+UpdatedAt=17.05.2024 06:07:11 +00:00
+CloseAt=17.05.2024 06:07:11 +00:00
+ArticlesCount=2
+
+### TITLE
+The customer akribis new requirement for EcEngineer core SDK
+
+### ARTICLE00_HEADER
+Id=44554
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.05.2024 08:46:54 +00:00
+UpdatedAt=14.05.2024 08:46:56 +00:00
+
+### ARTICLE00_SUBJECT
+The customer akribis new requirement for EcEngineer core SDK
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently, The customer akribis plan to order the EcEngineer core SDK. Because their target is Ubuntu and GUI with QT, So they want to checking the api in the EcEngineer core SDK.</div>
+<div>I checked the donwload page, all the eval version is base on C#. Dose the EcEngineer core SDK support C/C++? If the customer order it, Do you think possiable provde some api base C/C++?</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=44585
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.05.2024 14:32:44 +00:00
+UpdatedAt=14.05.2024 14:32:45 +00:00
+
+### ARTICLE01_SUBJECT
+The customer akribis new requirement for EcEngineer core SDK
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes, the SDK Layer 5 &amp; 4 contains also a C++ wrapper. This wrapper is currently based on mixed code, which runs only on Windows.</div><div><br></div><div>If they want to use it on linux, they have to convert the wrapper to use "DllImport".</div><div>We use this already in our EC-Master Wrapper.</div><div><br></div><div>If they want to use Qt, they can convert the wrapper to be based on mono. This is another approach and very useful in combination with Qt. Some years ago we created already a small sample Qt based GUI which was based on our Layer 4. The sample code is out dated. If they are interested, I have to talk to Christoph, maybe we can upgrade the code.</div><div><br></div><div>Another solution might be to use our SDK like an executable, e.g. for generating ENI files with the EniBuilder.</div><div>In that case the do not need interaction with our C# code.</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, May 14, 2024 at 10:46:54 AM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently, The customer akribis plan to order the EcEngineer core SDK. Because their target is Ubuntu and GUI with QT, So they want to checking the api in the EcEngineer core SDK.</div>
+<div>I checked the donwload page, all the eval version is base on C#. Dose the EcEngineer core SDK support C/C++? If the customer order it, Do you think possiable provde some api base C/C++?</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

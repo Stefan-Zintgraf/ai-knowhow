@@ -1,0 +1,202 @@
+### HEADER
+Id=6168
+Link=http://at-zammad/#ticket/zoom/6168
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=706168
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=18.08.2023 22:55:39 +00:00
+UpdatedAt=12.09.2023 06:00:16 +00:00
+CloseAt=12.09.2023 06:00:16 +00:00
+ArticlesCount=4
+
+### TITLE
+DCM Status functions for CEcDcmRefClockBase
+
+### ARTICLE00_HEADER
+Id=33085
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.08.2023 22:55:39 +00:00
+UpdatedAt=18.08.2023 22:55:43 +00:00
+
+### ARTICLE00_SUBJECT
+DCM Status functions for CEcDcmRefClockBase
+
+### ARTICLE00_BODY
+<div>
+<p>I am reviewing the changes to MasterRefClock/LinkLayerRefClock in V3.2.1.01 and seeing how many of my customizations can be removed.</p>
+<p> </p>
+<p>One thing that I noticed was that CEcDcmMasterRefClock implements these 4 status functions:</p>
+<p> </p>
+<p><span style="color:blue;"> class</span>
+<span style="color:#2b91af;">CEcDcmMasterRefClock</span> : <span style="color:blue;">public</span>
+<span style="color:#2b91af;">CEcDcmRefClockBase</span></p>
+<p>{</p>
+<p>...</p>
+<p> <span style="color:blue;">virtual</span>
+<span style="color:#6f008a;">EC_T_VOID</span> SetStatus(<span style="color:#2b91af;">EC_T_DWORD</span>
+<span style="color:gray;">dwStatus</span>) <span style="color:#6f008a;">EC_OVERRIDE</span> { m_dwStatusCode = <span style="color:gray;">dwStatus</span>; }</p>
+<p> <span style="color:blue;">virtual</span>
+<span style="color:#2b91af;">EC_T_DWORD</span> GetStatus(<span style="color:#2b91af;">EC_T_DWORD</span>* <span style="color:gray;">pdwErrorCode</span>, <span style="color:#2b91af;">EC_T_INT</span>* <span style="color:gray;">pnDiffCur</span>, <span style="color:#2b91af;">EC_T_INT</span>* <span style="color:gray;">pnDiffAvg</span>, <span style="color:#2b91af;">EC_T_INT</span>* <span style="color:gray;">pnDiffMax</span>) <span style="color:#6f008a;">EC_OVERRIDE</span>;</p>
+<p> <span style="color:blue;">virtual</span>
+<span style="color:#2b91af;">EC_T_DWORD</span> ShowStatus(<span style="color:#6f008a;">EC_T_VOID</span>) <span style="color:#6f008a;">EC_OVERRIDE</span> { <span style="color:blue;">return</span>
+<span style="color:#6f008a;">EC_E_NOTSUPPORTED</span>; }</p>
+<p> <span style="color:blue;">virtual</span>
+<span style="color:#2b91af;">EC_T_DWORD</span> ResetStatus(<span style="color:#6f008a;">EC_T_VOID</span>) <span style="color:#6f008a;">EC_OVERRIDE</span> { <span style="color:blue;">return</span> m_dwStatusCode = <span style="color:#6f008a;">EC_E_NOERROR</span>; }</p>
+<p>...</p>
+<p>};</p>
+<p> </p>
+<p>However, they were not added to CEcDcmLinkLayerRefClock. Why is that? It seems like being able to access the current/average/max error is equally useful for LinkLayerRefClock as it is for MasterRefClock, in which case they could be moved to CEcDcmRefClockBase.</p>
+<p> </p>
+<p>I admit that I do not fully understand the m_dwStatusCode portion of this set of functions, but the current/average/max errors would be very nice to have.</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Computer Systems, Inc.<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=33091
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.08.2023 09:20:17 +00:00
+UpdatedAt=19.08.2023 09:20:19 +00:00
+
+### ARTICLE01_SUBJECT
+DCM Status functions for CEcDcmRefClockBase
+
+### ARTICLE01_BODY
+<div>Hi Quinton,</div><div><br></div><div>I am going to move those functions to the base class 
+
+CEcDcmRefClockBase</div><div><br></div><div>Best Regards</div><div>Haithem Jebali<br><br>
+</div><div><blockquote type="cite">On Saturday, August 19, 2023 at 12:55:39 AM, Quinton Tormanen wrote:<br><br><span style="color:blue;">class</span>
+<span style="color:rgb(43, 145, 175);">CEcDcmMasterRefClock</span> : <span style="color:blue;">public</span>
+<span style="color:rgb(43, 145, 175);">CEcDcmRefClockBase</span><br>
+</blockquote></div><div><br></div><br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=33147
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.08.2023 23:24:48 +00:00
+UpdatedAt=21.08.2023 23:24:48 +00:00
+
+### ARTICLE02_SUBJECT
+RE: DCM Status functions for CEcDcmRefClockBase [Ticket#706168]
+
+### ARTICLE02_BODY
+<div>
+<p>Excellent. I’ll do the same in my copy until I get the next build from you, probably after Timo gets back from his vacation. I thought he might still be gone. Have a great day, Haithem!</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p>--Quinton</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Haithem Jebali via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Saturday, August 19, 2023 2:20 AM<br>
+<b>To:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: DCM Status functions for CEcDcmRefClockBase [Ticket#706168]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Hi Quinton,</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>I am going to move those functions to the base class CEcDcmRefClockBase</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best Regards</p>
+</div>
+<div>
+<p>Haithem Jebali</p>
+</div>
+<div>
+<blockquote>
+<p>On Saturday, August 19, 2023 at 12:55:39 AM, Quinton Tormanen wrote:<br>
+<br>
+<span style="color:blue;">class</span> <span style="color:#2b91af;">CEcDcmMasterRefClock</span> : <span style="color:blue;">public</span> <span style="color:#2b91af;">CEcDcmRefClockBase</span></p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Haithem Jebali</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=33455
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=29.08.2023 13:17:08 +00:00
+UpdatedAt=29.08.2023 13:17:08 +00:00
+
+### ARTICLE03_BODY
+<div><a href="http://at-dev-git/ec-embedded/ec-embedded/-/issues/5029" title="http://at-dev-git/ec-embedded/ec-embedded/-/issues/5029" rel="nofollow noreferrer noopener" target="_blank">http://at-dev-git/ec-embedded/ec-embedded/-/issues/5029</a></div>

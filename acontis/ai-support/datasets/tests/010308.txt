@@ -1,0 +1,168 @@
+### HEADER
+Id=10308
+Link=http://at-zammad/#ticket/zoom/10308
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Shinkawa Sensor, Condition Monitors (ID=744, Number=744)
+Number=7010308
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=31.03.2025 06:41:49 +00:00
+UpdatedAt=11.04.2025 06:13:48 +00:00
+CloseAt=11.04.2025 06:13:48 +00:00
+ArticlesCount=3
+
+### TITLE
+Question about EC-Master(SHINKAWA)
+
+### ARTICLE00_HEADER
+Id=59100
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=31.03.2025 06:41:49 +00:00
+UpdatedAt=31.03.2025 06:41:49 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(SHINKAWA)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(SHINKAWA)
+
+What the customer wants to achieve:
+  1. If the number of slaves actually connected is fewer than the number indicated in the ENI file, the system will operate with the slaves that are recognized.
+  2. If the number of slaves actually connected is greater than the number indicated in the ENI file,
+     the system will operate up to the number of slaves listed in the ENI file.
+
+Q1. Is No1 possible to achieve with FP hot connect?
+Q2. Is there a way to achieve No2?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=59104
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.03.2025 07:11:32 +00:00
+UpdatedAt=31.03.2025 07:11:35 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(SHINKAWA)
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>please tell me to which commission is this ticket related. We have 2 Shinkawa commission. Thank you.</div><div><br></div><div>Q1. Yes this can be achieved by using HotConnect or SuperSetENI</div><div><div>
+<a href="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" title="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf</a> Page 10</div></div><div><div>
+<a href="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" title="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf</a> Page17</div></div><div><br></div><div>Q2. Using <span>EC_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE can help during comissioning , but it should not be used in productive environment, because a lot of error needs to be ignored additionally.</span>
+</div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=all_slaves_m#emiocontrol-ec-ioctl-all-slaves-must-reach-master-state" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=all_slaves_m#emiocontrol-ec-ioctl-all-slaves-must-reach-master-state" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=all_slaves_m#emiocontrol-ec-ioctl-all-slaves-must-reach-master-state</a></div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, March 31, 2025 at 8:41:49 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(SHINKAWA)</div>
+<div><br></div>
+<div>What the customer wants to achieve:</div>
+<div>  1. If the number of slaves actually connected is fewer than the number indicated in the ENI file, the system will operate with the slaves that are recognized.</div>
+<div>  2. If the number of slaves actually connected is greater than the number indicated in the ENI file,</div>
+<div>     the system will operate up to the number of slaves listed in the ENI file.</div>
+<div><br></div>
+<div>Q1. Is No1 possible to achieve with FP hot connect?</div>
+<div>Q2. Is there a way to achieve No2?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=59117
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=31.03.2025 08:33:21 +00:00
+UpdatedAt=31.03.2025 08:33:21 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master(SHINKAWA) [Ticket#7010308]
+
+### ARTICLE02_BODY
+Dear Cyril san
+
+Their commission number is 40048.
+
+Best regards,
+Takuya Fujikawa
+
+On 2025/03/31 16:11, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+> 
+> please tell me to which commission is this ticket related. We have 2 Shinkawa commission. Thank you.
+> 
+> Q1. Yes this can be achieved by using HotConnect or SuperSetENI
+> https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf <https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf> Page 10
+> https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf <https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf> Page17
+> 
+> Q2. Using EC_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE can help during comissioning , but it should not be used in productive environment, because a lot of error needs to be ignored additionally.
+> https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=all_slaves_m#emiocontrol-ec-ioctl-all-slaves-must-reach-master-state <https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=all_slaves_m#emiocontrol-ec-ioctl-all-slaves-must-reach-master-state>
+> 
+> Best Regards,
+> __________________________________________________________________________________________
+> Cyril Eyssautier
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> On Monday, March 31, 2025 at 8:41:49 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Master(SHINKAWA)
+>>
+>> What the customer wants to achieve:
+>>  1. If the number of slaves actually connected is fewer than the number indicated in the ENI file, the system will operate with the slaves that are recognized.
+>>  2. If the number of slaves actually connected is greater than the number indicated in the ENI file,
+>>     the system will operate up to the number of slaves listed in the ENI file.
+>>
+>> Q1. Is No1 possible to achieve with FP hot connect?
+>> Q2. Is there a way to achieve No2?
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+

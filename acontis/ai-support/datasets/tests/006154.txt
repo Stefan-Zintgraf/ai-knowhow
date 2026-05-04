@@ -1,0 +1,224 @@
+### HEADER
+Id=6154
+Link=http://at-zammad/#ticket/zoom/6154
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=JSLT (ID=402, Number=0, Country=JP)
+Commission=Acontis, Generic (ID=590, Number=590)
+Number=706154
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=17.08.2023 04:05:10 +00:00
+UpdatedAt=31.08.2023 06:10:26 +00:00
+CloseAt=31.08.2023 06:10:26 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about LxWin + EC-Master(TOYO ELECTRIC)
+
+### ARTICLE00_HEADER
+Id=32996
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=17.08.2023 04:05:10 +00:00
+UpdatedAt=17.08.2023 04:05:14 +00:00
+
+### ARTICLE00_SUBJECT
+Question about LxWin + EC-Master(TOYO ELECTRIC)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about LxWin + EC-Master(TOYO ELECTRIC)
+
+If they adopt this SDK, would it be possible for you to provide a Windows side application sample as well?
+
+Best regards,
+Takuya Fujikawa
+
+
+
+### ARTICLE01_HEADER
+Id=33018
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.08.2023 09:01:53 +00:00
+UpdatedAt=17.08.2023 09:01:55 +00:00
+
+### ARTICLE01_SUBJECT
+Question about LxWin + EC-Master(TOYO ELECTRIC)
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>There should be an EcWinDemo in the package. If the Demo is not included, we can send you the latest EC-WinRT-Linux package.</div><div><br></div><div>Best Regards</div><div>Haithem Jebali<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, August 17, 2023 at 6:05:10 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about LxWin + EC-Master(TOYO ELECTRIC)</div>
+<div><br></div>
+<div>If they adopt this SDK, would it be possible for you to provide a Windows side application sample as well?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=33021
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=17.08.2023 09:28:37 +00:00
+UpdatedAt=17.08.2023 09:28:37 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about LxWin + EC-Master(TOYO ELECTRIC) [Ticket#706154]
+
+### ARTICLE02_BODY
+Dear Haithem san
+
+ > There should be an EcWinDemo in the package. If the Demo is not included, we can send you the latest EC-WinRT-Linux package.
+
+I will confirm just in case.
+Does EcWinDemo software work on Windows host side?
+
+Best regards,
+Takuya Fujikawa
+
+
+
+On 2023/08/17 18:01, Haithem Jebali via EC-Support wrote:
+> Hi Takuya,
+> 
+> There should be an EcWinDemo in the package. If the Demo is not included, we can send you the latest EC-WinRT-Linux package.
+> 
+> Best Regards
+> Haithem Jebali
+> __________________________________________________________________________________________
+> Haithem Jebali
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> On Thursday, August 17, 2023 at 6:05:10 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about LxWin + EC-Master(TOYO ELECTRIC)
+>>
+>> If they adopt this SDK, would it be possible for you to provide a Windows side application sample as well?
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+
+### ARTICLE03_HEADER
+Id=33022
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.08.2023 09:38:05 +00:00
+UpdatedAt=17.08.2023 09:38:05 +00:00
+
+### ARTICLE03_SUBJECT
+Question about LxWin + EC-Master(TOYO ELECTRIC)
+
+### ARTICLE03_BODY
+Hi Takuya,<div><br></div><div>Yes it Works on Windows host side.</div><div><br></div><div>Best Regards</div><div>Haithem Jebali<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, August 17, 2023 at 11:28:37 AM, Takuya Fujikawa wrote:<br><br><div>Dear Haithem san</div>
+<div><br></div>
+<div> &gt; There should be an EcWinDemo in the package. If the Demo is not included, we can send you the latest EC-WinRT-Linux package.</div>
+<div><br></div>
+<div>I will confirm just in case.</div>
+<div>Does EcWinDemo software work on Windows host side?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2023/08/17 18:01, Haithem Jebali via EC-Support wrote:</div>
+<div>&gt; Hi Takuya,</div>
+<div>&gt;</div>
+<div>&gt; There should be an EcWinDemo in the package. If the Demo is not included, we can send you the latest EC-WinRT-Linux package.</div>
+<div>&gt;</div>
+<div>&gt; Best Regards</div>
+<div>&gt; Haithem Jebali</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Haithem Jebali</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Thursday, August 17, 2023 at 6:05:10 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about LxWin + EC-Master(TOYO ELECTRIC)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; If they adopt this SDK, would it be possible for you to provide a Windows side application sample as well?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

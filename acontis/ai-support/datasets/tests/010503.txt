@@ -1,0 +1,79 @@
+### HEADER
+Id=10503
+Link=http://at-zammad/#ticket/zoom/10503
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Promess Inc, Unknown (ID=999, Number=999)
+Number=7010503
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=01.05.2025 02:16:57 +00:00
+UpdatedAt=02.05.2025 19:22:05 +00:00
+CloseAt=02.05.2025 19:21:58 +00:00
+ArticlesCount=1
+
+### TITLE
+Fwd: Putting a slave into bootstrap mode.
+
+### ARTICLE00_HEADER
+Id=60168
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.05.2025 02:16:57 +00:00
+UpdatedAt=01.05.2025 02:16:57 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Putting a slave into bootstrap mode.
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>I think the master doesn’t need to be in INIT state to set a slave to INIT (and then BOOT) state, yes? Could there be some restriction from the device manufacturer that prevents the slave from going to INIT based on the state of the master?</div><div> </div><div>/Jon<br><div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>Steve Pachasa &lt;steve.pachasa@promessinc.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Putting a slave into bootstrap mode.</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>April 30, 2025 at 4:55:11 PM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<br><div>
+<div>Hi Jon,</div>
+<div> </div>
+<div>I was playing around with one of our slaves on the network. This particular slave supports software updates over FOE. In order for us to do this, we would typically walk it back to Init mode and then enter boot mode. Once in boot mode we would proceed with sending the data over. Play with the EC-Engineer, I am able to walk the slave back to Pre-Op but not Init mode as long as the master was not in Init mode. As soon as I set the master to Init mode then my slave entered into Init mode and then I could go into boot mode for that slave.</div>
+<div> </div>
+<div>The question is, does it require the master and all slaves to go back to Init mode in order to allow one salve to go into boot mode?</div>
+<div> </div>
+<div>Or can I individually control one slave state all the way back to boot mode?</div>
+<div> </div>
+<div>Our current master that we use allows us to individually control the Slaves states.</div>
+<div> </div>
+<div style=" color: inherit;"><table cellspacing="0" cellpadding="0" style=" border-collapse: collapse; border-spacing: 0px;"><tbody>
+<tr><td colspan="3" align="left" style=" vertical-align: top;"><div>
+<b>Steve Pachasa</b> | +1 810-229-9334 | <a href="mailto:steve.pachasa@promessinc.com">steve.pachasa@promessinc.com</a> </div></td></tr>
+<tr><td colspan="3" align="left" style=" vertical-align: top;"><div>
+<b>Promess Incorporated</b> | 11429 Grand River Rd., Brighton MI 48116<br>
+</div></td></tr>
+<tr>
+<td align="left" style=" vertical-align: top;"> </td>
+<td align="left" style=" vertical-align: top;"><div> <a href="https://www.promessinc.com/?utm_source=outlook&amp;utm_medium=email&amp;utm_campaign=outlook_email&amp;utm_id=emailbanner" rel="nofollow noreferrer noopener" title="https://www.promessinc.com/?utm_source=outlook&amp;utm_medium=email&amp;utm_campaign=outlook_email&amp;utm_id=emailbanner" target="_blank">www.promessinc.com</a> </div></td>
+<td align="left" style=" vertical-align: top;"><div> <a href="https://www.promessinc.com/promess-showroom/?utm_source=outlook&amp;utm_medium=email&amp;utm_campaign=outlook_email&amp;utm_id=emailbanner" rel="nofollow noreferrer noopener" title="https://www.promessinc.com/promess-showroom/?utm_source=outlook&amp;utm_medium=email&amp;utm_campaign=outlook_email&amp;utm_id=emailbanner" target="_blank"></a> <a href="https://www.promessinc.com/promess-webinar-series/?utm_source=outlook&amp;utm_medium=email&amp;utm_campaign=outlook_email&amp;utm_id=emailbanner" rel="nofollow noreferrer noopener" title="https://www.promessinc.com/promess-webinar-series/?utm_source=outlook&amp;utm_medium=email&amp;utm_campaign=outlook_email&amp;utm_id=emailbanner" target="_blank"></a> <a href="https://www.youtube.com/user/PromessInc" rel="nofollow noreferrer noopener" title="https://www.youtube.com/user/PromessInc" target="_blank"></a> <a href="https://www.linkedin.com/company/promess" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/promess" target="_blank"></a> <a href="https://www.x.com/promessinc" rel="nofollow noreferrer noopener" title="https://www.x.com/promessinc" target="_blank"></a> <br>
+</div></td>
+</tr>
+<tr><td colspan="3" align="left" style=" vertical-align: middle;"><a href="https://www.promessinc.com/upcoming-events/?utm_source=outlook&amp;utm_medium=email&amp;utm_campaign=outlook_email" rel="nofollow noreferrer noopener" title="https://www.promessinc.com/upcoming-events/?utm_source=outlook&amp;utm_medium=email&amp;utm_campaign=outlook_email" target="_blank"></a></td></tr>
+</tbody></table></div>
+</div>
+</blockquote>
+</div>
+<br><img style="max-width:100%;width: 22px;max-height: 22px;max-height:22px;" alt="C2_signature_youtube_32x32_0a50f114-9cf2-4d92-a481-38a60f2b75ab.png" src="/api/v1/ticket_attachment/10503/60168/250421?view=inline"><img style="max-width:100%;width: 22px;max-height: 22px;max-height:22px;" alt="C2_signature_linkedin_32x32_595ab9b2-8d26-4573-bd36-ab6fe972d234.png" src="/api/v1/ticket_attachment/10503/60168/250422?view=inline"><img alt="C2_signature_promess-email-logo_3c7f721a-63b2-4f1c-bcdc-22c372fce1a3.png" src="/api/v1/ticket_attachment/10503/60168/250423?view=inline" style="max-width:100%;"><img style="max-width:100%;width: 22px;max-height: 22px;max-height:22px;" alt="C2_signature_x_32x32_4b70ea5c-6589-4740-a43f-ae1b2e14a82d.png" src="/api/v1/ticket_attachment/10503/60168/250424?view=inline">
+</div>

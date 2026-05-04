@@ -1,0 +1,75 @@
+### HEADER
+Id=6022
+Link=http://at-zammad/#ticket/zoom/6022
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Jumo GmbH & Co.KG (ID=126, Number=54502, Country=DE)
+Commission=Jumo, Registriergeräte, Linux (ID=141, Number=141)
+Number=706022
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=dirk.kliegel@jumo.net (ID=128, FirstName=Dirk, LastName=Kliegel)
+CreatedBy=dirk.kliegel@jumo.net (ID=128, FirstName=Dirk, LastName=Kliegel)
+Type=
+TimeUnit=
+CreatedAt=21.07.2023 10:41:10 +00:00
+UpdatedAt=04.08.2023 06:06:12 +00:00
+CloseAt=04.08.2023 06:06:12 +00:00
+ArticlesCount=2
+
+### TITLE
+ecatGetBusSlaveInfo
+
+### ARTICLE00_HEADER
+Id=32123
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.07.2023 10:41:10 +00:00
+UpdatedAt=21.07.2023 10:41:11 +00:00
+
+### ARTICLE00_SUBJECT
+ecatGetBusSlaveInfo
+
+### ARTICLE00_BODY
+Hallo,<br><br>ich habe eine Frage zu der folgenden Funktion:<br><br>static EC_T_DWORD ecatGetBusSlaveInfo(<br><br>EC_T_BOOL bStationAddress,<br><br>EC_T_WORD wSlaveAddress,<br><br>EC_T_BUS_SLAVE_INFO *pSlaveInfo<br><br>)<br><br>Wenn ich für den bool bStationAddress true übergebe, wird laut Dokumentation für den Parameter wSlaveAddress eine station address erwartet. Was ist diese station address und woher bekomme ich sie?<br><br><span>Mit freundlichen Grüßen / Best regards<br><br>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Software / Global Development - Software<br>Applikationen embedded Linux / Applications embedded Linux<br><br>i. A. Dirk Kliegel<br><br>Tel: +49 (0)661 6003-324<br>Fax: +49 (0)661 6003-604<br>Adresse: Moritz-Juchheim-Straße 1 <br> 36039 Fulda, Germany <br>E-Mail: </span><a href="mailto:Dirk.Kliegel@jumo.net">mailto:Dirk.Kliegel@jumo.net</a><span><br>Internet: </span><a href="https://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">https://www.jumo.net</a><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dimitrios Charisiadis, Dr. Steffen Hoßfeld<br> Ust.-Id.-Nr.: DE 112411234</p>
+
+### ARTICLE01_HEADER
+Id=32134
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.07.2023 12:13:53 +00:00
+UpdatedAt=21.07.2023 12:13:57 +00:00
+
+### ARTICLE01_SUBJECT
+ecatGetBusSlaveInfo
+
+### ARTICLE01_BODY
+Hallo Herr Kliegel,<div><br></div><div>es ist die Adresse aus zum Beispiel der ENI. In EcMasterDemo können Sie verschiede Ideen finden wie man auf die Slaves zugreift, zum Beispiel in <span>PrintSlaveInfos().</span>
+</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, July 21, 2023 at 12:41:10 PM, Dirk Kliegel wrote:<br><br>Hallo,<br><br>ich habe eine Frage zu der folgenden Funktion:<br><br>static EC_T_DWORD ecatGetBusSlaveInfo(<br><br>EC_T_BOOL bStationAddress,<br><br>EC_T_WORD wSlaveAddress,<br><br>EC_T_BUS_SLAVE_INFO *pSlaveInfo<br><br>)<br><br>Wenn ich für den bool bStationAddress true übergebe, wird laut Dokumentation für den Parameter wSlaveAddress eine station address erwartet. Was ist diese station address und woher bekomme ich sie?<br><br><span>Mit freundlichen Grüßen / Best regards<br><br>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Software / Global Development - Software<br>Applikationen embedded Linux / Applications embedded Linux<br><br>i. A. Dirk Kliegel<br><br>Tel: +49 (0)661 6003-324<br>Fax: +49 (0)661 6003-604<br>Adresse: Moritz-Juchheim-Straße 1 <br> 36039 Fulda, Germany <br>E-Mail: </span><a href="mailto:Dirk.Kliegel@jumo.net">mailto:Dirk.Kliegel@jumo.net</a><span><br>Internet: </span><a href="https://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">https://www.jumo.net</a><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dimitrios Charisiadis, Dr. Steffen Hoßfeld<br> Ust.-Id.-Nr.: DE 112411234</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

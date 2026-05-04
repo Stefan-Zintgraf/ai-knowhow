@@ -1,0 +1,333 @@
+### HEADER
+Id=5810
+Link=http://at-zammad/#ticket/zoom/5810
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Relativity Space (ID=385, Number=40410, Country=US)
+Commission=Relativity Space, Internal Controllers (ID=457, Number=457)
+Number=705810
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=bchesko@relativityspace.com (ID=1481, FirstName=Brian, LastName=Chesko)
+CreatedBy=bchesko@relativityspace.com (ID=1481, FirstName=Brian, LastName=Chesko)
+Type=
+TimeUnit=
+CreatedAt=23.06.2023 22:16:32 +00:00
+UpdatedAt=26.06.2023 14:52:52 +00:00
+CloseAt=26.06.2023 14:52:52 +00:00
+ArticlesCount=1
+
+### TITLE
+[External] Acontis Master Class B Hardware Feedback Delay Investigation
+
+### ARTICLE00_HEADER
+Id=31043
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.06.2023 22:16:33 +00:00
+UpdatedAt=23.06.2023 22:16:33 +00:00
+
+### ARTICLE00_SUBJECT
+[External] Acontis Master Class B Hardware Feedback Delay Investigation
+
+### ARTICLE00_BODY
+<div>
+<p>Hey Jon,</p>
+<p> </p>
+<p>Apologies on the response delay here. It was pretty hectic for a bit and we ended up shelving this discussion internally and I totally forgot to communicate that news outwards.</p>
+<p> </p>
+<p>It was my understanding that the Class B master doesn’t support distributed clocks – the EC-Master manual says as much. Is that something we would have to switch for to test?</p>
+<p> </p>
+<p>Best,</p>
+<p>Brian</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Jon Waters &lt;j.waters@acontis.com&gt; <br>
+<b>Sent:</b> Tuesday, December 20, 2022 8:55 AM<br>
+<b>To:</b> Brian Chesko &lt;bchesko@relativityspace.com&gt;<br>
+<b>Cc:</b> Chase Hrdina &lt;chrdina@relativityspace.com&gt;; Paul Bußmann via EC-Support &lt;ecsupport@acontis.com&gt;; Charney Thomas &lt;cthomas@relativityspace.com&gt;<br>
+<b>Subject:</b> Re: [External] Acontis Master Class B Hardware Feedback Delay Investigation</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Brian,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Just following up on this to see if you found anything further.</p>
+<div>
+<p><br> /Jon </p>
+</div>
+<div>
+<p><br>
+<br>
+</p>
+<blockquote>
+<div>
+<p>On Dec 9, 2022, at 12:15 PM, Jon Waters &lt;<a href="mailto:j.waters@acontis.com">j.waters@acontis.com</a>&gt; wrote:</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p>Hi Brian,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>One possibility is that the I/O signals on the slaves are sampled during the frame processing and the data is not ready until the next frame. This would explain the 200ms delay. Perhaps you can consider some other ELxxx I/O slices that have Distributed Clock support (DC). With DC the data can be latched between the cyclic frames so it is ready when the frame comes around.</p>
+</div>
+<div>
+<div>
+<p><br>
+<span>Jon Waters<br> General Manager<br> <br> acontis technologies Inc.<br> 945 Concord Street<br> Framingham, MA 01701<br> Phone: +1-508-809-7201</span> </p>
+</div>
+<div>
+<p><br>
+<br>
+</p>
+<blockquote>
+<div>
+<p>On Dec 2, 2022, at 1:27 PM, Brian Chesko &lt;<a href="mailto:bchesko@relativityspace.com">bchesko@relativityspace.com</a>&gt; wrote:</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p>Re-sending to add another team member to recipients</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<div>
+<div>
+<p><b>From:</b> Brian Chesko <br>
+<b>Sent:</b> Friday, December 2, 2022 12:23 PM<br>
+<b>To:</b> Jon Waters &lt;<a href="mailto:j.waters@acontis.com">j.waters@acontis.com</a>&gt;<br>
+<b>Cc:</b> Chase Hrdina &lt;<a href="mailto:chrdina@relativityspace.com">chrdina@relativityspace.com</a>&gt;; Paul Bußmann via EC-Support &lt;<a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>&gt;<br>
+<b>Subject:</b> RE: [External] Re: Acontis Master Class B Hardware Feedback Delay Investigation</p>
+</div>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Hi Jon,</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>I looked over the code again – as far as I can tell, both our in-house wrapper and the modified demo do follow the standard timing as seen on page 15.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best,</p>
+</div>
+<div>
+<p>Brian</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<div>
+<div>
+<p><b>From:</b> Jon Waters &lt;<a href="mailto:j.waters@acontis.com">j.waters@acontis.com</a>&gt; <br>
+<b>Sent:</b> Monday, November 28, 2022 10:09 AM<br>
+<b>To:</b> Brian Chesko &lt;<a href="mailto:bchesko@relativityspace.com">bchesko@relativityspace.com</a>&gt;<br>
+<b>Cc:</b> Chase Hrdina &lt;<a href="mailto:chrdina@relativityspace.com">chrdina@relativityspace.com</a>&gt;; Paul Bußmann via EC-Support &lt;<a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>&gt;<br>
+<b>Subject:</b> [External] Re: Acontis Master Class B Hardware Feedback Delay Investigation</p>
+</div>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Hi Brian,</p>
+</div>
+<div>
+<div>
+<p> </p>
+</div>
+</div>
+<div>
+<div>
+<p>Can you please check the overview of the job tasks and the typical timing sequence for them as we are using them in the Class B demo application to make sure it aligns with your implementation?</p>
+</div>
+</div>
+<div>
+<div>
+<p> </p>
+</div>
+</div>
+<div>
+<div>
+<p><a href="https://usg02.safelinks.protection.office365.us/?url=http%3A%2F%2Fsoftware.acontis.com%2FDocuments%2FAT1020_V1.1_EC-Master-Technical.pdf&amp;data=05%7C01%7Cbchesko%40relativityspace.com%7C04a2e926e6f646d03da008dae29a2a81%7C95efb8391b3748d6a2017187831a1c9c%7C0%7C0%7C638071450348322381%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=zlUxlbKAB8djxvJ0jlFN8WX1LFrt4GyTnW%2BwL7S5V48%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://usg02.safelinks.protection.office365.us/?url=http%3A%2F%2Fsoftware.acontis.com%2FDocuments%2FAT1020_V1.1_EC-Master-Technical.pdf&amp;data=05%7C01%7Cbchesko%40relativityspace.com%7C04a2e926e6f646d03da008dae29a2a81%7C95efb8391b3748d6a2017187831a1c9c%7C0%7C0%7C638071450348322381%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=zlUxlbKAB8djxvJ0jlFN8WX1LFrt4GyTnW%2BwL7S5V48%3D&amp;reserved=0" target="_blank">http://software.acontis.com/Documents/AT1020_V1.1_EC-Master-Technical.pdf</a> (page 14 - 15)</p>
+</div>
+<div>
+<div>
+<p><br>
+<span>Jon Waters<br> General Manager<br> <br> acontis technologies Inc.<br> 945 Concord Street<br> Framingham, MA 01701<br> Phone: +1-508-809-7201</span></p>
+</div>
+</div>
+<div>
+<p> </p>
+<blockquote>
+<div>
+<div>
+<p>On Nov 23, 2022, at 2:27 PM, Brian Chesko &lt;<a href="mailto:bchesko@relativityspace.com">bchesko@relativityspace.com</a>&gt; wrote:</p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<div>
+<div>
+<p>Hi Jon,</p>
+</div>
+</div>
+<div>
+<div>
+<p> </p>
+</div>
+</div>
+<div>
+<div>
+<p>I hope all is well. We haven’t had a chance to work together since you sent over sources for the latest acontis software versions so thought this could be a good chance to reach out about something that’s been puzzling us.</p>
+</div>
+</div>
+<div>
+<div>
+<p> </p>
+</div>
+</div>
+<div>
+<div>
+<p>Our team is investigating the source of a cycle “delay” in our EtherCAT systems that we haven’t been able to make heads or tails of and I was hoping you might have some insight. In a nutshell, we’re noticing that at any set cycle time on the EC-master, writes to physical outputs seem to not be reflected in corresponding input values until 2 cycles following the write as opposed to the 1 cycle which should be expected per our current understanding. For example, a command is written on cycle 0 at 100 Hz (t = 0 ms), the feedback does not read in as changed until cycle 2 (t = 20 ms). If we increase cycle time to 100ms, feedback still takes until cycle 2 (t = 200 ms). Our specific testing set-up is using a Beckhoff CX5140 flashed with a low-latency Ubuntu kernel, EL2042 digital outputs, EL3174-0032 analog inputs, and EL1002 digital inputs, but has been consistent with other controllers as well.</p>
+</div>
+</div>
+<div>
+<div>
+<p> </p>
+</div>
+</div>
+<div>
+<div>
+<p>In case it was anything on our software, I went ahead and modified the bare EC-master class B demo that acontis provides to follow the state machine below. Please enjoy the artistry (blue boxes indicates a single work period):</p>
+</div>
+</div>
+<div>
+<div>
+<p> </p>
+</div>
+</div>
+<div>
+<div>
+<p>&lt;image001.png&gt;</p>
+</div>
+</div>
+<div>
+<div>
+<p> </p>
+</div>
+</div>
+<div>
+<div>
+<p>In this configuration, we still see the same behavior reproducibly. Swapping out the analog inputs for a digital input directly wired to the digital output sees no change either.</p>
+</div>
+</div>
+<div>
+<div>
+<p> </p>
+</div>
+</div>
+<div>
+<div>
+<p>Happy to set up a time to chat next week or whenever you’re available; I can send over the modified demo code as well.</p>
+</div>
+</div>
+<div>
+<div>
+<p> </p>
+</div>
+</div>
+<div>
+<div>
+<p>Let me know what you think or if anything pops out at you. Thanks!</p>
+</div>
+</div>
+<div>
+<div>
+<p> </p>
+</div>
+</div>
+<div>
+<div>
+<p> </p>
+</div>
+</div>
+<div>
+<div>
+<p>&lt;image002.png&gt;</p>
+</div>
+</div>
+<div>
+<div>
+<p><b><span style="color:#3600e0;">Brian Chesko</span></b><b> </b><b>| Software Automation Engineer</b></p>
+</div>
+</div>
+<div>
+<div>
+<p><b> </b></p>
+</div>
+</div>
+<div>
+<div>
+<p>Stennis Space Center, MS, 39529</p>
+</div>
+</div>
+<div>
+<div>
+<p>P | 609 658 5032</p>
+</div>
+</div>
+<div>
+<div>
+<p><span>E |<span style="color:#2500e0;"> </span></span><a href="mailto:bchesko@relativityspace.com"><span style="color:#0563c1;">bchesko@relativityspace.com</span></a></p>
+</div>
+</div>
+<div>
+<div>
+<p>W | <a href="http://www.relativityspace.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">www.relativityspace.com</span></a></p>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+</div>
+<div>
+<p>WARNING: This message was sent by an external party. Send suspicious messages to <a href="mailto:securityalerts@relativityspace.com">securityalerts@relativityspace.com</a></p>
+</div>
+</div>
+</blockquote>
+</div>
+<p> </p>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<p> </p>
+</div>
+</div>

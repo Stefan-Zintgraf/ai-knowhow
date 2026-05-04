@@ -1,0 +1,138 @@
+### HEADER
+Id=2365
+Link=http://at-zammad/#ticket/zoom/2365
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=FANUC, EtherCAT model CNC (ID=487, Number=487)
+Number=702365
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=31.01.2022 05:19:51 +00:00
+UpdatedAt=12.12.2023 13:52:34 +00:00
+CloseAt=31.01.2022 08:22:47 +00:00
+ArticlesCount=2
+
+### TITLE
+Question about EC-Engineer + EC-Simulator (FANUC)
+
+### ARTICLE00_HEADER
+Id=12471
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=31.01.2022 05:19:51 +00:00
+UpdatedAt=31.01.2022 05:19:53 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Engineer + EC Simurator (FANUC)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Engineer + EC Simurator (FANUC)
+
+About "EC-Simulator-HiL-V3.1-Windows-x86_64Bit-Eval.zip" provided on 1/11.
+Please tell me how to use the EC-Engineer SDK and Simulator in combination.
+
+I ran the command line with the EXI file created by the EC-Engineer SDK, but I get an OEM key error.
+　|C:\Program Files\acontis_technologies\EC-Simulator-HiL-Windows-x86_64Bit\Bin\Windows\x64 >
+　|"EcSimulatorHilDemo.exe -Ndis 192.168.1.200 1 -f EXI.xml -t 0 -v 3"
+   |ERROR: Cannot configure EtherCAT network: ERROR loading encrypted ENI needs OEM key set (ecatSetOemKey) (0x9813000a))
+
+I also tried adding SetOEMKey() and build it, but it doesn't contain the required files.
+ >C:\Program Files\acontis_technologies\EC-Simulator-HiL-Windows-x86_64Bit\Workspace\WindowsVS2010\EcSimulatorHilDemo\EcSimulatorHilDemo.vcxproj
+The properties of this project include the additional library directory "..\..\..\SDK\LIB\Windows\x86".
+However, the installed folder only exists in "C:\Program Files\acontis_technologies\EC-Simulator-HiL-Windows-x86_64Bit\SDK\LIB\Windows\x64". "x86" doesn't exist.
+Even if I change the additional library directory to "..\..\..\SDK\LIB\Windows\x64", build error occurs.
+
+When I tried SiL before, I used the evaluation version of EC-Engineer. In this time, the evaluation version of EC-Engineer cannot be used because OEM is required for FANUC's EC-Master. I need to use the ENI & EXI file created by the EC-Engineer SDK.
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=12484
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.01.2022 08:22:48 +00:00
+UpdatedAt=31.01.2022 08:22:51 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Engineer + EC Simurator (FANUC)
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div><b><u>Visual Studio</u></b></div><div><br></div><div>I think the SDK contains the required files. <span>In Visual Studio, don't modify project settings, but please select platform "x64" from within the IDE for </span><span>EC-Simulator HiL Windows x86_<b>64Bit</b> as you are running 64Bit, not 32Bit (it's the same project for both packages):</span>
+</div><div><span><br></span></div><div>
+<img style="max-width:100%;width: 647px;max-width: 100%;" src="/api/v1/ticket_attachment/2365/12484/48769?view=inline"><br>
+</div><div><br></div><div>
+<div>In Debug settings of your project, please add the installation bin folder with needed DLLs to the PATH environment variable:</div>
+<div>
+<br>
+</div>
+</div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/2365/12484/48770?view=inline"><br>
+</div><div><br></div><div><br></div><div><b><u>OEM-Key</u></b></div><div><b><u><br></u></b></div><div>
+<div>If you don't have the OEM-key, please load the <b>same .ecc</b> file to an EC-Engineer without OEM protection to export the ENI/EXI so it contains the same settings, but without encryption.</div>
+<div><br></div>
+</div><div>
+<span>- </span><b>HiL: </b><span>If you have the the OEM-key and you are using </span><b>HiL</b><span>, please call esSetOemKey before esConfigureNetwork.</span>
+</div><div><span><br></span></div><div>- <b>SiL: </b><span>If you have the the OEM-key and you are using </span><b>SiL</b><span>, please set </span><span style=" color: rgb(51, 51, 51);">EC_T_LINK_PARMS_SIMULATOR::qwOemKey </span><span>given at pLinkParms of ecatInitMaster.</span>
+</div><div><span><br></span></div><div>
+<span>Best regards,</span><br>
+</div><div>Paul<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Montag, 31. Januar 2022, 06:19:51, schrieb Takuya Fujikawa:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Engineer + EC Simurator (FANUC)</div>
+<div><br></div>
+<div>About "EC-Simulator-HiL-V3.1-Windows-x86_64Bit-Eval.zip" provided on 1/11.</div>
+<div>Please tell me how to use the EC-Engineer SDK and Simulator in combination.</div>
+<div><br></div>
+<div>I ran the command line with the EXI file created by the EC-Engineer SDK, but I get an OEM key error.</div>
+<div>　|C:\Program Files\acontis_technologies\EC-Simulator-HiL-Windows-x86_64Bit\Bin\Windows\x64 &gt;</div>
+<div>　|"EcSimulatorHilDemo.exe -Ndis <a href="http://192.168.1.200" title="http://192.168.1.200" rel="nofollow noreferrer noopener" target="_blank">192.168.1.200</a> 1 -f EXI.xml -t 0 -v 3"</div>
+<div>   |ERROR: Cannot configure EtherCAT network: ERROR loading encrypted ENI needs OEM key set (ecatSetOemKey) (0x9813000a))</div>
+<div><br></div>
+<div>I also tried adding SetOEMKey() and build it, but it doesn't contain the required files.</div>
+<div> &gt;C:\Program Files\acontis_technologies\EC-Simulator-HiL-Windows-x86_64Bit\Workspace\WindowsVS2010\EcSimulatorHilDemo\EcSimulatorHilDemo.vcxproj</div>
+<div>The properties of this project include the additional library directory "..\..\..\SDK\LIB\Windows\x86".</div>
+<div>However, the installed folder only exists in "C:\Program Files\acontis_technologies\EC-Simulator-HiL-Windows-x86_64Bit\SDK\LIB\Windows\x64". "x86" doesn't exist.</div>
+<div>Even if I change the additional library directory to "..\..\..\SDK\LIB\Windows\x64", build error occurs.</div>
+<div><br></div>
+<div>When I tried SiL before, I used the evaluation version of EC-Engineer. In this time, the evaluation version of EC-Engineer cannot be used because OEM is required for FANUC's EC-Master. I need to use the ENI &amp; EXI file created by the EC-Engineer SDK.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

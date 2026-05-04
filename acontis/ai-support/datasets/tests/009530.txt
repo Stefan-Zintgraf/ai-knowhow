@@ -1,0 +1,141 @@
+### HEADER
+Id=9530
+Link=http://at-zammad/#ticket/zoom/9530
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=709530
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=12.12.2024 14:22:06 +00:00
+UpdatedAt=07.01.2025 07:10:35 +00:00
+CloseAt=07.01.2025 07:10:35 +00:00
+ArticlesCount=2
+
+### TITLE
+About the conditions for using APIs in Diagnosis Mode Slave General [QNo.110]
+
+### ARTICLE00_HEADER
+Id=54111
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.12.2024 14:22:06 +00:00
+UpdatedAt=12.12.2024 14:22:10 +00:00
+
+### ARTICLE00_SUBJECT
+About the conditions for using APIs in Diagnosis Mode Slave General [QNo.110]
+
+### ARTICLE00_BODY
+<div>
+<div>Hi Support Team,</div>
+<div> </div>
+<div>This question is from Mitsubishi (commission No. 40627).</div>
+</div><div> </div><div>What are the conditions for using the following APIs in Diagnosis Mode Slave General?</div><div> </div><div>(1) EcSlave. IsSlaveConfigured ()</div><div>What are the conditions under which the Init button is disabled?</div><div>(When the value of EcSlave. IsSlaveConfigured () is false)</div><div> </div><div>(2)</div><div>The message displayed about the error content of "State Machine Error" is not described in ECAT_Main.xml or ECAT_Base.xml. Are these messages described in the EtherCAT protocol specification: "ETG.1020 Protocol Enhancements 4 - Description of AL Status Codes"?</div><div>(Message content of slave.SoftwareError.Name)</div><div> </div><div>(3) EcDeviceDiagDiagnostic.AcknowledgeSlaveWarnings()</div><div>What are the conditions under which the error acknowledgement process fails when the "Acknowledge" button is pressed, and what is the message when it occurs?</div><div>(Message contents of EcDeviceDiagDiagnostic.AcknowledgeSlaveWarnings())</div><div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">
+<img alt="PastedGraphic-2.png" src="/api/v1/ticket_attachment/9530/54111/224148?view=inline" style="max-width:100%;">
+</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">Best regards,</div>
+<div dir="auto">Yuichi</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=54115
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.12.2024 14:56:07 +00:00
+UpdatedAt=12.12.2024 14:56:08 +00:00
+
+### ARTICLE01_SUBJECT
+About the conditions for using APIs in Diagnosis Mode Slave General [QNo.110]
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>(1): If the slave is not configured, that means the slave is not in the configuration (ENI) which is loaded by the master</div><div><br></div><div>(2): Yes they are specified in this specification</div><div> </div><div>(3): This will not fail. There is no error message. Acknoledge does just resets the warning and error icons. Not the counters itself. So it will just have an effect on our icons</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, December 12, 2024 at 3:22:06 PM, Yuichi Ide wrote:<br><br><div>
+<div>Hi Support Team,</div>
+<div> </div>
+<div>This question is from Mitsubishi (commission No. 40627).</div>
+</div>
+<div> </div>
+<div>What are the conditions for using the following APIs in Diagnosis Mode Slave General?</div>
+<div> </div>
+<div>(1) EcSlave. IsSlaveConfigured ()</div>
+<div>What are the conditions under which the Init button is disabled?</div>
+<div>(When the value of EcSlave. IsSlaveConfigured () is false)</div>
+<div> </div>
+<div>(2)</div>
+<div>The message displayed about the error content of "State Machine Error" is not described in ECAT_Main.xml or ECAT_Base.xml. Are these messages described in the EtherCAT protocol specification: "ETG.1020 Protocol Enhancements 4 - Description of AL Status Codes"?</div>
+<div>(Message content of slave.SoftwareError.Name)</div>
+<div> </div>
+<div>(3) EcDeviceDiagDiagnostic.AcknowledgeSlaveWarnings()</div>
+<div>What are the conditions under which the error acknowledgement process fails when the "Acknowledge" button is pressed, and what is the message when it occurs?</div>
+<div>(Message contents of EcDeviceDiagDiagnostic.AcknowledgeSlaveWarnings())</div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">
+<img alt="PastedGraphic-2.png" src="/api/v1/ticket_attachment/9530/54115/224155?view=inline" style="max-width:100%;max-width:100%;">
+</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">Best regards,</div>
+<div dir="auto">Yuichi</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

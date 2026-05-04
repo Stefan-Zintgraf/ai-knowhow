@@ -1,0 +1,183 @@
+### HEADER
+Id=5215
+Link=http://at-zammad/#ticket/zoom/5215
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Eaton (ID=450, Number=0, Country=US)
+Commission=Eaton, BP2 (ID=528, Number=528)
+Number=705215
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=jefferyjpankau@eaton.com (ID=1778, FirstName=Jeff, LastName=Pankau)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=23.03.2023 01:37:40 +00:00
+UpdatedAt=07.04.2023 06:07:15 +00:00
+CloseAt=07.04.2023 06:07:15 +00:00
+ArticlesCount=3
+
+### TITLE
+Fwd: Reserved bytes
+
+### ARTICLE00_HEADER
+Id=27630
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.03.2023 01:37:40 +00:00
+UpdatedAt=23.03.2023 01:37:40 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Reserved bytes
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>Can you please help with a response to Jeff at Eaton? I will be out Thursday and Friday.<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>"Pankau, Jeffery J" &lt;JefferyJPankau@Eaton.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Reserved bytes</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>March 22, 2023 at 5:33:04 PM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>"j.waters@acontis.com" &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<br><div>
+<div>Jon,</div>
+<div><p> </p></div>
+<div>It looks like there are reserved bytes in the input data. What is that for? Possibly to keep the offset the same between the input and output map?</div>
+<div><p> </p></div>
+<div>Thanks,</div>
+<div>Jeff</div>
+<div><p> </p></div>
+<div><p> </p></div>
+<div>
+<img alt="image001.png" src="/api/v1/ticket_attachment/5215/27630/116712?view=inline" style="max-width:100%;">
+</div>
+<div><p> </p></div>
+<div><img alt="image002.png" src="/api/v1/ticket_attachment/5215/27630/116713?view=inline" style="max-width:100%;"></div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=27641
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.03.2023 09:33:36 +00:00
+UpdatedAt=23.03.2023 09:33:40 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: Reserved bytes
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>to start the next variable on a byte offset. And not on e.g. 12.4. In this case we add 4 padding bits to start the next variable on offset 13.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, March 23, 2023 at 2:37:40 AM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>Can you please help with a response to Jeff at Eaton? I will be out Thursday and Friday.<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>"Pankau, Jeffery J" &lt;JefferyJPankau@Eaton.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Reserved bytes</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>March 22, 2023 at 5:33:04 PM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>"j.waters@acontis.com" &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<br><div>
+<div>Jon,</div>
+<div><p> </p></div>
+<div>It looks like there are reserved bytes in the input data. What is that for? Possibly to keep the offset the same between the input and output map?</div>
+<div><p> </p></div>
+<div>Thanks,</div>
+<div>Jeff</div>
+<div><p> </p></div>
+<div><p> </p></div>
+<div>
+<img alt="image001.png" src="/api/v1/ticket_attachment/5215/27641/116743?view=inline" style="max-width:100%;max-width:100%;">
+</div>
+<div><p> </p></div>
+<div><img alt="image002.png" src="/api/v1/ticket_attachment/5215/27641/116744?view=inline" style="max-width:100%;max-width:100%;"></div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=27775
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.03.2023 15:46:54 +00:00
+UpdatedAt=27.03.2023 16:11:32 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Reserved bytes
+
+### ARTICLE02_BODY
+Hi Jeff,<div> </div><div>This is so that the next variable starts on a byte offset, and not on 12.4, for example. In this case we add 4 padding bits to start the next variable on offset 13.</div><div>
+<div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Mar 22, 2023, at 5:33 PM, Pankau, Jeffery J &lt;JefferyJPankau@Eaton.com&gt; wrote:</div>
+<br><div>
+<div>Jon,</div>
+<div><p> </p></div>
+<div>It looks like there are reserved bytes in the input data. What is that for? Possibly to keep the offset the same between the input and output map?</div>
+<div><p> </p></div>
+<div>Thanks,</div>
+<div>Jeff</div>
+<div><p> </p></div>
+<div><p> </p></div>
+<div>
+<img alt="image001.png" src="/api/v1/ticket_attachment/5215/27775/117363?view=inline" style="max-width:100%;">
+</div>
+<div><p> </p></div>
+<div><img alt="image002.png" src="/api/v1/ticket_attachment/5215/27775/117364?view=inline" style="max-width:100%;"></div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

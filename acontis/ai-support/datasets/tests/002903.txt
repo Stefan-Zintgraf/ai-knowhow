@@ -1,0 +1,247 @@
+### HEADER
+Id=2903
+Link=http://at-zammad/#ticket/zoom/2903
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=702903
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=26.04.2022 00:44:02 +00:00
+UpdatedAt=25.05.2022 15:27:43 +00:00
+CloseAt=25.05.2022 15:27:43 +00:00
+ArticlesCount=3
+
+### TITLE
+emDcsGetStatus documentation suggestions
+
+### ARTICLE00_HEADER
+Id=15320
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.04.2022 00:44:03 +00:00
+UpdatedAt=26.04.2022 00:44:07 +00:00
+
+### ARTICLE00_SUBJECT
+emDcsGetStatus documentation suggestions
+
+### ARTICLE00_BODY
+<div>
+<p>Here are some recommendations for improvements to the documentation for emDcmGetStatus() (<a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm_api.html#emdcmgetstatus" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm_api.html#emdcmgetstatus</a>).</p>
+<p> </p>
+<p>Mainly, I think it could be improved to be clearer about how it behaves for each of the DCM modes, which in general look like this:</p>
+<p> </p>
+<ol start="1" type="1">
+<li>
+<b>BusShift</b> and <b>MasterShift</b> always return EC_E_NOERROR, but may have an error code in *pdwErrorCode. It would be nice if this was documented as such. I find it confusing that the documentation for pdwErrorCode refers to below in the return values. I recommend keeping return values and *pdwErrorCode values separate.<p></p>
+</li>
+<li>
+<b>MasterRefClock</b> can return different values, but does not modify *pdwErrorCode. It should be documented that pdwErrorCode shall not be used for MasterRefClock mode. It also would be good to clearly document which return values can be seen in this mode, separate from what values can appear in *pdwErrorCode. <p></p>
+</li>
+<li>
+<b>LinkLayerRefClock</b> (and others?) always returns EC_E_NOTSUPPORTED. This behavior should be documented.<p></p>
+</li>
+</ol> <p> </p>
+<p>That is, which DCM mode is selected greatly affects how the caller should use this function, so it seems like that would be good to document.</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com/" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=15421
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.04.2022 13:32:22 +00:00
+UpdatedAt=28.04.2022 13:32:26 +00:00
+
+### ARTICLE01_SUBJECT
+emDcsGetStatus documentation suggestions
+
+### ARTICLE01_BODY
+Hello Mr. <span>Quinton Tormanen,</span><div><br></div><div>thank you very much. We had a look in our implementation and documentation and we will improve both. In the MasterRefClock case we will return the error/status codes in same sense as in BusShift and MasterShift mode. The documentation will be improved so that also the corner cases are better addressed.</div><div><br></div><div>Best regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Timo Nußbaumer </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>-</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>-</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, April 26, 2022, 2:44:03 AM, Quinton Tormanen wrote:<br><br><div>
+<p>Here are some recommendations for improvements to the documentation for emDcmGetStatus() (<a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm_api.html#emdcmgetstatus" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm_api.html#emdcmgetstatus</a>).</p>
+<p> </p>
+<p>Mainly, I think it could be improved to be clearer about how it behaves for each of the DCM modes, which in general look like this:</p>
+<p> </p>
+<ol start="1" type="1">
+<li>
+<b>BusShift</b> and <b>MasterShift</b> always return EC_E_NOERROR, but may have an error code in *pdwErrorCode. It would be nice if this was documented as such. I find it confusing that the documentation for pdwErrorCode refers to below in the return values. I recommend keeping return values and *pdwErrorCode values separate.<p></p>
+</li>
+<li>
+<b>MasterRefClock</b> can return different values, but does not modify *pdwErrorCode. It should be documented that pdwErrorCode shall not be used for MasterRefClock mode. It also would be good to clearly document which return values can be seen in this mode, separate from what values can appear in *pdwErrorCode. <p></p>
+</li>
+<li>
+<b>LinkLayerRefClock</b> (and others?) always returns EC_E_NOTSUPPORTED. This behavior should be documented.<p></p>
+</li>
+</ol> <p> </p>
+<p>That is, which DCM mode is selected greatly affects how the caller should use this function, so it seems like that would be good to document.</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com/" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=15432
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.04.2022 21:34:22 +00:00
+UpdatedAt=28.04.2022 21:34:22 +00:00
+
+### ARTICLE02_SUBJECT
+RE: emDcsGetStatus documentation suggestions [Ticket#702903]
+
+### ARTICLE02_BODY
+<div>
+<p>Thank you.</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p>--Quinton</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Timo Nußbaumer via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Thursday, April 28, 2022 6:32 AM<br>
+<b>To:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: emDcsGetStatus documentation suggestions [Ticket#702903]</p>
+</div>
+</div>
+<p> </p>
+<p>Hello Mr. Quinton Tormanen,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>thank you very much. We had a look in our implementation and documentation and we will improve both. In the MasterRefClock case we will return the error/status codes in same sense as in BusShift and MasterShift mode. The documentation will be improved so that also the corner cases are better addressed.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best regards,</p>
+</div>
+<div>
+<div>
+<div>
+<p>____________________________________________________________________________</p>
+</div>
+<div>
+<p>Timo Nußbaumer</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>acontis technologies GmbH</p>
+</div>
+</div>
+<div>
+<p>Address: -</p>
+</div>
+<div>
+<p>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com</a> </p>
+</div>
+<div>
+<p>Phone: -</p>
+</div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a></p>
+</div>
+<div>
+<p>----------------------------------------------------------------------------</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</p>
+</div>
+<div>
+<p><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Tuesday, April 26, 2022, 2:44:03 AM, Quinton Tormanen wrote:</p>
+<div>
+<p>Here are some recommendations for improvements to the documentation for emDcmGetStatus() (<a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm_api.html#emdcmgetstatus" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/dcm_api.html#emdcmgetstatus</a>).</p>
+<p> </p>
+<p>Mainly, I think it could be improved to be clearer about how it behaves for each of the DCM modes, which in general look like this:</p>
+<p> </p>
+<ol start="1" type="1">
+<li>
+<b>BusShift</b> and <b>MasterShift</b> always return EC_E_NOERROR, but may have an error code in *pdwErrorCode. It would be nice if this was documented as such. I find it confusing that the documentation for pdwErrorCode refers to below in the return values. I recommend keeping return values and *pdwErrorCode values separate.</li>
+<li>
+<b>MasterRefClock</b> can return different values, but does not modify *pdwErrorCode. It should be documented that pdwErrorCode shall not be used for MasterRefClock mode. It also would be good to clearly document which return values can be seen in this mode, separate from what values can appear in *pdwErrorCode. </li>
+<li>
+<b>LinkLayerRefClock</b> (and others?) always returns EC_E_NOTSUPPORTED. This behavior should be documented.</li>
+</ol>
+<p> </p>
+<p>That is, which DCM mode is selected greatly affects how the caller should use this function, so it seems like that would be good to document.</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com/" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

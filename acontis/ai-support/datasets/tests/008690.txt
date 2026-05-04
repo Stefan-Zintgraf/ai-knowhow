@@ -1,0 +1,115 @@
+### HEADER
+Id=8690
+Link=http://at-zammad/#ticket/zoom/8690
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=KLA-Tencor Corporation (ID=186, Number=55013, Country=IL)
+Commission=KLA, PSG (ID=225, Number=225)
+Number=708690
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=fathallah.haj@kla.com (ID=2770, FirstName=Fathallah, LastName=Haj)
+CreatedBy=fathallah.haj@kla.com (ID=2770, FirstName=Fathallah, LastName=Haj)
+Type=
+TimeUnit=
+CreatedAt=19.08.2024 14:55:49 +00:00
+UpdatedAt=06.09.2024 06:07:40 +00:00
+CloseAt=06.09.2024 06:07:40 +00:00
+ArticlesCount=2
+
+### TITLE
+Installation of Acontis EC Master on Linux OS
+
+### ARTICLE00_HEADER
+Id=48773
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.08.2024 14:55:49 +00:00
+UpdatedAt=19.08.2024 14:55:49 +00:00
+
+### ARTICLE00_SUBJECT
+Installation of Acontis EC Master on Linux OS
+
+### ARTICLE00_BODY
+<p> </p><div> <p>Hi,</p>
+<p> </p>
+<p>We’re looking to install both EC-Master-V3.2-Linux-x86_64Bit-Eval.tar.gz and EC-Master-ClassA-AddOn-V3.2-Linux-x86_64Bit-Eval.tar.gz in our Linux system. What’s the best practice for installing them? What’s the path for installation? Is there a guide I can follow for instructions? I saw some Docs but none of them describe how to do that.</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p> <b><span style="color:#41007f;">Fathallah Haj</span></b></p>
+<p> <span style="color:#5a5a64;">DevOps Engineer</span></p>
+<p> <b><span style="color:#5a5a64;">O</span></b><span style="color:#5a5a64;">ptical <b>M</b>etrology <b>D</b>ivision</span></p>
+<p> <b><span style="color:#00a7e1;">W</span></b><span style="color:#5a5a64;"> +972545964855</span><b><span style="color:#00a7e1;"> M</span></b><span style="color:#5a5a64;"> +972545964855</span></p>
+<p> <span style="color:#5a5a64;"><p> </p></span></p>
+<p><span style="color:#5a5a64;"><img style="max-width:100%;width:1.927in;max-height:.4895in;width:185px;max-height:47px;" src="/api/v1/ticket_attachment/8690/48773/202341?view=inline"></span><span style="color:#5a5a64;"></span></p>
+<p><span style="color:#5a5a64;"><p> </p></span></p>
+<p> <span style="color:#9b9ba0;">Please consider the environment before printing this e-mail.</span></p>
+<p> </p>
+</div><div> <br> <span style=" color:#9b9ba0;">CONFIDENTIALITY NOTICE: This email transmission, and any documents, files or previous email messages attached to it, may contain confidential information. If you are not the intended recipient or a person responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying, distribution or use of any of the information contained in or attached to this message is STRICTLY PROHIBITED. If you have received this transmission in error, please immediately destroy the original transmission and its attachments without reading them or saving them to disk. Email communications may be monitored by KLA as permitted by applicable law and regulations. For more information, read our Privacy Policy at </span><span style=" color:#00a7e1;"><a href="http://www.kla.com/privacy-policy" rel="nofollow noreferrer noopener" title="http://www.kla.com/privacy-policy" target="_blank">www.kla.com/privacy-policy.</a></span> <span style=" color:#9b9ba0;"> Thank you.</span>
+</div>
+
+### ARTICLE01_HEADER
+Id=48776
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.08.2024 15:13:50 +00:00
+UpdatedAt=19.08.2024 15:13:57 +00:00
+
+### ARTICLE01_SUBJECT
+Installation of Acontis EC Master on Linux OS
+
+### ARTICLE01_BODY
+Hi Fathallah,<div><br></div><div>There are no specific location where you need to unpack the packages. Both have to be merged together in a single folder.</div><div><br></div><div>
+<div>Here are some information related to Linux:</div>
+<div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/os_linux.html#os-linux--page-root" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/os_linux.html#os-linux--page-root" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/os_linux.html#os-linux--page-root</a></div>
+</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/os_linux.html#setting-up-and-running-ecmasterdemo" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/os_linux.html#setting-up-and-running-ecmasterdemo" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/os_linux.html#setting-up-and-running-ecmasterdemo</a></div></div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, August 19, 2024 at 4:55:49 PM, Fathallah Haj wrote:<br><br><p> </p>
+<div> <p>Hi,</p>
+<p> </p>
+<p>We’re looking to install both EC-Master-V3.2-Linux-x86_64Bit-Eval.tar.gz and EC-Master-ClassA-AddOn-V3.2-Linux-x86_64Bit-Eval.tar.gz in our Linux system. What’s the best practice for installing them? What’s the path for installation? Is there a guide I can follow for instructions? I saw some Docs but none of them describe how to do that.</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p> <b><span style="color:#41007f;">Fathallah Haj</span></b></p>
+<p> <span style="color:#5a5a64;">DevOps Engineer</span></p>
+<p> <b><span style="color:#5a5a64;">O</span></b><span style="color:#5a5a64;">ptical <b>M</b>etrology <b>D</b>ivision</span></p>
+<p> <b><span style="color:#00a7e1;">W</span></b><span style="color:#5a5a64;"> +972545964855</span><b><span style="color:#00a7e1;"> M</span></b><span style="color:#5a5a64;"> +972545964855</span></p>
+<p> <span style="color:#5a5a64;"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:#5a5a64;"><img style="max-width:100%;max-width:100%;width:1.927in;max-height:.4895in;width:185px;max-height:47px;" src="/api/v1/ticket_attachment/8690/48776/202344?view=inline"></span><span style="color:#5a5a64;"></span></p>
+<p><span style="color:#5a5a64;"></span></p>
+<p> </p>
+<p></p>
+<p> <span style="color:#9b9ba0;">Please consider the environment before printing this e-mail.</span></p>
+<p> </p>
+</div>
+<div> <br> <span style=" color:#9b9ba0;">CONFIDENTIALITY NOTICE: This email transmission, and any documents, files or previous email messages attached to it, may contain confidential information. If you are not the intended recipient or a person responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying, distribution or use of any of the information contained in or attached to this message is STRICTLY PROHIBITED. If you have received this transmission in error, please immediately destroy the original transmission and its attachments without reading them or saving them to disk. Email communications may be monitored by KLA as permitted by applicable law and regulations. For more information, read our Privacy Policy at </span><span style=" color:#00a7e1;"><a href="http://www.kla.com/privacy-policy" rel="nofollow noreferrer noopener" title="http://www.kla.com/privacy-policy" target="_blank">www.kla.com/privacy-policy.</a></span> <span style=" color:#9b9ba0;"> Thank you.</span>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

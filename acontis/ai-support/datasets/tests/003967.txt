@@ -1,0 +1,157 @@
+### HEADER
+Id=3967
+Link=http://at-zammad/#ticket/zoom/3967
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OSAIcnc S.r.l. (ID=195, Number=57504, Country=IT)
+Commission=OSAIcnc S.r.l., OPENcontrol WinCE (ID=234, Number=234)
+Number=703967
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=gianluca.pasqualotto@osaicnc.com (ID=41, FirstName=Gianluca, LastName=Pasqualotto)
+CreatedBy=gianluca.pasqualotto@osaicnc.com (ID=41, FirstName=Gianluca, LastName=Pasqualotto)
+Type=
+TimeUnit=
+CreatedAt=23.09.2022 09:14:06 +00:00
+UpdatedAt=30.09.2022 06:11:41 +00:00
+CloseAt=30.09.2022 06:11:41 +00:00
+ArticlesCount=2
+
+### TITLE
+Ec-Engineer question #89
+
+### ARTICLE00_HEADER
+Id=21022
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.09.2022 09:14:06 +00:00
+UpdatedAt=23.09.2022 09:14:11 +00:00
+
+### ARTICLE00_SUBJECT
+Ec-Engineer question #89
+
+### ARTICLE00_BODY
+<div>
+<p>Dear EC Support,</p>
+<p> </p>
+<p><span lang="EN-GB">We are noting a WRN message when using drives with modules:</span></p>
+<p><span lang="EN-GB"><p> </p></span></p>
+<p><img style="max-width:100%;width:10.925in;max-height:7.8083in;width:1049px;max-height:750px;" src="/api/v1/ticket_attachment/3967/21022/87217?view=inline"></p>
+<p> </p>
+<p><span lang="EN-GB">Is the message correct in case of drives ? </span></p>
+<p><span lang="EN-GB">Should not be displayed only in case of I/O ?</span></p>
+<p><span lang="EN-GB">Is there any specification ? Thanks.</span></p>
+<p><span lang="EN-GB"><p> </p></span></p>
+<p><span lang="EN-GB">Best Regards,</span></p>
+<p><span lang="EN-GB">Gianluca</span></p>
+<p><span lang="EN-GB"><p> </p></span></p>
+<p><span lang="EN-GB"><p> </p></span></p>
+<p><img style="max-width:100%;width:1.4916in;max-height:.4583in;width:143px;max-height:44px;" src="/api/v1/ticket_attachment/3967/21022/87218?view=inline"></p>
+<p><b><span lang="EN-US" style="color:#dc006b;">Gianluca Pasqualotto</span></b></p>
+<p><span lang="EN-US" style="color:#616365;">R&amp;D - CNC/Servo Software Development Senior Engineer</span><span lang="EN-US" style="color:#616365;"> </span></p>
+<p><span style="color:#616365;">Ufficio +39 0125 190 6267</span></p>
+<p><span style="color:#616365;">Mobile +39 335 699 7678</span></p>
+<p><span style="color:#616265;"><p> </p></span></p>
+<p><span style="color:#616265;">OSAIcnc s.r.l.</span></p>
+<p><span style="color:#616265;">Sede Legale e Operativa: Via Jervis, 11 – 10015 Ivrea (TO) Italia</span></p>
+<p><span style="color:#616265;">Sede Logistica: Via Torino, 14 – 10010 Barone Canavese (TO) Italia</span></p>
+<p><span style="color:#616265;">Indirizzo PEC: </span><a href="mailto:osaicncsrl@pec.osaicncsrl.it"><span style="color:#dc006b;">osaicncsrl@pec.osaicncsrl.it</span></a><span style="color:#616265;"> </span></p>
+<p><span style="color:#dc006b;"><a href="http://www.osaicnc.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">www.osaicnc.com</span></a></span></p>
+<p><span style="color:#616365;"><p> </p></span></p>
+<p><span style="color:#616365;">Questo messaggio e i suoi allegati sono indirizzati esclusivamente ai destinatari. La diffusione, copia o qualsiasi altra azione derivante dalla conoscenza di queste informazioni sono rigorosamente vietate. Qualora abbiate ricevuto questo messaggio per errore siete invitati a comunicarlo al mittente e a provvedere alla sua distruzione.</span></p>
+<p><i><span lang="EN-US" style="color:#616365;">This e-mail and any attachments are confidential and may contain privileged information intended for the addressee(s) only. Dissemination, copying, printing or use by anybody else is unauthorized. If you are not the intended recipient, please delete this message and any attachments and advise the sender by return e-mail.</span></i><span lang="EN-GB"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span style="color:#dc006b;">P</span><span lang="EN-US" style="color:#dc006b;"> </span><i><span lang="EN-US" style="color:#dc006b;">Please consider the environment before printing!</span></i></p>
+<p><span lang="EN-GB"><p> </p></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=21028
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.09.2022 10:22:29 +00:00
+UpdatedAt=23.09.2022 10:22:30 +00:00
+
+### ARTICLE01_SUBJECT
+Ec-Engineer question #89
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>in the old Spec this was mandatory. It is not mandatory anymore and is already removed from EC-Engineer. It will be different in future versions.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/3967/21028/87268?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, September 23, 2022 at 11:14:06 AM, Gianluca Pasqualotto wrote:<br><br><div>
+<p>Dear EC Support,</p>
+<p> </p>
+<p><span lang="EN-GB">We are noting a WRN message when using drives with modules:</span></p>
+<p><span lang="EN-GB"></span></p>
+<p> </p>
+<p></p>
+<p><img style="max-width:100%;max-width:100%;width:10.925in;max-height:7.8083in;width:1049px;max-height:750px;" src="/api/v1/ticket_attachment/3967/21028/87269?view=inline"></p>
+<p> </p>
+<p><span lang="EN-GB">Is the message correct in case of drives ? </span></p>
+<p><span lang="EN-GB">Should not be displayed only in case of I/O ?</span></p>
+<p><span lang="EN-GB">Is there any specification ? Thanks.</span></p>
+<p><span lang="EN-GB"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-GB">Best Regards,</span></p>
+<p><span lang="EN-GB">Gianluca</span></p>
+<p><span lang="EN-GB"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-GB"></span></p>
+<p> </p>
+<p></p>
+<p><img style="max-width:100%;max-width:100%;width:1.4916in;max-height:.4583in;width:143px;max-height:44px;" src="/api/v1/ticket_attachment/3967/21028/87270?view=inline"></p>
+<p><b><span lang="EN-US" style="color:#dc006b;">Gianluca Pasqualotto</span></b></p>
+<p><span lang="EN-US" style="color:#616365;">R&amp;D - CNC/Servo Software Development Senior Engineer</span><span lang="EN-US" style="color:#616365;"> </span></p>
+<p><span style="color:#616365;">Ufficio +39 0125 190 6267</span></p>
+<p><span style="color:#616365;">Mobile +39 335 699 7678</span></p>
+<p><span style="color:#616265;"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:#616265;">OSAIcnc s.r.l.</span></p>
+<p><span style="color:#616265;">Sede Legale e Operativa: Via Jervis, 11 – 10015 Ivrea (TO) Italia</span></p>
+<p><span style="color:#616265;">Sede Logistica: Via Torino, 14 – 10010 Barone Canavese (TO) Italia</span></p>
+<p><span style="color:#616265;">Indirizzo PEC: </span><a href="mailto:osaicncsrl@pec.osaicncsrl.it"><span style="color:#dc006b;">osaicncsrl@pec.osaicncsrl.it</span></a><span style="color:#616265;"> </span></p>
+<p><span style="color:#dc006b;"><a href="http://www.osaicnc.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">www.osaicnc.com</span></a></span></p>
+<p><span style="color:#616365;"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:#616365;">Questo messaggio e i suoi allegati sono indirizzati esclusivamente ai destinatari. La diffusione, copia o qualsiasi altra azione derivante dalla conoscenza di queste informazioni sono rigorosamente vietate. Qualora abbiate ricevuto questo messaggio per errore siete invitati a comunicarlo al mittente e a provvedere alla sua distruzione.</span></p>
+<p><i><span lang="EN-US" style="color:#616365;">This e-mail and any attachments are confidential and may contain privileged information intended for the addressee(s) only. Dissemination, copying, printing or use by anybody else is unauthorized. If you are not the intended recipient, please delete this message and any attachments and advise the sender by return e-mail.</span></i><span lang="EN-GB"></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:#dc006b;">P</span><span lang="EN-US" style="color:#dc006b;"> </span><i><span lang="EN-US" style="color:#dc006b;">Please consider the environment before printing!</span></i></p>
+<p><span lang="EN-GB"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,206 @@
+### HEADER
+Id=5460
+Link=http://at-zammad/#ticket/zoom/5460
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Sunrise (ID=815, Number=0, Country=CH)
+Commission=Acontis, Generic (ID=590, Number=590)
+Number=705460
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=stefan.imhof@sunrise.ch (ID=1897, FirstName=Stefan, LastName=Imhof)
+CreatedBy=stefan.imhof@sunrise.ch (ID=1897, FirstName=Stefan, LastName=Imhof)
+Type=
+TimeUnit=
+CreatedAt=25.04.2023 12:07:54 +00:00
+UpdatedAt=21.03.2024 05:57:12 +00:00
+CloseAt=25.04.2023 12:18:26 +00:00
+ArticlesCount=4
+
+### TITLE
+Ersatz für TwinCAT
+
+### ARTICLE00_HEADER
+Id=28996
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.04.2023 12:07:54 +00:00
+UpdatedAt=25.04.2023 12:07:54 +00:00
+
+### ARTICLE00_SUBJECT
+Ersatz für TwinCAT
+
+### ARTICLE00_BODY
+<p> </p><div>Guten Tag</div><div>Ich habe gesehen, dass die Firma Acontis interessante Produkte im Bereich EtherCAT anbietet. Deshalb wollte ich mal ausprobieren</div><div>und herausfinden, was die Vor- und Nachteile gegenüber TwinCAT von Beckhoff sind.</div><div>Aktuell setze ich einen CX5130 Rechner mit Win10 LTSC als Target, zusammen mit Beckhoff Klemmen, ein.</div><div>Als Entwicklungsrechner steht ein Notebook mit Win10 der per Netzwerk mit dem Target verbunden ist, zur Verfügung.</div><div> </div><div>Nun würde ich gerne EcWin ausprobieren.</div><div>Dazu habe ich folgenden Quick-Start Guide finden können. Dazu habe ich aber Fragen:</div><div>1. Wo muss das .NET Framework 4.0 installiert sein: Target oder Entwicklungs-PC (Kapitel 2.1 Punkt 1) ?</div><div>2. Wo bekomme ich dieses "On Time RTOS-32 Eval1 package" (Kapitel 2.1, Punkt 3)</div><div> <div>3. Wo muss das WinPCap installiert sein: Target oder Entwicklungs-PC (Kapitel 2.1 Punkt 5) ?</div>
+<div> <div>4. Wo muss EcEngineer installiert sein: Target oder Entwicklungs-PC (Kapitel 2.1 Punkt 5) ?</div>
+<div> </div>
+</div>
+</div><div>Ich denke das genügt mal für den Anfang.</div><div> </div><div>Freundliche Grüsse</div><div>Stefan Imhof</div>
+
+### ARTICLE01_HEADER
+Id=28998
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.04.2023 12:18:26 +00:00
+UpdatedAt=25.04.2023 12:18:29 +00:00
+
+### ARTICLE01_SUBJECT
+Ersatz für TwinCAT
+
+### ARTICLE01_BODY
+<div data-signature="true" data-signature-id="2"><div><br></div></div><div>---Begin forwarded message:---<br><br>
+</div><div><blockquote type="cite">
+<div>Subject: Ersatz für TwinCAT<br>Date: 04/25/2023 14:07<br>From: Stefan Imhof &lt;stefan.imhof@sunrise.ch&gt;<br>To: "ecsupport@acontis.com" &lt;ecsupport@acontis.com&gt;<br><br>
+</div>
+<p> </p>
+<div>Guten Tag</div>
+<div>Ich habe gesehen, dass die Firma Acontis interessante Produkte im Bereich EtherCAT anbietet. Deshalb wollte ich mal ausprobieren</div>
+<div>und herausfinden, was die Vor- und Nachteile gegenüber TwinCAT von Beckhoff sind.</div>
+<div>Aktuell setze ich einen CX5130 Rechner mit Win10 LTSC als Target, zusammen mit Beckhoff Klemmen, ein.</div>
+<div>Als Entwicklungsrechner steht ein Notebook mit Win10 der per Netzwerk mit dem Target verbunden ist, zur Verfügung.</div>
+<div> </div>
+<div>Nun würde ich gerne EcWin ausprobieren.</div>
+<div>Dazu habe ich folgenden Quick-Start Guide finden können. Dazu habe ich aber Fragen:</div>
+<div>1. Wo muss das .NET Framework 4.0 installiert sein: Target oder Entwicklungs-PC (Kapitel 2.1 Punkt 1) ?</div>
+<div>2. Wo bekomme ich dieses "On Time RTOS-32 Eval1 package" (Kapitel 2.1, Punkt 3)</div>
+<div> <div>3. Wo muss das WinPCap installiert sein: Target oder Entwicklungs-PC (Kapitel 2.1 Punkt 5) ?</div>
+<div> <div>4. Wo muss EcEngineer installiert sein: Target oder Entwicklungs-PC (Kapitel 2.1 Punkt 5) ?</div>
+<div> </div>
+</div>
+</div>
+<div>Ich denke das genügt mal für den Anfang.</div>
+<div> </div>
+<div>Freundliche Grüsse</div>
+<div>Stefan Imhof</div>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=28999
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.04.2023 12:18:35 +00:00
+UpdatedAt=25.04.2023 12:18:35 +00:00
+
+### ARTICLE02_SUBJECT
+Ersatz für TwinCAT
+
+### ARTICLE02_BODY
+<div>Guten Tag</div><div>Eigentlich wollte ich als erstes fragen, welche Produkte Sie für mein Vorhaben überhaupt empfehlen (harte Echtzeit), wenn als erstes Mal Win10</div><div>auf dem Target vorgegeben ist? Es geht mir als erstes einfach mal um das Gefühl, wie man damit arbeitet.</div><div> </div><div>Besten Dank.</div><div> </div><div>Freundliche Grüsse</div><div>Stefan Imhof</div><blockquote type="cite"> <div>Stefan Imhof &lt;stefan.imhof@sunrise.ch&gt; hat am 25.04.2023 14:07 geschrieben:</div>
+<div> </div>
+<div>Guten Tag</div>
+<div>Ich habe gesehen, dass die Firma Acontis interessante Produkte im Bereich EtherCAT anbietet. Deshalb wollte ich mal ausprobieren</div>
+<div>und herausfinden, was die Vor- und Nachteile gegenüber TwinCAT von Beckhoff sind.</div>
+<div>Aktuell setze ich einen CX5130 Rechner mit Win10 LTSC als Target, zusammen mit Beckhoff Klemmen, ein.</div>
+<div>Als Entwicklungsrechner steht ein Notebook mit Win10 der per Netzwerk mit dem Target verbunden ist, zur Verfügung.</div>
+<div> </div>
+<div>Nun würde ich gerne EcWin ausprobieren.</div>
+<div>Dazu habe ich folgenden Quick-Start Guide finden können. Dazu habe ich aber Fragen:</div>
+<div>1. Wo muss das .NET Framework 4.0 installiert sein: Target oder Entwicklungs-PC (Kapitel 2.1 Punkt 1) ?</div>
+<div>2. Wo bekomme ich dieses "On Time RTOS-32 Eval1 package" (Kapitel 2.1, Punkt 3)</div>
+<div> <div>3. Wo muss das WinPCap installiert sein: Target oder Entwicklungs-PC (Kapitel 2.1 Punkt 5) ?</div>
+<div> <div>4. Wo muss EcEngineer installiert sein: Target oder Entwicklungs-PC (Kapitel 2.1 Punkt 5) ?</div>
+<div> </div>
+</div>
+</div>
+<div>Ich denke das genügt mal für den Anfang.</div>
+<div> </div>
+<div>Freundliche Grüsse</div>
+<div>Stefan Imhof</div>
+</blockquote>
+
+### ARTICLE03_HEADER
+Id=29000
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.04.2023 12:27:15 +00:00
+UpdatedAt=25.04.2023 12:27:15 +00:00
+
+### ARTICLE03_SUBJECT
+AW: Ersatz für TwinCAT [Ticket#705460]
+
+### ARTICLE03_BODY
+<div>
+<p>Also der Typ geht mir echt tierisch auf die Nerven. Zuerst ewig lang mit dem per tawk.to gechattet….. dann nervt er mich ständig per Email und jetzt auch noch euch.</p>
+<p>Das ist ein Privater und arbeitete auch privat für Bechkoff…</p>
+<p>Hab ihm mal Preise genannt, denke das hat sich erledigt.</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br><b>Gesendet:</b> Dienstag, 25. April 2023 14:18<br><b>An:</b> sales@acontis.com<br><b>Betreff:</b> FWD: Ersatz für TwinCAT [Ticket#705460]</p>
+</div>
+<p> </p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>---Begin forwarded message:---</p>
+</div>
+<div><blockquote>
+<div>
+<p>Subject: Ersatz für TwinCAT<br>Date: 04/25/2023 14:07<br>From: Stefan Imhof &lt;<a href="mailto:stefan.imhof@sunrise.ch">stefan.imhof@sunrise.ch</a>&gt;<br>To: "<a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>" &lt;<a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>&gt;</p>
+</div>
+<p> </p>
+<div>
+<p>Guten Tag</p>
+</div>
+<div>
+<p>Ich habe gesehen, dass die Firma Acontis interessante Produkte im Bereich EtherCAT anbietet. Deshalb wollte ich mal ausprobieren</p>
+</div>
+<div>
+<p>und herausfinden, was die Vor- und Nachteile gegenüber TwinCAT von Beckhoff sind.</p>
+</div>
+<div>
+<p>Aktuell setze ich einen CX5130 Rechner mit Win10 LTSC als Target, zusammen mit Beckhoff Klemmen, ein.</p>
+</div>
+<div>
+<p>Als Entwicklungsrechner steht ein Notebook mit Win10 der per Netzwerk mit dem Target verbunden ist, zur Verfügung.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Nun würde ich gerne EcWin ausprobieren.</p>
+</div>
+<div>
+<p>Dazu habe ich folgenden Quick-Start Guide finden können. Dazu habe ich aber Fragen:</p>
+</div>
+<div>
+<p>1. Wo muss das .NET Framework 4.0 installiert sein: Target oder Entwicklungs-PC (Kapitel 2.1 Punkt 1) ?</p>
+</div>
+<div>
+<p>2. Wo bekomme ich dieses "On Time RTOS-32 Eval1 package" (Kapitel 2.1, Punkt 3)</p>
+</div>
+<div>
+<div>
+<p>3. Wo muss das WinPCap installiert sein: Target oder Entwicklungs-PC (Kapitel 2.1 Punkt 5) ?</p>
+</div>
+<div>
+<div>
+<p>4. Wo muss EcEngineer installiert sein: Target oder Entwicklungs-PC (Kapitel 2.1 Punkt 5) ?</p>
+</div>
+<div>
+<p> </p>
+</div>
+</div>
+</div>
+<div>
+<p>Ich denke das genügt mal für den Anfang.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Freundliche Grüsse</p>
+</div>
+<div>
+<p>Stefan Imhof</p>
+</div>
+</blockquote></div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>

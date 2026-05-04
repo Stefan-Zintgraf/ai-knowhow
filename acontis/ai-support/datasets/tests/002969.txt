@@ -1,0 +1,252 @@
+### HEADER
+Id=2969
+Link=http://at-zammad/#ticket/zoom/2969
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=702969
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=06.05.2022 00:51:44 +00:00
+UpdatedAt=09.05.2022 13:16:55 +00:00
+CloseAt=09.05.2022 13:16:55 +00:00
+ArticlesCount=3
+
+### TITLE
+Memory Usage problem with V3.1.3.3
+
+### ARTICLE00_HEADER
+Id=15625
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.05.2022 00:51:44 +00:00
+UpdatedAt=06.05.2022 00:51:45 +00:00
+
+### ARTICLE00_SUBJECT
+Memory Usage problem with V3.1.3.3
+
+### ARTICLE00_BODY
+<div>
+<p>I was looking at the new Memory Usage data showed on the Master General tab in Diagnosis mode. I am connecting over RAS to our EC-Master. I was getting bizarre values for memory usage like the following:</p>
+<p> </p>
+<p><img style="max-width:100%;width:7.4895in;max-height:4.0in;width:719px;max-height:384px;" src="/api/v1/ticket_attachment/2969/15625/61628?view=inline"></p>
+<p> </p>
+<p>When I looked at this more, I see this call stack:</p>
+<p> </p>
+<p> <b>EcCore.dll:</b> EcCore.EcDevice.GetMemoryUsage()</p>
+<p> <b>EcCore.dll:</b> EcCore.EcMasterUnit.GetMemoryUsage()</p>
+<p> <b>EcCore.dll:</b> EcCore.EcMasterWithLogging.GetMemoryUsage()</p>
+<p> <b>EcCore.dll:</b> EcCore.EcMasterDotNetImpl.GetMemoryUsage()</p>
+<p> <b>EcWrapperDotNet.dll:</b> EcWrapperDotNet.CEcWrapperDotNet.GetMemoryUsage()</p>
+<p> <b>AtEmRasClnt.dll:</b> ecwGetMemoryUsage()</p>
+<p> <b>AtEmRasClnt.dll:</b> emGetMemoryUsage()</p>
+<p> <b>AtEmRasClnt.dll:</b> AtemRasClnt::CAtEmRasClientWrapper::GetMemoryUsage()</p>
+<p> <b>AtEmRasClnt.dll:</b> CEcMasterInterface::CAtEmRasClntInterface::GetMemLog()</p>
+<p> </p>
+<p>What I find for the implementation of <b>CAtEmRasClntInterface::GetMemLog()</b>:</p>
+<p> </p>
+<p><span style="color:blue;"> class</span>
+<span style="color:#2b91af;">CAtEmRasClntInterface</span> : <span style="color:blue;">public</span>
+<span style="color:#2b91af;">CEcMasterInterfaceBase</span></p>
+<p>{</p>
+<p><span style="color:blue;"> public</span>:</p>
+<p>...</p>
+<p> </p>
+<p> <span style="color:blue;">struct</span>
+<span style="color:#2b91af;">_EC_T_MEMORY_LOGGER</span>* GetMemLog() { <span style="color:blue;">return</span> &amp;m_oMemLog; }</p>
+<p> <span style="color:blue;">struct</span>
+<span style="color:#2b91af;">_EC_T_MEMORY_LOGGER</span> m_oMemLog;</p>
+<p> </p>
+<p>...</p>
+<p>};</p>
+<p> </p>
+<p>I do not see m_oMemLog get initialized, nor do I see it written to anywhere. Therefore, in my debug builds, all of its members are initialized to 0xCDCDCDCD, which has a decimal of 3,452,816,845, which when divided by 1000, gives the “3452816” value shown in my screen shot above.</p>
+<p> </p>
+<p>What is supposed to happen in this situation where ERemote is being used?</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">www.deltamotion.com</span></a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=15629
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.05.2022 05:48:19 +00:00
+UpdatedAt=06.05.2022 05:48:21 +00:00
+
+### ARTICLE01_SUBJECT
+Memory Usage problem with V3.1.3.3
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>this is a know problem.</div><div>When I was asked to implement this function nobody realized that this was not yet implemented in the RAS Server. That should be fixed in the next master version I guess.</div><div><br></div><div>Best regards,</div><div>Kai</div><div>
+<div><br></div>
+<div><blockquote type="cite">On Friday, May 6, 2022, 2:51:44 AM, Quinton Tormanen wrote:<br><br><div>
+<p>I was looking at the new Memory Usage data showed on the Master General tab in Diagnosis mode. I am connecting over RAS to our EC-Master. I was getting bizarre values for memory usage like the following:</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:7.4895in;max-height:4.0in;width:719px;max-height:384px;" src="/api/v1/ticket_attachment/2969/15629/61638?view=inline"></p>
+<p> </p>
+<p>When I looked at this more, I see this call stack:</p>
+<p> </p>
+<p> <b>EcCore.dll:</b> EcCore.EcDevice.GetMemoryUsage()</p>
+<p> <b>EcCore.dll:</b> EcCore.EcMasterUnit.GetMemoryUsage()</p>
+<p> <b>EcCore.dll:</b> EcCore.EcMasterWithLogging.GetMemoryUsage()</p>
+<p> <b>EcCore.dll:</b> EcCore.EcMasterDotNetImpl.GetMemoryUsage()</p>
+<p> <b>EcWrapperDotNet.dll:</b> EcWrapperDotNet.CEcWrapperDotNet.GetMemoryUsage()</p>
+<p> <b>AtEmRasClnt.dll:</b> ecwGetMemoryUsage()</p>
+<p> <b>AtEmRasClnt.dll:</b> emGetMemoryUsage()</p>
+<p> <b>AtEmRasClnt.dll:</b> AtemRasClnt::CAtEmRasClientWrapper::GetMemoryUsage()</p>
+<p> <b>AtEmRasClnt.dll:</b> CEcMasterInterface::CAtEmRasClntInterface::GetMemLog()</p>
+<p> </p>
+<p>What I find for the implementation of <b>CAtEmRasClntInterface::GetMemLog()</b>:</p>
+<p> </p>
+<p><span style="color:blue;"> class</span>
+<span style="color:#2b91af;">CAtEmRasClntInterface</span> : <span style="color:blue;">public</span>
+<span style="color:#2b91af;">CEcMasterInterfaceBase</span></p>
+<p>{</p>
+<p><span style="color:blue;"> public</span>:</p>
+<p>...</p>
+<p> </p>
+<p> <span style="color:blue;">struct</span>
+<span style="color:#2b91af;">_EC_T_MEMORY_LOGGER</span>* GetMemLog() { <span style="color:blue;">return</span> &amp;m_oMemLog; }</p>
+<p> <span style="color:blue;">struct</span>
+<span style="color:#2b91af;">_EC_T_MEMORY_LOGGER</span> m_oMemLog;</p>
+<p> </p>
+<p>...</p>
+<p>};</p>
+<p> </p>
+<p>I do not see m_oMemLog get initialized, nor do I see it written to anywhere. Therefore, in my debug builds, all of its members are initialized to 0xCDCDCDCD, which has a decimal of 3,452,816,845, which when divided by 1000, gives the “3452816” value shown in my screen shot above.</p>
+<p> </p>
+<p>What is supposed to happen in this situation where ERemote is being used?</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">www.deltamotion.com</span></a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=15668
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.05.2022 16:09:14 +00:00
+UpdatedAt=06.05.2022 16:09:14 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Memory Usage problem with V3.1.3.3 [Ticket#702969]
+
+### ARTICLE02_BODY
+<div>
+<p>Thank you. I will modify CAtEmRasClntInterface to zero-initialize m_oMemLog for now, and wait for an official solution in the future.</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p>--Quinton</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Thursday, May 5, 2022 10:48 PM<br>
+<b>To:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: Memory Usage problem with V3.1.3.3 [Ticket#702969]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>this is a know problem.</p>
+</div>
+<div>
+<p>When I was asked to implement this function nobody realized that this was not yet implemented in the RAS Server. That should be fixed in the next master version I guess.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best regards,</p>
+</div>
+<div>
+<p>Kai</p>
+</div>
+<div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Friday, May 6, 2022, 2:51:44 AM, Quinton Tormanen wrote:</p>
+<div>
+<p>I was looking at the new Memory Usage data showed on the Master General tab in Diagnosis mode. I am connecting over RAS to our EC-Master. I was getting bizarre values for memory usage like the following:</p>
+<p> </p>
+<p><img style="max-width:100%;width:7.4895in;max-height:4.0in;width:719px;max-height:384px;" src="/api/v1/ticket_attachment/2969/15668/61752?view=inline"></p>
+<p> </p>
+<p>When I looked at this more, I see this call stack:</p>
+<p> </p>
+<p><b>EcCore.dll:</b> EcCore.EcDevice.GetMemoryUsage()</p>
+<p><b>EcCore.dll:</b> EcCore.EcMasterUnit.GetMemoryUsage()</p>
+<p><b>EcCore.dll:</b> EcCore.EcMasterWithLogging.GetMemoryUsage()</p>
+<p><b>EcCore.dll:</b> EcCore.EcMasterDotNetImpl.GetMemoryUsage()</p>
+<p><b>EcWrapperDotNet.dll:</b> EcWrapperDotNet.CEcWrapperDotNet.GetMemoryUsage()</p>
+<p><b>AtEmRasClnt.dll:</b> ecwGetMemoryUsage()</p>
+<p><b>AtEmRasClnt.dll:</b> emGetMemoryUsage()</p>
+<p><b>AtEmRasClnt.dll:</b> AtemRasClnt::CAtEmRasClientWrapper::GetMemoryUsage()</p>
+<p><b>AtEmRasClnt.dll:</b> CEcMasterInterface::CAtEmRasClntInterface::GetMemLog()</p>
+<p> </p>
+<p>What I find for the implementation of <b>CAtEmRasClntInterface::GetMemLog()</b>:</p>
+<p> </p>
+<p><span style="color:blue;">class</span> <span style="color:#2b91af;"> CAtEmRasClntInterface</span> : <span style="color:blue;">public</span> <span style="color:#2b91af;"> CEcMasterInterfaceBase</span></p>
+<p>{</p>
+<p><span style="color:blue;">public</span>:</p>
+<p>...</p>
+<p> </p>
+<p><span style="color:blue;">struct</span> <span style="color:#2b91af;"> _EC_T_MEMORY_LOGGER</span>* GetMemLog() { <span style="color:blue;">return</span> &amp;m_oMemLog; }</p>
+<p><span style="color:blue;">struct</span> <span style="color:#2b91af;"> _EC_T_MEMORY_LOGGER</span> m_oMemLog;</p>
+<p> </p>
+<p>...</p>
+<p>};</p>
+<p> </p>
+<p>I do not see m_oMemLog get initialized, nor do I see it written to anywhere. Therefore, in my debug builds, all of its members are initialized to 0xCDCDCDCD, which has a decimal of 3,452,816,845, which when divided by 1000, gives the “3452816” value shown in my screen shot above.</p>
+<p> </p>
+<p>What is supposed to happen in this situation where ERemote is being used?</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">www.deltamotion.com</span></a></p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

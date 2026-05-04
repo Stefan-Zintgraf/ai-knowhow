@@ -1,0 +1,90 @@
+### HEADER
+Id=8899
+Link=http://at-zammad/#ticket/zoom/8899
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Sipro (ID=537, Number=0, Country=IT)
+Commission=Sipro, SIAX XPC (ID=236, Number=236)
+Number=708899
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=alessandro.diflumeri@sipro.vr.it (ID=164, FirstName=Alessandro, LastName=Di Flumeri)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=18.09.2024 11:52:30 +00:00
+UpdatedAt=27.09.2024 12:42:37 +00:00
+CloseAt=27.09.2024 06:01:30 +00:00
+ArticlesCount=2
+
+### TITLE
+Acontis software update request from Sipro srl
+
+### ARTICLE00_HEADER
+Id=50252
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.09.2024 11:52:30 +00:00
+UpdatedAt=18.09.2024 11:52:34 +00:00
+
+### ARTICLE00_SUBJECT
+Acontis software update request from Sipro srl
+
+### ARTICLE00_BODY
+<p> </p><p>Dear Mr./Ms. Di Flumeri,</p><p>thank you for your registration.<br> <br></p><p>First Name: Alessandro<br>Last Name: Di Flumeri <br>Company: Sipro srl <br><span>Commission Number: <br></span><span>Country: Italia <br></span><span>City: Verona <br></span><span>E-Mail: alessandro.diflumeri@sipro.vr.it <br></span>Product: <span>EC-Master,EC-Engineer <br></span>Update Type: Upgrade (newest API)<span> <br></span><span>Operating System Version: Windows 10/11 - RTX 4.5 <br></span>Additional information: Ec-Master for IntervalZero RTX 4.5 Ec-Engineer for Windows 10/11</p><p><img src="/api/v1/ticket_attachment/8899/50252/208471?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH <br>Gartenstraße 46, 88212 Ravensburg/Germany <br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a> <br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com <br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/8899/50252/208472?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=50330
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.09.2024 12:37:47 +00:00
+UpdatedAt=19.09.2024 12:37:49 +00:00
+
+### ARTICLE01_SUBJECT
+Acontis software update request from Sipro srl
+
+### ARTICLE01_BODY
+<div>
+<p>Dear Customer, </p>
+<p><br></p>
+
+<p>please find your new software version below: </p>
+<p><br></p>
+
+<p><a href="https://downloads.acontis.com/2024/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.2.01/EC-Master-ClassA-AddOn-V3.2.2.01-RTX64-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.2.01/EC-Master-ClassA-AddOn-V3.2.2.01-RTX64-x86_64Bit-SDK_Protected.zip</a></p>
+
+<p><a href="https://downloads.acontis.com/2024/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.2.01/EC-Master-V3.2.2.01-RTX64-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.2.01/EC-Master-V3.2.2.01-RTX64-x86_64Bit-SDK_Protected.zip</a></p>
+
+<p><a href="https://downloads.acontis.com/2024/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.2.01/EC-RtEth-IntelGbe-V3.2.2.01-RTX64-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.2.01/EC-RtEth-IntelGbe-V3.2.2.01-RTX64-x86_64Bit-SDK_Protected.zip</a></p>
+
+<p><a href="https://downloads.acontis.com/2024/S/Sipro_(40386)(IT)/EC-Engineer/3.9.7/EC-Engineer_Dongle_V3.9.7.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/S/Sipro_(40386)(IT)/EC-Engineer/3.9.7/EC-Engineer_Dongle_V3.9.7.zip</a>
+</p>
+
+<p><br></p>
+<p>Password: ECM88250 </p>
+
+<p><br></p>
+<p>Best Regards, <br>__________________________________________________________________________________________
+<br>
+Cyril Eyssautier <br>
+EtherCAT Support <br>
+eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30 <br>
+acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten,
+Germany, <a href="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> <br>
+__________________________________________________________________________________________
+<br>
+Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>
+</p>
+
+<p>This is an automatic generated eMail. </p>
+<p><br></p>
+</div><div><blockquote type="cite">On Wednesday, September 18, 2024 at 1:52:30 PM, sales acontis wrote:<br><br><p> </p>
+<p>Dear Mr./Ms. Di Flumeri,</p>
+<p>thank you for your registration.<br> <br></p>
+<p>First Name: Alessandro<br>Last Name: Di Flumeri <br>Company: Sipro srl <br><span>Commission Number: <br></span><span>Country: Italia <br></span><span>City: Verona <br></span><span>E-Mail: alessandro.diflumeri@sipro.vr.it <br></span>Product: <span>EC-Master,EC-Engineer <br></span>Update Type: Upgrade (newest API)<span> <br></span><span>Operating System Version: Windows 10/11 - RTX 4.5 <br></span>Additional information: Ec-Master for IntervalZero RTX 4.5 Ec-Engineer for Windows 10/11</p>
+<p><img src="/api/v1/ticket_attachment/8899/50330/209113?view=inline" alt="" style="max-width:100%;max-width:100%;width:163px;max-height:85px;"></p>
+<p><span>acontis technologies GmbH <br>Gartenstraße 46, 88212 Ravensburg/Germany <br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a> <br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com <br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/8899/50330/209114?view=inline" style="max-width:100%;max-width:100%;width:22px;max-height:22px;"></a></span></p>
+<br>
+</blockquote></div><div><br></div><br><br>

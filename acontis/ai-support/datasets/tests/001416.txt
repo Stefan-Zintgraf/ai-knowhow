@@ -1,0 +1,101 @@
+### HEADER
+Id=1416
+Link=http://at-zammad/#ticket/zoom/1416
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Jumo GmbH & Co.KG (ID=126, Number=54502, Country=DE)
+Commission=Jumo, Registriergeräte, Linux (ID=141, Number=141)
+Number=701416
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=christian.happ@jumo.net (ID=322, FirstName=Christian, LastName=Happ)
+CreatedBy=christian.happ@jumo.net (ID=322, FirstName=Christian, LastName=Happ)
+Type=
+TimeUnit=
+CreatedAt=13.09.2021 07:37:15 +00:00
+UpdatedAt=30.09.2021 06:15:55 +00:00
+CloseAt=30.09.2021 06:15:55 +00:00
+ArticlesCount=2
+
+### TITLE
+Fehlendes PHY-LED handling im Atemsys-Kernel Modul - PHY-LEDs bleiben beide aus
+
+### ARTICLE00_HEADER
+Id=7626
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.09.2021 07:37:15 +00:00
+UpdatedAt=13.09.2021 07:37:19 +00:00
+
+### ARTICLE00_SUBJECT
+Fehlendes PHY-LED handling im Atemsys-Kernel Modul - PHY-LEDs bleiben beide aus
+
+### ARTICLE00_BODY
+Hallo Herr Schmid, <div> </div><div>mir ist aufgefallen, dass das atemsys-kernel-modul die Phy-LEDs nicht konfiguriert. Somit bleiben beide LEDs <b><u>aus</u></b>, sobald wir den EtherCat aktiv schalten. Wir haben folgendes im Devicetree gesetzt:</div><div><pre lang="plaintext"> ethphy1: ethernet-phy@1 {      reg = &lt;1&gt;;      micrel,led-mode = &lt;0&gt;;      clocks = &lt;&amp;clks IMX6UL_CLK_ENET_REF&gt;;      clock-names = "rmii-ref";    };</pre></div><div> </div><div>Der Linux-Treiber wertet das Attribut: micrel,led-mode = &lt;0&gt;; aus und konfiguriert via MDIO die PHY-LEDs entsprechend.</div><div> </div><div>Wann könnten wir mit einer Version mit dem LED-Mode rechnen?</div><div>Wir verwenden im Moment die Version 1.4.08, wäre auch ein Backport möglich?</div><div> </div><div>Gruß</div><div>Christian Happ</div><div> </div><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dipl.-Ing. Bernhard Juchheim, Dipl.-Kfm. Michael Juchheim, Dipl.-Ing. Dimitrios Charisiadis<br> Ust.-Id.-Nr.: DE 112411234</p>
+
+### ARTICLE01_HEADER
+Id=7632
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.09.2021 08:23:33 +00:00
+UpdatedAt=13.09.2021 08:23:37 +00:00
+
+### ARTICLE01_SUBJECT
+Fehlendes PHY-LED handling im Atemsys-Kernel Modul - PHY-LEDs bleiben beide aus
+
+### ARTICLE01_BODY
+Hallo Herr Happ,<div>Bei mir haben die LEDs der Steuerung mit dem <span>PhyTeck_imx6ull </span><span>immer geleuchtet,</span><span> </span><span>wenn der Master mit OsDriver lief und sind dann im Ruhezustand wieder ausgegangen.</span>
+</div><div><span><br></span></div><div><span>bei mir steht in der Sub-Sub-Node für den PHY</span></div><div><span><br></span></div><div>
+<div>ethernet-phy@2 {</div>
+<div>  reg = &lt; 0x02 &gt;;</div>
+<div>  <b>micrel,led-mode = &lt; 0x01 &gt;;</b>
+</div>
+<div>  clocks = &lt; 0x01 0x2d &gt;;</div>
+<div>  clock-names = "rmii-ref";</div>
+<div>  linux,phandle = &lt; 0x12 &gt;;</div>
+<div>  phandle = &lt; 0x12 &gt;;</div>
+<div>					};</div>
+</div><div><br></div><div><span>Im Fall von OsDriver sollte Linux im Betrieb die selben Einstellungen vornehmen wie für den Linux-Treiber.</span></div><div><span>Und wenn der Mdio Bus einer Fremden Instanz verwendet wird, dann hat der Master auch keinen Zugriff auf den Mdio Bus.</span></div><div><span><br></span></div><div><span><br></span></div><div><span>Grüße</span></div><div><span>Daniel Schmid</span></div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Daniel Schmid </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, 13 September 2021, 09:37:15, Christian Happ wrote:<br><br>Hallo Herr Schmid, <div> </div>
+<div>mir ist aufgefallen, dass das atemsys-kernel-modul die Phy-LEDs nicht konfiguriert. Somit bleiben beide LEDs <b><u>aus</u></b>, sobald wir den EtherCat aktiv schalten. Wir haben folgendes im Devicetree gesetzt:</div>
+<div><pre lang="plaintext"> ethphy1: ethernet-phy@1 {      reg = &lt;1&gt;;      micrel,led-mode = &lt;0&gt;;      clocks = &lt;&amp;clks IMX6UL_CLK_ENET_REF&gt;;      clock-names = "rmii-ref";    };</pre></div>
+<div> </div>
+<div>Der Linux-Treiber wertet das Attribut: micrel,led-mode = &lt;0&gt;; aus und konfiguriert via MDIO die PHY-LEDs entsprechend.</div>
+<div> </div>
+<div>Wann könnten wir mit einer Version mit dem LED-Mode rechnen?</div>
+<div>Wir verwenden im Moment die Version 1.4.08, wäre auch ein Backport möglich?</div>
+<div> </div>
+<div>Gruß</div>
+<div>Christian Happ</div>
+<div> </div>
+<p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dipl.-Ing. Bernhard Juchheim, Dipl.-Kfm. Michael Juchheim, Dipl.-Ing. Dimitrios Charisiadis<br> Ust.-Id.-Nr.: DE 112411234</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,129 @@
+### HEADER
+Id=3186
+Link=http://at-zammad/#ticket/zoom/3186
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Sierra CP Engineering Limited (ID=322, Number=40369, Country=UK)
+Commission=Sierra CP, CADET Controller  (ID=384, Number=384)
+Number=703186
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=gjm@sierra-cp.com (ID=156, FirstName=Greg, LastName=McElroy)
+CreatedBy=gjm@sierra-cp.com (ID=156, FirstName=Greg, LastName=McElroy)
+Type=
+TimeUnit=
+CreatedAt=08.06.2022 10:45:50 +00:00
+UpdatedAt=10.06.2022 06:09:20 +00:00
+CloseAt=10.06.2022 06:09:20 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-Engineer - Creating ENI without esi files
+
+### ARTICLE00_HEADER
+Id=16745
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.06.2022 10:45:50 +00:00
+UpdatedAt=08.06.2022 10:45:51 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Engineer - Creating ENI without esi files
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,</p>
+<p><br> I am trying to create a ENI file for a Schneider EtherCAT PLC system but they do not provide a ESI XML file. <br>
+<br> I have a PLC project summary that lists the various PDO’s that I need to add, but I cannot add an empty slave to do this. </p>
+<p> </p>
+<p>Do you know how I can achieve this?</p>
+<p> </p>
+<p><span lang="EN-US">Regards,</span></p>
+<p><span lang="EN-US">Greg McElroy</span></p>
+<p><span lang="EN-US">Software Engineer<span style="color:#00b0f0;"></span></span></p>
+<p><span lang="EN-US">Sierra CP Engineering Limited</span></p>
+<p><b><img src="/api/v1/ticket_attachment/3186/16745/67774?view=inline" alt="sierra-cp-logo-01" style="max-width:100%;width:227px;max-height:69px;"></b><span lang="EN-US"></span></p>
+<p><span lang="EN-US">Website: <a href="http://www.sierra-cp.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.sierra-cp.com</span></a></span></p>
+<p><span lang="EN-US">Sandy’s Road Malvern, WR14 1JJ, UK</span></p>
+<p> </p>
+<p><img border="0" src="/api/v1/ticket_attachment/3186/16745/67775?view=inline" alt="cid:image002.png@01D6CCA1.41599840" style="max-width:100%;width:277px;max-height:85px;"><span><img border="0" src="/api/v1/ticket_attachment/3186/16745/67776?view=inline" alt="See the source image" style="max-width:100%;width:82px;max-height:82px;"><span style="color:navy;"></span></span></p>
+<p> </p>
+<p>Sierra CP Engineering Limited is registered in England and Wales. Registered Number: 2827565.</p>
+<p><b><span lang="EN-US" style="color:#8e7771;"><p> </p></span></b></p>
+<p><b><span lang="EN-US" style="color:#8e7771;">NOTICE: This message may contain confidential and/or privileged information. If you are not the addressee or authorized to receive this for the addressee, you must not use, copy, disclose, or take any action based on this message or any information herein. If you have received this message in error, please advise the sender immediately by reply e-mail and delete this message. Thank you for your cooperation.</span></b></p>
+<p><b><span lang="EN-US" style="color:#8e7771;"><p> </p></span></b></p>
+<p><span style="color:green;"><img border="0" src="/api/v1/ticket_attachment/3186/16745/67777?view=inline" alt="Untitled.jpg" style="max-width:100%;width:19px;max-height:18px;"></span>
+<span lang="EN-US" style="color:green;">PLEASE CONSIDER THE ENVIRONMENT BEFORE YOU PRINT THIS E-MAIL</span><span lang="EN-US"></span></p>
+<p> </p>
+</div><span class="js-signatureMarker"></span><br> ________________________________________________________________________<br> This e-mail has been scanned for all viruses by Claranet. The<br> service is powered by MessageLabs. For more information on a proactive<br> anti-virus service working around the clock, around the globe, visit:<br>
+<a href="http://www.claranet.co.uk" rel="nofollow noreferrer noopener" target="_blank">http://www.claranet.co.uk</a><br> ________________________________________________________________________
+
+### ARTICLE01_HEADER
+Id=16746
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.06.2022 10:51:33 +00:00
+UpdatedAt=08.06.2022 10:51:37 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Engineer - Creating ENI without esi files
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>sorry, but this is not supported, because without an ESI the slave cannot be correctly configured in ENI file.</div><div><br></div><div>Best Regards,</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, June 8, 2022, 12:45:50 PM, Greg McElroy wrote:<br><br><div>
+<p>Hello,</p>
+<p><br> I am trying to create a ENI file for a Schneider EtherCAT PLC system but they do not provide a ESI XML file. <br>
+<br> I have a PLC project summary that lists the various PDO’s that I need to add, but I cannot add an empty slave to do this. </p>
+<p> </p>
+<p>Do you know how I can achieve this?</p>
+<p> </p>
+<p><span lang="EN-US">Regards,</span></p>
+<p><span lang="EN-US">Greg McElroy</span></p>
+<p><span lang="EN-US">Software Engineer<span style="color:#00b0f0;"></span></span></p>
+<p><span lang="EN-US">Sierra CP Engineering Limited</span></p>
+<p><b><img src="/api/v1/ticket_attachment/3186/16746/67778?view=inline" alt="sierra-cp-logo-01" style="max-width:100%;max-width:100%;width:227px;max-height:69px;"></b><span lang="EN-US"></span></p>
+<p><span lang="EN-US">Website: <a href="http://www.sierra-cp.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.sierra-cp.com</span></a></span></p>
+<p><span lang="EN-US">Sandy’s Road Malvern, WR14 1JJ, UK</span></p>
+<p> </p>
+<p><img border="0" src="/api/v1/ticket_attachment/3186/16746/67779?view=inline" alt="cid:image002.png@01D6CCA1.41599840" style="max-width:100%;max-width:100%;width:277px;max-height:85px;"><span><img border="0" src="/api/v1/ticket_attachment/3186/16746/67780?view=inline" alt="See the source image" style="max-width:100%;max-width:100%;width:82px;max-height:82px;"><span style="color:navy;"></span></span></p>
+<p> </p>
+<p>Sierra CP Engineering Limited is registered in England and Wales. Registered Number: 2827565.</p>
+<p><b><span lang="EN-US" style="color:#8e7771;"></span></b></p>
+<p><b> </b></p>
+<p></p>
+<p><b><span lang="EN-US" style="color:#8e7771;">NOTICE: This message may contain confidential and/or privileged information. If you are not the addressee or authorized to receive this for the addressee, you must not use, copy, disclose, or take any action based on this message or any information herein. If you have received this message in error, please advise the sender immediately by reply e-mail and delete this message. Thank you for your cooperation.</span></b></p>
+<p><b><span lang="EN-US" style="color:#8e7771;"></span></b></p>
+<p><b> </b></p>
+<p></p>
+<p><span style="color:green;"><img border="0" src="/api/v1/ticket_attachment/3186/16746/67781?view=inline" alt="Untitled.jpg" style="max-width:100%;max-width:100%;width:19px;max-height:18px;"></span>
+<span lang="EN-US" style="color:green;">PLEASE CONSIDER THE ENVIRONMENT BEFORE YOU PRINT THIS E-MAIL</span><span lang="EN-US"></span></p>
+<p> </p>
+</div>
+<span class="js-signatureMarker"></span><br> ________________________________________________________________________<br> This e-mail has been scanned for all viruses by Claranet. The<br> service is powered by MessageLabs. For more information on a proactive<br> anti-virus service working around the clock, around the globe, visit:<br>
+<a href="http://www.claranet.co.uk" rel="nofollow noreferrer noopener" target="_blank">http://www.claranet.co.uk</a><br> ________________________________________________________________________<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

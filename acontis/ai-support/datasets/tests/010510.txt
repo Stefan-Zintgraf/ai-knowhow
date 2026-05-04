@@ -1,0 +1,143 @@
+### HEADER
+Id=10510
+Link=http://at-zammad/#ticket/zoom/10510
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=NASA JSC ER5 Projects (ID=447, Number=447)
+Number=7010510
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=02.05.2025 19:20:36 +00:00
+UpdatedAt=16.05.2025 06:02:10 +00:00
+CloseAt=16.05.2025 06:02:10 +00:00
+ArticlesCount=2
+
+### TITLE
+Fwd: Hot Connect & Cable Redundancy
+
+### ARTICLE00_HEADER
+Id=60187
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.05.2025 19:20:37 +00:00
+UpdatedAt=02.05.2025 19:20:37 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Hot Connect & Cable Redundancy
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>Can you help with NASA’s question about Hot Connect?<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>"Bankieris, Derek R. (JSC-ER511)" &lt;derek.r.bankieris@nasa.gov&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Hot Connect &amp; Cable Redundancy</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>May 2, 2025 at 2:17:07 PM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>"Jon Waters (j.waters@acontis.com)" &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<br><div>
+<div>
+<div>Hi Jon,</div>
+<div><p> </p></div>
+<div>It’s been a while since I sent a question your way! I’m finally getting around to trying out the feature packs we purchased several years ago. Hot Connect groups were easy to set up and work great! However, I do have a curiosity regarding the information in EC_T_HC_DETECTALLGROUP_NTFY_DESC. While dwGroupsPresent correctly matches the number of Hot Connect groups actually connected to my network, dwGroupCount reports one more group than I am expecting. For instance, on my little test network, I have two Hot Connect groups, corroborated by two &lt;HotConnect&gt; sections in the ENI file, but dwGroupCount is always three. Furthermore, while bits 1 and 2 of dwGroupMask correctly reflect the presence of Hot Connect groups 1 and 2, bit 0 is always 0, and I’m not sure what group bit 0 is referring to.</div>
+<div><p> </p></div>
+<div><p> </p></div>
+<div>I hope Acontis’s prestige is continuing to grow across the industry. More and more projects here at JSC are using EtherCAT these days (although, sadly, they don’t all choose EC-Master).</div>
+<div><p> </p></div>
+<div>Thanks!</div>
+<div>Derek</div>
+</div>
+<br>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=60198
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.05.2025 06:33:22 +00:00
+UpdatedAt=05.05.2025 06:33:24 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: Hot Connect & Cable Redundancy
+
+### ARTICLE01_BODY
+Hi Derek,<div><br></div><div>group points to the mandatory slaves. This group is always present.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, May 2, 2025 at 9:20:37 PM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>Can you help with NASA’s question about Hot Connect?<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>"Bankieris, Derek R. (JSC-ER511)" &lt;derek.r.bankieris@nasa.gov&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Hot Connect &amp; Cable Redundancy</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>May 2, 2025 at 2:17:07 PM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>"Jon Waters (j.waters@acontis.com)" &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<br><div>
+<div>
+<div>Hi Jon,</div>
+<div><p> </p></div>
+<div>It’s been a while since I sent a question your way! I’m finally getting around to trying out the feature packs we purchased several years ago. Hot Connect groups were easy to set up and work great! However, I do have a curiosity regarding the information in EC_T_HC_DETECTALLGROUP_NTFY_DESC. While dwGroupsPresent correctly matches the number of Hot Connect groups actually connected to my network, dwGroupCount reports one more group than I am expecting. For instance, on my little test network, I have two Hot Connect groups, corroborated by two &lt;HotConnect&gt; sections in the ENI file, but dwGroupCount is always three. Furthermore, while bits 1 and 2 of dwGroupMask correctly reflect the presence of Hot Connect groups 1 and 2, bit 0 is always 0, and I’m not sure what group bit 0 is referring to.</div>
+<div><p> </p></div>
+<div><p> </p></div>
+<div>I hope Acontis’s prestige is continuing to grow across the industry. More and more projects here at JSC are using EtherCAT these days (although, sadly, they don’t all choose EC-Master).</div>
+<div><p> </p></div>
+<div>Thanks!</div>
+<div>Derek</div>
+</div>
+<br>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

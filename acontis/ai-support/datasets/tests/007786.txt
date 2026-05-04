@@ -1,0 +1,99 @@
+### HEADER
+Id=7786
+Link=http://at-zammad/#ticket/zoom/7786
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Jumo GmbH & Co.KG (ID=126, Number=54502, Country=DE)
+Commission=Jumo, Registriergeräte, Linux (ID=141, Number=141)
+Number=707786
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=kai.winzker@jumo.net (ID=2535, FirstName=Kai, LastName=Winzker)
+CreatedBy=kai.winzker@jumo.net (ID=2535, FirstName=Kai, LastName=Winzker)
+Type=
+TimeUnit=
+CreatedAt=03.04.2024 10:00:03 +00:00
+UpdatedAt=19.04.2024 06:27:27 +00:00
+CloseAt=19.04.2024 06:27:27 +00:00
+ArticlesCount=3
+
+### TITLE
+Slave in BootStrap-State versetzen
+
+### ARTICLE00_HEADER
+Id=42969
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.04.2024 10:00:03 +00:00
+UpdatedAt=03.04.2024 10:00:03 +00:00
+
+### ARTICLE00_SUBJECT
+Slave in BootStrap-State versetzen
+
+### ARTICLE00_BODY
+<div>Sehr geehrte Damen und Herren,</div><div> </div><div>wir haben einen Slave mit Bootloader, der durch Ihren Master unter in den Bootstap-State versetzt werden soll, wenn der Slave keine Firmware hat.</div><div>Reicht es den AL_STATUS im Slave auf 0x14 aka "No Valid Firmware" zu setzen?</div><div> </div><div>Freundliche Grüße<br>
+</div><div> <span><div> </div>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Elektronik / Global Development Electronics<br>Plattformen / Platforms<br><br>i. A. Kai Winzker<br><br>Tel: +49 661 6003-3687<br>Adresse: Moritz-Juchheim-Straße 1<br> 36039 Fulda, Germany<br>E-Mail: mailto:<a href="mailto:kai.winzker@jumo.net">kai.winzker@jumo.net</a><br>Internet: <a href="https://www.jumo.net" rel="nofollow noreferrer noopener" target="_blank">https://www.jumo.net</a></span><br>
+</div><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dimitrios Charisiadis, Dr. Steffen Hoßfeld<br> Ust.-Id.-Nr.: DE 112411234</p>
+
+### ARTICLE01_HEADER
+Id=42974
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.04.2024 12:22:35 +00:00
+UpdatedAt=03.04.2024 12:22:39 +00:00
+
+### ARTICLE01_SUBJECT
+Slave in BootStrap-State versetzen
+
+### ARTICLE01_BODY
+Hallo Herr Winzler,<div><br></div><div>Diese Frage sollten sie an die ETG stellen. Es gibt vielleicht sogar Tests Cases dazu im Conformance Test.</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, April 3, 2024 at 12:00:03 PM, Kai Winzker wrote:<br><br><div>Sehr geehrte Damen und Herren,</div>
+<div> </div>
+<div>wir haben einen Slave mit Bootloader, der durch Ihren Master unter in den Bootstap-State versetzt werden soll, wenn der Slave keine Firmware hat.</div>
+<div>Reicht es den AL_STATUS im Slave auf 0x14 aka "No Valid Firmware" zu setzen?</div>
+<div> </div>
+<div>Freundliche Grüße<br>
+</div>
+<div> <span><div> </div>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Elektronik / Global Development Electronics<br>Plattformen / Platforms<br><br>i. A. Kai Winzker<br><br>Tel: +49 661 6003-3687<br>Adresse: Moritz-Juchheim-Straße 1<br> 36039 Fulda, Germany<br>E-Mail: mailto:<a href="mailto:kai.winzker@jumo.net">kai.winzker@jumo.net</a><br>Internet: <a href="https://www.jumo.net" rel="nofollow noreferrer noopener" target="_blank">https://www.jumo.net</a></span><br>
+</div>
+<p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dimitrios Charisiadis, Dr. Steffen Hoßfeld<br> Ust.-Id.-Nr.: DE 112411234</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=42975
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.04.2024 12:22:53 +00:00
+UpdatedAt=03.04.2024 12:22:53 +00:00
+
+### ARTICLE02_SUBJECT
+AUTO: Eugen Wiens ist derzeit abwesend. Eugen Wiens is currently out of the office. (Rückkehr am So, 14.04.2024)
+
+### ARTICLE02_BODY
+<p>Ich bin von Fr, 29.03.2024 bis So, 14.04.2024 abwesend.<br> <br>Sehr geehrte Damen und Herren,<br><br>herzlichen Dank für Ihre Nachricht. Ich bin zurzeit im Urlaub und kann Ihnen deshalb nicht antworten.<br><br>Ab dem 08.01.2024 bin ich wieder persönlich für Sie erreichbar.<br><span class="js-signatureMarker"></span><br>-----------------------------------------<br>Dear Sir/Madam,<br><br>Thank you for your email. I am currently on vacation.<br><br>I will be back at the office on 08.01.2024<br><br>Mit freundlichen Grüßen / Kind regards,<br><br>Eugen Wiens<br>JUMO GmbH &amp; Co. KG<br><br>Hinweis: Dies ist eine automatische Antwort auf Ihre Nachricht <b>"RE: Slave in BootStrap-State versetzen [Ticket#707786]"</b><b>.</b><br></p><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dimitrios Charisiadis, Dr. Steffen Hoßfeld<br> Ust.-Id.-Nr.: DE 112411234</p>

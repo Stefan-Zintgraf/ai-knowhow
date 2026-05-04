@@ -1,0 +1,116 @@
+### HEADER
+Id=8693
+Link=http://at-zammad/#ticket/zoom/8693
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=YASKAWA Europe GmbH (ID=174, Number=60502, Country=DE)
+Commission=VIPA, PLC (ID=197, Number=197)
+Number=708693
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=azhar.iftikhar@yaskawa.eu (ID=2330, FirstName=Azhar, LastName=Iftikhar)
+CreatedBy=azhar.iftikhar@yaskawa.eu (ID=2330, FirstName=Azhar, LastName=Iftikhar)
+Type=
+TimeUnit=
+CreatedAt=20.08.2024 08:14:35 +00:00
+UpdatedAt=23.08.2024 06:08:06 +00:00
+CloseAt=23.08.2024 06:08:06 +00:00
+ArticlesCount=3
+
+### TITLE
+mismatch analyzer
+
+### ARTICLE00_HEADER
+Id=48792
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.08.2024 08:14:35 +00:00
+UpdatedAt=20.08.2024 08:14:38 +00:00
+
+### ARTICLE00_SUBJECT
+mismatch analyzer
+
+### ARTICLE00_BODY
+<div>
+<p>Hello Mr Gaenzer,</p>
+<p>I hope you are doing well. I would like to ask about the mismatch analyzer. If the master is connected to a controller without performing a bus scan, it does not show a mismatch warning even though there is a mismatched device. For reference, I am attaching a video.</p>
+<p> </p>
+<p>Regards,</p>
+<p>Azhar Iftikhar</p>
+</div><br>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------------<br> Geschaeftsfuehrer/Managing Directors: Marcus Mead, Bobbie Linkenbach <br> Amtsgericht/Local Court: Frankfurt, Commercial register no. 88369 <br> Headquarter: YASKAWA Europe GmbH, Philipp-Reis-Str. 6, D-65795 Hattersheim<br> ------------------------------------------------------------------------------------------------------------------------------<br> CONFIDENTIALITY: This e-mail and any attachments are confidential and may also be privileged.<br> If you are not the named recipient, please notify the sender immediately and do not disclose the contents to another person,<br> use it for any purpose, or store or copy the information in any medium.
+
+### ARTICLE01_HEADER
+Id=48798
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.08.2024 11:10:41 +00:00
+UpdatedAt=20.08.2024 11:10:45 +00:00
+
+### ARTICLE01_SUBJECT
+mismatch analyzer
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>this is correct, because it is not a "real" mismatch on EtherCAT level. It is just an invalid configuration of the MDP slave. <span>The slave reports this error as a state machine error. In my case "Invalid Input Configuration".</span>
+</div><div><br></div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/8693/48798/202424?view=inline"><br>
+</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, August 20, 2024 at 10:14:35 AM, Azhar Iftikhar wrote:<br><br><div>
+<p>Hello Mr Gaenzer,</p>
+<p>I hope you are doing well. I would like to ask about the mismatch analyzer. If the master is connected to a controller without performing a bus scan, it does not show a mismatch warning even though there is a mismatched device. For reference, I am attaching a video.</p>
+<p> </p>
+<p>Regards,</p>
+<p>Azhar Iftikhar</p>
+</div>
+<br>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------------<br> Geschaeftsfuehrer/Managing Directors: Marcus Mead, Bobbie Linkenbach <br> Amtsgericht/Local Court: Frankfurt, Commercial register no. 88369 <br> Headquarter: YASKAWA Europe GmbH, Philipp-Reis-Str. 6, D-65795 Hattersheim<br> ------------------------------------------------------------------------------------------------------------------------------<br> CONFIDENTIALITY: This e-mail and any attachments are confidential and may also be privileged.<br> If you are not the named recipient, please notify the sender immediately and do not disclose the contents to another person,<br> use it for any purpose, or store or copy the information in any medium.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=48799
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.08.2024 11:11:37 +00:00
+UpdatedAt=20.08.2024 11:11:37 +00:00
+
+### ARTICLE02_SUBJECT
+Automatische Antwort: mismatch analyzer [Ticket#708693]
+
+### ARTICLE02_BODY
+<div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p><span>ich bin bis einschließlich 23.August 2023 nicht im Büro. Eingehende Nachrichten werden während dieser Zeit nicht gelesen.<br>
+<br> Mit freundlichen Grüßen<br>
+<br> Sascha Reiter<br>
+<br> English:<br>
+<br> Dear Ladies and gentleman, <br><br>I'm not in office until 08/23/2024. Incoming message are not read.<br>
+<br> With kindest regards<br>
+<br> Sascha Reiter </span></p>
+<p> </p>
+</div><br>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------------<br> Geschaeftsfuehrer/Managing Directors: Marcus Mead, Bobbie Linkenbach <br> Amtsgericht/Local Court: Frankfurt, Commercial register no. 88369 <br> Headquarter: YASKAWA Europe GmbH, Philipp-Reis-Str. 6, D-65795 Hattersheim<br> ------------------------------------------------------------------------------------------------------------------------------<br> CONFIDENTIALITY: This e-mail and any attachments are confidential and may also be privileged.<br> If you are not the named recipient, please notify the sender immediately and do not disclose the contents to another person,<br> use it for any purpose, or store or copy the information in any medium.

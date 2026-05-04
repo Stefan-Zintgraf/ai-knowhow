@@ -1,0 +1,160 @@
+### HEADER
+Id=12032
+Link=http://at-zammad/#ticket/zoom/12032
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Albrecht Roeders GmbH & Co. KG (ID=85, Number=45020, Country=DE)
+Commission=Röders, Maschinensteuerung (ID=92, Number=92)
+Number=7012032
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=renken.michael@roeders.de (ID=354, FirstName=Miachel, LastName=Renken)
+CreatedBy=renken.michael@roeders.de (ID=354, FirstName=Miachel, LastName=Renken)
+Type=
+TimeUnit=
+CreatedAt=04.12.2025 13:24:36 +00:00
+UpdatedAt=19.12.2025 07:01:49 +00:00
+CloseAt=19.12.2025 07:01:49 +00:00
+ArticlesCount=2
+
+### TITLE
+Beckhoff EL9410 - Löschen der Variablen geht nicht mehr
+
+### ARTICLE00_HEADER
+Id=69351
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.12.2025 13:24:36 +00:00
+UpdatedAt=04.12.2025 13:24:41 +00:00
+
+### ARTICLE00_SUBJECT
+Beckhoff EL9410 - Löschen der Variablen geht nicht mehr
+
+### ARTICLE00_BODY
+<div>
+<div>
+<p>Hallo Herr Feifel,</p>
+<p> </p>
+<p>können Sie uns mit einem kleinen Problem helfen.</p>
+<p> </p>
+<p>Wenn in unseren Maschinen die Beckhoff IO-Inseln zu groß werden, speisen wir</p>
+<p>den E-Bus mit der Klemme EL9410 nach.</p>
+<p> </p>
+<p>Bei dieser Klemme haben wir aber immer die Einträge in den PDOs gelöscht,</p>
+<p>bzw. die Variablen gelöscht.</p>
+<p>Sonst gab es mit unserer Steuerung ein Problem mit den Offsets des Datenimages.</p>
+<p> </p>
+<p>Diese Klemme hat genau 2 Statusbits (Unterspannung auf Us und Up). Damit verschieben sich aber die folgenden Datenbits so, dass sie nicht mehr so leicht in Byte-Blöcken zugreifbar sind.</p>
+<p> </p>
+<p>Mit der neuen Variante ist unserem Herrn Enkelmann aufgefallen, dass man die im Reiter „Variables“ nicht mehr löschen, bzw. im Reiter „PDO“ deaktivieren kann, da benötigte Felder ausgegraut sind.</p>
+<p> </p>
+<p><img style="max-width:100%;width:11.3125in;max-height:7.5312in;" src="/api/v1/ticket_attachment/12032/69351/290680?view=inline"></p>
+<p> </p>
+<p>Bzw.</p>
+<p> </p>
+<p><img style="max-width:100%;width:11.3125in;max-height:7.5312in;" src="/api/v1/ticket_attachment/12032/69351/290681?view=inline"></p>
+<p> </p>
+<p>Gibt es sonst eine Variante, den Slave ohne Bits im Process Data Image zu verwenden?</p>
+<p> </p>
+<p>Vielen Dank für die Auskunft,</p>
+<p> </p>
+</div>
+<p> </p>
+<p>Mit freundlichen Grüßen,</p>
+<p><b>Michael Renken</b><span><br>
+</span>Dipl.-Ing.</p>
+<p><span>ENTWICKLUNG STEUERUNG UND ANTRIEBE <br> DEVELOPMENT CONTROL AND DRIVES</span></p>
+<p><a href="mailto:renken.michael@roeders.de"><span style="color:#0563c1;">renken.michael@roeders.de</span></a><span><br> Telefon +49 5191 603 448</span></p>
+<p>Mobil +49 176 1603 4035</p>
+<p> </p>
+<p><b>Röders GmbH / Gottlieb-Daimler-Straße 6 / 29614 Soltau</b><span>
+<br>
+<a href="http://www.roeders.de/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">www.roeders.de</span></a></span></p>
+<p><b> </b></p>
+<p><b>Social Media Machines / Shop Röders Zinn</b></p>
+<p><a href="https://www.linkedin.com/company/roeders-machines" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/roeders-machines" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;width:.3333in;max-height:.3333in;" src="/api/v1/ticket_attachment/12032/69351/290682?view=inline"></span></a> <a href="https://www.instagram.com/roedersmachines/" rel="nofollow noreferrer noopener" title="https://www.instagram.com/roedersmachines/" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;width:.3333in;max-height:.3333in;" src="/api/v1/ticket_attachment/12032/69351/290683?view=inline"></span></a> <a href="https://www.youtube.com/user/roedersTEC" rel="nofollow noreferrer noopener" title="https://www.youtube.com/user/roedersTEC" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;width:.3333in;max-height:.3333in;" src="/api/v1/ticket_attachment/12032/69351/290684?view=inline"></span></a> <a href="https://www.facebook.com/roedersmachines" rel="nofollow noreferrer noopener" title="https://www.facebook.com/roedersmachines" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;width:.3333in;max-height:.3333in;" src="/api/v1/ticket_attachment/12032/69351/290685?view=inline"></span></a> <a href="https://www.amazon.de/roeders" rel="nofollow noreferrer noopener" title="https://www.amazon.de/roeders" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;width:.3333in;max-height:.3333in;" src="/api/v1/ticket_attachment/12032/69351/290686?view=inline"></span></a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=69367
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.12.2025 06:32:04 +00:00
+UpdatedAt=05.12.2025 06:32:10 +00:00
+
+### ARTICLE01_SUBJECT
+Beckhoff EL9410 - Löschen der Variablen geht nicht mehr
+
+### ARTICLE01_BODY
+Hallo Herr Renken,<div><br></div><div>das liegt daran, dass die PDOs als mandatory und fixed im ESI deklariert sind. Das heißt, die darf man nicht löschen und ändern. Das war in alten Versionen ein Bug, dass das teilweise ging. Das sollte aber schon länger behoben sein. Also mit der 4.0 und mit den neueren 3.9 Versionen ging das auch schon nicht mehr. </div><div>Sie können entweder das ESI patchen, was aber eigentlich nicht zu empfehlen ist. Oder Sie alignen Ihr Prozessdatenabbild im Engineer über das EMI anders. </div><div>Oder Sie arbeiten mit MSUs oder Pinned Groups um die Variablen auf die gewünschten Offsets zu mappen. Wenn Sie mir Ihr Projekt zusenden und beschreiben was Sie erreichen möchten, kann ich Ihnen damit auch gerne helfen.</div><div><br></div><div>Viele Grüße</div><div>Kai Feifel<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, December 4, 2025 at 2:24:36 PM, Miachel Renken wrote:<br><br><div>
+<div>
+<p>Hallo Herr Feifel,</p>
+<p> </p>
+<p>können Sie uns mit einem kleinen Problem helfen.</p>
+<p> </p>
+<p>Wenn in unseren Maschinen die Beckhoff IO-Inseln zu groß werden, speisen wir</p>
+<p>den E-Bus mit der Klemme EL9410 nach.</p>
+<p> </p>
+<p>Bei dieser Klemme haben wir aber immer die Einträge in den PDOs gelöscht,</p>
+<p>bzw. die Variablen gelöscht.</p>
+<p>Sonst gab es mit unserer Steuerung ein Problem mit den Offsets des Datenimages.</p>
+<p> </p>
+<p>Diese Klemme hat genau 2 Statusbits (Unterspannung auf Us und Up). Damit verschieben sich aber die folgenden Datenbits so, dass sie nicht mehr so leicht in Byte-Blöcken zugreifbar sind.</p>
+<p> </p>
+<p>Mit der neuen Variante ist unserem Herrn Enkelmann aufgefallen, dass man die im Reiter „Variables“ nicht mehr löschen, bzw. im Reiter „PDO“ deaktivieren kann, da benötigte Felder ausgegraut sind.</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:11.3125in;max-height:7.5312in;" src="/api/v1/ticket_attachment/12032/69367/290794?view=inline"></p>
+<p> </p>
+<p>Bzw.</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:11.3125in;max-height:7.5312in;" src="/api/v1/ticket_attachment/12032/69367/290795?view=inline"></p>
+<p> </p>
+<p>Gibt es sonst eine Variante, den Slave ohne Bits im Process Data Image zu verwenden?</p>
+<p> </p>
+<p>Vielen Dank für die Auskunft,</p>
+<p> </p>
+</div>
+<p> </p>
+<p>Mit freundlichen Grüßen,</p>
+<p><b>Michael Renken</b><span><br>
+</span>Dipl.-Ing.</p>
+<p><span>ENTWICKLUNG STEUERUNG UND ANTRIEBE <br> DEVELOPMENT CONTROL AND DRIVES</span></p>
+<p><a href="mailto:renken.michael@roeders.de"><span style="color:#0563c1;">renken.michael@roeders.de</span></a><span><br> Telefon +49 5191 603 448</span></p>
+<p>Mobil +49 176 1603 4035</p>
+<p> </p>
+<p><b>Röders GmbH / Gottlieb-Daimler-Straße 6 / 29614 Soltau</b><span>
+<br>
+<a href="http://www.roeders.de/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">www.roeders.de</span></a></span></p>
+<p><b> </b></p>
+<p><b>Social Media Machines / Shop Röders Zinn</b></p>
+<p><a href="https://www.linkedin.com/company/roeders-machines" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/roeders-machines" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;max-width:100%;width:.3333in;max-height:.3333in;" src="/api/v1/ticket_attachment/12032/69367/290796?view=inline"></span></a> <a href="https://www.instagram.com/roedersmachines/" rel="nofollow noreferrer noopener" title="https://www.instagram.com/roedersmachines/" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;max-width:100%;width:.3333in;max-height:.3333in;" src="/api/v1/ticket_attachment/12032/69367/290797?view=inline"></span></a> <a href="https://www.youtube.com/user/roedersTEC" rel="nofollow noreferrer noopener" title="https://www.youtube.com/user/roedersTEC" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;max-width:100%;width:.3333in;max-height:.3333in;" src="/api/v1/ticket_attachment/12032/69367/290798?view=inline"></span></a> <a href="https://www.facebook.com/roedersmachines" rel="nofollow noreferrer noopener" title="https://www.facebook.com/roedersmachines" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;max-width:100%;width:.3333in;max-height:.3333in;" src="/api/v1/ticket_attachment/12032/69367/290799?view=inline"></span></a> <a href="https://www.amazon.de/roeders" rel="nofollow noreferrer noopener" title="https://www.amazon.de/roeders" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;max-width:100%;width:.3333in;max-height:.3333in;" src="/api/v1/ticket_attachment/12032/69367/290800?view=inline"></span></a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

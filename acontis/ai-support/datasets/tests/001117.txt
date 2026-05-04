@@ -1,0 +1,109 @@
+### HEADER
+Id=1117
+Link=http://at-zammad/#ticket/zoom/1117
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Homag GmbH (ID=105, Number=53513, Country=DE)
+Commission=Homag, Power Control (ID=118, Number=118)
+Number=701117
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=kurt.demarco@homag.com (ID=197, FirstName=Kurt, LastName=De Marco)
+CreatedBy=kurt.demarco@homag.com (ID=197, FirstName=Kurt, LastName=De Marco)
+Type=
+TimeUnit=
+CreatedAt=28.07.2021 07:18:56 +00:00
+UpdatedAt=28.07.2021 11:57:04 +00:00
+CloseAt=28.07.2021 11:57:04 +00:00
+ArticlesCount=3
+
+### TITLE
+EC-Engineer ohne Dongle
+
+### ARTICLE00_HEADER
+Id=6168
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.07.2021 07:18:56 +00:00
+UpdatedAt=28.07.2021 07:19:00 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Engineer ohne Dongle
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Paul,</p>
+<p> </p>
+<p>zur weiteren Evaluierung des EC-Simulator wäre es hilfreich, wenn ich die Möglichkeit hätte den EC-Engineer ohne Dongle auf einer virtuellen Maschine auf einem VMWare ESX-Server zu nutzen. Ich habe jedoch keinen physikalischen zu dem System.</p>
+<p> </p>
+<p>Der Hintergrund ist der, dass der EC-Simulator bei uns im Haus evtl. im Bereich der virtuellen Inbetriebnahme und/oder im Bereich der Teachware zum Einsatz kommen könnte. Dort gibt es Überlegungen die komplette Maschinensteuerung zu virtualisieren.</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / With best regards<br>HOMAG GmbH <br>Schopfloch, Germany<br><br>Kurt De Marco <br>Software &amp; Control Platform<br>Digital Factory<br><br>Phone +49 7443 13 - 3305 <br><u>Kurt.DeMarco@homag.com</u><br><br><a href="https://www.homag.com/" rel="nofollow noreferrer noopener" title="https://www.homag.com/" target="_blank"><img border="0" style="max-width:100%;width:1.8958in;max-height:.6354in;width:182px;max-height:61px;" src="/api/v1/ticket_attachment/1117/6168/22628?view=inline"></a><br><br><a href="https://www.facebook.com/HOMAG/" rel="nofollow noreferrer noopener" title="https://www.facebook.com/HOMAG/" target="_blank"><img border="0" style="max-width:100%;width:.3333in;max-height:.2291in;width:32px;max-height:22px;" src="/api/v1/ticket_attachment/1117/6168/22629?view=inline"></a><a href="http://www.linkedin.com/company/homag" rel="nofollow noreferrer noopener" title="http://www.linkedin.com/company/homag" target="_blank"><img border="0" style="max-width:100%;width:.3333in;max-height:.2291in;width:32px;max-height:22px;" src="/api/v1/ticket_attachment/1117/6168/22630?view=inline"></a><a href="https://twitter.com/HOMAG" rel="nofollow noreferrer noopener" title="https://twitter.com/HOMAG" target="_blank"><img border="0" style="max-width:100%;width:.3333in;max-height:.2291in;width:32px;max-height:22px;" src="/api/v1/ticket_attachment/1117/6168/22631?view=inline"></a><a href="https://www.xing.com/company/homag" rel="nofollow noreferrer noopener" title="https://www.xing.com/company/homag" target="_blank"><img border="0" style="max-width:100%;width:.3333in;max-height:.2291in;width:32px;max-height:22px;" src="/api/v1/ticket_attachment/1117/6168/22632?view=inline"></a><a href="https://www.youtube.com/user/homaggroup" rel="nofollow noreferrer noopener" title="https://www.youtube.com/user/homaggroup" target="_blank"><img border="0" style="max-width:100%;width:.3333in;max-height:.2291in;width:32px;max-height:22px;" src="/api/v1/ticket_attachment/1117/6168/22633?view=inline"></a><a href="https://www.instagram.com/homag.group/" rel="nofollow noreferrer noopener" title="https://www.instagram.com/homag.group/" target="_blank"><img border="0" style="max-width:100%;width:.2291in;max-height:.2291in;width:22px;max-height:22px;" src="/api/v1/ticket_attachment/1117/6168/22634?view=inline"></a><br><br><b>HOMAG GmbH <br></b>Gesellschaft mit beschränkter Haftung mit Sitz in D-72296 Schopfloch, Homagstraße 3 - 5; Registergericht Stuttgart HRB 735174<br>Geschäftsführer: Marco Huber, Dr. Sergej Schwarz (Sprecher), Dr. Markus Vöge<br>Vorsitzender des Aufsichtsrats: Rainer Gausepohl<br><br>Datenschutzhinweise: <a href="https://www.homag.com/fileadmin/policy/Informationspflichten-nach-Artikel-13-DSGVO-20180613.pdf" rel="nofollow noreferrer noopener" title="https://www.homag.com/fileadmin/policy/Informationspflichten-nach-Artikel-13-DSGVO-20180613.pdf" target="_blank">Art. 13 DSGVO</a> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=6171
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.07.2021 08:26:30 +00:00
+UpdatedAt=28.07.2021 08:26:31 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Engineer ohne Dongle
+
+### ARTICLE01_BODY
+<div>Hallo Kurt,</div><div><br></div><div>wie telefonisch besprochen, kann der Dongle wie im Handbuch beschrieben per Floating License verwendet werden.</div><div><br></div><div>Viele Grüße</div><div>Paul</div><div><br></div><div data-signature="true" data-signature-id="2"></div>
+
+### ARTICLE02_HEADER
+Id=6195
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.07.2021 11:47:00 +00:00
+UpdatedAt=28.07.2021 11:47:00 +00:00
+
+### ARTICLE02_SUBJECT
+AW: EC-Engineer ohne Dongle [Ticket#701117]
+
+### ARTICLE02_BODY
+<div>
+<p>Hallo Paul,</p>
+<p> </p>
+<p>alles klar. Das hat soweit funktioniert und hilft mir echt weiter. Super!</p>
+<p> </p>
+<p>Leider ist es mir nicht gelungen meinen Entwicklungsrechner als Lizenzserver in Betrieb zu nehmen bzw. mich erfolgreich darauf zu verbinden.</p>
+<p> </p>
+<p>Ich fürchte da macht mir meine IT einen Strich durch die Rechnung. Firewall habe ich gecheckt:</p>
+<p> </p>
+<p><img style="max-width:100%;width:6.2708in;max-height:.427in;width:602px;max-height:41px;" src="/api/v1/ticket_attachment/1117/6195/22719?view=inline"></p>
+<p> </p>
+<div>
+<p>Habt ihr vielleicht noch eine Idee? Ist aber nicht so wichtig, wäre für mich halt die universellste Lösung.</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / With best regards<br>HOMAG GmbH <br>Schopfloch, Germany<br><br>Kurt De Marco <br>Software &amp; Control Platform<br>Digital Factory<br><br>Phone +49 7443 13 - 3305 <br><u>Kurt.DeMarco@homag.com</u><br><br><a href="https://www.homag.com/" rel="nofollow noreferrer noopener" title="https://www.homag.com/" target="_blank"><img border="0" style="max-width:100%;width:1.8958in;max-height:.6354in;width:182px;max-height:61px;" src="/api/v1/ticket_attachment/1117/6195/22720?view=inline"></a><br><br><a href="https://www.facebook.com/HOMAG/" rel="nofollow noreferrer noopener" title="https://www.facebook.com/HOMAG/" target="_blank"><img border="0" style="max-width:100%;width:.3333in;max-height:.2291in;width:32px;max-height:22px;" src="/api/v1/ticket_attachment/1117/6195/22721?view=inline"></a><a href="http://www.linkedin.com/company/homag" rel="nofollow noreferrer noopener" title="http://www.linkedin.com/company/homag" target="_blank"><img border="0" style="max-width:100%;width:.3333in;max-height:.2291in;width:32px;max-height:22px;" src="/api/v1/ticket_attachment/1117/6195/22722?view=inline"></a><a href="https://twitter.com/HOMAG" rel="nofollow noreferrer noopener" title="https://twitter.com/HOMAG" target="_blank"><img border="0" style="max-width:100%;width:.3333in;max-height:.2291in;width:32px;max-height:22px;" src="/api/v1/ticket_attachment/1117/6195/22723?view=inline"></a><a href="https://www.xing.com/company/homag" rel="nofollow noreferrer noopener" title="https://www.xing.com/company/homag" target="_blank"><img border="0" style="max-width:100%;width:.3333in;max-height:.2291in;width:32px;max-height:22px;" src="/api/v1/ticket_attachment/1117/6195/22724?view=inline"></a><a href="https://www.youtube.com/user/homaggroup" rel="nofollow noreferrer noopener" title="https://www.youtube.com/user/homaggroup" target="_blank"><img border="0" style="max-width:100%;width:.3333in;max-height:.2291in;width:32px;max-height:22px;" src="/api/v1/ticket_attachment/1117/6195/22725?view=inline"></a><a href="https://www.instagram.com/homag.group/" rel="nofollow noreferrer noopener" title="https://www.instagram.com/homag.group/" target="_blank"><img border="0" style="max-width:100%;width:.2291in;max-height:.2291in;width:22px;max-height:22px;" src="/api/v1/ticket_attachment/1117/6195/22726?view=inline"></a><br><br><b>HOMAG GmbH <br></b>Gesellschaft mit beschränkter Haftung mit Sitz in D-72296 Schopfloch, Homagstraße 3 - 5; Registergericht Stuttgart HRB 735174<br>Geschäftsführer: Marco Huber, Dr. Sergej Schwarz (Sprecher), Dr. Markus Vöge<br>Vorsitzender des Aufsichtsrats: Rainer Gausepohl<br><br>Datenschutzhinweise: <a href="https://www.homag.com/fileadmin/policy/Informationspflichten-nach-Artikel-13-DSGVO-20180613.pdf" rel="nofollow noreferrer noopener" title="https://www.homag.com/fileadmin/policy/Informationspflichten-nach-Artikel-13-DSGVO-20180613.pdf" target="_blank">Art. 13 DSGVO</a> </p>
+</div>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Paul Bußmann via EC-Support &lt;ecsupport@acontis.com&gt; <br><b>Gesendet:</b> Mittwoch, 28. Juli 2021 10:27<br><b>An:</b> De Marco, Kurt &lt;Kurt.DeMarco@homag.com&gt;<br><b>Betreff:</b> RE: EC-Engineer ohne Dongle [Ticket#701117]</p>
+</div>
+<p> </p>
+<div>
+<p>Hallo Kurt,</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>wie telefonisch besprochen, kann der Dongle wie im Handbuch beschrieben per Floating License verwendet werden.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Viele Grüße</p>
+</div>
+<div>
+<p>Paul</p>
+</div>
+<div> <p> </p>
+</div>
+</div>

@@ -1,0 +1,199 @@
+### HEADER
+Id=8143
+Link=http://at-zammad/#ticket/zoom/8143
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=708143
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=22.05.2024 08:05:28 +00:00
+UpdatedAt=22.05.2024 08:23:46 +00:00
+CloseAt=22.05.2024 08:23:46 +00:00
+ArticlesCount=3
+
+### TITLE
+[URGENT Confirmation] ".NET Core" is not necessary for Mitsubishi's application installer?
+
+### ARTICLE00_HEADER
+Id=44911
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.05.2024 08:05:29 +00:00
+UpdatedAt=22.05.2024 08:05:31 +00:00
+
+### ARTICLE00_SUBJECT
+[URGENT Confirmation] ".NET Core" is not necessary for Mitsubishi's application installer?
+
+### ARTICLE00_BODY
+<div>
+<div>Hi Support Team,</div>
+<div> </div>
+<div>* Mitsubishi has already asked this question before, but they would like to make it more clearly, so please answer about the following question.</div>
+<div> </div>
+<div>Is it not necessary to include ".NET Core" if Mitsubishi develops using the SDK for ".NET Framework"?</div>
+<div>In other words, can Mitsubishi develop their applications using only .NET Framework 4?</div>
+<div> </div>
+<div>Mitsubishi would not like to include ".NET Core" into their Application installer for their end customers.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+</div><div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=44912
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.05.2024 08:17:56 +00:00
+UpdatedAt=22.05.2024 08:17:59 +00:00
+
+### ARTICLE01_SUBJECT
+[URGENT Confirmation] ".NET Core" is not necessary for Mitsubishi's application installer?
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>no, Mitsubishi does not have to include .NET Core into their Application installer. .NET Framework 4 is enough. There is no .NET Core library included in their package.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, May 22, 2024 at 10:05:29 AM, Yuichi Ide wrote:<br><br><div>
+<div>Hi Support Team,</div>
+<div> </div>
+<div>* Mitsubishi has already asked this question before, but they would like to make it more clearly, so please answer about the following question.</div>
+<div> </div>
+<div>Is it not necessary to include ".NET Core" if Mitsubishi develops using the SDK for ".NET Framework"?</div>
+<div>In other words, can Mitsubishi develop their applications using only .NET Framework 4?</div>
+<div> </div>
+<div>Mitsubishi would not like to include ".NET Core" into their Application installer for their end customers.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+</div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=44913
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.05.2024 08:23:18 +00:00
+UpdatedAt=22.05.2024 08:23:18 +00:00
+
+### ARTICLE02_SUBJECT
+Re: [URGENT Confirmation] ".NET Core" is not necessary for Mitsubishi's application installer? [Ticket#708143]
+
+### ARTICLE02_BODY
+Hi Kai, <div> </div><div>Thank you very much for your cooperation!</div><div>I see, I inform your answer to Mitsubishi.</div><div> </div><div>Best regards,</div><div>Yuichi</div><div> </div><div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<br>
+<blockquote type="cite">
+<div>2024/05/22 17:17、Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt;のメール:</div>
+<br>
+<div>Hi,<div> </div>
+<div>no, Mitsubishi does not have to include .NET Core into their Application installer. .NET Framework 4 is enough. There is no .NET Core library included in their package.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai<br>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Wednesday, May 22, 2024 at 10:05:29 AM, Yuichi Ide wrote:<br>
+<br>
+<div>
+<div>Hi Support Team,</div>
+<div> </div>
+<div>* Mitsubishi has already asked this question before, but they would like to make it more clearly, so please answer about the following question.</div>
+<div> </div>
+<div>Is it not necessary to include ".NET Core" if Mitsubishi develops using the SDK for ".NET Framework"?</div>
+<div>In other words, can Mitsubishi develop their applications using only .NET Framework 4?</div>
+<div> </div>
+<div>Mitsubishi would not like to include ".NET Core" into their Application installer for their end customers.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+</div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

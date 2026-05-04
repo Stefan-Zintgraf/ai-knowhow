@@ -1,0 +1,118 @@
+### HEADER
+Id=9033
+Link=http://at-zammad/#ticket/zoom/9033
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Robert Bosch GmbH (ID=149, Number=40339, Country=DE)
+Commission=Robert Bosch, Testing Systems (ID=168, Number=168)
+Number=709033
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=dennis.ganz@de.bosch.com (ID=1259, FirstName=Dennis, LastName=Ganz)
+CreatedBy=dennis.ganz@de.bosch.com (ID=1259, FirstName=Dennis, LastName=Ganz)
+Type=
+TimeUnit=
+CreatedAt=09.10.2024 06:51:14 +00:00
+UpdatedAt=18.10.2024 09:42:34 +00:00
+CloseAt=18.10.2024 09:42:34 +00:00
+ArticlesCount=2
+
+### TITLE
+Anpassung Init-Parameter bei Nutzung Sync Unit Multiplier
+
+### ARTICLE00_HEADER
+Id=51110
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.10.2024 06:51:14 +00:00
+UpdatedAt=09.10.2024 06:51:17 +00:00
+
+### ARTICLE00_SUBJECT
+Anpassung Init-Parameter bei Nutzung Sync Unit Multiplier
+
+### ARTICLE00_BODY
+<p> </p><div> <p>Hallo,</p>
+<p> </p>
+<p>wir möchten einen Rexroth IndraDrive CS Achsregler an unserem EtherCAT-Bus betreiben, der mit 250 us bus cycle time läuft. Der HCS01 unterstützt allerdings nur min. 500 us.</p>
+<p> </p>
+<p>Daher wollten wir den Sync Unit Cycle multiplier/divider für den Regler anpassen.</p>
+<p> </p>
+<p><img style="max-width:100%;width:6.5625in;max-height:2.4375in;width:630px;max-height:234px;" src="/api/v1/ticket_attachment/9033/51110/212560?view=inline"></p>
+<p> </p>
+<p>Das funktioniert prinzipiell, allerdings erhalten wir beim Initialisieren einen Fehler, dass die Sercos Cycle Time &lt; der Bus Cycle Time ist.</p>
+<p> </p>
+<p>Die Sercos Cycle Time wird über die Init-Parameter festgelegt und vom EC-Engineer automatisch an die Bus Cycle Time angepasst. Wenn der Multiplier/Divider genutzt wird, ändert sich die Zeit aber leider nicht. Ein manuelles Einstellen ist auch nicht möglich.</p>
+<p> </p>
+<p><img style="max-width:100%;width:9.1979in;max-height:2.4479in;width:883px;max-height:235px;" src="/api/v1/ticket_attachment/9033/51110/212559?view=inline"></p>
+<p> </p>
+<p>Können Sie das anpassen, so dass die Werte geändert werden, wenn ein Multiplier eingestellt wird?</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards <br> <br> <b>Dennis Ganz </b>
+<br> <br> (BhP/TEF-EAT33-BAS) <br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bosch.com</span></a> <br> Tel. +49 8323 20-3958 | Mobil +49 173 4067341 | <a href="mailto:Dennis.Ganz@de.bosch.com"> <span style="color:blue;">Dennis.Ganz@de.bosch.com</span></a> </span><span>
+<br> <br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000; <br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; <br> Geschäftsführung: Dr. Stefan Hartung, Dr. Christian Fischer, Dr. Markus Forschner, <br> Stefan Grosch, Dr. Markus Heyn, Dr. Frank Meyer, Katja von Raven, Dr. Tanja Rückert </span><span>
+<br> ​ </span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=51114
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.10.2024 07:37:39 +00:00
+UpdatedAt=09.10.2024 07:37:41 +00:00
+
+### ARTICLE01_SUBJECT
+Anpassung Init-Parameter bei Nutzung Sync Unit Multiplier
+
+### ARTICLE01_BODY
+Hallo Herr Ganz,<div><br></div><div>Die InitCmd greifen auf Objekten, die sicher in der Dokumentation des Antriebs beschrieben sind. Ich müsste auch diese Doku lesen. Vielleicht können Sie aber die Frage an Ihren Rexroth <span>Kollegen</span><span> </span><span>stellen.</span>
+</div><div><span><br></span></div><div>
+<span>Die DC Zeit ist wahrscheinlich richtig gestellt. Eine andere Frage ist ob der Antrieb es unterstützt zyklische Prozessdaten mit 250us Zyklus zu bekommen. Wenn nicht, müssten Sie eine langsamere Task anlegen und sie jeden zweiten Zyklus mit </span><span style=" color: rgba(0, 0, 0, 0.87);">eUsrJob_SendCycFrames</span><span style=" color: rgba(0, 0, 0, 0.87);">ByTaskId </span><span>verschicken.</span>
+</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, October 9, 2024 at 8:51:14 AM, Dennis Ganz wrote:<br><br><p> </p>
+<div> <p>Hallo,</p>
+<p> </p>
+<p>wir möchten einen Rexroth IndraDrive CS Achsregler an unserem EtherCAT-Bus betreiben, der mit 250 us bus cycle time läuft. Der HCS01 unterstützt allerdings nur min. 500 us.</p>
+<p> </p>
+<p>Daher wollten wir den Sync Unit Cycle multiplier/divider für den Regler anpassen.</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:6.5625in;max-height:2.4375in;width:630px;max-height:234px;" src="/api/v1/ticket_attachment/9033/51114/212571?view=inline"></p>
+<p> </p>
+<p>Das funktioniert prinzipiell, allerdings erhalten wir beim Initialisieren einen Fehler, dass die Sercos Cycle Time &lt; der Bus Cycle Time ist.</p>
+<p> </p>
+<p>Die Sercos Cycle Time wird über die Init-Parameter festgelegt und vom EC-Engineer automatisch an die Bus Cycle Time angepasst. Wenn der Multiplier/Divider genutzt wird, ändert sich die Zeit aber leider nicht. Ein manuelles Einstellen ist auch nicht möglich.</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:9.1979in;max-height:2.4479in;width:883px;max-height:235px;" src="/api/v1/ticket_attachment/9033/51114/212572?view=inline"></p>
+<p> </p>
+<p>Können Sie das anpassen, so dass die Werte geändert werden, wenn ein Multiplier eingestellt wird?</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards <br> <br> <b>Dennis Ganz </b>
+<br> <br> (BhP/TEF-EAT33-BAS) <br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bosch.com</span></a> <br> Tel. +49 8323 20-3958 | Mobil +49 173 4067341 | <a href="mailto:Dennis.Ganz@de.bosch.com"> <span style="color:blue;">Dennis.Ganz@de.bosch.com</span></a> </span><span>
+<br> <br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000; <br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; <br> Geschäftsführung: Dr. Stefan Hartung, Dr. Christian Fischer, Dr. Markus Forschner, <br> Stefan Grosch, Dr. Markus Heyn, Dr. Frank Meyer, Katja von Raven, Dr. Tanja Rückert </span><span>
+<br> ​ </span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

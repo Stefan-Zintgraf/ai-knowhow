@@ -1,0 +1,185 @@
+### HEADER
+Id=10915
+Link=http://at-zammad/#ticket/zoom/10915
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=none
+Commission=none
+Number=7010915
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=roland.schenk@csa.ch (ID=3396, FirstName=Roland, LastName=Schenk)
+CreatedBy=roland.schenk@csa.ch (ID=3396, FirstName=Roland, LastName=Schenk)
+Type=
+TimeUnit=
+CreatedAt=02.07.2025 11:25:42 +00:00
+UpdatedAt=16.07.2025 06:07:19 +00:00
+CloseAt=16.07.2025 06:07:19 +00:00
+ArticlesCount=4
+
+### TITLE
+WG: Fehlermeldungen bei EoE Verbindung über Linux EC Master Demo
+
+### ARTICLE00_HEADER
+Id=62526
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.07.2025 11:25:42 +00:00
+UpdatedAt=02.07.2025 11:25:42 +00:00
+
+### ARTICLE00_SUBJECT
+WG: Fehlermeldungen bei EoE Verbindung über Linux EC Master Demo
+
+### ARTICLE00_BODY
+<div>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b><span lang="DE">Von:</span></b><span lang="DE"> Roland Schenk <br>
+<b>Gesendet:</b> Mittwoch, 2. Juli 2025 10:26<br>
+<b>An:</b> Thomas Waggershauser &lt;t.waggershauser@acontis.com&gt;<br>
+<b>Cc:</b> Lorenz Bleuer &lt;Lorenz.Bleuer@csa.ch&gt;<br>
+<b>Betreff:</b> Fehlermeldungen bei EoE Verbindung über Linux EC Master Demo</span></p>
+</div>
+</div>
+<p> </p>
+<p>Guten Tag Herr Waggershauser</p>
+<p> </p>
+<p>Wenn ich über den EC-Engineer auf dem Windows PC eine EoE Vervindung über die EC Master Demo auf Linux zu unserem EC-Slave mit Beckhoff SSC herstelle, erhalte ich manchmal folgende sich wiederholende Fehlermeldungen vom EC-Master auf Linux:</p>
+<p><img style="max-width:100%;width:6.8541in;max-height:2.2812in;width:658px;max-height:219px;" src="/api/v1/ticket_attachment/10915/62526/259611?view=inline"></p>
+<p><span lang="EN-GB">0000133152: ProcessEoEReturningRequest(1001) EoE: Fragment 3/0 sent but returned with WKC = 0 -&gt; No more retries <br> 0000133152: EoE mbox send working counter error - Slave SubDevice_1001 [stadler_ethercat_beckhoff_ssc_poc]: - EtherCAT address=1001 - Command: FPWR - Logical/Physical address: 0x100003e9, WKC act/set=0/1</span></p>
+<p><span lang="EN-GB"><p> </p></span></p>
+<p>Wenn ich den selben EC-Slave direkt am EC-Engineer auf dem Windows PC betreibe, läuft die EoE Verbindung ohne Fehlermaldungen.</p>
+<p> </p>
+<p>Was kann die Ursache für diese Fehlermeldung sein?</p>
+<p> </p>
+<p>Freundliche Grüsse</p>
+<p>Roland Schenk</p>
+<p> </p>
+</div><hr> Confidentiality Note: This message is intended only for the use of the named recipient(s) and may contain confidential and/or privileged information. If you are not the/an intended recipient, please contact the sender and delete this message. Any unauthorized use of the information contained in this message is prohibited.
+
+### ARTICLE01_HEADER
+Id=62528
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=02.07.2025 11:40:25 +00:00
+UpdatedAt=02.07.2025 11:40:25 +00:00
+
+### ARTICLE01_BODY
+Hi Paul, kannst Du mir den abnehmen? Ich muss noch eine RTOSWin Nuss knacken.
+
+### ARTICLE02_HEADER
+Id=62542
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.07.2025 15:28:35 +00:00
+UpdatedAt=02.07.2025 15:28:37 +00:00
+
+### ARTICLE02_SUBJECT
+Fehlermeldungen bei EoE Verbindung über Linux EC Master Demo
+
+### ARTICLE02_BODY
+Guten Tag Herr Schenk,<div><br></div><div>die Meldung "<span><i>EoE: Fragment 3/0 sent but returned with WKC = 0</i></span><span>" bedeutet, dass der Slave die Daten nicht schnell genug verarbeiten kann. </span>
+</div><div>Das ist ein komplexes Thema.</div><div><br></div><div>Oft ist es "nur" das Timing: <span>Wie verhält es sich mit ganz wenig EoE Traffic und unterschiedlichen Buszykluszeiten (1ms / 2ms / 4ms / 16ms)?</span>
+</div><div><div><br></div></div><div>Viele Grüße</div><div>Paul Bußmann</div><div><br></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Mittwoch, 2. Juli 2025 um 13:25:42, schrieb Roland Schenk:<br><br><div>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b><span lang="DE">Von:</span></b><span lang="DE"> Roland Schenk <br>
+<b>Gesendet:</b> Mittwoch, 2. Juli 2025 10:26<br>
+<b>An:</b> Thomas Waggershauser &lt;t.waggershauser@acontis.com&gt;<br>
+<b>Cc:</b> Lorenz Bleuer &lt;Lorenz.Bleuer@csa.ch&gt;<br>
+<b>Betreff:</b> Fehlermeldungen bei EoE Verbindung über Linux EC Master Demo</span></p>
+</div>
+</div>
+<p> </p>
+<p>Guten Tag Herr Waggershauser</p>
+<p> </p>
+<p>Wenn ich über den EC-Engineer auf dem Windows PC eine EoE Vervindung über die EC Master Demo auf Linux zu unserem EC-Slave mit Beckhoff SSC herstelle, erhalte ich manchmal folgende sich wiederholende Fehlermeldungen vom EC-Master auf Linux:</p>
+<p><img style="max-width:100%;max-width:100%;width:6.8541in;max-height:2.2812in;width:658px;max-height:219px;" src="/api/v1/ticket_attachment/10915/62542/259641?view=inline"></p>
+<p><span lang="EN-GB">0000133152: ProcessEoEReturningRequest(1001) EoE: Fragment 3/0 sent but returned with WKC = 0 -&gt; No more retries <br> 0000133152: EoE mbox send working counter error - Slave SubDevice_1001 [stadler_ethercat_beckhoff_ssc_poc]: - EtherCAT address=1001 - Command: FPWR - Logical/Physical address: 0x100003e9, WKC act/set=0/1</span></p>
+<p><span lang="EN-GB"></span></p>
+<p> </p>
+<p></p>
+<p>Wenn ich den selben EC-Slave direkt am EC-Engineer auf dem Windows PC betreibe, läuft die EoE Verbindung ohne Fehlermaldungen.</p>
+<p> </p>
+<p>Was kann die Ursache für diese Fehlermeldung sein?</p>
+<p> </p>
+<p>Freundliche Grüsse</p>
+<p>Roland Schenk</p>
+<p> </p>
+</div>
+<hr> Confidentiality Note: This message is intended only for the use of the named recipient(s) and may contain confidential and/or privileged information. If you are not the/an intended recipient, please contact the sender and delete this message. Any unauthorized use of the information contained in this message is prohibited.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=62543
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=02.07.2025 15:29:26 +00:00
+UpdatedAt=02.07.2025 15:29:26 +00:00
+
+### ARTICLE03_BODY
+Weitere Hinweise:<div><br></div><div>
+<div>
+<div>
+<br>2. Eingrenzung der Ursache: Ist Ihr Slave generell zu langsam in der EoE Verarbeitung oder liegt es an konkreten Datensätzen? </div>
+<div><br></div>
+<div>Zur Klärung der Frage wäre wichtig, wie lange Ihr Slave für die EoE Fragmentverarbeitung benötigt. Technologisch gesehen sind da Mailboxgrößen, die Geschwindigkeit der SPI-Anbindung am ESC und die CPU-Verarbeitungszeit im Mailboxhandler der Slavefirmware von Interesse. Wenn Sie einfache Tests mit verschiedenen Zykluszeiten fahren, gewinnen Sie normalerweise schon eine hilfreiche Aussage zur allgemeinen Performance des Slaves, also ob vereinzelte Mailboxdaten ihn lahm legen oder ob er generell zu langsam ist.</div>
+<div><br></div>
+<div>3. Falls der Slave nicht generell zu langsam ist, liegt es wohl an konkreten Datensätzen, deren Verarbeitung zu lange in Ihrem Slave dauern und dafür ist eine aufwendige, tiefe Analyse nötig.  </div>
+<div>Mit Hilfe der folgenden Anleitung sollten Sie den verursachenden Datensatz als Hinweis darauf, was im Slave lange dauert, selbst finden können.</div>
+</div>
+<div><br></div>
+<div><br></div>
+<div><b>Datenerfassung</b></div>
+<div>- Starten Sie eine Wiresharkaufzeichnung des TAP-Adapters unter Windows. -&gt; Sie beinhaltet die EoE Payload für spätere Auswertungen. </div>
+<div>- Erzeugen Sie eine RAM Disk unter Linux mit ca. 512MB-1GB ("<i>mount -t tmpfs -o size=512M none/mnt/ramdisk</i>"). Gerne auch mehr. <br>
+</div>
+<div>- Starten Sie die EcMasterDemo in der RAM Disk mit aktivierter Datenaufzeichnung: "./EcMasterDemo -log EcMasterDemo 100000 -rec Ecat 100000 -v 6 ... &gt;/dev/null"</div>
+<div>- Versuchen Sie, das Phänomen zu reproduzieren. Da es eine große Datenflut gibt, hilft es, wenn Sie das innerhalb weniger Sekunden schaffen.</div>
+<div>- Beenden Sie die Demo regulär (wichtig, damit die Daten vollständig geschrieben werden). Entweder drücken Sie Ctl-C oder Sie können auch mit "-t 60000" angeben, dass sie einfach nur 60s läuft.</div>
+<div><br></div>
+<div>Jetzt liegen die Daten in der RAM Disk unter Linux und im Wireshark unter Windows vor.</div>
+<div><br></div>
+<div><b>Analyse</b></div>
+<div>-&gt; Hat sich "<i>EoE: Fragment 3/0 sent but returned with WKC = 0</i>" reproduzieren lassen?</div>
+<div>-&gt; Sie finden in der Masterlogdatei auch Angaben zu den Frames, z.B. CPcapRecorder::LogFrame(EcatTraffic MAIN RX): frame 45989, 128 bytes</div>
+<div><br></div>
+<div>-&gt; Bitte beachten Sie, dass die Framenummer der nichtzustellbaren Daten vor der Fehlermeldung gemeldet wird, nicht danach.</div>
+<div>-&gt; Bitte beachten Sie auch, dass die nichtzustellbaren Daten nicht die Ursache, sondern nur Ihr aktuelles Sympton sind. D.h. der dadavor ausgeführte Schreibzugriff auf die Mailbox zeigt Ihnen den Datensatz, mit dem sich der Slave ungewöhnlich lange aufhält. Wenn Sie diesen Datensatz gefunden haben, können Sie prüfen, warum Ihre Slavefirmware im Speziellen dafür so lange braucht.</div>
+<div><br></div>
+<div>Die Auswertung ist ein aufwendiges Thema. Ich empfehle daher ganz stark, im Vorfeld die nötigen dimensionierenden Projektparameter wie Bus Zykluszeit, Mailboxgrößen und die benötigte EoE Spitzendurchsatzrate zu klären. </div>
+<div><br></div>
+<div>
+<br>
+</div>
+</div>

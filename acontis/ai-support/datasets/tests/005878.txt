@@ -1,0 +1,145 @@
+### HEADER
+Id=5878
+Link=http://at-zammad/#ticket/zoom/5878
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Astra Space, Launch System (ID=794, Number=794)
+Number=705878
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=30.06.2023 15:51:33 +00:00
+UpdatedAt=03.07.2023 08:23:07 +00:00
+CloseAt=03.07.2023 08:23:07 +00:00
+ArticlesCount=3
+
+### TITLE
+Fwd: [Ext] New message from Astra Space
+
+### ARTICLE00_HEADER
+Id=31415
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.06.2023 15:51:33 +00:00
+UpdatedAt=30.06.2023 15:51:33 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: [Ext] New message from Astra Space
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>I generated the EC-Simulator license key for our customer and they report that it won’t accept the fully key, only a partial part of it. EC-Sim is version 3.1.4.09.</div><div> </div>
+
+### ARTICLE01_HEADER
+Id=31417
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.06.2023 17:36:43 +00:00
+UpdatedAt=30.06.2023 17:36:46 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: [Ext] New message from Astra Space
+
+### ARTICLE01_BODY
+<div>Hi Jon,</div><div><br></div>privately said: <span>`02:00:00:0D:00:01` and</span><span> </span><code>02:00:00:0C:00:01 </code><span>looks like they want to fool us with a generic MAC address. It doesn't look like MAC addresses we can trust in being used</span>
+
+uniquely, because I don't trust the OUI "<b>02:00:00</b>" of the MAC which looks like a generic one. <div>
+<span>A list of known OUIs can be found here: </span><a href="https://standards-oui.ieee.org/" title="https://standards-oui.ieee.org/" rel="nofollow noreferrer noopener" target="_blank">https://standards-oui.ieee.org/</a> . About that list: you find there e.g. "<i>E4-46-B0</i>" (<span style=" color: rgb(51, 51, 51);"><i>Fujitsu</i>),</span><span> the OUI of my Laptop's MAC </span><span><b>E4-46</b>-<b>B0</b>-1E-81-F9.</span><div><br></div>
+<div>About their question of key length: I guess they use the wrong API/wrong demo (EC-Master uses short license keys). <br>
+</div>
+<div>Did you get the logs from running the EcSimulatorHilDemo so you see the used link layer and MAC address</div>
+<div><span>I think, first we should check which adapter they use for license and which demo they are using. </span></div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Paul</div>
+<div><div>
+<div data-signature="true" data-signature-id="2">
+<div><br></div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Freitag, 30. Juni 2023 um 17:51:33, schrieb Jon Waters:<br><br>Hi,<div> </div>
+<div>I generated the EC-Simulator license key for our customer and they report that it won’t accept the fully key, only a partial part of it. EC-Sim is version 3.1.4.09.</div>
+<div> </div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div></div>
+</div>
+
+### ARTICLE02_HEADER
+Id=31418
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.06.2023 17:50:33 +00:00
+UpdatedAt=30.06.2023 17:50:33 +00:00
+
+### ARTICLE02_SUBJECT
+Re: [Ext] New message from Astra Space [Ticket#705878]
+
+### ARTICLE02_BODY
+Hi Paul,<div> </div><div>Thanks for the info, I also noticed the odd MAC and lack of OUI in it. I already thought to ask for the log to see what he is meaning about it, and agree it might be something with the library/API they are using. So I will let you know when I get the log file and more information. I just wanted to check at first to see if you knew something about using a portion of the license key and why that might work.<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Jun 30, 2023, at 1:36 PM, Paul Bußmann via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>
+<div>Hi Jon,</div>
+<div> </div>privately said: `02:00:00:0D:00:01` and<code>02:00:00:0C:00:01 </code>looks like they want to fool us with a generic MAC address. It doesn't look like MAC addresses we can trust in being used uniquely, because I don't trust the OUI "<b>02:00:00</b>" of the MAC which looks like a generic one. <div> A list of known OUIs can be found here: <a href="https://standards-oui.ieee.org/" title="https://standards-oui.ieee.org/" rel="nofollow noreferrer noopener" target="_blank">https://standards-oui.ieee.org/</a> . About that list: you find there e.g. "<i>E4-46-B0</i>" (<span style="color: rgb(51, 51, 51);"><i>Fujitsu</i>),</span> the OUI of my Laptop's MAC <span><b>E4-46</b>-<b>B0</b>-1E-81-F9.</span><div> </div>
+<div>About their question of key length: I guess they use the wrong API/wrong demo (EC-Master uses short license keys).<br>
+</div>
+<div>Did you get the logs from running the EcSimulatorHilDemo so you see the used link layer and MAC address</div>
+<div>I think, first we should check which adapter they use for license and which demo they are using.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Paul</div>
+<div>
+<div data-signature="true" data-signature-id="2">
+<div> </div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">Am Freitag, 30. Juni 2023 um 17:51:33, schrieb Jon Waters:<br><br>Hi,<div> </div>
+<div>I generated the EC-Simulator license key for our customer and they report that it won’t accept the fully key, only a partial part of it. EC-Sim is version 3.1.4.09.</div>
+</blockquote></div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

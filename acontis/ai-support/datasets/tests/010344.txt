@@ -1,0 +1,217 @@
+### HEADER
+Id=10344
+Link=http://at-zammad/#ticket/zoom/10344
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Inovance, PAC Controller (ID=483, Number=483)
+Number=7010344
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=04.04.2025 09:53:55 +00:00
+UpdatedAt=07.04.2025 06:47:45 +00:00
+CloseAt=07.04.2025 06:47:45 +00:00
+ArticlesCount=4
+
+### TITLE
+The differences of "CmAct.WibuCmLIF" and "Universal.WibuCmLIF" for LxWin
+
+### ARTICLE00_HEADER
+Id=59329
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.04.2025 09:53:55 +00:00
+UpdatedAt=04.04.2025 09:53:57 +00:00
+
+### ARTICLE00_SUBJECT
+The differences of "CmAct.WibuCmLIF" and "Universal.WibuCmLIF" for LxWin
+
+### ARTICLE00_BODY
+<div>
+<div>Dear,</div>
+<div> </div>
+<div>There are two license model files in the "LicenseXXX.zip" that "CmAct.WibuCmLIF" can only be imported once but "Universal.WibuCmLIF" can be imported many times on the same IPC, is there any different for Inovance?</div>
+<div>The customer feedback shows that there are two invalid licenses on an IPC. The customer is also unsure why there are two licenses and why they have been invalid.</div>
+<div><img src="/api/v1/ticket_attachment/10344/59329/247723?view=inline" style="max-width:100%;width:470px;max-height:310px;"></div>
+<div>Can Inovance use "CmAct.WibuCmLIF" to avoid importing more than one licenses?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<div>---------------------------------------------------------------------------------------------------------</div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+<div>
+<div>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</div>
+<div>北京市海淀区上地三街9号C座C309</div>
+</div>
+<div> </div>
+<div>
+<div>Tel: +86-10-62740270 (北京)</div>
+<div>0571-56125098 (杭州)</div>
+<div>+886-2-25222206 (台北)</div>Fax: +86-10-62740270<br>Email ：ec_support@motrotech.com</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=59338
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=04.04.2025 10:39:11 +00:00
+UpdatedAt=04.04.2025 10:39:11 +00:00
+
+### ARTICLE01_BODY
+Gunnar hat gesagt, dass Kai kennt die Geschichte besser.
+
+### ARTICLE02_HEADER
+Id=59343
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.04.2025 11:50:17 +00:00
+UpdatedAt=04.04.2025 11:50:19 +00:00
+
+### ARTICLE02_SUBJECT
+The differences of "CmAct.WibuCmLIF" and "Universal.WibuCmLIF" for LxWin
+
+### ARTICLE02_BODY
+Hi,<div><br></div><div>the Universal LIF is the new one. In fact both of them work with their products. But Inovance normally gets one dongle with a lot of licenses on it. And then they transfer the licenses to each machine. For this use case they need Uiversal. Otherwise it would not work. </div><div>So they should use the Universal LIF.</div><div><br></div><div>The Universal LIF is not specified to one product. So they can import it more times. But this is not an issue, because the licenses are not activated when importing the LIF. </div><div><br></div><div>So combined you can say:</div><div>RTOSVisor does only work with Universal.</div><div>LxWin can work with both, but transfer only works with Universal.</div><div><br></div><div>So they need (only) the Universal.</div><div><br></div><div>Best regards,</div><div>Kai</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, April 4, 2025 at 11:53:55 AM, ec_support@motrotech.com wrote:<br><br><div>
+<div>Dear,</div>
+<div> </div>
+<div>There are two license model files in the "LicenseXXX.zip" that "CmAct.WibuCmLIF" can only be imported once but "Universal.WibuCmLIF" can be imported many times on the same IPC, is there any different for Inovance?</div>
+<div>The customer feedback shows that there are two invalid licenses on an IPC. The customer is also unsure why there are two licenses and why they have been invalid.</div>
+<div><img src="/api/v1/ticket_attachment/10344/59343/247753?view=inline" style="max-width:100%;max-width:100%;width:470px;max-height:310px;"></div>
+<div>Can Inovance use "CmAct.WibuCmLIF" to avoid importing more than one licenses?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<div>---------------------------------------------------------------------------------------------------------</div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+<div>
+<div>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</div>
+<div>北京市海淀区上地三街9号C座C309</div>
+</div>
+<div> </div>
+<div>
+<div>Tel: +86-10-62740270 (北京)</div>
+<div>0571-56125098 (杭州)</div>
+<div>+886-2-25222206 (台北)</div>Fax: +86-10-62740270<br>Email ：ec_support@motrotech.com</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=59348
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.04.2025 12:59:12 +00:00
+UpdatedAt=04.04.2025 12:59:12 +00:00
+
+### ARTICLE03_SUBJECT
+Re:The differences of "CmAct.WibuCmLIF" and "Universal.WibuCmLIF" for LxWin [Ticket#7010344]
+
+### ARTICLE03_BODY
+<div>
+<div> </div>
+<div>Hi Kai,</div>
+<div> </div>
+<div>OK, got it. Thanks for your information.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<span class="js-signatureMarker"></span><blockquote>
+<div>------------------------------------------------------------------</div>
+<div>发件人：Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt;</div>
+<div>发送时间：2025年4月4日(周五) 19:50</div>
+<div>收件人：sales&lt;sales@acontis.com&gt;; EtherCAT Support&lt;ec_support@motrotech.com&gt;</div>
+<div>主 题：RE: The differences of "CmAct.WibuCmLIF" and "Universal.WibuCmLIF" for LxWin [Ticket#7010344]</div>
+<div> </div>Hi,<div> </div>
+<div>the Universal LIF is the new one. In fact both of them work with their products. But Inovance normally gets one dongle with a lot of licenses on it. And then they transfer the licenses to each machine. For this use case they need Uiversal. Otherwise it would not work.</div>
+<div>So they should use the Universal LIF.</div>
+<div> </div>
+<div>The Universal LIF is not specified to one product. So they can import it more times. But this is not an issue, because the licenses are not activated when importing the LIF.</div>
+<div> </div>
+<div>So combined you can say:</div>
+<div>RTOSVisor does only work with Universal.</div>
+<div>LxWin can work with both, but transfer only works with Universal.</div>
+<div> </div>
+<div>So they need (only) the Universal.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div>
+<div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>On Friday, April 4, 2025 at 11:53:55 AM, ec_support@motrotech.com wrote:<br><br><div>
+<div>Dear,</div>
+<div> </div>
+<div>There are two license model files in the "LicenseXXX.zip" that "CmAct.WibuCmLIF" can only be imported once but "Universal.WibuCmLIF" can be imported many times on the same IPC, is there any different for Inovance?</div>
+<div>The customer feedback shows that there are two invalid licenses on an IPC. The customer is also unsure why there are two licenses and why they have been invalid.</div>
+<div><img src="/api/v1/ticket_attachment/10344/59348/247767?view=inline" style="max-width:100%;max-width: 100%;width: 470px;max-height: 310px;"></div>
+<div>Can Inovance use "CmAct.WibuCmLIF" to avoid importing more than one licenses?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<div>---------------------------------------------------------------------------------------------------------</div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+<div>
+<div>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</div>
+<div>北京市海淀区上地三街9号C座C309</div>
+</div>
+<div> </div>
+<div>
+<div>Tel: +86-10-62740270 (北京)</div>
+<div>0571-56125098 (杭州)</div>
+<div>+886-2-25222206 (台北)</div>Fax: +86-10-62740270<br>Email ：ec_support@motrotech.com</div>
+<div> </div>
+</div>
+<br>
+</div>
+<div> </div>
+<br><br>
+</div>
+</blockquote>
+</div>

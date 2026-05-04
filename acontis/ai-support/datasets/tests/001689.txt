@@ -1,0 +1,189 @@
+### HEADER
+Id=1689
+Link=http://at-zammad/#ticket/zoom/1689
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Sophion (ID=428, Number=0, Country=DK)
+Commission=Sophion,  QPatch Compact (ID=536, Number=536)
+Number=701689
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=wjn@sophion.com (ID=250, FirstName=Wenxi, LastName=Jin)
+CreatedBy=wjn@sophion.com (ID=250, FirstName=Wenxi, LastName=Jin)
+Type=
+TimeUnit=
+CreatedAt=20.10.2021 13:39:22 +00:00
+UpdatedAt=26.04.2022 05:19:05 +00:00
+CloseAt=21.10.2021 12:22:49 +00:00
+ArticlesCount=3
+
+### TITLE
+Link layer I8254x failed
+
+### ARTICLE00_HEADER
+Id=9011
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.10.2021 13:39:22 +00:00
+UpdatedAt=20.10.2021 13:39:24 +00:00
+
+### ARTICLE00_SUBJECT
+Link layer I8254x failed
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>Today I have experienced failures on the advanced link layer I8254x. Log file (log level = 5) is attached.</p>
+<p>It continues reporting link cable disconnected. But it was not the case.</p>
+<p> </p>
+<p>I tried to update the ECat driver back to the window native driver, and update it back to ECat driver. And then it worked for one time.</p>
+<p>Afterwards, it continuously failed with reporting link cable disconnected.</p>
+<p> </p>
+<p>Could you help me on this matter? Thank you.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Wenxi Jin</p>
+<p>Senior Hardware &amp; Software Engineer</p>
+<p> </p>
+<p><img style="max-width:100%;width:2.0833in;max-height:.9375in;width:200px;max-height:90px;" src="/api/v1/ticket_attachment/1689/9011/35658?view=inline" alt="SophionBioscience_logo"></p>
+<p><br> Office: +45 44 60 88 00 / Direct: +45 44 60 88 22 - <b><u><a href="http://www.sophion.com/" rel="nofollow noreferrer noopener" title="http://www.sophion.com/" target="_blank">sophion.com</a></u></b><u><br>
+</u>Sophion Bioscience A/S, Baltorpvej 154, 2750 Ballerup, Denmark</p>
+<p> </p>
+<p><a href="https://www.linkedin.com/company/sophion-bioscience-as" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/sophion-bioscience-as" target="_blank"><img border="0" style="max-width:100%;width:6.9166in;max-height:1.7083in;width:664px;max-height:164px;" src="/api/v1/ticket_attachment/1689/9011/35659?view=inline"></a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=9013
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.10.2021 13:44:37 +00:00
+UpdatedAt=20.10.2021 13:44:50 +00:00
+
+### ARTICLE01_SUBJECT
+Link layer I8254x failed
+
+### ARTICLE01_BODY
+Hi Wenxi,<div><br></div><div>please try to add OsSleep(5000); just after ecatInitMaster to check if it would help. Additionally, please set the verbosity level of the linklayer to <span>EC_LOG_LEVEL_VERBOSE too, to get more information.</span>
+</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div><br></div>
+<div><blockquote type="cite">On Wednesday, October 20, 2021, 3:39:22 PM, Wenxi Jin wrote:<br><br><div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>Today I have experienced failures on the advanced link layer I8254x. Log file (log level = 5) is attached.</p>
+<p>It continues reporting link cable disconnected. But it was not the case.</p>
+<p> </p>
+<p>I tried to update the ECat driver back to the window native driver, and update it back to ECat driver. And then it worked for one time.</p>
+<p>Afterwards, it continuously failed with reporting link cable disconnected.</p>
+<p> </p>
+<p>Could you help me on this matter? Thank you.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Wenxi Jin</p>
+<p>Senior Hardware &amp; Software Engineer</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:2.0833in;max-height:.9375in;width:200px;max-height:90px;" src="/api/v1/ticket_attachment/1689/9013/35663?view=inline" alt="SophionBioscience_logo"></p>
+<p><br> Office: +45 44 60 88 00 / Direct: +45 44 60 88 22 - <b><u><a href="http://www.sophion.com/" rel="nofollow noreferrer noopener" title="http://www.sophion.com/" target="_blank">sophion.com</a></u></b><u><br>
+</u>Sophion Bioscience A/S, Baltorpvej 154, 2750 Ballerup, Denmark</p>
+<p> </p>
+<p><a href="https://www.linkedin.com/company/sophion-bioscience-as" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/sophion-bioscience-as" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:6.9166in;max-height:1.7083in;width:664px;max-height:164px;" src="/api/v1/ticket_attachment/1689/9013/35664?view=inline"></a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=9063
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.10.2021 10:28:44 +00:00
+UpdatedAt=21.10.2021 10:28:44 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Link layer I8254x failed [Ticket#701689]
+
+### ARTICLE02_BODY
+<div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>Adding OsSleep(5000) makes the EtherCAT master much reliable now.</p>
+<p>Thanks.</p>
+<p> </p>
+<div>
+<p>Best regards,</p>
+<p>Wenxi Jin</p>
+<p>Senior Hardware &amp; Software Engineer</p>
+<p> </p>
+<p><img style="max-width:100%;width:2.0833in;max-height:.9375in;width:200px;max-height:90px;" src="/api/v1/ticket_attachment/1689/9063/35814?view=inline" alt="SophionBioscience_logo"></p>
+<p><br> Office: +45 44 60 88 00 / Direct: +45 44 60 88 22 - <b><u><a href="http://www.sophion.com/" rel="nofollow noreferrer noopener" title="http://www.sophion.com/" target="_blank">sophion.com</a></u></b><u><br>
+</u>Sophion Bioscience A/S, Baltorpvej 154, 2750 Ballerup, Denmark</p>
+<p> </p>
+<p><a href="https://www.linkedin.com/company/sophion-bioscience-as" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/sophion-bioscience-as" target="_blank"><img border="0" style="max-width:100%;width:6.9166in;max-height:1.7083in;width:664px;max-height:164px;" src="/api/v1/ticket_attachment/1689/9063/35815?view=inline"></a></p>
+</div>
+<p> </p>
+<div>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Wednesday, October 20, 2021 3:45 PM<br>
+<b>To:</b> Wenxi Jin &lt;wjn@sophion.com&gt;<br>
+<b>Subject:</b> RE: Link layer I8254x failed [Ticket#701689]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Wenxi,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>please try to add OsSleep(5000); just after ecatInitMaster to check if it would help. Additionally, please set the verbosity level of the linklayer to EC_LOG_LEVEL_VERBOSE too, to get more information.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Cyril</p>
+<div> <p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Wednesday, October 20, 2021, 3:39:22 PM, Wenxi Jin wrote:</p>
+<p></p>
+<div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>Today I have experienced failures on the advanced link layer I8254x. Log file (log level = 5) is attached.</p>
+<p>It continues reporting link cable disconnected. But it was not the case.</p>
+<p> </p>
+<p>I tried to update the ECat driver back to the window native driver, and update it back to ECat driver. And then it worked for one time.</p>
+<p>Afterwards, it continuously failed with reporting link cable disconnected.</p>
+<p> </p>
+<p>Could you help me on this matter? Thank you.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Wenxi Jin</p>
+<p>Senior Hardware &amp; Software Engineer</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:2.0833in;max-height:.9375in;width:200px;max-height:90px;" src="/api/v1/ticket_attachment/1689/9063/35816?view=inline" alt="SophionBioscience_logo"></p>
+<p><br> Office: +45 44 60 88 00 / Direct: +45 44 60 88 22 - <b><u><a href="http://www.sophion.com/" title="http://www.sophion.com/" rel="nofollow noreferrer noopener" target="_blank">sophion.com</a></u></b><u><br>
+</u>Sophion Bioscience A/S, Baltorpvej 154, 2750 Ballerup, Denmark</p>
+<p> </p>
+<p><a href="https://www.linkedin.com/company/sophion-bioscience-as" title='"https://www.linkedin.com/company/sophion-bioscience-as" t ' rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;width:12.9513in;max-height:3.2013in;width:1243px;max-height:307px;" src="/api/v1/ticket_attachment/1689/9063/35817?view=inline"></a></p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+</div>

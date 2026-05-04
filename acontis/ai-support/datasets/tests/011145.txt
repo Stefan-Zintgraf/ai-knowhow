@@ -1,0 +1,132 @@
+### HEADER
+Id=11145
+Link=http://at-zammad/#ticket/zoom/11145
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=dSPACE GmbH (ID=94, Number=40282, Country=DE)
+Commission=dSpace, SCALEXIO (ID=103, Number=103)
+Number=7011145
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=amamulat@dspace.de (ID=3429, FirstName=Alina, LastName=Mamulat)
+CreatedBy=amamulat@dspace.de (ID=3429, FirstName=Alina, LastName=Mamulat)
+Type=
+TimeUnit=
+CreatedAt=01.08.2025 08:00:08 +00:00
+UpdatedAt=07.08.2025 06:06:47 +00:00
+CloseAt=07.08.2025 06:06:47 +00:00
+ArticlesCount=2
+
+### TITLE
+EC Engineer aktuelle Version
+
+### ARTICLE00_HEADER
+Id=63967
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.08.2025 08:00:08 +00:00
+UpdatedAt=01.08.2025 08:00:12 +00:00
+
+### ARTICLE00_SUBJECT
+EC Engineer aktuelle Version
+
+### ARTICLE00_BODY
+<div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>ein Kunde, und zwar eMobility Systems, der den EC Master in seinem dSPACE HIL-System verwendet, hat sich bei uns gemeldet. In Absprache mit Ihnen benötigt er eine neuere Version des EC-Engineer (Version 3.9.13), da diese einen Fix für die Datentypen beim Bus-Scan enthält (Datentypen werden als „Unknown“ erkannt). Ansprechpartner bei dem Support Fall war Herr Kai Feifel.</p>
+<p> </p>
+<p>Aktuell liefern wir die Version 3.9.8 aus. Könnten Sie bitte bestätigen, dass dieser Fix in der Version 3.9.8 noch nicht enthalten ist? Falls das zutrifft, könnten Sie uns bitte die aktuelle Version des EC-Engineer bereitzustellen? Ein Wartungsvertrag für EC Engineer für das laufende Jahr ist vorhanden.</p>
+<p> </p>
+<p>Vielen Dank!</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Best regards,<span><br>
+<br>
+</span><img style="max-width:100%;width:.9375in;max-height:.2083in;" src="/api/v1/ticket_attachment/11145/63967/265147?view=inline"><span><br>
+<br>
+</span><b>Alina Mamulat </b><span><br>
+</span>ADAS/AD<span><br>
+<br>
+</span>dSPACE GmbH <span><br>
+</span>Rathenaustraße 26 <span><br>
+</span><span>33102 Paderborn <br> Germany<br>
+</span><span><br>
+</span><span>Tel.: +49 5251 1638-2199 <br> Mail: <a href="mailto:amamulat@dspace.de"><span style="color:blue;">amamulat@dspace.de</span></a><br> Web: <a href="http://www.dspace.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.dspace.com</span></a><br><br></span><span><br>
+</span><span>Geschäftsführer: Dr. Carsten Hoff (CEO), Jens Grösch (CFO) <br> Sitz / Register: Paderborn / AG Paderborn HRB 1439<br>
+<br> Diese E-Mail einschließlich ihrer Anlagen ist vertraulich und nur für den Adressaten bestimmt. Wenn Sie nicht der vorgesehene Empfänger sind, bitten wir Sie, diese E-Mail einschließlich der Anlagen unverzüglich zu löschen und uns zu benachrichtigen. Die Nutzung unverschlüsselter E-Mails birgt u.a. die Gefahr des unberechtigten Zugriffs Dritter auf die übermittelten Daten. Bitte wählen Sie bei Bedarf einen verschlüsselten Übertragungsweg. Weitere Informationen finden Sie <a href="https://www.dspace.com/de/gmb/home/imprint.cfm" rel="nofollow noreferrer noopener" title="https://www.dspace.com/de/gmb/home/imprint.cfm" target="_blank"><span style="color:blue;">hier</span></a>.<br>
+<br> Wir erfüllen unsere Informationspflichten zum Datenschutz gemäß Art. 13-14 DS-GVO durch Veröffentlichung auf unserer Website. Lesen Sie unsere Datenschutzbestimmungen <a href="https://www.dspace.com/de/gmb/home/privacypolicy.cfm" rel="nofollow noreferrer noopener" title="https://www.dspace.com/de/gmb/home/privacypolicy.cfm" target="_blank"><span style="color:blue;">hier</span></a>.<br>
+<br> This email and its attachments are confidential and are intended solely for the attention of the addressee. If you are not the intended recipient, please delete this email it including attachments immediately and inform us accordingly. Using unencrypted emails involves the risk of unauthorised data access by third parties. Please select an encrypted transmission if necessary. Further information can be found <a href="https://www.dspace.com/en/pub/home/imprint.cfm" rel="nofollow noreferrer noopener" title="https://www.dspace.com/en/pub/home/imprint.cfm" target="_blank"><span style="color:blue;">here</span></a>.<br>
+<br> We comply with our obligation to inform you about data protection according to Art. 13-14 of the GDPR by publishing said information on our website. Read our data protection regulations <a href="https://www.dspace.com/en/pub/home/privacypolicy.cfm" rel="nofollow noreferrer noopener" title="https://www.dspace.com/en/pub/home/privacypolicy.cfm" target="_blank"><span style="color:blue;">here</span></a>.<br>
+<br>
+</span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=63977
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.08.2025 09:20:40 +00:00
+UpdatedAt=01.08.2025 09:20:41 +00:00
+
+### ARTICLE01_SUBJECT
+EC Engineer aktuelle Version
+
+### ARTICLE01_BODY
+Hallo,<div><br></div><div>ja das ist richtig. Das ist in der 3.9.8 nicht möglich.</div><div><br></div><div>Anbei der Link zur neuen Version:</div><div><br></div><div><a href="https://downloads.acontis.com/2025/D-F/dSPACE_(40282)(DE)/EC-Engineer_OEM_GUI_SDK/3.9.13/EC-Engineer_SDK_View_Layer2_DotNetCore_Windows-x86_OEM_Src_V3.9.13.zip" title="https://downloads.acontis.com/2025/D-F/dSPACE_(40282)(DE)/EC-Engineer_OEM_GUI_SDK/3.9.13/EC-Engineer_SDK_View_Layer2_DotNetCore_Windows-x86_OEM_Src_V3.9.13.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/D-F/dSPACE_(40282)(DE)/EC-Engineer_OEM_GUI_SDK/3.9.13/EC-Engineer_SDK_View_Layer2_DotNetCore_Windows-x86_OEM_Src_V3.9.13.zip</a></div><div><br></div><div>Viele Grüße</div><div>Kai Feifel<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, August 1, 2025 at 10:00:08 AM, Alina Mamulat wrote:<br><br><div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>ein Kunde, und zwar eMobility Systems, der den EC Master in seinem dSPACE HIL-System verwendet, hat sich bei uns gemeldet. In Absprache mit Ihnen benötigt er eine neuere Version des EC-Engineer (Version 3.9.13), da diese einen Fix für die Datentypen beim Bus-Scan enthält (Datentypen werden als „Unknown“ erkannt). Ansprechpartner bei dem Support Fall war Herr Kai Feifel.</p>
+<p> </p>
+<p>Aktuell liefern wir die Version 3.9.8 aus. Könnten Sie bitte bestätigen, dass dieser Fix in der Version 3.9.8 noch nicht enthalten ist? Falls das zutrifft, könnten Sie uns bitte die aktuelle Version des EC-Engineer bereitzustellen? Ein Wartungsvertrag für EC Engineer für das laufende Jahr ist vorhanden.</p>
+<p> </p>
+<p>Vielen Dank!</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Best regards,<span><br>
+<br>
+</span><img style="max-width:100%;max-width:100%;width:.9375in;max-height:.2083in;" src="/api/v1/ticket_attachment/11145/63977/265180?view=inline"><span><br>
+<br>
+</span><b>Alina Mamulat </b><span><br>
+</span>ADAS/AD<span><br>
+<br>
+</span>dSPACE GmbH <span><br>
+</span>Rathenaustraße 26 <span><br>
+</span><span>33102 Paderborn <br> Germany<br>
+</span><span><br>
+</span><span>Tel.: +49 5251 1638-2199 <br> Mail: <a href="mailto:amamulat@dspace.de"><span style="color:blue;">amamulat@dspace.de</span></a><br> Web: <a href="http://www.dspace.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.dspace.com</span></a><br><br></span><span><br>
+</span><span>Geschäftsführer: Dr. Carsten Hoff (CEO), Jens Grösch (CFO) <br> Sitz / Register: Paderborn / AG Paderborn HRB 1439<br>
+<br> Diese E-Mail einschließlich ihrer Anlagen ist vertraulich und nur für den Adressaten bestimmt. Wenn Sie nicht der vorgesehene Empfänger sind, bitten wir Sie, diese E-Mail einschließlich der Anlagen unverzüglich zu löschen und uns zu benachrichtigen. Die Nutzung unverschlüsselter E-Mails birgt u.a. die Gefahr des unberechtigten Zugriffs Dritter auf die übermittelten Daten. Bitte wählen Sie bei Bedarf einen verschlüsselten Übertragungsweg. Weitere Informationen finden Sie <a href="https://www.dspace.com/de/gmb/home/imprint.cfm" rel="nofollow noreferrer noopener" title="https://www.dspace.com/de/gmb/home/imprint.cfm" target="_blank"><span style="color:blue;">hier</span></a>.<br>
+<br> Wir erfüllen unsere Informationspflichten zum Datenschutz gemäß Art. 13-14 DS-GVO durch Veröffentlichung auf unserer Website. Lesen Sie unsere Datenschutzbestimmungen <a href="https://www.dspace.com/de/gmb/home/privacypolicy.cfm" rel="nofollow noreferrer noopener" title="https://www.dspace.com/de/gmb/home/privacypolicy.cfm" target="_blank"><span style="color:blue;">hier</span></a>.<br>
+<br> This email and its attachments are confidential and are intended solely for the attention of the addressee. If you are not the intended recipient, please delete this email it including attachments immediately and inform us accordingly. Using unencrypted emails involves the risk of unauthorised data access by third parties. Please select an encrypted transmission if necessary. Further information can be found <a href="https://www.dspace.com/en/pub/home/imprint.cfm" rel="nofollow noreferrer noopener" title="https://www.dspace.com/en/pub/home/imprint.cfm" target="_blank"><span style="color:blue;">here</span></a>.<br>
+<br> We comply with our obligation to inform you about data protection according to Art. 13-14 of the GDPR by publishing said information on our website. Read our data protection regulations <a href="https://www.dspace.com/en/pub/home/privacypolicy.cfm" rel="nofollow noreferrer noopener" title="https://www.dspace.com/en/pub/home/privacypolicy.cfm" target="_blank"><span style="color:blue;">here</span></a>.<br>
+<br>
+</span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

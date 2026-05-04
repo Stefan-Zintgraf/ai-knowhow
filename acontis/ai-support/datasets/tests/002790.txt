@@ -1,0 +1,147 @@
+### HEADER
+Id=2790
+Link=http://at-zammad/#ticket/zoom/2790
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ITK Engineering GmbH (ID=120, Number=54016, Country=DE)
+Commission=ITK, Asimov Express (ID=134, Number=134)
+Number=702790
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=michael.wenz@itk-engineering.de (ID=107, FirstName=Michael, LastName=Wenz)
+CreatedBy=michael.wenz@itk-engineering.de (ID=107, FirstName=Michael, LastName=Wenz)
+Type=
+TimeUnit=
+CreatedAt=12.04.2022 05:23:02 +00:00
+UpdatedAt=06.05.2022 06:00:11 +00:00
+CloseAt=06.05.2022 06:00:11 +00:00
+ArticlesCount=2
+
+### TITLE
+QNX und SMI
+
+### ARTICLE00_HEADER
+Id=14883
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.04.2022 05:23:02 +00:00
+UpdatedAt=12.04.2022 05:23:04 +00:00
+
+### ARTICLE00_SUBJECT
+QNX und SMI
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Herr Eyssautier,</p>
+<p> </p>
+<p>unter</p>
+<p><a href="https://www.qnx.com/developers/docs/7.0.0/#com.qnx.doc.neutrino.user_guide/topic/os_intro_Unique.html" rel="nofollow noreferrer noopener" target="_blank">https://www.qnx.com/developers/docs/7.0.0/#com.qnx.doc.neutrino.user_guide/topic/os_intro_Unique.html</a></p>
+<p>steht</p>
+<p><img border="0" style="max-width:100%;width:11.7583in;max-height:1.5166in;width:1129px;max-height:146px;" src="/api/v1/ticket_attachment/2790/14883/58607?view=inline"></p>
+<p> </p>
+<p>Unter Xenomai gibt es eine Lösung für SMIs (Einstellung in /etc/default/grub).</p>
+<p><img border="0" style="max-width:100%;width:12.7333in;max-height:1.5833in;width:1222px;max-height:152px;" src="/api/v1/ticket_attachment/2790/14883/58608?view=inline"></p>
+<p> </p>
+<p>Können Sie bitte sagen, ob Ihnen eine Lösung für SMIs unter QNX bekannt wäre?</p>
+<p>Im BIOS haben wir keine Einstellmöglichkeit für SMIs gefunden.</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Michael Wenz</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>--</p>
+<p>Dr.-Ing. Michael Wenz</p>
+<p>Software Engineering</p>
+<p> </p>
+<p>ITK Engineering GmbH</p>
+<p>Im Speyerer Tal 6</p>
+<p>D-76761 Rülzheim</p>
+<p> </p>
+<p>Tel.: +49 7272 7703-456</p>
+<p>Fax: +49 7272 7703-100</p>
+<p>Mobil: +49 174 9480570</p>
+<p> </p>
+<p>mailto: michael.wenz@itk-engineering.de</p>
+<p> </p>
+<p>_____________________________________________________________</p>
+<p>ITK Engineering GmbH Im Speyerer Tal 6 76761 Rülzheim</p>
+<p>Tel.: +49 7272 7703-0 Fax: +49 7272 7703-100</p>
+<p>mailto:info@itk-engineering.de <a href="http://www.itk-engineering.de" rel="nofollow noreferrer noopener" target="_blank">http://www.itk-engineering.de</a></p>
+<p> </p>
+<p>Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board:</p>
+<p>Dr. Rudolf Maier</p>
+<p>Geschäftsführung/Executive Board:</p>
+<p>Dr. Frank Schmidt (Vorsitzender/Chairman), Bernd Gohlicke</p>
+<p>Sitz der Gesellschaft/Registered Office: 76761 Rülzheim</p>
+<p>Registergericht/Registered Court: Amtsgericht Landau, HRB 32046</p>
+<p>USt.-ID-Nr./VAT-ID-No. DE813165046</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=14896
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.04.2022 08:55:06 +00:00
+UpdatedAt=12.04.2022 08:55:08 +00:00
+
+### ARTICLE01_SUBJECT
+QNX und SMI
+
+### ARTICLE01_BODY
+Hallo Herr Wenz,<div><br></div><div>Leider nicht.</div><div>
+<div><br></div>
+<div>Hier wäre eine Eval Version unserer Echtzeiterweiterung:</div>
+<div><a href="http://software.acontis.com/EC-Master/3.1/Linux/EC-Master-V3.1-EC-WinRT-Linux-x86_64Bit-Eval.tar.gz" title="http://software.acontis.com/EC-Master/3.1/Linux/EC-Master-V3.1-EC-WinRT-Linux-x86_64Bit-Eval.tar.gz" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/EC-Master/3.1/Linux/EC-Master-V3.1-EC-WinRT-Linux-x86_64Bit-Eval.tar.gz</a></div>
+</div><div><br></div><div>In dem Paket befindet sich eine RealtimeDemo. Drin finden Sie SourceCode um die SMI Counters zu lesen. Damit könnten Sie beweisen ob SMI stattfinden oder nicht.</div><div>Mit der Info könnten sie dann zu Ihren HW Lieferant gehen, und dran schütteln, bis die SMI abfallen :)</div><div><br></div><div>Schöne Grüße,</div><div>Cyril<div><br></div>
+<div><blockquote type="cite">On Tuesday, April 12, 2022, 7:23:02 AM, Michael Wenz wrote:<br><br><div>
+<p>Hallo Herr Eyssautier,</p>
+<p> </p>
+<p>unter</p>
+<p><a href="https://www.qnx.com/developers/docs/7.0.0/#com.qnx.doc.neutrino.user_guide/topic/os_intro_Unique.html" rel="nofollow noreferrer noopener" target="_blank">https://www.qnx.com/developers/docs/7.0.0/#com.qnx.doc.neutrino.user_guide/topic/os_intro_Unique.html</a></p>
+<p>steht</p>
+<p><img border="0" style="max-width:100%;max-width:100%;width:11.7583in;max-height:1.5166in;width:1129px;max-height:146px;" src="/api/v1/ticket_attachment/2790/14896/58697?view=inline"></p>
+<p> </p>
+<p>Unter Xenomai gibt es eine Lösung für SMIs (Einstellung in /etc/default/grub).</p>
+<p><img border="0" style="max-width:100%;max-width:100%;width:12.7333in;max-height:1.5833in;width:1222px;max-height:152px;" src="/api/v1/ticket_attachment/2790/14896/58698?view=inline"></p>
+<p> </p>
+<p>Können Sie bitte sagen, ob Ihnen eine Lösung für SMIs unter QNX bekannt wäre?</p>
+<p>Im BIOS haben wir keine Einstellmöglichkeit für SMIs gefunden.</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Michael Wenz</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>--</p>
+<p>Dr.-Ing. Michael Wenz</p>
+<p>Software Engineering</p>
+<p> </p>
+<p>ITK Engineering GmbH</p>
+<p>Im Speyerer Tal 6</p>
+<p>D-76761 Rülzheim</p>
+<p> </p>
+<p>Tel.: +49 7272 7703-456</p>
+<p>Fax: +49 7272 7703-100</p>
+<p>Mobil: +49 174 9480570</p>
+<p> </p>
+<p>mailto: michael.wenz@itk-engineering.de</p>
+<p> </p>
+<p>_____________________________________________________________</p>
+<p>ITK Engineering GmbH Im Speyerer Tal 6 76761 Rülzheim</p>
+<p>Tel.: +49 7272 7703-0 Fax: +49 7272 7703-100</p>
+<p>mailto:info@itk-engineering.de <a href="http://www.itk-engineering.de" rel="nofollow noreferrer noopener" target="_blank">http://www.itk-engineering.de</a></p>
+<p> </p>
+<p>Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board:</p>
+<p>Dr. Rudolf Maier</p>
+<p>Geschäftsführung/Executive Board:</p>
+<p>Dr. Frank Schmidt (Vorsitzender/Chairman), Bernd Gohlicke</p>
+<p>Sitz der Gesellschaft/Registered Office: 76761 Rülzheim</p>
+<p>Registergericht/Registered Court: Amtsgericht Landau, HRB 32046</p>
+<p>USt.-ID-Nr./VAT-ID-No. DE813165046</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

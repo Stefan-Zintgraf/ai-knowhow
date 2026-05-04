@@ -1,0 +1,159 @@
+### HEADER
+Id=5683
+Link=http://at-zammad/#ticket/zoom/5683
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=cpc Chieftek (ID=590, Number=50234, Country=TW)
+Commission=cpc Chieftek, cpcStudio (ID=669, Number=669)
+Number=705683
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=lm003@mail2.chieftek.com (ID=1237, FirstName=Kuanghan, LastName=)
+CreatedBy=lm003@mail2.chieftek.com (ID=1237, FirstName=Kuanghan, LastName=)
+Type=
+TimeUnit=
+CreatedAt=01.06.2023 01:32:43 +00:00
+UpdatedAt=16.06.2023 06:11:33 +00:00
+CloseAt=16.06.2023 06:11:33 +00:00
+ArticlesCount=2
+
+### TITLE
+[Chieftek]Error message on cpcStudio
+
+### ARTICLE00_HEADER
+Id=30321
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.06.2023 01:32:43 +00:00
+UpdatedAt=01.06.2023 01:32:46 +00:00
+
+### ARTICLE00_SUBJECT
+[Chieftek]Error message on cpcStudio
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi,<div>The controller has some problems while scan a robot device. At the moment, we scan device again using cpcStudio, and got error message as following (seems when append slave 4).</div>
+<div> </div>
+<div>
+<img src="/api/v1/ticket_attachment/5683/30321/126788?view=inline" alt="COMPUTEX_scan問題.jpg" style="max-width:100%;width:407px;max-height:543px;"><br>
+</div>
+<div>0x9811000C -- Network adapter not found<br><div>0x9811000E -- Invalid state (?)</div>
+<div> </div>
+<div>Any ideas?</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan</div>
+<div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+</div><br>
+<div> </div>
+
+### ARTICLE01_HEADER
+Id=30328
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.06.2023 05:28:33 +00:00
+UpdatedAt=01.06.2023 05:28:35 +00:00
+
+### ARTICLE01_SUBJECT
+[Chieftek]Error message on cpcStudio
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>please try with the latest version first:</div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/2023/B-C/cpc_Chieftek_(40573)(TW)/EC-Engineer_OEM_SDK_Core/3.7.12/EC-Engineer_SDK_Core_Layer4_DotNet4_OEM_Src_V3.7.12.zip" title="https://downloads.acontis.com/2023/B-C/cpc_Chieftek_(40573)(TW)/EC-Engineer_OEM_SDK_Core/3.7.12/EC-Engineer_SDK_Core_Layer4_DotNet4_OEM_Src_V3.7.12.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/B-C/cpc_Chieftek_(40573)(TW)/EC-Engineer_OEM_SDK_Core/3.7.12/EC-Engineer_SDK_Core_Layer4_DotNet4_OEM_Src_V3.7.12.zip</a></div>
+<div><a href="https://downloads.acontis.com/2023/B-C/cpc_Chieftek_(40573)(TW)/EC-Engineer_OEM_SDK_Core/3.7.12/EC-Engineer_SDK_Core_Layer4_DotNet4_x64_OEM_Src_V3.7.12.zip" title="https://downloads.acontis.com/2023/B-C/cpc_Chieftek_(40573)(TW)/EC-Engineer_OEM_SDK_Core/3.7.12/EC-Engineer_SDK_Core_Layer4_DotNet4_x64_OEM_Src_V3.7.12.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/B-C/cpc_Chieftek_(40573)(TW)/EC-Engineer_OEM_SDK_Core/3.7.12/EC-Engineer_SDK_Core_Layer4_DotNet4_x64_OEM_Src_V3.7.12.zip</a></div>
+</div><div><br></div><div>If it does not help, please send a log file with GuiDebugMessageLevel = 2.</div><div><br></div><div>Best regards,</div><div>Kai</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, June 1, 2023 at 3:32:43 AM, Kuanghan wrote:<br><br><div dir="ltr">Hi,<div>The controller has some problems while scan a robot device. At the moment, we scan device again using cpcStudio, and got error message as following (seems when append slave 4).</div>
+<div> </div>
+<div>
+<img src="/api/v1/ticket_attachment/5683/30328/126826?view=inline" alt="COMPUTEX_scan問題.jpg" style="max-width:100%;max-width:100%;width:407px;max-height:543px;"><br>
+</div>
+<div>0x9811000C -- Network adapter not found<br><div>0x9811000E -- Invalid state (?)</div>
+<div> </div>
+<div>Any ideas?</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan</div>
+<div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+</div>
+<br>
+<div> </div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

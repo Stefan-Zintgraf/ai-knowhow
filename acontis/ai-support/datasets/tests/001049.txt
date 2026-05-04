@@ -1,0 +1,105 @@
+### HEADER
+Id=1049
+Link=http://at-zammad/#ticket/zoom/1049
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Weihong, Unknown (ID=527, Number=527)
+Number=701049
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=17.07.2021 04:04:36 +00:00
+UpdatedAt=06.08.2021 06:03:33 +00:00
+CloseAt=06.08.2021 06:03:33 +00:00
+ArticlesCount=2
+
+### TITLE
+The protential customer Weihong problem about choosing a ethercat protocal
+
+### ARTICLE00_HEADER
+Id=5825
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.07.2021 04:04:37 +00:00
+UpdatedAt=17.07.2021 04:04:44 +00:00
+
+### ARTICLE00_SUBJECT
+The protential customer Weihong problem about choosing a ethercat protocal
+
+### ARTICLE00_BODY
+<div>
+<div>Dear,</div>
+<div>The protential customer Weihong plan to using the ethercat master with lxwin. But they have a problem about using the master.</div>
+<div>Weihong have a protocal by themselvse. Their protocal have a fifo for sending data, and they must send every data to slave without any losing, but they could accept the re-send with a fixed cycletime, e.g. 1ms.</div>
+<div>At first, I suggest them to consider VoE protocal, But I found the voe api have timeout. So Could you please give this customer some suggestion about which kind of protocal is better(VoE or mailbox)?</div>
+<div>I have another question, if the customer only using the voe or mailbox, how to config the ethercat network, and how to setting the dc?</div>
+<div> </div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=5904
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.07.2021 14:07:09 +00:00
+UpdatedAt=20.07.2021 14:07:12 +00:00
+
+### ARTICLE01_SUBJECT
+The protential customer Weihong problem about choosing a ethercat protocal
+
+### ARTICLE01_BODY
+<div>Hi Jon,</div><div><br></div><div>they should consider to send the data within the cyclic frames as PDO like a servo does with the position. Mailbox makes only sense if the amount of data is huge or its usage not cyclic.</div><div><br></div><div>VoE should be used to implement e.g. a serial or usb interface for diagnosis / firmware / settings up/download.</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div><br></div><div><blockquote type="cite">On Saturday, July 17, 2021, 6:04:37 AM, John Zhang wrote:<br><br><div>
+<div>Dear,</div>
+<div>The protential customer Weihong plan to using the ethercat master with lxwin. But they have a problem about using the master.</div>
+<div>Weihong have a protocal by themselvse. Their protocal have a fifo for sending data, and they must send every data to slave without any losing, but they could accept the re-send with a fixed cycletime, e.g. 1ms.</div>
+<div>At first, I suggest them to consider VoE protocal, But I found the voe api have timeout. So Could you please give this customer some suggestion about which kind of protocal is better(VoE or mailbox)?</div>
+<div>I have another question, if the customer only using the voe or mailbox, how to config the ethercat network, and how to setting the dc?</div>
+<div> </div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+<div> </div>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

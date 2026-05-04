@@ -1,0 +1,141 @@
+### HEADER
+Id=10687
+Link=http://at-zammad/#ticket/zoom/10687
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=7010687
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=ecsupport@soft-service.co.jp (ID=33, FirstName=Ecsupport, LastName=)
+CreatedBy=ecsupport@soft-service.co.jp (ID=33, FirstName=Ecsupport, LastName=)
+Type=
+TimeUnit=
+CreatedAt=30.05.2025 11:29:04 +00:00
+UpdatedAt=16.06.2025 10:38:09 +00:00
+CloseAt=16.06.2025 10:38:09 +00:00
+ArticlesCount=2
+
+### TITLE
+about control status
+
+### ARTICLE00_HEADER
+Id=61156
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.05.2025 11:29:05 +00:00
+UpdatedAt=30.05.2025 11:29:09 +00:00
+
+### ARTICLE00_SUBJECT
+about control status
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Dear Support Team</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Mitsubishi has a question about error logs.(commission No. 40627).</span></p>
+<p><span lang="EN-US">Please tell me about the control status in the log below.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Q1</span></p>
+<p><span lang="EN-US">[ERR ] Slave error "PT25 CINC 1000Torr": - EtherCAT address=1007 - State &lt;PREOP ERROR&gt;(0x12), control status &lt;EEPROM Error&gt;(0x51)</span></p>
+<p><span lang="EN-US">The control status value at this time is 0x51.</span></p>
+<p><span lang="EN-US">I think this 0x51 is as follows, is this correct?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:3.0625in;max-height:5.1354in;width:294px;max-height:493px;" src="/api/v1/ticket_attachment/10687/61156/254540?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Q2</span></p>
+<p><span lang="EN-US">[ERR ] Slave error "Slave_1038 [FR-E800-E]": - EtherCAT address=1038 - State &lt;INIT ERROR&gt;(0x11), control status &lt;Unknown Text&gt;(0x8000)</span></p>
+<p><span lang="EN-US">This is a different slave error log,and the control status at this time is 0x8000.</span></p>
+<p><span lang="EN-US">I thought the control status value would be in the following range,</span></p>
+<p><span lang="EN-US">but what does 0x8000 indicate?</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:2.052in;max-height:9.3437in;width:197px;max-height:897px;" src="/api/v1/ticket_attachment/10687/61156/254541?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best Regards,</span></p>
+<p><span lang="EN-US">Kenji Nakamura</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=61173
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.06.2025 05:38:50 +00:00
+UpdatedAt=02.06.2025 05:38:55 +00:00
+
+### ARTICLE01_SUBJECT
+about control status
+
+### ARTICLE01_BODY
+Hi Kenji,<div><br></div><div>yes absolutely. This code is defined in <span>ETG1020</span>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, May 30, 2025 at 1:29:05 PM, Ecsupport wrote:<br><br><div>
+<p><span lang="EN-US">Dear Support Team</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Mitsubishi has a question about error logs.(commission No. 40627).</span></p>
+<p><span lang="EN-US">Please tell me about the control status in the log below.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Q1</span></p>
+<p><span lang="EN-US">[ERR ] Slave error "PT25 CINC 1000Torr": - EtherCAT address=1007 - State &lt;PREOP ERROR&gt;(0x12), control status &lt;EEPROM Error&gt;(0x51)</span></p>
+<p><span lang="EN-US">The control status value at this time is 0x51.</span></p>
+<p><span lang="EN-US">I think this 0x51 is as follows, is this correct?</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:3.0625in;max-height:5.1354in;width:294px;max-height:493px;" src="/api/v1/ticket_attachment/10687/61173/254587?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Q2</span></p>
+<p><span lang="EN-US">[ERR ] Slave error "Slave_1038 [FR-E800-E]": - EtherCAT address=1038 - State &lt;INIT ERROR&gt;(0x11), control status &lt;Unknown Text&gt;(0x8000)</span></p>
+<p><span lang="EN-US">This is a different slave error log,and the control status at this time is 0x8000.</span></p>
+<p><span lang="EN-US">I thought the control status value would be in the following range,</span></p>
+<p><span lang="EN-US">but what does 0x8000 indicate?</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:2.052in;max-height:9.3437in;width:197px;max-height:897px;" src="/api/v1/ticket_attachment/10687/61173/254588?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Best Regards,</span></p>
+<p><span lang="EN-US">Kenji Nakamura</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

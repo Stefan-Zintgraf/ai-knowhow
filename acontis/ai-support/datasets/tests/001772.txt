@@ -1,0 +1,202 @@
+### HEADER
+Id=1772
+Link=http://at-zammad/#ticket/zoom/1772
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Lenze SE (ID=134, Number=55502, Country=DE)
+Commission=Lenze, Linux, x64, ARM (ID=153, Number=153)
+Number=701772
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=thorsten.niemann@lenze.com (ID=32, FirstName=Thorsten, LastName=Niemann)
+CreatedBy=thorsten.niemann@lenze.com (ID=32, FirstName=Thorsten, LastName=Niemann)
+Type=
+TimeUnit=
+CreatedAt=04.11.2021 11:05:42 +00:00
+UpdatedAt=05.11.2021 10:12:07 +00:00
+CloseAt=05.11.2021 10:12:07 +00:00
+ArticlesCount=3
+
+### TITLE
+Busscan und check der Revision V2.6.4 vs V3.1.1 - Verständnisfrage
+
+### ARTICLE00_HEADER
+Id=9470
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.11.2021 11:05:42 +00:00
+UpdatedAt=04.11.2021 11:05:43 +00:00
+
+### ARTICLE00_SUBJECT
+Busscan und check der Revision V2.6.4 vs V3.1.1 - Verständnisfrage
+
+### ARTICLE00_BODY
+<div> <p> </p>
+<p>Hallo Support,</p>
+<p> </p>
+<p>Ich untersuche gerade ein Komptabilitätsproblem hinsichtlich der oben genannten Stack Versionen. Das ENI File ist identisch</p>
+<p> </p>
+<ol start="1" type="1">
+<li>Es wird gesetzt: EC_IOCTL_SB_SET_BUSCNF_READ_PROP : desc.eEEPROMEntry = eEEP_RevisionNumber; desc.dwVerify = EC_TRUE;<br> Frage A: per default prüft der Master die Revision nicht (False), aber wenn true führt der Master in ecatConigure() check durch – richtig?<br> Frage B: woher kommt das Prüfkriterium (EQ, EQ_OR_G, etc.)? Werden hier die IntCmd geparst???<br>
+<br>
+<p></p>
+</li>
+<li>Wenn Frage B richtig ist, kann es sein dass in V2.6.4 nur auf Gleichheit und bei V3.1.1 der Validate Type in den InitCmd ausgewertet wird?<p></p>
+</li>
+</ol> <p> </p>
+<p><img style="max-width:100%;width:8.7604in;max-height:2.3333in;width:841px;max-height:224px;" src="/api/v1/ticket_attachment/1772/9470/37199?view=inline">
+</p>
+<p> </p>
+<p>Wenn ich vollkommen Falsch liege, brauche ich Info über den Mechanismus was wann wo geprüft wird und wo die Prüfvorschrift herkommt.</p>
+<p> </p>
+<p>Viele Grüße</p>
+<p>Thorsten Niemann Dipl. Ing. (FH)</p>
+<p> </p>
+<p>Lenze SE</p>
+<p>RDC-SW (Software Development Controls)</p>
+<p>Telefon: +49 5154 82-1697</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=9498
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.11.2021 08:34:41 +00:00
+UpdatedAt=05.11.2021 08:34:44 +00:00
+
+### ARTICLE01_SUBJECT
+Busscan und check der Revision V2.6.4 vs V3.1.1 - Verständnisfrage
+
+### ARTICLE01_BODY
+Hallo Herr Niemann,<div><br></div><div>1. Wir parsen die InitCmd:</div><div>EcDeviceFactory.cpp</div><div><div>EC_T_BOOL bCheckAbove = (EC_NULL != EC_STRSTR(EcInitCmdDescComment(pInitCmdDesc), "&gt;="));</div></div><div><br></div><div>2. Ja das war in V2.6 anders. Wir haben es in <span>3.0.0.06 eingeführt:</span>
+</div><div>
+<span>"</span><span>Support revision checks with operator &gt;="</span>
+</div><div><br></div><div>Schöne Grüße,</div><div>Cyril Eyssautier<div><br></div>
+<div><blockquote type="cite">On Thursday, November 4, 2021, 12:05:42 PM, Thorsten Niemann wrote:<br><br><div> <p> </p>
+<p>Hallo Support,</p>
+<p> </p>
+<p>Ich untersuche gerade ein Komptabilitätsproblem hinsichtlich der oben genannten Stack Versionen. Das ENI File ist identisch</p>
+<p> </p>
+<ol start="1" type="1">
+<li>Es wird gesetzt: EC_IOCTL_SB_SET_BUSCNF_READ_PROP : desc.eEEPROMEntry = eEEP_RevisionNumber; desc.dwVerify = EC_TRUE;<br> Frage A: per default prüft der Master die Revision nicht (False), aber wenn true führt der Master in ecatConigure() check durch – richtig?<br> Frage B: woher kommt das Prüfkriterium (EQ, EQ_OR_G, etc.)? Werden hier die IntCmd geparst???<br>
+<br>
+<p></p>
+</li>
+<li>Wenn Frage B richtig ist, kann es sein dass in V2.6.4 nur auf Gleichheit und bei V3.1.1 der Validate Type in den InitCmd ausgewertet wird?<p></p>
+</li>
+</ol> <p> </p>
+<p><img style="max-width:100%;max-width:100%;width:8.7604in;max-height:2.3333in;width:841px;max-height:224px;" src="/api/v1/ticket_attachment/1772/9498/37255?view=inline">
+</p>
+<p> </p>
+<p>Wenn ich vollkommen Falsch liege, brauche ich Info über den Mechanismus was wann wo geprüft wird und wo die Prüfvorschrift herkommt.</p>
+<p> </p>
+<p>Viele Grüße</p>
+<p>Thorsten Niemann Dipl. Ing. (FH)</p>
+<p> </p>
+<p>Lenze SE</p>
+<p>RDC-SW (Software Development Controls)</p>
+<p>Telefon: +49 5154 82-1697</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=9501
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.11.2021 09:03:22 +00:00
+UpdatedAt=05.11.2021 09:03:22 +00:00
+
+### ARTICLE02_SUBJECT
+AW: Busscan und check der Revision V2.6.4 vs V3.1.1 - Verständnisfrage [Ticket#701772]
+
+### ARTICLE02_BODY
+<div>
+<p>Ich finde Alles 😉</p>
+<p>Schönes Wochenende!</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Gesendet:</b> Freitag, 5. November 2021 09:35<br>
+<b>An:</b> Niemann, Thorsten - Lenze &lt;thorsten.niemann@lenze.com&gt;<br>
+<b>Betreff:</b> RE: Busscan und check der Revision V2.6.4 vs V3.1.1 - Verständnisfrage [Ticket#701772]</p>
+</div>
+</div>
+<p> </p>
+<p>Hallo Herr Niemann,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>1. Wir parsen die InitCmd:</p>
+</div>
+<div>
+<p>EcDeviceFactory.cpp</p>
+</div>
+<div>
+<div>
+<p>EC_T_BOOL bCheckAbove = (EC_NULL != EC_STRSTR(EcInitCmdDescComment(pInitCmdDesc), "&gt;="));</p>
+</div>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>2. Ja das war in V2.6 anders. Wir haben es in 3.0.0.06 eingeführt:</p>
+</div>
+<div>
+<p>"Support revision checks with operator &gt;="</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Schöne Grüße,</p>
+</div>
+<div>
+<p>Cyril Eyssautier</p>
+<div> <p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Thursday, November 4, 2021, 12:05:42 PM, Thorsten Niemann wrote:</p>
+<p></p>
+<div>
+<p> </p>
+<p>Hallo Support,</p>
+<p> </p>
+<p>Ich untersuche gerade ein Komptabilitätsproblem hinsichtlich der oben genannten Stack Versionen. Das ENI File ist identisch</p>
+<p> </p>
+<ol start="1" type="1">
+<li> Es wird gesetzt: EC_IOCTL_SB_SET_BUSCNF_READ_PROP : desc.eEEPROMEntry = eEEP_RevisionNumber; desc.dwVerify = EC_TRUE;<br> Frage A: per default prüft der Master die Revision nicht (False), aber wenn true führt der Master in ecatConigure() check durch – richtig?<br> Frage B: woher kommt das Prüfkriterium (EQ, EQ_OR_G, etc.)? Werden hier die IntCmd geparst???<p></p>
+</li>
+<li> Wenn Frage B richtig ist, kann es sein dass in V2.6.4 nur auf Gleichheit und bei V3.1.1 der Validate Type in den InitCmd ausgewertet wird?<p></p>
+</li>
+</ol>
+<p> </p>
+<p><img style="max-width:100%;width:14.3333in;max-height:3.8125in;width:1376px;max-height:366px;" src="/api/v1/ticket_attachment/1772/9501/37261?view=inline"></p>
+<p> </p>
+<p>Wenn ich vollkommen Falsch liege, brauche ich Info über den Mechanismus was wann wo geprüft wird und wo die Prüfvorschrift herkommt.</p>
+<p> </p>
+<p>Viele Grüße</p>
+<p>Thorsten Niemann Dipl. Ing. (FH)</p>
+<p> </p>
+<p>Lenze SE</p>
+<p>RDC-SW (Software Development Controls)</p>
+<p>Telefon: +49 5154 82-1697</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>

@@ -1,0 +1,149 @@
+### HEADER
+Id=7573
+Link=http://at-zammad/#ticket/zoom/7573
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Robert Bosch GmbH (ID=149, Number=40339, Country=DE)
+Commission=Robert Bosch, Testing Systems (ID=168, Number=168)
+Number=707573
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=patrick.linzmaier@de.bosch.com (ID=1531, FirstName=Patrick, LastName=Linzmaier)
+CreatedBy=patrick.linzmaier@de.bosch.com (ID=1531, FirstName=Patrick, LastName=Linzmaier)
+Type=
+TimeUnit=
+CreatedAt=05.03.2024 11:16:13 +00:00
+UpdatedAt=14.03.2024 07:02:02 +00:00
+CloseAt=14.03.2024 07:02:02 +00:00
+ArticlesCount=2
+
+### TITLE
+Wireshark Aufzeichnung und Karte wird nicht erkannt
+
+### ARTICLE00_HEADER
+Id=41770
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.03.2024 11:16:13 +00:00
+UpdatedAt=05.03.2024 11:16:19 +00:00
+
+### ARTICLE00_SUBJECT
+Wireshark Aufzeichnung und Karte wird nicht erkannt
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Herr Eyssautier,</p>
+<p> </p>
+<p>ich habe ein Bus Problem und möchte eine Wireshark Aufzeichnung aufnehmen. Leider findet ihre Applikation die Karte nicht (siehe [1]). Woran kann das liegen? Unsere Applikation hat hier kein Problem.</p>
+<p> </p>
+<p>Können Sie mir das Kommando zukommen lassen wie ich eine ordentliche Wireshark Aufzeichnung mit Ihrer Applikation bekomme?</p>
+<p> </p>
+<p>Vielen Dank im Voraus für Ihre Unterstützung.</p>
+<p> </p>
+<p>Anhang:</p>
+<p>[1]</p>
+<p><span lang="EN-US">./EcMasterDemoDc -intelgbe 0x010d0000 1 -b 250 -oem 0x0082EC372DF9F75B</span></p>
+<p><span lang="EN-US">0000000000: EcMasterDemoDc V3.2.1.03 (Unrestricted) for Linux_x64 Copyright acontis technologies GmbH @ 2024</span></p>
+<p><span lang="EN-US">0000000000: Full command line: -intelgbe 0x010d0000 1 -b 250 -oem 0x0082EC372DF9F75B</span></p>
+<p><span lang="EN-US">0000000001: EC-Master V3.2.1.03 (Unrestricted) for Linux_x64 Copyright acontis technologies GmbH @ 2024</span></p>
+<p><span lang="EN-US">0000000001: emllIntelGbe V3.2.1.03 (Unrestricted) Copyright acontis technologies GmbH @ 2024</span></p>
+<p><span lang="EN-US">0000000001: *IntelGbe-EcLinkOpen() GetPciInfo failed (card not found in registry, 17629184. instance missing?)</span></p>
+<p><span lang="EN-US">0000000001: CEcDeviceBase::Open() Failed to open link layer!</span></p>
+<p><span lang="EN-US">0000000001: ecatInitMaster(): Error opening EtherCAT device!</span></p>
+<p><span lang="EN-US">0000000201: Cannot initialize EtherCAT-Master: ERROR: Not found (0x9811000c))</span></p>
+<p><span lang="EN-US">0000000201: ERROR: Cannot de-initialize EtherCAT-Master: ERROR: Invalid state (0x9811000e)</span></p>
+<p>0000000202: EcMasterDemoDc stop.</p>
+<p> </p>
+<div>
+<p><span>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Patrick Linzmaier</b></span> <span>
+<br>
+<br> (BhP/TEF-EAT33-BAS)<br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com" rel="nofollow noreferrer noopener" target="_blank">www.bosch.com</a><br> Tel. +49 8323 20-4633 | <a href="mailto:Patrick.Linzmaier@de.bosch.com">Patrick.Linzmaier@de.bosch.com</a></span><span><br>
+<br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000;<br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; <br> Geschäftsführung: Dr. Stefan Hartung, Dr. Christian Fischer, Dr. Markus Forschner, <br> Stefan Grosch, Dr. Markus Heyn, Dr. Frank Meyer, Dr. Tanja Rückert </span><br>
+<br>
+</p>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=41778
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.03.2024 13:59:03 +00:00
+UpdatedAt=05.03.2024 13:59:07 +00:00
+
+### ARTICLE01_SUBJECT
+Wireshark Aufzeichnung und Karte wird nicht erkannt
+
+### ARTICLE01_BODY
+Hallo Herr Linzmaier,<div><br></div><div>Herr Eyssautier ist momentan im Urlaub. Deshalb antworte ich Ihnen. <span>Vielen Dank für den EcMasterDemoDc output.</span>
+</div><div><span><br></span></div><div>
+<span>Die Applikation (EcMasterDemoDc) sagt: </span><span><b>GetPciInfo failed (card not found in registry, 17629184. instance missing?)</b></span>
+</div><div><br></div><div>Am naheliegendsten ist, dass die übergebene PCI Adresse <span>0x010d0000 (dezimal: </span><b>17629184</b><span>) nicht Ihrer Intel Karte entspricht.</span>
+</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/emll_init.html#link-layer-instance-selection-via-pci-location" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/emll_init.html#link-layer-instance-selection-via-pci-location" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/emll_init.html#link-layer-instance-selection-via-pci-location</a></div></div><div>
+<span>Können Sie dies z.B. mit lspci verifizieren? Haben Sie alternativ mal die Instanz Nummer 1 (oder 2, ...) probiert?</span><br>
+</div><div><div>./EcMasterDemoDc -intelgbe <b>1</b> 1 -b 250 -oem 0x0082EC372DF9F75B</div></div><div><br></div><div>Ihre atemsys Treiber ist korrekt installiert?</div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/os_linux.html#atemsys-kernel-module" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/os_linux.html#atemsys-kernel-module" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/os_linux.html#atemsys-kernel-module</a></div><div><div><a href="https://github.com/acontis/atemsys" title="https://github.com/acontis/atemsys" rel="nofollow noreferrer noopener" target="_blank">https://github.com/acontis/atemsys</a></div></div><div><span><br></span></div><div>
+<span>Schöne Grüße,</span><br>
+</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, March 5, 2024 at 12:16:13 PM, Patrick Linzmaier wrote:<br><br><div>
+<p>Hallo Herr Eyssautier,</p>
+<p> </p>
+<p>ich habe ein Bus Problem und möchte eine Wireshark Aufzeichnung aufnehmen. Leider findet ihre Applikation die Karte nicht (siehe [1]). Woran kann das liegen? Unsere Applikation hat hier kein Problem.</p>
+<p> </p>
+<p>Können Sie mir das Kommando zukommen lassen wie ich eine ordentliche Wireshark Aufzeichnung mit Ihrer Applikation bekomme?</p>
+<p> </p>
+<p>Vielen Dank im Voraus für Ihre Unterstützung.</p>
+<p> </p>
+<p>Anhang:</p>
+<p>[1]</p>
+<p><span lang="EN-US">./EcMasterDemoDc -intelgbe 0x010d0000 1 -b 250 -oem 0x0082EC372DF9F75B</span></p>
+<p><span lang="EN-US">0000000000: EcMasterDemoDc V3.2.1.03 (Unrestricted) for Linux_x64 Copyright acontis technologies GmbH @ 2024</span></p>
+<p><span lang="EN-US">0000000000: Full command line: -intelgbe 0x010d0000 1 -b 250 -oem 0x0082EC372DF9F75B</span></p>
+<p><span lang="EN-US">0000000001: EC-Master V3.2.1.03 (Unrestricted) for Linux_x64 Copyright acontis technologies GmbH @ 2024</span></p>
+<p><span lang="EN-US">0000000001: emllIntelGbe V3.2.1.03 (Unrestricted) Copyright acontis technologies GmbH @ 2024</span></p>
+<p><span lang="EN-US">0000000001: *IntelGbe-EcLinkOpen() GetPciInfo failed (card not found in registry, 17629184. instance missing?)</span></p>
+<p><span lang="EN-US">0000000001: CEcDeviceBase::Open() Failed to open link layer!</span></p>
+<p><span lang="EN-US">0000000001: ecatInitMaster(): Error opening EtherCAT device!</span></p>
+<p><span lang="EN-US">0000000201: Cannot initialize EtherCAT-Master: ERROR: Not found (0x9811000c))</span></p>
+<p><span lang="EN-US">0000000201: ERROR: Cannot de-initialize EtherCAT-Master: ERROR: Invalid state (0x9811000e)</span></p>
+<p>0000000202: EcMasterDemoDc stop.</p>
+<p> </p>
+<div>
+<p><span>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Patrick Linzmaier</b></span> <span>
+<br>
+<br> (BhP/TEF-EAT33-BAS)<br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com" rel="nofollow noreferrer noopener" target="_blank">www.bosch.com</a><br> Tel. +49 8323 20-4633 | <a href="mailto:Patrick.Linzmaier@de.bosch.com">Patrick.Linzmaier@de.bosch.com</a></span><span><br>
+<br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000;<br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; <br> Geschäftsführung: Dr. Stefan Hartung, Dr. Christian Fischer, Dr. Markus Forschner, <br> Stefan Grosch, Dr. Markus Heyn, Dr. Frank Meyer, Dr. Tanja Rückert </span><br>
+<br>
+</p>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

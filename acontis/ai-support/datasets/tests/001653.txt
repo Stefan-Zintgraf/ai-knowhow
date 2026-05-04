@@ -1,0 +1,97 @@
+### HEADER
+Id=1653
+Link=http://at-zammad/#ticket/zoom/1653
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Sperry Marine (ID=141, Number=40295, Country=DE)
+Commission=Sperry Marine, Navi & Steering System (ID=160, Number=160)
+Number=701653
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=thorsten.horn@sperrymarine.com (ID=684, FirstName=Thorsten, LastName=Horn)
+CreatedBy=thorsten.horn@sperrymarine.com (ID=684, FirstName=Thorsten, LastName=Horn)
+Type=
+TimeUnit=
+CreatedAt=18.10.2021 08:19:13 +00:00
+UpdatedAt=26.04.2022 05:13:02 +00:00
+CloseAt=18.10.2021 08:30:51 +00:00
+ArticlesCount=1
+
+### TITLE
+AW: EXT :EC-Master V3.1.1.11
+
+### ARTICLE00_HEADER
+Id=8879
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.10.2021 08:19:14 +00:00
+UpdatedAt=18.10.2021 08:19:14 +00:00
+
+### ARTICLE00_SUBJECT
+AW: EXT :EC-Master V3.1.1.11
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Herr Eyssautier,</p>
+<p> </p>
+<p>vielen Dank für die neue Version.</p>
+<p>Ich habe es mit der ECMasterDemoDC vom EC-Master 3.1.1.11 ausprobiert und die Demo hat mir immer die MAC-Adresse zurückgeliefert. Ich hatte die Demo ein paar Mal aufgerufen und hatte dort nie den Fehler, dass diese 00:00:00:00:00:00 als MAC Adresse ausgegeben hat.</p>
+<p> </p>
+<p>Wir haben es allerdings aus zeitlichen Gründen bisher noch nicht geschafft, dies mit unserer Applikation zu testen.</p>
+<p>Sollten wir mit unserer Applikation eventuell ein anderes Ergebnis bekommen, dann würde ich mich noch einmal bei Ihnen melden.</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / Kind Regards</p>
+<p> </p>
+<p><b>Thorsten Horn</b></p>
+<p>Software Engineer</p>
+<p> </p>
+<p>Northrop Grumman Sperry Marine B.V.</p>
+<p>(Zweigniederlassung Deutschland / German Branch)</p>
+<p>Woltmanstrasse 19</p>
+<p>20097 Hamburg</p>
+<p>Germany</p>
+<p> </p>
+<p>Registergericht / District Court Hamburg HRB 113144</p>
+<p>Leiter der Zweigniederlassung / Branch Manager: Jenifer Lüssen</p>
+<p> </p>
+<p>Hauptniederlassung / Head Office Northrop Grumman Sperry Marine B.V.<i><br>
+</i>Haringbuisweg 33</p>
+<p>3133 KP Vlaardingen, Netherlands</p>
+<p>Registergericht / District Court Rotterdam 24233711</p>
+<p>Geschäftsführer / Managing Director: James Collett, Roger Wiltshire</p>
+<p> </p>
+<p>PHONE: +49 (40) 299 00-237</p>
+<p>FAX: +49 (40) 299 00-203</p>
+<p>EMAIL: <b><a href="http://Thorsten.Horn@sperry.ngc.com" rel="nofollow noreferrer noopener" target="_blank">Thorsten.Horn@sperry.ngc.com</a></b></p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:2.5833in;max-height:.7708in;width:248px;max-height:74px;" src="/api/v1/ticket_attachment/1653/8879/35300?view=inline" alt="NGSM logo for email signature"></p>
+<p><b>Vertraulichkeitshinweis</b>
+<br> Diese Nachricht und jeder uebermittelte Anhang beinhaltet vertrauliche Informationen und ist nur fuer die Personen oder das Unternehmen bestimmt, an welche sie tatsaechlich gerichtet ist. Sollten Sie nicht der Bestimmungsempfaenger sein, weisen wir Sie darauf hin, dass die Verbreitung, das (auch teilweise) Kopieren sowie der Gebrauch der empfangenen E-Mail und der darin enthaltenen Informationen gesetzlich verboten ist und ggf. Schadensersatzpflichten ausloesen kann. Sollten Sie diese Nachricht aufgrund eines Uebermittlungsfehlers erhalten haben,<br> bitten wir Sie, den Sender unverzueglich hiervon in Kenntnis zu setzen.</p>
+<p><b>Confidentiality note<br>
+</b>This message (including any attachments) contains confidential information intended for a specific individual or entity as the intended recipient. If you are not the intended recipient, you are hereby notified that any distribution, any copying of this message in part or in whole, or any taking of action based on it, is strictly prohibited by law and may cause liability. In case you have received this message due to an error in transmission, we ask you to notify the sender immediately</p>
+<p>P Please consider the environment before printing this e-mail.</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Cyril Eyssautier &lt;c.eyssautier@acontis.com&gt; <br>
+<b>Gesendet:</b> Dienstag, 12. Oktober 2021 15:35<br>
+<b>An:</b> Horn, Thorsten [DE] (Sperry) &lt;Thorsten.Horn@sperry.ngc.com&gt;<br>
+<b>Betreff:</b> EXT :EC-Master V3.1.1.11</p>
+</div>
+</div>
+<p> </p>
+<p>Hallo Herr Horn,</p>
+<p> </p>
+<p>nach Ihrem Gespräch mit unserem Herrn Widmann, schicke ich Ihnen hier die neuste Version des Masters:</p>
+<p> </p>
+<p><a href="https://downloads.acontis.com/2021/M-O/Northrop_Grumman_Sperry_Marine_B.V._(40295)(DE)/EC-Master/3.1.1.11/EC-Master-ClassA-AddOn-V3.1.1.11-Linux-ARM_32Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/M-O/Northrop_Grumman_Sperry_Marine_B.V._(40295)(DE)/EC-Master/3.1.1.11/EC-Master-ClassA-AddOn-V3.1.1.11-Linux-ARM_32Bit-SDK_Protected.tar.gz</a></p>
+<p><a href="https://downloads.acontis.com/2021/M-O/Northrop_Grumman_Sperry_Marine_B.V._(40295)(DE)/EC-Master/3.1.1.11/EC-Master-ICSS-V3.1.1.11-Linux-ARM_32Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/M-O/Northrop_Grumman_Sperry_Marine_B.V._(40295)(DE)/EC-Master/3.1.1.11/EC-Master-ICSS-V3.1.1.11-Linux-ARM_32Bit-SDK_Protected.tar.gz</a></p>
+<p><a href="https://downloads.acontis.com/2021/M-O/Northrop_Grumman_Sperry_Marine_B.V._(40295)(DE)/EC-Master/3.1.1.11/EC-Master-V3.1.1.11-Linux-ARM_32Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/M-O/Northrop_Grumman_Sperry_Marine_B.V._(40295)(DE)/EC-Master/3.1.1.11/EC-Master-V3.1.1.11-Linux-ARM_32Bit-SDK_Protected.tar.gz</a></p>
+<p><a href="https://downloads.acontis.com/2021/M-O/Northrop_Grumman_Sperry_Marine_B.V._(40295)(DE)/EC-Master/3.1.1.11/FP-MasterRedundancy-V3.1.1.11-Linux.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/M-O/Northrop_Grumman_Sperry_Marine_B.V._(40295)(DE)/EC-Master/3.1.1.11/FP-MasterRedundancy-V3.1.1.11-Linux.zip</a></p>
+<p> </p>
+<p>falls das Problem mit der MAC Adresse immer noch vorhanden ist, schicken sie uns bitte eine log Datei des Problems aus unseren unmodifizierten EcMasterDemo mit –v 5 zu.</p>
+<p> </p>
+<p>Schöne Grüße,</p>
+<p>Cyril Eyssautier</p>
+</div>

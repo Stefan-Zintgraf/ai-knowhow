@@ -1,0 +1,183 @@
+### HEADER
+Id=6972
+Link=http://at-zammad/#ticket/zoom/6972
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Reply (ID=802, Number=0, Country=IT)
+Commission=Reply, Unknown (ID=872, Number=872)
+Number=706972
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=s.mollaei@reply.it (ID=2333, FirstName=Seyedmorteza, LastName=Mollaei)
+CreatedBy=s.mollaei@reply.it (ID=2333, FirstName=Seyedmorteza, LastName=Mollaei)
+Type=
+TimeUnit=
+CreatedAt=30.11.2023 14:15:03 +00:00
+UpdatedAt=21.03.2024 05:45:48 +00:00
+CloseAt=01.12.2023 07:18:46 +00:00
+ArticlesCount=4
+
+### TITLE
+EC-Simulator for Linux
+
+### ARTICLE00_HEADER
+Id=37851
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.11.2023 14:15:03 +00:00
+UpdatedAt=30.11.2023 14:15:03 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Simulator for Linux
+
+### ARTICLE00_BODY
+<div>Dear,</div><div>
+<span><br>
+</span>
+</div><div>Your colleague "Lisa Janischek" gave me your contact information to consult with you.</div><div><span><br>
+</span></div><div>I am using SOEM library and want to make a communication between master and slaves in Linux to check my program, so I need to simulate the slaves since I do not have a real slave device. I got the EC-Simulator for Linux version from your colleague but found that I also need EC-Engineer to create eni.xml file for EC-Simulator. So, my question is that, are there any predefined ENI files to avoid using EC-Engineer? since I want to avoid another PC with Windows OS.</div><div>My idea is to simulate the slaves in another PC by EC-Simulator and then connect this PC to another PC running the SOEM master through EtherNet to read them and make the connection. Could you please let me know if it is possible or it is needed further considerations?</div><div><span><br>
+</span></div><div>Thank you in advance,</div><div><span><br>
+</span></div><div>Best regards,</div><div>Morteza</div><div> </div>
+
+### ARTICLE01_HEADER
+Id=37902
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=01.12.2023 06:56:40 +00:00
+UpdatedAt=01.12.2023 06:56:40 +00:00
+
+### ARTICLE01_BODY
+@Christoph: Hast du das Ticket zu dir genommen? Schreibst du ihm oder soll ich?
+
+### ARTICLE02_HEADER
+Id=37903
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.12.2023 07:18:36 +00:00
+UpdatedAt=01.12.2023 07:18:37 +00:00
+
+### ARTICLE02_SUBJECT
+EC-Simulator for Linux
+
+### ARTICLE02_BODY
+Hello Morteza,<div><br></div><div>we before we start into the technical discussion, I want let you know, that EC-Simulator is a commercial product and the SDK + Runtime would be around EUR 3.800.</div><div><br></div><div>If you are still interested, please let us know.</div><div><br></div><div>Best Regards</div><div><br></div><div>Christoph </div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, November 30, 2023 at 3:15:03 PM, Seyedmorteza Mollaei wrote:<br><br><div>Dear,</div>
+<div>
+<span><br>
+</span>
+</div>
+<div>Your colleague "Lisa Janischek" gave me your contact information to consult with you.</div>
+<div><span><br>
+</span></div>
+<div>I am using SOEM library and want to make a communication between master and slaves in Linux to check my program, so I need to simulate the slaves since I do not have a real slave device. I got the EC-Simulator for Linux version from your colleague but found that I also need EC-Engineer to create eni.xml file for EC-Simulator. So, my question is that, are there any predefined ENI files to avoid using EC-Engineer? since I want to avoid another PC with Windows OS.</div>
+<div>My idea is to simulate the slaves in another PC by EC-Simulator and then connect this PC to another PC running the SOEM master through EtherNet to read them and make the connection. Could you please let me know if it is possible or it is needed further considerations?</div>
+<div><span><br>
+</span></div>
+<div>Thank you in advance,</div>
+<div><span><br>
+</span></div>
+<div>Best regards,</div>
+<div>Morteza</div>
+<div> </div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=37911
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.12.2023 09:05:30 +00:00
+UpdatedAt=01.12.2023 09:05:30 +00:00
+
+### ARTICLE03_SUBJECT
+Re: EC-Simulator for Linux [Ticket#706972]
+
+### ARTICLE03_BODY
+<div> Hi <span style=" color: rgb(36, 36, 36);">Christoph</span>, </div><div><span><br>
+</span></div><div>Thank you for your information, although my question was in the scope of evaluation version but I do not have that budget to pay for this.</div><div><span><br>
+</span></div><div>Anyway, I really appreciate your time.</div><div><span><br>
+</span></div><div>B.</div><div>M.</div><hr>
+<div dir="ltr">
+<b>From:</b> Christoph Widmann via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Friday, December 1, 2023 8:18 AM<br>
+<b>To:</b> Seyedmorteza Mollaei &lt;s.mollaei@reply.it&gt;<br>
+<b>Subject:</b> RE: EC-Simulator for Linux [Ticket#706972] <div> </div>
+</div><div>Hello Morteza,<div> </div>
+<div>we before we start into the technical discussion, I want let you know, that EC-Simulator is a commercial product and the SDK + Runtime would be around EUR 3.800.</div>
+<div> </div>
+<div>If you are still interested, please let us know.</div>
+<div> </div>
+<div>Best Regards</div>
+<div> </div>
+<div>Christoph</div>
+<div>
+<br>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Thursday, November 30, 2023 at 3:15:03 PM, Seyedmorteza Mollaei wrote:<br>
+<br>
+<div>Dear,</div>
+<div><span><br>
+</span></div>
+<div>Your colleague "Lisa Janischek" gave me your contact information to consult with you.</div>
+<div><span><br>
+</span></div>
+<div>I am using SOEM library and want to make a communication between master and slaves in Linux to check my program, so I need to simulate the slaves since I do not have a real slave device. I got the EC-Simulator for Linux version from your colleague but found that I also need EC-Engineer to create eni.xml file for EC-Simulator. So, my question is that, are there any predefined ENI files to avoid using EC-Engineer? since I want to avoid another PC with Windows OS.</div>
+<div>My idea is to simulate the slaves in another PC by EC-Simulator and then connect this PC to another PC running the SOEM master through EtherNet to read them and make the connection. Could you please let me know if it is possible or it is needed further considerations?</div>
+<div><span><br>
+</span></div>
+<div>Thank you in advance,</div>
+<div><span><br>
+</span></div>
+<div>Best regards,</div>
+<div>Morteza</div>
+<div> </div>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>

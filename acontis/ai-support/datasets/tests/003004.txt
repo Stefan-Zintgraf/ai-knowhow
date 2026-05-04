@@ -1,0 +1,234 @@
+### HEADER
+Id=3004
+Link=http://at-zammad/#ticket/zoom/3004
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=FANUC, EtherCAT model CNC (ID=487, Number=487)
+Number=703004
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=12.05.2022 09:22:57 +00:00
+UpdatedAt=12.12.2023 13:52:36 +00:00
+CloseAt=20.05.2022 06:03:46 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Engineer (FANUC) [E15]
+
+### ARTICLE00_HEADER
+Id=15852
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=12.05.2022 09:22:57 +00:00
+UpdatedAt=12.05.2022 09:22:59 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Engineer (FANUC) [E15]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Engineer (FANUC) [E15]
+
+If open EC-Engineer and select the .ecc file with "open" in the menu bar, the contents of the file will be displayed correctly.
+However, if open .ecc file with follonwing ways, the contens of file is not displayed.(A new screen with nothing set will be displayed.)
+  - Associate the .ecc file with the app on Windows and double-click the .ecc file
+  - Drag and drop .ecc files into app shortcuts
+Is there a method to display the contents of .ecc in above ways?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=15860
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.05.2022 13:02:29 +00:00
+UpdatedAt=12.05.2022 13:02:33 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Engineer (FANUC) [E15]
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>this should be part of your setup.exe or MSI. There you have to register the ending in the registry to start with EC-Engineer.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, May 12, 2022, 11:22:57 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Engineer (FANUC) [E15]</div>
+<div><br></div>
+<div>If open EC-Engineer and select the .ecc file with "open" in the menu bar, the contents of the file will be displayed correctly.</div>
+<div>However, if open .ecc file with follonwing ways, the contens of file is not displayed.(A new screen with nothing set will be displayed.)</div>
+<div>  - Associate the .ecc file with the app on Windows and double-click the .ecc file</div>
+<div>  - Drag and drop .ecc files into app shortcuts</div>
+<div>Is there a method to display the contents of .ecc in above ways?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=15876
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=13.05.2022 02:38:09 +00:00
+UpdatedAt=13.05.2022 02:38:09 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Engineer (FANUC) [E15] [Ticket#703004]
+
+### ARTICLE02_BODY
+Dear Kai san
+
+ > this should be part of your setup.exe or MSI. There you have to register the ending in the registry to start with EC-Engineer
+
+- I couldn't understand the answer "to register the ending in the registry".
+   Does this mean registering the extension (.ecc) in the registry?
+
+- Does "part of your setup.exe or MSI" mean, for example, an implementation that the exe file gets the path of the ecc file as a command line argument and opens the file?
+
+Best regards,
+Takuya Fujikawa
+
+
+On 2022/05/12 22:02, Kai Feifel via EC-Support wrote:
+> Hi,
+> 
+> this should be part of your setup.exe or MSI. There you have to register the ending in the registry to start with EC-Engineer.
+> 
+> Best regards,
+> Kai
+> __________________________________________________________________________________________
+> Kai Feifel
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> On Thursday, May 12, 2022, 11:22:57 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Engineer (FANUC) [E15]
+>>
+>> If open EC-Engineer and select the .ecc file with "open" in the menu bar, the contents of the file will be displayed correctly.
+>> However, if open .ecc file with follonwing ways, the contens of file is not displayed.(A new screen with nothing set will be displayed.)
+>>  - Associate the .ecc file with the app on Windows and double-click the .ecc file
+>>  - Drag and drop .ecc files into app shortcuts
+>> Is there a method to display the contents of .ecc in above ways?
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+
+### ARTICLE03_HEADER
+Id=15877
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.05.2022 05:28:23 +00:00
+UpdatedAt=13.05.2022 05:28:26 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Engineer (FANUC) [E15]
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>yes you need a ProgId for example. We use Wix Setup for EC-Engineer. There it looks like this:</div><div><br></div><div>
+<div>&lt;ProgId Id="ECEngineerProjectFile" Icon="ECEngineerIco" Description="EC-Engineer Project File"&gt;</div>
+<div>          &lt;Extension Id="ecc" &gt;</div>
+<div>            &lt;Verb Id="open" Command="Open" TargetFile="ECEngineer" Argument="/CFG=&amp;quot;%1&amp;quot;" /&gt;</div>
+<div>          &lt;/Extension&gt;</div>
+<div><span>&lt;/ProgId&gt;</span></div>
+<div><span><br></span></div>
+<div><span>There is also the CommandLine part. </span></div>
+<div><span><br></span></div>
+<div><span>Best regards,</span></div>
+<div><span>Kai</span></div>
+<div><br></div>
+<div><blockquote type="cite">On Friday, May 13, 2022, 4:38:09 AM, Takuya Fujikawa wrote:<br><br><div>Dear Kai san</div>
+<div><br></div>
+<div> &gt; this should be part of your setup.exe or MSI. There you have to register the ending in the registry to start with EC-Engineer</div>
+<div><br></div>
+<div>- I couldn't understand the answer "to register the ending in the registry".</div>
+<div>   Does this mean registering the extension (.ecc) in the registry?</div>
+<div><br></div>
+<div>- Does "part of your setup.exe or MSI" mean, for example, an implementation that the exe file gets the path of the ecc file as a command line argument and opens the file?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2022/05/12 22:02, Kai Feifel via EC-Support wrote:</div>
+<div>&gt; Hi,</div>
+<div>&gt;</div>
+<div>&gt; this should be part of your setup.exe or MSI. There you have to register the ending in the registry to start with EC-Engineer.</div>
+<div>&gt;</div>
+<div>&gt; Best regards,</div>
+<div>&gt; Kai</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Kai Feifel</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Thursday, May 12, 2022, 11:22:57 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Engineer (FANUC) [E15]</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; If open EC-Engineer and select the .ecc file with "open" in the menu bar, the contents of the file will be displayed correctly.</div>
+<div>&gt;&gt; However, if open .ecc file with follonwing ways, the contens of file is not displayed.(A new screen with nothing set will be displayed.)</div>
+<div>&gt;&gt;  - Associate the .ecc file with the app on Windows and double-click the .ecc file</div>
+<div>&gt;&gt;  - Drag and drop .ecc files into app shortcuts</div>
+<div>&gt;&gt; Is there a method to display the contents of .ecc in above ways?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

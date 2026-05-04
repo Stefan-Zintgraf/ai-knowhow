@@ -1,0 +1,294 @@
+### HEADER
+Id=4303
+Link=http://at-zammad/#ticket/zoom/4303
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=704303
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=paul@deltamotion.com (ID=659, FirstName=Paul, LastName=Huumala)
+CreatedBy=paul@deltamotion.com (ID=659, FirstName=Paul, LastName=Huumala)
+Type=
+TimeUnit=
+CreatedAt=11.11.2022 00:47:50 +00:00
+UpdatedAt=16.11.2022 07:48:17 +00:00
+CloseAt=16.11.2022 07:48:16 +00:00
+ArticlesCount=4
+
+### TITLE
+Master EC_E_NOMEMORY
+
+### ARTICLE00_HEADER
+Id=22630
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.11.2022 00:47:50 +00:00
+UpdatedAt=11.11.2022 00:47:53 +00:00
+
+### ARTICLE00_SUBJECT
+Master EC_E_NOMEMORY
+
+### ARTICLE00_BODY
+<div>
+<p>Hello Support,</p>
+<p> </p>
+<p>We’ve run into issues where our master reports <i>ERROR: No memory left (0x9811000a)!</i> In the attached file, this happens at Time = 147.682 826</p>
+<p> </p>
+<p>This happened by having a network running (in GenPreOp) and going into the Edit Topology view. We then did a network scan repeatedly until this error occurred. Attached is an ECC project of the slaves that were connected to the network. Note, no ENI file was downloaded. <b>Do you have any idea why this happens?</b></p>
+<p> </p>
+<p>Potentially related, I found the below code in EcDevice.cs, which indicates that we can receive EC_E_NOMEMORY for repeated network scans with GenPreOp. <b>Can you elaborate on why this happens?</b> </p>
+<p><i> // Set master state to PreOp, so "PortSlaveIds" will be set!<br> if (!IsMasterVersionSmaller("02.07.00.00", true))<br> {<br> if (scanBus &amp;&amp; !rasIsConfigured)<br> {<br> if (!ConfigureMaster(true))<br> {<br> // Retry (without GenPreOp, because we could receive "EC_E_NOMEMORY" for slaves with big PDOs)<br> if (!ConfigureMaster(false))<br> return false;<br> }<br> }<br> }</i></p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Paul Huumala</p>
+<p>Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p>360-254-8688</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=22700
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.11.2022 13:03:27 +00:00
+UpdatedAt=14.11.2022 13:03:28 +00:00
+
+### ARTICLE01_SUBJECT
+Master EC_E_NOMEMORY
+
+### ARTICLE01_BODY
+<div>Hi Paul,</div><div><br></div><div>It looks like a RAS problem to me! It looks like you are trying to initialize the RAS server every time you are configuring the Master or doing your bus scan!</div><div>Maybe you should initialize the RAS server only one time before the scan loop!</div><div><br></div><div>Best Regards</div><div>Haithem Jebali</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Friday, November 11, 2022 at 1:47:50 AM, Paul Huumala wrote:<br><br>0x9811000a<br>
+</blockquote></div><div><br></div><br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=22799
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.11.2022 00:24:41 +00:00
+UpdatedAt=16.11.2022 00:24:41 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Master EC_E_NOMEMORY [Ticket#704303]
+
+### ARTICLE02_BODY
+<div>
+<p>Hi Haithem,</p>
+<p> </p>
+<p>We have tracked down this specific issue to too small of a Memory Pool for our Virtual Address Space. The EcMaster OS was unable to start m_RxThread. Increasing our Memory Pool seems to have solved this.</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Paul</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Haithem Jebali via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Monday, November 14, 2022 5:03 AM<br>
+<b>To:</b> Paul Huumala &lt;Paul@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: Master EC_E_NOMEMORY [Ticket#704303]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Hi Paul,</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>It looks like a RAS problem to me! It looks like you are trying to initialize the RAS server every time you are configuring the Master or doing your bus scan!</p>
+</div>
+<div>
+<p>Maybe you should initialize the RAS server only one time before the scan loop!</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best Regards</p>
+</div>
+<div>
+<p>Haithem Jebali</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Friday, November 11, 2022 at 1:47:50 AM, Paul Huumala wrote:<br>
+<br> 0x9811000a</p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Haithem Jebali</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=22809
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.11.2022 07:48:17 +00:00
+UpdatedAt=16.11.2022 07:48:19 +00:00
+
+### ARTICLE03_SUBJECT
+Master EC_E_NOMEMORY
+
+### ARTICLE03_BODY
+Hi Paul,<div><br></div><div>Thanks for letting me know! I am going to close this ticket!</div><div><br></div><div>Best Regards</div><div>Haithem Jebali<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, November 16, 2022 at 1:24:41 AM, Paul Huumala wrote:<br><br><div>
+<p>Hi Haithem,</p>
+<p> </p>
+<p>We have tracked down this specific issue to too small of a Memory Pool for our Virtual Address Space. The EcMaster OS was unable to start m_RxThread. Increasing our Memory Pool seems to have solved this.</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Paul</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Haithem Jebali via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Monday, November 14, 2022 5:03 AM<br>
+<b>To:</b> Paul Huumala &lt;Paul@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: Master EC_E_NOMEMORY [Ticket#704303]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Hi Paul,</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>It looks like a RAS problem to me! It looks like you are trying to initialize the RAS server every time you are configuring the Master or doing your bus scan!</p>
+</div>
+<div>
+<p>Maybe you should initialize the RAS server only one time before the scan loop!</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best Regards</p>
+</div>
+<div>
+<p>Haithem Jebali</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Friday, November 11, 2022 at 1:47:50 AM, Paul Huumala wrote:<br>
+<br> 0x9811000a</p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Haithem Jebali</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

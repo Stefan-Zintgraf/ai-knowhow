@@ -1,0 +1,109 @@
+### HEADER
+Id=1418
+Link=http://at-zammad/#ticket/zoom/1418
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Sifang, Unknown (ID=565, Number=565)
+Number=701418
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=13.09.2021 11:02:02 +00:00
+UpdatedAt=17.09.2021 06:11:02 +00:00
+CloseAt=17.09.2021 06:11:02 +00:00
+ArticlesCount=2
+
+### TITLE
+The customer sifang problem about the ecmotion
+
+### ARTICLE00_HEADER
+Id=7642
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.09.2021 11:02:02 +00:00
+UpdatedAt=13.09.2021 11:02:04 +00:00
+
+### ARTICLE00_SUBJECT
+The customer sifang problem about the ecmotion
+
+### ARTICLE00_BODY
+<div>
+<div>Dear,</div>
+<div>The customer have a problem when they used the ecmotion, they want to controlling multi-axis.</div>
+<div>They could calculate every axis acc/dec and velocity and target position, and they will keep every axis stop at the same time via calculate. They want to knowing if they send the position command to all the axis with the command, whether the ecmotion could control the axis and stop at the same time following the command?</div>
+<div>From my consider, how to estimate the cycltime necessary for the blinding if possiable.</div>
+<div> </div>
+<div> <div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=7646
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.09.2021 12:27:08 +00:00
+UpdatedAt=13.09.2021 12:27:10 +00:00
+
+### ARTICLE01_SUBJECT
+The customer sifang problem about the ecmotion
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>the EC-Motion doesn't support it.</div><div><br></div><div>Best Regards,</div><div>Cyril<div><br></div>
+<div><blockquote type="cite">On Monday, September 13, 2021, 1:02:02 PM, John Zhang wrote:<br><br><div>
+<div>Dear,</div>
+<div>The customer have a problem when they used the ecmotion, they want to controlling multi-axis.</div>
+<div>They could calculate every axis acc/dec and velocity and target position, and they will keep every axis stop at the same time via calculate. They want to knowing if they send the position command to all the axis with the command, whether the ecmotion could control the axis and stop at the same time following the command?</div>
+<div>From my consider, how to estimate the cycltime necessary for the blinding if possiable.</div>
+<div> </div>
+<div> <div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

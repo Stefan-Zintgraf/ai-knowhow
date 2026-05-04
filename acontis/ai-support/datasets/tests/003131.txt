@@ -1,0 +1,91 @@
+### HEADER
+Id=3131
+Link=http://at-zammad/#ticket/zoom/3131
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Gridblock (ID=510, Number=0, Country=US)
+Commission=Gridblock, Unknown (ID=593, Number=593)
+Number=703131
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=ryan.hodgman@gridblock.com (ID=851, FirstName=Ryan, LastName=Hodgman)
+CreatedBy=ryan.hodgman@gridblock.com (ID=851, FirstName=Ryan, LastName=Hodgman)
+Type=
+TimeUnit=
+CreatedAt=01.06.2022 07:17:19 +00:00
+UpdatedAt=01.07.2022 06:08:44 +00:00
+CloseAt=01.07.2022 06:08:44 +00:00
+ArticlesCount=2
+
+### TITLE
+Question - CtlSetVal Timing with Sync Units
+
+### ARTICLE00_HEADER
+Id=16454
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.06.2022 07:17:19 +00:00
+UpdatedAt=01.06.2022 07:17:20 +00:00
+
+### ARTICLE00_SUBJECT
+Question - CtlSetVal Timing with Sync Units
+
+### ARTICLE00_BODY
+<div>Hi Cyril,</div><div> </div><div>Firstly I want to thank you for your continued support on the CtlSetVal/SOF timing. We had another question regarding the timing for when the Master stack is configured with multiple Sync Units/Frames. I ran a quick test with two Slave controllers on separate Sync Units and noted that the Sync0/Sync1 timings are matched as expected. However the SyncManager SOF timings differ between the two controllers.</div><div> </div><div>For the first slave in our configuration the timing matches our CtlSetVal=10us(i.e. the reference clock slave). But the SOF for the second slave falls 16us behind, this value also drifts over the course of our measurement by a few microseconds. I'm sure this is expected behavior as the Master is sending separate frames for each slave. We were wondering if the timing delta seen here is predictable/controllable.</div><div> </div><div>
+<img style="max-width:100%;max-width:100%;" src="/api/v1/ticket_attachment/3131/16454/66293?view=inline"><br>
+</div><div>
+<img style="max-width:100%;max-width:100%;" src="/api/v1/ticket_attachment/3131/16454/66292?view=inline"><br>
+</div><div> </div><div>Thanks,</div><div>Ryan</div><div>
+<p><b><span style="color:#2599d6;">Ryan Hodgman</span></b></p>
+<p><span style="color:#404040;">Firmware Engineer</span></p>
+<p><b><span style="color:#2599d6;">EMAIL </span></b> <span style="color:#767171;"><a href="mailto:Ryan.Hodgman@gridblock.com"><span style="color:#767171;">Ryan.Hodgman@gridblock.com</span></a></span></p>
+<p><b><span style="color:#2599d6;">PHONE</span></b> <span style="color:#767171;">734-646-6344</span></p>
+<p><b><span style="color:#2599d6;">WEB</span></b> <span style="color:#767171;"><a href="http://www.gridblock.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#767171;">www.gridblock.com</span></a></span></p>
+<p><b><span style="color:#2599d6;">LINKEDIN </span></b> <span style="color:#767171;"><a href="https://www.linkedin.com/company/endeavourinspiredinfrastructure/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/endeavourinspiredinfrastructure/" target="_blank"><span style="color:#767171;">Company Profile</span></a></span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=16527
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.06.2022 16:04:51 +00:00
+UpdatedAt=01.06.2022 16:04:52 +00:00
+
+### ARTICLE01_SUBJECT
+Question - CtlSetVal Timing with Sync Units
+
+### ARTICLE01_BODY
+Hi Ryan,<div><br></div><div>having 2 tasks will generates 2 frames. I assume that you still can "SendAllCycFrames" <span>the 16us could be the difference processing these 2 frames.</span>
+</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Wednesday, June 1, 2022, 9:17:19 AM, Ryan Hodgman wrote:<br><br><div>Hi Cyril,</div>
+<div> </div>
+<div>Firstly I want to thank you for your continued support on the CtlSetVal/SOF timing. We had another question regarding the timing for when the Master stack is configured with multiple Sync Units/Frames. I ran a quick test with two Slave controllers on separate Sync Units and noted that the Sync0/Sync1 timings are matched as expected. However the SyncManager SOF timings differ between the two controllers.</div>
+<div> </div>
+<div>For the first slave in our configuration the timing matches our CtlSetVal=10us(i.e. the reference clock slave). But the SOF for the second slave falls 16us behind, this value also drifts over the course of our measurement by a few microseconds. I'm sure this is expected behavior as the Master is sending separate frames for each slave. We were wondering if the timing delta seen here is predictable/controllable.</div>
+<div> </div>
+<div>
+<img style="max-width:100%;max-width:100%;max-width:100%;" src="/api/v1/ticket_attachment/3131/16527/66551?view=inline"><br>
+</div>
+<div>
+<img style="max-width:100%;max-width:100%;max-width:100%;" src="/api/v1/ticket_attachment/3131/16527/66552?view=inline"><br>
+</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Ryan</div>
+<div>
+<p><b><span style="color:#2599d6;">Ryan Hodgman</span></b></p>
+<p><span style="color:#404040;">Firmware Engineer</span></p>
+<p><b><span style="color:#2599d6;">EMAIL </span></b> <span style="color:#767171;"><a href="mailto:Ryan.Hodgman@gridblock.com"><span style="color:#767171;">Ryan.Hodgman@gridblock.com</span></a></span></p>
+<p><b><span style="color:#2599d6;">PHONE</span></b> <span style="color:#767171;">734-646-6344</span></p>
+<p><b><span style="color:#2599d6;">WEB</span></b> <span style="color:#767171;"><a href="http://www.gridblock.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#767171;">www.gridblock.com</span></a></span></p>
+<p><b><span style="color:#2599d6;">LINKEDIN </span></b> <span style="color:#767171;"><a href="https://www.linkedin.com/company/endeavourinspiredinfrastructure/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/endeavourinspiredinfrastructure/" target="_blank"><span style="color:#767171;">Company Profile</span></a></span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

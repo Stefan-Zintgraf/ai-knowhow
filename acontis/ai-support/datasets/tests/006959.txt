@@ -1,0 +1,216 @@
+### HEADER
+Id=6959
+Link=http://at-zammad/#ticket/zoom/6959
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=JSLT (ID=402, Number=0, Country=JP)
+Commission=V-TEX, Valve for semi equip. (ID=817, Number=817)
+Number=706959
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=30.11.2023 03:27:38 +00:00
+UpdatedAt=08.12.2023 11:20:49 +00:00
+CloseAt=08.12.2023 11:20:49 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-STA(V-TEX)
+
+### ARTICLE00_HEADER
+Id=37780
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=30.11.2023 03:27:38 +00:00
+UpdatedAt=30.11.2023 03:27:41 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-STA(V-TEX)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-STA(V-TEX)
+
+Is there a user's manual for EC-STA?
+If so, please provide it to them.
+
+Best regards,
+Takuya Fujikawa
+
+----------------------------------------------------------------------------------------------
+
+
+
+
+### ARTICLE01_HEADER
+Id=37785
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.11.2023 07:07:43 +00:00
+UpdatedAt=30.11.2023 07:07:44 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-STA(V-TEX)
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>it is part of the installation:</div><div><div>C:\Program Files\acontis_technologies\EC-STA-Windows-x86_64Bit\Doc\EC-STA_UserManual.pdf</div></div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, November 30, 2023 at 4:27:38 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-STA(V-TEX)</div>
+<div><br></div>
+<div>Is there a user's manual for EC-STA?</div>
+<div>If so, please provide it to them.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>----------------------------------------------------------------------------------------------</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=37787
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=30.11.2023 07:18:41 +00:00
+UpdatedAt=30.11.2023 07:18:41 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-STA(V-TEX) [Ticket#706959]
+
+### ARTICLE02_BODY
+Dear Cyril san
+
+ > C:\Program Files\acontis_technologies\EC-STA-Windows-x86_64Bit\Doc\EC-STA_UserManual.pdf
+
+I know this file. However, the content of the file is the EC-Master class B manual.
+Is there a manual that describes EC-STA?
+
+Best regards,
+Takuya Fujikawa
+
+On 2023/11/30 16:07, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+> 
+> it is part of the installation:
+> C:\Program Files\acontis_technologies\EC-STA-Windows-x86_64Bit\Doc\EC-STA_UserManual.pdf
+> 
+> Best Regards,
+> __________________________________________________________________________________________
+> Cyril Eyssautier
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> On Thursday, November 30, 2023 at 4:27:38 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-STA(V-TEX)
+>>
+>> Is there a user's manual for EC-STA?
+>> If so, please provide it to them.
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+>> ----------------------------------------------------------------------------------------------
+>>
+> 
+> 
+> 
+
+
+### ARTICLE03_HEADER
+Id=37800
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.11.2023 07:56:32 +00:00
+UpdatedAt=30.11.2023 07:56:36 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-STA(V-TEX)
+
+### ARTICLE03_BODY
+Hi Takuya,<div><br></div><div>I understand. No sorry, we don't have more EC-STA specific documentation. In the past we delivered EC-Master for EC-STA customers. We renamed the packages and manuals but the don't provide more content... We should improve it. But not before next year.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Thursday, November 30, 2023 at 8:18:41 AM, Takuya Fujikawa wrote:<br><br><div>Dear Cyril san</div>
+<div><br></div>
+<div> &gt; C:\Program Files\acontis_technologies\EC-STA-Windows-x86_64Bit\Doc\EC-STA_UserManual.pdf</div>
+<div><br></div>
+<div>I know this file. However, the content of the file is the EC-Master class B manual.</div>
+<div>Is there a manual that describes EC-STA?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2023/11/30 16:07, Cyril Eyssautier via EC-Support wrote:</div>
+<div>&gt; Hi Takuya,</div>
+<div>&gt;</div>
+<div>&gt; it is part of the installation:</div>
+<div>&gt; C:\Program Files\acontis_technologies\EC-STA-Windows-x86_64Bit\Doc\EC-STA_UserManual.pdf</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Cyril Eyssautier</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Thursday, November 30, 2023 at 4:27:38 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-STA(V-TEX)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Is there a user's manual for EC-STA?</div>
+<div>&gt;&gt; If so, please provide it to them.</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; ----------------------------------------------------------------------------------------------</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

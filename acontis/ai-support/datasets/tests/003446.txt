@@ -1,0 +1,103 @@
+### HEADER
+Id=3446
+Link=http://at-zammad/#ticket/zoom/3446
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=FANUC, EtherCAT model CNC (ID=487, Number=487)
+Number=703446
+Owner=m.danilau@acontis.com (ID=4, FirstName=Maksim, LastName=Danilau)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=14.07.2022 01:07:00 +00:00
+UpdatedAt=12.12.2023 13:52:36 +00:00
+CloseAt=19.09.2022 06:08:59 +00:00
+ArticlesCount=2
+
+### TITLE
+Question about EC-Master (FANUC) [M86]
+
+### ARTICLE00_HEADER
+Id=18349
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=14.07.2022 01:07:00 +00:00
+UpdatedAt=14.07.2022 01:07:01 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master (FANUC) [M86]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master (FANUC) [M86]
+
+We designed the application with the expectation that "aux_task" and "Job_task" will always work every cycle time.
+The attached .ecc file has cycle time 500us. When communicating with this setting, it seems that there is a period "aux_task" does not work for about 1.5ms. This occur when setMasterSater (INIT) is completed and setMasterSater (PRE-OPE) is being executed.
+If I lowered the priority of "emllRIN32_IST_1" by one as a test, "aux_task" worked regularly. So I'm guessing that it takes a lot of time to process "emllRIN32_IST_1".
+
+Q1. Can you tell me the details of what kind of processing the "emllRIN32_IST_1" task is doing?
+Q2. Is it reasonable that "emllRIN32_IST_1" takes a long time while Master and Slave are transitioning to PRE-OP?
+Q3. Is there a possibility that "emllRIN32_IST_1" will take some time other than when Master and Slave are transitioning to PRE-OP?
+Q4. Do "aux_task" and "emllRIN32_IST_1" must have the highest task priority (=" 1 ") and must have the same priority?
+Q5. If Q4 is No, I am considering creating one new task just to turn the R-IN register ON / OFF regularly and lowering the priority of other tasks. If doing this, "emllRIN32_IST" may be interrupted during processing. Is there any problem other than performance?
+    NewTask             pri = 1
+    Aux / emllRIN32_IST pri = 1 → 2
+    job                 pri = 2 → 3
+    main                pri = 3 → 4
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=18368
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.07.2022 07:33:01 +00:00
+UpdatedAt=14.07.2022 07:33:05 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master (FANUC) [M86]
+
+### ARTICLE01_BODY
+<div>Dear Mr. Fujikawa,</div><div><br></div><div>A1. The sources of  'emllRIN32_IST_1' are in the file '<span>EcDeviceRIN32.cpp'. According to my information FANUC has got this source file, so they can examine it and even change it, if needed, in order to make some tests. Briefly, </span>
+
+'emllRIN32_IST_1' is an  interrupt service thread (IST) and looks like so (<span>'</span><span>EcDeviceRIN32.cpp', lines 1205-1217</span><span>):</span>
+</div><div><br></div><div>
+<div>/**************************************************************************/</div>
+<div>/** \brief  Task to activate IST for adapter instance 1</div>
+<div> *</div>
+<div> *  \param  ID FlagId</div>
+<div> *              Flag ID</div>
+<div> *         </div>
+<div> *  \return None</div>
+<div> */</div>
+<div>EC_T_VOID emllRIN32_IST_1(ID FlagId)</div>
+<div>{</div>
+<div>    RIN32Ist(1, FlagId);</div>
+<div>    return;</div>
+<div>}</div>
+<br>
+</div><div>A2. Yes it is plausible. <span>'emllRIN32_IST_1' starts a function '</span><span>RIN32Ist()'</span><span>, that waits cyclically for an event </span><span>ID_MACRX_FLG (line 122 in 'EcDemoMain.cpp') </span><span>raised by a system interrupt and process incoming Ethernet frames </span><span>if needed</span><span>. Both elements 'thread' (also known as 'task') and 'event' are part of the operating system and are subjects of resources dispatching </span><span>(like i.e. CPU time)</span><span> </span><span>and it is quite possible, that they are affected by some other processes running. This behavior can be affected i.e. by changing of tasks priority, by the way.</span><span> </span><br>
+</div><div><span><br></span></div><div><span>A3. Yes it is possible</span></div><div><span><br></span></div><div>
+<span>A4. It depends on how the customer application is designed. If you take a look onto sources, you can see that both 'aux_task' and '</span><span>emllRIN32_IST_1' wait for events.</span>
+</div><div>
+<span>'aux_task' waits for the </span><span>ID_AUX_FLG set by 'Timer 3' interrupt handler and pass this event further through by setting '</span><span>s_AuxClockEventID'. '</span><span>s_AuxClockEventID' will be consumed in '</span><span>EcMasterJobTask()'.</span>
+</div><div>'emllRIN32_IST_1' waits for an event <span>ID_MACRX_FLG </span><span>issued by MAC interrupt handler.</span><br>
+</div><div>In my opinion 'aux_task' and <span>'</span><span>emllRIN32_IST_1' should have a quite high priority across other tasks and may have the same priority to each-other. But the final setup depends on the application design and has to be done by developer. Unfortunately i have no so much experience in R-IN32 operating system in order to give some general advises.</span>
+</div><div><br></div><div>A5. As i already mentioned, i have no so much experience with R-IN32 operating system, so i cannot give qualified answers concerning it. If you inspect '<span>RIN32Ist()</span><span>' you can see, that it processes all received frames in RX buffer. I can imaging a situation (like transition 'PREOP-OP'), where many frames wait for processing, so the loop in </span><span>'</span><span>RIN32Ist()</span><span>' may take longer. Moreover, for each frame </span><span>'</span><span>RIN32Ist()</span><span>' calls a callback routine, it consumes some time as well. All this you should take in account playing with tasks priorities, according to my experience R-IN32 is quite sensible in this aspect.</span><br>
+</div><div><span><br></span></div><div><span>Best regards,</span></div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Maksim Danilau, M.Sc.</div>
+<div>EtherCAT Support</div>
+<div>
+<div><br></div>
+</div>
+</div>

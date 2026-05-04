@@ -1,0 +1,146 @@
+### HEADER
+Id=10237
+Link=http://at-zammad/#ticket/zoom/10237
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Robert Bosch GmbH (ID=149, Number=40339, Country=DE)
+Commission=Robert Bosch, Testing Systems (ID=168, Number=168)
+Number=7010237
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=dennis.ganz@de.bosch.com (ID=1259, FirstName=Dennis, LastName=Ganz)
+CreatedBy=dennis.ganz@de.bosch.com (ID=1259, FirstName=Dennis, LastName=Ganz)
+Type=
+TimeUnit=
+CreatedAt=20.03.2025 08:41:25 +00:00
+UpdatedAt=04.04.2025 06:13:09 +00:00
+CloseAt=04.04.2025 06:13:09 +00:00
+ArticlesCount=2
+
+### TITLE
+Busscan 2x IndraDrive schlägt fehl
+
+### ARTICLE00_HEADER
+Id=58708
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.03.2025 08:41:25 +00:00
+UpdatedAt=20.03.2025 08:41:26 +00:00
+
+### ARTICLE00_SUBJECT
+Busscan 2x IndraDrive schlägt fehl
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo,</p>
+<p> </p>
+<p>ich benötige Support für die Untersuchung eines Bus-Problems mit folgendem Busaufbau:</p>
+<p> </p>
+<p><img style="max-width:100%;width:4.1875in;max-height:1.8958in;width:402px;max-height:182px;" src="/api/v1/ticket_attachment/10237/58708/244826?view=inline"></p>
+<p>ENI-Configuration ist leer.</p>
+<p>Nach Startup unserer Application verbinde ich über den EC-Engineer und scanne den Bus.</p>
+<p>Busstate ist zu diesem Zeitpunkt Pre-OP.</p>
+<p> </p>
+<p>Der Scan funktioniert zwar prinzipiell (sh. Ergebnis oben), der Bus geht anschließend aber auf Unknown und ich erhalte folgende</p>
+<p>Fehlermeldung:</p>
+<p> </p>
+<p><img style="max-width:100%;width:4.0208in;max-height:1.5312in;width:386px;max-height:147px;" src="/api/v1/ticket_attachment/10237/58708/244827?view=inline"></p>
+<p> </p>
+<p>Man sieht an den Status LEDS, dass der Bus nach dem Scan steht.</p>
+<p> </p>
+<p>Meine Beobachtungen bisher sind folgende:</p>
+<p> </p>
+<p>Der Bus läuft und ich komme über Diagnosis mode in OP, wenn:</p>
+<ul type="disc">
+<li>die EK1100 aus dem Bus genommen wird</li>
+<li>Einer der beiden Indradrive aus dem Bus genommen wird</li>
+</ul>
+<p> </p>
+<p>Anbei auch ein LOG-File. Gerne können wir eine Debug-Session über Teams machen, um das Problem genauer zu analysieren.</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards <br>
+<br>
+<b>Dennis Ganz </b><br>
+<br> (BhP/TEF-EAT33-BAS) <br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bosch.com</span></a>
+<br> Tel. +49 8323 20-3958 | Mobil +49 173 4067341 | <a href="mailto:Dennis.Ganz@de.bosch.com">
+<span style="color:blue;">Dennis.Ganz@de.bosch.com</span></a> </span><span><br>
+<br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000; <br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; <br> Geschäftsführung: Dr. Stefan Hartung, Dr. Christian Fischer, Dr. Markus Forschner, <br> Stefan Grosch, Dr. Markus Heyn, Dr. Frank Meyer, Katja von Raven, Dr. Tanja Rückert </span><span><br> ​ </span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=58933
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.03.2025 17:27:36 +00:00
+UpdatedAt=25.03.2025 17:27:37 +00:00
+
+### ARTICLE01_SUBJECT
+Busscan 2x IndraDrive schlägt fehl
+
+### ARTICLE01_BODY
+Hallo Herr Ganz,<div><br></div><div>irgendwas stimmt mit der Config glaube ich nicht:</div><div>
+<div>2025-03-20T09:18:18,323 [tAtEmLog] ERROR ethercat.EthercatMaster [] - 0000004150: Slave error "Slave_002": - EtherCAT address=2 - State &lt;PREOP ERROR&gt;(0x12), control status &lt;Invalid Input Configuration&gt;(0x1e)</div>
+<div>2025-03-20T09:18:18,323 [tAtEmLog] DEBUG ethercat.EthercatMaster [] - 0000004150: Notify EC_NOTIFY_SLAVE_ERROR_STATUS_INFO(3, 0x0012, 0x001E)</div>
+<div>2025-03-20T09:18:18,323 [tAtEmLog] ERROR ethercat.EthercatMaster [] - 0000004150: Slave error "Slave_003": - EtherCAT address=3 - State &lt;PREOP ERROR&gt;(0x12), control status &lt;Invalid Input Configuration&gt;(0x1e)</div>
+</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, March 20, 2025 at 9:41:25 AM, Dennis Ganz wrote:<br><br><div>
+<p>Hallo,</p>
+<p> </p>
+<p>ich benötige Support für die Untersuchung eines Bus-Problems mit folgendem Busaufbau:</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:4.1875in;max-height:1.8958in;width:402px;max-height:182px;" src="/api/v1/ticket_attachment/10237/58933/245806?view=inline"></p>
+<p>ENI-Configuration ist leer.</p>
+<p>Nach Startup unserer Application verbinde ich über den EC-Engineer und scanne den Bus.</p>
+<p>Busstate ist zu diesem Zeitpunkt Pre-OP.</p>
+<p> </p>
+<p>Der Scan funktioniert zwar prinzipiell (sh. Ergebnis oben), der Bus geht anschließend aber auf Unknown und ich erhalte folgende</p>
+<p>Fehlermeldung:</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:4.0208in;max-height:1.5312in;width:386px;max-height:147px;" src="/api/v1/ticket_attachment/10237/58933/245807?view=inline"></p>
+<p> </p>
+<p>Man sieht an den Status LEDS, dass der Bus nach dem Scan steht.</p>
+<p> </p>
+<p>Meine Beobachtungen bisher sind folgende:</p>
+<p> </p>
+<p>Der Bus läuft und ich komme über Diagnosis mode in OP, wenn:</p>
+<ul type="disc">
+<li>die EK1100 aus dem Bus genommen wird</li>
+<li>Einer der beiden Indradrive aus dem Bus genommen wird</li>
+</ul>
+<p> </p>
+<p>Anbei auch ein LOG-File. Gerne können wir eine Debug-Session über Teams machen, um das Problem genauer zu analysieren.</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards <br>
+<br>
+<b>Dennis Ganz </b><br>
+<br> (BhP/TEF-EAT33-BAS) <br> Robert Bosch GmbH | Postfach 11 20 | 87542 Blaichach | GERMANY | <a href="http://www.bosch.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bosch.com</span></a>
+<br> Tel. +49 8323 20-3958 | Mobil +49 173 4067341 | <a href="mailto:Dennis.Ganz@de.bosch.com">
+<span style="color:blue;">Dennis.Ganz@de.bosch.com</span></a> </span><span><br>
+<br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart, HRB 14000; <br> Aufsichtsratsvorsitzender: Prof. Dr. Stefan Asenkerschbaumer; <br> Geschäftsführung: Dr. Stefan Hartung, Dr. Christian Fischer, Dr. Markus Forschner, <br> Stefan Grosch, Dr. Markus Heyn, Dr. Frank Meyer, Katja von Raven, Dr. Tanja Rückert </span><span><br> ​ </span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

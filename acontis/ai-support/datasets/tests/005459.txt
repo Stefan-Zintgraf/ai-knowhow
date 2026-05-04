@@ -1,0 +1,152 @@
+### HEADER
+Id=5459
+Link=http://at-zammad/#ticket/zoom/5459
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=KUKA, KRC5 Linux (ID=150, Number=150)
+Number=705459
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=25.04.2023 08:41:43 +00:00
+UpdatedAt=10.05.2023 06:02:37 +00:00
+CloseAt=10.05.2023 06:02:37 +00:00
+ArticlesCount=3
+
+### TITLE
+About the potential custmer KUKA requirement about porting ECMaster
+
+### ARTICLE00_HEADER
+Id=28983
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.04.2023 08:41:43 +00:00
+UpdatedAt=25.04.2023 08:41:47 +00:00
+
+### ARTICLE00_SUBJECT
+About the potential custmer KUKA requirement about porting ECMaster
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>We get the information from KUKA China, they are making the schedule about running the ecmaster in ti coretx-R5. Their target is ti 829v, it is a double core cpu, and they will change it as 4 core in future.</div>
+<div>But their plan still is implemnt it in R5, the linklayer is cpsw, the os is freertos, and ti will don't support pru mac in future. I WARN that we can't make sure the best performace.</div>
+<div>They ask a period about porting ECMaster and linklayer, Do you think the porting is possiable? And could you calculate the period about proting, we will reply to them, and try to win this project.</div>
+<div>If they run the ecmaster r5 with cpsw linklayer, could the cortex-a cpu operate the cpsw? Or all the cpsw only could operate by r5 if run the ecmaster</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div><img src="/api/v1/ticket_attachment/5459/28983/122243?view=inline" style="max-width:100%;"></div>
+<div>2023.4.26-28 中国西部国际博览城（展位号15H，A045 ），期待与您见面！</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=29038
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=26.04.2023 10:47:42 +00:00
+UpdatedAt=26.04.2023 10:47:42 +00:00
+
+### ARTICLE01_BODY
+Weißt du etwas davon? Unterstützen wir KUKA China?
+
+### ARTICLE02_HEADER
+Id=29050
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.04.2023 12:05:37 +00:00
+UpdatedAt=26.04.2023 12:05:41 +00:00
+
+### ARTICLE02_SUBJECT
+About the potential custmer KUKA requirement about porting ECMaster
+
+### ARTICLE02_BODY
+Hi John,<div><br></div><div>we were yesterday contacted by KUKA in Germany regarding this.</div><div>The board might be available in Q3 or Q4 or even Q1/2024.</div><div>As we know, the project lead is still in Germany and we will talk only to KUKA Germany.</div><div><br></div><div>We need the board and afterwards we at acontis will implement and test EC-Master.</div><div>We will not share any source code to KUKA China.</div><div><br></div><div>You should not support them, because all orders are directly from KUKA Germany to acontis.</div><div><br></div><div>Best Regards</div><div><br></div><div>Christoph</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, April 25, 2023 at 10:41:43 AM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>We get the information from KUKA China, they are making the schedule about running the ecmaster in ti coretx-R5. Their target is ti 829v, it is a double core cpu, and they will change it as 4 core in future.</div>
+<div>But their plan still is implemnt it in R5, the linklayer is cpsw, the os is freertos, and ti will don't support pru mac in future. I WARN that we can't make sure the best performace.</div>
+<div>They ask a period about porting ECMaster and linklayer, Do you think the porting is possiable? And could you calculate the period about proting, we will reply to them, and try to win this project.</div>
+<div>If they run the ecmaster r5 with cpsw linklayer, could the cortex-a cpu operate the cpsw? Or all the cpsw only could operate by r5 if run the ecmaster</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div><img src="/api/v1/ticket_attachment/5459/29050/122457?view=inline" style="max-width:100%;max-width:100%;"></div>
+<div>2023.4.26-28 中国西部国际博览城（展位号15H，A045 ），期待与您见面！</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

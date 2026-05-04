@@ -1,0 +1,160 @@
+### HEADER
+Id=3894
+Link=http://at-zammad/#ticket/zoom/3894
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Clemessy (ID=181, Number=40222, Country=FR)
+Commission=Clemessy, Bench Control (ID=210, Number=210)
+Number=703894
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=emmanuel.pinot@eiffage.com (ID=56, FirstName=Emmanuel, LastName=Pinot)
+CreatedBy=emmanuel.pinot@eiffage.com (ID=56, FirstName=Emmanuel, LastName=Pinot)
+Type=
+TimeUnit=
+CreatedAt=14.09.2022 09:07:34 +00:00
+UpdatedAt=15.09.2022 08:33:48 +00:00
+CloseAt=15.09.2022 08:33:48 +00:00
+ArticlesCount=3
+
+### TITLE
+New network card model
+
+### ARTICLE00_HEADER
+Id=20665
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.09.2022 09:07:35 +00:00
+UpdatedAt=14.09.2022 09:07:35 +00:00
+
+### ARTICLE00_SUBJECT
+New network card model
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Paul,</p>
+<p> </p>
+<p>I would like to know if you can support a new network model card for the EC-Master software ?</p>
+<p>The card is a Broadcom BCM95719A1904G.</p>
+<p>Thank you in advance.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Emmanuel</p>
+</div><br> Cet e-mail et ses éventuelles pièces jointes peuvent contenir des informations confidentielles et sont exclusivement adressés au(x) destinataire(s) mentionné(s) ci-dessus. Toute diffusion, exploitation ou copie sans autorisation de cet e-mail et de ses pièces jointes est strictement interdite. Si vous recevez ce message par erreur, merci de le détruire et d' avertir immédiatement l'expéditeur. EIFFAGE décline toute responsabilité si ce message a été modifié ou falsifié. <br> This message and any attachments may contain confidential information and are established exclusively for his or its recipients. Any use of this message, for which it was not intended, any distribution or any total or partial publication is prohibited unless previously approved. If you receive this message in error, please destroy it and immediately notify the sender thereof. The EIFFAGE Group declines all responsibility concerning this message if it has been altered or tampered with.
+
+### ARTICLE01_HEADER
+Id=20709
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.09.2022 16:01:06 +00:00
+UpdatedAt=14.09.2022 16:01:10 +00:00
+
+### ARTICLE01_SUBJECT
+New network card model
+
+### ARTICLE01_BODY
+Hi Emmanuel,<div><br></div><div>We don't support the Broadcom PCI Adapters today. We are working on the adapter integrated in the Rasperry Pi 4 SOC. I double check but they are from different families.</div><div>I found the datasheet and we would you charge several weeks of effort for it and it would be available next year. Please tell me if you have interest or not.</div><div><br></div><div>We can propose you the LAN743x PCI Adapter as alternative to the Intel, but they probably have only 1 interface:</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/supported-nics/emllLAN743x.html#emlllan743x--page-root" title="https://public.acontis.com/manuals/EC-Master/3.1/html/supported-nics/emllLAN743x.html#emlllan743x--page-root" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/supported-nics/emllLAN743x.html#emlllan743x--page-root</a></div></div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Wednesday, September 14, 2022 at 11:07:35 AM, Emmanuel Pinot wrote:<br><br><div>
+<p>Hi Paul,</p>
+<p> </p>
+<p>I would like to know if you can support a new network model card for the EC-Master software ?</p>
+<p>The card is a Broadcom BCM95719A1904G.</p>
+<p>Thank you in advance.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Emmanuel</p>
+</div>
+<br> Cet e-mail et ses éventuelles pièces jointes peuvent contenir des informations confidentielles et sont exclusivement adressés au(x) destinataire(s) mentionné(s) ci-dessus. Toute diffusion, exploitation ou copie sans autorisation de cet e-mail et de ses pièces jointes est strictement interdite. Si vous recevez ce message par erreur, merci de le détruire et d' avertir immédiatement l'expéditeur. EIFFAGE décline toute responsabilité si ce message a été modifié ou falsifié. <br> This message and any attachments may contain confidential information and are established exclusively for his or its recipients. Any use of this message, for which it was not intended, any distribution or any total or partial publication is prohibited unless previously approved. If you receive this message in error, please destroy it and immediately notify the sender thereof. The EIFFAGE Group declines all responsibility concerning this message if it has been altered or tampered with.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=20719
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.09.2022 07:21:43 +00:00
+UpdatedAt=15.09.2022 07:21:43 +00:00
+
+### ARTICLE02_SUBJECT
+RE: New network card model [Ticket#703894]
+
+### ARTICLE02_BODY
+<div>
+<p><span style="color:#1f497d;">Hi Cyril,</span></p>
+<p><span style="color:#1f497d;"><p> </p></span></p>
+<p><span style="color:#1f497d;">Thank you for your quick answer.</span></p>
+<p><span style="color:#1f497d;">For now we do not need this support but this may become a future need. I keep you posted.</span></p>
+<p><span style="color:#1f497d;"><p> </p></span></p>
+<p><span style="color:#1f497d;">Best regards,</span></p>
+<p><span style="color:#1f497d;">Emmanuel</span></p>
+<p><span style="color:#1f497d;"><p> </p></span></p>
+<div>
+<div>
+<p><b>De :</b><span> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Envoyé :</b> mercredi 14 septembre 2022 18:01<br>
+<b>À :</b> PINOT Emmanuel [EIFFAGE ENERGIE SYSTEMES] &lt;Emmanuel.PINOT@eiffage.com&gt;<br>
+<b>Objet :</b> RE: New network card model [Ticket#703894]</span></p>
+</div>
+</div>
+<p> </p>
+<p>Hi Emmanuel,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>We don't support the Broadcom PCI Adapters today. We are working on the adapter integrated in the Rasperry Pi 4 SOC. I double check but they are from different families.</p>
+</div>
+<div>
+<p>I found the datasheet and we would you charge several weeks of effort for it and it would be available next year. Please tell me if you have interest or not.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>We can propose you the LAN743x PCI Adapter as alternative to the Intel, but they probably have only 1 interface:</p>
+</div>
+<div>
+<div>
+<p><a href="https://urldefense.com/v3/__https:/public.acontis.com/manuals/EC-Master/3.1/html/supported-nics/emllLAN743x.html*emlllan743x--page-root__;Iw!!A7uj8QjVSas!wRSavF0iVKeW13akFZ_nE8kFskF39ZNoCFNf7J7wzN-dOFO9Ar_W21AMkA9VjI5hcVzkj2MAAw6Ns6gcfOCSVFRp%24" title="https://public.acontis.com/manuals/EC-Master/3.1/html/supported-nics/emllLAN743x.html#emlllan743x--page-root" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/supported-nics/emllLAN743x.html#emlllan743x--page-root</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Cyril</p>
+<div>
+<div>
+<p> </p>
+</div>
+</div>
+<div>
+<blockquote>
+<p>On Wednesday, September 14, 2022 at 11:07:35 AM, Emmanuel Pinot wrote:</p>
+<div>
+<p>Hi Paul,</p>
+<p> </p>
+<p>I would like to know if you can support a new network model card for the EC-Master software ?</p>
+<p>The card is a Broadcom BCM95719A1904G.</p>
+<p>Thank you in advance.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Emmanuel</p>
+</div>
+<p><br> Cet e-mail et ses éventuelles pièces jointes peuvent contenir des informations confidentielles et sont exclusivement adressés au(x) destinataire(s) mentionné(s) ci-dessus. Toute diffusion, exploitation ou copie sans autorisation de cet e-mail et de ses pièces jointes est strictement interdite. Si vous recevez ce message par erreur, merci de le détruire et d' avertir immédiatement l'expéditeur. EIFFAGE décline toute responsabilité si ce message a été modifié ou falsifié. <br> This message and any attachments may contain confidential information and are established exclusively for his or its recipients. Any use of this message, for which it was not intended, any distribution or any total or partial publication is prohibited unless previously approved. If you receive this message in error, please destroy it and immediately notify the sender thereof. The EIFFAGE Group declines all responsibility concerning this message if it has been altered or tampered with.</p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

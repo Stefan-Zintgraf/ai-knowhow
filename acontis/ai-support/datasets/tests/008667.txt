@@ -1,0 +1,138 @@
+### HEADER
+Id=8667
+Link=http://at-zammad/#ticket/zoom/8667
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Agiliad Technologies Limited (ID=188, Number=40200, Country=IN)
+Commission=Omron Automation Americas, PPMAC (ID=562, Number=562)
+Number=708667
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=abhishek.gupta@agiliad.com (ID=1686, FirstName=Abhishek, LastName=Gupta)
+CreatedBy=abhishek.gupta@agiliad.com (ID=1686, FirstName=Abhishek, LastName=Gupta)
+Type=
+TimeUnit=
+CreatedAt=13.08.2024 08:58:25 +00:00
+UpdatedAt=09.09.2025 12:26:42 +00:00
+CloseAt=16.08.2024 06:01:20 +00:00
+ArticlesCount=2
+
+### TITLE
+Ec-Engineer upgradation Windows desktop to Web version
+
+### ARTICLE00_HEADER
+Id=48644
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.08.2024 08:58:25 +00:00
+UpdatedAt=13.08.2024 08:58:29 +00:00
+
+### ARTICLE00_SUBJECT
+Ec-Engineer upgradation Windows desktop to Web version
+
+### ARTICLE00_BODY
+<div dir="ltr">
+<p>Hi Martin,</p>
+<div> </div>
+<div>I hope you are doing well.</div>
+<div> </div>
+<div>I am writing this mail for Ec-Engineer upgradation windows desktop to Web version. Currently we are using Ec-Engineer(Acontis) version 3.0.13.</div>
+<div> </div>
+<div>We are planning to upgrade the Omron IDE windows desktop to Web version. So, for initial investigation we need some information required related to EC-Engineer Web. I went through the link <a href="https://www.acontis.com/en/ethercat-configuration-web.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/ethercat-configuration-web.html</a>, but there is limited information available. </div>
+<div> </div>
+<div>If possible, could you please share more documented details or a trial version SDK. It will help to analyze the web version Ec-Engineer..</div>
+<div>
+<br><div dir="ltr"><div dir="ltr"><div style="color:rgb(34,34,34);"><span>
+<p dir="ltr">Thanks and Regards,<span>
+<br></span>Abhishek Gupta<span>
+<br></span>Technical Lead</p>
+<p dir="ltr">✉️ <a href="mailto:abhishek.gupta@agiliad.com"><span style="color:rgb(17,85,204);">abhishek.gupta@agiliad.com</span></a> | � +91 9931944490</p>
+<p dir="ltr"></p>
+<hr>
+<p dir="ltr"><a href="http://www.agiliad.com" rel="nofollow noreferrer noopener" title="http://www.agiliad.com" target="_blank"><span style="color:rgb(17,85,204);"></span><span>
+<br></span></a>Agiliad Technologies Pvt. Ltd.<span>
+<br></span>Godrej Castlemaine, 1st floor, Next to Ruby Hall Clinic, 42 Sassoon Road, Pune 411001<span>
+<br></span><a href="http://www.agiliad.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:rgb(17,85,204);">www.agiliad.com</span></a> | � 020 6689 1222</p>
+<div><span>
+<br></span></div></span></div></div></div>
+</div>
+</div><span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------- <br><u><b>Disclaimer:</b></u> This email message including any attachments is confidential, and may be privileged and proprietary to Agiliad. If you are not the intended recipient, please notify us immediately by replying to this message and destroy all copies of this message including any attachments. You are NOT authorized to read, print, retain, copy, disseminate, distribute, or use this message or any part thereof. Thank you. <br>------------------------------------------------------------------------------------------------------------------------
+
+### ARTICLE01_HEADER
+Id=48645
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.08.2024 09:07:11 +00:00
+UpdatedAt=13.08.2024 09:07:12 +00:00
+
+### ARTICLE01_SUBJECT
+Ec-Engineer upgradation Windows desktop to Web version
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>this is the download link to our current EVAL version of the EC-EngineerWeb:</div><div>
+<div><a href="https://downloads.acontis.com/temp/2024/8-13/EC-EngineerWeb_Windows-x86_Eval_V2.3.2.zip" title="https://downloads.acontis.com/temp/2024/8-13/EC-EngineerWeb_Windows-x86_Eval_V2.3.2.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/temp/2024/8-13/EC-EngineerWeb_Windows-x86_Eval_V2.3.2.zip</a></div>
+<div>-&gt; You can see how it works and which features are included.</div>
+<div><br></div>
+<div>this is the download link to our current EVAL Version of the EC-EngineerWeb View Layer SDK:</div>
+<div><a href="https://downloads.acontis.com/temp/2024/8-13/EC-EngineerWeb_SDK_View_Layer2_DotNetCore_Windows-x64_Eval_V2.3.2.zip" title="https://downloads.acontis.com/temp/2024/8-13/EC-EngineerWeb_SDK_View_Layer2_DotNetCore_Windows-x64_Eval_V2.3.2.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/temp/2024/8-13/EC-EngineerWeb_SDK_View_Layer2_DotNetCore_Windows-x64_Eval_V2.3.2.zip</a></div>
+<div>-&gt; It contains sample code and a manual where you can see how it can be integrated into an already existing Software.</div>
+<div><br></div>
+<div>If you need more information please contact me. Helpful could be also some information how your existing software looks like.</div>
+<div><br></div>
+<div>Best Regards,</div>
+<div>Martin</div>
+<div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, August 13, 2024 at 10:58:25 AM, Abhishek Gupta wrote:<br><br><div dir="ltr">
+<p>Hi Martin,</p>
+<div> </div>
+<div>I hope you are doing well.</div>
+<div> </div>
+<div>I am writing this mail for Ec-Engineer upgradation windows desktop to Web version. Currently we are using Ec-Engineer(Acontis) version 3.0.13.</div>
+<div> </div>
+<div>We are planning to upgrade the Omron IDE windows desktop to Web version. So, for initial investigation we need some information required related to EC-Engineer Web. I went through the link <a href="https://www.acontis.com/en/ethercat-configuration-web.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/ethercat-configuration-web.html</a>, but there is limited information available. </div>
+<div> </div>
+<div>If possible, could you please share more documented details or a trial version SDK. It will help to analyze the web version Ec-Engineer..</div>
+<div>
+<br><div dir="ltr"><div dir="ltr"><div style="color:rgb(34,34,34);"><span>
+<p dir="ltr">Thanks and Regards,<span>
+<br></span>Abhishek Gupta<span>
+<br></span>Technical Lead</p>
+<p dir="ltr">✉️ <a href="mailto:abhishek.gupta@agiliad.com"><span style="color:rgb(17,85,204);">abhishek.gupta@agiliad.com</span></a> | � +91 9931944490</p>
+<p dir="ltr"></p>
+<hr>
+<p dir="ltr"><a href="http://www.agiliad.com" rel="nofollow noreferrer noopener" title="http://www.agiliad.com" target="_blank"><span style="color:rgb(17,85,204);"></span><span>
+<br></span></a>Agiliad Technologies Pvt. Ltd.<span>
+<br></span>Godrej Castlemaine, 1st floor, Next to Ruby Hall Clinic, 42 Sassoon Road, Pune 411001<span>
+<br></span><a href="http://www.agiliad.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:rgb(17,85,204);">www.agiliad.com</span></a> | � 020 6689 1222</p>
+<div><span>
+<br></span></div></span></div></div></div>
+</div>
+</div>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------- <br><u><b>Disclaimer:</b></u> This email message including any attachments is confidential, and may be privileged and proprietary to Agiliad. If you are not the intended recipient, please notify us immediately by replying to this message and destroy all copies of this message including any attachments. You are NOT authorized to read, print, retain, copy, disseminate, distribute, or use this message or any part thereof. Thank you. <br>------------------------------------------------------------------------------------------------------------------------<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

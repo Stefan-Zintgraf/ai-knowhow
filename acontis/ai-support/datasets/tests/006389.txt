@@ -1,0 +1,101 @@
+### HEADER
+Id=6389
+Link=http://at-zammad/#ticket/zoom/6389
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ASML Netherlands BV (ID=302, Number=45002, Country=NL)
+Commission=ASML, Lithography-Cont. (ID=358, Number=358)
+Number=706389
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=marcel.douben@asml.com (ID=561, FirstName=Marcel, LastName=Douben)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=19.09.2023 10:24:52 +00:00
+UpdatedAt=29.09.2023 16:09:15 +00:00
+CloseAt=22.09.2023 06:11:08 +00:00
+ArticlesCount=2
+
+### TITLE
+WG: Update Request from ASML
+
+### ARTICLE00_HEADER
+Id=34399
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.09.2023 10:24:52 +00:00
+UpdatedAt=19.09.2023 10:24:55 +00:00
+
+### ARTICLE00_SUBJECT
+WG: Update Request from ASML
+
+### ARTICLE00_BODY
+<div>
+<p>Da Kai nicht da ist, könnt ihr euch bitte darum kümmern?</p>
+<p>Danke!</p>
+<p> </p>
+<p>LG Lisa</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> acontis technologies GmbH &lt;sales@acontis.com&gt; <br><b>Gesendet:</b> Dienstag, 19. September 2023 12:13<br><b>An:</b> sales@acontis.com; us-sales@acontis.com<br><b>Cc:</b> marcel.douben@asml.com<br><b>Betreff:</b> Update Request from ASML</p>
+</div>
+<p> </p>
+<p>Dear Mr./Ms. Douben,</p>
+<p>thank you for your registration.</p>
+<p>First Name: Marcel<br>Last Name: Douben<br>Company: ASML<br>Commission: <br>Country: Netherlands<br>City: Veldhoven<br>E-Mail: <a href="mailto:marcel.douben@asml.com">marcel.douben@asml.com</a><br>Request update for: EC-Inspector<br>Update Type: <br>Operating System: windows 10<br>Operating Sys. Version: 10<br>Any Questions?: I am running EC-Inspector ready. Version 3.8.1 evaluation version and get the following error: System.DllNotFoundException: Unable to load DLL 'EcWrapper': The specified module could not be found. (Exception from HRESULT: 0x8007007E) at EcWrapperDotNet.CEcWrapper.ecwGetDefaultValue(EC_T_DEFALT_VALUE defVal) at e.B.A(EcLinkLayer , UInt16 ) at e.B.Z() at e.B.w() at EcCore.EcDevice.Connect() at EcViewModel.TreeVM.DeviceViewModel.K.A() at EcViewModel.DialogsVM.ProgressDialogViewModelHelper.a(Object , DoWorkEventArgs ) !STACKTRACE! at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo) at System.Environment.get_StackTrace() at EcResources.Logger.LogManager.LogException(String msg, Exception e) at EcViewModel.DialogsVM.ProgressDialogViewModelHelper.a(Object , DoWorkEventArgs ) at System.ComponentModel.BackgroundWorker.OnDoWork(DoWorkEventArgs e) at System.ComponentModel.BackgroundWorker.WorkerThreadStart(Object argument) at System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]&amp; outArgs) at System.Runtime.Remoting.Messaging.StackBuilderSink.AsyncProcessMessage(IMessage msg, IMessageSink replySink) at System.Runtime.Remoting.Proxies.AgileAsyncWorkerItem.DoAsyncCall() at System.Runtime.Remoting.Proxies.AgileAsyncWorkerItem.ThreadPoolCallBack(Object o) at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state) at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx) at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx) at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem() at System.Threading.ThreadPoolWorkQueue.Dispatch() at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()</p>
+<p><img border="0" style="max-width:100%;width:1.6979in;max-height:.8854in;width:163px;max-height:85px;" src="/api/v1/ticket_attachment/6389/34399/143526?view=inline"></p>
+<p>acontis technologies GmbH<br>Gartenstraße 46, 88212 Ravensburg/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img border="0" style="max-width:100%;width:.2291in;max-height:.2291in;width:22px;max-height:22px;" src="/api/v1/ticket_attachment/6389/34399/143525?view=inline"></a></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=34414
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.09.2023 14:29:50 +00:00
+UpdatedAt=19.09.2023 14:29:52 +00:00
+
+### ARTICLE01_SUBJECT
+Update Request from ASML
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>the error</div><div>"error: System.DllNotFoundException: Unable to load DLL 'EcWrapper': The specified module could not be found. (Exception from HRESULT: 0x8007007E)" <br>
+</div><div>... means that EcWrapper.dll is missing in our Installation directory:</div><div><span>C:\Program Files (x86)\acontis_technologies\EC-Inspector</span></div><div><span><br></span></div><div><span>Is this true? If yes, I guess something goes wrong during the setup process. Can you uninstall and re-install it? This should fix the problem.</span></div><div><br></div><div>Best Regards,</div><div>Martin</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div><br></div>
+<div><blockquote type="cite">
+<div>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> acontis technologies GmbH &lt;sales@acontis.com&gt; <br><b>Gesendet:</b> Dienstag, 19. September 2023 12:13<br><b>An:</b> sales@acontis.com; us-sales@acontis.com<br><b>Cc:</b> marcel.douben@asml.com<br><b>Betreff:</b> Update Request from ASML</p>
+</div>
+<p> </p>
+<p>Dear Mr./Ms. Douben,</p>
+<p>thank you for your registration.</p>
+<p>First Name: Marcel<br>Last Name: Douben<br>Company: ASML<br>Commission: <br>Country: Netherlands<br>City: Veldhoven<br>E-Mail: <a href="mailto:marcel.douben@asml.com">marcel.douben@asml.com</a><br>Request update for: EC-Inspector<br>Update Type: <br>Operating System: windows 10<br>Operating Sys. Version: 10<br>Any Questions?: I am running EC-Inspector ready. Version 3.8.1 evaluation version and get the following error: System.DllNotFoundException: Unable to load DLL 'EcWrapper': The specified module could not be found. (Exception from HRESULT: 0x8007007E) at EcWrapperDotNet.CEcWrapper.ecwGetDefaultValue(EC_T_DEFALT_VALUE defVal) at e.B.A(EcLinkLayer , UInt16 ) at e.B.Z() at e.B.w() at EcCore.EcDevice.Connect() at EcViewModel.TreeVM.DeviceViewModel.K.A() at EcViewModel.DialogsVM.ProgressDialogViewModelHelper.a(Object , DoWorkEventArgs ) !STACKTRACE! at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo) at System.Environment.get_StackTrace() at EcResources.Logger.LogManager.LogException(String msg, Exception e) at EcViewModel.DialogsVM.ProgressDialogViewModelHelper.a(Object , DoWorkEventArgs ) at System.ComponentModel.BackgroundWorker.OnDoWork(DoWorkEventArgs e) at System.ComponentModel.BackgroundWorker.WorkerThreadStart(Object argument) at System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]&amp; outArgs) at System.Runtime.Remoting.Messaging.StackBuilderSink.AsyncProcessMessage(IMessage msg, IMessageSink replySink) at System.Runtime.Remoting.Proxies.AgileAsyncWorkerItem.DoAsyncCall() at System.Runtime.Remoting.Proxies.AgileAsyncWorkerItem.ThreadPoolCallBack(Object o) at System.Threading.QueueUserWorkItemCallback.WaitCallback_Context(Object state) at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx) at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx) at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem() at System.Threading.ThreadPoolWorkQueue.Dispatch() at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()</p>
+<p><img border="0" style="max-width:100%;max-width:100%;width:1.6979in;max-height:.8854in;width:163px;max-height:85px;" src="/api/v1/ticket_attachment/6389/34414/143598?view=inline"></p>
+<p>acontis technologies GmbH<br>Gartenstraße 46, 88212 Ravensburg/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.2291in;max-height:.2291in;width:22px;max-height:22px;" src="/api/v1/ticket_attachment/6389/34414/143599?view=inline"></a></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

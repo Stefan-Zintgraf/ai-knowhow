@@ -1,0 +1,228 @@
+### HEADER
+Id=2383
+Link=http://at-zammad/#ticket/zoom/2383
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Apple (ID=523, Number=0, Country=US)
+Commission=Apple, Automation Controls Project (ID=607, Number=607)
+Number=702383
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=nbergantz@apple.com (ID=887, FirstName=Nick, LastName=Bergantz)
+CreatedBy=nbergantz@apple.com (ID=887, FirstName=Nick, LastName=Bergantz)
+Type=
+TimeUnit=
+CreatedAt=03.02.2022 00:12:06 +00:00
+UpdatedAt=11.02.2022 13:03:36 +00:00
+CloseAt=11.02.2022 13:03:36 +00:00
+ArticlesCount=3
+
+### TITLE
+Re: acontis EtherCAT Meeting Follow-up
+
+### ARTICLE00_HEADER
+Id=12625
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.02.2022 00:12:06 +00:00
+UpdatedAt=03.02.2022 00:12:06 +00:00
+
+### ARTICLE00_SUBJECT
+Re: acontis EtherCAT Meeting Follow-up
+
+### ARTICLE00_BODY
+EC Support,<div> </div><div>Has Acontis written or interfaced with Broadcom 570X family of NIC?</div><div> </div><div>What would be the scope to have this as a NIC target?</div><div>
+<br><div>
+<div dir="auto">
+<div dir="auto">Thanks,</div>
+<div dir="auto">
+<div> </div>
+<div> | nicholas.bergantz | TDG.product.systems.quality | One Apple Park Way, M/S: 272-4TDG, Cupertino, CA, 95014 | m.+1.408.940.6571<br><br><b>CONFIDENTIALITY NOTICE:</b> This message, and attachment(s), is intended only for the use of the individual(s) or entity to which it is addressed in the header(s), and may contain information that is privileged, confidential and exempt from disclosure under applicable law. </div>
+</div>
+</div>
+</div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Nov 30, 2021, at 7:05 AM, Jon Waters &lt;j.waters@acontis.com&gt; wrote:</div>
+<br><div> <div>
+<div>Hi Nick,</div>
+<p> </p>
+<div>Thank you for the confirmation. I suggest you use our developer support email ecsupport@acontis.com. Our team of engineers responsible for the EtherCAT Master stack will be able to assist and provide guidance that way. I’m also able to follow along on those topics.</div>
+<p> </p>
+<div>We can also setup an initial web meeting together with one of the primary engineers if you’d like (or at any point in the future during your development). We just need to accommodate the 9 hour time zone difference between CA and Germany.</div>
+<p> </p>
+<div>/Jon</div>
+<p> </p>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=12626
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.02.2022 01:34:25 +00:00
+UpdatedAt=03.02.2022 07:39:18 +00:00
+
+### ARTICLE01_SUBJECT
+acontis EtherCAT Meeting Follow-up
+
+### ARTICLE01_BODY
+Specifically:<div> </div><div>
+<div>I think specifically the BCM5701 —&gt; <a href="https://pdf1.alldatasheet.com/pdfjsview/web/viewer.html?file=//pdf1.alldatasheet.com/datasheet-pdf/view/92603/BOARDCOM/BCM5701/+725QWUYLvREERP+hpTDGvC+/datasheet.pdf" rel="nofollow noreferrer noopener" target="_blank">https://pdf1.alldatasheet.com/pdfjsview/web/viewer.html?file=//pdf1.alldatasheet.com/datasheet-pdf/view/92603/BOARDCOM/BCM5701/+725QWUYLvREERP+hpTDGvC+/datasheet.pdf</a> </div>
+<div> </div>
+<div>Sorry for the old datasheet, but it was all i can find. It is a very old NIC adaptor.</div>
+</div><div>
+<br><div>
+<div dir="auto">
+<div dir="auto">Thanks,</div>
+<div dir="auto">
+<div> </div>
+<div> | nicholas.bergantz | TDG.product.systems.quality | One Apple Park Way, M/S: 272-4TDG, Cupertino, CA, 95014 | m.+1.408.940.6571<br><br><b>CONFIDENTIALITY NOTICE:</b> This message, and attachment(s), is intended only for the use of the individual(s) or entity to which it is addressed in the header(s), and may contain information that is privileged, confidential and exempt from disclosure under applicable law. </div>
+</div>
+</div>
+</div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Feb 2, 2022, at 4:11 PM, Nick Bergantz &lt;nbergantz@apple.com&gt; wrote:</div>
+<br><div> <div>EC Support,<div> </div>
+<div>Has Acontis written or interfaced with Broadcom 570X family of NIC?</div>
+<div> </div>
+<div>What would be the scope to have this as a NIC target?</div>
+<div>
+<br><div>
+<div dir="auto">
+<div dir="auto">Thanks,</div>
+<div dir="auto">
+<div> </div>
+<div> | nicholas.bergantz | TDG.product.systems.quality | One Apple Park Way, M/S: 272-4TDG, Cupertino, CA, 95014 | m.+1.408.940.6571<br><br><b>CONFIDENTIALITY NOTICE:</b> This message, and attachment(s), is intended only for the use of the individual(s) or entity to which it is addressed in the header(s), and may contain information that is privileged, confidential and exempt from disclosure under applicable law. </div>
+</div>
+</div>
+</div>
+<div>
+<br><blockquote type="cite">
+<div>On Nov 30, 2021, at 7:05 AM, Jon Waters &lt;j.waters@acontis.com&gt; wrote:</div>
+<br><div> <div>
+<div>Hi Nick,</div>
+<p> </p>
+<div>Thank you for the confirmation. I suggest you use our developer support email ecsupport@acontis.com. Our team of engineers responsible for the EtherCAT Master stack will be able to assist and provide guidance that way. I’m also able to follow along on those topics.</div>
+<p> </p>
+<div>We can also setup an initial web meeting together with one of the primary engineers if you’d like (or at any point in the future during your development). We just need to accommodate the 9 hour time zone difference between CA and Germany.</div>
+<p> </p>
+<div>/Jon</div>
+<p> </p>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE02_HEADER
+Id=12768
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.02.2022 21:59:45 +00:00
+UpdatedAt=07.02.2022 21:59:49 +00:00
+
+### ARTICLE02_SUBJECT
+acontis EtherCAT Meeting Follow-up
+
+### ARTICLE02_BODY
+Hi Nick,<div><br></div><div>No we don't have any experience doing an optimized driver for this Broadcom network controller. In Linux we could use our raw socket driver which works with any manufacturer network controller, but the performance is not very good. Beyond that, we would need to develop our own optimized driver or enable/support you to do it yourself with our "link layer development kit".<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Jon Waters </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies Inc.</div></div>
+<div>Address: <span>945 Concord Street, Framingham, MA 01701, United States</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+1-508-809-7200</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, February 2, 2022, 8:34:25 PM, Nick Bergantz wrote:<br><br>Specifically:<div> </div>
+<div>
+<div>I think specifically the BCM5701 —&gt; <a href="https://pdf1.alldatasheet.com/pdfjsview/web/viewer.html?file=//pdf1.alldatasheet.com/datasheet-pdf/view/92603/BOARDCOM/BCM5701/+725QWUYLvREERP+hpTDGvC+/datasheet.pdf" rel="nofollow noreferrer noopener" target="_blank">https://pdf1.alldatasheet.com/pdfjsview/web/viewer.html?file=//pdf1.alldatasheet.com/datasheet-pdf/view/92603/BOARDCOM/BCM5701/+725QWUYLvREERP+hpTDGvC+/datasheet.pdf</a> </div>
+<div> </div>
+<div>Sorry for the old datasheet, but it was all i can find. It is a very old NIC adaptor.</div>
+</div>
+<div>
+<br><div>
+<div dir="auto">
+<div dir="auto">Thanks,</div>
+<div dir="auto">
+<div> </div>
+<div> | nicholas.bergantz | TDG.product.systems.quality | One Apple Park Way, M/S: 272-4TDG, Cupertino, CA, 95014 | m.+1.408.940.6571<br><br><b>CONFIDENTIALITY NOTICE:</b> This message, and attachment(s), is intended only for the use of the individual(s) or entity to which it is addressed in the header(s), and may contain information that is privileged, confidential and exempt from disclosure under applicable law. </div>
+</div>
+</div>
+</div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Feb 2, 2022, at 4:11 PM, Nick Bergantz &lt;nbergantz@apple.com&gt; wrote:</div>
+<br><div> <div>EC Support,<div> </div>
+<div>Has Acontis written or interfaced with Broadcom 570X family of NIC?</div>
+<div> </div>
+<div>What would be the scope to have this as a NIC target?</div>
+<div>
+<br><div>
+<div dir="auto">
+<div dir="auto">Thanks,</div>
+<div dir="auto">
+<div> </div>
+<div> | nicholas.bergantz | TDG.product.systems.quality | One Apple Park Way, M/S: 272-4TDG, Cupertino, CA, 95014 | m.+1.408.940.6571<br><br><b>CONFIDENTIALITY NOTICE:</b> This message, and attachment(s), is intended only for the use of the individual(s) or entity to which it is addressed in the header(s), and may contain information that is privileged, confidential and exempt from disclosure under applicable law. </div>
+</div>
+</div>
+</div>
+<div>
+<br><blockquote type="cite">
+<div>On Nov 30, 2021, at 7:05 AM, Jon Waters &lt;j.waters@acontis.com&gt; wrote:</div>
+<br><div> <div>
+<div>Hi Nick,</div>
+<p> </p>
+<div>Thank you for the confirmation. I suggest you use our developer support email ecsupport@acontis.com. Our team of engineers responsible for the EtherCAT Master stack will be able to assist and provide guidance that way. I’m also able to follow along on those topics.</div>
+<p> </p>
+<div>We can also setup an initial web meeting together with one of the primary engineers if you’d like (or at any point in the future during your development). We just need to accommodate the 9 hour time zone difference between CA and Germany.</div>
+<p> </p>
+<div>/Jon</div>
+<p> </p>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

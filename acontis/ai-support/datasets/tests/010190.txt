@@ -1,0 +1,126 @@
+### HEADER
+Id=10190
+Link=http://at-zammad/#ticket/zoom/10190
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ISIT SAS (ID=182, Number=40020, Country=FR)
+Commission=ISIT, Generic (ID=481, Number=481)
+Number=7010190
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=fmontagne@isit.fr (ID=24, FirstName=Franck, LastName=MONTAGNE)
+CreatedBy=fmontagne@isit.fr (ID=24, FirstName=Franck, LastName=MONTAGNE)
+Type=
+TimeUnit=
+CreatedAt=14.03.2025 10:22:43 +00:00
+UpdatedAt=21.03.2025 10:28:28 +00:00
+CloseAt=21.03.2025 10:28:28 +00:00
+ArticlesCount=2
+
+### TITLE
+Problem launching evaluation version of EC-Engineer
+
+### ARTICLE00_HEADER
+Id=58426
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.03.2025 10:22:43 +00:00
+UpdatedAt=14.03.2025 10:22:48 +00:00
+
+### ARTICLE00_SUBJECT
+Problem launching evaluation version of EC-Engineer
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,</p>
+<p> </p>
+<p><span lang="EN-GB">I have a problem when launching evaluation version of EC-Engineer when connected to my office Ethernet network. IT says “No internet connection available”. It works fine if I use Wifi and share connection with my phone. So I assume something goes wrong with our Firewall…</span></p>
+<p><span lang="EN-GB"><p> </p></span></p>
+<p><span lang="EN-GB">Do you have an idea of problem ?</span></p>
+<p><span lang="EN-GB"><p> </p></span></p>
+<p> </p>
+<p>Best regards</p>
+<p> </p>
+<p><b><span style="color:#1f4e79;">Franck MONTAGNE</span></b></p>
+<p>CTO</p>
+<p><b>Phone :</b><span> +33 (0)6 16 57 19 53 | <b>E-mail : <a href="mailto:fmontagne@isit.fr"><span style="color:blue;">fmontagne@isit.fr</span></a></b></span><u><span style="color:#0563c1;"></span></u></p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:3.2291in;max-height:.0312in;width:310px;max-height:3px;" src="/api/v1/ticket_attachment/10190/58426/243368?view=inline" alt="Titre : dessin au trait"></p>
+<p><span lang="EN-US"><a href="http://www.isit.fr/" rel="nofollow noreferrer noopener" target="_blank"><b><span lang="FR" style="color:#0563c1;">www.isit.fr</span></b></a></span><b><span lang="EN-US" style="color:#5b9bd5;">
+</span></b><b><span style="color:#5b9bd5;">– </span></b><span lang="EN-US"><a href="https://eshop.isit.fr/" rel="nofollow noreferrer noopener" title="https://eshop.isit.fr/" target="_blank"><b><span lang="FR" style="color:#0563c1;">www.eshop.isit.fr</span></b></a></span><b><span style="color:#0563c1;"> <u> </u></span></b><b><span style="color:#5b9bd5;"> </span></b></p>
+<p><b>Address :</b><span> 7 Rue André Marie Ampère 31830 Plaisance du Touch France<br>
+<b>Phone :</b> +33 (0)5 61 30 69 00</span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=58436
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.03.2025 12:12:36 +00:00
+UpdatedAt=14.03.2025 12:12:39 +00:00
+
+### ARTICLE01_SUBJECT
+Problem launching evaluation version of EC-Engineer
+
+### ARTICLE01_BODY
+Hi Franck,<div><br></div><div>I guess your proxy prevent us from the checking the time. </div><div><br></div><div>You can unzip this file:</div><div>
+<div><a href="https://software.acontis.com/EC-Tools/V4x0/EC-Engineer-EcOem.dat_NO_INTERNET/EcOem.zip" title="https://software.acontis.com/EC-Tools/V4x0/EC-Engineer-EcOem.dat_NO_INTERNET/EcOem.zip" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/EC-Tools/V4x0/EC-Engineer-EcOem.dat_NO_INTERNET/EcOem.zip</a></div>
+<div><br></div>
+<div>The replace your existing EcOem.dat in the EC-Engineer installtation folder with this one. Then it will work again.</div>
+<div>Maybe we will change the eval check in the near future to virtual dongle. Then the internet check will not be necessary anymore, but first we have to discuss internally about it.</div>
+<div><br></div>
+<div>Best regars,</div>
+<div>Kai</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, March 14, 2025 at 11:22:43 AM, Franck MONTAGNE wrote:<br><br><div>
+<p>Hello,</p>
+<p> </p>
+<p><span lang="EN-GB">I have a problem when launching evaluation version of EC-Engineer when connected to my office Ethernet network. IT says “No internet connection available”. It works fine if I use Wifi and share connection with my phone. So I assume something goes wrong with our Firewall…</span></p>
+<p><span lang="EN-GB"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-GB">Do you have an idea of problem ?</span></p>
+<p><span lang="EN-GB"></span></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p>Best regards</p>
+<p> </p>
+<p><b><span style="color:#1f4e79;">Franck MONTAGNE</span></b></p>
+<p>CTO</p>
+<p><b>Phone :</b><span> +33 (0)6 16 57 19 53 | <b>E-mail : <a href="mailto:fmontagne@isit.fr"><span style="color:blue;">fmontagne@isit.fr</span></a></b></span><u><span style="color:#0563c1;"></span></u></p>
+<p> </p>
+<p><img border="0" style="max-width:100%;max-width:100%;width:3.2291in;max-height:.0312in;width:310px;max-height:3px;" src="/api/v1/ticket_attachment/10190/58436/243393?view=inline" alt="Titre : dessin au trait"></p>
+<p><span lang="EN-US"><a href="http://www.isit.fr/" rel="nofollow noreferrer noopener" target="_blank"><b><span lang="FR" style="color:#0563c1;">www.isit.fr</span></b></a></span><b><span lang="EN-US" style="color:#5b9bd5;">
+</span></b><b><span style="color:#5b9bd5;">– </span></b><span lang="EN-US"><a href="https://eshop.isit.fr/" rel="nofollow noreferrer noopener" title="https://eshop.isit.fr/" target="_blank"><b><span lang="FR" style="color:#0563c1;">www.eshop.isit.fr</span></b></a></span><b><span style="color:#0563c1;"> <u> </u></span></b><b><span style="color:#5b9bd5;"> </span></b></p>
+<p><b>Address :</b><span> 7 Rue André Marie Ampère 31830 Plaisance du Touch France<br>
+<b>Phone :</b> +33 (0)5 61 30 69 00</span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

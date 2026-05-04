@@ -1,0 +1,255 @@
+### HEADER
+Id=5628
+Link=http://at-zammad/#ticket/zoom/5628
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Occam Labs (ID=624, Number=0, Country=US)
+Commission=Occam Labs, Unknown (ID=703, Number=703)
+Number=705628
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=matt.fauss@occam-labs.com (ID=1298, FirstName=Matt, LastName=Fauss)
+CreatedBy=matt.fauss@occam-labs.com (ID=1298, FirstName=Matt, LastName=Fauss)
+Type=
+TimeUnit=
+CreatedAt=23.05.2023 15:40:50 +00:00
+UpdatedAt=05.06.2023 07:07:26 +00:00
+CloseAt=05.06.2023 07:07:26 +00:00
+ArticlesCount=4
+
+### TITLE
+Event Notifications
+
+### ARTICLE00_HEADER
+Id=29925
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.05.2023 02:05:50 +00:00
+UpdatedAt=23.05.2023 15:45:04 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Event notifications
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>Can you help this customer with this?</div><div> </div><div>/Jon</div><div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>Matt Fauss &lt;matt.fauss@occam-labs.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Event notifications</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>May 22, 2023 at 7:12:30 PM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt;, Troy Hudson &lt;t.hudson@acontis.com&gt;<br></span>
+</div>
+<br><div>
+<div>Hi Guys,</div>
+<div><p> </p></div>
+<div>I am trying to figure out how I can determine when my SDO reads or writes have completed.</div>
+<div><p> </p></div>
+<div>I don’t see the notification callback being called. The SDO object does indeed get updated, but I was expecting the notification callback to get called by the master.</div>
+<div><p> </p></div>
+<div>Here is some code where I call an upload request:</div>
+<div><p> </p></div>
+<div>EC_T_MBXTFER_DESC MbxTferDesc = {sdo.get_data_size(), static_cast&lt;EC_T_BYTE*&gt;(sdo.get_data_ptr())};</div>
+<div>EC_T_MBXTFER* pMbxTfer = emMbxTferCreate(ec_app_.AppContext.dwInstanceId, &amp;MbxTferDesc);</div>
+<div>EC_T_DWORD dwSlaveId = emGetSlaveId(ec_app_.AppContext.dwInstanceId, station_address);</div>
+<div>EC_T_WORD wObIndex = sdo.object_index_;</div>
+<div>EC_T_BYTE byObSubIndex = sdo.sub_index_;</div>
+<div>EC_T_DWORD dwTimeout = 1000;</div>
+<div>EC_T_DWORD dwFlags = 0;</div>
+<div><p> </p></div>
+<div>EC_T_DWORD ret = emCoeSdoUploadReq(ec_app_.AppContext.dwInstanceId, pMbxTfer, dwSlaveId, wObIndex, byObSubIndex,</div>
+<div>dwTimeout, dwFlags);</div>
+<div><p> </p></div>
+<div>The only events I see triggering the emNotify callback set when registering the client is “CoE Emergency requests”.</div>
+<div><p> </p></div>
+<div>I appreciate any help in figuring this out.</div>
+<div><p> </p></div>
+<div>Thanks, Matt</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=29939
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.05.2023 06:26:17 +00:00
+UpdatedAt=23.05.2023 15:45:04 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: Event notifications
+
+### ARTICLE01_BODY
+Hi Matt,<div><br></div><div>please check the following link:</div><div>
+<div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/mbx_tfer.html#mbx-tfer--page-root" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/mbx_tfer.html#mbx-tfer--page-root" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/mbx_tfer.html#mbx-tfer--page-root</a></div>
+<div><br></div>
+<div>you can wait for the notification or poll the state until <span style="color: rgba(0, 0, 0, 0.87);">eMbxTferStatus_TferDone or </span><span style="color: rgba(0, 0, 0, 0.87);">eMbxTferStatus_TferReqError</span>
+</div>
+<div><br></div>
+<div>Best Regards,</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div data-signature="true" data-signature-id="2">
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, May 23, 2023 at 4:05:50 AM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>Can you help this customer with this?</div>
+<div> </div>
+<div>/Jon</div>
+<div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>Matt Fauss &lt;matt.fauss@occam-labs.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Event notifications</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>May 22, 2023 at 7:12:30 PM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt;, Troy Hudson &lt;t.hudson@acontis.com&gt;<br></span>
+</div>
+<br><div>
+<div>Hi Guys,</div>
+<div><p> </p></div>
+<div>I am trying to figure out how I can determine when my SDO reads or writes have completed.</div>
+<div><p> </p></div>
+<div>I don’t see the notification callback being called. The SDO object does indeed get updated, but I was expecting the notification callback to get called by the master.</div>
+<div><p> </p></div>
+<div>Here is some code where I call an upload request:</div>
+<div><p> </p></div>
+<div>EC_T_MBXTFER_DESC MbxTferDesc = {sdo.get_data_size(), static_cast&lt;EC_T_BYTE*&gt;(sdo.get_data_ptr())};</div>
+<div>EC_T_MBXTFER* pMbxTfer = emMbxTferCreate(ec_app_.AppContext.dwInstanceId, &amp;MbxTferDesc);</div>
+<div>EC_T_DWORD dwSlaveId = emGetSlaveId(ec_app_.AppContext.dwInstanceId, station_address);</div>
+<div>EC_T_WORD wObIndex = sdo.object_index_;</div>
+<div>EC_T_BYTE byObSubIndex = sdo.sub_index_;</div>
+<div>EC_T_DWORD dwTimeout = 1000;</div>
+<div>EC_T_DWORD dwFlags = 0;</div>
+<div><p> </p></div>
+<div>EC_T_DWORD ret = emCoeSdoUploadReq(ec_app_.AppContext.dwInstanceId, pMbxTfer, dwSlaveId, wObIndex, byObSubIndex,</div>
+<div>dwTimeout, dwFlags);</div>
+<div><p> </p></div>
+<div>The only events I see triggering the emNotify callback set when registering the client is “CoE Emergency requests”.</div>
+<div><p> </p></div>
+<div>I appreciate any help in figuring this out.</div>
+<div><p> </p></div>
+<div>Thanks, Matt</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=29998
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.05.2023 15:40:50 +00:00
+UpdatedAt=23.05.2023 15:40:50 +00:00
+
+### ARTICLE02_SUBJECT
+Event Notifications
+
+### ARTICLE02_BODY
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>We are using EC Master and don’t seem to get notifications for completion of CoE SDO transfers.</p>
+<p>I can request a transfer and it will succeed to set or get SDO objects, but I expected the EcNotify callback to get called and it does not.</p>
+<p>The callback does get called for “CoE emergency request” events so it I imagine I am registering the client ok.</p>
+<p>Is there something I need to set to enable notifications on SDO transfer completion?</p>
+<p> </p>
+<p>Thanks, Matt</p>
+<p> </p>
+<p>Occam Labs Inc.</p>
+<p> </p>
+</div>
+
+### ARTICLE03_HEADER
+Id=29999
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.05.2023 15:44:52 +00:00
+UpdatedAt=23.05.2023 15:44:56 +00:00
+
+### ARTICLE03_SUBJECT
+Event Notifications
+
+### ARTICLE03_BODY
+Hi Matt,<div><br></div><div>please check the following link:</div><div>
+<div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/mbx_tfer.html#mbx-tfer--page-root" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/mbx_tfer.html#mbx-tfer--page-root</a></div>
+<div><br></div>
+<div>you can wait for the notification or poll the state until <span style="color:rgba(0, 0, 0, 0.87);">eMbxTferStatus_TferDone or </span><span style="color:rgba(0, 0, 0, 0.87);">eMbxTferStatus_TferReqError</span>
+</div>
+<div><br></div>
+<div>Best Regards,</div>
+</div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Tuesday, May 23, 2023 at 5:40:50 PM, Matt Fauss wrote:<br><br><div>
+<p>Hello,</p>
+<p> </p>
+<p>We are using EC Master and don’t seem to get notifications for completion of CoE SDO transfers.</p>
+<p>I can request a transfer and it will succeed to set or get SDO objects, but I expected the EcNotify callback to get called and it does not.</p>
+<p>The callback does get called for “CoE emergency request” events so it I imagine I am registering the client ok.</p>
+<p>Is there something I need to set to enable notifications on SDO transfer completion?</p>
+<p> </p>
+<p>Thanks, Matt</p>
+<p> </p>
+<p>Occam Labs Inc.</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

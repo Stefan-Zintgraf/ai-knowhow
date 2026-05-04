@@ -1,0 +1,118 @@
+### HEADER
+Id=10887
+Link=http://at-zammad/#ticket/zoom/10887
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=Presto Solutions, Generic (ID=478, Number=478)
+Number=7010887
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=27.06.2025 08:13:18 +00:00
+UpdatedAt=11.07.2025 06:11:21 +00:00
+CloseAt=11.07.2025 06:11:21 +00:00
+ArticlesCount=2
+
+### TITLE
+Regarding DAQ feature of EC-Inspector
+
+### ARTICLE00_HEADER
+Id=62362
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.06.2025 08:13:18 +00:00
+UpdatedAt=27.06.2025 08:13:22 +00:00
+
+### ARTICLE00_SUBJECT
+Regarding DAQ feature of EC-Inspector
+
+### ARTICLE00_BODY
+<p>Hi.</p><p><br></p><p>Next week i will be meeting with LG Electronics customers to explain about EC-Inspector.</p><p><br></p><p>So, i'm checking out the latest EC-Inpsector features now.</p><p><br></p><p>Regarding Data Acquisition.</p><p><br></p><p>It was confirmed that data was saved from the trigger point.</p><p><br></p><p>I've tested a few actions, but i can't understand how the options(Duration &amp; Count) below work.</p><p>(Regardless of these options, Data will continue to be stored from the time the trigger occurs.)</p><p><br></p><p><img src="/api/v1/ticket_attachment/10887/62362/258917?view=inline" title="" alt="" style="max-width:100%;width: 565px;max-height: 150px;"></p><p>Please advise in detail &amp; give me a EC-Master-Data-Acquisition-Library Manual.</p><p><br></p><p><br></p><br><br><p>감사합니다.</p><p><br></p><p>Thank you</p><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p><img src="/api/v1/ticket_attachment/10887/62362/258918?view=inline" title="" alt="" style="max-width:100%;"></p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sund</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">u</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">khan@prestosolution.co.kr</a></span></u></i></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table><p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+
+### ARTICLE01_HEADER
+Id=62377
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.06.2025 10:39:54 +00:00
+UpdatedAt=27.06.2025 10:39:56 +00:00
+
+### ARTICLE01_SUBJECT
+Regarding DAQ feature of EC-Inspector
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>Duration means: if the trigger was hit, the DAQ will record for the time which is set in duration.</div><div>Count: Means the data will be recorded until this trigger was hit 5 times per example. </div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, June 27, 2025 at 10:13:18 AM, DukHan Sun wrote:<br><br><p>Hi.</p>
+<p><br></p>
+<p>Next week i will be meeting with LG Electronics customers to explain about EC-Inspector.</p>
+<p><br></p>
+<p>So, i'm checking out the latest EC-Inpsector features now.</p>
+<p><br></p>
+<p>Regarding Data Acquisition.</p>
+<p><br></p>
+<p>It was confirmed that data was saved from the trigger point.</p>
+<p><br></p>
+<p>I've tested a few actions, but i can't understand how the options(Duration &amp; Count) below work.</p>
+<p>(Regardless of these options, Data will continue to be stored from the time the trigger occurs.)</p>
+<p><br></p>
+<p><img src="/api/v1/ticket_attachment/10887/62377/258954?view=inline" title="" alt="" style="max-width:100%;max-width:100%;width: 565px;max-height: 150px;"></p>
+<p>Please advise in detail &amp; give me a EC-Master-Data-Acquisition-Library Manual.</p>
+<p><br></p>
+<p><br></p>
+<br><br><p>감사합니다.</p>
+<p><br></p>
+<p>Thank you</p>
+<p><br></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p><img src="/api/v1/ticket_attachment/10887/62377/258955?view=inline" title="" alt="" style="max-width:100%;max-width:100%;"></p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sund</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">u</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">khan@prestosolution.co.kr</a></span></u></i></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

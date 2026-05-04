@@ -1,0 +1,158 @@
+### HEADER
+Id=2502
+Link=http://at-zammad/#ticket/zoom/2502
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Medtronic GmbH (ID=138, Number=45057, Country=DE)
+Commission=Medtronic, Surgical Controller (ID=157, Number=157)
+Number=702502
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=sebastian.schlingmann@medtronic.com (ID=256, FirstName=Sebastian, LastName=Schlingmann)
+CreatedBy=sebastian.schlingmann@medtronic.com (ID=256, FirstName=Sebastian, LastName=Schlingmann)
+Type=
+TimeUnit=
+CreatedAt=24.02.2022 14:26:08 +00:00
+UpdatedAt=04.03.2022 09:39:17 +00:00
+CloseAt=04.03.2022 09:39:17 +00:00
+ArticlesCount=2
+
+### TITLE
+kleiner Fehler in der dokumentation
+
+### ARTICLE00_HEADER
+Id=13336
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.02.2022 14:26:09 +00:00
+UpdatedAt=24.02.2022 14:26:12 +00:00
+
+### ARTICLE00_SUBJECT
+kleiner Fehler in der dokumentation
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo,</p>
+<p> </p>
+<p>Habe gerade einen kleinen copy-paste Fehler in der EC-Master Class-B Dokumentation gefunden:</p>
+<p> </p>
+<p>pfSystemTimeGet</p>
+<p>[in] Function to get host time in nanoseconds since 1st January 2000. Used as time base</p>
+<p>for DC Initialization</p>
+<p>dwSupportedFeatures</p>
+<p>[in/out] Reserved</p>
+<p>pfSystemQueryMsecCount</p>
+<p>[in] Function to get host time in nanoseconds since 1st January 2000. Used as time base</p>
+<p>for DC Initialization</p>
+<p> </p>
+<p>Der Text von pfSystemQueryMsecCount stimmt nicht mit der Dokumentation in code überein.</p>
+<p> </p>
+<p>Grüße</p>
+<p>Sebastian Schlingmann</p>
+<p> </p>
+<p><b>Sebastian Schlingmann</b></p>
+<p>Principal Software Engineer</p>
+<p> </p>
+<p><b>Medtronic</b></p>
+<p>Medtronic GmbH</p>
+<p>Argelsrieder Feld 10 | 82234 Weßling | Germany</p>
+<p>Phone: +49 8153 9087 - 124 | Mobile: +49 162 1352747 | Fax: +49 8153 9087 - 300</p>
+<p><u>sebastian.schlingmann@medtronic.com</u></p>
+<p><u><a href="http://www.medtronic.de/" rel="nofollow noreferrer noopener" title="http://www.medtronic.de/" target="_blank">medtronic.de</a></u> | <u><a href="https://www.linkedin.com/company/medtronic-gmbh/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/medtronic-gmbh/" target="_blank">LinkedIn</a></u> | <u><a href="https://www.facebook.com/medtronicdeutschland" rel="nofollow noreferrer noopener" title="https://www.facebook.com/medtronicdeutschland" target="_blank">Facebook</a></u><u>
+</u> | <u><a href="https://www.youtube.com/user/medtronicdeutschland" rel="nofollow noreferrer noopener" title="https://www.youtube.com/user/medtronicdeutschland" target="_blank">YouTube </a></u></p>
+<p> </p>
+<p><b>LET’S TAKE HEALTHCARE</b></p>
+<p><b>FURTHER, TOGETHER</b></p>
+<p> </p>
+<p>P please consider the environment before printing this email</p>
+<p> </p>
+<p>Geschäftsführung: David Carr (Vorsitzender), Irene Holler, Sylvia Theis, Dorothee Stamm</p>
+<p>Sitz der Gesellschaft: Meerbusch</p>
+<p>Handelsregister: Amtsgericht Neuss HRB 14798</p>
+<p> </p>
+<p>Die in dieser E-Mail übermittelten Informationen sind vertraulich und ggf. rechtlich geschützt. Sie sind nur für den Gebrauch durch die Person oder die Organisation bestimmt, an die diese E-Mail adressiert ist. Wenn Sie nicht der beabsichtigte Empfänger sind oder Ihnen diese E-Mail unbefugt zugeleitet wurde, ist jedwede Verbreitung oder sonstige Verwendung dieser Informationen streng untersagt. Bitte löschen Sie in diesem Fall diese E-Mail.</p>
+<p> </p>
+</div>[CONFIDENTIALITY AND PRIVACY NOTICE] Information transmitted by this email is proprietary to Medtronic and is intended for use only by the individual or entity to which it is addressed, and may contain information that is private, privileged, confidential or exempt from disclosure under applicable law. If you are not the intended recipient or it appears that this mail has been forwarded to you without proper authority, you are notified that any use or dissemination of this information in any manner is strictly prohibited. In such cases, please delete this mail from your records. To view this notice in other languages you can either select the following link or manually copy and paste the link into the address bar of a web browser:<a href="http://emaildisclaimer.medtronic.com" rel="nofollow noreferrer noopener" target="_blank">http://emaildisclaimer.medtronic.com</a>
+
+### ARTICLE01_HEADER
+Id=13343
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.02.2022 16:58:01 +00:00
+UpdatedAt=24.02.2022 16:58:03 +00:00
+
+### ARTICLE01_SUBJECT
+kleiner Fehler in der dokumentation
+
+### ARTICLE01_BODY
+Hallo Herr Schlingmann,<div><br></div><div>danke für den Hinweis. In der aktuellen Doku sollte es jetzt passen.</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, February 24, 2022, 3:26:09 PM, Sebastian Schlingmann wrote:<br><br><div>
+<p>Hallo,</p>
+<p> </p>
+<p>Habe gerade einen kleinen copy-paste Fehler in der EC-Master Class-B Dokumentation gefunden:</p>
+<p> </p>
+<p>pfSystemTimeGet</p>
+<p>[in] Function to get host time in nanoseconds since 1st January 2000. Used as time base</p>
+<p>for DC Initialization</p>
+<p>dwSupportedFeatures</p>
+<p>[in/out] Reserved</p>
+<p>pfSystemQueryMsecCount</p>
+<p>[in] Function to get host time in nanoseconds since 1st January 2000. Used as time base</p>
+<p>for DC Initialization</p>
+<p> </p>
+<p>Der Text von pfSystemQueryMsecCount stimmt nicht mit der Dokumentation in code überein.</p>
+<p> </p>
+<p>Grüße</p>
+<p>Sebastian Schlingmann</p>
+<p> </p>
+<p><b>Sebastian Schlingmann</b></p>
+<p>Principal Software Engineer</p>
+<p> </p>
+<p><b>Medtronic</b></p>
+<p>Medtronic GmbH</p>
+<p>Argelsrieder Feld 10 | 82234 Weßling | Germany</p>
+<p>Phone: +49 8153 9087 - 124 | Mobile: +49 162 1352747 | Fax: +49 8153 9087 - 300</p>
+<p><u>sebastian.schlingmann@medtronic.com</u></p>
+<p><u><a href="http://www.medtronic.de/" rel="nofollow noreferrer noopener" title="http://www.medtronic.de/" target="_blank">medtronic.de</a></u> | <u><a href="https://www.linkedin.com/company/medtronic-gmbh/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/medtronic-gmbh/" target="_blank">LinkedIn</a></u> | <u><a href="https://www.facebook.com/medtronicdeutschland" rel="nofollow noreferrer noopener" title="https://www.facebook.com/medtronicdeutschland" target="_blank">Facebook</a></u><u>
+</u> | <u><a href="https://www.youtube.com/user/medtronicdeutschland" rel="nofollow noreferrer noopener" title="https://www.youtube.com/user/medtronicdeutschland" target="_blank">YouTube </a></u></p>
+<p> </p>
+<p><b>LET’S TAKE HEALTHCARE</b></p>
+<p><b>FURTHER, TOGETHER</b></p>
+<p> </p>
+<p>P please consider the environment before printing this email</p>
+<p> </p>
+<p>Geschäftsführung: David Carr (Vorsitzender), Irene Holler, Sylvia Theis, Dorothee Stamm</p>
+<p>Sitz der Gesellschaft: Meerbusch</p>
+<p>Handelsregister: Amtsgericht Neuss HRB 14798</p>
+<p> </p>
+<p>Die in dieser E-Mail übermittelten Informationen sind vertraulich und ggf. rechtlich geschützt. Sie sind nur für den Gebrauch durch die Person oder die Organisation bestimmt, an die diese E-Mail adressiert ist. Wenn Sie nicht der beabsichtigte Empfänger sind oder Ihnen diese E-Mail unbefugt zugeleitet wurde, ist jedwede Verbreitung oder sonstige Verwendung dieser Informationen streng untersagt. Bitte löschen Sie in diesem Fall diese E-Mail.</p>
+<p> </p>
+</div>[CONFIDENTIALITY AND PRIVACY NOTICE] Information transmitted by this email is proprietary to Medtronic and is intended for use only by the individual or entity to which it is addressed, and may contain information that is private, privileged, confidential or exempt from disclosure under applicable law. If you are not the intended recipient or it appears that this mail has been forwarded to you without proper authority, you are notified that any use or dissemination of this information in any manner is strictly prohibited. In such cases, please delete this mail from your records. To view this notice in other languages you can either select the following link or manually copy and paste the link into the address bar of a web browser:<a href="http://emaildisclaimer.medtronic.com" rel="nofollow noreferrer noopener" target="_blank">http://emaildisclaimer.medtronic.com</a><br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

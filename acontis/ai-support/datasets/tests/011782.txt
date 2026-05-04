@@ -1,0 +1,147 @@
+### HEADER
+Id=11782
+Link=http://at-zammad/#ticket/zoom/11782
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Yushin, Removal robot for molding machines (ID=922, Number=922)
+Number=7011782
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=05.11.2025 06:10:38 +00:00
+UpdatedAt=14.11.2025 07:19:23 +00:00
+CloseAt=05.11.2025 07:08:25 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Master(YUSHIN) [E160]
+
+### ARTICLE00_HEADER
+Id=68050
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.11.2025 06:10:38 +00:00
+UpdatedAt=05.11.2025 06:10:38 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(YUSHIN) [E160]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support<br> <br> Question about EC-Master(YUSHIN) [E160]<br> <br> It says “Not available on all operating systems!”, but which operating systems are supported?<br> <img src="/api/v1/ticket_attachment/11782/68050/284878?view=inline" style="max-width:100%;"><br> <br> Best regards,<br> Takuya Fujikawa
+
+### ARTICLE01_HEADER
+Id=68063
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.11.2025 07:08:25 +00:00
+UpdatedAt=05.11.2025 07:08:29 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(YUSHIN) [E160]
+
+### ARTICLE01_BODY
+If the application can provide the callback pfnGetTimeElapsedSinceCycleStart<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Wednesday, November 5, 2025 at 7:10:38 AM, Takuya Fujikawa wrote:<br><br>Dear EtherCAT Support<br> <br> Question about EC-Master(YUSHIN) [E160]<br> <br> It says “Not available on all operating systems!”, but which operating systems are supported?<br> <img src="/api/v1/ticket_attachment/11782/68063/284907?view=inline" style="max-width:100%;max-width:100%;"><br> <br> Best regards,<br> Takuya Fujikawa<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=68134
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.11.2025 01:37:57 +00:00
+UpdatedAt=06.11.2025 01:37:57 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master(YUSHIN) [E160] [Ticket#7011782]
+
+### ARTICLE02_BODY
+Dear Cyril san<br> <br> The content of your response to the customer's question is different.<br> <br> Best regards,<br> Takuya Fujikawa<br><br><div>On 2025/11/05 16:08, Cyril Eyssautier via EC-Support wrote:<br> </div><blockquote type="cite" cite="mid:20251105070825.11782.c0ec7b2a-2a13-4cea-86b3-dfeb661610b0@at-zammad"> If the application can provide the callback pfnGetTimeElapsedSinceCycleStart<br> <div data-signature="true" data-signature-id="2"> <div>__________________________________________________________________________________________<br> </div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div> <div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br> </div>
+</div>
+<div> </div>
+<div> <blockquote type="cite">On Wednesday, November 5, 2025 at 7:10:38 AM, Takuya Fujikawa wrote:<br> <br> Dear EtherCAT Support<br> <br> Question about EC-Master(YUSHIN) [E160]<br> <br> It says “Not available on all operating systems!”, but which operating systems are supported?<br> <img src="/api/v1/ticket_attachment/11782/68134/285189?view=inline" style="max-width:100%;max-width:100%;"><br> <br> Best regards,<br> Takuya Fujikawa<br> </blockquote> </div>
+<div> </div>
+<br> <br> </blockquote>
+
+### ARTICLE03_HEADER
+Id=68181
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.11.2025 18:02:30 +00:00
+UpdatedAt=06.11.2025 18:02:34 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(YUSHIN) [E160]
+
+### ARTICLE03_BODY
+Hi Takuya,<div><br></div><div>today we have an implementation under Linux, but the customers can implement it by themselves on their OS providing <span style="background-color: initial; color: rgb(88, 88, 86);">pfnGetTimeElapsedSinceCycleStart.</span>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, November 6, 2025 at 2:37:57 AM, Takuya Fujikawa wrote:<br><br>Dear Cyril san<br> <br> The content of your response to the customer's question is different.<br> <br> Best regards,<br> Takuya Fujikawa<br><br><div>On 2025/11/05 16:08, Cyril Eyssautier via EC-Support wrote:<br> </div>
+<blockquote type="cite" cite="mid:20251105070825.11782.c0ec7b2a-2a13-4cea-86b3-dfeb661610b0@at-zammad"> If the application can provide the callback pfnGetTimeElapsedSinceCycleStart<br> <div data-signature="true" data-signature-id="2"> <div>__________________________________________________________________________________________<br> </div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div> <div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br> </div>
+</div>
+<div> </div>
+<div> <blockquote type="cite">On Wednesday, November 5, 2025 at 7:10:38 AM, Takuya Fujikawa wrote:<br> <br> Dear EtherCAT Support<br> <br> Question about EC-Master(YUSHIN) [E160]<br> <br> It says “Not available on all operating systems!”, but which operating systems are supported?<br> <img src="/api/v1/ticket_attachment/11782/68181/285408?view=inline" style="max-width:100%;max-width:100%;max-width:100%;"><br> <br> Best regards,<br> Takuya Fujikawa<br> </blockquote> </div>
+<div> </div>
+<br> <br> </blockquote>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

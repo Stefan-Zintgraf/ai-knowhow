@@ -1,0 +1,158 @@
+### HEADER
+Id=6517
+Link=http://at-zammad/#ticket/zoom/6517
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Occam Labs (ID=624, Number=0, Country=US)
+Commission=Occam Labs, Unknown (ID=703, Number=703)
+Number=706517
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=matt.fauss@occam-labs.com (ID=1298, FirstName=Matt, LastName=Fauss)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=10.10.2023 04:08:50 +00:00
+UpdatedAt=16.10.2023 06:24:49 +00:00
+CloseAt=16.10.2023 06:23:39 +00:00
+ArticlesCount=2
+
+### TITLE
+RE: emGetSlaveState
+
+### ARTICLE00_HEADER
+Id=35195
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.10.2023 04:08:50 +00:00
+UpdatedAt=10.10.2023 04:08:50 +00:00
+
+### ARTICLE00_SUBJECT
+RE: emGetSlaveState
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Matt,</p>
+<p> </p>
+<p>I’m looping in the developers for support here.</p>
+<p> </p>
+<div>
+<p>/Jon</p>
+</div>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Matt Fauss &lt;matt.fauss@occam-labs.com&gt; <br><b>Sent:</b> Monday, October 9, 2023 1:37 PM<br><b>To:</b> Troy Hudson &lt;t.hudson@acontis.com&gt;; Jon Waters &lt;j.waters@acontis.com&gt;<br><b>Subject:</b> emGetSlaveState</p>
+</div>
+<p> </p>
+<div><p>I am trying to deal with various error conditions.</p></div>
+<div>
+<p> </p>
+</div>
+<div><p>When something causes a slave to transition out of operational state, I want to use emSetSlaveState() to attempt to move it back into operational state. But it seems like the function does not return. I set the timeout to 1000 ms.</p></div>
+<div>
+<p> </p>
+</div>
+<div><p>Our application is written based on the Demo Application, but running with ROS2 in a single thread approach.</p></div>
+<div>
+<p> </p>
+</div>
+<div><p>There is a note in the documentation "This function may not be called from within the JobTask’s context".</p></div>
+<div><p>But we have UseJogTasks = false.</p></div>
+<div><p>We call EcPreProcessData() and EcPostProcessData() within a ROS timer loop (which I understand to be) in the same thread as my call to emSetSlaveState().</p></div>
+<div>
+<p> </p>
+</div>
+<div><p>I can, in this same thread, get the slave state with emGetSlaveState() fine.</p></div>
+<div>
+<p> </p>
+</div>
+<div><p>Do you have any ideas of how we can resolve this?</p></div>
+<div>
+<p> </p>
+</div>
+<div><p>Thanks, Matt</p></div>
+<div><p> </p></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=35205
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.10.2023 07:14:53 +00:00
+UpdatedAt=10.10.2023 07:14:54 +00:00
+
+### ARTICLE01_SUBJECT
+emGetSlaveState
+
+### ARTICLE01_BODY
+Hi Matt,<div><br></div><div>
+<span>EcPreProcessData() and </span><span>EcPostProcessData() are not from us, but I assume that you are in a similar context as in our job task.</span>
+</div><div><span><br></span></div><div><span>Passing EC_NOWAIT as timeout value should solve your issue. I checked the documentation and the restriction seems to be a copy paste error. I will fix it:</span></div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=setslavestate#emsetslavestate" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=setslavestate#emsetslavestate" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=setslavestate#emsetslavestate</a></div></div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, October 10, 2023 at 6:08:50 AM, Jon Waters wrote:<br><br><div>
+<p>Hi Matt,</p>
+<p> </p>
+<p>I’m looping in the developers for support here.</p>
+<p> </p>
+<div>
+<p>/Jon</p>
+</div>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Matt Fauss &lt;matt.fauss@occam-labs.com&gt; <br><b>Sent:</b> Monday, October 9, 2023 1:37 PM<br><b>To:</b> Troy Hudson &lt;t.hudson@acontis.com&gt;; Jon Waters &lt;j.waters@acontis.com&gt;<br><b>Subject:</b> emGetSlaveState</p>
+</div>
+<p> </p>
+<div><p>I am trying to deal with various error conditions.</p></div>
+<div>
+<p> </p>
+</div>
+<div><p>When something causes a slave to transition out of operational state, I want to use emSetSlaveState() to attempt to move it back into operational state. But it seems like the function does not return. I set the timeout to 1000 ms.</p></div>
+<div>
+<p> </p>
+</div>
+<div><p>Our application is written based on the Demo Application, but running with ROS2 in a single thread approach.</p></div>
+<div>
+<p> </p>
+</div>
+<div><p>There is a note in the documentation "This function may not be called from within the JobTask’s context".</p></div>
+<div><p>But we have UseJogTasks = false.</p></div>
+<div><p>We call EcPreProcessData() and EcPostProcessData() within a ROS timer loop (which I understand to be) in the same thread as my call to emSetSlaveState().</p></div>
+<div>
+<p> </p>
+</div>
+<div><p>I can, in this same thread, get the slave state with emGetSlaveState() fine.</p></div>
+<div>
+<p> </p>
+</div>
+<div><p>Do you have any ideas of how we can resolve this?</p></div>
+<div>
+<p> </p>
+</div>
+<div><p>Thanks, Matt</p></div>
+<div><p> </p></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

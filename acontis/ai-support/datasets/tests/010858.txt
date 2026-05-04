@@ -1,0 +1,161 @@
+### HEADER
+Id=10858
+Link=http://at-zammad/#ticket/zoom/10858
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Hexagon Technology Center GmbH (ID=17, Number=53510, Country=CH)
+Commission=Hexagon Technology, Maestro (ID=19, Number=19)
+Number=7010858
+Owner=t.schoenemann@acontis.com (ID=2745, FirstName=Thomas, LastName=Schoenemann)
+Customer=silvan.meienberger@hexagon.com (ID=699, FirstName=Meienberger, LastName=Silvan)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=25.06.2025 07:50:30 +00:00
+UpdatedAt=11.07.2025 09:02:15 +00:00
+CloseAt=25.06.2025 11:42:32 +00:00
+ArticlesCount=5
+
+### TITLE
+Acontis software update request from Hexagon Technology Center
+
+### ARTICLE00_HEADER
+Id=62220
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.06.2025 07:50:30 +00:00
+UpdatedAt=25.06.2025 07:50:34 +00:00
+
+### ARTICLE00_SUBJECT
+Acontis software update request from Hexagon Technology Center
+
+### ARTICLE00_BODY
+<p>Dear Mr./Ms. Meienberger,</p><p>thank you for your registration.<br><br></p><p>First Name: Silvan<br>Last Name: Meienberger<br>Company: Hexagon Technology Center<br><span>Commission Number: <br></span><span>Country: Switzerland<br></span><span>City: 9435 Heerbrugg<br></span><span>E-Mail: silvan.meienberger@hexagon.com<br></span>Product: <span>EC-Master,EC-Engineer<br></span>Update Type: Update (binary compatible)<br><span>Operating System Version: Windows 11(EcEngineer) and Linux 5.15 RT-Patch and VxWorks<br></span>Additional information: Please also provide the Ethercat Slave test app for the dedicated EcMaster version.</p><p><img src="/api/v1/ticket_attachment/10858/62220/258217?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/10858/62220/258216?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=62233
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=25.06.2025 11:37:30 +00:00
+UpdatedAt=25.06.2025 11:37:30 +00:00
+
+### ARTICLE01_BODY
+drei E-Mails gesendet (vier Produkte)<div><br></div>
+
+### ARTICLE02_HEADER
+Id=62234
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=25.06.2025 11:41:23 +00:00
+UpdatedAt=25.06.2025 11:42:21 +00:00
+
+### ARTICLE02_SUBJECT
+Delivery for Hexagon Technology Center, Hexagon, Maestro , Commission 45050
+
+### ARTICLE02_BODY
+Dear Customer,
+
+please find your new software version below: 
+
+https://downloads.acontis.com/2025/G-I/Hexagon_Technology_Center_(45050)(CH)/EC-Master_VxWorks_x86_64Bit/3.2.3.02/EC-Master-ClassA-AddOn-V3.2.3.02-VxWorks70-x86_64Bit-SDK_Unrestricted.zip
+https://downloads.acontis.com/2025/G-I/Hexagon_Technology_Center_(45050)(CH)/EC-Master_VxWorks_x86_64Bit/3.2.3.02/EC-Master-RAS-V3.2.3.02-VxWorks70-x86_64Bit-SDK_Unrestricted.zip
+https://downloads.acontis.com/2025/G-I/Hexagon_Technology_Center_(45050)(CH)/EC-Master_VxWorks_x86_64Bit/3.2.3.02/EC-Master-V3.2.3.02-VxWorks70-x86_64Bit-SDK_Unrestricted.zip
+https://downloads.acontis.com/2025/G-I/Hexagon_Technology_Center_(45050)(CH)/EC-Master_VxWorks_x86_64Bit/3.2.3.02/EC-RtEth-IntelGbe-V3.2.3.02-VxWorks70-x86_64Bit-SDK_Unrestricted.zip
+https://downloads.acontis.com/2025/G-I/Hexagon_Technology_Center_(45050)(CH)/EC-Engineer/4.0.6/EC-Engineer_Dongle_V4.0.6.zip
+
+Password: ECM88250
+
+If you want to get notified if a new version is released, please answer to this e-mail.
+
+Best Regards,
+Thomas Schoenemann
+__________________________________________________________________________________________
+Thomas Schoenemann
+EtherCAT Support
+eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, 
+https://www.acontis.com
+__________________________________________________________________________________________
+Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html
+
+This is an automatic generated eMail.
+
+
+### ARTICLE03_HEADER
+Id=62235
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=25.06.2025 11:41:24 +00:00
+UpdatedAt=25.06.2025 11:42:03 +00:00
+
+### ARTICLE03_SUBJECT
+Delivery for Hexagon Technology Center, Hexagon, Maestro , Commission 45050
+
+### ARTICLE03_BODY
+Dear Customer,
+
+please find your new software version below: 
+
+https://downloads.acontis.com/2025/G-I/Hexagon_Technology_Center_(45050)(CH)/EC-Master_Linux_ARM_64Bit/3.2.3.02/EC-Master-ClassA-AddOn-V3.2.3.02-Linux-ARM_64Bit-SDK_Unrestricted.tar.gz
+https://downloads.acontis.com/2025/G-I/Hexagon_Technology_Center_(45050)(CH)/EC-Master_Linux_ARM_64Bit/3.2.3.02/EC-Master-RAS-V3.2.3.02-Linux-ARM_64Bit-SDK_Unrestricted.tar.gz
+https://downloads.acontis.com/2025/G-I/Hexagon_Technology_Center_(45050)(CH)/EC-Master_Linux_ARM_64Bit/3.2.3.02/EC-Master-V3.2.3.02-Linux-ARM_64Bit-SDK_Unrestricted.tar.gz
+https://downloads.acontis.com/2025/G-I/Hexagon_Technology_Center_(45050)(CH)/EC-Master_Linux_ARM_64Bit/3.2.3.02/EC-RtEth-FslFec-V3.2.3.02-Linux-ARM_64Bit-SDK_Unrestricted.tar.gz
+
+Password: ECM88250
+
+If you want to get notified if a new version is released, please answer to this e-mail.
+
+Best Regards,
+Thomas Schoenemann
+__________________________________________________________________________________________
+Thomas Schoenemann
+EtherCAT Support
+eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, 
+https://www.acontis.com
+__________________________________________________________________________________________
+Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html
+
+This is an automatic generated eMail.
+
+
+### ARTICLE04_HEADER
+Id=62236
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=25.06.2025 11:41:24 +00:00
+UpdatedAt=25.06.2025 11:41:42 +00:00
+
+### ARTICLE04_SUBJECT
+Delivery for Hexagon Technology Center, Hexagon, Maestro , Commission 45050
+
+### ARTICLE04_BODY
+Dear Customer,
+
+please find your new software version below: 
+
+https://downloads.acontis.com/2025/G-I/Hexagon_Technology_Center_(45050)(CH)/EC-STA_Windows_x86/3.2.3.02/EC-STA-V3.2.3.02-Windows-x86_64Bit-SDK_Unrestricted.zip
+
+Password: ECM88250
+
+If you want to get notified if a new version is released, please answer to this e-mail.
+
+Best Regards,
+Thomas Schoenemann
+__________________________________________________________________________________________
+Thomas Schoenemann
+EtherCAT Support
+eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, 
+https://www.acontis.com
+__________________________________________________________________________________________
+Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html
+
+This is an automatic generated eMail.
+

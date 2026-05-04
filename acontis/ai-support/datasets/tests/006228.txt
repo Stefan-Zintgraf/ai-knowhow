@@ -1,0 +1,185 @@
+### HEADER
+Id=6228
+Link=http://at-zammad/#ticket/zoom/6228
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=The Mathworks (ID=391, Number=40135, Country=US)
+Commission=The Mathworks, Simulink Real-Time (ID=463, Number=463)
+Number=706228
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=mtrujill@mathworks.com (ID=1318, FirstName=Marlon, LastName=Trujillo)
+CreatedBy=mtrujill@mathworks.com (ID=1318, FirstName=Marlon, LastName=Trujillo)
+Type=
+TimeUnit=
+CreatedAt=28.08.2023 19:24:15 +00:00
+UpdatedAt=01.09.2023 06:48:37 +00:00
+CloseAt=01.09.2023 06:48:37 +00:00
+ArticlesCount=3
+
+### TITLE
+EtherCAT Cycle Drop in QNX
+
+### ARTICLE00_HEADER
+Id=33398
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.08.2023 19:24:15 +00:00
+UpdatedAt=28.08.2023 19:24:19 +00:00
+
+### ARTICLE00_SUBJECT
+EtherCAT Cycle Drop in QNX
+
+### ARTICLE00_BODY
+<div>
+<p>Just dropping you another sticky note we have about something that's been bugging us. So, one of our customers is writing to us with an issue in the EtherCAT master scene. Apparently, every now and then, it's like the master decides to skip a beat and miss out on 1 cycle. This little hiccup is causing some control errors on their loop. Now, they are claiming this only happens in QNX, while everything's good with On Time.</p>
+<p> </p>
+<p>So, I have 2 question now:</p>
+<ol start="1" type="1">
+<li>Does the EcMaster have a notification to show this event?, like a heads-up the moment the master decides to ghost a cycle. </li>
+</ol>
+<p> </p>
+<ol start="2" type="1">
+<li>Are you aware of this case in QNX? If so, what tool do you recommend troubleshooting this?</li>
+</ol>
+<p> </p>
+<p>Thank you again!</p>
+<p> </p>
+<p>Marlon Trujillo (Simulink Real-Time)</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=33588
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.08.2023 16:43:12 +00:00
+UpdatedAt=31.08.2023 16:43:14 +00:00
+
+### ARTICLE01_SUBJECT
+EtherCAT Cycle Drop in QNX
+
+### ARTICLE01_BODY
+Hi Marlon,<div><br></div><div>EC-Master never skips any cycles by its one :)</div><div><br></div><div>It sounds like a cycle violation or an HW delay. I would expect the following notification:</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=error_#emnotify-ec-notify-frame-response-error" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=error_#emnotify-ec-notify-frame-response-error" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=error_#emnotify-ec-notify-frame-response-error</a></div></div><div><br></div><div>Do you monitor the cycle?</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Monday, August 28, 2023 at 9:24:15 PM, Marlon Trujillo wrote:<br><br><div>
+<p>Just dropping you another sticky note we have about something that's been bugging us. So, one of our customers is writing to us with an issue in the EtherCAT master scene. Apparently, every now and then, it's like the master decides to skip a beat and miss out on 1 cycle. This little hiccup is causing some control errors on their loop. Now, they are claiming this only happens in QNX, while everything's good with On Time.</p>
+<p> </p>
+<p>So, I have 2 question now:</p>
+<ol start="1" type="1">
+<li>Does the EcMaster have a notification to show this event?, like a heads-up the moment the master decides to ghost a cycle. </li>
+</ol>
+<p> </p>
+<ol start="2" type="1">
+<li>Are you aware of this case in QNX? If so, what tool do you recommend troubleshooting this?</li>
+</ol>
+<p> </p>
+<p>Thank you again!</p>
+<p> </p>
+<p>Marlon Trujillo (Simulink Real-Time)</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=33591
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.08.2023 17:44:28 +00:00
+UpdatedAt=31.08.2023 17:44:28 +00:00
+
+### ARTICLE02_SUBJECT
+RE: EtherCAT Cycle Drop in QNX [Ticket#706228]
+
+### ARTICLE02_BODY
+<div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>Yes, our suspicions also lean towards issues with QNX or the hardware, which is where most questions typically end up. The user has informed us that they are using tools within Simulink and Matlab to monitor cycles. We are suggesting that they also conduct tests with other models and oscilloscopes for confirmation. No notifications about Frame issues have arisen in the monitoring.</p>
+<p> </p>
+<div>
+<p>Marlon Trujillo (Simulink Real-Time)</p>
+<p><span style="color:#323130;">+1-508-647-0228</span></p>
+</div>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Thursday, August 31, 2023 12:43 PM<br>
+<b>To:</b> Marlon Trujillo &lt;mtrujill@mathworks.com&gt;<br>
+<b>Subject:</b> RE: EtherCAT Cycle Drop in QNX [Ticket#706228]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Marlon,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>EC-Master never skips any cycles by its one :)</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>It sounds like a cycle violation or an HW delay. I would expect the following notification:</p>
+</div>
+<div>
+<div>
+<p><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=error_#emnotify-ec-notify-frame-response-error" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=error_#emnotify-ec-notify-frame-response-error" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=error_#emnotify-ec-notify-frame-response-error</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Do you monitor the cycle?</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Cyril</p>
+<div>
+<div>
+<p> </p>
+</div>
+</div>
+<div>
+<blockquote>
+<p>On Monday, August 28, 2023 at 9:24:15 PM, Marlon Trujillo wrote:</p>
+<div>
+<p>Just dropping you another sticky note we have about something that's been bugging us. So, one of our customers is writing to us with an issue in the EtherCAT master scene. Apparently, every now and then, it's like the master decides to skip a beat and miss out on 1 cycle. This little hiccup is causing some control errors on their loop. Now, they are claiming this only happens in QNX, while everything's good with On Time.</p>
+<p> </p>
+<p>So, I have 2 question now:</p>
+<ol start="1" type="1">
+<li> Does the EcMaster have a notification to show this event?, like a heads-up the moment the master decides to ghost a cycle. </li>
+</ol>
+<p> </p>
+<ol start="2" type="1">
+<li> Are you aware of this case in QNX? If so, what tool do you recommend troubleshooting this?</li>
+</ol>
+<p> </p>
+<p>Thank you again!</p>
+<p> </p>
+<p>Marlon Trujillo (Simulink Real-Time)</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

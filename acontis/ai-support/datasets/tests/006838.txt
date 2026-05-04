@@ -1,0 +1,118 @@
+### HEADER
+Id=6838
+Link=http://at-zammad/#ticket/zoom/6838
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=iorange (IOR), MD_Platform (ID=599, Number=599)
+Number=706838
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=16.11.2023 02:01:47 +00:00
+UpdatedAt=24.11.2023 07:11:12 +00:00
+CloseAt=24.11.2023 07:11:12 +00:00
+ArticlesCount=2
+
+### TITLE
+The customer iorange problem about lic active
+
+### ARTICLE00_HEADER
+Id=37043
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.11.2023 02:01:47 +00:00
+UpdatedAt=16.11.2023 02:01:47 +00:00
+
+### ARTICLE00_SUBJECT
+The customer iorange problem about lic active
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>The customer iorange make the config tool have a problem about license.</div>
+<div>The add the license and OEM key after initmaster before configmaster, And they then block the master before configmaster. They find the lxwin can't be actived.</div>
+<div>We explain that they could delete the block and run the ecmaster jump safeop and op, if they don't have eni or bus mismatch.</div>
+<div>But we are interesting in the license active about this status. Dose the lxwin could be actived if the ecmaster is blocked before configmaster? Or the ecmaster must run if customer want to active the lxwin?</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=37139
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.11.2023 18:01:20 +00:00
+UpdatedAt=17.11.2023 18:02:45 +00:00
+
+### ARTICLE01_SUBJECT
+The customer iorange problem about lic active
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>EC-Master must run at least with <span>eCnfType_GenPreopENI.</span>
+</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Thursday, November 16, 2023 at 3:01:47 AM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>The customer iorange make the config tool have a problem about license.</div>
+<div>The add the license and OEM key after initmaster before configmaster, And they then block the master before configmaster. They find the lxwin can't be actived.</div>
+<div>We explain that they could delete the block and run the ecmaster jump safeop and op, if they don't have eni or bus mismatch.</div>
+<div>But we are interesting in the license active about this status. Dose the lxwin could be actived if the ecmaster is blocked before configmaster? Or the ecmaster must run if customer want to active the lxwin?</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,284 @@
+### HEADER
+Id=5386
+Link=http://at-zammad/#ticket/zoom/5386
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=JSLT (ID=402, Number=0, Country=JP)
+Commission=Yamaha Motor, Robot Controller (ID=325, Number=325)
+Number=705386
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=eiji.kumakura@jslt.co.jp (ID=21, FirstName=Eiji, LastName=Kumakura)
+CreatedBy=eiji.kumakura@jslt.co.jp (ID=21, FirstName=Eiji, LastName=Kumakura)
+Type=
+TimeUnit=
+CreatedAt=13.04.2023 01:55:32 +00:00
+UpdatedAt=13.04.2023 07:59:31 +00:00
+CloseAt=13.04.2023 07:59:31 +00:00
+ArticlesCount=3
+
+### TITLE
+Question about "State transition processing" from YAMAHA.
+
+### ARTICLE00_HEADER
+Id=28522
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=13.04.2023 01:55:32 +00:00
+UpdatedAt=13.04.2023 01:55:34 +00:00
+
+### ARTICLE00_SUBJECT
+Question about "State transition processing" from YAMAHA.
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+We received a notification from Yamaha that the following processes are taking longer than expected:
+
+   ecatInitMaster -> 2.5 sec
+   ecatSetMasterState INIT to PREOP -> 1 sec
+   ecatSetMasterState PREOP to SAFEOP -> 3 sec
+
+Regarding "ecatSetMasterState," it seems that the delay is caused by waiting for the SLAVE transition, and we have asked for confirmation whether TwinCAT experiences the same delay.
+
+However, we believe that "ecatInitMaster" is not caused by the SLAVE.
+
+Q1. Is "ecatInitMaster" caused by the SLAVE?
+Q2. (If Q1 is yes) What process is being performed during "ecatInitMaster"?
+
+Thank you for your confirmation.
+
+-------------------------------------------------------
+----- The Japanese translation is as follows: -----
+-------------------------------------------------------
+
+ヤマハよりそれぞれ以下処理で時間が掛かっているとの連絡が御座いました。
+
+   ecatInitMaster -> 2.5 sec
+   ecatSetMasterState INIT to PREOP  -> 1 sec
+   ecatSetMasterState PREOP to SAFEOP  -> 3 sec
+
+"ecatSetMasterState"については、SLAVE側の遷移待ちが要因と思われ、TwinCATでも同じ時間が掛かるか確認をしてもらっています。
+
+しかし、"ecatInitMaster"はSLAVE要因では無いと思います。
+
+Q1.ecatInitMasterはSLAVE要因でしょうか？
+Q2.(If Q1 yes)どのような処理がされているのでしょうか？
+
+-------------------------------------------------------
+
+Best regards,
+Eiji Kumakura
+
+====================
+JSL Technology Co.,Ltd
+
+2F 911-1 Tanaka-cho, Ashikaga-shi,
+Tochigi 326-0822 Japan
+
+Email: eiji.kumakura@jslt.co.jp
+URL: http://www.jslt.co.jp/
+
+Tel: 81-284-22-7091
+Fax: 81-284-24-7092
+====================
+
+
+### ARTICLE01_HEADER
+Id=28525
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.04.2023 05:59:17 +00:00
+UpdatedAt=13.04.2023 05:59:19 +00:00
+
+### ARTICLE01_SUBJECT
+Question about "State transition processing" from YAMAHA.
+
+### ARTICLE01_BODY
+Hi Eiji,<div><br></div><div>in <span>ecatInitMaster(), the link autonegotiation is executed 2,5s is a pretty good value.</span>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, April 13, 2023 at 3:55:32 AM, Eiji Kumakura wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>We received a notification from Yamaha that the following processes are taking longer than expected:</div>
+<div><br></div>
+<div>   ecatInitMaster -&gt; 2.5 sec</div>
+<div>   ecatSetMasterState INIT to PREOP -&gt; 1 sec</div>
+<div>   ecatSetMasterState PREOP to SAFEOP -&gt; 3 sec</div>
+<div><br></div>
+<div>Regarding "ecatSetMasterState," it seems that the delay is caused by waiting for the SLAVE transition, and we have asked for confirmation whether TwinCAT experiences the same delay.</div>
+<div><br></div>
+<div>However, we believe that "ecatInitMaster" is not caused by the SLAVE.</div>
+<div><br></div>
+<div>Q1. Is "ecatInitMaster" caused by the SLAVE?</div>
+<div>Q2. (If Q1 is yes) What process is being performed during "ecatInitMaster"?</div>
+<div><br></div>
+<div>Thank you for your confirmation.</div>
+<div><br></div>
+<div>-------------------------------------------------------</div>
+<div>----- The Japanese translation is as follows: -----</div>
+<div>-------------------------------------------------------</div>
+<div><br></div>
+<div>ヤマハよりそれぞれ以下処理で時間が掛かっているとの連絡が御座いました。</div>
+<div><br></div>
+<div>   ecatInitMaster -&gt; 2.5 sec</div>
+<div>   ecatSetMasterState INIT to PREOP  -&gt; 1 sec</div>
+<div>   ecatSetMasterState PREOP to SAFEOP  -&gt; 3 sec</div>
+<div><br></div>
+<div>"ecatSetMasterState"については、SLAVE側の遷移待ちが要因と思われ、TwinCATでも同じ時間が掛かるか確認をしてもらっています。</div>
+<div><br></div>
+<div>しかし、"ecatInitMaster"はSLAVE要因では無いと思います。</div>
+<div><br></div>
+<div>Q1.ecatInitMasterはSLAVE要因でしょうか？</div>
+<div>Q2.(If Q1 yes)どのような処理がされているのでしょうか？</div>
+<div><br></div>
+<div>-------------------------------------------------------</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Eiji Kumakura</div>
+<div><br></div>
+<div>====================</div>
+<div>JSL Technology Co.,Ltd</div>
+<div><br></div>
+<div>2F 911-1 Tanaka-cho, Ashikaga-shi,</div>
+<div>Tochigi 326-0822 Japan</div>
+<div><br></div>
+<div>Email: eiji.kumakura@jslt.co.jp</div>
+<div>URL: <a href="http://www.jslt.co.jp/" title="http://www.jslt.co.jp/" rel="nofollow noreferrer noopener" target="_blank">http://www.jslt.co.jp/</a>
+</div>
+<div><br></div>
+<div>Tel: 81-284-22-7091</div>
+<div>Fax: 81-284-24-7092</div>
+<div>====================</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=28534
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=13.04.2023 07:14:47 +00:00
+UpdatedAt=13.04.2023 07:14:47 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about "State transition processing" from YAMAHA. [Ticket#705386]
+
+### ARTICLE02_BODY
+Hi Cyril,
+
+Thank you for the release information.
+I will let my customer know.
+
+Best regards,
+Eiji
+
+====================
+JSL Technology Co.,Ltd
+
+2F 911-1 Tanaka-cho, Ashikaga-shi,
+Tochigi 326-0822 Japan
+
+Email: eiji.kumakura@jslt.co.jp
+URL: http://www.jslt.co.jp/
+
+Tel: 81-284-22-7091
+Fax: 81-284-24-7092
+====================
+
+On 2023/04/13 14:59, Cyril Eyssautier via EC-Support wrote:
+> Hi Eiji,
+> 
+> in ecatInitMaster(), the link autonegotiation is executed 2,5s is a pretty good value.
+> 
+> Best Regards,
+> __________________________________________________________________________________________
+> Cyril Eyssautier
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> On Thursday, April 13, 2023 at 3:55:32 AM, Eiji Kumakura wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> We received a notification from Yamaha that the following processes are taking longer than expected:
+>>
+>>   ecatInitMaster -> 2.5 sec
+>>   ecatSetMasterState INIT to PREOP -> 1 sec
+>>   ecatSetMasterState PREOP to SAFEOP -> 3 sec
+>>
+>> Regarding "ecatSetMasterState," it seems that the delay is caused by waiting for the SLAVE transition, and we have asked for confirmation whether TwinCAT experiences the same delay.
+>>
+>> However, we believe that "ecatInitMaster" is not caused by the SLAVE.
+>>
+>> Q1. Is "ecatInitMaster" caused by the SLAVE?
+>> Q2. (If Q1 is yes) What process is being performed during "ecatInitMaster"?
+>>
+>> Thank you for your confirmation.
+>>
+>> -------------------------------------------------------
+>> ----- The Japanese translation is as follows: -----
+>> -------------------------------------------------------
+>>
+>> ヤマハよりそれぞれ以下処理で時間が掛かっているとの連絡が御座いました。
+>>
+>>   ecatInitMaster -> 2.5 sec
+>>   ecatSetMasterState INIT to PREOP  -> 1 sec
+>>   ecatSetMasterState PREOP to SAFEOP  -> 3 sec
+>>
+>> "ecatSetMasterState"については、SLAVE側の遷移待ちが要因と思われ、TwinCATでも同じ時間が掛かるか確認をしてもらっています。
+>>
+>> しかし、"ecatInitMaster"はSLAVE要因では無いと思います。
+>>
+>> Q1.ecatInitMasterはSLAVE要因でしょうか？
+>> Q2.(If Q1 yes)どのような処理がされているのでしょうか？
+>>
+>> -------------------------------------------------------
+>>
+>> Best regards,
+>> Eiji Kumakura
+>>
+>> ====================
+>> JSL Technology Co.,Ltd
+>>
+>> 2F 911-1 Tanaka-cho, Ashikaga-shi,
+>> Tochigi 326-0822 Japan
+>>
+>> Email: eiji.kumakura@jslt.co.jp
+>> URL: http://www.jslt.co.jp/ <http://www.jslt.co.jp/>
+>>
+>> Tel: 81-284-22-7091
+>> Fax: 81-284-24-7092
+>> ====================
+>>
+> 
+> 
+> 
+

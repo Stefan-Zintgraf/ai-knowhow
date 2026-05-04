@@ -1,0 +1,167 @@
+### HEADER
+Id=2176
+Link=http://at-zammad/#ticket/zoom/2176
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=702176
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=05.01.2022 19:23:46 +00:00
+UpdatedAt=12.01.2022 16:45:55 +00:00
+CloseAt=12.01.2022 16:45:55 +00:00
+ArticlesCount=3
+
+### TITLE
+Embed EcOem.dat
+
+### ARTICLE00_HEADER
+Id=11477
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.01.2022 19:23:48 +00:00
+UpdatedAt=05.01.2022 19:23:49 +00:00
+
+### ARTICLE00_SUBJECT
+Embed EcOem.dat
+
+### ARTICLE00_BODY
+<div>
+<p>Maybe I missed it, but is there a way to include EcOem.dat as an embedded resource, similar to how we can now embed EEC and Languages files using EcFileIo? It would be one less thing to get wrong in a deployment.</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=11710
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.01.2022 15:42:14 +00:00
+UpdatedAt=12.01.2022 15:42:16 +00:00
+
+### ARTICLE01_SUBJECT
+Embed EcOem.dat
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>no, you saw it correctly. It is not supported to embed EcOem.dat. I want also to keep it as it is because we have some restriction checks that this file is required and must be available. I prefer also to have the EcOem.dat code only in <span>EcEniEngineOem.cs.</span>
+</div><div><span><br></span></div><div><span>Is this ok for you if we keep EcOem.dat as an external file?</span></div><div><br></div><div>Best Regards,</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Martin Gaenzer </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, January 5, 2022, 8:23:48 PM, Quinton Tormanen wrote:<br><br><div>
+<p>Maybe I missed it, but is there a way to include EcOem.dat as an embedded resource, similar to how we can now embed EEC and Languages files using EcFileIo? It would be one less thing to get wrong in a deployment.</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=11713
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.01.2022 16:17:18 +00:00
+UpdatedAt=12.01.2022 16:17:18 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Embed EcOem.dat [Ticket#702176]
+
+### ARTICLE02_BODY
+Yes, that is OK to leave as is. Thanks! <div> </div><div dir="auto">-Quinton</div><hr>
+<div dir="ltr">
+<b>From:</b> Martin Gaenzer via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Wednesday, January 12, 2022 7:42:16 AM<br>
+<b>To:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: Embed EcOem.dat [Ticket#702176] <div> </div>
+</div><div>Hi,<div> </div>
+<div>no, you saw it correctly. It is not supported to embed EcOem.dat. I want also to keep it as it is because we have some restriction checks that this file is required and must be available. I prefer also to have the EcOem.dat code only in EcEniEngineOem.cs.</div>
+<div> </div>
+<div>Is this ok for you if we keep EcOem.dat as an external file?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Martin</div>
+<div>
+<br>
+<div>
+<div>____________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>acontis technologies GmbH</div>
+</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com</a> </div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>eMail: ecsupport@acontis.com<br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Wednesday, January 5, 2022, 8:23:48 PM, Quinton Tormanen wrote:<br>
+<br>
+<div>
+<p>Maybe I missed it, but is there a way to include EcOem.dat as an embedded resource, similar to how we can now embed EEC and Languages files using EcFileIo? It would be one less thing to get wrong in a deployment.</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>

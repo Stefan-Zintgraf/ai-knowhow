@@ -1,0 +1,142 @@
+### HEADER
+Id=7288
+Link=http://at-zammad/#ticket/zoom/7288
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Rokae, LIRA (Lithotek) (ID=70, Number=70)
+Number=707288
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=23.01.2024 03:44:54 +00:00
+UpdatedAt=01.03.2024 07:13:15 +00:00
+CloseAt=01.03.2024 07:13:15 +00:00
+ArticlesCount=2
+
+### TITLE
+The customer rokea problem before mass productio
+
+### ARTICLE00_HEADER
+Id=39959
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.01.2024 03:44:54 +00:00
+UpdatedAt=23.01.2024 03:44:55 +00:00
+
+### ARTICLE00_SUBJECT
+The customer rokea problem before mass productio
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>At begin of this year, Rokea plan to order 10k license, and our bussiness colleage had discussed 5k license for the first step. But last week, we get a bad news about their product.</div>
+<div>The EcMaster in their product are missing frame about 1 second, and then it send some frames between serial microsecond. The checking their code and fixed some problem.</div>
+<div>But now, They still have about 3ms block, and then the master send frame in serial microsecond, and then the ecmaster report sync err, and slave report error too. please checking the following picture.</div>
+<div><img src="/api/v1/ticket_attachment/7288/39959/165821?view=inline" style="max-width:100%;width:1185px;max-height:181px;"></div>
+<div> </div>
+<div>I understand this problem is not EcMaster, But we don't want to making any trouble before they shipment.</div>
+<div>I had suggested them to measure the performace for every part of app. Do you have any better suggestion for their problem</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=39964
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.01.2024 07:42:31 +00:00
+UpdatedAt=23.01.2024 07:42:34 +00:00
+
+### ARTICLE01_SUBJECT
+The customer rokea problem before mass productio
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>your are on the right way. They need to identify the location stucking for 3ms.</div><div>I can imagine some OS calls like printf, malloc, ... Or they perhaps have some dead locks with own mutex... </div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, January 23, 2024 at 4:44:54 AM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>At begin of this year, Rokea plan to order 10k license, and our bussiness colleage had discussed 5k license for the first step. But last week, we get a bad news about their product.</div>
+<div>The EcMaster in their product are missing frame about 1 second, and then it send some frames between serial microsecond. The checking their code and fixed some problem.</div>
+<div>But now, They still have about 3ms block, and then the master send frame in serial microsecond, and then the ecmaster report sync err, and slave report error too. please checking the following picture.</div>
+<div><img src="/api/v1/ticket_attachment/7288/39964/165837?view=inline" style="max-width:100%;max-width:100%;width:1185px;max-height:181px;"></div>
+<div> </div>
+<div>I understand this problem is not EcMaster, But we don't want to making any trouble before they shipment.</div>
+<div>I had suggested them to measure the performace for every part of app. Do you have any better suggestion for their problem</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

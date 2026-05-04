@@ -1,0 +1,243 @@
+### HEADER
+Id=2448
+Link=http://at-zammad/#ticket/zoom/2448
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ACS Motion Control LTD (ID=184, Number=50006, Country=IL)
+Commission=ACS, Motion Controller (ID=223, Number=223)
+Number=702448
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=borisb@acsmotioncontrol.com (ID=83, FirstName=Boris, LastName=Brevdo)
+CreatedBy=borisb@acsmotioncontrol.com (ID=83, FirstName=Boris, LastName=Brevdo)
+Type=
+TimeUnit=
+CreatedAt=15.02.2022 12:02:15 +00:00
+UpdatedAt=15.02.2022 14:09:27 +00:00
+CloseAt=15.02.2022 14:09:27 +00:00
+ArticlesCount=3
+
+### TITLE
+EtherCAT Master second instance
+
+### ARTICLE00_HEADER
+Id=13021
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.02.2022 12:02:15 +00:00
+UpdatedAt=15.02.2022 12:02:15 +00:00
+
+### ARTICLE00_SUBJECT
+EtherCAT Master second instance
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Acontis Team,</p>
+<p> </p>
+<p>I’ve started some analysis with two EtherCAT masters instances.</p>
+<p>For the first instance, everything is working – the slave enters OP state.</p>
+<p> </p>
+<p>For the second instance, I’m trying to get link connected indication.</p>
+<p> </p>
+<p>I’m using <b>emIoControl</b> with <b>EC_IOCTL_ISLINK_CONNECTED</b>, and I’m not getting the indication that the link is connected.</p>
+<p>Any suggestions?</p>
+<p> </p>
+<p>Thank you,</p>
+<p>Boris Brevdo</p>
+<p> </p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding:0in 0in 0in 0in;">
+<p><b><i><span style="color:black;">Boris Brevdo</span></i></b><i><span style="color:black;"><br> RT Embedded Platforms Team Leader</span></i></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;">
+<span style="color:#1f497d;"><img style="max-width:100%;width:1.6979in;max-height:.0833in;width:163px;max-height:8px;" src="/api/v1/ticket_attachment/2448/13021/52193?view=inline" alt="Description: C:\Users\oferb\AppData\Local\Temp\Rar$EXa0.515\ACS_empty.gif"></span><p></p>
+</td>
+</tr>
+<tr>
+<td style="border:none;border-top:solid #f8193f 1.0pt;padding:0in 0in 0in 0in;">
+<span style="color:#1f497d;"><img style="max-width:100%;width:1.6979in;max-height:.0833in;width:163px;max-height:8px;" src="/api/v1/ticket_attachment/2448/13021/52193?view=inline" alt="Description: C:\Users\oferb\AppData\Local\Temp\Rar$EXa0.515\ACS_empty.gif"></span><p></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;">
+<p><a href="https://nospamproxywebp.beckhoff.com/enqsig/link?id=AUkAAAATONVT1pUlHRXV1dlp1FKLh3C1un1B3sOMb_SfPmbix5gL-koLDdYuKX_b97H_u1Mr3o5lAItWi3tTLiUPDfLi-yFRerFeEMEuWAAAANAQAmE7FDd5ZB1_kb0RyY3Wz-TyrSz2TBXIyGR9Qt1EM1OhKEkOr0bsuXz5siPryeloKkqaSM90MbupATSQfMlsv1gzsiPURdlB6nBqA6iTsFe_GqS7M0QAAQ2" rel="nofollow noreferrer noopener" title="https://nospamproxywebp.beckhoff.com/enqsig/link?id=AUkAAAATONVT1pUlHRXV1dlp1FKLh3C1un1B3sOMb_SfPmbix5gL-koLDdYuKX_b97H_u1Mr3o5lAItWi3tTLiUPDfLi-yFRerFeEMEuWAAAANAQAmE7FDd5ZB1_kb0RyY3Wz-TyrSz2TBXIyGR9Qt1EM1OhKEkOr0bsuXz5siPryeloKkqaSM90MbupATSQfMlsv1gzsiPURdlB6nBqA6iTsFe_GqS7M0QAAQ2" target="_blank"><span style="color:#1f497d;"><img border="0" style="max-width:100%;width:1.6979in;max-height:.5625in;width:163px;max-height:54px;" src="/api/v1/ticket_attachment/2448/13021/52194?view=inline" alt="Description: C:\Users\oferb\AppData\Local\Temp\Rar$EXa0.515\ACS_logo.jpg"></span></a></p>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table> <p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=13025
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.02.2022 13:26:45 +00:00
+UpdatedAt=15.02.2022 13:26:47 +00:00
+
+### ARTICLE01_SUBJECT
+EtherCAT Master second instance
+
+### ARTICLE01_BODY
+Hi Boris,<div><br></div><div>how are you doing? Good to hear from you!</div><div><br></div><div>Please be sure that you run the job task for both instances. The link status refresh is done in <span>eUsrJob_SendAllCycFrames.</span>
+</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Tuesday, February 15, 2022, 1:02:15 PM, Boris Brevdo wrote:<br><br><div>
+<p>Dear Acontis Team,</p>
+<p> </p>
+<p>I’ve started some analysis with two EtherCAT masters instances.</p>
+<p>For the first instance, everything is working – the slave enters OP state.</p>
+<p> </p>
+<p>For the second instance, I’m trying to get link connected indication.</p>
+<p> </p>
+<p>I’m using <b>emIoControl</b> with <b>EC_IOCTL_ISLINK_CONNECTED</b>, and I’m not getting the indication that the link is connected.</p>
+<p>Any suggestions?</p>
+<p> </p>
+<p>Thank you,</p>
+<p>Boris Brevdo</p>
+<p> </p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding:0in 0in 0in 0in;">
+<p><b><i><span style="color:black;">Boris Brevdo</span></i></b><i><span style="color:black;"><br> RT Embedded Platforms Team Leader</span></i></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;">
+<span style="color:#1f497d;"><img style="max-width:100%;max-width:100%;width:1.6979in;max-height:.0833in;width:163px;max-height:8px;" src="/api/v1/ticket_attachment/2448/13025/52202?view=inline" alt="Description: C:\Users\oferb\AppData\Local\Temp\Rar$EXa0.515\ACS_empty.gif"></span><p></p>
+</td>
+</tr>
+<tr>
+<td style="border:none;border-top:solid #f8193f 1.0pt;padding:0in 0in 0in 0in;">
+<span style="color:#1f497d;"><img style="max-width:100%;max-width:100%;width:1.6979in;max-height:.0833in;width:163px;max-height:8px;" src="/api/v1/ticket_attachment/2448/13025/52203?view=inline" alt="Description: C:\Users\oferb\AppData\Local\Temp\Rar$EXa0.515\ACS_empty.gif"></span><p></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;">
+<p><a href="https://nospamproxywebp.beckhoff.com/enqsig/link?id=AUkAAAATONVT1pUlHRXV1dlp1FKLh3C1un1B3sOMb_SfPmbix5gL-koLDdYuKX_b97H_u1Mr3o5lAItWi3tTLiUPDfLi-yFRerFeEMEuWAAAANAQAmE7FDd5ZB1_kb0RyY3Wz-TyrSz2TBXIyGR9Qt1EM1OhKEkOr0bsuXz5siPryeloKkqaSM90MbupATSQfMlsv1gzsiPURdlB6nBqA6iTsFe_GqS7M0QAAQ2" rel="nofollow noreferrer noopener" title="https://nospamproxywebp.beckhoff.com/enqsig/link?id=AUkAAAATONVT1pUlHRXV1dlp1FKLh3C1un1B3sOMb_SfPmbix5gL-koLDdYuKX_b97H_u1Mr3o5lAItWi3tTLiUPDfLi-yFRerFeEMEuWAAAANAQAmE7FDd5ZB1_kb0RyY3Wz-TyrSz2TBXIyGR9Qt1EM1OhKEkOr0bsuXz5siPryeloKkqaSM90MbupATSQfMlsv1gzsiPURdlB6nBqA6iTsFe_GqS7M0QAAQ2" target="_blank"><span style="color:#1f497d;"><img border="0" style="max-width:100%;max-width:100%;width:1.6979in;max-height:.5625in;width:163px;max-height:54px;" src="/api/v1/ticket_attachment/2448/13025/52204?view=inline" alt="Description: C:\Users\oferb\AppData\Local\Temp\Rar$EXa0.515\ACS_logo.jpg"></span></a></p>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table> <p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=13026
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.02.2022 14:07:18 +00:00
+UpdatedAt=15.02.2022 14:07:18 +00:00
+
+### ARTICLE02_SUBJECT
+RE: EtherCAT Master second instance [Ticket#702448]
+
+### ARTICLE02_BODY
+<div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>I’m fine, and it’s good to hear from you as well!</p>
+<p> </p>
+<p>Now the bus scanning is successful, thank you.</p>
+<p> </p>
+<p>Boris Brevdo</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Tuesday, February 15, 2022 3:27 PM<br>
+<b>To:</b> Boris Brevdo &lt;borisb@acsmotioncontrol.com&gt;<br>
+<b>Subject:</b> RE: EtherCAT Master second instance [Ticket#702448]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Boris,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>how are you doing? Good to hear from you!</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Please be sure that you run the job task for both instances. The link status refresh is done in eUsrJob_SendAllCycFrames.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Cyril</p>
+<div>
+<div> <p> </p>
+</div>
+</div>
+<div>
+<blockquote>
+<p>On Tuesday, February 15, 2022, 1:02:15 PM, Boris Brevdo wrote:</p>
+<p></p>
+<div>
+<p>Dear Acontis Team,</p>
+<p> </p>
+<p>I’ve started some analysis with two EtherCAT masters instances.</p>
+<p>For the first instance, everything is working – the slave enters OP state.</p>
+<p> </p>
+<p>For the second instance, I’m trying to get link connected indication.</p>
+<p> </p>
+<p>I’m using <b>emIoControl</b> with <b>EC_IOCTL_ISLINK_CONNECTED</b>, and I’m not getting the indication that the link is connected.</p>
+<p>Any suggestions?</p>
+<p> </p>
+<p>Thank you,</p>
+<p>Boris Brevdo</p>
+<p> </p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding:0in 0in 0in 0in;">
+<p><b><i><span style="color:black;">Boris Brevdo</span></i></b><i><span style="color:black;"><br> RT Embedded Platforms Team Leader</span></i></p>
+<p></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;">
+<span style="color:#1f497d;"><img style="max-width:100%;width:1.6979in;max-height:.0833in;width:163px;max-height:8px;" src="/api/v1/ticket_attachment/2448/13026/52208?view=inline"></span>
+<p></p>
+</td>
+</tr>
+<tr>
+<td style="border:none;border-top:solid #f8193f 1.0pt;padding:0in 0in 0in 0in;">
+<span style="color:#1f497d;"><img style="max-width:100%;width:1.6979in;max-height:.0833in;width:163px;max-height:8px;" src="/api/v1/ticket_attachment/2448/13026/52208?view=inline"></span>
+<p></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;">
+<p><a href="https://nospamproxywebp.beckhoff.com/enqsig/link?id=AUkAAAATONVT1pUlHRXV1dlp1FKLh3C1un1B3sOMb_SfPmbix5gL-koLDdYuKX_b97H_u1Mr3o5lAItWi3tTLiUPDfLi-yFRerFeEMEuWAAAANAQAmE7FDd5ZB1_kb0RyY3Wz-TyrSz2TBXIyGR9Qt1EM1OhKEkOr0bsuXz5siPryeloKkqaSM90MbupATSQfMlsv1gzsiPURdlB6nBqA6iTsFe_GqS7M0QAAQ2" title="https://nospamproxywebp.beckhoff.com/enqsig/link?id=AUkAAAATONVT1pUlHRXV1dlp1FKLh3C1un1B3sOMb_SfPmbix5gL-koLDdYuKX_b97H_u1Mr3o5lAItWi3tTLiUPDfLi-yFRerFeEMEuWAAAANAQAmE7FDd5ZB1_kb0RyY3Wz-TyrSz2TBXIyGR9Qt1EM1OhKEkOr0bsuXz5siPryeloKkqaSM90MbupATSQfMlsv1gzsiP" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#1f497d;"><img border="0" style="max-width:100%;width:1.6979in;max-height:.5625in;width:163px;max-height:54px;" src="/api/v1/ticket_attachment/2448/13026/52209?view=inline"></span></a></p>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>

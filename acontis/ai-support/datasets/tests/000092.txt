@@ -1,0 +1,226 @@
+### HEADER
+Id=92
+Link=http://at-zammad/#ticket/zoom/92
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=duagon Germany GmbH (ID=95, Number=56011, Country=DE)
+Commission=duagon, EtherCAT IO with Red. (ID=105, Number=105)
+Number=700092
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=franziska.knoedtel@duagon.com (ID=60, FirstName=Franziska, LastName=Knödtel)
+CreatedBy=franziska.knoedtel@duagon.com (ID=60, FirstName=Franziska, LastName=Knödtel)
+Type=
+TimeUnit=
+CreatedAt=02.03.2021 08:25:38 +00:00
+UpdatedAt=08.04.2021 19:29:23 +00:00
+CloseAt=08.04.2021 19:29:23 +00:00
+ArticlesCount=9
+
+### TITLE
+Doppelter Busscan beim Startup
+
+### ARTICLE00_HEADER
+Id=337
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.03.2021 08:25:38 +00:00
+UpdatedAt=02.03.2021 08:25:38 +00:00
+
+### ARTICLE00_SUBJECT
+Doppelter Busscan beim Startup
+
+### ARTICLE00_BODY
+<div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>ich analysiere aktuell eine Problematik, die wir noch mit unserem EtherCAT Master haben. Hierbei kommt es beim Aufstarten zu einem zweiten Busscan, der den Aufstartvorgang bis alle Slaves und der Master den OP State erreichen verzögert. Herrn Bußmann ist dies schon einmal in einem unserer Log Files aufgefallen. Er schrieb dazu:</p>
+<p>"</p>
+<p>Es ist normal, dass die Meldung „Topology change delay elapsed“ so häufig kommt, solange der Bus Scan noch nicht abgeschlossen ist. In der analysierten Situation wartet der Bus Scan gerade den Open closed ports delay ab, um anschließend Ports zu öffnen, doch zuvor schlägt ein Timeout (0x98110010) zu:</p>
+<p> </p>
+<p>(Der Anfang vom Auftrag Nr. 20 fehlt, s. „Log Buffer Full“)</p>
+<p>…</p>
+<p>0000066314: Log Buffer Full! Log may be incomplete</p>
+<p>0000066319: McSm(20): Waiting for ScanBus before interrupting</p>
+<p>…</p>
+<p>0000067659: McSm(20): Waiting for ScanBus before interrupting</p>
+<p>0000067659: Topology change delay elapsed</p>
+<p>0000067659: TopologyChangedWhileScan() Line break change detected</p>
+<p>0000067659: TopologyChangedWhileScan() Main/Red link dis-/connection detected</p>
+<p>0000067659: BtsSm: Topology changed while scan in ecbtsms_writeportctrl_done</p>
+<p>…</p>
+<p>0000067685: Start 10000 ms Open closed ports delay</p>
+<p>…</p>
+<p>0000077744: McSm(20): Finish order TOPOLOGY_CHANGE, Result = 0x98110010)</p>
+<p> </p>
+<p>Es gibt zwei Arten von Bus Scanvorgängen:</p>
+<ul type="disc">
+<li> Manuell (ecatScanBus)<p></p>
+</li>
+<li> Automatisch (ecatSetMasterState / Topology Changed)<p></p>
+</li>
+</ul>
+<p>Beim Auftrag Nr. 20 handelt es sich um einen automatischen Scan. Der Vorgabewert für automatische Bus Scanvorgänge ist 10s, doch dieser dürfte für Sie zu kurz sein, weshalb der Scan nicht erfolgreich ist.</p>
+<p>Sie können Timeoutwert für automatische Bus Scanvorgänge mit EC_IOCTL_SB_ENABLE ändern. Sie können ihn z.B. auf 60s erhöhen. Weiterhin können Sie auch gleich folgende Werte erhöhen:</p>
+<p>EC_IOCTL_SET_MASTER_DEFAULT_TIMEOUTS: EC_T_MASTERDEFAULTTIMEOUTS_DESC::dwMasterStateChange</p>
+<p>EC_IOCTL_HC_CONFIGURETIMEOUTS: EC_T_HC_CONFIGURETIMEOUTS_DESC::dwDetectionTimeout</p>
+<p>Die Erhöhung der drei Werte sollte helfen, dass der Scan auf Anhieb klappt. Die Anzahl der „Topology change delay elapsed“ Meldungen wird dadurch nicht reduziert.</p>
+<p> </p>
+<p>"</p>
+<p>Nun habe ich mir das Problem genauer angeschaut, allerdings verhält es sich nun anders als im damaligen Log File. Der erste Busscan läuft hier erfolgreich durch:</p>
+<p> </p>
+<p>&lt;7&gt;0000028825: McSm(20): Finish order REQ_SB, Result = 0x0)</p>
+<p> </p>
+<p>Trotzdem wird kurz danach erneut ein Busscan angestoßen:</p>
+<p> </p>
+<p>&lt;7&gt;0000028831: McSm(28): Start order REQ_SB</p>
+<p>&lt;7&gt;0000028831: McSm(28): START -&gt; START_SB (SB_DONE)</p>
+<p>&lt;7&gt;0000028831: McSm(28): START_SB -&gt; WAIT_SB (SB_DONE)</p>
+<p>&lt;7&gt;0000028831: BtSm: ecbtsm_start-&gt;ecbtsm_restart (ecbtsm_busscan_automatic, 0x98110008)</p>
+<p> </p>
+<p>Dieser ist ebenfalls erfolgreich:</p>
+<p> </p>
+<p>&lt;7&gt;0000028963: McSm(28): Finish order REQ_SB, Result = 0x0)</p>
+<p> </p>
+<p>Nun ist mir nicht klar, warum es erneut zu einem Busscan kommt und ob dieser automatisch angestoßen wurde. In unserem Code Bereich wird der Busscan nur an einer Stelle getriggert und auch nur, wenn der Master im OP State ist. Können Sie mir das Verhalten erklären? Anbei finden Sie unsere Log Files.</p>
+<p>In welchen Fällen wird ein Busscan überhaupt wiederholt?</p>
+<p> </p>
+<p>Sollten Sie mit dem no memory Thema noch ausgelastet sein, eilt das Problem hier nicht. Uns ist es erstmal wichtiger den Master stabil zu bekommen.</p>
+<p> </p>
+<p>Viele Grüße,</p>
+<p>Franziska Knödtel</p>
+<p> </p>
+<p>B. Eng.<br> Franziska Knödtel<br> Software Engineer<br> Business Unit Computing Systems, duagon<br> <br> duagon Germany GmbH<br> Neuwieder Straße 1-7<br> 90411 Nürnberg<br> Germany<br> Phone +49 911 99 33 5 - 326<br>
+<a href="http://www.duagon.com" rel="nofollow noreferrer noopener" target="_blank">www.duagon.com</a><br>
+<a href="http://www.duagon.com/product-web-sessions" rel="nofollow noreferrer noopener" target="_blank">www.duagon.com/product-web-sessions</a></p>
+<p><br>
+<img border="0" style="max-width:100%;width:6.4583in;max-height:.9166in;width:620px;max-height:88px;" src="/api/v1/ticket_attachment/92/337/701?view=inline"><br>
+<br> duagon Germany GmbH - Geschäftsführer: Dr. Michael Goldbach - Mathias Kamolz - Kalina Scott - Handelsregister/Trade Register AG Nürnberg HRB 5540<br>
+<br> This message and/or attachments may be privileged or confidential. If you are not the intended recipient, you are hereby notified that you have received this transmittal in error; any review, dissemination, or copying is strictly prohibited. If you received this transmittal in error, please notify us immediately by reply and immediately delete this message and all its attachments. Thank you. </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=1145
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=19.03.2021 10:32:41 +00:00
+UpdatedAt=19.03.2021 10:32:41 +00:00
+
+### ARTICLE01_BODY
+<div>
+<div>
+<div>Ich denke dass es daran liegt. <span>Die Frage ist warum braucht man den in </span><span>SetMasterRedStateReq()?</span><span> </span>
+</div>
+<div><br></div>
+<div>EC_T_DWORD CAtEmInterface::SetMasterRedStateReq(EC_T_BOOL bReqActive)</div>
+</div>
+<div>{</div>
+<div>[...]</div>
+<div>if (bReqActive &amp;&amp; !m_oAtEcatDesc.bReqMasterActive &amp;&amp; !bIsBusScanScheduled)</div>
+<div>    {</div>
+<div>        <b>McSmOrderAdd(eMcSmOrderType_REQ_SB, EC_NULL, EC_TRUE, EC_WAITINFINITE);</b>
+</div>
+<div>    }</div>
+</div><div>[...]</div><div>EC_T_VOID CAtEmInterface::McStateMachine(EC_T_VOID)</div><div>{</div><div>EC_T_DWORD       dwRes    = EC_E_NOERROR;</div><div>EC_T_MCSM_ORDER* poMcSmOrder = EC_NULL;</div><div>EC_T_BOOL        bContinueSm = EC_TRUE;</div><div><br></div><div>#if (defined INCLUDE_MASTER_RED)</div><div>    if (m_oAtEcatDesc.pInitMasterParms-&gt;MasterRedParms.bEnabled)</div><div>    {</div><div>        /* apply master redundancy change request */</div><div>        if (m_oAtEcatDesc.bReqMasterActive != m_oAtEcatDesc.poMaster-&gt;IsActive())</div><div>        {</div><div>            if (m_oAtEcatDesc.bReqMasterActive)</div><div>            {</div><div>                <b>m_oAtEcatDesc.McSmOrderAddInternal(eMcSmOrderType_REQ_SB);</b>
+</div><div><br></div>
+
+### ARTICLE02_HEADER
+Id=1149
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=19.03.2021 10:42:47 +00:00
+UpdatedAt=19.03.2021 10:42:47 +00:00
+
+### ARTICLE02_BODY
+<b>McSmOrderAdd</b>  braucht man, um alle Bus Slave Infos zu erfassen, selbst wenn die Topologie sich nicht ändert, sondern nur ein Switch Over erfolgt. <div>Man könnte es sich sparen, wenn der Zustand UNKNOWN ist, weil dann sowieso über irgendeinen Weg ein Scan erfolgt.</div>
+
+### ARTICLE03_HEADER
+Id=1152
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=19.03.2021 10:47:43 +00:00
+UpdatedAt=19.03.2021 10:47:43 +00:00
+
+### ARTICLE03_BODY
+Warum man es braucht is mir klar. Warum braucht man es aber an 2 Stellen? Es verursacht nämlich ein doppelter BusScan.
+
+### ARTICLE04_HEADER
+Id=1164
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=19.03.2021 11:22:50 +00:00
+UpdatedAt=19.03.2021 11:22:50 +00:00
+
+### ARTICLE04_BODY
+Ich denke, es reicht, wenn der Master das bei bei "apply master redundancy change request" macht und auch nur falls !bIsBusScanScheduled<span>. Im Moment von </span>SetMasterRedStateReq ist es wohl nicht hilfreich.<div>Soll ich es ändern?</div>
+
+### ARTICLE05_HEADER
+Id=1168
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=19.03.2021 13:20:53 +00:00
+UpdatedAt=19.03.2021 13:20:53 +00:00
+
+### ARTICLE05_BODY
+Ja bitte. Danke!
+
+### ARTICLE06_HEADER
+Id=1195
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=22.03.2021 08:21:51 +00:00
+UpdatedAt=22.03.2021 08:21:51 +00:00
+
+### ARTICLE06_BODY
+<p>das ist jetzt drin (ab V3.1.1.04):</p><p><br></p>
+
+<p> </p>
+
+<p>-----------</p>
+
+<p>MasterRed       02980 (F)   PBN - Fix duplicate bus scan on getting
+active</p>
+
+<p>2021-03-21</p>
+
+<p>-----------
+</p>
+
+<p> </p>
+
+<p><br></p><p>Mit realen Slaves haben die Master Red Tests alle bestanden: <a href="http://at-vtst-ec-1:8080/job/EC-Master%20SetupOutputTests/2047/" rel="nofollow noreferrer noopener" target="_blank">http://at-vtst-ec-1:8080/job/EC-Master%20SetupOutputTests/2047/</a>
+</p>
+
+<p>Mir ist aufgefallen, dass die Master Red Tests mit dem Simulator noch
+nicht funktionieren. Das hängt wohl nicht an dieser Änderung, das muss ich mir
+noch anschauen. </p>
+
+### ARTICLE07_HEADER
+Id=1620
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=31.03.2021 05:55:07 +00:00
+UpdatedAt=31.03.2021 05:55:07 +00:00
+
+### ARTICLE07_BODY
+CER: muss
+noch in V3.1.0 gemerged werden
+
+### ARTICLE08_HEADER
+Id=1891
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=08.04.2021 19:29:23 +00:00
+UpdatedAt=08.04.2021 19:29:23 +00:00
+
+### ARTICLE08_BODY
+Für <a href="http://3.1.0.21" title="http://3.1.0.21" rel="nofollow noreferrer noopener" target="_blank">3.1.0.2</a>2 gemerged

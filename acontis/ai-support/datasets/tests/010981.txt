@@ -1,0 +1,117 @@
+### HEADER
+Id=10981
+Link=http://at-zammad/#ticket/zoom/10981
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=Doosan DRA, Robot Controller (ID=335, Number=335)
+Number=7010981
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=10.07.2025 15:37:37 +00:00
+UpdatedAt=16.07.2025 07:42:12 +00:00
+CloseAt=16.07.2025 07:42:12 +00:00
+ArticlesCount=2
+
+### TITLE
+Regarding Master(Main Device) version mismatch between log and EC-inspector [ thread::xDK5nfeBNGim1fjE4TqRqC0:: ]
+
+### ARTICLE00_HEADER
+Id=62890
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.07.2025 15:37:37 +00:00
+UpdatedAt=10.07.2025 15:37:38 +00:00
+
+### ARTICLE00_SUBJECT
+Regarding Master(Main Device) version mismatch between log and EC-inspector [ thread::xDK5nfeBNGim1fjE4TqRqC0:: ]
+
+### ARTICLE00_BODY
+<p>Hi.</p><p><br></p><p>The customer is DooSan Robotics.</p><p><br></p><p>They said there is a problem with the master(main) version mismatch between master log and EC-Inspector as below.</p><p><br></p><p>Please advise.</p><p><br></p><p>Master(Main) log is <b>V3.2.3.02</b></p><p><img src="/api/v1/ticket_attachment/10981/62890/260642?view=inline" title="" alt="" style="max-width:100%;"></p><p><br></p><p><br></p><p>EC-Inspector is <b>3.1.4.02.</b></p><p><img src="/api/v1/ticket_attachment/10981/62890/260643?view=inline" title="" alt="" style="max-width:100%;"></p><br><br><p>감사합니다.</p><p><br></p><p>Thank you</p><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px; width: 610px;"><tbody><tr>
+<td style=" padding: 0px; width: 127px;"><p><img src="/api/v1/ticket_attachment/10981/62890/260644?view=inline" title="" alt="" style="max-width:100%;"></p></td>
+<td style=" padding: 0px; width: 480px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sund</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">u</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">khan@prestosolution.co.kr</a></span></u></i></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table><p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+
+### ARTICLE01_HEADER
+Id=62900
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.07.2025 06:25:31 +00:00
+UpdatedAt=11.07.2025 06:25:33 +00:00
+
+### ARTICLE01_SUBJECT
+Regarding Master(Main Device) version mismatch between log and EC-inspector [ thread::xDK5nfeBNGim1fjE4TqRqC0:[...]
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>EC-Inspector cannot know the used Master Version. Because this is not part of the sniffing packages.</div><div>This version means the EC-Monitor version (library which is doing the sniffing and is integrated in EC-Inspector). So the label is wrong there. We will change this in future versions.</div><div><br></div><div>Best regards,</div><div>Kai<br><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, July 10, 2025 at 5:37:37 PM, DukHan Sun wrote:<br><br><p>Hi.</p>
+<p><br></p>
+<p>The customer is DooSan Robotics.</p>
+<p><br></p>
+<p>They said there is a problem with the master(main) version mismatch between master log and EC-Inspector as below.</p>
+<p><br></p>
+<p>Please advise.</p>
+<p><br></p>
+<p>Master(Main) log is <b>V3.2.3.02</b></p>
+<p><img src="/api/v1/ticket_attachment/10981/62900/260675?view=inline" title="" alt="" style="max-width:100%;max-width:100%;"></p>
+<p><br></p>
+<p><br></p>
+<p>EC-Inspector is <b>3.1.4.02.</b></p>
+<p><img src="/api/v1/ticket_attachment/10981/62900/260676?view=inline" title="" alt="" style="max-width:100%;max-width:100%;"></p>
+<br><br><p>감사합니다.</p>
+<p><br></p>
+<p>Thank you</p>
+<p><br></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px; width: 610px;"><tbody><tr>
+<td style=" padding: 0px; width: 127px;"><p><img src="/api/v1/ticket_attachment/10981/62900/260677?view=inline" title="" alt="" style="max-width:100%;max-width:100%;"></p></td>
+<td style=" padding: 0px; width: 480px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sund</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">u</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">khan@prestosolution.co.kr</a></span></u></i></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

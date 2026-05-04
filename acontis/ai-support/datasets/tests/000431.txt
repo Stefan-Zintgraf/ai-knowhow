@@ -1,0 +1,125 @@
+### HEADER
+Id=431
+Link=http://at-zammad/#ticket/zoom/431
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=MTS Systems (ID=374, Number=41001, Country=US)
+Commission=MTS Systems, 793 System Software (ID=444, Number=444)
+Number=700431
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=cameron.bigsby@mts.com (ID=235, FirstName=Cameron, LastName=Bigsby)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=16.04.2021 18:52:48 +00:00
+UpdatedAt=23.04.2021 06:12:27 +00:00
+CloseAt=23.04.2021 06:12:27 +00:00
+ArticlesCount=3
+
+### TITLE
+Re: EC-Master Sync Window Monitoring
+
+### ARTICLE00_HEADER
+Id=2298
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.04.2021 18:52:48 +00:00
+UpdatedAt=16.04.2021 18:52:48 +00:00
+
+### ARTICLE00_SUBJECT
+Re: EC-Master Sync Window Monitoring
+
+### ARTICLE00_BODY
+<div>Hi Cameron,</div><div> </div><div>Thanks for the question. I'm going to have to pull in some expert support for this one, so I put this into our support ticket system. Should have an update for you Monday.<br>
+</div><br>Jon Waters<br>General Manager<br><br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201<br><br><div>
+<strong> From: </strong> "Bigsby, Cameron" &lt;cameron.bigsby@mts.com&gt; <br>
+<strong> To: </strong> Jon Waters &lt;j.waters@acontis.com&gt; <br>
+<strong> Sent: </strong> 4/16/2021 1:49 PM <br>
+<strong> Subject: </strong> EC-Master Sync Window Monitoring <br><br><blockquote><div>
+<div>
+<p>Hi Jon,</p>
+<p> </p>
+<p>I noticed that EC-Master does some magic with the cyclic BRD command of the system time difference register (0x92C) for sync window monitoring. It appears that the BRD command is replaced by FPRD which addresses each DC-capable devices in the network sequentially.</p>
+<p> </p>
+<p>I noticed this because while doing some timing tests with EC-Master configured for master-shift, the system time difference of the EK1100 in the following configuration (upstream of the reference clock) was returning unexpected values:</p>
+<ul type="disc">
+<li>EC-Master <ul type="circle">
+<li>EK1100 &lt;- invalid system time difference values <ul type="square">
+<li>ELXXXX &lt;- reference clock</li>
+<li>ELXXXX</li>
+<li>…</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<p>The EK1100 is upstream of the reference clock and therefore isn’t receiving the system time which is propagated to the downstream devices. As a result the value in the system time difference register does not appear to be valid.</p>
+<p> </p>
+<p>I see that EC-Master overcomes this by replacing the BRD 0x92C command with FPRD of the specific slaves with DC enabled. This enables sync window monitoring to function even in the above scenario.</p>
+<p> </p>
+<p>Using TwinCAT the user must manually overcome this issue by enabling the EK1100 to be used as the reference clock (<a href="https://download.beckhoff.com/download/Document/io/ethercat-terminals/ek110x_ek15xxen.pdf" rel="nofollow noreferrer noopener" target="_blank">https://download.beckhoff.com/download/Document/io/ethercat-terminals/ek110x_ek15xxen.pdf</a> – page 43). This way the system time difference register of all devices is valid and the broadcast read of the system time difference registers returns a useful value. Enabling the EK1100 to be used as a reference clock does not appear to be supported in EC-Engineer.</p>
+<p> </p>
+<p>Is my understanding of EC-Master’s behavior correct? Is this behavior selectable (BRD vs FPRD)? Are there any other details we should be aware of? Can you provide any other details about why this approach was implemented?</p>
+<p> </p>
+<p>Regards,</p>
+<p>Cameron</p>
+</div>
+</div></blockquote>
+</div>
+
+### ARTICLE01_HEADER
+Id=2299
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=16.04.2021 19:16:16 +00:00
+UpdatedAt=16.04.2021 19:16:16 +00:00
+
+### ARTICLE01_BODY
+Hi Cyril, can you please handle this one?<br>
+
+### ARTICLE02_HEADER
+Id=2321
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.04.2021 07:00:54 +00:00
+UpdatedAt=19.04.2021 07:00:55 +00:00
+
+### ARTICLE02_SUBJECT
+EC-Master Sync Window Monitoring
+
+### ARTICLE02_BODY
+<div>
+<br>Hi Cameron,</div><div><br></div><div>your observation is correct.</div><div><br></div><div>The API is still based on a BRD (we virtually OR all the read values to consider DC slaves in sync). But we read in a round robin procedure all the DC relevant slaves. Instead of a BRD of all the slaves. It makes it possible to notify the specific slaves running out of sync.</div><div>Because DC is controlled by the ESC with big filter and delay. They needs seconds to move out of sync making this procedure not critical. It cannot be modified.</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>

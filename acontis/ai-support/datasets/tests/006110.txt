@@ -1,0 +1,243 @@
+### HEADER
+Id=6110
+Link=http://at-zammad/#ticket/zoom/6110
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=JSLT (ID=402, Number=0, Country=JP)
+Commission=Ricoh PFU Computing, ECAT board, HC+CR (ID=290, Number=290)
+Number=706110
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=07.08.2023 04:46:23 +00:00
+UpdatedAt=31.08.2023 06:10:26 +00:00
+CloseAt=31.08.2023 06:10:26 +00:00
+ArticlesCount=4
+
+### TITLE
+Question About EC-Master(PFU)
+
+### ARTICLE00_HEADER
+Id=32669
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=07.08.2023 04:46:23 +00:00
+UpdatedAt=07.08.2023 04:46:26 +00:00
+
+### ARTICLE00_SUBJECT
+Question About EC-Master(PFU)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question About EC-Master(PFU)
+
+Please check the attachments and answer the questions.
+
+Best regards,
+Takuya Fujikawa
+
+### ARTICLE01_HEADER
+Id=32708
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.08.2023 15:49:08 +00:00
+UpdatedAt=07.08.2023 15:49:12 +00:00
+
+### ARTICLE01_SUBJECT
+Question About EC-Master(PFU)
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>we tested this using V2.9.2.40 on the AM33xx board using our own EcMasterDemoDc and we did not see any problem. We removed the cable between the Ref clock and the first DC Slave and the Master stayed in OP and did not report any synchronization problems. </div><div>My log file is in the attachment.</div><div><br></div><div>Best Regards </div><div>Haithem Jebali<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, August 7, 2023 at 6:46:23 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question About EC-Master(PFU)</div>
+<div><br></div>
+<div>Please check the attachments and answer the questions.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=32819
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=10.08.2023 00:11:55 +00:00
+UpdatedAt=10.08.2023 00:11:55 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question About EC-Master(PFU) [Ticket#706110]
+
+### ARTICLE02_BODY
+Dear Haithem san
+
+1. In the logs, the transition from a disconnected cable state to an Operational (OP) state is observed,
+    which appears to be different from the expected operation.
+    Even if the EtherCAT state was transitioned to OP and
+    the Distributed Clock Management (DCM) synchronization was completed before disconnecting the cable,
+    would the result have been the same?
+
+2. After disconnecting the cable, could you please maintain the state for approximately
+    60 seconds to verify the stability of DCM synchronization? Would it be acceptable
+    to extend the duration of maintaining the OP state to more than 60 seconds for testing purposes?
+
+Best regards,
+Takuya Fujikawa
+
+
+On 2023/08/08 0:49, Haithem Jebali via EC-Support wrote:
+> Hi,
+> 
+> we tested this using V2.9.2.40 on the AM33xx board using our own EcMasterDemoDc and we did not see any problem. We removed the cable between the Ref clock and the first DC Slave and the Master stayed in OP and did not report any synchronization problems.
+> My log file is in the attachment.
+> 
+> Best Regards
+> Haithem Jebali
+> __________________________________________________________________________________________
+> Haithem Jebali
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> On Monday, August 7, 2023 at 6:46:23 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question About EC-Master(PFU)
+>>
+>> Please check the attachments and answer the questions.
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+
+### ARTICLE03_HEADER
+Id=32831
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.08.2023 09:07:43 +00:00
+UpdatedAt=10.08.2023 09:07:45 +00:00
+
+### ARTICLE03_SUBJECT
+Question About EC-Master(PFU)
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>1) The print with the "line break" and "line break fixed" before INIT is faulty.</div><div>The real line break occurs after going to OP and the DCM snychronization: See last 4 lines of the log</div><div>
+<div>ERROR: Redundancy Line break between slave 1 and 2</div>
+<div>Bus scan successful - 3 slaves found</div>
+<div>TscGet100kHzFrequency() Tsc not calibrated</div>
+<div>297954 : Topology Change Performed No Error (0x0)</div>
+<div><br></div>
+<div>2) I ran the test for approximately 15 minutes (900 seconds)</div>
+<div><br></div>
+<div>Best Regards</div>
+<div>Haithem Jebali</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, August 10, 2023 at 2:11:55 AM, Takuya Fujikawa wrote:<br><br><div>Dear Haithem san</div>
+<div><br></div>
+<div>1. In the logs, the transition from a disconnected cable state to an Operational (OP) state is observed,</div>
+<div>    which appears to be different from the expected operation.</div>
+<div>    Even if the EtherCAT state was transitioned to OP and</div>
+<div>    the Distributed Clock Management (DCM) synchronization was completed before disconnecting the cable,</div>
+<div>    would the result have been the same?</div>
+<div><br></div>
+<div>2. After disconnecting the cable, could you please maintain the state for approximately</div>
+<div>    60 seconds to verify the stability of DCM synchronization? Would it be acceptable</div>
+<div>    to extend the duration of maintaining the OP state to more than 60 seconds for testing purposes?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2023/08/08 0:49, Haithem Jebali via EC-Support wrote:</div>
+<div>&gt; Hi,</div>
+<div>&gt;</div>
+<div>&gt; we tested this using V2.9.2.40 on the AM33xx board using our own EcMasterDemoDc and we did not see any problem. We removed the cable between the Ref clock and the first DC Slave and the Master stayed in OP and did not report any synchronization problems.</div>
+<div>&gt; My log file is in the attachment.</div>
+<div>&gt;</div>
+<div>&gt; Best Regards</div>
+<div>&gt; Haithem Jebali</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Haithem Jebali</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Monday, August 7, 2023 at 6:46:23 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question About EC-Master(PFU)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Please check the attachments and answer the questions.</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

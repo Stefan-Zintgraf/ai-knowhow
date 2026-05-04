@@ -1,0 +1,115 @@
+### HEADER
+Id=10355
+Link=http://at-zammad/#ticket/zoom/10355
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=Hyundai Motor, Service Robot (ID=961, Number=961)
+Number=7010355
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=07.04.2025 08:56:30 +00:00
+UpdatedAt=11.04.2025 06:13:49 +00:00
+CloseAt=11.04.2025 06:13:49 +00:00
+ArticlesCount=2
+
+### TITLE
+Regarding to EtherCAT control command of frame [ thread::NtoVdLPdNxmh3HHHfrccIS0:: ]
+
+### ARTICLE00_HEADER
+Id=59390
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.04.2025 08:56:30 +00:00
+UpdatedAt=07.04.2025 08:56:35 +00:00
+
+### ARTICLE00_SUBJECT
+Regarding to EtherCAT control command of frame [ thread::NtoVdLPdNxmh3HHHfrccIS0:: ]
+
+### ARTICLE00_BODY
+<p>Hi.</p><p><br></p><p>The customer is Hyundai Motors.</p><p><br></p><p>when analyzing EtherCAT data frame while running acontis example source, it appears that Link, CRC error are checked periodically(20msec) as below.</p><p><br></p><p>Is there an API that can enable and disable it or adjustable the cycle ?</p><p><br></p><p>Please advise.</p><p><br></p><p><br></p><p><br></p><br><br><p>감사합니다.</p><p><br></p><p>Thank you</p><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p><img src="/api/v1/ticket_attachment/10355/59390/247877?view=inline" title="" alt="" style="max-width:100%;"></p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sund</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">u</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">khan@prestosolution.co.kr</a></span></u></i></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table><p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+
+### ARTICLE01_HEADER
+Id=59392
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.04.2025 09:04:23 +00:00
+UpdatedAt=07.04.2025 09:04:24 +00:00
+
+### ARTICLE01_SUBJECT
+Regarding to EtherCAT control command of frame [ thread::NtoVdLPdNxmh3HHHfrccIS0:: ]
+
+### ARTICLE01_BODY
+Hi Hans,<div><br></div><div>yes they can use <span>EC_IOCTL_SET_SLVSTAT_PERIOD</span>
+</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=ec_ioctl_set_slvstat_period#emiocontrol-ec-ioctl-set-slvstat-period" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=ec_ioctl_set_slvstat_period#emiocontrol-ec-ioctl-set-slvstat-period" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=ec_ioctl_set_slvstat_period#emiocontrol-ec-ioctl-set-slvstat-period</a></div></div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, April 7, 2025 at 10:56:30 AM, DukHan Sun wrote:<br><br><p>Hi.</p>
+<p><br></p>
+<p>The customer is Hyundai Motors.</p>
+<p><br></p>
+<p>when analyzing EtherCAT data frame while running acontis example source, it appears that Link, CRC error are checked periodically(20msec) as below.</p>
+<p><br></p>
+<p>Is there an API that can enable and disable it or adjustable the cycle ?</p>
+<p><br></p>
+<p>Please advise.</p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<br><br><p>감사합니다.</p>
+<p><br></p>
+<p>Thank you</p>
+<p><br></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p><img src="/api/v1/ticket_attachment/10355/59392/247883?view=inline" title="" alt="" style="max-width:100%;max-width:100%;"></p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sund</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">u</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">khan@prestosolution.co.kr</a></span></u></i></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

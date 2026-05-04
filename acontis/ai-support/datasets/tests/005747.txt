@@ -1,0 +1,204 @@
+### HEADER
+Id=5747
+Link=http://at-zammad/#ticket/zoom/5747
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=705747
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=13.06.2023 21:45:52 +00:00
+UpdatedAt=15.06.2023 09:02:22 +00:00
+CloseAt=15.06.2023 09:02:22 +00:00
+ArticlesCount=3
+
+### TITLE
+PlugFest procedure for EC-Engineer
+
+### ARTICLE00_HEADER
+Id=30688
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.06.2023 21:45:52 +00:00
+UpdatedAt=13.06.2023 21:45:53 +00:00
+
+### ARTICLE00_SUBJECT
+PlugFest procedure for EC-Engineer
+
+### ARTICLE00_BODY
+<div>
+<p>Do you guys have a PlugFest procedure that you use with EC-Engineer? We are creating our own, but it would be useful to see what you might have. I wish that Beckhoff at least had a documented procedure for TwinCAT. All that we have to go on are the cryptic little “ETG 7100 Annex A Master-Slave Test List” document, which does not give enough information in many cases.</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Computer Systems, Inc.<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank">+1-360-254-8688</a><span style="color:#2a2a2a;"><br> Direct: </span><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank">+1-360-702-0150</a><br>
+</span><a href="mailto:quintont@deltamotion.com">quintont@deltamotion.com</a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=30717
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.06.2023 11:24:30 +00:00
+UpdatedAt=14.06.2023 11:24:35 +00:00
+
+### ARTICLE01_SUBJECT
+PlugFest procedure for EC-Engineer
+
+### ARTICLE01_BODY
+Hi Quinton,<div><br></div><div>we do not have a fixed procedure here. But the following steps are important:</div><div><br></div><div>We try to import the ESI to check if the ESI correct.</div><div>We check if everything can be configured, and switch to diagnosis mode. Looking for OD, process data and so on.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, June 13, 2023 at 11:45:52 PM, Quinton Tormanen wrote:<br><br><div>
+<p>Do you guys have a PlugFest procedure that you use with EC-Engineer? We are creating our own, but it would be useful to see what you might have. I wish that Beckhoff at least had a documented procedure for TwinCAT. All that we have to go on are the cryptic little “ETG 7100 Annex A Master-Slave Test List” document, which does not give enough information in many cases.</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Computer Systems, Inc.<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank">+1-360-254-8688</a><span style="color:#2a2a2a;"><br> Direct: </span><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank">+1-360-702-0150</a><br>
+</span><a href="mailto:quintont@deltamotion.com">quintont@deltamotion.com</a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=30739
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.06.2023 17:19:49 +00:00
+UpdatedAt=14.06.2023 17:19:49 +00:00
+
+### ARTICLE02_SUBJECT
+RE: PlugFest procedure for EC-Engineer [Ticket#705747]
+
+### ARTICLE02_BODY
+<div>
+<p>Thank you, Kai.</p>
+<p> </p>
+<p>It seems like the Annex A Master-Slave Test List focuses on all the <i>unimportant</i> stuff! The stuff you mention is what our customers will actually use!</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p>--Quinton</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Wednesday, June 14, 2023 4:25 AM<br>
+<b>To:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: PlugFest procedure for EC-Engineer [Ticket#705747]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Quinton,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>we do not have a fixed procedure here. But the following steps are important:</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>We try to import the ESI to check if the ESI correct.</p>
+</div>
+<div>
+<p>We check if everything can be configured, and switch to diagnosis mode. Looking for OD, process data and so on.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best regards,</p>
+</div>
+<div>
+<p>Kai</p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Kai Feifel</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Tuesday, June 13, 2023 at 11:45:52 PM, Quinton Tormanen wrote:</p>
+<div>
+<p>Do you guys have a PlugFest procedure that you use with EC-Engineer? We are creating our own, but it would be useful to see what you might have. I wish that Beckhoff at least had a documented procedure for TwinCAT. All that we have to go on are the cryptic little “ETG 7100 Annex A Master-Slave Test List” document, which does not give enough information in many cases.</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><br>
+<i>Principal Software Engineer</i><br> Delta Computer Systems, Inc.<br>
+<br>
+<span lang="FR-CA" style="color:#2a2a2a;">Main: </span><a href="http://tel:+1-360-254-8688" title="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" target="_blank"><span lang="FR-CA">+1-360-254-8688</span></a><span lang="FR-CA" style="color:#2a2a2a;"><br> Direct: </span><a href="http://tel:+1-360-702-0150" title="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" target="_blank"><span lang="FR-CA">+1-360-702-0150</span></a><span lang="FR-CA"><br>
+</span><a href="mailto:quintont@deltamotion.com">quintont@deltamotion.com</a></p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

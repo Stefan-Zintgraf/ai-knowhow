@@ -1,0 +1,188 @@
+### HEADER
+Id=11144
+Link=http://at-zammad/#ticket/zoom/11144
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies GmbH (ID=399, Number=1000, Country=DE)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=7011144
+Owner=t.hudson@acontis.com (ID=1075, FirstName=Troy, LastName=Hudson)
+Customer=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+CreatedBy=t.hudson@acontis.com (ID=1075, FirstName=Troy, LastName=Hudson)
+Type=
+TimeUnit=
+CreatedAt=01.08.2025 07:27:49 +00:00
+UpdatedAt=24.10.2025 09:48:26 +00:00
+CloseAt=24.10.2025 09:48:26 +00:00
+ArticlesCount=5
+
+### TITLE
+Fwd: Acontis EtherCAT software evaluation request from Voyis
+
+### ARTICLE00_HEADER
+Id=63964
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.08.2025 07:27:49 +00:00
+UpdatedAt=01.08.2025 07:27:49 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Acontis EtherCAT software evaluation request from Voyis
+
+### ARTICLE00_BODY
+Hi Cyril,<div> </div><div>I have another board support question for you.</div><div> </div><div>Are you familiar with the Nvidia Jetson Xavier? I know we have announced support for the Orin Nano, but I haven’t seen anything about the Xavier.<br><div> </div>
+<div>Thanks,</div>
+<div>Troy<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>Arun Mistry &lt;arun@voyis.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Re: Acontis EtherCAT software evaluation request from Voyis</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>July 31, 2025 at 1:12:27 PM MDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Troy Hudson &lt;t.hudson@acontis.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Cc: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt;, Yunus Tatar &lt;yunus@voyis.com&gt;<br></span>
+</div>
+<br><div>
+<div dir="ltr">
+<div dir="ltr">
+<div dir="ltr">Hi Troy,<div> </div>
+<div>Thanks for reaching out! Our project involves a laser scanner mounted on a motor for high-precision underwater scanning. An important requirement is to get the motor's position with minimal latency, particularly while it is spinning during a scan. Our previous communication protocol, RS-485, had a round-trip time of approximately 9ms, which was too high. We were then told to explore EtherCAT instead.<br><br>Our setup is as follows:<br><ul>
+<li>Master Controller: NVIDIA Jetson Xavier running Ubuntu 18.04</li>
+<li>EtherCAT Slave: Oriental Motor AZD-KRED EtherCAT driver (we have an ESI file)</li>
+<li>Language: C/C++</li>
+</ul>
+</div>
+<div>As a part of our initial investigation into EtherCAT Masters, we investigated SOEM and IgH EtherCAT Master. We are now investigating commercial solutions like acontis EC-Master on Linux. Our requirements are mostly around querying the motor position, moving to specific positions, and getting positions while spinning.<br><br>We were hoping to request the following:<br><ul>
+<li>An evaluation/demo of acontis' products, whatever would work best for our Linux-based platforms</li>
+<li>Information regarding costs associated with using acontis, such as licensing, and anything else relevant</li>
+</ul>
+</div>
+<div>I hope this helps, and I look forward to hearing back from you!</div>
+<div> </div>
+<div>Regards,<br>Arun Mistry</div>
+<div>
+<br><div dir="ltr"><div dir="ltr"><table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;width:514px;"><tbody><tr><td valign="top" style="width:385.5pt;border-top:none;border-right:none;border-bottom:none;border-left:1.5pt solid rgb(255,180,3);padding:5pt;">
+<p><b><span lang="EN">Arun Mistry</span></b><b><span lang="EN"><br></span></b><span lang="EN" style="color:rgb(153,153,153);">Embedded Developer<br>+1 (519) 489-0005 |</span><span lang="EN"><a href="http://www.voyis.com/" rel="nofollow noreferrer noopener" title="http://www.voyis.com/" target="_blank"><span style="color:rgb(255,180,3);"> </span></a><a href="http://www.voyis.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:rgb(255,180,3);">www.voyis.com</span></a></span><span lang="EN" style="color:rgb(153,153,153);"><br></span><span lang="EN" style="color:rgb(153,153,153);">120 Randall Dr. Unit E, Waterloo, Ontario, Canada, N2V 1C6</span><span lang="EN" style="color:rgb(153,153,153);"></span></p>
+<p><span lang="EN" style="color:rgb(153,153,153);"><img alt="image.png" src="/api/v1/ticket_attachment/11144/63964/265116?view=inline" style="max-width:100%;max-height:29px;"></span><span lang="EN" style="color:rgb(153,153,153);"><br>Illuminate the Unknown</span></p>
+</td></tr></tbody></table></div></div>
+</div>
+<div> </div>
+</div>
+<br><div>
+<div dir="ltr">On Thu, Jul 31, 2025 at 2:32 PM Troy Hudson &lt;<a href="mailto:t.hudson@acontis.com">t.hudson@acontis.com</a>&gt; wrote:<br>
+</div>
+<blockquote><div>Hi Arun,<div> </div>
+<div>Thank you for contacting acontis and for your interest in our EtherCAT software products.</div>
+<div> </div>
+<div>To help me provide the best recommendations, could you share a few details about your project and what you’re looking to accomplish?</div>
+<div> </div>
+<div>If you’d prefer a quick web meeting to discuss, feel free to send over a couple of times that work for you. I can follow up with a meeting invite.</div>
+<div> </div>
+<div>I look forward to learning more and supporting your project.</div>
+<div> </div>
+<div>Warm regards,</div>
+<div>Troy Hudson</div>
+<div>acontis technologies</div>
+<div>
+<div>
+<br><blockquote type="cite">
+<div>On Jul 31, 2025, at 11:22 AM, acontis technologies GmbH &lt;<a href="mailto:Sales@acontis.com">Sales@acontis.com</a>&gt; wrote:</div>
+<br><div><div>
+<p>Dear Mr./Ms. Mistry,</p>
+<p>thank you for your registration.<br>Soon, we will provide you with the requested software.</p>
+<div> </div>
+<p>Title:<br>First Name: Arun<br>Last Name: Mistry<br>Company: Voyis<br>Position: Engineer<br>Address: 120 Randall Dr<br>Zip/Postal Code: N2V 1C6<br>City: Waterloo<br>Country: Canada<br>State: <br>E-Mail: <a href="mailto:arun@voyis.com">arun@voyis.com</a><br>Phone: 1111111111<br>Any Questions?: <span><br>Newsletter? <br></span>What are you interested in?</p>
+<ul>
+<ul>
+<li>EtherCAT® Master / MainDevice Controller Development</li>
+<li>EtherCAT® Diagnosis Tools and Monitoring Software</li>
+<li>
+</li>
+<li>
+</li>
+<li>
+</li>
+</ul>
+</ul>
+<div> </div>
+<p><img alt="acontislogo.png" src="/api/v1/ticket_attachment/11144/63964/265115?view=inline" style="max-width:100%;"></p>
+<p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img alt="linkedIn_small.png" src="/api/v1/ticket_attachment/11144/63964/265114?view=inline" style="max-width:100%;"></a></span></p>
+</div></div>
+</blockquote>
+</div>
+<br>
+</div>
+</div></blockquote>
+</div>
+<div> </div>
+<div dir="ltr"></div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=63972
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=01.08.2025 08:59:41 +00:00
+UpdatedAt=01.08.2025 08:59:41 +00:00
+
+### ARTICLE01_BODY
+Hi Troy,<div><br></div><div>we don't have any experience with the Jetson Xavier platform. Today we still not support the onboard adapter of the other Jetson platforms  (w<span style="background-color: initial; color: rgb(88, 88, 86);">e are in touch with Nvidia to make some progress here), </span><span style="background-color: initial; color: rgb(88, 88, 86);">only sockraw and PCI adapter. I expect that it works in the same way on Jetson Xavier.</span>
+</div><div><br></div><div>Best Regards,</div><div>Cyril</div>
+
+### ARTICLE02_HEADER
+Id=64875
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.08.2025 00:02:10 +00:00
+UpdatedAt=24.08.2025 00:02:13 +00:00
+
+### ARTICLE02_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE02_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".<div><br></div><div>NOTE:</div><div>Please try to close this ticket, if everything is discussed with the customer and create a new issue in git lab if necessary.</div>
+
+### ARTICLE03_HEADER
+Id=65843
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.09.2025 00:04:00 +00:00
+UpdatedAt=14.09.2025 00:04:01 +00:00
+
+### ARTICLE03_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE03_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".<div><br></div><div>NOTE:</div><div>Please try to close this ticket, if everything is discussed with the customer and create a new issue in git lab if necessary.</div>
+
+### ARTICLE04_HEADER
+Id=66642
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.10.2025 00:04:20 +00:00
+UpdatedAt=05.10.2025 00:04:24 +00:00
+
+### ARTICLE04_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE04_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".<div><br></div><div>NOTE:</div><div>Please try to close this ticket, if everything is discussed with the customer and create a new issue in git lab if necessary.</div>

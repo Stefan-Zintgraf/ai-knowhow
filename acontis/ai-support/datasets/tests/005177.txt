@@ -1,0 +1,158 @@
+### HEADER
+Id=5177
+Link=http://at-zammad/#ticket/zoom/5177
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Relativity Space (ID=385, Number=40410, Country=US)
+Commission=Relativity Space, Internal Controllers (ID=457, Number=457)
+Number=705177
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=jmika@relativityspace.com (ID=1454, FirstName=Jeremy, LastName=Mika)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=17.03.2023 15:09:35 +00:00
+UpdatedAt=01.08.2023 15:27:08 +00:00
+CloseAt=01.08.2023 15:27:08 +00:00
+ArticlesCount=2
+
+### TITLE
+Fwd: Acontis and Xenomai 3.2 / 4
+
+### ARTICLE00_HEADER
+Id=27457
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.03.2023 15:09:35 +00:00
+UpdatedAt=17.03.2023 15:09:35 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Acontis and Xenomai 3.2 / 4
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>Just wanted to pass along these emails from our customer Relativity Space regarding Xenomai. Please let me know if there is anything I should mention to him.<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>Jeremy Mika &lt;jmika@relativityspace.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Re: Acontis and Xenomai 3.2 / 4</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>March 16, 2023 at 7:34:55 PM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<br><div>
+<div>Quick follow-up to previous email -- EcMasterDemo runs!</div>
+<div> </div>
+<div>
+<div style=" color: rgb(242, 242, 242);">root@robo-amundsen-2:/home/mika/acontis/Bin/Xenomai3/x64Cobalt# dmesg | grep -i xeno</div>
+<div style=" color: rgb(242, 242, 242);"> [ 0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.15.98-xen3.2+ root=UUID=ca92a225-ecc0-467f-beec-ddbc1a742986 ro quiet splash i915.enable_rc6=0 i915.enable_dc=0 noapic nosmap <span style=" color: rgb(180, 36, 25);">xeno</span>mai.allow_group=32000 vt.handoff=7 </div>
+<div style=" color: rgb(242, 242, 242);"> [ 0.031352] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.15.98-xen3.2+ root=UUID=ca92a225-ecc0-467f-beec-ddbc1a742986 ro quiet splash i915.enable_rc6=0 i915.enable_dc=0 noapic nosmap <span style=" color: rgb(180, 36, 25);">xeno</span>mai.allow_group=32000 vt.handoff=7 </div>
+<div style=" color: rgb(242, 242, 242);">
+<span>[ 0.245609] <b>[</b></span><b><span style=" color: rgb(180, 36, 25);">Xeno</span>mai] scheduling class idle registered.</b>
+</div>
+<div style=" color: rgb(242, 242, 242);">
+<span>[ 0.245613]<b> [</b></span><b><span style=" color: rgb(180, 36, 25);">Xeno</span>mai] scheduling class rt registered.</b>
+</div>
+<div style=" color: rgb(242, 242, 242);"> [ 0.245628] [<span style=" color: rgb(180, 36, 25);">Xeno</span>mai] disabling automatic C1E state promotion on Intel processor </div>
+<div style=" color: rgb(242, 242, 242);"> [ 0.245636] [<span style=" color: rgb(180, 36, 25);">Xeno</span>mai] SMI-enabled chipset found, but SMI workaround disabled </div>
+<div style=" color: rgb(242, 242, 242);"> (see <span style=" color: rgb(180, 36, 25);">xeno</span>mai.smi parameter). You might encounter </div>
+<div style=" color: rgb(242, 242, 242);">
+<span>[ 0.245667] <b>IRQ pipeline: high-priority </b></span><b><span style=" color: rgb(180, 36, 25);">Xeno</span>mai stage added.</b>
+</div>
+<div style=" color: rgb(242, 242, 242);">
+<span>[ 0.247536] <b>[</b></span><b><span style=" color: rgb(180, 36, 25);">Xeno</span>mai] Cobalt v3.2.2 [DEBUG][LTRACE]</b>
+</div>
+<div style=" color: rgb(242, 242, 242);"><br></div>
+<div style=" color: rgb(242, 242, 242);">root@robo-amundsen-2:/home/mika/acontis/Bin/Xenomai3/x64Cobalt# ./EcMasterDemo -ccat 1 1</div>
+<div style=" color: rgb(242, 242, 242);">0000000002: EcMasterDemo V3.1.2.10 (Unrestricted) for Xenomai3_x64Cobalt Copyright acontis technologies GmbH @ 2021</div>
+<div style=" color: rgb(242, 242, 242);">0000000002: Full command line: -ccat 1 1</div>
+<div style=" color: rgb(242, 242, 242);">0000000002: EC-Master V3.1.2.10 (Unrestricted) for Xenomai3_x64Cobalt Copyright acontis technologies GmbH @ 2021</div>
+<div style=" color: rgb(242, 242, 242);">0000000003: emllCCAT V3.1.2.10 (Unrestricted) Copyright acontis technologies GmbH @ 2021</div>
+<div style=" color: rgb(242, 242, 242);">0000000003: EtherCAT network adapter MAC: 00-01-05-57-3B-47</div>
+<div style=" color: rgb(242, 242, 242);">0000001057: Bus scan successful - 1 slaves found</div>
+<div style=" color: rgb(242, 242, 242);">0000001063: Master state changed from &lt;UNKNOWN&gt; to &lt;INIT&gt;</div>
+<div style=" color: rgb(242, 242, 242);">0000001086: Master state changed from &lt;INIT&gt; to &lt;PREOP&gt;</div>
+<div style=" color: rgb(242, 242, 242);">0000001086: No ENI file provided. EC-Master started with generated ENI file.</div>
+<div style=" color: rgb(242, 242, 242);">0000001086: EcMasterDemo will stop in 600s...</div>
+<div style=" color: rgb(242, 242, 242);">^C0000003801: Master state changed from &lt;PREOP&gt; to &lt;INIT&gt;</div>
+<div style=" color: rgb(242, 242, 242);">0000004271: EcMasterDemo stop.</div>
+<br>
+</div>
+<hr>
+<div dir="ltr">
+<b>From:</b> Jeremy Mika &lt;jmika@relativityspace.com&gt;<br><b>Sent:</b> Thursday, March 16, 2023 4:25 PM<br><b>To:</b> Jon Waters &lt;j.waters@acontis.com&gt;<br><b>Subject:</b> Acontis and Xenomai 3.2 / 4<div> </div>
+</div>
+<div dir="ltr">
+<div>Hi Jon,</div>
+<div> </div>
+<div>This is more of an FYI, but recently we discovered that the Xenomai project has been supporting a kind of in-between project that has the Xenomai 3 API built on top of the new "dovetail" / EVL kernel model.</div>
+<div> </div>
+<div>I have been able to build Xenomai from the <code>stable/3.2.x</code>​ branch using the <code>xenomai-dovetail</code>​ repo for kernel 5.15.98, and with a few changes, get <code>atemsys</code>​ to build for it.</div>
+<div> </div>
+<div>The biggest thing was that the kernel configuration option changed from CONFIG_XENO_COBALT to CONFIG_XENOMAI, and I still had some issues with the #ifdefs and resorted to moving the irq.h include outside, but I think I was fighting a different issue.</div>
+<div> </div>
+<div>I actually haven't <i>run</i> it yet, but have a pretty good feeling for its chances.</div>
+<div> </div>
+<div>Out of curiosity, has anyone looked into this at Acontis yet?</div>
+<div> </div>
+<div>Thanks,</div>
+<div>=Jeremy</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=27523
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.03.2023 15:13:07 +00:00
+UpdatedAt=20.03.2023 15:13:09 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: Acontis and Xenomai 3.2 / 4
+
+### ARTICLE01_BODY
+<div>Hi <span>Jeremy</span><span>,</span><br>
+</div><div>At Acontis nobody set up <span>Xenomai-Dovetail till now.</span>
+</div><div><span><br></span></div><div><span>The last year I got several support request, regarding compiler error due to irq with dovetail.</span></div><div><span><br></span></div><div>For all removing <span>INCLUDE_IRQ_TO_DESC was </span><span>sufficient</span>
+</div><div><span><br></span></div><div><div><a href="https://github.com/acontis/atemsys/blob/main/atemsys.c#L173" title="https://github.com/acontis/atemsys/blob/main/atemsys.c#L173" rel="nofollow noreferrer noopener" target="_blank">https://github.com/acontis/atemsys/blob/main/atemsys.c#L173</a></div></div><div>
+<div>#if !(defined HAVE_IRQ_TO_DESC) &amp;&amp; !(defined CONFIG_HAVE_DOVETAIL) &amp;&amp; !(defined CONFIG_IRQ_PIPELINE)</div>
+<div> #if (LINUX_VERSION_CODE &gt;= KERNEL_VERSION(3,4,1))</div>
+<div>  #define INCLUDE_IRQ_TO_DESC</div>
+<div> #endif</div>
+<div>#else</div>
+<div> #if HAVE_IRQ_TO_DESC</div>
+<div>  #define INCLUDE_IRQ_TO_DESC</div>
+<div> #endif</div>
+<div>#endif</div>
+</div><div><br></div><div>Can you send me your changes?</div><div>Is <span>CONFIG_HAVE_DOVETAIL defined at your system?</span>
+</div><div><span><br></span></div><div><span>Best Regards</span></div><div><span>Daniel</span></div><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>

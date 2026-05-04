@@ -1,0 +1,141 @@
+### HEADER
+Id=7682
+Link=http://at-zammad/#ticket/zoom/7682
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Agiliad Technologies Limited (ID=188, Number=40200, Country=IN)
+Commission=Omron Automation Americas, PPMAC (ID=562, Number=562)
+Number=707682
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=abhishek.gupta@agiliad.com (ID=1686, FirstName=Abhishek, LastName=Gupta)
+CreatedBy=abhishek.gupta@agiliad.com (ID=1686, FirstName=Abhishek, LastName=Gupta)
+Type=
+TimeUnit=
+CreatedAt=19.03.2024 13:54:49 +00:00
+UpdatedAt=09.09.2025 12:25:54 +00:00
+CloseAt=25.03.2024 07:04:06 +00:00
+ArticlesCount=2
+
+### TITLE
+Feature request for allow to add a module in between of other modules
+
+### ARTICLE00_HEADER
+Id=42424
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.03.2024 13:54:49 +00:00
+UpdatedAt=19.03.2024 13:54:49 +00:00
+
+### ARTICLE00_SUBJECT
+Feature request for allow to add a module in between of other modules
+
+### ARTICLE00_BODY
+<div dir="ltr">
+<div>
+<p>Hi Martin,</p>
+</div>
+<div> </div>
+<div>I hope you are doing well.</div>
+<div> </div>
+<div>I am writing this mail for a feature request related to the add new module in between modules. Currently we are using Ec-Engineer(Acontis) version 3.0.13 and It's not allowed to add a module in between.</div>
+<div> </div>
+<div>As you can see below screenshot, where already added the few modules and user want to insert new module at 2nd position, Then there is no option to directly insert. Firstly we need to remove the other below modules then reconfigure all the modules.</div>
+<div> </div>
+<div> </div>
+<div>
+<img src="/api/v1/ticket_attachment/7682/42424/175965?view=inline" alt="image.png" style="max-width:100%;width:473px;max-height:171px;">
+<br>
+</div>
+<div> </div>
+<div>So, I would like to request you for the above features. This will be helpful as an end user.</div>
+<div> </div>
+<div dir="ltr"><div dir="ltr"><div style="color:rgb(34,34,34);"><span>
+<p dir="ltr">Thanks and Regards,<span>
+<br></span>Abhishek Gupta<span>
+<br></span>Technical Lead</p>
+<p dir="ltr">✉️ <a href="mailto:abhishek.gupta@agiliad.com"><span style="color:rgb(17,85,204);">abhishek.gupta@agiliad.com</span></a> | � +91 9931944490</p>
+<p dir="ltr"></p>
+<hr>
+<p dir="ltr"><a href="http://www.agiliad.com" rel="nofollow noreferrer noopener" title="http://www.agiliad.com" target="_blank"><span style="color:rgb(17,85,204);"></span><span>
+<br></span></a>Agiliad Technologies Pvt. Ltd.<span>
+<br></span>Godrej Castlemaine, 1st floor, Next to Ruby Hall Clinic, 42 Sassoon Road, Pune 411001<span>
+<br></span><a href="http://www.agiliad.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:rgb(17,85,204);">www.agiliad.com</span></a> | � 020 6689 1222</p>
+<div><span>
+<br></span></div></span></div></div></div>
+</div><span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------- <br><u><b>Disclaimer:</b></u> This email message including any attachments is confidential, and may be privileged and proprietary to Agiliad. If you are not the intended recipient, please notify us immediately by replying to this message and destroy all copies of this message including any attachments. You are NOT authorized to read, print, retain, copy, disseminate, distribute, or use this message or any part thereof. Thank you. <br>------------------------------------------------------------------------------------------------------------------------
+
+### ARTICLE01_HEADER
+Id=42429
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.03.2024 14:50:54 +00:00
+UpdatedAt=19.03.2024 14:50:59 +00:00
+
+### ARTICLE01_SUBJECT
+Feature request for allow to add a module in between of other modules
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes, this is currently not supported.</div><div><br></div><div>If you want to insert a module, you can use our tree operations:</div><div><br></div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/7682/42429/175988?view=inline"><br>
+</div><div><br></div><div>... this will insert a module. Is this enough for you?</div><div><br></div><div>Best Regards,</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, March 19, 2024 at 2:54:49 PM, Abhishek Gupta wrote:<br><br><div dir="ltr">
+<div>
+<p>Hi Martin,</p>
+</div>
+<div> </div>
+<div>I hope you are doing well.</div>
+<div> </div>
+<div>I am writing this mail for a feature request related to the add new module in between modules. Currently we are using Ec-Engineer(Acontis) version 3.0.13 and It's not allowed to add a module in between.</div>
+<div> </div>
+<div>As you can see below screenshot, where already added the few modules and user want to insert new module at 2nd position, Then there is no option to directly insert. Firstly we need to remove the other below modules then reconfigure all the modules.</div>
+<div> </div>
+<div> </div>
+<div>
+<img src="/api/v1/ticket_attachment/7682/42429/175989?view=inline" alt="image.png" style="max-width:100%;max-width:100%;width:473px;max-height:171px;">
+<br>
+</div>
+<div> </div>
+<div>So, I would like to request you for the above features. This will be helpful as an end user.</div>
+<div> </div>
+<div dir="ltr"><div dir="ltr"><div style="color:rgb(34,34,34);"><span>
+<p dir="ltr">Thanks and Regards,<span>
+<br></span>Abhishek Gupta<span>
+<br></span>Technical Lead</p>
+<p dir="ltr">✉️ <a href="mailto:abhishek.gupta@agiliad.com"><span style="color:rgb(17,85,204);">abhishek.gupta@agiliad.com</span></a> | � +91 9931944490</p>
+<p dir="ltr"></p>
+<hr>
+<p dir="ltr"><a href="http://www.agiliad.com" rel="nofollow noreferrer noopener" title="http://www.agiliad.com" target="_blank"><span style="color:rgb(17,85,204);"></span><span>
+<br></span></a>Agiliad Technologies Pvt. Ltd.<span>
+<br></span>Godrej Castlemaine, 1st floor, Next to Ruby Hall Clinic, 42 Sassoon Road, Pune 411001<span>
+<br></span><a href="http://www.agiliad.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:rgb(17,85,204);">www.agiliad.com</span></a> | � 020 6689 1222</p>
+<div><span>
+<br></span></div></span></div></div></div>
+</div>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------- <br><u><b>Disclaimer:</b></u> This email message including any attachments is confidential, and may be privileged and proprietary to Agiliad. If you are not the intended recipient, please notify us immediately by replying to this message and destroy all copies of this message including any attachments. You are NOT authorized to read, print, retain, copy, disseminate, distribute, or use this message or any part thereof. Thank you. <br>------------------------------------------------------------------------------------------------------------------------<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

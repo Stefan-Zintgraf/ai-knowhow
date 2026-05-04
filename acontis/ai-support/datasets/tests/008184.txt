@@ -1,0 +1,196 @@
+### HEADER
+Id=8184
+Link=http://at-zammad/#ticket/zoom/8184
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=708184
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=27.05.2024 13:07:59 +00:00
+UpdatedAt=24.06.2024 06:42:27 +00:00
+CloseAt=24.06.2024 06:42:27 +00:00
+ArticlesCount=4
+
+### TITLE
+An issue "Station Address is duplicated"
+
+### ARTICLE00_HEADER
+Id=45204
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.05.2024 13:07:59 +00:00
+UpdatedAt=27.05.2024 13:08:02 +00:00
+
+### ARTICLE00_SUBJECT
+An issue "Station Address is duplicated"
+
+### ARTICLE00_BODY
+<p> </p>Hi Support Team,<div> </div><div>Mitsubishi found an issue which "Station Address is duplicated".</div><div> </div><div>1. Append Slave and set Station Address to "65535"</div><div>2. Next Append some Slaves next to the slave whose station address is 65535.</div><div>All Slaves added next to 65535 is set "0001" to Station Address.</div><div> </div><div>Please check it.</div><div> </div><div>Best regards,</div><div>Yuichi</div><div> <div> <div dir="auto"> <div dir="auto"> <div dir="auto"> <div dir="auto"> <br> </div>
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー <br> 株式会社ソフトサービス | Soft Service Co., Ltd. <br> 営業本部 関東営業部 | Kanto Sales Dept. <br> 井出 裕一 | Yuichi Ide <br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階 <br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan <br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058 <br> E-mail：yuichi.ide@soft-service.co.jp <br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<br> </div>
+
+### ARTICLE01_HEADER
+Id=45457
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.06.2024 12:49:51 +00:00
+UpdatedAt=03.06.2024 12:49:52 +00:00
+
+### ARTICLE01_SUBJECT
+An issue "Station Address is duplicated"
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes. You are right. It is a bug. I think we should use the next available address and do not set all to 1.</div><div>We will notify you as soon as we know in which version it is fixed.</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, May 27, 2024 at 3:07:59 PM, Yuichi Ide wrote:<br><br><p> </p>Hi Support Team,<div> </div>
+<div>Mitsubishi found an issue which "Station Address is duplicated".</div>
+<div> </div>
+<div>1. Append Slave and set Station Address to "65535"</div>
+<div>2. Next Append some Slaves next to the slave whose station address is 65535.</div>
+<div>All Slaves added next to 65535 is set "0001" to Station Address.</div>
+<div> </div>
+<div>Please check it.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> <div> <div dir="auto"> <div dir="auto"> <div dir="auto"> <div dir="auto"> <br> </div>
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー <br> 株式会社ソフトサービス | Soft Service Co., Ltd. <br> 営業本部 関東営業部 | Kanto Sales Dept. <br> 井出 裕一 | Yuichi Ide <br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階 <br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan <br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058 <br> E-mail：yuichi.ide@soft-service.co.jp <br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<br> </div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=45458
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=03.06.2024 12:51:47 +00:00
+UpdatedAt=03.06.2024 12:51:47 +00:00
+
+### ARTICLE02_BODY
+@Kai:<div>Ich gebe den wieder dir. Du hast ja letztens die Logik hier angepasst. Problem ist, das wir die Adresse einfach hochzählen, kommen dann in den Bereich von "Invisible", der ist ungültig und somit wird die Adresse nicht gesetzt und alle bleiben auf ihrem "default" value von 1:</div><div><br></div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/8184/45458/187293?view=inline"><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=45960
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.06.2024 13:21:44 +00:00
+UpdatedAt=12.06.2024 13:21:48 +00:00
+
+### ARTICLE03_SUBJECT
+An issue "Station Address is duplicated"
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>I fixed it and it will come with the next version (3.9.6) this month.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, June 3, 2024 at 2:49:51 PM, Martin Gaenzer wrote:<br><br>Hi,<div><br></div>
+<div>yes. You are right. It is a bug. I think we should use the next available address and do not set all to 1.</div>
+<div>We will notify you as soon as we know in which version it is fixed.</div>
+<div><br></div>
+<div>Best Regards,</div>
+<div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, May 27, 2024 at 3:07:59 PM, Yuichi Ide wrote:<br><br><p> </p>Hi Support Team,<div> </div>
+<div>Mitsubishi found an issue which "Station Address is duplicated".</div>
+<div> </div>
+<div>1. Append Slave and set Station Address to "65535"</div>
+<div>2. Next Append some Slaves next to the slave whose station address is 65535.</div>
+<div>All Slaves added next to 65535 is set "0001" to Station Address.</div>
+<div> </div>
+<div>Please check it.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> <div> <div dir="auto"> <div dir="auto"> <div dir="auto"> <div dir="auto"> <br> </div>
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー <br> 株式会社ソフトサービス | Soft Service Co., Ltd. <br> 営業本部 関東営業部 | Kanto Sales Dept. <br> 井出 裕一 | Yuichi Ide <br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階 <br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan <br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058 <br> E-mail：yuichi.ide@soft-service.co.jp <br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<br> </div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,145 @@
+### HEADER
+Id=3998
+Link=http://at-zammad/#ticket/zoom/3998
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=703998
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=28.09.2022 15:22:14 +00:00
+UpdatedAt=25.01.2023 16:27:24 +00:00
+CloseAt=25.01.2023 16:27:24 +00:00
+ArticlesCount=4
+
+### TITLE
+Add -dcmmode command line argument to documentation
+
+### ARTICLE00_HEADER
+Id=21164
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.09.2022 15:22:14 +00:00
+UpdatedAt=28.09.2022 15:22:14 +00:00
+
+### ARTICLE00_SUBJECT
+Add -dcmmode command line argument to documentation
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>I suggest we had the -dcmmode command line argument information to the Class A documentation for the EcMasterDemoDc example application.<br><div>
+<br>/Jon </div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=21428
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.10.2022 11:44:44 +00:00
+UpdatedAt=07.10.2022 11:44:44 +00:00
+
+### ARTICLE01_SUBJECT
+Add -dcmmode command line argument to documentation
+
+### ARTICLE01_BODY
+Hi Jon,<div>I will add EcMasterDemoDc usage to the ClassA manual. </div><div>Currently the EcMasterDemo command line parameters (<a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/gettingstarted.html#command-line-parameters" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/gettingstarted.html#command-line-parameters" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/gettingstarted.html#command-line-parameters</a><span>) are not automatically generated from source code. A</span><span> few changes to the source code of the demo are required to be able to parse it. </span><span>I'll try to implement it when I get a chance.</span><span> I created a ticket in git lab as a reminder.</span>
+</div><div><span><br></span></div><div><span><div>Best regards,</div>
+<div><span>Holger </span></div>
+<div><span><br></span></div></span></div><div>
+<div><blockquote type="cite">Am Mittwoch, 28. September 2022 um 17:22:14, schrieb Jon Waters:<br><br>Hi,<div> </div>
+<div>I suggest we had the -dcmmode command line argument information to the Class A documentation for the EcMasterDemoDc example application.<br><div>
+<br>/Jon </div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=25239
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.01.2023 07:29:38 +00:00
+UpdatedAt=25.01.2023 07:29:42 +00:00
+
+### ARTICLE02_SUBJECT
+Add -dcmmode command line argument to documentation
+
+### ARTICLE02_BODY
+<div>Hi Jon,</div>the EcMasterDemoDc parameters are now in the ClassA manual:<div>
+<div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/ecmasterdemodc.html#ecmasterdemodc--page-root" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/ecmasterdemodc.html#ecmasterdemodc--page-root" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/ecmasterdemodc.html#ecmasterdemodc--page-root</a></div>
+<div><br></div>
+<div><div>Best regards,</div></div>
+<div data-signature="true" data-signature-id="2"><div><span>Holger </span></div></div>
+<div><blockquote type="cite">Am Freitag, 7. Oktober 2022 um 13:44:44, schrieb Holger Oelhaf:<br><br>Hi Jon,<div>I will add EcMasterDemoDc usage to the ClassA manual. </div>
+<div>Currently the EcMasterDemo command line parameters (<a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/gettingstarted.html#command-line-parameters" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/gettingstarted.html#command-line-parameters" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/gettingstarted.html#command-line-parameters</a><span>) are not automatically generated from source code. A</span><span> few changes to the source code of the demo are required to be able to parse it. </span><span>I'll try to implement it when I get a chance.</span><span> I created a ticket in git lab as a reminder.</span>
+</div>
+<div><span><br></span></div>
+<div><span><div>Best regards,</div>
+<div><span>Holger </span></div>
+<div><span><br></span></div></span></div>
+<div>
+<div><blockquote type="cite">Am Mittwoch, 28. September 2022 um 17:22:14, schrieb Jon Waters:<br><br>Hi,<div> </div>
+<div>I suggest we had the -dcmmode command line argument information to the Class A documentation for the EcMasterDemoDc example application.<br><div>
+<br>/Jon </div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=25269
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.01.2023 16:20:53 +00:00
+UpdatedAt=25.01.2023 16:20:53 +00:00
+
+### ARTICLE03_SUBJECT
+Re: Add -dcmmode command line argument to documentation [Ticket#703998]
+
+### ARTICLE03_BODY
+Thanks for the update Holger, I think this will help our customers :)<br><div>
+<br>/Jon </div><div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Jan 25, 2023, at 2:29 AM, Holger Oelhaf via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>
+<div>Hi Jon,</div>the EcMasterDemoDc parameters are now in the ClassA manual:<div>
+<div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/ecmasterdemodc.html#ecmasterdemodc--page-root" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/ecmasterdemodc.html#ecmasterdemodc--page-root" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-a/ecmasterdemodc.html#ecmasterdemodc--page-root</a></div>
+<div> </div>
+<div>Best regards,</div>
+<div data-signature="true" data-signature-id="2">Holger</div>
+<div><blockquote type="cite">Am Freitag, 7. Oktober 2022 um 13:44:44, schrieb Holger Oelhaf:<br><br>Hi Jon,<div>I will add EcMasterDemoDc usage to the ClassA manual.</div>
+<div>Currently the EcMasterDemo command line parameters (<a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/gettingstarted.html#command-line-parameters" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/gettingstarted.html#command-line-parameters" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/gettingstarted.html#command-line-parameters</a>) are not automatically generated from source code. A few changes to the source code of the demo are required to be able to parse it. I'll try to implement it when I get a chance. I created a ticket in git lab as a reminder. </div>
+<div> </div>
+<div><span><div>Best regards,</div>
+<div>Holger</div>
+<div> </div></span></div>
+<div><blockquote type="cite">Am Mittwoch, 28. September 2022 um 17:22:14, schrieb Jon Waters:<br><br>Hi,<div> </div>
+<div>I suggest we had the -dcmmode command line argument information to the Class A documentation for the EcMasterDemoDc example application.<br><div>
+<br>/Jon </div>
+</div>
+</blockquote></div>
+</blockquote></div>
+</div>
+</div>
+</blockquote>
+</div>

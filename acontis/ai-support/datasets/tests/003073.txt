@@ -1,0 +1,223 @@
+### HEADER
+Id=3073
+Link=http://at-zammad/#ticket/zoom/3073
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=703073
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=20.05.2022 18:45:03 +00:00
+UpdatedAt=24.05.2022 16:02:20 +00:00
+CloseAt=24.05.2022 16:02:20 +00:00
+ArticlesCount=3
+
+### TITLE
+Evaluating LinkLayerRefClock jitter
+
+### ARTICLE00_HEADER
+Id=16199
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.05.2022 18:45:03 +00:00
+UpdatedAt=20.05.2022 18:45:05 +00:00
+
+### ARTICLE00_SUBJECT
+Evaluating LinkLayerRefClock jitter
+
+### ARTICLE00_BODY
+<div>
+<p>Cyril,</p>
+<p> </p>
+<p>We have EC-Master running in the LinkLayerRefClock DCM mode. My timestamp granularity is 16ns. I have captured 30 seconds of data on the SysTimeDiff from the first DC slave (an EL4002) in my simple network.</p>
+<p> </p>
+<p>Here is what that data looks like (horizontal times are in milliseconds):</p>
+<p><img style="max-width:100%;width:7.7291in;max-height:4.677in;width:742px;max-height:449px;" src="/api/v1/ticket_attachment/3073/16199/64207?view=inline"></p>
+<p> </p>
+<p>As you can see, most of the times are within +/-100ns or +/-200ns, but we do get occasional spikes in the range of 3000-4000ns. How will this amount of jitter affect the slaves? I know that for BusShift, you say that the RefClock will jitter by 1000ns, but the subsequent DC clocks will jitter by 20ns. Does this mean that a 3000ns jitter might cause a 60ns bump in the actual local clocks? Do you have a recommended way of measuring the effect on the slaves?</p>
+<p> </p>
+<p>I have attached the full data in an Excel spreadsheet. Is there other information you would like to see to help answer my question?</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com/" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=16294
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.05.2022 15:52:05 +00:00
+UpdatedAt=24.05.2022 15:52:07 +00:00
+
+### ARTICLE01_SUBJECT
+Evaluating LinkLayerRefClock jitter
+
+### ARTICLE01_BODY
+Hi Quinton,<div><br></div><div>I think that it would have no impact regarding the "data set". All the slaves see the same value and will react in the same way. There will be no jitter between the slaves.</div><div>The slaves behave with a strong inertia (they need about 16000 frames during the ARMW burst at startup). In your diagram, the jitter seems to happen for 500ms. I don't think that the impact is from interest.</div><div>For the application, it could make sense to check on the oscilloscope a long term measurement of the SYNC0 and the Start Of Frame signal.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, May 20, 2022, 8:45:03 PM, Quinton Tormanen wrote:<br><br><div>
+<p>Cyril,</p>
+<p> </p>
+<p>We have EC-Master running in the LinkLayerRefClock DCM mode. My timestamp granularity is 16ns. I have captured 30 seconds of data on the SysTimeDiff from the first DC slave (an EL4002) in my simple network.</p>
+<p> </p>
+<p>Here is what that data looks like (horizontal times are in milliseconds):</p>
+<p><img style="max-width:100%;max-width:100%;width:7.7291in;max-height:4.677in;width:742px;max-height:449px;" src="/api/v1/ticket_attachment/3073/16294/65316?view=inline"></p>
+<p> </p>
+<p>As you can see, most of the times are within +/-100ns or +/-200ns, but we do get occasional spikes in the range of 3000-4000ns. How will this amount of jitter affect the slaves? I know that for BusShift, you say that the RefClock will jitter by 1000ns, but the subsequent DC clocks will jitter by 20ns. Does this mean that a 3000ns jitter might cause a 60ns bump in the actual local clocks? Do you have a recommended way of measuring the effect on the slaves?</p>
+<p> </p>
+<p>I have attached the full data in an Excel spreadsheet. Is there other information you would like to see to help answer my question?</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com/" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=16297
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.05.2022 16:00:47 +00:00
+UpdatedAt=24.05.2022 16:00:47 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Evaluating LinkLayerRefClock jitter [Ticket#703073]
+
+### ARTICLE02_BODY
+<div>
+<p>Thank you so much for your insight! We have now done a measurement of pulses on a DC-capable Beckhoff discrete output and observed no impact from the SysTimeDiff jitter, as you predicted.</p>
+<p> </p>
+<p>Thanks again.</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p>--Quinton</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Tuesday, May 24, 2022 8:52 AM<br>
+<b>To:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt;<br>
+<b>Cc:</b> Paul Huumala &lt;Paul@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: Evaluating LinkLayerRefClock jitter [Ticket#703073]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Quinton,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>I think that it would have no impact regarding the "data set". All the slaves see the same value and will react in the same way. There will be no jitter between the slaves.</p>
+</div>
+<div>
+<p>The slaves behave with a strong inertia (they need about 16000 frames during the ARMW burst at startup). In your diagram, the jitter seems to happen for 500ms. I don't think that the impact is from interest.</p>
+</div>
+<div>
+<p>For the application, it could make sense to check on the oscilloscope a long term measurement of the SYNC0 and the Start Of Frame signal.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Cyril Eyssautier</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Friday, May 20, 2022, 8:45:03 PM, Quinton Tormanen wrote:</p>
+<div>
+<p>Cyril,</p>
+<p> </p>
+<p>We have EC-Master running in the LinkLayerRefClock DCM mode. My timestamp granularity is 16ns. I have captured 30 seconds of data on the SysTimeDiff from the first DC slave (an EL4002) in my simple network.</p>
+<p> </p>
+<p>Here is what that data looks like (horizontal times are in milliseconds):</p>
+<p><img border="0" style="max-width:100%;width:7.7291in;max-height:4.677in;width:742px;max-height:449px;" src="/api/v1/ticket_attachment/3073/16297/65344?view=inline"></p>
+<p> </p>
+<p>As you can see, most of the times are within +/-100ns or +/-200ns, but we do get occasional spikes in the range of 3000-4000ns. How will this amount of jitter affect the slaves? I know that for BusShift, you say that the RefClock will jitter by 1000ns, but the subsequent DC clocks will jitter by 20ns. Does this mean that a 3000ns jitter might cause a 60ns bump in the actual local clocks? Do you have a recommended way of measuring the effect on the slaves?</p>
+<p> </p>
+<p>I have attached the full data in an Excel spreadsheet. Is there other information you would like to see to help answer my question?</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com/" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

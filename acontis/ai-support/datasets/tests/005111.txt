@@ -1,0 +1,217 @@
+### HEADER
+Id=5111
+Link=http://at-zammad/#ticket/zoom/5111
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Astrodyne Transistor Devices (TDI) (ID=393, Number=41067, Country=US)
+Commission=Astrodyne Transistor Devices (TDI), Slave Testing (ID=465, Number=465)
+Number=705111
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=dankaralis@astrodynetdi.com (ID=1557, FirstName=Dan, LastName=Karalis)
+CreatedBy=dankaralis@astrodynetdi.com (ID=1557, FirstName=Dan, LastName=Karalis)
+Type=
+TimeUnit=
+CreatedAt=09.03.2023 14:09:41 +00:00
+UpdatedAt=31.03.2023 06:00:01 +00:00
+CloseAt=31.03.2023 06:00:01 +00:00
+ArticlesCount=3
+
+### TITLE
+RE: acontis Resolution with EC-STA (WinPcap/Npcap)
+
+### ARTICLE00_HEADER
+Id=27038
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.03.2023 14:09:41 +00:00
+UpdatedAt=09.03.2023 14:09:41 +00:00
+
+### ARTICLE00_SUBJECT
+RE: acontis Resolution with EC-STA (WinPcap/Npcap)
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Jon,</p>
+<p> </p>
+<p>We are on well on are way in modifying the Acontis v3.1.4.06 source code for our specific needs. A new developer is on board, Ryan Thant. He poses the following question? Can you comment?</p>
+<p> </p>
+<p><img style="max-width:100%;width:8.5104in;max-height:3.5937in;width:817px;max-height:345px;" src="/api/v1/ticket_attachment/5111/27038/113581?view=inline"></p>
+<p> </p>
+<div>
+<p>Regards,</p>
+<p>Dan Karalis (Principal Electrical Engineer)</p>
+<p>908-850-5088 ext.1317</p>
+<p><img style="max-width:100%;width:2.1979in;max-height:.4895in;width:211px;max-height:47px;" src="/api/v1/ticket_attachment/5111/27038/113582?view=inline"></p>
+</div>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Jon Waters &lt;<a href="mailto:j.waters@acontis.com">j.waters@acontis.com</a>&gt; <br>
+<b>Sent:</b> Tuesday, June 22, 2021 4:53 PM<br>
+<b>To:</b> Dan Karalis &lt;<a href="mailto:DanKaralis@astrodynetdi.com">DanKaralis@astrodynetdi.com</a>&gt;; Ron Weglinski &lt;<a href="mailto:RonWeglinski@astrodynetdi.com">RonWeglinski@astrodynetdi.com</a>&gt;; James O'Brien &lt;<a href="mailto:james.obrien@astrodynetdi.com">james.obrien@astrodynetdi.com</a>&gt;<br>
+<b>Subject:</b> acontis Resolution with EC-STA (WinPcap/Npcap)</p>
+</div>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b><span style="color:#9c6500;">CAUTION:</span></b> This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.</p>
+</div>
+</div>
+<div>
+<div>
+<p>Hi Everyone,</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Thanks for your time today and glad we got this all resolved for you. Just want to summarize the core issue and what we did to resolve.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>The acontis software (like many Windows networking software applications) relies on a Windows NDIS Filter Driver (see Wikipedia topic on this) to access the Ethernet controller hardware. Years ago, prior to Windows 10, WinPcap was the most popular NDIS Filter driver for this. Our software relied on WinPcap to operate. Some years ago, the WinPcap development was stopped (see WinPcap site about this notice from 2018).</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<div>
+<p>As Windows 10 came out, they introduced new NDIS specifications that WinPcap never updated to (because development stopped). A fork of WinPcap emerged called Npcap, which enabled backwards compatibility in Windows 10 for applications that used to rely on WinPcap.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>So the core issue was that WinPcap wasn't working on your recently updated Windows 10 machines, and the acontis software was trying to use WinPcap. The solution was to install Npcap (with the "WinPcap compatibility mode" checkbox checked) and now everything works as expected.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<p>Due to all this confusion around NDIS filter drivers, WinPcap, and Npcap, acontis now has their own NDIS filter driver that we maintain and support. We recommend using this, but you will need to first update your EC-STA application to a more recent version (yours is several years old). This will also require software development on your end to do these updates, so that may not be possible currently. If you do get some resources and time to do this, please consider changing from WinPcap/Npcap to the acontis NDIS filter driver.</p>
+</div>
+<p><br>
+<br> Jon Waters<br> General Manager<br>
+<br> acontis technologies Inc.<br> 945 Concord Street<br> Framingham, MA 01701<br> Phone: +1-508-809-7201</p>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=27040
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=09.03.2023 14:57:33 +00:00
+UpdatedAt=09.03.2023 14:57:33 +00:00
+
+### ARTICLE01_BODY
+I'm not sure what the question is here.
+
+### ARTICLE02_HEADER
+Id=27046
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.03.2023 17:26:59 +00:00
+UpdatedAt=09.03.2023 17:27:01 +00:00
+
+### ARTICLE02_SUBJECT
+acontis Resolution with EC-STA (WinPcap/Npcap)
+
+### ARTICLE02_BODY
+Hi Dan,<div><br></div><div>we renamed EcMasterDotNet into EcWrapperDotNet in V3.1.0.19.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, March 9, 2023 at 3:09:41 PM, Dan Karalis wrote:<br><br><div>
+<p>Hi Jon,</p>
+<p> </p>
+<p>We are on well on are way in modifying the Acontis v3.1.4.06 source code for our specific needs. A new developer is on board, Ryan Thant. He poses the following question? Can you comment?</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:8.5104in;max-height:3.5937in;width:817px;max-height:345px;" src="/api/v1/ticket_attachment/5111/27046/113634?view=inline"></p>
+<p> </p>
+<div>
+<p>Regards,</p>
+<p>Dan Karalis (Principal Electrical Engineer)</p>
+<p>908-850-5088 ext.1317</p>
+<p><img style="max-width:100%;max-width:100%;width:2.1979in;max-height:.4895in;width:211px;max-height:47px;" src="/api/v1/ticket_attachment/5111/27046/113635?view=inline"></p>
+</div>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Jon Waters &lt;<a href="mailto:j.waters@acontis.com">j.waters@acontis.com</a>&gt; <br>
+<b>Sent:</b> Tuesday, June 22, 2021 4:53 PM<br>
+<b>To:</b> Dan Karalis &lt;<a href="mailto:DanKaralis@astrodynetdi.com">DanKaralis@astrodynetdi.com</a>&gt;; Ron Weglinski &lt;<a href="mailto:RonWeglinski@astrodynetdi.com">RonWeglinski@astrodynetdi.com</a>&gt;; James O'Brien &lt;<a href="mailto:james.obrien@astrodynetdi.com">james.obrien@astrodynetdi.com</a>&gt;<br>
+<b>Subject:</b> acontis Resolution with EC-STA (WinPcap/Npcap)</p>
+</div>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b><span style="color:#9c6500;">CAUTION:</span></b> This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.</p>
+</div>
+</div>
+<div>
+<div>
+<p>Hi Everyone,</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Thanks for your time today and glad we got this all resolved for you. Just want to summarize the core issue and what we did to resolve.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>The acontis software (like many Windows networking software applications) relies on a Windows NDIS Filter Driver (see Wikipedia topic on this) to access the Ethernet controller hardware. Years ago, prior to Windows 10, WinPcap was the most popular NDIS Filter driver for this. Our software relied on WinPcap to operate. Some years ago, the WinPcap development was stopped (see WinPcap site about this notice from 2018).</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<div>
+<p>As Windows 10 came out, they introduced new NDIS specifications that WinPcap never updated to (because development stopped). A fork of WinPcap emerged called Npcap, which enabled backwards compatibility in Windows 10 for applications that used to rely on WinPcap.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>So the core issue was that WinPcap wasn't working on your recently updated Windows 10 machines, and the acontis software was trying to use WinPcap. The solution was to install Npcap (with the "WinPcap compatibility mode" checkbox checked) and now everything works as expected.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<p>Due to all this confusion around NDIS filter drivers, WinPcap, and Npcap, acontis now has their own NDIS filter driver that we maintain and support. We recommend using this, but you will need to first update your EC-STA application to a more recent version (yours is several years old). This will also require software development on your end to do these updates, so that may not be possible currently. If you do get some resources and time to do this, please consider changing from WinPcap/Npcap to the acontis NDIS filter driver.</p>
+</div>
+<p><br>
+<br> Jon Waters<br> General Manager<br>
+<br> acontis technologies Inc.<br> 945 Concord Street<br> Framingham, MA 01701<br> Phone: +1-508-809-7201</p>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

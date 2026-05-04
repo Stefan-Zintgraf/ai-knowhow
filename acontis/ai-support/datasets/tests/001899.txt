@@ -1,0 +1,200 @@
+### HEADER
+Id=1899
+Link=http://at-zammad/#ticket/zoom/1899
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=701899
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=25.11.2021 01:54:21 +00:00
+UpdatedAt=29.11.2021 07:04:08 +00:00
+CloseAt=29.11.2021 07:04:08 +00:00
+ArticlesCount=3
+
+### TITLE
+Missing references in TabPageResources.xaml
+
+### ARTICLE00_HEADER
+Id=10022
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.11.2021 01:54:21 +00:00
+UpdatedAt=25.11.2021 01:54:22 +00:00
+
+### ARTICLE00_SUBJECT
+Missing references in TabPageResources.xaml
+
+### ARTICLE00_BODY
+<div>
+<p>I am confused by the following highlighted references in TabPageResources.xaml:</p>
+<p> </p>
+<p>&lt;ResourceDictionary xmlns=<a href="http://schemas.microsoft.com/winfx/2006/xaml/presentation" rel="nofollow noreferrer noopener" target="_blank">http://schemas.microsoft.com/winfx/2006/xaml/presentation</a></p>
+<p> xmlns:x=<a href="http://schemas.microsoft.com/winfx/2006/xaml" rel="nofollow noreferrer noopener" target="_blank">http://schemas.microsoft.com/winfx/2006/xaml</a></p>
+<p>xmlns:vm="clr-namespace:EcViewModel;assembly=EcViewModel"</p>
+<p> xmlns:igEditors=<a href="http://infragistics.com/Editors" rel="nofollow noreferrer noopener" target="_blank">http://infragistics.com/Editors</a>&gt;</p>
+<p> </p>
+<p>&lt;Style TargetType="{x:Type igEditors:XamCheckEditor}" &gt;</p>
+<p>&lt;!-- AS 1/13/12 TFS69479 Added Padding --&gt;</p>
+<p>&lt;Setter Property="Padding" Value="0" /&gt;</p>
+<p>&lt;/Style&gt;</p>
+<p> </p>
+<p>&lt;vm:ImageConverter x:Key="imgConverter"/&gt;</p>
+<p>&lt;vm:EnumMatchToBooleanConverter x:Key="enumConverter"/&gt;</p>
+<p>&lt;vm:IntegerAsHexAndDecimalConverter x:Key="intAsHexAndDecimalConverter"/&gt;</p>
+<p> </p>
+<p>&lt;/ResourceDictionary&gt;</p>
+<p> </p>
+<p>That is, I don’t see any implementation of ImageConverter or IntegerAsHexAndDecimalConverter in EcViewModel. I ran into this when playing around with upgrading the EcView project to the new SDK project format. Perhaps it is more strict? Or perhaps this file was not being built?</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=10023
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.11.2021 01:57:56 +00:00
+UpdatedAt=25.11.2021 01:57:56 +00:00
+
+### ARTICLE01_SUBJECT
+Missing references in TabPageResources.xaml
+
+### ARTICLE01_BODY
+<div>
+<p>Hmm… it appears that the file TabPageResources.xaml is not included in the project, but exists in the distribution. Should this file be deleted from the distribution?</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p>--Quinton</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Quinton Tormanen <br>
+<b>Sent:</b> Wednesday, November 24, 2021 5:53 PM<br>
+<b>To:</b> 'ecsupport@acontis.com' &lt;ecsupport@acontis.com&gt;<br>
+<b>Subject:</b> Missing references in TabPageResources.xaml</p>
+</div>
+</div>
+<p> </p>
+<p>I am confused by the following highlighted references in TabPageResources.xaml:</p>
+<p> </p>
+<p>&lt;ResourceDictionary xmlns=<a href="http://schemas.microsoft.com/winfx/2006/xaml/presentation" rel="nofollow noreferrer noopener" target="_blank">http://schemas.microsoft.com/winfx/2006/xaml/presentation</a></p>
+<p> xmlns:x=<a href="http://schemas.microsoft.com/winfx/2006/xaml" rel="nofollow noreferrer noopener" target="_blank">http://schemas.microsoft.com/winfx/2006/xaml</a></p>
+<p>xmlns:vm="clr-namespace:EcViewModel;assembly=EcViewModel"</p>
+<p> xmlns:igEditors=<a href="http://infragistics.com/Editors" rel="nofollow noreferrer noopener" target="_blank">http://infragistics.com/Editors</a>&gt;</p>
+<p> </p>
+<p>&lt;Style TargetType="{x:Type igEditors:XamCheckEditor}" &gt;</p>
+<p>&lt;!-- AS 1/13/12 TFS69479 Added Padding --&gt;</p>
+<p>&lt;Setter Property="Padding" Value="0" /&gt;</p>
+<p>&lt;/Style&gt;</p>
+<p> </p>
+<p>&lt;vm:ImageConverter x:Key="imgConverter"/&gt;</p>
+<p>&lt;vm:EnumMatchToBooleanConverter x:Key="enumConverter"/&gt;</p>
+<p>&lt;vm:IntegerAsHexAndDecimalConverter x:Key="intAsHexAndDecimalConverter"/&gt;</p>
+<p> </p>
+<p>&lt;/ResourceDictionary&gt;</p>
+<p> </p>
+<p>That is, I don’t see any implementation of ImageConverter or IntegerAsHexAndDecimalConverter in EcViewModel. I ran into this when playing around with upgrading the EcView project to the new SDK project format. Perhaps it is more strict? Or perhaps this file was not being built?</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+
+### ARTICLE02_HEADER
+Id=10049
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.11.2021 11:48:23 +00:00
+UpdatedAt=25.11.2021 11:48:25 +00:00
+
+### ARTICLE02_SUBJECT
+Missing references in TabPageResources.xaml
+
+### ARTICLE02_BODY
+Hi,<div><br></div><div>yes, you're right. We will remove it.</div><div><br></div><div>Best Regards,</div><div>Martin</div><div><br></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Martin Gaenzer </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, November 25, 2021, 2:57:56 AM, Quinton Tormanen wrote:<br><br><div>
+<p>Hmm… it appears that the file TabPageResources.xaml is not included in the project, but exists in the distribution. Should this file be deleted from the distribution?</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p>--Quinton</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Quinton Tormanen <br>
+<b>Sent:</b> Wednesday, November 24, 2021 5:53 PM<br>
+<b>To:</b> 'ecsupport@acontis.com' &lt;ecsupport@acontis.com&gt;<br>
+<b>Subject:</b> Missing references in TabPageResources.xaml</p>
+</div>
+</div>
+<p> </p>
+<p>I am confused by the following highlighted references in TabPageResources.xaml:</p>
+<p> </p>
+<p>&lt;ResourceDictionary xmlns=<a href="http://schemas.microsoft.com/winfx/2006/xaml/presentation" rel="nofollow noreferrer noopener" target="_blank">http://schemas.microsoft.com/winfx/2006/xaml/presentation</a></p>
+<p> xmlns:x=<a href="http://schemas.microsoft.com/winfx/2006/xaml" rel="nofollow noreferrer noopener" target="_blank">http://schemas.microsoft.com/winfx/2006/xaml</a></p>
+<p>xmlns:vm="clr-namespace:EcViewModel;assembly=EcViewModel"</p>
+<p> xmlns:igEditors=<a href="http://infragistics.com/Editors" rel="nofollow noreferrer noopener" target="_blank">http://infragistics.com/Editors</a>&gt;</p>
+<p> </p>
+<p>&lt;Style TargetType="{x:Type igEditors:XamCheckEditor}" &gt;</p>
+<p>&lt;!-- AS 1/13/12 TFS69479 Added Padding --&gt;</p>
+<p>&lt;Setter Property="Padding" Value="0" /&gt;</p>
+<p>&lt;/Style&gt;</p>
+<p> </p>
+<p>&lt;vm:ImageConverter x:Key="imgConverter"/&gt;</p>
+<p>&lt;vm:EnumMatchToBooleanConverter x:Key="enumConverter"/&gt;</p>
+<p>&lt;vm:IntegerAsHexAndDecimalConverter x:Key="intAsHexAndDecimalConverter"/&gt;</p>
+<p> </p>
+<p>&lt;/ResourceDictionary&gt;</p>
+<p> </p>
+<p>That is, I don’t see any implementation of ImageConverter or IntegerAsHexAndDecimalConverter in EcViewModel. I ran into this when playing around with upgrading the EcView project to the new SDK project format. Perhaps it is more strict? Or perhaps this file was not being built?</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

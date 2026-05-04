@@ -1,0 +1,186 @@
+### HEADER
+Id=5979
+Link=http://at-zammad/#ticket/zoom/5979
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OST (ID=712, Number=0, Country=CH)
+Commission=OST, Mähroboter (ID=798, Number=798)
+Number=705979
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=urs.graf@ost.ch (ID=2075, FirstName=Urs, LastName=Graf)
+CreatedBy=urs.graf@ost.ch (ID=2075, FirstName=Urs, LastName=Graf)
+Type=
+TimeUnit=
+CreatedAt=17.07.2023 05:53:28 +00:00
+UpdatedAt=07.11.2023 07:23:57 +00:00
+CloseAt=28.07.2023 06:02:15 +00:00
+ArticlesCount=3
+
+### TITLE
+Runtime Lizenz
+
+### ARTICLE00_HEADER
+Id=31878
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.07.2023 05:53:28 +00:00
+UpdatedAt=17.07.2023 05:53:28 +00:00
+
+### ARTICLE00_SUBJECT
+Runtime Lizenz
+
+### ARTICLE00_BODY
+<p> </p><div> <p>Lieber Herr Widmann</p>
+<p> </p>
+<p>Wir hatten zuerst Schwierigkeiten, die korrekte MAC-Adresse für unsere Klemmen von Beckhoff zu bestimmen. Sie haben uns dann einen Schlüssel geschickt. Wenn wir unsere Software zusammen mit Ihrem Stack und diesem Schlüssel starten erhalten wir folgenden Output:</p>
+<p> </p>
+<p><span lang="EN-US">ECMain: Buffer size: (55, 55)</span></p>
+<p><span lang="EN-US">2023-06-12 15:07:09:864 I: EtherCAT initialized. Init motors..</span></p>
+<p><span lang="EN-US">ECMASTERLIB: CYCLE_TIME: 1</span></p>
+<p><span lang="EN-US">Full command line: -f "/etc/eni/cx2020-amea-3elmo.xml"-ccat 0 1 -dcmmode off -key A15B387E-81E40467-44F527B1</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">000006 : Run demo now with cycle time 1000 usec</span></p>
+<p><span lang="EN-US">000006 : Using AuxClock</span></p>
+<p><span lang="EN-US">000006 : nVerbose: 0</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">000006 : EC-Master V2.9.2.01 (Protected) for Linux_x64 Copyright acontis technologies GmbH @ 2017</span></p>
+<p><span lang="EN-US">000007 : OsGetLinkLayerRegFunc: try to load '/home/root/libemllCCAT.so'</span></p>
+<p><span lang="EN-US">000007 : OsGetLinkLayerRegFunc: dlopen returned error '/home/root/libemllCCAT.so: cannot open shared object file: No such file or directory'</span></p>
+<p><span lang="EN-US">000007 : OsGetLinkLayerRegFunc: try to load 'libemllCCAT.so'</span></p>
+<p><span lang="EN-US">000008 : PCI: device 0000:03:00.0 found</span></p>
+<p><span lang="EN-US">000008 : LicenseKey: A15B387E-81E40467-44F527B1</span></p>
+<p><span lang="EN-US">000008 : ACTIVATION SUCCESSFULL</span></p>
+<p><span lang="EN-US">001047 : prepare</span></p>
+<p><span lang="EN-US">^CsignalHandler function</span></p>
+<p><span lang="EN-US">wating for SWITCH_ON_DISABLED</span></p>
+<p><span lang="EN-US">callBackFct: channel closed, stopping</span></p>
+<p><span lang="EN-US">state: NOT_READY_TO_SWITCH_ON (0x0), status word: 0x0, sending: 0</span></p>
+<p><span lang="EN-US">terminate called after throwing an instance of 'Channel&lt;bool, 1ul&gt;::ClosedException'</span></p>
+<p><span lang="EN-US"> what(): channel closed</span></p>
+<p><span lang="EN-US">Aborted</span></p>
+<p><span lang="EN-US">root@cx2020:~# </span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p>Alles scheint in Ordnung zu sein. Trotzdem stoppt die Software nach genau einer Stunde.</p>
+<p> </p>
+<p>Wo könnte das Problem liegen?</p>
+<p> </p>
+<p>Mit freundlichen Grüssen</p>
+<p>Urs Graf</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=31885
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.07.2023 07:19:05 +00:00
+UpdatedAt=17.07.2023 07:19:06 +00:00
+
+### ARTICLE01_SUBJECT
+Runtime Lizenz
+
+### ARTICLE01_BODY
+Hallo Herr Graf,<div><br></div><div>Die Lizenzierung mit dem CCAT Treiber ist erst seit V3.0.3.05 implementiert. Ich würde Ihnen vorschlagen auf dem neusten Master V3.1.4.11 zu updaten. V2.9.2.01 ist schon 6 Jahren alt:</div><div><br></div><div>
+<div><a href="sftp://home155839490.1and1-data.host/Downloads/temp/cer/OST%20%28CH%29/EC-Master-ClassA-AddOn-V3.1.4.11-Linux-x86_64Bit-Eval.tar.gz" title="sftp://home155839490.1and1-data.host/Downloads/temp/cer/OST%20%28CH%29/EC-Master-ClassA-AddOn-V3.1.4.11-Linux-x86_64Bit-Eval.tar.gz">http://downloads.acontis.com/temp/cer/OST%20%28CH%29/EC-Master-ClassA-AddOn-V3.1.4.11-Linux-x86_64Bit-Eval.tar.gz</a></div>
+<div>
+<a href="sftp://home155839490.1and1-data.host/Downloads/temp/cer/OST%20%28CH%29/EC-Master-ClassA-AddOn-V3.1.4.11-Linux-x86_64Bit-Eval.tar.gz">http://downloads.acontis.com</a><a href="sftp://home155839490.1and1-data.host/Downloads/temp/cer/OST%20%28CH%29/EC-Master-V3.1.4.11-Linux-x86_64Bit-Eval.tar.gz" title="sftp://home155839490.1and1-data.host/Downloads/temp/cer/OST%20%28CH%29/EC-Master-V3.1.4.11-Linux-x86_64Bit-Eval.tar.gz">/temp/cer/OST%20%28CH%29/EC-Master-V3.1.4.11-Linux-x86_64Bit-Eval.tar.gz</a><br>
+</div>
+</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, July 17, 2023 at 7:53:28 AM, Urs Graf wrote:<br><br><p> </p>
+<div> <p>Lieber Herr Widmann</p>
+<p> </p>
+<p>Wir hatten zuerst Schwierigkeiten, die korrekte MAC-Adresse für unsere Klemmen von Beckhoff zu bestimmen. Sie haben uns dann einen Schlüssel geschickt. Wenn wir unsere Software zusammen mit Ihrem Stack und diesem Schlüssel starten erhalten wir folgenden Output:</p>
+<p> </p>
+<p><span lang="EN-US">ECMain: Buffer size: (55, 55)</span></p>
+<p><span lang="EN-US">2023-06-12 15:07:09:864 I: EtherCAT initialized. Init motors..</span></p>
+<p><span lang="EN-US">ECMASTERLIB: CYCLE_TIME: 1</span></p>
+<p><span lang="EN-US">Full command line: -f "/etc/eni/cx2020-amea-3elmo.xml"-ccat 0 1 -dcmmode off -key A15B387E-81E40467-44F527B1</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">000006 : Run demo now with cycle time 1000 usec</span></p>
+<p><span lang="EN-US">000006 : Using AuxClock</span></p>
+<p><span lang="EN-US">000006 : nVerbose: 0</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">000006 : EC-Master V2.9.2.01 (Protected) for Linux_x64 Copyright acontis technologies GmbH @ 2017</span></p>
+<p><span lang="EN-US">000007 : OsGetLinkLayerRegFunc: try to load '/home/root/libemllCCAT.so'</span></p>
+<p><span lang="EN-US">000007 : OsGetLinkLayerRegFunc: dlopen returned error '/home/root/libemllCCAT.so: cannot open shared object file: No such file or directory'</span></p>
+<p><span lang="EN-US">000007 : OsGetLinkLayerRegFunc: try to load 'libemllCCAT.so'</span></p>
+<p><span lang="EN-US">000008 : PCI: device 0000:03:00.0 found</span></p>
+<p><span lang="EN-US">000008 : LicenseKey: A15B387E-81E40467-44F527B1</span></p>
+<p><span lang="EN-US">000008 : ACTIVATION SUCCESSFULL</span></p>
+<p><span lang="EN-US">001047 : prepare</span></p>
+<p><span lang="EN-US">^CsignalHandler function</span></p>
+<p><span lang="EN-US">wating for SWITCH_ON_DISABLED</span></p>
+<p><span lang="EN-US">callBackFct: channel closed, stopping</span></p>
+<p><span lang="EN-US">state: NOT_READY_TO_SWITCH_ON (0x0), status word: 0x0, sending: 0</span></p>
+<p><span lang="EN-US">terminate called after throwing an instance of 'Channel&lt;bool, 1ul&gt;::ClosedException'</span></p>
+<p><span lang="EN-US"> what(): channel closed</span></p>
+<p><span lang="EN-US">Aborted</span></p>
+<p><span lang="EN-US">root@cx2020:~# </span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p>Alles scheint in Ordnung zu sein. Trotzdem stoppt die Software nach genau einer Stunde.</p>
+<p> </p>
+<p>Wo könnte das Problem liegen?</p>
+<p> </p>
+<p>Mit freundlichen Grüssen</p>
+<p>Urs Graf</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=31886
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=17.07.2023 07:19:26 +00:00
+UpdatedAt=17.07.2023 07:19:26 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Runtime Lizenz [Ticket#705979]
+
+### ARTICLE02_BODY
+Dear Sir or Madam,
+
+
+
+Thank you for your message. 
+I am out of the office with limited access to my emails. I will be back in the office on July 17th. Please contact our sales team at sales@acontis.com or +49 751 5 60 30 30.
+
+
+
+Best Regards,
+
+
+Christoph Widmann

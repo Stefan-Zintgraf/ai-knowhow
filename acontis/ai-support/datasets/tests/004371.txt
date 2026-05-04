@@ -1,0 +1,133 @@
+### HEADER
+Id=4371
+Link=http://at-zammad/#ticket/zoom/4371
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=American GFM (ID=329, Number=40269, Country=US)
+Commission=American GFM, EC-Engineer (ID=392, Number=392)
+Number=704371
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=ribs@agfm.com (ID=1353, FirstName=Paul, LastName=Ribniscky)
+CreatedBy=ribs@agfm.com (ID=1353, FirstName=Paul, LastName=Ribniscky)
+Type=
+TimeUnit=
+CreatedAt=21.11.2022 16:14:29 +00:00
+UpdatedAt=24.11.2022 07:10:11 +00:00
+CloseAt=24.11.2022 07:10:11 +00:00
+ArticlesCount=2
+
+### TITLE
+EC Engineering dongle issue
+
+### ARTICLE00_HEADER
+Id=23067
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.11.2022 16:14:29 +00:00
+UpdatedAt=21.11.2022 16:14:32 +00:00
+
+### ARTICLE00_SUBJECT
+EC Engineering dongle issue
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,</p>
+<p>This is the error message I get every time I try to launch ec-engineering.</p>
+<p> </p>
+<p><img style="max-width:100%;width:4.125in;max-height:1.8229in;width:396px;max-height:175px;" src="/api/v1/ticket_attachment/4371/23067/97193?view=inline" alt="Graphical user interface, text, application, email
+
+Description automatically generated"></p>
+<p> </p>
+<p>Last Time this happened I had to generate a License Request file and send to you guys.</p>
+<p>I have attached a new request .</p>
+<p> </p>
+<p>Do you know of any reason why this seems to keep happening. I was Using it earlier this morning with no problems then this message starting coming up while I had EC-ENGINEERING open in the background while doing something else.</p>
+<p> </p>
+<p>Thank you for any help you may be able to provide.</p>
+<p> </p>
+<p><b><span style="color:#1f497d;">Paul Ribniscky Jr.</span></b></p>
+<p><b><span style="color:#1f497d;">Electrical Engineer,</span></b><b><span style="color:#1f497d;"></span></b></p>
+<p><b><span style="color:#1f497d;">American GFM Corporation</span></b></p>
+<p><b><span style="color:#1f497d;">Phone: (757) 487-2442 Ext. 356</span></b></p>
+<p><b><span style="color:#1f497d;">Direct: (757) 673-8361</span></b></p>
+<p><b><span style="color:#1f497d;">Fax : (757) 487-4712</span></b></p>
+<p><b><span style="color:#1f497d;">Email: <u><a href="mailto:ribs@agfm.com">ribs@agfm.com</a></u></span></b></p>
+<p><b><span style="color:#1f497d;">Web: <u><a href="http://www.gfm-global.com/" rel="nofollow noreferrer noopener" target="_blank">www.gfm-global.com</a></u></span></b></p>
+<p><b><span style="color:#1f497d;"><img border="0" style="max-width:100%;width:1.625in;max-height:.7812in;width:156px;max-height:75px;" src="/api/v1/ticket_attachment/4371/23067/97192?view=inline"></span></b></p>
+<p><b><span style="color:#1f497d;"> “Shaping Future Innovations”</span></b></p>
+<div><hr></div>
+<p> </p>
+</div><br>
+<br>
+<u>Sent from American GFM Corporation, Virginia</u><br>The information contained in this message is confidential and may contain legally privileged or proprietary information. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, dissemination, or reproduction is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.
+
+### ARTICLE01_HEADER
+Id=23078
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.11.2022 17:33:00 +00:00
+UpdatedAt=21.11.2022 17:33:01 +00:00
+
+### ARTICLE01_SUBJECT
+EC Engineering dongle issue
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>attached you can find the update file for the license request. This should solve your problem.</div><div><br></div><div>As far as I know this comes from the anti debugger detection from WIBU. In that case the reset the firm access counter.</div><div>Do you use some kind of tools which could trigger this "anti debugger detection"? </div><div>If not, maybe the best thing would be if you directly concat WIBU support, maybe they can help you or give you at least more details.</div><div><br></div><div>Best Regards,</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, November 21, 2022 at 5:14:29 PM, Paul Ribniscky wrote:<br><br><div>
+<p>Hello,</p>
+<p>This is the error message I get every time I try to launch ec-engineering.</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:4.125in;max-height:1.8229in;width:396px;max-height:175px;" src="/api/v1/ticket_attachment/4371/23078/97280?view=inline" alt="Graphical user interface, text, application, email
+
+Description automatically generated"></p>
+<p> </p>
+<p>Last Time this happened I had to generate a License Request file and send to you guys.</p>
+<p>I have attached a new request .</p>
+<p> </p>
+<p>Do you know of any reason why this seems to keep happening. I was Using it earlier this morning with no problems then this message starting coming up while I had EC-ENGINEERING open in the background while doing something else.</p>
+<p> </p>
+<p>Thank you for any help you may be able to provide.</p>
+<p> </p>
+<p><b><span style="color:#1f497d;">Paul Ribniscky Jr.</span></b></p>
+<p><b><span style="color:#1f497d;">Electrical Engineer,</span></b><b><span style="color:#1f497d;"></span></b></p>
+<p><b><span style="color:#1f497d;">American GFM Corporation</span></b></p>
+<p><b><span style="color:#1f497d;">Phone: (757) 487-2442 Ext. 356</span></b></p>
+<p><b><span style="color:#1f497d;">Direct: (757) 673-8361</span></b></p>
+<p><b><span style="color:#1f497d;">Fax : (757) 487-4712</span></b></p>
+<p><b><span style="color:#1f497d;">Email: <u><a href="mailto:ribs@agfm.com">ribs@agfm.com</a></u></span></b></p>
+<p><b><span style="color:#1f497d;">Web: <u><a href="http://www.gfm-global.com/" rel="nofollow noreferrer noopener" target="_blank">www.gfm-global.com</a></u></span></b></p>
+<p><b><span style="color:#1f497d;"><img border="0" style="max-width:100%;max-width:100%;width:1.625in;max-height:.7812in;width:156px;max-height:75px;" src="/api/v1/ticket_attachment/4371/23078/97281?view=inline"></span></b></p>
+<p><b><span style="color:#1f497d;"> “Shaping Future Innovations”</span></b></p>
+<div><hr></div>
+<p> </p>
+</div>
+<br>
+<br>
+<u>Sent from American GFM Corporation, Virginia</u><br>The information contained in this message is confidential and may contain legally privileged or proprietary information. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, dissemination, or reproduction is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

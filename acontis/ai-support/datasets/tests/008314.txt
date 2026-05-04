@@ -1,0 +1,147 @@
+### HEADER
+Id=8314
+Link=http://at-zammad/#ticket/zoom/8314
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Toyota Motor Corporation, Partner Robot Dev. (ID=321, Number=321)
+Number=708314
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=19.06.2024 10:24:55 +00:00
+UpdatedAt=19.06.2024 11:22:42 +00:00
+CloseAt=19.06.2024 11:22:41 +00:00
+ArticlesCount=2
+
+### TITLE
+Please provide the later version software of EC-Master for TOYOTA (commission No. 41061)
+
+### ARTICLE00_HEADER
+Id=46196
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.06.2024 10:24:55 +00:00
+UpdatedAt=19.06.2024 10:25:00 +00:00
+
+### ARTICLE00_SUBJECT
+Please provide the later version software of EC-Master for TOYOTA (commission No. 41061)
+
+### ARTICLE00_BODY
+Hi Support Team, <div> </div><div>Please provide the latest version SDK of EC-Master for TOYOTA, commission No. is 41061.</div><div>If you have any questions, feel freely to contact me.</div><div> </div><div>Best regards,</div><div>Yuichi</div><div>
+<br>
+<div dir="ltr">
+<div>--</div>
+<div>～プロフェッショナル集団を目指すＳＳＶグループ～</div>
+<div>ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+<div>株式会社ソフトサービス | Soft Service Co., Ltd.</div>
+<div>営業本部 関東営業所 | Tokyo Sales Office</div>
+<div>井出 裕一 | Yuichi Ide</div>
+<div>
+<div>住所：〒101-0062 東京都千代田区神田駿河台4-4-1 PMO御茶ノ水7F</div>
+<div>7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062 JAPAN</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+</div>
+<div>ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=46201
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.06.2024 11:22:41 +00:00
+UpdatedAt=19.06.2024 11:22:42 +00:00
+
+### ARTICLE01_SUBJECT
+Please provide the later version software of EC-Master for TOYOTA (commission No. 41061)
+
+### ARTICLE01_BODY
+<div>Hi Yuichi,</div><div><br></div><div>
+<p>please find your new software version below and recognize <a href="https://public.acontis.com/manuals/EC-Master/3.2/EC-Master_V3.2-ReleaseNotes.pdf" title="https://public.acontis.com/manuals/EC-Master/3.2/EC-Master_V3.2-ReleaseNotes.pdf" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/EC-Master_V3.2-ReleaseNotes.pdf</a> for migration:</p>
+<p><br></p>
+<p><u>V3.1:</u></p>
+
+<p><a href="https://downloads.acontis.com/2024/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.1.5.03/EC-Master-ClassA-AddOn-V3.1.5.03-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.1.5.03/EC-Master-ClassA-AddOn-V3.1.5.03-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></p>
+
+<p><a href="https://downloads.acontis.com/2024/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.1.5.03/EC-Master-I8254x-V3.1.5.03-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.1.5.03/EC-Master-I8254x-V3.1.5.03-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></p>
+
+<p><a href="https://downloads.acontis.com/2024/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.1.5.03/EC-Master-RTL8169-V3.1.5.03-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.1.5.03/EC-Master-RTL8169-V3.1.5.03-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></p>
+
+<p><a href="https://downloads.acontis.com/2024/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.1.5.03/EC-Master-V3.1.5.03-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.1.5.03/EC-Master-V3.1.5.03-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></p>
+
+<p><br></p>
+<p><u>V3.2:</u></p>
+<p><a href="https://downloads.acontis.com/2024/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.2.1.05/EC-Master-ClassA-AddOn-V3.2.1.05-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.2.1.05/EC-Master-ClassA-AddOn-V3.2.1.05-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></p>
+<p><a href="https://downloads.acontis.com/2024/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.2.1.05/EC-Master-V3.2.1.05-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.2.1.05/EC-Master-V3.2.1.05-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></p>
+<p><a href="https://downloads.acontis.com/2024/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.2.1.05/EC-RtEth-IntelGbe-V3.2.1.05-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.2.1.05/EC-RtEth-IntelGbe-V3.2.1.05-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></p>
+<p><a href="https://downloads.acontis.com/2024/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.2.1.05/EC-RtEth-RTL8169-V3.2.1.05-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/T-U/Toyota_Motor_(41061)(JP)/EC-Master_Linux_x86_64Bit/3.2.1.05/EC-RtEth-RTL8169-V3.2.1.05-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></p>
+<p>
+
+
+
+
+
+
+
+
+
+</p>
+<p><br></p>
+<p>Password: ECM88250 </p>
+</div><div><br></div>Best regards<div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, June 19, 2024 at 12:24:55 PM, Yuichi Ide wrote:<br><br>Hi Support Team, <div> </div>
+<div>Please provide the latest version SDK of EC-Master for TOYOTA, commission No. is 41061.</div>
+<div>If you have any questions, feel freely to contact me.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div>
+<br>
+<div dir="ltr">
+<div>--</div>
+<div>～プロフェッショナル集団を目指すＳＳＶグループ～</div>
+<div>ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+<div>株式会社ソフトサービス | Soft Service Co., Ltd.</div>
+<div>営業本部 関東営業所 | Tokyo Sales Office</div>
+<div>井出 裕一 | Yuichi Ide</div>
+<div>
+<div>住所：〒101-0062 東京都千代田区神田駿河台4-4-1 PMO御茶ノ水7F</div>
+<div>7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062 JAPAN</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+</div>
+<div>ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

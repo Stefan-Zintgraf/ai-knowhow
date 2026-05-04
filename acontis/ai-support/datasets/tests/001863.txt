@@ -1,0 +1,160 @@
+### HEADER
+Id=1863
+Link=http://at-zammad/#ticket/zoom/1863
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ITK Engineering GmbH (ID=120, Number=54016, Country=DE)
+Commission=ITK, Asimov Express (ID=134, Number=134)
+Number=701863
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=michael.wenz@itk-engineering.de (ID=107, FirstName=Michael, LastName=Wenz)
+CreatedBy=michael.wenz@itk-engineering.de (ID=107, FirstName=Michael, LastName=Wenz)
+Type=
+TimeUnit=
+CreatedAt=19.11.2021 06:49:18 +00:00
+UpdatedAt=03.12.2021 07:00:27 +00:00
+CloseAt=03.12.2021 07:00:27 +00:00
+ArticlesCount=2
+
+### TITLE
+ApiLockByApp für EC-Monitor
+
+### ARTICLE00_HEADER
+Id=9848
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.11.2021 06:49:18 +00:00
+UpdatedAt=19.11.2021 06:49:22 +00:00
+
+### ARTICLE00_SUBJECT
+ApiLockByApp für EC-Monitor
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Herr Oelhaf,</p>
+<p> </p>
+<p>vor einiger Zeit hatten Sie bei EC-Master den Paramter EC_T_INIT_MASTER_PARMS::bApiLockByApp eingeführt.</p>
+<p> </p>
+<p>EC_T_BOOL <b>bApiLockByApp</b></p>
+<p>[in] EC_TRUE: Don’t lock pending API calls to increase performance</p>
+<p> </p>
+<p>Können Sie sagen, ob ein solcher Parameter für EC-Monitor auch sinnvoll wäre und wenn ja, können Sie ihn bitte ergänzen, z.B. EC_T_MONITOR_INIT_PARMS::bApiLockByApp?</p>
+<p>Hintergrund ist, dass Code außerhalb der JobTask in gewissen Situationen zu Ausreißern der Rechenzeit der JobTask führt.</p>
+<p>Wir sind gerade dabei, dies näher zu untersuchen.</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p><b>Von:</b> EtherCAT Support ecsupport@acontis.com <br>
+<b>Gesendet:</b> Mittwoch, 14. Oktober 2020 09:53<br>
+<b>An:</b> Michael Wenz Michael.Wenz@itk-engineering.de<br>
+<b>Betreff:</b> AW: Frame Loss wegen Rechenzeit</p>
+<p> </p>
+<p>Hallo Herr Wenz,</p>
+<p> </p>
+<p>das sind sehr gute Nachrichten.</p>
+<p>Wir haben einen neuen Parameter EC_T_INIT_MASTER_PARMS::bApiLockByApp eingeführt um die API Locks abzuschalten:</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Michael Wenz</p>
+<p> </p>
+<p>--</p>
+<p>Dr.-Ing. Michael Wenz</p>
+<p>Software Engineering</p>
+<p> </p>
+<p>ITK Engineering GmbH</p>
+<p>Im Speyerer Tal 6</p>
+<p>D-76761 Rülzheim</p>
+<p> </p>
+<p>Tel.: +49 7272 7703-456</p>
+<p>Fax: +49 7272 7703-100</p>
+<p>Mobil: +49 174 9480570</p>
+<p> </p>
+<p>mailto: michael.wenz@itk-engineering.de</p>
+<p> </p>
+<p>_____________________________________________________________</p>
+<p>ITK Engineering GmbH Im Speyerer Tal 6 76761 Rülzheim</p>
+<p>Tel.: +49 7272 7703-0 Fax: +49 7272 7703-100</p>
+<p>mailto:info@itk-engineering.de <a href="http://www.itk-engineering.de" rel="nofollow noreferrer noopener" target="_blank">http://www.itk-engineering.de</a></p>
+<p> </p>
+<p>Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board:</p>
+<p>Dr. Rudolf Maier</p>
+<p>Geschäftsführung/Executive Board:</p>
+<p>Dr. Frank Schmidt (Vorsitzender/Chairman), Michael Englert, Bernd Gohlicke</p>
+<p>Sitz der Gesellschaft/Registered Office: 76761 Rülzheim</p>
+<p>Registergericht/Registered Court: Amtsgericht Landau, HRB 32046</p>
+<p>USt.-ID-Nr./VAT-ID-No. DE813165046</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=10011
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.11.2021 14:26:35 +00:00
+UpdatedAt=24.11.2021 14:26:38 +00:00
+
+### ARTICLE01_SUBJECT
+ApiLockByApp für EC-Monitor
+
+### ARTICLE01_BODY
+Hallo Herr Wenz,<div>entschuldigen Sie bitte die späte Antwort.</div><div><br></div><div>Ich habe den Parameter bApiLockByApp vom Master in den Monitor gemerged. Ich kann Ihnen morgen eine Testversion bereitstellen.</div><div><br></div><div>Mit freundlichen Grüßen,<div data-signature="true" data-signature-id="2"><div>Holger Oelhaf</div></div>
+<div><br></div>
+<div><blockquote type="cite">Am Freitag, 19. November 2021, 07:49:18, schrieb Michael Wenz:<br><br><div>
+<p>Hallo Herr Oelhaf,</p>
+<p> </p>
+<p>vor einiger Zeit hatten Sie bei EC-Master den Paramter EC_T_INIT_MASTER_PARMS::bApiLockByApp eingeführt.</p>
+<p> </p>
+<p>EC_T_BOOL <b>bApiLockByApp</b></p>
+<p>[in] EC_TRUE: Don’t lock pending API calls to increase performance</p>
+<p> </p>
+<p>Können Sie sagen, ob ein solcher Parameter für EC-Monitor auch sinnvoll wäre und wenn ja, können Sie ihn bitte ergänzen, z.B. EC_T_MONITOR_INIT_PARMS::bApiLockByApp?</p>
+<p>Hintergrund ist, dass Code außerhalb der JobTask in gewissen Situationen zu Ausreißern der Rechenzeit der JobTask führt.</p>
+<p>Wir sind gerade dabei, dies näher zu untersuchen.</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p><b>Von:</b> EtherCAT Support ecsupport@acontis.com <br>
+<b>Gesendet:</b> Mittwoch, 14. Oktober 2020 09:53<br>
+<b>An:</b> Michael Wenz Michael.Wenz@itk-engineering.de<br>
+<b>Betreff:</b> AW: Frame Loss wegen Rechenzeit</p>
+<p> </p>
+<p>Hallo Herr Wenz,</p>
+<p> </p>
+<p>das sind sehr gute Nachrichten.</p>
+<p>Wir haben einen neuen Parameter EC_T_INIT_MASTER_PARMS::bApiLockByApp eingeführt um die API Locks abzuschalten:</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Michael Wenz</p>
+<p> </p>
+<p>--</p>
+<p>Dr.-Ing. Michael Wenz</p>
+<p>Software Engineering</p>
+<p> </p>
+<p>ITK Engineering GmbH</p>
+<p>Im Speyerer Tal 6</p>
+<p>D-76761 Rülzheim</p>
+<p> </p>
+<p>Tel.: +49 7272 7703-456</p>
+<p>Fax: +49 7272 7703-100</p>
+<p>Mobil: +49 174 9480570</p>
+<p> </p>
+<p>mailto: michael.wenz@itk-engineering.de</p>
+<p> </p>
+<p>_____________________________________________________________</p>
+<p>ITK Engineering GmbH Im Speyerer Tal 6 76761 Rülzheim</p>
+<p>Tel.: +49 7272 7703-0 Fax: +49 7272 7703-100</p>
+<p>mailto:info@itk-engineering.de <a href="http://www.itk-engineering.de" rel="nofollow noreferrer noopener" target="_blank">http://www.itk-engineering.de</a></p>
+<p> </p>
+<p>Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board:</p>
+<p>Dr. Rudolf Maier</p>
+<p>Geschäftsführung/Executive Board:</p>
+<p>Dr. Frank Schmidt (Vorsitzender/Chairman), Michael Englert, Bernd Gohlicke</p>
+<p>Sitz der Gesellschaft/Registered Office: 76761 Rülzheim</p>
+<p>Registergericht/Registered Court: Amtsgericht Landau, HRB 32046</p>
+<p>USt.-ID-Nr./VAT-ID-No. DE813165046</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

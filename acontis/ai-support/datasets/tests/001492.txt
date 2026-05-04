@@ -1,0 +1,83 @@
+### HEADER
+Id=1492
+Link=http://at-zammad/#ticket/zoom/1492
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=smark GmbH (ID=159, Number=40388, Country=DE)
+Commission=Smark, smarkBox (ID=180, Number=180)
+Number=701492
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=sauer@smark.de (ID=472, FirstName=Tobias, LastName=Sauer)
+CreatedBy=sauer@smark.de (ID=472, FirstName=Tobias, LastName=Sauer)
+Type=
+TimeUnit=
+CreatedAt=27.09.2021 00:11:54 +00:00
+UpdatedAt=25.04.2022 10:39:24 +00:00
+CloseAt=14.10.2021 06:11:46 +00:00
+ArticlesCount=2
+
+### TITLE
+Ethercat Master Linux
+
+### ARTICLE00_HEADER
+Id=8068
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.09.2021 00:11:54 +00:00
+UpdatedAt=27.09.2021 00:11:54 +00:00
+
+### ARTICLE00_SUBJECT
+Ethercat Master Linux
+
+### ARTICLE00_BODY
+<div dir="ltr">Guten Tag,<br><br>Tobias Sauer hier von der Smark GmbH.<div>Ich habe letztens gesehen dass wir ihre libsackraw.so benutzen und nicht den "eigentlichen" ethernet Treiber. In der Dokumentation steht, dass damit Zyklen von unter 4ms nicht zu erreichen sind, ist das so? Ich hab Ihnen hier einmal den Perfomance log angehängt:<br><br><div>2021-09-26 22:43:56<br>0000953671: PerfMsmt 'myAppWorkPd ' (min/avg/max) [usec]: 4.2/ 29.1/ 344.1<br>2021-09-26 22:43:56<br>0000953671: PerfMsmt 'Cycle Time ' (min/avg/max) [usec]: 1677.1/2000.3/2352.6<br>2021-09-26 22:43:56<br>0000953671: PerfMsmt 'JOB_SendAcycFrames ' (min/avg/max) [usec]: 0.3/ 4.6/ 229.5<br>2021-09-26 22:43:56<br>0000953671: PerfMsmt 'JOB_MasterTimer ' (min/avg/max) [usec]: 6.1/ 96.9/ 373.1<br>2021-09-26 22:43:56<br>0000953671: PerfMsmt 'JOB_SendAllCycFrames ' (min/avg/max) [usec]: 10.4/ 56.5/ 288.1<br>2021-09-26 22:43:56<br>0000953671: PerfMsmt 'JOB_ProcessAllRxFrames' (min/avg/max) [usec]: 11.6/ 65.5/ 372.3<br>2021-09-26 22:43:56<br>0000953671: ============================================================================<br><br>Als Betriebssystem nutzten wir ein Debian 10 mit dem Kernel 4.x preempt_rt. Wir haben auf dem PC mehrere Ethernet Schnittstellen. Muss ich deshalb zwingend notwendig den Treiber über den device Tree einpflegen oder geht das auch "einfach" das laden des Kernel Moduls? Könnte mir vorstellen, dass dann davon alle Schnittstellen betroffen sind.<br><br>Mit den besten Grüßen <br><br>Tobias Sauer<br><br>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=8115
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.09.2021 14:44:31 +00:00
+UpdatedAt=27.09.2021 14:44:33 +00:00
+
+### ARTICLE01_SUBJECT
+Ethercat Master Linux
+
+### ARTICLE01_BODY
+Hallo Herr Sauer,<div><br></div><div>mit dem emllSockRaw Linklayer müssen Sie auf jeden Fall mit den anderen Netzwerkadaptern konkurrieren. Ihre Werte sehen tatsächlich nicht schlecht aus. Allerdings gib es noch eine unbekannte Verzögerung bis, dass die Frames auf Kabel gehen.</div><div><br></div><div>Sie können gezielt den optimierten Linklayer verwenden, in dem Sie ein unbind auf die betroffene Instance gezielt ausführen:</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/os_linux.html?highlight=unbind#unbind-link-layer-instance" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/os_linux.html?highlight=unbind#unbind-link-layer-instance" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/os_linux.html?highlight=unbind#unbind-link-layer-instance</a></div></div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, September 27, 2021, 2:11:54 AM, Tobias Sauer wrote:<br><br><div dir="ltr">Guten Tag,<br><br>Tobias Sauer hier von der Smark GmbH.<div>Ich habe letztens gesehen dass wir ihre libsackraw.so benutzen und nicht den "eigentlichen" ethernet Treiber. In der Dokumentation steht, dass damit Zyklen von unter 4ms nicht zu erreichen sind, ist das so? Ich hab Ihnen hier einmal den Perfomance log angehängt:<br><br><div>2021-09-26 22:43:56<br>0000953671: PerfMsmt 'myAppWorkPd ' (min/avg/max) [usec]: 4.2/ 29.1/ 344.1<br>2021-09-26 22:43:56<br>0000953671: PerfMsmt 'Cycle Time ' (min/avg/max) [usec]: 1677.1/2000.3/2352.6<br>2021-09-26 22:43:56<br>0000953671: PerfMsmt 'JOB_SendAcycFrames ' (min/avg/max) [usec]: 0.3/ 4.6/ 229.5<br>2021-09-26 22:43:56<br>0000953671: PerfMsmt 'JOB_MasterTimer ' (min/avg/max) [usec]: 6.1/ 96.9/ 373.1<br>2021-09-26 22:43:56<br>0000953671: PerfMsmt 'JOB_SendAllCycFrames ' (min/avg/max) [usec]: 10.4/ 56.5/ 288.1<br>2021-09-26 22:43:56<br>0000953671: PerfMsmt 'JOB_ProcessAllRxFrames' (min/avg/max) [usec]: 11.6/ 65.5/ 372.3<br>2021-09-26 22:43:56<br>0000953671: ============================================================================<br><br>Als Betriebssystem nutzten wir ein Debian 10 mit dem Kernel 4.x preempt_rt. Wir haben auf dem PC mehrere Ethernet Schnittstellen. Muss ich deshalb zwingend notwendig den Treiber über den device Tree einpflegen oder geht das auch "einfach" das laden des Kernel Moduls? Könnte mir vorstellen, dass dann davon alle Schnittstellen betroffen sind.<br><br>Mit den besten Grüßen <br><br>Tobias Sauer<br><br>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

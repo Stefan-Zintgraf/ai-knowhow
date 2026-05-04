@@ -1,0 +1,190 @@
+### HEADER
+Id=8360
+Link=http://at-zammad/#ticket/zoom/8360
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Soft Service, Generic (ID=476, Number=476)
+Number=708360
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=25.06.2024 11:23:01 +00:00
+UpdatedAt=12.07.2024 12:43:39 +00:00
+CloseAt=12.07.2024 12:43:39 +00:00
+ArticlesCount=3
+
+### TITLE
+There is a limitation, is it correct? (Issue 74)
+
+### ARTICLE00_HEADER
+Id=46480
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.06.2024 11:23:01 +00:00
+UpdatedAt=25.06.2024 11:23:05 +00:00
+
+### ARTICLE00_SUBJECT
+There is a limitation, is it correct? (Issue 74)
+
+### ARTICLE00_BODY
+Hi Support Team, <div> </div><div>When setting "10,000,000.000" to Value Editor of Init Command whose type is REAL at Init Commands Tab, Up button of Spin Button is not worked, down is worked. We think there is limitation of working.</div><div>Is it bug? or some restriction?</div><div> </div><div>Procedure of reproduce</div><div>1. Add EKM1101</div><div>2. At Init Commands Tab, Select "New", Select "0x8050, 19 Limit 1 (this is REAL)" and Push "OK"</div><div>3. At added Init Command, input "10,000,000.0000", push Spin Button, UP is not worked, DOWN is worked…</div><div> </div><div>Best regards,</div><div>Yuichi</div><div> </div><div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=46486
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.06.2024 11:44:38 +00:00
+UpdatedAt=25.06.2024 11:44:40 +00:00
+
+### ARTICLE01_SUBJECT
+There is a limitation, is it correct? (Issue 74)
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes this a limitation. Do you really need a bigger value than <span>"10,000,000.0000" here?</span>
+</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, June 25, 2024 at 1:23:01 PM, Yuichi Ide wrote:<br><br>Hi Support Team, <div> </div>
+<div>When setting "10,000,000.000" to Value Editor of Init Command whose type is REAL at Init Commands Tab, Up button of Spin Button is not worked, down is worked. We think there is limitation of working.</div>
+<div>Is it bug? or some restriction?</div>
+<div> </div>
+<div>Procedure of reproduce</div>
+<div>1. Add EKM1101</div>
+<div>2. At Init Commands Tab, Select "New", Select "0x8050, 19 Limit 1 (this is REAL)" and Push "OK"</div>
+<div>3. At added Init Command, input "10,000,000.0000", push Spin Button, UP is not worked, DOWN is worked…</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+<div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=46487
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.06.2024 11:54:35 +00:00
+UpdatedAt=25.06.2024 11:54:35 +00:00
+
+### ARTICLE02_SUBJECT
+Re: There is a limitation, is it correct? (Issue 74) [Ticket#708360]
+
+### ARTICLE02_BODY
+Hi Kai, <div> </div><div>Thank you very much for your support.</div><div>We are not sure the end customers need much bigger than 10,000,000.0000.</div><div>But we could input the value bigger than 10,000,000.0000, for example 10,000,010.000, directly, but the UP button can’t be worked. And if 10,000,010.0000 is set, Down also can’t be worked.</div><div>If you set restriction about the max value of REAL type, you have to prohibit to input bigger than 10,000,000.0000 and distinguish this restriction to the User Manual, I think…</div><div> </div><div>Best regards,</div><div>Yuichi</div><div> </div><div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<br>
+<blockquote type="cite">
+<div>2024/06/25 20:44、Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt;のメール:</div>
+<br>
+<div>Hi,<div> </div>
+<div>yes this a limitation. Do you really need a bigger value than "10,000,000.0000" here?</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai<br>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Tuesday, June 25, 2024 at 1:23:01 PM, Yuichi Ide wrote:<br>
+<br> Hi Support Team, <div> </div>
+<div>When setting "10,000,000.000" to Value Editor of Init Command whose type is REAL at Init Commands Tab, Up button of Spin Button is not worked, down is worked. We think there is limitation of working.</div>
+<div>Is it bug? or some restriction?</div>
+<div> </div>
+<div>Procedure of reproduce</div>
+<div>1. Add EKM1101</div>
+<div>2. At Init Commands Tab, Select "New", Select "0x8050, 19 Limit 1 (this is REAL)" and Push "OK"</div>
+<div>3. At added Init Command, input "10,000,000.0000", push Spin Button, UP is not worked, DOWN is worked…</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+<div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

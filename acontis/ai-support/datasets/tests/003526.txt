@@ -1,0 +1,138 @@
+### HEADER
+Id=3526
+Link=http://at-zammad/#ticket/zoom/3526
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=Omron, PLC (ID=282, Number=282)
+Number=703526
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=ecat-omron@omron.com (ID=157, FirstName=ecat-omron@omron.com, LastName=)
+CreatedBy=ecat-omron@omron.com (ID=157, FirstName=ecat-omron@omron.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=21.07.2022 08:31:19 +00:00
+UpdatedAt=27.07.2022 13:30:29 +00:00
+CloseAt=27.07.2022 13:30:29 +00:00
+ArticlesCount=2
+
+### TITLE
+[OMRON] Could you release the official version to fix #421 and #423?
+
+### ARTICLE00_HEADER
+Id=18689
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.07.2022 08:31:19 +00:00
+UpdatedAt=21.07.2022 08:31:22 +00:00
+
+### ARTICLE00_SUBJECT
+[OMRON] Could you release the official version to fix #421 and #423?
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Dear Cyril-san,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Thank you for your releasing the official version as always.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">We could verify that the latest test version fixed the issue <a href="https://my.redmine.jp/pbd-rdc/issues/421" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/421" target="_blank">#421</a> and <a href="https://my.redmine.jp/pbd-rdc/issues/423" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/423" target="_blank"> #423</a>.</span></p>
+<p><u><span lang="EN-US">So could you release the official version including modifications for these issues?</span></u></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><b><span lang="EN-US">Base version : </span></b></p>
+<p><span lang="EN-US">EC-Master V3.0.2.36</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><b><span lang="EN-US">OS : </span></b></p>
+<p><span lang="EN-US">QNX6.5 32bit and QNX7 64bit</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><b><span lang="EN-US">Bug Fixes : </span></b></p>
+<p><span lang="EN-US">#421 and #423</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Please feel free to ask me if you have any questions.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Kojiro Baba</span></p>
+<p><span lang="EN-US">----</span></p>
+<p><span lang="EN-US">p.s.</span></p>
+<p><span lang="EN-US">Ota-san, my co-worker, added the new ticket <a href="https://my.redmine.jp/pbd-rdc/issues/426" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/426" target="_blank">#426</a> about slave-to-slave mailbox communication.</span></p>
+<p><span lang="EN-US">Please check it.</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=18690
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.07.2022 08:34:53 +00:00
+UpdatedAt=21.07.2022 08:34:53 +00:00
+
+### ARTICLE01_SUBJECT
+[OMRON] Could you release the official version to fix #421 and #423?
+
+### ARTICLE01_BODY
+<div>
+<p><span lang="EN-US">Sorry I made a mistake… so I send the mail again.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">~~~</span></p>
+<p><span lang="EN-US">Dear Cyril-san,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Thank you for your kindly support as always.</span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">We could verify that the latest test version fixed the issue <a href="https://my.redmine.jp/pbd-rdc/issues/421" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/421" target="_blank">#421</a> and <a href="https://my.redmine.jp/pbd-rdc/issues/423" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/423" target="_blank"> #423</a>.</span></p>
+<p><u><span lang="EN-US">So could you release the official version including modifications for these issues?</span></u></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><b><span lang="EN-US">Base version : </span></b></p>
+<p><span lang="EN-US">EC-Master V3.0.2.36</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><b><span lang="EN-US">OS : </span></b></p>
+<p><span lang="EN-US">QNX6.5 32bit and QNX7 64bit</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><b><span lang="EN-US">Bug Fixes : </span></b></p>
+<p><span lang="EN-US">#421 and #423</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Please feel free to ask me if you have any questions.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Kojiro Baba</span></p>
+<p><span lang="EN-US">----</span></p>
+<p><span lang="EN-US">p.s.</span></p>
+<p><span lang="EN-US">Ota-san, my co-worker, added the new ticket <a href="https://my.redmine.jp/pbd-rdc/issues/426" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/426" target="_blank">#426</a> about slave-to-slave mailbox communication.</span></p>
+<p><span lang="EN-US">Please check it.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b><span lang="EN-US">From:</span></b><span lang="EN-US"> ecat-omron &lt;ecat-omron@omron.com&gt; <br>
+<b>Sent:</b> Thursday, July 21, 2022 5:31 PM<br>
+<b>To:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Cc:</b> ecat-omron &lt;ecat-omron@omron.com&gt;<br>
+<b>Subject:</b> [OMRON] Could you release the official version to fix #421 and #423?</span></p>
+</div>
+</div>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Dear Cyril-san,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Thank you for your releasing the official version as always.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">We could verify that the latest test version fixed the issue <a href="https://my.redmine.jp/pbd-rdc/issues/421" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/421" target="_blank">#421</a> and <a href="https://my.redmine.jp/pbd-rdc/issues/423" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/423" target="_blank"> #423</a>.</span></p>
+<p><u><span lang="EN-US">So could you release the official version including modifications for these issues?</span></u></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><b><span lang="EN-US">Base version : </span></b></p>
+<p><span lang="EN-US">EC-Master V3.0.2.36</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><b><span lang="EN-US">OS : </span></b></p>
+<p><span lang="EN-US">QNX6.5 32bit and QNX7 64bit</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><b><span lang="EN-US">Bug Fixes : </span></b></p>
+<p><span lang="EN-US">#421 and #423</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Please feel free to ask me if you have any questions.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Kojiro Baba</span></p>
+<p><span lang="EN-US">----</span></p>
+<p><span lang="EN-US">p.s.</span></p>
+<p><span lang="EN-US">Ota-san, my co-worker, added the new ticket <a href="https://my.redmine.jp/pbd-rdc/issues/426" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/426" target="_blank">#426</a> about slave-to-slave mailbox communication.</span></p>
+<p><span lang="EN-US">Please check it.</span></p>
+</div>

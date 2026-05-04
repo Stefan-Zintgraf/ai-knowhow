@@ -1,0 +1,155 @@
+### HEADER
+Id=8478
+Link=http://at-zammad/#ticket/zoom/8478
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=IMA S.p.A (ID=193, Number=40114, Country=IT)
+Commission=IMA, PACKAGING MACHINES (ID=232, Number=232)
+Number=708478
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=marco.valli@ima.it (ID=319, FirstName=Marco, LastName=Valli)
+CreatedBy=marco.valli@ima.it (ID=319, FirstName=Marco, LastName=Valli)
+Type=
+TimeUnit=
+CreatedAt=11.07.2024 14:10:20 +00:00
+UpdatedAt=19.07.2024 14:36:30 +00:00
+CloseAt=19.07.2024 14:36:30 +00:00
+ArticlesCount=2
+
+### TITLE
+LinkLayer for EC-Master 3.1.4.14 for VxWorks6.9
+
+### ARTICLE00_HEADER
+Id=47346
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.07.2024 14:10:20 +00:00
+UpdatedAt=11.07.2024 14:10:23 +00:00
+
+### ARTICLE00_SUBJECT
+LinkLayer for EC-Master 3.1.4.14 for VxWorks6.9
+
+### ARTICLE00_BODY
+<div>Dear Cyril,</div><div> </div><div>We are make some tests with the EC-Master 3.1.4.14 (until the 3.2.2.x is ready with the new linklayer) but we don't have the VxWorks 6.9 version.</div><div> </div><div>Can you provide us the EC-Master SDK and LinkLayer version 3.1.4.14 for VxWorks 6.9?</div><div> </div><div>PS. The one for the VxWorks 7 21.11 version we already has it.</div><div> </div><div>Thanks for the support.</div><div> </div><div>Best Regards,</div><div>
+<b>Marco Valli</b>
+</div><div style="color: inherit;">
+<div>
+<p>
+<i>Research &amp; Innovation - Automation &amp; Software, Software Engineer</i></p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>
+<img style="max-width:100%;width: 0.9791in;max-height: 0.25in;min-width: auto;min-height: auto;width:93px;max-height:24px;" src="/api/v1/ticket_attachment/8478/47346/196334?view=inline"></p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>
+<b>IMA S.p.A.</b></p>
+</div>
+<div>
+<p>Via I Maggio, 14-16</p>
+</div>
+<div>
+<p>I-40064 - Ozzano dell'Emilia (BO) - Italy</p>
+</div>
+<div>
+<p>Phone: +39 051 651 4111</p>
+</div>
+<div>
+<p>
+<span style=" color: rgb(5, 99, 193);"><u><a href="http://www.ima.it/" rel="nofollow noreferrer noopener" target="_blank">www.ima.it</a></u></span></p>
+</div>
+<div>
+<p>
+<span style=" color: rgb(5, 99, 193);"><u><a href="mailto:marco.valli@ima.it">marco.valli@ima.it</a></u></span></p>
+</div>
+<div> </div>
+</div><p><i>Compulsory information on the processing of your personal data pursuant to Art. 13 GDPR can be found <a href="https://ima.it/en/general-data-protection-regulation" rel="nofollow noreferrer noopener" title="https://ima.it/en/general-data-protection-regulation" target="_blank">here</a>. Message for recipients only, if received in error, please read <a href="https://ima.it/en/general-data-protection-regulation" rel="nofollow noreferrer noopener" title="https://ima.it/en/general-data-protection-regulation" target="_blank">here</a>. </i><span lang="IT"></span></p><p><i>L’informativa sul trattamento dei suoi dati personali, dovuta ai sensi dell’art. 13 GDPR, è disponibile a questo <a href="https://ima.it/it/regolamento-generale-sulla-protezione-dei-dati" rel="nofollow noreferrer noopener" title="https://ima.it/it/regolamento-generale-sulla-protezione-dei-dati" target="_blank">link</a>. Messaggio riservato ai destinatari, se lo dovesse ricevere per errore, la preghiamo di seguire le indicazioni riportate in questo <a href="https://ima.it/it/regolamento-generale-sulla-protezione-dei-dati" rel="nofollow noreferrer noopener" title="https://ima.it/it/regolamento-generale-sulla-protezione-dei-dati" target="_blank">link</a>. </i><span lang="IT"></span></p><hr>
+
+### ARTICLE01_HEADER
+Id=47351
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.07.2024 15:54:18 +00:00
+UpdatedAt=11.07.2024 15:54:22 +00:00
+
+### ARTICLE01_SUBJECT
+LinkLayer for EC-Master 3.1.4.14 for VxWorks6.9
+
+### ARTICLE01_BODY
+Hi Marco,<div><br></div><div>yes here you are:</div><div>
+<div><a href="https://downloads.acontis.com/2024/G-I/IMA_(40114)(IT)/EC-Master_VxWorks_x86_32Bit/3.1.4.14/EC-Master-ClassA-AddOn-V3.1.4.14-VxWorks69-x86_32Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2024/G-I/IMA_(40114)(IT)/EC-Master_VxWorks_x86_32Bit/3.1.4.14/EC-Master-ClassA-AddOn-V3.1.4.14-VxWorks69-x86_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/G-I/IMA_(40114)(IT)/EC-Master_VxWorks_x86_32Bit/3.1.4.14/EC-Master-ClassA-AddOn-V3.1.4.14-VxWorks69-x86_32Bit-SDK_Protected.zip</a></div>
+<div><a href="https://downloads.acontis.com/2024/G-I/IMA_(40114)(IT)/EC-Master_VxWorks_x86_32Bit/3.1.4.14/EC-Master-I8254x-V3.1.4.14-VxWorks69-x86_32Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2024/G-I/IMA_(40114)(IT)/EC-Master_VxWorks_x86_32Bit/3.1.4.14/EC-Master-I8254x-V3.1.4.14-VxWorks69-x86_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/G-I/IMA_(40114)(IT)/EC-Master_VxWorks_x86_32Bit/3.1.4.14/EC-Master-I8254x-V3.1.4.14-VxWorks69-x86_32Bit-SDK_Protected.zip</a></div>
+<div><a href="https://downloads.acontis.com/2024/G-I/IMA_(40114)(IT)/EC-Master_VxWorks_x86_32Bit/3.1.4.14/EC-Master-V3.1.4.14-VxWorks69-x86_32Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2024/G-I/IMA_(40114)(IT)/EC-Master_VxWorks_x86_32Bit/3.1.4.14/EC-Master-V3.1.4.14-VxWorks69-x86_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/G-I/IMA_(40114)(IT)/EC-Master_VxWorks_x86_32Bit/3.1.4.14/EC-Master-V3.1.4.14-VxWorks69-x86_32Bit-SDK_Protected.zip</a></div>
+<div><br></div>
+<div>Best Regards,</div>
+<div data-signature="true" data-signature-id="2"><div><span>Cyril</span></div></div>
+<div><br></div>
+<div><blockquote type="cite">On Thursday, July 11, 2024 at 4:10:20 PM, Marco Valli wrote:<br><br><div>Dear Cyril,</div>
+<div> </div>
+<div>We are make some tests with the EC-Master 3.1.4.14 (until the 3.2.2.x is ready with the new linklayer) but we don't have the VxWorks 6.9 version.</div>
+<div> </div>
+<div>Can you provide us the EC-Master SDK and LinkLayer version 3.1.4.14 for VxWorks 6.9?</div>
+<div> </div>
+<div>PS. The one for the VxWorks 7 21.11 version we already has it.</div>
+<div> </div>
+<div>Thanks for the support.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>
+<b>Marco Valli</b>
+</div>
+<div style="color: inherit;">
+<div>
+<p>
+<i>Research &amp; Innovation - Automation &amp; Software, Software Engineer</i></p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>
+<img style="max-width:100%;max-width:100%;width: 0.9791in;max-height: 0.25in;min-width: auto;min-height: auto;width:93px;max-height:24px;" src="/api/v1/ticket_attachment/8478/47351/196359?view=inline"></p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>
+<b>IMA S.p.A.</b></p>
+</div>
+<div>
+<p>Via I Maggio, 14-16</p>
+</div>
+<div>
+<p>I-40064 - Ozzano dell'Emilia (BO) - Italy</p>
+</div>
+<div>
+<p>Phone: +39 051 651 4111</p>
+</div>
+<div>
+<p>
+<span style=" color: rgb(5, 99, 193);"><u><a href="http://www.ima.it/" rel="nofollow noreferrer noopener" target="_blank">www.ima.it</a></u></span></p>
+</div>
+<div>
+<p>
+<span style=" color: rgb(5, 99, 193);"><u><a href="mailto:marco.valli@ima.it">marco.valli@ima.it</a></u></span></p>
+</div>
+<div> </div>
+</div>
+<p><i>Compulsory information on the processing of your personal data pursuant to Art. 13 GDPR can be found <a href="https://ima.it/en/general-data-protection-regulation" rel="nofollow noreferrer noopener" title="https://ima.it/en/general-data-protection-regulation" target="_blank">here</a>. Message for recipients only, if received in error, please read <a href="https://ima.it/en/general-data-protection-regulation" rel="nofollow noreferrer noopener" title="https://ima.it/en/general-data-protection-regulation" target="_blank">here</a>. </i><span lang="IT"></span></p>
+<p><i>L’informativa sul trattamento dei suoi dati personali, dovuta ai sensi dell’art. 13 GDPR, è disponibile a questo <a href="https://ima.it/it/regolamento-generale-sulla-protezione-dei-dati" rel="nofollow noreferrer noopener" title="https://ima.it/it/regolamento-generale-sulla-protezione-dei-dati" target="_blank">link</a>. Messaggio riservato ai destinatari, se lo dovesse ricevere per errore, la preghiamo di seguire le indicazioni riportate in questo <a href="https://ima.it/it/regolamento-generale-sulla-protezione-dei-dati" rel="nofollow noreferrer noopener" title="https://ima.it/it/regolamento-generale-sulla-protezione-dei-dati" target="_blank">link</a>. </i><span lang="IT"></span></p>
+<hr>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,164 @@
+### HEADER
+Id=9200
+Link=http://at-zammad/#ticket/zoom/9200
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=LECTRA (ID=747, Number=0, Country=FR)
+Commission=LECTRA, CUT GEN 5 (ID=839, Number=839)
+Number=709200
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=r.gobard-ext@lectra.com (ID=2801, FirstName=Gobard, LastName=Romain)
+CreatedBy=r.gobard-ext@lectra.com (ID=2801, FirstName=Gobard, LastName=Romain)
+Type=
+TimeUnit=
+CreatedAt=31.10.2024 10:49:54 +00:00
+UpdatedAt=04.11.2024 09:34:08 +00:00
+CloseAt=04.11.2024 09:34:08 +00:00
+ArticlesCount=3
+
+### TITLE
+Génération fichier ENI
+
+### ARTICLE00_HEADER
+Id=52208
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.10.2024 10:49:54 +00:00
+UpdatedAt=31.10.2024 10:49:54 +00:00
+
+### ARTICLE00_SUBJECT
+Génération fichier ENI
+
+### ARTICLE00_BODY
+<div>Bonjour,</div><div> </div><div>Nous rencontrons quelques interrogations concernant le fichier ENI généré par EC-Engineer. Avant de lancer notre application, nous vérifions la présence de plusieurs champs dans le fichier XML. Une erreur intervient lors de la vérification du champ "Recv" du tag "ProcessData" du slave 1003 (cf. fichier ENI en pièce jointe, mot de passe de l'archive : "lectra"). En regardant, il manque effectivement le champ "Recv".</div><div> </div><div>De plus, nous ne comprenons pas bien l'alignement des données par rapport aux champs "BitStart" et "BitLength" des tags "Send" et "Recv". Par exemple pour le slave 1001, le champ "Send/BitStart"=0 et "Send/BitLength"=544. D'après nous, le champ "Send/BitStart" du slave suivant devrait donc être égal à 0+544 = 544 or celui-ci vaut 1104.</div><div> </div><div>Pouvez-vous nous éclairer sur :</div><ul>
+<li>
+<div>L'absence possible du champ "Recv" dans le tag "ProcessData" ?</div>
+</li>
+<li>
+<div>L'alignement des données des champs "Send" et "Recv" dans le tag "ProcessData" ?</div>
+</li>
+</ul>
+<div>Bien à vous.</div><div> </div><div>
+<b>Romain</b>
+</div>
+
+### ARTICLE01_HEADER
+Id=52212
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.10.2024 12:40:13 +00:00
+UpdatedAt=31.10.2024 12:40:16 +00:00
+
+### ARTICLE01_SUBJECT
+Génération fichier ENI
+
+### ARTICLE01_BODY
+<div>Hi,</div><div><br></div><div>1. the slave has only RxPdos, so there is no need of a "Recv" Tag because is has not inputs.</div><div><br></div><div>2. The process data of one slave with LRW Commands is always starting on the same offset. So the first slave has 544 send but 1104 recv. So the second slave will start on 1104 for input and output.</div><div><br></div><div>Best regards,</div><div>Kai<br><br>
+</div><div><blockquote type="cite">On Thursday, October 31, 2024 at 11:49:54 AM, Gobard Romain wrote:<br><br><div>Bonjour,</div>
+<div> </div>
+<div>Nous rencontrons quelques interrogations concernant le fichier ENI généré par EC-Engineer. Avant de lancer notre application, nous vérifions la présence de plusieurs champs dans le fichier XML. Une erreur intervient lors de la vérification du champ "Recv" du tag "ProcessData" du slave 1003 (cf. fichier ENI en pièce jointe, mot de passe de l'archive : "lectra"). En regardant, il manque effectivement le champ "Recv".</div>
+<div> </div>
+<div>De plus, nous ne comprenons pas bien l'alignement des données par rapport aux champs "BitStart" et "BitLength" des tags "Send" et "Recv". Par exemple pour le slave 1001, le champ "Send/BitStart"=0 et "Send/BitLength"=544. D'après nous, le champ "Send/BitStart" du slave suivant devrait donc être égal à 0+544 = 544 or celui-ci vaut 1104.</div>
+<div> </div>
+<div>Pouvez-vous nous éclairer sur :</div>
+<ul>
+<li>
+<div>L'absence possible du champ "Recv" dans le tag "ProcessData" ?</div>
+</li>
+<li>
+<div>L'alignement des données des champs "Send" et "Recv" dans le tag "ProcessData" ?</div>
+</li>
+</ul>
+<div>Bien à vous.</div>
+<br>
+</blockquote></div><div><br></div><br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=52241
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.11.2024 08:10:08 +00:00
+UpdatedAt=04.11.2024 08:10:08 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Génération fichier ENI [Ticket#709200]
+
+### ARTICLE02_BODY
+<div>Hello,</div><div> </div><div>Thank you for your answer.</div><div> </div><div>Some of our ESI files were not up to date so it explains why there were no inputs in ENI. We solved the problem now.</div><div> </div><div>If we have other quetions, we will contact you.</div><div> </div><div>Best regards.</div><div> </div><div>Romain</div><div> </div><hr>
+<div dir="ltr">
+<b>De :</b> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Envoyé :</b> jeudi 31 octobre 2024 13:40<br>
+<b>À :</b> Gobard Romain &lt;r.gobard-ext@lectra.com&gt;<br>
+<b>Cc :</b> Vienney Jérôme &lt;j.vienney@lectra.com&gt;; Ait Ali Alan &lt;a.aitali@lectra.com&gt;; Cazaban Laurence &lt;l.cazaban@lectra.com&gt;; Blanchard Alexandre &lt;a.blanchard@lectra.com&gt;; Merlou Raison Corentin &lt;c.merlouraison@lectra.com&gt;<br>
+<b>Objet :</b> RE: Génération fichier ENI [Ticket#709200] <div> </div>
+</div><div>
+<div>Hi,</div>
+<div> </div>
+<div>1. the slave has only RxPdos, so there is no need of a "Recv" Tag because is has not inputs.</div>
+<div> </div>
+<div>2. The process data of one slave with LRW Commands is always starting on the same offset. So the first slave has 544 send but 1104 recv. So the second slave will start on 1104 for input and output.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai<br>
+<br>
+</div>
+<div>
+<blockquote type="cite"> On Thursday, October 31, 2024 at 11:49:54 AM, Gobard Romain wrote:<br>
+<br>
+<div>Bonjour,</div>
+<div> </div>
+<div>Nous rencontrons quelques interrogations concernant le fichier ENI généré par EC-Engineer. Avant de lancer notre application, nous vérifions la présence de plusieurs champs dans le fichier XML. Une erreur intervient lors de la vérification du champ "Recv" du tag "ProcessData" du slave 1003 (cf. fichier ENI en pièce jointe, mot de passe de l'archive : "lectra"). En regardant, il manque effectivement le champ "Recv".</div>
+<div> </div>
+<div>De plus, nous ne comprenons pas bien l'alignement des données par rapport aux champs "BitStart" et "BitLength" des tags "Send" et "Recv". Par exemple pour le slave 1001, le champ "Send/BitStart"=0 et "Send/BitLength"=544. D'après nous, le champ "Send/BitStart" du slave suivant devrait donc être égal à 0+544 = 544 or celui-ci vaut 1104.</div>
+<div> </div>
+<div>Pouvez-vous nous éclairer sur :</div>
+<ul>
+<li>
+<div>L'absence possible du champ "Recv" dans le tag "ProcessData" ?</div>
+</li>
+<li>
+<div>L'alignement des données des champs "Send" et "Recv" dans le tag "ProcessData" ?</div>
+</li>
+</ul>
+<div>Bien à vous.</div>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://url.us.m.mimecastprotect.com/s/NLhBCmZPpDf84NgwcGfGFRg8lO?domain=acontis.com/" rel="nofollow noreferrer noopener" title="https://url.us.m.mimecastprotect.com/s/NLhBCmZPpDf84NgwcGfGFRg8lO?domain=acontis.com/" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://url.us.m.mimecastprotect.com/s/GEBbCn5PqEfgBNP0IJhnFJJfHk?domain=acontis.com" rel="nofollow noreferrer noopener" title="https://url.us.m.mimecastprotect.com/s/GEBbCn5PqEfgBNP0IJhnFJJfHk?domain=acontis.com" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+</div>

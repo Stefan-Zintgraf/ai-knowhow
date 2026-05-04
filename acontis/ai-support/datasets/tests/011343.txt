@@ -1,0 +1,181 @@
+### HEADER
+Id=11343
+Link=http://at-zammad/#ticket/zoom/11343
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soluware GmbH (ID=810, Number=0, Country=DE)
+Commission=Soluware, Generic (ID=884, Number=884)
+Number=7011343
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=jayaprakash.srinivas@soluware.de (ID=2894, FirstName=Jayaprakash, LastName=Srinivasan)
+CreatedBy=jayaprakash.srinivas@soluware.de (ID=2894, FirstName=Jayaprakash, LastName=Srinivasan)
+Type=
+TimeUnit=
+CreatedAt=04.09.2025 09:49:39 +00:00
+UpdatedAt=04.09.2025 10:01:02 +00:00
+CloseAt=04.09.2025 10:01:02 +00:00
+ArticlesCount=2
+
+### TITLE
+clarification EcEap file
+
+### ARTICLE00_HEADER
+Id=65436
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.09.2025 09:49:39 +00:00
+UpdatedAt=04.09.2025 09:49:43 +00:00
+
+### ARTICLE00_SUBJECT
+clarification EcEap file
+
+### ARTICLE00_BODY
+<div>
+<p><span>Hello Patricia <br>
+<br> Good morning. I hope all is good with you.<br><br>Regarding EcEap, I need some clarification. We are running EC-Master-V3.2.2.03-Linux at the moment.</span></p>
+<p> </p>
+<p>As I understood from your pervious mail sent to Benjamin. EC-EAP-V3.1.5.02-Linux-x86_64Bit is the updated version.</p>
+<p> </p>
+<p><span>du hast uns folgende Version des EC EEP bereitgestellt:<br>
+</span><span lang="en-DE"><a href="https://software.acontis.com/EC-EAP/EC-EAP-V3.1.5.02-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank"><span lang="EN-US">https://software.acontis.com/EC-EAP/EC-EAP-V3.1.5.02-Linux-x86_64Bit-SDK_Protected.tar.gz</span></a><br>
+<br> We are migrating EC-Master-V3.1.4.09-Linux-ARM_32Bit to </span>EC-Master-V3.2.2.03-Linux. Previously in their application using EcEap.h file<span lang="en-DE"><br>
+<br>
+</span>Somehow, the EcEap.h file uses outdated APIs. The most recent master version does not support this API. I just want to make it clear how to approach this. The application is now operating without any problems.</p>
+<p>Just I need to clarify and update to customer using of old APIs.</p>
+<p> </p>
+<p>EC_API EC_T_VOID EC_API_FNCALL ecatPerfMeasInit( EC_T_TSC_MEAS_DESC* pTscMeasDesc, EC_T_UINT64 dwlFreqSet, EC_T_DWORD dwNumMeas, EC_T_FNMESSAGE pfnMessage);</p>
+<p>EC_API EC_T_VOID EC_API_FNCALL ecatPerfMeasDeinit( EC_T_TSC_MEAS_DESC* pTscMeasDesc );</p>
+<p>EC_API EC_T_VOID EC_API_FNCALL ecatPerfMeasEnable( EC_T_TSC_MEAS_DESC* pTscMeasDesc );</p>
+<p>EC_API EC_T_VOID EC_API_FNCALL ecatPerfMeasDisable( EC_T_TSC_MEAS_DESC* pTscMeasDesc );</p>
+<p>EC_API EC_T_VOID EC_API_FNCALL ecatPerfMeasStart( EC_T_TSC_MEAS_DESC* pTscMeasDesc, EC_T_DWORD dwIndex );</p>
+<p>EC_API EC_T_TSC_TIME* EC_API_FNCALL ecatPerfMeasEnd( EC_T_TSC_MEAS_DESC* pTscMeasDesc, EC_T_DWORD dwIndex );</p>
+<p>EC_API EC_T_VOID EC_API_FNCALL ecatPerfMeasReset( EC_T_TSC_MEAS_DESC* pTscMeasDesc, EC_T_DWORD dwIndex );</p>
+<p>EC_API EC_T_VOID EC_API_FNCALL ecatPerfMeasShow( EC_T_TSC_MEAS_DESC* pTscMeasDesc, EC_T_DWORD dwIndex, EC_T_CHAR** aszMeasInfo );<br><br>It would be good if this could be clarified. Thank you in advance.</p>
+<p> </p>
+<div>
+<table border="0" cellspacing="0" cellpadding="0" style="width:100.0%;background:white;">
+<tbody>
+<tr>
+<td valign="top" style="padding:0cm 0cm 0cm 0cm;">
+<table border="0" cellspacing="0" cellpadding="0" style="width:262.5pt;">
+<tbody>
+<tr>
+<td style="width:262.5pt;padding:7.5pt 0cm 7.5pt 0cm;">
+<p><b><span style="color:#007cb7;">Jayaprakash Srinivasan</span></b><span style="color:#313132;">
+<br>
+<br>
+</span><span style="color:#313132;">Embedded Software Developer</span><span style="color:#313132;"></span></p>
+</td>
+<td style="border:none;padding:0cm 0cm 0cm 0cm;width:32px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<table border="0" cellspacing="0" cellpadding="0" style="width:262.5pt;">
+<tbody>
+<tr>
+<td style="width:11.25pt;padding:0cm 0cm 0cm 0cm;">
+<p><b><span style="color:#434f55;">T</span></b><span style="color:#313132;"></span></p>
+</td>
+<td style="width:213.75pt;padding:0cm 0cm 0cm 0cm;">
+<p><span style="color:#434f55;">+49 751 36656-752</span><span style="color:#313132;"></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td style="border:none;padding:0cm 0cm 0cm 0cm;width:32px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="width:262.5pt;padding:7.5pt 0cm 0cm 0cm;">
+<p><span style="color:#313132;"><a href="mailto:jayaprakash.srinivas@soluware.de"><span style="color:#434f55;">jayaprakash.srinivas@soluware.de</span></a></span><span style="color:#313132;"></span></p>
+</td>
+<td style="border:none;padding:0cm 0cm 0cm 0cm;width:32px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<p><span style="color:#313132;"> </span><span style="color:#313132;"></span></p>
+</td>
+<td style="border:none;padding:0cm 0cm 0cm 0cm;width:32px;">
+<p> </p>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top" style="width:262.5pt;padding:0cm 0cm 0cm 0cm;">
+<table border="0" cellspacing="0" cellpadding="0" style="width:157.5pt;border-collapse:collapse;">
+<tbody>
+<tr>
+<td valign="top" style="background:#9e9e9e;padding:0cm 0cm 0cm 0cm;"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="width:262.5pt;padding:15.0pt 0cm 0cm 0cm;">
+<p><a href="https://www.soluware.de/" rel="nofollow noreferrer noopener" title="https://www.soluware.de/" target="_blank"><span style="color:blue;"></span></a><span style="color:#313132;"></span></p>
+</td>
+<td style="padding:0cm 0cm 0cm 0cm;"></td>
+</tr>
+<tr>
+<td style="width:262.5pt;padding:15.0pt 0cm 0cm 0cm;">
+<p><b><span lang="DE" style="color:#434f55;">Soluware GmbH</span></b><span lang="DE" style="color:#434f55;">
+</span><span lang="DE" style="color:#434f55;">|</span><span lang="DE" style="color:#434f55;">
+</span><span style="color:#313132;"><a href="https://www.soluware.de" rel="nofollow noreferrer noopener" target="_blank"><span lang="DE" style="color:#434f55;">www.soluware.de</span></a></span><span lang="DE" style="color:#313132;">
+<br>
+</span><span lang="DE" style="color:#434f55;">Theodor-Krumm-Str. </span><span style="color:#434f55;">18 | 88213 Ravensburg</span><span style="color:#313132;">
+<br>
+<br>
+</span><a href="https://de.linkedin.com/company/soluware" rel="nofollow noreferrer noopener" title="https://de.linkedin.com/company/soluware" target="_blank"><span style="color:blue;"></span></a><span style="color:#313132;"> </span><span style="color:#313132;">
+</span><a href="https://www.xing.com/companies/soluwaregmbh" rel="nofollow noreferrer noopener" title="https://www.xing.com/companies/soluwaregmbh" target="_blank"><span style="color:blue;"></span></a><span style="color:#313132;"> </span><span style="color:#313132;">
+</span><a href="https://www.instagram.com/soluwaregmbh/" rel="nofollow noreferrer noopener" title="https://www.instagram.com/soluwaregmbh/" target="_blank"><span style="color:blue;"></span></a><span style="color:#313132;"></span></p>
+</td>
+<td style="padding:0cm 0cm 0cm 0cm;"></td>
+</tr>
+<tr>
+<td style="width:262.5pt;padding:15.0pt 0cm 0cm 0cm;">
+<p><span lang="DE" style="color:#b1b1b1;">Geschäftsführung | Board of Management:</span><span lang="DE" style="color:#b1b1b1;"><br>
+</span><span lang="DE" style="color:#b1b1b1;">Amelie Schulz</span><span lang="DE" style="color:#b1b1b1;"><br>
+</span><span lang="DE" style="color:#b1b1b1;">Amtsgericht | Court of Registry:</span><span lang="DE" style="color:#b1b1b1;"><br>
+</span><span lang="DE" style="color:#b1b1b1;">Ulm, HRB 73 41 63</span><span lang="DE" style="color:#b1b1b1;">
+<br>
+<br>
+</span><a href="https://mailtastic.schulz-group.com/api/linkserve/campaign/871e47c4-487d-4715-8e8c-e0c4974b16bb/7240" rel="nofollow noreferrer noopener" title="https://mailtastic.schulz-group.com/api/linkserve/campaign/871e47c4-487d-4715-8e8c-e0c4974b16bb/7240" target="_blank"><span style="color:blue;"></span></a><span lang="DE" style="color:#313132;"></span></p>
+</td>
+<td style="padding:0cm 0cm 0cm 0cm;"></td>
+</tr>
+<tr>
+<td style="width:262.5pt;padding:15.0pt 0cm 0cm 0cm;">
+<p><b><span lang="DE" style="color:darkgray;">Hinweise zur Datenverarbeitung nach Art. 13 DSGVO </span></b><span lang="DE" style="color:darkgray;"><br>
+</span><span lang="DE" style="color:darkgray;">Unsere Datenschutzhinweise für die Kommunikation per E-Mail finden Sie in unserer</span><span lang="DE" style="color:darkgray;">
+</span><span style="color:#313132;"><a href="https://www.soluware.de/librarySchulzSoluware/Datenschutz/Infopflichten_Email_final_100723_SW.pdf" rel="nofollow noreferrer noopener" title="https://www.soluware.de/librarySchulzSoluware/Datenschutz/Infopflichten_Email_final_100723_SW.pdf" target="_blank"><span lang="DE" style="color:darkgray;">Übersicht zu den Informationspflichten</span></a></span><span lang="DE" style="color:darkgray;">.</span><span lang="DE" style="color:#313132;"></span></p>
+</td>
+<td style="padding:0cm 0cm 0cm 0cm;"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span lang="DE"> </span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=65437
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=04.09.2025 10:01:02 +00:00
+UpdatedAt=04.09.2025 10:01:02 +00:00
+
+### ARTICLE01_BODY
+PBE schickt EC-EAP-V3.2.2.03-Linux-x86_64Bit-SDK_Protected.tar.gz

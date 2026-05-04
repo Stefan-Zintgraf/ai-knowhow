@@ -1,0 +1,109 @@
+### HEADER
+Id=7408
+Link=http://at-zammad/#ticket/zoom/7408
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bachmann electronic GmbH (ID=3, Number=50507, Country=AT)
+Commission=Bachmann, M1 Steuerungen (ID=3, Number=3)
+Number=707408
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=oliver.kreuzer@bachmann.info (ID=2419, FirstName=Oliver, LastName=Kreuzer)
+CreatedBy=oliver.kreuzer@bachmann.info (ID=2419, FirstName=Oliver, LastName=Kreuzer)
+Type=
+TimeUnit=
+CreatedAt=09.02.2024 11:59:20 +00:00
+UpdatedAt=23.02.2024 07:27:26 +00:00
+CloseAt=23.02.2024 07:27:26 +00:00
+ArticlesCount=2
+
+### TITLE
+Vorläufige ENI basierend auf Busscan-Ergebnis
+
+### ARTICLE00_HEADER
+Id=40708
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.02.2024 11:59:20 +00:00
+UpdatedAt=09.02.2024 11:59:20 +00:00
+
+### ARTICLE00_SUBJECT
+Vorläufige ENI basierend auf Busscan-Ergebnis
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo liebes Acontis-Team,</p>
+<p> </p>
+<p>bei Bachmann verwenden wir Ihren EC-Master und nutzen dabei das Feature, dass man das Netzwerk mit einer vorläufigen ENI basierend auf dem Busscan-Ergebnis in PREOP schalten kann (Funktion <i>ecatConfigureMaster</i> mit eCnfType = eCnfType_GenPreopENI).</p>
+<p> </p>
+<p>Ich habe eine Frage dazu: Wir haben bemerkt, dass die DC-Register der Slaves wie z.B. System Time Delay (0x0928) im PREOP zwar ausgelesen werden können, jedoch die Werte immer 0 sind. Wir interpretieren das so, dass in der vorläufigen ENI Distributed Clocks deaktiviert ist. Ist das korrekt?</p>
+<p> </p>
+<p>Gibt es eine Möglichkeit das Netzwerk nach dem Busscan mit einer vorläufigen ENI in PREOP zu schalten und dabei auch Distributed Clocks zu aktivieren, damit die Register wie z.B. System Time Delay richtig gesetzt sind?</p>
+<p> </p>
+<p>Vielen Dank!</p>
+<p> <span><br> <br>
+</span><span style="color:#68676c;">Mit freundlichen Grüßen <br> Best regards <br> <br>
+<b>Oliver Kreuzer </b></span><span lang="DE-AT" style="color:#68676c;">Dipl.-Ing.</span><b><span style="color:#68676c;"><br>
+</span></b><span style="color:#68676c;">Project Manager<br> TR-COM <br> <br> P +43 5522 3497-0 | oliver.kreuzer@bachmann.info | <a href="http://www.bachmann.info/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bachmann.info</span></a> <br> <br> Corporate Headquarters: <br> Bachmann electronic GmbH, Kreuzäckerweg 33, 6800 Feldkirch, Austria <br> FN 75348g Commercial Register Feldkirch | ATU 36410905 <br> <br> Dokumente mit rechtsverbindlichem Inhalt sind nur mit Originalunterschrift wirksam. <br>
+</span><span lang="EN-US" style="color:#68676c;">Documents with legally binding subject matter are valid only with original hand-written signature. <br> <br>
+</span><span style="color:#68676c;">Follow Bachmann on <a href="https://www.facebook.com/Bachmann.electronic/" rel="nofollow noreferrer noopener" title="https://www.facebook.com/Bachmann.electronic/" target="_blank"><span style="color:blue;">Facebook</span></a> | <a href="https://www.linkedin.com/company/bachmann-electronic-gmbh" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/bachmann-electronic-gmbh" target="_blank"><span style="color:blue;">LinkedIn</span></a> | <a href="https://twitter.com/bachmann_corp" rel="nofollow noreferrer noopener" title="https://twitter.com/bachmann_corp" target="_blank"><span style="color:blue;">Twitter</span></a> | <a href="https://www.xing.com/companies/bachmannelectronicgmbh" rel="nofollow noreferrer noopener" title="https://www.xing.com/companies/bachmannelectronicgmbh" target="_blank"><span style="color:blue;">Xing</span></a> | <a href="https://www.youtube.com/channel/UCE5LllKmEA5ZtBnsIpvVqxg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCE5LllKmEA5ZtBnsIpvVqxg" target="_blank"><span style="color:blue;">YouTube</span></a></span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=40716
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.02.2024 14:09:36 +00:00
+UpdatedAt=09.02.2024 14:09:38 +00:00
+
+### ARTICLE01_SUBJECT
+Vorläufige ENI basierend auf Busscan-Ergebnis
+
+### ARTICLE01_BODY
+Hallo Herr Kreuzer,<div><br></div><div>ja das geht. Sie können mit <span>eCnfType_GenOp die Konfiguration generieren lassen. Damit werden die DC Eigenschaften der DC slaves berücksichtigt.</span>
+</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, February 9, 2024 at 12:59:20 PM, KREUZER.Oliver wrote:<br><br><div>
+<p>Hallo liebes Acontis-Team,</p>
+<p> </p>
+<p>bei Bachmann verwenden wir Ihren EC-Master und nutzen dabei das Feature, dass man das Netzwerk mit einer vorläufigen ENI basierend auf dem Busscan-Ergebnis in PREOP schalten kann (Funktion <i>ecatConfigureMaster</i> mit eCnfType = eCnfType_GenPreopENI).</p>
+<p> </p>
+<p>Ich habe eine Frage dazu: Wir haben bemerkt, dass die DC-Register der Slaves wie z.B. System Time Delay (0x0928) im PREOP zwar ausgelesen werden können, jedoch die Werte immer 0 sind. Wir interpretieren das so, dass in der vorläufigen ENI Distributed Clocks deaktiviert ist. Ist das korrekt?</p>
+<p> </p>
+<p>Gibt es eine Möglichkeit das Netzwerk nach dem Busscan mit einer vorläufigen ENI in PREOP zu schalten und dabei auch Distributed Clocks zu aktivieren, damit die Register wie z.B. System Time Delay richtig gesetzt sind?</p>
+<p> </p>
+<p>Vielen Dank!</p>
+<p> <span><br> <br>
+</span><span style="color:#68676c;">Mit freundlichen Grüßen <br> Best regards <br> <br>
+<b>Oliver Kreuzer </b></span><span lang="DE-AT" style="color:#68676c;">Dipl.-Ing.</span><b><span style="color:#68676c;"><br>
+</span></b><span style="color:#68676c;">Project Manager<br> TR-COM <br> <br> P +43 5522 3497-0 | oliver.kreuzer@bachmann.info | <a href="http://www.bachmann.info/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bachmann.info</span></a> <br> <br> Corporate Headquarters: <br> Bachmann electronic GmbH, Kreuzäckerweg 33, 6800 Feldkirch, Austria <br> FN 75348g Commercial Register Feldkirch | ATU 36410905 <br> <br> Dokumente mit rechtsverbindlichem Inhalt sind nur mit Originalunterschrift wirksam. <br>
+</span><span lang="EN-US" style="color:#68676c;">Documents with legally binding subject matter are valid only with original hand-written signature. <br> <br>
+</span><span style="color:#68676c;">Follow Bachmann on <a href="https://www.facebook.com/Bachmann.electronic/" rel="nofollow noreferrer noopener" title="https://www.facebook.com/Bachmann.electronic/" target="_blank"><span style="color:blue;">Facebook</span></a> | <a href="https://www.linkedin.com/company/bachmann-electronic-gmbh" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/bachmann-electronic-gmbh" target="_blank"><span style="color:blue;">LinkedIn</span></a> | <a href="https://twitter.com/bachmann_corp" rel="nofollow noreferrer noopener" title="https://twitter.com/bachmann_corp" target="_blank"><span style="color:blue;">Twitter</span></a> | <a href="https://www.xing.com/companies/bachmannelectronicgmbh" rel="nofollow noreferrer noopener" title="https://www.xing.com/companies/bachmannelectronicgmbh" target="_blank"><span style="color:blue;">Xing</span></a> | <a href="https://www.youtube.com/channel/UCE5LllKmEA5ZtBnsIpvVqxg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCE5LllKmEA5ZtBnsIpvVqxg" target="_blank"><span style="color:blue;">YouTube</span></a></span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

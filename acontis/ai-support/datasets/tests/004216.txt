@@ -1,0 +1,125 @@
+### HEADER
+Id=4216
+Link=http://at-zammad/#ticket/zoom/4216
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Digital Dynamics Inc. (ID=342, Number=40370, Country=US)
+Commission=Digital Dynamics, Internal Slave Testing (ID=408, Number=408)
+Number=704216
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=fdonovan@digitaldynamics.com (ID=1387, FirstName=Fiona, LastName=Donovan)
+CreatedBy=fdonovan@digitaldynamics.com (ID=1387, FirstName=Fiona, LastName=Donovan)
+Type=
+TimeUnit=
+CreatedAt=28.10.2022 23:24:17 +00:00
+UpdatedAt=11.11.2022 07:02:44 +00:00
+CloseAt=11.11.2022 07:02:44 +00:00
+ArticlesCount=2
+
+### TITLE
+Distributed Clock Management
+
+### ARTICLE00_HEADER
+Id=22220
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.10.2022 23:24:17 +00:00
+UpdatedAt=28.10.2022 23:24:17 +00:00
+
+### ARTICLE00_SUBJECT
+Distributed Clock Management
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>I’m having some trouble understanding the difference between the DC implementation vs the DCM implementation. In the example app that includes a DC it appears that the default timing task is only started if there are no timer parameters passed in (TtsParm). Below are a few questions I have that I hope will clarify the distinction between the DC as a network signal, and the management the master is responsible for. Some of these questions may be based on incorrect assumptions, since I am under them impression that the master is responsible for standardizing any sort of DC signal on the network for all the DC capable slaves. My confusion comes from how much configuration the master needs to perform in the cases where it is receiving the signal from a slave.</p>
+<p> </p>
+<ol start="1" type="1">
+<li>Does the MasterShift DCM mode mean that the master is shifting the slaves based on an auxiliary clock? </li>
+<li>If so, does that clock typically come from a slave?</li>
+<li>If not, what does that mode mean?</li>
+<li>The comments in the DC demo app mention an “internal auxiliary clock”, what is an example of this type of clock?</li>
+<li>Where does the clock signal come from in MasterShift mode if there is no exernal clock (DC_X) or master reference clock (MasterRef)?</li>
+<li>What is the difference between MasterShift and BusShift modes?</li>
+<li>Is the default timing task comparable to a SM2 event, or would an SM2 event come from another device on the network?</li>
+</ol>
+<p> </p>
+<p>Sorry if my understanding of the different modes is incomplete, I am currently just trying to make sense of the EcDemoApp that uses the DC, and I seem to be mixing up the master configuration with the actual network timing.</p>
+<p> </p>
+<p>Also, thank you very much for the last set of answers you provided, they were very helpful!</p>
+<p> </p>
+<p>Regards,</p>
+<p>Fiona</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=22311
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.11.2022 14:16:47 +00:00
+UpdatedAt=02.11.2022 14:16:48 +00:00
+
+### ARTICLE01_SUBJECT
+Distributed Clock Management
+
+### ARTICLE01_BODY
+Hello Fiona,<div><br></div><div>thanks for message, I hope to understand you right and response accordingly.</div><div><br></div><div>1. No and yes. First of all there are two different main shifting modes:</div><div>Bus Shift Mode and Master Shift Mode. In Bus Shift Mode the Master has/is the master clock (reference clock) and the slaves will follow this clock (<a href="https://software.acontis.com/Documents/AT1020_V1.1_EC-Master-Technical.pdf#page=29" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/Documents/AT1020_V1.1_EC-Master-Technical.pdf#page=29</a>), in the end.<span> In Master Shift Mode one of the slaves has/is the master clock (reference clock) and the EtherCAT master (EC-Master) has to follow that slave reference clock as the other slaves do (</span><a href="https://software.acontis.com/Documents/AT1020_V1.1_EC-Master-Technical.pdf#page=30" title="https://software.acontis.com/Documents/AT1020_V1.1_EC-Master-Technical.pdf#page=30" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/Documents/AT1020_V1.1_EC-Master-Technical.pdf#page=30</a><span>). To implement one or the other you can use an auxiliary clock.</span>
+</div><div><span>2. Bus Shift Mode is the EC-Master default mode and if your clock is precise enough for your application, this mode is just fine.</span></div><div><span>3. See 1.</span></div><div><span>4. Some (processor) systems and operating systems offer such a clock and/or API. We addressed this with the auxiliary clock in our demo. In the end it is an alternative clock besides the main clock.</span></div><div>
+<span>5. Usually from the CPU, but you as a user provide the clock see also e.g. </span><span>tEcTimingTask.</span>
+</div><div><span>6. See 1.</span></div><div>
+<span>7. Maybe (are your referring to the </span><span>tEcTimingTask). </span><span>Notice if the master sends no frame there is no communication on the EtherCAT network. The master drives the EtherCAT network, there is no spontaneous communication between the slaves. </span><span>If your slave(s) are synchronized to SM2 event they are synced with the frequency plus jitter the master sends the frames. The master can not sync to it's own sent frames.</span>
+</div><div><span><br></span></div><div><span>Hope that helps. Otherwise let us know.</span></div><div><span><br></span></div><div><span>Best regards,</span></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: -</div>
+<div>acontis technologies GmbH,  -, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/4216/22311/94083?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Saturday, October 29, 2022 at 1:24:17 AM, Fiona Donovan wrote:<br><br><div>
+<p>Hello,</p>
+<p> </p>
+<p>I’m having some trouble understanding the difference between the DC implementation vs the DCM implementation. In the example app that includes a DC it appears that the default timing task is only started if there are no timer parameters passed in (TtsParm). Below are a few questions I have that I hope will clarify the distinction between the DC as a network signal, and the management the master is responsible for. Some of these questions may be based on incorrect assumptions, since I am under them impression that the master is responsible for standardizing any sort of DC signal on the network for all the DC capable slaves. My confusion comes from how much configuration the master needs to perform in the cases where it is receiving the signal from a slave.</p>
+<p> </p>
+<ol start="1" type="1">
+<li>Does the MasterShift DCM mode mean that the master is shifting the slaves based on an auxiliary clock? </li>
+<li>If so, does that clock typically come from a slave?</li>
+<li>If not, what does that mode mean?</li>
+<li>The comments in the DC demo app mention an “internal auxiliary clock”, what is an example of this type of clock?</li>
+<li>Where does the clock signal come from in MasterShift mode if there is no exernal clock (DC_X) or master reference clock (MasterRef)?</li>
+<li>What is the difference between MasterShift and BusShift modes?</li>
+<li>Is the default timing task comparable to a SM2 event, or would an SM2 event come from another device on the network?</li>
+</ol>
+<p> </p>
+<p>Sorry if my understanding of the different modes is incomplete, I am currently just trying to make sense of the EcDemoApp that uses the DC, and I seem to be mixing up the master configuration with the actual network timing.</p>
+<p> </p>
+<p>Also, thank you very much for the last set of answers you provided, they were very helpful!</p>
+<p> </p>
+<p>Regards,</p>
+<p>Fiona</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

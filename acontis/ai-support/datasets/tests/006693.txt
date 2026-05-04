@@ -1,0 +1,221 @@
+### HEADER
+Id=6693
+Link=http://at-zammad/#ticket/zoom/6693
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=706693
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=30.10.2023 21:46:23 +00:00
+UpdatedAt=07.11.2023 14:49:08 +00:00
+CloseAt=07.11.2023 14:49:08 +00:00
+ArticlesCount=3
+
+### TITLE
+Blank FoE filenames
+
+### ARTICLE00_HEADER
+Id=36234
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.10.2023 21:46:23 +00:00
+UpdatedAt=30.10.2023 21:46:27 +00:00
+
+### ARTICLE00_SUBJECT
+Blank FoE filenames
+
+### ARTICLE00_BODY
+<div>
+<p>At the 2023 EU Plug Fest, I had a confusing error message when I left the filename blank in the FoE upload/download. I later did some reading, and in <b>ETG1000.6</b>, section 5.8.1 Read Request and 5.8.2 Write Request, I find that the Mailbox Header Length field (see images below) is specified as "N &gt; 0x06". This implies that the filename must be at least 1 character long.</p>
+<p> </p>
+<p>Would it be prudent to detect this in the UI and reject it with a message something like “Slave filename must not be empty.”? Or have you found that some slaves require supporting a blank filename?</p>
+<p> </p>
+<p><img style="max-width:100%;width:7.2916in;max-height:4.5625in;width:700px;max-height:438px;" src="/api/v1/ticket_attachment/6693/36234/151422?view=inline" alt="A table of information
+
+Description automatically generated"></p>
+<p><img style="max-width:100%;width:7.2708in;max-height:4.5625in;width:698px;max-height:438px;" src="/api/v1/ticket_attachment/6693/36234/151423?view=inline" alt="A table of information
+
+Description automatically generated"></p>
+<p> </p>
+<p>Thanks.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Motion<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=36501
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.11.2023 11:46:07 +00:00
+UpdatedAt=06.11.2023 11:46:12 +00:00
+
+### ARTICLE01_SUBJECT
+Blank FoE filenames
+
+### ARTICLE01_BODY
+Hi Quinton,<div><br></div><div>I think this is something the master should check if it is not allowed. I will talk to Cyril about it. </div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, October 30, 2023 at 10:46:23 PM, Quinton Tormanen wrote:<br><br><div>
+<p>At the 2023 EU Plug Fest, I had a confusing error message when I left the filename blank in the FoE upload/download. I later did some reading, and in <b>ETG1000.6</b>, section 5.8.1 Read Request and 5.8.2 Write Request, I find that the Mailbox Header Length field (see images below) is specified as "N &gt; 0x06". This implies that the filename must be at least 1 character long.</p>
+<p> </p>
+<p>Would it be prudent to detect this in the UI and reject it with a message something like “Slave filename must not be empty.”? Or have you found that some slaves require supporting a blank filename?</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:7.2916in;max-height:4.5625in;width:700px;max-height:438px;" src="/api/v1/ticket_attachment/6693/36501/152369?view=inline" alt="A table of information
+
+Description automatically generated"></p>
+<p><img style="max-width:100%;max-width:100%;width:7.2708in;max-height:4.5625in;width:698px;max-height:438px;" src="/api/v1/ticket_attachment/6693/36501/152370?view=inline" alt="A table of information
+
+Description automatically generated"></p>
+<p> </p>
+<p>Thanks.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Motion<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=36532
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.11.2023 16:40:31 +00:00
+UpdatedAt=06.11.2023 16:40:31 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Blank FoE filenames [Ticket#706693]
+
+### ARTICLE02_BODY
+<div>
+<p>The master may reject this, but we prefer to prevent the user from doing illegal things when this can be detected ahead of time. But I am OK if you do not want to do this. We will just do it in our code.</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p>--Quinton</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Monday, November 6, 2023 3:46 AM<br>
+<b>To:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt;<br>
+<b>Cc:</b> Sam Juvonen &lt;SJuvonen@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: Blank FoE filenames [Ticket#706693]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Quinton,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>I think this is something the master should check if it is not allowed. I will talk to Cyril about it.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best regards,</p>
+</div>
+<div>
+<p>Kai</p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Kai Feifel</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Monday, October 30, 2023 at 10:46:23 PM, Quinton Tormanen wrote:</p>
+<div>
+<p>At the 2023 EU Plug Fest, I had a confusing error message when I left the filename blank in the FoE upload/download. I later did some reading, and in <b>ETG1000.6</b>, section 5.8.1 Read Request and 5.8.2 Write Request, I find that the Mailbox Header Length field (see images below) is specified as "N &gt; 0x06". This implies that the filename must be at least 1 character long.</p>
+<p> </p>
+<p>Would it be prudent to detect this in the UI and reject it with a message something like “Slave filename must not be empty.”? Or have you found that some slaves require supporting a blank filename?</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:7.2916in;max-height:4.5625in;width:700px;max-height:438px;" src="/api/v1/ticket_attachment/6693/36532/152453?view=inline" alt="A table of information
+
+Description automatically generated"></p>
+<p><img border="0" style="max-width:100%;width:7.2708in;max-height:4.5625in;width:698px;max-height:438px;" src="/api/v1/ticket_attachment/6693/36532/152454?view=inline" alt="A table of information
+
+Description automatically generated"></p>
+<p> </p>
+<p>Thanks.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><br>
+<i>Principal Software Engineer</i><br> Delta Motion<br>
+<br>
+<span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" title="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span><a href="http://tel:+1-360-702-0150" title="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

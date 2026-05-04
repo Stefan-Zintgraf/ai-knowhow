@@ -1,0 +1,185 @@
+### HEADER
+Id=9957
+Link=http://at-zammad/#ticket/zoom/9957
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OSAIcnc S.r.l. (ID=195, Number=57504, Country=IT)
+Commission=OSAIcnc S.r.l.,  Chrono Soft, LxWin (ID=867, Number=867)
+Number=709957
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=nicolo.giorgetti@osaicnc.com (ID=1551, FirstName=Nicolo, LastName=Giorgetti)
+CreatedBy=nicolo.giorgetti@osaicnc.com (ID=1551, FirstName=Nicolo, LastName=Giorgetti)
+Type=
+TimeUnit=
+CreatedAt=18.02.2025 08:03:08 +00:00
+UpdatedAt=18.02.2025 10:51:53 +00:00
+CloseAt=18.02.2025 10:51:53 +00:00
+ArticlesCount=3
+
+### TITLE
+OSAIcnc - Request of Master ECAT v3.1.4.06 x86_64
+
+### ARTICLE00_HEADER
+Id=56874
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.02.2025 08:03:09 +00:00
+UpdatedAt=18.02.2025 08:03:11 +00:00
+
+### ARTICLE00_SUBJECT
+OSAIcnc - Request of Master ECAT v3.1.4.06 x86_64
+
+### ARTICLE00_BODY
+<div>Dear Mrs Bauce,</div><div> </div><div>We are facing a critical problem to a customer site with the Master ECAT 3.2.2.1. The customer is currently blocked and we are traveling to the site to update the product using the 3.2.2.1 with a different one holding the older version, v3.1.4.06, which has shown no problem in our lab tests. FYI, in our lab we tested our product with the demo version of 3.1.4.06.</div><div> </div><div>We asked to your support team to provide us with the unrestricted Master ECAT v3.1.4.06 for x86_64 but they provided us the ARM version. We urged the proper architecture with no feedback.</div><div> </div><div>I would like to know if there is any constraint on your side which prohibits to receive the unrestricted 3.1.5.06 for x86_64. I checked with my administration and all our payments to Acontis are all in order.</div><div> </div><div>Please, can you tell me of any constraint?</div><div> </div><div>Looking forward to receiving a feedback from you,</div><div> </div><div>Best Regards,</div><div> </div><div>
+<p><span style=" color: rgb(220, 0, 107);"><b>#WeAreOSAI<br>
+</b></span><span><img style="max-width:100%;width: 143px;max-height: 44px;max-width: 484px;width:143px;max-height:44px;" src="/api/v1/ticket_attachment/9957/56874/236309?view=inline"><br>
+</span><span style=" color: rgb(220, 0, 107);"><b><br> Nicolo' Giorgetti, PhD</b></span><span><br>
+</span><span style=" color: rgb(97, 99, 101);">R&amp;D and Innovative Design Manager</span><span><br>
+</span><span style=" color: rgb(97, 99, 101);">m. +39 349 402 8034<br>
+</span><span style=" color: rgb(220, 0, 107);"><br> P </span><span style=" color: rgb(220, 0, 107);"><i>Please consider the environment before printing!</i></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=56879
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.02.2025 09:17:50 +00:00
+UpdatedAt=18.02.2025 09:17:53 +00:00
+
+### ARTICLE01_SUBJECT
+OSAIcnc - Request of Master ECAT v3.1.4.06 x86_64
+
+### ARTICLE01_BODY
+Hello Nicolo,<div><br></div><div>we delivered V3.1.4.06 some minutes ago.</div><div><br></div><div>Please let us know your further questions.</div><div><br></div><div>Best Regards</div><div><br></div><div>Christoph<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, February 18, 2025 at 9:03:09 AM, Nicolo Giorgetti wrote:<br><br><div>Dear Mrs Bauce,</div>
+<div> </div>
+<div>We are facing a critical problem to a customer site with the Master ECAT 3.2.2.1. The customer is currently blocked and we are traveling to the site to update the product using the 3.2.2.1 with a different one holding the older version, v3.1.4.06, which has shown no problem in our lab tests. FYI, in our lab we tested our product with the demo version of 3.1.4.06.</div>
+<div> </div>
+<div>We asked to your support team to provide us with the unrestricted Master ECAT v3.1.4.06 for x86_64 but they provided us the ARM version. We urged the proper architecture with no feedback.</div>
+<div> </div>
+<div>I would like to know if there is any constraint on your side which prohibits to receive the unrestricted 3.1.5.06 for x86_64. I checked with my administration and all our payments to Acontis are all in order.</div>
+<div> </div>
+<div>Please, can you tell me of any constraint?</div>
+<div> </div>
+<div>Looking forward to receiving a feedback from you,</div>
+<div> </div>
+<div>Best Regards,</div>
+<div> </div>
+<div>
+<p><span style=" color: rgb(220, 0, 107);"><b>#WeAreOSAI<br>
+</b></span><span><img style="max-width:100%;max-width: 100%;width: 143px;max-height: 44px;" src="/api/v1/ticket_attachment/9957/56879/236330?view=inline"><br>
+</span><span style=" color: rgb(220, 0, 107);"><b><br> Nicolo' Giorgetti, PhD</b></span><span><br>
+</span><span style=" color: rgb(97, 99, 101);">R&amp;D and Innovative Design Manager</span><span><br>
+</span><span style=" color: rgb(97, 99, 101);">m. +39 349 402 8034<br>
+</span><span style=" color: rgb(220, 0, 107);"><br> P </span><span style=" color: rgb(220, 0, 107);"><i>Please consider the environment before printing!</i></span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=56881
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.02.2025 09:42:19 +00:00
+UpdatedAt=18.02.2025 09:42:19 +00:00
+
+### ARTICLE02_SUBJECT
+Re: OSAIcnc - Request of Master ECAT v3.1.4.06 x86_64 [Ticket#709957]
+
+### ARTICLE02_BODY
+<div>Hello Mr. Widmann,</div><div> </div><div>I would like to confirm you that we have received the links. Thank you very much!</div><div> </div><div>We will provide to your support more insights about the 3.2.2.1 issues we are facing.</div><div> </div><div>Best Regards,</div><div> </div><div>
+<p><span style=" color: rgb(220, 0, 107);"><b>#WeAreOSAI<br>
+</b></span><span><img style="max-width:100%;width: 143px;max-height: 44px;max-width: 484px;width:143px;max-height:44px;" src="/api/v1/ticket_attachment/9957/56881/236345?view=inline"><br>
+</span><span style=" color: rgb(220, 0, 107);"><b><br> Nicolo' Giorgetti, PhD</b></span><span><br>
+</span><span style=" color: rgb(97, 99, 101);">R&amp;D and Innovative Design Manager</span><span><br>
+</span><span style=" color: rgb(97, 99, 101);">m. +39 349 402 8034<br>
+</span><span style=" color: rgb(220, 0, 107);"><br> P </span><span style=" color: rgb(220, 0, 107);"><i>Please consider the environment before printing!</i></span></p>
+</div><hr>
+<div dir="ltr">
+<b>From:</b> Christoph Widmann via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Tuesday, February 18, 2025 10:17<br>
+<b>To:</b> p.bauce@acontis.com &lt;p.bauce@acontis.com&gt;; Nicolo Giorgetti &lt;nicolo.giorgetti@osaicnc.com&gt;<br>
+<b>Cc:</b> Gianluca Pasqualotto &lt;gianluca.pasqualotto@osaicnc.com&gt;<br>
+<b>Subject:</b> RE: OSAIcnc - Request of Master ECAT v3.1.4.06 x86_64 [Ticket#709957] <div> </div>
+</div><div>Hello Nicolo,<div> </div>
+<div>we delivered V3.1.4.06 some minutes ago.</div>
+<div> </div>
+<div>Please let us know your further questions.</div>
+<div> </div>
+<div>Best Regards</div>
+<div> </div>
+<div>Christoph<br>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Tuesday, February 18, 2025 at 9:03:09 AM, Nicolo Giorgetti wrote:<br>
+<br>
+<div>Dear Mrs Bauce,</div>
+<div> </div>
+<div>We are facing a critical problem to a customer site with the Master ECAT 3.2.2.1. The customer is currently blocked and we are traveling to the site to update the product using the 3.2.2.1 with a different one holding the older version, v3.1.4.06, which has shown no problem in our lab tests. FYI, in our lab we tested our product with the demo version of 3.1.4.06.</div>
+<div> </div>
+<div>We asked to your support team to provide us with the unrestricted Master ECAT v3.1.4.06 for x86_64 but they provided us the ARM version. We urged the proper architecture with no feedback.</div>
+<div> </div>
+<div>I would like to know if there is any constraint on your side which prohibits to receive the unrestricted 3.1.5.06 for x86_64. I checked with my administration and all our payments to Acontis are all in order.</div>
+<div> </div>
+<div>Please, can you tell me of any constraint?</div>
+<div> </div>
+<div>Looking forward to receiving a feedback from you,</div>
+<div> </div>
+<div>Best Regards,</div>
+<div> </div>
+<div>
+<p><span style="color:rgb(220,0,107);"><b>#WeAreOSAI<br>
+</b></span><span><img style="max-width:100%;max-width:100%;width:143px;max-height:44px;" src="/api/v1/ticket_attachment/9957/56881/236344?view=inline"><br>
+</span><span style="color:rgb(220,0,107);"><b><br> Nicolo' Giorgetti, PhD</b></span><span><br>
+</span><span style="color:rgb(97,99,101);">R&amp;D and Innovative Design Manager</span><span><br>
+</span><span style="color:rgb(97,99,101);">m. +39 349 402 8034<br>
+</span><span style="color:rgb(220,0,107);"><br> P </span><span style="color:rgb(220,0,107);"><i>Please consider the environment before printing!</i></span></p>
+</div>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>

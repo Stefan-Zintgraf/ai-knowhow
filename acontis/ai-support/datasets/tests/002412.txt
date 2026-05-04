@@ -1,0 +1,154 @@
+### HEADER
+Id=2412
+Link=http://at-zammad/#ticket/zoom/2412
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ZF (ID=539, Number=0, Country=DE)
+Commission=ZF, PASU (ID=129, Number=129)
+Number=702412
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=antonluca.paruolo@zf.com (ID=368, FirstName=Paruolo, LastName=Antonluca)
+CreatedBy=antonluca.paruolo@zf.com (ID=368, FirstName=Paruolo, LastName=Antonluca)
+Type=
+TimeUnit=
+CreatedAt=08.02.2022 17:01:03 +00:00
+UpdatedAt=26.04.2022 05:25:25 +00:00
+CloseAt=25.02.2022 10:49:40 +00:00
+ArticlesCount=3
+
+### TITLE
+Request meeting for support on delay issue - Auftragsbestätigung 331.0-21   Bestellnummer 4501245210
+
+### ARTICLE00_HEADER
+Id=12829
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.02.2022 17:01:03 +00:00
+UpdatedAt=08.02.2022 17:01:03 +00:00
+
+### ARTICLE00_SUBJECT
+Request meeting for support on delay issue - Auftragsbestätigung 331.0-21   Bestellnummer 4501245210
+
+### ARTICLE00_BODY
+<div>
+<p>Dear,</p>
+<p> </p>
+<p>I have integrated the possibility to have multiple Ethercat master on our linux-based system but we are having some issues with some system in production.</p>
+<p>This is in particular a test machine with 2 stations, which means that it can tests 2 Device Under Test at the same time.</p>
+<p>The 2 stations are controlled by the same linux-based machine and for each station we are running a different Ethercat Master responsible for the Ethercat network of the station.</p>
+<p>Each station has a Ethercat cycle time of about 1 kHz with incoming signals at 10 kHz (with oversampling).</p>
+<p> </p>
+<p>If we activate only 1 ecat master (and therefore only 1 station), we have a quite constant delay between a “requested current for a valve” (requested via CAN bus) and a “measured pressure on the same valve” (retrieved via Ethercat). This is expected.</p>
+<p>Unfortunately if we activate the second EtherCat master, sometimes (but not always) we have an additional delay of 50 ms (which unfortunately makes our configuration unusable).</p>
+<p> </p>
+<p>The Ethercat master run isolated on CPU 2.</p>
+<p>Kernel 4.4.256 with rt214 patch.</p>
+<p>Acontis EC-Master-V3.0.3.03-Linux_x86 with I8254x.</p>
+<p> </p>
+<p>We are measuring the max jitter experienced by the master and we are usually on average around 32 us with peak at 600 us, therefore nothing which can justify a 50 ms delay.</p>
+<p>Among the doubt that I have is our implementation of the multimaster.</p>
+<p>We are <b>not</b> using the multimaster API approach (with one application calling the Acontis API passing every time the master number – e.g. emXXXX() ) but we are starting twice the same application and for each application instance, we initialize the master providing also the PCI address of the network card.</p>
+<p> </p>
+<p>It usually works without issue, apart from this machine.</p>
+<p>Maybe our multimaster approach is wrong or there is some other investigation approach that you might suggest to understand what is causing this delay (maybe some special Linux command).</p>
+<p> </p>
+<p>I kindly ask if any of you could call me at your earliest convenience so that we can arrange an online meeting to discuss the issue.</p>
+<p> </p>
+<p>My number +497541772512</p>
+<p> </p>
+<p>Mit freundlichen Grüßen/Kind regards<br> Antonluca Paruolo<br>
+<br> Industrial Software Friedrichshafen - Application Development (IATIF2)<b><br>
+<br> ZF Group</b><br> Industrietechnik / Industrial Technology<br> Geschäftsfeld Prüfsysteme / Test Systems<br> ZF Friedrichshafen AG<br> Ehlersstraße 50, 88046 Friedrichshafen, Deutschland/Germany<br> antonluca.paruolo@zf.com <br>
+<br> Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board: Dr. Heinrich Hiesinger<br> Vorstand/Board of Management: Wolf-Henning Scheider (Vorsitzender/CEO), Dr. Konstantin Sauer, Dr. Martin Fischer, Sabine Jaskula, Dr. Holger Klein, Wilhelm Rehm, Stephan von Schuckmann<br> Sitz/Headquarters: Friedrichshafen<br> Handelsregistereintrag Amtsgericht Ulm HRB 630206/Trade register of the municipal court of Ulm HRB 630206<br>
+<br> Informationen zur Verarbeitung Ihrer Daten und zu Ihren Rechten erhalten Sie jederzeit in unseren Datenschutzhinweisen: <a href="https://www.zf.com/de/data-protection-notice" rel="nofollow noreferrer noopener" target="_blank">https://www.zf.com/de/data-protection-notice</a>
+<br> You can find information about how we process your data and your rights in our data protection notice: <a href="https://www.zf.com/en/data-protection-notice" rel="nofollow noreferrer noopener" target="_blank">https://www.zf.com/en/data-protection-notice</a>
+<br> ­ </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=12850
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.02.2022 08:36:04 +00:00
+UpdatedAt=09.02.2022 08:36:06 +00:00
+
+### ARTICLE01_SUBJECT
+Request meeting for support on delay issue - Auftragsbestätigung 331.0-21   Bestellnummer 4501245210
+
+### ARTICLE01_BODY
+Hi Antonluca,<div><br></div><div>it was a pleasure to have a phone call with you today morning.Give me some feedback if the isolation of the second instance helps or not.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, February 8, 2022, 6:01:03 PM, Paruolo Antonluca FRD IATIF2 wrote:<br><br><div>
+<p>Dear,</p>
+<p> </p>
+<p>I have integrated the possibility to have multiple Ethercat master on our linux-based system but we are having some issues with some system in production.</p>
+<p>This is in particular a test machine with 2 stations, which means that it can tests 2 Device Under Test at the same time.</p>
+<p>The 2 stations are controlled by the same linux-based machine and for each station we are running a different Ethercat Master responsible for the Ethercat network of the station.</p>
+<p>Each station has a Ethercat cycle time of about 1 kHz with incoming signals at 10 kHz (with oversampling).</p>
+<p> </p>
+<p>If we activate only 1 ecat master (and therefore only 1 station), we have a quite constant delay between a “requested current for a valve” (requested via CAN bus) and a “measured pressure on the same valve” (retrieved via Ethercat). This is expected.</p>
+<p>Unfortunately if we activate the second EtherCat master, sometimes (but not always) we have an additional delay of 50 ms (which unfortunately makes our configuration unusable).</p>
+<p> </p>
+<p>The Ethercat master run isolated on CPU 2.</p>
+<p>Kernel 4.4.256 with rt214 patch.</p>
+<p>Acontis EC-Master-V3.0.3.03-Linux_x86 with I8254x.</p>
+<p> </p>
+<p>We are measuring the max jitter experienced by the master and we are usually on average around 32 us with peak at 600 us, therefore nothing which can justify a 50 ms delay.</p>
+<p>Among the doubt that I have is our implementation of the multimaster.</p>
+<p>We are <b>not</b> using the multimaster API approach (with one application calling the Acontis API passing every time the master number – e.g. emXXXX() ) but we are starting twice the same application and for each application instance, we initialize the master providing also the PCI address of the network card.</p>
+<p> </p>
+<p>It usually works without issue, apart from this machine.</p>
+<p>Maybe our multimaster approach is wrong or there is some other investigation approach that you might suggest to understand what is causing this delay (maybe some special Linux command).</p>
+<p> </p>
+<p>I kindly ask if any of you could call me at your earliest convenience so that we can arrange an online meeting to discuss the issue.</p>
+<p> </p>
+<p>My number +497541772512</p>
+<p> </p>
+<p>Mit freundlichen Grüßen/Kind regards<br> Antonluca Paruolo<br>
+<br> Industrial Software Friedrichshafen - Application Development (IATIF2)<b><br>
+<br> ZF Group</b><br> Industrietechnik / Industrial Technology<br> Geschäftsfeld Prüfsysteme / Test Systems<br> ZF Friedrichshafen AG<br> Ehlersstraße 50, 88046 Friedrichshafen, Deutschland/Germany<br> antonluca.paruolo@zf.com <br>
+<br> Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board: Dr. Heinrich Hiesinger<br> Vorstand/Board of Management: Wolf-Henning Scheider (Vorsitzender/CEO), Dr. Konstantin Sauer, Dr. Martin Fischer, Sabine Jaskula, Dr. Holger Klein, Wilhelm Rehm, Stephan von Schuckmann<br> Sitz/Headquarters: Friedrichshafen<br> Handelsregistereintrag Amtsgericht Ulm HRB 630206/Trade register of the municipal court of Ulm HRB 630206<br>
+<br> Informationen zur Verarbeitung Ihrer Daten und zu Ihren Rechten erhalten Sie jederzeit in unseren Datenschutzhinweisen: <a href="https://www.zf.com/de/data-protection-notice" rel="nofollow noreferrer noopener" target="_blank">https://www.zf.com/de/data-protection-notice</a>
+<br> You can find information about how we process your data and your rights in our data protection notice: <a href="https://www.zf.com/en/data-protection-notice" rel="nofollow noreferrer noopener" target="_blank">https://www.zf.com/en/data-protection-notice</a>
+<br> ­ </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=13365
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=25.02.2022 10:49:40 +00:00
+UpdatedAt=25.02.2022 10:49:40 +00:00
+
+### ARTICLE02_BODY
+Alles läuft. Tel am 09.02.2022

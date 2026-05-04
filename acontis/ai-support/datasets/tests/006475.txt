@@ -1,0 +1,132 @@
+### HEADER
+Id=6475
+Link=http://at-zammad/#ticket/zoom/6475
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Elec., Industrial Automation PLC (ID=39, Number=39)
+Number=706475
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=sjuvonen@deltamotion.com (ID=1258, FirstName=Sam, LastName=Juvonen)
+CreatedBy=sjuvonen@deltamotion.com (ID=1258, FirstName=Sam, LastName=Juvonen)
+Type=
+TimeUnit=
+CreatedAt=03.10.2023 19:19:47 +00:00
+UpdatedAt=09.10.2023 06:06:07 +00:00
+CloseAt=09.10.2023 06:06:07 +00:00
+ArticlesCount=2
+
+### TITLE
+Potential bug in UI
+
+### ARTICLE00_HEADER
+Id=34920
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.10.2023 19:19:47 +00:00
+UpdatedAt=03.10.2023 19:19:47 +00:00
+
+### ARTICLE00_SUBJECT
+Potential bug in UI
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>A behavior that seems to be a bug has been found.</p>
+<p> </p>
+<p>After clicking the node for a slave in the Project Explorer, observing the highlight of the node, and then clicking a button in the Device Editor, the highlight of the node in Project Explorer disappears. This occurs for many of the button in Device Editor, but not all of them.</p>
+<p> </p>
+<p><img style="max-width:100%;width:5.4479in;max-height:1.552in;width:523px;max-height:149px;" src="/api/v1/ticket_attachment/6475/34920/145903?view=inline"></p>
+<p> </p>
+<p>After the button click, the node is no longer highlighted in Project Explorer:</p>
+<p> </p>
+<p><img style="max-width:100%;width:5.4479in;max-height:1.7812in;width:523px;max-height:171px;" src="/api/v1/ticket_attachment/6475/34920/145904?view=inline"></p>
+<p> </p>
+<p><span style="color:#0f1964;">Regards,</span></p>
+<p><b><span style="color:#0f1964;">Sam</span></b><b><span style="color:#3b4908;">
+</span></b><b>Juvonen</b><span style="color:#3b4908;"><br>
+<br>
+</span></p>
+<p><a href="https://deltamotion.com/" rel="nofollow noreferrer noopener" title="https://deltamotion.com/" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;width:1.0in;max-height:.4791in;width:96px;max-height:46px;" src="/api/v1/ticket_attachment/6475/34920/145905?view=inline" alt="Icon
+
+Description automatically generated"></span></a></p>
+<p>Delta Computer Systems, Inc.<span style="color:#2a2a2a;"><br>
+</span><a href="https://goo.gl/maps/abfjNX5vyrbMFUJU8" title="1818 SE 17th Street Battle Ground, WA 98604" rel="nofollow noreferrer noopener" target="_blank"><span style="color:windowtext;">1818 SE 17<sup>TH</sup> Street</span><span style="color:windowtext;"><br>
+</span><span style="color:windowtext;">Battle Ground, WA 98604</span></a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=34972
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.10.2023 14:29:58 +00:00
+UpdatedAt=04.10.2023 14:29:59 +00:00
+
+### ARTICLE01_SUBJECT
+Potential bug in UI
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes, you're right it seems to be a bug in infragistics. I tried to update the, but this doesn't help.</div><div><br></div><div>My workaround for the next version is, if it is the same slave it will be not assigned again:</div><div>
+<img src="/api/v1/ticket_attachment/6475/34972/146149?view=inline" style="max-width:100%;width: 799px;max-width: 100%;"><br>
+</div><div>
+<div><br></div>
+<div>Best Regards,</div>
+<div>Martin</div>
+<div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, October 3, 2023 at 9:19:47 PM, Sam Juvonen wrote:<br><br><div>
+<p>Hello,</p>
+<p> </p>
+<p>A behavior that seems to be a bug has been found.</p>
+<p> </p>
+<p>After clicking the node for a slave in the Project Explorer, observing the highlight of the node, and then clicking a button in the Device Editor, the highlight of the node in Project Explorer disappears. This occurs for many of the button in Device Editor, but not all of them.</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:5.4479in;max-height:1.552in;width:523px;max-height:149px;" src="/api/v1/ticket_attachment/6475/34972/146150?view=inline"></p>
+<p> </p>
+<p>After the button click, the node is no longer highlighted in Project Explorer:</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:5.4479in;max-height:1.7812in;width:523px;max-height:171px;" src="/api/v1/ticket_attachment/6475/34972/146151?view=inline"></p>
+<p> </p>
+<p><span style="color:#0f1964;">Regards,</span></p>
+<p><b><span style="color:#0f1964;">Sam</span></b><b><span style="color:#3b4908;">
+</span></b><b>Juvonen</b><span style="color:#3b4908;"><br>
+<br>
+</span></p>
+<p><a href="https://deltamotion.com/" rel="nofollow noreferrer noopener" title="https://deltamotion.com/" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;max-width:100%;width:1.0in;max-height:.4791in;width:96px;max-height:46px;" src="/api/v1/ticket_attachment/6475/34972/146152?view=inline" alt="Icon
+
+Description automatically generated"></span></a></p>
+<p>Delta Computer Systems, Inc.<span style="color:#2a2a2a;"><br>
+</span><a href="https://goo.gl/maps/abfjNX5vyrbMFUJU8" title="1818 SE 17th Street Battle Ground, WA 98604" rel="nofollow noreferrer noopener" target="_blank"><span style="color:windowtext;">1818 SE 17<sup>TH</sup> Street</span><span style="color:windowtext;"><br>
+</span><span style="color:windowtext;">Battle Ground, WA 98604</span></a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

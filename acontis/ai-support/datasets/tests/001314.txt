@@ -1,0 +1,191 @@
+### HEADER
+Id=1314
+Link=http://at-zammad/#ticket/zoom/1314
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Motion Control Unit (ID=507, Number=507)
+Number=701314
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=kenji.nakamura@soft-service.co.jp (ID=20, FirstName=Kenji, LastName=Nakamura)
+CreatedBy=kenji.nakamura@soft-service.co.jp (ID=20, FirstName=Kenji, LastName=Nakamura)
+Type=
+TimeUnit=
+CreatedAt=31.08.2021 01:49:25 +00:00
+UpdatedAt=05.11.2021 07:11:31 +00:00
+CloseAt=05.11.2021 07:11:31 +00:00
+ArticlesCount=3
+
+### TITLE
+about EC_NOTIFY_SLAVE_ERROR_STATUS_INFO
+
+### ARTICLE00_HEADER
+Id=7102
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.08.2021 01:49:25 +00:00
+UpdatedAt=31.08.2021 01:49:27 +00:00
+
+### ARTICLE00_SUBJECT
+about EC_NOTIFY_SLAVE_ERROR_STATUS_INFO
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Support Team</p>
+<p> </p>
+<p>Our customer has informed us that the following error occurs during operation.</p>
+<p>EC_NOTIFY_SLAVE_ERROR_STATUS_INFO</p>
+<p>The log has not been acquired.</p>
+<p> </p>
+<p>It seems that wStatus was 0x20 and wStatusCode was 0x18 when the error occurred.</p>
+<p> </p>
+<p>When the power of the machine is turned off and then on again,</p>
+<p>communication is performed normally,</p>
+<p>but sometimes the above error seems to occur.</p>
+<p>Under what conditions does this error occur?</p>
+<p> </p>
+<p>I checked the AL Status Code (0x18),</p>
+<p>It was "No valid inputs available".</p>
+<p> </p>
+<p>Is it in a state where input cannot be obtained?</p>
+<p>Is it possible that the wiring required to obtain the input value is unstable?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+<p>〜 プロフェッショナル集団を目指すＳＳＶグループ〜<span class="js-signatureMarker"></span><br> --------------------------------------------------------- <br> 株式会社ソフトサービス <br> 本社事業部 R&amp;D部 エンベデッドG <br> 中村 健二 <br> 住所 ：〒812-0013 福岡市博多区博多駅東3-3-22 <br> TEL ：092-477-5566 FAX ：092-471-5927 <br> E-mail：kenji.nakamura@soft-service.co.jp <br> ---------------------------------------------------------</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=7135
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.08.2021 08:53:27 +00:00
+UpdatedAt=31.08.2021 08:53:31 +00:00
+
+### ARTICLE01_SUBJECT
+about EC_NOTIFY_SLAVE_ERROR_STATUS_INFO
+
+### ARTICLE01_BODY
+Hi Kenji,<div><br></div><div>this error is returned by the slave firmware. It points to an invalid ENI file or an error in the slave firmware. Can you please give me the commission number to assign this ticket. Thanks!</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div>
+<br><div><blockquote type="cite">On Tuesday, August 31, 2021, 3:49:25 AM, Kenji Nakamura wrote:<br><br><div>
+<p>Dear Support Team</p>
+<p> </p>
+<p>Our customer has informed us that the following error occurs during operation.</p>
+<p>EC_NOTIFY_SLAVE_ERROR_STATUS_INFO</p>
+<p>The log has not been acquired.</p>
+<p> </p>
+<p>It seems that wStatus was 0x20 and wStatusCode was 0x18 when the error occurred.</p>
+<p> </p>
+<p>When the power of the machine is turned off and then on again,</p>
+<p>communication is performed normally,</p>
+<p>but sometimes the above error seems to occur.</p>
+<p>Under what conditions does this error occur?</p>
+<p> </p>
+<p>I checked the AL Status Code (0x18),</p>
+<p>It was "No valid inputs available".</p>
+<p> </p>
+<p>Is it in a state where input cannot be obtained?</p>
+<p>Is it possible that the wiring required to obtain the input value is unstable?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+<p>〜 プロフェッショナル集団を目指すＳＳＶグループ〜<span class="js-signatureMarker"></span><br> --------------------------------------------------------- <br> 株式会社ソフトサービス <br> 本社事業部 R&amp;D部 エンベデッドG <br> 中村 健二 <br> 住所 ：〒812-0013 福岡市博多区博多駅東3-3-22 <br> TEL ：092-477-5566 FAX ：092-471-5927 <br> E-mail：kenji.nakamura@soft-service.co.jp <br> ---------------------------------------------------------</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=7170
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.09.2021 00:34:46 +00:00
+UpdatedAt=01.09.2021 00:34:46 +00:00
+
+### ARTICLE02_SUBJECT
+RE: about EC_NOTIFY_SLAVE_ERROR_STATUS_INFO [Ticket#701314]
+
+### ARTICLE02_BODY
+<div>
+<p>Dear Cyril</p>
+<p> </p>
+<p>Thank you for your reply.</p>
+<p> </p>
+<p>The commission number is 40347.</p>
+<p>I will try to get a little more information.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Tuesday, August 31, 2021 5:54 PM<br>
+<b>To:</b> 中村 健二 &lt;kenji.nakamura@soft-service.co.jp&gt;<br>
+<b>Subject:</b> RE: about EC_NOTIFY_SLAVE_ERROR_STATUS_INFO [Ticket#701314]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Kenji,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>this error is returned by the slave firmware. It points to an invalid ENI file or an error in the slave firmware. Can you please give me the commission number to assign this ticket. Thanks!</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Cyril</p>
+</div>
+<div> <p> </p>
+<div>
+<blockquote>
+<p>On Tuesday, August 31, 2021, 3:49:25 AM, Kenji Nakamura wrote:</p>
+<p></p>
+<div>
+<p>Dear Support Team</p>
+<p> </p>
+<p>Our customer has informed us that the following error occurs during operation.</p>
+<p>EC_NOTIFY_SLAVE_ERROR_STATUS_INFO</p>
+<p>The log has not been acquired.</p>
+<p> </p>
+<p>It seems that wStatus was 0x20 and wStatusCode was 0x18 when the error occurred.</p>
+<p> </p>
+<p>When the power of the machine is turned off and then on again,</p>
+<p>communication is performed normally,</p>
+<p>but sometimes the above error seems to occur.</p>
+<p>Under what conditions does this error occur?</p>
+<p> </p>
+<p>I checked the AL Status Code (0x18),</p>
+<p>It was "No valid inputs available".</p>
+<p> </p>
+<p>Is it in a state where input cannot be obtained?</p>
+<p>Is it possible that the wiring required to obtain the input value is unstable?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+<p>〜 プロフェッショナル集団を目指すＳＳＶグループ〜<br> --------------------------------------------------------- <br> 株式会社ソフトサービス <br> 本社事業部 R&amp;D部 エンベデッドG <br> 中村 健二 <br> 住所 ：〒812-0013 福岡市博多区博多駅東3-3-22 <br> TEL ：092-477-5566 FAX ：092-471-5927 <br> E-mail：kenji.nakamura@soft-service.co.jp <br> ---------------------------------------------------------</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>

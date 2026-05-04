@@ -1,0 +1,159 @@
+### HEADER
+Id=8875
+Link=http://at-zammad/#ticket/zoom/8875
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Boeing, PC based Automated Sys. (ID=403, Number=403)
+Number=708875
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=13.09.2024 15:10:24 +00:00
+UpdatedAt=29.11.2024 15:37:34 +00:00
+CloseAt=29.11.2024 15:37:34 +00:00
+ArticlesCount=2
+
+### TITLE
+Fwd: Possible bug with EC-Master add-on
+
+### ARTICLE00_HEADER
+Id=50050
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.09.2024 15:10:24 +00:00
+UpdatedAt=13.09.2024 15:10:24 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Possible bug with EC-Master add-on
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>Can you please check this issue from Boeing related to SuperSet ENI?<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>"Badman (US), James D" &lt;james.d.badman@boeing.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Possible bug with EC-Master add-on</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>September 13, 2024 at 11:03:38 AM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<br><div>
+<div>Jon,</div>
+<div><p> </p></div>
+<div>I have a small problem with EC-Master that appears to be a bug</div>
+<div>with the add-on feature that allows us to exclude slaves that are</div>
+<div>defined in the ENI file. When I tested the software originally I had</div>
+<div>a chain where I excluded all but the first slave in the chain.</div>
+<div>I had disconnected everything down-stream from that first slave.</div>
+<div>That worked fine with no errors. Well today we were using this feature</div>
+<div>on a chain were we needed to exclude all slaves but one in the middle</div>
+<div>of the original chain as defined by the ENI file. There was still just</div>
+<div>one slave in the chain, but the ENI file had it defined in the middle of the chain.</div>
+<div>When we started the software all calls to "ecatCoeSdoDownload" during Preop</div>
+<div>failed for that existing slave. As a test I used EC-Engineer to modify the ENI</div>
+<div>file by placing that slave at the head of the chain. Then we excluded all the other</div>
+<div>non-existing slaves using the add-on feature. That worked. Seems like that is a bug</div>
+<div>with the exclusion feature. Am I missing something. Let me know.</div>
+<div><p> </p></div>
+<div>James</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=50053
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.09.2024 15:19:49 +00:00
+UpdatedAt=13.09.2024 15:19:53 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: Possible bug with EC-Master add-on
+
+### ARTICLE01_BODY
+Hi James,<div><br></div><div>Can you generate a log file with verbosity level <span>EC_LOG_LEVEL_VERBOSE </span><span>of the issue? Is it possible, that all the slaves are from the same type? </span>
+</div><div>
+<span>Typically, errors related to SuperSet ENI lead to </span><span>EC_E_BUSCONFIG_MISMATCH. But it seems that you can reach at least PREOP, to be able to call </span><span>ecatCoeSdoDownload().</span>
+</div><div><br></div><div>Best Regards</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, September 13, 2024 at 5:10:24 PM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>Can you please check this issue from Boeing related to SuperSet ENI?<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>"Badman (US), James D" &lt;james.d.badman@boeing.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Possible bug with EC-Master add-on</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>September 13, 2024 at 11:03:38 AM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<br><div>
+<div>Jon,</div>
+<div><p> </p></div>
+<div>I have a small problem with EC-Master that appears to be a bug</div>
+<div>with the add-on feature that allows us to exclude slaves that are</div>
+<div>defined in the ENI file. When I tested the software originally I had</div>
+<div>a chain where I excluded all but the first slave in the chain.</div>
+<div>I had disconnected everything down-stream from that first slave.</div>
+<div>That worked fine with no errors. Well today we were using this feature</div>
+<div>on a chain were we needed to exclude all slaves but one in the middle</div>
+<div>of the original chain as defined by the ENI file. There was still just</div>
+<div>one slave in the chain, but the ENI file had it defined in the middle of the chain.</div>
+<div>When we started the software all calls to "ecatCoeSdoDownload" during Preop</div>
+<div>failed for that existing slave. As a test I used EC-Engineer to modify the ENI</div>
+<div>file by placing that slave at the head of the chain. Then we excluded all the other</div>
+<div>non-existing slaves using the add-on feature. That worked. Seems like that is a bug</div>
+<div>with the exclusion feature. Am I missing something. Let me know.</div>
+<div><p> </p></div>
+<div>James</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

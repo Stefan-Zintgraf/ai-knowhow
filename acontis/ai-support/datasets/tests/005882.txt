@@ -1,0 +1,79 @@
+### HEADER
+Id=5882
+Link=http://at-zammad/#ticket/zoom/5882
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Acuitas AG (ID=429, Number=0, Country=CH)
+Commission=Acuitas AG, A-cuitas Control System (ID=505, Number=505)
+Number=705882
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=urs.jaeggi@acuitas.ch (ID=255, FirstName=Urs, LastName=Jäggi)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=03.07.2023 13:38:18 +00:00
+UpdatedAt=03.08.2023 14:35:02 +00:00
+CloseAt=14.07.2023 06:45:55 +00:00
+ArticlesCount=2
+
+### TITLE
+New message from Acuitas AG
+
+### ARTICLE00_HEADER
+Id=31440
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.07.2023 13:38:19 +00:00
+UpdatedAt=03.07.2023 13:38:23 +00:00
+
+### ARTICLE00_SUBJECT
+New message from Acuitas AG
+
+### ARTICLE00_BODY
+<p> </p><p>Dear Mr./Ms. Jäggi,</p><p>thank you for your message.<br>
+<br></p><p>Title:<br>First Name: Urs <br>Last Name: Jäggi <br>Company: Acuitas AG <br>Address: Breitenstrasse 39 <br>Zip/Postal Code: 8852 <br>City: Altendorf <br>Country: Schweiz <br>State: <br>E-Mail: urs.jaeggi@acuitas.ch <br>Phone: +41556170014 <br>Message: <span>Guten Tag Wir verwenden den EC Master V2.9.1.06 unter WinCE und haben festgestellt, dass die ausgelesene Position von einem Elmo Motorensteuerung teilweise dem alten Wert entspricht. Zum Verständis: Die Achse dreht mit 30deg/s und wir lesen alle 1ms Position und Geschwindigkeit aus. Position sollte folglich immer um +0.03deg steigen und Geschwindigkeit konstant 30deg/s sein. Nun ist es so, dass alle 63 Sekunden erhalte ich die korrekte Geschwindigkeit aber die Position wird über mehrere Sekunden falsch ausgelesen. Als beispiel sieht es wie folgt aus: 0.000 deg 0.030 deg 0.030 deg 0.090 deg 0.090 deg 0.120 deg 0.120 deg 0.150 deg Es sieht aus wie wenn der alte Wert ausgelesen wurde aber im nächsten Paket die korrekte Position. Das erkennt man nur wenn die Achse dreht. Aber eben, die Geschwindigkeit ist jedesmal korrekt 30deg/s Wir haben keine anderen Slaves als die Elmos und keinen anderen EC Master. Und wir können nicht tiefer gehen da wir nicht den Quellcode vom acontis Master haben. Sind nicht sicher ob das ein Problem vom Slave oder Master ist. Haben Sie mir einen Tipp wie ich der Sache auf die Spur kommen könnte? Oder ist das ein bekanntes Problem von WinCE oder unserer Version? Freundliche Grüsse Urs Jäggi <br></span>Contact through: </p><p> </p><p><img src="/api/v1/ticket_attachment/5882/31440/130840?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH <br>Gartenstraße 46, 88212 Ravensburg/Germany <br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a>
+<br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com <br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/5882/31440/130839?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=31610
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.07.2023 15:19:21 +00:00
+UpdatedAt=06.07.2023 15:19:24 +00:00
+
+### ARTICLE01_SUBJECT
+New message from Acuitas AG
+
+### ARTICLE01_BODY
+<div>Hallo Herr Jäggi,</div><div><br></div><div>Das Sie die gleiche Werte für mehrere Sekunde bekommen hört sich komisch an...</div><div><br></div><div>Sie können mit unseren EC-Inspector den EtherCAT Traffic analysieren und validieren ob die Daten auf dem Kabel sich tatsächlich ändern oder nicht:</div><div><div><a href="http://software.acontis.com/EC-Tools/V3-8/EC-Inspector_Eval_V3.8.1.zip" title="http://software.acontis.com/EC-Tools/V3-8/EC-Inspector_Eval_V3.8.1.zip" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/EC-Tools/V3-8/EC-Inspector_Eval_V3.8.1.zip</a></div></div><div><br></div><div>Wenn Sie sehen, dass sie auf dem Kabel stehen bleiben, können Sie bei Elmo nachfragen.</div><div><br></div><div>Schöne Grüße,</div><div>
+<span>__________________________________________________________________________________________</span><br>
+</div><div data-signature="true" data-signature-id="2">
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Monday, July 3, 2023 at 3:38:19 PM, sales acontis wrote:<br><br><p> </p>
+<p>Dear Mr./Ms. Jäggi,</p>
+<p>thank you for your message.<br>
+<br></p>
+<p>Title:<br>First Name: Urs <br>Last Name: Jäggi <br>Company: Acuitas AG <br>Address: Breitenstrasse 39 <br>Zip/Postal Code: 8852 <br>City: Altendorf <br>Country: Schweiz <br>State: <br>E-Mail: urs.jaeggi@acuitas.ch <br>Phone: +41556170014 <br>Message: <span>Guten Tag Wir verwenden den EC Master V2.9.1.06 unter WinCE und haben festgestellt, dass die ausgelesene Position von einem Elmo Motorensteuerung teilweise dem alten Wert entspricht. Zum Verständis: Die Achse dreht mit 30deg/s und wir lesen alle 1ms Position und Geschwindigkeit aus. Position sollte folglich immer um +0.03deg steigen und Geschwindigkeit konstant 30deg/s sein. Nun ist es so, dass alle 63 Sekunden erhalte ich die korrekte Geschwindigkeit aber die Position wird über mehrere Sekunden falsch ausgelesen. Als beispiel sieht es wie folgt aus: 0.000 deg 0.030 deg 0.030 deg 0.090 deg 0.090 deg 0.120 deg 0.120 deg 0.150 deg Es sieht aus wie wenn der alte Wert ausgelesen wurde aber im nächsten Paket die korrekte Position. Das erkennt man nur wenn die Achse dreht. Aber eben, die Geschwindigkeit ist jedesmal korrekt 30deg/s Wir haben keine anderen Slaves als die Elmos und keinen anderen EC Master. Und wir können nicht tiefer gehen da wir nicht den Quellcode vom acontis Master haben. Sind nicht sicher ob das ein Problem vom Slave oder Master ist. Haben Sie mir einen Tipp wie ich der Sache auf die Spur kommen könnte? Oder ist das ein bekanntes Problem von WinCE oder unserer Version? Freundliche Grüsse Urs Jäggi <br></span>Contact through: </p>
+<p> </p>
+<p><img src="/api/v1/ticket_attachment/5882/31610/131601?view=inline" alt="" style="max-width:100%;max-width:100%;width:163px;max-height:85px;"></p>
+<p><span>acontis technologies GmbH <br>Gartenstraße 46, 88212 Ravensburg/Germany <br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a>
+<br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com <br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/5882/31610/131602?view=inline" style="max-width:100%;max-width:100%;width:22px;max-height:22px;"></a></span></p>
+<br>
+</blockquote></div><div><br></div><br><br>

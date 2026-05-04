@@ -1,0 +1,108 @@
+### HEADER
+Id=9069
+Link=http://at-zammad/#ticket/zoom/9069
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Novanta (ID=756, Number=0, Country=ES)
+Commission=Novanta, Generic (ID=958, Number=958)
+Number=709069
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=antoni.planells@novanta.com (ID=2890, FirstName=Toni, LastName=Planells)
+CreatedBy=antoni.planells@novanta.com (ID=2890, FirstName=Toni, LastName=Planells)
+Type=
+TimeUnit=
+CreatedAt=15.10.2024 10:27:46 +00:00
+UpdatedAt=25.10.2024 06:04:52 +00:00
+CloseAt=25.10.2024 06:04:52 +00:00
+ArticlesCount=2
+
+### TITLE
+Issues with Sync Manager Watchdog Settings with Acontis Master
+
+### ARTICLE00_HEADER
+Id=51324
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.10.2024 10:27:46 +00:00
+UpdatedAt=15.10.2024 10:27:46 +00:00
+
+### ARTICLE00_SUBJECT
+Issues with Sync Manager Watchdog Settings with Acontis Master
+
+### ARTICLE00_BODY
+<p> </p><div>Hello Acontis support,</div><div> </div><div>I have a customer that is having some issues configuring the Sync Manager Watchdog settings with your Acontis master but is not succeeding with it and I would like to ask for some guidance/assistance.</div><div> </div><div>Basically, right now the functionality that we are looking to achieve is that if we disconnect the EtherCAT cable from the network, that all slaves in the network generate a fault and stop the motion of their motors. But even though everything is configured correctly on the servo drive's side, we still can't get them to generate a fault once the network cable is disconnected. And I believe that has to do with the watchdog settings not being set up correctly in the master.</div><div> </div><div>Therefore, can you please share with me any information we can use to troubleshoot this matter? I'll likely involve more people in the conversation once I get a response from you.</div><div> <div> </div>
+<div>Thank you,</div>
+<div> </div>
+<p> <b>Toni Planells</b></p>
+<p>Product Manager, Servo Drives</p>
+<p>Robotics &amp; Automation | Celera Motion</p>
+<p> <span style=" color: rgb(0, 70, 134);"> </span></p>
+<p> <span style=" color: rgb(0, 70, 134);"><img style="max-width:100%;width: 183px;max-height: 33px;max-width: 701px;min-width: auto;min-height: auto;width:183px;max-height:33px;" src="/api/v1/ticket_attachment/9069/51324/213471?view=inline"> </span></p>
+<p> <span style=" color: rgb(0, 70, 134);">C/ Ávila 124 2B • 08018, Barcelona • Spain </span></p>
+<p> <span style=" color: rgb(0, 70, 134);">T +34 932 917 682 </span></p>
+<p> <span style=" color: rgb(0, 70, 134);"><a href="mailto:antoni.planells@novanta.com" title="antoni.planells@novanta.com">Antoni.planells@novanta.com</a></span></p>
+<p> <span style=" color: rgb(70, 120, 134);"><u><a href="http://www.novanta.com/" rel="nofollow noreferrer noopener" target="_blank">www.novanta.com</a></u></span><span style=" color: rgb(0, 70, 134);"> </span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=51335
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.10.2024 12:32:34 +00:00
+UpdatedAt=15.10.2024 12:32:37 +00:00
+
+### ARTICLE01_SUBJECT
+Issues with Sync Manager Watchdog Settings with Acontis Master
+
+### ARTICLE01_BODY
+Hi Toni,<div><br></div><div>the Sync Manager Watchdog is a configuration topic. Which configuration tool is used by your customer? Normally there is nothing to do with it. The default value is 100ms. If the customer want to adapt it, it can be done here in our EC-Engineer:</div><div><br></div><div>
+<img style="max-width:100%;width: 760.8px;max-width: 100%;max-height: 724.925px;" src="/api/v1/ticket_attachment/9069/51335/213512?view=inline"><br>
+</div><div><br></div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, October 15, 2024 at 12:27:46 PM, Toni Planells wrote:<br><br><p> </p>
+<div>Hello Acontis support,</div>
+<div> </div>
+<div>I have a customer that is having some issues configuring the Sync Manager Watchdog settings with your Acontis master but is not succeeding with it and I would like to ask for some guidance/assistance.</div>
+<div> </div>
+<div>Basically, right now the functionality that we are looking to achieve is that if we disconnect the EtherCAT cable from the network, that all slaves in the network generate a fault and stop the motion of their motors. But even though everything is configured correctly on the servo drive's side, we still can't get them to generate a fault once the network cable is disconnected. And I believe that has to do with the watchdog settings not being set up correctly in the master.</div>
+<div> </div>
+<div>Therefore, can you please share with me any information we can use to troubleshoot this matter? I'll likely involve more people in the conversation once I get a response from you.</div>
+<div> <div> </div>
+<div>Thank you,</div>
+<div> </div>
+<p> <b>Toni Planells</b></p>
+<p>Product Manager, Servo Drives</p>
+<p>Robotics &amp; Automation | Celera Motion</p>
+<p> <span style=" color: rgb(0, 70, 134);"> </span></p>
+<p> <span style=" color: rgb(0, 70, 134);"><img style="max-width:100%;max-width: 100%;min-width: auto;min-height: auto;width: 183px;max-height: 33px;" src="/api/v1/ticket_attachment/9069/51335/213513?view=inline"> </span></p>
+<p> <span style=" color: rgb(0, 70, 134);">C/ Ávila 124 2B • 08018, Barcelona • Spain </span></p>
+<p> <span style=" color: rgb(0, 70, 134);">T +34 932 917 682 </span></p>
+<p> <span style=" color: rgb(0, 70, 134);"><a href="mailto:antoni.planells@novanta.com" title="antoni.planells@novanta.com">Antoni.planells@novanta.com</a></span></p>
+<p> <span style=" color: rgb(70, 120, 134);"><u><a href="http://www.novanta.com/" rel="nofollow noreferrer noopener" target="_blank">www.novanta.com</a></u></span><span style=" color: rgb(0, 70, 134);"> </span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

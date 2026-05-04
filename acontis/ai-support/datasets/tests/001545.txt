@@ -1,0 +1,128 @@
+### HEADER
+Id=1545
+Link=http://at-zammad/#ticket/zoom/1545
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=701545
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=04.10.2021 20:57:21 +00:00
+UpdatedAt=07.10.2021 05:54:31 +00:00
+CloseAt=05.10.2021 11:44:35 +00:00
+ArticlesCount=3
+
+### TITLE
+EC-Master on Nvidia Jetson Nano
+
+### ARTICLE00_HEADER
+Id=8370
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.10.2021 20:57:21 +00:00
+UpdatedAt=04.10.2021 20:57:21 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Master on Nvidia Jetson Nano
+
+### ARTICLE00_BODY
+<div>Hi,</div><div> </div><div>Are these the correct packages for running on Nvidia Jetson Nano? I thought it was just an ARM 32-bit processor, but a customer evaluating these packages reports that the prebuilt binary applications don't run with the following error:</div><div> </div><div>bash: source: ./EcMasterDemo: cannot execute binary file</div><div> </div><a href="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fsoftware.acontis.com%2FEC-Master%2F3.1%2FLinux%2FEC-Master-V3.1-Linux-ARM_64Bit-Eval.tar.gz&amp;data=04%7C01%7Crulik%40uwm.edu%7Cc5252085483e4ff9b51808d97e043246%7C0bca7ac3fcb64efd89eb6de97603cf21%7C0%7C0%7C637679381583526984%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=ZTlIIw6drqCryuXbs%2Bh14WooSOwwIT%2FuZbFFaucQLdo%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fsoftware.acontis.com%2FEC-Master%2F3.1%2FLinux%2FEC-Master-V3.1-Linux-ARM_64Bit-Eval.tar.gz&amp;data=04%7C01%7Crulik%40uwm.edu%7Cc5252085483e4ff9b51808d97e043246%7C0bca7ac3fcb64efd89eb6de97603cf21%7C0%7C0%7C637679381583526984%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=ZTlIIw6drqCryuXbs%2Bh14WooSOwwIT%2FuZbFFaucQLdo%3D&amp;reserved=0" target="_blank">http://software.acontis.com/EC-Master/3.1/Linux/EC-Master-V3.1-Linux-ARM_64Bit-Eval.tar.gz</a><br><a href="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fsoftware.acontis.com%2FEC-Master%2F3.1%2FLinux%2FEC-Master-ClassA-AddOn-V3.1-Linux-ARM_64Bit-Eval.tar.gz&amp;data=04%7C01%7Crulik%40uwm.edu%7Cc5252085483e4ff9b51808d97e043246%7C0bca7ac3fcb64efd89eb6de97603cf21%7C0%7C0%7C637679381583536929%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=B%2FOhx1HsBEVMZks4GCslox52I5bxFyk7EOz61MAKBtQ%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fsoftware.acontis.com%2FEC-Master%2F3.1%2FLinux%2FEC-Master-ClassA-AddOn-V3.1-Linux-ARM_64Bit-Eval.tar.gz&amp;data=04%7C01%7Crulik%40uwm.edu%7Cc5252085483e4ff9b51808d97e043246%7C0bca7ac3fcb64efd89eb6de97603cf21%7C0%7C0%7C637679381583536929%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=B%2FOhx1HsBEVMZks4GCslox52I5bxFyk7EOz61MAKBtQ%3D&amp;reserved=0" target="_blank">http://software.acontis.com/EC-Master/3.1/Linux/EC-Master-ClassA-AddOn-V3.1-Linux-ARM_64Bit-Eval.tar.gz</a> <br>/Jon
+
+### ARTICLE01_HEADER
+Id=8410
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.10.2021 11:44:35 +00:00
+UpdatedAt=05.10.2021 11:44:39 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Master on Nvidia Jetson Nano
+
+### ARTICLE01_BODY
+<div>Hi,</div><div>
+<div>Nvidia Jetson Nano has <span>an ARMV8-A CORE</span>
+</div>
+<div><br></div>
+<div>ARMV8-A can be driven as ARM32 and ARM64</div>
+<div>depending on the used Uboot and Linux.</div>
+<div><br></div>
+<div>I would also expect ARM64.</div>
+<div><br></div>
+<div>Just ask the Linux shell "uname -a"</div>
+</div><div><br></div><div>Best Regards</div><div>Daniel</div><br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Daniel Schmid </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+
+### ARTICLE02_HEADER
+Id=8422
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.10.2021 16:25:03 +00:00
+UpdatedAt=05.10.2021 16:25:03 +00:00
+
+### ARTICLE02_SUBJECT
+Re: EC-Master on Nvidia Jetson Nano [Ticket#701545]
+
+### ARTICLE02_BODY
+<div>Hi Daniel,<div> </div>
+<div>Actually I made a mistake, I did send them the ARM64 package and they confirmed the following from uname -a:</div>
+<div> </div>
+</div><blockquote><div>aarch64 aarch64 aarch64 GNU/Linux</div></blockquote><div>
+<br>/Jon<br><br><div>
+<strong> From: </strong> Daniel Schmid via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<strong> To: </strong> &lt;j.waters@acontis.com&gt; <br>
+<strong> Sent: </strong> 10/5/2021 7:44 AM <br>
+<strong> Subject: </strong> RE: EC-Master on Nvidia Jetson Nano [Ticket#701545] <br><br><blockquote><div>
+<div>Hi,</div>
+<div> <div>Nvidia Jetson Nano has an ARMV8-A CORE</div>
+<div> </div>
+<div>ARMV8-A can be driven as ARM32 and ARM64</div>
+<div>depending on the used Uboot and Linux.</div>
+<div> </div>
+<div>I would also expect ARM64.</div>
+<div> </div>
+<div>Just ask the Linux shell "uname -a"</div>
+</div>
+<div> </div>
+<div>Best Regards</div>
+<div>Daniel</div>
+<br><div> <div>____________________________________________________________________________<br> </div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>eMail: ecsupport@acontis.com<br> </div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+</div></blockquote>
+</div>
+</div>

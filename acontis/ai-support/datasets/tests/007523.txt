@@ -1,0 +1,165 @@
+### HEADER
+Id=7523
+Link=http://at-zammad/#ticket/zoom/7523
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Hexagon Technology Center GmbH (ID=17, Number=53510, Country=CH)
+Commission=Hexagon, Metrology Machine Controller (ID=230, Number=230)
+Number=707523
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=francesco.casadei-ext@hexagon.com (ID=113, FirstName=Francesco, LastName=casadei-ext)
+CreatedBy=francesco.casadei-ext@hexagon.com (ID=113, FirstName=Francesco, LastName=casadei-ext)
+Type=
+TimeUnit=
+CreatedAt=28.02.2024 07:53:48 +00:00
+UpdatedAt=11.03.2024 14:34:19 +00:00
+CloseAt=11.03.2024 14:34:19 +00:00
+ArticlesCount=2
+
+### TITLE
+ecatDcmGetAdjust
+
+### ARTICLE00_HEADER
+Id=41481
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.02.2024 07:53:48 +00:00
+UpdatedAt=28.02.2024 07:53:48 +00:00
+
+### ARTICLE00_SUBJECT
+ecatDcmGetAdjust
+
+### ARTICLE00_BODY
+<div>Hi,</div><div> </div><div>We're using EC-Master v3.1.4.11 for Linux on aarch64 (ARMv8).</div><div> </div><div><span>We use Master Shift mode with controller loop <i>disabled</i> (bCtlOff set to EC_TRUE in EC_T_DCM_CONFIG).</span></div><div>In the main polling task, we call ecatDcmGetAdjust() at every cycle and apply manually the required adjustment on the wait for the start of frame (clock_nanosleep).</div><div><span><br>
+</span></div><div>The reason we did it this way is that when we started the project with earlier versions, and up to v3.1.2.07 the controller loop wasn't working on Linux and the following callbacks in EC_T_OS_PARMS weren't called automatically:</div><div><span><br>
+</span></div><div>pfHwTimerGetInputFrequency</div><div>pfHwTimerModifyInitialCount</div><div><span><br>
+</span></div><div>QUESTION 1</div><div><span>if I <i>enable</i> the controller loop (bCtlOff = EC_FALSE) would the callbacks be invoked in v 3.1.4.11?</span></div><div>What would be the advantage over the other method?</div><div><span><br>
+</span></div><div>QUESTION 2</div><div>Once I get the permill adjustment from ecatDcmGetAdjust I apply it like so:</div><div><span><br>
+</span></div><div>m_requestedCorrection = std::round((permill * m_initialCount) / 1000.0);</div><div><span><br>
+</span></div><div><span>then, if the requested correction <i>is different</i> to the applied one, I actually modify the sleep time:</span></div><div><span><br>
+</span></div><div>double const adjustedFrequency = m_inputRate / (m_initialCount + m_requestedCorrection);</div><div>double const sleepTimeInNanosecondsAsDouble = 1'000'000'000 / adjustedFrequency;</div><div>long const sleepTimeInNanoseconds = std::round(sleepTimeInNanosecondsAsDouble);</div><div>m_sleepTime.tv_sec = sleepTimeInNanoseconds / 1'000'000'000;</div><div>m_sleepTime.tv_nsec = (sleepTimeInNanoseconds % 1'000'000'000);</div><div><span><br>
+</span></div><div>m_appliedCorrection = m_requestedCorrection;</div><div><span><br>
+</span></div><div>(Note: nanosecond adjustment in m_sleepTime omitted here.</div><div>m_inputRate is the frequency related to the CLOCK_MONOTONIC resolution period</div><div>m_initialCount is the "Timer ticks" in the period corresponding to m_outputRate</div><div>m_outputRate is the times per second the wait() must return when called repeatedly).</div><div><span><br>
+</span></div><div>The reason why I apply correction only if different, is to avoid drift.</div><div>But I'm not sure anymore now.</div><div><span><br>
+</span></div><div>How is the permil adjustment supposed to be applied?</div><div><span><br>
+</span></div><div>Regards,</div><div>Francesco Casadei</div>
+
+### ARTICLE01_HEADER
+Id=41626
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.03.2024 11:49:14 +00:00
+UpdatedAt=01.03.2024 11:49:16 +00:00
+
+### ARTICLE01_SUBJECT
+ecatDcmGetAdjust
+
+### ARTICLE01_BODY
+Hi Francesco,<div><br></div><div>
+<div>QUESTION 1</div>
+<div>if I enable the controller loop (bCtlOff = EC_FALSE) would the callbacks be invoked in v <a href="http://3.1.4.11" title="http://3.1.4.11" rel="nofollow noreferrer noopener" target="_blank">3.1.4.11</a>?</div>
+<div>-&gt; No</div>
+<div>What would be the advantage over the other method?</div>
+</div><div>-&gt; There are different implementation historically implemented for within some customer specific modification. In V3.2 we move the callback s at the DcmConfigure level, this will be the new uniformed implementation.</div><div><br></div><div>QUESTION2</div><div>here an example:</div><div>
+<div>{</div>
+<div>    EC_UNREFPARM(pvContext);</div>
+<div>    static EC_T_UINT nTimerHwInitialCount = TimerHwGetInitialCount();</div>
+<div>    static EC_T_INT  nTimerHwLastModification = 0; /* holds last modification from S_dwTimerHwInitialCount */</div>
+<div>    EC_T_INT nNewModification = nAdjustPermil * ((EC_T_INT)nTimerHwInitialCount / 1000);</div>
+<div><br></div>
+<div>    /* vmfTimerHwModifyInitialCount modifies original value of vmfTimerHwGetInitialCount</div>
+<div>    so we should return it back what nAdjustPermil is 0 */</div>
+<div>    EC_T_INT nModification = nNewModification - nTimerHwLastModification;</div>
+<div>    if (nModification != 0)</div>
+<div>    {</div>
+<div>        if (vmfTimerHwModifyInitialCount(nModification) != 0)</div>
+<div>            return EC_E_NOTSUPPORTED;</div>
+<div>    }</div>
+<div>    nTimerHwLastModification = nNewModification;</div>
+<div><br></div>
+<div>    return EC_E_NOERROR;</div>
+<div>}</div>
+</div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, February 28, 2024 at 8:53:48 AM, Francesco casadei-ext wrote:<br><br><div>Hi,</div>
+<div> </div>
+<div>We're using EC-Master v3.1.4.11 for Linux on aarch64 (ARMv8).</div>
+<div> </div>
+<div><span>We use Master Shift mode with controller loop <i>disabled</i> (bCtlOff set to EC_TRUE in EC_T_DCM_CONFIG).</span></div>
+<div>In the main polling task, we call ecatDcmGetAdjust() at every cycle and apply manually the required adjustment on the wait for the start of frame (clock_nanosleep).</div>
+<div><span><br>
+</span></div>
+<div>The reason we did it this way is that when we started the project with earlier versions, and up to v3.1.2.07 the controller loop wasn't working on Linux and the following callbacks in EC_T_OS_PARMS weren't called automatically:</div>
+<div><span><br>
+</span></div>
+<div>pfHwTimerGetInputFrequency</div>
+<div>pfHwTimerModifyInitialCount</div>
+<div><span><br>
+</span></div>
+<div>QUESTION 1</div>
+<div><span>if I <i>enable</i> the controller loop (bCtlOff = EC_FALSE) would the callbacks be invoked in v 3.1.4.11?</span></div>
+<div>What would be the advantage over the other method?</div>
+<div><span><br>
+</span></div>
+<div>QUESTION 2</div>
+<div>Once I get the permill adjustment from ecatDcmGetAdjust I apply it like so:</div>
+<div><span><br>
+</span></div>
+<div>m_requestedCorrection = std::round((permill * m_initialCount) / 1000.0);</div>
+<div><span><br>
+</span></div>
+<div><span>then, if the requested correction <i>is different</i> to the applied one, I actually modify the sleep time:</span></div>
+<div><span><br>
+</span></div>
+<div>double const adjustedFrequency = m_inputRate / (m_initialCount + m_requestedCorrection);</div>
+<div>double const sleepTimeInNanosecondsAsDouble = 1'000'000'000 / adjustedFrequency;</div>
+<div>long const sleepTimeInNanoseconds = std::round(sleepTimeInNanosecondsAsDouble);</div>
+<div>m_sleepTime.tv_sec = sleepTimeInNanoseconds / 1'000'000'000;</div>
+<div>m_sleepTime.tv_nsec = (sleepTimeInNanoseconds % 1'000'000'000);</div>
+<div><span><br>
+</span></div>
+<div>m_appliedCorrection = m_requestedCorrection;</div>
+<div><span><br>
+</span></div>
+<div>(Note: nanosecond adjustment in m_sleepTime omitted here.</div>
+<div>m_inputRate is the frequency related to the CLOCK_MONOTONIC resolution period</div>
+<div>m_initialCount is the "Timer ticks" in the period corresponding to m_outputRate</div>
+<div>m_outputRate is the times per second the wait() must return when called repeatedly).</div>
+<div><span><br>
+</span></div>
+<div>The reason why I apply correction only if different, is to avoid drift.</div>
+<div>But I'm not sure anymore now.</div>
+<div><span><br>
+</span></div>
+<div>How is the permil adjustment supposed to be applied?</div>
+<div><span><br>
+</span></div>
+<div>Regards,</div>
+<div>Francesco Casadei</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

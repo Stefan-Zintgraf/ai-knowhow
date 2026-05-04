@@ -1,0 +1,188 @@
+### HEADER
+Id=11066
+Link=http://at-zammad/#ticket/zoom/11066
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies GmbH (ID=399, Number=1000, Country=DE)
+Commission=Omron Automation Americas, PPMAC (ID=562, Number=562)
+Number=7011066
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=us-sales@acontis.com (ID=227, FirstName=Us, LastName=Sales)
+CreatedBy=us-sales@acontis.com (ID=227, FirstName=Us, LastName=Sales)
+Type=
+TimeUnit=
+CreatedAt=22.07.2025 21:12:18 +00:00
+UpdatedAt=23.07.2025 10:19:48 +00:00
+CloseAt=23.07.2025 10:19:48 +00:00
+ArticlesCount=3
+
+### TITLE
+Fwd: Acontis EtherCAT software evaluation request from General Electric
+
+### ARTICLE00_HEADER
+Id=63470
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.07.2025 21:12:18 +00:00
+UpdatedAt=22.07.2025 21:12:18 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Acontis EtherCAT software evaluation request from General Electric
+
+### ARTICLE00_BODY
+<div>
+<div>Hi team,</div>
+<div> </div>
+<div>Is anyone familiar with the PMAC EtherCAT Simulator? Do we know if this is implemented using EC-Simulator?</div>
+<div> </div>
+<div>Also, I’m not quite sure what the customer means when they say they want to “simulate the EtherCAT along with the PMAC Simulator.” Are they implying that the PMAC Simulator includes EtherCAT simulation, or is it simulating other parts of the system but not EtherCAT?</div>
+</div><div> </div><div>Troy</div><div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>acontis technologies GmbH &lt;sales@acontis.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Acontis EtherCAT software evaluation request from General Electric</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>July 18, 2025 at 11:55:17 AM MDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>sales@acontis.com, us-sales@acontis.com<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Cc: </b></span><span>Graham.Lancaster@ge.com<br></span>
+</div>
+<br><div><div>
+<p>Dear Mr./Ms. Lancaster,</p>
+<p>thank you for your registration.<br>Soon, we will provide you with the requested software.</p>
+<div> </div>
+<p>Title: Omron PMAC Virtual ECAT Simulation<br>First Name: Graham<br>Last Name: Lancaster<br>Company: General Electric<br>Position: <br>Address: 301 Feaster Rd<br>Zip/Postal Code: 29615<br>City: Greenville<br>Country: United States<br>State: SC<br>E-Mail: Graham.Lancaster@ge.com<br>Phone: 8039841751<br>Any Questions?: <span>Would it be possible to simulate the ethercat along with the PMAC Simulator?<br>Newsletter? <br></span>What are you interested in?</p>
+<ul>
+<ul>
+<li>
+</li>
+<li>
+</li>
+<li>
+</li>
+<li>EtherCAT® Network and Slave / SubDevice Simulation</li>
+<li>
+</li>
+</ul>
+</ul>
+<div> </div>
+<p><img alt="acontislogo.png" src="/api/v1/ticket_attachment/11066/63470/263060?view=inline" style="max-width:100%;max-height:85px;"></p>
+<p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img alt="linkedIn_small.png" src="/api/v1/ticket_attachment/11066/63470/263061?view=inline" style="max-width:100%;max-height:22px;"></a></span></p>
+</div></div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=63511
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=23.07.2025 10:11:14 +00:00
+UpdatedAt=23.07.2025 10:11:14 +00:00
+
+### ARTICLE01_BODY
+Hi Christoph,<div><br></div><div>mir ist nicht klar, worum es dabei geht.</div><div><br></div><div>Viele Grüße</div><div>Paul</div>
+
+### ARTICLE02_HEADER
+Id=63513
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.07.2025 10:19:28 +00:00
+UpdatedAt=23.07.2025 10:19:31 +00:00
+
+### ARTICLE02_SUBJECT
+Fwd: Acontis EtherCAT software evaluation request from General Electric
+
+### ARTICLE02_BODY
+Hi Troy,<div><br></div><div>PMAC might be product from Omron Delta Tau and therefore Graham has to contact them.</div><div>FYI, Omron Delta Tau haven´t ordered EC-Simulator, but they are evaluating.</div><div>I can´t imagine, that they have already delivered something.</div><div><br></div><div>Christoph<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, 88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, July 22, 2025 at 11:12:18 PM, Us Sales wrote:<br><br><div>
+<div>Hi team,</div>
+<div> </div>
+<div>Is anyone familiar with the PMAC EtherCAT Simulator? Do we know if this is implemented using EC-Simulator?</div>
+<div> </div>
+<div>Also, I’m not quite sure what the customer means when they say they want to “simulate the EtherCAT along with the PMAC Simulator.” Are they implying that the PMAC Simulator includes EtherCAT simulation, or is it simulating other parts of the system but not EtherCAT?</div>
+</div>
+<div> </div>
+<div>Troy</div>
+<div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>acontis technologies GmbH &lt;sales@acontis.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Acontis EtherCAT software evaluation request from General Electric</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>July 18, 2025 at 11:55:17 AM MDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>sales@acontis.com, us-sales@acontis.com<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Cc: </b></span><span>Graham.Lancaster@ge.com<br></span>
+</div>
+<br><div><div>
+<p>Dear Mr./Ms. Lancaster,</p>
+<p>thank you for your registration.<br>Soon, we will provide you with the requested software.</p>
+<div> </div>
+<p>Title: Omron PMAC Virtual ECAT Simulation<br>First Name: Graham<br>Last Name: Lancaster<br>Company: General Electric<br>Position: <br>Address: 301 Feaster Rd<br>Zip/Postal Code: 29615<br>City: Greenville<br>Country: United States<br>State: SC<br>E-Mail: Graham.Lancaster@ge.com<br>Phone: 8039841751<br>Any Questions?: <span>Would it be possible to simulate the ethercat along with the PMAC Simulator?<br>Newsletter? <br></span>What are you interested in?</p>
+<ul>
+<ul>
+<li>
+</li>
+<li>
+</li>
+<li>
+</li>
+<li>EtherCAT® Network and Slave / SubDevice Simulation</li>
+<li>
+</li>
+</ul>
+</ul>
+<div> </div>
+<p><img alt="acontislogo.png" src="/api/v1/ticket_attachment/11066/63513/263197?view=inline" style="max-width:100%;max-width:100%;max-height:85px;"></p>
+<p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img alt="linkedIn_small.png" src="/api/v1/ticket_attachment/11066/63513/263198?view=inline" style="max-width:100%;max-width:100%;max-height:22px;"></a></span></p>
+</div></div>
+</blockquote>
+</div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

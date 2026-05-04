@@ -1,0 +1,143 @@
+### HEADER
+Id=9713
+Link=http://at-zammad/#ticket/zoom/9713
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=709713
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=20.01.2025 02:58:30 +00:00
+UpdatedAt=03.02.2025 07:12:59 +00:00
+CloseAt=03.02.2025 07:12:59 +00:00
+ArticlesCount=2
+
+### TITLE
+About build EOM demo using EK1000
+
+### ARTICLE00_HEADER
+Id=55234
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.01.2025 02:58:30 +00:00
+UpdatedAt=20.01.2025 02:58:32 +00:00
+
+### ARTICLE00_SUBJECT
+About build EOM demo using EK1000
+
+### ARTICLE00_BODY
+<div style="color: #1f497d;">
+<div style=" color: rgb(31, 73, 125);">Dear,</div>
+<div style=" color: rgb(31, 73, 125);">We order and get the beckhoff ek1000 slave, and plan to building a EOM demo.</div>
+<div>But Christoph told me that the ek1000 maybe need to update the firmware.</div>
+<div>Could you please send to us if the firmware update is necessary?</div>
+<div style=" color: rgb(31, 73, 125);"><br></div>
+<div style=" color: rgb(31, 73, 125);"><br></div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋</div>
+<div>
+<div>
+<br>北京盟通科技有限公司 <br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>+86- 571- 56125098 （杭州）</div>
+<div>+886-2-25222206 （台北）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" title="http://www.motrotech.com/" target="_blank"></a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div style=" color: rgb(31, 73, 125);"><br></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=55242
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.01.2025 08:00:42 +00:00
+UpdatedAt=20.01.2025 08:00:43 +00:00
+
+### ARTICLE01_SUBJECT
+About build EOM demo using EK1000
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>the firmware update is necessary. You can find it in the following link:</div><div><div>
+<a href="http://downloads.acontis.com" title="http://downloads.acontis.com" rel="nofollow noreferrer noopener" target="_blank">http://downloads.acontis.com</a><a href="sftp://home155839490.1and1-data.host/Downloads/2024/M-O/Motrotech/EK1000-V1.4.3.zip" title="sftp://home155839490.1and1-data.host/Downloads/2024/M-O/Motrotech/EK1000-V1.4.3.zip">/2024/M-O/Motrotech/EK1000-V1.4.3.zip</a>
+</div></div><div><br></div><div>There is an SD-Card inside the the EK1000, you take it out and copy the new firmware to the card.</div><div><br></div><div>Best Regards</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, January 20, 2025 at 3:58:30 AM, John Zhang wrote:<br><br><div style="color: #1f497d;">
+<div style=" color: rgb(31, 73, 125);">Dear,</div>
+<div style=" color: rgb(31, 73, 125);">We order and get the beckhoff ek1000 slave, and plan to building a EOM demo.</div>
+<div>But Christoph told me that the ek1000 maybe need to update the firmware.</div>
+<div>Could you please send to us if the firmware update is necessary?</div>
+<div style=" color: rgb(31, 73, 125);"><br></div>
+<div style=" color: rgb(31, 73, 125);"><br></div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋</div>
+<div>
+<div>
+<br>北京盟通科技有限公司 <br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>+86- 571- 56125098 （杭州）</div>
+<div>+886-2-25222206 （台北）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" title="http://www.motrotech.com/" target="_blank"></a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div style=" color: rgb(31, 73, 125);"><br></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

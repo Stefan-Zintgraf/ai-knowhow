@@ -1,0 +1,108 @@
+### HEADER
+Id=5587
+Link=http://at-zammad/#ticket/zoom/5587
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Lam Research Corporation (ID=363, Number=55504, Country=US)
+Commission=LAM, Semi EC-Master Linux (ID=431, Number=431)
+Number=705587
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=behzad.lajevardi@lamresearch.com (ID=51, FirstName=Behzad, LastName=Lajevardi)
+CreatedBy=behzad.lajevardi@lamresearch.com (ID=51, FirstName=Behzad, LastName=Lajevardi)
+Type=
+TimeUnit=
+CreatedAt=16.05.2023 16:33:33 +00:00
+UpdatedAt=17.05.2023 06:13:01 +00:00
+CloseAt=17.05.2023 06:13:00 +00:00
+ArticlesCount=2
+
+### TITLE
+EC master on Linux
+
+### ARTICLE00_HEADER
+Id=29727
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.05.2023 16:33:34 +00:00
+UpdatedAt=16.05.2023 16:33:38 +00:00
+
+### ARTICLE00_SUBJECT
+EC master on Linux
+
+### ARTICLE00_BODY
+<div>
+<p> </p>
+<p>Hello,</p>
+<p> </p>
+<p>One of our development teams needs to run EC master on Raspberry Pi and they were searching for it and saw <b>EC-master-v3.1.0.18-Linux-ARM_32Bit-Eval.tar.gz</b></p>
+<p>I was wondering if this is the same Linux development licence we have from acontis. I see the following but I am not sure if this can be used on Raspberry Pi:</p>
+<p>
+<img style="max-width:100%;width:3.4074in;max-height:.8379in;width:327px;max-height:80px;" src="/api/v1/ticket_attachment/5587/29727/124724?view=inline"></p>
+<p>Regards,</p>
+<p> Behzad Lajevardi<span><br>
+</span><span>SW &amp; Controls<br> P: 510.572.4275</span><span><br>
+</span><span><br>
+<b><span>LAM RESEARCH<br>
+</span></b><span>4650 Cushing Pkwy, Fremont CA 94538 USA <br>
+</span></span><a href="https://www.lamresearch.com/" rel="nofollow noreferrer noopener" title="https://www.lamresearch.com/" target="_blank">lamresearch.com</a><u><span><br>
+<br>
+</span></u><a href="https://www.facebook.com/LamResearchCorporation" rel="nofollow noreferrer noopener" title="https://www.facebook.com/LamResearchCorporation" target="_blank">Facebook</a> | <a href="http://www.linkedin.com/company/lam-research" rel="nofollow noreferrer noopener" title="http://www.linkedin.com/company/lam-research" target="_blank">LinkedIn</a> | <a href="https://twitter.com/lamresearch" rel="nofollow noreferrer noopener" title="https://twitter.com/lamresearch" target="_blank">Twitter</a> | <a href="https://www.instagram.com/lam_research/" rel="nofollow noreferrer noopener" title="https://www.instagram.com/lam_research/" target="_blank">Instagram</a></p>
+<p>
+<img border="0" style="max-width:100%;width:1.9814in;max-height:.3148in;width:190px;max-height:30px;" src="/api/v1/ticket_attachment/5587/29727/124723?view=inline"></p>
+<p> </p>
+</div><div>
+<br> LAM RESEARCH CONFIDENTIALITY NOTICE: This e-mail transmission, and any documents, files, or previous e-mail messages attached to it, (collectively, "E-mail Transmission") may be subject to one or more of the following based on the associated sensitivity level: E-mail Transmission (i) contains confidential information, (ii) is prohibited from distribution outside of Lam, and/or (iii) is intended solely for and restricted to the specified recipient(s). If you are not the intended recipient, or a person responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying, distribution or use of any of the information contained in or attached to this message is STRICTLY PROHIBITED. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without reading them or saving them to disk. Thank you.</div><br>
+<p>Confidential – Limited Access and Use<br>
+</p>
+
+### ARTICLE01_HEADER
+Id=29735
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.05.2023 06:13:00 +00:00
+UpdatedAt=17.05.2023 06:13:04 +00:00
+
+### ARTICLE01_SUBJECT
+EC master on Linux
+
+### ARTICLE01_BODY
+LAM braucht ARM<div><br></div><div>Grüße,</div><div>Cyril<br><div>
+<br><div>---Begin forwarded message:---<br><br>
+</div>
+<div><blockquote type="cite">
+<div>Subject: EC master on Linux<br>Date: 05/16/2023 18:33<br>From: Behzad Lajevardi &lt;behzad.lajevardi@lamresearch.com&gt;<br>To: ecsupport@acontis.com<br>CC: ThaoTam.Trinh@lamresearch.com<br><br>
+</div>
+<div>
+<p> </p>
+<p>Hello,</p>
+<p> </p>
+<p>One of our development teams needs to run EC master on Raspberry Pi and they were searching for it and saw <b>EC-master-v3.1.0.18-Linux-ARM_32Bit-Eval.tar.gz</b></p>
+<p>I was wondering if this is the same Linux development licence we have from acontis. I see the following but I am not sure if this can be used on Raspberry Pi:</p>
+<p>
+<img style="max-width:100%;max-width:100%;width:3.4074in;max-height:.8379in;width:327px;max-height:80px;" src="/api/v1/ticket_attachment/5587/29735/124738?view=inline"></p>
+<p>Regards,</p>
+<p> Behzad Lajevardi<span><br>
+</span><span>SW &amp; Controls<br> P: 510.572.4275</span><span><br>
+</span><span><br>
+<b><span>LAM RESEARCH<br>
+</span></b><span>4650 Cushing Pkwy, Fremont CA 94538 USA <br>
+</span></span><a href="https://www.lamresearch.com/" rel="nofollow noreferrer noopener" title="https://www.lamresearch.com/" target="_blank">lamresearch.com</a><u><span><br>
+<br>
+</span></u><a href="https://www.facebook.com/LamResearchCorporation" rel="nofollow noreferrer noopener" title="https://www.facebook.com/LamResearchCorporation" target="_blank">Facebook</a> | <a href="http://www.linkedin.com/company/lam-research" rel="nofollow noreferrer noopener" title="http://www.linkedin.com/company/lam-research" target="_blank">LinkedIn</a> | <a href="https://twitter.com/lamresearch" rel="nofollow noreferrer noopener" title="https://twitter.com/lamresearch" target="_blank">Twitter</a> | <a href="https://www.instagram.com/lam_research/" rel="nofollow noreferrer noopener" title="https://www.instagram.com/lam_research/" target="_blank">Instagram</a></p>
+<p>
+<img border="0" style="max-width:100%;max-width:100%;width:1.9814in;max-height:.3148in;width:190px;max-height:30px;" src="/api/v1/ticket_attachment/5587/29735/124739?view=inline"></p>
+<p> </p>
+</div>
+<div>
+<br> LAM RESEARCH CONFIDENTIALITY NOTICE: This e-mail transmission, and any documents, files, or previous e-mail messages attached to it, (collectively, "E-mail Transmission") may be subject to one or more of the following based on the associated sensitivity level: E-mail Transmission (i) contains confidential information, (ii) is prohibited from distribution outside of Lam, and/or (iii) is intended solely for and restricted to the specified recipient(s). If you are not the intended recipient, or a person responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying, distribution or use of any of the information contained in or attached to this message is STRICTLY PROHIBITED. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without reading them or saving them to disk. Thank you.</div>
+<br>
+<p>Confidential – Limited Access and Use<br>
+</p>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

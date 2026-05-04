@@ -1,0 +1,139 @@
+### HEADER
+Id=5150
+Link=http://at-zammad/#ticket/zoom/5150
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=Korea Inst. fusion Energy, Motion Controller (ID=583, Number=583)
+Number=705150
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=15.03.2023 03:03:44 +00:00
+UpdatedAt=17.03.2023 07:34:24 +00:00
+CloseAt=17.03.2023 07:34:24 +00:00
+ArticlesCount=2
+
+### TITLE
+About using EC-EngineerWeb
+
+### ARTICLE00_HEADER
+Id=27280
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.03.2023 03:03:44 +00:00
+UpdatedAt=15.03.2023 03:03:47 +00:00
+
+### ARTICLE00_SUBJECT
+About using EC-EngineerWeb
+
+### ARTICLE00_BODY
+<p>Hi.</p><p><br></p><p>The customer is KFE(Korea Institute of Fusion Energy)</p><p>&amp; testing in the following environment.</p><p><br></p><ul>
+<li>EC-EngineerWeb : 2.0.2</li>
+<li>OS : Rocky Linux 8.5</li>
+<li>Kernel : 4.18.0-348.el8.0.2.x86_64 (또는, 4.18.0-348.20.1.rt7.150.el8_5.x86_64)</li>
+<li>connect directly slaves with PC after installing EC-EngineerWeb</li>
+</ul>
+<p>The customer said, connected normally, but Analog input value is not updated.</p><p>(There is no problem if using EC-Engineer)</p><p><br></p><p>In addition, the error message also occurs sometimes.</p><p><span style=" color: rgb(32, 32, 32);">"Debug: Cyclic command WKC error on LRD - Address: 0x10000800 - WKC act/set=0/1"</span></p><p><span style="color: rgb(32, 32, 32);"><br></span></p><p><span style="color: rgb(32, 32, 32);">Please advise.</span></p><div> </div><div><span><img alt="image.16784354924550.png" src="/api/v1/ticket_attachment/5150/27280/114693?view=inline" border="0" style="max-width:100%;width:1188px;max-height:664px;"><br></span></div><div> </div><br><br><p><br></p><p>감사합니다.</p><p><br></p><p>Thank you</p><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p><span style=" color: rgb(31, 73, 125);"> </span><img src="/api/v1/ticket_attachment/5150/27280/114694?view=inline" title="" alt="" style="max-width:100%;width: 131px;max-height: 122px;"></p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sundukhan@prestosolution.co.kr</a></span></u></i><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table><p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span><span style=" color: rgb(31, 73, 125);"></span></p><p><a href="https://www.automationworld.co.kr/fairCorpMyInfo2.do?selAction=BS&amp;CORP_GUBUN=E&amp;hl=KOR&amp;match_gubun=1" rel="nofollow noreferrer noopener" title="https://www.automationworld.co.kr/fairCorpMyInfo2.do?selAction=BS&amp;CORP_GUBUN=E&amp;hl=KOR&amp;match_gubun=1" target="_blank"></a></p>
+
+### ARTICLE01_HEADER
+Id=27326
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.03.2023 15:12:10 +00:00
+UpdatedAt=15.03.2023 15:12:15 +00:00
+
+### ARTICLE01_SUBJECT
+About using EC-EngineerWeb
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>please find the latest version here: </div><div>
+<div><a href="https://downloads.acontis.com/2023/J-L/Korea_Inst._Fusion_Energy_(40512)(KR)/EC-Engineer_Web/2.1.2_Web/EC-EngineerWeb_Linux-x64_Dongle_V2.1.2.tar.gz" title="https://downloads.acontis.com/2023/J-L/Korea_Inst._Fusion_Energy_(40512)(KR)/EC-Engineer_Web/2.1.2_Web/EC-EngineerWeb_Linux-x64_Dongle_V2.1.2.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/J-L/Korea_Inst._Fusion_Energy_(40512)(KR)/EC-Engineer_Web/2.1.2_Web/EC-EngineerWeb_Linux-x64_Dongle_V2.1.2.tar.gz</a></div>
+<div><br></div>
+<div>With this version it should work. It is the last version from 2022, and the last version the customer can get, because there is no active maintenance.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, March 15, 2023 at 4:03:44 AM, DukHan Sun wrote:<br><br><p>Hi.</p>
+<p><br></p>
+<p>The customer is KFE(Korea Institute of Fusion Energy)</p>
+<p>&amp; testing in the following environment.</p>
+<p><br></p>
+<ul>
+<li>EC-EngineerWeb : 2.0.2</li>
+<li>OS : Rocky Linux 8.5</li>
+<li>Kernel : 4.18.0-348.el8.0.2.x86_64 (또는, 4.18.0-348.20.1.rt7.150.el8_5.x86_64)</li>
+<li>connect directly slaves with PC after installing EC-EngineerWeb</li>
+</ul>
+<p>The customer said, connected normally, but Analog input value is not updated.</p>
+<p>(There is no problem if using EC-Engineer)</p>
+<p><br></p>
+<p>In addition, the error message also occurs sometimes.</p>
+<p><span style=" color: rgb(32, 32, 32);">"Debug: Cyclic command WKC error on LRD - Address: 0x10000800 - WKC act/set=0/1"</span></p>
+<p><span style="color: rgb(32, 32, 32);"><br></span></p>
+<p><span style="color: rgb(32, 32, 32);">Please advise.</span></p>
+<div> </div>
+<div><span><img alt="image.16784354924550.png" src="/api/v1/ticket_attachment/5150/27326/114961?view=inline" border="0" style="max-width:100%;max-width:100%;width:1188px;max-height:664px;"><br></span></div>
+<div> </div>
+<br><br><p><br></p>
+<p>감사합니다.</p>
+<p><br></p>
+<p>Thank you</p>
+<p><br></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p><span style=" color: rgb(31, 73, 125);"> </span><img src="/api/v1/ticket_attachment/5150/27326/114962?view=inline" title="" alt="" style="max-width:100%;max-width:100%;width: 131px;max-height: 122px;"></p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sundukhan@prestosolution.co.kr</a></span></u></i><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span><span style=" color: rgb(31, 73, 125);"></span></p>
+<p><a href="https://www.automationworld.co.kr/fairCorpMyInfo2.do?selAction=BS&amp;CORP_GUBUN=E&amp;hl=KOR&amp;match_gubun=1" rel="nofollow noreferrer noopener" title="https://www.automationworld.co.kr/fairCorpMyInfo2.do?selAction=BS&amp;CORP_GUBUN=E&amp;hl=KOR&amp;match_gubun=1" target="_blank"></a></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

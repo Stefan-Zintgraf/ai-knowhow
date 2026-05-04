@@ -1,0 +1,228 @@
+### HEADER
+Id=10799
+Link=http://at-zammad/#ticket/zoom/10799
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=7010799
+Owner=s.romero@acontis.com (ID=2460, FirstName=Sebastian, LastName=Romero)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=17.06.2025 15:08:43 +00:00
+UpdatedAt=23.06.2025 06:14:59 +00:00
+CloseAt=23.06.2025 06:14:59 +00:00
+ArticlesCount=3
+
+### TITLE
+Refresh timing is strange when the variable is deleted from Process Data Image (PNo.138)(PNo.139)
+
+### ARTICLE00_HEADER
+Id=61883
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.06.2025 15:08:43 +00:00
+UpdatedAt=17.06.2025 15:08:46 +00:00
+
+### ARTICLE00_SUBJECT
+Refresh timing is strange when the variable is deleted from Process Data Image (PNo.138)(PNo.139)
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi Support Team,</div><div dir="ltr">
+<br>
+</div><div dir="ltr">About [Watch List] tab, the same issue is occurred.</div><div dir="ltr">Please check it.</div><div dir="ltr">
+<br>
+</div><div dir="ltr">Best regards,</div><div dir="ltr">Yuichi</div><div dir="ltr">
+<br>
+</div><div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span><br>
+</span></p>
+</div><div>
+<div dir="ltr"></div>
+<div>
+<b>差出人: </b>SSV_IDEYuichi &lt;yuichi.ide@soft-service.co.jp&gt;<br>
+<b>日付: </b>水曜日, 2025年6月18日 0:04<br>
+<b>宛先: </b>ecsupport@acontis.com &lt;ecsupport@acontis.com&gt;<br>
+<b>CC: </b>ecsupport &lt;ecsupport@soft-service.co.jp&gt;<br>
+<b>件名: </b>Refresh timing is strange when the variable is deleted from Process Data Image (PNo.138)<br>
+<br>
+</div>
+<div dir="ltr">Hi Support Team,</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">This is from Mitsubishi (commission No. 40627).<br> EC-Engineer V.3.9.11.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">The deleted variable remains displayed unless [Refresh] is selected from the menu or F5 is pressed, even if any variable is deleted in "Process Data Image". I think the refresh timing is strange…</div>
+<div dir="ltr">The Reproduction procedure is…</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">1. Add SubDevice and select Master.</div>
+<div dir="ltr">2. Select [Process Data Image] tab and delete a variable</div>
+<div dir="ltr">-&gt; the deleted variable is remained.</div>
+<div dir="ltr">3. Select Refresh from Menu or push F5, the deleted variable is disappeared.</div>
+<div dir="ltr">or the other variable is deleted, the last deleted variable is disappeared but the deleted variable is remained…</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Please check it.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Best regards,</div>
+<div dir="ltr">Yuichi</div>
+<div dir="ltr">
+<br>
+</div>
+<div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span><br>
+</span></p>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=61904
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=18.06.2025 06:47:40 +00:00
+UpdatedAt=18.06.2025 06:47:40 +00:00
+
+### ARTICLE01_BODY
+Beim Watchlist Tab kein Delete erlauben. Also Button ausgrauen. Edit ist ok, aber delete muss weg
+
+### ARTICLE02_HEADER
+Id=61906
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.06.2025 06:48:59 +00:00
+UpdatedAt=18.06.2025 06:49:00 +00:00
+
+### ARTICLE02_SUBJECT
+Refresh timing is strange when the variable is deleted from Process Data Image (PNo.138)(PNo.139)
+
+### ARTICLE02_BODY
+Hi Yuichi,<div><br></div><div>in the next version we will disable the delete on the Watchlist tab. It should only be a Watchlist. The delete should be made on the SubDevice Tab or the process Image tab. But we will have a look at the other issue with the refresh on the process image tab.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, June 17, 2025 at 5:08:43 PM, Yuichi Ide wrote:<br><br><div dir="ltr">Hi Support Team,</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">About [Watch List] tab, the same issue is occurred.</div>
+<div dir="ltr">Please check it.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Best regards,</div>
+<div dir="ltr">Yuichi</div>
+<div dir="ltr">
+<br>
+</div>
+<div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span><br>
+</span></p>
+</div>
+<div>
+<div dir="ltr"></div>
+<div>
+<b>差出人: </b>SSV_IDEYuichi &lt;yuichi.ide@soft-service.co.jp&gt;<br>
+<b>日付: </b>水曜日, 2025年6月18日 0:04<br>
+<b>宛先: </b>ecsupport@acontis.com &lt;ecsupport@acontis.com&gt;<br>
+<b>CC: </b>ecsupport &lt;ecsupport@soft-service.co.jp&gt;<br>
+<b>件名: </b>Refresh timing is strange when the variable is deleted from Process Data Image (PNo.138)<br>
+<br>
+</div>
+<div dir="ltr">Hi Support Team,</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">This is from Mitsubishi (commission No. 40627).<br> EC-Engineer V.3.9.11.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">The deleted variable remains displayed unless [Refresh] is selected from the menu or F5 is pressed, even if any variable is deleted in "Process Data Image". I think the refresh timing is strange…</div>
+<div dir="ltr">The Reproduction procedure is…</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">1. Add SubDevice and select Master.</div>
+<div dir="ltr">2. Select [Process Data Image] tab and delete a variable</div>
+<div dir="ltr">-&gt; the deleted variable is remained.</div>
+<div dir="ltr">3. Select Refresh from Menu or push F5, the deleted variable is disappeared.</div>
+<div dir="ltr">or the other variable is deleted, the last deleted variable is disappeared but the deleted variable is remained…</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Please check it.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Best regards,</div>
+<div dir="ltr">Yuichi</div>
+<div dir="ltr">
+<br>
+</div>
+<div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span><br>
+</span></p>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

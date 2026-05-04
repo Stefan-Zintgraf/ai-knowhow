@@ -1,0 +1,78 @@
+### HEADER
+Id=5937
+Link=http://at-zammad/#ticket/zoom/5937
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Liebherr-Werk Nenzing GmbH (ID=8, Number=40314, Country=AT)
+Commission=Liebherr, tower crane control (ID=8, Number=8)
+Number=705937
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=andreas.jung@liebherr.com (ID=338, FirstName=Andreas, LastName=Jung)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=10.07.2023 10:32:10 +00:00
+UpdatedAt=03.08.2023 14:37:58 +00:00
+CloseAt=11.07.2023 08:28:54 +00:00
+ArticlesCount=2
+
+### TITLE
+Update Request from Liebherr Werk Nenzing GmbH
+
+### ARTICLE00_HEADER
+Id=31683
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.07.2023 10:32:10 +00:00
+UpdatedAt=10.07.2023 10:32:12 +00:00
+
+### ARTICLE00_SUBJECT
+Update Request from Liebherr Werk Nenzing GmbH
+
+### ARTICLE00_BODY
+<p> </p><p>Dear Mr./Ms. Jung,</p><p>thank you for your registration.<br>
+<br></p><p>First Name: Andreas<br>Last Name: Jung <br>Company: Liebherr Werk Nenzing GmbH <br><span>Commission: <br></span><span>Country: Austria <br></span><span>City: Nenzing <br></span><span>E-Mail: andreas.jung@liebherr.com <br></span>Request update for: <span>EC-Master <br></span><span>Update Type: Major <br></span><span>Operating System: Vxworks 7 <br></span><span>Operating Sys. Version: Vxworks 7 22.03 <br></span>Any Questions?: </p><p><img src="/api/v1/ticket_attachment/5937/31683/131843?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH <br>Gartenstraße 46, 88212 Ravensburg/Germany <br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a>
+<br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com <br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/5937/31683/131842?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=31744
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.07.2023 08:28:54 +00:00
+UpdatedAt=11.07.2023 08:28:56 +00:00
+
+### ARTICLE01_SUBJECT
+Update Request from Liebherr Werk Nenzing GmbH
+
+### ARTICLE01_BODY
+<div>Hallo Herr Jung,</div><div>Hier ist die neuste Version </div><div><br></div><div><a href="https://downloads.acontis.com/2023/J-L/Liebherr_(40314)(AT)/EC-Master_VxWorks_PPC_32Bit/3.1.4.11/EC-Master-ClassA-AddOn-V3.1.4.11-VxWorks70-PPC_32Bit-SDK_Source.zip" title="https://downloads.acontis.com/2023/J-L/Liebherr_(40314)(AT)/EC-Master_VxWorks_PPC_32Bit/3.1.4.11/EC-Master-ClassA-AddOn-V3.1.4.11-VxWorks70-PPC_32Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/J-L/Liebherr_(40314)(AT)/EC-Master_VxWorks_PPC_32Bit/3.1.4.11/EC-Master-ClassA-AddOn-V3.1.4.11-VxWorks70-PPC_32Bit-SDK_Source.zip</a></div><div><a href="https://downloads.acontis.com/2023/J-L/Liebherr_(40314)(AT)/EC-Master_VxWorks_PPC_32Bit/3.1.4.11/EC-Master-V3.1.4.11-VxWorks70-PPC_32Bit-SDK_Source.zip" title="https://downloads.acontis.com/2023/J-L/Liebherr_(40314)(AT)/EC-Master_VxWorks_PPC_32Bit/3.1.4.11/EC-Master-V3.1.4.11-VxWorks70-PPC_32Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/J-L/Liebherr_(40314)(AT)/EC-Master_VxWorks_PPC_32Bit/3.1.4.11/EC-Master-V3.1.4.11-VxWorks70-PPC_32Bit-SDK_Source.zip</a></div><div><a href="https://downloads.acontis.com/2023/J-L/Liebherr_(40314)(AT)/EC-Master_VxWorks_PPC_32Bit/3.1.4.11/EC-Master-FP-VxWorksRtp-V3.1.4.11-VxWorks70-x86_64Bit-SDK_Source.zip" title="https://downloads.acontis.com/2023/J-L/Liebherr_(40314)(AT)/EC-Master_VxWorks_PPC_32Bit/3.1.4.11/EC-Master-FP-VxWorksRtp-V3.1.4.11-VxWorks70-x86_64Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/J-L/Liebherr_(40314)(AT)/EC-Master_VxWorks_PPC_32Bit/3.1.4.11/EC-Master-FP-VxWorksRtp-V3.1.4.11-VxWorks70-x86_64Bit-SDK_Source.zip</a></div><div><br></div><div>Mit freundlichen Grüßen</div><div>Daniel Schmid</div><div><br></div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Monday, 10 July 2023 at 12:32:10, sales acontis wrote:<br><br><p> </p>
+<p>Dear Mr./Ms. Jung,</p>
+<p>thank you for your registration.<br>
+<br></p>
+<p>First Name: Andreas<br>Last Name: Jung <br>Company: Liebherr Werk Nenzing GmbH <br><span>Commission: <br></span><span>Country: Austria <br></span><span>City: Nenzing <br></span><span>E-Mail: andreas.jung@liebherr.com <br></span>Request update for: <span>EC-Master <br></span><span>Update Type: Major <br></span><span>Operating System: Vxworks 7 <br></span><span>Operating Sys. Version: Vxworks 7 22.03 <br></span>Any Questions?: </p>
+<p><img src="/api/v1/ticket_attachment/5937/31744/131990?view=inline" alt="" style="max-width:100%;max-width:100%;width:163px;max-height:85px;"></p>
+<p><span>acontis technologies GmbH <br>Gartenstraße 46, 88212 Ravensburg/Germany <br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a>
+<br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com <br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/5937/31744/131991?view=inline" style="max-width:100%;max-width:100%;width:22px;max-height:22px;"></a></span></p>
+<br>
+</blockquote></div><div><br></div><br><br>

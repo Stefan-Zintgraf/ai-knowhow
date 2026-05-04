@@ -1,0 +1,158 @@
+### HEADER
+Id=11884
+Link=http://at-zammad/#ticket/zoom/11884
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Philips Healthcare (ID=381, Number=40395, Country=US)
+Commission=Philips Healthcare, CT Advanced Development (ID=453, Number=453)
+Number=7011884
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=naji.karkour@philips.com (ID=166, FirstName=Naji, LastName=Karkour)
+CreatedBy=naji.karkour@philips.com (ID=166, FirstName=Naji, LastName=Karkour)
+Type=
+TimeUnit=
+CreatedAt=14.11.2025 13:57:27 +00:00
+UpdatedAt=14.11.2025 16:27:21 +00:00
+CloseAt=14.11.2025 16:27:21 +00:00
+ArticlesCount=3
+
+### TITLE
+Question about oJobParms.bAllCycFramesProcessed
+
+### ARTICLE00_HEADER
+Id=68563
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.11.2025 13:57:27 +00:00
+UpdatedAt=14.11.2025 13:57:32 +00:00
+
+### ARTICLE00_SUBJECT
+Question about oJobParms.bAllCycFramesProcessed
+
+### ARTICLE00_BODY
+<div>Hi,<br>
+<br>
+</div><div>We are seeing an infrequent issue after many hours of run:</div><div> When calling: <b>ExecJob(eUsrJob_ProcessAllRxFrames, &amp;oJobParms)</b>, result is EC_E_NOERROR</div><div> and then we check <b>oJobParms.bAllCycFramesProcessed</b>, we find it is set to <b> false</b>
+</div><div> </div><div> How do we get additional information on the reason <b>bAllCycFramesProcessed</b> is false?</div><div> </div><div>Thanks,</div><div>Naji</div><div> </div><br>
+<hr> The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.
+
+### ARTICLE01_HEADER
+Id=68566
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.11.2025 15:13:57 +00:00
+UpdatedAt=14.11.2025 15:13:59 +00:00
+
+### ARTICLE01_SUBJECT
+Question about oJobParms.bAllCycFramesProcessed
+
+### ARTICLE01_BODY
+Hi Naji,<div><br></div><div>you should get some EC_NOTIFY_FRAME_RESPONSE_ERROR</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, November 14, 2025 at 2:57:27 PM, Naji Karkour wrote:<br><br><div>Hi,<br>
+<br>
+</div>
+<div>We are seeing an infrequent issue after many hours of run:</div>
+<div> When calling: <b>ExecJob(eUsrJob_ProcessAllRxFrames, &amp;oJobParms)</b>, result is EC_E_NOERROR</div>
+<div> and then we check <b>oJobParms.bAllCycFramesProcessed</b>, we find it is set to <b> false</b>
+</div>
+<div> </div>
+<div> How do we get additional information on the reason <b>bAllCycFramesProcessed</b> is false?</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Naji</div>
+<div> </div>
+<br>
+<hr> The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=68576
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.11.2025 16:06:03 +00:00
+UpdatedAt=14.11.2025 16:06:03 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about oJobParms.bAllCycFramesProcessed [Ticket#7011884]
+
+### ARTICLE02_BODY
+<div>Thanks,</div><div>Naji</div><hr>
+<div dir="ltr">
+<b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Friday, November 14, 2025 10:13 AM<br>
+<b>To:</b> Karkour, Naji &lt;naji.karkour@philips.com&gt;<br>
+<b>Subject:</b> RE: Question about oJobParms.bAllCycFramesProcessed [Ticket#7011884] <div> </div>
+</div><div>
+<div>
+<span style="color:#9c6500;">Caution: </span>This e-mail originated from outside of Philips, be careful for phishing. </div>
+<br>
+<div>Hi Naji,<div> </div>
+<div>you should get some EC_NOTIFY_FRAME_RESPONSE_ERROR</div>
+<div> </div>
+<div>Best Regards,<br>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Friday, November 14, 2025 at 2:57:27 PM, Naji Karkour wrote:<br>
+<br>
+<div>Hi,<br>
+<br>
+</div>
+<div>We are seeing an infrequent issue after many hours of run:</div>
+<div>When calling: <b>ExecJob(eUsrJob_ProcessAllRxFrames, &amp;oJobParms)</b>, result is EC_E_NOERROR</div>
+<div>and then we check <b>oJobParms.bAllCycFramesProcessed</b>, we find it is set to <b>false</b> </div>
+<div> </div>
+<div>How do we get additional information on the reason <b>bAllCycFramesProcessed</b> is false?</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Naji</div>
+<div> </div>
+<br>
+<hr> The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>
+</div>

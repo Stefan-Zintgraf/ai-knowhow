@@ -1,0 +1,203 @@
+### HEADER
+Id=10220
+Link=http://at-zammad/#ticket/zoom/10220
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies GmbH (ID=399, Number=1000, Country=DE)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=7010220
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=19.03.2025 09:42:22 +00:00
+UpdatedAt=08.10.2025 18:34:34 +00:00
+CloseAt=21.03.2025 09:24:03 +00:00
+ArticlesCount=4
+
+### TITLE
+License for EC-Engineer and EC-Engineer Web
+
+### ARTICLE00_HEADER
+Id=58612
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.03.2025 09:42:22 +00:00
+UpdatedAt=19.03.2025 09:42:22 +00:00
+
+### ARTICLE00_SUBJECT
+License for EC-Engineer and EC-Engineer Web
+
+### ARTICLE00_BODY
+Hi Christoph, Thomas,<div> </div><div>A customer is asking about the license for EC-Engineer and EC-Engineer Web. I recall there is a click-through license for EC-Engineer and a License.rtf file gets created in the installation directory (C:\Program Files\acontis_technologies\EC-Engineer). I think this is the license they agreed to during installation, yes?</div><div> </div><div>What about EC-Engineer Web? I didn’t see any similar license text file in the installation directory of EC-Engineer Web.<br><div>
+<br>/Jon </div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=58613
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.03.2025 09:49:47 +00:00
+UpdatedAt=19.03.2025 09:49:51 +00:00
+
+### ARTICLE01_SUBJECT
+License for EC-Engineer and EC-Engineer Web
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>this file is not installed for EC-Engineer WEB at the moment. I will add it to the installer.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, March 19, 2025 at 10:42:22 AM, Jon Waters wrote:<br><br>Hi Christoph, Thomas,<div> </div>
+<div>A customer is asking about the license for EC-Engineer and EC-Engineer Web. I recall there is a click-through license for EC-Engineer and a License.rtf file gets created in the installation directory (C:\Program Files\acontis_technologies\EC-Engineer). I think this is the license they agreed to during installation, yes?</div>
+<div> </div>
+<div>What about EC-Engineer Web? I didn’t see any similar license text file in the installation directory of EC-Engineer Web.<br><div>
+<br>/Jon </div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=58654
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.03.2025 14:19:32 +00:00
+UpdatedAt=19.03.2025 14:19:32 +00:00
+
+### ARTICLE02_SUBJECT
+Re: License for EC-Engineer and EC-Engineer Web [Ticket#7010220]
+
+### ARTICLE02_BODY
+OK thanks Kai. I guess the license file would be the same though? We should probably at least update it to name EC-Engineer Web in addition to EC-Engineer, EC-Lyser, and EC-Inspector in the preamble section.<br><div>
+<br>/Jon </div><div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Mar 19, 2025, at 5:49 AM, Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>Hi Jon,<div> </div>
+<div>this file is not installed for EC-Engineer WEB at the moment. I will add it to the installer.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Wednesday, March 19, 2025 at 10:42:22 AM, Jon Waters wrote:<br><br>Hi Christoph, Thomas,<div> </div>
+<div>A customer is asking about the license for EC-Engineer and EC-Engineer Web. I recall there is a click-through license for EC-Engineer and a License.rtf file gets created in the installation directory (C:\Program Files\acontis_technologies\EC-Engineer). I think this is the license they agreed to during installation, yes?</div>
+<div> </div>
+<div>What about EC-Engineer Web? I didn’t see any similar license text file in the installation directory of EC-Engineer Web.<br><div>
+<br>/Jon </div>
+</div>
+</blockquote></div>
+</div>
+</div>
+</blockquote>
+</div>
+
+### ARTICLE03_HEADER
+Id=58658
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.03.2025 14:26:03 +00:00
+UpdatedAt=19.03.2025 14:26:05 +00:00
+
+### ARTICLE03_SUBJECT
+License for EC-Engineer and EC-Engineer Web
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>yes at the moment it is the same. If you or Christoph or Thomas have an updated version, please let me know. Then I will add it.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, March 19, 2025 at 3:19:32 PM, Jon Waters wrote:<br><br>OK thanks Kai. I guess the license file would be the same though? We should probably at least update it to name EC-Engineer Web in addition to EC-Engineer, EC-Lyser, and EC-Inspector in the preamble section.<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Mar 19, 2025, at 5:49 AM, Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>Hi Jon,<div> </div>
+<div>this file is not installed for EC-Engineer WEB at the moment. I will add it to the installer.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Wednesday, March 19, 2025 at 10:42:22 AM, Jon Waters wrote:<br><br>Hi Christoph, Thomas,<div> </div>
+<div>A customer is asking about the license for EC-Engineer and EC-Engineer Web. I recall there is a click-through license for EC-Engineer and a License.rtf file gets created in the installation directory (C:\Program Files\acontis_technologies\EC-Engineer). I think this is the license they agreed to during installation, yes?</div>
+<div> </div>
+<div>What about EC-Engineer Web? I didn’t see any similar license text file in the installation directory of EC-Engineer Web.<br><div>
+<br>/Jon </div>
+</div>
+</blockquote></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

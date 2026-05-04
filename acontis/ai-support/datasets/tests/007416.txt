@@ -1,0 +1,46 @@
+### HEADER
+Id=7416
+Link=http://at-zammad/#ticket/zoom/7416
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=Hanwha Semitech, CMT HM520-series (ID=858, Number=858)
+Number=707416
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=13.02.2024 06:05:53 +00:00
+UpdatedAt=14.02.2024 09:13:57 +00:00
+CloseAt=13.02.2024 08:18:56 +00:00
+ArticlesCount=1
+
+### TITLE
+Request for mingw available in Hypervisor ver 8.1.03.02
+
+### ARTICLE00_HEADER
+Id=40767
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.02.2024 06:05:53 +00:00
+UpdatedAt=13.02.2024 06:05:57 +00:00
+
+### ARTICLE00_SUBJECT
+Request for mingw available in Hypervisor ver 8.1.03.02
+
+### ARTICLE00_BODY
+<p>Hi.</p><p><br></p><p>The customer is Hanwha &amp; using <span style=" color: rgb(32, 32, 32);">Hypervisor.8.1.03.02.</span></p><p><span style=" color: rgb(32, 32, 32);"><br></span></p><p><span style=" color: rgb(32, 32, 32);">They said Linker error occurs as below </span></p><p><br></p><p><span style="color: rgb(32, 32, 32);">they are thinking that this error occurs because of a mismatch in the GLIBC version of the </span><span style=" color: rgb(32, 32, 32);">librtos.so</span></p><p><span style=" color: rgb(32, 32, 32);"><br></span></p><p>&amp; the latest hypervisor internal SDK delivered used mingw64 with GLIBC 2.34.</p><p>(Web site &amp; version delivered to the customer may is mingw64 with GLIBC 2.2.5)</p><p><br></p><p>Please give me a mingw64 available in Hypervisor ver 8.1.03.02</p><p><br></p><p><span style=" color: rgb(32, 32, 32);">------------------------------------------------------------------------------------</span></p><p>{<span>제 노트북의 library 경로<span>}/librtos.so: undefined reference to <span style=" color: red;">`sem_getvalue@GLIBC_2.34'</span></span></span></p><p>{<span>제 노트북의 library 경로<span>}/librtos.so: undefined reference to <span style=" color: red;">`sem_post@GLIBC_2.34'</span></span></span></p><p>{<span>제 노트북의 library 경로<span>}/librtos.so: undefined reference to <span style=" color: red;">`pthread_key_create@GLIBC_2.34'</span></span></span></p><p>{<span>제 노트북의 library 경로<span>}/librtos.so: undefined reference to <span style=" color: red;">`pthread_setspecific@GLIBC_2.34'</span></span></span></p><p>{<span>제 노트북의 library 경로<span>}/librtos.so: undefined reference to <span style=" color: red;">`sem_close@GLIBC_2.34'</span></span></span></p><p>{<span>제 노트북의 library 경로<span>}/librtos.so: undefined reference to <span style=" color: red;">`sem_destroy@GLIBC_2.34'</span></span></span></p><p>{<span>제 노트북의 library 경로<span>}/librtos.so: undefined reference to <span style=" color: red;">`pthread_join@GLIBC_2.34'</span></span></span></p><p>{<span>제 노트북의 library 경로<span>}/librtos.so: undefined reference to <span style=" color: red;">`sem_timedwait@GLIBC_2.34'</span></span></span></p><p>{<span>제 노트북의 library 경로<span>}/librtos.so: undefined reference to <span style=" color: red;">`pthread_getspecific@GLIBC_2.34'</span></span></span></p><p>{<span>제 노트북의 library 경로<span>}/librtos.so: undefined reference to <span style=" color: red;">`sem_wait@GLIBC_2.34'</span></span></span></p><p>{<span>제 노트북의 library 경로<span>}/librtos.so: undefined reference to <span style=" color: red;">`sem_open@GLIBC_2.34'</span></span></span></p><p>{<span>제 노트북의 library 경로<span>}/librtos.so: undefined reference to <span style=" color: red;">`stat@GLIBC_2.33'</span></span></span></p><p>{<span>제 노트북의 library 경로<span>}/librtos.so: undefined reference to <span style=" color: red;">`pthread_once@GLIBC_2.34'</span></span></span></p><p>{<span>제 노트북의 library 경로<span>}/librtos.so: undefined reference to <span style=" color: red;">`pthread_create@GLIBC_2.34'</span></span></span></p><p>{<span>제 노트북의 library 경로<span>}/librtos.so: undefined reference to <span style=" color: red;">`sem_init@GLIBC_2.34'</span></span></span></p><p><br></p><p><br></p><br><br><p>감사합니다.</p><p><br></p><p>Thank you</p><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p><img src="/api/v1/ticket_attachment/7416/40767/169531?view=inline" title="" alt="" style="max-width:100%;width: 129px;max-height: 45px;"></p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sund</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">u</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">khan@prestosolution.co.kr</a></span></u></i></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table><p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>

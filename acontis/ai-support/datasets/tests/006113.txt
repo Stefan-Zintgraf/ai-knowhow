@@ -1,0 +1,144 @@
+### HEADER
+Id=6113
+Link=http://at-zammad/#ticket/zoom/6113
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Keyence (ID=223, Number=40219, Country=JP)
+Commission=Keyence, Control Division PLC product lines (ID=577, Number=577)
+Number=706113
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=maruyamad@keyence.co.jp (ID=1530, FirstName=Daisuke, LastName=Maruyama)
+CreatedBy=maruyamad@keyence.co.jp (ID=1530, FirstName=Daisuke, LastName=Maruyama)
+Type=
+TimeUnit=
+CreatedAt=08.08.2023 04:45:41 +00:00
+UpdatedAt=29.08.2023 06:05:23 +00:00
+CloseAt=29.08.2023 06:05:23 +00:00
+ArticlesCount=2
+
+### TITLE
+DC parameters dwTotalBurstLength, and dwBurstBulk
+
+### ARTICLE00_HEADER
+Id=32714
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.08.2023 04:45:41 +00:00
+UpdatedAt=08.08.2023 04:45:41 +00:00
+
+### ARTICLE00_SUBJECT
+DC parameters dwTotalBurstLength, and dwBurstBulk
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Hello Acontis Support,</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Please tell me about <b>EC_T_DC_CONFIGURE</b> which is Parameter of ecatDcConfigure().</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:3.7083in;max-height:.7166in;width:356px;max-height:69px;" src="/api/v1/ticket_attachment/6113/32714/136800?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">1. I want to set </span><span>$B!H(B<span lang="EN-US">dwBurstBulk</span>$B!I(B<span lang="EN-US"> to 1 to reduce processing time when reconnecting. What are your concerns?</span></span></p>
+<p><span>$B"((B<span lang="EN-US">Is it just a matter of DC synchronization accuracy?</span></span></p>
+<p><span lang="EN-US">Please let me know if you have any specific problems.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">2. I would like to set </span><span>$B!H(B<span lang="EN-US">dwTotalBurstLength</span>$B!I(B<span lang="EN-US"> to a smaller value in order to reduce DC initialization time. What are your concerns?</span></span></p>
+<p><span>$B"((B<span lang="EN-US">Is it just a matter of DC synchronization accuracy?</span></span></p>
+<p><span lang="EN-US">Please let me know if you have any specific problems.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Daiuke Maruyama</span></p>
+<p><span lang="EN-US">KEYENCE</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=32725
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.08.2023 08:36:21 +00:00
+UpdatedAt=08.08.2023 08:36:24 +00:00
+
+### ARTICLE01_SUBJECT
+DC parameters dwTotalBurstLength, and dwBurstBulk
+
+### ARTICLE01_BODY
+Hi Daiuke,<div>
+<br><div><span> Reducing these two parameters will reduce the startup time, but the settlement time of the DC synchronization after reaching PREOP will also increase. </span></div>
+<div>There is no other specific problems</div>
+<div><br></div>
+<div>Best Regards</div>
+<div>Haithem Jebali<br><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, August 8, 2023 at 6:45:41 AM, Daisuke Maruyama wrote:<br><br><div>
+<p><span lang="EN-US">Hello Acontis Support,</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Please tell me about <b>EC_T_DC_CONFIGURE</b> which is Parameter of ecatDcConfigure().</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:3.7083in;max-height:.7166in;width:356px;max-height:69px;" src="/api/v1/ticket_attachment/6113/32725/136855?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">1. I want to set </span><span>$B!H(B<span lang="EN-US">dwBurstBulk</span>$B!I(B<span lang="EN-US"> to 1 to reduce processing time when reconnecting. What are your concerns?</span></span></p>
+<p><span>$B"((B<span lang="EN-US">Is it just a matter of DC synchronization accuracy?</span></span></p>
+<p><span lang="EN-US">Please let me know if you have any specific problems.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">2. I would like to set </span><span>$B!H(B<span lang="EN-US">dwTotalBurstLength</span>$B!I(B<span lang="EN-US"> to a smaller value in order to reduce DC initialization time. What are your concerns?</span></span></p>
+<p><span>$B"((B<span lang="EN-US">Is it just a matter of DC synchronization accuracy?</span></span></p>
+<p><span lang="EN-US">Please let me know if you have any specific problems.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Daiuke Maruyama</span></p>
+<p><span lang="EN-US">KEYENCE</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>
+</div>

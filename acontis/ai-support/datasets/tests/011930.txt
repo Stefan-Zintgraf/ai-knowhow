@@ -1,0 +1,226 @@
+### HEADER
+Id=11930
+Link=http://at-zammad/#ticket/zoom/11930
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=7011930
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=20.11.2025 12:55:15 +00:00
+UpdatedAt=26.11.2025 07:03:54 +00:00
+CloseAt=26.11.2025 07:03:54 +00:00
+ArticlesCount=4
+
+### TITLE
+An issue of "PDO Mapping" (PNo.235)
+
+### ARTICLE00_HEADER
+Id=68837
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.11.2025 12:55:15 +00:00
+UpdatedAt=20.11.2025 12:55:18 +00:00
+
+### ARTICLE00_SUBJECT
+An issue of "PDO Mapping" (PNo.235)
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi Support Team</div><div dir="ltr">
+<br>
+</div><div>This is from Mitsubishi (commission No. 40627).</div><div>EC-Engineer V.3.9.16</div><div dir="ltr">
+<br>
+</div><div dir="ltr">After the following operation, PDO Entry is gone.</div><div dir="ltr">
+<br>
+</div><div dir="ltr">1. Add a Slave with multiple PDOs (e.g., EP7211-0035).</div><div>2. Select the added Slave(s) and perform “Copy Slave(s)”.</div><div>3. Perform “Paste Slave(s)” twice consecutively.</div><div>4. Select the Slave(s) added by the first Paste and display the “PDO Mapping” window. Uncheck all “Assigned” boxes.</div><div>5. Save to an ecc file. Close EC-Engineer.</div><div>6. Open EC-Engineer. Open the saved ecc file.</div><div>7. Select the Slave added by the second Paste and display the “PDO Mapping” window.</div><div dir="ltr">
+<br>
+</div><div dir="ltr">Please refer the attached PDF.</div><div dir="ltr">
+<br>
+</div><div dir="ltr">Best regards,</div><div dir="ltr">Yuichi</div><div dir="ltr">
+<br>
+</div><div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span style=" background-color: rgb(255, 255, 255);"><br>
+</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=68852
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.11.2025 13:54:30 +00:00
+UpdatedAt=20.11.2025 13:54:32 +00:00
+
+### ARTICLE01_SUBJECT
+An issue of "PDO Mapping" (PNo.235)
+
+### ARTICLE01_BODY
+Hi Yuichi,<br><br>I will look into this issue and let you know when it is fixed.<br><br>Best regards<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Sebastian Romero</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Thursday, November 20, 2025 at 1:55:15 PM, Yuichi Ide wrote:<br><br><div dir="ltr">Hi Support Team</div>
+<div dir="ltr">
+<br>
+</div>
+<div>This is from Mitsubishi (commission No. 40627).</div>
+<div>EC-Engineer V.3.9.16</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">After the following operation, PDO Entry is gone.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">1. Add a Slave with multiple PDOs (e.g., EP7211-0035).</div>
+<div>2. Select the added Slave(s) and perform “Copy Slave(s)”.</div>
+<div>3. Perform “Paste Slave(s)” twice consecutively.</div>
+<div>4. Select the Slave(s) added by the first Paste and display the “PDO Mapping” window. Uncheck all “Assigned” boxes.</div>
+<div>5. Save to an ecc file. Close EC-Engineer.</div>
+<div>6. Open EC-Engineer. Open the saved ecc file.</div>
+<div>7. Select the Slave added by the second Paste and display the “PDO Mapping” window.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Please refer the attached PDF.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Best regards,</div>
+<div dir="ltr">Yuichi</div>
+<div dir="ltr">
+<br>
+</div>
+<div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span style=" background-color: rgb(255, 255, 255);"><br>
+</span></p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=68899
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=21.11.2025 11:06:45 +00:00
+UpdatedAt=21.11.2025 11:06:45 +00:00
+
+### ARTICLE02_BODY
+Ich habe es mit anderen Slaves geteste und nur die 
+EP7211-0034 und EP7211-0035 haben dieses Problem
+
+### ARTICLE03_HEADER
+Id=68909
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.11.2025 12:19:08 +00:00
+UpdatedAt=21.11.2025 12:19:11 +00:00
+
+### ARTICLE03_SUBJECT
+An issue of "PDO Mapping" (PNo.235)
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>yes, it is a bug. The problem was like they already detected that the copied slave still uses the same instances of the source slave e.g. for variables. </div><div><br></div><div>It will be fixed in the next version. </div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, November 20, 2025 at 1:55:15 PM, Yuichi Ide wrote:<br><br><div dir="ltr">Hi Support Team</div>
+<div dir="ltr">
+<br>
+</div>
+<div>This is from Mitsubishi (commission No. 40627).</div>
+<div>EC-Engineer V.3.9.16</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">After the following operation, PDO Entry is gone.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">1. Add a Slave with multiple PDOs (e.g., EP7211-0035).</div>
+<div>2. Select the added Slave(s) and perform “Copy Slave(s)”.</div>
+<div>3. Perform “Paste Slave(s)” twice consecutively.</div>
+<div>4. Select the Slave(s) added by the first Paste and display the “PDO Mapping” window. Uncheck all “Assigned” boxes.</div>
+<div>5. Save to an ecc file. Close EC-Engineer.</div>
+<div>6. Open EC-Engineer. Open the saved ecc file.</div>
+<div>7. Select the Slave added by the second Paste and display the “PDO Mapping” window.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Please refer the attached PDF.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Best regards,</div>
+<div dir="ltr">Yuichi</div>
+<div dir="ltr">
+<br>
+</div>
+<div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span style=" background-color: rgb(255, 255, 255);"><br>
+</span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

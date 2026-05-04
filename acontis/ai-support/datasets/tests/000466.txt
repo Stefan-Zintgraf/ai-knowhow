@@ -1,0 +1,314 @@
+### HEADER
+Id=466
+Link=http://at-zammad/#ticket/zoom/466
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Tokyo Robotics, Industrial Robot (ID=310, Number=310)
+Number=700466
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=22.04.2021 04:21:35 +00:00
+UpdatedAt=12.12.2023 13:52:34 +00:00
+CloseAt=23.04.2021 06:12:32 +00:00
+ArticlesCount=2
+
+### TITLE
+Question About EC-Master(Tokyo Robotics)
+
+### ARTICLE00_HEADER
+Id=2507
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=22.04.2021 04:21:35 +00:00
+UpdatedAt=22.04.2021 04:21:37 +00:00
+
+### ARTICLE00_SUBJECT
+Question About EC-Master(Tokyo Robotics)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question About EC-Master(Tokyo Robotics)
+
+Customers refer to "EC-Master_ClassA.pdf - 3.2 Programmer’s Guide" to test FOE.
+EcatFoeFileDownload is already working under the condition that they do not use NOTIFY.
+They do not have a FOE sample when using NOTIFY.
+The documentation states that there is a sample in "ecatNotification.cpp", but they can't find it.
+They predict that the following files are samples.
+  "EC-Master-V3.1.1.01-Xenomai3-x86_64Bit-SDK_Protected/Examples/Common/EcNotification.cpp"
+
+However, They can't find a sample using the following API.
+  - ecatFoeDownloadReq
+  - ecatFoeSegmentedDownloadReq
+
+They don't know how to use the following arguments.
+  - "ecatFoeFileDownload - pbyData"
+
+Could you please provide some sample code to understand these?
+
+Best regards,
+Takuya Fujikawa
+
+
+
+### ARTICLE01_HEADER
+Id=2509
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.04.2021 06:44:17 +00:00
+UpdatedAt=22.04.2021 06:44:21 +00:00
+
+### ARTICLE01_SUBJECT
+Question About EC-Master(Tokyo Robotics)
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>using notifications, mailbox transfer objects must be administrated (create, look-up in notification, delete). <span>This makes applications more complex.</span>
+</div><div><br></div><div>About <span>ecatFoeFileDownloadReq:</span>
+</div><div><span>Do they really need it? </span></div><div><br></div><div>Here is an example to show progress:</div><div><br></div><div>
+<p>/*
+ecatFoeFileDownloadReq() */</p>
+
+<p>{</p>
+
+<p>    EC_T_CHAR* szFileName     = "<a href="file://TEST.txt">\\TEST.txt</a>";</p>
+
+<p>    EC_T_CHAR* szDownloadName =
+"TEST";</p>
+
+<p>    FILE*     
+pFile          = NULL;</p>
+
+<p>    EC_T_DWORD dwDataLen      = 200*1024;</p>
+
+<p>    EC_T_BYTE* pbyFileData    = EC_NULL;</p>
+
+<p>    EC_T_MBXTFER_DESC MbxTferDesc;</p>
+
+<p>    EC_T_MBXTFER*     pMbxTfer   
+= EC_NULL;</p>
+
+<p> </p>
+
+<p>    dwRes = ecatSetSlaveState(0,
+DEVICE_STATE_BOOTSTRAP, 5000);</p>
+
+<p>    if (dwRes != EC_E_NOERROR)</p>
+
+<p>    {</p>
+
+<p>        goto Exit;</p>
+
+<p>    }</p>
+
+<p>    pbyFileData =
+(EC_T_BYTE*)OsMalloc(dwDataLen);</p>
+
+<p>    pFile      
+= OsFopen(szFileName, "rb");</p>
+
+<p>    dwDataLen  
+= OsFread(pbyFileData, 1, dwDataLen, pFile);</p>
+
+<p>    fclose(pFile);</p>
+
+<p> </p>
+
+<p>    MbxTferDesc.dwMaxDataLen       = 0;</p>
+
+<p>    MbxTferDesc.pbyMbxTferDescData = EC_NULL;</p>
+
+<p>    pMbxTfer =
+ecatMbxTferCreate(&amp;MbxTferDesc);</p>
+
+<p>    if (EC_NULL != pMbxTfer)</p>
+
+<p>    {</p>
+
+<p>        pMbxTfer-&gt;dwClntId       = S_dwClntId;</p>
+
+<p>        pMbxTfer-&gt;dwTferId       = 0xCCCCEEEE;</p>
+
+<p>        pMbxTfer-&gt;dwDataLen      = dwDataLen;</p>
+
+<p>        pMbxTfer-&gt;pbyMbxTferData =
+pbyFileData;</p>
+
+<p> </p>
+
+<p>        dwRes = ecatFoeDownloadReq(pMbxTfer, 0,
+szDownloadName, OsStrlen(szDownloadName), 0x00000000, EC_NOWAIT);</p>
+
+<p>        if (EC_E_NOERROR != dwRes)</p>
+
+<p>        {</p>
+
+<p>            LogMsg("FoE download request
+error (0x%08X)!", dwRes);</p>
+
+<p>        }</p>
+
+<p>        LogMsg("FoE download
+started...");</p>
+
+<p>        do</p>
+
+<p>        {</p>
+
+<p>            OsSleep(1);</p>
+
+<p> </p>
+
+<p>        } while(eMbxTferStatus_Idle !=
+pMbxTfer-&gt;eTferStatus);</p>
+
+<p> </p>
+
+<p>        ecatMbxTferDelete(pMbxTfer);</p>
+
+<p>    }</p>
+
+<p>    OsFree(pbyFileData);</p>
+
+<p>    if (dwRes != EC_E_NOERROR)</p>
+
+<p>    {</p>
+
+<p>        goto Exit;</p>
+
+<p>    }</p>
+
+<p>}</p>
+
+<p> </p>
+
+<p> </p>
+
+<p>/* notification
+handling for ecatFoeFileDownloadReq(): Already part of ecatNotification.cpp */</p>
+
+<p>{</p>
+
+<p>    case eMbxTferType_FOE_FILE_DOWNLOAD:</p>
+
+<p>    if (pMbxTfer-&gt;eTferStatus ==
+eMbxTferStatus_TferReqError)</p>
+
+<p>    {</p>
+
+<p>        LogError(
+ecatGetText(EC_TXT_FOE_DNLD_ERROR), pMbxTfer-&gt;eTferStatus,
+pMbxTfer-&gt;dwErrorCode, ecatGetText(EC_LOWORD(pMbxTfer-&gt;dwErrorCode)));</p>
+
+<p> </p>
+
+<p>        pMbxTfer-&gt;eTferStatus =
+eMbxTferStatus_Idle;</p>
+
+<p>    }</p>
+
+<p>    else if (pMbxTfer-&gt;eTferStatus !=
+eMbxTferStatus_TferDone)</p>
+
+<p>    {</p>
+
+<p>        if(bVerbose)</p>
+
+<p>           {</p>
+
+<p>               LogMsg("FoE download
+%3d%%",
+((pMbxTfer-&gt;MbxData.dwFoETransferredBytes*100)/pMbxTfer-&gt;dwDataLen));</p>
+
+<p>           }</p>
+
+<p>    }</p>
+
+<p>    else</p>
+
+<p>    {</p>
+
+<p>        if(bVerbose)</p>
+
+<p>   {</p>
+
+<p>       LogMsg("FoE download done");</p>
+
+<p>        }</p>
+
+<p>        pMbxTfer-&gt;eTferStatus =
+eMbxTferStatus_Idle;</p>
+
+<p>    } break;</p>
+
+<p>}</p>
+</div><div><br></div><div>About <span>ecatFoeFileDownload:</span>
+</div><div><br></div><div><blockquote>
+<div>They don't know how to use the following arguments.</div>
+<div> - "ecatFoeFileDownload - pbyData"</div>
+</blockquote></div><div>I don't understand this due to the following:</div><div><blockquote><div>EcatFoeFileDownload is already working under the condition that they do not use NOTIFY</div></blockquote></div><div><br></div><div>Best regards,</div><div>Paul</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Donnerstag, 22. April 2021, 06:21:35, schrieb Takuya Fujikawa:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question About EC-Master(Tokyo Robotics)</div>
+<div><br></div>
+<div>Customers refer to "EC-Master_ClassA.pdf - 3.2 Programmer’s Guide" to test FOE.</div>
+<div>EcatFoeFileDownload is already working under the condition that they do not use NOTIFY.</div>
+<div>They do not have a FOE sample when using NOTIFY.</div>
+<div>The documentation states that there is a sample in "ecatNotification.cpp", but they can't find it.</div>
+<div>They predict that the following files are samples.</div>
+<div>  "EC-Master-V3.1.1.01-Xenomai3-x86_64Bit-SDK_Protected/Examples/Common/EcNotification.cpp"</div>
+<div><br></div>
+<div>However, They can't find a sample using the following API.</div>
+<div>  - ecatFoeDownloadReq</div>
+<div>  - ecatFoeSegmentedDownloadReq</div>
+<div><br></div>
+<div>They don't know how to use the following arguments.</div>
+<div>  - "ecatFoeFileDownload - pbyData"</div>
+<div><br></div>
+<div>Could you please provide some sample code to understand these?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

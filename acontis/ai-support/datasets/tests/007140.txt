@@ -1,0 +1,211 @@
+### HEADER
+Id=7140
+Link=http://at-zammad/#ticket/zoom/7140
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Panasonic Industry SUNX, FP-HX EtherCAT casette (ID=806, Number=806)
+Number=707140
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=22.12.2023 03:17:30 +00:00
+UpdatedAt=19.01.2024 08:55:51 +00:00
+CloseAt=19.01.2024 08:55:51 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Master(Panasonic Industry)
+
+### ARTICLE00_HEADER
+Id=38929
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=22.12.2023 03:17:30 +00:00
+UpdatedAt=22.12.2023 03:17:31 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(Panasonic Industry)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(Panasonic Industry)
+
+They have a question about EC-Master for RZ/N1D that works on LINUX.
+The LINUX kernel for RZ/N1D was updated in November.
+  - Does it also support the latest LINUX?
+  - Or will EC-Master be updated in the future for the latest LINUX?
+  - Or should customers always use older LINUX?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=38931
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.12.2023 07:35:05 +00:00
+UpdatedAt=22.12.2023 07:35:06 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(Panasonic Industry)
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>Our newest atemsys support kernel &gt; 6. If there is any issue we will fix them. We didn't test it explicitly on the new RZ/N1D Linux.</div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, December 22, 2023 at 4:17:30 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(Panasonic Industry)</div>
+<div><br></div>
+<div>They have a question about EC-Master for RZ/N1D that works on LINUX.</div>
+<div>The LINUX kernel for RZ/N1D was updated in November.</div>
+<div>  - Does it also support the latest LINUX?</div>
+<div>  - Or will EC-Master be updated in the future for the latest LINUX?</div>
+<div>  - Or should customers always use older LINUX?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=38992
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=26.12.2023 01:06:13 +00:00
+UpdatedAt=26.12.2023 01:06:13 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master(Panasonic Industry) [Ticket#707140]
+
+### ARTICLE02_BODY
+Dear Cyril san
+
+Does "libemllDW3504.so" need to be rebuilt on a new kernel?
+
+Best regards,
+Takuya Fujikawa
+
+On 2023/12/22 16:35, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+> 
+> Our newest atemsys support kernel > 6. If there is any issue we will fix them. We didn't test it explicitly on the new RZ/N1D Linux.
+> 
+> Best Regards,
+> __________________________________________________________________________________________
+> Cyril Eyssautier
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> On Friday, December 22, 2023 at 4:17:30 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Master(Panasonic Industry)
+>>
+>> They have a question about EC-Master for RZ/N1D that works on LINUX.
+>> The LINUX kernel for RZ/N1D was updated in November.
+>>  - Does it also support the latest LINUX?
+>>  - Or will EC-Master be updated in the future for the latest LINUX?
+>>  - Or should customers always use older LINUX?
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+
+### ARTICLE03_HEADER
+Id=39210
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.01.2024 11:03:08 +00:00
+UpdatedAt=08.01.2024 11:03:11 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(Panasonic Industry)
+
+### ARTICLE03_BODY
+Hi Takuya,<div><br></div><div>no it is not needed.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Tuesday, December 26, 2023 at 2:06:13 AM, Takuya Fujikawa wrote:<br><br><div>Dear Cyril san</div>
+<div><br></div>
+<div>Does "<a href="http://libemllDW3504.so" title="http://libemllDW3504.so" rel="nofollow noreferrer noopener" target="_blank">libemllDW3504.so</a>" need to be rebuilt on a new kernel?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2023/12/22 16:35, Cyril Eyssautier via EC-Support wrote:</div>
+<div>&gt; Hi Takuya,</div>
+<div>&gt;</div>
+<div>&gt; Our newest atemsys support kernel &gt; 6. If there is any issue we will fix them. We didn't test it explicitly on the new RZ/N1D Linux.</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Cyril Eyssautier</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Friday, December 22, 2023 at 4:17:30 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Master(Panasonic Industry)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; They have a question about EC-Master for RZ/N1D that works on LINUX.</div>
+<div>&gt;&gt; The LINUX kernel for RZ/N1D was updated in November.</div>
+<div>&gt;&gt;  - Does it also support the latest LINUX?</div>
+<div>&gt;&gt;  - Or will EC-Master be updated in the future for the latest LINUX?</div>
+<div>&gt;&gt;  - Or should customers always use older LINUX?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

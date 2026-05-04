@@ -1,0 +1,184 @@
+### HEADER
+Id=5440
+Link=http://at-zammad/#ticket/zoom/5440
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=MTS Systems, Quantum (ID=524, Number=524)
+Number=705440
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=21.04.2023 15:25:08 +00:00
+UpdatedAt=12.05.2023 06:01:57 +00:00
+CloseAt=12.05.2023 06:01:57 +00:00
+ArticlesCount=3
+
+### TITLE
+Fwd: Where can the link layer .so file live?
+
+### ARTICLE00_HEADER
+Id=28874
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.04.2023 15:25:08 +00:00
+UpdatedAt=21.04.2023 15:25:08 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Where can the link layer .so file live?
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>Is it possible to have the link layers in this other location from where the application runs? Is there something they can do with LD_LIBRARY_PATH somehow to manage this?<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>"Rosenow, James" &lt;jim.rosenow@mts.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Where can the link layer .so file live?</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>April 21, 2023 at 11:21:37 AM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<br><div>
+<div>Hi Jon,</div>
+<div><p> </p></div>
+<div>We’ve been placing the link layer .so file in the same directory as our executable, is there a way to have it exist in another directory and still have the stack find it when it needs it?</div>
+<div><p> </p></div>
+<div>We want to deploy files in /opt/mts/…, so, for example, we would have an opt/mts/acontis/… that would contain atemsys.ko and libemllI8254x.so, etc. Is there a way to have the link layer file be found there if the executable were to be in, for example, /opt/mts/bin?</div>
+<div><p> </p></div>
+<div>Thanks</div>
+<div>Jim</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=28877
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.04.2023 17:05:23 +00:00
+UpdatedAt=21.04.2023 17:05:23 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: Where can the link layer .so file live?
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>Yes, they can use LD_LIBRARY_PATh to set the path in which the binary looks for the needed libaries, For example:</div><div><div>LD_LIBRARY_PATH=./Release:/opt/Xenomai3/x86Cobalt/lib ./EcMasterDemo ....</div></div><div>In the example ./Release folder is the one containing our acontis libs.</div><div>If they are using Xenomai they should also include the path of the Xenomai libs (for example <span>/opt/Xenomai3/x86Cobalt/lib)</span><span>. On Linux this is not necessary.</span>
+</div><div><span>They can also use the command line: </span></div><div>
+<span>export </span><span>LD_LIBRARY_PATH=./Release:/opt/Xenomai3/x86Cobalt/lib</span>
+</div><div>This is equivalent to the one above but this path will be valid for all binaries, which may not be necessary! I think they can stick to the first variant!</div><div><br></div><div>Best Regards</div><div>Haithem Jebali</div><div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, April 21, 2023 at 5:25:08 PM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>Is it possible to have the link layers in this other location from where the application runs? Is there something they can do with LD_LIBRARY_PATH somehow to manage this?<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>"Rosenow, James" &lt;jim.rosenow@mts.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Where can the link layer .so file live?</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>April 21, 2023 at 11:21:37 AM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<br><div>
+<div>Hi Jon,</div>
+<div><p> </p></div>
+<div>We’ve been placing the link layer .so file in the same directory as our executable, is there a way to have it exist in another directory and still have the stack find it when it needs it?</div>
+<div><p> </p></div>
+<div>We want to deploy files in /opt/mts/…, so, for example, we would have an opt/mts/acontis/… that would contain atemsys.ko and libemllI8254x.so, etc. Is there a way to have the link layer file be found there if the executable were to be in, for example, /opt/mts/bin?</div>
+<div><p> </p></div>
+<div>Thanks</div>
+<div>Jim</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div></div>
+
+### ARTICLE02_HEADER
+Id=28879
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.04.2023 17:51:32 +00:00
+UpdatedAt=21.04.2023 17:52:25 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Where can the link layer .so file live?
+
+### ARTICLE02_BODY
+Hi Jim,<div> </div><div>You could use LD_LIBRARY_PATH to set the path in which the binary looks for the needed libraries. For example:</div><div>
+<div> </div>
+<div>LD_LIBRARY_PATH=./Release:/opt/Xenomai3/x86Cobalt/lib ./EcMasterDemo ….</div>
+<div> </div>
+<div>In the included example application the ./Release folder is the one containing the acontis libs.</div>
+<div> </div>
+<div>Since you are using Xenomai you should also include the path of the Xenomai libs (for example /opt/Xenomai3/x86Cobalt/lib). On Linux this is not necessary.</div>
+<div> </div>
+<div>You can also use the command line:</div>
+<div> </div>
+<div>export LD_LIBRARY_PATH=./Release:/opt/Xenomai3/x86Cobalt/lib</div>
+<div> </div>
+<div>This is equivalent to the one above but this path will be valid for all binaries, which may not be necessary.</div>
+<div> </div>
+<div>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Apr 21, 2023, at 11:21 AM, Rosenow, James &lt;jim.rosenow@mts.com&gt; wrote:</div>
+<br><div>
+<div>Hi Jon,</div>
+<div><p> </p></div>
+<div>We’ve been placing the link layer .so file in the same directory as our executable, is there a way to have it exist in another directory and still have the stack find it when it needs it?</div>
+<div><p> </p></div>
+<div>We want to deploy files in /opt/mts/…, so, for example, we would have an opt/mts/acontis/… that would contain atemsys.ko and libemllI8254x.so, etc. Is there a way to have the link layer file be found there if the executable were to be in, for example, /opt/mts/bin?</div>
+<div><p> </p></div>
+<div>Thanks</div>
+<div>Jim</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

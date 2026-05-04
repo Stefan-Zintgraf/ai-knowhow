@@ -1,0 +1,127 @@
+### HEADER
+Id=1845
+Link=http://at-zammad/#ticket/zoom/1845
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Midea Air, Equipment (ID=582, Number=582)
+Number=701845
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=17.11.2021 04:02:25 +00:00
+UpdatedAt=19.11.2021 07:01:34 +00:00
+CloseAt=19.11.2021 07:01:34 +00:00
+ArticlesCount=2
+
+### TITLE
+The protential customer Midea problem about running the ECMaster for linux in Docker
+
+### ARTICLE00_HEADER
+Id=9757
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.11.2021 04:02:25 +00:00
+UpdatedAt=17.11.2021 04:02:26 +00:00
+
+### ARTICLE00_SUBJECT
+The protential customer Midea problem about running the ECMaster for linux in Docker
+
+### ARTICLE00_BODY
+<div>
+<div>Dear,</div>
+<div>We are connecting with the protential customer midea, they want to using the ecmaster for linux, but their application running on the docker base ubuntu.</div>
+<div>Do you have any experience about the running the ECMaster on docker? Do you think it is possiable and how much protential problem if they run the ECMaster on docker.</div>
+<div> </div>
+<div> <div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=9763
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.11.2021 08:27:17 +00:00
+UpdatedAt=17.11.2021 08:27:20 +00:00
+
+### ARTICLE01_SUBJECT
+The protential customer Midea problem about running the ECMaster for linux in Docker
+
+### ARTICLE01_BODY
+<div>Hi John,</div><div>we did some tests with docker and it's possible to run EC-Master within a docker container.</div><div><br></div><div>Here is a description about what is necessary for EC-Master and Docker:</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/os_linux.html#docker" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/os_linux.html#docker" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/os_linux.html#docker</a></div></div><div>A how-to run EcMasterDemo in Docker is here:</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/os_linux.html#run-in-docker-container" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/os_linux.html#run-in-docker-container" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/os_linux.html#run-in-docker-container</a></div></div><div><br></div><div></div><div data-signature="true" data-signature-id="2">
+<div>
+<span>Best regards,</span>
+</div>
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Holger Oelhaf </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">Am Mittwoch, 17. November 2021, 05:02:25, schrieb John Zhang:<br><br><div>
+<div>Dear,</div>
+<div>We are connecting with the protential customer midea, they want to using the ecmaster for linux, but their application running on the docker base ubuntu.</div>
+<div>Do you have any experience about the running the ECMaster on docker? Do you think it is possiable and how much protential problem if they run the ECMaster on docker.</div>
+<div> </div>
+<div> <div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

@@ -1,0 +1,147 @@
+### HEADER
+Id=8093
+Link=http://at-zammad/#ticket/zoom/8093
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=RDC Semiconductor, Unknown (ID=913, Number=913)
+Number=708093
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=14.05.2024 09:34:42 +00:00
+UpdatedAt=17.05.2024 06:22:32 +00:00
+CloseAt=17.05.2024 06:22:32 +00:00
+ArticlesCount=2
+
+### TITLE
+About the coorperation with the RDC
+
+### ARTICLE00_HEADER
+Id=44559
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.05.2024 09:34:42 +00:00
+UpdatedAt=14.05.2024 09:34:44 +00:00
+
+### ARTICLE00_SUBJECT
+About the coorperation with the RDC
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently, The RDC connected with us and want to building some demo base on rdc CPU and R6040 ethernet adapter. They have some old customer In Chinese Mainland and Taiwan, they feel they have some opportunity to updat the customers soluation.</div>
+<div>Do you still support r6040 linklayer? And Could the linklayer be protected?</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=44564
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.05.2024 10:03:57 +00:00
+UpdatedAt=14.05.2024 10:03:59 +00:00
+
+### ARTICLE01_SUBJECT
+About the coorperation with the RDC
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>the last customer delivery was 2022-06-23, V3.1.4.02. We have only one customer using it and we don't have any test platform here, but <br>
+</div><div>yes we still have it even in V3.2.</div><div>
+<div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/emllR6040.html#emllr6040" title="https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/emllR6040.html#emllr6040" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/emllR6040.html#emllr6040</a></div>
+<div><br></div>
+<div>It is part of the Eval delivery for X86_32Bit.</div>
+<div><br></div>
+<div>We return the MAC address from the registers </div>
+<div>
+<img style="max-width:100%;width: 597.8px;max-width: 100%;max-height: 534.775px;" src="/api/v1/ticket_attachment/8093/44564/183689?view=inline"><br>
+</div>
+<div><br></div>
+<div>But I don't know where they are coming from and if they can be overriden.</div>
+<div><br></div>
+<div>Best Regards,</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div data-signature="true" data-signature-id="2">
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, May 14, 2024 at 11:34:42 AM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently, The RDC connected with us and want to building some demo base on rdc CPU and R6040 ethernet adapter. They have some old customer In Chinese Mainland and Taiwan, they feel they have some opportunity to updat the customers soluation.</div>
+<div>Do you still support r6040 linklayer? And Could the linklayer be protected?</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

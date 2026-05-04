@@ -1,0 +1,224 @@
+### HEADER
+Id=455
+Link=http://at-zammad/#ticket/zoom/455
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Carl Zeiss SMT GmbH (ID=91, Number=40113, Country=DE)
+Commission=Carl Zeiss SMT, Mot.Serv.7+Mot.Cont.NG (ID=100, Number=100)
+Number=700455
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=lars.merker@zeiss.com (ID=121, FirstName=Lars, LastName=Merker)
+CreatedBy=lars.merker@zeiss.com (ID=121, FirstName=Lars, LastName=Merker)
+Type=
+TimeUnit=
+CreatedAt=21.04.2021 12:03:18 +00:00
+UpdatedAt=25.04.2022 12:55:45 +00:00
+CloseAt=31.05.2021 10:04:12 +00:00
+ArticlesCount=2
+
+### TITLE
+Fragen an Acontis zu DistributedClocks (DC) - Mastershift
+
+### ARTICLE00_HEADER
+Id=2478
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.04.2021 12:03:18 +00:00
+UpdatedAt=21.04.2021 12:03:20 +00:00
+
+### ARTICLE00_SUBJECT
+Fragen an Acontis zu DistributedClocks (DC) - Mastershift
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Herr Eyssautier,</p>
+<p>da wir ja nun in den EcMaster mit DC Mastershift in den Operational Mode bringen konnten, haben wir auf unserem System angefangen</p>
+<p>auszuwerten wie die Performance besonders bezüglich Jitter aussieht. Dabei sind bei uns ein paar Fragen aufgekommen.</p>
+<p> </p>
+<p>Hier mal eine kurze Beschreibung der Testumgebung und die Fragen zu den Logs (s. Anhang „DcmMastershiftLog.txt“) bzgl. DC-Mastershift:</p>
+<p> </p>
+<p><b><u>Konfiguration der Testumgebung (Buszyklus, DC-Mode, LoApicTimer):</u></b></p>
+<p> </p>
+<p>Buszyklus = 1000µs</p>
+<p>DcmMode = Mastershift</p>
+<p> </p>
+<p>*** System Clock details ***</p>
+<p>sys clock timer address 0xffff800000a95b00</p>
+<p>allocated flag 01</p>
+<p>clkFrequency 100000000</p>
+<p>minClkRate 19</p>
+<p>maxClkRate 5000</p>
+<p>features 0x208b</p>
+<p>name loApicTimer</p>
+<p>RollOverPeriod 42 secs</p>
+<p> </p>
+<p><b><u>Fragen zur angefügten Log-Datei "DcmMastershiftLog.txt":</u></b></p>
+<p> </p>
+<ol start="1" type="1">
+<li>Sind die Konfigurationswerte (s. Log-Einträge <b>CzECMasterMs-&gt;Configure-&gt;[...]</b>) korrekt für den Mastershift-Mode ?<p></p>
+</li>
+</ol> <p> </p>
+<ol start="2" type="1">
+<li>Sind die Log-Einträge "<b>DCM Diff(ns): Cur= nnnn, Avg= xxx, Max= mmmmm</b>" plausibel für den Mastershift-Mode ?<p></p>
+</li>
+</ol> <p> </p>
+<ol start="3" type="1">
+<li>Wie wird der Mittelwert "<b>Avg= xxx</b>" berechnet?<p></p>
+</li>
+</ol> <p> </p>
+<ol start="4" type="1">
+<li>Wieso ist "<b>Max= mmmmm</b>" immer negativ?<p></p>
+</li>
+</ol> <p> </p>
+<ol start="5" type="1">
+<li>Sind die Log-Einträge "<b>ShowDcmData-&gt;[0...15]: ICR= xxxxx, newICR= yyyyy, CCR= zzzzz, adjust= nnn</b>" plausibel ?<p></p>
+</li>
+</ol>
+<p>Diese Einträge wurden aus 16 aufeinander folgenden Aufrufen der ISR-Funktion "<b>dcmAdjustTimer</b>" generiert:</p>
+<p><b>ICR</b> = aktueller Wert des Initial-Count-Registers des LoApic-Timers</p>
+<p><b>newICR</b> = neuer, berechneter Wert des Initial-Count-Registers des LoApic-Timers</p>
+<p><b>CCR</b> = aktueller Wert des Current-Count-Registers des LoApic-Timers</p>
+<p><b>adjust</b> = verwendeter Korrekturwert, berechnet in "<b>tEcJobTask</b>" (s. <b>pDemoThreadParam-&gt;pDcmTimerDesc-&gt;nAdjustInc = ...</b>)</p>
+<p> </p>
+<ol start="6" type="1">
+<li>Wieso nimmt "<b>adjust</b>" nur bestimme Werte (300,350,400) an ?<p></p>
+</li>
+</ol> <p> </p>
+<ol start="7" type="1">
+<li>Wieso ist nur jeder 4. adjust-Wert ungleich 0 ?<p></p>
+</li>
+</ol> <p> </p>
+<p>Mit freundlichen Grüßen<br>
+<br>
+</p>
+<p><b>Lars Merker</b></p>
+<p>Softwareentwicklung Maschinen (SMT-EMI2)</p>
+<p>ZEISS Sparte Semiconductor Manufacturing Technology</p>
+<p> </p>
+<p>Carl Zeiss SMT GmbH</p>
+<p>Rudolf-Eber-Straße 2</p>
+<p>73447 Oberkochen</p>
+<p> </p>
+<p>Telefon: +49 7364 20 57225</p>
+<p>Lars.merker@zeiss.com</p>
+<p><a href="https://eur01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.zeiss.de%2Fsmt&amp;data=02%7C01%7C%7C478ffef53db74d872ed408d8030be563%7C28042244bb514cd680347776fa3703e8%7C1%7C0%7C637262697099035305&amp;sdata=AMg8cko0kPDsuBwaMJIAfy15g5A7pouibHbPE2z21dY%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://eur01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.zeiss.de%2Fsmt&amp;data=02%7C01%7C%7C478ffef53db74d872ed408d8030be563%7C28042244bb514cd680347776fa3703e8%7C1%7C0%7C637262697099035305&amp;sdata=AMg8cko0kPDsuBwaMJIAfy15g5A7pouibHbPE2z21dY%3D&amp;reserved=0" target="_blank">www.zeiss.de/smt</a></p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>__________</p>
+<p>Carl Zeiss AG</p>
+<p>Sitz der Gesellschaft: Oberkochen, Deutschland</p>
+<p>Vorsitzender des Aufsichtsrates: Dr. Dieter Kurz</p>
+<p>Vorstand: Dr. Karl Lamprecht (Vorsitzender),</p>
+<p>Dr. Matthias Metz, Dr. Ludwin Monz, Dr. Christian Müller, Dr. Jochen Peter, Dr. Markus Weber</p>
+<p>Amtsgericht Ulm, HRB 501 555, USt-IdNr: DE 811 119 940</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=2496
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.04.2021 15:16:11 +00:00
+UpdatedAt=21.04.2021 15:16:13 +00:00
+
+### ARTICLE01_SUBJECT
+Fragen an Acontis zu DistributedClocks (DC) - Mastershift
+
+### ARTICLE01_BODY
+<div>Hallo Herr Merker,</div><div><br></div><div>Sie finden meine Antworten unten.</div><div><br></div><div>Haben Sie die Möglichkeit eine dcmlog Datei zu generieren? Unsere EcMasterDemoDc mit -v3 generiert es. Für VxWorks müssen Sie noch die globale Variable <span>bLogFileEnb auf 1 setzen.</span>
+</div><div><br></div><div>Schöne Grüße,</div><div>Cyril Eyssautier</div><div>
+<br><br>
+</div><div>
+<blockquote type="cite">On Wednesday, April 21, 2021, 2:03:18 PM, Lars Merker wrote:<br><br><div>
+<p>Hallo Herr Eyssautier,</p>
+<p>da wir ja nun in den EcMaster mit DC Mastershift in den Operational Mode bringen konnten, haben wir auf unserem System angefangen</p>
+<p>auszuwerten wie die Performance besonders bezüglich Jitter aussieht. Dabei sind bei uns ein paar Fragen aufgekommen.</p>
+<p> </p>
+<p>Hier mal eine kurze Beschreibung der Testumgebung und die Fragen zu den Logs (s. Anhang „DcmMastershiftLog.txt“) bzgl. DC-Mastershift:</p>
+<p> </p>
+<p><b><u>Konfiguration der Testumgebung (Buszyklus, DC-Mode, LoApicTimer):</u></b></p>
+<p> </p>
+<p>Buszyklus = 1000µs</p>
+<p>DcmMode = Mastershift</p>
+<p> </p>
+<p>*** System Clock details ***</p>
+<p>sys clock timer address 0xffff800000a95b00</p>
+<p>allocated flag 01</p>
+<p>clkFrequency 100000000</p>
+<p>minClkRate 19</p>
+<p>maxClkRate 5000</p>
+<p>features 0x208b</p>
+<p>name loApicTimer</p>
+<p>RollOverPeriod 42 secs</p>
+<p> </p>
+<p><b><u>Fragen zur angefügten Log-Datei "DcmMastershiftLog.txt":</u></b></p>
+<p> </p>
+<ol start="1" type="1">
+<li>Sind die Konfigurationswerte (s. Log-Einträge <b>CzECMasterMs-&gt;Configure-&gt;[...]</b>) korrekt für den Mastershift-Mode ?<p></p>
+</li>
+</ol> <p> [CER] Ja</p>
+<ol start="2" type="1">
+<li>Sind die Log-Einträge "<b>DCM Diff(ns): Cur= nnnn, Avg= xxx, Max= mmmmm</b>" plausibel für den Mastershift-Mode ?<p></p>
+</li>
+</ol> <p> [CER] Ja bis auf der negativen Max Wert....</p>
+<ol start="3" type="1">
+<li>Wie wird der Mittelwert "<b>Avg= xxx</b>" berechnet?<p></p>
+</li>
+</ol> <p>[CER]  m_nCtlErrorNsecAvg = (m_nCtlErrorNsecAvg * 4095 + nCtlErrorNsec) / 4096;</p>
+</div>
+</blockquote>
+<blockquote type="cite">
+<div>
+<ol start="4" type="1">
+<li>Wieso ist "<b>Max= mmmmm</b>" immer negativ?<p></p>
+</li>
+</ol> <p> [CER] das verstehe ich gerade nicht.</p>
+<p><br></p>
+<ol start="5" type="1">
+<li>Sind die Log-Einträge "<b>ShowDcmData-&gt;[0...15]: ICR= xxxxx, newICR= yyyyy, CCR= zzzzz, adjust= nnn</b>" plausibel ?<p></p>
+</li>
+</ol>
+<p>Diese Einträge wurden aus 16 aufeinander folgenden Aufrufen der ISR-Funktion "<b>dcmAdjustTimer</b>" generiert:</p>
+<p><b>ICR</b> = aktueller Wert des Initial-Count-Registers des LoApic-Timers</p>
+<p><b>newICR</b> = neuer, berechneter Wert des Initial-Count-Registers des LoApic-Timers</p>
+<p><b>CCR</b> = aktueller Wert des Current-Count-Registers des LoApic-Timers</p>
+<p><b>adjust</b> = verwendeter Korrekturwert, berechnet in "<b>tEcJobTask</b>" (s. <b>pDemoThreadParam-&gt;pDcmTimerDesc-&gt;nAdjustInc = ...</b>)</p>
+<p> [CER]Die sehen erstmal OK aus.</p>
+<p><br></p>
+<ol start="6" type="1">
+<li>Wieso nimmt "<b>adjust</b>" nur bestimme Werte (300,350,400) an ? </li>
+</ol>
+<ol start="7" type="1">
+<li>Wieso ist nur jeder 4. adjust-Wert ungleich 0 ?<p></p>
+</li>
+</ol> <p> [CER] Das ist in Ordnung so.</p>
+<p><br></p>
+<p>Mit freundlichen Grüßen<br>
+<br>
+</p>
+<p><b>Lars Merker</b></p>
+<p>Softwareentwicklung Maschinen (SMT-EMI2)</p>
+<p>ZEISS Sparte Semiconductor Manufacturing Technology</p>
+<p> </p>
+<p>Carl Zeiss SMT GmbH</p>
+<p>Rudolf-Eber-Straße 2</p>
+<p>73447 Oberkochen</p>
+<p> </p>
+<p>Telefon: +49 7364 20 57225</p>
+<p>Lars.merker@zeiss.com</p>
+<p><a href="https://eur01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.zeiss.de%2Fsmt&amp;data=02%7C01%7C%7C478ffef53db74d872ed408d8030be563%7C28042244bb514cd680347776fa3703e8%7C1%7C0%7C637262697099035305&amp;sdata=AMg8cko0kPDsuBwaMJIAfy15g5A7pouibHbPE2z21dY%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://eur01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.zeiss.de%2Fsmt&amp;data=02%7C01%7C%7C478ffef53db74d872ed408d8030be563%7C28042244bb514cd680347776fa3703e8%7C1%7C0%7C637262697099035305&amp;sdata=AMg8cko0kPDsuBwaMJIAfy15g5A7pouibHbPE2z21dY%3D&amp;reserved=0" target="_blank">www.zeiss.de/smt</a></p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>__________</p>
+<p>Carl Zeiss AG</p>
+<p>Sitz der Gesellschaft: Oberkochen, Deutschland</p>
+<p>Vorsitzender des Aufsichtsrates: Dr. Dieter Kurz</p>
+<p>Vorstand: Dr. Karl Lamprecht (Vorsitzender),</p>
+<p>Dr. Matthias Metz, Dr. Ludwin Monz, Dr. Christian Müller, Dr. Jochen Peter, Dr. Markus Weber</p>
+<p>Amtsgericht Ulm, HRB 501 555, USt-IdNr: DE 811 119 940</p>
+<p> </p>
+</div>
+<br>
+</blockquote>
+</div><div><br></div><br><br>

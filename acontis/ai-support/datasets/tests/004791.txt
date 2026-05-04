@@ -1,0 +1,164 @@
+### HEADER
+Id=4791
+Link=http://at-zammad/#ticket/zoom/4791
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Autonopia (ID=661, Number=0, Country=US)
+Commission=Autonopia, Unknown (ID=741, Number=741)
+Number=704791
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=parinaz.balkhi@autonopia.com (ID=1597, FirstName=Parinaz, LastName=Balkhi)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=26.01.2023 19:53:50 +00:00
+UpdatedAt=07.11.2023 07:50:43 +00:00
+CloseAt=27.01.2023 17:37:57 +00:00
+ArticlesCount=5
+
+### TITLE
+Re:
+
+### ARTICLE00_HEADER
+Id=25327
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.01.2023 19:53:51 +00:00
+UpdatedAt=26.01.2023 19:53:51 +00:00
+
+### ARTICLE00_SUBJECT
+Re:
+
+### ARTICLE00_BODY
+HI Parinaz,<div> </div><div>Good question and I’m not sure how to enable this so I’m checking with our developers. It must be a setting in the IDE or a permission issue with the file I would think.<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Jan 26, 2023, at 2:00 PM, Parinaz Balkhi &lt;parinaz.balkhi@autonopia.com&gt; wrote:</div>
+<br><div>
+<div><span lang="EN-US">Hi Jon,</span></div>
+<div><span lang="EN-US"><p> </p></span></div>
+<div><span lang="EN-US">I have compiled the code in Eclipse IDE and the code works perfectly when I run it though Linux terminal, however when I want to debug it in IDE I need to use the command line argument (DemoConfig.xml) inside the IDE.</span></div>
+<div><span lang="EN-US">I have added that in run configuration, but it says it can not open the file. I was wondering if you can help me through this.</span></div>
+<div><span lang="EN-US"><p> </p></span></div>
+<div><span lang="EN-US"><p> </p></span></div>
+<div><span lang="EN-US">Warm regards,</span></div>
+<div><span lang="EN-US">Parinaz </span></div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=25328
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.01.2023 19:53:52 +00:00
+UpdatedAt=27.01.2023 21:19:16 +00:00
+
+### ARTICLE01_SUBJECT
+Re:
+
+### ARTICLE01_BODY
+HI Parinaz,<div> </div><div>Good question and I’m not sure how to enable this so I’m checking with our developers. It must be a setting in the IDE or a permission issue with the file I would think.<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Jan 26, 2023, at 2:00 PM, Parinaz Balkhi &lt;parinaz.balkhi@autonopia.com&gt; wrote:</div>
+<br><div>
+<div><span lang="EN-US">Hi Jon,</span></div>
+<div><span lang="EN-US"><p> </p></span></div>
+<div><span lang="EN-US">I have compiled the code in Eclipse IDE and the code works perfectly when I run it though Linux terminal, however when I want to debug it in IDE I need to use the command line argument (DemoConfig.xml) inside the IDE.</span></div>
+<div><span lang="EN-US">I have added that in run configuration, but it says it can not open the file. I was wondering if you can help me through this.</span></div>
+<div><span lang="EN-US"><p> </p></span></div>
+<div><span lang="EN-US"><p> </p></span></div>
+<div><span lang="EN-US">Warm regards,</span></div>
+<div><span lang="EN-US">Parinaz </span></div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE02_HEADER
+Id=25330
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=26.01.2023 19:55:23 +00:00
+UpdatedAt=27.01.2023 06:51:51 +00:00
+
+### ARTICLE02_BODY
+Please see below. How can a customer debug in the Eclipse IDE the motion example that requires the DemoConfig.xml file be passed through?
+
+### ARTICLE03_HEADER
+Id=25339
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=27.01.2023 06:55:59 +00:00
+UpdatedAt=27.01.2023 06:55:59 +00:00
+
+### ARTICLE03_BODY
+<div>Hi Jon,</div><div><br></div><div>we have a description to use Eclipse with our LxWin solution:</div><div><div><a href="https://public.acontis.com/manuals/LxWin/8.0/LxWin.pdf" title="https://public.acontis.com/manuals/LxWin/8.0/LxWin.pdf" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/LxWin/8.0/LxWin.pdf</a></div></div><div><br></div><div>here is some generic information:</div><div><a href="https://eclipse-embed-cdt.github.io/debug/install/" title="https://eclipse-embed-cdt.github.io/debug/install/" rel="nofollow noreferrer noopener" target="_blank">https://eclipse-embed-cdt.github.io/debug/install/</a></div><div><br></div><div><br></div>
+
+### ARTICLE04_HEADER
+Id=25381
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.01.2023 14:56:59 +00:00
+UpdatedAt=27.01.2023 21:19:16 +00:00
+
+### ARTICLE04_SUBJECT
+Re:
+
+### ARTICLE04_BODY
+HI Parinaz,<div> </div><div>Then it must be some settings in Eclipse for passing through the file. We don’t really have extensive knowledge about Eclipse, maybe some hints here can help: <a href="https://eclipse-embed-cdt.github.io/debug/install/" rel="nofollow noreferrer noopener" target="_blank">https://eclipse-embed-cdt.github.io/debug/install/</a><br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Jan 26, 2023, at 8:40 PM, Parinaz Balkhi &lt;parinaz.balkhi@autonopia.com&gt; wrote:</div>
+<br><div>
+<div>Hi Jon,</div>
+<div> </div>
+<div>Thank you for your response. I am not sure if it is related to permission because I have given the full permission to the file.</div>
+<div>Please kindly let me know when you find out the solution.<br>
+</div>
+<div> </div>
+<div>Warm regards,</div>
+<div>Parinaz<br>
+</div>
+<hr>
+<div dir="ltr">
+<b>From:</b> Jon Waters &lt;j.waters@acontis.com&gt;<br><b>Sent:</b> Thursday, January 26, 2023 11:53 AM<br><b>To:</b> Parinaz Balkhi &lt;parinaz.balkhi@autonopia.com&gt;<br><b>Cc:</b> Holger Oelhaf via EC-Support &lt;ecsupport@acontis.com&gt;<br><b>Subject:</b> Re: <div> </div>
+</div>
+<div>HI Parinaz,<div> </div>
+<div>Good question and I’m not sure how to enable this so I’m checking with our developers. It must be a setting in the IDE or a permission issue with the file I would think.<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>On Jan 26, 2023, at 2:00 PM, Parinaz Balkhi &lt;parinaz.balkhi@autonopia.com&gt; wrote:</div>
+<br><div>
+<div><span lang="EN-US">Hi Jon,</span></div>
+<div><span lang="EN-US"> </span></div>
+<div><span lang="EN-US">I have compiled the code in Eclipse IDE and the code works perfectly when I run it though Linux terminal, however when I want to debug it in IDE I need to use the command line argument (DemoConfig.xml) inside the IDE.</span></div>
+<div><span lang="EN-US">I have added that in run configuration, but it says it can not open the file. I was wondering if you can help me through this.</span></div>
+<div><span lang="EN-US"> </span></div>
+<div><span lang="EN-US"> </span></div>
+<div><span lang="EN-US">Warm regards,</span></div>
+<div><span lang="EN-US">Parinaz</span></div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

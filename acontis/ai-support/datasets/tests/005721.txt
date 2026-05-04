@@ -1,0 +1,164 @@
+### HEADER
+Id=5721
+Link=http://at-zammad/#ticket/zoom/5721
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ADLINK Technology, Inc. (ID=318, Number=40110, Country=TW)
+Commission=ADLINK, RT-Linux (ID=377, Number=377)
+Number=705721
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=peter.kao@adlinktech.com (ID=40, FirstName=Peter, LastName=Kao)
+CreatedBy=peter.kao@adlinktech.com (ID=40, FirstName=Peter, LastName=Kao)
+Type=
+TimeUnit=
+CreatedAt=08.06.2023 02:23:18 +00:00
+UpdatedAt=04.07.2023 06:08:03 +00:00
+CloseAt=04.07.2023 06:08:03 +00:00
+ArticlesCount=4
+
+### TITLE
+ecatReadSlaveRegister return EC_E_BUSY
+
+### ARTICLE00_HEADER
+Id=30554
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.06.2023 02:23:18 +00:00
+UpdatedAt=08.06.2023 02:23:18 +00:00
+
+### ARTICLE00_SUBJECT
+ecatReadSlaveRegister return EC_E_BUSY
+
+### ARTICLE00_BODY
+<div>Dear acontis,</div><div> </div><div>We discovered a rare phenomenon that using ecatReadSlaveRegister() API return EC_E_BUSY. Repeated testing will only result in errors a few times.<br>
+</div><div>
+<span>Refer to error description, BUSY state would be presented by master or slave. And I don't know how to troubleshooting.<br>
+</span>
+</div><div>
+<span><br>
+</span>
+</div><div>The general process is that after the EC master state changes to OP, we will use ecatReadSlaveRegister() to obtain "Register Configured Station Alias" (register oft : 0x0012) from ESC.<br>
+</div><div>If I keep EC master state in OP long time, There will be no error no matter how using ecatReadSlaveRegister().</div><div> </div><div>Could you advise a way to further identify which component is busy?</div><div>The attachment is log file with level 3, and you can find "Error(0x98110008) 'ecatReadSlaveRegister' failed, error" , this means using ecatReadSlaveRegister() return EC_E_BUSY.</div><div>
+<span><br>
+</span>
+</div><div>Best regards,</div><div>Peter.K</div><div> </div><div> </div>
+
+### ARTICLE01_HEADER
+Id=30572
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.06.2023 07:30:41 +00:00
+UpdatedAt=09.06.2023 07:30:43 +00:00
+
+### ARTICLE01_SUBJECT
+ecatReadSlaveRegister return EC_E_BUSY
+
+### ARTICLE01_BODY
+<div>Hi,</div><div><br></div><div>In our documentation it says that this error occurs when another transfer request is already pending or the master or the corresponding
+slave is currently changing its operational state.</div><div>The Master is in OP but the slave may be still changing it's status to OP, that's why after waiting a little bit the slave answers!</div><div><br></div><div>Best Regards</div><div>Haithem Jebali<br><br>
+</div><div><blockquote type="cite">On Thursday, June 8, 2023 at 4:23:18 AM, Peter Kao wrote:<br><br>ReadSlaveRegister<br>
+</blockquote></div><div><br></div><br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=30655
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.06.2023 05:57:11 +00:00
+UpdatedAt=13.06.2023 05:57:11 +00:00
+
+### ARTICLE02_SUBJECT
+Re: ecatReadSlaveRegister return EC_E_BUSY [Ticket#705721]
+
+### ARTICLE02_BODY
+<div>Haithem,</div><div> </div><div>Thanks for your reply.</div><div> </div><div>Our process would check all slaves in OP state after checking master state in OP state.</div><div>Based on the API blocking time, would you recommend using ecatGetSlaveState or notification?<br>
+</div><div> </div><div>Best regards,</div><div>Peter.K</div><hr>
+<div dir="ltr">
+<b>From:</b> Haithem Jebali via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Friday, June 9, 2023 3:30 PM<br>
+<b>To:</b> Peter Kao &lt;peter.kao@adlinktech.com&gt;<br>
+<b>Subject:</b> RE: ecatReadSlaveRegister return EC_E_BUSY [Ticket#705721] <div> </div>
+</div><div>
+<div>Hi,</div>
+<div> </div>
+<div>In our documentation it says that this error occurs when another transfer request is already pending or the master or the corresponding slave is currently changing its operational state.</div>
+<div>The Master is in OP but the slave may be still changing it's status to OP, that's why after waiting a little bit the slave answers!</div>
+<div> </div>
+<div>Best Regards</div>
+<div>Haithem Jebali<br>
+<br>
+</div>
+<div>
+<blockquote type="cite"> On Thursday, June 8, 2023 at 4:23:18 AM, Peter Kao wrote:<br>
+<br> ReadSlaveRegister<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=30677
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.06.2023 09:33:39 +00:00
+UpdatedAt=13.06.2023 09:33:42 +00:00
+
+### ARTICLE03_SUBJECT
+ecatReadSlaveRegister return EC_E_BUSY
+
+### ARTICLE03_BODY
+<div>Hi,</div><div><br></div><div>i would recommend using ecatgetSlaveState()!</div><div><br></div><div>Best regards</div><div>Haithem Jebali<br><br>
+</div><div><blockquote type="cite">On Tuesday, June 13, 2023 at 7:57:11 AM, Peter Kao wrote:<br><br>Based on the API blocking time, would you recommend using ecatGetSlaveState or notification?<br>
+</blockquote></div><div><br></div><br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>

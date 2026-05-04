@@ -1,0 +1,236 @@
+### HEADER
+Id=2871
+Link=http://at-zammad/#ticket/zoom/2871
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Philips Medical Systems NL BV (ID=310, Number=57503, Country=NL)
+Commission=Philips Medical, Computertomograph (ID=366, Number=366)
+Number=702871
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=harry.franken@philips.com (ID=567, FirstName=Harry, LastName=Franken)
+CreatedBy=harry.franken@philips.com (ID=567, FirstName=Harry, LastName=Franken)
+Type=
+TimeUnit=
+CreatedAt=22.04.2022 08:29:36 +00:00
+UpdatedAt=22.04.2022 10:27:31 +00:00
+CloseAt=22.04.2022 10:27:31 +00:00
+ArticlesCount=3
+
+### TITLE
+localize ESC which causes wkc error
+
+### ARTICLE00_HEADER
+Id=15192
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.04.2022 08:29:37 +00:00
+UpdatedAt=22.04.2022 08:29:37 +00:00
+
+### ARTICLE00_SUBJECT
+localize ESC which causes wkc error
+
+### ARTICLE00_BODY
+<div>
+<p>Acontis,</p>
+<p> </p>
+<p>When starting up our system, a wkc error is reported once for a short moment of time.</p>
+<p> </p>
+<p>However I would like to know which of the ESC is causing this.</p>
+<p>Is there an easy way to localize the issue in our network, or should I consider it as normal because we do not have any issues during operation.</p>
+<p> </p>
+<p>Please advise,</p>
+<p>Regards</p>
+<p>Harry.</p>
+<p> </p>
+</div><br>
+<hr> The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.
+
+### ARTICLE01_HEADER
+Id=15195
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.04.2022 09:30:57 +00:00
+UpdatedAt=22.04.2022 09:30:58 +00:00
+
+### ARTICLE01_SUBJECT
+localize ESC which causes wkc error
+
+### ARTICLE01_BODY
+Hi Harry,<div><br></div><div>during the transition, we ignore the WKC errors. They are notified, after the transition was successful. In this case some slaves could still generate a WKC error, because their sync manager is configured in mailbox and not triple buffer mode. You can check it in EC-Engineer:</div><div>
+<img style="max-width:100%;width: 855.011px;max-width: 100%;max-height: 551.011px;" src="/api/v1/ticket_attachment/2871/15195/59746?view=inline"><br>
+</div><div>In the column Buffer mode, 1 means mailbox mode.</div><div><br></div><div>If this mode is used for the in/outputs, WKC error can happen if the slave firmware is accessing the process data during the processing time of the cyclic frame in the ESC.</div><div>Some slave manufacturer, "calibrate" their firmware and adjust this access at startup. It can be related to SYNC signal and DCM too.</div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, April 22, 2022, 10:29:37 AM, Harry Franken wrote:<br><br><div>
+<p>Acontis,</p>
+<p> </p>
+<p>When starting up our system, a wkc error is reported once for a short moment of time.</p>
+<p> </p>
+<p>However I would like to know which of the ESC is causing this.</p>
+<p>Is there an easy way to localize the issue in our network, or should I consider it as normal because we do not have any issues during operation.</p>
+<p> </p>
+<p>Please advise,</p>
+<p>Regards</p>
+<p>Harry.</p>
+<p> </p>
+</div>
+<br>
+<hr> The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=15199
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.04.2022 10:10:51 +00:00
+UpdatedAt=22.04.2022 10:10:51 +00:00
+
+### ARTICLE02_SUBJECT
+RE: localize ESC which causes wkc error [Ticket#702871]
+
+### ARTICLE02_BODY
+<div>
+<p>Thx Cyril,</p>
+<p>This information help me a lot.</p>
+<p>Regards</p>
+<p>Harry</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> 2022 Apr 22 11:31 AM<br>
+<b>To:</b> Franken, Harry &lt;harry.franken@philips.com&gt;<br>
+<b>Subject:</b> RE: localize ESC which causes wkc error [Ticket#702871]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p><b>Caution: </b>This e-mail originated from outside of Philips, be careful for phishing. </p>
+</div>
+<p> </p>
+<div>
+<p>Hi Harry,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>during the transition, we ignore the WKC errors. They are notified, after the transition was successful. In this case some slaves could still generate a WKC error, because their sync manager is configured in mailbox and not triple buffer mode. You can check it in EC-Engineer:</p>
+</div>
+<div>
+<p><img style="max-width:100%;width:13.4166in;max-height:8.6388in;width:1288px;max-height:829px;" src="/api/v1/ticket_attachment/2871/15199/59759?view=inline"></p>
+</div>
+<div>
+<p>In the column Buffer mode, 1 means mailbox mode.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>If this mode is used for the in/outputs, WKC error can happen if the slave firmware is accessing the process data during the processing time of the cyclic frame in the ESC.</p>
+</div>
+<div>
+<p>Some slave manufacturer, "calibrate" their firmware and adjust this access at startup. It can be related to SYNC signal and DCM too.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<div>
+<div>
+<p>____________________________________________________________________________</p>
+</div>
+<div>
+<p>Cyril Eyssautier</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>acontis technologies GmbH</p>
+</div>
+</div>
+<div>
+<p>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</p>
+</div>
+<div>
+<p>Http: <a href="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.acontis.com%2F&amp;data=04%7C01%7C%7C838936ed666d4531a0b708da2442cfe9%7C1a407a2d76754d178692b3ac285306e4%7C0%7C0%7C637862166617386795%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=qh90Ogr6y3PreZpIkiU6o6QNW7DQ%2BAGrj%2Ba08J7f2Ik%3D&amp;reserved=0" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com</a> </p>
+</div>
+<div>
+<p>Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>eMail: ecsupport@acontis.com</p>
+</div>
+<div>
+<p>----------------------------------------------------------------------------</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</p>
+</div>
+<div>
+<p><a href="https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.acontis.com%2Fen%2Fnewsletter.html&amp;data=04%7C01%7C%7C838936ed666d4531a0b708da2442cfe9%7C1a407a2d76754d178692b3ac285306e4%7C0%7C0%7C637862166617543043%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&amp;sdata=xPx0X2GKzK31ZJpVfDUX39LVrUg8nrK9xhUSftsqmL0%3D&amp;reserved=0" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Friday, April 22, 2022, 10:29:37 AM, Harry Franken wrote:</p>
+<p></p>
+<div>
+<p>Acontis,</p>
+<p> </p>
+<p>When starting up our system, a wkc error is reported once for a short moment of time.</p>
+<p> </p>
+<p>However I would like to know which of the ESC is causing this.</p>
+<p>Is there an easy way to localize the issue in our network, or should I consider it as normal because we do not have any issues during operation.</p>
+<p> </p>
+<p>Please advise,</p>
+<p>Regards</p>
+<p>Harry.</p>
+<p> </p>
+</div>
+<p> </p>
+<div>
+<hr>
+</div>
+<p>The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.</p>
+<p></p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+</div>

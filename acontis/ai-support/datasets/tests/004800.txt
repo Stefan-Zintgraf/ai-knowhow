@@ -1,0 +1,112 @@
+### HEADER
+Id=4800
+Link=http://at-zammad/#ticket/zoom/4800
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Cameca (ID=535, Number=0, Country=FR)
+Commission=CAMECA MAS (ID=211, Number=211)
+Number=704800
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=olivier.caron@ametek.com (ID=1599, FirstName=Olivier, LastName=Caron)
+CreatedBy=olivier.caron@ametek.com (ID=1599, FirstName=Olivier, LastName=Caron)
+Type=
+TimeUnit=
+CreatedAt=27.01.2023 14:25:03 +00:00
+UpdatedAt=01.02.2023 07:01:25 +00:00
+CloseAt=01.02.2023 07:01:25 +00:00
+ArticlesCount=2
+
+### TITLE
+RFI Dongle RT-WIN
+
+### ARTICLE00_HEADER
+Id=25376
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.01.2023 14:25:03 +00:00
+UpdatedAt=27.01.2023 14:25:03 +00:00
+
+### ARTICLE00_SUBJECT
+RFI Dongle RT-WIN
+
+### ARTICLE00_BODY
+<p> </p><div> <div> <div> <p><span lang="EN-US">Good Morning,</span></p>
+<p><span lang="EN-US">We will send a dongle to our customer.</span></p>
+<p><span lang="EN-US">Our customer wants to scan the dongle (anti spy software, antivirus software,….)</span></p>
+<p><span lang="EN-US">It is risky or safe for the dongle ?</span></p>
+</div>
+</div>
+<p> </p>
+<p>Cordialement / Best Regards</p>
+<p> </p>
+<p><b><span style="color:#595959;">Olivier CARON</span></b><span style="color:#595959;"> </span></p>
+<p><span style="color:#595959;">Acheteur Electronique / Electronics Commodity Manager </span><span style="color:red;">|</span> <b><span style="color:#595959;">CAMECA</span></b></p>
+<p><span style="color:#595959;">29, quai des Grésillons</span> <span style="color:red;"> |</span> <span style="color:#595959;">92622 Gennevilliers Cedex</span> <span style="color:red;"> |</span> <span style="color:#595959;">France</span></p>
+<p><a href="mailto:olivier.caron@ametek.com">olivier.caron@ametek.com</a> <span style="color:red;">|</span><span style="color:#595959;"> M: +33 6 28 41 43 15</span><span style="color:red;"></span></p>
+<p><span lang="EN-US"><a href="https://urldefense.com/v3/__http:/www.cameca.com/__;!!HKOSU0g!VmtYB0BYiwyprPxhw9gKGFCywZASw-Huq8V_09tCTIjU4MBdrSGaxZp-Khj_4sOwXnY%24" rel="nofollow noreferrer noopener" title="https://urldefense.com/v3/__http:/www.cameca.com/__;!!HKOSU0g!VmtYB0BYiwyprPxhw9gKGFCywZASw-Huq8V_09tCTIjU4MBdrSGaxZp-Khj_4sOwXnY%24" target="_blank"><span lang="FR">www.cameca.com</span></a> </span><span style="color:red;"></span></p>
+<p><a href="https://www.cameca.com/" rel="nofollow noreferrer noopener" title="https://www.cameca.com/" target="_blank"><span style="color:red;"><img border="0" style="max-width:100%;width:3.2187in;max-height:.4583in;width:309px;max-height:44px;" src="/api/v1/ticket_attachment/4800/25376/107312?view=inline"></span></a><a href="https://linkedin.com/company/cameca" rel="nofollow noreferrer noopener" title="https://linkedin.com/company/cameca" target="_blank"><img border="0" style="max-width:100%;width:.9479in;max-height:.4583in;width:91px;max-height:44px;" src="/api/v1/ticket_attachment/4800/25376/107311?view=inline"></a></p>
+<p> </p>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=25389
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.01.2023 15:45:06 +00:00
+UpdatedAt=27.01.2023 15:45:09 +00:00
+
+### ARTICLE01_SUBJECT
+RFI Dongle RT-WIN
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>I don't see any problem to scan the dongle, because it contains no executable content.</div><div>Sometimes it could happen, that your antivirus scanner blocks the WIBU software like "CodeMeter" it self. In that case you should exclude this process from scan or ask WIBU support (support@wibu.com) how this issue can be solved.</div><div><br></div><div>Best Regards,</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, January 27, 2023 at 3:25:03 PM, Olivier Caron wrote:<br><br><p> </p>
+<div> <div> <div> <p><span lang="EN-US">Good Morning,</span></p>
+<p><span lang="EN-US">We will send a dongle to our customer.</span></p>
+<p><span lang="EN-US">Our customer wants to scan the dongle (anti spy software, antivirus software,….)</span></p>
+<p><span lang="EN-US">It is risky or safe for the dongle ?</span></p>
+</div>
+</div>
+<p> </p>
+<p>Cordialement / Best Regards</p>
+<p> </p>
+<p><b><span style="color:#595959;">Olivier CARON</span></b><span style="color:#595959;"> </span></p>
+<p><span style="color:#595959;">Acheteur Electronique / Electronics Commodity Manager </span><span style="color:red;">|</span> <b><span style="color:#595959;">CAMECA</span></b></p>
+<p><span style="color:#595959;">29, quai des Grésillons</span> <span style="color:red;"> |</span> <span style="color:#595959;">92622 Gennevilliers Cedex</span> <span style="color:red;"> |</span> <span style="color:#595959;">France</span></p>
+<p><a href="mailto:olivier.caron@ametek.com">olivier.caron@ametek.com</a> <span style="color:red;">|</span><span style="color:#595959;"> M: +33 6 28 41 43 15</span><span style="color:red;"></span></p>
+<p><span lang="EN-US"><a href="https://urldefense.com/v3/__http:/www.cameca.com/__;!!HKOSU0g!VmtYB0BYiwyprPxhw9gKGFCywZASw-Huq8V_09tCTIjU4MBdrSGaxZp-Khj_4sOwXnY%24" rel="nofollow noreferrer noopener" title="https://urldefense.com/v3/__http:/www.cameca.com/__;!!HKOSU0g!VmtYB0BYiwyprPxhw9gKGFCywZASw-Huq8V_09tCTIjU4MBdrSGaxZp-Khj_4sOwXnY%24" target="_blank"><span lang="FR">www.cameca.com</span></a> </span><span style="color:red;"></span></p>
+<p><a href="https://www.cameca.com/" rel="nofollow noreferrer noopener" title="https://www.cameca.com/" target="_blank"><span style="color:red;"><img border="0" style="max-width:100%;max-width:100%;width:3.2187in;max-height:.4583in;width:309px;max-height:44px;" src="/api/v1/ticket_attachment/4800/25389/107346?view=inline"></span></a><a href="https://linkedin.com/company/cameca" rel="nofollow noreferrer noopener" title="https://linkedin.com/company/cameca" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.9479in;max-height:.4583in;width:91px;max-height:44px;" src="/api/v1/ticket_attachment/4800/25389/107347?view=inline"></a></p>
+<p> </p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,211 @@
+### HEADER
+Id=8414
+Link=http://at-zammad/#ticket/zoom/8414
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vector Informatik GmbH (ID=167, Number=40366, Country=DE)
+Commission=Vector Simulations AG, Unknown (ID=514, Number=514)
+Number=708414
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+CreatedBy=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+Type=
+TimeUnit=
+CreatedAt=03.07.2024 07:44:40 +00:00
+UpdatedAt=20.07.2024 20:50:31 +00:00
+CloseAt=20.07.2024 20:50:31 +00:00
+ArticlesCount=3
+
+### TITLE
+Ec Simulator - erzeugen einen eigenen Gerätes
+
+### ARTICLE00_HEADER
+Id=46889
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.07.2024 07:44:40 +00:00
+UpdatedAt=03.07.2024 07:44:42 +00:00
+
+### ARTICLE00_SUBJECT
+Ec Simulator - erzeugen einen eigenen Gerätes
+
+### ARTICLE00_BODY
+<p> </p><div> <p>Guten Tag,</p>
+<p> </p>
+<p>bei der Verwendung des Ec Simulators möchten unsere Kunden nicht (nur) EtherCAT Netzwerke oder EtherCAT Geräte simulieren, sondern auch Daten von unserem Programm CANoe in ein EtherCAT-Netzwerk übertragen. Dazu müssen die Daten, die übertragen werden sollen im Ec-Engineer angelegt werden. Welchen Weg würden sie vorschlagen, um dies mit ihren Tools zu machen? Gibt es ein „generisches“ Gerät, dass man dafür verwenden kann, in dem dann einfach die gewünschten Daten angelegt werden? Oder gibt es andere Tools (z.B. von der EtherCAT Technology Group), mit der ESI-Dateien für diesen Anwendungsfall erzeugt werden können?</p>
+<p> </p>
+<p>Grüße / Regards,</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>----------------------------------------------</p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">VG/PND10</span></p>
+<p><span lang="EN-US">Tel.: +49 711 80670-4791</span></p>
+<p>----------------------------------------------</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=47187
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.07.2024 13:54:01 +00:00
+UpdatedAt=09.07.2024 13:54:03 +00:00
+
+### ARTICLE01_SUBJECT
+Ec Simulator - erzeugen einen eigenen Gerätes
+
+### ARTICLE01_BODY
+Guten Tag Herr Lange,<div><br></div><div>hätten Sie morgen Zeit, dass wir es telefonisch klären?</div><div><br></div><div>Viele Grüße</div><div>Paul Bußmann<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Mittwoch, 3. Juli 2024 um 09:44:40, schrieb Tobias Lange:<br><br><p> </p>
+<div> <p>Guten Tag,</p>
+<p> </p>
+<p>bei der Verwendung des Ec Simulators möchten unsere Kunden nicht (nur) EtherCAT Netzwerke oder EtherCAT Geräte simulieren, sondern auch Daten von unserem Programm CANoe in ein EtherCAT-Netzwerk übertragen. Dazu müssen die Daten, die übertragen werden sollen im Ec-Engineer angelegt werden. Welchen Weg würden sie vorschlagen, um dies mit ihren Tools zu machen? Gibt es ein „generisches“ Gerät, dass man dafür verwenden kann, in dem dann einfach die gewünschten Daten angelegt werden? Oder gibt es andere Tools (z.B. von der EtherCAT Technology Group), mit der ESI-Dateien für diesen Anwendungsfall erzeugt werden können?</p>
+<p> </p>
+<p>Grüße / Regards,</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>----------------------------------------------</p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">VG/PND10</span></p>
+<p><span lang="EN-US">Tel.: +49 711 80670-4791</span></p>
+<p>----------------------------------------------</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=47191
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.07.2024 14:21:13 +00:00
+UpdatedAt=09.07.2024 14:21:13 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Ec Simulator - erzeugen einen eigenen Gerätes [Ticket#708414]
+
+### ARTICLE02_BODY
+<div>
+<p>Hallo Herr Bußmann,</p>
+<p> </p>
+<p>morgen passt es gut bei mir. Ich habe ihnen gerade einen Termin für 10:00 Uhr geschickt. Es passt bei mir aber auch ab 13:00 Uhr, falls das bei ihnen besser passt.</p>
+<p> </p>
+<div>
+<p><span lang="EN-US">Grüße / Regards,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Tobias Lange</span></p>
+<p><span lang="EN-US">----------------------------------------------</span></p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">VG/PND10</span></p>
+<p><span lang="EN-US">Tel.: +49 711 80670-4791</span></p>
+<p><span lang="EN-US">----------------------------------------------</span></p>
+</div>
+<p><span lang="EN-US"><p> </p></span></p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b><span lang="EN-US">From:</span></b><span lang="EN-US"> Paul Bußmann via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Tuesday, July 9, 2024 3:54 PM<br>
+<b>To:</b> Lange, Tobias &lt;tobias.lange@vector.com&gt;<br>
+<b>Subject:</b> RE: Ec Simulator - erzeugen einen eigenen Gerätes [Ticket#708414]</span></p>
+</div>
+</div>
+<p><span lang="EN-US"><p> </p></span></p>
+<p>Guten Tag Herr Lange,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>hätten Sie morgen Zeit, dass wir es telefonisch klären?</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Viele Grüße</p>
+</div>
+<div>
+<p>Paul Bußmann</p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Paul Bußmann</p>
+</div>
+<div>
+<p><span lang="EN-US">EtherCAT Support</span></p>
+</div>
+<div>
+<div>
+<p><span lang="EN-US">eMail: </span><a href="mailto:ecsupport@acontis.com"><span lang="EN-US">ecsupport@acontis.com</span></a><span lang="EN-US">, Phone: +49 (751) 56030-30</span></p>
+</div>
+<div>
+<p>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p><span lang="EN-US">__________________________________________________________________________________________ </span></p>
+</div>
+<div>
+<p><span lang="EN-US">Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank"><span lang="EN-US">https://www.acontis.com/en/newsletter.html</span></a><span lang="EN-US"></span></p>
+</div>
+</div>
+<div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+<div>
+<blockquote>
+<p>Am Mittwoch, 3. Juli 2024 um 09:44:40, schrieb Tobias Lange:</p>
+<p> </p>
+<div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>bei der Verwendung des Ec Simulators möchten unsere Kunden nicht (nur) EtherCAT Netzwerke oder EtherCAT Geräte simulieren, sondern auch Daten von unserem Programm CANoe in ein EtherCAT-Netzwerk übertragen. Dazu müssen die Daten, die übertragen werden sollen im Ec-Engineer angelegt werden. Welchen Weg würden sie vorschlagen, um dies mit ihren Tools zu machen? Gibt es ein „generisches“ Gerät, dass man dafür verwenden kann, in dem dann einfach die gewünschten Daten angelegt werden? Oder gibt es andere Tools (z.B. von der EtherCAT Technology Group), mit der ESI-Dateien für diesen Anwendungsfall erzeugt werden können?</p>
+<p> </p>
+<p><span lang="EN-US">Grüße / Regards,</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Tobias Lange</span></p>
+<p><span lang="EN-US">----------------------------------------------</span></p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">VG/PND10</span></p>
+<p><span lang="EN-US">Tel.: +49 711 80670-4791</span></p>
+<p>----------------------------------------------</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

@@ -1,0 +1,220 @@
+### HEADER
+Id=7946
+Link=http://at-zammad/#ticket/zoom/7946
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Panasonic Industry SUNX, FP-HX EtherCAT casette (ID=806, Number=806)
+Number=707946
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=22.04.2024 03:28:45 +00:00
+UpdatedAt=16.05.2024 06:13:08 +00:00
+CloseAt=26.04.2024 06:06:16 +00:00
+ArticlesCount=3
+
+### TITLE
+Question about EC-Engineer SDK(Panasonic Industry) [E006]
+
+### ARTICLE00_HEADER
+Id=43705
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=22.04.2024 03:28:45 +00:00
+UpdatedAt=22.04.2024 03:28:46 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Engineer SDK(Panasonic Industry) [E006]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Engineer SDK(Panasonic Industry) [E006]
+
+It seems that the unnecessary DLLs are existing in C# application. (Please see #2)
+Please let me know the unnecessary DLLs in SDK(EC-Engineer_SDK_View_Layer2_DotNet4_OEM_Src_V3.9.2.zip).
+The enclosed items are as follows.
+EcCore.dll
+EcEniEngine.dll
+EcMaster.dll
+EcMasterRasClient.dll
+EcOemPlugin.dll
+EcResources.dll
+EcView.dll
+EcViewControls.dll
+EcViewModel.dll
+EcViewPlugin.dll
+EcViewResources.dll
+EcWrapper.dll
+EcWapperDotNet.dll
+emllNdis.dll
+emllPcap.dll
+EtherCATSuiteCpp.dll
+EtherCATSuiteCSharp.dll
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=43725
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.04.2024 07:49:33 +00:00
+UpdatedAt=22.04.2024 07:49:36 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Engineer SDK(Panasonic Industry) [E006]
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>the dlls are not <span>unnecessary. In fact if you are using C# you do not need this "</span><span>EtherCATSuiteCpp.dll"</span>
+</div><div><br></div><div>Also I think one of those link layers should be enough. I would recommend ndis:</div><div><br></div><div>
+<blockquote>
+<div>emllNdis.dll</div>
+<div>emllPcap.dl</div>
+</blockquote>
+<div data-signature="true" data-signature-id="2">
+<div>The rest of the dlls is needed.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, April 22, 2024 at 5:28:45 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Engineer SDK(Panasonic Industry) [E006]</div>
+<div><br></div>
+<div>It seems that the unnecessary DLLs are existing in C# application. (Please see #2)</div>
+<div>Please let me know the unnecessary DLLs in SDK(EC-Engineer_SDK_View_Layer2_DotNet4_OEM_Src_V3.9.2.zip).</div>
+<div>The enclosed items are as follows.</div>
+<div>EcCore.dll</div>
+<div>EcEniEngine.dll</div>
+<div>EcMaster.dll</div>
+<div>EcMasterRasClient.dll</div>
+<div>EcOemPlugin.dll</div>
+<div>EcResources.dll</div>
+<div>EcView.dll</div>
+<div>EcViewControls.dll</div>
+<div>EcViewModel.dll</div>
+<div>EcViewPlugin.dll</div>
+<div>EcViewResources.dll</div>
+<div>EcWrapper.dll</div>
+<div>EcWapperDotNet.dll</div>
+<div>emllNdis.dll</div>
+<div>emllPcap.dll</div>
+<div>EtherCATSuiteCpp.dll</div>
+<div>EtherCATSuiteCSharp.dll</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=44360
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.05.2024 13:36:30 +00:00
+UpdatedAt=07.05.2024 13:36:34 +00:00
+
+### ARTICLE02_SUBJECT
+Question about EC-Engineer SDK(Panasonic Industry) [E006]
+
+### ARTICLE02_BODY
+<div>Hi,</div><div><br></div><div>please find the latest version here:</div><div><br></div><div><div><a href="https://downloads.acontis.com/2024/P-R/Panasonic_Industries_SUNX_(40707)(JP)/EC-Engineer_OEM_GUI_SDK/3.9.3/EC-Engineer_SDK_View_Layer2_DotNet4_OEM_Src_V3.9.3.zip" title="https://downloads.acontis.com/2024/P-R/Panasonic_Industries_SUNX_(40707)(JP)/EC-Engineer_OEM_GUI_SDK/3.9.3/EC-Engineer_SDK_View_Layer2_DotNet4_OEM_Src_V3.9.3.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/P-R/Panasonic_Industries_SUNX_(40707)(JP)/EC-Engineer_OEM_GUI_SDK/3.9.3/EC-Engineer_SDK_View_Layer2_DotNet4_OEM_Src_V3.9.3.zip</a></div></div><div><br></div><div>And also the EcOemPlugin.dll is unnecessary.</div><div><br></div><div>Best regards,</div><div>Kai<br><br>
+</div><div><blockquote type="cite">On Monday, April 22, 2024 at 9:49:33 AM, Kai Feifel wrote:<br><br>Hi,<div><br></div>
+<div>the dlls are not <span>unnecessary. In fact if you are using C# you do not need this "</span><span>EtherCATSuiteCpp.dll"</span>
+</div>
+<div><br></div>
+<div>Also I think one of those link layers should be enough. I would recommend ndis:</div>
+<div><br></div>
+<div>
+<blockquote>
+<div>emllNdis.dll</div>
+<div>emllPcap.dl</div>
+</blockquote>
+<div data-signature="true" data-signature-id="2">
+<div>The rest of the dlls is needed.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, April 22, 2024 at 5:28:45 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Engineer SDK(Panasonic Industry) [E006]</div>
+<div><br></div>
+<div>It seems that the unnecessary DLLs are existing in C# application. (Please see #2)</div>
+<div>Please let me know the unnecessary DLLs in SDK(EC-Engineer_SDK_View_Layer2_DotNet4_OEM_Src_V3.9.2.zip).</div>
+<div>The enclosed items are as follows.</div>
+<div>EcCore.dll</div>
+<div>EcEniEngine.dll</div>
+<div>EcMaster.dll</div>
+<div>EcMasterRasClient.dll</div>
+<div>EcOemPlugin.dll</div>
+<div>EcResources.dll</div>
+<div>EcView.dll</div>
+<div>EcViewControls.dll</div>
+<div>EcViewModel.dll</div>
+<div>EcViewPlugin.dll</div>
+<div>EcViewResources.dll</div>
+<div>EcWrapper.dll</div>
+<div>EcWapperDotNet.dll</div>
+<div>emllNdis.dll</div>
+<div>emllPcap.dll</div>
+<div>EtherCATSuiteCpp.dll</div>
+<div>EtherCATSuiteCSharp.dll</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+<br>
+</blockquote></div><div><br></div>

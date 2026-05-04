@@ -1,0 +1,123 @@
+### HEADER
+Id=2809
+Link=http://at-zammad/#ticket/zoom/2809
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Sierra CP Engineering Limited (ID=322, Number=40369, Country=UK)
+Commission=Sierra CP, CADET Controller  (ID=384, Number=384)
+Number=702809
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=gjm@sierra-cp.com (ID=156, FirstName=Greg, LastName=McElroy)
+CreatedBy=gjm@sierra-cp.com (ID=156, FirstName=Greg, LastName=McElroy)
+Type=
+TimeUnit=
+CreatedAt=13.04.2022 07:30:51 +00:00
+UpdatedAt=06.05.2022 06:00:12 +00:00
+CloseAt=06.05.2022 06:00:12 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-Master SDK - Bus load
+
+### ARTICLE00_HEADER
+Id=14951
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.04.2022 07:30:51 +00:00
+UpdatedAt=13.04.2022 07:30:54 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Master SDK - Bus load
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,<br>
+<br> I was wondering whether an API exists in the EC-Master SDK where I can read the size of the frame and the number of frames being sent out on the network at runtime?</p>
+<p>We recently had an issue where packets were being missed or no response as the network was overloaded and couldn’t cope with the traffic and I wanted to show a warning message to the user explaining this.</p>
+<p> </p>
+<p>Regards,</p>
+<p>Greg McElroy</p>
+<p>Software Engineer</p>
+<p>Sierra CP Engineering Limited</p>
+<p><b><img src="/api/v1/ticket_attachment/2809/14951/58877?view=inline" alt="sierra-cp-logo-01" style="max-width:100%;width:227px;max-height:69px;"></b></p>
+<p>Website: <a href="http://www.sierra-cp.com/" rel="nofollow noreferrer noopener" target="_blank">www.sierra-cp.com</a></p>
+<p>Sandy’s Road Malvern, WR14 1JJ, UK</p>
+<p> </p>
+<p><img border="0" src="/api/v1/ticket_attachment/2809/14951/58878?view=inline" alt="cid:image002.png@01D6CCA1.41599840" style="max-width:100%;width:277px;max-height:85px;"><img border="0" src="/api/v1/ticket_attachment/2809/14951/58879?view=inline" alt="See the source image" style="max-width:100%;width:82px;max-height:82px;"></p>
+<p> </p>
+<p>Sierra CP Engineering Limited is registered in England and Wales. Registered Number: 2827565.</p>
+<p> </p>
+<p><b>NOTICE: This message may contain confidential and/or privileged information. If you are not the addressee or authorized to receive this for the addressee, you must not use, copy, disclose, or take any action based on this message or any information herein. If you have received this message in error, please advise the sender immediately by reply e-mail and delete this message. Thank you for your cooperation.</b></p>
+<p> </p>
+<p><img border="0" src="/api/v1/ticket_attachment/2809/14951/58880?view=inline" alt="Untitled.jpg" style="max-width:100%;width:19px;max-height:18px;"> PLEASE CONSIDER THE ENVIRONMENT BEFORE YOU PRINT THIS E-MAIL</p>
+<p> </p>
+</div><span class="js-signatureMarker"></span><br> ________________________________________________________________________<br> This e-mail has been scanned for all viruses by Claranet. The<br> service is powered by MessageLabs. For more information on a proactive<br> anti-virus service working around the clock, around the globe, visit:<br>
+<a href="http://www.claranet.co.uk" rel="nofollow noreferrer noopener" target="_blank">http://www.claranet.co.uk</a><br> ________________________________________________________________________
+
+### ARTICLE01_HEADER
+Id=14966
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.04.2022 08:18:00 +00:00
+UpdatedAt=13.04.2022 08:18:04 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Master SDK - Bus load
+
+### ARTICLE01_BODY
+Hi Greg,<div><br></div><div>I'm afraid that today it is only possible by using <span>emLogFrameEnable()</span>
+</div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, April 13, 2022, 9:30:51 AM, Greg McElroy wrote:<br><br><div>
+<p>Hello,<br>
+<br> I was wondering whether an API exists in the EC-Master SDK where I can read the size of the frame and the number of frames being sent out on the network at runtime?</p>
+<p>We recently had an issue where packets were being missed or no response as the network was overloaded and couldn’t cope with the traffic and I wanted to show a warning message to the user explaining this.</p>
+<p> </p>
+<p>Regards,</p>
+<p>Greg McElroy</p>
+<p>Software Engineer</p>
+<p>Sierra CP Engineering Limited</p>
+<p><b><img src="/api/v1/ticket_attachment/2809/14966/58905?view=inline" alt="sierra-cp-logo-01" style="max-width:100%;max-width:100%;width:227px;max-height:69px;"></b></p>
+<p>Website: <a href="http://www.sierra-cp.com/" rel="nofollow noreferrer noopener" target="_blank">www.sierra-cp.com</a></p>
+<p>Sandy’s Road Malvern, WR14 1JJ, UK</p>
+<p> </p>
+<p><img border="0" src="/api/v1/ticket_attachment/2809/14966/58906?view=inline" alt="cid:image002.png@01D6CCA1.41599840" style="max-width:100%;max-width:100%;width:277px;max-height:85px;"><img border="0" src="/api/v1/ticket_attachment/2809/14966/58907?view=inline" alt="See the source image" style="max-width:100%;max-width:100%;width:82px;max-height:82px;"></p>
+<p> </p>
+<p>Sierra CP Engineering Limited is registered in England and Wales. Registered Number: 2827565.</p>
+<p> </p>
+<p><b>NOTICE: This message may contain confidential and/or privileged information. If you are not the addressee or authorized to receive this for the addressee, you must not use, copy, disclose, or take any action based on this message or any information herein. If you have received this message in error, please advise the sender immediately by reply e-mail and delete this message. Thank you for your cooperation.</b></p>
+<p> </p>
+<p><img border="0" src="/api/v1/ticket_attachment/2809/14966/58908?view=inline" alt="Untitled.jpg" style="max-width:100%;max-width:100%;width:19px;max-height:18px;"> PLEASE CONSIDER THE ENVIRONMENT BEFORE YOU PRINT THIS E-MAIL</p>
+<p> </p>
+</div>
+<span class="js-signatureMarker"></span><br> ________________________________________________________________________<br> This e-mail has been scanned for all viruses by Claranet. The<br> service is powered by MessageLabs. For more information on a proactive<br> anti-virus service working around the clock, around the globe, visit:<br>
+<a href="http://www.claranet.co.uk" rel="nofollow noreferrer noopener" target="_blank">http://www.claranet.co.uk</a><br> ________________________________________________________________________<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,182 @@
+### HEADER
+Id=139
+Link=http://at-zammad/#ticket/zoom/139
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Horiba Instruments (ID=355, Number=40313, Country=US)
+Commission=Horiba Instruments, slave testing (ID=422, Number=422)
+Number=700139
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=stan.knap@horiba.com (ID=123, FirstName=Stan, LastName=Knap)
+CreatedBy=stan.knap@horiba.com (ID=123, FirstName=Stan, LastName=Knap)
+Type=
+TimeUnit=
+CreatedAt=09.03.2021 08:20:57 +00:00
+UpdatedAt=05.04.2021 14:23:19 +00:00
+CloseAt=12.03.2021 07:05:04 +00:00
+ArticlesCount=2
+
+### TITLE
+Dynamic PDOs
+
+### ARTICLE00_HEADER
+Id=594
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.03.2021 08:20:57 +00:00
+UpdatedAt=09.03.2021 08:20:57 +00:00
+
+### ARTICLE00_SUBJECT
+Dynamic PDOs
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>We would like to add support for dynamic (user defined) PDOs to the EC slave we have been developing.</p>
+<p> </p>
+<p>In the screen-shot below Inputs under 0x1A00 and 0x1BFF and Outputs under 0x1600 and 0x17FF are Mandatory and Fixed.</p>
+<p>They are determined by the ESI.</p>
+<p> </p>
+<p>For testing purposes I added one user-defined TxPDO (0x1A01) and one RxPDO (0x1601) as shown below.</p>
+<p>Notice that both are unchecked (not enabled).</p>
+<p> </p>
+<p><img src="/api/v1/ticket_attachment/139/594/1245?view=inline" alt="cid:image003.jpg@01D7141B.C527A060" style="max-width:100%;width:1980px;max-height:1019px;"></p>
+<p> </p>
+<p>Since they are not enable they should not have impact on the slave.</p>
+<p>However, under “Init Commands” one can see initialization of 0x1A01 and 0x1601 is added to the set of init commands, see below.</p>
+<p>Normally this should not have impact on the run time PDO layout as 0x1C12 and 0x1C13 don’t have references to 0x1A01 and 0x1601, i.e, the dynamic PDOs will be excluded from cycle traffic.</p>
+<p> </p>
+<p><img src="/api/v1/ticket_attachment/139/594/1246?view=inline" alt="cid:image005.jpg@01D7141B.C527A060" style="max-width:100%;width:1925px;max-height:1028px;"></p>
+<p> </p>
+<p>If I enable the dynamic PDOs as shown below</p>
+<p> </p>
+<p><img src="/api/v1/ticket_attachment/139/594/1247?view=inline" alt="cid:image009.jpg@01D7141B.C527A060" style="max-width:100%;width:1916px;max-height:1023px;"></p>
+<p> </p>
+<p>The Init Commands look correct, see below</p>
+<p> </p>
+<p><img src="/api/v1/ticket_attachment/139/594/1248?view=inline" alt="cid:image013.jpg@01D7141B.C527A060" style="max-width:100%;width:1920px;max-height:1023px;"></p>
+<p> </p>
+<p>The screen shots above are given to establish a context for my problem.</p>
+<p>The problem is that using EC-Engineer as soon as I switch from the Configuration- to Diagnosis Mode, and set to OPERATIONAL, I see in wiresharek that an attempt to initialize 0x1a01 is aborted, see below.</p>
+<p>The slave enters Pre-Op only.</p>
+<p> </p>
+<p><img src="/api/v1/ticket_attachment/139/594/1249?view=inline" alt="cid:image014.jpg@01D7141B.C527A060" style="max-width:100%;width:1913px;max-height:1020px;"></p>
+<p> </p>
+<p>I think the reason for Abort is that both 0x1A01 and 0x1601 are not part of the object dictionary, see below.</p>
+<p> </p>
+<p><img src="/api/v1/ticket_attachment/139/594/1250?view=inline" alt="cid:image017.jpg@01D7141B.C527A060" style="max-width:100%;width:2897px;max-height:1535px;"></p>
+<p> </p>
+<p>In the case when dynamic PDOs are not enabled, why the Master tries to do initialization which is not required?</p>
+<p> </p>
+<p>Unfortunately, I have also the same problem when dynamic PDOs are enabled….</p>
+<p> </p>
+<p>Notice that I added object 0x1a01, but it could’ve added any in range 0x1A00-0x1BFF. Similar flexibility applies in case of object 0x1601.</p>
+<p>If the reason for my problem is absence of objects 0x1a01 and 0x1601 in the object dictionary, how can these new objects be added dynamically ?</p>
+<p> </p>
+<p>Could you point me to a documentation on dynamic PDOs ?</p>
+<p> </p>
+<p>Thank you for a prompt reply and regards</p>
+<p>Stan</p>
+<p>Cell.: 613-539-2607</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=604
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.03.2021 08:45:03 +00:00
+UpdatedAt=09.03.2021 08:45:08 +00:00
+
+### ARTICLE01_SUBJECT
+Dynamic PDOs
+
+### ARTICLE01_BODY
+Hi Stan,<div><br></div><div>if you have the PDOs unassigned, the init command have no impact as you said.</div><div>We do this because TwinCAT does it also, and in this case it is easier to compare ENIs and to find possible problems.</div><div><br></div><div>If you assign the PDOs the init command will impact of course. The PDOs do not have to be in the offline CoE dictionary. But your slave firmware must handle these objects if you declare the PDO. So the objects should be in the OD of the slave.<br><div data-signature="true" data-signature-id="2">
+<div><br></div>
+<div>Best Regards</div>
+<div>Kai<br>
+</div>
+<div><br></div>
+<div>____________________________________________________________________________</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>Fax: +49 (751) 56030-31</div>
+<div>eMail: ecsupport@acontis.com</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Dienstag, 9. März 2021, 09:20:57, schrieb Stan Knap:<br><br><div>
+<p>Hello,</p>
+<p> </p>
+<p>We would like to add support for dynamic (user defined) PDOs to the EC slave we have been developing.</p>
+<p> </p>
+<p>In the screen-shot below Inputs under 0x1A00 and 0x1BFF and Outputs under 0x1600 and 0x17FF are Mandatory and Fixed.</p>
+<p>They are determined by the ESI.</p>
+<p> </p>
+<p>For testing purposes I added one user-defined TxPDO (0x1A01) and one RxPDO (0x1601) as shown below.</p>
+<p>Notice that both are unchecked (not enabled).</p>
+<p> </p>
+<p><img src="/api/v1/ticket_attachment/139/604/1268?view=inline" alt="cid:image003.jpg@01D7141B.C527A060" style="max-width:100%;max-width:100%;width:1980px;max-height:1019px;"></p>
+<p> </p>
+<p>Since they are not enable they should not have impact on the slave.</p>
+<p>However, under “Init Commands” one can see initialization of 0x1A01 and 0x1601 is added to the set of init commands, see below.</p>
+<p>Normally this should not have impact on the run time PDO layout as 0x1C12 and 0x1C13 don’t have references to 0x1A01 and 0x1601, i.e, the dynamic PDOs will be excluded from cycle traffic.</p>
+<p> </p>
+<p><img src="/api/v1/ticket_attachment/139/604/1269?view=inline" alt="cid:image005.jpg@01D7141B.C527A060" style="max-width:100%;max-width:100%;width:1925px;max-height:1028px;"></p>
+<p> </p>
+<p>If I enable the dynamic PDOs as shown below</p>
+<p> </p>
+<p><img src="/api/v1/ticket_attachment/139/604/1270?view=inline" alt="cid:image009.jpg@01D7141B.C527A060" style="max-width:100%;max-width:100%;width:1916px;max-height:1023px;"></p>
+<p> </p>
+<p>The Init Commands look correct, see below</p>
+<p> </p>
+<p><img src="/api/v1/ticket_attachment/139/604/1271?view=inline" alt="cid:image013.jpg@01D7141B.C527A060" style="max-width:100%;max-width:100%;width:1920px;max-height:1023px;"></p>
+<p> </p>
+<p>The screen shots above are given to establish a context for my problem.</p>
+<p>The problem is that using EC-Engineer as soon as I switch from the Configuration- to Diagnosis Mode, and set to OPERATIONAL, I see in wiresharek that an attempt to initialize 0x1a01 is aborted, see below.</p>
+<p>The slave enters Pre-Op only.</p>
+<p> </p>
+<p><img src="/api/v1/ticket_attachment/139/604/1272?view=inline" alt="cid:image014.jpg@01D7141B.C527A060" style="max-width:100%;max-width:100%;width:1913px;max-height:1020px;"></p>
+<p> </p>
+<p>I think the reason for Abort is that both 0x1A01 and 0x1601 are not part of the object dictionary, see below.</p>
+<p> </p>
+<p><img src="/api/v1/ticket_attachment/139/604/1273?view=inline" alt="cid:image017.jpg@01D7141B.C527A060" style="max-width:100%;max-width:100%;width:2897px;max-height:1535px;"></p>
+<p> </p>
+<p>In the case when dynamic PDOs are not enabled, why the Master tries to do initialization which is not required?</p>
+<p> </p>
+<p>Unfortunately, I have also the same problem when dynamic PDOs are enabled….</p>
+<p> </p>
+<p>Notice that I added object 0x1a01, but it could’ve added any in range 0x1A00-0x1BFF. Similar flexibility applies in case of object 0x1601.</p>
+<p>If the reason for my problem is absence of objects 0x1a01 and 0x1601 in the object dictionary, how can these new objects be added dynamically ?</p>
+<p> </p>
+<p>Could you point me to a documentation on dynamic PDOs ?</p>
+<p> </p>
+<p>Thank you for a prompt reply and regards</p>
+<p>Stan</p>
+<p>Cell.: 613-539-2607</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

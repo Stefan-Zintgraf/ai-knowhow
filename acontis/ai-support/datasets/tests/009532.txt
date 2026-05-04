@@ -1,0 +1,138 @@
+### HEADER
+Id=9532
+Link=http://at-zammad/#ticket/zoom/9532
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=709532
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=12.12.2024 15:26:09 +00:00
+UpdatedAt=16.12.2024 07:00:25 +00:00
+CloseAt=16.12.2024 07:00:25 +00:00
+ArticlesCount=2
+
+### TITLE
+A question about the "Frame Counter" in the "General" tab of "Master" [QNo.114]
+
+### ARTICLE00_HEADER
+Id=54119
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.12.2024 15:26:09 +00:00
+UpdatedAt=12.12.2024 15:26:13 +00:00
+
+### ARTICLE00_SUBJECT
+A question about the "Frame Counter" in the "General" tab of "Master" [QNo.114]
+
+### ARTICLE00_BODY
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div>Hi Support Team,</div>
+<div> </div>
+<div>This question is from Mitsubishi (commission No. 40627).</div>
+<div> </div>
+<div dir="auto">They have a question about the "Frame Counter" in the "General" tab of "Master".</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">The display switches between “Acyclic frames(=false)” and “Cyclic lost frames(=true)” depending on the judgment result of _deviceVm.Device.IsMailboxGatewayMaster in the SDK, but no matter which label is used masterInfo.NumOfCyclicFrames is acquired.</div>
+<div dir="auto">Is this an intentional acquisition or a bug?</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">And, also, if you are getting and displaying NumOfCyclicFrames intentionally, could you please tell them the reason for this?</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">Best regards,</div>
+<div dir="auto">Yuichi</div>
+</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=54126
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.12.2024 16:42:26 +00:00
+UpdatedAt=12.12.2024 16:42:27 +00:00
+
+### ARTICLE01_SUBJECT
+A question about the "Frame Counter" in the "General" tab of "Master" [QNo.114]
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>this is correct. In mailbox gateway mode not all information is available.</div><div>This is the reason why we display different values.</div><div><br></div><div>NOTE:</div><div>MailboxGateway Mode means you connect via UDP to a different master e.g. TwinCAT.</div><div>There is also a specification from ETG available where all values are documented.</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, December 12, 2024 at 4:26:09 PM, Yuichi Ide wrote:<br><br><div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div>Hi Support Team,</div>
+<div> </div>
+<div>This question is from Mitsubishi (commission No. 40627).</div>
+<div> </div>
+<div dir="auto">They have a question about the "Frame Counter" in the "General" tab of "Master".</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">The display switches between “Acyclic frames(=false)” and “Cyclic lost frames(=true)” depending on the judgment result of _deviceVm.Device.IsMailboxGatewayMaster in the SDK, but no matter which label is used masterInfo.NumOfCyclicFrames is acquired.</div>
+<div dir="auto">Is this an intentional acquisition or a bug?</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">And, also, if you are getting and displaying NumOfCyclicFrames intentionally, could you please tell them the reason for this?</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">Best regards,</div>
+<div dir="auto">Yuichi</div>
+</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

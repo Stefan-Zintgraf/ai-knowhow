@@ -1,0 +1,131 @@
+### HEADER
+Id=4438
+Link=http://at-zammad/#ticket/zoom/4438
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=704438
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=29.11.2022 16:32:00 +00:00
+UpdatedAt=08.12.2022 07:54:51 +00:00
+CloseAt=08.12.2022 07:54:50 +00:00
+ArticlesCount=3
+
+### TITLE
+EC-Simulator HTML documentation Issue
+
+### ARTICLE00_HEADER
+Id=23427
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.11.2022 16:32:00 +00:00
+UpdatedAt=29.11.2022 16:32:00 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Simulator HTML documentation Issue
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>I was supporting a customer asking about interrupt mode for the link layer with EC-Simulator HiL and I found the following page that is not currently linked from the main section.</div><div> </div><div>2.6.1: <a href="https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/emll.html" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/emll.html</a>
+</div><div> </div><div>2.6 (missing further subsections): <a href="https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/architecture.html#operating-system-configuration" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/architecture.html#operating-system-configuration</a>
+</div><div> </div><div>
+<img alt="PastedGraphic-1.png" src="/api/v1/ticket_attachment/4438/23427/98971?view=inline" style="max-width:100%;width:640px;"><br><div>
+<br>/Jon </div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=23446
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.11.2022 10:03:28 +00:00
+UpdatedAt=30.11.2022 10:03:30 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Simulator HTML documentation Issue
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>thank you for reporting this!</div><div>I'll check this.</div><div><br></div><div>Best regards,</div><div>Paul<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Dienstag, 29. November 2022 um 17:32:00, schrieb Jon Waters:<br><br>Hi,<div> </div>
+<div>I was supporting a customer asking about interrupt mode for the link layer with EC-Simulator HiL and I found the following page that is not currently linked from the main section.</div>
+<div> </div>
+<div>2.6.1: <a href="https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/emll.html" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/emll.html</a>
+</div>
+<div> </div>
+<div>2.6 (missing further subsections): <a href="https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/architecture.html#operating-system-configuration" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/architecture.html#operating-system-configuration</a>
+</div>
+<div> </div>
+<div>
+<img alt="PastedGraphic-1.png" src="/api/v1/ticket_attachment/4438/23446/99043?view=inline" style="max-width:100%;max-width:100%;width:640px;"><br><div>
+<br>/Jon </div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=23823
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.12.2022 07:54:50 +00:00
+UpdatedAt=08.12.2022 07:54:51 +00:00
+
+### ARTICLE02_SUBJECT
+EC-Simulator HTML documentation Issue
+
+### ARTICLE02_BODY
+<div>Hi Jon,</div><div><br></div>it's fixed. The chapters are slightly reordered, OS settings and emll.html are now top level chapters ("<span>4. Platform and Operating Systems (OS)</span><span>", "5. Link Layer"), same as for EC-Master.</span><div>
+<br><div>Best regards,</div>
+<div>Paul</div>
+<div>
+<div><br></div>
+<div><blockquote type="cite">Am Dienstag, 29. November 2022 um 17:32:00, schrieb Jon Waters:<br><br>Hi,<div> </div>
+<div>I was supporting a customer asking about interrupt mode for the link layer with EC-Simulator HiL and I found the following page that is not currently linked from the main section.</div>
+<div> </div>
+<div>2.6.1: <a href="https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/emll.html" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/emll.html</a>
+</div>
+<div> </div>
+<div>2.6 (missing further subsections): <a href="https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/architecture.html#operating-system-configuration" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/architecture.html#operating-system-configuration</a>
+</div>
+<div> </div>
+<div>
+<img alt="PastedGraphic-1.png" src="/api/v1/ticket_attachment/4438/23823/100701?view=inline" style="max-width:100%;max-width:100%;width:640px;"><br><div>
+<br>/Jon </div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

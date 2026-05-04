@@ -1,0 +1,259 @@
+### HEADER
+Id=10192
+Link=http://at-zammad/#ticket/zoom/10192
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Schneider Electric (ID=858, Number=0, Country=FR)
+Commission=Schneider Electric, iPCs with PLC function (ID=944, Number=944)
+Number=7010192
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=shrihariharan.umapathy@non.se.com (ID=2826, FirstName=ShriHariharan, LastName=Umapathy)
+CreatedBy=shrihariharan.umapathy@non.se.com (ID=2826, FirstName=ShriHariharan, LastName=Umapathy)
+Type=
+TimeUnit=
+CreatedAt=14.03.2025 13:16:57 +00:00
+UpdatedAt=28.03.2025 07:03:37 +00:00
+CloseAt=28.03.2025 07:03:37 +00:00
+ArticlesCount=4
+
+### TITLE
+Essential Edge Box (ARM): EtherCAT Issue
+
+### ARTICLE00_HEADER
+Id=58441
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.03.2025 13:16:57 +00:00
+UpdatedAt=14.03.2025 13:16:57 +00:00
+
+### ARTICLE00_SUBJECT
+Essential Edge Box (ARM): EtherCAT Issue
+
+### ARTICLE00_BODY
+<div>
+<p>Hello Cyril,</p>
+<p>Hope you're doing well.</p>
+<p>We're currently testing our EtherCAT application on the Essential Edge Box (ARM) platform and have encountered a failure.</p>
+<p>The application is not functioning as expected, and we've attached the full log for your review.</p>
+<p>Could you please look at the attached log and provide any insights or guidance on how to resolve this issue?</p>
+<p><span lang="EN-US"><br>
+</span><img style="max-width:100%;width:8.2666in;max-height:2.0166in;width:794px;max-height:194px;" src="/api/v1/ticket_attachment/10192/58441/243418?view=inline"><br>
+<br> Thank you for your assistance.</p>
+<p>Best regards,<br> Hari</p>
+</div><br>
+<p>General<br>
+</p>
+
+### ARTICLE01_HEADER
+Id=58442
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.03.2025 13:38:21 +00:00
+UpdatedAt=14.03.2025 13:38:24 +00:00
+
+### ARTICLE01_SUBJECT
+Essential Edge Box (ARM): EtherCAT Issue
+
+### ARTICLE01_BODY
+Hi Hari,<div><br></div><div>
+<div>ERROR: OsInit() OS layer parameter size 36 too small! Size of EC_T_OS_PARMS is 40 bytes.</div>
+<div><br></div>
+<div><div>ERROR: OsInit() OS layer parameter signature 0xBA11CC11 wrong! Expected EC_OS_PARMS_SIGNATURE (0x5BA1CFE1).</div></div>
+<div><br></div>
+<div>Best Regards,</div>
+<div>Cyril</div>
+<div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><br></div>
+<div><blockquote type="cite">On Friday, March 14, 2025 at 2:16:57 PM, ShriHariharan Umapathy wrote:<br><br><div>
+<p>Hello Cyril,</p>
+<p>Hope you're doing well.</p>
+<p>We're currently testing our EtherCAT application on the Essential Edge Box (ARM) platform and have encountered a failure.</p>
+<p>The application is not functioning as expected, and we've attached the full log for your review.</p>
+<p>Could you please look at the attached log and provide any insights or guidance on how to resolve this issue?</p>
+<p><span lang="EN-US"><br>
+</span><img style="max-width:100%;max-width:100%;width:8.2666in;max-height:2.0166in;width:794px;max-height:194px;" src="/api/v1/ticket_attachment/10192/58442/243420?view=inline"><br>
+<br> Thank you for your assistance.</p>
+<p>Best regards,<br> Hari</p>
+</div>
+<br>
+<p>General<br>
+</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=58444
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.03.2025 13:45:27 +00:00
+UpdatedAt=14.03.2025 13:45:27 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Essential Edge Box (ARM): EtherCAT Issue [Ticket#7010192]
+
+### ARTICLE02_BODY
+<div dir="auto">Hello Cyril,</div><div dir="auto">
+<br>
+</div><div dir="auto">Sorry could not understand the reply? and could you please elaborate more on the response you sent?</div><div dir="auto">
+<br>
+</div><div dir="auto">Thanks</div><div dir="auto">
+<br>
+</div><div dir="auto">Regards,</div><div dir="auto">Hari</div><div dir="auto">
+<br>
+</div><div dir="auto"> Get <a href="https://aka.ms/AAb9ysg" rel="nofollow noreferrer noopener" title="https://aka.ms/AAb9ysg" target="_blank">Outlook for Android</a>
+</div><br>
+<p>General<br>
+</p><hr>
+<div dir="ltr">
+<b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Friday, March 14, 2025 2:38:24 PM<br>
+<b>To:</b> ShriHariharan UMAPATHY &lt;shrihariharan.umapathy@non.se.com&gt;<br>
+<b>Cc:</b> Imen BEN-HASSEN &lt;imen.benhassen@non.se.com&gt;; Abuzr Elfadul &lt;abuzr.elfadul@non.se.com&gt;<br>
+<b>Subject:</b> RE: Essential Edge Box (ARM): EtherCAT Issue [Ticket#7010192] <div> </div>
+</div><div>
+<p><span style="color:#ff0000;">[External email: Use caution with links and attachments]</span></p>
+<hr>
+<p> </p>
+<div>Hi Hari,<div> </div>
+<div>
+<div>ERROR: OsInit() OS layer parameter size 36 too small! Size of EC_T_OS_PARMS is 40 bytes.</div>
+<div> </div>
+<div>
+<div>ERROR: OsInit() OS layer parameter signature 0xBA11CC11 wrong! Expected EC_OS_PARMS_SIGNATURE (0x5BA1CFE1).</div>
+</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Cyril</div>
+<div data-signature="true" data-signature-id="2">
+<div> </div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Friday, March 14, 2025 at 2:16:57 PM, ShriHariharan Umapathy wrote:<br>
+<br>
+<div>
+<p>Hello Cyril,</p>
+<p>Hope you're doing well.</p>
+<p>We're currently testing our EtherCAT application on the Essential Edge Box (ARM) platform and have encountered a failure.</p>
+<p>The application is not functioning as expected, and we've attached the full log for your review.</p>
+<p>Could you please look at the attached log and provide any insights or guidance on how to resolve this issue?</p>
+<p><span lang="EN-US"><br>
+</span><img src="/api/v1/ticket_attachment/10192/58444/243426?view=inline" style="max-width:100%;max-width:100%;width:8.2666in;max-height:2.0166in;width:794px;max-height:194px;"><br>
+<br> Thank you for your assistance.</p>
+<p>Best regards,<br> Hari</p>
+</div>
+<br>
+<p>General<br>
+</p>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=58454
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.03.2025 15:21:18 +00:00
+UpdatedAt=14.03.2025 15:21:21 +00:00
+
+### ARTICLE03_SUBJECT
+Essential Edge Box (ARM): EtherCAT Issue
+
+### ARTICLE03_BODY
+Hi Hari,<div><br></div><div>the log messages in the log file exactly tell you what is wrong:</div><div>
+<div>ERROR: OsInit() OS layer parameter size 36 too small! Size of EC_T_OS_PARMS is 40 bytes.</div>
+<div>ERROR: OsInit() OS layer parameter signature 0xBA11CC11 wrong! Expected EC_OS_PARMS_SIGNATURE (0x5BA1CFE1).</div>
+</div><div><br></div><div>please double check why the isze you pass is 36 instead of 40 and why the signature is different than the expected one. Thank you.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Friday, March 14, 2025 at 2:45:27 PM, ShriHariharan Umapathy wrote:<br><br><div dir="auto">Hello Cyril,</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">Sorry could not understand the reply? and could you please elaborate more on the response you sent?</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">Thanks</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">Regards,</div>
+<div dir="auto">Hari</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto"> Get <a href="https://aka.ms/AAb9ysg" rel="nofollow noreferrer noopener" title="https://aka.ms/AAb9ysg" target="_blank">Outlook for Android</a>
+</div>
+<br>
+<p>General<br>
+</p>
+<hr>
+<div dir="ltr">
+<b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Friday, March 14, 2025 2:38:24 PM<br>
+<b>To:</b> ShriHariharan UMAPATHY &lt;shrihariharan.umapathy@non.se.com&gt;<br>
+<b>Cc:</b> Imen BEN-HASSEN &lt;imen.benhassen@non.se.com&gt;; Abuzr Elfadul &lt;abuzr.elfadul@non.se.com&gt;<br>
+<b>Subject:</b> RE: Essential Edge Box (ARM): EtherCAT Issue [Ticket#7010192] <div> </div>
+</div>
+<div>
+<p><span style="color:#ff0000;">[External email: Use caution with links and attachments]</span></p>
+<hr>
+<p> </p>
+<div>Hi Hari,<div> </div>
+<div>
+<div>ERROR: OsInit() OS layer parameter size 36 too small! Size of EC_T_OS_PARMS is 40 bytes.</div>
+<div> </div>
+<div>
+<div>ERROR: OsInit() OS layer parameter signature 0xBA11CC11 wrong! Expected EC_OS_PARMS_SIGNATURE (0x5BA1CFE1).</div>
+</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Cyril</div>
+<div data-signature="true" data-signature-id="2">
+<div> </div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Friday, March 14, 2025 at 2:16:57 PM, ShriHariharan Umapathy wrote:<br>
+<br>
+<div>
+<p>Hello Cyril,</p>
+<p>Hope you're doing well.</p>
+<p>We're currently testing our EtherCAT application on the Essential Edge Box (ARM) platform and have encountered a failure.</p>
+<p>The application is not functioning as expected, and we've attached the full log for your review.</p>
+<p>Could you please look at the attached log and provide any insights or guidance on how to resolve this issue?</p>
+<p><span lang="EN-US"><br>
+</span><img src="/api/v1/ticket_attachment/10192/58454/243454?view=inline" style="max-width:100%;max-width:100%;max-width:100%;width:8.2666in;max-height:2.0166in;width:794px;max-height:194px;"><br>
+<br> Thank you for your assistance.</p>
+<p>Best regards,<br> Hari</p>
+</div>
+<br>
+<p>General<br>
+</p>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

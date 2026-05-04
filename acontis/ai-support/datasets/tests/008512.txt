@@ -1,0 +1,255 @@
+### HEADER
+Id=8512
+Link=http://at-zammad/#ticket/zoom/8512
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Varda Space (ID=800, Number=0, Country=US)
+Commission=Varda Space, Terrestrial Hardware Internal Industrial Control (ID=870, Number=870)
+Number=708512
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=janderson@varda.com (ID=2436, FirstName=Jeff, LastName=Anderson)
+CreatedBy=janderson@varda.com (ID=2436, FirstName=Jeff, LastName=Anderson)
+Type=
+TimeUnit=
+CreatedAt=18.07.2024 17:45:00 +00:00
+UpdatedAt=09.08.2024 05:42:12 +00:00
+CloseAt=09.08.2024 05:42:12 +00:00
+ArticlesCount=3
+
+### TITLE
+Proper EtherCAT State Machine Auto-recovery to OP
+
+### ARTICLE00_HEADER
+Id=47618
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.07.2024 17:45:00 +00:00
+UpdatedAt=18.07.2024 17:45:00 +00:00
+
+### ARTICLE00_SUBJECT
+Proper EtherCAT State Machine Auto-recovery to OP
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>I have a system that I would like to recovery automatically from various errors, including power outages.</p>
+<p> </p>
+<p>My maindevice is backed by a UPS but my subdevices are not, and I would like to detect bad states and automatically recover to OP.</p>
+<p> </p>
+<p>My current implementation is basically the following pseudocode:</p>
+<p> </p>
+<p>while true:</p>
+<p>setMasterState(OP)</p>
+<p>sleep(5)</p>
+<p> </p>
+<p>This works, but I think it is wrong since I have seen modules lose their CoE init settings on power cycle.</p>
+<p> </p>
+<ol start="1" type="1">
+<li>Does setMasterState perform jumping transitions (transitions that skip CoE init commands)?</li>
+<li>Do I need to change to more of a state machine approach where I call transitions for specific subdevices according to what state they are in?</li>
+<ol start="1" type="a">
+<li>For example, cyclically monitor the state of all subdevices using GetSlaveState and command a single transition at a time upwards towards op:</li>
+</ol>
+</ol>
+<p> </p>
+<p>While true:</p>
+<p>For subdevice in subdevices:</p>
+<p>getSlaveState(subdevice)</p>
+<p>transition_towards_op(subdevice)</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Jeff Anderson</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=47668
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.07.2024 13:18:56 +00:00
+UpdatedAt=19.07.2024 13:18:58 +00:00
+
+### ARTICLE01_SUBJECT
+Proper EtherCAT State Machine Auto-recovery to OP
+
+### ARTICLE01_BODY
+Hi Jeff,<div><br></div><div>Your implementation is correct. <span>EC-Master will apply all the InitCmd defined in all the transitions from I-&gt;O. All the DC Initialization will be done too.</span>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, July 18, 2024 at 7:45:00 PM, Jeff Anderson wrote:<br><br><div>
+<p>Hello,</p>
+<p> </p>
+<p>I have a system that I would like to recovery automatically from various errors, including power outages.</p>
+<p> </p>
+<p>My maindevice is backed by a UPS but my subdevices are not, and I would like to detect bad states and automatically recover to OP.</p>
+<p> </p>
+<p>My current implementation is basically the following pseudocode:</p>
+<p> </p>
+<p>while true:</p>
+<p>setMasterState(OP)</p>
+<p>sleep(5)</p>
+<p> </p>
+<p>This works, but I think it is wrong since I have seen modules lose their CoE init settings on power cycle.</p>
+<p> </p>
+<ol start="1" type="1">
+<li>Does setMasterState perform jumping transitions (transitions that skip CoE init commands)?</li>
+<li>Do I need to change to more of a state machine approach where I call transitions for specific subdevices according to what state they are in?</li>
+<ol start="1" type="a">
+<li>For example, cyclically monitor the state of all subdevices using GetSlaveState and command a single transition at a time upwards towards op:</li>
+</ol>
+</ol>
+<p> </p>
+<p>While true:</p>
+<p>For subdevice in subdevices:</p>
+<p>getSlaveState(subdevice)</p>
+<p>transition_towards_op(subdevice)</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Jeff Anderson</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=47771
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.07.2024 18:39:53 +00:00
+UpdatedAt=22.07.2024 18:39:53 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Proper EtherCAT State Machine Auto-recovery to OP [Ticket#708512]
+
+### ARTICLE02_BODY
+<div>
+<p>My network has now degraded further, it is failing to reach OP (timeout on init-&gt;pre-op transition).</p>
+<p> </p>
+<p>I’m debugging the network with EC-engineer.</p>
+<p> </p>
+<p>How should I interpret these CRC errors? There used to me red icons on port 0,1 of slave 1125, but I can’t get them to appear again.</p>
+<p> </p>
+<p><img style="max-width:100%;width:13.3125in;max-height:4.5625in;width:1278px;max-height:438px;" src="/api/v1/ticket_attachment/8512/47771/198482?view=inline"></p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b><span> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Friday, July 19, 2024 6:19 AM<br>
+<b>To:</b> Jeff Anderson &lt;janderson@varda.com&gt;<br>
+<b>Subject:</b> RE: Proper EtherCAT State Machine Auto-recovery to OP [Ticket#708512]</span></p>
+</div>
+</div>
+<p> </p>
+<p>Hi Jeff,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Your implementation is correct. EC-Master will apply all the InitCmd defined in all the transitions from I-&gt;O. All the DC Initialization will be done too.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Cyril Eyssautier</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Thursday, July 18, 2024 at 7:45:00 PM, Jeff Anderson wrote:</p>
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>I have a system that I would like to recovery automatically from various errors, including power outages.</p>
+<p> </p>
+<p>My maindevice is backed by a UPS but my subdevices are not, and I would like to detect bad states and automatically recover to OP.</p>
+<p> </p>
+<p>My current implementation is basically the following pseudocode:</p>
+<p> </p>
+<p>while true:</p>
+<p>setMasterState(OP)</p>
+<p>sleep(5)</p>
+<p> </p>
+<p>This works, but I think it is wrong since I have seen modules lose their CoE init settings on power cycle.</p>
+<p> </p>
+<ol start="1" type="1">
+<li> Does setMasterState perform jumping transitions (transitions that skip CoE init commands)?</li>
+<li> Do I need to change to more of a state machine approach where I call transitions for specific subdevices according to what state they are in?</li>
+</ol>
+<ol start="2" type="1">
+<ol start="1" type="a">
+<li> For example, cyclically monitor the state of all subdevices using GetSlaveState and command a single transition at a time upwards towards op:</li>
+</ol>
+</ol>
+<p> </p>
+<p>While true:</p>
+<p>For subdevice in subdevices:</p>
+<p>getSlaveState(subdevice)</p>
+<p>transition_towards_op(subdevice)</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Jeff Anderson</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

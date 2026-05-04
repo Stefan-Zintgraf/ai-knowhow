@@ -1,0 +1,153 @@
+### HEADER
+Id=1559
+Link=http://at-zammad/#ticket/zoom/1559
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Lenze SE (ID=134, Number=55502, Country=DE)
+Commission=Lenze, Linux, x64, ARM (ID=153, Number=153)
+Number=701559
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=thorsten.niemann@lenze.com (ID=32, FirstName=Thorsten, LastName=Niemann)
+CreatedBy=thorsten.niemann@lenze.com (ID=32, FirstName=Thorsten, LastName=Niemann)
+Type=
+TimeUnit=
+CreatedAt=06.10.2021 08:12:16 +00:00
+UpdatedAt=15.10.2021 06:09:47 +00:00
+CloseAt=15.10.2021 06:09:47 +00:00
+ArticlesCount=2
+
+### TITLE
+Clear Slaves Error Counter Register
+
+### ARTICLE00_HEADER
+Id=8439
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.10.2021 08:12:16 +00:00
+UpdatedAt=06.10.2021 08:12:18 +00:00
+
+### ARTICLE00_SUBJECT
+Clear Slaves Error Counter Register
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Support Team,</p>
+<p> </p>
+<p>mal eine allgemeine EtherCAT Frage, die mich aus dem Feld/Test beschäftigt. Und zwar handhabt CODESYS das Rücksetzen der 0x0300er Register genauso wie TwinCAT. Nur die Port Error Counter werden zurückgesetzt, aber nicht automatisch die Forwared RX /Processing Unit/ PDI Error Counter. Warum eigentlich?!?</p>
+<p> </p>
+<ul type="disc">
+<li>Gibt es hierfür einen guten Grund nur die ersten 8 Bytes zurückzusetzen? Wenn ja, welchen?<p></p>
+</li>
+<li>Wie Handhaben Sie das bei ihrem EC-Engineer?<p></p>
+</li>
+<li>Gibt es eine Möglichkeit das Verhalten aus dem Stack heraus zu ändern und alle Register 0x0300..0x030D automatisch bei der Transition IP zurückzusetzen, ohne das ENI File anzupassen?<p></p>
+</li>
+</ul> <p> </p>
+<p>Ich bräuchte bis Freitagmorgen hierzu ein Feedback. Danke!</p>
+<p> </p>
+<p><img style="max-width:100%;width:7.0104in;max-height:3.9375in;width:673px;max-height:378px;" src="/api/v1/ticket_attachment/1559/8439/34067?view=inline"></p>
+<p> </p>
+<p><img style="max-width:100%;width:4.2916in;max-height:1.6666in;width:412px;max-height:160px;" src="/api/v1/ticket_attachment/1559/8439/34068?view=inline"></p>
+<p> </p>
+<p>Viele Grüße</p>
+<p>Thorsten Niemann Dipl. Ing. (FH)</p>
+<p> </p>
+<p>Lenze SE</p>
+<p>RDC-SW (Software Development Controls)</p>
+<p>Telefon: +49 5154 82-1697</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=8483
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.10.2021 08:09:28 +00:00
+UpdatedAt=07.10.2021 08:09:32 +00:00
+
+### ARTICLE01_SUBJECT
+Clear Slaves Error Counter Register
+
+### ARTICLE01_BODY
+Hallo Herr Niemann,<div><span><br></span></div><div>
+<span><b><i>Nur die Port Error Counter werden zurückgesetzt, aber nicht automatisch die Forwared RX /Processing Unit/ PDI Error Counter. Warum eigentlich?!?</i></b></span><div>
+<div data-signature="true" data-signature-id="2">
+<div><span>Meiner Meinung nach sind die Forward RX counter eigentlich nutzlos und auch nicht auf allen ESCs vorhanden. Die Processing Unit /PDI Errors sind für eine Bewertung der Verbindungsqualität nicht relevant.</span></div>
+<div><span><br></span></div>
+<div><span><b><i>Gibt es hierfür einen guten Grund nur die ersten 8 Bytes zurückzusetzen? Wenn ja, welchen?</i></b></span></div>
+<div>Ich weiß nicht warum TwinCAT per default nur die RX Error Counter 0x3000:0x0307 ausließt, wahrscheinlich weil es die aussagekräftigsten sind. Sicher ist nur das TwinCAT nach jedem lesen die Register wieder zurücksetzt.</div>
+<div><span><br></span></div>
+<div><span><b><i>Wie Handhaben Sie das bei ihrem EC-Engineer?</i></b></span></div>
+<div>Die Register werden über <span style=" color: rgb(51, 51, 51);">EC_IOCTL_FORCE_SLVSTAT_COLLECTION und EC_IOCTL_GET_SLVSTATISTICS </span><span>zyklisch ausgelesen. Gelöscht wird beim Master/Engineer nicht automatisch. Siehe auch:</span>
+</div>
+<div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emiocontrol-ec-ioctl-force-slvstat-collection" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emiocontrol-ec-ioctl-force-slvstat-collection" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emiocontrol-ec-ioctl-force-slvstat-collection</a></div></div>
+<div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emiocontrol-ec-ioctl-get-slvstatistics" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emiocontrol-ec-ioctl-get-slvstatistics" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emiocontrol-ec-ioctl-get-slvstatistics</a></div></div>
+<div><br></div>
+<div><span><br></span></div>
+<div><span><b><i>Gibt es eine Möglichkeit das Verhalten aus dem Stack heraus zu ändern und alle Register 0x0300..0x030D automatisch bei der Transition IP zurückzusetzen, ohne das ENI File anzupassen?</i></b></span></div>
+<div>Sie können über EC_IOCTL_CLR_SLVSTATISTICS alle Error-Register in allen Slaves löschen.<span><br></span>
+</div>
+<div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emiocontrol-ec-ioctl-clr-slvstatistics" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emiocontrol-ec-ioctl-clr-slvstatistics" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emiocontrol-ec-ioctl-clr-slvstatistics</a></div></div>
+<div><span><br></span></div>
+<div><span></span></div>
+<div>
+<span>Mit freundlichen Grüßen,</span>
+</div>
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Holger Oelhaf </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Mittwoch, 6. Oktober 2021, 10:12:16, schrieb Thorsten Niemann:<br><br><div>
+<p>Hallo Support Team,</p>
+<p> </p>
+<p>mal eine allgemeine EtherCAT Frage, die mich aus dem Feld/Test beschäftigt. Und zwar handhabt CODESYS das Rücksetzen der 0x0300er Register genauso wie TwinCAT. Nur die Port Error Counter werden zurückgesetzt, aber nicht automatisch die Forwared RX /Processing Unit/ PDI Error Counter. Warum eigentlich?!?</p>
+<p> </p>
+<ul type="disc">
+<li>Gibt es hierfür einen guten Grund nur die ersten 8 Bytes zurückzusetzen? Wenn ja, welchen?<p></p>
+</li>
+<li>Wie Handhaben Sie das bei ihrem EC-Engineer?<p></p>
+</li>
+<li>Gibt es eine Möglichkeit das Verhalten aus dem Stack heraus zu ändern und alle Register 0x0300..0x030D automatisch bei der Transition IP zurückzusetzen, ohne das ENI File anzupassen?<p></p>
+</li>
+</ul> <p> </p>
+<p>Ich bräuchte bis Freitagmorgen hierzu ein Feedback. Danke!</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:7.0104in;max-height:3.9375in;width:673px;max-height:378px;" src="/api/v1/ticket_attachment/1559/8483/34197?view=inline"></p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:4.2916in;max-height:1.6666in;width:412px;max-height:160px;" src="/api/v1/ticket_attachment/1559/8483/34198?view=inline"></p>
+<p> </p>
+<p>Viele Grüße</p>
+<p>Thorsten Niemann Dipl. Ing. (FH)</p>
+<p> </p>
+<p>Lenze SE</p>
+<p>RDC-SW (Software Development Controls)</p>
+<p>Telefon: +49 5154 82-1697</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

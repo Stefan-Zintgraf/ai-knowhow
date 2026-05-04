@@ -1,0 +1,152 @@
+### HEADER
+Id=7020
+Link=http://at-zammad/#ticket/zoom/7020
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Second order effects, Unknown (ID=897, Number=897)
+Number=707020
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=06.12.2023 20:14:37 +00:00
+UpdatedAt=11.04.2024 14:30:57 +00:00
+CloseAt=13.12.2023 07:15:02 +00:00
+ArticlesCount=2
+
+### TITLE
+Fwd: Acontis EtherCAT software evaluation request from Second Order Effects
+
+### ARTICLE00_HEADER
+Id=38165
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.12.2023 20:14:37 +00:00
+UpdatedAt=06.12.2023 20:14:37 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Acontis EtherCAT software evaluation request from Second Order Effects
+
+### ARTICLE00_BODY
+Is this possible with EC-Engineer Web or just EC-Engineer?<br><div>
+<br>/Jon </div><div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>Lincoln Roth &lt;lincoln@soeffects.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Re: Acontis EtherCAT software evaluation request from Second Order Effects</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>December 6, 2023 at 2:59:23 PM EST<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Cc: </b></span><span>Veronica Cortes &lt;veronica@soeffects.com&gt;, Nicole Lin &lt;nicole@soeffects.com&gt;, Anthony Mercado &lt;amercado@soeffects.com&gt;, Mike Kahn &lt;mkahn@soeffects.com&gt;, Troy Hudson &lt;t.hudson@acontis.com&gt;, Forrest Glover &lt;forrest@soeffects.com&gt;<br></span>
+</div>
+<br><div>
+<div dir="ltr">Hi Jon!<div>
+<br>I had one quick question about EC-Engineer (specifically the web version for linux): is there a way to write the SII to the EEPROM? I couldn't find any mention of it in the documentation or any way by looking through the eval.</div>
+<div> </div>
+<div>Thanks in advance,</div>
+<div>Lincoln<br><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><strong>Lincoln Roth</strong></p>
+<p><span><strong>Electrical Engineer<br></strong><span>e-mail: <a href="mailto:lincoln@soeffects.com">lincoln@soeffects.com</a></span></span></p>
+<p><strong><br></strong></p>
+<p><span><strong>SECOND ORDER EFFECTS<br></strong><strong>THE ENGINEER'S ENGINEER<br></strong>14700 NE 95th Street, Suite 100, Redmond, WA 98053</span></p>
+<p><span><span><span>phone: +1 (424) 290-0617<br></span><a href="https://www.soeffects.com/" rel="nofollow noreferrer noopener" title="https://www.soeffects.com/" target="_blank">soeffects.com</a></span><br><span><a href="https://www.linkedin.com/company/soeffects" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/soeffects" target="_blank">LinkedIn | </a><a href="https://www.instagram.com/secondordereffects/" rel="nofollow noreferrer noopener" title="https://www.instagram.com/secondordereffects/" target="_blank">Instagram | </a><a href="https://www.facebook.com/soeffects" rel="nofollow noreferrer noopener" title="https://www.facebook.com/soeffects" target="_blank">Facebook |</a><a href="https://twitter.com/soeffects" rel="nofollow noreferrer noopener" title="https://twitter.com/soeffects" target="_blank"> Twitter</a></span></span></p>
+</div></div>
+<br>
+</div>
+</div>
+<br>
+</div>
+</blockquote>
+</div>
+
+### ARTICLE01_HEADER
+Id=38255
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.12.2023 12:57:15 +00:00
+UpdatedAt=08.12.2023 12:57:20 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: Acontis EtherCAT software evaluation request from Second Order Effects
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes, this is currently not supported from EC-Engineer Web. I will add it on our TODO. </div><div>So it will be available within the next 6 month.</div><div><br></div><div>Best Regards,</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, December 6, 2023 at 9:14:37 PM, Jon Waters wrote:<br><br>Is this possible with EC-Engineer Web or just EC-Engineer?<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>Lincoln Roth &lt;lincoln@soeffects.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Re: Acontis EtherCAT software evaluation request from Second Order Effects</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>December 6, 2023 at 2:59:23 PM EST<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Cc: </b></span><span>Veronica Cortes &lt;veronica@soeffects.com&gt;, Nicole Lin &lt;nicole@soeffects.com&gt;, Anthony Mercado &lt;amercado@soeffects.com&gt;, Mike Kahn &lt;mkahn@soeffects.com&gt;, Troy Hudson &lt;t.hudson@acontis.com&gt;, Forrest Glover &lt;forrest@soeffects.com&gt;<br></span>
+</div>
+<br><div>
+<div dir="ltr">Hi Jon!<div>
+<br>I had one quick question about EC-Engineer (specifically the web version for linux): is there a way to write the SII to the EEPROM? I couldn't find any mention of it in the documentation or any way by looking through the eval.</div>
+<div> </div>
+<div>Thanks in advance,</div>
+<div>Lincoln<br><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><strong>Lincoln Roth</strong></p>
+<p><span><strong>Electrical Engineer<br></strong><span>e-mail: <a href="mailto:lincoln@soeffects.com">lincoln@soeffects.com</a></span></span></p>
+<p><strong><br></strong></p>
+<p><span><strong>SECOND ORDER EFFECTS<br></strong><strong>THE ENGINEER'S ENGINEER<br></strong>14700 NE 95th Street, Suite 100, Redmond, WA 98053</span></p>
+<p><span><span><span>phone: +1 (424) 290-0617<br></span><a href="https://www.soeffects.com/" rel="nofollow noreferrer noopener" title="https://www.soeffects.com/" target="_blank">soeffects.com</a></span><br><span><a href="https://www.linkedin.com/company/soeffects" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/soeffects" target="_blank">LinkedIn | </a><a href="https://www.instagram.com/secondordereffects/" rel="nofollow noreferrer noopener" title="https://www.instagram.com/secondordereffects/" target="_blank">Instagram | </a><a href="https://www.facebook.com/soeffects" rel="nofollow noreferrer noopener" title="https://www.facebook.com/soeffects" target="_blank">Facebook |</a><a href="https://twitter.com/soeffects" rel="nofollow noreferrer noopener" title="https://twitter.com/soeffects" target="_blank"> Twitter</a></span></span></p>
+</div></div>
+<br>
+</div>
+</div>
+<br>
+</div>
+</blockquote>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

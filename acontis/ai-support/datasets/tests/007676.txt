@@ -1,0 +1,167 @@
+### HEADER
+Id=7676
+Link=http://at-zammad/#ticket/zoom/7676
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Zetatek Technologies (ID=664, Number=50263, Country=IN)
+Commission=Zetatek Technologies.com, Rate Table (ID=745, Number=745)
+Number=707676
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=bhaskar.gc@zetatektechnologies.com (ID=1626, FirstName=Bhaskar, LastName=Gc)
+CreatedBy=bhaskar.gc@zetatektechnologies.com (ID=1626, FirstName=Bhaskar, LastName=Gc)
+Type=
+TimeUnit=
+CreatedAt=19.03.2024 04:58:47 +00:00
+UpdatedAt=19.03.2024 07:36:48 +00:00
+CloseAt=19.03.2024 07:36:48 +00:00
+ArticlesCount=3
+
+### TITLE
+Need Help with using emSetLicenseKey()
+
+### ARTICLE00_HEADER
+Id=42376
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.03.2024 04:58:47 +00:00
+UpdatedAt=19.03.2024 04:58:47 +00:00
+
+### ARTICLE00_SUBJECT
+Need Help with using emSetLicenseKey()
+
+### ARTICLE00_BODY
+<div dir="ltr">Folks,<br><div> </div>
+<div>1. When I call emSetLicenseKey() I always get a EC_E_INVALIDSTATE as the return value.</div>
+<div>Note that I am using the 2nd ethernet port on my system:</div>
+<div> </div>
+<div>dwRes = emSetLicenseKey (1, "&lt;License Key from ECM&gt;");</div>
+<div> </div>
+<div>2. The User Manual says that this return value means that ECM is not initialized.</div>
+<div> </div>
+<div>3. I am calling this API after setting the master and bus state to OP.</div>
+<div> </div>
+<div>dwRes = ecatSetMasterState(ETHERCAT_STATE_CHANGE_TIMEOUT, eEcatState_OP);</div>
+<div> </div>
+<div>Pls advice.</div>
+<div> </div>
+<div>Thanks,</div>
+<div>GC Bhaskar.</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=42382
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.03.2024 07:07:02 +00:00
+UpdatedAt=19.03.2024 07:07:04 +00:00
+
+### ARTICLE01_SUBJECT
+Need Help with using emSetLicenseKey()
+
+### ARTICLE01_BODY
+Hi 
+
+GC Bhaskar,<div><br></div><div><div>EC_E_INVALIDSTATE is a typical error when emInitMaster hasn't been called before. You are passing instance 1 in your call <span>emSetLicenseKey (<b>1</b>, "&lt;License Key from ECM&gt;"). Is it by intention?</span>
+</div></div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, March 19, 2024 at 5:58:47 AM, Bhaskar Gc wrote:<br><br><div dir="ltr">Folks,<br><div> </div>
+<div>1. When I call emSetLicenseKey() I always get a EC_E_INVALIDSTATE as the return value.</div>
+<div>Note that I am using the 2nd ethernet port on my system:</div>
+<div> </div>
+<div>dwRes = emSetLicenseKey (1, "&lt;License Key from ECM&gt;");</div>
+<div> </div>
+<div>2. The User Manual says that this return value means that ECM is not initialized.</div>
+<div> </div>
+<div>3. I am calling this API after setting the master and bus state to OP.</div>
+<div> </div>
+<div>dwRes = ecatSetMasterState(ETHERCAT_STATE_CHANGE_TIMEOUT, eEcatState_OP);</div>
+<div> </div>
+<div>Pls advice.</div>
+<div> </div>
+<div>Thanks,</div>
+<div>GC Bhaskar.</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=42390
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.03.2024 07:34:10 +00:00
+UpdatedAt=19.03.2024 07:34:10 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Need Help with using emSetLicenseKey() [Ticket#707676]
+
+### ARTICLE02_BODY
+<div dir="ltr">I got it to work by passing 0.<div> </div>
+<div>Thanks,<br><div> </div>
+<div>GC Bhaskar.</div>
+</div>
+</div><br><div>
+<div dir="ltr">On Tue, Mar 19, 2024 at 12:48 PM Cyril Eyssautier via EC-Support &lt;<a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>&gt; wrote:<br>
+</div>
+<blockquote><div> <div>Hi GC Bhaskar,<div> </div>
+<div>EC_E_INVALIDSTATE is a typical error when emInitMaster hasn't been called before. You are passing instance 1 in your call <span>emSetLicenseKey (<b>1</b>, "&lt;License Key from ECM&gt;"). Is it by intention?</span> </div>
+<div> </div>
+<div>Best Regards,</div>
+<div> <div> <div>__________________________________________________________________________________________<br> </div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div> <div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br> </div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Tuesday, March 19, 2024 at 5:58:47 AM, Bhaskar Gc wrote:<br><br><div dir="ltr">Folks,<br><div> </div>
+<div>1. When I call emSetLicenseKey() I always get a EC_E_INVALIDSTATE as the return value.</div>
+<div>Note that I am using the 2nd ethernet port on my system:</div>
+<div> </div>
+<div>dwRes = emSetLicenseKey (1, "&lt;License Key from ECM&gt;");</div>
+<div> </div>
+<div>2. The User Manual says that this return value means that ECM is not initialized.</div>
+<div> </div>
+<div>3. I am calling this API after setting the master and bus state to OP.</div>
+<div> </div>
+<div>dwRes = ecatSetMasterState(ETHERCAT_STATE_CHANGE_TIMEOUT, eEcatState_OP);</div>
+<div> </div>
+<div>Pls advice.</div>
+<div> </div>
+<div>Thanks,</div>
+<div>GC Bhaskar.</div>
+</div>
+<br> </blockquote></div>
+<div> </div>
+<br><br> </div>
+</div>
+</div></blockquote>
+</div>

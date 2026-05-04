@@ -1,0 +1,165 @@
+### HEADER
+Id=3320
+Link=http://at-zammad/#ticket/zoom/3320
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vector Informatik GmbH (ID=167, Number=40366, Country=DE)
+Commission=Vector, CANoe (ID=189, Number=189)
+Number=703320
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+CreatedBy=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+Type=
+TimeUnit=
+CreatedAt=27.06.2022 14:01:22 +00:00
+UpdatedAt=04.07.2022 06:02:29 +00:00
+CloseAt=04.07.2022 06:02:30 +00:00
+ArticlesCount=3
+
+### TITLE
+EC Engineer wird ohne Meldung geschlossen
+
+### ARTICLE00_HEADER
+Id=17569
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.06.2022 14:01:22 +00:00
+UpdatedAt=27.06.2022 14:01:22 +00:00
+
+### ARTICLE00_SUBJECT
+EC Engineer wird ohne Meldung geschlossen
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo,</p>
+<p>ein Kunde hat uns folgendes Problem beschrieben:</p>
+<p>
+<b><span style="color:#172b4d;">HW Setup Description:</span></b><span style="color:#172b4d;"> Mehrere Prüfstände, Konfigurationen über CVS</span></p>
+<p>
+<b><span style="color:#172b4d;">Issue Description (Summary):</span></b><span style="color:#172b4d;"></span></p>
+<p>
+<span style="color:#172b4d;">Ich öffne das Projekt auf einem anderen CANoe-PC (die Projektdateien sind in CVS versioniert) und klicke auf die Schaltfläche zum Öffnen des EtherCAT Konfigurators. Ich bin dabei nicht zwingend mit einem RT-Rack verbunden.<br> Dann erscheint das Banner des Konfigurators, gefolgt von einem kurzen Einblick in die Oberfläche, bevor sich der Konfigurator wieder schließt.<br> Ohne Meldung, ohne Ton.</span></p>
+<p>
+<span style="color:#172b4d;">Wenn ich die Konfiguration per Zip-Ordner auf den anderen PC übertrage, erhalte ich den Fehler nicht (nur die Meldung, dass sie auf einem anderen PC erstellt wurde, wird angezeigt).</span></p>
+<p>
+<span style="color:#172b4d;">Wenn ich die Konfiguration aus dem CVS auf den gleichen PC zurückspiele, auf dem sie erzeugt wurde, erhalte ich den Fehler (Absturz).</span></p>
+<p>
+<span style="color:#172b4d;">Ich habe die Dateien verglichen, ihr Inhalt ist absolut identisch.</span></p>
+<p>
+<span style="color:#172b4d;">Was mir allerdings aufgefallen ist, ist die Tatsache, dass bei uns im CVS nur die .ecc-Datei hochgezählt wird, weil sich dort beim Speichern (auch ohne etwas an der Konfiguration zu ändern) scheinbar etwas am Inhalt ändert. Die .xve und .eni Dateien werden nicht aktualisiert.<br> Somit haben wir beispielsweise beim Herunterladen der Dateien aus dem CVS eine .ecc von heute 9 Uhr, .xve von Freitag 15 Uhr und .eni von Freitag 10 Uhr.<br> Inhaltlich sind aber alle Dateien auf dem Stand von heute 9 Uhr.</span></p>
+<p> </p>
+<p>Können Sie aus der Beschreibung, der *.ecc Datei und/oder der *.log Datei das Verhalten oder die Ursache des Problems erklären. CVS ist eine Versionsverwaltung (<a href="https://de.wikipedia.org/wiki/Concurrent_Versions_System" rel="nofollow noreferrer noopener" target="_blank">https://de.wikipedia.org/wiki/Concurrent_Versions_System</a>)</p>
+<p> </p>
+<p>Mit freundlichen Gruessen / Best regards,</p>
+<p> </p>
+<p><span lang="EN-US">Tobias Lange</span></p>
+<p><span lang="EN-US">-----------------------------------------------------</span></p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">PND10</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><b>Vector Informatik GmbH</b></p>
+<p>Besucheranschrift / Visitor address: Holderäckerstraße 36 | 70499 Stuttgart | Germany</p>
+<p>Tel.: +49 711 80670-4791</p>
+<p><span lang="EN-US"><a href="mailto:tobias.lange@vector.com"><span lang="DE" style="color:blue;">tobias.lange@vector.com</span></a></span></p>
+<p><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.vector.com</span></a></p>
+<p> </p>
+<p>Sitz der Gesellschaft / Registered Office: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p>Handelsregister / Commercial Register: Amtsgericht Stuttgart | HRB 17317</p>
+<p>Geschaeftsfuehrer / Managing Directors: Dr. Thomas Beck, Dr. Stefan Krauß, Thomas Riegraf</p>
+<p><span lang="EN-US">-----------------------------------------------------</span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=17597
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=28.06.2022 08:17:28 +00:00
+UpdatedAt=28.06.2022 08:17:28 +00:00
+
+### ARTICLE01_BODY
+Hast du ne Idee? Bei mir gehts ohne Probleme. Laut Log crasht es bei dem OemData geparse aus der ecc. Macht aber eigentlich nicht viel Sinn
+
+### ARTICLE02_HEADER
+Id=17610
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.06.2022 11:26:40 +00:00
+UpdatedAt=28.06.2022 11:26:42 +00:00
+
+### ARTICLE02_SUBJECT
+EC Engineer wird ohne Meldung geschlossen
+
+### ARTICLE02_BODY
+Hallo Herr Lange,<div><br></div><div>ich kann leider das Problem hier nicht nachstellen. Auch wenn ich die von Ihnen verwendete Version v3.4.0 verwende. Das Projekt lässt sich bei mir immer ohne Probleme öffnen.</div><div><br></div><div>Könnten Sie versuchen das Problem näher einzugrenzen?</div><div>- Verwenden beide PCs die gleichen ESIs?</div><div>- Hat es wirklich etwas mit dem CVS zu tun? Kann ich mir eigentlich nicht vorstellen.</div><div>- Tritt das Problem auch auf wenn Sie eine neuere Version vom EC-Engineer nehmen? z.B. v3.7.x?</div><div>- Sie rufen den EC-Engineer über eine bestimmte Kommando-Zeile auf? Wenn ja, könnten Sie Ihn mal direkt (<span>ohne weitere Parameter</span><span>) starten und schauen ob das Problem ebenso besteht?</span>
+</div><div>- Oder haben Sie weitere Hinweise für mich, wie ich das Problem hier nachstellen kann?</div><div><br></div><div>Mit freundlichen Grüßen</div><div>Martin Gänzer</div><div><br></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, June 27, 2022, 4:01:22 PM, Tobias Lange wrote:<br><br><div>
+<p>Hallo,</p>
+<p>ein Kunde hat uns folgendes Problem beschrieben:</p>
+<p>
+<b><span style="color:#172b4d;">HW Setup Description:</span></b><span style="color:#172b4d;"> Mehrere Prüfstände, Konfigurationen über CVS</span></p>
+<p>
+<b><span style="color:#172b4d;">Issue Description (Summary):</span></b><span style="color:#172b4d;"></span></p>
+<p>
+<span style="color:#172b4d;">Ich öffne das Projekt auf einem anderen CANoe-PC (die Projektdateien sind in CVS versioniert) und klicke auf die Schaltfläche zum Öffnen des EtherCAT Konfigurators. Ich bin dabei nicht zwingend mit einem RT-Rack verbunden.<br> Dann erscheint das Banner des Konfigurators, gefolgt von einem kurzen Einblick in die Oberfläche, bevor sich der Konfigurator wieder schließt.<br> Ohne Meldung, ohne Ton.</span></p>
+<p>
+<span style="color:#172b4d;">Wenn ich die Konfiguration per Zip-Ordner auf den anderen PC übertrage, erhalte ich den Fehler nicht (nur die Meldung, dass sie auf einem anderen PC erstellt wurde, wird angezeigt).</span></p>
+<p>
+<span style="color:#172b4d;">Wenn ich die Konfiguration aus dem CVS auf den gleichen PC zurückspiele, auf dem sie erzeugt wurde, erhalte ich den Fehler (Absturz).</span></p>
+<p>
+<span style="color:#172b4d;">Ich habe die Dateien verglichen, ihr Inhalt ist absolut identisch.</span></p>
+<p>
+<span style="color:#172b4d;">Was mir allerdings aufgefallen ist, ist die Tatsache, dass bei uns im CVS nur die .ecc-Datei hochgezählt wird, weil sich dort beim Speichern (auch ohne etwas an der Konfiguration zu ändern) scheinbar etwas am Inhalt ändert. Die .xve und .eni Dateien werden nicht aktualisiert.<br> Somit haben wir beispielsweise beim Herunterladen der Dateien aus dem CVS eine .ecc von heute 9 Uhr, .xve von Freitag 15 Uhr und .eni von Freitag 10 Uhr.<br> Inhaltlich sind aber alle Dateien auf dem Stand von heute 9 Uhr.</span></p>
+<p> </p>
+<p>Können Sie aus der Beschreibung, der *.ecc Datei und/oder der *.log Datei das Verhalten oder die Ursache des Problems erklären. CVS ist eine Versionsverwaltung (<a href="https://de.wikipedia.org/wiki/Concurrent_Versions_System" rel="nofollow noreferrer noopener" target="_blank">https://de.wikipedia.org/wiki/Concurrent_Versions_System</a>)</p>
+<p> </p>
+<p>Mit freundlichen Gruessen / Best regards,</p>
+<p> </p>
+<p><span lang="EN-US">Tobias Lange</span></p>
+<p><span lang="EN-US">-----------------------------------------------------</span></p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">PND10</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><b>Vector Informatik GmbH</b></p>
+<p>Besucheranschrift / Visitor address: Holderäckerstraße 36 | 70499 Stuttgart | Germany</p>
+<p>Tel.: +49 711 80670-4791</p>
+<p><span lang="EN-US"><a href="mailto:tobias.lange@vector.com"><span lang="DE" style="color:blue;">tobias.lange@vector.com</span></a></span></p>
+<p><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.vector.com</span></a></p>
+<p> </p>
+<p>Sitz der Gesellschaft / Registered Office: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p>Handelsregister / Commercial Register: Amtsgericht Stuttgart | HRB 17317</p>
+<p>Geschaeftsfuehrer / Managing Directors: Dr. Thomas Beck, Dr. Stefan Krauß, Thomas Riegraf</p>
+<p><span lang="EN-US">-----------------------------------------------------</span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

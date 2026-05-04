@@ -1,0 +1,112 @@
+### HEADER
+Id=367
+Link=http://at-zammad/#ticket/zoom/367
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vivo Surgical (ID=426, Number=0, Country=SG)
+Commission=Vivo Surgical, RET (ID=502, Number=502)
+Number=700367
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=justin.lau@vivo-surgical.com (ID=247, FirstName=Justin, LastName=Lau)
+CreatedBy=justin.lau@vivo-surgical.com (ID=247, FirstName=Justin, LastName=Lau)
+Type=
+TimeUnit=
+CreatedAt=07.04.2021 09:17:26 +00:00
+UpdatedAt=26.04.2022 05:23:12 +00:00
+CloseAt=07.04.2021 09:30:48 +00:00
+ArticlesCount=2
+
+### TITLE
+Request for Help with EC-Master.
+
+### ARTICLE00_HEADER
+Id=1816
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.04.2021 09:17:26 +00:00
+UpdatedAt=07.04.2021 09:17:31 +00:00
+
+### ARTICLE00_SUBJECT
+Request for Help with EC-Master.
+
+### ARTICLE00_BODY
+<div dir="ltr">
+<div>Good Afternoon Sir / Madam,</div>
+<div> </div>
+<div>My name is Justin and I am a Systems Integration Engineer at Vivo Surgical. I am currently in the midst of evaluating EC-Master.<br>
+</div>
+<div> </div>
+<div>I am working on a CoE SDO Download and have been following the steps on Pg. 258 of the manual to get it up and running. While I have completed the CoE SDO Download (Steps 1-9), I have trouble dealing with the notification portion (Steps 10-11). I cannot set the pbyInBuf field of pParms to pMbxTfer; I keep getting the error:</div>
+<div> </div>
+<div>"""</div>
+<div>DescriptionResourcePathLocationType</div>cannot convert ‘EC_T_MBXTFER*’ {aka ‘_EC_T_MBXTFER*’} to ‘EC_T_BYTE*’ {aka ‘unsigned char*’} in assignmentEcDemoApp.cpp/EcMasterDemoline 1080C/C++ Problem<div>"""</div>
+<div> </div>
+<div>Can you help me out on this? I have attached my myAppSetup section of EcDemoApp.cpp for your perusal. Thank you and I do appreciate it.</div>
+<div>
+<div> </div>
+<div dir="ltr">
+<p dir="ltr">Warmest regards,</p>
+<p dir="ltr"><b>Mr Justin Lau</b></p>
+<p dir="ltr">Systems Integration Engineer</p>
+<p dir="ltr">VIVO SURGICAL PRIVATE LIMITED</p>
+<p dir="ltr">T: (+65) 6677 0395</p>
+<p dir="ltr">E: justin.lau@vivo-surgical.com</p>
+<p dir="ltr">A: 67 Ayer Rajah Crescent #01-01/02, Singapore 139950</p>
+<p dir="ltr"><br></p>
+<p dir="ltr"><a href="https://gmlnk.com/api/v1/track/link/click/5fc3c0f1e88580060f06c454/1616738217593/?link=https%3A%2F%2Fnethunt.co%2Fapi%2Fv1%2Ftrack%2Flink%2Fclick%2F5fc3c0f1e88580060f06c454%2F1609325061211%2F%3Flink%3Dhttps%253A%252F%252Fwww.youtube.com%252Fchannel%252FUCDRdF4M2W65MicwTpNpj00Q" rel="nofollow noreferrer noopener" title="https://gmlnk.com/api/v1/track/link/click/5fc3c0f1e88580060f06c454/1616738217593/?link=https%3A%2F%2Fnethunt.co%2Fapi%2Fv1%2Ftrack%2Flink%2Fclick%2F5fc3c0f1e88580060f06c454%2F1609325061211%2F%3Flink%3Dhttps%253A%252F%252Fwww.youtube.com%252Fchannel%252FUCDRdF4M2W65MicwTpNpj00Q" target="_blank"></a><a href="https://gmlnk.com/api/v1/track/link/click/5fc3c0f1e88580060f06c454/1616738217593/?link=https%3A%2F%2Fnethunt.co%2Fapi%2Fv1%2Ftrack%2Flink%2Fclick%2F5fc3c0f1e88580060f06c454%2F1609325061212%2F%3Flink%3Dhttps%253A%252F%252Fwww.linkedin.com%252Fcompany%252Fvivo-surgical-pte-ltd%252F" rel="nofollow noreferrer noopener" title="https://gmlnk.com/api/v1/track/link/click/5fc3c0f1e88580060f06c454/1616738217593/?link=https%3A%2F%2Fnethunt.co%2Fapi%2Fv1%2Ftrack%2Flink%2Fclick%2F5fc3c0f1e88580060f06c454%2F1609325061212%2F%3Flink%3Dhttps%253A%252F%252Fwww.linkedin.com%252Fcompany%252Fvivo-surgical-pte-ltd%252F" target="_blank"></a><a href="https://gmlnk.com/api/v1/track/link/click/5fc3c0f1e88580060f06c454/1616738217593/?link=https%3A%2F%2Fnethunt.co%2Fapi%2Fv1%2Ftrack%2Flink%2Fclick%2F5fc3c0f1e88580060f06c454%2F1609325061212%2F%3Flink%3Dhttps%253A%252F%252Fwww.vivo-surgical.com%252F" rel="nofollow noreferrer noopener" title="https://gmlnk.com/api/v1/track/link/click/5fc3c0f1e88580060f06c454/1616738217593/?link=https%3A%2F%2Fnethunt.co%2Fapi%2Fv1%2Ftrack%2Flink%2Fclick%2F5fc3c0f1e88580060f06c454%2F1609325061212%2F%3Flink%3Dhttps%253A%252F%252Fwww.vivo-surgical.com%252F" target="_blank"></a>
+<br></p>
+<div>The above message and any attachment are confidential and may be privileged or otherwise protected from disclosure. If you are not the intended recipient, you should not disseminate, distribute or copy this message or any attachment. If it has reached you in error please inform us immediately by reply email or telephone and delete this message and any attachment.</div>
+<div dir="ltr"><br></div>
+<div dir="ltr">[CONFIDENTIAL]</div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=1818
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.04.2021 09:30:48 +00:00
+UpdatedAt=07.04.2021 09:30:51 +00:00
+
+### ARTICLE01_SUBJECT
+Request for Help with EC-Master.
+
+### ARTICLE01_BODY
+<div>Hi Justin,</div><div><br></div><div>the notification mechanism should not be called in your application. During the call to our <span>ecatExecJob(), the callback function passed to </span><span>ecatRegisterClient() will be called and notify your application that the transfer has been done successfully or failed.</span>
+</div><div><span><br></span></div><div><span>The following code is wrong and should not exist:</span></div><div>
+<div><br></div>
+<div>// Notification (Steps 10-11; having some issue here)</div>
+<div>	CEmNotification obj(dwMasterInstance);</div>
+<div>	EC_T_DWORD dwCode = EC_NOTIFY_MBOXRCV;</div>
+<div>	EC_T_NOTIFYPARMS* pParms;</div>
+<div>	pParms-&gt;pbyInBuf = pMbxTfer;</div>
+<div>	pParms-&gt;dwInBufSize = 1;</div>
+<div>	obj.ecatNotify(dwCode,pParms);</div>
+</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>

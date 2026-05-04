@@ -1,0 +1,348 @@
+### HEADER
+Id=1877
+Link=http://at-zammad/#ticket/zoom/1877
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=none
+Commission=Algo INtime/Linux, FA PC & Pancel PC (ID=245, Number=245)
+Number=701877
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=22.11.2021 09:38:04 +00:00
+UpdatedAt=12.12.2023 13:49:55 +00:00
+CloseAt=22.11.2021 09:42:23 +00:00
+ArticlesCount=6
+
+### TITLE
+Question about EC-Master (Algo System)
+
+### ARTICLE00_HEADER
+Id=9926
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=22.11.2021 09:38:04 +00:00
+UpdatedAt=22.11.2021 09:38:08 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master (Algo System)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master (Algo System)
+
+Does the link layer support the following NICs?
+If you don't support it yet, do you have any plans to support it in the future?
+
+  - I225 (Intel)
+
+Best regards,
+Takuya Fujikawa
+
+
+
+### ARTICLE01_HEADER
+Id=9927
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.11.2021 09:42:23 +00:00
+UpdatedAt=22.11.2021 09:42:25 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master (Algo System)
+
+### ARTICLE01_BODY
+<div>Hi Takuya,</div><div><br></div><div>yes I225 is supported in the V3.1 version.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><br>
+</div><div><blockquote type="cite">On Monday, November 22, 2021, 10:38:04 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master (Algo System)</div>
+<div><br></div>
+<div>Does the link layer support the following NICs?</div>
+<div>If you don't support it yet, do you have any plans to support it in the future?</div>
+<div><br></div>
+<div>  - I225 (Intel)</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=10119
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=29.11.2021 02:21:01 +00:00
+UpdatedAt=29.11.2021 02:21:01 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master (Algo System) [Ticket#701877]
+
+### ARTICLE02_BODY
+Dear Cyril san
+
+ > yes I225 is supported in the V3.1 version.
+
+The customer has a question for you.
+They checked the attachment and found the following explanation.
+
+"I8254X: Add device IDs for I219 and I225LM"
+
+Does this mean that I225 can be used with V3.0?
+They would be helpful if the V3.0 supports the I229.
+
+Best regards,
+Takuya Fujikawa
+
+
+On 2021/11/22 18:42, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+> 
+> yes I225 is supported in the V3.1 version.
+> 
+> Best Regards,
+> Cyril
+> 
+>> On Monday, November 22, 2021, 10:38:04 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Master (Algo System)
+>>
+>> Does the link layer support the following NICs?
+>> If you don't support it yet, do you have any plans to support it in the future?
+>>
+>>  - I225 (Intel)
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+### ARTICLE03_HEADER
+Id=10130
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.11.2021 10:51:27 +00:00
+UpdatedAt=29.11.2021 10:51:30 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master (Algo System)
+
+### ARTICLE03_BODY
+Hi Takuya,<div><br></div><div>yes it should work.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Monday, November 29, 2021, 3:21:01 AM, Takuya Fujikawa wrote:<br><br><div>Dear Cyril san</div>
+<div><br></div>
+<div> &gt; yes I225 is supported in the V3.1 version.</div>
+<div><br></div>
+<div>The customer has a question for you.</div>
+<div>They checked the attachment and found the following explanation.</div>
+<div><br></div>
+<div>"I8254X: Add device IDs for I219 and I225LM"</div>
+<div><br></div>
+<div>Does this mean that I225 can be used with V3.0?</div>
+<div>They would be helpful if the V3.0 supports the I229.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2021/11/22 18:42, Cyril Eyssautier via EC-Support wrote:</div>
+<div>&gt; Hi Takuya,</div>
+<div>&gt;</div>
+<div>&gt; yes I225 is supported in the V3.1 version.</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; Cyril</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Monday, November 22, 2021, 10:38:04 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Master (Algo System)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Does the link layer support the following NICs?</div>
+<div>&gt;&gt; If you don't support it yet, do you have any plans to support it in the future?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt;  - I225 (Intel)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE04_HEADER
+Id=10238
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=30.11.2021 23:44:01 +00:00
+UpdatedAt=30.11.2021 23:44:01 +00:00
+
+### ARTICLE04_SUBJECT
+Re: Question about EC-Master (Algo System) [Ticket#701877]
+
+### ARTICLE04_BODY
+Dear Cyril san
+
+ > yes it should work.
+
+Which of the following explanations is correct for your answer?
+  1. It works on V3.1, but it is not official support.
+  2. Officially supported by V3.1.
+
+Best regards,
+Takuya Fujikawa
+
+
+On 2021/11/29 19:51, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+> 
+> yes it should work.
+> 
+> Best Regards,
+> Cyril
+> 
+>> On Monday, November 29, 2021, 3:21:01 AM, Takuya Fujikawa wrote:
+>>
+>> Dear Cyril san
+>>
+>> > yes I225 is supported in the V3.1 version.
+>>
+>> The customer has a question for you.
+>> They checked the attachment and found the following explanation.
+>>
+>> "I8254X: Add device IDs for I219 and I225LM"
+>>
+>> Does this mean that I225 can be used with V3.0?
+>> They would be helpful if the V3.0 supports the I229.
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+>> On 2021/11/22 18:42, Cyril Eyssautier via EC-Support wrote:
+>> > Hi Takuya,
+>> >
+>> > yes I225 is supported in the V3.1 version.
+>> >
+>> > Best Regards,
+>> > Cyril
+>> >
+>> >> On Monday, November 22, 2021, 10:38:04 AM, Takuya Fujikawa wrote:
+>> >>
+>> >> Dear EtherCAT Support
+>> >>
+>> >> Question about EC-Master (Algo System)
+>> >>
+>> >> Does the link layer support the following NICs?
+>> >> If you don't support it yet, do you have any plans to support it in the future?
+>> >>
+>> >>  - I225 (Intel)
+>> >>
+>> >> Best regards,
+>> >> Takuya Fujikawa
+>> >>
+>> >
+>> >
+>> >
+>>
+> 
+> 
+> 
+
+
+### ARTICLE05_HEADER
+Id=10243
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.12.2021 07:01:22 +00:00
+UpdatedAt=01.12.2021 07:01:24 +00:00
+
+### ARTICLE05_SUBJECT
+Question about EC-Master (Algo System)
+
+### ARTICLE05_BODY
+<div>2.<br><br>
+</div><div><blockquote type="cite">On Wednesday, December 1, 2021, 12:44:01 AM, Takuya Fujikawa wrote:<br><br><div>Dear Cyril san</div>
+<div><br></div>
+<div> &gt; yes it should work.</div>
+<div><br></div>
+<div>Which of the following explanations is correct for your answer?</div>
+<div>  1. It works on V3.1, but it is not official support.</div>
+<div>  2. Officially supported by V3.1.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2021/11/29 19:51, Cyril Eyssautier via EC-Support wrote:</div>
+<div>&gt; Hi Takuya,</div>
+<div>&gt;</div>
+<div>&gt; yes it should work.</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; Cyril</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Monday, November 29, 2021, 3:21:01 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear Cyril san</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; &gt; yes I225 is supported in the V3.1 version.</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; The customer has a question for you.</div>
+<div>&gt;&gt; They checked the attachment and found the following explanation.</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; "I8254X: Add device IDs for I219 and I225LM"</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Does this mean that I225 can be used with V3.0?</div>
+<div>&gt;&gt; They would be helpful if the V3.0 supports the I229.</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; On 2021/11/22 18:42, Cyril Eyssautier via EC-Support wrote:</div>
+<div>&gt;&gt; &gt; Hi Takuya,</div>
+<div>&gt;&gt; &gt;</div>
+<div>&gt;&gt; &gt; yes I225 is supported in the V3.1 version.</div>
+<div>&gt;&gt; &gt;</div>
+<div>&gt;&gt; &gt; Best Regards,</div>
+<div>&gt;&gt; &gt; Cyril</div>
+<div>&gt;&gt; &gt;</div>
+<div>&gt;&gt; &gt;&gt; On Monday, November 22, 2021, 10:38:04 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt; &gt;&gt;</div>
+<div>&gt;&gt; &gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt; &gt;&gt;</div>
+<div>&gt;&gt; &gt;&gt; Question about EC-Master (Algo System)</div>
+<div>&gt;&gt; &gt;&gt;</div>
+<div>&gt;&gt; &gt;&gt; Does the link layer support the following NICs?</div>
+<div>&gt;&gt; &gt;&gt; If you don't support it yet, do you have any plans to support it in the future?</div>
+<div>&gt;&gt; &gt;&gt;</div>
+<div>&gt;&gt; &gt;&gt;  - I225 (Intel)</div>
+<div>&gt;&gt; &gt;&gt;</div>
+<div>&gt;&gt; &gt;&gt; Best regards,</div>
+<div>&gt;&gt; &gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt; &gt;&gt;</div>
+<div>&gt;&gt; &gt;</div>
+<div>&gt;&gt; &gt;</div>
+<div>&gt;&gt; &gt;</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div><div><br></div><br><br>

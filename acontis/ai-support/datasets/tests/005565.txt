@@ -1,0 +1,92 @@
+### HEADER
+Id=5565
+Link=http://at-zammad/#ticket/zoom/5565
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Robert Bosch GmbH (ID=149, Number=40339, Country=DE)
+Commission=Robert Bosch, Testing Systems (ID=168, Number=168)
+Number=705565
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=michael.kolb@de.bosch.com (ID=127, FirstName=Michael, LastName=Kolb)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=12.05.2023 08:37:25 +00:00
+UpdatedAt=02.06.2023 06:10:56 +00:00
+CloseAt=02.06.2023 06:10:56 +00:00
+ArticlesCount=2
+
+### TITLE
+Update Request from Robert Bosch GmbH
+
+### ARTICLE00_HEADER
+Id=29622
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.05.2023 08:37:25 +00:00
+UpdatedAt=12.05.2023 08:37:30 +00:00
+
+### ARTICLE00_SUBJECT
+Update Request from Robert Bosch GmbH
+
+### ARTICLE00_BODY
+<p> </p><p>Dear Mr./Ms. Kolb,</p><p>thank you for your registration.<br>
+<br></p><p>First Name: Michael<br>Last Name: Kolb <br>Company: Robert Bosch GmbH <br><span>Commission: <br></span><span>Country: Germany <br></span><span>City: Immenstadt <br></span><span>E-Mail: michael.kolb@de.bosch.com <br></span>Request update for: <span>EC-Master <br></span><span>Update Type: <br></span><span>Operating System: Debian Linux <br></span><span>Operating Sys. Version: 5.10.59-rt52+ #1 SMP PREEMPT_RT <br></span>Any Questions?: </p><p><img src="/api/v1/ticket_attachment/5565/29622/124406?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH <br>Gartenstraße 46, 88212 Ravensburg/Germany <br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a>
+<br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com <br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/5565/29622/124405?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=29624
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.05.2023 09:44:26 +00:00
+UpdatedAt=12.05.2023 09:44:29 +00:00
+
+### ARTICLE01_SUBJECT
+Update Request from Robert Bosch GmbH
+
+### ARTICLE01_BODY
+<p>Dear Customer, </p><p><br></p>
+
+<p>please find your new software
+version below: </p><p><br></p>
+
+<p><a href="https://downloads.acontis.com/2023/P-R/Robert_Bosch_(40339)(DE)/EC-Master_Linux_x86_64Bit/3.1.4.09/EC-Master-ClassA-AddOn-V3.1.4.09-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/P-R/Robert_Bosch_(40339)(DE)/EC-Master_Linux_x86_64Bit/3.1.4.09/EC-Master-ClassA-AddOn-V3.1.4.09-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></p>
+
+<p><a href="https://downloads.acontis.com/2023/P-R/Robert_Bosch_(40339)(DE)/EC-Master_Linux_x86_64Bit/3.1.4.09/EC-Master-I8254x-V3.1.4.09-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/P-R/Robert_Bosch_(40339)(DE)/EC-Master_Linux_x86_64Bit/3.1.4.09/EC-Master-I8254x-V3.1.4.09-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></p>
+
+<p><a href="https://downloads.acontis.com/2023/P-R/Robert_Bosch_(40339)(DE)/EC-Master_Linux_x86_64Bit/3.1.4.09/EC-Master-V3.1.4.09-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/P-R/Robert_Bosch_(40339)(DE)/EC-Master_Linux_x86_64Bit/3.1.4.09/EC-Master-V3.1.4.09-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></p><p><br></p>
+
+<p>Password: ECM88250 </p><p><br></p>
+
+Best Regards, <br>
+Haithem Jebali     <br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Friday, May 12, 2023 at 10:37:25 AM, sales acontis wrote:<br><br><p> </p>
+<p>Dear Mr./Ms. Kolb,</p>
+<p>thank you for your registration.<br>
+<br></p>
+<p>First Name: Michael<br>Last Name: Kolb <br>Company: Robert Bosch GmbH <br><span>Commission: <br></span><span>Country: Germany <br></span><span>City: Immenstadt <br></span><span>E-Mail: michael.kolb@de.bosch.com <br></span>Request update for: <span>EC-Master <br></span><span>Update Type: <br></span><span>Operating System: Debian Linux <br></span><span>Operating Sys. Version: 5.10.59-rt52+ #1 SMP PREEMPT_RT <br></span>Any Questions?: </p>
+<p><img src="/api/v1/ticket_attachment/5565/29624/124412?view=inline" alt="" style="max-width:100%;max-width:100%;width:163px;max-height:85px;"></p>
+<p><span>acontis technologies GmbH <br>Gartenstraße 46, 88212 Ravensburg/Germany <br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a>
+<br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com <br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/5565/29624/124413?view=inline" style="max-width:100%;max-width:100%;width:22px;max-height:22px;"></a></span></p>
+<br>
+</blockquote></div><div><br></div><br><br>

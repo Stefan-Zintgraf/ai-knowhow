@@ -1,0 +1,134 @@
+### HEADER
+Id=7526
+Link=http://at-zammad/#ticket/zoom/7526
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Changsha Hanpeng, rail transit network system (ID=33, Number=33)
+Number=707526
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=28.02.2024 11:10:52 +00:00
+UpdatedAt=11.03.2024 14:38:38 +00:00
+CloseAt=11.03.2024 14:38:38 +00:00
+ArticlesCount=2
+
+### TITLE
+The potential customer changsha huayi requirement about EcMaster
+
+### ARTICLE00_HEADER
+Id=41497
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.02.2024 11:10:53 +00:00
+UpdatedAt=28.02.2024 11:10:54 +00:00
+
+### ARTICLE00_SUBJECT
+The potential customer changsha huayi requirement about EcMaster
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>The potential customer Changsha Huayi plan to using VxWin with EcMaster, Recently we support run the VxWin, and Optimize real-time performance.</div>
+<div>New we feel their machine's real-time performance is ok for EtherCAT application, And they still have ethercat requirement.</div>
+<div>Dose the EcMaster for VxWin same as EcMaster for vxworks, or not? If the EcMaster for vxworks is not same VxWin version, Could you please send the EcMaster for VxWin eval version with protected to us? If both of version is same, we could download it from the acontis download links.</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=41498
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.02.2024 11:15:09 +00:00
+UpdatedAt=28.02.2024 11:15:13 +00:00
+
+### ARTICLE01_SUBJECT
+The potential customer changsha huayi requirement about EcMaster
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>we don't have VxWin specific binaries like for Windows CE, RTOS-32 and Linux. You can use the VxWorks native protected binaries.</div><div><br></div><div>If the project is ordered and go to production, we will compile for VxWin, in order to apply the license key from EC-Master to VxWin like the other platforms above. For the Eval, they have to use 2 Keys if they need to run long term tests. One for EC-Master and one for VxWin.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, February 28, 2024 at 12:10:53 PM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>The potential customer Changsha Huayi plan to using VxWin with EcMaster, Recently we support run the VxWin, and Optimize real-time performance.</div>
+<div>New we feel their machine's real-time performance is ok for EtherCAT application, And they still have ethercat requirement.</div>
+<div>Dose the EcMaster for VxWin same as EcMaster for vxworks, or not? If the EcMaster for vxworks is not same VxWin version, Could you please send the EcMaster for VxWin eval version with protected to us? If both of version is same, we could download it from the acontis download links.</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

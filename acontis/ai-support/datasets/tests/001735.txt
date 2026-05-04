@@ -1,0 +1,194 @@
+### HEADER
+Id=1735
+Link=http://at-zammad/#ticket/zoom/1735
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ACS Motion Control LTD (ID=184, Number=50006, Country=IL)
+Commission=ACS, Motion Controller (ID=223, Number=223)
+Number=701735
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=olegr@acsmotioncontrol.com (ID=84, FirstName=Oleg, LastName=Romanov)
+CreatedBy=olegr@acsmotioncontrol.com (ID=84, FirstName=Oleg, LastName=Romanov)
+Type=
+TimeUnit=
+CreatedAt=28.10.2021 15:22:34 +00:00
+UpdatedAt=12.11.2021 07:04:54 +00:00
+CloseAt=12.11.2021 07:04:54 +00:00
+ArticlesCount=2
+
+### TITLE
+DW3504: Support Intel Atom (Elkhart lake) network adapter
+
+### ARTICLE00_HEADER
+Id=9298
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.10.2021 15:22:34 +00:00
+UpdatedAt=28.10.2021 15:22:39 +00:00
+
+### ARTICLE00_SUBJECT
+DW3504: Support Intel Atom (Elkhart lake) network adapter
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>How it is going ?</p>
+<p> </p>
+<p>I saw that in EC-Master V3.1.1.08 Intel Atom (Elkhart lake) network adapter support was added.</p>
+<p>Does it fully supported ?</p>
+<p> </p>
+<p>Do you have any documents from Intel regarding the required support ?</p>
+<p>The reason I’m asking is that OnTime still does not support it, and according to Peter Peterson Intel did not publish any documentation regarding it yet.</p>
+<p> </p>
+<p><b><i>Best regards,</i></b></p>
+<p> </p>
+<p><b><i>Oleg Romanov</i></b><i><br> R&amp;D Software Group Manager</i></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding:0in 0in 0in 0in;"></td>
+</tr>
+<tr>
+<td style="border:none;border-top:solid #f8193f 1.0pt;padding:0in 0in 0in 0in;"></td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;">
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding:0in 7.5pt 0in 0in;">
+<p><b><i><span style="color:#f8193f;">T</span></i></b></p>
+<p></p>
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><i><span style="color:black;">972 4 654 6440 ext. 211</span></i></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 7.5pt 0in 0in;">
+<p><b><i><span style="color:#f8193f;">E</span></i></b></p>
+<p></p>
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><i>olegr@acsmotioncontrol.com</i></p>
+<p></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 7.5pt 0in 0in;">
+<p><b><i><span style="color:#f8193f;">W</span></i></b></p>
+<p></p>
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><a href="http://acsmotioncontrol.com/" rel="nofollow noreferrer noopener" target="_blank"><i>AcsMotionControl.com</i></a></p>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border:none;border-bottom:solid #f8193f 1.0pt;padding:0in 0in 0in 0in;">
+</td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;"></td>
+</tr>
+</tbody>
+</table>
+<p><img border="0" style="max-width:100%;width:2.1562in;max-height:.7187in;width:207px;max-height:69px;" src="/api/v1/ticket_attachment/1735/9298/36590?view=inline"></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=9302
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.10.2021 16:18:26 +00:00
+UpdatedAt=28.10.2021 16:18:28 +00:00
+
+### ARTICLE01_SUBJECT
+DW3504: Support Intel Atom (Elkhart lake) network adapter
+
+### ARTICLE01_BODY
+<div>Hi Oleg,</div><div><br></div><div>I'm going well thanks!</div><div><br></div><div>We support the following device IDs, in fact Synopsys IP Cores:</div><div>
+<span>#define PCI_DEVICE_TSNGBE                     ((EC_T_WORD)0x4BB0)     /**&lt; (0x8086, 0x4BB0) */</span><br>
+</div><div>#define PCI_DEVICE_TSNGBE_2                 ((EC_T_WORD)0x4BA0)     /**&lt; (0x8086, 0x4BA0) */</div><div>#define PCI_DEVICE_TSNGBE_3                 ((EC_T_WORD)0x4B32)     /**&lt; (0x8086, 0x4B32) */</div><div><br></div><div>At least we can run EtherCAT with our link-layer, but it is of course a specific use case, very different from standard networking.</div><div>I think that the RTOS-32 drivers are based on the BSD drivers. Perhaps Intel doesn't provide it, I don't know. We used the Linux driver as starting point mixing it with our already existing emllDw3504 link-layer.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><br>
+</div><div><blockquote type="cite">On Thursday, October 28, 2021, 5:22:34 PM, Oleg Romanov wrote:<br><br><div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>How it is going ?</p>
+<p> </p>
+<p>I saw that in EC-Master V3.1.1.08 Intel Atom (Elkhart lake) network adapter support was added.</p>
+<p>Does it fully supported ?</p>
+<p> </p>
+<p>Do you have any documents from Intel regarding the required support ?</p>
+<p>The reason I’m asking is that OnTime still does not support it, and according to Peter Peterson Intel did not publish any documentation regarding it yet.</p>
+<p> </p>
+<p><b><i>Best regards,</i></b></p>
+<p> </p>
+<p><b><i>Oleg Romanov</i></b><i><br> R&amp;D Software Group Manager</i></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding:0in 0in 0in 0in;"></td>
+</tr>
+<tr>
+<td style="border:none;border-top:solid #f8193f 1.0pt;padding:0in 0in 0in 0in;"></td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;">
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td style="padding:0in 7.5pt 0in 0in;">
+<p><b><i><span style="color:#f8193f;">T</span></i></b></p>
+<p></p>
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><i><span style="color:black;">972 4 654 6440 ext. 211</span></i></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 7.5pt 0in 0in;">
+<p><b><i><span style="color:#f8193f;">E</span></i></b></p>
+<p></p>
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><i>olegr@acsmotioncontrol.com</i></p>
+<p></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 7.5pt 0in 0in;">
+<p><b><i><span style="color:#f8193f;">W</span></i></b></p>
+<p></p>
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><a href="http://acsmotioncontrol.com/" rel="nofollow noreferrer noopener" target="_blank"><i>AcsMotionControl.com</i></a></p>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border:none;border-bottom:solid #f8193f 1.0pt;padding:0in 0in 0in 0in;">
+</td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;"></td>
+</tr>
+</tbody>
+</table>
+<p><img border="0" style="max-width:100%;max-width:100%;width:2.1562in;max-height:.7187in;width:207px;max-height:69px;" src="/api/v1/ticket_attachment/1735/9302/36604?view=inline"></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

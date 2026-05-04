@@ -1,0 +1,139 @@
+### HEADER
+Id=8557
+Link=http://at-zammad/#ticket/zoom/8557
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Kyotoseisakusho (ID=269, Number=269)
+Number=708557
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=ecsupport@soft-service.co.jp (ID=33, FirstName=Ecsupport, LastName=)
+CreatedBy=ecsupport@soft-service.co.jp (ID=33, FirstName=Ecsupport, LastName=)
+Type=
+TimeUnit=
+CreatedAt=25.07.2024 09:58:49 +00:00
+UpdatedAt=21.08.2024 09:29:21 +00:00
+CloseAt=21.08.2024 09:29:21 +00:00
+ArticlesCount=2
+
+### TITLE
+About Multiple Cyclic Entries
+
+### ARTICLE00_HEADER
+Id=47903
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.07.2024 09:58:49 +00:00
+UpdatedAt=25.07.2024 09:58:53 +00:00
+
+### ARTICLE00_SUBJECT
+About Multiple Cyclic Entries
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Dear Support Team</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Kyoto Seisakusho wants to use the Multiple Cyclic Entries setting in EC-Master, but they had some questions that were unclear.</span></p>
+<p><span lang="EN-US">Could you please give us your opinion?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p>・<span lang="EN-US">JOB tasks are caused by issuing events within the application.</span></p>
+<p> <span lang="EN-US">Is there a discrepancy between this timing and the cyclic cycle of EtherCAT?</span></p>
+<p> <span lang="EN-US">(We believe that the time is created based on the INtime kernel ticks, so it will not shift unless the task is very heavy.)</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p>・<span lang="EN-US">When they set task0, all tasks seem to be processed, but shouldn't they set 0?</span></p>
+<p> <span lang="EN-US">Should the task ID be set from 1?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p>・<span lang="EN-US">They have a task that they want to run every 1000 µs with a cyclic period of 250 µs.</span></p>
+<p> <span lang="EN-US">In that case, they think they should send process data once every four times.</span></p>
+<p> <span lang="EN-US">Is there an API that tells us when to send process data?</span></p>
+<p> <span lang="EN-US">Or should I control when to send it within the application?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Haruto Itoyama</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=47942
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.07.2024 15:30:28 +00:00
+UpdatedAt=25.07.2024 15:30:29 +00:00
+
+### ARTICLE01_SUBJECT
+About Multiple Cyclic Entries
+
+### ARTICLE01_BODY
+Hi <span>Haruto,</span><div><br></div><div>please find my answer [CER] below.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div>
+<blockquote type="cite">On Thursday, July 25, 2024 at 11:58:49 AM, Ecsupport wrote:<br><br><div>
+<p><span lang="EN-US">Dear Support Team</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Kyoto Seisakusho wants to use the Multiple Cyclic Entries setting in EC-Master, but they had some questions that were unclear.</span></p>
+<p><span lang="EN-US">Could you please give us your opinion?</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p>・<span lang="EN-US">JOB tasks are caused by issuing events within the application.</span></p>
+<p> <span lang="EN-US">Is there a discrepancy between this timing and the cyclic cycle of EtherCAT?</span></p>
+<p> <span lang="EN-US">(We believe that the time is created based on the INtime kernel ticks, so it will not shift unless the task is very heavy.)</span></p>
+<p><span lang="EN-US">[CER] The job task has to run according the configured cycle time.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p>・<span lang="EN-US">When they set task0, all tasks seem to be processed, but shouldn't they set 0?</span></p>
+<p> <span lang="EN-US">Should the task ID be set from 1?</span></p>
+<p><span lang="EN-US">[CER] Task 0 should work</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p>・<span lang="EN-US">They have a task that they want to run every 1000 µs with a cyclic period of 250 µs.</span></p>
+<p> <span lang="EN-US">In that case, they think they should send process data once every four times.</span></p>
+<p> <span lang="EN-US">Is there an API that tells us when to send process data?</span></p>
+<p>Or should I control when to send it within the application?<br><span><br>[CER] They need to call eUsrJob_SendCycFramesByTaskId according the cycle time:</span></p>
+<p><span>+250us - </span>eUsrJob_SendCycFramesByTaskId(0) + <span>eUsrJob_SendCycFramesByTaskId(1)</span></p>
+<p><span>+250us - eUsrJob_SendCycFramesByTaskId(0)</span><br></p>
+<p><span>+250us - eUsrJob_SendCycFramesByTaskId(0)</span><br></p>
+<p><span>+250us - eUsrJob_SendCycFramesByTaskId(0) + </span><span>eUsrJob_SendCycFramesByTaskId(1)</span><br></p>
+<p><span>...</span></p>
+</div>
+</blockquote>
+<blockquote type="cite">
+<div>
+<p></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Haruto Itoyama</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br>
+</blockquote>
+</div>
+<div><br></div>
+<br><br>
+</div>

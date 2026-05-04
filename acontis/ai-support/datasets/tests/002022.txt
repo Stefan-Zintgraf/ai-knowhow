@@ -1,0 +1,174 @@
+### HEADER
+Id=2022
+Link=http://at-zammad/#ticket/zoom/2022
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Demcon advanced mechatronics Enschede B.V. (ID=304, Number=40357, Country=NL)
+Commission=Demcon, qualification tools (ID=360, Number=360)
+Number=702022
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=tim.klein.nijenhuis@demcon.com (ID=81, FirstName=Tim, LastName=Klein Nijenhuis)
+CreatedBy=tim.klein.nijenhuis@demcon.com (ID=81, FirstName=Tim, LastName=Klein Nijenhuis)
+Type=
+TimeUnit=
+CreatedAt=07.12.2021 11:01:34 +00:00
+UpdatedAt=25.04.2022 12:59:36 +00:00
+CloseAt=28.12.2021 07:05:21 +00:00
+ArticlesCount=3
+
+### TITLE
+Question regarding EtherCAT on INtime
+
+### ARTICLE00_HEADER
+Id=10561
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.12.2021 11:01:34 +00:00
+UpdatedAt=07.12.2021 11:01:34 +00:00
+
+### ARTICLE00_SUBJECT
+Question regarding EtherCAT on INtime
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Acontis,</p>
+<p> </p>
+<p>I have a question regarding EtherCAT running on INtime.</p>
+<p>When a single EtherCAT adapter (NIC is passed to INtime EtherCAT works fine, but when a second adapter is passed EtherCAT starts complaining and doesn’t start the master stack.</p>
+<p>I’ve confirmed that the MAC address is correct of the instance that the EtherCAT master stack is using.</p>
+<p> </p>
+<p>The log generated while starting EtherCAT:</p>
+<p><img style="max-width:100%;width:10.2187in;max-height:10.375in;width:981px;max-height:996px;" src="/api/v1/ticket_attachment/2022/10561/40845?view=inline"></p>
+<p> </p>
+<p>Do you have any idea what could be the cause of EtherCAT not starting correctly, or any other information to e.g. wrong INtime or Acontis configuration when multiple Ethernet ports are connected to INtime or so?</p>
+<p> </p>
+<p>The versions of the software used are:</p>
+<p>EC-Master-ClassA-AddOn-V3.1.2.07-INtime6-x86_32Bit-SDK_Protected.zip</p>
+<p>EC-Master-I8254x-V3.1.2.07-INtime6-x86_32Bit-SDK_Protected.zip</p>
+<p>EC-Master-V3.1.2.07-INtime6-x86_32Bit-SDK_Protected.zip</p>
+<p> </p>
+<p>And versions of the test pc environment:</p>
+<p>Windows 10 Enterprise LTSC, version 1809</p>
+<p>Visual Studio 2019, Version 16.11.5</p>
+<p>INtime version 6.4.21125.1</p>
+<p>INtime NIC configuration:</p>
+<p><img style="max-width:100%;width:15.3541in;max-height:5.5833in;width:1474px;max-height:536px;" src="/api/v1/ticket_attachment/2022/10561/40846?view=inline"></p>
+<p> </p>
+<p>INtime adapter configuration:</p>
+<p><img style="max-width:100%;width:4.9583in;max-height:5.7395in;width:476px;max-height:551px;" src="/api/v1/ticket_attachment/2022/10561/40847?view=inline"></p>
+<p>Kind Regards,</p>
+<p>
+<b>ir. TIM KLEIN NIJENHUIS </b><br> SOFTWARE ENGINEER</p>
+<p>
+<b><img style="max-width:100%;width:4.6875in;max-height:.3645in;width:450px;max-height:35px;" src="/api/v1/ticket_attachment/2022/10561/40848?view=inline" alt="wkxEA"></b><br>
+<br>
+<a href="https://www.demcon.com/mechatronics" rel="nofollow noreferrer noopener" title="https://www.demcon.com/mechatronics" target="_blank"><b>DEMCON ADVANCED MECHATRONICS</b></a></p>
+<table border="0" cellspacing="1" cellpadding="0">
+<tbody>
+<tr>
+<td style="padding:.75pt .75pt .75pt .75pt;">
+<span style="color:black;">The content of this communication and any attachments are of a confidential nature and accordingly intended only to be read by the addressee.</span><p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=10563
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=07.12.2021 11:06:02 +00:00
+UpdatedAt=07.12.2021 11:06:02 +00:00
+
+### ARTICLE01_BODY
+@Haithem: könntest du bitte die Standardfragen klären (funktioniert es mit der unmodifizierten EcMasterDemo, hilft ein Switch dazwischen, blinken die LEDs)?
+
+### ARTICLE02_HEADER
+Id=10570
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.12.2021 12:02:40 +00:00
+UpdatedAt=07.12.2021 12:02:44 +00:00
+
+### ARTICLE02_SUBJECT
+Question regarding EtherCAT on INtime
+
+### ARTICLE02_BODY
+Hallo,<div><br></div><div>I have some questionsfor you:</div><div>1) Does this work if you try our standard MasterDemo application? Can you then send a log file with a high verbosity (-v 5) </div><div>2) What is the DeviceId of the used NIC?</div><div>3) If you try adding a switch between the NIC port and the slaves, would you still have the same problem?</div><div>4)  if you change the non-functioning NIC with one of the other NICs, do you still have the same problem?</div><div><br></div><div>Best Regards</div><div>Haithem Jebali <br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Haithem Jebali </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, December 7, 2021, 12:01:34 PM, Tim Klein Nijenhuis wrote:<br><br><div>
+<p>Dear Acontis,</p>
+<p> </p>
+<p>I have a question regarding EtherCAT running on INtime.</p>
+<p>When a single EtherCAT adapter (NIC is passed to INtime EtherCAT works fine, but when a second adapter is passed EtherCAT starts complaining and doesn’t start the master stack.</p>
+<p>I’ve confirmed that the MAC address is correct of the instance that the EtherCAT master stack is using.</p>
+<p> </p>
+<p>The log generated while starting EtherCAT:</p>
+<p><img style="max-width:100%;max-width:100%;width:10.2187in;max-height:10.375in;width:981px;max-height:996px;" src="/api/v1/ticket_attachment/2022/10570/40883?view=inline"></p>
+<p> </p>
+<p>Do you have any idea what could be the cause of EtherCAT not starting correctly, or any other information to e.g. wrong INtime or Acontis configuration when multiple Ethernet ports are connected to INtime or so?</p>
+<p> </p>
+<p>The versions of the software used are:</p>
+<p>EC-Master-ClassA-AddOn-V3.1.2.07-INtime6-x86_32Bit-SDK_Protected.zip</p>
+<p>EC-Master-I8254x-V3.1.2.07-INtime6-x86_32Bit-SDK_Protected.zip</p>
+<p>EC-Master-V3.1.2.07-INtime6-x86_32Bit-SDK_Protected.zip</p>
+<p> </p>
+<p>And versions of the test pc environment:</p>
+<p>Windows 10 Enterprise LTSC, version 1809</p>
+<p>Visual Studio 2019, Version 16.11.5</p>
+<p>INtime version 6.4.21125.1</p>
+<p>INtime NIC configuration:</p>
+<p><img style="max-width:100%;max-width:100%;width:15.3541in;max-height:5.5833in;width:1474px;max-height:536px;" src="/api/v1/ticket_attachment/2022/10570/40884?view=inline"></p>
+<p> </p>
+<p>INtime adapter configuration:</p>
+<p><img style="max-width:100%;max-width:100%;width:4.9583in;max-height:5.7395in;width:476px;max-height:551px;" src="/api/v1/ticket_attachment/2022/10570/40885?view=inline"></p>
+<p>Kind Regards,</p>
+<p>
+<b>ir. TIM KLEIN NIJENHUIS </b><br> SOFTWARE ENGINEER</p>
+<p>
+<b><img style="max-width:100%;max-width:100%;width:4.6875in;max-height:.3645in;width:450px;max-height:35px;" src="/api/v1/ticket_attachment/2022/10570/40886?view=inline" alt="wkxEA"></b><br>
+<br>
+<a href="https://www.demcon.com/mechatronics" rel="nofollow noreferrer noopener" title="https://www.demcon.com/mechatronics" target="_blank"><b>DEMCON ADVANCED MECHATRONICS</b></a></p>
+<table border="0" cellspacing="1" cellpadding="0">
+<tbody>
+<tr>
+<td style="padding:.75pt .75pt .75pt .75pt;">
+<span style="color:black;">The content of this communication and any attachments are of a confidential nature and accordingly intended only to be read by the addressee.</span><p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

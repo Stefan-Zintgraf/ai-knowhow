@@ -1,0 +1,163 @@
+### HEADER
+Id=9444
+Link=http://at-zammad/#ticket/zoom/9444
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Walt Disney Parks and Resorts (ID=588, Number=0, Country=US)
+Commission=WDI, Show Control (ID=468, Number=468)
+Number=709444
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=kendall.lui@disney.com (ID=2681, FirstName=Kendall, LastName=Lui)
+CreatedBy=kendall.lui@disney.com (ID=2681, FirstName=Kendall, LastName=Lui)
+Type=
+TimeUnit=
+CreatedAt=03.12.2024 06:20:56 +00:00
+UpdatedAt=07.01.2025 08:22:09 +00:00
+CloseAt=12.12.2024 10:52:40 +00:00
+ArticlesCount=3
+
+### TITLE
+Return type of emSetMasterState
+
+### ARTICLE00_HEADER
+Id=53602
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.12.2024 06:20:56 +00:00
+UpdatedAt=03.12.2024 06:21:01 +00:00
+
+### ARTICLE00_SUBJECT
+Return type of emSetMasterState
+
+### ARTICLE00_BODY
+<div>
+<p>Hello Ec Support,</p>
+<p> </p>
+<p>I noticed that emSetMasterState returns: EC_E_BUSCONFIG_MISMATCH 0x9811001E if I try to init with a bus mismatch. However, the documentation does not state this as an error code. I do have a bus mismatch but I expected it to simply return a timeout error.</p>
+<p><img style="max-width:100%;width:7.9375in;max-height:5.6458in;width:762px;max-height:542px;" src="/api/v1/ticket_attachment/9444/53602/222569?view=inline"></p>
+<p> </p>
+<p>Are there any other return types I can expect from this?</p>
+<p> </p>
+<div>
+<div>
+<table border="0" cellspacing="5" cellpadding="0">
+<tbody>
+<tr>
+<td rowspan="2" valign="bottom" style="padding:0in 0in 0in 0in;">
+<p> </p>
+<p>
+<span><img style="max-width:100%;width:1.4583in;max-height:1.3333in;width:140px;max-height:128px;" src="/api/v1/ticket_attachment/9444/53602/222570?view=inline" alt="signature_3802436632"><a href="https://disneyworld.disney.go.com/50th-anniversary/" title="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdisneyworld.disney.go.com%2F50th-anniversary%2F&amp;data=04%7C01%7CKendall.Lui%40disney.com%7Cc51b40cba5f441ee6b9708d9fc9069d0%7C56b731a8a2ac4c32bf6b616810e913c6%7C1%7C0%7C637818520107585228%7C" rel="nofollow noreferrer noopener" target="_blank"><b><span style="color:#092172;">DisneyWorld.com/50</span></b></a></span></p>
+</td>
+<td rowspan="2" valign="top" style="background:#092172;padding:0in 0in 0in 0in;">
+</td>
+<td rowspan="2" valign="top" style="padding:0in 0in 0in 0in;">
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><span> <br>
+<br>
+</span><span style="color:#092172;"><br>
+<b>Kendall Lui</b><br>
+</span><b><span>Sr. Software Engineer, <i>Software Tools &amp; Logistics</i></span></b><span><br>
+<b>Email: <a href="mailto:kendall.lui@disney.com" title="mailto:kendall.lui@disney.com"><span style="color:#0563c1;">kendall.lui@disney.com</span></a><br> Cell: (689) 254-5216</b></span></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=53607
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.12.2024 07:52:40 +00:00
+UpdatedAt=03.12.2024 07:52:46 +00:00
+
+### ARTICLE01_SUBJECT
+Return type of emSetMasterState
+
+### ARTICLE01_BODY
+Hi Kendall,<div><br></div><div>It can return any values returned by emScanBus(). We will update the documentation.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, December 3, 2024 at 7:20:56 AM, Kendall Lui wrote:<br><br><div>
+<p>Hello Ec Support,</p>
+<p> </p>
+<p>I noticed that emSetMasterState returns: EC_E_BUSCONFIG_MISMATCH 0x9811001E if I try to init with a bus mismatch. However, the documentation does not state this as an error code. I do have a bus mismatch but I expected it to simply return a timeout error.</p>
+<p><img style="max-width:100%;max-width:100%;width:7.9375in;max-height:5.6458in;width:762px;max-height:542px;" src="/api/v1/ticket_attachment/9444/53607/222595?view=inline"></p>
+<p> </p>
+<p>Are there any other return types I can expect from this?</p>
+<p> </p>
+<div>
+<div>
+<table border="0" cellspacing="5" cellpadding="0">
+<tbody>
+<tr>
+<td rowspan="2" valign="bottom" style="padding:0in 0in 0in 0in;">
+<p> </p>
+<p>
+<span><img style="max-width:100%;max-width:100%;width:1.4583in;max-height:1.3333in;width:140px;max-height:128px;" src="/api/v1/ticket_attachment/9444/53607/222596?view=inline" alt="signature_3802436632"><a href="https://disneyworld.disney.go.com/50th-anniversary/" title="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdisneyworld.disney.go.com%2F50th-anniversary%2F&amp;data=04%7C01%7CKendall.Lui%40disney.com%7Cc51b40cba5f441ee6b9708d9fc9069d0%7C56b731a8a2ac4c32bf6b616810e913c6%7C1%7C0%7C637818520107585228%7C" rel="nofollow noreferrer noopener" target="_blank"><b><span style="color:#092172;">DisneyWorld.com/50</span></b></a></span></p>
+</td>
+<td rowspan="2" valign="top" style="background:#092172;padding:0in 0in 0in 0in;">
+</td>
+<td rowspan="2" valign="top" style="padding:0in 0in 0in 0in;">
+</td>
+<td style="padding:0in 0in 0in 0in;">
+<p><span> <br>
+<br>
+</span><span style="color:#092172;"><br>
+<b>Kendall Lui</b><br>
+</span><b><span>Sr. Software Engineer, <i>Software Tools &amp; Logistics</i></span></b><span><br>
+<b>Email: <a href="mailto:kendall.lui@disney.com" title="mailto:kendall.lui@disney.com"><span style="color:#0563c1;">kendall.lui@disney.com</span></a><br> Cell: (689) 254-5216</b></span></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 0in 0in 0in;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=53739
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=05.12.2024 08:54:38 +00:00
+UpdatedAt=05.12.2024 08:54:38 +00:00
+
+### ARTICLE02_BODY
+<div><a href="http://at-dev-git/ec-embedded/ec-embedded/-/issues/5851" title="http://at-dev-git/ec-embedded/ec-embedded/-/issues/5851" rel="nofollow noreferrer noopener" target="_blank">http://at-dev-git/ec-embedded/ec-embedded/-/issues/5851</a></div>

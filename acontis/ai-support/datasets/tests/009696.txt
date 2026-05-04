@@ -1,0 +1,278 @@
+### HEADER
+Id=9696
+Link=http://at-zammad/#ticket/zoom/9696
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Lam Research Corporation (ID=363, Number=55504, Country=US)
+Commission=LAM, Semi EC-Master VxWorks (ID=430, Number=430)
+Number=709696
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=thaotam.trinh@lamresearch.com (ID=50, FirstName=Thaotam, LastName=Trinh)
+CreatedBy=thaotam.trinh@lamresearch.com (ID=50, FirstName=Thaotam, LastName=Trinh)
+Type=
+TimeUnit=
+CreatedAt=15.01.2025 18:34:53 +00:00
+UpdatedAt=28.03.2025 07:03:36 +00:00
+CloseAt=28.03.2025 07:03:36 +00:00
+ArticlesCount=4
+
+### TITLE
+Master stack 2.9.2.45
+
+### ARTICLE00_HEADER
+Id=55109
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.01.2025 18:34:53 +00:00
+UpdatedAt=15.01.2025 18:34:56 +00:00
+
+### ARTICLE00_SUBJECT
+Master stack 2.9.2.45
+
+### ARTICLE00_BODY
+<div>
+<p>Hi,</p>
+<p> </p>
+<p>I ran into the use case where the master stack did not seem send out FoE file.</p>
+<p>Can you please help us to look at Wireshark what might cause the issue?</p>
+<p> </p>
+<p>Attachment includes Wireshark and eni file.</p>
+<p> </p>
+<p>Regards,</p>
+<p> </p>
+<p>Thao Tom Trinh</p>
+<p>Software &amp; Controls</p>
+<p>Desk +1 510.572.5795</p>
+<p> </p>
+</div><div>
+<br> LAM RESEARCH CONFIDENTIALITY NOTICE: This e-mail transmission, and any documents, files, or previous e-mail messages attached to it, (collectively, "E-mail Transmission") may be subject to one or more of the following based on the associated sensitivity level: E-mail Transmission (i) contains confidential information, (ii) is prohibited from distribution outside of Lam, and/or (iii) is intended solely for and restricted to the specified recipient(s). If you are not the intended recipient, or a person responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying, distribution or use of any of the information contained in or attached to this message is STRICTLY PROHIBITED. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without reading them or saving them to disk. Thank you.</div><br>
+<p>Confidential – Limited Access and Use<br>
+</p>
+
+### ARTICLE01_HEADER
+Id=55338
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.01.2025 08:15:41 +00:00
+UpdatedAt=21.01.2025 08:15:43 +00:00
+
+### ARTICLE01_SUBJECT
+Master stack 2.9.2.45
+
+### ARTICLE01_BODY
+Hi Thao,<div><br></div><div>yes you are right, using the filter "<span>ecat_mailbox", I can see the following:</span>
+</div><div><span><br></span></div><div><div>5050 Gen_20250114135534_00001.pcapng</div></div><div>-&gt; Only 2 SDO transfers</div><div><br></div><div><div>5050 Gen_20250114135619_00002.pcapng</div></div><div>-&gt; No mailbox at all.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, January 15, 2025 at 7:34:53 PM, Thaotam Trinh wrote:<br><br><div>
+<p>Hi,</p>
+<p> </p>
+<p>I ran into the use case where the master stack did not seem send out FoE file.</p>
+<p>Can you please help us to look at Wireshark what might cause the issue?</p>
+<p> </p>
+<p>Attachment includes Wireshark and eni file.</p>
+<p> </p>
+<p>Regards,</p>
+<p> </p>
+<p>Thao Tom Trinh</p>
+<p>Software &amp; Controls</p>
+<p>Desk +1 510.572.5795</p>
+<p> </p>
+</div>
+<div>
+<br> LAM RESEARCH CONFIDENTIALITY NOTICE: This e-mail transmission, and any documents, files, or previous e-mail messages attached to it, (collectively, "E-mail Transmission") may be subject to one or more of the following based on the associated sensitivity level: E-mail Transmission (i) contains confidential information, (ii) is prohibited from distribution outside of Lam, and/or (iii) is intended solely for and restricted to the specified recipient(s). If you are not the intended recipient, or a person responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying, distribution or use of any of the information contained in or attached to this message is STRICTLY PROHIBITED. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without reading them or saving them to disk. Thank you.</div>
+<br>
+<p>Confidential – Limited Access and Use<br>
+</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=55426
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.01.2025 04:31:32 +00:00
+UpdatedAt=22.01.2025 04:31:32 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Master stack 2.9.2.45 [Ticket#709696]
+
+### ARTICLE02_BODY
+<div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>Thanks for your confirmation.</p>
+<p>In this use case, the FoE command is issued from a RAS client running on Windows. Any suggestions what log file I should collect to troubleshoot the issue?</p>
+<p> </p>
+<div>
+<p>Regards,</p>
+<p> </p>
+<p>Thao Tom Trinh</p>
+<p>Software &amp; Controls</p>
+<p>Desk +1 510.572.5795</p>
+</div>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b><span> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Tuesday, January 21, 2025 12:16 AM<br>
+<b>To:</b> Trinh, Thao Tam &lt;thaotam.trinh@lamresearch.com&gt;<br>
+<b>Subject:</b> RE: Master stack 2.9.2.45 [Ticket#709696]</span></p>
+</div>
+</div>
+<p> </p>
+<div>
+<table border="0" cellspacing="0" cellpadding="0" align="left">
+<tbody>
+<tr>
+<td style="background:red;padding:0in 0in 0in 0in;">
+<p> </p>
+</td>
+<td style="background:lightyellow;padding:1.0pt 2.0pt 1.0pt 3.0pt;">
+<div>
+<p>
+<strong>External Email:</strong><span> Do NOT reply, click on links, or open attachments <u>unless</u> you recognize the sender and know the content is safe. If you believe this email may be unsafe, please click on the “Report Phishing” button on the top right of Outlook.</span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+</div>
+<div>
+<p>Hi Thao,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>yes you are right, using the filter "ecat_mailbox", I can see the following:</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<div>
+<p>5050 Gen_20250114135534_00001.pcapng</p>
+</div>
+</div>
+<div>
+<p>-&gt; Only 2 SDO transfers</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<div>
+<p>5050 Gen_20250114135619_00002.pcapng</p>
+</div>
+</div>
+<div>
+<p>-&gt; No mailbox at all.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Cyril Eyssautier</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Wednesday, January 15, 2025 at 7:34:53 PM, Thaotam Trinh wrote:</p>
+<div>
+<p>Hi,</p>
+<p> </p>
+<p>I ran into the use case where the master stack did not seem send out FoE file.</p>
+<p>Can you please help us to look at Wireshark what might cause the issue?</p>
+<p> </p>
+<p>Attachment includes Wireshark and eni file.</p>
+<p> </p>
+<p>Regards,</p>
+<p> </p>
+<p>Thao Tom Trinh</p>
+<p>Software &amp; Controls</p>
+<p>Desk +1 510.572.5795</p>
+<p> </p>
+</div>
+<div>
+<p><br> LAM RESEARCH CONFIDENTIALITY NOTICE: This e-mail transmission, and any documents, files, or previous e-mail messages attached to it, (collectively, "E-mail Transmission") may be subject to one or more of the following based on the associated sensitivity level: E-mail Transmission (i) contains confidential information, (ii) is prohibited from distribution outside of Lam, and/or (iii) is intended solely for and restricted to the specified recipient(s). If you are not the intended recipient, or a person responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying, distribution or use of any of the information contained in or attached to this message is STRICTLY PROHIBITED. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without reading them or saving them to disk. Thank you.</p>
+</div>
+<p> </p>
+<p>Confidential – Limited Access and Use</p>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+</div><br>
+<p>Confidential – Limited Access and Use<br>
+</p>
+
+### ARTICLE03_HEADER
+Id=56768
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.02.2025 01:03:25 +00:00
+UpdatedAt=16.02.2025 01:03:30 +00:00
+
+### ARTICLE03_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE03_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".

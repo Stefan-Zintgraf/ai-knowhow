@@ -1,0 +1,144 @@
+### HEADER
+Id=10937
+Link=http://at-zammad/#ticket/zoom/10937
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=7010937
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=04.07.2025 10:54:48 +00:00
+UpdatedAt=11.07.2025 08:09:16 +00:00
+CloseAt=11.07.2025 08:09:16 +00:00
+ArticlesCount=2
+
+### TITLE
+About a potential customer Goldwind requirement for the CU2508 and cable redundancy
+
+### ARTICLE00_HEADER
+Id=62642
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.07.2025 10:54:48 +00:00
+UpdatedAt=04.07.2025 10:54:51 +00:00
+
+### ARTICLE00_SUBJECT
+About a potential customer Goldwind requirement for the CU2508 and cable redundancy
+
+### ARTICLE00_BODY
+<div style="color: #1f497d;">
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);">Dear,</span></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);">Recently, the potential customer Goldwind send us a IPC, and ask us to building a demo show for support the beckhoff CU2508 with cable redundancy.</span></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);">Dose the EcMaster support thos function? Could you please share us a eval version and user manual for the demo show.</span></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);">We know that the cable redundancy couldn't send to the customer for the eval. So we only need the eval version, and make a video to show. We don't send those eval file to this customer.</span></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);"><br></span></div>
+<div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋</div>
+<div>
+<div>
+<br>盟通科技 <br>
+</div>
+<div>Motrotech Technology<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>+86- 571- 56125098 （杭州）</div>
+<div>+886-2-25222206 （台北）</div>
+<div>+86-133-72551162</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" title="http://www.motrotech.com/" target="_blank"></a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=62653
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.07.2025 12:29:59 +00:00
+UpdatedAt=04.07.2025 12:29:59 +00:00
+
+### ARTICLE01_SUBJECT
+About a potential customer Goldwind requirement for the CU2508 and cable redundancy
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>Here ist V3.2.3.02 Eval for <span style="color: rgb(31, 73, 125);">CU2508</span>
+</div><div>
+<div><a href="https://downloads.acontis.com/temp/2025/7-4/EC-Master-V3.2-Linux-x86_64Bit-Eval.tar.gz" title="https://downloads.acontis.com/temp/2025/7-4/EC-Master-V3.2-Linux-x86_64Bit-Eval.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/temp/2025/7-4/EC-Master-V3.2-Linux-x86_64Bit-Eval.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/temp/2025/7-4/EC-RtEth-Multiplier-V3.2.3.02-Linux-x86_64Bit-Eval.tar.gz" title="https://downloads.acontis.com/temp/2025/7-4/EC-RtEth-Multiplier-V3.2.3.02-Linux-x86_64Bit-Eval.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/temp/2025/7-4/EC-RtEth-Multiplier-V3.2.3.02-Linux-x86_64Bit-Eval.tar.gz</a></div>
+</div><div><br></div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/emllmultiplier.html#emllmultiplier--page-root" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/emllmultiplier.html#emllmultiplier--page-root" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/emllmultiplier.html#emllmultiplier--page-root</a></div></div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, July 4, 2025 at 12:54:48 PM, John Zhang wrote:<br><br><div style="color: #1f497d;">
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);">Dear,</span></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);">Recently, the potential customer Goldwind send us a IPC, and ask us to building a demo show for support the beckhoff CU2508 with cable redundancy.</span></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);">Dose the EcMaster support thos function? Could you please share us a eval version and user manual for the demo show.</span></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);">We know that the cable redundancy couldn't send to the customer for the eval. So we only need the eval version, and make a video to show. We don't send those eval file to this customer.</span></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);"><br></span></div>
+<div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋</div>
+<div>
+<div>
+<br>盟通科技 <br>
+</div>
+<div>Motrotech Technology<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>+86- 571- 56125098 （杭州）</div>
+<div>+886-2-25222206 （台北）</div>
+<div>+86-133-72551162</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" title="http://www.motrotech.com/" target="_blank"></a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

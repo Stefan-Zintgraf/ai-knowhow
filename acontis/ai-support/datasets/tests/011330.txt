@@ -1,0 +1,143 @@
+### HEADER
+Id=11330
+Link=http://at-zammad/#ticket/zoom/11330
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=7011330
+Owner=m.danilau@acontis.com (ID=4, FirstName=Maksim, LastName=Danilau)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=02.09.2025 01:09:13 +00:00
+UpdatedAt=05.09.2025 06:45:45 +00:00
+CloseAt=05.09.2025 06:45:43 +00:00
+ArticlesCount=3
+
+### TITLE
+The potential customer requirement for imx6
+
+### ARTICLE00_HEADER
+Id=65321
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.09.2025 01:09:13 +00:00
+UpdatedAt=02.09.2025 01:09:18 +00:00
+
+### ARTICLE00_SUBJECT
+The potential customer requirement for imx6
+
+### ARTICLE00_BODY
+<div style="color: #1f497d;">
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);">Dear,</span></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);">Recently, We receive a potential customer requirement about imx6.</span></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);">We know that the imx8 could bind with uid for protected the EcMaster. Dose the imx6 support the bind with uid, or imx6 only could bind with ethernet adapter MAC address?</span></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);"><br></span></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);"><br></span></div>
+<div><div>
+<div>-------------------------------------------------------------------------------------------------------------</div>
+<div>张晓朋</div>
+<div><img src="/api/v1/ticket_attachment/11330/65321/271902?view=inline" style="max-width:100%;width:596px;max-height:288px;"></div>
+<div> </div>
+<div>
+<div><span><span style=" background-color: rgb(255, 255, 255); color: rgba(0, 0, 0, 0.9);">2025 STM32研讨会</span><span style=" background-color: rgb(255, 255, 255);">，9月11日—北京、9月17日—上海，期待与您见面！</span></span></div>
+<div> </div>
+</div>
+<div>盟通科技<br>
+</div>
+<div>Motrotech Technology<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div> <span style=" background-color: rgb(255, 255, 255);">+86-</span>571- 56125098 （杭州）</div>
+<div>+886-2-25222206 （台北）</div>
+<div> </div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+</div></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=65455
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=04.09.2025 15:57:41 +00:00
+UpdatedAt=04.09.2025 15:57:41 +00:00
+
+### ARTICLE01_BODY
+<div>Es sollte efuse bei imx6 geben:</div><a href="http://at-dev-git/ec-embedded/ec-embedded/-/issues/1573" title="http://at-dev-git/ec-embedded/ec-embedded/-/issues/1573" rel="nofollow noreferrer noopener" target="_blank">http://at-dev-git/ec-embedded/ec-embedded/-/issues/1573</a><div><br></div><div>Könntest du bitte die doku checken und ihm beantworten.</div><div><br></div><div>Danke!</div><div>Cyril</div>
+
+### ARTICLE02_HEADER
+Id=65461
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.09.2025 06:45:43 +00:00
+UpdatedAt=05.09.2025 06:45:45 +00:00
+
+### ARTICLE02_SUBJECT
+The potential customer requirement for imx6
+
+### ARTICLE02_BODY
+Dear John Zang,<div><br></div><div>yes, i.MX6 has unique ID feature and yes, we use it in EC-Master.</div><div><br></div><div>
+<div>Best regards,</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Maksim Danilau, M.Sc.</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Dienstag, 2. September 2025 um 03:09:13, schrieb John Zhang:<br><br><div style="color: #1f497d;">
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);">Dear,</span></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);">Recently, We receive a potential customer requirement about imx6.</span></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);">We know that the imx8 could bind with uid for protected the EcMaster. Dose the imx6 support the bind with uid, or imx6 only could bind with ethernet adapter MAC address?</span></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);"><br></span></div>
+<div style=" color: rgb(31, 73, 125);"><span style="color: rgb(31, 73, 125);"><br></span></div>
+<div><div>
+<div>-------------------------------------------------------------------------------------------------------------</div>
+<div>张晓朋</div>
+<div><img src="/api/v1/ticket_attachment/11330/65461/272545?view=inline" style="max-width:100%;max-width:100%;width:596px;max-height:288px;"></div>
+<div> </div>
+<div>
+<div><span><span style=" background-color: rgb(255, 255, 255); color: rgba(0, 0, 0, 0.9);">2025 STM32研讨会</span><span style=" background-color: rgb(255, 255, 255);">，9月11日—北京、9月17日—上海，期待与您见面！</span></span></div>
+<div> </div>
+</div>
+<div>盟通科技<br>
+</div>
+<div>Motrotech Technology<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div> <span style=" background-color: rgb(255, 255, 255);">+86-</span>571- 56125098 （杭州）</div>
+<div>+886-2-25222206 （台北）</div>
+<div> </div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+</div></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

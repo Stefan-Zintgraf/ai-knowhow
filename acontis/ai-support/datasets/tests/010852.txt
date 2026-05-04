@@ -1,0 +1,73 @@
+### HEADER
+Id=10852
+Link=http://at-zammad/#ticket/zoom/10852
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Sipro (ID=537, Number=0, Country=IT)
+Commission=Sipro, SIAX XPC (ID=236, Number=236)
+Number=7010852
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=alessandro.diflumeri@sipro.vr.it (ID=164, FirstName=Alessandro, LastName=Di Flumeri)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=24.06.2025 12:01:42 +00:00
+UpdatedAt=11.07.2025 09:02:28 +00:00
+CloseAt=02.07.2025 06:00:39 +00:00
+ArticlesCount=2
+
+### TITLE
+Acontis software update request from Sipro SRL
+
+### ARTICLE00_HEADER
+Id=62158
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.06.2025 12:01:42 +00:00
+UpdatedAt=24.06.2025 12:01:44 +00:00
+
+### ARTICLE00_SUBJECT
+Acontis software update request from Sipro SRL
+
+### ARTICLE00_BODY
+<p>Dear Mr./Ms. Di Flumeri,</p><p>thank you for your registration.<br><br></p><p>First Name: Alessandro<br>Last Name: Di Flumeri<br>Company: Sipro SRL<br><span>Commission Number: <br></span><span>Country: Italia<br></span><span>City: Verona<br></span><span>E-Mail: alessandro.diflumeri@sipro.vr.it<br></span>Product: <span>EC-Master,EC-Engineer<br></span>Update Type: Upgrade (newest API)<br><span>Operating System Version: Windows 11 (Ec-Engineer) - RTX (Ec-Master)<br></span>Additional information: </p><p><img src="/api/v1/ticket_attachment/10852/62158/257958?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/10852/62158/257957?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=62172
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.06.2025 13:54:30 +00:00
+UpdatedAt=24.06.2025 13:54:33 +00:00
+
+### ARTICLE01_SUBJECT
+Acontis software update request from Sipro SRL
+
+### ARTICLE01_BODY
+<div>Dear Customer,</div><div><br></div><div>please find your new software version below:</div><div><br></div><div><a href="https://downloads.acontis.com/2025/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.3.01/EC-Master-ClassA-AddOn-V3.2.3.01-RTX64-x86_64Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2025/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.3.01/EC-Master-ClassA-AddOn-V3.2.3.01-RTX64-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.3.01/EC-Master-ClassA-AddOn-V3.2.3.01-RTX64-x86_64Bit-SDK_Protected.zip</a></div><div><a href="https://downloads.acontis.com/2025/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.3.01/EC-Master-V3.2.3.01-RTX64-x86_64Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2025/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.3.01/EC-Master-V3.2.3.01-RTX64-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.3.01/EC-Master-V3.2.3.01-RTX64-x86_64Bit-SDK_Protected.zip</a></div><div><a href="https://downloads.acontis.com/2025/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.3.01/EC-RtEth-IntelGbe-V3.2.3.01-RTX64-x86_64Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2025/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.3.01/EC-RtEth-IntelGbe-V3.2.3.01-RTX64-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/S/Sipro_(40386)(IT)/EC-Master_RTX_x86_64Bit/3.2.3.01/EC-RtEth-IntelGbe-V3.2.3.01-RTX64-x86_64Bit-SDK_Protected.zip</a></div><div><a href="https://downloads.acontis.com/2025/S/Sipro_(40386)(IT)/EC-Engineer/4.0.6/EC-Engineer_Dongle_V4.0.6.zip" title="https://downloads.acontis.com/2025/S/Sipro_(40386)(IT)/EC-Engineer/4.0.6/EC-Engineer_Dongle_V4.0.6.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/S/Sipro_(40386)(IT)/EC-Engineer/4.0.6/EC-Engineer_Dongle_V4.0.6.zip</a></div><div><br></div><div>Password: ECM88250</div><div><br></div><div><span>Best Regards,</span></div><div>Timo Nussbaumer</div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Tuesday, June 24, 2025 at 2:01:42 PM, sales acontis wrote:<br><br><p>Dear Mr./Ms. Di Flumeri,</p>
+<p>thank you for your registration.<br><br></p>
+<p>First Name: Alessandro<br>Last Name: Di Flumeri<br>Company: Sipro SRL<br><span>Commission Number: <br></span><span>Country: Italia<br></span><span>City: Verona<br></span><span>E-Mail: alessandro.diflumeri@sipro.vr.it<br></span>Product: <span>EC-Master,EC-Engineer<br></span>Update Type: Upgrade (newest API)<br><span>Operating System Version: Windows 11 (Ec-Engineer) - RTX (Ec-Master)<br></span>Additional information: </p>
+<p><img src="/api/v1/ticket_attachment/10852/62172/258002?view=inline" alt="" style="max-width:100%;max-width:100%;width:163px;max-height:85px;"></p>
+<p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/10852/62172/258003?view=inline" style="max-width:100%;max-width:100%;width:22px;max-height:22px;"></a></span></p>
+<br>
+</blockquote></div><div><br></div><br><br>

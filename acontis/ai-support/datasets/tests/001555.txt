@@ -1,0 +1,142 @@
+### HEADER
+Id=1555
+Link=http://at-zammad/#ticket/zoom/1555
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=Omron Automation Americas, PPMAC (ID=562, Number=562)
+Number=701555
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=farooq.ahmad@omron.com (ID=233, FirstName=Farooq, LastName=Ahmad)
+CreatedBy=farooq.ahmad@omron.com (ID=233, FirstName=Farooq, LastName=Ahmad)
+Type=
+TimeUnit=
+CreatedAt=06.10.2021 00:33:27 +00:00
+UpdatedAt=25.04.2022 12:36:19 +00:00
+CloseAt=29.10.2021 06:08:53 +00:00
+ArticlesCount=2
+
+### TITLE
+Two questions regarding ECAT SDO command
+
+### ARTICLE00_HEADER
+Id=8427
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.10.2021 00:33:27 +00:00
+UpdatedAt=06.10.2021 00:33:31 +00:00
+
+### ARTICLE00_SUBJECT
+Two questions regarding ECAT SDO command
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Cyril,</p>
+<p> </p>
+<p>Two of our big customers have come across following problems and we need your input:</p>
+<p> </p>
+<p>1. Can emCoeSdoUpload be safely called from different thread while EcMasterJobTask is in cyclic operation and PDO's are occurring? We have always discouraged this but we think that our end user has created this situation and we are wondering if it will cause problems.</p>
+<p> </p>
+<p>The manual says “this function may not be called from within the JobTask’s context”. Does this mean do not the function while JobTask is executing or do not call from within the JobTask thread.</p>
+<p> </p>
+<p>2. This comes from our colleagues in Japan.</p>
+<p> </p>
+<p>Does the EC Master stack have a retransmission frame mechanism if the frame with CRC error returns?</p>
+<p>The return frame of some emCoeSdoUpload and PDO frames have a CRC error</p>
+<p>– No.745 frame has a CRC error of emCoeSdoUpload</p>
+<p>• A retransmission frame seems transmitted after 20ms but the source address is different, so I wonder who sent this frame (=No.902)</p>
+<p>– No.745 source address: 02 00 0a bc 08 d8</p>
+<p>– No.902 source address: 02 01 0a bc 08 d8</p>
+<p> </p>
+<table cellpadding="0" cellspacing="0" align="left">
+<tbody>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><img style="max-width:100%;width:9.2333in;max-height:1.4in;width:886px;max-height:134px;" src="/api/v1/ticket_attachment/1555/8427/34026?view=inline"></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<br>
+<p> <img style="max-width:100%;width:4.5083in;max-height:.4666in;width:433px;max-height:45px;" src="/api/v1/ticket_attachment/1555/8427/34027?view=inline" alt="signature_1559069281"></p>
+<p>Farooq Ahmad</p>
+<p>Principal Firmware Engineer</p>
+<p>Direct: 818.717.5667 | farooq.ahmad@omron.com</p>
+<p> </p>
+<p>Omron Automation Americas</p>
+<p>9200 Oakdale Ave. Suite 900, Chatsworth, CA 91311</p>
+<p><a href="https://bit.ly/3dz9EH3" title="https://automation.omron.com/en/us/" rel="nofollow noreferrer noopener" target="_blank">automation.omron.com</a></p>
+<p> </p>
+<p><a href="https://bit.ly/3szOY5T" title="https://www.linkedin.com/company/omron-automation-americas/" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;width:.325in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/1555/8427/34028?view=inline" alt="signature_1593825543"></a><a href="https://bit.ly/3vh2lKb" rel="nofollow noreferrer noopener" title="https://bit.ly/3vh2lKb" target="_blank"><img border="0" style="max-width:100%;width:.25in;max-height:.25in;width:24px;max-height:24px;" src="/api/v1/ticket_attachment/1555/8427/34029?view=inline" alt="signature_48633699"></a><a href="https://bit.ly/3n2AOt1" title="https://www.instagram.com/omronautomation" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;width:.325in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/1555/8427/34030?view=inline" alt="signature_1432883732"></a><a href="https://bit.ly/3ehqxF3" title="https://twitter.com/OmronAutomation" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;width:.2916in;max-height:.25in;width:28px;max-height:24px;" src="/api/v1/ticket_attachment/1555/8427/34031?view=inline" alt="signature_1894500672"></a><a href="https://bit.ly/3n3lgoL" title="http://www.youtube.com/OmronAutomationTech" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;width:.3666in;max-height:.25in;width:35px;max-height:24px;" src="/api/v1/ticket_attachment/1555/8427/34032?view=inline" alt="signature_1099395179"></a></p>
+<p> </p>
+<p><i>This is a confidential message. If received in error, delete it and notify the sender.</i> </p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=8477
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.10.2021 07:11:15 +00:00
+UpdatedAt=07.10.2021 07:11:19 +00:00
+
+### ARTICLE01_SUBJECT
+Two questions regarding ECAT SDO command
+
+### ARTICLE01_BODY
+<div>Hi Farooq,</div><div><br></div><div>please find my answer below.</div><div><br></div><div>Best  Regards,</div><div>Cyril<br><br>
+</div><div><blockquote type="cite">On Wednesday, October 6, 2021, 2:33:27 AM, farooq.ahmad@omron.com wrote:<br><br><div>
+<p>Dear Cyril,</p>
+<p> </p>
+<p>Two of our big customers have come across following problems and we need your input:</p>
+<p> </p>
+<p>1. Can emCoeSdoUpload be safely called from different thread while EcMasterJobTask is in cyclic operation and PDO's are occurring? We have always discouraged this but we think that our end user has created this situation and we are wondering if it will cause problems.</p>
+<p> </p>
+<p>The manual says “this function may not be called from within the JobTask’s context”. Does this mean do not the function while JobTask is executing or do not call from within the JobTask thread.</p>
+<p>[CER] The function emCoeSdoUpload is blocking until the transfer is done, but the transfer is processed within the jobs. If this function is called in the context of the job task, it will produce a dead lock situation.</p>
+<p> </p>
+<p>2. This comes from our colleagues in Japan.</p>
+<p> </p>
+<p>Does the EC Master stack have a retransmission frame mechanism if the frame with CRC error returns?</p>
+<p>[CER] Yes</p>
+<p>The return frame of some emCoeSdoUpload and PDO frames have a CRC error</p>
+<p>– No.745 frame has a CRC error of emCoeSdoUpload</p>
+<p>• A retransmission frame seems transmitted after 20ms but the source address is different, so I wonder who sent this frame (=No.902)</p>
+<p>– No.745 source address: 02 00 0a bc 08 d8</p>
+<p>– No.902 source address: 02 01 0a bc 08 d8</p>
+<p> </p>
+<table cellpadding="0" cellspacing="0" align="left">
+<tbody>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><img style="max-width:100%;max-width:100%;width:9.2333in;max-height:1.4in;width:886px;max-height:134px;" src="/api/v1/ticket_attachment/1555/8477/34172?view=inline"></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+[CER] After an acyclic frame is considered as lost. EC-Master will resend it. To protect against an eventual false positive decision, the retransmit frame is marked with a different MAC.<br>
+<p> <img style="max-width:100%;max-width:100%;width:4.5083in;max-height:.4666in;width:433px;max-height:45px;" src="/api/v1/ticket_attachment/1555/8477/34173?view=inline" alt="signature_1559069281"></p>
+<p>Farooq Ahmad</p>
+<p>Principal Firmware Engineer</p>
+<p>Direct: 818.717.5667 | farooq.ahmad@omron.com</p>
+<p> </p>
+<p>Omron Automation Americas</p>
+<p>9200 Oakdale Ave. Suite 900, Chatsworth, CA 91311</p>
+<p><a href="https://bit.ly/3dz9EH3" title="https://automation.omron.com/en/us/" rel="nofollow noreferrer noopener" target="_blank">automation.omron.com</a></p>
+<p> </p>
+<p><a href="https://bit.ly/3szOY5T" title="https://www.linkedin.com/company/omron-automation-americas/" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.325in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/1555/8477/34174?view=inline" alt="signature_1593825543"></a><a href="https://bit.ly/3vh2lKb" rel="nofollow noreferrer noopener" title="https://bit.ly/3vh2lKb" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.25in;max-height:.25in;width:24px;max-height:24px;" src="/api/v1/ticket_attachment/1555/8477/34175?view=inline" alt="signature_48633699"></a><a href="https://bit.ly/3n2AOt1" title="https://www.instagram.com/omronautomation" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.325in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/1555/8477/34176?view=inline" alt="signature_1432883732"></a><a href="https://bit.ly/3ehqxF3" title="https://twitter.com/OmronAutomation" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.2916in;max-height:.25in;width:28px;max-height:24px;" src="/api/v1/ticket_attachment/1555/8477/34177?view=inline" alt="signature_1894500672"></a><a href="https://bit.ly/3n3lgoL" title="http://www.youtube.com/OmronAutomationTech" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.3666in;max-height:.25in;width:35px;max-height:24px;" src="/api/v1/ticket_attachment/1555/8477/34178?view=inline" alt="signature_1099395179"></a></p>
+<p> </p>
+<p><i>This is a confidential message. If received in error, delete it and notify the sender.</i> </p>
+<p> </p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

@@ -1,0 +1,185 @@
+### HEADER
+Id=6063
+Link=http://at-zammad/#ticket/zoom/6063
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=706063
+Owner=m.danilau@acontis.com (ID=4, FirstName=Maksim, LastName=Danilau)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=28.07.2023 10:37:26 +00:00
+UpdatedAt=16.10.2023 06:13:47 +00:00
+CloseAt=16.10.2023 06:13:47 +00:00
+ArticlesCount=9
+
+### TITLE
+The potential customer requirement about ECMaster for ucos
+
+### ARTICLE00_HEADER
+Id=32391
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.07.2023 10:37:26 +00:00
+UpdatedAt=28.07.2023 10:37:28 +00:00
+
+### ARTICLE00_SUBJECT
+The potential customer requirement about ECMaster for ucos
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>The potential customer plan to using ECMaster for zynq MPSoC, Because the MPSoC can't be protected, We suggest them to using intel/realtek network adapter.</div>
+<div>But they change the OS as ucos3. Do you think it could be ported with intel adapter? And how much the time and cost if possiable?</div>
+<div> </div>
+<div>
+<div><img border="0" src="/api/v1/ticket_attachment/6063/32391/134998?view=inline" style="max-width:100%;width:537.6px;max-height:97.6px;"></div>
+<div> 2023.8.23-26 台北国际自动化工业展 南港展览馆一馆L405<i> 期待与您见面！</i>
+</div>
+<div> </div>
+<div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.:+86-010-62740270 (北京）<div>0571- 56125098 （杭州）</div>
+</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=32403
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=28.07.2023 14:30:25 +00:00
+UpdatedAt=28.07.2023 14:30:25 +00:00
+
+### ARTICLE01_BODY
+Hallo Maksim,<div><br></div><div>Kannst du es dir kurz anschauen. Wir haben folgende Evalboards hier:<div><div><a href="https://www.xilinx.com/products/boards-and-kits/zcu104.html" title="https://www.xilinx.com/products/boards-and-kits/zcu104.html" rel="nofollow noreferrer noopener" target="_blank">https://www.xilinx.com/products/boards-and-kits/zcu104.html</a></div></div>
+<div><div><a href="https://www.xilinx.com/products/som/kria/kr260-robotics-starter-kit.html" title="https://www.xilinx.com/products/som/kria/kr260-robotics-starter-kit.html" rel="nofollow noreferrer noopener" target="_blank">https://www.xilinx.com/products/som/kria/kr260-robotics-starter-kit.html</a></div></div>
+<div><br></div>
+<div><span>läuft ucos3 auf diesen Boards überhaupt?</span></div>
+<div><span><br></span></div>
+<div>
+<span>Auf die schnelle können Sie sehen kein PCI. Gibt es andere Evalboards mit PCI wo ucos3 läuft?</span><br>
+</div>
+</div><div><br></div><div>Danke,</div><div>Cyril</div>
+
+### ARTICLE02_HEADER
+Id=32421
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=31.07.2023 06:46:56 +00:00
+UpdatedAt=31.07.2023 06:46:56 +00:00
+
+### ARTICLE02_BODY
+<div>&gt; <span>Auf die schnelle können Sie sehen kein PCI.</span><span> </span>
+</div><div><span><br></span></div>Xilinx UltraScale+ hat einen PCI express Kontroller OnBoard:<div>
+<img style="max-width:100%;width: 678px;max-width: 100%;" src="/api/v1/ticket_attachment/6063/32421/135190?view=inline"><br>
+</div><div><br></div><div>Also, <b>rein theoretisch</b>, kann man ein PCI-e Board anschließen.</div><div><br></div><div>&gt; läuft ucos3 auf diesen Boards überhaupt?<br>
+</div><div><br></div><div>Laut dem <span>µC/OS-III Hersteller nicht, bzw. noch nicht:</span>
+</div><div><span><br></span></div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/6063/32421/135191?view=inline"><span><br></span>
+</div><div><br></div><div>&gt; <span>Gibt es andere Evalboards mit PCI wo ucos3 läuft?</span>
+</div><div><span>Xilinx UltraScale+ oder allgemein?</span></div><div><br></div>
+
+### ARTICLE03_HEADER
+Id=32422
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=31.07.2023 06:53:26 +00:00
+UpdatedAt=31.07.2023 06:53:26 +00:00
+
+### ARTICLE03_BODY
+Eine Liste der bereits vorhandenen Ports (<a href="https://github.com/weston-embedded/uC-OS3/tree/develop/Ports" title="https://github.com/weston-embedded/uC-OS3/tree/develop/Ports" rel="nofollow noreferrer noopener" target="_blank">https://github.com/weston-embedded/uC-OS3/tree/develop/Ports</a>)<span>:</span><br><div>
+<img style="max-width:100%;width: 270px;max-width: 100%;" src="/api/v1/ticket_attachment/6063/32422/135192?view=inline"><br>
+</div><div><br></div><div>Xilinx ist nicht dabei.</div><div><br></div>
+
+### ARTICLE04_HEADER
+Id=32423
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=31.07.2023 07:25:42 +00:00
+UpdatedAt=31.07.2023 07:25:42 +00:00
+
+### ARTICLE04_BODY
+Xilinx UltraScale+ hat Cortex-A53 und Cortex-R5, also man kann versuchen, die 'ARM-Cortex-A' ode 'ARM-Cortex-R' Ports versuchen.
+
+### ARTICLE05_HEADER
+Id=32424
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=31.07.2023 07:28:52 +00:00
+UpdatedAt=31.07.2023 07:28:52 +00:00
+
+### ARTICLE05_BODY
+Zum Thema 'Protection': Jedes Xilinx Device hat ein 'Unique ID' = DNA<div><br></div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/6063/32424/135193?view=inline"><br>
+</div>
+
+### ARTICLE06_HEADER
+Id=33359
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.08.2023 00:02:06 +00:00
+UpdatedAt=27.08.2023 00:02:07 +00:00
+
+### ARTICLE06_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE06_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".
+
+### ARTICLE07_HEADER
+Id=34319
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.09.2023 00:02:23 +00:00
+UpdatedAt=17.09.2023 00:02:27 +00:00
+
+### ARTICLE07_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE07_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".
+
+### ARTICLE08_HEADER
+Id=35126
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.10.2023 00:04:32 +00:00
+UpdatedAt=08.10.2023 00:04:36 +00:00
+
+### ARTICLE08_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE08_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".

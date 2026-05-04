@@ -1,0 +1,210 @@
+### HEADER
+Id=8764
+Link=http://at-zammad/#ticket/zoom/8764
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Fuji Machine MFG, Chip Mounter (ID=258, Number=258)
+Number=708764
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=30.08.2024 07:01:58 +00:00
+UpdatedAt=13.09.2024 09:59:30 +00:00
+CloseAt=13.09.2024 09:59:30 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Master (FUJI)
+
+### ARTICLE00_HEADER
+Id=49236
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=30.08.2024 07:01:59 +00:00
+UpdatedAt=30.08.2024 07:02:04 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master (FUJI)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master (FUJI)
+
+Please respond to the inquiries listed in the attached file.
+
+Best regards,
+Takuya Fujikawa
+
+### ARTICLE01_HEADER
+Id=49239
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.08.2024 07:35:17 +00:00
+UpdatedAt=30.08.2024 07:35:19 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master (FUJI)
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>I assume this ticket is related to the commission 41047</div><div><br></div><div>please find attached the history file of V2.7. I don't see any fix related to the current issue during the 2 years covered by this version.</div><div><br></div><div>Can they reproduce the issue at their office? With the unmodified EcMasterDemo? We should understand if the error is related to some timing  or logic. <span>We could provide the Windows version to generate logs and fix the issue.</span>
+</div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, August 30, 2024 at 9:01:59 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master (FUJI)</div>
+<div><br></div>
+<div>Please respond to the inquiries listed in the attached file.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=49356
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=03.09.2024 08:37:18 +00:00
+UpdatedAt=03.09.2024 08:37:18 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master (FUJI) [Ticket#708764]
+
+### ARTICLE02_BODY
+Dear Cyril san
+
+Could you provide us with the entire revision history for V2.7 since the time it was provided to them?
+
+Best regards,
+Takuya Fujikawa
+
+
+
+On 2024/08/30 16:35, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+>
+> I assume this ticket is related to the commission 41047
+>
+> please find attached the history file of V2.7. I don't see any fix related to the current issue during the 2 years covered by this version.
+>
+> Can they reproduce the issue at their office? With the unmodified EcMasterDemo? We should understand if the error is related to some timing  or logic. We could provide the Windows version to generate logs and fix the issue.
+>
+> Best Regards,
+> __________________________________________________________________________________________
+> Cyril Eyssautier
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+>
+>
+>> On Friday, August 30, 2024 at 9:01:59 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Master (FUJI)
+>>
+>> Please respond to the inquiries listed in the attached file.
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+>
+>
+>
+
+
+### ARTICLE03_HEADER
+Id=49361
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.09.2024 08:44:08 +00:00
+UpdatedAt=03.09.2024 08:44:12 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master (FUJI)
+
+### ARTICLE03_BODY
+Hi Takuyua,<div><br></div><div>the provided file contains the history since V2.7.2.03 they received on 2015-04-21.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>Cyril</span><br>
+</div>
+<div><br></div>
+</div>
+<div><blockquote type="cite">On Tuesday, September 3, 2024 at 10:37:18 AM, Takuya Fujikawa wrote:<br><br><div>Dear Cyril san</div>
+<div><br></div>
+<div>Could you provide us with the entire revision history for V2.7 since the time it was provided to them?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2024/08/30 16:35, Cyril Eyssautier via EC-Support wrote:</div>
+<div>&gt; Hi Takuya,</div>
+<div>&gt;</div>
+<div>&gt; I assume this ticket is related to the commission 41047</div>
+<div>&gt;</div>
+<div>&gt; please find attached the history file of V2.7. I don't see any fix related to the current issue during the 2 years covered by this version.</div>
+<div>&gt;</div>
+<div>&gt; Can they reproduce the issue at their office? With the unmodified EcMasterDemo? We should understand if the error is related to some timing  or logic. We could provide the Windows version to generate logs and fix the issue.</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Cyril Eyssautier</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Friday, August 30, 2024 at 9:01:59 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Master (FUJI)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Please respond to the inquiries listed in the attached file.</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

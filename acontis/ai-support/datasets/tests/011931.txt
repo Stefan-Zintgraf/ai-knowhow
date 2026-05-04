@@ -1,0 +1,143 @@
+### HEADER
+Id=11931
+Link=http://at-zammad/#ticket/zoom/11931
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=7011931
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=20.11.2025 13:08:46 +00:00
+UpdatedAt=26.11.2025 07:03:54 +00:00
+CloseAt=26.11.2025 07:03:54 +00:00
+ArticlesCount=2
+
+### TITLE
+The shown address is incorrect (PNo,236)
+
+### ARTICLE00_HEADER
+Id=68841
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.11.2025 13:08:46 +00:00
+UpdatedAt=20.11.2025 13:08:49 +00:00
+
+### ARTICLE00_SUBJECT
+The shown address is incorrect (PNo,236)
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi Support Team</div><div dir="ltr">
+<br>
+</div><div>This is from Mitsubishi (commission No. 40627).</div><div>EC-Engineer V.3.9.16</div><div dir="ltr">
+<br>
+</div><div dir="ltr">The Slave Address in the message “Missing or invalid copy link in cycle found: slave ‘1001’ has LRW disabled.” displayed during “In Cycle” for “Slave to Slave” is sometimes incorrect.</div><div dir="ltr">Reproduction steps are the below.</div><div dir="ltr">
+<br>
+</div><div dir="ltr">1. Add two Slaves (e.g., EP7211-0035).</div><div>2. Select the first Slave (1001) and ensure the “Disable LRW” checkbox is unchecked in “Advanced Option”.</div><div>3. Select the second Slave (1002) and check the “Disable LRW” box in “Advanced Option”.</div><div>4. Select the Master and configure the PDOs for both Slaves under “Slave to Slave” &gt; “In Cycle”. (Set Slave 1001 on the Inputs side and Slave 1002 on the Outputs side).</div><div dir="ltr">
+<br>
+</div><div>Result: The Messages window displays the following message, but the address is incorrect. (It should correctly be 1002, which has the “Disable LRW” checkbox selected.)</div><div>“Missing or invalid copy link in cycle found: slave ‘1001’ has LRW disabled.”</div><div dir="ltr">
+<br>
+</div><div dir="ltr">Please refer the attached PDF.</div><div dir="ltr">
+<br>
+</div><div dir="ltr">Best regards,</div><div dir="ltr">Yuichi</div><div dir="ltr">
+<br>
+</div><div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span style=" background-color: rgb(255, 255, 255);"><br>
+</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=68900
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.11.2025 11:07:29 +00:00
+UpdatedAt=21.11.2025 11:07:33 +00:00
+
+### ARTICLE01_SUBJECT
+The shown address is incorrect (PNo,236)
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes, this is a bug. The suggested solution is correct. It will be fixed in the next version.</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, November 20, 2025 at 2:08:46 PM, Yuichi Ide wrote:<br><br><div dir="ltr">Hi Support Team</div>
+<div dir="ltr">
+<br>
+</div>
+<div>This is from Mitsubishi (commission No. 40627).</div>
+<div>EC-Engineer V.3.9.16</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">The Slave Address in the message “Missing or invalid copy link in cycle found: slave ‘1001’ has LRW disabled.” displayed during “In Cycle” for “Slave to Slave” is sometimes incorrect.</div>
+<div dir="ltr">Reproduction steps are the below.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">1. Add two Slaves (e.g., EP7211-0035).</div>
+<div>2. Select the first Slave (1001) and ensure the “Disable LRW” checkbox is unchecked in “Advanced Option”.</div>
+<div>3. Select the second Slave (1002) and check the “Disable LRW” box in “Advanced Option”.</div>
+<div>4. Select the Master and configure the PDOs for both Slaves under “Slave to Slave” &gt; “In Cycle”. (Set Slave 1001 on the Inputs side and Slave 1002 on the Outputs side).</div>
+<div dir="ltr">
+<br>
+</div>
+<div>Result: The Messages window displays the following message, but the address is incorrect. (It should correctly be 1002, which has the “Disable LRW” checkbox selected.)</div>
+<div>“Missing or invalid copy link in cycle found: slave ‘1001’ has LRW disabled.”</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Please refer the attached PDF.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Best regards,</div>
+<div dir="ltr">Yuichi</div>
+<div dir="ltr">
+<br>
+</div>
+<div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span style=" background-color: rgb(255, 255, 255);"><br>
+</span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

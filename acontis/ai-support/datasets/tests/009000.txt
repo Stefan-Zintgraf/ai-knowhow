@@ -1,0 +1,108 @@
+### HEADER
+Id=9000
+Link=http://at-zammad/#ticket/zoom/9000
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=none
+Commission=Acontis, Generic (ID=590, Number=590)
+Number=709000
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=salvador.crespo@external.insudpharma.com (ID=2875, FirstName=Salvador, LastName=Crespo Robles)
+CreatedBy=salvador.crespo@external.insudpharma.com (ID=2875, FirstName=Salvador, LastName=Crespo Robles)
+Type=
+TimeUnit=
+CreatedAt=04.10.2024 09:01:49 +00:00
+UpdatedAt=07.10.2024 07:04:16 +00:00
+CloseAt=07.10.2024 07:04:16 +00:00
+ArticlesCount=2
+
+### TITLE
+Ethercat Bus Chemo Spain
+
+### ARTICLE00_HEADER
+Id=50921
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.10.2024 09:01:49 +00:00
+UpdatedAt=04.10.2024 09:01:49 +00:00
+
+### ARTICLE00_SUBJECT
+Ethercat Bus Chemo Spain
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="ES"><p> </p></span></p>
+<p><span lang="ES"><p> </p></span></p>
+<p><span lang="ES">Hi,</span></p>
+<p><span lang="ES"><p> </p></span></p>
+<p><span lang="ES"><p> </p></span></p>
+<p>I´m looking for a solution that let me to read variables(digital signal form remote IO) in the Ehercat Bus without configuring the actual ethercat bus. Do you have a solutions for me? I cannot reconfigure the actual project, I cannot do any modification on the PLC, I only want read variables on the Ethercat Bus</p>
+<p> </p>
+<p>Waiting for your response,</p>
+<p> </p>
+<p>Kind regards,</p>
+<p> </p>
+<p>Salvador Crespo</p>
+</div><br>
+<br>
+<i>Este correo electrónico (incluyendo los archivos adjuntos) se ha enviado en nombre de Insud Pharma, S.L, empresa registrada en España con CIF B-85212165 y que tiene su domicilio social en c/ Manuel Pombo Angulo, 28, 3ª planta, 28050, Madrid, España. <br>
+<br> De acuerdo con el artículo 13 del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos, les informamos que sus datos están incorporados en bases de datos titularidad de Insud Pharma, S.L. Asimismo, pueden ejercer sus derechos de acceso, rectificación, supresión y oposición, así como limitación del tratamiento, portabilidad o a no ser objeto de decisiones automatizadas, a través de la siguiente dirección dataprotection@insudpharma.com .<br>
+<br> This email (including any attachments) has been sent on behalf of Insud Pharma S.L, a company duly authorized and registered in Spain under identification number B-85212165 with registered office in c/ Manuel Pombo Angulo 28, 3rd floor, 28050, Madrid, Spain.<br>
+<br> In accordance with the article 13 of the Regulation (EU) 2016/679 of the European Parliament and of the council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, please be informed that your personal data are collected in a data base ownership of Insud Pharma S.L. Likewise, you may exercise your rights to access, rectify, erase and oppose, restrict data processing, data portability and not to be subject to automated decisions, contacting via email in the following email address dataprotection@insudpharma.com .<br>
+<br>
+</i>
+
+### ARTICLE01_HEADER
+Id=50957
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.10.2024 07:04:16 +00:00
+UpdatedAt=07.10.2024 07:04:18 +00:00
+
+### ARTICLE01_SUBJECT
+Ethercat Bus Chemo Spain
+
+### ARTICLE01_BODY
+<div data-signature="true" data-signature-id="2">
+<div>Ein EC-Monitor Kandidat</div>
+<div><br></div>
+<div>Grüße,</div>
+<div>Cyril</div>
+</div><br><div>---Begin forwarded message:---<br><br>
+</div><div><blockquote type="cite">
+<div>Subject: Ethercat Bus Chemo Spain<br>Date: 10/04/2024 11:01<br>From: Salvador Crespo Robles &lt;salvador.crespo@external.insudpharma.com&gt;<br>To: "ecsupport@acontis.com" &lt;ecsupport@acontis.com&gt;<br><br>
+</div>
+<div>
+<p><span lang="ES"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="ES"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="ES">Hi,</span></p>
+<p><span lang="ES"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="ES"></span></p>
+<p> </p>
+<p></p>
+<p>I´m looking for a solution that let me to read variables(digital signal form remote IO) in the Ehercat Bus without configuring the actual ethercat bus. Do you have a solutions for me? I cannot reconfigure the actual project, I cannot do any modification on the PLC, I only want read variables on the Ethercat Bus</p>
+<p> </p>
+<p>Waiting for your response,</p>
+<p> </p>
+<p>Kind regards,</p>
+<p> </p>
+<p>Salvador Crespo</p>
+</div>
+<br>
+<br>
+<i>Este correo electrónico (incluyendo los archivos adjuntos) se ha enviado en nombre de Insud Pharma, S.L, empresa registrada en España con CIF B-85212165 y que tiene su domicilio social en c/ Manuel Pombo Angulo, 28, 3ª planta, 28050, Madrid, España. <br>
+<br> De acuerdo con el artículo 13 del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos, les informamos que sus datos están incorporados en bases de datos titularidad de Insud Pharma, S.L. Asimismo, pueden ejercer sus derechos de acceso, rectificación, supresión y oposición, así como limitación del tratamiento, portabilidad o a no ser objeto de decisiones automatizadas, a través de la siguiente dirección dataprotection@insudpharma.com .<br>
+<br> This email (including any attachments) has been sent on behalf of Insud Pharma S.L, a company duly authorized and registered in Spain under identification number B-85212165 with registered office in c/ Manuel Pombo Angulo 28, 3rd floor, 28050, Madrid, Spain.<br>
+<br> In accordance with the article 13 of the Regulation (EU) 2016/679 of the European Parliament and of the council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, please be informed that your personal data are collected in a data base ownership of Insud Pharma S.L. Likewise, you may exercise your rights to access, rectify, erase and oppose, restrict data processing, data portability and not to be subject to automated decisions, contacting via email in the following email address dataprotection@insudpharma.com .<br>
+<br>
+</i>
+</blockquote></div><div><br></div><br><br>

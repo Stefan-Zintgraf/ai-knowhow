@@ -1,0 +1,180 @@
+### HEADER
+Id=5993
+Link=http://at-zammad/#ticket/zoom/5993
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=The Mathworks (ID=391, Number=40135, Country=US)
+Commission=The Mathworks, Simulink Real-Time (ID=463, Number=463)
+Number=705993
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=mtrujill@mathworks.com (ID=1318, FirstName=Marlon, LastName=Trujillo)
+CreatedBy=mtrujill@mathworks.com (ID=1318, FirstName=Marlon, LastName=Trujillo)
+Type=
+TimeUnit=
+CreatedAt=18.07.2023 19:40:30 +00:00
+UpdatedAt=19.07.2023 18:43:21 +00:00
+CloseAt=19.07.2023 13:00:42 +00:00
+ArticlesCount=3
+
+### TITLE
+EcMaster Demo vs Final Library we get after signing contract
+
+### ARTICLE00_HEADER
+Id=31961
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.07.2023 19:40:31 +00:00
+UpdatedAt=18.07.2023 19:40:34 +00:00
+
+### ARTICLE00_SUBJECT
+EcMaster Demo vs Final Library we get after signing contract
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Jon,</p>
+<p> </p>
+<p>We plan to sign the contract for the EcMaster in a couple of months but the approximation is that I will receive it in October. Receiving the library in October means that I have very little time to solve problems because it is close to the release date. My question is, is it guaranteed that the demo library we are using will have the same behavior as the one we will receive after signing the contract?</p>
+<p> </p>
+<p>The version I'm using for prototyping is attached to the email. Thank you!</p>
+<p> </p>
+<p>Marlon Trujillo (Simulink Real-Time)</p>
+<p><span style="color:#323130;">+1-508-647-0228</span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=31999
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.07.2023 13:00:42 +00:00
+UpdatedAt=19.07.2023 13:00:46 +00:00
+
+### ARTICLE01_SUBJECT
+EcMaster Demo vs Final Library we get after signing contract
+
+### ARTICLE01_BODY
+<div>Hi Marlon,</div><div><br></div><div>We can always deliver the same exact version to you after we sign the agreement, but we will also have a new version (V3.2) that was just released. So you would also be entitled to that new version and while the behavior will be the same, there are some new features. We can also provide this new version V3.2 to you as soon as it is available, most likely at the end of this month.<br>
+</div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Jon Waters</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +1-508-809-7200</div>
+<div>acontis technologies Inc.,  945 Concord Street, Framingham, MA 01701, United States, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Tuesday, July 18, 2023 at 3:40:31 PM, Marlon Trujillo wrote:<br><br><div>
+<p>Hi Jon,</p>
+<p> </p>
+<p>We plan to sign the contract for the EcMaster in a couple of months but the approximation is that I will receive it in October. Receiving the library in October means that I have very little time to solve problems because it is close to the release date. My question is, is it guaranteed that the demo library we are using will have the same behavior as the one we will receive after signing the contract?</p>
+<p> </p>
+<p>The version I'm using for prototyping is attached to the email. Thank you!</p>
+<p> </p>
+<p>Marlon Trujillo (Simulink Real-Time)</p>
+<p><span style="color:#323130;">+1-508-647-0228</span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=32001
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.07.2023 13:14:23 +00:00
+UpdatedAt=19.07.2023 13:14:23 +00:00
+
+### ARTICLE02_SUBJECT
+RE: EcMaster Demo vs Final Library we get after signing contract [Ticket#705993]
+
+### ARTICLE02_BODY
+<div>
+<p>Hi Jon,</p>
+<p> </p>
+<p>Thanks for confirming we can use the demo to prototype with confidence. I'd like to try the new version if it has improvements and bug fixes, as long as the final version behaves the same, the end of this month sounds good.</p>
+<p> </p>
+<p>Marlon Trujillo (Simulink Real-Time)</p>
+<p><span style="color:#323130;">+1-508-647-0228</span></p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Jon Waters via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Wednesday, July 19, 2023 9:01 AM<br>
+<b>To:</b> Marlon Trujillo &lt;mtrujill@mathworks.com&gt;<br>
+<b>Subject:</b> RE: EcMaster Demo vs Final Library we get after signing contract [Ticket#705993]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Hi Marlon,</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>We can always deliver the same exact version to you after we sign the agreement, but we will also have a new version (V3.2) that was just released. So you would also be entitled to that new version and while the behavior will be the same, there are some new features. We can also provide this new version V3.2 to you as soon as it is available, most likely at the end of this month.</p>
+</div>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Jon Waters</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +1-508-809-7200</p>
+</div>
+<div>
+<p>acontis technologies Inc., 945 Concord Street, Framingham, MA 01701, United States, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Tuesday, July 18, 2023 at 3:40:31 PM, Marlon Trujillo wrote:</p>
+<div>
+<p>Hi Jon,</p>
+<p> </p>
+<p>We plan to sign the contract for the EcMaster in a couple of months but the approximation is that I will receive it in October. Receiving the library in October means that I have very little time to solve problems because it is close to the release date. My question is, is it guaranteed that the demo library we are using will have the same behavior as the one we will receive after signing the contract?</p>
+<p> </p>
+<p>The version I'm using for prototyping is attached to the email. Thank you!</p>
+<p> </p>
+<p>Marlon Trujillo (Simulink Real-Time)</p>
+<p><span style="color:#323130;">+1-508-647-0228</span></p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>

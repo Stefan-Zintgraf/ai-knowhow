@@ -1,0 +1,195 @@
+### HEADER
+Id=8463
+Link=http://at-zammad/#ticket/zoom/8463
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vector Informatik GmbH (ID=167, Number=40366, Country=DE)
+Commission=Vector Simulations AG, Unknown (ID=514, Number=514)
+Number=708463
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+CreatedBy=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+Type=
+TimeUnit=
+CreatedAt=10.07.2024 14:39:30 +00:00
+UpdatedAt=25.07.2024 09:08:39 +00:00
+CloseAt=18.07.2024 13:48:02 +00:00
+ArticlesCount=4
+
+### TITLE
+Verwendete Netzwerkadapter unserer Embedded-Geräte
+
+### ARTICLE00_HEADER
+Id=47273
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.07.2024 14:39:30 +00:00
+UpdatedAt=10.07.2024 14:39:34 +00:00
+
+### ARTICLE00_SUBJECT
+Verwendete Netzwerkadapter unserer Embedded-Geräte
+
+### ARTICLE00_BODY
+<p> </p><div> <p>Hallo Herr Bußmann,</p>
+<p> </p>
+<p>ich habe noch einmal genau nachgeschaut, was in unseren Geräten verbaut ist:</p>
+<p> </p>
+<p>VN8917: 2x Intel i226</p>
+<p>Bei diesem Gerät ist die Verwendung der EtherCAT-Option von unseren Kunden gewünscht. Hier haben wir bis jetzt nur die Möglichkeit gesehen, auf den NDIS-Treiber zu wechseln. Dieser ist allerdings nicht einfach installierbar, da dieses Gerät keinen RemoteDesktop Zugriff bietet, über welchen ein Treiber installiert werden könnte. Wenn der Acontis-Treiber für diese Hardware verwendbar wäre, würde uns das sehr weiterhelfen.</p>
+<p> </p>
+<p><span lang="EN-US">VT6060: 2x Intel(R) Ethernet Converged Network Adapter X550-T2</span></p>
+<p>Bei diesem Gerät sind noch 2 weitere Netzwerkanschlüsse mit Intel I210 verbaut, so dass an diesem Gerät die Verwendung Acontis Treibers möglich ist.</p>
+<p> </p>
+<p>Grüße / Regards,</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>----------------------------------------------</p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">VG/PND10</span></p>
+<p><span lang="EN-US">Tel.: +49 711 80670-4791</span></p>
+<p>----------------------------------------------</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=47287
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=11.07.2024 06:12:49 +00:00
+UpdatedAt=11.07.2024 06:12:49 +00:00
+
+### ARTICLE01_BODY
+Die i226 und i210 unterstützen wir. Die x550 nicht, das ist eine andere Adapter Familie.
+
+### ARTICLE02_HEADER
+Id=47606
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.07.2024 13:48:02 +00:00
+UpdatedAt=18.07.2024 13:48:04 +00:00
+
+### ARTICLE02_SUBJECT
+Verwendete Netzwerkadapter unserer Embedded-Geräte
+
+### ARTICLE02_BODY
+Hallo Herr Lange,<div><br></div><div>die i226 und i210 unterstützen wir bereits. Die x550 (noch) nicht, das ist eine andere Adapter Familie.</div><div><br></div><div>Mit freundlichen Grüßen</div><div>Paul Bußmann<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Mittwoch, 10. Juli 2024 um 16:39:30, schrieb Tobias Lange:<br><br><p> </p>
+<div> <p>Hallo Herr Bußmann,</p>
+<p> </p>
+<p>ich habe noch einmal genau nachgeschaut, was in unseren Geräten verbaut ist:</p>
+<p> </p>
+<p>VN8917: 2x Intel i226</p>
+<p>Bei diesem Gerät ist die Verwendung der EtherCAT-Option von unseren Kunden gewünscht. Hier haben wir bis jetzt nur die Möglichkeit gesehen, auf den NDIS-Treiber zu wechseln. Dieser ist allerdings nicht einfach installierbar, da dieses Gerät keinen RemoteDesktop Zugriff bietet, über welchen ein Treiber installiert werden könnte. Wenn der Acontis-Treiber für diese Hardware verwendbar wäre, würde uns das sehr weiterhelfen.</p>
+<p> </p>
+<p><span lang="EN-US">VT6060: 2x Intel(R) Ethernet Converged Network Adapter X550-T2</span></p>
+<p>Bei diesem Gerät sind noch 2 weitere Netzwerkanschlüsse mit Intel I210 verbaut, so dass an diesem Gerät die Verwendung Acontis Treibers möglich ist.</p>
+<p> </p>
+<p>Grüße / Regards,</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>----------------------------------------------</p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">VG/PND10</span></p>
+<p><span lang="EN-US">Tel.: +49 711 80670-4791</span></p>
+<p>----------------------------------------------</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=47898
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.07.2024 09:08:38 +00:00
+UpdatedAt=25.07.2024 09:08:42 +00:00
+
+### ARTICLE03_SUBJECT
+Verwendete Netzwerkadapter unserer Embedded-Geräte
+
+### ARTICLE03_BODY
+Hallo Christoph,<div><br></div><div>Vector hat nach der Intel X550 gefragt.</div><div><br></div><div>Viele Grüße</div><div>Paul</div><div>
+<br><div>---Begin forwarded message:---<br><br>
+</div>
+<div><blockquote type="cite">
+<div>Betreff: Verwendete Netzwerkadapter unserer Embedded-Geräte<br>Datum: 18.07.2024 15:48<br>Von: Paul Bußmann<br>An: Paul Bußmann, Tobias Lange &lt;tobias.lange@vector.com&gt;<br><br>
+</div>Hallo Herr Lange,<div><br></div>
+<div>die i226 und i210 unterstützen wir bereits. Die x550 (noch) nicht, das ist eine andere Adapter Familie.</div>
+<div><br></div>
+<div>Mit freundlichen Grüßen</div>
+<div>Paul Bußmann<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Mittwoch, 10. Juli 2024 um 16:39:30, schrieb Tobias Lange:<br><br><p> </p>
+<div> <p>Hallo Herr Bußmann,</p>
+<p> </p>
+<p>ich habe noch einmal genau nachgeschaut, was in unseren Geräten verbaut ist:</p>
+<p> </p>
+<p>VN8917: 2x Intel i226</p>
+<p>Bei diesem Gerät ist die Verwendung der EtherCAT-Option von unseren Kunden gewünscht. Hier haben wir bis jetzt nur die Möglichkeit gesehen, auf den NDIS-Treiber zu wechseln. Dieser ist allerdings nicht einfach installierbar, da dieses Gerät keinen RemoteDesktop Zugriff bietet, über welchen ein Treiber installiert werden könnte. Wenn der Acontis-Treiber für diese Hardware verwendbar wäre, würde uns das sehr weiterhelfen.</p>
+<p> </p>
+<p><span lang="EN-US">VT6060: 2x Intel(R) Ethernet Converged Network Adapter X550-T2</span></p>
+<p>Bei diesem Gerät sind noch 2 weitere Netzwerkanschlüsse mit Intel I210 verbaut, so dass an diesem Gerät die Verwendung Acontis Treibers möglich ist.</p>
+<p> </p>
+<p>Grüße / Regards,</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>----------------------------------------------</p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">VG/PND10</span></p>
+<p><span lang="EN-US">Tel.: +49 711 80670-4791</span></p>
+<p>----------------------------------------------</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</blockquote></div>
+<div><br></div>
+</div>

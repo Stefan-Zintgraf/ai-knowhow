@@ -1,0 +1,154 @@
+### HEADER
+Id=5446
+Link=http://at-zammad/#ticket/zoom/5446
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Liebherr-Werk Nenzing GmbH (ID=8, Number=40314, Country=AT)
+Commission=Liebherr, tower crane control (ID=8, Number=8)
+Number=705446
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=hannes.mahlfeld2@liebherr.com (ID=611, FirstName=Hannes, LastName=Mahlfeld)
+CreatedBy=hannes.mahlfeld2@liebherr.com (ID=611, FirstName=Hannes, LastName=Mahlfeld)
+Type=
+TimeUnit=
+CreatedAt=24.04.2023 06:40:40 +00:00
+UpdatedAt=19.05.2023 06:12:12 +00:00
+CloseAt=19.05.2023 06:12:12 +00:00
+ArticlesCount=2
+
+### TITLE
+Fehlerhafte Werte
+
+### ARTICLE00_HEADER
+Id=28891
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.04.2023 06:40:40 +00:00
+UpdatedAt=24.04.2023 06:40:43 +00:00
+
+### ARTICLE00_SUBJECT
+Fehlerhafte Werte
+
+### ARTICLE00_BODY
+<div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>ich habe ein EtherCAT Netzwerk mit einem EATON Gateway, welches die Messdaten eines EATON Leistungsschalters ausliest und als PDOs bereit stellt.</p>
+<p>Die ESI-Datei des EATON Gateways finden Sie angehängt. Bei dem Betrieb des Gateways tritt folgendes Problem auf:</p>
+<p> </p>
+<p>Bei Verwendung des Gateways zusammen mit dem Liebherr Steuergerät Master-5, wobei das EtherCAT Netzwerk mit EC-Engineer konfiguriert wurde, erhalte ich vom EATON Gateway nur 0-Werte. Der EtherCAT ist operational und fehlerfrei. Die 0-Werte erhalte ich auch, wenn ich mich mit dem EC-Engineer über den RAS mit dem Master-5 verbinde.</p>
+<p> </p>
+<p>Bei Verwendung des Gateways zusammen mit einem anderen Steuergerät (Applikation mit Codesys), wobei das EtherCAT Netzwerk mit TwinCAT konfiguriert wurde, erhalte ich vom Gateway korrekte Werte. Der EtherCAT ist operational und fehlerfrei.</p>
+<p> </p>
+<p>Für beide Tests wird die gleiche (angehängte) ESI-Datei verwendet. Da ich keine Fehler bei den beteiligten Komponenten finden kann und auch sonst keine Unterschiede feststellen kann, bitte ich Sie um Unterstützung.</p>
+<p> </p>
+<div>
+<p>Mit freundlichen Grüßen</p>
+<p> </p>
+<p><b>i. A. Hannes Mahlfeld, M. Sc.</b></p>
+<p>Produktentwicklung Elektrik / Software MC</p>
+<p>Entwicklungsingenieur</p>
+<p> </p>
+<p><b>Liebherr-MCCtec Rostock GmbH</b></p>
+<p> </p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td valign="top" style="padding:0cm 0cm 0cm 0cm;">
+<p>Tel.:</p>
+</td>
+<td valign="top" style="padding:0cm 0cm 0cm 0cm;">
+<p>+49 381 6006 4943</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><a href="http://Hannes.Mahlfeld2@liebherr.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">Hannes.Mahlfeld2@liebherr.com</span></a><u><span style="color:blue;"> </span></u></p>
+<p> </p>
+<p><b><span style="color:green;">Bitte prüfen Sie der Umwelt zuliebe, ob der Ausdruck dieser E-Mail erforderlich ist.</span></b></p>
+<p>U-mgdA2BMa4iL</p>
+<p> </p>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=28981
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.04.2023 08:29:59 +00:00
+UpdatedAt=25.04.2023 08:30:03 +00:00
+
+### ARTICLE01_SUBJECT
+Fehlerhafte Werte
+
+### ARTICLE01_BODY
+Hallo Herr Mahlfeld,<div><br></div><div>Sie können die TwinCAT Konfiguration als ENI exportieren und der Master Anwendung übergeben, um zu probieren ob es sich um ein InitCmd Thema handelt.</div><div>Ansonsten, müssten Sie die Startup Sequenzen im Gut- und Schlechtfall mit Wireshark aufnehmen um eventuelle SDO Transfern aus einem Treiberschicht zu identifizieren.</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, April 24, 2023 at 8:40:40 AM, Hannes Mahlfeld wrote:<br><br><div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>ich habe ein EtherCAT Netzwerk mit einem EATON Gateway, welches die Messdaten eines EATON Leistungsschalters ausliest und als PDOs bereit stellt.</p>
+<p>Die ESI-Datei des EATON Gateways finden Sie angehängt. Bei dem Betrieb des Gateways tritt folgendes Problem auf:</p>
+<p> </p>
+<p>Bei Verwendung des Gateways zusammen mit dem Liebherr Steuergerät Master-5, wobei das EtherCAT Netzwerk mit EC-Engineer konfiguriert wurde, erhalte ich vom EATON Gateway nur 0-Werte. Der EtherCAT ist operational und fehlerfrei. Die 0-Werte erhalte ich auch, wenn ich mich mit dem EC-Engineer über den RAS mit dem Master-5 verbinde.</p>
+<p> </p>
+<p>Bei Verwendung des Gateways zusammen mit einem anderen Steuergerät (Applikation mit Codesys), wobei das EtherCAT Netzwerk mit TwinCAT konfiguriert wurde, erhalte ich vom Gateway korrekte Werte. Der EtherCAT ist operational und fehlerfrei.</p>
+<p> </p>
+<p>Für beide Tests wird die gleiche (angehängte) ESI-Datei verwendet. Da ich keine Fehler bei den beteiligten Komponenten finden kann und auch sonst keine Unterschiede feststellen kann, bitte ich Sie um Unterstützung.</p>
+<p> </p>
+<div>
+<p>Mit freundlichen Grüßen</p>
+<p> </p>
+<p><b>i. A. Hannes Mahlfeld, M. Sc.</b></p>
+<p>Produktentwicklung Elektrik / Software MC</p>
+<p>Entwicklungsingenieur</p>
+<p> </p>
+<p><b>Liebherr-MCCtec Rostock GmbH</b></p>
+<p> </p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td valign="top" style="padding:0cm 0cm 0cm 0cm;">
+<p>Tel.:</p>
+</td>
+<td valign="top" style="padding:0cm 0cm 0cm 0cm;">
+<p>+49 381 6006 4943</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><a href="http://Hannes.Mahlfeld2@liebherr.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">Hannes.Mahlfeld2@liebherr.com</span></a><u><span style="color:blue;"> </span></u></p>
+<p> </p>
+<p><b><span style="color:green;">Bitte prüfen Sie der Umwelt zuliebe, ob der Ausdruck dieser E-Mail erforderlich ist.</span></b></p>
+<p>U-mgdA2BMa4iL</p>
+<p> </p>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,158 @@
+### HEADER
+Id=2340
+Link=http://at-zammad/#ticket/zoom/2340
+Group=EC-Support (ID=2)
+Priority=low (ID=1)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=FANUC, EtherCAT model CNC (ID=487, Number=487)
+Number=702340
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=28.01.2022 00:34:00 +00:00
+UpdatedAt=12.12.2023 13:52:34 +00:00
+CloseAt=25.02.2022 07:04:36 +00:00
+ArticlesCount=2
+
+### TITLE
+Question about EC-Master (FANUC) Q1
+
+### ARTICLE00_HEADER
+Id=12374
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=28.01.2022 00:34:00 +00:00
+UpdatedAt=28.01.2022 00:34:04 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master (FANUC) Q1
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master (FANUC) Q1
+
+Many questions have arrived at you from FANUC.
+Please check the overview sheet in the attached document for their implementation details.
+The content of the question sheet will be split into multiple emails and I will send them to you.
+
+-----------------------------------------------------------------------
+
+State transition of EtherCAT master:
+
+Q1-(1).
+   I think there are many cases where EtherCAT communication become failure.
+   -Disconnection between master and slave（=cannot acuired all slave status）
+   　Master -ｘｘ- Slave1 - Slave2 - Slave3 - Slave4
+   -Disconnection between slave and slave（=cannot acuired some slave status）
+   　Master - Slave1 - Slave2 -ｘｘ- Slave3 - Slave4
+   -Unintended status occurred in some slaves
+   　Master(OP) - Slave1(OP) - Slave2(OP) - Slave3(SAFE-OP) - Slave4(OP)
+
+   Is each state transition of the EtherCAT master device defined in the ETG specification? For example, the following items.
+   ・What is the relationship between the state transitions of EtherCAT master and slave devices?
+   ・What state should the master device be set to according to the communication status with the slave devices?
+   ・When should the master device set the state transition to the slave device?
+
+Q1-(2). State transition of EtherCAT master.
+     A Beckhoff EtherCAT master(TwinCAT3) was used as the reference unit.
+   Causes a disconnect while communicating with multiple slaves. In this case, I the following status was confirmed.
+   　Master(unknown) - Slave1(OP) - Slave2(OP) - Slave3(OP)
+   　　　↓Disconnect
+   　Master(unknown) - Slave1(OP) - Slave2(OP) -ｘｘ- Slave3(ERR)
+   "Unknown" means I don't know how to check the Master status on TwinCAT3.
+   However, since some of the slaves are still OP, I assume that the Master is also OP.
+   On the other hand, Acontis answerd following.
+   >As an EtherCAT standard the FANUC application does not need to change the state of the master!
+   >But it is advised to change the state to INIT or PRE-OP, when one of the slaves is in a failure status.
+   I assume that this indicates the following conditions
+   　Master(PRE-OP) - Slave1(PRE-OP) - Slave2(PRE-OP) -××- Slave3(ERR)
+
+   The answer from Acontis is different from the behavior of the Beckhoff master device, which is the EtherCAT industry standard.
+   Why does Acontis recommend state change in EC-Master?
+
+Q1-(3). State transition of EtherCAT master.
+   I would like to avoid the complaint "FANUC EtherCAT masters behave differently from other companies".
+   In master devies of Beckhoff or other companies, which behavior is more common ?
+   Any other knowledge on state changes?
+
+Best regards,
+Takuya Fujikawa
+
+### ARTICLE01_HEADER
+Id=12409
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.01.2022 09:21:58 +00:00
+UpdatedAt=28.01.2022 09:22:02 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master (FANUC) Q1
+
+### ARTICLE01_BODY
+<div>Hi Takuya,</div><div><br></div><div>please find my answer below.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><br>
+</div><div>
+<blockquote type="cite">On Friday, January 28, 2022, 1:34:00 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master (FANUC) Q1</div>
+<div><br></div>
+<div>Many questions have arrived at you from FANUC.</div>
+<div>Please check the overview sheet in the attached document for their implementation details.</div>
+<div>The content of the question sheet will be split into multiple emails and I will send them to you.</div>
+<div><br></div>
+<div>-----------------------------------------------------------------------</div>
+<div><br></div>
+<div>State transition of EtherCAT master:</div>
+<div><br></div>
+<div>Q1-(1).</div>
+<div>   I think there are many cases where EtherCAT communication become failure.</div>
+<div>   -Disconnection between master and slave（=cannot acuired all slave status）</div>
+<div>   　Master -ｘｘ- Slave1 - Slave2 - Slave3 - Slave4</div>
+<div>   -Disconnection between slave and slave（=cannot acuired some slave status）</div>
+<div>   　Master - Slave1 - Slave2 -ｘｘ- Slave3 - Slave4</div>
+<div>   -Unintended status occurred in some slaves</div>
+<div>   　Master(OP) - Slave1(OP) - Slave2(OP) - Slave3(SAFE-OP) - Slave4(OP)</div>
+<div><br></div>
+<div>   Is each state transition of the EtherCAT master device defined in the ETG specification? For example, the following items.</div>
+<div>   ・What is the relationship between the state transitions of EtherCAT master and slave devices?</div>
+<div>[CER] Master state is always higher or equal than the slaves state. The master state is driving the slave state.</div>
+<div>   ・What state should the master device be set to according to the communication status with the slave devices?</div>
+<div>[CER] We only provide API and parameters to support most of the customer use cases. There is no specification how to implement a master application. If all the slaves are disconnected, it can make sense to set the master to INIT and redo the startup sequence. But it is possible to only set the error slaves back to OP (this can be done by calling ecatSetMasterState(OP)). It depends on the end application. The stack doesn't know about the meanings of the I/O.</div>
+<div>   ・When should the master device set the state transition to the slave device?</div>
+<div>[CER] Only if the application call ecatSetMasterState() or ecatSetSlaveState(). Under some condition by calling ecatSetSlaveDisabled() or <span>ecatSetSlaveDisconnected(). On slave (re)connection if the slave is configured as HotConnect or if </span>EC_IOCTL_SET_NEW_BUSSLAVES_TO_INIT is used.</div>
+</blockquote>
+<blockquote type="cite">
+<div>Q1-(2). State transition of EtherCAT master.</div>
+<div>     A Beckhoff EtherCAT master(TwinCAT3) was used as the reference unit.</div>
+<div>   Causes a disconnect while communicating with multiple slaves. In this case, I the following status was confirmed.</div>
+<div>   　Master(unknown) - Slave1(OP) - Slave2(OP) - Slave3(OP)</div>
+<div>   　　　↓Disconnect</div>
+<div>   　Master(unknown) - Slave1(OP) - Slave2(OP) -ｘｘ- Slave3(ERR)</div>
+<div>   "Unknown" means I don't know how to check the Master status on TwinCAT3.</div>
+<div>   However, since some of the slaves are still OP, I assume that the Master is also OP.</div>
+<div>   On the other hand, Acontis answerd following.</div>
+<div>   &gt;As an EtherCAT standard the FANUC application does not need to change the state of the master!</div>
+<div>   &gt;But it is advised to change the state to INIT or PRE-OP, when one of the slaves is in a failure status.</div>
+<div>   I assume that this indicates the following conditions</div>
+<div>   　Master(PRE-OP) - Slave1(PRE-OP) - Slave2(PRE-OP) -××- Slave3(ERR)</div>
+<div><br></div>
+<div>   The answer from Acontis is different from the behavior of the Beckhoff master device, which is the EtherCAT industry standard.</div>
+<div>   Why does Acontis recommend state change in EC-Master?</div>
+<div>[CER] It is the more simple and stable state. Reset all the slaves together to INIT, PREOP,... But it depends on the application.</div>
+<div><br></div>
+<div>Q1-(3). State transition of EtherCAT master.</div>
+<div>   I would like to avoid the complaint "FANUC EtherCAT masters behave differently from other companies".</div>
+<div>   In master devies of Beckhoff or other companies, which behavior is more common ?</div>
+<div>   Any other knowledge on state changes?</div>
+<div>[CER] I don't know your product well. But if you provide a kind of "open" PLC, you perhaps need to provide API and parameters to your customer to adjust the behavior by themself.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote>
+</div><div><br></div><br><br>

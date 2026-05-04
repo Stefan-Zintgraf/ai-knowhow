@@ -1,0 +1,142 @@
+### HEADER
+Id=4192
+Link=http://at-zammad/#ticket/zoom/4192
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=eCential Robotics (ID=536, Number=0, Country=FR)
+Commission=eCential Robotics, Surgical assistance system (ID=218, Number=218)
+Number=704192
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=claude.vittoria@ecential-robotics.com (ID=639, FirstName=Claude, LastName=Vittoria)
+CreatedBy=claude.vittoria@ecential-robotics.com (ID=639, FirstName=Claude, LastName=Vittoria)
+Type=
+TimeUnit=
+CreatedAt=25.10.2022 12:31:58 +00:00
+UpdatedAt=26.10.2022 08:20:11 +00:00
+CloseAt=26.10.2022 08:16:58 +00:00
+ArticlesCount=3
+
+### TITLE
+Support renew
+
+### ARTICLE00_HEADER
+Id=22066
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.10.2022 12:31:58 +00:00
+UpdatedAt=25.10.2022 12:31:58 +00:00
+
+### ARTICLE00_SUBJECT
+Support renew
+
+### ARTICLE00_BODY
+<p> </p><div> <p>Hi,</p>
+<p> </p>
+<p><span lang="EN-US">We have subscribed a new support contract. Is it possible to have access to the last version of the Ethercat stack ? EC Master V3.1.4.05.</span></p>
+<p><span lang="EN-US">The license already deployed on the field will be compatible with the new version of EC Master ?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Regards,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;"> <tbody> <tr> <td valign="top" style="padding:0cm 5.4pt 0cm 5.4pt;"> <p><img style="max-width:100%;width:2.4479in;max-height:.7604in;width:235px;max-height:73px;" src="/api/v1/ticket_attachment/4192/22066/92569?view=inline"></p>
+</td> <td style="padding:0cm 5.4pt 0cm 5.4pt;"> <p><b>Claude VITTORIA</b></p>
+<p><i>System Architect</i></p>
+<p><a href="mailto:claude.vittoria@ecential-robotics.com"><span style="color:#0563c1;">claude.vittoria@ecential-robotics.com</span></a></p>
+</td> </tr> <tr> <td colspan="2" valign="top" style="padding:0cm 5.4pt 0cm 5.4pt;"> <p><b>eCential</b> Robotics - Zone Mayencin II – Parc Equation – Bâtiment 1 - 2 avenue de Vignate – 38610 Gières – France</p>
+<p><a href="https://fra01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.ecential-robotics.com%2F&amp;data=04%7C01%7Cclaude.vittoria%40ecential-robotics.com%7Cf4eea16b0b644efd037508d993af1da9%7C257e153ed399493c8b942425235618be%7C0%7C0%7C637703202588496433%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=JE3jFkpmrrldekBI%2BMnc0t2B97%2FKiDLgLH0vqnjsP%2FI%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://fra01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.ecential-robotics.com%2F&amp;data=04%7C01%7Cclaude.vittoria%40ecential-robotics.com%7Cf4eea16b0b644efd037508d993af1da9%7C257e153ed399493c8b942425235618be%7C0%7C0%7C637703202588496433%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=JE3jFkpmrrldekBI%2BMnc0t2B97%2FKiDLgLH0vqnjsP%2FI%3D&amp;reserved=0" target="_blank"><span style="color:#0563c1;">www.ecential-robotics.com</span></a></p>
+</td> </tr> </tbody> </table> <p><b><span lang="EN-US" style="color:#b58150;"> </span></b><span lang="DE"></span></p>
+<p><i><span lang="EN-US">This e-mail and any attachments are confidential and may also be legally privileged. If you have received this message by mistake, please inform the author as soon as possible and delete this message and any attachments without keeping any copies. Any reproduction, distribution, disclosure or other use of this communication is prohibited.</span></i><span lang="DE"></span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=22098
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.10.2022 08:16:59 +00:00
+UpdatedAt=26.10.2022 08:17:01 +00:00
+
+### ARTICLE01_SUBJECT
+Support renew
+
+### ARTICLE01_BODY
+<p>Dear Customer, </p><p><br></p>
+
+<p>please find your new software version below: </p>
+
+<p><a href="https://downloads.acontis.com/2022/D-F/eCential_Robotics_(40406)(FR)/EC-Master/3.1.4.05/EC-Master-ClassA-AddOn-V3.1.4.05-QNX71-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/D-F/eCential_Robotics_(40406)(FR)/EC-Master/3.1.4.05/EC-Master-ClassA-AddOn-V3.1.4.05-QNX71-x86_64Bit-SDK_Protected.zip</a></p>
+
+<p><a href="https://downloads.acontis.com/2022/D-F/eCential_Robotics_(40406)(FR)/EC-Master/3.1.4.05/EC-Master-I8254x-V3.1.4.05-QNX71-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/D-F/eCential_Robotics_(40406)(FR)/EC-Master/3.1.4.05/EC-Master-I8254x-V3.1.4.05-QNX71-x86_64Bit-SDK_Protected.zip</a></p>
+
+<p><a href="https://downloads.acontis.com/2022/D-F/eCential_Robotics_(40406)(FR)/EC-Master/3.1.4.05/EC-Master-V3.1.4.05-QNX71-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/D-F/eCential_Robotics_(40406)(FR)/EC-Master/3.1.4.05/EC-Master-V3.1.4.05-QNX71-x86_64Bit-SDK_Protected.zip</a></p>
+
+<p>Password: ECM88250 </p><p><br></p><p>Actually you will get the latest version of the EC-Master stack as long as you have maintenance. The license still applies and is still valid also with V3.1.4.05. I hope the answer fits to your question.</p><p><br></p>
+
+Best Regards,     <br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: -</div>
+<div>acontis technologies GmbH,  -, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/4192/22098/92701?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Tuesday, October 25, 2022 at 2:31:58 PM, Claude Vittoria wrote:<br><br><p> </p>
+<div> <p>Hi,</p>
+<p> </p>
+<p><span lang="EN-US">We have subscribed a new support contract. Is it possible to have access to the last version of the Ethercat stack ? EC Master V3.1.4.05.</span></p>
+<p><span lang="EN-US">The license already deployed on the field will be compatible with the new version of EC Master ?</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Regards,</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;"> <tbody> <tr> <td valign="top" style="padding:0cm 5.4pt 0cm 5.4pt;"> <p><img style="max-width:100%;max-width:100%;width:2.4479in;max-height:.7604in;width:235px;max-height:73px;" src="/api/v1/ticket_attachment/4192/22098/92702?view=inline"></p>
+</td> <td style="padding:0cm 5.4pt 0cm 5.4pt;"> <p><b>Claude VITTORIA</b></p>
+<p><i>System Architect</i></p>
+<p><a href="mailto:claude.vittoria@ecential-robotics.com"><span style="color:#0563c1;">claude.vittoria@ecential-robotics.com</span></a></p>
+</td> </tr> <tr> <td colspan="2" valign="top" style="padding:0cm 5.4pt 0cm 5.4pt;"> <p><b>eCential</b> Robotics - Zone Mayencin II – Parc Equation – Bâtiment 1 - 2 avenue de Vignate – 38610 Gières – France</p>
+<p><a href="https://fra01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.ecential-robotics.com%2F&amp;data=04%7C01%7Cclaude.vittoria%40ecential-robotics.com%7Cf4eea16b0b644efd037508d993af1da9%7C257e153ed399493c8b942425235618be%7C0%7C0%7C637703202588496433%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=JE3jFkpmrrldekBI%2BMnc0t2B97%2FKiDLgLH0vqnjsP%2FI%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://fra01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.ecential-robotics.com%2F&amp;data=04%7C01%7Cclaude.vittoria%40ecential-robotics.com%7Cf4eea16b0b644efd037508d993af1da9%7C257e153ed399493c8b942425235618be%7C0%7C0%7C637703202588496433%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=JE3jFkpmrrldekBI%2BMnc0t2B97%2FKiDLgLH0vqnjsP%2FI%3D&amp;reserved=0" target="_blank"><span style="color:#0563c1;">www.ecential-robotics.com</span></a></p>
+</td> </tr> </tbody> </table> <p><b><span lang="EN-US" style="color:#b58150;"> </span></b><span lang="DE"></span></p>
+<p><i><span lang="EN-US">This e-mail and any attachments are confidential and may also be legally privileged. If you have received this message by mistake, please inform the author as soon as possible and delete this message and any attachments without keeping any copies. Any reproduction, distribution, disclosure or other use of this communication is prohibited.</span></i><span lang="DE"></span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=22099
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.10.2022 08:20:11 +00:00
+UpdatedAt=26.10.2022 08:20:11 +00:00
+
+### ARTICLE02_SUBJECT
+Réponse automatique : Support renew [Ticket#704192]
+
+### ARTICLE02_BODY
+<div>
+<p>Good morning,</p>
+<p> </p>
+<p>I am currently out of office returning on November 2nd.</p>
+<p>I will have a very limited access to my emails and my phone but I will do my best to reply to any urgent topics.</p>
+<p> </p>
+<p>Thank you.<span lang="FR"></span></p>
+</div>

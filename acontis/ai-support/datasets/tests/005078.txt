@@ -1,0 +1,157 @@
+### HEADER
+Id=5078
+Link=http://at-zammad/#ticket/zoom/5078
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=cpc Chieftek (ID=590, Number=50234, Country=TW)
+Commission=cpc Chieftek, cpcStudio (ID=669, Number=669)
+Number=705078
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=lm003@mail2.chieftek.com (ID=1237, FirstName=Kuanghan, LastName=)
+CreatedBy=lm003@mail2.chieftek.com (ID=1237, FirstName=Kuanghan, LastName=)
+Type=
+TimeUnit=
+CreatedAt=06.03.2023 11:03:25 +00:00
+UpdatedAt=10.03.2023 08:59:33 +00:00
+CloseAt=10.03.2023 08:59:33 +00:00
+ArticlesCount=2
+
+### TITLE
+[Chieftek]userControl show Notification message
+
+### ARTICLE00_HEADER
+Id=26783
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.03.2023 11:03:25 +00:00
+UpdatedAt=06.03.2023 11:03:27 +00:00
+
+### ARTICLE00_SUBJECT
+[Chieftek]userControl show Notification message
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi,<div>we went to use C# control to show a line of EInfo message. How could we do that?</div>
+<div>we create another controlShowMsg class inheritance EcAppInstance.IErrorHandle. But, we can't receive the notification. (there are two class inheritance EcAppInstance.IErrorHandle. This one can't receive the notification, the other one could)</div>
+<div> </div>
+<div>
+<img src="/api/v1/ticket_attachment/5078/26783/112444?view=inline" alt="userCtrl show line message.png" style="max-width:100%;width:487px;max-height:357px;"><br>
+</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan</div>
+<div>
+<br><div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+</div><br>
+<div> </div>
+
+### ARTICLE01_HEADER
+Id=26792
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.03.2023 12:22:56 +00:00
+UpdatedAt=06.03.2023 12:22:59 +00:00
+
+### ARTICLE01_SUBJECT
+[Chieftek]userControl show Notification message
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>if you want to use your own error handler you have to init your core instance with that:</div><div>You have to replace <span>EcEngineerCore.Instance.Init(this);</span>
+</div><div>
+<span>with </span><span>EcEngineerCore.Instance.Init(new ControlShowMsg());</span>
+</div><div><span><br></span></div><div><span>But the Instance cannot have two handlers at the moment. You have to decide.</span></div><div><span><br></span></div><div><span>Best regards,</span></div><div><span>Kai</span></div><div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, March 6, 2023 at 12:03:25 PM, cpc線馬課李劻翰 wrote:<br><br><div dir="ltr">Hi,<div>we went to use C# control to show a line of EInfo message. How could we do that?</div>
+<div>we create another controlShowMsg class inheritance EcAppInstance.IErrorHandle. But, we can't receive the notification. (there are two class inheritance EcAppInstance.IErrorHandle. This one can't receive the notification, the other one could)</div>
+<div> </div>
+<div>
+<img src="/api/v1/ticket_attachment/5078/26792/112481?view=inline" alt="userCtrl show line message.png" style="max-width:100%;max-width:100%;width:487px;max-height:357px;"><br>
+</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan</div>
+<div>
+<br><div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+</div>
+<br>
+<div> </div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div></div>

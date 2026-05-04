@@ -1,0 +1,271 @@
+### HEADER
+Id=911
+Link=http://at-zammad/#ticket/zoom/911
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Carl Cloos Schweisstechnik GmbH (ID=90, Number=40180, Country=DE)
+Commission=Carl Cloos, Robotersteuerung (ID=99, Number=99)
+Number=700911
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=dirk.eibach@cloos.de (ID=220, FirstName=Dirk, LastName=Eibach)
+CreatedBy=dirk.eibach@cloos.de (ID=220, FirstName=Dirk, LastName=Eibach)
+Type=
+TimeUnit=
+CreatedAt=28.06.2021 10:05:37 +00:00
+UpdatedAt=25.04.2022 12:55:19 +00:00
+CloseAt=28.06.2021 10:11:48 +00:00
+ArticlesCount=4
+
+### TITLE
+Linux-Demo
+
+### ARTICLE00_HEADER
+Id=5106
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=28.06.2021 10:05:38 +00:00
+UpdatedAt=28.06.2021 10:06:05 +00:00
+
+### ARTICLE00_SUBJECT
+Linux-Demo
+
+### ARTICLE00_BODY
+Hallo Herr Eyssautier,
+
+können Sie uns für Testzwecke eine Demo-Version der Linux-Variante des Masters zukommen lassen?
+
+Mit freundlichen Grüßen / Best Regards
+Dirk Eibach
+_________________________________
+CARL CLOOS SCHWEISSTECHNIK GMBH
+Softwareentwickler / AU-EW
+Softwaredeveloper / AU-EW
+Hauptverwaltung/Headquarters: Carl-Cloos-Strasse 1
+Zentrallager/Central Warehouse: Carl-Cloos-Strasse 6
+35708 Haiger
+Germany
+Tel:      +49 2773 85-888
+E-Mail:  mailto:dirk.eibach@cloos.de
+Internet: http://www.cloos.de/
+
+
+Sitz der Firma/Headquarters: 35708, Germany
+Amtsgericht/Lower district court: Wetzlar HR B 3052
+Geschäftsführer/Management: Sieghard Thomas (CEO), Stephan Pittner (CTO)
+
+
+
+### ARTICLE01_HEADER
+Id=5108
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.06.2021 10:08:15 +00:00
+UpdatedAt=28.06.2021 10:08:19 +00:00
+
+### ARTICLE01_SUBJECT
+Linux-Demo
+
+### ARTICLE01_BODY
+Hallo Herr Eibach,<div><br></div><div>ja gerne. Welche Architecture brauchen Sie? x86 oder x64?</div><div><br></div><div>Schöne Grüße,</div><div>Cyril Eyssautier<div><br></div>
+<div><blockquote type="cite">On Monday, June 28, 2021, 12:05:38 PM, Dirk Eibach wrote:<br><br><div>Hallo Herr Eyssautier,</div>
+<div><br></div>
+<div>können Sie uns für Testzwecke eine Demo-Version der Linux-Variante des Masters zukommen lassen?</div>
+<div><br></div>
+<div>Mit freundlichen Grüßen / Best Regards</div>
+<div>Dirk Eibach</div>
+<div>_________________________________</div>
+<div>CARL CLOOS SCHWEISSTECHNIK GMBH</div>
+<div>Softwareentwickler / AU-EW</div>
+<div>Softwaredeveloper / AU-EW</div>
+<div>Hauptverwaltung/Headquarters: Carl-Cloos-Strasse 1</div>
+<div>Zentrallager/Central Warehouse: Carl-Cloos-Strasse 6</div>
+<div>35708 Haiger</div>
+<div>Germany</div>
+<div>Tel:      +49 2773 85-888</div>
+<div>E-Mail:  mailto:dirk.eibach@cloos.de</div>
+<div>Internet: <a href="http://www.cloos.de/" title="http://www.cloos.de/" rel="nofollow noreferrer noopener" target="_blank">http://www.cloos.de/</a>
+</div>
+<div><br></div>
+<div>Sitz der Firma/Headquarters: 35708, Germany</div>
+<div>Amtsgericht/Lower district court: Wetzlar HR B 3052</div>
+<div>Geschäftsführer/Management: Sieghard Thomas (CEO), Stephan Pittner (CTO)</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=5109
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=28.06.2021 10:09:44 +00:00
+UpdatedAt=28.06.2021 10:09:44 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Linux-Demo [Ticket#700911]
+
+### ARTICLE02_BODY
+Hallo Herr Eyssautier,
+
+wir brauchen x86.
+
+Viele Grüße
+Dirk Eibach
+
+> -----Original Message-----
+> From: Cyril Eyssautier via EC-Support [mailto:ecsupport@acontis.com]
+> Sent: Monday, June 28, 2021 12:08 PM
+> To: Eibach, Dirk <Dirk.Eibach@cloos.de>
+> Cc: sales@acontis.com
+> Subject: RE: Linux-Demo [Ticket#700911]
+> 
+> Hallo Herr Eibach,
+> 
+> ja gerne. Welche Architecture brauchen Sie? x86 oder x64?
+> 
+> Schöne Grüße,
+> Cyril Eyssautier
+> 
+> 
+> 	On Monday, June 28, 2021, 12:05:38 PM, Dirk Eibach wrote:
+> 
+> 
+> 	Hallo Herr Eyssautier,
+> 
+> 	können Sie uns für Testzwecke eine Demo-Version der Linux-
+> Variante des Masters zukommen lassen?
+> 
+> 	Mit freundlichen Grüßen / Best Regards
+> 	Dirk Eibach
+> 	_________________________________
+> 	CARL CLOOS SCHWEISSTECHNIK GMBH
+> 	Softwareentwickler / AU-EW
+> 	Softwaredeveloper / AU-EW
+> 	Hauptverwaltung/Headquarters: Carl-Cloos-Strasse 1
+> 	Zentrallager/Central Warehouse: Carl-Cloos-Strasse 6
+> 	35708 Haiger
+> 	Germany
+> 	Tel:      +49 2773 85-888
+> 	E-Mail:  mailto:dirk.eibach@cloos.de
+> 	Internet: http://www.cloos.de/
+> 
+> 	Sitz der Firma/Headquarters: 35708, Germany
+> 	Amtsgericht/Lower district court: Wetzlar HR B 3052
+> 	Geschäftsführer/Management: Sieghard Thomas (CEO), Stephan
+> Pittner (CTO)
+> 
+> 
+> 
+> 
+
+
+
+### ARTICLE03_HEADER
+Id=5110
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.06.2021 10:11:48 +00:00
+UpdatedAt=28.06.2021 10:11:49 +00:00
+
+### ARTICLE03_SUBJECT
+Linux-Demo
+
+### ARTICLE03_BODY
+Hallo Herr Eibach,<div><br></div><div>
+<a href="http://software.acontis.com/EC-Master/3.1/Linux/EC-Master-V3.1-Linux-x86_32Bit-Eval.tar.gz" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/EC-Master/3.1/Linux/EC-Master-V3.1-Linux-x86_32Bit-Eval.tar.gz</a><br><a href="http://software.acontis.com/EC-Master/3.1/Linux/EC-Master-ClassA-AddOn-V3.1-Linux-x86_32Bit-Eval.tar.gz" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/EC-Master/3.1/Linux/EC-Master-ClassA-AddOn-V3.1-Linux-x86_32Bit-Eval.tar.gz</a>
+</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, June 28, 2021, 12:09:44 PM, Dirk Eibach wrote:<br><br><div>Hallo Herr Eyssautier,</div>
+<div><br></div>
+<div>wir brauchen x86.</div>
+<div><br></div>
+<div>Viele Grüße</div>
+<div>Dirk Eibach</div>
+<div><br></div>
+<div>&gt; -----Original Message-----</div>
+<div>&gt; From: Cyril Eyssautier via EC-Support [mailto:ecsupport@acontis.com]</div>
+<div>&gt; Sent: Monday, June 28, 2021 12:08 PM</div>
+<div>&gt; To: Eibach, Dirk &lt;Dirk.Eibach@cloos.de&gt;</div>
+<div>&gt; Cc: sales@acontis.com</div>
+<div>&gt; Subject: RE: Linux-Demo [Ticket#700911]</div>
+<div>&gt;</div>
+<div>&gt; Hallo Herr Eibach,</div>
+<div>&gt;</div>
+<div>&gt; ja gerne. Welche Architecture brauchen Sie? x86 oder x64?</div>
+<div>&gt;</div>
+<div>&gt; Schöne Grüße,</div>
+<div>&gt; Cyril Eyssautier</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt; 	On Monday, June 28, 2021, 12:05:38 PM, Dirk Eibach wrote:</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt; 	Hallo Herr Eyssautier,</div>
+<div>&gt;</div>
+<div>&gt; 	können Sie uns für Testzwecke eine Demo-Version der Linux-</div>
+<div>&gt; Variante des Masters zukommen lassen?</div>
+<div>&gt;</div>
+<div>&gt; 	Mit freundlichen Grüßen / Best Regards</div>
+<div>&gt; 	Dirk Eibach</div>
+<div>&gt; 	_________________________________</div>
+<div>&gt; 	CARL CLOOS SCHWEISSTECHNIK GMBH</div>
+<div>&gt; 	Softwareentwickler / AU-EW</div>
+<div>&gt; 	Softwaredeveloper / AU-EW</div>
+<div>&gt; 	Hauptverwaltung/Headquarters: Carl-Cloos-Strasse 1</div>
+<div>&gt; 	Zentrallager/Central Warehouse: Carl-Cloos-Strasse 6</div>
+<div>&gt; 	35708 Haiger</div>
+<div>&gt; 	Germany</div>
+<div>&gt; 	Tel:      +49 2773 85-888</div>
+<div>&gt; 	E-Mail:  mailto:dirk.eibach@cloos.de</div>
+<div>&gt; 	Internet: <a href="http://www.cloos.de/" title="http://www.cloos.de/" rel="nofollow noreferrer noopener" target="_blank">http://www.cloos.de/</a>
+</div>
+<div>&gt;</div>
+<div>&gt; 	Sitz der Firma/Headquarters: 35708, Germany</div>
+<div>&gt; 	Amtsgericht/Lower district court: Wetzlar HR B 3052</div>
+<div>&gt; 	Geschäftsführer/Management: Sieghard Thomas (CEO), Stephan</div>
+<div>&gt; Pittner (CTO)</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

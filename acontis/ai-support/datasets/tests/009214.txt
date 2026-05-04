@@ -1,0 +1,111 @@
+### HEADER
+Id=9214
+Link=http://at-zammad/#ticket/zoom/9214
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bobst Mex SA (ID=14, Number=50513, Country=CH)
+Commission=Bobst, CUBE RTOS-32 (ID=15, Number=15)
+Number=709214
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=michael.gerber@bobst.com (ID=2925, FirstName=michael.gerber@bobst.com, LastName=)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=04.11.2024 10:15:07 +00:00
+UpdatedAt=23.01.2025 12:51:25 +00:00
+CloseAt=12.11.2024 07:06:06 +00:00
+ArticlesCount=2
+
+### TITLE
+Acontis software update request from Bobst
+
+### ARTICLE00_HEADER
+Id=52250
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.11.2024 10:15:07 +00:00
+UpdatedAt=04.11.2024 10:15:11 +00:00
+
+### ARTICLE00_SUBJECT
+Acontis software update request from Bobst
+
+### ARTICLE00_BODY
+<p> </p><p>Dear Mr./Ms. Gerber,</p><p>thank you for your registration.<br>
+<br></p><p>First Name: Michael<br>Last Name: Gerber <br>Company: Bobst <br><span>Commission Number: <br></span><span>Country: Suisse <br></span><span>City: Mex <br></span><span>E-Mail: michael.gerber@bobst.com <br></span>Product: <span>EC-Lyser <br></span>Update Type: <span>
+<br></span><span>Operating System Version: Windows 11 <br></span>Additional information: I would like update from v3.1.5 Thank you in advance</p><p><img src="/api/v1/ticket_attachment/9214/52250/217373?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH <br>Franz-Beer-Straße 98, 88250 Weingarten/Germany <br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a>
+<br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com <br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/9214/52250/217372?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=52254
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.11.2024 11:05:23 +00:00
+UpdatedAt=04.11.2024 11:05:26 +00:00
+
+### ARTICLE01_SUBJECT
+Acontis software update request from Bobst
+
+### ARTICLE01_BODY
+Hi Michael,<div><br></div><div>
+<p>please find your new software version below:</p>
+<p><br></p>
+<p>Latest V3.1: </p>
+</div><div>
+<p><a href="https://downloads.acontis.com/2024/B-C/Bobst_Mex_SA_(40090)(CH)/EC-Master_Windows_x86_64Bit/3.1.6.02/EC-Master-V3.1.6.02-Windows-x86_32Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/B-C/Bobst_Mex_SA_(40090)(CH)/EC-Master_Windows_x86_64Bit/3.1.6.02/EC-Master-V3.1.6.02-Windows-x86_32Bit-SDK_Source.zip</a></p>
+
+<p><a href="https://downloads.acontis.com/2024/B-C/Bobst_Mex_SA_(40090)(CH)/EC-Master_Windows_x86_64Bit/3.1.6.02/EC-Master-V3.1.6.02-Windows-x86_64Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/B-C/Bobst_Mex_SA_(40090)(CH)/EC-Master_Windows_x86_64Bit/3.1.6.02/EC-Master-V3.1.6.02-Windows-x86_64Bit-SDK_Source.zip</a></p>
+<div>
+<div>
+<p><br></p>
+<p>Latest V3.2: </p>
+</div>
+<div><a href="https://downloads.acontis.com/2024/B-C/Bobst_Mex_SA_(40090)(CH)/EC-Master_Windows_x86_64Bit/3.2.2.03/EC-Master-V3.2.2.03-Windows-x86_32Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/B-C/Bobst_Mex_SA_(40090)(CH)/EC-Master_Windows_x86_64Bit/3.2.2.03/EC-Master-V3.2.2.03-Windows-x86_32Bit-SDK_Source.zip</a></div>
+</div>
+<div>
+
+<p><a href="https://downloads.acontis.com/2024/B-C/Bobst_Mex_SA_(40090)(CH)/EC-Master_Windows_x86_64Bit/3.2.2.03/EC-Master-V3.2.2.03-Windows-x86_64Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/B-C/Bobst_Mex_SA_(40090)(CH)/EC-Master_Windows_x86_64Bit/3.2.2.03/EC-Master-V3.2.2.03-Windows-x86_64Bit-SDK_Source.zip</a></p>
+
+<p><br></p>
+<p>Password: ECM88250 </p>
+<p><br></p>
+<p>Best regards,</p>
+</div>
+<div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, November 4, 2024 at 11:15:07 AM, sales acontis wrote:<br><br><p> </p>
+<p>Dear Mr./Ms. Gerber,</p>
+<p>thank you for your registration.<br>
+<br></p>
+<p>First Name: Michael<br>Last Name: Gerber <br>Company: Bobst <br><span>Commission Number: <br></span><span>Country: Suisse <br></span><span>City: Mex <br></span><span>E-Mail: michael.gerber@bobst.com <br></span>Product: <span>EC-Lyser <br></span>Update Type: <span>
+<br></span><span>Operating System Version: Windows 11 <br></span>Additional information: I would like update from v3.1.5 Thank you in advance</p>
+<p><img src="/api/v1/ticket_attachment/9214/52254/217381?view=inline" alt="" style="max-width:100%;max-width:100%;width:163px;max-height:85px;"></p>
+<p><span>acontis technologies GmbH <br>Franz-Beer-Straße 98, 88250 Weingarten/Germany <br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a>
+<br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com <br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/9214/52254/217382?view=inline" style="max-width:100%;max-width:100%;width:22px;max-height:22px;"></a></span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

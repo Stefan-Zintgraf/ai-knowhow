@@ -1,0 +1,152 @@
+### HEADER
+Id=9111
+Link=http://at-zammad/#ticket/zoom/9111
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Advantech, Generic (ID=711, Number=711)
+Number=709111
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=18.10.2024 05:00:22 +00:00
+UpdatedAt=18.10.2024 07:06:54 +00:00
+CloseAt=18.10.2024 07:06:53 +00:00
+ArticlesCount=2
+
+### TITLE
+The potential customer Advantech requirement about  EcMaster  for C language
+
+### ARTICLE00_HEADER
+Id=51548
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.10.2024 05:00:23 +00:00
+UpdatedAt=18.10.2024 05:00:29 +00:00
+
+### ARTICLE00_SUBJECT
+The potential customer Advantech requirement about  EcMaster  for C language
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div style="color:#1f497d;">Dear,</div>
+<div style="color:#1f497d;">We are connecting with the potential customer advantech in both taipei and hangzhou.</div>
+<div style="color:#1f497d;">Does the EcMaster support C language demo now? The customer want to getting the C demo after order. I remember we have customer ask the c version at EcMaster 2.7.</div>
+<div style="color:#1f497d;"><br></div>
+<div style="color:#1f497d;"><br></div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div>
+<div><img src="/api/v1/ticket_attachment/9111/51548/214414?view=inline" style="max-width:100%;width:586px;max-height:293px;"></div>
+<div><a href="https://www.ethercat.org/forms/china2023/registration.aspx" rel="nofollow noreferrer noopener" title="https://www.ethercat.org/forms/china2023/registration.aspx" target="_blank">2024.10.21和25日 EtherCAT路演北京、武汉、深圳 期待与您见面！</a></div>
+</div>
+<div> </div>
+<div>
+<div>
+<br>北京盟通科技有限公司 <br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>+86- 571- 56125098 （杭州）</div>
+<div>+886-2-25222206 （台北）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" title="http://www.motrotech.com" target="_blank"></a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div style="color:#1f497d;"><br></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=51555
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.10.2024 07:06:54 +00:00
+UpdatedAt=18.10.2024 07:06:55 +00:00
+
+### ARTICLE01_SUBJECT
+The potential customer Advantech requirement about  EcMaster  for C language
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>ye s we can provide the example EcMasterDemoC.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, October 18, 2024 at 7:00:23 AM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div style="color:#1f497d;">Dear,</div>
+<div style="color:#1f497d;">We are connecting with the potential customer advantech in both taipei and hangzhou.</div>
+<div style="color:#1f497d;">Does the EcMaster support C language demo now? The customer want to getting the C demo after order. I remember we have customer ask the c version at EcMaster 2.7.</div>
+<div style="color:#1f497d;"><br></div>
+<div style="color:#1f497d;"><br></div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div>
+<div><img src="/api/v1/ticket_attachment/9111/51555/214447?view=inline" style="max-width:100%;max-width:100%;width:586px;max-height:293px;"></div>
+<div><a href="https://www.ethercat.org/forms/china2023/registration.aspx" rel="nofollow noreferrer noopener" title="https://www.ethercat.org/forms/china2023/registration.aspx" target="_blank">2024.10.21和25日 EtherCAT路演北京、武汉、深圳 期待与您见面！</a></div>
+</div>
+<div> </div>
+<div>
+<div>
+<br>北京盟通科技有限公司 <br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>+86- 571- 56125098 （杭州）</div>
+<div>+886-2-25222206 （台北）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" title="http://www.motrotech.com" target="_blank"></a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div style="color:#1f497d;"><br></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

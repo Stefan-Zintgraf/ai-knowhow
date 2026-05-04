@@ -1,0 +1,162 @@
+### HEADER
+Id=8037
+Link=http://at-zammad/#ticket/zoom/8037
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Akribis, VMC-EC (ID=728, Number=728)
+Number=708037
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=07.05.2024 01:47:52 +00:00
+UpdatedAt=17.05.2024 06:22:07 +00:00
+CloseAt=17.05.2024 06:22:07 +00:00
+ArticlesCount=3
+
+### TITLE
+The customer Akribis ask the update for EcMaster
+
+### ARTICLE00_HEADER
+Id=44307
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.05.2024 01:47:53 +00:00
+UpdatedAt=07.05.2024 01:47:56 +00:00
+
+### ARTICLE00_SUBJECT
+The customer Akribis ask the update for EcMaster
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>The customer Akribis order the EcMaster at 13.12.2022. The first version is 3.1.14.07.</div>
+<div>Now they want to using intel i226 linklayer, But they don't want to order the update. Because they didn't use the EcMaster in product, their engineer can't apply the new order.</div>
+<div>Could you please update their last version, that it could help them continue to development the product.</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=44322
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=07.05.2024 08:13:06 +00:00
+UpdatedAt=07.05.2024 08:13:06 +00:00
+
+### ARTICLE01_BODY
+eMail an SZF
+
+### ARTICLE02_HEADER
+Id=44328
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.05.2024 08:46:10 +00:00
+UpdatedAt=07.05.2024 08:46:13 +00:00
+
+### ARTICLE02_SUBJECT
+The customer Akribis ask the update for EcMaster
+
+### ARTICLE02_BODY
+Hi John,<div><br></div><div>please find below the latest V3.1 from 2023 containing 3 Device IDs for I226:</div><div>
+<p>#define
+PCI_DEVICE_I226LM                  
+((EC_T_WORD)0x125B)     /**&lt; (0x8086, 0x125B) */</p>
+
+<p>#define PCI_DEVICE_I226V                   
+((EC_T_WORD)0x125C)     /**&lt; (0x8086, 0x125C) */</p>
+
+<p>#define
+PCI_DEVICE_I226IT                  
+((EC_T_WORD)0x125D)     /**&lt; (0x8086, 0x125D) */</p>
+<p><br></p>
+</div><div>
+<div><a href="https://downloads.acontis.com/2024/A/Akribis_(40604)(CN)/EC-Master_Linux_x86_64Bit/3.1.4.15/EC-Master-ClassA-AddOn-V3.1.4.15-Linux-x86_64Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2024/A/Akribis_(40604)(CN)/EC-Master_Linux_x86_64Bit/3.1.4.15/EC-Master-ClassA-AddOn-V3.1.4.15-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/A/Akribis_(40604)(CN)/EC-Master_Linux_x86_64Bit/3.1.4.15/EC-Master-ClassA-AddOn-V3.1.4.15-Linux-x86_64Bit-SDK_Protected.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2024/A/Akribis_(40604)(CN)/EC-Master_Linux_x86_64Bit/3.1.4.15/EC-Master-I8254x-V3.1.4.15-Linux-x86_64Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2024/A/Akribis_(40604)(CN)/EC-Master_Linux_x86_64Bit/3.1.4.15/EC-Master-I8254x-V3.1.4.15-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/A/Akribis_(40604)(CN)/EC-Master_Linux_x86_64Bit/3.1.4.15/EC-Master-I8254x-V3.1.4.15-Linux-x86_64Bit-SDK_Protected.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2024/A/Akribis_(40604)(CN)/EC-Master_Linux_x86_64Bit/3.1.4.15/EC-Master-V3.1.4.15-Linux-x86_64Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2024/A/Akribis_(40604)(CN)/EC-Master_Linux_x86_64Bit/3.1.4.15/EC-Master-V3.1.4.15-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/A/Akribis_(40604)(CN)/EC-Master_Linux_x86_64Bit/3.1.4.15/EC-Master-V3.1.4.15-Linux-x86_64Bit-SDK_Protected.tar.gz</a></div>
+</div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, May 7, 2024 at 3:47:53 AM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>The customer Akribis order the EcMaster at 13.12.2022. The first version is 3.1.14.07.</div>
+<div>Now they want to using intel i226 linklayer, But they don't want to order the update. Because they didn't use the EcMaster in product, their engineer can't apply the new order.</div>
+<div>Could you please update their last version, that it could help them continue to development the product.</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

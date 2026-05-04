@@ -1,0 +1,254 @@
+### HEADER
+Id=3504
+Link=http://at-zammad/#ticket/zoom/3504
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=JSLT (ID=402, Number=0, Country=JP)
+Commission=Yamaha Motor, Robot Controller (ID=325, Number=325)
+Number=703504
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=eiji.kumakura@jslt.co.jp (ID=21, FirstName=Eiji, LastName=Kumakura)
+CreatedBy=eiji.kumakura@jslt.co.jp (ID=21, FirstName=Eiji, LastName=Kumakura)
+Type=
+TimeUnit=
+CreatedAt=20.07.2022 01:27:10 +00:00
+UpdatedAt=20.07.2022 08:22:34 +00:00
+CloseAt=20.07.2022 08:22:34 +00:00
+ArticlesCount=3
+
+### TITLE
+Question about activation MAC address from YAMAHA.
+
+### ARTICLE00_HEADER
+Id=18608
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=20.07.2022 01:27:10 +00:00
+UpdatedAt=20.07.2022 01:27:13 +00:00
+
+### ARTICLE00_SUBJECT
+Question about activation MAC address from YAMAHA.
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+I have a question about the MAC address used for activation.
+
+For example, some machines have multiple ether ports.
+   --Eth0: Port used by EC-MASTER.
+   --Eth1: Port used by internet.
+
+In this case, does the activation MAC address have to be the Eth0 MAC address?
+Or is it okay with the Eth1 MAC address?
+
+-------------------------------------------------------
+----- The Japanese translation is as follows: -----
+-------------------------------------------------------
+
+ライセンス認証の際使用するMACアドレスについて質問です。
+
+例えば複数のetherポートがあるマシン
+  - Eth0 : EC-MASTERで使用するポート。
+  - Eth1 : 通常のinternetで使用するポート。
+
+この場合、ライセンス認証MACアドレスは、Eth0のMACアドレスであることが必須でしょうか？
+それとも、Eth1のMACアドレスでも問題ないでしょうか？
+
+-------------------------------------------------------
+
+Best regards,
+Eiji Kumakura
+
+====================
+JSL Technology Co.,Ltd
+
+2F 911-1 Tanaka-cho, Ashikaga-shi,
+Tochigi 326-0822 Japan
+
+Email: eiji.kumakura@jslt.co.jp
+URL: http://www.jslt.co.jp/
+
+Tel: 81-284-22-7091
+Fax: 81-284-24-7092
+====================
+
+
+### ARTICLE01_HEADER
+Id=18620
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.07.2022 06:59:41 +00:00
+UpdatedAt=20.07.2022 06:59:44 +00:00
+
+### ARTICLE01_SUBJECT
+Question about activation MAC address from YAMAHA.
+
+### ARTICLE01_BODY
+Hi Eiji,<div><br></div><div>the MAC address used for the license must be the one of the MAC used for EtherCAT.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, July 20, 2022 at 3:27:10 AM, Eiji Kumakura wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>I have a question about the MAC address used for activation.</div>
+<div><br></div>
+<div>For example, some machines have multiple ether ports.</div>
+<div>   --Eth0: Port used by EC-MASTER.</div>
+<div>   --Eth1: Port used by internet.</div>
+<div><br></div>
+<div>In this case, does the activation MAC address have to be the Eth0 MAC address?</div>
+<div>Or is it okay with the Eth1 MAC address?</div>
+<div><br></div>
+<div>-------------------------------------------------------</div>
+<div>----- The Japanese translation is as follows: -----</div>
+<div>-------------------------------------------------------</div>
+<div><br></div>
+<div>ライセンス認証の際使用するMACアドレスについて質問です。</div>
+<div><br></div>
+<div>例えば複数のetherポートがあるマシン</div>
+<div>  - Eth0 : EC-MASTERで使用するポート。</div>
+<div>  - Eth1 : 通常のinternetで使用するポート。</div>
+<div><br></div>
+<div>この場合、ライセンス認証MACアドレスは、Eth0のMACアドレスであることが必須でしょうか？</div>
+<div>それとも、Eth1のMACアドレスでも問題ないでしょうか？</div>
+<div><br></div>
+<div>-------------------------------------------------------</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Eiji Kumakura</div>
+<div><br></div>
+<div>====================</div>
+<div>JSL Technology Co.,Ltd</div>
+<div><br></div>
+<div>2F 911-1 Tanaka-cho, Ashikaga-shi,</div>
+<div>Tochigi 326-0822 Japan</div>
+<div><br></div>
+<div>Email: eiji.kumakura@jslt.co.jp</div>
+<div>URL: <a href="http://www.jslt.co.jp/" title="http://www.jslt.co.jp/" rel="nofollow noreferrer noopener" target="_blank">http://www.jslt.co.jp/</a>
+</div>
+<div><br></div>
+<div>Tel: 81-284-22-7091</div>
+<div>Fax: 81-284-24-7092</div>
+<div>====================</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=18625
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=20.07.2022 07:12:24 +00:00
+UpdatedAt=20.07.2022 07:12:24 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about activation MAC address from YAMAHA. [Ticket#703504]
+
+### ARTICLE02_BODY
+Hi Cyril
+
+Thank you for your answer.
+I will let my customer know.
+
+Best regards,
+Eiji
+
+====================
+JSL Technology Co.,Ltd
+
+2F 911-1 Tanaka-cho, Ashikaga-shi,
+Tochigi 326-0822 Japan
+
+Email: eiji.kumakura@jslt.co.jp
+URL: http://www.jslt.co.jp/
+
+Tel: 81-284-22-7091
+Fax: 81-284-24-7092
+====================
+
+On 2022/07/20 15:59, Cyril Eyssautier via EC-Support wrote:
+> Hi Eiji,
+> 
+> the MAC address used for the license must be the one of the MAC used for EtherCAT.
+> 
+> Best Regards,
+> Cyril
+> __________________________________________________________________________________________
+> Cyril Eyssautier
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> On Wednesday, July 20, 2022 at 3:27:10 AM, Eiji Kumakura wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> I have a question about the MAC address used for activation.
+>>
+>> For example, some machines have multiple ether ports.
+>>   --Eth0: Port used by EC-MASTER.
+>>   --Eth1: Port used by internet.
+>>
+>> In this case, does the activation MAC address have to be the Eth0 MAC address?
+>> Or is it okay with the Eth1 MAC address?
+>>
+>> -------------------------------------------------------
+>> ----- The Japanese translation is as follows: -----
+>> -------------------------------------------------------
+>>
+>> ライセンス認証の際使用するMACアドレスについて質問です。
+>>
+>> 例えば複数のetherポートがあるマシン
+>>  - Eth0 : EC-MASTERで使用するポート。
+>>  - Eth1 : 通常のinternetで使用するポート。
+>>
+>> この場合、ライセンス認証MACアドレスは、Eth0のMACアドレスであることが必須でしょうか？
+>> それとも、Eth1のMACアドレスでも問題ないでしょうか？
+>>
+>> -------------------------------------------------------
+>>
+>> Best regards,
+>> Eiji Kumakura
+>>
+>> ====================
+>> JSL Technology Co.,Ltd
+>>
+>> 2F 911-1 Tanaka-cho, Ashikaga-shi,
+>> Tochigi 326-0822 Japan
+>>
+>> Email: eiji.kumakura@jslt.co.jp
+>> URL: http://www.jslt.co.jp/ <http://www.jslt.co.jp/>
+>>
+>> Tel: 81-284-22-7091
+>> Fax: 81-284-24-7092
+>> ====================
+>>
+> 
+> 
+> 
+

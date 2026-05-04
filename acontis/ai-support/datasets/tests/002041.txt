@@ -1,0 +1,125 @@
+### HEADER
+Id=2041
+Link=http://at-zammad/#ticket/zoom/2041
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Sierra CP Engineering Limited (ID=322, Number=40369, Country=UK)
+Commission=Sierra CP, CADET Controller  (ID=384, Number=384)
+Number=702041
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=gjm@sierra-cp.com (ID=156, FirstName=Greg, LastName=McElroy)
+CreatedBy=gjm@sierra-cp.com (ID=156, FirstName=Greg, LastName=McElroy)
+Type=
+TimeUnit=
+CreatedAt=08.12.2021 17:31:55 +00:00
+UpdatedAt=16.12.2021 14:12:07 +00:00
+CloseAt=16.12.2021 14:12:07 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-Master SDK- ADS Support
+
+### ARTICLE00_HEADER
+Id=10715
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.12.2021 17:31:56 +00:00
+UpdatedAt=08.12.2021 17:32:02 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Master SDK- ADS Support
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,<br>
+<br> We have been using EC-Engineer to configure a Beckhoff EL6751 CAN module for RAW CAN frames and has been working just fine. Now we wish to improve our solution by allowing the Baud rate of a module to be configured dynamically without creating a new ENI xml for each change.<br>
+<br> I read through the Beckhoff manual and it appeared that this was possible via SDO configurations but I did not have any success and raised a ticket with Beckhoff who have said that this is only possible via the ADS interface. </p>
+<p> </p>
+<p>Does the EtherCAT Master support ADS? I cannot find any reference to the interface in the manuals.</p>
+<p> </p>
+<p>Regards,</p>
+<p>Greg McElroy</p>
+<p>Software Engineer</p>
+<p>Sierra CP Engineering Limited</p>
+<p><b><img src="/api/v1/ticket_attachment/2041/10715/41406?view=inline" alt="sierra-cp-logo-01" style="max-width:100%;width:227px;max-height:69px;"></b></p>
+<p>Website: <a href="http://www.sierra-cp.com/" rel="nofollow noreferrer noopener" target="_blank">www.sierra-cp.com</a></p>
+<p>Sandy’s Road Malvern, WR14 1JJ, UK</p>
+<p> </p>
+<p><img border="0" src="/api/v1/ticket_attachment/2041/10715/41407?view=inline" alt="cid:image002.png@01D6CCA1.41599840" style="max-width:100%;width:277px;max-height:85px;"><img border="0" src="/api/v1/ticket_attachment/2041/10715/41408?view=inline" alt="See the source image" style="max-width:100%;width:82px;max-height:82px;"></p>
+<p> </p>
+<p>Sierra CP Engineering Limited is registered in England and Wales. Registered Number: 2827565.</p>
+<p> </p>
+<p><b>NOTICE: This message may contain confidential and/or privileged information. If you are not the addressee or authorized to receive this for the addressee, you must not use, copy, disclose, or take any action based on this message or any information herein. If you have received this message in error, please advise the sender immediately by reply e-mail and delete this message. Thank you for your cooperation.</b></p>
+<p> </p>
+<p><img border="0" src="/api/v1/ticket_attachment/2041/10715/41409?view=inline" alt="Untitled.jpg" style="max-width:100%;width:19px;max-height:18px;"> PLEASE CONSIDER THE ENVIRONMENT BEFORE YOU PRINT THIS E-MAIL</p>
+<p> </p>
+</div><span class="js-signatureMarker"></span><br> ________________________________________________________________________<br> This e-mail has been scanned for all viruses by Claranet. The<br> service is powered by MessageLabs. For more information on a proactive<br> anti-virus service working around the clock, around the globe, visit:<br>
+<a href="http://www.claranet.co.uk" rel="nofollow noreferrer noopener" target="_blank">http://www.claranet.co.uk</a><br> ________________________________________________________________________
+
+### ARTICLE01_HEADER
+Id=10724
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.12.2021 07:00:30 +00:00
+UpdatedAt=09.12.2021 07:00:32 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Master SDK- ADS Support
+
+### ARTICLE01_BODY
+Hi Greg,<div><br></div><div>ADS objects are transferred using AoE. The EC-Master supports AoE.</div><div><br></div><div>Best regards,</div><div>Paul<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Mittwoch, 8. Dezember 2021, 18:31:56, schrieb Greg McElroy:<br><br><div>
+<p>Hello,<br>
+<br> We have been using EC-Engineer to configure a Beckhoff EL6751 CAN module for RAW CAN frames and has been working just fine. Now we wish to improve our solution by allowing the Baud rate of a module to be configured dynamically without creating a new ENI xml for each change.<br>
+<br> I read through the Beckhoff manual and it appeared that this was possible via SDO configurations but I did not have any success and raised a ticket with Beckhoff who have said that this is only possible via the ADS interface. </p>
+<p> </p>
+<p>Does the EtherCAT Master support ADS? I cannot find any reference to the interface in the manuals.</p>
+<p> </p>
+<p>Regards,</p>
+<p>Greg McElroy</p>
+<p>Software Engineer</p>
+<p>Sierra CP Engineering Limited</p>
+<p><b><img src="/api/v1/ticket_attachment/2041/10724/41443?view=inline" alt="sierra-cp-logo-01" style="max-width:100%;max-width:100%;width:227px;max-height:69px;"></b></p>
+<p>Website: <a href="http://www.sierra-cp.com/" rel="nofollow noreferrer noopener" target="_blank">www.sierra-cp.com</a></p>
+<p>Sandy’s Road Malvern, WR14 1JJ, UK</p>
+<p> </p>
+<p><img border="0" src="/api/v1/ticket_attachment/2041/10724/41444?view=inline" alt="cid:image002.png@01D6CCA1.41599840" style="max-width:100%;max-width:100%;width:277px;max-height:85px;"><img border="0" src="/api/v1/ticket_attachment/2041/10724/41445?view=inline" alt="See the source image" style="max-width:100%;max-width:100%;width:82px;max-height:82px;"></p>
+<p> </p>
+<p>Sierra CP Engineering Limited is registered in England and Wales. Registered Number: 2827565.</p>
+<p> </p>
+<p><b>NOTICE: This message may contain confidential and/or privileged information. If you are not the addressee or authorized to receive this for the addressee, you must not use, copy, disclose, or take any action based on this message or any information herein. If you have received this message in error, please advise the sender immediately by reply e-mail and delete this message. Thank you for your cooperation.</b></p>
+<p> </p>
+<p><img border="0" src="/api/v1/ticket_attachment/2041/10724/41446?view=inline" alt="Untitled.jpg" style="max-width:100%;max-width:100%;width:19px;max-height:18px;"> PLEASE CONSIDER THE ENVIRONMENT BEFORE YOU PRINT THIS E-MAIL</p>
+<p> </p>
+</div>
+<span class="js-signatureMarker"></span><br> ________________________________________________________________________<br> This e-mail has been scanned for all viruses by Claranet. The<br> service is powered by MessageLabs. For more information on a proactive<br> anti-virus service working around the clock, around the globe, visit:<br>
+<a href="http://www.claranet.co.uk" rel="nofollow noreferrer noopener" target="_blank">http://www.claranet.co.uk</a><br> ________________________________________________________________________<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,110 @@
+### HEADER
+Id=5381
+Link=http://at-zammad/#ticket/zoom/5381
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=AJINEXTEK, Motion-Controller (ID=332, Number=332)
+Number=705381
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=12.04.2023 12:16:11 +00:00
+UpdatedAt=12.04.2023 13:21:25 +00:00
+CloseAt=12.04.2023 13:21:24 +00:00
+ArticlesCount=2
+
+### TITLE
+Related to JOB_sendAllCycFrame value increasing.
+
+### ARTICLE00_HEADER
+Id=28505
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.04.2023 12:16:11 +00:00
+UpdatedAt=12.04.2023 12:16:13 +00:00
+
+### ARTICLE00_SUBJECT
+Related to JOB_sendAllCycFrame value increasing.
+
+### ARTICLE00_BODY
+<div>
+<table style=" border-left: 3px solid rgb(221, 221, 221); border-right: 1px solid rgb(221, 221, 221);" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td style="color: rgb(17, 17, 17); font-size: 13px; padding-left: 15px; padding-right: 15px;"> 대용량 첨부파일1개 | 1 Large files <span style="color: rgb(51, 51, 51);">(28.2MB)</span> <span style="color: rgb(0, 128, 255);">2023-04-11 19:41:11 ~ 2023-04-21 19:41:11</span> (<span style="color: rgb(252, 35, 7);">10</span> days keep, <span style="color: rgb(252, 35, 7);">100 </span> times downloadable)</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td style="padding-left: 15px; padding-right: 15px;">
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left" valign="top" style="color: rgb(51, 51, 51); font-size: 13px;">
+<a href="http://ngw.prestosolution.co.kr/Mail2/bigfiledown?id=b60c2c3c-4b7c-43c7-84d2-5548e765a1ca" rel="nofollow noreferrer noopener" title="http://ngw.prestosolution.co.kr/Mail2/bigfiledown?id=b60c2c3c-4b7c-43c7-84d2-5548e765a1ca" target="_blank">Video_2023_04_11_11_47_10_972.mp4</a> <span style="color: rgb(153, 153, 153);"> (28.2MB)</span>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div><p><br></p><p>Hi.</p><p><br></p><p>The customer is asking for an answer urgently.</p><p><br></p><p>Sorry. Please reply by today.</p><p><br></p><p>Have a nice day.</p><p><br></p><span class="js-signatureMarker"></span><p>----------------------------------</p><p>Hi</p><p><br></p><p>The customer is Ajin.</p><p><br></p><p>The customer said, sometimes "SendAllCycFrame" value is very large.</p><p><br></p><p>&amp; are assuming that this is causing DCM Out of Sync error in some site.</p><p><br></p><p>As shown in the figure below, you can see that the max value of "JOB_sendAllCycFrame.." goes from 30usec to 423usec. (runing ECMasterDemoDC Example)</p><p><br></p><p>This is a PC that has undergone the optimization recommended by Acontis and has been confirmed to have no problems by Realtime Analyze of System Manager.</p><p><br></p><p>They've done a lot of testing and can confirm that this problem occurs the moment they run the BurnInTest Program.</p><p><br></p><p>The PC that run their application run with many other application programs.</p><p><br></p><p>So They want to know what causes this problem, how to check it and get a solution.</p><p><br></p><p>Please refer to attached video file &amp; advise. (You can see this happening at the 2minute mark in the video.)</p><p><br></p><p><img src="/api/v1/ticket_attachment/5381/28505/120448?view=inline" alt="" style="max-width:100%;width: 784px;max-height: 826px;"></p><p><br></p><p>1) EC-Win Version</p><p><img src="/api/v1/ticket_attachment/5381/28505/120449?view=inline" alt="" style="max-width:100%;width: 326px;max-height: 400px;"></p><p><br></p><p><br></p><p>2)Topology</p><p># Master (DIO x1, Servo AMP x4)</p><p>- N3ECAT-DB32(AXT, EtherCAT DIO Slave) - MADHT1505BA1(Panasonic, EtherCAT Servo AMP) - MADHT1505BA1(Panasonic, EtherCAT Servo AMP)</p><p>- MADHT1505BA1(Panasonic, EtherCAT Servo AMP) - MADHT1505BA1(Panasonic, EtherCAT Servo AMP)</p><p><br></p><div>3) BurnInTest V8.1</div><div><img src="/api/v1/ticket_attachment/5381/28505/120450?view=inline" alt="" style="max-width:100%;width: 786px;max-height: 553px;"></div><div> </div><div>4) Result of Realtime Analyze</div><div><img src="/api/v1/ticket_attachment/5381/28505/120451?view=inline" alt="" style="max-width:100%;width: 938px;max-height: 499px;"></div><p><br></p><br><br><p><br></p><p>감사합니다.</p><p><br></p><p>Thank you</p><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;">
+<tbody>
+<tr>
+<td style=" padding: 0px;">
+<p><img src="/api/v1/ticket_attachment/5381/28505/120452?view=inline" title="" alt="" style="max-width:100%;width: 129px;max-height: 103px;"></p>
+</td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sundukhan@prestosolution.co.kr</a></span></u></i><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br> Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br> distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p><br><br><p><br></p><p>감사합니다.</p><p><br></p><p>Thank you</p><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p><img src="/api/v1/ticket_attachment/5381/28505/120453?view=inline" title="" alt="" style="max-width:100%;width: 129px;max-height: 103px;"></p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sundukhan@prestosolution.co.kr</a></span></u></i><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table><p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+
+### ARTICLE01_HEADER
+Id=28507
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=12.04.2023 13:21:25 +00:00
+UpdatedAt=12.04.2023 13:21:25 +00:00
+
+### ARTICLE01_BODY
+rt-support

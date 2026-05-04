@@ -1,0 +1,173 @@
+### HEADER
+Id=229
+Link=http://at-zammad/#ticket/zoom/229
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OSAIcnc S.r.l. (ID=195, Number=57504, Country=IT)
+Commission=OSAIcnc S.r.l., OPENcontrol WinCE (ID=234, Number=234)
+Number=700229
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=gianluca.pasqualotto@osaicnc.com (ID=41, FirstName=Gianluca, LastName=Pasqualotto)
+CreatedBy=gianluca.pasqualotto@osaicnc.com (ID=41, FirstName=Gianluca, LastName=Pasqualotto)
+Type=
+TimeUnit=
+CreatedAt=16.03.2021 14:24:53 +00:00
+UpdatedAt=25.04.2022 12:28:05 +00:00
+CloseAt=16.03.2021 17:08:24 +00:00
+ArticlesCount=3
+
+### TITLE
+Network simulation question
+
+### ARTICLE00_HEADER
+Id=975
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.03.2021 14:24:53 +00:00
+UpdatedAt=16.03.2021 14:24:54 +00:00
+
+### ARTICLE00_SUBJECT
+Network simulation question
+
+### ARTICLE00_BODY
+<div>
+<p>Dear EC Support,</p>
+<p> </p>
+<p>I am wondering if possible to make a simulation of a configured EtherCAT network.</p>
+<p>The master should be configured with a complete ENI but with no slaves actually connected to the controller.</p>
+<p>A special ethernet cable should be built, e.g. with a termination (resistance) for closing the TX wires to the RX.</p>
+<p>The master should be configured for simulating the presence of the slaves (e.g. ignoring DC, WKC, etc.).</p>
+<p>The scope of all this job is for testing the HW of the controller (data transmission and receive) with a big configuration that actually cannot be built.</p>
+<p>Do you think could be possible to do this ? Is there something already available to do some simulation ? Thanks.</p>
+<p> </p>
+<p>Best Regards,</p>
+<p>Gianluca</p>
+<p> </p>
+<p><img style="max-width:100%;width:1.4895in;max-height:.4583in;width:143px;max-height:44px;" src="/api/v1/ticket_attachment/229/975/2300?view=inline"></p>
+<p><b>Gianluca Pasqualotto</b></p>
+<p>R&amp;D - CNC/Servo Software Development Senior Engineer</p>
+<p>Ufficio +39 0125 190 6267</p>
+<p>Mobile +39 329 035 9043</p>
+<p> </p>
+<p>OSAIcnc s.r.l.</p>
+<p>Sede Legale e Operativa: Via Jervis, 11 – 10015 Ivrea (TO) Italia</p>
+<p>Sede Logistica: Via Torino, 14 – 10010 Barone Canavese (TO) Italia</p>
+<p>Indirizzo PEC: osaicncsrl@pec.osaicncsrl.it</p>
+<p><a href="http://www.osaicnc.com" rel="nofollow noreferrer noopener" target="_blank">www.osaicnc.com</a></p>
+<p> </p>
+<p>Questo messaggio e i suoi allegati sono indirizzati esclusivamente ai destinatari. La diffusione, copia o qualsiasi altra azione derivante dalla conoscenza di queste informazioni sono rigorosamente vietate. Qualora abbiate ricevuto questo messaggio per errore siete invitati a comunicarlo al mittente e a provvedere alla sua distruzione.</p>
+<p><i>This e-mail and any attachments are confidential and may contain privileged information intended for the addressee(s) only. Dissemination, copying, printing or use by anybody else is unauthorized. If you are not the intended recipient, please delete this message and any attachments and advise the sender by return e-mail.</i></p>
+<p> </p>
+<p>P <i>Please consider the environment before printing!</i></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=976
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.03.2021 14:34:45 +00:00
+UpdatedAt=16.03.2021 14:34:46 +00:00
+
+### ARTICLE01_SUBJECT
+Network simulation question
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>hier ist eine Anfrage für einen Simulator. Soll ich ihm antworten oder geht das direkt in den Vertrieb?</div><div><br></div><div>Viele Grüße</div><div>Paul</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<br><div>---Begin forwarded message:---<br><br>
+</div>
+<div><blockquote type="cite">
+<div>Betreff: Network simulation question<br>Datum: 16.03.2021 15:24<br>Von: Gianluca Pasqualotto &lt;gianluca.pasqualotto@osaicnc.com&gt;<br>An: EtherCAT Support &lt;ecsupport@acontis.com&gt;<br><br>
+</div>
+<div>
+<p>Dear EC Support,</p>
+<p> </p>
+<p>I am wondering if possible to make a simulation of a configured EtherCAT network.</p>
+<p>The master should be configured with a complete ENI but with no slaves actually connected to the controller.</p>
+<p>A special ethernet cable should be built, e.g. with a termination (resistance) for closing the TX wires to the RX.</p>
+<p>The master should be configured for simulating the presence of the slaves (e.g. ignoring DC, WKC, etc.).</p>
+<p>The scope of all this job is for testing the HW of the controller (data transmission and receive) with a big configuration that actually cannot be built.</p>
+<p>Do you think could be possible to do this ? Is there something already available to do some simulation ? Thanks.</p>
+<p> </p>
+<p>Best Regards,</p>
+<p>Gianluca</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:1.4895in;max-height:.4583in;width:143px;max-height:44px;" src="/api/v1/ticket_attachment/229/976/2301?view=inline"></p>
+<p><b>Gianluca Pasqualotto</b></p>
+<p>R&amp;D - CNC/Servo Software Development Senior Engineer</p>
+<p>Ufficio +39 0125 190 6267</p>
+<p>Mobile +39 329 035 9043</p>
+<p> </p>
+<p>OSAIcnc s.r.l.</p>
+<p>Sede Legale e Operativa: Via Jervis, 11 – 10015 Ivrea (TO) Italia</p>
+<p>Sede Logistica: Via Torino, 14 – 10010 Barone Canavese (TO) Italia</p>
+<p>Indirizzo PEC: osaicncsrl@pec.osaicncsrl.it</p>
+<p><a href="http://www.osaicnc.com" rel="nofollow noreferrer noopener" target="_blank">www.osaicnc.com</a></p>
+<p> </p>
+<p>Questo messaggio e i suoi allegati sono indirizzati esclusivamente ai destinatari. La diffusione, copia o qualsiasi altra azione derivante dalla conoscenza di queste informazioni sono rigorosamente vietate. Qualora abbiate ricevuto questo messaggio per errore siete invitati a comunicarlo al mittente e a provvedere alla sua distruzione.</p>
+<p><i>This e-mail and any attachments are confidential and may contain privileged information intended for the addressee(s) only. Dissemination, copying, printing or use by anybody else is unauthorized. If you are not the intended recipient, please delete this message and any attachments and advise the sender by return e-mail.</i></p>
+<p> </p>
+<p>P <i>Please consider the environment before printing!</i></p>
+<p> </p>
+</div>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=989
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=16.03.2021 17:08:24 +00:00
+UpdatedAt=16.03.2021 17:08:24 +00:00
+
+### ARTICLE02_BODY
+<p> </p>
+
+<p><b>Von:</b> Christoph Widmann &lt;c.widmann@acontis.com&gt; <br>
+<b>Gesendet:</b> Dienstag, 16. März 2021 17:35<br>
+<b>An:</b> 'Paul Bußmann' &lt;p.bussmann@acontis.com&gt;<br>
+<b>Betreff:</b> AW: Network simulation question [Ticket#700229]</p>
+
+<p> </p>
+
+<p>Hallo Paul,</p>
+
+<p> </p>
+
+<p>du kannst das Ticket schliessen.</p>
+
+<p>Ich setze dich auf cc.</p>
+
+<p> </p>
+
+<p>Christoph</p>

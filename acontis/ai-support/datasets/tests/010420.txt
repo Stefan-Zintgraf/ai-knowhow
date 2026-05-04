@@ -1,0 +1,203 @@
+### HEADER
+Id=10420
+Link=http://at-zammad/#ticket/zoom/10420
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=7010420
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=abruckelmyer@deltamotion.com (ID=745, FirstName=Aaron, LastName=Bruckelmyer)
+CreatedBy=abruckelmyer@deltamotion.com (ID=745, FirstName=Aaron, LastName=Bruckelmyer)
+Type=
+TimeUnit=
+CreatedAt=17.04.2025 16:29:07 +00:00
+UpdatedAt=25.04.2025 06:13:56 +00:00
+CloseAt=25.04.2025 06:13:56 +00:00
+ArticlesCount=3
+
+### TITLE
+EC-Engineer Diagnose CoE Single Object Hover Text is incorrect
+
+### ARTICLE00_HEADER
+Id=59742
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.04.2025 16:29:07 +00:00
+UpdatedAt=17.04.2025 16:29:15 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Engineer Diagnose CoE Single Object Hover Text is incorrect
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Acontis Support,</p>
+<p> </p>
+<p>The hover text appears to be incorrect in the below CoE Single Object Inputs in EC-Engineer v4.0.4 and also in previous versions.</p>
+<p> </p>
+<p>The “SubIndex” input indicates “Length of data to be displayed”</p>
+<p> </p>
+<p>The “Size” input indicates “Start Address of the first register”</p>
+<p> </p>
+<p>The “Complete Access” input indicates “Displays only registers, which has a description”</p>
+<p> </p>
+<p><img style="max-width:100%;width:15.975in;max-height:8.5in;width:1534px;max-height:816px;" src="/api/v1/ticket_attachment/10420/59742/249132?view=inline"></p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p><b><span style="color:#0f1964;">Aaron</span></b><b><span style="color:#3b4908;">
+</span></b><b>Bruckelmyer</b><span><br>
+</span><i>Software Engineer</i><span><br> Delta Motion</span></p>
+<p><span><br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0169" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0169" target="_blank"><span style="color:#0563c1;">+1-360-702-0169</span></a></span></p>
+<p><span><a href="mailto:abruckelmyer@deltamotion.com"><span style="color:#0563c1;">abruckelmyer@deltamotion.com</span></a>
+</span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=59814
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.04.2025 12:28:55 +00:00
+UpdatedAt=22.04.2025 12:28:57 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Engineer Diagnose CoE Single Object Hover Text is incorrect
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes, this is a bug. It will be fixed in the next version.<br><div><br></div>
+<div>Best Regards,</div>
+<div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, April 17, 2025 at 6:29:07 PM, Aaron Bruckelmyer wrote:<br><br><div>
+<p>Hi Acontis Support,</p>
+<p> </p>
+<p>The hover text appears to be incorrect in the below CoE Single Object Inputs in EC-Engineer v4.0.4 and also in previous versions.</p>
+<p> </p>
+<p>The “SubIndex” input indicates “Length of data to be displayed”</p>
+<p> </p>
+<p>The “Size” input indicates “Start Address of the first register”</p>
+<p> </p>
+<p>The “Complete Access” input indicates “Displays only registers, which has a description”</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:15.975in;max-height:8.5in;width:1534px;max-height:816px;" src="/api/v1/ticket_attachment/10420/59814/249444?view=inline"></p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p><b><span style="color:#0f1964;">Aaron</span></b><b><span style="color:#3b4908;">
+</span></b><b>Bruckelmyer</b><span><br>
+</span><i>Software Engineer</i><span><br> Delta Motion</span></p>
+<p><span><br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0169" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0169" target="_blank"><span style="color:#0563c1;">+1-360-702-0169</span></a></span></p>
+<p><span><a href="mailto:abruckelmyer@deltamotion.com"><span style="color:#0563c1;">abruckelmyer@deltamotion.com</span></a>
+</span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=59817
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.04.2025 12:40:23 +00:00
+UpdatedAt=22.04.2025 12:40:23 +00:00
+
+### ARTICLE02_SUBJECT
+Re: EC-Engineer Diagnose CoE Single Object Hover Text is incorrect [Ticket#7010420]
+
+### ARTICLE02_BODY
+<div dir="auto">Ok. Thanks Martin!</div><div dir="auto">
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">Aaron</div>
+<div dir="auto">
+<br>
+</div>
+<hr>
+<div dir="auto">
+<b>From:</b> Martin Gaenzer via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Tuesday, April 22, 2025 5:29:06 AM<br>
+<b>To:</b> Aaron Bruckelmyer &lt;ABruckelmyer@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: EC-Engineer Diagnose CoE Single Object Hover Text is incorrect [Ticket#7010420]<br>
+</div>
+<br> Hi, <div dir="auto">
+<br>
+</div>
+<div dir="auto">yes, this is a bug. It will be fixed in the next version.</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">Best Regards,</div>
+<div dir="auto">Martin</div>
+<div dir="auto">__________________________________________________________________________________________</div>
+<div dir="auto">Martin Gaenzer</div>
+<div dir="auto">EtherCAT Support</div>
+<div dir="auto">eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div dir="auto">acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com</a>
+</div>
+<div dir="auto">__________________________________________________________________________________________</div>
+<div dir="auto">Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com/en/newsletter.html</a>
+</div>
+<div dir="auto">
+<br>
+<br>
+</div>
+<blockquote> On Thursday, April 17, 2025 at 6:29:07 PM, Aaron Bruckelmyer wrote:<br>
+<br>
+<p>Hi Acontis Support,</p>
+<p> </p>
+<p>The hover text appears to be incorrect in the below CoE Single Object Inputs in EC-Engineer v4.0.4 and also in previous versions.</p>
+<p> </p>
+<p>The “SubIndex” input indicates “Length of data to be displayed”</p>
+<p> </p>
+<p>The “Size” input indicates “Start Address of the first register”</p>
+<p> </p>
+<p>The “Complete Access” input indicates “Displays only registers, which has a description”</p>
+<p> </p>
+<p><img src="/api/v1/ticket_attachment/10420/59817/249452?view=inline" style="max-width:100%;width: 1534px;max-width: 100%;max-height: 816px;width:1534px;"></p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p><span style="color: rgb(15, 25, 100);"><b>Aaron</b></span><span style="color: rgb(59, 73, 8);"><b>
+</b></span><b>Bruckelmyer</b><br>
+<i>Software Engineer</i><br> Delta Motion</p>
+<p><br>
+<span style="color: rgb(42, 42, 42);">Main: </span><span style="color: rgb(5, 99, 193);"><a href="http://tel:+1-360-254-8688" title="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" target="_blank">+1-360-254-8688</a></span><span style="color: rgb(42, 42, 42);"><br> Direct: </span><span style="color: rgb(5, 99, 193);"><a href="http://tel:+1-360-702-0169" title="http://tel:+1-360-702-0169" rel="nofollow noreferrer noopener" target="_blank">+1-360-702-0169</a></span></p>
+<p><span style="color: rgb(5, 99, 193);"><a href="mailto:abruckelmyer@deltamotion.com">abruckelmyer@deltamotion.com</a></span></p>
+<p> </p>
+<br>
+</blockquote>
+<div dir="auto">
+<br>
+</div>
+<br><br>
+</div>

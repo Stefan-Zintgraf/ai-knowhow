@@ -1,0 +1,183 @@
+### HEADER
+Id=6000
+Link=http://at-zammad/#ticket/zoom/6000
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Zetatek Technologies (ID=664, Number=50263, Country=IN)
+Commission=Zetatek Technologies.com, Rate Table (ID=745, Number=745)
+Number=706000
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=bhaskar.gc@zetatektechnologies.com (ID=1626, FirstName=Bhaskar, LastName=Gc)
+CreatedBy=bhaskar.gc@zetatektechnologies.com (ID=1626, FirstName=Bhaskar, LastName=Gc)
+Type=
+TimeUnit=
+CreatedAt=19.07.2023 10:10:14 +00:00
+UpdatedAt=08.09.2023 06:09:33 +00:00
+CloseAt=08.09.2023 06:09:33 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-MASTER Evaluation - July 2023
+
+### ARTICLE00_HEADER
+Id=31986
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.07.2023 10:10:15 +00:00
+UpdatedAt=19.07.2023 10:10:15 +00:00
+
+### ARTICLE00_SUBJECT
+EC-MASTER Evaluation - July 2023
+
+### ARTICLE00_BODY
+<div dir="ltr"><div dir="ltr"><div dir="ltr">Folks,<div> </div>
+<div>1. I have captured the current status of the EC-Master evaluation in the attached PDF file.</div>
+<div>2. I intend to maintain this file as a log during the rest of the evaluation period.</div>
+<div>3. Pls note that the EC-Engineer evaluation version expires on 31st July 2023.</div>
+<div>I would like you to extend it by one more month.</div>
+<div>4. I have attached the config and other files that hopefully will help you debug the behaviour that</div>
+<div>we are currently seeing in our lab here.</div>
+<div>5. Here is the summary of the test runs that I ran today:</div>
+<div>- Note that I am executing EcMasterDemoMotionStart.cmd found in</div>
+<div>C:\ProgramData\EC-Engineer\Motion</div>
+<div> </div>
+<div>
+<div>
+<b>Test Run1:</b><br>
+</div>
+<div> </div>
+<div>- ecmaster0.log_1</div>
+<div>- both motors moved in counter clockwise direction.</div>
+<div> </div>
+<div><b>Test Run2:</b></div>
+<div> </div>
+<div>- ecmaster0.log_2</div>
+<div>- both motors did NOT move.</div>
+<div> </div>
+<div><b>Test Run3:</b></div>
+<div> </div>
+<div>- ecmaster0.log_3</div>
+<div>- both motors did NOT move.</div>
+<div> </div>
+<div><b>Test Run4:</b></div>
+<div> </div>
+<div>- ecmaster0.log_4</div>
+<div>- both motors moved in counter clockwise direction.</div>
+<div> </div>
+<div><b>Test Run5:</b></div>
+<div> </div>
+<div>- ecmaster0.log_5</div>
+<div>- both motors moved in clockwise direction at a higher speed.</div>
+<div>- One motor stops ahead of the other.</div>
+<div> </div>
+<div><b>Test Run6:</b></div>
+<div> </div>
+<div>- ecmaster0.log_6</div>
+<div>- One one motor moved in clockwise direction at a higher speed.</div>
+</div>
+<div> </div>
+<div>Pls let me know what you find.</div>
+<div> </div>
+<div>Thanks,</div>
+<div>GC Bhaskar.</div>
+<div> </div>
+</div></div></div>
+
+### ARTICLE01_HEADER
+Id=32105
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.07.2023 07:03:49 +00:00
+UpdatedAt=21.07.2023 07:03:53 +00:00
+
+### ARTICLE01_SUBJECT
+EC-MASTER Evaluation - July 2023
+
+### ARTICLE01_BODY
+Hi 
+
+GC Bhaskar,<div><br></div><div>according your logs, your configured cycle time is ms:</div><div><div>
+<span>0000000006: Run demo now with cycle time 1000 usec</span><br>
+</div></div><div><br></div><div>but under Windows you cannot achieve it currently:</div><div><div>0000004964: PerfMsmt 'Cycle Time            ' (min/avg/max) [usec]: 1055.7/3171.5/4335.9</div></div><div><br></div><div>Please first change the cycle to 4ms.</div><div>You are running the EcMasterDemoMotion in "standalone mode", where some random movement are commanded. Please activate the command mode:</div><div>
+<img style="max-width:100%;width: 730px;max-width: 100%;" src="/api/v1/ticket_attachment/6000/32105/133416?view=inline"><br>
+</div><div><br></div><div>Then you can command the motors by yourself. It should lead to the same behavior. Please check additionally:</div><div><div><a href="https://www.acontis.com/en/motion-control-library-ec-motion.html" title="https://www.acontis.com/en/motion-control-library-ec-motion.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/motion-control-library-ec-motion.html</a></div></div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, July 19, 2023 at 12:10:15 PM, Bhaskar Gc wrote:<br><br><div dir="ltr"><div dir="ltr"><div dir="ltr">Folks,<div> </div>
+<div>1. I have captured the current status of the EC-Master evaluation in the attached PDF file.</div>
+<div>2. I intend to maintain this file as a log during the rest of the evaluation period.</div>
+<div>3. Pls note that the EC-Engineer evaluation version expires on 31st July 2023.</div>
+<div>I would like you to extend it by one more month.</div>
+<div>4. I have attached the config and other files that hopefully will help you debug the behaviour that</div>
+<div>we are currently seeing in our lab here.</div>
+<div>5. Here is the summary of the test runs that I ran today:</div>
+<div>- Note that I am executing EcMasterDemoMotionStart.cmd found in</div>
+<div>C:\ProgramData\EC-Engineer\Motion</div>
+<div> </div>
+<div>
+<div>
+<b>Test Run1:</b><br>
+</div>
+<div> </div>
+<div>- ecmaster0.log_1</div>
+<div>- both motors moved in counter clockwise direction.</div>
+<div> </div>
+<div><b>Test Run2:</b></div>
+<div> </div>
+<div>- ecmaster0.log_2</div>
+<div>- both motors did NOT move.</div>
+<div> </div>
+<div><b>Test Run3:</b></div>
+<div> </div>
+<div>- ecmaster0.log_3</div>
+<div>- both motors did NOT move.</div>
+<div> </div>
+<div><b>Test Run4:</b></div>
+<div> </div>
+<div>- ecmaster0.log_4</div>
+<div>- both motors moved in counter clockwise direction.</div>
+<div> </div>
+<div><b>Test Run5:</b></div>
+<div> </div>
+<div>- ecmaster0.log_5</div>
+<div>- both motors moved in clockwise direction at a higher speed.</div>
+<div>- One motor stops ahead of the other.</div>
+<div> </div>
+<div><b>Test Run6:</b></div>
+<div> </div>
+<div>- ecmaster0.log_6</div>
+<div>- One one motor moved in clockwise direction at a higher speed.</div>
+</div>
+<div> </div>
+<div>Pls let me know what you find.</div>
+<div> </div>
+<div>Thanks,</div>
+<div>GC Bhaskar.</div>
+<div> </div>
+</div></div></div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

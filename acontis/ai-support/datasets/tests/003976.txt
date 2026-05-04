@@ -1,0 +1,99 @@
+### HEADER
+Id=3976
+Link=http://at-zammad/#ticket/zoom/3976
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Jumo GmbH & Co.KG (ID=126, Number=54502, Country=DE)
+Commission=Carl Cloos, Robotersteuerung (ID=99, Number=99)
+Number=703976
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=dirk.kliegel@jumo.net (ID=128, FirstName=Dirk, LastName=Kliegel)
+CreatedBy=dirk.kliegel@jumo.net (ID=128, FirstName=Dirk, LastName=Kliegel)
+Type=
+TimeUnit=
+CreatedAt=26.09.2022 12:03:52 +00:00
+UpdatedAt=28.09.2022 14:16:34 +00:00
+CloseAt=28.09.2022 14:16:34 +00:00
+ArticlesCount=2
+
+### TITLE
+Neue Version EtherCATMaster
+
+### ARTICLE00_HEADER
+Id=21075
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.09.2022 12:03:52 +00:00
+UpdatedAt=26.09.2022 12:03:53 +00:00
+
+### ARTICLE00_SUBJECT
+Neue Version EtherCATMaster
+
+### ARTICLE00_BODY
+<span>
+<p>Hallo Herr Eyssautier,</p></span>
+<br>
+<br>ich konnte nun endlich den EtherCAT Master und 2 Beispiele übersetzen. <br>
+<br>In der Lieferung der neuen Version waren die Demos EcMasterDemo2 und EcMasterDemoDc nicht mehr enthalten. Wieso? <br>
+<br>Viele Dateien waren verschoben. Wir haben in der Vergangenheit neue Softwarelieferungen einfach über die bestehende Version entpackt. Wenn Dateien veschoben <br>werden ist dies fehlerträchtig. Wäre es da nicht besser unser Source-Dateien vorher weg zu löschen? <br><br><span>Mit freundlichen Grüßen / Best regards <br>
+<br>JUMO GmbH &amp; Co. KG <br>Globale Entwicklung Software / Global Development - Software <br>Applikationen embedded Linux / Applications embedded Linux <br><br>i. A. Dirk Kliegel <br>
+<br>Tel: +49 (0)661 6003-324 <br>Fax: +49 (0)661 6003-604 <br>Adresse: Moritz-Juchheim-Straße 1 <br> 36039 Fulda, Germany <br>E-Mail: </span><a href="mailto:Dirk.Kliegel@jumo.net">mailto:Dirk.Kliegel@jumo.net</a><span>
+<br>Internet: </span><a href="https://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">https://www.jumo.net</a>
+<p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br>
+<br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dipl.-Ingenieur Dimitrios Charisiadis, Dipl.-Betriebswirt Steffen Hoßfeld <br> Ust.-Id.-Nr.: DE 112411234</p>
+
+### ARTICLE01_HEADER
+Id=21097
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.09.2022 09:02:01 +00:00
+UpdatedAt=27.09.2022 09:02:01 +00:00
+
+### ARTICLE01_SUBJECT
+Neue Version EtherCATMaster
+
+### ARTICLE01_BODY
+Hallo Herr Kliegel,<div><br></div><div>Ok. Das sind gute Nachrichten.</div><div>Wir haben die EcMasterDemo2 über Board geworfen. Die EcMasterDemoDc ist nur in Class-A enthalten und Sie haben Class-B lizenziert. Wir haben in V3.1 einige Dateien verschoben. Sie haben Recht. Gerade bei der Demos sollten die Dateien alle einmalig vorkommen. Innerhalb von V3.1 sollte es nicht mehr passieren.</div><div>
+<span>Ich kann nicht wirklich Ihnen sagen, w</span>ie Sie die Source Dateien verwalten sollten. <span>Ich denke dass Sie ihre vorherige Dateien löschen könnten. Git erkennt wenn Dateien verschoben und umbenannt worden sind.</span>
+</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/3976/21097/87526?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, September 26, 2022 at 2:03:52 PM, Dirk Kliegel wrote:<br><br><span>
+<p>Hallo Herr Eyssautier,</p></span>
+<br>
+<br>ich konnte nun endlich den EtherCAT Master und 2 Beispiele übersetzen. <br>
+<br>In der Lieferung der neuen Version waren die Demos EcMasterDemo2 und EcMasterDemoDc nicht mehr enthalten. Wieso? <br>
+<br>Viele Dateien waren verschoben. Wir haben in der Vergangenheit neue Softwarelieferungen einfach über die bestehende Version entpackt. Wenn Dateien veschoben <br>werden ist dies fehlerträchtig. Wäre es da nicht besser unser Source-Dateien vorher weg zu löschen? <br><br><span>Mit freundlichen Grüßen / Best regards <br>
+<br>JUMO GmbH &amp; Co. KG <br>Globale Entwicklung Software / Global Development - Software <br>Applikationen embedded Linux / Applications embedded Linux <br><br>i. A. Dirk Kliegel <br>
+<br>Tel: +49 (0)661 6003-324 <br>Fax: +49 (0)661 6003-604 <br>Adresse: Moritz-Juchheim-Straße 1 <br> 36039 Fulda, Germany <br>E-Mail: </span><a href="mailto:Dirk.Kliegel@jumo.net">mailto:Dirk.Kliegel@jumo.net</a><span>
+<br>Internet: </span><a href="https://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">https://www.jumo.net</a>
+<p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br>
+<br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dipl.-Ingenieur Dimitrios Charisiadis, Dipl.-Betriebswirt Steffen Hoßfeld <br> Ust.-Id.-Nr.: DE 112411234</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

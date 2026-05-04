@@ -1,0 +1,96 @@
+### HEADER
+Id=7060
+Link=http://at-zammad/#ticket/zoom/7060
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=TECNOLOGIX (ID=196, Number=0, Country=IT)
+Commission=Comau, Robot Controller (ID=790, Number=790)
+Number=707060
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=andrea.martina.perelli@tecnologix.it (ID=956, FirstName=Andrea Martina, LastName=Perelli)
+CreatedBy=l.janischek@acontis.com (ID=2090, FirstName=Lisa, LastName=Janischek)
+Type=
+TimeUnit=
+CreatedAt=13.12.2023 09:18:55 +00:00
+UpdatedAt=12.01.2024 14:37:49 +00:00
+CloseAt=22.12.2023 07:00:02 +00:00
+ArticlesCount=3
+
+### TITLE
+Delivery for Comau, Robot Controller, Commission 40686
+
+### ARTICLE00_HEADER
+Id=38415
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.12.2023 09:18:55 +00:00
+UpdatedAt=13.12.2023 09:18:55 +00:00
+
+### ARTICLE00_SUBJECT
+Delivery for Comau, Robot Controller, Commission 40686
+
+### ARTICLE00_BODY
+<div>
+<p>Please deliver software to customer.(andrea.martina.perelli@tecnologix.it)<br>Do not forget to append the delivery note and sales@acontis.com in CC! </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=38468
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.12.2023 16:51:30 +00:00
+UpdatedAt=13.12.2023 16:51:47 +00:00
+
+### ARTICLE01_SUBJECT
+Delivery for Comau, Robot Controller, Commission 40686
+
+### ARTICLE01_BODY
+<div>
+<p>Dear Customer,</p>
+<p>please find your new software version below:</p>
+<p><a href="https://downloads.acontis.com/2023/B-C/Comau_(40686)(IT)/EC-Master,_VxWorks,_x86,_32_Bit/3.2.1.02/EC-Master-ClassA-AddOn-V3.2.1.02-VxWorks69-x86_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/B-C/Comau_(40686)(IT)/EC-Master,_VxWorks,_x86,_32_Bit/3.2.1.02/EC-Master-ClassA-AddOn-V3.2.1.02-VxWorks69-x86_32Bit-SDK_Protected.zip</a></p>
+<p><a href="https://downloads.acontis.com/2023/B-C/Comau_(40686)(IT)/EC-Master,_VxWorks,_x86,_32_Bit/3.2.1.02/EC-Master-I8255x-V3.2.1.02-VxWorks69-x86_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/B-C/Comau_(40686)(IT)/EC-Master,_VxWorks,_x86,_32_Bit/3.2.1.02/EC-Master-I8255x-V3.2.1.02-VxWorks69-x86_32Bit-SDK_Protected.zip</a></p>
+<p><a href="https://downloads.acontis.com/2023/B-C/Comau_(40686)(IT)/EC-Master,_VxWorks,_x86,_32_Bit/3.2.1.02/EC-Master-V3.2.1.02-VxWorks69-x86_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/B-C/Comau_(40686)(IT)/EC-Master,_VxWorks,_x86,_32_Bit/3.2.1.02/EC-Master-V3.2.1.02-VxWorks69-x86_32Bit-SDK_Protected.zip</a></p>
+<p><a href="https://downloads.acontis.com/2023/B-C/Comau_(40686)(IT)/EC-Engineer/3.8.5/EC-Engineer_Dongle_V3.8.5.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/B-C/Comau_(40686)(IT)/EC-Engineer/3.8.5/EC-Engineer_Dongle_V3.8.5.zip</a> </p>
+<p>Password: ECM88250</p>
+<p>Best Regards,<br>Cyril Eyssautier <span class="js-signatureMarker"></span><br>__________________________________________________________________________________________ <br>Cyril Eyssautier <br>EtherCAT Support <br>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30 <br>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> <br>__________________________________________________________________________________________ <br>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> </p>
+<p>This is an automatic generated eMail.</p>
+</div>
+
+### ARTICLE02_HEADER
+Id=39452
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.01.2024 15:46:41 +00:00
+UpdatedAt=11.01.2024 15:46:41 +00:00
+
+### ARTICLE02_SUBJECT
+Delivery for Comau, Robot Controller, Commission 40686
+
+### ARTICLE02_BODY
+Hi Cyril,<br> We just received this request from COMAU:<br> <br> "<span lang="en">I'm contacting you because we realized that the network card we have is an Intel Pro/1000 </span><span lang="en">and not an Intel Pro/100, is it possible to have the driver for the /1000 version (-i8254x)?" Please let me know if you can follow up their request. Thank you in advance. Regards, Martina </span> <div> <pre><img src="/api/v1/ticket_attachment/7060/39452/163666?view=inline" alt="Tecnologix logo" style="max-width:100%;"></pre> <pre><img src="/api/v1/ticket_attachment/7060/39452/163667?view=inline" alt="Lega del filo d'oro logo" style="max-width:100%;"></pre> <br> <pre>--
+Andrea Martina Perelli
+
+TECNOLOGIX s.r.l.
+Via dei Biancospini 6
+I 20146 Milano Italy
+Tel    +39 02 48954230 / +39 02 471106
+e-mail <a href="mailto:andrea.martina.perelli@tecnologix.it">andrea.martina.perelli@tecnologix.it</a>
+web    <a href="http://www.tecnologix.it" rel="nofollow noreferrer noopener" target="_blank">http://www.tecnologix.it</a>
+
+The information and documents in this communication are confidential and meant only for above-mentioned persons and/or Companies.
+The information is not personal therefore, it is intended for the addressee only and any replies will be known by people belonging to the company.</pre> <br> <br> </div><div>Il 13/12/2023 17:51, EtherCAT Support ha scritto:<br> </div><blockquote type="cite" cite="mid:0427e297-4157-4d0b-b64f-a77b8066b73e@acontis.com"> <div> <p>Dear Customer,</p>
+<p>please find your new software version below:</p>
+<p><a href="https://downloads.acontis.com/2023/B-C/Comau_(40686)(IT)/EC-Master,_VxWorks,_x86,_32_Bit/3.2.1.02/EC-Master-ClassA-AddOn-V3.2.1.02-VxWorks69-x86_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/B-C/Comau_(40686)(IT)/EC-Master,_VxWorks,_x86,_32_Bit/3.2.1.02/EC-Master-ClassA-AddOn-V3.2.1.02-VxWorks69-x86_32Bit-SDK_Protected.zip</a></p>
+<p><a href="https://downloads.acontis.com/2023/B-C/Comau_(40686)(IT)/EC-Master,_VxWorks,_x86,_32_Bit/3.2.1.02/EC-Master-I8255x-V3.2.1.02-VxWorks69-x86_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/B-C/Comau_(40686)(IT)/EC-Master,_VxWorks,_x86,_32_Bit/3.2.1.02/EC-Master-I8255x-V3.2.1.02-VxWorks69-x86_32Bit-SDK_Protected.zip</a></p>
+<p><a href="https://downloads.acontis.com/2023/B-C/Comau_(40686)(IT)/EC-Master,_VxWorks,_x86,_32_Bit/3.2.1.02/EC-Master-V3.2.1.02-VxWorks69-x86_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/B-C/Comau_(40686)(IT)/EC-Master,_VxWorks,_x86,_32_Bit/3.2.1.02/EC-Master-V3.2.1.02-VxWorks69-x86_32Bit-SDK_Protected.zip</a></p>
+<p><a href="https://downloads.acontis.com/2023/B-C/Comau_(40686)(IT)/EC-Engineer/3.8.5/EC-Engineer_Dongle_V3.8.5.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/B-C/Comau_(40686)(IT)/EC-Engineer/3.8.5/EC-Engineer_Dongle_V3.8.5.zip</a> </p>
+<p>Password: ECM88250</p>
+<p>Best Regards,<br> Cyril Eyssautier <span class="js-signatureMarker"></span><br> __________________________________________________________________________________________ <br> Cyril Eyssautier <br> EtherCAT Support <br> eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30 <br> acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> <br> __________________________________________________________________________________________ <br> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> </p>
+<p>This is an automatic generated eMail.</p>
+</div>
+</blockquote>

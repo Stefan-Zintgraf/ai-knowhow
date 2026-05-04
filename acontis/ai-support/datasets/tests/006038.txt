@@ -1,0 +1,143 @@
+### HEADER
+Id=6038
+Link=http://at-zammad/#ticket/zoom/6038
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=706038
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=25.07.2023 03:31:49 +00:00
+UpdatedAt=25.07.2023 06:34:28 +00:00
+CloseAt=25.07.2023 06:34:27 +00:00
+ArticlesCount=2
+
+### TITLE
+The potential customer efort requirement semidrive D9 chip
+
+### ARTICLE00_HEADER
+Id=32209
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.07.2023 03:31:49 +00:00
+UpdatedAt=25.07.2023 03:31:51 +00:00
+
+### ARTICLE00_SUBJECT
+The potential customer efort requirement semidrive D9 chip
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>The potential customer efort are disucssing the detial quotation about the EcMaster, But they choose a Chinses location provider semidrive D9( the website: <a href="https://www.semidrive.com/en/" rel="nofollow noreferrer noopener" target="_blank">https://www.semidrive.com/en/</a> )</div>
+<div>The customer still didn't provide the manual about this chip, But they told us that the chip use stmmac driver in linux kernel.</div>
+<div>We are asking the manual. Could you calculate the period about the porting and cost?</div>
+<div> </div>
+<div>
+<div><img border="0" src="/api/v1/ticket_attachment/6038/32209/133992?view=inline" style="max-width:100%;width:537.6px;max-height:97.6px;"></div>
+<div> 2023.8.23-26 台北国际自动化工业展 南港展览馆一馆L405<i> 期待与您见面！</i>
+</div>
+<div> </div>
+<div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.:+86-010-62740270 (北京）<div>0571- 56125098 （杭州）</div>
+</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=32213
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.07.2023 06:34:27 +00:00
+UpdatedAt=25.07.2023 06:34:29 +00:00
+
+### ARTICLE01_SUBJECT
+The potential customer efort requirement semidrive D9 chip
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>it sounds like the Synopsis DW adapter. We need the manual to confirm.</div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, July 25, 2023 at 5:31:49 AM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>The potential customer efort are disucssing the detial quotation about the EcMaster, But they choose a Chinses location provider semidrive D9( the website: <a href="https://www.semidrive.com/en/" rel="nofollow noreferrer noopener" target="_blank">https://www.semidrive.com/en/</a> )</div>
+<div>The customer still didn't provide the manual about this chip, But they told us that the chip use stmmac driver in linux kernel.</div>
+<div>We are asking the manual. Could you calculate the period about the porting and cost?</div>
+<div> </div>
+<div>
+<div><img border="0" src="/api/v1/ticket_attachment/6038/32213/134001?view=inline" style="max-width:100%;max-width:100%;width:537.6px;max-height:97.6px;"></div>
+<div> 2023.8.23-26 台北国际自动化工业展 南港展览馆一馆L405<i> 期待与您见面！</i>
+</div>
+<div> </div>
+<div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.:+86-010-62740270 (北京）<div>0571- 56125098 （杭州）</div>
+</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

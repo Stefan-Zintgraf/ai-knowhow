@@ -1,0 +1,213 @@
+### HEADER
+Id=2570
+Link=http://at-zammad/#ticket/zoom/2570
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vivo Surgical (ID=426, Number=0, Country=SG)
+Commission=Vivo Surgical, RET (ID=502, Number=502)
+Number=702570
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=justin.lau@vivo-surgical.com (ID=247, FirstName=Justin, LastName=Lau)
+CreatedBy=justin.lau@vivo-surgical.com (ID=247, FirstName=Justin, LastName=Lau)
+Type=
+TimeUnit=
+CreatedAt=07.03.2022 04:43:00 +00:00
+UpdatedAt=26.04.2022 05:23:12 +00:00
+CloseAt=11.03.2022 07:46:35 +00:00
+ArticlesCount=3
+
+### TITLE
+Ring Topology.
+
+### ARTICLE00_HEADER
+Id=13644
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.03.2022 04:43:00 +00:00
+UpdatedAt=07.03.2022 04:43:03 +00:00
+
+### ARTICLE00_SUBJECT
+Ring Topology.
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi,<div> </div>
+<div>I am currently using an Intel I350-T2V2 as my Network Interface Controller in my EtherCAT Master PC. I am wondering if it is possible to set up a ring topology for my EtherCAT network given that my NIC has 2 Ethernet ports?</div>
+<div> </div>
+<div>I tried to setup the following network using EC-Engineer but it does not detect: Master (Port 1) -&gt; Slave -&gt; Master (Port 2).</div>
+<div> </div>
+<div>Looking forward to your reply. Thank you!</div>
+<div> </div>
+<div dir="ltr">
+<p dir="ltr">Warmest regards,</p>
+<p><b>Mr Justin Lau</b><br></p>
+<p dir="ltr">Systems Integration Engineer</p>
+<p dir="ltr">VIVO SURGICAL PRIVATE LIMITED</p>
+<p dir="ltr">T: (+65) 6677 0395</p>
+<p dir="ltr">E: justin.lau@vivo-surgical.com</p>
+<p dir="ltr">A: 67 Ayer Rajah Crescent #01-01/02, Singapore 139950</p>
+<p dir="ltr"><br></p>
+<p dir="ltr"><br></p>
+<p dir="ltr"><br></p>
+<p dir="ltr">The above message and any attachment are confidential and may be privileged or otherwise protected from disclosure. If you are not the intended recipient, you should not disseminate, distribute or copy this message or any attachment. If it has reached you in error please inform us immediately by reply email or telephone and delete this message and any attachment.<br></p>
+<p dir="ltr"> </p>
+<p dir="ltr">[CONFIDENTIAL]</p>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=13668
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.03.2022 16:01:07 +00:00
+UpdatedAt=07.03.2022 16:01:08 +00:00
+
+### ARTICLE01_SUBJECT
+Ring Topology.
+
+### ARTICLE01_BODY
+Hi Justin,<div><br></div><div>yes it is possible, but not from the EC-Engineer directly. This must be done at the master application level. You can use the EC-STA for example under Windows or any EcMasterDemo application you currently have.</div><div>Just pass 2 linklayer parameter sets like: ecmasterdemo.exe -i8254x 1 1 -i8254x 2 1</div><div><br></div><div>
+<span>Please note that cable redundancy has to be licensed </span>
+
+separately<span>. I add our sales team in CC.</span><br>
+</div><div><span><br></span></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div><br></div>
+<div><blockquote type="cite">On Monday, March 7, 2022, 5:43:00 AM, Justin Lau wrote:<br><br><div dir="ltr">Hi,<div> </div>
+<div>I am currently using an Intel I350-T2V2 as my Network Interface Controller in my EtherCAT Master PC. I am wondering if it is possible to set up a ring topology for my EtherCAT network given that my NIC has 2 Ethernet ports?</div>
+<div> </div>
+<div>I tried to setup the following network using EC-Engineer but it does not detect: Master (Port 1) -&gt; Slave -&gt; Master (Port 2).</div>
+<div> </div>
+<div>Looking forward to your reply. Thank you!</div>
+<div> </div>
+<div dir="ltr">
+<p dir="ltr">Warmest regards,</p>
+<p><b>Mr Justin Lau</b><br></p>
+<p dir="ltr">Systems Integration Engineer</p>
+<p dir="ltr">VIVO SURGICAL PRIVATE LIMITED</p>
+<p dir="ltr">T: (+65) 6677 0395</p>
+<p dir="ltr">E: justin.lau@vivo-surgical.com</p>
+<p dir="ltr">A: 67 Ayer Rajah Crescent #01-01/02, Singapore 139950</p>
+<p dir="ltr"><br></p>
+<p dir="ltr"><br></p>
+<p dir="ltr"><br></p>
+<p dir="ltr">The above message and any attachment are confidential and may be privileged or otherwise protected from disclosure. If you are not the intended recipient, you should not disseminate, distribute or copy this message or any attachment. If it has reached you in error please inform us immediately by reply email or telephone and delete this message and any attachment.<br></p>
+<p dir="ltr"> </p>
+<p dir="ltr">[CONFIDENTIAL]</p>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=13674
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.03.2022 02:11:56 +00:00
+UpdatedAt=08.03.2022 02:11:56 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Ring Topology. [Ticket#702570]
+
+### ARTICLE02_BODY
+<div dir="ltr">Good Morning Cyril,<div> </div>
+<div>Thank you for the prompt reply.</div>
+<div> </div>
+<div>That is great news and I will keep that in mind for now. Should we want to purchase that feature in the future, I will contact your sales team then.</div>
+<div> </div>
+<div>Thank you once again and have a great week ahead.</div>
+<div> </div>
+<div>
+<div dir="ltr">
+<p dir="ltr">Warmest regards,</p>
+<p><b>Mr Justin Lau</b><br></p>
+<p dir="ltr">Systems Integration Engineer</p>
+<p dir="ltr">VIVO SURGICAL PRIVATE LIMITED</p>
+<p dir="ltr">T: (+65) 6677 0395</p>
+<p dir="ltr">E: justin.lau@vivo-surgical.com</p>
+<p dir="ltr">A: 67 Ayer Rajah Crescent #01-01/02, Singapore 139950</p>
+<p dir="ltr"><br></p>
+<p dir="ltr"><br></p>
+<p dir="ltr"><br></p>
+<p dir="ltr">The above message and any attachment are confidential and may be privileged or otherwise protected from disclosure. If you are not the intended recipient, you should not disseminate, distribute or copy this message or any attachment. If it has reached you in error please inform us immediately by reply email or telephone and delete this message and any attachment.<br></p>
+<p dir="ltr"> </p>
+<p dir="ltr">[CONFIDENTIAL]</p>
+</div>
+<br>
+</div>
+</div><br><div>
+<div dir="ltr">On Tue, Mar 8, 2022 at 12:01 AM Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; wrote:<br>
+</div>
+<blockquote> <div>Hi Justin,<div> </div>
+<div>yes it is possible, but not from the EC-Engineer directly. This must be done at the master application level. You can use the EC-STA for example under Windows or any EcMasterDemo application you currently have.</div>
+<div>Just pass 2 linklayer parameter sets like: ecmasterdemo.exe -i8254x 1 1 -i8254x 2 1</div>
+<div> </div>
+<div>Please note that cable redundancy has to be licensed separately. I add our sales team in CC.<br> </div>
+<div> </div>
+<div>Best Regards,</div>
+<div> <div> <div>____________________________________________________________________________<br> </div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>eMail: ecsupport@acontis.com<br> </div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Monday, March 7, 2022, 5:43:00 AM, Justin Lau wrote:<br><br><div dir="ltr">Hi,<div> </div>
+<div>I am currently using an Intel I350-T2V2 as my Network Interface Controller in my EtherCAT Master PC. I am wondering if it is possible to set up a ring topology for my EtherCAT network given that my NIC has 2 Ethernet ports?</div>
+<div> </div>
+<div>I tried to setup the following network using EC-Engineer but it does not detect: Master (Port 1) -&gt; Slave -&gt; Master (Port 2).</div>
+<div> </div>
+<div>Looking forward to your reply. Thank you!</div>
+<div> </div>
+<div dir="ltr"> <p dir="ltr">Warmest regards,</p>
+<p><b>Mr Justin Lau</b><br></p>
+<p dir="ltr">Systems Integration Engineer</p>
+<p dir="ltr">VIVO SURGICAL PRIVATE LIMITED</p>
+<p dir="ltr">T: (+65) 6677 0395</p>
+<p dir="ltr">E: justin.lau@vivo-surgical.com</p>
+<p dir="ltr">A: 67 Ayer Rajah Crescent #01-01/02, Singapore 139950</p>
+<p dir="ltr"><br></p>
+<p dir="ltr"><br></p>
+<p dir="ltr"><br></p>
+<p dir="ltr">The above message and any attachment are confidential and may be privileged or otherwise protected from disclosure. If you are not the intended recipient, you should not disseminate, distribute or copy this message or any attachment. If it has reached you in error please inform us immediately by reply email or telephone and delete this message and any attachment.<br></p>
+<p dir="ltr"> </p>
+<p dir="ltr">[CONFIDENTIAL]</p>
+</div>
+</div>
+<br> </blockquote></div>
+<div> </div>
+<br><br> </div>
+</div>
+</blockquote>
+</div>

@@ -1,0 +1,167 @@
+### HEADER
+Id=10262
+Link=http://at-zammad/#ticket/zoom/10262
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Carl Zeiss SMT GmbH (ID=91, Number=40113, Country=DE)
+Commission=Carl Zeiss SMT, Mot.Serv.7+Mot.Cont.NG (ID=100, Number=100)
+Number=7010262
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=harald.kuespert.ext@zeiss.com (ID=3092, FirstName=Harald [ext], LastName=Kuespert)
+CreatedBy=harald.kuespert.ext@zeiss.com (ID=3092, FirstName=Harald [ext], LastName=Kuespert)
+Type=
+TimeUnit=
+CreatedAt=24.03.2025 11:39:31 +00:00
+UpdatedAt=04.04.2025 06:13:09 +00:00
+CloseAt=04.04.2025 06:13:09 +00:00
+ArticlesCount=2
+
+### TITLE
+Fragen zum Features:  Application as process data memory provider with fixed buffers
+
+### ARTICLE00_HEADER
+Id=58855
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.03.2025 11:39:31 +00:00
+UpdatedAt=24.03.2025 11:39:36 +00:00
+
+### ARTICLE00_SUBJECT
+Fragen zum Features:  Application as process data memory provider with fixed buffers
+
+### ARTICLE00_BODY
+<div>
+<p>Guten Tag Herr Feifel,</p>
+<p> </p>
+<p>wir möchten aus Effizienzgründen die Möglichkeit nutzen, den Speicher für die Prozessdaten von Applikationsseite aus bereitzustellen.</p>
+<p><span>In der EC-Master-Stack-Dokumentation ist das im Kapitel <i>3.6.2 Application as process data memory provider with fixed buffers</i> beschrieben.</span></p>
+<p> </p>
+<p>Zur Synchronisation der Prozessdaten benutzen wir für PDO_IN und PDO_OUT jeweils eine Read/Write-Semaphore, die in den registrieren Callbacks genommen bzw. gegeben wird.</p>
+<p> </p>
+<p>Frame-RX (Stack interne Task – Schreibzugriff auf PDO_IN / Applikation – Lesezugriff auf PDO_IN):</p>
+<p> <span lang="EN-US">EC_T_MEMPROV_DESC::pfPDInDataWriteRequest/pfPDInDataWriteRelease</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p>Frame-TX (Applikation – Schreibzugriff auf PDO_OUT / JOB Task – Lesezugriff auf PDO_OUT):</p>
+<p> <span lang="EN-US">EC_T_MEMPROV_DESC::pfPDOutDataReadRequest/pfPDOutDataReadRelease</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Frage-1:</span></p>
+<p>In welchem Kontext werden die Callbacks EC_T_MEMPROV_DESC::pfPDOutDataWriteRequest/pfPDOutDataWriteRelease vom Master-Stack verwendet?</p>
+<p> </p>
+<p>Frage-2:</p>
+<p>Können die Callbacks EC_T_MEMPROV_DESC::pfPDOutDataWriteRequest/pfPDOutDataWriteRelease auf EC_NULL gesetzt werden, da eigentlich nur von Applikationsseite aus in PDO_OUT geschrieben werden sollte?</p>
+<p> </p>
+<p>Frage-3:</p>
+<p>Die Konfig.-Einträge für „MasterRed“ haben wir alle mit EC_NULL belegt. Ist das OK?.</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Harald Küspert</p>
+<span class="js-signatureMarker"></span><p>__________</p>
+<p><b><span><br>
+</span></b><b><span lang="EN-US">Harald Küspert, Dipl.Phys.</span></b><span lang="EN-US"><br> Metrology Software (SMT-DDMS)<br> ZEISS Semiconductor Manufacturing Technology</span></p>
+<p><b><span lang="EN-US"><p> </p></span></b></p>
+<p>Carl Zeiss SMT GmbH</p>
+<p>Rudolf-Eber-Straße 2</p>
+<p>73447 Oberkochen, Deutschland</p>
+<p><span><br> Telefon: +49 7364 20 87894</span></p>
+<p><span><a href="mailto:harald.kuespert.ext@zeiss.com">harald.kuespert.ext@zeiss.com</a><br>
+<a href="http://www.zeiss.de/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">www.zeiss.de</span></a></span><span style="color:#979797;"></span></p>
+<p><span>__________<br>
+</span><span style="color:#979797;"><br>
+</span>Carl Zeiss SMT GmbH</p>
+<p>Sitz der Gesellschaft: Oberkochen, Deutschland</p>
+<p>Vorsitzender des Aufsichtsrats: Dr. Karl Lamprecht</p>
+<p><span>Geschäftsführung: Andreas Pecher (Vorsitzender), Torsten Reitze<br> Amtsgericht Ulm, HRB 725 667, USt-IdNr: DE 811 119 999</span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=58878
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.03.2025 17:34:09 +00:00
+UpdatedAt=24.03.2025 17:34:12 +00:00
+
+### ARTICLE01_SUBJECT
+Fragen zum Features:  Application as process data memory provider with fixed buffers
+
+### ARTICLE01_BODY
+Hallo Herr <span>Küspert,</span><div><br></div><div>meine Antworten [CER] finden Sie unten.</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, March 24, 2025 at 12:39:31 PM, Harald [ext] Kuespert wrote:<br><br><div>
+<p>Guten Tag Herr Feifel,</p>
+<p> </p>
+<p>wir möchten aus Effizienzgründen die Möglichkeit nutzen, den Speicher für die Prozessdaten von Applikationsseite aus bereitzustellen.</p>
+<p><span>In der EC-Master-Stack-Dokumentation ist das im Kapitel <i>3.6.2 Application as process data memory provider with fixed buffers</i> beschrieben.</span></p>
+<p> </p>
+<p>Zur Synchronisation der Prozessdaten benutzen wir für PDO_IN und PDO_OUT jeweils eine Read/Write-Semaphore, die in den registrieren Callbacks genommen bzw. gegeben wird.</p>
+<p> </p>
+<p>Frame-RX (Stack interne Task – Schreibzugriff auf PDO_IN / Applikation – Lesezugriff auf PDO_IN):</p>
+<p> <span lang="EN-US">EC_T_MEMPROV_DESC::pfPDInDataWriteRequest/pfPDInDataWriteRelease</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p>Frame-TX (Applikation – Schreibzugriff auf PDO_OUT / JOB Task – Lesezugriff auf PDO_OUT):</p>
+<p> <span lang="EN-US">EC_T_MEMPROV_DESC::pfPDOutDataReadRequest/pfPDOutDataReadRelease</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Frage-1:</span></p>
+<p>In welchem Kontext werden die Callbacks EC_T_MEMPROV_DESC::pfPDOutDataWriteRequest/pfPDOutDataWriteRelease vom Master-Stack verwendet?</p>
+<p>[CER] Aus der Funktion emExecJob()</p>
+<p> </p>
+<p>Frage-2:</p>
+<p>Können die Callbacks EC_T_MEMPROV_DESC::pfPDOutDataWriteRequest/pfPDOutDataWriteRelease auf EC_NULL gesetzt werden, da eigentlich nur von Applikationsseite aus in PDO_OUT geschrieben werden sollte?</p>
+<p>[CER] Ja das sollte gehen.</p>
+<p> </p>
+<p>Frage-3:</p>
+<p>Die Konfig.-Einträge für „MasterRed“ haben wir alle mit EC_NULL belegt. Ist das OK?</p>
+<p>[CER] Ja das ist auch richtig.</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Harald Küspert</p>
+<span class="js-signatureMarker"></span><p>__________</p>
+<p><b><span><br>
+</span></b><b><span lang="EN-US">Harald Küspert, Dipl.Phys.</span></b><span lang="EN-US"><br> Metrology Software (SMT-DDMS)<br> ZEISS Semiconductor Manufacturing Technology</span></p>
+<p><b><span lang="EN-US"></span></b></p>
+<p><b> </b></p>
+<p></p>
+<p>Carl Zeiss SMT GmbH</p>
+<p>Rudolf-Eber-Straße 2</p>
+<p>73447 Oberkochen, Deutschland</p>
+<p><span><br> Telefon: +49 7364 20 87894</span></p>
+<p><span><a href="mailto:harald.kuespert.ext@zeiss.com">harald.kuespert.ext@zeiss.com</a><br>
+<a href="http://www.zeiss.de/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">www.zeiss.de</span></a></span><span style="color:#979797;"></span></p>
+<p><span>__________<br>
+</span><span style="color:#979797;"><br>
+</span>Carl Zeiss SMT GmbH</p>
+<p>Sitz der Gesellschaft: Oberkochen, Deutschland</p>
+<p>Vorsitzender des Aufsichtsrats: Dr. Karl Lamprecht</p>
+<p><span>Geschäftsführung: Andreas Pecher (Vorsitzender), Torsten Reitze<br> Amtsgericht Ulm, HRB 725 667, USt-IdNr: DE 811 119 999</span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

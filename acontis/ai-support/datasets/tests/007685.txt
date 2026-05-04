@@ -1,0 +1,129 @@
+### HEADER
+Id=7685
+Link=http://at-zammad/#ticket/zoom/7685
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=AMESS, Motion Controller (ID=730, Number=730)
+Number=707685
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=20.03.2024 06:57:26 +00:00
+UpdatedAt=02.04.2024 07:58:59 +00:00
+CloseAt=02.04.2024 07:58:59 +00:00
+ArticlesCount=2
+
+### TITLE
+Regarding log message output when using cable
+
+### ARTICLE00_HEADER
+Id=42451
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.03.2024 06:57:26 +00:00
+UpdatedAt=20.03.2024 06:57:29 +00:00
+
+### ARTICLE00_SUBJECT
+Regarding log message output when using cable
+
+### ARTICLE00_BODY
+<p>Hi.</p><p><br></p><p>The customer is Ames.</p><p><br></p><p>They want to get limited log message.</p><p><br></p><p>Even though EcLogMsg() of ecatNotify() was commented as below.</p><p>the WKC error message continues to appear. if using cable redundancy then turn off one slave among connected slaves. (Please see attached log file)</p><p><br></p><p>When using cable redundancy, Is there a log message output somewhere else ?</p><p><br></p><p>Please advise.</p><span class="js-signatureMarker"></span><p>--------------------------------------------------------------------------------------------------------</p><p>case EC_NOTIFY_CYCCMD_WKC_ERROR: /* ERR|1 */</p><p>{</p><p>m_adwErrorCounter[dwCode &amp; 0xFFFF]++;</p><p>if (m_adwErrorCounter[dwCode &amp; 0xFFFF] &gt; MAX_MSG_PER_ERROR)</p><p>break;</p><p> </p><p><b>/*</b></p><p><b>EcLogMsg(EC_LOG_LEVEL_ERROR, (pEcLogContext, EC_LOG_LEVEL_ERROR, ecatGetText(EC_TXT_CYCCMD_WKC_ERROR),</b></p><p><b>EcatCmdShortText(pErrorNotificationDesc-&gt;desc.WkcErrDesc.byCmd),</b></p><p><b>pErrorNotificationDesc-&gt;desc.WkcErrDesc.dwAddr,</b></p><p><b>pErrorNotificationDesc-&gt;desc.WkcErrDesc.wWkcAct,</b></p><p><b>pErrorNotificationDesc-&gt;desc.WkcErrDesc.wWkcSet));</b></p><p><span style=" color: rgb(32, 32, 32);"><b>} </b></span></p><p><span style=" color: rgb(32, 32, 32);"><b>*/</b></span></p><p><br></p><br><br><p>감사합니다.</p><p><br></p><p>Thank you</p><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p><img src="/api/v1/ticket_attachment/7685/42451/176076?view=inline" title="" alt="" style="max-width:100%;"></p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sund</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">u</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">khan@prestosolution.co.kr</a></span></u></i></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table><p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span><img src="/api/v1/ticket_attachment/7685/42451/176077?view=inline" title="" alt="" style="max-width:100%;width: 1014px;max-height: 191px;"></p>
+
+### ARTICLE01_HEADER
+Id=42499
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.03.2024 16:22:01 +00:00
+UpdatedAt=20.03.2024 16:22:04 +00:00
+
+### ARTICLE01_SUBJECT
+Regarding log message output when using cable
+
+### ARTICLE01_BODY
+Hi Hans,<div><br></div><div>it is possible to disable the notification, using:</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html#emiocontrol-ec-ioctl-set-notification-enabled" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html#emiocontrol-ec-ioctl-set-notification-enabled" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html#emiocontrol-ec-ioctl-set-notification-enabled</a></div></div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, March 20, 2024 at 7:57:26 AM, DukHan Sun wrote:<br><br><p>Hi.</p>
+<p><br></p>
+<p>The customer is Ames.</p>
+<p><br></p>
+<p>They want to get limited log message.</p>
+<p><br></p>
+<p>Even though EcLogMsg() of ecatNotify() was commented as below.</p>
+<p>the WKC error message continues to appear. if using cable redundancy then turn off one slave among connected slaves. (Please see attached log file)</p>
+<p><br></p>
+<p>When using cable redundancy, Is there a log message output somewhere else ?</p>
+<p><br></p>
+<p>Please advise.</p>
+<span class="js-signatureMarker"></span><p>--------------------------------------------------------------------------------------------------------</p>
+<p>case EC_NOTIFY_CYCCMD_WKC_ERROR: /* ERR|1 */</p>
+<p>{</p>
+<p>m_adwErrorCounter[dwCode &amp; 0xFFFF]++;</p>
+<p>if (m_adwErrorCounter[dwCode &amp; 0xFFFF] &gt; MAX_MSG_PER_ERROR)</p>
+<p>break;</p>
+<p> </p>
+<p><b>/*</b></p>
+<p><b>EcLogMsg(EC_LOG_LEVEL_ERROR, (pEcLogContext, EC_LOG_LEVEL_ERROR, ecatGetText(EC_TXT_CYCCMD_WKC_ERROR),</b></p>
+<p><b>EcatCmdShortText(pErrorNotificationDesc-&gt;desc.WkcErrDesc.byCmd),</b></p>
+<p><b>pErrorNotificationDesc-&gt;desc.WkcErrDesc.dwAddr,</b></p>
+<p><b>pErrorNotificationDesc-&gt;desc.WkcErrDesc.wWkcAct,</b></p>
+<p><b>pErrorNotificationDesc-&gt;desc.WkcErrDesc.wWkcSet));</b></p>
+<p><span style=" color: rgb(32, 32, 32);"><b>} </b></span></p>
+<p><span style=" color: rgb(32, 32, 32);"><b>*/</b></span></p>
+<p><br></p>
+<br><br><p>감사합니다.</p>
+<p><br></p>
+<p>Thank you</p>
+<p><br></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p><img src="/api/v1/ticket_attachment/7685/42499/176220?view=inline" title="" alt="" style="max-width:100%;max-width:100%;"></p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sund</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">u</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">khan@prestosolution.co.kr</a></span></u></i></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span><img src="/api/v1/ticket_attachment/7685/42499/176221?view=inline" title="" alt="" style="max-width:100%;max-width:100%;width: 1014px;max-height: 191px;"></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

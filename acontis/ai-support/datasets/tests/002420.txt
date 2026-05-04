@@ -1,0 +1,231 @@
+### HEADER
+Id=2420
+Link=http://at-zammad/#ticket/zoom/2420
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=Omron, PLC (ID=282, Number=282)
+Number=702420
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=yoshiaki.taniguchi@omron.com (ID=554, FirstName=Yoshiaki, LastName=Taniguchi)
+CreatedBy=yoshiaki.taniguchi@omron.com (ID=554, FirstName=Yoshiaki, LastName=Taniguchi)
+Type=
+TimeUnit=
+CreatedAt=10.02.2022 07:49:19 +00:00
+UpdatedAt=26.02.2024 11:06:50 +00:00
+CloseAt=25.02.2022 07:04:37 +00:00
+ArticlesCount=4
+
+### TITLE
+[Question] EC-Engineer 3.6.2
+
+### ARTICLE00_HEADER
+Id=12879
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.02.2022 07:49:19 +00:00
+UpdatedAt=10.02.2022 07:49:24 +00:00
+
+### ARTICLE00_SUBJECT
+[Question] EC-Engineer 3.6.2
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Christoph-san</p>
+<p> </p>
+<p>A combination of EC-Master version 2.9.2.28 (for Windows) and EC-Engineer version 3.6.2 was used.</p>
+<p>The slaves are EtherCAT coupler (NX-ECC203) and IO modules.</p>
+<p>Created ENI file with FreeRun and 4ms interval.</p>
+<p>The demo software used is EcMasterDemo.</p>
+<p>EcMasterDemo.exe -f eni_ecc203.xml -i8254x 1 1 -t 0 -b 4000 -sp 6000</p>
+<p>RAS-connected EC-Engineer from OP state, running in.</p>
+<p>EC-Engineer displayed WRN Lost Link detected.</p>
+<p>Lost frames is 1 and does not increment thereafter, but remains visible.</p>
+<p>(Mark of WRN at Project Explorer)</p>
+<p>In EC-Engineer version 3.0.6, the WRN is not displayed. However, Lost frames was 1.</p>
+<p>Is this difference due to the upgrade?</p>
+<p> </p>
+<p>Best Regards,</p>
+<p> </p>
+<p>Yoshiaki Taniguchi</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Christoph Widmann &lt;c.widmann@acontis.com&gt; <br>
+<b>Sent:</b> Wednesday, January 26, 2022 4:11 PM<br>
+<b>To:</b> Yoshiaki Taniguchi / OSK IS PRO1 &lt;yoshiaki.taniguchi@omron.com&gt;<br>
+<b>Subject:</b> AW: [Request]EC-Engineer</p>
+</div>
+</div>
+<p> </p>
+<p>Dear Taniguchi-san,</p>
+<p> </p>
+<p>please find the evaluation version V3.6.2 of EC-Engineer here:</p>
+<p><a href="http://software.acontis.com/EC-Tools/V36/EC-Engineer_Eval_V3.6.2.zip" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/EC-Tools/V36/EC-Engineer_Eval_V3.6.2.zip</a></p>
+<p> </p>
+<p>The latest version V3.6.4 is available here:</p>
+<p><a href="http://software.acontis.com/EC-Tools/V36/EC-Engineer_Eval_V3.6.4.zip" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/EC-Tools/V36/EC-Engineer_Eval_V3.6.4.zip</a></p>
+<p> </p>
+<p>Both versions are working find with EC-Master V2.9.2.28.</p>
+<p> </p>
+<p>Please let us know your further requirements and questions.</p>
+<p> </p>
+<p>Best Regards,</p>
+<p>Christoph Widmann</p>
+<p>--------------------------------------------------------------------------------------------------------------------------------------<br> acontis technologies GmbH, Gartenstrasse 46, 88212 Ravensburg/Germany<br> Christoph Widmann<br> Geschäftsführer / Managing Director<br> Phone: +49 (0) 751 5 60 30 32</p>
+<p>Email: c.widmann@acontis.com</p>
+<p>Web: <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a></p>
+<p> </p>
+<p>Subscribe to our newsletter and stay updated on the latest developments and upcoming events <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+<p> </p>
+<div>
+<div>
+<p><b>Von:</b> yoshiaki.taniguchi@omron.com &lt;yoshiaki.taniguchi@omron.com&gt; <br>
+<b>Gesendet:</b> Mittwoch, 26. Januar 2022 04:12<br>
+<b>An:</b> Christoph Widmann &lt;c.widmann@acontis.com&gt;<br>
+<b>Betreff:</b> [Request]EC-Engineer</p>
+</div>
+</div>
+<p> </p>
+<p>Dear Christoph-san</p>
+<p> </p>
+<p>Our end users have requested a combination of EC-Master Version 2.9.2.28 and EC-Engineer Version 3.6.2 for their kitting requirements.</p>
+<p>We need to get EC-Engineer Version 3.6.2 so please let us know the download URL.</p>
+<p>Does the combination of EC-Master and EC-Engineer above cause any problems?</p>
+<p> </p>
+<p>Best Regards,</p>
+<p> </p>
+<p>Yoshiaki Taniguchi</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=12893
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=10.02.2022 09:28:20 +00:00
+UpdatedAt=10.02.2022 09:28:20 +00:00
+
+### ARTICLE01_BODY
+Das hört sich wieder mal komisch an... Hat sich in EC-Engineer irgendwas in die Richtung verändert?
+
+### ARTICLE02_HEADER
+Id=12900
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=10.02.2022 11:15:49 +00:00
+UpdatedAt=10.02.2022 11:15:49 +00:00
+
+### ARTICLE02_BODY
+Ja der meint das Ausrufzeichen. Das ist neu. Das gab es damals nicht. Er hatte damals auch schon einen Lost Link nur wurde er nicht darauf hingewiesen. Ich antworte ihm
+
+### ARTICLE03_HEADER
+Id=12901
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.02.2022 11:17:05 +00:00
+UpdatedAt=10.02.2022 11:17:06 +00:00
+
+### ARTICLE03_SUBJECT
+[Question] EC-Engineer 3.6.2
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>this Warning and marker is new in EC-Engineer. You can remove it on the extended diagnosis tab with Acknoledge warning or in the Network Menu with Acknoledge all warnings.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, February 10, 2022, 8:49:19 AM, yoshiaki.taniguchi@omron.com wrote:<br><br><div>
+<p>Dear Christoph-san</p>
+<p> </p>
+<p>A combination of EC-Master version 2.9.2.28 (for Windows) and EC-Engineer version 3.6.2 was used.</p>
+<p>The slaves are EtherCAT coupler (NX-ECC203) and IO modules.</p>
+<p>Created ENI file with FreeRun and 4ms interval.</p>
+<p>The demo software used is EcMasterDemo.</p>
+<p>EcMasterDemo.exe -f eni_ecc203.xml -i8254x 1 1 -t 0 -b 4000 -sp 6000</p>
+<p>RAS-connected EC-Engineer from OP state, running in.</p>
+<p>EC-Engineer displayed WRN Lost Link detected.</p>
+<p>Lost frames is 1 and does not increment thereafter, but remains visible.</p>
+<p>(Mark of WRN at Project Explorer)</p>
+<p>In EC-Engineer version 3.0.6, the WRN is not displayed. However, Lost frames was 1.</p>
+<p>Is this difference due to the upgrade?</p>
+<p> </p>
+<p>Best Regards,</p>
+<p> </p>
+<p>Yoshiaki Taniguchi</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Christoph Widmann &lt;c.widmann@acontis.com&gt; <br>
+<b>Sent:</b> Wednesday, January 26, 2022 4:11 PM<br>
+<b>To:</b> Yoshiaki Taniguchi / OSK IS PRO1 &lt;yoshiaki.taniguchi@omron.com&gt;<br>
+<b>Subject:</b> AW: [Request]EC-Engineer</p>
+</div>
+</div>
+<p> </p>
+<p>Dear Taniguchi-san,</p>
+<p> </p>
+<p>please find the evaluation version V3.6.2 of EC-Engineer here:</p>
+<p><a href="http://software.acontis.com/EC-Tools/V36/EC-Engineer_Eval_V3.6.2.zip" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/EC-Tools/V36/EC-Engineer_Eval_V3.6.2.zip</a></p>
+<p> </p>
+<p>The latest version V3.6.4 is available here:</p>
+<p><a href="http://software.acontis.com/EC-Tools/V36/EC-Engineer_Eval_V3.6.4.zip" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/EC-Tools/V36/EC-Engineer_Eval_V3.6.4.zip</a></p>
+<p> </p>
+<p>Both versions are working find with EC-Master V2.9.2.28.</p>
+<p> </p>
+<p>Please let us know your further requirements and questions.</p>
+<p> </p>
+<p>Best Regards,</p>
+<p>Christoph Widmann</p>
+<p>--------------------------------------------------------------------------------------------------------------------------------------<br> acontis technologies GmbH, Gartenstrasse 46, 88212 Ravensburg/Germany<br> Christoph Widmann<br> Geschäftsführer / Managing Director<br> Phone: +49 (0) 751 5 60 30 32</p>
+<p>Email: c.widmann@acontis.com</p>
+<p>Web: <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a></p>
+<p> </p>
+<p>Subscribe to our newsletter and stay updated on the latest developments and upcoming events <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+<p> </p>
+<div>
+<div>
+<p><b>Von:</b> yoshiaki.taniguchi@omron.com &lt;yoshiaki.taniguchi@omron.com&gt; <br>
+<b>Gesendet:</b> Mittwoch, 26. Januar 2022 04:12<br>
+<b>An:</b> Christoph Widmann &lt;c.widmann@acontis.com&gt;<br>
+<b>Betreff:</b> [Request]EC-Engineer</p>
+</div>
+</div>
+<p> </p>
+<p>Dear Christoph-san</p>
+<p> </p>
+<p>Our end users have requested a combination of EC-Master Version 2.9.2.28 and EC-Engineer Version 3.6.2 for their kitting requirements.</p>
+<p>We need to get EC-Engineer Version 3.6.2 so please let us know the download URL.</p>
+<p>Does the combination of EC-Master and EC-Engineer above cause any problems?</p>
+<p> </p>
+<p>Best Regards,</p>
+<p> </p>
+<p>Yoshiaki Taniguchi</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

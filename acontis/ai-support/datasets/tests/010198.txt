@@ -1,0 +1,119 @@
+### HEADER
+Id=10198
+Link=http://at-zammad/#ticket/zoom/10198
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ADLINK Technology, Inc. (ID=318, Number=40110, Country=TW)
+Commission=ADLINK, Motion Controller (ID=375, Number=375)
+Number=7010198
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=leslie.chen@adlinktech.com (ID=49, FirstName=Leslie, LastName=Chen)
+CreatedBy=leslie.chen@adlinktech.com (ID=49, FirstName=Leslie, LastName=Chen)
+Type=
+TimeUnit=
+CreatedAt=17.03.2025 04:02:52 +00:00
+UpdatedAt=25.03.2025 07:01:18 +00:00
+CloseAt=25.03.2025 07:01:18 +00:00
+ArticlesCount=2
+
+### TITLE
+what is the benefit to enble TTS feature
+
+### ARTICLE00_HEADER
+Id=58468
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.03.2025 04:02:52 +00:00
+UpdatedAt=17.03.2025 04:02:56 +00:00
+
+### ARTICLE00_SUBJECT
+what is the benefit to enble TTS feature
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Dear Supporter,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">You said the TTS feature will be more accurate, </span></p>
+<p><span lang="EN-US">May I know that is about to achieve less jitter of start of frame? Or something else?</span></p>
+<p><span lang="EN-US">And any drawback will follow?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><b><span lang="EN-US" style="color:#20435c;">5.2.1 TTS Feature</span></b><span lang="EN-US"></span></p>
+<p><span lang="EN-US">The IntelGbe Real-time Ethernet Driver can optionally use Time-Triggered Send (TTS) feature. Ethernet/EtherCAT</span></p>
+<p><span lang="EN-US">frames are sent and time stamped according to the NIC timer instead of the CPU timer. Which is usually more</span></p>
+<p><span lang="EN-US">accurate.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">BRs,</span></p>
+<p><span lang="EN-US">Leslie.</span><span lang="EN-US"></span></p>
+</div><p><span><em><strong>CONFIDENTIALITY, DATA PROTECTION &amp; PRIVACY</strong></em><br> This message may contain confidential and/or legally privileged information. If you are not the intended recipient(s), then you are hereby notified that any disclosure, copying, distribution or the taking of any action in reliance on the contents of this email transmission is strictly prohibited and that you please delete the email in its entirety. Sender does not in any way waive confidentiality or privilege even if this message has reached you in error. ADLINK Technology Inc. and its affiliates are committed to ensuring the security and protection of the personal information that we have processed as well as to provide a compliant and consistent approach to data protection and privacy. <a href="https://www.adlinktech.com/en/PrivacyPolicy" rel="nofollow noreferrer noopener" title="https://www.adlinktech.com/en/PrivacyPolicy" target="_blank">Privacy Policy</a><br> 這封電子郵件及其傳輸的文件屬於機密資訊，僅供其所指定的收件人使用。如果您不是所指定之接收人，嚴格禁止揭露、複製、散布或採取任何依據此訊息之行動，並且請您刪除此電子郵件。即使您錯誤地收到此訊息，亦不代表我方同意放棄此訊息之機密性。凌華科技及其附屬公司致力於保障所處理的個人資訊的安全，並提供合規且一致的資料保護和隱私方法。</span></p>
+
+### ARTICLE01_HEADER
+Id=58477
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.03.2025 07:52:27 +00:00
+UpdatedAt=17.03.2025 07:52:29 +00:00
+
+### ARTICLE01_SUBJECT
+what is the benefit to enble TTS feature
+
+### ARTICLE01_BODY
+Hi Leslie,<div><br></div><div>yes the frames are send better on time and the timestamps send within the frames are more accurate. Time triggered send (TTS) allows the frame to be send in a timely manner handled by the NIC hardware. Also the usually more accurate NIC clock instead of the CPU clock is used.</div><div><br></div><div>Drawbacks: A bit more implementation/configuration effort. Just a few NICs support TTS. Currently we just support two of them</div><div>
+<div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/emllicss.html#tts-feature" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/emllicss.html#tts-feature" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/emllicss.html#tts-feature</a></div>
+<div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/emllintelgbe.html#tts-feature" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/emllintelgbe.html#tts-feature" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/emllintelgbe.html#tts-feature</a></div></div>
+<div><br></div>
+<div>Best regards,</div>
+<div><br></div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, March 17, 2025 at 5:02:52 AM, Leslie Chen wrote:<br><br><div>
+<p><span lang="EN-US">Dear Supporter,</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">You said the TTS feature will be more accurate, </span></p>
+<p><span lang="EN-US">May I know that is about to achieve less jitter of start of frame? Or something else?</span></p>
+<p><span lang="EN-US">And any drawback will follow?</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><b><span lang="EN-US" style="color:#20435c;">5.2.1 TTS Feature</span></b><span lang="EN-US"></span></p>
+<p><span lang="EN-US">The IntelGbe Real-time Ethernet Driver can optionally use Time-Triggered Send (TTS) feature. Ethernet/EtherCAT</span></p>
+<p><span lang="EN-US">frames are sent and time stamped according to the NIC timer instead of the CPU timer. Which is usually more</span></p>
+<p><span lang="EN-US">accurate.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">BRs,</span></p>
+<p><span lang="EN-US">Leslie.</span><span lang="EN-US"></span></p>
+</div>
+<p><span><em><strong>CONFIDENTIALITY, DATA PROTECTION &amp; PRIVACY</strong></em><br> This message may contain confidential and/or legally privileged information. If you are not the intended recipient(s), then you are hereby notified that any disclosure, copying, distribution or the taking of any action in reliance on the contents of this email transmission is strictly prohibited and that you please delete the email in its entirety. Sender does not in any way waive confidentiality or privilege even if this message has reached you in error. ADLINK Technology Inc. and its affiliates are committed to ensuring the security and protection of the personal information that we have processed as well as to provide a compliant and consistent approach to data protection and privacy. <a href="https://www.adlinktech.com/en/PrivacyPolicy" rel="nofollow noreferrer noopener" title="https://www.adlinktech.com/en/PrivacyPolicy" target="_blank">Privacy Policy</a><br> 這封電子郵件及其傳輸的文件屬於機密資訊，僅供其所指定的收件人使用。如果您不是所指定之接收人，嚴格禁止揭露、複製、散布或採取任何依據此訊息之行動，並且請您刪除此電子郵件。即使您錯誤地收到此訊息，亦不代表我方同意放棄此訊息之機密性。凌華科技及其附屬公司致力於保障所處理的個人資訊的安全，並提供合規且一致的資料保護和隱私方法。</span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

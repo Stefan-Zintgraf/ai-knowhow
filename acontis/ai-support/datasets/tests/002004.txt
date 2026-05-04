@@ -1,0 +1,70 @@
+### HEADER
+Id=2004
+Link=http://at-zammad/#ticket/zoom/2004
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=OMRON China, Small PLC (ID=511, Number=511)
+Number=702004
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=redmine@my.redmine.jp (ID=190, FirstName=Baba, LastName=Kojiro)
+CreatedBy=redmine@my.redmine.jp (ID=190, FirstName=Baba, LastName=Kojiro)
+Type=
+TimeUnit=
+CreatedAt=06.12.2021 10:38:18 +00:00
+UpdatedAt=31.10.2023 12:49:26 +00:00
+CloseAt=10.12.2021 07:06:55 +00:00
+ArticlesCount=2
+
+### TITLE
+[C1-OAproject - Question #403] Several questions about EC-Master/RAS-Server/EC-Engineer on AM3359
+
+### ARTICLE00_HEADER
+Id=10489
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.12.2021 10:38:19 +00:00
+UpdatedAt=06.12.2021 10:38:20 +00:00
+
+### ARTICLE00_SUBJECT
+[C1-OAproject - Question #403] Several questions about EC-Master/RAS-Server/EC-Engineer on AM3359
+
+### ARTICLE00_BODY
+Issue <a href="https://my.redmine.jp/pbd-rdc/issues/403#change-3326" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/403#change-3326" target="_blank">#403</a> has been updated by Chenhao Hu. <hr> <ul> <li>
+<strong>Assignee</strong> changed from <i>Chenhao Hu</i> to <i>acontis acontis</i>
+</li>
+</ul> <p>Hi</p><p>2. About your reply "Or we support also to "external" schema files. E.g. you can create a folder "Schema" in our install directory and we load it from there.", is this function already implemented in SDK? Or it needs to be updated by acontis?<br>MG: It is supported since SDK V2.9. So no update should be necessary.<br>OMRON: How can I modify EC-Engineer SDK for this method? I guess it should be modified in Layer5, isn't it?</p><p>Best Regards,<br>Chenhao Hu</p><hr>
+<h1> <a href="https://my.redmine.jp/pbd-rdc/issues/403#change-3326" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/403#change-3326" target="_blank">Question #403: Several questions about EC-Master/RAS-Server/EC-Engineer on AM3359</a> open </h1> <ul>
+<li>
+<strong>Author: </strong>Chenhao Hu</li>
+<li>
+<strong>Status: </strong>Doing</li>
+<li>
+<strong>Priority: </strong>Normal</li>
+<li>
+<strong>Assignee: </strong>acontis acontis</li>
+<li>
+<strong>Start date: </strong>2021-09-16</li>
+<li>
+<strong>Due date: </strong>2021-09-20</li>
+<li>
+<strong>Category: </strong>Question</li>
+<li>
+<strong>Category for Omron: </strong>Misc</li>
+<li>
+<strong>Owner: </strong>Chenhao Hu</li>
+</ul> <p>1. Whether there is a demo project that includes EC-Master and RAS-Server on AM3359 (like the windows demo)? EC-Master and RAS-Server will be implemented with different modes (e.g. EC-Master on ICSS and RAS-Server on CPSW). The project you sent me before seems only including EC-Master.<br>2. The project of EC-Master you sent me before includes Linux, what Linux version is used?<br>Is there a RT-Linux version available?<br>3. What is the TCPIP timeout of EC-Engineer?<br>Can it be modified?</p><legend>Files</legend> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1535/clipboard-202109161938-zsabb.png" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1535/clipboard-202109161938-zsabb.png" target="_blank">clipboard-202109161938-zsabb.png</a> (32.4 KB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1541/EcOem.txt" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1541/EcOem.txt" target="_blank">EcOem.txt</a> (2.91 KB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1542/EcOem.dat" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1542/EcOem.dat" target="_blank">EcOem.dat</a> (13.8 KB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1544/clipboard-202110191801-dhkpd.png" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1544/clipboard-202110191801-dhkpd.png" target="_blank">clipboard-202110191801-dhkpd.png</a> (81.5 KB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1550/clipboard-202111181230-4th2d.png" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1550/clipboard-202111181230-4th2d.png" target="_blank">clipboard-202111181230-4th2d.png</a> (51.8 KB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1551/clipboard-202111191406-oo8pn.png" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1551/clipboard-202111191406-oo8pn.png" target="_blank">clipboard-202111191406-oo8pn.png</a> (79.6 KB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1552/FP-EoE-Endpoint-V3.1.2.06-Linux.zip" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1552/FP-EoE-Endpoint-V3.1.2.06-Linux.zip" target="_blank">FP-EoE-Endpoint-V3.1.2.06-Linux.zip</a> (601 KB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1553/Delta%20RTU-ECAT.xml" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1553/Delta%20RTU-ECAT.xml" target="_blank">Delta RTU-ECAT.xml</a> (454 KB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1554/clipboard-202112021254-ucdgd.png" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1554/clipboard-202112021254-ucdgd.png" target="_blank">clipboard-202112021254-ucdgd.png</a> (16.8 KB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1555/clipboard-202112030800-pgbw7.png" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1555/clipboard-202112030800-pgbw7.png" target="_blank">clipboard-202112030800-pgbw7.png</a> (306 KB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1556/Delta%20RTU-ECAT.xml" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1556/Delta%20RTU-ECAT.xml" target="_blank">Delta RTU-ECAT.xml</a> (454 KB)<br> <hr>
+<p>My Redmine (プロジェクト運営支援SaaS) から送信<br><a href="http://hosting.redmine.jp/" rel="nofollow noreferrer noopener" target="_blank">http://hosting.redmine.jp/</a></p>
+
+### ARTICLE01_HEADER
+Id=10498
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=06.12.2021 13:08:13 +00:00
+UpdatedAt=06.12.2021 13:08:13 +00:00
+
+### ARTICLE01_BODY
+Beantwortet über Redmine.

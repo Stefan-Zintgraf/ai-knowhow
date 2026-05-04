@@ -1,0 +1,158 @@
+### HEADER
+Id=3103
+Link=http://at-zammad/#ticket/zoom/3103
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=JSLT (ID=402, Number=0, Country=JP)
+Commission=FANUC, EtherCAT model CNC (ID=487, Number=487)
+Number=703103
+Owner=m.danilau@acontis.com (ID=4, FirstName=Maksim, LastName=Danilau)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=26.05.2022 01:40:13 +00:00
+UpdatedAt=19.09.2022 06:08:59 +00:00
+CloseAt=19.09.2022 06:08:59 +00:00
+ArticlesCount=3
+
+### TITLE
+Question about EC-Master (FANUC) [M81]
+
+### ARTICLE00_HEADER
+Id=16341
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=26.05.2022 01:40:13 +00:00
+UpdatedAt=26.05.2022 01:40:14 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master (FANUC) [M81]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master (FANUC) [M81]
+
+About ecatExecJob (eUsrJob_MasterTimer) using DCsync.
+I was testing with a network configuration where one JobTask cycle takes about 500us.
+
+- When the EtherCAT communication cycle is set to 1000us
+Without DCSync,JobTask was working without fluctuation.However,with DCSync, the JobTask has greatly fluctuation and DCSync's active / deactive was frequently switched.ecatExecJob (eUsrJob_MasterTimer) usually takes 40us, but when this problem occurs, it rarely took 1200-1300us.
+
+- When the EtherCAT communication cycle is set to 2000us
+With this setting, even with DCSync, ecatExecJob (eUsrJob_MasterTimer) continued to run on 40us without fluctuation
+
+Is it possible for acontis to guess why ecatExecJob (eUsrJob_MasterTimer) rarely takes a long time?
+This could also be a problem with FANUC's application creation.
+Please let me know if you can guess as general knowledge(the communication cycle is too short, the network is congested, etc.).
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=16379
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.05.2022 13:24:21 +00:00
+UpdatedAt=30.05.2022 13:24:25 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master (FANUC) [M81]
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>during the DC initialization, <span>OsSystemTimeGet() is called, this is the only reason I see that could generate a delay in </span><span>eUsrJob_MasterTimer. How many slaves are configured?</span>
+</div><div><span><br></span></div><div><span>We will setup a DC configuration here and check if we can reproduce the described behavior. </span></div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, May 26, 2022, 3:40:13 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master (FANUC) [M81]</div>
+<div><br></div>
+<div>About ecatExecJob (eUsrJob_MasterTimer) using DCsync.</div>
+<div>I was testing with a network configuration where one JobTask cycle takes about 500us.</div>
+<div><br></div>
+<div>- When the EtherCAT communication cycle is set to 1000us</div>
+<div>Without DCSync,JobTask was working without fluctuation.However,with DCSync, the JobTask has greatly fluctuation and DCSync's active / deactive was frequently switched.ecatExecJob (eUsrJob_MasterTimer) usually takes 40us, but when this problem occurs, it rarely took 1200-1300us.</div>
+<div><br></div>
+<div>- When the EtherCAT communication cycle is set to 2000us</div>
+<div>With this setting, even with DCSync, ecatExecJob (eUsrJob_MasterTimer) continued to run on 40us without fluctuation</div>
+<div><br></div>
+<div>Is it possible for acontis to guess why ecatExecJob (eUsrJob_MasterTimer) rarely takes a long time?</div>
+<div>This could also be a problem with FANUC's application creation.</div>
+<div>Please let me know if you can guess as general knowledge(the communication cycle is too short, the network is congested, etc.).</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=16385
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.05.2022 14:55:32 +00:00
+UpdatedAt=30.05.2022 14:55:33 +00:00
+
+### ARTICLE02_SUBJECT
+Question about EC-Master (FANUC) [M81]
+
+### ARTICLE02_BODY
+Dear Mr. Fujikawa,<div><br></div><div>unfortunately i cannot acknowledge such behavior. In attachment you can find the output of two runs with DC activated.</div><div><br></div><div>Best regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Maksim Danilau, M.Sc.</div>
+<div>EtherCAT Support</div>
+<div>
+<div><br></div>
+</div>
+</div>
+<div><blockquote type="cite">Am Donnerstag, 26. Mai 2022, 03:40:13, schrieb Takuya Fujikawa:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master (FANUC) [M81]</div>
+<div><br></div>
+<div>About ecatExecJob (eUsrJob_MasterTimer) using DCsync.</div>
+<div>I was testing with a network configuration where one JobTask cycle takes about 500us.</div>
+<div><br></div>
+<div>- When the EtherCAT communication cycle is set to 1000us</div>
+<div>Without DCSync,JobTask was working without fluctuation.However,with DCSync, the JobTask has greatly fluctuation and DCSync's active / deactive was frequently switched.ecatExecJob (eUsrJob_MasterTimer) usually takes 40us, but when this problem occurs, it rarely took 1200-1300us.</div>
+<div><br></div>
+<div>- When the EtherCAT communication cycle is set to 2000us</div>
+<div>With this setting, even with DCSync, ecatExecJob (eUsrJob_MasterTimer) continued to run on 40us without fluctuation</div>
+<div><br></div>
+<div>Is it possible for acontis to guess why ecatExecJob (eUsrJob_MasterTimer) rarely takes a long time?</div>
+<div>This could also be a problem with FANUC's application creation.</div>
+<div>Please let me know if you can guess as general knowledge(the communication cycle is too short, the network is congested, etc.).</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br>
+</div>

@@ -1,0 +1,190 @@
+### HEADER
+Id=5798
+Link=http://at-zammad/#ticket/zoom/5798
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Astrodyne Transistor Devices (TDI) (ID=393, Number=41067, Country=US)
+Commission=Astrodyne Transistor Devices (TDI), Slave Testing (ID=465, Number=465)
+Number=705798
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=dankaralis@astrodynetdi.com (ID=1557, FirstName=Dan, LastName=Karalis)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=21.06.2023 19:45:32 +00:00
+UpdatedAt=03.07.2023 05:05:14 +00:00
+CloseAt=03.07.2023 05:05:14 +00:00
+ArticlesCount=3
+
+### TITLE
+Fwd: Ec-SlaveTestApplication WinPCAP vs Ndis
+
+### ARTICLE00_HEADER
+Id=30976
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.06.2023 19:45:32 +00:00
+UpdatedAt=21.06.2023 19:45:32 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Ec-SlaveTestApplication WinPCAP vs Ndis
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>Please see below. Is there a way that the customer can default to WinPcap or NDIS with a customization to the EC-STA sources?</div><div> </div><div>Also, it seems that they indicate sometimes NDIS isn’t available, and then after a restart it shows up. Any thoughts on this?<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>Dan Karalis &lt;DanKaralis@astrodynetdi.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Ec-SlaveTestApplication WinPCAP vs Ndis</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>June 21, 2023 at 9:08:52 AM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Ryan Thant &lt;ryan.thant@astrodynetdi.com&gt;, "j.waters@acontis.com" &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Cc: </b></span><span>James O'Brien &lt;james.obrien@astrodynetdi.com&gt;, Ron Weglinski &lt;RonWeglinski@astrodynetdi.com&gt;, Paul Thompson &lt;PaulThompson@astrodynetdi.com&gt;, Andrew Sherman &lt;Andrew.Sherman@astrodynetdi.com&gt;<br></span>
+</div>
+<br><div>
+<div>Hi Ryan,</div>
+<div><p> </p></div>
+<div>It would be a good Idea to make the EC-Slave App autoload the Ndis. This issue arose again, and sometimes the App does not let you change Link Layer manually? For now we will manually set before the initialize cmd. For some reason it doesn’t remember the prior setting.</div>
+<div><p> </p></div>
+<div>Hi Jon,</div>
+<div><p> </p></div>
+<div>Have you seen any issues with your App not remembering the Link Layer Settings? This issue just started to happen on a particular machine. Sometimes it doesn't show the Ndis option. Upon a computer reboot we see it?</div>
+<div><p> </p></div>
+<div>
+<img style="max-width:100%;width: 6in;max-height: 3.3645in;max-height:323px;" alt="image001.png" src="/api/v1/ticket_attachment/5798/30976/129275?view=inline">
+</div>
+<div><p> </p></div>
+<div>
+<img style="max-width:100%;width: 6.0833in;max-height: 3.3437in;max-height:321px;" alt="image003.png" src="/api/v1/ticket_attachment/5798/30976/129276?view=inline">
+</div>
+<div>Regards,</div>
+<div>Dan Karalis (Principal Electrical Engineer)</div>
+<div>908-850-5088 ext.1317</div>
+<div><img style="max-width:100%;width: 2.1979in;max-height: 0.4895in;max-height:47px;" alt="image002.png" src="/api/v1/ticket_attachment/5798/30976/129277?view=inline"></div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=31010
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.06.2023 07:26:11 +00:00
+UpdatedAt=23.06.2023 07:26:13 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: Ec-SlaveTestApplication WinPCAP vs Ndis
+
+### ARTICLE01_BODY
+If they do not need Winpcap they can just remove the emllPcap.dll or rename it. Then only NDIS should appear. This is the easiest way. But for sure it would also be possible in the code.<div><br></div><div>I can not reproduce the NDIS missing problem.</div><div><br></div><div>/Kai</div><div>
+<div><br></div>
+<div><blockquote type="cite">On Wednesday, June 21, 2023 at 9:45:32 PM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>Please see below. Is there a way that the customer can default to WinPcap or NDIS with a customization to the EC-STA sources?</div>
+<div> </div>
+<div>Also, it seems that they indicate sometimes NDIS isn’t available, and then after a restart it shows up. Any thoughts on this?<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>Dan Karalis &lt;DanKaralis@astrodynetdi.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Ec-SlaveTestApplication WinPCAP vs Ndis</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>June 21, 2023 at 9:08:52 AM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Ryan Thant &lt;ryan.thant@astrodynetdi.com&gt;, "j.waters@acontis.com" &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Cc: </b></span><span>James O'Brien &lt;james.obrien@astrodynetdi.com&gt;, Ron Weglinski &lt;RonWeglinski@astrodynetdi.com&gt;, Paul Thompson &lt;PaulThompson@astrodynetdi.com&gt;, Andrew Sherman &lt;Andrew.Sherman@astrodynetdi.com&gt;<br></span>
+</div>
+<br><div>
+<div>Hi Ryan,</div>
+<div><p> </p></div>
+<div>It would be a good Idea to make the EC-Slave App autoload the Ndis. This issue arose again, and sometimes the App does not let you change Link Layer manually? For now we will manually set before the initialize cmd. For some reason it doesn’t remember the prior setting.</div>
+<div><p> </p></div>
+<div>Hi Jon,</div>
+<div><p> </p></div>
+<div>Have you seen any issues with your App not remembering the Link Layer Settings? This issue just started to happen on a particular machine. Sometimes it doesn't show the Ndis option. Upon a computer reboot we see it?</div>
+<div><p> </p></div>
+<div>
+<img style="max-width:100%;max-width:100%;width: 6in;max-height: 3.3645in;max-height:323px;" alt="image001.png" src="/api/v1/ticket_attachment/5798/31010/129373?view=inline">
+</div>
+<div><p> </p></div>
+<div>
+<img style="max-width:100%;max-width:100%;width: 6.0833in;max-height: 3.3437in;max-height:321px;" alt="image003.png" src="/api/v1/ticket_attachment/5798/31010/129374?view=inline">
+</div>
+<div>Regards,</div>
+<div>Dan Karalis (Principal Electrical Engineer)</div>
+<div>908-850-5088 ext.1317</div>
+<div><img style="max-width:100%;max-width:100%;width: 2.1979in;max-height: 0.4895in;max-height:47px;" alt="image002.png" src="/api/v1/ticket_attachment/5798/31010/129375?view=inline"></div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=31038
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.06.2023 15:34:35 +00:00
+UpdatedAt=23.06.2023 15:49:11 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Ec-SlaveTestApplication WinPCAP vs Ndis
+
+### ARTICLE02_BODY
+Hi Dan,<div> </div><div>You can customize the source code to autoload whatever driver you prefer as default. You could also simply remove the option for WinPcap so it will always default to NDIS. We have not seen this issue with the driver not showing up and then reappearing after reboot and we haven’t been able to reproduce this.<br><div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Jun 21, 2023, at 9:08 AM, Dan Karalis &lt;DanKaralis@astrodynetdi.com&gt; wrote:</div>
+<br><div>
+<div>Hi Ryan,</div>
+<div><p> </p></div>
+<div>It would be a good Idea to make the EC-Slave App autoload the Ndis. This issue arose again, and sometimes the App does not let you change Link Layer manually? For now we will manually set before the initialize cmd. For some reason it doesn’t remember the prior setting.</div>
+<div><p> </p></div>
+<div>Hi Jon,</div>
+<div><p> </p></div>
+<div>Have you seen any issues with your App not remembering the Link Layer Settings? This issue just started to happen on a particular machine. Sometimes it doesn't show the Ndis option. Upon a computer reboot we see it?</div>
+<div><p> </p></div>
+<div>
+<img alt="image001.png" src="/api/v1/ticket_attachment/5798/31038/129474?view=inline" style="max-width:100%;">
+</div>
+<div><p> </p></div>
+<div>
+<img alt="image003.png" src="/api/v1/ticket_attachment/5798/31038/129475?view=inline" style="max-width:100%;">
+</div>
+<div>Regards,</div>
+<div>Dan Karalis (Principal Electrical Engineer)</div>
+<div>908-850-5088 ext.1317</div>
+<div><img alt="image002.png" src="/api/v1/ticket_attachment/5798/31038/129476?view=inline" style="max-width:100%;"></div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

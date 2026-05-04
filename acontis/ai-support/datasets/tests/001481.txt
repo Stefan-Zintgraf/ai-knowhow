@@ -1,0 +1,115 @@
+### HEADER
+Id=1481
+Link=http://at-zammad/#ticket/zoom/1481
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=Omron Automation Americas, PPMAC (ID=562, Number=562)
+Number=701481
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=farooq.ahmad@omron.com (ID=233, FirstName=Farooq, LastName=Ahmad)
+CreatedBy=farooq.ahmad@omron.com (ID=233, FirstName=Farooq, LastName=Ahmad)
+Type=
+TimeUnit=
+CreatedAt=22.09.2021 18:01:03 +00:00
+UpdatedAt=25.04.2022 12:36:19 +00:00
+CloseAt=08.10.2021 06:09:03 +00:00
+ArticlesCount=2
+
+### TITLE
+EtherCAT CRC Error notification?
+
+### ARTICLE00_HEADER
+Id=7987
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.09.2021 18:01:03 +00:00
+UpdatedAt=22.09.2021 18:01:05 +00:00
+
+### ARTICLE00_SUBJECT
+EtherCAT CRC Error notification?
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Martin,</p>
+<p> </p>
+<p>Our customer in Japan experienced a checksum error during SDO command and our team has following question:</p>
+<p> </p>
+<p><b>If the return frame of the emCoeSdoUpload request has a CRC error, how does ACONTIS stack behave?</b></p>
+<p> </p>
+<p>Is it:</p>
+<p>1. When the return frame is discarded in NIC due to a CRC error, ACONTIS receives some notification and returns an error code based on that notification ? or</p>
+<ol start="2" type="1">
+<li> When the return frame is discarded in NIC due to a CRC error, ACONTIS does not receive a notification at this time. After the timeout time has elapsed, ACONTIS receives a timeout notification and returns an error code based on that notification?<p></p>
+</li>
+</ol>
+<p>A Wireshark snapshot captured during error is shown below:</p>
+<p><img style="max-width:100%;width:14.5312in;max-height:1.8229in;width:1395px;max-height:175px;" src="/api/v1/ticket_attachment/1481/7987/30634?view=inline"></p>
+<p> </p>
+<div>
+<p> <img style="max-width:100%;width:4.5104in;max-height:.4687in;width:433px;max-height:45px;" src="/api/v1/ticket_attachment/1481/7987/30635?view=inline" alt="signature_1559069281"></p>
+<p>Farooq Ahmad</p>
+<p>Principal Firmware Engineer</p>
+<p>Direct: 818.717.5667 | farooq.ahmad@omron.com</p>
+<p> </p>
+<p>Omron Automation Americas</p>
+<p>9200 Oakdale Ave. Suite 900, Chatsworth, CA 91311</p>
+<p><a href="https://bit.ly/3dz9EH3" title="https://automation.omron.com/en/us/" rel="nofollow noreferrer noopener" target="_blank">automation.omron.com</a></p>
+<p> </p>
+<p><a href="https://bit.ly/3szOY5T" title="https://www.linkedin.com/company/omron-automation-americas/" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;width:.3229in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/1481/7987/30636?view=inline" alt="signature_1593825543"></a><a href="https://bit.ly/3vh2lKb" rel="nofollow noreferrer noopener" title="https://bit.ly/3vh2lKb" target="_blank"><img border="0" style="max-width:100%;width:.25in;max-height:.25in;width:24px;max-height:24px;" src="/api/v1/ticket_attachment/1481/7987/30637?view=inline" alt="signature_48633699"></a><a href="https://bit.ly/3n2AOt1" title="https://www.instagram.com/omronautomation" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;width:.3229in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/1481/7987/30638?view=inline" alt="signature_1432883732"></a><a href="https://bit.ly/3ehqxF3" title="https://twitter.com/OmronAutomation" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;width:.2916in;max-height:.25in;width:28px;max-height:24px;" src="/api/v1/ticket_attachment/1481/7987/30639?view=inline" alt="signature_1894500672"></a><a href="https://bit.ly/3n3lgoL" title="http://www.youtube.com/OmronAutomationTech" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;width:.3645in;max-height:.25in;width:35px;max-height:24px;" src="/api/v1/ticket_attachment/1481/7987/30640?view=inline" alt="signature_1099395179"></a></p>
+<p> </p>
+<p><i>This is a confidential message. If received in error, delete it and notify the sender.</i> </p>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=7990
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.09.2021 06:32:14 +00:00
+UpdatedAt=23.09.2021 06:32:20 +00:00
+
+### ARTICLE01_SUBJECT
+EtherCAT CRC Error notification?
+
+### ARTICLE01_BODY
+Hi Farooq,<div><br></div><div>Answer 2. Corrupted frames are not passed to the linklayer and EC-Master will behave like in a frame loss situation.</div><div><br></div><div>Best Regards,</div><div>Cyril<div><br></div>
+<div><blockquote type="cite">On Wednesday, September 22, 2021, 8:01:03 PM, farooq.ahmad@omron.com wrote:<br><br><div>
+<p>Dear Martin,</p>
+<p> </p>
+<p>Our customer in Japan experienced a checksum error during SDO command and our team has following question:</p>
+<p> </p>
+<p><b>If the return frame of the emCoeSdoUpload request has a CRC error, how does ACONTIS stack behave?</b></p>
+<p> </p>
+<p>Is it:</p>
+<p>1. When the return frame is discarded in NIC due to a CRC error, ACONTIS receives some notification and returns an error code based on that notification ? or</p>
+<ol start="2" type="1">
+<li> When the return frame is discarded in NIC due to a CRC error, ACONTIS does not receive a notification at this time. After the timeout time has elapsed, ACONTIS receives a timeout notification and returns an error code based on that notification?<p></p>
+</li>
+</ol>
+<p>A Wireshark snapshot captured during error is shown below:</p>
+<p><img style="max-width:100%;max-width:100%;width:14.5312in;max-height:1.8229in;width:1395px;max-height:175px;" src="/api/v1/ticket_attachment/1481/7990/30647?view=inline"></p>
+<p> </p>
+<div>
+<p> <img style="max-width:100%;max-width:100%;width:4.5104in;max-height:.4687in;width:433px;max-height:45px;" src="/api/v1/ticket_attachment/1481/7990/30648?view=inline" alt="signature_1559069281"></p>
+<p>Farooq Ahmad</p>
+<p>Principal Firmware Engineer</p>
+<p>Direct: 818.717.5667 | farooq.ahmad@omron.com</p>
+<p> </p>
+<p>Omron Automation Americas</p>
+<p>9200 Oakdale Ave. Suite 900, Chatsworth, CA 91311</p>
+<p><a href="https://bit.ly/3dz9EH3" title="https://automation.omron.com/en/us/" rel="nofollow noreferrer noopener" target="_blank">automation.omron.com</a></p>
+<p> </p>
+<p><a href="https://bit.ly/3szOY5T" title="https://www.linkedin.com/company/omron-automation-americas/" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.3229in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/1481/7990/30649?view=inline" alt="signature_1593825543"></a><a href="https://bit.ly/3vh2lKb" rel="nofollow noreferrer noopener" title="https://bit.ly/3vh2lKb" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.25in;max-height:.25in;width:24px;max-height:24px;" src="/api/v1/ticket_attachment/1481/7990/30650?view=inline" alt="signature_48633699"></a><a href="https://bit.ly/3n2AOt1" title="https://www.instagram.com/omronautomation" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.3229in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/1481/7990/30651?view=inline" alt="signature_1432883732"></a><a href="https://bit.ly/3ehqxF3" title="https://twitter.com/OmronAutomation" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.2916in;max-height:.25in;width:28px;max-height:24px;" src="/api/v1/ticket_attachment/1481/7990/30652?view=inline" alt="signature_1894500672"></a><a href="https://bit.ly/3n3lgoL" title="http://www.youtube.com/OmronAutomationTech" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.3645in;max-height:.25in;width:35px;max-height:24px;" src="/api/v1/ticket_attachment/1481/7990/30653?view=inline" alt="signature_1099395179"></a></p>
+<p> </p>
+<p><i>This is a confidential message. If received in error, delete it and notify the sender.</i> </p>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

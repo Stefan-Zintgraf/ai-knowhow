@@ -1,0 +1,216 @@
+### HEADER
+Id=3913
+Link=http://at-zammad/#ticket/zoom/3913
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Sanctuary AI (ID=415, Number=0, Country=US)
+Commission=Sanctuary AI, Worlds Best Hand (ID=493, Number=493)
+Number=703913
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=babak.zia@sanctuary.ai (ID=1307, FirstName=Babak, LastName=Zia)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=16.09.2022 12:59:50 +00:00
+UpdatedAt=21.09.2022 06:23:23 +00:00
+CloseAt=21.09.2022 06:23:23 +00:00
+ArticlesCount=3
+
+### TITLE
+Re: EC-Master Questions
+
+### ARTICLE00_HEADER
+Id=20784
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.09.2022 12:59:50 +00:00
+UpdatedAt=16.09.2022 12:59:50 +00:00
+
+### ARTICLE00_SUBJECT
+Re: EC-Master Questions
+
+### ARTICLE00_BODY
+Hi Babak,<div> </div><div>Sorry for the delay, I was at an exhibit this past week and now I’m back. I’m copying our developers for their suggestions/insight into this compiler error.<br><div>
+<div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Sep 14, 2022, at 5:15 PM, Babak Zia &lt;<a href="mailto:babak.zia@sanctuary.ai">babak.zia@sanctuary.ai</a>&gt; wrote:</div>
+<br><div>
+<div dir="ltr">
+<div>
+<div>Hello Jon, Thank you Brad<br>
+</div>At the moment, I am trying to run the demo as mentioned in EC-Master_ClassB.pdf. I receive an error while I am trying Compile the atemsys Kernel module for Linux (page 26). you can see the messages in the screenshot.<br>
+</div>Babak<br>
+</div>
+<br><div>
+<div dir="ltr">On Wed, Sep 14, 2022 at 1:52 PM Brad MacNeil &lt;<a href="mailto:bmacneil@sanctuary.ai">bmacneil@sanctuary.ai</a>&gt; wrote:<br>
+</div>
+<blockquote>
+<div dir="ltr">Hi Jon,<br><div> </div>
+<div>I want to introduce a new member of our team. Babak is working on developing firmware and will be using your software for some of our EtherCAT based applications.</div>
+<div> </div>
+<div>Babak is trying to setup a development environment on a new machine and we are encountering some compatibility issues with the link layer drivers. We are not sure if our configuration is supported. Babak will follow up with a more detailed description.</div>
+<div> </div>
+<div>Best regards,</div>
+<div> </div>
+<div>Brad</div>
+</div>
+</blockquote>
+</div>
+<br> CONFIDENTIALITY NOTICE: This communication, and any attachments thereto, is confidential and intended solely for use by the recipient(s) named above.<img src="/api/v1/ticket_attachment/3913/20784/85929?view=inline" style="max-width:100%;">
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=20907
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.09.2022 17:55:00 +00:00
+UpdatedAt=20.09.2022 20:51:28 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Master Questions
+
+### ARTICLE01_BODY
+<div dir="ltr">Hi Jon<br>Just like to follow up the issue in configuring the link layer. I am looking forward for your suggestions.<br>Thank you<br>Babak</div><br><div>
+<div dir="ltr">On Fri, Sep 16, 2022 at 5:59 AM Jon Waters &lt;<a href="mailto:j.waters@acontis.com">j.waters@acontis.com</a>&gt; wrote:<br>
+</div>
+<span class="js-signatureMarker"></span><blockquote><div>Hi Babak,<div> </div>
+<div>Sorry for the delay, I was at an exhibit this past week and now I’m back. I’m copying our developers for their suggestions/insight into this compiler error.<br><div>
+<div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><blockquote type="cite">
+<div>On Sep 14, 2022, at 5:15 PM, Babak Zia &lt;<a href="mailto:babak.zia@sanctuary.ai">babak.zia@sanctuary.ai</a>&gt; wrote:</div>
+<br><div>
+<div dir="ltr">
+<div>
+<div>Hello Jon, Thank you Brad<br>
+</div>At the moment, I am trying to run the demo as mentioned in EC-Master_ClassB.pdf. I receive an error while I am trying Compile the atemsys Kernel module for Linux (page 26). you can see the messages in the screenshot.<br>
+</div>Babak<br>
+</div>
+<br><div>
+<div dir="ltr">On Wed, Sep 14, 2022 at 1:52 PM Brad MacNeil &lt;<a href="mailto:bmacneil@sanctuary.ai">bmacneil@sanctuary.ai</a>&gt; wrote:<br>
+</div>
+<blockquote>
+<div dir="ltr">Hi Jon,<br><div> </div>
+<div>I want to introduce a new member of our team. Babak is working on developing firmware and will be using your software for some of our EtherCAT based applications.</div>
+<div> </div>
+<div>Babak is trying to setup a development environment on a new machine and we are encountering some compatibility issues with the link layer drivers. We are not sure if our configuration is supported. Babak will follow up with a more detailed description.</div>
+<div> </div>
+<div>Best regards,</div>
+<div> </div>
+<div>Brad</div>
+</div>
+</blockquote>
+</div>
+<br> CONFIDENTIALITY NOTICE: This communication, and any attachments thereto, is confidential and intended solely for use by the recipient(s) named above.<img src="/api/v1/ticket_attachment/3913/20907/86590?view=inline" style="max-width:100%;">
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+</div>
+</div></blockquote>
+</div><br> CONFIDENTIALITY NOTICE: This communication, and any attachments thereto, is confidential and intended solely for use by the recipient(s) named above.
+
+### ARTICLE02_HEADER
+Id=20913
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.09.2022 06:23:23 +00:00
+UpdatedAt=21.09.2022 06:23:26 +00:00
+
+### ARTICLE02_SUBJECT
+EC-Master Questions
+
+### ARTICLE02_BODY
+Hi Babak,<div>Some Distributors remove irq_to_desc()  with their Kernel-patches. </div><div>In Mainline and Ubuntu this is correct.<br><div>
+<div>Please add the define</div>
+<div><b>HAVE_IRQ_TO_DESC=0 </b></div>
+<div>to make, then <span>irq_to_desc() won't be used</span><span>.</span>
+</div>
+<div><span><br></span></div>
+<div>Best Regards</div>
+<div>Daniel</div>
+<div><br></div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/3913/20913/86599?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, 20 September 2022 at 19:55:00, Babak Zia wrote:<br><br><div dir="ltr">Hi Jon<br>Just like to follow up the issue in configuring the link layer. I am looking forward for your suggestions.<br>Thank you<br>Babak</div>
+<br><div>
+<div dir="ltr">On Fri, Sep 16, 2022 at 5:59 AM Jon Waters &lt;<a href="mailto:j.waters@acontis.com">j.waters@acontis.com</a>&gt; wrote:<br>
+</div>
+<span class="js-signatureMarker"></span><blockquote><div>Hi Babak,<div> </div>
+<div>Sorry for the delay, I was at an exhibit this past week and now I’m back. I’m copying our developers for their suggestions/insight into this compiler error.<br><div>
+<div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><blockquote type="cite">
+<div>On Sep 14, 2022, at 5:15 PM, Babak Zia &lt;<a href="mailto:babak.zia@sanctuary.ai">babak.zia@sanctuary.ai</a>&gt; wrote:</div>
+<br><div>
+<div dir="ltr">
+<div>
+<div>Hello Jon, Thank you Brad<br>
+</div>At the moment, I am trying to run the demo as mentioned in EC-Master_ClassB.pdf. I receive an error while I am trying Compile the atemsys Kernel module for Linux (page 26). you can see the messages in the screenshot.<br>
+</div>Babak<br>
+</div>
+<br><div>
+<div dir="ltr">On Wed, Sep 14, 2022 at 1:52 PM Brad MacNeil &lt;<a href="mailto:bmacneil@sanctuary.ai">bmacneil@sanctuary.ai</a>&gt; wrote:<br>
+</div>
+<blockquote>
+<div dir="ltr">Hi Jon,<br><div> </div>
+<div>I want to introduce a new member of our team. Babak is working on developing firmware and will be using your software for some of our EtherCAT based applications.</div>
+<div> </div>
+<div>Babak is trying to setup a development environment on a new machine and we are encountering some compatibility issues with the link layer drivers. We are not sure if our configuration is supported. Babak will follow up with a more detailed description.</div>
+<div> </div>
+<div>Best regards,</div>
+<div> </div>
+<div>Brad</div>
+</div>
+</blockquote>
+</div>
+<br> CONFIDENTIALITY NOTICE: This communication, and any attachments thereto, is confidential and intended solely for use by the recipient(s) named above.<img src="/api/v1/ticket_attachment/3913/20913/86600?view=inline" style="max-width:100%;max-width:100%;">
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+</div>
+</div></blockquote>
+</div>
+<br> CONFIDENTIALITY NOTICE: This communication, and any attachments thereto, is confidential and intended solely for use by the recipient(s) named above.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

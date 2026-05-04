@@ -1,0 +1,278 @@
+### HEADER
+Id=915
+Link=http://at-zammad/#ticket/zoom/915
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ProCom GmbH (ID=146, Number=57505, Country=DE)
+Commission=ProCom, CNC, Class A RTOS-32, EC-Lyser (ID=165, Number=165)
+Number=700915
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=denis.koenig@procom.de (ID=386, FirstName=Denis, LastName=König)
+CreatedBy=denis.koenig@procom.de (ID=386, FirstName=Denis, LastName=König)
+Type=
+TimeUnit=
+CreatedAt=28.06.2021 15:26:54 +00:00
+UpdatedAt=30.07.2021 06:12:14 +00:00
+CloseAt=30.07.2021 06:12:14 +00:00
+ArticlesCount=2
+
+### TITLE
+Error DCM Controller (0x981201CA)
+
+### ARTICLE00_HEADER
+Id=5136
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.06.2021 15:26:54 +00:00
+UpdatedAt=28.06.2021 15:26:55 +00:00
+
+### ARTICLE00_SUBJECT
+Error DCM Controller (0x981201CA)
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo zusammen,</p>
+<p> </p>
+<p>bei einem System (Stack EC-Master V2.9.2.05) mit einer Zykluszeit von 4ms bekommen wir beim Booten folgende Fehlermeldung:</p>
+<p> </p>
+<p>034880 : DCM during startup (&lt;INIT&gt; to &lt;OP&gt;)</p>
+<p>034880 : DCM Diff(ns): Cur=-815622, Avg= -44272, Max=-958948</p>
+<p>034896 : DCM out of sync Cur="1960231", Avg=" -44336", Max="1960231"</p>
+<p>036672 : DCM out of sync Cur="-100917", Avg="-122079", Max="1960231"</p>
+<p>036680 : DCM Status: ERROR: Error DCM Controller - Drift between local timer and ref clock to high (0x981201CA)</p>
+<p> </p>
+<p>Wird nach dieser Meldung mit dem Versuch die Synchronität aufzubauen aufgehört oder könnte man direkt danach einen neuen Versuch starten?</p>
+<p>Wonach könnte man sonst bei diesem Fehlerbild schauen? Vielen Dank im Voraus.</p>
+<p> </p>
+<p>Viele Grüße</p>
+<p>Denis König</p>
+<p> </p>
+</div><br>
+<p>Mit freundlichen Grüßen / Best regards<br><br></p><p><br> Denis König<br> (Entwicklung CAM/CNC-Produkte)<span class="js-signatureMarker"></span><br> -- <br> ProCom GmbH<br> Luisenstraße 41 - D-52070 Aachen<br>
+<br> Denis.Koenig@procom.de<br> Mobile: +49 1522 2810 118 I Phone: +49 241 51804-169 <br> Fax: +49 241 51804-30 | Web: www.procom.eu<br>
+<br> ________________________________________________________ </p><a href="https://procom-automation.de/industrie-4-0-clouver/registrierung/" rel="nofollow noreferrer noopener" title="https://procom-automation.de/industrie-4-0-clouver/registrierung/" target="_blank">
+</a><br>
+<br>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td valign="top">
+<div>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td valign="top">
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td valign="top">
+<p><a href="https://www.xing.com/companies/procomgmbh" rel="nofollow noreferrer noopener" title="https://www.xing.com/companies/procomgmbh" target="_blank"></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top">
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td valign="top">
+<p><a href="https://www.linkedin.com/company/procom-gmbh" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/procom-gmbh" target="_blank"></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top">
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td valign="top">
+<p><a href="https://twitter.com/@procomEnergyAC" rel="nofollow noreferrer noopener" title="https://twitter.com/@procomEnergyAC" target="_blank"></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top">
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td valign="top">
+<p><a href="https://www.instagram.com/procomgmbh/" rel="nofollow noreferrer noopener" title="https://www.instagram.com/procomgmbh/" target="_blank"></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top">
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td valign="top">
+<p><a href="https://www.facebook.com/procomaachen/" rel="nofollow noreferrer noopener" title="https://www.facebook.com/procomaachen/" target="_blank"></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top">
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td valign="top">
+<p><a href="https://www.youtube.com/channel/UC5Lruc2dMwuFTJzC8UPf6Rg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UC5Lruc2dMwuFTJzC8UPf6Rg" target="_blank"></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p><p> </p><p>
+<strong></strong></p><br>
+<p><br> ProCom GmbH - Luisenstraße 41 - D-52070 Aachen/Germany<br> Amtsgericht Aachen, HRB 1554, Ust-ID: DE 121 687 115<br> Managing Director: Dr. Max Scheidt</p>
+
+### ARTICLE01_HEADER
+Id=5137
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.06.2021 15:41:59 +00:00
+UpdatedAt=28.06.2021 15:42:03 +00:00
+
+### ARTICLE01_SUBJECT
+Error DCM Controller (0x981201CA)
+
+### ARTICLE01_BODY
+Hallo Herr König,<div><br></div><div>bei der Meldungen sind heftige Ausreißern:</div><div><br></div><div>
+<p>034896 : DCM out of sync Cur="<b>1960231</b>", Avg=" -44336", Max="1960231"</p>
+<p>036672 : DCM out of sync Cur="<b>-100917</b>", Avg="-122079", Max="1960231"</p>
+</div><div><br></div><div>Wichtig ist aus Sicht des Masters nur der Rückgabewert von emSetMasterstate(OP). Der Regler gibt nie auf und versucht nach zu regeln.</div><div>Wenn diese Ausreißern aber nach OP stattfinden muss Ihre Application damit klar kommen, dass die Daten nicht sauber am Bus angekommen sind. Es kann manchmal egal sein weil die Antriebe fehlende Positionen extrapolieren. Sauber ist es aber nicht.</div><div><br></div><div>Haben sie ein gut / schlecht Zustand um heraus zu finden wo die Ausreißern herkommen? HW / SW / Application?</div><div><br></div><div>Schöne Grüße,</div><div>Cyril Eyssautier<div><br></div>
+<div><blockquote type="cite">On Monday, June 28, 2021, 5:26:54 PM, Denis König wrote:<br><br><div>
+<p>Hallo zusammen,</p>
+<p> </p>
+<p>bei einem System (Stack EC-Master V2.9.2.05) mit einer Zykluszeit von 4ms bekommen wir beim Booten folgende Fehlermeldung:</p>
+<p> </p>
+<p>034880 : DCM during startup (&lt;INIT&gt; to &lt;OP&gt;)</p>
+<p>034880 : DCM Diff(ns): Cur=-815622, Avg= -44272, Max=-958948</p>
+<p>034896 : DCM out of sync Cur="1960231", Avg=" -44336", Max="1960231"</p>
+<p>036672 : DCM out of sync Cur="-100917", Avg="-122079", Max="1960231"</p>
+<p>036680 : DCM Status: ERROR: Error DCM Controller - Drift between local timer and ref clock to high (0x981201CA)</p>
+<p> </p>
+<p>Wird nach dieser Meldung mit dem Versuch die Synchronität aufzubauen aufgehört oder könnte man direkt danach einen neuen Versuch starten?</p>
+<p>Wonach könnte man sonst bei diesem Fehlerbild schauen? Vielen Dank im Voraus.</p>
+<p> </p>
+<p>Viele Grüße</p>
+<p>Denis König</p>
+<p> </p>
+</div>
+<br>
+<p>Mit freundlichen Grüßen / Best regards<br><br></p>
+<p><br> Denis König<br> (Entwicklung CAM/CNC-Produkte)<span class="js-signatureMarker"></span><br> -- <br> ProCom GmbH<br> Luisenstraße 41 - D-52070 Aachen<br>
+<br> Denis.Koenig@procom.de<br> Mobile: +49 1522 2810 118 I Phone: +49 241 51804-169 <br> Fax: +49 241 51804-30 | Web: www.procom.eu<br>
+<br> ________________________________________________________ </p>
+<a href="https://procom-automation.de/industrie-4-0-clouver/registrierung/" rel="nofollow noreferrer noopener" title="https://procom-automation.de/industrie-4-0-clouver/registrierung/" target="_blank">
+</a><br>
+<br>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td valign="top">
+<div>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td valign="top">
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td valign="top">
+<p><a href="https://www.xing.com/companies/procomgmbh" rel="nofollow noreferrer noopener" title="https://www.xing.com/companies/procomgmbh" target="_blank"></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top">
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td valign="top">
+<p><a href="https://www.linkedin.com/company/procom-gmbh" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/procom-gmbh" target="_blank"></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top">
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td valign="top">
+<p><a href="https://twitter.com/@procomEnergyAC" rel="nofollow noreferrer noopener" title="https://twitter.com/@procomEnergyAC" target="_blank"></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top">
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td valign="top">
+<p><a href="https://www.instagram.com/procomgmbh/" rel="nofollow noreferrer noopener" title="https://www.instagram.com/procomgmbh/" target="_blank"></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top">
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td valign="top">
+<p><a href="https://www.facebook.com/procomaachen/" rel="nofollow noreferrer noopener" title="https://www.facebook.com/procomaachen/" target="_blank"></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top">
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td valign="top">
+<p><a href="https://www.youtube.com/channel/UC5Lruc2dMwuFTJzC8UPf6Rg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UC5Lruc2dMwuFTJzC8UPf6Rg" target="_blank"></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p> </p>
+<p>
+<strong></strong></p>
+<br>
+<p><br> ProCom GmbH - Luisenstraße 41 - D-52070 Aachen/Germany<br> Amtsgericht Aachen, HRB 1554, Ust-ID: DE 121 687 115<br> Managing Director: Dr. Max Scheidt</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,175 @@
+### HEADER
+Id=7872
+Link=http://at-zammad/#ticket/zoom/7872
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Allison Transmission, Test Equipment Controller (ID=391, Number=391)
+Number=707872
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=12.04.2024 19:51:58 +00:00
+UpdatedAt=19.04.2024 06:10:20 +00:00
+CloseAt=19.04.2024 06:10:20 +00:00
+ArticlesCount=3
+
+### TITLE
+Fwd: EL2911 [B]
+
+### ARTICLE00_HEADER
+Id=43361
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.04.2024 19:51:59 +00:00
+UpdatedAt=12.04.2024 19:51:59 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: EL2911 [B]
+
+### ARTICLE00_BODY
+Does this work with EC-Engineer?<br><div>
+<br>/Jon </div><div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>Wayne Lehto &lt;Wayne.Lehto@allisontransmission.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>EL2911 [B]</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>April 12, 2024 at 3:17:20 PM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Cc: </b></span><span>Sumit Thaker &lt;sumit.thaker@allisontransmission.com&gt;<br></span>
+</div>
+<br><div>
+<div>
+<div> Allison Transmission Confidential: <span style=" color: rgb(19, 94, 171);">Business Use Only</span>
+</div>
+<div><p> </p></div>
+<div>Hi Jon,</div>
+<div><p> </p></div>
+<div>Hope you are doing well. We are evaluating some of the TwinSAFE terminals from Beckhoff, and attempted to use the .sci file generated from TwinCAT and import it into EC engineer with the ESI manager and received the attached error. Attached is the .sci file and we are running EC Engineer version 3.7.5. Have you seen this in the past with the TwinSAFE hardware?</div>
+<div><p> </p></div>
+<div>Thanks,<br>Wayne</div>
+<div><p> </p></div>
+<div><b><span style=" color: rgb(18, 95, 171);">Wayne Lehto</span></b></div>
+<div><b><span style=" color: rgb(18, 95, 171);">Staff Engineer, Advanced Test Technology</span></b></div>
+<div><b><span style=" color: rgb(18, 95, 171);">Engineering Operations</span></b></div>
+<div><span style=" color: rgb(77, 77, 77);">O 317-242-2603 | M 765-418-3506</span></div>
+<div><span><a href="mailto:wayne.lehto@allisontransmission.com"><span style="color: blue;">wayne.lehto@allisontransmission.com</span></a><span style="color: rgb(18, 95, 171);"></span></span></div>
+<div><span style=" color: rgb(77, 77, 77);">Mail Code M3A</span></div>
+<div><span style=" color: rgb(77, 77, 77);">One Allison Way</span></div>
+<div><span style=" color: rgb(77, 77, 77);">Indianapolis, IN 46222-3271</span></div>
+<div><p> </p></div>
+</div>
+<div>_____________________________________<br>Confidentiality Notice: This e-mail (including attachments) is for the exclusive and confidential use of its intended recipient. IF YOU HAVE RECEIVED THIS E-MAIL IN ERROR, please do not read, distribute or take action in reliance upon it. Unauthorized use, disclosure or distribution is strictly prohibited. Please advise the sender immediately, permanently delete this e-mail from your system and destroy any hard copies.</div>
+</div>
+</blockquote>
+</div>
+
+### ARTICLE01_HEADER
+Id=43378
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.04.2024 06:47:53 +00:00
+UpdatedAt=15.04.2024 06:47:55 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: EL2911 [B]
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>the SCI file from TwinCAT was not Schema confirm. I fixed the SCI file. Now it should work with EC-Engineer.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, April 12, 2024 at 9:51:59 PM, Jon Waters wrote:<br><br>Does this work with EC-Engineer?<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>Wayne Lehto &lt;Wayne.Lehto@allisontransmission.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>EL2911 [B]</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>April 12, 2024 at 3:17:20 PM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Cc: </b></span><span>Sumit Thaker &lt;sumit.thaker@allisontransmission.com&gt;<br></span>
+</div>
+<br><div>
+<div>
+<div> Allison Transmission Confidential: <span style=" color: rgb(19, 94, 171);">Business Use Only</span>
+</div>
+<div><p> </p></div>
+<div>Hi Jon,</div>
+<div><p> </p></div>
+<div>Hope you are doing well. We are evaluating some of the TwinSAFE terminals from Beckhoff, and attempted to use the .sci file generated from TwinCAT and import it into EC engineer with the ESI manager and received the attached error. Attached is the .sci file and we are running EC Engineer version 3.7.5. Have you seen this in the past with the TwinSAFE hardware?</div>
+<div><p> </p></div>
+<div>Thanks,<br>Wayne</div>
+<div><p> </p></div>
+<div><b><span style=" color: rgb(18, 95, 171);">Wayne Lehto</span></b></div>
+<div><b><span style=" color: rgb(18, 95, 171);">Staff Engineer, Advanced Test Technology</span></b></div>
+<div><b><span style=" color: rgb(18, 95, 171);">Engineering Operations</span></b></div>
+<div><span style=" color: rgb(77, 77, 77);">O 317-242-2603 | M 765-418-3506</span></div>
+<div><span><a href="mailto:wayne.lehto@allisontransmission.com"><span style="color: blue;">wayne.lehto@allisontransmission.com</span></a><span style="color: rgb(18, 95, 171);"></span></span></div>
+<div><span style=" color: rgb(77, 77, 77);">Mail Code M3A</span></div>
+<div><span style=" color: rgb(77, 77, 77);">One Allison Way</span></div>
+<div><span style=" color: rgb(77, 77, 77);">Indianapolis, IN 46222-3271</span></div>
+<div><p> </p></div>
+</div>
+<div>_____________________________________<br>Confidentiality Notice: This e-mail (including attachments) is for the exclusive and confidential use of its intended recipient. IF YOU HAVE RECEIVED THIS E-MAIL IN ERROR, please do not read, distribute or take action in reliance upon it. Unauthorized use, disclosure or distribution is strictly prohibited. Please advise the sender immediately, permanently delete this e-mail from your system and destroy any hard copies.</div>
+</div>
+</blockquote>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=43416
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.04.2024 13:39:21 +00:00
+UpdatedAt=15.04.2024 21:13:30 +00:00
+
+### ARTICLE02_SUBJECT
+Re: EL2911 [B]
+
+### ARTICLE02_BODY
+Hi Wayne,<div> </div><div>It seems that the SCI file from TwinCAT did not conform to the official spec. We fixed the SCI file, and it should now work in EC-Engineer.</div><div> </div>

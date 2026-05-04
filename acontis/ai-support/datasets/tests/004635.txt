@@ -1,0 +1,185 @@
+### HEADER
+Id=4635
+Link=http://at-zammad/#ticket/zoom/4635
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Motion Control Unit (ID=507, Number=507)
+Number=704635
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=ecsupport@soft-service.co.jp (ID=33, FirstName=Ecsupport, LastName=)
+CreatedBy=ecsupport@soft-service.co.jp (ID=33, FirstName=Ecsupport, LastName=)
+Type=
+TimeUnit=
+CreatedAt=28.12.2022 05:23:35 +00:00
+UpdatedAt=06.01.2023 07:06:55 +00:00
+CloseAt=06.01.2023 07:06:55 +00:00
+ArticlesCount=3
+
+### TITLE
+Slave to Slave Setting
+
+### ARTICLE00_HEADER
+Id=24462
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.12.2022 05:23:35 +00:00
+UpdatedAt=28.12.2022 05:23:38 +00:00
+
+### ARTICLE00_SUBJECT
+Slave to Slave Setting
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Dear Support Team</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">I got a question from Mitsubishi.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">They are changing the settings to try Slave to Slave communication.</span></p>
+<p><span lang="EN-US">It doesn't seem to work, so I'd like to check how to set it up.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">[PDO Mapping settings]</span></p>
+<p><span lang="EN-US">In order to prepare for confirmation of Slave to Slave,</span></p>
+<p><span lang="EN-US">First, They changed the PDO Mapping of the 1010th slave.</span></p>
+<p><span lang="EN-US">An error occurred during communication.</span></p>
+<p><span lang="EN-US">(/Data/Mapping/ecmaster0.0.log)</span></p>
+<p><span lang="EN-US">Q:</span></p>
+<p><span lang="EN-US">Is it because the subindex of the added data is not set to 0?</span></p>
+<p><span lang="EN-US">Also, do they need to uncheck "257th transmit PDO Mapping"?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">[Slave to Slave (In Cycle) settings]</span></p>
+<p><span lang="EN-US">They did the settings in "InCycle View" like the attached image.</span></p>
+<p><span lang="EN-US">(/Data/InCycle/Slave to Slave Setting.png)</span></p>
+<p><span lang="EN-US">An error occurred during communication.</span></p>
+<p><span lang="EN-US">Is there an error in the setting method?</span></p>
+<p><span lang="EN-US">Q:</span></p>
+<p><span lang="EN-US">I think if they set the same way in "Default View", communication will work.</span></p>
+<p><span lang="EN-US">Do you need "InCycle View" specific settings?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Kenji Nakamura</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=24468
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=28.12.2022 09:32:37 +00:00
+UpdatedAt=28.12.2022 09:32:37 +00:00
+
+### ARTICLE01_BODY
+Ich glaube er macht was Falsches in seinen Engineer-Projekten!  
+
+### ARTICLE02_HEADER
+Id=24491
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.01.2023 10:34:22 +00:00
+UpdatedAt=02.01.2023 10:34:25 +00:00
+
+### ARTICLE02_SUBJECT
+Slave to Slave Setting
+
+### ARTICLE02_BODY
+Hi,<div><br></div><div>see answers below.</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div>
+<blockquote type="cite">On Wednesday, December 28, 2022 at 6:23:35 AM, Ecsupport wrote:<br><br><div>
+<p><span lang="EN-US">Dear Support Team</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">I got a question from Mitsubishi.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">They are changing the settings to try Slave to Slave communication.</span></p>
+<p><span lang="EN-US">It doesn't seem to work, so I'd like to check how to set it up.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">[PDO Mapping settings]</span></p>
+<p><span lang="EN-US">In order to prepare for confirmation of Slave to Slave,</span></p>
+<p><span lang="EN-US">First, They changed the PDO Mapping of the 1010th slave.</span></p>
+<p><span lang="EN-US">An error occurred during communication.</span></p>
+<p><span lang="EN-US">(/Data/Mapping/ecmaster0.0.log)</span></p>
+<p><span lang="EN-US">Q:</span></p>
+<p><span lang="EN-US">Is it because the subindex of the added data is not set to 0?</span></p>
+<p><span lang="EN-US">MG: No.</span></p>
+<p><span lang="EN-US">Also, do they need to uncheck "257th transmit PDO Mapping"?</span></p>
+<p><span lang="EN-US">MG: Maybe, but I guess adding/removing PDOs is not supported from this slave. Please check the manual of that slave.</span></p>
+<p><span lang="EN-US">As you did it it is definitly wrong because both PDOs has the same index:</span></p>
+<p><span lang="EN-US"><br></span></p>
+</div>
+</blockquote>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/4635/24491/103299?view=inline"><blockquote type="cite"><div>
+<p><span lang="EN-US"></span></p>
+<p>From the CoE Object Dictionary I can see that this slave has only those objects:</p>
+<p><br></p>
+</div></blockquote>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/4635/24491/103300?view=inline"><blockquote type="cite"><div>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">[Slave to Slave (In Cycle) settings]</span></p>
+<p><span lang="EN-US">They did the settings in "InCycle View" like the attached image.</span></p>
+<p><span lang="EN-US">(/Data/InCycle/Slave to Slave Setting.png)</span></p>
+<p><span lang="EN-US">An error occurred during communication.</span></p>
+<p><span lang="EN-US">Is there an error in the setting method?</span></p>
+<p><span lang="EN-US">MG: The error "Sync manager watchdog" means that your slave 1014 requires a real-time system:</span></p>
+<p><span lang="EN-US"><br></span></p>
+</div></blockquote>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/4635/24491/103301?view=inline"><blockquote type="cite"><div>
+<p><span lang="EN-US">If you don't have one or just for testing you can turn off the sync manager watchdog on advanced settings tab of that slave:</span></p>
+<p><span lang="EN-US"><br></span></p>
+</div></blockquote>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/4635/24491/103302?view=inline"><br><br><blockquote type="cite"><div>
+<p><span lang="EN-US">Q:</span></p>
+<p><span lang="EN-US">I think if they set the same way in "Default View", communication will work.</span></p>
+<p><span lang="EN-US">Do you need "InCycle View" specific settings?</span></p>
+<p><span lang="EN-US"></span></p>
+<p>MG: "Slave to Slave In Cycle" communication is very special and has some limitations. I recommend if you don't need it to use the "Default" mode. If you really need it please check the manual for the limitations:</p>
+<p><br></p>
+</div></blockquote>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/4635/24491/103303?view=inline"><blockquote type="cite">
+<div>
+<p><br></p>
+<p></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Kenji Nakamura</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br>
+</blockquote>
+</div>
+<div><br></div>
+<br><br>
+</div>

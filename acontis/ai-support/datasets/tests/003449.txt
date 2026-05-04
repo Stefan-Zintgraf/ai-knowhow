@@ -1,0 +1,173 @@
+### HEADER
+Id=3449
+Link=http://at-zammad/#ticket/zoom/3449
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=SS Innovation (ID=69, Number=40221, Country=IN)
+Commission=SS Innovation, Surgical Robot (ID=76, Number=76)
+Number=703449
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=shubhankar.kulkarni@ssinnovations.org (ID=411, FirstName=Shubhankar, LastName=Kulkarni)
+CreatedBy=shubhankar.kulkarni@ssinnovations.org (ID=411, FirstName=Shubhankar, LastName=Kulkarni)
+Type=
+TimeUnit=
+CreatedAt=14.07.2022 04:56:08 +00:00
+UpdatedAt=29.07.2022 06:36:38 +00:00
+CloseAt=29.07.2022 06:36:38 +00:00
+ArticlesCount=2
+
+### TITLE
+Re: Rx error on Ec-Inspector log
+
+### ARTICLE00_HEADER
+Id=18355
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.07.2022 04:56:08 +00:00
+UpdatedAt=14.07.2022 04:56:08 +00:00
+
+### ARTICLE00_SUBJECT
+Re: Rx error on Ec-Inspector log
+
+### ARTICLE00_BODY
+<p> </p><div style="color: rgb(33, 33, 33);" dir="auto">Hi Kai,</div><div style="color: rgb(33, 33, 33);" dir="auto">We are running EtherCAT master while observing EC-Inspector. Si initial errors gets cleared in Master.</div><div style="color: rgb(33, 33, 33);" dir="auto"> <br> </div><div style="color: rgb(33, 33, 33);" dir="auto">Later whenever we are getting RX errors, Master goes in standby mode (EtherCAT network down).</div><div style="color: rgb(33, 33, 33);" dir="auto"> <br> </div><div style="color: rgb(33, 33, 33);" dir="auto">So, we are expecting some causes &amp; solutions to this problem.</div><div style="color: rgb(33, 33, 33);" dir="auto"> <br> </div><div style="color: rgb(33, 33, 33);" dir="auto">Please revert for detailing of this error.</div><div style="color: rgb(33, 33, 33);" dir="auto"> <br> </div><div style="color: rgb(33, 33, 33);" dir="auto">Thanks &amp; Regards,</div><div style="color: rgb(33, 33, 33);" dir="auto">Shubhankar</div><div style="color: rgb(33, 33, 33);" dir="auto"> <br> </div><div dir="auto"> <div> </div>Get<a href="https://aka.ms/AAb9ysg" rel="nofollow noreferrer noopener" title="https://aka.ms/AAb9ysg" target="_blank">Outlook for Android</a>
+</div><hr> <div dir="ltr">
+<b>From:</b> Kai Feifel &lt;k.feifel@acontis.com&gt; <br> <b>Sent:</b> Wednesday, July 13, 2022 6:57:14 PM <br> <b>To:</b> Shubhankar Kulkarni &lt;shubhankar.kulkarni@ssinnovations.org&gt; <br> <b>Cc:</b> 'Patricia Bauce' &lt;p.bauce@acontis.com&gt; <br> <b>Subject:</b> AW: Rx error on Ec-Inspector log <div> </div>
+</div><div lang="DE"> <div> <p>Hi,</p>
+<p> </p>
+<p>these errors appear because they are in the slave register. It is normal that a system has some errors after start up. You can clear all errors on your system and start EC-Inspector after. Then there should be no errors.</p>
+<p> </p>
+<p>After 10 minutes the eval version stops. So I guess this is the problem at 17:17.</p>
+<p>The rest looks good.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kai</p>
+<p> </p>
+<div> <div> <span class="js-signatureMarker"></span><p><b>Von:</b> Suraj Dwivedi &lt;&gt; <br> <b>Gesendet:</b> Mittwoch, 13. Juli 2022 14:26 <br> <b>An:</b> Patricia Bauce &lt;<a href="mailto:p.bauce@acontis.com">p.bauce@acontis.com</a>&gt; <br> <b>Cc:</b> Shubhankar Kulkarni &lt;<a href="mailto:shubhankar.kulkarni@ssinnovations.org">shubhankar.kulkarni@ssinnovations.org</a>&gt; <br> <b>Betreff:</b> Reg: Rx error on Ec-Inspector log</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Patricia,</p>
+<div> <p> </p>
+</div>
+<div> <p>Hope you are doing well.</p>
+</div>
+<div> <p>I have been testing system using Ec- inspector.</p>
+</div>
+<div> <p>I am getting frequent slave Rx error.</p>
+</div>
+<div> <p>Can you suggest what all it can mean?</p>
+</div>
+<div> <p> </p>
+</div>
+<div> <p><img border="0" src="/api/v1/ticket_attachment/3449/18355/74721?view=inline" alt="image0.jpeg" style="max-width:100%;width:12.1875in;max-height:12.8541in;width:1170px;max-height:1234px;"></p>
+</div>
+<div> <p> </p>
+</div>
+<div> <p>Regards</p>
+</div>
+<div> <p>suraj</p>
+<div> <p>Sent from my iPhone</p>
+</div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=18357
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.07.2022 05:05:50 +00:00
+UpdatedAt=14.07.2022 05:05:51 +00:00
+
+### ARTICLE01_SUBJECT
+Rx error on Ec-Inspector log
+
+### ARTICLE01_BODY
+So the master goes down, not matter if EC-Inspector is running or not?<div><br></div><div>Can you please send me a Master log file with verbosity level 5.</div><div><br></div><div>Best regards,</div><div>Kai<br><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, July 14, 2022 at 6:56:08 AM, Shubhankar Kulkarni wrote:<br><br><p> </p>
+<div style="color: rgb(33, 33, 33);" dir="auto">Hi Kai,</div>
+<div style="color: rgb(33, 33, 33);" dir="auto">We are running EtherCAT master while observing EC-Inspector. Si initial errors gets cleared in Master.</div>
+<div style="color: rgb(33, 33, 33);" dir="auto"> <br> </div>
+<div style="color: rgb(33, 33, 33);" dir="auto">Later whenever we are getting RX errors, Master goes in standby mode (EtherCAT network down).</div>
+<div style="color: rgb(33, 33, 33);" dir="auto"> <br> </div>
+<div style="color: rgb(33, 33, 33);" dir="auto">So, we are expecting some causes &amp; solutions to this problem.</div>
+<div style="color: rgb(33, 33, 33);" dir="auto"> <br> </div>
+<div style="color: rgb(33, 33, 33);" dir="auto">Please revert for detailing of this error.</div>
+<div style="color: rgb(33, 33, 33);" dir="auto"> <br> </div>
+<div style="color: rgb(33, 33, 33);" dir="auto">Thanks &amp; Regards,</div>
+<div style="color: rgb(33, 33, 33);" dir="auto">Shubhankar</div>
+<div style="color: rgb(33, 33, 33);" dir="auto"> <br> </div>
+<div dir="auto"> <div> </div>Get<a href="https://aka.ms/AAb9ysg" rel="nofollow noreferrer noopener" title="https://aka.ms/AAb9ysg" target="_blank">Outlook for Android</a>
+</div>
+<hr> <div dir="ltr">
+<b>From:</b> Kai Feifel &lt;k.feifel@acontis.com&gt; <br> <b>Sent:</b> Wednesday, July 13, 2022 6:57:14 PM <br> <b>To:</b> Shubhankar Kulkarni &lt;shubhankar.kulkarni@ssinnovations.org&gt; <br> <b>Cc:</b> 'Patricia Bauce' &lt;p.bauce@acontis.com&gt; <br> <b>Subject:</b> AW: Rx error on Ec-Inspector log <div> </div>
+</div>
+<div lang="DE"> <div> <p>Hi,</p>
+<p> </p>
+<p>these errors appear because they are in the slave register. It is normal that a system has some errors after start up. You can clear all errors on your system and start EC-Inspector after. Then there should be no errors.</p>
+<p> </p>
+<p>After 10 minutes the eval version stops. So I guess this is the problem at 17:17.</p>
+<p>The rest looks good.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kai</p>
+<p> </p>
+<div> <div> <span class="js-signatureMarker"></span><p><b>Von:</b> Suraj Dwivedi &lt;&gt; <br> <b>Gesendet:</b> Mittwoch, 13. Juli 2022 14:26 <br> <b>An:</b> Patricia Bauce &lt;<a href="mailto:p.bauce@acontis.com">p.bauce@acontis.com</a>&gt; <br> <b>Cc:</b> Shubhankar Kulkarni &lt;<a href="mailto:shubhankar.kulkarni@ssinnovations.org">shubhankar.kulkarni@ssinnovations.org</a>&gt; <br> <b>Betreff:</b> Reg: Rx error on Ec-Inspector log</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Patricia,</p>
+<div> <p> </p>
+</div>
+<div> <p>Hope you are doing well.</p>
+</div>
+<div> <p>I have been testing system using Ec- inspector.</p>
+</div>
+<div> <p>I am getting frequent slave Rx error.</p>
+</div>
+<div> <p>Can you suggest what all it can mean?</p>
+</div>
+<div> <p> </p>
+</div>
+<div> <p><img border="0" src="/api/v1/ticket_attachment/3449/18357/74735?view=inline" alt="image0.jpeg" style="max-width:100%;max-width:100%;width:12.1875in;max-height:12.8541in;width:1170px;max-height:1234px;"></p>
+</div>
+<div> <p> </p>
+</div>
+<div> <p>Regards</p>
+</div>
+<div> <p>suraj</p>
+<div> <p>Sent from my iPhone</p>
+</div>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

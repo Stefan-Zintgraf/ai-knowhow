@@ -1,0 +1,160 @@
+### HEADER
+Id=4567
+Link=http://at-zammad/#ticket/zoom/4567
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Seattle Safety (ID=408, Number=0, Country=US)
+Commission=Seattle Safety, Crash Simulation Control System (ID=486, Number=486)
+Number=704567
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=zhao@seattlesafety.com (ID=1522, FirstName=Shao, LastName=Zhao)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=15.12.2022 15:31:48 +00:00
+UpdatedAt=23.12.2022 13:04:16 +00:00
+CloseAt=23.12.2022 13:04:16 +00:00
+ArticlesCount=5
+
+### TITLE
+Fwd: master redundancy
+
+### ARTICLE00_HEADER
+Id=24129
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.12.2022 15:31:48 +00:00
+UpdatedAt=15.12.2022 15:31:48 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: master redundancy
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>Our customer is considering upgrading to support either Cable Redundancy or possibly Master Redundancy. They have both manuals for the Feature Packs under NDA while they evaluate.</div><div> </div><div>I guess they have some questions on the configuration, and they seem to use TwinCAT instead of EC-Engineer. Do we have some recommendations for the correct way to create the configuration in TwinCAT?<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>Shao Zhao &lt;zhao@SeattleSafety.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>master redundancy</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>December 14, 2022 at 7:51:19 PM EST<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<br><div>
+<div>Hi Jon,</div>
+<div><p> </p></div>
+<div>Today I am looking at the master redundancy. I have a question about setup. In TwinCat, if I click on the device and then in the Advanced Settings, there is one tab is Redundancy. If I want to do the master redundancy, do I need to select Second adapter as the screenshot shown below?</div>
+<div><p> </p></div>
+<div>
+<img alt="image001.png" src="/api/v1/ticket_attachment/4567/24129/101805?view=inline" style="max-width:100%;">
+</div>
+<div><p> </p></div>
+<div>Best regards,</div>
+<div><p> </p></div>
+<div>
+<b><span style=" color: navy;">Shao Zhao</span></b>
+</div>
+<div><span style=" color: navy;">Controls and Electrical Lead Engineer</span></div>
+<div><p> </p></div>
+<div><span style=" color: rgb(31, 73, 125);">4502 B St NW #1</span></div>
+<div><span style=" color: rgb(31, 73, 125);">Auburn WA 98001 USA</span></div>
+<div><span style=" color: navy;">P: 253-395-4321 Extension 161<br>F: 253-981-0223<br><a href="http://www.seattlesafety.com/" title="blocked::http://www.seattlesafety.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color: navy;">www.seattlesafety.com</span></a></span></div>
+<div><p> </p></div>
+<div>
+<span style=" color: navy;">Note: Any performance data contained herein is operating-condition dependent.</span>
+</div>
+<div><span style=" color: navy;">This email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you have received this email in error please notify the system manager. Please note that any views or opinions presented in this email are solely those of the author and do not necessarily represent those of the company. Finally, the recipient should check this email and any attachments for the presence of viruses. The company accepts no liability for any damage caused by any virus transmitted by this email.</span></div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=24134
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=15.12.2022 15:56:38 +00:00
+UpdatedAt=15.12.2022 15:56:38 +00:00
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>the only topic is to not use LRW but LRD/LWR.</div><div><br></div><div>Best Regards,</div><div>Cyril</div>
+
+### ARTICLE02_HEADER
+Id=24137
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=15.12.2022 16:22:26 +00:00
+UpdatedAt=15.12.2022 16:22:26 +00:00
+
+### ARTICLE02_BODY
+So does that mean they should not setup this additional network adapter in TwinCAT?
+
+### ARTICLE03_HEADER
+Id=24149
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=16.12.2022 06:59:08 +00:00
+UpdatedAt=16.12.2022 06:59:08 +00:00
+
+### ARTICLE03_BODY
+Exactly. The ENI file doesn't contain any information about cable redundancy. Our implementation only restrict the LRW usage.
+
+### ARTICLE04_HEADER
+Id=24190
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.12.2022 19:12:53 +00:00
+UpdatedAt=16.12.2022 19:13:04 +00:00
+
+### ARTICLE04_SUBJECT
+Re: master redundancy
+
+### ARTICLE04_BODY
+Hi Shao,<div> </div><div>You don’t have to set anything like this in TwinCAT. The only important setting is to disable LRW and use LRD/LWR instead. Both EC-Engineer and TwinCAT have an option to set this.</div><div> </div><div>The ENI file won’t contain any information about cable redundancy, so the advanced setting you found in TwinCAT is not relevant to our implementation.<br><div>
+<br>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Dec 14, 2022, at 7:51 PM, Shao Zhao &lt;zhao@SeattleSafety.com&gt; wrote:</div>
+<br><div>
+<div>Hi Jon,</div>
+<div><p> </p></div>
+<div>Today I am looking at the master redundancy. I have a question about setup. In TwinCat, if I click on the device and then in the Advanced Settings, there is one tab is Redundancy. If I want to do the master redundancy, do I need to select Second adapter as the screenshot shown below?</div>
+<div><p> </p></div>
+<div>
+<img alt="image001.png" src="/api/v1/ticket_attachment/4567/24190/102143?view=inline" style="max-width:100%;">
+</div>
+<div><p> </p></div>
+<div>Best regards,</div>
+<div><p> </p></div>
+<div>
+<b><span style=" color: navy;">Shao Zhao</span></b>
+</div>
+<div><span style=" color: navy;">Controls and Electrical Lead Engineer</span></div>
+<div><p> </p></div>
+<div><span style=" color: rgb(31, 73, 125);">4502 B St NW #1</span></div>
+<div><span style=" color: rgb(31, 73, 125);">Auburn WA 98001 USA</span></div>
+<div><span style=" color: navy;">P: 253-395-4321 Extension 161<br>F: 253-981-0223<br><a href="http://www.seattlesafety.com/" title="blocked::http://www.seattlesafety.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color: navy;">www.seattlesafety.com</span></a></span></div>
+<div><p> </p></div>
+<div>
+<span style=" color: navy;">Note: Any performance data contained herein is operating-condition dependent.</span>
+</div>
+<div><span style=" color: navy;">This email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you have received this email in error please notify the system manager. Please note that any views or opinions presented in this email are solely those of the author and do not necessarily represent those of the company. Finally, the recipient should check this email and any attachments for the presence of viruses. The company accepts no liability for any damage caused by any virus transmitted by this email.</span></div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

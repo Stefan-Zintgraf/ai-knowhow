@@ -1,0 +1,182 @@
+### HEADER
+Id=1112
+Link=http://at-zammad/#ticket/zoom/1112
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ITK Engineering GmbH (ID=120, Number=54016, Country=DE)
+Commission=ITK, Asimov Express (ID=134, Number=134)
+Number=701112
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=michael.wenz@itk-engineering.de (ID=107, FirstName=Michael, LastName=Wenz)
+CreatedBy=michael.wenz@itk-engineering.de (ID=107, FirstName=Michael, LastName=Wenz)
+Type=
+TimeUnit=
+CreatedAt=27.07.2021 09:46:33 +00:00
+UpdatedAt=30.07.2021 06:29:30 +00:00
+CloseAt=30.07.2021 06:29:30 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-Inspector und EL6695
+
+### ARTICLE00_HEADER
+Id=6137
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.07.2021 09:46:33 +00:00
+UpdatedAt=27.07.2021 09:46:35 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Inspector und EL6695
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Herr Feifel, hallo Herr Oelhaf,</p>
+<p> </p>
+<p>wenn in der ENI Datei eine EL6695 konfiguriert ist und ich in EC-Inspector</p>
+<p>„Starte Diagnose“ und „Stoppe Diagnose“ klicke, erhalte ich</p>
+<p>ERR | 2021-07-27 11:04:44 | Slave 'Klemme 9 (EL6695)' wird vom Master nicht unterstützt.</p>
+<p>ERR | 2021-07-27 11:04:44 | Slave 'Klemme 9 (EL6695)' wird vom Master nicht unterstützt.</p>
+<p><img style="max-width:100%;width:5.9666in;max-height:3.1583in;width:573px;max-height:303px;" src="/api/v1/ticket_attachment/1112/6137/22522?view=inline"></p>
+<p> </p>
+<p>Ich lasse ECMasterDemo unter Xenomai laufen und verwende EC-STA, um EL6695 Variablewerte zu ändern.</p>
+<p><img style="max-width:100%;width:6.1666in;max-height:4.325in;width:592px;max-height:415px;" src="/api/v1/ticket_attachment/1112/6137/22523?view=inline"></p>
+<p> </p>
+<p><img style="max-width:100%;width:6.1166in;max-height:3.2333in;width:587px;max-height:310px;" src="/api/v1/ticket_attachment/1112/6137/22524?view=inline"></p>
+<p> </p>
+<p>In EC-Inspector sehe ich dann die erwarteten Werte.</p>
+<p>Deswegen meine Frage, wie ist die Fehlermeldung von EC-Inspector zu verstehen?</p>
+<p>Wird EL6695 von EC-Monitor und EC-Inspector vollständig unterstützt?</p>
+<p>Dateien hierzu habe ich abgelegt unter</p>
+<p> </p>
+<p><a href="https://inside.itk-engineering.de/index.php/s/TdR4aZ74bxZpnJn" rel="nofollow noreferrer noopener" target="_blank">https://inside.itk-engineering.de/index.php/s/TdR4aZ74bxZpnJn</a></p>
+<p>j8IkrvWq</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Michael Wenz</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>--</p>
+<p>Dr.-Ing. Michael Wenz</p>
+<p>Software Engineering</p>
+<p> </p>
+<p>ITK Engineering GmbH</p>
+<p>Im Speyerer Tal 6</p>
+<p>D-76761 Rülzheim</p>
+<p> </p>
+<p>Tel.: +49 7272 7703-456</p>
+<p>Fax: +49 7272 7703-100</p>
+<p>Mobil: +49 174 9480570</p>
+<p> </p>
+<p>mailto: michael.wenz@itk-engineering.de</p>
+<p> </p>
+<p>_____________________________________________________________</p>
+<p>ITK Engineering GmbH Im Speyerer Tal 6 76761 Rülzheim</p>
+<p>Tel.: +49 7272 7703-0 Fax: +49 7272 7703-100</p>
+<p>mailto:info@itk-engineering.de <a href="http://www.itk-engineering.de" rel="nofollow noreferrer noopener" target="_blank">http://www.itk-engineering.de</a></p>
+<p> </p>
+<p>Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board:</p>
+<p>Dr. Rudolf Maier</p>
+<p>Geschäftsführung/Executive Board:</p>
+<p>Michael Englert (Vorsitzender/Chairman), Bernd Gohlicke</p>
+<p>Sitz der Gesellschaft/Registered Office: 76761 Rülzheim</p>
+<p>Registergericht/Registered Court: Amtsgericht Landau, HRB 32046</p>
+<p>USt.-ID-Nr./VAT-ID-No. DE813165046</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=6142
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.07.2021 11:54:04 +00:00
+UpdatedAt=27.07.2021 11:54:22 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Inspector und EL6695
+
+### ARTICLE01_BODY
+Hallo Herr Wenz,<div><br></div><div>das ist ein Versehen gewesen. Ich mache die Unterstützung rein und die Meldung raus. Das sollte bei Ihnen aber keine Auswirkungen haben, außer die Meldung.</div><div>
+<br>Viele Grüße</div><div>Kai Feifel<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, July 27, 2021, 11:46:33 AM, Michael Wenz wrote:<br><br><div>
+<p>Hallo Herr Feifel, hallo Herr Oelhaf,</p>
+<p> </p>
+<p>wenn in der ENI Datei eine EL6695 konfiguriert ist und ich in EC-Inspector</p>
+<p>„Starte Diagnose“ und „Stoppe Diagnose“ klicke, erhalte ich</p>
+<p>ERR | 2021-07-27 11:04:44 | Slave 'Klemme 9 (EL6695)' wird vom Master nicht unterstützt.</p>
+<p>ERR | 2021-07-27 11:04:44 | Slave 'Klemme 9 (EL6695)' wird vom Master nicht unterstützt.</p>
+<p><img style="max-width:100%;max-width:100%;width:5.9666in;max-height:3.1583in;width:573px;max-height:303px;" src="/api/v1/ticket_attachment/1112/6142/22533?view=inline"></p>
+<p> </p>
+<p>Ich lasse ECMasterDemo unter Xenomai laufen und verwende EC-STA, um EL6695 Variablewerte zu ändern.</p>
+<p><img style="max-width:100%;max-width:100%;width:6.1666in;max-height:4.325in;width:592px;max-height:415px;" src="/api/v1/ticket_attachment/1112/6142/22534?view=inline"></p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:6.1166in;max-height:3.2333in;width:587px;max-height:310px;" src="/api/v1/ticket_attachment/1112/6142/22535?view=inline"></p>
+<p> </p>
+<p>In EC-Inspector sehe ich dann die erwarteten Werte.</p>
+<p>Deswegen meine Frage, wie ist die Fehlermeldung von EC-Inspector zu verstehen?</p>
+<p>Wird EL6695 von EC-Monitor und EC-Inspector vollständig unterstützt?</p>
+<p>Dateien hierzu habe ich abgelegt unter</p>
+<p> </p>
+<p><a href="https://inside.itk-engineering.de/index.php/s/TdR4aZ74bxZpnJn" rel="nofollow noreferrer noopener" target="_blank">https://inside.itk-engineering.de/index.php/s/TdR4aZ74bxZpnJn</a></p>
+<p>j8IkrvWq</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Michael Wenz</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>--</p>
+<p>Dr.-Ing. Michael Wenz</p>
+<p>Software Engineering</p>
+<p> </p>
+<p>ITK Engineering GmbH</p>
+<p>Im Speyerer Tal 6</p>
+<p>D-76761 Rülzheim</p>
+<p> </p>
+<p>Tel.: +49 7272 7703-456</p>
+<p>Fax: +49 7272 7703-100</p>
+<p>Mobil: +49 174 9480570</p>
+<p> </p>
+<p>mailto: michael.wenz@itk-engineering.de</p>
+<p> </p>
+<p>_____________________________________________________________</p>
+<p>ITK Engineering GmbH Im Speyerer Tal 6 76761 Rülzheim</p>
+<p>Tel.: +49 7272 7703-0 Fax: +49 7272 7703-100</p>
+<p>mailto:info@itk-engineering.de <a href="http://www.itk-engineering.de" rel="nofollow noreferrer noopener" target="_blank">http://www.itk-engineering.de</a></p>
+<p> </p>
+<p>Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board:</p>
+<p>Dr. Rudolf Maier</p>
+<p>Geschäftsführung/Executive Board:</p>
+<p>Michael Englert (Vorsitzender/Chairman), Bernd Gohlicke</p>
+<p>Sitz der Gesellschaft/Registered Office: 76761 Rülzheim</p>
+<p>Registergericht/Registered Court: Amtsgericht Landau, HRB 32046</p>
+<p>USt.-ID-Nr./VAT-ID-No. DE813165046</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

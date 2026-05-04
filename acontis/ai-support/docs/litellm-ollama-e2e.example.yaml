@@ -1,0 +1,45 @@
+# Example LiteLLM proxy config: local Ollama only (E2E / smoke for support_rag).
+# Copy: cp docs/litellm-ollama-e2e.example.yaml litellm-e2e.local.yaml
+# Start: litellm --config litellm-e2e.local.yaml --port 4000
+#
+# support_rag LLMGatewayClient sends JSON model "embedding" (embed), "retrieval" (RAG-internal
+# sync rewrite/HyDe), and optional "chat" (Web UI async chat when llm_gateway.chat_model=chat),
+# plus X-Slot headers (PRD R-15/R-16). Simplest LiteLLM setup: map by `model_name` below only.
+#
+# Ollama: http://127.0.0.1:11434  |  ollama pull all-minilm  |  ollama pull llama3.2:1b
+# Do NOT add OpenAI/Anthropic keys to this file for the local-only E2E profile.
+#
+# If your LiteLLM version uses different keys or requires OLLAMA_API_BASE, set:
+#   set OLLAMA_API_BASE=http://127.0.0.1:11434
+# (See LiteLLM + Ollama release notes for your version.)
+
+# api_base: no trailing slash (avoids //api/embed with some clients). `truncate: true` helps
+# if Ollama returns 400 on long inputs. Embeddings for support_rag can also bypass LiteLLM
+# (see config.e2e.yaml `llm_gateway.ollama_embed_*`).
+model_list:
+  - model_name: embedding
+    litellm_params:
+      model: ollama/all-minilm
+      api_base: http://127.0.0.1:11434
+      truncate: true
+    model_info:
+      mode: embedding
+
+  - model_name: retrieval
+    litellm_params:
+      model: ollama/llama3.2:1b
+      api_base: http://127.0.0.1:11434
+
+  # Optional second route: same backend, distinct model_name for UI chat (see config.e2e chat_model)
+  - model_name: chat
+    litellm_params:
+      model: ollama/llama3.2:1b
+      api_base: http://127.0.0.1:11434
+
+# Optional: general_settings.master_key if you enable proxy auth (see runbook §9).
+#
+# PRD / product docs may refer to "allow_remote: false" for the LLM path. There is
+# not a single stable LiteLLM YAML key with that exact name in every version; for
+# this E2E profile, **local-only** means: only Ollama `model_list` entries above, no
+# cloud `api_key` blocks. If your LiteLLM build documents an explicit block-by-remote
+# flag, add it here and note it in _bmad-output/.../deferred-work.md

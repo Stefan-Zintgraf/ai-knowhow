@@ -1,0 +1,209 @@
+### HEADER
+Id=8858
+Link=http://at-zammad/#ticket/zoom/8858
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Auris Surgical Robotics Inc (ID=336, Number=40288, Country=US)
+Commission=Auris Surgical, ARES (ID=401, Number=401)
+Number=708858
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=btowns@its.jnj.com (ID=1963, FirstName=Brooke [ETHUS], LastName=Towns)
+CreatedBy=btowns@its.jnj.com (ID=1963, FirstName=Brooke [ETHUS], LastName=Towns)
+Type=
+TimeUnit=
+CreatedAt=12.09.2024 20:56:50 +00:00
+UpdatedAt=24.09.2024 19:54:44 +00:00
+CloseAt=13.09.2024 15:13:30 +00:00
+ArticlesCount=4
+
+### TITLE
+EC-Engineer Download for Linux
+
+### ARTICLE00_HEADER
+Id=49975
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.09.2024 20:56:50 +00:00
+UpdatedAt=12.09.2024 20:56:50 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Engineer Download for Linux
+
+### ARTICLE00_BODY
+<div>Hello,</div><div> </div><div>Could I please have the download link to EC-Engineer for Linux? As far as I'm aware, Johnson and Johnson has a license for this software, but I can only seem to find the download for Windows machines.</div><div> </div><div>Thanks,</div><div> </div><div>
+<p>
+<span style=" color: rgb(99, 102, 106);"><b>BROOKE TOWNS</b></span></p>
+<p>
+<span style=" color: rgb(99, 102, 106);">RDLDP Engineer II</span></p>
+<p>
+<span style=" color: rgb(99, 102, 106);"><b><i>Monarch Robotics Software Engineering</i></b></span></p>
+<p>
+<span style=" color: rgb(99, 102, 106);"> </span></p>
+<p>
+<span style=" color: rgb(99, 102, 106);">Johnson &amp; Johnson: MedTech</span></p>
+<p>
+<span style=" color: rgb(99, 102, 106);">150 Shoreline Drive</span></p>
+<p>
+<span style=" color: rgb(99, 102, 106);">Redwood City, CA 94063</span></p>
+<p>
+<span style=" color: rgb(99, 102, 106);"><u><a href="mailto:btowns@its.jnj.com" title="mailto:btowns@its.jnj.com">btowns@its.jnj.com</a></u></span></p>
+<p>
+<span style=" color: rgb(5, 99, 193);"><u><a href="http://www.jnj.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.jnj.com</a></u></span></p>
+<p> </p>
+<p>
+<img style="max-width:100%;width: 1.4027in;max-height: 0.1805in;min-width: auto;min-height: auto;width:134px;max-height:17px;" src="/api/v1/ticket_attachment/8858/49975/207357?view=inline"></p>
+<span><br>
+</span>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=49987
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=13.09.2024 06:38:14 +00:00
+UpdatedAt=13.09.2024 06:38:14 +00:00
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>when they were at acontis, there were two developers who only had Linux Computers. So that they can participate in the training, we installed them the EC-Engineer Web Eval. But Johnson &amp; Johnson do not have a license for EC-Engineer Web.</div><div><br></div><div>/Kai</div>
+
+### ARTICLE02_HEADER
+Id=50051
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.09.2024 15:13:31 +00:00
+UpdatedAt=13.09.2024 15:13:33 +00:00
+
+### ARTICLE02_SUBJECT
+EC-Engineer Download for Linux
+
+### ARTICLE02_BODY
+<div>Hi Brooke,</div><div><br></div><div>Auris only has licenses for EC-Engineer which is the Windows software. We have a separate product called EC-Engineer Web which can run under Windows and Linux. I believe that we gave some evals for that out to the team that recently at our office in Germany for some training. Do you want a quote to order some licenses for EC-Engineer Web?<br>
+</div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Jon Waters</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +1-508-809-7200</div>
+<div>acontis technologies Inc.,  945 Concord Street, Framingham, MA 01701, United States, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Thursday, September 12, 2024 at 4:56:50 PM, Brooke [ETHUS] Towns wrote:<br><br><div>Hello,</div>
+<div> </div>
+<div>Could I please have the download link to EC-Engineer for Linux? As far as I'm aware, Johnson and Johnson has a license for this software, but I can only seem to find the download for Windows machines.</div>
+<div> </div>
+<div>Thanks,</div>
+<div> </div>
+<div>
+<p>
+<span style=" color: rgb(99, 102, 106);"><b>BROOKE TOWNS</b></span></p>
+<p>
+<span style=" color: rgb(99, 102, 106);">RDLDP Engineer II</span></p>
+<p>
+<span style=" color: rgb(99, 102, 106);"><b><i>Monarch Robotics Software Engineering</i></b></span></p>
+<p>
+<span style=" color: rgb(99, 102, 106);"> </span></p>
+<p>
+<span style=" color: rgb(99, 102, 106);">Johnson &amp; Johnson: MedTech</span></p>
+<p>
+<span style=" color: rgb(99, 102, 106);">150 Shoreline Drive</span></p>
+<p>
+<span style=" color: rgb(99, 102, 106);">Redwood City, CA 94063</span></p>
+<p>
+<span style=" color: rgb(99, 102, 106);"><u><a href="mailto:btowns@its.jnj.com" title="mailto:btowns@its.jnj.com">btowns@its.jnj.com</a></u></span></p>
+<p>
+<span style=" color: rgb(5, 99, 193);"><u><a href="http://www.jnj.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.jnj.com</a></u></span></p>
+<p> </p>
+<p>
+<img style="max-width:100%;max-width:100%;width: 1.4027in;max-height: 0.1805in;min-width: auto;min-height: auto;width:134px;max-height:17px;" src="/api/v1/ticket_attachment/8858/50051/207644?view=inline"></p>
+<span><br>
+</span>
+<div> </div>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE03_HEADER
+Id=50535
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.09.2024 18:40:53 +00:00
+UpdatedAt=24.09.2024 18:40:53 +00:00
+
+### ARTICLE03_SUBJECT
+Re: EC-Engineer Download for Linux [Ticket#708858]
+
+### ARTICLE03_BODY
+<div>Hi Jon,</div><div> </div><div>No thank you, I saw that my team had an eval for EC-Engineer Web. Thanks for following up!</div><div> </div><div>Brooke</div><hr>
+<div dir="ltr">
+<b>From:</b> Jon Waters via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Friday, September 13, 2024 8:13 AM<br>
+<b>To:</b> Towns, Brooke [ETHUS] &lt;BTowns@ITS.JNJ.com&gt;<br>
+<b>Cc:</b> j.waters@acontis.com &lt;j.waters@acontis.com&gt;<br>
+<b>Subject:</b> [EXTERNAL] RE: EC-Engineer Download for Linux [Ticket#708858] <div> </div>
+</div><div>
+<div>Hi Brooke,</div>
+<div> </div>
+<div>Auris only has licenses for EC-Engineer which is the Windows software. We have a separate product called EC-Engineer Web which can run under Windows and Linux. I believe that we gave some evals for that out to the team that recently at our office in Germany for some training. Do you want a quote to order some licenses for EC-Engineer Web?<br>
+</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Jon Waters</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +1-508-809-7200</div>
+<div>acontis technologies Inc., 945 Concord Street, Framingham, MA 01701, United States, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Thursday, September 12, 2024 at 4:56:50 PM, Brooke [ETHUS] Towns wrote:<br>
+<br>
+<div>Hello,</div>
+<div> </div>
+<div>Could I please have the download link to EC-Engineer for Linux? As far as I'm aware, Johnson and Johnson has a license for this software, but I can only seem to find the download for Windows machines.</div>
+<div> </div>
+<div>Thanks,</div>
+<div> </div>
+<div>
+<p><span style="color:rgb(99,102,106);"><b>BROOKE TOWNS</b></span></p>
+<p><span style="color:rgb(99,102,106);">RDLDP Engineer II</span></p>
+<p><span style="color:rgb(99,102,106);"><b><i>Monarch Robotics Software Engineering</i></b></span></p>
+<p><span style="color:rgb(99,102,106);"></span></p>
+<p><span style="color:rgb(99,102,106);">Johnson &amp; Johnson: MedTech</span></p>
+<p><span style="color:rgb(99,102,106);">150 Shoreline Drive</span></p>
+<p><span style="color:rgb(99,102,106);">Redwood City, CA 94063</span></p>
+<p><span style="color:rgb(99,102,106);"><u><a href="mailto:btowns@its.jnj.com" title="mailto:btowns@its.jnj.com">btowns@its.jnj.com</a></u></span></p>
+<p><span style="color:rgb(5,99,193);"><u><a href="http://www.jnj.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.jnj.com</a></u></span></p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:1.4027in;max-height:0.1805in;min-width:auto;min-height:auto;width:134px;max-height:17px;" src="/api/v1/ticket_attachment/8858/50535/210075?view=inline"></p>
+<span><br>
+</span>
+<div> </div>
+</div>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>

@@ -1,0 +1,230 @@
+### HEADER
+Id=7293
+Link=http://at-zammad/#ticket/zoom/7293
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies GmbH (ID=399, Number=1000, Country=DE)
+Commission=GE Healthcare, IGS Positioner (ID=215, Number=215)
+Number=707293
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=l.janischek@acontis.com (ID=2090, FirstName=Lisa, LastName=Janischek)
+CreatedBy=l.janischek@acontis.com (ID=2090, FirstName=Lisa, LastName=Janischek)
+Type=
+TimeUnit=
+CreatedAt=23.01.2024 10:54:20 +00:00
+UpdatedAt=13.12.2024 07:12:51 +00:00
+CloseAt=13.12.2024 07:12:51 +00:00
+ArticlesCount=15
+
+### TITLE
+Delivery for GE Healthcare, IGS Positionner, Commission 40192
+
+### ARTICLE00_HEADER
+Id=39987
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.01.2024 10:54:20 +00:00
+UpdatedAt=23.01.2024 10:54:20 +00:00
+
+### ARTICLE00_SUBJECT
+Delivery for GE Healthcare, IGS Positionner, Commission 40192
+
+### ARTICLE00_BODY
+<div>
+<p>Please deliver software to customer.(aherman@isit.fr)<br>Do not forget to append the delivery note and sales@acontis.com in CC! </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=40006
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=23.01.2024 14:18:28 +00:00
+UpdatedAt=23.01.2024 14:18:28 +00:00
+
+### ARTICLE01_BODY
+Hallo Haithem,<div><br></div><div>Hier sollte die Offizielle Delivery kommen V3.1.4.16</div><div><br></div><div>Grüße,</div><div>Cyril</div>
+
+### ARTICLE02_HEADER
+Id=40958
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.02.2024 01:00:52 +00:00
+UpdatedAt=18.02.2024 01:00:54 +00:00
+
+### ARTICLE02_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE02_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".
+
+### ARTICLE03_HEADER
+Id=41976
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.03.2024 01:05:02 +00:00
+UpdatedAt=10.03.2024 01:05:08 +00:00
+
+### ARTICLE03_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE03_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".
+
+### ARTICLE04_HEADER
+Id=43098
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.04.2024 00:02:26 +00:00
+UpdatedAt=07.04.2024 00:02:30 +00:00
+
+### ARTICLE04_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE04_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".
+
+### ARTICLE05_HEADER
+Id=44254
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.05.2024 00:00:46 +00:00
+UpdatedAt=05.05.2024 00:00:50 +00:00
+
+### ARTICLE05_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE05_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".
+
+### ARTICLE06_HEADER
+Id=45155
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.05.2024 00:03:30 +00:00
+UpdatedAt=26.05.2024 00:03:33 +00:00
+
+### ARTICLE06_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE06_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".
+
+### ARTICLE07_HEADER
+Id=46062
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.06.2024 00:03:46 +00:00
+UpdatedAt=16.06.2024 00:03:50 +00:00
+
+### ARTICLE07_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE07_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".
+
+### ARTICLE08_HEADER
+Id=47414
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.07.2024 00:01:11 +00:00
+UpdatedAt=14.07.2024 00:01:14 +00:00
+
+### ARTICLE08_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE08_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".
+
+### ARTICLE09_HEADER
+Id=48293
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.08.2024 00:04:11 +00:00
+UpdatedAt=04.08.2024 00:04:12 +00:00
+
+### ARTICLE09_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE09_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".
+
+### ARTICLE10_HEADER
+Id=49274
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.09.2024 00:00:09 +00:00
+UpdatedAt=01.09.2024 00:00:12 +00:00
+
+### ARTICLE10_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE10_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".
+
+### ARTICLE11_HEADER
+Id=50399
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.09.2024 00:02:56 +00:00
+UpdatedAt=22.09.2024 00:03:02 +00:00
+
+### ARTICLE11_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE11_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".
+
+### ARTICLE12_HEADER
+Id=51226
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.10.2024 00:03:45 +00:00
+UpdatedAt=13.10.2024 00:03:50 +00:00
+
+### ARTICLE12_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE12_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".
+
+### ARTICLE13_HEADER
+Id=52230
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.11.2024 01:02:35 +00:00
+UpdatedAt=03.11.2024 01:02:40 +00:00
+
+### ARTICLE13_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE13_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".
+
+### ARTICLE14_HEADER
+Id=53278
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.11.2024 01:03:12 +00:00
+UpdatedAt=24.11.2024 01:03:20 +00:00
+
+### ARTICLE14_SUBJECT
+Reminder reached: Tickets older than 3 weeks
+
+### ARTICLE14_BODY
+You have tickets which are older than 3 weeks. If you know those tickets you can exclude them from reminder by adding tag "no_reminder".

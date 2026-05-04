@@ -1,0 +1,68 @@
+### HEADER
+Id=2265
+Link=http://at-zammad/#ticket/zoom/2265
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=none
+Commission=FANUC, EtherCAT model CNC (ID=487, Number=487)
+Number=702265
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Type=
+TimeUnit=
+CreatedAt=20.01.2022 09:07:39 +00:00
+UpdatedAt=12.12.2023 13:49:55 +00:00
+CloseAt=20.01.2022 09:32:12 +00:00
+ArticlesCount=2
+
+### TITLE
+Question about EC-Master (FANUC): IsSlavePresent() API
+
+### ARTICLE00_HEADER
+Id=11994
+ContentType=text/html
+Internal=False
+Type=phone
+CreatedAt=20.01.2022 09:07:39 +00:00
+UpdatedAt=20.01.2022 09:07:39 +00:00
+
+### ARTICLE00_BODY
+<div>Dear Haithem san</div><div><br></div><div> &gt; Q58. Which API is appropriate to use to determine the slave disconnection?</div><div> &gt;   - emGetMasterState</div><div> &gt;   - emGetMasterStateEx</div><div> &gt;   - emGetSlaveState</div><div> &gt;   - emIsSlavePresent</div><div> &gt;   - emGetBusSlaveInfo</div><div> &gt;</div><div> &gt; A58: To determine the slave disconnection FANUC should use emIsSlavePresent</div><div><br></div><div>When can they call emIsSlavePresent to detect the state faster?</div><div>  - Immediately after call ExecJob(Send)</div><div>  - Immediately after call OsWaitForEvent(RxEvent, CYCLE_TIME)</div><div>  - Immediately after call ExecJob(MasterTimer)</div><div>  - Immediately after call ExecJob(SendAcyc)</div><div>  - Varies depending on the situation.</div><div><br></div><div>Do they need any API call to detect slave reconnection?</div><div>  - ExecJob(Send)</div><div>  - OsWaitForEvent(RxEvent, CYCLE_TIME)</div><div>  - ExecJob(MasterTimer)</div><div>  - ExecJob(SendAcyc)</div><div>  - all of the above.</div><div><br></div><div>Best regards,</div><div>Takuya Fujikawa</div><div><br></div><div>On 2022/01/19 19:24, Haithem Jebali via EC-Support wrote:</div><div>&gt; Dear takuya-san,</div><div>&gt;</div><div>&gt; please find my answers in the following:</div><div>&gt;</div><div>&gt; Q58. Which API is appropriate to use to determine the slave disconnection?</div><div>&gt;   - emGetMasterState</div><div>&gt;   - emGetMasterStateEx</div><div>&gt;   - emGetSlaveState</div><div>&gt;   - emIsSlavePresent</div><div>&gt;   - emGetBusSlaveInfo</div><div>&gt;</div><div>&gt; A58: To determine the slave disconnection FANUC should use emIsSlavePresent</div><div>&gt;</div><div>&gt; Q59. Currently, the slave is turned on according to the demo application.</div><div>&gt;       When do users need to switch to another state using SetMasterState?</div><div>&gt;       Is there a case where the user is required to change the state of the master as an EtherCAT standard?</div><div>&gt;</div><div>&gt; A59:</div><div>&gt;   As an EtherCAT standard the FANUC application does not need to change the state of the master!</div><div>&gt; But it is advised to change the state to INIT or PRE-OP, when one of the slaves is in a failure status.</div><div>&gt;</div><div>&gt; Q60. The following chapters describe two types of reconnection methods.</div><div>&gt;       "4.7. Diagnosis, error detection, error notifications"</div><div>&gt;</div><div>&gt;       1. call SetMasterState(xxxx) when disconnecting → call setMasterState(OP) when reconnecting.</div><div>&gt;       2. Do nothing when disconnecting → call SetSlaveState(OP) when reconnecting for fail slave.</div><div>&gt;</div><div>&gt;       What is the difference between these?</div><div>&gt;       Is it up to the user to use which one?</div><div>&gt;</div><div>&gt; A60:</div><div>&gt; It is up to the FANUC application to use one of the two methods:</div><div>&gt; The first one is going to set all slaves to OP after reconnecting. The second one is going to set the specified slave to OP after reconnecting. The other slaves will preserve their states.</div><div>&gt;</div><div>&gt; I think FANUC should consider using a network with more than one slave to see the difference between both.</div><div>&gt;</div><div>&gt;&gt; On Wednesday, January 19, 2022, 1:10:15 AM, Takuya Fujikawa wrote:</div><div>&gt;&gt;</div><div>&gt;&gt; GetBusSlaveInfo</div><div>&gt;</div><div>&gt;</div><div>&gt;</div><div>&gt; ____________________________________________________________________________</div><div>&gt; Haithem Jebali</div><div>&gt; EtherCAT Support</div><div>&gt; acontis technologies GmbH</div><div>&gt; Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div><div>&gt; Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>&gt;</div><div>&gt; Phone: +49 (751) 56030-30</div><div>&gt; eMail: ecsupport@acontis.com</div><div>&gt; ----------------------------------------------------------------------------</div><div>&gt; Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div><div>&gt; <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+
+### ARTICLE01_HEADER
+Id=11998
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.01.2022 09:32:07 +00:00
+UpdatedAt=20.01.2022 09:32:11 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master (FANUC): IsSlavePresent() API
+
+### ARTICLE01_BODY
+<div>Dear Takuya-san,</div><div><br></div><div>Q: <span>When can they call emIsSlavePresent to detect the state faster?</span>
+</div><div>A: They can call the API after Immediately after calling ExecJob(MasterTimer).</div><div><br></div><div>Q: Do they need any API call to detect slave reconnection?</div><div>A: Slave reconnection can be detected with the same API emIsSlavePresent()</div><div><br></div><div>Best Regards</div><div>Haithem Jebali<br><br>
+</div><div><blockquote type="cite">On Thursday, January 20, 2022, 10:07:39 AM, Haithem Jebali wrote:<br><br> Immediately after call ExecJob(MasterTimer)<br>
+</blockquote></div><div><br></div><br><br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Haithem Jebali </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>

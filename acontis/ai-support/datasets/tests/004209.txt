@@ -1,0 +1,102 @@
+### HEADER
+Id=4209
+Link=http://at-zammad/#ticket/zoom/4209
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ASML Netherlands BV (ID=302, Number=45002, Country=NL)
+Commission=ASML, Lithography-Cont. (ID=358, Number=358)
+Number=704209
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=wim.jansen@asml.com (ID=1395, FirstName=Wim, LastName=Jansen)
+CreatedBy=wim.jansen@asml.com (ID=1395, FirstName=Wim, LastName=Jansen)
+Type=
+TimeUnit=
+CreatedAt=28.10.2022 07:13:46 +00:00
+UpdatedAt=04.11.2022 07:12:12 +00:00
+CloseAt=04.11.2022 07:12:12 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-engineer on Windows11
+
+### ARTICLE00_HEADER
+Id=22189
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.10.2022 07:13:47 +00:00
+UpdatedAt=28.10.2022 07:13:47 +00:00
+
+### ARTICLE00_SUBJECT
+EC-engineer on Windows11
+
+### ARTICLE00_BODY
+<div>
+<p>Hi,</p>
+<p> </p>
+<p>Our organization (ASML) is planning to rollout Windows11.<br> We are using today version 3.2.1 on Windows10.<br>
+<br>
+</p>
+<p>Is Windows11 a supported OS for our version of EC-engineer?</p>
+<p> </p>
+<p>Regards,</p>
+<p>Wim Jansen</p>
+<p><br>
+<img style="max-width:100%;width:2.3833in;max-height:2.75in;width:229px;max-height:264px;" src="/api/v1/ticket_attachment/4209/22189/93432?view=inline"></p>
+<span class="js-signatureMarker"></span>
+</div>-- The information contained in this communication and any attachments is confidential and may be privileged, and is for the sole use of the intended recipient(s). Any unauthorized review, use, disclosure or distribution is prohibited. Unless explicitly stated otherwise in the body of this communication or the attachment thereto (if any), the information is provided on an AS-IS basis without any express or implied warranties or liabilities. To the extent you are relying on this information, you are doing so at your own risk. If you are not the intended recipient, please notify the sender immediately by replying to this message and destroy all copies of this message and any attachments. Neither the sender nor the company/group of companies he or she represents shall be liable for the proper and complete transmission of the information contained in this communication, or for any delay in its receipt. -- The information contained in this communication and any attachments is confidential and may be privileged, and is for the sole use of the intended recipient(s). Any unauthorized review, use, disclosure or distribution is prohibited. Unless explicitly stated otherwise in the body of this communication or the attachment thereto (if any), the information is provided on an AS-IS basis without any express or implied warranties or liabilities. To the extent you are relying on this information, you are doing so at your own risk. If you are not the intended recipient, please notify the sender immediately by replying to this message and destroy all copies of this message and any attachments. Neither the sender nor the company/group of companies he or she represents shall be liable for the proper and complete transmission of the information contained in this communication, or for any delay in its receipt.
+
+### ARTICLE01_HEADER
+Id=22200
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.10.2022 08:23:48 +00:00
+UpdatedAt=28.10.2022 08:23:51 +00:00
+
+### ARTICLE01_SUBJECT
+EC-engineer on Windows11
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes EC-Engineer supports Windows 11.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/4209/22200/93458?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, October 28, 2022 at 9:13:47 AM, Wim Jansen wrote:<br><br><div>
+<p>Hi,</p>
+<p> </p>
+<p>Our organization (ASML) is planning to rollout Windows11.<br> We are using today version 3.2.1 on Windows10.<br>
+<br>
+</p>
+<p>Is Windows11 a supported OS for our version of EC-engineer?</p>
+<p> </p>
+<p>Regards,</p>
+<p>Wim Jansen</p>
+<p><br>
+<img style="max-width:100%;max-width:100%;width:2.3833in;max-height:2.75in;width:229px;max-height:264px;" src="/api/v1/ticket_attachment/4209/22200/93459?view=inline"></p>
+<span class="js-signatureMarker"></span>
+</div>-- The information contained in this communication and any attachments is confidential and may be privileged, and is for the sole use of the intended recipient(s). Any unauthorized review, use, disclosure or distribution is prohibited. Unless explicitly stated otherwise in the body of this communication or the attachment thereto (if any), the information is provided on an AS-IS basis without any express or implied warranties or liabilities. To the extent you are relying on this information, you are doing so at your own risk. If you are not the intended recipient, please notify the sender immediately by replying to this message and destroy all copies of this message and any attachments. Neither the sender nor the company/group of companies he or she represents shall be liable for the proper and complete transmission of the information contained in this communication, or for any delay in its receipt. -- The information contained in this communication and any attachments is confidential and may be privileged, and is for the sole use of the intended recipient(s). Any unauthorized review, use, disclosure or distribution is prohibited. Unless explicitly stated otherwise in the body of this communication or the attachment thereto (if any), the information is provided on an AS-IS basis without any express or implied warranties or liabilities. To the extent you are relying on this information, you are doing so at your own risk. If you are not the intended recipient, please notify the sender immediately by replying to this message and destroy all copies of this message and any attachments. Neither the sender nor the company/group of companies he or she represents shall be liable for the proper and complete transmission of the information contained in this communication, or for any delay in its receipt.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

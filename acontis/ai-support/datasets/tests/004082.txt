@@ -1,0 +1,140 @@
+### HEADER
+Id=4082
+Link=http://at-zammad/#ticket/zoom/4082
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Core Motion Medical Robot, Lapayoscopic Surgical Platform (ID=651, Number=651)
+Number=704082
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=11.10.2022 03:58:45 +00:00
+UpdatedAt=21.10.2022 06:11:25 +00:00
+CloseAt=21.10.2022 06:11:25 +00:00
+ArticlesCount=2
+
+### TITLE
+The customer problem about Core Motion Medical Robot
+
+### ARTICLE00_HEADER
+Id=21492
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.10.2022 03:58:45 +00:00
+UpdatedAt=11.10.2022 03:58:48 +00:00
+
+### ARTICLE00_SUBJECT
+The customer problem about Core Motion Medical Robot
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>The customer Core Motion Medical Robot have some problem in a new IPC, the attachment is the error log.</div>
+<div>If they disable the dc, the cycletime latency is ok. So we suggest them to testing master shift, But they reply that the ecmaster report error if they setting "-dcmmode mastershift".</div>
+<div>So we want to chekcing with your side that ecmaster for qnx support the mastershift or not?</div>
+<div> </div>
+<div>By the way the customer's problem, they have 2 different ipc, the one is ok, another is report the error. Do you have better suggestion? Is it the qnx bsp problem?</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=21519
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.10.2022 13:16:24 +00:00
+UpdatedAt=11.10.2022 13:16:26 +00:00
+
+### ARTICLE01_SUBJECT
+The customer problem about Core Motion Medical Robot
+
+### ARTICLE01_BODY
+<div>Hi John,</div>Mastershift is not supported on QNX.<div>However, if they have problems with the timing Mastershift will not help.</div><div><br></div><div>They need to check if <span style=" color: rgb(51, 51, 51);">SYSPAGE_ENTRY(qtime)-&gt;cycles_per_sec </span><span>is properly set for the IPC. See also </span><a href="https://www.qnx.com/developers/docs/7.1/#com.qnx.doc.neutrino.lib_ref/topic/c/clockcycles.html" title="https://www.qnx.com/developers/docs/7.1/#com.qnx.doc.neutrino.lib_ref/topic/c/clockcycles.html" rel="nofollow noreferrer noopener" target="_blank">https://www.qnx.com/developers/docs/7.1/#com.qnx.doc.neutrino.lib_ref/topic/c/clockcycles.html</a>
+</div><div><br></div><div>
+<div>Best regards,</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Holger Oelhaf</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/4082/21519/89260?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Dienstag, 11. Oktober 2022 um 05:58:45, schrieb John Zhang:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>The customer Core Motion Medical Robot have some problem in a new IPC, the attachment is the error log.</div>
+<div>If they disable the dc, the cycletime latency is ok. So we suggest them to testing master shift, But they reply that the ecmaster report error if they setting "-dcmmode mastershift".</div>
+<div>So we want to chekcing with your side that ecmaster for qnx support the mastershift or not?</div>
+<div> </div>
+<div>By the way the customer's problem, they have 2 different ipc, the one is ok, another is report the error. Do you have better suggestion? Is it the qnx bsp problem?</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

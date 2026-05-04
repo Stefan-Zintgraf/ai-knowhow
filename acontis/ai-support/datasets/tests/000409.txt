@@ -1,0 +1,228 @@
+### HEADER
+Id=409
+Link=http://at-zammad/#ticket/zoom/409
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Schaeffler Technologies GmbH & Co. KG, Herzogenaurach (ID=423, Number=0, Country=de)
+Commission=Schaeffler Techn., Standard-Messsystem No Maint. (ID=182, Number=182)
+Number=700409
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=sebastian.vogel@schaeffler.com (ID=251, FirstName=Sebastian, LastName=Vogel)
+CreatedBy=sebastian.vogel@schaeffler.com (ID=251, FirstName=Sebastian, LastName=Vogel)
+Type=
+TimeUnit=
+CreatedAt=14.04.2021 05:22:00 +00:00
+UpdatedAt=26.04.2022 07:50:35 +00:00
+CloseAt=15.04.2021 12:32:44 +00:00
+ArticlesCount=5
+
+### TITLE
+Cannot find registration function for link layer I8254x
+
+### ARTICLE00_HEADER
+Id=2137
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.04.2021 05:22:00 +00:00
+UpdatedAt=14.04.2021 05:22:00 +00:00
+
+### ARTICLE00_SUBJECT
+Cannot find registration function for link layer I8254x
+
+### ARTICLE00_BODY
+<div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>wir sind gerade dabei unseren Ethercat Master von Version 2.9 auf 3.1 zu migrieren.</p>
+<p> </p>
+<p>Leider bekomme ich folgende Fehlermeldung beim ecatInitMaster Aufruf (siehe Screenshot):</p>
+<p>Cannot find registration function for link layer ‘ I8254x’.</p>
+<p> </p>
+<p>Die mitgelieferte lib für das link layer I8254x wird im Projekt gelinkt.</p>
+<p> </p>
+<p>Unter 2.9 war es noch nötig die Funktion OsGetLinkLayerRegFunc selbst zu implementieren.</p>
+<p>Wenn ich dies versuche bekomme ich den Fehler, dass diese bereits durch EcOs bereitgestellt wird.</p>
+<p>Ich habe die Funktion jetzt aus unserem Code entfernt, dadurch lässt sich das Projekt bauen, ich bekomme aber den obigen Fehler zur Laufzeit.</p>
+<p> </p>
+<p>Können Sie mir weiterhelfen, woran das liegen könnte bzw. was zu tun ist?</p>
+<p> </p>
+<p><b>Sebastian Vogel</b> </p>
+<p>Tel. +49 9132 82 - 85341 · Mobil +49 151 62455004</p>
+<p> </p>
+<p><img style="max-width:100%;width:1.3333in;max-height:.1979in;width:128px;max-height:19px;" src="/api/v1/ticket_attachment/409/2137/6370?view=inline"></p>
+<p> </p>
+<p>Schaeffler Technologies AG &amp; Co. KG</p>
+<p>Frauenauracher Str. 98-100</p>
+<p>91056 Erlangen (Germany)</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=2143
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=14.04.2021 06:58:05 +00:00
+UpdatedAt=14.04.2021 06:58:05 +00:00
+
+### ARTICLE01_BODY
+Ich glaube dass wir die partialimage.o des Linklayers geschickt hatten, damit sie es linken anstatt die .out zu laden. Kannst du das herausfinden und begleiten. Danke
+
+### ARTICLE02_HEADER
+Id=2157
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=14.04.2021 09:54:42 +00:00
+UpdatedAt=14.04.2021 09:54:42 +00:00
+
+### ARTICLE02_BODY
+Ist nicht VxWorks! Sondern RTOS-32
+
+### ARTICLE03_HEADER
+Id=2171
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.04.2021 15:01:27 +00:00
+UpdatedAt=14.04.2021 15:01:29 +00:00
+
+### ARTICLE03_SUBJECT
+Cannot find registration function for link layer I8254x
+
+### ARTICLE03_BODY
+<div>Hallo Herr Vogel,</div><div><br></div><div>wir haben diese Handhabung in V3.1 verbessert. Bitte suchen Sie nach</div><div>
+<div><br></div>
+<div>OsReplaceGetLinkLayerRegFunc(&amp;DemoGetLinkLayerRegFunc);</div>
+</div><div><br></div><div>in unseren Example.</div><div><br></div><div>Schöne Grüße,</div><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+
+### ARTICLE04_HEADER
+Id=2207
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.04.2021 11:22:42 +00:00
+UpdatedAt=15.04.2021 11:22:42 +00:00
+
+### ARTICLE04_SUBJECT
+AW: Cannot find registration function for link layer I8254x [Ticket#700409]
+
+### ARTICLE04_BODY
+<div>
+<p>Hallo Herr Eyssautier,</p>
+<p> </p>
+<p>danke das wars!</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Gesendet:</b> Mittwoch, 14. April 2021 17:01<br>
+<b>An:</b> Vogel, Sebastian SP/HZA-ZID<br>
+<b>Betreff:</b> RE: Cannot find registration function for link layer I8254x [Ticket#700409]</p>
+</div>
+</div>
+<p> </p>
+<pre><p> </p></pre>
+<pre>** CAUTION - email originated from outside the Schaeffler organization<p></p></pre>
+<pre><p> </p></pre>
+<pre><p> </p></pre> <p> </p>
+<div>
+<p>Hallo Herr Vogel,</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>wir haben diese Handhabung in V3.1 verbessert. Bitte suchen Sie nach</p>
+</div>
+<div>
+<div> <p> </p>
+</div>
+<div>
+<p>OsReplaceGetLinkLayerRegFunc(&amp;DemoGetLinkLayerRegFunc);</p>
+</div>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>in unseren Example.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Schöne Grüße,</p>
+</div>
+<div>
+<div>
+<p>____________________________________________________________________________</p>
+</div>
+<div>
+<p>Cyril Eyssautier</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<p>acontis technologies GmbH</p>
+</div>
+<div>
+<p>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</p>
+</div>
+<div>
+<p>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com</a> </p>
+</div>
+<div>
+<p>Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>eMail: ecsupport@acontis.com</p>
+</div>
+<div>
+<p>----------------------------------------------------------------------------</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</p>
+</div>
+<div>
+<p><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+<div>
+<p>----------------------------------------------------------------------------</p>
+</div>
+<div>
+<p>Eingetragene Rechtsform: GmbH</p>
+</div>
+<div>
+<p>Sitz der Gesellschaft: Ravensburg</p>
+</div>
+<div>
+<p>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</p>
+</div>
+<div>
+<p>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</p>
+</div>
+</div>
+</div>

@@ -1,0 +1,205 @@
+### HEADER
+Id=11415
+Link=http://at-zammad/#ticket/zoom/11415
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=7011415
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=16.09.2025 08:57:10 +00:00
+UpdatedAt=16.09.2025 14:27:07 +00:00
+CloseAt=16.09.2025 14:27:07 +00:00
+ArticlesCount=4
+
+### TITLE
+How to monitor multiple EtherCAT bus using ET2000 with EC-Inspector
+
+### ARTICLE00_HEADER
+Id=65925
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.09.2025 08:57:10 +00:00
+UpdatedAt=16.09.2025 08:57:10 +00:00
+
+### ARTICLE00_SUBJECT
+How to monitor multiple EtherCAT bus using ET2000 with EC-Inspector
+
+### ARTICLE00_BODY
+<div>Dear,</div><div> </div><div>There is a potential customer who is evaluating EC-Inspector.</div><div>They have raised a question about whether it is possible to use EC-Inspector in conjunction with ET2000 for online monitoring of 3 EtherCAT bus networks.</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div>
+<span style="background-color: transparent;">Beijing Motrotech Technology Co.,Ltd. </span><span style="background-color: transparent;">北京盟通科技有限公司</span>
+</div>
+<div>
+<p><span style=" background-color: rgba(0, 0, 0, 0);">C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</span></p>
+<p><span style=" background-color: rgba(0, 0, 0, 0);">北京市海淀区上地三街9号C座C309 </span></p>
+<div> Tel: +86-10-62740270<span style=" background-color: transparent;"> （北京）</span>
+</div>
+<div> <span style="background-color: transparent;">0571-</span><span style="background-color: transparent;">56125098 </span><span style="background-color: transparent;">（杭州）</span>
+</div>
+<div> +886-2-25222206（<span style=" background-color: transparent;">台北</span><span style=" background-color: transparent;">）</span>
+</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=65940
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=16.09.2025 12:53:37 +00:00
+UpdatedAt=16.09.2025 12:53:37 +00:00
+
+### ARTICLE01_BODY
+Der Multiplier Link Layer kann das
+
+### ARTICLE02_HEADER
+Id=65945
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.09.2025 13:23:35 +00:00
+UpdatedAt=16.09.2025 13:23:36 +00:00
+
+### ARTICLE02_SUBJECT
+How to monitor multiple EtherCAT bus using ET2000 with EC-Inspector
+
+### ARTICLE02_BODY
+Hi,<div><br></div><div>this is not possible at the moment. But this issue is already on our list and will be supported in the next months. </div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, September 16, 2025 at 10:57:10 AM, ec_support@motrotech.com  wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>There is a potential customer who is evaluating EC-Inspector.</div>
+<div>They have raised a question about whether it is possible to use EC-Inspector in conjunction with ET2000 for online monitoring of 3 EtherCAT bus networks.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>
+<span style="background-color: transparent;">Beijing Motrotech Technology Co.,Ltd. </span><span style="background-color: transparent;">北京盟通科技有限公司</span>
+</div>
+<div>
+<p><span style=" background-color: rgba(0, 0, 0, 0);">C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</span></p>
+<p><span style=" background-color: rgba(0, 0, 0, 0);">北京市海淀区上地三街9号C座C309 </span></p>
+<div> Tel: +86-10-62740270<span style=" background-color: transparent;"> （北京）</span>
+</div>
+<div> <span style="background-color: transparent;">0571-</span><span style="background-color: transparent;">56125098 </span><span style="background-color: transparent;">（杭州）</span>
+</div>
+<div> +886-2-25222206（<span style=" background-color: transparent;">台北</span><span style=" background-color: transparent;">）</span>
+</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=65951
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.09.2025 14:07:46 +00:00
+UpdatedAt=16.09.2025 14:07:46 +00:00
+
+### ARTICLE03_SUBJECT
+How to monitor multiple EtherCAT bus using ET2000 with EC-Inspector [Ticket#7011415]
+
+### ARTICLE03_BODY
+<div>
+<div>Hi Kai,</div>
+<div> </div>
+<div>OK, got it.</div>
+<div>Thanks for your information.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<span class="js-signatureMarker"></span><blockquote><div>
+<div>------------------------------------------------------------------</div>
+<div>发件人：Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt;</div>
+<div>发送时间：2025年9月16日(周二) 21:23</div>
+<div>收件人：EtherCAT Support&lt;ec_support@motrotech.com&gt;</div>
+<div>主 题：RE: How to monitor multiple EtherCAT bus using ET2000 with EC-Inspector [Ticket#7011415]</div>
+<div> </div>Hi,<div> </div>
+<div>this is not possible at the moment. But this issue is already on our list and will be supported in the next months.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai<br><div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>On Tuesday, September 16, 2025 at 10:57:10 AM, ec_support@motrotech.com wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>There is a potential customer who is evaluating EC-Inspector.</div>
+<div>They have raised a question about whether it is possible to use EC-Inspector in conjunction with ET2000 for online monitoring of 3 EtherCAT bus networks.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>
+<span style="background-color: transparent;">Beijing Motrotech Technology Co.,Ltd. </span><span style="background-color: transparent;">北京盟通科技有限公司</span>
+</div>
+<div>
+<p><span style="background-color: rgba(0, 0, 0, 0);">C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</span></p>
+<p><span style="background-color: rgba(0, 0, 0, 0);">北京市海淀区上地三街9号C座C309 </span></p>
+<div> Tel: +86-10-62740270<span style="background-color: transparent;"> （北京）</span>
+</div>
+<div> <span style="background-color: transparent;">0571-</span><span style="background-color: transparent;">56125098 </span><span style="background-color: transparent;">（杭州）</span>
+</div>
+<div> +886-2-25222206（<span style="background-color: transparent;">台北</span><span style="background-color: transparent;">）</span>
+</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</div>
+<div> </div>
+<br><br>
+</div>
+</div></blockquote>
+<div> </div>
+</div>

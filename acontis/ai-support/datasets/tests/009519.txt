@@ -1,0 +1,140 @@
+### HEADER
+Id=9519
+Link=http://at-zammad/#ticket/zoom/9519
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=709519
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=12.12.2024 06:50:44 +00:00
+UpdatedAt=20.12.2024 07:24:55 +00:00
+CloseAt=20.12.2024 07:24:55 +00:00
+ArticlesCount=2
+
+### TITLE
+About the condition which the buttons of "Change State" are disabled... [QNo.105]
+
+### ARTICLE00_HEADER
+Id=54054
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.12.2024 06:50:45 +00:00
+UpdatedAt=12.12.2024 06:50:47 +00:00
+
+### ARTICLE00_SUBJECT
+About the condition which the buttons of "Change State" are disabled... [QNo.105]
+
+### ARTICLE00_BODY
+<div>
+<div>
+<div>Hi Support Team,</div>
+<div> </div>
+<div>This question is from Mitsubishi (commission No. 40627).</div>
+<div> </div>
+<div dir="auto">
+<div dir="auto">At Diagnosis Mode, they would like to know about the condition that each buttons of "Change State" in Master’s General Tab are disabled.</div>
+<div dir="auto">Especially,</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">- the condition which "IsJobTaskStopped ()" become "true".</div>
+<div dir="auto">- the condition which "IsMailboxGatewayMaster()" become "true".</div>
+<div dir="auto">
+<br>
+</div>
+</div>
+</div>
+</div><div><img alt="PastedGraphic-1.png" src="/api/v1/ticket_attachment/9519/54054/223960?view=inline" style="max-width:100%;"></div><div> </div><div>Best regards,</div><div>Yuichi</div><div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=54058
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.12.2024 07:30:03 +00:00
+UpdatedAt=12.12.2024 07:30:06 +00:00
+
+### ARTICLE01_SUBJECT
+About the condition which the buttons of "Change State" are disabled... [QNo.105]
+
+### ARTICLE01_BODY
+Hi Yuichi,<div><br></div><div>- <span>IsJobTaskStopped: This is when a user clicks on the break in the toolbar. Then the JobTask is not running anymore and no functions can be called. But this "break" feature will be removed with Engineer Version 4.x</span>
+</div><div><br></div><div>- There is the possibility when connecting to a remote master to select the protocol. We have RAS to connect to our EC-Master and the MailboxGateway Mode to connect to other MainDevices like TwinCAT. This is an official protocoll from the ETG. But this protocoll can only show really few things and you cannot call APIs to change the state.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, December 12, 2024 at 7:50:45 AM, Yuichi Ide wrote:<br><br><div>
+<div>
+<div>Hi Support Team,</div>
+<div> </div>
+<div>This question is from Mitsubishi (commission No. 40627).</div>
+<div> </div>
+<div dir="auto">
+<div dir="auto">At Diagnosis Mode, they would like to know about the condition that each buttons of "Change State" in Master’s General Tab are disabled.</div>
+<div dir="auto">Especially,</div>
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">- the condition which "IsJobTaskStopped ()" become "true".</div>
+<div dir="auto">- the condition which "IsMailboxGatewayMaster()" become "true".</div>
+<div dir="auto">
+<br>
+</div>
+</div>
+</div>
+</div>
+<div><img alt="PastedGraphic-1.png" src="/api/v1/ticket_attachment/9519/54058/223969?view=inline" style="max-width:100%;max-width:100%;"></div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<br>
+</div>
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

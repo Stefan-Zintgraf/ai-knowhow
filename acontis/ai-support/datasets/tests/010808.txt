@@ -1,0 +1,185 @@
+### HEADER
+Id=10808
+Link=http://at-zammad/#ticket/zoom/10808
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Hexagon Technology Center GmbH (ID=17, Number=53510, Country=CH)
+Commission=Hexagon, Metrology Machine Controller (ID=230, Number=230)
+Number=7010808
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=francesco.casadei-ext@hexagon.com (ID=113, FirstName=Francesco, LastName=casadei-ext)
+CreatedBy=francesco.casadei-ext@hexagon.com (ID=113, FirstName=Francesco, LastName=casadei-ext)
+Type=
+TimeUnit=
+CreatedAt=18.06.2025 04:49:49 +00:00
+UpdatedAt=18.06.2025 07:33:52 +00:00
+CloseAt=18.06.2025 07:33:52 +00:00
+ArticlesCount=3
+
+### TITLE
+bRxPdoMapping and bTxPdoMapping
+
+### ARTICLE00_HEADER
+Id=61896
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.06.2025 04:49:49 +00:00
+UpdatedAt=18.06.2025 04:49:49 +00:00
+
+### ARTICLE00_SUBJECT
+bRxPdoMapping and bTxPdoMapping
+
+### ARTICLE00_BODY
+<div>Hi,</div><div> </div><div>In EcSdoServices.cpp:CoeReadObjectDictionary() the TxPDO mappable bit is printed only when also the RxPDO mappable bit is set:</div><div> </div><div>if (pMbxGetEntryDescTfer-&gt;MbxData.CoE_EntryDesc.bRxPdoMapping)</div><div>{</div><div>OsStrncpy(szPdoMapInfo, "-RxPDO", sizeof(szPdoMapInfo) - 1);</div><div>if (pMbxGetEntryDescTfer-&gt;MbxData.CoE_EntryDesc.bTxPdoMapping)</div><div>{</div><div>OsStrncpy(&amp;(szPdoMapInfo[OsStrlen(szPdoMapInfo)]), "+TxPDO", sizeof(szPdoMapInfo) - OsStrlen(szPdoMapInfo) - 1);</div><div>}</div><div>}</div><div> </div><div>I've found that our subdevices have some entries with only the TxPDO bit set, so they were never printed.</div><div> </div><div>Is there a reason why these two bits cannot be printed independently?</div><div> </div><div>Regards,</div><div>Francesco Casadei</div>
+
+### ARTICLE01_HEADER
+Id=61901
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.06.2025 06:39:28 +00:00
+UpdatedAt=18.06.2025 06:39:29 +00:00
+
+### ARTICLE01_SUBJECT
+bRxPdoMapping and bTxPdoMapping
+
+### ARTICLE01_BODY
+Hi Francesco,<div><br></div><div>I don't think that the cascaded if make any sense but I checked it and it is like this from day one. The following should fix the issue:</div><div>
+<div>if (pMbxGetEntryDescTfer-&gt;MbxData.CoE_EntryDesc.bRxPdoMapping)</div>
+<div>                {</div>
+<div>                    OsSnprintf(&amp;szPdoMapInfo[OsStrlen(szPdoMapInfo)], (EC_T_INT)(sizeof(szPdoMapInfo) - OsStrlen(szPdoMapInfo) - 1), "%s", "-RxPDO");</div>
+<div>                }</div>
+<div>                if (pMbxGetEntryDescTfer-&gt;MbxData.CoE_EntryDesc.bTxPdoMapping)</div>
+<div>                {</div>
+<div>                    OsSnprintf(&amp;szPdoMapInfo[OsStrlen(szPdoMapInfo)], (EC_T_INT)(sizeof(szPdoMapInfo) - OsStrlen(szPdoMapInfo) - 1), "%s", (pMbxGetEntryDescTfer-&gt;MbxData.CoE_EntryDesc.bRxPdoMapping ? "+" : "-"));</div>
+<div>                    OsSnprintf(&amp;szPdoMapInfo[OsStrlen(szPdoMapInfo)], (EC_T_INT)(sizeof(szPdoMapInfo) - OsStrlen(szPdoMapInfo) - 1), "%s", "TxPDO");</div>
+<div>                }</div>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, June 18, 2025 at 6:49:49 AM, Francesco casadei-ext wrote:<br><br><div>Hi,</div>
+<div> </div>
+<div>In EcSdoServices.cpp:CoeReadObjectDictionary() the TxPDO mappable bit is printed only when also the RxPDO mappable bit is set:</div>
+<div> </div>
+<div>if (pMbxGetEntryDescTfer-&gt;MbxData.CoE_EntryDesc.bRxPdoMapping)</div>
+<div>{</div>
+<div>OsStrncpy(szPdoMapInfo, "-RxPDO", sizeof(szPdoMapInfo) - 1);</div>
+<div>if (pMbxGetEntryDescTfer-&gt;MbxData.CoE_EntryDesc.bTxPdoMapping)</div>
+<div>{</div>
+<div>OsStrncpy(&amp;(szPdoMapInfo[OsStrlen(szPdoMapInfo)]), "+TxPDO", sizeof(szPdoMapInfo) - OsStrlen(szPdoMapInfo) - 1);</div>
+<div>}</div>
+<div>}</div>
+<div> </div>
+<div>I've found that our subdevices have some entries with only the TxPDO bit set, so they were never printed.</div>
+<div> </div>
+<div>Is there a reason why these two bits cannot be printed independently?</div>
+<div> </div>
+<div>Regards,</div>
+<div>Francesco Casadei</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=61909
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.06.2025 06:56:16 +00:00
+UpdatedAt=18.06.2025 06:56:16 +00:00
+
+### ARTICLE02_SUBJECT
+Re: bRxPdoMapping and bTxPdoMapping [Ticket#7010808]
+
+### ARTICLE02_BODY
+<div>Hi,</div><div> </div><div>Thank you for your answer.</div><div> </div><div>Yes, I'm already checking the bits independently in our app similar to your change, but since I consider your examples the "right way to do it", I was afraid I was making a wrong assumption.</div><div> </div><div>Thanks, you can close the ticket.</div><div> </div><div>Regards,</div><div>Francesco</div><hr>
+<div dir="ltr">
+<b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Wednesday, 18 June 2025 08:39<br>
+<b>To:</b> CASADEI Francesco &lt;francesco.casadei-ext@hexagon.com&gt;<br>
+<b>Subject:</b> RE: bRxPdoMapping and bTxPdoMapping [Ticket#7010808] <div> </div>
+</div><div>
+<div style=" color:#ff0000;">This email is not from Hexagon’s Office 365 instance. Please be careful while clicking links, opening attachments, or replying to this email.</div>
+<br>
+<div>Hi Francesco,<div> </div>
+<div>I don't think that the cascaded if make any sense but I checked it and it is like this from day one. The following should fix the issue:</div>
+<div>
+<div>if (pMbxGetEntryDescTfer-&gt;MbxData.CoE_EntryDesc.bRxPdoMapping)</div>
+<div>{</div>
+<div>OsSnprintf(&amp;szPdoMapInfo[OsStrlen(szPdoMapInfo)], (EC_T_INT)(sizeof(szPdoMapInfo) - OsStrlen(szPdoMapInfo) - 1), "%s", "-RxPDO");</div>
+<div>}</div>
+<div>if (pMbxGetEntryDescTfer-&gt;MbxData.CoE_EntryDesc.bTxPdoMapping)</div>
+<div>{</div>
+<div>OsSnprintf(&amp;szPdoMapInfo[OsStrlen(szPdoMapInfo)], (EC_T_INT)(sizeof(szPdoMapInfo) - OsStrlen(szPdoMapInfo) - 1), "%s", (pMbxGetEntryDescTfer-&gt;MbxData.CoE_EntryDesc.bRxPdoMapping ? "+" : "-"));</div>
+<div>OsSnprintf(&amp;szPdoMapInfo[OsStrlen(szPdoMapInfo)], (EC_T_INT)(sizeof(szPdoMapInfo) - OsStrlen(szPdoMapInfo) - 1), "%s", "TxPDO");</div>
+<div>}</div>
+</div>
+<div> </div>
+<div>Best Regards,<br>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Wednesday, June 18, 2025 at 6:49:49 AM, Francesco casadei-ext wrote:<br>
+<br>
+<div>Hi,</div>
+<div> </div>
+<div>In EcSdoServices.cpp:CoeReadObjectDictionary() the TxPDO mappable bit is printed only when also the RxPDO mappable bit is set:</div>
+<div> </div>
+<div>if (pMbxGetEntryDescTfer-&gt;MbxData.CoE_EntryDesc.bRxPdoMapping)</div>
+<div>{</div>
+<div>OsStrncpy(szPdoMapInfo, "-RxPDO", sizeof(szPdoMapInfo) - 1);</div>
+<div>if (pMbxGetEntryDescTfer-&gt;MbxData.CoE_EntryDesc.bTxPdoMapping)</div>
+<div>{</div>
+<div>OsStrncpy(&amp;(szPdoMapInfo[OsStrlen(szPdoMapInfo)]), "+TxPDO", sizeof(szPdoMapInfo) - OsStrlen(szPdoMapInfo) - 1);</div>
+<div>}</div>
+<div>}</div>
+<div> </div>
+<div>I've found that our subdevices have some entries with only the TxPDO bit set, so they were never printed.</div>
+<div> </div>
+<div>Is there a reason why these two bits cannot be printed independently?</div>
+<div> </div>
+<div>Regards,</div>
+<div>Francesco Casadei</div>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>
+</div>

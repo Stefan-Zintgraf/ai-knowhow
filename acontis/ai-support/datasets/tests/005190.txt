@@ -1,0 +1,125 @@
+### HEADER
+Id=5190
+Link=http://at-zammad/#ticket/zoom/5190
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bucher Automation (ID=124, Number=54505, Country=DE)
+Commission=Bucher Industries, JetControl (ID=139, Number=139)
+Number=705190
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=tfoell@jetter.de (ID=35, FirstName=Tobias, LastName=Föll)
+CreatedBy=tfoell@jetter.de (ID=35, FirstName=Tobias, LastName=Föll)
+Type=
+TimeUnit=
+CreatedAt=21.03.2023 07:40:16 +00:00
+UpdatedAt=24.03.2023 07:17:42 +00:00
+CloseAt=24.03.2023 07:17:42 +00:00
+ArticlesCount=2
+
+### TITLE
+EtherCAT Master + CANOpen + Frage zur Revisionsnummer im ESI File
+
+### ARTICLE00_HEADER
+Id=27542
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.03.2023 07:40:17 +00:00
+UpdatedAt=21.03.2023 07:40:20 +00:00
+
+### ARTICLE00_SUBJECT
+EtherCAT Master + CANOpen + Frage zur Revisionsnummer im ESI File
+
+### ARTICLE00_BODY
+<div>
+<p> </p>
+<p>Hallo Support,</p>
+<p> </p>
+<p>wir haben eine Frage zum Verhalten des Master Stacks bzw. CAN-Open.</p>
+<p> </p>
+<p>Es gibt in CANopen das Objekt Objekt 1018h , welches die Revisionsnummer darstellt.</p>
+<p> </p>
+<p>A)</p>
+<p>Wenn wir bei einem EtherCAt Drive im ESI File diese Revisionsnummer anpassen, wird diese Zahl dann automatisch im CANopen das Objekt Objekt 1018h angezeigt ?</p>
+<p> </p>
+<p>Oder welcher Zusammenhang besteht zwischen diesen beiden Revisionen ?</p>
+<p> </p>
+<p>B)</p>
+<p>Zweite Frage dazu, können wir die Revisionsnummer im ESI File ohne Bedenken anpassen/verändern ?</p>
+<p> </p>
+<p>Danke.</p>
+<p> </p>
+<p><img style="max-width:100%;width:9.7291in;max-height:4.0625in;width:934px;max-height:390px;" src="/api/v1/ticket_attachment/5190/27542/116315?view=inline"></p>
+<p> </p>
+</div><p>Mit freundlichen Grüßen / Kind regards</p><p>i.V. Tobias Föll</p><p>Head of System Engineering</p><p><span>Jetter AG<br> Gräterstraße 2<br> DE-71642 Ludwigsburg<br> Tel.: +49-7141-2550-0<br> Fax: +49-7141-2550-425<br> TFoell@jetter.de<br>
+<a href="https://www.jetter.de" rel="nofollow noreferrer noopener" target="_blank">www.jetter.de</a></span><br>
+<span>Datenschutzerklärung / Privacy Policy: <a href="https://www.jetter.de/kontakt/datenschutz.html" rel="nofollow noreferrer noopener" target="_blank">www.jetter.de/kontakt/datenschutz.html</a></span></p><p><span>Ust.-Id.: DE 812 643 615<br> Amtsgericht Stuttgart HRB 205545<br> Vorstandsvorsitzender: Christian Benz</span><br> Vorsitzender des Aufsichtsrates: Martin Jetter </p><p><span lang="EN-US">VAT Reg.-No.: DE 812 643 615<br> Registered: Stuttgart HRB 205545<br> CEO: Christian Benz<br> Chairman of the Supervisory Board: Martin Jetter</span></p>
+
+### ARTICLE01_HEADER
+Id=27545
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.03.2023 09:14:04 +00:00
+UpdatedAt=21.03.2023 09:14:05 +00:00
+
+### ARTICLE01_SUBJECT
+EtherCAT Master + CANOpen + Frage zur Revisionsnummer im ESI File
+
+### ARTICLE01_BODY
+Hallo Herr Föll,<div><br></div><div>A) Sie müssen dann auch die Firmware des Slave updaten. Die beiden Nummern kann man vergleichen um herauszufinden ob man das passende ESI (Revision) für den Slave hat.</div><div><br></div><div>B) Sie können die Revisionsnummer im ESI ändern, allerdings kann es dann je nach Einstellungen sein, dass Sie kein passendes ESI finden wenn der Slave nicht dazu passt.</div><div><br></div><div>Viele Grüße</div><div>Kai Feifel </div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, March 21, 2023 at 8:40:17 AM, Tobias Föll wrote:<br><br><div>
+<p> </p>
+<p>Hallo Support,</p>
+<p> </p>
+<p>wir haben eine Frage zum Verhalten des Master Stacks bzw. CAN-Open.</p>
+<p> </p>
+<p>Es gibt in CANopen das Objekt Objekt 1018h , welches die Revisionsnummer darstellt.</p>
+<p> </p>
+<p>A)</p>
+<p>Wenn wir bei einem EtherCAt Drive im ESI File diese Revisionsnummer anpassen, wird diese Zahl dann automatisch im CANopen das Objekt Objekt 1018h angezeigt ?</p>
+<p> </p>
+<p>Oder welcher Zusammenhang besteht zwischen diesen beiden Revisionen ?</p>
+<p> </p>
+<p>B)</p>
+<p>Zweite Frage dazu, können wir die Revisionsnummer im ESI File ohne Bedenken anpassen/verändern ?</p>
+<p> </p>
+<p>Danke.</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:9.7291in;max-height:4.0625in;width:934px;max-height:390px;" src="/api/v1/ticket_attachment/5190/27545/116321?view=inline"></p>
+<p> </p>
+</div>
+<p>Mit freundlichen Grüßen / Kind regards</p>
+<p>i.V. Tobias Föll</p>
+<p>Head of System Engineering</p>
+<p><span>Jetter AG<br> Gräterstraße 2<br> DE-71642 Ludwigsburg<br> Tel.: +49-7141-2550-0<br> Fax: +49-7141-2550-425<br> TFoell@jetter.de<br>
+<a href="https://www.jetter.de" rel="nofollow noreferrer noopener" target="_blank">www.jetter.de</a></span><br>
+<span>Datenschutzerklärung / Privacy Policy: <a href="https://www.jetter.de/kontakt/datenschutz.html" rel="nofollow noreferrer noopener" target="_blank">www.jetter.de/kontakt/datenschutz.html</a></span></p>
+<p><span>Ust.-Id.: DE 812 643 615<br> Amtsgericht Stuttgart HRB 205545<br> Vorstandsvorsitzender: Christian Benz</span><br> Vorsitzender des Aufsichtsrates: Martin Jetter </p>
+<p><span lang="EN-US">VAT Reg.-No.: DE 812 643 615<br> Registered: Stuttgart HRB 205545<br> CEO: Christian Benz<br> Chairman of the Supervisory Board: Martin Jetter</span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

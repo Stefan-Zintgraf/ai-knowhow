@@ -1,0 +1,233 @@
+### HEADER
+Id=9869
+Link=http://at-zammad/#ticket/zoom/9869
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Sipro (ID=537, Number=0, Country=IT)
+Commission=Sipro, SIAX EVO (ID=237, Number=237)
+Number=709869
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=alessandro.diflumeri@sipro.vr.it (ID=164, FirstName=Alessandro, LastName=Di Flumeri)
+CreatedBy=alessandro.diflumeri@sipro.vr.it (ID=164, FirstName=Alessandro, LastName=Di Flumeri)
+Type=
+TimeUnit=
+CreatedAt=07.02.2025 13:53:56 +00:00
+UpdatedAt=12.02.2025 07:06:26 +00:00
+CloseAt=12.02.2025 07:06:26 +00:00
+ArticlesCount=3
+
+### TITLE
+Ec-Engineer - ESI file error
+
+### ARTICLE00_HEADER
+Id=56278
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.02.2025 13:53:56 +00:00
+UpdatedAt=07.02.2025 13:54:04 +00:00
+
+### ARTICLE00_SUBJECT
+Ec-Engineer - ESI file error
+
+### ARTICLE00_BODY
+<div>
+<p>Good morning,</p>
+<p>I have a problem with the attached ESI-file.</p>
+<p>I’m trying to insert some InitCmd associated to each module type.</p>
+<p>According to the ETG2000 – Ethercat SubDevice Information v1.0.17 is possible to insert Mailbox-&gt;CoE-&gt;InitCmd information under the Module infos.</p>
+<p><span lang="DE">At the moment I’m working with Ec-Engineer v. 3.8.4 and it doesn’t allow me to insert this ESI-file in my library giving me the error in the image below.</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">I‘m doing something wrong?</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><img style="max-width:100%;width:12.5625in;max-height:9.3645in;width:1206px;max-height:899px;" src="/api/v1/ticket_attachment/9869/56278/233701?view=inline"></p>
+<p> </p>
+<p>Kind regards,</p>
+<p> </p>
+<p>
+<span style="color:#1f497d;">Ing. Alessandro Di Flumeri</span></p>
+<p>
+<span style="color:#1f497d;">Ufficio software</span></p>
+<p><span style="color:#1f497d;">____________________________________<br>
+</span><span><br>
+</span><span style="color:#1f497d;">SIPRO s.r.l.<br> Viale dell'Industria 7; 37135 Verona - Italy<br> Tel +39 045 - 508822 Fax +39 045 - 585477<br> e-mail <a href="mailto:alessandro.diflumeri@sipro.vr.it"><span style="color:blue;">alessandro.diflumeri@sipro.vr.it</span></a><br> Web <a href="http://www.sipro.vr.it/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#1f497d;">http://www.sipro.vr.it</span></a></span><span style="color:#1f497d;"></span></p>
+<p><img border="0" style="max-width:100%;width:2.3958in;max-height:1.5416in;width:230px;max-height:148px;" src="/api/v1/ticket_attachment/9869/56278/233700?view=inline"></p>
+<p><span style="color:#1f497d;">____________________________________</span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=56435
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.02.2025 09:32:38 +00:00
+UpdatedAt=11.02.2025 09:32:43 +00:00
+
+### ARTICLE01_SUBJECT
+Ec-Engineer - ESI file error
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>your ESI file is more or less correct. But in the Schema it is declared as a sequence. So the order of the tags matter. In your case, the Mailbox tag has to be before the Profile tag. Then it works. I corrected your ESI file and attached it.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, February 7, 2025 at 2:53:56 PM, Alessandro Di Flumeri wrote:<br><br><div>
+<p>Good morning,</p>
+<p>I have a problem with the attached ESI-file.</p>
+<p>I’m trying to insert some InitCmd associated to each module type.</p>
+<p>According to the ETG2000 – Ethercat SubDevice Information v1.0.17 is possible to insert Mailbox-&gt;CoE-&gt;InitCmd information under the Module infos.</p>
+<p><span lang="DE">At the moment I’m working with Ec-Engineer v. 3.8.4 and it doesn’t allow me to insert this ESI-file in my library giving me the error in the image below.</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">I‘m doing something wrong?</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><img style="max-width:100%;max-width:100%;width:12.5625in;max-height:9.3645in;width:1206px;max-height:899px;" src="/api/v1/ticket_attachment/9869/56435/234452?view=inline"></p>
+<p> </p>
+<p>Kind regards,</p>
+<p> </p>
+<p>
+<span style="color:#1f497d;">Ing. Alessandro Di Flumeri</span></p>
+<p>
+<span style="color:#1f497d;">Ufficio software</span></p>
+<p><span style="color:#1f497d;">____________________________________<br>
+</span><span><br>
+</span><span style="color:#1f497d;">SIPRO s.r.l.<br> Viale dell'Industria 7; 37135 Verona - Italy<br> Tel +39 045 - 508822 Fax +39 045 - 585477<br> e-mail <a href="mailto:alessandro.diflumeri@sipro.vr.it"><span style="color:blue;">alessandro.diflumeri@sipro.vr.it</span></a><br> Web <a href="http://www.sipro.vr.it/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#1f497d;">http://www.sipro.vr.it</span></a></span><span style="color:#1f497d;"></span></p>
+<p><img border="0" style="max-width:100%;max-width:100%;width:2.3958in;max-height:1.5416in;width:230px;max-height:148px;" src="/api/v1/ticket_attachment/9869/56435/234453?view=inline"></p>
+<p><span style="color:#1f497d;">____________________________________</span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=56472
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.02.2025 15:47:03 +00:00
+UpdatedAt=11.02.2025 15:47:03 +00:00
+
+### ARTICLE02_SUBJECT
+R: Ec-Engineer - ESI file error [Ticket#709869]
+
+### ARTICLE02_BODY
+<div>
+<p>Hi Kai,</p>
+<p>thanks for you support.</p>
+<p>I have reached my goal.</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Alessandro</p>
+<p> </p>
+<div>
+<div>
+<p><b>Da:</b><span> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Inviato:</b> martedì 11 febbraio 2025 10.33<br>
+<b>A:</b> Alessandro Di Flumeri - SIPRO &lt;alessandro.diflumeri@sipro.vr.it&gt;<br>
+<b>Cc:</b> Luca Leopardi - SIPRO &lt;luca.leopardi@sipro.vr.it&gt;; Gianni Fiori - SIPRO &lt;gianni.fiori@sipro.vr.it&gt;<br>
+<b>Oggetto:</b> RE: Ec-Engineer - ESI file error [Ticket#709869]</span></p>
+</div>
+</div>
+<p> </p>
+<p>Hi,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>your ESI file is more or less correct. But in the Schema it is declared as a sequence. So the order of the tags matter. In your case, the Mailbox tag has to be before the Profile tag. Then it works. I corrected your ESI file and attached it.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best regards,</p>
+</div>
+<div>
+<p>Kai</p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Kai Feifel</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Friday, February 7, 2025 at 2:53:56 PM, Alessandro Di Flumeri wrote:</p>
+<div>
+<p>Good morning,</p>
+<p>I have a problem with the attached ESI-file.</p>
+<p>I’m trying to insert some InitCmd associated to each module type.</p>
+<p>According to the ETG2000 – Ethercat SubDevice Information v1.0.17 is possible to insert Mailbox-&gt;CoE-&gt;InitCmd information under the Module infos.</p>
+<p><span lang="DE">At the moment I’m working with Ec-Engineer v. 3.8.4 and it doesn’t allow me to insert this ESI-file in my library giving me the error in the image below.</span></p>
+<p> </p>
+<p><span lang="DE">I‘m doing something wrong?</span></p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:12.5625in;max-height:9.3645in;width:1206px;max-height:899px;" src="/api/v1/ticket_attachment/9869/56472/234618?view=inline"></p>
+<p> </p>
+<p>Kind regards,</p>
+<p> </p>
+<p><span style="color:#1f497d;">Ing. Alessandro Di Flumeri</span></p>
+<p><span style="color:#1f497d;">Ufficio software</span></p>
+<p><span style="color:#1f497d;">____________________________________<br>
+</span><br>
+<span style="color:#1f497d;">SIPRO s.r.l.<br> Viale dell'Industria 7; 37135 Verona - Italy<br> Tel +39 045 - 508822 Fax +39 045 - 585477<br> e-mail <a href="mailto:alessandro.diflumeri@sipro.vr.it">alessandro.diflumeri@sipro.vr.it</a><br> Web <a href="http://www.sipro.vr.it/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#1f497d;">http://www.sipro.vr.it</span></a></span></p>
+<p><img border="0" style="max-width:100%;width:7.177in;max-height:4.625in;width:689px;max-height:444px;" src="/api/v1/ticket_attachment/9869/56472/234619?view=inline"></p>
+<p><span style="color:#1f497d;">____________________________________</span></p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

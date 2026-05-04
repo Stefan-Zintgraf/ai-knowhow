@@ -1,0 +1,157 @@
+### HEADER
+Id=8080
+Link=http://at-zammad/#ticket/zoom/8080
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=cpc Chieftek (ID=590, Number=50234, Country=TW)
+Commission=cpc Chieftek, cpcStudio (ID=669, Number=669)
+Number=708080
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=lm003@mail2.chieftek.com (ID=1237, FirstName=Kuanghan, LastName=)
+CreatedBy=lm003@mail2.chieftek.com (ID=1237, FirstName=Kuanghan, LastName=)
+Type=
+TimeUnit=
+CreatedAt=13.05.2024 10:44:10 +00:00
+UpdatedAt=16.05.2024 06:13:08 +00:00
+CloseAt=16.05.2024 06:13:08 +00:00
+ArticlesCount=2
+
+### TITLE
+[Chieftek]Variable write and Coe read
+
+### ARTICLE00_HEADER
+Id=44509
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.05.2024 10:44:10 +00:00
+UpdatedAt=13.05.2024 10:44:11 +00:00
+
+### ARTICLE00_SUBJECT
+[Chieftek]Variable write and Coe read
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi,<div>Within OP mode of a slave, an OD (ex. 0x7100:2) we used EcSlaveDiagVariables.WriteValue() to write a value to OD. The value, truly changed if we used EcSlaveDiagVariables.ReadValues() to get OD value back. But when we used EcSlaveDiagCoe.Read(index, subindex,...) to read back the same OD, it becomes no change.</div>
+<div>
+<br><div>The same OD, EcSlaveDiagVariables.WriteValue() only affected EcSlaveDiagVariables.ReadValue() result. We didn't know why.</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan</div>
+<div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+</div><br>
+<div> </div><div>
+<a href="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" target="_blank"></a><br>
+</div>
+
+### ARTICLE01_HEADER
+Id=44524
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.05.2024 13:44:06 +00:00
+UpdatedAt=13.05.2024 13:44:08 +00:00
+
+### ARTICLE01_SUBJECT
+[Chieftek]Variable write and Coe read
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>
+<span>some variables were mapped from the slave into the CoE object dictionary. Those values cannot be written via EcSlaveDiagCoe.Write(...). You can read/write they like you did by using </span><span>EcSlaveDiagVariables.ReadValues/WriteValue.</span><br>
+</div><div><br></div><div>So, it depends on the slave how he map those variables into CoE OD.</div><div><br></div><div>In may case, I wrote to first analog output of EL4004 on variables tab:</div><div><br></div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/8080/44524/183511?view=inline"><br>
+</div><div><br></div><div>... this variable is mapped from slave into CoeOD object 0x7000:</div><div><br></div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/8080/44524/183512?view=inline"><br>
+</div><div><br></div><div>Best Regards,</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, May 13, 2024 at 12:44:10 PM, Kuanghan wrote:<br><br><div dir="ltr">Hi,<div>Within OP mode of a slave, an OD (ex. 0x7100:2) we used EcSlaveDiagVariables.WriteValue() to write a value to OD. The value, truly changed if we used EcSlaveDiagVariables.ReadValues() to get OD value back. But when we used EcSlaveDiagCoe.Read(index, subindex,...) to read back the same OD, it becomes no change.</div>
+<div>
+<br><div>The same OD, EcSlaveDiagVariables.WriteValue() only affected EcSlaveDiagVariables.ReadValue() result. We didn't know why.</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan</div>
+<div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+</div>
+<br>
+<div> </div>
+<div>
+<a href="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" target="_blank"></a><br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

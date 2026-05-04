@@ -1,0 +1,156 @@
+### HEADER
+Id=2470
+Link=http://at-zammad/#ticket/zoom/2470
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=OMRON China, Small PLC (ID=511, Number=511)
+Number=702470
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=redmine@my.redmine.jp (ID=190, FirstName=Baba, LastName=Kojiro)
+CreatedBy=redmine@my.redmine.jp (ID=190, FirstName=Baba, LastName=Kojiro)
+Type=
+TimeUnit=
+CreatedAt=18.02.2022 09:05:46 +00:00
+UpdatedAt=31.10.2023 12:49:26 +00:00
+CloseAt=18.02.2022 09:40:40 +00:00
+ArticlesCount=3
+
+### TITLE
+[C1-OAproject - Question #415] (New) About Detect bad connections
+
+### ARTICLE00_HEADER
+Id=13164
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.02.2022 09:05:46 +00:00
+UpdatedAt=18.02.2022 09:05:48 +00:00
+
+### ARTICLE00_SUBJECT
+[C1-OAproject - Question #415] (New) About Detect bad connections
+
+### ARTICLE00_BODY
+Issue <a href="https://my.redmine.jp/pbd-rdc/issues/415" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/415" target="_blank">#415</a> has been reported by Chenhao Hu. <hr>
+<h1> <a href="https://my.redmine.jp/pbd-rdc/issues/415" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/415" target="_blank">Question #415: About Detect bad connections</a> open </h1> <ul>
+<li>
+<strong>Author: </strong>Chenhao Hu</li>
+<li>
+<strong>Status: </strong>New</li>
+<li>
+<strong>Priority: </strong>Normal</li>
+<li>
+<strong>Assignee: </strong>acontis acontis</li>
+<li>
+<strong>Start date: </strong>2022-02-18</li>
+<li>
+<strong>Category: </strong>Question</li>
+<li>
+<strong>Category for Omron: </strong>Misc</li>
+<li>
+<strong>Owner: </strong>Chenhao Hu</li>
+</ul> <p>Hi,</p><p>About "Detect bad connections" shown in the link below:<br><a href="https://www.acontis.com/en/ec-master-V3.0.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/ec-master-V3.0.html</a></p><p>Is it included in the lib you sent me before, or a feather pack not included in EC-Master.lib?</p><p>Kind regards,<br>Chenhao Hu.</p><hr>
+<p>My Redmine (プロジェクト運営支援SaaS) から送信<br><a href="http://hosting.redmine.jp/" rel="nofollow noreferrer noopener" target="_blank">http://hosting.redmine.jp/</a></p>
+
+### ARTICLE01_HEADER
+Id=13184
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.02.2022 02:17:30 +00:00
+UpdatedAt=21.02.2022 02:17:30 +00:00
+
+### ARTICLE01_SUBJECT
+[C1-OAproject - Question #415] About Detect bad connections
+
+### ARTICLE01_BODY
+Issue <a href="https://my.redmine.jp/pbd-rdc/issues/415#change-3382" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/415#change-3382" target="_blank">#415</a> has been updated by Chenhao Hu. <hr> <ul> <li>
+<strong>Assignee</strong> changed from <i>Chenhao Hu</i> to <i>acontis acontis</i>
+</li>
+</ul> <p>Hi,</p><p>About "EC_NOTIFY_SB_DUPLICATE_HC_NODE", is it included in EC-Master.lib, or in hot connect Feather Pack?</p><p>Kind regards,<br>Chenhao Hu.</p><hr>
+<h1> <a href="https://my.redmine.jp/pbd-rdc/issues/415#change-3382" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/415#change-3382" target="_blank">Question #415: About Detect bad connections</a> open </h1> <ul>
+<li>
+<strong>Author: </strong>Chenhao Hu</li>
+<li>
+<strong>Status: </strong>Doing</li>
+<li>
+<strong>Priority: </strong>Normal</li>
+<li>
+<strong>Assignee: </strong>acontis acontis</li>
+<li>
+<strong>Start date: </strong>2022-02-18</li>
+<li>
+<strong>Category: </strong>Question</li>
+<li>
+<strong>Category for Omron: </strong>Misc</li>
+<li>
+<strong>Owner: </strong>Chenhao Hu</li>
+</ul> <p>Hi,</p><p>About "Detect bad connections" shown in the link below:<br><a href="https://www.acontis.com/en/ec-master-V3.0.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/ec-master-V3.0.html</a></p><p>Is it included in the lib you sent me before, or a feather pack not included in EC-Master.lib?</p><p>Kind regards,<br>Chenhao Hu.</p><hr>
+<p>My Redmine (プロジェクト運営支援SaaS) から送信<br><a href="http://hosting.redmine.jp/" rel="nofollow noreferrer noopener" target="_blank">http://hosting.redmine.jp/</a></p>
+
+### ARTICLE02_HEADER
+Id=13201
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.02.2022 08:44:36 +00:00
+UpdatedAt=21.02.2022 08:44:37 +00:00
+
+### ARTICLE02_SUBJECT
+[C1-OAproject - Question #415] (New) About Detect bad connections
+
+### ARTICLE02_BODY
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Monday, February 21, 2022, 3:17:30 AM, Baba Kojiro wrote:<br><br>Issue <a href="https://my.redmine.jp/pbd-rdc/issues/415#change-3382" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/415#change-3382" target="_blank">#415</a> has been updated by Chenhao Hu. <hr> <ul> <li>
+<strong>Assignee</strong> changed from <i>Chenhao Hu</i> to <i>acontis acontis</i>
+</li>
+</ul> <p>Hi,</p>
+<p>About "EC_NOTIFY_SB_DUPLICATE_HC_NODE", is it included in EC-Master.lib, or in hot connect Feather Pack?</p>
+<p>Kind regards,<br>Chenhao Hu.</p>
+<hr>
+<h1> <a href="https://my.redmine.jp/pbd-rdc/issues/415#change-3382" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/415#change-3382" target="_blank">Question #415: About Detect bad connections</a> open </h1> <ul>
+<li>
+<strong>Author: </strong>Chenhao Hu</li>
+<li>
+<strong>Status: </strong>Doing</li>
+<li>
+<strong>Priority: </strong>Normal</li>
+<li>
+<strong>Assignee: </strong>acontis acontis</li>
+<li>
+<strong>Start date: </strong>2022-02-18</li>
+<li>
+<strong>Category: </strong>Question</li>
+<li>
+<strong>Category for Omron: </strong>Misc</li>
+<li>
+<strong>Owner: </strong>Chenhao Hu</li>
+</ul> <p>Hi,</p>
+<p>About "Detect bad connections" shown in the link below:<br><a href="https://www.acontis.com/en/ec-master-V3.0.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/ec-master-V3.0.html</a></p>
+<p>Is it included in the lib you sent me before, or a feather pack not included in EC-Master.lib?</p>
+<p>Kind regards,<br>Chenhao Hu.</p>
+<hr>
+<p>My Redmine (プロジェクト運営支援SaaS) から送信<br><a href="http://hosting.redmine.jp/" rel="nofollow noreferrer noopener" target="_blank">http://hosting.redmine.jp/</a></p>
+<br>
+</blockquote></div><div><br></div><br><br>

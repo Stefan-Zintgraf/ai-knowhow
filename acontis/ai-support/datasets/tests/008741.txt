@@ -1,0 +1,161 @@
+### HEADER
+Id=8741
+Link=http://at-zammad/#ticket/zoom/8741
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=708741
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=27.08.2024 13:25:04 +00:00
+UpdatedAt=13.09.2024 06:04:19 +00:00
+CloseAt=13.09.2024 06:04:19 +00:00
+ArticlesCount=2
+
+### TITLE
+The potential customer GENERTEC problem about repeat frame
+
+### ARTICLE00_HEADER
+Id=49081
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.08.2024 13:25:04 +00:00
+UpdatedAt=27.08.2024 13:25:07 +00:00
+
+### ARTICLE00_SUBJECT
+The potential customer GENERTEC problem about repeat frame
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div style="color:#1f497d;">Dear,</div>
+<div style="color:#1f497d;">I know that we will win the customer GENERTEC, And this customer have a question about repeat frame in twincat.</div>
+<div style="color:#1f497d;"><br></div>
+<div style="color:#1f497d;">They used the frame repeat support in twincat with beckhoff servo. But they find that this function only could implement with beckhoff servo, the twincat can't work with panasonic servo.</div>
+<div style="color:#1f497d;">Do you know this function in twincat?</div>
+<div style="color:#1f497d;"><img src="/api/v1/ticket_attachment/8741/49081/203479?view=inline" style="max-width:100%;"></div>
+<div style="color:#1f497d;">So they want to checking, dose the EcMaster support this kind of function.</div>
+<div style="color:#1f497d;"><br></div>
+<div style="color:#1f497d;">I find the requirement from syntec before, and we could implement a demo following the step:</div>
+<div style="color:#1f497d;">
+<div style="color:#1f497d;">It is today possible by doing the following implementation:</div>
+<div style="color:#1f497d;">- Determine the round trip time by using EcMasterDemoSyncSm or emSelfTestScan()</div>
+<div style="color:#1f497d;">- Define a timeout value according the roundtrip time</div>
+<div style="color:#1f497d;">- Use EC-Master in interupt mode like EcMasterDemoSyncSm</div>
+<div style="color:#1f497d;">- Run an additonal monitoring task in parallel of the job task</div>
+<div style="color:#1f497d;">- Just after eUsrJob_SendAllCycFrames, trigger the monitoring task</div>
+<div style="color:#1f497d;">- The monitoring task call nanosleep for the previously defined timeout</div>
+<div style="color:#1f497d;">- When the monitoring task wakes up, if the pvCycFrameReceivedEvent is not set, call eUsrJob_SendAllCycFrames from the monitoring task again to repeat the lost cyclic frame.</div>
+<br>
+</div>
+<div style="color:#1f497d;">Dose the FrameRepeatSupport is same the step?</div>
+<div style="color:#1f497d;"><br></div>
+<div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div>
+<br><img src="/api/v1/ticket_attachment/8741/49081/203480?view=inline" style="max-width:100%;width:508px;max-height:92px;">
+</div>
+</div>
+<div> </div>
+<div><i> 2024年8月21-24日，台北南港展览馆1馆四楼L308，期待与您见面！ </i></div>
+<div> </div>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>+86- 571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<i><br></i>
+</div>
+</div>
+<div style="color:#1f497d;"><br></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=49091
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.08.2024 15:43:47 +00:00
+UpdatedAt=27.08.2024 15:43:50 +00:00
+
+### ARTICLE01_SUBJECT
+The potential customer GENERTEC problem about repeat frame
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>yes if think that this is the same thing.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Tuesday, August 27, 2024 at 3:25:04 PM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div style="color:#1f497d;">Dear,</div>
+<div style="color:#1f497d;">I know that we will win the customer GENERTEC, And this customer have a question about repeat frame in twincat.</div>
+<div style="color:#1f497d;"><br></div>
+<div style="color:#1f497d;">They used the frame repeat support in twincat with beckhoff servo. But they find that this function only could implement with beckhoff servo, the twincat can't work with panasonic servo.</div>
+<div style="color:#1f497d;">Do you know this function in twincat?</div>
+<div style="color:#1f497d;"><img src="/api/v1/ticket_attachment/8741/49091/203537?view=inline" style="max-width:100%;max-width:100%;"></div>
+<div style="color:#1f497d;">So they want to checking, dose the EcMaster support this kind of function.</div>
+<div style="color:#1f497d;"><br></div>
+<div style="color:#1f497d;">I find the requirement from syntec before, and we could implement a demo following the step:</div>
+<div style="color:#1f497d;">
+<div style="color:#1f497d;">It is today possible by doing the following implementation:</div>
+<div style="color:#1f497d;">- Determine the round trip time by using EcMasterDemoSyncSm or emSelfTestScan()</div>
+<div style="color:#1f497d;">- Define a timeout value according the roundtrip time</div>
+<div style="color:#1f497d;">- Use EC-Master in interupt mode like EcMasterDemoSyncSm</div>
+<div style="color:#1f497d;">- Run an additonal monitoring task in parallel of the job task</div>
+<div style="color:#1f497d;">- Just after eUsrJob_SendAllCycFrames, trigger the monitoring task</div>
+<div style="color:#1f497d;">- The monitoring task call nanosleep for the previously defined timeout</div>
+<div style="color:#1f497d;">- When the monitoring task wakes up, if the pvCycFrameReceivedEvent is not set, call eUsrJob_SendAllCycFrames from the monitoring task again to repeat the lost cyclic frame.</div>
+<br>
+</div>
+<div style="color:#1f497d;">Dose the FrameRepeatSupport is same the step?</div>
+<div style="color:#1f497d;"><br></div>
+<div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div>
+<br><img src="/api/v1/ticket_attachment/8741/49091/203538?view=inline" style="max-width:100%;max-width:100%;width:508px;max-height:92px;">
+</div>
+</div>
+<div> </div>
+<div><i> 2024年8月21-24日，台北南港展览馆1馆四楼L308，期待与您见面！ </i></div>
+<div> </div>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>+86- 571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<i><br></i>
+</div>
+</div>
+<div style="color:#1f497d;"><br></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,151 @@
+### HEADER
+Id=7691
+Link=http://at-zammad/#ticket/zoom/7691
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=YASKAWA Europe GmbH (ID=174, Number=60502, Country=DE)
+Commission=Yaskawa, PLC/Motion Contr. Dev. (ID=198, Number=198)
+Number=707691
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=simon.schlereth@yaskawa.eu (ID=1053, FirstName=Simon, LastName=Schlereth)
+CreatedBy=simon.schlereth@yaskawa.eu (ID=1053, FirstName=Simon, LastName=Schlereth)
+Type=
+TimeUnit=
+CreatedAt=20.03.2024 10:00:57 +00:00
+UpdatedAt=22.07.2025 07:58:15 +00:00
+CloseAt=22.03.2024 08:46:05 +00:00
+ArticlesCount=3
+
+### TITLE
+Eoe support
+
+### ARTICLE00_HEADER
+Id=42467
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.03.2024 10:00:58 +00:00
+UpdatedAt=20.03.2024 10:01:00 +00:00
+
+### ARTICLE00_SUBJECT
+Eoe support
+
+### ARTICLE00_BODY
+<div>Hi Cyril,</div><div> </div><div>gerne würde ich mich mit dir über die Möglichkeiten der MAC-Adresszuordnung für EoE Slaves austauschen. Wir nutzen den promiscuous Mode und somit sind die automatisch generierten MAC Adressen nicht mehr eindeutig im Netzwerk. Wie sind hier eure Erfahrungen?</div><div> </div><div>Mögliche Termine:</div><div>kommenden Freitag zwischen 9:00 und 12:00. Würde es da bei dir gehen?</div><div> </div><div>Viele Grüße</div><div>Simon</div><div> </div><div>
+<p><span><b>Simon Schlereth<br>
+</b>Team Leader iCube MC</span><span><br>
+</span><span>Senior Expert iCube Technology<br>
+</span>R&amp;D</p>
+</div><div>
+<p><span><br>
+</span></p>
+</div><p>
+<span style="color: blue;"><u><a href="http://www.yaskawa.eu.com/" title="Original URL: http://www.yaskawa.eu.com/. Click or tap if you trust this link." rel="nofollow noreferrer noopener" target="_blank"></a></u></span><span><br>
+<br>
+</span></p><div>
+<p><span><b>YASKAWA Europe GmbH<br>
+</b>Drives Motion Controls Division<br> Hugo-Junkers-Straße 13<br> 90411 Nürnberg<br> Germany</span></p>
+</div><div>
+<p><span style=" color: blue;"><u><a href="http://www.yaskawa.eu.com/" title="Original URL: http://www.yaskawa.eu.com/. Click or tap if you trust this link." rel="nofollow noreferrer noopener" target="_blank">www.yaskawa.eu.com</a></u></span><span><br>
+<br>
+</span></p>
+</div><div>
+<p><span><b>P </b>+49 911 47771 761<br>
+<b>F </b>+49 911 47771 9761</span></p>
+</div><div>
+<p><span style=" color: blue;"><u><a href="mailto:simon.schlereth@yaskawa.eu" title="mailto:simon.schlereth@yaskawa.eu">simon.schlereth@yaskawa.eu</a></u></span></p>
+</div><br>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------------<br> Geschaeftsfuehrer/Managing Directors: Bruno J. Schnekenburger, Marcus Mead, Bobbie Linkenbach <br> Amtsgericht/Local Court: Frankfurt, Commercial register no. 88369 <br> Headquarter: YASKAWA Europe GmbH, Philipp-Reis-Str. 6, D-65795 Hattersheim<br> ------------------------------------------------------------------------------------------------------------------------------<br> CONFIDENTIALITY: This e-mail and any attachments are confidential and may also be privileged.<br> If you are not the named recipient, please notify the sender immediately and do not disclose the contents to another person,<br> use it for any purpose, or store or copy the information in any medium.
+
+### ARTICLE01_HEADER
+Id=42477
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.03.2024 11:32:23 +00:00
+UpdatedAt=20.03.2024 11:32:26 +00:00
+
+### ARTICLE01_SUBJECT
+Eoe support
+
+### ARTICLE01_BODY
+Hallo Simon,<div><br></div><div>ja Freitag 09:00 wäre OK für mich.</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, March 20, 2024 at 11:00:58 AM, Simon Schlereth wrote:<br><br><div>Hi Cyril,</div>
+<div> </div>
+<div>gerne würde ich mich mit dir über die Möglichkeiten der MAC-Adresszuordnung für EoE Slaves austauschen. Wir nutzen den promiscuous Mode und somit sind die automatisch generierten MAC Adressen nicht mehr eindeutig im Netzwerk. Wie sind hier eure Erfahrungen?</div>
+<div> </div>
+<div>Mögliche Termine:</div>
+<div>kommenden Freitag zwischen 9:00 und 12:00. Würde es da bei dir gehen?</div>
+<div> </div>
+<div>Viele Grüße</div>
+<div>Simon</div>
+<div> </div>
+<div>
+<p><span><b>Simon Schlereth<br>
+</b>Team Leader iCube MC</span><span><br>
+</span><span>Senior Expert iCube Technology<br>
+</span>R&amp;D</p>
+</div>
+<div>
+<p><span><br>
+</span></p>
+</div>
+<p>
+<span style="color: blue;"><u><a href="http://www.yaskawa.eu.com/" title="Original URL: http://www.yaskawa.eu.com/. Click or tap if you trust this link." rel="nofollow noreferrer noopener" target="_blank"></a></u></span><span><br>
+<br>
+</span></p>
+<div>
+<p><span><b>YASKAWA Europe GmbH<br>
+</b>Drives Motion Controls Division<br> Hugo-Junkers-Straße 13<br> 90411 Nürnberg<br> Germany</span></p>
+</div>
+<div>
+<p><span style=" color: blue;"><u><a href="http://www.yaskawa.eu.com/" title="Original URL: http://www.yaskawa.eu.com/. Click or tap if you trust this link." rel="nofollow noreferrer noopener" target="_blank">www.yaskawa.eu.com</a></u></span><span><br>
+<br>
+</span></p>
+</div>
+<div>
+<p><span><b>P </b>+49 911 47771 761<br>
+<b>F </b>+49 911 47771 9761</span></p>
+</div>
+<div>
+<p><span style=" color: blue;"><u><a href="mailto:simon.schlereth@yaskawa.eu" title="mailto:simon.schlereth@yaskawa.eu">simon.schlereth@yaskawa.eu</a></u></span></p>
+</div>
+<br>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------------<br> Geschaeftsfuehrer/Managing Directors: Bruno J. Schnekenburger, Marcus Mead, Bobbie Linkenbach <br> Amtsgericht/Local Court: Frankfurt, Commercial register no. 88369 <br> Headquarter: YASKAWA Europe GmbH, Philipp-Reis-Str. 6, D-65795 Hattersheim<br> ------------------------------------------------------------------------------------------------------------------------------<br> CONFIDENTIALITY: This e-mail and any attachments are confidential and may also be privileged.<br> If you are not the named recipient, please notify the sender immediately and do not disclose the contents to another person,<br> use it for any purpose, or store or copy the information in any medium.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=42575
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=22.03.2024 08:46:05 +00:00
+UpdatedAt=22.03.2024 08:46:05 +00:00
+
+### ARTICLE02_BODY
+VIPA hat Promiscuous mode an und alle EoE Slaves sind im lokalen Netzwerk sichtbar.<div>EC-Engineer nummeriert die MAC Adressen durch mit der Fixed Adresse</div><div><br></div><div>Gespräch über gRPC als RAS Ersatz</div><div>
+<br><div><br></div>
+</div>

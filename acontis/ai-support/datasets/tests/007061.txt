@@ -1,0 +1,133 @@
+### HEADER
+Id=7061
+Link=http://at-zammad/#ticket/zoom/7061
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bosch Rexroth AG (ID=88, Number=50510, Country=DE)
+Commission=Bosch Rexroth, ctrlX CORE (ID=96, Number=96)
+Number=707061
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=elmar.ott@boschrexroth.de (ID=158, FirstName=Elmar, LastName=Ott)
+CreatedBy=elmar.ott@boschrexroth.de (ID=158, FirstName=Elmar, LastName=Ott)
+Type=
+TimeUnit=
+CreatedAt=13.12.2023 09:47:23 +00:00
+UpdatedAt=04.01.2024 07:01:47 +00:00
+CloseAt=04.01.2024 07:01:47 +00:00
+ArticlesCount=3
+
+### TITLE
+emCoeProfileGetChannelInfo()
+
+### ARTICLE00_HEADER
+Id=38416
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.12.2023 09:47:23 +00:00
+UpdatedAt=13.12.2023 09:47:26 +00:00
+
+### ARTICLE00_SUBJECT
+emCoeProfileGetChannelInfo()
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Hallo,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p>hier ein kleineres Thema in Verbindung mit der Funktion emCoeProfileGetChannelInfo():</p>
+<p><span lang="EN-US"><img style="max-width:100%;width:7.4791in;max-height:.7604in;width:718px;max-height:73px;" src="/api/v1/ticket_attachment/7061/38416/160114?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p>Unsere Engineering Oberfläche fragt in bestimmten Fällen die von einem Slave unterstützen Profile ab.</p>
+<p>Dabei ist aufgefallen, dass das Fehlercode Handling hier optimiert werden könnte.</p>
+<p> </p>
+<p>Wird auf einen nicht vorhandenen Slave zugegriffen (z.B. Fixed Physical Adresse eines nicht konfigurieren Slaves), so wird der Fehlercode <b>EC_E_NOTFOUND </b>zurückgemeldet.</p>
+<p>Dies ist auch ok und wird an den meisten Stellen im Stack so gemacht.</p>
+<p> </p>
+<p>Wird jedoch versucht die Profileinformation von einem nicht vorhandenen Channel zu lesen, so wird auch <b>EC_E_NOTFOUND</b> verwendet.</p>
+<p>Es kann durch den Anwender der Funktion letztendlich nicht unterschieden werden ob er jetzt einen ungültigen Slave adressiert hat oder einen invaliden Channel.</p>
+<p> </p>
+<p>Hier die Screenshots dazu.</p>
+<p> </p>
+<p><img style="max-width:100%;width:12.6979in;max-height:5.677in;width:1219px;max-height:545px;" src="/api/v1/ticket_attachment/7061/38416/160115?view=inline"></p>
+<p> </p>
+<p><img style="max-width:100%;width:13.9166in;max-height:5.1562in;width:1336px;max-height:495px;" src="/api/v1/ticket_attachment/7061/38416/160116?view=inline"></p>
+<p> </p>
+<p>Im Falle der Adressierung eines invaliden Channels wäre vermutlich EC_E_INVALIDINDEX die bessere Wahl:</p>
+<p><img style="max-width:100%;width:5.875in;max-height:4.375in;width:564px;max-height:420px;" src="/api/v1/ticket_attachment/7061/38416/160117?view=inline"></p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Elmar Ott</b></span> <span><br> Engineering Software Firmware DC-AE/ESW2<br>
+<br> Tel. +49 9352 18-5585<br>
+<a href="mailto:Elmar.Ott@boschrexroth.de"><span style="color:blue;">Elmar.Ott@boschrexroth.de</span></a><br>
+<a href="http://www.boschrexroth.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.boschrexroth.com</span></a><br>
+<br> Bosch Rexroth AG<br> Bgm.-Dr.-Nebel-Str. 2<br> 97816 Lohr am Main<br> GERMANY</span><span><br>
+<br>
+</span><span lang="EN-US"><a href="http://www.boschrexroth.com/" rel="nofollow noreferrer noopener" title="http://www.boschrexroth.com/" target="_blank"><span lang="DE" style="color:blue;"></span></a></span><span><br>
+<br>
+</span><span><br>
+<br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart HRB 23192<br> Vorstand: Dr. Steffen Haack (Vorsitzender), Roland Bittenauer, Thomas Fechner, Holger von Hebel, Reinhard Schäfer<br> Vorsitzender des Aufsichtsrats: Dr. Markus Forschner</span><span><br> ​</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=38908
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.12.2023 13:32:55 +00:00
+UpdatedAt=21.12.2023 13:32:57 +00:00
+
+### ARTICLE01_SUBJECT
+emCoeProfileGetChannelInfo()
+
+### ARTICLE01_BODY
+Hallo Herr Ott, <div><br></div><div>
+<div>Der Rückgabewert der Funktion <b>emCoeProfileGetChannelInfo() </b>wurde nun in <b>EC_E_INVALIDINDEX</b> geändert. Die Änderungen bekommen Sie in unseren nächsten Release.</div>
+<div>Vielen Dank für den Vorschlag.</div>
+</div><div><br></div><div>LG</div><div><br></div><br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: -</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=38909
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.12.2023 13:33:20 +00:00
+UpdatedAt=21.12.2023 13:33:20 +00:00
+
+### ARTICLE02_SUBJECT
+Automatische Antwort: emCoeProfileGetChannelInfo() [Ticket#707061]
+
+### ARTICLE02_BODY
+<div>
+<p>Ich bin zurzeit nicht im Hause.</p>
+<p>Ab Montag, 08.01.2024 bin ich wieder für Sie erreichbar.</p>
+<p>Bitte wenden Sie sich in dringenden Fällen an Herrn Wolf Thomsen:</p>
+<p><a href="mailto:Wolf.Thomsen@boschrexroth.de"><span style="color:blue;">mailto:Wolf.Thomsen@boschrexroth.de</span></a></p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>---</p>
+<p> </p>
+<p>I am currently not in office.</p>
+<p>I will be back on Wednesday, 2024-01-08.</p>
+<p>In urgent cases please contact Mr. Wolf Thomsen:</p>
+<p><a href="mailto:Wolf.Thomsen@boschrexroth.de"><span style="color:blue;">mailto:Wolf.Thomsen@boschrexroth.de</span></a></p>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>

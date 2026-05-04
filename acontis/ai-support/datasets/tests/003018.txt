@@ -1,0 +1,143 @@
+### HEADER
+Id=3018
+Link=http://at-zammad/#ticket/zoom/3018
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=PROMESS Montage- und Prüfsysteme GmbH (ID=148, Number=45001, Country=DE)
+Commission=Promess, UFM (ID=167, Number=167)
+Number=703018
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=seiler@promessmontage.de (ID=796, FirstName=Robert, LastName=Seiler)
+CreatedBy=seiler@promessmontage.de (ID=796, FirstName=Robert, LastName=Seiler)
+Type=
+TimeUnit=
+CreatedAt=16.05.2022 08:38:46 +00:00
+UpdatedAt=30.05.2022 14:58:39 +00:00
+CloseAt=30.05.2022 14:58:39 +00:00
+ArticlesCount=2
+
+### TITLE
+SDO Datentyp enum - Liste abrufen
+
+### ARTICLE00_HEADER
+Id=15919
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.05.2022 08:38:46 +00:00
+UpdatedAt=16.05.2022 08:38:46 +00:00
+
+### ARTICLE00_SUBJECT
+SDO Datentyp enum - Liste abrufen
+
+### ARTICLE00_BODY
+<div>
+<p>Sehr geehrte Damen &amp; Herren,</p>
+<p> </p>
+<p>bei den SDOs gibt es den Datentyp Enum. Wir haben diesen bei uns so weit integriert, dass wir den numerischen Wert lesen und schreiben können. Wir kennen jedoch nicht die Länge sowie die textuelle Repräsentation der einzelnen Werte. Da wir diese Funktionalität im Ec-Engineer jedoch sehen, vermuten wir, dass sich das mit dem Master auch umsetzen lässt.</p>
+<p> </p>
+<p>Könnten Sie uns bitte eine kleine Anleitung geben, wie man bei einem SDO-Objekt des Datentyps Enum die Liste der Werte abfragen kann? Erwarten würde ich der Art:</p>
+<p>0 -&gt; Off</p>
+<p>1 -&gt; On</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Robert Seiler</p>
+<p> </p>
+<p><img style="max-width:100%;width:1.8125in;max-height:.5937in;width:174px;max-height:57px;" src="/api/v1/ticket_attachment/3018/15919/62755?view=inline"></p>
+<p><span style="color:#595959;"><p> </p></span></p>
+<p><span style="color:#595959;">PROMESS Montage- und Prüfsysteme GmbH</span></p>
+<p><span style="color:#595959;">Softwareentwicklung</span></p>
+<p><span style="color:#595959;">Nunsdorfer Ring 29 </span></p>
+<p><span style="color:#595959;">12277 Berlin</span></p>
+<p><span style="color:#595959;">Tel.: 0049 - (0)30 - 62 88 72 – 0</span></p>
+<p><a href="mailto:seiler@promessmontage.de"><span style="color:blue;">seiler@promessmontage.de</span></a><span style="color:#595959;"></span></p>
+<p><a href="http://www.promessmontage.de" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#595959;">www.promessmontage.de</span></a><span style="color:#595959;"></span></p>
+<p><a href="http://www.promess-revolutionx.de" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#595959;">www.promess-revolutionx.de</span></a><span style="color:#595959;"></span></p>
+<p> </p>
+<p><a href="https://www.linkedin.com/company/promessmontage/?viewAsMember=true" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/promessmontage/?viewAsMember=true" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;width:.2291in;max-height:.2291in;width:22px;max-height:22px;" src="/api/v1/ticket_attachment/3018/15919/62756?view=inline"></span></a> <a href="https://www.youtube.com/user/PromessMontage" rel="nofollow noreferrer noopener" title="https://www.youtube.com/user/PromessMontage" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;width:.25in;max-height:.2395in;width:24px;max-height:23px;" src="/api/v1/ticket_attachment/3018/15919/62757?view=inline" alt="Youtube Youtube-Play-Button - Kostenloses Bild auf Pixabay"></span></a></p>
+<p> </p>
+<p>Geschäftsführer: Dipl.-Ing. oec. Florian Köhnen - Firmensitz: Berlin – Handelsregister: Amtsgericht Charlottenburg,HRB 68 818</p>
+<p> </p>
+<p>VERTRAULICH</p>
+<p>Diese Email ist ausschließlich für den oben genannten Adressaten bestimmt. Da diese Email vertrauliche oder besondere Informationen enthalten kann, werden Sie gebeten, falls Sie nicht der Adressat oder eine zur Übermittlung der Nachricht an den Adressaten bestimmte Person sind, uns unverzüglich zu benachrichtigen. Der Inhalt darf nicht anderen Personen mitgeteilt oder kopiert werden.</p>
+<p> </p>
+<p><span lang="EN-US">CONFIDENTIALITY NOTICE</span><span lang="EN-US"></span></p>
+<p><span lang="EN-US">This e-mail is intended only for the addressee named above. As this e-mail may contain confidential or privileged information if you are not the named address or the person responsible for delivering the message to the named address please telephone us immediately. The contents should not be disclosed to any other person nor copies taken.</span><span lang="EN-US"></span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=15929
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.05.2022 12:56:56 +00:00
+UpdatedAt=16.05.2022 12:56:58 +00:00
+
+### ARTICLE01_SUBJECT
+SDO Datentyp enum - Liste abrufen
+
+### ARTICLE01_BODY
+Hallo Herr Seiler,<div><br></div><div>Beim EC-Engineer wird das SDO Information Service verwendet. Sie können sich die Funktion <span>CoeReadObjectDictionary() aus der EcMasterDemo anschauen. Dort wird es auch exemplarisch gemacht.</span>
+</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, May 16, 2022, 10:38:46 AM, Robert Seiler wrote:<br><br><div>
+<p>Sehr geehrte Damen &amp; Herren,</p>
+<p> </p>
+<p>bei den SDOs gibt es den Datentyp Enum. Wir haben diesen bei uns so weit integriert, dass wir den numerischen Wert lesen und schreiben können. Wir kennen jedoch nicht die Länge sowie die textuelle Repräsentation der einzelnen Werte. Da wir diese Funktionalität im Ec-Engineer jedoch sehen, vermuten wir, dass sich das mit dem Master auch umsetzen lässt.</p>
+<p> </p>
+<p>Könnten Sie uns bitte eine kleine Anleitung geben, wie man bei einem SDO-Objekt des Datentyps Enum die Liste der Werte abfragen kann? Erwarten würde ich der Art:</p>
+<p>0 -&gt; Off</p>
+<p>1 -&gt; On</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Robert Seiler</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:1.8125in;max-height:.5937in;width:174px;max-height:57px;" src="/api/v1/ticket_attachment/3018/15929/62775?view=inline"></p>
+<p><span style="color:#595959;"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:#595959;">PROMESS Montage- und Prüfsysteme GmbH</span></p>
+<p><span style="color:#595959;">Softwareentwicklung</span></p>
+<p><span style="color:#595959;">Nunsdorfer Ring 29 </span></p>
+<p><span style="color:#595959;">12277 Berlin</span></p>
+<p><span style="color:#595959;">Tel.: 0049 - (0)30 - 62 88 72 – 0</span></p>
+<p><a href="mailto:seiler@promessmontage.de"><span style="color:blue;">seiler@promessmontage.de</span></a><span style="color:#595959;"></span></p>
+<p><a href="http://www.promessmontage.de" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#595959;">www.promessmontage.de</span></a><span style="color:#595959;"></span></p>
+<p><a href="http://www.promess-revolutionx.de" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#595959;">www.promess-revolutionx.de</span></a><span style="color:#595959;"></span></p>
+<p> </p>
+<p><a href="https://www.linkedin.com/company/promessmontage/?viewAsMember=true" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/promessmontage/?viewAsMember=true" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;max-width:100%;width:.2291in;max-height:.2291in;width:22px;max-height:22px;" src="/api/v1/ticket_attachment/3018/15929/62776?view=inline"></span></a> <a href="https://www.youtube.com/user/PromessMontage" rel="nofollow noreferrer noopener" title="https://www.youtube.com/user/PromessMontage" target="_blank"><span style="color:windowtext;"><img border="0" style="max-width:100%;max-width:100%;width:.25in;max-height:.2395in;width:24px;max-height:23px;" src="/api/v1/ticket_attachment/3018/15929/62777?view=inline" alt="Youtube Youtube-Play-Button - Kostenloses Bild auf Pixabay"></span></a></p>
+<p> </p>
+<p>Geschäftsführer: Dipl.-Ing. oec. Florian Köhnen - Firmensitz: Berlin – Handelsregister: Amtsgericht Charlottenburg,HRB 68 818</p>
+<p> </p>
+<p>VERTRAULICH</p>
+<p>Diese Email ist ausschließlich für den oben genannten Adressaten bestimmt. Da diese Email vertrauliche oder besondere Informationen enthalten kann, werden Sie gebeten, falls Sie nicht der Adressat oder eine zur Übermittlung der Nachricht an den Adressaten bestimmte Person sind, uns unverzüglich zu benachrichtigen. Der Inhalt darf nicht anderen Personen mitgeteilt oder kopiert werden.</p>
+<p> </p>
+<p><span lang="EN-US">CONFIDENTIALITY NOTICE</span><span lang="EN-US"></span></p>
+<p><span lang="EN-US">This e-mail is intended only for the addressee named above. As this e-mail may contain confidential or privileged information if you are not the named address or the person responsible for delivering the message to the named address please telephone us immediately. The contents should not be disclosed to any other person nor copies taken.</span><span lang="EN-US"></span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

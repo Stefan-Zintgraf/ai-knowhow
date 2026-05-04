@@ -1,0 +1,204 @@
+### HEADER
+Id=8420
+Link=http://at-zammad/#ticket/zoom/8420
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=708420
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=04.07.2024 03:11:58 +00:00
+UpdatedAt=05.07.2024 09:17:02 +00:00
+CloseAt=05.07.2024 09:17:02 +00:00
+ArticlesCount=3
+
+### TITLE
+The difference about "Multiple Tasks" and "FP-Split Frame Processing"
+
+### ARTICLE00_HEADER
+Id=46926
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.07.2024 03:11:58 +00:00
+UpdatedAt=04.07.2024 03:12:00 +00:00
+
+### ARTICLE00_SUBJECT
+The difference about "Multiple Tasks" and "FP-Split Frame Processing"
+
+### ARTICLE00_BODY
+<div>Dear,</div><div> </div><div>Are these two features the same, and do customers need to pay extra if they use one of the feature?</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div>
+<div><i><img src="/api/v1/ticket_attachment/8420/46926/194300?view=inline" border="0" style="max-width:100%;width:700px;max-height:127px;"></i></div>
+<div><i>2024年8月21-24日，台北南港展览馆1馆四楼L308，期待与您见面！</i></div>
+<div> </div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+</div>
+<div>
+<p>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</p>
+<p>北京市海淀区上地三街9号C座C309</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=46952
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.07.2024 06:15:54 +00:00
+UpdatedAt=05.07.2024 06:15:58 +00:00
+
+### ARTICLE01_SUBJECT
+The difference about "Multiple Tasks" and "FP-Split Frame Processing"
+
+### ARTICLE01_BODY
+Hi Lishan,<div><br></div><div><div>"Multiple Tasks" is a feature included in Class-B and A, you can defined multiple tasks with EC-Engineer and use <span>eUsrJob_SendCycFramesByTaskId instead of </span><span>eUsrJob_SendAllCycFrames. The application call </span><span>eUsrJob_ProcessAllRxFrames.</span>
+</div></div><div><span><br></span></div><div>
+<span style="color:rgb(66, 73, 77);">The feature pack "FP-Split Frame Processing" must be licensed to use </span><span>eUsrJob_ProcessRxFramesByTaskId</span><span> instead of </span><span>eUsrJob_ProcessAllRxFrames</span><br>
+</div><div><div>
+<a href="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" title="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf</a> Page 55</div></div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, July 4, 2024 at 5:11:58 AM, ec_support@motrotech.com wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>Are these two features the same, and do customers need to pay extra if they use one of the feature?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>
+<div><i><img src="/api/v1/ticket_attachment/8420/46952/194407?view=inline" border="0" style="max-width:100%;max-width:100%;width:700px;max-height:127px;"></i></div>
+<div><i>2024年8月21-24日，台北南港展览馆1馆四楼L308，期待与您见面！</i></div>
+<div> </div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+</div>
+<div>
+<p>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</p>
+<p>北京市海淀区上地三街9号C座C309</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=46960
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.07.2024 08:10:45 +00:00
+UpdatedAt=05.07.2024 08:10:45 +00:00
+
+### ARTICLE02_SUBJECT
+Re: RE: The difference about "Multiple Tasks" and "FP-Split Frame Processing" [Ticket#708420]
+
+### ARTICLE02_BODY
+<div>Hi Cyril,</div><div> </div><div>Okay, I basically understand the difference between the two.</div><div>Thanks for your explanation.</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>ec_support@motrotech.com</div><blockquote>
+<div> </div>
+<div>
+<span class="js-signatureMarker"></span><div>
+<b>From:</b> <a href="mailto:ecsupport@acontis.com">Cyril Eyssautier via EC-Support</a>
+</div>
+<div>
+<b>Date:</b> 2024-07-05 14:15</div>
+<div>
+<b>To:</b> <a href="mailto:ec_support@motrotech.com">ec_support</a>
+</div>
+<div>
+<b>CC:</b> <a href="mailto:john.zhang@motrotech.com">john.zhang</a>
+</div>
+<div>
+<b>Subject:</b> RE: The difference about "Multiple Tasks" and "FP-Split Frame Processing" [Ticket#708420]</div>
+</div>
+<div>Hi Lishan,<div> </div>
+<div>"Multiple Tasks" is a feature included in Class-B and A, you can defined multiple tasks with EC-Engineer and use eUsrJob_SendCycFramesByTaskId instead of eUsrJob_SendAllCycFrames. The application call eUsrJob_ProcessAllRxFrames.</div>
+<div> </div>
+<div>
+<span style="color:rgb(66, 73, 77);">The feature pack "FP-Split Frame Processing" must be licensed to use </span>eUsrJob_ProcessRxFramesByTaskId instead of eUsrJob_ProcessAllRxFrames<br>
+</div>
+<div>
+<a href="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" title="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf</a> Page 55</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Thursday, July 4, 2024 at 5:11:58 AM, ec_support@motrotech.com wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>Are these two features the same, and do customers need to pay extra if they use one of the feature?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>
+<div><i><img src="/api/v1/ticket_attachment/8420/46960/194449?view=inline" border="0" style="max-width:100%;max-width: 100%;width: 700px;max-height: 127px;"></i></div>
+<div><i>2024年8月21-24日，台北南港展览馆1馆四楼L308，期待与您见面！</i></div>
+<div> </div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+</div>
+<div>
+<p>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</p>
+<p>北京市海淀区上地三街9号C座C309</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div> </div>
+<br><br>
+</div>
+</div>
+</blockquote>

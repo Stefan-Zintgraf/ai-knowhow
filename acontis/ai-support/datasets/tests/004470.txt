@@ -1,0 +1,151 @@
+### HEADER
+Id=4470
+Link=http://at-zammad/#ticket/zoom/4470
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Azure Medical (ID=600, Number=0, Country=US)
+Commission=Azure Medical, Unknown (ID=679, Number=679)
+Number=704470
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=nday@azrmed.com (ID=1304, FirstName=Nathan, LastName=Day)
+CreatedBy=nday@azrmed.com (ID=1304, FirstName=Nathan, LastName=Day)
+Type=
+TimeUnit=
+CreatedAt=03.12.2022 20:33:04 +00:00
+UpdatedAt=16.12.2022 07:14:15 +00:00
+CloseAt=16.12.2022 07:14:15 +00:00
+ArticlesCount=2
+
+### TITLE
+Questions about emCoeSdoUpload function
+
+### ARTICLE00_HEADER
+Id=23609
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.12.2022 20:33:05 +00:00
+UpdatedAt=03.12.2022 20:33:09 +00:00
+
+### ARTICLE00_SUBJECT
+Questions about emCoeSdoUpload function
+
+### ARTICLE00_BODY
+<div dir="ltr">Hello,<div> </div>
+<div>I am trying to figure out how to use the emCoeSdoUpload function correctly for reading SDO's from EtherCAT slaves.</div>
+<div> </div>
+<div>I think the issue I am having is with the last argument of the function.</div>
+<div>
+<img src="/api/v1/ticket_attachment/4470/23609/99796?view=inline" alt="image.png" style="max-width:100%;width:303px;max-height:246px;"><br>
+</div>
+<div> </div>
+<div>The documentation states the following about the argument</div>
+<div>
+<img src="/api/v1/ticket_attachment/4470/23609/99797?view=inline" alt="image.png" style="max-width:100%;width:520px;max-height:48px;"><br>
+</div>
+<div> </div>
+<div>I am not sure what mailbox flags are available. I've seen different enums referring to whether it is an SDO download or upload or COE RxPDO, but I'm not sure if this is relevant.</div>
+<div> </div>
+<div>Here is how I have implemented the function while testing.</div>
+<div>
+<img src="/api/v1/ticket_attachment/4470/23609/99798?view=inline" alt="image.png" style="max-width:100%;width:617px;max-height:127px;"><br>
+</div>
+<div> </div>
+<div>This worked, but I got lucky. I put 0x6 as the <i>dwFlags </i>argument as a guess. I tried 0 and -1 and 1. Other numbers I tried made the EC Master crash with a segfault when it called ecatExecJob(eUsrJob_MasterTimer, EC_NULL) or ecatExecJob(eUsrJob_ProcessAllRxFrames, &amp;oJobParms) (I don't know why because these functions seem unrelated to SDO interactions).</div>
+<div> </div>
+<div>Could you please provide me with a little <b>more detail on what the mailbox flags</b> <b>are</b>? </div>
+<div> </div>
+<div>Does writing it as a hex value (0x0 vs 0, or 0x6 vs. 6) make a difference?</div>
+<div> </div>
+<div dir="ltr"><div dir="ltr">
+<div>Regards,</div>
+<div> </div>
+<div>Nathan Day</div>
+<div> </div>
+<div>Azure Medical Innovation</div>
+<div>135 Fox Rd. STE H</div>
+<div>Knoxville, TN 37922</div>
+<div>
+<a href="http://www.azrmed.com" rel="nofollow noreferrer noopener" target="_blank">www.azrmed.com</a><br>
+</div>
+</div></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=23620
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.12.2022 07:49:33 +00:00
+UpdatedAt=05.12.2022 07:49:34 +00:00
+
+### ARTICLE01_SUBJECT
+Questions about emCoeSdoUpload function
+
+### ARTICLE01_BODY
+Hi Nathan,<div><br></div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/mbx_coe.html?#emcoesdoupload" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/mbx_coe.html?#emcoesdoupload" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/mbx_coe.html?#emcoesdoupload</a></div></div><div><br></div><div>dwFlags should be 0 or <span style="color: rgba(0, 0, 0, 0.87);">EC_MAILBOX_FLAG_SDO_COMPLETE for complete access.</span>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Saturday, December 3, 2022 at 9:33:05 PM, Nathan Day wrote:<br><br><div dir="ltr">Hello,<div> </div>
+<div>I am trying to figure out how to use the emCoeSdoUpload function correctly for reading SDO's from EtherCAT slaves.</div>
+<div> </div>
+<div>I think the issue I am having is with the last argument of the function.</div>
+<div>
+<img src="/api/v1/ticket_attachment/4470/23620/99814?view=inline" alt="image.png" style="max-width:100%;max-width:100%;width:303px;max-height:246px;"><br>
+</div>
+<div> </div>
+<div>The documentation states the following about the argument</div>
+<div>
+<img src="/api/v1/ticket_attachment/4470/23620/99815?view=inline" alt="image.png" style="max-width:100%;max-width:100%;width:520px;max-height:48px;"><br>
+</div>
+<div> </div>
+<div>I am not sure what mailbox flags are available. I've seen different enums referring to whether it is an SDO download or upload or COE RxPDO, but I'm not sure if this is relevant.</div>
+<div> </div>
+<div>Here is how I have implemented the function while testing.</div>
+<div>
+<img src="/api/v1/ticket_attachment/4470/23620/99816?view=inline" alt="image.png" style="max-width:100%;max-width:100%;width:617px;max-height:127px;"><br>
+</div>
+<div> </div>
+<div>This worked, but I got lucky. I put 0x6 as the <i>dwFlags </i>argument as a guess. I tried 0 and -1 and 1. Other numbers I tried made the EC Master crash with a segfault when it called ecatExecJob(eUsrJob_MasterTimer, EC_NULL) or ecatExecJob(eUsrJob_ProcessAllRxFrames, &amp;oJobParms) (I don't know why because these functions seem unrelated to SDO interactions).</div>
+<div> </div>
+<div>Could you please provide me with a little <b>more detail on what the mailbox flags</b> <b>are</b>? </div>
+<div> </div>
+<div>Does writing it as a hex value (0x0 vs 0, or 0x6 vs. 6) make a difference?</div>
+<div> </div>
+<div dir="ltr"><div dir="ltr">
+<div>Regards,</div>
+<div> </div>
+<div>Nathan Day</div>
+<div> </div>
+<div>Azure Medical Innovation</div>
+<div>135 Fox Rd. STE H</div>
+<div>Knoxville, TN 37922</div>
+<div>
+<a href="http://www.azrmed.com" rel="nofollow noreferrer noopener" target="_blank">www.azrmed.com</a><br>
+</div>
+</div></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

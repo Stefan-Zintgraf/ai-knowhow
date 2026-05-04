@@ -1,0 +1,146 @@
+### HEADER
+Id=5656
+Link=http://at-zammad/#ticket/zoom/5656
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OSAIcnc S.r.l. (ID=195, Number=57504, Country=IT)
+Commission=OSAIcnc S.r.l., OPENcontrol WinCE (ID=234, Number=234)
+Number=705656
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=gianluca.pasqualotto@osaicnc.com (ID=41, FirstName=Gianluca, LastName=Pasqualotto)
+CreatedBy=gianluca.pasqualotto@osaicnc.com (ID=41, FirstName=Gianluca, LastName=Pasqualotto)
+Type=
+TimeUnit=
+CreatedAt=26.05.2023 13:01:06 +00:00
+UpdatedAt=14.06.2023 13:42:18 +00:00
+CloseAt=14.06.2023 13:42:18 +00:00
+ArticlesCount=3
+
+### TITLE
+Master external synchronization question
+
+### ARTICLE00_HEADER
+Id=30191
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.05.2023 13:01:06 +00:00
+UpdatedAt=26.05.2023 13:01:11 +00:00
+
+### ARTICLE00_SUBJECT
+Master external synchronization question
+
+### ARTICLE00_BODY
+<div>
+<p>Dear EC Support,</p>
+<p> </p>
+<p>Some customer are asking us if possible to synchronize two masters with two network in a way like this:</p>
+<p> </p>
+<p><img style="max-width:100%;width:6.0916in;max-height:3.3083in;width:585px;max-height:318px;" src="/api/v1/ticket_attachment/5656/30191/126348?view=inline"></p>
+<p> </p>
+<p>Is it possible/available for you master to have a second reference time ?</p>
+<p>If yes, can you please give us documentation ? Thanks.</p>
+<p> </p>
+<p>Best Regards,</p>
+<p>Gianluca</p>
+<p> </p>
+<p><span lang="IT"><img style="max-width:100%;width:1.4916in;max-height:.4583in;width:143px;max-height:44px;" src="/api/v1/ticket_attachment/5656/30191/126347?view=inline"></span></p>
+<p><b><span lang="EN-US" style="color:#dc006b;">Gianluca Pasqualotto</span></b></p>
+<p><span lang="EN-US" style="color:#616365;">R&amp;D - CNC/Servo Software Development Senior Engineer</span><span lang="EN-US" style="color:#616365;"> </span></p>
+<p><span lang="IT" style="color:#616365;">Ufficio +39 0125 190 6267</span></p>
+<p><span lang="IT" style="color:#616365;">Mobile +39 335 699 7678</span><span lang="IT"></span></p>
+<p><span lang="IT" style="color:#616265;"><p> </p></span></p>
+<p><span lang="IT" style="color:#616265;">OSAIcnc s.r.l.</span></p>
+<p><span lang="IT" style="color:#616265;">Sede Legale e Operativa: Via Jervis, 11 – 10015 Ivrea (TO) Italia</span></p>
+<p><span lang="IT" style="color:#616265;">Sede Logistica: Via Torino, 14 – 10010 Barone Canavese (TO) Italia</span></p>
+<p><span lang="IT" style="color:#616265;">Indirizzo PEC: </span><span lang="IT"><a href="mailto:osaicncsrl@pec.osaicncsrl.it"><span style="color:#dc006b;">osaicncsrl@pec.osaicncsrl.it</span></a></span><span lang="IT" style="color:#616265;"> </span><span lang="IT"></span></p>
+<p><span lang="IT" style="color:#dc006b;"><a href="http://www.osaicnc.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">www.osaicnc.com</span></a></span><span lang="IT"></span></p>
+<p><span lang="IT" style="color:#616365;"><p> </p></span></p>
+<p><span lang="IT" style="color:#616365;">Questo messaggio e i suoi allegati sono indirizzati esclusivamente ai destinatari. La diffusione, copia o qualsiasi altra azione derivante dalla conoscenza di queste informazioni sono rigorosamente vietate. Qualora abbiate ricevuto questo messaggio per errore siete invitati a comunicarlo al mittente e a provvedere alla sua distruzione.</span><span lang="IT"></span></p>
+<p><i><span lang="EN-US" style="color:#616365;">This e-mail and any attachments are confidential and may contain privileged information intended for the addressee(s) only. Dissemination, copying, printing or use by anybody else is unauthorized. If you are not the intended recipient, please delete this message and any attachments and advise the sender by return e-mail.</span></i></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="IT" style="color:#dc006b;">P</span><span lang="EN-US" style="color:#dc006b;"> </span><i><span lang="EN-US" style="color:#dc006b;">Please consider the environment before printing!</span></i></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=30192
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=26.05.2023 13:15:59 +00:00
+UpdatedAt=26.05.2023 13:15:59 +00:00
+
+### ARTICLE01_BODY
+@Holger, Du bist doch der DC-Meister, weißt du da weiter?
+
+### ARTICLE02_HEADER
+Id=30207
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.05.2023 07:01:21 +00:00
+UpdatedAt=30.05.2023 07:01:27 +00:00
+
+### ARTICLE02_SUBJECT
+Master external synchronization question
+
+### ARTICLE02_BODY
+<div>Hi Gianluca,</div><div>yes we support external sync as feature pack. See also:</div><div><a href="https://www.acontis.com/de/feature-packs.html#externalsync" title="https://www.acontis.com/de/feature-packs.html#externalsync" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/de/feature-packs.html#externalsync</a></div><div>Our sales team will contact you soon.</div><div><br></div><div><div>Best regards,</div></div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Holger Oelhaf</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">Am Freitag, 26. Mai 2023 um 15:01:06, schrieb Gianluca Pasqualotto:<br><br><div>
+<p>Dear EC Support,</p>
+<p> </p>
+<p>Some customer are asking us if possible to synchronize two masters with two network in a way like this:</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:6.0916in;max-height:3.3083in;width:585px;max-height:318px;" src="/api/v1/ticket_attachment/5656/30207/126427?view=inline"></p>
+<p> </p>
+<p>Is it possible/available for you master to have a second reference time ?</p>
+<p>If yes, can you please give us documentation ? Thanks.</p>
+<p> </p>
+<p>Best Regards,</p>
+<p>Gianluca</p>
+<p> </p>
+<p><span lang="IT"><img style="max-width:100%;max-width:100%;width:1.4916in;max-height:.4583in;width:143px;max-height:44px;" src="/api/v1/ticket_attachment/5656/30207/126428?view=inline"></span></p>
+<p><b><span lang="EN-US" style="color:#dc006b;">Gianluca Pasqualotto</span></b></p>
+<p><span lang="EN-US" style="color:#616365;">R&amp;D - CNC/Servo Software Development Senior Engineer</span><span lang="EN-US" style="color:#616365;"> </span></p>
+<p><span lang="IT" style="color:#616365;">Ufficio +39 0125 190 6267</span></p>
+<p><span lang="IT" style="color:#616365;">Mobile +39 335 699 7678</span><span lang="IT"></span></p>
+<p><span lang="IT" style="color:#616265;"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="IT" style="color:#616265;">OSAIcnc s.r.l.</span></p>
+<p><span lang="IT" style="color:#616265;">Sede Legale e Operativa: Via Jervis, 11 – 10015 Ivrea (TO) Italia</span></p>
+<p><span lang="IT" style="color:#616265;">Sede Logistica: Via Torino, 14 – 10010 Barone Canavese (TO) Italia</span></p>
+<p><span lang="IT" style="color:#616265;">Indirizzo PEC: </span><span lang="IT"><a href="mailto:osaicncsrl@pec.osaicncsrl.it"><span style="color:#dc006b;">osaicncsrl@pec.osaicncsrl.it</span></a></span><span lang="IT" style="color:#616265;"> </span><span lang="IT"></span></p>
+<p><span lang="IT" style="color:#dc006b;"><a href="http://www.osaicnc.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">www.osaicnc.com</span></a></span><span lang="IT"></span></p>
+<p><span lang="IT" style="color:#616365;"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="IT" style="color:#616365;">Questo messaggio e i suoi allegati sono indirizzati esclusivamente ai destinatari. La diffusione, copia o qualsiasi altra azione derivante dalla conoscenza di queste informazioni sono rigorosamente vietate. Qualora abbiate ricevuto questo messaggio per errore siete invitati a comunicarlo al mittente e a provvedere alla sua distruzione.</span><span lang="IT"></span></p>
+<p><i><span lang="EN-US" style="color:#616365;">This e-mail and any attachments are confidential and may contain privileged information intended for the addressee(s) only. Dissemination, copying, printing or use by anybody else is unauthorized. If you are not the intended recipient, please delete this message and any attachments and advise the sender by return e-mail.</span></i></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="IT" style="color:#dc006b;">P</span><span lang="EN-US" style="color:#dc006b;"> </span><i><span lang="EN-US" style="color:#dc006b;">Please consider the environment before printing!</span></i></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

@@ -1,0 +1,142 @@
+### HEADER
+Id=3182
+Link=http://at-zammad/#ticket/zoom/3182
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Lam Research Corporation (ID=363, Number=55504, Country=US)
+Commission=LAM, Semi EC-Master VxWorks (ID=430, Number=430)
+Number=703182
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=thaotam.trinh@lamresearch.com (ID=50, FirstName=Thaotam, LastName=Trinh)
+CreatedBy=thaotam.trinh@lamresearch.com (ID=50, FirstName=Thaotam, LastName=Trinh)
+Type=
+TimeUnit=
+CreatedAt=07.06.2022 23:45:46 +00:00
+UpdatedAt=29.06.2022 06:03:45 +00:00
+CloseAt=29.06.2022 06:03:45 +00:00
+ArticlesCount=2
+
+### TITLE
+Master stack object
+
+### ARTICLE00_HEADER
+Id=16729
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.06.2022 23:45:47 +00:00
+UpdatedAt=07.06.2022 23:45:50 +00:00
+
+### ARTICLE00_SUBJECT
+Master stack object
+
+### ARTICLE00_BODY
+<div>
+<p>Hi,</p>
+<p> </p>
+<p>For the below master object, I assume that “actual” is the number of bytes have been sent, but what do “max” and “min” values mean? How does the master determine those values?</p>
+<p> </p>
+<p><span style="color:green;">/* Object 0x2200 Bus Load Base */</span></p>
+<p><span style="color:blue;">typedef</span>
+<span style="color:blue;">struct</span>
+<span style="color:blue;">_EC_T_OBJ2200</span></p>
+<p>{</p>
+<p> <span style="color:blue;">EC_T_WORD</span> <span style="color:navy;">wSubIndex0</span>; <span style="color:green;">/* Subindex 000 */</span></p>
+<p> </p>
+<p> <span style="color:blue;">EC_T_DWORD</span> <span style="color:navy;">dwBytesPerSecondAct</span>; <span style="color:green;">/* Subindex 001: TX bytes/second actual value */</span></p>
+<p> <span style="color:blue;">EC_T_DWORD</span> <span style="color:navy;">dwBytesPerSecondMin</span>; <span style="color:green;">/* Subindex 002: TX bytes/second min. value */</span></p>
+<p> <span style="color:blue;">EC_T_DWORD</span> <span style="color:navy;">dwBytesPerSecondMax</span>; <span style="color:green;">/* Subindex 003: TX bytes/second max. value */</span></p>
+<p> </p>
+<p> <span style="color:blue;">EC_T_DWORD</span> <span style="color:navy;">dwBytesPerCycleAct</span>; <span style="color:green;">/* Subindex 004: TX bytes/cycle actual value */</span></p>
+<p> <span style="color:blue;">EC_T_DWORD</span> <span style="color:navy;">dwBytesPerCycleMin</span>; <span style="color:green;">/* Subindex 005: TX bytes/cycle min. value */</span></p>
+<p> <span style="color:blue;">EC_T_DWORD</span> <span style="color:navy;">dwBytesPerCycleMax</span>; <span style="color:green;">/* Subindex 006: TX bytes/cycle max. value */</span></p>
+<p>} <span style="color:#a000a0;">EC_PACKED</span>(1) <span style="color:blue;">EC_T_OBJ2200</span>;</p>
+<p> </p>
+<p>BTW: can you send me the latest master stack object doc ?</p>
+<p> </p>
+<p>Regards,</p>
+<p> </p>
+<p>Thao Tom Trinh</p>
+<p>Software &amp; Controls</p>
+<p>Desk +1 510.572.5795</p>
+<p> </p>
+</div><div>
+<br> LAM RESEARCH CONFIDENTIALITY NOTICE: This e-mail transmission, and any documents, files, or previous e-mail messages attached to it, (collectively, "E-mail Transmission") may be subject to one or more of the following based on the associated sensitivity level: E-mail Transmission (i) contains confidential information, (ii) is prohibited from distribution outside of Lam, and/or (iii) is intended solely for and restricted to the specified recipient(s). If you are not the intended recipient, or a person responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying, distribution or use of any of the information contained in or attached to this message is STRICTLY PROHIBITED. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without reading them or saving them to disk. Thank you.</div><br>
+<p>Confidential – Limited Access and Use<br>
+</p>
+
+### ARTICLE01_HEADER
+Id=16739
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.06.2022 08:18:30 +00:00
+UpdatedAt=08.06.2022 08:18:32 +00:00
+
+### ARTICLE01_SUBJECT
+Master stack object
+
+### ARTICLE01_BODY
+<div>Hi Thao,</div><div><br></div><div>I think the names are self-explaining:</div><div> <span style="color:navy;">dwBytesPerSecondAct: actual value of TX bytes/second </span>
+</div><div><span style="color:rgb(0, 0, 128);">dwBytesPerSecondMin: the lowest value of TX bytes/second recorded by the master since the start </span></div><div><span style="color:rgb(0, 0, 128);">dwBytesPerSecondMax: maximal value of TX bytes/second recorded by the master since the start</span></div><div><br></div><div>
+<span style="color:rgb(0, 0, 128);">dwBytesPerCycleAct: actual value of TX bytes/cycle</span><br>
+</div><div>
+<span style="color:rgb(0, 0, 128);">dwBytesPerCycleMin: </span><span style="color:rgb(0, 0, 128);">the lowest value of TX bytes/cycle recorded by the master since the start</span><span style="color:rgb(0, 0, 128);"><br></span>
+</div><div>
+<span style="color:rgb(0, 0, 128);">dwBytesPerCycleMax: </span><span style="color:rgb(0, 0, 128);">maximal value of TX bytes/cycle recorded by the master since the start</span><span style="color:rgb(0, 0, 128);"><br></span>
+</div><div><br></div><div>Please find the master stack object doc in the attachment.</div><div><br></div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Wednesday, June 8, 2022, 1:45:47 AM, Thaotam Trinh wrote:<br><br><div>
+<p>Hi,</p>
+<p> </p>
+<p>For the below master object, I assume that “actual” is the number of bytes have been sent, but what do “max” and “min” values mean? How does the master determine those values?</p>
+<p> </p>
+<p><span style="color:green;">/* Object 0x2200 Bus Load Base */</span></p>
+<p><span style="color:blue;">typedef</span>
+<span style="color:blue;">struct</span>
+<span style="color:blue;">_EC_T_OBJ2200</span></p>
+<p>{</p>
+<p> <span style="color:blue;">EC_T_WORD</span> <span style="color:navy;">wSubIndex0</span>; <span style="color:green;">/* Subindex 000 */</span></p>
+<p> </p>
+<p> <span style="color:blue;">EC_T_DWORD</span> <span style="color:navy;">dwBytesPerSecondAct</span>; <span style="color:green;">/* Subindex 001: TX bytes/second actual value */</span></p>
+<p> <span style="color:blue;">EC_T_DWORD</span> <span style="color:navy;">dwBytesPerSecondMin</span>; <span style="color:green;">/* Subindex 002: TX bytes/second min. value */</span></p>
+<p> <span style="color:blue;">EC_T_DWORD</span> <span style="color:navy;">dwBytesPerSecondMax</span>; <span style="color:green;">/* Subindex 003: TX bytes/second max. value */</span></p>
+<p> </p>
+<p> <span style="color:blue;">EC_T_DWORD</span> <span style="color:navy;">dwBytesPerCycleAct</span>; <span style="color:green;">/* Subindex 004: TX bytes/cycle actual value */</span></p>
+<p> <span style="color:blue;">EC_T_DWORD</span> <span style="color:navy;">dwBytesPerCycleMin</span>; <span style="color:green;">/* Subindex 005: TX bytes/cycle min. value */</span></p>
+<p> <span style="color:blue;">EC_T_DWORD</span> <span style="color:navy;">dwBytesPerCycleMax</span>; <span style="color:green;">/* Subindex 006: TX bytes/cycle max. value */</span></p>
+<p>} <span style="color:#a000a0;">EC_PACKED</span>(1) <span style="color:blue;">EC_T_OBJ2200</span>;</p>
+<p> </p>
+<p>BTW: can you send me the latest master stack object doc ?</p>
+<p> </p>
+<p>Regards,</p>
+<p> </p>
+<p>Thao Tom Trinh</p>
+<p>Software &amp; Controls</p>
+<p>Desk +1 510.572.5795</p>
+<p> </p>
+</div>
+<div>
+<br> LAM RESEARCH CONFIDENTIALITY NOTICE: This e-mail transmission, and any documents, files, or previous e-mail messages attached to it, (collectively, "E-mail Transmission") may be subject to one or more of the following based on the associated sensitivity level: E-mail Transmission (i) contains confidential information, (ii) is prohibited from distribution outside of Lam, and/or (iii) is intended solely for and restricted to the specified recipient(s). If you are not the intended recipient, or a person responsible for delivering it to the intended recipient, you are hereby notified that any disclosure, copying, distribution or use of any of the information contained in or attached to this message is STRICTLY PROHIBITED. If you have received this transmission in error, please immediately notify the sender and destroy the original transmission and its attachments without reading them or saving them to disk. Thank you.</div>
+<br>
+<p>Confidential – Limited Access and Use<br>
+</p>
+<br>
+</blockquote></div><div><br></div><br><br>

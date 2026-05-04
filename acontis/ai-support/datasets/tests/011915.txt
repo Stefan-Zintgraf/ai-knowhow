@@ -1,0 +1,172 @@
+### HEADER
+Id=11915
+Link=http://at-zammad/#ticket/zoom/11915
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Auris Surgical Robotics Inc (ID=336, Number=40288, Country=US)
+Commission=Auris Surgical Robotics Inc, R&D (ID=402, Number=402)
+Number=7011915
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=jdesai4@its.jnj.com (ID=2355, FirstName=Jignesh  [ETHUS], LastName=Desai)
+CreatedBy=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Type=
+TimeUnit=
+CreatedAt=18.11.2025 17:34:00 +00:00
+UpdatedAt=19.11.2025 08:25:54 +00:00
+CloseAt=19.11.2025 08:25:54 +00:00
+ArticlesCount=3
+
+### TITLE
+Acontis Master and NIC
+
+### ARTICLE00_HEADER
+Id=68715
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.11.2025 17:34:00 +00:00
+UpdatedAt=18.11.2025 17:34:00 +00:00
+
+### ARTICLE00_SUBJECT
+WG: Acontis Master and NIC
+
+### ARTICLE00_BODY
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b><span> Desai, Jignesh [ETHUS] &lt;JDesai4@ITS.JNJ.com&gt; <br><b>Gesendet:</b> Dienstag, 18. November 2025 18:02<br><b>An:</b> Paul Bußmann &lt;p.bussmann@acontis.com&gt;<br><b>Betreff:</b> Acontis Master and NIC</span></p>
+</div>
+<p> </p>
+<div><p>Hi Paul,</p></div>
+<div><p>During the training you had mentioned about Acontis Master and NIC interactions. I vaguely remember that the NIC is used in polling mode and not interrupt mode by the master. Is that correct? And can you pl share in manual where this is captured?</p></div>
+<div><p>Thx,</p></div>
+<div><p>---</p></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=68717
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.11.2025 17:37:42 +00:00
+UpdatedAt=18.11.2025 17:37:46 +00:00
+
+### ARTICLE01_SUBJECT
+Acontis Master and NIC
+
+### ARTICLE01_BODY
+Hi Jignesh,<div><br></div><div>yes, it's Polling Mode (<i>Short output dead time</i><span style="background-color: initial; color: rgb(88, 88, 86);">). </span>
+</div><div><span style="background-color: initial; color: rgb(88, 88, 86);"><br></span></div><div>
+<span style="background-color: initial; color: rgb(88, 88, 86);">See </span><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/software-integration.html#standard-timing-short-output-dead-time" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/software-integration.html#standard-timing-short-output-dead-time" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/software-integration.html#standard-timing-short-output-dead-time</a>
+</div><div><br></div><div><span style="background-color: initial; color: rgb(88, 88, 86);">Best regards,</span></div><div>Paul<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">
+<div>
+<div>
+<p><b>Von:</b><span> Desai, Jignesh [ETHUS] &lt;JDesai4@ITS.JNJ.com&gt; <br><b>Gesendet:</b> Dienstag, 18. November 2025 18:02<br><b>An:</b> Paul Bußmann &lt;p.bussmann@acontis.com&gt;<br><b>Betreff:</b> Acontis Master and NIC</span></p>
+</div>
+<p> </p>
+<div><p>Hi Paul,</p></div>
+<div><p>During the training you had mentioned about Acontis Master and NIC interactions. I vaguely remember that the NIC is used in polling mode and not interrupt mode by the master. Is that correct? And can you pl share in manual where this is captured?</p></div>
+<div><p>Thx,</p></div>
+<div><p>---</p></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=68723
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.11.2025 18:03:00 +00:00
+UpdatedAt=18.11.2025 18:03:00 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Acontis Master and NIC [Ticket#7011915]
+
+### ARTICLE02_BODY
+<div>Thx!</div><hr>
+<div dir="ltr">
+<b>From:</b> Paul Bußmann via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Tuesday, November 18, 2025 9:37 AM<br>
+<b>To:</b> Desai, Jignesh [ETHUS] &lt;JDesai4@ITS.JNJ.com&gt;<br>
+<b>Subject:</b> [EXTERNAL] RE: Acontis Master and NIC [Ticket#7011915] <div> </div>
+</div><div>Hi Jignesh,<div> </div>
+<div>yes, it's Polling Mode (<i>Short output dead time</i><span style="background-color:initial; color:rgb(88,88,86);">). </span>
+</div>
+<div><span style="background-color:initial; color:rgb(88,88,86);"><br>
+</span></div>
+<div>
+<span style="background-color:initial; color:rgb(88,88,86);">See </span><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/software-integration.html#standard-timing-short-output-dead-time" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/software-integration.html#standard-timing-short-output-dead-time" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/software-integration.html#standard-timing-short-output-dead-time</a>
+</div>
+<div> </div>
+<div><span style="background-color:initial; color:rgb(88,88,86);">Best regards,</span></div>
+<div>Paul<br>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite">
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b><span> Desai, Jignesh [ETHUS] &lt;JDesai4@ITS.JNJ.com&gt; <br>
+<b>Gesendet:</b> Dienstag, 18. November 2025 18:02<br>
+<b>An:</b> Paul Bußmann &lt;p.bussmann@acontis.com&gt;<br>
+<b>Betreff:</b> Acontis Master and NIC</span></p>
+</div>
+<p> </p>
+<div>
+<p>Hi Paul,</p>
+</div>
+<div>
+<p>During the training you had mentioned about Acontis Master and NIC interactions. I vaguely remember that the NIC is used in polling mode and not interrupt mode by the master. Is that correct? And can you pl share in manual where this is captured?</p>
+</div>
+<div>
+<p>Thx,</p>
+</div>
+<div>
+<p>---</p>
+</div>
+</div>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>

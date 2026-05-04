@@ -1,0 +1,149 @@
+### HEADER
+Id=2051
+Link=http://at-zammad/#ticket/zoom/2051
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bucher Automation (ID=124, Number=54505, Country=DE)
+Commission=Bucher Industries, JetControl (ID=139, Number=139)
+Number=702051
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=tfoell@jetter.de (ID=35, FirstName=Tobias, LastName=Föll)
+CreatedBy=tfoell@jetter.de (ID=35, FirstName=Tobias, LastName=Föll)
+Type=
+TimeUnit=
+CreatedAt=09.12.2021 17:57:52 +00:00
+UpdatedAt=10.12.2021 06:40:43 +00:00
+CloseAt=10.12.2021 06:38:33 +00:00
+ArticlesCount=3
+
+### TITLE
+Ecat Master + SIL Frage
+
+### ARTICLE00_HEADER
+Id=10803
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.12.2021 17:57:52 +00:00
+UpdatedAt=09.12.2021 17:57:56 +00:00
+
+### ARTICLE00_SUBJECT
+Ecat Master + SIL Frage
+
+### ARTICLE00_BODY
+<div> </div><div>
+<p>Hallo Support,</p>
+<p> </p>
+<p>habe kurz eine Frage zu Ecat Master + SIL.</p>
+<p> </p>
+<p>Wie kann man im SIL Modus , das Abziehen des Ecat Kabels „nachstellen“ ?</p>
+<p> </p>
+<p>Hintergrund:</p>
+<p> </p>
+<p>Wir haben eine reale Anwendung beim Kunden, bei der mehrere Ecat Slave Geräte im Einsatz sind.</p>
+<p>Wenn nun dort das EtherCAT Kabel abgezogen wird, dann gibt es „undefinierte“ Zwischenzustände in den nachgelagerten Software Modulen.</p>
+<p> </p>
+<p>Jetzt möchten wir dieses reale Problem gerne im SIL Mode nachstellen ?</p>
+<p> </p>
+<p>Haben Sie hier einen Tipp, bzw. eine Idee mit welchem SIL Funktionsaufruf man das Verhalten nachstellen könnte ?</p>
+<p> </p>
+<p>Danke.</p>
+<p> </p>
+</div><br>
+<p>Mit freundlichen Grüßen / Kind regards</p><p>i.V. Tobias Föll</p><p>Head of System Engineering</p><p>Jetter AG<br> Gräterstraße 2 <br> DE-71642 Ludwigsburg <br> Tel: +49-7141-2550-0 <br> Fax: +49-7141-2550-425 <br> tfoell@jetter.de <br>
+<a href="http://www.jetter.de/" rel="nofollow noreferrer noopener" target="_blank">www.jetter.de</a><br> Datenschutzerklärung / Privacy Policy: <a href="https://www.jetter.de/kontakt/datenschutz.html" rel="nofollow noreferrer noopener" target="_blank"> www.jetter.de/kontakt/datenschutz.html</a></p><p>Ust.-Id.: DE 812 643 615<br> Amtsgericht Stuttgart HRB 205545 <br> Vorstandsvorsitzender: Christian Benz <br> Vorsitzender des Aufsichtsrates: Martin Jetter </p><p>VAT Reg.-No.: DE 812 643 615<br> Registered: Stuttgart HRB 205545 <br> CEO: Christian Benz <br> Chairman of the Supervisory Board: Martin Jetter</p>
+
+### ARTICLE01_HEADER
+Id=10816
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.12.2021 06:27:34 +00:00
+UpdatedAt=10.12.2021 06:27:36 +00:00
+
+### ARTICLE01_SUBJECT
+Ecat Master + SIL Frage
+
+### ARTICLE01_BODY
+Hallo Herr Föll,<div><span><br></span></div><div>
+<span>bitte werfen Sie dazu einen Blick ins Handbuch. Funktionen dafür finden Sie unter "</span><span>Network operation functions".</span>
+</div><div><span><br></span></div><div><span>Mit freundlichen Grüßen</span></div><div><span>Paul Bußmann</span></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Donnerstag, 9. Dezember 2021, 18:57:52, schrieb Tobias Föll:<br><br><div> </div>
+<div>
+<p>Hallo Support,</p>
+<p> </p>
+<p>habe kurz eine Frage zu Ecat Master + SIL.</p>
+<p> </p>
+<p>Wie kann man im SIL Modus , das Abziehen des Ecat Kabels „nachstellen“ ?</p>
+<p> </p>
+<p>Hintergrund:</p>
+<p> </p>
+<p>Wir haben eine reale Anwendung beim Kunden, bei der mehrere Ecat Slave Geräte im Einsatz sind.</p>
+<p>Wenn nun dort das EtherCAT Kabel abgezogen wird, dann gibt es „undefinierte“ Zwischenzustände in den nachgelagerten Software Modulen.</p>
+<p> </p>
+<p>Jetzt möchten wir dieses reale Problem gerne im SIL Mode nachstellen ?</p>
+<p> </p>
+<p>Haben Sie hier einen Tipp, bzw. eine Idee mit welchem SIL Funktionsaufruf man das Verhalten nachstellen könnte ?</p>
+<p> </p>
+<p>Danke.</p>
+<p> </p>
+</div>
+<br>
+<p>Mit freundlichen Grüßen / Kind regards</p>
+<p>i.V. Tobias Föll</p>
+<p>Head of System Engineering</p>
+<p>Jetter AG<br> Gräterstraße 2 <br> DE-71642 Ludwigsburg <br> Tel: +49-7141-2550-0 <br> Fax: +49-7141-2550-425 <br> tfoell@jetter.de <br>
+<a href="http://www.jetter.de/" rel="nofollow noreferrer noopener" target="_blank">www.jetter.de</a><br> Datenschutzerklärung / Privacy Policy: <a href="https://www.jetter.de/kontakt/datenschutz.html" rel="nofollow noreferrer noopener" target="_blank"> www.jetter.de/kontakt/datenschutz.html</a></p>
+<p>Ust.-Id.: DE 812 643 615<br> Amtsgericht Stuttgart HRB 205545 <br> Vorstandsvorsitzender: Christian Benz <br> Vorsitzender des Aufsichtsrates: Martin Jetter </p>
+<p>VAT Reg.-No.: DE 812 643 615<br> Registered: Stuttgart HRB 205545 <br> CEO: Christian Benz <br> Chairman of the Supervisory Board: Martin Jetter</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=10817
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.12.2021 06:28:04 +00:00
+UpdatedAt=10.12.2021 06:28:04 +00:00
+
+### ARTICLE02_SUBJECT
+Automatische Antwort: Ecat Master + SIL Frage [Ticket#702051]
+
+### ARTICLE02_BODY
+<div> </div><div>
+<p>Sehr geehrte/r E-Mail-Sender/in,</p>
+<p>am 13.12.2021 bin ich wieder im Hause. Gerne lese und beantworte ich dann Ihre E-Mail.</p>
+<p>Dear email-sender, I'm out of office and will be back on 13 December 2021.</p>
+<p>Upon my return, I will read and answer your email as soon as possible.</p>
+<p> </p>
+</div><br>
+<p>Mit freundlichen Grüßen / Kind regards</p><p>i.V. Tobias Föll</p><p>Head of System Engineering</p><p>Jetter AG<br> Gräterstraße 2 <br> DE-71642 Ludwigsburg <br> Tel: +49-7141-2550-0 <br> Fax: +49-7141-2550-425 <br> tfoell@jetter.de <br>
+<a href="http://www.jetter.de/" rel="nofollow noreferrer noopener" target="_blank">www.jetter.de</a><br> Datenschutzerklärung / Privacy Policy: <a href="https://www.jetter.de/kontakt/datenschutz.html" rel="nofollow noreferrer noopener" target="_blank"> www.jetter.de/kontakt/datenschutz.html</a></p><p>Ust.-Id.: DE 812 643 615<br> Amtsgericht Stuttgart HRB 205545 <br> Vorstandsvorsitzender: Christian Benz <br> Vorsitzender des Aufsichtsrates: Martin Jetter </p><p>VAT Reg.-No.: DE 812 643 615<br> Registered: Stuttgart HRB 205545 <br> CEO: Christian Benz <br> Chairman of the Supervisory Board: Martin Jetter</p>

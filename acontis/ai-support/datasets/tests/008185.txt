@@ -1,0 +1,170 @@
+### HEADER
+Id=8185
+Link=http://at-zammad/#ticket/zoom/8185
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ACS Motion Control LTD (ID=184, Number=50006, Country=IL)
+Commission=ACS, Motion Controller (ID=223, Number=223)
+Number=708185
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=roeik@acsmotioncontrol.com (ID=2244, FirstName=Roei, LastName=Krinitz)
+CreatedBy=roeik@acsmotioncontrol.com (ID=2244, FirstName=Roei, LastName=Krinitz)
+Type=
+TimeUnit=
+CreatedAt=27.05.2024 14:25:27 +00:00
+UpdatedAt=11.06.2024 07:08:33 +00:00
+CloseAt=11.06.2024 07:08:33 +00:00
+ArticlesCount=6
+
+### TITLE
+EcMasterDemo - intime
+
+### ARTICLE00_HEADER
+Id=45209
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.05.2024 14:25:27 +00:00
+UpdatedAt=27.05.2024 14:25:27 +00:00
+
+### ARTICLE00_SUBJECT
+EcMasterDemo - intime
+
+### ARTICLE00_BODY
+<div>Hello, can you please explain how to run EcMasterDemo using INTIME software?</div><div>Can you provide the necessary files?</div><div> </div><div>Best Regards,</div><div> </div><div>
+<p><span style="color: blue;">Roei Krinitz</span></p>
+<p><span style="color: blue;"><img style="max-width:100%;width: 1.729in;max-height: 0.572in;width:165px;max-height:54px;" src="/api/v1/ticket_attachment/8185/45209/186369?view=inline"></span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=45212
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.05.2024 15:10:41 +00:00
+UpdatedAt=27.05.2024 15:10:43 +00:00
+
+### ARTICLE01_SUBJECT
+EcMasterDemo - intime
+
+### ARTICLE01_BODY
+Hi Mr.Krinitz, <div><br></div><div>Here's the download link with the evaluation packet of EcMaster for INTIME :</div><div><br></div><div><div><a href="http://downloads.acontis.com/temp/mbi/ACS%20Motion%20Control/27-05-2024/EC-Master-V3.2.1.05-INtime6-x86_32Bit-Eval.zip" title="http://downloads.acontis.com/temp/mbi/ACS%20Motion%20Control/27-05-2024/EC-Master-V3.2.1.05-INtime6-x86_32Bit-Eval.zip" rel="nofollow noreferrer noopener" target="_blank">http://downloads.acontis.com/temp/mbi/ACS%20Motion%20Control/27-05-2024/EC-Master-V3.2.1.05-INtime6-x86_32Bit-Eval.zip</a></div></div><div><br></div><div>All necessary files are zipped together and you can find the manual in <b>Doc </b>folder. </div><div><br></div><div>Please let us know if you have any issues. </div><div><br></div><div><br></div><div><br></div><div>Reagrds, </div><div> </div><br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=45230
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.05.2024 08:23:42 +00:00
+UpdatedAt=28.05.2024 08:23:42 +00:00
+
+### ARTICLE02_SUBJECT
+Re: EcMasterDemo - intime [Ticket#708185]
+
+### ARTICLE02_BODY
+<div>Thank you, can you please explain how to run the rta file?</div><div>I cant really understand from the guide..</div><div> </div><div>Best Regards,</div><hr>
+<div dir="ltr">
+<b>From:</b> Miran Bhattarai via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Monday, May 27, 2024 6:10 PM<br>
+<b>To:</b> Roei Krinitz &lt;roeik@acsmotioncontrol.com&gt;<br>
+<b>Subject:</b> EcMasterDemo - intime [Ticket#708185] <div> </div>
+</div><div>Hi Mr.Krinitz,<div> </div>
+<div>Here's the download link with the evaluation packet of EcMaster for INTIME :</div>
+<div> </div>
+<div>
+<div><a href="http://downloads.acontis.com/temp/mbi/ACS%20Motion%20Control/27-05-2024/EC-Master-V3.2.1.05-INtime6-x86_32Bit-Eval.zip" title="http://downloads.acontis.com/temp/mbi/ACS%20Motion%20Control/27-05-2024/EC-Master-V3.2.1.05-INtime6-x86_32Bit-Eval.zip" rel="nofollow noreferrer noopener" target="_blank">http://downloads.acontis.com/temp/mbi/ACS%20Motion%20Control/27-05-2024/EC-Master-V3.2.1.05-INtime6-x86_32Bit-Eval.zip</a></div>
+</div>
+<div> </div>
+<div>All necessary files are zipped together and you can find the manual in <b>Doc </b>folder. </div>
+<div> </div>
+<div>Please let us know if you have any issues.</div>
+<div> </div>
+<div>Reagrds,</div>
+<div> </div>
+<br>
+<br>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=45232
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=28.05.2024 08:46:56 +00:00
+UpdatedAt=28.05.2024 08:46:56 +00:00
+
+### ARTICLE03_BODY
+<div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/os_intime.html#setting-up-and-running-ecmasterdemo" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/os_intime.html#setting-up-and-running-ecmasterdemo" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/os_intime.html#setting-up-and-running-ecmasterdemo</a></div>
+
+### ARTICLE04_HEADER
+Id=45233
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=28.05.2024 08:47:53 +00:00
+UpdatedAt=28.05.2024 08:47:53 +00:00
+
+### ARTICLE04_BODY
+Danke Holger !!<div><br></div>
+
+### ARTICLE05_HEADER
+Id=45234
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.05.2024 08:50:13 +00:00
+UpdatedAt=28.05.2024 08:50:16 +00:00
+
+### ARTICLE05_SUBJECT
+EcMasterDemo - intime
+
+### ARTICLE05_BODY
+Hello Mr.Krinitz, <div><br></div><div>This link will you help you out: </div><div><br></div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/os_intime.html#setting-up-and-running-ecmasterdemo" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/os_intime.html#setting-up-and-running-ecmasterdemo" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/os_intime.html#setting-up-and-running-ecmasterdemo</a></div></div><div><br></div><div><br></div><div>Regards, </div><div><br></div><div><br></div><br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>

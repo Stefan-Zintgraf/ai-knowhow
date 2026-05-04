@@ -1,0 +1,112 @@
+### HEADER
+Id=9612
+Link=http://at-zammad/#ticket/zoom/9612
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Schneider Electric (ID=858, Number=0, Country=FR)
+Commission=Schneider Electric, iPCs with PLC function (ID=944, Number=944)
+Number=709612
+Owner=t.waggershauser@acontis.com (ID=2365, FirstName=Thomas, LastName=Waggershauser)
+Customer=rainer.herrmann@non.se.com (ID=2857, FirstName=Rainer, LastName=Herrmann)
+CreatedBy=rainer.herrmann@non.se.com (ID=2857, FirstName=Rainer, LastName=Herrmann)
+Type=
+TimeUnit=
+CreatedAt=07.01.2025 10:32:37 +00:00
+UpdatedAt=14.02.2025 07:02:55 +00:00
+CloseAt=07.01.2025 13:22:48 +00:00
+ArticlesCount=2
+
+### TITLE
+Re: Request for Copyright Removal and Documentation Modification
+
+### ARTICLE00_HEADER
+Id=54606
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.01.2025 10:32:37 +00:00
+UpdatedAt=07.01.2025 10:32:37 +00:00
+
+### ARTICLE00_SUBJECT
+Re: Request for Copyright Removal and Documentation Modification
+
+### ARTICLE00_BODY
+<p> </p><div>Hi Thomas,</div><div>I wish you all the best for the new year 2025 and hope that you and your families have a blessed year filled with good luck and health!</div><div>Thank you again for the time and effort you put into helping us test our solution in your lab and the great time we spent with you!</div><div> </div><div>We need to remove the copyright notice in the About Menu of EC-Engineer.</div><div> <img style="max-width:100%;max-width: 999px;" src="/api/v1/ticket_attachment/9612/54606/226168?view=inline">
+</div><div>I would need an explicit permission to do this. As I'm a developer and not a legal expert I would like to have the explicit permission from you to take this out of the tool. Furthermore, we would need to modify the pdf documentation that accompanies the tool, so that we have the images changed and also mentions of Acontis and Acontis copyright removed from this document.</div><div> </div><div>As I'm also tasked to do changes to the color scheme and I need to use some Infragistics Theme that approaches the color scheme that is used by Schneider. Schneider is not using Infragistics Controls so that the branding system in place for Schneider Tools is not suitable for changing the color scheme of EC-Engineer.</div><div>When I checked I saw that some themes are not available without the infragistics licence and I would like to ask you to provide me with a theme for EC-Engineer that has green elements in it, for example the ForestGreen theme might work, or some other simple theme that can be changed easily. I would then integrate it myself into the solution.</div><div> </div><div>Here is how the Schneider tool looks:</div><div> <img style="max-width:100%;max-width: 999px;" src="/api/v1/ticket_attachment/9612/54606/226167?view=inline">
+</div><div>I would be very grateful if you could send me please an Infragistics Theme that can be adapted easily and fits ideally already into this green color scheme.</div><div>Thank you so much in advance for your help!</div><div>Best regards,</div><div>Rainer</div><div> </div><div> <br> <p>General<br> </p>
+<hr> <div dir="ltr">
+<span><b>From:</b> Thomas Waggershauser &lt;t.waggershauser@acontis.com&gt; <br> <b>Sent:</b> Thursday, December 19, 2024 11:02 AM <br> <b>To:</b> Imen BEN-HASSEN &lt;imen.benhassen@non.se.com&gt;; 'Cyril Eyssautier via EC-Support' &lt;ecsupport@acontis.com&gt; <br> <b>Cc:</b> 'Elie PEETERS' &lt;epeeters@isit.fr&gt;; Abuzr Elfadul &lt;abuzr.elfadul@non.se.com&gt;; Rainer HERRMANN &lt;rainer.herrmann@non.se.com&gt; <br> <b>Subject:</b> AW: Request for Copyright Removal and Documentation Modification</span> <div> </div>
+</div>
+<p><span style="color: rgb(255, 0, 0);">[External email: Use caution with links and attachments]</span></p>
+<hr> <p> </p>
+<p>Salut Imen,</p>
+<p> </p>
+<p>Can you provide some more details – what exactly you want to change?</p>
+<p>As the delivered software is acontis copyright, not all changes are possible (Many are but not all – so more information would be helpful).</p>
+<p>Please also note that we shipped immediately to help you with the development – but Schneider does still need to sign the SLA (I did not get an update since the last meeting with Schneider 2 weeks ago).<br> The so-far not signed SLA does limit this also of course (withouth signed SLA it is a “no” – but we of course need enable you to continue work on the product with the target of having the SLA signed.</p>
+<p>Mit freundlichen Grüßen / best regards,<br> Thomas Waggershauser</p>
+<p> </p>
+<div> <span class="js-signatureMarker"></span><p><b>Von:</b> Imen BEN-HASSEN &lt;imen.benhassen@non.se.com&gt; <br> <b>Gesendet:</b> Donnerstag, 19. Dezember 2024 09:39 <br> <b>An:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br> <b>Cc:</b> Thomas Waggershauser &lt;t.waggershauser@acontis.com&gt;; Elie PEETERS &lt;epeeters@isit.fr&gt;; Abuzr Elfadul &lt;abuzr.elfadul@non.se.com&gt;; Rainer HERRMANN &lt;rainer.herrmann@non.se.com&gt; <br> <b>Betreff:</b> Request for Copyright Removal and Documentation Modification</p>
+</div>
+<p> </p>
+<p>Hi Cyril and Thomas,</p>
+<p>I hope you’re doing well.</p>
+<p>I would like to request the removal of the Acontis copyright from the EC engineer. Additionally, could you please modify the documentation base for the EC engineer to align with SE's needs? We would appreciate it if this could be done as soon as possible.</p>
+<p>Thank you for your attention to this matter. Please let me know if you need any further information.</p>
+<p><span>Best regards, <br> Imen</span></p>
+<p> </p>
+<p><span style=" color: rgb(98, 100, 105);">General</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=54626
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=07.01.2025 13:22:50 +00:00
+UpdatedAt=07.01.2025 13:22:50 +00:00
+
+### ARTICLE01_BODY
+Directly answered:<br><br><p>Salut
+Rainer,</p>
+
+<p> </p>
+
+<p>Happy
+new year to you and all colleagues at Akkodis &amp; Schneider.</p>
+
+<p> </p>
+
+<p>I
+needed to check with our GMs here – as I was not sure about that topic. So far
+this never has been changed, as the copyright does not change.</p>
+
+<p>What
+I can imagine however, is to change it to something like</p>
+
+<p> </p>
+
+<p>“©
+Schneider Electric</p>
+
+<p>Components
+© acontis technologies”</p>
+
+<p> </p>
+
+<p>(Instead
+of components “portions” or something else would also work.)</p>
+
+<p> </p>
+
+<p>But
+as a first step we need to get the SLA done – I received a proposal from
+Virgine Ajdenbaum on Dec 20 (when I was already out of the office) – so I need
+to get this checked, if this can be a basis or if there’s additional discussion
+needed).</p>
+
+<p> </p>
+
+<p>Mit freundlichen Grüßen / best regards,<br>
+Thomas Waggershauser</p>

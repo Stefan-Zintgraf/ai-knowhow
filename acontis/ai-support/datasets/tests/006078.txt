@@ -1,0 +1,175 @@
+### HEADER
+Id=6078
+Link=http://at-zammad/#ticket/zoom/6078
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies GmbH (ID=399, Number=1000, Country=DE)
+Commission=JSLT, Generic (ID=477, Number=477)
+Number=706078
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=y.kawabe@acontis.com (ID=95, FirstName=Y, LastName=Kawabe)
+CreatedBy=y.kawabe@acontis.com (ID=95, FirstName=Y, LastName=Kawabe)
+Type=
+TimeUnit=
+CreatedAt=01.08.2023 12:22:40 +00:00
+UpdatedAt=04.08.2023 06:06:13 +00:00
+CloseAt=04.08.2023 06:06:13 +00:00
+ArticlesCount=2
+
+### TITLE
+Request for EC-Inspector Non-Internet Evaluation version from Denso (Inabe)  ----- Q  Jepico
+
+### ARTICLE00_HEADER
+Id=32498
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.08.2023 12:22:40 +00:00
+UpdatedAt=01.08.2023 12:22:41 +00:00
+
+### ARTICLE00_SUBJECT
+Request for EC-Inspector Non-Internet Evaluation version from Denso (Inabe)  ----- Q  Jepico
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">
+<p>Hi Ronnie,</p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">The other day, Dome &amp; Jepico had Web meeting with Denso (Inabe).</span></p>
+<p><span lang="EN-US">Though their policy of solution is PLC type, not PC base, they have an interest of EC-Inspector.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">However, their environment is required Non-Internet version since proxy server is always required.</span></p>
+<p><span lang="EN-US">As a result, the evaluation version we sent became as attached screenshot.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Could you please send the Non-Internet version for Denso, if any?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">For the reference, their use case is as below:</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">-Application:</span></p>
+<p><span lang="EN-US">Engine Manufacturing Equipment</span></p>
+<p><span lang="EN-US"><a href="https://www.denso.com/global/en/business/products-and-services/mobility/powertrain/gasoline/" rel="nofollow noreferrer noopener" target="_blank">https://www.denso.com/global/en/business/products-and-services/mobility/powertrain/gasoline/</a></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Platform:</span></p>
+<p><span lang="EN-US">PLC (Omron CJ series which has Omron M-Device (since it is older PLC))</span>$B@\B3%9%l!50$BBf(B<span lang="EN-US"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"># of Sub Devices to be connected:</span></p>
+<p><span lang="EN-US">50 devices</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Schedule:</span></p>
+<p><span lang="EN-US">August 2023, Evaluation of EC-Inspector</span></p>
+<p><span lang="EN-US">Sep. 2023, Getting an internal approval to purchase, and placing the PO</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">With best regards,</span></p>
+<p><span lang="EN-US">Benny</span></p>
+<p><b><i><span lang="EN-US">~~~~~~~~~~~~~~~~~~~~~~~~~~</span></i></b></p>
+<p><b><i><span lang="EN-US">acontis technologies Japan</span></i></b></p>
+<p><b><i><span lang="EN-US">Yasuhiro "Benny" Kawabe</span></i></b></p>
+<p><b><i><span lang="EN-US">Phone: +81 (0) 90-7226-0120</span></i></b></p>
+<p><b><i><span lang="EN-US">email: <a href="mailto:y.kawabe@acontis.com"><span style="color:blue;">y.kawabe@acontis.com</span></a></span></i></b></p>
+<p><b><i><span lang="EN-US">~~~~~~~~~~~~~~~~~~~~~~~~~~</span></i></b></p>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=32502
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.08.2023 13:43:10 +00:00
+UpdatedAt=01.08.2023 13:43:13 +00:00
+
+### ARTICLE01_SUBJECT
+Request for EC-Inspector Non-Internet Evaluation version from Denso (Inabe)  ----- Q  Jepico
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>attached you can find the EcOem.dat file. Please copy this file into the installation directory of EC-Inspector. Afterwards it should run without internet connection.<br><div><br></div>
+<div>Best Regards,</div>
+<div>Martin</div>
+<div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, August 1, 2023 at 2:22:40 PM, Y Kawabe wrote:<br><br><div>
+<p><span lang="EN-US">
+</span></p>
+<p>Hi Ronnie,</p>
+<p></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">The other day, Dome &amp; Jepico had Web meeting with Denso (Inabe).</span></p>
+<p><span lang="EN-US">Though their policy of solution is PLC type, not PC base, they have an interest of EC-Inspector.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">However, their environment is required Non-Internet version since proxy server is always required.</span></p>
+<p><span lang="EN-US">As a result, the evaluation version we sent became as attached screenshot.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Could you please send the Non-Internet version for Denso, if any?</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">For the reference, their use case is as below:</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">-Application:</span></p>
+<p><span lang="EN-US">Engine Manufacturing Equipment</span></p>
+<p><span lang="EN-US"><a href="https://www.denso.com/global/en/business/products-and-services/mobility/powertrain/gasoline/" rel="nofollow noreferrer noopener" target="_blank">https://www.denso.com/global/en/business/products-and-services/mobility/powertrain/gasoline/</a></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Platform:</span></p>
+<p><span lang="EN-US">PLC (Omron CJ series which has Omron M-Device (since it is older PLC))</span>$B@\B3%9%l!50$BBf(B<span lang="EN-US"></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"># of Sub Devices to be connected:</span></p>
+<p><span lang="EN-US">50 devices</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Schedule:</span></p>
+<p><span lang="EN-US">August 2023, Evaluation of EC-Inspector</span></p>
+<p><span lang="EN-US">Sep. 2023, Getting an internal approval to purchase, and placing the PO</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">With best regards,</span></p>
+<p><span lang="EN-US">Benny</span></p>
+<p><b><i><span lang="EN-US">~~~~~~~~~~~~~~~~~~~~~~~~~~</span></i></b></p>
+<p><b><i><span lang="EN-US">acontis technologies Japan</span></i></b></p>
+<p><b><i><span lang="EN-US">Yasuhiro "Benny" Kawabe</span></i></b></p>
+<p><b><i><span lang="EN-US">Phone: +81 (0) 90-7226-0120</span></i></b></p>
+<p><b><i><span lang="EN-US">email: <a href="mailto:y.kawabe@acontis.com"><span style="color:blue;">y.kawabe@acontis.com</span></a></span></i></b></p>
+<p><b><i><span lang="EN-US">~~~~~~~~~~~~~~~~~~~~~~~~~~</span></i></b></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

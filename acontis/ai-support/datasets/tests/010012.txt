@@ -1,0 +1,74 @@
+### HEADER
+Id=10012
+Link=http://at-zammad/#ticket/zoom/10012
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Demaurex (ID=692, Number=0, Country=CH)
+Commission=Demaurex, Gemini (ID=773, Number=773)
+Number=7010012
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=jean-marc.herve@demaurex.com (ID=1887, FirstName=Herve, LastName=Jean-Marc)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=21.02.2025 10:12:35 +00:00
+UpdatedAt=28.02.2025 07:14:06 +00:00
+CloseAt=28.02.2025 07:14:06 +00:00
+ArticlesCount=2
+
+### TITLE
+Acontis software update request from Demaurex SA
+
+### ARTICLE00_HEADER
+Id=57237
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.02.2025 10:12:35 +00:00
+UpdatedAt=21.02.2025 10:12:38 +00:00
+
+### ARTICLE00_SUBJECT
+Acontis software update request from Demaurex SA
+
+### ARTICLE00_BODY
+<p>Dear Mr./Ms. HERVE,</p><p>thank you for your registration.<br><br></p><p>First Name: Jean-Marc<br>Last Name: HERVE<br>Company: Demaurex SA<br><span>Commission Number: <br></span><span>Country: Switzerland<br></span><span>City: Vufflens La Ville<br></span><span>E-Mail: jean-marc.herve@demaurex.com<br></span>Product: <span>EC-Master,EC-Engineer,LxWin<br></span>Update Type: Update (binary compatible)<br><span>Operating System Version: Windows 10<br></span>Additional information: Actual version EC-Engineer : V3.9.8 LxWin : V8.3.01.02 EC-Master : V3.2.2.03</p><p><img src="/api/v1/ticket_attachment/10012/57237/237702?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/10012/57237/237701?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=57247
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.02.2025 12:58:22 +00:00
+UpdatedAt=21.02.2025 12:58:23 +00:00
+
+### ARTICLE01_SUBJECT
+Acontis software update request from Demaurex SA
+
+### ARTICLE01_BODY
+<p>Dear Customer,</p><p><br></p><p>Please find your new software version below:</p><p><br></p><p><a href="https://downloads.acontis.com/2025/D-F/Demaurex_(40685)(CH)/EC-Master_Linux_(RTHV)_x86_64Bit/3.2.2.04/EC-Master-V3.2.2.04-EC-WinRT-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/D-F/Demaurex_(40685)(CH)/EC-Master_Linux_(RTHV)_x86_64Bit/3.2.2.04/EC-Master-V3.2.2.04-EC-WinRT-Linux-x86_64Bit-SDK_Protected.tar.gz</a></p><p><br></p><div><a href="https://downloads.acontis.com/2025/D-F/Demaurex_(40685)(CH)/EC-Engineer/4.0.5/EC-Engineer_Dongle_V4.0.5.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/D-F/Demaurex_(40685)(CH)/EC-Engineer/4.0.5/EC-Engineer_Dongle_V4.0.5.zip</a></div><div><a href="https://downloads.acontis.com/2025/D-F/Demaurex_(40685)(CH)/EC-Engineer/4.0.5/EC-Engineer_OEM_V4.0.5.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/D-F/Demaurex_(40685)(CH)/EC-Engineer/4.0.5/EC-Engineer_OEM_V4.0.5.zip</a></div><div><br></div><div>For LxWin V8.3.01.02 is the latest one which you already have. </div><p><br></p><p>Password: ECM88250</p><p><br></p><p><br></p>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div><br></div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Friday, February 21, 2025 at 11:12:35 AM, sales acontis wrote:<br><br><p>Dear Mr./Ms. HERVE,</p>
+<p>thank you for your registration.<br><br></p>
+<p>First Name: Jean-Marc<br>Last Name: HERVE<br>Company: Demaurex SA<br><span>Commission Number: <br></span><span>Country: Switzerland<br></span><span>City: Vufflens La Ville<br></span><span>E-Mail: jean-marc.herve@demaurex.com<br></span>Product: <span>EC-Master,EC-Engineer,LxWin<br></span>Update Type: Update (binary compatible)<br><span>Operating System Version: Windows 10<br></span>Additional information: Actual version EC-Engineer : V3.9.8 LxWin : V8.3.01.02 EC-Master : V3.2.2.03</p>
+<p><img src="/api/v1/ticket_attachment/10012/57247/237753?view=inline" alt="" style="max-width:100%;max-width:100%;width:163px;max-height:85px;"></p>
+<p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/10012/57247/237754?view=inline" style="max-width:100%;max-width:100%;width:22px;max-height:22px;"></a></span></p>
+<br>
+</blockquote></div><div><br></div><p><br></p><br><br>

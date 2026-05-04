@@ -1,0 +1,116 @@
+### HEADER
+Id=9045
+Link=http://at-zammad/#ticket/zoom/9045
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=intrinsic (ID=597, Number=0, Country=DE)
+Commission=X (Intrinsic), Real-time robot motion control (ID=676, Number=676)
+Number=709045
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=sesc@intrinsic.ai (ID=1649, FirstName=Sebastian, LastName=Schneider)
+CreatedBy=sesc@intrinsic.ai (ID=1649, FirstName=Sebastian, LastName=Schneider)
+Type=
+TimeUnit=
+CreatedAt=10.10.2024 16:31:49 +00:00
+UpdatedAt=18.10.2024 09:42:03 +00:00
+CloseAt=18.10.2024 09:42:03 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-Master timeout when trying to go from PreOp to SafeOp
+
+### ARTICLE00_HEADER
+Id=51191
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.10.2024 16:31:50 +00:00
+UpdatedAt=10.10.2024 16:31:53 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Master timeout when trying to go from PreOp to SafeOp
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi,<div> </div>
+<div>I'm running into an issue with a new setup. The setup consists of a 3 port junction with 3 CiA402 drives at the two output ports, thus a total of 7 devices. I've configured DC, which seems to work, but every approx. 3min and 30 to 50 seconds the drives make a rattling noise for a few seconds. We believe this might be a timing issue, i.e. the reference clock (1st drive) and our master clock drifting away. So I wanted to enable DCM (BUS_SHIFT) to synchronize the reference clock to our master. However, during initialization of the master, our implementation reached Init, it then requires ~900 cycles to reach PreOp and then I get a timeout when trying to reach SafeOp. I've already set the transition timeout to 15 seconds, but I still get the timeout.<br><br>Is there anything I can do to fix this? I've already tried setting the bushift's `dwInSyncLimit` to half the cycle time, as well as setting `bUseDcLoopCtlStdValues` to `EC_TRUE` without success. The cycle time of the system is 8ms.</div>
+<div> </div>
+<div>Any pointers would be appreciated.</div>
+<div> </div>
+<div>Thanks,</div>
+<div> </div>
+<div>Sebastian<br><div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr">
+<table style="color:rgb(0,0,0);font-size:22px;border:0px;"><tbody><tr>
+<td style="padding:20px;"></td>
+<td style="padding:20px 0px 20px 10px;font-size:14px;">
+<b>Sebastian Schneider (he/him)</b><br>Safety Software Engineer<br><a href="mailto:sesc@intrinsic.ai">sesc@intrinsic.ai</a> <span style="color:rgb(209,209,209);">|</span> <a href="http://intrinsic.ai" rel="nofollow noreferrer noopener" target="_blank">intrinsic.ai</a><br>
+</td>
+</tr></tbody></table>
+<p>Intrinsic Innovation GmbH, ABC-Straße 19, 20354 Hamburg</p>
+<p>Geschäftsführer: Jennifer R. Wall, Brett E. Koons<br>Registergericht und -nummer: Hamburg, HRB 161662<br>Sitz der Gesellschaft: Hamburg</p>
+<p>Diese E-Mail ist vertraulich. Falls sie diese fälschlicherweise erhalten haben sollten, leiten Sie diese bitte nicht an jemand anderes weiter, löschen Sie alle Kopien und Anhänge davon und lassen Sie mich bitte wissen, dass die E-Mail an die falsche Person gesendet wurde.</p>
+<p>This email is confidential. If you received this communication by mistake, please don't forward it to anyone else, please erase all copies and attachments, and please let me know that it has gone to the wrong person.</p>
+</div></div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=51200
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.10.2024 07:24:48 +00:00
+UpdatedAt=11.10.2024 07:24:52 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Master timeout when trying to go from PreOp to SafeOp
+
+### ARTICLE01_BODY
+Hi Sebastian,<div><br></div><div>you can run our unmodified EcMasterDemo for reference, passing the matching ENI, CycleTime and DCM mode to check if its parameters would successfully set the network to OP.</div><div>If not, you can generate the dcm log by passing -v 3. The column CtlErr show the DCM error (difference between act and set val) in every cycle. </div><div>You can send me the log files for investigation.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, October 10, 2024 at 6:31:50 PM, Sebastian Schneider wrote:<br><br><div dir="ltr">Hi,<div> </div>
+<div>I'm running into an issue with a new setup. The setup consists of a 3 port junction with 3 CiA402 drives at the two output ports, thus a total of 7 devices. I've configured DC, which seems to work, but every approx. 3min and 30 to 50 seconds the drives make a rattling noise for a few seconds. We believe this might be a timing issue, i.e. the reference clock (1st drive) and our master clock drifting away. So I wanted to enable DCM (BUS_SHIFT) to synchronize the reference clock to our master. However, during initialization of the master, our implementation reached Init, it then requires ~900 cycles to reach PreOp and then I get a timeout when trying to reach SafeOp. I've already set the transition timeout to 15 seconds, but I still get the timeout.<br><br>Is there anything I can do to fix this? I've already tried setting the bushift's `dwInSyncLimit` to half the cycle time, as well as setting `bUseDcLoopCtlStdValues` to `EC_TRUE` without success. The cycle time of the system is 8ms.</div>
+<div> </div>
+<div>Any pointers would be appreciated.</div>
+<div> </div>
+<div>Thanks,</div>
+<div> </div>
+<div>Sebastian<br><div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr">
+<table style="color:rgb(0,0,0);font-size:22px;border:0px;"><tbody><tr>
+<td style="padding:20px;"></td>
+<td style="padding:20px 0px 20px 10px;font-size:14px;">
+<b>Sebastian Schneider (he/him)</b><br>Safety Software Engineer<br><a href="mailto:sesc@intrinsic.ai">sesc@intrinsic.ai</a> <span style="color:rgb(209,209,209);">|</span> <a href="http://intrinsic.ai" rel="nofollow noreferrer noopener" target="_blank">intrinsic.ai</a><br>
+</td>
+</tr></tbody></table>
+<p>Intrinsic Innovation GmbH, ABC-Straße 19, 20354 Hamburg</p>
+<p>Geschäftsführer: Jennifer R. Wall, Brett E. Koons<br>Registergericht und -nummer: Hamburg, HRB 161662<br>Sitz der Gesellschaft: Hamburg</p>
+<p>Diese E-Mail ist vertraulich. Falls sie diese fälschlicherweise erhalten haben sollten, leiten Sie diese bitte nicht an jemand anderes weiter, löschen Sie alle Kopien und Anhänge davon und lassen Sie mich bitte wissen, dass die E-Mail an die falsche Person gesendet wurde.</p>
+<p>This email is confidential. If you received this communication by mistake, please don't forward it to anyone else, please erase all copies and attachments, and please let me know that it has gone to the wrong person.</p>
+</div></div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,119 @@
+### HEADER
+Id=1142
+Link=http://at-zammad/#ticket/zoom/1142
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=Omron, PLC (ID=282, Number=282)
+Number=701142
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=atul.govande@omron.com (ID=137, FirstName=Atul, LastName=Govande)
+CreatedBy=atul.govande@omron.com (ID=137, FirstName=Atul, LastName=Govande)
+Type=
+TimeUnit=
+CreatedAt=30.07.2021 16:27:18 +00:00
+UpdatedAt=09.08.2021 06:03:52 +00:00
+CloseAt=09.08.2021 06:03:52 +00:00
+ArticlesCount=2
+
+### TITLE
+Network mismatch analyzer ...
+
+### ARTICLE00_HEADER
+Id=6278
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.07.2021 16:27:18 +00:00
+UpdatedAt=30.07.2021 16:27:20 +00:00
+
+### ARTICLE00_SUBJECT
+Network mismatch analyzer ...
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Martin,</p>
+<p>I hope you have great vacation!</p>
+<p>I have question on SDK, though I can look at the code, but this will easier J</p>
+<p>Does the SDK support Network mismatch analyzer ? I want to add this in our tool as more and more people are complaining on the EtherCAT issue and 90% of them has to do with mismatch or some sort of esi error.</p>
+<p> </p>
+<div>
+<p>Best Regards,</p>
+<p> <img style="max-width:100%;width:4.5104in;max-height:.4687in;width:433px;max-height:45px;" src="/api/v1/ticket_attachment/1142/6278/22971?view=inline" alt="signature_1559069281"></p>
+<p>Atul Govande</p>
+<p>Software Engineering Manager</p>
+<p>Direct: 818 717 5621 | <u>atul.govande@omron.com</u></p>
+<p> </p>
+<p>Omron Automation Americas</p>
+<p>21314 Lassen Street, Chatsworth CA 91311</p>
+<p><a href="https://bit.ly/3dz9EH3" title="https://automation.omron.com/en/us/" rel="nofollow noreferrer noopener" target="_blank">automation.omron.com</a></p>
+<p> </p>
+<p><a href="https://bit.ly/3szOY5T" title="https://www.linkedin.com/company/omron-automation-americas/" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;width:.3229in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/1142/6278/22972?view=inline" alt="signature_1593825543"></a><a href="https://bit.ly/3vh2lKb" rel="nofollow noreferrer noopener" title="https://bit.ly/3vh2lKb" target="_blank"><img border="0" style="max-width:100%;width:.25in;max-height:.25in;width:24px;max-height:24px;" src="/api/v1/ticket_attachment/1142/6278/22973?view=inline" alt="signature_48633699"></a><a href="https://bit.ly/3n2AOt1" title="https://www.instagram.com/omronautomation" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;width:.3229in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/1142/6278/22974?view=inline" alt="signature_1432883732"></a><a href="https://bit.ly/3ehqxF3" title="https://twitter.com/OmronAutomation" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;width:.2916in;max-height:.25in;width:28px;max-height:24px;" src="/api/v1/ticket_attachment/1142/6278/22975?view=inline" alt="signature_1894500672"></a><a href="https://bit.ly/3n3lgoL" title="http://www.youtube.com/OmronAutomationTech" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;width:.3645in;max-height:.25in;width:35px;max-height:24px;" src="/api/v1/ticket_attachment/1142/6278/22976?view=inline" alt="signature_1099395179"></a></p>
+</div>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=6315
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.08.2021 10:43:09 +00:00
+UpdatedAt=02.08.2021 10:43:14 +00:00
+
+### ARTICLE01_SUBJECT
+Network mismatch analyzer ...
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes it is supported from SDK. Open "EtherCAT Dialog" from sample code, switch into diagnosis mode and you can open the Network Mismatch Analyzer from context menu of the master:</div><div><br></div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/1142/6315/23045?view=inline"><br>
+</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Martin Gaenzer </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, July 30, 2021, 6:27:18 PM, Atul Govande wrote:<br><br><div>
+<p>Hi Martin,</p>
+<p>I hope you have great vacation!</p>
+<p>I have question on SDK, though I can look at the code, but this will easier J</p>
+<p>Does the SDK support Network mismatch analyzer ? I want to add this in our tool as more and more people are complaining on the EtherCAT issue and 90% of them has to do with mismatch or some sort of esi error.</p>
+<p> </p>
+<div>
+<p>Best Regards,</p>
+<p> <img style="max-width:100%;max-width:100%;width:4.5104in;max-height:.4687in;width:433px;max-height:45px;" src="/api/v1/ticket_attachment/1142/6315/23046?view=inline" alt="signature_1559069281"></p>
+<p>Atul Govande</p>
+<p>Software Engineering Manager</p>
+<p>Direct: 818 717 5621 | <u>atul.govande@omron.com</u></p>
+<p> </p>
+<p>Omron Automation Americas</p>
+<p>21314 Lassen Street, Chatsworth CA 91311</p>
+<p><a href="https://bit.ly/3dz9EH3" title="https://automation.omron.com/en/us/" rel="nofollow noreferrer noopener" target="_blank">automation.omron.com</a></p>
+<p> </p>
+<p><a href="https://bit.ly/3szOY5T" title="https://www.linkedin.com/company/omron-automation-americas/" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.3229in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/1142/6315/23047?view=inline" alt="signature_1593825543"></a><a href="https://bit.ly/3vh2lKb" rel="nofollow noreferrer noopener" title="https://bit.ly/3vh2lKb" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.25in;max-height:.25in;width:24px;max-height:24px;" src="/api/v1/ticket_attachment/1142/6315/23048?view=inline" alt="signature_48633699"></a><a href="https://bit.ly/3n2AOt1" title="https://www.instagram.com/omronautomation" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.3229in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/1142/6315/23049?view=inline" alt="signature_1432883732"></a><a href="https://bit.ly/3ehqxF3" title="https://twitter.com/OmronAutomation" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.2916in;max-height:.25in;width:28px;max-height:24px;" src="/api/v1/ticket_attachment/1142/6315/23050?view=inline" alt="signature_1894500672"></a><a href="https://bit.ly/3n3lgoL" title="http://www.youtube.com/OmronAutomationTech" rel="nofollow noreferrer noopener" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.3645in;max-height:.25in;width:35px;max-height:24px;" src="/api/v1/ticket_attachment/1142/6315/23051?view=inline" alt="signature_1099395179"></a></p>
+</div>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

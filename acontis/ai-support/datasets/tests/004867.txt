@@ -1,0 +1,75 @@
+### HEADER
+Id=4867
+Link=http://at-zammad/#ticket/zoom/4867
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Jumo GmbH & Co.KG (ID=126, Number=54502, Country=DE)
+Commission=Jumo, Registriergeräte, Linux (ID=141, Number=141)
+Number=704867
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=michael.mueller@jumo.net (ID=1441, FirstName=Michael, LastName=Mueller)
+CreatedBy=michael.mueller@jumo.net (ID=1441, FirstName=Michael, LastName=Mueller)
+Type=
+TimeUnit=
+CreatedAt=06.02.2023 12:38:41 +00:00
+UpdatedAt=17.02.2023 07:47:26 +00:00
+CloseAt=17.02.2023 07:47:26 +00:00
+ArticlesCount=2
+
+### TITLE
+EcMaster => Logging in Datei?
+
+### ARTICLE00_HEADER
+Id=25697
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.02.2023 12:38:41 +00:00
+UpdatedAt=06.02.2023 12:38:44 +00:00
+
+### ARTICLE00_SUBJECT
+EcMaster => Logging in Datei?
+
+### ARTICLE00_BODY
+Sehr geehrtes Supportteam,<br><br>wie kann ich beim ECMaster unter Windows das Logging aktivieren bzw eine Datei auf die Platte schreiben?<br> Gibt es eine Voreinstellung? <br>LogLevel &gt;<span style="color:#800080;">EC_LOG_LEVEL_SILENT</span><br><span style="color:#800080;">Was ist EC_LOG_LEVEL_VERBOSE?</span><br><br><span style="color:#800080;">Danke</span><br><br><span>Mit freundlichen Grüßen<br><br>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Software - Desktop Anwendungen<br><br>i.A. Dipl.-Ing.(FH) Michael Müller<br><br>Tel: +49 661 6003-9328<br>Fax: +49 661 6003-889328<br>Adresse: Moritz-Juchheim-Str. 1<br> 36039 Fulda, Germany<br>E-Mail: </span><a href="mailto:Michael.Mueller@jumo.net">mailto:Michael.Mueller@jumo.net</a><span><br>Internet: </span><a href="http://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">http://www.jumo.net</a><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dimitrios Charisiadis, Dr. Steffen Hoßfeld<br> Ust.-Id.-Nr.: DE 112411234</p>
+
+### ARTICLE01_HEADER
+Id=25703
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.02.2023 14:07:50 +00:00
+UpdatedAt=06.02.2023 14:07:53 +00:00
+
+### ARTICLE01_SUBJECT
+EcMaster => Logging in Datei?
+
+### ARTICLE01_BODY
+Hallo Herr Müller,<div><br></div><div>es gibt keine Voreinstellungen für das Logging. Sie müssen eine Callback registrieren wie es in der Demo auch gezeigt wird. Wichtig ist dabei, dass die Callback direkt aus dem Kontext aufgerufen wird und Sie dürfen nicht direkt printf oder fwrite aufrufen. Die Nachrichten müssen gequeued werden und später verarbeitet. Sie können sich unsere Beispiel Implementierung EcLogging.cpp anschauen oder zum Beispiel  spdlog (<a href="https://github.com/gabime/spdlog" title="https://github.com/gabime/spdlog" rel="nofollow noreferrer noopener" target="_blank">https://github.com/gabime/spdlog</a>) <span>einsetzen.</span>
+</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, February 6, 2023 at 1:38:41 PM, Michael Mueller wrote:<br><br>Sehr geehrtes Supportteam,<br><br>wie kann ich beim ECMaster unter Windows das Logging aktivieren bzw eine Datei auf die Platte schreiben?<br> Gibt es eine Voreinstellung? <br>LogLevel &gt;<span style="color:#800080;">EC_LOG_LEVEL_SILENT</span><br><span style="color:#800080;">Was ist EC_LOG_LEVEL_VERBOSE?</span><br><br><span style="color:#800080;">Danke</span><br><br><span>Mit freundlichen Grüßen<br><br>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Software - Desktop Anwendungen<br><br>i.A. Dipl.-Ing.(FH) Michael Müller<br><br>Tel: +49 661 6003-9328<br>Fax: +49 661 6003-889328<br>Adresse: Moritz-Juchheim-Str. 1<br> 36039 Fulda, Germany<br>E-Mail: </span><a href="mailto:Michael.Mueller@jumo.net">mailto:Michael.Mueller@jumo.net</a><span><br>Internet: </span><a href="http://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">http://www.jumo.net</a><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dimitrios Charisiadis, Dr. Steffen Hoßfeld<br> Ust.-Id.-Nr.: DE 112411234</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,182 @@
+### HEADER
+Id=10149
+Link=http://at-zammad/#ticket/zoom/10149
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=none
+Number=7010149
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=10.03.2025 16:55:13 +00:00
+UpdatedAt=11.03.2025 15:46:05 +00:00
+CloseAt=11.03.2025 15:46:05 +00:00
+ArticlesCount=5
+
+### TITLE
+Line Crossed Errors
+
+### ARTICLE00_HEADER
+Id=58199
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.03.2025 16:55:13 +00:00
+UpdatedAt=10.03.2025 16:55:13 +00:00
+
+### ARTICLE00_SUBJECT
+Line Crossed Errors
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>A customer has a device that has something wired incorrectly because when they are connected to the IN port, it is not responsive, and when on the OUT port, EC-Engineer complains about the line crossed issue. They say that in TwinCAT they can connect to the OUT port, receive no line crossed error, and communicate with the device. So they are looking for a way to connect on the OUT port with EC-Engineer/EC-Master and still read values from the drive.</div><div> </div><div>1. Is there a way they can suppress/ignore the line crossed error and continue?</div><div> </div><div>2. Do you know why TwinCAT wouldn’t report this line-crossed error like EC-Engineer does?<br><div>
+<br>/Jon </div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=58225
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.03.2025 10:00:15 +00:00
+UpdatedAt=11.03.2025 10:00:17 +00:00
+
+### ARTICLE01_SUBJECT
+Line Crossed Errors
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>which customer is it? Do they have EC-Master?<br><div><br></div>
+<div>1. Yes with EC-Master it is possible via an IO control:</div>
+<div><span>EC_T_BOOL lineCrossedError = EC_FALSE;</span></div>
+<div>
+<div>dwRes = ecatIoCtl(EC_IOCTL_SB_SET_ERROR_ON_CROSSED_LINES, &amp;lineCrossedError, sizeof(EC_T_BOOL), EC_NULL, 0, EC_NULL);</div>
+<div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api_busscan.html#emiocontrol-ec-ioctl-sb-set-error-on-crossed-lines" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api_busscan.html#emiocontrol-ec-ioctl-sb-set-error-on-crossed-lines" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api_busscan.html#emiocontrol-ec-ioctl-sb-set-error-on-crossed-lines</a></div>
+<div>They can deactivate reporting this error in the their EC-Master instance and connect EC-Engineer via RAS.</div>
+<div><br></div>
+<div>2. Maybe Beckhoff has a different default. Our default is to report this issue. EC-Engineer has a Line Crossed Analyzer. To us it is important to detected cabling issues. As you might have a different topology than you expect.</div>
+<div><div>"\\at-srv-2\Projekte\Files\EC\EC-Master\Docs\Schulung\Vorlagen\ETG-EtherCAT-Diagnostics\2020 BIG EtherCAT Diagnostics and Troubleshooting combined.pptx" slide 14.</div></div>
+<div><br></div>
+<div>Best regards,</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, March 10, 2025 at 5:55:13 PM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>A customer has a device that has something wired incorrectly because when they are connected to the IN port, it is not responsive, and when on the OUT port, EC-Engineer complains about the line crossed issue. They say that in TwinCAT they can connect to the OUT port, receive no line crossed error, and communicate with the device. So they are looking for a way to connect on the OUT port with EC-Engineer/EC-Master and still read values from the drive.</div>
+<div> </div>
+<div>1. Is there a way they can suppress/ignore the line crossed error and continue?</div>
+<div> </div>
+<div>2. Do you know why TwinCAT wouldn’t report this line-crossed error like EC-Engineer does?<br><div>
+<br>/Jon </div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=58228
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=11.03.2025 10:25:58 +00:00
+UpdatedAt=11.03.2025 10:25:58 +00:00
+
+### ARTICLE02_BODY
+@Timo: Wenn der erste LineCrossed kommt und er probiert es direkt nochmal mit dem Engineer, kommen wir damit normal auch hoch und er kann Werte lesen. Er muss nur nochmal auf Diag
+
+### ARTICLE03_HEADER
+Id=58229
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=11.03.2025 10:28:34 +00:00
+UpdatedAt=11.03.2025 10:28:34 +00:00
+
+### ARTICLE03_BODY
+@Jon: See comment Kai: Translates to: <span>If the first LineCrossed comes and he tries it again directly with the Engineer, we can also come up normally and he can read values. He just has to go back to Diag.</span>
+
+### ARTICLE04_HEADER
+Id=58241
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.03.2025 15:42:57 +00:00
+UpdatedAt=11.03.2025 15:42:57 +00:00
+
+### ARTICLE04_SUBJECT
+Re: Line Crossed Errors [Ticket#7010149]
+
+### ARTICLE04_BODY
+Hi Timo,<div> </div><div>This is for American Rheinmetall. Yes he has EC-Master for Linux currently. I will let them know about the possibilities with EC-Master and directly with EC-Engineer, thanks.<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Mar 11, 2025, at 6:00 AM, Timo Nußbaumer via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>Hi Jon,<div> </div>
+<div>which customer is it? Do they have EC-Master?<br><div> </div>
+<div>1. Yes with EC-Master it is possible via an IO control:</div>
+<div>EC_T_BOOL lineCrossedError = EC_FALSE;</div>
+<div>
+<div>dwRes = ecatIoCtl(EC_IOCTL_SB_SET_ERROR_ON_CROSSED_LINES, &amp;lineCrossedError, sizeof(EC_T_BOOL), EC_NULL, 0, EC_NULL);</div>
+<div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api_busscan.html#emiocontrol-ec-ioctl-sb-set-error-on-crossed-lines" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api_busscan.html#emiocontrol-ec-ioctl-sb-set-error-on-crossed-lines" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api_busscan.html#emiocontrol-ec-ioctl-sb-set-error-on-crossed-lines</a></div>
+<div>They can deactivate reporting this error in the their EC-Master instance and connect EC-Engineer via RAS.</div>
+<div> </div>
+<div>2. Maybe Beckhoff has a different default. Our default is to report this issue. EC-Engineer has a Line Crossed Analyzer. To us it is important to detected cabling issues. As you might have a different topology than you expect.</div>
+<div>"\\at-srv-2\Projekte\Files\EC\EC-Master\Docs\Schulung\Vorlagen\ETG-EtherCAT-Diagnostics\2020 BIG EtherCAT Diagnostics and Troubleshooting combined.pptx" slide 14.</div>
+<div> </div>
+<div>Best regards,</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Monday, March 10, 2025 at 5:55:13 PM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>A customer has a device that has something wired incorrectly because when they are connected to the IN port, it is not responsive, and when on the OUT port, EC-Engineer complains about the line crossed issue. They say that in TwinCAT they can connect to the OUT port, receive no line crossed error, and communicate with the device. So they are looking for a way to connect on the OUT port with EC-Engineer/EC-Master and still read values from the drive.</div>
+<div> </div>
+<div>1. Is there a way they can suppress/ignore the line crossed error and continue?</div>
+<div> </div>
+<div>2. Do you know why TwinCAT wouldn’t report this line-crossed error like EC-Engineer does?<br><div>
+<br>/Jon </div>
+</div>
+</blockquote></div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

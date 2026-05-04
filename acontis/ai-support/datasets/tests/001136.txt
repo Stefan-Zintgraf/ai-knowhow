@@ -1,0 +1,133 @@
+### HEADER
+Id=1136
+Link=http://at-zammad/#ticket/zoom/1136
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Google LLC (ID=351, Number=40421, Country=US)
+Commission=Google LLC, X, Real-time robot motion control (ID=417, Number=417)
+Number=701136
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=asakaplan@google.com (ID=545, FirstName=Asa, LastName=Kaplan)
+CreatedBy=asakaplan@google.com (ID=545, FirstName=Asa, LastName=Kaplan)
+Type=
+TimeUnit=
+CreatedAt=30.07.2021 07:33:46 +00:00
+UpdatedAt=27.04.2022 06:18:11 +00:00
+CloseAt=03.08.2021 07:42:00 +00:00
+ArticlesCount=3
+
+### TITLE
+Large number of ecatCoeSdoDownloadReq?
+
+### ARTICLE00_HEADER
+Id=6248
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.07.2021 07:33:47 +00:00
+UpdatedAt=30.07.2021 07:33:47 +00:00
+
+### ARTICLE00_SUBJECT
+Large number of ecatCoeSdoDownloadReq?
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi!<div> </div>
+<div>We're trying to perform ~1000 ecatCoeSdoDownloadReq in quick succession and wondering what the best way of doing this is. I see that repeated calls should be allowed, and that it will append to existing frames if possible, but I don't see if there is an easy way to manage the mailbox queue size needed for this. If we create a new mailbox with ecatMbxTferCreate for every one of the transactions, we end up getting the "Insert mailbox error".</div>
+<div> </div>
+<div>Thanks for the help,</div>
+<div>Asa (cc: Benjamin, who might respond while I am out of office)</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=6259
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.07.2021 10:01:12 +00:00
+UpdatedAt=30.07.2021 10:01:16 +00:00
+
+### ARTICLE01_SUBJECT
+Large number of ecatCoeSdoDownloadReq?
+
+### ARTICLE01_BODY
+Hi Asa,<div><br></div><div>unfortunately, you cannot queue 1000 Sdo Transfers. There is a hard-coded limit of 20 per slave for memory usage protection. You can loop as long as the <span>ecatCoeSdoDownloadReq</span><span> returns EC_E_NOERROR, then sleep e.g. 10 cycles and retry. Please note that only 1 pending transfer per slave and mbx type is possible.</span>
+</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, July 30, 2021, 9:33:47 AM, Asa Kaplan wrote:<br><br><div dir="ltr">Hi!<div> </div>
+<div>We're trying to perform ~1000 ecatCoeSdoDownloadReq in quick succession and wondering what the best way of doing this is. I see that repeated calls should be allowed, and that it will append to existing frames if possible, but I don't see if there is an easy way to manage the mailbox queue size needed for this. If we create a new mailbox with ecatMbxTferCreate for every one of the transactions, we end up getting the "Insert mailbox error".</div>
+<div> </div>
+<div>Thanks for the help,</div>
+<div>Asa (cc: Benjamin, who might respond while I am out of office)</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=6355
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.08.2021 19:08:46 +00:00
+UpdatedAt=02.08.2021 19:08:46 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Large number of ecatCoeSdoDownloadReq? [Ticket#701136]
+
+### ARTICLE02_BODY
+<div dir="ltr">Got it, thanks Cyril!</div><br><div>
+<div dir="ltr">On Fri, Jul 30, 2021 at 3:01 AM Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; wrote:<br>
+</div>
+<blockquote> <div>Hi Asa,<div> </div>
+<div>unfortunately, you cannot queue 1000 Sdo Transfers. There is a hard-coded limit of 20 per slave for memory usage protection. You can loop as long as the ecatCoeSdoDownloadReq returns EC_E_NOERROR, then sleep e.g. 10 cycles and retry. Please note that only 1 pending transfer per slave and mbx type is possible.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Cyril<br><div> <div>____________________________________________________________________________<br> </div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </div>
+<div>Phone: <a href="http://tel:+49%20751%205603030" rel="nofollow noreferrer noopener" title="http://tel:+49%20751%205603030" target="_blank">+49 (751) 56030-30</a> </div>
+<div>eMail: ecsupport@acontis.com<br> </div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Friday, July 30, 2021, 9:33:47 AM, Asa Kaplan wrote:<br><br><div dir="ltr">Hi!<div> </div>
+<div>We're trying to perform ~1000 ecatCoeSdoDownloadReq in quick succession and wondering what the best way of doing this is. I see that repeated calls should be allowed, and that it will append to existing frames if possible, but I don't see if there is an easy way to manage the mailbox queue size needed for this. If we create a new mailbox with ecatMbxTferCreate for every one of the transactions, we end up getting the "Insert mailbox error".</div>
+<div> </div>
+<div>Thanks for the help,</div>
+<div>Asa (cc: Benjamin, who might respond while I am out of office)</div>
+</div>
+<br> </blockquote></div>
+<div> </div>
+<br><br> </div>
+</div>
+</blockquote>
+</div>

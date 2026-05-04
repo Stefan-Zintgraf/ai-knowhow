@@ -1,0 +1,88 @@
+### HEADER
+Id=183
+Link=http://at-zammad/#ticket/zoom/183
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Honeywell Intelligrated, Intell. Machine Contr. (ID=421, Number=421)
+Number=700183
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=11.03.2021 20:53:16 +00:00
+UpdatedAt=12.03.2021 08:19:34 +00:00
+CloseAt=12.03.2021 08:19:34 +00:00
+ArticlesCount=2
+
+### TITLE
+RE: Update Request from Honeywell-Intelligrated
+
+### ARTICLE00_HEADER
+Id=771
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.03.2021 20:53:17 +00:00
+UpdatedAt=11.03.2021 20:53:17 +00:00
+
+### ARTICLE00_SUBJECT
+RE: Update Request from Honeywell-Intelligrated
+
+### ARTICLE00_BODY
+<div>
+<p>Hi,</p>
+<p> </p>
+<p>We delivered V3.1.0.17 to Honeywell in October, but I didn’t see a delivery for QNX6 prepared for V3.1.1 yet. Can you build this package for them?</p>
+<p> </p>
+<p>/Jon</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p><b>From: </b>sales@acontis.com<br><b>Sent: </b>Thursday, March 11, 2021 2:20 PM<br><b>To: </b>sales@acontis.com; us-sales@acontis.com<br><b>Cc: </b>rick.kerns@honeywell.com<br><b>Subject: </b>Update Request from Honeywell-Intelligrated</p>
+<p> </p>
+</div><p>Dear Mr./Ms. Kerns,</p><p>thank you for your registration.<br><br></p><p>First Name: Richard<br> Last Name: Kerns<br> Company: Honeywell-Intelligrated<br> Country: USA<br> City: Mason<br> E-Mail: rick.kerns@honeywell.com<br> Request update for: EC-Master<br>Update Type: <br> Operating System: QNX<br> Operating Sys. Version: 6.5<br> Any Questions?: <br><br></p><p><img src="/api/v1/ticket_attachment/183/771/1753?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p>acontis technologies GmbH<br>Gartenstraße 46, 88212 Ravensburg/Germany<br> Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br> eMail: sales@acontis.comFollow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/183/771/1754?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></p>
+
+### ARTICLE01_HEADER
+Id=798
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.03.2021 08:19:34 +00:00
+UpdatedAt=12.03.2021 08:19:38 +00:00
+
+### ARTICLE01_SUBJECT
+Update Request from Honeywell-Intelligrated
+
+### ARTICLE01_BODY
+<div></div><div data-signature="true" data-signature-id="2">
+<div>
+<span>Hi Jon,</span>
+</div>
+<div><span><br></span></div>
+<div>
+<div><a href="http://downloads.acontis.com/2021/G-I/Honeywell_Intelligrated_LLC_(41027)(US)/EC-Master_w._HC/3.1.1.02/EC-Master-CCAT-V3.1.1.02-QNX6-x86_32Bit-SDK_Unrestricted.zip" title="http://downloads.acontis.com/2021/G-I/Honeywell_Intelligrated_LLC_(41027)(US)/EC-Master_w._HC/3.1.1.02/EC-Master-CCAT-V3.1.1.02-QNX6-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">http://downloads.acontis.com/2021/G-I/Honeywell_Intelligrated_LLC_(41027)(US)/EC-Master_w._HC/3.1.1.02/EC-Master-CCAT-V3.1.1.02-QNX6-x86_32Bit-SDK_Unrestricted.zip</a></div>
+<div><a href="http://downloads.acontis.com/2021/G-I/Honeywell_Intelligrated_LLC_(41027)(US)/EC-Master_w._HC/3.1.1.02/EC-Master-ClassA-AddOn-V3.1.1.02-QNX6-x86_32Bit-SDK_Unrestricted.zip" title="http://downloads.acontis.com/2021/G-I/Honeywell_Intelligrated_LLC_(41027)(US)/EC-Master_w._HC/3.1.1.02/EC-Master-ClassA-AddOn-V3.1.1.02-QNX6-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">http://downloads.acontis.com/2021/G-I/Honeywell_Intelligrated_LLC_(41027)(US)/EC-Master_w._HC/3.1.1.02/EC-Master-ClassA-AddOn-V3.1.1.02-QNX6-x86_32Bit-SDK_Unrestricted.zip</a></div>
+<div><a href="http://downloads.acontis.com/2021/G-I/Honeywell_Intelligrated_LLC_(41027)(US)/EC-Master_w._HC/3.1.1.02/EC-Master-I8254x-V3.1.1.02-QNX6-x86_32Bit-SDK_Unrestricted.zip" title="http://downloads.acontis.com/2021/G-I/Honeywell_Intelligrated_LLC_(41027)(US)/EC-Master_w._HC/3.1.1.02/EC-Master-I8254x-V3.1.1.02-QNX6-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">http://downloads.acontis.com/2021/G-I/Honeywell_Intelligrated_LLC_(41027)(US)/EC-Master_w._HC/3.1.1.02/EC-Master-I8254x-V3.1.1.02-QNX6-x86_32Bit-SDK_Unrestricted.zip</a></div>
+<div><a href="http://downloads.acontis.com/2021/G-I/Honeywell_Intelligrated_LLC_(41027)(US)/EC-Master_w._HC/3.1.1.02/EC-Master-V3.1.1.02-QNX6-x86_32Bit-SDK_Unrestricted.zip" title="http://downloads.acontis.com/2021/G-I/Honeywell_Intelligrated_LLC_(41027)(US)/EC-Master_w._HC/3.1.1.02/EC-Master-V3.1.1.02-QNX6-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">http://downloads.acontis.com/2021/G-I/Honeywell_Intelligrated_LLC_(41027)(US)/EC-Master_w._HC/3.1.1.02/EC-Master-V3.1.1.02-QNX6-x86_32Bit-SDK_Unrestricted.zip</a></div>
+</div>
+<div><br></div>
+<div>Best Regards,</div>
+<div>Holger</div>
+</div><div><br></div><div><blockquote type="cite">Am Donnerstag, 11. März 2021, 21:53:17, schrieb Jon Waters:<br><br><div>
+<p>Hi,</p>
+<p> </p>
+<p>We delivered V3.1.0.17 to Honeywell in October, but I didn’t see a delivery for QNX6 prepared for V3.1.1 yet. Can you build this package for them?</p>
+<p> </p>
+<p>/Jon</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p><b>From: </b>sales@acontis.com<br><b>Sent: </b>Thursday, March 11, 2021 2:20 PM<br><b>To: </b>sales@acontis.com; us-sales@acontis.com<br><b>Cc: </b>rick.kerns@honeywell.com<br><b>Subject: </b>Update Request from Honeywell-Intelligrated</p>
+<p> </p>
+</div>
+<p>Dear Mr./Ms. Kerns,</p>
+<p>thank you for your registration.<br><br></p>
+<p>First Name: Richard<br> Last Name: Kerns<br> Company: Honeywell-Intelligrated<br> Country: USA<br> City: Mason<br> E-Mail: rick.kerns@honeywell.com<br> Request update for: EC-Master<br>Update Type: <br> Operating System: QNX<br> Operating Sys. Version: 6.5<br> Any Questions?: <br><br></p>
+<p><img src="/api/v1/ticket_attachment/183/798/1793?view=inline" alt="" style="max-width:100%;max-width:100%;width:163px;max-height:85px;"></p>
+<p>acontis technologies GmbH<br>Gartenstraße 46, 88212 Ravensburg/Germany<br> Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br> eMail: sales@acontis.comFollow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/183/798/1794?view=inline" style="max-width:100%;max-width:100%;width:22px;max-height:22px;"></a></p>
+<br>
+</blockquote></div><div><br></div><br><br>

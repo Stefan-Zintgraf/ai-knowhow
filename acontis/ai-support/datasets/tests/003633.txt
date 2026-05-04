@@ -1,0 +1,159 @@
+### HEADER
+Id=3633
+Link=http://at-zammad/#ticket/zoom/3633
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Flow Europe GmbH (ID=587, Number=0, Country=DE)
+Commission=Flow Europe, Unknown (ID=666, Number=666)
+Number=703633
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=michael.knaupp@shapetechnologies.com (ID=1223, FirstName=Michael, LastName=Knaupp)
+CreatedBy=michael.knaupp@shapetechnologies.com (ID=1223, FirstName=Michael, LastName=Knaupp)
+Type=
+TimeUnit=
+CreatedAt=05.08.2022 10:03:45 +00:00
+UpdatedAt=16.08.2022 09:24:11 +00:00
+CloseAt=09.08.2022 06:12:36 +00:00
+ArticlesCount=3
+
+### TITLE
+Ports für EOE im Master erhöhen
+
+### ARTICLE00_HEADER
+Id=19276
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.08.2022 10:03:45 +00:00
+UpdatedAt=05.08.2022 10:03:47 +00:00
+
+### ARTICLE00_SUBJECT
+Ports für EOE im Master erhöhen
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="DE">Sehr geehrte Damen und Herren,</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">zur Kommunikation von Yaskava Software via EtherCat , müssen Einstellungen am Master wie die Anzahl der Port zu erhöhen vorgenommen werden.</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Ihre Antwort von Gestern hat uns leider nicht geholfen, da niemand sich mit Ihrem Produkt bzw. EtherCat auskennt.</span></p>
+<p><span lang="DE">Es wäre nett wenn sie uns Ihren Vorschlag via TeamViewer kurz zeigen könnten, hier was wir tun sollten</span></p>
+<p><span lang="DE"> </span><span lang="DE">über die InitParms des Masters können sie es erhöhen:</span></p>
+<p><span lang="DE">EC_T_INIT_MASTER_PARMS::dwAdditionalEoEEndpoints</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Können Sie uns hier noch kurzfristig helfen?</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">MfG</span></p>
+<p><span style="color:#00929f;">DR.-ING. MICHAEL KNAUPP</span></p>
+<p><span style="color:teal;"><p> </p></span></p>
+<p><i><span style="color:gray;">Application Advanced</span></i></p>
+<p><i><span style="color:gray;"><p> </p></span></i></p>
+<p><span style="color:gray;">Shape Technologies Group</span></p>
+<p><span style="color:#5b6770;"><p> </p></span></p>
+<p><span style="color:#5b6770;">Flow Europe GmbH | </span><span lang="DE" style="color:#5b6770;"><a href="http://www.flowwaterjet.com/" rel="nofollow noreferrer noopener" target="_blank"><span lang="EN-US" style="color:#5b6770;">www.FlowWaterjet.com</span></a></span><span style="color:#5b6770;"><br> Marienburgstraße 35 | 64297 Darmstadt | Germany</span></p>
+<p><span lang="DE" style="color:#585d61;">Phone: +49 6151 3095 170 | <a href="mailto:michael.knaupp@shapetechnologies.com"><span style="color:#585d61;">michael.knaupp@shapetechnologies.com</span></a></span></p>
+<p><span lang="DE" style="color:#585d61;">Mobile: +49 172 680 13 22</span></p>
+<p><span lang="DE" style="color:#5b6770;">Amtsgericht Darmstadt HRB 96686 | Geschäftsführer: Per Uwe Josefsson</span></p>
+<p><span lang="DE" style="color:#5b6770;"><p> </p></span></p>
+<p><span style="color:#5b6770;">This electronic message contains information that may be confidential and is the property <br> of SHAPE Technologies Group®. It is for the use of the intended addressee only. If you are <br> not the addressee, any disclosure, copying, distribution, or use of the contents is prohibited. <br> The information about our data privacy can be found under <a href="https://www.flowwaterjet.com/" rel="nofollow noreferrer noopener" target="_blank">
+<span style="color:#5b6770;">https://www.FlowWaterjet.com</span></a>. </span></p>
+<p><span style="color:#5b6770;"><p> </p></span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=19278
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=05.08.2022 10:20:05 +00:00
+UpdatedAt=05.08.2022 10:20:05 +00:00
+
+### ARTICLE01_BODY
+ich habe gesehen, dass du zuletzt mit ihm im Kontakt warst
+
+### ARTICLE02_HEADER
+Id=19280
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.08.2022 10:24:06 +00:00
+UpdatedAt=05.08.2022 10:24:08 +00:00
+
+### ARTICLE02_SUBJECT
+Ports für EOE im Master erhöhen
+
+### ARTICLE02_BODY
+Hallo Herr Knaupp,<div>wir können gerne am Montag ein TeamViewer Session machen. </div><div>Schicken Sie mir doch bitte kurz eine Einladung, ich bin den ganzen Tag verfügbar.</div><div><br></div><div>Mit freundlichen Grüßen,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Holger Oelhaf</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Freitag, 5. August 2022 um 12:03:45, schrieb Michael Knaupp:<br><br><div>
+<p><span lang="DE">Sehr geehrte Damen und Herren,</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">zur Kommunikation von Yaskava Software via EtherCat , müssen Einstellungen am Master wie die Anzahl der Port zu erhöhen vorgenommen werden.</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Ihre Antwort von Gestern hat uns leider nicht geholfen, da niemand sich mit Ihrem Produkt bzw. EtherCat auskennt.</span></p>
+<p><span lang="DE">Es wäre nett wenn sie uns Ihren Vorschlag via TeamViewer kurz zeigen könnten, hier was wir tun sollten</span></p>
+<p><span lang="DE"> </span><span lang="DE">über die InitParms des Masters können sie es erhöhen:</span></p>
+<p><span lang="DE">EC_T_INIT_MASTER_PARMS::dwAdditionalEoEEndpoints</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Können Sie uns hier noch kurzfristig helfen?</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">MfG</span></p>
+<p><span style="color:#00929f;">DR.-ING. MICHAEL KNAUPP</span></p>
+<p><span style="color:teal;"></span></p>
+<p> </p>
+<p></p>
+<p><i><span style="color:gray;">Application Advanced</span></i></p>
+<p><i><span style="color:gray;"></span></i></p>
+<p><i> </i></p>
+<p></p>
+<p><span style="color:gray;">Shape Technologies Group</span></p>
+<p><span style="color:#5b6770;"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:#5b6770;">Flow Europe GmbH | </span><span lang="DE" style="color:#5b6770;"><a href="http://www.flowwaterjet.com/" rel="nofollow noreferrer noopener" target="_blank"><span lang="EN-US" style="color:#5b6770;">www.FlowWaterjet.com</span></a></span><span style="color:#5b6770;"><br> Marienburgstraße 35 | 64297 Darmstadt | Germany</span></p>
+<p><span lang="DE" style="color:#585d61;">Phone: +49 6151 3095 170 | <a href="mailto:michael.knaupp@shapetechnologies.com"><span style="color:#585d61;">michael.knaupp@shapetechnologies.com</span></a></span></p>
+<p><span lang="DE" style="color:#585d61;">Mobile: +49 172 680 13 22</span></p>
+<p><span lang="DE" style="color:#5b6770;">Amtsgericht Darmstadt HRB 96686 | Geschäftsführer: Per Uwe Josefsson</span></p>
+<p><span lang="DE" style="color:#5b6770;"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:#5b6770;">This electronic message contains information that may be confidential and is the property <br> of SHAPE Technologies Group®. It is for the use of the intended addressee only. If you are <br> not the addressee, any disclosure, copying, distribution, or use of the contents is prohibited. <br> The information about our data privacy can be found under <a href="https://www.flowwaterjet.com/" rel="nofollow noreferrer noopener" target="_blank">
+<span style="color:#5b6770;">https://www.FlowWaterjet.com</span></a>. </span></p>
+<p><span style="color:#5b6770;"></span></p>
+<p> </p>
+<p></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

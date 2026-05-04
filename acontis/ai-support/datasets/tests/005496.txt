@@ -1,0 +1,140 @@
+### HEADER
+Id=5496
+Link=http://at-zammad/#ticket/zoom/5496
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bosch Rexroth AG (ID=88, Number=50510, Country=DE)
+Commission=Bosch Rexroth, IndraControl (ID=97, Number=97)
+Number=705496
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=elmar.ott@boschrexroth.de (ID=158, FirstName=Elmar, LastName=Ott)
+CreatedBy=elmar.ott@boschrexroth.de (ID=158, FirstName=Elmar, LastName=Ott)
+Type=
+TimeUnit=
+CreatedAt=28.04.2023 11:15:42 +00:00
+UpdatedAt=19.05.2023 06:12:13 +00:00
+CloseAt=19.05.2023 06:12:13 +00:00
+ArticlesCount=2
+
+### TITLE
+Updates
+
+### ARTICLE00_HEADER
+Id=29204
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.04.2023 11:15:42 +00:00
+UpdatedAt=28.04.2023 11:15:46 +00:00
+
+### ARTICLE00_SUBJECT
+Updates
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo,</p>
+<p> </p>
+<p>könnten Sie uns bitte folgende Elemente bereitstellen?</p>
+<p> </p>
+<ul type="disc">
+<li>Aktuelle Version EC-Engineer</li>
+<li>Aktuelle Dokumentationen:</li>
+<ul type="circle">
+<li>Master Object Dictionary</li>
+<li>Superset ENI</li>
+<li>Hot Connect</li>
+</ul>
+</ul>
+<p> </p>
+<p>Danke.</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Elmar Ott</b></span> <span><br> Engineering Software Firmware DC-AE/ESW2<br>
+<br> Tel. +49 9352 18-5585<br>
+<a href="mailto:Elmar.Ott@boschrexroth.de"><span style="color:blue;">Elmar.Ott@boschrexroth.de</span></a><br>
+<a href="http://www.boschrexroth.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.boschrexroth.com</span></a><br>
+<br> Bosch Rexroth AG<br> Bgm.-Dr.-Nebel-Str. 2<br> 97816 Lohr am Main<br> GERMANY</span><span><br>
+<br>
+</span><span lang="EN-US"><a href="http://www.boschrexroth.com/" rel="nofollow noreferrer noopener" title="http://www.boschrexroth.com/" target="_blank"><span lang="DE" style="color:blue;"></span></a></span><span><br>
+<br>
+</span><span><br>
+<br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart HRB 23192<br> Vorstand: Dr. Steffen Haack (Vorsitzender), Thomas Donato, Holger von Hebel, Reinhard Schäfer<br> Vorsitzender des Aufsichtsrats: Dr. Markus Forschner</span><span><br> ​</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=29217
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.04.2023 13:58:21 +00:00
+UpdatedAt=28.04.2023 13:58:25 +00:00
+
+### ARTICLE01_SUBJECT
+Updates
+
+### ARTICLE01_BODY
+Hallo Herr Ott,<div><br></div><div>In folgenden Links finden Sie die neueste EC-Engineer-Version und die verlangten Dokus: </div><div>
+<div><a href="https://downloads.acontis.com/2023/B-C/Bosch_Rexroth_AG_(45007)(DE)/EC-Engineer/3.7.11/EC-Engineer_Dongle_V3.7.11.zip" title="https://downloads.acontis.com/2023/B-C/Bosch_Rexroth_AG_(45007)(DE)/EC-Engineer/3.7.11/EC-Engineer_Dongle_V3.7.11.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/B-C/Bosch_Rexroth_AG_(45007)(DE)/EC-Engineer/3.7.11/EC-Engineer_Dongle_V3.7.11.zip</a></div>
+<div><div>
+<a href="https://downloads.acontis.com/2023/B-C/Bosch_Rexroth_AG_(45007)(DE)/EC-Engineer/3.7.11/EC-Engineer_Dongle_V3.7.11.zip" rel="nofollow noreferrer noopener" target="_blank" title="https://downloads.acontis.com/2023/B-C/Bosch_Rexroth_AG_(45007)(DE)/EC-Engineer/3.7.11/EC-Engineer_Dongle_V3.7.11.zip">https://downloads.acontis.com</a><a href="sftp://home155839490.1and1-data.host/Downloads/2023/B-C/Bosch_Rexroth_AG_%2845007%29%28DE%29/Doc/Doc.zip" title="sftp://home155839490.1and1-data.host/Downloads/2023/B-C/Bosch_Rexroth_AG_%2845007%29%28DE%29/Doc/Doc.zip">/2023/B-C/Bosch_Rexroth_AG_%2845007%29%28DE%29/Doc/Doc.zip</a>
+</div></div>
+<div><br></div>
+<div>Mit freundlichen Grüßen</div>
+<div>Haithem Jebali</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, April 28, 2023 at 1:15:42 PM, Elmar Ott wrote:<br><br><div>
+<p>Hallo,</p>
+<p> </p>
+<p>könnten Sie uns bitte folgende Elemente bereitstellen?</p>
+<p> </p>
+<ul type="disc">
+<li>Aktuelle Version EC-Engineer</li>
+<li>Aktuelle Dokumentationen:</li>
+<ul type="circle">
+<li>Master Object Dictionary</li>
+<li>Superset ENI</li>
+<li>Hot Connect</li>
+</ul>
+</ul>
+<p> </p>
+<p>Danke.</p>
+<p> </p>
+<p><span>Mit freundlichen Grüßen / Best regards<br>
+<br>
+<b>Elmar Ott</b></span> <span><br> Engineering Software Firmware DC-AE/ESW2<br>
+<br> Tel. +49 9352 18-5585<br>
+<a href="mailto:Elmar.Ott@boschrexroth.de"><span style="color:blue;">Elmar.Ott@boschrexroth.de</span></a><br>
+<a href="http://www.boschrexroth.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.boschrexroth.com</span></a><br>
+<br> Bosch Rexroth AG<br> Bgm.-Dr.-Nebel-Str. 2<br> 97816 Lohr am Main<br> GERMANY</span><span><br>
+<br>
+</span><span lang="EN-US"><a href="http://www.boschrexroth.com/" rel="nofollow noreferrer noopener" title="http://www.boschrexroth.com/" target="_blank"><span lang="DE" style="color:blue;"></span></a></span><span><br>
+<br>
+</span><span><br>
+<br> Sitz: Stuttgart, Registergericht: Amtsgericht Stuttgart HRB 23192<br> Vorstand: Dr. Steffen Haack (Vorsitzender), Thomas Donato, Holger von Hebel, Reinhard Schäfer<br> Vorsitzender des Aufsichtsrats: Dr. Markus Forschner</span><span><br> ​</span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

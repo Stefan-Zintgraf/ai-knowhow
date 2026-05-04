@@ -1,0 +1,200 @@
+### HEADER
+Id=3721
+Link=http://at-zammad/#ticket/zoom/3721
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=JSLT (ID=402, Number=0, Country=JP)
+Commission=FANUC, EtherCAT model CNC (ID=487, Number=487)
+Number=703721
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=19.08.2022 00:41:34 +00:00
+UpdatedAt=09.09.2022 06:08:57 +00:00
+CloseAt=09.09.2022 06:08:57 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Master (FANUC) [M97]
+
+### ARTICLE00_HEADER
+Id=19743
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=19.08.2022 00:41:34 +00:00
+UpdatedAt=19.08.2022 00:41:38 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master (FANUC) [M97]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master (FANUC) [M97]
+
+About M92,
+We have summarized the details of the problems we are currently facing in the text M97.txt.
+As mentioned in M89, the problem is that WKC's Notify is delayed.
+This appears to contradict M91's answer.
+If you have any advice, please let me know.
+
+Best regards,
+Takuya Fujikawa
+
+### ARTICLE01_HEADER
+Id=19761
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.08.2022 07:27:23 +00:00
+UpdatedAt=19.08.2022 07:27:25 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master (FANUC) [M97]
+
+### ARTICLE01_BODY
+Dear Takuya-san, <div><br></div><div>As i specified in M96, the processing, error detection and notifications generation happen in the background, so it is possible that when the customer comes to <span>/* TESTCODE : 3.8.2 WKC State in Diagnosis Image */ in the file CodeImage.c, the master is not yet done with processing and notifications generation.</span>
+</div><div>For a better behaviour the customer can use Polling mode, which actually waits until the frames are processed.</div><div><br></div><div>Best Regards</div><div>Haithem Jebali</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, August 19, 2022 at 2:41:34 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master (FANUC) [M97]</div>
+<div><br></div>
+<div>About M92,</div>
+<div>We have summarized the details of the problems we are currently facing in the text M97.txt.</div>
+<div>As mentioned in M89, the problem is that WKC's Notify is delayed.</div>
+<div>This appears to contradict M91's answer.</div>
+<div>If you have any advice, please let me know.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=19763
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.08.2022 07:35:03 +00:00
+UpdatedAt=19.08.2022 07:35:04 +00:00
+
+### ARTICLE02_SUBJECT
+Question about EC-Master (FANUC) [M97]
+
+### ARTICLE02_BODY
+Dear Takuya-san,<div><br></div><div>can the customer elaborate the meaning of wkc abnormal and wkc is normal.</div><div>what is the value of the WkcState in those two cases?</div><div><br></div><div>Best regards</div><div>Haithem Jebali<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, August 19, 2022 at 2:41:34 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master (FANUC) [M97]</div>
+<div><br></div>
+<div>About M92,</div>
+<div>We have summarized the details of the problems we are currently facing in the text M97.txt.</div>
+<div>As mentioned in M89, the problem is that WKC's Notify is delayed.</div>
+<div>This appears to contradict M91's answer.</div>
+<div>If you have any advice, please let me know.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=19768
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.08.2022 08:18:32 +00:00
+UpdatedAt=19.08.2022 08:18:36 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master (FANUC) [M97]
+
+### ARTICLE03_BODY
+Hi Takuya-san,<div><br></div><div>sorry for the confusion again! FANUC can ignore my last reply for this question because it was faulty!</div><div>The diagnosis image pointer should already be updated when OsWaitForEvent is done! </div><div>So the <span>/* TESTCODE : 3.8.2 WKC State in Diagnosis Image */ </span>
+
+ in the file CodeImage.c is the right way to control the Wkc state</div><div><br></div><div>Best Regards</div><div>Haithem Jebali<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, August 19, 2022 at 2:41:34 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master (FANUC) [M97]</div>
+<div><br></div>
+<div>About M92,</div>
+<div>We have summarized the details of the problems we are currently facing in the text M97.txt.</div>
+<div>As mentioned in M89, the problem is that WKC's Notify is delayed.</div>
+<div>This appears to contradict M91's answer.</div>
+<div>If you have any advice, please let me know.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

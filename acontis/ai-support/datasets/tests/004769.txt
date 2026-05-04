@@ -1,0 +1,217 @@
+### HEADER
+Id=4769
+Link=http://at-zammad/#ticket/zoom/4769
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=YASKAWA Europe GmbH (ID=174, Number=60502, Country=DE)
+Commission=VIPA, PLC (ID=197, Number=197)
+Number=704769
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=bernd.schubart@yaskawa.eu (ID=1009, FirstName=Bernd, LastName=Schubart)
+CreatedBy=bernd.schubart@yaskawa.eu (ID=1009, FirstName=Bernd, LastName=Schubart)
+Type=
+TimeUnit=
+CreatedAt=24.01.2023 14:26:10 +00:00
+UpdatedAt=30.01.2023 07:00:27 +00:00
+CloseAt=30.01.2023 07:00:27 +00:00
+ArticlesCount=4
+
+### TITLE
+Master object dictionary Objekt 0x100A
+
+### ARTICLE00_HEADER
+Id=25223
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.01.2023 14:26:10 +00:00
+UpdatedAt=24.01.2023 14:26:11 +00:00
+
+### ARTICLE00_SUBJECT
+Master object dictionary Objekt 0x100A
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo,</p>
+<p> </p>
+<p>wir haben heute von unserem Engineering Team erfahren, dass in Core-Klassen des EC-Engineer SDKs die Master Version genutzt wird, um diverse Fallunterscheidungen zu machen. Siehe angefügte Email.</p>
+<p>Die Master Version kommt scheinbar aus dem Master OD Objekt 0x100A. In diesem Objekt steht bei uns allerdings nicht die Version des Masters, sondern die Version unserer Gesamt-Firmware.</p>
+<p> </p>
+<p>Was haben wir für Möglichkeiten, dieses Problem zu lösen? Generell sind wir etwas überrascht, dass im Objekt 0x100A die Stack-Version stehen muss. Ist dies nicht eigentlich ein Hersteller-spezifischer Wert?</p>
+<p>Ein Mapping auf Engineering-Seite möchten wir vermeiden, da es fehleranfällig ist und Pflegeaufwand erfordert.</p>
+<p>Gibt es ein geeignetes alternatives Objekt im Master OD, in das wir die Stack-Version hinterlegen können? Dies müsste ja dann ein String-Datentyp sein.</p>
+<p>Was gäbe es sonst für Möglichkeiten?</p>
+<p> </p>
+<p>Danke und viele Grüße,</p>
+<p>Bernd</p>
+<p> </p>
+<div>
+<p><b><span lang="EN-US">Bernd Schubart</span></b></p>
+</div>
+<div>
+<p><span lang="EN-US">Software Engineer</span></p>
+</div>
+<div>
+<p><span lang="EN-US">Firmware<br>
+<br>
+</span></p>
+</div>
+<p><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" title="http://www.yaskawa.eu.com/" target="_blank"><span style="color:blue;"></span></a><span lang="EN-US"><br>
+<br>
+</span></p>
+<div>
+<p><b><span lang="EN-US">YASKAWA Europe GmbH</span></b><span lang="EN-US"></span></p>
+</div>
+<div>
+<p><span lang="EN-US">Drives Motion Controls Division</span></p>
+</div>
+<div>
+<p>Hugo-Junkers-Straße 13</p>
+</div>
+<div>
+<p>90411 Nürnberg</p>
+</div>
+<div>
+<p>Germany</p>
+</div>
+<div>
+<p><span><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.yaskawa.eu.com</span></a><br>
+<br>
+</span></p>
+</div>
+<div>
+<p><b>P </b>+49 9132 744-1088</p>
+</div>
+<div>
+<p><a href="mailto:bernd.schubart@yaskawa.eu"><span style="color:blue;">bernd.schubart@yaskawa.eu</span></a></p>
+</div>
+<p> </p>
+</div><br>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------------<br> Geschaeftsfuehrer/Managing Directors: Bruno J. Schnekenburger, Marcus Mead, Bobbie Linkenbach <br> Amtsgericht/Local Court: Frankfurt, Commercial register no. 88369 <br> Headquarters: YASKAWA Europe GmbH, Hauptstr. 185, D-65760 Eschborn<br> ------------------------------------------------------------------------------------------------------------------------------<br> CONFIDENTIALITY: This e-mail and any attachments are confidential and may also be privileged.<br> If you are not the named recipient, please notify the sender immediately and do not disclose the contents to another person,<br> use it for any purpose, or store or copy the information in any medium.
+
+### ARTICLE01_HEADER
+Id=25253
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=25.01.2023 11:50:33 +00:00
+UpdatedAt=25.01.2023 11:50:33 +00:00
+
+### ARTICLE01_BODY
+<div>
+<div>@Cyril:</div>
+<div>Hab mit "<span>GetMasterInfo" getestet. Denke könnte für VIPA gehen. Für uns macht es keinen Sinn, da es erst ab v2.9.x drin ist.</span>
+</div>
+<div>Bei V2.8.1.15 hat es gefehlt, bei <span>V2.9.2.24 war die API drin.</span>
+</div>
+</div><div><span>Kannst du mir die genaue Version sagen? Dann schlage ich das so VIPA vor.</span></div><div><span>Falls das nicht brauchbar ist für die, empfehle ich denen die Master Version irgendwie in das Objekt 0x100A mit einzubauen? Oder besserer Vorschlag?</span></div>
+
+### ARTICLE02_HEADER
+Id=25257
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=25.01.2023 13:39:29 +00:00
+UpdatedAt=25.01.2023 13:39:29 +00:00
+
+### ARTICLE02_BODY
+Es ist in V2.9.1.05 reingekommen
+
+### ARTICLE03_HEADER
+Id=25266
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.01.2023 15:23:13 +00:00
+UpdatedAt=25.01.2023 15:23:14 +00:00
+
+### ARTICLE03_SUBJECT
+Master object dictionary Objekt 0x100A
+
+### ARTICLE03_BODY
+Hallo Herr Schubart,<div><br></div><div>das Master Team meinte es ist hier nicht zu empfehlen ein neues Objekt im MasterOD anzulegen.</div><div><br></div><div>Wenn beide Versionen im OD vorkommen müssen, wäre immer noch die beste Lösung beide Version wie von Ihrem Engineering Team vorgeschlagen in das Objekt 0x100A zu schreiben:</div><div><br></div><div>
+<img style="max-width:100%;width: 703px;max-width: 100%;" src="/api/v1/ticket_attachment/4769/25266/106911?view=inline"><br>
+</div><div><br></div><div>Das sinnvollste wäre allerdings, wenn wir im EC-Engineer bzw. das Engineering Team die Master Version nicht aus dem OD sondern per API über emGetMasterInfo() lesen würden. Dort würde immer die EC-Master Version stehen und nicht die von Ihrer Firmware.</div><div><br></div><div>Ich werde das Ihrem Engineering Team so mitteilen.</div><div><br></div><div>Mit freundlichen Grüßen</div><div>Martin Gänzer</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, January 24, 2023 at 3:26:10 PM, Bernd Schubart wrote:<br><br><div>
+<p>Hallo,</p>
+<p> </p>
+<p>wir haben heute von unserem Engineering Team erfahren, dass in Core-Klassen des EC-Engineer SDKs die Master Version genutzt wird, um diverse Fallunterscheidungen zu machen. Siehe angefügte Email.</p>
+<p>Die Master Version kommt scheinbar aus dem Master OD Objekt 0x100A. In diesem Objekt steht bei uns allerdings nicht die Version des Masters, sondern die Version unserer Gesamt-Firmware.</p>
+<p> </p>
+<p>Was haben wir für Möglichkeiten, dieses Problem zu lösen? Generell sind wir etwas überrascht, dass im Objekt 0x100A die Stack-Version stehen muss. Ist dies nicht eigentlich ein Hersteller-spezifischer Wert?</p>
+<p>Ein Mapping auf Engineering-Seite möchten wir vermeiden, da es fehleranfällig ist und Pflegeaufwand erfordert.</p>
+<p>Gibt es ein geeignetes alternatives Objekt im Master OD, in das wir die Stack-Version hinterlegen können? Dies müsste ja dann ein String-Datentyp sein.</p>
+<p>Was gäbe es sonst für Möglichkeiten?</p>
+<p> </p>
+<p>Danke und viele Grüße,</p>
+<p>Bernd</p>
+<p> </p>
+<div>
+<p><b><span lang="EN-US">Bernd Schubart</span></b></p>
+</div>
+<div>
+<p><span lang="EN-US">Software Engineer</span></p>
+</div>
+<div>
+<p><span lang="EN-US">Firmware<br>
+<br>
+</span></p>
+</div>
+<p><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" title="http://www.yaskawa.eu.com/" target="_blank"><span style="color:blue;"></span></a><span lang="EN-US"><br>
+<br>
+</span></p>
+<div>
+<p><b><span lang="EN-US">YASKAWA Europe GmbH</span></b><span lang="EN-US"></span></p>
+</div>
+<div>
+<p><span lang="EN-US">Drives Motion Controls Division</span></p>
+</div>
+<div>
+<p>Hugo-Junkers-Straße 13</p>
+</div>
+<div>
+<p>90411 Nürnberg</p>
+</div>
+<div>
+<p>Germany</p>
+</div>
+<div>
+<p><span><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.yaskawa.eu.com</span></a><br>
+<br>
+</span></p>
+</div>
+<div>
+<p><b>P </b>+49 9132 744-1088</p>
+</div>
+<div>
+<p><a href="mailto:bernd.schubart@yaskawa.eu"><span style="color:blue;">bernd.schubart@yaskawa.eu</span></a></p>
+</div>
+<p> </p>
+</div>
+<br>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------------<br> Geschaeftsfuehrer/Managing Directors: Bruno J. Schnekenburger, Marcus Mead, Bobbie Linkenbach <br> Amtsgericht/Local Court: Frankfurt, Commercial register no. 88369 <br> Headquarters: YASKAWA Europe GmbH, Hauptstr. 185, D-65760 Eschborn<br> ------------------------------------------------------------------------------------------------------------------------------<br> CONFIDENTIALITY: This e-mail and any attachments are confidential and may also be privileged.<br> If you are not the named recipient, please notify the sender immediately and do not disclose the contents to another person,<br> use it for any purpose, or store or copy the information in any medium.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

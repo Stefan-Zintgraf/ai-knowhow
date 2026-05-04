@@ -1,0 +1,181 @@
+### HEADER
+Id=3720
+Link=http://at-zammad/#ticket/zoom/3720
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=JSLT (ID=402, Number=0, Country=JP)
+Commission=FANUC, EtherCAT model CNC (ID=487, Number=487)
+Number=703720
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=19.08.2022 00:40:32 +00:00
+UpdatedAt=09.09.2022 06:08:57 +00:00
+CloseAt=09.09.2022 06:08:57 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Master (FANUC) [M96]
+
+### ARTICLE00_HEADER
+Id=19742
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=19.08.2022 00:40:32 +00:00
+UpdatedAt=19.08.2022 00:40:36 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master (FANUC) [M96]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master (FANUC) [M96]
+
+About M89's answer "This happens in the background",
+we didn't understand this.
+In relation to M89, is it possible for you to explain the details with a sequence diagram?
+
+I created a sample sequence diagram with reference to the manual. We expected CASE1 behavior.
+
+Best regards,
+Takuya Fujikawa
+
+### ARTICLE01_HEADER
+Id=19745
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=19.08.2022 00:43:06 +00:00
+UpdatedAt=19.08.2022 00:43:06 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master (FANUC) [M96]
+
+### ARTICLE01_BODY
+
+I forgot the attachment, so I will attach it to this email.
+
+On 2022/08/19 9:40, Takuya Fujikawa(acontis) wrote:
+> Dear EtherCAT Support
+> 
+> Question about EC-Master (FANUC) [M96]
+> 
+> About M89's answer "This happens in the background",
+> we didn't understand this.
+> In relation to M89, is it possible for you to explain the details with a sequence diagram?
+> 
+> I created a sample sequence diagram with reference to the manual. We expected CASE1 behavior.
+> 
+> Best regards,
+> Takuya Fujikawa
+
+### ARTICLE02_HEADER
+Id=19758
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.08.2022 07:07:30 +00:00
+UpdatedAt=19.08.2022 07:07:34 +00:00
+
+### ARTICLE02_SUBJECT
+Question about EC-Master (FANUC) [M96]
+
+### ARTICLE02_BODY
+Hi Takuya-san,<div><br></div><div>the second case looks more like how interrupt mode actually works. There is only one change. Processing the frame also happens in the background. I adjusted the diagram for case 2. You can find this in the attachment.</div><div>For case 1, this actually looks more like the datagram of the polling mode. Maybe FANUC should consider using polling mode instead of interrupt mode if case 1 datagram is what they are wanting to have.</div><div><br></div><div>Best Regards</div><div>Haithem Jebali<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, August 19, 2022 at 2:43:06 AM, Takuya Fujikawa wrote:<br><br><div>I forgot the attachment, so I will attach it to this email.</div>
+<div><br></div>
+<div>On 2022/08/19 9:40, Takuya Fujikawa(acontis) wrote:</div>
+<div>&gt; Dear EtherCAT Support</div>
+<div>&gt;</div>
+<div>&gt; Question about EC-Master (FANUC) [M96]</div>
+<div>&gt;</div>
+<div>&gt; About M89's answer "This happens in the background",</div>
+<div>&gt; we didn't understand this.</div>
+<div>&gt; In relation to M89, is it possible for you to explain the details with a sequence diagram?</div>
+<div>&gt;</div>
+<div>&gt; I created a sample sequence diagram with reference to the manual. We expected CASE1 behavior.</div>
+<div>&gt;</div>
+<div>&gt; Best regards,</div>
+<div>&gt; Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=19767
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.08.2022 08:14:51 +00:00
+UpdatedAt=19.08.2022 08:14:54 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master (FANUC) [M96]
+
+### ARTICLE03_BODY
+Hallo Takuya san,<div><br></div><div>I think I made a mistake, Case 1 is actually the right behaviour, the notification may come a little bit later. The diagramm I sent is faulty. </div><div>Sorry for the confusion!</div><div><br></div><div>Best Regards</div><div>Haithem Jebali<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, August 19, 2022 at 2:43:06 AM, Takuya Fujikawa wrote:<br><br><div>I forgot the attachment, so I will attach it to this email.</div>
+<div><br></div>
+<div>On 2022/08/19 9:40, Takuya Fujikawa(acontis) wrote:</div>
+<div>&gt; Dear EtherCAT Support</div>
+<div>&gt;</div>
+<div>&gt; Question about EC-Master (FANUC) [M96]</div>
+<div>&gt;</div>
+<div>&gt; About M89's answer "This happens in the background",</div>
+<div>&gt; we didn't understand this.</div>
+<div>&gt; In relation to M89, is it possible for you to explain the details with a sequence diagram?</div>
+<div>&gt;</div>
+<div>&gt; I created a sample sequence diagram with reference to the manual. We expected CASE1 behavior.</div>
+<div>&gt;</div>
+<div>&gt; Best regards,</div>
+<div>&gt; Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

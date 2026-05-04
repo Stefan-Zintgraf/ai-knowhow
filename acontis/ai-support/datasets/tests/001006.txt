@@ -1,0 +1,193 @@
+### HEADER
+Id=1006
+Link=http://at-zammad/#ticket/zoom/1006
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ADLINK Technology, Inc. (ID=318, Number=40110, Country=TW)
+Commission=ADLINK, RT-Linux (ID=377, Number=377)
+Number=701006
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=peter.kao@adlinktech.com (ID=40, FirstName=Peter, LastName=Kao)
+CreatedBy=peter.kao@adlinktech.com (ID=40, FirstName=Peter, LastName=Kao)
+Type=
+TimeUnit=
+CreatedAt=09.07.2021 12:39:37 +00:00
+UpdatedAt=25.04.2022 12:48:36 +00:00
+CloseAt=26.07.2021 10:16:14 +00:00
+ArticlesCount=3
+
+### TITLE
+ENI file difference between LxWin and EniBuilderForCpp produced
+
+### ARTICLE00_HEADER
+Id=5558
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.07.2021 12:39:37 +00:00
+UpdatedAt=09.07.2021 12:39:37 +00:00
+
+### ARTICLE00_SUBJECT
+ENI file difference between LxWin and EniBuilderForCpp produced
+
+### ARTICLE00_BODY
+<div>Dear acontis,</div><div> </div><div>I have found that can't configure ecat Master(ecatConfigureMaster) with ENI.xml produced by EniBuilderForCpp.exe</div><div>But, if I using ENI created by EC-Engineer integrated LxWin, configure ecat Master would success.</div><div> </div><div>The picture is log with configure ecat Master with ENI.xml produced by EniBuilderForCpp.exe<br>
+<img style="max-width:100%;max-width: 100%;width: 770.335px;max-height: 148px;width:770px;max-height:148px;" src="/api/v1/ticket_attachment/1006/5558/20127?view=inline"><br>
+</div><div> </div><div>Is it possible that I want to using ENI.xml created by EniBuilderForCpp.exe?</div><div> </div><div>These attachments is ENI.xml created by ENIBuilderForCpp and EC-Engineer integrated LxWin.</div><div> </div><div>Thanks,</div><div>Peter.K</div>
+
+### ARTICLE01_HEADER
+Id=5562
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.07.2021 14:08:02 +00:00
+UpdatedAt=09.07.2021 14:08:07 +00:00
+
+### ARTICLE01_SUBJECT
+ENI file difference between LxWin and EniBuilderForCpp produced
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>the slave claims that something is wrong with "DC Sync0 Cycle Time".</div><div><br></div><div>Comparing the ENIs is not so easy for me, because you used different master cycle times:</div><div>LxWin = 1000us</div><div>EniBuilder = 125us</div><div><br></div><div>Can you re-create the ENI files by using the master cycle times? You say LxWin version works fine, so can you create the EniBuilder version also with 1000us? See EBI tag "<span>Master/CycleTime</span><span>".</span>
+</div><div><span><br></span></div><div><span>Maybe it is not a problem of the ENI. You run your master with cycle time 1000us but with EniBuilder you create the ENI with 125us? Maybe you should simple configure the bus cycle time of your master in that case with also 125us?</span></div><div><span><br></span></div><div><span>If it doesn't help, can you send me your ESI file? </span></div><div><br></div><div>Best Regards,</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Martin Gaenzer </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, July 9, 2021, 2:39:37 PM, Peter Kao wrote:<br><br><div>Dear acontis,</div>
+<div> </div>
+<div>I have found that can't configure ecat Master(ecatConfigureMaster) with ENI.xml produced by EniBuilderForCpp.exe</div>
+<div>But, if I using ENI created by EC-Engineer integrated LxWin, configure ecat Master would success.</div>
+<div> </div>
+<div>The picture is log with configure ecat Master with ENI.xml produced by EniBuilderForCpp.exe<br>
+<img style="max-width:100%;max-width:100%;max-width: 100%;width: 770.335px;max-height: 148px;width:770px;max-height:148px;" src="/api/v1/ticket_attachment/1006/5562/20160?view=inline"><br>
+</div>
+<div> </div>
+<div>Is it possible that I want to using ENI.xml created by EniBuilderForCpp.exe?</div>
+<div> </div>
+<div>These attachments is ENI.xml created by ENIBuilderForCpp and EC-Engineer integrated LxWin.</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Peter.K</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=5569
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.07.2021 01:29:30 +00:00
+UpdatedAt=10.07.2021 01:29:30 +00:00
+
+### ARTICLE02_SUBJECT
+回覆: ENI file difference between LxWin and EniBuilderForCpp produced [Ticket#701006]
+
+### ARTICLE02_BODY
+<div>Hi Martin,</div><div> </div><div>It's very useful hint about cycle times. My EBI create tool was wrong and set Master/CycleTime 125 always.</div><div>If I fix this problem, ENIBuilder version ENI works fine.</div><div> </div><div>Thank for your help.</div><div> </div><div>Best regards,</div><div>Peter.K</div><div> </div><div> </div><hr>
+<div dir="ltr">
+<b>寄件者:</b> Martin Gaenzer via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>寄件日期:</b> 2021年7月9日 下午 10:08<br>
+<b>收件者:</b> Peter Kao &lt;peter.kao@adlinktech.com&gt;<br>
+<b>主旨:</b> RE: ENI file difference between LxWin and EniBuilderForCpp produced [Ticket#701006] <div> </div>
+</div><div>Hi,<div> </div>
+<div>the slave claims that something is wrong with "DC Sync0 Cycle Time".</div>
+<div> </div>
+<div>Comparing the ENIs is not so easy for me, because you used different master cycle times:</div>
+<div>LxWin = 1000us</div>
+<div>EniBuilder = 125us</div>
+<div> </div>
+<div>Can you re-create the ENI files by using the master cycle times? You say LxWin version works fine, so can you create the EniBuilder version also with 1000us? See EBI tag "Master/CycleTime".</div>
+<div> </div>
+<div>Maybe it is not a problem of the ENI. You run your master with cycle time 1000us but with EniBuilder you create the ENI with 125us? Maybe you should simple configure the bus cycle time of your master in that case with also 125us?</div>
+<div> </div>
+<div>If it doesn't help, can you send me your ESI file?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Martin</div>
+<div>
+<br>
+<div>
+<div>____________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>acontis technologies GmbH</div>
+</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div> Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com</a> </div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>eMail: ecsupport@acontis.com<br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div>
+<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>
+<div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Friday, July 9, 2021, 2:39:37 PM, Peter Kao wrote:<br>
+<br>
+<div>Dear acontis,</div>
+<div> </div>
+<div>I have found that can't configure ecat Master(ecatConfigureMaster) with ENI.xml produced by EniBuilderForCpp.exe</div>
+<div>But, if I using ENI created by EC-Engineer integrated LxWin, configure ecat Master would success.</div>
+<div> </div>
+<div>The picture is log with configure ecat Master with ENI.xml produced by EniBuilderForCpp.exe<br>
+<img style="max-width:100%;max-width:100%;max-width:100%;width:770.335px;max-height:148px;width:770px;max-height:148px;" src="/api/v1/ticket_attachment/1006/5569/20191?view=inline"><br>
+</div>
+<div> </div>
+<div>Is it possible that I want to using ENI.xml created by EniBuilderForCpp.exe?</div>
+<div> </div>
+<div>These attachments is ENI.xml created by ENIBuilderForCpp and EC-Engineer integrated LxWin.</div>
+<div> </div>
+<div>Thanks,</div>
+<div>Peter.K</div>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>

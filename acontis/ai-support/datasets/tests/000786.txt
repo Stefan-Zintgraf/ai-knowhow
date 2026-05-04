@@ -1,0 +1,274 @@
+### HEADER
+Id=786
+Link=http://at-zammad/#ticket/zoom/786
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Soft Service, Generic (ID=476, Number=476)
+Number=700786
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=ecsupport@soft-service.co.jp (ID=33, FirstName=Ecsupport, LastName=)
+CreatedBy=ecsupport@soft-service.co.jp (ID=33, FirstName=Ecsupport, LastName=)
+Type=
+TimeUnit=
+CreatedAt=10.06.2021 08:32:59 +00:00
+UpdatedAt=02.07.2021 06:01:06 +00:00
+CloseAt=02.07.2021 06:01:06 +00:00
+ArticlesCount=4
+
+### TITLE
+Reflection of Station Alias
+
+### ARTICLE00_HEADER
+Id=4329
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.06.2021 08:32:59 +00:00
+UpdatedAt=10.06.2021 08:33:01 +00:00
+
+### ARTICLE00_SUBJECT
+Reflection of Station Alias
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Support Team</p>
+<p> </p>
+<p>I have a question.</p>
+<p> </p>
+<p>As a slave function, there is a function to change 0x0012 with SDO.</p>
+<p>After making the changes, using ecatGetBusSlaveInfo() does not change wAliasAddress.</p>
+<p>It will be reflected when the stack is stopped ⇒ started.</p>
+<p> </p>
+<p>It has been confirmed that the value of 0x0012 has changed with the register read API.</p>
+<p>When is it reflected in the "wAliasAddress" that can be obtained with ecatGetBusSlaveInfo()?</p>
+<p>Is it possible to change it during operation?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=4333
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.06.2021 09:19:50 +00:00
+UpdatedAt=10.06.2021 09:19:52 +00:00
+
+### ARTICLE01_SUBJECT
+Reflection of Station Alias
+
+### ARTICLE01_BODY
+Hi Kenji,<div><br></div><div>Unfortunately not. Typically, the slave should be reset after the identification value has been changed.</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div>
+<div><br></div>
+<div><blockquote type="cite">On Thursday, June 10, 2021, 10:32:59 AM, Ecsupport wrote:<br><br><div>
+<p>Dear Support Team</p>
+<p> </p>
+<p>I have a question.</p>
+<p> </p>
+<p>As a slave function, there is a function to change 0x0012 with SDO.</p>
+<p>After making the changes, using ecatGetBusSlaveInfo() does not change wAliasAddress.</p>
+<p>It will be reflected when the stack is stopped ⇒ started.</p>
+<p> </p>
+<p>It has been confirmed that the value of 0x0012 has changed with the register read API.</p>
+<p>When is it reflected in the "wAliasAddress" that can be obtained with ecatGetBusSlaveInfo()?</p>
+<p>Is it possible to change it during operation?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=4369
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.06.2021 03:57:37 +00:00
+UpdatedAt=11.06.2021 03:57:37 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Reflection of Station Alias [Ticket#700786]
+
+### ARTICLE02_BODY
+<div>
+<p>Dear Cyril</p>
+<p> </p>
+<p>Thank you for your reply.</p>
+<p> </p>
+<p>&gt;Unfortunately not. Typically, the slave should be reset after the identification value has been changed.</p>
+<p>Is this an EC-Master specification?</p>
+<p>Or is it the specification of EtherCAT?</p>
+<p> </p>
+<p>Since the change by SDO is a non-volatile setting, it will be restored when the power is turned off.</p>
+<p>Is it impossible to just update the status like Init-&gt; OP?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Thursday, June 10, 2021 6:20 PM<br>
+<b>To:</b> ecsupport &lt;ecsupport@soft-service.co.jp&gt;<br>
+<b>Subject:</b> RE: Reflection of Station Alias [Ticket#700786]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Kenji,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>Unfortunately not. Typically, the slave should be reset after the identification value has been changed.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Cyril</p>
+</div>
+<div>
+<div> <p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Thursday, June 10, 2021, 10:32:59 AM, Ecsupport wrote:</p>
+<p></p>
+<div>
+<p>Dear Support Team</p>
+<p> </p>
+<p>I have a question.</p>
+<p> </p>
+<p>As a slave function, there is a function to change 0x0012 with SDO.</p>
+<p>After making the changes, using ecatGetBusSlaveInfo() does not change wAliasAddress.</p>
+<p>It will be reflected when the stack is stopped ⇒ started.</p>
+<p> </p>
+<p>It has been confirmed that the value of 0x0012 has changed with the register read API.</p>
+<p>When is it reflected in the "wAliasAddress" that can be obtained with ecatGetBusSlaveInfo()?</p>
+<p>Is it possible to change it during operation?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=4402
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.06.2021 07:50:50 +00:00
+UpdatedAt=11.06.2021 07:50:54 +00:00
+
+### ARTICLE03_SUBJECT
+Reflection of Station Alias
+
+### ARTICLE03_BODY
+Hi Kenji,<div><br></div><div>
+<p>&gt;Unfortunately not. Typically, the slave should be reset after the identification value has been changed.</p>
+<p>Is this an EC-Master specification?</p>
+<p>Or is it the specification of EtherCAT?</p>
+<p><br></p>
+<p>[CER] There is no specification. The identification value is most of the time stored in EEPROM and its change are applied on power cycle.</p>
+<p> </p>
+<p>Since the change by SDO is a non-volatile setting, it will be restored when the power is turned off.</p>
+<p>Is it impossible to just update the status like Init-&gt; OP?</p>
+<p><br></p>
+<p><span>[CER] </span>Please try to just call ecatScanBus(), I checked the source code and I think that the <span>wAliasAddress should be updated. Sorry for the previous bad response previously.</span></p>
+<div><br></div>
+<div>Best Regards,</div>
+<div>Cyril<br><br>
+</div>
+<div><blockquote type="cite">On Friday, June 11, 2021, 5:57:37 AM, Ecsupport wrote:<br><br><div>
+<p>Dear Cyril</p>
+<p> </p>
+<p>Thank you for your reply.</p>
+<p> </p>
+<p>&gt;Unfortunately not. Typically, the slave should be reset after the identification value has been changed.</p>
+<p>Is this an EC-Master specification?</p>
+<p>Or is it the specification of EtherCAT?</p>
+<p> </p>
+<p>Since the change by SDO is a non-volatile setting, it will be restored when the power is turned off.</p>
+<p>Is it impossible to just update the status like Init-&gt; OP?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Thursday, June 10, 2021 6:20 PM<br>
+<b>To:</b> ecsupport &lt;ecsupport@soft-service.co.jp&gt;<br>
+<b>Subject:</b> RE: Reflection of Station Alias [Ticket#700786]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Kenji,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>Unfortunately not. Typically, the slave should be reset after the identification value has been changed.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Cyril</p>
+</div>
+<div>
+<div> <p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Thursday, June 10, 2021, 10:32:59 AM, Ecsupport wrote:</p>
+<p></p>
+<div>
+<p>Dear Support Team</p>
+<p> </p>
+<p>I have a question.</p>
+<p> </p>
+<p>As a slave function, there is a function to change 0x0012 with SDO.</p>
+<p>After making the changes, using ecatGetBusSlaveInfo() does not change wAliasAddress.</p>
+<p>It will be reflected when the stack is stopped ⇒ started.</p>
+<p> </p>
+<p>It has been confirmed that the value of 0x0012 has changed with the register read API.</p>
+<p>When is it reflected in the "wAliasAddress" that can be obtained with ecatGetBusSlaveInfo()?</p>
+<p>Is it possible to change it during operation?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

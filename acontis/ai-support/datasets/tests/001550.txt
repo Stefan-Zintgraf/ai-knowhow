@@ -1,0 +1,114 @@
+### HEADER
+Id=1550
+Link=http://at-zammad/#ticket/zoom/1550
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=CSEM no maint (ID=446, Number=0, Country=CH)
+Commission=CSEM, VISARD-RT (ID=523, Number=523)
+Number=701550
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=tommaso.bendinelli@csem.ch (ID=352, FirstName=Bendinelli, LastName=Tommaso)
+CreatedBy=tommaso.bendinelli@csem.ch (ID=352, FirstName=Bendinelli, LastName=Tommaso)
+Type=
+TimeUnit=
+CreatedAt=05.10.2021 09:15:59 +00:00
+UpdatedAt=25.04.2022 12:58:22 +00:00
+CloseAt=05.10.2021 12:47:55 +00:00
+ArticlesCount=3
+
+### TITLE
+Identical Project to the one in the explained in LxWin results in Ethercat Error
+
+### ARTICLE00_HEADER
+Id=8394
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.10.2021 09:15:59 +00:00
+UpdatedAt=05.10.2021 09:16:02 +00:00
+
+### ARTICLE00_SUBJECT
+Identical Project to the one in the explained in LxWin results in Ethercat Error
+
+### ARTICLE00_BODY
+Dear Vladimir, <div> </div><div>Thank you very much for your help. We have now a new issue. We have been working in the last couples of months with a Visual Studio Solution created accordingly to the LxWin documentation (page 23).</div><div>This has worked great.</div><div> </div><div>Now we have created a new Visual Studio Solution, and we created this in exactly the same way as we have created the previous one. However when running it we get the following error:</div><div> </div><div><b>Cyclic Command WKC error on LRD - Address: 0x10001000 - WKC act/set=0/1. </b></div><div> </div><div>Here the extensive log</div><div> </div><div>Process /tmp/MultireactRT created; pid = 375<br> Listening on port 2000<br> Remote debugging from host 192.168.157.1<br> Server listening<br> 0000000000: EcMasterDemoSyncSm V3.1.1.02 (Protected) for Linux_x64 Copyright acontis technologies GmbH @ 2021<br> 0000000000: Full command line: -f "/mnt/rtfiles/eni_multireactRT.xml"-i8254x 1 1 -sp 6000 -lic 378D4DB2-B132A284-30B4171F -t 0<br> 0000000000: TCP Server Starting<br> 0000000001: Start Remote API Server now<br> 0000000002: EC-Master V3.1.1.02 (Protected) for Linux_x64 Copyright acontis technologies GmbH @ 2021<br> 0000002549: EtherCAT network adapter MAC: 68-05-CA-91-FE-26<br> 0000002612: Bus scan successful - 2 slaves found<br> 0000002618: Master state changed from &lt;UNKNOWN&gt; to &lt;INIT&gt;<br> 0000002658: Master state changed from &lt;INIT&gt; to &lt;PREOP&gt;<br> 0000002855: Cyclic command WKC error on LRD - Address: 0x10001000 - WKC act/set=0/1<br> 0000002855: Master state changed from &lt;PREOP&gt; to &lt;SAFEOP&gt;<br> 0000002875: Master state changed from &lt;SAFEOP&gt; to &lt;OP&gt;</div><div> </div><div>Do you know to what could be related?</div><div> </div><div>Best,</div><div>
+<div>
+<div>_________________________________<br> Tommaso Bendinelli<br> R&amp;D Engineer Deep Learning<br> tommaso.bendinelli@csem.ch<br> T +39 3351698625<br> <br>
+</div>
+<img src="/api/v1/ticket_attachment/1550/8394/33886?view=inline" style="max-width:100%;"> <img src="/api/v1/ticket_attachment/1550/8394/33887?view=inline" style="max-width:100%;"> <img src="/api/v1/ticket_attachment/1550/8394/33888?view=inline" style="max-width:100%;"> <img src="/api/v1/ticket_attachment/1550/8394/33889?view=inline" style="max-width:100%;">
+<div>
+<span class="js-signatureMarker"></span><br> _________________________________<br> <br> CSEM SA<br> Untere Gründlistrasse 1 | 6055 Alpnach Dorf<br>
+<a href="http://www.csem.ch" rel="nofollow noreferrer noopener" target="_blank">www.csem.ch</a><br> _________________________________</div>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=8395
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.10.2021 09:24:39 +00:00
+UpdatedAt=05.10.2021 09:24:39 +00:00
+
+### ARTICLE01_SUBJECT
+Identical Project to the one in the explained in LxWin results in Ethercat Error
+
+### ARTICLE01_BODY
+Hi Vladimir, <div> </div><div>Sorry we just realised that we always have this error. However before we did not notice because we printed a lot of other stuff.</div><div>I think it is normal, since it is only at the very beginning.</div><div> </div><div>Sorry for the disturb, and have a great day.</div><div>
+<div>
+<div>_________________________________<br> Tommaso Bendinelli<br> R&amp;D Engineer Deep Learning<br> tommaso.bendinelli@csem.ch<br> T +39 3351698625<br> <br>
+</div>
+<img src="/api/v1/ticket_attachment/1550/8395/33892?view=inline" style="max-width:100%;"> <img src="/api/v1/ticket_attachment/1550/8395/33893?view=inline" style="max-width:100%;"> <img src="/api/v1/ticket_attachment/1550/8395/33894?view=inline" style="max-width:100%;"> <img src="/api/v1/ticket_attachment/1550/8395/33895?view=inline" style="max-width:100%;">
+<div>
+<span class="js-signatureMarker"></span><br> _________________________________<br> <br> CSEM SA<br> Untere Gründlistrasse 1 | 6055 Alpnach Dorf<br>
+<a href="http://www.csem.ch" rel="nofollow noreferrer noopener" target="_blank">www.csem.ch</a><br> _________________________________</div>
+</div>
+<div>
+<br>
+<blockquote type="cite">
+<div>On 5 Oct 2021, at 11:15, BENDINELLI Tommaso &lt;tommaso.bendinelli@csem.ch&gt; wrote:</div>
+<br>
+<div>
+<div>Dear Vladimir,<div> </div>
+<div>Thank you very much for your help. We have now a new issue. We have been working in the last couples of months with a Visual Studio Solution created accordingly to the LxWin documentation (page 23).</div>
+<div>This has worked great.</div>
+<div> </div>
+<div>Now we have created a new Visual Studio Solution, and we created this in exactly the same way as we have created the previous one. However when running it we get the following error:</div>
+<div> </div>
+<div><b>Cyclic Command WKC error on LRD - Address: 0x10001000 - WKC act/set=0/1. </b></div>
+<div> </div>
+<div>Here the extensive log</div>
+<div> </div>
+<div>Process /tmp/MultireactRT created; pid = 375<br> Listening on port 2000<br> Remote debugging from host 192.168.157.1<br> Server listening<br> 0000000000: EcMasterDemoSyncSm V3.1.1.02 (Protected) for Linux_x64 Copyright acontis technologies GmbH @ 2021<br> 0000000000: Full command line: -f "/mnt/rtfiles/eni_multireactRT.xml"-i8254x 1 1 -sp 6000 -lic 378D4DB2-B132A284-30B4171F -t 0<br> 0000000000: TCP Server Starting<br> 0000000001: Start Remote API Server now<br> 0000000002: EC-Master V3.1.1.02 (Protected) for Linux_x64 Copyright acontis technologies GmbH @ 2021<br> 0000002549: EtherCAT network adapter MAC: 68-05-CA-91-FE-26<br> 0000002612: Bus scan successful - 2 slaves found<br> 0000002618: Master state changed from &lt;UNKNOWN&gt; to &lt;INIT&gt;<br> 0000002658: Master state changed from &lt;INIT&gt; to &lt;PREOP&gt;<br> 0000002855: Cyclic command WKC error on LRD - Address: 0x10001000 - WKC act/set=0/1<br> 0000002855: Master state changed from &lt;PREOP&gt; to &lt;SAFEOP&gt;<br> 0000002875: Master state changed from &lt;SAFEOP&gt; to &lt;OP&gt;</div>
+<div> </div>
+<div>Do you know to what could be related?</div>
+<div> </div>
+<div>Best,</div>
+<div>
+<div>
+<div>_________________________________<br> Tommaso Bendinelli<br> R&amp;D Engineer Deep Learning<br> tommaso.bendinelli@csem.ch<br> T +39 3351698625<br> <br>
+</div>&lt;image001.png&gt; &lt;image002.png&gt; &lt;image003.png&gt; &lt;image004.png&gt;<div>
+<br> _________________________________<br> <br> CSEM SA<br> Untere Gründlistrasse 1 | 6055 Alpnach Dorf<br>
+<a href="http://www.csem.ch/" rel="nofollow noreferrer noopener" target="_blank">www.csem.ch</a><br> _________________________________</div>
+</div>
+<br>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE02_HEADER
+Id=8408
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=05.10.2021 10:47:58 +00:00
+UpdatedAt=05.10.2021 10:47:58 +00:00
+
+### ARTICLE02_BODY
+Wenn der Fehler OK ist, dann schließ bitte das Ticket.

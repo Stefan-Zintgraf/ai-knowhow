@@ -1,0 +1,123 @@
+### HEADER
+Id=5846
+Link=http://at-zammad/#ticket/zoom/5846
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=705846
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=27.06.2023 23:45:40 +00:00
+UpdatedAt=28.06.2023 06:46:30 +00:00
+CloseAt=28.06.2023 06:46:29 +00:00
+ArticlesCount=2
+
+### TITLE
+Show Emergency Messages
+
+### ARTICLE00_HEADER
+Id=31181
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.06.2023 23:45:40 +00:00
+UpdatedAt=27.06.2023 23:45:40 +00:00
+
+### ARTICLE00_SUBJECT
+Show Emergency Messages
+
+### ARTICLE00_BODY
+<div>
+<p>I am confused by the DiagHistory view’s “Show Emergency Messages” item. I read ETG.1020 and it describes that bit as follows:</p>
+<p> </p>
+<p><img style="max-width:100%;width:2.5416in;max-height:2.0208in;width:244px;max-height:194px;" src="/api/v1/ticket_attachment/5846/31181/129876?view=inline" alt="A picture containing text, screenshot, font, number
+
+Description automatically generated"></p>
+<p> </p>
+<p>It seem to me that this bit <i>does not</i> control whether we <b><i>show</i></b> emergency messages, but rather whether we <i>generate</i> emergency messages. However, I am very much confused by this description in ETG.1020. It seems to suggest that all diagnosis messages will go to Emergency messages (which are just raw numbers, not text!) instead of the Diagnosis (0x10F3) object. But that does not really make sense to me either.</p>
+<p> </p>
+<p>Can you help me understand in practice what exactly this bit indicates in the slaves? Then we can come back to whether “Show Emergency Messages” in EC-Engineer is correct or not. 😊</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Computer Systems, Inc.<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=31206
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.06.2023 06:46:29 +00:00
+UpdatedAt=28.06.2023 06:46:33 +00:00
+
+### ARTICLE01_SUBJECT
+Show Emergency Messages
+
+### ARTICLE01_BODY
+Hi Quinton,<div><br></div><div>
+<i><span>&gt; </span><span>It seems to suggest that all diagnosis messages will go to Emergency messages</span></i><br>
+</div><div>I think so, too. I haven't checked the SSC. Do you need this information?</div><div><br></div><div>
+<blockquote><div>
+<p>But that does not really make sense to me either.</p>
+<p><br></p>
+</div></blockquote>
+<div>It makes sense, because the slave may push it to its Mailbox without being requested for by the master and it will be delivered to the master application automatically. Else the Master would need some way to know when to read 0x10F3.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Paul</div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Mittwoch, 28. Juni 2023 um 01:45:40, schrieb Quinton Tormanen:<br><br><div>
+<p>I am confused by the DiagHistory view’s “Show Emergency Messages” item. I read ETG.1020 and it describes that bit as follows:</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:2.5416in;max-height:2.0208in;width:244px;max-height:194px;" src="/api/v1/ticket_attachment/5846/31206/129943?view=inline" alt="A picture containing text, screenshot, font, number
+
+Description automatically generated"></p>
+<p> </p>
+<p>It seem to me that this bit <i>does not</i> control whether we <b><i>show</i></b> emergency messages, but rather whether we <i>generate</i> emergency messages. However, I am very much confused by this description in ETG.1020. It seems to suggest that all diagnosis messages will go to Emergency messages (which are just raw numbers, not text!) instead of the Diagnosis (0x10F3) object. But that does not really make sense to me either.</p>
+<p> </p>
+<p>Can you help me understand in practice what exactly this bit indicates in the slaves? Then we can come back to whether “Show Emergency Messages” in EC-Engineer is correct or not. 😊</p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Computer Systems, Inc.<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

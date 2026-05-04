@@ -1,0 +1,237 @@
+### HEADER
+Id=2907
+Link=http://at-zammad/#ticket/zoom/2907
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=YASKAWA Europe GmbH (ID=174, Number=60502, Country=DE)
+Commission=Yaskawa, PLC/Motion Contr. Dev. (ID=198, Number=198)
+Number=702907
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=matthias.mose@yaskawa.eu (ID=1008, FirstName=Matthias, LastName=Mosé)
+CreatedBy=matthias.mose@yaskawa.eu (ID=1008, FirstName=Matthias, LastName=Mosé)
+Type=
+TimeUnit=
+CreatedAt=26.04.2022 09:15:01 +00:00
+UpdatedAt=05.05.2022 09:27:13 +00:00
+CloseAt=05.05.2022 09:27:13 +00:00
+ArticlesCount=5
+
+### TITLE
+Unexpected Delay EC_NOTIFY_SB_MISMATCH
+
+### ARTICLE00_HEADER
+Id=15340
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.04.2022 09:15:01 +00:00
+UpdatedAt=26.04.2022 09:15:01 +00:00
+
+### ARTICLE00_SUBJECT
+Unexpected Delay EC_NOTIFY_SB_MISMATCH
+
+### ARTICLE00_BODY
+<div>
+<p>Guten Tag EtherCAT Support,<br>
+<br>
+</p>
+<p>bei einem unserer Tests haben wir ein für uns nicht erwartetes Verhalten festgestellt.<br>
+<br> Setup:</p>
+<p>EC Master auf Windows mit Simulator Linklayer. 5 Slaves mit 16ms Zykluszeit.</p>
+<p> </p>
+<p>Wir schalten bei 26.045 den simulierten 5. Slave aus. Von nun an dauert es knapp 450 ms bis EC_NOTIFY_SB_MISMATCH ausgelöst wird.</p>
+<p>Das Log habe ich angehängt.</p>
+<p>Wie kommt es zu diesem vergleichsweise großen Delay? Die meisten der Stack Parameter haben wir auf default gesetzt:<br> dwMaxBusSlaves = "256"</p>
+<p>dwMaxAcycFramesQueued = "127"</p>
+<p>dwAdditionalEoEEndpoints = "0"</p>
+<p>dwMaxAcycBytesPerCycle = "4096"</p>
+<p>dwMaxAcycFramesPerCycle = "0"</p>
+<p>dwMaxAcycCmdsPerCycle = "0"</p>
+<p>dwMaxSlavesProcessedPerCycle = "0"</p>
+<p>dwEcatCmdMaxRetries = "0"</p>
+<p>dwEcatCmdTimeout = "0"</p>
+<p>wMaxSlavesProcessedPerBusScanStep = "0"<br>
+<br> Danke und viele Grüße</p>
+<p> </p>
+<div>
+<p><b>Matthias Mosé</b></p>
+</div>
+<div>
+<p>Specialist Communication</p>
+</div>
+<div>
+<p>European Technology Centre<br>
+<br>
+</p>
+</div>
+<p><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" title="http://www.yaskawa.eu.com/" target="_blank"></a><br>
+<br>
+</p>
+<div>
+<p><b>YASKAWA Europe GmbH</b></p>
+</div>
+<div>
+<p>Drives Motion Controls Division</p>
+</div>
+<div>
+<p>Ohmstraße 4</p>
+</div>
+<div>
+<p>91074 Herzogenaurach</p>
+</div>
+<div>
+<p>Germany</p>
+</div>
+<div>
+<p><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" target="_blank">www.yaskawa.eu.com</a><br>
+<br>
+</p>
+</div>
+<div>
+<p><b>P </b>+49 9132 744-1016</p>
+</div>
+<div>
+<p>matthias.mose@yaskawa.eu</p>
+</div>
+<p> </p>
+</div><br>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------------<br> Geschaeftsfuehrer/Managing Directors: Bruno J. Schnekenburger, Marcus Mead, Bobbie Linkenbach <br> Amtsgericht/Local Court: Frankfurt, Commercial register no. 88369 <br> Headquarters: YASKAWA Europe GmbH, Hauptstr. 185, D-65760 Eschborn<br> ------------------------------------------------------------------------------------------------------------------------------<br> CONFIDENTIALITY: This e-mail and any attachments are confidential and may also be privileged.<br> If you are not the named recipient, please notify the sender immediately and do not disclose the contents to another person,<br> use it for any purpose, or store or copy the information in any medium.
+
+### ARTICLE01_HEADER
+Id=15341
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.04.2022 09:41:45 +00:00
+UpdatedAt=26.04.2022 09:41:47 +00:00
+
+### ARTICLE01_SUBJECT
+Unexpected Delay EC_NOTIFY_SB_MISMATCH
+
+### ARTICLE01_BODY
+Guten Tag Herr Mosé,<div><br></div><div>vermutlich ist es durch den Scan des Masters bedingt. <span>Das lässt sich durch detaillierte Logs nachweisen.</span>
+</div><div><span>Im Zweifel können Sie die EcSimulatorSilDemo mit Ihrer Konfigurationsdatei, 16ms Zykluszeit und hoher Verbosity ("-simulator 1 1 exi.xml --sp 6001 -f exi.xml <b>-b 16000 -v 5</b>") starten. </span></div><div><span>Wenn Sie den Fernzugriff erlauben ("-simulator .... --sp 6001"), können Sie den Slave mit Hilfe des EC-Engineers ausschalten.</span></div><div><br></div><div>Viele Grüße</div><div>Paul Bußmann</div><div><br></div>
+
+### ARTICLE02_HEADER
+Id=15587
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.05.2022 14:17:44 +00:00
+UpdatedAt=04.05.2022 14:17:48 +00:00
+
+### ARTICLE02_SUBJECT
+Unexpected Delay EC_NOTIFY_SB_MISMATCH
+
+### ARTICLE02_BODY
+Guten Tag Herr Mosé,<div><br></div><div>konnten Sie die Logdateien erzeugen?</div><div><br></div><div>Viele Grüße</div><div>Paul Bußmann</div><div><br></div>
+
+### ARTICLE03_HEADER
+Id=15588
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.05.2022 14:26:38 +00:00
+UpdatedAt=04.05.2022 14:26:38 +00:00
+
+### ARTICLE03_SUBJECT
+RE: Unexpected Delay EC_NOTIFY_SB_MISMATCH [Ticket#702907]
+
+### ARTICLE03_BODY
+<div>
+<p><span lang="DE">Guten Tag Herr Bußmann,<br>
+<br> vielen Dank für Ihre rasche Antwort.</span></p>
+<p><span lang="DE">Ja, ich habe den Log Level angepasst und konnte es mit unserem Master entsprechend nachvollziehen.</span></p>
+<p><span lang="DE">Die Zeit wird tatsächlich mit dem ScanBus verbracht. Ich habe Ihnen eine Kopie angehängt.</span></p>
+<p><span lang="DE">Wir haben das so hin genommen und unsere Testcases entsprechend angepasst.</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Viele Grüße</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<div>
+<div>
+<p><b>Matthias Mosé</b></p>
+</div>
+<div>
+<p>Software Engineer</p>
+</div>
+<div>
+<p><span>Firmware<br>
+<br>
+</span></p>
+</div>
+<p><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" title="http://www.yaskawa.eu.com/" target="_blank"><span style="color:blue;"></span></a><br>
+<br>
+</p>
+<div>
+<p><b>YASKAWA Europe GmbH</b></p>
+</div>
+<div>
+<p>Drives Motion Controls Division</p>
+</div>
+<div>
+<p><span lang="DE">Ohmstraße 4</span></p>
+</div>
+<div>
+<p><span lang="DE">91074 Herzogenaurach</span></p>
+</div>
+<div>
+<p><span lang="DE">Germany</span></p>
+</div>
+<div>
+<p><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" target="_blank"><span lang="DE" style="color:blue;">www.yaskawa.eu.com</span></a><span lang="DE"><br>
+<br>
+</span></p>
+</div>
+<div>
+<p><b>P </b>+49 9132 744-1016</p>
+</div>
+<div>
+<p><a href="mailto:matthias.mose@yaskawa.eu"><span style="color:blue;">matthias.mose@yaskawa.eu</span></a></p>
+</div>
+</div>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Paul Bußmann via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Mittwoch, 4. Mai 2022 16:18<br>
+<b>To:</b> Matthias Mosé &lt;Matthias.Mose@yaskawa.eu&gt;<br>
+<b>Subject:</b> RE: Unexpected Delay EC_NOTIFY_SB_MISMATCH [Ticket#702907]</p>
+</div>
+</div>
+<p> </p>
+<p>Guten Tag Herr Mosé,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>konnten Sie die Logdateien erzeugen?</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Viele Grüße</p>
+</div>
+<div>
+<p>Paul Bußmann</p>
+</div>
+<div>
+<p> </p>
+</div>
+</div><br>
+<br> ------------------------------------------------------------------------------------------------------------------------------<br> Geschaeftsfuehrer/Managing Directors: Bruno J. Schnekenburger, Marcus Mead, Bobbie Linkenbach <br> Amtsgericht/Local Court: Frankfurt, Commercial register no. 88369 <br> Headquarters: YASKAWA Europe GmbH, Hauptstr. 185, D-65760 Eschborn<br> ------------------------------------------------------------------------------------------------------------------------------<br> CONFIDENTIALITY: This e-mail and any attachments are confidential and may also be privileged.<br> If you are not the named recipient, please notify the sender immediately and do not disclose the contents to another person,<br> use it for any purpose, or store or copy the information in any medium.
+
+### ARTICLE04_HEADER
+Id=15605
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.05.2022 09:27:13 +00:00
+UpdatedAt=05.05.2022 09:27:13 +00:00
+
+### ARTICLE04_SUBJECT
+Unexpected Delay EC_NOTIFY_SB_MISMATCH
+
+### ARTICLE04_BODY
+<div>Guten Tag Herr Mosé,</div><div><br></div><div>vielen Dank für die Information!</div><div><br></div><div>Viele Grüße</div><div>Paul Bußmann</div><div><br></div>

@@ -1,0 +1,265 @@
+### HEADER
+Id=1343
+Link=http://at-zammad/#ticket/zoom/1343
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=JSLT (ID=402, Number=0, Country=JP)
+Commission=Yamaha Motor, Robot Controller (ID=325, Number=325)
+Number=701343
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=eiji.kumakura@jslt.co.jp (ID=21, FirstName=Eiji, LastName=Kumakura)
+CreatedBy=eiji.kumakura@jslt.co.jp (ID=21, FirstName=Eiji, LastName=Kumakura)
+Type=
+TimeUnit=
+CreatedAt=02.09.2021 11:01:16 +00:00
+UpdatedAt=01.10.2021 06:04:12 +00:00
+CloseAt=01.10.2021 06:04:12 +00:00
+ArticlesCount=3
+
+### TITLE
+Question about EtherCAT Safety from Yamaha Motor.
+
+### ARTICLE00_HEADER
+Id=7231
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=02.09.2021 11:01:16 +00:00
+UpdatedAt=02.09.2021 11:01:21 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EtherCAT Safety from Yamaha Motor.
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Yamaha Motor(Commission No：40425) is trying to incorporate a device (Bechoff) compatible with EtherCAT Safety into the system.
+
+I'm telling them that it's okay to use the TwinCAT-generated ENI files.
+
+They are worried that "SlaveToSlave" is configured.
+
+If there is a description of the "CopyInfos" element in the ENI file, is "SlaveToSlave" set?
+
+Thank you for your confirmation.
+
+-------------------------------------------------------
+----- The Japanese translation is as follows: -----
+-------------------------------------------------------
+
+ヤマハ発動機様はEtherCAT Safetyに対応した機器(Bechoff)をシステムに取り込もうとしております。
+
+私は彼らに、TwinCATで生成したENIファイルを使用すれば問題無いと伝えております。
+
+彼らはSlaveToSlaveのコンフィグレーションがされているか心配しております。
+
+ENIファイルに"CopyInfos"エレメントの記述が有ればSlaveToSlaveの設定がされているのでしょうか？
+
+-------------------------------------------------------
+
+Best regards,
+Eiji Kumakura
+
+====================
+JSL Technology Co.,Ltd
+
+2F 911-1 Tanaka-cho, Ashikaga-shi,
+Tochigi 326-0822 Japan
+
+Email: eiji.kumakura@jslt.co.jp
+URL: http://www.jslt.co.jp/
+
+Tel: 81-284-22-7091
+Fax: 81-284-24-7092
+====================
+
+
+### ARTICLE01_HEADER
+Id=7235
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.09.2021 11:59:31 +00:00
+UpdatedAt=02.09.2021 11:59:32 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EtherCAT Safety from Yamaha Motor.
+
+### ARTICLE01_BODY
+Hi Eiji,<div><br></div><div>did they check:</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html?highlight=copyinfo#copy-information-for-slave-to-slave-communication" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html?highlight=copyinfo#copy-information-for-slave-to-slave-communication" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html?highlight=copyinfo#copy-information-for-slave-to-slave-communication</a></div></div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, September 2, 2021, 1:01:16 PM, Eiji Kumakura wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Yamaha Motor(Commission No：40425) is trying to incorporate a device (Bechoff) compatible with EtherCAT Safety into the system.</div>
+<div><br></div>
+<div>I'm telling them that it's okay to use the TwinCAT-generated ENI files.</div>
+<div><br></div>
+<div>They are worried that "SlaveToSlave" is configured.</div>
+<div><br></div>
+<div>If there is a description of the "CopyInfos" element in the ENI file, is "SlaveToSlave" set?</div>
+<div><br></div>
+<div>Thank you for your confirmation.</div>
+<div><br></div>
+<div>-------------------------------------------------------</div>
+<div>----- The Japanese translation is as follows: -----</div>
+<div>-------------------------------------------------------</div>
+<div><br></div>
+<div>ヤマハ発動機様はEtherCAT Safetyに対応した機器(Bechoff)をシステムに取り込もうとしております。</div>
+<div><br></div>
+<div>私は彼らに、TwinCATで生成したENIファイルを使用すれば問題無いと伝えております。</div>
+<div><br></div>
+<div>彼らはSlaveToSlaveのコンフィグレーションがされているか心配しております。</div>
+<div><br></div>
+<div>ENIファイルに"CopyInfos"エレメントの記述が有ればSlaveToSlaveの設定がされているのでしょうか？</div>
+<div><br></div>
+<div>-------------------------------------------------------</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Eiji Kumakura</div>
+<div><br></div>
+<div>====================</div>
+<div>JSL Technology Co.,Ltd</div>
+<div><br></div>
+<div>2F 911-1 Tanaka-cho, Ashikaga-shi,</div>
+<div>Tochigi 326-0822 Japan</div>
+<div><br></div>
+<div>Email: eiji.kumakura@jslt.co.jp</div>
+<div>URL: <a href="http://www.jslt.co.jp/" title="http://www.jslt.co.jp/" rel="nofollow noreferrer noopener" target="_blank">http://www.jslt.co.jp/</a>
+</div>
+<div><br></div>
+<div>Tel: 81-284-22-7091</div>
+<div>Fax: 81-284-24-7092</div>
+<div>====================</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=7271
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=02.09.2021 23:27:42 +00:00
+UpdatedAt=02.09.2021 23:27:42 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EtherCAT Safety from Yamaha Motor. [Ticket#701343]
+
+### ARTICLE02_BODY
+Hello Cyril,
+
+Thank you for your answer.
+
+> did they check:
+
+->I will check with Yamaha.
+
+Best regards,
+Eiji Kumakura
+
+====================
+JSL Technology Co.,Ltd
+
+2F 911-1 Tanaka-cho, Ashikaga-shi,
+Tochigi 326-0822 Japan
+
+Email: eiji.kumakura@jslt.co.jp
+URL: http://www.jslt.co.jp/
+
+Tel: 81-284-22-7091
+Fax: 81-284-24-7092
+====================
+
+On 2021/09/02 20:59, Cyril Eyssautier via EC-Support wrote:
+> Hi Eiji,
+> 
+> did they check:
+> https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html?highlight=copyinfo#copy-information-for-slave-to-slave-communication <https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html?highlight=copyinfo#copy-information-for-slave-to-slave-communication>
+> 
+> Best Regards,
+> Cyril
+> ____________________________________________________________________________
+> Cyril Eyssautier
+> EtherCAT Support
+> acontis technologies GmbH
+> Address: Gartenstraße 46, D-88212 Ravensburg, Germany
+> Http: https://www.acontis.com <https://www.acontis.com>
+> Phone: +49 (751) 56030-30
+> eMail: ecsupport@acontis.com
+> ----------------------------------------------------------------------------
+> Subscribe to our newsletter and stay updated on the latest developments and upcoming events.
+> https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> On Thursday, September 2, 2021, 1:01:16 PM, Eiji Kumakura wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Yamaha Motor(Commission No：40425) is trying to incorporate a device (Bechoff) compatible with EtherCAT Safety into the system.
+>>
+>> I'm telling them that it's okay to use the TwinCAT-generated ENI files.
+>>
+>> They are worried that "SlaveToSlave" is configured.
+>>
+>> If there is a description of the "CopyInfos" element in the ENI file, is "SlaveToSlave" set?
+>>
+>> Thank you for your confirmation.
+>>
+>> -------------------------------------------------------
+>> ----- The Japanese translation is as follows: -----
+>> -------------------------------------------------------
+>>
+>> ヤマハ発動機様はEtherCAT Safetyに対応した機器(Bechoff)をシステムに取り込もうとしております。
+>>
+>> 私は彼らに、TwinCATで生成したENIファイルを使用すれば問題無いと伝えております。
+>>
+>> 彼らはSlaveToSlaveのコンフィグレーションがされているか心配しております。
+>>
+>> ENIファイルに"CopyInfos"エレメントの記述が有ればSlaveToSlaveの設定がされているのでしょうか？
+>>
+>> -------------------------------------------------------
+>>
+>> Best regards,
+>> Eiji Kumakura
+>>
+>> ====================
+>> JSL Technology Co.,Ltd
+>>
+>> 2F 911-1 Tanaka-cho, Ashikaga-shi,
+>> Tochigi 326-0822 Japan
+>>
+>> Email: eiji.kumakura@jslt.co.jp
+>> URL: http://www.jslt.co.jp/ <http://www.jslt.co.jp/>
+>>
+>> Tel: 81-284-22-7091
+>> Fax: 81-284-24-7092
+>> ====================
+>>
+> 
+> 
+> 
+

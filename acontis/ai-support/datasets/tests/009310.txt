@@ -1,0 +1,217 @@
+### HEADER
+Id=9310
+Link=http://at-zammad/#ticket/zoom/9310
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Yushin, Removal robot for molding machines (ID=922, Number=922)
+Number=709310
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=14.11.2024 00:53:06 +00:00
+UpdatedAt=06.12.2024 07:06:47 +00:00
+CloseAt=06.12.2024 07:06:47 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Master(YUSHIN) [M069]
+
+### ARTICLE00_HEADER
+Id=52766
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=14.11.2024 00:53:06 +00:00
+UpdatedAt=14.11.2024 00:53:09 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(YUSHIN) [M069]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(YUSHIN) [M069]
+
+What kind of value is stored in the dwAddr member variable of the EC_T_WKCERR_DESC structure?
+Is it different from the wStationAddress in the EC_T_SLAVE_PROP structure?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=52792
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.11.2024 09:35:49 +00:00
+UpdatedAt=14.11.2024 09:35:53 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(YUSHIN) [M069]
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>the value stored in dwAddr is the logical address. It is different from the station address.</div><div><br></div><div>Best Regards<div data-signature="true" data-signature-id="2">
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, November 14, 2024 at 1:53:06 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(YUSHIN) [M069]</div>
+<div><br></div>
+<div>What kind of value is stored in the dwAddr member variable of the EC_T_WKCERR_DESC structure?</div>
+<div>Is it different from the wStationAddress in the EC_T_SLAVE_PROP structure?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=53211
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=22.11.2024 02:19:37 +00:00
+UpdatedAt=22.11.2024 02:19:37 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master(YUSHIN) [M069] [Ticket#709310]
+
+### ARTICLE02_BODY
+Dear Haithem san
+
+I would like to learn a bit more about logical addresses.
+Is it correct to understand that you are referring to the logical address of the ESC register?
+How does obtaining this information help in the event of a WKC error?
+
+Best regards,
+Takuya Fujikawa
+
+On 2024/11/14 18:35, Haithem Jebali via EC-Support wrote:
+> Hi,
+>
+> the value stored in dwAddr is the logical address. It is different from the station address.
+>
+> Best Regards
+> Haithem Jebali
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+>
+>
+>> On Thursday, November 14, 2024 at 1:53:06 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Master(YUSHIN) [M069]
+>>
+>> What kind of value is stored in the dwAddr member variable of the EC_T_WKCERR_DESC structure?
+>> Is it different from the wStationAddress in the EC_T_SLAVE_PROP structure?
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+>
+>
+>
+
+
+### ARTICLE03_HEADER
+Id=53244
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.11.2024 08:59:04 +00:00
+UpdatedAt=22.11.2024 08:59:08 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(YUSHIN) [M069]
+
+### ARTICLE03_BODY
+Hi Takuya-san,  <div><br></div><div>The <strong>logical address</strong> is a <strong>virtual address</strong> used to identify a device or object within the <strong>EtherCAT network</strong> at a higher level of communication. Logical addresses are not related to the physical placement or configuration of the device on the network but instead are used to reference devices or objects in a way that is independent of their actual position in the physical network topology.  </div><div><br></div><div>Q: Is it correct to understand that you are referring to the logical address of the ESC register?</div><div>A: No</div><div><br></div><div>Q: 
+
+How does obtaining this information help in the event of a WKC error?</div><div>A: It does not help you to locate the slave in the configuration.</div><div><br></div><div>Best Regards<div data-signature="true" data-signature-id="2">
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, November 22, 2024 at 3:19:37 AM, Takuya Fujikawa wrote:<br><br><div>Dear Haithem san</div>
+<div><br></div>
+<div>I would like to learn a bit more about logical addresses.</div>
+<div>Is it correct to understand that you are referring to the logical address of the ESC register?</div>
+<div>How does obtaining this information help in the event of a WKC error?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2024/11/14 18:35, Haithem Jebali via EC-Support wrote:</div>
+<div>&gt; Hi,</div>
+<div>&gt;</div>
+<div>&gt; the value stored in dwAddr is the logical address. It is different from the station address.</div>
+<div>&gt;</div>
+<div>&gt; Best Regards</div>
+<div>&gt; Haithem Jebali</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Thursday, November 14, 2024 at 1:53:06 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Master(YUSHIN) [M069]</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; What kind of value is stored in the dwAddr member variable of the EC_T_WKCERR_DESC structure?</div>
+<div>&gt;&gt; Is it different from the wStationAddress in the EC_T_SLAVE_PROP structure?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

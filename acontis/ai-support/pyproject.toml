@@ -1,0 +1,70 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "support-rag"
+version = "0.1.0"
+description = "Support Knowledge Retrieval (RAG) service — Option B: LlamaIndex + Qdrant + LiteLLM"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = { text = "Proprietary" }
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "httpx>=0.28.0",
+    "pydantic>=2.10.0",
+    "pydantic-settings>=2.6.0",
+    "pyyaml>=6.0.0",
+    "llama-index-core>=0.11.0",
+    "llama-index-vector-stores-qdrant>=0.3.0",
+    "qdrant-client>=1.12.0",
+    "fastembed>=0.5.0",
+    "sentence-transformers>=3.0.0",
+    "opentelemetry-api>=1.28.0",
+    "opentelemetry-sdk>=1.28.0",
+    "opentelemetry-exporter-otlp-proto-grpc>=1.28.0",
+    "mcp>=1.1.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.24.0",
+    "ruff>=0.8.0",
+    "asgi-lifespan>=2.0.0",
+    "playwright>=1.40.0",
+]
+
+[project.scripts]
+support-rag = "support_rag.__main__:main"
+support-rag-mcp = "support_rag.mcp_server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["support_rag"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+"support_rag/web_routes.py" = ["E501"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+markers = [
+    "integration: tests that need real Qdrant, gateway, or other external services",
+    "browser_e2e: Playwright smoke against local support_rag (skips if UI unreachable)",
+    "requires_services: same as integration; use when tests need live stack",
+    "e2e_privacy: live E2E for allow_remote local-only path; requires RUN_E2E_PRIVACY=1",
+    "slow: optional; may download model weights (e.g. R-18 cross-encoder smoke)",
+    "nfr6_compose: docker compose restart API; requires RUN_INTEGRATION=1 and RUN_NFR6_COMPOSE=1",
+]
+
+[tool.uv]
+package = true

@@ -1,0 +1,155 @@
+### HEADER
+Id=10659
+Link=http://at-zammad/#ticket/zoom/10659
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Robert Bosch GmbH (ID=149, Number=40339, Country=DE)
+Commission=Robert Bosch, Testing Systems (ID=168, Number=168)
+Number=7010659
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=dennis.ganz@de.bosch.com (ID=1259, FirstName=Dennis, LastName=Ganz)
+CreatedBy=dennis.ganz@de.bosch.com (ID=1259, FirstName=Dennis, LastName=Ganz)
+Type=
+TimeUnit=
+CreatedAt=27.05.2025 12:08:47 +00:00
+UpdatedAt=30.07.2025 09:50:46 +00:00
+CloseAt=27.05.2025 13:01:06 +00:00
+ArticlesCount=2
+
+### TITLE
+Bosch BhP - Optimierung EtherCAT SC9
+
+### ARTICLE00_HEADER
+Id=61041
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.05.2025 12:08:47 +00:00
+UpdatedAt=27.05.2025 12:08:50 +00:00
+
+### ARTICLE00_SUBJECT
+Bosch BhP - Optimierung EtherCAT SC9
+
+### ARTICLE00_BODY
+<div> </div><br>
+<div style=" color: #242424;">
+<div>________________________________________________________________________________</div>
+<div> Microsoft Teams <a href="https://aka.ms/JoinTeamsMeeting?omkt=de-DE" rel="nofollow noreferrer noopener" title="https://aka.ms/JoinTeamsMeeting?omkt=de-DE" target="_blank"> Benötigen Sie Hilfe?</a> </div>
+<div>
+<a title="Meeting join link" href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_MWUzM2U5MmUtYTQxOS00YjZmLThjYTUtNWM2MDYxYTc4NGMx%40thread.v2/0?context=%7b%22Tid%22%3a%220ae51e19-07c8-4e4b-bb6d-648ee58410f4%22%2c%22Oid%22%3a%22decc4bca-563c-4788-a50a-eaccadaf7d18%22%7d" rel="nofollow noreferrer noopener" target="_blank">Jetzt an der Besprechung teilnehmen</a> </div>
+<div>
+<span style=" color: #616161;">Besprechungs-ID: </span><span style=" color: #242424;">340 662 452 773 6</span>
+</div>
+<div>
+<span style=" color: #616161;">Kennung: </span><span style=" color: #242424;">cr6vG6QX</span>
+</div>
+<div>
+<hr>
+</div>
+<div>
+<div>
+<span style=" color: #242424;">Per Telefon einwählen</span>
+</div>
+<div>
+<a href="http://tel:+4969667781627,,108348577#" rel="nofollow noreferrer noopener" title="http://tel:+4969667781627,,108348577#" target="_blank">+49 69 667781627,,108348577#</a>
+<span style=" color: #616161;">Deutschland, Frankfurt</span>
+</div>
+<div>
+<a href="https://dialin.teams.microsoft.com/875d2cdb-68a9-4217-8ace-2c44218b3c93?id=108348577" rel="nofollow noreferrer noopener" title="https://dialin.teams.microsoft.com/875d2cdb-68a9-4217-8ace-2c44218b3c93?id=108348577" target="_blank">Suchen einer lokalen Rufnummer</a> </div>
+</div>
+<div>
+<span style=" color: #616161;">Telefonkonferenz-ID: </span><span style=" color: #242424;">108 348 577#</span>
+</div>
+<div>
+<span style=" color: #242424;">Mit einem Gerät für Videokonferenzen teilnehmen</span>
+</div>
+<div>
+<span style=" color: #616161;">Mandantenschlüssel: </span><span style=" color: #242424;">bosch@m.webex.com</span>
+</div>
+<div>
+<span style=" color: #616161;">Video-ID: </span><span style=" color: #242424;">122 323 855 33</span>
+</div>
+<div>
+<a href="https://www.webex.com/msteams?confid=12232385533&amp;tenantkey=bosch&amp;domain=m.webex.com" rel="nofollow noreferrer noopener" title="https://www.webex.com/msteams?confid=12232385533&amp;tenantkey=bosch&amp;domain=m.webex.com" target="_blank">Weitere Informationen</a> </div>
+<div>
+<span style=" color: #616161;">Für Organisatoren: </span><a href="https://teams.microsoft.com/meetingOptions/?organizerId=decc4bca-563c-4788-a50a-eaccadaf7d18&amp;tenantId=0ae51e19-07c8-4e4b-bb6d-648ee58410f4&amp;threadId=19_meeting_MWUzM2U5MmUtYTQxOS00YjZmLThjYTUtNWM2MDYxYTc4NGMx@thread.v2&amp;messageId=0&amp;language=de-DE" rel="nofollow noreferrer noopener" title="https://teams.microsoft.com/meetingOptions/?organizerId=decc4bca-563c-4788-a50a-eaccadaf7d18&amp;tenantId=0ae51e19-07c8-4e4b-bb6d-648ee58410f4&amp;threadId=19_meeting_MWUzM2U5MmUtYTQxOS00YjZmLThjYTUtNWM2MDYxYTc4NGMx@thread.v2&amp;messageId=0&amp;language=de-DE" target="_blank">Besprechungsoptionen</a>
+<span style="color: #d1d1d1;">|</span> <a href="https://dialin.teams.microsoft.com/usp/pstnconferencing" rel="nofollow noreferrer noopener" title="https://dialin.teams.microsoft.com/usp/pstnconferencing" target="_blank"> Zurücksetzen der Einwahl-PIN</a> </div>
+<div>
+<div style="color: #616161;">Have a look at our Bosch-hints: Meetings &amp; Calls (1) <a href="https://bos.ch/SPe" rel="nofollow noreferrer noopener" target="_blank">https://bos.ch/SPe</a>, and C-SC3 (2) <a href="https://bos.ch/CbF" rel="nofollow noreferrer noopener" target="_blank">https://bos.ch/CbF</a> Whenever possible, join via the Teams client and use a recommended headset (3) <a href="https://bos.ch/zBEa" rel="nofollow noreferrer noopener" target="_blank">https://bos.ch/zBEa</a>
+</div>
+</div>
+<div>
+<a href="https://msprivacynotice.z16.web.core.windows.net/" rel="nofollow noreferrer noopener" title="https://msprivacynotice.z16.web.core.windows.net/" target="_blank">Datenschutz und Sicherheit</a> </div>
+<div>________________________________________________________________________________</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=61044
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.05.2025 13:01:06 +00:00
+UpdatedAt=27.05.2025 13:01:09 +00:00
+
+### ARTICLE01_SUBJECT
+Bosch BhP - Optimierung EtherCAT SC9
+
+### ARTICLE01_BODY
+<div data-signature="true" data-signature-id="2"><div><br></div></div><div>---Begin forwarded message:---<br><br>
+</div><div><blockquote type="cite">
+<div>Subject: Bosch BhP - Optimierung EtherCAT SC9<br>Date: 05/27/2025 14:08<br>From: Dennis Ganz &lt;dennis.ganz@de.bosch.com&gt;<br>To: Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;, "Kolb Michael (BhP/TEF-EAT33-BAS)" &lt;Michael.Kolb@de.bosch.com&gt;<br><br>
+</div>
+<div> </div>
+<br>
+<div style=" color: #242424;">
+<div>________________________________________________________________________________</div>
+<div> Microsoft Teams <a href="https://aka.ms/JoinTeamsMeeting?omkt=de-DE" rel="nofollow noreferrer noopener" title="https://aka.ms/JoinTeamsMeeting?omkt=de-DE" target="_blank"> Benötigen Sie Hilfe?</a> </div>
+<div>
+<a title="Meeting join link" href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_MWUzM2U5MmUtYTQxOS00YjZmLThjYTUtNWM2MDYxYTc4NGMx%40thread.v2/0?context=%7b%22Tid%22%3a%220ae51e19-07c8-4e4b-bb6d-648ee58410f4%22%2c%22Oid%22%3a%22decc4bca-563c-4788-a50a-eaccadaf7d18%22%7d" rel="nofollow noreferrer noopener" target="_blank">Jetzt an der Besprechung teilnehmen</a> </div>
+<div>
+<span style=" color: #616161;">Besprechungs-ID: </span><span style=" color: #242424;">340 662 452 773 6</span>
+</div>
+<div>
+<span style=" color: #616161;">Kennung: </span><span style=" color: #242424;">cr6vG6QX</span>
+</div>
+<div>
+<hr>
+</div>
+<div>
+<div>
+<span style=" color: #242424;">Per Telefon einwählen</span>
+</div>
+<div>
+<a href="http://tel:+4969667781627,,108348577#" rel="nofollow noreferrer noopener" title="http://tel:+4969667781627,,108348577#" target="_blank">+49 69 667781627,,108348577#</a>
+<span style=" color: #616161;">Deutschland, Frankfurt</span>
+</div>
+<div>
+<a href="https://dialin.teams.microsoft.com/875d2cdb-68a9-4217-8ace-2c44218b3c93?id=108348577" rel="nofollow noreferrer noopener" title="https://dialin.teams.microsoft.com/875d2cdb-68a9-4217-8ace-2c44218b3c93?id=108348577" target="_blank">Suchen einer lokalen Rufnummer</a> </div>
+</div>
+<div>
+<span style=" color: #616161;">Telefonkonferenz-ID: </span><span style=" color: #242424;">108 348 577#</span>
+</div>
+<div>
+<span style=" color: #242424;">Mit einem Gerät für Videokonferenzen teilnehmen</span>
+</div>
+<div>
+<span style=" color: #616161;">Mandantenschlüssel: </span><span style=" color: #242424;">bosch@m.webex.com</span>
+</div>
+<div>
+<span style=" color: #616161;">Video-ID: </span><span style=" color: #242424;">122 323 855 33</span>
+</div>
+<div>
+<a href="https://www.webex.com/msteams?confid=12232385533&amp;tenantkey=bosch&amp;domain=m.webex.com" rel="nofollow noreferrer noopener" title="https://www.webex.com/msteams?confid=12232385533&amp;tenantkey=bosch&amp;domain=m.webex.com" target="_blank">Weitere Informationen</a> </div>
+<div>
+<span style=" color: #616161;">Für Organisatoren: </span><a href="https://teams.microsoft.com/meetingOptions/?organizerId=decc4bca-563c-4788-a50a-eaccadaf7d18&amp;tenantId=0ae51e19-07c8-4e4b-bb6d-648ee58410f4&amp;threadId=19_meeting_MWUzM2U5MmUtYTQxOS00YjZmLThjYTUtNWM2MDYxYTc4NGMx@thread.v2&amp;messageId=0&amp;language=de-DE" rel="nofollow noreferrer noopener" title="https://teams.microsoft.com/meetingOptions/?organizerId=decc4bca-563c-4788-a50a-eaccadaf7d18&amp;tenantId=0ae51e19-07c8-4e4b-bb6d-648ee58410f4&amp;threadId=19_meeting_MWUzM2U5MmUtYTQxOS00YjZmLThjYTUtNWM2MDYxYTc4NGMx@thread.v2&amp;messageId=0&amp;language=de-DE" target="_blank">Besprechungsoptionen</a>
+<span style="color: #d1d1d1;">|</span> <a href="https://dialin.teams.microsoft.com/usp/pstnconferencing" rel="nofollow noreferrer noopener" title="https://dialin.teams.microsoft.com/usp/pstnconferencing" target="_blank"> Zurücksetzen der Einwahl-PIN</a> </div>
+<div>
+<div style="color: #616161;">Have a look at our Bosch-hints: Meetings &amp; Calls (1) <a href="https://bos.ch/SPe" rel="nofollow noreferrer noopener" target="_blank">https://bos.ch/SPe</a>, and C-SC3 (2) <a href="https://bos.ch/CbF" rel="nofollow noreferrer noopener" target="_blank">https://bos.ch/CbF</a> Whenever possible, join via the Teams client and use a recommended headset (3) <a href="https://bos.ch/zBEa" rel="nofollow noreferrer noopener" target="_blank">https://bos.ch/zBEa</a>
+</div>
+</div>
+<div>
+<a href="https://msprivacynotice.z16.web.core.windows.net/" rel="nofollow noreferrer noopener" title="https://msprivacynotice.z16.web.core.windows.net/" target="_blank">Datenschutz und Sicherheit</a> </div>
+<div>________________________________________________________________________________</div>
+</div>
+</blockquote></div><div><br></div><br><br>

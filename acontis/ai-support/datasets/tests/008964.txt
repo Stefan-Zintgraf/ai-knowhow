@@ -1,0 +1,80 @@
+### HEADER
+Id=8964
+Link=http://at-zammad/#ticket/zoom/8964
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=JENOPTIK Industrial Metrology Germany GmbH (ID=123, Number=54506, Country=DE)
+Commission=Jenoptik, Messtechnik (ID=137, Number=137)
+Number=708964
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=alexander.mueller1@jenoptik.com (ID=1579, FirstName=Alexander, LastName=MÃ¼ller)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=30.09.2024 11:29:08 +00:00
+UpdatedAt=15.10.2024 06:10:32 +00:00
+CloseAt=15.10.2024 06:10:32 +00:00
+ArticlesCount=2
+
+### TITLE
+Acontis software update request from Jenoptik
+
+### ARTICLE00_HEADER
+Id=50763
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.09.2024 11:29:08 +00:00
+UpdatedAt=30.09.2024 11:29:12 +00:00
+
+### ARTICLE00_SUBJECT
+Acontis software update request from Jenoptik
+
+### ARTICLE00_BODY
+<p> </p><p>Dear Mr./Ms. Müller,</p><p>thank you for your registration.<br> <br></p><p>First Name: Alexander<br>Last Name: Müller <br>Company: Jenoptik <br><span>Commission Number: <br></span><span>Country: Germany <br></span><span>City: Villingen-Schwenningen <br></span><span>E-Mail: alexander.mueller1@jenoptik.com <br></span>Product: <span>EC-Master,EC-Engineer <br></span>Update Type: Update (binary compatible)<span> <br></span><span>Operating System Version: Windows 10 / LxWin <br></span>Additional information: </p><p><img src="/api/v1/ticket_attachment/8964/50763/211234?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH <br>Gartenstraße 46, 88212 Ravensburg/Germany <br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a> <br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com <br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/8964/50763/211235?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=50794
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.10.2024 06:41:51 +00:00
+UpdatedAt=01.10.2024 06:41:54 +00:00
+
+### ARTICLE01_SUBJECT
+Acontis software update request from Jenoptik
+
+### ARTICLE01_BODY
+<p>Dear Customer, </p><p><br></p>
+
+<p>Please find your new software version below:</p><p><br></p>
+
+<p><a href="https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Master_Windows_x86_32Bit/3.2.2.02/EC-Master-ClassA-AddOn-V3.2.2.02-Windows-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Master_Windows_x86_32Bit/3.2.2.02/EC-Master-ClassA-AddOn-V3.2.2.02-Windows-x86_32Bit-SDK_Unrestricted.zip</a></p>
+
+<p><a href="https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Master_Windows_x86_32Bit/3.2.2.02/EC-Master-RAS-V3.2.2.02-Windows-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Master_Windows_x86_32Bit/3.2.2.02/EC-Master-RAS-V3.2.2.02-Windows-x86_32Bit-SDK_Unrestricted.zip</a></p>
+
+<p><a href="https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Master_Windows_x86_32Bit/3.2.2.02/EC-Master-V3.2.2.02-Windows-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Master_Windows_x86_32Bit/3.2.2.02/EC-Master-V3.2.2.02-Windows-x86_32Bit-SDK_Unrestricted.zip</a></p>
+
+<p><a href="https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Master_Windows_x86_32Bit/3.2.2.02/EC-RtEth-IntelGbe-V3.2.2.02-Windows-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Master_Windows_x86_32Bit/3.2.2.02/EC-RtEth-IntelGbe-V3.2.2.02-Windows-x86_32Bit-SDK_Unrestricted.zip</a></p><p><br></p><div><a href="https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Master_Linux_(RTHV)_x86_32Bit/3.2.2.02/EC-Master-RAS-V3.2.2.02-Linux-x86_32Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Master_Linux_(RTHV)_x86_32Bit/3.2.2.02/EC-Master-RAS-V3.2.2.02-Linux-x86_32Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Master_Linux_(RTHV)_x86_32Bit/3.2.2.02/EC-Master-RAS-V3.2.2.02-Linux-x86_32Bit-SDK_Unrestricted.tar.gz</a></div><div><a href="https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Master_Linux_(RTHV)_x86_32Bit/3.2.2.02/EC-Master-V3.2.2.02-EC-WinRT-Linux-x86_32Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Master_Linux_(RTHV)_x86_32Bit/3.2.2.02/EC-Master-V3.2.2.02-EC-WinRT-Linux-x86_32Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Master_Linux_(RTHV)_x86_32Bit/3.2.2.02/EC-Master-V3.2.2.02-EC-WinRT-Linux-x86_32Bit-SDK_Unrestricted.tar.gz</a></div><div><a href="https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Master_Linux_(RTHV)_x86_32Bit/3.2.2.02/EC-Master-FP-Superset-ENI.pdf" title="https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Master_Linux_(RTHV)_x86_32Bit/3.2.2.02/EC-Master-FP-Superset-ENI.pdf" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Master_Linux_(RTHV)_x86_32Bit/3.2.2.02/EC-Master-FP-Superset-ENI.pdf</a></div><div><br></div><div><div><a href="https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Engineer/3.9.7/EC-Engineer_Dongle_V3.9.7.zip" title="https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Engineer/3.9.7/EC-Engineer_Dongle_V3.9.7.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/J-L/JENOPTIK_Industrial_Metrology_(45035)(DE)/EC-Engineer/3.9.7/EC-Engineer_Dongle_V3.9.7.zip</a></div></div><div><br></div><div><br></div>
+
+<p>Password: ECM88250 </p>
+
+Best Regards, <br>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>

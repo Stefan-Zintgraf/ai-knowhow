@@ -1,0 +1,142 @@
+### HEADER
+Id=249
+Link=http://at-zammad/#ticket/zoom/249
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OSAIcnc S.r.l. (ID=195, Number=57504, Country=IT)
+Commission=OSAIcnc S.r.l., OPENcontrol WinCE (ID=234, Number=234)
+Number=700249
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=gianluca.pasqualotto@osaicnc.com (ID=41, FirstName=Gianluca, LastName=Pasqualotto)
+CreatedBy=gianluca.pasqualotto@osaicnc.com (ID=41, FirstName=Gianluca, LastName=Pasqualotto)
+Type=
+TimeUnit=
+CreatedAt=18.03.2021 14:44:09 +00:00
+UpdatedAt=25.04.2022 12:28:05 +00:00
+CloseAt=19.03.2021 07:04:50 +00:00
+ArticlesCount=2
+
+### TITLE
+Ec-Engineer : Beckhoff Profibus slave EL6731-0010 question
+
+### ARTICLE00_HEADER
+Id=1084
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.03.2021 14:44:09 +00:00
+UpdatedAt=18.03.2021 14:44:10 +00:00
+
+### ARTICLE00_SUBJECT
+Ec-Engineer : Beckhoff Profibus slave EL6731-0010 question
+
+### ARTICLE00_BODY
+<div>
+<p>Dear EC Support,</p>
+<p> </p>
+<p>Configuring that slave the tab EL6731-0010 appears:</p>
+<p> </p>
+<p><img style="max-width:100%;width:7.2604in;max-height:3.7812in;width:697px;max-height:363px;" src="/api/v1/ticket_attachment/249/1084/2632?view=inline"></p>
+<p> </p>
+<p>What is the meaning of the field “Device Type” ? Must be set with some value ? Must be leaved to default ? Thanks.</p>
+<p> </p>
+<p>Best Regards,</p>
+<p>Gianluca</p>
+<p> </p>
+<p><img style="max-width:100%;width:1.4895in;max-height:.4583in;width:143px;max-height:44px;" src="/api/v1/ticket_attachment/249/1084/2633?view=inline"></p>
+<p><b>Gianluca Pasqualotto</b></p>
+<p>R&amp;D - CNC/Servo Software Development Senior Engineer</p>
+<p>Ufficio +39 0125 190 6267</p>
+<p>Mobile +39 329 035 9043</p>
+<p> </p>
+<p>OSAIcnc s.r.l.</p>
+<p>Sede Legale e Operativa: Via Jervis, 11 – 10015 Ivrea (TO) Italia</p>
+<p>Sede Logistica: Via Torino, 14 – 10010 Barone Canavese (TO) Italia</p>
+<p>Indirizzo PEC: osaicncsrl@pec.osaicncsrl.it</p>
+<p><a href="http://www.osaicnc.com" rel="nofollow noreferrer noopener" target="_blank">www.osaicnc.com</a></p>
+<p> </p>
+<p>Questo messaggio e i suoi allegati sono indirizzati esclusivamente ai destinatari. La diffusione, copia o qualsiasi altra azione derivante dalla conoscenza di queste informazioni sono rigorosamente vietate. Qualora abbiate ricevuto questo messaggio per errore siete invitati a comunicarlo al mittente e a provvedere alla sua distruzione.</p>
+<p><i>This e-mail and any attachments are confidential and may contain privileged information intended for the addressee(s) only. Dissemination, copying, printing or use by anybody else is unauthorized. If you are not the intended recipient, please delete this message and any attachments and advise the sender by return e-mail.</i></p>
+<p> </p>
+<p>P <i>Please consider the environment before printing!</i></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=1087
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.03.2021 15:14:18 +00:00
+UpdatedAt=18.03.2021 15:14:19 +00:00
+
+### ARTICLE01_SUBJECT
+Ec-Engineer : Beckhoff Profibus slave EL6731-0010 question
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>it is a PROFIBUS related parameter, see EC-Engineer manual:</div><div><br></div><div>
+<img style="max-width:100%;width: 773px;max-width: 100%;" src="/api/v1/ticket_attachment/249/1087/2650?view=inline"><br>
+</div><div><br></div><div>If you do not need it, you can simply ignore it and keep the default value 2399.</div><div><br></div><div>Best Regards,</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Martin Gaenzer </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Donnerstag, 18. März 2021, 15:44:09, schrieb Gianluca Pasqualotto:<br><br><div>
+<p>Dear EC Support,</p>
+<p> </p>
+<p>Configuring that slave the tab EL6731-0010 appears:</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:7.2604in;max-height:3.7812in;width:697px;max-height:363px;" src="/api/v1/ticket_attachment/249/1087/2651?view=inline"></p>
+<p> </p>
+<p>What is the meaning of the field “Device Type” ? Must be set with some value ? Must be leaved to default ? Thanks.</p>
+<p> </p>
+<p>Best Regards,</p>
+<p>Gianluca</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:1.4895in;max-height:.4583in;width:143px;max-height:44px;" src="/api/v1/ticket_attachment/249/1087/2652?view=inline"></p>
+<p><b>Gianluca Pasqualotto</b></p>
+<p>R&amp;D - CNC/Servo Software Development Senior Engineer</p>
+<p>Ufficio +39 0125 190 6267</p>
+<p>Mobile +39 329 035 9043</p>
+<p> </p>
+<p>OSAIcnc s.r.l.</p>
+<p>Sede Legale e Operativa: Via Jervis, 11 – 10015 Ivrea (TO) Italia</p>
+<p>Sede Logistica: Via Torino, 14 – 10010 Barone Canavese (TO) Italia</p>
+<p>Indirizzo PEC: osaicncsrl@pec.osaicncsrl.it</p>
+<p><a href="http://www.osaicnc.com" rel="nofollow noreferrer noopener" target="_blank">www.osaicnc.com</a></p>
+<p> </p>
+<p>Questo messaggio e i suoi allegati sono indirizzati esclusivamente ai destinatari. La diffusione, copia o qualsiasi altra azione derivante dalla conoscenza di queste informazioni sono rigorosamente vietate. Qualora abbiate ricevuto questo messaggio per errore siete invitati a comunicarlo al mittente e a provvedere alla sua distruzione.</p>
+<p><i>This e-mail and any attachments are confidential and may contain privileged information intended for the addressee(s) only. Dissemination, copying, printing or use by anybody else is unauthorized. If you are not the intended recipient, please delete this message and any attachments and advise the sender by return e-mail.</i></p>
+<p> </p>
+<p>P <i>Please consider the environment before printing!</i></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

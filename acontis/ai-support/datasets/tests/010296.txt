@@ -1,0 +1,154 @@
+### HEADER
+Id=10296
+Link=http://at-zammad/#ticket/zoom/10296
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Yushin, Removal robot for molding machines (ID=922, Number=922)
+Number=7010296
+Owner=m.danilau@acontis.com (ID=4, FirstName=Maksim, LastName=Danilau)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=28.03.2025 07:26:15 +00:00
+UpdatedAt=28.03.2025 11:46:06 +00:00
+CloseAt=28.03.2025 11:46:05 +00:00
+ArticlesCount=2
+
+### TITLE
+Question about EC-Master(YUSHIN) [M1111]
+
+### ARTICLE00_HEADER
+Id=59050
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=28.03.2025 07:26:16 +00:00
+UpdatedAt=28.03.2025 07:26:17 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(YUSHIN) [M1111]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(YUSHIN) [M1111]
+
+They tried to operate EC-Master using a license key corresponding to the MAC address,
+but it is not working properly. The UART outputs 'EcMasterDemo will stop in 600s…', and EC-Master stops 10 minutes after the operation starts.
+The return value of ecatSetLicenseKey is EC_E_NOERROR.
+
+Q1. The key length is said to be 26, 53, or 56, but in the case below, is it 53?
+     00000000-7FFFFFC3-6384F6A0-CF08061A-EC3C7F5F-D795FFAA
+
+Q2. I am attaching the source code I implemented, so please let me know if there are any mistakes.
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=59084
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.03.2025 11:46:06 +00:00
+UpdatedAt=28.03.2025 11:46:07 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(YUSHIN) [M1111]
+
+### ARTICLE01_BODY
+Dear Mr. Fujikawa,<div><br></div><div>despite i checked this package before the delivery at 20.03.2025 for licensing capability as well, i did it once again and unfortunately i cannot confirm the issue you reported.</div><div><br></div><div>I took exactly the same ZIP archive i delivered to customer, built the EcMasterDemo<span>_8MPLUSPD4-EVK and let it run on my board. This is the output:</span>
+</div><div><br></div><div>
+<div>0000000502: EcMasterDemo V3.2.2.99 for uC3_aarch64 Copyright acontis technologies GmbH @ 2025</div>
+<div>0000000502: Full command line: -fslfec 1 1 custom imx8m rgmii 1 -v 3 -perf -t 0 -lic 0FFFFFF8-DFF00FC3-E1728370-9B0856C5-32D9807A-8A80AFA5</div>
+<div>0000000502: EC-Master V3.2.2.99 (Protected) (Mar 19 2025 15:42:43) for uC3_aarch64 Copyright acontis technologies GmbH @ 2025</div>
+<div>0000000502: emllFslFec(0x00000001): V3.2.2.99 (Protected) (Mar 19 2025 15:43:34) for uC3_aarch64 Copyright acontis technologies GmbH @ 2025</div>
+<div>0000005678: EtherCAT network adapter MAC: 00-04-9F-09-06-A4</div>
+<div>0000005752: Bus scan successful - 7 slaves found</div>
+<div>0000005752: ******************************************************************************</div>
+<div>0000005752: Slave ID............: 0x00000000</div>
+<div>0000005752: Bus Index...........: 0</div>
+<div>0000005752: Bus AutoInc Address.: 0x0000 (   0)</div>
+<div>0000005752: Bus Station Address.: 0x03e9 (1001)</div>
+<div>0000005752: Bus Alias Address...: 0x0000 (   0)</div>
+<div>0000005752: Vendor ID...........: 0x00000002 = Beckhoff Automation GmbH</div>
+<div>0000005752: Product Code........: 0x044C2C52 = EK1100</div>
+<div>0000005752: Revision............: 0x00120000   Serial Number: 0</div>
+<div>0000005752: ESC Type............: Beckhoff ET1100 (0x11)  Revision: 0  Build: 3</div>
+<div>0000005752: Connection at Port A: yes (to 0x00010000)</div>
+<div>0000005752: Connection at Port D: no (to 0xFFFFFFFF)</div>
+<div>0000005752: Connection at Port B: yes (to 0x00000001)</div>
+<div>0000005752: Connection at Port C: no (to 0xFFFFFFFF)</div>
+<div>0000005752: Line Crossed........: no</div>
+<div>0000005752: Line Crossed Flags..: 0x0</div>
+<div>0000005752: Cfg Station Address.: 0x03e9 (1001)</div>
+<div>...</div>
+<div><br></div>
+<div>There is no mention neither about 60 minutes nor about wrong license, moreover my EcMasterDemo runs without break longer as 1 hour (longer as 5763834 ms i.e.):</div>
+<div>...</div>
+<div>
+<div>000<b>5763834</b>: ============================================================================</div>
+<div>0005763834: PerfMsmt 'Cycle Time                     ' (min/avg/max) [usec]:  988.0/ 999.9/1011.7</div>
+<div>0005763834: PerfMsmt 'Task Duration (JOB_Total + App)' (min/avg/max) [usec]:   22.9/  26.1/  55.9</div>
+<div>0005763834: PerfMsmt 'JOB_Total                      ' (min/avg/max) [usec]:   18.0/  21.2/  51.0</div>
+<div>0005763834: PerfMsmt 'JOB_ProcessAllRxFrames Duration' (min/avg/max) [usec]:    8.2/  11.0/  30.7</div>
+<div>0005763834: PerfMsmt 'JOB_SendAllCycFrames Duration  ' (min/avg/max) [usec]:    3.3/   6.1/  21.2</div>
+<div>0005763834: PerfMsmt 'JOB_MasterTimer Duration       ' (min/avg/max) [usec]:    2.4/   2.8/  14.1</div>
+<div>0005763834: PerfMsmt 'JOB_SendAcycFrames Duration    ' (min/avg/max) [usec]:    1.2/   1.3/  12.5</div>
+<div>0005763834: PerfMsmt 'myAppWorkPd                    ' (min/avg/max) [usec]:    2.0/   2.1/  13.4</div>
+<div>0005763834:</div>
+</div>
+<div>...</div>
+<div><br></div>
+<div>EcMasterDemo stops after 10 minutes because it is desired default behavior (s. <span><i><b>pAppParms-&gt;dwDemoDuration</b></i> and</span><span> <i><b>DEFAULT_DEMO_DURATION</b></i></span><span>), you can set the demo duration time with the '-t' command line parameter.</span>
+</div>
+<div><br></div>
+<div>A1. The key length below is 6 x 8 + 5 = <b>53</b> or am i wrong? My key has exactly the same length.</div>
+<div>A2. There is nothing wrong in the snippet you attached (key.c). The only idea is to call ecatSetLicenseKey() just after ecatInitMaster() and somewhere before ecatConfigureNetwork(). <span>ecatSetLicenseKey() almost always returns EC_E_NOERROR for it takes no real actions, just applies the given license key to the master. The real license check will be done later on by master itself.</span>
+</div>
+<div><br></div>
+<div><div>Best regards,</div></div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Maksim Danilau, M.Sc.</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Freitag, 28. März 2025 um 08:26:16, schrieb Takuya Fujikawa:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(YUSHIN) [M1111]</div>
+<div><br></div>
+<div>They tried to operate EC-Master using a license key corresponding to the MAC address,</div>
+<div>but it is not working properly. The UART outputs 'EcMasterDemo will stop in 600s…', and EC-Master stops 10 minutes after the operation starts.</div>
+<div>The return value of ecatSetLicenseKey is EC_E_NOERROR.</div>
+<div><br></div>
+<div>Q1. The key length is said to be 26, 53, or 56, but in the case below, is it 53?</div>
+<div>     00000000-7FFFFFC3-6384F6A0-CF08061A-EC3C7F5F-D795FFAA</div>
+<div><br></div>
+<div>Q2. I am attaching the source code I implemented, so please let me know if there are any mistakes.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,142 @@
+### HEADER
+Id=7568
+Link=http://at-zammad/#ticket/zoom/7568
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=OMRON China, Small PLC (ID=511, Number=511)
+Number=707568
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=redmine@my.redmine.jp (ID=190, FirstName=Baba, LastName=Kojiro)
+CreatedBy=redmine@my.redmine.jp (ID=190, FirstName=Baba, LastName=Kojiro)
+Type=
+TimeUnit=
+CreatedAt=05.03.2024 08:01:10 +00:00
+UpdatedAt=29.05.2024 06:13:05 +00:00
+CloseAt=12.03.2024 06:12:21 +00:00
+ArticlesCount=4
+
+### TITLE
+[C1-OAproject - Question #446] (New) About ESI check
+
+### ARTICLE00_HEADER
+Id=41734
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.03.2024 08:01:10 +00:00
+UpdatedAt=05.03.2024 08:01:10 +00:00
+
+### ARTICLE00_SUBJECT
+[C1-OAproject - Question #446] (New) About ESI check
+
+### ARTICLE00_BODY
+Issue <a href="https://my.redmine.jp/pbd-rdc/issues/446" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/446" target="_blank">#446</a> has been reported by Chenhao Hu. <hr>
+<h1> <a href="https://my.redmine.jp/pbd-rdc/issues/446" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/446" target="_blank">Question #446: About ESI check</a> <span style="color:#205d86;">open</span>
+</h1> <ul>
+<li>
+<strong>Author: </strong>Chenhao Hu</li>
+<li>
+<strong>Status: </strong>New</li>
+<li>
+<strong>Priority: </strong>Normal</li>
+<li>
+<strong>Assignee: </strong>acontis acontis</li>
+<li>
+<strong>Start date: </strong>2024-03-05</li>
+<li>
+<strong>Category: </strong>Question</li>
+<li>
+<strong>Category for Omron: </strong>Misc</li>
+<li>
+<strong>Owner: </strong>Chenhao Hu</li>
+</ul> <p>Hi,</p><p>Are there tools that can help to analyse ESI error? Because we have found many errors in some servo manufacturers, whether it can be detected by tools?</p><p>Kind regards,<br>Chenhao Hu.</p><hr>
+<p>My Redmine (プロジェクト運営支援SaaS) から送信<br><a href="http://hosting.redmine.jp/" rel="nofollow noreferrer noopener" target="_blank">http://hosting.redmine.jp/</a></p>
+
+### ARTICLE01_HEADER
+Id=41750
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=05.03.2024 09:07:27 +00:00
+UpdatedAt=05.03.2024 09:07:27 +00:00
+
+### ARTICLE01_BODY
+Hi Kai, sagt Dir dieser Chenhao Hu etwas? Kannst Du die Frage beantworten. Die Links habe ich erstmal nicht geklickt.
+
+### ARTICLE02_HEADER
+Id=42054
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.03.2024 05:29:18 +00:00
+UpdatedAt=12.03.2024 05:29:18 +00:00
+
+### ARTICLE02_SUBJECT
+[C1-OAproject - Question #446] About ESI check
+
+### ARTICLE02_BODY
+Issue <a href="https://my.redmine.jp/pbd-rdc/issues/446#change-3947" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/446#change-3947" target="_blank">#446</a> has been updated by Chenhao Hu. <hr> <ul> <li>
+<strong>File</strong> <a href="https://my.redmine.jp/pbd-rdc/attachments/1908" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/1908" target="_blank">clipboard-202403121326-wonk0.png</a> added</li> <li>
+<strong>Assignee</strong> changed from <i>Chenhao Hu</i> to <i>acontis acontis</i>
+</li>
+</ul> <p>Hi,</p><p>I find there are 2 kinds of ESI:<br>1. EtherCAT subdevice information<br>2. EtherCAT slave information</p><p>What is the relationship of them?</p><p>Kind regards,<br>Chenhao Hu.</p><hr>
+<h1> <a href="https://my.redmine.jp/pbd-rdc/issues/446#change-3947" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/446#change-3947" target="_blank">Question #446: About ESI check</a> <span style="color:#205d86;">open</span>
+</h1> <ul>
+<li>
+<strong>Author: </strong>Chenhao Hu</li>
+<li>
+<strong>Status: </strong>New</li>
+<li>
+<strong>Priority: </strong>Normal</li>
+<li>
+<strong>Assignee: </strong>acontis acontis</li>
+<li>
+<strong>Start date: </strong>2024-03-05</li>
+<li>
+<strong>Category: </strong>Question</li>
+<li>
+<strong>Category for Omron: </strong>Misc</li>
+<li>
+<strong>Owner: </strong>Chenhao Hu</li>
+</ul> <p>Hi,</p><p>Are there tools that can help to analyse ESI error? Because we have found many errors in some servo manufacturers, whether it can be detected by tools?</p><p>Kind regards,<br>Chenhao Hu.</p><legend>Files</legend> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1908/clipboard-202403121326-wonk0.png" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1908/clipboard-202403121326-wonk0.png" target="_blank">clipboard-202403121326-wonk0.png</a> (7.85 KB)<br> <hr>
+<p>My Redmine (プロジェクト運営支援SaaS) から送信<br><a href="http://hosting.redmine.jp/" rel="nofollow noreferrer noopener" target="_blank">http://hosting.redmine.jp/</a></p>
+
+### ARTICLE03_HEADER
+Id=45222
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.05.2024 07:06:05 +00:00
+UpdatedAt=28.05.2024 07:06:05 +00:00
+
+### ARTICLE03_SUBJECT
+[C1-OAproject - Question #446] About ESI check
+
+### ARTICLE03_BODY
+Issue <a href="https://my.redmine.jp/pbd-rdc/issues/446#change-3981" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/446#change-3981" target="_blank">#446</a> has been updated by Chenhao Hu. <hr> <ul> <li>
+<strong>File</strong> <a href="https://my.redmine.jp/pbd-rdc/attachments/1916" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/1916" target="_blank">HDC_FR8200_4.0.xml</a> added</li> <li>
+<strong>Assignee</strong> changed from <i>Chenhao Hu</i> to <i>acontis acontis</i>
+</li>
+</ul> <p>Hi,</p><p>The attached ESI file cannot be imported to EC-Engineer, can you help me repair it?</p><p>Many thanks.</p><p>Kind regards,<br>Chenhao Hu.</p><hr>
+<h1> <a href="https://my.redmine.jp/pbd-rdc/issues/446#change-3981" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/446#change-3981" target="_blank">Question #446: About ESI check</a> <span style="color:#205d86;">open</span>
+</h1> <ul>
+<li>
+<strong>Author: </strong>Chenhao Hu</li>
+<li>
+<strong>Status: </strong>New</li>
+<li>
+<strong>Priority: </strong>Normal</li>
+<li>
+<strong>Assignee: </strong>acontis acontis</li>
+<li>
+<strong>Start date: </strong>2024-03-05</li>
+<li>
+<strong>Category: </strong>Question</li>
+<li>
+<strong>Category for Omron: </strong>Misc</li>
+<li>
+<strong>Owner: </strong>Chenhao Hu</li>
+</ul> <p>Hi,</p><p>Are there tools that can help to analyse ESI error? Because we have found many errors in some servo manufacturers, whether it can be detected by tools?</p><p>Kind regards,<br>Chenhao Hu.</p><legend>Files</legend> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1908/clipboard-202403121326-wonk0.png" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1908/clipboard-202403121326-wonk0.png" target="_blank">clipboard-202403121326-wonk0.png</a> (7.85 KB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1916/HDC_FR8200_4.0.xml" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1916/HDC_FR8200_4.0.xml" target="_blank">HDC_FR8200_4.0.xml</a> (276 KB)<br> <hr>
+<p>My Redmine (プロジェクト運営支援SaaS) から送信<br><a href="http://hosting.redmine.jp/" rel="nofollow noreferrer noopener" target="_blank">http://hosting.redmine.jp/</a></p>

@@ -1,0 +1,134 @@
+### HEADER
+Id=7185
+Link=http://at-zammad/#ticket/zoom/7185
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Demaurex (ID=692, Number=0, Country=CH)
+Commission=Demaurex, Gemini (ID=773, Number=773)
+Number=707185
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=jean-marc.herve@demaurex.com (ID=1887, FirstName=Herve, LastName=Jean-Marc)
+CreatedBy=jean-marc.herve@demaurex.com (ID=1887, FirstName=Herve, LastName=Jean-Marc)
+Type=
+TimeUnit=
+CreatedAt=08.01.2024 09:41:48 +00:00
+UpdatedAt=12.01.2024 13:37:53 +00:00
+CloseAt=12.01.2024 13:37:53 +00:00
+ArticlesCount=2
+
+### TITLE
+Delivery for Demaurex, Gemini, Commission 40685 (Installation EcEngineer)
+
+### ARTICLE00_HEADER
+Id=39198
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.01.2024 09:41:48 +00:00
+UpdatedAt=08.01.2024 09:41:48 +00:00
+
+### ARTICLE00_SUBJECT
+Delivery for Demaurex, Gemini, Commission 40685 (Installation EcEngineer)
+
+### ARTICLE00_BODY
+<div>
+<p>Hello Support,</p>
+<p> </p>
+<p><span lang="EN-US">I’m installing the software EcEngineer. (EC-Engineer_Dongle_V3.8.5) But I have the following error :</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:4.1875in;max-height:1.4166in;width:402px;max-height:136px;" src="/api/v1/ticket_attachment/7185/39198/162726?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US">I have installed CodeMeter 8.0.0, I cannot found 7.20 on the Website</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:4.5104in;max-height:4.4895in;width:433px;max-height:431px;" src="/api/v1/ticket_attachment/7185/39198/162727?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Did you have the V7.20 ? Or it should work with 8.0 ?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Thank you for your answer.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p>Best regards</p>
+<p><b><span>Jean-Marc HERVE<br>
+</span></b>Software Engineering</p>
+<p><b><span>DEMAUREX SA<br>
+</span></b><span>Route de la Venoge 1<br> CH-1302 Vufflens-la-Ville<br> Direct phone: +41 21 633 55 19<br> Mobile phone: +41 79 516 77 97</span></p>
+<p><span lang="DE-CH">E-Mail: jean-marc.herve@demaurex.com</span></p>
+<p><span lang="DE-CH"><p> </p></span></p>
+</div><p><a href="https://disclaimer.rotzinger.ch/DMX/Banner_DMX.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_DMX.html" target="_blank"></a> <a href="https://disclaimer.rotzinger.ch/DMX/Banner_2.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_2.html" target="_blank"></a> <br>
+<br>
+<a href="https://disclaimer.rotzinger.ch/DMX/Banner_3.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_3.html" target="_blank"></a> <a href="https://disclaimer.rotzinger.ch/DMX/Banner_4.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_4.html" target="_blank"></a> <a href="https://disclaimer.rotzinger.ch/DMX/Banner_5.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_5.html" target="_blank"></a></p><p><span>******************************HINWEIS-DISCLAIMER***************************<br> Diese E-Mail ist nur für die als Empfänger genannten Personen oder Gesellschaften bestimmt. Ist diese E-Mail nicht an Sie adressiert, bitten wir Sie, uns zu informieren und die E-Mail zu löschen. Der E-Mail-Verkehr ist nicht geschützt vor Einblick und Veränderungen durch Dritte. Deshalb lehnen wir jegliche Haftung für Schäden ab, die aus der Übermittlung von E-Mails entstehen können. Wenn Sie diese Art von Kommunikation nicht mehr wünschen, ersuchen wir Sie um entsprechende Mitteilung.<br>
+<br> This e-mail is exclusively destined for the mentioned recipient or company. If this e-mail is not addressed to you, please be so kind to inform us about it and delete the mail. The communication via e-mail is not protected from insights and fraudulent manipulation of a third party. Therefore, we disclaim any kind of liability for the contained information. If you dislike this possibility of communication, please be so kind to tell us. </span></p><p> </p>
+
+### ARTICLE01_HEADER
+Id=39207
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.01.2024 10:38:06 +00:00
+UpdatedAt=08.01.2024 10:38:07 +00:00
+
+### ARTICLE01_SUBJECT
+Delivery for Demaurex, Gemini, Commission 40685 (Installation EcEngineer)
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>WIBU changed something in the Registry with the 8.0. This is reason you get this message. 8.0 is ok, but you have to use the latest version of EC-Engineer:</div><div><br></div><div>
+<div><div><a href="https://downloads.acontis.com/2024/D-F/Demaurex_(40685)(CH)/EC-Engineer/3.8.6/EC-Engineer_Dongle_V3.8.6.zip" title="https://downloads.acontis.com/2024/D-F/Demaurex_(40685)(CH)/EC-Engineer/3.8.6/EC-Engineer_Dongle_V3.8.6.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/D-F/Demaurex_(40685)(CH)/EC-Engineer/3.8.6/EC-Engineer_Dongle_V3.8.6.zip</a></div></div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Kai Feifel</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, January 8, 2024 at 10:41:48 AM, Herve Jean-Marc wrote:<br><br><div>
+<p>Hello Support,</p>
+<p> </p>
+<p><span lang="EN-US">I’m installing the software EcEngineer. (EC-Engineer_Dongle_V3.8.5) But I have the following error :</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:4.1875in;max-height:1.4166in;width:402px;max-height:136px;" src="/api/v1/ticket_attachment/7185/39207/162802?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US">I have installed CodeMeter 8.0.0, I cannot found 7.20 on the Website</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:4.5104in;max-height:4.4895in;width:433px;max-height:431px;" src="/api/v1/ticket_attachment/7185/39207/162803?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Did you have the V7.20 ? Or it should work with 8.0 ?</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Thank you for your answer.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p>Best regards</p>
+<p><b><span>Jean-Marc HERVE<br>
+</span></b>Software Engineering</p>
+<p><b><span>DEMAUREX SA<br>
+</span></b><span>Route de la Venoge 1<br> CH-1302 Vufflens-la-Ville<br> Direct phone: +41 21 633 55 19<br> Mobile phone: +41 79 516 77 97</span></p>
+<p><span lang="DE-CH">E-Mail: jean-marc.herve@demaurex.com</span></p>
+<p><span lang="DE-CH"></span></p>
+<p> </p>
+<p></p>
+</div>
+<p><a href="https://disclaimer.rotzinger.ch/DMX/Banner_DMX.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_DMX.html" target="_blank"></a> <a href="https://disclaimer.rotzinger.ch/DMX/Banner_2.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_2.html" target="_blank"></a> <br>
+<br>
+<a href="https://disclaimer.rotzinger.ch/DMX/Banner_3.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_3.html" target="_blank"></a> <a href="https://disclaimer.rotzinger.ch/DMX/Banner_4.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_4.html" target="_blank"></a> <a href="https://disclaimer.rotzinger.ch/DMX/Banner_5.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_5.html" target="_blank"></a></p>
+<p><span>******************************HINWEIS-DISCLAIMER***************************<br> Diese E-Mail ist nur für die als Empfänger genannten Personen oder Gesellschaften bestimmt. Ist diese E-Mail nicht an Sie adressiert, bitten wir Sie, uns zu informieren und die E-Mail zu löschen. Der E-Mail-Verkehr ist nicht geschützt vor Einblick und Veränderungen durch Dritte. Deshalb lehnen wir jegliche Haftung für Schäden ab, die aus der Übermittlung von E-Mails entstehen können. Wenn Sie diese Art von Kommunikation nicht mehr wünschen, ersuchen wir Sie um entsprechende Mitteilung.<br>
+<br> This e-mail is exclusively destined for the mentioned recipient or company. If this e-mail is not addressed to you, please be so kind to inform us about it and delete the mail. The communication via e-mail is not protected from insights and fraudulent manipulation of a third party. Therefore, we disclaim any kind of liability for the contained information. If you dislike this possibility of communication, please be so kind to tell us. </span></p>
+<p> </p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

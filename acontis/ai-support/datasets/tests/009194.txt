@@ -1,0 +1,206 @@
+### HEADER
+Id=9194
+Link=http://at-zammad/#ticket/zoom/9194
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Murata Machinery, Unknown (ID=928, Number=928)
+Number=709194
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=31.10.2024 06:05:34 +00:00
+UpdatedAt=31.01.2025 07:29:19 +00:00
+CloseAt=08.11.2024 07:35:16 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Master(Murata Machinery) [M031]
+
+### ARTICLE00_HEADER
+Id=52180
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=31.10.2024 06:05:34 +00:00
+UpdatedAt=31.10.2024 06:05:36 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(Murata Machinery) [M031]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(Murata Machinery) [M031]
+
+Regarding M030, if it is possible to transmit multiple frames within a single cycle, I believe it is necessary to assign the datagrams of the Slave devices for each frame.
+Could you please let us know whether this assignment of datagrams is done automatically by EC-Master, or if the user must configure it manually?
+Additionally, if it is the former, I would like to know how to obtain information about which frame each Slave's datagram is assigned to, as well as the number of frames sent within a single cycle. If it is the latter, could you please explain the method for assigning datagrams and the maximum number of frames that can be assigned?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=52189
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.10.2024 07:13:38 +00:00
+UpdatedAt=31.10.2024 07:13:42 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(Murata Machinery) [M031]
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>acyclic communication over SDO build frames dynamically.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, October 31, 2024 at 7:05:34 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(Murata Machinery) [M031]</div>
+<div><br></div>
+<div>Regarding M030, if it is possible to transmit multiple frames within a single cycle, I believe it is necessary to assign the datagrams of the Slave devices for each frame.</div>
+<div>Could you please let us know whether this assignment of datagrams is done automatically by EC-Master, or if the user must configure it manually?</div>
+<div>Additionally, if it is the former, I would like to know how to obtain information about which frame each Slave's datagram is assigned to, as well as the number of frames sent within a single cycle. If it is the latter, could you please explain the method for assigning datagrams and the maximum number of frames that can be assigned?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=55643
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=27.01.2025 04:35:48 +00:00
+UpdatedAt=27.01.2025 04:35:48 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master(Murata Machinery) [M031] [Ticket#709194]
+
+### ARTICLE02_BODY
+Dear Cyril san
+
+The number of frames transmitted within one cycle can be confirmed in the Frame Count section of the [Tasks + Sync Units] tab on the Configuration screen in EC-Engineer.
+Is that correct?
+(For screen information, please refer to No31.xlsx.)
+
+Best regards,
+Takuya Fujikawa
+
+On 2024/10/31 16:13, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+>
+> acyclic communication over SDO build frames dynamically.
+>
+> Best Regards,
+> __________________________________________________________________________________________
+> Cyril Eyssautier
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+>
+>
+>> On Thursday, October 31, 2024 at 7:05:34 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Master(Murata Machinery) [M031]
+>>
+>> Regarding M030, if it is possible to transmit multiple frames within a single cycle, I believe it is necessary to assign the datagrams of the Slave devices for each frame.
+>> Could you please let us know whether this assignment of datagrams is done automatically by EC-Master, or if the user must configure it manually?
+>> Additionally, if it is the former, I would like to know how to obtain information about which frame each Slave's datagram is assigned to, as well as the number of frames sent within a single cycle. If it is the latter, could you please explain the method for assigning datagrams and the maximum number of frames that can be assigned?
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+>
+>
+>
+
+
+### ARTICLE03_HEADER
+Id=55662
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.01.2025 07:40:14 +00:00
+UpdatedAt=27.01.2025 07:40:17 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(Murata Machinery) [M031]
+
+### ARTICLE03_BODY
+Hi Takuya,<div><br></div><div>this is correct for the cyclic frames. The acyclic frames are sent according the stack or network state and API called from the API.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Monday, January 27, 2025 at 5:35:48 AM, Takuya Fujikawa wrote:<br><br><div>Dear Cyril san</div>
+<div><br></div>
+<div>The number of frames transmitted within one cycle can be confirmed in the Frame Count section of the [Tasks + Sync Units] tab on the Configuration screen in EC-Engineer.</div>
+<div>Is that correct?</div>
+<div>(For screen information, please refer to No31.xlsx.)</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2024/10/31 16:13, Cyril Eyssautier via EC-Support wrote:</div>
+<div>&gt; Hi Takuya,</div>
+<div>&gt;</div>
+<div>&gt; acyclic communication over SDO build frames dynamically.</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Cyril Eyssautier</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Thursday, October 31, 2024 at 7:05:34 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Master(Murata Machinery) [M031]</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Regarding M030, if it is possible to transmit multiple frames within a single cycle, I believe it is necessary to assign the datagrams of the Slave devices for each frame.</div>
+<div>&gt;&gt; Could you please let us know whether this assignment of datagrams is done automatically by EC-Master, or if the user must configure it manually?</div>
+<div>&gt;&gt; Additionally, if it is the former, I would like to know how to obtain information about which frame each Slave's datagram is assigned to, as well as the number of frames sent within a single cycle. If it is the latter, could you please explain the method for assigning datagrams and the maximum number of frames that can be assigned?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

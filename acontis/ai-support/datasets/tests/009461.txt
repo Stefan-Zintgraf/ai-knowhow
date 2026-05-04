@@ -1,0 +1,128 @@
+### HEADER
+Id=9461
+Link=http://at-zammad/#ticket/zoom/9461
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Schneider Electric (ID=858, Number=0, Country=FR)
+Commission=Schneider Electric, iPCs with PLC function (ID=944, Number=944)
+Number=709461
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=rainer.herrmann@non.se.com (ID=2857, FirstName=Rainer, LastName=Herrmann)
+CreatedBy=rainer.herrmann@non.se.com (ID=2857, FirstName=Rainer, LastName=Herrmann)
+Type=
+TimeUnit=
+CreatedAt=04.12.2024 13:47:03 +00:00
+UpdatedAt=06.12.2024 07:06:49 +00:00
+CloseAt=06.12.2024 07:06:49 +00:00
+ArticlesCount=3
+
+### TITLE
+GUI SDK full version
+
+### ARTICLE00_HEADER
+Id=53689
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.12.2024 13:47:03 +00:00
+UpdatedAt=04.12.2024 13:47:03 +00:00
+
+### ARTICLE00_SUBJECT
+GUI SDK full version
+
+### ARTICLE00_BODY
+<div>Hello,</div><div>I hope this email finds you well. Schneider has finally bought the full license for the GUI SDK and EC-Engineer and they have transferred an EcOem.dat file to us. I don't know what to do with this. Furthermore I need the SDK because when I get the documentation right there are differences between the full version of the SDK and the one that you sent us for evaluation. Could you please be so kind and send the new full SDK to me so that I can work with it? I guess the EcOem.dat is the license file that I need to activate it somehow. Can you please refer to me the documentation I need so that I can use it? Thank you a lot for your quick response on this subject.</div><div>I wish you a nice day!</div><div>Best regards,</div><div>Rainer</div><br>
+<p>General<br>
+</p>
+
+### ARTICLE01_HEADER
+Id=53691
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.12.2024 14:00:47 +00:00
+UpdatedAt=04.12.2024 14:00:47 +00:00
+
+### ARTICLE01_SUBJECT
+GUI SDK full version
+
+### ARTICLE01_BODY
+<div>Hello,</div><div>I got everything from Imen so there is no issue anymore.</div><div>Thank you !</div><div>Best regards,</div><div>Rainer</div><div> </div><br>
+<p>General<br>
+</p><hr>
+<div dir="ltr">
+<b>From:</b> Rainer HERRMANN &lt;rainer.herrmann@non.se.com&gt;<br>
+<b>Sent:</b> Wednesday, December 4, 2024 14:46<br>
+<b>To:</b> t.waggershauser@acontis.com &lt;t.waggershauser@acontis.com&gt;; Elie PEETERS &lt;epeeters@isit.fr&gt;; Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Cc:</b> Imen BEN-HASSEN &lt;imen.benhassen@non.se.com&gt;<br>
+<b>Subject:</b> GUI SDK full version <div> </div>
+</div><div dir="ltr">
+<div>Hello,</div>
+<div>I hope this email finds you well. Schneider has finally bought the full license for the GUI SDK and EC-Engineer and they have transferred an EcOem.dat file to us. I don't know what to do with this. Furthermore I need the SDK because when I get the documentation right there are differences between the full version of the SDK and the one that you sent us for evaluation. Could you please be so kind and send the new full SDK to me so that I can work with it? I guess the EcOem.dat is the license file that I need to activate it somehow. Can you please refer to me the documentation I need so that I can use it? Thank you a lot for your quick response on this subject.</div>
+<div>I wish you a nice day!</div>
+<div>Best regards,</div>
+<div>Rainer</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=53693
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.12.2024 14:18:45 +00:00
+UpdatedAt=04.12.2024 14:18:48 +00:00
+
+### ARTICLE02_SUBJECT
+GUI SDK full version
+
+### ARTICLE02_BODY
+Hi,<div><br></div><div>good to hear, that everything is working now. If you have further questions feel free to ask.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, December 4, 2024 at 3:00:47 PM, Rainer Herrmann wrote:<br><br><div>Hello,</div>
+<div>I got everything from Imen so there is no issue anymore.</div>
+<div>Thank you !</div>
+<div>Best regards,</div>
+<div>Rainer</div>
+<div> </div>
+<br>
+<p>General<br>
+</p>
+<hr>
+<div dir="ltr">
+<b>From:</b> Rainer HERRMANN &lt;rainer.herrmann@non.se.com&gt;<br>
+<b>Sent:</b> Wednesday, December 4, 2024 14:46<br>
+<b>To:</b> t.waggershauser@acontis.com &lt;t.waggershauser@acontis.com&gt;; Elie PEETERS &lt;epeeters@isit.fr&gt;; Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Cc:</b> Imen BEN-HASSEN &lt;imen.benhassen@non.se.com&gt;<br>
+<b>Subject:</b> GUI SDK full version <div> </div>
+</div>
+<div dir="ltr">
+<div>Hello,</div>
+<div>I hope this email finds you well. Schneider has finally bought the full license for the GUI SDK and EC-Engineer and they have transferred an EcOem.dat file to us. I don't know what to do with this. Furthermore I need the SDK because when I get the documentation right there are differences between the full version of the SDK and the one that you sent us for evaluation. Could you please be so kind and send the new full SDK to me so that I can work with it? I guess the EcOem.dat is the license file that I need to activate it somehow. Can you please refer to me the documentation I need so that I can use it? Thank you a lot for your quick response on this subject.</div>
+<div>I wish you a nice day!</div>
+<div>Best regards,</div>
+<div>Rainer</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

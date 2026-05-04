@@ -1,0 +1,126 @@
+### HEADER
+Id=6090
+Link=http://at-zammad/#ticket/zoom/6090
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=Presto Solutions, Generic (ID=478, Number=478)
+Number=706090
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=03.08.2023 08:35:13 +00:00
+UpdatedAt=07.08.2023 06:14:27 +00:00
+CloseAt=07.08.2023 06:14:27 +00:00
+ArticlesCount=2
+
+### TITLE
+About ESI Manager of EC-Engineer.
+
+### ARTICLE00_HEADER
+Id=32579
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.08.2023 08:35:13 +00:00
+UpdatedAt=03.08.2023 08:35:14 +00:00
+
+### ARTICLE00_SUBJECT
+About ESI Manager of EC-Engineer.
+
+### ARTICLE00_BODY
+<p>Hi</p><p><br></p><p>The customer is Ames.</p><p><br></p><p>There is a problem that ESI file of some company are not imported in EC-Engineer due to problem such as grammar.</p><p><br></p><p>So we corrected it(ESI File) and delivered it again. (TwinCAT does not have this problem).</p><p><br></p><p>For example</p><p><br></p><p>Error : &lt;MinData&gt;<b><span style="color: rgb(255, 0, 0);">0</span></b>&lt;/MinData&gt;</p><p> &lt;MaxData&gt;<b>14</b>&lt;/MaxData&gt;</p><p><br></p><p>Correct : &lt;MinData&gt;<b>00</b>&lt;/MinData&gt;</p><p> &lt;MaxData&gt;<b>14</b>&lt;/MaxData&gt;</p><p><br></p><p>Please refer to attached file(ESI file) and advise how to correct it in detail.</p><p>(Explanation of how to modify attaeched esi file so that it can be read by EC-Engieer's ESI Manager.)</p><p><br></p><br><br><p>감사합니다.</p><p><br></p><p>Thank you</p><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p> </p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sundukhan@prestosolution.co.kr</a></span></u></i><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table><p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+
+### ARTICLE01_HEADER
+Id=32592
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.08.2023 10:15:35 +00:00
+UpdatedAt=03.08.2023 10:15:37 +00:00
+
+### ARTICLE01_SUBJECT
+About ESI Manager of EC-Engineer.
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>you receive those errors, because this ESI file is not <span>conform to </span><span>ETG ESI schema.</span>
+</div><div>
+<span>Attached you can find a "repaired" version where I commented all invalid tags by "search/replace".</span><br>
+</div><div><span><br></span></div><div><span>I try to explain the problems:</span></div><div><span><br></span></div><div><div>"&lt;DefaultData&gt;0&lt;/DefaultData&gt;" // 0 is not valid, it can contain only binary format like 00112233</div></div><div>... or you can use <span>&lt;DefaultValue&gt;#x15&lt;/DefaultValue&gt; // This can contain numeric values</span>
+</div><div><div>
+<span>... the same problem exist for "</span><span>MinData" and "MaxData".</span><br>
+</div></div><div><span><br></span></div><div><div>&lt;BitSize&gt;&lt;/BitSize&gt; // This is also not valid because it is empty, it must contain the size </div></div><div>-&gt; <span>&lt;BitSize&gt;0&lt;/BitSize&gt;</span>
+</div><div><span><br></span></div><div><span>Please contact the ESI vendor to fix those problems.</span></div><div><span><br></span></div><div>Best Regards,</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, August 3, 2023 at 10:35:13 AM, DukHan Sun wrote:<br><br><p>Hi</p>
+<p><br></p>
+<p>The customer is Ames.</p>
+<p><br></p>
+<p>There is a problem that ESI file of some company are not imported in EC-Engineer due to problem such as grammar.</p>
+<p><br></p>
+<p>So we corrected it(ESI File) and delivered it again. (TwinCAT does not have this problem).</p>
+<p><br></p>
+<p>For example</p>
+<p><br></p>
+<p>Error : &lt;MinData&gt;<b><span style="color: rgb(255, 0, 0);">0</span></b>&lt;/MinData&gt;</p>
+<p> &lt;MaxData&gt;<b>14</b>&lt;/MaxData&gt;</p>
+<p><br></p>
+<p>Correct : &lt;MinData&gt;<b>00</b>&lt;/MinData&gt;</p>
+<p> &lt;MaxData&gt;<b>14</b>&lt;/MaxData&gt;</p>
+<p><br></p>
+<p>Please refer to attached file(ESI file) and advise how to correct it in detail.</p>
+<p>(Explanation of how to modify attaeched esi file so that it can be read by EC-Engieer's ESI Manager.)</p>
+<p><br></p>
+<br><br><p>감사합니다.</p>
+<p><br></p>
+<p>Thank you</p>
+<p><br></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p> </p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sundukhan@prestosolution.co.kr</a></span></u></i><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

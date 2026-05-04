@@ -1,0 +1,148 @@
+### HEADER
+Id=9320
+Link=http://at-zammad/#ticket/zoom/9320
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Philips Medical Systems NL BV (ID=310, Number=57503, Country=NL)
+Commission=Philips Medical, Computertomograph (ID=366, Number=366)
+Number=709320
+Owner=s.zintgraf@acontis.com (ID=10, FirstName=Stefan, LastName=Zintgraf)
+Customer=joost.kop@philips.com (ID=1449, FirstName=Joost, LastName=Kop)
+CreatedBy=joost.kop@philips.com (ID=1449, FirstName=Joost, LastName=Kop)
+Type=
+TimeUnit=
+CreatedAt=14.11.2024 08:57:59 +00:00
+UpdatedAt=14.02.2025 07:01:35 +00:00
+CloseAt=14.11.2024 09:19:50 +00:00
+ArticlesCount=1
+
+### TITLE
+RE: Presentation and Evaluation versions
+
+### ARTICLE00_HEADER
+Id=52785
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.11.2024 08:57:59 +00:00
+UpdatedAt=14.11.2024 08:58:02 +00:00
+
+### ARTICLE00_SUBJECT
+RE: Presentation and Evaluation versions
+
+### ARTICLE00_BODY
+<div>
+<p>Dear support,</p>
+<p> </p>
+<p>We are trying to run our Software on LxWin were we normally run VxWin.</p>
+<p>We have the ‘demo’ version, running for 15 minutes max.</p>
+<p>Can we have a development licensed version for 2 PCs?</p>
+<p>What do you need from us for that?</p>
+<p> </p>
+<p>Thanks in advance for your reply.</p>
+<p> </p>
+<div>
+<p><span lang="NL">Met vriendelijke groet / With kind regards,</span></p>
+<p><b><span lang="NL"> </span></b><span lang="NL"></span></p>
+<p><b>Joost Kop</b></p>
+<p>Software Developer</p>
+<p>Image Guided Therapy Systems - R&amp;D: MDC SW</p>
+<p>Philips</p>
+<p> </p>
+<p>Veenpluis 6, Building QP 1.237P, 5684 PC Best, Netherlands</p>
+<p>Email: <span style="color:blue;"><a href="mailto:joost.kop@philips.com"><span style="color:blue;">joost.kop@philips.com</span></a></span></p>
+</div>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b><span> Stefan Zintgraf &lt;s.zintgraf@acontis.com&gt; <br>
+<b>Sent:</b> 2024 Sep 17 16:19<br>
+<b>To:</b> Kop, Joost &lt;joost.kop@philips.com&gt;<br>
+<b>Cc:</b> Thomas Waggershauser &lt;t.waggershauser@acontis.com&gt;<br>
+<b>Subject:</b> Presentation and Evaluation versions</span></p>
+</div>
+</div>
+<p> </p>
+<div>
+<p><b><span lang="DE" style="color:#9c6500;">Caution: </span></b><span lang="DE">This e-mail originated from outside of Philips, be careful for phishing. </span></p>
+</div>
+<p><span lang="DE"><p> </p></span></p>
+<div>
+<p><span lang="DE">Hello Joost,</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p>as promised, find attached the presentation.</p>
+<p>Below you will find the download links to the evaluation versions of LxWin and EC-Master for LxWin (RTOSVisor).</p>
+<p>Please distribute to the relevant people.</p>
+<p>In case of technical questions, they should send their requests to the usual support email addresses (<a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a> and <a href="mailto:rtsupport@acontis.com">rtsupport@acontis.com</a>).</p>
+<p>We strongly recommend to use 64 Bit Linux, not 32 Bit. The Linux x86 world is moving away from 32 Bit to 64 Bit.</p>
+<p>In our experience, there should be not that much extra effort if you immediately switch over to 64 Bit, I would not recommend to do it in 2 steps.</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Stefan</p>
+<p> </p>
+<table border="0" cellspacing="0" cellpadding="0" style="background:white;">
+<tbody>
+<tr>
+<td colspan="3" style="padding:3.75pt 3.75pt 3.75pt 3.75pt;">
+<table border="1" cellspacing="0" cellpadding="0" style="background:#f0f0f0;">
+<tbody>
+<tr>
+<td valign="top" style="padding:.75pt .75pt .75pt .75pt;">
+<p><b>LxWin</b></p>
+</td>
+<td valign="top" style="padding:.75pt .75pt .75pt .75pt;">
+<p><a href="http://software.acontis.com/RTOSWin82/8.2.01.03.LxWin.%7B4265E981-A58C-4304-BEA7-7F2E3B6E8056%7D/LxWin.8.2.01.03.zip" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/RTOSWin82/8.2.01.03.LxWin.{4265E981-A58C-4304-BEA7-7F2E3B6E8056}/LxWin.8.2.01.03.zip</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" style="padding:.75pt .75pt .75pt .75pt;">
+<p><b>LxWin Release Notes</b></p>
+</td>
+<td valign="top" style="padding:.75pt .75pt .75pt .75pt;">
+<p><a href="http://software.acontis.com/RTOSWin82/8.2.01.03.LxWin.%7B4265E981-A58C-4304-BEA7-7F2E3B6E8056%7D/ReleaseNotes.htm" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/RTOSWin82/8.2.01.03.LxWin.{4265E981-A58C-4304-BEA7-7F2E3B6E8056}/ReleaseNotes.htm</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" style="padding:.75pt .75pt .75pt .75pt;">
+<p><b>Toolchain for the Kernel 5.15 (32 and 64 bit)</b></p>
+</td>
+<td valign="top" style="padding:.75pt .75pt .75pt .75pt;">
+<p><a href="https://software.acontis.com/LxWin/mingw64.7z" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/LxWin/mingw64.7z</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="border:solid black 1.0pt;background:#f0f0f0;padding:.75pt .75pt .75pt .75pt;">
+<p><b>EC-Master Class A for LxWin x86, 32 Bit</b></p>
+</td>
+<td style="border:solid black 1.0pt;background:#f0f0f0;padding:.75pt .75pt .75pt .75pt;">
+<p><b>Intel Pro/100, Intel Intel Gigabit (Pro/1000), Realtek 8139, Realtek Gigabit (8169), Beckhoff CCAT</b></p>
+</td>
+<td style="border:solid black 1.0pt;background:#f0f0f0;padding:.75pt .75pt .75pt .75pt;">
+<p><a href="https://software.acontis.com/EC-Master/3.1/Linux/EC-Master-V3.1-EC-WinRT-Linux-x86_32Bit-Eval.tar.gz" rel="nofollow noreferrer noopener" title="https://software.acontis.com/EC-Master/3.1/Linux/EC-Master-V3.1-EC-WinRT-Linux-x86_32Bit-Eval.tar.gz" target="_blank">EC-Master-V3.1-EC-WinRT-Linux-x86_32Bit-Eval.tar.gz</a></p>
+</td>
+</tr>
+<tr>
+<td style="border:solid black 1.0pt;background:#f0f0f0;padding:.75pt .75pt .75pt .75pt;">
+<p><b>EC-Master Class A for LxWin x86, 64 Bit</b></p>
+</td>
+<td style="border:solid black 1.0pt;background:#f0f0f0;padding:.75pt .75pt .75pt .75pt;">
+<p><b>Intel Pro/100, Intel Intel Gigabit (Pro/1000), Realtek 8139, Realtek Gigabit (8169), Beckhoff CCAT</b></p>
+</td>
+<td style="border:solid black 1.0pt;background:#f0f0f0;padding:.75pt .75pt .75pt .75pt;">
+<p><a href="https://software.acontis.com/EC-Master/3.1/Linux/EC-Master-V3.1-EC-WinRT-Linux-x86_64Bit-Eval.tar.gz" rel="nofollow noreferrer noopener" title="https://software.acontis.com/EC-Master/3.1/Linux/EC-Master-V3.1-EC-WinRT-Linux-x86_64Bit-Eval.tar.gz" target="_blank">EC-Master-V3.1-EC-WinRT-Linux-x86_64Bit-Eval.tar.gz</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>Quickstart Tutorial, how to run EC-Master on LxWin: <a href="https://public.acontis.com/manuals/LxWin/8.0/html/EC-Win-RT-Linux-Quickstart-Guide/EC-Win-RT-Linux-Quickstart-Guide.html#architecture-of-ec-win" rel="nofollow noreferrer noopener" target="_blank"> https://public.acontis.com/manuals/LxWin/8.0/html/EC-Win-RT-Linux-Quickstart-Guide/EC-Win-RT-Linux-Quickstart-Guide.html#architecture-of-ec-win</a>
+</p>
+<p> </p>
+</div>
+</div><br>
+<hr> The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.

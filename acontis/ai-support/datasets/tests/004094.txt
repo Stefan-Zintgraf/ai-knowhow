@@ -1,0 +1,137 @@
+### HEADER
+Id=4094
+Link=http://at-zammad/#ticket/zoom/4094
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=AJINEXTEK, Autom. Product (ID=333, Number=333)
+Number=704094
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=12.10.2022 08:44:23 +00:00
+UpdatedAt=14.10.2022 06:22:12 +00:00
+CloseAt=14.10.2022 06:22:12 +00:00
+ArticlesCount=2
+
+### TITLE
+About EC-inspector manual of the latest version
+
+### ARTICLE00_HEADER
+Id=21550
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.10.2022 08:44:23 +00:00
+UpdatedAt=12.10.2022 08:44:27 +00:00
+
+### ARTICLE00_SUBJECT
+About EC-inspector manual of the latest version
+
+### ARTICLE00_BODY
+<p>Hi.</p><p><br></p><p>The customer is Ajin.</p><p><br></p><p>1. They want to get EC-inspector manual of the latest version (3.7.5).</p><p><br></p><p>For example.</p><p>There is no description of the functions below in the manual.</p><p><br></p><p><img src="/api/v1/ticket_attachment/4094/21550/89344?view=inline" style="max-width:100%;width: 514px;max-height: 300px;" alt=""></p><p><br></p><p><br></p><p>2. What is the cycle time in EC-Inspector as above picture.</p><p>(Is this just the display interval ? confused with ethecat's cycletime)</p><p><br></p><p>Please advise.</p><p><br></p><p>Have a nice day.</p><p><br></p><br><br><p><br></p><table style=" border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><tbody>
+<tr>
+<td style="border: rgb(0, 0, 0); background-color: transparent;"><p> </p></td>
+<td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;">
+<p><b><br></b></p>
+<p><b>선덕한 위원 / 연구소</b></p>
+<p><b><span style="color: red;"><span style="color: red;"><strong>T.</strong></span> </span></b>070-7167-8601</p>
+<p><b><span style="color: red;"><span style="color: red;"><strong>E.</strong></span> </span></b><i><u><span style="color: blue;"><a href="mailto:ysundukhan@prestosolution.co.kr"><span style="color: rgb(5, 99, 193);">sundukhan@prestosolution.co.kr</span></a></span></u></i></p>
+</td>
+</tr>
+<tr><td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;" colspan="2"><p><span style="color: rgb(99, 101, 99);"><br></span></p></td></tr>
+<tr><td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;" colspan="2">
+<p><br></p>
+<p><span style="color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressed.</span></p>
+<p><span style="color: rgb(99, 101, 99);">Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+</td></tr>
+</tbody></table><p><br></p>
+
+### ARTICLE01_HEADER
+Id=21569
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.10.2022 11:08:32 +00:00
+UpdatedAt=12.10.2022 11:08:35 +00:00
+
+### ARTICLE01_SUBJECT
+About EC-inspector manual of the latest version
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>1. ) This tab is missing in the UserManual at the moment. I added it. But there is not much described:</div><div>
+<div>In this tab, the user can see the busload per cycle and per second.</div>
+<div><br></div>
+<div>2. ) At the moment the EC-Monitor (integrated in EC-Inspector) cannot find out the cycle time of the master. So this is the rate the EC-Monitor is running with. </div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/4094/21569/89443?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, October 12, 2022 at 10:44:23 AM, DukHan Sun wrote:<br><br><p>Hi.</p>
+<p><br></p>
+<p>The customer is Ajin.</p>
+<p><br></p>
+<p>1. They want to get EC-inspector manual of the latest version (3.7.5).</p>
+<p><br></p>
+<p>For example.</p>
+<p>There is no description of the functions below in the manual.</p>
+<p><br></p>
+<p><img src="/api/v1/ticket_attachment/4094/21569/89444?view=inline" style="max-width:100%;max-width:100%;width: 514px;max-height: 300px;" alt=""></p>
+<p><br></p>
+<p><br></p>
+<p>2. What is the cycle time in EC-Inspector as above picture.</p>
+<p>(Is this just the display interval ? confused with ethecat's cycletime)</p>
+<p><br></p>
+<p>Please advise.</p>
+<p><br></p>
+<p>Have a nice day.</p>
+<p><br></p>
+<br><br><p><br></p>
+<table style=" border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><tbody>
+<tr>
+<td style="border: rgb(0, 0, 0); background-color: transparent;"><p> </p></td>
+<td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;">
+<p><b><br></b></p>
+<p><b>선덕한 위원 / 연구소</b></p>
+<p><b><span style="color: red;"><span style="color: red;"><strong>T.</strong></span> </span></b>070-7167-8601</p>
+<p><b><span style="color: red;"><span style="color: red;"><strong>E.</strong></span> </span></b><i><u><span style="color: blue;"><a href="mailto:ysundukhan@prestosolution.co.kr"><span style="color: rgb(5, 99, 193);">sundukhan@prestosolution.co.kr</span></a></span></u></i></p>
+</td>
+</tr>
+<tr><td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;" colspan="2"><p><span style="color: rgb(99, 101, 99);"><br></span></p></td></tr>
+<tr><td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;" colspan="2">
+<p><br></p>
+<p><span style="color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressed.</span></p>
+<p><span style="color: rgb(99, 101, 99);">Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+</td></tr>
+</tbody></table>
+<p><br></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,193 @@
+### HEADER
+Id=4404
+Link=http://at-zammad/#ticket/zoom/4404
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ASCon (ID=615, Number=0, Country=DE)
+Commission=ASCon, Gemini (ID=695, Number=695)
+Number=704404
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=walter.strommer@ascon-systems.de (ID=1373, FirstName=Walter, LastName=Strommer)
+CreatedBy=walter.strommer@ascon-systems.de (ID=1373, FirstName=Walter, LastName=Strommer)
+Type=
+TimeUnit=
+CreatedAt=24.11.2022 09:12:07 +00:00
+UpdatedAt=01.12.2022 08:58:17 +00:00
+CloseAt=24.11.2022 15:44:46 +00:00
+ArticlesCount=3
+
+### TITLE
+[EC ENI] Liste der Datentypen
+
+### ARTICLE00_HEADER
+Id=23221
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=24.11.2022 09:12:07 +00:00
+UpdatedAt=24.11.2022 09:12:10 +00:00
+
+### ARTICLE00_SUBJECT
+[EC ENI] Liste der Datentypen
+
+### ARTICLE00_BODY
+Guten Tag Herr Bußmann,
+
+kurzer Stand: wir sind nun in der Lage Änderungen im RX/TX Bytearray zu detektieren und an unseren Device Connector nach Java zu übermitteln.
+
+Wir haben eine Frage: gibt es einen Link zu einer Auflistung aller möglichen Datentypen, die in einem ENI File vorkommen können?
+
+Vielen Dank für Ihre gelegentlichen Antwort.
+
+Viele Grüße
+Dr. Walter Strommer
+
+ASCon Systems Holding GmbH | Curiestraße 5 | 70563 Stuttgart
+Walter.Strommer@ascon-systems.de
+Mobile +49 172 7135072
+www.ascon-systems.de | Social Media: LinkedIn, Xing, Facebook, Vimeo
+
+Gartner Cool Vendors 2018 Industry 4.0 | Top50Startups in Germany | Winner of the Innovation Award Baden-Württemberg 2020 | EY Entrepreneur of the Year 2020 | CyberOne Hightech Award 2019 | DeepTech4Good 2018
+Handelsregister Stuttgart HRB 722606, Geschäftsführer: Dr. Raimund Menges, Kilian Grefen, Jens Müller, Uwe Reumuth
+Informationen zum Datenschutz
+
+
+
+
+### ARTICLE01_HEADER
+Id=23234
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.11.2022 15:43:59 +00:00
+UpdatedAt=24.11.2022 15:44:00 +00:00
+
+### ARTICLE01_SUBJECT
+[EC ENI] Liste der Datentypen
+
+### ARTICLE01_BODY
+Guten Tag Herr Dr. Strommer,<div><br></div><div>anbei eine Übersicht über die <span>DEFTYPE_...</span><span> Datentypen, die der Master aus der ENI (</span><span>/EtherCATConfig/Config/ProcessImage/Outputs/Variable/DataType</span><span>) liest.</span>
+</div><div><span><br></span></div><div>
+<span>Der Master liefert den besten passenden Datentyp über die APIs </span><span style=" color: rgb(51, 51, 51);">ecatGetSlaveOutpVarInfoEx(...)</span><span>  / </span><span style=" color: rgb(51, 51, 51);">ecatGetSlaveOutpVarInfo(...)</span><span> , s. </span><span style="color: rgb(43, 145, 175);">EC_T_PROCESS_VAR_INFO_EX::</span><span> </span><span style=" color: rgb(51, 51, 51);">wDataType</span><span>. / </span><span style="color: rgb(43, 145, 175);">EC_T_PROCESS_VAR_INFO::</span><span style=" color: rgb(51, 51, 51);">wDataType.</span>
+</div><div><br></div><div>
+<span>Viele Grüße</span><br>
+</div><div>Paul Bußmann<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Donnerstag, 24. November 2022 um 10:12:07, schrieb Walter Strommer:<br><br><div>Guten Tag Herr Bußmann,</div>
+<div><br></div>
+<div>kurzer Stand: wir sind nun in der Lage Änderungen im RX/TX Bytearray zu detektieren und an unseren Device Connector nach Java zu übermitteln.</div>
+<div><br></div>
+<div>Wir haben eine Frage: gibt es einen Link zu einer Auflistung aller möglichen Datentypen, die in einem ENI File vorkommen können?</div>
+<div><br></div>
+<div>Vielen Dank für Ihre gelegentlichen Antwort.</div>
+<div><br></div>
+<div>Viele Grüße</div>
+<div>Dr. Walter Strommer</div>
+<div><br></div>
+<div>ASCon Systems Holding GmbH | Curiestraße 5 | 70563 Stuttgart</div>
+<div>Walter.Strommer@ascon-systems.de</div>
+<div>Mobile +49 172 7135072</div>
+<div>
+<a href="http://www.ascon-systems.de" title="http://www.ascon-systems.de" rel="nofollow noreferrer noopener" target="_blank">www.ascon-systems.de</a> | Social Media: LinkedIn, Xing, Facebook, Vimeo</div>
+<div><br></div>
+<div>Gartner Cool Vendors 2018 Industry 4.0 | Top50Startups in Germany | Winner of the Innovation Award Baden-Württemberg 2020 | EY Entrepreneur of the Year 2020 | CyberOne Hightech Award 2019 | DeepTech4Good 2018</div>
+<div>Handelsregister Stuttgart HRB 722606, Geschäftsführer: Dr. Raimund Menges, Kilian Grefen, Jens Müller, Uwe Reumuth</div>
+<div>Informationen zum Datenschutz</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=23235
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.11.2022 15:44:40 +00:00
+UpdatedAt=24.11.2022 15:44:44 +00:00
+
+### ARTICLE02_SUBJECT
+[EC ENI] Liste der Datentypen
+
+### ARTICLE02_BODY
+<div>Das sollte man in Kapitel "<span>3.6.2 Process variables’ offset and size</span><span>" dokumentieren.</span>
+</div><div><br></div><div>---Begin forwarded message:---<br><br>
+</div><div><blockquote type="cite">
+<div>Betreff: [EC ENI] Liste der Datentypen<br>Datum: 24.11.2022 16:43<br>Von: Paul Bußmann<br>An: Walter Strommer &lt;walter.strommer@ascon-systems.de&gt;<br>CC: martin.kurz@ascon-systems.de<br><br>
+</div>Guten Tag Herr Dr. Strommer,<div><br></div>
+<div>anbei eine Übersicht über die <span>DEFTYPE_...</span><span> Datentypen, die der Master aus der ENI (</span><span>/EtherCATConfig/Config/ProcessImage/Outputs/Variable/DataType</span><span>) liest.</span>
+</div>
+<div><span><br></span></div>
+<div>
+<span>Der Master liefert den besten passenden Datentyp über die APIs </span><span style=" color: rgb(51, 51, 51);">ecatGetSlaveOutpVarInfoEx(...)</span><span>  / </span><span style=" color: rgb(51, 51, 51);">ecatGetSlaveOutpVarInfo(...)</span><span> , s. </span><span style="color: rgb(43, 145, 175);">EC_T_PROCESS_VAR_INFO_EX::</span><span> </span><span style=" color: rgb(51, 51, 51);">wDataType</span><span>. / </span><span style="color: rgb(43, 145, 175);">EC_T_PROCESS_VAR_INFO::</span><span style=" color: rgb(51, 51, 51);">wDataType.</span>
+</div>
+<div><br></div>
+<div>
+<span>Viele Grüße</span><br>
+</div>
+<div>Paul Bußmann<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Donnerstag, 24. November 2022 um 10:12:07, schrieb Walter Strommer:<br><br><div>Guten Tag Herr Bußmann,</div>
+<div><br></div>
+<div>kurzer Stand: wir sind nun in der Lage Änderungen im RX/TX Bytearray zu detektieren und an unseren Device Connector nach Java zu übermitteln.</div>
+<div><br></div>
+<div>Wir haben eine Frage: gibt es einen Link zu einer Auflistung aller möglichen Datentypen, die in einem ENI File vorkommen können?</div>
+<div><br></div>
+<div>Vielen Dank für Ihre gelegentlichen Antwort.</div>
+<div><br></div>
+<div>Viele Grüße</div>
+<div>Dr. Walter Strommer</div>
+<div><br></div>
+<div>ASCon Systems Holding GmbH | Curiestraße 5 | 70563 Stuttgart</div>
+<div>Walter.Strommer@ascon-systems.de</div>
+<div>Mobile +49 172 7135072</div>
+<div>
+<a href="http://www.ascon-systems.de" title="http://www.ascon-systems.de" rel="nofollow noreferrer noopener" target="_blank">www.ascon-systems.de</a> | Social Media: LinkedIn, Xing, Facebook, Vimeo</div>
+<div><br></div>
+<div>Gartner Cool Vendors 2018 Industry 4.0 | Top50Startups in Germany | Winner of the Innovation Award Baden-Württemberg 2020 | EY Entrepreneur of the Year 2020 | CyberOne Hightech Award 2019 | DeepTech4Good 2018</div>
+<div>Handelsregister Stuttgart HRB 722606, Geschäftsführer: Dr. Raimund Menges, Kilian Grefen, Jens Müller, Uwe Reumuth</div>
+<div>Informationen zum Datenschutz</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</blockquote></div><div><br></div>

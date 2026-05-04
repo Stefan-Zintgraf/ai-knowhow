@@ -1,0 +1,124 @@
+### HEADER
+Id=3212
+Link=http://at-zammad/#ticket/zoom/3212
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=Presto Solutions, Generic (ID=478, Number=478)
+Number=703212
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=13.06.2022 10:17:46 +00:00
+UpdatedAt=24.06.2022 06:19:23 +00:00
+CloseAt=24.06.2022 06:19:23 +00:00
+ArticlesCount=2
+
+### TITLE
+About using EC-Inspector
+
+### ARTICLE00_HEADER
+Id=16923
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.06.2022 10:17:46 +00:00
+UpdatedAt=13.06.2022 10:17:49 +00:00
+
+### ARTICLE00_SUBJECT
+About using EC-Inspector
+
+### ARTICLE00_BODY
+<p>Hi.</p><p><br></p><p>This is Hans.</p><p><br></p><p>I have two questions about using EC-Inspector as below.</p><p>(Now i am using Eval version 3.7.2)</p><p><br></p><p>1. How many frames are stored when the snapshot button is pressed ?</p><p><br></p><p>2. Data Acquisition cannot be started despite clicking the start button of change state in Diagnosis mode.</p><p><br></p><p>Please advise.</p><p><br></p><p>Have a nice day.</p><br><br><p><br></p><table style=" border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><tbody>
+<tr>
+<td style="border: rgb(0, 0, 0); background-color: transparent;"><p> </p></td>
+<td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;">
+<p><b><br></b></p>
+<p><b>선덕한 위원 / 연구소</b></p>
+<p><b><span style="color: red;"><span style="color: red;"><strong>T.</strong></span> </span></b>070-7167-8601</p>
+<p><b><span style="color: red;"><span style="color: red;"><strong>E.</strong></span> </span></b><i><u><span style="color: blue;"><a href="mailto:ysundukhan@prestosolution.co.kr"><span style="color: rgb(5, 99, 193);">sundukhan@prestosolution.co.kr</span></a></span></u></i></p>
+</td>
+</tr>
+<tr><td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;" colspan="2"><p><span style="color: rgb(99, 101, 99);"><br></span></p></td></tr>
+<tr><td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;" colspan="2">
+<p><br></p>
+<p><span style="color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressed.</span></p>
+<p><span style="color: rgb(99, 101, 99);">Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+</td></tr>
+</tbody></table><p><br></p>
+
+### ARTICLE01_HEADER
+Id=16932
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.06.2022 11:51:14 +00:00
+UpdatedAt=13.06.2022 11:51:18 +00:00
+
+### ARTICLE01_SUBJECT
+About using EC-Inspector
+
+### ARTICLE01_BODY
+Hi Hans,<div><br></div><div>1. The snapshots saves only the actual state of the network when clicking the button.</div><div><br></div><div>2. You have to do the following steps:</div><div>a. Select EC-Monitor</div><div>b. Open Data Acquisition Tab</div><div>c. click on the gear and create a new recorder</div><div>d. click on the gear again and select "Edit"</div><div>e. enter the path and the filename in the "File" section. Per default there is only <span>Recorder.mf4. Please add the path before and click ok</span>
+</div><div><span>f. select what you want to recorder</span></div><div><span>g. switch to diagnosis mode and click start</span></div><div><span><br></span></div><div><span>It should work then.</span></div><div><span><br></span></div><div><span>Best regards,</span></div><div><span>Kai</span></div><div><br></div><div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, June 13, 2022, 12:17:46 PM, DukHan Sun wrote:<br><br><p>Hi.</p>
+<p><br></p>
+<p>This is Hans.</p>
+<p><br></p>
+<p>I have two questions about using EC-Inspector as below.</p>
+<p>(Now i am using Eval version 3.7.2)</p>
+<p><br></p>
+<p>1. How many frames are stored when the snapshot button is pressed ?</p>
+<p><br></p>
+<p>2. Data Acquisition cannot be started despite clicking the start button of change state in Diagnosis mode.</p>
+<p><br></p>
+<p>Please advise.</p>
+<p><br></p>
+<p>Have a nice day.</p>
+<br><br><p><br></p>
+<table style=" border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><tbody>
+<tr>
+<td style="border: rgb(0, 0, 0); background-color: transparent;"><p> </p></td>
+<td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;">
+<p><b><br></b></p>
+<p><b>선덕한 위원 / 연구소</b></p>
+<p><b><span style="color: red;"><span style="color: red;"><strong>T.</strong></span> </span></b>070-7167-8601</p>
+<p><b><span style="color: red;"><span style="color: red;"><strong>E.</strong></span> </span></b><i><u><span style="color: blue;"><a href="mailto:ysundukhan@prestosolution.co.kr"><span style="color: rgb(5, 99, 193);">sundukhan@prestosolution.co.kr</span></a></span></u></i></p>
+</td>
+</tr>
+<tr><td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;" colspan="2"><p><span style="color: rgb(99, 101, 99);"><br></span></p></td></tr>
+<tr><td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;" colspan="2">
+<p><br></p>
+<p><span style="color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressed.</span></p>
+<p><span style="color: rgb(99, 101, 99);">Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+</td></tr>
+</tbody></table>
+<p><br></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div></div>

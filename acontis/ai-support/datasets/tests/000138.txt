@@ -1,0 +1,258 @@
+### HEADER
+Id=138
+Link=http://at-zammad/#ticket/zoom/138
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=NRT Optical Sorting (ID=407, Number=0, Country=US)
+Commission=NRT Optical Sorting, Unknown (ID=485, Number=485)
+Number=700138
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=dmccormick@nrtsorters.com (ID=168, FirstName=Dan, LastName=McCormick)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=08.03.2021 16:17:51 +00:00
+UpdatedAt=15.03.2021 16:48:48 +00:00
+CloseAt=12.03.2021 07:05:04 +00:00
+ArticlesCount=2
+
+### TITLE
+Fwd: Question about the Link Layer libraries
+
+### ARTICLE00_HEADER
+Id=583
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.03.2021 16:17:51 +00:00
+UpdatedAt=08.03.2021 16:17:51 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Question about the Link Layer libraries
+
+### ARTICLE00_BODY
+<div>Hi,</div><div> </div><div>Is it possible to use this LD_LIBRARY_PATH to point to the location of the link layers?<br>
+</div><br>/Jon<br><br><div>
+<strong> From: </strong> Dan McCormick &lt;dmccormick@nrtsorters.com&gt; <br>
+<strong> To: </strong> "j.waters@acontis.com" &lt;j.waters@acontis.com&gt; <br>
+<strong> Sent: </strong> 3/8/2021 10:17 AM <br>
+<strong> Subject: </strong> Question about the Link Layer libraries <br><br><blockquote><div>
+<div>
+<p>Hi Jon,</p>
+<p> </p>
+<p>Next question. The link layer libraries (e.g. libemllI8254x.so, etc.) seem to have to be in the working directory of our running application in order for the Actonis library to find and load them. We normally just use the LD_LIBRARY_PATH to tell our apps where to look for such things but it’s not honored in this case.</p>
+<p> </p>
+<p>Is there a way to tell the Acontis library to look somewhere else for these link layer libraries? If not, we can live the way it is currently working.</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Dan</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Jon Waters [mailto:j.waters@acontis.com] <br>
+<b>Sent:</b> Friday, March 05, 2021 6:52 PM<br>
+<b>To:</b> Dan McCormick &lt;dmccormick@nrtsorters.com&gt;<br>
+<b>Subject:</b> RE: 2 more non-time-limited Acontis run-times</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Dan,</p>
+<p> </p>
+<p>Here you go. Good luck with the testing next week and keep me posted. Have a great weekend.</p>
+<p> </p>
+<p>Jon Waters</p>
+<p>General Manager</p>
+<p> </p>
+<p>acontis technologies Inc.</p>
+<p>945 Concord Street</p>
+<p>Framingham, MA 01701</p>
+<p>Phone: +1-508-809-7201</p>
+<p> </p>
+<div>
+<p><b>From: </b>dmccormick@nrtsorters.com<br>
+<b>Sent: </b>Friday, March 5, 2021 5:56 PM<br>
+<b>To: </b>j.waters@acontis.com<br>
+<b>Subject: </b>FW: 2 more non-time-limited Acontis run-times</p>
+</div>
+<p> </p>
+<p>Hi Jon,</p>
+<p> </p>
+<p>Here two more mac addresses to be licensed.</p>
+<p> </p>
+<p>00-18-7d-be-6a-7f</p>
+<p>00-18-7d-be-6a-80</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Dan</p>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Rick Hill <br>
+<b>Sent:</b> Friday, March 05, 2021 4:32 PM<br>
+<b>To:</b> Dan McCormick &lt;dmccormick@nrtsorters.com&gt;<br>
+<b>Subject:</b> 2 more non-time-limited Acontis run-times</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Hello Dan,</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Jon Waters will provide us 2 more unlimited run-times so we can load up the 16936 SR108 next week for tests. When convenient, send me (or Jon directly) the other MAC addresses we will use. If you want them now I'm sure he will turn it around immediately.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>thanks,<br> Rick</p>
+</div>
+<div>
+<p>CAUTION: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.</p>
+</div>
+<p> </p>
+</div>
+</div></blockquote>
+</div>
+
+### ARTICLE01_HEADER
+Id=584
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.03.2021 16:39:34 +00:00
+UpdatedAt=08.03.2021 16:39:37 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: Question about the Link Layer libraries
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>it is searched for first in current directory then it tries dlopen (this is to prevent accidently loading outdated libs from /usr/lib).</div><div>See EcOs.cpp:</div><div><br></div><div><div>/* search LinkLayer first in current working directory and then with ld library search path */</div></div><div>
+<div data-signature="true" data-signature-id="2">
+<div><br></div>
+<div>So renaming the .so in current dir should make LD_LIBRARY_PATH work in this case.</div>
+<div><br></div>
+<div>As another deprecated solution EcOs.cpp can be changed and linked explicitely to the executeable.</div>
+<div><br></div>
+<div>Mit freundlichen Grüßen / Best Regards</div>
+<div>Paul Bußmann<br>
+</div>
+<div><br></div>
+<div>____________________________________________________________________________</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>Fax: +49 (751) 56030-31</div>
+<div>eMail: ecsupport@acontis.com</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Montag, 8. März 2021, 17:17:51, schrieb Jon Waters:<br><br><div>Hi,</div>
+<div> </div>
+<div>Is it possible to use this LD_LIBRARY_PATH to point to the location of the link layers?<br>
+</div>
+<br>/Jon<br><br><div>
+<strong> From: </strong> Dan McCormick &lt;dmccormick@nrtsorters.com&gt; <br>
+<strong> To: </strong> "j.waters@acontis.com" &lt;j.waters@acontis.com&gt; <br>
+<strong> Sent: </strong> 3/8/2021 10:17 AM <br>
+<strong> Subject: </strong> Question about the Link Layer libraries <br><br><blockquote><div>
+<div>
+<p>Hi Jon,</p>
+<p> </p>
+<p>Next question. The link layer libraries (e.g. libemllI8254x.so, etc.) seem to have to be in the working directory of our running application in order for the Actonis library to find and load them. We normally just use the LD_LIBRARY_PATH to tell our apps where to look for such things but it’s not honored in this case.</p>
+<p> </p>
+<p>Is there a way to tell the Acontis library to look somewhere else for these link layer libraries? If not, we can live the way it is currently working.</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Dan</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Jon Waters [mailto:j.waters@acontis.com] <br>
+<b>Sent:</b> Friday, March 05, 2021 6:52 PM<br>
+<b>To:</b> Dan McCormick &lt;dmccormick@nrtsorters.com&gt;<br>
+<b>Subject:</b> RE: 2 more non-time-limited Acontis run-times</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Dan,</p>
+<p> </p>
+<p>Here you go. Good luck with the testing next week and keep me posted. Have a great weekend.</p>
+<p> </p>
+<p>Jon Waters</p>
+<p>General Manager</p>
+<p> </p>
+<p>acontis technologies Inc.</p>
+<p>945 Concord Street</p>
+<p>Framingham, MA 01701</p>
+<p>Phone: +1-508-809-7201</p>
+<p> </p>
+<div>
+<p><b>From: </b>dmccormick@nrtsorters.com<br>
+<b>Sent: </b>Friday, March 5, 2021 5:56 PM<br>
+<b>To: </b>j.waters@acontis.com<br>
+<b>Subject: </b>FW: 2 more non-time-limited Acontis run-times</p>
+</div>
+<p> </p>
+<p>Hi Jon,</p>
+<p> </p>
+<p>Here two more mac addresses to be licensed.</p>
+<p> </p>
+<p>00-18-7d-be-6a-7f</p>
+<p>00-18-7d-be-6a-80</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Dan</p>
+<p> </p>
+<div>
+<div>
+<p><b>From:</b> Rick Hill <br>
+<b>Sent:</b> Friday, March 05, 2021 4:32 PM<br>
+<b>To:</b> Dan McCormick &lt;dmccormick@nrtsorters.com&gt;<br>
+<b>Subject:</b> 2 more non-time-limited Acontis run-times</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Hello Dan,</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Jon Waters will provide us 2 more unlimited run-times so we can load up the 16936 SR108 next week for tests. When convenient, send me (or Jon directly) the other MAC addresses we will use. If you want them now I'm sure he will turn it around immediately.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>thanks,<br> Rick</p>
+</div>
+<div>
+<p>CAUTION: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.</p>
+</div>
+<p> </p>
+</div>
+</div></blockquote>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

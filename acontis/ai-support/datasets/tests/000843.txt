@@ -1,0 +1,122 @@
+### HEADER
+Id=843
+Link=http://at-zammad/#ticket/zoom/843
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bucher Automation (ID=124, Number=54505, Country=DE)
+Commission=Bucher Industries, JetControl (ID=139, Number=139)
+Number=700843
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=tfoell@jetter.de (ID=35, FirstName=Tobias, LastName=Föll)
+CreatedBy=tfoell@jetter.de (ID=35, FirstName=Tobias, LastName=Föll)
+Type=
+TimeUnit=
+CreatedAt=17.06.2021 13:53:41 +00:00
+UpdatedAt=02.07.2021 06:01:07 +00:00
+CloseAt=02.07.2021 06:01:07 +00:00
+ArticlesCount=2
+
+### TITLE
+Ecat Master +Sternverteiler + flexible Konfigurationen des Kunden
+
+### ARTICLE00_HEADER
+Id=4676
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.06.2021 13:53:42 +00:00
+UpdatedAt=17.06.2021 13:53:46 +00:00
+
+### ARTICLE00_SUBJECT
+Ecat Master +Sternverteiler + flexible Konfigurationen des Kunden
+
+### ARTICLE00_BODY
+<div> </div><div> <p> </p>
+<p>Hallo Support,</p>
+<p> </p>
+<p>ein Kunde von uns möchte flexible Ecat Konfigurationen in seiner Anlage abbilden.</p>
+<p> </p>
+<p>( -&gt; siehe 2021-06-17 15_36_37-Jetter_CU_1128_flexible_Konfiguration.png)</p>
+<p> </p>
+<p>Dazu haben wir den CU-1128 vorgeschlagen.</p>
+<p> </p>
+<p>Wir haben das Feature Super Set ENI in unsere Steuerung integriert. Da wir jedoch das ENI File immer nur beim Booten der Steuerung dem Master Stack zur Verfügung stellen. Können Ecat Teilnehmer zwar zur Laufzeit der Steuerung entfernt/hinzugefügt werden, die Änderungen werden jedoch erst nach dem nächsten Booten der Steuerung übernommen/aktiviert.</p>
+<p> </p>
+<p>Deshalb haben wir den CU-1128 vorgeschlagen , da ansonsten jede Konfigurationsänderung durch ein Neustart der Steuerung „abgeschlossen“ werden muss.</p>
+<p> </p>
+<p>Anbei eine Konfiguration mit der die Steuerung bootet.</p>
+<p>( -&gt; siehe 2021-06-17 15_36_37-Jetter_CU_1128_flexible_Konfiguration.png)</p>
+<p> </p>
+<p>Jetzt die Frage:</p>
+<p> </p>
+<p>A)</p>
+<p>Wenn nun z.B. nach dem Booten der Steuerung der Teilnehmer 1007 entfernt wird , bleiben ja alle anderen Ecat Teilnehmer( 1006,1001,..) auf OP und funktionieren weiter ?</p>
+<p> </p>
+<p>B)</p>
+<p>Wenn dieser Teilnehmer 1007 danach wieder angesteckt wird, gibt es eine Ecat Notification und man muss den Teilnehmer 1007 wieder manuell auf OP setzen, oder ?</p>
+<p> </p>
+<p>C)</p>
+<p>Wir müssen damit nur sicherstellen, dass die Ecat Konfiguration ( alle Teilnehmer sind so angeschlossen wie im ENI File vorgegeben) beim Booten passt, oder ?</p>
+<p> </p>
+<p>Danke.</p>
+<p> </p>
+</div><br>
+<p>Mit freundlichen Grüßen / Kind regards</p><p>i.V. Tobias Föll</p><p>Head of System Engineering</p><p>Jetter AG<br> Gräterstraße 2 <br> DE-71642 Ludwigsburg <br> Tel: +49-7141-2550-0 <br> Fax: +49-7141-2550-425 <br> tfoell@jetter.de <br>
+<a href="http://www.jetter.de/" rel="nofollow noreferrer noopener" target="_blank">www.jetter.de</a><br> Datenschutzerklärung / Privacy Policy: <a href="https://www.jetter.de/kontakt/datenschutz.html" rel="nofollow noreferrer noopener" target="_blank"> www.jetter.de/kontakt/datenschutz.html</a></p><p>Ust.-Id.: DE 812 643 615<br> Amtsgericht Stuttgart HRB 205545 <br> Vorstandsvorsitzender: Christian Benz <br> Vorsitzender des Aufsichtsrates: Martin Jetter </p><p>VAT Reg.-No.: DE 812 643 615<br> Registered: Stuttgart HRB 205545 <br> CEO: Christian Benz <br> Chairman of the Supervisory Board: Martin Jetter</p>
+
+### ARTICLE01_HEADER
+Id=4678
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.06.2021 14:23:12 +00:00
+UpdatedAt=17.06.2021 14:23:14 +00:00
+
+### ARTICLE01_SUBJECT
+Ecat Master +Sternverteiler + flexible Konfigurationen des Kunden
+
+### ARTICLE01_BODY
+<div>Hallo Herr Föll,</div><div><br></div><div>A) Ja</div><div>B) Ja<br>
+</div><div>C) Ja<br>
+</div><div><br></div>Schöne Grüße,<div>Cyril Eyssautier</div><div><br></div><div><blockquote type="cite">On Thursday, June 17, 2021, 3:53:42 PM, Tobias Föll wrote:<br><br><div> </div>
+<div> <p> </p>
+<p>Hallo Support,</p>
+<p> </p>
+<p>ein Kunde von uns möchte flexible Ecat Konfigurationen in seiner Anlage abbilden.</p>
+<p> </p>
+<p>( -&gt; siehe 2021-06-17 15_36_37-Jetter_CU_1128_flexible_Konfiguration.png)</p>
+<p> </p>
+<p>Dazu haben wir den CU-1128 vorgeschlagen.</p>
+<p> </p>
+<p>Wir haben das Feature Super Set ENI in unsere Steuerung integriert. Da wir jedoch das ENI File immer nur beim Booten der Steuerung dem Master Stack zur Verfügung stellen. Können Ecat Teilnehmer zwar zur Laufzeit der Steuerung entfernt/hinzugefügt werden, die Änderungen werden jedoch erst nach dem nächsten Booten der Steuerung übernommen/aktiviert.</p>
+<p> </p>
+<p>Deshalb haben wir den CU-1128 vorgeschlagen , da ansonsten jede Konfigurationsänderung durch ein Neustart der Steuerung „abgeschlossen“ werden muss.</p>
+<p> </p>
+<p>Anbei eine Konfiguration mit der die Steuerung bootet.</p>
+<p>( -&gt; siehe 2021-06-17 15_36_37-Jetter_CU_1128_flexible_Konfiguration.png)</p>
+<p> </p>
+<p>Jetzt die Frage:</p>
+<p> </p>
+<p>A)</p>
+<p>Wenn nun z.B. nach dem Booten der Steuerung der Teilnehmer 1007 entfernt wird , bleiben ja alle anderen Ecat Teilnehmer( 1006,1001,..) auf OP und funktionieren weiter ?</p>
+<p> </p>
+<p>B)</p>
+<p>Wenn dieser Teilnehmer 1007 danach wieder angesteckt wird, gibt es eine Ecat Notification und man muss den Teilnehmer 1007 wieder manuell auf OP setzen, oder ?</p>
+<p> </p>
+<p>C)</p>
+<p>Wir müssen damit nur sicherstellen, dass die Ecat Konfiguration ( alle Teilnehmer sind so angeschlossen wie im ENI File vorgegeben) beim Booten passt, oder ?</p>
+<p> </p>
+<p>Danke.</p>
+<p> </p>
+</div>
+<br>
+<p>Mit freundlichen Grüßen / Kind regards</p>
+<p>i.V. Tobias Föll</p>
+<p>Head of System Engineering</p>
+<p>Jetter AG<br> Gräterstraße 2 <br> DE-71642 Ludwigsburg <br> Tel: +49-7141-2550-0 <br> Fax: +49-7141-2550-425 <br> tfoell@jetter.de <br>
+<a href="http://www.jetter.de/" rel="nofollow noreferrer noopener" target="_blank">www.jetter.de</a><br> Datenschutzerklärung / Privacy Policy: <a href="https://www.jetter.de/kontakt/datenschutz.html" rel="nofollow noreferrer noopener" target="_blank"> www.jetter.de/kontakt/datenschutz.html</a></p>
+<p>Ust.-Id.: DE 812 643 615<br> Amtsgericht Stuttgart HRB 205545 <br> Vorstandsvorsitzender: Christian Benz <br> Vorsitzender des Aufsichtsrates: Martin Jetter </p>
+<p>VAT Reg.-No.: DE 812 643 615<br> Registered: Stuttgart HRB 205545 <br> CEO: Christian Benz <br> Chairman of the Supervisory Board: Martin Jetter</p>
+<br>
+</blockquote></div><div><br></div><br><br>

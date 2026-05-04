@@ -1,0 +1,248 @@
+### HEADER
+Id=2869
+Link=http://at-zammad/#ticket/zoom/2869
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=MTS Systems (ID=374, Number=41001, Country=US)
+Commission=MTS Systems, Quantum (ID=524, Number=524)
+Number=702869
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=bob.orange@mts.com (ID=296, FirstName=Bob, LastName=Orange)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=21.04.2022 23:58:53 +00:00
+UpdatedAt=26.04.2022 13:57:29 +00:00
+CloseAt=26.04.2022 13:57:29 +00:00
+ArticlesCount=4
+
+### TITLE
+Fwd: EcEniEngine Question
+
+### ARTICLE00_HEADER
+Id=15179
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.04.2022 23:58:53 +00:00
+UpdatedAt=21.04.2022 23:58:53 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: EcEniEngine Question
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>Can you help with this question?<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><span class="js-signatureMarker"></span><div>
+<b>From: </b>"Orange, Robert" &lt;Bob.Orange@mts.com&gt;<br>
+</div>
+<div>
+<b>Subject: </b><b>EcEniEngine Question</b><br>
+</div>
+<div>
+<b>Date: </b>April 21, 2022 at 12:44:57 PM EDT<br>
+</div>
+<div>
+<b>To: </b>"Jon Waters &lt;j.waters@acontis.com&gt;" &lt;j.waters@acontis.com&gt;<br>
+</div>
+<div>
+<b>Cc: </b>"Morin, Joe" &lt;joe.morin@mts.com&gt;<br>
+</div>
+<br><div> <div>
+<div>Hi Jon,</div>
+<div>After we build the eni file, we would like to tell our RT system where to find the relevant variables. I know that the master can look up by name, but we decided recently (maybe a bad decision) to have the application that built the eni file to provide the bit offset in the process data rather than asking the master to look them up. I assumed that we could extract that information from the EcEniEngine easily, but this is not obvious when looking through the objects and methods.</div>
+<p> </p>
+<div>If this is possible, can you point me in the right direction (class/method)?</div>
+<p> </p>
+<div>Thx</div>
+<div>Bob O</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=15181
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.04.2022 05:58:47 +00:00
+UpdatedAt=22.04.2022 05:58:52 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: EcEniEngine Question
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>I guess what they need is the following function: </div><div><br></div><div>
+<img style="max-width:100%;width: 501px;max-width: 100%;max-height: 253px;" src="/api/v1/ticket_attachment/2869/15181/59698?view=inline"><br>
+</div><div><br></div><div>Best regards,</div><div>Kai</div><div>
+<div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Friday, April 22, 2022, 1:58:53 AM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>Can you help with this question?<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><span class="js-signatureMarker"></span><div>
+<b>From: </b>"Orange, Robert" &lt;Bob.Orange@mts.com&gt;<br>
+</div>
+<div>
+<b>Subject: </b><b>EcEniEngine Question</b><br>
+</div>
+<div>
+<b>Date: </b>April 21, 2022 at 12:44:57 PM EDT<br>
+</div>
+<div>
+<b>To: </b>"Jon Waters &lt;j.waters@acontis.com&gt;" &lt;j.waters@acontis.com&gt;<br>
+</div>
+<div>
+<b>Cc: </b>"Morin, Joe" &lt;joe.morin@mts.com&gt;<br>
+</div>
+<br><div> <div>
+<div>Hi Jon,</div>
+<div>After we build the eni file, we would like to tell our RT system where to find the relevant variables. I know that the master can look up by name, but we decided recently (maybe a bad decision) to have the application that built the eni file to provide the bit offset in the process data rather than asking the master to look them up. I assumed that we could extract that information from the EcEniEngine easily, but this is not obvious when looking through the objects and methods.</div>
+<p> </p>
+<div>If this is possible, can you point me in the right direction (class/method)?</div>
+<p> </p>
+<div>Thx</div>
+<div>Bob O</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=15219
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.04.2022 00:28:51 +00:00
+UpdatedAt=23.04.2022 00:29:15 +00:00
+
+### ARTICLE02_SUBJECT
+Re: EcEniEngine Question
+
+### ARTICLE02_BODY
+Hi Bob,<div> </div><div>I checked with our developers and they recommended this function:</div><div> </div><div>
+<img alt="Mail Attachment" style="max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/2869/15219/59852?view=inline"><br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Apr 21, 2022, at 12:44 PM, Orange, Robert &lt;Bob.Orange@mts.com&gt; wrote:</div>
+<br><div> <div>
+<div>Hi Jon,</div>
+<div>After we build the eni file, we would like to tell our RT system where to find the relevant variables. I know that the master can look up by name, but we decided recently (maybe a bad decision) to have the application that built the eni file to provide the bit offset in the process data rather than asking the master to look them up. I assumed that we could extract that information from the EcEniEngine easily, but this is not obvious when looking through the objects and methods.</div>
+<p> </p>
+<div>If this is possible, can you point me in the right direction (class/method)?</div>
+<p> </p>
+<div>Thx</div>
+<div>Bob O</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE03_HEADER
+Id=15344
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.04.2022 12:09:11 +00:00
+UpdatedAt=26.04.2022 13:51:33 +00:00
+
+### ARTICLE03_SUBJECT
+EcEniEngine Question
+
+### ARTICLE03_BODY
+<div>
+<p>Thanks for the help. I got it to work.</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Jon Waters &lt;j.waters@acontis.com&gt; <br>
+<b>Sent:</b> Friday, April 22, 2022 7:28 PM<br>
+<b>To:</b> Orange, Robert &lt;Bob.Orange@mts.com&gt;<br>
+<b>Cc:</b> Morin, Joe &lt;joe.morin@mts.com&gt;; Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Subject:</b> Re: EcEniEngine Question</p>
+</div>
+</div>
+<p> </p>
+<table border="1" cellpadding="0" style="background:#ffeb9c;border:solid #9c6500 1.0pt;">
+<tbody>
+<tr>
+<td style="border:none;padding:2.0pt 2.0pt 2.0pt 2.0pt;">
+<p><strong><span style="color:#9c6500;">CAUTION:</span></strong> External Email</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<div>
+<p>Hi Bob,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>I checked with our developers and they recommended this function:</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p><img style="max-width:100%;width:13.25in;max-height:6.6875in;width:1272px;max-height:642px;" src="/api/v1/ticket_attachment/2869/15344/60505?view=inline" alt="Mail Attachment"></p>
+<div>
+<p><br> /Jon </p>
+</div>
+<div>
+<p><br>
+<br>
+</p>
+<blockquote>
+<div>
+<p>On Apr 21, 2022, at 12:44 PM, Orange, Robert &lt;<a href="mailto:Bob.Orange@mts.com">Bob.Orange@mts.com</a>&gt; wrote:</p>
+</div>
+<p> </p>
+<div>
+<div>
+<p>Hi Jon,</p>
+</div>
+<div>
+<p>After we build the eni file, we would like to tell our RT system where to find the relevant variables. I know that the master can look up by name, but we decided recently (maybe a bad decision) to have the application that built the eni file to provide the bit offset in the process data rather than asking the master to look them up. I assumed that we could extract that information from the EcEniEngine easily, but this is not obvious when looking through the objects and methods.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>If this is possible, can you point me in the right direction (class/method)?</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Thx</p>
+</div>
+<div>
+<p>Bob O</p>
+</div>
+</div>
+</blockquote>
+</div>
+<p> </p>
+</div>
+</div>
+</div>

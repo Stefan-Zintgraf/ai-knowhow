@@ -1,0 +1,243 @@
+### HEADER
+Id=6857
+Link=http://at-zammad/#ticket/zoom/6857
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=JSLT (ID=402, Number=0, Country=JP)
+Commission=Soft Service, Generic (ID=476, Number=476)
+Number=706857
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=20.11.2023 07:01:28 +00:00
+UpdatedAt=20.11.2023 08:12:38 +00:00
+CloseAt=20.11.2023 08:12:38 +00:00
+ArticlesCount=5
+
+### TITLE
+Question about EC-Master(Murata Machinery)
+
+### ARTICLE00_HEADER
+Id=37162
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=20.11.2023 07:01:28 +00:00
+UpdatedAt=20.11.2023 07:01:32 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(Murata Machinery)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(Murata Machinery)
+
+The attachment is a list of features they are requesting.
+Could you please write the word "Support" in the yellow cells of the supported functions?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=37164
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.11.2023 07:41:31 +00:00
+UpdatedAt=20.11.2023 07:41:34 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(Murata Machinery)
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>please check:</div><div>
+<div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/intro.html#the-ec-master-features" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/intro.html#the-ec-master-features" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/intro.html#the-ec-master-features</a></div>
+<div><br></div>
+<div>Best Regards,</div>
+<div>Cyril</div>
+<div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Monday, November 20, 2023 at 8:01:28 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(Murata Machinery)</div>
+<div><br></div>
+<div>The attachment is a list of features they are requesting.</div>
+<div>Could you please write the word "Support" in the yellow cells of the supported functions?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=37167
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=20.11.2023 07:58:28 +00:00
+UpdatedAt=20.11.2023 07:58:28 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master(Murata Machinery) [Ticket#706857]
+
+### ARTICLE02_BODY
+Dear Cyril san
+
+There are items that are not listed on the website.
+Please tell me the yellow part of the attached file.
+
+Best regards,
+Takuya Fujikawa
+
+
+
+
+On 2023/11/20 16:41, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+> 
+> please check:
+> https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/intro.html#the-ec-master-features <https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/intro.html#the-ec-master-features>
+> 
+> Best Regards,
+> Cyril
+> 
+>> On Monday, November 20, 2023 at 8:01:28 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Master(Murata Machinery)
+>>
+>> The attachment is a list of features they are requesting.
+>> Could you please write the word "Support" in the yellow cells of the supported functions?
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+### ARTICLE03_HEADER
+Id=37169
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.11.2023 08:10:47 +00:00
+UpdatedAt=20.11.2023 08:10:49 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(Murata Machinery)
+
+### ARTICLE03_BODY
+Hi Takuya,<div><br></div><div>I fill the rest.</div><div><br></div><div>Brest Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Monday, November 20, 2023 at 8:58:28 AM, Takuya Fujikawa wrote:<br><br><div>Dear Cyril san</div>
+<div><br></div>
+<div>There are items that are not listed on the website.</div>
+<div>Please tell me the yellow part of the attached file.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2023/11/20 16:41, Cyril Eyssautier via EC-Support wrote:</div>
+<div>&gt; Hi Takuya,</div>
+<div>&gt;</div>
+<div>&gt; please check:</div>
+<div>&gt; <a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/intro.html#the-ec-master-features" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/intro.html#the-ec-master-features" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/intro.html#the-ec-master-features</a> &lt;<a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/intro.html#the-ec-master-features" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/intro.html#the-ec-master-features" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/intro.html#the-ec-master-features</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; Cyril</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Monday, November 20, 2023 at 8:01:28 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Master(Murata Machinery)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; The attachment is a list of features they are requesting.</div>
+<div>&gt;&gt; Could you please write the word "Support" in the yellow cells of the supported functions?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE04_HEADER
+Id=37170
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=20.11.2023 08:12:13 +00:00
+UpdatedAt=20.11.2023 08:12:13 +00:00
+
+### ARTICLE04_SUBJECT
+Re: Question about EC-Master(Murata Machinery) [Ticket#706857]
+
+### ARTICLE04_BODY
+Dear Cyril san
+
+Thank you for filling out the form.
+
+Best regards,
+Takuya Fujikawa
+
+On 2023/11/20 17:10, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+> 
+> I fill the rest.
+> 
+> Brest Regards,
+> Cyril
+> 
+>> On Monday, November 20, 2023 at 8:58:28 AM, Takuya Fujikawa wrote:
+>>
+>> Dear Cyril san
+>>
+>> There are items that are not listed on the website.
+>> Please tell me the yellow part of the attached file.
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+>> On 2023/11/20 16:41, Cyril Eyssautier via EC-Support wrote:
+>> > Hi Takuya,
+>> >
+>> > please check:
+>> > https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/intro.html#the-ec-master-features <https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/intro.html#the-ec-master-features> <https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/intro.html#the-ec-master-features <https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/intro.html#the-ec-master-features>>
+>> >
+>> > Best Regards,
+>> > Cyril
+>> >
+>> >> On Monday, November 20, 2023 at 8:01:28 AM, Takuya Fujikawa wrote:
+>> >>
+>> >> Dear EtherCAT Support
+>> >>
+>> >> Question about EC-Master(Murata Machinery)
+>> >>
+>> >> The attachment is a list of features they are requesting.
+>> >> Could you please write the word "Support" in the yellow cells of the supported functions?
+>> >>
+>> >> Best regards,
+>> >> Takuya Fujikawa
+>> >>
+>> >
+>> >
+>> >
+>>
+> 
+> 
+> 
+

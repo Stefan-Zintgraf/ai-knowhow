@@ -1,0 +1,128 @@
+### HEADER
+Id=3969
+Link=http://at-zammad/#ticket/zoom/3969
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Industrial Technology Research Institute (ID=319, Number=40091, Country=TW)
+Commission=ITRI-Motion Controller/VxWorks ARM (ID=381, Number=381)
+Number=703969
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=kmlee@itri.org.tw (ID=78, FirstName=Kuei-Ming, LastName=Lee)
+CreatedBy=kmlee@itri.org.tw (ID=78, FirstName=Kuei-Ming, LastName=Lee)
+Type=
+TimeUnit=
+CreatedAt=26.09.2022 02:42:29 +00:00
+UpdatedAt=28.10.2022 06:13:39 +00:00
+CloseAt=28.10.2022 06:13:39 +00:00
+ArticlesCount=2
+
+### TITLE
+emReadSlaveIdentification problem
+
+### ARTICLE00_HEADER
+Id=21043
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.09.2022 02:42:29 +00:00
+UpdatedAt=26.09.2022 02:42:30 +00:00
+
+### ARTICLE00_SUBJECT
+emReadSlaveIdentification problem
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Hi ecsupport team,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">We recently tested the panasonic drive and used emReadSlaveIdentification to get back the alias address</span></p>
+<p><span lang="EN-US">We find IdentificationReg134 tag according to Panasonic ESI, so use emReadSlaveIdentification and set ado to 0x134.</span></p>
+<p><span lang="EN-US">The current problem is that the retrieved Identification value is sometimes correct but sometimes it is 0.</span></p>
+<p><span lang="EN-US">The return value of emReadSlaveIdentification is always normal(</span><span lang="EN-US">EC_E_NOERROR</span><span lang="EN-US">).</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Do you have any suggestions for this issue?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">=====================================================</span></p>
+<p><span lang="EN-US">Kuei-Ming Lee </span>李桂銘<span lang="EN-US"></span></p>
+<p>工研院 機械所<span lang="EN-US"> </span>控制核心技術組<span lang="EN-US"></span></p>
+<p><span lang="EN-US">TEL: 03-5917942 FAX: 03-5826594</span></p>
+<p><span lang="EN-US">E-Mail : </span><span lang="EN-US"><a href="mailto:kmlee@itri.org.tw"><span style="color:#0563c1;">kmlee@itri.org.tw</span></a></span></p>
+<p><span lang="EN-US">ADDR : 310</span>竹東鎮中興路四段<span lang="EN-US">195</span>號<span lang="EN-US">11</span>館<span lang="EN-US">285</span>室 <span lang="EN-US"></span></p>
+<p><span lang="EN-US"><a href="http://www.epcio.com.tw/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">http://www.epcio.com.tw</span></a></span></p>
+<p><span lang="EN-US">=====================================================</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+</div><br>
+<span class="js-signatureMarker"></span><br> --<br> 本信件可能包含工研院機密資訊，非指定之收件者，請勿使用或揭露本信件內容，並請銷毀此信件。 This email may contain confidential information. Please do not use or disclose it in any way and delete it if you are not the intended recipient.
+
+### ARTICLE01_HEADER
+Id=21049
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.09.2022 06:44:45 +00:00
+UpdatedAt=26.09.2022 06:44:46 +00:00
+
+### ARTICLE01_SUBJECT
+emReadSlaveIdentification problem
+
+### ARTICLE01_BODY
+Hi <span>Kuei-Ming;</span><div><br></div><div>we don't know about any issue in this area. Could you take a wirehark of the issue and the ec-master log file with verbosity set to <span>EC_LOG_LEVEL_VERBOSE and send us both. Thanks!</span>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/3969/21049/87350?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, September 26, 2022 at 4:42:29 AM, Kuei-Ming Lee wrote:<br><br><div>
+<p><span lang="EN-US">Hi ecsupport team,</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">We recently tested the panasonic drive and used emReadSlaveIdentification to get back the alias address</span></p>
+<p><span lang="EN-US">We find IdentificationReg134 tag according to Panasonic ESI, so use emReadSlaveIdentification and set ado to 0x134.</span></p>
+<p><span lang="EN-US">The current problem is that the retrieved Identification value is sometimes correct but sometimes it is 0.</span></p>
+<p><span lang="EN-US">The return value of emReadSlaveIdentification is always normal(</span><span lang="EN-US">EC_E_NOERROR</span><span lang="EN-US">).</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Do you have any suggestions for this issue?</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">=====================================================</span></p>
+<p><span lang="EN-US">Kuei-Ming Lee </span>李桂銘<span lang="EN-US"></span></p>
+<p>工研院 機械所<span lang="EN-US"> </span>控制核心技術組<span lang="EN-US"></span></p>
+<p><span lang="EN-US">TEL: 03-5917942 FAX: 03-5826594</span></p>
+<p><span lang="EN-US">E-Mail : </span><span lang="EN-US"><a href="mailto:kmlee@itri.org.tw"><span style="color:#0563c1;">kmlee@itri.org.tw</span></a></span></p>
+<p><span lang="EN-US">ADDR : 310</span>竹東鎮中興路四段<span lang="EN-US">195</span>號<span lang="EN-US">11</span>館<span lang="EN-US">285</span>室 <span lang="EN-US"></span></p>
+<p><span lang="EN-US"><a href="http://www.epcio.com.tw/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">http://www.epcio.com.tw</span></a></span></p>
+<p><span lang="EN-US">=====================================================</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br>
+<span class="js-signatureMarker"></span><br> --<br> 本信件可能包含工研院機密資訊，非指定之收件者，請勿使用或揭露本信件內容，並請銷毀此信件。 This email may contain confidential information. Please do not use or disclose it in any way and delete it if you are not the intended recipient.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

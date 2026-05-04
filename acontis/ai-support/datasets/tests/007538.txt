@@ -1,0 +1,136 @@
+### HEADER
+Id=7538
+Link=http://at-zammad/#ticket/zoom/7538
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=PHOENIX CONTACT Software, eCLR (ID=163, Number=163)
+Number=707538
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=29.02.2024 12:56:56 +00:00
+UpdatedAt=24.05.2024 11:45:41 +00:00
+CloseAt=24.05.2024 11:45:41 +00:00
+ArticlesCount=2
+
+### TITLE
+The Phoenix Contact requirement from their potential csutomer
+
+### ARTICLE00_HEADER
+Id=41566
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.02.2024 12:56:56 +00:00
+UpdatedAt=29.02.2024 12:56:58 +00:00
+
+### ARTICLE00_SUBJECT
+The Phoenix Contact requirement from their potential csutomer
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Today Phoenix Contact connected with me, and they have a potential customer.</div>
+<div>This customer need ethercat with plc, and Phoenix Contact introduce the multi prog 5.1, the customer's target hardware is imx8. But the multiprog 5.1 is too old, and it is only support arm32.</div>
+<div>So, Dose the EcMaster FslFec linklayer support arm32 for imx8 (we know that the fslfec include arm32/64, but we don't make sure that it could support imx8 in arm32)?</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=41631
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.03.2024 12:48:45 +00:00
+UpdatedAt=01.03.2024 12:48:49 +00:00
+
+### ARTICLE01_SUBJECT
+The Phoenix Contact requirement from their potential csutomer
+
+### ARTICLE01_BODY
+Hi John,<div>They can run a 32Bit Linux on the imx8 and use 32Bit Binaries.</div><div>or depending on the Linux settings they can run the <span>32Bit</span><span> </span><span>Binaries on the 64Bit Linux but with this they will loose Performance.</span>
+</div><div><span><br></span></div><div><span>Best Regards</span></div><div><span>Daniel</span></div><div><span><br></span></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, 29 February 2024 at 13:56:56, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Today Phoenix Contact connected with me, and they have a potential customer.</div>
+<div>This customer need ethercat with plc, and Phoenix Contact introduce the multi prog 5.1, the customer's target hardware is imx8. But the multiprog 5.1 is too old, and it is only support arm32.</div>
+<div>So, Dose the EcMaster FslFec linklayer support arm32 for imx8 (we know that the fslfec include arm32/64, but we don't make sure that it could support imx8 in arm32)?</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

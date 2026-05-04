@@ -1,0 +1,151 @@
+### HEADER
+Id=6057
+Link=http://at-zammad/#ticket/zoom/6057
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Beckhoff (ID=543, Number=0, Country=DE)
+Commission=ETG, Generic (ID=509, Number=509)
+Number=706057
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=ethercat_ssc@beckhoff.com (ID=2108, FirstName=Ethercat, LastName=Ssc)
+CreatedBy=ethercat_ssc@beckhoff.com (ID=2108, FirstName=Ethercat, LastName=Ssc)
+Type=
+TimeUnit=
+CreatedAt=27.07.2023 14:48:00 +00:00
+UpdatedAt=12.10.2023 13:31:21 +00:00
+CloseAt=12.10.2023 13:31:21 +00:00
+ArticlesCount=4
+
+### TITLE
+Segmented SDO upload mit einem vollständigen finalen datagram
+
+### ARTICLE00_HEADER
+Id=32335
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.07.2023 14:48:00 +00:00
+UpdatedAt=27.07.2023 14:48:00 +00:00
+
+### ARTICLE00_SUBJECT
+Segmented SDO upload mit einem vollständigen finalen datagram
+
+### ARTICLE00_BODY
+<p> </p><div> <p><span lang="DE">Hallo Cyril,</span></p>
+<p><span lang="DE">Ich habe von einem SSC Nutzer die Rückmeldung bekommen dass es im Falle eines Segmented SDO Uploads zu Problemen mit dem acontis master kommen kann.</span></p>
+<p><span lang="DE">Das Objekt welches gelesen wird ist genau so gross dass es in die Segmente passt. Der SSC setzt aber bei den letzten Objektdaten noch nicht das „LastSegment“ Flag und sendet final noch eine leere Response. </span></p>
+<p><span lang="DE">Das ist unschön und wird im SSC behoben, ich finde aber in der Spec keine Stelle nachder eine leere Response verboten ist daher würde ich euch bitten eine leere Response (ggf. mit einer Loggerwarnung) auch zu akzeptieren.</span></p>
+<p><span lang="DE">Anbei eine Aufzeichnung eines Tests den ich gemacht habe. Welche Version des acontis masters er verwendet hat er mir nicht gesagt. Vom SSC verwendet er die Version 5.13.</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<div> <div> <div> <p>Kind regards,</p>
+<p>Rainer Hoffmann</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>-------------------------------------------------</p>
+<p>Rainer HOFFMANN</p>
+<p> </p>
+<p><b><span style="color:red;">BECKHOFF Automation GmbH &amp; Co. KG</span></b></p>
+<p>phone: +49 (0)911 54056-26</p>
+<p> </p>
+<p><a href="http://www.ethercat.org/memberarea/stack_code.aspx" rel="nofollow noreferrer noopener" title="http://www.ethercat.org/memberarea/stack_code.aspx" target="_blank">download</a></p>
+<p><a href="mailto:ethercatssc@beckhoff.com">ethercatssc@beckhoff.com</a> </p>
+<p><a href="http://www.beckhoff.com/" rel="nofollow noreferrer noopener" target="_blank">www.beckhoff.com</a></p>
+<p><a href="http://www.ethercat.org/" rel="nofollow noreferrer noopener" target="_blank">www.ethercat.org</a></p>
+</div>
+</div>
+</div>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=32336
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.07.2023 15:05:32 +00:00
+UpdatedAt=27.07.2023 15:05:35 +00:00
+
+### ARTICLE01_SUBJECT
+Segmented SDO upload mit einem vollständigen finalen datagram
+
+### ARTICLE01_BODY
+Hallo Rainer,<div><br></div><div>ich nehme es bei uns mal auf. Wir haben gerade ein ähnliche Fall wo wir ein 0 Byte FoE packet am Ende schicken :)</div><div><br></div><div>Schöne Grüße,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Thursday, July 27, 2023 at 4:48:00 PM, Ethercat Ssc wrote:<br><br><p> </p>
+<div> <p><span lang="DE">Hallo Cyril,</span></p>
+<p><span lang="DE">Ich habe von einem SSC Nutzer die Rückmeldung bekommen dass es im Falle eines Segmented SDO Uploads zu Problemen mit dem acontis master kommen kann.</span></p>
+<p><span lang="DE">Das Objekt welches gelesen wird ist genau so gross dass es in die Segmente passt. Der SSC setzt aber bei den letzten Objektdaten noch nicht das „LastSegment“ Flag und sendet final noch eine leere Response. </span></p>
+<p><span lang="DE">Das ist unschön und wird im SSC behoben, ich finde aber in der Spec keine Stelle nachder eine leere Response verboten ist daher würde ich euch bitten eine leere Response (ggf. mit einer Loggerwarnung) auch zu akzeptieren.</span></p>
+<p><span lang="DE">Anbei eine Aufzeichnung eines Tests den ich gemacht habe. Welche Version des acontis masters er verwendet hat er mir nicht gesagt. Vom SSC verwendet er die Version 5.13.</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<div> <div> <div> <p>Kind regards,</p>
+<p>Rainer Hoffmann</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>-------------------------------------------------</p>
+<p>Rainer HOFFMANN</p>
+<p> </p>
+<p><b><span style="color:red;">BECKHOFF Automation GmbH &amp; Co. KG</span></b></p>
+<p>phone: +49 (0)911 54056-26</p>
+<p> </p>
+<p><a href="http://www.ethercat.org/memberarea/stack_code.aspx" rel="nofollow noreferrer noopener" title="http://www.ethercat.org/memberarea/stack_code.aspx" target="_blank">download</a></p>
+<p><a href="mailto:ethercatssc@beckhoff.com">ethercatssc@beckhoff.com</a> </p>
+<p><a href="http://www.beckhoff.com/" rel="nofollow noreferrer noopener" target="_blank">www.beckhoff.com</a></p>
+<p><a href="http://www.ethercat.org/" rel="nofollow noreferrer noopener" target="_blank">www.ethercat.org</a></p>
+</div>
+</div>
+</div>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=32337
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.07.2023 15:06:18 +00:00
+UpdatedAt=27.07.2023 15:06:18 +00:00
+
+### ARTICLE02_SUBJECT
+Automatic reply: Segmented SDO upload mit einem vollständigen finalen datagram [Ticket#706057]
+
+### ARTICLE02_BODY
+<div>
+<p>Dear sender,</p>
+<p> </p>
+<p>I'm out of office until August 1st. In urgent cases please contact techinfo@ethercat.org and adress me in cc.</p>
+<p> </p>
+<p>Best regards</p>
+<p>Rainer Hoffmann</p>
+<p> </p>
+<p>+49 151 42235529</p>
+<p> </p>
+</div>
+
+### ARTICLE03_HEADER
+Id=35416
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=12.10.2023 13:31:21 +00:00
+UpdatedAt=12.10.2023 13:31:21 +00:00
+
+### ARTICLE03_BODY
+  <a href="http://at-zammad/#ticket/zoom/6057" rel="nofollow noreferrer noopener" target="_blank">http://at-zammad/#ticket/zoom/6057</a>

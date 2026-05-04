@@ -1,0 +1,231 @@
+### HEADER
+Id=8541
+Link=http://at-zammad/#ticket/zoom/8541
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Varda Space (ID=800, Number=0, Country=US)
+Commission=Varda Space, Terrestrial Hardware Internal Industrial Control (ID=870, Number=870)
+Number=708541
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=janderson@varda.com (ID=2436, FirstName=Jeff, LastName=Anderson)
+CreatedBy=janderson@varda.com (ID=2436, FirstName=Jeff, LastName=Anderson)
+Type=
+TimeUnit=
+CreatedAt=22.07.2024 17:16:54 +00:00
+UpdatedAt=24.07.2024 06:34:31 +00:00
+CloseAt=24.07.2024 06:34:31 +00:00
+ArticlesCount=3
+
+### TITLE
+EC-Engineer v3.9.5 produces ENI files with invalid unicode characters in DScale attribute of EL3314
+
+### ARTICLE00_HEADER
+Id=47768
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.07.2024 17:16:54 +00:00
+UpdatedAt=22.07.2024 17:16:54 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Engineer v3.9.5 produces ENI files with invalid unicode characters in DScale attribute of EL3314
+
+### ARTICLE00_BODY
+<div>
+<p>Current behavior and steps to reproduce:</p>
+<ol start="1" type="1">
+<li>New project in Ec-Engineer windows v3.9.5</li>
+<li>Add an EK1100, EL3314 to project</li>
+<li>Export ENI</li>
+<li>Observe invalid Unicode chars in DScale attribute of EL3314:</li>
+<ol start="1" type="a">
+<li>“DScale="0.1�"</li>
+</ol>
+</ol>
+<p> </p>
+<p>Expected behavior:</p>
+<ol start="1" type="1">
+<li>I would expect the XML file to only contain valid unicode characters.</li>
+</ol>
+<p> </p>
+<p>ENI attached</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Jeff</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=47780
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.07.2024 07:18:39 +00:00
+UpdatedAt=23.07.2024 07:18:39 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Engineer v3.9.5 produces ENI files with invalid unicode characters in DScale attribute of EL3314
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>as far as I know there is no encoding specified in the ENI Specification. We do it the same way like TwinCAT (and the slave is also from Beckhoff) and show this Unit. But I will ask the EtherCAT Technology Group about it. But if you change your editor to ISO-8859-1 encoding you should see the correct sign. </div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, July 22, 2024 at 7:16:54 PM, Jeff Anderson wrote:<br><br><div>
+<p>Current behavior and steps to reproduce:</p>
+<ol start="1" type="1">
+<li>New project in Ec-Engineer windows v3.9.5</li>
+<li>Add an EK1100, EL3314 to project</li>
+<li>Export ENI</li>
+<li>Observe invalid Unicode chars in DScale attribute of EL3314:</li>
+<ol start="1" type="a">
+<li>“DScale="0.1�"</li>
+</ol>
+</ol>
+<p> </p>
+<p>Expected behavior:</p>
+<ol start="1" type="1">
+<li>I would expect the XML file to only contain valid unicode characters.</li>
+</ol>
+<p> </p>
+<p>ENI attached</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Jeff</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=47833
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.07.2024 23:51:03 +00:00
+UpdatedAt=23.07.2024 23:51:03 +00:00
+
+### ARTICLE02_SUBJECT
+RE: EC-Engineer v3.9.5 produces ENI files with invalid unicode characters in DScale attribute of EL3314 [Ticket#708541]
+
+### ARTICLE02_BODY
+<div>
+<p>I see now that the XML file starts with:<br>
+<br>
+</p>
+<p>“&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;”</p>
+<p> </p>
+<p>I have some secondary tools I’ve written to use some of the information in the ENI. I’ll just have to specify that encoding.</p>
+<p> </p>
+<p>Thanks!</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b><span> Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Tuesday, July 23, 2024 12:19 AM<br>
+<b>To:</b> Jeff Anderson &lt;janderson@varda.com&gt;<br>
+<b>Subject:</b> RE: EC-Engineer v3.9.5 produces ENI files with invalid unicode characters in DScale attribute of EL3314 [Ticket#708541]</span></p>
+</div>
+</div>
+<p> </p>
+<p>Hi,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>as far as I know there is no encoding specified in the ENI Specification. We do it the same way like TwinCAT (and the slave is also from Beckhoff) and show this Unit. But I will ask the EtherCAT Technology Group about it. But if you change your editor to ISO-8859-1 encoding you should see the correct sign.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best regards,</p>
+</div>
+<div>
+<p>Kai</p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Kai Feifel</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Monday, July 22, 2024 at 7:16:54 PM, Jeff Anderson wrote:</p>
+<div>
+<p>Current behavior and steps to reproduce:</p>
+<ol start="1" type="1">
+<li> New project in Ec-Engineer windows v3.9.5</li>
+<li> Add an EK1100, EL3314 to project</li>
+<li> Export ENI</li>
+<li> Observe invalid Unicode chars in DScale attribute of EL3314:</li>
+</ol>
+<ol start="4" type="1">
+<ol start="1" type="a">
+<li> “DScale="0.1�"</li>
+</ol>
+</ol>
+<p> </p>
+<p>Expected behavior:</p>
+<ol start="1" type="1">
+<li> I would expect the XML file to only contain valid unicode characters.</li>
+</ol>
+<p> </p>
+<p>ENI attached</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Jeff</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>

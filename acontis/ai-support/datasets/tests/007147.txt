@@ -1,0 +1,151 @@
+### HEADER
+Id=7147
+Link=http://at-zammad/#ticket/zoom/7147
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ADLINK Technology, Inc. (ID=318, Number=40110, Country=TW)
+Commission=ADLINK, Motion Controller (ID=375, Number=375)
+Number=707147
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=leslie.chen@adlinktech.com (ID=49, FirstName=Leslie, LastName=Chen)
+CreatedBy=leslie.chen@adlinktech.com (ID=49, FirstName=Leslie, LastName=Chen)
+Type=
+TimeUnit=
+CreatedAt=26.12.2023 01:12:19 +00:00
+UpdatedAt=23.01.2024 07:01:51 +00:00
+CloseAt=23.01.2024 07:01:51 +00:00
+ArticlesCount=3
+
+### TITLE
+Question about Exteral Synchronization of EtherCAT Networks
+
+### ARTICLE00_HEADER
+Id=38993
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.12.2023 01:12:20 +00:00
+UpdatedAt=26.12.2023 01:12:20 +00:00
+
+### ARTICLE00_SUBJECT
+Question about Exteral Synchronization of EtherCAT Networks
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Hi Support team,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">In ETG 1020 page 95, describe tree methods about the synchronization of different EtherCAT networks.</span></p>
+<p><span lang="EN-US">Here is specify a slave be a DC Reference clock, does EC-Master support this kind of method?</span></p>
+<p><span lang="EN-US">If not supported, is the only way DCX to do synchronize of different EtherCAT networks?</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:3.775in;max-height:3.35in;width:362px;max-height:322px;" src="/api/v1/ticket_attachment/7147/38993/161808?view=inline"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><b><span lang="EN-US"><img style="max-width:100%;width:6.5in;max-height:2.45in;width:624px;max-height:235px;" src="/api/v1/ticket_attachment/7147/38993/161809?view=inline"></span></b></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">BRs.</span></p>
+<p><span lang="EN-US">Leslie.</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=39018
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.12.2023 08:46:54 +00:00
+UpdatedAt=28.12.2023 08:46:56 +00:00
+
+### ARTICLE01_SUBJECT
+Question about Exteral Synchronization of EtherCAT Networks
+
+### ARTICLE01_BODY
+Hi Leslie, <div><br></div><div>
+<div>Most of us are out of the office for Christmas Holidays. The processing time for your issue may take longer. <br>
+</div>
+<div><br></div>
+<div>We'll get in touch with you as soon as possible. Thank you so much for your understanding. </div>
+<div>
+<br><br>Regards, 
+</div>
+</div><br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: -</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=39049
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.01.2024 15:32:54 +00:00
+UpdatedAt=02.01.2024 15:32:56 +00:00
+
+### ARTICLE02_SUBJECT
+Question about Exteral Synchronization of EtherCAT Networks
+
+### ARTICLE02_BODY
+Hi Leslie,<div><br></div><div>please take a look at the slides 5ff.</div><div>
+<div><a href="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" title="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf</a></div>
+<div><br></div>
+<div>For DCX as slave which supports the object 0x10F4 is required.</div>
+<div><br></div>
+<div>Best Regards</div>
+<div><br></div>
+<div>Christoph</div>
+<div><br></div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, December 26, 2023 at 2:12:20 AM, Leslie Chen wrote:<br><br><div>
+<p><span lang="EN-US">Hi Support team,</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">In ETG 1020 page 95, describe tree methods about the synchronization of different EtherCAT networks.</span></p>
+<p><span lang="EN-US">Here is specify a slave be a DC Reference clock, does EC-Master support this kind of method?</span></p>
+<p><span lang="EN-US">If not supported, is the only way DCX to do synchronize of different EtherCAT networks?</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:3.775in;max-height:3.35in;width:362px;max-height:322px;" src="/api/v1/ticket_attachment/7147/39049/161978?view=inline"></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><b><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:6.5in;max-height:2.45in;width:624px;max-height:235px;" src="/api/v1/ticket_attachment/7147/39049/161979?view=inline"></span></b></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">BRs.</span></p>
+<p><span lang="EN-US">Leslie.</span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

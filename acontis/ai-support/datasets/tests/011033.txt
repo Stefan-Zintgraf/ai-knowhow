@@ -1,0 +1,76 @@
+### HEADER
+Id=11033
+Link=http://at-zammad/#ticket/zoom/11033
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Neuromeka (ID=888, Number=0, Country=KR)
+Commission=Neuromeka, Robot Controller (ID=979, Number=979)
+Number=7011033
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=taegon.ha@neuromeka.com (ID=3443, FirstName=taegon.ha@neuromeka.com, LastName=)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=18.07.2025 07:03:22 +00:00
+UpdatedAt=30.07.2025 10:04:18 +00:00
+CloseAt=25.07.2025 06:01:55 +00:00
+ArticlesCount=3
+
+### TITLE
+Acontis software update request from Neuromeka
+
+### ARTICLE00_HEADER
+Id=63272
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.07.2025 07:03:22 +00:00
+UpdatedAt=18.07.2025 07:03:24 +00:00
+
+### ARTICLE00_SUBJECT
+Acontis software update request from Neuromeka
+
+### ARTICLE00_BODY
+<p>Dear Mr./Ms. HA,</p><p>thank you for your registration.<br><br></p><p>First Name: TAE GON<br>Last Name: HA<br>Company: Neuromeka<br><span>Commission Number: <br></span><span>Country: Korea<br></span><span>City: Seoul<br></span><span>E-Mail: taegon.ha@neuromeka.com<br></span>Product: <span>EC-Master,EC-Engineer<br></span>Update Type: <br><span>Operating System Version: <br></span>Additional information: </p><p><img src="/api/v1/ticket_attachment/11033/63272/262263?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/11033/63272/262262?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=63277
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=18.07.2025 07:39:54 +00:00
+UpdatedAt=18.07.2025 07:39:54 +00:00
+
+### ARTICLE01_BODY
+Hab nicht gesehen, dass ein Master auch dabei war, als ich mir das Ticket geholt habe. Hier der Engineer Link:<div><br></div><div><a href="https://downloads.acontis.com/2025/M-O/Neuromeka_(40784)(KR)/EC-Engineer+EC-STA/3.9.12/EC-Engineer_Dongle_V3.9.12.zip" title="https://downloads.acontis.com/2025/M-O/Neuromeka_(40784)(KR)/EC-Engineer+EC-STA/3.9.12/EC-Engineer_Dongle_V3.9.12.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/M-O/Neuromeka_(40784)(KR)/EC-Engineer+EC-STA/3.9.12/EC-Engineer_Dongle_V3.9.12.zip</a></div>
+
+### ARTICLE02_HEADER
+Id=63318
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.07.2025 13:48:50 +00:00
+UpdatedAt=18.07.2025 13:48:52 +00:00
+
+### ARTICLE02_SUBJECT
+Acontis software update request from Neuromeka
+
+### ARTICLE02_BODY
+<div>Dear Customer,</div><div><br></div><div>Please find your new software version below:</div><div><br></div><div><a href="https://downloads.acontis.com/2025/M-O/Neuromeka_(40784)(KR)/EC-Master_Xenomai_x86_64Bit/3.2.3.02/EC-Master-ClassA-AddOn-V3.2.3.02-Xenomai3-x86_64Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2025/M-O/Neuromeka_(40784)(KR)/EC-Master_Xenomai_x86_64Bit/3.2.3.02/EC-Master-ClassA-AddOn-V3.2.3.02-Xenomai3-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/M-O/Neuromeka_(40784)(KR)/EC-Master_Xenomai_x86_64Bit/3.2.3.02/EC-Master-ClassA-AddOn-V3.2.3.02-Xenomai3-x86_64Bit-SDK_Protected.tar.gz</a></div><div><br></div><div><a href="https://downloads.acontis.com/2025/M-O/Neuromeka_(40784)(KR)/EC-Master_Xenomai_x86_64Bit/3.2.3.02/EC-Master-V3.2.3.02-Xenomai3-x86_64Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2025/M-O/Neuromeka_(40784)(KR)/EC-Master_Xenomai_x86_64Bit/3.2.3.02/EC-Master-V3.2.3.02-Xenomai3-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/M-O/Neuromeka_(40784)(KR)/EC-Master_Xenomai_x86_64Bit/3.2.3.02/EC-Master-V3.2.3.02-Xenomai3-x86_64Bit-SDK_Protected.tar.gz</a></div><div><br></div><div><a href="https://downloads.acontis.com/2025/M-O/Neuromeka_(40784)(KR)/EC-Master_Xenomai_x86_64Bit/3.2.3.02/EC-RtEth-RTL8169-V3.2.3.02-Xenomai3-x86_64Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2025/M-O/Neuromeka_(40784)(KR)/EC-Master_Xenomai_x86_64Bit/3.2.3.02/EC-RtEth-RTL8169-V3.2.3.02-Xenomai3-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/M-O/Neuromeka_(40784)(KR)/EC-Master_Xenomai_x86_64Bit/3.2.3.02/EC-RtEth-RTL8169-V3.2.3.02-Xenomai3-x86_64Bit-SDK_Protected.tar.gz</a></div><div><br></div><div><a href="https://downloads.acontis.com/2025/M-O/Neuromeka_(40784)(KR)/EC-Engineer+EC-STA/3.9.12/EC-Engineer_Dongle_V3.9.12.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/M-O/Neuromeka_(40784)(KR)/EC-Engineer+EC-STA/3.9.12/EC-Engineer_Dongle_V3.9.12.zip</a></div><div><br></div><div>Password: ECM88250</div><div><br></div><div>If you want to get notified if a new version is released, please answer to this e-mail.</div><div><br></div><div>Best Regards,</div><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>

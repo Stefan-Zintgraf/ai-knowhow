@@ -1,0 +1,156 @@
+### HEADER
+Id=6044
+Link=http://at-zammad/#ticket/zoom/6044
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Auris Surgical, ARES (ID=401, Number=401)
+Number=706044
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=25.07.2023 17:59:24 +00:00
+UpdatedAt=02.08.2023 07:54:11 +00:00
+CloseAt=26.07.2023 06:42:18 +00:00
+ArticlesCount=4
+
+### TITLE
+CRC Error Generation with EC-Simulator
+
+### ARTICLE00_HEADER
+Id=32241
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.07.2023 17:59:25 +00:00
+UpdatedAt=25.07.2023 17:59:25 +00:00
+
+### ARTICLE00_SUBJECT
+CRC Error Generation with EC-Simulator
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>Auris is interested in the simulator and one specific thing they want to test for is how a real drive reacts to receiving a frame with CRC errors. So they want to have the simulator in mixed mode with a real drive and then generate the CRC errors. I couldn’t find anything in the EC-Simulator documentation about an API for this CRC error generation (but admittedly I could have missed it), however there is some functionality for this in EC-Engineer: <a href="https://public.acontis.com/manuals/EC-Engineer/3.8/html/diagnosis-mode.html?highlight=crc#simulator-simulator-only" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Engineer/3.8/html/diagnosis-mode.html?highlight=crc#simulator-simulator-only</a>
+</div><div> </div><div>So is this possible?<br><div>
+<br>/Jon </div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=32244
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.07.2023 06:42:07 +00:00
+UpdatedAt=26.07.2023 06:42:08 +00:00
+
+### ARTICLE01_SUBJECT
+CRC Error Generation with EC-Simulator
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>yes, <span>esSetErrorAtSlavePort() / </span><span>esSetErrorGenerationAtSlavePort().</span>
+</div><div><br></div><div>Best regards,</div><div>Paul</div><div>
+<div><br></div>
+<div><blockquote type="cite">Am Dienstag, 25. Juli 2023 um 19:59:25, schrieb Jon Waters:<br><br>Hi,<div> </div>
+<div>Auris is interested in the simulator and one specific thing they want to test for is how a real drive reacts to receiving a frame with CRC errors. So they want to have the simulator in mixed mode with a real drive and then generate the CRC errors. I couldn’t find anything in the EC-Simulator documentation about an API for this CRC error generation (but admittedly I could have missed it), however there is some functionality for this in EC-Engineer: <a href="https://public.acontis.com/manuals/EC-Engineer/3.8/html/diagnosis-mode.html?highlight=crc#simulator-simulator-only" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Engineer/3.8/html/diagnosis-mode.html?highlight=crc#simulator-simulator-only</a>
+</div>
+<div> </div>
+<div>So is this possible?<br><div>
+<br>/Jon </div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=32277
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.07.2023 12:01:30 +00:00
+UpdatedAt=26.07.2023 12:01:30 +00:00
+
+### ARTICLE02_SUBJECT
+Re: CRC Error Generation with EC-Simulator [Ticket#706044]
+
+### ARTICLE02_BODY
+Thanks Paul. When I check those functions in the documentation I don’t see anything about how to set CRC errors. Is it missing or is it implied in something else?<div> </div><div><a href="https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/api_error_simulation_functions.html#esseterroratslaveport" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/api_error_simulation_functions.html#esseterroratslaveport</a></div><div> </div><div>Also when I search the doc for “CRC” I don’t see this function or anything come up.<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Jul 26, 2023, at 2:42 AM, Paul Bußmann via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>Hi Jon,<div> </div>
+<div>yes, esSetErrorAtSlavePort() / esSetErrorGenerationAtSlavePort().</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Paul</div>
+<div>
+<div> </div>
+<div><blockquote type="cite">Am Dienstag, 25. Juli 2023 um 19:59:25, schrieb Jon Waters:<br><br>Hi,<div> </div>
+<div>Auris is interested in the simulator and one specific thing they want to test for is how a real drive reacts to receiving a frame with CRC errors. So they want to have the simulator in mixed mode with a real drive and then generate the CRC errors. I couldn’t find anything in the EC-Simulator documentation about an API for this CRC error generation (but admittedly I could have missed it), however there is some functionality for this in EC-Engineer: <a href="https://public.acontis.com/manuals/EC-Engineer/3.8/html/diagnosis-mode.html?highlight=crc#simulator-simulator-only" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Engineer/3.8/html/diagnosis-mode.html?highlight=crc#simulator-simulator-only</a>
+</div>
+<div> </div>
+<div>So is this possible?<br><div>
+<br>/Jon </div>
+</div>
+</blockquote></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE03_HEADER
+Id=32316
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.07.2023 09:58:04 +00:00
+UpdatedAt=27.07.2023 09:58:08 +00:00
+
+### ARTICLE03_SUBJECT
+CRC Error Generation with EC-Simulator
+
+### ARTICLE03_BODY
+Hi Jon,<div><br></div><div>the EC-Simulator does not contain CRC error simulation as it might be expected (sending frames with wrong CRC through topology), but it contains wrong error at port leading to frame loss. So an application can set slave error at port resulting in frame loss which behaves nearly the same way as CRC errors would do. It must also lead to process data missing at the slaves and master which I assume was what Auris wants to check.</div><div><br></div><div>Best regards,</div><div>Paul<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><br></div>
+<div><blockquote type="cite">Am Mittwoch, 26. Juli 2023 um 14:01:30, schrieb Jon Waters:<br><br>Thanks Paul. When I check those functions in the documentation I don’t see anything about how to set CRC errors. Is it missing or is it implied in something else?<div> </div>
+<div><a href="https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/api_error_simulation_functions.html#esseterroratslaveport" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Simulator/3.1/html/ec-simulator/api_error_simulation_functions.html#esseterroratslaveport</a></div>
+<div> </div>
+<div>Also when I search the doc for “CRC” I don’t see this function or anything come up.<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Jul 26, 2023, at 2:42 AM, Paul Bußmann via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>Hi Jon,<div> </div>
+<div>yes, esSetErrorAtSlavePort() / esSetErrorGenerationAtSlavePort().</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Paul</div>
+<div>
+<div> </div>
+<div><blockquote type="cite">Am Dienstag, 25. Juli 2023 um 19:59:25, schrieb Jon Waters:<br><br>Hi,<div> </div>
+<div>Auris is interested in the simulator and one specific thing they want to test for is how a real drive reacts to receiving a frame with CRC errors. So they want to have the simulator in mixed mode with a real drive and then generate the CRC errors. I couldn’t find anything in the EC-Simulator documentation about an API for this CRC error generation (but admittedly I could have missed it), however there is some functionality for this in EC-Engineer: <a href="https://public.acontis.com/manuals/EC-Engineer/3.8/html/diagnosis-mode.html?highlight=crc#simulator-simulator-only" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Engineer/3.8/html/diagnosis-mode.html?highlight=crc#simulator-simulator-only</a>
+</div>
+<div> </div>
+<div>So is this possible?<br><div>
+<br>/Jon </div>
+</div>
+</blockquote></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,217 @@
+### HEADER
+Id=7148
+Link=http://at-zammad/#ticket/zoom/7148
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Panasonic Industry SUNX, FP-HX EtherCAT casette (ID=806, Number=806)
+Number=707148
+Owner=s.zintgraf@acontis.com (ID=10, FirstName=Stefan, LastName=Zintgraf)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=26.12.2023 01:23:31 +00:00
+UpdatedAt=21.02.2024 07:04:23 +00:00
+CloseAt=08.01.2024 10:10:19 +00:00
+ArticlesCount=5
+
+### TITLE
+Question about EC-Simulator(Panasonic Industry)
+
+### ARTICLE00_HEADER
+Id=38994
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=26.12.2023 01:23:31 +00:00
+UpdatedAt=26.12.2023 01:23:32 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Simulator(Panasonic Industry)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Simulator [HIL] (Panasonic Industry)
+
+Q. Is it possible to develop slave behavior using the evaluation version of the software?
+    Is this only possible with the product version?
+    (The evaluation version does not include ".sln" files etc.)
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=39007
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.12.2023 09:46:10 +00:00
+UpdatedAt=27.12.2023 09:46:11 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Simulator(Panasonic Industry)
+
+### ARTICLE01_BODY
+Hi Takuya, <div><br></div><div>
+<div>Most of us are out of the office for Christmas Holidays. The processing time for your issue may take longer. <br>
+</div>
+<div><br></div>
+<div>
+<span>We'll get in touch with you as soon as possible. </span>Thank you so much for your understanding. </div>
+<div><br></div>
+<div><br></div>
+<div>Regards, </div>
+<div>
+<br>
+</div>
+</div><div><br></div><br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: -</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=39008
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.12.2023 09:49:47 +00:00
+UpdatedAt=27.12.2023 09:49:50 +00:00
+
+### ARTICLE02_SUBJECT
+Question about EC-Simulator(Panasonic Industry)
+
+### ARTICLE02_BODY
+Dear Fujikawa san,<div><br></div><div>there should be a VS2015 project file located in <span>C:\Program Files\acontis_technologies\EC-Simulator-HiL-Windows-x86_64Bit\Workspace\WindowsVS2015\EcSimulatorHilDemo</span>
+</div><div><br></div><div>Best regards,</div><div>Stefan Zintgraf<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Stefan Zintgraf</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, December 26, 2023 at 2:23:31 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Simulator [HIL] (Panasonic Industry)</div>
+<div><br></div>
+<div>Q. Is it possible to develop slave behavior using the evaluation version of the software?</div>
+<div>    Is this only possible with the product version?</div>
+<div>    (The evaluation version does not include ".sln" files etc.)</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=39013
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=28.12.2023 04:16:00 +00:00
+UpdatedAt=28.12.2023 04:16:00 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Simulator(Panasonic Industry)
+
+### ARTICLE03_BODY
+Dear EtherCAT Support
+
+Question about EC-Simulator(Panasonic Industry)
+
+They opened and built the project from Visual Studio.
+But,The build result will be an error as shown in the attached screenshot.
+The file "EcatDrvIoCtl." is not found in the installed folder.
+
+Q1. Please tell them how to solve it.
+
+Q2. Is there any documentation for developing slave behavior?
+
+Best regards,
+Takuya Fujikawa
+
+### ARTICLE04_HEADER
+Id=39016
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.12.2023 08:13:03 +00:00
+UpdatedAt=28.12.2023 08:13:05 +00:00
+
+### ARTICLE04_SUBJECT
+Question about EC-Simulator(Panasonic Industry)
+
+### ARTICLE04_BODY
+Dear Fujikawa san,<div><br></div><div>unfortunately, one folder is missing in the new simulation evaluation version, see attachment.</div><div>The files need to be copied into installation folder:</div><div>
+<img style="max-width:100%;width: 709px;max-width: 100%;" src="/api/v1/ticket_attachment/7148/39016/161882?view=inline"><br>
+</div><div><br></div><div>Best regards,</div><div>Stefan Zintgraf<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Stefan Zintgraf</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, December 28, 2023 at 5:16:00 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Simulator(Panasonic Industry)</div>
+<div><br></div>
+<div>They opened and built the project from Visual Studio.</div>
+<div>But,The build result will be an error as shown in the attached screenshot.</div>
+<div>The file "EcatDrvIoCtl." is not found in the installed folder.</div>
+<div><br></div>
+<div>Q1. Please tell them how to solve it.</div>
+<div><br></div>
+<div>Q2. Is there any documentation for developing slave behavior?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

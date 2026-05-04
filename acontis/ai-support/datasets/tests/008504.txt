@@ -1,0 +1,168 @@
+### HEADER
+Id=8504
+Link=http://at-zammad/#ticket/zoom/8504
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Yamaha Robotics, Bonder (ID=591, Number=591)
+Number=708504
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=17.07.2024 23:29:00 +00:00
+UpdatedAt=30.08.2024 06:01:29 +00:00
+CloseAt=30.08.2024 06:01:29 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Engineer(YAMAHA)
+
+### ARTICLE00_HEADER
+Id=47569
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=17.07.2024 23:29:00 +00:00
+UpdatedAt=17.07.2024 23:29:04 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Engineer(YAMAHA)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Engineer(YAMAHA)
+
+Sometimes in their test environment, there are occasions when they cannot connect to the slave.
+I will attach three logs, including a successful attempt.
+Can you predict from these logs where the issue might lie?
+  - Physical layer issue
+  - Configuration issue
+  - Other
+
+Best regards,
+Takuya Fujikawa
+
+### ARTICLE01_HEADER
+Id=47574
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=18.07.2024 07:21:36 +00:00
+UpdatedAt=18.07.2024 07:21:36 +00:00
+
+### ARTICLE01_BODY
+Das ist keine EC-Engineer Frage. Es sind EC-Master von RTX64. War ich wohl zu schnell beim Mail holen
+
+### ARTICLE02_HEADER
+Id=47672
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.07.2024 13:28:14 +00:00
+UpdatedAt=19.07.2024 13:28:18 +00:00
+
+### ARTICLE02_SUBJECT
+Question about EC-Engineer(YAMAHA)
+
+### ARTICLE02_BODY
+Hi Takuya,<div><br></div><div>they should double check that the network adapter has been assigned to RTX and that there is no active native RTX driver running on the network adapter.</div><div>According the time stamp they could try to add OsSleep(5000); just after emInitMaster() in the source code of the demo and check if it helps.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, July 18, 2024 at 1:29:00 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Engineer(YAMAHA)</div>
+<div><br></div>
+<div>Sometimes in their test environment, there are occasions when they cannot connect to the slave.</div>
+<div>I will attach three logs, including a successful attempt.</div>
+<div>Can you predict from these logs where the issue might lie?</div>
+<div>  - Physical layer issue</div>
+<div>  - Configuration issue</div>
+<div>  - Other</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=47673
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.07.2024 13:30:32 +00:00
+UpdatedAt=19.07.2024 13:30:35 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Engineer(YAMAHA)
+
+### ARTICLE03_BODY
+<div>Hi Takuya,</div><div><br></div><div>in the log file I see <span>SHINKAWA, but you wrote yamaha in the eMail topic. </span><span>SHINKAWA would make more sense because of RTX64. Can you please confirm. Thanks!</span>
+</div><div><span><br></span></div><div>Best Regards,</div><div>Cyril<br><br>
+</div><div><blockquote type="cite">On Friday, July 19, 2024 at 3:28:14 PM, Cyril Eyssautier wrote:<br><br>Hi Takuya,<div><br></div>
+<div>they should double check that the network adapter has been assigned to RTX and that there is no active native RTX driver running on the network adapter.</div>
+<div>According the time stamp they could try to add OsSleep(5000); just after emInitMaster() in the source code of the demo and check if it helps.</div>
+<div><br></div>
+<div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, July 18, 2024 at 1:29:00 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Engineer(YAMAHA)</div>
+<div><br></div>
+<div>Sometimes in their test environment, there are occasions when they cannot connect to the slave.</div>
+<div>I will attach three logs, including a successful attempt.</div>
+<div>Can you predict from these logs where the issue might lie?</div>
+<div>  - Physical layer issue</div>
+<div>  - Configuration issue</div>
+<div>  - Other</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+<br>
+</blockquote></div><div><br></div>

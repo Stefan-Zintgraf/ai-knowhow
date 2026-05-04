@@ -1,0 +1,107 @@
+### HEADER
+Id=10332
+Link=http://at-zammad/#ticket/zoom/10332
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ACUTRONIC Switzerland Ltd (ID=12, Number=40141, Country=CH)
+Commission=ACUTRONIC, Bewegungssimulatoren (No Maint) (ID=13, Number=13)
+Number=7010332
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=awilliot@acutronic.ch (ID=680, FirstName=Axel, LastName=Williot)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=03.04.2025 06:04:51 +00:00
+UpdatedAt=17.04.2025 06:05:52 +00:00
+CloseAt=17.04.2025 06:05:52 +00:00
+ArticlesCount=4
+
+### TITLE
+Acontis software update request from Acutronic
+
+### ARTICLE00_HEADER
+Id=59264
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.04.2025 06:04:51 +00:00
+UpdatedAt=03.04.2025 06:04:52 +00:00
+
+### ARTICLE00_SUBJECT
+Acontis software update request from Acutronic
+
+### ARTICLE00_BODY
+<p>Dear Mr./Ms. Williot,</p><p>thank you for your registration.<br><br></p><p>First Name: Axel<br>Last Name: Williot<br>Company: Acutronic<br><span>Commission Number: <br></span><span>Country: Switzerland<br></span><span>City: Bubikon<br></span><span>E-Mail: awilliot@acutronic.ch<br></span>Product: <span>EC-Master,EC-Win<br></span>Update Type: Upgrade (newest API)<br><span>Operating System Version: Windows 10 2021 LTSC<br></span>Additional information: Ich möchte den neusten EC-Win(RTOS-32) und den neusten EC-Master dazu. Mit Unrestricted Lizenz.</p><p><img src="/api/v1/ticket_attachment/10332/59264/247377?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/10332/59264/247376?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=59266
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=03.04.2025 06:09:17 +00:00
+UpdatedAt=03.04.2025 06:09:17 +00:00
+
+### ARTICLE01_BODY
+Gib uns bitte die Links der EC-Win Lieferung wir liefern dann alles zusammen.
+
+### ARTICLE02_HEADER
+Id=59267
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=03.04.2025 06:12:23 +00:00
+UpdatedAt=03.04.2025 06:12:23 +00:00
+
+### ARTICLE02_BODY
+<div><a href="http://software.acontis.com/EC-Win/8.3.01.02.EC-WinRTOS-32.%7BB078C82C-A9C4-4B97-80EE-2B938E96C2B7%7D/EC-WinRTOS-32.8.3.01.02.zip" title="http://software.acontis.com/EC-Win/8.3.01.02.EC-WinRTOS-32.{B078C82C-A9C4-4B97-80EE-2B938E96C2B7}/EC-WinRTOS-32.8.3.01.02.zip" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/EC-Win/8.3.01.02.EC-WinRTOS-32.{B078C82C-A9C4-4B97-80EE-2B938E96C2B7}/EC-WinRTOS-32.8.3.01.02.zip</a></div><div><a href="http://software.acontis.com/EC-Win/8.3.01.02.EC-WinRTOS-32.%7BB078C82C-A9C4-4B97-80EE-2B938E96C2B7%7D/InstallationGuide_EC-Win_LICENSED.pdf" title="http://software.acontis.com/EC-Win/8.3.01.02.EC-WinRTOS-32.{B078C82C-A9C4-4B97-80EE-2B938E96C2B7}/InstallationGuide_EC-Win_LICENSED.pdf" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/EC-Win/8.3.01.02.EC-WinRTOS-32.{B078C82C-A9C4-4B97-80EE-2B938E96C2B7}/InstallationGuide_EC-Win_LICENSED.pdf</a></div><div><a href="http://software.acontis.com/EC-Win/8.3.01.02.License_Unrestricted.%7B4838BDA9-2AC7-4123-8BB9-6B41632F0840%7D/License_Unrestricted.8.3.01.02.zip" title="http://software.acontis.com/EC-Win/8.3.01.02.License_Unrestricted.{4838BDA9-2AC7-4123-8BB9-6B41632F0840}/License_Unrestricted.8.3.01.02.zip" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/EC-Win/8.3.01.02.License_Unrestricted.{4838BDA9-2AC7-4123-8BB9-6B41632F0840}/License_Unrestricted.8.3.01.02.zip</a></div><div><br></div><div><br></div>
+
+### ARTICLE03_HEADER
+Id=59269
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.04.2025 06:21:29 +00:00
+UpdatedAt=03.04.2025 06:21:32 +00:00
+
+### ARTICLE03_SUBJECT
+Acontis software update request from Acutronic
+
+### ARTICLE03_BODY
+<div>
+<div>Hallo Herr <span>Williot, </span>
+</div>
+<div><br></div>
+<div><div>Unten finden Sie Ihre neue Softwareversion:</div></div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2025/A/ACUTRONIC_(40141)(CH)/EC-Master_RTOS-32_(RTHV)_x86_32Bit/3.2.2.05/EC-Master-V3.2.2.05-EC-WinRTOS-32-x86_32Bit-SDK_Unrestricted.zip" title="https://downloads.acontis.com/2025/A/ACUTRONIC_(40141)(CH)/EC-Master_RTOS-32_(RTHV)_x86_32Bit/3.2.2.05/EC-Master-V3.2.2.05-EC-WinRTOS-32-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/A/ACUTRONIC_(40141)(CH)/EC-Master_RTOS-32_(RTHV)_x86_32Bit/3.2.2.05/EC-Master-V3.2.2.05-EC-WinRTOS-32-x86_32Bit-SDK_Unrestricted.zip</a></div>
+<div><br></div>
+<div>
+<div><a href="http://software.acontis.com/EC-Win/8.3.01.02.EC-WinRTOS-32.%7BB078C82C-A9C4-4B97-80EE-2B938E96C2B7%7D/EC-WinRTOS-32.8.3.01.02.zip" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/EC-Win/8.3.01.02.EC-WinRTOS-32.{B078C82C-A9C4-4B97-80EE-2B938E96C2B7}/EC-WinRTOS-32.8.3.01.02.zip</a></div>
+<div><br></div>
+<div><a href="http://software.acontis.com/EC-Win/8.3.01.02.EC-WinRTOS-32.%7BB078C82C-A9C4-4B97-80EE-2B938E96C2B7%7D/InstallationGuide_EC-Win_LICENSED.pdf" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/EC-Win/8.3.01.02.EC-WinRTOS-32.{B078C82C-A9C4-4B97-80EE-2B938E96C2B7}/InstallationGuide_EC-Win_LICENSED.pdf</a></div>
+<div><br></div>
+<div><a href="http://software.acontis.com/EC-Win/8.3.01.02.License_Unrestricted.%7B4838BDA9-2AC7-4123-8BB9-6B41632F0840%7D/License_Unrestricted.8.3.01.02.zip" rel="nofollow noreferrer noopener" target="_blank">http://software.acontis.com/EC-Win/8.3.01.02.License_Unrestricted.{4838BDA9-2AC7-4123-8BB9-6B41632F0840}/License_Unrestricted.8.3.01.02.zip</a></div>
+</div>
+<div><br></div>
+<div><br></div>
+<div>Password: ECM88250</div>
+<div><br></div>
+<div>LG,</div>
+</div><div><br></div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>

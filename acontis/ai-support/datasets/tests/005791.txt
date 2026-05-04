@@ -1,0 +1,136 @@
+### HEADER
+Id=5791
+Link=http://at-zammad/#ticket/zoom/5791
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies GmbH (ID=399, Number=1000, Country=DE)
+Commission=Acontis, Generic (ID=590, Number=590)
+Number=705791
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+CreatedBy=1
+Type=
+TimeUnit=
+CreatedAt=21.06.2023 06:34:40 +00:00
+UpdatedAt=05.01.2024 15:21:30 +00:00
+CloseAt=21.06.2023 09:53:20 +00:00
+ArticlesCount=1
+
+### TITLE
+WG: Inquiry from Rorze (Fukuyama) ----- Q (Macnica)
+
+### ARTICLE00_HEADER
+Id=30926
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.06.2023 06:34:40 +00:00
+UpdatedAt=05.01.2024 15:21:31 +00:00
+
+### ARTICLE00_SUBJECT
+WG: Inquiry from Rorze (Fukuyama) ----- Q (Macnica)
+
+### ARTICLE00_BODY
+<div>
+<p><span>
+<p>Hi Daniel,</p></span></p>
+<p> </p>
+<p><span lang="DE">Kannst Du mich da bitte auf dem Laufenden halten. Wir müssen ja dann ein Angebot erstellen.</span></p>
+<p><span lang="DE">
+<br>Danke und Gruß,</span></p>
+<p><span lang="DE">Ronnie</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<div>
+<span class="js-signatureMarker"></span><p><b><span lang="DE">Von:</span></b><span lang="DE"> Timo Nußbaumer &lt;t.nussbaumer@acontis.com&gt; <br><b>Gesendet:</b> Montag, 19. Juni 2023 14:26 <br><b>An:</b> 'Ronnie Schele' &lt;r.schele@acontis.com&gt; <br><b>Cc:</b> Cyril Eyssautier &lt;c.eyssautier@acontis.com&gt; <br><b>Betreff:</b> AW: Inquiry from Rorze (Fukuyama) ----- Q (Macnica)</span></p>
+</div>
+<p> </p>
+<p><span lang="DE">Hi Ronnie,</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Danke Cyril. Wahrscheinlich können wir dies, eventuell mit leichten Adaptionen. Hierfür gibt es bereits ein Ticket <a href="http://at-zammad/#ticket/zoom/5591" rel="nofollow noreferrer noopener">http://at-zammad/#ticket/zoom/5591</a></span></p>
+<p><span lang="DE">Daniel wird es direkt beantworten.</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Schöne Grüße,</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Timo.</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<div>
+<p><b><span lang="DE">Von:</span></b><span lang="DE"> Ronnie Schele &lt;<a href="mailto:r.schele@acontis.com">r.schele@acontis.com</a>&gt; <br><b>Gesendet:</b> Montag, 19. Juni 2023 14:11 <br><b>An:</b> Timo Nußbaumer &lt;<a href="mailto:t.nussbaumer@acontis.com">t.nussbaumer@acontis.com</a>&gt; <br><b>Betreff:</b> WG: Inquiry from Rorze (Fukuyama) ----- Q (Macnica)</span></p>
+</div>
+<p><span lang="DE"><p> </p></span></p>
+<p>Hi Timo,</p>
+<p> </p>
+<p><span lang="DE">Kannst Du mir dazu eine Info geben:</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p>Question:</p>
+<p>Q1)</p>
+<p>According to above situation, could you please advise if acontis has available evaluation version for</p>
+<p>SoC<span lang="JA">：</span>TI<span lang="JA">／</span>AM243x<span lang="JA">、</span>MAC<span lang="JA">：</span>PRU-ICSS<span lang="JA">、</span>RTOS<span lang="JA">：</span>FreeRTOS?</p>
+<p> </p>
+<p>Q2)</p>
+<p>In above case, could you please if acontis require the development charge for this Link Layer?</p>
+<p>If YES, could you please advise of rough price quotation and development period?</p>
+<p> </p>
+<p><span>Danke und Gruß, <br>Ronnie</span></p>
+<p> </p>
+<div>
+<p><b><span lang="DE">Von:</span></b><span lang="DE"> Y Kawabe &lt;<a href="mailto:y.kawabe@acontis.com">y.kawabe@acontis.com</a>&gt; <br><b>Gesendet:</b> Freitag, 16. Juni 2023 15:21 <br><b>An:</b> 'Ronnie Schele' &lt;<a href="mailto:r.schele@acontis.com">r.schele@acontis.com</a>&gt; <br><b>Betreff:</b> Inquiry from Rorze (Fukuyama) ----- Q (Macnica)</span></p>
+</div>
+<p> </p>
+<p>Hi Ronnie</p>
+<p> </p>
+<p>We got the following inquiry:</p>
+<p> </p>
+<p>Attendee:</p>
+<p>Mr. Sugimori (Director, Software Solution Department)</p>
+<p> </p>
+<p>Application:</p>
+<p>Wafer Handling System for Applied Materials)</p>
+<p><a href="https://www.rorze.com/en/products_category/wafer-transfer-system/" rel="nofollow noreferrer noopener" target="_blank">https://www.rorze.com/en/products_category/wafer-transfer-system/</a></p>
+<p> </p>
+<p>Volume:</p>
+<p>T.B.D.</p>
+<p> </p>
+<p>Considering Platform<span lang="JA">：</span></p>
+<p>SoC<span lang="JA">：</span>TI<span lang="JA">／</span>AM243x</p>
+<p><a href="https://www.ti.com/lit/ds/symlink/am2434.pdf?ts=1686914550766&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FAM2434" rel="nofollow noreferrer noopener" target="_blank">https://www.ti.com/lit/ds/symlink/am2434.pdf?ts=1686914550766&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FAM2434</a></p>
+<p>RTOS<span lang="JA">：</span>FreeRTOS</p>
+<p>MAC<span lang="JA">：</span>PRU-ICSS</p>
+<p> </p>
+<p>Schedule:</p>
+<p>2023 Start Development</p>
+<p>2024-2025 Product Release</p>
+<p> </p>
+<p>Status:</p>
+<p>-This project for Applied Materials.</p>
+<p>-This project is EtherCAT compatible and Applied Material recommended EC-Master.</p>
+<p>-And JSL subcontracts for both Master and Slave, so JSL intends to make proposal on Evaluation version, Total Cost,</p>
+<p>and Development period.</p>
+<p> </p>
+<p>Inquiries:</p>
+<p><span lang="JA">①</span> SoC: TI/AM243x, MAC: PRU-ICSS, RTOS: FreeRTOS<span lang="JA"> </span></p>
+<p>Is there an evaluation version that can be provided in combination?</p>
+<p>(2) Is it necessary to develop a Link layer for the above combination?</p>
+<p>If development is necessary, please let me know the approximate cost and the approximate development period.</p>
+<p> </p>
+<p>Question:</p>
+<p>Q1)</p>
+<p>According to above situation, could you please advise if acontis has available evaluation version for</p>
+<p>SoC<span lang="JA">：</span>TI<span lang="JA">／</span>AM243x<span lang="JA">、</span>MAC<span lang="JA">：</span>PRU-ICSS<span lang="JA">、</span>RTOS<span lang="JA">：</span>FreeRTOS?</p>
+<p> </p>
+<p>Q2)</p>
+<p>In above case, could you please if acontis require the development charge for this Link Layer?</p>
+<p>If YES, could you please advise of rough price quotation and development period?</p>
+<p> </p>
+<p>With best regards,</p>
+<p>Benny</p>
+<p> </p>
+<p><b><i>~~~~~~~~~~~~~~~~~~~~~~~~~~</i></b></p>
+<p><b><i>acontis technologies Japan</i></b></p>
+<p><b><i>Yasuhiro "Benny" Kawabe</i></b></p>
+<p><b><i>Phone: +81 (0) 90-7226-0120</i></b></p>
+<p><b><i><span>email: <a href="mailto:y.kawabe@acontis.com"><span style="color:blue;">y.kawabe@acontis.com</span></a></span></i></b></p>
+<p><b><i>~~~~~~~~~~~~~~~~~~~~~~~~~~</i></b></p>
+<p> </p>
+</div>

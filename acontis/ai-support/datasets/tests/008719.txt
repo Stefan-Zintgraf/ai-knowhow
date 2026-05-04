@@ -1,0 +1,135 @@
+### HEADER
+Id=8719
+Link=http://at-zammad/#ticket/zoom/8719
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Weinig (ID=849, Number=0, Country=DE)
+Commission=Weinig, Unknown (ID=930, Number=930)
+Number=708719
+Owner=s.romero@acontis.com (ID=2460, FirstName=Sebastian, LastName=Romero)
+Customer=claudio.fischer@weinig.com (ID=2662, FirstName=Claudio, LastName=Fischer)
+CreatedBy=claudio.fischer@weinig.com (ID=2662, FirstName=Claudio, LastName=Fischer)
+Type=
+TimeUnit=
+CreatedAt=23.08.2024 15:42:55 +00:00
+UpdatedAt=27.09.2024 12:35:59 +00:00
+CloseAt=02.09.2024 08:17:39 +00:00
+ArticlesCount=4
+
+### TITLE
+Fragen zu EC-Engineer
+
+### ARTICLE00_HEADER
+Id=48969
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.08.2024 15:42:55 +00:00
+UpdatedAt=23.08.2024 15:42:59 +00:00
+
+### ARTICLE00_SUBJECT
+Fragen zu EC-Engineer
+
+### ARTICLE00_BODY
+<p> </p><div>Hallo Herr Widmann,</div><div> </div><div>beim Arbeiten mit EC-Engineer sind uns 2 Probleme aufgefallen:<br> <br> </div><ol start="1"> <li> <div>Video_1_2024-08-23 13-10-02_2.mp4<br> Beim Editieren der Antriebsparameter AT wird bei Drücken des Button Edit automatisch der AT-Index um eins <br> erhöht. Hier im Video von 16 auf 17 und dann auf 18, ohne dass dieser Wert geändert bzw. eingegeben wird.</div>
+<div> <div>Wenn wir hier beim Editieren den Index nicht immer wieder auf 16 ändern, ist die Konfiguration kaputt.<br> <br> </div>
+</div>
+</li>
+<li> <div>Video_2_2024-08-23 13-32-14_2.mp4<br> Vor dem Editieren des Antriebsparameter "Drive status word" ist die Bit Length 16. Sobald man hier auf den <br> Button Edit drückt, ändert sich die Bit Length automatisch auf 64. Wenn wir hier beim Editieren die Bit Length <br> nicht immer wieder auf 16 ändern, ist die Konfiguration kaputt. <br> <br> </div>
+</li>
+</ol> <div> </div><div> <div>Mit freundlichen Grüßen | Best regards,</div>
+<div> </div>
+<div> i. A. <b>CLAUDIO FISCHER</b>
+<br> </div>
+<div>Dipl. Ing. (FH) Elektrotechnik<br> </div>
+<div> </div>
+<span>Produktbereich Zuschnitt / Verleimen <br> Gruppenleiter Entwicklung HMI Visualisierung OptiCut</span> <div> </div>
+<div> <span>Phone +49 7303 15-212 <br> Fax +49 7303 15-243 <br> <a href="mailto:claudio.fischer@weinig.com" rel="noopener noreferrer">claudio.fischer@weinig.com</a></span><b>
+<br> </b>
+</div>
+<div> </div>
+</div><br> <br> <p><b>WEINIG DIMTER GMBH &amp; CO. KG</b>
+<br> Rudolf-Diesel-Strasse 14-16 <br> 89257 Illertissen <br> Germany <br> <a href="http://www.weinig.com" rel="nofollow noreferrer noopener" target="_blank">www.weinig.com</a></p><br> <p>Registergericht Memmingen A 10071<br> Geschaeftsfuehrer: Reinald Kreiskott, Michael Deschenhalm <br> UST / ID-Nr. DE 812 382 348</p>
+
+### ARTICLE01_HEADER
+Id=49014
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=26.08.2024 11:09:21 +00:00
+UpdatedAt=26.08.2024 11:09:21 +00:00
+
+### ARTICLE01_BODY
+@Kai:<div>Denke ist eher was für dich. Betrifft denke ich den Edit PDO Dialog Umbau.</div><div>Punkt 1: War ein Bug in <span>V3.9.1. Scheint jetzt behoben zu sein.</span>
+</div><div><span>Punkt 2: Ist noch drin.</span></div><div><span>Die ESIs habe ich auch. Kann ich dir geben.</span></div>
+
+### ARTICLE02_HEADER
+Id=49019
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=26.08.2024 13:13:58 +00:00
+UpdatedAt=26.08.2024 13:13:58 +00:00
+
+### ARTICLE02_BODY
+@Sebastian: Da ist in deiner neu Implementierung auch noch ein Bug. Könntest du das bei dir Fixen und zeitgleich beim aktuellen Stand?
+
+### ARTICLE03_HEADER
+Id=49056
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.08.2024 08:57:57 +00:00
+UpdatedAt=27.08.2024 08:57:57 +00:00
+
+### ARTICLE03_SUBJECT
+Fragen zu EC-Engineer
+
+### ARTICLE03_BODY
+Hallo Herr Fischer,<br><br>1. Das war ein Bug der mittlerweile schon behoben ist.<br><br>2. Das liegt daran, dass die Variable einen DatenTyp hat (word) der im ESI nicht beschrieben ist. Daher wird dieser beim Editieren nicht gefunden. Das ist also eigentlich ein Bug im ESI, wir werden das aber für nächste Version verbessern, sodass die Bit Size nicht mehr ändert.<br><br>Viele Grüße<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Sebastian Romero</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Friday, August 23, 2024 at 5:42:55 PM, Claudio Fischer wrote:<br><br><p> </p>
+<div>Hallo Herr Widmann,</div>
+<div> </div>
+<div>beim Arbeiten mit EC-Engineer sind uns 2 Probleme aufgefallen:<br> <br> </div>
+<ol start="1"> <li> <div>Video_1_2024-08-23 13-10-02_2.mp4<br> Beim Editieren der Antriebsparameter AT wird bei Drücken des Button Edit automatisch der AT-Index um eins <br> erhöht. Hier im Video von 16 auf 17 und dann auf 18, ohne dass dieser Wert geändert bzw. eingegeben wird.</div>
+<div> <div>Wenn wir hier beim Editieren den Index nicht immer wieder auf 16 ändern, ist die Konfiguration kaputt.<br> <br> </div>
+</div>
+</li>
+<li> <div>Video_2_2024-08-23 13-32-14_2.mp4<br> Vor dem Editieren des Antriebsparameter "Drive status word" ist die Bit Length 16. Sobald man hier auf den <br> Button Edit drückt, ändert sich die Bit Length automatisch auf 64. Wenn wir hier beim Editieren die Bit Length <br> nicht immer wieder auf 16 ändern, ist die Konfiguration kaputt. <br> <br> </div>
+</li>
+</ol> <div> </div>
+<div> <div>Mit freundlichen Grüßen | Best regards,</div>
+<div> </div>
+<div> i. A. <b>CLAUDIO FISCHER</b>
+<br> </div>
+<div>Dipl. Ing. (FH) Elektrotechnik<br> </div>
+<div> </div>
+<span>Produktbereich Zuschnitt / Verleimen <br> Gruppenleiter Entwicklung HMI Visualisierung OptiCut</span> <div> </div>
+<div> <span>Phone +49 7303 15-212 <br> Fax +49 7303 15-243 <br> <a href="mailto:claudio.fischer@weinig.com" rel="noopener noreferrer">claudio.fischer@weinig.com</a></span><b>
+<br> </b>
+</div>
+<div> </div>
+</div>
+<br> <br> <p><b>WEINIG DIMTER GMBH &amp; CO. KG</b>
+<br> Rudolf-Diesel-Strasse 14-16 <br> 89257 Illertissen <br> Germany <br> <a href="http://www.weinig.com" rel="nofollow noreferrer noopener" target="_blank">www.weinig.com</a></p>
+<br> <p>Registergericht Memmingen A 10071<br> Geschaeftsfuehrer: Reinald Kreiskott, Michael Deschenhalm <br> UST / ID-Nr. DE 812 382 348</p>
+<br>
+</blockquote></div><div><br></div><br><br>

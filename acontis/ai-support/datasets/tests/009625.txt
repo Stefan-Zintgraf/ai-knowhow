@@ -1,0 +1,109 @@
+### HEADER
+Id=9625
+Link=http://at-zammad/#ticket/zoom/9625
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=PHOENIX CONTACT Electronics GmbH (ID=143, Number=57501, Country=DE)
+Commission=Phoenix, PLCnext Control (ID=162, Number=162)
+Number=709625
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=wriediger@phoenixcontact.com (ID=3002, FirstName=Willi, LastName=Riediger)
+CreatedBy=wriediger@phoenixcontact.com (ID=3002, FirstName=Willi, LastName=Riediger)
+Type=
+TimeUnit=
+CreatedAt=09.01.2025 06:08:45 +00:00
+UpdatedAt=31.01.2025 07:14:04 +00:00
+CloseAt=31.01.2025 07:14:04 +00:00
+ArticlesCount=2
+
+### TITLE
+Anfrage zu möglichen Meldewegen zu Security-Lücken
+
+### ARTICLE00_HEADER
+Id=54729
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.01.2025 06:08:46 +00:00
+UpdatedAt=09.01.2025 06:08:51 +00:00
+
+### ARTICLE00_SUBJECT
+Anfrage zu möglichen Meldewegen zu Security-Lücken
+
+### ARTICLE00_BODY
+<div>Sehr geehrte Damen und Herren,</div><div> </div><div> im Rahmen der formalen Integration des atemsy-Treibers kam bei uns seitens der Security-Exerten die Frage auf, ob es bei Ihnen bezogen auf den atemsys Treiber "<a href="https://github.com/acontis/atemsys" rel="nofollow noreferrer noopener" target="_blank">https://github.com/acontis/atemsys</a>" einen definierten Weg zum geheimen Melden von Security-Lücken und ein Verfahren zur Behandlung gibt? </div><div> </div><div>Vielen Dank im Voraus!</div><div> </div><div>
+<p><span>Beste Grüße / Best regards<br>
+<br> M.Sc. Willi Riediger<br> Manager</span></p>
+<p><span>Middleware &amp; Components<br>
+</span>Business Area Industry Management and Automation</p>
+<p> </p>
+<p><span>Phone: +49 5281/946-1606<br> Fax: +49 5281/946-1214<br> mailto: <a href="mailto:wriediger@phoenixcontact.com"> wriediger@phoenixcontact.com</a></span></p>
+<p><span style=" color: rgb(41, 41, 41);"> </span></p>
+<p><span style=" color: rgb(41, 41, 41);">PHOENIX CONTACT ELECTRONICS GmbH</span><span><br> Dringenauer Straße 30<br> D-31812 Bad Pyrmont<br>
+<a href="http://www.phoenixcontact.com/" rel="nofollow noreferrer noopener" target="_blank">www.phoenixcontact.com</a><span class="js-signatureMarker"></span><br> --------------------------------------------------------</span></p>
+<p> </p>
+</div><p dir="ltr"><br>..................................................................<br>Phoenix Contact GmbH &amp; Co. KG<br><br>Sitz der Gesellschaft / registered office of the company: 32825 Blomberg<br>Amtsgericht Lemgo HRA 3746 / district court Lemgo HRA 3746<br>USt-Id-Nr.: DE124613250</p><p dir="ltr"><br>Pers. haftende Gesellschafterin / personally liable partner: Phoenix Contact Verwaltungs-GmbH<br>Verwaltungssitz Blomberg / Management office Blomberg: Amtsgericht Lemgo HRB 10904 / district court Lemgo HRB 10904<br>Satzungssitz Vaduz/Liechtenstein HR Nr. FL-0002.700.066-3 / Statutory seat Vaduz/Liechtenstein Comm. reg. FL-0002.700.066-3</p><p dir="ltr">Geschäftsführung / Group Executive Board: Dirk Görlitzer (Vorsitzender/CEO), Torsten Janwlecke, Ulrich Leidecker, Frank Possel-Dölken, Frank Stührenberg, Axel Wachholz</p><p dir="ltr"><span lang="EN-GB">Vorsitzender des Beirates / Chairman of the Advisory Board: Dr. Dipl.-Ing. Eberhard Veit</span></p><p dir="ltr">___________________________________________________________________<br>Diese E-Mail enthält vertrauliche und/oder rechtlich geschützte Informationen. Wenn Sie nicht der richtige Adressat sind oder diese E-Mail irrtümlich erhalten haben, informieren Sie bitte sofort den Absender und vernichten Sie diese Mail. Das unerlaubte Kopieren, jegliche anderweitige Verwendung sowie die unbefugte Weitergabe dieser Mail ist nicht gestattet.<br>----------------------------------------------------------------------------------------------------<br>This e-mail may contain confidential and/or privileged information. If you are not the intended recipient (or have received this e-mail in error) please notify the sender immediately and destroy this e-mail. Any unauthorized copying, disclosure, distribution or other use of the material or parts thereof is strictly forbidden.<br>___________________________________________________________________</p><p> </p>
+
+### ARTICLE01_HEADER
+Id=54732
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.01.2025 06:50:29 +00:00
+UpdatedAt=09.01.2025 06:50:30 +00:00
+
+### ARTICLE01_SUBJECT
+Anfrage zu möglichen Meldewegen zu Security-Lücken
+
+### ARTICLE01_BODY
+Hallo Herr Riediger,<div><br></div><div>wir haben dafür kein besonderen Verfahren.</div><div><br></div><div>Unser atemsys wird immer auf github geupdatet und die Änderungen in seinem Header File getrackt (<a href="https://github.com/acontis/atemsys/blob/main/atemsys.h" title="https://github.com/acontis/atemsys/blob/main/atemsys.h" rel="nofollow noreferrer noopener" target="_blank">https://github.com/acontis/atemsys/blob/main/atemsys.h</a>). <span>Probleme werden an </span><span>ecsupport@acontis.com</span><span> gemeldet.</span><br>
+</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, January 9, 2025 at 7:08:46 AM, Willi Riediger wrote:<br><br><div>Sehr geehrte Damen und Herren,</div>
+<div> </div>
+<div> im Rahmen der formalen Integration des atemsy-Treibers kam bei uns seitens der Security-Exerten die Frage auf, ob es bei Ihnen bezogen auf den atemsys Treiber "<a href="https://github.com/acontis/atemsys" rel="nofollow noreferrer noopener" target="_blank">https://github.com/acontis/atemsys</a>" einen definierten Weg zum geheimen Melden von Security-Lücken und ein Verfahren zur Behandlung gibt? </div>
+<div> </div>
+<div>Vielen Dank im Voraus!</div>
+<div> </div>
+<div>
+<p><span>Beste Grüße / Best regards<br>
+<br> M.Sc. Willi Riediger<br> Manager</span></p>
+<p><span>Middleware &amp; Components<br>
+</span>Business Area Industry Management and Automation</p>
+<p> </p>
+<p><span>Phone: +49 5281/946-1606<br> Fax: +49 5281/946-1214<br> mailto: <a href="mailto:wriediger@phoenixcontact.com"> wriediger@phoenixcontact.com</a></span></p>
+<p><span style=" color: rgb(41, 41, 41);"> </span></p>
+<p><span style=" color: rgb(41, 41, 41);">PHOENIX CONTACT ELECTRONICS GmbH</span><span><br> Dringenauer Straße 30<br> D-31812 Bad Pyrmont<br>
+<a href="http://www.phoenixcontact.com/" rel="nofollow noreferrer noopener" target="_blank">www.phoenixcontact.com</a><span class="js-signatureMarker"></span><br> --------------------------------------------------------</span></p>
+<p> </p>
+</div>
+<p dir="ltr"><br>..................................................................<br>Phoenix Contact GmbH &amp; Co. KG<br><br>Sitz der Gesellschaft / registered office of the company: 32825 Blomberg<br>Amtsgericht Lemgo HRA 3746 / district court Lemgo HRA 3746<br>USt-Id-Nr.: DE124613250</p>
+<p dir="ltr"><br>Pers. haftende Gesellschafterin / personally liable partner: Phoenix Contact Verwaltungs-GmbH<br>Verwaltungssitz Blomberg / Management office Blomberg: Amtsgericht Lemgo HRB 10904 / district court Lemgo HRB 10904<br>Satzungssitz Vaduz/Liechtenstein HR Nr. FL-0002.700.066-3 / Statutory seat Vaduz/Liechtenstein Comm. reg. FL-0002.700.066-3</p>
+<p dir="ltr">Geschäftsführung / Group Executive Board: Dirk Görlitzer (Vorsitzender/CEO), Torsten Janwlecke, Ulrich Leidecker, Frank Possel-Dölken, Frank Stührenberg, Axel Wachholz</p>
+<p dir="ltr"><span lang="EN-GB">Vorsitzender des Beirates / Chairman of the Advisory Board: Dr. Dipl.-Ing. Eberhard Veit</span></p>
+<p dir="ltr">___________________________________________________________________<br>Diese E-Mail enthält vertrauliche und/oder rechtlich geschützte Informationen. Wenn Sie nicht der richtige Adressat sind oder diese E-Mail irrtümlich erhalten haben, informieren Sie bitte sofort den Absender und vernichten Sie diese Mail. Das unerlaubte Kopieren, jegliche anderweitige Verwendung sowie die unbefugte Weitergabe dieser Mail ist nicht gestattet.<br>----------------------------------------------------------------------------------------------------<br>This e-mail may contain confidential and/or privileged information. If you are not the intended recipient (or have received this e-mail in error) please notify the sender immediately and destroy this e-mail. Any unauthorized copying, disclosure, distribution or other use of the material or parts thereof is strictly forbidden.<br>___________________________________________________________________</p>
+<p> </p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

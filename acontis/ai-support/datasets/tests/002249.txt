@@ -1,0 +1,180 @@
+### HEADER
+Id=2249
+Link=http://at-zammad/#ticket/zoom/2249
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Strama-MPS Maschinenbau GmbH & Co. KG (ID=765, Number=0, Country=DE)
+Commission=Vector, CANoe (ID=189, Number=189)
+Number=702249
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=ext.konstantin.nikulin@strama-mps.de (ID=866, FirstName=Ext, LastName=Nikulin Konstantin)
+CreatedBy=ext.konstantin.nikulin@strama-mps.de (ID=866, FirstName=Ext, LastName=Nikulin Konstantin)
+Type=
+TimeUnit=
+CreatedAt=17.01.2022 15:20:05 +00:00
+UpdatedAt=29.11.2023 06:21:29 +00:00
+CloseAt=24.01.2022 08:28:32 +00:00
+ArticlesCount=3
+
+### TITLE
+Datentype von EtherCAT-CANoe-Treiber
+
+### ARTICLE00_HEADER
+Id=11874
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.01.2022 15:20:05 +00:00
+UpdatedAt=17.01.2022 15:20:05 +00:00
+
+### ARTICLE00_SUBJECT
+Datentype von EtherCAT-CANoe-Treiber
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Herr Eyssautier,</p>
+<p> </p>
+<p>kurz vor Weihnachten am 22.12.2021 habe mit Ihnen wegen der Datentypen in Ihrem EtherCAT-Treiber für CANoe per MS Teams telefoniert.</p>
+<p>Mein Problem habe ich damals beseitigt, jetzt habe ich noch ein weiteres Problem:</p>
+<p>der vom Treiber automatisch erzeugten ECAT-Structur wird ein Daten-Typ zugewiesen, was mit CANoe und vTESTstudio nicht ganz kompatible ist,<br> nämlich <b>::ECAT::Network::Slave_01::OutVariableStruct</b>, theoretisch sollte es jedoch einfach <b>Struct</b> sein.</p>
+<p> </p>
+<p><img style="max-width:100%;width:10.2708in;max-height:3.4166in;width:986px;max-height:328px;" src="/api/v1/ticket_attachment/2249/11874/46295?view=inline" alt="Ein Bild, das Text, Screenshot, drinnen enthält.
+
+Automatisch generierte Beschreibung"></p>
+<p> </p>
+<p>Ich wäre Ihnen sehr dankbar, wenn wir das Problem per MS Teams genauer anschauen könnten.<br> Ein MS Teams-Termin kann ich Ihnen zuschicken.</p>
+<p> </p>
+<p>Danke im Voraus und beste Grüße,</p>
+<p>Konstantin Nikulin</p>
+<p> </p>
+<p>Software-Ingenieur</p>
+<p>Strama MPS</p>
+</div><p>Strama-MPS Maschinenbau GmbH &amp; Co. KG<br> Kommanditgesellschaft - Sitz Straubing, Registergericht Straubing - HR A 1369<br> Persoenlich haftende Gesellschafterin: Strama Maschinenbau GmbH<br> Sitz Straubing, Registergericht Straubing - HR B 9042<br> Umsatzsteuer-Identifikations-Nr.: DE 131448310, Steuer-Nr.: 162/177/53809 <br> Geschaeftsfuehrer: Dipl.-Ing., Dipl.-Wirtsch.-Ing. Herbert Wittl, Dipl.-Ing., Dipl.-Wirtsch.-Ing. Helmut Petzko</p><p> </p><p>Diese Nachricht und/oder die Anhänge sind vertraulich und daher ausschließlich für den bezeichneten Adressaten bestimmt.<br> Jegliche Weitergabe oder Vervielfältigung dieser Mitteilung oder die unerlaubte Benutzung ihres Inhalts ist streng verboten. <br> Wenn Sie diese Email empfangen haben und nicht der beabsichtigte Adressat sind, benachrichtigen Sie den Absender bitte unverzüglich und löschen Sie die Originalnachricht.<br>
+</p><p> </p><p>This message and/ or attachments contains information that is confidential and thereby intended solely for the use of the addressed recipient.<br> Any distribution or copying of this e-mail, or the unauthorized use of its contents, is strictly prohibited.<br> If you have received this e-mail and are not the intended recipient, please notify the sender immediately and delete the original e-mail.<br>
+</p>
+
+### ARTICLE01_HEADER
+Id=12075
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.01.2022 09:03:06 +00:00
+UpdatedAt=21.01.2022 09:03:10 +00:00
+
+### ARTICLE01_SUBJECT
+Datentype von EtherCAT-CANoe-Treiber
+
+### ARTICLE01_BODY
+<div>Hallo Herr Nikulin,</div><div><br></div><div>sind sie weitergekommen?</div><div><br></div><div>Schöne Grüße,</div><div>Cyril Eyssautier<br><br>
+</div><div><blockquote type="cite">On Monday, January 17, 2022, 4:20:05 PM, Ext Nikulin Konstantin wrote:<br><br><div>
+<p>Hallo Herr Eyssautier,</p>
+<p> </p>
+<p>kurz vor Weihnachten am 22.12.2021 habe mit Ihnen wegen der Datentypen in Ihrem EtherCAT-Treiber für CANoe per MS Teams telefoniert.</p>
+<p>Mein Problem habe ich damals beseitigt, jetzt habe ich noch ein weiteres Problem:</p>
+<p>der vom Treiber automatisch erzeugten ECAT-Structur wird ein Daten-Typ zugewiesen, was mit CANoe und vTESTstudio nicht ganz kompatible ist,<br> nämlich <b>::ECAT::Network::Slave_01::OutVariableStruct</b>, theoretisch sollte es jedoch einfach <b>Struct</b> sein.</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:10.2708in;max-height:3.4166in;width:986px;max-height:328px;" src="/api/v1/ticket_attachment/2249/12075/46915?view=inline" alt="Ein Bild, das Text, Screenshot, drinnen enthält.
+
+Automatisch generierte Beschreibung"></p>
+<p> </p>
+<p>Ich wäre Ihnen sehr dankbar, wenn wir das Problem per MS Teams genauer anschauen könnten.<br> Ein MS Teams-Termin kann ich Ihnen zuschicken.</p>
+<p> </p>
+<p>Danke im Voraus und beste Grüße,</p>
+<p>Konstantin Nikulin</p>
+<p> </p>
+<p>Software-Ingenieur</p>
+<p>Strama MPS</p>
+</div>
+<p>Strama-MPS Maschinenbau GmbH &amp; Co. KG<br> Kommanditgesellschaft - Sitz Straubing, Registergericht Straubing - HR A 1369<br> Persoenlich haftende Gesellschafterin: Strama Maschinenbau GmbH<br> Sitz Straubing, Registergericht Straubing - HR B 9042<br> Umsatzsteuer-Identifikations-Nr.: DE 131448310, Steuer-Nr.: 162/177/53809 <br> Geschaeftsfuehrer: Dipl.-Ing., Dipl.-Wirtsch.-Ing. Herbert Wittl, Dipl.-Ing., Dipl.-Wirtsch.-Ing. Helmut Petzko</p>
+<p> </p>
+<p>Diese Nachricht und/oder die Anhänge sind vertraulich und daher ausschließlich für den bezeichneten Adressaten bestimmt.<br> Jegliche Weitergabe oder Vervielfältigung dieser Mitteilung oder die unerlaubte Benutzung ihres Inhalts ist streng verboten. <br> Wenn Sie diese Email empfangen haben und nicht der beabsichtigte Adressat sind, benachrichtigen Sie den Absender bitte unverzüglich und löschen Sie die Originalnachricht.<br>
+</p>
+<p> </p>
+<p>This message and/ or attachments contains information that is confidential and thereby intended solely for the use of the addressed recipient.<br> Any distribution or copying of this e-mail, or the unauthorized use of its contents, is strictly prohibited.<br> If you have received this e-mail and are not the intended recipient, please notify the sender immediately and delete the original e-mail.<br>
+</p>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=12077
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.01.2022 09:14:27 +00:00
+UpdatedAt=21.01.2022 09:14:27 +00:00
+
+### ARTICLE02_SUBJECT
+AW: Datentype von EtherCAT-CANoe-Treiber [Ticket#702249]
+
+### ARTICLE02_BODY
+<div>
+<p>Hallo Herr Eyssautier,</p>
+<p> </p>
+<p>danke für Ihre Antwort, ich habe das Problem gelöst.</p>
+<p>Für <b>ECAT </b>mussen<b> sysvarMember </b>verwendet werden, dann geht es.</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Konstantin</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Gesendet:</b> Freitag, 21. Januar 2022 10:03<br>
+<b>An:</b> c.eyssautier@acontis.com; EXT Nikulin Konstantin &lt;ext.konstantin.nikulin@strama-mps.de&gt;<br>
+<b>Cc:</b> tobias.lange@vector.com<br>
+<b>Betreff:</b> RE: Datentype von EtherCAT-CANoe-Treiber [Ticket#702249]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Hallo Herr Nikulin,</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>sind sie weitergekommen?</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Schöne Grüße,</p>
+</div>
+<div>
+<p>Cyril Eyssautier</p>
+</div>
+<div>
+<blockquote>
+<p>On Monday, January 17, 2022, 4:20:05 PM, Ext Nikulin Konstantin wrote:</p>
+<p></p>
+<div>
+<p>Hallo Herr Eyssautier,</p>
+<p> </p>
+<p>kurz vor Weihnachten am 22.12.2021 habe mit Ihnen wegen der Datentypen in Ihrem EtherCAT-Treiber für CANoe per MS Teams telefoniert.</p>
+<p>Mein Problem habe ich damals beseitigt, jetzt habe ich noch ein weiteres Problem:</p>
+<p>der vom Treiber automatisch erzeugten ECAT-Structur wird ein Daten-Typ zugewiesen, was mit CANoe und vTESTstudio nicht ganz kompatible ist,<br> nämlich <b>::ECAT::Network::Slave_01::OutVariableStruct</b>, theoretisch sollte es jedoch einfach <b>Struct</b> sein.</p>
+<p> </p>
+<p><img style="max-width:100%;width:10.2708in;max-height:3.4166in;width:986px;max-height:328px;" src="/api/v1/ticket_attachment/2249/12077/46920?view=inline" alt="Ein Bild, das Text, Screenshot, drinnen enthält.
+
+Automatisch generierte Beschreibung"></p>
+<p> </p>
+<p>Ich wäre Ihnen sehr dankbar, wenn wir das Problem per MS Teams genauer anschauen könnten.<br> Ein MS Teams-Termin kann ich Ihnen zuschicken.</p>
+<p> </p>
+<p>Danke im Voraus und beste Grüße,</p>
+<p>Konstantin Nikulin</p>
+<p> </p>
+<p>Software-Ingenieur</p>
+<p>Strama MPS</p>
+</div>
+<p>Strama-MPS Maschinenbau GmbH &amp; Co. KG<br> Kommanditgesellschaft - Sitz Straubing, Registergericht Straubing - HR A 1369<br> Persoenlich haftende Gesellschafterin: Strama Maschinenbau GmbH<br> Sitz Straubing, Registergericht Straubing - HR B 9042<br> Umsatzsteuer-Identifikations-Nr.: DE 131448310, Steuer-Nr.: 162/177/53809 <br> Geschaeftsfuehrer: Dipl.-Ing., Dipl.-Wirtsch.-Ing. Herbert Wittl, Dipl.-Ing., Dipl.-Wirtsch.-Ing. Helmut Petzko</p>
+<p> </p>
+<p>Diese Nachricht und/oder die Anhänge sind vertraulich und daher ausschließlich für den bezeichneten Adressaten bestimmt.<br> Jegliche Weitergabe oder Vervielfältigung dieser Mitteilung oder die unerlaubte Benutzung ihres Inhalts ist streng verboten. <br> Wenn Sie diese Email empfangen haben und nicht der beabsichtigte Adressat sind, benachrichtigen Sie den Absender bitte unverzüglich und löschen Sie die Originalnachricht.</p>
+<p> </p>
+<p>This message and/ or attachments contains information that is confidential and thereby intended solely for the use of the addressed recipient.<br> Any distribution or copying of this e-mail, or the unauthorized use of its contents, is strictly prohibited.<br> If you have received this e-mail and are not the intended recipient, please notify the sender immediately and delete the original e-mail.</p>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>

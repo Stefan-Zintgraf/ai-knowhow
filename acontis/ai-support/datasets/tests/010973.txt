@@ -1,0 +1,209 @@
+### HEADER
+Id=10973
+Link=http://at-zammad/#ticket/zoom/10973
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Komatsu Industries, press Mach. Apl. Contr. Board (ID=268, Number=268)
+Number=7010973
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=10.07.2025 00:28:27 +00:00
+UpdatedAt=18.07.2025 06:58:30 +00:00
+CloseAt=18.07.2025 06:58:30 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Engineer(KOMATSU)
+
+### ARTICLE00_HEADER
+Id=62871
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.07.2025 00:28:27 +00:00
+UpdatedAt=10.07.2025 00:28:27 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Engineer(KOMATSU)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support<br> <br> Question about EC-Engineer(KOMATSU)<br> <br> When attempting to generate an ENI file from EC-Engineer (Ver. 2.4.0) using the attached ESI file, the following error is displayed.<br> <img src="/api/v1/ticket_attachment/10973/62871/260581?view=inline" style="max-width:100%;width:362px;max-height:156px;"><br> What could be the cause?"<br> <br> Best regards,<br> Takuya Fujikawa
+
+### ARTICLE01_HEADER
+Id=62898
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.07.2025 06:12:57 +00:00
+UpdatedAt=11.07.2025 06:12:59 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Engineer(KOMATSU)
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>this ESI is using a newer Schema File. EC-Engineer 2.4.0 is from 2016. So of course it cannot use the latest ESI Schema.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, July 10, 2025 at 2:28:27 AM, Takuya Fujikawa wrote:<br><br>Dear EtherCAT Support<br> <br> Question about EC-Engineer(KOMATSU)<br> <br> When attempting to generate an ENI file from EC-Engineer (Ver. 2.4.0) using the attached ESI file, the following error is displayed.<br> <img src="/api/v1/ticket_attachment/10973/62898/260672?view=inline" style="max-width:100%;max-width:100%;width:362px;max-height:156px;"><br> What could be the cause?"<br> <br> Best regards,<br> Takuya Fujikawa<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=62914
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=11.07.2025 07:39:56 +00:00
+UpdatedAt=11.07.2025 07:39:56 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Engineer(KOMATSU) [Ticket#7010973]
+
+### ARTICLE02_BODY
+Dear Kai san
+
+ > this ESI is using a newer Schema File. EC-Engineer 2.4.0 is from 2016. So of course it cannot use the latest ESI Schema.
+
+Is it correct to understand that there will be no error when using the latest EC-Engineer?
+
+Best regards,
+Takuya Fujikawa
+
+
+On 2025/07/11 15:12, Kai Feifel via EC-Support wrote:
+> Hi,
+> 
+> this ESI is using a newer Schema File. EC-Engineer 2.4.0 is from 2016. So of course it cannot use the latest ESI Schema.
+> 
+> Best regards,
+> Kai
+> __________________________________________________________________________________________
+> Kai Feifel
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> On Thursday, July 10, 2025 at 2:28:27 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Engineer(KOMATSU)
+>>
+>> When attempting to generate an ENI file from EC-Engineer (Ver. 2.4.0) using the attached ESI file, the following error is displayed.
+>>
+>> What could be the cause?"
+>>
+>> Best regards,
+>> Takuya Fujikawa
+> 
+> 
+> 
+
+
+
+### ARTICLE03_HEADER
+Id=62921
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.07.2025 07:53:11 +00:00
+UpdatedAt=11.07.2025 07:53:13 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Engineer(KOMATSU)
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>yes correct. There will be no error.</div><div><br></div><div>Best regards,</div><div>Kai<br><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, July 11, 2025 at 9:39:56 AM, Takuya Fujikawa wrote:<br><br><div>Dear Kai san</div>
+<div><br></div>
+<div> &gt; this ESI is using a newer Schema File. EC-Engineer 2.4.0 is from 2016. So of course it cannot use the latest ESI Schema.</div>
+<div><br></div>
+<div>Is it correct to understand that there will be no error when using the latest EC-Engineer?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2025/07/11 15:12, Kai Feifel via EC-Support wrote:</div>
+<div>&gt; Hi,</div>
+<div>&gt;</div>
+<div>&gt; this ESI is using a newer Schema File. EC-Engineer 2.4.0 is from 2016. So of course it cannot use the latest ESI Schema.</div>
+<div>&gt;</div>
+<div>&gt; Best regards,</div>
+<div>&gt; Kai</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Kai Feifel</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: <a href="mailto:ecsupport@acontis.com" title="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Thursday, July 10, 2025 at 2:28:27 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Engineer(KOMATSU)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; When attempting to generate an ENI file from EC-Engineer (Ver. 2.4.0) using the attached ESI file, the following error is displayed.</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; What could be the cause?"</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

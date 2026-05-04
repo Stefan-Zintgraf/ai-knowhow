@@ -1,0 +1,181 @@
+### HEADER
+Id=10406
+Link=http://at-zammad/#ticket/zoom/10406
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Genertec, G motion CNC system (ID=951, Number=951)
+Number=7010406
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=15.04.2025 11:03:03 +00:00
+UpdatedAt=16.04.2025 08:31:04 +00:00
+CloseAt=16.04.2025 08:31:04 +00:00
+ArticlesCount=3
+
+### TITLE
+The customer "GENERTEC MACHINE TOOL" qustion about “IRQ field in datagram” usage
+
+### ARTICLE00_HEADER
+Id=59650
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.04.2025 11:03:03 +00:00
+UpdatedAt=15.04.2025 11:03:05 +00:00
+
+### ARTICLE00_SUBJECT
+The customer "GENERTEC MACHINE TOOL" qustion about “IRQ field in datagram” usage
+
+### ARTICLE00_BODY
+<div>Dear,</div><div> </div><div>In what scenario is the feature 'IRQ field in datagram' used?</div><div>I checked with ETG.1500 and ETG.1000.4 and noticed that it is similar to the AL Request Register function.</div><div>Do you have detailed usage instructions?</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+<div>
+<p>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</p>
+<p>北京市海淀区上地三街9号C座C309</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div>+886-2-25222206（台北）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=59655
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.04.2025 13:58:47 +00:00
+UpdatedAt=15.04.2025 13:58:51 +00:00
+
+### ARTICLE01_SUBJECT
+The customer "GENERTEC MACHINE TOOL" qustion about “IRQ field in datagram” usage
+
+### ARTICLE01_BODY
+Hi Lishan,<div><br></div><div>we are using it in EC-Master to detect AL status and DL status changes. It is combined with the <span>ECAT Event Mask (0x0200:0x0201) register. This register should not be modified by the application.</span>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, April 15, 2025 at 1:03:03 PM, ec_support@motrotech.com wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>In what scenario is the feature 'IRQ field in datagram' used?</div>
+<div>I checked with ETG.1500 and ETG.1000.4 and noticed that it is similar to the AL Request Register function.</div>
+<div>Do you have detailed usage instructions?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+<div>
+<p>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</p>
+<p>北京市海淀区上地三街9号C座C309</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div>+886-2-25222206（台北）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=59682
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.04.2025 07:24:01 +00:00
+UpdatedAt=16.04.2025 07:24:01 +00:00
+
+### ARTICLE02_SUBJECT
+Re: RE: The customer "GENERTEC MACHINE TOOL" qustion about “IRQ field in datagram” usage [Ticket#7010406]
+
+### ARTICLE02_BODY
+<div>Hi Cyril,</div><div> </div><div>Got it, thanks for your reply.</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>ec_support@motrotech.com</div><blockquote>
+<div> </div>
+<div>
+<div>
+<b>发件人：</b> <a href="mailto:ecsupport@acontis.com">Cyril Eyssautier via EC-Support</a>
+</div>
+<div>
+<b>发送时间：</b> 2025-04-15 21:58</div>
+<div>
+<b>收件人：</b> <a href="mailto:ec_support@motrotech.com">ec_support</a>
+</div>
+<div>
+<b>主题：</b> RE: The customer "GENERTEC MACHINE TOOL" qustion about “IRQ field in datagram” usage [Ticket#7010406]</div>
+</div>
+<div>Hi Lishan,<div> </div>
+<div>we are using it in EC-Master to detect AL status and DL status changes. It is combined with the ECAT Event Mask (0x0200:0x0201) register. This register should not be modified by the application.</div>
+<div> </div>
+<div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Tuesday, April 15, 2025 at 1:03:03 PM, ec_support@motrotech.com wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>In what scenario is the feature 'IRQ field in datagram' used?</div>
+<div>I checked with ETG.1500 and ETG.1000.4 and noticed that it is similar to the AL Request Register function.</div>
+<div>Do you have detailed usage instructions?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+<div>
+<p>C-309, Jinyu Jiahua Bldg. No.9 Shangdisanjie St. Haidian District,Beijing</p>
+<p>北京市海淀区上地三街9号C座C309</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div>+886-2-25222206（台北）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div> </div>
+<br><br>
+</div>
+</div>
+</blockquote>

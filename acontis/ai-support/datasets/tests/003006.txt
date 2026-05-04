@@ -1,0 +1,82 @@
+### HEADER
+Id=3006
+Link=http://at-zammad/#ticket/zoom/3006
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=TECNOLOGIX (ID=196, Number=0, Country=IT)
+Commission=Marchesini, Automation System (ID=631, Number=631)
+Number=703006
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=bruno.coppi@tecnologix.it (ID=89, FirstName=Bruno, LastName=Coppi)
+CreatedBy=bruno.coppi@tecnologix.it (ID=89, FirstName=Bruno, LastName=Coppi)
+Type=
+TimeUnit=
+CreatedAt=12.05.2022 14:04:33 +00:00
+UpdatedAt=13.05.2022 05:39:53 +00:00
+CloseAt=13.05.2022 05:39:53 +00:00
+ArticlesCount=1
+
+### TITLE
+Fwd: Errore EcEngineerWeb
+
+### ARTICLE00_HEADER
+Id=15862
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.05.2022 14:04:33 +00:00
+UpdatedAt=12.05.2022 14:04:37 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Errore EcEngineerWeb
+
+### ARTICLE00_BODY
+Ciao,<br> our customer Marchesini are evaluating acontis products.<br> They have found an exception in latest EC-Engineer Web evaluation version, could you please get in touch directly and assist them?<br> I translate their message, below.<br> Thank you, ciao<br> Bruno<br> <br> ==========================<br> <br> Using ECEngineer Web we found an exception is generated, almost predictably, following master shutdown and subsequent reactivation of network interface for bus scanning in config mode.<br> Attached the LOG of messages printed on system console.<br> Error generation sequence as follows<br> <div> <ol> <li>Module r8169 removal (rmmod) </li> <li>Module atemsys.ko insert (insmod)</li> <li><span>Master activation<br> </span></li> <li><span>EcEngineerWeb activation<br> </span></li> <li>Master remote state visualization via browser (diagnostics)</li> <li>Master Stop</li> <li><span>EcEngineerWeb Stop<br> </span></li> <li>atemsys.ko removal</li> <li><span>module r8169 insertion<br> </span></li> <li>Network interface activation (ifconfig en7s0 up)</li> <li><span>EcEngineerWeb activation<br> </span></li> <li><span>Master remote state visualization via browser (configuration) -&gt; DOES NOT WORK<br> </span></li> <li> Error when clicking on DIAG...</li> </ol> </div>==========================<br><br><div>-------- Messaggio Inoltrato -------- <table cellspacing="0" cellpadding="0" border="0"> <tbody> <tr> <th valign="BASELINE" align="RIGHT">Oggetto: </th> <td>Errore EcEngineerWeb</td> </tr> <tr> <th valign="BASELINE" align="RIGHT">Data: </th> <td>Thu, 12 May 2022 13:22:45 +0000</td> </tr> <tr> <th valign="BASELINE" align="RIGHT">Mittente: </th> <td>Gabrielli Christian <a href="mailto:Christian.Gabrielli@marchesini.com">&lt;Christian.Gabrielli@marchesini.com&gt;</a>
+</td> </tr> <tr> <th valign="BASELINE" align="RIGHT">A: </th> <td>
+<a href="mailto:bruno.coppi@tecnologix.it">bruno.coppi@tecnologix.it</a> <a href="mailto:bruno.coppi@tecnologix.it">&lt;bruno.coppi@tecnologix.it&gt;</a>
+</td> </tr> <tr> <th valign="BASELINE" align="RIGHT">CC: </th> <td>De Vietro Marco <a href="mailto:Marco.DeVietro@marchesini.com">&lt;Marco.DeVietro@marchesini.com&gt;</a>, Minghetti Giacomo <a href="mailto:Giacomo.Minghetti@marchesini.com">&lt;Giacomo.Minghetti@marchesini.com&gt;</a>
+</td> </tr> </tbody> </table> <br> <br> <div>Salve Coppi,</div>
+<div>utilizzando EcEngineerWeb, abbiamo notato che si verifica un eccezione, in modo abbastanza ripetibile,</div>
+<div>in seguito allo spegnimento del master, e successiva riattivazione dell'interfaccia di rete per la scansione del bus in modalità configurazione.</div>
+<div>In allegato il log dei messaggi stampati sulla console.</div>
+<div>La sequenza che ha generato l'errore è stata:</div>
+<div> <ol> <li>Rimozione del modulo r8169 (rmmod) </li> <li>Inserimento del modulo atemsys.ko (insmod)</li> <li>Attivazione del Master</li> <li>Attivazione di EcEngineerWeb</li> <li>Visualizzazione tramite browser remoto dello stato del master (diagnostica)</li> <li>Stop del master</li> <li>Stop di EcEngineerWeb</li> <li>rimozione di atemsys.ko </li> <li><span>Inserimento del modulo r8169<br> </span></li> <li>Attivazione dell'interfaccia di rete (ifconfig en7s0 up)</li> <li><span>Attivazione di EcEngineerWeb<br> </span></li> <li><span>Visualizzazione tramite browser remoto dello stato del master (configurazione) --&gt; Non va<br> </span></li> <li> Premendo diag ( per vedere se l'applicazione si sblocca ) errore ...</li> </ol> </div>
+<div> </div>
+<div> <img style="max-width:100%;width: initial;max-height: initial;max-width: 100%;" src="/api/v1/ticket_attachment/3006/15862/62547?view=inline"><br> </div>
+<div> <div> </div>
+<div>Cordiali saluti.</div>
+<div> </div>
+<div> <div> <div dir="ltr"> <div style="color:rgb(33,33,33);"> <div><span><b>Christian Gabrielli</b><br> </span></div>
+<div><span>Marchesini Group S.p.A.<br> Ufficio Tecnico Elettronico</span></div>
+</div>
+<div style="color:rgb(33,33,33);"> <div><span><a href="mailto:christian.gabrielli@marchesini.com" rel="noopener noreferrer">Mailto:christian.gabrielli@marchesini.com</a><br> ph : +39 051 047 9111</span></div>
+</div>
+<div style="color:rgb(33,33,33);"> <div><span>fax : +39 051 6516457<br> <a href="http://www.marchesini.com/" rel="nofollow noreferrer noopener" target="_blank">www.marchesini.com</a></span></div>
+</div>
+<br> </div>
+</div>
+</div>
+</div>
+<br> <div> <p><b><u><span style=" color: #212121;">INFORMAZIONI DI RISERVATEZZA</span></u></b><span style=" color:            #212121;">: </span><span style="color: #212121;"></span></p>
+<p><span style=" color: #212121;">Questo messaggio e tutti i suoi allegati devono essere considerati confidenziali e tutelati da un privilegio legale o da protezione legale. Esso si intende rivolto all'esclusiva attenzione dei suoi destinatari. Qualsiasi utilizzo non conforme alla sua destinazione, qualsiasi diffusione nonché pubblicazione, sia essa totale o parziale, è da intendersi vietata ai sensi del D. Lgs 193.2003 e del Reg. 2016/679 – General Data Protection Regulation - GDPR. Tutti i diritti sono riservati. Se avete ricevuto questo messaggio per errore, siete pregati di cancellarlo e di segnalarlo al mittente. Si declina qualsiasi responsabilità nel caso in cui il messaggio sia stato alterato, deformato o falsificato.</span><span style="color: #212121;"></span></p>
+<p><span style=" color: #222222;" lang="EN-US"><p> </p></span></p>
+<p><b><u><span style=" color: #212121;" lang="EN-GB">NOTICE OF CONFIDENTIALITY:</span></u></b></p>
+<p><span style=" color: #212121;">This email, and any attachments thereto, is intended for use only by the addressee(s) named herein and may contain confidential information and legally privileged information. If you are not the intended recipient of this email, you are hereby notified that any dissemination, distribution or copying of this email, and any attachments thereto, is strictly prohibited. If you have received this email in error, please notify the sender by email, telephone or fax, and permanently delete the original and any of any email and printout thereof. Thank you. </span></p>
+<span style=" color: #222222;" lang="EN-US">.</span><b><span style=" color: green;">P</span><span style=" color:            #1f497d;"> </span><span style=" color: green;">Rispetta l’ambiente. Hai davvero bisogno di stampare questa mail?</span><span style=" color: green;"> </span><span style=" color: green;">P</span><span style=" color:            green;" lang="EN-US"> </span><span style=" color: green;" lang="EN-US">Please consider the environment – Do you really need to print this email?</span></b>
+</div>
+<br> </div><br> <pre>-- 
+Bruno Coppi
+
+TECNOLOGIX s.r.l.
+Via dei Biancospini 6
+I 20146 Milano Italy
+Tel    +39 02 48954230
+Fax    +39 02 471106
+e-mail <a href="mailto:bruno.coppi@tecnologix.it">bruno.coppi@tecnologix.it</a>
+web    <a href="http://www.tecnologix.it" rel="nofollow noreferrer noopener" target="_blank">http://www.tecnologix.it</a>
+
+Le informazioni contenute nella presente comunicazione e i relativi allegati possono essere riservate e sono, comunque, destinate esclusivamente alle persone o alla Società sopraindicati e non sono da considerarsi comunicazioni personali, quindi eventuali risposte potranno essere conosciute da persone appartenenti all’azienda.
+
+The information in this communication (which includes any documents with it) is confidential and meant only for above-mentioned persons and/or Companies; the information is not personal therefore, it is intended for the addressee only and any replies will be known by people belonging to the company.&lt;br&gt;&lt;br&gt;&lt;/pre&gt;
+</pre>

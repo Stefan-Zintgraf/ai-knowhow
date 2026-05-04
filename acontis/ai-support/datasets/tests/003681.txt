@@ -1,0 +1,137 @@
+### HEADER
+Id=3681
+Link=http://at-zammad/#ticket/zoom/3681
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=703681
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=12.08.2022 03:55:25 +00:00
+UpdatedAt=30.11.2022 10:02:59 +00:00
+CloseAt=30.11.2022 10:02:59 +00:00
+ArticlesCount=3
+
+### TITLE
+About support for AM57x C6000
+
+### ARTICLE00_HEADER
+Id=19510
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.08.2022 03:55:25 +00:00
+UpdatedAt=12.08.2022 03:55:26 +00:00
+
+### ARTICLE00_SUBJECT
+About support for AM57x C6000
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently We connect a customer is sungrowpower, They have the deivce using AM5718, But they have application had published in A15, They want to adding the ethercat in c6000 without modify in A15.</div>
+<div>Do you think possible to supporting C6000 in AM57x?</div>
+<div>By the way, the customer fscut ask the same question when we visit them and discuss the embeded platform, because fscut consider to extending their product, they will make a embeded deivce with ethercat, but they didn't choose a platform.</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=19511
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=12.08.2022 06:11:12 +00:00
+UpdatedAt=12.08.2022 06:11:12 +00:00
+
+### ARTICLE01_BODY
+<div>Morgen Daniel,</div>wir unterstützen den CortexA15, ist es möglich diesen C6xxx auch zu unterstützen?<div>Es fragen danach 2 Kunden!</div>
+
+### ARTICLE02_HEADER
+Id=19532
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.08.2022 08:47:06 +00:00
+UpdatedAt=12.08.2022 08:47:10 +00:00
+
+### ARTICLE02_SUBJECT
+About support for AM57x C6000
+
+### ARTICLE02_BODY
+<div>Hi John,</div><div>This core looks like it's only a programmable Matrix Calculator.</div><div>If it works I expect a bad performance.</div><div>I expect the Cortex M to have a better performance (better but not good)</div><div><br></div><div>I checked out the latest TI Code Composer Studio, it supports Cortex M and C66xx.</div><div>I still have to check if it can only be used as <span>bare metal or with Sysbios.</span>
+</div><div><span><br></span></div><div><span>I would like to discuss this with Cyril after his vacation. </span></div><div><span>We will send you a more detailed report in about two weeks.</span></div><div><span><br></span></div><div><span>Best Regards</span></div><div><span>Daniel</span></div><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Friday, 12 August 2022 at 05:55:25, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently We connect a customer is sungrowpower, They have the deivce using AM5718, But they have application had published in A15, They want to adding the ethercat in c6000 without modify in A15.</div>
+<div>Do you think possible to supporting C6000 in AM57x?</div>
+<div>By the way, the customer fscut ask the same question when we visit them and discuss the embeded platform, because fscut consider to extending their product, they will make a embeded deivce with ethercat, but they didn't choose a platform.</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

@@ -1,0 +1,152 @@
+### HEADER
+Id=10523
+Link=http://at-zammad/#ticket/zoom/10523
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=none
+Commission=none
+Number=7010523
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=extern.batuhan.oezdemir@porsche.de (ID=3285, FirstName=batuhan, LastName=oezdemir)
+CreatedBy=extern.batuhan.oezdemir@porsche.de (ID=3285, FirstName=batuhan, LastName=oezdemir)
+Type=
+TimeUnit=
+CreatedAt=06.05.2025 08:43:12 +00:00
+UpdatedAt=16.05.2025 06:22:35 +00:00
+CloseAt=16.05.2025 06:22:35 +00:00
+ArticlesCount=2
+
+### TITLE
+Inquiry About EtherCAT Hot Connect Functionality
+
+### ARTICLE00_HEADER
+Id=60295
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.05.2025 08:43:12 +00:00
+UpdatedAt=06.05.2025 08:43:12 +00:00
+
+### ARTICLE00_SUBJECT
+Inquiry About EtherCAT Hot Connect Functionality
+
+### ARTICLE00_BODY
+<div>Dear Sir/Madam,</div><div>I hope this message finds you well.</div><div>We are currently utilizing EC-Engineer for our EtherCAT network configurations and are exploring the possiblities of integrating a feature that enables dynamic connection and disconnection of slave devices to the master without disrupting ongoing communication. Our goal is to achieve a flexible system where slave devices can be added or removed during operation/after the ENI has been uploaded to our master device (dSpace Scalexio), in order to not have to change the ENI file everytime slave configuration is changed. So far we have not been able to achieve that using EC-Engineer.</div><div>After some research, I found out about the EtherCAT Hot Connect Feature Pack for EC-Master that enables this specific feature. This is why I am writing you to inquire about this feature and its implementation.</div><div>Specifically we seek guidance on:</div><ul>
+<li>
+<div>Prerequisites to estable a dynamic communication with Hot Connect (Softwares to install, feature packs, installation process)</div>
+</li>
+<li>
+<div>Configuration of HotConnect and integrating this feature to our communication</div>
+</li>
+<li>
+<div>General guidance on any topics related to setting up flexible EtherCAT communication</div>
+</li>
+</ul>
+<div>Thank you in advance for your support.</div><div>Best regards,</div><div>
+<p>
+<span><br>
+</span></p>
+<p>
+<b>Batuhan Özdemir</b></p>
+<p>AVL Software and Functions GmbH</p>
+<p> </p>
+<p>Im Auftrag der Dr. Ing. h.c. F. Porsche AG</p>
+<p> EMA<span style=" color: rgb(36, 36, 36);">3</span> | Motorsport Antrieb <span style=" color: rgb(36, 36, 36);">Software</span><span style=" color: red;"> </span>| Motorsport Powertrain <span style=" color: rgb(36, 36, 36);">Software</span></p>
+<p>Porsche Motorsport</p>
+<p>Entwicklungszentrum</p>
+<p>Porschestrasse 911</p>
+<p>71287 Weissach</p>
+<p>Deutschland</p>
+<p> </p>
+<p> Mobil +49 <span style=" color: rgb(36, 36, 36);">1522 3419646</span></p>
+<p> E-Mail <span style=" color: blue;">extern.batuhan.oezdemir@porsche.de</span></p>
+<p>
+<span style=" color: blue;"><u><a href="http://www.porsche.de/" rel="nofollow noreferrer noopener" target="_blank">www.porsche.de</a></u></span></p>
+<div> </div>
+</div><p><br>Dr. Ing. h.c. F. Porsche Aktiengesellschaft<br>Sitz der Gesellschaft: Stuttgart<br>Registergericht: Amtsgericht Stuttgart HRB-Nr. 730623<br>Vorsitzender des Aufsichtsrats: Dr. Wolfgang Porsche<br>Vorstand: Dr. Oliver Blume, Vorsitzender<br>Matthias Becker, Dr. Jochen Breckner, Barbara Frenkel, <br>Andreas Haffner, Sajjad Khan, Albrecht Reimold, Dr. Michael Steiner</p><span lang="DE">
+<p dir="ltr">Informationen zum Umgang mit Ihren Daten finden Sie in unseren <a href="https://www.porsche.com/germany/porscheag-privacy/" rel="nofollow noreferrer noopener" title="https://www.porsche.com/germany/porscheag-privacy/" target="_blank">Datenschutzhinweisen</a>.</p></span>
+<p dir="ltr"></p><p>Die vorgenannten Angaben werden jeder E-Mail automatisch hinzugefügt. Dies ist kein Anerkenntnis,<br>dass es sich beim Inhalt dieser E-Mail um eine rechtsverbindliche Erklärung der Porsche AG handelt.<br>Erklärungen, die die Porsche AG verpflichten, bedürfen jeweils der Unterschrift durch zwei zeichnungs-<br>berechtigte Personen der AG.<br></p>
+
+### ARTICLE01_HEADER
+Id=60328
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.05.2025 13:20:40 +00:00
+UpdatedAt=06.05.2025 13:20:44 +00:00
+
+### ARTICLE01_SUBJECT
+Inquiry About EtherCAT Hot Connect Functionality
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>HotConnect is a feature pack which has to be enabled / activated / bought for the EtherCAT Master. You have to contact dSpace for that. </div><div><br></div><div>In EC-Engineer you can just configure these HC groups by selecting the SubDevices you want in the group --&gt; right click --&gt; Create group. And then create the HC group. You can also find the description in the manual. </div><div><br></div><div>Best regards,</div><div>Kai Feifel<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, May 6, 2025 at 10:43:12 AM, Extern batuhan.oezdemir wrote:<br><br><div>Dear Sir/Madam,</div>
+<div>I hope this message finds you well.</div>
+<div>We are currently utilizing EC-Engineer for our EtherCAT network configurations and are exploring the possiblities of integrating a feature that enables dynamic connection and disconnection of slave devices to the master without disrupting ongoing communication. Our goal is to achieve a flexible system where slave devices can be added or removed during operation/after the ENI has been uploaded to our master device (dSpace Scalexio), in order to not have to change the ENI file everytime slave configuration is changed. So far we have not been able to achieve that using EC-Engineer.</div>
+<div>After some research, I found out about the EtherCAT Hot Connect Feature Pack for EC-Master that enables this specific feature. This is why I am writing you to inquire about this feature and its implementation.</div>
+<div>Specifically we seek guidance on:</div>
+<ul>
+<li>
+<div>Prerequisites to estable a dynamic communication with Hot Connect (Softwares to install, feature packs, installation process)</div>
+</li>
+<li>
+<div>Configuration of HotConnect and integrating this feature to our communication</div>
+</li>
+<li>
+<div>General guidance on any topics related to setting up flexible EtherCAT communication</div>
+</li>
+</ul>
+<div>Thank you in advance for your support.</div>
+<div>Best regards,</div>
+<div>
+<p>
+<span><br>
+</span></p>
+<p>
+<b>Batuhan Özdemir</b></p>
+<p>AVL Software and Functions GmbH</p>
+<p> </p>
+<p>Im Auftrag der Dr. Ing. h.c. F. Porsche AG</p>
+<p> EMA<span style=" color: rgb(36, 36, 36);">3</span> | Motorsport Antrieb <span style=" color: rgb(36, 36, 36);">Software</span><span style=" color: red;"> </span>| Motorsport Powertrain <span style=" color: rgb(36, 36, 36);">Software</span></p>
+<p>Porsche Motorsport</p>
+<p>Entwicklungszentrum</p>
+<p>Porschestrasse 911</p>
+<p>71287 Weissach</p>
+<p>Deutschland</p>
+<p> </p>
+<p> Mobil +49 <span style=" color: rgb(36, 36, 36);">1522 3419646</span></p>
+<p> E-Mail <span style=" color: blue;">extern.batuhan.oezdemir@porsche.de</span></p>
+<p>
+<span style=" color: blue;"><u><a href="http://www.porsche.de/" rel="nofollow noreferrer noopener" target="_blank">www.porsche.de</a></u></span></p>
+<div> </div>
+</div>
+<p><br>Dr. Ing. h.c. F. Porsche Aktiengesellschaft<br>Sitz der Gesellschaft: Stuttgart<br>Registergericht: Amtsgericht Stuttgart HRB-Nr. 730623<br>Vorsitzender des Aufsichtsrats: Dr. Wolfgang Porsche<br>Vorstand: Dr. Oliver Blume, Vorsitzender<br>Matthias Becker, Dr. Jochen Breckner, Barbara Frenkel, <br>Andreas Haffner, Sajjad Khan, Albrecht Reimold, Dr. Michael Steiner</p>
+<span lang="DE">
+<p dir="ltr">Informationen zum Umgang mit Ihren Daten finden Sie in unseren <a href="https://www.porsche.com/germany/porscheag-privacy/" rel="nofollow noreferrer noopener" title="https://www.porsche.com/germany/porscheag-privacy/" target="_blank">Datenschutzhinweisen</a>.</p></span>
+<p dir="ltr"></p>
+<p>Die vorgenannten Angaben werden jeder E-Mail automatisch hinzugefügt. Dies ist kein Anerkenntnis,<br>dass es sich beim Inhalt dieser E-Mail um eine rechtsverbindliche Erklärung der Porsche AG handelt.<br>Erklärungen, die die Porsche AG verpflichten, bedürfen jeweils der Unterschrift durch zwei zeichnungs-<br>berechtigte Personen der AG.<br></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

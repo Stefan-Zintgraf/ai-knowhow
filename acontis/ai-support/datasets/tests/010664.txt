@@ -1,0 +1,202 @@
+### HEADER
+Id=10664
+Link=http://at-zammad/#ticket/zoom/10664
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Acontis USA, Generic (ID=475, Number=475)
+Number=7010664
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=28.05.2025 01:08:12 +00:00
+UpdatedAt=05.06.2025 06:05:33 +00:00
+CloseAt=05.06.2025 06:05:33 +00:00
+ArticlesCount=4
+
+### TITLE
+EC-Engineer SDK V4.x for .NET4
+
+### ARTICLE00_HEADER
+Id=61067
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.05.2025 01:08:12 +00:00
+UpdatedAt=28.05.2025 01:08:12 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Engineer SDK V4.x for .NET4
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>I see we have the Linux and Windows deliveries for EC-Engineer SDK V4 just built for .NET Core. Are we still offering V4.x with .NET4 or just Core going forward? We have a customer, Digitial Dynamics, that previously got V3.9.7 for .NET4 and they want to update. They would consider updating to .NET Core anyway, but just wanted to know our plans for supporting that in V4.x.<br><div>
+<br>/Jon </div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=61076
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.05.2025 06:22:14 +00:00
+UpdatedAt=28.05.2025 06:22:18 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Engineer SDK V4.x for .NET4
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>we changed our EniEngine and EcCore to .NET Standard (in all deliveries). This is compatible to .NETCore and .NET4. So the customer can decide what he wants to use. Therefore all deliveries are the same now. It does not matter what the customer wants to use then. But our Layer 2 GUI SDK View and ViewModel is still .NET4 when it is delivered. But the customer can could just change it.</div><div><br></div><div>Best regards,</div><div>Kai</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, May 28, 2025 at 3:08:12 AM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>I see we have the Linux and Windows deliveries for EC-Engineer SDK V4 just built for .NET Core. Are we still offering V4.x with .NET4 or just Core going forward? We have a customer, Digitial Dynamics, that previously got V3.9.7 for .NET4 and they want to update. They would consider updating to .NET Core anyway, but just wanted to know our plans for supporting that in V4.x.<br><div>
+<br>/Jon </div>
+<br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=61114
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.05.2025 14:22:57 +00:00
+UpdatedAt=28.05.2025 14:22:57 +00:00
+
+### ARTICLE02_SUBJECT
+Re: EC-Engineer SDK V4.x for .NET4 [Ticket#7010664]
+
+### ARTICLE02_BODY
+OK thanks for clarifying. What about the different OS deliveries. I see there is Linux and Windows packages. The customer started with .NET4 for Windows, but might switch to .NET Core. If he wanted to build his application for Linux with .NET Core, can he do that with the Windows delivery or does he need the Linux delivery. What is the difference now between the Windows and Linux deliveries?<br><div>
+<br>/Jon </div><div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On May 28, 2025, at 2:22 AM, Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>Hi Jon,<div> </div>
+<div>we changed our EniEngine and EcCore to .NET Standard (in all deliveries). This is compatible to .NETCore and .NET4. So the customer can decide what he wants to use. Therefore all deliveries are the same now. It does not matter what the customer wants to use then. But our Layer 2 GUI SDK View and ViewModel is still .NET4 when it is delivered. But the customer can could just change it.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Wednesday, May 28, 2025 at 3:08:12 AM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>I see we have the Linux and Windows deliveries for EC-Engineer SDK V4 just built for .NET Core. Are we still offering V4.x with .NET4 or just Core going forward? We have a customer, Digitial Dynamics, that previously got V3.9.7 for .NET4 and they want to update. They would consider updating to .NET Core anyway, but just wanted to know our plans for supporting that in V4.x.<br><div>
+<br>/Jon </div>
+</div>
+</blockquote></div>
+</div>
+</div>
+</blockquote>
+</div>
+
+### ARTICLE03_HEADER
+Id=61115
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.05.2025 14:33:47 +00:00
+UpdatedAt=28.05.2025 14:33:49 +00:00
+
+### ARTICLE03_SUBJECT
+EC-Engineer SDK V4.x for .NET4
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>the ViewLayer is only for Windows because of WPF.</div><div>But the other Layers can also be build for Linux. The difference is just, that we pre compiled for the OS. But the user can also compile this for the other OS. And the EC-Master binaries we deliver are different. </div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, May 28, 2025 at 4:22:57 PM, Jon Waters wrote:<br><br>OK thanks for clarifying. What about the different OS deliveries. I see there is Linux and Windows packages. The customer started with .NET4 for Windows, but might switch to .NET Core. If he wanted to build his application for Linux with .NET Core, can he do that with the Windows delivery or does he need the Linux delivery. What is the difference now between the Windows and Linux deliveries?<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On May 28, 2025, at 2:22 AM, Kai Feifel via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>Hi Jon,<div> </div>
+<div>we changed our EniEngine and EcCore to .NET Standard (in all deliveries). This is compatible to .NETCore and .NET4. So the customer can decide what he wants to use. Therefore all deliveries are the same now. It does not matter what the customer wants to use then. But our Layer 2 GUI SDK View and ViewModel is still .NET4 when it is delivered. But the customer can could just change it.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Wednesday, May 28, 2025 at 3:08:12 AM, Jon Waters wrote:<br><br>Hi,<div> </div>
+<div>I see we have the Linux and Windows deliveries for EC-Engineer SDK V4 just built for .NET Core. Are we still offering V4.x with .NET4 or just Core going forward? We have a customer, Digitial Dynamics, that previously got V3.9.7 for .NET4 and they want to update. They would consider updating to .NET Core anyway, but just wanted to know our plans for supporting that in V4.x.<br><div>
+<br>/Jon </div>
+</div>
+</blockquote></div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,188 @@
+### HEADER
+Id=3616
+Link=http://at-zammad/#ticket/zoom/3616
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=703616
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=04.08.2022 04:12:23 +00:00
+UpdatedAt=08.08.2022 06:01:18 +00:00
+CloseAt=08.08.2022 06:01:18 +00:00
+ArticlesCount=3
+
+### TITLE
+DC Diagnosis tab on non-DC device?
+
+### ARTICLE00_HEADER
+Id=19165
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.08.2022 04:12:23 +00:00
+UpdatedAt=04.08.2022 04:12:24 +00:00
+
+### ARTICLE00_SUBJECT
+DC Diagnosis tab on non-DC device?
+
+### ARTICLE00_BODY
+<div>
+<p>On the same Banner device (see previous messages), I noticed that the device did not support DC, and the DC configuration tab was missing from Configure mode (which was correct), but I noticed that the DC Diagnosis tab was present in Diagnosis mode. Is this intended?</p>
+<p> </p>
+<p>Also, the DC Diagnosis tab is very, very slow to update. Perhaps multiple seconds. Is that expected?</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=19198
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.08.2022 10:07:36 +00:00
+UpdatedAt=04.08.2022 10:07:40 +00:00
+
+### ARTICLE01_SUBJECT
+DC Diagnosis tab on non-DC device?
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>the DC Diagnosis tab is present as soon as the slave has DC support in object 0x3000 of the Master OD:</div><div><br></div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/3616/19198/78844?view=inline"><br>
+</div><div><br></div><div>I think from EC-Engineer point of view this is correct. Maybe it is more a master issue. </div><div><br></div><div>@Cyril:</div><div>What do you think?</div><div><br></div><div>The update interval of this tab is by default:</div><div>local: 2sec</div><div>remote: 6sec</div><div><br></div><div>You can change it by modifying the value "<span>MasterUnitTimerSlowerCount" in the user.xml:</span>
+</div><div><div>C:\ProgramData\EC-Engineer\myusername.xml</div></div><div><span><br></span></div><div><span>Calculation:</span></div><div><div>MasterUnitLocalWorkerSleepTimeMs = 100 ms</div></div><div><div>MasterUnitTimerNormalCount = 4 // 100 * 4 = 400ms</div></div><div><div>MasterUnitTimerSlowerCount = 20 // 100 * 4 * 20 = 2000ms, This timer is currently used for this</div></div><div><br></div><div>@Cyril:</div><div>What do you think? Should we increase this refresh rate and move it from slower to normal timer?</div><div>So instead of refresh every 2000ms we would refresh every 400ms? </div><div><br></div><div>
+<span>Best Regards,</span><br>
+</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, August 4, 2022 at 6:12:23 AM, Quinton Tormanen wrote:<br><br><div>
+<p>On the same Banner device (see previous messages), I noticed that the device did not support DC, and the DC configuration tab was missing from Configure mode (which was correct), but I noticed that the DC Diagnosis tab was present in Diagnosis mode. Is this intended?</p>
+<p> </p>
+<p>Also, the DC Diagnosis tab is very, very slow to update. Perhaps multiple seconds. Is that expected?</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=19201
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.08.2022 10:31:52 +00:00
+UpdatedAt=04.08.2022 10:31:55 +00:00
+
+### ARTICLE02_SUBJECT
+DC Diagnosis tab on non-DC device?
+
+### ARTICLE02_BODY
+<div>Hi,</div><div><br></div><div>we discussed it now and in the next release we will change the refresh cycle to "normal", so it will refresh in future every:</div><div>local: 400ms</div><div>remote: 1200ms</div><div><br></div><div>the second issue regarding adding DC diagnosis tab:</div><div>We show the DC Diagnosis tab because t<span>he OD value "DC Support" is true. This value is true, because the ESC of the slave has DC support. E.g. like an EK1100 can be used as a reference clock. So, it is correct to show this tab.</span>
+</div><div> </div><div>Best Regards,</div><div>Martin</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Thursday, August 4, 2022 at 12:07:36 PM, Martin Gaenzer wrote:<br><br>Hi,<div><br></div>
+<div>the DC Diagnosis tab is present as soon as the slave has DC support in object 0x3000 of the Master OD:</div>
+<div><br></div>
+<div>
+<img style="max-width:100%;max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/3616/19201/78847?view=inline"><br>
+</div>
+<div><br></div>
+<div>I think from EC-Engineer point of view this is correct. Maybe it is more a master issue. </div>
+<div><br></div>
+<div>@Cyril:</div>
+<div>What do you think?</div>
+<div><br></div>
+<div>The update interval of this tab is by default:</div>
+<div>local: 2sec</div>
+<div>remote: 6sec</div>
+<div><br></div>
+<div>You can change it by modifying the value "<span>MasterUnitTimerSlowerCount" in the user.xml:</span>
+</div>
+<div><div>C:\ProgramData\EC-Engineer\myusername.xml</div></div>
+<div><span><br></span></div>
+<div><span>Calculation:</span></div>
+<div><div>MasterUnitLocalWorkerSleepTimeMs = 100 ms</div></div>
+<div><div>MasterUnitTimerNormalCount = 4 // 100 * 4 = 400ms</div></div>
+<div><div>MasterUnitTimerSlowerCount = 20 // 100 * 4 * 20 = 2000ms, This timer is currently used for this</div></div>
+<div><br></div>
+<div>@Cyril:</div>
+<div>What do you think? Should we increase this refresh rate and move it from slower to normal timer?</div>
+<div>So instead of refresh every 2000ms we would refresh every 400ms? </div>
+<div><br></div>
+<div>
+<span>Best Regards,</span><br>
+</div>
+<div>Martin</div>
+<div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, August 4, 2022 at 6:12:23 AM, Quinton Tormanen wrote:<br><br><div>
+<p>On the same Banner device (see previous messages), I noticed that the device did not support DC, and the DC configuration tab was missing from Configure mode (which was correct), but I noticed that the DC Diagnosis tab was present in Diagnosis mode. Is this intended?</p>
+<p> </p>
+<p>Also, the DC Diagnosis tab is very, very slow to update. Perhaps multiple seconds. Is that expected?</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+<br>
+</blockquote></div><div><br></div>

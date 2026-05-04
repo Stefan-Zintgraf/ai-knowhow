@@ -1,0 +1,228 @@
+### HEADER
+Id=9996
+Link=http://at-zammad/#ticket/zoom/9996
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Acontis JP, Generic (ID=814, Number=814)
+Number=709996
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=20.02.2025 08:52:34 +00:00
+UpdatedAt=28.02.2025 07:14:06 +00:00
+CloseAt=24.02.2025 07:08:07 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Master (atonarp)
+
+### ARTICLE00_HEADER
+Id=57138
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=20.02.2025 08:52:34 +00:00
+UpdatedAt=20.02.2025 08:52:37 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master (atonarp)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master (atonarp)
+
+Is there any limitation when developing in C# compared to developing in C++?
+
+Best regards,
+Takuya Fujikawa
+
+
+
+### ARTICLE01_HEADER
+Id=57152
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.02.2025 11:04:34 +00:00
+UpdatedAt=20.02.2025 11:04:36 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master (atonarp)
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>if you need real-time we recommend to use C++, because it has no .NET overhead. So it should be able to run with a lower cycle time. If you do not need real-time performance or if you just want to use a RAS client API maybe C# is the better decission.</div><div><br></div><div>So, it depends on what you need.</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, February 20, 2025 at 9:52:34 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master (atonarp)</div>
+<div><br></div>
+<div>Is there any limitation when developing in C# compared to developing in C++?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=57380
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=25.02.2025 04:32:17 +00:00
+UpdatedAt=25.02.2025 04:32:17 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master (atonarp) [Ticket#709996]
+
+### ARTICLE02_BODY
+Dear Martin san
+
+What is the minimum PDO cycle time in milliseconds that can be used without issues for both C# and C++?
+
+C++ = ??ms
+C# = ??ms
+
+Best regards,
+Takuya Fujikawa
+
+
+On 2025/02/20 20:04, Martin Gaenzer via EC-Support wrote:
+> Hi,
+>
+> if you need real-time we recommend to use C++, because it has no .NET overhead. So it should be able to run with a lower cycle time. If you do not need real-time performance or if you just want to use a RAS client API maybe C# is the better decission.
+>
+> So, it depends on what you need.
+>
+> Best Regards,
+> Martin
+> __________________________________________________________________________________________
+> Martin Gaenzer
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+>
+>
+>> On Thursday, February 20, 2025 at 9:52:34 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Master (atonarp)
+>>
+>> Is there any limitation when developing in C# compared to developing in C++?
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+>
+>
+>
+
+
+
+### ARTICLE03_HEADER
+Id=57425
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.02.2025 11:20:22 +00:00
+UpdatedAt=25.02.2025 11:20:23 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master (atonarp)
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>currently we do not have any test measurements. In the past we did some measurements with our python wrapper. The results were good. The impact of the python "runtime" was not so big. Sure, you have to avoid "memory allocations" in the job task like in C++.</div><div><br></div><div>So maybe the best would be if they do some test by themself to check if it is enough for them or not.</div><div><br></div><div>The possible cycle time depends on:</div><div>- Test run on Windows? or Linux?</div><div>- With optimized link layer?</div><div>- Desktop PC or embedded system?</div><div>- Amount of slaves in the network?</div><div><br></div><div>If they give us more details about theire setup, maybe we can give you more information about which cycle time should be possible.</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, February 25, 2025 at 5:32:17 AM, Takuya Fujikawa wrote:<br><br><div>Dear Martin san</div>
+<div><br></div>
+<div>What is the minimum PDO cycle time in milliseconds that can be used without issues for both C# and C++?</div>
+<div><br></div>
+<div>C++ = ??ms</div>
+<div>C# = ??ms</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2025/02/20 20:04, Martin Gaenzer via EC-Support wrote:</div>
+<div>&gt; Hi,</div>
+<div>&gt;</div>
+<div>&gt; if you need real-time we recommend to use C++, because it has no .NET overhead. So it should be able to run with a lower cycle time. If you do not need real-time performance or if you just want to use a RAS client API maybe C# is the better decission.</div>
+<div>&gt;</div>
+<div>&gt; So, it depends on what you need.</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; Martin</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Martin Gaenzer</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Thursday, February 20, 2025 at 9:52:34 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Master (atonarp)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Is there any limitation when developing in C# compared to developing in C++?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

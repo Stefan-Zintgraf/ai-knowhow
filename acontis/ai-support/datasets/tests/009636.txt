@@ -1,0 +1,218 @@
+### HEADER
+Id=9636
+Link=http://at-zammad/#ticket/zoom/9636
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Murata Machinery, Unknown (ID=928, Number=928)
+Number=709636
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=10.01.2025 01:27:12 +00:00
+UpdatedAt=31.01.2025 07:28:36 +00:00
+CloseAt=17.01.2025 07:11:57 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Master(Murata Machinery) [M043]
+
+### ARTICLE00_HEADER
+Id=54791
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=10.01.2025 01:27:12 +00:00
+UpdatedAt=10.01.2025 01:27:16 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(Murata Machinery) [M043]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(Murata Machinery) [M043]
+
+Among the features of EC-Master provided by your company, I understand that the SoE API is included.
+I understand that SoE is a protocol used for communication with servo drivers that are compatible with SERCOS.
+In the future, if we adopt a SERCOS-compatible servo driver, we will need to ensure compatibility with SoE.
+Therefore, I would like to know which products are available for SERCOS-compatible servo drivers.
+Could you please provide information on the products that are compatible with SERCOS?
+
+Best regards,
+Takuya Fujikawa
+
+
+
+
+### ARTICLE01_HEADER
+Id=54814
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.01.2025 07:52:23 +00:00
+UpdatedAt=10.01.2025 07:52:25 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(Murata Machinery) [M043]
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>unfortunately I don't have this information. I only know about Beckhoff and Bosch Rexroth. Perhaps you need to ask the ETG.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, January 10, 2025 at 2:27:12 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(Murata Machinery) [M043]</div>
+<div><br></div>
+<div>Among the features of EC-Master provided by your company, I understand that the SoE API is included.</div>
+<div>I understand that SoE is a protocol used for communication with servo drivers that are compatible with SERCOS.</div>
+<div>In the future, if we adopt a SERCOS-compatible servo driver, we will need to ensure compatibility with SoE.</div>
+<div>Therefore, I would like to know which products are available for SERCOS-compatible servo drivers.</div>
+<div>Could you please provide information on the products that are compatible with SERCOS?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=55648
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=27.01.2025 04:45:32 +00:00
+UpdatedAt=27.01.2025 04:45:32 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master(Murata Machinery) [M043] [Ticket#709636]
+
+### ARTICLE02_BODY
+Dear Cyril san
+
+I understand the product information regarding SERCOS.
+We would like to try testing if SoE can actually be used in our environment.
+Could you please let us know what kind of environment you used for evaluating SoE communication?
+
+Best regards,
+Takuya Fujikaw
+
+On 2025/01/10 16:52, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+>
+> unfortunately I don't have this information. I only know about Beckhoff and Bosch Rexroth. Perhaps you need to ask the ETG.
+>
+> Best Regards,
+> __________________________________________________________________________________________
+> Cyril Eyssautier
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+>
+>
+>> On Friday, January 10, 2025 at 2:27:12 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Master(Murata Machinery) [M043]
+>>
+>> Among the features of EC-Master provided by your company, I understand that the SoE API is included.
+>> I understand that SoE is a protocol used for communication with servo drivers that are compatible with SERCOS.
+>> In the future, if we adopt a SERCOS-compatible servo driver, we will need to ensure compatibility with SoE.
+>> Therefore, I would like to know which products are available for SERCOS-compatible servo drivers.
+>> Could you please provide information on the products that are compatible with SERCOS?
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+>
+>
+>
+
+
+
+### ARTICLE03_HEADER
+Id=55666
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.01.2025 07:51:39 +00:00
+UpdatedAt=27.01.2025 07:51:44 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(Murata Machinery) [M043]
+
+### ARTICLE03_BODY
+Hi Takuya,<div><br></div><div>we use a Bosch Rexroth Indradrive:</div><div><img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/9636/55666/230783?view=inline"></div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><br></div>
+<div><blockquote type="cite">On Monday, January 27, 2025 at 5:45:32 AM, Takuya Fujikawa wrote:<br><br><div>Dear Cyril san</div>
+<div><br></div>
+<div>I understand the product information regarding SERCOS.</div>
+<div>We would like to try testing if SoE can actually be used in our environment.</div>
+<div>Could you please let us know what kind of environment you used for evaluating SoE communication?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikaw</div>
+<div><br></div>
+<div>On 2025/01/10 16:52, Cyril Eyssautier via EC-Support wrote:</div>
+<div>&gt; Hi Takuya,</div>
+<div>&gt;</div>
+<div>&gt; unfortunately I don't have this information. I only know about Beckhoff and Bosch Rexroth. Perhaps you need to ask the ETG.</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Cyril Eyssautier</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Friday, January 10, 2025 at 2:27:12 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Master(Murata Machinery) [M043]</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Among the features of EC-Master provided by your company, I understand that the SoE API is included.</div>
+<div>&gt;&gt; I understand that SoE is a protocol used for communication with servo drivers that are compatible with SERCOS.</div>
+<div>&gt;&gt; In the future, if we adopt a SERCOS-compatible servo driver, we will need to ensure compatibility with SoE.</div>
+<div>&gt;&gt; Therefore, I would like to know which products are available for SERCOS-compatible servo drivers.</div>
+<div>&gt;&gt; Could you please provide information on the products that are compatible with SERCOS?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,131 @@
+### HEADER
+Id=10424
+Link=http://at-zammad/#ticket/zoom/10424
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Celin (ID=538, Number=0, Country=IT)
+Commission=Celin, Ethercat Master Controllo Multiasse  (ID=238, Number=238)
+Number=7010424
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=a.tassi@celinsrl.com (ID=3258, FirstName=Angel, LastName=Tassi)
+CreatedBy=a.tassi@celinsrl.com (ID=3258, FirstName=Angel, LastName=Tassi)
+Type=
+TimeUnit=
+CreatedAt=18.04.2025 05:48:12 +00:00
+UpdatedAt=02.05.2025 06:08:39 +00:00
+CloseAt=02.05.2025 06:08:39 +00:00
+ArticlesCount=3
+
+### TITLE
+technical information Xenomai
+
+### ARTICLE00_HEADER
+Id=59750
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.04.2025 05:48:12 +00:00
+UpdatedAt=18.04.2025 05:48:12 +00:00
+
+### ARTICLE00_SUBJECT
+technical information Xenomai
+
+### ARTICLE00_BODY
+<div>Good morning,</div><div>I contact you from Celin in La Spezia (Italy) to ask you information about EtherCAT in particular for EC-Master, we already use your product but with Linux real-time kernel with Xenomai 3, we are upgrading to Xenomai 4 your product supports Xenomai 4 if yes is it possible to have the sources and specific documentation.</div><div> </div><div>Thank you and have a nice day.</div><div> </div><div>
+<div> </div>
+<div>
+<img style="max-width:100%;max-width: 1407px;" src="/api/v1/ticket_attachment/10424/59750/249152?view=inline">
+</div>
+<div>
+<b>ANGEL TASSI</b>
+</div>
+<div>Loc. Cerri CEPARANA</div>
+<div>19020 FOLLO (SP) - Italy</div>
+<div>Tel. +39 0187 933876 int. 319</div>
+<div>Fax. +39 0187 933654</div>
+<div> </div>
+<div>
+<span style="color: rgb(5, 99, 193);"><a href="mailto:a.tassi@celinsrl.com">a.tassi@celinsrl.com</a></span> </div>
+<div style=" color: rgb(5, 99, 193);">
+<a href="https://www.celinsrl.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.celinsrl.com/</a>
+</div>
+<div style=" color: rgb(237, 92, 87);">----------------------------------------------------------------------------------------------------</div>
+<div>La presente comunicazione, inviata dal mittente a titolo personale, non è in<br> alcun modo impegnativa per CELIN SRL se non seguita da un documento formale.</div>
+<div>Informativa ai sensi del Regolamento sulla Privacy (D.Lgs.101/2018 e GDPR UE 2016/679)</div>
+<div>Il presente messaggio è riservato unicamente per l'utilizzo da parte della persona fisica o giuridica a cui è indirizzato, e può contenere informazioni riservate, confidenziali e esenti dall'obbligo di divulgazione in base alle leggi applicabili. Se il lettore del presente messaggio non è il riservato destinatario, o il dipendente o l'agente incaricato per la consegna del messaggio al riservato destinatario, con la presente si avvisa che qualsiasi diffusione, distribuzione o copia della presente comunicazione è severamente proibita. Se si riceve la presente comunicazione per errore, si prega di avvisarci immediatamente via mail o telefonicamente al n. +39 0187 933876. Grazie.</div>
+<div>This message is intended only for the use of the individual or entity to which it is addressed, and may contain information that is privileged, confidential and exempt from disclosure under applicable laws. If the reader of this message is not the intended recipient, or the employee or agent responsible for delivering the message to the intended recipient, you are hereby notified that any dissemination, distribution or copying of this communication is strictly prohibited. If you have received this communication in error, please notify us immediately by mail or by telephone +39 0187 933876. Thank you.</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=59783
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=22.04.2025 06:37:59 +00:00
+UpdatedAt=22.04.2025 06:37:59 +00:00
+
+### ARTICLE01_BODY
+Bitte Update auf Xenomai 4 schicken. Danke!
+
+### ARTICLE02_HEADER
+Id=59792
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.04.2025 07:18:25 +00:00
+UpdatedAt=22.04.2025 07:18:26 +00:00
+
+### ARTICLE02_SUBJECT
+technical information Xenomai
+
+### ARTICLE02_BODY
+<div>Dear Customer,</div><div><br></div><div>Please find your new software version for Xenimai 4 below:</div><div><br></div><div><a href="https://downloads.acontis.com/2025/B-C/Celin_(40414)(IT)/EC-Master_Xenomai_x86_64Bit/3.2.2.03/EC-Master-V3.2.2.03-Xenomai4-x86_64Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2025/B-C/Celin_(40414)(IT)/EC-Master_Xenomai_x86_64Bit/3.2.2.03/EC-Master-V3.2.2.03-Xenomai4-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/B-C/Celin_(40414)(IT)/EC-Master_Xenomai_x86_64Bit/3.2.2.03/EC-Master-V3.2.2.03-Xenomai4-x86_64Bit-SDK_Protected.zip</a></div><div><a href="https://downloads.acontis.com/2025/B-C/Celin_(40414)(IT)/EC-Master_Xenomai_x86_64Bit/3.2.2.03/EC-RtEth-IntelGbe-V3.2.2.03-Xenomai4-x86_64Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2025/B-C/Celin_(40414)(IT)/EC-Master_Xenomai_x86_64Bit/3.2.2.03/EC-RtEth-IntelGbe-V3.2.2.03-Xenomai4-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/B-C/Celin_(40414)(IT)/EC-Master_Xenomai_x86_64Bit/3.2.2.03/EC-RtEth-IntelGbe-V3.2.2.03-Xenomai4-x86_64Bit-SDK_Protected.zip</a></div><div><br></div><div>Password: ECM88250</div><div><br></div><div>Best Regards,</div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Friday, April 18, 2025 at 7:48:12 AM, Angel Tassi wrote:<br><br><div>Good morning,</div>
+<div>I contact you from Celin in La Spezia (Italy) to ask you information about EtherCAT in particular for EC-Master, we already use your product but with Linux real-time kernel with Xenomai 3, we are upgrading to Xenomai 4 your product supports Xenomai 4 if yes is it possible to have the sources and specific documentation.</div>
+<div> </div>
+<div>Thank you and have a nice day.</div>
+<div> </div>
+<div>
+<div> </div>
+<div>
+<img style="max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/10424/59792/249333?view=inline">
+</div>
+<div>
+<b>ANGEL TASSI</b>
+</div>
+<div>Loc. Cerri CEPARANA</div>
+<div>19020 FOLLO (SP) - Italy</div>
+<div>Tel. +39 0187 933876 int. 319</div>
+<div>Fax. +39 0187 933654</div>
+<div> </div>
+<div>
+<span style="color: rgb(5, 99, 193);"><a href="mailto:a.tassi@celinsrl.com">a.tassi@celinsrl.com</a></span> </div>
+<div style=" color: rgb(5, 99, 193);">
+<a href="https://www.celinsrl.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.celinsrl.com/</a>
+</div>
+<div style=" color: rgb(237, 92, 87);">----------------------------------------------------------------------------------------------------</div>
+<div>La presente comunicazione, inviata dal mittente a titolo personale, non è in<br> alcun modo impegnativa per CELIN SRL se non seguita da un documento formale.</div>
+<div>Informativa ai sensi del Regolamento sulla Privacy (D.Lgs.101/2018 e GDPR UE 2016/679)</div>
+<div>Il presente messaggio è riservato unicamente per l'utilizzo da parte della persona fisica o giuridica a cui è indirizzato, e può contenere informazioni riservate, confidenziali e esenti dall'obbligo di divulgazione in base alle leggi applicabili. Se il lettore del presente messaggio non è il riservato destinatario, o il dipendente o l'agente incaricato per la consegna del messaggio al riservato destinatario, con la presente si avvisa che qualsiasi diffusione, distribuzione o copia della presente comunicazione è severamente proibita. Se si riceve la presente comunicazione per errore, si prega di avvisarci immediatamente via mail o telefonicamente al n. +39 0187 933876. Grazie.</div>
+<div>This message is intended only for the use of the individual or entity to which it is addressed, and may contain information that is privileged, confidential and exempt from disclosure under applicable laws. If the reader of this message is not the intended recipient, or the employee or agent responsible for delivering the message to the intended recipient, you are hereby notified that any dissemination, distribution or copying of this communication is strictly prohibited. If you have received this communication in error, please notify us immediately by mail or by telephone +39 0187 933876. Thank you.</div>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

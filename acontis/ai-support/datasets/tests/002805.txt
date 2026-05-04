@@ -1,0 +1,145 @@
+### HEADER
+Id=2805
+Link=http://at-zammad/#ticket/zoom/2805
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=702805
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=12.04.2022 23:58:48 +00:00
+UpdatedAt=13.04.2022 07:26:50 +00:00
+CloseAt=13.04.2022 07:26:50 +00:00
+ArticlesCount=2
+
+### TITLE
+Bug in NotifyDcmSync() logging
+
+### ARTICLE00_HEADER
+Id=14938
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.04.2022 23:58:48 +00:00
+UpdatedAt=12.04.2022 23:58:48 +00:00
+
+### ARTICLE00_SUBJECT
+Bug in NotifyDcmSync() logging
+
+### ARTICLE00_BODY
+<div>
+<p>I noticed a simple bug with logging for the CEcMaster::NotifyDcmSync() method. Two non-existent values were logged (nTimeStampDiff and dwErrorCode), which confused me. Here is my proposed fix:</p>
+<p> </p>
+<p>EC_T_VOID CEcMaster::NotifyDcmSync(EC_T_BOOL bInSync, EC_T_INT nCtlErrorNsecCur, EC_T_INT nCtlErrorNsecAvg, EC_T_INT nCtlErrorNsecMax)</p>
+<p>{</p>
+<p>EC_T_NOTIFICATION_INTDESC* pNotification = EC_NULL;</p>
+<p>EC_T_DCM_SYNC_NTFY_DESC* pNotifyDesc = EC_NULL;</p>
+<p> </p>
+<p>if (!IsNotificationEnabled(EC_NOTIFY_DCM_SYNC))</p>
+<p>return;</p>
+<p> </p>
+<p>pNotification = (EC_T_NOTIFICATION_INTDESC*)AllocNotification();</p>
+<p>if (EC_NULL == pNotification)</p>
+<p>return;</p>
+<p> </p>
+<p>pNotifyDesc = &amp;(pNotification-&gt;uNotification.Notification.desc.DcmInSyncDesc);</p>
+<p> </p>
+<p>pNotifyDesc-&gt;IsInSync = bInSync;</p>
+<p>pNotifyDesc-&gt;nCtlErrorNsecCur = nCtlErrorNsecCur;</p>
+<p>pNotifyDesc-&gt;nCtlErrorNsecAvg = nCtlErrorNsecAvg;</p>
+<p>pNotifyDesc-&gt;nCtlErrorNsecMax = nCtlErrorNsecMax;</p>
+<p> </p>
+<p>+ EcLogMsg(EC_LOG_LEVEL_INFO, (pEcLogContext, EC_LOG_LEVEL_INFO, "Notify EC_NOTIFY_DCM_SYNC(IsInSync %d, nCtlErrorNsecCur %d, nCtlErrorNsecAvg %d, nCtlErrorNsecMax %d)\n",</p>
+<p>- EcLogMsg(EC_LOG_LEVEL_INFO, (pEcLogContext, EC_LOG_LEVEL_INFO, "Notify EC_NOTIFY_DCM_SYNC(IsInSync %d, nCtlErrorNsecCur %d, nCtlErrorNsecAvg %d, nCtlErrorNsecMax %d, nTimeStampDiff %d, dwErrorCode 0x%x)\n",</p>
+<p>pNotifyDesc-&gt;IsInSync, pNotifyDesc-&gt;nCtlErrorNsecCur, pNotifyDesc-&gt;nCtlErrorNsecAvg, pNotifyDesc-&gt;nCtlErrorNsecMax));</p>
+<p> </p>
+<p>NotifyAndFree(EC_NOTIFY_DCM_SYNC, pNotification, sizeof(EC_T_DCM_SYNC_NTFY_DESC));</p>
+<p>}</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com/" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=14950
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.04.2022 07:26:46 +00:00
+UpdatedAt=13.04.2022 07:26:48 +00:00
+
+### ARTICLE01_SUBJECT
+Bug in NotifyDcmSync() logging
+
+### ARTICLE01_BODY
+Hi Quinton,<div><br></div><div>thanks for pointing that out. I fixed it the bug!</div><div><br></div><div>Best regards</div><div>Haithem Jebali <br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Haithem Jebali </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, April 13, 2022, 1:58:48 AM, Quinton Tormanen wrote:<br><br><div>
+<p>I noticed a simple bug with logging for the CEcMaster::NotifyDcmSync() method. Two non-existent values were logged (nTimeStampDiff and dwErrorCode), which confused me. Here is my proposed fix:</p>
+<p> </p>
+<p>EC_T_VOID CEcMaster::NotifyDcmSync(EC_T_BOOL bInSync, EC_T_INT nCtlErrorNsecCur, EC_T_INT nCtlErrorNsecAvg, EC_T_INT nCtlErrorNsecMax)</p>
+<p>{</p>
+<p>EC_T_NOTIFICATION_INTDESC* pNotification = EC_NULL;</p>
+<p>EC_T_DCM_SYNC_NTFY_DESC* pNotifyDesc = EC_NULL;</p>
+<p> </p>
+<p>if (!IsNotificationEnabled(EC_NOTIFY_DCM_SYNC))</p>
+<p>return;</p>
+<p> </p>
+<p>pNotification = (EC_T_NOTIFICATION_INTDESC*)AllocNotification();</p>
+<p>if (EC_NULL == pNotification)</p>
+<p>return;</p>
+<p> </p>
+<p>pNotifyDesc = &amp;(pNotification-&gt;uNotification.Notification.desc.DcmInSyncDesc);</p>
+<p> </p>
+<p>pNotifyDesc-&gt;IsInSync = bInSync;</p>
+<p>pNotifyDesc-&gt;nCtlErrorNsecCur = nCtlErrorNsecCur;</p>
+<p>pNotifyDesc-&gt;nCtlErrorNsecAvg = nCtlErrorNsecAvg;</p>
+<p>pNotifyDesc-&gt;nCtlErrorNsecMax = nCtlErrorNsecMax;</p>
+<p> </p>
+<p>+ EcLogMsg(EC_LOG_LEVEL_INFO, (pEcLogContext, EC_LOG_LEVEL_INFO, "Notify EC_NOTIFY_DCM_SYNC(IsInSync %d, nCtlErrorNsecCur %d, nCtlErrorNsecAvg %d, nCtlErrorNsecMax %d)\n",</p>
+<p>- EcLogMsg(EC_LOG_LEVEL_INFO, (pEcLogContext, EC_LOG_LEVEL_INFO, "Notify EC_NOTIFY_DCM_SYNC(IsInSync %d, nCtlErrorNsecCur %d, nCtlErrorNsecAvg %d, nCtlErrorNsecMax %d, nTimeStampDiff %d, dwErrorCode 0x%x)\n",</p>
+<p>pNotifyDesc-&gt;IsInSync, pNotifyDesc-&gt;nCtlErrorNsecCur, pNotifyDesc-&gt;nCtlErrorNsecAvg, pNotifyDesc-&gt;nCtlErrorNsecMax));</p>
+<p> </p>
+<p>NotifyAndFree(EC_NOTIFY_DCM_SYNC, pNotification, sizeof(EC_T_DCM_SYNC_NTFY_DESC));</p>
+<p>}</p>
+<p> </p>
+<p>Quinton Tormanen</p>
+<p>Principal Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p><a href="http://www.deltamotion.com/" rel="nofollow noreferrer noopener" target="_blank">www.deltamotion.com</a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

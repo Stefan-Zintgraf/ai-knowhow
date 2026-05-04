@@ -1,0 +1,114 @@
+### HEADER
+Id=6835
+Link=http://at-zammad/#ticket/zoom/6835
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Solystic (ID=734, Number=0, Country=FR)
+Commission=Solystic, Machine Colis CST Aufriche (ID=821, Number=821)
+Number=706835
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=jerome.souquieres@solystic.com (ID=2309, FirstName=Souquieres, LastName=Jerome)
+CreatedBy=jerome.souquieres@solystic.com (ID=2309, FirstName=Souquieres, LastName=Jerome)
+Type=
+TimeUnit=
+CreatedAt=15.11.2023 17:30:37 +00:00
+UpdatedAt=19.12.2023 14:11:30 +00:00
+CloseAt=19.12.2023 14:11:30 +00:00
+ArticlesCount=2
+
+### TITLE
+Seeking advice: EC-Master and atemsys linux driver
+
+### ARTICLE00_HEADER
+Id=37037
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.11.2023 17:30:37 +00:00
+UpdatedAt=15.11.2023 17:30:37 +00:00
+
+### ARTICLE00_SUBJECT
+Seeking advice: EC-Master and atemsys linux driver
+
+### ARTICLE00_BODY
+<p>Hello,<br>
+</p><p><br>
+</p><p>I'm contacting you seeking advice regarding the configuration of the EC-Master stack on a linux platform.<br>
+</p><p>I'm using a PC with the following configuration:<br>
+</p><ul dir="">
+<li>CPU: x86 - 64</li>
+<li> OS: Debian 11<br>
+</li>
+<li>ethernet port 1: Intel I219-V (linux driver e1000e) =&gt; I use this one for EtherCAT<br>
+</li>
+<li>ethernet port 2: Intel I211 (linux driver igb)<br>
+</li>
+</ul>
+<div>I need port 1 to be bound to the atemsys driver instead of e1000e. For reasons (*see below), I don't want to use the modprobe blacklisting mechanism.</div><div> </div><div>I therefore use the following configuration for modprobe:<br>
+</div><div>options atemsys AllowedPciDevices="0000:00:1f.6" =&gt; limit atemsys to ethernet port 1<br>
+</div><div>softdep e1000e pre: atemsys =&gt; make sure atemsys is loaded before e1000e so it can "steal" the device<br>
+</div><div> </div><div>It partially works:<br>
+</div><div>
+<ul>
+<li>after changing modprobe configuration and rebooting the PC, ethernet port 1 is bound to atemsys, ethernet port 2 is bound to igb -&gt; as expected<br>
+</li>
+<li>however, port 1 physical layer is down : the ethernet 1 port LEDs stay off<br>
+</li>
+<li>what is really strange: if I unload both e1000e and atemsys drivers, then load e1000e driver (I think it does something to configure the PHY), then unload the e1000e driver, then reload the atemsys and finally I do a SHUTDOWN (a reboot isn't enough) and restart, the EtherCAT port is now operational and stays operational after subsequent restarts.<br>
+</li>
+</ul>
+</div><div> </div><div>Is this an issue you have experienced ? Is there something special to do to wake up the physical layer when using atemsys ?<br>
+</div><div> </div><div>*Reasons for not blacklisting e1000e: I need to support another PC configuration where both ethernet ports are driven by I219 chips, therefore I can't blacklist e1000e.<br>
+</div><div> </div>Best Regards,<br>
+<div>Jerome Souquieres<br>
+</div><div> </div><div>
+<p> </p>
+<hr>
+<p><br>
+<strong><em><span style="color: #999999;">VIE PRIVEE</span></em></strong><br>
+<em><span style="color: #999999;">RGPD : Veuillez consulter notre politique relative à la vie privée </span><span style="color: #0000ff;"><a href="https://www.solystic.fr/mentions-legales" rel="nofollow noreferrer noopener" title="https://www.solystic.fr/mentions-legales" target="_blank">ici</a></span></em><br>
+<em><span style="color: #999999;"><strong>CONFIDENTIALITÉ</strong><br>
+</span></em><em><span style="color: #999999;">Ce message, et le cas échéant ses annexes, peut contenir des informations confidentielles protégées par le secret des affaires. Au cas où il ne vous serait pas destiné, nous vous remercions de bien vouloir nous en aviser immédiatement et de le supprimer.</span></em><br>
+<em><span style="color: #999999;">Solystic ne peut être tenu responsable en cas de modification d’un message électronique ou d’une pièce jointe sans son accord écrit.</span></em></p>
+<p> </p>
+<p><strong><em><span style="color: #999999;">PRIVACY</span></em></strong><br>
+<em><span style="color: #999999;">GDPR: Please be referred to our Privacy Notice <span style="color: #0000ff;">
+<a href="https://www.solystic.com/legal-disclaimer-0" rel="nofollow noreferrer noopener" title="https://www.solystic.com/legal-disclaimer-0" target="_blank">here</a></span></span></em><br>
+<strong><em><span style="color: #999999;">CONFIDENTIALITY</span></em></strong><br>
+<em><span style="color: #999999;">This e-mail may contain information that is confidential. If you are not the intended recipient, please delete this e-mail and any attachments and notify us immediately.</span></em><br>
+<em><span style="color: #999999;">Solystic is not liable if an e-mail or attachment is altered without its written consent.</span></em></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=37203
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.11.2023 11:45:37 +00:00
+UpdatedAt=20.11.2023 11:45:39 +00:00
+
+### ARTICLE01_SUBJECT
+Seeking advice: EC-Master and atemsys linux driver
+
+### ARTICLE01_BODY
+<div>Hi Jerome,</div><div>Atemsys is just for the connection between Linux Kernel Space to your EcMaster Application.</div><div>Without the Master Application there are only some minor Pcie power management things.</div><div><br></div><div>For me it's impotent, if</div><div>- EcMaster is working after unloading <span>e1000e</span><span> driver/kernel module.</span>
+</div><div>- EcMaster is working when e1000e driver/kernel module was not loaded before.<span><br></span>
+</div><div>- <span>e1000e</span><span> driver/kernel module can be reloaded, after unbind </span><span>e1000e</span><span> and after unbind atemsys.</span>
+</div><div><br></div><div><span><br></span></div><div><span>Best Regards</span></div><div><span>Daniel</span></div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>

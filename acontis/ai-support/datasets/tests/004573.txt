@@ -1,0 +1,188 @@
+### HEADER
+Id=4573
+Link=http://at-zammad/#ticket/zoom/4573
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=704573
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=16.12.2022 10:12:48 +00:00
+UpdatedAt=19.12.2022 11:38:10 +00:00
+CloseAt=19.12.2022 11:38:10 +00:00
+ArticlesCount=3
+
+### TITLE
+The EcMaster on imx8m lack "stop sending ethernet frames after 60 minutes if not licensed!"
+
+### ARTICLE00_HEADER
+Id=24166
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.12.2022 10:12:48 +00:00
+UpdatedAt=16.12.2022 10:12:51 +00:00
+
+### ARTICLE00_SUBJECT
+The EcMaster on imx8m lack "stop sending ethernet frames after 60 minutes if not licensed!"
+
+### ARTICLE00_BODY
+<div>Dear,</div><div> </div><div>The EcMaster V3.1.4.05 does not have the following message on imx8mm but it will stop afer 1hour:</div><div>0000005477: Protected version, stop sending ethernet frames after 60 minutes if not licensed!</div><div> </div><div>We consider it is necessary to retain this message if without license, please confirm it.</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div><p>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</p></div>
+<div>
+<p>Room 311, Building 2, Yiquanhui, No. 35 Shangdi East Road, Haidian District, Beijing</p>
+<p>北京市海淀区上地东路35号院颐泉汇2号楼311</p>
+<p>Tel: +86-10-62740270</p>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=24209
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.12.2022 10:53:03 +00:00
+UpdatedAt=19.12.2022 10:53:03 +00:00
+
+### ARTICLE01_SUBJECT
+The EcMaster on imx8m lack "stop sending ethernet frames after 60 minutes if not licensed!"
+
+### ARTICLE01_BODY
+Hi Lishan,<div><br></div><div>you are right. That was an error in the specific version V3.1.4.05. Please download the eval again . I updated them to V3.1.4.07 today.</div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, December 16, 2022 at 11:12:48 AM, ec_support@motrotech.com wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>The EcMaster V3.1.4.05 does not have the following message on imx8mm but it will stop afer 1hour:</div>
+<div>0000005477: Protected version, stop sending ethernet frames after 60 minutes if not licensed!</div>
+<div> </div>
+<div>We consider it is necessary to retain this message if without license, please confirm it.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div><p>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</p></div>
+<div>
+<p>Room 311, Building 2, Yiquanhui, No. 35 Shangdi East Road, Haidian District, Beijing</p>
+<p>北京市海淀区上地东路35号院颐泉汇2号楼311</p>
+<p>Tel: +86-10-62740270</p>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=24211
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.12.2022 11:17:14 +00:00
+UpdatedAt=19.12.2022 11:17:14 +00:00
+
+### ARTICLE02_SUBJECT
+Re: RE: The EcMaster on imx8m lack "stop sending ethernet frames after 60 minutes if not licensed!" [Ticket#704573]
+
+### ARTICLE02_BODY
+<div>Hi Cyril,</div><div> </div><div>Thanks for your reply, I will try the eval again later.</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div><p>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</p></div>
+<div>
+<p>Room 311, Building 2, Yiquanhui, No. 35 Shangdi East Road, Haidian District, Beijing</p>
+<p>北京市海淀区上地东路35号院颐泉汇2号楼311</p>
+<p>Tel: +86-10-62740270</p>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div><blockquote>
+<div> </div>
+<div>
+<span class="js-signatureMarker"></span><div>
+<b>From:</b> <a href="mailto:ecsupport@acontis.com">Cyril Eyssautier via EC-Support</a>
+</div>
+<div>
+<b>Date:</b> 2022-12-19 18:53</div>
+<div>
+<b>To:</b> <a href="mailto:ec_support@motrotech.com">ec_support</a>
+</div>
+<div>
+<b>Subject:</b> RE: The EcMaster on imx8m lack "stop sending ethernet frames after 60 minutes if not licensed!" [Ticket#704573]</div>
+</div>
+<div>Hi Lishan,<div> </div>
+<div>you are right. That was an error in the specific version V3.1.4.05. Please download the eval again . I updated them to V3.1.4.07 today.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Friday, December 16, 2022 at 11:12:48 AM, ec_support@motrotech.com wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>The EcMaster V3.1.4.05 does not have the following message on imx8mm but it will stop afer 1hour:</div>
+<div>0000005477: Protected version, stop sending ethernet frames after 60 minutes if not licensed!</div>
+<div> </div>
+<div>We consider it is necessary to retain this message if without license, please confirm it.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div><p>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</p></div>
+<div>
+<p>Room 311, Building 2, Yiquanhui, No. 35 Shangdi East Road, Haidian District, Beijing</p>
+<p>北京市海淀区上地东路35号院颐泉汇2号楼311</p>
+<p>Tel: +86-10-62740270</p>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div> </div>
+<br><br>
+</div>
+</div>
+</blockquote>

@@ -1,0 +1,178 @@
+### HEADER
+Id=179
+Link=http://at-zammad/#ticket/zoom/179
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Sanctuary AI (ID=415, Number=0, Country=US)
+Commission=Sanctuary AI, Worlds Best Hand (ID=493, Number=493)
+Number=700179
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=fahd@sanctuary.ai (ID=167, FirstName=Fahd, LastName=Boukhtioua)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=11.03.2021 14:00:16 +00:00
+UpdatedAt=19.03.2021 07:04:49 +00:00
+CloseAt=19.03.2021 07:04:49 +00:00
+ArticlesCount=3
+
+### TITLE
+FW: Issue with the Acontis printing function
+
+### ARTICLE00_HEADER
+Id=757
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.03.2021 14:00:16 +00:00
+UpdatedAt=11.03.2021 14:00:16 +00:00
+
+### ARTICLE00_SUBJECT
+FW: Issue with the Acontis printing function
+
+### ARTICLE00_BODY
+<div>
+<p>Can you please review this support email below?</p>
+<p> </p>
+<p>/Jon</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p><b>From: </b>fahd@sanctuary.ai<br><b>Sent: </b>Thursday, March 11, 2021 12:12 AM<br><b>To: </b>j.waters@acontis.com<br><b>Subject: </b>Issue with the Acontis printing function</p>
+<p> </p>
+</div><div dir="ltr">
+<div>Hi Jon,</div>
+<div> </div>
+<div>I have an issue with the Acontis function for log and printing to the console.</div>
+<div><pre>EcLogMsg(dwLogSeverity, pLogMsgCallbackParms)<br></pre></div>
+<div>This function does not want to printf <b> variables with a type: double or float.<br></b>
+</div>
+<div>All other variable types prints fine.</div>
+<div> </div>
+<div>Please can you help me in this case.</div>
+<div>Example code:<br>
+</div>
+<div><pre>double fVal = 25.17;<br><br>EcLogMsg(EC_LOG_LEVEL_INFO, (LogParam.pLogContext, EC_LOG_LEVEL_INFO,<br>        "float_val = %f \n",<br>        fVal<br>        ));</pre></div>
+<div>Output on console (the actual double value is not printed) :<br>
+</div>
+<div><b>&gt; float_val = </b></div>
+<div> </div>
+<div>NOTE: using the &lt;stdio.h&gt; <b>printf</b> function works fine and prints the value correctly.</div>
+<div> </div>
+<div>Thanks.<br>
+</div>
+<div>--<br><div dir="ltr">
+<div> </div>
+<div>Best regards,</div>
+<div> </div>
+<div><b>Fahd B. | Senior firmware engineer | <a href="https://www.sanctuary.ai/" rel="nofollow noreferrer noopener" title="https://www.sanctuary.ai/" target="_blank">sanctuary.ai</a><br></b></div>
+<div>
+<br> CONFIDENTIALITY NOTICE: This communication and any attachments is confidential and intended solely for use by the recipient(s) named above. </div>
+</div>
+</div>
+</div><br> CONFIDENTIALITY NOTICE: This communication, and any attachments thereto, is confidential and intended solely for use by the recipient(s) named above.
+
+### ARTICLE01_HEADER
+Id=850
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=15.03.2021 08:16:07 +00:00
+UpdatedAt=15.03.2021 08:16:07 +00:00
+
+### ARTICLE01_BODY
+<p>Wir unterstützen es nicht.</p>
+
+<p> </p>
+
+<p>Die Unterstützung für float und
+double bringt unbeherrschbare Abhängigkeit wegen embedded systeme und floating
+point unit mit.</p>
+
+<p> </p>
+
+<p>Er soll die EcVsnprintf in EcLogging
+einfach ersetzen. Wir können uns ein #define überlegen wie man es „elegant“
+löst. Etwas wie NOPRINTF</p>
+
+### ARTICLE02_HEADER
+Id=856
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.03.2021 08:46:43 +00:00
+UpdatedAt=15.03.2021 08:46:45 +00:00
+
+### ARTICLE02_SUBJECT
+Issue with the Acontis printing function
+
+### ARTICLE02_BODY
+Hi Jon,<div><br></div><div>We currently don't support this.</div><div><br></div><div>In general, we avoid to use <span>float and double to protect against bad influences. In some OS it is needed to declare if the tasks are using the floating point unit or not. In some environment this kind of print can produce real-time violation.</span>
+</div><div><span><br></span></div><div>
+<span>They could edit the eclogging.cpp file and replace the calls to </span><span>EcVsnprintf by an appropriate real-time friendly function.</span>
+</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div><span>____________________________________________________________________________</span></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>Fax: +49 (751) 56030-31</div>
+<div>eMail: ecsupport@acontis.com</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, March 11, 2021, 3:00:16 PM, Jon Waters wrote:<br><br><div>
+<p>Can you please review this support email below?</p>
+<p> </p>
+<p>/Jon</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p><b>From: </b>fahd@sanctuary.ai<br><b>Sent: </b>Thursday, March 11, 2021 12:12 AM<br><b>To: </b>j.waters@acontis.com<br><b>Subject: </b>Issue with the Acontis printing function</p>
+<p> </p>
+</div>
+<div dir="ltr">
+<div>Hi Jon,</div>
+<div> </div>
+<div>I have an issue with the Acontis function for log and printing to the console.</div>
+<div><pre>EcLogMsg(dwLogSeverity, pLogMsgCallbackParms)<br></pre></div>
+<div>This function does not want to printf <b> variables with a type: double or float.<br></b>
+</div>
+<div>All other variable types prints fine.</div>
+<div> </div>
+<div>Please can you help me in this case.</div>
+<div>Example code:<br>
+</div>
+<div><pre>double fVal = 25.17;<br><br>EcLogMsg(EC_LOG_LEVEL_INFO, (LogParam.pLogContext, EC_LOG_LEVEL_INFO,<br>        "float_val = %f \n",<br>        fVal<br>        ));</pre></div>
+<div>Output on console (the actual double value is not printed) :<br>
+</div>
+<div><b>&gt; float_val = </b></div>
+<div> </div>
+<div>NOTE: using the &lt;stdio.h&gt; <b>printf</b> function works fine and prints the value correctly.</div>
+<div> </div>
+<div>Thanks.<br>
+</div>
+<div>--<br><div dir="ltr">
+<div> </div>
+<div>Best regards,</div>
+<div> </div>
+<div><b>Fahd B. | Senior firmware engineer | <a href="https://www.sanctuary.ai/" rel="nofollow noreferrer noopener" title="https://www.sanctuary.ai/" target="_blank">sanctuary.ai</a><br></b></div>
+<div>
+<br> CONFIDENTIALITY NOTICE: This communication and any attachments is confidential and intended solely for use by the recipient(s) named above. </div>
+</div>
+</div>
+</div>
+<br> CONFIDENTIALITY NOTICE: This communication, and any attachments thereto, is confidential and intended solely for use by the recipient(s) named above.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

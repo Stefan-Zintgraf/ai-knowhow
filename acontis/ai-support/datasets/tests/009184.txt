@@ -1,0 +1,216 @@
+### HEADER
+Id=9184
+Link=http://at-zammad/#ticket/zoom/9184
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=709184
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=29.10.2024 11:55:02 +00:00
+UpdatedAt=31.01.2025 07:13:32 +00:00
+CloseAt=31.01.2025 07:13:32 +00:00
+ArticlesCount=3
+
+### TITLE
+About an failure of Initialization of Reference Clock (QNo.100)
+
+### ARTICLE00_HEADER
+Id=52095
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.10.2024 11:55:02 +00:00
+UpdatedAt=29.10.2024 11:55:06 +00:00
+
+### ARTICLE00_SUBJECT
+About an failure of Initialization of Reference Clock (QNo.100)
+
+### ARTICLE00_BODY
+<p> </p><div> <div>Hi Support Team,</div>
+<div> </div>I received the question from Mitsubishi (commission No. 40627).<div> </div>
+<div>When DC and Cable Redundancy are enabled and the cable is pulled out with a specific order, the initialization of Reference Clock is failed with error code 0x98110138.</div>
+<div>Is this a bug? of specification?</div>
+<div> </div>
+<div>Please refer the attached file and answer it…</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+<div> <div> <div> <div dir="auto"> <div dir="auto"> <div dir="auto"> <div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー <br> 株式会社ソフトサービス | Soft Service Co., Ltd. <br> 営業本部 関東営業部 | Kanto Sales Dept. <br> 井出 裕一 | Yuichi Ide <br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階 <br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan <br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058 <br> E-mail：yuichi.ide@soft-service.co.jp <br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div> <div> </div>
+</div><div> <div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=52106
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.10.2024 13:24:38 +00:00
+UpdatedAt=29.10.2024 13:24:41 +00:00
+
+### ARTICLE01_SUBJECT
+About an failure of Initialization of Reference Clock (QNo.100)
+
+### ARTICLE01_BODY
+Hi Yuichi,<div><br></div><div>
+<div>
+<span>0x98110138 is </span>EC_E_DC_REF_CLOCK_SYNC_OUT_UNIT_DISABLED. This is returned if a slave is supposed to support DC, but it's unit is disabled. Can you provide me the ecmaster.log file?</div>
+<div><br></div>
+<div>Best Regards,</div>
+<div><span>__________________________________________________________________________________________</span></div>
+<div data-signature="true" data-signature-id="2">
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, October 29, 2024 at 12:55:02 PM, Yuichi Ide wrote:<br><br><p> </p>
+<div> <div>Hi Support Team,</div>
+<div> </div>I received the question from Mitsubishi (commission No. 40627).<div> </div>
+<div>When DC and Cable Redundancy are enabled and the cable is pulled out with a specific order, the initialization of Reference Clock is failed with error code 0x98110138.</div>
+<div>Is this a bug? of specification?</div>
+<div> </div>
+<div>Please refer the attached file and answer it…</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+<div> <div> <div> <div dir="auto"> <div dir="auto"> <div dir="auto"> <div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー <br> 株式会社ソフトサービス | Soft Service Co., Ltd. <br> 営業本部 関東営業部 | Kanto Sales Dept. <br> 井出 裕一 | Yuichi Ide <br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階 <br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan <br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058 <br> E-mail：yuichi.ide@soft-service.co.jp <br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div> <div> </div>
+</div>
+<div> <div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=52109
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.10.2024 13:37:49 +00:00
+UpdatedAt=29.10.2024 13:37:49 +00:00
+
+### ARTICLE02_SUBJECT
+Re: About an failure of Initialization of Reference Clock (QNo.100) [Ticket#709184]
+
+### ARTICLE02_BODY
+Hi Cyril, <div> </div><div>OK, I’ll ask Mitsubishi to provide the log tomorrow.</div><div> </div><div>Best regards,</div><div>Yuichi</div><div>
+<div dir="ltr">
+<div><span><br>
+</span></div>
+<div>--</div>
+<div>～プロフェッショナル集団を目指すＳＳＶグループ～</div>
+<div>ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+<div>株式会社ソフトサービス | Soft Service Co., Ltd.</div>
+<div>営業本部 関東営業所 | Tokyo Sales Office</div>
+<div>井出 裕一 | Yuichi Ide</div>
+<div>
+<div>住所：〒101-0062 東京都千代田区神田駿河台4-4-1 PMO御茶ノ水7F</div>
+<div>7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062 JAPAN</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+</div>
+<div>ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+<div dir="ltr">
+<br>
+<blockquote type="cite">2024/10/29 22:24、Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;のメール:<br>
+<br>
+</blockquote>
+</div>
+<blockquote type="cite">
+<div dir="ltr">Hi Yuichi,<div> </div>
+<div>
+<div>0x98110138 is EC_E_DC_REF_CLOCK_SYNC_OUT_UNIT_DISABLED. This is returned if a slave is supposed to support DC, but it's unit is disabled. Can you provide me the ecmaster.log file?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>__________________________________________________________________________________________</div>
+<div data-signature="true" data-signature-id="2">
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Tuesday, October 29, 2024 at 12:55:02 PM, Yuichi Ide wrote:<br>
+<br>
+<p> </p>
+<div>
+<div>Hi Support Team,</div>
+<div> </div>I received the question from Mitsubishi (commission No. 40627).<div> </div>
+<div>When DC and Cable Redundancy are enabled and the cable is pulled out with a specific order, the initialization of Reference Clock is failed with error code 0x98110138.</div>
+<div>Is this a bug? of specification?</div>
+<div> </div>
+<div>Please refer the attached file and answer it…</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+<div>
+<div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">～プロフェッショナル集団を目指すＳＳＶグループ～<br> ーーーーーーーーーーーーーーーーーーーーーーーーー <br> 株式会社ソフトサービス | Soft Service Co., Ltd. <br> 営業本部 関東営業部 | Kanto Sales Dept. <br> 井出 裕一 | Yuichi Ide <br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階 <br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan <br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058 <br> E-mail：yuichi.ide@soft-service.co.jp <br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div> </div>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>
+</blockquote>
+</div>

@@ -1,0 +1,258 @@
+### HEADER
+Id=237
+Link=http://at-zammad/#ticket/zoom/237
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=FANUC, EtherCAT model CNC (ID=487, Number=487)
+Number=700237
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Type=
+TimeUnit=
+CreatedAt=17.03.2021 14:29:26 +00:00
+UpdatedAt=12.12.2023 13:52:32 +00:00
+CloseAt=23.03.2021 12:01:44 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Engineer (FANUC)
+
+### ARTICLE00_HEADER
+Id=1021
+ContentType=text/html
+Internal=False
+Type=phone
+CreatedAt=17.03.2021 14:29:26 +00:00
+UpdatedAt=17.03.2021 14:29:26 +00:00
+
+### ARTICLE00_BODY
+<div>Dear EtherCAT Support</div><div><br></div><div>
+<span>They want more information on the EC-Engineer SDK.</span><br>
+</div><div>  Q6. Please provide materials that show what kind of customization can be done.</div><div><br></div><div>Best regards,</div><div>Takuya Fujikawa</div>
+
+### ARTICLE01_HEADER
+Id=1022
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.03.2021 14:32:27 +00:00
+UpdatedAt=17.03.2021 14:32:28 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Engineer (FANUC)
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>please find more information here:</div><div><br></div><div>
+<div><a href="https://www.acontis.com/en/ecengineer-sdk.html" title="https://www.acontis.com/en/ecengineer-sdk.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/ecengineer-sdk.html</a></div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, March 17, 2021, 3:29:26 PM, Cyril Eyssautier wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>
+<span>They want more information on the EC-Engineer SDK.</span><br>
+</div>
+<div>  Q6. Please provide materials that show what kind of customization can be done.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=1047
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=18.03.2021 07:58:48 +00:00
+UpdatedAt=18.03.2021 07:58:48 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Engineer (FANUC) [Ticket#700237]
+
+### ARTICLE02_BODY
+Dear Kai san
+
+Can you provide them with a manual with more information?
+They want to know the file structure and API.
+
+Best regards,
+Takuya Fujikawa
+
+
+
+On 2021/03/17 23:32, Kai Feifel via EC-Support wrote:
+> Hi,
+> 
+> please find more information here:
+> 
+> https://www.acontis.com/en/ecengineer-sdk.html <https://www.acontis.com/en/ecengineer-sdk.html>
+> 
+> Best regards,
+> Kai
+> ____________________________________________________________________________
+> Kai Feifel
+> EtherCAT Support
+> acontis technologies GmbH
+> Address: Gartenstraße 46, D-88212 Ravensburg, Germany
+> Http: https://www.acontis.com <https://www.acontis.com>
+> Phone: +49 (751) 56030-30
+> eMail: ecsupport@acontis.com
+> ----------------------------------------------------------------------------
+> Subscribe to our newsletter and stay updated on the latest developments and upcoming events.
+> https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> ----------------------------------------------------------------------------
+> Eingetragene Rechtsform: GmbH
+> Sitz der Gesellschaft: Ravensburg
+> Sitz und Registergericht: Amtsgericht Ulm, HRB 552320
+> Geschäftsführung: Christoph Widmann, Stefan Zintgraf
+> 
+> 
+>> On Wednesday, March 17, 2021, 3:29:26 PM, Cyril Eyssautier wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> They want more information on the EC-Engineer SDK.
+>>  Q6. Please provide materials that show what kind of customization can be done.
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+
+### ARTICLE03_HEADER
+Id=1060
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.03.2021 09:27:08 +00:00
+UpdatedAt=18.03.2021 09:27:10 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Engineer (FANUC)
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>please find the manual here:</div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/Docs/2021/3-18/UsersManual.pdf" title="https://downloads.acontis.com/Docs/2021/3-18/UsersManual.pdf" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/Docs/2021/3-18/UsersManual.pdf</a></div>
+<div><br></div>
+<div>But I guess the best would be to use an evaluation version.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Kai</div>
+<div><br></div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, March 18, 2021, 8:58:48 AM, Takuya Fujikawa wrote:<br><br><div>Dear Kai san</div>
+<div><br></div>
+<div>Can you provide them with a manual with more information?</div>
+<div>They want to know the file structure and API.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2021/03/17 23:32, Kai Feifel via EC-Support wrote:</div>
+<div>&gt; Hi,</div>
+<div>&gt;</div>
+<div>&gt; please find more information here:</div>
+<div>&gt;</div>
+<div>&gt; <a href="https://www.acontis.com/en/ecengineer-sdk.html" title="https://www.acontis.com/en/ecengineer-sdk.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/ecengineer-sdk.html</a> &lt;<a href="https://www.acontis.com/en/ecengineer-sdk.html" title="https://www.acontis.com/en/ecengineer-sdk.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/ecengineer-sdk.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt; Best regards,</div>
+<div>&gt; Kai</div>
+<div>&gt; ____________________________________________________________________________</div>
+<div>&gt; Kai Feifel</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; acontis technologies GmbH</div>
+<div>&gt; Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>&gt; Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>&gt;</div>
+<div>&gt; Phone: +49 (751) 56030-30</div>
+<div>&gt; eMail: ecsupport@acontis.com</div>
+<div>&gt; ----------------------------------------------------------------------------</div>
+<div>&gt; Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div>&gt; <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt; ----------------------------------------------------------------------------</div>
+<div>&gt; Eingetragene Rechtsform: GmbH</div>
+<div>&gt; Sitz der Gesellschaft: Ravensburg</div>
+<div>&gt; Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>&gt; Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Wednesday, March 17, 2021, 3:29:26 PM, Cyril Eyssautier wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; They want more information on the EC-Engineer SDK.</div>
+<div>&gt;&gt;  Q6. Please provide materials that show what kind of customization can be done.</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

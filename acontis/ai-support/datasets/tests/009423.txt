@@ -1,0 +1,155 @@
+### HEADER
+Id=9423
+Link=http://at-zammad/#ticket/zoom/9423
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Keyence (ID=223, Number=40219, Country=JP)
+Commission=Keyence, Control Division PLC product lines (ID=577, Number=577)
+Number=709423
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=akashi-n@keyence.co.jp (ID=2786, FirstName=Naoto, LastName=Akashi)
+CreatedBy=akashi-n@keyence.co.jp (ID=2786, FirstName=Naoto, LastName=Akashi)
+Type=
+TimeUnit=
+CreatedAt=28.11.2024 05:27:11 +00:00
+UpdatedAt=03.12.2024 07:05:15 +00:00
+CloseAt=03.12.2024 07:05:15 +00:00
+ArticlesCount=3
+
+### TITLE
+【Keyence】API to Specify the ECC File Version
+
+### ARTICLE00_HEADER
+Id=53442
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.11.2024 05:27:11 +00:00
+UpdatedAt=28.11.2024 05:27:11 +00:00
+
+### ARTICLE00_SUBJECT
+【Keyence】API to Specify the ECC File Version
+
+### ARTICLE00_BODY
+<div style=" color: rgb(12, 100, 192);">Thank you for your continued support. My name is Akashi from Keyence. I am a colleague of Wakagi and Maruyama.</div><div style=" color: rgb(12, 100, 192);">In preparation for the release of .NET10, we are progressing with the update of EcCore.dll from version 3.7.7 to 3.9.8.</div><div style=" color: rgb(12, 100, 192);">With this version upgrade, the output Ecc file format version will increase from 34.0 to 35.0.</div><div style=" color: rgb(12, 100, 192);">Since Ecc is always output in the latest format version, file compatibility will be lost before and after the product release that corresponds to the EcCore.dll version upgrade. Is it possible to output an Ecc downgraded to that version by specifying the file format version as shown below?</div><div style=" color: rgb(12, 100, 192);">
+<br>
+</div><div style=" color: rgb(12, 100, 192);">$B"#(Bsample code</div><div style=" color: rgb(12, 100, 192);">
+<img style="max-width:100%;max-width: 997px;" src="/api/v1/ticket_attachment/9423/53442/221794?view=inline">
+</div><div style=" color: rgb(12, 100, 192);">
+<br>
+</div><div>
+<div style=" color: rgb(12, 100, 192);">--</div>
+<div style=" color: rgb(12, 100, 192);">Keyence Naoto Akashi</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=53458
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.11.2024 11:24:55 +00:00
+UpdatedAt=28.11.2024 11:24:57 +00:00
+
+### ARTICLE01_SUBJECT
+【Keyence】API to Specify the ECC File Version
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>sorry, no, a downgrade is not supported.</div><div><br></div><div>If we want to support this, we can no longer add new features in future.</div><div>So, this is by design.</div><div><br></div><div>E.g. your case:</div><div>In the past (e.g. below v3.9) we used BinaryFormatter from .NET. Now, they removed official support from .NET8 and higher. We used the BinaryFormatter to save the ESI data in .ecc file.</div><div>So, starting from v.3.9 we have to upgrade all .ecc files based on the file format version, to use a new serializer.</div><div><br></div><div>... so, if we save it in the old format, you can not use .NET8 and higher.</div><div><br></div><div>I hope you understand why we only support an upgrade and not a downgrade.</div><div>I mean we want to keep the software "flexible" for the future.</div><div><br></div><div>Suggestion:</div><div>Your existing customers can still use v3.7.7. It was build with .NET4. So no need to upgrade.</div><div>In your next major release you can upgrade your product to use v3.9.8.</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, November 28, 2024 at 6:27:11 AM, Naoto Akashi wrote:<br><br><div style=" color: rgb(12, 100, 192);">Thank you for your continued support. My name is Akashi from Keyence. I am a colleague of Wakagi and Maruyama.</div>
+<div style=" color: rgb(12, 100, 192);">In preparation for the release of .NET10, we are progressing with the update of EcCore.dll from version 3.7.7 to 3.9.8.</div>
+<div style=" color: rgb(12, 100, 192);">With this version upgrade, the output Ecc file format version will increase from 34.0 to 35.0.</div>
+<div style=" color: rgb(12, 100, 192);">Since Ecc is always output in the latest format version, file compatibility will be lost before and after the product release that corresponds to the EcCore.dll version upgrade. Is it possible to output an Ecc downgraded to that version by specifying the file format version as shown below?</div>
+<div style=" color: rgb(12, 100, 192);">
+<br>
+</div>
+<div style=" color: rgb(12, 100, 192);">$B"#(Bsample code</div>
+<div style=" color: rgb(12, 100, 192);">
+<img style="max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/9423/53458/221904?view=inline">
+</div>
+<div style=" color: rgb(12, 100, 192);">
+<br>
+</div>
+<div>
+<div style=" color: rgb(12, 100, 192);">--</div>
+<div style=" color: rgb(12, 100, 192);">Keyence Naoto Akashi</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=53483
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.11.2024 23:02:13 +00:00
+UpdatedAt=28.11.2024 23:02:13 +00:00
+
+### ARTICLE02_SUBJECT
+Re: 【Keyence】API to Specify the ECC File Version [Ticket#709423]
+
+### ARTICLE02_BODY
+<div style=" color: rgb(12, 100, 192);">Hi,</div><div style=" color: rgb(12, 100, 192);">
+<br>
+</div><div style=" color: rgb(12, 100, 192);">Thank you for your polite response. I understand the information provided and will consider it.</div><div style=" color: rgb(12, 100, 192);">
+<br>
+</div><div style=" color: rgb(12, 100, 192);">--</div><div style=" color: rgb(12, 100, 192);">Keyence Naoto Akashi</div><div style=" color: rgb(12, 100, 192);">
+<br>
+</div><hr>
+<div dir="ltr">
+<span><b>óŹőóěŃ:</b> Martin Gaenzer via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>áęăáěíăÁ:</b> 2024Ň´11ęĹ28ěí 20:24<br>
+<b>čČŕť:</b> ŮĽŕ´ ňÁěŃ (4984.6620)Ł¨ŤťŤóŤČŤ˘ŤÍŤĂŤŻŤšŁŠ Naoto Akashi &lt;akashi-n@keyence.co.jp&gt;<br>
+<b>CC:</b> üŻßŁ ÓŢËż (1656.8960) Daisuke Maruyama &lt;maruyamad@keyence.co.jp&gt;; ĺ´ŮĘ ŐŢËż (2411.8960) Ryosuke Wakaki &lt;wakaki-r@keyence.co.jp&gt;; Îůíą ßÔ÷ź (2551.8960) Shota Kuji &lt;kuji-s@keyence.co.jp&gt;<br>
+<b>ËěŮŁ:</b> RE: ĄźKeyenceĄ˝API to Specify the ECC File Version [Ticket#709423]</span>
+<div> </div>
+</div><div>Hi,</div><div> </div><div>sorry, no, a downgrade is not supported.</div><div> </div><div>If we want to support this, we can no longer add new features in future.</div><div>So, this is by design.</div><div> </div><div>E.g. your case:</div><div>In the past (e.g. below v3.9) we used BinaryFormatter from .NET. Now, they removed official support from .NET8 and higher. We used the BinaryFormatter to save the ESI data in .ecc file.</div><div>So, starting from v.3.9 we have to upgrade all .ecc files based on the file format version, to use a new serializer.</div><div> </div><div>... so, if we save it in the old format, you can not use .NET8 and higher.</div><div> </div><div>I hope you understand why we only support an upgrade and not a downgrade.</div><div>I mean we want to keep the software "flexible" for the future.</div><div> </div><div>Suggestion:</div><div>Your existing customers can still use v3.7.7. It was build with .NET4. So no need to upgrade.</div><div>In your next major release you can upgrade your product to use v3.9.8.</div><div> </div><div>Best Regards,</div><div>Martin</div><div>__________________________________________________________________________________________</div><div>Martin Gaenzer</div><div>EtherCAT Support</div><div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div><div> acontis technologies GmbH, Franz-Beer-StraŠŹe 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com</a>
+</div><div>__________________________________________________________________________________________</div><div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com/en/newsletter.html</a>
+</div><div> </div><blockquote>
+<span>On Thursday, November 28, 2024 at 6:27:11 AM, Naoto Akashi wrote:<br>
+<br>
+</span>
+<div style=" color: rgb(12, 100, 192);">Thank you for your continued support. My name is Akashi from Keyence. I am a colleague of Wakagi and Maruyama.</div>
+<div style=" color: rgb(12, 100, 192);">In preparation for the release of .NET10, we are progressing with the update of EcCore.dll from version 3.7.7 to 3.9.8.</div>
+<div style=" color: rgb(12, 100, 192);">With this version upgrade, the output Ecc file format version will increase from 34.0 to 35.0.</div>
+<div style=" color: rgb(12, 100, 192);">Since Ecc is always output in the latest format version, file compatibility will be lost before and after the product release that corresponds to the EcCore.dll version upgrade. Is it possible to output an Ecc downgraded to that version by specifying the file format version as shown below?</div>
+<div style=" color: rgb(12, 100, 192);">
+<br>
+</div>
+<div style=" color: rgb(12, 100, 192);">$B"#(Bsample code</div>
+<div style=" color: rgb(12, 100, 192);">
+<img style="max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/9423/53483/222039?view=inline">
+</div>
+<div style=" color: rgb(12, 100, 192);">
+<br>
+</div>
+<div style=" color: rgb(12, 100, 192);">--</div>
+<div style=" color: rgb(12, 100, 192);">Keyence Naoto Akashi</div>
+<span><br>
+</span>
+</blockquote>
+<div> </div><span><br>
+<br>
+</span>

@@ -1,0 +1,197 @@
+### HEADER
+Id=8676
+Link=http://at-zammad/#ticket/zoom/8676
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=none
+Number=708676
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=15.08.2024 02:35:31 +00:00
+UpdatedAt=21.08.2024 06:04:28 +00:00
+CloseAt=19.08.2024 06:13:18 +00:00
+ArticlesCount=3
+
+### TITLE
+EC-Engineer Questions from US Plug Fest
+
+### ARTICLE00_HEADER
+Id=48689
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.08.2024 02:35:32 +00:00
+UpdatedAt=15.08.2024 02:35:32 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Engineer Questions from US Plug Fest
+
+### ARTICLE00_BODY
+<div>
+<p>Hi,</p>
+<p> </p>
+<p>I’m currently at the Plug Fest, and when testing one of the SubDevices without having the ESI file loaded, there was a prompt in EC-Engineer:</p>
+<p> </p>
+<p><img style="max-width:100%;width:6.4791in;max-height:3.3177in;width:622px;max-height:319px;" src="/api/v1/ticket_attachment/8676/48689/202066?view=inline"></p>
+<p> </p>
+<p>What is this feature? Is it searching on the internet for an ESI file? Is that what it is doing? If so, where is it searching from?</p>
+<p> </p>
+<p>When I selected yes, it used some auto-generated ESI file, but it was missing functionality compared to when I used the actual ESI file in a later test. Specifically, the mapped process data was empty, and there was no Modules tab despite the SubDevice using MDP.</p>
+<p> </p>
+<p>Another question:</p>
+<p> </p>
+<p>When I used the auto-generated ESI file and then went to Diagnosis mode, I was not able to read out the OD from the SubDevice (and there was no option to read the OD from ESI, but that seemed expected behavior considering it was using an auto-generated ESI).</p>
+<p> </p>
+<p>Why was it not possible to read the OD from the device when using the auto-generated ESI? Conversely, when I started without the ESI and selected “No” from the prompt about using an available online description, I was able to read out the OD from the device. It seems like this should be possible in either case just by trying to use the SDO Info service.</p>
+<p> </p>
+<p>/Jon</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=48696
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.08.2024 09:35:42 +00:00
+UpdatedAt=15.08.2024 09:35:45 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Engineer Questions from US Plug Fest
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>see answers below.</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div>
+<blockquote type="cite">On Thursday, August 15, 2024 at 4:35:32 AM, Jon Waters wrote:<br><br><div>
+<p>Hi,</p>
+<p> </p>
+<p>I’m currently at the Plug Fest, and when testing one of the SubDevices without having the ESI file loaded, there was a prompt in EC-Engineer:</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:6.4791in;max-height:3.3177in;width:622px;max-height:319px;" src="/api/v1/ticket_attachment/8676/48696/202079?view=inline"></p>
+<p> </p>
+<p>What is this feature? Is it searching on the internet for an ESI file? Is that what it is doing? If so, where is it searching from?</p>
+<p>MG: It loads the information from the EEPROM (SII) and tries to create an ESI in memory.</p>
+<p> </p>
+<p>When I selected yes, it used some auto-generated ESI file, but it was missing functionality compared to when I used the actual ESI file in a later test. Specifically, the mapped process data was empty, and there was no Modules tab despite the SubDevice using MDP.</p>
+<p>MG: MDP information is available in EEPROM. It just loads the PDOs. They should be available on PDO tab.</p>
+<p> </p>
+<p>Another question:</p>
+<p> </p>
+<p>When I used the auto-generated ESI file and then went to Diagnosis mode, I was not able to read out the OD from the SubDevice (and there was no option to read the OD from ESI, but that seemed expected behavior considering it was using an auto-generated ESI).</p>
+<p>MG. Correct. CoE OD info is also not available in EEPROM. So it is also missing in the generated ESI. In DiagMode "Description from ESI" should be disabled. If slave supports "SDO Info", "Description from slave" should be enabled.</p>
+<p> </p>
+<p>Why was it not possible to read the OD from the device when using the auto-generated ESI? Conversely, when I started without the ESI and selected “No” from the prompt about using an available online description, I was able to read out the OD from the device. It seems like this should be possible in either case just by trying to use the SDO Info service.</p>
+<p>MG: The information if slave has "SDO Info" will be also loaded from EEPROM info. In DiagMode, we use also the Master API to check if slave has "SDO Info" or not.</p>
+<p><br></p>
+<p>If you think there is a bug on loaded ESI data from EEPROM you can upload the EEPROM from slave and send me the file:</p>
+<p><br></p>
+</div>
+</blockquote>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/8676/48696/202080?view=inline"><br><blockquote type="cite">
+<div>
+<p> </p>
+<p>/Jon</p>
+</div>
+<br>
+</blockquote>
+</div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=48777
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.08.2024 16:19:44 +00:00
+UpdatedAt=19.08.2024 16:19:44 +00:00
+
+### ARTICLE02_SUBJECT
+Re: EC-Engineer Questions from US Plug Fest [Ticket#708676]
+
+### ARTICLE02_BODY
+Hi Martin,<div> </div><div>Thanks for your help and clarification here.<br><div>
+<br>/Jon </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Aug 15, 2024, at 5:35 AM, Martin Gaenzer via EC-Support &lt;ecsupport@acontis.com&gt; wrote:</div>
+<br><div>Hi,<div> </div>
+<div>see answers below.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite">On Thursday, August 15, 2024 at 4:35:32 AM, Jon Waters wrote:<br><br><div>
+<div>Hi,</div>
+<p> </p>
+<div>I’m currently at the Plug Fest, and when testing one of the SubDevices without having the ESI file loaded, there was a prompt in EC-Engineer:</div>
+<p> </p>
+<div><img style="max-width:100%;max-width: 100%;width: 622px;max-height: 319px;" alt="Mail Attachment.png" src="/api/v1/ticket_attachment/8676/48777/202348?view=inline"></div>
+<p> </p>
+<div>What is this feature? Is it searching on the internet for an ESI file? Is that what it is doing? If so, where is it searching from?</div>
+<div>MG: It loads the information from the EEPROM (SII) and tries to create an ESI in memory.</div>
+<p> </p>
+<div>When I selected yes, it used some auto-generated ESI file, but it was missing functionality compared to when I used the actual ESI file in a later test. Specifically, the mapped process data was empty, and there was no Modules tab despite the SubDevice using MDP.</div>
+<div>MG: MDP information is available in EEPROM. It just loads the PDOs. They should be available on PDO tab.</div>
+<p> </p>
+<div>Another question:</div>
+<p> </p>
+<div>When I used the auto-generated ESI file and then went to Diagnosis mode, I was not able to read out the OD from the SubDevice (and there was no option to read the OD from ESI, but that seemed expected behavior considering it was using an auto-generated ESI).</div>
+<div>MG. Correct. CoE OD info is also not available in EEPROM. So it is also missing in the generated ESI. In DiagMode "Description from ESI" should be disabled. If slave supports "SDO Info", "Description from slave" should be enabled.</div>
+<p> </p>
+<div>Why was it not possible to read the OD from the device when using the auto-generated ESI? Conversely, when I started without the ESI and selected “No” from the prompt about using an available online description, I was able to read out the OD from the device. It seems like this should be possible in either case just by trying to use the SDO Info service.</div>
+<div>MG: The information if slave has "SDO Info" will be also loaded from EEPROM info. In DiagMode, we use also the Master API to check if slave has "SDO Info" or not.</div>
+<div> </div>
+<div>If you think there is a bug on loaded ESI data from EEPROM you can upload the EEPROM from slave and send me the file:</div>
+<div> </div>
+</div>
+</blockquote>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" alt="Mail Attachment.jpeg" src="/api/v1/ticket_attachment/8676/48777/202349?view=inline"><br><blockquote type="cite"><div>
+<p> </p>
+<div>/Jon</div>
+</div></blockquote>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>

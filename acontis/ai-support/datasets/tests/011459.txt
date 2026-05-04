@@ -1,0 +1,133 @@
+### HEADER
+Id=11459
+Link=http://at-zammad/#ticket/zoom/11459
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Demaurex (ID=692, Number=0, Country=CH)
+Commission=Demaurex, Gemini (ID=773, Number=773)
+Number=7011459
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=jean-marc.herve@demaurex.com (ID=1887, FirstName=Herve, LastName=Jean-Marc)
+CreatedBy=jean-marc.herve@demaurex.com (ID=1887, FirstName=Herve, LastName=Jean-Marc)
+Type=
+TimeUnit=
+CreatedAt=23.09.2025 09:04:42 +00:00
+UpdatedAt=06.10.2025 06:08:04 +00:00
+CloseAt=06.10.2025 06:08:04 +00:00
+ArticlesCount=2
+
+### TITLE
+Ec-Engineer EL6633-0010
+
+### ARTICLE00_HEADER
+Id=66222
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.09.2025 09:04:42 +00:00
+UpdatedAt=23.09.2025 09:04:46 +00:00
+
+### ARTICLE00_SUBJECT
+Ec-Engineer EL6633-0010
+
+### ARTICLE00_BODY
+<div>
+<p>Hello Support,</p>
+<p> </p>
+<p><span lang="EN-US">I hope you are good.</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">I have a question about the end of life of the EL6631-0010 module.</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">In Ec-Engineer I have this menu actually : </span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:10.0916in;max-height:4.6in;" src="/api/v1/ticket_attachment/11459/66222/276142?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">But the new module EL6633-0010 didn’t have it.</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Did you plan in your roadmap to implement this new module ? If yes when ?</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Otherwise, I will find a bypass using twincat like the EL6652-0010.</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Thank you for your answer.</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Meilleures salutations / Best regards</span></p>
+<p><b><span>Jean-Marc HERVE<br>
+</span></b>Software Engineer</p>
+<p><b><span>DEMAUREX SA<br>
+</span></b><span>Route de la Venoge 1<br> CH-1302 Vufflens-la-Ville<br> Direct phone: +41 21 633 55 19<br> Mobile phone: +41 79 516 77 97</span></p>
+<p>E-Mail: jean-marc.herve@demaurex.com</p>
+<p> </p>
+</div><p><a href="https://disclaimer.rotzinger.ch/DMX/Banner_DMX.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_DMX.html" target="_blank"></a> <a href="https://disclaimer.rotzinger.ch/DMX/Banner_2.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_2.html" target="_blank"></a> <br>
+<br>
+<a href="https://disclaimer.rotzinger.ch/DMX/Banner_3.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_3.html" target="_blank"></a> <a href="https://disclaimer.rotzinger.ch/DMX/Banner_4.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_4.html" target="_blank"></a> <a href="https://disclaimer.rotzinger.ch/DMX/Banner_5.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_5.html" target="_blank"></a></p><p><span>******************************HINWEIS-DISCLAIMER***************************<br> Diese E-Mail ist nur für die als Empfänger genannten Personen oder Gesellschaften bestimmt. Ist diese E-Mail nicht an Sie adressiert, bitten wir Sie, uns zu informieren und die E-Mail zu löschen. Der E-Mail-Verkehr ist nicht geschützt vor Einblick und Veränderungen durch Dritte. Deshalb lehnen wir jegliche Haftung für Schäden ab, die aus der Übermittlung von E-Mails entstehen können. Wenn Sie diese Art von Kommunikation nicht mehr wünschen, ersuchen wir Sie um entsprechende Mitteilung.<br>
+<br> This e-mail is exclusively destined for the mentioned recipient or company. If this e-mail is not addressed to you, please be so kind to inform us about it and delete the mail. The communication via e-mail is not protected from insights and fraudulent manipulation of a third party. Therefore, we disclaim any kind of liability for the contained information. If you dislike this possibility of communication, please be so kind to tell us. </span></p><p> </p>
+
+### ARTICLE01_HEADER
+Id=66230
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.09.2025 12:10:39 +00:00
+UpdatedAt=23.09.2025 12:10:42 +00:00
+
+### ARTICLE01_SUBJECT
+Ec-Engineer EL6633-0010
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>it is already implemented in version 4.1.0 and higher. It is just not officially released yet. I think it will come in the middle of october. </div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, September 23, 2025 at 11:04:42 AM, Herve Jean-Marc wrote:<br><br><div>
+<p>Hello Support,</p>
+<p> </p>
+<p><span lang="EN-US">I hope you are good.</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">I have a question about the end of life of the EL6631-0010 module.</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">In Ec-Engineer I have this menu actually : </span></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:10.0916in;max-height:4.6in;" src="/api/v1/ticket_attachment/11459/66230/276174?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">But the new module EL6633-0010 didn’t have it.</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Did you plan in your roadmap to implement this new module ? If yes when ?</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Otherwise, I will find a bypass using twincat like the EL6652-0010.</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Thank you for your answer.</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Meilleures salutations / Best regards</span></p>
+<p><b><span>Jean-Marc HERVE<br>
+</span></b>Software Engineer</p>
+<p><b><span>DEMAUREX SA<br>
+</span></b><span>Route de la Venoge 1<br> CH-1302 Vufflens-la-Ville<br> Direct phone: +41 21 633 55 19<br> Mobile phone: +41 79 516 77 97</span></p>
+<p>E-Mail: jean-marc.herve@demaurex.com</p>
+<p> </p>
+</div>
+<p><a href="https://disclaimer.rotzinger.ch/DMX/Banner_DMX.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_DMX.html" target="_blank"></a> <a href="https://disclaimer.rotzinger.ch/DMX/Banner_2.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_2.html" target="_blank"></a> <br>
+<br>
+<a href="https://disclaimer.rotzinger.ch/DMX/Banner_3.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_3.html" target="_blank"></a> <a href="https://disclaimer.rotzinger.ch/DMX/Banner_4.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_4.html" target="_blank"></a> <a href="https://disclaimer.rotzinger.ch/DMX/Banner_5.html" rel="nofollow noreferrer noopener" title="https://disclaimer.rotzinger.ch/DMX/Banner_5.html" target="_blank"></a></p>
+<p><span>******************************HINWEIS-DISCLAIMER***************************<br> Diese E-Mail ist nur für die als Empfänger genannten Personen oder Gesellschaften bestimmt. Ist diese E-Mail nicht an Sie adressiert, bitten wir Sie, uns zu informieren und die E-Mail zu löschen. Der E-Mail-Verkehr ist nicht geschützt vor Einblick und Veränderungen durch Dritte. Deshalb lehnen wir jegliche Haftung für Schäden ab, die aus der Übermittlung von E-Mails entstehen können. Wenn Sie diese Art von Kommunikation nicht mehr wünschen, ersuchen wir Sie um entsprechende Mitteilung.<br>
+<br> This e-mail is exclusively destined for the mentioned recipient or company. If this e-mail is not addressed to you, please be so kind to inform us about it and delete the mail. The communication via e-mail is not protected from insights and fraudulent manipulation of a third party. Therefore, we disclaim any kind of liability for the contained information. If you dislike this possibility of communication, please be so kind to tell us. </span></p>
+<p> </p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

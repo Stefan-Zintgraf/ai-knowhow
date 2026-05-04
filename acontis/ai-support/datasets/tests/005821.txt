@@ -1,0 +1,143 @@
+### HEADER
+Id=5821
+Link=http://at-zammad/#ticket/zoom/5821
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Agiliad Technologies Limited (ID=188, Number=40200, Country=IN)
+Commission=Omron Automation Americas, PPMAC (ID=562, Number=562)
+Number=705821
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=abhishek.gupta@agiliad.com (ID=1686, FirstName=Abhishek, LastName=Gupta)
+CreatedBy=abhishek.gupta@agiliad.com (ID=1686, FirstName=Abhishek, LastName=Gupta)
+Type=
+TimeUnit=
+CreatedAt=26.06.2023 10:49:49 +00:00
+UpdatedAt=09.09.2025 12:26:02 +00:00
+CloseAt=30.06.2023 06:04:00 +00:00
+ArticlesCount=2
+
+### TITLE
+Accontis EtherCAT Backwards Compatibility Feature request
+
+### ARTICLE00_HEADER
+Id=31086
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.06.2023 10:49:49 +00:00
+UpdatedAt=26.06.2023 10:49:49 +00:00
+
+### ARTICLE00_SUBJECT
+Accontis EtherCAT Backwards Compatibility Feature request
+
+### ARTICLE00_BODY
+<div dir="ltr">
+<div>
+<p>Hi Martin,</p>
+</div>
+<div> </div>
+<div>I hope you are doing well.<br>
+</div>
+<div> </div>
+<div>We are working on backward compatibility features. I was stuck at a point to downgrade the EtherCAT(EthercatConfig.ecc file). Could you please guide me or let me know how we can downgrade the Ethercat 3.0.13 to 2.9.15 or lower version?</div>
+<div> </div>
+<div>Thanks &amp; Regards,</div>
+<div>Abhishek gupta</div>
+<br><div dir="ltr"><div dir="ltr">
+<div style="color:rgb(34,34,34);"> <br>
+</div>
+<div style="color:rgb(34,34,34);">Agiliad Technologies Private Ltd.<br>
+</div>
+<div style="color:rgb(34,34,34);">
+<div>
+<b>Address:</b> Godrej Castlemaine, 1st floor,</div>
+<div>Next to Ruby Hall Clinic,<br>
+</div>
+<div>42 Sassoon road, Pune -01<br>
+</div>
+</div>
+<div style="color:rgb(34,34,34);">
+<b>Mobile:</b> +91 9931944490</div>
+<div style="color:rgb(34,34,34);">
+<b><span lang="EN-US">Email:</span></b><span lang="EN-US"> </span><span lang="EN-US" style="color:rgb(0,32,96);"><a href="mailto:abhishek.gupta@agiliad.com"><span style="color:rgb(0,32,96);">abhishek.gupta@agiliad.com</span></a></span>
+<br>
+</div>
+</div></div>
+</div><span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------- <br><u><b>Disclaimer:</b></u> This email message including any attachments is confidential, and may be privileged and proprietary to Agiliad. If you are not the intended recipient, please notify us immediately by replying to this message and destroy all copies of this message including any attachments. You are NOT authorized to read, print, retain, copy, disseminate, distribute, or use this message or any part thereof. Thank you. <br>------------------------------------------------------------------------------------------------------------------------
+
+### ARTICLE01_HEADER
+Id=31094
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.06.2023 12:38:58 +00:00
+UpdatedAt=26.06.2023 12:38:59 +00:00
+
+### ARTICLE01_SUBJECT
+Accontis EtherCAT Backwards Compatibility Feature request
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>a downgrade of the ECC file is not supported. This is by design to more flexible in future.</div><div>
+<span>If our customer upgrades to a newer version, we recommend that he should upgrade all of his clients.</span><br>
+</div><div><br></div><div>Why do you think that you need this?</div><div><br></div><div>Is it only one ECC file? You can send it to me, I can try to upgrade it manually if possible. This is sometimes possible, because an ECC file is currently  a compressed (.gz) XML file.  If you want you can rename it into ".gz" und unpack it e.g. with 7-Zip for testing.</div><div><br></div><div>
+<span>Best Regards,</span><br>
+</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, June 26, 2023 at 12:49:49 PM, Abhishek Gupta wrote:<br><br><div dir="ltr">
+<div>
+<p>Hi Martin,</p>
+</div>
+<div> </div>
+<div>I hope you are doing well.<br>
+</div>
+<div> </div>
+<div>We are working on backward compatibility features. I was stuck at a point to downgrade the EtherCAT(EthercatConfig.ecc file). Could you please guide me or let me know how we can downgrade the Ethercat 3.0.13 to 2.9.15 or lower version?</div>
+<div> </div>
+<div>Thanks &amp; Regards,</div>
+<div>Abhishek gupta</div>
+<br><div dir="ltr"><div dir="ltr">
+<div style="color:rgb(34,34,34);"> <br>
+</div>
+<div style="color:rgb(34,34,34);">Agiliad Technologies Private Ltd.<br>
+</div>
+<div style="color:rgb(34,34,34);">
+<div>
+<b>Address:</b> Godrej Castlemaine, 1st floor,</div>
+<div>Next to Ruby Hall Clinic,<br>
+</div>
+<div>42 Sassoon road, Pune -01<br>
+</div>
+</div>
+<div style="color:rgb(34,34,34);">
+<b>Mobile:</b> +91 9931944490</div>
+<div style="color:rgb(34,34,34);">
+<b><span lang="EN-US">Email:</span></b><span lang="EN-US"> </span><span lang="EN-US" style="color:rgb(0,32,96);"><a href="mailto:abhishek.gupta@agiliad.com"><span style="color:rgb(0,32,96);">abhishek.gupta@agiliad.com</span></a></span>
+<br>
+</div>
+</div></div>
+</div>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------- <br><u><b>Disclaimer:</b></u> This email message including any attachments is confidential, and may be privileged and proprietary to Agiliad. If you are not the intended recipient, please notify us immediately by replying to this message and destroy all copies of this message including any attachments. You are NOT authorized to read, print, retain, copy, disseminate, distribute, or use this message or any part thereof. Thank you. <br>------------------------------------------------------------------------------------------------------------------------<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

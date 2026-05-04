@@ -1,0 +1,294 @@
+### HEADER
+Id=186
+Link=http://at-zammad/#ticket/zoom/186
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Fuji electric, PLC (ID=256, Number=256)
+Number=700186
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=12.03.2021 00:41:26 +00:00
+UpdatedAt=12.12.2023 13:52:33 +00:00
+CloseAt=19.03.2021 07:09:49 +00:00
+ArticlesCount=6
+
+### TITLE
+Question about EC-Master(MACNICA)
+
+### ARTICLE00_HEADER
+Id=774
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=12.03.2021 00:41:26 +00:00
+UpdatedAt=12.03.2021 00:41:29 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(MACNICA)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(MACNICA)
+
+Testing environment:
+   HW : TMDXIDK5728
+   SW : am57xx-evm-linux-rt-04.02.00.09
+
+"EcMasterDemo" execution operation:
+   insmod /home/root/atemsys.ko
+   cd /home/root/EC-Master-V3.1-Linux-ARM_32Bit-Eval/Bin/Linux/armv6-vfp-eabihf
+   ./EcMasterDemo -f /home/root/MasterENI.xml -cpsw 1 1 0 m am572x-idk
+
+Attach the log.
+
+What is the reason why ec-master does not work?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=786
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=12.03.2021 07:15:38 +00:00
+UpdatedAt=12.03.2021 07:15:38 +00:00
+
+### ARTICLE01_BODY
+Bitte noch nach Endkunde / Komission fragen
+
+### ARTICLE02_HEADER
+Id=793
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.03.2021 08:03:46 +00:00
+UpdatedAt=12.03.2021 08:03:49 +00:00
+
+### ARTICLE02_SUBJECT
+Question about EC-Master(MACNICA)
+
+### ARTICLE02_BODY
+Hi Takuya,<div>The Linux CPSW driver is still running.</div><div>They need to disable the driver (boot without the driver)</div><div>I recommend to change compatible attribute of the cpsw node in the device tree to our atemsys:</div><div><div>compatible = "atemsys";</div></div><div><br></div><div>For which costumer is this?</div><div><br></div><div>Best Regards</div><div>Daniel</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Daniel Schmid </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>Fax: +49 (751) 56030-31</div>
+<div>eMail: ecsupport@acontis.com</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, March 12, 2021, 1:41:26 AM, Takuya Fujikawa(acontis) wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(MACNICA)</div>
+<div><br></div>
+<div>Testing environment:</div>
+<div>   HW : TMDXIDK5728</div>
+<div>   SW : am57xx-evm-linux-rt-04.02.00.09</div>
+<div><br></div>
+<div>"EcMasterDemo" execution operation:</div>
+<div>   insmod /home/root/atemsys.ko</div>
+<div>   cd /home/root/EC-Master-V3.1-Linux-ARM_32Bit-Eval/Bin/Linux/armv6-vfp-eabihf</div>
+<div>   ./EcMasterDemo -f /home/root/MasterENI.xml -cpsw 1 1 0 m am572x-idk</div>
+<div><br></div>
+<div>Attach the log.</div>
+<div><br></div>
+<div>What is the reason why ec-master does not work?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=913
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=16.03.2021 03:21:07 +00:00
+UpdatedAt=16.03.2021 03:21:07 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(MACNICA)
+
+### ARTICLE03_BODY
+Dear EtherCAT Support
+
+Question About EC-Master(Fuji Electric)
+
+Q159. Customer used the license key provided by you.
+       However, EC_E_LICENSE_MISSING is returned.
+       They use PRU, so they don't have a MAC address.
+       Please tell me what to do.
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE04_HEADER
+Id=956
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.03.2021 12:21:27 +00:00
+UpdatedAt=16.03.2021 12:21:30 +00:00
+
+### ARTICLE04_SUBJECT
+Question about EC-Master(MACNICA)
+
+### ARTICLE04_BODY
+Hi,<div>The EC-Master generates a MAC address by some SoC properties.</div><div>The  EcMasterDemo prints this MAC address.</div><div><br></div><div><br></div><div>Best Regards</div><div>Daniel Schmid</div><div>
+<div data-signature="true" data-signature-id="2">
+<div><span><br></span></div>
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Daniel Schmid </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, March 16, 2021, 4:21:07 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question About EC-Master(Fuji Electric)</div>
+<div><br></div>
+<div>Q159. Customer used the license key provided by you.</div>
+<div>       However, EC_E_LICENSE_MISSING is returned.</div>
+<div>       They use PRU, so they don't have a MAC address.</div>
+<div>       Please tell me what to do.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE05_HEADER
+Id=991
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=17.03.2021 03:30:09 +00:00
+UpdatedAt=17.03.2021 03:30:09 +00:00
+
+### ARTICLE05_SUBJECT
+Re: Question about EC-Master(MACNICA) [Ticket#700186]
+
+### ARTICLE05_BODY
+Dear Daniel san
+
+Their problem has been resolved.
+Thank you.
+
+ > For which costumer is this?
+
+This is a demo development for their promotion.
+I think Stefan knows this.
+
+Best regards,
+Takuya Fujikawa
+
+On 2021/03/12 17:03, Daniel Schmid via EC-Support wrote:
+> Hi Takuya,
+> The Linux CPSW driver is still running.
+> They need to disable the driver (boot without the driver)
+> I recommend to change compatible attribute of the cpsw node in the device tree to our atemsys:
+> compatible = "atemsys";
+> 
+> For which costumer is this?
+> 
+> Best Regards
+> Daniel
+> 
+> ____________________________________________________________________________
+> Daniel Schmid
+> EtherCAT Support
+> acontis technologies GmbH
+> Address: Gartenstraße 46, D-88212 Ravensburg, Germany
+> Http: https://www.acontis.com <https://www.acontis.com>
+> Phone: +49 (751) 56030-30
+> Fax: +49 (751) 56030-31
+> eMail: ecsupport@acontis.com
+> ----------------------------------------------------------------------------
+> Subscribe to our newsletter and stay updated on the latest developments and upcoming events.
+> https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> ----------------------------------------------------------------------------
+> Eingetragene Rechtsform: GmbH
+> Sitz der Gesellschaft: Ravensburg
+> Sitz und Registergericht: Amtsgericht Ulm, HRB 552320
+> Geschäftsführung: Christoph Widmann, Stefan Zintgraf
+> 
+> 
+>> On Friday, March 12, 2021, 1:41:26 AM, Takuya Fujikawa(acontis) wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Master(MACNICA)
+>>
+>> Testing environment:
+>>   HW : TMDXIDK5728
+>>   SW : am57xx-evm-linux-rt-04.02.00.09
+>>
+>> "EcMasterDemo" execution operation:
+>>   insmod /home/root/atemsys.ko
+>>   cd /home/root/EC-Master-V3.1-Linux-ARM_32Bit-Eval/Bin/Linux/armv6-vfp-eabihf
+>>   ./EcMasterDemo -f /home/root/MasterENI.xml -cpsw 1 1 0 m am572x-idk
+>>
+>> Attach the log.
+>>
+>> What is the reason why ec-master does not work?
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+

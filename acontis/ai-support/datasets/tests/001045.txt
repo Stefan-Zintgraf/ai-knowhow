@@ -1,0 +1,202 @@
+### HEADER
+Id=1045
+Link=http://at-zammad/#ticket/zoom/1045
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=MTS Systems (ID=374, Number=41001, Country=US)
+Commission=MTS Systems, Quantum (ID=524, Number=524)
+Number=701045
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=bryan.newstrom@mts.com (ID=516, FirstName=Bryan, LastName=Newstrom)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=15.07.2021 15:53:56 +00:00
+UpdatedAt=15.07.2021 18:44:54 +00:00
+CloseAt=15.07.2021 18:43:56 +00:00
+ArticlesCount=3
+
+### TITLE
+Fwd: ethercat cycle and lost frames
+
+### ARTICLE00_HEADER
+Id=5783
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.07.2021 15:53:56 +00:00
+UpdatedAt=15.07.2021 15:53:56 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: ethercat cycle and lost frames
+
+### ARTICLE00_BODY
+<div>Hi,</div><div> </div><div>What do you think about this from MTS? This is related to the other questions about frame loss and cycle time.<br>
+</div><br>/Jon<br><br><div>
+<strong> From: </strong> "Newstrom, Bryan" &lt;Bryan.Newstrom@mts.com&gt; <br>
+<strong> To: </strong> Jon Waters &lt;j.waters@acontis.com&gt; <br>
+<strong> Sent: </strong> 7/15/2021 11:27 AM <br>
+<strong> Subject: </strong> ethercat cycle and lost frames <br><br><blockquote><div>
+<div>
+<p>Hi Jon,</p>
+<p> </p>
+<p>I am trying to figure out if I am doing something wrong or if this is could be expected behavior. I am trying to understand the ethercat cycle (I have seen it named as such in the documentation) – running the ecatExecJobs.</p>
+<p> </p>
+<p>The demos and documentation do things like this:</p>
+<ol type="1">
+<li>Wait for clock tic</li>
+<li>Run eUsrJob_ProcessAllRxFrames</li>
+<li>Do client stuff/manipulate the process image</li>
+<li>Run eUsrJob_SendAllCycFrames</li>
+<li>Run eUsrJob_MasterTimer</li>
+<li>Run eUsrJob_SendAcycFrames</li>
+<li>Goto 1</li>
+</ol>
+<p> </p>
+<p>I have followed this pattern and put all of our processing into step 3. Over all step 3 looks like this: extract new values from process image, update control loops, do whatever else needs doing, and update values in process image.</p>
+<p> </p>
+<p>For my testing I have inserted busy waits between steps 1 and 2, as step 3, and between steps 6 and 7. I can set the wait times at any time while running. So I can simulate any amount of cpu load at any of these points.</p>
+<p> </p>
+<p>What I am seeing is that as some point step 3 becomes too long and I start get notification of lost frames. I am getting these notifications at times far less than the complete period. I can easily fill up the total period by adding more work outside of the ethercat cycle (between steps 1&amp;2 or 6&amp;7) without any problem.</p>
+<p> </p>
+<p>Here is some data at different rates(eni attached):</p>
+<table style=" border-collapse: collapse; border-spacing: 0px;" border="0">
+<tbody>
+<tr>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<br>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<br>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">Idle, at OP</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">blow up</span>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">Rate</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">Period(uSec)</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">Client(uSec)</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">Client (uSec)</span>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">5000</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">200</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">15</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">100</span>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">6000</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">166.6666667</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">15</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">60</span>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">7000</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">142.8571429</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">15</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">40</span>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">8000</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">125</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">15</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">20</span>
+</td>
+</tr>
+<tr>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">9000</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">111.1111111</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">15</span>
+</td>
+<td style="padding:0in 5.4pt 0in 5.4pt;" valign="bottom">
+<span style="color:black;">4</span>
+</td>
+</tr>
+</tbody>
+</table>
+<p>“Idle, at OP” column is the total processing time(client and Jobs) with no extra busy wait time with the network at OP mode.</p>
+<p>“Blow up” columns is the amount of busy wait added to step 3 in the cycle when I get swamped by lost frame notifications (total processing time would be sum of the columns)</p>
+<p>As you can see the amount of time I can add to step 3 is far below the available time left in the period.</p>
+<p> </p>
+<p>Am I handing step 3 correctly?</p>
+<p>Should step 3 be minimized and we do our processing outside of this cycle?</p>
+<p> </p>
+<p>Any help would be much appreciated.</p>
+<p><br> Thanks</p>
+<p>Bryan</p>
+<p> </p>
+</div>
+</div></blockquote>
+</div>
+
+### ARTICLE01_HEADER
+Id=5785
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=15.07.2021 16:47:54 +00:00
+UpdatedAt=15.07.2021 16:47:54 +00:00
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>increasing cpu load at step3 moves <span>eUsrJob_SendAllCycFrames. This job must be called before the critical limit is reached. This limit is the HW delay + communication time it can be determine by using </span><a href="https://developer.acontis.com/ethercat-cycle-time-calculator.html" title="https://developer.acontis.com/ethercat-cycle-time-calculator.html" rel="nofollow noreferrer noopener" target="_blank">https://developer.acontis.com/ethercat-cycle-time-calculator.html</a>.</div><div><br></div><div>Bryan can check if the information match.</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div><br></div>
+
+### ARTICLE02_HEADER
+Id=5786
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=15.07.2021 18:43:57 +00:00
+UpdatedAt=15.07.2021 18:43:57 +00:00
+
+### ARTICLE02_BODY
+<div>Thanks Cyril, I was going to mention this communication time delay to him and point him to the calculator but wanted to make sure I wasn't overlooking something else. In fact, based on his ENI file (1 MII slave, 62 Ebus, 582 bytes in process data), I calculated almost 85us fixed communication time. When you add this to the 15us he calculates for the stack delays, and the additional CPU load time he is adding at step 3, you arrive almost exactly at the network cycle time in each test :).<br>
+</div>

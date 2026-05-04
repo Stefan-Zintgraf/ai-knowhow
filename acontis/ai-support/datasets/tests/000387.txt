@@ -1,0 +1,146 @@
+### HEADER
+Id=387
+Link=http://at-zammad/#ticket/zoom/387
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Sunita Engineering Corporation (ID=430, Number=0, Country=IND)
+Commission=Sunita, Unknown (ID=506, Number=506)
+Number=700387
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=rnk@secengraving.com (ID=263, FirstName=Rohan, LastName=Kelkar)
+CreatedBy=rnk@secengraving.com (ID=263, FirstName=Rohan, LastName=Kelkar)
+Type=
+TimeUnit=
+CreatedAt=10.04.2021 06:22:55 +00:00
+UpdatedAt=16.04.2021 09:00:21 +00:00
+CloseAt=16.04.2021 09:00:21 +00:00
+ArticlesCount=2
+
+### TITLE
+ESI File not found
+
+### ARTICLE00_HEADER
+Id=1956
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.04.2021 06:22:56 +00:00
+UpdatedAt=10.04.2021 06:22:56 +00:00
+
+### ARTICLE00_SUBJECT
+ESI File not found
+
+### ARTICLE00_BODY
+<div dir="ltr">Hello<div> </div>
+<div>I am Rohan Kelkar and we are currently using EC-Engineer to run the ethercat master-slave demo from TI. We are trying to run the demo as described in TI's tutorial.</div>
+<div> </div>
+<div>Link : <a href="https://www.youtube.com/watch?v=MyS0HNAh-eM&amp;t=311s" rel="nofollow noreferrer noopener" target="_blank">https://www.youtube.com/watch?v=MyS0HNAh-eM&amp;t=311s</a>
+</div>
+<div> </div>
+<div>As per the procedure we have prepared a bootable SD card and have installed it in the AM3359 IDK board. This board is connected to the PC running EC-Engineer using an ethernet cable. In EC-Engineer we have selected online configuration. When we select the correct network adapter and click on the "select" button to scan the network we get an error message saying 'ESI not found for slave 1001'.</div>
+<div> </div>
+<div>
+<img src="/api/v1/ticket_attachment/387/1956/5920?view=inline" alt="ESI not found.png" style="max-width:100%;width:478px;max-height:261px;"><br>
+</div>
+<div> </div>
+<div>I believe we have followed the procedure correctly to prepare the bootable SD card to run the slave demo and therefore are not able to pinpoint the cause of the error message. What can be the reason for this?</div>
+<div> </div>
+<div>Please let us know.</div>
+<div> </div>
+<div>Also do let us know if you need any further information from our side.</div>
+<div> </div>
+<div>Thank you.<br><div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr">
+<div>Rohan Kelkar</div>Business Development Manager<div> </div>
+<div>
+<div>Sunita Engineering Corporation</div>
+<div> </div>
+<div>Address : D-3, MIDC, Ambad, Nashik - 422010, Maharashtra, India</div>
+<div>Phone - +91-7722048007</div>
+<div>Website - <a href="https://www.secengraving.com" rel="nofollow noreferrer noopener" target="_blank">https://www.secengraving.com</a>
+</div>
+<div>Email - rnk@secengraving.com</div>
+</div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=1967
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.04.2021 05:22:52 +00:00
+UpdatedAt=12.04.2021 05:22:57 +00:00
+
+### ARTICLE01_SUBJECT
+ESI File not found
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>did you add the ESI file to the ESI Engineer? If yes, please compare the Vendor ID, Product Code and Revision number to the values in the ESI file.</div><div><br></div><div>Best regards,</div><div>Kai Feifel</div><div><br></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Saturday, April 10, 2021, 8:22:56 AM, Rohan Kelkar wrote:<br><br><div dir="ltr">Hello<div> </div>
+<div>I am Rohan Kelkar and we are currently using EC-Engineer to run the ethercat master-slave demo from TI. We are trying to run the demo as described in TI's tutorial.</div>
+<div> </div>
+<div>Link : <a href="https://www.youtube.com/watch?v=MyS0HNAh-eM&amp;t=311s" rel="nofollow noreferrer noopener" target="_blank">https://www.youtube.com/watch?v=MyS0HNAh-eM&amp;t=311s</a>
+</div>
+<div> </div>
+<div>As per the procedure we have prepared a bootable SD card and have installed it in the AM3359 IDK board. This board is connected to the PC running EC-Engineer using an ethernet cable. In EC-Engineer we have selected online configuration. When we select the correct network adapter and click on the "select" button to scan the network we get an error message saying 'ESI not found for slave 1001'.</div>
+<div> </div>
+<div>
+<img src="/api/v1/ticket_attachment/387/1967/5938?view=inline" alt="ESI not found.png" style="max-width:100%;max-width:100%;width:478px;max-height:261px;"><br>
+</div>
+<div> </div>
+<div>I believe we have followed the procedure correctly to prepare the bootable SD card to run the slave demo and therefore are not able to pinpoint the cause of the error message. What can be the reason for this?</div>
+<div> </div>
+<div>Please let us know.</div>
+<div> </div>
+<div>Also do let us know if you need any further information from our side.</div>
+<div> </div>
+<div>Thank you.<br><div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr">
+<div>Rohan Kelkar</div>Business Development Manager<div> </div>
+<div>
+<div>Sunita Engineering Corporation</div>
+<div> </div>
+<div>Address : D-3, MIDC, Ambad, Nashik - 422010, Maharashtra, India</div>
+<div>Phone - +91-7722048007</div>
+<div>Website - <a href="https://www.secengraving.com" rel="nofollow noreferrer noopener" target="_blank">https://www.secengraving.com</a>
+</div>
+<div>Email - rnk@secengraving.com</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,144 @@
+### HEADER
+Id=8440
+Link=http://at-zammad/#ticket/zoom/8440
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=cpc Chieftek (ID=590, Number=50234, Country=TW)
+Commission=cpc Chieftek, cpcStudio (ID=669, Number=669)
+Number=708440
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=lm003@mail2.chieftek.com (ID=1237, FirstName=Kuanghan, LastName=)
+CreatedBy=lm003@mail2.chieftek.com (ID=1237, FirstName=Kuanghan, LastName=)
+Type=
+TimeUnit=
+CreatedAt=08.07.2024 10:25:35 +00:00
+UpdatedAt=11.07.2024 06:13:13 +00:00
+CloseAt=11.07.2024 06:13:13 +00:00
+ArticlesCount=2
+
+### TITLE
+[Chieftek] EC-Engineer sdk could enable/disable line crossed detection?
+
+### ARTICLE00_HEADER
+Id=47052
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.07.2024 10:25:35 +00:00
+UpdatedAt=08.07.2024 10:25:39 +00:00
+
+### ARTICLE00_SUBJECT
+[Chieftek] EC-Engineer sdk could enable/disable line crossed detection?
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi,<div>Could we use EC-Engineer sdk to enable/disable line crossed detection during editor?</div>
+<div>Which is about EC-Master EC_IOCTL_SB_SET_RED_ENHANCED_LINE_CROSSED_DETECTION_ENABLED.</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan<span class="js-signatureMarker"></span><br>-- <br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+</div><br>
+<div>
+<a href="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" target="_blank"></a><br>
+</div>
+
+### ARTICLE01_HEADER
+Id=47099
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.07.2024 17:07:32 +00:00
+UpdatedAt=08.07.2024 17:07:33 +00:00
+
+### ARTICLE01_SUBJECT
+[Chieftek] EC-Engineer sdk could enable/disable line crossed detection?
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>the SDK itself is able to execute "EC_IOCTRL_...", but this is currently not public (see "<span>EcMaster.IoControl")</span><span>.</span>
+</div><div><span><br></span></div><div><span>Can you explain more detailed why you need this? </span></div><div><span><br></span></div><div><span>In my opinion it is not necessary, because:</span></div><div><span>- if you want to call it for a remote master (RAS), you can simply modify your remote master</span></div><div><span>- if you want to call it for the local master, this is not recommended, because the code is tested like it is and we do not estimate that maybe some master features are missing</span></div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, July 8, 2024 at 12:25:35 PM, Kuanghan wrote:<br><br><div dir="ltr">Hi,<div>Could we use EC-Engineer sdk to enable/disable line crossed detection during editor?</div>
+<div>Which is about EC-Master EC_IOCTL_SB_SET_RED_ENHANCED_LINE_CROSSED_DETECTION_ENABLED.</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan<span class="js-signatureMarker"></span><br>-- <br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+</div>
+<br>
+<div>
+<a href="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" target="_blank"></a><br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

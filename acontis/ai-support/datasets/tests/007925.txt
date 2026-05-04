@@ -1,0 +1,152 @@
+### HEADER
+Id=7925
+Link=http://at-zammad/#ticket/zoom/7925
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bobst Mex SA (ID=14, Number=50513, Country=CH)
+Commission=Bobst, CUBE RTOS-32 (ID=15, Number=15)
+Number=707925
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=didier.moret@bobst.com (ID=61, FirstName=Moret, LastName=Didier)
+CreatedBy=didier.moret@bobst.com (ID=61, FirstName=Moret, LastName=Didier)
+Type=
+TimeUnit=
+CreatedAt=18.04.2024 17:01:22 +00:00
+UpdatedAt=25.04.2024 06:09:40 +00:00
+CloseAt=25.04.2024 06:09:40 +00:00
+ArticlesCount=2
+
+### TITLE
+problem of time with eclyzer
+
+### ARTICLE00_HEADER
+Id=43633
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.04.2024 17:01:22 +00:00
+UpdatedAt=18.04.2024 17:01:24 +00:00
+
+### ARTICLE00_SUBJECT
+problem of time with eclyzer
+
+### ARTICLE00_BODY
+<div>
+<p> </p>
+<p><span lang="EN-US">Hello,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">When I do one capture with eclyzer and I look one day after I obtain this:</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:16.2083in;max-height:10.3333in;width:1556px;max-height:992px;" src="/api/v1/ticket_attachment/7925/43633/180058?view=inline" alt="Une image contenant texte, capture d’écran, logiciel, Icône d’ordinateur
+
+Description générée automatiquement"></span><span lang="EN-US"></span></p>
+<p><b><span lang="EN-US"><p> </p></span></b></p>
+<p><b><span lang="EN-US">You can see the date of the capture and the date of the event in history log, the date hour of event in log is when I see one day after the real event. Can you correct this </span></b></p>
+<p><b><span lang="EN-US"><p> </p></span></b></p>
+<p><b><span lang="EN-US">Moret Didier</span></b><span lang="EN-US">
+</span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"> </span></p>
+<p><b><span lang="EN-US">BOBST </span></b><span lang="EN-US">
+</span></p>
+<p><span lang="EN-US">CORES, R&amp;D engineer</span></p>
+<p>Tél.: + Tél.: +41 21 547 12 09</p>
+<p> </p>
+<p>Email: <a href="mailto:Didier.Moret@bobst.com"><span style="color:blue;">Didier.Moret@bobst.com</span></a> </p>
+<p> </p>
+<p><b>Bobst Mex SA</b>
+</p>
+<p><span>PO Box, CH-1001 Lausanne<br> Tél.: +41 21 621 21 11<br> Fax: +41 21 621 20 70</span></p>
+<p><a href="http://www.bobst.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bobst.com</span></a>
+</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:1.4687in;max-height:1.4583in;width:141px;max-height:140px;" src="/api/v1/ticket_attachment/7925/43633/180059?view=inline"></p>
+<p> </p>
+</div><p><a href="https://www.bobst.com/drupa24" rel="nofollow noreferrer noopener" title="https://www.bobst.com/drupa24" target="_blank"></a></p><p><strong>Learn more and register on <a href="https://bobst.com/drupa24" rel="nofollow noreferrer noopener" target="_blank">bobst.com/drupa24</a></strong><br> <br> Visit BOBST social media channels:<br>
+<strong><a href="https://bobst.com/linkedin" rel="nofollow noreferrer noopener" title="https://bobst.com/linkedin" target="_blank">LinkedIn</a> - <a href="https://bobst.com/facebook" rel="nofollow noreferrer noopener" title="https://bobst.com/facebook" target="_blank"> Facebook</a> - </strong><a href="https://bobst.com/youtube" rel="nofollow noreferrer noopener" title="https://bobst.com/youtube" target="_blank"><strong>YouTube</strong></a></p><hr>
+<p>This message and any attachments (the message) are intended solely for the addressees and are confidential. If you receive this message in error, please delete it and immediately notify the sender. Any use not in accordance with its purpose, any dissemination, copying or disclosure, either whole or partial is prohibited without prior formal approval. The internet cannot guarantee the integrity of the message. The companies of Bobst Group do not accept any liability for data corruption, delay, interception or any modification to this message.</p><hr>
+<p> </p>
+
+### ARTICLE01_HEADER
+Id=43744
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.04.2024 12:09:07 +00:00
+UpdatedAt=22.04.2024 12:09:11 +00:00
+
+### ARTICLE01_SUBJECT
+problem of time with eclyzer
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes, you're right. It will be fixed in the next version.</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, April 18, 2024 at 7:01:22 PM, Moret Didier wrote:<br><br><div>
+<p> </p>
+<p><span lang="EN-US">Hello,</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">When I do one capture with eclyzer and I look one day after I obtain this:</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:16.2083in;max-height:10.3333in;width:1556px;max-height:992px;" src="/api/v1/ticket_attachment/7925/43744/180473?view=inline" alt="Une image contenant texte, capture d’écran, logiciel, Icône d’ordinateur
+
+Description générée automatiquement"></span><span lang="EN-US"></span></p>
+<p><b><span lang="EN-US"></span></b></p>
+<p><b> </b></p>
+<p></p>
+<p><b><span lang="EN-US">You can see the date of the capture and the date of the event in history log, the date hour of event in log is when I see one day after the real event. Can you correct this </span></b></p>
+<p><b><span lang="EN-US"></span></b></p>
+<p><b> </b></p>
+<p></p>
+<p><b><span lang="EN-US">Moret Didier</span></b><span lang="EN-US">
+</span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"> </span></p>
+<p><b><span lang="EN-US">BOBST </span></b><span lang="EN-US">
+</span></p>
+<p><span lang="EN-US">CORES, R&amp;D engineer</span></p>
+<p>Tél.: + Tél.: +41 21 547 12 09</p>
+<p> </p>
+<p>Email: <a href="mailto:Didier.Moret@bobst.com"><span style="color:blue;">Didier.Moret@bobst.com</span></a> </p>
+<p> </p>
+<p><b>Bobst Mex SA</b>
+</p>
+<p><span>PO Box, CH-1001 Lausanne<br> Tél.: +41 21 621 21 11<br> Fax: +41 21 621 20 70</span></p>
+<p><a href="http://www.bobst.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.bobst.com</span></a>
+</p>
+<p> </p>
+<p><img border="0" style="max-width:100%;max-width:100%;width:1.4687in;max-height:1.4583in;width:141px;max-height:140px;" src="/api/v1/ticket_attachment/7925/43744/180474?view=inline"></p>
+<p> </p>
+</div>
+<p><a href="https://www.bobst.com/drupa24" rel="nofollow noreferrer noopener" title="https://www.bobst.com/drupa24" target="_blank"></a></p>
+<p><strong>Learn more and register on <a href="https://bobst.com/drupa24" rel="nofollow noreferrer noopener" target="_blank">bobst.com/drupa24</a></strong><br> <br> Visit BOBST social media channels:<br>
+<strong><a href="https://bobst.com/linkedin" rel="nofollow noreferrer noopener" title="https://bobst.com/linkedin" target="_blank">LinkedIn</a> - <a href="https://bobst.com/facebook" rel="nofollow noreferrer noopener" title="https://bobst.com/facebook" target="_blank"> Facebook</a> - </strong><a href="https://bobst.com/youtube" rel="nofollow noreferrer noopener" title="https://bobst.com/youtube" target="_blank"><strong>YouTube</strong></a></p>
+<hr>
+<p>This message and any attachments (the message) are intended solely for the addressees and are confidential. If you receive this message in error, please delete it and immediately notify the sender. Any use not in accordance with its purpose, any dissemination, copying or disclosure, either whole or partial is prohibited without prior formal approval. The internet cannot guarantee the integrity of the message. The companies of Bobst Group do not accept any liability for data corruption, delay, interception or any modification to this message.</p>
+<hr>
+<p> </p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

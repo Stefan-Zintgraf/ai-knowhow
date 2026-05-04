@@ -1,0 +1,190 @@
+### HEADER
+Id=4983
+Link=http://at-zammad/#ticket/zoom/4983
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=MTS Systems (ID=374, Number=41001, Country=US)
+Commission=MTS Systems, Quantum (ID=524, Number=524)
+Number=704983
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=jim.rosenow@mts.com (ID=478, FirstName=Jim, LastName=Rosenow)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=22.02.2023 17:07:54 +00:00
+UpdatedAt=16.03.2023 07:12:18 +00:00
+CloseAt=16.03.2023 07:12:18 +00:00
+ArticlesCount=3
+
+### TITLE
+Fwd: Crash occuring in EcOs.cpp OsPlatformImplDeleteThreadHandle().
+
+### ARTICLE00_HEADER
+Id=26333
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.02.2023 17:07:54 +00:00
+UpdatedAt=22.02.2023 17:07:54 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Crash occuring in EcOs.cpp OsPlatformImplDeleteThreadHandle().
+
+### ARTICLE00_BODY
+Please see below from MTS.<br><div>
+<br>/Jon </div><div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>"Rosenow, James" &lt;jim.rosenow@mts.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Crash occuring in EcOs.cpp OsPlatformImplDeleteThreadHandle().</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>February 22, 2023 at 12:02:52 PM EST<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Cc: </b></span><span>"Ganz, Derek" &lt;derek.ganz@mts.com&gt;, "Olson, Thomas" &lt;tom.olson@mts.com&gt;, "Longstreth, Jon" &lt;Jon.Longstreth@mts.com&gt;<br></span>
+</div>
+<br><div>
+<div>Hi Jon W.,</div>
+<div><p> </p></div>
+<div>One of our developers found discrepancy between the xenomai doc and the implementation and we are getting a crash in the Acontis driver (see backtrace below). The code in EcOs.cpp should be safe if you follow the doc but the actual alchemy code does not tolerate a NULL ‘info’ pointer. I reported it to Xenomai (see attached).</div>
+<div><p> </p></div>
+<div>Please let us know if you intend to add a null check to EcOs.cpp or wait to see how Xenomai responds.</div>
+<div><p> </p></div>
+<div>Best regards,<br>Jim Rosenow</div>
+<div><p> </p></div>
+<div><p> </p></div>
+<span class="js-signatureMarker"></span><div>
+<b>From:</b> Olson, Thomas &lt;<a href="mailto:tom.olson@mts.com">tom.olson@mts.com</a>&gt; <br><b>Sent:</b> Wednesday, February 22, 2023 10:51 AM<br><b>To:</b> Rosenow, James &lt;<a href="mailto:jim.rosenow@mts.com">jim.rosenow@mts.com</a>&gt;<br><b>Subject:</b> RE: Can you send me that backtrace of the crash please?</div>
+<div><p> </p></div>
+<div>Here is the line it dies on. EcOs.cpp:::806, the pointer is not NULL.</div>
+<div><p> </p></div>
+</div>
+</blockquote>
+</div>
+
+### ARTICLE01_HEADER
+Id=26361
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.02.2023 09:01:46 +00:00
+UpdatedAt=23.02.2023 09:01:47 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: Crash occuring in EcOs.cpp OsPlatformImplDeleteThreadHandle().
+
+### ARTICLE01_BODY
+Hi Jon,<div><br></div><div>I think this should be solved by Xenomai, because actually rt_task_inquire() have support for nullpointer info structures. I found the following in the Xenomai doc:</div><div> info: The address of a structure the task information will be written to. <b>Passing NULL is valid</b>, in which case the system is only probed for existence of the specified task. </div><div> Here is a link to the documentaion of the functin in Xenomai 3 and Xenomai 2:<br>
+</div><div><div><a href="https://xenomai.org/documentation/xenomai-3/html/xeno3prm/group__alchemy__task.html#ga53bad6acf5496f8008e594954507dce8" title="https://xenomai.org/documentation/xenomai-3/html/xeno3prm/group__alchemy__task.html#ga53bad6acf5496f8008e594954507dce8" rel="nofollow noreferrer noopener" target="_blank">https://xenomai.org/documentation/xenomai-3/html/xeno3prm/group__alchemy__task.html#ga53bad6acf5496f8008e594954507dce8</a></div></div><div><div><a href="https://xenomai.org/documentation/xenomai-2.4/html/api/group__task.html#ga53bad6acf5496f8008e594954507dce8" title="https://xenomai.org/documentation/xenomai-2.4/html/api/group__task.html#ga53bad6acf5496f8008e594954507dce8" rel="nofollow noreferrer noopener" target="_blank">https://xenomai.org/documentation/xenomai-2.4/html/api/group__task.html#ga53bad6acf5496f8008e594954507dce8</a></div></div><div><br></div><div>Best Regards</div><div>Haithem Jebali</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, February 22, 2023 at 6:07:54 PM, Jon Waters wrote:<br><br>Please see below from MTS.<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>"Rosenow, James" &lt;jim.rosenow@mts.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Crash occuring in EcOs.cpp OsPlatformImplDeleteThreadHandle().</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>February 22, 2023 at 12:02:52 PM EST<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Jon Waters &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Cc: </b></span><span>"Ganz, Derek" &lt;derek.ganz@mts.com&gt;, "Olson, Thomas" &lt;tom.olson@mts.com&gt;, "Longstreth, Jon" &lt;Jon.Longstreth@mts.com&gt;<br></span>
+</div>
+<br><div>
+<div>Hi Jon W.,</div>
+<div><p> </p></div>
+<div>One of our developers found discrepancy between the xenomai doc and the implementation and we are getting a crash in the Acontis driver (see backtrace below). The code in EcOs.cpp should be safe if you follow the doc but the actual alchemy code does not tolerate a NULL ‘info’ pointer. I reported it to Xenomai (see attached).</div>
+<div><p> </p></div>
+<div>Please let us know if you intend to add a null check to EcOs.cpp or wait to see how Xenomai responds.</div>
+<div><p> </p></div>
+<div>Best regards,<br>Jim Rosenow</div>
+<div><p> </p></div>
+<div><p> </p></div>
+<span class="js-signatureMarker"></span><div>
+<b>From:</b> Olson, Thomas &lt;<a href="mailto:tom.olson@mts.com">tom.olson@mts.com</a>&gt; <br><b>Sent:</b> Wednesday, February 22, 2023 10:51 AM<br><b>To:</b> Rosenow, James &lt;<a href="mailto:jim.rosenow@mts.com">jim.rosenow@mts.com</a>&gt;<br><b>Subject:</b> RE: Can you send me that backtrace of the crash please?</div>
+<div><p> </p></div>
+<div>Here is the line it dies on. EcOs.cpp:::806, the pointer is not NULL.</div>
+<div><p> </p></div>
+</div>
+</blockquote>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=26390
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.02.2023 16:09:44 +00:00
+UpdatedAt=23.02.2023 16:13:18 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Crash occuring in EcOs.cpp OsPlatformImplDeleteThreadHandle().
+
+### ARTICLE02_BODY
+Hi Jim,<div> </div><div>I checked with our developers and we think that this should be solved by Xenomai because actually rt_task_inquire() have support for nullpointer info structures. We found the following in the Xenomai doc:</div><div> </div><div>info: The address of a structure the task information will be written to. Passing NULL is valid, in which case the system is only probed for existence of the specified task.</div><div> </div><div>Here is a link to the documentation of the function in Xenomai 3 and Xenomai 2:<br><div> </div>
+<div><a href="https://xenomai.org/documentation/xenomai-3/html/xeno3prm/group__alchemy__task.html#ga53bad6acf5496f8008e594954507dce8" rel="nofollow noreferrer noopener" target="_blank">https://xenomai.org/documentation/xenomai-3/html/xeno3prm/group__alchemy__task.html#ga53bad6acf5496f8008e594954507dce8</a></div>
+<div> </div>
+<div><a href="https://xenomai.org/documentation/xenomai-2.4/html/api/group__task.html#ga53bad6acf5496f8008e594954507dce8" rel="nofollow noreferrer noopener" target="_blank">https://xenomai.org/documentation/xenomai-2.4/html/api/group__task.html#ga53bad6acf5496f8008e594954507dce8</a></div>
+<div> </div>
+<div>Jon Waters<br>General Manager<br> <br>acontis technologies Inc.<br>945 Concord Street<br>Framingham, MA 01701<br>Phone: +1-508-809-7201 </div>
+<div>
+<br><span class="js-signatureMarker"></span><blockquote type="cite">
+<div>On Feb 22, 2023, at 12:02 PM, Rosenow, James &lt;jim.rosenow@mts.com&gt; wrote:</div>
+<br><div>
+<div>Hi Jon W.,</div>
+<div><p> </p></div>
+<div>One of our developers found discrepancy between the xenomai doc and the implementation and we are getting a crash in the Acontis driver (see backtrace below). The code in EcOs.cpp should be safe if you follow the doc but the actual alchemy code does not tolerate a NULL ‘info’ pointer. I reported it to Xenomai (see attached).</div>
+<div><p> </p></div>
+<div>Please let us know if you intend to add a null check to EcOs.cpp or wait to see how Xenomai responds.</div>
+<div><p> </p></div>
+<div>Best regards,<br>Jim Rosenow</div>
+<div><p> </p></div>
+<div><p> </p></div>
+<div>
+<b>From:</b> Olson, Thomas &lt;<a href="mailto:tom.olson@mts.com">tom.olson@mts.com</a>&gt; <br><b>Sent:</b> Wednesday, February 22, 2023 10:51 AM<br><b>To:</b> Rosenow, James &lt;<a href="mailto:jim.rosenow@mts.com">jim.rosenow@mts.com</a>&gt;<br><b>Subject:</b> RE: Can you send me that backtrace of the crash please?</div>
+<div><p> </p></div>
+<div>Here is the line it dies on. EcOs.cpp:::806, the pointer is not NULL.</div>
+<div><p> </p></div>
+</div>
+</blockquote>
+</div>
+</div>

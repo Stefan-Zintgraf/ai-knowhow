@@ -1,0 +1,106 @@
+### HEADER
+Id=6442
+Link=http://at-zammad/#ticket/zoom/6442
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ESAB Welding & Cutting GmbH (ID=96, Number=52010, Country=DE)
+Commission=ESAB, CNC-Steuerung (ID=107, Number=107)
+Number=706442
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=g.neeb@esab-cutting.de (ID=100, FirstName=Gerold, LastName=Neeb)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=27.09.2023 10:57:37 +00:00
+UpdatedAt=06.10.2023 08:14:22 +00:00
+CloseAt=06.10.2023 08:14:22 +00:00
+ArticlesCount=3
+
+### TITLE
+Update Request from ESAB Weldung & Cutting GmbH
+
+### ARTICLE00_HEADER
+Id=34726
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.09.2023 10:57:37 +00:00
+UpdatedAt=27.09.2023 10:57:39 +00:00
+
+### ARTICLE00_SUBJECT
+Update Request from ESAB Weldung & Cutting GmbH
+
+### ARTICLE00_BODY
+<p> </p><p>Dear Mr./Ms. Neeb,</p><p>thank you for your registration.<br>
+<br></p><p>First Name: Gerold<br>Last Name: Neeb <br>Company: ESAB Weldung &amp; Cutting GmbH <br><span>Commission: <br></span><span>Country: Germany <br></span><span>City: Karben <br></span><span>E-Mail: G.Neeb@esab-cutting.de <br></span>Request update for: <span>EC-Master <br></span><span>Update Type: <br></span><span>Operating System: Win10 / WinCE <br></span><span>Operating Sys. Version: <br></span>Any Questions?: </p><p><img src="/api/v1/ticket_attachment/6442/34726/145036?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH <br>Gartenstraße 46, 88212 Ravensburg/Germany <br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a>
+<br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com <br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/6442/34726/145035?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=34727
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.09.2023 11:01:11 +00:00
+UpdatedAt=27.09.2023 13:08:33 +00:00
+
+### ARTICLE01_SUBJECT
+New message from ESAB-Cutting GmbH
+
+### ARTICLE01_BODY
+<p> </p><p>Dear Mr./Ms. Roth,</p><p>thank you for your message.<br>
+<br></p><p>Title:<br>First Name: Norbert <br>Last Name: Roth <br>Company: ESAB-Cutting GmbH <br>Address: Robert-Bosch-Straße 20 <br>Zip/Postal Code: 61184 <br>City: Karben <br>Country: Deutschland <br>State: <br>E-Mail: n.roth@esab-cutting.de <br>Phone: 06039 40131 <br>Message: <span>Guten Tag, wir haben den EC-Master auf V3.14 umgestellt. Nun läuft mein EtherCAT Diagnose Tool auf Basis der EC-SlaveTestApplication nicht mehr. Die Application meldet "Invalid Version". Muss ich nun auf die EC-SlaveTestApplication V3.1.4.11 umstellen. Wenn ja, wo finde ich die Quellen incl. einer *.sln Vielen Dank schon einmal für eine kurze Info. <br></span>Contact through: </p><p> </p><p><img src="/api/v1/ticket_attachment/6442/34727/145040?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH <br>Gartenstraße 46, 88212 Ravensburg/Germany <br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a>
+<br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com <br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/6442/34727/145039?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE02_HEADER
+Id=34750
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.09.2023 15:38:57 +00:00
+UpdatedAt=27.09.2023 15:39:02 +00:00
+
+### ARTICLE02_SUBJECT
+Update Request from ESAB Weldung & Cutting GmbH
+
+### ARTICLE02_BODY
+Hallo zusammen,<div><br></div><div>hier wäre die neuste V3.1 Version mit dem EC-STA Paket dazu:</div><div><br></div><div><div><a href="https://downloads.acontis.com/2023/D-F/ESAB_Welding_&amp;_Cutting_(45068)(DE)/EC-Master_Windows_CE_x86_32Bit/3.1.4.13/EC-Master-V3.1.4.13-EC-WinCE-x86_32Bit-SDK_Unrestricted.zip" title="https://downloads.acontis.com/2023/D-F/ESAB_Welding_&amp;_Cutting_(45068)(DE)/EC-Master_Windows_CE_x86_32Bit/3.1.4.13/EC-Master-V3.1.4.13-EC-WinCE-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/D-F/ESAB_Welding_&amp;_Cutting_(45068)(DE)/EC-Master_Windows_CE_x86_32Bit/3.1.4.13/EC-Master-V3.1.4.13-EC-WinCE-x86_32Bit-SDK_Unrestricted.zip</a></div></div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/2023/D-F/ESAB_Welding_&amp;_Cutting_(45068)(DE)/EC-Master_Windows_x86_32Bit/3.1.4.13/EC-Master-ClassA-AddOn-V3.1.4.13-Windows-x86_32Bit-SDK_Unrestricted.zip" title="https://downloads.acontis.com/2023/D-F/ESAB_Welding_&amp;_Cutting_(45068)(DE)/EC-Master_Windows_x86_32Bit/3.1.4.13/EC-Master-ClassA-AddOn-V3.1.4.13-Windows-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/D-F/ESAB_Welding_&amp;_Cutting_(45068)(DE)/EC-Master_Windows_x86_32Bit/3.1.4.13/EC-Master-ClassA-AddOn-V3.1.4.13-Windows-x86_32Bit-SDK_Unrestricted.zip</a></div>
+<div><a href="https://downloads.acontis.com/2023/D-F/ESAB_Welding_&amp;_Cutting_(45068)(DE)/EC-Master_Windows_x86_32Bit/3.1.4.13/EC-Master-V3.1.4.13-Windows-x86_32Bit-SDK_Unrestricted.zip" title="https://downloads.acontis.com/2023/D-F/ESAB_Welding_&amp;_Cutting_(45068)(DE)/EC-Master_Windows_x86_32Bit/3.1.4.13/EC-Master-V3.1.4.13-Windows-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/D-F/ESAB_Welding_&amp;_Cutting_(45068)(DE)/EC-Master_Windows_x86_32Bit/3.1.4.13/EC-Master-V3.1.4.13-Windows-x86_32Bit-SDK_Unrestricted.zip</a></div>
+<div><a href="https://downloads.acontis.com/2023/D-F/ESAB_Welding_&amp;_Cutting_(45068)(DE)/EC-Master_Windows_x86_32Bit/3.1.4.13/EC-STA-V3.1.4.13-Windows-x86_32Bit-SDK_Unrestricted.zip" title="https://downloads.acontis.com/2023/D-F/ESAB_Welding_&amp;_Cutting_(45068)(DE)/EC-Master_Windows_x86_32Bit/3.1.4.13/EC-STA-V3.1.4.13-Windows-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/D-F/ESAB_Welding_&amp;_Cutting_(45068)(DE)/EC-Master_Windows_x86_32Bit/3.1.4.13/EC-STA-V3.1.4.13-Windows-x86_32Bit-SDK_Unrestricted.zip</a></div>
+<div><br></div>
+<div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, September 27, 2023 at 1:01:11 PM, sales acontis wrote:<br><br><p> </p>
+<p>Dear Mr./Ms. Roth,</p>
+<p>thank you for your message.<br>
+<br></p>
+<p>Title:<br>First Name: Norbert <br>Last Name: Roth <br>Company: ESAB-Cutting GmbH <br>Address: Robert-Bosch-Straße 20 <br>Zip/Postal Code: 61184 <br>City: Karben <br>Country: Deutschland <br>State: <br>E-Mail: n.roth@esab-cutting.de <br>Phone: 06039 40131 <br>Message: <span>Guten Tag, wir haben den EC-Master auf V3.14 umgestellt. Nun läuft mein EtherCAT Diagnose Tool auf Basis der EC-SlaveTestApplication nicht mehr. Die Application meldet "Invalid Version". Muss ich nun auf die EC-SlaveTestApplication V3.1.4.11 umstellen. Wenn ja, wo finde ich die Quellen incl. einer *.sln Vielen Dank schon einmal für eine kurze Info. <br></span>Contact through: </p>
+<p> </p>
+<p><img src="/api/v1/ticket_attachment/6442/34750/145248?view=inline" alt="" style="max-width:100%;max-width:100%;width:163px;max-height:85px;"></p>
+<p><span>acontis technologies GmbH <br>Gartenstraße 46, 88212 Ravensburg/Germany <br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a>
+<br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com <br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/6442/34750/145249?view=inline" style="max-width:100%;max-width:100%;width:22px;max-height:22px;"></a></span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

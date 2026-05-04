@@ -1,0 +1,73 @@
+### HEADER
+Id=10174
+Link=http://at-zammad/#ticket/zoom/10174
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ADLINK Technology, Inc. (ID=318, Number=40110, Country=TW)
+Commission=ADLINK, RT-Linux (ID=377, Number=377)
+Number=7010174
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=peter.kao@adlinktech.com (ID=40, FirstName=Peter, LastName=Kao)
+CreatedBy=peter.kao@adlinktech.com (ID=40, FirstName=Peter, LastName=Kao)
+Type=
+TimeUnit=
+CreatedAt=13.03.2025 07:27:34 +00:00
+UpdatedAt=27.03.2025 07:06:40 +00:00
+CloseAt=27.03.2025 07:06:40 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-master V3.2 SDK
+
+### ARTICLE00_HEADER
+Id=58319
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.03.2025 07:27:34 +00:00
+UpdatedAt=13.03.2025 07:27:38 +00:00
+
+### ARTICLE00_SUBJECT
+EC-master V3.2 SDK
+
+### ARTICLE00_BODY
+<div>Dear acontis,</div><div>We currently have an opportunity to upgrade the existing ADLINK system using EC-Master from the old x86 version to the latest x64 version. According to the acontis official website, the latest version is V3.2. Could you provide me with the EC-WinRT-Linux-x86_64Bit-SDK_Unrestricted SDK for this version?</div><div>Thanks,</div><div>Peter.K</div><p><span><em><strong>CONFIDENTIALITY, DATA PROTECTION &amp; PRIVACY</strong></em><br> This message may contain confidential and/or legally privileged information. If you are not the intended recipient(s), then you are hereby notified that any disclosure, copying, distribution or the taking of any action in reliance on the contents of this email transmission is strictly prohibited and that you please delete the email in its entirety. Sender does not in any way waive confidentiality or privilege even if this message has reached you in error. ADLINK Technology Inc. and its affiliates are committed to ensuring the security and protection of the personal information that we have processed as well as to provide a compliant and consistent approach to data protection and privacy. <a href="https://www.adlinktech.com/en/PrivacyPolicy" rel="nofollow noreferrer noopener" title="https://www.adlinktech.com/en/PrivacyPolicy" target="_blank">Privacy Policy</a><br> 這封電子郵件及其傳輸的文件屬於機密資訊，僅供其所指定的收件人使用。如果您不是所指定之接收人，嚴格禁止揭露、複製、散布或採取任何依據此訊息之行動，並且請您刪除此電子郵件。即使您錯誤地收到此訊息，亦不代表我方同意放棄此訊息之機密性。凌華科技及其附屬公司致力於保障所處理的個人資訊的安全，並提供合規且一致的資料保護和隱私方法。</span></p>
+
+### ARTICLE01_HEADER
+Id=58328
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.03.2025 08:13:39 +00:00
+UpdatedAt=13.03.2025 08:13:41 +00:00
+
+### ARTICLE01_SUBJECT
+EC-master V3.2 SDK
+
+### ARTICLE01_BODY
+<div>Hallo Peter,</div><div><br></div><div>Please find your new software version below:</div><div><br></div><div><a href="https://downloads.acontis.com/2025/A/ADLINK_(40437)(TW)/EC-Master_Linux_(RTHV)_x86_64Bit/3.2.2.05/EC-Master-ClassA-AddOn-V3.2.2.05-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2025/A/ADLINK_(40437)(TW)/EC-Master_Linux_(RTHV)_x86_64Bit/3.2.2.05/EC-Master-ClassA-AddOn-V3.2.2.05-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/A/ADLINK_(40437)(TW)/EC-Master_Linux_(RTHV)_x86_64Bit/3.2.2.05/EC-Master-ClassA-AddOn-V3.2.2.05-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div><div><a href="https://downloads.acontis.com/2025/A/ADLINK_(40437)(TW)/EC-Master_Linux_(RTHV)_x86_64Bit/3.2.2.05/EC-Master-V3.2.2.05-EC-WinRT-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2025/A/ADLINK_(40437)(TW)/EC-Master_Linux_(RTHV)_x86_64Bit/3.2.2.05/EC-Master-V3.2.2.05-EC-WinRT-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/A/ADLINK_(40437)(TW)/EC-Master_Linux_(RTHV)_x86_64Bit/3.2.2.05/EC-Master-V3.2.2.05-EC-WinRT-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div><div><br></div><div>Password: ECM88250</div><div><br></div><div><br></div><div>Best Regards,</div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Thursday, March 13, 2025 at 8:27:34 AM, Peter Kao wrote:<br><br><div>Dear acontis,</div>
+<div>We currently have an opportunity to upgrade the existing ADLINK system using EC-Master from the old x86 version to the latest x64 version. According to the acontis official website, the latest version is V3.2. Could you provide me with the EC-WinRT-Linux-x86_64Bit-SDK_Unrestricted SDK for this version?</div>
+<div>Thanks,</div>
+<div>Peter.K</div>
+<p><span><em><strong>CONFIDENTIALITY, DATA PROTECTION &amp; PRIVACY</strong></em><br> This message may contain confidential and/or legally privileged information. If you are not the intended recipient(s), then you are hereby notified that any disclosure, copying, distribution or the taking of any action in reliance on the contents of this email transmission is strictly prohibited and that you please delete the email in its entirety. Sender does not in any way waive confidentiality or privilege even if this message has reached you in error. ADLINK Technology Inc. and its affiliates are committed to ensuring the security and protection of the personal information that we have processed as well as to provide a compliant and consistent approach to data protection and privacy. <a href="https://www.adlinktech.com/en/PrivacyPolicy" rel="nofollow noreferrer noopener" title="https://www.adlinktech.com/en/PrivacyPolicy" target="_blank">Privacy Policy</a><br> 這封電子郵件及其傳輸的文件屬於機密資訊，僅供其所指定的收件人使用。如果您不是所指定之接收人，嚴格禁止揭露、複製、散布或採取任何依據此訊息之行動，並且請您刪除此電子郵件。即使您錯誤地收到此訊息，亦不代表我方同意放棄此訊息之機密性。凌華科技及其附屬公司致力於保障所處理的個人資訊的安全，並提供合規且一致的資料保護和隱私方法。</span></p>
+<br>
+</blockquote></div><div><br></div><br><br>

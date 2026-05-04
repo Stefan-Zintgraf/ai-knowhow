@@ -1,0 +1,218 @@
+### HEADER
+Id=5854
+Link=http://at-zammad/#ticket/zoom/5854
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Philips Medical Systems NL BV (ID=310, Number=57503, Country=NL)
+Commission=Philips India Limited, Unknown (ID=598, Number=598)
+Number=705854
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=priya.mp@philips.com (ID=565, FirstName=Priya, LastName=M P)
+CreatedBy=priya.mp@philips.com (ID=565, FirstName=Priya, LastName=M P)
+Type=
+TimeUnit=
+CreatedAt=28.06.2023 08:07:18 +00:00
+UpdatedAt=07.08.2023 06:14:26 +00:00
+CloseAt=07.08.2023 06:14:26 +00:00
+ArticlesCount=4
+
+### TITLE
+AContis ECAT simulation reg
+
+### ARTICLE00_HEADER
+Id=31225
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.06.2023 08:07:18 +00:00
+UpdatedAt=28.06.2023 08:07:19 +00:00
+
+### ARTICLE00_SUBJECT
+AContis ECAT simulation reg
+
+### ARTICLE00_BODY
+<table>
+<tr>
+<td><b>Subject: </b></td>
+<td>AContis ECAT simulation reg</td>
+</tr>
+<tr>
+<td><b>Location: </b></td>
+<td>Microsoft Teams Meeting</td>
+</tr>
+<tr>
+<td><b>When: </b></td>
+<td>2023-06-21, 15:30 - 16:00 GMT +2:00 (30 minutes)</td>
+</tr>
+<tr>
+<td><b>Organizer: </b></td>
+<td>M P, Priya (<a href="mailto:Priya.MP@philips.com">Priya.MP@philips.com</a>)</td>
+</tr>
+<tr>
+<td><b>Required Attendees: </b></td>
+<td>Patricia Bauce (<a href="mailto:p.bauce@acontis.com">p.bauce@acontis.com</a>), Modi, Satyam (<a href="mailto:satyam.modi@philips.com">satyam.modi@philips.com</a>)</td>
+</tr>
+</table>
+<p>Hi Patricia,<br> We have our VxWorks application integrated with VxWorks and launched as part of initialization. We would like to launch the EC master/simulator application in this infrastructure.<br> Could you please help us with the pointers as we are not aware how to copy these files without a file system in place?<br> Best regards,<br> Priya<span class="js-signatureMarker"></span><br> ________________________________________________________________________________<br> Microsoft Teams meeting<br> Join on your computer, mobile app or room device<br> Click here to join the meeting <br> Meeting ID: 392 542 401 360<br> Passcode: kypGkL <br> Download Teams | Join on the web<br> Learn More | Meeting options <br> ________________________________________________________________________________<br><br>The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.</p>
+
+### ARTICLE01_HEADER
+Id=31242
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.06.2023 09:26:52 +00:00
+UpdatedAt=28.06.2023 09:26:52 +00:00
+
+### ARTICLE01_SUBJECT
+AContis ECAT simulation reg
+
+### ARTICLE01_BODY
+<div>Hi Priya,</div><div>would it solve your issue, if you can compile your config files into your application/EcMasterDemo?</div><div><br></div><div>Best Regards</div><div>Daniel</div><br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=32216
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.07.2023 07:55:55 +00:00
+UpdatedAt=25.07.2023 07:55:58 +00:00
+
+### ARTICLE02_SUBJECT
+AContis ECAT simulation reg
+
+### ARTICLE02_BODY
+<div>Hi Priya,</div><div>Were you able to check my <span>suggestion</span><span>?</span>
+</div><div>Would it solve our issue, when we compile the config files into the application.</div><div><br></div><div>Best Regards</div><div>Daniel </div><div><br></div><div><br></div><div>
+<br><br>
+</div><div><blockquote type="cite">On Wednesday, 28 June 2023 at 11:26:52, Daniel Schmid wrote:<br><br><div>Hi Priya,</div>
+<div>would it solve your issue, if you can compile your config files into your application/EcMasterDemo?</div>
+<div><br></div>
+<div>Best Regards</div>
+<div>Daniel</div>
+<br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<br>
+</blockquote></div><div><br></div>
+
+### ARTICLE03_HEADER
+Id=32217
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=25.07.2023 07:56:11 +00:00
+UpdatedAt=18.10.2023 11:10:19 +00:00
+
+### ARTICLE03_SUBJECT
+Mail delivery failed: returning message to sender
+
+### ARTICLE03_BODY
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of
+its recipients. This is a permanent error.
+
+The following address failed:
+
+    satyam.modi@philips.com:
+        SMTP error from remote server for RCPT TO command, host: philips-com.mail.protection.outlook.com (104.47.2.36) reason: 550 5.4.1 Recipient address rejected: Access denied. AS(201806281) [DB5EUR
+01FT095.eop-EUR01.prod.protection.outlook.com 2023-07-25T07:56:02.669Z
+ 08DB8C409F255E5E]
+
+
+--- The header of the original message is following. ---
+
+Received: from remote.acontis.com ([81.27.114.23]) by mrelayeu.kundenserver.de
+ (mreue106 [213.165.67.113]) with ESMTPSA (Nemesis) id
+ 1MDPqi-1qDna00TJO-00AVWS; Tue, 25 Jul 2023 09:56:02 +0200
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple;
+	d=acontis.com; s=mail;
+	h=from:subject:date:message-id:to:cc:mime-version:content-type:
+	 content-transfer-encoding:in-reply-to:references;
+	bh=odpbm8Af7pEl48T904aqL8MX+gHqNrrMv1TsNJZRD7o=;
+	b=iidRr678qEnZH1q85OjqKKvQu+aLwooF2Svwxh1lfmOm+gEohBboKBugX/kr4uDv/hvVsRU6oshM8
+	 RGyCGQErza8dJILd7c+ECSVFPGqceDppIILWMeG+yMTacl3n/n6wV32RZ1snReTEgV2AD/6wnChGvU
+	 lEx8GSh8F8ZzPrqixC3eEZnlPsp0RZHsQxTquNaMdM60S5bFbi2US9dnRr6dcavNoyD27mBl7M6ItB
+	 bMoS7vpABqSNlUXArcVELGzmjy+vhVCSBZ7qA36q7TIbD8rYJzptkDdXH2OP6qtUi/cqed8kBKBZyE
+	 1QK90xgUwrIplaIA5yZxKpWN211FMYQ==
+X-Kerio-Anti-Spam:  Build: [Engines: 2.17.3.1482, Stamp: 3], Multi: [Enabled, t: (0.000007,0.007696)], BW: [Enabled, t: (0.000014)], RTDA: [Enabled, t: (0.083078), Hit: No, Details: v2.54.0; Id: 15.vlxl8.1h660og2d.18et; mclb], total: 0(700)
+X-Spam-Status: No, hits=0.0 required=5.0
+	tests=KERIO_ANTI_SPAM: -0.000, AWL: 0.082, BAYES_00: -1.665,
+	HTML_MESSAGE: 0.001, URIBL_BLOCKED: 0.001, URIBL_SBL_A: 0.1,
+	TOTAL_SCORE: -1.481,autolearn=no
+X-Spam-Level: 
+X-Footer: YWNvbnRpcy5jb20=
+Received: from at-zammad ([172.17.5.14])
+	(authenticated user ecsupport@acontis.com)
+	by remote.acontis.com (Kerio Connect 10.0.1) with ESMTPSA
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256 bits));
+	Tue, 25 Jul 2023 09:55:58 +0200
+Date: Tue, 25 Jul 2023 09:55:58 +0200
+From: Daniel Schmid via EC-Support <ecsupport@acontis.com>
+To: satyam.modi@philips.com, 
+ priya.mp@philips.com
+Cc: l.janischek@acontis.com, 
+ p.bauce@acontis.com
+Message-ID: <20230725075555.5854.2da303a2-852f-4e62-8173-f56494cbc1d7@at-zammad>
+In-Reply-To: <20230628092652.5854.405a83ac-6f83-4d19-82a9-735149d14579@at-zammad>
+References: <20230628092652.5854.405a83ac-6f83-4d19-82a9-735149d14579@at-zammad>
+ <AM7P122MB019306E91277C8B35E2D86E2825DA@AM7P122MB0193.EURP122.PROD.OUTLOOK.COM>
+ <20230628092652.5854.405a83ac-6f83-4d19-82a9-735149d14579@at-zammad>
+ <AM7P122MB019306E91277C8B35E2D86E2825DA@AM7P122MB0193.EURP122.PROD.OUTLOOK.COM>
+Subject: RE: AContis ECAT simulation reg [Ticket#705854]
+Mime-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary="--==_mimepart_64bf800e94bac_9352c63c503616";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Organization: acontis technologies GmbH
+X-Powered-By: Zammad - Helpdesk/Support (https://zammad.org/)
+X-Mailer: Zammad Mail Service
+X-Provags-ID: V03:K1:ZJ8eGOaGIXSr2mcNQ+2sF2trds6HJdei8zxs8JTEACEG5hmCrwp
+ ERjSqCBYQTgM23xTVjcRQgCw8yNAm83VOOqiV480pof6ckH3n/ao/eX7vNi4N1Y7O/2UUAn
+ SPJm8Qh7sKcUg59jm/SDWp2e5Y4lCFE2wmX1pUQTSRKuGwAuU+u3PYZnTuzFogzTF0QCxvy
+ c1sAWzMKJk4J2Pu3XQT+Q==
+X-Spam-Flag: NO
+UI-OutboundReport: notjunk:1;M01:P0:bNkO3hLA6kQ=;YRmt19aO6OhWvoiYYELUDc2KlY8
+ YFLCme6HK53BwPt/C8vTMJNhGj8sosLoUZUJROeSkSWiIfri1Aq3LiJocNEA6KsRShR0NusOo
+ EexMhXYtgxJnqCjW/8YxaoLMBDWfxAVTaJWE0pEGggNpgReBYij3RWe3jG0f+le4LKEyXl32N
+ FdQdVk8ujoNftcCoNWiCB0y6DMVIQ9uAOSLh/Yqw6OGWmR9OUES37QNMDSiyQkDyVPk2rwa76
+ 88MvlfvA9J+/stcGf9/sm8t2K9osK/oZ1XTdcSZOBZnSmoVLEPITx43LhAprpIDjoQjaNllQM
+ 7l2YBLMpU+VZyxIQXe/qL6lSwI3wqbA8zTdvm49iVpqELScEEvGSX2ZL4fS8YsZQ6ivyt5WxH
+ xZtSywq6DeCNOQR0ZYjyWzMtLqiBc1su7nrnvoS4ACD30cONNORHJX0OLVDbuxm6zFB8Vq65s
+ 3XgHEdn5Pfcmor1OpJPCp4NPt566sp+zfuLIL7BLGk+oSUoXFdJSfU6IS9zf6N3ASsf4pbula
+ 7dAybw5JG1myq5+BESCtLb92TkkQjkEAov/WRB2Y88yIbnDjCCPbwH4Kw5Dwb7pBCPlOiVxNG
+ mqtlgcQMPPSLSDmlgdNF05hImXJQWm0mrteGe89cW0e4gyCRrWkFx+XzVkvVjge8R4yrywZ/9
+ wCYyggjKkJBafeAHKuNKRPPREcaxGPVqHk5RjzoXHg==
+

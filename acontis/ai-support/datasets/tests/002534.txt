@@ -1,0 +1,135 @@
+### HEADER
+Id=2534
+Link=http://at-zammad/#ticket/zoom/2534
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Liebherr-Werk Nenzing GmbH (ID=8, Number=40314, Country=AT)
+Commission=Liebherr, tower crane control (ID=8, Number=8)
+Number=702534
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=hannes.mahlfeld2@liebherr.com (ID=611, FirstName=Hannes, LastName=Mahlfeld)
+CreatedBy=hannes.mahlfeld2@liebherr.com (ID=611, FirstName=Hannes, LastName=Mahlfeld)
+Type=
+TimeUnit=
+CreatedAt=02.03.2022 08:36:47 +00:00
+UpdatedAt=25.04.2022 12:45:51 +00:00
+CloseAt=21.03.2022 07:33:34 +00:00
+ArticlesCount=2
+
+### TITLE
+EL6751 - SYNC cycle time
+
+### ARTICLE00_HEADER
+Id=13485
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.03.2022 08:36:47 +00:00
+UpdatedAt=02.03.2022 08:36:49 +00:00
+
+### ARTICLE00_SUBJECT
+EL6751 - SYNC cycle time
+
+### ARTICLE00_BODY
+<div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>bei der Einbindung eines CANopen Controllers über die EL6751 Klemme treten Effekte auf, die ich mir nicht erklären kann. Es scheint, als würde die Zykluszeit des CANopen Netzwerks von der EtherCAT Zykluszeit abhängig sein. Ist das so und warum?</p>
+<p> </p>
+<p>Weiterhin gibt es einen Parameter bei den CAN Bus Settings ‚SYNC cycle time‘. Welche Bedeutung hat dieser Parameter und welche Einheit [µs oder ms]?</p>
+<p> </p>
+<p><img style="max-width:100%;width:10.6145in;max-height:2.0625in;width:1019px;max-height:198px;" src="/api/v1/ticket_attachment/2534/13485/53800?view=inline"></p>
+<p> </p>
+<p>Beim Übergang des EtherCAT Netzwerkes von Init -&gt; Pre-Op -&gt; Op stelle ich Unterschiede zwischen der Online Konfiguration und dem Master-5 fest. Ein EtherCAT Netzwerk, welches in der Online-Konfiguration ohne Fehler oder Probleme in den Op Mode überführt werden kann, lässt sich mit dem Master-5 nicht starten. Woran kann das liegen?</p>
+<p> </p>
+<div>
+<p>Mit freundlichen Grüßen</p>
+<p><b>i. A. Hannes Mahlfeld</b></p>
+<p>Produktentwicklung Elektrik / Software MC</p>
+<p> </p>
+<p><b>Liebherr-MCCtec Rostock GmbH</b></p>
+<p>Liebherrstraße 1</p>
+<p>18147 Rostock</p>
+<p>Deutschland</p>
+<p>Tel.: +49 381 6006 4943<br> E-Mail: Hannes.Mahlfeld2@liebherr.com<br> Internet: <a href="http://www.liebherr.com" rel="nofollow noreferrer noopener" target="_blank">www.liebherr.com</a><br> Aufsichtsratsvorsitzender: Andreas Böhm</p>
+<p>Geschäftsführer: Steffen Bartke, Leopold Berthold, Rudolf Ganser, Steffen Pohl</p>
+<p>Sitz: 18147 Rostock, Liebherrstrasse 1, HRB 9219, Amtsgericht Rostock, USt-IdNr.: DE 81 36 54 985</p>
+<p><a href="https://www.liebherr.com/privacydocs/MCR/MCR-DSE-Geschaeftspartner.pdf" rel="nofollow noreferrer noopener" title="https://www.liebherr.com/privacydocs/MCR/MCR-DSE-Geschaeftspartner.pdf" target="_blank">Datenschutzerklärung</a><br> </p>
+<p><a href="https://www.facebook.com/LiebherrMaritime" rel="nofollow noreferrer noopener" title="https://www.facebook.com/LiebherrMaritime" target="_blank"></a> <a href="https://www.youtube.com/liebherr" rel="nofollow noreferrer noopener" title="https://www.youtube.com/liebherr" target="_blank"></a> <a href="http://www.linkedin.com/company/liebherr-maritime-cranes" rel="nofollow noreferrer noopener" title="http://www.linkedin.com/company/liebherr-maritime-cranes" target="_blank"></a> <a href="https://twitter.com/LH_Maritime" rel="nofollow noreferrer noopener" title="https://twitter.com/LH_Maritime" target="_blank"></a> <a href="https://www.instagram.com/liebherrmaritime" rel="nofollow noreferrer noopener" title="https://www.instagram.com/liebherrmaritime" target="_blank"></a> <br> </p>
+<p> </p>
+</div>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=13489
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.03.2022 09:04:48 +00:00
+UpdatedAt=02.03.2022 09:04:51 +00:00
+
+### ARTICLE01_SUBJECT
+EL6751 - SYNC cycle time
+
+### ARTICLE01_BODY
+<div>
+<span>Hallo Herr Mahlfeld,</span><br>
+</div><div>auf dem Tab der EL6751 gibt es das Setting Cycle Time. Dieses ist die EtherCAT Zykluszeit. Sie wird mit dem Init Command 1C32 der Klemme mitgeteilt. </div><div><br></div><div>Zur Sync Cycle Time steht folgendes in der Doku der Klemme:</div><div><br></div><div><img style="max-width:100%;width: 688px;max-width: 100%;" src="/api/v1/ticket_attachment/2534/13489/53803?view=inline"></div><div>Bei uns gibt es keine Multiplier wie in TwinCAT. Bei uns muss diese Sync Cycle Time ein vielfaches der Cycle Time sein. Die Einheit ist hier [us].</div><div><br></div><div>Was genau meinen Sie hier mit Master-5? Das Error Level?</div><div><br></div><div>Viele Grüße</div><div>Kai Feifel <br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, March 2, 2022, 9:36:47 AM, Hannes Mahlfeld wrote:<br><br><div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>bei der Einbindung eines CANopen Controllers über die EL6751 Klemme treten Effekte auf, die ich mir nicht erklären kann. Es scheint, als würde die Zykluszeit des CANopen Netzwerks von der EtherCAT Zykluszeit abhängig sein. Ist das so und warum?</p>
+<p> </p>
+<p>Weiterhin gibt es einen Parameter bei den CAN Bus Settings ‚SYNC cycle time‘. Welche Bedeutung hat dieser Parameter und welche Einheit [µs oder ms]?</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:10.6145in;max-height:2.0625in;width:1019px;max-height:198px;" src="/api/v1/ticket_attachment/2534/13489/53804?view=inline"></p>
+<p> </p>
+<p>Beim Übergang des EtherCAT Netzwerkes von Init -&gt; Pre-Op -&gt; Op stelle ich Unterschiede zwischen der Online Konfiguration und dem Master-5 fest. Ein EtherCAT Netzwerk, welches in der Online-Konfiguration ohne Fehler oder Probleme in den Op Mode überführt werden kann, lässt sich mit dem Master-5 nicht starten. Woran kann das liegen?</p>
+<p> </p>
+<div>
+<p>Mit freundlichen Grüßen</p>
+<p><b>i. A. Hannes Mahlfeld</b></p>
+<p>Produktentwicklung Elektrik / Software MC</p>
+<p> </p>
+<p><b>Liebherr-MCCtec Rostock GmbH</b></p>
+<p>Liebherrstraße 1</p>
+<p>18147 Rostock</p>
+<p>Deutschland</p>
+<p>Tel.: +49 381 6006 4943<br> E-Mail: Hannes.Mahlfeld2@liebherr.com<br> Internet: <a href="http://www.liebherr.com" rel="nofollow noreferrer noopener" target="_blank">www.liebherr.com</a><br> Aufsichtsratsvorsitzender: Andreas Böhm</p>
+<p>Geschäftsführer: Steffen Bartke, Leopold Berthold, Rudolf Ganser, Steffen Pohl</p>
+<p>Sitz: 18147 Rostock, Liebherrstrasse 1, HRB 9219, Amtsgericht Rostock, USt-IdNr.: DE 81 36 54 985</p>
+<p><a href="https://www.liebherr.com/privacydocs/MCR/MCR-DSE-Geschaeftspartner.pdf" rel="nofollow noreferrer noopener" title="https://www.liebherr.com/privacydocs/MCR/MCR-DSE-Geschaeftspartner.pdf" target="_blank">Datenschutzerklärung</a><br> </p>
+<p><a href="https://www.facebook.com/LiebherrMaritime" rel="nofollow noreferrer noopener" title="https://www.facebook.com/LiebherrMaritime" target="_blank"></a> <a href="https://www.youtube.com/liebherr" rel="nofollow noreferrer noopener" title="https://www.youtube.com/liebherr" target="_blank"></a> <a href="http://www.linkedin.com/company/liebherr-maritime-cranes" rel="nofollow noreferrer noopener" title="http://www.linkedin.com/company/liebherr-maritime-cranes" target="_blank"></a> <a href="https://twitter.com/LH_Maritime" rel="nofollow noreferrer noopener" title="https://twitter.com/LH_Maritime" target="_blank"></a> <a href="https://www.instagram.com/liebherrmaritime" rel="nofollow noreferrer noopener" title="https://www.instagram.com/liebherrmaritime" target="_blank"></a> <br> </p>
+<p> </p>
+</div>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

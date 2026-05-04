@@ -1,0 +1,371 @@
+### HEADER
+Id=1764
+Link=http://at-zammad/#ticket/zoom/1764
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Mikrolab GmbH (ID=433, Number=0, Country=DE)
+Commission=Mikrolab GmbH, Unknown (ID=510, Number=510)
+Number=701764
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=p.eberlein@mikrolab.com (ID=292, FirstName=Pascal, LastName=Eberlein)
+CreatedBy=p.eberlein@mikrolab.com (ID=292, FirstName=Pascal, LastName=Eberlein)
+Type=
+TimeUnit=
+CreatedAt=03.11.2021 11:28:45 +00:00
+UpdatedAt=27.04.2022 06:10:40 +00:00
+CloseAt=19.11.2021 07:01:33 +00:00
+ArticlesCount=2
+
+### TITLE
+FoE Übertragungsrate
+
+### ARTICLE00_HEADER
+Id=9436
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.11.2021 11:28:45 +00:00
+UpdatedAt=03.11.2021 11:28:49 +00:00
+
+### ARTICLE00_SUBJECT
+FoE Übertragungsrate
+
+### ARTICLE00_BODY
+<div>
+<p>Sehr geehrter Herr Bußmann,</p>
+<p>sehr geehrter Acontis Support,</p>
+<p> </p>
+<p>können Sie mir sagen wie die durchschnittlichen Übertragungsraten für FoE sind / sein sollten?</p>
+<p>Ich frage, da die Übertragung einer 40kb großen Datei von Master zu einem Slave bei uns ~13 Sekunden dauert.</p>
+<p> </p>
+<p>Haben Sie einen Tipp woran diese niedrige Übertragungsrate liegen könnte?</p>
+<p> </p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;">Mit freundlichen Grüßen</span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;"> </span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<p><b><span style="color:black;">Pascal Eberlein</span></b></p>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;">Entwicklung</span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;"> </span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">Telefon</span>
+</td>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">+49 911 37704 167</span>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">Fax</span>
+</td>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">+49 911 37704 150</span>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;"></td>
+<td style="padding:0cm 0cm 0cm 0cm;"></td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">Büro</span>
+</td>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">Dieter-Streng-Str. 1 - 90766 Fürth</span>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">E-Mail</span>
+</td>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">p.eberlein@mikrolab.com</span>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">Internet</span>
+</td>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;"><a href="http://www.mikrolab.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.mikrolab.com</span></a></span>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;"> </span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div> </div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;"> </span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;">mikrolab ENTWICKLUNGSGESELLSCHAFT FÜR ELEKTRONIKSYSTEME mbH<br> Dieter-Streng-Str. 1 - 90766 Fürth - Germany<br> Sitz: Fürth HRB 8192 - Ust.(VAT) IdNr. DE133529384<br> Geschäftsführer: Dr. Christian Kägeler, Dr. Julia Koehl </span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;"> </span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">Die Informationspflicht gem. DS-GVO finden Sie unter: </span><p></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;"><a href="http://www.mikrolab.com/home/unternehmen/datenschutzhinweise.html" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.mikrolab.com/home/unternehmen/datenschutzhinweise.html</span></a></span><p></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;"> </span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;"><a href="http://www.mikrolab.com/public/vertraulichkeit.html" rel="nofollow noreferrer noopener" title="http://www.mikrolab.com/public/vertraulichkeit.html" target="_blank"><span style="color:blue;">Vertraulichkeitshinweis / Confidentiality note</span></a>
+</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table> <p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=9452
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.11.2021 08:44:34 +00:00
+UpdatedAt=04.11.2021 08:44:34 +00:00
+
+### ARTICLE01_SUBJECT
+FoE Übertragungsrate
+
+### ARTICLE01_BODY
+Hallo Herr Eberlein,<div><br></div><div>leider kann ich Ihnen keine Richtwerte geben. Die Datenrate ist von viele Parametern abhängig. Am größten ist der Einfluss der Mailboxgröße. Deshalb gibt es zum Beispiel ein BOOTSTRAP State mit einem vergrößerte Mailbox um Firmware Update durchzuführen.</div><div><br></div><div>Schöne Grüße,</div><div>Cyril Eyssautier<div><br></div>
+<div><blockquote type="cite">On Wednesday, November 3, 2021, 12:28:45 PM, p.eberlein@mikrolab.com wrote:<br><br><div>
+<p>Sehr geehrter Herr Bußmann,</p>
+<p>sehr geehrter Acontis Support,</p>
+<p> </p>
+<p>können Sie mir sagen wie die durchschnittlichen Übertragungsraten für FoE sind / sein sollten?</p>
+<p>Ich frage, da die Übertragung einer 40kb großen Datei von Master zu einem Slave bei uns ~13 Sekunden dauert.</p>
+<p> </p>
+<p>Haben Sie einen Tipp woran diese niedrige Übertragungsrate liegen könnte?</p>
+<p> </p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;">Mit freundlichen Grüßen</span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;"> </span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<p><b><span style="color:black;">Pascal Eberlein</span></b></p>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;">Entwicklung</span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;"> </span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">Telefon</span>
+</td>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">+49 911 37704 167</span>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">Fax</span>
+</td>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">+49 911 37704 150</span>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;"></td>
+<td style="padding:0cm 0cm 0cm 0cm;"></td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">Büro</span>
+</td>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">Dieter-Streng-Str. 1 - 90766 Fürth</span>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">E-Mail</span>
+</td>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">p.eberlein@mikrolab.com</span>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">Internet</span>
+</td>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;"><a href="http://www.mikrolab.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.mikrolab.com</span></a></span>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;"> </span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div> </div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;"> </span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;">mikrolab ENTWICKLUNGSGESELLSCHAFT FÜR ELEKTRONIKSYSTEME mbH<br> Dieter-Streng-Str. 1 - 90766 Fürth - Germany<br> Sitz: Fürth HRB 8192 - Ust.(VAT) IdNr. DE133529384<br> Geschäftsführer: Dr. Christian Kägeler, Dr. Julia Koehl </span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;"> </span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;">Die Informationspflicht gem. DS-GVO finden Sie unter: </span><p></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<span style="color:black;"><a href="http://www.mikrolab.com/home/unternehmen/datenschutzhinweise.html" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.mikrolab.com/home/unternehmen/datenschutzhinweise.html</span></a></span><p></p>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;"> </span>
+</div>
+</td>
+</tr>
+<tr>
+<td style="padding:0cm 0cm 0cm 0cm;">
+<div>
+<span style="color:black;"><a href="http://www.mikrolab.com/public/vertraulichkeit.html" rel="nofollow noreferrer noopener" title="http://www.mikrolab.com/public/vertraulichkeit.html" target="_blank"><span style="color:blue;">Vertraulichkeitshinweis / Confidentiality note</span></a>
+</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table> <p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

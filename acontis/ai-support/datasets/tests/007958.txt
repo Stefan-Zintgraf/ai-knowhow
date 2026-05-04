@@ -1,0 +1,112 @@
+### HEADER
+Id=7958
+Link=http://at-zammad/#ticket/zoom/7958
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=AMESS, Motion Controller (ID=730, Number=730)
+Number=707958
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=23.04.2024 06:53:59 +00:00
+UpdatedAt=26.04.2024 06:06:17 +00:00
+CloseAt=26.04.2024 06:06:17 +00:00
+ArticlesCount=2
+
+### TITLE
+Grammar error when importing ESI File
+
+### ARTICLE00_HEADER
+Id=43780
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.04.2024 06:53:59 +00:00
+UpdatedAt=23.04.2024 06:54:02 +00:00
+
+### ARTICLE00_SUBJECT
+Grammar error when importing ESI File
+
+### ARTICLE00_BODY
+<p>Hi.</p><p><br></p><p>The customer is Amess.</p><p><br></p><p>They said EC-Engineer cannot import the attached ESI file as the error below.</p><p><br></p><p>It seems to be a grammar error in the ESI file (But, The customer said always there is no problem in TWinCAT</p><p><br></p><p>If you have any documents for reference, please give us it &amp; advise.</p><p><br></p><p><img src="/api/v1/ticket_attachment/7958/43780/180580?view=inline" title="" alt="" style="max-width:100%;"></p><br><br><p>감사합니다.</p><p><br></p><p>Thank you</p><p><br></p><table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p><img src="/api/v1/ticket_attachment/7958/43780/180581?view=inline" title="" alt="" style="max-width:100%;"></p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sund</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">u</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">khan@prestosolution.co.kr</a></span></u></i></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table><p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+
+### ARTICLE01_HEADER
+Id=43803
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.04.2024 10:55:33 +00:00
+UpdatedAt=23.04.2024 10:55:36 +00:00
+
+### ARTICLE01_SUBJECT
+Grammar error when importing ESI File
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div><img style="max-width:100%;width: 878px;max-width: 100%;" src="/api/v1/ticket_attachment/7958/43803/180662?view=inline"></div><div><br></div><div>Regarding the ESI spec, "t" is not allowed as category. TwinCAT does not check the ESI spec completely. But we want to have to have schema confirm ESIs in EC-Engineer.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, April 23, 2024 at 8:53:59 AM, DukHan Sun wrote:<br><br><p>Hi.</p>
+<p><br></p>
+<p>The customer is Amess.</p>
+<p><br></p>
+<p>They said EC-Engineer cannot import the attached ESI file as the error below.</p>
+<p><br></p>
+<p>It seems to be a grammar error in the ESI file (But, The customer said always there is no problem in TWinCAT</p>
+<p><br></p>
+<p>If you have any documents for reference, please give us it &amp; advise.</p>
+<p><br></p>
+<p><img src="/api/v1/ticket_attachment/7958/43803/180663?view=inline" title="" alt="" style="max-width:100%;max-width:100%;"></p>
+<br><br><p>감사합니다.</p>
+<p><br></p>
+<p>Thank you</p>
+<p><br></p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; color: rgb(32, 32, 32); font-size: 13px; background-color: rgb(255, 255, 255); margin-left: -1px;"><tbody><tr>
+<td style=" padding: 0px;"><p><img src="/api/v1/ticket_attachment/7958/43803/180664?view=inline" title="" alt="" style="max-width:100%;max-width:100%;"></p></td>
+<td style=" padding: 0px; vertical-align: top;">
+<p><b><br></b></p>
+<p><b>선덕한 / 연구위원</b></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+<p>duk-han sun / Chief Researcher</p>
+<p><span style=" color: red;"><b>M.</b></span><span style=" color: red;"> </span>010-5374-3314<span style=" color: rgb(31, 73, 125);"></span></p>
+<p><span style=" color: red;"><b>E.</b></span><span style=" color: red;"> </span><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">sund</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">u</a></span></u></i><i><u><span style=" color: blue;"><a href="mailto:tgpark@prestosolution.co.kr">khan@prestosolution.co.kr</a></span></u></i></p>
+<p><span style=" color: rgb(31, 73, 125);"></span></p>
+</td>
+</tr></tbody></table>
+<p><span style=" color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressee.<br>Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, <br>distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are <br>not the intended addressee please contact the sender and dispose of this e-mail.</span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

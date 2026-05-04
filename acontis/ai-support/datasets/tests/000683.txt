@@ -1,0 +1,109 @@
+### HEADER
+Id=683
+Link=http://at-zammad/#ticket/zoom/683
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Fuji electric, PLC (ID=256, Number=256)
+Number=700683
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Type=
+TimeUnit=
+CreatedAt=31.05.2021 10:21:36 +00:00
+UpdatedAt=12.12.2023 13:52:33 +00:00
+CloseAt=18.06.2021 06:01:29 +00:00
+ArticlesCount=2
+
+### TITLE
+(Fuji Electric) Q249: ecatWriteSlaveRegisterReq
+
+### ARTICLE00_HEADER
+Id=3861
+ContentType=text/html
+Internal=False
+Type=phone
+CreatedAt=31.05.2021 10:21:36 +00:00
+UpdatedAt=31.05.2021 10:21:36 +00:00
+
+### ARTICLE00_BODY
+<div>Dear Cyril san</div><div><br></div><div> &gt;&gt; --------------------------------------------------------------------------</div><div> &gt;&gt; Q249. Question about "ecatWriteSlaveRegisterReq".</div><div> &gt;&gt;     Customer wrote to the following register.</div><div> &gt;&gt;       AL Event Request (0x0220:0x0223)</div><div> &gt;&gt;       size = 2byte</div><div> &gt;&gt;       value = 0xDCFE</div><div> &gt;&gt;</div><div> &gt;&gt;   　The child register should not be writable,</div><div> &gt;&gt;     But "EC_NOTIFY_SLAVE_REGISTER_TRANSFER - dwResult" returns a value of 0, , is that correct?</div><div> &gt;&gt; [CER] Yes</div><div><br></div><div>Is there a way to determine that the result is 0 but not actually written?</div><div><br></div><div>Best regards,</div><div>Takuya Fujikawa</div><div><br></div><div>On 2021/05/26 16:29, Cyril Eyssautier via EC-Support wrote:</div><div>&gt; Hi Takuya,</div><div>&gt;</div><div>&gt; please find my answer below.</div><div>&gt;</div><div>&gt; Best Regards,</div><div>&gt; Cyril</div><div>&gt;</div><div>&gt;&gt; On Saturday, May 22, 2021, 3:02:24 AM, Takuya Fujikawa wrote:</div><div>&gt;&gt;</div><div>&gt;&gt; Dear EtherCAT Support</div><div>&gt;&gt;</div><div>&gt;&gt; Question About EC-Master(Fuji Electric)</div><div>&gt;&gt;</div><div>&gt;&gt; --------------------------------------------------------------------------</div><div>&gt;&gt; Q249. Question about "ecatWriteSlaveRegisterReq".</div><div>&gt;&gt;     Customer wrote to the following register.</div><div>&gt;&gt;       AL Event Request (0x0220:0x0223)</div><div>&gt;&gt;       size = 2byte</div><div>&gt;&gt;       value = 0xDCFE</div><div>&gt;&gt;</div><div>&gt;&gt;   　The child register should not be writable,</div><div>&gt;&gt;     But "EC_NOTIFY_SLAVE_REGISTER_TRANSFER - dwResult" returns a value of 0, , is that correct?</div><div>&gt;&gt; [CER] Yes</div><div>&gt;&gt; -------------------------------------------------------------------------</div><div>&gt;&gt; Q250. Question about "ICSS_SendPacket()".</div><div>&gt;&gt;       An error occurs when switching the master state, and the following message is displayed at that time.</div><div>&gt;&gt;       "ICSS_SendPacket(): no more space in sending pQueue."</div><div>&gt;&gt;      - What is the reason for this message?</div><div>&gt;&gt;      - Please tell me how to avoid the problem.&gt;Please tell me how to avoid the problem.</div><div>&gt;&gt;      Attach the log.</div><div>&gt;&gt; [CER] Please use EC_T_LINK_PARMS_ICSS::bUseAllSendQueues</div><div>&gt;&gt; --------------------------------------------------------------------------</div><div>&gt;&gt;</div><div>&gt;&gt; Best regards,</div><div>&gt;&gt; Takuya Fujikawa</div><div>&gt;</div><div>&gt;</div>
+
+### ARTICLE01_HEADER
+Id=3862
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.05.2021 10:23:49 +00:00
+UpdatedAt=31.05.2021 10:23:52 +00:00
+
+### ARTICLE01_SUBJECT
+(Fuji Electric) Q249: ecatWriteSlaveRegisterReq
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>they can call <span>ecatWriteSlaveRegister instaed of </span><span>ecatWriteSlaveRegisterReq. If </span><span>ecatWriteSlaveRegister</span><span> returns 0, the transfer has been done. Please note that writing to ESC register outside EC-Master will lead to undefined behavior. This is not the standard mode of operation.</span>
+</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div>
+<div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Monday, May 31, 2021, 12:21:36 PM, Cyril Eyssautier wrote:<br><br><div>Dear Cyril san</div>
+<div><br></div>
+<div> &gt;&gt; --------------------------------------------------------------------------</div>
+<div> &gt;&gt; Q249. Question about "ecatWriteSlaveRegisterReq".</div>
+<div> &gt;&gt;     Customer wrote to the following register.</div>
+<div> &gt;&gt;       AL Event Request (0x0220:0x0223)</div>
+<div> &gt;&gt;       size = 2byte</div>
+<div> &gt;&gt;       value = 0xDCFE</div>
+<div> &gt;&gt;</div>
+<div> &gt;&gt;   　The child register should not be writable,</div>
+<div> &gt;&gt;     But "EC_NOTIFY_SLAVE_REGISTER_TRANSFER - dwResult" returns a value of 0, , is that correct?</div>
+<div> &gt;&gt; [CER] Yes</div>
+<div><br></div>
+<div>Is there a way to determine that the result is 0 but not actually written?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2021/05/26 16:29, Cyril Eyssautier via EC-Support wrote:</div>
+<div>&gt; Hi Takuya,</div>
+<div>&gt;</div>
+<div>&gt; please find my answer below.</div>
+<div>&gt;</div>
+<div>&gt; Best Regards,</div>
+<div>&gt; Cyril</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Saturday, May 22, 2021, 3:02:24 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question About EC-Master(Fuji Electric)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; --------------------------------------------------------------------------</div>
+<div>&gt;&gt; Q249. Question about "ecatWriteSlaveRegisterReq".</div>
+<div>&gt;&gt;     Customer wrote to the following register.</div>
+<div>&gt;&gt;       AL Event Request (0x0220:0x0223)</div>
+<div>&gt;&gt;       size = 2byte</div>
+<div>&gt;&gt;       value = 0xDCFE</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt;   　The child register should not be writable,</div>
+<div>&gt;&gt;     But "EC_NOTIFY_SLAVE_REGISTER_TRANSFER - dwResult" returns a value of 0, , is that correct?</div>
+<div>&gt;&gt; [CER] Yes</div>
+<div>&gt;&gt; -------------------------------------------------------------------------</div>
+<div>&gt;&gt; Q250. Question about "ICSS_SendPacket()".</div>
+<div>&gt;&gt;       An error occurs when switching the master state, and the following message is displayed at that time.</div>
+<div>&gt;&gt;       "ICSS_SendPacket(): no more space in sending pQueue."</div>
+<div>&gt;&gt;      - What is the reason for this message?</div>
+<div>&gt;&gt;      - Please tell me how to avoid the problem.&gt;Please tell me how to avoid the problem.</div>
+<div>&gt;&gt;      Attach the log.</div>
+<div>&gt;&gt; [CER] Please use EC_T_LINK_PARMS_ICSS::bUseAllSendQueues</div>
+<div>&gt;&gt; --------------------------------------------------------------------------</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

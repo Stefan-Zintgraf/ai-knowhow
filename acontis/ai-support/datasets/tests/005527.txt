@@ -1,0 +1,112 @@
+### HEADER
+Id=5527
+Link=http://at-zammad/#ticket/zoom/5527
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Opex Corp. (ID=380, Number=40231, Country=US)
+Commission=Opex Corp., Material Handling, with HC (ID=451, Number=451)
+Number=705527
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=thollabaugh@opex.com (ID=1910, FirstName=Timothy, LastName=Hollabaugh)
+CreatedBy=thollabaugh@opex.com (ID=1910, FirstName=Timothy, LastName=Hollabaugh)
+Type=
+TimeUnit=
+CreatedAt=03.05.2023 14:45:14 +00:00
+UpdatedAt=26.05.2023 06:05:49 +00:00
+CloseAt=26.05.2023 06:05:49 +00:00
+ArticlesCount=2
+
+### TITLE
+EtherCAT Master timing problems
+
+### ARTICLE00_HEADER
+Id=29349
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.05.2023 14:45:15 +00:00
+UpdatedAt=03.05.2023 14:45:15 +00:00
+
+### ARTICLE00_SUBJECT
+EtherCAT Master timing problems
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>I’m with Opex, and we use your EtherCAT Master library in some of our robots. We’ve been running into a few timing issues lately. It runs on a small Industrial PC with INtime and three Elmo servo drives as slaves. We use the servos in CSP mode, so we send new position and velocity points every 2ms with the EtherCAT frame for them to follow. The timing of these points is critical, since they define the motion profile for the drive. Any timing issues can result in unexpected violent movement from the bot.</p>
+<p> </p>
+<p>Our timing problems stem from the CPU hardware and INtime, sometimes causing cycle times of 5-15ms instead of the normal 2ms. We’re working with INtime support to try and fix these for good, but we’re also looking at several workarounds. One of them is to calculate the position and velocity for the time the frame gets sent out, taking into account any long cycle times. However, this didn’t have the effect we expected, since calculating positions like this relies in the time between frames as we see in SW to match the time between frames as seen on the bus. We hooked up wireshark and a network switch, along with a wireshark lua script to extract the PDOs, so we could look at the frames on the EtherCAT bus itself. This showed us the timing between frames on the bus, and we could use the position difference to calculate the time between frames that the SW saw. We found that the time between cycles on the bus didn’t match the time between cycles that SW saw, and was instead delayed by one cycle. Here’s the results of the test:</p>
+<p><span> n time s Δtime us position velocity Δposition calc.Δtime status<br> 16696 15.150991 1901 6421290 478536 953 1991.49 Operation enabled<br> 16698 15.152985 1994 6422247 478536 957 1999.85 Operation enabled<br> 16702 15.155229 2244 6423203 478536 956 1997.76 Operation enabled<br> 16704 15.167066 11837 6424164 478536 961 2008.21 Operation enabled<br> 16708 15.179029 11963 6429918 478536 5754 12024.2 Operation enabled<br> 16710 15.191066 12037 6435667 478536 5749 12013.7 Quick stop active<br> 16714 15.193080 2014 6441428 478536 5761 12038.8 Quick stop active<br> 16716 15.194938 1858 6442387 478536 959 2004.03 Quick stop active<br> 16718 15.196952 2014 6442387 478536 0 0 Quick stop active<br> 16720 15.198964 2012 6442387 478536 0 0 Quick stop active<br> 16722 15.200957 1993 6442387 478536 0 0 Quick stop active</span></p>
+<p>This test was run with an artificial extra 10ms delay in cycle times for 3 cycles, so we know that the internals of the EtherCAT Master library aren’t affected. This makes it clear that the cycle time that the SW calculated positions for doesn’t make it to the bus until one cycle after the cycle they were calculated for. This means the drives get the wrong positions at the wrong time, and react violently.</p>
+<p> </p>
+<p>The EtherCAT Master documentation doesn’t show a full cycle between the S task and the network:</p>
+<p><img style="max-width:100%;width:6.6562in;max-height:2.8437in;width:639px;max-height:273px;" src="/api/v1/ticket_attachment/5527/29349/123405?view=inline"></p>
+<p> </p>
+<p>Is there anything we can do to remove the extra cycle between ecatExecJob(eUsrJob_SendAllCycFrames, EC_NULL) and when the frame appears on the bus? Is this intended behavior or is there a bug in the library?</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Tim Hollabaugh</p>
+<p>Opex Corporation</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=29351
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.05.2023 14:55:53 +00:00
+UpdatedAt=03.05.2023 14:55:54 +00:00
+
+### ARTICLE01_SUBJECT
+EtherCAT Master timing problems
+
+### ARTICLE01_BODY
+Hi Tim,<div><br></div><div>unfortunately, there is no delay between the all to <span>eUsrJob_SendAllCycFrames and giving the frames to the NIC.</span>
+</div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, May 3, 2023 at 4:45:15 PM, Timothy Hollabaugh wrote:<br><br><div>
+<p>Hello,</p>
+<p> </p>
+<p>I’m with Opex, and we use your EtherCAT Master library in some of our robots. We’ve been running into a few timing issues lately. It runs on a small Industrial PC with INtime and three Elmo servo drives as slaves. We use the servos in CSP mode, so we send new position and velocity points every 2ms with the EtherCAT frame for them to follow. The timing of these points is critical, since they define the motion profile for the drive. Any timing issues can result in unexpected violent movement from the bot.</p>
+<p> </p>
+<p>Our timing problems stem from the CPU hardware and INtime, sometimes causing cycle times of 5-15ms instead of the normal 2ms. We’re working with INtime support to try and fix these for good, but we’re also looking at several workarounds. One of them is to calculate the position and velocity for the time the frame gets sent out, taking into account any long cycle times. However, this didn’t have the effect we expected, since calculating positions like this relies in the time between frames as we see in SW to match the time between frames as seen on the bus. We hooked up wireshark and a network switch, along with a wireshark lua script to extract the PDOs, so we could look at the frames on the EtherCAT bus itself. This showed us the timing between frames on the bus, and we could use the position difference to calculate the time between frames that the SW saw. We found that the time between cycles on the bus didn’t match the time between cycles that SW saw, and was instead delayed by one cycle. Here’s the results of the test:</p>
+<p><span> n time s Δtime us position velocity Δposition calc.Δtime status<br> 16696 15.150991 1901 6421290 478536 953 1991.49 Operation enabled<br> 16698 15.152985 1994 6422247 478536 957 1999.85 Operation enabled<br> 16702 15.155229 2244 6423203 478536 956 1997.76 Operation enabled<br> 16704 15.167066 11837 6424164 478536 961 2008.21 Operation enabled<br> 16708 15.179029 11963 6429918 478536 5754 12024.2 Operation enabled<br> 16710 15.191066 12037 6435667 478536 5749 12013.7 Quick stop active<br> 16714 15.193080 2014 6441428 478536 5761 12038.8 Quick stop active<br> 16716 15.194938 1858 6442387 478536 959 2004.03 Quick stop active<br> 16718 15.196952 2014 6442387 478536 0 0 Quick stop active<br> 16720 15.198964 2012 6442387 478536 0 0 Quick stop active<br> 16722 15.200957 1993 6442387 478536 0 0 Quick stop active</span></p>
+<p>This test was run with an artificial extra 10ms delay in cycle times for 3 cycles, so we know that the internals of the EtherCAT Master library aren’t affected. This makes it clear that the cycle time that the SW calculated positions for doesn’t make it to the bus until one cycle after the cycle they were calculated for. This means the drives get the wrong positions at the wrong time, and react violently.</p>
+<p> </p>
+<p>The EtherCAT Master documentation doesn’t show a full cycle between the S task and the network:</p>
+<p><img style="max-width:100%;max-width:100%;width:6.6562in;max-height:2.8437in;width:639px;max-height:273px;" src="/api/v1/ticket_attachment/5527/29351/123411?view=inline"></p>
+<p> </p>
+<p>Is there anything we can do to remove the extra cycle between ecatExecJob(eUsrJob_SendAllCycFrames, EC_NULL) and when the frame appears on the bus? Is this intended behavior or is there a bug in the library?</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Tim Hollabaugh</p>
+<p>Opex Corporation</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

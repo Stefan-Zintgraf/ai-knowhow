@@ -1,0 +1,216 @@
+### HEADER
+Id=8560
+Link=http://at-zammad/#ticket/zoom/8560
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=YASKAWA Europe GmbH (ID=174, Number=60502, Country=DE)
+Commission=VIPA, PLC (ID=197, Number=197)
+Number=708560
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=florian.weber@yaskawa.eu (ID=1048, FirstName=Florian, LastName=Weber)
+CreatedBy=florian.weber@yaskawa.eu (ID=1048, FirstName=Florian, LastName=Weber)
+Type=
+TimeUnit=
+CreatedAt=25.07.2024 12:19:02 +00:00
+UpdatedAt=21.08.2024 09:29:09 +00:00
+CloseAt=21.08.2024 09:29:09 +00:00
+ArticlesCount=4
+
+### TITLE
+Kompatibilität SDK und EtherCAT Master Stack
+
+### ARTICLE00_HEADER
+Id=47920
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.07.2024 12:19:02 +00:00
+UpdatedAt=25.07.2024 12:19:03 +00:00
+
+### ARTICLE00_SUBJECT
+Kompatibilität SDK und EtherCAT Master Stack
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Acontis Team,</p>
+<p> </p>
+<p>Wir verwenden gerade eine folgende Versionen Ihres Stacks für unseren EtherCAT Master:</p>
+<p> </p>
+<p>EtherCAT Master Stack: V3.1.5.01</p>
+<p>SDK im Engineering Tool: V3.6.13</p>
+<p> </p>
+<p>Können wir den EtherCAT Master Stack auf die Version 3.2.x upgraden ohne Kompatibilitätsprobleme zu bekommen? (Wir müssne aktuell im SDK auf V3.6.13 bleiben).</p>
+<p> </p>
+<p>Gibt es eine Empfehlung Ihrerseits auf V3.2 für den EtherCAT Master zu wechseln? Oder reicht es aus auf die letzte Version von 3.1 zu wechseln.</p>
+<p> </p>
+<p>Viele Grüße</p>
+<p> </p>
+<div>
+<p><b>Florian Weber</b></p>
+</div>
+<div>
+<p>Software Engineer</p>
+</div>
+<div>
+<p><span>Firmware<br>
+<br>
+</span></p>
+</div>
+<p><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" title="http://www.yaskawa.eu.com/" target="_blank"><span style="color:blue;"></span></a><span><br>
+<br>
+</span></p>
+<div>
+<p><b>YASKAWA Europe GmbH</b></p>
+</div>
+<div>
+<p>Drives Motion Controls Division</p>
+</div>
+<div>
+<p>Hugo-Junkers-Straße 13</p>
+</div>
+<div>
+<p>90411 Nürnberg</p>
+</div>
+<div>
+<p>Germany</p>
+</div>
+<div>
+<p><span><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.yaskawa.eu.com</span></a><br>
+<br>
+</span></p>
+</div>
+<div>
+<p><b>P </b>+49 911 47771 767</p>
+</div>
+<div>
+<p><b>F </b>+49 911 47771 9767</p>
+</div>
+<div>
+<p><a href="mailto:florian.weber@yaskawa.eu"><span style="color:blue;">florian.weber@yaskawa.eu</span></a></p>
+</div>
+<p> </p>
+</div><br>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------------<br> Geschaeftsfuehrer/Managing Directors: Marcus Mead, Bobbie Linkenbach <br> Amtsgericht/Local Court: Frankfurt, Commercial register no. 88369 <br> Headquarter: YASKAWA Europe GmbH, Philipp-Reis-Str. 6, D-65795 Hattersheim<br> ------------------------------------------------------------------------------------------------------------------------------<br> CONFIDENTIALITY: This e-mail and any attachments are confidential and may also be privileged.<br> If you are not the named recipient, please notify the sender immediately and do not disclose the contents to another person,<br> use it for any purpose, or store or copy the information in any medium.
+
+### ARTICLE01_HEADER
+Id=47933
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=25.07.2024 13:28:14 +00:00
+UpdatedAt=25.07.2024 13:28:14 +00:00
+
+### ARTICLE01_BODY
+<div>Hallo Martin,</div><div><br></div>Im EC-Engineer SDK 3.6.13 steckt den RAS Client V3.1.4.15.<div>Damit können sie nur in EC-Master V3.1 bleiben. Wenn sie den Master auf V3.2 updaten wollen, müssen sie den EC-Engineer SDK (zumindest den RAS Client) auch updaten.</div><div><br></div><div>Oder? Ging es nur den Master im EC-Engineer auf V3.2 zu updaten?</div><div><br></div><div>Grüße,</div><div>Cyril</div>
+
+### ARTICLE02_HEADER
+Id=47938
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=25.07.2024 14:22:31 +00:00
+UpdatedAt=25.07.2024 14:22:31 +00:00
+
+### ARTICLE02_BODY
+@Cyril:<div>Ich habe denen letzte Woche gesagt, wenn die auf EC-Master v3.2 wollen, dann müssen sie auch auf EC-Engineer v3.9 gehen. </div><div>Dann habe ich ja diverse Tests gemacht wo dann die Probleme auf kamen, siehe Mails "<span>Crash bei OD Zugriff" und "EEPROM" etc.</span>
+</div><div>Darauf hin habe ich Ihnen gesagt, dass v3.9 leider nicht stabil genug ist, weshalb sie erst in 2-3 Monaten upgraden sollten, siehe</div><div><div><a href="http://at-zammad/#ticket/zoom/8496" title="http://at-zammad/#ticket/zoom/8496" rel="nofollow noreferrer noopener">http://at-zammad/#ticket/zoom/8496</a></div></div><div>... d.h. sie sollte vorerst auf EC-Master v3.1 bleiben. </div>
+
+### ARTICLE03_HEADER
+Id=47946
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.07.2024 15:46:24 +00:00
+UpdatedAt=25.07.2024 15:46:25 +00:00
+
+### ARTICLE03_SUBJECT
+Kompatibilität SDK und EtherCAT Master Stack
+
+### ARTICLE03_BODY
+Hallo Herr Weber,<div><br></div><div>Im EC-Engineer SDK 3.6.13 steckt den RAS Client V3.1.4.15.<div>Damit können Sie sich nur mit EC-Master bis V3.1 verbinden. Wenn Sie den Master auf V3.2 updaten wollen, müssten Sie den EC-Engineer SDK (zumindest den RAS Client) auch updaten.</div>
+</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, July 25, 2024 at 2:19:02 PM, Florian Weber wrote:<br><br><div>
+<p>Hallo Acontis Team,</p>
+<p> </p>
+<p>Wir verwenden gerade eine folgende Versionen Ihres Stacks für unseren EtherCAT Master:</p>
+<p> </p>
+<p>EtherCAT Master Stack: V3.1.5.01</p>
+<p>SDK im Engineering Tool: V3.6.13</p>
+<p> </p>
+<p>Können wir den EtherCAT Master Stack auf die Version 3.2.x upgraden ohne Kompatibilitätsprobleme zu bekommen? (Wir müssne aktuell im SDK auf V3.6.13 bleiben).</p>
+<p> </p>
+<p>Gibt es eine Empfehlung Ihrerseits auf V3.2 für den EtherCAT Master zu wechseln? Oder reicht es aus auf die letzte Version von 3.1 zu wechseln.</p>
+<p> </p>
+<p>Viele Grüße</p>
+<p> </p>
+<div>
+<p><b>Florian Weber</b></p>
+</div>
+<div>
+<p>Software Engineer</p>
+</div>
+<div>
+<p><span>Firmware<br>
+<br>
+</span></p>
+</div>
+<p><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" title="http://www.yaskawa.eu.com/" target="_blank"><span style="color:blue;"></span></a><span><br>
+<br>
+</span></p>
+<div>
+<p><b>YASKAWA Europe GmbH</b></p>
+</div>
+<div>
+<p>Drives Motion Controls Division</p>
+</div>
+<div>
+<p>Hugo-Junkers-Straße 13</p>
+</div>
+<div>
+<p>90411 Nürnberg</p>
+</div>
+<div>
+<p>Germany</p>
+</div>
+<div>
+<p><span><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.yaskawa.eu.com</span></a><br>
+<br>
+</span></p>
+</div>
+<div>
+<p><b>P </b>+49 911 47771 767</p>
+</div>
+<div>
+<p><b>F </b>+49 911 47771 9767</p>
+</div>
+<div>
+<p><a href="mailto:florian.weber@yaskawa.eu"><span style="color:blue;">florian.weber@yaskawa.eu</span></a></p>
+</div>
+<p> </p>
+</div>
+<br>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------------<br> Geschaeftsfuehrer/Managing Directors: Marcus Mead, Bobbie Linkenbach <br> Amtsgericht/Local Court: Frankfurt, Commercial register no. 88369 <br> Headquarter: YASKAWA Europe GmbH, Philipp-Reis-Str. 6, D-65795 Hattersheim<br> ------------------------------------------------------------------------------------------------------------------------------<br> CONFIDENTIALITY: This e-mail and any attachments are confidential and may also be privileged.<br> If you are not the named recipient, please notify the sender immediately and do not disclose the contents to another person,<br> use it for any purpose, or store or copy the information in any medium.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,187 @@
+### HEADER
+Id=2042
+Link=http://at-zammad/#ticket/zoom/2042
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Auris Surgical (ID=335, Number=41054, Country=US)
+Commission=Auris Surgical, ARES (ID=401, Number=401)
+Number=702042
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=pwisanuv@its.jnj.com (ID=396, FirstName=Piyamate, LastName=Wisanuvej)
+CreatedBy=pwisanuv@its.jnj.com (ID=396, FirstName=Piyamate, LastName=Wisanuvej)
+Type=
+TimeUnit=
+CreatedAt=08.12.2021 18:10:37 +00:00
+UpdatedAt=14.12.2021 07:25:40 +00:00
+CloseAt=14.12.2021 07:25:40 +00:00
+ArticlesCount=3
+
+### TITLE
+Potential issue in notification processor in example code
+
+### ARTICLE00_HEADER
+Id=10717
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=08.12.2021 18:10:37 +00:00
+UpdatedAt=08.12.2021 18:10:37 +00:00
+
+### ARTICLE00_SUBJECT
+Potential issue in notification processor in example code
+
+### ARTICLE00_BODY
+<div>Dear Acontis Support Team,</div><div> </div><div>I have found a potential issue in the example code provided. Could you please confirm whether it's true or not?</div><div> </div><div>In Examples/Common/EcNotification.cpp, there is ecatNotify() function which is a callback to process notifications. In that function, there is a section that processes the mailbox related notifications:</div><div> </div><div>switch dwCode</div><div>case EC_NOTIFY_MBOXRCV<br>
+</div><div>switch (pMbxTfer-&gt;eMbxTferType)</div><div>case eMbxTferType_COE_SDO_DOWNLOAD<br>
+</div><div>case eMbxTferType_COE_SDO_UPLOAD</div><div> </div><div>In those two SDO DOWNLOAD/UPLOAD cases, if the transfer has an error, it logs a message. I believe the message creation is problematic.</div><div>
+<ul>
+<li>EcLogMsg(EC_LOG_LEVEL_ERROR, (pEcLogContext, EC_LOG_LEVEL_ERROR, ecatGetText(EC_TXT_COE_SDO_DNLD_ERROR), pMbxTfer-&gt;eTferStatus, pMbxTfer-&gt;dwErrorCode, ecatGetText(pMbxTfer-&gt;dwErrorCode)));<br>
+<br>
+</li>
+<li>EcLogMsg(EC_LOG_LEVEL_ERROR, (pEcLogContext, EC_LOG_LEVEL_ERROR, ecatGetText(EC_TXT_COE_SDO_UPLD_ERROR), pMbxTfer-&gt;eTferStatus, pMbxTfer-&gt;dwErrorCode, ecatGetText(pMbxTfer-&gt;dwErrorCode)));<br>
+</li>
+</ul>
+</div><div> </div><div> ecatGetText(EC_TXT_COE_SDO_DNLD_ERROR) gives you <i>"CoE - SDO download failure, EtherCAT address=%d - Index=0x%x SubIndex=0x%x CompleteAccess=%d, statVal=%d, errCode=0x%x (%s)"</i> which is passed on to snprintf() function.</div><div> </div><div>
+<i>snprintf()</i> requires 7 parameters following the text to populate those % tokens. However, only 3 parameters are supplied.</div><div> </div><div>Best regards,</div><div>Piyamate</div>
+
+### ARTICLE01_HEADER
+Id=10878
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.12.2021 09:55:08 +00:00
+UpdatedAt=13.12.2021 09:55:12 +00:00
+
+### ARTICLE01_SUBJECT
+Potential issue in notification processor in example code
+
+### ARTICLE01_BODY
+<div>Hi Piyamate,</div><div>thank you for reporting this issue.</div><div>Indeed this is a bug we introduced in the Demo refactoring started with version V3.0.</div><div><br></div><div>It will be fixed in the next version.</div><div><br></div><div></div><div data-signature="true" data-signature-id="2">
+<div>
+<span>Best regards,</span><br>
+</div>
+<div>Holger</div>
+<div><br></div>
+</div><div><blockquote type="cite">Am Mittwoch, 8. Dezember 2021, 19:10:37, schrieb Piyamate Wisanuvej:<br><br><div>Dear Acontis Support Team,</div>
+<div> </div>
+<div>I have found a potential issue in the example code provided. Could you please confirm whether it's true or not?</div>
+<div> </div>
+<div>In Examples/Common/EcNotification.cpp, there is ecatNotify() function which is a callback to process notifications. In that function, there is a section that processes the mailbox related notifications:</div>
+<div> </div>
+<div>switch dwCode</div>
+<div>case EC_NOTIFY_MBOXRCV<br>
+</div>
+<div>switch (pMbxTfer-&gt;eMbxTferType)</div>
+<div>case eMbxTferType_COE_SDO_DOWNLOAD<br>
+</div>
+<div>case eMbxTferType_COE_SDO_UPLOAD</div>
+<div> </div>
+<div>In those two SDO DOWNLOAD/UPLOAD cases, if the transfer has an error, it logs a message. I believe the message creation is problematic.</div>
+<div>
+<ul>
+<li>EcLogMsg(EC_LOG_LEVEL_ERROR, (pEcLogContext, EC_LOG_LEVEL_ERROR, ecatGetText(EC_TXT_COE_SDO_DNLD_ERROR), pMbxTfer-&gt;eTferStatus, pMbxTfer-&gt;dwErrorCode, ecatGetText(pMbxTfer-&gt;dwErrorCode)));<br>
+<br>
+</li>
+<li>EcLogMsg(EC_LOG_LEVEL_ERROR, (pEcLogContext, EC_LOG_LEVEL_ERROR, ecatGetText(EC_TXT_COE_SDO_UPLD_ERROR), pMbxTfer-&gt;eTferStatus, pMbxTfer-&gt;dwErrorCode, ecatGetText(pMbxTfer-&gt;dwErrorCode)));<br>
+</li>
+</ul>
+</div>
+<div> </div>
+<div> ecatGetText(EC_TXT_COE_SDO_DNLD_ERROR) gives you <i>"CoE - SDO download failure, EtherCAT address=%d - Index=0x%x SubIndex=0x%x CompleteAccess=%d, statVal=%d, errCode=0x%x (%s)"</i> which is passed on to snprintf() function.</div>
+<div> </div>
+<div>
+<i>snprintf()</i> requires 7 parameters following the text to populate those % tokens. However, only 3 parameters are supplied.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Piyamate</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE02_HEADER
+Id=10915
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.12.2021 19:26:17 +00:00
+UpdatedAt=13.12.2021 19:26:17 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Potential issue in notification processor in example code [Ticket#702042]
+
+### ARTICLE02_BODY
+<div>
+<div>
+<div dir="ltr">Hi Holger,</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Thanks for your confirmation.</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">Piyamate</div>
+</div>
+<div> </div>
+</div><hr>
+<div dir="ltr">
+<b>From:</b> Holger Oelhaf via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Monday, December 13, 2021 1:55:12 AM<br>
+<b>To:</b> Leibrandt, Konrad [ETHUS] &lt;KLeibran@ITS.JNJ.com&gt;; Wisanuvej, Piyamate [ETHUS Non-J&amp;J] &lt;PWisanuv@ITS.JNJ.com&gt;<br>
+<b>Cc:</b> j.waters@acontis.com &lt;j.waters@acontis.com&gt;<br>
+<b>Subject:</b> [EXTERNAL] RE: Potential issue in notification processor in example code [Ticket#702042] <div> </div>
+</div><div>
+<div>Hi Piyamate,</div>
+<div>thank you for reporting this issue.</div>
+<div>Indeed this is a bug we introduced in the Demo refactoring started with version V3.0.</div>
+<div> </div>
+<div>It will be fixed in the next version.</div>
+<div> </div>
+<div>
+<div>Best regards,<br>
+</div>
+<div>Holger</div>
+<div> </div>
+</div>
+<div>
+<blockquote type="cite"> Am Mittwoch, 8. Dezember 2021, 19:10:37, schrieb Piyamate Wisanuvej:<br>
+<br>
+<div>Dear Acontis Support Team,</div>
+<div> </div>
+<div>I have found a potential issue in the example code provided. Could you please confirm whether it's true or not?</div>
+<div> </div>
+<div>In Examples/Common/EcNotification.cpp, there is ecatNotify() function which is a callback to process notifications. In that function, there is a section that processes the mailbox related notifications:</div>
+<div> </div>
+<div>switch dwCode</div>
+<div>case EC_NOTIFY_MBOXRCV<br>
+</div>
+<div>switch (pMbxTfer-&gt;eMbxTferType)</div>
+<div>case eMbxTferType_COE_SDO_DOWNLOAD<br>
+</div>
+<div>case eMbxTferType_COE_SDO_UPLOAD</div>
+<div> </div>
+<div>In those two SDO DOWNLOAD/UPLOAD cases, if the transfer has an error, it logs a message. I believe the message creation is problematic.</div>
+<div>
+<ul>
+<li>EcLogMsg(EC_LOG_LEVEL_ERROR, (pEcLogContext, EC_LOG_LEVEL_ERROR, ecatGetText(EC_TXT_COE_SDO_DNLD_ERROR), pMbxTfer-&gt;eTferStatus, pMbxTfer-&gt;dwErrorCode, ecatGetText(pMbxTfer-&gt;dwErrorCode)));<br>
+<br>
+</li>
+<li>EcLogMsg(EC_LOG_LEVEL_ERROR, (pEcLogContext, EC_LOG_LEVEL_ERROR, ecatGetText(EC_TXT_COE_SDO_UPLD_ERROR), pMbxTfer-&gt;eTferStatus, pMbxTfer-&gt;dwErrorCode, ecatGetText(pMbxTfer-&gt;dwErrorCode)));<br>
+</li>
+</ul>
+</div>
+<div> </div>
+<div>ecatGetText(EC_TXT_COE_SDO_DNLD_ERROR) gives you <i>"CoE - SDO download failure, EtherCAT address=%d - Index=0x%x SubIndex=0x%x CompleteAccess=%d, statVal=%d, errCode=0x%x (%s)"</i> which is passed on to snprintf() function.</div>
+<div> </div>
+<div>
+<i>snprintf()</i> requires 7 parameters following the text to populate those % tokens. However, only 3 parameters are supplied.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Piyamate</div>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>

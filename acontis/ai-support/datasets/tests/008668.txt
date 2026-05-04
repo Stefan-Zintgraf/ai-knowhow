@@ -1,0 +1,141 @@
+### HEADER
+Id=8668
+Link=http://at-zammad/#ticket/zoom/8668
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=none
+Commission=none
+Number=708668
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=trevor@petalsurgical.com (ID=2763, FirstName=Trevor, LastName=Clark)
+CreatedBy=trevor@petalsurgical.com (ID=2763, FirstName=Trevor, LastName=Clark)
+Type=
+TimeUnit=
+CreatedAt=14.08.2024 00:30:33 +00:00
+UpdatedAt=16.08.2024 02:51:17 +00:00
+CloseAt=16.08.2024 02:51:17 +00:00
+ArticlesCount=3
+
+### TITLE
+EC-Master Python API Implementation
+
+### ARTICLE00_HEADER
+Id=48658
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.08.2024 00:30:35 +00:00
+UpdatedAt=14.08.2024 00:30:35 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Master Python API Implementation
+
+### ARTICLE00_BODY
+<div dir="ltr">Hello Troy and team,<div>I've starting working with the EC-Engineer and EC-Master. It was pretty straightforward to configure and launch the master for a simple network with just the Beckhoff EK1100 included. I then tried to launch the master with the EC-Master python wrapper, but I think I'm missing something. I'm getting the following error:</div>
+<div><ul>
+<li>C:\Users\trevo\Downloads\EC-Master-Python-V3.2-Windows-x86_64Bit-Eval\Bin\Windows&gt;EcMasterDemoPython.bat<br>Cannot initialize EtherCAT-Master: Unknown Error 0x9811000C (0x9811000C)<br>Press any key to continue . . .</li>
+<li>Looking up the error code, it appears to be an ENI file error --&gt; 0x9811000C: APP: Not found (e.g. Network Information File ENI not found or API called with invalid slave ID)<br>
+</li>
+</ul></div>
+<div>I'm not sure how the demo scripts configure the network (I was able to run the master using from cmd line using EcMasterDemo.exe, so I think my ENI file is valid, but I must be missing some configuration steps before launching the python demos (<span style="color:rgb(55,71,79);">EcMasterDemoPythonInteractive.bat </span>, <span style="color:rgb(55,71,79);">EcMasterDemoPythonInteractive.bat</span>, &amp; <span style="color:rgb(55,71,79);">EcDemoAppGui.py</span>). I dug just a little bit, and a couple of things seemed to be hardcoded, which did not match my EcMasterDemo.exe configuration...</div>
+<div><ul>
+<li>The ENI path is hardcoded as ENI.xml (However, I the error persisted even when I set a valid path)</li>
+<li>The IP is using the loopback host, rather than the local ethernet (Similarly, setting this to the local port did not fix this)</li>
+<li>WinPcap is being used for the link layer, whereas the core application let me use the ndis flag. I don't have winpcap installed, because it's not listed in the acontis python requirements section (<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-python/introduction.html#requirements" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-python/introduction.html#requirements</a>), and winpcap is only supported through Windows 2007 (<a href="https://www.winpcap.org/install/" rel="nofollow noreferrer noopener" target="_blank">https://www.winpcap.org/install/</a>). I did try to update this with the ndis type objects for the GUI, but I haven't gotten that to work yet either.</li>
+</ul></div>
+<div>
+<div>Do you have any thoughts or tips for resolving this error and getting started with the python implementation?</div>
+<div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr">-Trevor</div></div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=48671
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.08.2024 09:23:36 +00:00
+UpdatedAt=14.08.2024 09:23:38 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Master Python API Implementation
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>see answers below.</div><div><br></div><div>Best Regards,</div><div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div>
+<blockquote type="cite">On Wednesday, August 14, 2024 at 2:30:35 AM, Trevor Clark wrote:<br><br><div dir="ltr">Hello Troy and team,<div>I've starting working with the EC-Engineer and EC-Master. It was pretty straightforward to configure and launch the master for a simple network with just the Beckhoff EK1100 included. I then tried to launch the master with the EC-Master python wrapper, but I think I'm missing something. I'm getting the following error:</div>
+<div><ul>
+<li>C:\Users\trevo\Downloads\EC-Master-Python-V3.2-Windows-x86_64Bit-Eval\Bin\Windows&gt;EcMasterDemoPython.bat<br>Cannot initialize EtherCAT-Master: Unknown Error 0x9811000C (0x9811000C)<br>Press any key to continue . . .</li>
+</ul></div>
+</div>
+</blockquote>MG: This means error "not found". The Python kit requires also the necessary Master libraries. E.g. they are included in another kit like "<span>EC-Master-V3.2-Windows-x86_64Bit-Eval.zip". This kit must be unpacked into the same directory like you unpacked the Python kit.</span>
+</div>
+<div>
+<br><blockquote type="cite"><div dir="ltr"><div><ul>
+<li>Looking up the error code, it appears to be an ENI file error --&gt; 0x9811000C: APP: Not found (e.g. Network Information File ENI not found or API called with invalid slave ID)</li>
+</ul></div></div></blockquote>MG: Correct. The error description above is "Unknown Error". This means normally that EcMaster.dll is missing, because if EcMaster.dll is available, it will be converted into "Not found".</div>
+<div>
+<br><blockquote type="cite"><div dir="ltr">
+<div>I'm not sure how the demo scripts configure the network (I was able to run the master using from cmd line using EcMasterDemo.exe, so I think my ENI file is valid, but I must be missing some configuration steps before launching the python demos (<span style="color:rgb(55,71,79);">EcMasterDemoPythonInteractive.bat </span>, <span style="color:rgb(55,71,79);">EcMasterDemoPythonInteractive.bat</span>, &amp; <span style="color:rgb(55,71,79);">EcDemoAppGui.py</span>). I dug just a little bit, and a couple of things seemed to be hardcoded, which did not match my EcMasterDemo.exe configuration...</div>
+<div><ul>
+<li>The ENI path is hardcoded as ENI.xml (However, I the error persisted even when I set a valid path)</li>
+</ul></div>
+</div></blockquote>MG: ENI.xml is just an example. You can simply modify "<span>EcMasterDemoPython.bat".</span>
+</div>
+<div>
+<br><blockquote type="cite"><div dir="ltr"><div><ul>
+<li>The IP is using the loopback host, rather than the local ethernet (Similarly, setting this to the local port did not fix this)</li>
+</ul></div></div></blockquote>MG: Correct. This is also just an example that you can see how to set the correct IP address.</div>
+<div>
+<br><blockquote type="cite"><div dir="ltr"><div><ul>
+<li>WinPcap is being used for the link layer, whereas the core application let me use the ndis flag. I don't have winpcap installed, because it's not listed in the acontis python requirements section (<a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-python/introduction.html#requirements" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-python/introduction.html#requirements</a>), and winpcap is only supported through Windows 2007 (<a href="https://www.winpcap.org/install/" rel="nofollow noreferrer noopener" target="_blank">https://www.winpcap.org/install/</a>). I did try to update this with the ndis type objects for the GUI, but I haven't gotten that to work yet either.</li>
+</ul></div></div></blockquote>MG: If you want to use NDIS, you can simply change link layer parameters to "ndis 127.0.0.1 1". NOTE: This require that you have installed our NDIS Protocol Driver: "<span>EcatNdisSetup-x86_64Bit.msi".</span>
+</div>
+<div>
+<br><blockquote type="cite">
+<div dir="ltr">
+<div>
+<div>Do you have any thoughts or tips for resolving this error and getting started with the python implementation?</div>
+<div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr">-Trevor</div></div>
+</div>
+</div>
+<br>
+</blockquote>
+</div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=48703
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=16.08.2024 02:51:17 +00:00
+UpdatedAt=16.08.2024 02:51:17 +00:00
+
+### ARTICLE02_BODY
+<div>Hi Martin,<br>
+</div><div><br></div><div>I checked in with Trevor, and your response answered all of his questions. </div><div><br></div><div>Thank you!</div>

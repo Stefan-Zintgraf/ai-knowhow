@@ -1,0 +1,103 @@
+### HEADER
+Id=4275
+Link=http://at-zammad/#ticket/zoom/4275
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ESAB Welding & Cutting GmbH (ID=96, Number=52010, Country=DE)
+Commission=ESAB, CNC-Steuerung (ID=107, Number=107)
+Number=704275
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=g.neeb@esab-cutting.de (ID=100, FirstName=Gerold, LastName=Neeb)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=07.11.2022 15:05:48 +00:00
+UpdatedAt=11.11.2022 11:00:58 +00:00
+CloseAt=11.11.2022 11:00:58 +00:00
+ArticlesCount=3
+
+### TITLE
+Update Request from ESAB Welding & Cutting GmbH
+
+### ARTICLE00_HEADER
+Id=22484
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.11.2022 15:05:48 +00:00
+UpdatedAt=07.11.2022 15:05:52 +00:00
+
+### ARTICLE00_SUBJECT
+Update Request from ESAB Welding & Cutting GmbH
+
+### ARTICLE00_BODY
+<p> </p><p>Dear Mr./Ms. Neeb,</p><p>thank you for your registration.<br>
+<br></p><p>First Name: Gerold<br> Last Name: Neeb <br> Company: ESAB Welding &amp; Cutting GmbH <br> Country: Deutschland <br> City: Karben <br> E-Mail: G.Neeb@esab-cutting.de <br> Request update for: <span>EC-Master,EC-Engineer <br></span>Update Type: <br> Operating System: Win 10 <br> Operating Sys. Version: <br> Any Questions?: <span>
+<br>
+<br></span></p><p><img src="/api/v1/ticket_attachment/4275/22484/94806?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH <br>Gartenstraße 46, 88212 Ravensburg/Germany <br> Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a>
+<br> eMail: <a href="mailto:sales@acontis.com">sales@acontis.com <br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/4275/22484/94805?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=22526
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=08.11.2022 09:58:31 +00:00
+UpdatedAt=08.11.2022 09:58:31 +00:00
+
+### ARTICLE01_BODY
+<div>  Die letzten Lieferungen auf ftp.acontis.com:<div>
+<br><div>
+<div>- EC-Engineer/3.7.4/EC-Engineer_Dongle_V3.7.4.zip</div>
+<div>- EC-Master_Windows/3.1.4.04/EC-Master-ClassA-AddOn-V3.1.4.04-Windows-x86_32Bit-SDK_Unrestricted.zip</div>
+<div>- EC-Master_Windows/3.1.4.04/EC-Master-V3.1.4.04-Windows-x86_32Bit-SDK_Unrestricted.zip</div>
+<div>- EC-Master_Windows_CE/3.1.4.03/EC-Master-V3.1.4.04-EC-WinCE-x86_32Bit-SDK_Unrestricted.zip</div>
+</div>
+<div><br></div>
+<div><b><span>EC-Master-V3.1.4.05-EC-WinCE muss noch gebaut und getestet werden!</span><br></b></div>
+</div>
+<div><br></div>
+</div><div>
+<div>Inhalt von <span>EC-Master-V3.1.4.04-EC-WinCE:</span>
+</div>
+<div>
+<img style="max-width:100%;width: 382px;max-width: 100%;" src="/api/v1/ticket_attachment/4275/22526/94909?view=inline"><br>
+</div>
+<div><br></div>
+<div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/4275/22526/94910?view=inline"><br>
+</div>
+<div><br></div>
+<div>
+<img style="max-width:100%;width: 552px;max-width: 100%;" src="/api/v1/ticket_attachment/4275/22526/94911?view=inline"><br>
+</div>
+<div><br></div>
+<div><p><a href="http://at-vbld-ec-3:8080/view/pbn/job/EC-Embedded/job/user%252Fpbn%252FV3.1.4.05/3/" rel="nofollow noreferrer noopener" target="_blank">http://at-vbld-ec-3:8080/view/pbn/job/EC-Embedded/job/user%252Fpbn%252FV3.1.4.05/3/</a></p></div>
+<div><br></div>
+<div><br></div>
+</div>
+
+### ARTICLE02_HEADER
+Id=22659
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.11.2022 11:00:27 +00:00
+UpdatedAt=11.11.2022 11:00:27 +00:00
+
+### ARTICLE02_SUBJECT
+Delivery for ESAB Welding & Cutting GmbH, CNC-Steuerung, Commission 45068 [Ticket#704275]
+
+### ARTICLE02_BODY
+<div>
+<p><span lang="EN-US">Dear Customer, </span><span lang="EN-US"></span></p>
+<p><span lang="EN-US">please find your new software version below: </span><span lang="EN-US"></span></p>
+<p><a href="https://downloads.acontis.com/2022/D-F/ESAB_Welding_&amp;_Cutting_GmbH_(45068)(DE)/EC-Master_Windows/3.1.4.05/EC-Master-ClassA-AddOn-V3.1.4.05-Windows-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank"><span lang="EN-US">https://downloads.acontis.com/2022/D-F/ESAB_Welding_&amp;_Cutting_GmbH_(45068)(DE)/EC-Master_Windows/3.1.4.05/EC-Master-ClassA-AddOn-V3.1.4.05-Windows-x86_32Bit-SDK_Unrestricted.zip</span></a><span lang="EN-US"></span></p>
+<p><a href="https://downloads.acontis.com/2022/D-F/ESAB_Welding_&amp;_Cutting_GmbH_(45068)(DE)/EC-Master_Windows/3.1.4.05/EC-Master-V3.1.4.05-Windows-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank"><span lang="EN-US">https://downloads.acontis.com/2022/D-F/ESAB_Welding_&amp;_Cutting_GmbH_(45068)(DE)/EC-Master_Windows/3.1.4.05/EC-Master-V3.1.4.05-Windows-x86_32Bit-SDK_Unrestricted.zip</span></a><span lang="EN-US"></span></p>
+<p><a href="https://downloads.acontis.com/2022/D-F/ESAB_Welding_&amp;_Cutting_GmbH_(45068)(DE)/EC-Master_Windows_CE/3.1.4.05/EC-Master-V3.1.4.05-EC-WinCE-x86_32Bit-SDK_Unrestricted.zip" rel="nofollow noreferrer noopener" target="_blank"><span lang="EN-US">https://downloads.acontis.com/2022/D-F/ESAB_Welding_&amp;_Cutting_GmbH_(45068)(DE)/EC-Master_Windows_CE/3.1.4.05/EC-Master-V3.1.4.05-EC-WinCE-x86_32Bit-SDK_Unrestricted.zip</span></a><span lang="EN-US"></span></p>
+<p><a href="https://downloads.acontis.com/2022/D-F/ESAB_Welding_&amp;_Cutting_GmbH_(45068)(DE)/EC-Engineer/3.7.5/EC-Engineer_Dongle_V3.7.5.zip" rel="nofollow noreferrer noopener" target="_blank"><span lang="EN-US">https://downloads.acontis.com/2022/D-F/ESAB_Welding_&amp;_Cutting_GmbH_(45068)(DE)/EC-Engineer/3.7.5/EC-Engineer_Dongle_V3.7.5.zip</span></a><span lang="EN-US"></span></p>
+<p><span lang="EN-US">Password: ECM88250 </span><span lang="EN-US"></span></p>
+<p><span lang="EN-US">Best Regards,</span><span lang="EN-US"> <br></span><span lang="EN-US">Paul Bussmann</span><span lang="EN-US"> <br></span><span lang="EN-US">________________</span><span lang="EN-US"> <br></span><span lang="EN-US">EtherCAT Support</span><span lang="EN-US"> <br></span><span lang="EN-US">acontis technologies GmbH</span><span lang="EN-US"> <br></span><span lang="EN-US">Gartenstraße 46</span><span lang="EN-US"> <br></span><span lang="EN-US">D-88212 Ravensburg</span><span lang="EN-US"> <br></span><span lang="EN-US">Http: </span><a href="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank"><span lang="EN-US">https://www.acontis.com</span></a><span lang="EN-US"> <br></span><span lang="EN-US">Phone: +49 (751) 56030-30</span><span lang="EN-US"> <br></span><span lang="EN-US">Fax: +49 (751) 56030-31</span><span lang="EN-US"> <br></span><span lang="EN-US">eMail: ecsupport@acontis.com</span><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">This is an automatic generated eMail.</span><span lang="EN-US"> </span></p>
+</div>

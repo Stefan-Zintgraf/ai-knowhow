@@ -1,0 +1,198 @@
+### HEADER
+Id=11173
+Link=http://at-zammad/#ticket/zoom/11173
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Murata Machinery, Unknown (ID=928, Number=928)
+Number=7011173
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=05.08.2025 23:51:08 +00:00
+UpdatedAt=01.09.2025 07:17:34 +00:00
+CloseAt=01.09.2025 07:17:34 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Master(Murata Machinery) [071]
+
+### ARTICLE00_HEADER
+Id=64106
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=05.08.2025 23:51:08 +00:00
+UpdatedAt=05.08.2025 23:51:12 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(Murata Machinery) [071]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(Murata Machinery) [071]
+
+We would like to confirm a few points regarding the cycle time explanation for your EC-Master product.
+In the user manual, under section "3.1.1 Standard Timing: Short output dead time", the diagram titled "Cyclic and acyclic frames" seems to show that the frame sent in Cycle1 by Job S is received in Cycle2 by Job P.
+Based on this, is it correct to understand that the available time between sending a frame and receiving it in the next cycle is not the full cycle time, but rather the cycle time minus the App.Task duration?
+We have outlined our concerns in detail, including the diagram, on Sheet No. 71 for your reference.
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=64128
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.08.2025 07:20:21 +00:00
+UpdatedAt=06.08.2025 07:20:24 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(Murata Machinery) [071]
+
+### ARTICLE01_BODY
+Hi Takuya,<div><br></div><div>the attachement is missing</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, August 6, 2025 at 1:51:08 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(Murata Machinery) [071]</div>
+<div><br></div>
+<div>We would like to confirm a few points regarding the cycle time explanation for your EC-Master product.</div>
+<div>In the user manual, under section "3.1.1 Standard Timing: Short output dead time", the diagram titled "Cyclic and acyclic frames" seems to show that the frame sent in Cycle1 by Job S is received in Cycle2 by Job P.</div>
+<div>Based on this, is it correct to understand that the available time between sending a frame and receiving it in the next cycle is not the full cycle time, but rather the cycle time minus the App.Task duration?</div>
+<div>We have outlined our concerns in detail, including the diagram, on Sheet No. 71 for your reference.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=64156
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=06.08.2025 09:26:26 +00:00
+UpdatedAt=06.08.2025 09:26:26 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Master(Murata Machinery) [071] [Ticket#7011173]
+
+### ARTICLE02_BODY
+Dear Cyril san
+
+sorry.
+I will send the attachment to you.
+
+Best regards,
+Takuya Fujikawa
+
+On 2025/08/06 16:20, Cyril Eyssautier via EC-Support wrote:
+> Hi Takuya,
+> 
+> the attachement is missing
+> 
+> Best Regards,
+> __________________________________________________________________________________________
+> Cyril Eyssautier
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30
+> acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> On Wednesday, August 6, 2025 at 1:51:08 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Master(Murata Machinery) [071]
+>>
+>> We would like to confirm a few points regarding the cycle time explanation for your EC-Master product.
+>> In the user manual, under section "3.1.1 Standard Timing: Short output dead time", the diagram titled "Cyclic and acyclic frames" seems to show that the frame sent in Cycle1 by Job S is received in Cycle2 by Job P.
+>> Based on this, is it correct to understand that the available time between sending a frame and receiving it in the next cycle is not the full cycle time, but rather the cycle time minus the App.Task duration?
+>> We have outlined our concerns in detail, including the diagram, on Sheet No. 71 for your reference.
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+
+### ARTICLE03_HEADER
+Id=64160
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.08.2025 09:36:16 +00:00
+UpdatedAt=06.08.2025 09:36:20 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(Murata Machinery) [071]
+
+### ARTICLE03_BODY
+Hi Takuya,<div><br></div><div>yes this is true.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, August 6, 2025 at 1:51:08 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(Murata Machinery) [071]</div>
+<div><br></div>
+<div>We would like to confirm a few points regarding the cycle time explanation for your EC-Master product.</div>
+<div>In the user manual, under section "3.1.1 Standard Timing: Short output dead time", the diagram titled "Cyclic and acyclic frames" seems to show that the frame sent in Cycle1 by Job S is received in Cycle2 by Job P.</div>
+<div>Based on this, is it correct to understand that the available time between sending a frame and receiving it in the next cycle is not the full cycle time, but rather the cycle time minus the App.Task duration?</div>
+<div>We have outlined our concerns in detail, including the diagram, on Sheet No. 71 for your reference.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

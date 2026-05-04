@@ -1,0 +1,123 @@
+### HEADER
+Id=509
+Link=http://at-zammad/#ticket/zoom/509
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Balluff SMT GmbH (ID=422, Number=0, Country=DE)
+Commission=Balluff SMT GmbH, Testgerät (ID=499, Number=499)
+Number=700509
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=wassili.hense@balluffstm.de (ID=305, FirstName=Wassili, LastName=Hense)
+CreatedBy=wassili.hense@balluffstm.de (ID=305, FirstName=Wassili, LastName=Hense)
+Type=
+TimeUnit=
+CreatedAt=28.04.2021 08:35:50 +00:00
+UpdatedAt=25.04.2022 12:52:36 +00:00
+CloseAt=30.04.2021 06:13:25 +00:00
+ArticlesCount=2
+
+### TITLE
+FindInpVarByName liefrt keine Daten.
+
+### ARTICLE00_HEADER
+Id=2767
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.04.2021 08:35:50 +00:00
+UpdatedAt=28.04.2021 08:35:50 +00:00
+
+### ARTICLE00_SUBJECT
+FindInpVarByName liefrt keine Daten.
+
+### ARTICLE00_BODY
+<div>Sehr geehrte Damen und Herren,</div><div> </div><div>beim Aufrufen der Methode CEcWrapperDotNet.FindInpVarByName(string szVariableName, DN_EC_T_PROCESS_VAR_INFO pProcessVarInfoEntry)</div><div>Parameter pProcessVarInfoEntry wird nicht aufgefüllt. Verhalten sich ähnlich auch FindInpVarByNameEx und FindOutpVarByNameEx.</div><div> </div><div>
+<img style="max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/509/2767/8787?view=inline"><br>
+</div><div> </div><div>Die Methode FindOutpVarByName(string szVariableName, out DN_EC_T_PROCESS_VAR_INFO pSlaveOutpVarInfo) funktioniert wie erwartet.</div><div> </div><div>Mit freundlichen Grüßen,<br>
+</div><div>Wassili Hense Kunden-Nr. 50197</div><br> <div>
+<b>Wassili Hense</b><br> Dipl.-Ing.(FH)<br> PD &amp; Maintainance<br><br><b>Balluff STM GmbH</b> · Prof.-Messerschmitt-Strasse 1 · 85579 Neubiberg · Germany<br>
+<b>Phone</b> +49 89 666371-55 · <b>Fax</b> +49 89 666371-11 · wassili.hense@balluffstm.de · <a href="http://www.balluffstm.de" rel="nofollow noreferrer noopener" title="http://www.balluffstm.de" target="_blank"> balluffstm.de</a> <br>
+<br>
+<a href="https://de-de.facebook.com/balluff.gmbh" rel="nofollow noreferrer noopener" title="https://de-de.facebook.com/balluff.gmbh" target="_blank"></a> <a href="https://www.linkedin.com/company/balluff-gmbh-germany" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/balluff-gmbh-germany" target="_blank">
+</a> <a href="https://twitter.com/balluff?lang=de" rel="nofollow noreferrer noopener" title="https://twitter.com/balluff?lang=de" target="_blank">
+</a> <a href="https://www.youtube.com/user/BalluffSensors" rel="nofollow noreferrer noopener" title="https://www.youtube.com/user/BalluffSensors" target="_blank">
+</a> <a href="https://www.xing.com/companies/balluffgmbh" rel="nofollow noreferrer noopener" title="https://www.xing.com/companies/balluffgmbh" target="_blank">
+</a> <a href="https://www.innovating-automation.blog/?lang=de" rel="nofollow noreferrer noopener" title="https://www.innovating-automation.blog/?lang=de" target="_blank">
+</a> <br><br>Place of Incorporation | Sitz der Gesellschaft: Neubiberg, Germany<br> Register Court | Registergericht: Amtsgericht Muenchen, Germany<br> Trade Register Number | Handelsregisternummer: HRB 86904<br> Managing Directors | Geschäftsführer: Florian Hermle<br> VAT ID Number | USt-ID: DE129467069<br><br>
+</div>
+
+### ARTICLE01_HEADER
+Id=2782
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.04.2021 12:10:46 +00:00
+UpdatedAt=28.04.2021 12:10:49 +00:00
+
+### ARTICLE01_SUBJECT
+FindInpVarByName liefrt keine Daten.
+
+### ARTICLE01_BODY
+Hallo Herr Hense,<div><br></div><div>Vielen Dank für die Information. Das ist leider ein Fehler. Er wird in der nächsten Version behoben sein.</div><div>Als Workaround, können Sie sich über die Funktion "<span>GetSlaveOutpVarInfo" alle Variablen vom jeweiligen Slave holen und darin von Hand nach der gewünschten Variablen suchen.</span>
+</div><div><br></div><div>Mit freundlichen Grüßen</div><div>Martin Gänzer</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Martin Gaenzer </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, April 28, 2021, 10:35:50 AM, Wassili Hense wrote:<br><br><div>Sehr geehrte Damen und Herren,</div>
+<div> </div>
+<div>beim Aufrufen der Methode CEcWrapperDotNet.FindInpVarByName(string szVariableName, DN_EC_T_PROCESS_VAR_INFO pProcessVarInfoEntry)</div>
+<div>Parameter pProcessVarInfoEntry wird nicht aufgefüllt. Verhalten sich ähnlich auch FindInpVarByNameEx und FindOutpVarByNameEx.</div>
+<div> </div>
+<div>
+<img style="max-width:100%;max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/509/2782/8837?view=inline"><br>
+</div>
+<div> </div>
+<div>Die Methode FindOutpVarByName(string szVariableName, out DN_EC_T_PROCESS_VAR_INFO pSlaveOutpVarInfo) funktioniert wie erwartet.</div>
+<div> </div>
+<div>Mit freundlichen Grüßen,<br>
+</div>
+<div>Wassili Hense Kunden-Nr. 50197</div>
+<br> <div>
+<b>Wassili Hense</b><br> Dipl.-Ing.(FH)<br> PD &amp; Maintainance<br><br><b>Balluff STM GmbH</b> · Prof.-Messerschmitt-Strasse 1 · 85579 Neubiberg · Germany<br>
+<b>Phone</b> +49 89 666371-55 · <b>Fax</b> +49 89 666371-11 · wassili.hense@balluffstm.de · <a href="http://www.balluffstm.de" rel="nofollow noreferrer noopener" title="http://www.balluffstm.de" target="_blank"> balluffstm.de</a> <br>
+<br>
+<a href="https://de-de.facebook.com/balluff.gmbh" rel="nofollow noreferrer noopener" title="https://de-de.facebook.com/balluff.gmbh" target="_blank"></a> <a href="https://www.linkedin.com/company/balluff-gmbh-germany" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/balluff-gmbh-germany" target="_blank">
+</a> <a href="https://twitter.com/balluff?lang=de" rel="nofollow noreferrer noopener" title="https://twitter.com/balluff?lang=de" target="_blank">
+</a> <a href="https://www.youtube.com/user/BalluffSensors" rel="nofollow noreferrer noopener" title="https://www.youtube.com/user/BalluffSensors" target="_blank">
+</a> <a href="https://www.xing.com/companies/balluffgmbh" rel="nofollow noreferrer noopener" title="https://www.xing.com/companies/balluffgmbh" target="_blank">
+</a> <a href="https://www.innovating-automation.blog/?lang=de" rel="nofollow noreferrer noopener" title="https://www.innovating-automation.blog/?lang=de" target="_blank">
+</a> <br><br>Place of Incorporation | Sitz der Gesellschaft: Neubiberg, Germany<br> Register Court | Registergericht: Amtsgericht Muenchen, Germany<br> Trade Register Number | Handelsregisternummer: HRB 86904<br> Managing Directors | Geschäftsführer: Florian Hermle<br> VAT ID Number | USt-ID: DE129467069<br><br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,223 @@
+### HEADER
+Id=7270
+Link=http://at-zammad/#ticket/zoom/7270
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=SMC World, Temperature Control Products (ID=738, Number=738)
+Number=707270
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=19.01.2024 00:23:20 +00:00
+UpdatedAt=26.01.2024 09:11:28 +00:00
+CloseAt=26.01.2024 09:11:28 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Engineer(SMC)
+
+### ARTICLE00_HEADER
+Id=39807
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=19.01.2024 00:23:20 +00:00
+UpdatedAt=19.01.2024 00:23:23 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Engineer(SMC)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Engineer(SMC)
+
+Q1. When connecting an IO-Link Master type slave, is it possible to import IODD and configure IO-Link devices through EC-Engineer?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=39818
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.01.2024 07:54:17 +00:00
+UpdatedAt=19.01.2024 07:54:21 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Engineer(SMC)
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>we support the Beckhoff IO-Link devices. It is possible to import IODDs for them.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, January 19, 2024 at 1:23:20 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Engineer(SMC)</div>
+<div><br></div>
+<div>Q1. When connecting an IO-Link Master type slave, is it possible to import IODD and configure IO-Link devices through EC-Engineer?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=39821
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=19.01.2024 07:59:34 +00:00
+UpdatedAt=19.01.2024 07:59:34 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Engineer(SMC) [Ticket#707270]
+
+### ARTICLE02_BODY
+Dear Kai san
+
+Is it possible to configure imported IO-LINK devices?
+  - Device parameter upload.
+  - Device parameter download.
+  - etc
+
+Best regards,
+Takuya Fujikawa
+
+
+
+On 2024/01/19 16:54, Kai Feifel via EC-Support wrote:
+> Hi,
+> 
+> we support the Beckhoff IO-Link devices. It is possible to import IODDs for them.
+> 
+> Best regards,
+> Kai
+> __________________________________________________________________________________________
+> Kai Feifel
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> On Friday, January 19, 2024 at 1:23:20 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Engineer(SMC)
+>>
+>> Q1. When connecting an IO-Link Master type slave, is it possible to import IODD and configure IO-Link devices through EC-Engineer?
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
+
+### ARTICLE03_HEADER
+Id=39824
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.01.2024 08:15:50 +00:00
+UpdatedAt=19.01.2024 08:15:51 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Engineer(SMC)
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>at the moment we support we only support to import the IODD. The PDOs and InitCommands are automatically created.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, January 19, 2024 at 8:59:34 AM, Takuya Fujikawa wrote:<br><br><div>Dear Kai san</div>
+<div><br></div>
+<div>Is it possible to configure imported IO-LINK devices?</div>
+<div>  - Device parameter upload.</div>
+<div>  - Device parameter download.</div>
+<div>  - etc</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<div><br></div>
+<div>On 2024/01/19 16:54, Kai Feifel via EC-Support wrote:</div>
+<div>&gt; Hi,</div>
+<div>&gt;</div>
+<div>&gt; we support the Beckhoff IO-Link devices. It is possible to import IODDs for them.</div>
+<div>&gt;</div>
+<div>&gt; Best regards,</div>
+<div>&gt; Kai</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Kai Feifel</div>
+<div>&gt; EtherCAT Support</div>
+<div>&gt; eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>&gt; acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> &lt;<a href="https://www.acontis.com/" title="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/</a>&gt;</div>
+<div>&gt; __________________________________________________________________________________________</div>
+<div>&gt; Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a> &lt;<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;&gt; On Friday, January 19, 2024 at 1:23:20 AM, Takuya Fujikawa wrote:</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Dear EtherCAT Support</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Question about EC-Engineer(SMC)</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Q1. When connecting an IO-Link Master type slave, is it possible to import IODD and configure IO-Link devices through EC-Engineer?</div>
+<div>&gt;&gt;</div>
+<div>&gt;&gt; Best regards,</div>
+<div>&gt;&gt; Takuya Fujikawa</div>
+<div>&gt;&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<div>&gt;</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

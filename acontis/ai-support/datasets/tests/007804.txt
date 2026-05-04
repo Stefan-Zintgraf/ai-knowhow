@@ -1,0 +1,191 @@
+### HEADER
+Id=7804
+Link=http://at-zammad/#ticket/zoom/7804
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=707804
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+CreatedBy=quintont@deltamotion.com (ID=652, FirstName=Quinton, LastName=Tormanen)
+Type=
+TimeUnit=
+CreatedAt=04.04.2024 19:39:07 +00:00
+UpdatedAt=23.04.2024 08:25:03 +00:00
+CloseAt=23.04.2024 08:25:03 +00:00
+ArticlesCount=3
+
+### TITLE
+Incorrect EcatDrvIoCtl.h folder reference
+
+### ARTICLE00_HEADER
+Id=43049
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.04.2024 19:39:08 +00:00
+UpdatedAt=04.04.2024 19:39:11 +00:00
+
+### ARTICLE00_SUBJECT
+Incorrect EcatDrvIoCtl.h folder reference
+
+### ARTICLE00_BODY
+<div>
+<p>In WindowsVS2015\EcMasterRasClient\EcMasterRasClient.vcxproj, I noticed that the reference to EcatDrvIoCtl.h is incorrect:</p>
+<p> </p>
+<p>&lt;ItemGroup&gt;</p>
+<p>&lt;ClCompile Include="..\..\..\Sources\OsLayer\Windows\EcOs.cpp" /&gt;</p>
+<p><span style="color:red;">+ &lt;ClInclude Include="..\..\..\SDK\INC\Windows\EcatDrvIoCtl.h" /&gt;</span></p>
+<p><span style="color:red;">- &lt;ClInclude Include="..\..\..\Sources\OsLayer\Windows\EcatDrvIoCtl.h" /&gt;</span></p>
+<p>&lt;ClInclude Include="..\..\..\SDK\INC\Windows\EcOsPlatform.h" /&gt;</p>
+<p>&lt;ClInclude Include="..\..\..\Sources\OsLayer\Windows\LocalApic.h" /&gt;</p>
+<p> </p>
+<p><span>That file got moved from <b>Sources\OsLayer\Windows</b> to <b>SDK\INC\Windows</b> as of V3.2.1.03.</span></p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Motion<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=43216
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.04.2024 21:30:38 +00:00
+UpdatedAt=09.04.2024 21:30:39 +00:00
+
+### ARTICLE01_SUBJECT
+Incorrect EcatDrvIoCtl.h folder reference
+
+### ARTICLE01_BODY
+Hi Quinton,<div><br></div><div>thanks for reporting!</div><div>We'll fix this.</div><div><br></div><div>Best regards,</div><div>Paul<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Donnerstag, 4. April 2024 um 21:39:08, schrieb Quinton Tormanen:<br><br><div>
+<p>In WindowsVS2015\EcMasterRasClient\EcMasterRasClient.vcxproj, I noticed that the reference to EcatDrvIoCtl.h is incorrect:</p>
+<p> </p>
+<p>&lt;ItemGroup&gt;</p>
+<p>&lt;ClCompile Include="..\..\..\Sources\OsLayer\Windows\EcOs.cpp" /&gt;</p>
+<p><span style="color:red;">+ &lt;ClInclude Include="..\..\..\SDK\INC\Windows\EcatDrvIoCtl.h" /&gt;</span></p>
+<p><span style="color:red;">- &lt;ClInclude Include="..\..\..\Sources\OsLayer\Windows\EcatDrvIoCtl.h" /&gt;</span></p>
+<p>&lt;ClInclude Include="..\..\..\SDK\INC\Windows\EcOsPlatform.h" /&gt;</p>
+<p>&lt;ClInclude Include="..\..\..\Sources\OsLayer\Windows\LocalApic.h" /&gt;</p>
+<p> </p>
+<p><span>That file got moved from <b>Sources\OsLayer\Windows</b> to <b>SDK\INC\Windows</b> as of V3.2.1.03.</span></p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Motion<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=43217
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.04.2024 23:15:36 +00:00
+UpdatedAt=09.04.2024 23:15:36 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Incorrect EcatDrvIoCtl.h folder reference [Ticket#707804]
+
+### ARTICLE02_BODY
+<div dir="auto">Thanks, Paul!</div><div> </div><div dir="auto">
+<div dir="auto">--Quinton</div>
+<div dir="auto">
+<br>
+</div>
+</div><hr>
+<div dir="ltr">
+<b>From:</b> Paul Bußmann via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Tuesday, April 9, 2024 2:30:39 PM<br>
+<b>To:</b> Quinton Tormanen &lt;quintont@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: Incorrect EcatDrvIoCtl.h folder reference [Ticket#707804] <div> </div>
+</div><div>Hi Quinton,<div> </div>
+<div>thanks for reporting!</div>
+<div>We'll fix this.</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Paul<br>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> Am Donnerstag, 4. April 2024 um 21:39:08, schrieb Quinton Tormanen:<br>
+<br>
+<div>
+<p>In WindowsVS2015\EcMasterRasClient\EcMasterRasClient.vcxproj, I noticed that the reference to EcatDrvIoCtl.h is incorrect:</p>
+<p> </p>
+<p>&lt;ItemGroup&gt;</p>
+<p>&lt;ClCompile Include="..\..\..\Sources\OsLayer\Windows\EcOs.cpp" /&gt;</p>
+<p><span style="color:red;">+ &lt;ClInclude Include="..\..\..\SDK\INC\Windows\EcatDrvIoCtl.h" /&gt;</span></p>
+<p><span style="color:red;">- &lt;ClInclude Include="..\..\..\Sources\OsLayer\Windows\EcatDrvIoCtl.h" /&gt;</span></p>
+<p>&lt;ClInclude Include="..\..\..\SDK\INC\Windows\EcOsPlatform.h" /&gt;</p>
+<p>&lt;ClInclude Include="..\..\..\Sources\OsLayer\Windows\LocalApic.h" /&gt;</p>
+<p> </p>
+<p><span>That file got moved from <b>Sources\OsLayer\Windows</b> to <b>SDK\INC\Windows</b> as of V3.2.1.03.</span></p>
+<p> </p>
+<p>Thank you.</p>
+<p> </p>
+<p><b>Quinton Tormanen</b><span><br>
+</span><i>Principal Software Engineer</i><span><br> Delta Motion<br>
+<br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0150" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0150" target="_blank"><span style="color:#0563c1;">+1-360-702-0150</span></a><br>
+</span><a href="mailto:quintont@deltamotion.com"><span style="color:#0563c1;">quintont@deltamotion.com</span></a></p>
+<p> </p>
+</div>
+<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+</div>
+</div>

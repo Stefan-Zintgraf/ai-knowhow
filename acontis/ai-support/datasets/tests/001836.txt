@@ -1,0 +1,149 @@
+### HEADER
+Id=1836
+Link=http://at-zammad/#ticket/zoom/1836
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vector Informatik GmbH (ID=167, Number=40366, Country=DE)
+Commission=Vector, CANoe (ID=189, Number=189)
+Number=701836
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+CreatedBy=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+Type=
+TimeUnit=
+CreatedAt=16.11.2021 08:58:23 +00:00
+UpdatedAt=08.12.2021 07:13:13 +00:00
+CloseAt=08.12.2021 07:13:13 +00:00
+ArticlesCount=3
+
+### TITLE
+EC Master und Fehlercode 0x9811001e
+
+### ARTICLE00_HEADER
+Id=9724
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.11.2021 08:58:24 +00:00
+UpdatedAt=16.11.2021 08:58:25 +00:00
+
+### ARTICLE00_SUBJECT
+EC Master und Fehlercode 0x9811001e
+
+### ARTICLE00_BODY
+<div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>ein Kunde von uns setzt den EC Master ein und sagt das bei ca. 50 % der Messungsstarts der Fehler 0x9811001e = BusConfigurationMissmatch vom EC Master gemeldet wird. In der Konfiguration ist die Zykluszeit auf 10000 µs nicht besonders hoch eingestellt.</p>
+<p> </p>
+<p>Haben Sie weitere Informationen für mich, warum dieser Fehler evtl. immer wieder auftreten könnte, oder wie Ursache für diesen Fehler vielleicht weiter eingegrenzt werden kann?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>-----------------------------------------------------</p>
+<p>Software Development Engineer</p>
+<p>PND10</p>
+<p> </p>
+<p><b>Vector Informatik GmbH</b></p>
+<p>Besucheranschrift: Holderäckerstraße 36 | 70499 Stuttgart | Deutschland</p>
+<p>Tel.: +49 711 80670-4791</p>
+<p>tobias.lange@vector.com</p>
+<p><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank">www.vector.com</a></p>
+<p> </p>
+<p>Sitz der Gesellschaft: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p>Handelsregister: Amtsgericht Stuttgart | HRB 17317</p>
+<p>Geschäftsführer: Dr. Thomas Beck, Dr. Stefan Krauß, Thomas Riegraf</p>
+<p>-----------------------------------------------------</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=9728
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=16.11.2021 09:24:07 +00:00
+UpdatedAt=16.11.2021 09:24:07 +00:00
+
+### ARTICLE01_BODY
+BusScan in einer Schleife nach ecatConfigureMaster
+
+### ARTICLE02_HEADER
+Id=9729
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.11.2021 09:45:27 +00:00
+UpdatedAt=16.11.2021 09:45:30 +00:00
+
+### ARTICLE02_SUBJECT
+EC Master und Fehlercode 0x9811001e
+
+### ARTICLE02_BODY
+Hallo Herr Lange,<div><br></div><div>wir glauben, dass es sich um einen Timing-Problem handelt. Wahrscheinlich brauchen einige Slaves mehr Zeit zum starten als der Master. Ich würde einfach nach <span>ecatConfigureMaster</span><span> den BusScan (ecatScanBus) in einer Schleife reinpacken (Vielleicht ein Iterator von 10/20 Mal würde reichen) und solange der zurückgegebene Ergebnis </span><span>EC_E_BUSCONFIG_MISMATCH, wird ecatScanBus durchgeführt.</span>
+</div><div><span>Besispiel:</span></div><div>
+<div>for (int i = 0; i &lt; 20; i++)</div>
+<div>{</div>
+<div>      dwRes = ecatScanBus(ETHERCAT_SCANBUS_TIMEOUT);</div>
+<div>      if (EC_E_BUSCONFIG_MISMATCH != dwRes)</div>
+<div>      {</div>
+<div>            break;</div>
+<div>      }</div>
+<div><span>}</span></div>
+</div><div><span><br></span></div><div><span>Wenn das nicht funktioniert hat, versuchen Sie den Wert 20 auf 100 zu erhöhen.</span></div><div><span><br></span></div><div><span>Mit freundlichen Grüßen</span></div><div><span>Haithem Jebali</span></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Haithem Jebali </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, November 16, 2021, 9:58:24 AM, Tobias Lange wrote:<br><br><div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>ein Kunde von uns setzt den EC Master ein und sagt das bei ca. 50 % der Messungsstarts der Fehler 0x9811001e = BusConfigurationMissmatch vom EC Master gemeldet wird. In der Konfiguration ist die Zykluszeit auf 10000 µs nicht besonders hoch eingestellt.</p>
+<p> </p>
+<p>Haben Sie weitere Informationen für mich, warum dieser Fehler evtl. immer wieder auftreten könnte, oder wie Ursache für diesen Fehler vielleicht weiter eingegrenzt werden kann?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>-----------------------------------------------------</p>
+<p>Software Development Engineer</p>
+<p>PND10</p>
+<p> </p>
+<p><b>Vector Informatik GmbH</b></p>
+<p>Besucheranschrift: Holderäckerstraße 36 | 70499 Stuttgart | Deutschland</p>
+<p>Tel.: +49 711 80670-4791</p>
+<p>tobias.lange@vector.com</p>
+<p><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank">www.vector.com</a></p>
+<p> </p>
+<p>Sitz der Gesellschaft: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p>Handelsregister: Amtsgericht Stuttgart | HRB 17317</p>
+<p>Geschäftsführer: Dr. Thomas Beck, Dr. Stefan Krauß, Thomas Riegraf</p>
+<p>-----------------------------------------------------</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,140 @@
+### HEADER
+Id=8070
+Link=http://at-zammad/#ticket/zoom/8070
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ADLINK Technology, Inc. (ID=318, Number=40110, Country=TW)
+Commission=ADLINK, Motion Controller (ID=375, Number=375)
+Number=708070
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=chu-yen.lu@adlinktech.com (ID=1623, FirstName=Chu-yen, LastName=Lu)
+CreatedBy=chu-yen.lu@adlinktech.com (ID=1623, FirstName=Chu-yen, LastName=Lu)
+Type=
+TimeUnit=
+CreatedAt=10.05.2024 06:41:17 +00:00
+UpdatedAt=03.06.2024 06:54:58 +00:00
+CloseAt=03.06.2024 06:54:58 +00:00
+ArticlesCount=2
+
+### TITLE
+RAS and EoE
+
+### ARTICLE00_HEADER
+Id=44447
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.05.2024 06:41:17 +00:00
+UpdatedAt=10.05.2024 06:41:17 +00:00
+
+### ARTICLE00_SUBJECT
+RAS and EoE
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Hi Sir,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:8.5625in;max-height:4.8229in;width:822px;max-height:463px;" src="/api/v1/ticket_attachment/8070/44447/183262?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US">It shows EoE Endpoint API supported by RAS-Client.</span></p>
+<p><span lang="EN-US">Need third party tool call EoE Endpoint API to communicate with slaves?</span></p>
+<p><span lang="EN-US">Does Copley CME2 include RAS Client?</span></p>
+<p><span lang="EN-US">When using Copley CM2 to communicate with slave(BE2) through master, need I active RAS Client? How to active RAS Client?</span></p>
+<p><span lang="EN-US">Is RAS-Client supported in EC-Master-V3.1.5.02-EC-WinRT-Linux-x86_32Bit-SDK_Unrestricted.tar\Bin\Windows\x86\AtemRasClnt.dll?</span></p>
+<p><span lang="EN-US">Is there sample of using/applying RAS-Client(AtemRasClnt.dll)?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Is Virtual Ethernet Switch active in EC-Master all the time?</span></p>
+<p><span lang="EN-US">Need any setting to active Virtual Ethernet Switch?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">I couldn’t use Copley CME2 to communication with slave. CME2 couldn’t find any device.</span></p>
+<p><span lang="EN-US">Assume EoE-Gateway-tool V3.2.1.03 and Tap-Windows Adapter V9 working correctly, executing EcMasterDemo with -sp and ENI file including EoE info, did I miss any setting?</span></p>
+<p><span lang="EN-US">I think there is no problem when using EC-Engineer by RAS protocol and EoE Endpoint Configuration. It shows slave.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:6.1354in;max-height:4.2708in;width:589px;max-height:410px;" src="/api/v1/ticket_attachment/8070/44447/183263?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US">Does RAS Client C++ build in EcCore.dll?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Thank for the helping.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">CY</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=44482
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.05.2024 07:51:25 +00:00
+UpdatedAt=13.05.2024 07:51:29 +00:00
+
+### ARTICLE01_SUBJECT
+RAS and EoE
+
+### ARTICLE01_BODY
+<div data-signature="true" data-signature-id="2">
+<div>Hi CY,</div>
+<div><br></div>
+<div>please find my answers [CER] below.</div>
+<div><br></div>
+<div>Best Regards,</div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Friday, May 10, 2024 at 8:41:17 AM, Chu-yen Lu wrote:<br><br><div>
+<p><span lang="EN-US">Hi Sir,</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:8.5625in;max-height:4.8229in;width:822px;max-height:463px;" src="/api/v1/ticket_attachment/8070/44482/183383?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US">It shows EoE Endpoint API supported by RAS-Client.</span></p>
+<p><span lang="EN-US">Need third party tool call EoE Endpoint API to communicate with slaves?<br>[CER] No, the third party tools use the local TCP/IP stack e.g. from a Windows laptop.</span></p>
+<p><span lang="EN-US">Does Copley CME2 include RAS Client?</span></p>
+<p><span lang="EN-US">[CER] No. Perhaps the RAS server. You can ask them.</span></p>
+<p><span lang="EN-US">When using Copley CM2 to communicate with slave(BE2) through master, need I active RAS Client? How to active RAS Client?</span></p>
+<p><span lang="EN-US">Is RAS-Client supported in EC-Master-V3.1.5.02-EC-WinRT-Linux-x86_32Bit-SDK_Unrestricted.tar\Bin\Windows\x86\AtemRasClnt.dll?</span></p>
+<p><span lang="EN-US">Is there sample of using/applying RAS-Client(AtemRasClnt.dll)?</span></p>
+<p><span lang="EN-US">[CER] If you want to run the coppley tools to configure / diagnostic the slaves, RAS server should be active on the control system , and you need to run the EoE-Gateway on the PC where you execute the tools.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Is Virtual Ethernet Switch active in EC-Master all the time?</span></p>
+<p>Need any setting to active Virtual Ethernet Switch?<br></p>
+<p>[CER] As soon as EoE slaves are present in the ENI.</p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">I couldn’t use Copley CME2 to communication with slave. CME2 couldn’t find any device.</span></p>
+<p><span lang="EN-US">Assume EoE-Gateway-tool V3.2.1.03 and Tap-Windows Adapter V9 working correctly, executing EcMasterDemo with -sp and ENI file including EoE info, did I miss any setting?</span></p>
+<p><span lang="EN-US">I think there is no problem when using EC-Engineer by RAS protocol and EoE Endpoint Configuration. It shows slave.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:6.1354in;max-height:4.2708in;width:589px;max-height:410px;" src="/api/v1/ticket_attachment/8070/44482/183384?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US">Does RAS Client C++ build in EcCore.dll?</span></p>
+<p><span lang="EN-US"></span></p>
+<p>[CER] It is used by EcCore, but it is a own EcMasterRasClient.dll library.</p>
+<p><br></p>
+<p></p>
+<p><span lang="EN-US">Thank for the helping.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">CY</span></p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

@@ -1,0 +1,160 @@
+### HEADER
+Id=3682
+Link=http://at-zammad/#ticket/zoom/3682
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=703682
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=12.08.2022 06:12:11 +00:00
+UpdatedAt=02.09.2022 06:04:04 +00:00
+CloseAt=02.09.2022 06:04:04 +00:00
+ArticlesCount=3
+
+### TITLE
+The CPSW Leds status wrong with PHY DP83822 on AM3359
+
+### ARTICLE00_HEADER
+Id=19512
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.08.2022 06:12:11 +00:00
+UpdatedAt=12.08.2022 06:12:14 +00:00
+
+### ARTICLE00_SUBJECT
+The CPSW Leds status wrong with PHY DP83822 on AM3359
+
+### ARTICLE00_BODY
+<div>Dear,</div><div> </div><div>The potenial customer tjsunke is evaluting the EcMaster on am335x+sysbios, the EcMaster version is 3.1.2.10.</div><div>The EtherCAT communication is normal, but all Leds of the NIC are off, the PHY on their board is DP83822 and the PHY mode is MII and the EcMaster is using RGMII.</div><div>Is it an initialization problem with EcMaster for this PHY? The customer tell us that it is normal when using other network protocols like Profinet, Modbus TCP etc.</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div><p>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</p></div>
+<div>
+<p>Room 311, Building 2, Yiquanhui, No. 35 Shangdi East Road, Haidian District, Beijing</p>
+<p>北京市海淀区上地东路35号院颐泉汇2号楼311</p>
+<p>Tel: +86-10-62740270</p>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=19527
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.08.2022 08:11:18 +00:00
+UpdatedAt=12.08.2022 08:11:21 +00:00
+
+### ARTICLE01_SUBJECT
+The CPSW Leds status wrong with PHY DP83822 on AM3359
+
+### ARTICLE01_BODY
+Hi Lishan,<div><br></div><div>we currently don't support this PHY. MII is also not supported in CPSW!</div><div>We may need the hardware here in Acontis before making any assessment!</div><div>For the costs of the development, you need to contact Christoph or Stefan!</div><div><br></div><div>Best Regards</div><div>Haithem Jebali<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, August 12, 2022 at 8:12:11 AM, EtherCAT Support wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>The potenial customer tjsunke is evaluting the EcMaster on am335x+sysbios, the EcMaster version is 3.1.2.10.</div>
+<div>The EtherCAT communication is normal, but all Leds of the NIC are off, the PHY on their board is DP83822 and the PHY mode is MII and the EcMaster is using RGMII.</div>
+<div>Is it an initialization problem with EcMaster for this PHY? The customer tell us that it is normal when using other network protocols like Profinet, Modbus TCP etc.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div><p>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</p></div>
+<div>
+<p>Room 311, Building 2, Yiquanhui, No. 35 Shangdi East Road, Haidian District, Beijing</p>
+<p>北京市海淀区上地东路35号院颐泉汇2号楼311</p>
+<p>Tel: +86-10-62740270</p>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=19530
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.08.2022 08:18:51 +00:00
+UpdatedAt=12.08.2022 08:18:52 +00:00
+
+### ARTICLE02_SUBJECT
+The CPSW Leds status wrong with PHY DP83822 on AM3359
+
+### ARTICLE02_BODY
+Hi Lishan,<div><br></div><div>the PHY may work out of the box, but development in the Link-Layer to support <span>MII</span><span> </span><span>is still necessary!</span>
+</div><div><br></div><div>Best regards</div><div>Haithem Jebali<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, August 12, 2022 at 8:12:11 AM, EtherCAT Support wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>The potenial customer tjsunke is evaluting the EcMaster on am335x+sysbios, the EcMaster version is 3.1.2.10.</div>
+<div>The EtherCAT communication is normal, but all Leds of the NIC are off, the PHY on their board is DP83822 and the PHY mode is MII and the EcMaster is using RGMII.</div>
+<div>Is it an initialization problem with EcMaster for this PHY? The customer tell us that it is normal when using other network protocols like Profinet, Modbus TCP etc.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div><p>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</p></div>
+<div>
+<p>Room 311, Building 2, Yiquanhui, No. 35 Shangdi East Road, Haidian District, Beijing</p>
+<p>北京市海淀区上地东路35号院颐泉汇2号楼311</p>
+<p>Tel: +86-10-62740270</p>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

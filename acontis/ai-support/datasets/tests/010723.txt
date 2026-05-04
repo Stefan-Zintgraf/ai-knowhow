@@ -1,0 +1,152 @@
+### HEADER
+Id=10723
+Link=http://at-zammad/#ticket/zoom/10723
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Apple, Automation Controls Project (ID=607, Number=607)
+Number=7010723
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=04.06.2025 23:20:01 +00:00
+UpdatedAt=16.06.2025 10:36:49 +00:00
+CloseAt=16.06.2025 10:36:49 +00:00
+ArticlesCount=3
+
+### TITLE
+Fwd: SDO mailbox transfers in acontis sdk
+
+### ARTICLE00_HEADER
+Id=61400
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.06.2025 23:20:01 +00:00
+UpdatedAt=04.06.2025 23:20:01 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: SDO mailbox transfers in acontis sdk
+
+### ARTICLE00_BODY
+Martin was emailed directly due to his past work for the Apple project, but I figured I’d email general support as well.<br><div>
+<br>/Jon </div><div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>Andy Duncan &lt;aduncan@apple.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>SDO mailbox transfers in acontis sdk</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>June 4, 2025 at 5:10:35 PM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Martin Gänzer &lt;m.gaenzer@acontis.com&gt;, Jon Waters &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Cc: </b></span><span>Evan Cook &lt;evancook@apple.com&gt;<br></span>
+</div>
+<br><div>Hi Martin/Jon,<br><br>Not sure if you're the right people to ask about this, but I have a question regarding mailbox handling for SDOs in the acontis stack. I am unable to figure this out based on the example code and documentation.<br><br>Specifically, what are the relationships between the two data pointers in the structs EC_T_MBXTFER_DESC and EC_T_MBXTFER?<br><br>Your example code and documentation does not appear to show code accessing the data returned to the master from an SDO upload request. The documentation also does not make it clear whether SDO download data should go in:<br><br> EC_T_MBXTFER_DESC.pbyMbxTferDescData<br><br>or<br><br> EC_T_MBXTFER.pbyMbxTferData<br><br>Page 330 shows SDO download example code allocating a 10-byte buffer at EC_T_MBXTFER_DESC.pbyMbxTferDescData but then placing the SDO data in the EC_T_MBXTFER.pbyMbxTferData pointer.<br><br>But then your SDO download example code on page 349 shows allocating a 4-byte buffer at EC_T_MBXTFER_DESC.pbyMbxTferDescData, and writing four bytes back to that same buffer, **not** EC_T_MBXTFER.pbyMbxTferData<br><br>Further, your SDO upload example on page 354 shows allocating a 4 byte buffer at EC_T_MBXTFER_DESC.pbyMbxTferDescData but then never using or freeing that buffer. <br><br>Is EC_T_MBXTFER_DESC.pbyMbxTferDescData even used for SDO uploads? Does that buffer even need to be created? The documentation implies that the SDO response should be in EC_T_MBXTFER.pbyMbxTferData, and that buffer is managed/owned by the ethercat master.<br><br>Yet further, the documentation also seems to imply that both of those buffers are in/out data.<br><br>So, basically: what goes where and who owns what? <br><br>The documentation appears to be contradictory and the example code appears incomplete.<br><br>Thanks,<br><br>-Andy</div>
+</blockquote>
+</div>
+
+### ARTICLE01_HEADER
+Id=61417
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.06.2025 08:04:38 +00:00
+UpdatedAt=05.06.2025 08:04:42 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: SDO mailbox transfers in acontis sdk
+
+### ARTICLE01_BODY
+Hi Andy,<div><br></div><div>unfortunately the MBXTFER is not the best thing we did :) We have some refactoring in mind but until now it was never time for them.</div><div><br></div><div>
+<span>In fact EC_T_MBXTFER_DESC is only a temporary parameter structure for the </span><span>emMbxTferCreate() function, giving a pointer to an allocated buffer and its size.</span>
+</div><div>
+<span>This buffer should stay valid until </span><span>emMbxTferDelete() is called.</span>
+</div><div>
+<div><br></div>
+<div>EC_T_MBXTFER_DESC.pbyMbxTferDescData will be copied to EC_T_MBXTFER.pbyMbxTferData. Between emMbxTferCreate() and emMbxTferDelete() you should only access to EC_T_MBXTFER.</div>
+<div><br></div>
+</div><div>
+<span>Depending on the SDO transfer Upload or Download, the data are copied from or to </span><span>EC_T_MBXTFER.pbyMbxTferData.</span>
+</div><div><br></div><div>You are probably pointing to this part of the documentation:</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/mbx_tfer.html#mbx-tfer--page-root" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/mbx_tfer.html#mbx-tfer--page-root" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/mbx_tfer.html#mbx-tfer--page-root</a></div></div><div><span>You are right we will add the OsFree() in the last step</span></div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Thursday, June 5, 2025 at 1:20:01 AM, Jon Waters wrote:<br><br>Martin was emailed directly due to his past work for the Apple project, but I figured I’d email general support as well.<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>Andy Duncan &lt;aduncan@apple.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>SDO mailbox transfers in acontis sdk</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>June 4, 2025 at 5:10:35 PM EDT<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>Martin Gänzer &lt;m.gaenzer@acontis.com&gt;, Jon Waters &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Cc: </b></span><span>Evan Cook &lt;evancook@apple.com&gt;<br></span>
+</div>
+<br><div>Hi Martin/Jon,<br><br>Not sure if you're the right people to ask about this, but I have a question regarding mailbox handling for SDOs in the acontis stack. I am unable to figure this out based on the example code and documentation.<br><br>Specifically, what are the relationships between the two data pointers in the structs EC_T_MBXTFER_DESC and EC_T_MBXTFER?<br><br>Your example code and documentation does not appear to show code accessing the data returned to the master from an SDO upload request. The documentation also does not make it clear whether SDO download data should go in:<br><br> EC_T_MBXTFER_DESC.pbyMbxTferDescData<br><br>or<br><br> EC_T_MBXTFER.pbyMbxTferData<br><br>Page 330 shows SDO download example code allocating a 10-byte buffer at EC_T_MBXTFER_DESC.pbyMbxTferDescData but then placing the SDO data in the EC_T_MBXTFER.pbyMbxTferData pointer.<br><br>But then your SDO download example code on page 349 shows allocating a 4-byte buffer at EC_T_MBXTFER_DESC.pbyMbxTferDescData, and writing four bytes back to that same buffer, **not** EC_T_MBXTFER.pbyMbxTferData<br><br>Further, your SDO upload example on page 354 shows allocating a 4 byte buffer at EC_T_MBXTFER_DESC.pbyMbxTferDescData but then never using or freeing that buffer. <br><br>Is EC_T_MBXTFER_DESC.pbyMbxTferDescData even used for SDO uploads? Does that buffer even need to be created? The documentation implies that the SDO response should be in EC_T_MBXTFER.pbyMbxTferData, and that buffer is managed/owned by the ethercat master.<br><br>Yet further, the documentation also seems to imply that both of those buffers are in/out data.<br><br>So, basically: what goes where and who owns what? <br><br>The documentation appears to be contradictory and the example code appears incomplete.<br><br>Thanks,<br><br>-Andy</div>
+</blockquote>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=61430
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=05.06.2025 08:48:39 +00:00
+UpdatedAt=05.06.2025 08:59:37 +00:00
+
+### ARTICLE02_SUBJECT
+SDO mailbox transfers in acontis sdk
+
+### ARTICLE02_BODY
+Hi Martin/Jon,
+
+Not sure if you're the right people to ask about this, but I have a question regarding mailbox handling for SDOs in the acontis stack. I am unable to figure this out based on the example code and documentation.
+
+Specifically, what are the relationships between the two data pointers in the structs EC_T_MBXTFER_DESC and EC_T_MBXTFER?
+
+Your example code and documentation does not appear to show code accessing the data returned to the master from an SDO upload request. The documentation also does not make it clear whether SDO download data should go in:
+
+    EC_T_MBXTFER_DESC.pbyMbxTferDescData
+
+or
+
+    EC_T_MBXTFER.pbyMbxTferData
+
+Page 330 shows SDO download example code allocating a 10-byte buffer at EC_T_MBXTFER_DESC.pbyMbxTferDescData but then placing the SDO data in the EC_T_MBXTFER.pbyMbxTferData pointer.
+
+But then your SDO download example code on page 349 shows allocating a 4-byte buffer at EC_T_MBXTFER_DESC.pbyMbxTferDescData, and writing four bytes back to that same buffer, **not** EC_T_MBXTFER.pbyMbxTferData
+
+Further, your SDO upload example on page 354 shows allocating a 4 byte buffer at EC_T_MBXTFER_DESC.pbyMbxTferDescData but then never using or freeing that buffer. 
+
+Is EC_T_MBXTFER_DESC.pbyMbxTferDescData even used for SDO uploads? Does that buffer even need to be created? The documentation implies that the SDO response should be in EC_T_MBXTFER.pbyMbxTferData, and that buffer is managed/owned by the ethercat master.
+
+Yet further, the documentation also seems to imply that both of those buffers are in/out data.
+
+So, basically: what goes where and who owns what? 
+
+The documentation appears to be contradictory and the example code appears incomplete.
+
+Thanks,
+
+-Andy

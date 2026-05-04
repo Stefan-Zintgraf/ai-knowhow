@@ -1,0 +1,13 @@
+{
+  "errors": [],
+  "result": [
+    {
+      "id": "mail-with-att",
+      "subject": "See attached",
+      "attachments": [
+        { "id": "att-1", "name": "a.txt", "size": 10 },
+        { "id": "att-2", "name": "b.bin", "size": 20 }
+      ]
+    }
+  ]
+}

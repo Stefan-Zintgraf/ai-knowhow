@@ -1,0 +1,195 @@
+### HEADER
+Id=5639
+Link=http://at-zammad/#ticket/zoom/5639
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ITK Engineering GmbH (ID=120, Number=54016, Country=DE)
+Commission=ITK, Asimov Express (ID=134, Number=134)
+Number=705639
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=michael.wenz@itk-engineering.de (ID=107, FirstName=Michael, LastName=Wenz)
+CreatedBy=michael.wenz@itk-engineering.de (ID=107, FirstName=Michael, LastName=Wenz)
+Type=
+TimeUnit=
+CreatedAt=24.05.2023 11:38:02 +00:00
+UpdatedAt=05.06.2023 07:08:20 +00:00
+CloseAt=05.06.2023 07:08:20 +00:00
+ArticlesCount=2
+
+### TITLE
+Performance Measurement API
+
+### ARTICLE00_HEADER
+Id=30065
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.05.2023 11:38:02 +00:00
+UpdatedAt=24.05.2023 11:38:05 +00:00
+
+### ARTICLE00_SUBJECT
+Performance Measurement API
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Herr Oelhaf, hallo Herr Eyssautier,</p>
+<p> </p>
+<p>können Sie sagen, welche der Performance Measurement API Funktionen <u>nicht</u> in der JobTask aufgerufen werden dürfen?</p>
+<p>Ich vermute, dass z.B. emPerfMeasAppCreate und emPerfMeasAppDelete nicht in der JobTask aufgerufen werden dürfen (habe diese Info allerdings nicht in der EC-Master Dokumentation gefunden).</p>
+<p> </p>
+<p>In EcMasterDemo wird in der JobTask aufgerufen.</p>
+<p>if (nOverloadCounter &gt;= 50)</p>
+<p>{</p>
+<p>if ((pAppContext-&gt;dwPerfMeasLevel &gt; 0) &amp;&amp; (nOverloadCounter &lt; 60))</p>
+<p>{</p>
+<p> <b><span style="color:#00b0f0;">PRINT_PERF_MEAS();</span></b></p>
+<p>}</p>
+<p> </p>
+<p>was wiederum aufruft</p>
+<p>CAtEmLogging::PrintPerfMeas().</p>
+<p>Und hier kann dynamisch Speicher allokiert werden.</p>
+<p>m_aPerfMeasVal = (EC_T_PERF_MEAS_VAL*)OsMalloc(m_dwPerfMeasNumOf * sizeof(EC_T_PERF_MEAS_VAL));</p>
+<p>m_aPerfMeasInfo = (EC_T_PERF_MEAS_INFO*)OsMalloc(m_dwPerfMeasNumOf * sizeof(EC_T_PERF_MEAS_INFO));</p>
+<p>Ist dies so in Ordnung?</p>
+<p> </p>
+<p>Kann es zu Problemen kommen, wenn</p>
+<p>PRINT_PERF_MEAS();</p>
+<p>zeitgleich sowohl innerhalb der JobTask als auch außerhalb der JobTask aufgerufen würde?</p>
+<p> </p>
+<p>In der Dokumentation steht ohne weitere Erklärung. Sollten diese Methoden nicht mehr verwendet werden?</p>
+<p><img style="max-width:100%;width:9.5in;max-height:4.3in;width:912px;max-height:413px;" src="/api/v1/ticket_attachment/5639/30065/125962?view=inline"></p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Michael Wenz</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>--</p>
+<p>Dr.-Ing. Michael Wenz</p>
+<p>Software Engineering</p>
+<p> </p>
+<p>ITK Engineering GmbH</p>
+<p>Im Speyerer Tal 6</p>
+<p>D-76761 Rülzheim</p>
+<p> </p>
+<p>Tel.: +49 7272 7703-456</p>
+<p>Fax: +49 7272 7703-100</p>
+<p>Mobil: +49 174 9480570</p>
+<p> </p>
+<p>mailto: michael.wenz@itk-engineering.de</p>
+<p> </p>
+<p>_____________________________________________________________</p>
+<p>ITK Engineering GmbH Im Speyerer Tal 6 76761 Rülzheim</p>
+<p>Tel.: +49 7272 7703-0 Fax: +49 7272 7703-100</p>
+<p><span>mailto:info@itk-engineering.de <a href="http://www.itk-engineering.de" rel="nofollow noreferrer noopener" target="_blank">http://www.itk-engineering.de</a></span></p>
+<p> </p>
+<p>Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board:</p>
+<p>Dr. Rudolf Maier</p>
+<p>Geschäftsführung/Executive Board:</p>
+<p>Dr. Frank Schmidt (Vorsitzender/Chairman), Jens Hofmann</p>
+<p>Sitz der Gesellschaft/Registered Office: 76761 Rülzheim</p>
+<p>Registergericht/Registered Court: Amtsgericht Landau, HRB 32046</p>
+<p>USt.-ID-Nr./VAT-ID-No. DE813165046</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=30070
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.05.2023 13:06:29 +00:00
+UpdatedAt=24.05.2023 13:06:31 +00:00
+
+### ARTICLE01_SUBJECT
+Performance Measurement API
+
+### ARTICLE01_BODY
+Hallo Herr Wenz,<div><span><br></span></div><div><span>emPerfMeasAppCreate und emPerfMeasAppDelete sollten tatsächlich nicht aus der Jobtask aufgerufen werden.</span></div><div><span>PRINT_PERF_MEAS sollte eigentlich auch nicht aus der Jobtask aufgerufen werden. Das werden wir raus nehmen (es wird aber momentan nur im Fehlerfall aufgerufen).</span></div><div><br></div><div>Die alte API ist nur zu Kompatibilitätszweck da und sollte nicht verwendet werden. Die werden wir auch aus der Doku rausnehmen.<br><div><br></div>
+<div>Vielen Dank für die Hinweise und s<span>chöne Grüße!</span>
+</div>
+<div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, May 24, 2023 at 1:38:02 PM, Michael Wenz wrote:<br><br><div>
+<p>Hallo Herr Oelhaf, hallo Herr Eyssautier,</p>
+<p> </p>
+<p>können Sie sagen, welche der Performance Measurement API Funktionen <u>nicht</u> in der JobTask aufgerufen werden dürfen?</p>
+<p>Ich vermute, dass z.B. emPerfMeasAppCreate und emPerfMeasAppDelete nicht in der JobTask aufgerufen werden dürfen (habe diese Info allerdings nicht in der EC-Master Dokumentation gefunden).</p>
+<p> </p>
+<p>In EcMasterDemo wird in der JobTask aufgerufen.</p>
+<p>if (nOverloadCounter &gt;= 50)</p>
+<p>{</p>
+<p>if ((pAppContext-&gt;dwPerfMeasLevel &gt; 0) &amp;&amp; (nOverloadCounter &lt; 60))</p>
+<p>{</p>
+<p> <b><span style="color:#00b0f0;">PRINT_PERF_MEAS();</span></b></p>
+<p>}</p>
+<p> </p>
+<p>was wiederum aufruft</p>
+<p>CAtEmLogging::PrintPerfMeas().</p>
+<p>Und hier kann dynamisch Speicher allokiert werden.</p>
+<p>m_aPerfMeasVal = (EC_T_PERF_MEAS_VAL*)OsMalloc(m_dwPerfMeasNumOf * sizeof(EC_T_PERF_MEAS_VAL));</p>
+<p>m_aPerfMeasInfo = (EC_T_PERF_MEAS_INFO*)OsMalloc(m_dwPerfMeasNumOf * sizeof(EC_T_PERF_MEAS_INFO));</p>
+<p>Ist dies so in Ordnung?</p>
+<p> </p>
+<p>Kann es zu Problemen kommen, wenn</p>
+<p>PRINT_PERF_MEAS();</p>
+<p>zeitgleich sowohl innerhalb der JobTask als auch außerhalb der JobTask aufgerufen würde?</p>
+<p> </p>
+<p>In der Dokumentation steht ohne weitere Erklärung. Sollten diese Methoden nicht mehr verwendet werden?</p>
+<p><img style="max-width:100%;max-width:100%;width:9.5in;max-height:4.3in;width:912px;max-height:413px;" src="/api/v1/ticket_attachment/5639/30070/125979?view=inline"></p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Michael Wenz</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>--</p>
+<p>Dr.-Ing. Michael Wenz</p>
+<p>Software Engineering</p>
+<p> </p>
+<p>ITK Engineering GmbH</p>
+<p>Im Speyerer Tal 6</p>
+<p>D-76761 Rülzheim</p>
+<p> </p>
+<p>Tel.: +49 7272 7703-456</p>
+<p>Fax: +49 7272 7703-100</p>
+<p>Mobil: +49 174 9480570</p>
+<p> </p>
+<p>mailto: michael.wenz@itk-engineering.de</p>
+<p> </p>
+<p>_____________________________________________________________</p>
+<p>ITK Engineering GmbH Im Speyerer Tal 6 76761 Rülzheim</p>
+<p>Tel.: +49 7272 7703-0 Fax: +49 7272 7703-100</p>
+<p><span>mailto:info@itk-engineering.de <a href="http://www.itk-engineering.de" rel="nofollow noreferrer noopener" target="_blank">http://www.itk-engineering.de</a></span></p>
+<p> </p>
+<p>Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board:</p>
+<p>Dr. Rudolf Maier</p>
+<p>Geschäftsführung/Executive Board:</p>
+<p>Dr. Frank Schmidt (Vorsitzender/Chairman), Jens Hofmann</p>
+<p>Sitz der Gesellschaft/Registered Office: 76761 Rülzheim</p>
+<p>Registergericht/Registered Court: Amtsgericht Landau, HRB 32046</p>
+<p>USt.-ID-Nr./VAT-ID-No. DE813165046</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

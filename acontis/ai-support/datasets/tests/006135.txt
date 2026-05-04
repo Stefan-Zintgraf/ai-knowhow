@@ -1,0 +1,174 @@
+### HEADER
+Id=6135
+Link=http://at-zammad/#ticket/zoom/6135
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=706135
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=11.08.2023 10:12:30 +00:00
+UpdatedAt=30.08.2023 06:14:27 +00:00
+CloseAt=30.08.2023 06:14:27 +00:00
+ArticlesCount=2
+
+### TITLE
+The question about EtherCAT diagnostic with procentec device
+
+### ARTICLE00_HEADER
+Id=32873
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.08.2023 10:12:30 +00:00
+UpdatedAt=11.08.2023 10:12:33 +00:00
+
+### ARTICLE00_SUBJECT
+The question about EtherCAT diagnostic with procentec device
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>We will visit HMS next week, they push their product for protocol diagnostic interface. Their suggestion type is following:</div>
+<div><a href="https://procentec.com/products/atlas2-plus/?content-1" rel="nofollow noreferrer noopener" target="_blank">https://procentec.com/products/atlas2-plus/?content-1</a></div>
+<div> </div>
+<div>Because there many customer ask ethercat diagnosis recently. So we will visit them and try to finding more opportunity with ECMaster or EC-Inspector. But the HMS told me that their tools need ethercat diagnostic interface.</div>
+<div>So Does the ECMaster support the diagnostic interface with procentec? And dose it need any others plug in? Because we find some introduction that EtherCAT diagnostic interface need mailbox gateway.</div>
+<div>And dose the EC-Inspector support the diagnostic interface, or it only support ethernet port with tap?</div>
+<div> </div>
+<div>
+<div><img border="0" src="/api/v1/ticket_attachment/6135/32873/137363?view=inline" style="max-width:100%;width:537.6px;max-height:97.6px;"></div>
+<div> 2023.8.23-26 台北国际自动化工业展 南港展览馆一馆L405<i> 期待与您见面！</i>
+</div>
+<div> </div>
+<div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.:+86-010-62740270 (北京）<div>0571- 56125098 （杭州）</div>
+</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=32878
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.08.2023 11:37:09 +00:00
+UpdatedAt=11.08.2023 11:37:12 +00:00
+
+### ARTICLE01_SUBJECT
+The question about EtherCAT diagnostic with procentec device
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>I know the Procentec software a little. They require the master independent diagnosis interface ETG.1510.</div><div>
+<div><a href="https://www.acontis.com/en/monitoring-and-diagnosis-software.html" title="https://www.acontis.com/en/monitoring-and-diagnosis-software.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/monitoring-and-diagnosis-software.html</a></div>
+<div><div><a href="https://www.ethercat.org/en/downloads/downloads_BC1B4EC2069B44A8969ACEE56715D557.htm" title="https://www.ethercat.org/en/downloads/downloads_BC1B4EC2069B44A8969ACEE56715D557.htm" rel="nofollow noreferrer noopener" target="_blank">https://www.ethercat.org/en/downloads/downloads_BC1B4EC2069B44A8969ACEE56715D557.htm</a></div></div>
+<div><br></div>
+<div>That´s based on the UDP Mailbox gateway. We support it and also TwinCAT. I am not aware about our masters.</div>
+<div>EC-Master: This a feature pack and not purchased by many customers, below 5.</div>
+<div>
+<div>Slides 50ff.</div>
+<div><a href="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" title="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf</a></div>
+</div>
+<div><br></div>
+<div><br></div>
+<div>TwinCAT: By default disabled and not supported by older versions. Don´t know the details</div>
+<div><br></div>
+<div>Therefore the number of potential customers which can use the Procentec tools are limited.</div>
+<div>Also: ETG.1510 is a pure diagnosis interface for errors and states. No process data! </div>
+<div><br></div>
+<div>In the past we talked to several people at Procentec, if they might be interested in licensing EC-Monitor. <span>But they had no interest.</span>
+</div>
+<div><span>Today I am not sure, we should sell EC-Monitor to them, because EC-Inspector is very successful.</span></div>
+<div><br></div>
+<div>Please let me know your further questions.</div>
+<div><br></div>
+<div>Best Regards</div>
+<div><br></div>
+<div>Christoph</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, August 11, 2023 at 12:12:30 PM, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>We will visit HMS next week, they push their product for protocol diagnostic interface. Their suggestion type is following:</div>
+<div><a href="https://procentec.com/products/atlas2-plus/?content-1" rel="nofollow noreferrer noopener" target="_blank">https://procentec.com/products/atlas2-plus/?content-1</a></div>
+<div> </div>
+<div>Because there many customer ask ethercat diagnosis recently. So we will visit them and try to finding more opportunity with ECMaster or EC-Inspector. But the HMS told me that their tools need ethercat diagnostic interface.</div>
+<div>So Does the ECMaster support the diagnostic interface with procentec? And dose it need any others plug in? Because we find some introduction that EtherCAT diagnostic interface need mailbox gateway.</div>
+<div>And dose the EC-Inspector support the diagnostic interface, or it only support ethernet port with tap?</div>
+<div> </div>
+<div>
+<div><img border="0" src="/api/v1/ticket_attachment/6135/32878/137378?view=inline" style="max-width:100%;max-width:100%;width:537.6px;max-height:97.6px;"></div>
+<div> 2023.8.23-26 台北国际自动化工业展 南港展览馆一馆L405<i> 期待与您见面！</i>
+</div>
+<div> </div>
+<div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.:+86-010-62740270 (北京）<div>0571- 56125098 （杭州）</div>
+</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

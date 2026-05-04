@@ -1,0 +1,218 @@
+### HEADER
+Id=10987
+Link=http://at-zammad/#ticket/zoom/10987
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=cpc Chieftek (ID=590, Number=50234, Country=TW)
+Commission=cpc Chieftek, cpcStudio (ID=669, Number=669)
+Number=7010987
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=lm003@mail2.chieftek.com (ID=1237, FirstName=Kuanghan, LastName=)
+CreatedBy=lm003@mail2.chieftek.com (ID=1237, FirstName=Kuanghan, LastName=)
+Type=
+TimeUnit=
+CreatedAt=11.07.2025 09:04:12 +00:00
+UpdatedAt=18.07.2025 06:58:19 +00:00
+CloseAt=18.07.2025 06:58:19 +00:00
+ArticlesCount=3
+
+### TITLE
+[Chieftek]EL6751 CANopen slave
+
+### ARTICLE00_HEADER
+Id=62933
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.07.2025 09:04:12 +00:00
+UpdatedAt=11.07.2025 09:04:16 +00:00
+
+### ARTICLE00_SUBJECT
+[Chieftek]EL6751 CANopen slave
+
+### ARTICLE00_BODY
+<div dir="ltr">
+<div>Hi,</div>
+<div>We have an EL6751-0010, CANopen slave, which will connect to our CANopen drive.</div>
+<div>Could we use EC-Engineer to generate the ENI? because we didn't found pdo contents on it.</div>
+<div>(we are preparing hardware wiring, only offline add EL6751 device.)</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan<span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr"><div></div></div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr"><div></div></div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div><br>
+<div> </div><div><a href="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" target="_blank"></a></div>
+
+### ARTICLE01_HEADER
+Id=62935
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.07.2025 09:13:31 +00:00
+UpdatedAt=11.07.2025 09:13:35 +00:00
+
+### ARTICLE01_SUBJECT
+[Chieftek]EL6751 CANopen slave
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes you can. But there was a bug in a few versions where the EL6751-0010 did not work as expected. You need the 3.9.12 to use it correctly.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, July 11, 2025 at 11:04:12 AM, Kuanghan  wrote:<br><br><div dir="ltr">
+<div>Hi,</div>
+<div>We have an EL6751-0010, CANopen slave, which will connect to our CANopen drive.</div>
+<div>Could we use EC-Engineer to generate the ENI? because we didn't found pdo contents on it.</div>
+<div>(we are preparing hardware wiring, only offline add EL6751 device.)</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan<span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr"><div></div></div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr"><div></div></div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+<br>
+<div> </div>
+<div><a href="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" target="_blank"></a></div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=62936
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.07.2025 09:13:53 +00:00
+UpdatedAt=11.07.2025 09:13:56 +00:00
+
+### ARTICLE02_SUBJECT
+[Chieftek]EL6751 CANopen slave
+
+### ARTICLE02_BODY
+<div>Please find it here:</div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/2025/B-C/cpc_Chieftek_(40573)(TW)/EC-Engineer_OEM_SDK_Core/3.9.12/EC-Engineer_SDK_Core_Layer4_DotNet4_OEM_Src_V3.9.12.zip" title="https://downloads.acontis.com/2025/B-C/cpc_Chieftek_(40573)(TW)/EC-Engineer_OEM_SDK_Core/3.9.12/EC-Engineer_SDK_Core_Layer4_DotNet4_OEM_Src_V3.9.12.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/B-C/cpc_Chieftek_(40573)(TW)/EC-Engineer_OEM_SDK_Core/3.9.12/EC-Engineer_SDK_Core_Layer4_DotNet4_OEM_Src_V3.9.12.zip</a></div>
+<div><br></div>
+<div><a href="https://downloads.acontis.com/2025/B-C/cpc_Chieftek_(40573)(TW)/EC-Engineer_OEM_SDK_Core/3.9.12/EC-Engineer_SDK_Core_Layer4_DotNet4_x64_OEM_Src_V3.9.12.zip" title="https://downloads.acontis.com/2025/B-C/cpc_Chieftek_(40573)(TW)/EC-Engineer_OEM_SDK_Core/3.9.12/EC-Engineer_SDK_Core_Layer4_DotNet4_x64_OEM_Src_V3.9.12.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/B-C/cpc_Chieftek_(40573)(TW)/EC-Engineer_OEM_SDK_Core/3.9.12/EC-Engineer_SDK_Core_Layer4_DotNet4_x64_OEM_Src_V3.9.12.zip</a></div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Kai</div>
+<br>
+</div><div><blockquote type="cite">On Friday, July 11, 2025 at 11:13:31 AM, Kai Feifel via EC-Support wrote:<br><br>Hi,<div><br></div>
+<div>yes you can. But there was a bug in a few versions where the EL6751-0010 did not work as expected. You need the 3.9.12 to use it correctly.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, July 11, 2025 at 11:04:12 AM, Kuanghan  wrote:<br><br><div dir="ltr">
+<div>Hi,</div>
+<div>We have an EL6751-0010, CANopen slave, which will connect to our CANopen drive.</div>
+<div>Could we use EC-Engineer to generate the ENI? because we didn't found pdo contents on it.</div>
+<div>(we are preparing hardware wiring, only offline add EL6751 device.)</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan<span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr"><div></div></div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr"><div></div></div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+<br>
+<div> </div>
+<div><a href="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCy5oJefcqKagx7LBNEg2VEg" target="_blank"></a></div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+<br>
+</blockquote></div><div><br></div>

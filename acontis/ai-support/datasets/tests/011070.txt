@@ -1,0 +1,162 @@
+### HEADER
+Id=11070
+Link=http://at-zammad/#ticket/zoom/11070
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=none
+Commission=CEA, List Robot Controller (ID=220, Number=220)
+Number=7011070
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=benoit.tankoano@cea.fr (ID=3458, FirstName=Tankoano, LastName=Benoit)
+CreatedBy=benoit.tankoano@cea.fr (ID=3458, FirstName=Tankoano, LastName=Benoit)
+Type=
+TimeUnit=
+CreatedAt=23.07.2025 06:46:42 +00:00
+UpdatedAt=01.08.2025 06:24:22 +00:00
+CloseAt=01.08.2025 06:24:22 +00:00
+ArticlesCount=2
+
+### TITLE
+Real-time drivers support
+
+### ARTICLE00_HEADER
+Id=63485
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.07.2025 06:46:42 +00:00
+UpdatedAt=23.07.2025 06:46:42 +00:00
+
+### ARTICLE00_SUBJECT
+Real-time drivers support
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>I would like to know before to buy one of the following PC if they can support your EtherCAT master stack :</p>
+<ul type="disc">
+<li>
+<b>RACK PC SIMATIC IPC847D - 4U</b>
+<ul type="circle">
+<li>
+<a href="https://cache.industry.siemens.com/dl/files/965/98164965/att_46556/v1/simatic_rackpc_v802_en_web.pdf" rel="nofollow noreferrer noopener" target="_blank">https://cache.industry.siemens.com/dl/files/965/98164965/att_46556/v1/simatic_rackpc_v802_en_web.pdf</a>
+</li>
+</ul>
+</li>
+<li>
+<b>SMATIPC</b>
+<ul type="circle">
+<li>
+<a href="https://cdn.shopify.com/s/files/1/0747/1438/2601/files/IEXP-502_Ver1.0.pdf?v=1722283049" rel="nofollow noreferrer noopener" target="_blank">https://cdn.shopify.com/s/files/1/0747/1438/2601/files/IEXP-502_Ver1.0.pdf?v=1722283049</a>
+</li>
+</ul>
+</li>
+<li>
+<b>AAEON</b>
+<ul type="circle">
+<li>
+<a href="https://www.es-france.com/index.php?controller=attachment&amp;id_attachment=16696&amp;_gl=1*ckrhji*_up*MQ..&amp;gclid=Cj0KCQjw4Oe4BhCcARIsADQ0csmcvurIChhpOXrhdOnhTCGpguQXaaVWf-G21MTomw8JSyX77RQa1xYaAsnXEALw_wcB" rel="nofollow noreferrer noopener" target="_blank">https://www.es-france.com/index.php?controller=attachment&amp;id_attachment=16696&amp;_gl=1*ckrhji*_up*MQ..&amp;gclid=Cj0KCQjw4Oe4BhCcARIsADQ0csmcvurIChhpOXrhdOnhTCGpguQXaaVWf-G21MTomw8JSyX77RQa1xYaAsnXEALw_wcB</a>
+</li>
+</ul>
+</li>
+<li>
+<b>Advantech</b>
+<ul type="circle">
+<li>
+<a href="https://www.integral-system.fr/media/product/file/18669D38-A62A-44C5-BACF-5F3107DAEA46.pdf" rel="nofollow noreferrer noopener" target="_blank">https://www.integral-system.fr/media/product/file/18669D38-A62A-44C5-BACF-5F3107DAEA46.pdf</a>
+</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<p>Moreover, how can you determine if a PC is compatible with your EtherCAT master stack ?</p>
+<p> </p>
+<p>Thank you,</p>
+<p> </p>
+<p>Benoît</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=63492
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.07.2025 07:09:11 +00:00
+UpdatedAt=23.07.2025 07:09:13 +00:00
+
+### ARTICLE01_SUBJECT
+Real-time drivers support
+
+### ARTICLE01_BODY
+Hi Benoit,<div><br></div><div>here is an overview of our supported network adapters:</div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/index.html" title="https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/index.html" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/index.html</a></div><div><br></div><div>because you are targeting an Intel IPC the following PCI adapters are from interest:</div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/emllIntelGbe.html#emllintelgbe" title="https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/emllIntelGbe.html#emllintelgbe" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/emllIntelGbe.html#emllintelgbe</a></div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/emllLAN743x.html#emlllan743x" title="https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/emllLAN743x.html#emlllan743x" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/emllLAN743x.html#emlllan743x</a></div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/emllRTL8169.html#emllrtl8169" title="https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/emllRTL8169.html#emllrtl8169" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/emllRTL8169.html#emllrtl8169</a></div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/emllDW3504.html#emlldw3504" title="https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/emllDW3504.html#emlldw3504" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/emllDW3504.html#emlldw3504</a></div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/emllBcmNetXtreme.html#emllbcmnetxtreme" title="https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/emllBcmNetXtreme.html#emllbcmnetxtreme" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/supported-nics/emllBcmNetXtreme.html#emllbcmnetxtreme</a></div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030 30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, July 23, 2025 at 8:46:42 AM, Tankoano Benoit wrote:<br><br><div>
+<p>Hello,</p>
+<p> </p>
+<p>I would like to know before to buy one of the following PC if they can support your EtherCAT master stack :</p>
+<ul type="disc">
+<li>
+<b>RACK PC SIMATIC IPC847D - 4U</b>
+<ul type="circle">
+<li>
+<a href="https://cache.industry.siemens.com/dl/files/965/98164965/att_46556/v1/simatic_rackpc_v802_en_web.pdf" rel="nofollow noreferrer noopener" target="_blank">https://cache.industry.siemens.com/dl/files/965/98164965/att_46556/v1/simatic_rackpc_v802_en_web.pdf</a>
+</li>
+</ul>
+</li>
+<li>
+<b>SMATIPC</b>
+<ul type="circle">
+<li>
+<a href="https://cdn.shopify.com/s/files/1/0747/1438/2601/files/IEXP-502_Ver1.0.pdf?v=1722283049" rel="nofollow noreferrer noopener" target="_blank">https://cdn.shopify.com/s/files/1/0747/1438/2601/files/IEXP-502_Ver1.0.pdf?v=1722283049</a>
+</li>
+</ul>
+</li>
+<li>
+<b>AAEON</b>
+<ul type="circle">
+<li>
+<a href="https://www.es-france.com/index.php?controller=attachment&amp;id_attachment=16696&amp;_gl=1*ckrhji*_up*MQ..&amp;gclid=Cj0KCQjw4Oe4BhCcARIsADQ0csmcvurIChhpOXrhdOnhTCGpguQXaaVWf-G21MTomw8JSyX77RQa1xYaAsnXEALw_wcB" rel="nofollow noreferrer noopener" target="_blank">https://www.es-france.com/index.php?controller=attachment&amp;id_attachment=16696&amp;_gl=1*ckrhji*_up*MQ..&amp;gclid=Cj0KCQjw4Oe4BhCcARIsADQ0csmcvurIChhpOXrhdOnhTCGpguQXaaVWf-G21MTomw8JSyX77RQa1xYaAsnXEALw_wcB</a>
+</li>
+</ul>
+</li>
+<li>
+<b>Advantech</b>
+<ul type="circle">
+<li>
+<a href="https://www.integral-system.fr/media/product/file/18669D38-A62A-44C5-BACF-5F3107DAEA46.pdf" rel="nofollow noreferrer noopener" target="_blank">https://www.integral-system.fr/media/product/file/18669D38-A62A-44C5-BACF-5F3107DAEA46.pdf</a>
+</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<p>Moreover, how can you determine if a PC is compatible with your EtherCAT master stack ?</p>
+<p> </p>
+<p>Thank you,</p>
+<p> </p>
+<p>Benoît</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

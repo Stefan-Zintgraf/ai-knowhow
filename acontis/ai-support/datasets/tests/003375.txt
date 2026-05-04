@@ -1,0 +1,112 @@
+### HEADER
+Id=3375
+Link=http://at-zammad/#ticket/zoom/3375
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=Omron Automation Americas, PPMAC (ID=562, Number=562)
+Number=703375
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=farooq.ahmad@omron.com (ID=233, FirstName=Farooq, LastName=Ahmad)
+CreatedBy=farooq.ahmad@omron.com (ID=233, FirstName=Farooq, LastName=Ahmad)
+Type=
+TimeUnit=
+CreatedAt=01.07.2022 02:04:57 +00:00
+UpdatedAt=29.07.2022 06:12:13 +00:00
+CloseAt=29.07.2022 06:12:13 +00:00
+ArticlesCount=3
+
+### TITLE
+SDO commands
+
+### ARTICLE00_HEADER
+Id=17827
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.07.2022 02:04:57 +00:00
+UpdatedAt=01.07.2022 02:05:00 +00:00
+
+### ARTICLE00_SUBJECT
+SDO commands
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Cyril,</p>
+<p> </p>
+<p>Can you provide me some reference and recommendations as to what should be the appropriate value of the timeout when asking for SDO command <span style="color:#6f008a;">ECMASTER_REQ_SDO</span>: The default value for the timeout is 5000 (5 seconds). Particularly, what is the minimum value we should specify in it.</p>
+<p> </p>
+<p>Also, let me know if there is anything you can decipher form yesterday’s Wireshark data and log file?</p>
+<p> </p>
+<p><span style="color:#0075b0;"><img style="max-width:100%;width:4.5083in;max-height:.4666in;width:433px;max-height:45px;" src="/api/v1/ticket_attachment/3375/17827/72774?view=inline" alt="signature_1559069281"></span></p>
+<p><span style="color:#0075b0;">Farooq Ahmad</span></p>
+<p><span style="color:#929292;">Firmware Engineering Manager</span></p>
+<p><span style="color:#929292;">Direct: 818.717.5667 | </span><span> <a href="mailto:farooq.ahmad@omron.com"><span style="color:blue;">farooq.ahmad@omron.com</span></a></span></p>
+<p> </p>
+<p><span lang="FR" style="color:#0075b0;">Omron Automation Americas</span></p>
+<p><span lang="FR" style="color:#929292;">9200 Oakdale Ave. Suite 900, Chatsworth, CA 91311</span></p>
+<p><a href="https://bit.ly/3dz9EH3" title="https://automation.omron.com/en/us/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">automation.omron.com</span></a></p>
+<p> </p>
+<p><a href="https://bit.ly/3szOY5T" title="https://www.linkedin.com/company/omron-automation-americas/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0075b0;"><img border="0" style="max-width:100%;width:.325in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/3375/17827/72775?view=inline" alt="signature_1593825543"></span></a><a href="https://bit.ly/3vh2lKb" rel="nofollow noreferrer noopener" title="https://bit.ly/3vh2lKb" target="_blank"><span style="color:#0095cb;"><img border="0" style="max-width:100%;width:.25in;max-height:.25in;width:24px;max-height:24px;" src="/api/v1/ticket_attachment/3375/17827/72776?view=inline" alt="signature_48633699"></span></a><a href="https://bit.ly/3n2AOt1" title="https://www.instagram.com/omronautomation" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0095cb;"><img border="0" style="max-width:100%;width:.325in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/3375/17827/72777?view=inline" alt="signature_1432883732"></span></a><a href="https://bit.ly/3ehqxF3" title="https://twitter.com/OmronAutomation" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0095cb;"><img border="0" style="max-width:100%;width:.2916in;max-height:.25in;width:28px;max-height:24px;" src="/api/v1/ticket_attachment/3375/17827/72778?view=inline" alt="signature_1894500672"></span></a><a href="https://bit.ly/3n3lgoL" title="http://www.youtube.com/OmronAutomationTech" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0095cb;"><img border="0" style="max-width:100%;width:.3666in;max-height:.25in;width:35px;max-height:24px;" src="/api/v1/ticket_attachment/3375/17827/72779?view=inline" alt="signature_1099395179"></span></a></p>
+<p> </p>
+<p><i><span style="color:#cbcbcb;">This is a confidential message. If received in error, delete it and notify the sender.</span></i><span style="color:#cbcbcb;"> </span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=17839
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.07.2022 06:44:22 +00:00
+UpdatedAt=01.07.2022 06:44:26 +00:00
+
+### ARTICLE01_SUBJECT
+SDO commands
+
+### ARTICLE01_BODY
+Hi Farooq,<div><br></div><div>it should not be shorter than the longer reaction time of a slave. 5s is not a scientific or specified value.</div><div>At the end this is only the time before the operator goes crazy and  reset the system :). From the EtherCAT point of view it could be infinite.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Friday, July 1, 2022 at 4:04:57 AM, Farooq Ahmad wrote:<br><br><div>
+<p>Dear Cyril,</p>
+<p> </p>
+<p>Can you provide me some reference and recommendations as to what should be the appropriate value of the timeout when asking for SDO command <span style="color:#6f008a;">ECMASTER_REQ_SDO</span>: The default value for the timeout is 5000 (5 seconds). Particularly, what is the minimum value we should specify in it.</p>
+<p> </p>
+<p>Also, let me know if there is anything you can decipher form yesterday’s Wireshark data and log file?</p>
+<p> </p>
+<p><span style="color:#0075b0;"><img style="max-width:100%;max-width:100%;width:4.5083in;max-height:.4666in;width:433px;max-height:45px;" src="/api/v1/ticket_attachment/3375/17839/72803?view=inline" alt="signature_1559069281"></span></p>
+<p><span style="color:#0075b0;">Farooq Ahmad</span></p>
+<p><span style="color:#929292;">Firmware Engineering Manager</span></p>
+<p><span style="color:#929292;">Direct: 818.717.5667 | </span><span> <a href="mailto:farooq.ahmad@omron.com"><span style="color:blue;">farooq.ahmad@omron.com</span></a></span></p>
+<p> </p>
+<p><span lang="FR" style="color:#0075b0;">Omron Automation Americas</span></p>
+<p><span lang="FR" style="color:#929292;">9200 Oakdale Ave. Suite 900, Chatsworth, CA 91311</span></p>
+<p><a href="https://bit.ly/3dz9EH3" title="https://automation.omron.com/en/us/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">automation.omron.com</span></a></p>
+<p> </p>
+<p><a href="https://bit.ly/3szOY5T" title="https://www.linkedin.com/company/omron-automation-americas/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0075b0;"><img border="0" style="max-width:100%;max-width:100%;width:.325in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/3375/17839/72804?view=inline" alt="signature_1593825543"></span></a><a href="https://bit.ly/3vh2lKb" rel="nofollow noreferrer noopener" title="https://bit.ly/3vh2lKb" target="_blank"><span style="color:#0095cb;"><img border="0" style="max-width:100%;max-width:100%;width:.25in;max-height:.25in;width:24px;max-height:24px;" src="/api/v1/ticket_attachment/3375/17839/72805?view=inline" alt="signature_48633699"></span></a><a href="https://bit.ly/3n2AOt1" title="https://www.instagram.com/omronautomation" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0095cb;"><img border="0" style="max-width:100%;max-width:100%;width:.325in;max-height:.25in;width:31px;max-height:24px;" src="/api/v1/ticket_attachment/3375/17839/72806?view=inline" alt="signature_1432883732"></span></a><a href="https://bit.ly/3ehqxF3" title="https://twitter.com/OmronAutomation" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0095cb;"><img border="0" style="max-width:100%;max-width:100%;width:.2916in;max-height:.25in;width:28px;max-height:24px;" src="/api/v1/ticket_attachment/3375/17839/72807?view=inline" alt="signature_1894500672"></span></a><a href="https://bit.ly/3n3lgoL" title="http://www.youtube.com/OmronAutomationTech" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0095cb;"><img border="0" style="max-width:100%;max-width:100%;width:.3666in;max-height:.25in;width:35px;max-height:24px;" src="/api/v1/ticket_attachment/3375/17839/72808?view=inline" alt="signature_1099395179"></span></a></p>
+<p> </p>
+<p><i><span style="color:#cbcbcb;">This is a confidential message. If received in error, delete it and notify the sender.</span></i><span style="color:#cbcbcb;"> </span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=17840
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.07.2022 06:45:02 +00:00
+UpdatedAt=01.07.2022 06:45:02 +00:00
+
+### ARTICLE02_SUBJECT
+Automatic reply: SDO commands [Ticket#703375]
+
+### ARTICLE02_BODY
+<div>
+<p>I will be out of the office Until MondayApril 18th 2022.</p>
+<p> </p>
+</div>

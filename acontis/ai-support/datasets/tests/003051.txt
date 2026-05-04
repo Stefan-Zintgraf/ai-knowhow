@@ -1,0 +1,155 @@
+### HEADER
+Id=3051
+Link=http://at-zammad/#ticket/zoom/3051
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=YASKAWA Europe GmbH (ID=174, Number=60502, Country=DE)
+Commission=VIPA, PLC (ID=197, Number=197)
+Number=703051
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=simon.schlereth@yaskawa.eu (ID=1053, FirstName=Simon, LastName=Schlereth)
+CreatedBy=simon.schlereth@yaskawa.eu (ID=1053, FirstName=Simon, LastName=Schlereth)
+Type=
+TimeUnit=
+CreatedAt=18.05.2022 17:56:09 +00:00
+UpdatedAt=17.06.2022 06:02:54 +00:00
+CloseAt=17.06.2022 06:02:54 +00:00
+ArticlesCount=2
+
+### TITLE
+Frage zur EtherCAT Redundanz
+
+### ARTICLE00_HEADER
+Id=16052
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.05.2022 17:56:09 +00:00
+UpdatedAt=18.05.2022 17:56:09 +00:00
+
+### ARTICLE00_SUBJECT
+Frage zur EtherCAT Redundanz
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Hallo, </span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p>Ich habe eine Frage zum Thema EtherCAT Redundanz, wo Sie mir vielleicht weiterhelfen können. Ich meine mich zu erinnern, dass der EtherCAT Master auch ohne zweiten Port, aber mit einem speziellen Slave EtherCAT Kabelredundanz unterstützt. Können Sie mir sagen, welcher Slave als Junction zum Einsatz kommen kann/muss? Gibt es hier weiterführende Informationen zu dem Thema?</p>
+<p> </p>
+<p>Vielen Dank im Voraus und viele Grüße aus Herzogenaurach</p>
+<p>Simon Schlereth</p>
+<p> </p>
+<div>
+<p><b><span lang="EN-US">Simon Schlereth</span></b></p>
+</div>
+<div>
+<p><span lang="EN-US">Team Leader iCube MC</span></p>
+</div>
+<div>
+<p><span lang="EN-US">Firmware<br>
+<br>
+</span></p>
+</div>
+<p><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" title="http://www.yaskawa.eu.com/" target="_blank"><span style="color:blue;"></span></a><span lang="EN-US"><br>
+<br>
+</span></p>
+<div>
+<p><b><span lang="EN-US">YASKAWA Europe GmbH</span></b><span lang="EN-US"></span></p>
+</div>
+<div>
+<p><span lang="EN-US">Drives Motion Controls Division</span></p>
+</div>
+<div>
+<p>Ohmstraße 4</p>
+</div>
+<div>
+<p>91074 Herzogenaurach</p>
+</div>
+<div>
+<p>Germany</p>
+</div>
+<div>
+<p><span><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.yaskawa.eu.com</span></a><br>
+<br>
+</span></p>
+</div>
+<div>
+<p><b>P </b>+49 9132 744-1086</p>
+</div>
+<div>
+<p><a href="mailto:simon.schlereth@yaskawa.eu"><span style="color:blue;">simon.schlereth@yaskawa.eu</span></a></p>
+</div>
+<p> </p>
+</div><br>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------------<br> Geschaeftsfuehrer/Managing Directors: Bruno J. Schnekenburger, Marcus Mead, Bobbie Linkenbach <br> Amtsgericht/Local Court: Frankfurt, Commercial register no. 88369 <br> Headquarters: YASKAWA Europe GmbH, Hauptstr. 185, D-65760 Eschborn<br> ------------------------------------------------------------------------------------------------------------------------------<br> CONFIDENTIALITY: This e-mail and any attachments are confidential and may also be privileged.<br> If you are not the named recipient, please notify the sender immediately and do not disclose the contents to another person,<br> use it for any purpose, or store or copy the information in any medium.
+
+### ARTICLE01_HEADER
+Id=16074
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.05.2022 06:41:05 +00:00
+UpdatedAt=19.05.2022 06:41:09 +00:00
+
+### ARTICLE01_SUBJECT
+Frage zur EtherCAT Redundanz
+
+### ARTICLE01_BODY
+<div>Hallo Simon,</div><div><br></div><div>Ja es nennt sich Junction Redundancy. Damit geht es an einem Junction Slave eine redundante Schleife zu realisieren:</div><div><div>
+<a href="http://public.acontis.com/documents/EtherCAT/slides/EC-Master-FeaturePacks.pdf" title="http://public.acontis.com/documents/EtherCAT/slides/EC-Master-FeaturePacks.pdf" rel="nofollow noreferrer noopener" target="_blank">http://public.acontis.com/documents/EtherCAT/slides/EC-Master-FeaturePacks.pdf</a> Seite 27</div></div><div><br></div><div>Es geht mit Beckhoff EL1122, CU1124, CU1128, oder auch mit  Omron GX-JC03 oder <span>GX-</span><span>JC06.</span>
+</div><div><br></div><div>Junction Redundancy ist Teil unsres CableRedundancy Feature Packs:</div><div><div><a href="sftp://home155839490.1and1-data.host/Software/EC-Master/3.1/EC-Master-FP-Cable-Redundancy.pdf" title="sftp://home155839490.1and1-data.host/Software/EC-Master/3.1/EC-Master-FP-Cable-Redundancy.pdf">http://software.acontis.com/EC-Master/3.1/EC-Master-FP-Cable-Redundancy.pdf</a></div></div><div><br></div><div>Schöne Grüße,</div><div>Cyril</div><div data-signature="true" data-signature-id="2"><div><br></div></div><div><blockquote type="cite">On Wednesday, May 18, 2022, 7:56:09 PM, Simon Schlereth wrote:<br><br><div>
+<p><span lang="EN-US">Hallo, </span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p>Ich habe eine Frage zum Thema EtherCAT Redundanz, wo Sie mir vielleicht weiterhelfen können. Ich meine mich zu erinnern, dass der EtherCAT Master auch ohne zweiten Port, aber mit einem speziellen Slave EtherCAT Kabelredundanz unterstützt. Können Sie mir sagen, welcher Slave als Junction zum Einsatz kommen kann/muss? Gibt es hier weiterführende Informationen zu dem Thema?</p>
+<p> </p>
+<p>Vielen Dank im Voraus und viele Grüße aus Herzogenaurach</p>
+<p>Simon Schlereth</p>
+<p> </p>
+<div>
+<p><b><span lang="EN-US">Simon Schlereth</span></b></p>
+</div>
+<div>
+<p><span lang="EN-US">Team Leader iCube MC</span></p>
+</div>
+<div>
+<p><span lang="EN-US">Firmware<br>
+<br>
+</span></p>
+</div>
+<p><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" title="http://www.yaskawa.eu.com/" target="_blank"><span style="color:blue;"></span></a><span lang="EN-US"><br>
+<br>
+</span></p>
+<div>
+<p><b><span lang="EN-US">YASKAWA Europe GmbH</span></b><span lang="EN-US"></span></p>
+</div>
+<div>
+<p><span lang="EN-US">Drives Motion Controls Division</span></p>
+</div>
+<div>
+<p>Ohmstraße 4</p>
+</div>
+<div>
+<p>91074 Herzogenaurach</p>
+</div>
+<div>
+<p>Germany</p>
+</div>
+<div>
+<p><span><a href="http://www.yaskawa.eu.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.yaskawa.eu.com</span></a><br>
+<br>
+</span></p>
+</div>
+<div>
+<p><b>P </b>+49 9132 744-1086</p>
+</div>
+<div>
+<p><a href="mailto:simon.schlereth@yaskawa.eu"><span style="color:blue;">simon.schlereth@yaskawa.eu</span></a></p>
+</div>
+<p> </p>
+</div>
+<br>
+<span class="js-signatureMarker"></span><br> ------------------------------------------------------------------------------------------------------------------------------<br> Geschaeftsfuehrer/Managing Directors: Bruno J. Schnekenburger, Marcus Mead, Bobbie Linkenbach <br> Amtsgericht/Local Court: Frankfurt, Commercial register no. 88369 <br> Headquarters: YASKAWA Europe GmbH, Hauptstr. 185, D-65760 Eschborn<br> ------------------------------------------------------------------------------------------------------------------------------<br> CONFIDENTIALITY: This e-mail and any attachments are confidential and may also be privileged.<br> If you are not the named recipient, please notify the sender immediately and do not disclose the contents to another person,<br> use it for any purpose, or store or copy the information in any medium.<br>
+</blockquote></div><div><br></div><br><br>

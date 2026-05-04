@@ -1,0 +1,239 @@
+### HEADER
+Id=6334
+Link=http://at-zammad/#ticket/zoom/6334
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=706334
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=11.09.2023 10:55:35 +00:00
+UpdatedAt=12.09.2023 11:24:59 +00:00
+CloseAt=12.09.2023 11:24:59 +00:00
+ArticlesCount=3
+
+### TITLE
+The fucntion's support of the EcMotion "MC_HOME_T"
+
+### ARTICLE00_HEADER
+Id=34042
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.09.2023 10:55:35 +00:00
+UpdatedAt=11.09.2023 10:55:36 +00:00
+
+### ARTICLE00_SUBJECT
+The fucntion's support of the EcMotion "MC_HOME_T"
+
+### ARTICLE00_BODY
+<div>Dear,</div><div> </div><div><span lang="en">Does "MC_HOME_T" support the "Homing Mode" (0x6060 == 6) of DS402?</span></div><div>
+<span lang="en">If not</span>, what part of the implementation is still missing? </div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div>
+<div><img src="/api/v1/ticket_attachment/6334/34042/142045?view=inline" style="max-width:100%;"></div>
+<div><b><i>2023.9.19-9.23 上海工博会，盟通展位号6.1馆C060，期待与您见面！</i></b></div>
+<p><i><br></i></p>
+<p>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</p>
+</div>
+<div>
+<p>Room 311, Building 2, Yiquanhui, No. 35 Shangdi East Road, Haidian District, Beijing</p>
+<p>北京市海淀区上地东路35号院颐泉汇2号楼311</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=34047
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.09.2023 12:01:55 +00:00
+UpdatedAt=11.09.2023 12:01:57 +00:00
+
+### ARTICLE01_SUBJECT
+The fucntion's support of the EcMotion "MC_HOME_T"
+
+### ARTICLE01_BODY
+Hi Lishan,<div><br></div><div>
+<div>MC_HOME_T implements this mode, yes, but the Homing mode (0x6060 = 6)  is very drive specific. Usually it has to be parameterized upfront. <span>Also Homing mode is just supported, if the drives are operated in PP mode (0x6060 = 1).</span>
+</div>
+<div><br></div>
+<div>If you want to operate the drive in CSP or CSV mode, you have to implement homing on the application level by using the function blocks MoveVelocity and McStop.</div>
+<div>For example.</div>
+<div>- check if the axis is before or after the homing switch/position.</div>
+<div>- start moving with a high velocity in the direction where the homing switch is located</div>
+<div>- while moving, monitoring the (digital) input, if the moving position is reached</div>
+<div>- if yes, stop the axis with McStop</div>
+<div>- start moving with a low velocity into the other direction</div>
+<div>- while moving, monitoring the (digital) input, if the moving position is reached</div>
+<div>
+<div>- if yes, stop the axis with McStop</div>- this might be repeated several times</div>
+<div><br></div>
+<div>Please note, that EcMasterDemoMotion is a free example the EcMotionControl.cpp is provided "as is".</div>
+<div>There are no plans to enhance the functionality.</div>
+<div><br></div>
+<div>Best Regards,</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div data-signature="true" data-signature-id="2">
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: -</div>
+<div>acontis technologies GmbH,  -, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, September 11, 2023 at 12:55:35 PM, ec_support@motrotech.com wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div><span lang="en">Does "MC_HOME_T" support the "Homing Mode" (0x6060 == 6) of DS402?</span></div>
+<div>
+<span lang="en">If not</span>, what part of the implementation is still missing? </div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>
+<div><img src="/api/v1/ticket_attachment/6334/34047/142082?view=inline" style="max-width:100%;max-width:100%;"></div>
+<div><b><i>2023.9.19-9.23 上海工博会，盟通展位号6.1馆C060，期待与您见面！</i></b></div>
+<p><i><br></i></p>
+<p>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</p>
+</div>
+<div>
+<p>Room 311, Building 2, Yiquanhui, No. 35 Shangdi East Road, Haidian District, Beijing</p>
+<p>北京市海淀区上地东路35号院颐泉汇2号楼311</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=34116
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.09.2023 11:23:34 +00:00
+UpdatedAt=12.09.2023 11:23:34 +00:00
+
+### ARTICLE02_SUBJECT
+Re: RE: The fucntion's support of the EcMotion "MC_HOME_T" [Ticket#706334]
+
+### ARTICLE02_BODY
+<div>Hi Timo,</div><div> </div><div>Got it, thanks for the information and suggestions.</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</div>
+<div>
+<p>Room 311, Building 2, Yiquanhui, No. 35 Shangdi East Road, Haidian District, Beijing</p>
+<p>北京市海淀区上地东路35号院颐泉汇2号楼311</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div><blockquote>
+<div> </div>
+<div>
+<span class="js-signatureMarker"></span><div>
+<b>From:</b> <a href="mailto:ecsupport@acontis.com">Timo Nußbaumer via EC-Support</a>
+</div>
+<div>
+<b>Date:</b> 2023-09-11 20:01</div>
+<div>
+<b>To:</b> <a href="mailto:ec_support@motrotech.com">ec_support</a>
+</div>
+<div>
+<b>Subject:</b> RE: The fucntion's support of the EcMotion "MC_HOME_T" [Ticket#706334]</div>
+</div>
+<div>Hi Lishan,<div> </div>
+<div>
+<div>MC_HOME_T implements this mode, yes, but the Homing mode (0x6060 = 6) is very drive specific. Usually it has to be parameterized upfront. Also Homing mode is just supported, if the drives are operated in PP mode (0x6060 = 1).</div>
+<div> </div>
+<div>If you want to operate the drive in CSP or CSV mode, you have to implement homing on the application level by using the function blocks MoveVelocity and McStop.</div>
+<div>For example.</div>
+<div>- check if the axis is before or after the homing switch/position.</div>
+<div>- start moving with a high velocity in the direction where the homing switch is located</div>
+<div>- while moving, monitoring the (digital) input, if the moving position is reached</div>
+<div>- if yes, stop the axis with McStop</div>
+<div>- start moving with a low velocity into the other direction</div>
+<div>- while moving, monitoring the (digital) input, if the moving position is reached</div>
+<div>
+<div>- if yes, stop the axis with McStop</div>- this might be repeated several times</div>
+<div> </div>
+<div>Please note, that EcMasterDemoMotion is a free example the EcMotionControl.cpp is provided "as is".</div>
+<div>There are no plans to enhance the functionality.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div data-signature="true" data-signature-id="2">
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: -</div>
+<div>acontis technologies GmbH, -, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Monday, September 11, 2023 at 12:55:35 PM, ec_support@motrotech.com wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div><span lang="en">Does "MC_HOME_T" support the "Homing Mode" (0x6060 == 6) of DS402?</span></div>
+<div>
+<span lang="en">If not</span>, what part of the implementation is still missing? </div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>
+<div><img src="/api/v1/ticket_attachment/6334/34116/142337?view=inline" style="max-width:100%;max-width: 100%;"></div>
+<div><b><i>2023.9.19-9.23 上海工博会，盟通展位号6.1馆C060，期待与您见面！</i></b></div>
+<p><i><br></i></p>
+<p>Beijing Motrotech Technology Co.,Ltd. 北京盟通科技有限公司</p>
+</div>
+<div>
+<p>Room 311, Building 2, Yiquanhui, No. 35 Shangdi East Road, Haidian District, Beijing</p>
+<p>北京市海淀区上地东路35号院颐泉汇2号楼311</p>
+<div>Tel: +86-10-62740270 （北京）</div>
+<div>0571-56125098 （杭州）</div>
+<div><p>Fax: +86-10-62740270</p></div>
+</div>
+<div><p>Email ：<a href="mailto:fan.lili@motrotech.com">ec_support@motrotech.com</a></p></div>
+</div>
+<br>
+</blockquote></div>
+<div> </div>
+<br><br>
+</div>
+</div>
+</blockquote>

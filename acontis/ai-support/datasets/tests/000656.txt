@@ -1,0 +1,234 @@
+### HEADER
+Id=656
+Link=http://at-zammad/#ticket/zoom/656
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Gemini CAD Systems SRL (ID=314, Number=45011, Country=RO)
+Commission=Gemini CAD Sys., Cutter Pilot (ID=370, Number=370)
+Number=700656
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=alexandru.buzdea@geminicad.com (ID=306, FirstName=Alexandru, LastName=Buzdea)
+CreatedBy=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Type=
+TimeUnit=
+CreatedAt=25.05.2021 13:12:58 +00:00
+UpdatedAt=25.04.2022 13:04:47 +00:00
+CloseAt=01.06.2021 06:07:17 +00:00
+ArticlesCount=2
+
+### TITLE
+On Time RTOS-32 Locater Failed
+
+### ARTICLE00_HEADER
+Id=3624
+ContentType=text/html
+Internal=False
+Type=phone
+CreatedAt=25.05.2021 13:12:59 +00:00
+UpdatedAt=25.05.2021 13:12:59 +00:00
+
+### ARTICLE00_BODY
+<div>Hi Christoph,</div><div> </div><div>what do you mean with debug license?</div><div>"debug license" years ago my collogue Vlad Covaci had a license to compile the project in debug mode, for debugging. I don't know if is necessary now, but if I try to compile, I have this kind of error:</div><div> <blockquote type="cite">
+<img style="max-width:100%;max-width:100%;max-width:100%;max-height:auto;" src="/api/v1/ticket_attachment/656/3624/12095?view=inline">
+</blockquote> <div> </div>Are you looking for a license key to run longer than one hour? Yes, also this.<br>
+</div><div>
+<div> </div>
+</div><div></div><div>Regards, Alex</div><div> </div><hr>
+<div dir="ltr">
+<b>From:</b> Christoph Widmann via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Tuesday, May 25, 2021 8:55 AM<br>
+<b>To:</b> Alexandru BUZDEA &lt;Alexandru.BUZDEA@geminicad.com&gt;<br>
+<b>Subject:</b> RE: Delivery for Gemini CAD Systems SRL, Cutter Pilot, Commission 45011 [Ticket#700588] <div> </div>
+</div><div>Hello Alex,<div> </div>
+<div>what do you mean with debug license?</div>
+<div>Do you mean the proctected version of EC-Master?</div>
+<div>Are you looking for a license key to run longer than one hour?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div> </div>
+<div>Christoph<br>
+<div>
+<div>____________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>acontis technologies GmbH</div>
+</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div> Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com</a> </div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>eMail: ecsupport@acontis.com<br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div>
+<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>
+<div>
+<div>Eingetragene Rechtsform: GmbH<br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Tuesday, May 25, 2021, 7:36:23 AM, Alexandru Buzdea wrote:<br>
+<br>
+<div>Hi Christoph,</div>
+<div> </div>
+<div>Can you help me regarding the debug license?</div>
+<div> </div>
+<div>Till Now we have la debug license on Vlad Covaci developer, how can I change the license to other developer?</div>
+<div> </div>
+<div>Regards, Alex</div>
+<div> </div>
+<div>
+<img style="max-width:100%;max-width:100%;max-width: 100%;max-height: auto;" src="/api/v1/ticket_attachment/656/3624/12096?view=inline"><br>
+</div>
+<div>
+</div>
+<hr>
+</blockquote>
+</div>
+<br>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=3625
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.05.2021 13:16:57 +00:00
+UpdatedAt=25.05.2021 13:17:00 +00:00
+
+### ARTICLE01_SUBJECT
+On Time RTOS-32 Locater Failed
+
+### ARTICLE01_BODY
+Hi Alex,<div><br></div><div>the error message "Locater ...." is related to the On Time RTOS-32 license.</div><div>I suppose you have just RTOS-32 license and therefore only one developer at the same time can use the debug monitor.</div><div>Be sure, that your colleague isn´t using it.</div><div><br></div><div>Regarding "Longer than one hour".</div><div>Please send the MAC address of the network card used for EtherCAT to sales@acontis.com and ask for</div><div>a development license key.</div><div><br></div><div>Best Regards,</div><div><br></div><div>Christoph</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Christoph Widmann </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, May 25, 2021, 3:12:59 PM, Christoph Widmann wrote:<br><br><div>Hi Christoph,</div>
+<div> </div>
+<div>what do you mean with debug license?</div>
+<div>"debug license" years ago my collogue Vlad Covaci had a license to compile the project in debug mode, for debugging. I don't know if is necessary now, but if I try to compile, I have this kind of error:</div>
+<div> <blockquote type="cite">
+<img style="max-width:100%;max-width:100%;max-width:100%;max-width:100%;max-height:auto;" src="/api/v1/ticket_attachment/656/3625/12097?view=inline">
+</blockquote> <div> </div>Are you looking for a license key to run longer than one hour? Yes, also this.<br>
+</div>
+<div>
+<div> </div>
+</div>
+<div></div>
+<div>Regards, Alex</div>
+<div> </div>
+<hr>
+<div dir="ltr">
+<b>From:</b> Christoph Widmann via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Tuesday, May 25, 2021 8:55 AM<br>
+<b>To:</b> Alexandru BUZDEA &lt;Alexandru.BUZDEA@geminicad.com&gt;<br>
+<b>Subject:</b> RE: Delivery for Gemini CAD Systems SRL, Cutter Pilot, Commission 45011 [Ticket#700588] <div> </div>
+</div>
+<div>Hello Alex,<div> </div>
+<div>what do you mean with debug license?</div>
+<div>Do you mean the proctected version of EC-Master?</div>
+<div>Are you looking for a license key to run longer than one hour?</div>
+<div> </div>
+<div>Best Regards,</div>
+<div> </div>
+<div>Christoph<br>
+<div>
+<div>____________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>acontis technologies GmbH</div>
+</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div> Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com</a> </div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>eMail: ecsupport@acontis.com<br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div>
+<a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>
+<div>
+<div>Eingetragene Rechtsform: GmbH<br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div>
+</div>
+</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Tuesday, May 25, 2021, 7:36:23 AM, Alexandru Buzdea wrote:<br>
+<br>
+<div>Hi Christoph,</div>
+<div> </div>
+<div>Can you help me regarding the debug license?</div>
+<div> </div>
+<div>Till Now we have la debug license on Vlad Covaci developer, how can I change the license to other developer?</div>
+<div> </div>
+<div>Regards, Alex</div>
+<div> </div>
+<div>
+<img style="max-width:100%;max-width:100%;max-width:100%;max-width: 100%;max-height: auto;" src="/api/v1/ticket_attachment/656/3625/12098?view=inline"><br>
+</div>
+<div>
+</div>
+<hr>
+</blockquote>
+</div>
+<br>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

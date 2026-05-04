@@ -1,0 +1,129 @@
+### HEADER
+Id=7259
+Link=http://at-zammad/#ticket/zoom/7259
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=HELMKE (ID=791, Number=0, Country=FR)
+Commission=Helmke, Unknown (ID=876, Number=876)
+Number=707259
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=patrick.martin@helmke.fr (ID=2382, FirstName=Martin, LastName=Patrick)
+CreatedBy=patrick.martin@helmke.fr (ID=2382, FirstName=Martin, LastName=Patrick)
+Type=
+TimeUnit=
+CreatedAt=18.01.2024 10:36:07 +00:00
+UpdatedAt=21.02.2024 07:11:56 +00:00
+CloseAt=18.01.2024 10:49:29 +00:00
+ArticlesCount=2
+
+### TITLE
+HELMKE AMS
+
+### ARTICLE00_HEADER
+Id=39750
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.01.2024 10:36:07 +00:00
+UpdatedAt=18.01.2024 10:36:07 +00:00
+
+### ARTICLE00_SUBJECT
+HELMKE AMS
+
+### ARTICLE00_BODY
+<div>
+<p> </p>
+<p><span lang="DE">Sehr geehrte Herren</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Wir, die Gruppe HELMKE, Anbieter von Antriebssysteme und Betreiber von Motorenprüffelder im Leistungsbereich 100-6000 kW, möchten im Rahmen des Wartungsprogramms unseres 6 MW Prüffeldes in Frankreich, Pulversheim über folgende Produkte und Dienstleistungen eine Anfrage stellen:</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Unser 6 MW Prüfstand wird heute über EtherCAT Protocol und durch einen EtherCAT Master der Fa. Nidec </span><span lang="DE">: Ansaldo PLC System, programmed via Isagraf software (IEC 61131-3 standard PLC programming languages)</span></p>
+<p><span lang="DE">Anbei Foto</span></p>
+<p><span lang="DE">Wir planen den Ersatz des Hardware-EtherCAT-Masters durch eine Softwarelösung, ähnlich zu Ihren Produkten.</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Im Falle von Interesse, schlagen wir einen ersten Kontakt über VC vor.</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Für weiteren Klärungen bleiben wir zur Verfügung.</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span lang="DE">Vielen Dank für Ihre Rückmeldung.</span></p>
+<p><span lang="DE"><p> </p></span></p>
+<p><span>Cordiales salutations <br></span><span style="color:navy;">Patrick MARTIN</span></p>
+<p><br><span style="color:navy;">Responsable informatique</span></p>
+<p><span lang="DE">Tel.: </span><span lang="DE" style="color:navy;">+33(0)3 89 83 65 70</span><span lang="DE"> Direct<br></span><span style="color:navy;"><a href="mailto:patrick.martin@helmke.fr"><span lang="DE">patrick.martin@helmke.fr</span></a></span><span lang="DE"></span></p>
+<p><a href="http://www.helmke.fr" rel="nofollow noreferrer noopener" target="_blank">http://www.helmke.fr</a></p>
+<p>Trouvez nous sur: <a href="https://www.linkedin.com/company/helmke-group/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/helmke-group/" target="_blank">LinkedIn</a> </p>
+<p> </p>
+<p><span lang="DE" style="color:navy;"><img border="0" style="max-width:100%;width:1.725in;max-height:.375in;width:166px;max-height:36px;" src="/api/v1/ticket_attachment/7259/39750/164973?view=inline" alt="cid:image001.png@01DA12F6.BFDAC010"></span></p>
+<p> </p>
+<p><b>HELMKE </b><b><span style="color:navy;">Sàrl</span></b><b><span> <br></span></b><span>Machines et systèmes d’entraînement<br>1, Allée Vert Bois<br>F-68840 Pulversheim</span></p>
+<p> </p>
+<p><span><br>Nr TVA Intracommunautaire : </span><span style="color:navy;">FR 85 947 350 880</span> </p>
+<p>Ce courrier électronique contient des informations confidentielles et/ou protégées. Si vous n’en êtes pas le destinataire</p>
+<p>ou si celui-ci vous a été transmis par erreur, veuillez en informer son émetteur et le détruire. La copie ou le transfert non autorisés de ce message sont interdits.</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=39752
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.01.2024 10:49:29 +00:00
+UpdatedAt=18.01.2024 10:49:33 +00:00
+
+### ARTICLE01_SUBJECT
+HELMKE AMS
+
+### ARTICLE01_BODY
+<div><blockquote type="cite">
+<div>Subject: HELMKE AMS<br>Date: 01/18/2024 11:36<br>From: Martin Patrick &lt;patrick.martin@helmke.fr&gt;<br>To: "'ecsupport@acontis.com'" &lt;ecsupport@acontis.com&gt;, "'info@acontis.com'" &lt;info@acontis.com&gt;<br>CC: Tsampouris Evangelos &lt;Evangelos.Tsampouris@helmke.de&gt;<br><br>
+</div>
+<div>
+<p> </p>
+<p><span lang="DE">Sehr geehrte Herren</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Wir, die Gruppe HELMKE, Anbieter von Antriebssysteme und Betreiber von Motorenprüffelder im Leistungsbereich 100-6000 kW, möchten im Rahmen des Wartungsprogramms unseres 6 MW Prüffeldes in Frankreich, Pulversheim über folgende Produkte und Dienstleistungen eine Anfrage stellen:</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Unser 6 MW Prüfstand wird heute über EtherCAT Protocol und durch einen EtherCAT Master der Fa. Nidec </span><span lang="DE">: Ansaldo PLC System, programmed via Isagraf software (IEC 61131-3 standard PLC programming languages)</span></p>
+<p><span lang="DE">Anbei Foto</span></p>
+<p><span lang="DE">Wir planen den Ersatz des Hardware-EtherCAT-Masters durch eine Softwarelösung, ähnlich zu Ihren Produkten.</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Im Falle von Interesse, schlagen wir einen ersten Kontakt über VC vor.</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Für weiteren Klärungen bleiben wir zur Verfügung.</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="DE">Vielen Dank für Ihre Rückmeldung.</span></p>
+<p><span lang="DE"></span></p>
+<p> </p>
+<p></p>
+<p><span>Cordiales salutations <br></span><span style="color:navy;">Patrick MARTIN</span></p>
+<p><br><span style="color:navy;">Responsable informatique</span></p>
+<p><span lang="DE">Tel.: </span><span lang="DE" style="color:navy;">+33(0)3 89 83 65 70</span><span lang="DE"> Direct<br></span><span style="color:navy;"><a href="mailto:patrick.martin@helmke.fr"><span lang="DE">patrick.martin@helmke.fr</span></a></span><span lang="DE"></span></p>
+<p><a href="http://www.helmke.fr" rel="nofollow noreferrer noopener" target="_blank">http://www.helmke.fr</a></p>
+<p>Trouvez nous sur: <a href="https://www.linkedin.com/company/helmke-group/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/helmke-group/" target="_blank">LinkedIn</a> </p>
+<p> </p>
+<p><span lang="DE" style="color:navy;"><img border="0" style="max-width:100%;max-width:100%;width:1.725in;max-height:.375in;width:166px;max-height:36px;" src="/api/v1/ticket_attachment/7259/39752/164989?view=inline" alt="cid:image001.png@01DA12F6.BFDAC010"></span></p>
+<p> </p>
+<p><b>HELMKE </b><b><span style="color:navy;">Sàrl</span></b><b><span> <br></span></b><span>Machines et systèmes d’entraînement<br>1, Allée Vert Bois<br>F-68840 Pulversheim</span></p>
+<p> </p>
+<p><span><br>Nr TVA Intracommunautaire : </span><span style="color:navy;">FR 85 947 350 880</span> </p>
+<p>Ce courrier électronique contient des informations confidentielles et/ou protégées. Si vous n’en êtes pas le destinataire</p>
+<p>ou si celui-ci vous a été transmis par erreur, veuillez en informer son émetteur et le détruire. La copie ou le transfert non autorisés de ce message sont interdits.</p>
+<p> </p>
+</div>
+</blockquote></div><div><br></div><br><br>

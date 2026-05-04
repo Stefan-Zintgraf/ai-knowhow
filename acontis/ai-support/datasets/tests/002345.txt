@@ -1,0 +1,144 @@
+### HEADER
+Id=2345
+Link=http://at-zammad/#ticket/zoom/2345
+Group=EC-Support (ID=2)
+Priority=low (ID=1)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=FANUC, EtherCAT model CNC (ID=487, Number=487)
+Number=702345
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=28.01.2022 00:36:05 +00:00
+UpdatedAt=12.12.2023 13:52:34 +00:00
+CloseAt=25.02.2022 07:04:36 +00:00
+ArticlesCount=2
+
+### TITLE
+Question about EC-Master (FANUC) Q6
+
+### ARTICLE00_HEADER
+Id=12379
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=28.01.2022 00:36:05 +00:00
+UpdatedAt=28.01.2022 00:36:06 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master (FANUC) Q6
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master (FANUC) Q6
+
+About input data validity and slave status at the moment of disconnection:
+
+Q6-(1).
+   The case the following events occur immediately after the master sends the output data.
+   (event 1) The LAN on the Master side is disconnected.
+   (event 2) The LAN in front of Slave3 is disconnected.
+   (event 3) Slave3 becomes a failure (INIT). The slave is connected.
+
+   In the each events, does OsWaitForEvent (RxEvent, CYCLE_TIME) time out?
+
+Q6-(2)
+   In the each events,  is the master's input data  updated after OsWaitForEvent (RxEvent) call?
+
+Q6-(3)
+   If (2) is yes, what kind of data is it?
+   If not, is it still the same old data from before slave become ​failer?
+
+Q6-(4)
+   If (1) does not time out (before executing ecatExecJob (MasterTimer))
+   -Does emIsSlavePresent () return TRUE?
+   -Does GetSlaveState () return Op?
+
+Q6-(5)
+   If the timeout does not occur in (1), is it possible to check whether the input data of the master is old data? (Before executing ecatExecJob (MasterTimer))
+
+Q6-(6)
+   After executing ecatExecJob(MasterTimer).
+   Does emIsSlavePresent () return FALSE?
+   Does GetSlaveState () return INIT or PRE-OPE?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=12420
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.01.2022 10:45:46 +00:00
+UpdatedAt=28.01.2022 10:45:52 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master (FANUC) Q6
+
+### ARTICLE01_BODY
+I assume the following topology: <div>
+<span>(Example) Master --Slave1 (normal) --Slave2 (normal) --Slave3 (reconnect) --Slave4 (reconnect)</span><div><br></div>
+<div>
+<br><br>
+</div>
+<div>
+<blockquote type="cite">On Friday, January 28, 2022, 1:36:05 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master (FANUC) Q6</div>
+<div><br></div>
+<div>About input data validity and slave status at the moment of disconnection:</div>
+<div><br></div>
+<div>Q6-(1).</div>
+<div>   The case the following events occur immediately after the master sends the output data.</div>
+<div>   (event 1) The LAN on the Master side is disconnected.</div>
+<div>   (event 2) The LAN in front of Slave3 is disconnected.</div>
+<div>   (event 3) Slave3 becomes a failure (INIT). The slave is connected.</div>
+<div><br></div>
+<div>   In the each events, does OsWaitForEvent (RxEvent, CYCLE_TIME) time out?</div>
+<div>[CER] Only 1 and 2 generates a timeout. Depending on the exact timing. If the frame was able to reach back the master, no timeout will occur.</div>
+<div><br></div>
+<div>Q6-(2)</div>
+<div>   In the each events,  is the master's input data  updated after OsWaitForEvent (RxEvent) call?</div>
+<div>[CER] It depends on the usage of EC_IOCTL_SET_IGNORE_INPUTS_ON_WKC_ERROR, EC_IOCTL_SET_ZERO_INPUTS_ON_WKC_ZERO, EC_IOCTL_SET_ZERO_INPUTS_ON_WKC_ERROR.</div>
+<div>By default the Input are only modified if a frame is returned and the WKC is not higher as the expected one.</div>
+</blockquote>
+<blockquote type="cite">
+<div>Q6-(3)</div>
+<div>   If (2) is yes, what kind of data is it?</div>
+<div>   If not, is it still the same old data from before slave become ​failer?</div>
+<div>[CER] Depending on the IOCTL above. By default the returned command data will be copy into the inputs. You can use the following to validate the process data on the application level:</div>
+<div>
+<a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html?highlight=emgetdiagnosisimageptr#wkc-state-in-diagnosis-image" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html?highlight=emgetdiagnosisimageptr#wkc-state-in-diagnosis-image" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html?highlight=emgetdiagnosisimageptr#wkc-state-in-diagnosis-image</a><br>
+</div>
+</blockquote>
+<blockquote type="cite">
+<div>Q6-(4)<br>
+</div>
+<div>   If (1) does not time out (before executing ecatExecJob (MasterTimer))</div>
+<div>   -Does emIsSlavePresent () return TRUE?</div>
+<div>   -Does GetSlaveState () return Op?</div>
+<div>[CER] Losing 1 cyclic frame will not influence these function. It takes about 3 cycles, then all the slaves are considered to be absent.</div>
+<div><br></div>
+<div>Q6-(5)</div>
+<div>   If the timeout does not occur in (1), is it possible to check whether the input data of the master is old data? (Before executing ecatExecJob (MasterTimer))</div>
+<div>[CER] This can be done by using</div>
+<div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html?highlight=emgetdiagnosisimageptr#wkc-state-in-diagnosis-image" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html?highlight=emgetdiagnosisimageptr#wkc-state-in-diagnosis-image</a></div>
+<div><br></div>
+<div>Q6-(6)</div>
+<div>  After executing ecatExecJob(MasterTimer).</div>
+<div>  Does emIsSlavePresent () return FALSE?</div>
+<div>  Does GetSlaveState () return INIT or PRE-OPE?</div>
+<div>[CER] After some cycles <span>emIsSlavePresent</span><span>() will return EC_FALSE and  GetSlaveState() will return </span>EC_E_LINK_DISCONNECTED</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+</blockquote>
+</div>
+<br><br>
+</div>

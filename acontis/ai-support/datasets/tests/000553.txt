@@ -1,0 +1,148 @@
+### HEADER
+Id=553
+Link=http://at-zammad/#ticket/zoom/553
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Ackermann Automation GmbH (ID=82, Number=50012, Country=DE)
+Commission=Ackermann, LabView (ID=89, Number=89)
+Number=700553
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=dermot.ackermann@ackermann-automation.de (ID=55, FirstName=Dermot, LastName=Ackermann)
+CreatedBy=dermot.ackermann@ackermann-automation.de (ID=55, FirstName=Dermot, LastName=Ackermann)
+Type=
+TimeUnit=
+CreatedAt=07.05.2021 07:58:28 +00:00
+UpdatedAt=28.05.2021 06:10:35 +00:00
+CloseAt=28.05.2021 06:10:35 +00:00
+ArticlesCount=2
+
+### TITLE
+CoE Copley Control Drive
+
+### ARTICLE00_HEADER
+Id=3066
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.05.2021 07:58:28 +00:00
+UpdatedAt=07.05.2021 07:58:30 +00:00
+
+### ARTICLE00_SUBJECT
+CoE Copley Control Drive
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo</p>
+<p> </p>
+<p>Ein Kunde hat gerade ein Problem beim Auslesen von CoE Werten aus einem Copley Control Drive.</p>
+<p> </p>
+<p>Wenn er den Master ohne ENI Datei in PreOp startet, kann er den Wert 0x2121:00 auslesen. Wenn der den Master mit ENI Datei startet, bekommt er beim Lesen den Fehler</p>
+<p>Error: Invalid parameter.</p>
+<p> </p>
+<p>Die ENI Datei wurde mit TwinCAT erstellt.</p>
+<p> </p>
+<p>Haben Sie da eine Idee?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / With best regards</p>
+<p>Dermot Ackermann</p>
+<p>(Managing Director)</p>
+<p> </p>
+<p>Ackermann Automation GmbH</p>
+<p>Bismarckstr. 51</p>
+<p>64668 Rimbach</p>
+<p><a href="http://www.ackermann-automation.de/" rel="nofollow noreferrer noopener" target="_blank">www.ackermann-automation.de</a></p>
+<p> </p>
+<p>Tel.: +49 6253 9476 761</p>
+<p>Fax: +49 6253 9476 765</p>
+<p>Mob.: +49 176 82165741</p>
+<p>Email: dermot.ackermann@ackermann-automation.de</p>
+<p><a href="http://skype:dermot.ackermann@ackermann-automation.de/?add" rel="nofollow noreferrer noopener" title="http://skype:dermot.ackermann@ackermann-automation.de/?add" target="_blank"><img border="0" style="max-width:100%;width:.25in;max-height:.25in;width:24px;max-height:24px;" src="/api/v1/ticket_attachment/553/3066/10018?view=inline"></a><a href="https://teams.microsoft.com/l/chat/0/0?users=%3cdermot.ackermann@ackermann-automation.de%3e" rel="nofollow noreferrer noopener" title="https://teams.microsoft.com/l/chat/0/0?users=%3cdermot.ackermann@ackermann-automation.de%3e" target="_blank"><img border="0" style="max-width:100%;width:.25in;max-height:.25in;width:24px;max-height:24px;" src="/api/v1/ticket_attachment/553/3066/10019?view=inline"></a></p>
+<p> </p>
+<p>Sitz der Gesellschaft: Rimbach</p>
+<p>Registergericht: HRB 98694 Amtsgericht Darmstadt</p>
+<p>Geschäftsführer: Dermot Ackermann</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=3067
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.05.2021 08:01:51 +00:00
+UpdatedAt=07.05.2021 08:01:52 +00:00
+
+### ARTICLE01_SUBJECT
+CoE Copley Control Drive
+
+### ARTICLE01_BODY
+Hallo Herr Ackermann,<div><br></div><div>1) Greift der Kunde beides mal auf dem Objekt in PREOP? Manchmal verändern sich die Objektverzeichnisse je nach State.</div><div>2) Hat der Kunde unter TwinCAT das PDO Mapping verändert?</div><div>3) Stimmt die Mailboxgröße?</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, May 7, 2021, 9:58:28 AM, Dermot Ackermann wrote:<br><br><div>
+<p>Hallo</p>
+<p> </p>
+<p>Ein Kunde hat gerade ein Problem beim Auslesen von CoE Werten aus einem Copley Control Drive.</p>
+<p> </p>
+<p>Wenn er den Master ohne ENI Datei in PreOp startet, kann er den Wert 0x2121:00 auslesen. Wenn der den Master mit ENI Datei startet, bekommt er beim Lesen den Fehler</p>
+<p>Error: Invalid parameter.</p>
+<p> </p>
+<p>Die ENI Datei wurde mit TwinCAT erstellt.</p>
+<p> </p>
+<p>Haben Sie da eine Idee?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen / With best regards</p>
+<p>Dermot Ackermann</p>
+<p>(Managing Director)</p>
+<p> </p>
+<p>Ackermann Automation GmbH</p>
+<p>Bismarckstr. 51</p>
+<p>64668 Rimbach</p>
+<p><a href="http://www.ackermann-automation.de/" rel="nofollow noreferrer noopener" target="_blank">www.ackermann-automation.de</a></p>
+<p> </p>
+<p>Tel.: +49 6253 9476 761</p>
+<p>Fax: +49 6253 9476 765</p>
+<p>Mob.: +49 176 82165741</p>
+<p>Email: dermot.ackermann@ackermann-automation.de</p>
+<p><a href="http://skype:dermot.ackermann@ackermann-automation.de/?add" rel="nofollow noreferrer noopener" title="http://skype:dermot.ackermann@ackermann-automation.de/?add" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.25in;max-height:.25in;width:24px;max-height:24px;" src="/api/v1/ticket_attachment/553/3067/10022?view=inline"></a><a href="https://teams.microsoft.com/l/chat/0/0?users=%3cdermot.ackermann@ackermann-automation.de%3e" rel="nofollow noreferrer noopener" title="https://teams.microsoft.com/l/chat/0/0?users=%3cdermot.ackermann@ackermann-automation.de%3e" target="_blank"><img border="0" style="max-width:100%;max-width:100%;width:.25in;max-height:.25in;width:24px;max-height:24px;" src="/api/v1/ticket_attachment/553/3067/10023?view=inline"></a></p>
+<p> </p>
+<p>Sitz der Gesellschaft: Rimbach</p>
+<p>Registergericht: HRB 98694 Amtsgericht Darmstadt</p>
+<p>Geschäftsführer: Dermot Ackermann</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

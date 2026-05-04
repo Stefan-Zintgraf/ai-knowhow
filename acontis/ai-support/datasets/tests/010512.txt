@@ -1,0 +1,159 @@
+### HEADER
+Id=10512
+Link=http://at-zammad/#ticket/zoom/10512
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=7010512
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=sven.yuan@motrotech.com (ID=2839, FirstName=袁宇晗, LastName=)
+CreatedBy=sven.yuan@motrotech.com (ID=2839, FirstName=袁宇晗, LastName=)
+Type=
+TimeUnit=
+CreatedAt=05.05.2025 01:58:25 +00:00
+UpdatedAt=05.05.2025 12:57:51 +00:00
+CloseAt=05.05.2025 12:57:51 +00:00
+ArticlesCount=3
+
+### TITLE
+Taiwan: Veranschaulichen von Split Frame
+
+### ARTICLE00_HEADER
+Id=60194
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.05.2025 01:58:25 +00:00
+UpdatedAt=05.05.2025 01:58:25 +00:00
+
+### ARTICLE00_SUBJECT
+Taiwan: Veranschaulichen von Split Frame
+
+### ARTICLE00_BODY
+<div>
+<div>Hallo,</div>
+<div> </div>
+<div>ich hoffe Sie hatten ein gutes Wochenende. In Taiwan möchten einige potentielle Kunden sehen, ob der EC-Master Split Frame kann. Haben wir eine Möglichkeit gibt das zu veranschaulichen? Vielen Dank!</div>
+<div> </div>
+<div>Grüße,</div>
+<div>Sven</div>
+<div> <br><div> </div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=60199
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.05.2025 06:48:52 +00:00
+UpdatedAt=05.05.2025 06:48:54 +00:00
+
+### ARTICLE01_SUBJECT
+Taiwan: Veranschaulichen von Split Frame
+
+### ARTICLE01_BODY
+Hallo Sven,<div><br></div><div>wir hatten hier ein super Wetter über den ersten Mai. Jetzt regnet es ein paar Tage.</div><div><br></div><div>Split Frame Processing is in der Master Library ohne Einschränkung implementiert. Es gibt aber keine spezielle Example dafür.</div><div><br></div><div>Hier sind ein paar Info:</div><div><div><a href="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" title="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf</a></div></div><div><br></div><div>und die Doku habe ich im Anhang.</div><div><br></div><div>Du kannst die EcMasterDemo aufrufen und SendAllCycFrames and ProcessAllRxFrames <span>ersetzen.</span>
+</div><div><span>In der Doku gibt es ein Beispiel für die jobTask.</span></div><div><br></div><div>Grüße,</div><div>Cyril<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, May 5, 2025 at 3:58:25 AM, 袁宇晗 wrote:<br><br><div>
+<div>Hallo,</div>
+<div> </div>
+<div>ich hoffe Sie hatten ein gutes Wochenende. In Taiwan möchten einige potentielle Kunden sehen, ob der EC-Master Split Frame kann. Haben wir eine Möglichkeit gibt das zu veranschaulichen? Vielen Dank!</div>
+<div> </div>
+<div>Grüße,</div>
+<div>Sven</div>
+<div> <br><div> </div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=60219
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.05.2025 10:19:56 +00:00
+UpdatedAt=05.05.2025 10:19:56 +00:00
+
+### ARTICLE02_SUBJECT
+回复：RE: Taiwan: Veranschaulichen von Split Frame [Ticket#7010512]
+
+### ARTICLE02_BODY
+<div>
+<div>
+<div>Hallo Cyril,</div>
+<div> </div>
+<div>vielen Dank für die Antwort! Wir werden die Doku durchgehen und schauen wie wir das hinkriegen.</div>
+<div> </div>
+<div>Grüße,</div>
+<div>Sven</div>
+<br>
+</div>
+<div> </div>
+<div> <div style="color: rgba(11, 18, 26, 0.6);">Cyril Eyssautier via EC-Support&lt;ecsupport@acontis.com&gt; 在 2025年5月5日 周一 14:48 写道：</div>
+<div>
+<div>Hallo Sven,<div> </div>
+<div>wir hatten hier ein super Wetter über den ersten Mai. Jetzt regnet es ein paar Tage.</div>
+<div> </div>
+<div>Split Frame Processing is in der Master Library ohne Einschränkung implementiert. Es gibt aber keine spezielle Example dafür.</div>
+<div> </div>
+<div>Hier sind ein paar Info:</div>
+<div><a href="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" title="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf</a></div>
+<div> </div>
+<div>und die Doku habe ich im Anhang.</div>
+<div> </div>
+<div>Du kannst die EcMasterDemo aufrufen und SendAllCycFrames and ProcessAllRxFrames ersetzen.</div>
+<div>In der Doku gibt es ein Beispiel für die jobTask.</div>
+<div> </div>
+<div>Grüße,</div>
+<div>Cyril<br><div data-signature="true" data-signature-id="2"> <div>__________________________________________________________________________________________<br> </div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div> <div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br> </div>
+</div>
+<div> </div>
+<div><blockquote type="cite">On Monday, May 5, 2025 at 3:58:25 AM, 袁宇晗 wrote:<br><br><div> <div>Hallo,</div>
+<div> </div>
+<div>ich hoffe Sie hatten ein gutes Wochenende. In Taiwan möchten einige potentielle Kunden sehen, ob der EC-Master Split Frame kann. Haben wir eine Möglichkeit gibt das zu veranschaulichen? Vielen Dank!</div>
+<div> </div>
+<div>Grüße,</div>
+<div>Sven</div>
+<div> <br><div> </div>
+</div>
+</div>
+<br> </blockquote></div>
+<div> </div>
+<br><br> </div>
+</div>
+</div>
+</div>
+</div>

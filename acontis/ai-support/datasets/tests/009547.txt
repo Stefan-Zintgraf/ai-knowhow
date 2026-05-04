@@ -1,0 +1,80 @@
+### HEADER
+Id=9547
+Link=http://at-zammad/#ticket/zoom/9547
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=INSTRON GmbH (ID=116, Number=54010, Country=DE)
+Commission=INSTRON, Testing Systems (ID=130, Number=130)
+Number=709547
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=burkhard_bertemes@instron.com (ID=576, FirstName=Bertemes, LastName=Burkhard)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=17.12.2024 13:30:38 +00:00
+UpdatedAt=31.12.2024 07:12:49 +00:00
+CloseAt=31.12.2024 07:12:49 +00:00
+ArticlesCount=2
+
+### TITLE
+Acontis software update request from Instron GmbH
+
+### ARTICLE00_HEADER
+Id=54284
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.12.2024 13:30:38 +00:00
+UpdatedAt=17.12.2024 13:30:41 +00:00
+
+### ARTICLE00_SUBJECT
+Acontis software update request from Instron GmbH
+
+### ARTICLE00_BODY
+<p> </p><p>Dear Mr./Ms. Bertemes,</p><p>thank you for your registration.<br> <br></p><p>First Name: Burkhard<br>Last Name: Bertemes <br>Company: Instron GmbH <br><span>Commission Number: 45005 <br></span><span>Country: Germany <br></span><span>City: Darmstadt <br></span><span>E-Mail: burkhard_bertemes@instron.com <br></span>Product: <span>EC-Master,EC-Simulator,EC-Engineer <br></span>Update Type: Update (binary compatible)<span> <br></span><span>Operating System Version: VxWorks &amp; Windows <br></span>Additional information: </p><p><img src="/api/v1/ticket_attachment/9547/54284/224764?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH <br>Franz-Beer-Straße 98, 88250 Weingarten/Germany <br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a> <br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com <br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/9547/54284/224765?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=54286
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.12.2024 13:51:45 +00:00
+UpdatedAt=17.12.2024 13:51:45 +00:00
+
+### ARTICLE01_SUBJECT
+Acontis software update request from Instron GmbH
+
+### ARTICLE01_BODY
+<p>Dear Customer, </p>
+
+<p><br></p><p>Please find your new software version below: </p><p><br></p>
+
+<p><a href="https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Master_VxWorks_PPC_32Bit/3.2.2.03/EC-Master-ClassA-AddOn-V3.2.2.03-VxWorks70-PPC_32Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Master_VxWorks_PPC_32Bit/3.2.2.03/EC-Master-ClassA-AddOn-V3.2.2.03-VxWorks70-PPC_32Bit-SDK_Source.zip</a></p>
+
+<p><a href="https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Master_VxWorks_PPC_32Bit/3.2.2.03/EC-Master-RAS-V3.2.2.03-VxWorks70-PPC_32Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Master_VxWorks_PPC_32Bit/3.2.2.03/EC-Master-RAS-V3.2.2.03-VxWorks70-PPC_32Bit-SDK_Source.zip</a></p>
+
+<p><a href="https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Master_VxWorks_PPC_32Bit/3.2.2.03/EC-Master-V3.2.2.03-VxWorks70-PPC_32Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Master_VxWorks_PPC_32Bit/3.2.2.03/EC-Master-V3.2.2.03-VxWorks70-PPC_32Bit-SDK_Source.zip</a></p>
+
+<p><a href="https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Master_VxWorks_PPC_32Bit/3.2.2.03/EC-RtEth-ETSEC-V3.2.2.03-VxWorks70-PPC_32Bit-SDK_Source.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Master_VxWorks_PPC_32Bit/3.2.2.03/EC-RtEth-ETSEC-V3.2.2.03-VxWorks70-PPC_32Bit-SDK_Source.zip</a></p><p><br></p><div><a href="https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Simulator_HiL_Windows_x86/3.2.2.03/EC-RtEth-IntelGbe-V3.2.2.03-Windows-x86_64Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Simulator_HiL_Windows_x86/3.2.2.03/EC-RtEth-IntelGbe-V3.2.2.03-Windows-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Simulator_HiL_Windows_x86/3.2.2.03/EC-RtEth-IntelGbe-V3.2.2.03-Windows-x86_64Bit-SDK_Protected.zip</a></div><div><a href="https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Simulator_HiL_Windows_x86/3.2.2.03/EC-Simulator-HiL-V3.2.2.03-Windows-x86_64Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Simulator_HiL_Windows_x86/3.2.2.03/EC-Simulator-HiL-V3.2.2.03-Windows-x86_64Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Simulator_HiL_Windows_x86/3.2.2.03/EC-Simulator-HiL-V3.2.2.03-Windows-x86_64Bit-SDK_Protected.zip</a></div><div><a href="https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Simulator_HiL_Windows_x86/3.2.2.03/EC-RtEth-IntelGbe-V3.2.2.03-Windows-x86_32Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Simulator_HiL_Windows_x86/3.2.2.03/EC-RtEth-IntelGbe-V3.2.2.03-Windows-x86_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Simulator_HiL_Windows_x86/3.2.2.03/EC-RtEth-IntelGbe-V3.2.2.03-Windows-x86_32Bit-SDK_Protected.zip</a></div><div><a href="https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Simulator_HiL_Windows_x86/3.2.2.03/EC-Simulator-HiL-V3.2.2.03-Windows-x86_32Bit-SDK_Protected.zip" title="https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Simulator_HiL_Windows_x86/3.2.2.03/EC-Simulator-HiL-V3.2.2.03-Windows-x86_32Bit-SDK_Protected.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Simulator_HiL_Windows_x86/3.2.2.03/EC-Simulator-HiL-V3.2.2.03-Windows-x86_32Bit-SDK_Protected.zip</a></div><p><br></p><div><a href="https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Engineer/3.9.9/EC-Engineer_Dongle_V3.9.9.zip" title="https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Engineer/3.9.9/EC-Engineer_Dongle_V3.9.9.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/G-I/INSTRON_(45005)(DE)/EC-Engineer/3.9.9/EC-Engineer_Dongle_V3.9.9.zip</a></div><div><br></div>
+
+<p>Password: ECM88250 </p>
+
+Best Regards, <br>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>

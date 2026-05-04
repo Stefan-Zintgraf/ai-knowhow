@@ -1,0 +1,127 @@
+### HEADER
+Id=10002
+Link=http://at-zammad/#ticket/zoom/10002
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vector Informatik GmbH (ID=167, Number=40366, Country=DE)
+Commission=Vector Simulations AG, Unknown (ID=514, Number=514)
+Number=7010002
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+CreatedBy=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Type=
+TimeUnit=
+CreatedAt=20.02.2025 14:31:27 +00:00
+UpdatedAt=28.02.2025 07:14:06 +00:00
+CloseAt=28.02.2025 07:14:06 +00:00
+ArticlesCount=3
+
+### TITLE
+Acontis Software für die Beckhoff CX9020
+
+### ARTICLE00_HEADER
+Id=57167
+ContentType=text/html
+Internal=False
+Type=phone
+CreatedAt=20.02.2025 14:31:27 +00:00
+UpdatedAt=20.02.2025 14:31:27 +00:00
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Herr Gänzer,</p>
+<p> </p>
+<p><span>die Ursache für das Problem beim Einlesen der *.ENI-Datei ist trivial. Wenn ich die TwinCAT-Konfiguration importiere und dabei auswähle, dass der EC-Engineer die Datei nicht verändern darf, heißt das Root-Tag der Erzeugten *.exi-Datei &lt;<b>EtherCATConfig&gt;</b>. Wenn der EC-Engineer die Datei ändern darf, dann heißt das Root-Tag &lt;<b>EncryptedEtherCATConfig&gt;</b> – und dies wird beim Parsen der Datei erwartet. Ich verstehe trotzdem nicht, warum der EC-Engineer, wenn er die Daten der exi-Datei ändern darf, die Adresse der &lt;Cyclic&gt;&lt;Frame&gt;&lt;CMD&gt; Kommandos von <b>0x0100 0800 [16.779.264]</b> auf <b>0x10000 0800 [268.437.504] </b>umstellen darf und dadurch die Aufrufe des <b>CycFrameRxCallbackWrapper</b> verhindert werden.</span></p>
+<p> </p>
+<p>Ich habe auch noch eine andere Frage: Ich habe gesehen, dass Acontis Software für die Beckhoff CX9020 anbietet. Warum ist das für die Kunden interessant? Hat der Entwicklungsprozess für die Kunden Vorteile durch den Acontis-Software-Stack und der Entwicklung in C++ oder sind die TwinCAT-Lizenzkosten von Beckhoff so hoch, dass es sich dadurch für die Kunden lohnt?</p>
+<p> </p>
+<div>
+<p><span lang="EN-US">Grüße / Regards,</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Tobias Lange</span></p>
+<p><span lang="EN-US">----------------------------------------------</span></p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p>VG/PND10</p>
+<p>Tel.: +49 711 80670-4791</p>
+<span class="js-signatureMarker"></span><p>----------------------------------------------</p>
+</div>
+<p> </p>
+<div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=57168
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=20.02.2025 14:32:15 +00:00
+UpdatedAt=20.02.2025 14:32:15 +00:00
+
+### ARTICLE01_BODY
+@Cyril:<div>Hab das Ticket hier gesplittet. Kannst du ihm den zweiten Teil bzw. CX9020 beantworten?</div>
+
+### ARTICLE02_HEADER
+Id=57171
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.02.2025 14:46:19 +00:00
+UpdatedAt=20.02.2025 14:46:21 +00:00
+
+### ARTICLE02_SUBJECT
+Acontis Software für die Beckhoff CX9020
+
+### ARTICLE02_BODY
+Hallo Her Lange,<div><br></div><div>unsere Kunden haben sich gegen TwinCAT aus verschiedene Gründe entschieden. Know-How, Preis, Flexibilität,... u<span>nd brauchen dann </span><span>irgendeine HW um ihre Software laufen zu lassen. Der CX9020 ist eine von viele Möglichkeit. Er hat ein integrierten EBUS und kann direkt mit EtherCAT Klemmen verbunden werden.</span>
+</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, February 20, 2025 at 3:31:27 PM, Tobias Lange wrote:<br><br><div>
+<p>Hallo Herr Gänzer,</p>
+<p> </p>
+<p><span>die Ursache für das Problem beim Einlesen der *.ENI-Datei ist trivial. Wenn ich die TwinCAT-Konfiguration importiere und dabei auswähle, dass der EC-Engineer die Datei nicht verändern darf, heißt das Root-Tag der Erzeugten *.exi-Datei &lt;<b>EtherCATConfig&gt;</b>. Wenn der EC-Engineer die Datei ändern darf, dann heißt das Root-Tag &lt;<b>EncryptedEtherCATConfig&gt;</b> – und dies wird beim Parsen der Datei erwartet. Ich verstehe trotzdem nicht, warum der EC-Engineer, wenn er die Daten der exi-Datei ändern darf, die Adresse der &lt;Cyclic&gt;&lt;Frame&gt;&lt;CMD&gt; Kommandos von <b>0x0100 0800 [16.779.264]</b> auf <b>0x10000 0800 [268.437.504] </b>umstellen darf und dadurch die Aufrufe des <b>CycFrameRxCallbackWrapper</b> verhindert werden.</span></p>
+<p> </p>
+<p>Ich habe auch noch eine andere Frage: Ich habe gesehen, dass Acontis Software für die Beckhoff CX9020 anbietet. Warum ist das für die Kunden interessant? Hat der Entwicklungsprozess für die Kunden Vorteile durch den Acontis-Software-Stack und der Entwicklung in C++ oder sind die TwinCAT-Lizenzkosten von Beckhoff so hoch, dass es sich dadurch für die Kunden lohnt?</p>
+<p> </p>
+<div>
+<p><span lang="EN-US">Grüße / Regards,</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Tobias Lange</span></p>
+<p><span lang="EN-US">----------------------------------------------</span></p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p>VG/PND10</p>
+<p>Tel.: +49 711 80670-4791</p>
+<span class="js-signatureMarker"></span><p>----------------------------------------------</p>
+</div>
+<p> </p>
+<div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,149 @@
+### HEADER
+Id=2226
+Link=http://at-zammad/#ticket/zoom/2226
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OSAIcnc S.r.l. (ID=195, Number=57504, Country=IT)
+Commission=OSAIcnc S.r.l., OPENcontrol WinCE (ID=234, Number=234)
+Number=702226
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=gianluca.pasqualotto@osaicnc.com (ID=41, FirstName=Gianluca, LastName=Pasqualotto)
+CreatedBy=gianluca.pasqualotto@osaicnc.com (ID=41, FirstName=Gianluca, LastName=Pasqualotto)
+Type=
+TimeUnit=
+CreatedAt=13.01.2022 15:08:20 +00:00
+UpdatedAt=25.04.2022 12:28:04 +00:00
+CloseAt=17.01.2022 07:42:12 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-Engineer question #76
+
+### ARTICLE00_HEADER
+Id=11764
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.01.2022 15:08:20 +00:00
+UpdatedAt=13.01.2022 15:08:28 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Engineer question #76
+
+### ARTICLE00_BODY
+<div>
+<p>Dear EC Support,</p>
+<p> </p>
+<p>I still found ESI files where the sequence of ‘Mailbox Services’ generates error during the import in the Ec-Engineer, please take the attached ESI as example.</p>
+<p>And this cause to lost time for fixing these ESI files and send back to the customer.</p>
+<p> </p>
+<p>From the ETG2000 document I don’t found any specification about the order of the following elements:</p>
+<p><img style="max-width:100%;width:5.15in;max-height:3.1333in;width:494px;max-height:301px;" src="/api/v1/ticket_attachment/2226/11764/45889?view=inline"></p>
+<p>In other words, Ec-Engineer should accept these elements in any order.</p>
+<p> </p>
+<p>Please, can you check? Thanks.</p>
+<p> </p>
+<p>Best Regards,</p>
+<p>Gianluca</p>
+<p> </p>
+<p><img style="max-width:100%;width:1.4916in;max-height:.4583in;width:143px;max-height:44px;" src="/api/v1/ticket_attachment/2226/11764/45888?view=inline"></p>
+<p><b>Gianluca Pasqualotto</b></p>
+<p>R&amp;D - CNC/Servo Software Development Senior Engineer</p>
+<p>Ufficio +39 0125 190 6267</p>
+<p>Mobile +39 335 699 7678</p>
+<p> </p>
+<p>OSAIcnc s.r.l.</p>
+<p>Sede Legale e Operativa: Via Jervis, 11 – 10015 Ivrea (TO) Italia</p>
+<p>Sede Logistica: Via Torino, 14 – 10010 Barone Canavese (TO) Italia</p>
+<p>Indirizzo PEC: osaicncsrl@pec.osaicncsrl.it</p>
+<p><a href="http://www.osaicnc.com" rel="nofollow noreferrer noopener" target="_blank">www.osaicnc.com</a></p>
+<p> </p>
+<p>Questo messaggio e i suoi allegati sono indirizzati esclusivamente ai destinatari. La diffusione, copia o qualsiasi altra azione derivante dalla conoscenza di queste informazioni sono rigorosamente vietate. Qualora abbiate ricevuto questo messaggio per errore siete invitati a comunicarlo al mittente e a provvedere alla sua distruzione.</p>
+<p><i>This e-mail and any attachments are confidential and may contain privileged information intended for the addressee(s) only. Dissemination, copying, printing or use by anybody else is unauthorized. If you are not the intended recipient, please delete this message and any attachments and advise the sender by return e-mail.</i></p>
+<p> </p>
+<p>P <i>Please consider the environment before printing!</i></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=11781
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.01.2022 06:36:00 +00:00
+UpdatedAt=14.01.2022 06:36:11 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Engineer question #76
+
+### ARTICLE01_BODY
+Hi Gianluca,<div><br></div><div>this is the part in the official ETG xsd Schema file which is relevant for importing ESI files:</div><div><br></div><div>
+<img src="/api/v1/ticket_attachment/2226/11781/46023?view=inline" style="max-width:100%;width: 379px;max-width: 100%;max-height: 110px;"><br>
+</div><div>
+<div data-signature="true" data-signature-id="2">
+<div><span><br></span></div>
+<div><span>The xs:sequence part of this Schema means that the order is relevant. So we have to do it like that at the moment.</span></div>
+<div><span><br></span></div>
+<div><span>Best regards,</span></div>
+<div><span>Kai</span></div>
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, January 13, 2022, 4:08:20 PM, Gianluca Pasqualotto wrote:<br><br><div>
+<p>Dear EC Support,</p>
+<p> </p>
+<p>I still found ESI files where the sequence of ‘Mailbox Services’ generates error during the import in the Ec-Engineer, please take the attached ESI as example.</p>
+<p>And this cause to lost time for fixing these ESI files and send back to the customer.</p>
+<p> </p>
+<p>From the ETG2000 document I don’t found any specification about the order of the following elements:</p>
+<p><img style="max-width:100%;max-width:100%;width:5.15in;max-height:3.1333in;width:494px;max-height:301px;" src="/api/v1/ticket_attachment/2226/11781/46024?view=inline"></p>
+<p>In other words, Ec-Engineer should accept these elements in any order.</p>
+<p> </p>
+<p>Please, can you check? Thanks.</p>
+<p> </p>
+<p>Best Regards,</p>
+<p>Gianluca</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:1.4916in;max-height:.4583in;width:143px;max-height:44px;" src="/api/v1/ticket_attachment/2226/11781/46025?view=inline"></p>
+<p><b>Gianluca Pasqualotto</b></p>
+<p>R&amp;D - CNC/Servo Software Development Senior Engineer</p>
+<p>Ufficio +39 0125 190 6267</p>
+<p>Mobile +39 335 699 7678</p>
+<p> </p>
+<p>OSAIcnc s.r.l.</p>
+<p>Sede Legale e Operativa: Via Jervis, 11 – 10015 Ivrea (TO) Italia</p>
+<p>Sede Logistica: Via Torino, 14 – 10010 Barone Canavese (TO) Italia</p>
+<p>Indirizzo PEC: osaicncsrl@pec.osaicncsrl.it</p>
+<p><a href="http://www.osaicnc.com" rel="nofollow noreferrer noopener" target="_blank">www.osaicnc.com</a></p>
+<p> </p>
+<p>Questo messaggio e i suoi allegati sono indirizzati esclusivamente ai destinatari. La diffusione, copia o qualsiasi altra azione derivante dalla conoscenza di queste informazioni sono rigorosamente vietate. Qualora abbiate ricevuto questo messaggio per errore siete invitati a comunicarlo al mittente e a provvedere alla sua distruzione.</p>
+<p><i>This e-mail and any attachments are confidential and may contain privileged information intended for the addressee(s) only. Dissemination, copying, printing or use by anybody else is unauthorized. If you are not the intended recipient, please delete this message and any attachments and advise the sender by return e-mail.</i></p>
+<p> </p>
+<p>P <i>Please consider the environment before printing!</i></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

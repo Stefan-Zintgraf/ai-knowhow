@@ -1,0 +1,181 @@
+### HEADER
+Id=4875
+Link=http://at-zammad/#ticket/zoom/4875
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ITK Engineering GmbH (ID=120, Number=54016, Country=DE)
+Commission=Avateramedical, ASIMOV 2.0 (ID=609, Number=609)
+Number=704875
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=michael.wenz@itk-engineering.de (ID=107, FirstName=Michael, LastName=Wenz)
+CreatedBy=michael.wenz@itk-engineering.de (ID=107, FirstName=Michael, LastName=Wenz)
+Type=
+TimeUnit=
+CreatedAt=07.02.2023 11:00:45 +00:00
+UpdatedAt=17.02.2023 07:47:43 +00:00
+CloseAt=17.02.2023 07:47:43 +00:00
+ArticlesCount=2
+
+### TITLE
+EcMasterDemoMulti
+
+### ARTICLE00_HEADER
+Id=25741
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.02.2023 11:00:45 +00:00
+UpdatedAt=07.02.2023 11:00:46 +00:00
+
+### ARTICLE00_SUBJECT
+EcMasterDemoMulti
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Herr Oelhaf, hallo Herr Eyssautier,</p>
+<p> </p>
+<p>in EC-Master_UserManual.pdf steht</p>
+<p><b><span style="color:#20435c;">6.2.3 Example application</span></b></p>
+<p><span>The application <b>EcMasterDemoMulti</b> demonstrates a client application which handles two master instances with the following configuration (el9800.xml):</span></p>
+<p> </p>
+<p>Ich habe EcMasterDemoMulti leider nicht finden können. Können wir bitte die Demo bekommen?</p>
+<p> </p>
+<p>In unserem Projekt gibt es Überlegungen, ob der Masterapplikation mehr Rechenzeit zur Verfügung stehen würde, wenn das EtherCAT Netzwerk in zwei oder mehr Teile aufgeteilt würde.</p>
+<p> </p>
+<p>Momentan haben wir einen EtherCAT Master, eine Netzwerke und zwei zyklische Frames. Hier hat die Applikation 0.7ms Rechenzeit pro Zyklus bevor es zu Frame Loss Meldungen kommt.</p>
+<p>Hätte die Applikation mehr Rechenzeit (0.85ms?), wenn es stattdessen zwei EtherCAT Master, zwei Netzwerkkarten und pro Netzwerkkarte ein zyklisches Frame gäbe?</p>
+<p> </p>
+<p>Macht dieser Ansatz nur Sinn, wenn es keine Slave to slave Kommunikation zwischen den EtherCAT Netzwerken gibt?</p>
+<p>Wenn man für Slave to slave Kommunikation zwischen den verschiedenen EtherCAT Netzwerken einen EtherCAT Bridge verwenden würde, würde man sich dadurch Nachteile einhandeln (mehr Prozessdaten und weniger Rechenzeit, Latenzen)?</p>
+<p> </p>
+<p>Was haben Sie bitte für Erfahrungen mit mehreren EtherCAT Netzwerken?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Michael Wenz</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>--</p>
+<p>Dr.-Ing. Michael Wenz</p>
+<p>Software Engineering</p>
+<p> </p>
+<p>ITK Engineering GmbH</p>
+<p>Im Speyerer Tal 6</p>
+<p>D-76761 Rülzheim</p>
+<p> </p>
+<p>Tel.: +49 7272 7703-456</p>
+<p>Fax: +49 7272 7703-100</p>
+<p>Mobil: +49 174 9480570</p>
+<p> </p>
+<p>mailto: michael.wenz@itk-engineering.de</p>
+<p> </p>
+<p>_____________________________________________________________</p>
+<p>ITK Engineering GmbH Im Speyerer Tal 6 76761 Rülzheim</p>
+<p>Tel.: +49 7272 7703-0 Fax: +49 7272 7703-100</p>
+<p><span>mailto:info@itk-engineering.de <a href="http://www.itk-engineering.de" rel="nofollow noreferrer noopener" target="_blank">http://www.itk-engineering.de</a></span></p>
+<p> </p>
+<p>Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board:</p>
+<p>Dr. Rudolf Maier</p>
+<p>Geschäftsführung/Executive Board:</p>
+<p>Dr. Frank Schmidt (Vorsitzender/Chairman), Jens Hofmann</p>
+<p>Sitz der Gesellschaft/Registered Office: 76761 Rülzheim</p>
+<p>Registergericht/Registered Court: Amtsgericht Landau, HRB 32046</p>
+<p>USt.-ID-Nr./VAT-ID-No. DE813165046</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=25766
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.02.2023 17:00:50 +00:00
+UpdatedAt=07.02.2023 17:00:52 +00:00
+
+### ARTICLE01_SUBJECT
+EcMasterDemoMulti
+
+### ARTICLE01_BODY
+Hallo Herr Wenz,<div><br></div><div>anbei finden Sie die EcMasterDemoMulti.</div><div><br></div><div><blockquote><div>
+<p>Hätte die Applikation mehr Rechenzeit (0.85ms?), wenn es stattdessen zwei EtherCAT Master, zwei Netzwerkkarten und pro Netzwerkkarte ein zyklisches Frame gäbe?</p>
+<p>[CER] Ja wenn sie mehrere Cores verwenden können. Ansonsten nicht</p>
+<p> </p>
+<p>Macht dieser Ansatz nur Sinn, wenn es keine Slave to slave Kommunikation zwischen den EtherCAT Netzwerken gibt?</p>
+<p>[CER] Jein. Theoretisch könnten Sie die copyinfo selber ausführen. Es wäre aber umständlich.</p>
+<p><br></p>
+<p>Wenn man für Slave to slave Kommunikation zwischen den verschiedenen EtherCAT Netzwerken einen EtherCAT Bridge verwenden würde, würde man sich dadurch Nachteile einhandeln (mehr Prozessdaten und weniger Rechenzeit, Latenzen)?</p>
+<p>[CER] Sie brauchen keine Bridge Klemme solange alle Instanzen auf einem System laufen. Sie könnten den Zyklus aus dem Core1 zum Core2 weitergeben und damit 2 synchrone EtherCAT Instanzen fahren.</p>
+</div></blockquote></div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, February 7, 2023 at 12:00:45 PM, Michael Wenz wrote:<br><br><div>
+<p>Hallo Herr Oelhaf, hallo Herr Eyssautier,</p>
+<p> </p>
+<p>in EC-Master_UserManual.pdf steht</p>
+<p><b><span style="color:#20435c;">6.2.3 Example application</span></b></p>
+<p><span>The application <b>EcMasterDemoMulti</b> demonstrates a client application which handles two master instances with the following configuration (el9800.xml):</span></p>
+<p> </p>
+<p>Ich habe EcMasterDemoMulti leider nicht finden können. Können wir bitte die Demo bekommen?</p>
+<p> </p>
+<p>In unserem Projekt gibt es Überlegungen, ob der Masterapplikation mehr Rechenzeit zur Verfügung stehen würde, wenn das EtherCAT Netzwerk in zwei oder mehr Teile aufgeteilt würde.</p>
+<p> </p>
+<p>Momentan haben wir einen EtherCAT Master, eine Netzwerke und zwei zyklische Frames. Hier hat die Applikation 0.7ms Rechenzeit pro Zyklus bevor es zu Frame Loss Meldungen kommt.</p>
+<p>Hätte die Applikation mehr Rechenzeit (0.85ms?), wenn es stattdessen zwei EtherCAT Master, zwei Netzwerkkarten und pro Netzwerkkarte ein zyklisches Frame gäbe?</p>
+<p> </p>
+<p>Macht dieser Ansatz nur Sinn, wenn es keine Slave to slave Kommunikation zwischen den EtherCAT Netzwerken gibt?</p>
+<p>Wenn man für Slave to slave Kommunikation zwischen den verschiedenen EtherCAT Netzwerken einen EtherCAT Bridge verwenden würde, würde man sich dadurch Nachteile einhandeln (mehr Prozessdaten und weniger Rechenzeit, Latenzen)?</p>
+<p> </p>
+<p>Was haben Sie bitte für Erfahrungen mit mehreren EtherCAT Netzwerken?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Michael Wenz</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>--</p>
+<p>Dr.-Ing. Michael Wenz</p>
+<p>Software Engineering</p>
+<p> </p>
+<p>ITK Engineering GmbH</p>
+<p>Im Speyerer Tal 6</p>
+<p>D-76761 Rülzheim</p>
+<p> </p>
+<p>Tel.: +49 7272 7703-456</p>
+<p>Fax: +49 7272 7703-100</p>
+<p>Mobil: +49 174 9480570</p>
+<p> </p>
+<p>mailto: michael.wenz@itk-engineering.de</p>
+<p> </p>
+<p>_____________________________________________________________</p>
+<p>ITK Engineering GmbH Im Speyerer Tal 6 76761 Rülzheim</p>
+<p>Tel.: +49 7272 7703-0 Fax: +49 7272 7703-100</p>
+<p><span>mailto:info@itk-engineering.de <a href="http://www.itk-engineering.de" rel="nofollow noreferrer noopener" target="_blank">http://www.itk-engineering.de</a></span></p>
+<p> </p>
+<p>Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board:</p>
+<p>Dr. Rudolf Maier</p>
+<p>Geschäftsführung/Executive Board:</p>
+<p>Dr. Frank Schmidt (Vorsitzender/Chairman), Jens Hofmann</p>
+<p>Sitz der Gesellschaft/Registered Office: 76761 Rülzheim</p>
+<p>Registergericht/Registered Court: Amtsgericht Landau, HRB 32046</p>
+<p>USt.-ID-Nr./VAT-ID-No. DE813165046</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

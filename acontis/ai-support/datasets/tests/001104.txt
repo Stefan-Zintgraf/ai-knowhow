@@ -1,0 +1,139 @@
+### HEADER
+Id=1104
+Link=http://at-zammad/#ticket/zoom/1104
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Cloud Automation (ID=92, Number=40266, Country=DE)
+Commission=Cloud, Riker ID (ID=101, Number=101)
+Number=701104
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=stefan.poeter@cloud-automation.de (ID=261, FirstName=Stefan, LastName=Pöter)
+CreatedBy=m.mueller@acontis.com (ID=122, FirstName=Marion, LastName=Müller)
+Type=
+TimeUnit=
+CreatedAt=27.07.2021 07:59:27 +00:00
+UpdatedAt=13.08.2021 14:37:12 +00:00
+CloseAt=05.08.2021 09:55:59 +00:00
+ArticlesCount=4
+
+### TITLE
+Delivery for Cloud, Riker ID, Commission 40266
+
+### ARTICLE00_HEADER
+Id=6119
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.07.2021 07:59:27 +00:00
+UpdatedAt=27.07.2021 07:59:27 +00:00
+
+### ARTICLE00_SUBJECT
+Delivery for Cloud, Riker ID, Commission 40266
+
+### ARTICLE00_BODY
+<div>
+<p>Please deliver software to customer.<br>Do not forget to append the delivery note! </p>
+<p><i>Bitte Liefermail in copy an sales@acontis. Danke</i></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=6126
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.07.2021 09:01:23 +00:00
+UpdatedAt=27.07.2021 09:01:27 +00:00
+
+### ARTICLE01_SUBJECT
+Delivery for Cloud, Riker ID, Commission 40266
+
+### ARTICLE01_BODY
+<div>Guten Tag Herr Pöter,</div><div><br></div><div>Sie können den EC-Simulator HiL für Linux x86 32 Bit und 64 Bit hier herunterladen:</div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/2021/B-C/Cloud_(40266)(DE)/EC-Simulator_Linux/3.1.1.07/EC-Simulator-HiL-V3.1.1.07-Linux-x86_32Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2021/B-C/Cloud_(40266)(DE)/EC-Simulator_Linux/3.1.1.07/EC-Simulator-HiL-V3.1.1.07-Linux-x86_32Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/B-C/Cloud_(40266)(DE)/EC-Simulator_Linux/3.1.1.07/EC-Simulator-HiL-V3.1.1.07-Linux-x86_32Bit-SDK_Protected.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2021/B-C/Cloud_(40266)(DE)/EC-Simulator_Linux/3.1.1.07/EC-Simulator-HiL-V3.1.1.07-Linux-x86_64Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2021/B-C/Cloud_(40266)(DE)/EC-Simulator_Linux/3.1.1.07/EC-Simulator-HiL-V3.1.1.07-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/B-C/Cloud_(40266)(DE)/EC-Simulator_Linux/3.1.1.07/EC-Simulator-HiL-V3.1.1.07-Linux-x86_64Bit-SDK_Protected.tar.gz</a></div>
+</div><div><br></div><div>
+<span>Im Anhang finden auch den Lieferschein.</span><br>
+</div><div><span><br></span></div><div>Zur Freischaltung der Funktionen benötigen Sie einen Key. Bitte senden Sie uns zur Generierung des Keys die MAC-Adresse, die Sie zur Nutzung der Lizenz verwenden. <span><b>Es muss die MAC-Adresse des Adapters sein, den Sie für den </b></span><span><b>EC-Simulator HiL verwenden</b>. Sie finden die MAC-Adresse in der Logdatei des Simulators</span><span>.</span>
+</div><div><br></div><div>Mit freundlichen Grüßen</div><div>Paul Bußmann</div><br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Paul Bußmann </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+
+### ARTICLE02_HEADER
+Id=6148
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.07.2021 13:28:05 +00:00
+UpdatedAt=27.07.2021 13:28:05 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Delivery for Cloud, Riker ID, Commission 40266 [Ticket#701104]
+
+### ARTICLE02_BODY
+<div dir="auto">Hallo Herr Bußmann,<div dir="auto"><br></div>
+<div dir="auto">die MAC Adresse schicke ich Ihnen Donnerstag wenn ich wieder im Büro bin.</div>
+<div dir="auto"><br></div>
+<div dir="auto">Mit freundlichen Grüßen</div>
+<div dir="auto">Stefan Pöter</div>
+</div><br><div>
+<div dir="ltr">Paul Bußmann via EC-Support &lt;ecsupport@acontis.com&gt; schrieb am Di., 27. Juli 2021, 11:01:<br>
+</div>
+<blockquote> <div>
+<div>Guten Tag Herr Pöter,</div>
+<div> </div>
+<div>Sie können den EC-Simulator HiL für Linux x86 32 Bit und 64 Bit hier herunterladen:</div>
+<div> </div>
+<div> <div><a href="https://downloads.acontis.com/2021/B-C/Cloud_(40266)(DE)/EC-Simulator_Linux/3.1.1.07/EC-Simulator-HiL-V3.1.1.07-Linux-x86_32Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2021/B-C/Cloud_(40266)(DE)/EC-Simulator_Linux/3.1.1.07/EC-Simulator-HiL-V3.1.1.07-Linux-x86_32Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/B-C/Cloud_(40266)(DE)/EC-Simulator_Linux/3.1.1.07/EC-Simulator-HiL-V3.1.1.07-Linux-x86_32Bit-SDK_Protected.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2021/B-C/Cloud_(40266)(DE)/EC-Simulator_Linux/3.1.1.07/EC-Simulator-HiL-V3.1.1.07-Linux-x86_64Bit-SDK_Protected.tar.gz" title="https://downloads.acontis.com/2021/B-C/Cloud_(40266)(DE)/EC-Simulator_Linux/3.1.1.07/EC-Simulator-HiL-V3.1.1.07-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2021/B-C/Cloud_(40266)(DE)/EC-Simulator_Linux/3.1.1.07/EC-Simulator-HiL-V3.1.1.07-Linux-x86_64Bit-SDK_Protected.tar.gz</a></div>
+</div>
+<div> </div>
+<div>Im Anhang finden auch den Lieferschein.<br> </div>
+<div> </div>
+<div>Zur Freischaltung der Funktionen benötigen Sie einen Key. Bitte senden Sie uns zur Generierung des Keys die MAC-Adresse, die Sie zur Nutzung der Lizenz verwenden. <b>Es muss die MAC-Adresse des Adapters sein, den Sie für den </b><b>EC-Simulator HiL verwenden</b>. Sie finden die MAC-Adresse in der Logdatei des Simulators. </div>
+<div> </div>
+<div>Mit freundlichen Grüßen</div>
+<div>Paul Bußmann</div>
+<br><div> <div>____________________________________________________________________________<br> </div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>acontis technologies GmbH</div>
+<div>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </div>
+<div>Phone: +49 (751) 56030-30</div>
+<div>eMail: ecsupport@acontis.com<br> </div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+</div>
+</blockquote>
+</div>
+
+### ARTICLE03_HEADER
+Id=6452
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=05.08.2021 09:56:00 +00:00
+UpdatedAt=05.08.2021 09:56:00 +00:00
+
+### ARTICLE03_BODY
+Key wurde übermittelt.

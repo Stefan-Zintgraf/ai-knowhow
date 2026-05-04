@@ -1,0 +1,268 @@
+### HEADER
+Id=7129
+Link=http://at-zammad/#ticket/zoom/7129
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ADLINK Technology, Inc. (ID=318, Number=40110, Country=TW)
+Commission=ADLINK, RT-Linux (ID=377, Number=377)
+Number=707129
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=chu-yen.lu@adlinktech.com (ID=1623, FirstName=Chu-yen, LastName=Lu)
+CreatedBy=chu-yen.lu@adlinktech.com (ID=1623, FirstName=Chu-yen, LastName=Lu)
+Type=
+TimeUnit=
+CreatedAt=20.12.2023 06:49:48 +00:00
+UpdatedAt=12.01.2024 08:10:58 +00:00
+CloseAt=12.01.2024 08:10:58 +00:00
+ArticlesCount=4
+
+### TITLE
+EC-Master V3.1.4.11 .so files
+
+### ARTICLE00_HEADER
+Id=38801
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.12.2023 06:49:48 +00:00
+UpdatedAt=20.12.2023 06:49:48 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Master V3.1.4.11 .so files
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Hi Sir,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">We are using EC-Master-V3.1.4.11-EC-WinRT-Linux-x86_64Bit-SDK_Unrestricted.tar to upgrade.</span></p>
+<p><span lang="EN-US">However, there is no libemllI8255x.so and libemllRTL8139.so in the SDK.</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:7.4583in;max-height:3.1875in;width:716px;max-height:306px;" src="/api/v1/ticket_attachment/7129/38801/161246?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Please provide the .so files.</span></p>
+<p><span lang="EN-US">Thank you.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">CY</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=38809
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.12.2023 07:34:22 +00:00
+UpdatedAt=20.12.2023 07:34:26 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Master V3.1.4.11 .so files
+
+### ARTICLE01_BODY
+Hi CY,<div><br></div><div>these drivers are not available for 64Bit. Only 32Bit</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Wednesday, December 20, 2023 at 7:49:48 AM, Chu-yen Lu wrote:<br><br><div>
+<p><span lang="EN-US">Hi Sir,</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">We are using EC-Master-V3.1.4.11-EC-WinRT-Linux-x86_64Bit-SDK_Unrestricted.tar to upgrade.</span></p>
+<p><span lang="EN-US">However, there is no libemllI8255x.so and libemllRTL8139.so in the SDK.</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:7.4583in;max-height:3.1875in;width:716px;max-height:306px;" src="/api/v1/ticket_attachment/7129/38809/161259?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Please provide the .so files.</span></p>
+<p><span lang="EN-US">Thank you.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">CY</span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=38827
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.12.2023 09:05:54 +00:00
+UpdatedAt=20.12.2023 09:05:54 +00:00
+
+### ARTICLE02_SUBJECT
+RE: EC-Master V3.1.4.11 .so files [Ticket#707129]
+
+### ARTICLE02_BODY
+<div>
+<p><span lang="EN-US">Hi,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Please explain why are these drivers not available for 64Bit.</span></p>
+<p><span lang="EN-US">Thank you.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">CY</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b><span lang="EN-US">From:</span></b><span lang="EN-US"> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Wednesday, December 20, 2023 3:34 PM<br>
+<b>To:</b> Chu-yen Lu &lt;chu-yen.lu@adlinktech.com&gt;<br>
+<b>Subject:</b> RE: EC-Master V3.1.4.11 .so files [Ticket#707129]</span></p>
+</div>
+</div>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Hi CY,</span></p>
+<div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+<div>
+<p><span lang="EN-US">these drivers are not available for 64Bit. Only 32Bit</span></p>
+</div>
+<div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+<div>
+<p><span lang="EN-US">Best Regards,</span></p>
+</div>
+<div>
+<p><span lang="EN-US">Cyril</span></p>
+<div>
+<div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+</div>
+<div>
+<blockquote>
+<p><span lang="EN-US">On Wednesday, December 20, 2023 at 7:49:48 AM, Chu-yen Lu wrote:</span></p>
+<div>
+<p><span lang="EN-US">Hi Sir,</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">We are using EC-Master-V3.1.4.11-EC-WinRT-Linux-x86_64Bit-SDK_Unrestricted.tar to upgrade.</span></p>
+<p><span lang="EN-US">However, there is no libemllI8255x.so and libemllRTL8139.so in the SDK.</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;width:7.4583in;max-height:3.1875in;width:716px;max-height:306px;" src="/api/v1/ticket_attachment/7129/38827/161288?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Please provide the .so files.</span></p>
+<p><span lang="EN-US">Thank you.</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">CY</span></p>
+</div>
+<p><span lang="EN-US"><p> </p></span></p>
+</blockquote>
+</div>
+<div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=38831
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.12.2023 09:21:46 +00:00
+UpdatedAt=20.12.2023 09:21:50 +00:00
+
+### ARTICLE03_SUBJECT
+EC-Master V3.1.4.11 .so files
+
+### ARTICLE03_BODY
+We never ported them to 64Bit.<div><br></div><div>Best Regards,</div><div>Cyril</div><div>
+<div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Wednesday, December 20, 2023 at 10:05:54 AM, Chu-yen Lu wrote:<br><br><div>
+<p><span lang="EN-US">Hi,</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Please explain why are these drivers not available for 64Bit.</span></p>
+<p><span lang="EN-US">Thank you.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">CY</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b><span lang="EN-US">From:</span></b><span lang="EN-US"> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Wednesday, December 20, 2023 3:34 PM<br>
+<b>To:</b> Chu-yen Lu &lt;chu-yen.lu@adlinktech.com&gt;<br>
+<b>Subject:</b> RE: EC-Master V3.1.4.11 .so files [Ticket#707129]</span></p>
+</div>
+</div>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Hi CY,</span></p>
+<div>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+<div>
+<p><span lang="EN-US">these drivers are not available for 64Bit. Only 32Bit</span></p>
+</div>
+<div>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+<div>
+<p><span lang="EN-US">Best Regards,</span></p>
+</div>
+<div>
+<p><span lang="EN-US">Cyril</span></p>
+<div>
+<div>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+</div>
+<div>
+<blockquote>
+<p><span lang="EN-US">On Wednesday, December 20, 2023 at 7:49:48 AM, Chu-yen Lu wrote:</span></p>
+<div>
+<p><span lang="EN-US">Hi Sir,</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">We are using EC-Master-V3.1.4.11-EC-WinRT-Linux-x86_64Bit-SDK_Unrestricted.tar to upgrade.</span></p>
+<p><span lang="EN-US">However, there is no libemllI8255x.so and libemllRTL8139.so in the SDK.</span></p>
+<p><span lang="EN-US"><img style="max-width:100%;max-width:100%;width:7.4583in;max-height:3.1875in;width:716px;max-height:306px;" src="/api/v1/ticket_attachment/7129/38831/161319?view=inline"></span><span lang="EN-US"></span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Please provide the .so files.</span></p>
+<p><span lang="EN-US">Thank you.</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">CY</span></p>
+</div>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</blockquote>
+</div>
+<div>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

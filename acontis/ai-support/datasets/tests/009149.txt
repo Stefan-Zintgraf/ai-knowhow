@@ -1,0 +1,144 @@
+### HEADER
+Id=9149
+Link=http://at-zammad/#ticket/zoom/9149
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=TECNOLOGIX (ID=196, Number=0, Country=IT)
+Commission=Comau, Robot Controller (ID=790, Number=790)
+Number=709149
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=andrea.martina.perelli@tecnologix.it (ID=956, FirstName=Andrea Martina, LastName=Perelli)
+CreatedBy=andrea.martina.perelli@tecnologix.it (ID=956, FirstName=Andrea Martina, LastName=Perelli)
+Type=
+TimeUnit=
+CreatedAt=24.10.2024 08:47:43 +00:00
+UpdatedAt=23.01.2025 12:39:22 +00:00
+CloseAt=25.10.2024 05:45:58 +00:00
+ArticlesCount=3
+
+### TITLE
+Fwd: Generazione CPU EC-Master - support request
+
+### ARTICLE00_HEADER
+Id=51867
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.10.2024 08:47:43 +00:00
+UpdatedAt=24.10.2024 08:47:46 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Generazione CPU EC-Master - support request
+
+### ARTICLE00_BODY
+Ciao,<br> After sending to Comau the new software version (e-mail attached), we received the following request:<br> <br> =============<br> <p>We have received the EC-Master libraries (Comau-40686 release), and upon reviewing them, I noticed that the distribution includes:</p><ul> <li>Pentium LLVM UP</li> <li>Pentium LLVM SMP</li> <li>Nehalem LLVM SMP</li> </ul> <p>However, our target is a Willowcove.<br> Could Acontis provide us with the compiled libraries for this CPU (UP-SMP)?</p><p>=============</p>Please find below the Italian original message.<br> Could you please follow up?<br> <br> Thank you in advance,<br> Regards,<br> Martina<br> <br> <div> <pre><img src="/api/v1/ticket_attachment/9149/51867/215846?view=inline" alt="Tecnologix logo" style="max-width:100%;"></pre> <pre><img src="/api/v1/ticket_attachment/9149/51867/215847?view=inline" alt="Lega del filo d'oro logo" style="max-width:100%;"></pre> <br> <pre>--
+Andrea Martina Perelli
+
+TECNOLOGIX s.r.l.
+Via dei Biancospini 6
+I 20146 Milano Italy
+Tel    +39 02 48954230 / +39 02 471106
+e-mail <a href="mailto:andrea.martina.perelli@tecnologix.it">andrea.martina.perelli@tecnologix.it</a>
+web    <a href="http://www.tecnologix.it" rel="nofollow noreferrer noopener" target="_blank">http://www.tecnologix.it</a>
+
+The information and documents in this communication are confidential and meant only for above-mentioned persons and/or Companies.
+The information is not personal therefore, it is intended for the addressee only and any replies will be known by people belonging to the company.</pre> <br> <br> </div><div>
+<span class="js-signatureMarker"></span><br> -------- Messaggio Inoltrato -------- <table cellpadding="0" cellspacing="0" border="0"> <tbody> <tr> <th valign="BASELINE" align="RIGHT">Oggetto: </th> <td>Generazione CPU EC-Master</td> </tr> <tr> <th valign="BASELINE" align="RIGHT">Data: </th> <td>Thu, 24 Oct 2024 10:30:00 +0200</td> </tr> <tr> <th valign="BASELINE" align="RIGHT">Mittente: </th> <td>Damiano Morra <a href="mailto:damiano.morra@comau.com">&lt;damiano.morra@comau.com&gt;</a>
+</td> </tr> <tr> <th valign="BASELINE" align="RIGHT">A: </th> <td>Tecnologix - Bruno Coppi <a href="mailto:bruno.coppi@tecnologix.it">&lt;bruno.coppi@tecnologix.it&gt;</a>
+</td> </tr> <tr> <th valign="BASELINE" align="RIGHT">CC: </th> <td>Valerio Perna <a href="mailto:valerio.perna@comau.com">&lt;valerio.perna@comau.com&gt;</a>, Roberto Scatigno <a href="mailto:roberto.scatigno@comau.com">&lt;roberto.scatigno@comau.com&gt;</a>
+</td> </tr> </tbody> </table> <br> <br> <div dir="ltr">Buongiorno Bruno,<br> <br> Spero tutto bene.<br> <br> Abbiamo ricevuto le librerie di EC-Master (release Comau-40686) e, nel verificare le librerie, noto che la distribuzione comprende:<br> -Pentium LLVM UP<br> -Pentium LLVM SMP<br> -Nehalem LLVM SMP<br> <br> La generazione del nostro target è invece una Willowcove.<br> Può Acontis fornirci i compilati per questa CPU (UP-SMP)?<br> <br> Grazie e buon proseguimento,<br> Damiano<br> <div> </div>--<br> <div dir="ltr"> <div dir="ltr"> <div style="color:rgb(34,34,34);"> <div> <div dir="ltr"> <div dir="ltr"> <p><br> </p>
+<p><b>Damiano Morra</b></p>
+<p>Robotics Software Engineer</p>
+<p><span style="color:rgb(31,73,125);">Advanced Automation Solution</span></p>
+<p><b><span lang="IT" style="color:rgb(31,73,125);">Comau S.p.A.</span></b></p>
+<p><span lang="IT" style="color:rgb(31,73,125);">Via Rivalta, 30 - 10095 Grugliasco (TO) – Italy</span></p>
+<p><span lang="IT" style="color:rgb(31,73,125);">Mob. </span><span style="color:rgb(31,73,125);">+39 335 184 7875</span></p>
+<p><span lang="IT" style="color:rgb(31,73,125);">e-mail: damiano.morra<span style="color:blue;"><a href="mailto:leana.romata@comau.com">@comau.com</a></span></span></p>
+<div><span lang="IT" style="color:rgb(31,73,125);"><br> </span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=51876
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.10.2024 12:47:50 +00:00
+UpdatedAt=24.10.2024 12:47:52 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: Generazione CPU EC-Master - support request
+
+### ARTICLE01_BODY
+<div>Hi Martina ,<span></span>
+</div><div>
+<span>Hi </span><span>Damiano</span><span>,</span>
+</div><div>
+<span>Our Pentium4 LLVM SMP Build with SR620 is compatible with all later Intel </span><span>microarchitectures and all later VxWorks releases.</span>
+</div><div>
+<span>Only the latest </span><span>VxWorks releases doesn't support UP.</span>
+</div><div><span><br></span></div><div>Best Regards</div><div>Daniel</div><br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=51879
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.10.2024 13:34:34 +00:00
+UpdatedAt=24.10.2024 13:34:34 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Fwd: Generazione CPU EC-Master - support request [Ticket#709149]
+
+### ARTICLE02_BODY
+Ciao Daniel,<br> Thank you for your quick reply.<br> <br> Damiano told me that your answer is okay for them and he also thanks you.<br> <br> Have a nice day.<br> Martina<br> <br> <div> <pre><img src="/api/v1/ticket_attachment/9149/51879/215929?view=inline" alt="Tecnologix logo" style="max-width:100%;"></pre> <pre><img src="/api/v1/ticket_attachment/9149/51879/215930?view=inline" alt="Lega del filo d'oro logo" style="max-width:100%;"></pre> <br> <pre>--
+Andrea Martina Perelli
+
+TECNOLOGIX s.r.l.
+Via dei Biancospini 6
+I 20146 Milano Italy
+Tel    +39 02 48954230 / +39 02 471106
+e-mail <a href="mailto:andrea.martina.perelli@tecnologix.it">andrea.martina.perelli@tecnologix.it</a>
+web    <a href="http://www.tecnologix.it" rel="nofollow noreferrer noopener" target="_blank">http://www.tecnologix.it</a>
+
+The information and documents in this communication are confidential and meant only for above-mentioned persons and/or Companies.
+The information is not personal therefore, it is intended for the addressee only and any replies will be known by people belonging to the company.</pre> <br> <br> </div><br> <br> <div>Il 24/10/2024 14:47, Daniel Schmid via EC-Support ha scritto:<br> </div><blockquote type="cite" cite="mid:20241024124750.9149.18fd3bcd-8e50-4d11-82ef-aac6f797d0b6@at-zammad"> <div>Hi Martina ,</div>
+<div>Hi Damiano,</div>
+<div>Our Pentium4 LLVM SMP Build with SR620 is compatible with all later Intel microarchitectures and all later VxWorks releases.</div>
+<div>Only the latest VxWorks releases doesn't support UP.</div>
+<div><span><br> </span></div>
+<div>Best Regards</div>
+<div>Daniel</div>
+<br> <br> <div data-signature="true" data-signature-id="2"> <div>__________________________________________________________________________________________<br> </div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div> <div>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </div>
+</div>
+<div>__________________________________________________________________________________________</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br> </div>
+</div>
+</blockquote>

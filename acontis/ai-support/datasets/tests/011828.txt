@@ -1,0 +1,148 @@
+### HEADER
+Id=11828
+Link=http://at-zammad/#ticket/zoom/11828
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Rheinmetall (ID=448, Number=50070, Country=DE)
+Commission=Rheinmetall, EC-Engineer (ID=526, Number=526)
+Number=7011828
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=daniel1.merkel@rheinmetall.com (ID=3772, FirstName=daniel1, LastName=Merkel)
+CreatedBy=daniel1.merkel@rheinmetall.com (ID=3772, FirstName=daniel1, LastName=Merkel)
+Type=
+TimeUnit=
+CreatedAt=11.11.2025 07:44:36 +00:00
+UpdatedAt=21.11.2025 07:14:13 +00:00
+CloseAt=21.11.2025 07:14:13 +00:00
+ArticlesCount=2
+
+### TITLE
+Duplicate Device ESI file Fehlermeldung
+
+### ARTICLE00_HEADER
+Id=68337
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.11.2025 07:44:36 +00:00
+UpdatedAt=11.11.2025 07:44:36 +00:00
+
+### ARTICLE00_SUBJECT
+Duplicate Device ESI file Fehlermeldung
+
+### ARTICLE00_BODY
+<span>Sehr geehrtes Support-Team,<br>
+<br> ich arbeite mit dem EC-Engineer und möchte eine ESI File eines Netzteils reinladen. Die ESI file haben wir vom Netzteilhersteller.<br> Diese soll laut Hersteller 2 Versionen enthalten, eine für den Standard-Fall und eine für Bidirectional.<br> Beim Hereinladen über den ESI Manager wird allerdings nur der Standard hinzugefügt und es erscheint folgende Fehlermeldung:</span>
+<br>
+<br><img src="/api/v1/ticket_attachment/11828/68337/286087?view=inline" style="max-width:100%;width:364px;max-height:281px;">
+<br><img src="/api/v1/ticket_attachment/11828/68337/286088?view=inline" style="max-width:100%;width:584px;max-height:68px;">
+<br><span><br> Wir würden das Gerät aber gerne im Bidirectional Modus nutzen. Wie lässt sich dieses Problem beheben?<br>
+<br> Vielen Dank im Voraus!<br>
+</span>
+<br>Mit freundlichen Grüßen / Sincerely yours <br>
+<br><b>Daniel Merkel</b>
+<br>Systemingenieur (EDS3 - Verification Control Units) <br>Geschäftsbereich Taktische Fahrzeuge <br>
+<br>Rheinmetall Landsysteme GmbH (RLS) <br>Henschelplatz 1 <br>34127 Kassel/Germany <br>Mobile: +49 171 9337009 <br>daniel1.merkel@rheinmetall.com <br><a href="http://www.rheinmetall.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.rheinmetall.com</span></a>
+<br><span style="color:#008250;"><b>Think before you print!</b></span>
+<br><img src="/api/v1/ticket_attachment/11828/68337/286089?view=inline" style="max-width:100%;"><span><br>
+
+</span>
+<table style="border-collapse:collapse;width:702px;">
+<tr>
+<td style="border-style:none none none none;padding:3px 3px;width:412px;"> </td>
+<td style="border-style:none none none none;padding:3px 3px;width:277px;"> </td>
+</tr>
+<tr>
+<td style="border-style:none none none none;padding:3px 3px;width:412px;">
+<span style="color:#808080;">Rheinmetall Landsysteme GmbH<br> Heinrich-Ehrhardt-Str. 2<br> 29345 Südheide / Germany<br> Amtsgericht Lüneburg, Abteilung B Nr. 204123<br> Sitz der Gesellschaft: Südheide<br> Internet: </span><a href="http://www.rheinmetall-defence.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#808080;">http://www.rheinmetall-defence.com</span></a>
+
+</td>
+<td style="border-style:none none none none;padding:3px 3px;width:277px;"><span style="color:#808080;"><u><br> Vorsitzender des Aufsichtsrats:</u><br> Armin Papperger<u><br> Geschäftsführung:</u><br> Dr. Björn Bernhard (Vors.)<br> Stefan Peter Ives<br> Eduardo Veen Martinez<br> Thomas Zaborowski<br>
+</span></td>
+</tr>
+</table>
+
+<table style="border-collapse:collapse;width:703px;">
+<tr>
+<td style="border-style:none none none none;padding:3px 3px;width:697px;"><span style="color:#808080;">This email may contain confidential information. If you are not the intended addressee, or if the information provided in this email (including any attachments) is evidently not destined for you, kindly inform us promptly and delete the message received in error (including any attachments) by erasing it from all your computers and other storage devices or media and destroying any hard copies thereof. Any unauthorized processing, forwarding, disclosure, distribution, divulgation, storage, printout or other use of this message or its attachment is prohibited. If your system is infected or otherwise bugged by any virus that is carried by this email, we disclaim any liability whatsoever for the ensuing loss or damage unless caused by our intention or gross negligence. </span></td>
+</tr>
+</table>
+
+### ARTICLE01_HEADER
+Id=68340
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.11.2025 08:13:53 +00:00
+UpdatedAt=11.11.2025 08:13:56 +00:00
+
+### ARTICLE01_SUBJECT
+Duplicate Device ESI file Fehlermeldung
+
+### ARTICLE01_BODY
+Hallo Herr Merkel,<div><br></div><div>bei uns sind VendorID, Product Code und Revision Number die unique ID. Wenn die drei Zahlen gleich sind, können wir das so leider nicht verwalten. Für so einen Fall der "Vorkonfiguration" des gleichen Gerätes sind eigentlich SCI Files gedacht. </div><div>Sie könnten dem einen Gerät als Workaround im ESI eine andere Revisionsnummer geben. Dann können Sie im Engineer über Change SubDevice / Slave, die andere Konfiguration wählen. Falls Sie nichts daran konfigurieren möchten, könnten Sie sich dann ein SCI file erstellen, bei diesem die Revision ändern und wieder reinladen. Falls Sie die Konfiguration anpassen müssen, bleibt Ihnen hier eigentlich nur der Workaround über die Revisionsnummer.</div><div><br></div><div>Eventuell wird die andere Konfiguration auch angezeigt, wenn Sie hier "Show hidden Slaves" auswählen. Das kann ich aber ohne Ihr ESI file zu haben, nicht sicher sagen.</div><div><br></div><div>Viele Grüße</div><div>Kai Feifel<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, November 11, 2025 at 8:44:36 AM, daniel1 Merkel wrote:<br><br><span>Sehr geehrtes Support-Team,<br>
+<br> ich arbeite mit dem EC-Engineer und möchte eine ESI File eines Netzteils reinladen. Die ESI file haben wir vom Netzteilhersteller.<br> Diese soll laut Hersteller 2 Versionen enthalten, eine für den Standard-Fall und eine für Bidirectional.<br> Beim Hereinladen über den ESI Manager wird allerdings nur der Standard hinzugefügt und es erscheint folgende Fehlermeldung:</span>
+<br>
+<br><img src="/api/v1/ticket_attachment/11828/68340/286104?view=inline" style="max-width:100%;max-width:100%;width:364px;max-height:281px;">
+<br><img src="/api/v1/ticket_attachment/11828/68340/286105?view=inline" style="max-width:100%;max-width:100%;width:584px;max-height:68px;">
+<br><span><br> Wir würden das Gerät aber gerne im Bidirectional Modus nutzen. Wie lässt sich dieses Problem beheben?<br>
+<br> Vielen Dank im Voraus!<br>
+</span>
+<br>Mit freundlichen Grüßen / Sincerely yours <br>
+<br><b>Daniel Merkel</b>
+<br>Systemingenieur (EDS3 - Verification Control Units) <br>Geschäftsbereich Taktische Fahrzeuge <br>
+<br>Rheinmetall Landsysteme GmbH (RLS) <br>Henschelplatz 1 <br>34127 Kassel/Germany <br>Mobile: +49 171 9337009 <br>daniel1.merkel@rheinmetall.com <br><a href="http://www.rheinmetall.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.rheinmetall.com</span></a>
+<br><span style="color:#008250;"><b>Think before you print!</b></span>
+<br><img src="/api/v1/ticket_attachment/11828/68340/286106?view=inline" style="max-width:100%;max-width:100%;"><span><br>
+
+</span>
+<table style="border-collapse:collapse;width:702px;">
+<tbody>
+<tr>
+<td style="border-style:none none none none;padding:3px 3px;width:412px;"> </td>
+<td style="border-style:none none none none;padding:3px 3px;width:277px;"> </td>
+</tr>
+<tr>
+<td style="border-style:none none none none;padding:3px 3px;width:412px;">
+<span style="color:#808080;">Rheinmetall Landsysteme GmbH<br> Heinrich-Ehrhardt-Str. 2<br> 29345 Südheide / Germany<br> Amtsgericht Lüneburg, Abteilung B Nr. 204123<br> Sitz der Gesellschaft: Südheide<br> Internet: </span><a href="http://www.rheinmetall-defence.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#808080;">http://www.rheinmetall-defence.com</span></a>
+
+</td>
+<td style="border-style:none none none none;padding:3px 3px;width:277px;"><span style="color:#808080;"><u><br> Vorsitzender des Aufsichtsrats:</u><br> Armin Papperger<u><br> Geschäftsführung:</u><br> Dr. Björn Bernhard (Vors.)<br> Stefan Peter Ives<br> Eduardo Veen Martinez<br> Thomas Zaborowski<br>
+</span></td>
+</tr>
+</tbody>
+</table>
+
+<table style="border-collapse:collapse;width:703px;">
+<tbody>
+<tr>
+<td style="border-style:none none none none;padding:3px 3px;width:697px;"><span style="color:#808080;">This email may contain confidential information. If you are not the intended addressee, or if the information provided in this email (including any attachments) is evidently not destined for you, kindly inform us promptly and delete the message received in error (including any attachments) by erasing it from all your computers and other storage devices or media and destroying any hard copies thereof. Any unauthorized processing, forwarding, disclosure, distribution, divulgation, storage, printout or other use of this message or its attachment is prohibited. If your system is infected or otherwise bugged by any virus that is carried by this email, we disclaim any liability whatsoever for the ensuing loss or damage unless caused by our intention or gross negligence. </span></td>
+</tr>
+</tbody>
+</table>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

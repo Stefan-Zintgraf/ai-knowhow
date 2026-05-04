@@ -1,0 +1,153 @@
+### HEADER
+Id=7418
+Link=http://at-zammad/#ticket/zoom/7418
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=eCential Robotics (ID=536, Number=0, Country=FR)
+Commission=eCential Robotics, Surgical assistance system (ID=218, Number=218)
+Number=707418
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=thomas.dancoisne@ecential-robotics.com (ID=599, FirstName=Thomas, LastName=Dancoisne)
+CreatedBy=thomas.dancoisne@ecential-robotics.com (ID=599, FirstName=Thomas, LastName=Dancoisne)
+Type=
+TimeUnit=
+CreatedAt=13.02.2024 10:56:58 +00:00
+UpdatedAt=23.02.2024 07:11:41 +00:00
+CloseAt=23.02.2024 07:11:41 +00:00
+ArticlesCount=2
+
+### TITLE
+[Ec-Master] non-root execution
+
+### ARTICLE00_HEADER
+Id=40787
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.02.2024 10:56:58 +00:00
+UpdatedAt=13.02.2024 10:57:02 +00:00
+
+### ARTICLE00_SUBJECT
+[Ec-Master] non-root execution
+
+### ARTICLE00_BODY
+<p>Hello,</p><p> </p><div>We have a question regarding EcMaster usage on QNX 7.1. We are trying to use it as a non-root user.</div><p> </p><div><span>Previously, we launched our software as root, then set some required abilities (mem_lock, io, priority, prot_exec, mem_phys, map_fixed) using procmgr_ability(), and then switched to a non-root user using set_ids_from_arg().<br> That way, we had no problem accessing the EtherCAT device. </span></div><p> </p><div><span>We now need to launch our software directly as non-root.<br> To do that, we try to use the "on" tool, defining the same abilities and the same user.<br> But with this method, we get the following errors:<br> CEcDeviceBase::Open() Failed to open link layer!<br> ecatInitMaster(): Error opening EtherCAT device!<br> ERROR: Not found </span></div><p> </p><div>It seems that the link layer library (emllI8254x.so) is correctly loaded but can not access the device.</div><p> </p><div><span>Is this way supposed to be working?<br> Is there a specific config/command to use to make it work? </span></div><div><span><br>
+</span></div><div>Note :</div><div>
+<ul>
+<li>
+<span>we're currently using Ec-Master V3.1.4.03-QNX71-x86_64Bit.<br>
+</span>
+</li>
+<li> we've tried to use EcMasterDemo, but unfortunately it requires to be run as root (to set threads priorities ?) </li>
+</ul>
+</div><p> </p><div>Thanks for your help,</div><div> </div><div>
+<table style=" border-collapse: collapse; border-spacing: 0px;">
+<tbody>
+<tr>
+<td style="padding: 0cm 5.4pt; vertical-align: top;">
+<p><img style="max-width:100%;width: 2.51in;max-height: 0.77in;" src="/api/v1/ticket_attachment/7418/40787/169603?view=inline"></p>
+</td>
+<td style="padding: 0cm 5.4pt;">
+<p><b>Thomas DANCOISNE</b></p>
+<p><i>Software Engineer</i></p>
+<p><a href="mailto:thomas.dancoisne@ecential-robotics.com">thomas.dancoisne</a><a href="mailto:thomas.dancoisne@ecential-robotics.com">@ecential-robotics.com</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="padding: 0cm 5.4pt; vertical-align: top;">
+<p><span><b>eCential</b> Robotics - Zone Mayencin II – Parc Equation – Bâtiment 1 - 2 avenue de Vignate – 38610 Gières – France</span></p>
+<p><span style=" color: rgb(5, 99, 193);"><a href="http://www.ecential-robotics.com/" rel="nofollow noreferrer noopener" target="_blank">www.ecential-robotics.com</a></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style=" color: rgb(181, 129, 80);"><b> </b></span></p>
+<p><i>This e-mail and any attachments are confidential and may also be legally privileged. If you have received this message by mistake, please inform the author as soon as possible and delete this message and any attachments without keeping any copies. Any reproduction, distribution, disclosure or other use of this communication is prohibited.</i></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=40823
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.02.2024 07:58:35 +00:00
+UpdatedAt=14.02.2024 07:58:39 +00:00
+
+### ARTICLE01_SUBJECT
+[Ec-Master] non-root execution
+
+### ARTICLE01_BODY
+<div>Hi Thomas,</div><div>Unfortunately we have no experience with user management in QNX. We run our demos under root or qnxuser for testing purposes.</div><div><div>
+<i>CEcDeviceBase::Open() Failed to open link layer </i>sounds like the LD_LIBRARY_PATH is not set correctly.</div></div><div><br></div><div><div>Best regards,</div></div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Holger Oelhaf</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">Am Dienstag, 13. Februar 2024 um 11:56:58, schrieb Thomas Dancoisne:<br><br><p>Hello,</p>
+<p> </p>
+<div>We have a question regarding EcMaster usage on QNX 7.1. We are trying to use it as a non-root user.</div>
+<p> </p>
+<div><span>Previously, we launched our software as root, then set some required abilities (mem_lock, io, priority, prot_exec, mem_phys, map_fixed) using procmgr_ability(), and then switched to a non-root user using set_ids_from_arg().<br> That way, we had no problem accessing the EtherCAT device. </span></div>
+<p> </p>
+<div><span>We now need to launch our software directly as non-root.<br> To do that, we try to use the "on" tool, defining the same abilities and the same user.<br> But with this method, we get the following errors:<br> CEcDeviceBase::Open() Failed to open link layer!<br> ecatInitMaster(): Error opening EtherCAT device!<br> ERROR: Not found </span></div>
+<p> </p>
+<div>It seems that the link layer library (emllI8254x.so) is correctly loaded but can not access the device.</div>
+<p> </p>
+<div><span>Is this way supposed to be working?<br> Is there a specific config/command to use to make it work? </span></div>
+<div><span><br>
+</span></div>
+<div>Note :</div>
+<div>
+<ul>
+<li>
+<span>we're currently using Ec-Master V3.1.4.03-QNX71-x86_64Bit.<br>
+</span>
+</li>
+<li> we've tried to use EcMasterDemo, but unfortunately it requires to be run as root (to set threads priorities ?) </li>
+</ul>
+</div>
+<p> </p>
+<div>Thanks for your help,</div>
+<div> </div>
+<div>
+<table style=" border-collapse: collapse; border-spacing: 0px;">
+<tbody>
+<tr>
+<td style="padding: 0cm 5.4pt; vertical-align: top;">
+<p><img style="max-width:100%;max-width:100%;width: 2.51in;max-height: 0.77in;" src="/api/v1/ticket_attachment/7418/40823/169835?view=inline"></p>
+</td>
+<td style="padding: 0cm 5.4pt;">
+<p><b>Thomas DANCOISNE</b></p>
+<p><i>Software Engineer</i></p>
+<p><a href="mailto:thomas.dancoisne@ecential-robotics.com">thomas.dancoisne</a><a href="mailto:thomas.dancoisne@ecential-robotics.com">@ecential-robotics.com</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="padding: 0cm 5.4pt; vertical-align: top;">
+<p><span><b>eCential</b> Robotics - Zone Mayencin II – Parc Equation – Bâtiment 1 - 2 avenue de Vignate – 38610 Gières – France</span></p>
+<p><span style=" color: rgb(5, 99, 193);"><a href="http://www.ecential-robotics.com/" rel="nofollow noreferrer noopener" target="_blank">www.ecential-robotics.com</a></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style=" color: rgb(181, 129, 80);"><b> </b></span></p>
+<p><i>This e-mail and any attachments are confidential and may also be legally privileged. If you have received this message by mistake, please inform the author as soon as possible and delete this message and any attachments without keeping any copies. Any reproduction, distribution, disclosure or other use of this communication is prohibited.</i></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

@@ -1,0 +1,40 @@
+# Local configuration (use config.example.yaml)
+config.yaml
+# Local E2E overrides (use config.e2e.example.yaml)
+config.e2e.yaml
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+.venv-e2e/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# install_deps portable downloads
+install_deps/_tools/
+
+# Local Qdrant / vector data (recreated locally or by E2E)
+storage/
+.qdrant-initialized
+
+# E2E run logs and nested local Qdrant (not source)
+tests/e2e/logs/
+tests/e2e/scripts/storage/
+
+# BMad framework helper scripts (installed, not project source)
+.agents/**/scripts/
+.claude/**/scripts/
+.cursor/**/scripts/
+.gemini/**/scripts/
+_bmad/scripts/

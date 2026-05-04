@@ -1,0 +1,120 @@
+### HEADER
+Id=9435
+Link=http://at-zammad/#ticket/zoom/9435
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Zetatek Technologies (ID=664, Number=50263, Country=IN)
+Commission=Zetatek Technologies.com, Rate Table (ID=745, Number=745)
+Number=709435
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=bhaskar.gc@zetatektechnologies.com (ID=1626, FirstName=Bhaskar, LastName=Gc)
+CreatedBy=bhaskar.gc@zetatektechnologies.com (ID=1626, FirstName=Bhaskar, LastName=Gc)
+Type=
+TimeUnit=
+CreatedAt=30.11.2024 07:44:13 +00:00
+UpdatedAt=23.01.2025 12:42:00 +00:00
+CloseAt=17.12.2024 07:03:19 +00:00
+ArticlesCount=2
+
+### TITLE
+Issue with Fault Processing in DS402 State Machine ?
+
+### ARTICLE00_HEADER
+Id=53545
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.11.2024 07:44:13 +00:00
+UpdatedAt=30.11.2024 07:44:19 +00:00
+
+### ARTICLE00_SUBJECT
+Issue with Fault Processing in DS402 State Machine ?
+
+### ARTICLE00_BODY
+<div dir="ltr"><div dir="ltr">Folks,<div> </div>
+<div>I am noticing a weird problem related to execution of faults being detected during the execution of the DS402 State Machine.</div>
+<div> </div>
+<div>Here are the details of my testbeds:</div>
+<div> </div>
+<div><img src="/api/v1/ticket_attachment/9435/53545/222337?view=inline" alt="image.png" style="max-width:100%;width:542px;max-height:288px;"></div>
+<div><img src="/api/v1/ticket_attachment/9435/53545/222338?view=inline" alt="image.png" style="max-width:100%;width:542px;max-height:274px;"></div>
+<div><b>Note that the exact same Drives / Motors / Encoders are used in both the testbeds [I disconnect the ELMO Platinum Maestro and connect it to the Debian Box].</b></div>
+<div> </div>
+<div>Here are the details of the problem that I noticing:</div>
+<div> </div>
+<div>1. In the reference testbed I issue Power ON the Motor, Issue Move Absolute Command, Power OFF [using the ELMO Application Studio] and continuously monitor and record the control word and status word for extended periods of time. I do not see any issues with the status word as reported by the ELMO stack [I have repeated this step several hundreds of times]. I dont see a single instance of a motor fault being flagged by the ELM O stack.</div>
+<div>2. In the acontis testbed I execute the same test sequence. After several attempts [15-20] I start seeing faults being detected during the execution of the DS402 State machine. When the issue is detected the drive states follow the sequence given below continuously.</div>
+<div>
+<img src="/api/v1/ticket_attachment/9435/53545/222336?view=inline" alt="image.png" style="max-width:100%;width:84px;max-height:361px;"><br>
+</div>
+<div> </div>
+<div>3. If I exit the acotis executable [EcMasterDemoMotion or a custom app that I have built] and re-run it again I see that the problem disappears but If I repeat the test sequence as described in the previous step it appears again.</div>
+<div> </div>
+<div>Please let me know what this issue could be and how to fix it.</div>
+<div> </div>
+<div>Thanks,</div>
+<div>GC Bhaskar.</div>
+</div></div>
+
+### ARTICLE01_HEADER
+Id=53579
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=02.12.2024 10:38:16 +00:00
+UpdatedAt=02.12.2024 10:38:21 +00:00
+
+### ARTICLE01_SUBJECT
+Issue with Fault Processing in DS402 State Machine ?
+
+### ARTICLE01_BODY
+Hi <span>Bhaskar,</span><div><br></div><div>can you please provide us the ENI file, the DemoConfig.xml and also the complete log files.</div><div><br></div><div>Best Regards</div><div><br></div><div>Christoph<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Saturday, November 30, 2024 at 8:44:13 AM, Bhaskar Gc wrote:<br><br><div dir="ltr"><div dir="ltr">Folks,<div> </div>
+<div>I am noticing a weird problem related to execution of faults being detected during the execution of the DS402 State Machine.</div>
+<div> </div>
+<div>Here are the details of my testbeds:</div>
+<div> </div>
+<div><img src="/api/v1/ticket_attachment/9435/53579/222459?view=inline" alt="image.png" style="max-width:100%;max-width:100%;width:542px;max-height:288px;"></div>
+<div><img src="/api/v1/ticket_attachment/9435/53579/222460?view=inline" alt="image.png" style="max-width:100%;max-width:100%;width:542px;max-height:274px;"></div>
+<div><b>Note that the exact same Drives / Motors / Encoders are used in both the testbeds [I disconnect the ELMO Platinum Maestro and connect it to the Debian Box].</b></div>
+<div> </div>
+<div>Here are the details of the problem that I noticing:</div>
+<div> </div>
+<div>1. In the reference testbed I issue Power ON the Motor, Issue Move Absolute Command, Power OFF [using the ELMO Application Studio] and continuously monitor and record the control word and status word for extended periods of time. I do not see any issues with the status word as reported by the ELMO stack [I have repeated this step several hundreds of times]. I dont see a single instance of a motor fault being flagged by the ELM O stack.</div>
+<div>2. In the acontis testbed I execute the same test sequence. After several attempts [15-20] I start seeing faults being detected during the execution of the DS402 State machine. When the issue is detected the drive states follow the sequence given below continuously.</div>
+<div>
+<img src="/api/v1/ticket_attachment/9435/53579/222461?view=inline" alt="image.png" style="max-width:100%;max-width:100%;width:84px;max-height:361px;"><br>
+</div>
+<div> </div>
+<div>3. If I exit the acotis executable [EcMasterDemoMotion or a custom app that I have built] and re-run it again I see that the problem disappears but If I repeat the test sequence as described in the previous step it appears again.</div>
+<div> </div>
+<div>Please let me know what this issue could be and how to fix it.</div>
+<div> </div>
+<div>Thanks,</div>
+<div>GC Bhaskar.</div>
+</div></div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

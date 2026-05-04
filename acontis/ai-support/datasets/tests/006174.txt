@@ -1,0 +1,162 @@
+### HEADER
+Id=6174
+Link=http://at-zammad/#ticket/zoom/6174
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=Omron, PLC (ID=282, Number=282)
+Number=706174
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=redmine@my.redmine.jp (ID=190, FirstName=Baba, LastName=Kojiro)
+CreatedBy=redmine@my.redmine.jp (ID=190, FirstName=Baba, LastName=Kojiro)
+Type=
+TimeUnit=
+CreatedAt=21.08.2023 06:51:55 +00:00
+UpdatedAt=31.10.2023 12:49:28 +00:00
+CloseAt=28.08.2023 06:10:08 +00:00
+ArticlesCount=6
+
+### TITLE
+[C1-OAproject - Question #439] (New) About MDP unit support
+
+### ARTICLE00_HEADER
+Id=33101
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.08.2023 06:51:55 +00:00
+UpdatedAt=21.08.2023 06:51:56 +00:00
+
+### ARTICLE00_SUBJECT
+[C1-OAproject - Question #439] (New) About MDP unit support
+
+### ARTICLE00_BODY
+Issue <a href="https://my.redmine.jp/pbd-rdc/issues/439" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/439" target="_blank">#439</a> has been reported by Chenhao Hu. <hr>
+<h1> <a href="https://my.redmine.jp/pbd-rdc/issues/439" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/439" target="_blank">Question #439: About MDP unit support</a> <span style="color:#205d86;">open</span>
+</h1> <ul>
+<li>
+<strong>Author: </strong>Chenhao Hu</li>
+<li>
+<strong>Status: </strong>New</li>
+<li>
+<strong>Priority: </strong>Normal</li>
+<li>
+<strong>Assignee: </strong>acontis acontis</li>
+<li>
+<strong>Start date: </strong>2023-08-21</li>
+<li>
+<strong>Category: </strong>Question</li>
+<li>
+<strong>Category for Omron: </strong>Misc</li>
+<li>
+<strong>Owner: </strong>Chenhao Hu</li>
+</ul> <p>Hi,</p><p>Based on the sample [/EC-Master-V3.1.3.01-Linux-ARM_32Bit-SDK_Source.tar/Examples/EcMasterDemo/EcDemoApp.cpp], what else should we do to support MDP unit?</p><p>Kind regards,<br>Chenhao Hu.</p><hr>
+<p>My Redmine (プロジェクト運営支援SaaS) から送信<br><a href="http://hosting.redmine.jp/" rel="nofollow noreferrer noopener" target="_blank">http://hosting.redmine.jp/</a></p>
+
+### ARTICLE01_HEADER
+Id=33111
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=21.08.2023 09:14:23 +00:00
+UpdatedAt=21.08.2023 09:14:23 +00:00
+
+### ARTICLE01_BODY
+beantwortet via RedMine
+
+### ARTICLE02_HEADER
+Id=33166
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.08.2023 08:57:32 +00:00
+UpdatedAt=22.08.2023 08:57:32 +00:00
+
+### ARTICLE02_SUBJECT
+[C1-OAproject - Question #439] About MDP unit support
+
+### ARTICLE02_BODY
+Issue <a href="https://my.redmine.jp/pbd-rdc/issues/439#change-3776" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/439#change-3776" target="_blank">#439</a> has been updated by Chenhao Hu. <hr> <ul> <li>
+<strong>File</strong> <a href="https://my.redmine.jp/pbd-rdc/attachments/1831" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/1831" target="_blank">clipboard-202308221651-dno1c.png</a> added</li>
+</ul> <p>Hi,</p><p>Thank you for your reply.<br>When I implement the sample based on [/EC-Master-V3.1.3.01-Linux-ARM_32Bit-SDK_Source.tar/Examples/EcMasterDemo/EcDemoApp.cpp], if I connect an MDP slave, an error occur below (non-MDP slave is OK), how to solve it (Does this demo need some more configuratiosn to support MDP slaves?)</p><p>Kind regards,<br>Chenhao Hu.</p><hr>
+<h1> <a href="https://my.redmine.jp/pbd-rdc/issues/439#change-3776" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/439#change-3776" target="_blank">Question #439: About MDP unit support</a> <span style="color:#205d86;">open</span>
+</h1> <ul>
+<li>
+<strong>Author: </strong>Chenhao Hu</li>
+<li>
+<strong>Status: </strong>New</li>
+<li>
+<strong>Priority: </strong>Normal</li>
+<li>
+<strong>Assignee: </strong>acontis acontis</li>
+<li>
+<strong>Start date: </strong>2023-08-21</li>
+<li>
+<strong>Category: </strong>Question</li>
+<li>
+<strong>Category for Omron: </strong>Misc</li>
+<li>
+<strong>Owner: </strong>Chenhao Hu</li>
+</ul> <p>Hi,</p><p>Based on the sample [/EC-Master-V3.1.3.01-Linux-ARM_32Bit-SDK_Source.tar/Examples/EcMasterDemo/EcDemoApp.cpp], what else should we do to support MDP unit?</p><p>Kind regards,<br>Chenhao Hu.</p><legend>Files</legend> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1829/clipboard-202308211112-yeoiq.png" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1829/clipboard-202308211112-yeoiq.png" target="_blank">clipboard-202308211112-yeoiq.png</a> (7.79 KB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1830/clipboard-202308211113-6cxb4.png" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1830/clipboard-202308211113-6cxb4.png" target="_blank">clipboard-202308211113-6cxb4.png</a> (7.79 KB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1831/clipboard-202308221651-dno1c.png" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1831/clipboard-202308221651-dno1c.png" target="_blank">clipboard-202308221651-dno1c.png</a> (174 KB)<br> <hr>
+<p>My Redmine (プロジェクト運営支援SaaS) から送信<br><a href="http://hosting.redmine.jp/" rel="nofollow noreferrer noopener" target="_blank">http://hosting.redmine.jp/</a></p>
+
+### ARTICLE03_HEADER
+Id=33167
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=22.08.2023 09:24:38 +00:00
+UpdatedAt=22.08.2023 09:24:38 +00:00
+
+### ARTICLE03_BODY
+Beantwortet via redmine.
+
+### ARTICLE04_HEADER
+Id=33221
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.08.2023 01:53:35 +00:00
+UpdatedAt=23.08.2023 01:53:35 +00:00
+
+### ARTICLE04_SUBJECT
+[C1-OAproject - Question #439] About MDP unit support
+
+### ARTICLE04_BODY
+Issue <a href="https://my.redmine.jp/pbd-rdc/issues/439#change-3778" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/439#change-3778" target="_blank">#439</a> has been updated by Chenhao Hu. <hr> <ul> <li>
+<strong>File</strong> <a href="https://my.redmine.jp/pbd-rdc/attachments/1832" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/1832" target="_blank">EC-Engineer.log</a> added</li> <li>
+<strong>Assignee</strong> changed from <i>Chenhao Hu</i> to <i>acontis acontis</i>
+</li>
+</ul> <p>Hi,</p><p>Log file is as attachment.</p><p>Kind regards,<br>Chenhao Hu.</p><hr>
+<h1> <a href="https://my.redmine.jp/pbd-rdc/issues/439#change-3778" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/issues/439#change-3778" target="_blank">Question #439: About MDP unit support</a> <span style="color:#205d86;">open</span>
+</h1> <ul>
+<li>
+<strong>Author: </strong>Chenhao Hu</li>
+<li>
+<strong>Status: </strong>New</li>
+<li>
+<strong>Priority: </strong>Normal</li>
+<li>
+<strong>Assignee: </strong>acontis acontis</li>
+<li>
+<strong>Start date: </strong>2023-08-21</li>
+<li>
+<strong>Category: </strong>Question</li>
+<li>
+<strong>Category for Omron: </strong>Misc</li>
+<li>
+<strong>Owner: </strong>Chenhao Hu</li>
+</ul> <p>Hi,</p><p>Based on the sample [/EC-Master-V3.1.3.01-Linux-ARM_32Bit-SDK_Source.tar/Examples/EcMasterDemo/EcDemoApp.cpp], what else should we do to support MDP unit?</p><p>Kind regards,<br>Chenhao Hu.</p><legend>Files</legend> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1829/clipboard-202308211112-yeoiq.png" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1829/clipboard-202308211112-yeoiq.png" target="_blank">clipboard-202308211112-yeoiq.png</a> (7.79 KB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1830/clipboard-202308211113-6cxb4.png" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1830/clipboard-202308211113-6cxb4.png" target="_blank">clipboard-202308211113-6cxb4.png</a> (7.79 KB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1831/clipboard-202308221651-dno1c.png" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1831/clipboard-202308221651-dno1c.png" target="_blank">clipboard-202308221651-dno1c.png</a> (174 KB)<br> <a href="https://my.redmine.jp/pbd-rdc/attachments/download/1832/EC-Engineer.log" rel="nofollow noreferrer noopener" title="https://my.redmine.jp/pbd-rdc/attachments/download/1832/EC-Engineer.log" target="_blank">EC-Engineer.log</a> (133 KB)<br> <hr>
+<p>My Redmine (プロジェクト運営支援SaaS) から送信<br><a href="http://hosting.redmine.jp/" rel="nofollow noreferrer noopener" target="_blank">http://hosting.redmine.jp/</a></p>
+
+### ARTICLE05_HEADER
+Id=33236
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=23.08.2023 11:43:26 +00:00
+UpdatedAt=23.08.2023 11:43:26 +00:00
+
+### ARTICLE05_BODY
+Beantwortet via redmine.

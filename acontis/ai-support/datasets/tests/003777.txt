@@ -1,0 +1,209 @@
+### HEADER
+Id=3777
+Link=http://at-zammad/#ticket/zoom/3777
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Advanced Robotics Group (ID=581, Number=0, Country=US)
+Commission=Advanced Robotics Group, Isaac Robot (ID=659, Number=659)
+Number=703777
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=marcin.rutkowski@advancedroboticsgroup.com (ID=1185, FirstName=Marcin, LastName=Rutkowski)
+CreatedBy=marcin.rutkowski@advancedroboticsgroup.com (ID=1185, FirstName=Marcin, LastName=Rutkowski)
+Type=
+TimeUnit=
+CreatedAt=25.08.2022 12:43:23 +00:00
+UpdatedAt=16.09.2022 06:04:54 +00:00
+CloseAt=16.09.2022 06:04:54 +00:00
+ArticlesCount=4
+
+### TITLE
+EtherCAT Rx queue overflow error
+
+### ARTICLE00_HEADER
+Id=20001
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.08.2022 12:43:23 +00:00
+UpdatedAt=25.08.2022 12:43:27 +00:00
+
+### ARTICLE00_SUBJECT
+EtherCAT Rx queue overflow error
+
+### ARTICLE00_BODY
+<div>Hi Jon, EC-Support,</div><div> </div><div>Not sure if this is the right place to post this question but do you guys know what causes the EtherCAT Rx queue overflow error?<br>
+</div><div> </div><div>We have this error persistent on one set of hardware. I attached the log file with verbosity 5 but it seems like a clean exit.</div><div> </div><div>Any ideas?</div><div> </div><div>Thanks,</div><div>Marcin<br>
+</div><div> </div><div>
+<img style="max-width:100%;max-width:100%;" src="/api/v1/ticket_attachment/3777/20001/81879?view=inline">
+</div><div> </div>
+
+### ARTICLE01_HEADER
+Id=20018
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.08.2022 14:19:23 +00:00
+UpdatedAt=25.08.2022 14:19:24 +00:00
+
+### ARTICLE01_SUBJECT
+EtherCAT Rx queue overflow error
+
+### ARTICLE01_BODY
+<div>Hi Marcin,</div><div><br></div><div>The <span>EtherCAT Rx queue overflow error is a slave error, which means that the communication rate is too high for the internal receive buffer of the slave,</span>
+</div><div>I think that the provider(producer) of the slave should know better how to deal with this type of error!</div><div><br></div><div>Best Regards</div><div>Haithem Jebali</div><div><br></div><div><br></div><div><blockquote type="cite">On Thursday, August 25, 2022 at 2:43:23 PM, Marcin Rutkowski wrote:<br><br>EtherCAT Rx queue overflow error<br>
+</blockquote></div><div><br></div><br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=20028
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.08.2022 15:33:52 +00:00
+UpdatedAt=25.08.2022 15:33:52 +00:00
+
+### ARTICLE02_SUBJECT
+Re: EtherCAT Rx queue overflow error [Ticket#703777]
+
+### ARTICLE02_BODY
+<div>Thanks for the explanation, I reached out the peripheral maker asking for details.</div><div> </div><div>Does the bus cycle time parameter set to 2000 seem high to you? I thought we are fairly lenient on our timings.</div><div> </div><div>Regards,</div><div>Marcin Rutkowski<br>
+</div><hr>
+<div dir="ltr">
+<b>From:</b> Haithem Jebali via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Thursday, August 25, 2022 9:19 AM<br>
+<b>To:</b> j.waters@acontis.com &lt;j.waters@acontis.com&gt;; Marcin Rutkowski &lt;Marcin.Rutkowski@advancedroboticsgroup.com&gt;<br>
+<b>Subject:</b> RE: EtherCAT Rx queue overflow error [Ticket#703777] <div> </div>
+</div><div>
+<div>Hi Marcin,</div>
+<div> </div>
+<div>The EtherCAT Rx queue overflow error is a slave error, which means that the communication rate is too high for the internal receive buffer of the slave,</div>
+<div>I think that the provider(producer) of the slave should know better how to deal with this type of error!</div>
+<div> </div>
+<div>Best Regards</div>
+<div>Haithem Jebali</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Thursday, August 25, 2022 at 2:43:23 PM, Marcin Rutkowski wrote:<br>
+<br> EtherCAT Rx queue overflow error<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+<div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=20064
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.08.2022 07:21:35 +00:00
+UpdatedAt=26.08.2022 07:21:37 +00:00
+
+### ARTICLE03_SUBJECT
+EtherCAT Rx queue overflow error
+
+### ARTICLE03_BODY
+Hi Marcin,<div><br></div><div>It does not seem high to me. 2000us on a Linux machine should be fully O.K. </div><div><br></div><div>Best Regards</div><div>Haithem Jebali<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, August 25, 2022 at 5:33:52 PM, Marcin Rutkowski wrote:<br><br><div>Thanks for the explanation, I reached out the peripheral maker asking for details.</div>
+<div> </div>
+<div>Does the bus cycle time parameter set to 2000 seem high to you? I thought we are fairly lenient on our timings.</div>
+<div> </div>
+<div>Regards,</div>
+<div>Marcin Rutkowski<br>
+</div>
+<hr>
+<div dir="ltr">
+<b>From:</b> Haithem Jebali via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Thursday, August 25, 2022 9:19 AM<br>
+<b>To:</b> j.waters@acontis.com &lt;j.waters@acontis.com&gt;; Marcin Rutkowski &lt;Marcin.Rutkowski@advancedroboticsgroup.com&gt;<br>
+<b>Subject:</b> RE: EtherCAT Rx queue overflow error [Ticket#703777] <div> </div>
+</div>
+<div>
+<div>Hi Marcin,</div>
+<div> </div>
+<div>The EtherCAT Rx queue overflow error is a slave error, which means that the communication rate is too high for the internal receive buffer of the slave,</div>
+<div>I think that the provider(producer) of the slave should know better how to deal with this type of error!</div>
+<div> </div>
+<div>Best Regards</div>
+<div>Haithem Jebali</div>
+<div> </div>
+<div>
+<blockquote type="cite"> On Thursday, August 25, 2022 at 2:43:23 PM, Marcin Rutkowski wrote:<br>
+<br> EtherCAT Rx queue overflow error<br>
+</blockquote>
+</div>
+<div> </div>
+<br>
+<br>
+<div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

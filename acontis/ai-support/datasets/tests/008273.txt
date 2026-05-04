@@ -1,0 +1,116 @@
+### HEADER
+Id=8273
+Link=http://at-zammad/#ticket/zoom/8273
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Hexagon Technology Center GmbH (ID=17, Number=53510, Country=CH)
+Commission=Hexagon, Metrology Machine Controller (ID=230, Number=230)
+Number=708273
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=francesco.casadei-ext@hexagon.com (ID=113, FirstName=Francesco, LastName=casadei-ext)
+CreatedBy=francesco.casadei-ext@hexagon.com (ID=113, FirstName=Francesco, LastName=casadei-ext)
+Type=
+TimeUnit=
+CreatedAt=11.06.2024 05:40:34 +00:00
+UpdatedAt=24.06.2024 15:22:55 +00:00
+CloseAt=24.06.2024 15:22:54 +00:00
+ArticlesCount=3
+
+### TITLE
+Question about average time in the Performance API
+
+### ARTICLE00_HEADER
+Id=45875
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.06.2024 05:40:34 +00:00
+UpdatedAt=11.06.2024 05:40:34 +00:00
+
+### ARTICLE00_SUBJECT
+Question about average time in the Performance API
+
+### ARTICLE00_BODY
+<div>Hi,</div><div> </div><div>Earlier versions of Acontis EC-Master (e.g. v3.1.2.07) didn't measure the jobs offset, so I've created my own measuring scheme.</div><div> </div><div>Now that I've updated our app to use the Performance API in v3.1.4.11, including the offset measurements, I noticed that the average measurements are different to mine:</div><div> </div><div>'SendAllCycFrames_off ' (min/avg/max) [usec]: 16.0/21.0/32.1</div><div>'MasterTimer_off ' (min/avg/max) [usec]: 116.8/231.8/290.7</div><div>'SendAcycFrames_off ' (min/avg/max) [usec]: 122.9/237.5/296.8</div><div> </div><div>Yours:</div><div> </div><div>'JOB_SendAllCycFrames Offset ' (min/avg/max) [usec]: 0.9/1.2/3.9</div><div>'JOB_MasterTimer Offset ' (min/avg/max) [usec]: 97.4/111.7/270.9</div><div>'JOB_SendAcycFrames Offset ' (min/avg/max) [usec]: 103.9/118.9/276.9</div><div> </div><div>The min and max differ by a constant ~20 usec perhaps due to where the measurements are taken within the cycle, but the average is way lower in your case.</div><div> </div><div>If I add all the sample in the histogram and divide by the number of such samples, the resulting average is closer to my value than yours.</div><div> </div><div>In fact, I just keep a running sum (std::uint64_t which never overflows) and the count of total samples. Then, at the end I divide the computed sum by the total number of samples, which gives the "exact" average.</div><div> </div><div>I've noticed in your (VxWorks) code that you compute the average differently in CPerfMeas::AddTime():</div><div> </div><div>pPerfMeasVal-&gt;qwAvgTicks = RoundedDivisionMiddle(pPerfMeasVal-&gt;qwAvgTicks * (AVG_SCALE - 1) + qwDiff, (EC_T_UINT64)AVG_SCALE);</div><div> </div><div>Where AVG_SCALE is defined as 128 and RoundedDivisionMiddle() is:</div><div> </div><div>template&lt;typename T&gt;</div><div>static T RoundedDivisionMiddle(T dividend, T divisor)</div><div>{</div><div>return (dividend + (divisor / 2)) / divisor;</div><div>}</div><div> </div><div>Where does the value 128 come from and what is the rationale behind this formula?</div><div> </div><div>Best regards,</div><div>Francesco Casadei</div>
+
+### ARTICLE01_HEADER
+Id=46081
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.06.2024 07:56:02 +00:00
+UpdatedAt=17.06.2024 07:56:02 +00:00
+
+### ARTICLE01_SUBJECT
+Question about average time in the Performance API
+
+### ARTICLE01_BODY
+<div>Hi,</div><div> </div><div>I've created a simple test program (attached) that computes the average like you do ("avg128") and like we do ("mean") based upon sample values generated with three different probability distributions:</div><ul>
+<li>
+<div>Uniform, between a minimum (100) and maximum (800)</div>
+</li>
+<li>
+<div>Normal, with a given mean (450) and standard deviation (65)</div>
+</li>
+<li>
+<div>Discrete, based on a vector of probability weights for each duration (1-1500) that replicates the execution behaviour of our target machine.</div>
+</li>
+</ul>
+<div> </div><div>I am convinced now based on empirical results that the two averages are very similar:</div><div> </div><div>min/avg128/mean/max: 100/459/449/800</div><div>min/avg128/mean/max: 136/448/449/764</div><div>min/avg128/mean/max: 89/168/175/562</div><div> </div><div>The reason I see this difference in the mean:</div><div> </div><div>[Hexagon]</div><div>'MasterTimer_off ' (min/avg/max) [usec]: 117.1/233.8/307.5</div><div>'SendAcycFrames_off ' (min/avg/max) [usec]: 123.6/239.5/313.0</div><div> </div><div>[Acontis]</div><div>'JOB_MasterTimer Offset ' (min/avg/max) [usec]: 98.0/111.9/288.4</div><div>'JOB_SendAcycFrames Offset ' (min/avg/max) [usec]: 104.0/119.3/293.7</div><div> </div><div>Is that for some reason the shutdown is called twice, and the values above come from the second occurrence.</div><div>If I look into the first occurrence of the shutdown, the values (including the mean) seem ok:</div><div> </div><div>[Hexagon]</div><div>'MasterTimer_off ' (min/avg/max) [usec]: 213.1/233.8/307.5</div><div>'SendAcycFrames_off ' (min/avg/max) [usec]: 219.3/239.6/313.0</div><div> </div><div>[Acontis]</div><div>'JOB_MasterTimer Offset ' (min/avg/max) [usec]: 194.2/215.8/288.4</div><div>'JOB_SendAcycFrames Offset ' (min/avg/max) [usec]: 200.2/221.5/293.7</div><div> </div><div>I think I can update our application to just use the Performance API in EC-Master and get rid of the code that was computing the missing part (offsets) in EC-Master v3.1.2.07.</div><div> </div><div>Best regards,</div><div>Francesco Casadei</div><hr>
+<div dir="ltr">
+<b>From:</b> CASADEI Francesco &lt;francesco.casadei-ext@hexagon.com&gt;<br>
+<b>Sent:</b> Tuesday, 11 June 2024 07:40<br>
+<b>To:</b> EtherCAT Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Subject:</b> Question about average time in the Performance API <div> </div>
+</div><div dir="ltr">
+<div>Hi,</div>
+<div> </div>
+<div>Earlier versions of Acontis EC-Master (e.g. v3.1.2.07) didn't measure the jobs offset, so I've created my own measuring scheme.</div>
+<div> </div>
+<div>Now that I've updated our app to use the Performance API in v3.1.4.11, including the offset measurements, I noticed that the average measurements are different to mine:</div>
+<div> </div>
+<div>'SendAllCycFrames_off ' (min/avg/max) [usec]: 16.0/21.0/32.1</div>
+<div>'MasterTimer_off ' (min/avg/max) [usec]: 116.8/231.8/290.7</div>
+<div>'SendAcycFrames_off ' (min/avg/max) [usec]: 122.9/237.5/296.8</div>
+<div> </div>
+<div>Yours:</div>
+<div> </div>
+<div>'JOB_SendAllCycFrames Offset ' (min/avg/max) [usec]: 0.9/1.2/3.9</div>
+<div>'JOB_MasterTimer Offset ' (min/avg/max) [usec]: 97.4/111.7/270.9</div>
+<div>'JOB_SendAcycFrames Offset ' (min/avg/max) [usec]: 103.9/118.9/276.9</div>
+<div> </div>
+<div>The min and max differ by a constant ~20 usec perhaps due to where the measurements are taken within the cycle, but the average is way lower in your case.</div>
+<div> </div>
+<div>If I add all the sample in the histogram and divide by the number of such samples, the resulting average is closer to my value than yours.</div>
+<div> </div>
+<div>In fact, I just keep a running sum (std::uint64_t which never overflows) and the count of total samples. Then, at the end I divide the computed sum by the total number of samples, which gives the "exact" average.</div>
+<div> </div>
+<div>I've noticed in your (VxWorks) code that you compute the average differently in CPerfMeas::AddTime():</div>
+<div> </div>
+<div>pPerfMeasVal-&gt;qwAvgTicks = RoundedDivisionMiddle(pPerfMeasVal-&gt;qwAvgTicks * (AVG_SCALE - 1) + qwDiff, (EC_T_UINT64)AVG_SCALE);</div>
+<div> </div>
+<div>Where AVG_SCALE is defined as 128 and RoundedDivisionMiddle() is:</div>
+<div> </div>
+<div>template&lt;typename T&gt;</div>
+<div>static T RoundedDivisionMiddle(T dividend, T divisor)</div>
+<div>{</div>
+<div>return (dividend + (divisor / 2)) / divisor;</div>
+<div>}</div>
+<div> </div>
+<div>Where does the value 128 come from and what is the rationale behind this formula?</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Francesco Casadei</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=46419
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=24.06.2024 15:22:55 +00:00
+UpdatedAt=24.06.2024 15:22:55 +00:00
+
+### ARTICLE02_BODY
+see <a href="http://at-zammad/#ticket/zoom/8307" title="http://at-zammad/#ticket/zoom/8307" rel="nofollow noreferrer noopener">http://at-zammad/#ticket/zoom/8307</a>

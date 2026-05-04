@@ -1,0 +1,300 @@
+### HEADER
+Id=1189
+Link=http://at-zammad/#ticket/zoom/1189
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Soft Service, Generic (ID=476, Number=476)
+Number=701189
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=ecsupport@soft-service.co.jp (ID=33, FirstName=Ecsupport, LastName=)
+CreatedBy=ecsupport@soft-service.co.jp (ID=33, FirstName=Ecsupport, LastName=)
+Type=
+TimeUnit=
+CreatedAt=06.08.2021 10:36:14 +00:00
+UpdatedAt=20.08.2021 06:14:00 +00:00
+CloseAt=20.08.2021 06:14:00 +00:00
+ArticlesCount=4
+
+### TITLE
+about Mailbox Mode
+
+### ARTICLE00_HEADER
+Id=6500
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.08.2021 10:36:14 +00:00
+UpdatedAt=06.08.2021 10:36:18 +00:00
+
+### ARTICLE00_SUBJECT
+about Mailbox Mode
+
+### ARTICLE00_BODY
+<div>
+<p>Dear Support Team</p>
+<p> </p>
+<p>Please tell me about the behavior of EcMaster.</p>
+<p> </p>
+<p>In EC-Engineer, there is "Mailbox Mode" in the [Advanced Options] setting of the slave.</p>
+<p>There are two options here, "Cyclic" and "State Change".</p>
+<p>If this is changed, how will the movement of EC-Master change?</p>
+<p> </p>
+<p>I got the information that the data update of PDO became normal</p>
+<p>when they changed the setting here to "State Change".</p>
+<p>I am wondering if such a thing is possible.</p>
+<p> </p>
+<p>Will changing the way mailboxes are read will change the load on the master and affect PDO data updates?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=6512
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.08.2021 15:56:39 +00:00
+UpdatedAt=06.08.2021 15:56:43 +00:00
+
+### ARTICLE01_SUBJECT
+about Mailbox Mode
+
+### ARTICLE01_BODY
+Hi Kenji,<div><br></div><div>in state change mode, each slave maps 1 bit in a logical cyclic read command. This bit becomes 1 if the slave output mailbox is full. In this case EC-Master <span>process as soon as possible. In polling mode, EC-Master send a read command according the configured polling cycle (typically 50ms).</span>
+</div><div><span>Depending on the amount of slaves, the bus cycle and the acyclic bandwidth parameters, I can imagine that in some cycles too much polling commands are sent, influencing badly the cyclic communication.</span></div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><br></div>
+<div><blockquote type="cite">On Friday, August 6, 2021, 12:36:14 PM, Ecsupport wrote:<br><br><div>
+<p>Dear Support Team</p>
+<p> </p>
+<p>Please tell me about the behavior of EcMaster.</p>
+<p> </p>
+<p>In EC-Engineer, there is "Mailbox Mode" in the [Advanced Options] setting of the slave.</p>
+<p>There are two options here, "Cyclic" and "State Change".</p>
+<p>If this is changed, how will the movement of EC-Master change?</p>
+<p> </p>
+<p>I got the information that the data update of PDO became normal</p>
+<p>when they changed the setting here to "State Change".</p>
+<p>I am wondering if such a thing is possible.</p>
+<p> </p>
+<p>Will changing the way mailboxes are read will change the load on the master and affect PDO data updates?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=6685
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.08.2021 02:35:14 +00:00
+UpdatedAt=13.08.2021 02:35:14 +00:00
+
+### ARTICLE02_SUBJECT
+RE: about Mailbox Mode [Ticket#701189]
+
+### ARTICLE02_BODY
+<div>
+<p>Dear Cyril</p>
+<p> </p>
+<p>Thank you for your reply.</p>
+<p> </p>
+<p>Please tell me process if there is a data update.</p>
+<p> </p>
+<p>&gt; In this case EC-Master process as soon as possible.</p>
+<p>Does this process mean that EcMaster sends a read acyclic command to the slave?</p>
+<p> </p>
+<p>How much data will be read at this time?</p>
+<p>Is it determined by the slave specifications (ESI) and network settings (ENI)?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Saturday, August 7, 2021 12:57 AM<br>
+<b>To:</b> ecsupport &lt;ecsupport@soft-service.co.jp&gt;<br>
+<b>Subject:</b> RE: about Mailbox Mode [Ticket#701189]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Kenji,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>in state change mode, each slave maps 1 bit in a logical cyclic read command. This bit becomes 1 if the slave output mailbox is full. In this case EC-Master process as soon as possible. In polling mode, EC-Master send a read command according the configured polling cycle (typically 50ms).</p>
+</div>
+<div>
+<p>Depending on the amount of slaves, the bus cycle and the acyclic bandwidth parameters, I can imagine that in some cycles too much polling commands are sent, influencing badly the cyclic communication.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Cyril</p>
+<div> <p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Friday, August 6, 2021, 12:36:14 PM, Ecsupport wrote:</p>
+<p></p>
+<div>
+<p>Dear Support Team</p>
+<p> </p>
+<p>Please tell me about the behavior of EcMaster.</p>
+<p> </p>
+<p>In EC-Engineer, there is "Mailbox Mode" in the [Advanced Options] setting of the slave.</p>
+<p>There are two options here, "Cyclic" and "State Change".</p>
+<p>If this is changed, how will the movement of EC-Master change?</p>
+<p> </p>
+<p>I got the information that the data update of PDO became normal</p>
+<p>when they changed the setting here to "State Change".</p>
+<p>I am wondering if such a thing is possible.</p>
+<p> </p>
+<p>Will changing the way mailboxes are read will change the load on the master and affect PDO data updates?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=6695
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.08.2021 07:36:38 +00:00
+UpdatedAt=13.08.2021 07:36:39 +00:00
+
+### ARTICLE03_SUBJECT
+about Mailbox Mode
+
+### ARTICLE03_BODY
+<div>Hi Kenji,</div><div><br></div><div><i>&gt; <span>Does this process mean that EcMaster sends a read acyclic command to the slave?</span></i></div><div data-signature="true" data-signature-id="2">
+<div><span>Yes.</span></div>
+<div><span><br></span></div>
+<div><i>&gt; <span>How much data will be read at this time?</span></i></div>
+<div>
+<span>The size of the mailbox according to the ENI.</span><br>
+</div>
+<div><span><br></span></div>
+<div><span></span></div>
+<div>
+<span>Best regards,</span>
+</div>
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Holger Oelhaf </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">Am Freitag, 13. August 2021, 04:35:14, schrieb Ecsupport:<br><br><div>
+<p>Dear Cyril</p>
+<p> </p>
+<p>Thank you for your reply.</p>
+<p> </p>
+<p>Please tell me process if there is a data update.</p>
+<p> </p>
+<p>&gt; In this case EC-Master process as soon as possible.</p>
+<p>Does this process mean that EcMaster sends a read acyclic command to the slave?</p>
+<p> </p>
+<p>How much data will be read at this time?</p>
+<p>Is it determined by the slave specifications (ESI) and network settings (ENI)?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Saturday, August 7, 2021 12:57 AM<br>
+<b>To:</b> ecsupport &lt;ecsupport@soft-service.co.jp&gt;<br>
+<b>Subject:</b> RE: about Mailbox Mode [Ticket#701189]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi Kenji,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>in state change mode, each slave maps 1 bit in a logical cyclic read command. This bit becomes 1 if the slave output mailbox is full. In this case EC-Master process as soon as possible. In polling mode, EC-Master send a read command according the configured polling cycle (typically 50ms).</p>
+</div>
+<div>
+<p>Depending on the amount of slaves, the bus cycle and the acyclic bandwidth parameters, I can imagine that in some cycles too much polling commands are sent, influencing badly the cyclic communication.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Cyril</p>
+<div> <p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Friday, August 6, 2021, 12:36:14 PM, Ecsupport wrote:</p>
+<p></p>
+<div>
+<p>Dear Support Team</p>
+<p> </p>
+<p>Please tell me about the behavior of EcMaster.</p>
+<p> </p>
+<p>In EC-Engineer, there is "Mailbox Mode" in the [Advanced Options] setting of the slave.</p>
+<p>There are two options here, "Cyclic" and "State Change".</p>
+<p>If this is changed, how will the movement of EC-Master change?</p>
+<p> </p>
+<p>I got the information that the data update of PDO became normal</p>
+<p>when they changed the setting here to "State Change".</p>
+<p>I am wondering if such a thing is possible.</p>
+<p> </p>
+<p>Will changing the way mailboxes are read will change the load on the master and affect PDO data updates?</p>
+<p> </p>
+<p>Best regards,</p>
+<p>Kenji Nakamura</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>

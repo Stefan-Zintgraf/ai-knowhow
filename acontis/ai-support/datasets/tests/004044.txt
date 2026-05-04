@@ -1,0 +1,226 @@
+### HEADER
+Id=4044
+Link=http://at-zammad/#ticket/zoom/4044
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=JSLT (ID=402, Number=0, Country=JP)
+Commission=FANUC, EtherCAT model CNC (ID=487, Number=487)
+Number=704044
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=05.10.2022 03:30:11 +00:00
+UpdatedAt=10.10.2022 06:10:53 +00:00
+CloseAt=10.10.2022 06:10:53 +00:00
+ArticlesCount=7
+
+### TITLE
+Question about EC-Master (FANUC) [M110/M111/M112]
+
+### ARTICLE00_HEADER
+Id=21313
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=05.10.2022 03:30:11 +00:00
+UpdatedAt=05.10.2022 03:30:12 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master (FANUC) [M110/M111/M112]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master (FANUC) [M110/M111/M112]
+
+Q1. About the answer to M109,
+     The latest version of expat is 2.4.9, why are you planning to update to 2.4.7?
+     If possible, please update the D3 cell in the attached excel.
+     In addition, No.1 of the attached Excel was created with reference to M107-109. Please correct any mistakes.
+
+Q2. About the answer to M109,
+     Please tell me the rough release schedule of EC-Master version V3.2.0.01.
+     Please also update the D3 cell in the attached excel.
+
+Q3. About the answer to M105,
+     "WPF Diagram Designer" seems to have several types (1 to 4).
+     I also searched for "a CRC class" but could not find any information.
+     I would like to know more about these, like the expat question for M106-M109.
+     Could you fill in the attached Excel No.2 and 3.?
+     (For details, see the expat example and Excel comments)
+
+Best regards,
+Takuya Fujikawa
+
+### ARTICLE01_HEADER
+Id=21322
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=05.10.2022 08:13:41 +00:00
+UpdatedAt=05.10.2022 08:13:41 +00:00
+
+### ARTICLE01_BODY
+Hi Timo,<div>
+<span>hast du dir expat </span><span>2.4.9 schon angeschaut?</span><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=21323
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=05.10.2022 08:44:35 +00:00
+UpdatedAt=05.10.2022 08:44:35 +00:00
+
+### ARTICLE02_BODY
+Nein, ist gerade mal 15 Tage alt. R_2_4_9 schließt ein weiteres CVE (
+
+<span style="color:rgb(36, 41, 47);">#629 #640  CVE-2022-40674 -- Heap use-after-free vulnerability in </span>
+
+<span style="color:rgb(36, 41, 47);">function doContent. Expected impact is denial of service </span><span style="color:rgb(36, 41, 47);">or potentially arbitrary code execution).</span><div>
+<span style="color:rgb(36, 41, 47);">Änderungen sind minimal. Issue ist angelegt (</span><a href="http://at-dev-git/ec-embedded/ec-embedded/-/issues/4529" title="http://at-dev-git/ec-embedded/ec-embedded/-/issues/4529" rel="nofollow noreferrer noopener" target="_blank">http://at-dev-git/ec-embedded/ec-embedded/-/issues/4529</a>). Ich werde auf V2.4.9 aktualisieren.</div>
+
+### ARTICLE03_HEADER
+Id=21325
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.10.2022 09:13:56 +00:00
+UpdatedAt=05.10.2022 09:13:59 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master (FANUC) [M110/M111/M112]
+
+### ARTICLE03_BODY
+Hi Takuya,<div><br></div><div>Q1. We already update to V2.4.7 last summer, but we didn't integrate it in our current EC-Master version V3.1 to limit the collateral risk. We will officially integrate it in the next EC-Master V3.2. We will integrate V2.4.9 for sure.</div><div>Q2. Release is scheduled to 2023 <span>Q1</span>
+</div><div>Q3. I forward this question to Kai.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Wednesday, October 5, 2022 at 5:30:11 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master (FANUC) [M110/M111/M112]</div>
+<div><br></div>
+<div>Q1. About the answer to M109,</div>
+<div>     The latest version of expat is 2.4.9, why are you planning to update to 2.4.7?</div>
+<div>     If possible, please update the D3 cell in the attached excel.</div>
+<div>     In addition, No.1 of the attached Excel was created with reference to M107-109. Please correct any mistakes.</div>
+<div><br></div>
+<div>Q2. About the answer to M109,</div>
+<div>     Please tell me the rough release schedule of EC-Master version V3.2.0.01.</div>
+<div>     Please also update the D3 cell in the attached excel.</div>
+<div><br></div>
+<div>Q3. About the answer to M105,</div>
+<div>     "WPF Diagram Designer" seems to have several types (1 to 4).</div>
+<div>     I also searched for "a CRC class" but could not find any information.</div>
+<div>     I would like to know more about these, like the expat question for M106-M109.</div>
+<div>     Could you fill in the attached Excel No.2 and 3.?</div>
+<div>     (For details, see the expat example and Excel comments)</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE04_HEADER
+Id=21326
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=05.10.2022 09:14:05 +00:00
+UpdatedAt=05.10.2022 09:14:05 +00:00
+
+### ARTICLE04_BODY
+Hi Kai,<div><br></div><div>Q3 ist für dich</div>
+
+### ARTICLE05_HEADER
+Id=21357
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=06.10.2022 06:03:37 +00:00
+UpdatedAt=06.10.2022 06:03:37 +00:00
+
+### ARTICLE05_BODY
+Kannst du hier aus dem Stehgreif mehr sagen? Das Excel würde ich dann bei uns sogar ablegen, dann ist das auch endlich mal sauber dokumentiert
+
+### ARTICLE06_HEADER
+Id=21369
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.10.2022 11:11:22 +00:00
+UpdatedAt=06.10.2022 11:11:26 +00:00
+
+### ARTICLE06_SUBJECT
+Question about EC-Master (FANUC) [M110/M111/M112]
+
+### ARTICLE06_BODY
+Hi,<div><br></div><div>in the attached Excel document you can find the answers regarding</div><div>- WPF Diagram Designer</div><div>- CRC</div><div><br></div><div>Best Regards,</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/4044/21369/88736?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, October 5, 2022 at 11:13:56 AM, Cyril Eyssautier wrote:<br><br>Hi Takuya,<div><br></div>
+<div>Q1. We already update to V2.4.7 last summer, but we didn't integrate it in our current EC-Master version V3.1 to limit the collateral risk. We will officially integrate it in the next EC-Master V3.2. We will integrate V2.4.9 for sure.</div>
+<div>Q2. Release is scheduled to 2023 <span>Q1</span>
+</div>
+<div>Q3. I forward this question to Kai.</div>
+<div><br></div>
+<div>Best Regards,</div>
+<div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Wednesday, October 5, 2022 at 5:30:11 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master (FANUC) [M110/M111/M112]</div>
+<div><br></div>
+<div>Q1. About the answer to M109,</div>
+<div>     The latest version of expat is 2.4.9, why are you planning to update to 2.4.7?</div>
+<div>     If possible, please update the D3 cell in the attached excel.</div>
+<div>     In addition, No.1 of the attached Excel was created with reference to M107-109. Please correct any mistakes.</div>
+<div><br></div>
+<div>Q2. About the answer to M109,</div>
+<div>     Please tell me the rough release schedule of EC-Master version V3.2.0.01.</div>
+<div>     Please also update the D3 cell in the attached excel.</div>
+<div><br></div>
+<div>Q3. About the answer to M105,</div>
+<div>     "WPF Diagram Designer" seems to have several types (1 to 4).</div>
+<div>     I also searched for "a CRC class" but could not find any information.</div>
+<div>     I would like to know more about these, like the expat question for M106-M109.</div>
+<div>     Could you fill in the attached Excel No.2 and 3.?</div>
+<div>     (For details, see the expat example and Excel comments)</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

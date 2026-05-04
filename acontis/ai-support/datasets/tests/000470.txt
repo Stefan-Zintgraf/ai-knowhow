@@ -1,0 +1,148 @@
+### HEADER
+Id=470
+Link=http://at-zammad/#ticket/zoom/470
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Panasonic Smartfactory, Laser Welder (ID=286, Number=286)
+Number=700470
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=22.04.2021 07:38:53 +00:00
+UpdatedAt=12.12.2023 13:52:33 +00:00
+CloseAt=22.04.2021 13:53:12 +00:00
+ArticlesCount=2
+
+### TITLE
+Question about EC-Master(Panasonic Smart Factory Solutions) [CN.40434]
+
+### ARTICLE00_HEADER
+Id=2518
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=22.04.2021 07:38:53 +00:00
+UpdatedAt=22.04.2021 07:38:56 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(Panasonic Smart Factory Solutions) [CN.40434]
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(Panasonic Smart Factory Solutions) [CN.40434]
+
+When customer execute the "modprobe atmsys" command, the following error is output.
+   modprobe: can't change directory to '4.19.0': No such file or directory
+
+location of atemsys:
+   /lib/modules/4.19.142-rt63/kernel/drivers/char/acontis/atemsys.ko
+
+If they create a folder of 4.19.0, copy the files under 4.19.142-rt63 and execute it, the following error will be output.
+   atemsys: version magic '4.19.142-rt63 SMP mod_unload ARMv7 p2v8 ' should be '4.19.0 SMP mod_unload ARMv7 p2v8 '
+   modprobe: can't load module atemsys (kernel/drivers/char/acontis/atemsys.ko): invalid module format
+
+When they try "modprobe -f atmsys", they get the following error:
+   root@rzn1d400-db:~# modprobe -f atemsys
+   modprobe: invalid option -- 'f'
+   BusyBox v1.24.1 (2021-04-13 02:17:23 UTC) multi-call binary.
+
+   Usage: modprobe [-alrqvsD] MODULE [SYMBOL=VALUE]...
+
+When they try "insmod", they get the following error:
+   atemsys: version magic '4.19.142-rt63 SMP mod_unload ARMv7 p2v8 ' should be '4.19.0 SMP mod_unload ARMv7 p2v8 '
+   insmod: can't insert '/lib/modules/4.19.0/kernel/drivers/char/acontis/atemsys.ko': invalid module format
+
+Please tell me how to resolve.
+
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=2537
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.04.2021 13:53:12 +00:00
+UpdatedAt=22.04.2021 13:53:15 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Master(Panasonic Smart Factory Solutions) [CN.40434]
+
+### ARTICLE01_BODY
+Hi,<div>This </div><div>
+<b>atemsys: version magic '4.19.142-rt63 SMP mod_unload ARMv7 p2v8 ' should be '4.19.0 SMP mod_unload ARMv7 p2v8 '</b><br>
+</div><div>means the configuration you used to build the atemsys modul doesn't match the configuration used to build the Linux-Kernel.</div><div><br></div><div>Please check if you use the correct Kernel Headers or Kernel Souces with the right config. <span>When your using Kernel Sources also check if "</span><span>make modules_prepare" was executed before building atemsys.</span>
+</div><div><span><br></span></div><div><span><br></span></div><div><span>Best regards</span></div><div><span><br></span></div><div><span>Daniel Schmid</span></div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Daniel Schmid </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>
+<span>Eingetragene Rechtsform: GmbH</span><br>
+</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, April 22, 2021, 9:38:53 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(Panasonic Smart Factory Solutions) [CN.40434]</div>
+<div><br></div>
+<div>When customer execute the "modprobe atmsys" command, the following error is output.</div>
+<div>   modprobe: can't change directory to '4.19.0': No such file or directory</div>
+<div><br></div>
+<div>location of atemsys:</div>
+<div>   /lib/modules/4.19.142-rt63/kernel/drivers/char/acontis/atemsys.ko</div>
+<div><br></div>
+<div>If they create a folder of 4.19.0, copy the files under 4.19.142-rt63 and execute it, the following error will be output.</div>
+<div>   atemsys: version magic '4.19.142-rt63 SMP mod_unload ARMv7 p2v8 ' should be '4.19.0 SMP mod_unload ARMv7 p2v8 '</div>
+<div>   modprobe: can't load module atemsys (kernel/drivers/char/acontis/atemsys.ko): invalid module format</div>
+<div><br></div>
+<div>When they try "modprobe -f atmsys", they get the following error:</div>
+<div>   root@rzn1d400-db:~# modprobe -f atemsys</div>
+<div>   modprobe: invalid option -- 'f'</div>
+<div>   BusyBox v1.24.1 (2021-04-13 02:17:23 UTC) multi-call binary.</div>
+<div><br></div>
+<div>   Usage: modprobe [-alrqvsD] MODULE [SYMBOL=VALUE]...</div>
+<div><br></div>
+<div>When they try "insmod", they get the following error:</div>
+<div>   atemsys: version magic '4.19.142-rt63 SMP mod_unload ARMv7 p2v8 ' should be '4.19.0 SMP mod_unload ARMv7 p2v8 '</div>
+<div>   insmod: can't insert '/lib/modules/4.19.0/kernel/drivers/char/acontis/atemsys.ko': invalid module format</div>
+<div><br></div>
+<div>Please tell me how to resolve.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,141 @@
+### HEADER
+Id=7646
+Link=http://at-zammad/#ticket/zoom/7646
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vertiv (ID=811, Number=0, Country=US)
+Commission=Vertiv, Unknown (ID=885, Number=885)
+Number=707646
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=marc.radzikowski@vertiv.com (ID=2487, FirstName=Marc, LastName=Radzikowski)
+CreatedBy=marc.radzikowski@vertiv.com (ID=2487, FirstName=Marc, LastName=Radzikowski)
+Type=
+TimeUnit=
+CreatedAt=13.03.2024 18:59:32 +00:00
+UpdatedAt=24.05.2024 11:39:08 +00:00
+CloseAt=24.05.2024 11:39:08 +00:00
+ArticlesCount=2
+
+### TITLE
+Re: EtherCAT Master Without PRU ICSS
+
+### ARTICLE00_HEADER
+Id=42190
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.03.2024 18:59:32 +00:00
+UpdatedAt=13.03.2024 18:59:32 +00:00
+
+### ARTICLE00_SUBJECT
+Re: EtherCAT Master Without PRU ICSS
+
+### ARTICLE00_BODY
+<div>
+<p>Hi,</p>
+<p> </p>
+<p>Exploring an application using the Texas Instruments processor listed below.</p>
+<p> </p>
+<ol start="1" type="1">
+<li>AM62P52AOMHIAMHR</li>
+<ol start="1" type="a">
+<li><b>No PRU ICSS</b></li>
+</ol>
+</ol>
+<p> </p>
+<p>Would like clarity regarding the use of the processor as an EtherCAT Master.</p>
+<p> </p>
+<p>The application is not time critical (no latency worst case provided).</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Marc</p>
+<p> </p>
+<p><b><span style="color:darkorange;">Marc Radzikowski</span></b></p>
+<p><span style="color:#4d4d4d;">Lead Engineer</span></p>
+<p><span style="color:#4d4d4d;">Battery Monitoring</span></p>
+<p><span style="color:#4d4d4d;"> </span></p>
+<p><span style="color:#4d4d4d;">550 W Cypress Creek Road Suite 200</span></p>
+<p><span style="color:#4d4d4d;">Fort Lauderdale, FL 33309 U.S.A.</span>
+<span style="color:darkorange;">O </span><span style="color:#4d4d4d;">+ 1.954.377.7123 | </span><span style="color:darkorange;">F </span><span style="color:#4d4d4d;">+1.954.377.7123</span></p>
+<p><a href="http://www.VertivCo.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#4d4d4d;">www.VertivCo.com</span></a><span style="color:#4d4d4d;"> | Connect with Vertiv on </span><a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__vertivco.com_en-2Dus_about_about-2Dvertiv_connect-2Dwith-2Dus_&amp;d=DwMFAw&amp;c=03vu6jtmBLnSLFHPW7mKsg&amp;r=Z9PvCGo9mD14NIEoD-TmkXmNmb__hI6cocbaSTfMIeg&amp;m=csr6yzU_vWJ4G0i3hIGdNblwaJBluuwR8k-JGd3V0rA&amp;s=MxxPK1nd0Bbeam1uioX7wncOt4-mndIkWFFvacegEq0&amp;e=" rel="nofollow noreferrer noopener" title="https://urldefense.proofpoint.com/v2/url?u=https-3A__vertivco.com_en-2Dus_about_about-2Dvertiv_connect-2Dwith-2Dus_&amp;d=DwMFAw&amp;c=03vu6jtmBLnSLFHPW7mKsg&amp;r=Z9PvCGo9mD14NIEoD-TmkXmNmb__hI6cocbaSTfMIeg&amp;m=csr6yzU_vWJ4G0i3hIGdNblwaJBluuwR8k-JGd3V0rA&amp;s=MxxPK1nd0Bbeam1uioX7wncOt4-mndIkWFFvacegEq0&amp;e=" target="_blank"><span style="color:#4d4d4d;">social media</span></a><span style="color:#4d4d4d;">.</span></p>
+<p> </p>
+</div>CONFIDENTIALITY NOTICE: This e-mail and any files transmitted with it are intended solely for the use of the individual or entity to whom they are addressed and may contain confidential and privileged information protected by law. If you received this e-mail in error, any review, use, dissemination, distribution, or copying of the e-mail is strictly prohibited. Please notify the sender immediately by return e-mail and delete all copies from your system.
+
+### ARTICLE01_HEADER
+Id=42264
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.03.2024 07:12:54 +00:00
+UpdatedAt=15.03.2024 07:12:58 +00:00
+
+### ARTICLE01_SUBJECT
+EtherCAT Master Without PRU ICSS
+
+### ARTICLE01_BODY
+Hi Marc,<div>With our next release we will support the CPSW port on the <span>Ti Am62,</span>
+</div><div><span>but only with Linux.  </span></div><div>
+<div><a href="https://www.toradex.com/computer-on-modules/verdin-arm-family/ti-am62" title="https://www.toradex.com/computer-on-modules/verdin-arm-family/ti-am62" rel="nofollow noreferrer noopener" target="_blank">https://www.toradex.com/computer-on-modules/verdin-arm-family/ti-am62</a></div>
+<div><br></div>
+<div>We also have our generic Linux driver Sockraw which works on every Ethernet port with Linux driver.</div>
+<div><br></div>
+<div>Best Regards</div>
+<div>Daniel Schmid</div>
+<div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, 13 March 2024 at 19:59:32, Marc.Radzikowski@vertiv.com wrote:<br><br><div>
+<p>Hi,</p>
+<p> </p>
+<p>Exploring an application using the Texas Instruments processor listed below.</p>
+<p> </p>
+<ol start="1" type="1">
+<li>AM62P52AOMHIAMHR</li>
+<ol start="1" type="a">
+<li><b>No PRU ICSS</b></li>
+</ol>
+</ol>
+<p> </p>
+<p>Would like clarity regarding the use of the processor as an EtherCAT Master.</p>
+<p> </p>
+<p>The application is not time critical (no latency worst case provided).</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Marc</p>
+<p> </p>
+<p><b><span style="color:darkorange;">Marc Radzikowski</span></b></p>
+<p><span style="color:#4d4d4d;">Lead Engineer</span></p>
+<p><span style="color:#4d4d4d;">Battery Monitoring</span></p>
+<p><span style="color:#4d4d4d;"> </span></p>
+<p><span style="color:#4d4d4d;">550 W Cypress Creek Road Suite 200</span></p>
+<p><span style="color:#4d4d4d;">Fort Lauderdale, FL 33309 U.S.A.</span>
+<span style="color:darkorange;">O </span><span style="color:#4d4d4d;">+ 1.954.377.7123 | </span><span style="color:darkorange;">F </span><span style="color:#4d4d4d;">+1.954.377.7123</span></p>
+<p><a href="http://www.VertivCo.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#4d4d4d;">www.VertivCo.com</span></a><span style="color:#4d4d4d;"> | Connect with Vertiv on </span><a href="https://urldefense.proofpoint.com/v2/url?u=https-3A__vertivco.com_en-2Dus_about_about-2Dvertiv_connect-2Dwith-2Dus_&amp;d=DwMFAw&amp;c=03vu6jtmBLnSLFHPW7mKsg&amp;r=Z9PvCGo9mD14NIEoD-TmkXmNmb__hI6cocbaSTfMIeg&amp;m=csr6yzU_vWJ4G0i3hIGdNblwaJBluuwR8k-JGd3V0rA&amp;s=MxxPK1nd0Bbeam1uioX7wncOt4-mndIkWFFvacegEq0&amp;e=" rel="nofollow noreferrer noopener" title="https://urldefense.proofpoint.com/v2/url?u=https-3A__vertivco.com_en-2Dus_about_about-2Dvertiv_connect-2Dwith-2Dus_&amp;d=DwMFAw&amp;c=03vu6jtmBLnSLFHPW7mKsg&amp;r=Z9PvCGo9mD14NIEoD-TmkXmNmb__hI6cocbaSTfMIeg&amp;m=csr6yzU_vWJ4G0i3hIGdNblwaJBluuwR8k-JGd3V0rA&amp;s=MxxPK1nd0Bbeam1uioX7wncOt4-mndIkWFFvacegEq0&amp;e=" target="_blank"><span style="color:#4d4d4d;">social media</span></a><span style="color:#4d4d4d;">.</span></p>
+<p> </p>
+</div>CONFIDENTIALITY NOTICE: This e-mail and any files transmitted with it are intended solely for the use of the individual or entity to whom they are addressed and may contain confidential and privileged information protected by law. If you received this e-mail in error, any review, use, dissemination, distribution, or copying of the e-mail is strictly prohibited. Please notify the sender immediately by return e-mail and delete all copies from your system.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

@@ -1,0 +1,120 @@
+### HEADER
+Id=9186
+Link=http://at-zammad/#ticket/zoom/9186
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=709186
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=29.10.2024 13:04:45 +00:00
+UpdatedAt=08.11.2024 07:35:32 +00:00
+CloseAt=08.11.2024 07:35:32 +00:00
+ArticlesCount=2
+
+### TITLE
+An error is occurred at ecatInitMaster() (QNo.101)
+
+### ARTICLE00_HEADER
+Id=52102
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.10.2024 13:04:45 +00:00
+UpdatedAt=29.10.2024 13:04:49 +00:00
+
+### ARTICLE00_SUBJECT
+An error is occurred at ecatInitMaster() (QNo.101)
+
+### ARTICLE00_BODY
+<div>Hi Support Team,</div><div> </div><div>I received the question from Mitsubishi (commission No. 40627).</div><div> </div><div>===</div><div>■Problem</div><div>We have received the V3.2.2.03 release of EC-Master, but it does not start with an error during initialization.</div><div> </div><div>■Questions about cause and specification</div><div>After debugging, we found that the direct cause was due to OsMalloc() being executed (*) before OsInit().</div><div>We understood the specification that OsLayer assumes that OsInit() is executed first, but is my understanding wrong?</div><div> </div><div>
+<div>* This occurs when pParms-&gt;pOsParms is set valid in the argument of EC_T_DWORD CEcMasterInterface::InitMaster() in \AtEthercat.cpp which is called within ecatInitMaster().</div>
+</div><div> </div><div>■Supplementation</div><div>This time, OsInit() and OSMalloc() are implemented by us based on OS-Layer-DevKit.</div><div>The Developer manual states “Initializes the Os Layer itself, i.e. time functions or memory allocation. Therefore, OsInit() performs memory allocation (initialization necessary to execute OsMalloc()).</div><div>Therefore, if OsMalloc() is executed prior to OsInit(), an error will be returned and the caller, eatInitMaster(), will terminate with an error.</div><div>===</div><div> </div><div>Please check the question and answer it…</div><div> </div><div>Best regards,</div><div>Yuichi</div><div> </div><div>～プロフェッショナル集団を目指すＳＳＶグループ～</div><div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=52104
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.10.2024 13:22:17 +00:00
+UpdatedAt=29.10.2024 13:22:18 +00:00
+
+### ARTICLE01_SUBJECT
+An error is occurred at ecatInitMaster() (QNo.101)
+
+### ARTICLE01_BODY
+Hi Yuichi,<div><br></div><div>it should be possible to call OsInit() from the application just before emInitMaster().</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, October 29, 2024 at 2:04:45 PM, Yuichi Ide wrote:<br><br><div>Hi Support Team,</div>
+<div> </div>
+<div>I received the question from Mitsubishi (commission No. 40627).</div>
+<div> </div>
+<div>===</div>
+<div>■Problem</div>
+<div>We have received the V3.2.2.03 release of EC-Master, but it does not start with an error during initialization.</div>
+<div> </div>
+<div>■Questions about cause and specification</div>
+<div>After debugging, we found that the direct cause was due to OsMalloc() being executed (*) before OsInit().</div>
+<div>We understood the specification that OsLayer assumes that OsInit() is executed first, but is my understanding wrong?</div>
+<div> </div>
+<div>
+<div>* This occurs when pParms-&gt;pOsParms is set valid in the argument of EC_T_DWORD CEcMasterInterface::InitMaster() in \AtEthercat.cpp which is called within ecatInitMaster().</div>
+</div>
+<div> </div>
+<div>■Supplementation</div>
+<div>This time, OsInit() and OSMalloc() are implemented by us based on OS-Layer-DevKit.</div>
+<div>The Developer manual states “Initializes the Os Layer itself, i.e. time functions or memory allocation. Therefore, OsInit() performs memory allocation (initialization necessary to execute OsMalloc()).</div>
+<div>Therefore, if OsMalloc() is executed prior to OsInit(), an error will be returned and the caller, eatInitMaster(), will terminate with an error.</div>
+<div>===</div>
+<div> </div>
+<div>Please check the question and answer it…</div>
+<div> </div>
+<div>Best regards,</div>
+<div>Yuichi</div>
+<div> </div>
+<div>～プロフェッショナル集団を目指すＳＳＶグループ～</div>
+<div>
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">
+<div dir="auto">ーーーーーーーーーーーーーーーーーーーーーーーーー<br> 株式会社ソフトサービス | Soft Service Co., Ltd.<br> 営業本部 関東営業部 | Kanto Sales Dept.<br> 井出 裕一 | Yuichi Ide<br> 住所：〒101-0062 東京都千代田区神田駿河台4-4-1 ＰＭＯ御茶ノ水7階<br> 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan<br> TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058<br> E-mail：yuichi.ide@soft-service.co.jp<br> ーーーーーーーーーーーーーーーーーーーーーーーーー</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

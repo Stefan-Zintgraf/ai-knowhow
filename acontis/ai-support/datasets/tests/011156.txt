@@ -1,0 +1,145 @@
+### HEADER
+Id=11156
+Link=http://at-zammad/#ticket/zoom/11156
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Relativity Space (ID=385, Number=40410, Country=US)
+Commission=Relativity Space, Internal Controllers (ID=457, Number=457)
+Number=7011156
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=mryabko@relativityspace.com (ID=2866, FirstName=Misha, LastName=Ryabko)
+CreatedBy=mryabko@relativityspace.com (ID=2866, FirstName=Misha, LastName=Ryabko)
+Type=
+TimeUnit=
+CreatedAt=04.08.2025 15:52:54 +00:00
+UpdatedAt=01.09.2025 07:13:49 +00:00
+CloseAt=01.09.2025 07:13:49 +00:00
+ArticlesCount=6
+
+### TITLE
+Error 0x98110127 in EC Engineer
+
+### ARTICLE00_HEADER
+Id=64043
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.08.2025 15:52:54 +00:00
+UpdatedAt=04.08.2025 15:52:54 +00:00
+
+### ARTICLE00_SUBJECT
+Error 0x98110127 in EC Engineer
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>If I boot the bus without an ENI in scan mode, I get this error:</p>
+<p><img style="max-width:100%;width:4.5666in;max-height:1.925in;" src="/api/v1/ticket_attachment/11156/64043/265417?view=inline"></p>
+<p>I am, however, able to successfully boot into RUN mode with the exported ENI so long as I save with LRW disabled. Do we expect this to be an issue? Or should we scan, export with LRW disabled, scan again, reexport?</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Misha</p>
+</div><br>
+<p>This email may include confidential content. If you are not the intended recipient, please notify the sender immediately, delete the e-mail and do not use or transmit the contents to any third parties. Relativity Space, Inc. reserves and asserts all rights to confidentiality and intellectual property included in this email and its attachments.<br>
+</p>
+
+### ARTICLE01_HEADER
+Id=64062
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.08.2025 07:05:22 +00:00
+UpdatedAt=05.08.2025 07:05:33 +00:00
+
+### ARTICLE01_SUBJECT
+Error 0x98110127 in EC Engineer
+
+### ARTICLE01_BODY
+Hi Misha,<div><br></div><div>The following procedure should work:</div><div>1- Start EcMasterDemo without ENI</div><div>2- Connect EC-Engineer for Remote Configuration</div><div>3- Scan the bus</div><div>4- Disable LRW</div><div>5- Switch to Diag Mode (The current configuration ENI with disabled LRW is transfered to EC-Master)</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2"><div><span style="background-color: initial; color: rgb(88, 88, 86);">Cyril</span></div></div>
+<div><br></div>
+<div><blockquote type="cite">On Monday, August 4, 2025 at 5:52:54 PM, Misha Ryabko wrote:<br><br><div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>If I boot the bus without an ENI in scan mode, I get this error:</p>
+<p><img style="max-width:100%;max-width:100%;width:4.5666in;max-height:1.925in;" src="/api/v1/ticket_attachment/11156/64062/265489?view=inline"></p>
+<p>I am, however, able to successfully boot into RUN mode with the exported ENI so long as I save with LRW disabled. Do we expect this to be an issue? Or should we scan, export with LRW disabled, scan again, reexport?</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Misha</p>
+</div>
+<br>
+<p>This email may include confidential content. If you are not the intended recipient, please notify the sender immediately, delete the e-mail and do not use or transmit the contents to any third parties. Relativity Space, Inc. reserves and asserts all rights to confidentiality and intellectual property included in this email and its attachments.<br>
+</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=64063
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=05.08.2025 07:07:29 +00:00
+UpdatedAt=05.08.2025 07:07:29 +00:00
+
+### ARTICLE02_BODY
+Könnte EC-Engineer nicht checken ob EC-Master mit Kabelredundanz läuft und wenn ja, ein Dialog anzeigen, ob LRW automatisch ausgeschaltet werden soll.<div>Das wäre nicht schlecht</div>
+
+### ARTICLE03_HEADER
+Id=64075
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=05.08.2025 09:35:09 +00:00
+UpdatedAt=05.08.2025 09:35:09 +00:00
+
+### ARTICLE03_BODY
+@Kai: Du hast hier doch schon was eingebaut bzgl. Auto-Disable-Lrw bei RED oder? Evtl. kann man das erweitern?
+
+### ARTICLE04_HEADER
+Id=64081
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=05.08.2025 11:24:11 +00:00
+UpdatedAt=05.08.2025 11:24:11 +00:00
+
+### ARTICLE04_BODY
+Hi Cyril,<div><br></div><div>wir unterstützen mittlerweile CableRed. Muss man nur im EMI Manager aktivieren. Dann sieht der Engineer so aus:</div><div><br></div><div><img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/11156/64081/265534?view=inline"></div><div><br></div><div>Der Kunde verbindet sich ja nicht auf einen laufenden Master. Er scannt ja. Sprich der scan geht nicht weil das Kabel da steckt. Wir können da nicht erkennen, dass der Master mit Cable Red läuft, weil ja gar keiner läuft.</div>
+
+### ARTICLE05_HEADER
+Id=64083
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=05.08.2025 13:12:04 +00:00
+UpdatedAt=05.08.2025 13:12:06 +00:00
+
+### ARTICLE05_SUBJECT
+Error 0x98110127 in EC Engineer
+
+### ARTICLE05_BODY
+Hi Misha,<div><br></div><div>I discussed this ticket with my colleague and you should set cable redundancy in your EMI to pass this issue:</div><div><a href="https://public.acontis.com/manuals/EC-Engineer/4.0/html/Common/additional-tools.html#emi-manager" title="https://public.acontis.com/manuals/EC-Engineer/4.0/html/Common/additional-tools.html#emi-manager" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Engineer/4.0/html/Common/additional-tools.html#emi-manager</a></div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2"><div><span style="background-color: initial; color: rgb(88, 88, 86);">Cyril</span></div></div>
+<div><br></div>
+<div><blockquote type="cite">On Monday, August 4, 2025 at 5:52:54 PM, Misha Ryabko wrote:<br><br><div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>If I boot the bus without an ENI in scan mode, I get this error:</p>
+<p><img style="max-width:100%;max-width:100%;width:4.5666in;max-height:1.925in;" src="/api/v1/ticket_attachment/11156/64083/265537?view=inline"></p>
+<p>I am, however, able to successfully boot into RUN mode with the exported ENI so long as I save with LRW disabled. Do we expect this to be an issue? Or should we scan, export with LRW disabled, scan again, reexport?</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Misha</p>
+</div>
+<br>
+<p>This email may include confidential content. If you are not the intended recipient, please notify the sender immediately, delete the e-mail and do not use or transmit the contents to any third parties. Relativity Space, Inc. reserves and asserts all rights to confidentiality and intellectual property included in this email and its attachments.<br>
+</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

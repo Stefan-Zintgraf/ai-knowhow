@@ -1,0 +1,209 @@
+### HEADER
+Id=4290
+Link=http://at-zammad/#ticket/zoom/4290
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies Inc. (ID=400, Number=0, Country=US)
+Commission=Relativity Space, Internal Controllers (ID=457, Number=457)
+Number=704290
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=09.11.2022 04:57:26 +00:00
+UpdatedAt=28.11.2022 07:01:27 +00:00
+CloseAt=28.11.2022 07:01:27 +00:00
+ArticlesCount=3
+
+### TITLE
+Fwd: Acontis on Linux kernel 5.8+
+
+### ARTICLE00_HEADER
+Id=22556
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.11.2022 04:57:26 +00:00
+UpdatedAt=09.11.2022 04:57:26 +00:00
+
+### ARTICLE00_SUBJECT
+Fwd: Acontis on Linux kernel 5.8+
+
+### ARTICLE00_BODY
+Hi,<div> </div><div>Please see the question from the customer below.<br><div>
+<br>/Jon </div>
+<div>
+<br><blockquote type="cite">
+<div>Begin forwarded message:</div>
+<br><div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>From: </b></span><span>Jeremy Mika &lt;jmika@relativityspace.com&gt;<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Subject: </b></span><span><b>Acontis on Linux kernel 5.8+</b><br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>Date: </b></span><span>November 8, 2022 at 4:23:39 PM EST<br></span>
+</div>
+<div>
+<span style=" color:rgba(0, 0, 0, 1.0);"><b>To: </b></span><span>"j.waters@acontis.com" &lt;j.waters@acontis.com&gt;<br></span>
+</div>
+<br><div>
+<div>Hi Jon,</div>
+<div> </div>
+<div>Do you know if the atemsys module has been successfully compiled on a 5.8 or higher Linux kernel?</div>
+<div> </div>
+<div>I haven't tried too hard, but encountered this error:</div>
+<div> </div>
+<div>
+<blockquote> make -C /lib/modules/5.10.135+/build M=/home/mika/acontis/Sources/LinkOsLayer/Linux/atemsys modules<div>make[1]: Entering directory '/usr/lib/modules/5.10.135+/build'</div>
+<div><span style=" color: rgb(237, 92, 87);"><b>make[1]: *** No rule to make target 'modules'. Stop.</b></span></div>
+<div>make[1]: Leaving directory '/usr/lib/modules/5.10.135+/build'</div>
+<div>
+<span>make: *** [Make<a href="file:28:" rel="nofollow noreferrer noopener">file:28:</a> modules] Error 2</span><br>
+</div>
+</blockquote>
+<div> </div>
+<div>I have encountered a similar error trying to compile a kernel module from Beckhoff, and they state:<br><blockquote>
+<h3 dir="auto">Linux Kernel 5.8 and BBAPI</h3>
+<p dir="auto">Since Linux Kernel 5.8 it is not possible to dynamically load a Kernel module which allocates executable memory. Therefore the BBAPI doesn't work as a loadable Kernel module anymore. If you want to use it with Kernel Version&gt;=5.8 you need to compile your own kernel and statically compile the BBAPI into your kernel.</p>
+</blockquote>
+<span><div> </div>But this seems a bit different from that.</span><br>
+</div>
+<div> </div>
+<div>Just curious if you know something, or if I just need to get a better handle on if and where my kernel headers are installed.</div>
+<div> </div>
+<div>Thanks!</div>
+</div>
+</div>
+</blockquote>
+</div>
+<br>
+</div>
+
+### ARTICLE01_HEADER
+Id=22563
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.11.2022 08:35:37 +00:00
+UpdatedAt=09.11.2022 08:35:40 +00:00
+
+### ARTICLE01_SUBJECT
+Fwd: Acontis on Linux kernel 5.8+
+
+### ARTICLE01_BODY
+<div>Hi <span>Jeremy,</span>
+</div><div>
+<span>On my main Test PC I currently use Ubuntu with </span><span>linux-headers-5.18.0-051800-generic.</span>
+</div><div><span><br></span></div><div><span>There is something wrong with kernel headers.</span></div><div><blockquote><div><div><blockquote>
+<div>make[1]: Entering directory '/usr/lib/modules/5.10.135+/build'</div>
+<div><span style="color:rgb(237, 92, 87);"><b>make[1]: *** No rule to make target 'modules'. Stop.</b></span></div>
+</blockquote></div></div></blockquote></div><div><span>This mean in this folder is no "Makefile", or in the "Makefile" is not defined how to build thinks named "modules".</span></div><div><span><br></span></div><div>On my computer it looks like:</div><div><span><br></span></div><div>
+<span>rte@ec11:/media/rte/atemsys$ make</span><br>
+</div><div>
+<div>make -C /lib/modules/5.18.0-051800-generic/build M=/media/rte/atemsys modules</div>
+<div>make[1]: Entering directory '/usr/src/linux-headers-5.18.0-051800-generic'</div>
+<div>make[1]: Leaving directory '/usr/src/linux-headers-5.18.0-051800-generic'</div>
+<div>rte@ec11:/media/rte/atemsys$</div>
+</div><div><span><br></span></div><div><span>Please check your kernel headers.</span></div><div><span><br></span></div><div><span>Best regards</span></div><div><span>Daniel</span></div><div><span><br></span></div><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/4290/22563/95060?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=22588
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.11.2022 16:59:05 +00:00
+UpdatedAt=09.11.2022 16:59:05 +00:00
+
+### ARTICLE02_SUBJECT
+Re: [External] RE: Fwd: Acontis on Linux kernel 5.8+ [Ticket#704290]
+
+### ARTICLE02_BODY
+<div>Thanks!! Sometimes all you need to hear is that it's possible :p</div><div> </div><div>=Jeremy</div><div> </div><hr>
+<div dir="ltr">
+<b>From:</b> Daniel Schmid via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Sent:</b> Wednesday, November 9, 2022 12:35 AM<br>
+<b>To:</b> Jeremy Mika &lt;jmika@relativityspace.com&gt;<br>
+<b>Cc:</b> j.waters@acontis.com &lt;j.waters@acontis.com&gt;<br>
+<b>Subject:</b> [External] RE: Fwd: Acontis on Linux kernel 5.8+ [Ticket#704290] <div> </div>
+</div><div>
+<div>Hi Jeremy,</div>
+<div>On my main Test PC I currently use Ubuntu with linux-headers-5.18.0-051800-generic.</div>
+<div><span><br>
+</span></div>
+<div>There is something wrong with kernel headers.</div>
+<div>
+<span class="js-signatureMarker"></span><blockquote>
+<div>
+<div>
+<blockquote>
+<div>make[1]: Entering directory '/usr/lib/modules/5.10.135+/build'</div>
+<div><span style="color:rgb(237,92,87);"><b>make[1]: *** No rule to make target 'modules'. Stop.</b></span></div>
+</blockquote>
+</div>
+</div>
+</blockquote>
+</div>
+<div>This mean in this folder is no "Makefile", or in the "Makefile" is not defined how to build thinks named "modules".</div>
+<div><span><br>
+</span></div>
+<div>On my computer it looks like:</div>
+<div><span><br>
+</span></div>
+<div>rte@ec11:/media/rte/atemsys$ make<br>
+</div>
+<div>
+<div>make -C /lib/modules/5.18.0-051800-generic/build M=/media/rte/atemsys modules</div>
+<div>make[1]: Entering directory '/usr/src/linux-headers-5.18.0-051800-generic'</div>
+<div>make[1]: Leaving directory '/usr/src/linux-headers-5.18.0-051800-generic'</div>
+<div>rte@ec11:/media/rte/atemsys$</div>
+</div>
+<div><span><br>
+</span></div>
+<div>Please check your kernel headers.</div>
+<div><span><br>
+</span></div>
+<div>Best regards</div>
+<div>Daniel</div>
+<div><span><br>
+</span></div>
+<br>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://usg02.safelinks.protection.office365.us/?url=https%3A%2F%2Fwww.acontis.com%2F&amp;data=05%7C01%7Cjmika%40relativityspace.com%7C0e3f7fc73763463a954908dac22d645f%7C95efb8391b3748d6a2017187831a1c9c%7C0%7C0%7C638035798479291602%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000%7C%7C%7C&amp;sdata=WfCqkVexbGiLaLbi%2FAtJTRF1IhwQR44bW5jMtxkD8QY%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://usg02.safelinks.protection.office365.us/?url=https%3A%2F%2Fwww.acontis.com%2F&amp;data=05%7C01%7Cjmika%40relativityspace.com%7C0e3f7fc73763463a954908dac22d645f%7C95efb8391b3748d6a2017187831a1c9c%7C0%7C0%7C638035798479291602%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000%7C%7C%7C&amp;sdata=WfCqkVexbGiLaLbi%2FAtJTRF1IhwQR44bW5jMtxkD8QY%3D&amp;reserved=0" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>
+<img style="max-width:100%;width:500px;max-width:100%;" src="/api/v1/ticket_attachment/4290/22588/95170?view=inline"><br>
+</div>
+<div> Subscribe to our newsletter and stay updated: <a href="https://usg02.safelinks.protection.office365.us/?url=https%3A%2F%2Fwww.acontis.com%2Fen%2Fnewsletter.html&amp;data=05%7C01%7Cjmika%40relativityspace.com%7C0e3f7fc73763463a954908dac22d645f%7C95efb8391b3748d6a2017187831a1c9c%7C0%7C0%7C638035798479447833%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000%7C%7C%7C&amp;sdata=1Y4TDsZ97EU1wNkiQnOs4Bme42ZYxKkCi5Okl9otMl8%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://usg02.safelinks.protection.office365.us/?url=https%3A%2F%2Fwww.acontis.com%2Fen%2Fnewsletter.html&amp;data=05%7C01%7Cjmika%40relativityspace.com%7C0e3f7fc73763463a954908dac22d645f%7C95efb8391b3748d6a2017187831a1c9c%7C0%7C0%7C638035798479447833%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000%7C%7C%7C&amp;sdata=1Y4TDsZ97EU1wNkiQnOs4Bme42ZYxKkCi5Okl9otMl8%3D&amp;reserved=0" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>WARNING: This message was sent by an external party. Send suspicious messages to securityalerts@relativityspace.com</div>

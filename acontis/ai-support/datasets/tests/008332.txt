@@ -1,0 +1,165 @@
+### HEADER
+Id=8332
+Link=http://at-zammad/#ticket/zoom/8332
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Rheinmetall (ID=448, Number=50070, Country=DE)
+Commission=Rheinmetall, DaC Board (ID=93, Number=93)
+Number=708332
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=timo.bonk@rheinmetall.com (ID=2677, FirstName=Timo, LastName=Bonk)
+CreatedBy=timo.bonk@rheinmetall.com (ID=2677, FirstName=Timo, LastName=Bonk)
+Type=
+TimeUnit=
+CreatedAt=21.06.2024 12:12:34 +00:00
+UpdatedAt=29.06.2024 06:09:46 +00:00
+CloseAt=29.06.2024 06:09:46 +00:00
+ArticlesCount=2
+
+### TITLE
+Ethercat Fehlermeldung
+
+### ARTICLE00_HEADER
+Id=46323
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.06.2024 12:12:34 +00:00
+UpdatedAt=21.06.2024 12:12:34 +00:00
+
+### ARTICLE00_SUBJECT
+Ethercat Fehlermeldung
+
+### ARTICLE00_BODY
+<div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>Im Anhang finden Sie ein Bild mit einer markierten Zeile.</p>
+<p>Diese Zeile würden wir gerne in unserem Quellcode auslesen um diese Nachricht weiter zu verarbeiten.</p>
+<p>Gibt es dafür eine Möglichkeit bzw. könnten Sie uns ein Beispiel dazu senden ?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p> </p>
+<p>Timo Bonk</p>
+<p> </p>
+</div><div>
+<br>
+<table border="0" cellspacing="0" cellpadding="0" style=" border-collapse:collapse; margin-left:4.8pt; margin-right:4.8pt;">
+<tbody>
+<tr>
+<td valign="top" style=" padding:.75pt .75pt .75pt .75pt;">
+<p><span style=" color:gray;">Rheinmetall Electronics GmbH <br> Brüggeweg 54<br> 28309 Bremen / Germany</span> </p>
+</td>
+<td valign="top" style=" padding:.75pt .75pt .75pt .75pt;">
+<p><span style=" color:gray;">Sitz der Gesellschaft: Bremen<br> Amtsgericht Bremen HRB 9659</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" style=" padding:.75pt .75pt .75pt .75pt;">
+<p><u><span style=" color:gray;">Geschäftsführung:</span></u><span style=" color:gray;">
+<br> Thomas Müller</span></p>
+</td>
+<td valign="top" style=" padding:.75pt .75pt .75pt .75pt;">
+<p><u><span style=" color:gray;">Vorsitzender des Aufsichtsrats:</span></u><span style=" color:gray;">
+<br> Dr. Björn Bernhard</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top" style=" padding:.0pt .0pt .0pt .0pt;">
+<p><span style=" color:gray;">This email may contain confidential information. If you are not the intended addressee, or if the information provided in this email (including any attachments) is evidently not destined for you, kindly inform us promptly and delete the message received in error (including any attachments) by erasing it from all your computers and other storage devices or media and destroying any hard copies thereof. Any unauthorized processing, forwarding, disclosure, distribution, divulgation, storage, printout or other use of this message or its attachment is prohibited. If your system is infected or otherwise bugged by any virus that is carried by this email, we disclaim any liability whatsoever for the ensuing loss or damage unless caused by our intention or gross negligence. </span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p> </p>
+<p><br>
+</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=46338
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.06.2024 05:24:29 +00:00
+UpdatedAt=22.06.2024 05:24:32 +00:00
+
+### ARTICLE01_SUBJECT
+Ethercat Fehlermeldung
+
+### ARTICLE01_BODY
+Guten Tag Herr Bonk,<div><br></div><div>die Meldung wird im Fall von EC_NOTIFY_SLAVE_PRESENCE ausgelöst.</div><div>Das passende Beispiel dafür finden Sie in "<span>CEmNotification::ecatNotify(...)</span><span>" in der EcMasterDemo, die wir mit unserem Stack ausliefern.</span>
+</div><div><br></div><div><span>Mit freundlichen Grüßen</span></div><div>Paul Bußmann</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Freitag, 21. Juni 2024 um 14:12:34, schrieb Timo Bonk:<br><br><div>
+<p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>Im Anhang finden Sie ein Bild mit einer markierten Zeile.</p>
+<p>Diese Zeile würden wir gerne in unserem Quellcode auslesen um diese Nachricht weiter zu verarbeiten.</p>
+<p>Gibt es dafür eine Möglichkeit bzw. könnten Sie uns ein Beispiel dazu senden ?</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p> </p>
+<p>Timo Bonk</p>
+<p> </p>
+</div>
+<div>
+<br>
+<table border="0" cellspacing="0" cellpadding="0" style=" border-collapse:collapse; margin-left:4.8pt; margin-right:4.8pt;">
+<tbody>
+<tr>
+<td valign="top" style=" padding:.75pt .75pt .75pt .75pt;">
+<p><span style=" color:gray;">Rheinmetall Electronics GmbH <br> Brüggeweg 54<br> 28309 Bremen / Germany</span> </p>
+</td>
+<td valign="top" style=" padding:.75pt .75pt .75pt .75pt;">
+<p><span style=" color:gray;">Sitz der Gesellschaft: Bremen<br> Amtsgericht Bremen HRB 9659</span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" style=" padding:.75pt .75pt .75pt .75pt;">
+<p><u><span style=" color:gray;">Geschäftsführung:</span></u><span style=" color:gray;">
+<br> Thomas Müller</span></p>
+</td>
+<td valign="top" style=" padding:.75pt .75pt .75pt .75pt;">
+<p><u><span style=" color:gray;">Vorsitzender des Aufsichtsrats:</span></u><span style=" color:gray;">
+<br> Dr. Björn Bernhard</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top" style=" padding:.0pt .0pt .0pt .0pt;">
+<p><span style=" color:gray;">This email may contain confidential information. If you are not the intended addressee, or if the information provided in this email (including any attachments) is evidently not destined for you, kindly inform us promptly and delete the message received in error (including any attachments) by erasing it from all your computers and other storage devices or media and destroying any hard copies thereof. Any unauthorized processing, forwarding, disclosure, distribution, divulgation, storage, printout or other use of this message or its attachment is prohibited. If your system is infected or otherwise bugged by any virus that is carried by this email, we disclaim any liability whatsoever for the ensuing loss or damage unless caused by our intention or gross negligence. </span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p> </p>
+<p><br>
+</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

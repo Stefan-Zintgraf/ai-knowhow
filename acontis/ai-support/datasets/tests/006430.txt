@@ -1,0 +1,160 @@
+### HEADER
+Id=6430
+Link=http://at-zammad/#ticket/zoom/6430
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=NRSC (ID=728, Number=0, Country=IN)
+Commission=NRSC, Unknown (ID=815, Number=815)
+Number=706430
+Owner=s.zintgraf@acontis.com (ID=10, FirstName=Stefan, LastName=Zintgraf)
+Customer=nama_naresh@nrsc.gov.in (ID=2169, FirstName=Nama, LastName=Naresh)
+CreatedBy=nama_naresh@nrsc.gov.in (ID=2169, FirstName=Nama, LastName=Naresh)
+Type=
+TimeUnit=
+CreatedAt=26.09.2023 12:32:01 +00:00
+UpdatedAt=31.10.2023 12:43:00 +00:00
+CloseAt=26.09.2023 14:47:08 +00:00
+ArticlesCount=2
+
+### TITLE
+Request for resolve issue of Lx-win For EtherCAT setup
+
+### ARTICLE00_HEADER
+Id=34684
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.09.2023 12:32:01 +00:00
+UpdatedAt=26.09.2023 12:32:04 +00:00
+
+### ARTICLE00_SUBJECT
+Request for resolve issue of Lx-win For EtherCAT setup
+
+### ARTICLE00_BODY
+<div>
+<p> </p>
+<p>Dear Sir,</p>
+<p>
+<br></p>
+<p>We are currently using EC Engineer to scan the devices, configure the network and for PDO Mapping for EtherCAT Network setup.</p>
+<p>EC STA is the next step, in which we have added the extracted ENI file from EC Engineer.</p>
+<p>We have followed the Quick start guide of EC Master for the procedure of EC-STA.</p>
+<p><span style="color: #336699;"><span style="color: #336699;"><a href="https://public.acontis.com/manuals/EC-Master/3.1/EC-Master_V3.1-QuickStart.pdf" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/EC-Master_V3.1-QuickStart.pdf</a></span></span></p>
+<p>Now we want to check the values updated in PDO’s when respective changes are occurred in EtherCAT device ( here it is ABB Servo Drive)</p>
+<p><span>Ex: 0x520 has to be displayed in the Status Word PDO, whenever there is <strong>Motor Temperature Trip</strong> error occurs.</span></p>
+<p>But we are unable to identify that change in PDO.</p>
+<p>Also we have to use Real time working mode, so we have checked the Lx Win with Real time Hypervisor.</p>
+<p>Previously you have provided Lx Win with the Linux option but the procedure given in the user guide is not matching with the Linux option.</p>
+<p>We are not able to find the below option-EC Master demo when checking under an existing application.</p>
+<img alt="image.png" src="/api/v1/ticket_attachment/6430/34684/144761?view=inline" style="max-width:100%;width:562px;max-height:321px;">
+<br>
+<p>Please look into the issue and suggest a procedure so that we can add EC Master Demo as an existing application.</p>
+<p>We want to add ENI file into System Manager (Lx Win) and find the PDO’s from EC Engineer as in</p>
+<p>Page 13-17.</p>
+<p><span style="color: #336699;"><span style="color: #336699;"><a href="https://public.acontis.com/manuals/EC-Win/8.0/EC-Win-Quickstart-Guide.pdf" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Win/8.0/EC-Win-Quickstart-Guide.pdf</a></span></span></p>
+<p>Please suggest a procedure for the same with Linux instead of on time RTOS32. last time requested for ontime RTOS32 but as per the received mail support is not available.</p>
+<p> </p>
+<p>
+<br></p>
+<div>
+<p>Thanks &amp; Regards,</p>
+</div>
+<div>
+<p>Nama Naresh,</p>
+</div>
+<div>
+<p>SSD/S&amp;ASG/SDR&amp;ISA,</p>
+</div>
+<div>
+<p>NRSC, Hyderabad.</p>
+</div>
+<p>Phone No:08542225206/5209</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=34691
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.09.2023 14:47:08 +00:00
+UpdatedAt=26.09.2023 14:47:12 +00:00
+
+### ARTICLE01_SUBJECT
+Request for resolve issue of Lx-win For EtherCAT setup
+
+### ARTICLE01_BODY
+Hello,<div><br></div><div>This option does not exist in EC-Win(RT-Linux). The EC-Win(RTOS-32) product cannot be purchased anymore.</div><div>Please take a look at this guide: </div><table border="1" cellspacing="0" cellpadding="0" style="background-color:rgb(240, 240, 240);">
+ <tbody>
+<tr>
+  <td valign="top" style="padding-top:0.75pt;padding-right:0.75pt;padding-bottom:0.75pt;padding-left:0.75pt;">
+  <p><a href="https://public.acontis.com/manuals/LxWin/8.0/html/EC-Win-RT-Linux-Quickstart-Guide/index.html" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/LxWin/8.0/html/EC-Win-RT-Linux-Quickstart-Guide/index.html</a></p>
+  </td>
+ </tr>
+</tbody>
+</table> Best regards,<div>Stefan<br><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Stefan Zintgraf</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, September 26, 2023 at 2:32:01 PM, nama_naresh@nrsc.gov.in wrote:<br><br><div>
+<p> </p>
+<p>Dear Sir,</p>
+<p>
+<br></p>
+<p>We are currently using EC Engineer to scan the devices, configure the network and for PDO Mapping for EtherCAT Network setup.</p>
+<p>EC STA is the next step, in which we have added the extracted ENI file from EC Engineer.</p>
+<p>We have followed the Quick start guide of EC Master for the procedure of EC-STA.</p>
+<p><span style="color: #336699;"><span style="color: #336699;"><a href="https://public.acontis.com/manuals/EC-Master/3.1/EC-Master_V3.1-QuickStart.pdf" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/EC-Master_V3.1-QuickStart.pdf</a></span></span></p>
+<p>Now we want to check the values updated in PDO’s when respective changes are occurred in EtherCAT device ( here it is ABB Servo Drive)</p>
+<p><span>Ex: 0x520 has to be displayed in the Status Word PDO, whenever there is <strong>Motor Temperature Trip</strong> error occurs.</span></p>
+<p>But we are unable to identify that change in PDO.</p>
+<p>Also we have to use Real time working mode, so we have checked the Lx Win with Real time Hypervisor.</p>
+<p>Previously you have provided Lx Win with the Linux option but the procedure given in the user guide is not matching with the Linux option.</p>
+<p>We are not able to find the below option-EC Master demo when checking under an existing application.</p>
+<img alt="image.png" src="/api/v1/ticket_attachment/6430/34691/144845?view=inline" style="max-width:100%;max-width:100%;width:562px;max-height:321px;">
+<br>
+<p>Please look into the issue and suggest a procedure so that we can add EC Master Demo as an existing application.</p>
+<p>We want to add ENI file into System Manager (Lx Win) and find the PDO’s from EC Engineer as in</p>
+<p>Page 13-17.</p>
+<p><span style="color: #336699;"><span style="color: #336699;"><a href="https://public.acontis.com/manuals/EC-Win/8.0/EC-Win-Quickstart-Guide.pdf" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Win/8.0/EC-Win-Quickstart-Guide.pdf</a></span></span></p>
+<p>Please suggest a procedure for the same with Linux instead of on time RTOS32. last time requested for ontime RTOS32 but as per the received mail support is not available.</p>
+<p> </p>
+<p>
+<br></p>
+<div>
+<p>Thanks &amp; Regards,</p>
+</div>
+<div>
+<p>Nama Naresh,</p>
+</div>
+<div>
+<p>SSD/S&amp;ASG/SDR&amp;ISA,</p>
+</div>
+<div>
+<p>NRSC, Hyderabad.</p>
+</div>
+<p>Phone No:08542225206/5209</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

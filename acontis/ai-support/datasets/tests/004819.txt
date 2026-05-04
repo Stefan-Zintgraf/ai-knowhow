@@ -1,0 +1,95 @@
+### HEADER
+Id=4819
+Link=http://at-zammad/#ticket/zoom/4819
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Jumo GmbH & Co.KG (ID=126, Number=54502, Country=DE)
+Commission=Jumo, Registriergeräte, Linux (ID=141, Number=141)
+Number=704819
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=michael.mueller@jumo.net (ID=1441, FirstName=Michael, LastName=Mueller)
+CreatedBy=michael.mueller@jumo.net (ID=1441, FirstName=Michael, LastName=Mueller)
+Type=
+TimeUnit=
+CreatedAt=31.01.2023 06:56:54 +00:00
+UpdatedAt=03.02.2023 07:32:54 +00:00
+CloseAt=03.02.2023 07:32:54 +00:00
+ArticlesCount=2
+
+### TITLE
+ENI-Builder (mit Sourcen)
+
+### ARTICLE00_HEADER
+Id=25465
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.01.2023 06:56:54 +00:00
+UpdatedAt=31.01.2023 06:56:57 +00:00
+
+### ARTICLE00_SUBJECT
+ENI-Builder (mit Sourcen)
+
+### ARTICLE00_BODY
+<span>
+<p>Sehr geehrter Herr Eyssautier,</p></span>
+<br>
+<br>können Sie mir bitte auch noch eine aktuelle Version des ENI-Builder (mit Sourcen) zur Verfügung stellen. <br>
+<br>Noch eine Frage zum EcEngineer: Wie kann ich unter Windows ein Log-File schreiben lassen bzw. wo liegt es dann? Kann ich den Pfad setzen? <br>
+<br>Vielen Dank <br>
+<br><span>Mit freundlichen Grüßen <br>
+<br>JUMO GmbH &amp; Co. KG <br>Globale Entwicklung Software - Desktop Anwendungen <br>
+<br>i.A. Dipl.-Ing.(FH) Michael Müller <br>
+<br>Tel: +49 661 6003-9328 <br>Fax: +49 661 6003-889328 <br>Adresse: Moritz-Juchheim-Str. 1 <br> 36039 Fulda, Germany <br>E-Mail: </span><a href="mailto:Michael.Mueller@jumo.net">mailto:Michael.Mueller@jumo.net</a><span>
+<br>Internet: </span><a href="http://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">http://www.jumo.net</a>
+<p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br>
+<br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dimitrios Charisiadis, Dr. Steffen Hoßfeld <br> Ust.-Id.-Nr.: DE 112411234</p>
+
+### ARTICLE01_HEADER
+Id=25472
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.01.2023 08:41:56 +00:00
+UpdatedAt=31.01.2023 08:41:57 +00:00
+
+### ARTICLE01_SUBJECT
+ENI-Builder (mit Sourcen)
+
+### ARTICLE01_BODY
+<div>Hallo Herr Müller,</div><div><br></div><div>anbei die neuste Version:</div><div>
+<a href="https://downloads.acontis.com/2023/J-L/Jumo_GmbH_&amp;_Co.KG_(40172)(DE)/EC-ENI-Builder_OEM_SDK/3.7.8/EC-Engineer_SDK_EniEngine_Layer5_DotNet4_OEM_Src_V3.7.8.zip" title="https://downloads.acontis.com/2023/J-L/Jumo_GmbH_&amp;_Co.KG_(40172)(DE)/EC-ENI-Builder_OEM_SDK/3.7.8/EC-Engineer_SDK_EniEngine_Layer5_DotNet4_OEM_Src_V3.7.8.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/J-L/Jumo_GmbH_&amp;_Co.KG_(40172)(DE)/EC-ENI-Builder_OEM_SDK/3.7.8/EC-Engineer_SDK_EniEngine_Layer5_DotNet4_OEM_Src_V3.7.8.zip</a><br>
+</div><div><br></div><div>Sollte der Umstieg beim ENI Builder auf 3.7.8 zu groß sein, kann ich ihnen auch gerne die neuste 3.6.x zusenden. Diese wird weiterhin von uns gepflegt. Einfach Bescheid geben was Ihnen lieber ist.</div><div><br></div><div>Das Log File schreibt der EC-Engineer automatisch. Das liegt unter C:\ProgramData\EC-Engineer</div><div><br></div><div>Viele Grüße</div><div>Kai Feifel</div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Tuesday, January 31, 2023 at 7:56:54 AM, Michael Mueller wrote:<br><br><span>
+<p>Sehr geehrter Herr Eyssautier,</p></span>
+<br>
+<br>können Sie mir bitte auch noch eine aktuelle Version des ENI-Builder (mit Sourcen) zur Verfügung stellen. <br>
+<br>Noch eine Frage zum EcEngineer: Wie kann ich unter Windows ein Log-File schreiben lassen bzw. wo liegt es dann? Kann ich den Pfad setzen? <br>
+<br>Vielen Dank <br>
+<br><span>Mit freundlichen Grüßen <br>
+<br>JUMO GmbH &amp; Co. KG <br>Globale Entwicklung Software - Desktop Anwendungen <br>
+<br>i.A. Dipl.-Ing.(FH) Michael Müller <br>
+<br>Tel: +49 661 6003-9328 <br>Fax: +49 661 6003-889328 <br>Adresse: Moritz-Juchheim-Str. 1 <br> 36039 Fulda, Germany <br>E-Mail: </span><a href="mailto:Michael.Mueller@jumo.net">mailto:Michael.Mueller@jumo.net</a><span>
+<br>Internet: </span><a href="http://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">http://www.jumo.net</a>
+<p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br>
+<br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dimitrios Charisiadis, Dr. Steffen Hoßfeld <br> Ust.-Id.-Nr.: DE 112411234</p>
+<br>
+</blockquote></div><div><br></div><br><br>

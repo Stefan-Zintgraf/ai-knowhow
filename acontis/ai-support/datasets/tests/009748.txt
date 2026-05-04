@@ -1,0 +1,144 @@
+### HEADER
+Id=9748
+Link=http://at-zammad/#ticket/zoom/9748
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Aurotek, EtherCAT Motion Controller (ID=29, Number=29)
+Number=709748
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=22.01.2025 14:35:37 +00:00
+UpdatedAt=31.01.2025 07:28:02 +00:00
+CloseAt=31.01.2025 07:28:02 +00:00
+ArticlesCount=2
+
+### TITLE
+About debug problem from Aurotek
+
+### ARTICLE00_HEADER
+Id=55499
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.01.2025 14:35:37 +00:00
+UpdatedAt=22.01.2025 14:35:39 +00:00
+
+### ARTICLE00_SUBJECT
+About debug problem from Aurotek
+
+### ARTICLE00_BODY
+<div style="color: #1f497d;">
+<div style=" color: rgb(31, 73, 125);">Dear,</div>
+<div style=" color: rgb(31, 73, 125);">The cutomer aurotek's engineer ask a problem.</div>
+<div style=" color: rgb(31, 73, 125);">They want to debug the EcMaster using ICE Debug for trace the code. But they don't to break the EcMaster state machine in OP.</div>
+<div style=" color: rgb(31, 73, 125);">I told them that they can't use the break in your debug, it will break the jobtask and the slave will report error. They could consider the LogMsg and ecengineer remote diagnosis.</div>
+<div style=" color: rgb(31, 73, 125);">But they don't believe they want to getting a way to debug their code, and they asked the acontis support. I think they will ask this kind of problem to your side directly later.</div>
+<div style=" color: rgb(31, 73, 125);"><br></div>
+<div style=" color: rgb(31, 73, 125);"><br></div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋</div>
+<div>
+<div>
+<br>北京盟通科技有限公司 <br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>+86- 571- 56125098 （杭州）</div>
+<div>+886-2-25222206 （台北）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" title="http://www.motrotech.com/" target="_blank"></a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div style=" color: rgb(31, 73, 125);"><br></div>
+</div>
+
+### ARTICLE01_HEADER
+Id=55503
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.01.2025 15:18:27 +00:00
+UpdatedAt=22.01.2025 15:18:30 +00:00
+
+### ARTICLE01_SUBJECT
+About debug problem from Aurotek
+
+### ARTICLE01_BODY
+Hi John,<div><br></div><div>depending on what they want to debug, they could consider to use EC-Simulator. Normally a breakpoint means the end of the communication and has an impact on the slaves.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, January 22, 2025 at 3:35:37 PM, John Zhang wrote:<br><br><div style="color: #1f497d;">
+<div style=" color: rgb(31, 73, 125);">Dear,</div>
+<div style=" color: rgb(31, 73, 125);">The cutomer aurotek's engineer ask a problem.</div>
+<div style=" color: rgb(31, 73, 125);">They want to debug the EcMaster using ICE Debug for trace the code. But they don't to break the EcMaster state machine in OP.</div>
+<div style=" color: rgb(31, 73, 125);">I told them that they can't use the break in your debug, it will break the jobtask and the slave will report error. They could consider the LogMsg and ecengineer remote diagnosis.</div>
+<div style=" color: rgb(31, 73, 125);">But they don't believe they want to getting a way to debug their code, and they asked the acontis support. I think they will ask this kind of problem to your side directly later.</div>
+<div style=" color: rgb(31, 73, 125);"><br></div>
+<div style=" color: rgb(31, 73, 125);"><br></div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋</div>
+<div>
+<div>
+<br>北京盟通科技有限公司 <br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>+86- 571- 56125098 （杭州）</div>
+<div>+886-2-25222206 （台北）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" title="http://www.motrotech.com/" target="_blank"></a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div style=" color: rgb(31, 73, 125);"><br></div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

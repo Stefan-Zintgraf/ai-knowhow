@@ -1,0 +1,173 @@
+### HEADER
+Id=6076
+Link=http://at-zammad/#ticket/zoom/6076
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=IMA S.p.A (ID=193, Number=40114, Country=IT)
+Commission=IMA, PACKAGING MACHINES (ID=232, Number=232)
+Number=706076
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=marco.valli@ima.it (ID=319, FirstName=Marco, LastName=Valli)
+CreatedBy=marco.valli@ima.it (ID=319, FirstName=Marco, LastName=Valli)
+Type=
+TimeUnit=
+CreatedAt=01.08.2023 08:33:28 +00:00
+UpdatedAt=22.08.2023 06:13:02 +00:00
+CloseAt=22.08.2023 06:13:02 +00:00
+ArticlesCount=2
+
+### TITLE
+Supported ethernet interfaces for EtherCat communication
+
+### ARTICLE00_HEADER
+Id=32475
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.08.2023 08:33:28 +00:00
+UpdatedAt=01.08.2023 08:33:30 +00:00
+
+### ARTICLE00_SUBJECT
+Supported ethernet interfaces for EtherCat communication
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Dear support,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">I’m trying to run the Acontis SDK in a new pc that has 4 ethernet interface of following types:</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><img style="max-width:100%;width:5.802in;max-height:.8958in;width:557px;max-height:86px;" src="/api/v1/ticket_attachment/6076/32475/135491?view=inline"><span lang="EN-US"></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">In the Ethernet 2 I plug the network cable, the other 3 are supported by your SDK for an EtherCat communication?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Thanks for the support.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best Regards,</span></p>
+<p><b><span lang="EN-US">Marco Valli</span></b><span lang="EN-US"></span></p>
+<div>
+<p><i><span lang="EN-US">Research &amp; Innovation - Automation &amp; Software, Software Engineer</span></i><span lang="EN-US"></span></p>
+</div>
+<div>
+<p><span lang="EN-US"> </span><span lang="EN-US"></span></p>
+</div>
+<div>
+<p><img style="max-width:100%;width:2.0833in;max-height:.25in;width:200px;max-height:24px;" src="/api/v1/ticket_attachment/6076/32475/135490?view=inline" alt="Logo Signature IMASpA"></p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p><b>IMA S.p.A.</b></p>
+</div>
+<div>
+<p>Via 1° Maggio, 14-16</p>
+</div>
+<div>
+<p>I-40064 - Ozzano dell'Emilia (BO) - Italy</p>
+</div>
+<div>
+<p>Phone: +39 051 651 4111</p>
+</div>
+<div>
+<p><a href="http://www.ima.it" rel="nofollow noreferrer noopener" target="_blank">www.ima.it</a></p>
+</div>
+<div>
+<p><a href="http://marco.valli@ima.it" rel="nofollow noreferrer noopener" target="_blank">marco.valli@ima.it</a></p>
+</div>
+<p> </p>
+</div><p><i>Compulsory information on the processing of your personal data pursuant to Art. 13 GDPR can be found <a href="https://ima.it/en/general-data-protection-regulation" rel="nofollow noreferrer noopener" title="https://ima.it/en/general-data-protection-regulation" target="_blank">here</a>. Message for recipients only, if received in error, please read <a href="https://ima.it/en/general-data-protection-regulation" rel="nofollow noreferrer noopener" title="https://ima.it/en/general-data-protection-regulation" target="_blank">here</a>. </i><span lang="IT"></span></p><p><i>L’informativa sul trattamento dei suoi dati personali, dovuta ai sensi dell’art. 13 GDPR, è disponibile a questo <a href="https://ima.it/it/regolamento-generale-sulla-protezione-dei-dati" rel="nofollow noreferrer noopener" title="https://ima.it/it/regolamento-generale-sulla-protezione-dei-dati" target="_blank">link</a>. Messaggio riservato ai destinatari, se lo dovesse ricevere per errore, la preghiamo di seguire le indicazioni riportate in questo <a href="https://ima.it/it/regolamento-generale-sulla-protezione-dei-dati" rel="nofollow noreferrer noopener" title="https://ima.it/it/regolamento-generale-sulla-protezione-dei-dati" target="_blank">link</a>. </i><span lang="IT"></span></p><hr>
+
+### ARTICLE01_HEADER
+Id=32476
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.08.2023 08:40:38 +00:00
+UpdatedAt=01.08.2023 08:40:42 +00:00
+
+### ARTICLE01_SUBJECT
+Supported ethernet interfaces for EtherCat communication
+
+### ARTICLE01_BODY
+Hi Marco,<div><br></div><div>please find below the list of the supported device ID:</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/supported-nics/emllI8254x.html#supported-pci-devices" title="https://public.acontis.com/manuals/EC-Master/3.1/html/supported-nics/emllI8254x.html#supported-pci-devices" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/supported-nics/emllI8254x.html#supported-pci-devices</a></div></div><div><br></div><div>I guess that the Intel EC1000S is compatible to the rest of the Intel Gigabit adapter, but I don't know explicitely.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div><br></div>
+<div><blockquote type="cite">On Tuesday, August 1, 2023 at 10:33:28 AM, Marco Valli wrote:<br><br><div>
+<p><span lang="EN-US">Dear support,</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">I’m trying to run the Acontis SDK in a new pc that has 4 ethernet interface of following types:</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><img style="max-width:100%;max-width:100%;width:5.802in;max-height:.8958in;width:557px;max-height:86px;" src="/api/v1/ticket_attachment/6076/32476/135492?view=inline"><span lang="EN-US"></span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">In the Ethernet 2 I plug the network cable, the other 3 are supported by your SDK for an EtherCat communication?</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Thanks for the support.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Best Regards,</span></p>
+<p><b><span lang="EN-US">Marco Valli</span></b><span lang="EN-US"></span></p>
+<div>
+<p><i><span lang="EN-US">Research &amp; Innovation - Automation &amp; Software, Software Engineer</span></i><span lang="EN-US"></span></p>
+</div>
+<div>
+<p><span lang="EN-US"> </span><span lang="EN-US"></span></p>
+</div>
+<div>
+<p><img style="max-width:100%;max-width:100%;width:2.0833in;max-height:.25in;width:200px;max-height:24px;" src="/api/v1/ticket_attachment/6076/32476/135493?view=inline" alt="Logo Signature IMASpA"></p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p><b>IMA S.p.A.</b></p>
+</div>
+<div>
+<p>Via 1° Maggio, 14-16</p>
+</div>
+<div>
+<p>I-40064 - Ozzano dell'Emilia (BO) - Italy</p>
+</div>
+<div>
+<p>Phone: +39 051 651 4111</p>
+</div>
+<div>
+<p><a href="http://www.ima.it" rel="nofollow noreferrer noopener" target="_blank">www.ima.it</a></p>
+</div>
+<div>
+<p><a href="http://marco.valli@ima.it" rel="nofollow noreferrer noopener" target="_blank">marco.valli@ima.it</a></p>
+</div>
+<p> </p>
+</div>
+<p><i>Compulsory information on the processing of your personal data pursuant to Art. 13 GDPR can be found <a href="https://ima.it/en/general-data-protection-regulation" rel="nofollow noreferrer noopener" title="https://ima.it/en/general-data-protection-regulation" target="_blank">here</a>. Message for recipients only, if received in error, please read <a href="https://ima.it/en/general-data-protection-regulation" rel="nofollow noreferrer noopener" title="https://ima.it/en/general-data-protection-regulation" target="_blank">here</a>. </i><span lang="IT"></span></p>
+<p><i>L’informativa sul trattamento dei suoi dati personali, dovuta ai sensi dell’art. 13 GDPR, è disponibile a questo <a href="https://ima.it/it/regolamento-generale-sulla-protezione-dei-dati" rel="nofollow noreferrer noopener" title="https://ima.it/it/regolamento-generale-sulla-protezione-dei-dati" target="_blank">link</a>. Messaggio riservato ai destinatari, se lo dovesse ricevere per errore, la preghiamo di seguire le indicazioni riportate in questo <a href="https://ima.it/it/regolamento-generale-sulla-protezione-dei-dati" rel="nofollow noreferrer noopener" title="https://ima.it/it/regolamento-generale-sulla-protezione-dei-dati" target="_blank">link</a>. </i><span lang="IT"></span></p>
+<hr>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

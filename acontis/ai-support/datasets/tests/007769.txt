@@ -1,0 +1,199 @@
+### HEADER
+Id=7769
+Link=http://at-zammad/#ticket/zoom/7769
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=707769
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=abruckelmyer@deltamotion.com (ID=745, FirstName=Aaron, LastName=Bruckelmyer)
+CreatedBy=abruckelmyer@deltamotion.com (ID=745, FirstName=Aaron, LastName=Bruckelmyer)
+Type=
+TimeUnit=
+CreatedAt=01.04.2024 16:50:58 +00:00
+UpdatedAt=17.04.2024 08:20:41 +00:00
+CloseAt=17.04.2024 08:20:41 +00:00
+ArticlesCount=4
+
+### TITLE
+Curly brace initialization of struct members like "StructType structName = {0}"
+
+### ARTICLE00_HEADER
+Id=42858
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=01.04.2024 16:50:58 +00:00
+UpdatedAt=01.04.2024 16:50:59 +00:00
+
+### ARTICLE00_SUBJECT
+Curly brace initialization of struct members like "StructType structName = {0}"
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Acontis Support,</p>
+<p> </p>
+<p>In code review I discovered some minor struct initialization code that in our code base would normally be cleaned up a bit. I want to be clear that the code is likely doing what is needed, but may be misleading for a developer.</p>
+<p> </p>
+<p>When a struct is initialized with a single zero in curly braces, like in several below cases, then the zero applies only to the first struct member. The remaining members are value initialized to zero if they are simple data types. When reading this code, it can sometimes be assumed that it is applying zero to all struct members however, it may not be the case if some of the members are not value initialized to zero.</p>
+<p> </p>
+<p>In EcDeviceIntelGbe.cpp:2234 and 2236.</p>
+<p> </p>
+<p>The below line initializes the first member of the struct to zero.</p>
+<p>EC_T_LINK_FRAMEDESC oSendFrame = { 0 };</p>
+<p> </p>
+<p>Ideally the code would just initialize all struct members using value initialization which will be zero for almost all simple data types like my below example.</p>
+<p>EC_T_LINK_FRAMEDESC oSendFrame = { };</p>
+<p> </p>
+<p>I’ve noticed other various other places in the EC-Master code base where this could get cleaned up.</p>
+<p>EcMaster.cpp:14807</p>
+<p>EC_T_LINK_FRAMEDESC oRxEtherCATFrame = {0};</p>
+<p> </p>
+<p>EcMaster.cpp:14816</p>
+<p>EC_T_LINK_IOCTLPARMS oLinkIoCtlParms = {0};</p>
+<p> </p>
+<p>It may be that several engineers at Acontis are aware of this. But I just wanted to pass along this tip in case can be helpful.</p>
+<p> </p>
+<p>No support ticket necessary!</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p><b><span style="color:#0f1964;">Aaron</span></b><b><span style="color:#3b4908;">
+</span></b><b>Bruckelmyer</b><span><br>
+</span><i>Software Engineer</i><span><br> Delta Motion</span></p>
+<p><span><br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0169" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0169" target="_blank"><span style="color:#0563c1;">+1-360-702-0169</span></a></span></p>
+<p><span><a href="mailto:abruckelmyer@deltamotion.com"><span style="color:#0563c1;">abruckelmyer@deltamotion.com</span></a>
+</span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=43038
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=04.04.2024 15:06:40 +00:00
+UpdatedAt=04.04.2024 15:06:40 +00:00
+
+### ARTICLE01_BODY
+Replace with MemSet <div><br></div>
+
+### ARTICLE02_HEADER
+Id=43423
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.04.2024 13:58:29 +00:00
+UpdatedAt=15.04.2024 13:58:31 +00:00
+
+### ARTICLE02_SUBJECT
+Curly brace initialization of struct members like "StructType structName = {0}"
+
+### ARTICLE02_BODY
+Hi Aaron, <div><br></div><div>We have now updated <span>curly brace initialization (<b>{0}</b>) of struct members which will be included in our next release. </span>
+</div><div><span><br></span></div><div>Thank you so much for the tip !! </div><div><br></div><div><br></div><div>Regards, </div><div><br></div><div><br></div><div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div></div>
+
+### ARTICLE03_HEADER
+Id=43424
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.04.2024 14:12:56 +00:00
+UpdatedAt=15.04.2024 14:12:56 +00:00
+
+### ARTICLE03_SUBJECT
+RE: Curly brace initialization of struct members like "StructType structName = {0}" [Ticket#707769]
+
+### ARTICLE03_BODY
+<div>
+<p>Hi Miran,</p>
+<p> </p>
+<p>Thanks for following through on this! Even though this ticket is more of a minor point, it’s encouraging to see that your team is very proactive!</p>
+<p> </p>
+<p><span>Thanks,<br> Aaron</span></p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b><span> Miran Bhattarai via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Monday, April 15, 2024 6:59 AM<br>
+<b>To:</b> Aaron Bruckelmyer &lt;ABruckelmyer@deltamotion.com&gt;<br>
+<b>Subject:</b> Curly brace initialization of struct members like "StructType structName = {0}" [Ticket#707769]</span></p>
+</div>
+</div>
+<p> </p>
+<p>Hi Aaron,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>We have now updated curly brace initialization (<b>{0}</b>) of struct members which will be included in our next release. </p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Thank you so much for the tip !!</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Regards,</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Miran Bhattarai</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+</div>
+</div>

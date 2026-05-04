@@ -1,0 +1,137 @@
+### HEADER
+Id=7466
+Link=http://at-zammad/#ticket/zoom/7466
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=INSTRON GmbH (ID=116, Number=54010, Country=DE)
+Commission=INSTRON, Testing Systems (ID=130, Number=130)
+Number=707466
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=andrew_kirby@instron.com (ID=963, FirstName=Andrew, LastName=Kirby)
+CreatedBy=andrew_kirby@instron.com (ID=963, FirstName=Andrew, LastName=Kirby)
+Type=
+TimeUnit=
+CreatedAt=20.02.2024 15:44:02 +00:00
+UpdatedAt=20.02.2024 16:06:07 +00:00
+CloseAt=20.02.2024 16:06:07 +00:00
+ArticlesCount=2
+
+### TITLE
+Evaluation Request
+
+### ARTICLE00_HEADER
+Id=41094
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.02.2024 15:44:02 +00:00
+UpdatedAt=20.02.2024 15:44:02 +00:00
+
+### ARTICLE00_SUBJECT
+Evaluation Request
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Dear ECSupport</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Andrew Moulden suggest I get in touch with you:</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">I am involved in a project developing an EtherCAT slave. I am exploring options for exercising and testing it. We’re already using Acontis ethercat master on our embedded host, and I am familiar with using EC Engineer to manually talk to the slaves via the master. </span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">What I’d like to do is evaluate using Python or C# to automate some test tasks and pull live PDO data from the slave. </span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Would it be possible to evaluate the Windows version of EC Master with the Python and C# wrappers?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Can you point me to any examples and documentation using Python to talk to slaves?</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Many Thanks</span></p>
+<p> </p>
+<p><b><span lang="EN-US" style="color:#d31145;">Andrew Kirby </span></b><b><span lang="EN-US" style="color:#d31145;">B.Eng (Hons)</span></b><b><span lang="EN-US" style="color:#d31145;">
+</span></b></p>
+<p><b><span lang="EN-US">Principal Engineer, Electronics &amp; Firmware</span></b><b><span lang="EN-US"></span></b></p>
+<p><span lang="EN-US">Product Innovation and Development Team </span></p>
+<p><span lang="EN-US" style="color:#717073;">Instron – a division of ITW Ltd</span></p>
+<p><span lang="EN-US" style="color:#717073;">tel: </span><span lang="EN-US" style="color:gray;">+44 1494 456567</span><b><span lang="EN-US" style="color:#1f497d;">
+</span></b><span lang="EN-US" style="color:#717073;"> |</span><span lang="EN-US" style="color:#1f497d;"> </span><span lang="EN-US"><a href="mailto:andrew_kirby@instron.com"><span style="color:#0563c1;">andrew_kirby@instron.com</span></a><span style="color:gray;"></span></span></p>
+<p><u><span lang="EN-US" style="color:gray;"><p> </p></span></u></p>
+<p><a href="https://urlsand.esvalabs.com/?u=http%3A%2F%2Fwww.instron.com%2F&amp;e=9a888852&amp;h=16b407f8&amp;f=y&amp;p=y" title="www.instron.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;"><img border="0" style="max-width:100%;width:1.8802in;max-height:.3541in;width:181px;max-height:34px;" src="/api/v1/ticket_attachment/7466/41094/170819?view=inline" alt="Description: Description: InstronLogo"></span></a><span lang="EN-US" style="color:#1f497d;"></span></p>
+<p><span lang="EN-US">Coronation Road, High Wycombe, Bucks, HP12 3SY, United Kingdom</span><span lang="EN-US" style="color:gray;">
+</span><span lang="EN-US" style="color:#717073;">| </span><a href="https://urlsand.esvalabs.com/?u=http%3A%2F%2Fwww.instron.com&amp;e=9a888852&amp;h=c114c20e&amp;f=y&amp;p=y" title="www.instron.com" rel="nofollow noreferrer noopener" target="_blank"><span lang="EN-US" style="color:#d31145;">www.instron.com</span></a><span lang="EN-US" style="color:#d31145;"></span></p>
+<p><span lang="EN-US" style="color:#d31145;"><p> </p></span></p>
+<p><span lang="EN-US" style="color:#a6a6a6;">Any views expressed in this message are the sender's own, and do not represent the views of Instron except where the sender specifically states them to be so. We disclaim all responsibility and accept no liability (including negligence) for the consequences of any person, other than the intended recipients of this e-mail, acting or refraining from acting on the information enclosed. Reproduction / dissemination of this e-mail, either whole or in-part, is strictly prohibited, except as implicit in replying or forwarding (by e-mail) to parties within your organisation who need to know the content and your reply. If you have received this e-mail in error, please accept our apologies and delete it.</span></p>
+<p><span lang="EN-US" style="color:#a6a6a6;"><p> </p></span></p>
+<p><span style="color:#a6a6a6;">Instron – Division of ITW Limited, Coronation Road, High Wycombe, Buckinghamshire, HP12 3SY. ITW Limited Registered Office: Admiral House, St Leonard's Road, Windsor, Berkshire, SL4 3BL. Company No. 00559693. Registered in England</span><span lang="EN-US" style="color:#a6a6a6;"></span></p>
+<p> </p>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=41098
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.02.2024 16:06:07 +00:00
+UpdatedAt=20.02.2024 16:06:10 +00:00
+
+### ARTICLE01_SUBJECT
+Evaluation Request
+
+### ARTICLE01_BODY
+<div><blockquote type="cite">
+<div>Subject: Evaluation Request<br>Date: 02/20/2024 16:44<br>From: Andrew Kirby &lt;andrew_kirby@instron.com&gt;<br>To: "ecsupport@acontis.com" &lt;ecsupport@acontis.com&gt;<br>CC: "Moulden, Andrew" &lt;Andrew_Moulden@instron.com&gt;<br><br>
+</div>
+<div>
+<p><span lang="EN-US">Dear ECSupport</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Andrew Moulden suggest I get in touch with you:</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">I am involved in a project developing an EtherCAT slave. I am exploring options for exercising and testing it. We’re already using Acontis ethercat master on our embedded host, and I am familiar with using EC Engineer to manually talk to the slaves via the master. </span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">What I’d like to do is evaluate using Python or C# to automate some test tasks and pull live PDO data from the slave. </span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Would it be possible to evaluate the Windows version of EC Master with the Python and C# wrappers?</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Can you point me to any examples and documentation using Python to talk to slaves?</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Many Thanks</span></p>
+<p> </p>
+<p><b><span lang="EN-US" style="color:#d31145;">Andrew Kirby </span></b><b><span lang="EN-US" style="color:#d31145;">B.Eng (Hons)</span></b><b><span lang="EN-US" style="color:#d31145;">
+</span></b></p>
+<p><b><span lang="EN-US">Principal Engineer, Electronics &amp; Firmware</span></b><b><span lang="EN-US"></span></b></p>
+<p><span lang="EN-US">Product Innovation and Development Team </span></p>
+<p><span lang="EN-US" style="color:#717073;">Instron – a division of ITW Ltd</span></p>
+<p><span lang="EN-US" style="color:#717073;">tel: </span><span lang="EN-US" style="color:gray;">+44 1494 456567</span><b><span lang="EN-US" style="color:#1f497d;">
+</span></b><span lang="EN-US" style="color:#717073;"> |</span><span lang="EN-US" style="color:#1f497d;"> </span><span lang="EN-US"><a href="mailto:andrew_kirby@instron.com"><span style="color:#0563c1;">andrew_kirby@instron.com</span></a><span style="color:gray;"></span></span></p>
+<p><u><span lang="EN-US" style="color:gray;"></span></u></p>
+<p><u> </u></p>
+<p></p>
+<p><a href="https://urlsand.esvalabs.com/?u=http%3A%2F%2Fwww.instron.com%2F&amp;e=9a888852&amp;h=16b407f8&amp;f=y&amp;p=y" title="www.instron.com" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;"><img border="0" style="max-width:100%;max-width:100%;width:1.8802in;max-height:.3541in;width:181px;max-height:34px;" src="/api/v1/ticket_attachment/7466/41098/170835?view=inline" alt="Description: Description: InstronLogo"></span></a><span lang="EN-US" style="color:#1f497d;"></span></p>
+<p><span lang="EN-US">Coronation Road, High Wycombe, Bucks, HP12 3SY, United Kingdom</span><span lang="EN-US" style="color:gray;">
+</span><span lang="EN-US" style="color:#717073;">| </span><a href="https://urlsand.esvalabs.com/?u=http%3A%2F%2Fwww.instron.com&amp;e=9a888852&amp;h=c114c20e&amp;f=y&amp;p=y" title="www.instron.com" rel="nofollow noreferrer noopener" target="_blank"><span lang="EN-US" style="color:#d31145;">www.instron.com</span></a><span lang="EN-US" style="color:#d31145;"></span></p>
+<p><span lang="EN-US" style="color:#d31145;"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US" style="color:#a6a6a6;">Any views expressed in this message are the sender's own, and do not represent the views of Instron except where the sender specifically states them to be so. We disclaim all responsibility and accept no liability (including negligence) for the consequences of any person, other than the intended recipients of this e-mail, acting or refraining from acting on the information enclosed. Reproduction / dissemination of this e-mail, either whole or in-part, is strictly prohibited, except as implicit in replying or forwarding (by e-mail) to parties within your organisation who need to know the content and your reply. If you have received this e-mail in error, please accept our apologies and delete it.</span></p>
+<p><span lang="EN-US" style="color:#a6a6a6;"></span></p>
+<p> </p>
+<p></p>
+<p><span style="color:#a6a6a6;">Instron – Division of ITW Limited, Coronation Road, High Wycombe, Buckinghamshire, HP12 3SY. ITW Limited Registered Office: Admiral House, St Leonard's Road, Windsor, Berkshire, SL4 3BL. Company No. 00559693. Registered in England</span><span lang="EN-US" style="color:#a6a6a6;"></span></p>
+<p> </p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+</blockquote></div><div><br></div><br><br>

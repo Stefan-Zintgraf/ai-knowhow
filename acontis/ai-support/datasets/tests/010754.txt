@@ -1,0 +1,186 @@
+### HEADER
+Id=10754
+Link=http://at-zammad/#ticket/zoom/10754
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=none
+Number=7010754
+Owner=t.waggershauser@acontis.com (ID=2365, FirstName=Thomas, LastName=Waggershauser)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=10.06.2025 00:36:54 +00:00
+UpdatedAt=02.07.2025 12:22:27 +00:00
+CloseAt=02.07.2025 12:22:27 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Master(Panasonic Industry)
+
+### ARTICLE00_HEADER
+Id=61526
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=10.06.2025 00:36:54 +00:00
+UpdatedAt=10.06.2025 00:36:57 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(Panasonic Industry)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(Panasonic Industry)
+
+The customer is planning to newly outsource the development of EC-Master to you under the following conditions:
+  - CPU = RZ/N2H
+  - OS = uC3
+  - Renesas FSP cannot be used in this environment.
+    (FSP: Flexible Software Package)
+  - Panasonic will provide an Ethernet driver for Acontis.
+
+Q1. Is it possible to outsource the development to you even in an environment where FSP cannot be used?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=61547
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=10.06.2025 07:33:33 +00:00
+UpdatedAt=10.06.2025 07:33:33 +00:00
+
+### ARTICLE01_BODY
+Hi Thomas, wie ist hier der Stand(punkt)? Ich bin hier leider nicht im Bilde was bisher gelaufen ist und was laufen soll. Schöne Grüße, Timo.
+
+### ARTICLE02_HEADER
+Id=62150
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.06.2025 11:22:05 +00:00
+UpdatedAt=24.06.2025 11:22:07 +00:00
+
+### ARTICLE02_SUBJECT
+Question about EC-Master(Panasonic Industry)
+
+### ARTICLE02_BODY
+Hello Takuya-san,<div><br></div><div>I guess this is related to the quote and information we provided to Leon on June 4th.</div><div>Panasonic requested the EC-Master for Renesas RZ/N2H with eForce µC3 and <span>ise2studio as toolchain &gt; this combination should workl without the FSP, as the FSP focusses on FreeRTOS and Azure RTOS... but we will use µC3.</span>
+</div><div><span><br></span></div><div><span>If this is another topic, let me know - otherwise I will close this ticket, as we provided the information earlier via Email.</span></div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Thomas Waggershauser</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, June 10, 2025 at 2:36:54 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(Panasonic Industry)</div>
+<div><br></div>
+<div>The customer is planning to newly outsource the development of EC-Master to you under the following conditions:</div>
+<div>  - CPU = RZ/N2H</div>
+<div>  - OS = uC3</div>
+<div>  - Renesas FSP cannot be used in this environment.</div>
+<div>    (FSP: Flexible Software Package)</div>
+<div>  - Panasonic will provide an Ethernet driver for Acontis.</div>
+<div><br></div>
+<div>Q1. Is it possible to outsource the development to you even in an environment where FSP cannot be used?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE03_HEADER
+Id=62152
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.06.2025 11:25:52 +00:00
+UpdatedAt=24.06.2025 11:25:53 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(Panasonic Industry)
+
+### ARTICLE03_BODY
+Dear Takua-san,<div><br></div><div>is this related to the request from Panasonic regarding EC-Master on Renesas RZ/N2H with Eforce µC3 and 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ise2studio?</div><div>&gt; If yes - we already provided the quote to Leon.</div><div><span><br></span></div><div><span>Please let me know about the status, so that i can set this ticket to the correct status. </span></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Thomas Waggershauser</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, June 10, 2025 at 2:36:54 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(Panasonic Industry)</div>
+<div><br></div>
+<div>The customer is planning to newly outsource the development of EC-Master to you under the following conditions:</div>
+<div>  - CPU = RZ/N2H</div>
+<div>  - OS = uC3</div>
+<div>  - Renesas FSP cannot be used in this environment.</div>
+<div>    (FSP: Flexible Software Package)</div>
+<div>  - Panasonic will provide an Ethernet driver for Acontis.</div>
+<div><br></div>
+<div>Q1. Is it possible to outsource the development to you even in an environment where FSP cannot be used?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

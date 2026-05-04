@@ -1,0 +1,187 @@
+### HEADER
+Id=2075
+Link=http://at-zammad/#ticket/zoom/2075
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=FANUC, EtherCAT model CNC (ID=487, Number=487)
+Number=702075
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=14.12.2021 09:04:22 +00:00
+UpdatedAt=12.12.2023 13:52:34 +00:00
+CloseAt=21.12.2021 07:15:13 +00:00
+ArticlesCount=4
+
+### TITLE
+Question about EC-Engineer (FANUC)
+
+### ARTICLE00_HEADER
+Id=10936
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=14.12.2021 09:04:22 +00:00
+UpdatedAt=14.12.2021 09:04:25 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Engineer (FANUC)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Engineer (FANUC)
+
+Q5. About the icon displayed in Project Explorer.
+     I want to change the icon of the Master unit displayed in the tree to the icon specified by FANUC.
+     I replaced "ecat.png" to change the icon.
+     However, in this case, it also affected the icons used on the Modules screen of other slave devices.
+     I want to change only the icon of the Master unit, is it possible?
+     If possible, how should I implement it?
+
+Best regards,
+Takuya Fujikawa
+
+
+
+### ARTICLE01_HEADER
+Id=10944
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.12.2021 10:50:43 +00:00
+UpdatedAt=14.12.2021 10:50:46 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Engineer (FANUC)
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes this is possible, because you have the source code. Just add your own png with your name e.g. fanuc.png to EcViewResources --&gt; Icons and set it as an embedded resource. </div><div>Then seach for ecat.png in the code and replace with fanuc.png just for these parts you would like to change.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, December 14, 2021, 10:04:22 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Engineer (FANUC)</div>
+<div><br></div>
+<div>Q5. About the icon displayed in Project Explorer.</div>
+<div>     I want to change the icon of the Master unit displayed in the tree to the icon specified by FANUC.</div>
+<div>     I replaced "ecat.png" to change the icon.</div>
+<div>     However, in this case, it also affected the icons used on the Modules screen of other slave devices.</div>
+<div>     I want to change only the icon of the Master unit, is it possible?</div>
+<div>     If possible, how should I implement it?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=12472
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=31.01.2022 05:22:55 +00:00
+UpdatedAt=31.01.2022 05:22:55 +00:00
+
+### ARTICLE02_SUBJECT
+Question about EC-Engineer (FANUC)
+
+### ARTICLE02_BODY
+Dear EtherCAT Support
+
+Question about EC-Engineer (FANUC)
+
+I am trying to create an installer for selling EC-Engineer.
+I would like to include the EC-Engineer driver in the installer. Is there a way to create an installer recommended by Acontis?
+
+In the provided SDK, only "emllPcap.dll" exists in the Run folder. In order to use this, I think that Npcap needs to be additionally installed in WinPcap compatibility mode.
+On the other hand, when i installed the evaluation version of EC-Engineer, "emllNdis.dll" is included in the installation folder. In addition, an "NDIS" folder will be created to contain EcatNdisSetup-x86_64Bit.msi. This is written in the manual of EC-Engineer.
+Which dll file, which driver installation is recommended to include in the installation folder?
+Moreover, are there any .msm or packages provided by Acontis to create an installer that includes the driver?
+
+Best regards,
+Takuya Fujikawa
+
+
+
+### ARTICLE03_HEADER
+Id=12491
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.01.2022 12:12:21 +00:00
+UpdatedAt=31.01.2022 12:12:24 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Engineer (FANUC)
+
+### ARTICLE03_BODY
+Hi,<div><br></div><div>in the EC-Engineer we do not integrate this. Because we want Engineer be independet from the driver. Not every customer wants to install a driver. Some will just need to export an ENI file.</div><div>In Master we ask the customer in the end of the setup if they want to install the driver, and call then the MSI.</div><div><br></div><div>We will integrate the ndis dll and MSI in the next version of the View Layer. </div><div><br></div><div>We only have the MSI. No merge module.</div><div><br></div><div>We use Wix Setup.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, January 31, 2022, 6:22:55 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Engineer (FANUC)</div>
+<div><br></div>
+<div>I am trying to create an installer for selling EC-Engineer.</div>
+<div>I would like to include the EC-Engineer driver in the installer. Is there a way to create an installer recommended by Acontis?</div>
+<div><br></div>
+<div>In the provided SDK, only "emllPcap.dll" exists in the Run folder. In order to use this, I think that Npcap needs to be additionally installed in WinPcap compatibility mode.</div>
+<div>On the other hand, when i installed the evaluation version of EC-Engineer, "emllNdis.dll" is included in the installation folder. In addition, an "NDIS" folder will be created to contain EcatNdisSetup-x86_64Bit.msi. This is written in the manual of EC-Engineer.</div>
+<div>Which dll file, which driver installation is recommended to include in the installation folder?</div>
+<div>Moreover, are there any .msm or packages provided by Acontis to create an installer that includes the driver?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

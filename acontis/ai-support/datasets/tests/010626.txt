@@ -1,0 +1,104 @@
+### HEADER
+Id=10626
+Link=http://at-zammad/#ticket/zoom/10626
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Medtronic GmbH (ID=138, Number=45057, Country=DE)
+Commission=Medtronic, Surgical Controller (ID=157, Number=157)
+Number=7010626
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=abhimanyu.bari@medtronic.com (ID=2821, FirstName=Abhimanyu [DEU25], LastName=Bari)
+CreatedBy=abhimanyu.bari@medtronic.com (ID=2821, FirstName=Abhimanyu [DEU25], LastName=Bari)
+Type=
+TimeUnit=
+CreatedAt=22.05.2025 16:34:39 +00:00
+UpdatedAt=30.05.2025 06:01:34 +00:00
+CloseAt=30.05.2025 06:01:35 +00:00
+ArticlesCount=2
+
+### TITLE
+Cyclic and Acycli data size
+
+### ARTICLE00_HEADER
+Id=60903
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.05.2025 16:34:39 +00:00
+UpdatedAt=22.05.2025 16:34:39 +00:00
+
+### ARTICLE00_SUBJECT
+Cyclic and Acycli data size
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>Are following fields from eni files provides size of the Cyclic and Acylic data?</p>
+<p> </p>
+<p>Cyclic:</p>
+<p><img style="max-width:100%;width:5.2416in;max-height:.8416in;width:503px;max-height:81px;" src="/api/v1/ticket_attachment/10626/60903/253517?view=inline"></p>
+<p> </p>
+<p>Acyclic:</p>
+<p> </p>
+<p><img style="max-width:100%;width:2.1in;max-height:1.2583in;width:202px;max-height:121px;" src="/api/v1/ticket_attachment/10626/60903/253518?view=inline"></p>
+<p> </p>
+<p>Best regards,</p>
+<p>Abhimanyu</p>
+<p> </p>
+</div>[CONFIDENTIALITY AND PRIVACY NOTICE] Information transmitted by this email is proprietary to Medtronic and is intended for use only by the individual or entity to which it is addressed, and may contain information that is private, privileged, confidential or exempt from disclosure under applicable law. If you are not the intended recipient or it appears that this mail has been forwarded to you without proper authority, you are notified that any use or dissemination of this information in any manner is strictly prohibited. In such cases, please delete this mail from your records. To view this notice in other languages you can either select the following link or manually copy and paste the link into the address bar of a web browser:<a href="http://emaildisclaimer.medtronic.com" rel="nofollow noreferrer noopener" target="_blank">http://emaildisclaimer.medtronic.com</a>
+
+### ARTICLE01_HEADER
+Id=60918
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.05.2025 06:43:20 +00:00
+UpdatedAt=23.05.2025 06:43:24 +00:00
+
+### ARTICLE01_SUBJECT
+Cyclic and Acycli data size
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes.</div><div><br></div><div>You can get them by using the following APIs:</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=emgetprocess#emiocontrol-ec-ioctl-get-pdmemorysize" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=emgetprocess#emiocontrol-ec-ioctl-get-pdmemorysize" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=emgetprocess#emiocontrol-ec-ioctl-get-pdmemorysize</a></div></div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=cfg_slave_info#emgetcfgslaveinfo" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=cfg_slave_info#emgetcfgslaveinfo" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=cfg_slave_info#emgetcfgslaveinfo</a></div></div><div><br></div><div><span>Best Regards,</span></div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, May 22, 2025 at 6:34:39 PM, Abhimanyu [DEU25] Bari wrote:<br><br><div>
+<p>Hello,</p>
+<p> </p>
+<p>Are following fields from eni files provides size of the Cyclic and Acylic data?</p>
+<p> </p>
+<p>Cyclic:</p>
+<p><img style="max-width:100%;max-width:100%;width:5.2416in;max-height:.8416in;width:503px;max-height:81px;" src="/api/v1/ticket_attachment/10626/60918/253557?view=inline"></p>
+<p> </p>
+<p>Acyclic:</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:2.1in;max-height:1.2583in;width:202px;max-height:121px;" src="/api/v1/ticket_attachment/10626/60918/253558?view=inline"></p>
+<p> </p>
+<p>Best regards,</p>
+<p>Abhimanyu</p>
+<p> </p>
+</div>[CONFIDENTIALITY AND PRIVACY NOTICE] Information transmitted by this email is proprietary to Medtronic and is intended for use only by the individual or entity to which it is addressed, and may contain information that is private, privileged, confidential or exempt from disclosure under applicable law. If you are not the intended recipient or it appears that this mail has been forwarded to you without proper authority, you are notified that any use or dissemination of this information in any manner is strictly prohibited. In such cases, please delete this mail from your records. To view this notice in other languages you can either select the following link or manually copy and paste the link into the address bar of a web browser:<a href="http://emaildisclaimer.medtronic.com" rel="nofollow noreferrer noopener" target="_blank">http://emaildisclaimer.medtronic.com</a><br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

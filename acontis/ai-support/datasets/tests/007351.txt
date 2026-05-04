@@ -1,0 +1,203 @@
+### HEADER
+Id=7351
+Link=http://at-zammad/#ticket/zoom/7351
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Boeing (ID=337, Number=41043, Country=US)
+Commission=Boeing, PC based Automated Sys. (ID=403, Number=403)
+Number=707351
+Owner=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Customer=james.d.badman@boeing.com (ID=655, FirstName=James, LastName=Badman)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=29.01.2024 15:14:46 +00:00
+UpdatedAt=30.01.2024 08:23:40 +00:00
+CloseAt=29.01.2024 15:18:38 +00:00
+ArticlesCount=5
+
+### TITLE
+ENI File API calls
+
+### ARTICLE00_HEADER
+Id=40265
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.01.2024 15:14:46 +00:00
+UpdatedAt=29.01.2024 15:14:46 +00:00
+
+### ARTICLE00_SUBJECT
+ENI File API calls
+
+### ARTICLE00_BODY
+<div>
+<p>Hi James,</p>
+<p> </p>
+<p>I spoke with the developers today about the APIs you can use for the getting information about the slaves from the ENI file. After you call ecatConfigMaster() in V3.1 or ecatConfigNetwork() in V3.2 you have access to all these APIs. You can use ones like ecatGetCfgSlaveInfo(): <a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emgetcfgslaveinfo" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emgetcfgslaveinfo</a>.</p>
+<p> </p>
+<p>After this you can use the SuperSet ENI APIs to include/exclude slaves, then finally you can load the new configuration with ecatConfigLoad() and ecatConfigApply().</p>
+<p> </p>
+<p>Jon Waters</p>
+<p>General Manager</p>
+<p> </p>
+<p>acontis technologies Inc.</p>
+<p>945 Concord Street</p>
+<p>Framingham, MA 01701</p>
+<p>Phone: +1-508-809-7201</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=40266
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.01.2024 15:40:24 +00:00
+UpdatedAt=29.01.2024 15:51:38 +00:00
+
+### ARTICLE01_SUBJECT
+[EXTERNAL] ENI File API calls
+
+### ARTICLE01_BODY
+<div>
+<p>Jon,</p>
+<p> </p>
+<p>From your email below I take it that I would call ecatInitMaster, ecatConfigMaster, and then use calls like ecatGetCfgSlaveInfo to</p>
+<p>obtain the data about all slaves from the full Superset ENI file. Then I should call ecatConfigLoad, ecatConfigExcludeSlave, and</p>
+<p>ecatConfigApply to set the current configuration. I was wondering if that would work this morning, but I did not know if your code</p>
+<p>would free any resources it allocated on the ecatConfigMaster when you called ecatConfigLoad latter. Let me know if I have this</p>
+<p>straight.</p>
+<p> </p>
+<p>James</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b><span> Jon Waters &lt;j.waters@acontis.com&gt; <br>
+<b>Sent:</b> Monday, January 29, 2024 9:15 AM<br>
+<b>To:</b> Badman (US), James D &lt;james.d.badman@boeing.com&gt;<br>
+<b>Cc:</b> 'EtherCAT Support' &lt;ecsupport@acontis.com&gt;<br>
+<b>Subject:</b> [EXTERNAL] ENI File API calls</span></p>
+</div>
+</div>
+<p> </p>
+<table border="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="background:white;padding:.75pt .75pt .75pt .75pt;">
+<table border="0" cellspacing="0" cellpadding="0" align="left" style="margin-left:.75pt;margin-right:.75pt;">
+<tbody>
+<tr>
+<td style="background:#910a19;padding:5.25pt 1.5pt 5.25pt 1.5pt;"></td>
+<td style="background:#fdf2f4;padding:5.25pt 3.75pt 5.25pt 11.25pt;">
+<div>
+<p>
+<span style="color:#212121;">EXT email: be mindful of links/attachments.</span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<pre><span><br> </span></pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Hi James,</p>
+<p> </p>
+<p><span>I spoke with the developers today about the APIs you can use for the getting information about the slaves from the ENI file. After you call ecatConfigMaster() in V3.1 or ecatConfigNetwork() in V3.2 you have access to all these APIs. You can use ones like ecatGetCfgSlaveInfo(): <a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emgetcfgslaveinfo" rel="nofollow noreferrer noopener" target="_blank"> https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emgetcfgslaveinfo</a>.</span></p>
+<p> </p>
+<p>After this you can use the SuperSet ENI APIs to include/exclude slaves, then finally you can load the new configuration with ecatConfigLoad() and ecatConfigApply().</p>
+<p> </p>
+<p>Jon Waters</p>
+<p>General Manager</p>
+<p> </p>
+<p>acontis technologies Inc.</p>
+<p>945 Concord Street</p>
+<p>Framingham, MA 01701</p>
+<p>Phone: +1-508-809-7201</p>
+<p> </p>
+</div>
+
+### ARTICLE02_HEADER
+Id=40269
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=29.01.2024 15:51:56 +00:00
+UpdatedAt=29.01.2024 15:51:56 +00:00
+
+### ARTICLE02_BODY
+Can you please check?<br>
+
+### ARTICLE03_HEADER
+Id=40272
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=29.01.2024 15:58:51 +00:00
+UpdatedAt=29.01.2024 15:58:51 +00:00
+
+### ARTICLE03_BODY
+It is safe to call emConfigLoad after emConfigure. All the allocated resources will be released.
+
+### ARTICLE04_HEADER
+Id=40277
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.01.2024 17:12:32 +00:00
+UpdatedAt=30.01.2024 08:23:40 +00:00
+
+### ARTICLE04_SUBJECT
+[EXTERNAL] ENI File API calls
+
+### ARTICLE04_BODY
+<div>
+<p>Hi James,</p>
+<p> </p>
+<p>Yes, It is safe to call emConfigLoad after emConfigure. All the allocated resources will be released.</p>
+<p> </p>
+<div><p>/Jon</p></div>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b><span> Badman (US), James D &lt;james.d.badman@boeing.com&gt; <br><b>Sent:</b> Monday, January 29, 2024 4:40 PM<br><b>To:</b> Jon Waters &lt;j.waters@acontis.com&gt;<br><b>Cc:</b> 'EtherCAT Support' &lt;ecsupport@acontis.com&gt;<br><b>Subject:</b> RE: [EXTERNAL] ENI File API calls</span></p>
+</div>
+<p> </p>
+<p>Jon,</p>
+<p> </p>
+<p>From your email below I take it that I would call ecatInitMaster, ecatConfigMaster, and then use calls like ecatGetCfgSlaveInfo to</p>
+<p>obtain the data about all slaves from the full Superset ENI file. Then I should call ecatConfigLoad, ecatConfigExcludeSlave, and</p>
+<p>ecatConfigApply to set the current configuration. I was wondering if that would work this morning, but I did not know if your code</p>
+<p>would free any resources it allocated on the ecatConfigMaster when you called ecatConfigLoad latter. Let me know if I have this</p>
+<p>straight.</p>
+<p> </p>
+<p>James</p>
+<p> </p>
+<div><p><b>From:</b><span> Jon Waters &lt;<a href="mailto:j.waters@acontis.com">j.waters@acontis.com</a>&gt; <br><b>Sent:</b> Monday, January 29, 2024 9:15 AM<br><b>To:</b> Badman (US), James D &lt;<a href="mailto:james.d.badman@boeing.com">james.d.badman@boeing.com</a>&gt;<br><b>Cc:</b> 'EtherCAT Support' &lt;<a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>&gt;<br><b>Subject:</b> [EXTERNAL] ENI File API calls</span></p></div>
+<p> </p>
+<table border="0" cellspacing="4" cellpadding="0"><tr><td style="background:white;padding:.75pt .75pt .75pt .75pt;">
+<table border="0" cellspacing="0" cellpadding="0" align="left" style="margin-left:.75pt;margin-right:.75pt;"><tr>
+<td style="background:#910a19;padding:5.25pt 1.5pt 5.25pt 1.5pt;"></td>
+<td style="background:#fdf2f4;padding:5.25pt 3.75pt 5.25pt 11.25pt;"><div>
+<p><span style="color:#212121;">EXT email: be mindful of links/attachments.</span></p>
+</div></td>
+</tr></table>
+<pre><span><br> </span></pre>
+</td></tr></table>
+<p>Hi James,</p>
+<p> </p>
+<p><span>I spoke with the developers today about the APIs you can use for the getting information about the slaves from the ENI file. After you call ecatConfigMaster() in V3.1 or ecatConfigNetwork() in V3.2 you have access to all these APIs. You can use ones like ecatGetCfgSlaveInfo(): <a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emgetcfgslaveinfo" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html#emgetcfgslaveinfo</a>.</span></p>
+<p> </p>
+<p>After this you can use the SuperSet ENI APIs to include/exclude slaves, then finally you can load the new configuration with ecatConfigLoad() and ecatConfigApply().</p>
+<p> </p>
+<p>Jon Waters</p>
+<p>General Manager</p>
+<p> </p>
+<p>acontis technologies Inc.</p>
+<p>945 Concord Street</p>
+<p>Framingham, MA 01701</p>
+<p>Phone: +1-508-809-7201</p>
+<p> </p>
+</div>

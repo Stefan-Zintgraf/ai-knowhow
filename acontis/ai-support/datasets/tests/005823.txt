@@ -1,0 +1,144 @@
+### HEADER
+Id=5823
+Link=http://at-zammad/#ticket/zoom/5823
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vector Informatik GmbH (ID=167, Number=40366, Country=DE)
+Commission=Vector Simulations AG, Unknown (ID=514, Number=514)
+Number=705823
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+CreatedBy=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+Type=
+TimeUnit=
+CreatedAt=26.06.2023 12:41:42 +00:00
+UpdatedAt=29.06.2023 12:07:55 +00:00
+CloseAt=29.06.2023 12:07:55 +00:00
+ArticlesCount=3
+
+### TITLE
+EC-Simulator und Multithreading
+
+### ARTICLE00_HEADER
+Id=31095
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.06.2023 12:41:43 +00:00
+UpdatedAt=26.06.2023 12:41:44 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Simulator und Multithreading
+
+### ARTICLE00_BODY
+<div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>die Integration des EC-Simulatore in CANoe schreitet voran. Lesen und Schrieben der Daten in den Speicher des EC-Simulators erfolgt in einem Multithreading-Kontext. Gibt es dafür Beispiele oder Vorschläge, wie der Zugriff auf gemeinsamen Speicher (von esGetProcessImageInputPtr() und esGetProcessImageOutputPtr()) bei konkurrierendem Zugriff geschützt werden muss?</p>
+<p>Beim Lesen der Daten wird durch die Callback-Methode CycFrameRxCallbackWrapper einem CANoe-Thread signalisiert, dass neue Daten vorhanden sind. Wenn dieser Thread ausgeführt wird, erfolgt der Zugriff auf den Speicher. Beim Schreiben trägt der CANoe-Thread die Daten direkt in dem Speicher ein (zur Zeit ohne weitere Synchronisationsmaßnahmen. Sollten hier Synchronisationsmaßnahmen zur Vermeidung von Dataraces vorgesehen werden?</p>
+<p> </p>
+<p>Liefert der EC-Simulator einen (Hardware-)Zeitstempel, mit dem die Daten aus dem EC-Simulator in die CANoe-Datenbank eingetragen werden können?</p>
+<p> </p>
+<p>Mit freundlichen Gruessen / Best regards,</p>
+<p> </p>
+<p><span lang="EN-US">Tobias Lange</span></p>
+<p><span lang="EN-US">-----------------------------------------------------</span></p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">PND10</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><b>Vector Informatik GmbH</b></p>
+<p>Besucheranschrift / Visitor address: Holderäckerstraße 36 | 70499 Stuttgart | Germany</p>
+<p><span>Tel.: +49 711 80670-4791 <p> </p></span></p>
+<p><span lang="EN-US"><a href="mailto:tobias.lange@vector.com"><span lang="DE" style="color:blue;">tobias.lange@vector.com</span></a></span></p>
+<p><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.vector.com</span></a></p>
+<p> </p>
+<p>Sitz der Gesellschaft / Registered Office: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p>Handelsregister / Commercial Register: Amtsgericht Stuttgart | HRB 17317</p>
+<p>Geschaeftsfuehrer / Managing Directors: Dr. Thomas Beck, Dr. Stefan Krauß, Thomas Riegraf</p>
+<p><span lang="EN-US">-----------------------------------------------------</span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=31153
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=27.06.2023 12:43:41 +00:00
+UpdatedAt=27.06.2023 12:43:41 +00:00
+
+### ARTICLE01_BODY
+Anruf Hr. Lange:<div>- Verwendet Interrupt Mode</div><div>- Hat Double Buffer erwähnt (besser wäre wohl Trippel Buffer)</div><div>- Performance war ein Thema</div><div>- Callbacks wie im Master für Memory Provider gibt es (noch) nicht (?). Sie sollte wenn dann nicht allzulange sperren!</div><div>- Er integriert gerade V3.1.4.09, aktuell wäre V3.1.4.11</div><div>- Logging war ein Thema</div><div>- EcSimulatorHilDemo direkt integrieren oder nur Teile davon?</div><div><br></div>
+
+### ARTICLE02_HEADER
+Id=31330
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=29.06.2023 12:07:55 +00:00
+UpdatedAt=29.06.2023 12:07:57 +00:00
+
+### ARTICLE02_SUBJECT
+EC-Simulator und Multithreading
+
+### ARTICLE02_BODY
+Guten Tag Herr Lange,<div><br></div><div>vielen Dank für das Telefonat! Bisher hatte der <span>CycFrameRxCallbackWrapper</span><span> für die Kunden ohne Probleme funktioniert, wobei </span><span>Dataraces</span><span> an der Stelle nicht ausgeschlossen sind. Einen Verschluss auf gleiche Art wie im Master über Memory Provider wäre denkbar, ist im Moment allerdings noch nicht geplant.</span>
+</div><div><span><br></span></div><div>
+<span>Für den Zeitstempel der Daten, können Sie wie besprochen einen usec-Counter verwenden, den Sie in Ihrer Simulator JobTask jeden Zyklus um die Buszykluszeit erhöhen. Die </span><span>Simulator JobTask</span><span> muss ohnehin mit diesem Takt angestoßen werden. Den Zeitstempel könnten Sie auch vom System erfragen, das kann allerdings zu erheblichen Performanceeinbußen führen, daher empfehle ich Ihnen, den </span><span>usec-Counter zu verwenden.</span>
+</div><div><br></div><div>Viele Grüße</div><div>Paul Bußmann<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Montag, 26. Juni 2023 um 14:41:43, schrieb Tobias Lange:<br><br><div>
+<p>Guten Tag,</p>
+<p> </p>
+<p>die Integration des EC-Simulatore in CANoe schreitet voran. Lesen und Schrieben der Daten in den Speicher des EC-Simulators erfolgt in einem Multithreading-Kontext. Gibt es dafür Beispiele oder Vorschläge, wie der Zugriff auf gemeinsamen Speicher (von esGetProcessImageInputPtr() und esGetProcessImageOutputPtr()) bei konkurrierendem Zugriff geschützt werden muss?</p>
+<p>Beim Lesen der Daten wird durch die Callback-Methode CycFrameRxCallbackWrapper einem CANoe-Thread signalisiert, dass neue Daten vorhanden sind. Wenn dieser Thread ausgeführt wird, erfolgt der Zugriff auf den Speicher. Beim Schreiben trägt der CANoe-Thread die Daten direkt in dem Speicher ein (zur Zeit ohne weitere Synchronisationsmaßnahmen. Sollten hier Synchronisationsmaßnahmen zur Vermeidung von Dataraces vorgesehen werden?</p>
+<p> </p>
+<p>Liefert der EC-Simulator einen (Hardware-)Zeitstempel, mit dem die Daten aus dem EC-Simulator in die CANoe-Datenbank eingetragen werden können?</p>
+<p> </p>
+<p>Mit freundlichen Gruessen / Best regards,</p>
+<p> </p>
+<p><span lang="EN-US">Tobias Lange</span></p>
+<p><span lang="EN-US">-----------------------------------------------------</span></p>
+<p><span lang="EN-US">Software Development Engineer</span></p>
+<p><span lang="EN-US">PND10</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><b>Vector Informatik GmbH</b></p>
+<p>Besucheranschrift / Visitor address: Holderäckerstraße 36 | 70499 Stuttgart | Germany</p>
+<p><span>Tel.: +49 711 80670-4791 </span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US"><a href="mailto:tobias.lange@vector.com"><span lang="DE" style="color:blue;">tobias.lange@vector.com</span></a></span></p>
+<p><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.vector.com</span></a></p>
+<p> </p>
+<p>Sitz der Gesellschaft / Registered Office: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p>Handelsregister / Commercial Register: Amtsgericht Stuttgart | HRB 17317</p>
+<p>Geschaeftsfuehrer / Managing Directors: Dr. Thomas Beck, Dr. Stefan Krauß, Thomas Riegraf</p>
+<p><span lang="EN-US">-----------------------------------------------------</span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

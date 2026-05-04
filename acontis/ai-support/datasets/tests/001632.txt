@@ -1,0 +1,205 @@
+### HEADER
+Id=1632
+Link=http://at-zammad/#ticket/zoom/1632
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Amada Europe (ID=456, Number=0, Country=FR)
+Commission=Amada Europe, Controller with EtherCAT (ID=535, Number=535)
+Number=701632
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=pdehureaux@amada-eu.fr (ID=542, FirstName=Paul, LastName=Dehureaux)
+CreatedBy=pdehureaux@amada-eu.fr (ID=542, FirstName=Paul, LastName=Dehureaux)
+Type=
+TimeUnit=
+CreatedAt=14.10.2021 14:38:22 +00:00
+UpdatedAt=25.04.2022 12:18:35 +00:00
+CloseAt=15.10.2021 08:27:19 +00:00
+ArticlesCount=5
+
+### TITLE
+AMADA : Configuration routeur NTP pour EC Engineer
+
+### ARTICLE00_HEADER
+Id=8798
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.10.2021 14:38:23 +00:00
+UpdatedAt=14.10.2021 14:38:23 +00:00
+
+### ARTICLE00_SUBJECT
+AMADA : Configuration routeur NTP pour EC Engineer
+
+### ARTICLE00_BODY
+<div dir="ltr">
+<div>Bonjour,</div>
+<div> </div>
+<div>Nous rencontrons un problème avec EC Engineer car celui-ci essaye d'accéder au protocole NTP via le port 123 UDP.</div>
+<div>Notre service IT n'ouvre pas ce port mais néanmoins propose une passerelle de routage NTP en interne avec une adresse IP connue en local (172.16.4.177).</div>
+<div> </div>
+<div>
+<img src="/api/v1/ticket_attachment/1632/8798/35115?view=inline" alt="image.png" style="max-width:100%;width:412px;max-height:193px;"><br>
+</div>
+<div> </div>
+<div>Est-il possible de configurer cette passerelle sous EC Engineer ?</div>
+<div> </div>
+<div>Cordialement,</div>
+<br><div dir="ltr">
+<div>
+<b>Paul DEHUREAUX</b><br>
+</div>
+<div>
+<div>Responsable logiciel<br>Service Etude<br><b>Amada Europe</b><br><br>
+</div>
+<div> </div>
+<div>129 avenue Jean-Jaures<br>
+</div>
+<div>72500 Chateau-du-loir<br>
+</div>
+<div>Fixe : +33 2 43 38 54 15<br>Fax : +33 2 43 38 53 63<br><br><a href="http://www.amada.fr/" rel="nofollow noreferrer noopener" target="_blank">www.amada.fr</a><br><i><a href="https://www.google.fr/maps/@48.9849621,2.5142594,3a,90y,87.35h,87.78t/data=!3m5!1e1!3m3!1sjOzkuxVw0QEAAAQXLB4uAg!2e0!3e2?hl=fr" title="Visitez le showroom Amada France" rel="nofollow noreferrer noopener" target="_blank">Visitez notre showroom<br></a></i>
+</div>
+</div>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=8800
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=14.10.2021 15:10:40 +00:00
+UpdatedAt=14.10.2021 15:10:40 +00:00
+
+### ARTICLE01_BODY
+Kann man die IP Adresse vorgeben wo die NTP Uhrzeit abgeholt wird? Ich gehe davon aus das es nicht geht...
+
+### ARTICLE02_HEADER
+Id=8813
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=15.10.2021 05:25:40 +00:00
+UpdatedAt=15.10.2021 05:25:40 +00:00
+
+### ARTICLE02_BODY
+Ich hab den Server über das EcOem.dat einstellbar gemacht. Allerdings nicht für den Kunden sondern nur für uns. Wäre ja sonst witzlos wenn er sich seinen eigenen Zeitserver aufsetzt und dann eine <span>unbegrenzte </span><span>Eval hat :)</span><br><div>
+<span>Am besten ein EcOem.dat ohne Internetcheck senden. </span><span>\\AT-SRV-2\Projekte\Files\EC\EC-Tools\Delivery\V3.0\EC-Engineer\Aktuell\EcOem.dat_NO_INTERNET</span>
+</div><div><span>Da müsste er dann die Uhrzeit auf seinem Rechner ändern, was sehr unangenehm ist</span></div>
+
+### ARTICLE03_HEADER
+Id=8823
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.10.2021 07:39:14 +00:00
+UpdatedAt=15.10.2021 07:39:16 +00:00
+
+### ARTICLE03_SUBJECT
+AMADA : Configuration routeur NTP pour EC Engineer
+
+### ARTICLE03_BODY
+<div>Bonjour,</div><div><br></div><div>veuillez trouver en attachement un fichier oem.dat faisant de votre eval une eval sans internet.</div><div><br></div><div>Cordialement,</div><div>Cyril<br><br>
+</div><div><blockquote type="cite">On Thursday, October 14, 2021, 4:38:23 PM, Paul Dehureaux wrote:<br><br><div dir="ltr">
+<div>Bonjour,</div>
+<div> </div>
+<div>Nous rencontrons un problème avec EC Engineer car celui-ci essaye d'accéder au protocole NTP via le port 123 UDP.</div>
+<div>Notre service IT n'ouvre pas ce port mais néanmoins propose une passerelle de routage NTP en interne avec une adresse IP connue en local (172.16.4.177).</div>
+<div> </div>
+<div>
+<img src="/api/v1/ticket_attachment/1632/8823/35152?view=inline" alt="image.png" style="max-width:100%;max-width:100%;width:412px;max-height:193px;"><br>
+</div>
+<div> </div>
+<div>Est-il possible de configurer cette passerelle sous EC Engineer ?</div>
+<div> </div>
+<div>Cordialement,</div>
+<br><div dir="ltr">
+<div>
+<b>Paul DEHUREAUX</b><br>
+</div>
+<div>
+<div>Responsable logiciel<br>Service Etude<br><b>Amada Europe</b><br><br>
+</div>
+<div> </div>
+<div>129 avenue Jean-Jaures<br>
+</div>
+<div>72500 Chateau-du-loir<br>
+</div>
+<div>Fixe : +33 2 43 38 54 15<br>Fax : +33 2 43 38 53 63<br><br><a href="http://www.amada.fr/" rel="nofollow noreferrer noopener" target="_blank">www.amada.fr</a><br><i><a href="https://www.google.fr/maps/@48.9849621,2.5142594,3a,90y,87.35h,87.78t/data=!3m5!1e1!3m3!1sjOzkuxVw0QEAAAQXLB4uAg!2e0!3e2?hl=fr" title="Visitez le showroom Amada France" rel="nofollow noreferrer noopener" target="_blank">Visitez notre showroom<br></a></i>
+</div>
+</div>
+</div>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE04_HEADER
+Id=8826
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.10.2021 08:15:46 +00:00
+UpdatedAt=15.10.2021 08:15:46 +00:00
+
+### ARTICLE04_SUBJECT
+Re: AMADA : Configuration routeur NTP pour EC Engineer [Ticket#701632]
+
+### ARTICLE04_BODY
+<div dir="ltr">
+<div>Bonjour Cyril,</div>
+<div> </div>
+<div>Merci beaucoup, ça fonctionne bien.</div>
+<div> </div>
+<div>Cordialement,</div>
+<br><div dir="ltr">
+<div>
+<b>Paul DEHUREAUX</b><br>
+</div>
+<div>
+<div>Responsable logiciel<br>Service Etude<br><b>Amada Europe</b><br><br>
+</div>
+<div> </div>
+<div>129 avenue Jean-Jaures<br>
+</div>
+<div>72500 Chateau-du-loir<br>
+</div>
+<div>Fixe : +33 2 43 38 54 15<br>Fax : +33 2 43 38 53 63<br><br><a href="http://www.amada.fr/" rel="nofollow noreferrer noopener" target="_blank">www.amada.fr</a><br><i><a href="https://www.google.fr/maps/@48.9849621,2.5142594,3a,90y,87.35h,87.78t/data=!3m5!1e1!3m3!1sjOzkuxVw0QEAAAQXLB4uAg!2e0!3e2?hl=fr" title="Visitez le showroom Amada France" rel="nofollow noreferrer noopener" target="_blank">Visitez notre showroom<br></a></i>
+</div>
+</div>
+</div>
+<br>
+</div><br><div>
+<div dir="ltr">Le ven. 15 oct. 2021 à 09:39, Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; a écrit :<br>
+</div>
+<blockquote> <div>
+<div>Bonjour,</div>
+<div> </div>
+<div>veuillez trouver en attachement un fichier oem.dat faisant de votre eval une eval sans internet.</div>
+<div> </div>
+<div>Cordialement,</div>
+<div>Cyril<br><br> </div>
+<div><blockquote type="cite">On Thursday, October 14, 2021, 4:38:23 PM, Paul Dehureaux wrote:<br><br><div dir="ltr"> <div>Bonjour,</div>
+<div> </div>
+<div>Nous rencontrons un problème avec EC Engineer car celui-ci essaye d'accéder au protocole NTP via le port 123 UDP.</div>
+<div>Notre service IT n'ouvre pas ce port mais néanmoins propose une passerelle de routage NTP en interne avec une adresse IP connue en local (172.16.4.177).</div>
+<div> </div>
+<div> <img src="/api/v1/ticket_attachment/1632/8826/35166?view=inline" alt="image.png" style="max-width:100%;max-width: 100%;width: 412px;max-height: 193px;"><br> </div>
+<div> </div>
+<div>Est-il possible de configurer cette passerelle sous EC Engineer ?</div>
+<div> </div>
+<div>Cordialement,</div>
+<br><div dir="ltr"> <div> <b>Paul DEHUREAUX</b><br> </div>
+<div> <div>Responsable logiciel<br>Service Etude<br><b>Amada Europe</b><br><br> </div>
+<div> </div>
+<div>129 avenue Jean-Jaures<br> </div>
+<div>72500 Chateau-du-loir<br> </div>
+<div>Fixe : +33 2 43 38 54 15<br>Fax : +33 2 43 38 53 63<br><br><a href="http://www.amada.fr/" rel="nofollow noreferrer noopener" target="_blank">www.amada.fr</a><br><i><a href="https://www.google.fr/maps/@48.9849621,2.5142594,3a,90y,87.35h,87.78t/data=!3m5!1e1!3m3!1sjOzkuxVw0QEAAAQXLB4uAg!2e0!3e2?hl=fr" title="Visitez le showroom Amada France" rel="nofollow noreferrer noopener" target="_blank">Visitez notre showroom<br></a></i> </div>
+</div>
+</div>
+</div>
+<br> </blockquote></div>
+<div> </div>
+<br><br>
+</div>
+</blockquote>
+</div>

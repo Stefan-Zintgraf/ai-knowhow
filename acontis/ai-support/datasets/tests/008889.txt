@@ -1,0 +1,210 @@
+### HEADER
+Id=8889
+Link=http://at-zammad/#ticket/zoom/8889
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis technologies GmbH (ID=399, Number=1000, Country=DE)
+Commission=JnJ MedTech Orthopaedics, Velys (ID=949, Number=949)
+Number=708889
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=l.janischek@acontis.com (ID=2090, FirstName=Lisa, LastName=Janischek)
+CreatedBy=l.janischek@acontis.com (ID=2090, FirstName=Lisa, LastName=Janischek)
+Type=
+TimeUnit=
+CreatedAt=17.09.2024 14:07:58 +00:00
+UpdatedAt=27.09.2024 06:01:30 +00:00
+CloseAt=27.09.2024 06:01:30 +00:00
+ArticlesCount=5
+
+### TITLE
+Delivery for Orthotaxy, Velys, Commission 40754
+
+### ARTICLE00_HEADER
+Id=50185
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.09.2024 14:07:58 +00:00
+UpdatedAt=17.09.2024 14:07:58 +00:00
+
+### ARTICLE00_SUBJECT
+Delivery for Orthotaxy, Velys, Commission 40754
+
+### ARTICLE00_BODY
+<div>
+<p>Please deliver software to customer.(support@isit.fr)<br>Do not forget to append the delivery note and sales@acontis.com in CC! </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=50192
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.09.2024 14:43:53 +00:00
+UpdatedAt=17.09.2024 14:43:54 +00:00
+
+### ARTICLE01_SUBJECT
+Delivery for Orthotaxy, Velys, Commission 40754
+
+### ARTICLE01_BODY
+<div><br></div>Hi Lisa, <div>
+<br><div><div>Für die Kommission 40754 ist kein Produkt aufgeführt. Soll ich eines hinzufügen und liefern oder kannst du es hinzufügen? <span>Sag mir kurz Bescheid.</span>
+</div></div>
+<div><span><br></span></div>
+<div><span>LG</span></div>
+<div><span>Miran</span></div>
+<div>
+<div><br></div>
+<div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/8889/50192/208255?view=inline"><br>
+</div>
+</div>
+</div><br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=50224
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.09.2024 06:20:37 +00:00
+UpdatedAt=18.09.2024 06:20:37 +00:00
+
+### ARTICLE02_SUBJECT
+AW: Delivery for Orthotaxy, Velys, Commission 40754 [Ticket#708889]
+
+### ARTICLE02_BODY
+<div>
+<p>Hi Miran,</p>
+<p> </p>
+<p>hast du den Master noch hinzugefügt?</p>
+<p>Bei mir wird er angezeigt.</p>
+<p>Entweder ist beim Speichern etwas schief gegangen oder dein LIWA war noch auf dem alten Stand?!</p>
+<p> </p>
+<p>LG Lisa</p>
+<p><img style="max-width:100%;width:11.3958in;max-height:7.6979in;width:1094px;max-height:739px;" src="/api/v1/ticket_attachment/8889/50224/208387?view=inline"></p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Miran Bhattarai via EC-Support &lt;ecsupport@acontis.com&gt; <br><b>Gesendet:</b> Dienstag, 17. September 2024 16:44<br><b>An:</b> l.janischek@acontis.com<br><b>Betreff:</b> Delivery for Orthotaxy, Velys, Commission 40754 [Ticket#708889]</p>
+</div>
+<p> </p>
+<div>
+<p> </p>
+</div>
+<p>Hi Lisa,</p>
+<div>
+<p> </p>
+<div>
+<p>Für die Kommission 40754 ist kein Produkt aufgeführt. Soll ich eines hinzufügen und liefern oder kannst du es hinzufügen? Sag mir kurz Bescheid.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>LG</p>
+</div>
+<div>
+<p>Miran</p>
+</div>
+<div>
+<div>
+<p> </p>
+</div>
+<div>
+<p><img style="max-width:100%;width:16.2916in;max-height:9.7812in;width:1564px;max-height:939px;" src="/api/v1/ticket_attachment/8889/50224/208386?view=inline"></p>
+</div>
+</div>
+</div>
+<p> </p>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Miran Bhattarai</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a>, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> </p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+</div>
+
+### ARTICLE03_HEADER
+Id=50254
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.09.2024 12:13:21 +00:00
+UpdatedAt=18.09.2024 12:27:44 +00:00
+
+### ARTICLE03_SUBJECT
+Delivery for Orthotaxy, Velys, Commission 40754
+
+### ARTICLE03_BODY
+<div>
+<p>Please deliver software to customer.(support@isit.fr)<br>Do not forget to append the delivery note and sales@acontis.com in CC! </p>
+</div>
+
+### ARTICLE04_HEADER
+Id=50329
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.09.2024 12:32:25 +00:00
+UpdatedAt=19.09.2024 12:32:26 +00:00
+
+### ARTICLE04_SUBJECT
+Delivery for Orthotaxy, Velys, Commission 40754
+
+### ARTICLE04_BODY
+<p>Dear Customer, </p><p><br></p>
+
+<p>please find your new software version below: </p><p><br></p>
+
+<p><a href="https://downloads.acontis.com/2024/M-O/Orthotaxy_(40754)(FR)/EC-Master_Linux_x86_64Bit/3.2.2.02/EC-Master-V3.2.2.02-Linux-x86_64Bit-SDK_Protected.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2024/M-O/Orthotaxy_(40754)(FR)/EC-Master_Linux_x86_64Bit/3.2.2.02/EC-Master-V3.2.2.02-Linux-x86_64Bit-SDK_Protected.tar.gz</a></p><p><br></p>
+
+<p>Password: ECM88250 </p><p><br></p>
+
+<p>Best Regards, <br>__________________________________________________________________________________________
+<br>
+Cyril Eyssautier <br>
+EtherCAT Support <br>
+eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30 <br>
+acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten,
+Germany, <a href="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> <br>
+__________________________________________________________________________________________
+<br>
+Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a>
+</p>
+
+<p>This is an automatic generated eMail. </p>

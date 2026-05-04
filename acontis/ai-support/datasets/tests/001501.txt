@@ -1,0 +1,186 @@
+### HEADER
+Id=1501
+Link=http://at-zammad/#ticket/zoom/1501
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bucher Automation (ID=124, Number=54505, Country=DE)
+Commission=Bucher Industries, JetControl (ID=139, Number=139)
+Number=701501
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=tfoell@jetter.de (ID=35, FirstName=Tobias, LastName=Föll)
+CreatedBy=tfoell@jetter.de (ID=35, FirstName=Tobias, LastName=Föll)
+Type=
+TimeUnit=
+CreatedAt=27.09.2021 17:34:41 +00:00
+UpdatedAt=29.09.2021 06:54:42 +00:00
+CloseAt=29.09.2021 06:54:42 +00:00
+ArticlesCount=2
+
+### TITLE
+Ecat Master 2.9.2.04 Fehlermeldung Frequenzumrichter Getzriebebau Nord..
+
+### ARTICLE00_HEADER
+Id=8121
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.09.2021 17:34:41 +00:00
+UpdatedAt=27.09.2021 17:34:42 +00:00
+
+### ARTICLE00_SUBJECT
+Ecat Master 2.9.2.04 Fehlermeldung Frequenzumrichter Getzriebebau Nord..
+
+### ARTICLE00_BODY
+<div> </div><div>
+<div>
+<p>Hallo Support,</p>
+<p> </p>
+<p>mit dem angehängten ENI File kommt diese Fehlermeldung.</p>
+<p> </p>
+<p>Es scheint ein Typemismatch zu sein, aber es wurde gar kein Gerät erkannt, obwohl der Ecat Teilnehmer angeschlossen wurde.</p>
+<p>Was bedeuten die Fehler „Retry sending a acyclic frame due to timeout“ am Anfang ?</p>
+<p> </p>
+<p>….</p>
+<p>Init EtherCAT</p>
+<p>Start Remote API Server now</p>
+<p> </p>
+<p>Retry sending a acyclic frame due to timeout</p>
+<p>EtherCAT command IDX set value=0xdf</p>
+<p>Retry sending a acyclic frame due to timeout</p>
+<p>EtherCAT command IDX set value=0xe0</p>
+<p>Cannot start - set master state to INIT (Result = Bus configuration mismatch (0x9811001e))</p>
+<p>Bus scan failed, error code: 0x9811001e (retry)</p>
+<p> </p>
+<p>Scan bus mismatch for the first slave on the bus! BUS VendorId: ---- (0x0); ProductCode: Unknown (0x0).</p>
+<p> </p>
+<p>CFG/BUS VendorId: Getriebebau NORD GmbH &amp; Co. KG (0x538) / ---- (0x0); ProductCode: Unknown (0x2000) / Unknown (0x0)</p>
+<p> </p>
+<p>Scan Bus returned with error: Bus configuration mismatch (0x9811001e)</p>
+<p> </p>
+<p>Scan bus mismatch for the first slave on the bus! BUS VendorId: ---- (0x0); ProductCode: Unknown (0x0).</p>
+<p> </p>
+<p>CFG/BUS VendorId: Getriebebau NORD GmbH &amp; Co. KG (0x538) / ---- (0x0); ProductCode: Unknown (0x2000) / Unknown (0x0)</p>
+<p> </p>
+<p>Scan Bus returned with error: Bus configuration mismatch (0x9811001e)</p>
+<p> </p>
+<p>Scan bus mismatch for the first slave on the bus! BUS VendorId: ---- (0x0); ProductCode: Unknown (0x0).</p>
+<p> </p>
+<p>CFG/BUS VendorId: Getriebebau NORD GmbH &amp; Co. KG (0x538) / ---- (0x0); ProductCode: Unknown (0x2000) / Unknown (0x0)</p>
+<p> </p>
+<p>Scan Bus returned with error: Bus configuration mismatch (0x9811001e)</p>
+<p>….</p>
+<p> </p>
+<p>Danke.</p>
+<p> </p>
+</div>
+</div><br>
+<p>Mit freundlichen Grüßen / Kind regards</p><p>i.V. Tobias Föll</p><p>Head of System Engineering</p><p>Jetter AG<br> Gräterstraße 2 <br> DE-71642 Ludwigsburg <br> Tel: +49-7141-2550-0 <br> Fax: +49-7141-2550-425 <br> tfoell@jetter.de <br>
+<a href="http://www.jetter.de/" rel="nofollow noreferrer noopener" target="_blank">www.jetter.de</a><br> Datenschutzerklärung / Privacy Policy: <a href="https://www.jetter.de/kontakt/datenschutz.html" rel="nofollow noreferrer noopener" target="_blank"> www.jetter.de/kontakt/datenschutz.html</a></p><p>Ust.-Id.: DE 812 643 615<br> Amtsgericht Stuttgart HRB 205545 <br> Vorstandsvorsitzender: Christian Benz <br> Vorsitzender des Aufsichtsrates: Martin Jetter </p><p>VAT Reg.-No.: DE 812 643 615<br> Registered: Stuttgart HRB 205545 <br> CEO: Christian Benz <br> Chairman of the Supervisory Board: Martin Jetter</p>
+
+### ARTICLE01_HEADER
+Id=8123
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.09.2021 19:11:14 +00:00
+UpdatedAt=27.09.2021 19:11:14 +00:00
+
+### ARTICLE01_SUBJECT
+Ecat Master 2.9.2.04 Fehlermeldung Frequenzumrichter Getzriebebau Nord..
+
+### ARTICLE01_BODY
+<div> </div>Hallo Support,<div> </div><div>unser Kunde hat sich gerade gemeldet.</div><div>Problem ist gelöst.</div><div>Es lag am Ecat Slave.</div><div> </div><div>
+<br>
+<div dir="ltr">
+<div>----------------------------------------</div>
+<div>Jetter AG</div>
+<div>Tobias Föll</div>
+<div>Phone: +49 7141 2550 446</div>
+<div>Fax: +49 7141 2550 556</div>
+<div>mailto:tfoell (at) jetter.de</div>
+<div>web: <a href="http://www.jetter.de" rel="nofollow noreferrer noopener" target="_blank">http://www.jetter.de</a>
+</div>
+<div> </div>
+<div>VAT Reg. - No.: DE 812 643 615</div>
+<div>Registered: Stuttgart HRB 205545</div>
+<div>CEO: Christian Benz</div>
+<div>Board of Directors: Günter Eckert</div>
+<div>Chairman of the Supervisory Board: Dr. Michael Oltmanns</div>
+<div> </div>
+<div>Registrieren Sie sich jetzt für unseren Internet-Newsletter unter:</div>
+<div>
+<a href="http://www.jetter.de/newsletter.0.html" rel="nofollow noreferrer noopener" target="_blank">http://www.jetter.de/newsletter.0.html</a>
+</div>
+<div> </div>
+<div>Subscribe now to our internet newsletter at:</div>
+<div>
+<a href="http://www.jetter.de/820.0.html" rel="nofollow noreferrer noopener" target="_blank">http://www.jetter.de/820.0.html</a>
+</div>
+</div>
+<div dir="ltr">
+<br>
+<br>
+<p>Mit freundlichen Grüßen / Kind regards</p>
+<p>i.V. Tobias Föll</p>
+<p>Head of System Engineering</p>
+<p>Jetter AG<br> Gräterstraße 2 <br> DE-71642 Ludwigsburg <br> Tel: +49-7141-2550-0 <br> Fax: +49-7141-2550-425 <br> tfoell@jetter.de <br>
+<a href="http://www.jetter.de/" rel="nofollow noreferrer noopener" target="_blank">www.jetter.de</a><br> Datenschutzerklärung / Privacy Policy: <a href="https://www.jetter.de/kontakt/datenschutz.html" rel="nofollow noreferrer noopener" target="_blank"> www.jetter.de/kontakt/datenschutz.html</a></p>
+<p>Ust.-Id.: DE 812 643 615<br> Amtsgericht Stuttgart HRB 205545 <br> Vorstandsvorsitzender: Christian Benz <br> Vorsitzender des Aufsichtsrates: Martin Jetter </p>
+<p>VAT Reg.-No.: DE 812 643 615<br> Registered: Stuttgart HRB 205545 <br> CEO: Christian Benz <br> Chairman of the Supervisory Board: Martin Jetter</p>
+<br>
+<blockquote type="cite">Am 27.09.2021 um 19:34 schrieb Föll, Tobias &lt;TFoell@jetter.de&gt;:<br>
+<br>
+</blockquote>
+</div>
+<blockquote type="cite">
+<div dir="ltr">
+<div>
+<div>
+<p>Hallo Support,</p>
+<p> </p>
+<p>mit dem angehängten ENI File kommt diese Fehlermeldung.</p>
+<p> </p>
+<p>Es scheint ein Typemismatch zu sein, aber es wurde gar kein Gerät erkannt, obwohl der Ecat Teilnehmer angeschlossen wurde.</p>
+<p>Was bedeuten die Fehler „Retry sending a acyclic frame due to timeout“ am Anfang ?</p>
+<p> </p>
+<p>….</p>
+<p>Init EtherCAT</p>
+<p>Start Remote API Server now</p>
+<p> </p>
+<p>Retry sending a acyclic frame due to timeout</p>
+<p>EtherCAT command IDX set value=0xdf</p>
+<p>Retry sending a acyclic frame due to timeout</p>
+<p>EtherCAT command IDX set value=0xe0</p>
+<p>Cannot start - set master state to INIT (Result = Bus configuration mismatch (0x9811001e))</p>
+<p>Bus scan failed, error code: 0x9811001e (retry)</p>
+<p> </p>
+<p>Scan bus mismatch for the first slave on the bus! BUS VendorId: ---- (0x0); ProductCode: Unknown (0x0).</p>
+<p> </p>
+<p>CFG/BUS VendorId: Getriebebau NORD GmbH &amp; Co. KG (0x538) / ---- (0x0); ProductCode: Unknown (0x2000) / Unknown (0x0)</p>
+<p> </p>
+<p>Scan Bus returned with error: Bus configuration mismatch (0x9811001e)</p>
+<p> </p>
+<p>Scan bus mismatch for the first slave on the bus! BUS VendorId: ---- (0x0); ProductCode: Unknown (0x0).</p>
+<p> </p>
+<p>CFG/BUS VendorId: Getriebebau NORD GmbH &amp; Co. KG (0x538) / ---- (0x0); ProductCode: Unknown (0x2000) / Unknown (0x0)</p>
+<p> </p>
+<p>Scan Bus returned with error: Bus configuration mismatch (0x9811001e)</p>
+<p> </p>
+<p>Scan bus mismatch for the first slave on the bus! BUS VendorId: ---- (0x0); ProductCode: Unknown (0x0).</p>
+<p> </p>
+<p>CFG/BUS VendorId: Getriebebau NORD GmbH &amp; Co. KG (0x538) / ---- (0x0); ProductCode: Unknown (0x2000) / Unknown (0x0)</p>
+<p> </p>
+<p>Scan Bus returned with error: Bus configuration mismatch (0x9811001e)</p>
+<p>….</p>
+<p> </p>
+<p>Danke.</p>
+<p> </p>
+</div>
+</div>
+<div>&lt;GB_NORD_SK_550P_project_00.ecc&gt;</div>
+<div>&lt;ENI_GB_NORD_SK_550P_project_00.xml&gt;</div>
+<div>&lt;NORD_SK550P_ECT.xml&gt;</div>
+</div>
+</blockquote>
+</div>

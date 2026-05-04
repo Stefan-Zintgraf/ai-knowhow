@@ -1,0 +1,134 @@
+### HEADER
+Id=1722
+Link=http://at-zammad/#ticket/zoom/1722
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Presto Solutions (ID=293, Number=40252, Country=KR)
+Commission=Hyundai Robotics., Robot Cont. (ID=340, Number=340)
+Number=701722
+Owner=h.oelhaf@acontis.com (ID=12, FirstName=Holger, LastName=Oelhaf)
+Customer=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+CreatedBy=sundukhan@prestosolution.co.kr (ID=45, FirstName=DukHan, LastName=Sun)
+Type=
+TimeUnit=
+CreatedAt=27.10.2021 10:52:59 +00:00
+UpdatedAt=05.11.2021 07:11:32 +00:00
+CloseAt=05.11.2021 07:11:32 +00:00
+ArticlesCount=3
+
+### TITLE
+Request for Multi Master Example source of V3.1.x
+
+### ARTICLE00_HEADER
+Id=9248
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=27.10.2021 10:52:59 +00:00
+UpdatedAt=27.10.2021 10:53:04 +00:00
+
+### ARTICLE00_SUBJECT
+Request for Multi Master Example source of V3.1.x
+
+### ARTICLE00_BODY
+<p>Hi.</p><p><br></p><p>The customer is Hyundai Robotics.</p><p>They want to get Multi Master example source of V3.1.x.</p><p>they said, it is difficult to merge because there are many differences from V2.9.</p><p><br></p><p>Please advise.</p><p><br></p><p>Have a nice day.</p><p><br></p><p><br></p><p><br></p><p><br></p><br><br><p><br></p><table style=" border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><tbody>
+<tr>
+<td style="border: rgb(0, 0, 0); background-color: transparent;"><p> </p></td>
+<td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;">
+<p><b><br></b></p>
+<p><b>선덕한 위원 / 연구소</b></p>
+<p><b><strong>T.</strong> </b><span style="color: black;">070-7167-8601</span></p>
+<p><b><strong>E.</strong> </b><i><u><span style="color: blue;">ysundukhan@prestosolution.co.kr</span></u></i></p>
+</td>
+</tr>
+<tr><td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;" colspan="2"><span style="color: rgb(99, 101, 99);"><br></span></td></tr>
+<tr><td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;" colspan="2">
+<p><br></p>
+<span style="color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressed.</span>
+<span style="color: rgb(99, 101, 99);">Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are not the intended addressee please contact the sender and dispose of this e-mail.</span>
+</td></tr>
+</tbody></table><p><br></p>
+
+### ARTICLE01_HEADER
+Id=9265
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=27.10.2021 15:10:25 +00:00
+UpdatedAt=27.10.2021 15:10:25 +00:00
+
+### ARTICLE01_BODY
+Kannst du da was machen?
+
+### ARTICLE02_HEADER
+Id=9286
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=28.10.2021 10:17:38 +00:00
+UpdatedAt=28.10.2021 10:17:40 +00:00
+
+### ARTICLE02_SUBJECT
+Request for Multi Master Example source of V3.1.x
+
+### ARTICLE02_BODY
+<div>Hi,</div><div>please find the latest version of EcMasterDemo<span>Multi</span><span> source code in the attachment.</span>
+</div><div><span><br></span></div><div><span></span></div><div data-signature="true" data-signature-id="2">
+<div>
+<span>Best regards,</span>
+</div>
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Holger Oelhaf </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">Am Mittwoch, 27. Oktober 2021, 12:52:59, schrieb 선덕한:<br><br><p>Hi.</p>
+<p><br></p>
+<p>The customer is Hyundai Robotics.</p>
+<p>They want to get Multi Master example source of V3.1.x.</p>
+<p>they said, it is difficult to merge because there are many differences from V2.9.</p>
+<p><br></p>
+<p>Please advise.</p>
+<p><br></p>
+<p>Have a nice day.</p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<br><br><p><br></p>
+<table style=" border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><tbody>
+<tr>
+<td style="border: rgb(0, 0, 0); background-color: transparent;"><p> </p></td>
+<td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;">
+<p><b><br></b></p>
+<p><b>선덕한 위원 / 연구소</b></p>
+<p><b><strong>T.</strong> </b><span style="color: black;">070-7167-8601</span></p>
+<p><b><strong>E.</strong> </b><i><u><span style="color: blue;">ysundukhan@prestosolution.co.kr</span></u></i></p>
+</td>
+</tr>
+<tr><td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;" colspan="2"><span style="color: rgb(99, 101, 99);"><br></span></td></tr>
+<tr><td valign="top" style="border: rgb(0, 0, 0); background-color: transparent;" colspan="2">
+<p><br></p>
+<span style="color: rgb(99, 101, 99);">The information in this email is confidential and may be legally privileged. It is intended solely for the addressed.</span>
+<span style="color: rgb(99, 101, 99);">Access to this email by anyone else is unauthorized. If you are not the intended recipient, any disclosure, copying, distribution or any action taken or omitted to be taken in reliance on it, is prohibited and may be unlawful. If you are not the intended addressee please contact the sender and dispose of this e-mail.</span>
+</td></tr>
+</tbody></table>
+<p><br></p>
+<br>
+</blockquote></div><div><br></div><br><br>

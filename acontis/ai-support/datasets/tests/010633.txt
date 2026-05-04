@@ -1,0 +1,75 @@
+### HEADER
+Id=10633
+Link=http://at-zammad/#ticket/zoom/10633
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=dSPACE GmbH (ID=94, Number=40282, Country=DE)
+Commission=dSpace, SCALEXIO (ID=103, Number=103)
+Number=7010633
+Owner=m.bhattarai@acontis.com (ID=1921, FirstName=Miran, LastName=Bhattarai)
+Customer=sschulte@dspace.de (ID=82, FirstName=Sebastian, LastName=Schulte)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=23.05.2025 07:29:32 +00:00
+UpdatedAt=06.06.2025 06:02:04 +00:00
+CloseAt=06.06.2025 06:02:04 +00:00
+ArticlesCount=2
+
+### TITLE
+Acontis software update request from dSPACE GmbH
+
+### ARTICLE00_HEADER
+Id=60928
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.05.2025 07:29:32 +00:00
+UpdatedAt=23.05.2025 07:29:36 +00:00
+
+### ARTICLE00_SUBJECT
+Acontis software update request from dSPACE GmbH
+
+### ARTICLE00_BODY
+<p>Dear Mr./Ms. Schulte,</p><p>thank you for your registration.<br><br></p><p>First Name: Sebastian<br>Last Name: Schulte<br>Company: dSPACE GmbH<br><span>Commission Number: <br></span><span>Country: Germany<br></span><span>City: Paderborn<br></span><span>E-Mail: sschulte@dspace.de<br></span>Product: <span>EC-Master<br></span>Update Type: Upgrade (newest API)<br><span>Operating System Version: Linux, x86 (64), arm (32)<br></span>Additional information: Hi,</p><p><img src="/api/v1/ticket_attachment/10633/60928/253576?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH<br>Franz-Beer-Straße 98, 88250 Weingarten/Germany<br>Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a><br>eMail: <a href="mailto:sales@acontis.com">sales@acontis.com<br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/10633/60928/253575?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=60942
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.05.2025 10:40:49 +00:00
+UpdatedAt=23.05.2025 10:40:50 +00:00
+
+### ARTICLE01_SUBJECT
+Acontis software update request from dSPACE GmbH
+
+### ARTICLE01_BODY
+<div>Dear Customer,</div><div><br></div><div>Please find your new software version below:</div><div><br></div><div><a href="https://downloads.acontis.com/2025/D-F/dSPACE_(40282)(DE)/EC-Master_Linux_x86_64Bit/3.2.3.01/EC-Master-ClassA-AddOn-V3.2.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2025/D-F/dSPACE_(40282)(DE)/EC-Master_Linux_x86_64Bit/3.2.3.01/EC-Master-ClassA-AddOn-V3.2.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/D-F/dSPACE_(40282)(DE)/EC-Master_Linux_x86_64Bit/3.2.3.01/EC-Master-ClassA-AddOn-V3.2.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div><div><a href="https://downloads.acontis.com/2025/D-F/dSPACE_(40282)(DE)/EC-Master_Linux_x86_64Bit/3.2.3.01/EC-Master-V3.2.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2025/D-F/dSPACE_(40282)(DE)/EC-Master_Linux_x86_64Bit/3.2.3.01/EC-Master-V3.2.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/D-F/dSPACE_(40282)(DE)/EC-Master_Linux_x86_64Bit/3.2.3.01/EC-Master-V3.2.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div><div><a href="https://downloads.acontis.com/2025/D-F/dSPACE_(40282)(DE)/EC-Master_Linux_x86_64Bit/3.2.3.01/EC-RtEth-IntelGbe-V3.2.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2025/D-F/dSPACE_(40282)(DE)/EC-Master_Linux_x86_64Bit/3.2.3.01/EC-RtEth-IntelGbe-V3.2.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/D-F/dSPACE_(40282)(DE)/EC-Master_Linux_x86_64Bit/3.2.3.01/EC-RtEth-IntelGbe-V3.2.3.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div><div><br></div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/2025/D-F/dSPACE_(40381)(DE)/EC-Master_Linux_ARM_32Bit/3.2.3.01/EC-Master-ClassA-AddOn-V3.2.3.01-Linux-ARM_32Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/D-F/dSPACE_(40381)(DE)/EC-Master_Linux_ARM_32Bit/3.2.3.01/EC-Master-ClassA-AddOn-V3.2.3.01-Linux-ARM_32Bit-SDK_Unrestricted.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2025/D-F/dSPACE_(40381)(DE)/EC-Master_Linux_ARM_32Bit/3.2.3.01/EC-Master-V3.2.3.01-Linux-ARM_32Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/D-F/dSPACE_(40381)(DE)/EC-Master_Linux_ARM_32Bit/3.2.3.01/EC-Master-V3.2.3.01-Linux-ARM_32Bit-SDK_Unrestricted.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2025/D-F/dSPACE_(40381)(DE)/EC-Master_Linux_ARM_32Bit/3.2.3.01/EC-RtEth-IntelGbe-V3.2.3.01-Linux-ARM_32Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/D-F/dSPACE_(40381)(DE)/EC-Master_Linux_ARM_32Bit/3.2.3.01/EC-RtEth-IntelGbe-V3.2.3.01-Linux-ARM_32Bit-SDK_Unrestricted.tar.gz</a></div>
+<div><br></div>
+<div>
+<div><a href="https://downloads.acontis.com/2025/D-F/dSPACE_(40282)(DE)/EC-Master_Linux_x86_32Bit/3.2.3.01/EC-Master-ClassA-AddOn-V3.2.3.01-Linux-x86_32Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/D-F/dSPACE_(40282)(DE)/EC-Master_Linux_x86_32Bit/3.2.3.01/EC-Master-ClassA-AddOn-V3.2.3.01-Linux-x86_32Bit-SDK_Unrestricted.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2025/D-F/dSPACE_(40282)(DE)/EC-Master_Linux_x86_32Bit/3.2.3.01/EC-Master-V3.2.3.01-Linux-x86_32Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/D-F/dSPACE_(40282)(DE)/EC-Master_Linux_x86_32Bit/3.2.3.01/EC-Master-V3.2.3.01-Linux-x86_32Bit-SDK_Unrestricted.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2025/D-F/dSPACE_(40282)(DE)/EC-Master_Linux_x86_32Bit/3.2.3.01/EC-RtEth-IntelGbe-V3.2.3.01-Linux-x86_32Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2025/D-F/dSPACE_(40282)(DE)/EC-Master_Linux_x86_32Bit/3.2.3.01/EC-RtEth-IntelGbe-V3.2.3.01-Linux-x86_32Bit-SDK_Unrestricted.tar.gz</a></div>
+</div>
+</div><div><br></div><div>Password: ECM88250</div><div><br></div><div>If you want to get notified if a new version is released, please answer to this e-mail.</div><div><br></div><div>Best Regards,</div><div><br></div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Miran Bhattarai</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>

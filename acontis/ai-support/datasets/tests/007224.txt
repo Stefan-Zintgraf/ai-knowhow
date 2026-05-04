@@ -1,0 +1,106 @@
+### HEADER
+Id=7224
+Link=http://at-zammad/#ticket/zoom/7224
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Bachmann electronic GmbH (ID=3, Number=50507, Country=AT)
+Commission=Bachmann, M1 Steuerungen (ID=3, Number=3)
+Number=707224
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=martin.pfefferkorn@bachmann.info (ID=2009, FirstName=Martin, LastName=Pfefferkorn)
+CreatedBy=martin.pfefferkorn@bachmann.info (ID=2009, FirstName=Martin, LastName=Pfefferkorn)
+Type=
+TimeUnit=
+CreatedAt=11.01.2024 13:36:28 +00:00
+UpdatedAt=02.02.2024 07:07:30 +00:00
+CloseAt=02.02.2024 07:07:30 +00:00
+ArticlesCount=2
+
+### TITLE
+AoE mit  Beckhoff AX8000
+
+### ARTICLE00_HEADER
+Id=39446
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.01.2024 13:36:28 +00:00
+UpdatedAt=11.01.2024 13:36:31 +00:00
+
+### ARTICLE00_SUBJECT
+AoE mit  Beckhoff AX8000
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Herr Jebali</p>
+<p> </p>
+<p>Haben sie Erfahrung mit dem Beckhoff Antrieb AX8000 mit AoE?</p>
+<p> </p>
+<p>Wäre es grundsätzlich möglich den EtherCAT Master als ADS Router von „(TwinCAT3) – Ethernet – (ACONTIS MASTER) –AoE- (AX8000)“ zu verwenden?</p>
+<p> </p>
+<p><span style="color:#68676c;">Mit freundlichen Grüßen <br> Best regards <br> <br>
+</span><b><span style="color:#68676c;">Martin Pfefferkorn </span></b><span style="color:#68676c;"> <br> Application Engineer | Automation Austria<br> <br> P +43 (0)5522 / 34 97-1141 | <a href="mailto:martin.pfefferkorn@bachmann.info"><span style="color:#0563c1;">martin.pfefferkorn@bachmann.info</span></a> | <a href="https://www.bachmann.info/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">www.bachmann.info</span></a> <br> <br> Corporate Headquarters: <br> Bachmann electronic GmbH, Kreuzäckerweg 33, 6800 Feldkirch, Austria <br> FN 75348g Commercial Register Feldkirch | ATU 36410905 <br> <br> Dokumente mit rechtsverbindlichem Inhalt sind nur mit Originalunterschrift wirksam. <br>
+</span><span lang="EN-US" style="color:#68676c;">Documents with legally binding subject matter are valid only with original hand-written signature. <br> <br>
+</span><span style="color:#68676c;">Follow Bachmann on <a href="https://www.facebook.com/Bachmann.electronic/" rel="nofollow noreferrer noopener" title="https://www.facebook.com/Bachmann.electronic/" target="_blank"><span style="color:#0563c1;">Facebook</span></a> | <a href="https://www.linkedin.com/company/bachmann-electronic-gmbh" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/bachmann-electronic-gmbh" target="_blank">
+<span style="color:#0563c1;">LinkedIn</span></a> | <a href="https://twitter.com/bachmann_corp" rel="nofollow noreferrer noopener" title="https://twitter.com/bachmann_corp" target="_blank">
+<span style="color:#0563c1;">Twitter</span></a> | <a href="https://www.xing.com/companies/bachmannelectronicgmbh" rel="nofollow noreferrer noopener" title="https://www.xing.com/companies/bachmannelectronicgmbh" target="_blank">
+<span style="color:#0563c1;">Xing</span></a> | <a href="https://www.youtube.com/channel/UCE5LllKmEA5ZtBnsIpvVqxg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCE5LllKmEA5ZtBnsIpvVqxg" target="_blank">
+<span style="color:#0563c1;">YouTube</span></a></span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=39699
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.01.2024 15:18:15 +00:00
+UpdatedAt=17.01.2024 15:18:17 +00:00
+
+### ARTICLE01_SUBJECT
+AoE mit  Beckhoff AX8000
+
+### ARTICLE01_BODY
+Hallo Herr Pfefferkorn,<div><br></div><div>wir haben ein ADS Adapter. Damit sollte man die Konfiguration mit TwinCAT durch unser Stack vornehmen können. Es geht aber nur wenn der Master off ist, dabei kann das Netzwerk nicht in OP sein. Es ist ein Art Passthrough Modus.</div><div><br></div><div>Die API ist immer in der Master Library mit kompiliert und Sie könnten es ausprobieren. Falls Sie es später verwenden, müssten Sie das Feature Pack lizenzieren.</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, January 11, 2024 at 2:36:28 PM, PFEFFERKORN.Martin wrote:<br><br><div>
+<p>Hallo Herr Jebali</p>
+<p> </p>
+<p>Haben sie Erfahrung mit dem Beckhoff Antrieb AX8000 mit AoE?</p>
+<p> </p>
+<p>Wäre es grundsätzlich möglich den EtherCAT Master als ADS Router von „(TwinCAT3) – Ethernet – (ACONTIS MASTER) –AoE- (AX8000)“ zu verwenden?</p>
+<p> </p>
+<p><span style="color:#68676c;">Mit freundlichen Grüßen <br> Best regards <br> <br>
+</span><b><span style="color:#68676c;">Martin Pfefferkorn </span></b><span style="color:#68676c;"> <br> Application Engineer | Automation Austria<br> <br> P +43 (0)5522 / 34 97-1141 | <a href="mailto:martin.pfefferkorn@bachmann.info"><span style="color:#0563c1;">martin.pfefferkorn@bachmann.info</span></a> | <a href="https://www.bachmann.info/" rel="nofollow noreferrer noopener" target="_blank"><span style="color:#0563c1;">www.bachmann.info</span></a> <br> <br> Corporate Headquarters: <br> Bachmann electronic GmbH, Kreuzäckerweg 33, 6800 Feldkirch, Austria <br> FN 75348g Commercial Register Feldkirch | ATU 36410905 <br> <br> Dokumente mit rechtsverbindlichem Inhalt sind nur mit Originalunterschrift wirksam. <br>
+</span><span lang="EN-US" style="color:#68676c;">Documents with legally binding subject matter are valid only with original hand-written signature. <br> <br>
+</span><span style="color:#68676c;">Follow Bachmann on <a href="https://www.facebook.com/Bachmann.electronic/" rel="nofollow noreferrer noopener" title="https://www.facebook.com/Bachmann.electronic/" target="_blank"><span style="color:#0563c1;">Facebook</span></a> | <a href="https://www.linkedin.com/company/bachmann-electronic-gmbh" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/bachmann-electronic-gmbh" target="_blank">
+<span style="color:#0563c1;">LinkedIn</span></a> | <a href="https://twitter.com/bachmann_corp" rel="nofollow noreferrer noopener" title="https://twitter.com/bachmann_corp" target="_blank">
+<span style="color:#0563c1;">Twitter</span></a> | <a href="https://www.xing.com/companies/bachmannelectronicgmbh" rel="nofollow noreferrer noopener" title="https://www.xing.com/companies/bachmannelectronicgmbh" target="_blank">
+<span style="color:#0563c1;">Xing</span></a> | <a href="https://www.youtube.com/channel/UCE5LllKmEA5ZtBnsIpvVqxg" rel="nofollow noreferrer noopener" title="https://www.youtube.com/channel/UCE5LllKmEA5ZtBnsIpvVqxg" target="_blank">
+<span style="color:#0563c1;">YouTube</span></a></span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

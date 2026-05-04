@@ -1,0 +1,238 @@
+### HEADER
+Id=6868
+Link=http://at-zammad/#ticket/zoom/6868
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Wurmb GmbH (ID=9, Number=61006, Country=AT)
+Commission=Wurmb, Sondermaschinen (ID=9, Number=9)
+Number=706868
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=g.mueller@wurmb.at (ID=2317, FirstName=Georg, LastName=Müller [Wurmb GmbH])
+CreatedBy=g.mueller@wurmb.at (ID=2317, FirstName=Georg, LastName=Müller [Wurmb GmbH])
+Type=
+TimeUnit=
+CreatedAt=20.11.2023 17:34:40 +00:00
+UpdatedAt=24.11.2023 07:11:12 +00:00
+CloseAt=24.11.2023 07:11:12 +00:00
+ArticlesCount=5
+
+### TITLE
+AW: Windows Real-time Extension evaluation request from Wurmb GmbH
+
+### ARTICLE00_HEADER
+Id=37258
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.11.2023 17:34:40 +00:00
+UpdatedAt=20.11.2023 17:34:40 +00:00
+
+### ARTICLE00_SUBJECT
+AW: Windows Real-time Extension evaluation request from Wurmb GmbH
+
+### ARTICLE00_BODY
+<p> </p><div> <p>Herr Widmann, hallo,</p>
+<p> </p>
+<p>&gt; die Installation der Pakete können sie erst einmal normal machen.</p>
+<p> </p>
+<p>Die Installation scheitert, wie schon heute vormittags (siehe Bild anbei). Im Eventlog ist der Eintrag dafür:</p>
+<p>' Windows Installer installed the product. Product Name: Real-time Accelerator Windows. Product Version: 1.0.3.0.</p>
+<p>Product Language: 1033. Manufacturer: acontis technologies. Installation success or error status: 1602. '</p>
+<p> </p>
+<p>&gt; Danach in der Datei RtaccWinConfig.xml (C:\Program Files\acontis_technologies\Realtime-Accelerator-Windows)</p>
+<p>&gt; den folgenden Eintrag anpassen. DisableOsCheck auf True setzen</p>
+<p>&gt;</p>
+<p> </p>
+<p>&gt; Im Anschluss das Tool RtaccWinConfig neu starten.</p>
+<p> </p>
+<p>Nachvollziehbar, danke. Bloss soweit kommen wir noch nicht.</p>
+<p> </p>
+<p>- Georg Müller</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=37260
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.11.2023 18:26:18 +00:00
+UpdatedAt=20.11.2023 18:28:57 +00:00
+
+### ARTICLE01_SUBJECT
+Windows Real-time Extension evaluation request from Wurmb GmbH
+
+### ARTICLE01_BODY
+Hallo Herr Müller,<div><br></div><div>
+<span>wurde ggfs. in der ersten Installation doch etwas installiert und dann abgebrochen? Könnten Sie sicher stellen, dass dieser Ordner leer oder nicht vorhanden ist?</span><br>
+</div><div><div>C:\Program Files\acontis_technologies\Realtime-Accelerator-Windows</div></div><div><br></div><div>
+<div>Könnten Sie Ihren "TEMP" Ordner leeren und dann die Installation erneut versuchen?</div>
+<div>
+<br>
+</div>
+</div><div>Falls das nichts hilft, könnten Sie eine Konsole als Administrator öffnen, in das Verzeichnis wo sich das Setup befindet wechseln und folgendes ausführen:</div><div><div>msiexec /i RealtimeAcceleratorSetup-x86_64Bit.msi /log RealtimeAcceleratorSetup.log</div></div><div><br></div><div>Könnten Sie mir nach der Installation das Log zuschicken?</div><div>"RealtimeAcceleratorSetup.log"<br>
+</div><div><br></div><div>Mit freundlichen grüßen</div><div>Martin Gänzer</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, November 20, 2023 at 6:34:40 PM, Georg Müller [Wurmb GmbH] wrote:<br><br><p> </p>
+<div> <p>Herr Widmann, hallo,</p>
+<p> </p>
+<p>&gt; die Installation der Pakete können sie erst einmal normal machen.</p>
+<p> </p>
+<p>Die Installation scheitert, wie schon heute vormittags (siehe Bild anbei). Im Eventlog ist der Eintrag dafür:</p>
+<p>' Windows Installer installed the product. Product Name: Real-time Accelerator Windows. Product Version: 1.0.3.0.</p>
+<p>Product Language: 1033. Manufacturer: acontis technologies. Installation success or error status: 1602. '</p>
+<p> </p>
+<p>&gt; Danach in der Datei RtaccWinConfig.xml (C:\Program Files\acontis_technologies\Realtime-Accelerator-Windows)</p>
+<p>&gt; den folgenden Eintrag anpassen. DisableOsCheck auf True setzen</p>
+<p>&gt;</p>
+<p> </p>
+<p>&gt; Im Anschluss das Tool RtaccWinConfig neu starten.</p>
+<p> </p>
+<p>Nachvollziehbar, danke. Bloss soweit kommen wir noch nicht.</p>
+<p> </p>
+<p>- Georg Müller</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=37261
+ContentType=text/plain
+Internal=True
+Type=note
+CreatedAt=20.11.2023 18:28:57 +00:00
+UpdatedAt=20.11.2023 18:28:57 +00:00
+
+### ARTICLE02_BODY
+Unable to send email to 'c.widmann@acontis.com, g.mueller@wurmb.at': Can't use Channel::Driver::Smtp: #<Errno::ECONNREFUSED: Connection refused - connect(2) for "remote.acontis.com" port 465>
+
+### ARTICLE03_HEADER
+Id=37262
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.11.2023 18:36:41 +00:00
+UpdatedAt=20.11.2023 18:36:42 +00:00
+
+### ARTICLE03_SUBJECT
+Windows Real-time Extension evaluation request from Wurmb GmbH
+
+### ARTICLE03_BODY
+Hallo Herr Müller,<div><br></div><div>wurde ggfs. in der ersten Installation doch etwas installiert und dann abgebrochen? Könnten Sie sicher stellen, dass dieser Ordner leer oder nicht vorhanden ist?<br>
+</div><div><div>C:\Program Files\acontis_technologies\Realtime-Accelerator-Windows</div></div><div><br></div><div>
+<div>Könnten Sie Ihren "TEMP" Ordner leeren und dann die Installation erneut versuchen?</div>
+<div><br></div>
+</div><div>Falls das nichts hilft, könnten Sie eine Konsole als Administrator öffnen, in das Verzeichnis wo sich das Setup befindet wechseln und folgendes ausführen:</div><div><div>msiexec /i RealtimeAcceleratorSetup-x86_64Bit.msi /log RealtimeAcceleratorSetup.log</div></div><div><br></div><div>Könnten Sie mir nach der Installation das Log zuschicken?</div><div>"RealtimeAcceleratorSetup.log"<br>
+</div><div><br></div><div>Mit freundlichen grüßen</div><div>Martin Gänzer</div><div><br></div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Monday, November 20, 2023 at 6:34:40 PM, Georg Müller [Wurmb GmbH] wrote:<br><br><p> </p>
+<div> <p>Herr Widmann, hallo,</p>
+<p> </p>
+<p>&gt; die Installation der Pakete können sie erst einmal normal machen.</p>
+<p> </p>
+<p>Die Installation scheitert, wie schon heute vormittags (siehe Bild anbei). Im Eventlog ist der Eintrag dafür:</p>
+<p>' Windows Installer installed the product. Product Name: Real-time Accelerator Windows. Product Version: 1.0.3.0.</p>
+<p>Product Language: 1033. Manufacturer: acontis technologies. Installation success or error status: 1602. '</p>
+<p> </p>
+<p>&gt; Danach in der Datei RtaccWinConfig.xml (C:\Program Files\acontis_technologies\Realtime-Accelerator-Windows)</p>
+<p>&gt; den folgenden Eintrag anpassen. DisableOsCheck auf True setzen</p>
+<p>&gt;</p>
+<p> </p>
+<p>&gt; Im Anschluss das Tool RtaccWinConfig neu starten.</p>
+<p> </p>
+<p>Nachvollziehbar, danke. Bloss soweit kommen wir noch nicht.</p>
+<p> </p>
+<p>- Georg Müller</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE04_HEADER
+Id=37279
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.11.2023 07:45:37 +00:00
+UpdatedAt=21.11.2023 07:45:37 +00:00
+
+### ARTICLE04_SUBJECT
+AW: Windows Real-time Extension evaluation request from Wurmb GmbH [Ticket#706868]
+
+### ARTICLE04_BODY
+<div>
+<p>Herr Gänzer, guten Morgen,</p>
+<p> </p>
+<p>danke für Ihre freundliche und kompetente Replik, die Installation klappte.</p>
+<div>
+<p><b><span lang="DE"><p> </p></span></b></p>
+<p>&gt; wurde ggfs. in der ersten Installation doch etwas installiert und dann abgebrochen? Könnten Sie sicher</p>
+<p>&gt; stellen, dass dieser Ordner leer oder nicht vorhanden ist? C:\Program Files\acontis_technologies\Realtime-Accelerator-Windows</p>
+</div>
+<div>
+<p> </p>
+<p>Dieser Ordner war nicht vorhanden.</p>
+<p> </p>
+</div>
+<div>
+<div>
+<p>&gt; Könnten Sie Ihren "TEMP" Ordner leeren und dann die Installation erneut versuchen?</p>
+<p> </p>
+<p>Im C:\Temp-Ordner waren (in Subverzeichnissen) die entpackten Installationsquellen.</p>
+</div>
+<div>
+<p> </p>
+</div>
+</div>
+<div>
+<p>&gt; Falls das nichts hilft, könnten Sie eine Konsole als Administrator öffnen, in das Verzeichnis wo sich das Setup befindet wechseln</p>
+<p>&gt; und folgendes ausführen: msiexec /i RealtimeAcceleratorSetup-x86_64Bit.msi /log RealtimeAcceleratorSetup.log</p>
+<p> </p>
+<p>Den Temp-Folder hatte ich umbenannt und in einer Administrator-Shell Obiges ausgeführt, -- mit Erfolg diesmal.</p>
+<p> </p>
+<p>herzliche Grüße nach Ravensburg –</p>
+<p> </p>
+<p>- Georg Müller</p>
+<p> </p>
+</div>
+</div>

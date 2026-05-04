@@ -1,0 +1,119 @@
+### HEADER
+Id=9366
+Link=http://at-zammad/#ticket/zoom/9366
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Kinmatec GmbH (ID=128, Number=55011, Country=DE)
+Commission=Kinmatec (Klotz)(No Maint) (ID=145, Number=145)
+Number=709366
+Owner=c.widmann@acontis.com (ID=16, FirstName=Christoph, LastName=Widmann)
+Customer=reinhard.seefried@klotz.de (ID=2967, FirstName=Reinhard, LastName=Seefried)
+CreatedBy=reinhard.seefried@klotz.de (ID=2967, FirstName=Reinhard, LastName=Seefried)
+Type=
+TimeUnit=
+CreatedAt=20.11.2024 07:22:37 +00:00
+UpdatedAt=14.02.2025 07:07:10 +00:00
+CloseAt=30.11.2024 07:12:11 +00:00
+ArticlesCount=2
+
+### TITLE
+Anfrage EtherCAT Master für CeWin
+
+### ARTICLE00_HEADER
+Id=53067
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.11.2024 07:22:37 +00:00
+UpdatedAt=20.11.2024 07:22:37 +00:00
+
+### ARTICLE00_SUBJECT
+Anfrage EtherCAT Master für CeWin
+
+### ARTICLE00_BODY
+<p> </p><div> <p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>wir haben bei älteren Anlagen EC-Win (CeWin mit EtherCAT Master) im Einsatz.</p>
+<p> </p>
+<p>Es gibt vor allem beim Austausch von EtherCAT-Klemmen immer wieder Probleme, dass die Klemmen nicht richtig erkannt werden.</p>
+<p> </p>
+<p>Gibt es hier noch die Möglichkeit eines Updates des EtherCAT Masters? Ich glaube der sollte ja unabhängig von CE sein.</p>
+<p> </p>
+<p>Besten Dank im Voraus für Ihr Bemühen.</p>
+<p> </p>
+<div> <p>Mit freundlichen Grüßen<br> <br> Reinhard Seefried <br> <br> <img src="file:///%5C%5Cs-12-file-01.klotzgo.local%5Cxenapp_FolderRedirection%24%5Crs29%5CAppData%5CRoaming%5CMicrosoft%5CSignatures%5CKlotz%20GmbH%20deutsch%20ohne%20Mobil%20Rahmen.gif" style="max-width:100%;width:300px;max-height:2px;"></p>
+<div> <p> <b><span style="color:gray;">Reinhard Seefried</span></b><span style="color:gray;"> </span></p>
+<p> <span style="color:gray;">Leitung Softwareentwicklung </span></p>
+<p> <span style="color:gray;">Klotz GmbH <br> Robert-Bosch-Str. 1 <br> 89359 Kötz </span></p>
+<p> <span style="color:gray;">Tel.: +49 8221 905-29 <br> Fax: +49 8221 905-729 <br> E-Mail: <a href="mailto:reinhard.seefried@klotz.de"><span style="color:blue;">reinhard.seefried@klotz.de</span></a> <br> <a href="https://www.klotz.de" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.klotz.de</span></a></span></p>
+<p> <span style="color:gray;">Umsatzsteueridentifikations-Nr.: DE 130849862 <br> Registergericht: HRB 1511 Memmingen <br> Erfüllungsort und Gerichtsstand: Günzburg <br> Geschäftsführer: Peter Klotz </span></p>
+</div>
+<p><img border="0" src="file:///%5C%5Cs-12-file-01.klotzgo.local%5Cxenapp_FolderRedirection%24%5Crs29%5CAppData%5CRoaming%5CMicrosoft%5CSignatures%5CKlotz%20GmbH%20deutsch%20ohne%20Mobil%20Rahmen.gif" style="max-width:100%;width:300px;max-height:2px;"></p>
+<div> <p> <span> <br> Diese E-Mail inklusive aller Anhänge enthält vertrauliche, rechtlich geschützte Informationen. Wenn Sie nicht der richtige Adressat <br> sind oder diese E-Mail irrtümlich erhalten haben, informieren Sie bitte sofort den Absender und vernichten Sie diese Mail inkl. evtl. <br> Anhänge. Unerlaubtes Kopieren, jegliche Nutzung sowie die Weitergabe dieser Mail sind nicht gestattet. </span></p>
+</div>
+</div>
+<p><span> <br> Im Falle des Erstkontakts sind wir gemäß Art. 12, 13 DSGVO verpflichtet, datenschutzrechtliche <br> Pflichtinformationen zur Verfügung zu stellen. Diese finden Sie ausführlich in unserer <a href="https://www.klotz.de/datenschutz" rel="nofollow noreferrer noopener" title="https://www.klotz.de/datenschutz" target="_blank"><span style="color:blue;">Datenschutzerklärung.</span></a> </span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=53069
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.11.2024 07:25:25 +00:00
+UpdatedAt=20.11.2024 07:25:27 +00:00
+
+### ARTICLE01_SUBJECT
+Anfrage EtherCAT Master für CeWin
+
+### ARTICLE01_BODY
+Guten Tag Herr Seefried,<div><br></div><div>wir pflegen nach wie vor den EtherCAT Master für Windows CE und CeWin.</div><div><br></div><div>Welche EtherCAT Master Version verwenden sie aktuell?</div><div>Welche Art von Problemen sehen sie im Detail? Gar keine Verbindung oder sporadische Fehler?</div><div>Haben sie die Hardware (Netzwerkkontroller) aktualisiert?</div><div><br></div><div>Viele Grüße</div><div><br></div><div>Christoph Widmann<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Christoph Widmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, November 20, 2024 at 8:22:37 AM, Reinhard Seefried wrote:<br><br><p> </p>
+<div> <p>Sehr geehrte Damen und Herren,</p>
+<p> </p>
+<p>wir haben bei älteren Anlagen EC-Win (CeWin mit EtherCAT Master) im Einsatz.</p>
+<p> </p>
+<p>Es gibt vor allem beim Austausch von EtherCAT-Klemmen immer wieder Probleme, dass die Klemmen nicht richtig erkannt werden.</p>
+<p> </p>
+<p>Gibt es hier noch die Möglichkeit eines Updates des EtherCAT Masters? Ich glaube der sollte ja unabhängig von CE sein.</p>
+<p> </p>
+<p>Besten Dank im Voraus für Ihr Bemühen.</p>
+<p> </p>
+<div> <p>Mit freundlichen Grüßen<br> <br> Reinhard Seefried <br> <br> </p>
+<div> <p> <b><span style="color:gray;">Reinhard Seefried</span></b><span style="color:gray;"> </span></p>
+<p> <span style="color:gray;">Leitung Softwareentwicklung </span></p>
+<p> <span style="color:gray;">Klotz GmbH <br> Robert-Bosch-Str. 1 <br> 89359 Kötz </span></p>
+<p> <span style="color:gray;">Tel.: +49 8221 905-29 <br> Fax: +49 8221 905-729 <br> E-Mail: <a href="mailto:reinhard.seefried@klotz.de"><span style="color:blue;">reinhard.seefried@klotz.de</span></a> <br> <a href="https://www.klotz.de" rel="nofollow noreferrer noopener" target="_blank"><span style="color:blue;">www.klotz.de</span></a></span></p>
+<p> <span style="color:gray;">Umsatzsteueridentifikations-Nr.: DE 130849862 <br> Registergericht: HRB 1511 Memmingen <br> Erfüllungsort und Gerichtsstand: Günzburg <br> Geschäftsführer: Peter Klotz </span></p>
+</div>
+<p></p>
+<div> <p> <span> <br> Diese E-Mail inklusive aller Anhänge enthält vertrauliche, rechtlich geschützte Informationen. Wenn Sie nicht der richtige Adressat <br> sind oder diese E-Mail irrtümlich erhalten haben, informieren Sie bitte sofort den Absender und vernichten Sie diese Mail inkl. evtl. <br> Anhänge. Unerlaubtes Kopieren, jegliche Nutzung sowie die Weitergabe dieser Mail sind nicht gestattet. </span></p>
+</div>
+</div>
+<p><span> <br> Im Falle des Erstkontakts sind wir gemäß Art. 12, 13 DSGVO verpflichtet, datenschutzrechtliche <br> Pflichtinformationen zur Verfügung zu stellen. Diese finden Sie ausführlich in unserer <a href="https://www.klotz.de/datenschutz" rel="nofollow noreferrer noopener" title="https://www.klotz.de/datenschutz" target="_blank"><span style="color:blue;">Datenschutzerklärung.</span></a> </span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

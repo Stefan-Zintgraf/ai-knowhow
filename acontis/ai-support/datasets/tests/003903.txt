@@ -1,0 +1,92 @@
+### HEADER
+Id=3903
+Link=http://at-zammad/#ticket/zoom/3903
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Albrecht Roeders GmbH & Co. KG (ID=85, Number=45020, Country=DE)
+Commission=Röders, Maschinensteuerung (ID=92, Number=92)
+Number=703903
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=renken.michael@roeders.de (ID=354, FirstName=Miachel, LastName=Renken)
+CreatedBy=sales@acontis.com (ID=29, FirstName=sales, LastName=acontis)
+Type=
+TimeUnit=
+CreatedAt=15.09.2022 07:44:44 +00:00
+UpdatedAt=23.09.2022 06:22:04 +00:00
+CloseAt=23.09.2022 06:22:04 +00:00
+ArticlesCount=2
+
+### TITLE
+Update Request from Röders GmbH
+
+### ARTICLE00_HEADER
+Id=20721
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.09.2022 07:44:44 +00:00
+UpdatedAt=15.09.2022 07:44:46 +00:00
+
+### ARTICLE00_SUBJECT
+Update Request from Röders GmbH
+
+### ARTICLE00_BODY
+<p> </p><p>Dear Mr./Ms. Renken,</p><p>thank you for your registration.<br>
+<br></p><p>First Name: Michael<br> Last Name: Renken <br> Company: Röders GmbH <br> Country: Germany <br> City: 29614 Soltau <br> E-Mail: renken.michael@roeders.de <br> Request update for: <span>EC-Master,EC-Engineer <br></span>Update Type: <br> Operating System: EC-Master: Linux 64bit, EC-Engineer: Windows <br> Operating Sys. Version: <br> Any Questions?: <span>
+<br>
+<br></span></p><p><img src="/api/v1/ticket_attachment/3903/20721/85635?view=inline" alt="" style="max-width:100%;width:163px;max-height:85px;"></p><p><span>acontis technologies GmbH <br>Gartenstraße 46, 88212 Ravensburg/Germany <br> Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a>
+<br> eMail: <a href="mailto:sales@acontis.com">sales@acontis.com <br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/3903/20721/85634?view=inline" style="max-width:100%;width:22px;max-height:22px;"></a></span></p>
+
+### ARTICLE01_HEADER
+Id=20727
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=15.09.2022 08:47:37 +00:00
+UpdatedAt=15.09.2022 08:47:38 +00:00
+
+### ARTICLE01_SUBJECT
+Update Request from Röders GmbH
+
+### ARTICLE01_BODY
+Hallo Herr Renken,<div><br></div><div>hier sind ihre angefragten Paketen:</div><div><br></div><div>
+<div><a href="https://downloads.acontis.com/2022/P-R/R%C3%B6ders_GmbH_(45020)(DE)/EC-Master_Class_A_Linux/3.1.4.04/EC-Master-ClassA-AddOn-V3.1.4.04-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2022/P-R/Röders_GmbH_(45020)(DE)/EC-Master_Class_A_Linux/3.1.4.04/EC-Master-ClassA-AddOn-V3.1.4.04-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/P-R/Röders_GmbH_(45020)(DE)/EC-Master_Class_A_Linux/3.1.4.04/EC-Master-ClassA-AddOn-V3.1.4.04-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2022/P-R/R%C3%B6ders_GmbH_(45020)(DE)/EC-Master_Class_A_Linux/3.1.4.04/EC-Master-I8254x-V3.1.4.04-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2022/P-R/Röders_GmbH_(45020)(DE)/EC-Master_Class_A_Linux/3.1.4.04/EC-Master-I8254x-V3.1.4.04-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/P-R/Röders_GmbH_(45020)(DE)/EC-Master_Class_A_Linux/3.1.4.04/EC-Master-I8254x-V3.1.4.04-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2022/P-R/R%C3%B6ders_GmbH_(45020)(DE)/EC-Master_Class_A_Linux/3.1.4.04/EC-Master-V3.1.4.04-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2022/P-R/Röders_GmbH_(45020)(DE)/EC-Master_Class_A_Linux/3.1.4.04/EC-Master-V3.1.4.04-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/P-R/Röders_GmbH_(45020)(DE)/EC-Master_Class_A_Linux/3.1.4.04/EC-Master-V3.1.4.04-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div>
+<div><a href="https://downloads.acontis.com/2022/P-R/R%C3%B6ders_GmbH_(45020)(DE)/EC-Engineer/3.7.4/EC-Engineer_Dongle_V3.7.4.zip" title="https://downloads.acontis.com/2022/P-R/Röders_GmbH_(45020)(DE)/EC-Engineer/3.7.4/EC-Engineer_Dongle_V3.7.4.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2022/P-R/Röders_GmbH_(45020)(DE)/EC-Engineer/3.7.4/EC-Engineer_Dongle_V3.7.4.zip</a></div>
+</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, September 15, 2022 at 9:44:44 AM, sales acontis wrote:<br><br><p> </p>
+<p>Dear Mr./Ms. Renken,</p>
+<p>thank you for your registration.<br>
+<br></p>
+<p>First Name: Michael<br> Last Name: Renken <br> Company: Röders GmbH <br> Country: Germany <br> City: 29614 Soltau <br> E-Mail: renken.michael@roeders.de <br> Request update for: <span>EC-Master,EC-Engineer <br></span>Update Type: <br> Operating System: EC-Master: Linux 64bit, EC-Engineer: Windows <br> Operating Sys. Version: <br> Any Questions?: <span>
+<br>
+<br></span></p>
+<p><img src="/api/v1/ticket_attachment/3903/20727/85650?view=inline" alt="" style="max-width:100%;max-width:100%;width:163px;max-height:85px;"></p>
+<p><span>acontis technologies GmbH <br>Gartenstraße 46, 88212 Ravensburg/Germany <br> Web: <a href="http://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">http://www.acontis.com</a>
+<br> eMail: <a href="mailto:sales@acontis.com">sales@acontis.com <br></a>Follow us on <a href="https://www.linkedin.com/company/acontis-technologies/" rel="nofollow noreferrer noopener" title="https://www.linkedin.com/company/acontis-technologies/" target="_blank"><img src="/api/v1/ticket_attachment/3903/20727/85651?view=inline" style="max-width:100%;max-width:100%;width:22px;max-height:22px;"></a></span></p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

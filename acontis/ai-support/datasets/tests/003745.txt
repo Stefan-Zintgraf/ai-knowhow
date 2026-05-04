@@ -1,0 +1,153 @@
+### HEADER
+Id=3745
+Link=http://at-zammad/#ticket/zoom/3745
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Philips Medical Systems NL BV (ID=310, Number=57503, Country=NL)
+Commission=Philips Medical, Computertomograph (ID=366, Number=366)
+Number=703745
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=harry.franken@philips.com (ID=567, FirstName=Harry, LastName=Franken)
+CreatedBy=harry.franken@philips.com (ID=567, FirstName=Harry, LastName=Franken)
+Type=
+TimeUnit=
+CreatedAt=23.08.2022 07:52:20 +00:00
+UpdatedAt=06.10.2022 14:10:47 +00:00
+CloseAt=24.08.2022 06:49:27 +00:00
+ArticlesCount=5
+
+### TITLE
+atem stack 3.x source code error/fix?
+
+### ARTICLE00_HEADER
+Id=19858
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.08.2022 07:52:20 +00:00
+UpdatedAt=23.08.2022 07:52:20 +00:00
+
+### ARTICLE00_SUBJECT
+atem stack 3.x source code error/fix?
+
+### ARTICLE00_BODY
+<div>
+<p>Acontis,</p>
+<p>See the 2 attachments.</p>
+<p>The .org is the one delivered by acontis; The .new one contains in my opinion a minor fix.</p>
+<p>Regards</p>
+<p>Harry.</p>
+</div><br>
+<hr> The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.
+
+### ARTICLE01_HEADER
+Id=19933
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.08.2022 06:49:27 +00:00
+UpdatedAt=24.08.2022 06:52:02 +00:00
+
+### ARTICLE01_SUBJECT
+atem stack 3.x source code error/fix?
+
+### ARTICLE01_BODY
+Hi Harry,<div>your right we have to fix this.</div><div><br></div><div>thanks &amp; best regards</div><div>Daniel</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, 23 August 2022 at 09:52:20, Harry Franken wrote:<br><br><div>
+<p>Acontis,</p>
+<p>See the 2 attachments.</p>
+<p>The .org is the one delivered by acontis; The .new one contains in my opinion a minor fix.</p>
+<p>Regards</p>
+<p>Harry.</p>
+</div>
+<br>
+<hr> The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=19934
+ContentType=text/plain
+Internal=True
+Type=note
+CreatedAt=24.08.2022 06:52:02 +00:00
+UpdatedAt=24.08.2022 06:52:02 +00:00
+
+### ARTICLE02_BODY
+Unable to send email to 'harry.franken@philips.com': Can't use Channel::Driver::Smtp: #<Net::SMTPServerBusy: 421 4.3.2 Server license expired
+>
+
+### ARTICLE03_HEADER
+Id=19978
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.08.2022 11:10:38 +00:00
+UpdatedAt=25.08.2022 11:10:41 +00:00
+
+### ARTICLE03_SUBJECT
+atem stack 3.x source code error/fix?
+
+### ARTICLE03_BODY
+Hi Harry,<div>your right we have to fix this.</div><div><br></div><div>thanks &amp; best regards</div><div>Daniel</div><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div><div>
+<br><br>
+</div><div><blockquote type="cite">On Tuesday, 23 August 2022 at 09:52:20, Harry Franken wrote:<br><br><div>
+<p>Acontis,</p>
+<p>See the 2 attachments.</p>
+<p>The .org is the one delivered by acontis; The .new one contains in my opinion a minor fix.</p>
+<p>Regards</p>
+<p>Harry.</p>
+</div>
+<br>
+<hr> The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE04_HEADER
+Id=21383
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=06.10.2022 14:10:47 +00:00
+UpdatedAt=06.10.2022 14:10:47 +00:00
+
+### ARTICLE04_BODY
+Fix in V3.1.4.04 HOF 24.08.2022

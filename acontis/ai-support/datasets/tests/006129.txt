@@ -1,0 +1,151 @@
+### HEADER
+Id=6129
+Link=http://at-zammad/#ticket/zoom/6129
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=NASA JSC ER5 Projects (ID=376, Number=40325, Country=US)
+Commission=NASA JSC ER5 Projects (ID=447, Number=447)
+Number=706129
+Owner=h.jebali@acontis.com (ID=332, FirstName=Haithem, LastName=Jebali)
+Customer=derek.r.bankieris@nasa.gov (ID=641, FirstName=Derek, LastName=Bankieris)
+CreatedBy=derek.r.bankieris@nasa.gov (ID=641, FirstName=Derek, LastName=Bankieris)
+Type=
+TimeUnit=
+CreatedAt=09.08.2023 15:56:23 +00:00
+UpdatedAt=30.08.2023 06:14:27 +00:00
+CloseAt=30.08.2023 06:14:27 +00:00
+ArticlesCount=3
+
+### TITLE
+[EXTERNAL] Delivery for NASA JSC, ER Division Projects, Commission 40325
+
+### ARTICLE00_HEADER
+Id=32812
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.08.2023 15:56:23 +00:00
+UpdatedAt=09.08.2023 15:56:23 +00:00
+
+### ARTICLE00_SUBJECT
+[EXTERNAL] Delivery for NASA JSC, ER Division Projects, Commission 40325
+
+### ARTICLE00_BODY
+<div>
+<p>Thanks for the update! Unfortunately, I’m unable to build against libEcMaster.a now:</p>
+<p> </p>
+<p>/usr/bin/ld: ../ec-master/SDK/LIB/Linux/x64/libEcMaster.a(EcDeviceBase.o): in function `EcMaster::CEcDeviceBase::PreProcessFrame(_EC_T_LINK_FRAMEDESC*, unsigned int)':</p>
+<p>EcDeviceBase.cpp:(.text+0x132a): undefined reference to `RtosGetIdByNameA40'</p>
+<p>/usr/bin/ld: EcDeviceBase.cpp:(.text+0x13e8): undefined reference to `RtosGetIdByNameA40'</p>
+<p>collect2: error: ld returned 1 exit status</p>
+<p> </p>
+<p>EcMasterDemo also won’t run:</p>
+<p> </p>
+<p>./EcMasterDemo: error while loading shared libraries: librtos.so.1: cannot open shared object file: No such file or directory</p>
+<p> </p>
+<p>Looks like someone might have built this delivery against a dependency that usually isn’t included?</p>
+<p> </p>
+<p>dbankier@cabuntu:~/vm_share/EC-Master/Bin/Linux/x64$ ldd EcMasterDemo</p>
+<p>linux-vdso.so.1 (0x00007ffc749eb000)</p>
+<p>librtos.so.1 =&gt; not found</p>
+<p>libpthread.so.0 =&gt; /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f35e03bb000)</p>
+<p>libdl.so.2 =&gt; /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f35e03b5000)</p>
+<p>librt.so.1 =&gt; /lib/x86_64-linux-gnu/librt.so.1 (0x00007f35e03ab000)</p>
+<p>libstdc++.so.6 =&gt; /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f35e01c9000)</p>
+<p>libm.so.6 =&gt; /lib/x86_64-linux-gnu/libm.so.6 (0x00007f35e007a000)</p>
+<p>libgcc_s.so.1 =&gt; /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f35e005d000)</p>
+<p>libc.so.6 =&gt; /lib/x86_64-linux-gnu/libc.so.6 (0x00007f35dfe6b000)</p>
+<p>/lib64/ld-linux-x86-64.so.2 (0x00007f35e041d000)</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> EtherCAT Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Thursday, August 3, 2023 3:42 AM<br>
+<b>To:</b> Bankieris, Derek R. (JSC-ER511) &lt;derek.r.bankieris@nasa.gov&gt;<br>
+<b>Cc:</b> j.waters@acontis.com<br>
+<b>Subject:</b> [EXTERNAL] Delivery for NASA JSC, ER Division Projects, Commission 40325</p>
+</div>
+</div>
+<p> </p>
+<table border="1" cellspacing="0" cellpadding="0" align="left" style="border:solid black 1.5pt;">
+<tbody>
+<tr>
+<td style="border:none;background:#ffeb9c;padding:3.75pt 3.75pt 3.75pt 3.75pt;">
+<p>
+<b>CAUTION:</b> This email originated from outside of NASA. Please take care when clicking links or opening attachments. Use the "Report Message" button to report suspicious messages to the NASA SOC. </p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span lang="DE"><br>
+<br>
+</span></p>
+<div>
+<p><span lang="DE">Dear Customer, </span></p>
+<p><span lang="DE">please find your new software version below: </span></p>
+<p><span lang="DE"><a href="https://downloads.acontis.com/2023/M-O/NASA_JSC_(40325)(US)/EC-Master_Linux_x86_64Bit/3.2.1.01/EC-Master-ClassA-AddOn-V3.2.1.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/M-O/NASA_JSC_(40325)(US)/EC-Master_Linux_x86_64Bit/3.2.1.01/EC-Master-ClassA-AddOn-V3.2.1.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></span></p>
+<p><span lang="DE"><a href="https://downloads.acontis.com/2023/M-O/NASA_JSC_(40325)(US)/EC-Master_Linux_x86_64Bit/3.2.1.01/EC-Master-IntelGbe-V3.2.1.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/M-O/NASA_JSC_(40325)(US)/EC-Master_Linux_x86_64Bit/3.2.1.01/EC-Master-IntelGbe-V3.2.1.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></span></p>
+<p><span lang="DE"><a href="https://downloads.acontis.com/2023/M-O/NASA_JSC_(40325)(US)/EC-Master_Linux_x86_64Bit/3.2.1.01/EC-Master-V3.2.1.01-EC-WinRT-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/M-O/NASA_JSC_(40325)(US)/EC-Master_Linux_x86_64Bit/3.2.1.01/EC-Master-V3.2.1.01-EC-WinRT-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></span></p>
+<p><span lang="DE">Password: ECM88250 </span></p>
+<p><span lang="DE">Best Regards, <br> Cyril Eyssautier <br> ________________ <br> EtherCAT Support <br> acontis technologies GmbH <br> Gartenstraße 46 <br> 88212 Ravensburg/Germany <br> Http: <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a> <br> Phone: +49 (751) 56030-30 <br> eMail: <a href="mailto:ecsupport@acontis.com">ecsupport@acontis.com</a> </span></p>
+<p><span lang="DE">This is an automatic generated eMail. </span></p>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=32813
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.08.2023 16:13:03 +00:00
+UpdatedAt=09.08.2023 16:13:05 +00:00
+
+### ARTICLE01_SUBJECT
+[EXTERNAL] Delivery for NASA JSC, ER Division Projects, Commission 40325
+
+### ARTICLE01_BODY
+<div>Hi,</div><div><br></div><div>it looks like you obtained a faulty package (the Master package was for LxWin). In the following link you can find the package for native X64 linux:</div><div>
+<div><a href="https://downloads.acontis.com/2023/M-O/NASA_JSC_(40325)(US)/EC-Master_Linux_x86_64Bit/3.2.1.01/EC-Master-V3.2.1.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" title="https://downloads.acontis.com/2023/M-O/NASA_JSC_(40325)(US)/EC-Master_Linux_x86_64Bit/3.2.1.01/EC-Master-V3.2.1.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/2023/M-O/NASA_JSC_(40325)(US)/EC-Master_Linux_x86_64Bit/3.2.1.01/EC-Master-V3.2.1.01-Linux-x86_64Bit-SDK_Unrestricted.tar.gz</a></div>
+<div><br></div>
+<div>Password: ECM88250</div>
+<div><br></div>
+<div>Best Regards</div>Haithem Jebali</div><div><br></div><div><blockquote type="cite">On Wednesday, August 9, 2023 at 5:56:23 PM, Derek Bankieris wrote:<br><br>RtosGetIdByNameA40<br>
+</blockquote></div><div><br></div><br><br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Haithem Jebali</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=32814
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=09.08.2023 16:13:10 +00:00
+UpdatedAt=09.08.2023 16:13:10 +00:00
+
+### ARTICLE02_SUBJECT
+RE: [EXTERNAL] Delivery for NASA JSC, ER Division Projects, Commission 40325 [Ticket#706129]
+
+### ARTICLE02_BODY
+I am on vacation and my availability is limited until Monday August 28, 2023 and emails will not be read during this time.
+
+If you need assistance:
+- for orders and licenses, please email us-sales@acontis.com
+- for technical support with our EtherCAT products, please email ecsupport@acontis.com
+- for technical support with our Real-time products, please email rtsupport@acontis.com
+
+If your matter is urgent, you can reach me at +1-508-809-7201 and please leave a voicemail. Otherwise, I will respond to your email as soon as possible upon my return.

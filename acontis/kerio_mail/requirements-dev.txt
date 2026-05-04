@@ -1,0 +1,4 @@
+# Dev: pytest + HTTP mocking for Kerio JSON-RPC tests.
+-r requirements.txt
+pytest>=8.0
+responses>=0.25.0

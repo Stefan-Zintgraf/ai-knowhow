@@ -1,0 +1,159 @@
+### HEADER
+Id=5800
+Link=http://at-zammad/#ticket/zoom/5800
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Walt Disney Imaging (WDI) (ID=395, Number=40160, Country=US)
+Commission=WDI, R&D Vehicle Development (ID=467, Number=467)
+Number=705800
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=david.brennan.-nd@disney.com (ID=994, FirstName=David, LastName=Brennan)
+CreatedBy=david.brennan.-nd@disney.com (ID=994, FirstName=David, LastName=Brennan)
+Type=
+TimeUnit=
+CreatedAt=22.06.2023 00:02:08 +00:00
+UpdatedAt=14.07.2023 06:01:55 +00:00
+CloseAt=14.07.2023 06:01:55 +00:00
+ArticlesCount=3
+
+### TITLE
+Error in ECMotionControl.h
+
+### ARTICLE00_HEADER
+Id=30979
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.06.2023 00:02:08 +00:00
+UpdatedAt=22.06.2023 00:02:08 +00:00
+
+### ARTICLE00_SUBJECT
+Error in ECMotionControl.h
+
+### ARTICLE00_BODY
+<div>
+<p>I just decided to try out EC-Motion. But there is an error in the header file:</p>
+<p>C:\Project28\SW\Wayside\WRCS660\src\Dev/EtherCAT/Acontis/EC-Shared/INC/EcMotionControl.h:1434:18: error: 'const' type qualifier on return type has no effect [-Werror,-Wignored-qualifiers]</p>
+<p>const char * const GetName() const;</p>
+<p>^~~~~~</p>
+<p> </p>
+<p>I cannot be 100% sure what version I have for the EC-Motion, as many of my updates haven’t included all files/libraries.</p>
+<p>The top of the header file has:</p>
+<p>* 20Jan23 | 26| Enhancement: Functions blocks for GearIn and GearOut</p>
+<p> </p>
+<p>Which is odd because the documentation that I’m working from specifically says that GearIn and GearOut are not supported.</p>
+<p><img style="max-width:100%;width:6.5416in;max-height:7.677in;width:628px;max-height:737px;" src="/api/v1/ticket_attachment/5800/30979/129283?view=inline"></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=30991
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=22.06.2023 14:41:29 +00:00
+UpdatedAt=22.06.2023 14:41:29 +00:00
+
+### ARTICLE01_SUBJECT
+Error in ECMotionControl.h
+
+### ARTICLE01_BODY
+<div>
+<p>One more quick follow up question. How does EC-Motion control “powering up” the drive? It does not require mapping 0x6040 and 0x6041 to anything. I had assumed those were the digital inputs and digital outputs that were required. But the documentation indicates those should be 0x60FD and 0x60FE which are “generic” digital inputs and outputs.</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Brennan, David -ND <br>
+<b>Sent:</b> Wednesday, June 21, 2023 5:02 PM<br>
+<b>To:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Cc:</b> Wu, Mark H. (WDI) &lt;Mark.H.Wu@disney.com&gt;; Athans, Kristin &lt;Kristin.Athans@disney.com&gt;<br>
+<b>Subject:</b> Error in ECMotionControl.h</p>
+</div>
+</div>
+<p> </p>
+<p>I just decided to try out EC-Motion. But there is an error in the header file:</p>
+<p>C:\Project28\SW\Wayside\WRCS660\src\Dev/EtherCAT/Acontis/EC-Shared/INC/EcMotionControl.h:1434:18: error: 'const' type qualifier on return type has no effect [-Werror,-Wignored-qualifiers]</p>
+<p>const char * const GetName() const;</p>
+<p>^~~~~~</p>
+<p> </p>
+<p>I cannot be 100% sure what version I have for the EC-Motion, as many of my updates haven’t included all files/libraries.</p>
+<p>The top of the header file has:</p>
+<p>* 20Jan23 | 26| Enhancement: Functions blocks for GearIn and GearOut</p>
+<p> </p>
+<p>Which is odd because the documentation that I’m working from specifically says that GearIn and GearOut are not supported.</p>
+<p><img style="max-width:100%;width:6.5416in;max-height:7.677in;width:628px;max-height:737px;" src="/api/v1/ticket_attachment/5800/30991/129338?view=inline"></p>
+<p> </p>
+</div>
+
+### ARTICLE02_HEADER
+Id=31004
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=23.06.2023 06:22:05 +00:00
+UpdatedAt=23.06.2023 06:22:07 +00:00
+
+### ARTICLE02_SUBJECT
+Error in ECMotionControl.h
+
+### ARTICLE02_BODY
+<div>Hi David,</div><div><br></div><div>if you look for 6040 in <span>D:\Proj\ec-embedded-V3.1\Examples\EcMasterDemoMotion\MotionDemo.cpp, you will find the following:</span>
+</div><div><br></div><div>
+<div>EC_T_VARIDX IdxControlword; default for DS402: DRV_OBJ_CONTROL_WORD 0x6040</div>
+<div><br></div>
+<div>This is used by the motion library to run the DS402 state machine.</div>
+<div><br></div>
+<div>Best Regards,</div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, June 22, 2023 at 4:41:29 PM, David Brennan wrote:<br><br><div>
+<p>One more quick follow up question. How does EC-Motion control “powering up” the drive? It does not require mapping 0x6040 and 0x6041 to anything. I had assumed those were the digital inputs and digital outputs that were required. But the documentation indicates those should be 0x60FD and 0x60FE which are “generic” digital inputs and outputs.</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Brennan, David -ND <br>
+<b>Sent:</b> Wednesday, June 21, 2023 5:02 PM<br>
+<b>To:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Cc:</b> Wu, Mark H. (WDI) &lt;Mark.H.Wu@disney.com&gt;; Athans, Kristin &lt;Kristin.Athans@disney.com&gt;<br>
+<b>Subject:</b> Error in ECMotionControl.h</p>
+</div>
+</div>
+<p> </p>
+<p>I just decided to try out EC-Motion. But there is an error in the header file:</p>
+<p>C:\Project28\SW\Wayside\WRCS660\src\Dev/EtherCAT/Acontis/EC-Shared/INC/EcMotionControl.h:1434:18: error: 'const' type qualifier on return type has no effect [-Werror,-Wignored-qualifiers]</p>
+<p>const char * const GetName() const;</p>
+<p>^~~~~~</p>
+<p> </p>
+<p>I cannot be 100% sure what version I have for the EC-Motion, as many of my updates haven’t included all files/libraries.</p>
+<p>The top of the header file has:</p>
+<p>* 20Jan23 | 26| Enhancement: Functions blocks for GearIn and GearOut</p>
+<p> </p>
+<p>Which is odd because the documentation that I’m working from specifically says that GearIn and GearOut are not supported.</p>
+<p><img style="max-width:100%;max-width:100%;width:6.5416in;max-height:7.677in;width:628px;max-height:737px;" src="/api/v1/ticket_attachment/5800/31004/129358?view=inline"></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<div><br></div>
+<br><br>
+</div>

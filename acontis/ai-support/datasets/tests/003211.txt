@@ -1,0 +1,84 @@
+### HEADER
+Id=3211
+Link=http://at-zammad/#ticket/zoom/3211
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Google LLC (ID=351, Number=40421, Country=US)
+Commission=Google LLC, X, Real-time robot motion control (ID=417, Number=417)
+Number=703211
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=asakaplan@google.com (ID=545, FirstName=Asa, LastName=Kaplan)
+CreatedBy=asakaplan@google.com (ID=545, FirstName=Asa, LastName=Kaplan)
+Type=
+TimeUnit=
+CreatedAt=13.06.2022 10:01:28 +00:00
+UpdatedAt=01.07.2022 06:08:44 +00:00
+CloseAt=01.07.2022 06:08:44 +00:00
+ArticlesCount=2
+
+### TITLE
+Ignore missing devices on bus
+
+### ARTICLE00_HEADER
+Id=16921
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.06.2022 10:01:28 +00:00
+UpdatedAt=13.06.2022 10:01:28 +00:00
+
+### ARTICLE00_SUBJECT
+Ignore missing devices on bus
+
+### ARTICLE00_BODY
+<div dir="ltr">
+<br>Hello,<br><br>We intialize EC Master using an ENI file and are wondering if it is possible to ignore a device on the bus.<br><br>Our goal is to use devices that are chained to a Beckhoff ET1100 device that is not flashed with any firmware.<br><br>The bus scan correctly shows the daisy chained devices, but we fail to enter cyclic OP.<br><br>Bus Scan:<br><br>ID..................: 0x00000001 <br>Bus Index...........: 0 <br>Bus AutoInc Address.: 0x0000 ( 0) <br>Bus Station Address.: 0x03ea (1002) <br>Bus Alias Address...: 0x0000 ( 0) <br>Vendor ID...........: 0xFFFFFFFF = Unknown <br>Product Code........: 0xFFFFFFFF = Unknown <br>Revision............: 0xFFFFFFFF Serial Number: -1 <br>ESC Type............: Beckhoff ET1100 (0x11) Revision: 0 Build: 3<br>Connection at Port A: yes (to 0x00010000) <br>Connection at Port D: no (to 0xFFFFFFFF) <br>Connection at Port B: yes (to 0x00000002) <br>Connection at Port C: no (to 0xFFFFFFFF) <br>Line Crossed........: no <br>Line Crossed Flags..: 0x0 <br><br>******************************************************************************<br><br>ID..................: 0x00000002 <br>Bus Index...........: 1 <br>Bus AutoInc Address.: 0xffff (65535) <br>Bus Station Address.: 0x03eb (1003) <br>Bus Alias Address...: 0x0000 ( 0) <br>...<br><br>What we tried:<br><br>1A: Disabled the Beckhoff ET1100 device in TcXaeShell. This seems to remove it from the ENI and we get: Scan bus mismatch for the first slave on bus.<br>1B: Only defined the chained devices with the same result as in 1A.<br>2A: Defined the Beckhoff ET1100 device as EJ1100 EtherCAT Coupler, disabled the vendor and device type checks (unchecked everything in the advanced EtherCAT settings), and set the Final State to INIT. We additionally modified the ENI the port if the chained device to B.<br> * This results in `Slave init command working counter error - Slave Term 6 (EJ1100): - EtherCAT address=1002 - Command: FPWR - Logical/Physical address: 0x12003ea, WKC act/set=0/1`<br>2B: After also modifiying the `InitCmds` of the ET1100 device, the EC master seems to hang on a state change:<br> Cannot start set master state to SAFEOP: ERROR: Time-out (0x98110010)<br> ecatSetMasterState() Error 0x98110010 in McSm state 'START' for requested state 'START' <br> ...<br> WLP.cpp:815] Writer 01.0f.26.8e.01.00.12.cf.01.00.00.00|0.0.2.3 not found.<br> No response on cyclic Ethernet frame <br><div> </div>
+<div>Thanks!</div>
+<div>Asa Kaplan</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=16947
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=13.06.2022 14:36:54 +00:00
+UpdatedAt=13.06.2022 14:36:58 +00:00
+
+### ARTICLE01_SUBJECT
+Ignore missing devices on bus
+
+### ARTICLE01_BODY
+Hi Asa,<div><br></div><div>please consider <a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=ec_ioctl_all_slaves_must_reach_master_state#emiocontrol-ec-ioctl-all-slaves-must-reach-master-state" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=ec_ioctl_all_slaves_must_reach_master_state#emiocontrol-ec-ioctl-all-slaves-must-reach-master-state" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/api.html?highlight=ec_ioctl_all_slaves_must_reach_master_state#emiocontrol-ec-ioctl-all-slaves-must-reach-master-state</a>
+</div><div><br></div><div>using this mode of operation should ignore missing config slaves and unexpected bus slaves.</div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, June 13, 2022, 12:01:28 PM, Asa Kaplan wrote:<br><br><div dir="ltr">
+<br>Hello,<br><br>We intialize EC Master using an ENI file and are wondering if it is possible to ignore a device on the bus.<br><br>Our goal is to use devices that are chained to a Beckhoff ET1100 device that is not flashed with any firmware.<br><br>The bus scan correctly shows the daisy chained devices, but we fail to enter cyclic OP.<br><br>Bus Scan:<br><br>ID..................: 0x00000001 <br>Bus Index...........: 0 <br>Bus AutoInc Address.: 0x0000 ( 0) <br>Bus Station Address.: 0x03ea (1002) <br>Bus Alias Address...: 0x0000 ( 0) <br>Vendor ID...........: 0xFFFFFFFF = Unknown <br>Product Code........: 0xFFFFFFFF = Unknown <br>Revision............: 0xFFFFFFFF Serial Number: -1 <br>ESC Type............: Beckhoff ET1100 (0x11) Revision: 0 Build: 3<br>Connection at Port A: yes (to 0x00010000) <br>Connection at Port D: no (to 0xFFFFFFFF) <br>Connection at Port B: yes (to 0x00000002) <br>Connection at Port C: no (to 0xFFFFFFFF) <br>Line Crossed........: no <br>Line Crossed Flags..: 0x0 <br><br>******************************************************************************<br><br>ID..................: 0x00000002 <br>Bus Index...........: 1 <br>Bus AutoInc Address.: 0xffff (65535) <br>Bus Station Address.: 0x03eb (1003) <br>Bus Alias Address...: 0x0000 ( 0) <br>...<br><br>What we tried:<br><br>1A: Disabled the Beckhoff ET1100 device in TcXaeShell. This seems to remove it from the ENI and we get: Scan bus mismatch for the first slave on bus.<br>1B: Only defined the chained devices with the same result as in 1A.<br>2A: Defined the Beckhoff ET1100 device as EJ1100 EtherCAT Coupler, disabled the vendor and device type checks (unchecked everything in the advanced EtherCAT settings), and set the Final State to INIT. We additionally modified the ENI the port if the chained device to B.<br> * This results in `Slave init command working counter error - Slave Term 6 (EJ1100): - EtherCAT address=1002 - Command: FPWR - Logical/Physical address: 0x12003ea, WKC act/set=0/1`<br>2B: After also modifiying the `InitCmds` of the ET1100 device, the EC master seems to hang on a state change:<br> Cannot start set master state to SAFEOP: ERROR: Time-out (0x98110010)<br> ecatSetMasterState() Error 0x98110010 in McSm state 'START' for requested state 'START' <br> ...<br> WLP.cpp:815] Writer 01.0f.26.8e.01.00.12.cf.01.00.00.00|0.0.2.3 not found.<br> No response on cyclic Ethernet frame <br><div> </div>
+<div>Thanks!</div>
+<div>Asa Kaplan</div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

@@ -1,0 +1,234 @@
+### HEADER
+Id=1622
+Link=http://at-zammad/#ticket/zoom/1622
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Spuehl GmbH (ID=23, Number=59025, Country=CH)
+Commission=Spühl, Strg. Federkernmach.(No Maint) (ID=25, Number=25)
+Number=701622
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=martin.uhland@spuhl.com (ID=18, FirstName=Martin, LastName=Uhland)
+CreatedBy=martin.uhland@spuhl.com (ID=18, FirstName=Martin, LastName=Uhland)
+Type=
+TimeUnit=
+CreatedAt=14.10.2021 07:31:15 +00:00
+UpdatedAt=14.10.2021 10:05:27 +00:00
+CloseAt=14.10.2021 10:05:27 +00:00
+ArticlesCount=4
+
+### TITLE
+Process Data Mode LWR
+
+### ARTICLE00_HEADER
+Id=8749
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.10.2021 07:31:15 +00:00
+UpdatedAt=14.10.2021 07:31:18 +00:00
+
+### ARTICLE00_SUBJECT
+Process Data Mode LWR
+
+### ARTICLE00_BODY
+<div>
+<p>Guten Tag</p>
+<p> </p>
+<p>Wir haben einen Slave durch seinen Nachfolger ersetzt.</p>
+<p>In der alten Konfiguration war bei "Erweiterte Einstellungen / Prozessdaten-Modus" "LRW deaktivieren" angewählt, bzw. konnte gar nicht abgewählt werden.</p>
+<p>In der neuen Slave-Konfiguration ist es anwählbar und per Default nicht deaktiviert.</p>
+<p> </p>
+<p>Offensichtlich haben wir den Logical Memory Read Write bisher nicht verwendet. Kann die Deaktivierung nicht angeklickt bleiben und funktioniert dann immer noch alles oder wäre es besser, das zu deaktivieren, um nicht unnötige Last oder irgendwelche Effekte zu haben?</p>
+<p> </p>
+<p>Vielen Dank und Gruss</p>
+<p>Martin</p>
+<p> </p>
+<p>Martin Uhland</p>
+<p>Entwicklungsingenieur Elektronik / Electronic Development Engineer</p>
+<p> </p>
+<p><b>Spühl GmbH</b></p>
+<p>Grüntalstrasse 23</p>
+<p>9300 Wittenbach</p>
+<p>SWITZERLAND</p>
+<p> </p>
+<p>Phone: +41 71 292 11 68</p>
+<p>martin.uhland@spuhl.com</p>
+<p>www.spuhl.com</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=8750
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.10.2021 07:51:10 +00:00
+UpdatedAt=14.10.2021 07:51:11 +00:00
+
+### ARTICLE01_SUBJECT
+Process Data Mode LWR
+
+### ARTICLE01_BODY
+<div>
+<br><br>
+</div><div><blockquote type="cite">On Thursday, October 14, 2021, 9:31:15 AM, Martin Uhland wrote:<br><br><p>ielen Dank und Gruss</p>
+<p>Martin</p>
+<br>
+</blockquote></div><div><br></div><br><br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Cyril Eyssautier </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+
+### ARTICLE02_HEADER
+Id=8751
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.10.2021 07:53:48 +00:00
+UpdatedAt=14.10.2021 07:53:48 +00:00
+
+### ARTICLE02_SUBJECT
+Process Data Mode LWR
+
+### ARTICLE02_BODY
+<div>Hallo Herr Uhland,</div><div><br></div><div>beides sollte gehen.</div><div><br></div><div>Wenn die Slaves die gleiche Menge an Nutzdaten haben, können sie es anklicken. Damit haben sie weniger Unterschiede. </div><div><br></div><div>Schöne Grüße,</div><div>Cyril Eyssautier<br><br>
+</div><div><blockquote type="cite">On Thursday, October 14, 2021, 9:31:15 AM, Martin Uhland wrote:<br><br><div>
+<p>Guten Tag</p>
+<p> </p>
+<p>Wir haben einen Slave durch seinen Nachfolger ersetzt.</p>
+<p>In der alten Konfiguration war bei "Erweiterte Einstellungen / Prozessdaten-Modus" "LRW deaktivieren" angewählt, bzw. konnte gar nicht abgewählt werden.</p>
+<p>In der neuen Slave-Konfiguration ist es anwählbar und per Default nicht deaktiviert.</p>
+<p> </p>
+<p>Offensichtlich haben wir den Logical Memory Read Write bisher nicht verwendet. Kann die Deaktivierung nicht angeklickt bleiben und funktioniert dann immer noch alles oder wäre es besser, das zu deaktivieren, um nicht unnötige Last oder irgendwelche Effekte zu haben?</p>
+<p> </p>
+<p>Vielen Dank und Gruss</p>
+<p>Martin</p>
+<p> </p>
+<p>Martin Uhland</p>
+<p>Entwicklungsingenieur Elektronik / Electronic Development Engineer</p>
+<p> </p>
+<p><b>Spühl GmbH</b></p>
+<p>Grüntalstrasse 23</p>
+<p>9300 Wittenbach</p>
+<p>SWITZERLAND</p>
+<p> </p>
+<p>Phone: +41 71 292 11 68</p>
+<p>martin.uhland@spuhl.com</p>
+<p>www.spuhl.com</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div><div><br></div><br><br>
+
+### ARTICLE03_HEADER
+Id=8752
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.10.2021 07:58:44 +00:00
+UpdatedAt=14.10.2021 07:58:44 +00:00
+
+### ARTICLE03_SUBJECT
+AW: [EXTERNAL] RE: Process Data Mode LWR [Ticket#701622]
+
+### ARTICLE03_BODY
+<div>
+<p>Vielen Dank für die Info!</p>
+<p> </p>
+<div>
+<p>Martin Uhland</p>
+<p>Entwicklungsingenieur Elektronik / Electronic Development Engineer</p>
+<p> </p>
+<p><b>Spühl GmbH</b></p>
+<p>Grüntalstrasse 23</p>
+<p>9300 Wittenbach</p>
+<p>SWITZERLAND</p>
+<p> </p>
+<p>Phone: +41 71 292 11 68</p>
+<p>martin.uhland@spuhl.com</p>
+<p>www.spuhl.com</p>
+</div>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>Von:</b> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Gesendet:</b> Donnerstag, 14. Oktober 2021 09:54<br>
+<b>An:</b> Martin Uhland &lt;martin.uhland@spuhl.com&gt;<br>
+<b>Betreff:</b> [EXTERNAL] RE: Process Data Mode LWR [Ticket#701622]</p>
+</div>
+</div>
+<p> </p>
+<div>
+<p>Hallo Herr Uhland,</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>beides sollte gehen.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Wenn die Slaves die gleiche Menge an Nutzdaten haben, können sie es anklicken. Damit haben sie weniger Unterschiede.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Schöne Grüße,</p>
+</div>
+<div>
+<p>Cyril Eyssautier</p>
+</div>
+<div>
+<blockquote>
+<p>On Thursday, October 14, 2021, 9:31:15 AM, Martin Uhland wrote:</p>
+<p></p>
+<div>
+<p>Guten Tag</p>
+<p> </p>
+<p>Wir haben einen Slave durch seinen Nachfolger ersetzt.</p>
+<p>In der alten Konfiguration war bei "Erweiterte Einstellungen / Prozessdaten-Modus" "LRW deaktivieren" angewählt, bzw. konnte gar nicht abgewählt werden.</p>
+<p>In der neuen Slave-Konfiguration ist es anwählbar und per Default nicht deaktiviert.</p>
+<p> </p>
+<p>Offensichtlich haben wir den Logical Memory Read Write bisher nicht verwendet. Kann die Deaktivierung nicht angeklickt bleiben und funktioniert dann immer noch alles oder wäre es besser, das zu deaktivieren, um nicht unnötige Last oder irgendwelche Effekte zu haben?</p>
+<p> </p>
+<p>Vielen Dank und Gruss</p>
+<p>Martin</p>
+<p> </p>
+<p>Martin Uhland</p>
+<p>Entwicklungsingenieur Elektronik / Electronic Development Engineer</p>
+<p> </p>
+<p><b>Spühl GmbH</b></p>
+<p>Grüntalstrasse 23</p>
+<p>9300 Wittenbach</p>
+<p>SWITZERLAND</p>
+<p> </p>
+<p>Phone: +41 71 292 11 68</p>
+<p>martin.uhland@spuhl.com</p>
+<p><a href="http://www.spuhl.com" rel="nofollow noreferrer noopener" target="_blank">www.spuhl.com</a></p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>

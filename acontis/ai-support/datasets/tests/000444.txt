@@ -1,0 +1,191 @@
+### HEADER
+Id=444
+Link=http://at-zammad/#ticket/zoom/444
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Cornerstone Robotics, Medical Robot Controller (ID=35, Number=35)
+Number=700444
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+CreatedBy=ec_support@motrotech.com (ID=30, FirstName=ec_support@motrotech.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=20.04.2021 03:43:03 +00:00
+UpdatedAt=20.04.2021 09:23:44 +00:00
+CloseAt=20.04.2021 09:23:44 +00:00
+ArticlesCount=3
+
+### TITLE
+The customer csrbtx‘s problem: Multiple EtherCAT Bus frame abnormal on VxWorks
+
+### ARTICLE00_HEADER
+Id=2389
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.04.2021 03:43:03 +00:00
+UpdatedAt=20.04.2021 03:43:05 +00:00
+
+### ARTICLE00_SUBJECT
+The customer csrbtx‘s problem: Multiple EtherCAT Bus frame abnormal on VxWorks
+
+### ARTICLE00_BODY
+<div>Dear,</div><div> </div><div>The customer are using multiple EtherCAT bus with I350(0x8086,0x1521) on VxWorks.</div><div>But by capturing packets, they found that the period of frames(about 20ms~70ms) are seriously inconsistent with the period they set(0.5ms).</div><div>They noticed that the cycletime perf by the EcMaster is also correct(avg≈500us, max &lt;560).</div><div> </div><div>They tested on linux without any problems. And single instance is also fine on VxWorks.</div><div> </div><div>Please get the packet capture data from the attachment.</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740270</div>
+<div>Email:ec_support@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+</div>
+
+### ARTICLE01_HEADER
+Id=2413
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.04.2021 08:55:12 +00:00
+UpdatedAt=20.04.2021 08:55:12 +00:00
+
+### ARTICLE01_SUBJECT
+The customer csrbtx‘s problem: Multiple EtherCAT Bus frame abnormal on VxWorks
+
+### ARTICLE01_BODY
+<div>Dear,</div><div> </div><div>Please ignore the previous email, the customer has found the reason. One of their APIs did not work properly in VxWorks and caused this error.</div><div> </div><div>Best Regards,</div><div>Lishan</div><hr>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740270</div>
+<div>Email:ec_support@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+</div><blockquote>
+<div> </div>
+<div>
+<div>
+<b>发件人：</b> ec_support@motrotech.com </div>
+<div>
+<b>发送时间：</b> 2021-04-20 11:42</div>
+<div>
+<b>收件人：</b> ecsupport@acontis.com </div>
+<div>
+<b>主题：</b> The customer csrbtx‘s problem: Multiple EtherCAT Bus frame abnormal on VxWorks</div>
+</div>
+<div>
+<div>Dear,</div>
+<div> </div>
+<div>The customer are using multiple EtherCAT bus with I350(0x8086,0x1521) on VxWorks.</div>
+<div>But by capturing packets, they found that the period of frames(about 20ms~70ms) are seriously inconsistent with the period they set(0.5ms).</div>
+<div>They noticed that the cycletime perf by the EcMaster is also correct(avg≈500us, max &lt;560).</div>
+<div> </div>
+<div>They tested on linux without any problems. And single instance is also fine on VxWorks.</div>
+<div> </div>
+<div>Please get the packet capture data from the attachment.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740270</div>
+<div>Email:ec_support@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+</div>
+</div>
+</blockquote>
+
+### ARTICLE02_HEADER
+Id=2415
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=20.04.2021 09:23:44 +00:00
+UpdatedAt=20.04.2021 09:23:48 +00:00
+
+### ARTICLE02_SUBJECT
+The customer csrbtx‘s problem: Multiple EtherCAT Bus frame abnormal on VxWorks
+
+### ARTICLE02_BODY
+Hi Lishan,<div><br></div><div>OK thank you for the feedback.</div><div><br></div><div>Best Regards,</div><div>Cyril</div><div>
+<div><br></div>
+<div><blockquote type="cite">On Tuesday, April 20, 2021, 10:55:12 AM, EtherCAT Support wrote:<br><br><div>Dear,</div>
+<div> </div>
+<div>Please ignore the previous email, the customer has found the reason. One of their APIs did not work properly in VxWorks and caused this error.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740270</div>
+<div>Email:ec_support@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+</div>
+<blockquote>
+<div> </div>
+<div>
+<div>
+<b>发件人：</b> ec_support@motrotech.com </div>
+<div>
+<b>发送时间：</b> 2021-04-20 11:42</div>
+<div>
+<b>收件人：</b> ecsupport@acontis.com </div>
+<div>
+<b>主题：</b> The customer csrbtx‘s problem: Multiple EtherCAT Bus frame abnormal on VxWorks</div>
+</div>
+<div>
+<div>Dear,</div>
+<div> </div>
+<div>The customer are using multiple EtherCAT bus with I350(0x8086,0x1521) on VxWorks.</div>
+<div>But by capturing packets, they found that the period of frames(about 20ms~70ms) are seriously inconsistent with the period they set(0.5ms).</div>
+<div>They noticed that the cycletime perf by the EcMaster is also correct(avg≈500us, max &lt;560).</div>
+<div> </div>
+<div>They tested on linux without any problems. And single instance is also fine on VxWorks.</div>
+<div> </div>
+<div>Please get the packet capture data from the attachment.</div>
+<div> </div>
+<div>Best Regards,</div>
+<div>Lishan</div>
+<hr>
+<div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-10-62740270</div>
+<div>Fax: +86-10-62740270</div>
+<div>Email:ec_support@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+</div>
+</div>
+</blockquote>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

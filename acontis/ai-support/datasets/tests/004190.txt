@@ -1,0 +1,197 @@
+### HEADER
+Id=4190
+Link=http://at-zammad/#ticket/zoom/4190
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ITK Engineering GmbH (ID=120, Number=54016, Country=DE)
+Commission=ITK, Asimov Express (ID=134, Number=134)
+Number=704190
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=michael.wenz@itk-engineering.de (ID=107, FirstName=Michael, LastName=Wenz)
+CreatedBy=michael.wenz@itk-engineering.de (ID=107, FirstName=Michael, LastName=Wenz)
+Type=
+TimeUnit=
+CreatedAt=25.10.2022 10:00:24 +00:00
+UpdatedAt=18.11.2022 07:06:50 +00:00
+CloseAt=18.11.2022 07:06:50 +00:00
+ArticlesCount=2
+
+### TITLE
+EC_NOTIFY_SLAVE_INITCMD_RESPONSE_ERROR
+
+### ARTICLE00_HEADER
+Id=22060
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.10.2022 10:00:24 +00:00
+UpdatedAt=25.10.2022 10:00:27 +00:00
+
+### ARTICLE00_SUBJECT
+EC_NOTIFY_SLAVE_INITCMD_RESPONSE_ERROR
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo Herr Oelhaf, hallo Herr Eyssautier,</p>
+<p> </p>
+<p>wir verwenden im Projekt jetzt einen Slave eines Slaveherstellers mit dem wir jetzt zum ersten Mal Kontakt haben.</p>
+<p>Ab und zu gibt es beim Start der Software Probleme und dann muss zur Fehlerbehebung der Slave kurz stromlos gemacht haben.</p>
+<p> </p>
+<p>0000009251: Notify EC_NOTIFY_SLAVE_INITCMD_RESPONSE_ERROR (1001, PS, clear sm pdos (0x1C12), No response): ERROR: Time-out (0x98110010)</p>
+<p>0000009251: Slave init command response error - Slave Antrieb 1 (CiA402 Motor Control Device): - EtherCAT address=1001 - Current State change of slave="PS" No Response</p>
+<p> </p>
+<p><img style="max-width:100%;width:11.9083in;max-height:2.3333in;width:1143px;max-height:224px;" src="/api/v1/ticket_attachment/4190/22060/92548?view=inline"></p>
+<p> </p>
+<p>Anbei sind EcMasterDemo Logausgaben -v 5, eni Datei und Wireshark Aufzeichnung.</p>
+<p>Können Sie bitte sagen, was das Problem ist, insbesondere ob der Slave sich nicht richtig verhält?</p>
+<p> </p>
+<p>EcMonitorDemo bringt beim Abspielen der Wireshark übrigens nicht Notification EC_NOTIFY_SLAVE_INITCMD_RESPONSE_ERROR.</p>
+<p> </p>
+<p>./EcMonitorDemo -f ./TwinCAT_Synapticon_Hardware_eni.xml -play ./InitCommandResponseError.pcapng</p>
+<p>0000000001: EcMonitorDemo V3.1.4.99 (Unrestricted) for Xenomai3_x64Cobalt Copyright acontis technologies GmbH @ 2022</p>
+<p>0000000001: Full command line: -f "./TwinCAT_Synapticon_Hardware_eni.xml"-play ./InitCommandResponseError.pcapng</p>
+<p>0000000001: EC-Monitor V3.1.4.99 (Unrestricted) (Oct 14 2022 16:11:05) for Xenomai3_x64Cobalt Copyright acontis technologies GmbH @ 2022</p>
+<p>0000000003: EtherCAT network adapter MAC: 00-00-00-00-00-00</p>
+<p>0000000004: EcMonitorDemo will stop in 600s...</p>
+<p>0000001002: Bus scan successful - 1 slaves found</p>
+<p>0000001002: Topology Change Performed No Error (0x0)</p>
+<p>0000001002: Master state changed from &lt;UNKNOWN&gt; to &lt;INIT&gt;</p>
+<p>0000001003: Master state changed from &lt;INIT&gt; to &lt;PREOP&gt;</p>
+<p>0000001013: Master state changed from &lt;PREOP&gt; to &lt;INIT&gt;</p>
+<p>0000001612: EcMonitorDemo stop.</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Michael Wenz</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>--</p>
+<p>Dr.-Ing. Michael Wenz</p>
+<p>Software Engineering</p>
+<p> </p>
+<p>ITK Engineering GmbH</p>
+<p>Im Speyerer Tal 6</p>
+<p>D-76761 Rülzheim</p>
+<p> </p>
+<p>Tel.: +49 7272 7703-456</p>
+<p>Fax: +49 7272 7703-100</p>
+<p>Mobil: +49 174 9480570</p>
+<p> </p>
+<p>mailto: michael.wenz@itk-engineering.de</p>
+<p> </p>
+<p>_____________________________________________________________</p>
+<p>ITK Engineering GmbH Im Speyerer Tal 6 76761 Rülzheim</p>
+<p>Tel.: +49 7272 7703-0 Fax: +49 7272 7703-100</p>
+<p><span>mailto:info@itk-engineering.de <a href="http://www.itk-engineering.de" rel="nofollow noreferrer noopener" target="_blank">http://www.itk-engineering.de</a></span></p>
+<p> </p>
+<p>Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board:</p>
+<p>Dr. Rudolf Maier</p>
+<p>Geschäftsführung/Executive Board:</p>
+<p>Dr. Frank Schmidt (Vorsitzender/Chairman), Bernd Gohlicke</p>
+<p>Sitz der Gesellschaft/Registered Office: 76761 Rülzheim</p>
+<p>Registergericht/Registered Court: Amtsgericht Landau, HRB 32046</p>
+<p>USt.-ID-Nr./VAT-ID-No. DE813165046</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=22071
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.10.2022 14:28:10 +00:00
+UpdatedAt=25.10.2022 14:28:16 +00:00
+
+### ARTICLE01_SUBJECT
+EC_NOTIFY_SLAVE_INITCMD_RESPONSE_ERROR
+
+### ARTICLE01_BODY
+Hallo Herr Wenz,<div><br></div><div>es sieht in Wireshark so aus als ob der Slave das Mailbox Transfer nicht beantworten würde:</div><div>
+<img style="max-width:100%;width: 633px;max-width: 100%;max-height: 427.922px;" src="/api/v1/ticket_attachment/4190/22071/92583?view=inline"><br>
+</div><div><br></div><div>Schöne Grüße,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/4190/22071/92584?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, October 25, 2022 at 12:00:24 PM, Michael Wenz wrote:<br><br><div>
+<p>Hallo Herr Oelhaf, hallo Herr Eyssautier,</p>
+<p> </p>
+<p>wir verwenden im Projekt jetzt einen Slave eines Slaveherstellers mit dem wir jetzt zum ersten Mal Kontakt haben.</p>
+<p>Ab und zu gibt es beim Start der Software Probleme und dann muss zur Fehlerbehebung der Slave kurz stromlos gemacht haben.</p>
+<p> </p>
+<p>0000009251: Notify EC_NOTIFY_SLAVE_INITCMD_RESPONSE_ERROR (1001, PS, clear sm pdos (0x1C12), No response): ERROR: Time-out (0x98110010)</p>
+<p>0000009251: Slave init command response error - Slave Antrieb 1 (CiA402 Motor Control Device): - EtherCAT address=1001 - Current State change of slave="PS" No Response</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:11.9083in;max-height:2.3333in;width:1143px;max-height:224px;" src="/api/v1/ticket_attachment/4190/22071/92585?view=inline"></p>
+<p> </p>
+<p>Anbei sind EcMasterDemo Logausgaben -v 5, eni Datei und Wireshark Aufzeichnung.</p>
+<p>Können Sie bitte sagen, was das Problem ist, insbesondere ob der Slave sich nicht richtig verhält?</p>
+<p> </p>
+<p>EcMonitorDemo bringt beim Abspielen der Wireshark übrigens nicht Notification EC_NOTIFY_SLAVE_INITCMD_RESPONSE_ERROR.</p>
+<p> </p>
+<p>./EcMonitorDemo -f ./TwinCAT_Synapticon_Hardware_eni.xml -play ./InitCommandResponseError.pcapng</p>
+<p>0000000001: EcMonitorDemo V3.1.4.99 (Unrestricted) for Xenomai3_x64Cobalt Copyright acontis technologies GmbH @ 2022</p>
+<p>0000000001: Full command line: -f "./TwinCAT_Synapticon_Hardware_eni.xml"-play ./InitCommandResponseError.pcapng</p>
+<p>0000000001: EC-Monitor V3.1.4.99 (Unrestricted) (Oct 14 2022 16:11:05) for Xenomai3_x64Cobalt Copyright acontis technologies GmbH @ 2022</p>
+<p>0000000003: EtherCAT network adapter MAC: 00-00-00-00-00-00</p>
+<p>0000000004: EcMonitorDemo will stop in 600s...</p>
+<p>0000001002: Bus scan successful - 1 slaves found</p>
+<p>0000001002: Topology Change Performed No Error (0x0)</p>
+<p>0000001002: Master state changed from &lt;UNKNOWN&gt; to &lt;INIT&gt;</p>
+<p>0000001003: Master state changed from &lt;INIT&gt; to &lt;PREOP&gt;</p>
+<p>0000001013: Master state changed from &lt;PREOP&gt; to &lt;INIT&gt;</p>
+<p>0000001612: EcMonitorDemo stop.</p>
+<p> </p>
+<p>Mit freundlichen Grüßen</p>
+<p>Michael Wenz</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p>--</p>
+<p>Dr.-Ing. Michael Wenz</p>
+<p>Software Engineering</p>
+<p> </p>
+<p>ITK Engineering GmbH</p>
+<p>Im Speyerer Tal 6</p>
+<p>D-76761 Rülzheim</p>
+<p> </p>
+<p>Tel.: +49 7272 7703-456</p>
+<p>Fax: +49 7272 7703-100</p>
+<p>Mobil: +49 174 9480570</p>
+<p> </p>
+<p>mailto: michael.wenz@itk-engineering.de</p>
+<p> </p>
+<p>_____________________________________________________________</p>
+<p>ITK Engineering GmbH Im Speyerer Tal 6 76761 Rülzheim</p>
+<p>Tel.: +49 7272 7703-0 Fax: +49 7272 7703-100</p>
+<p><span>mailto:info@itk-engineering.de <a href="http://www.itk-engineering.de" rel="nofollow noreferrer noopener" target="_blank">http://www.itk-engineering.de</a></span></p>
+<p> </p>
+<p>Vorsitzender des Aufsichtsrats/Chairman of the Supervisory Board:</p>
+<p>Dr. Rudolf Maier</p>
+<p>Geschäftsführung/Executive Board:</p>
+<p>Dr. Frank Schmidt (Vorsitzender/Chairman), Bernd Gohlicke</p>
+<p>Sitz der Gesellschaft/Registered Office: 76761 Rülzheim</p>
+<p>Registergericht/Registered Court: Amtsgericht Landau, HRB 32046</p>
+<p>USt.-ID-Nr./VAT-ID-No. DE813165046</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

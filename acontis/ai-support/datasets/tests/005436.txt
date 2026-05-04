@@ -1,0 +1,176 @@
+### HEADER
+Id=5436
+Link=http://at-zammad/#ticket/zoom/5436
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=OMRON Corporation (ID=235, Number=40065, Country=JP)
+Commission=Omron, PLC (ID=282, Number=282)
+Number=705436
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=ecat-omron@omron.com (ID=157, FirstName=ecat-omron@omron.com, LastName=)
+CreatedBy=ecat-omron@omron.com (ID=157, FirstName=ecat-omron@omron.com, LastName=)
+Type=
+TimeUnit=
+CreatedAt=21.04.2023 06:07:26 +00:00
+UpdatedAt=21.04.2023 09:22:34 +00:00
+CloseAt=21.04.2023 09:22:34 +00:00
+ArticlesCount=3
+
+### TITLE
+[OMRON] Could you provide the EC-Master RAS Server/Client source code to OMRON?
+
+### ARTICLE00_HEADER
+Id=28839
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.04.2023 06:07:27 +00:00
+UpdatedAt=21.04.2023 06:07:29 +00:00
+
+### ARTICLE00_SUBJECT
+[OMRON] Could you provide the EC-Master RAS Server/Client source code to OMRON?
+
+### ARTICLE00_BODY
+<p> </p><div> <p><span lang="EN-US">Dear EtherCAT Support,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Could you provide us the EC-Master RAS Server/Client source code as which you provide to OMRON(Shanghai)?</span></p>
+<p><span lang="EN-US">File name is EC-Master-RAS-V3.1.4.02-Linux-ARM_32Bit-SDK_Source.tar.gz.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">OMRON members have been considering that RAS Server/Client can be integrated to new configuration tool for our new products.</span></p>
+<p><span lang="EN-US">For this, we would like to check EC-Master RAS Server/Client implementation.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Kojiro Baba.</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=28841
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.04.2023 06:14:21 +00:00
+UpdatedAt=21.04.2023 06:14:24 +00:00
+
+### ARTICLE01_SUBJECT
+[OMRON] Could you provide the EC-Master RAS Server/Client source code to OMRON?
+
+### ARTICLE01_BODY
+Hi Baba,<div><br></div><div>it's good to hear from you! I hope you are going well. Here is the download link:</div><div><br></div><div><div><a href="sftp://home155839490.1and1-data.host/Downloads/2022/M-O/OMRON_Corporation_%2840497%29%28JP%29/EC-Master_Linux/3.1.4.02/EC-Master-RAS-V3.1.4.02-Linux-ARM_32Bit-SDK_Source.tar.gz" title="sftp://home155839490.1and1-data.host/Downloads/2022/M-O/OMRON_Corporation_%2840497%29%28JP%29/EC-Master_Linux/3.1.4.02/EC-Master-RAS-V3.1.4.02-Linux-ARM_32Bit-SDK_Source.tar.gz">http://downloads.acontis.com/2022/M-O/OMRON_Corporation_%2840497%29%28JP%29/EC-Master_Linux/3.1.4.02/EC-Master-RAS-V3.1.4.02-Linux-ARM_32Bit-SDK_Source.tar.gz</a></div></div><div><br></div><div>If need more, just tell me.</div><div><br></div><div>Best Regards,</div><div>Cyril<br><div data-signature="true" data-signature-id="2"><div><br></div></div>
+<div><blockquote type="cite">On Friday, April 21, 2023 at 8:07:27 AM, ecat-omron@omron.com wrote:<br><br><p> </p>
+<div> <p><span lang="EN-US">Dear EtherCAT Support,</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Could you provide us the EC-Master RAS Server/Client source code as which you provide to OMRON(Shanghai)?</span></p>
+<p><span lang="EN-US">File name is EC-Master-RAS-V3.1.4.02-Linux-ARM_32Bit-SDK_Source.tar.gz.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">OMRON members have been considering that RAS Server/Client can be integrated to new configuration tool for our new products.</span></p>
+<p><span lang="EN-US">For this, we would like to check EC-Master RAS Server/Client implementation.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Kojiro Baba.</span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=28858
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.04.2023 09:11:49 +00:00
+UpdatedAt=21.04.2023 09:11:49 +00:00
+
+### ARTICLE02_SUBJECT
+RE: [OMRON] Could you provide the EC-Master RAS Server/Client source code to OMRON? [Ticket#705436]
+
+### ARTICLE02_BODY
+<div>
+<p><span lang="EN-US">Hi Cyril-san,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Long time no talk!</span></p>
+<p><span lang="EN-US">It’s good to hear from you.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">The link you sent me is exactly what we want.</span></p>
+<p><span lang="EN-US">Thank you!</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Kojiro Baba</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b><span lang="EN-US">From:</span></b><span lang="EN-US"> Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Friday, April 21, 2023 3:14 PM<br>
+<b>To:</b> ecat-omron &lt;ecat-omron@omron.com&gt;<br>
+<b>Subject:</b> RE: [OMRON] Could you provide the EC-Master RAS Server/Client source code to OMRON? [Ticket#705436]</span></p>
+</div>
+</div>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Hi Baba,</span></p>
+<div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+<div>
+<p><span lang="EN-US">it's good to hear from you! I hope you are going well. Here is the download link:</span></p>
+</div>
+<div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+<div>
+<div>
+<p><span lang="EN-US"><a href="sftp://home155839490.1and1-data.host/Downloads/2022/M-O/OMRON_Corporation_%2840497%29%28JP%29/EC-Master_Linux/3.1.4.02/EC-Master-RAS-V3.1.4.02-Linux-ARM_32Bit-SDK_Source.tar.gz" title="sftp://home155839490.1and1-data.host/Downloads/2022/M-O/OMRON_Corporation_%2840497%29%28JP%29/EC-Master_Linux/3.1.4.02/EC-Master-RAS-V3.1.4.02-Linux-ARM_32Bit-SDK_Source.tar.gz">http://downloads.acontis.com/2022/M-O/OMRON_Corporation_%2840497%29%28JP%29/EC-Master_Linux/3.1.4.02/EC-Master-RAS-V3.1.4.02-Linux-ARM_32Bit-SDK_Source.tar.gz</a></span></p>
+</div>
+</div>
+<div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+<div>
+<p><span lang="EN-US">If need more, just tell me.</span></p>
+</div>
+<div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+<div>
+<p><span lang="EN-US">Best Regards,</span></p>
+</div>
+<div>
+<p><span lang="EN-US">Cyril</span></p>
+<div>
+<div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+</div>
+<div>
+<blockquote>
+<p><span lang="EN-US">On Friday, April 21, 2023 at 8:07:27 AM, <a href="mailto:ecat-omron@omron.com">ecat-omron@omron.com</a> wrote:</span></p>
+<p><span lang="EN-US"> </span></p>
+<div>
+<p><span lang="EN-US">Dear EtherCAT Support,</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Could you provide us the EC-Master RAS Server/Client source code as which you provide to OMRON(Shanghai)?</span></p>
+<p><span lang="EN-US">File name is EC-Master-RAS-V3.1.4.02-Linux-ARM_32Bit-SDK_Source.tar.gz.</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">OMRON members have been considering that RAS Server/Client can be integrated to new configuration tool for our new products.</span></p>
+<p><span lang="EN-US">For this, we would like to check EC-Master RAS Server/Client implementation.</span></p>
+<p><span lang="EN-US"> </span></p>
+<p><span lang="EN-US">Best regards,</span></p>
+<p><span lang="EN-US">Kojiro Baba.</span></p>
+</div>
+<p><span lang="EN-US"><p> </p></span></p>
+</blockquote>
+</div>
+<div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+</div>

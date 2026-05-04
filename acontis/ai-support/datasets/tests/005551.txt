@@ -1,0 +1,179 @@
+### HEADER
+Id=5551
+Link=http://at-zammad/#ticket/zoom/5551
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=705551
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=abruckelmyer@deltamotion.com (ID=745, FirstName=Aaron, LastName=Bruckelmyer)
+CreatedBy=abruckelmyer@deltamotion.com (ID=745, FirstName=Aaron, LastName=Bruckelmyer)
+Type=
+TimeUnit=
+CreatedAt=09.05.2023 22:38:55 +00:00
+UpdatedAt=02.06.2023 06:10:55 +00:00
+CloseAt=02.06.2023 06:10:55 +00:00
+ArticlesCount=2
+
+### TITLE
+Hot Connect Topology Reload
+
+### ARTICLE00_HEADER
+Id=29514
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=09.05.2023 22:38:55 +00:00
+UpdatedAt=09.05.2023 22:38:55 +00:00
+
+### ARTICLE00_SUBJECT
+Hot Connect Topology Reload
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>Are you available to meet with Quinton, Paul and myself this week to discuss some design ideas for the implementation of our EtherCAT state machine?</p>
+<p> </p>
+<p>In making our EtherCAT master state machine more robust, we are considering the following design, some of which has already been implemented.</p>
+<p> </p>
+<ol start="1" type="1">
+<li>A higher level EtherCAT master state machine that runs independently from Acontis’s CEcMaster::MasterStateMachine. Our internal state machine tracks the master state independently and uses a message queue to synchronize events from various sources including EC-Engineer, a user program in the controller, a PLC program and notification events from the Master/Slaves. Example events handled by our state machine may include…</li>
+</ol>
+<ol start="1" type="a">
+<li>Apply EtherCAT configuration</li>
+<li>Transition Master to OP</li>
+<li>Accept topology change</li>
+<li>Reset EtherCAT Network</li>
+</ol>
+<p> </p>
+<ol start="2" type="1">
+<li>It appears that we can disable automatical topology change mode using EC_IOCTL_SB_SET_TOPOLOGY_CHANGE_AUTO_MODE. In this way we can prevent the topology changes from automatically happening until we are ready. This would ensure that the scanbus and DC init would be synchronized with other user requests. It looks like we can implement as follows…</li>
+</ol>
+<ol start="1" type="a">
+<li>Use EC_IOCTL_SB_SET_TOPOLOGY_CHANGE_AUTO_MODE to set topology detection to manual mode.</li>
+<li>Listen for EC_NOTIFY_HC_TOPOCHGDONE notification before enqueuing an event that will make a call to EC_IOCTL_SB_ACCEPT_TOPOLOGY_CHANGE synchronously. </li>
+</ol>
+<p> </p>
+<ol start="3" type="1">
+<li>Our state machine can monitor for notification events that can be used to handle error conditions.</li>
+</ol>
+<ol start="1" type="a">
+<li>EC_NOTIFY_SLAVE_UNEXPECTED_STATE – Used to automatically correct the slave state after power-cycle.</li>
+<li>EC_NOTIFY_SLAVE_ERROR_STATUS_INFO – Used to automatically reinitialize the master when slave errors prevent operation (enabled by user option).</li>
+</ol>
+<p> </p>
+<ol start="4" type="1">
+<li>Ideally, we would be able to synchronize our state machine with EC-Engineer actions that use the RAS connection to issue commands (Especially Scanbus). </li>
+</ol>
+<p> </p>
+<p>Can you give us any insights and recommendations on this design? Alternative design ideas?</p>
+<p> </p>
+<p>Any thoughts on using manual vs automatic hot-connect logic? Will hot connect groups still work if we decide to purchase the hot connect feature later on?</p>
+<p> </p>
+<p>Thanks,<br>
+<br>
+</p>
+<p><b><span style="color:#0f1964;">Aaron</span></b><b><span style="color:#3b4908;">
+</span></b><b>Bruckelmyer</b><span><br>
+</span><i>Software Engineer</i><span><br> Delta Computer Systems, Inc.</span></p>
+<p><span><br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0169" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0169" target="_blank"><span style="color:#0563c1;">+1-360-702-0169</span></a></span></p>
+<p><span><a href="mailto:abruckelmyer@deltamotion.com"><span style="color:#0563c1;">abruckelmyer@deltamotion.com</span></a>
+</span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=29520
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.05.2023 06:38:48 +00:00
+UpdatedAt=10.05.2023 06:38:50 +00:00
+
+### ARTICLE01_SUBJECT
+Hot Connect Topology Reload
+
+### ARTICLE01_BODY
+Hi Aaron,<div><br></div><div>unfortunately, we have some customer in house this week, but I'm available next week.</div><div><br></div><div>The scenario you described below matches exactly the purpose of <span>EC_IOCTL_SB_SET_TOPOLOGY_CHANGE_AUTO_MODE. Hot-Connect will works as expected too, because it handles "only" the WKC expectation and the slaves state machines.</span>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, May 10, 2023 at 12:38:55 AM, Aaron Bruckelmyer wrote:<br><br><div>
+<p>Hi Cyril,</p>
+<p> </p>
+<p>Are you available to meet with Quinton, Paul and myself this week to discuss some design ideas for the implementation of our EtherCAT state machine?</p>
+<p> </p>
+<p>In making our EtherCAT master state machine more robust, we are considering the following design, some of which has already been implemented.</p>
+<p> </p>
+<ol start="1" type="1">
+<li>A higher level EtherCAT master state machine that runs independently from Acontis’s CEcMaster::MasterStateMachine. Our internal state machine tracks the master state independently and uses a message queue to synchronize events from various sources including EC-Engineer, a user program in the controller, a PLC program and notification events from the Master/Slaves. Example events handled by our state machine may include…</li>
+</ol>
+<ol start="1" type="a">
+<li>Apply EtherCAT configuration</li>
+<li>Transition Master to OP</li>
+<li>Accept topology change</li>
+<li>Reset EtherCAT Network</li>
+</ol>
+<p> </p>
+<ol start="2" type="1">
+<li>It appears that we can disable automatical topology change mode using EC_IOCTL_SB_SET_TOPOLOGY_CHANGE_AUTO_MODE. In this way we can prevent the topology changes from automatically happening until we are ready. This would ensure that the scanbus and DC init would be synchronized with other user requests. It looks like we can implement as follows…</li>
+</ol>
+<ol start="1" type="a">
+<li>Use EC_IOCTL_SB_SET_TOPOLOGY_CHANGE_AUTO_MODE to set topology detection to manual mode.</li>
+<li>Listen for EC_NOTIFY_HC_TOPOCHGDONE notification before enqueuing an event that will make a call to EC_IOCTL_SB_ACCEPT_TOPOLOGY_CHANGE synchronously. </li>
+</ol>
+<p> </p>
+<ol start="3" type="1">
+<li>Our state machine can monitor for notification events that can be used to handle error conditions.</li>
+</ol>
+<ol start="1" type="a">
+<li>EC_NOTIFY_SLAVE_UNEXPECTED_STATE – Used to automatically correct the slave state after power-cycle.</li>
+<li>EC_NOTIFY_SLAVE_ERROR_STATUS_INFO – Used to automatically reinitialize the master when slave errors prevent operation (enabled by user option).</li>
+</ol>
+<p> </p>
+<ol start="4" type="1">
+<li>Ideally, we would be able to synchronize our state machine with EC-Engineer actions that use the RAS connection to issue commands (Especially Scanbus). </li>
+</ol>
+<p> </p>
+<p>Can you give us any insights and recommendations on this design? Alternative design ideas?</p>
+<p> </p>
+<p>Any thoughts on using manual vs automatic hot-connect logic? Will hot connect groups still work if we decide to purchase the hot connect feature later on?</p>
+<p> </p>
+<p>Thanks,<br>
+<br>
+</p>
+<p><b><span style="color:#0f1964;">Aaron</span></b><b><span style="color:#3b4908;">
+</span></b><b>Bruckelmyer</b><span><br>
+</span><i>Software Engineer</i><span><br> Delta Computer Systems, Inc.</span></p>
+<p><span><br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank"><span style="color:#0563c1;">+1-360-254-8688</span></a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0169" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0169" target="_blank"><span style="color:#0563c1;">+1-360-702-0169</span></a></span></p>
+<p><span><a href="mailto:abruckelmyer@deltamotion.com"><span style="color:#0563c1;">abruckelmyer@deltamotion.com</span></a>
+</span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

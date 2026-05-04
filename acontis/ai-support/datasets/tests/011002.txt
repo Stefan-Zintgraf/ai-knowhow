@@ -1,0 +1,115 @@
+### HEADER
+Id=11002
+Link=http://at-zammad/#ticket/zoom/11002
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Stryker (ID=471, Number=0, Country=US)
+Commission=Stryker, Mako (ID=549, Number=549)
+Number=7011002
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=mike.ford1@stryker.com (ID=1777, FirstName=Mike, LastName=Ford)
+CreatedBy=mike.ford1@stryker.com (ID=1777, FirstName=Mike, LastName=Ford)
+Type=
+TimeUnit=
+CreatedAt=14.07.2025 20:44:01 +00:00
+UpdatedAt=08.08.2025 06:00:54 +00:00
+CloseAt=08.08.2025 06:00:54 +00:00
+ArticlesCount=2
+
+### TITLE
+EC_T_USER_JOB::eUsrJob_SendAllCycFrames taking a long time to return
+
+### ARTICLE00_HEADER
+Id=63032
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=14.07.2025 20:44:02 +00:00
+UpdatedAt=14.07.2025 20:44:07 +00:00
+
+### ARTICLE00_SUBJECT
+EC_T_USER_JOB::eUsrJob_SendAllCycFrames taking a long time to return
+
+### ARTICLE00_BODY
+<div>Hi,</div><div> </div><div>We are using the Class A Linux stack for EC Master and sometimes see Frame Loss notifications while running a 250uS cycle time. When profiling our PDO loop logic we have noticed that in the frames that overrun our 250uS cycle time, that it is the eUsrJob_SendAllCycFrames job that is taking 250-300uS to execute just by itself. 99% of the time it takes the expected amount of time, but sometimes it takes extremely long and we see frame loss/overruns as a result.</div><div> </div><div>I was curious as to what could cause this job to take this long? We don't have any custom user logic in this timestamp, it is just before and after the SendAllCycFrames execjob() call.</div><div> </div><div>We also sometimes see after some frame loss events that we get a NOT_ALL_OPERATIONAL notification. Meaning one or more of our nodes are dropping out of operational into safe op. I am wondering if you have any thoughts on if the frame loss could lead to this either with communication issues or DC clock synchronization issues.</div><div> </div><div>But at the end of the day we are trying to investigate why there is frame loss in the first place and why the eUsrJob_SendAllCycFrames could take so long sometimes. We have pretty significant runtime with this software and typically dont see this. Could this be from a hardware issues? What hardware interation does eUsrJob_SendAllCycFrames have that it could potentially be blocking for a long time?</div><div> </div><div>Any help is appreciated.</div><div> </div><div>Thanks</div><div> </div><div>
+<img style="max-width:100%;max-width: 984px;" src="/api/v1/ticket_attachment/11002/63032/261081?view=inline">
+</div><div>
+<div> </div>
+<p>
+<span style=" color: rgb(255, 181, 0);">Mike</span> Ford</p>
+<p>Staff Engineer, Robotic Platforms</p>
+<p>Stryker</p>
+<p>Digital, Robotics, and Enabling Technologies</p>
+<p>1941 Stryker Way</p>
+<p>Portage, MI, 49002</p>
+<p>mike.ford1@stryker.com</p>
+<p> </p>
+</div>Follow this link to read our<a href="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" rel="nofollow noreferrer noopener" title="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" target="_blank"> Privacy Statement</a>
+
+### ARTICLE01_HEADER
+Id=63095
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.07.2025 06:16:32 +00:00
+UpdatedAt=16.07.2025 06:16:34 +00:00
+
+### ARTICLE01_SUBJECT
+EC_T_USER_JOB::eUsrJob_SendAllCycFrames taking a long time to return
+
+### ARTICLE01_BODY
+Hi Mike,<div><br></div><div>high jitter in SendCycFrames are most of the time related to some PCI arbitration or power management issues. Here you can find some hints:</div><div><a href="https://developer.acontis.com/pcob" title="https://developer.acontis.com/pcob" rel="nofollow noreferrer noopener" target="_blank">https://developer.acontis.com/pcob</a></div><div><br></div><div>I think in the last customer requests <span style="background-color: initial; color: rgb(88, 88, 86);">ASPM was involved.</span>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, July 14, 2025 at 10:44:02 PM, Mike Ford wrote:<br><br><div>Hi,</div>
+<div> </div>
+<div>We are using the Class A Linux stack for EC Master and sometimes see Frame Loss notifications while running a 250uS cycle time. When profiling our PDO loop logic we have noticed that in the frames that overrun our 250uS cycle time, that it is the eUsrJob_SendAllCycFrames job that is taking 250-300uS to execute just by itself. 99% of the time it takes the expected amount of time, but sometimes it takes extremely long and we see frame loss/overruns as a result.</div>
+<div> </div>
+<div>I was curious as to what could cause this job to take this long? We don't have any custom user logic in this timestamp, it is just before and after the SendAllCycFrames execjob() call.</div>
+<div> </div>
+<div>We also sometimes see after some frame loss events that we get a NOT_ALL_OPERATIONAL notification. Meaning one or more of our nodes are dropping out of operational into safe op. I am wondering if you have any thoughts on if the frame loss could lead to this either with communication issues or DC clock synchronization issues.</div>
+<div> </div>
+<div>But at the end of the day we are trying to investigate why there is frame loss in the first place and why the eUsrJob_SendAllCycFrames could take so long sometimes. We have pretty significant runtime with this software and typically dont see this. Could this be from a hardware issues? What hardware interation does eUsrJob_SendAllCycFrames have that it could potentially be blocking for a long time?</div>
+<div> </div>
+<div>Any help is appreciated.</div>
+<div> </div>
+<div>Thanks</div>
+<div> </div>
+<div>
+<img style="max-width:100%;max-width: 100%;" src="/api/v1/ticket_attachment/11002/63095/261322?view=inline">
+</div>
+<div>
+<div> </div>
+<p>
+<span style=" color: rgb(255, 181, 0);">Mike</span> Ford</p>
+<p>Staff Engineer, Robotic Platforms</p>
+<p>Stryker</p>
+<p>Digital, Robotics, and Enabling Technologies</p>
+<p>1941 Stryker Way</p>
+<p>Portage, MI, 49002</p>
+<p>mike.ford1@stryker.com</p>
+<p> </p>
+</div>Follow this link to read our<a href="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" rel="nofollow noreferrer noopener" title="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" target="_blank"> Privacy Statement</a><br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

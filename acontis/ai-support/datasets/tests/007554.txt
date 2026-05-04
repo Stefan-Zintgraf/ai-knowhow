@@ -1,0 +1,140 @@
+### HEADER
+Id=7554
+Link=http://at-zammad/#ticket/zoom/7554
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Motrotech (ID=403, Number=0, Country=CN)
+Commission=Motrotech, Generic (ID=480, Number=480)
+Number=707554
+Owner=d.schmid@acontis.com (ID=13, FirstName=Daniel, LastName=Schmid)
+Customer=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+CreatedBy=john.zhang@motrotech.com (ID=23, FirstName=John, LastName=Zhang)
+Type=
+TimeUnit=
+CreatedAt=03.03.2024 09:39:26 +00:00
+UpdatedAt=04.03.2024 10:19:09 +00:00
+CloseAt=04.03.2024 10:18:45 +00:00
+ArticlesCount=2
+
+### TITLE
+The potential customer mindray requirement for TI TDA 4VM
+
+### ARTICLE00_HEADER
+Id=41661
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=03.03.2024 09:39:27 +00:00
+UpdatedAt=03.03.2024 09:39:30 +00:00
+
+### ARTICLE00_SUBJECT
+The potential customer mindray requirement for TI TDA 4VM
+
+### ARTICLE00_BODY
+<div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently we connected with a potential customer, This is a Medical equipment suppliers, the website is www.mindray.com.</div>
+<div>Their device plan base on TI TDA 4vm and the CPU is DRA 829, the following picutre is the dev board information from the customer.</div>
+<div><img src="/api/v1/ticket_attachment/7554/41661/173125?view=inline" style="max-width:100%;width:346px;max-height:130px;"></div>
+<div> </div>
+<div>As I know that is almost same as midea, Does the EcMaster have eval version for this hardware? Should we send the eval to the potential customer?</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+
+### ARTICLE01_HEADER
+Id=41685
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=04.03.2024 10:18:46 +00:00
+UpdatedAt=04.03.2024 10:18:57 +00:00
+
+### ARTICLE01_SUBJECT
+The potential customer mindray requirement for TI TDA 4VM
+
+### ARTICLE01_BODY
+Hi John,<div>It's tested on the Ti <span>SK-TDA4VM so it should work.</span>
+</div><div><span>(If they have more than one port only one will work!)</span></div><div><span>You can reuse this link with the Eval.</span></div><div><span><br></span></div><div><div><a href="https://downloads.acontis.com/temp/dsd/2024/TI/V3.2.1.03/EC-Master-V3.2.1.03-Linux-ARM_64Bit-Eval.tar.gz" title="https://downloads.acontis.com/temp/dsd/2024/TI/V3.2.1.03/EC-Master-V3.2.1.03-Linux-ARM_64Bit-Eval.tar.gz" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/temp/dsd/2024/TI/V3.2.1.03/EC-Master-V3.2.1.03-Linux-ARM_64Bit-Eval.tar.gz</a></div></div><div><br></div><div>Best Regards</div><div>Daniel</div><div><br></div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Daniel Schmid</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Sunday, 3 March 2024 at 10:39:27, John Zhang wrote:<br><br><div style="color:#1f497d;">
+<div>Dear,</div>
+<div>Recently we connected with a potential customer, This is a Medical equipment suppliers, the website is www.mindray.com.</div>
+<div>Their device plan base on TI TDA 4vm and the CPU is DRA 829, the following picutre is the dev board information from the customer.</div>
+<div><img src="/api/v1/ticket_attachment/7554/41685/173177?view=inline" style="max-width:100%;max-width:100%;width:346px;max-height:130px;"></div>
+<div> </div>
+<div>As I know that is almost same as midea, Does the EcMaster have eval version for this hardware? Should we send the eval to the potential customer?</div>
+<div> </div>
+<div>
+<div>----------------------</div>
+<div> </div>
+<div>张晓朋<br>
+</div>
+<div> </div>
+<div>北京盟通科技有限公司<br>
+</div>
+<div>Beijing Motrotech Technology Co., Ltd.<br>
+</div>
+<div> </div>
+<div>Tel.: +86-010-62740270 (北京）</div>
+<div>0571- 56125098 （杭州）</div>
+<div>+86-133-72551162</div>
+<div>Fax: +86-010-62740263</div>
+<div>Email: john.zhang@motrotech.com</div>
+<div>Web: <a href="http://www.motrotech.com/" rel="nofollow noreferrer noopener" target="_blank">www.motrotech.com</a>
+</div>
+<div> </div>
+<div>---------------------</div>
+<div>Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment. Legal disclaimer - This electronic message contains information that is confidential. The information is intended to be for the use of the addressee only. If you are not the addressee we appreciate your notification in this respect and please note that any disclosure, copy, distribution or use of the contents of this message is prohibited and may be unlawful. We have taken every reasonable precaution to ensure that any kind of attachment to this e-mail has been swept for viruses. However, we cannot accept liability for any damage sustained as a result of software viruses and would advise that you carry out your own virus checks before opening any attachment.</div>
+<div> </div>
+</div>
+<div> </div>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

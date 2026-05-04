@@ -1,0 +1,83 @@
+### HEADER
+Id=6839
+Link=http://at-zammad/#ticket/zoom/6839
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Jumo GmbH & Co.KG (ID=126, Number=54502, Country=DE)
+Commission=Jumo, Windows-Registriergeräte (ID=143, Number=143)
+Number=706839
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=michael.mueller@jumo.net (ID=1441, FirstName=Michael, LastName=Mueller)
+CreatedBy=michael.mueller@jumo.net (ID=1441, FirstName=Michael, LastName=Mueller)
+Type=
+TimeUnit=
+CreatedAt=16.11.2023 06:20:34 +00:00
+UpdatedAt=29.01.2024 13:02:43 +00:00
+CloseAt=24.11.2023 07:11:12 +00:00
+ArticlesCount=2
+
+### TITLE
+EBI-Task: CycleTime
+
+### ARTICLE00_HEADER
+Id=37047
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=16.11.2023 06:20:34 +00:00
+UpdatedAt=16.11.2023 06:20:37 +00:00
+
+### ARTICLE00_SUBJECT
+EBI-Task: CycleTime
+
+### ARTICLE00_BODY
+Guten Tag Herr Bußmann,<br><br>ich muss bei uns Änderungen an den Task-Zeiten vornehmen und habe noch mal eine Frage zu Taskzeiten.<br>Momentan ordnen wir unsere Slaves den TaskID's 0 bis 2 zu und alle Tasken haben feste Zykluszeiten.<br>Die CycleTime sollen zukünftig einstellbar sein.<br><br>Die TaskID 0 hat ja nun die Besonderheit, dass sie mit der Master/CycleTime läuft.<br>Wenn ich nun keine Slaves in "meiner Task0" habe sondern nur welche in der Task 2 oder 3 mit langsameren CycleTimes, was mache ich dann?<br><br>Lege ich die Task 0 an und ordne dieser keine Slaves zu, lege die Slaves nur in die entsprechende Task?<br>Oder:<br>Was passiert wenn ich die Slaves in die Task 0 lege und die MasterCycleTime auf den niedrigen Wert reduziere? Verändert sich dann das Master bzw Systemverhalten weil andere MasterJobs nun auch mit der reduzierten CycleTime laufen?<br>Ist es überhaupt sinnvoll Slaves (die kein DC beherrschen) in die Task0 zu legen?<br><br>Vielen Dank,<br><br><span>Mit freundlichen Grüßen<br><br>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Software - Desktop Anwendungen<br><br>i.A. Dipl.-Ing.(FH) Michael Müller<br><br>Tel: +49 661 6003-9328<br>Fax: +49 661 6003-889328<br>Adresse: Moritz-Juchheim-Str. 1<br> 36039 Fulda, Germany<br>E-Mail: </span><a href="mailto:Michael.Mueller@jumo.net">mailto:Michael.Mueller@jumo.net</a><span><br>Internet: </span><a href="http://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">http://www.jumo.net</a><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dimitrios Charisiadis, Dr. Steffen Hoßfeld<br> Ust.-Id.-Nr.: DE 112411234</p>
+
+### ARTICLE01_HEADER
+Id=37112
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.11.2023 12:05:44 +00:00
+UpdatedAt=17.11.2023 12:05:47 +00:00
+
+### ARTICLE01_SUBJECT
+EBI-Task: CycleTime
+
+### ARTICLE01_BODY
+Hallo Herr Müller,<div><br></div><div><blockquote>Lege ich die Task 0 an und ordne dieser keine Slaves zu, lege die Slaves nur in die entsprechende Task?</blockquote></div><div>ja, so sollte es gehen.</div><div><br></div><div><blockquote>ich muss bei uns Änderungen an den Task-Zeiten vornehmen und habe noch mal eine Frage zu Taskzeiten.<br>Momentan ordnen wir unsere Slaves den TaskID's 0 bis 2 zu und alle Tasken haben feste Zykluszeiten.<br><div>
+<span>...</span><br>
+</div>
+</blockquote></div><div><blockquote>Ist es überhaupt sinnvoll Slaves (die kein DC beherrschen) in die Task0 zu legen?</blockquote></div><div><br></div><div>Grundsätzlich gesehen <span>ist es einfacher, alle Slaves in der Default Task zu vereinen, sofern es möglich ist, da es weniger Konfigurationsaufwand und Programmieraufwand bedeutet. Wenn Sie die Slaves anders zuordnen möchten, muss das auch funktionieren. Mir ist nichts gegenteiliges bekannt. </span>
+</div><div><span><br></span></div><div><blockquote>Die CycleTime sollen zukünftig einstellbar sein.<br>
+</blockquote></div><div><span>Wichtig ist, dass die Slaves mit DC mit der richtigen Zykluszeit konfiguriert und betrieben werden, damit die Sync0 Cycle Time stimmt, auf die die Slave Firmware angewiesen ist. </span></div><div><span><br></span></div><div>
+<span>Manche Slaves brauchen eine Mindestzykluslänge, z.B. </span>
+
+Profibus Gateways <span>bedienen in der Regel einen langsameren untergelagerten Bus mit Sync Manager in Mailbox Mode, da würde es sonst WKC Fehler geben.</span>
+</div><div><br></div><div>Viele Grüße</div><div>Paul Bußmann<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Donnerstag, 16. November 2023 um 07:20:34, schrieb Michael Mueller:<br><br>Guten Tag Herr Bußmann,<br><br>ich muss bei uns Änderungen an den Task-Zeiten vornehmen und habe noch mal eine Frage zu Taskzeiten.<br>Momentan ordnen wir unsere Slaves den TaskID's 0 bis 2 zu und alle Tasken haben feste Zykluszeiten.<br>Die CycleTime sollen zukünftig einstellbar sein.<br><br>Die TaskID 0 hat ja nun die Besonderheit, dass sie mit der Master/CycleTime läuft.<br>Wenn ich nun keine Slaves in "meiner Task0" habe sondern nur welche in der Task 2 oder 3 mit langsameren CycleTimes, was mache ich dann?<br><br>Lege ich die Task 0 an und ordne dieser keine Slaves zu, lege die Slaves nur in die entsprechende Task?<br>Oder:<br>Was passiert wenn ich die Slaves in die Task 0 lege und die MasterCycleTime auf den niedrigen Wert reduziere? Verändert sich dann das Master bzw Systemverhalten weil andere MasterJobs nun auch mit der reduzierten CycleTime laufen?<br>Ist es überhaupt sinnvoll Slaves (die kein DC beherrschen) in die Task0 zu legen?<br><br>Vielen Dank,<br><br><span>Mit freundlichen Grüßen<br><br>JUMO GmbH &amp; Co. KG<br>Globale Entwicklung Software - Desktop Anwendungen<br><br>i.A. Dipl.-Ing.(FH) Michael Müller<br><br>Tel: +49 661 6003-9328<br>Fax: +49 661 6003-889328<br>Adresse: Moritz-Juchheim-Str. 1<br> 36039 Fulda, Germany<br>E-Mail: </span><a href="mailto:Michael.Mueller@jumo.net">mailto:Michael.Mueller@jumo.net</a><span><br>Internet: </span><a href="http://www.jumo.net/" rel="nofollow noreferrer noopener" target="_blank">http://www.jumo.net</a><p>Diese E-Mail kann vertrauliche und/oder rechtlich geschützte Informationen beinhalten und ist ausschließlich für die im Verteiler genannten Personen bestimmt. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser Mail sind nicht gestattet. Bitte benachrichtigen Sie uns gegebenenfalls telefonisch oder mit Antwort-Mail, falls Sie nicht der richtige Adressat dieser E-Mail sind. Bitte löschen Sie diese Nachricht und alle Anhänge dazu unverzüglich. Falls nicht ausdrücklich vermerkt, ist diese E-Mail keine rechtlich bindende Vereinbarung.<br><br> Kommanditgesellschaft: JUMO GmbH &amp; Co. KG, Sitz: 36039 Fulda, Amtsgericht Fulda HRA 302, Persönlich haftende Gesellschafterin: M. K. JUCHHEIM GmbH, Sitz: 36039 Fulda, Amtsgericht Fulda HRB 17, Geschäftsführer: Dimitrios Charisiadis, Dr. Steffen Hoßfeld<br> Ust.-Id.-Nr.: DE 112411234</p>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

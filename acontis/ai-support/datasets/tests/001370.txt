@@ -1,0 +1,131 @@
+### HEADER
+Id=1370
+Link=http://at-zammad/#ticket/zoom/1370
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Liebherr-Werk Nenzing GmbH (ID=8, Number=40314, Country=AT)
+Commission=Liebherr, tower crane control (ID=8, Number=8)
+Number=701370
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=hannes.mahlfeld2@liebherr.com (ID=611, FirstName=Hannes, LastName=Mahlfeld)
+CreatedBy=hannes.mahlfeld2@liebherr.com (ID=611, FirstName=Hannes, LastName=Mahlfeld)
+Type=
+TimeUnit=
+CreatedAt=07.09.2021 08:53:12 +00:00
+UpdatedAt=25.04.2022 12:45:51 +00:00
+CloseAt=21.09.2021 06:02:51 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-Engineer Beckhoff EL6751
+
+### ARTICLE00_HEADER
+Id=7379
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.09.2021 08:53:13 +00:00
+UpdatedAt=07.09.2021 08:53:13 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Engineer Beckhoff EL6751
+
+### ARTICLE00_BODY
+<div>
+<p>Sehr geehrter Herr Bußmann,</p>
+<p> </p>
+<p>ich habe Ihren Kontakt von meinem Kollegen Hr. Werschmöller bekommen.</p>
+<p>Gegenwärtig versuche ich, einen CANopen Drehgeber mit Hilfe eines Beckhoff EtherCAT Moduls und dem Beckhoff Buskoppler EL6751 auszulesen.</p>
+<p> </p>
+<p>Gibt es die Möglichkeit die Konfiguration der CANopen Schnittstelle über den EC-Engineer vorzunehmen? Haben Sie hierzu schon Erfahrungen oder weiterführende Informationen für mich?</p>
+<p> </p>
+<p>Vielen Dank vorab für Ihre Hilfe.</p>
+<p> </p>
+<div>
+<p>Mit freundlichen Grüßen</p>
+<p><b>i. A. Hannes Mahlfeld</b></p>
+<p>Produktentwicklung Elektrik / Software MC</p>
+<p> </p>
+<p><b>Liebherr-MCCtec Rostock GmbH</b></p>
+<p>Liebherrstraße 1</p>
+<p>18147 Rostock</p>
+<p>Deutschland</p>
+<p>Tel.: +49 381 6006 4943<br> E-Mail: Hannes.Mahlfeld2@liebherr.com<br> Internet: <a href="http://www.liebherr.com" rel="nofollow noreferrer noopener" target="_blank">www.liebherr.com</a><br> Aufsichtsratsvorsitzender: Andreas Böhm</p>
+<p>Geschäftsführer: Steffen Bartke, Leopold Berthold, Rudolf Ganser, Steffen Pohl</p>
+<p>Sitz: 18147 Rostock, Liebherrstrasse 1, HRB 9219, Amtsgericht Rostock, USt-IdNr.: DE 81 36 54 985</p>
+<p><a href="https://www.liebherr.com/privacydocs/MCR/MCR-DSE-Geschaeftspartner.pdf" rel="nofollow noreferrer noopener" title="https://www.liebherr.com/privacydocs/MCR/MCR-DSE-Geschaeftspartner.pdf" target="_blank">Datenschutzerklärung</a><br> </p>
+<p><a href="https://www.facebook.com/LiebherrMaritime" rel="nofollow noreferrer noopener" title="https://www.facebook.com/LiebherrMaritime" target="_blank"></a> <a href="https://www.youtube.com/liebherr" rel="nofollow noreferrer noopener" title="https://www.youtube.com/liebherr" target="_blank"></a> <a href="http://www.linkedin.com/company/liebherr-maritime-cranes" rel="nofollow noreferrer noopener" title="http://www.linkedin.com/company/liebherr-maritime-cranes" target="_blank"></a> <a href="https://twitter.com/LH_Maritime" rel="nofollow noreferrer noopener" title="https://twitter.com/LH_Maritime" target="_blank"></a> <a href="https://www.instagram.com/liebherrmaritime" rel="nofollow noreferrer noopener" title="https://www.instagram.com/liebherrmaritime" target="_blank"></a> <br> </p>
+<p> </p>
+</div>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=7383
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.09.2021 09:11:41 +00:00
+UpdatedAt=07.09.2021 09:11:44 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Engineer Beckhoff EL6751
+
+### ARTICLE01_BODY
+Hallo Herr Mahlfeld,<div><br></div><div>mit dem EC-Engineer ist es möglich die EL6751 zu konfigurieren. Allerdings nur mit der Eval und Plus Version. Mit der Standard Dongle Version geht das leider nicht. Es gab / gibt intern noch ein Redesign zur EL6751. Dies ist nahezu fertig. Das Handling wäre dann in den zukünftigen Versionen vereinfacht und verbessert.</div><div><br></div><div>Viele Grüße </div><div>Kai Feifel<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Kai Feifel </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, September 7, 2021, 10:53:13 AM, Hannes mahlfeld2 wrote:<br><br><div>
+<p>Sehr geehrter Herr Bußmann,</p>
+<p> </p>
+<p>ich habe Ihren Kontakt von meinem Kollegen Hr. Werschmöller bekommen.</p>
+<p>Gegenwärtig versuche ich, einen CANopen Drehgeber mit Hilfe eines Beckhoff EtherCAT Moduls und dem Beckhoff Buskoppler EL6751 auszulesen.</p>
+<p> </p>
+<p>Gibt es die Möglichkeit die Konfiguration der CANopen Schnittstelle über den EC-Engineer vorzunehmen? Haben Sie hierzu schon Erfahrungen oder weiterführende Informationen für mich?</p>
+<p> </p>
+<p>Vielen Dank vorab für Ihre Hilfe.</p>
+<p> </p>
+<div>
+<p>Mit freundlichen Grüßen</p>
+<p><b>i. A. Hannes Mahlfeld</b></p>
+<p>Produktentwicklung Elektrik / Software MC</p>
+<p> </p>
+<p><b>Liebherr-MCCtec Rostock GmbH</b></p>
+<p>Liebherrstraße 1</p>
+<p>18147 Rostock</p>
+<p>Deutschland</p>
+<p>Tel.: +49 381 6006 4943<br> E-Mail: Hannes.Mahlfeld2@liebherr.com<br> Internet: <a href="http://www.liebherr.com" rel="nofollow noreferrer noopener" target="_blank">www.liebherr.com</a><br> Aufsichtsratsvorsitzender: Andreas Böhm</p>
+<p>Geschäftsführer: Steffen Bartke, Leopold Berthold, Rudolf Ganser, Steffen Pohl</p>
+<p>Sitz: 18147 Rostock, Liebherrstrasse 1, HRB 9219, Amtsgericht Rostock, USt-IdNr.: DE 81 36 54 985</p>
+<p><a href="https://www.liebherr.com/privacydocs/MCR/MCR-DSE-Geschaeftspartner.pdf" rel="nofollow noreferrer noopener" title="https://www.liebherr.com/privacydocs/MCR/MCR-DSE-Geschaeftspartner.pdf" target="_blank">Datenschutzerklärung</a><br> </p>
+<p><a href="https://www.facebook.com/LiebherrMaritime" rel="nofollow noreferrer noopener" title="https://www.facebook.com/LiebherrMaritime" target="_blank"></a> <a href="https://www.youtube.com/liebherr" rel="nofollow noreferrer noopener" title="https://www.youtube.com/liebherr" target="_blank"></a> <a href="http://www.linkedin.com/company/liebherr-maritime-cranes" rel="nofollow noreferrer noopener" title="http://www.linkedin.com/company/liebherr-maritime-cranes" target="_blank"></a> <a href="https://twitter.com/LH_Maritime" rel="nofollow noreferrer noopener" title="https://twitter.com/LH_Maritime" target="_blank"></a> <a href="https://www.instagram.com/liebherrmaritime" rel="nofollow noreferrer noopener" title="https://www.instagram.com/liebherrmaritime" target="_blank"></a> <br> </p>
+<p> </p>
+</div>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

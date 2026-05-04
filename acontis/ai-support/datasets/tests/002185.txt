@@ -1,0 +1,248 @@
+### HEADER
+Id=2185
+Link=http://at-zammad/#ticket/zoom/2185
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=702185
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=paul@deltamotion.com (ID=659, FirstName=Paul, LastName=Huumala)
+CreatedBy=paul@deltamotion.com (ID=659, FirstName=Paul, LastName=Huumala)
+Type=
+TimeUnit=
+CreatedAt=06.01.2022 21:41:26 +00:00
+UpdatedAt=25.04.2022 12:59:07 +00:00
+CloseAt=12.01.2022 16:49:03 +00:00
+ArticlesCount=3
+
+### TITLE
+Potential bug in EC-Engineer
+
+### ARTICLE00_HEADER
+Id=11504
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=06.01.2022 21:41:26 +00:00
+UpdatedAt=06.01.2022 21:41:26 +00:00
+
+### ARTICLE00_SUBJECT
+Potential bug in EC-Engineer
+
+### ARTICLE00_BODY
+<div>
+<p>I found an Internal Error in EC-Engineer. I used the attached project to produce it but I think any project should work.</p>
+<p> </p>
+<p>Steps to reproduce:</p>
+<ol start="1" type="1">
+<li>Have a project with an empty <b>Watch list</b>.<p></p>
+</li>
+<li>Select the <b>Watch list</b> tab.<p></p>
+</li>
+<li>Select a different tab.<p></p>
+</li>
+<li>Select the <b>Watch list</b> tab.<p></p>
+</li>
+<li>An Internal Error will occur (see below).<p></p>
+</li>
+</ol> <p> </p>
+<p><img style="max-width:100%;width:10.6875in;max-height:3.4375in;width:1026px;max-height:330px;" src="/api/v1/ticket_attachment/2185/11504/44695?view=inline"></p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Paul Huumala</p>
+<p>Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p>360-254-8688</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=11716
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.01.2022 16:45:36 +00:00
+UpdatedAt=12.01.2022 16:45:39 +00:00
+
+### ARTICLE01_SUBJECT
+Potential bug in EC-Engineer
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>yes, you're right. This is a bug. It will be fixed in the next version.</div><div><br></div><div>Best Regards,</div><div>Martin</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Martin Gaenzer </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, January 6, 2022, 10:41:26 PM, Paul Huumala wrote:<br><br><div>
+<p>I found an Internal Error in EC-Engineer. I used the attached project to produce it but I think any project should work.</p>
+<p> </p>
+<p>Steps to reproduce:</p>
+<ol start="1" type="1">
+<li>Have a project with an empty <b>Watch list</b>.<p></p>
+</li>
+<li>Select the <b>Watch list</b> tab.<p></p>
+</li>
+<li>Select a different tab.<p></p>
+</li>
+<li>Select the <b>Watch list</b> tab.<p></p>
+</li>
+<li>An Internal Error will occur (see below).<p></p>
+</li>
+</ol> <p> </p>
+<p><img style="max-width:100%;max-width:100%;width:10.6875in;max-height:3.4375in;width:1026px;max-height:330px;" src="/api/v1/ticket_attachment/2185/11716/45678?view=inline"></p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Paul Huumala</p>
+<p>Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p>360-254-8688</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=11717
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.01.2022 16:47:27 +00:00
+UpdatedAt=12.01.2022 16:47:27 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Potential bug in EC-Engineer [Ticket#702185]
+
+### ARTICLE02_BODY
+<div>
+<p>Thanks Martin!</p>
+<p> </p>
+<p>Paul</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b> Martin Gaenzer via EC-Support &lt;ecsupport@acontis.com&gt; <br>
+<b>Sent:</b> Wednesday, January 12, 2022 8:46 AM<br>
+<b>To:</b> Paul Huumala &lt;Paul@deltamotion.com&gt;<br>
+<b>Subject:</b> RE: Potential bug in EC-Engineer [Ticket#702185]</p>
+</div>
+</div>
+<p> </p>
+<p>Hi,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>yes, you're right. This is a bug. It will be fixed in the next version.</p>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<p>Martin</p>
+</div>
+<div> <p> </p>
+<div>
+<div>
+<p>____________________________________________________________________________</p>
+</div>
+<div>
+<p>Martin Gaenzer</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>acontis technologies GmbH</p>
+</div>
+</div>
+<div>
+<p>Address: Gartenstraße 46, D-88212 Ravensburg, Germany</p>
+</div>
+<div>
+<p>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank"> https://www.acontis.com</a> </p>
+</div>
+<div>
+<p>Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>eMail: ecsupport@acontis.com</p>
+</div>
+<div>
+<p>----------------------------------------------------------------------------</p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</p>
+</div>
+<div>
+<p><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div> <p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Thursday, January 6, 2022, 10:41:26 PM, Paul Huumala wrote:</p>
+<p></p>
+<div>
+<p>I found an Internal Error in EC-Engineer. I used the attached project to produce it but I think any project should work.</p>
+<p> </p>
+<p>Steps to reproduce:</p>
+<ol start="1" type="1">
+<li> Have a project with an empty <b>Watch list</b>.<p></p>
+</li>
+<li> Select the <b>Watch list</b> tab.<p></p>
+</li>
+<li> Select a different tab.<p></p>
+</li>
+<li> Select the <b>Watch list</b> tab.<p></p>
+</li>
+<li> An Internal Error will occur (see below).<p></p>
+</li>
+</ol>
+<p> </p>
+<p><img border="0" style="max-width:100%;width:10.6875in;max-height:3.4375in;width:1026px;max-height:330px;" src="/api/v1/ticket_attachment/2185/11717/45682?view=inline"></p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Paul Huumala</p>
+<p>Software Engineer</p>
+<p>Delta Computer Systems</p>
+<p>360-254-8688</p>
+<p> </p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div> <p> </p>
+</div>
+<p> </p>
+</div>
+</div>

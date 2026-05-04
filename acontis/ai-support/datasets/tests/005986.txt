@@ -1,0 +1,192 @@
+### HEADER
+Id=5986
+Link=http://at-zammad/#ticket/zoom/5986
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Delta Motion (ID=482, Number=0, Country=US)
+Commission=Delta Motion, RMC Comms Module (ID=559, Number=559)
+Number=705986
+Owner=p.bussmann@acontis.com (ID=14, FirstName=Paul, LastName=Bußmann)
+Customer=abruckelmyer@deltamotion.com (ID=745, FirstName=Aaron, LastName=Bruckelmyer)
+CreatedBy=abruckelmyer@deltamotion.com (ID=745, FirstName=Aaron, LastName=Bruckelmyer)
+Type=
+TimeUnit=
+CreatedAt=17.07.2023 20:53:36 +00:00
+UpdatedAt=26.07.2023 06:45:54 +00:00
+CloseAt=26.07.2023 06:45:54 +00:00
+ArticlesCount=3
+
+### TITLE
+EC-Simulator with HiL - Error while simulating slave errors.
+
+### ARTICLE00_HEADER
+Id=31917
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=17.07.2023 20:53:36 +00:00
+UpdatedAt=17.07.2023 20:53:40 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Simulator with HiL - Error while simulating slave errors.
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Acontis Support,</p>
+<p> </p>
+<p>I’m connecting to our HiL EC-Simulator over RAS and the RAS connection appears to be working OK. However, when I try to simulate slave power, connection, and other error events, I get an “ERROR: Not found (ErrCode: 0x9811000C)”. I’m not sure if this is expected behavior, or if I’m missing a configuration or versions mismatch, etc. I haven’t been able to get this to work yet.</p>
+<p> </p>
+<p><img style="max-width:100%;width:13.3437in;max-height:7.9479in;width:1281px;max-height:763px;" src="/api/v1/ticket_attachment/5986/31917/132704?view=inline"></p>
+<p> </p>
+<p>EC-Engineer version: 3.7.11</p>
+<p>EC-Simulator version: 3.1.4.09</p>
+<p>EC-Simulator hardware: minisforum</p>
+<p> </p>
+<p>Let me know if there is additional information or steps needed to help troubleshoot.</p>
+<p> </p>
+<p>Thanks,<br>
+<br>
+</p>
+<p> </p>
+<p><b><span style="color:#0f1964;">Aaron</span></b><b><span style="color:#3b4908;">
+</span></b><b>Bruckelmyer</b><span><br>
+</span><i>Software Engineer</i><span><br> Delta Computer Systems, Inc.</span></p>
+<p><span><br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank">+1-360-254-8688</a><span style="color:#2a2a2a;"><br> Direct: </span></span><span lang="FR-CA"><a href="http://tel:+1-360-702-0169" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0169" target="_blank">+1-360-702-0169</a></span></p>
+<p><span><a href="mailto:abruckelmyer@deltamotion.com">abruckelmyer@deltamotion.com</a>
+</span></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=32159
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=21.07.2023 19:07:08 +00:00
+UpdatedAt=21.07.2023 19:07:08 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Simulator with HiL - Error while simulating slave errors.
+
+### ARTICLE01_BODY
+<div>
+<p>Hi Acontis Support,</p>
+<p> </p>
+<p>Please close this ticket if opened for the below email. This turned out to be a problem where the station address from the EXI was specified differently than the ENI. The slave then resolved to use the ENI station address, but the simulator RAS connection wasn’t happy about it.</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Aaron</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b><span> Aaron Bruckelmyer <br>
+<b>Sent:</b> Monday, July 17, 2023 1:53 PM<br>
+<b>To:</b> ecsupport@acontis.com<br>
+<b>Subject:</b> EC-Simulator with HiL - Error while simulating slave errors.</span></p>
+</div>
+</div>
+<p> </p>
+<p>Hi Acontis Support,</p>
+<p> </p>
+<p>I’m connecting to our HiL EC-Simulator over RAS and the RAS connection appears to be working OK. However, when I try to simulate slave power, connection, and other error events, I get an “ERROR: Not found (ErrCode: 0x9811000C)”. I’m not sure if this is expected behavior, or if I’m missing a configuration or versions mismatch, etc. I haven’t been able to get this to work yet.</p>
+<p> </p>
+<p><img style="max-width:100%;width:13.3437in;max-height:7.9479in;width:1281px;max-height:763px;" src="/api/v1/ticket_attachment/5986/32159/133753?view=inline"></p>
+<p> </p>
+<p>EC-Engineer version: 3.7.11</p>
+<p>EC-Simulator version: 3.1.4.09</p>
+<p>EC-Simulator hardware: minisforum</p>
+<p> </p>
+<p>Let me know if there is additional information or steps needed to help troubleshoot.</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p><b><span style="color:#0f1964;">Aaron</span></b><b><span style="color:#3b4908;">
+</span></b><b>Bruckelmyer</b><span><br>
+</span><i>Software Engineer</i><span><br> Delta Computer Systems, Inc.</span></p>
+<p><span><br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank">+1-360-254-8688</a><span style="color:#2a2a2a;"><br> Direct: </span><a href="http://tel:+1-360-702-0169" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0169" target="_blank">+1-360-702-0169</a></span></p>
+<p><span><a href="mailto:abruckelmyer@deltamotion.com">abruckelmyer@deltamotion.com</a>
+</span></p>
+<p> </p>
+</div>
+
+### ARTICLE02_HEADER
+Id=32245
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.07.2023 06:45:54 +00:00
+UpdatedAt=26.07.2023 06:45:55 +00:00
+
+### ARTICLE02_SUBJECT
+EC-Simulator with HiL - Error while simulating slave errors.
+
+### ARTICLE02_BODY
+Hi Aaron,<div><br></div><div>thanks!</div><div><br></div><div>Best regards,</div><div>Paul</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Paul Bußmann</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">Am Freitag, 21. Juli 2023 um 21:07:08, schrieb Aaron Bruckelmyer:<br><br><div>
+<p>Hi Acontis Support,</p>
+<p> </p>
+<p>Please close this ticket if opened for the below email. This turned out to be a problem where the station address from the EXI was specified differently than the ENI. The slave then resolved to use the ENI station address, but the simulator RAS connection wasn’t happy about it.</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Aaron</p>
+<p> </p>
+<div>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b><span> Aaron Bruckelmyer <br>
+<b>Sent:</b> Monday, July 17, 2023 1:53 PM<br>
+<b>To:</b> ecsupport@acontis.com<br>
+<b>Subject:</b> EC-Simulator with HiL - Error while simulating slave errors.</span></p>
+</div>
+</div>
+<p> </p>
+<p>Hi Acontis Support,</p>
+<p> </p>
+<p>I’m connecting to our HiL EC-Simulator over RAS and the RAS connection appears to be working OK. However, when I try to simulate slave power, connection, and other error events, I get an “ERROR: Not found (ErrCode: 0x9811000C)”. I’m not sure if this is expected behavior, or if I’m missing a configuration or versions mismatch, etc. I haven’t been able to get this to work yet.</p>
+<p> </p>
+<p><img style="max-width:100%;max-width:100%;width:13.3437in;max-height:7.9479in;width:1281px;max-height:763px;" src="/api/v1/ticket_attachment/5986/32245/134219?view=inline"></p>
+<p> </p>
+<p>EC-Engineer version: 3.7.11</p>
+<p>EC-Simulator version: 3.1.4.09</p>
+<p>EC-Simulator hardware: minisforum</p>
+<p> </p>
+<p>Let me know if there is additional information or steps needed to help troubleshoot.</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p><b><span style="color:#0f1964;">Aaron</span></b><b><span style="color:#3b4908;">
+</span></b><b>Bruckelmyer</b><span><br>
+</span><i>Software Engineer</i><span><br> Delta Computer Systems, Inc.</span></p>
+<p><span><br>
+</span><span lang="FR-CA" style="color:#2a2a2a;">Main: </span><span lang="FR-CA"><a href="http://tel:+1-360-254-8688" rel="nofollow noreferrer noopener" title="http://tel:+1-360-254-8688" target="_blank">+1-360-254-8688</a><span style="color:#2a2a2a;"><br> Direct: </span><a href="http://tel:+1-360-702-0169" rel="nofollow noreferrer noopener" title="http://tel:+1-360-702-0169" target="_blank">+1-360-702-0169</a></span></p>
+<p><span><a href="mailto:abruckelmyer@deltamotion.com">abruckelmyer@deltamotion.com</a>
+</span></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

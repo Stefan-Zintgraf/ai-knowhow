@@ -1,0 +1,141 @@
+### HEADER
+Id=10157
+Link=http://at-zammad/#ticket/zoom/10157
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Murrelektronik GmbH (ID=139, Number=40435, Country=DE)
+Commission=Murrelektronik, Vario-X (ID=158, Number=158)
+Number=7010157
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=patricia.quinto-salazar@murrelektronik.de (ID=3189, FirstName=Patricia, LastName=quinto-salazar)
+CreatedBy=patricia.quinto-salazar@murrelektronik.de (ID=3189, FirstName=Patricia, LastName=quinto-salazar)
+Type=
+TimeUnit=
+CreatedAt=11.03.2025 16:29:49 +00:00
+UpdatedAt=17.03.2025 07:13:18 +00:00
+CloseAt=17.03.2025 07:13:18 +00:00
+ArticlesCount=2
+
+### TITLE
+EtherCAT-Omron Support
+
+### ARTICLE00_HEADER
+Id=58245
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=11.03.2025 16:29:50 +00:00
+UpdatedAt=11.03.2025 16:29:50 +00:00
+
+### ARTICLE00_SUBJECT
+EtherCAT-Omron Support
+
+### ARTICLE00_BODY
+<div>Sehr geehrte Damen und Herren,</div><div> </div><div>wir haben bei Ihnen eine Lizenz für EC Inspector gekauft. Wir möchten eine EC-Aufzeichnung zwischen einer Omron-SPS und einem Murrelektronik-Slave durchführen.</div><div>Dazu muss eine ENI-Datei erstellt werden, leider gibt es in der Omron-Dokumentation keine Informationen darüber, wie diese Datei erstellt wird. Die Acontis-Dokumentation enthält nur Beispiele für Twincat 3 oder Codesys.</div><div>Wir wissen, dass es ein Kommandozeilen Tool "EniCaptureTool" zur Erkennung der ENI-Datei gibt, sie dann zu importieren und weiterzubearbeiten.</div><div>Könnten Sie uns eine EVAL zukommen lassen?</div><div> </div><div>Vielen Dank im Voraus!</div><div>
+<div> </div>
+<div>Freundliche Grüße / Best regards,</div>
+<div> </div>
+<div>
+<b>i.A. Patricia Quinto Salazar<br>
+</b>Support Engineer | Customer Service Center</div>
+<div> </div>
+<div>
+<u><a href="https://www.murrelektronik.com/de/" title="Ursprüngliche URL: https://www.murrelektronik.com/de/. Klicken oder tippen Sie, wenn Sie diesem Link Vertrauen." rel="nofollow noreferrer noopener" target="_blank"><img style="max-width:100%;width: 0.2812in;max-height: 0.2812in;max-width: 432px;min-width: auto;min-height: auto;width:26px;max-height:26px;" src="/api/v1/ticket_attachment/10157/58245/242519?view=inline"></a></u> <u><a href="https://de.linkedin.com/company/murrelektronik-gmbh" title="Ursprüngliche URL: https://de.linkedin.com/company/murrelektronik-gmbh. Klicken oder tippen Sie, wenn Sie diesem Link Vertrauen." rel="nofollow noreferrer noopener" target="_blank"><img style="max-width:100%;width: 0.2812in;max-height: 0.2812in;max-width: 432px;min-width: auto;min-height: auto;width:26px;max-height:26px;" src="/api/v1/ticket_attachment/10157/58245/242520?view=inline"></a></u> <u><a href="https://www.youtube.com/user/Murrelektronik" title="Ursprüngliche URL: https://www.youtube.com/user/Murrelektronik. Klicken oder tippen Sie, wenn Sie diesem Link Vertrauen." rel="nofollow noreferrer noopener" target="_blank"><img style="max-width:100%;width: 0.2812in;max-height: 0.2812in;max-width: 432px;min-width: auto;min-height: auto;width:26px;max-height:26px;" src="/api/v1/ticket_attachment/10157/58245/242521?view=inline"></a></u> <u><a href="https://www.facebook.com/Murrelektronikworldwide/" title="Ursprüngliche URL: https://www.facebook.com/Murrelektronikworldwide/. Klicken oder tippen Sie, wenn Sie diesem Link Vertrauen." rel="nofollow noreferrer noopener" target="_blank"><img style="max-width:100%;width: 0.2812in;max-height: 0.2812in;max-width: 432px;min-width: auto;min-height: auto;width:26px;max-height:26px;" src="/api/v1/ticket_attachment/10157/58245/242522?view=inline"></a></u>
+</div>
+<div> </div>
+<div>Hotline: +49 7191 47 2050 | Phone: +49 7191 47 2055 | Fax: +49 7191 47 49 2050</div>
+<div style=" color: rgb(61, 182, 15);">
+<u><a href="mailto:marco.valencia@murrelektronik.de" title="mailto:marco.valencia@murrelektronik.de">patricia.quinto-salazar@murrelektronik.de</a></u>
+</div>
+<div>
+<br> Murrelektronik GmbH<br> Falkenstraße 3 | 71570 Oppenweiler</div>
+<div>
+<b>stay connected</b>
+</div>
+<div> </div>
+</div><br>
+<div><a href="https://murrelektronik.online/signatur" rel="nofollow noreferrer noopener" title="https://murrelektronik.online/signatur" target="_blank">
+</a></div><br>
+<a href="https://www.murrelektronik.com/de/simply-fit/" rel="nofollow noreferrer noopener" title="https://www.murrelektronik.com/de/simply-fit/" target="_blank">Möchten Sie mehr erfahren?</a> <br>
+<a href="https://www.murrelektronik.com/de/email-disclaimer/" rel="nofollow noreferrer noopener" target="_blank">https://www.murrelektronik.com/de/email-disclaimer/</a><br>
+<a href="https://www.murrelektronik.com/email-disclaimer/" rel="nofollow noreferrer noopener" target="_blank">https://www.murrelektronik.com/email-disclaimer/</a>
+
+### ARTICLE01_HEADER
+Id=58303
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.03.2025 17:23:29 +00:00
+UpdatedAt=12.03.2025 17:23:52 +00:00
+
+### ARTICLE01_SUBJECT
+EtherCAT-Omron Support
+
+### ARTICLE01_BODY
+Hallo Frau Quinto Salazar,<div><br></div><div>anbei der Download Link zu unserer aktuellen EVAL Version von dem "EniCaptureTool":</div><div><a href="https://downloads.acontis.com/temp/2025/3-12/EC-Engineer_SDK_EniCaptureTool_Eval_V3.9.10.zip" title="https://downloads.acontis.com/temp/2025/3-12/EC-Engineer_SDK_EniCaptureTool_Eval_V3.9.10.zip" rel="nofollow noreferrer noopener" target="_blank">https://downloads.acontis.com/temp/2025/3-12/EC-Engineer_SDK_EniCaptureTool_Eval_V3.9.10.zip</a></div><div>
+<div><br></div>
+<div>Mit freundlichen Grüßen</div>
+<div>Martin Gänzer<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Tuesday, March 11, 2025 at 5:29:50 PM, Patricia quinto-salazar wrote:<br><br><div>Sehr geehrte Damen und Herren,</div>
+<div> </div>
+<div>wir haben bei Ihnen eine Lizenz für EC Inspector gekauft. Wir möchten eine EC-Aufzeichnung zwischen einer Omron-SPS und einem Murrelektronik-Slave durchführen.</div>
+<div>Dazu muss eine ENI-Datei erstellt werden, leider gibt es in der Omron-Dokumentation keine Informationen darüber, wie diese Datei erstellt wird. Die Acontis-Dokumentation enthält nur Beispiele für Twincat 3 oder Codesys.</div>
+<div>Wir wissen, dass es ein Kommandozeilen Tool "EniCaptureTool" zur Erkennung der ENI-Datei gibt, sie dann zu importieren und weiterzubearbeiten.</div>
+<div>Könnten Sie uns eine EVAL zukommen lassen?</div>
+<div> </div>
+<div>Vielen Dank im Voraus!</div>
+<div>
+<div> </div>
+<div>Freundliche Grüße / Best regards,</div>
+<div> </div>
+<div>
+<b>i.A. Patricia Quinto Salazar<br>
+</b>Support Engineer | Customer Service Center</div>
+<div> </div>
+<div>
+<u><a href="https://www.murrelektronik.com/de/" title="Ursprüngliche URL: https://www.murrelektronik.com/de/. Klicken oder tippen Sie, wenn Sie diesem Link Vertrauen." rel="nofollow noreferrer noopener" target="_blank"><img style="max-width:100%;max-width: 100%;min-width: auto;min-height: auto;width: 26px;max-height: 26px;" src="/api/v1/ticket_attachment/10157/58303/242848?view=inline"></a></u> <u><a href="https://de.linkedin.com/company/murrelektronik-gmbh" title="Ursprüngliche URL: https://de.linkedin.com/company/murrelektronik-gmbh. Klicken oder tippen Sie, wenn Sie diesem Link Vertrauen." rel="nofollow noreferrer noopener" target="_blank"><img style="max-width:100%;max-width: 100%;min-width: auto;min-height: auto;width: 26px;max-height: 26px;" src="/api/v1/ticket_attachment/10157/58303/242849?view=inline"></a></u> <u><a href="https://www.youtube.com/user/Murrelektronik" title="Ursprüngliche URL: https://www.youtube.com/user/Murrelektronik. Klicken oder tippen Sie, wenn Sie diesem Link Vertrauen." rel="nofollow noreferrer noopener" target="_blank"><img style="max-width:100%;max-width: 100%;min-width: auto;min-height: auto;width: 26px;max-height: 26px;" src="/api/v1/ticket_attachment/10157/58303/242850?view=inline"></a></u> <u><a href="https://www.facebook.com/Murrelektronikworldwide/" title="Ursprüngliche URL: https://www.facebook.com/Murrelektronikworldwide/. Klicken oder tippen Sie, wenn Sie diesem Link Vertrauen." rel="nofollow noreferrer noopener" target="_blank"><img style="max-width:100%;max-width: 100%;min-width: auto;min-height: auto;width: 26px;max-height: 26px;" src="/api/v1/ticket_attachment/10157/58303/242851?view=inline"></a></u>
+</div>
+<div> </div>
+<div>Hotline: +49 7191 47 2050 | Phone: +49 7191 47 2055 | Fax: +49 7191 47 49 2050</div>
+<div style=" color: rgb(61, 182, 15);">
+<u><a href="mailto:marco.valencia@murrelektronik.de" title="mailto:marco.valencia@murrelektronik.de">patricia.quinto-salazar@murrelektronik.de</a></u>
+</div>
+<div>
+<br> Murrelektronik GmbH<br> Falkenstraße 3 | 71570 Oppenweiler</div>
+<div>
+<b>stay connected</b>
+</div>
+<div> </div>
+</div>
+<br>
+<div><a href="https://murrelektronik.online/signatur" rel="nofollow noreferrer noopener" title="https://murrelektronik.online/signatur" target="_blank">
+</a></div>
+<br>
+<a href="https://www.murrelektronik.com/de/simply-fit/" rel="nofollow noreferrer noopener" title="https://www.murrelektronik.com/de/simply-fit/" target="_blank">Möchten Sie mehr erfahren?</a> <br>
+<a href="https://www.murrelektronik.com/de/email-disclaimer/" rel="nofollow noreferrer noopener" target="_blank">https://www.murrelektronik.com/de/email-disclaimer/</a><br>
+<a href="https://www.murrelektronik.com/email-disclaimer/" rel="nofollow noreferrer noopener" target="_blank">https://www.murrelektronik.com/email-disclaimer/</a><br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

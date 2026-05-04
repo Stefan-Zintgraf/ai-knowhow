@@ -1,0 +1,139 @@
+### HEADER
+Id=988
+Link=http://at-zammad/#ticket/zoom/988
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Vector Informatik GmbH (ID=167, Number=40366, Country=DE)
+Commission=Vector, CANoe (ID=189, Number=189)
+Number=700988
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+CreatedBy=tobias.lange@vector.com (ID=34, FirstName=Tobias, LastName=Lange)
+Type=
+TimeUnit=
+CreatedAt=07.07.2021 10:47:54 +00:00
+UpdatedAt=09.07.2021 06:09:23 +00:00
+CloseAt=09.07.2021 06:09:23 +00:00
+ArticlesCount=2
+
+### TITLE
+EC-Engineer Konfiguration eines Moduls mit Oversampling
+
+### ARTICLE00_HEADER
+Id=5470
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.07.2021 10:47:54 +00:00
+UpdatedAt=07.07.2021 10:47:56 +00:00
+
+### ARTICLE00_SUBJECT
+EC-Engineer Konfiguration eines Moduls mit Oversampling
+
+### ARTICLE00_BODY
+<div>
+<p>Hallo,</p>
+<p> </p>
+<p>ich versuche gerade den EtherCAT-Master in CANoe so einzurichten, dass ich aus einem EtherCAT-Modul Daten mit Oversampling abfragen kann. Dazu muss ich 2 Werte im Objektverzeichnis eintragen. Dies würde ich über „Init Commands“ ausführen wollen. Außerdem muss die Datengröße für den Synchmanager angepasst werden. Der Support des Herstellers nennt dies Synchmanager3 (SM3). Da der EtherCAT-Slave die Konfiguration nicht automatisch für den Over- oder Multisampling Modus anpasst (wie es beispielsweise einige Beckhoff-Geräte mit Oversampling-Unterstützung tun) muss ich dies im Konfigurator von Hand einstellen.</p>
+<p>Deshalb meine Frage – <b>Wie stelle ich die geänderte Konfiguration für das Multisampling am besten im EC-Engineer ein?</b> Passe ich die ESI-Datei des Herstellers von Hand an, oder konfiguriere ich die Daten auf der Seite „PDO Mapping“ oder „Varialbes“ von Hand (was ggf. sehr aufwendig ist)? Gibt es die Möglichkeit, die geänderte Konfiguration für den Slave zu speichern, damit sie bei einem erneuten Scan der Geräte nicht überschrieben wird?</p>
+<p> </p>
+<p>Mit freundlichen Gruessen / Best regards,</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>-----------------------------------------------------</p>
+<p>Software Development Engineer</p>
+<p>PND10</p>
+<p> </p>
+<p><b>Vector Informatik GmbH</b></p>
+<p>Besucheranschrift / Visitor address: Holderäckerstraße 36 | 70499 Stuttgart | Germany</p>
+<p>Tel.: +49 711 80670-4791</p>
+<p>tobias.lange@vector.com</p>
+<p><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank">www.vector.com</a></p>
+<p> </p>
+<p>Sitz der Gesellschaft / Registered Office: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p>Handelsregister / Commercial Register: Amtsgericht Stuttgart | HRB 17317</p>
+<p>Geschaeftsfuehrer / Managing Directors: Dr. Thomas Beck, Dr. Stefan Krauß, Thomas Riegraf</p>
+<p>-----------------------------------------------------</p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=5481
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=07.07.2021 14:53:36 +00:00
+UpdatedAt=07.07.2021 14:53:40 +00:00
+
+### ARTICLE01_SUBJECT
+EC-Engineer Konfiguration eines Moduls mit Oversampling
+
+### ARTICLE01_BODY
+Hallo Herr Lange,<div><br></div><div>normalerweise stellt man die Oversampling Rate über den "Operation Mode" auf dem Tab "Distributed Clock" ein:</div><div><br></div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/988/5481/19767?view=inline"><br>
+</div><div><br></div><div>... sollte aber auch manuell über das "PDO Mapping" und "Init Commands" machbar sein, wenn der Hersteller sein ESI nicht vernünftig erstellen möchte.</div><div><br></div><div>Die Konfiguration könnten Sie z.B. einmal vornehmen und in einem Project Template speichern, aus dem der EC-Engineer z.B. beim Scan die Slaves nimmt (siehe Menu-&gt;Settings-&gt;Project Template):</div><div><br></div><div>
+<img style="max-width:100%;width: 546px;max-width: 100%;" src="/api/v1/ticket_attachment/988/5481/19768?view=inline"><br>
+</div><div><br></div><div>... oder Sie speichern alle Ihre "vor konfigurierten" Slaves in einer eigenen EC-Engineer Projekt Datei und kopieren immer wenn nötig den entsprechenden Slave per "Copy&amp;Paste" manuell ins Projekt.</div><div><br></div><div>
+<span>Mit freundlichen Grüßen</span><br>
+</div><div>Martin Gänzer</div><div>
+<br><div data-signature="true" data-signature-id="2">
+<div>
+<span>____________________________________________________________________________</span><br>
+</div>
+<div>Martin Gaenzer </div>
+<div>EtherCAT Support</div>
+<div><div>acontis technologies GmbH</div></div>
+<div>Address: <span>Gartenstraße 46, D-88212 Ravensburg, Germany</span>
+</div>
+<div>Http: <a href="https://www.acontis.com" title="https://www.acontis.com" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+<div>Phone: <span>+49 (751) 56030-30</span>
+</div>
+<div>
+<span>eMail: ecsupport@acontis.com</span><br>
+</div>
+<div>----------------------------------------------------------------------------</div>
+<div>Subscribe to our newsletter and stay updated on the latest developments and upcoming events.</div>
+<div><a href="https://www.acontis.com/en/newsletter.html" title="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></div>
+<div>----------------------------------------------------------------------------</div>
+<div><div>
+<div>Eingetragene Rechtsform: GmbH</div>
+<div>Sitz der Gesellschaft: Ravensburg</div>
+<div>Sitz und Registergericht: Amtsgericht Ulm, HRB 552320</div>
+<div>Geschäftsführung: Christoph Widmann, Stefan Zintgraf</div>
+</div></div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, July 7, 2021, 12:47:54 PM, Tobias Lange wrote:<br><br><div>
+<p>Hallo,</p>
+<p> </p>
+<p>ich versuche gerade den EtherCAT-Master in CANoe so einzurichten, dass ich aus einem EtherCAT-Modul Daten mit Oversampling abfragen kann. Dazu muss ich 2 Werte im Objektverzeichnis eintragen. Dies würde ich über „Init Commands“ ausführen wollen. Außerdem muss die Datengröße für den Synchmanager angepasst werden. Der Support des Herstellers nennt dies Synchmanager3 (SM3). Da der EtherCAT-Slave die Konfiguration nicht automatisch für den Over- oder Multisampling Modus anpasst (wie es beispielsweise einige Beckhoff-Geräte mit Oversampling-Unterstützung tun) muss ich dies im Konfigurator von Hand einstellen.</p>
+<p>Deshalb meine Frage – <b>Wie stelle ich die geänderte Konfiguration für das Multisampling am besten im EC-Engineer ein?</b> Passe ich die ESI-Datei des Herstellers von Hand an, oder konfiguriere ich die Daten auf der Seite „PDO Mapping“ oder „Varialbes“ von Hand (was ggf. sehr aufwendig ist)? Gibt es die Möglichkeit, die geänderte Konfiguration für den Slave zu speichern, damit sie bei einem erneuten Scan der Geräte nicht überschrieben wird?</p>
+<p> </p>
+<p>Mit freundlichen Gruessen / Best regards,</p>
+<p> </p>
+<p>Tobias Lange</p>
+<span class="js-signatureMarker"></span><p>-----------------------------------------------------</p>
+<p>Software Development Engineer</p>
+<p>PND10</p>
+<p> </p>
+<p><b>Vector Informatik GmbH</b></p>
+<p>Besucheranschrift / Visitor address: Holderäckerstraße 36 | 70499 Stuttgart | Germany</p>
+<p>Tel.: +49 711 80670-4791</p>
+<p>tobias.lange@vector.com</p>
+<p><a href="http://www.vector.com/" rel="nofollow noreferrer noopener" target="_blank">www.vector.com</a></p>
+<p> </p>
+<p>Sitz der Gesellschaft / Registered Office: Ingersheimer Str. 24 | 70499 Stuttgart</p>
+<p>Handelsregister / Commercial Register: Amtsgericht Stuttgart | HRB 17317</p>
+<p>Geschaeftsfuehrer / Managing Directors: Dr. Thomas Beck, Dr. Stefan Krauß, Thomas Riegraf</p>
+<p>-----------------------------------------------------</p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

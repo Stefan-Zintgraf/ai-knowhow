@@ -1,0 +1,154 @@
+### HEADER
+Id=3111
+Link=http://at-zammad/#ticket/zoom/3111
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=ACS Motion Control LTD (ID=184, Number=50006, Country=IL)
+Commission=ACS, Motion Controller (ID=223, Number=223)
+Number=703111
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=borisb@acsmotioncontrol.com (ID=83, FirstName=Boris, LastName=Brevdo)
+CreatedBy=borisb@acsmotioncontrol.com (ID=83, FirstName=Boris, LastName=Brevdo)
+Type=
+TimeUnit=
+CreatedAt=30.05.2022 11:11:06 +00:00
+UpdatedAt=17.06.2022 06:02:54 +00:00
+CloseAt=17.06.2022 06:02:54 +00:00
+ArticlesCount=2
+
+### TITLE
+EC_IOCTL_SET_FRAME_LOSS_SIMULATION
+
+### ARTICLE00_HEADER
+Id=16374
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.05.2022 11:11:06 +00:00
+UpdatedAt=30.05.2022 11:11:06 +00:00
+
+### ARTICLE00_SUBJECT
+EC_IOCTL_SET_FRAME_LOSS_SIMULATION
+
+### ARTICLE00_BODY
+<div>
+<p><span lang="EN-US">Dear EtherCAT Support,</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">I hope that you’re well and I definitely hope to see at least some of your team next month in Paderborn!</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">I was wandering if the EC_IOCTL_SET_FRAME_LOSS_SIMULATION (when calling it by emIoControl) is still supported?</span></p>
+<p><span lang="EN-US">I expect to receive the EC_NOTIFY_FRAME_RESPONSE_ERROR notification however I do not receive it.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Our code is attached.</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+<p><span lang="EN-US">Thank you,</span></p>
+<p><span lang="EN-US">Boris Brevdo</span></p>
+<p><span lang="EN-US"><p> </p></span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=16375
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.05.2022 12:47:28 +00:00
+UpdatedAt=30.05.2022 12:47:31 +00:00
+
+### ARTICLE01_SUBJECT
+EC_IOCTL_SET_FRAME_LOSS_SIMULATION
+
+### ARTICLE01_BODY
+Hi Boris,<div><br></div><div>we will attend the PlugFest Paul and myself! I already notice that ACS has a folder on the FTP :)</div><div><br></div><div>The simulation should still work. yes. Here some code from our test framework:</div><div><br></div><div>
+<div>virtual EC_T_DWORD IoControl(EC_T_DWORD dwInstanceId, EC_T_DWORD dwCode, EC_T_IOCTLPARMS* pParms)</div>
+<div>    {</div>
+<div>        return emIoControl(dwInstanceId, dwCode, pParms);</div>
+<div>    }</div>
+</div><div>
+<div>EC_T_DWORD CEmTestCommonApplication::Ioctl(</div>
+<div>    EC_T_DWORD dwInstanceId,</div>
+<div>    EC_T_DWORD dwCode,</div>
+<div>    EC_T_VOID*      pbyInBuf,                       /*&lt; in  input data buffer */</div>
+<div>    EC_T_DWORD      dwInBufSize,                    /*&lt; in  size of input data buffer in byte */</div>
+<div>    EC_T_VOID*      pbyOutBuf,                      /*&lt; out output data buffer */</div>
+<div>    EC_T_DWORD      dwOutBufSize,                   /*&lt; in  size of output data buffer in byte */</div>
+<div>    EC_T_DWORD*     pdwNumOutData                   /*&lt; out number of output data bytes stored in output data buffer */</div>
+<div>                                           )</div>
+<div>{</div>
+<div>    EC_T_IOCTLPARMS oIoCtlParms;</div>
+<div>    EC_T_DWORD dwNumOutData = 0;</div>
+<div><br></div>
+<div>    oIoCtlParms.pbyInBuf = (EC_T_BYTE*)pbyInBuf;</div>
+<div>    oIoCtlParms.dwInBufSize = dwInBufSize;</div>
+<div>    oIoCtlParms.pbyOutBuf = (EC_T_BYTE*)pbyOutBuf;</div>
+<div>    oIoCtlParms.dwOutBufSize = dwOutBufSize;</div>
+<div>    oIoCtlParms.pdwNumOutData = (EC_NULL != pdwNumOutData) ? pdwNumOutData : &amp;dwNumOutData;</div>
+<div>    return IoControl(dwInstanceId, dwCode, &amp;oIoCtlParms);</div>
+<div>}</div>
+</div><div>
+<div>EC_T_DWORD CEmTestCommonApplication::SetFrameLossSimulation(EC_T_DWORD dwNumGoodFramesAfterStart, EC_T_DWORD dwFrameLossLikelihoodPpm,</div>
+<div>                                                            EC_T_DWORD dwFixedLossNumGoodFrames, EC_T_DWORD dwFixedLossNumLostFrames,</div>
+<div>                                                            EC_T_DWORD dwCode /* default: EC_IOCTL_SET_FRAME_LOSS_SIMULATION */)</div>
+<div>{</div>
+<div>    EC_T_DWORD adwFrameLossParams[4];</div>
+<div>    m_bIgnoreFrameLoss = EC_TRUE;</div>
+<div>#if (!defined EC_UNITTESTS)</div>
+<div>    G_bTestBusDirty = EC_TRUE;</div>
+<div>#endif</div>
+<div><br></div>
+<div>    adwFrameLossParams[0] = dwNumGoodFramesAfterStart;</div>
+<div>    adwFrameLossParams[1] = dwFrameLossLikelihoodPpm;</div>
+<div>    adwFrameLossParams[2] = dwFixedLossNumGoodFrames;</div>
+<div>    adwFrameLossParams[3] = dwFixedLossNumLostFrames;</div>
+<div><br></div>
+<div>    return Ioctl(GetMasterId(), dwCode, (EC_T_BYTE*)&amp;adwFrameLossParams[0], 4 * sizeof(EC_T_DWORD), EC_NULL, EC_NULL, EC_NULL);</div>
+<div>}</div>
+</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, May 30, 2022, 1:11:06 PM, Boris Brevdo wrote:<br><br><div>
+<p><span lang="EN-US">Dear EtherCAT Support,</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">I hope that you’re well and I definitely hope to see at least some of your team next month in Paderborn!</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">I was wandering if the EC_IOCTL_SET_FRAME_LOSS_SIMULATION (when calling it by emIoControl) is still supported?</span></p>
+<p><span lang="EN-US">I expect to receive the EC_NOTIFY_FRAME_RESPONSE_ERROR notification however I do not receive it.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Our code is attached.</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+<p><span lang="EN-US">Thank you,</span></p>
+<p><span lang="EN-US">Boris Brevdo</span></p>
+<p><span lang="EN-US"></span></p>
+<p> </p>
+<p></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

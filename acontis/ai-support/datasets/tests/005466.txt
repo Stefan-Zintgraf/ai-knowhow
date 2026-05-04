@@ -1,0 +1,151 @@
+### HEADER
+Id=5466
+Link=http://at-zammad/#ticket/zoom/5466
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=cpc Chieftek (ID=590, Number=50234, Country=TW)
+Commission=cpc Chieftek, cpcStudio (ID=669, Number=669)
+Number=705466
+Owner=k.feifel@acontis.com (ID=11, FirstName=Kai, LastName=Feifel)
+Customer=lm003@mail2.chieftek.com (ID=1237, FirstName=Kuanghan, LastName=)
+CreatedBy=lm003@mail2.chieftek.com (ID=1237, FirstName=Kuanghan, LastName=)
+Type=
+TimeUnit=
+CreatedAt=26.04.2023 03:11:12 +00:00
+UpdatedAt=05.05.2023 06:02:05 +00:00
+CloseAt=05.05.2023 06:02:05 +00:00
+ArticlesCount=2
+
+### TITLE
+[Chieftek]advanced option--Potential Reference Clock
+
+### ARTICLE00_HEADER
+Id=29022
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.04.2023 03:11:12 +00:00
+UpdatedAt=26.04.2023 03:11:15 +00:00
+
+### ARTICLE00_SUBJECT
+[Chieftek]advanced option--Potential Reference Clock
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi,<div>In the EC-Engineer, There is a Potential Reference Clock checkbox in the slave advanced options.</div>
+<img src="/api/v1/ticket_attachment/5466/29022/122386?view=inline" alt="protentialRefClock2.png" style="max-width:100%;width:543px;max-height:248px;"><br><div> <br><div>In the EcSlaveCfgSettings.cs, there are PotentialRefClock and ActivateAsPotentialRefClock in the SlaveSettings. which one is corresponding to the checkbox meaning. And what's the different between PotentialRefClock and ActivateAsPotentialRefClock?</div>
+<div> </div>
+<div>
+<img src="/api/v1/ticket_attachment/5466/29022/122387?view=inline" alt="protentialRefClock.png" style="max-width:100%;width:543px;max-height:260px;"><br>
+</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan</div>
+<div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+</div><br>
+<div> </div>
+
+### ARTICLE01_HEADER
+Id=29029
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=26.04.2023 07:51:17 +00:00
+UpdatedAt=26.04.2023 07:51:22 +00:00
+
+### ARTICLE01_SUBJECT
+[Chieftek]advanced option--Potential Reference Clock
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>Potential Ref Clock is a setting which comes from the ESI file. It tells if a slave is allowed to be a potential ref clock. </div><div>So PotentialRefClock controls if the checkbox is enabled and ActivateAsPotentialRefClock controls if the check box is checked by the user. </div><div>If there is no PotentialRefClock setting in ESI we enable the checkbox.</div><div><br></div><div>Best regards,</div><div>Kai<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Kai Feifel</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, April 26, 2023 at 5:11:12 AM, cpc線馬課李劻翰 wrote:<br><br><div dir="ltr">Hi,<div>In the EC-Engineer, There is a Potential Reference Clock checkbox in the slave advanced options.</div>
+<img src="/api/v1/ticket_attachment/5466/29029/122397?view=inline" alt="protentialRefClock2.png" style="max-width:100%;max-width:100%;width:543px;max-height:248px;"><br><div> <br><div>In the EcSlaveCfgSettings.cs, there are PotentialRefClock and ActivateAsPotentialRefClock in the SlaveSettings. which one is corresponding to the checkbox meaning. And what's the different between PotentialRefClock and ActivateAsPotentialRefClock?</div>
+<div> </div>
+<div>
+<img src="/api/v1/ticket_attachment/5466/29029/122398?view=inline" alt="protentialRefClock.png" style="max-width:100%;max-width:100%;width:543px;max-height:260px;"><br>
+</div>
+<div> </div>
+<div>Regards,</div>
+<div>Kuanghan</div>
+<div> <span class="js-signatureMarker"></span>
+</div>--<br><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr"><div dir="ltr">
+<p><br></p>
+<p><span>直得科技股份有限公司<span lang="EN-US"></span></span></p>
+<div><p><span lang="EN-US">74145 </span>台南市 南部科學工業園區 新市區大利一路<span lang="EN-US">3</span>號<span lang="EN-US"></span></p></div>
+<div><p><span lang="EN-US">LM-</span>研發 韌體工程師<span lang="EN-US">/Firmware Engineer</span></p></div>
+<div><p><span lang="EN-US">李劻翰 Quang Lee 06-5055858 345 </span></p></div>
+<div>
+<p><span lang="EN-US"><a href="mailto:LM003@mail2.chieftek.com">mail:LM003@mail2.chieftek.com</a> </span></p>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<div dir="ltr"></div>
+<div>
+<div dir="ltr">
+<div>
+</div>
+</div>
+<br>
+</div>
+<br>
+</div>
+<p><br></p>
+</div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+</div>
+<br>
+<div> </div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

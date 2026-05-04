@@ -1,0 +1,18 @@
+{
+  "list": [
+    {
+      "id": "fld-inbox",
+      "parentId": "root",
+      "name": "Inbox",
+      "type": "FMail",
+      "subType": "FSubInbox"
+    },
+    {
+      "id": "fld-drafts",
+      "parentId": "root",
+      "name": "Drafts",
+      "type": "FMail",
+      "subType": "FSubDrafts"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+### HEADER
+Id=4161
+Link=http://at-zammad/#ticket/zoom/4161
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Canon Nanotechnologies (ID=613, Number=0, Country=US)
+Commission=Canon Nanotechnologies, Semiconductor Process Tools (ID=693, Number=693)
+Number=704161
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=shartmann@cnt.canon.com (ID=1256, FirstName=Steve, LastName=Hartmann)
+CreatedBy=shartmann@cnt.canon.com (ID=1256, FirstName=Steve, LastName=Hartmann)
+Type=
+TimeUnit=
+CreatedAt=19.10.2022 15:35:22 +00:00
+UpdatedAt=01.11.2022 15:37:03 +00:00
+CloseAt=20.10.2022 08:29:40 +00:00
+ArticlesCount=3
+
+### TITLE
+ecInitMaster
+
+### ARTICLE00_HEADER
+Id=21887
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.10.2022 15:35:23 +00:00
+UpdatedAt=19.10.2022 15:35:23 +00:00
+
+### ARTICLE00_SUBJECT
+ecInitMaster
+
+### ARTICLE00_BODY
+<div>
+<p>Hi,</p>
+<p> </p>
+<p>In our own application, on my test bed, emInitMaster is returning EC_E_OPENFAILED. That is not documented as one of the possible returns, and the documentation for that return code is not helpful as it just says “open failed”.</p>
+<p> </p>
+<p>What is it trying to open that fails?</p>
+<p> </p>
+<p>This same code does not return this error on another machine that a coworker is using.</p>
+<p> </p>
+<p>The demo program seems to work fine, so I think the device permissions are fine.</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Steven</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=21894
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.10.2022 16:22:11 +00:00
+UpdatedAt=19.10.2022 16:22:14 +00:00
+
+### ARTICLE01_SUBJECT
+ecInitMaster
+
+### ARTICLE01_BODY
+Hi Steven,<div><br></div><div>please double check if the linklayer so file is correctly located and marked as executable.</div><div><br></div><div>Please check your <span style="color: rgb(184, 134, 11);">LD_LIBRARY_PATH</span> following the documentation:</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/os_linux.html#setting-up-and-running-ecmasterdemo" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/os_linux.html#setting-up-and-running-ecmasterdemo" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/os_linux.html#setting-up-and-running-ecmasterdemo</a></div></div><div><br></div><div>Best Regards,</div><div>
+<div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span><br>
+</div>
+<div>
+<img src="/api/v1/ticket_attachment/4161/21894/91529?view=inline" style="max-width:100%;width: 500px;max-width: 100%;"><br>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, October 19, 2022 at 5:35:23 PM, Steve Hartmann wrote:<br><br><div>
+<p>Hi,</p>
+<p> </p>
+<p>In our own application, on my test bed, emInitMaster is returning EC_E_OPENFAILED. That is not documented as one of the possible returns, and the documentation for that return code is not helpful as it just says “open failed”.</p>
+<p> </p>
+<p>What is it trying to open that fails?</p>
+<p> </p>
+<p>This same code does not return this error on another machine that a coworker is using.</p>
+<p> </p>
+<p>The demo program seems to work fine, so I think the device permissions are fine.</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Steven</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=21896
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.10.2022 16:43:02 +00:00
+UpdatedAt=19.10.2022 16:43:02 +00:00
+
+### ARTICLE02_SUBJECT
+Re: [EXTERNAL]RE: ecInitMaster [Ticket#704161]
+
+### ARTICLE02_BODY
+<div>
+<p>Thanks Cyril. My goof was setting the library path to SDK/Lib/…. That just made sense in my mind and didn’t even check that the so files were there. Ugh.</p>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b>From: </b><span>Cyril Eyssautier via EC-Support &lt;ecsupport@acontis.com&gt;<br>
+<b>Date: </b>Wednesday, October 19, 2022 at 11:22 AM<br>
+<b>To: </b>Steve Hartmann &lt;SHartmann@cnt.canon.com&gt;<br>
+<b>Subject: </b>[EXTERNAL]RE: ecInitMaster [Ticket#704161]</span></p>
+</div>
+<div>
+<p>CAUTION: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.</p>
+</div>
+<p> </p>
+<div>
+<p>Hi Steven,</p>
+<div>
+<p> </p>
+</div>
+<div>
+<p>please double check if the linklayer so file is correctly located and marked as executable.</p>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Please check your <span style="color:darkgoldenrod;">LD_LIBRARY_PATH</span> following the documentation:</p>
+</div>
+<div>
+<div>
+<p><a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/os_linux.html#setting-up-and-running-ecmasterdemo" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/os_linux.html#setting-up-and-running-ecmasterdemo" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/os_linux.html#setting-up-and-running-ecmasterdemo</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<p>Best Regards,</p>
+</div>
+<div>
+<div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p>Cyril Eyssautier</p>
+</div>
+<div>
+<p>EtherCAT Support</p>
+</div>
+<div>
+<div>
+<p>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</p>
+</div>
+<div>
+<p>acontis technologies GmbH, Gartenstraße 46, D-88212 Ravensburg, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</p>
+</div>
+</div>
+<div>
+<p>__________________________________________________________________________________________</p>
+</div>
+<div>
+<p><img border="0" style="max-width:100%;width:5.2083in;max-height:1.4583in;width:500px;max-height:140px;" src="/api/v1/ticket_attachment/4161/21896/91535?view=inline"></p>
+</div>
+<div>
+<p>Subscribe to our newsletter and stay updated: <a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a></p>
+</div>
+</div>
+<div>
+<p> </p>
+</div>
+<div>
+<blockquote>
+<p>On Wednesday, October 19, 2022 at 5:35:23 PM, Steve Hartmann wrote:</p>
+<div>
+<p>Hi,</p>
+<p> </p>
+<p>In our own application, on my test bed, emInitMaster is returning EC_E_OPENFAILED. That is not documented as one of the possible returns, and the documentation for that return code is not helpful as it just says “open failed”.</p>
+<p> </p>
+<p>What is it trying to open that fails?</p>
+<p> </p>
+<p>This same code does not return this error on another machine that a coworker is using.</p>
+<p> </p>
+<p>The demo program seems to work fine, so I think the device permissions are fine.</p>
+<p> </p>
+<p>Thanks,</p>
+<p> </p>
+<p>Steven</p>
+</div>
+<p> </p>
+</blockquote>
+</div>
+<div>
+<p> </p>
+</div>
+<p> </p>
+</div>
+</div>
+</div>

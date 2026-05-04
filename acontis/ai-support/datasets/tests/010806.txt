@@ -1,0 +1,117 @@
+### HEADER
+Id=10806
+Link=http://at-zammad/#ticket/zoom/10806
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Relativity Space (ID=385, Number=40410, Country=US)
+Commission=Relativity Space, Internal Controllers (ID=457, Number=457)
+Number=7010806
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=mryabko@relativityspace.com (ID=2866, FirstName=Misha, LastName=Ryabko)
+CreatedBy=j.waters@acontis.com (ID=19, FirstName=Jon, LastName=Waters)
+Type=
+TimeUnit=
+CreatedAt=18.06.2025 03:23:48 +00:00
+UpdatedAt=27.06.2025 06:40:45 +00:00
+CloseAt=27.06.2025 06:40:45 +00:00
+ArticlesCount=2
+
+### TITLE
+RE: Question about Distributed Clocks
+
+### ARTICLE00_HEADER
+Id=61894
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.06.2025 03:23:48 +00:00
+UpdatedAt=18.06.2025 03:23:48 +00:00
+
+### ARTICLE00_SUBJECT
+RE: Question about Distributed Clocks
+
+### ARTICLE00_BODY
+<div>
+<p>Hi Misha,</p>
+<p> </p>
+<p>I’m copying our developer support email to help with this, and will also send your other email about cable redundancy questions there as well.</p>
+<p> </p>
+<div><p>/Jon</p></div>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b><span> Misha Ryabko &lt;mryabko@relativityspace.com&gt; <br><b>Sent:</b> Tuesday, June 17, 2025 4:30 PM<br><b>To:</b> Jon Waters &lt;j.waters@acontis.com&gt;<br><b>Cc:</b> Eric Zhang &lt;ezhang@relativityspace.com&gt;; Caleb Cotter &lt;ccotter@relativityspace.com&gt;; Sonia Cho &lt;scho@relativityspace.com&gt;<br><b>Subject:</b> Question about Distributed Clocks</span></p>
+</div>
+<p> </p>
+<p>Hi Jon,</p>
+<p> </p>
+<p>I’m seeing some interesting behavior with regards to distributed clocks on a bus of ours. We see that the initial burst bulk is sent out even when oDcmConfig.eMode is set to eDcmMode_Off. Why is that? Is there any concern with setting the initial burst to be a very low value? I have cc’d the team responsible for maintaining our bus as well if you have any suggestions about initial settings for our bus.</p>
+<p> </p>
+<p>One thing to note, as part of our boot process we do change our boot times in order to prevent any issues with slaves failing to transition states. I see in the docs that this is disallowed when DCM is configured with Bus Shift mode. Should we change to Master Shift by default in response?</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Misha</p>
+<p> </p>
+<p>This email may include confidential content. If you are not the intended recipient, please notify the sender immediately, delete the e-mail and do not use or transmit the contents to any third parties. Relativity Space, Inc. reserves and asserts all rights to confidentiality and intellectual property included in this email and its attachments.</p>
+</div>
+
+### ARTICLE01_HEADER
+Id=61976
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=18.06.2025 16:37:18 +00:00
+UpdatedAt=18.06.2025 16:37:21 +00:00
+
+### ARTICLE01_SUBJECT
+Question about Distributed Clocks
+
+### ARTICLE01_BODY
+Hi <span>Misha,</span><div><br></div><div>the DC burst is related to DC and not DCM. It is need to compensate the static drift between the slaves. You can change it by calling emDcConfigure() and change <span>EC_T_DC_CONFIGURE::</span><span>dwTotalBurstLength</span>
+</div><div><br></div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-a/dc_api.html?highlight=burst#emdcconfigure" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-a/dc_api.html?highlight=burst#emdcconfigure" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-a/dc_api.html?highlight=burst#emdcconfigure</a></div></div><div><br></div><div>Using a shorter burst will speed up the startup procedure but it will takes several seconds (10s-20s) to see that the slaves SYNC0 are InSync.</div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Wednesday, June 18, 2025 at 5:23:48 AM, Jon Waters wrote:<br><br><div>
+<p>Hi Misha,</p>
+<p> </p>
+<p>I’m copying our developer support email to help with this, and will also send your other email about cable redundancy questions there as well.</p>
+<p> </p>
+<div><p>/Jon</p></div>
+<p> </p>
+<div>
+<span class="js-signatureMarker"></span><p><b>From:</b><span> Misha Ryabko &lt;mryabko@relativityspace.com&gt; <br><b>Sent:</b> Tuesday, June 17, 2025 4:30 PM<br><b>To:</b> Jon Waters &lt;j.waters@acontis.com&gt;<br><b>Cc:</b> Eric Zhang &lt;ezhang@relativityspace.com&gt;; Caleb Cotter &lt;ccotter@relativityspace.com&gt;; Sonia Cho &lt;scho@relativityspace.com&gt;<br><b>Subject:</b> Question about Distributed Clocks</span></p>
+</div>
+<p> </p>
+<p>Hi Jon,</p>
+<p> </p>
+<p>I’m seeing some interesting behavior with regards to distributed clocks on a bus of ours. We see that the initial burst bulk is sent out even when oDcmConfig.eMode is set to eDcmMode_Off. Why is that? Is there any concern with setting the initial burst to be a very low value? I have cc’d the team responsible for maintaining our bus as well if you have any suggestions about initial settings for our bus.</p>
+<p> </p>
+<p>One thing to note, as part of our boot process we do change our boot times in order to prevent any issues with slaves failing to transition states. I see in the docs that this is disallowed when DCM is configured with Bus Shift mode. Should we change to Master Shift by default in response?</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Misha</p>
+<p> </p>
+<p>This email may include confidential content. If you are not the intended recipient, please notify the sender immediately, delete the e-mail and do not use or transmit the contents to any third parties. Relativity Space, Inc. reserves and asserts all rights to confidentiality and intellectual property included in this email and its attachments.</p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

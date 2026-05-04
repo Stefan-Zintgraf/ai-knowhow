@@ -1,0 +1,106 @@
+### HEADER
+Id=10036
+Link=http://at-zammad/#ticket/zoom/10036
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Stryker (ID=471, Number=0, Country=US)
+Commission=Stryker, Mako (ID=549, Number=549)
+Number=7010036
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=mike.ford1@stryker.com (ID=1777, FirstName=Mike, LastName=Ford)
+CreatedBy=mike.ford1@stryker.com (ID=1777, FirstName=Mike, LastName=Ford)
+Type=
+TimeUnit=
+CreatedAt=24.02.2025 18:44:10 +00:00
+UpdatedAt=07.03.2025 07:04:14 +00:00
+CloseAt=07.03.2025 07:04:14 +00:00
+ArticlesCount=2
+
+### TITLE
+Bus Topology Error Scenario
+
+### ARTICLE00_HEADER
+Id=57373
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=24.02.2025 18:44:10 +00:00
+UpdatedAt=24.02.2025 18:44:11 +00:00
+
+### ARTICLE00_SUBJECT
+Bus Topology Error Scenario
+
+### ARTICLE00_BODY
+<div>Hello,</div><div> </div><div>It is my understanding that the default behavior of EC Master requires a fixed topology, meaning the ENI file content must match what is found on the bus. If this is not the case (7 nodes defined, 6 nodes found) the bus scan would fail. My question is if this is a fatal error or if theres any way to progress past this and still communicate with the 6 found nodes.</div><div> </div><div>Similarly, if all 7 nodes are found upon bus scan and the network progresses to operational as expected, what would happen if a node were to disappear during usage? Would this be some sort of bus/master fatal fault? Or would the application still be able to interface with the remaining nodes? I am interested in error scenarios where a node could drop out, but control of the other nodes could still be maintained.</div><div> </div><div>Is this where the hot connect feature comes into play?</div><div> </div><div>Any info on the above couple scenarios would be great.</div><div> </div><div>Thanks</div><div> </div><div style="color: inherit;">
+<p><span style=" color: rgb(255, 181, 0);">Mike</span> Ford</p>
+<p>Staff Engineer, Robotic Platforms</p>
+<p>Stryker</p>
+<p>Digital, Robotics, and Enabling Technologies</p>
+<p>1941 Stryker Way</p>
+<p>Portage, MI, 49002</p>
+<p>mike.ford1@stryker.com</p>
+<p> </p>
+</div>Follow this link to read our<a href="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" rel="nofollow noreferrer noopener" title="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" target="_blank"> Privacy Statement</a>
+
+### ARTICLE01_HEADER
+Id=57386
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=25.02.2025 06:54:25 +00:00
+UpdatedAt=25.02.2025 06:54:27 +00:00
+
+### ARTICLE01_SUBJECT
+Bus Topology Error Scenario
+
+### ARTICLE01_BODY
+Hi Mike,<div><br></div><div>by default, it is fatal and EC-Master can not set the network to OP. There are several way to deal with the situation.</div><div><br></div><div>a) During development or <span>commissioning, you can use </span><span>EC_IOCTL_ALL_SLAVES_MUST_REACH_MASTER_STATE</span>
+</div><div><div><a href="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=all_slaves#emiocontrol-ec-ioctl-all-slaves-must-reach-master-state" title="https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=all_slaves#emiocontrol-ec-ioctl-all-slaves-must-reach-master-state" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.2/html/ec-master-class-b/api.html?highlight=all_slaves#emiocontrol-ec-ioctl-all-slaves-must-reach-master-state</a></div></div><div><br></div><div>b) To support flexible machine configuration, you can use FP Superset ENI:</div><div><div>
+<a href="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" title="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf</a> Page 17</div></div><div><br></div><div>c) To support hot plug during operation, you can use FP Hot connect:</div><div><div>
+<a href="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" title="https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf" rel="nofollow noreferrer noopener" target="_blank">https://software.acontis.com/Documents/AT1021_V1.1_EC-Master-Feature-Packs.pdf</a> Page 10</div></div><div><br></div><div>Best Regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Cyril Eyssautier</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, February 24, 2025 at 7:44:10 PM, Mike Ford wrote:<br><br><div>Hello,</div>
+<div> </div>
+<div>It is my understanding that the default behavior of EC Master requires a fixed topology, meaning the ENI file content must match what is found on the bus. If this is not the case (7 nodes defined, 6 nodes found) the bus scan would fail. My question is if this is a fatal error or if theres any way to progress past this and still communicate with the 6 found nodes.</div>
+<div> </div>
+<div>Similarly, if all 7 nodes are found upon bus scan and the network progresses to operational as expected, what would happen if a node were to disappear during usage? Would this be some sort of bus/master fatal fault? Or would the application still be able to interface with the remaining nodes? I am interested in error scenarios where a node could drop out, but control of the other nodes could still be maintained.</div>
+<div> </div>
+<div>Is this where the hot connect feature comes into play?</div>
+<div> </div>
+<div>Any info on the above couple scenarios would be great.</div>
+<div> </div>
+<div>Thanks</div>
+<div> </div>
+<div style="color: inherit;">
+<p><span style=" color: rgb(255, 181, 0);">Mike</span> Ford</p>
+<p>Staff Engineer, Robotic Platforms</p>
+<p>Stryker</p>
+<p>Digital, Robotics, and Enabling Technologies</p>
+<p>1941 Stryker Way</p>
+<p>Portage, MI, 49002</p>
+<p>mike.ford1@stryker.com</p>
+<p> </p>
+</div>Follow this link to read our<a href="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" rel="nofollow noreferrer noopener" title="https://www.stryker.com/content/stryker/gb/en/legal/global-policy-statement.html/" target="_blank"> Privacy Statement</a><br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

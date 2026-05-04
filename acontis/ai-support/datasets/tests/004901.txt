@@ -1,0 +1,175 @@
+### HEADER
+Id=4901
+Link=http://at-zammad/#ticket/zoom/4901
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=JSLT (ID=402, Number=0, Country=JP)
+Commission=Mitutoyo, 3-dimentional measuring devices (ID=275, Number=275)
+Number=704901
+Owner=t.nussbaumer@acontis.com (ID=921, FirstName=Timo, LastName=Nußbaumer)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=10.02.2023 00:24:46 +00:00
+UpdatedAt=21.02.2023 08:15:23 +00:00
+CloseAt=17.02.2023 07:12:12 +00:00
+ArticlesCount=5
+
+### TITLE
+Question about EC-Master(Mitsutoyo)
+
+### ARTICLE00_HEADER
+Id=25889
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=10.02.2023 00:24:46 +00:00
+UpdatedAt=10.02.2023 00:24:48 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Master(Mitsutoyo)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(Mitsutoyo)
+
+The customer wants to change the jobtask flow as follows.
+
+Change before:
+  ecatExecJob(eUsrJob_ProcessAllRxFrames, &oJobParms);
+  myAppWorkpd(pAppContext);
+  ecatExecJob(eUsrJob_SendAllCycFrames, &oJobParms);
+  ecatExecJob(eUsrJob_MasterTimer, EC_NULL);
+  ecatExecJob(eUsrJob_SendAcycFrames, EC_NULL);
+
+Change after:
+  ecatExecJob(eUsrJob_ProcessAllRxFrames, &oJobParms);
+  ecatExecJob(eUsrJob_SendAllCycFrames, &oJobParms);
+  myAppWorkpd(pAppContext);
+  ecatExecJob(eUsrJob_MasterTimer, EC_NULL);
+  ecatExecJob(eUsrJob_SendAcycFrames, EC_NULL);
+
+- The reason they want to change it is because myAppWorkpd has a lot of processing time jitter.
+- It is acceptable that this change delays the transmission by one cycle.
+
+Q. Is there a problem with their master usage?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=25902
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=10.02.2023 09:12:20 +00:00
+UpdatedAt=10.02.2023 09:12:20 +00:00
+
+### ARTICLE01_BODY
+Hi Paul, bin ich richtig in der Annahme, dass der Kunde seine verarbeiteten Daten immer wieder von den neu Empfangen überschreiben würde. Somit gar keine echte Prozessdatenverarbeitung statt finden würde? Maintenance läuft Ende diesen Monats aus.<div>Würde den Takuya den Kunden nochmals auf <a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html#network-timing" title="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html#network-timing" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html#network-timing</a> hinweisen<span> lassen. Danke Dir und Gruß Timo.</span>
+</div>
+
+### ARTICLE02_HEADER
+Id=25903
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=10.02.2023 09:15:29 +00:00
+UpdatedAt=10.02.2023 09:15:29 +00:00
+
+### ARTICLE02_BODY
+Hi Timo,<div><br></div><div>ja das geht:</div><div><br></div><div>
+<img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/4901/25903/109140?view=inline"><br>
+</div><div>(aus <span>P:\Files\EC\EC-Master\Docs\doc\Manuals\Zusatzdokumente\JobTask-Models.ppt )</span>
+</div><div><br></div><div>Viele Grüße</div><div>Paul</div>
+
+### ARTICLE03_HEADER
+Id=25907
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=10.02.2023 09:48:35 +00:00
+UpdatedAt=10.02.2023 09:48:37 +00:00
+
+### ARTICLE03_SUBJECT
+Question about EC-Master(Mitsutoyo)
+
+### ARTICLE03_BODY
+Hi Takuya,<div><br></div><div>yes this order is possible. You also can refer to other modes described in <a href="https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html#network-timing" rel="nofollow noreferrer noopener" target="_blank">https://public.acontis.com/manuals/EC-Master/3.1/html/ec-master-class-b/software-integration.html#network-timing</a>.</div><div><br></div><div>The mentioned Mitsutoyo case (pros and cons) are described in the attached PDF slide 4.</div><div><br></div><div>I don't see a problem with their EC-Master usage.</div><div><br></div><div>Best regards,<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Timo Nußbaumer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: -</div>
+<div>acontis technologies GmbH,  -, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Friday, February 10, 2023 at 1:24:46 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Master(Mitsutoyo)</div>
+<div><br></div>
+<div>The customer wants to change the jobtask flow as follows.</div>
+<div><br></div>
+<div>Change before:</div>
+<div>  ecatExecJob(eUsrJob_ProcessAllRxFrames, &amp;oJobParms);</div>
+<div>  myAppWorkpd(pAppContext);</div>
+<div>  ecatExecJob(eUsrJob_SendAllCycFrames, &amp;oJobParms);</div>
+<div>  ecatExecJob(eUsrJob_MasterTimer, EC_NULL);</div>
+<div>  ecatExecJob(eUsrJob_SendAcycFrames, EC_NULL);</div>
+<div><br></div>
+<div>Change after:</div>
+<div>  ecatExecJob(eUsrJob_ProcessAllRxFrames, &amp;oJobParms);</div>
+<div>  ecatExecJob(eUsrJob_SendAllCycFrames, &amp;oJobParms);</div>
+<div>  myAppWorkpd(pAppContext);</div>
+<div>  ecatExecJob(eUsrJob_MasterTimer, EC_NULL);</div>
+<div>  ecatExecJob(eUsrJob_SendAcycFrames, EC_NULL);</div>
+<div><br></div>
+<div>- The reason they want to change it is because myAppWorkpd has a lot of processing time jitter.</div>
+<div>- It is acceptable that this change delays the transmission by one cycle.</div>
+<div><br></div>
+<div>Q. Is there a problem with their master usage?</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE04_HEADER
+Id=26173
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=20.02.2023 09:21:16 +00:00
+UpdatedAt=20.02.2023 09:21:16 +00:00
+
+### ARTICLE04_SUBJECT
+Question about EC-Master(Mitsutoyo)
+
+### ARTICLE04_BODY
+Dear EtherCAT Support
+
+Question about EC-Master(KOMATSU)
+
+Is there a document that shows the steps from building to running?
+
+Best regards,
+Takuya Fujikawa
+

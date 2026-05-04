@@ -1,0 +1,158 @@
+### HEADER
+Id=1610
+Link=http://at-zammad/#ticket/zoom/1610
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Philips Healthcare (ID=381, Number=40395, Country=US)
+Commission=Philips Healthcare, CT Advanced Development (ID=453, Number=453)
+Number=701610
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=naji.karkour@philips.com (ID=166, FirstName=Naji, LastName=Karkour)
+CreatedBy=naji.karkour@philips.com (ID=166, FirstName=Naji, LastName=Karkour)
+Type=
+TimeUnit=
+CreatedAt=12.10.2021 13:31:56 +00:00
+UpdatedAt=15.10.2021 07:17:44 +00:00
+CloseAt=15.10.2021 07:17:44 +00:00
+ArticlesCount=5
+
+### TITLE
+Total size of Cyclic EtherCAT frame
+
+### ARTICLE00_HEADER
+Id=8686
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.10.2021 13:31:56 +00:00
+UpdatedAt=12.10.2021 13:31:59 +00:00
+
+### ARTICLE00_SUBJECT
+Total size of Cyclic EtherCAT frame
+
+### ARTICLE00_BODY
+<div>
+<p>Hi,</p>
+<p>Is there a method in EC-Master that we could use to get the total size (including headers…) of the Cyclic EtherCAT frame (the one containing the Process Data)?</p>
+<p>We want this information for multiple reasons (development, Service, etc..)</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Naji</p>
+<p> </p>
+</div><br>
+<hr> The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.
+
+### ARTICLE01_HEADER
+Id=8688
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.10.2021 13:41:13 +00:00
+UpdatedAt=12.10.2021 13:41:16 +00:00
+
+### ARTICLE01_SUBJECT
+Total size of Cyclic EtherCAT frame
+
+### ARTICLE01_BODY
+Hi Naji,<div><br></div><div>we don't have this information available.</div><div><br></div><div>The only way to get it would be to register a frame logger by calling <span>emLogFrameEnable() and to process the cyclic frames by using </span><span>EC_LOG_FRAME_FLAGS</span>
+</div><div><br></div><div>Best Regards,</div><div>Cyril<div><br></div>
+<div><blockquote type="cite">On Tuesday, October 12, 2021, 3:31:56 PM, Naji Karkour wrote:<br><br><div>
+<p>Hi,</p>
+<p>Is there a method in EC-Master that we could use to get the total size (including headers…) of the Cyclic EtherCAT frame (the one containing the Process Data)?</p>
+<p>We want this information for multiple reasons (development, Service, etc..)</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Naji</p>
+<p> </p>
+</div>
+<br>
+<hr> The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+
+### ARTICLE02_HEADER
+Id=8698
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.10.2021 19:59:27 +00:00
+UpdatedAt=12.10.2021 20:00:59 +00:00
+
+### ARTICLE02_SUBJECT
+RE: Total size of Cyclic EtherCAT frame
+
+### ARTICLE02_BODY
+<div> <p> </p>
+<div>
+<p>Hi Naji,</p>
+<div> <p> </p>
+</div>
+<div>
+<p>What do you use for generating the ENI file? I think you don't use EC-Engineer, but we have this built-in to EC-Engineer.</p>
+<p> </p>
+<p>You can get the number of bytes of the cyclic frame(s) (process data + some special commands that may or may not be included based on your setup) from the ENI file, but this won’t include the overhead bytes. I will double check with the developers if this information is in the master, but I think you need to just read out the cyclic bytes from the ENI and add in a fixed overhead number of bytes.</p>
+</div>
+</div>
+<p> </p>
+<p><img style="max-width:100%;width:7.25in;max-height:7.4236in;width:696px;max-height:713px;" src="/api/v1/ticket_attachment/1610/8698/34853?view=inline"></p>
+<p> </p>
+<p>/Jon</p>
+<p> </p>
+<span class="js-signatureMarker"></span><p><b>From: </b>naji.karkour@philips.com<br><b>Sent: </b>Tuesday, October 12, 2021 9:31 AM<br><b>To: </b>ecsupport@acontis.com<br><b>Cc: </b>j.waters@acontis.com<br><b>Subject: </b>Total size of Cyclic EtherCAT frame</p>
+<p> </p>
+</div><div>
+<p>Hi,</p>
+<p>Is there a method in EC-Master that we could use to get the total size (including headers…) of the Cyclic EtherCAT frame (the one containing the Process Data)?</p>
+<p>We want this information for multiple reasons (development, Service, etc..)</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Naji</p>
+<p> </p>
+</div><br>
+<hr> The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.
+
+### ARTICLE03_HEADER
+Id=8699
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=12.10.2021 19:59:59 +00:00
+UpdatedAt=12.10.2021 20:01:15 +00:00
+
+### ARTICLE03_SUBJECT
+Fwd: Total size of Cyclic EtherCAT frame
+
+### ARTICLE03_BODY
+Philips isn't using EC-Engineer, is there a way to figure out the cyclic frame size (including overhead)? I think the ENI just contains the cyclic frame size without overhead bytes.<br><br><div>/Jon<br><br><div>
+<strong> From: </strong> "Karkour, Naji" &lt;naji.karkour@philips.com&gt; <br>
+<strong> To: </strong> EtherCAT Support &lt;ecsupport@acontis.com&gt; <br>
+<strong> Cc: </strong> "j.waters@acontis.com" &lt;j.waters@acontis.com&gt; <br>
+<strong> Sent: </strong> 10/12/2021 9:31 AM <br>
+<strong> Subject: </strong> Total size of Cyclic EtherCAT frame <br><br><blockquote><div>
+<div>
+<p>Hi,</p>
+<p>Is there a method in EC-Master that we could use to get the total size (including headers…) of the Cyclic EtherCAT frame (the one containing the Process Data)?</p>
+<p>We want this information for multiple reasons (development, Service, etc..)</p>
+<p> </p>
+<p>Thanks,</p>
+<p>Naji</p>
+<p> </p>
+</div>
+<br>
+<hr> The information contained in this message may be confidential and legally protected under applicable law. The message is intended solely for the addressee(s). If you are not the intended recipient, you are hereby notified that any use, forwarding, dissemination, or reproduction of this message is strictly prohibited and may be unlawful. If you are not the intended recipient, please contact the sender by return e-mail and destroy all copies of the original message.<br> </div></blockquote>
+</div>
+</div>
+
+### ARTICLE04_HEADER
+Id=8702
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=12.10.2021 20:01:30 +00:00
+UpdatedAt=12.10.2021 20:01:30 +00:00
+
+### ARTICLE04_BODY
+Sorry Cyril, didn't see you answered this already before I replied :(<br>

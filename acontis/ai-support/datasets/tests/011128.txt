@@ -1,0 +1,174 @@
+### HEADER
+Id=11128
+Link=http://at-zammad/#ticket/zoom/11128
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=Soft Service (ID=251, Number=40412, Country=JP)
+Commission=Mitsubishi Electric, Nagoya Works PLC (ID=768, Number=768)
+Number=7011128
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+CreatedBy=yuichi.ide@soft-service.co.jp (ID=132, FirstName=Yuichi, LastName=Ide)
+Type=
+TimeUnit=
+CreatedAt=31.07.2025 02:09:38 +00:00
+UpdatedAt=04.08.2025 06:09:20 +00:00
+CloseAt=04.08.2025 06:09:20 +00:00
+ArticlesCount=3
+
+### TITLE
+“Sync Manager” does not appear when editing PDO with Direction set to In. (PNo.226)
+
+### ARTICLE00_HEADER
+Id=63861
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.07.2025 02:09:38 +00:00
+UpdatedAt=31.07.2025 02:09:43 +00:00
+
+### ARTICLE00_SUBJECT
+“Sync Manager” does not appear when editing PDO with Direction set to In. (PNo.226)
+
+### ARTICLE00_BODY
+<div dir="ltr">Hi Support Team</div><div>This is from Mitsubishi (commission No. 40627).</div><div>EC-Engineer V.3.9.13</div><div dir="ltr">
+<br>
+</div><div dir="ltr">[Reported issue]</div><div>$B!H(BSync Manager$B!I(B does not appear when editing PDO with Direction set to In.</div><div>*Downgrade from v3.9.11 or later</div><div dir="ltr">
+<br>
+</div><div>$B!Z(BReproduction steps$B![(B</div><div>1. Add one Slave (EK1960-0000).</div><div>2. Select the Slave, then select the [PDO Mapping] tab.</div><div>3. Check [Download PDO Configuration], then click the [Add] button.</div><div>4. In the Add PDO dialog, specify $B!H(BTEST$B!I(B for [Name], $B!F(BTxPDO$B!G(B for [Direction], and $B!H(B3$B!I(B for [Sync Manager], then click the [OK] button.</div><div>5. Select $B!H(BTEST$B!I(B from [PDO Mapping], then click the [Edit] button.</div><div>6. In the Edit PDO dialog, confirm the [Sync Manager] item.</div><div dir="ltr"> $B"*(B <span style=" background-color: rgb(255, 255, 255);">$B!H(BSync Manager$B!I(B does not appear</span>
+</div><div dir="ltr">
+<span style="background-color: rgb(255, 255, 255);"><img src="/api/v1/ticket_attachment/11128/63861/264682?view=inline" alt="image.png" style="max-width:100%;width: 577px;max-width: 100%;"></span>
+</div><div dir="ltr">
+<br>
+</div><div dir="ltr">But at case of RxPDO, this area is appeared.</div><div dir="ltr">
+<img src="/api/v1/ticket_attachment/11128/63861/264683?view=inline" alt="image.png" style="max-width:100%;width: 578px;max-width: 100%;">
+</div><div dir="ltr">
+<span style="background-color: rgb(255, 255, 255);"><br>
+</span>
+</div><div>Best regards,</div><div dir="ltr">Yuichi</div><div dir="ltr">
+<br>
+</div><div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span style=" background-color: rgb(255, 255, 255);"><br>
+</span></p>
+</div>
+
+### ARTICLE01_HEADER
+Id=63889
+ContentType=text/html
+Internal=True
+Type=note
+CreatedAt=31.07.2025 07:33:27 +00:00
+UpdatedAt=31.07.2025 07:33:27 +00:00
+
+### ARTICLE01_BODY
+Die Zeile hier ist das Problem:<div>if (eniSm.StartAddress &gt; 0 &amp;&amp; pdo.ExcludedSm.All(excludedSm =&gt; i != excludedSm))</div><div><br></div><div>Falls dieser SyncManager nicht mehr wählbar sein, dann sollte er auch nicht bei "Add" kommen oder?</div>
+
+### ARTICLE02_HEADER
+Id=63923
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.07.2025 13:48:35 +00:00
+UpdatedAt=31.07.2025 13:48:37 +00:00
+
+### ARTICLE02_SUBJECT
+“Sync Manager” does not appear when editing PDO with Direction set to In. (PNo.226)
+
+### ARTICLE02_BODY
+Hi,<div><br></div><div>sorry, this is a bug in the "add pdo" dialog.</div><div><br></div><div>Sync manager with start address 0 should be not visible:</div><div><br></div><div>
+<img style="max-width:100%;width: 461px;max-width: 100%;" src="/api/v1/ticket_attachment/11128/63923/264937?view=inline"><br><div><br></div>
+<div>NOTE:</div>
+<div>If the GUI detects that only one sync manager is possible, it will hide the combobox of the sync managers. This the answer why the combobox is hidden for TxPdos and visible for RxPdos.</div>
+<div><br></div>
+<div>On tab "FMMU/SM" you can see that the start address of sync manager 4 + 5 is 0, this means they can not be used:</div>
+<div><br></div>
+<div><img style="max-width:100%;width: 1000px;max-width: 100%;" src="/api/v1/ticket_attachment/11128/63923/264938?view=inline"></div>
+<div><br></div>
+<div>The problem will be fixed in the next version.</div>
+<div><br></div>
+<div>Best Regards,</div>
+<div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  <span>Franz-Beer-Straße 98, D-88250 Weingarten, Germany</span>, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Thursday, July 31, 2025 at 4:09:38 AM, Yuichi Ide wrote:<br><br><div dir="ltr">Hi Support Team</div>
+<div>This is from Mitsubishi (commission No. 40627).</div>
+<div>EC-Engineer V.3.9.13</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">[Reported issue]</div>
+<div>$B!H(BSync Manager$B!I(B does not appear when editing PDO with Direction set to In.</div>
+<div>*Downgrade from v3.9.11 or later</div>
+<div dir="ltr">
+<br>
+</div>
+<div>$B!Z(BReproduction steps$B![(B</div>
+<div>1. Add one Slave (EK1960-0000).</div>
+<div>2. Select the Slave, then select the [PDO Mapping] tab.</div>
+<div>3. Check [Download PDO Configuration], then click the [Add] button.</div>
+<div>4. In the Add PDO dialog, specify $B!H(BTEST$B!I(B for [Name], $B!F(BTxPDO$B!G(B for [Direction], and $B!H(B3$B!I(B for [Sync Manager], then click the [OK] button.</div>
+<div>5. Select $B!H(BTEST$B!I(B from [PDO Mapping], then click the [Edit] button.</div>
+<div>6. In the Edit PDO dialog, confirm the [Sync Manager] item.</div>
+<div dir="ltr"> $B"*(B <span style=" background-color: rgb(255, 255, 255);">$B!H(BSync Manager$B!I(B does not appear</span>
+</div>
+<div dir="ltr">
+<span style="background-color: rgb(255, 255, 255);"><img src="/api/v1/ticket_attachment/11128/63923/264939?view=inline" alt="image.png" style="max-width:100%;max-width:100%;width: 577px;max-width: 100%;"></span>
+</div>
+<div dir="ltr">
+<br>
+</div>
+<div dir="ltr">But at case of RxPDO, this area is appeared.</div>
+<div dir="ltr">
+<img src="/api/v1/ticket_attachment/11128/63923/264940?view=inline" alt="image.png" style="max-width:100%;max-width:100%;width: 578px;max-width: 100%;">
+</div>
+<div dir="ltr">
+<span style="background-color: rgb(255, 255, 255);"><br>
+</span>
+</div>
+<div>Best regards,</div>
+<div dir="ltr">Yuichi</div>
+<div dir="ltr">
+<br>
+</div>
+<div>- SSV Group, Be Professional -<div>--------------------------------------------------</div>
+<div>Soft Service Co., Ltd.</div>
+<div>Kanto Sales Dept.</div>
+<div>Yuichi Ide</div>
+<div>Address : 7F PMO Ochanomizu, 4-4-1, Kandasurugadai, Chiyoda, Tokyo 101-0062, Japan</div>
+<div>TEL : +81-3-6260-8056 / FAX : +81-3-6260-8058</div>
+<div>E-mail : yuichi.ide@soft-service.co.jp</div>
+<div>--------------------------------------------------</div>
+<p><span style=" background-color: rgb(255, 255, 255);"><br>
+</span></p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>

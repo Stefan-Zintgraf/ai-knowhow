@@ -1,0 +1,174 @@
+### HEADER
+Id=1310
+Link=http://at-zammad/#ticket/zoom/1310
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=eCential Robotics (ID=536, Number=0, Country=FR)
+Commission=eCential Robotics, Surgical assistance system (ID=218, Number=218)
+Number=701310
+Owner=c.eyssautier@acontis.com (ID=15, FirstName=Cyril, LastName=Eyssautier)
+Customer=thomas.dancoisne@ecential-robotics.com (ID=599, FirstName=Thomas, LastName=Dancoisne)
+CreatedBy=thomas.dancoisne@ecential-robotics.com (ID=599, FirstName=Thomas, LastName=Dancoisne)
+Type=
+TimeUnit=
+CreatedAt=30.08.2021 16:08:17 +00:00
+UpdatedAt=25.04.2022 12:43:44 +00:00
+CloseAt=08.10.2021 06:09:02 +00:00
+ArticlesCount=2
+
+### TITLE
+Question on error notification for LRW command
+
+### ARTICLE00_HEADER
+Id=7095
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=30.08.2021 16:08:17 +00:00
+UpdatedAt=30.08.2021 16:08:17 +00:00
+
+### ARTICLE00_SUBJECT
+Question on error notification for LRW command
+
+### ARTICLE00_BODY
+<div>
+<p>Hello,</p>
+<p> </p>
+<p>I’m currently working on an EtherCAT architecture using the EC-Master stack on QNX.</p>
+<p>It contains just 1 master and 1 slave.</p>
+<p>When transitionning to the SAFEOP or OP states, i receive a few error notifications named EC_NOTIFY_CYCCMD_WKC_ERROR (and after a few cycles, everything is alright).</p>
+<p>From what i’ve understood in the documentation, it means that some slaves didn’t answer to the master command.</p>
+<p>Looking at the EC_T_ERROR_NOTIFICATION_DESC, it seems that it happens for command LRW (WkcErrDesc.byCmd = 12) and that only 1 of the 3 slaves answered in time (WkcErrDesc.wWkcAct / WkcErrDesc.wWkcSet = 1/3), but i don’t understand where this « 3 » comes from.</p>
+<p>It is indeed configured in the xml config file that i generated with TwinCAT :</p>
+<p> </p>
+<p><i> &lt;Cmd&gt;</i></p>
+<p><i> &lt;State&gt;SAFEOP&lt;/State&gt;</i></p>
+<p><i> &lt;State&gt;OP&lt;/State&gt;</i></p>
+<p><i> &lt;Comment&gt;&lt;![CDATA[cyclic cmd]]&gt;&lt;/Comment&gt;</i></p>
+<p><i> &lt;Cmd&gt;12&lt;/Cmd&gt;</i></p>
+<p><i> &lt;Addr&gt;16777216&lt;/Addr&gt;</i></p>
+<p><i> &lt;DataLength&gt;18&lt;/DataLength&gt;</i></p>
+<p><i> <b>&lt;Cnt&gt;3&lt;/Cnt&gt;</b></i></p>
+<p><i> &lt;InputOffs&gt;48&lt;/InputOffs&gt;</i></p>
+<p><i> &lt;OutputOffs&gt;48&lt;/OutputOffs&gt;</i></p>
+<p><i> &lt;/Cmd&gt;</i></p>
+<p> </p>
+<p>(And if i change it to 1, i get the « reverse » error after a few cycles i.e. 3 slaves answered instead of 1)</p>
+<p> </p>
+<p>Do you have any insight into where this number comes from and why this kind of error can happen ?</p>
+<p>My slave is an ELMO Trombone drive. Please find the ESI file of the drive (ProductCode="#x00030924" RevisionNo="#x00010420") and my config attached.</p>
+<p> </p>
+<p>Thanks in advance.</p>
+<p> </p>
+<p>Best regards,</p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td valign="top" style="padding:0cm 5.4pt 0cm 5.4pt;">
+<p><img style="max-width:100%;width:2.5208in;max-height:.7708in;width:242px;max-height:74px;" src="/api/v1/ticket_attachment/1310/7095/25676?view=inline"></p>
+<p></p>
+</td>
+<td style="padding:0cm 5.4pt 0cm 5.4pt;">
+<p><b>Thomas DANCOISNE</b></p>
+<p></p>
+<p><i>Software engineer</i></p>
+<p></p>
+<p>thomas.dancoisne@ecential-robotics.com</p>
+<p></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top" style="padding:0cm 5.4pt 0cm 5.4pt;">
+<p><b>eCential</b> Robotics - Zone Mayencin II – Parc Equation – Bâtiment 1 - 2 avenue de Vignate – 38610 Gières – France</p>
+<p></p>
+<p><a href="https://fra01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.ecential-robotics.com%2F&amp;data=04%7C01%7Cthomas.dancoisne%40ecential-robotics.com%7C0189cab3bb2e454ef4a808d8be57e7d6%7C257e153ed399493c8b942425235618be%7C0%7C0%7C637468632088291956%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=sDbwPNkPhI7lpiQ%2FJ0GT%2BV218Rh0fBiuSu73oWqg3JU%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://fra01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.ecential-robotics.com%2F&amp;data=04%7C01%7Cthomas.dancoisne%40ecential-robotics.com%7C0189cab3bb2e454ef4a808d8be57e7d6%7C257e153ed399493c8b942425235618be%7C0%7C0%7C637468632088291956%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=sDbwPNkPhI7lpiQ%2FJ0GT%2BV218Rh0fBiuSu73oWqg3JU%3D&amp;reserved=0" target="_blank">www.ecential-robotics.com</a></p>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table> <p> </p>
+<p><i>Ce message et les fichiers qui peuvent y être attachés sont confidentiels et peuvent être couverts par le secret professionnel. Si vous avez reçu ce message par erreur, veuillez informer son auteur dès que possible et supprimer ce message avec ses éventuelles pièces jointes sans en conserver de copie. Nous vous informons que toute reproduction, diffusion, divulgation ou autre utilisation de cette communication est interdite.</i></p>
+<p> </p>
+</div>
+
+### ARTICLE01_HEADER
+Id=7136
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=31.08.2021 09:00:05 +00:00
+UpdatedAt=31.08.2021 09:00:07 +00:00
+
+### ARTICLE01_SUBJECT
+Question on error notification for LRW command
+
+### ARTICLE01_BODY
+Hi Thomas,<div><br></div><div>during the SO (<span>SAFEOP-&gt;OP</span><span>) transition it is possible that the slave doesn't process some cyclic frames. You should not modify the ENI file. Perhaps you can ignore these notification if the master state is not OP.</span>
+</div><div>
+<span>You can try to use </span><span>EC_IOCTL_SET_AUTO_ADJUST_CYCCMD_WKC_ENABLED and check if you still see the error. Using this IOCTL, the stack adjust the expected WKC according the state and presence of the slaves.</span>
+</div><div><br></div><div>Best Regards,</div><div>Cyril<div><br></div>
+<div><blockquote type="cite">On Monday, August 30, 2021, 6:08:17 PM, Thomas Dancoisne wrote:<br><br><div>
+<p>Hello,</p>
+<p> </p>
+<p>I’m currently working on an EtherCAT architecture using the EC-Master stack on QNX.</p>
+<p>It contains just 1 master and 1 slave.</p>
+<p>When transitionning to the SAFEOP or OP states, i receive a few error notifications named EC_NOTIFY_CYCCMD_WKC_ERROR (and after a few cycles, everything is alright).</p>
+<p>From what i’ve understood in the documentation, it means that some slaves didn’t answer to the master command.</p>
+<p>Looking at the EC_T_ERROR_NOTIFICATION_DESC, it seems that it happens for command LRW (WkcErrDesc.byCmd = 12) and that only 1 of the 3 slaves answered in time (WkcErrDesc.wWkcAct / WkcErrDesc.wWkcSet = 1/3), but i don’t understand where this « 3 » comes from.</p>
+<p>It is indeed configured in the xml config file that i generated with TwinCAT :</p>
+<p> </p>
+<p><i> &lt;Cmd&gt;</i></p>
+<p><i> &lt;State&gt;SAFEOP&lt;/State&gt;</i></p>
+<p><i> &lt;State&gt;OP&lt;/State&gt;</i></p>
+<p><i> &lt;Comment&gt;&lt;![CDATA[cyclic cmd]]&gt;&lt;/Comment&gt;</i></p>
+<p><i> &lt;Cmd&gt;12&lt;/Cmd&gt;</i></p>
+<p><i> &lt;Addr&gt;16777216&lt;/Addr&gt;</i></p>
+<p><i> &lt;DataLength&gt;18&lt;/DataLength&gt;</i></p>
+<p><i> <b>&lt;Cnt&gt;3&lt;/Cnt&gt;</b></i></p>
+<p><i> &lt;InputOffs&gt;48&lt;/InputOffs&gt;</i></p>
+<p><i> &lt;OutputOffs&gt;48&lt;/OutputOffs&gt;</i></p>
+<p><i> &lt;/Cmd&gt;</i></p>
+<p> </p>
+<p>(And if i change it to 1, i get the « reverse » error after a few cycles i.e. 3 slaves answered instead of 1)</p>
+<p> </p>
+<p>Do you have any insight into where this number comes from and why this kind of error can happen ?</p>
+<p>My slave is an ELMO Trombone drive. Please find the ESI file of the drive (ProductCode="#x00030924" RevisionNo="#x00010420") and my config attached.</p>
+<p> </p>
+<p>Thanks in advance.</p>
+<p> </p>
+<p>Best regards,</p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tbody>
+<tr>
+<td valign="top" style="padding:0cm 5.4pt 0cm 5.4pt;">
+<p><img style="max-width:100%;max-width:100%;width:2.5208in;max-height:.7708in;width:242px;max-height:74px;" src="/api/v1/ticket_attachment/1310/7136/25753?view=inline"></p>
+<p></p>
+</td>
+<td style="padding:0cm 5.4pt 0cm 5.4pt;">
+<p><b>Thomas DANCOISNE</b></p>
+<p></p>
+<p><i>Software engineer</i></p>
+<p></p>
+<p>thomas.dancoisne@ecential-robotics.com</p>
+<p></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top" style="padding:0cm 5.4pt 0cm 5.4pt;">
+<p><b>eCential</b> Robotics - Zone Mayencin II – Parc Equation – Bâtiment 1 - 2 avenue de Vignate – 38610 Gières – France</p>
+<p></p>
+<p><a href="https://fra01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.ecential-robotics.com%2F&amp;data=04%7C01%7Cthomas.dancoisne%40ecential-robotics.com%7C0189cab3bb2e454ef4a808d8be57e7d6%7C257e153ed399493c8b942425235618be%7C0%7C0%7C637468632088291956%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=sDbwPNkPhI7lpiQ%2FJ0GT%2BV218Rh0fBiuSu73oWqg3JU%3D&amp;reserved=0" rel="nofollow noreferrer noopener" title="https://fra01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.ecential-robotics.com%2F&amp;data=04%7C01%7Cthomas.dancoisne%40ecential-robotics.com%7C0189cab3bb2e454ef4a808d8be57e7d6%7C257e153ed399493c8b942425235618be%7C0%7C0%7C637468632088291956%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=sDbwPNkPhI7lpiQ%2FJ0GT%2BV218Rh0fBiuSu73oWqg3JU%3D&amp;reserved=0" target="_blank">www.ecential-robotics.com</a></p>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table> <p> </p>
+<p><i>Ce message et les fichiers qui peuvent y être attachés sont confidentiels et peuvent être couverts par le secret professionnel. Si vous avez reçu ce message par erreur, veuillez informer son auteur dès que possible et supprimer ce message avec ses éventuelles pièces jointes sans en conserver de copie. Nous vous informons que toute reproduction, diffusion, divulgation ou autre utilisation de cette communication est interdite.</i></p>
+<p> </p>
+</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>

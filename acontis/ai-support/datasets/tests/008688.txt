@@ -1,0 +1,217 @@
+### HEADER
+Id=8688
+Link=http://at-zammad/#ticket/zoom/8688
+Group=EC-Support (ID=2)
+Priority=normal (ID=2)
+State=closed (ID=4)
+Organization=acontis JP (ID=417, Number=0, Country=JP)
+Commission=Fanuc, Robot Controller (ID=925, Number=925)
+Number=708688
+Owner=m.gaenzer@acontis.com (ID=3, FirstName=Martin, LastName=Gaenzer)
+Customer=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+CreatedBy=t.fujikawa@acontis.com (ID=27, FirstName=Takuya, LastName=Fujikawa)
+Type=
+TimeUnit=
+CreatedAt=19.08.2024 09:24:30 +00:00
+UpdatedAt=23.08.2024 06:08:05 +00:00
+CloseAt=23.08.2024 06:08:05 +00:00
+ArticlesCount=3
+
+### TITLE
+Question about EC-Engineer (FANUC)
+
+### ARTICLE00_HEADER
+Id=48745
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=19.08.2024 09:24:30 +00:00
+UpdatedAt=19.08.2024 09:24:32 +00:00
+
+### ARTICLE00_SUBJECT
+Question about EC-Engineer (FANUC)
+
+### ARTICLE00_BODY
+Dear EtherCAT Support
+
+Question about EC-Engineer (FANUC)
+
+A customer using FANUC software based on EC-Engineer has a problem that the Network Scan was not successful.
+The customer tried disabling the antivirus software, and the Network Scan was successful. Therefore, the antivirus software is the cause of this problem.
+The customer's company does not allow the antivirus software to be disabled all the time. The customer wants to configure the antivirus software so that EC-Engineer can communicate, and is asking FANUC about the settings.
+
+The FAQ in the EC-Engineer manual states, "Try to exclude ethernet protocol type "0x88a4" from your firewall."
+
+So here are my questions.
+
+Q1.
+Are there any network protocols other than ethernet protocol type "0x88a4" that EC-Engineer may use?
+UDP, other protocols, etc.
+
+Q2.
+Has acontis experienced any effective configuration of anti-virus software other than the network firewall of the anti-virus software?
+For example, settings to register EC-Engineer .exe files and EcatNdis.sys as allowed programs, etc.
+
+Q3.
+Does acontis have any documents that describe examples of antivirus software settings other than the EC-Engineer manual?
+
+Q4.
+Does acontis have any other advice for FANUC customers?
+
+Best regards,
+Takuya Fujikawa
+
+
+### ARTICLE01_HEADER
+Id=48764
+ContentType=text/html
+Internal=False
+Type=email
+CreatedAt=19.08.2024 12:28:48 +00:00
+UpdatedAt=19.08.2024 12:28:49 +00:00
+
+### ARTICLE01_SUBJECT
+Question about EC-Engineer (FANUC)
+
+### ARTICLE01_BODY
+Hi,<div><br></div><div>see answers below.<br><div><br></div>
+<div>Best Regards,</div>
+<div>Martin<br><div data-signature="true" data-signature-id="2">
+<div>__________________________________________________________________________________________<br>
+</div>
+<div>Martin Gaenzer</div>
+<div>EtherCAT Support</div>
+<div>
+<div>eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30</div>
+<div>acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, <a href="https://www.acontis.com/" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com</a>
+</div>
+</div>
+<div>
+<span>__________________________________________________________________________________________</span>
+</div>
+<div>
+<span>Subscribe to our newsletter and stay updated: </span><a href="https://www.acontis.com/en/newsletter.html" rel="nofollow noreferrer noopener" target="_blank">https://www.acontis.com/en/newsletter.html</a><br>
+</div>
+</div>
+<div>
+<br><br>
+</div>
+<div><blockquote type="cite">On Monday, August 19, 2024 at 11:24:30 AM, Takuya Fujikawa wrote:<br><br><div>Dear EtherCAT Support</div>
+<div><br></div>
+<div>Question about EC-Engineer (FANUC)</div>
+<div><br></div>
+<div>A customer using FANUC software based on EC-Engineer has a problem that the Network Scan was not successful.</div>
+<div>The customer tried disabling the antivirus software, and the Network Scan was successful. Therefore, the antivirus software is the cause of this problem.</div>
+<div>The customer's company does not allow the antivirus software to be disabled all the time. The customer wants to configure the antivirus software so that EC-Engineer can communicate, and is asking FANUC about the settings.</div>
+<div><br></div>
+<div>The FAQ in the EC-Engineer manual states, "Try to exclude ethernet protocol type "0x88a4" from your firewall."</div>
+<div><br></div>
+<div>So here are my questions.</div>
+<div><br></div>
+<div>Q1.</div>
+<div>Are there any network protocols other than ethernet protocol type "0x88a4" that EC-Engineer may use?</div>
+<div>UDP, other protocols, etc.</div>
+<div>MG: No. Only 0x88a4 is used. The UDP protocol can be used. This requires a special link layer which is not included into default EC-Engineer kit. So nobody is using it.</div>
+<div><br></div>
+<div>Q2.</div>
+<div>Has acontis experienced any effective configuration of anti-virus software other than the network firewall of the anti-virus software?</div>
+<div>For example, settings to register EC-Engineer .exe files and EcatNdis.sys as allowed programs, etc.</div>
+<div>MG: No. This depends on your antivirus software. If you solved it, you can send us "how you did it" and tell us the name of your antivirus software. So we can maybe add this to our FAQ section.</div>
+<div><br></div>
+<div>Q3.</div>
+<div>Does acontis have any documents that describe examples of antivirus software settings other than the EC-Engineer manual?</div>
+<div>MG: No.</div>
+<div><br></div>
+<div>Q4.</div>
+<div>Does acontis have any other advice for FANUC customers?</div>
+<div>MG: No.</div>
+<div><br></div>
+<div>Best regards,</div>
+<div>Takuya Fujikawa</div>
+<br>
+</blockquote></div>
+<div><br></div>
+<br><br>
+</div>
+</div>
+
+### ARTICLE02_HEADER
+Id=48783
+ContentType=text/plain
+Internal=False
+Type=email
+CreatedAt=20.08.2024 00:18:51 +00:00
+UpdatedAt=20.08.2024 00:18:51 +00:00
+
+### ARTICLE02_SUBJECT
+Re: Question about EC-Engineer (FANUC) [Ticket#708688]
+
+### ARTICLE02_BODY
+Dear Martin san
+
+FANUC has something to tell you.
+
+ >> MG: No. This depends on your antivirus software. If you solved it, you can send us "how you did it" and tell us the name of your antivirus software. So we can maybe add this to our FAQ section.
+
+FANUC will contact the customer to allow 0x88a4.
+If this problem can be resolved in another way, we will provide the information to acontis.
+Thank you for your continued cooperation. Thank you.
+
+Best regards,
+Takuya Fujikawa
+
+On 2024/08/19 21:28, Martin Gaenzer via EC-Support wrote:
+> Hi,
+> 
+> see answers below.
+> 
+> Best Regards,
+> Martin
+> __________________________________________________________________________________________
+> Martin Gaenzer
+> EtherCAT Support
+> eMail: ecsupport@acontis.com, Phone: +49 (751) 56030-30
+> acontis technologies GmbH,  Franz-Beer-Straße 98, D-88250 Weingarten, Germany, https://www.acontis.com <https://www.acontis.com/>
+> __________________________________________________________________________________________
+> Subscribe to our newsletter and stay updated: https://www.acontis.com/en/newsletter.html <https://www.acontis.com/en/newsletter.html>
+> 
+> 
+>> On Monday, August 19, 2024 at 11:24:30 AM, Takuya Fujikawa wrote:
+>>
+>> Dear EtherCAT Support
+>>
+>> Question about EC-Engineer (FANUC)
+>>
+>> A customer using FANUC software based on EC-Engineer has a problem that the Network Scan was not successful.
+>> The customer tried disabling the antivirus software, and the Network Scan was successful. Therefore, the antivirus software is the cause of this problem.
+>> The customer's company does not allow the antivirus software to be disabled all the time. The customer wants to configure the antivirus software so that EC-Engineer can communicate, and is asking FANUC about the settings.
+>>
+>> The FAQ in the EC-Engineer manual states, "Try to exclude ethernet protocol type "0x88a4" from your firewall."
+>>
+>> So here are my questions.
+>>
+>> Q1.
+>> Are there any network protocols other than ethernet protocol type "0x88a4" that EC-Engineer may use?
+>> UDP, other protocols, etc.
+>> MG: No. Only 0x88a4 is used. The UDP protocol can be used. This requires a special link layer which is not included into default EC-Engineer kit. So nobody is using it.
+>>
+>> Q2.
+>> Has acontis experienced any effective configuration of anti-virus software other than the network firewall of the anti-virus software?
+>> For example, settings to register EC-Engineer .exe files and EcatNdis.sys as allowed programs, etc.
+>> MG: No. This depends on your antivirus software. If you solved it, you can send us "how you did it" and tell us the name of your antivirus software. So we can maybe add this to our FAQ section.
+>>
+>> Q3.
+>> Does acontis have any documents that describe examples of antivirus software settings other than the EC-Engineer manual?
+>> MG: No.
+>>
+>> Q4.
+>> Does acontis have any other advice for FANUC customers?
+>> MG: No.
+>>
+>> Best regards,
+>> Takuya Fujikawa
+>>
+> 
+> 
+> 
+
