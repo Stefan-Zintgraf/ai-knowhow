@@ -1,0 +1,12 @@
+flowchart TB
+    subgraph Rules["🛡️ Four simple rules"]
+        R1["🎯 Scope tokens narrowly: read_api over api, avoid admin tokens"]
+        R2["🔒 Stay in read-only mode while learning — GITLAB_READ_ONLY_MODE=true"]
+        R3["📄 Protect mcp.json: tokens in plain text — never commit to Git"]
+        R4["✋ Approve destructive steps: plan first, then execute"]
+    end
+
+    style R1 fill:#FCE7C8,stroke:#B08968,color:#000
+    style R2 fill:#FCE7C8,stroke:#B08968,color:#000
+    style R3 fill:#FCE7C8,stroke:#B08968,color:#000
+    style R4 fill:#FCE7C8,stroke:#B08968,color:#000

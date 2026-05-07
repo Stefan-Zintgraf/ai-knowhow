@@ -1,0 +1,278 @@
+# CLI E2E Runbook: update --all batch subdir path duplication fix
+
+Validates that `update --all` in project mode does not write skills to the
+wrong path when `meta.Subdir` differs from the local install path.
+
+**Root cause**: `UpdateSkillsFromRepo` used `filepath.Join(sourceDir, meta.Subdir)`
+as the destination, but `meta.Subdir` is the repo-internal path (e.g. `skills/foo`),
+while the local install path may be just `foo/`. This created leaked copies at
+`sourceDir/skills/foo/` alongside the correct `sourceDir/foo/`, doubling the
+skill count on the next scan.
+
+## Scope
+
+- Project-mode `update --all` with monorepo skills whose `meta.Subdir` != local path
+- No leaked subdirectories created after update
+- Skill count stays stable across repeated `update --all` runs
+- Global-mode `update --all` with same pattern (same code path)
+
+## Environment
+
+Run inside devcontainer with `ssenv` HOME isolation.
+Setup hook handles `ss init -g`.
+
+## Steps
+
+### 1. Create a bare monorepo with skills nested under `skills/` subdirectory
+
+```bash
+REPO=~/monorepo-remote.git
+WORK=~/monorepo-work
+
+git init --bare "$REPO"
+git clone "$REPO" "$WORK"
+
+for name in alpha beta gamma; do
+  mkdir -p "$WORK/skills/$name"
+  echo "---
+name: $name
+---
+# $name skill v1" > "$WORK/skills/$name/SKILL.md"
+done
+
+cd "$WORK"
+git add -A
+git -c user.name=e2e -c user.email=e2e@test.com commit -m "init 3 skills"
+git push origin HEAD
+echo "=== Remote ready ==="
+```
+
+Expected:
+- exit_code: 0
+- === Remote ready ===
+
+### 2. Set up a project with skills installed at flat paths
+
+The key scenario: skills are installed locally at `alpha/`, `beta/`, `gamma/`
+(without the `skills/` prefix), but `meta.Subdir` records `skills/alpha` etc.
+
+```bash
+PROJECT=~/test-project
+REPO_URL="file://$HOME/monorepo-remote.git"
+mkdir -p "$PROJECT/.skillshare/skills" "$PROJECT/.claude"
+cat > "$PROJECT/.skillshare/config.yaml" <<CFG
+targets:
+  - claude
+CFG
+mkdir -p "$PROJECT/.claude/skills"
+
+SKILLS_DIR="$PROJECT/.skillshare/skills"
+
+for name in alpha beta gamma; do
+  LOCAL="$SKILLS_DIR/$name"
+  mkdir -p "$LOCAL"
+  cp "$HOME/monorepo-work/skills/$name/SKILL.md" "$LOCAL/"
+
+  cat > "$LOCAL/.skillshare-meta.json" <<META
+{
+  "source": "${REPO_URL}//skills/${name}",
+  "type": "git",
+  "repo_url": "$REPO_URL",
+  "subdir": "skills/${name}",
+  "installed_at": "2025-01-01T00:00:00Z"
+}
+META
+done
+
+echo "Installed skills:"
+ls -1 "$SKILLS_DIR"
+echo "---"
+test ! -d "$SKILLS_DIR/skills" && echo "PASS: no skills/skills/ dir"
+```
+
+Expected:
+- exit_code: 0
+- alpha
+- beta
+- gamma
+- PASS: no skills/skills/ dir
+
+### 3. First `update --all` — verify no path leakage
+
+```bash
+PROJECT=~/test-project
+cd "$PROJECT"
+SKILLSHARE_DEV_ALLOW_WORKSPACE_PROJECT=1 ss update --all -p --skip-audit 2>&1
+
+SKILLS_DIR="$PROJECT/.skillshare/skills"
+
+echo "=== Leak check ==="
+if [ -d "$SKILLS_DIR/skills" ]; then
+  echo "FAIL: leaked skills/ subdirectory found!"
+  ls -la "$SKILLS_DIR/skills/"
+  exit 1
+else
+  echo "PASS: no leaked skills/ subdirectory"
+fi
+
+echo "=== Skill count ==="
+COUNT=$(find "$SKILLS_DIR" -name "SKILL.md" | wc -l | tr -d " ")
+echo "SKILL_COUNT=$COUNT"
+test "$COUNT" -eq 3 || { echo "FAIL: expected 3 skills, got $COUNT"; exit 1; }
+echo "PASS: skill count is 3"
+```
+
+Expected:
+- exit_code: 0
+- PASS: no leaked skills/ subdirectory
+- SKILL_COUNT=3
+- PASS: skill count is 3
+
+### 4. Second `update --all` — verify count is stable (no doubling)
+
+```bash
+PROJECT=~/test-project
+cd "$PROJECT"
+SKILLSHARE_DEV_ALLOW_WORKSPACE_PROJECT=1 ss update --all -p --skip-audit 2>&1
+
+SKILLS_DIR="$PROJECT/.skillshare/skills"
+
+echo "=== Leak check (run 2) ==="
+if [ -d "$SKILLS_DIR/skills" ]; then
+  echo "FAIL: leaked skills/ subdirectory found after second run!"
+  exit 1
+else
+  echo "PASS: no leaked skills/ subdirectory"
+fi
+
+COUNT=$(find "$SKILLS_DIR" -name "SKILL.md" | wc -l | tr -d " ")
+echo "SKILL_COUNT=$COUNT"
+test "$COUNT" -eq 3 || { echo "FAIL: expected 3, got $COUNT (doubling bug!)"; exit 1; }
+echo "PASS: skill count stable at 3 (no doubling)"
+```
+
+Expected:
+- exit_code: 0
+- PASS: no leaked skills/ subdirectory
+- SKILL_COUNT=3
+- PASS: skill count stable at 3 (no doubling)
+
+### 5. Third `update --all` — triple-check stability
+
+```bash
+PROJECT=~/test-project
+cd "$PROJECT"
+SKILLSHARE_DEV_ALLOW_WORKSPACE_PROJECT=1 ss update --all -p --skip-audit 2>&1
+
+SKILLS_DIR="$PROJECT/.skillshare/skills"
+COUNT=$(find "$SKILLS_DIR" -name "SKILL.md" | wc -l | tr -d " ")
+echo "SKILL_COUNT=$COUNT"
+test "$COUNT" -eq 3 || { echo "FAIL: expected 3, got $COUNT"; exit 1; }
+test ! -d "$SKILLS_DIR/skills" || { echo "FAIL: leaked dir"; exit 1; }
+echo "PASS: stable after 3 consecutive runs"
+```
+
+Expected:
+- exit_code: 0
+- SKILL_COUNT=3
+- PASS: stable after 3 consecutive runs
+
+### 6. Push v2 and verify skills were actually updated
+
+```bash
+WORK=~/monorepo-work
+cd "$WORK"
+
+for name in alpha beta gamma; do
+  echo "---
+name: $name
+---
+# $name skill v2 (updated)" > "skills/$name/SKILL.md"
+done
+
+git add -A
+git -c user.name=e2e -c user.email=e2e@test.com commit -m "bump to v2"
+git push origin HEAD
+```
+
+Expected:
+- exit_code: 0
+
+```bash
+PROJECT=~/test-project
+cd "$PROJECT"
+SKILLSHARE_DEV_ALLOW_WORKSPACE_PROJECT=1 ss update --all -p --skip-audit 2>&1
+
+SKILLS_DIR="$PROJECT/.skillshare/skills"
+
+for name in alpha beta gamma; do
+  if grep -q "v2 (updated)" "$SKILLS_DIR/$name/SKILL.md"; then
+    echo "PASS: $name updated to v2"
+  else
+    echo "FAIL: $name not updated"
+    cat "$SKILLS_DIR/$name/SKILL.md"
+    exit 1
+  fi
+done
+
+test ! -d "$SKILLS_DIR/skills" || { echo "FAIL: leaked dir after content update"; exit 1; }
+echo "PASS: all skills updated, no leaks"
+```
+
+Expected:
+- exit_code: 0
+- PASS: alpha updated to v2
+- PASS: beta updated to v2
+- PASS: gamma updated to v2
+- PASS: all skills updated, no leaks
+
+### 7. Global mode: same pattern verification
+
+```bash
+SOURCE=~/.config/skillshare/skills
+REPO_URL="file://$HOME/monorepo-remote.git"
+
+for name in alpha beta gamma; do
+  LOCAL="$SOURCE/$name"
+  mkdir -p "$LOCAL"
+  echo "---
+name: $name
+---
+# $name global v1" > "$LOCAL/SKILL.md"
+  cat > "$LOCAL/.skillshare-meta.json" <<META
+{
+  "source": "${REPO_URL}//skills/${name}",
+  "type": "git",
+  "repo_url": "$REPO_URL",
+  "subdir": "skills/${name}",
+  "installed_at": "2025-01-01T00:00:00Z"
+}
+META
+done
+
+COUNT_BEFORE=$(find "$SOURCE" -name "SKILL.md" | wc -l | tr -d " ")
+ss update --all -g --skip-audit 2>&1
+
+if [ -d "$SOURCE/skills" ]; then
+  echo "FAIL: leaked skills/ in global source"
+  exit 1
+fi
+
+COUNT_AFTER=$(find "$SOURCE" -name "SKILL.md" | wc -l | tr -d " ")
+echo "Global SKILL_COUNT before=$COUNT_BEFORE after=$COUNT_AFTER"
+test "$COUNT_BEFORE" -eq "$COUNT_AFTER" || { echo "FAIL: count changed"; exit 1; }
+echo "PASS: global mode no leak, count stable"
+```
+
+Expected:
+- exit_code: 0
+- PASS: global mode no leak, count stable
+
+## Pass Criteria
+
+- Step 2: Project skills installed at flat paths with divergent meta.Subdir
+- Step 3: First `update --all` — no leak, count=3
+- Step 4: Second `update --all` — count stable at 3 (no doubling)
+- Step 5: Third `update --all` — still stable
+- Step 6: Skills actually updated to v2, no leaks
+- Step 7: Global mode same pattern — no leak, count stable

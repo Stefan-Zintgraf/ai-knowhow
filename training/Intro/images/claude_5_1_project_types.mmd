@@ -1,0 +1,18 @@
+flowchart LR
+    P["📁 Claude Projects"]
+    P --> CP["💬 Chat Projects (claude.ai / Desktop Chat)"]
+    P --> WP["🤝 Cowork Projects (Desktop Cowork tab)"]
+
+    CP --> CP1["Conversational workspace"]
+    CP --> CP2["Shared knowledge base"]
+    CP --> CP3["Team collaboration"]
+    CP --> CP4["Output in chat / artifacts"]
+
+    WP --> WP1["Autonomous agent"]
+    WP --> WP2["Access to local folder"]
+    WP --> WP3["Produces real files"]
+    WP --> WP4["Supports scheduling"]
+
+    style P fill:#F5F5F5,stroke:#222,stroke-width:2px,color:#000
+    style CP fill:#CDE7F0,stroke:#3D7EA6,color:#000
+    style WP fill:#E4D6F5,stroke:#7A4FA8,color:#000

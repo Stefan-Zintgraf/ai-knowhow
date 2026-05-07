@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "gitlab": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@zereight/mcp-gitlab"],
+      "env": {
+        "GITLAB_API_URL": "http://at-dev-git/api/v4",
+        "GITLAB_PERSONAL_ACCESS_TOKEN": "glpat-iuMdeU6NPDp6hEhctZGcpm86MQp1OjkH.01.0w0zcinsx"
+      }
+    }
+  }
+}

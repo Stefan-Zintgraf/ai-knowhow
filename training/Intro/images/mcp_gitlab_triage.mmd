@@ -1,0 +1,11 @@
+flowchart LR
+    P["💬 Your prompt"] --> T1["🔧 list_merge_requests — assignee_id = me"]
+    T1 --> T2["🔧 get_merge_request_notes — unresolved threads"]
+    T2 --> T3["🔧 my_issues — due in next 7 days"]
+    T3 --> S["📋 One readable summary"]
+
+    style P  fill:#CDE7F0,stroke:#3D7EA6,color:#000
+    style T1 fill:#E4D6F5,stroke:#7A4FA8,color:#000
+    style T2 fill:#E4D6F5,stroke:#7A4FA8,color:#000
+    style T3 fill:#E4D6F5,stroke:#7A4FA8,color:#000
+    style S  fill:#D5E8D4,stroke:#2E7D32,color:#000

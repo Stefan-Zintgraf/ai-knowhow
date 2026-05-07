@@ -1,0 +1,20 @@
+node_modules
+.DS_Store
+dist
+*.local
+.vite-inspect
+.remote-assets
+components.d.ts
+/.idea/
+.vscode/
+.claude/settings.local.json
+
+# Backup files
+*-backup.md
+*-old.md
+labs-slidev.md
+slides-original-order.md
+
+# Test artifacts
+playwright-report/
+test-results/

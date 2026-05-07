@@ -1,0 +1,21 @@
+{
+  "name": "claude-code-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build",
+    "export": "slidev export"
+  },
+  "private": true,
+  "devDependencies": {
+    "@slidev/cli": "^51.8.1",
+    "@slidev/theme-seriph": "^0.25.0",
+    "playwright-chromium": "^1.53.1",
+    "slidev-addon-asciinema": "^0.1.11",
+    "slidev-addon-bluesky": "^1.0.0",
+    "slidev-addon-qrcode": "^1.0.2",
+    "slidev-component-progress": "^1.1.0"
+  }
+}

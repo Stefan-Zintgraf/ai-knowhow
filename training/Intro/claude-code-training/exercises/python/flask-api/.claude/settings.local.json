@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git checkout:*)",
+      "mcp__filesystem__list_directory",
+      "Bash(pip install:*)",
+      "Bash(python:*)",
+      "Bash(echo $VIRTUAL_ENV)",
+      "Bash(ls:*)",
+      "Bash(source:*)",
+      "Bash(.venv/bin/python -m pytest:*)",
+      "Bash(.venv/bin/pip install:*)",
+      "Bash(python3:*)",
+      "Bash(git stash:*)",
+      "Bash(git add:*)",
+      "Bash(git restore:*)",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__get-library-docs",
+      "WebSearch",
+      "Bash(git commit -m \"$(cat <<''EOF''\nUpgrade dependencies to latest versions\n\n- Flask: 2.3.3 → 3.1.2\n- Werkzeug: 2.3.7 → 3.1.3\n- markupsafe: 2.1.3 → 2.1.5\n- Jinja2: 3.1.2 → 3.1.4\n- pytest: 7.4.0 → 8.3.4\n- pytest-flask: 1.2.0 → 1.3.0\n\nAll 81 tests pass with updated dependencies.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(.venv/bin/playwright install:*)",
+      "Bash(curl:*)"
+    ],
+    "deny": []
+  }
+}

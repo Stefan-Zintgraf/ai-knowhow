@@ -1,0 +1,19 @@
+%% MCP tool call flow — for Marp (export with mermaid-cli)
+sequenceDiagram
+    autonumber
+    participant You
+    participant Host as Claude Desktop (MCP Host)
+    participant LLM
+    participant MCP as MCP Server (e.g. gitlab)
+    participant Ext as External System (e.g. GitLab API)
+
+    You->>Host: "List my open merge requests"
+    Host->>LLM: prompt + list of available tools
+    LLM-->>Host: "call tool list_merge_requests"
+    Host->>MCP: invoke list_merge_requests(...)
+    MCP->>Ext: HTTPS request with your token
+    Ext-->>MCP: JSON response
+    MCP-->>Host: structured tool result
+    Host->>LLM: prompt + tool result
+    LLM-->>Host: final answer
+    Host-->>You: "You have 3 open MRs: …"

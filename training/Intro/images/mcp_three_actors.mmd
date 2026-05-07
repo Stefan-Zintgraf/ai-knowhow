@@ -1,0 +1,14 @@
+flowchart LR
+    Host["🖥️ MCP Host (Claude Desktop, Cursor, VS Code)"]
+    Client["🔌 MCP Client (protocol layer in the host)"]
+    Server["⚙️ MCP Server (e.g. @zereight/mcp-gitlab)"]
+    Ext["🌐 External System (GitLab, DB, Filesystem, …)"]
+
+    Host <--> Client
+    Client <-->|MCP protocol| Server
+    Server <-->|HTTPS / API / FS| Ext
+
+    style Host   fill:#CDE7F0,stroke:#3D7EA6,color:#000
+    style Client fill:#FCE7C8,stroke:#B08968,color:#000
+    style Server fill:#E4D6F5,stroke:#7A4FA8,color:#000
+    style Ext    fill:#D5E8D4,stroke:#2E7D32,color:#000

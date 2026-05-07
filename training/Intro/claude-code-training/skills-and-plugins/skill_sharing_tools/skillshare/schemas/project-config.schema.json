@@ -1,0 +1,284 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/runkids/skillshare/main/schemas/project-config.schema.json",
+  "title": "Skillshare Project Configuration",
+  "description": "Project-level configuration for skillshare. Location: .skillshare/config.yaml",
+  "type": "object",
+  "required": ["targets"],
+  "additionalProperties": false,
+  "properties": {
+    "target_naming": {
+      "type": "string",
+      "description": "Default target entry naming strategy for merge/copy sync in this project. 'flat' preserves flattened parent directory prefixes; 'standard' uses the SKILL.md name and enforces the Agent Skills standard.",
+      "enum": ["flat", "standard"],
+      "default": "flat",
+      "examples": ["flat", "standard"]
+    },
+    "targets": {
+      "type": "array",
+      "description": "AI CLI targets to sync skills and agents to. Supports string (known target name) or object (custom skills/agents config) forms.",
+      "items": {
+        "$ref": "#/$defs/projectTargetEntry"
+      },
+      "examples": [
+        ["claude", "cursor"],
+        [
+          "claude",
+          { "name": "cursor", "skills": { "mode": "merge", "include": ["team-*"] } },
+          { "name": "custom-ide", "skills": { "path": "./tools/ide/skills" } }
+        ]
+      ]
+    },
+    "audit": {
+      "$ref": "#/$defs/auditConfig"
+    },
+    "hub": {
+      "$ref": "#/$defs/hubConfig"
+    },
+    "gitlab_hosts": {
+      "type": "array",
+      "description": "Hostnames of self-managed GitLab instances that use nested subgroups. Hosts containing 'gitlab' are detected automatically.",
+      "items": { "type": "string" },
+      "uniqueItems": true,
+      "examples": [["git.company.com", "code.internal.io"]]
+    },
+    "azure_hosts": {
+      "type": "array",
+      "description": "Hostnames of self-hosted Azure DevOps Server instances. The built-in patterns for dev.azure.com and *.visualstudio.com are always active.",
+      "items": { "type": "string" },
+      "uniqueItems": true,
+      "examples": [["azuredevops.mycompany.com"]]
+    },
+    "extras": {
+      "type": "array",
+      "description": "Non-skill resources (rules, commands, etc.) to sync to specific target paths.",
+      "items": {
+        "$ref": "#/$defs/extraConfig"
+      },
+      "examples": [
+        [
+          {
+            "name": "rules",
+            "targets": [
+              { "path": "~/.claude/rules" },
+              { "path": "~/.cursor/rules", "mode": "copy" }
+            ]
+          }
+        ]
+      ]
+    }
+  },
+  "$defs": {
+    "projectTargetEntry": {
+      "oneOf": [
+        {
+          "type": "string",
+          "description": "Known target name (e.g. claude, cursor, codex). Uses default path and merge mode.",
+          "examples": ["claude", "cursor", "codex"]
+        },
+        {
+          "type": "object",
+          "description": "Target with custom configuration. Supports both legacy flat format and new resource sub-keys (skills/agents).",
+          "required": ["name"],
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Target name (known name or custom identifier).",
+              "examples": ["claude", "custom-ide"]
+            },
+            "path": {
+              "type": "string",
+              "description": "[Legacy] Custom path to the target skills directory. Prefer skills.path instead.",
+              "examples": [".my-ide/skills/"]
+            },
+            "mode": {
+              "type": "string",
+              "description": "[Legacy] Sync mode override. Prefer skills.mode instead.",
+              "enum": ["merge", "symlink", "copy"]
+            },
+            "include": {
+              "type": "array",
+              "description": "[Legacy] Skill include filter. Prefer skills.include instead.",
+              "items": { "type": "string" }
+            },
+            "exclude": {
+              "type": "array",
+              "description": "[Legacy] Skill exclude filter. Prefer skills.exclude instead.",
+              "items": { "type": "string" }
+            },
+            "skills": {
+              "type": "object",
+              "description": "Skills-specific target configuration. Controls which skills are synced to this target, the sync mode, and the target directory path.",
+              "additionalProperties": false,
+              "properties": {
+                "path": {
+                  "type": "string",
+                  "description": "Override the target skills directory path. If omitted, the built-in default for this target is used. Relative paths resolve from project root.",
+                  "examples": [".claude/skills", ".custom-ide/skills"]
+                },
+                "mode": {
+                  "type": "string",
+                  "description": "Sync mode for skills. If omitted, defaults to merge.",
+                  "enum": ["merge", "symlink", "copy"]
+                },
+                "target_naming": {
+                  "type": "string",
+                  "description": "Target entry naming strategy for skills. If omitted, inherits the top-level target_naming (defaults to flat). Ignored in symlink mode.",
+                  "enum": ["flat", "standard"]
+                },
+                "include": {
+                  "type": "array",
+                  "description": "Glob patterns — only matching skills are synced (merge and copy modes).",
+                  "items": { "type": "string" },
+                  "examples": [["team-*", "shared-*"]]
+                },
+                "exclude": {
+                  "type": "array",
+                  "description": "Glob patterns — matching skills are excluded from sync (merge and copy modes).",
+                  "items": { "type": "string" },
+                  "examples": [["draft-*", "*-experimental"]]
+                }
+              },
+              "examples": [
+                { "mode": "merge" },
+                { "path": ".custom-ide/skills", "mode": "symlink" },
+                { "mode": "merge", "include": ["team-*"], "exclude": ["wip-*"] }
+              ]
+            },
+            "agents": {
+              "type": "object",
+              "description": "(Reserved — not yet available) Agents-specific target configuration. Will be enabled in a future release.",
+              "additionalProperties": false,
+              "properties": {
+                "path": { "type": "string" },
+                "mode": { "type": "string", "enum": ["merge", "symlink", "copy"] },
+                "include": { "type": "array", "items": { "type": "string" } },
+                "exclude": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "auditConfig": {
+      "type": "object",
+      "description": "Security audit policy settings.",
+      "additionalProperties": false,
+      "properties": {
+        "block_threshold": {
+          "type": "string",
+          "description": "Minimum severity level that blocks 'skillshare install -p'. Scanning always runs regardless of this setting.",
+          "enum": ["CRITICAL", "HIGH", "MEDIUM", "LOW", "INFO"],
+          "default": "CRITICAL"
+        },
+        "profile": {
+          "type": "string",
+          "description": "Audit profile preset. Sets default threshold and dedupe mode. Explicit settings override profile defaults.",
+          "enum": ["default", "strict", "permissive"],
+          "default": "default"
+        },
+        "dedupe_mode": {
+          "type": "string",
+          "description": "Finding deduplication mode. 'legacy' keeps existing behavior; 'global' applies full composite-key deduplication.",
+          "enum": ["legacy", "global"],
+          "default": "legacy"
+        },
+        "enabled_analyzers": {
+          "type": "array",
+          "description": "Analyzer allowlist. Only listed analyzers will run. Empty or omitted means all analyzers are enabled.",
+          "items": {
+            "type": "string",
+            "enum": ["static", "dataflow", "tier", "integrity", "structure", "cross-skill"]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "hubConfig": {
+      "type": "object",
+      "description": "Skill hub persistence settings.",
+      "additionalProperties": false,
+      "properties": {
+        "default": {
+          "type": "string",
+          "description": "Default hub label to use for search/install."
+        },
+        "hubs": {
+          "type": "array",
+          "description": "List of saved hub sources.",
+          "items": {
+            "$ref": "#/$defs/hubEntry"
+          }
+        }
+      }
+    },
+    "hubEntry": {
+      "type": "object",
+      "description": "A single saved hub source.",
+      "required": ["label", "url"],
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "type": "string",
+          "description": "Display name for this hub.",
+          "examples": ["official", "my-org"]
+        },
+        "url": {
+          "type": "string",
+          "description": "Hub URL.",
+          "examples": ["https://skillshare.runkids.cc/api/hub"]
+        },
+        "builtin": {
+          "type": "boolean",
+          "description": "Whether this hub is built-in (auto-added on init).",
+          "default": false
+        }
+      }
+    },
+    "extraConfig": {
+      "type": "object",
+      "description": "Configuration for a non-skill resource type (rules, commands, etc.).",
+      "required": ["name", "targets"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the extra resource (matches a subdirectory under the source extras directory).",
+          "examples": ["rules", "commands"]
+        },
+        "targets": {
+          "type": "array",
+          "description": "Target directories to sync this extra resource to.",
+          "items": {
+            "$ref": "#/$defs/extraTargetConfig"
+          }
+        }
+      }
+    },
+    "extraTargetConfig": {
+      "type": "object",
+      "description": "Configuration for one target of an extra resource.",
+      "required": ["path"],
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "type": "string",
+          "description": "Path to the target directory. Supports ~ for home directory; relative paths resolve from project root.",
+          "examples": ["~/.claude/rules", "./.claude/rules"]
+        },
+        "mode": {
+          "type": "string",
+          "description": "Sync mode for this extra target. Defaults to merge.",
+          "enum": ["merge", "symlink", "copy"],
+          "default": "merge"
+        },
+        "flatten": {
+          "type": "boolean",
+          "description": "When true, files from subdirectories are synced directly into the target root instead of preserving directory structure.",
+          "default": false
+        }
+      }
+    }
+  }
+}

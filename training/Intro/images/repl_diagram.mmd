@@ -1,0 +1,23 @@
+%% REPL / context growth — for Marp (exported PNG)
+sequenceDiagram
+    autonumber
+    participant You
+    participant App as Chat App (claude.ai, ChatGPT, Gemini, …)
+    participant LLM as LLM
+
+    Note over App,LLM: System Prompt is prepended to every call
+
+    You->>App: User Prompt 1
+    App->>LLM: [System] + [User 1]
+    LLM-->>App: Answer 1
+    App-->>You: Answer 1
+
+    You->>App: User Prompt 2
+    App->>LLM: [System] + [User 1] + [Answer 1] + [User 2]
+    LLM-->>App: Answer 2
+    App-->>You: Answer 2
+
+    You->>App: User Prompt 3
+    App->>LLM: [System] + [User 1] + [Answer 1] + [User 2] + [Answer 2] + [User 3]
+    LLM-->>App: Answer 3
+    App-->>You: Answer 3

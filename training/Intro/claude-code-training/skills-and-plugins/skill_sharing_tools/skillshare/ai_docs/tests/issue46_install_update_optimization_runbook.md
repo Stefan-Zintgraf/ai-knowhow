@@ -1,0 +1,281 @@
+# CLI E2E Runbook: Issue #46 Install/Update Optimization
+
+Validates large-repo install/update optimization behavior for:
+- `install` subdirectory source from GitHub
+- `install --track` optimized clone path
+- `update` for both regular skill and tracked repo (including `--force`)
+- sparse checkout path and sparse->full-clone fallback
+- GitHub/GHE API base handling
+- non-TTY quiet behavior (no raw git progress spam)
+- manual TTY progress sanity
+- token and credential-helper preconditions
+
+## Scope
+
+- Subdir install from GitHub URL succeeds and installs only target skill
+- API fallback path still succeeds when unauthenticated/rate-limited
+- Tracked install keeps `.git` and uses shallow/partial clone optimization
+- Regular skill update (`update <skill>`) succeeds for subdir source metadata
+- Tracked repo update (`update _<name>`) succeeds
+- Tracked repo force-update path discards local dirty changes
+- Non-GitHub subdir install uses sparse checkout when possible
+- Fuzzy subdir falls back from sparse checkout to full clone and still succeeds
+- GHE API base derivation is validated (`https://<host>/api/v3`)
+- Non-TTY install does not print raw git progress lines
+
+## Environment
+
+Run inside devcontainer with ssenv session executor. Setup hook handles `ss init -g`.
+
+Token envs forwarded by compose (optional but recommended for GitHub API quota):
+- `GITHUB_TOKEN`
+- `GH_TOKEN`
+- `SKILLSHARE_GIT_TOKEN`
+- plus other host-specific vars (`GITLAB_TOKEN`, `BITBUCKET_TOKEN`, etc.)
+
+## Steps
+
+### 1. Verify baseline init
+
+```bash
+mkdir -p ~/.claude ~/.codex
+ss status -g
+```
+
+Expected:
+- exit_code: 0
+
+### 2. Isolation + mode sanity (prevents false project/global confusion)
+
+```bash
+ss list -g >/tmp/issue46-global-mode.log 2>&1 || true
+test -s /tmp/issue46-global-mode.log
+```
+
+Expected:
+- exit_code: 0
+
+### 3. Token + credential-helper precheck
+
+```bash
+if [ -n "${GITHUB_TOKEN:-}${GH_TOKEN:-}${SKILLSHARE_GIT_TOKEN:-}" ]; then
+  echo "TOKEN_PRESENT"
+else
+  echo "TOKEN_ABSENT"
+fi
+if command -v credential-helper >/dev/null 2>&1; then
+  credential-helper status || true
+else
+  echo "credential-helper command not found (skip)"
+fi
+```
+
+Expected:
+- exit_code: 0
+- regex: TOKEN_PRESENT|TOKEN_ABSENT
+
+### 4. Install GitHub subdir skill (Issue #46 reference scenario)
+
+```bash
+ss install -g https://github.com/runkids/claude-skill-registry/tree/main/skills/documents/atlassian-search
+```
+
+Expected:
+- exit_code: 0
+- Installed
+
+Verify:
+
+```bash
+test -f ~/.config/skillshare/skills/atlassian-search/SKILL.md
+test -f ~/.config/skillshare/skills/atlassian-search/.skillshare-meta.json
+find ~/.config/skillshare/skills -mindepth 1 -maxdepth 1 -type d | sort
+```
+
+### 5. (Optional but recommended) No-token fallback behavior
+
+Runs the same install without token env to ensure fallback path still succeeds.
+
+```bash
+env -u GITHUB_TOKEN -u GH_TOKEN -u SKILLSHARE_GIT_TOKEN \
+  ss install -g https://github.com/runkids/claude-skill-registry/tree/main/skills/documents/atlassian-search \
+  --name atlassian-search-no-token --force 2>&1 | tee /tmp/issue46-no-token.log
+test -f ~/.config/skillshare/skills/atlassian-search-no-token/SKILL.md
+```
+
+Expected:
+- exit_code: 0
+- Installed
+
+### 6. Update the regular installed skill
+
+```bash
+ss update -g atlassian-search
+```
+
+Expected:
+- exit_code: 0
+
+Verify:
+
+```bash
+test -f ~/.config/skillshare/skills/atlassian-search/SKILL.md
+```
+
+### 7. Install tracked repo with optimization path
+
+```bash
+ss install -g https://github.com/runkids/skillshare --track --name issue46-track --force
+```
+
+Expected:
+- exit_code: 0
+- Tracked
+
+Verify:
+
+```bash
+TRACK=~/.config/skillshare/skills/_issue46-track
+test -d "$TRACK/.git"
+test -f "$TRACK/.git/shallow"
+grep -Eq "partialclonefilter = blob:none|promisor = true" "$TRACK/.git/config"
+```
+
+### 8. Install tracked repo from GitHub subdir URL (primary Issue #46 case)
+
+```bash
+ss install -g https://github.com/majiayu000/claude-skill-registry/tree/main/skills/documents/atlassian-search \
+  --track --name issue46-track-subdir --force
+```
+
+Expected:
+- exit_code: 0
+- Tracked
+
+Verify:
+
+```bash
+TRACK=~/.config/skillshare/skills/_issue46-track-subdir
+test -d "$TRACK/.git"
+test -f "$TRACK/.git/HEAD"
+if [ -f "$TRACK/.git/info/sparse-checkout" ]; then
+  grep -q "skills/documents/atlassian-search" "$TRACK/.git/info/sparse-checkout"
+fi
+```
+
+### 9. Update tracked repo
+
+```bash
+ss update -g _issue46-track
+```
+
+Expected:
+- exit_code: 0
+
+### 10. Non-TTY quiet check for tracked install
+
+```bash
+ss install -g https://github.com/runkids/skillshare --track --name issue46-quiet --force 2>&1 | tee /tmp/issue46-quiet.log
+! grep -E "(Enumerating objects|Counting objects|Receiving objects|Resolving deltas)" /tmp/issue46-quiet.log
+```
+
+Expected:
+- exit_code: 0
+- Not Enumerating objects
+- Not Counting objects
+- Not Receiving objects
+- Not Resolving deltas
+
+### 11. Non-GitHub sparse checkout path (deterministic, local file:// repo)
+
+```bash
+REPO=~/tmp-repo-sparse-ok
+rm -rf "$REPO"
+mkdir -p "$REPO/skills/alpha"
+cat > "$REPO/skills/alpha/SKILL.md" <<EOF
+# alpha
+EOF
+git -C "$REPO" init
+git -C "$REPO" add .
+git -C "$REPO" -c user.name=e2e -c user.email=e2e@example.com commit -m init
+ss install -g "file://$REPO//skills/alpha" --name sparse-alpha --force
+test -f ~/.config/skillshare/skills/sparse-alpha/SKILL.md
+```
+
+Expected:
+- exit_code: 0
+
+### 12. Sparse failure -> full clone fallback (fuzzy subdir)
+
+```bash
+REPO=~/tmp-repo-fuzzy-fallback
+rm -rf "$REPO"
+mkdir -p "$REPO/skills/pdf"
+cat > "$REPO/skills/pdf/SKILL.md" <<EOF
+# pdf
+EOF
+git -C "$REPO" init
+git -C "$REPO" add .
+git -C "$REPO" -c user.name=e2e -c user.email=e2e@example.com commit -m init
+ss install -g "file://$REPO//pdf" --name fuzzy-pdf --force 2>&1 | tee /tmp/issue46-fuzzy.log
+test -f ~/.config/skillshare/skills/fuzzy-pdf/SKILL.md
+grep -q "sparse checkout install fallback" /tmp/issue46-fuzzy.log || true
+```
+
+Expected:
+- exit_code: 0
+
+### 13. GHE API base handling
+
+Always run routing sanity test:
+
+```bash
+cd /workspace && go test -v ./internal/install -run TestGitHubAPIBase -count=1
+```
+
+Expected:
+- exit_code: 0
+- PASS
+
+### 14. `update --force` tracked repo branch
+
+```bash
+TRACK=~/.config/skillshare/skills/_issue46-track
+echo "# local dirty change" >> "$TRACK/README.md"
+test -n "$(git -C "$TRACK" status --porcelain)"
+ss update -g _issue46-track --force
+test -z "$(git -C "$TRACK" status --porcelain)"
+```
+
+Expected:
+- exit_code: 0
+
+### 15. (Manual) TTY progress sanity
+
+Run manually in an interactive terminal (TTY) to verify progress readability:
+
+```bash
+ss install -g https://github.com/runkids/skillshare --track --name issue46-tty --force
+```
+
+Expected:
+- exit_code: 0
+- Tracked
+
+## Pass Criteria
+
+- [ ] Step 1 setup/init succeeds
+- [ ] Step 2 isolation/mode sanity succeeds
+- [ ] Step 3 token + credential-helper precheck executed
+- [ ] Step 4 subdir install succeeds and files exist
+- [ ] Step 5 no-token fallback install succeeds (optional but recommended)
+- [ ] Step 6 regular `update` succeeds
+- [ ] Step 7 tracked install succeeds and optimization markers are present
+- [ ] Step 8 tracked subdir URL install succeeds (sparse preferred)
+- [ ] Step 9 tracked update succeeds
+- [ ] Step 10 non-TTY output has no raw git progress lines
+- [ ] Step 11 local non-GitHub subdir install succeeds
+- [ ] Step 12 fuzzy subdir install succeeds via fallback path
+- [ ] Step 13 GHE API base routing test passes
+- [ ] Step 14 tracked `update --force` branch succeeds and cleans dirty state
+- [ ] Step 15 manual TTY sanity checked (optional in CI)

@@ -1,0 +1,26 @@
+%% Large fonts + spacing for slide export (Marp / HTML)
+%%{init: {
+  "theme": "default",
+  "flowchart": { "useMaxWidth": true, "htmlLabels": true, "nodeSpacing": 56, "rankSpacing": 60, "padding": 12 },
+  "themeVariables": { "fontSize": "20px", "fontFamily": "Segoe UI, Arial, sans-serif" }
+}}%%
+
+flowchart TD
+    Q["❓ What do you need?"]
+    Q --> Q1{"Real files as output?<br/>(.xlsx, .docx, .pptx)"}
+    Q1 -- "Yes" --> COW["🤝 Cowork"]
+    Q1 -- "No" --> Q2{"Local folder access?"}
+    Q2 -- "Yes" --> COW
+    Q2 -- "No" --> Q3{"Scheduled or<br/>recurring work?"}
+    Q3 -- "Yes" --> COW
+    Q3 -- "No" --> Q4{"Share with teammates?"}
+    Q4 -- "Yes" --> CH["💬 Chat"]
+    Q4 -- "No" --> Q5{"Web + mobile?"}
+    Q5 -- "Yes" --> CH
+    Q5 -- "No" --> Q6{"Explore ideas or<br/>simple Q&A?"}
+    Q6 -- "Yes" --> CH
+    Q6 -- "No" --> COW
+
+    style Q fill:#F5F5F5,stroke:#222,stroke-width:2px,color:#000
+    style CH fill:#CDE7F0,stroke:#3D7EA6,color:#000
+    style COW fill:#E4D6F5,stroke:#7A4FA8,color:#000

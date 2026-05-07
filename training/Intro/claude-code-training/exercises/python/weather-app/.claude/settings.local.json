@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git checkout:*)",
+      "Bash(echo $VIRTUAL_ENV)",
+      "Bash(ls:*)",
+      "Bash(source:*)",
+      "Bash(pip install:*)",
+      "Bash(env)",
+      "Bash(python:*)",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__get-library-docs",
+      "WebFetch(domain:openweathermap.org)",
+      "Bash(git add:*)",
+      "mcp__playwright__browser_install",
+      "Bash(mkdir:*)",
+      "Bash(npx playwright:*)",
+      "Bash(find:*)",
+      "Bash(cp:*)",
+      "Bash(pip show:*)",
+      "WebSearch",
+      "Bash(curl:*)",
+      "Read(//Users/kennethkousen/Documents/claude-code-training/exercises/**)",
+      "Bash(npm install)"
+    ],
+    "deny": []
+  },
+  "outputStyle": "Explanatory"
+}

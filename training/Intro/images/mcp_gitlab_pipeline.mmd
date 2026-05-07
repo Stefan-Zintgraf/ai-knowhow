@@ -1,0 +1,11 @@
+flowchart LR
+    P["💬 Your prompt"] --> T1["🔧 list_pipelines — ref=main, newest"]
+    T1 --> T2["🔧 get_pipeline — inspect failed jobs"]
+    T2 --> T3["🔧 get_pipeline_job_log — download logs"]
+    T3 --> S["🎯 Error messages + plain-English root cause"]
+
+    style P  fill:#CDE7F0,stroke:#3D7EA6,color:#000
+    style T1 fill:#E4D6F5,stroke:#7A4FA8,color:#000
+    style T2 fill:#E4D6F5,stroke:#7A4FA8,color:#000
+    style T3 fill:#E4D6F5,stroke:#7A4FA8,color:#000
+    style S  fill:#D5E8D4,stroke:#2E7D32,color:#000

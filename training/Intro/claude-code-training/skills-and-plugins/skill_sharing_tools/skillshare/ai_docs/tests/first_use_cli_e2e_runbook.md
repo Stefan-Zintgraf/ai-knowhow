@@ -1,0 +1,174 @@
+# CLI E2E Runbook: First-Time `ss` User
+
+This is a human-readable execution flow (not a `.sh` script) to simulate a first-time `ss` user end-to-end.
+
+## Scope
+
+- Global mode first setup
+- `init` creates config successfully
+- First skill sync to targets
+- Per-target mode tuning (`target --mode`)
+- Basic health check (`doctor`)
+
+## Environment
+
+Run inside devcontainer by default.
+
+## Optional: use `ssenv` for isolated HOME switching
+
+Create and switch into a named isolated environment:
+
+```bash
+ssenv create first-use-demo
+eval "$(ssenv --eval use first-use-demo)"
+ssenv status
+```
+
+Or use no-`eval` shortcuts:
+
+```bash
+ssnew first-use-demo       # create + enter isolated shell
+ssuse first-use-demo       # enter existing isolated shell
+ssback                     # leave isolated context helper
+```
+
+Reset back to your normal shell environment:
+
+```bash
+eval "$(ssenv --eval reset)"
+```
+
+Delete isolated environment:
+
+```bash
+ssenv delete first-use-demo --force
+```
+
+## Step 0: Verify command entrypoint
+
+```bash
+echo "HOME=$HOME"
+which ss
+which skillshare
+ss version
+```
+
+Expected:
+- exit_code: 0
+- regex: v(dev|\d+\.\d+)
+- Not Exec format error
+
+If you see `Cannot run macOS (Mach-O) executable in Docker`, run:
+
+```bash
+/workspace/.devcontainer/ensure-skillshare-linux-binary.sh
+```
+
+## Step 1: Create isolated first-use HOME
+
+```bash
+export E2E_HOME="/tmp/ss-e2e-first-$(date +%s)"
+rm -rf "$E2E_HOME"
+mkdir -p "$E2E_HOME"
+# Override ssenv's XDG vars so ss uses E2E_HOME-based resolution
+export SKILLSHARE_CONFIG=
+export XDG_CONFIG_HOME="$E2E_HOME/.config"
+export XDG_DATA_HOME="$E2E_HOME/.local/share"
+export XDG_STATE_HOME="$E2E_HOME/.local/state"
+export XDG_CACHE_HOME="$E2E_HOME/.cache"
+echo "E2E_HOME=$E2E_HOME"
+```
+
+## Step 2: First init (non-interactive)
+
+```bash
+HOME="$E2E_HOME" ss init --no-copy --targets claude,cursor --mode merge --no-git --no-skill
+```
+
+Expected:
+- exit_code: 0
+- Initialized successfully
+- regex: Config:.*\.config/skillshare/config\.yaml
+
+## Step 3: Verify config was created
+
+```bash
+test -f "$E2E_HOME/.config/skillshare/config.yaml" && echo "config_created=yes"
+cat "$E2E_HOME/.config/skillshare/config.yaml"
+```
+
+Expected:
+- exit_code: 0
+- config_created=yes
+- regex: source:.*\.config/skillshare/skills
+- mode: merge
+- claude
+- cursor
+
+## Step 4: Add one demo skill to source
+
+```bash
+mkdir -p "$E2E_HOME/.config/skillshare/skills/hello-world"
+cat > "$E2E_HOME/.config/skillshare/skills/hello-world/SKILL.md" <<'EOF'
+# hello-world
+
+This is an E2E demo skill.
+EOF
+```
+
+## Step 5: First sync
+
+```bash
+HOME="$E2E_HOME" ss sync
+```
+
+Expected:
+- exit_code: 0
+- claude
+- cursor
+
+## Step 6: Verify skill reached both targets
+
+```bash
+test -f "$E2E_HOME/.claude/skills/hello-world/SKILL.md" && echo "claude_ok=yes"
+test -f "$E2E_HOME/.cursor/skills/hello-world/SKILL.md" && echo "cursor_ok=yes"
+```
+
+Expected:
+- exit_code: 0
+- claude_ok=yes
+- cursor_ok=yes
+
+## Step 7: Simulate per-target compatibility tuning
+
+Change only `cursor` to `copy` mode (leave global/default as-is).
+
+```bash
+HOME="$E2E_HOME" ss target cursor --mode copy
+HOME="$E2E_HOME" ss sync
+grep -n "mode: copy" "$E2E_HOME/.config/skillshare/config.yaml"
+```
+
+Expected:
+- exit_code: 0
+- mode: copy
+
+## Step 8: Run doctor
+
+```bash
+HOME="$E2E_HOME" ss doctor
+```
+
+Expected:
+- exit_code: 0
+
+## Pass/Fail Criteria
+
+Pass when all are true:
+
+- `init` creates `config.yaml`
+- first `sync` delivers `hello-world` to both targets
+- `target cursor --mode copy` is persisted and re-sync succeeds
+- `doctor` succeeds
+
+Fail if any step errors or expected files are missing.
