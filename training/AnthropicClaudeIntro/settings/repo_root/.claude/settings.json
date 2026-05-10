@@ -1,8 +1,4 @@
 {
-  "statusLine": {
-    "type": "command",
-    "command": "python .claude/statusline-command.py"
-  },
   "permissions": {
     "defaultMode": "bypassPermissions"
   }

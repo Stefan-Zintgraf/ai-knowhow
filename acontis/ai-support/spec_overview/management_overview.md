@@ -28,7 +28,9 @@ style: |
 ---
 
 <!-- _class: lead -->
+
 # AI-Assisted Support System
+
 ## Management Overview
 
 **Zammad RAG Integration for First-Response Drafting**
@@ -123,11 +125,11 @@ AI assistant **drafts responses** based on knowledge base and historical tickets
 
 # Component Overview (1/2)
 
-| # | Component | Responsibility | Default Implementation |
-|---|-----------|---------------|----------------------|
-| **A** | Ticket Gateway | Source/sink of tickets: events, notes, reassignment | Zammad REST Adapter |
-| **B** | Privacy Service | Anonymize ↔ deanonymize text; owns placeholder mapping | Microsoft Presidio |
-| **C** | Knowledge Retrieval | Return ranked, cited chunks for a query | LlamaIndex + Qdrant |
+| #     | Component           | Responsibility                                         | Default Implementation |
+| ----- | ------------------- | ------------------------------------------------------ | ---------------------- |
+| **A** | Ticket Gateway      | Source/sink of tickets: events, notes, reassignment    | Zammad REST Adapter    |
+| **B** | Privacy Service     | Anonymize ↔ deanonymize text; owns placeholder mapping | Microsoft Presidio     |
+| **C** | Knowledge Retrieval | Return ranked, cited chunks for a query                | LlamaIndex + Qdrant    |
 
 ![bg right:25% 90%](https://img.icons8.com/color/512/module.png)
 
@@ -135,10 +137,10 @@ AI assistant **drafts responses** based on knowledge base and historical tickets
 
 # Component Overview (2/2)
 
-| # | Component | Responsibility | Default Implementation |
-|---|-----------|---------------|----------------------|
-| **D** | LLM Gateway | Single entry for all AI completions; enforces privacy & budgets | LiteLLM Proxy |
-| **E** | Orchestrator | Drives the workflow end-to-end; exposes observability | Python Service |
+| #     | Component    | Responsibility                                                  | Default Implementation |
+| ----- | ------------ | --------------------------------------------------------------- | ---------------------- |
+| **D** | LLM Gateway  | Single entry for all AI completions; enforces privacy & budgets | LiteLLM Proxy          |
+| **E** | Orchestrator | Drives the workflow end-to-end; exposes observability           | Python Service         |
 
 ## Key Design Principle
 
@@ -154,26 +156,26 @@ AI assistant **drafts responses** based on knowledge base and historical tickets
 
 ## Core Components
 
-| Concern | Technology |
-|---------|-----------|
+| Concern            | Technology               |
+| ------------------ | ------------------------ |
 | Zammad Integration | `it-at-m/zammad-ai` fork |
-| Anonymization | Microsoft Presidio |
-| RAG Framework | LlamaIndex |
-| Vector Database | Qdrant |
-| Provider Router | LiteLLM |
-| Observability | Langfuse + OpenTelemetry |
+| Anonymization      | Microsoft Presidio       |
+| RAG Framework      | LlamaIndex               |
+| Vector Database    | Qdrant                   |
+| Provider Router    | LiteLLM                  |
+| Observability      | Langfuse + OpenTelemetry |
 
 </div>
 <div>
 
 ## AI Models (Configurable)
 
-| Slot | Default |
-|------|---------|
-| Embeddings | `bge-m3` (Ollama) |
+| Slot          | Default              |
+| ------------- | -------------------- |
+| Embeddings    | `bge-m3` (Ollama)    |
 | Retrieval LLM | Llama 3.1 8B (local) |
-| Answer LLM | Claude Opus (cloud) |
-| Reranker | `bge-reranker-v2-m3` |
+| Answer LLM    | Claude Opus (cloud)  |
+| Reranker      | `bge-reranker-v2-m3` |
 
 **All models swappable via config** — no code changes required.
 
@@ -184,23 +186,23 @@ AI assistant **drafts responses** based on knowledge base and historical tickets
 
 # Implementation Phases
 
-| Phase | Focus | Key Deliverables | Status |
-|-------|-------|-----------------|--------|
-| **1 — RAG Core** | Retrieval setup | LlamaIndex + Qdrant, hybrid search, reranker, LiteLLM | **MVP** |
-| **2 — Integration** | Full pipeline | Zammad integration, Presidio anonymization, internal notes | Later |
-| **3 — Quality** | Ops & eval | Query rewriting/HyDE, Ragas eval, Langfuse, curation | Later |
-| **4 — Advanced** | Scale & cost | GraphRAG, multi-tenant routing, cost-aware routing | Later |
+| Phase               | Focus           | Key Deliverables                                           | Status  |
+| ------------------- | --------------- | ---------------------------------------------------------- | ------- |
+| **1 — RAG Core**    | Retrieval setup | LlamaIndex + Qdrant, hybrid search, reranker, LiteLLM      | **MVP** |
+| **2 — Integration** | Full pipeline   | Zammad integration, Presidio anonymization, internal notes | Later   |
+| **3 — Quality**     | Ops & eval      | Query rewriting/HyDE, Ragas eval, Langfuse, curation       | Later   |
+| **4 — Advanced**    | Scale & cost    | GraphRAG, multi-tenant routing, cost-aware routing         | Later   |
 
 ---
 
 # Risks & Mitigations
 
-| Risk | Mitigation |
-|------|-----------|
-| **Anonymization gaps** | Human review mandatory; Presidio + custom recognizers; periodic audits |
+| Risk                       | Mitigation                                                             |
+| -------------------------- | ---------------------------------------------------------------------- |
+| **Anonymization gaps**     | Human review mandatory; Presidio + custom recognizers; periodic audits |
 | **Hallucinated citations** | Enforce drafts cite only retrieved chunk IDs; reject unknown citations |
-| **Stale knowledge** | Incremental indexing + scheduled re-curation |
-| **Privacy leakage** | Anonymized text only to remote LLMs; `allow_remote: false` option |
+| **Stale knowledge**        | Incremental indexing + scheduled re-curation                           |
+| **Privacy leakage**        | Anonymized text only to remote LLMs; `allow_remote: false` option      |
 
 **Safety Guarantee:** The AI agent user has **no permission** to create customer-facing articles in Zammad.
 
@@ -213,14 +215,14 @@ AI assistant **drafts responses** based on knowledge base and historical tickets
 
 ## MVP Success Criteria
 
-| Criterion | Target |
-|-----------|--------|
-| Pipeline trigger | < 10 s |
-| Draft (local) | < 60 s (p95) |
-| Draft (Claude) | < 30 s (p95) |
-| Human review | **100%** |
-| PII recall | ≥ 95% |
-| RAG improvement | ≥ 10% vs baseline |
+| Criterion        | Target            |
+| ---------------- | ----------------- |
+| Pipeline trigger | < 10 s            |
+| Draft (local)    | < 60 s (p95)      |
+| Draft (Claude)   | < 30 s (p95)      |
+| Human review     | **100%**          |
+| PII recall       | ≥ 95%             |
+| RAG improvement  | ≥ 10% vs baseline |
 
 </div>
 <div>
