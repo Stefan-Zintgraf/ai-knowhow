@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "deny": [
+      "WebFetch",
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Bash(Invoke-WebRequest:*)",
+      "Bash(iwr:*)",
+      "Bash(Invoke-RestMethod:*)",
+      "Bash(irm:*)",
+      "Bash(bitsadmin:*)",
+      "Bash(certutil:*)"
+    ],
+    "allow": [
+      "WebFetch(domain:anthropic.com)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:acontis.com)",
+      "WebFetch(domain:openai.com)",
+      "WebFetch(domain:beckhoff.com)",
+      "WebFetch(domain:ethercat.org)",
+      "WebFetch(domain:wikipedia.org)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:github.com)",
+      "WebSearch(allowed_domains:anthropic.com,docs.anthropic.com,acontis.com,openai.com,beckhoff.com,ethercat.org,wikipedia.org,en.wikipedia.org,github.com)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [],
+  "disableBypassPermissionsMode": "disable"
+}

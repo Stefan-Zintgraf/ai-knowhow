@@ -1,0 +1,61 @@
+{
+  "model": "sonnet",
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [],
+  "effortLevel": "medium",
+  "autoUpdatesChannel": "latest",
+  "skipDangerousModePermissionPrompt": true,
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline.sh"
+  },
+  "permissions": {
+    "defaultMode": "bypassPermissions",
+    "allow": [
+      "WebFetch(domain:anthropic.com)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:stackoverflow.com)",
+      "WebFetch(domain:learn.microsoft.com)",
+      "WebFetch(domain:docs.microsoft.com)",
+      "WebFetch(domain:developer.mozilla.org)",
+      "WebFetch(domain:en.cppreference.com)",
+      "WebFetch(domain:cppreference.com)",
+      "WebFetch(domain:cmake.org)",
+      "WebFetch(domain:wikipedia.org)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:acontis.com)",
+      "WebFetch(domain:beckhoff.com)",
+      "WebFetch(domain:ethercat.org)",
+      "WebFetch(domain:openai.com)",
+      "WebFetch(domain:npmjs.com)",
+      "WebFetch(domain:pypi.org)",
+      "WebFetch(domain:docs.python.org)",
+      "WebFetch(domain:reddit.com)",
+      "WebFetch(domain:developers.google.com)",
+      "WebFetch(domain:cloud.google.com)",
+      "WebFetch(domain:huggingface.co)",
+      "WebFetch(domain:pytorch.org)",
+      "WebFetch(domain:tensorflow.org)",
+      "WebFetch(domain:platform.openai.com)",
+      "WebFetch(domain:mistral.ai)",
+      "WebFetch(domain:ollama.com)",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:langchain.com)",
+      "WebFetch(domain:python.langchain.com)",
+      "WebSearch"
+    ],
+    "deny": [
+      "WebFetch",
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Bash(Invoke-WebRequest:*)",
+      "Bash(iwr:*)",
+      "Bash(Invoke-RestMethod:*)",
+      "Bash(irm:*)",
+      "Bash(bitsadmin:*)",
+      "Bash(certutil:*)"
+    ]
+  }
+}
