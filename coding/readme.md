@@ -9,6 +9,7 @@ The focus is not on coding tools themselves, but on the **guardrails, rules, and
 - **[ai_coding_challenges.md](ai_coding_challenges.md)** — Risks and problem classes of using coding agents in large brownfield systems (context barrier, implicit business logic, technical-debt amplification, scaling issues, etc.). The starting point that motivates the rest.
 - **[ChatGPT-AI Coding Guardrails.md](ChatGPT-AI%20Coding%20Guardrails.md)** — Exported Socratic discussion that explores which categories of guardrails are needed (product/domain, architecture, DDD, change-planning, coding style, testing, review, …). Source material / brainstorming.
 - **[guardrails.md](guardrails.md)** — Compact guardrail **overview**: always-on rule set plus a routing index that points to detailed guardrail documents in the [`gr/`](gr/) folder. The agent loads only the detail docs relevant to the current task.
+- **[phases.md](phases.md)** — Named workflow phases (aln, prd, iss, ral, par, rev, ica) used by `guardrails.md` and `AI_Coding_Workflow.md`. Each phase is backed by a skill or template. Includes the phase → guardrail bucket mapping.
 - **[AI_Coding_Workflow.md](AI_Coding_Workflow.md)** — First draft of the **workflow** that leads from an initial request to a minimal, safe, shared plan before any implementation starts — intended to prevent premature coding and uncontrolled scope.
 
 ## Purpose in one sentence

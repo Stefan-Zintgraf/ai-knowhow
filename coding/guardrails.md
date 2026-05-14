@@ -34,56 +34,71 @@ Weakness in any factor creates risk. The guardrails address **Constraints**; the
 
 Apply to every AI-assisted planning or implementation task. Each entry is a headline plus a one-line rule. Detail and nuance live in the referenced category document.
 
+**Phase relevance.** Each rule carries a `Fires:` line showing how strongly the rule applies in each workflow bucket. Values: `none`, `low`, `medium`, `high`. Buckets are **Plan**, **Implement**, **Verify**. Workflow phases (aln, prd, iss, ral, par, rev, ica) and their mapping to these buckets are defined in [phases.md](phases.md). A rule never disappears — `none` means the rule rarely produces decisions in that bucket, not that it can be ignored.
+
 ### 3.1 Minimize Scope
 
-The agent must actively narrow the task to the smallest useful, verifiable change. See [gr/gr_governance.md](gr/gr_governance.md).
+Fires: Plan=high, Implement=medium, Verify=none
+The agent must actively narrow the task to the smallest useful, verifiable change. On a new project, orientation scope (sketch, vocabulary, target slice) may be broader than change scope — but the first deliverable is still the smallest useful slice. See [gr/gr_governance.md](gr/gr_governance.md) and [gr/gr_greenfield.md](gr/gr_greenfield.md).
 
 ### 3.2 Do Not Mix Concerns
 
+Fires: Plan=high, Implement=high, Verify=low
 Feature work, bug fixes, refactoring, formatting, migrations, dependency upgrades, and architectural changes must not be combined in one change. See [gr/gr_coding_style.md](gr/gr_coding_style.md).
 
 ### 3.3 Respect Existing Behavior
 
+Fires: Plan=high, Implement=high, Verify=medium
 Existing behavior is treated as intentional until proven otherwise. See [gr/gr_brownfield.md](gr/gr_brownfield.md).
 
 ### 3.4 Make Assumptions Visible
 
+Fires: Plan=high, Implement=medium, Verify=low
 Distinguish facts (from code, tests, docs, user input) from assumptions and open questions. See [gr/gr_governance.md](gr/gr_governance.md).
 
 ### 3.5 Avoid Speculative Design
 
+Fires: Plan=high, Implement=high, Verify=none
 No abstractions, frameworks, extension points, or generic mechanisms for hypothetical future needs. See [gr/gr_coding_style.md](gr/gr_coding_style.md).
 
 ### 3.6 Verify Changes
 
+Fires: Plan=medium, Implement=low, Verify=high
 Every change must state how it is verified (tests, static analysis, build, manual review, acceptance criteria). See [gr/gr_testing_verification.md](gr/gr_testing_verification.md).
 
 ### 3.7 Stop on High-Risk Decisions
 
+Fires: Plan=high, Implement=high, Verify=medium
 The agent must pause and ask before public API changes, data migrations, security-sensitive changes, safety-critical logic changes, concurrency changes, or broad architecture changes. See [gr/gr_governance.md](gr/gr_governance.md).
 
 ### 3.8 No Hardcoded Secrets
 
+Fires: Plan=low, Implement=high, Verify=medium
 Secrets, tokens, keys, credentials must never appear in source, tests, fixtures, logs, or commit history. See [gr/gr_security_compliance.md](gr/gr_security_compliance.md).
 
 ### 3.9 No Bypass of Existing Abstraction
 
+Fires: Plan=medium, Implement=high, Verify=low
 The agent must not circumvent an existing abstraction, layer, or anti-corruption boundary without explicit approval. See [gr/gr_architecture.md](gr/gr_architecture.md).
 
 ### 3.10 Preserve Public API Compatibility
 
+Fires: Plan=high, Implement=high, Verify=medium
 Public API shape and behavior must remain compatible unless the task explicitly authorizes a breaking change. See [gr/gr_architecture.md](gr/gr_architecture.md).
 
 ### 3.11 No Silent Dependency Changes
 
+Fires: Plan=medium, Implement=high, Verify=low
 Adding, removing, or upgrading third-party dependencies requires explicit approval. See [gr/gr_dependencies.md](gr/gr_dependencies.md).
 
 ### 3.12 Provide Verification Evidence
 
+Fires: Plan=none, Implement=low, Verify=high
 The final response must contain a concise diff summary plus the verification result (commands run, tests passed, checks performed). See [gr/gr_operational.md](gr/gr_operational.md).
 
 ### 3.13 Use Domain Language Consistently
 
+Fires: Plan=high, Implement=high, Verify=low
 Terms from the project's ubiquitous language must be used as defined; forbidden synonyms must not be introduced. See [gr/gr_domain_language.md](gr/gr_domain_language.md).
 
 ---
