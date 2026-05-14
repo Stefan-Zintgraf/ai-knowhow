@@ -1,6 +1,6 @@
 # AI Coding Guardrails
 
-Purpose: Compact overview of always-on rules and routing index to detailed guardrail documents.
+Purpose: Compact overview of core rules and routing index to detailed guardrail documents.
 
 ---
 
@@ -11,7 +11,7 @@ Guardrails are **constraints that protect system intent** — not a coding style
 This document is intentionally small. It contains:
 
 - A short framing (mental model).
-- A small set of **always-on** rules that apply to every task.
+- A small set of **core** rules that apply to every task.
 - A **routing index** of guardrail categories with pointers to detail documents (`gr/gr_*.md`).
 
 The AI agent does not read every detail document by default. It identifies which categories apply to the current task and loads only those.
@@ -30,7 +30,7 @@ Weakness in any factor creates risk. The guardrails address **Constraints**; the
 
 ---
 
-## 3. Always-On Guardrails
+## 3. Core Rules
 
 Apply to every AI-assisted planning or implementation task. Each entry is a headline plus a one-line rule. Detail and nuance live in the referenced category document.
 
@@ -100,6 +100,21 @@ The final response must contain a concise diff summary plus the verification res
 
 Fires: Plan=high, Implement=high, Verify=low
 Terms from the project's ubiquitous language must be used as defined; forbidden synonyms must not be introduced. See [gr/gr_domain_language.md](gr/gr_domain_language.md).
+
+### 3.14 No Fabrication
+
+Fires: Plan=high, Implement=high, Verify=medium
+The agent must not invent APIs, function names, file paths, library symbols, or configuration values. Unverifiable references are flagged as assumptions, never stated as facts. See [gr/gr_operational.md](gr/gr_operational.md).
+
+### 3.15 Read Before Write
+
+Fires: Plan=high, Implement=high, Verify=medium
+The agent reads the affected code and its callers in the current session before proposing or making a change. Edits to unread code must be flagged, not silently performed. See [gr/gr_operational.md](gr/gr_operational.md).
+
+### 3.16 Disagree Visibly
+
+Fires: Plan=high, Implement=high, Verify=high
+When the agent believes a user instruction violates a guardrail, contradicts evidence, or risks regression, it states the disagreement with reasoning before complying. Silent compliance is forbidden. See [gr/gr_governance.md](gr/gr_governance.md).
 
 ---
 
@@ -183,26 +198,35 @@ Detail: [gr/gr_operational.md](gr/gr_operational.md)
 
 ## 5. Routing Rule
 
-Before detailed planning or implementation, the agent identifies which categories apply.
+Before detailed planning or implementation, the agent identifies which categories apply. Routing is a deliberation gate, not a checkbox — exclusion must be visible, because that is where misses hide.
 
-Recommended format:
+**Required format:**
 
 ```
 Relevant guardrails:
-- Always-on guardrails
+- Core rules
 - Testing and Verification, because the task changes behavior
 - Brownfield, because existing production code is affected
+
+Considered but excluded:
+- DDD: no domain model touched.
+- Security and Compliance: no auth, secrets, input, or PII involved.
 ```
 
-The agent does not load every detail document by default. When unsure whether a category applies, the agent must mention the uncertainty and pick the smallest reasonable set.
+Rules:
 
-**Always-on rules apply regardless of routing.** A misclassified task must not silently lose the always-on floor.
+- **Include + justify exclusion.** Listed categories carry a one-line reason. Categories considered and excluded are listed when their `Apply when` triggers are plausibly nearby; categories with no plausible trigger need not be mentioned.
+- **Tie-breaker: include rather than exclude** when uncertain.
+- **Re-route on discovery.** If mid-task a category surfaces (e.g. a touched file imports a crypto library, a renamed symbol turns out to be a domain term), the agent stops, re-declares routing, then continues.
+- **Smallest reasonable set, not smallest possible set.** The agent does not load every detail document by default, but does not minimize for context-cost at the expense of safety.
+
+**Core rules apply regardless of routing.** A misclassified task must not silently lose the core-rule floor.
 
 ---
 
 ## 6. Conflict Resolution
 
-When guardrails conflict, use this priority order:
+When guardrails conflict, use the **Priority Order Ladder** below:
 
 1. Safety, security, and compliance
 2. Correctness and behavior preservation
@@ -211,7 +235,17 @@ When guardrails conflict, use this priority order:
 5. Consistency with coding style
 6. Convenience or implementation speed
 
-Speed is never a valid reason to bypass a higher-priority guardrail.
+Speed is never a valid reason to bypass a higher-banded guardrail.
+
+### 6.1 Process Rules and the Priority Order Ladder
+
+The Priority Order Ladder ranks **quality dimensions of the resulting code/change**. Many guardrails are **process or governance rules** instead — they describe *how the agent operates*, not *what the resulting code looks like*. Examples: 3.1 Minimize Scope, 3.4 Make Assumptions Visible, 3.7 Stop on High-Risk Decisions, 3.15 Read Before Write, 3.16 Disagree Visibly, and the `Gov*` family. These rules do not sit in a band of the ladder.
+
+Resolution when a process rule meets a quality rule:
+
+- **Quality wins over process.** A process rule (e.g. minimize scope) cannot override a higher-banded quality rule (e.g. behavior preservation). The B3 ↔ Gov1 case is the canonical pattern: characterization tests required for safe refactor are scope expansion the process rule must accept.
+- **Two process rules conflict?** The **more specific rule** governs. If the situation is high-risk, Gov3 (stop and ask) takes precedence over any other process rule.
+- **Process rules shape *how* a band is honored, not *which* band wins.** They tell the agent how to operate inside the chosen quality priority — they do not compete with it.
 
 ---
 
@@ -220,7 +254,7 @@ Speed is never a valid reason to bypass a higher-priority guardrail.
 The agent should avoid:
 
 - Loading every detail document when only a subset is relevant.
-- Skipping always-on rules because routing did not select the matching category.
+- Skipping core rules because routing did not select the matching category.
 - Treating guardrails as optional suggestions.
 - Hiding assumptions or uncertainty.
 - Turning a small change into a broad redesign.
@@ -234,31 +268,68 @@ The agent should avoid:
 
 ### Example 1: Bug Fix in Existing Code
 
-Relevant: Always-on, Brownfield, Testing and Verification, Coding Style, Operational.
+Relevant: Core rules, Brownfield, Testing and Verification, Coding Style, Operational.
 Reason: behavior-affecting change with regression risk.
 
 ### Example 2: New Module in a Greenfield Project
 
-Relevant: Always-on, Greenfield, Architecture, Coding Style, Testing and Verification, Operational.
+Relevant: Core rules, Greenfield, Architecture, Coding Style, Testing and Verification, Operational.
 Reason: new structure with risk of premature abstraction.
 
 ### Example 3: Rename a Business Concept
 
-Relevant: Always-on, Domain Language, DDD (if domain model), Brownfield (if existing code), Testing and Verification, Documentation.
+Relevant: Core rules, Domain Language, DDD (if domain model), Brownfield (if existing code), Testing and Verification, Documentation.
 Reason: language change may ripple through code, API, docs, tests.
 
 ### Example 4: Authentication Change
 
-Relevant: Always-on, Security and Compliance, Testing and Verification, Architecture (if boundaries change), Governance (likely human approval), Operational.
+Relevant: Core rules, Security and Compliance, Testing and Verification, Architecture (if boundaries change), Governance (likely human approval), Operational.
 Reason: security-sensitive, high-risk decision.
 
 ### Example 5: Upgrade a Third-Party Library
 
-Relevant: Always-on, Dependencies, Testing and Verification, Security and Compliance, Governance, Brownfield.
+Relevant: Core rules, Dependencies, Testing and Verification, Security and Compliance, Governance, Brownfield.
 Reason: external surface change with potential behavior, license, and security impact.
 
 ### Example 6: Start a Completely New Greenfield Project
 
-Relevant: Always-on, Greenfield, Architecture, Domain Language, Coding Style, Testing and Verification, Documentation, Dependencies, Governance, Operational.
+Relevant: Core rules, Greenfield, Architecture, Domain Language, DDD (domain-modeling mindset only — defer tactical patterns until complexity warrants per G5/G6), Coding Style, Testing and Verification, Security and Compliance, Documentation, Dependencies, Governance, Operational.
 Reason: a new project sets the long-term shape of the system. Initial decisions — architecture size, conventions, ubiquitous language, test strategy, dependency policy, repo structure — are durable and expensive to change later. The agent must resist premature architecture, record the initial ubiquitous language as it emerges, establish conventions deliberately, and produce only the smallest first vertical slice instead of a full scaffold.
-Note: Security and Compliance and DDD are added on demand once the project's domain and risk profile become concrete. Brownfield rules do not apply yet.
+Note on Security and Compliance: included from day 1. Even a CRUD prototype touches secrets (S1), input validation (S2), and dependency security (Dep5, Dep6). Retrofitting security habits is expensive; starting right is cheap.
+Note on DDD: the domain-modeling mindset (model around business concepts, avoid anemic data classes, name from the domain) applies from day 1 — much of it already enforced by Domain Language (§3.13, L*) and G7. The tactical patterns (aggregates, value objects with invariants, bounded contexts, anti-corruption layers) are deferred until the domain shows enough complexity to justify them; introducing them early violates G5 (no premature abstraction) and G6 (no premature framework).
+Note: Brownfield rules do not apply yet.
+
+---
+
+## 9. Maintenance: Editing Parallel-Stated Rules
+
+Several core rules in §3 are also stated in a `gr/gr_*.md` detail document. Both copies exist by design — §3 keeps the rule cheap to load; the detail doc carries nuance. This creates drift risk: a rule edited in one place but not the other will diverge over time.
+
+**Rule.** When editing any rule that appears in both §3 and a detail doc, check the parallel copy in the same change and align prose. The same applies in reverse when editing a detail-doc rule that has a §3 mirror.
+
+**Parallels.** Each entry maps a §3 rule to its detail-doc counterpart(s):
+
+| §3 rule                                | Detail-doc rule(s) |
+| -------------------------------------- | ------------------ |
+| 3.1 Minimize Scope                     | Gov1               |
+| 3.2 Do Not Mix Concerns                | C10, B2            |
+| 3.3 Respect Existing Behavior          | B1                 |
+| 3.4 Make Assumptions Visible           | Gov2               |
+| 3.5 Avoid Speculative Design           | C8, A10, G5        |
+| 3.6 Verify Changes                     | T1                 |
+| 3.7 Stop on High-Risk Decisions        | Gov3               |
+| 3.8 No Hardcoded Secrets               | S1                 |
+| 3.9 No Bypass of Existing Abstraction  | A3                 |
+| 3.10 Preserve Public API Compatibility | A6                 |
+| 3.11 No Silent Dependency Changes      | Dep1               |
+| 3.12 Provide Verification Evidence     | Op4                |
+| 3.13 Use Domain Language Consistently  | L1                 |
+| 3.14 No Fabrication                    | Op13               |
+| 3.15 Read Before Write                 | Op14               |
+| 3.16 Disagree Visibly                  | Gov12              |
+
+**Convention.** §3 entries stay short (headline + one-line rule). Longer prose, nuance, and anti-patterns live in the detail doc. Drift surface is then limited to the headline and one-liner.
+
+**When adding a new core rule.** Place the substance in the relevant detail doc first, then add the short mirror in §3 and a new row in the table above.
+
+**When removing or renumbering.** Update both copies and the table in the same change.

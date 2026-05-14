@@ -46,7 +46,7 @@ Scan the repo for opportunities to deepen modules / consolidate test boundaries.
 
 ## 3. Guardrail Bucket Mapping
 
-`guardrails.md` uses a three-bucket model in the `Fires:` lines of each always-on rule: **Plan**, **Implement**, **Verify**. The mapping from phase to bucket:
+`guardrails.md` uses a three-bucket model in the `Fires:` lines of each core rule: **Plan**, **Implement**, **Verify**. The mapping from phase to bucket:
 
 | Phase | Bucket(s)                             |
 | ----- | ------------------------------------- |
@@ -71,21 +71,3 @@ aln → prd → iss → (ral | par) → done
 ```
 
 `ral` and `par` are alternative modes of the same implementation step, chosen per task. Not both at once.
-
----
-
-## 5. Skill Backing
-
-Each phase has (or will have) a backing skill or template that defines its exact behavior:
-
-| Phase | Backing artifact                                       |
-| ----- | ------------------------------------------------------ |
-| aln   | (skill TBD)                                            |
-| prd   | `skills/engineering/to-prd/SKILL.md` (may be replaced) |
-| iss   | (skill TBD)                                            |
-| ral   | (skill TBD)                                            |
-| par   | (skill TBD)                                            |
-| rev   | (skill TBD)                                            |
-| ica   | (skill TBD)                                            |
-
-The agent always operates inside a named phase with a backing artifact. It does not receive vague phase commands.
