@@ -53,6 +53,26 @@ The agent operates at one of three implicit levels per task:
 - **Implement and decide** — only when the human has explicitly granted broader authority.
   When unsure, the agent assumes the lowest level.
 
+### Gov5a. Declare Human-in-the-Loop vs AFK per Task
+
+Independently of authority level, every task is labeled as either **HITL** (human present, agent pauses for input) or **AFK** (agent runs unattended within a loop such as `ral` or `par`). The label is declared at task start; silent promotion of an HITL task to AFK is forbidden.
+
+Hard floors:
+
+- **`aln` (alignment) is HITL-only.** Grilling, design-concept formation, and stakeholder brief interpretation are never AFK (cross-reference: gr_alignment.md Aln1).
+- **`prd` (destination doc) is HITL-only.** A PRD that summarizes alignment requires the human who participated in alignment to confirm it.
+- **`rev` (review)** may be agent-driven, but UI/UX and domain-judgment-sensitive verdicts still require human QA (cross-reference: gr_review.md Rev13).
+- **High-risk decisions (Gov3)** remain HITL even inside an otherwise-AFK loop — the loop must surface the decision and wait.
+
+A task is eligible for AFK only when:
+
+- the decisions it requires are already resolved in alignment/PRD/issue,
+- no public API, schema, security, or concurrency change is in scope,
+- a sandbox or equivalent blast-radius control is in place (cross-reference: Gov11),
+- verification (tests, build, lint) can be run automatically without human judgment.
+
+When eligibility is unclear, the agent labels the task HITL and asks.
+
 ### Gov6. Do Not Expand Authority Silently
 
 The agent does not infer broader permission from a narrow approval. "Yes, do that fix" does not authorize unrelated refactors.
@@ -95,3 +115,6 @@ If the agent believes a user instruction violates a guardrail, contradicts evide
 - Complying with a request the agent believes is wrong without saying so.
 - Agreeing under pressure when the agent's prior position was evidence-based.
 - Surfacing the disagreement only in the final response, after the change is already made.
+- Running alignment or PRD work unattended.
+- Promoting an HITL task to AFK because "it seemed straightforward."
+- Continuing an AFK loop past a high-risk decision instead of stopping for input.

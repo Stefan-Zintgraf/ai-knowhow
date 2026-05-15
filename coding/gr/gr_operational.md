@@ -83,6 +83,22 @@ A failed risky operation (push, deploy, migration) is not retried automatically.
 
 The agent does not invent code-level facts. Function names, types, file paths, library APIs, config keys, CLI flags, error codes, and version numbers referenced in plans, code, or messages must be verified against the actual source (grep, read, official docs) before being stated. If verification is not possible in the current context, the item is marked as an assumption per Gov2 — never asserted as fact.
 
+### Op14a. Keep Persistent Context Small
+
+Always-on instructions (system prompt, `CLAUDE.md`-equivalent, project AI rules) push the agent toward the dumb zone before work begins. The agent and project maintainers keep the persistent context minimal: only what every task needs. Detail documents (guardrail categories, conventions, architecture notes, domain glossaries) are kept retrievable, not pushed by default.
+
+Rationale: attention-relationship cost grows sharply with tokens. Large persistent prompts consume budget before the task starts.
+
+### Op14b. Push vs Pull for Standards
+
+The default delivery of coding standards and guardrail detail documents depends on the agent's role:
+
+- **Implementer (`ral`, `par`, ad-hoc implementation)** — standards are **pulled**: retrieved on demand when the routing step (`guardrails.md` §5) selects a category. The implementer does not load every detail document by default.
+- **Reviewer (`rev`)** — standards are **pushed**: the routed detail documents are loaded into the reviewer's context up front, because review compares the diff against the standards (cross-reference: gr_review.md Rev2).
+- **Aligner (`aln`) and planner (`prd`, `iss`)** — standards are pulled on demand, biased toward planning-relevant categories (governance, architecture, modules, alignment).
+
+A change to a standard updates the pulled detail document; the implementer picks up the change on the next routing pass. A reviewer setup explicitly re-loads the pushed set per review session.
+
 ### Op14. Read Before Write
 
 Before modifying a function, type, file, or configuration value, the agent reads the affected unit and its callers/consumers within the current context budget. "Read" means actual file contents loaded in this session — not memory of similar code or pattern recognition from the name. Edits to code the agent has not read must be flagged as such, and the agent must ask before proceeding. This rule reinforces Op13: reading first is the primary defense against fabrication.
@@ -105,3 +121,6 @@ Before modifying a function, type, file, or configuration value, the agent reads
 - Renaming a symbol without searching for its references.
 - Adding a parameter to a function without checking call sites.
 - Changing a config value without reading what consumes it.
+- Loading every guardrail detail document into the implementer's context "just in case."
+- Reviewing a diff with standards only available on demand instead of pushed up front.
+- Letting the always-on system prompt grow until the first task starts in the dumb zone.

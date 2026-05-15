@@ -116,6 +116,31 @@ The agent reads the affected code and its callers in the current session before 
 Fires: Plan=high, Implement=high, Verify=high
 When the agent believes a user instruction violates a guardrail, contradicts evidence, or risks regression, it states the disagreement with reasoning before complying. Silent compliance is forbidden. See [gr/gr_governance.md](gr/gr_governance.md).
 
+### 3.17 Push for Reviewer, Pull for Implementer
+
+Fires: Plan=low, Implement=medium, Verify=high
+Coding-standard and guardrail detail documents are **pulled** on demand by the implementer (kept out of the always-on context) and **pushed** into the reviewer's context up front. Always-on context is kept minimal so work starts in the smart zone. See [gr/gr_operational.md](gr/gr_operational.md) (Op14a, Op14b) and [gr/gr_review.md](gr/gr_review.md).
+
+### 3.18 Review Runs in a Fresh Context
+
+Fires: Plan=none, Implement=low, Verify=high
+Review of a change is performed in a context that does not contain the implementer's prior conversation, plan, or scratch reasoning. Same-context self-review is forbidden because it produces self-justification, not review. See [gr/gr_review.md](gr/gr_review.md) (Rev1).
+
+### 3.19 Prefer Deep Modules
+
+Fires: Plan=high, Implement=medium, Verify=high
+Modules expose small interfaces and hide significant functionality. Shallow modules with many small pieces and tangled cross-dependencies are an anti-pattern, especially because AI tends to default to width. Module-shape decisions are made in alignment/PRD, checked explicitly in review. See [gr/gr_modules.md](gr/gr_modules.md).
+
+### 3.20 Declare Autonomy: HITL vs AFK
+
+Fires: Plan=high, Implement=high, Verify=medium
+Every task is labeled human-in-the-loop or AFK at the start. `aln` and `prd` are HITL-only. AFK requires resolved decisions, no high-risk surface, sandboxed blast radius, and automatable verification. Silent promotion HITL → AFK is forbidden. See [gr/gr_governance.md](gr/gr_governance.md) (Gov5a).
+
+### 3.21 Reach Alignment Before Planning Artifacts
+
+Fires: Plan=high, Implement=low, Verify=none
+Before a PRD, issue decomposition, or implementation begins, the agent and human reach a shared **design concept** via a grilling pass: one question at a time, branches walked, hidden constraints (security, permissions, retention, migrations, observability, API compat, concurrency) explicitly raised. The PRD summarizes alignment; it does not replace it. See [gr/gr_alignment.md](gr/gr_alignment.md).
+
 ---
 
 ## 4. Guardrail Categories (Routing Index)
@@ -193,6 +218,24 @@ Detail: [gr/gr_dependencies.md](gr/gr_dependencies.md)
 Purpose: define what the agent must do during execution and what evidence it must produce.
 Apply when: any implementation task — covers build/test commands to run, definition of done, and final-response format.
 Detail: [gr/gr_operational.md](gr/gr_operational.md)
+
+### 4.13 Module Depth
+
+Purpose: protect codebase shape against shallow-module drift. Prefer deep modules with small interfaces hiding significant functionality.
+Apply when: a module is created, split, merged, or restructured; a PRD proposes a module map; review surfaces tangled cross-dependencies; architecture-improvement (`ica`) is run.
+Detail: [gr/gr_modules.md](gr/gr_modules.md)
+
+### 4.14 Review
+
+Purpose: define how a code-review pass is conducted in the smart zone, with standards pushed into context and module depth checked explicitly.
+Apply when: a change is ready for review (`rev` phase); after an AFK loop produces commits; when a human asks the agent to review a diff or branch.
+Detail: [gr/gr_review.md](gr/gr_review.md)
+
+### 4.15 Alignment
+
+Purpose: reach a shared design concept with the human before any planning artifact is written. Grilling produces alignment; PRD only summarizes it.
+Apply when: a new feature, change, or vague backlog item enters the workflow (`aln` phase); before any PRD, issue decomposition, or implementation begins.
+Detail: [gr/gr_alignment.md](gr/gr_alignment.md)
 
 ---
 
@@ -309,24 +352,29 @@ Several core rules in §3 are also stated in a `gr/gr_*.md` detail document. Bot
 
 **Parallels.** Each entry maps a §3 rule to its detail-doc counterpart(s):
 
-| §3 rule                                | Detail-doc rule(s) |
-| -------------------------------------- | ------------------ |
-| 3.1 Minimize Scope                     | Gov1               |
-| 3.2 Do Not Mix Concerns                | C10, B2            |
-| 3.3 Respect Existing Behavior          | B1                 |
-| 3.4 Make Assumptions Visible           | Gov2               |
-| 3.5 Avoid Speculative Design           | C8, A10, G5        |
-| 3.6 Verify Changes                     | T1                 |
-| 3.7 Stop on High-Risk Decisions        | Gov3               |
-| 3.8 No Hardcoded Secrets               | S1                 |
-| 3.9 No Bypass of Existing Abstraction  | A3                 |
-| 3.10 Preserve Public API Compatibility | A6                 |
-| 3.11 No Silent Dependency Changes      | Dep1               |
-| 3.12 Provide Verification Evidence     | Op4                |
-| 3.13 Use Domain Language Consistently  | L1                 |
-| 3.14 No Fabrication                    | Op13               |
-| 3.15 Read Before Write                 | Op14               |
-| 3.16 Disagree Visibly                  | Gov12              |
+| §3 rule                                        | Detail-doc rule(s) |
+| ---------------------------------------------- | ------------------ |
+| 3.1 Minimize Scope                             | Gov1               |
+| 3.2 Do Not Mix Concerns                        | C10, B2            |
+| 3.3 Respect Existing Behavior                  | B1                 |
+| 3.4 Make Assumptions Visible                   | Gov2               |
+| 3.5 Avoid Speculative Design                   | C8, A10, G5        |
+| 3.6 Verify Changes                             | T1                 |
+| 3.7 Stop on High-Risk Decisions                | Gov3               |
+| 3.8 No Hardcoded Secrets                       | S1                 |
+| 3.9 No Bypass of Existing Abstraction          | A3                 |
+| 3.10 Preserve Public API Compatibility         | A6                 |
+| 3.11 No Silent Dependency Changes              | Dep1               |
+| 3.12 Provide Verification Evidence             | Op4                |
+| 3.13 Use Domain Language Consistently          | L1                 |
+| 3.14 No Fabrication                            | Op13               |
+| 3.15 Read Before Write                         | Op14               |
+| 3.16 Disagree Visibly                          | Gov12              |
+| 3.17 Push for Reviewer, Pull for Implementer   | Op14b, Rev2        |
+| 3.18 Review Runs in a Fresh Context            | Rev1               |
+| 3.19 Prefer Deep Modules                       | M1, A11            |
+| 3.20 Declare Autonomy: HITL vs AFK             | Gov5a              |
+| 3.21 Reach Alignment Before Planning Artifacts | Aln1–Aln6          |
 
 **Convention.** §3 entries stay short (headline + one-line rule). Longer prose, nuance, and anti-patterns live in the detail doc. Drift surface is then limited to the headline and one-liner.
 
