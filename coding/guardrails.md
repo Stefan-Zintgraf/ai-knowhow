@@ -141,6 +141,31 @@ Every task is labeled human-in-the-loop or AFK at the start. `aln` and `prd` are
 Fires: Plan=high, Implement=low, Verify=none
 Before a PRD, issue decomposition, or implementation begins, the agent and human reach a shared **design concept** via a grilling pass: one question at a time, branches walked, hidden constraints (security, permissions, retention, migrations, observability, API compat, concurrency) explicitly raised. The PRD summarizes alignment; it does not replace it. See [gr/gr_alignment.md](gr/gr_alignment.md).
 
+### 3.22 Strict Test-Driven Development (TDD)
+
+Fires: Plan=low, Implement=high, Verify=high
+The agent must write failing tests before writing implementation code (Red-Green-Refactor), including for frontend/visual tasks. Writing tests after the fact is forbidden. See [gr/gr_testing_verification.md](gr/gr_testing_verification.md).
+
+### 3.23 Enforce Vertical Slices
+
+Fires: Plan=high, Implement=medium, Verify=low
+Tasks must be sliced vertically (crossing UI, API, DB layers) to deliver testable, integrated behavior early. Horizontal layer-by-layer slicing is forbidden. See [gr/gr_governance.md](gr/gr_governance.md).
+
+### 3.24 Prevent Documentation Rot (Retire PRDs)
+
+Fires: Plan=high, Implement=low, Verify=none
+Old PRDs and plans must not be kept indefinitely in the repository files where they can mislead future agents. Store journey documents and PRDs externally (e.g. GitHub Issues) and close them when done. See [gr/gr_documentation.md](gr/gr_documentation.md).
+
+### 3.25 Clear Context Over Compaction
+
+Fires: Plan=high, Implement=high, Verify=high
+The agent must start fresh sessions (clear context) instead of summarizing long histories (compacting context). If the agent cannot physically clear its own context, it must stop and ask the human (HITL) to do so to prevent entering the dumb zone. See [gr/gr_operational.md](gr/gr_operational.md).
+
+### 3.26 Plan via Dependency Graphs (DAGs)
+
+Fires: Plan=high, Implement=none, Verify=none
+When decomposing a PRD into tasks, the agent must create an issue DAG (Directed Acyclic Graph) with explicit blocking relationships. Sequential multi-phase plans are forbidden because they serialize work. Each issue must be independently grabbable. See [gr/gr_governance.md](gr/gr_governance.md).
+
 ---
 
 ## 4. Guardrail Categories (Routing Index)
@@ -375,6 +400,11 @@ Several core rules in §3 are also stated in a `gr/gr_*.md` detail document. Bot
 | 3.19 Prefer Deep Modules                       | M1, A11            |
 | 3.20 Declare Autonomy: HITL vs AFK             | Gov5a              |
 | 3.21 Reach Alignment Before Planning Artifacts | Aln1–Aln6          |
+| 3.22 Strict Test-Driven Development (TDD)      | T12                |
+| 3.23 Enforce Vertical Slices                   | Gov1a              |
+| 3.24 Prevent Documentation Rot                 | Doc11              |
+| 3.25 Clear Context Over Compaction             | Op15               |
+| 3.26 Plan via Dependency Graphs (DAGs)         | Gov1b              |
 
 **Convention.** §3 entries stay short (headline + one-line rule). Longer prose, nuance, and anti-patterns live in the detail doc. Drift surface is then limited to the headline and one-liner.
 

@@ -83,7 +83,7 @@ When a domain-expert meeting transcript or written source-of-truth exists, the a
 
 ### Aln12. Module Map Is an Alignment Output
 
-By the end of alignment, the agent and human agree on a proposed **module map** (cross-reference: gr_modules.md M6): which modules will be touched, which are new, what each new module's public interface looks like. Module-shape decisions belong here, not in implementation.
+By the end of alignment, the agent and human agree on a proposed **module map** (cross-reference: gr_modules.md M6): which modules will be touched, which are new, what each new module's public interface looks like. Module-shape decisions belong here, not in implementation. The proposed map must be explicitly reviewed for depth (ensuring narrow interfaces) during the alignment/PRD review phase before implementation begins.
 
 ### Aln13. PRD Summarizes Alignment, Does Not Replace It
 
@@ -97,6 +97,10 @@ If during PRD writing, issue decomposition, or implementation, a contradiction o
 
 Decisions to *not* do something are recorded explicitly in the alignment artifacts and carried forward into the PRD's out-of-scope section. Negative decisions are how scope is defended later.
 
+### Aln16. Visualize the Decision Tree
+
+During the grilling session, the agent maintains and displays a visual map of the decision tree (e.g., a Mermaid `graph TD`). The graph shows the root goal, walked branches (decisions made), and pending branches (unresolved questions). This keeps the human oriented and exposes missed constraints.
+
 ---
 
 ## Anti-Patterns
@@ -106,6 +110,7 @@ Decisions to *not* do something are recorded explicitly in the alignment artifac
 - Implementing directly from a Slack brief.
 - A grilling session that ends after five questions because the agent "thinks it has enough."
 - Asking questions without offering a recommendation.
+- Losing track of pending decisions because no visual tree is maintained.
 - A PRD that contradicts the grilling transcript.
 - Silently dropping hidden-constraint classes (security, retention, observability) because the brief did not mention them.
 - Running grilling AFK or via Ralph loop.

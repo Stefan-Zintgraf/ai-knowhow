@@ -17,6 +17,14 @@ Purpose: define when the AI may act autonomously, when it must stop, and what is
 
 Before planning details, the agent narrows the task to the smallest useful, verifiable change. If the human expands scope, the agent classifies additions as: needed now / useful later / unrelated / risky.
 
+### Gov1a. Enforce Vertical Slices
+
+When slicing tasks, the agent must produce vertical slices that cross architectural layers (e.g., DB, API, UI) to deliver integrated, testable behavior. Horizontal slicing (e.g., implementing only the DB schema across the whole app before touching the API) is forbidden because it delays feedback.
+
+### Gov1b. Plan via Dependency Graphs, Not Sequential Lists
+
+When converting a PRD into an implementation plan, the agent must output a Kanban-style set of issues forming a Directed Acyclic Graph (DAG) with explicit blocking relationships. Sequential, numbered multi-phase plans ("Phase 1, Phase 2") are forbidden because they serialize work. Each issue must be independently grabbable by an agent or human.
+
 ### Gov2. Make Assumptions Visible
 
 Every plan and every implementation distinguishes:
@@ -108,6 +116,9 @@ If the agent believes a user instruction violates a guardrail, contradicts evide
 ## Anti-Patterns
 
 - Inferring permission from a vague "go ahead."
+- Slicing work horizontally by architectural layer instead of vertically by behavior.
+- Creating a sequential "Phase 1, Phase 2, Phase 3" implementation plan.
+- Creating tasks that are not independently grabbable.
 - Treating an approved bug fix as approval for surrounding cleanup.
 - Silent removal of a feature flag.
 - Acting on an assumption without naming it.

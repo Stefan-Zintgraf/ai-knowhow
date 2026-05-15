@@ -16,6 +16,10 @@ Purpose: define what the agent must do during execution and what evidence it mus
 
 The agent identifies the project's build, test, lint, and format commands (from `AGENTS.md`, `README`, `package.json`, `Makefile`, `pyproject.toml`, etc.) before making changes.
 
+### Op1a. Explicit Routing Declaration
+
+Before reading application code or writing any implementation, the agent must output a routing declaration based on `guardrails.md` §5 (e.g., "Pulling: gr_architecture.md, gr_testing_verification.md"). The agent must then explicitly view/read those pulled standard files. Proceeding without explicitly declaring and pulling the relevant standards is forbidden.
+
 ### Op2. Run Verification Locally
 
 Before claiming the task is done, the agent runs the relevant build, tests, and static checks and reports the result.
@@ -60,9 +64,9 @@ Anything the agent does should be reproducible: state the commands, inputs, and 
 
 Claims about code state ("X is unused", "Y is covered by tests") cite the evidence (search result, test name, file path).
 
-### Op10. Stop Cleanly on Failure
+### Op10. Stop Cleanly on Failure (Yield Gracefully)
 
-If a step fails (tests red, build broken), the agent stops, reports the failure, and asks rather than masking it.
+If a step fails (tests red, build broken) or a missing product requirement is discovered mid-task, the agent stops and reports the failure. If running AFK, the agent must not guess to keep moving. It must document the blocker, leave the branch in a clean state (e.g., stash changes or commit as WIP), and exit the process cleanly so the human or local script can take over without untangling a corrupted git state.
 
 ### Op11. Generated-Code Volume Awareness
 
@@ -103,11 +107,29 @@ A change to a standard updates the pulled detail document; the implementer picks
 
 Before modifying a function, type, file, or configuration value, the agent reads the affected unit and its callers/consumers within the current context budget. "Read" means actual file contents loaded in this session — not memory of similar code or pattern recognition from the name. Edits to code the agent has not read must be flagged as such, and the agent must ask before proceeding. This rule reinforces Op13: reading first is the primary defense against fabrication.
 
+### Op15. Clear Context Over Compaction
+
+The agent must not summarize long conversation histories to continue working in the same thread (compaction). Summarization introduces sediment, drops nuance, and pushes the agent into the dumb zone. Instead, the agent must start a fresh session (clearing context) for the next task or loop iteration. If the agent's environment or UI prevents it from clearing its own context, the agent must treat the context limit as a hard stop: it must switch to HITL and instruct the user to start a new session.
+
+### Op16. Parallel Isolation and Sequential Integration Queue
+
+To turn an issue DAG into safe parallel agent throughput:
+1. **Isolation:** Implementer agents must operate in strictly isolated Git branches or worktrees.
+2. **No Self-Merging:** Implementers are forbidden from merging their own branches into the main trunk.
+3. **The Merger Role:** A dedicated Merger or Reviewer agent (not the implementer) handles integration.
+4. **Sequential Integration Queue:** When multiple agents (A, B, C, …) complete work in parallel, their branches are integrated one at a time in sequence:
+   - Agent A's branch is merged to trunk first. The full test suite (including `T2a` integration tests) is run.
+   - Agent B then rebases onto the updated trunk (which now contains A's work) and fixes any conflicts or test failures introduced by the rebase. All tests — including those introduced by A — must pass.
+   - Agent C then rebases onto the trunk containing A+B, fixes conflicts, and proves all prior tests pass. And so on for D, E, etc.
+   - Each agent in the queue is responsible for making its own code compatible with everything already integrated. The Merger orchestrates the queue order but does not write implementation fixes.
+5. **Revert on Semantic Clash:** If an agent cannot resolve test failures after rebasing, the Merger agent MUST revert the integration attempt and kick the issue back to that implementer with the failure logs. The Merger must not attempt to write implementation code to fix the clash itself.
+
 ---
 
 ## Anti-Patterns
 
 - "All tests pass" without having run them.
+- An AFK agent hitting a blocker and hanging with uncommitted changes instead of yielding cleanly.
 - Bypassing a failing pre-commit hook with `--no-verify`.
 - Installing a missing dependency globally on the user's machine.
 - Auto-formatting the entire repo while fixing one bug.
@@ -124,3 +146,8 @@ Before modifying a function, type, file, or configuration value, the agent reads
 - Loading every guardrail detail document into the implementer's context "just in case."
 - Reviewing a diff with standards only available on demand instead of pushed up front.
 - Letting the always-on system prompt grow until the first task starts in the dumb zone.
+- Summarizing a long thread to continue working instead of starting a fresh session.
+- An implementer starting code changes without explicitly declaring which guardrails it pulled.
+- An implementer agent merging its own branch to the trunk.
+- The Merger agent skipping the `T2a` integration test suite after resolving a conflict.
+- The Merger agent attempting to write implementation code to fix a post-merge test failure instead of reverting.

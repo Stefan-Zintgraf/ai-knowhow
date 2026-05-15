@@ -65,6 +65,14 @@ The agent treats its own first instinct to "split this into smaller pieces" as s
 
 Decisions that affect module depth (where a new responsibility lives, whether to introduce a service, whether to split an existing one) belong in `aln`/`prd`/`iss` — not invented during `ral`/`par`. An implementer agent that discovers a missing module decision stops and routes back to planning (cross-reference: Gov3).
 
+### M11. Use Objective Heuristics for Module Depth
+
+When designing, implementing, or reviewing a module, the agent relies on these heuristics to gauge depth objectively:
+- **Interface/Implementation LOC Ratio:** High private logic relative to public signatures indicates depth.
+- **Fan-in / Fan-out (Coupling):** High fan-in (many callers) and low fan-out (few imported dependencies) indicates depth.
+- **Parameter Count:** Public methods with 4+ parameters often leak internal state requirements, signaling a shallow interface.
+- **Test Boundary Leakage:** If internal helpers must be exported solely to facilitate testing, the module boundary is shallow.
+
 ---
 
 ## Anti-Patterns

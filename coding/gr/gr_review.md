@@ -48,14 +48,20 @@ The review must include a behavior check, not only a style check:
 - Does the diff do what the issue / PRD / plan said it would do?
 - Are edge cases from the alignment session covered?
 - Do the tests actually exercise the new behavior, or do they pass trivially?
+- Are all newly exported public APIs properly documented with standard, machine-readable docstrings (per `Doc12`) to guarantee successful auto-generation of API docs?
+
+### Rev5a. API Snapshot Comparison
+
+If the project maintains an auto-generated API overview file (e.g., `public_api.md`), the reviewer must run the generation script to produce a fresh snapshot. If the new snapshot differs from the committed one, the reviewer explicitly flags that a public API boundary has changed. Per `Gov3`, public API changes require explicit human approval. If approved, the updated snapshot must be included in the diff.
 
 ### Rev6. Check Module Depth Explicitly
 
-The reviewer applies the module-depth dimension from [gr_modules.md](gr_modules.md):
+The reviewer applies the module-depth dimension from [gr_modules.md](gr_modules.md), explicitly referencing the heuristics in M11:
 
 - Did the change deepen a module, leave depth unchanged, or shallowen it?
+- For new/greenfield modules: does the module expose a narrow interface relative to its internal complexity (e.g., high LOC ratio, low parameter count)?
 - Were new files added that expose narrow interfaces over small internals?
-- Did cross-module dependency arrows multiply?
+- Did dependency arrows (fan-out) multiply across module boundaries?
 
 Shallow-module drift is flagged. A diff that adds many small files with dense imports is suspect by default.
 
@@ -81,6 +87,7 @@ The reviewer treats every code-level claim in the diff and its commit messages a
 The diff must match the agreed scope. The reviewer flags:
 
 - Out-of-scope changes (formatting, unrelated refactors, drive-by edits).
+- Horizontal slicing (building a single layer rather than a vertical slice/tracer bullet crossing layers).
 - Mixed concerns (cross-reference: Core rule 3.2).
 - Silent dependency changes (cross-reference: Dep1).
 - Silent abstraction additions or removals.
@@ -118,6 +125,7 @@ Automated agent review does not replace human QA for UI, UX, or domain-judgment-
 - Review without an explicit module-depth assessment.
 - Review that only checks style and misses a behavior regression.
 - Review that silently accepts an out-of-scope refactor.
+- Review that fails to flag a horizontal slice masquerading as a feature increment.
 - Review that omits the hidden-constraint checklist because "the task wasn't security-related."
 - Review that uses a weaker model than the implementer.
 - Review verdict without a routing statement.

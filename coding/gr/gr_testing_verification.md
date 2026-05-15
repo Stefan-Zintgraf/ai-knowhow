@@ -24,6 +24,9 @@ Before changing code, the agent states how the change will be verified (which te
 - External contract: contract or end-to-end test.
 The agent picks the smallest level that proves the change.
 
+### T2a. Vertical Slices Demand Integration Tests
+When implementing a vertical slice or tracer bullet crossing architectural layers (e.g., DB + API + UI), the verification must include an integration or end-to-end test exercising the full path. Relying solely on isolated unit tests for a vertical slice is forbidden because it fails to prove the layers actually connect.
+
 ### T3. Regression Test Before Behavior Change
 If a bug fix or refactor risks regression, an automated test that fails *before* the change and passes *after* must exist. No silent fixes.
 
@@ -51,12 +54,20 @@ The agent must not skip, comment out, or weaken an existing failing test without
 ### T11. Evidence in the Final Response
 The final response lists which commands were run, which tests passed, and any check that was skipped (with reason). See `gr_operational.md`.
 
+### T12. Strict Test-Driven Development (TDD)
+The agent must write a failing test before writing implementation code. Confirm the test fails for the expected reason (Red), then write the minimum code to make it pass (Green). This applies to all logic, including frontend and visual tasks (e.g. via browser automation or component tests). Writing tests after the implementation is forbidden.
+
+### T12a. Prove False Greens are Red
+If a newly written test passes immediately (before any implementation is written), the agent must assume it is a "false green" caused by framework misconfiguration, test-filtering issues, or incorrect assertions. The agent must intentionally break the assertion (e.g., `expect(true).toBe(false)`) and run the test again to prove the test framework is actually executing the file and capable of failing.
+
 ---
 
 ## Anti-Patterns
 
 - Adding a test that re-asserts the implementation, not the behavior.
+- Verifying a vertical slice / tracer bullet using only isolated unit tests without an integration path.
 - Marking a flaky test as `skip` instead of fixing it.
 - Refactoring legacy code with no characterization tests.
 - Writing a test after the change that conveniently passes without ever having been red.
+- Accepting an initial "green" test without intentionally breaking it to verify the framework runs it.
 - Claiming "all tests pass" without running them.

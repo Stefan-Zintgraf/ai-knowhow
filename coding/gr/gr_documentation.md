@@ -54,12 +54,22 @@ Code examples in docs are short, runnable, and ideally covered by a test so they
 
 Follow the project's existing structure, tone, and Markdown conventions. Don't introduce a new doc system.
 
+### Doc11. Retire Stale PRDs and Plans (Prevent Doc Rot)
+
+Old PRDs and implementation plans must not be kept indefinitely in the repository files. Stale documentation can actively poison the context of future agents. Store journey documents and PRDs in external systems (e.g., GitHub Issues) and close them when the work is complete to preserve architectural history without polluting the active codebase.
+
+### Doc12. Document Public Interfaces (APIs)
+
+Any function, class, or type exported for cross-module or external consumption constitutes a "Public API." While internal implementation comments should be rare (`Doc6`), every public API must have a clear docstring/comment defining its behavioral contract, expected inputs, and error states. This documentation serves as the "cognitive handle" for both humans and agents. The project should maintain an auto-generated snapshot file (e.g., `public_api.md` generated via Python/AST script). Agents must not manually edit this file; instead, it is regenerated to objectively detect public API drift during review.
+
 ---
 
 ## Anti-Patterns
 
 - A new `NOTES.md` after every task.
+- Keeping old PRDs in the repository forever.
 - Block comments restating what the function signature already says.
+- Exporting a cross-module function without documenting its behavioral contract.
 - Architecture overview that contradicts the current code.
 - Long migration guides nobody reads.
 - Copy-pasted API tables that drift from the schema.
