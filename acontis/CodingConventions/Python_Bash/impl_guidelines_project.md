@@ -37,9 +37,11 @@ language boundaries (4), runtime constraints, or deviations from the template.*
 ---
 
 ## Revision History
+
 <!-- Latest entries first. Add new rows directly below the header row. -->
+
 <!-- Same-day revisions: append .2, .3, ... to the date (e.g. 2026-02-20.2). -->
 
-| Date | Change |
-|------|--------|
+| Date       | Change                                                                                        |
+| ---------- | --------------------------------------------------------------------------------------------- |
 | 2026-02-20 | Created as generic project checklist referencing `impl_guidelines_template.md` sections 1-12. |

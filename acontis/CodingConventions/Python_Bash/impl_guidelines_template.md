@@ -66,12 +66,12 @@ needed.
 > projects, replace Bash with the relevant orchestration approach (PowerShell,
 > Makefile, Python entry-point, etc.) and drop the Bash guardrails.
 
-| Area | Language | Responsibility |
-|------|----------|----------------|
+| Area                                | Language              | Responsibility                                       |
+| ----------------------------------- | --------------------- | ---------------------------------------------------- |
 | Pipeline entrypoint / orchestration | Bash *(if Linux/WSL)* | Process orchestration, CLI handling, tool invocation |
-| Core logic / data transformation | Python 3 | Business logic, data processing, structured output |
-| Test suite orchestration | Bash or `pytest` | Run order, aggregation, exit status summary |
-| Individual test assertions | Python 3 | Validation logic per step and per requirement |
+| Core logic / data transformation    | Python 3              | Business logic, data processing, structured output   |
+| Test suite orchestration            | Bash or `pytest`      | Run order, aggregation, exit status summary          |
+| Individual test assertions          | Python 3              | Validation logic per step and per requirement        |
 
 Global rules:
 
@@ -91,18 +91,18 @@ because of missing packages.
 
 ### 5.1 Python tooling (always applicable)
 
-| Tool | Purpose | Install |
-|------|---------|---------|
-| `ruff` | Python linter and formatter | `pip install ruff` |
-| `mypy` | Python static type checker | `pip install mypy` |
-| `pytest` | Python test runner | `pip install pytest` |
+| Tool     | Purpose                     | Install              |
+| -------- | --------------------------- | -------------------- |
+| `ruff`   | Python linter and formatter | `pip install ruff`   |
+| `mypy`   | Python static type checker  | `pip install mypy`   |
+| `pytest` | Python test runner          | `pip install pytest` |
 
 ### 5.2 Bash tooling (when Bash is in scope)
 
-| Tool | Purpose | Install |
-|------|---------|---------|
-| `shellcheck` | Bash static analysis | OS package manager |
-| `shfmt` | Bash formatter | OS package manager or `go install` |
+| Tool         | Purpose              | Install                            |
+| ------------ | -------------------- | ---------------------------------- |
+| `shellcheck` | Bash static analysis | OS package manager                 |
+| `shfmt`      | Bash formatter       | OS package manager or `go install` |
 
 ### 5.3 Project-specific tooling
 
@@ -110,8 +110,8 @@ because of missing packages.
 tools, container builders, code generators). Remove this sub-section if none
 apply.*
 
-| Tool | Purpose | Install |
-|------|---------|---------|
+| Tool                | Purpose          | Install                                                        |
+| ------------------- | ---------------- | -------------------------------------------------------------- |
 | *Example:* `cosign` | Artifact signing | [sigstore/cosign](https://github.com/sigstore/cosign/releases) |
 
 ### 5.4 Tool Configuration
@@ -192,11 +192,11 @@ Folder and artifact rules:
 *List the public entry points of the project and their stability guarantees.
 Examples:*
 
-| Interface | Owner | Contract |
-|-----------|-------|----------|
-| *Example:* `<entrypoint>.sh` CLI | Bash entrypoint | Stable user-facing command for input selection, output naming |
-| *Example:* `<helper>.py` CLI | Python helper | Stable machine-facing contract for data processing |
-| *Example:* `tests/run_all_tests.sh` CLI | Test orchestration | Invokes all test scripts and reports aggregate status |
+| Interface                               | Owner              | Contract                                                      |
+| --------------------------------------- | ------------------ | ------------------------------------------------------------- |
+| *Example:* `<entrypoint>.sh` CLI        | Bash entrypoint    | Stable user-facing command for input selection, output naming |
+| *Example:* `<helper>.py` CLI            | Python helper      | Stable machine-facing contract for data processing            |
+| *Example:* `tests/run_all_tests.sh` CLI | Test orchestration | Invokes all test scripts and reports aggregate status         |
 
 Contract rules:
 
@@ -290,10 +290,12 @@ Implementation work may start only when all conditions hold:
 ---
 
 ## Revision History
+
 <!-- Latest entries first. Add new rows directly below the header row. -->
+
 <!-- Same-day revisions: append .2, .3, ... to the date (e.g. 2026-02-20.2). -->
 
-| Date | Change |
-|------|--------|
-| 2026-02-20.2 | Added section numbers (1-12, subsections 5.x, 11.x) for unambiguous cross-referencing. |
-| 2026-02-20 | Generalized from SBOM-specific guidelines into a reusable project template. Made Bash conditional on Linux/WSL target. Replaced concrete filenames with placeholders. Marked optional sections. |
+| Date         | Change                                                                                                                                                                                          |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-02-20.2 | Added section numbers (1-12, subsections 5.x, 11.x) for unambiguous cross-referencing.                                                                                                          |
+| 2026-02-20   | Generalized from SBOM-specific guidelines into a reusable project template. Made Bash conditional on Linux/WSL target. Replaced concrete filenames with placeholders. Marked optional sections. |

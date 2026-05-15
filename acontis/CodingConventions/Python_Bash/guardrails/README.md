@@ -1,6 +1,7 @@
 # Guardrails Folder
 
 ## Contents
+
 - `python_guardrails.md`: enforceable Python rules with `PY-MUST-*` IDs.
 - `bash_guardrails.md`: enforceable Bash rules with `SH-MUST-*` IDs.
 - `python/`: Python detail modules referenced by rule ID.
@@ -9,6 +10,7 @@
 - `sources/`: local snapshots of external style guide sources.
 
 ## Required workflow
+
 1. Read `../implementation_guardrails.md`.
 2. Identify changed language(s) and load global guardrails.
 3. Load mapped detail module files for all applicable `MUST` IDs.
@@ -16,6 +18,6 @@
 5. Run `../code_review.md` gate before testing.
 
 Use with:
+
 - `../implementation_guardrails.md` as top-level policy and workflow.
 - `../code_review.md` as mandatory pre-test gate.
-

@@ -101,6 +101,18 @@ Decisions to *not* do something are recorded explicitly in the alignment artifac
 
 During the grilling session, the agent maintains and displays a visual map of the decision tree (e.g., a Mermaid `graph TD`). The graph shows the root goal, walked branches (decisions made), and pending branches (unresolved questions). This keeps the human oriented and exposes missed constraints.
 
+### Aln17. Throwaway Front-End Prototypes for Visual Ambiguity
+
+When alignment hits a visual or UX decision that cannot be resolved in words (layout, interaction shape, information density), the agent proposes generating 2–3 disposable front-end prototypes as alignment input. The **decision to prototype is made during `aln`**, not deferred to implementation.
+
+Procedure, inputs, outputs, and failure modes are defined in [`wf/wf_fe_prototype.md`](../wf/wf_fe_prototype.md). Key bindings to alignment:
+
+- Prototype output feeds back into grilling — chosen direction becomes a normal alignment outcome (Aln12 module map; Aln15 negative decisions for rejected variants).
+- Prototype code is throwaway. Deletion before production impl is mandatory.
+- Human / domain expert drives variant selection — agent does not self-judge mature FE quality.
+
+Applies only when the ambiguity is genuinely visual. Backend, data, or contract decisions are resolved by grilling, not by prototypes.
+
 ---
 
 ## Anti-Patterns

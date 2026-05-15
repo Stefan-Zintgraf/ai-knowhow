@@ -28,6 +28,10 @@ Sequential AFK implementation. Run a single agent that picks the next available 
 
 Parallelize implementation across multiple agents.
 
+### qa — Manual QA
+
+Human-driven check of a runnable slice. Reintroduces taste, product judgment, and real-world behavior verification after agent implementation. Mandatory checkpoint after `ral` / `par`. Findings are triaged by the human into either fix-now issues (loop back to `iss`) or backlog issues (slice still passes).
+
 ---
 
 ## 2. Cross-Phase Activities
@@ -55,6 +59,7 @@ Scan the repo for opportunities to deepen modules / consolidate test boundaries.
 | iss   | Plan                                  |
 | ral   | Implement                             |
 | par   | Implement                             |
+| qa    | Verify                                |
 | rev   | Plan + Implement + Verify (all three) |
 | ica   | Plan + Implement + Verify (all three) |
 
@@ -65,9 +70,14 @@ Scan the repo for opportunities to deepen modules / consolidate test boundaries.
 ## 4. Phase Sequence (Typical)
 
 ```
-aln → prd → iss → (ral | par) → done
+aln → prd → iss → (ral | par) → qa ─┬─ pass → done
+                   ▲                 │
+                   └─ fix-now ◄──────┘
+                   └─ backlog ─ done (issue filed for later)
                                     ^
                                     └── rev and ica may run at any point
 ```
 
 `ral` and `par` are alternative modes of the same implementation step, chosen per task. Not both at once.
+
+`qa` is mandatory after `ral` / `par`. Outcome routing is human-decided per finding: fix-now findings loop back to `iss`; backlog findings are filed but do not block.

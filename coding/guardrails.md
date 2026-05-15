@@ -144,7 +144,7 @@ Before a PRD, issue decomposition, or implementation begins, the agent and human
 ### 3.22 Strict Test-Driven Development (TDD)
 
 Fires: Plan=low, Implement=high, Verify=high
-The agent must write failing tests before writing implementation code (Red-Green-Refactor), including for frontend/visual tasks. Writing tests after the fact is forbidden. See [gr/gr_testing_verification.md](gr/gr_testing_verification.md).
+The agent must write failing tests before writing implementation code (Red-Green-Refactor), including for frontend/visual tasks. Writing tests after the fact is forbidden. See [gr/gr_tdd.md](gr/gr_tdd.md).
 
 ### 3.23 Enforce Vertical Slices
 
@@ -261,6 +261,12 @@ Detail: [gr/gr_review.md](gr/gr_review.md)
 Purpose: reach a shared design concept with the human before any planning artifact is written. Grilling produces alignment; PRD only summarizes it.
 Apply when: a new feature, change, or vague backlog item enters the workflow (`aln` phase); before any PRD, issue decomposition, or implementation begins.
 Detail: [gr/gr_alignment.md](gr/gr_alignment.md)
+
+### 4.16 Test-Driven Development
+
+Purpose: enforce the Red-Green-Refactor loop, false-green verification, and mock discipline that keep an autonomous implementation loop honest.
+Apply when: any task in `ral` / `par` that produces or modifies executable logic; reviews (`rev`) that must verify the loop was followed; bug fixes (failing reproduction test first); legacy refactors (characterization tests first).
+Detail: [gr/gr_tdd.md](gr/gr_tdd.md)
 
 ---
 
@@ -400,7 +406,7 @@ Several core rules in §3 are also stated in a `gr/gr_*.md` detail document. Bot
 | 3.19 Prefer Deep Modules                       | M1, A11            |
 | 3.20 Declare Autonomy: HITL vs AFK             | Gov5a              |
 | 3.21 Reach Alignment Before Planning Artifacts | Aln1–Aln6          |
-| 3.22 Strict Test-Driven Development (TDD)      | T12                |
+| 3.22 Strict Test-Driven Development (TDD)      | TDD1, TDD2         |
 | 3.23 Enforce Vertical Slices                   | Gov1a              |
 | 3.24 Prevent Documentation Rot                 | Doc11              |
 | 3.25 Clear Context Over Compaction             | Op15               |

@@ -147,9 +147,11 @@ Every implementation completion report must include:
 ---
 
 ## Revision History
+
 <!-- Latest entries first. Add new rows directly below the header row. -->
+
 <!-- Same-day revisions: append .2, .3, ... to the date (e.g. 2026-02-20.2). -->
 
-| Date | Change |
-|------|--------|
+| Date       | Change                                                                                                                                                                                                                |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 2026-02-20 | Created as SBOM-specific instantiation of `impl_guardrails_template.md`. All template sections (G1-G6) adopted, including execution configuration and Bash. Section numbers align with the template for traceability. |
