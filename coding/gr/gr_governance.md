@@ -67,9 +67,9 @@ Independently of authority level, every task is labeled as either **HITL** (huma
 
 Hard floors:
 
-- **`aln` (alignment) is HITL-only.** Grilling, design-concept formation, and stakeholder brief interpretation are never AFK (cross-reference: gr_alignment.md Aln1).
+- **`aln` (alignment) is HITL-only.** Grilling, design-concept formation, and stakeholder brief interpretation are never AFK (cross-reference: gr_algn.md Aln1).
 - **`prd` (destination doc) is HITL-only.** A PRD that summarizes alignment requires the human who participated in alignment to confirm it.
-- **`rev` (review)** may be agent-driven, but UI/UX and domain-judgment-sensitive verdicts still require human QA (cross-reference: gr_review.md Rev13).
+- **`rev` (review)** may be agent-driven, but UI/UX and domain-judgment-sensitive verdicts still require human QA (cross-reference: gr_rev.md Rev13).
 - **High-risk decisions (Gov3)** remain HITL even inside an otherwise-AFK loop — the loop must surface the decision and wait.
 
 A task is eligible for AFK only when:

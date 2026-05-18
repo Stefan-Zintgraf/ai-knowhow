@@ -68,12 +68,89 @@ Source documents:
 
 ---
 
-## Status legend
+## Status
+
+### Legend
 
 - `todo` — not started.
 - `wip` — in progress.
 - `done` — implemented and tested.
 - `blocked` — needs a decision first.
+
+### Workflows table
+
+| #    | Pocock title               | Category                   | Status          | skill | hook   | Pocock reference skill                     | Maps to                               |
+| ---- | -------------------------- | -------------------------- | --------------- | ----- | ------ | ------------------------------------------ | ------------------------------------- |
+| W15  | Idea Phase                 | **NEW Phase**              | wip             | A11   | —      | none — Pocock phase 1 (7-phases doc)       | `ide` added, `gr_idea.md` drafted,    |
+|      |                            |                            |                 |       |        |                                            | §3.32 + §4.19 added                   |
+| W1   | Grilled Design Concept     | Phase                      | todo            | A1    | —      | "grill me" skill                           | `aln` (exists)                        |
+| W13  | Research Caching           | Phase (optional)           | wip             | A10   | TBD    | none named — Pocock phase 2                | `res` added, `gr_res.md` drafted,     |
+|      |                            |                            |                 |       |        | + `research.md` cache                      | §3.27 + §4.17 added                   |
+| W14a | Sandbox Retirement         | Enforcement (W14)          | todo            | —     | TBD    | none                                       | adapt W13's `owner-issue`+Q11 to dirs |
+| W14b | Variant Template           | Template (C6, W14)         | done            | —     | —      | none                                       | see [C6](tpl/tpl_var_pres.md)         |
+| W14c | Res→Pro Fact Persistence   | Decision (D-new, W14)      | done            | —     | —      | none                                       | `res`/`pro` boundary                  |
+| W14d | Rejected-Variant→grill-me  | Wiring (W14)               | done (contract) | —     | —      | none                                       | A1 (`grill-me`) integration           |
+| W14e | Prototype Skill            | **NEW Phase** / Skill (A9) | wip             | A9    | —      | none (Pocock phase 3)                      | `pro` added, `gr_proto.md`            |
+|      |                            |                            |                 |       |        |                                            | + `wf/wf_proto.md`                    |
+| W2   | PRD                        | Phase                      | todo            | A2    | —      | "write a PRD" skill                        | `prd` (exists)                        |
+| W3   | Issue DAG                  | Phase                      | todo            | A3    | —      | "PRD to issues" skill                      | `iss` (exists)                        |
+| W4   | Ralph Once Loop            | Execution mode             | todo            | A4    | —      | `/ralph` skill (`~/.claude/skills/ralph/`) | variant of `ral`                      |
+| W5   | AFK Implementation Loop    | Phase                      | blocked         | A4    | B4, B8 | none — `afk.sh` loop script (not a skill)  | `ral` (exists), D4 open               |
+| W10  | Parallel Agents            | Execution mode             | blocked         | A5    | —      | none — Sand Castle orchestration tool      | `par` (exists), substrate TBD         |
+|      |                            |                            |                 |       |        | (not a skill)                              |                                       |
+| W6   | Agentic TDD                | Technique                  | done            | —     | B1     | —                                          | `gr/gr_tdd.md` + §4.16 routing        |
+| W8   | Manual QA                  | **NEW Phase**              | wip             | A8    | —      | none — human-driven phase                  | `qa` added, `gr_qa.md` drafted        |
+|      |                            |                            |                 |       |        | in Pocock's walkthrough                    |                                       |
+| W7   | Fresh-Context Review       | Phase                      | todo            | A6    | B3     | none named —                               | `rev` (exists)                        |
+|      |                            |                            |                 |       |        | "fresh-context automated review"           |                                       |
+| W9   | Deep-Module Architecture   | Phase/Initiative           | todo            | A7    | —      | "improve codebase architecture" skill      | `ica` (exists), D7 open               |
+| W12a | Review Standards Sources   | Manual / Audit             | todo            | —     | —      | —                                          | `standards_guardrails_sources.md`     |
+| W12b | Standards Descriptions     | Rule/Convention            | todo            | TBD   | —      | —                                          | Op14b + `gr/` description quality     |
+|      |                            |                            |                 |       |        |                                            | + skill preconditions                 |
+| W12c | Standards Hook Enforcement | Rule/Convention            | todo            | —     | B1     | —                                          | B1 routing-step enforcer              |
+
+### Phase Skills table
+
+| #   | Skill name             | Phase | Status  | Source doc                                                   | Workflow ref | Depends on                    |
+| --- | ---------------------- | ----- | ------- | ------------------------------------------------------------ | ------------ | ----------------------------- |
+| A11 | `distill-idea`         | `ide` | todo    | [gr_idea.md](gr/gr_idea.md)                                  | W15          | —                             |
+| A1  | `grill-me`             | `aln` | todo    | [gr_algn.md](gr/gr_algn.md)                                  | W1           | —                             |
+| A10 | `do-research`          | `res` | todo    | [gr_res.md](gr/gr_res.md)                                    | W13          | B10, C7 (template)            |
+| A9  | `prototype`            | `pro` | todo    | [gr_proto.md](gr/gr_proto.md), [wf_proto.md](wf/wf_proto.md) | W14e         | W14a (sandbox), W14b (C6 tpl) |
+| A2  | `write-prd`            | `prd` | todo    | [gr_algn.md](gr/gr_algn.md)                                  | W2           | A1, C1 (template), D3 ✓       |
+| A3  | `decompose-issues`     | `iss` | todo    | [gr_tdd.md](gr/gr_tdd.md)                                    | W3           | A2, C2 (template)             |
+| A4  | `ralph-loop`           | `ral` | todo    | [gr_tdd.md](gr/gr_tdd.md)                                    | W4, W5       | A3, D4 (sandbox)              |
+| A5  | `parallel-loop`        | `par` | blocked | —                                                            | W10          | D4 (sandbox), substrate TBD   |
+| A8  | `qa`                   | `qa`  | wip     | [gr_qa.md](gr/gr_qa.md)                                      | W8           | A4, C5 (template)             |
+| A6  | `review`               | `rev` | todo    | [gr_rev.md](gr/gr_rev.md)                                    | W7           | B2, B3, B6, B7                |
+| A7  | `improve-architecture` | `ica` | todo    | [gr_mod.md](gr/gr_mod.md)                                    | W9           | D7 (proactive vs reactive)    |
+
+### Cross-Cutting Skills / Hooks table
+
+| #   | Name                           | Form            | Status | Source doc                                                          | Applies to          | Used by         |
+| --- | ------------------------------ | --------------- | ------ | ------------------------------------------------------------------- | ------------------- | --------------- |
+| B1  | `routing-step-enforcer`        | hook (pre-task) | todo   | [guardrails.md §5](guardrails.md)                                   | all phases          | all impl skills |
+| B2  | `push-standards-to-reviewer`   | skill           | todo   | [gr_rev.md](gr/gr_rev.md) Rev2; Op14b                               | `rev`               | A6              |
+| B3  | `fresh-context-for-review`     | hook            | todo   | [gr_rev.md](gr/gr_rev.md) Rev1; 3.18                                | `rev`               | A6              |
+| B4  | `hitl-afk-label-gate`          | hook (pre-task) | todo   | [guardrails.md](guardrails.md) Gov5a, 3.20                          | `iss`, `ral`, `par` | A3, A4, A5      |
+| B5  | `hidden-constraint-checklist`  | skill           | todo   | [gr_algn.md](gr/gr_algn.md) Aln6; [gr_rev.md](gr/gr_rev.md) Rev7    | `aln`, `rev`        | A1, A6          |
+| B6  | `module-depth-check`           | skill           | todo   | [gr_mod.md](gr/gr_mod.md) M7; Rev6                                  | `rev`, `ica`        | A6, A7          |
+| B7  | `fabrication-check`            | skill           | todo   | [guardrails.md](guardrails.md) Op13; [gr_rev.md](gr/gr_rev.md) Rev8 | `rev`               | A6              |
+| B8  | `generated-code-volume-gate`   | hook (pre-edit) | todo   | [guardrails.md](guardrails.md) Op11                                 | `ral`, `par`        | A4, A5          |
+| B9  | `persistent-context-minimizer` | skill / audit   | todo   | [guardrails.md](guardrails.md) Op14a, 3.17                          | all (maintenance)   | —               |
+| B10 | `subagent-for-exploration`     | skill           | todo   | [gr_algn.md](gr/gr_algn.md) Aln7                                    | `aln`, `res`        | A1, A10         |
+
+### Templates and Conventions table
+
+| #   | Name                              | Status | Artifact                                   | Source doc                                     | Used by                 | Workflow ref |
+| --- | --------------------------------- | ------ | ------------------------------------------ | ---------------------------------------------- | ----------------------- | ------------ |
+| C1  | PRD template                      | todo   | —                                          | [gr_algn.md](gr/gr_algn.md)                    | A2                      | W2           |
+| C2  | Issue template (HITL/AFK + edges) | todo   | —                                          | [gr_tdd.md](gr/gr_tdd.md)                      | A3                      | W3           |
+| C3  | Review output template            | todo   | —                                          | [gr_rev.md](gr/gr_rev.md) Rev11                | A6                      | W7           |
+| C4  | Alignment-transcript format       | todo   | —                                          | [gr_algn.md](gr/gr_algn.md) Aln12, Aln15       | A1                      | W1           |
+| C5  | QA notes template                 | todo   | —                                          | [gr_qa.md](gr/gr_qa.md)                        | A8                      | W8           |
+| C6  | Prototype variant template        | done   | [tpl/tpl_var_pres.md](tpl/tpl_var_pres.md) | [gr_proto.md](gr/gr_proto.md) Pro4, Pro7, Pro8 | A9, A1 (rejected carry) | W14b         |
+| C7  | Research file template            | todo   | —                                          | [gr_res.md](gr/gr_res.md) Res4                 | A10                     | W13          |
 
 ---
 
@@ -84,29 +161,6 @@ Source: `videos/matt_pocock_full_walkthrough_workflow_gpt55pro.md` §"Workflows 
 Pocock's 12 items mix **phases** (sequential delivery steps), **techniques** (used inside a phase), **execution modes** (variants of an impl phase), and **rules/conventions** (cross-cutting). Categorization summary:
 
 Order below follows the typical phase sequence from `phases.md` §4: `aln → res → pro → prd → iss → ral/par → qa`, then cross-phase (`rev`, `ica`), then cross-cutting standards.
-
-| #    | Pocock title               | Category                   | Status          | skill     | hook | Pocock reference skill                              | Maps to                                                                 |
-| ---- | -------------------------- | -------------------------- | --------------- | --------- | ---- | --------------------------------------------------- | ----------------------------------------------------------------------- |
-| W15  | Idea Phase                 | **NEW Phase**              | wip             | yes (new) | no   | none — Pocock phase 1 (7-phases doc)                | `ide` added, `gr_idea.md` drafted, §3.32 + §4.19 added                  |
-| W1   | Grilled Design Concept     | Phase                      | todo            | yes (poc) | no   | "grill me" skill                                    | `aln` (exists)                                                          |
-| W13  | Research Caching           | Phase (optional)           | wip             | yes (new) | yes  | none named — Pocock phase 2 + `research.md` cache   | `res` added, `gr_research.md` drafted, §3.27 + §4.17 added              |
-| W14a | Sandbox Retirement         | Enforcement (W14)          | todo            | no        | yes  | none                                                | adapt W13's `owner-issue`+Q11 to directories                            |
-| W14b | Variant Template           | Template (C6, W14)         | done            | no        | no   | none                                                | C6 = [tpl/tpl_variant_presentation.md](tpl/tpl_variant_presentation.md) |
-| W14c | Res→Pro Fact Persistence   | Decision (D-new, W14)      | done            | no        | no   | none                                                | `res`/`pro` boundary                                                    |
-| W14d | Rejected-Variant→grill-me  | Wiring (W14)               | done (contract) | no        | no   | none                                                | A1 (`grill-me`) integration                                             |
-| W14e | Prototype Skill            | **NEW Phase** / Skill (A9) | wip             | yes (new) | no   | none (Pocock phase 3)                               | `pro` added, `gr_prototype.md` + `wf/wf_prototype.md`                   |
-| W2   | PRD                        | Phase                      | todo            | yes (poc) | no   | "write a PRD" skill                                 | `prd` (exists)                                                          |
-| W3   | Issue DAG                  | Phase                      | todo            | yes (poc) | no   | "PRD to issues" skill                               | `iss` (exists)                                                          |
-| W4   | Ralph Once Loop            | Execution mode             | todo            | yes (poc) | no   | `/ralph` skill (`~/.claude/skills/ralph/`)          | variant of `ral`                                                        |
-| W5   | AFK Implementation Loop    | Phase                      | blocked         | yes (new) | rcmd | none — `afk.sh` loop script (not a skill)           | `ral` (exists), D4 open                                                 |
-| W10  | Parallel Agents            | Execution mode             | blocked         | yes (new) | no   | none — Sand Castle orchestration tool (not a skill) | `par` (exists), substrate TBD                                           |
-| W6   | Agentic TDD                | Technique                  | done            | no        | rcmd | —                                                   | `gr/gr_tdd.md` + §4.16 routing                                          |
-| W8   | Manual QA                  | **NEW Phase**              | wip             | yes (new) | no   | none — human-driven phase in Pocock's walkthrough   | `qa` added, `gr_qa.md` drafted                                          |
-| W7   | Fresh-Context Review       | Phase                      | todo            | yes (new) | rcmd | none named — "fresh-context automated review"       | `rev` (exists)                                                          |
-| W9   | Deep-Module Architecture   | Phase/Initiative           | todo            | yes (poc) | no   | "improve codebase architecture" skill               | `ica` (exists), D7 open                                                 |
-| W12a | Review Standards Sources   | Manual / Audit             | todo            | no        | no   | —                                                   | `standards_guardrails_sources.md`                                       |
-| W12b | Standards Descriptions     | Rule/Convention            | todo            | rcmd      | no   | —                                                   | Op14b + `gr/` description quality + skill preconditions                 |
-| W12c | Standards Hook Enforcement | Rule/Convention            | todo            | no        | rcmd | —                                                   | B1 routing-step enforcer                                                |
 
 Each item below: **what exists**, **what's missing**, **next step**. Detail per item handled in a fresh chat context.
 
@@ -130,7 +184,7 @@ Beyond the 12 items, the orchestration that chains them (e.g., `grill-me` → `w
 - Status: **wip** (phase + core rule + detail doc + workflow doc done; remaining work split into W14a–W14e, each handled in a fresh session).
 - Category: **Phase (optional)** — code `pro`. Optional sequential between `aln`/`res` and `prd`; entry from either `aln` (design ambiguity) or `res` (build-to-learn spike). HITL only (Pro6).
 - Pocock reference: phase 3 of the 7-phases doc (see [the-7-phases-of-ai-driven-development.md](the-7-phases-of-ai-driven-development.md)) — "Prototype as Taste-Imposition Step" + "Prototype Variant Generation". No named Pocock skill.
-- Exists: phase `pro` in [phases.md](phases.md); core rule 3.28 + routing §4.18 + parallel-table row in [guardrails.md](guardrails.md); detail doc [gr/gr_prototype.md](gr/gr_prototype.md) (Pro1–Pro8); workflow doc [wf/wf_prototype.md](wf/wf_prototype.md) covering all three flavors; cross-ref Res10 in [gr/gr_research.md](gr/gr_research.md).
+- Exists: phase `pro` in [phases.md](phases.md); core rule 3.28 + routing §4.18 + parallel-table row in [guardrails.md](guardrails.md); detail doc [gr/gr_proto.md](gr/gr_proto.md) (Pro1–Pro8); workflow doc [wf/wf_proto.md](wf/wf_proto.md) covering all three flavors; cross-ref Res10 in [gr/gr_res.md](gr/gr_res.md).
 - Trigger gate (Pro1): irreversibility OR cost asymmetry. Replaces the deleted Aln17 "genuinely visual" gate.
 - Flavors (Pro2): FE/UX, architecture, integration — one flavor per `pro` invocation.
 - Remaining work: see W14a (sandbox retirement), W14b (variant template), W14c (res→pro fact persistence), W14d (rejected-variant→grill-me wiring), W14e (skill).
@@ -141,19 +195,19 @@ Beyond the 12 items, the orchestration that chains them (e.g., `grill-me` → `w
 - Status: **todo** (fresh session).
 - Parent: W14.
 - Behavior: design and implement retirement enforcement for prototype sandbox **directories** (not single files). Adapt W13's pattern: `owner-issue` provenance field in a manifest file at the sandbox root + `qa` Q11-style merge-gate check that fails if any sandbox path survives merge without its owner-issue being closed. Sandbox = directory, so the check must walk directory trees, not just grep for a file header.
-- Source: W13 resolution (see `consider_7_phases_todo.md` Item 8); Pro3 (deletion rule); gr_prototype.md.
+- Source: W13 resolution (see `consider_7_phases_todo.md` Item 8); Pro3 (deletion rule); gr_proto.md.
 
 ### W14b. Variant Presentation Template
 
 - Status: **done** (2026-05-18).
 - Parent: W14.
 - Slot: **C6**. C5 reserved for W8 QA notes template.
-- Artifact: [`tpl/tpl_variant_presentation.md`](tpl/tpl_variant_presentation.md) — first template in a new `tpl/` folder (parallel to `gr/`, `wf/`).
+- Artifact: [`tpl/tpl_var_pres.md`](tpl/tpl_var_pres.md) — first template in a new `tpl/` folder (parallel to `gr/`, `wf/`).
 - Format: YAML frontmatter (machine-parseable schema) + markdown body (human-readable). Skill (W14e) owns YAML; human edits body only.
 - Pro4 enforcement: schema **omits** `recommendation`/`preferred`/`best`/`agent_pick`/`score`/`ranking` fields and **lists them as forbidden** (schema rejects). Body rules forbid subjective vocabulary (better, worse, cleaner, simpler, recommended, preferred, ideally, obviously, clearly, the right/wrong choice). Reviewer (`rev`) flags any occurrence.
 - Pro7 coverage: per-variant `hidden_constraints` block requires all 7 classes (security, permissions, retention, migrations, observability, api_compat, concurrency) marked covered / not_applicable / missing. `blocking_constraint` set when any = missing.
 - Pro8 coverage: `captured_responses` field on each variant for integration flavor; no synthetic-payload field.
-- Cross-refs: `gr/gr_prototype.md` Pro4 + `wf/wf_prototype.md` step 5 point at C6 as the artifact.
+- Cross-refs: `gr/gr_proto.md` Pro4 + `wf/wf_proto.md` step 5 point at C6 as the artifact.
 - Validation hooks (deferred to D1): schema lint (forbidden fields, variant count, trigger flag, hidden-constraint completeness); vocabulary lint (body subjective terms); sandbox-retirement gate hook to W14a via `owner_issue` field.
 - Dependents: W14e (A9 skill emits this); W14d (rejected-variant artifact for grill-me intake — `decision_outcome.rejected` is the carry).
 
@@ -161,20 +215,20 @@ Beyond the 12 items, the orchestration that chains them (e.g., `grill-me` → `w
 
 - Status: **done** (2026-05-18).
 - Parent: W14.
-- Decision: **Option B — caller-persists, applied symmetrically to all callers.** `pro` emits exactly one artifact (C6 variant doc, [`tpl/tpl_variant_presentation.md`](tpl/tpl_variant_presentation.md)) with chosen variant marked and `captured_responses` populated where applicable. The caller (`aln`/`res`/`prd`) reads C6 on return and updates its own files: `aln` → Aln12 module map + Aln15; `res` → `research/<topic>.md` under existing `owner-issue` (Res4) header; `prd` → implementation-decisions section + rejected-alternatives. `pro` never writes any caller's files directly.
+- Decision: **Option B — caller-persists, applied symmetrically to all callers.** `pro` emits exactly one artifact (C6 variant doc, [`tpl/tpl_var_pres.md`](tpl/tpl_var_pres.md)) with chosen variant marked and `captured_responses` populated where applicable. The caller (`aln`/`res`/`prd`) reads C6 on return and updates its own files: `aln` → Aln12 module map + Aln15; `res` → `research/<topic>.md` under existing `owner-issue` (Res4) header; `prd` → implementation-decisions section + rejected-alternatives. `pro` never writes any caller's files directly.
 - Rationale: keeps `pro` caller-agnostic (one behavior, no conditional write-mode per caller); each phase keeps ownership of its file conventions; one handoff surface (C6) instead of three.
-- Edits: `gr/gr_prototype.md` Pro5 (rewritten — symmetric caller-persists for all three callers); `gr/gr_research.md` Res10 (concrete Stripe-webhook handoff example); `wf/wf_prototype.md` step 7 (rewritten — same symmetric rule).
+- Edits: `gr/gr_proto.md` Pro5 (rewritten — symmetric caller-persists for all three callers); `gr/gr_res.md` Res10 (concrete Stripe-webhook handoff example); `wf/wf_proto.md` step 7 (rewritten — same symmetric rule).
 - Affects: A9 (W14e) skill prompt must emit C6 artifact only — must NOT write `research/<topic>.md`, Aln12, Aln15, or PRD sections directly. Caller does the writing.
 
 ### W14d. Rejected-Variant Capture into grill-me
 
 - Status: **done — contract** (2026-05-18). Skill wiring lands when A1 is built (W1).
 - Parent: W14.
-- Artifact format: reuses C6 (`tpl/tpl_variant_presentation.md`) `decision_outcome.rejected[]` + `rationale_by_human` — no new artifact needed.
-- Intake contract (gr_alignment.md Aln15, expanded section "Intake from `pro`"): on `aln` resume after `pro` exit, A1 reads `<sandbox_path>/variants.md` **before** sandbox deletion; for each rejected id appends an Aln15 entry citing variant summary + observable losing facts + `rationale_by_human`; updates Aln12; signals capture complete to unblock Pro3 deletion. Fail-closed if C6 unreadable or `decision_outcome.chosen` null.
+- Artifact format: reuses C6 (`tpl/tpl_var_pres.md`) `decision_outcome.rejected[]` + `rationale_by_human` — no new artifact needed.
+- Intake contract (gr_algn.md Aln15, expanded section "Intake from `pro`"): on `aln` resume after `pro` exit, A1 reads `<sandbox_path>/variants.md` **before** sandbox deletion; for each rejected id appends an Aln15 entry citing variant summary + observable losing facts + `rationale_by_human`; updates Aln12; signals capture complete to unblock Pro3 deletion. Fail-closed if C6 unreadable or `decision_outcome.chosen` null.
 - Replay contract: existing Aln15 entries load as grilling context; A1 does not re-propose rejected options — cites prior rejection if branch reopened.
-- Ordering enforced: gr_prototype.md Pro3 + wf_prototype.md step 8 now block sandbox deletion until caller capture signals complete.
-- Edits: `gr/gr_alignment.md` Aln15 (expanded with intake + replay contracts); `gr/gr_prototype.md` Pro3 (ordering with caller capture); `wf/wf_prototype.md` step 8 (fail-closed); `tpl/tpl_variant_presentation.md` Notes on Interaction (caller-persists + read-before-delete).
+- Ordering enforced: gr_proto.md Pro3 + wf_proto.md step 8 now block sandbox deletion until caller capture signals complete.
+- Edits: `gr/gr_algn.md` Aln15 (expanded with intake + replay contracts); `gr/gr_proto.md` Pro3 (ordering with caller capture); `wf/wf_proto.md` step 8 (fail-closed); `tpl/tpl_var_pres.md` Notes on Interaction (caller-persists + read-before-delete).
 - Depends on: W14e (A9 emits C6 — schema already defined). W1 (A1 implementation) consumes this contract.
 
 ### W14e. Prototype Skill (A9)
@@ -182,7 +236,7 @@ Beyond the 12 items, the orchestration that chains them (e.g., `grill-me` → `w
 - Status: **todo** (fresh session).
 - Parent: W14.
 - Behavior: `prototype` skill that (1) asks Pro1 trigger-gate questions (irreversibility / cost asymmetry), (2) generates 2–3 variants per the chosen flavor (Pro2: FE/UX, architecture, integration), (3) runs Pro7 hidden-constraint check on each variant, (4) presents variants to human with observable-facts-only framing (Pro4), (5) captures Aln15 negative decisions for rejected variants, (6) enforces Pro3 deletion of sandbox code after decision.
-- Maps to: A9 (new skill slot); source docs `gr/gr_prototype.md`, `wf/wf_prototype.md`.
+- Maps to: A9 (new skill slot); source docs `gr/gr_proto.md`, `wf/wf_proto.md`.
 - Dependency: W14a (sandbox retirement) and W14b (variant template) should be resolved first or in parallel.
 
 ### W15. Idea Phase
@@ -200,7 +254,7 @@ Beyond the 12 items, the orchestration that chains them (e.g., `grill-me` → `w
 - Status: **wip** (phase + core rule + detail doc + retirement enforcement done; skill, template pending).
 - Category: **Phase (optional)** — code `res`. Optional sequential between `aln` and `prd`; can also fire mid-`aln` when grilling stalls on external-dependency facts.
 - Pocock reference: phase 2 of the 7-phases doc (see [the-7-phases-of-ai-driven-development.md](the-7-phases-of-ai-driven-development.md)) — no named Pocock skill.
-- Exists: phase `res` in [phases.md](phases.md); core rule 3.27 + routing §4.17 in [guardrails.md](guardrails.md); detail doc [gr/gr_research.md](gr/gr_research.md); subagent dispatch B10 (existing); retirement enforcement = `owner-issue` provenance field (Res4) + pre-commit lint + `qa` Q11 merge-gate check (resolved 2026-05-18, see `consider_7_phases_todo.md` Item 8).
+- Exists: phase `res` in [phases.md](phases.md); core rule 3.27 + routing §4.17 in [guardrails.md](guardrails.md); detail doc [gr/gr_res.md](gr/gr_res.md); subagent dispatch B10 (existing); retirement enforcement = `owner-issue` provenance field (Res4) + pre-commit lint + `qa` Q11 merge-gate check (resolved 2026-05-18, see `consider_7_phases_todo.md` Item 8).
 - Missing: skill `do-research` (new **A10** — A9 taken by W14e prototype) — gathers facts via subagent, writes `research/<topic>.md` with Res4 provenance header; template (new **C7** — C6 taken by W14b variant template) for the research file shape including the `owner-issue` field; decision on whether `iss` decomposition should reference the research file path explicitly; pre-commit lint implementation (mechanical, deferred to substrate decision D1).
 - Next: build A10 + C7; wire B10 dispatch into A1 (`grill-me`) so alignment can spawn research without leaving `aln`; implement the `owner-issue` lint once skill substrate (D1) is settled.
 
@@ -235,7 +289,7 @@ Beyond the 12 items, the orchestration that chains them (e.g., `grill-me` → `w
 - Status: todo.
 - Category: **Phase**.
 - Pocock reference skill: **"grill me"** skill (walkthrough §0:13:45–0:21:43, gamification brief demo).
-- Exists: phase `aln` (`phases.md`); guardrail set `gr/gr_alignment.md`; skill A1 `grill-me` listed.
+- Exists: phase `aln` (`phases.md`); guardrail set `gr/gr_algn.md`; skill A1 `grill-me` listed.
 - Missing: skill implementation (A1), hidden-constraint checklist enforcement (B5), subagent dispatch (B10), AFK domain-transcript path (Aln11).
 - Next: build A1 skill, wire B5/B10 hooks. No new phase or guardrail.
 
@@ -280,7 +334,7 @@ Beyond the 12 items, the orchestration that chains them (e.g., `grill-me` → `w
 - Status: todo.
 - Category: **Phase**.
 - Pocock reference skill: **none named** — described as the "fresh-context automated review" technique (walkthrough §1:05:24–1:06:27); no canonical Pocock skill shipped.
-- Exists: phase `rev`; `gr/gr_review.md`; skill A6 `review`; cross-cutting B2 (push standards), B3 (fresh context), B6 (module-depth), B7 (fabrication check).
+- Exists: phase `rev`; `gr/gr_rev.md`; skill A6 `review`; cross-cutting B2 (push standards), B3 (fresh context), B6 (module-depth), B7 (fabrication check).
 - Missing: A6 implementation; reviewer-as-separate-process decision (D2) — currently same-process fresh context.
 - Next: build A6 with B2/B3/B6/B7 wired. No new phase or guardrail.
 
@@ -298,7 +352,7 @@ Beyond the 12 items, the orchestration that chains them (e.g., `grill-me` → `w
 - Status: todo (D7 open — proactive vs. reactive).
 - Category: **Phase / Initiative** (cross-phase).
 - Pocock reference skill: **"improve codebase architecture"** skill (walkthrough §1:21:08–1:23:04; scans for shallow modules / consolidation opportunities).
-- Exists: phase `ica`; `gr/gr_modules.md`; skill A7 `improve-architecture`; B6 module-depth check; D7 (proactive `ica` before feature work) open.
+- Exists: phase `ica`; `gr/gr_mod.md`; skill A7 `improve-architecture`; B6 module-depth check; D7 (proactive `ica` before feature work) open.
 - Missing: A7 implementation; D7 decision (guardrail mandate vs. workflow tip).
 - Next: resolve D7, then build A7. No new phase.
 
@@ -320,14 +374,14 @@ Beyond the 12 items, the orchestration that chains them (e.g., `grill-me` → `w
 - Status: todo.
 - Behavior: one question at a time, walks decision branches, recommends an answer per question, raises hidden-constraint checklist before closing (Aln6), supports domain-transcript input (Aln11), uses a subagent for codebase exploration (Aln7).
 - Output: alignment transcript + agreed module map (Aln12).
-- Source: `gr/gr_alignment.md`. External reference: Pocock "grill me" skill.
+- Source: `gr/gr_algn.md`. External reference: Pocock "grill me" skill.
 
 ### A2. `write-prd` skill (phase: `prd`)
 
 - Status: todo.
 - Behavior: summarizes alignment transcript into a destination PRD using a fixed template (problem, user problem, solution, user stories, implementation decisions, testing decisions, out-of-scope, module map).
 - Constraint: PRD summarizes alignment; does not replace it (Aln13).
-- Source: `gr/gr_alignment.md`, workflow doc §0:28:38–0:36:00.
+- Source: `gr/gr_algn.md`, workflow doc §0:28:38–0:36:00.
 
 ### A3. `decompose-issues` skill (phase: `iss`)
 
@@ -354,15 +408,15 @@ Beyond the 12 items, the orchestration that chains them (e.g., `grill-me` → `w
 ### A6. `review` skill (phase: `rev`)
 
 - Status: todo.
-- Behavior: clears context (Rev1), pushes routed standards (Rev2, Op14b), reads tests first (Rev4), explicit module-depth assessment (Rev6, gr_modules.md M7), hidden-constraint coverage statement (Rev7), structured output (Rev11).
+- Behavior: clears context (Rev1), pushes routed standards (Rev2, Op14b), reads tests first (Rev4), explicit module-depth assessment (Rev6, gr_mod.md M7), hidden-constraint coverage statement (Rev7), structured output (Rev11).
 - Constraint: same-process fresh context (current setup); reviewer-agent split is a later option.
-- Source: `gr/gr_review.md`.
+- Source: `gr/gr_rev.md`.
 
 ### A7. `improve-architecture` skill (phase: `ica`)
 
 - Status: todo.
 - Behavior: scans codebase for shallow-module opportunities, proposes consolidations behind deeper interfaces, prioritizes by testability gap.
-- Source: `gr/gr_modules.md`, workflow doc §1:21:08–1:23:04.
+- Source: `gr/gr_mod.md`, workflow doc §1:21:08–1:23:04.
 
 ---
 
@@ -401,7 +455,7 @@ Beyond the 12 items, the orchestration that chains them (e.g., `grill-me` → `w
 
 - Status: todo.
 - Behavior: applied in `rev` (Rev6) and `ica` (A7). Heuristics: file-count delta, cross-module import delta, public-interface size, test-boundary placement.
-- Source: `gr/gr_modules.md`.
+- Source: `gr/gr_mod.md`.
 
 ### B7. Fabrication check (Op13) as positive review step
 
@@ -453,7 +507,7 @@ Beyond the 12 items, the orchestration that chains them (e.g., `grill-me` → `w
 ### C6. Prototype variant presentation template
 
 - Status: **done** (2026-05-18, see W14b).
-- Artifact: [`tpl/tpl_variant_presentation.md`](tpl/tpl_variant_presentation.md).
+- Artifact: [`tpl/tpl_var_pres.md`](tpl/tpl_var_pres.md).
 - Purpose: machine-parseable shape for prototype variant output (Pro2/Pro4/Pro7/Pro8). Skill (W14e/A9) emits; human picker consumes.
 - Slot: C5 reserved for W8 QA notes template; C6 is the next free slot.
 
@@ -468,7 +522,7 @@ Beyond the 12 items, the orchestration that chains them (e.g., `grill-me` → `w
 - D5. Model selection per role — confirm pattern (stronger model for review, faster for implementation) and how it is enforced.
 - D6. Token-status visibility — adopt a status-line / token-meter so context proximity to dumb zone is visible (Pocock Experiment 1).
 - D7. Proactive `ica` before feature work — Pocock's #1 recommendation: run `improve-codebase-architecture` *before* starting new feature work, not only reactively. Currently tracked as a skill (A7) and phase (`ica` in `phases.md`), but no guardrail mandates or suggests running it proactively. Decision: guardrail-level rule, workflow guidance, or leave as skill-level suggestion?
-- D8. **Resolved** (2026-05-15) — added as Aln17 in `gr/gr_alignment.md`. Throwaway 2–3 FE prototypes when visual/UX ambiguity blocks alignment; decision made in `aln`. Skill form rejected (over-prescription risk).
+- D8. **Resolved** (2026-05-15) — added as Aln17 in `gr/gr_algn.md`. Throwaway 2–3 FE prototypes when visual/UX ambiguity blocks alignment; decision made in `aln`. Skill form rejected (over-prescription risk).
 - D9. QA loop convergence — currently human-verdict (3.30 / Q9). Decide later whether to add a mechanized option: typed acceptance-criteria checklist tied to PRD template C1, hard-gated. Postponed until C1 lands and a few QA sessions are observed. Trigger to revisit: repeated drift in pass verdicts or AFK-mode runs needing gate-able criteria.
 
 ---

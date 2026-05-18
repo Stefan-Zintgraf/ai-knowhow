@@ -2,7 +2,7 @@
 
 Purpose: use AI for exploratory variant generation when grilling cannot resolve a decision in words, without pretending the agent has calibrated taste over the outcome.
 
-Scope: invoked from phase `pro` (see [`phases.md`](../phases.md) and [`gr/gr_prototype.md`](../gr/gr_prototype.md)). Entry from `aln` (design ambiguity) or `res` (build-to-learn spike). Decision to prototype is made before `pro` enters, per Pro1 trigger gate.
+Scope: invoked from phase `pro` (see [`phases.md`](../phases.md) and [`gr/gr_proto.md`](../gr/gr_proto.md)). Entry from `aln` (design ambiguity) or `res` (build-to-learn spike). Decision to prototype is made before `pro` enters, per Pro1 trigger gate.
 
 Origin: Pocock 7-phases doc, phase 3 (Prototype). Replaces and broadens the earlier FE-only `wf_fe_prototype.md`.
 
@@ -44,7 +44,7 @@ Three flavors (Pro2). Pick one per `pro` invocation — do not mix:
 2. Pick the flavor (FE / Architecture / Integration). One only.
 3. Generate **2–3 variants** (Pro4). Each variant is independently runnable in the sandbox. No variant is marked "preferred" by the agent.
 4. Run the hidden-constraint check (Pro7) per variant — security, perms, retention, migrations, observability, API compat, concurrency. Flag or replace any variant that quietly violates a class.
-5. Present variants to the human / domain expert using the [variant presentation template](../tpl/tpl_variant_presentation.md) (C6). For each variant, supply observable facts only (LOC, dependency delta, latency measured, captured response). Template schema and body rules forbid recommendation/preference language — Pro4 is mechanically enforced, not convention.
+5. Present variants to the human / domain expert using the [variant presentation template](../tpl/tpl_var_pres.md) (C6). For each variant, supply observable facts only (LOC, dependency delta, latency measured, captured response). Template schema and body rules forbid recommendation/preference language — Pro4 is mechanically enforced, not convention.
 6. Human picks. Capture chosen direction **and** rejected variants (rejected variants become Aln15 negative decisions).
 7. Feed the chosen direction back. **`pro` emits one artifact — the C6 variant doc (chosen variant marked, `captured_responses` populated where applicable) — and does not write any other phase's files. The caller reads C6 and updates its own artifacts:**
    - `aln` caller → updates Aln12 module map, appends rejected variants to Aln15.
@@ -100,7 +100,7 @@ Track whether prototype-derived PRDs reduce later rework (architecture churn, UX
 
 ## Notes on Interaction with Other Guardrails
 
-- Entry: `gr_prototype.md` Pro1 (trigger), Pro2 (flavor selection).
+- Entry: `gr_proto.md` Pro1 (trigger), Pro2 (flavor selection).
 - Output feeds: Aln12 (module map), Aln15 (negative decisions for rejected variants), `prd` phase, `res` (when invoked from research).
 - Not AFK: inherits Pro6 (HITL by construction).
 - Retirement parallels: Pro3 mirrors Res3 / 3.27 (research retirement) and Doc11 / 3.24 (PRD retirement). Same anti-rot logic, different artifact shape.

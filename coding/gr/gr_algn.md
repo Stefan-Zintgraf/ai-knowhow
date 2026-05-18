@@ -83,7 +83,7 @@ When a domain-expert meeting transcript or written source-of-truth exists, the a
 
 ### Aln12. Module Map Is an Alignment Output
 
-By the end of alignment, the agent and human agree on a proposed **module map** (cross-reference: gr_modules.md M6): which modules will be touched, which are new, what each new module's public interface looks like. Module-shape decisions belong here, not in implementation. The proposed map must be explicitly reviewed for depth (ensuring narrow interfaces) during the alignment/PRD review phase before implementation begins.
+By the end of alignment, the agent and human agree on a proposed **module map** (cross-reference: gr_mod.md M6): which modules will be touched, which are new, what each new module's public interface looks like. Module-shape decisions belong here, not in implementation. The proposed map must be explicitly reviewed for depth (ensuring narrow interfaces) during the alignment/PRD review phase before implementation begins.
 
 ### Aln13. PRD Summarizes Alignment, Does Not Replace It
 
@@ -104,7 +104,7 @@ Decisions to *not* do something are recorded explicitly in the alignment artifac
 
 **Intake from `pro` (caller-persists per Pro5).** On `aln` resume after `pro` exit, the alignment agent (A1 `grill-me` when built):
 
-1. Reads the C6 variant artifact ([`tpl/tpl_variant_presentation.md`](../tpl/tpl_variant_presentation.md)) at `<sandbox_path>/variants.md` **before sandbox deletion**. This must happen before Pro3 deletes the sandbox; A1 fails closed if C6 is unreadable or `decision_outcome.chosen` is null.
+1. Reads the C6 variant artifact ([`tpl/tpl_var_pres.md`](../tpl/tpl_var_pres.md)) at `<sandbox_path>/variants.md` **before sandbox deletion**. This must happen before Pro3 deletes the sandbox; A1 fails closed if C6 is unreadable or `decision_outcome.chosen` is null.
 2. For each id in `decision_outcome.rejected`: appends an Aln15 entry citing the variant `summary`, the observable facts that made it lose, and `rationale_by_human` if present.
 3. Updates Aln12 module map per the chosen variant's shape.
 4. Signals to `pro` that capture is complete, which unblocks Pro3 sandbox deletion.
@@ -136,8 +136,8 @@ During the grilling session, the agent maintains and displays a visual map of th
 ## Notes on Interaction with Other Guardrails
 
 - Aln1 specializes gr_governance.md Gov5 — `aln` is the canonical HITL phase.
-- Aln6 feeds gr_review.md Rev7 — what was checked during grilling becomes the review checklist.
-- Aln12 feeds gr_modules.md M6 — module map is owned by alignment.
+- Aln6 feeds gr_rev.md Rev7 — what was checked during grilling becomes the review checklist.
+- Aln12 feeds gr_mod.md M6 — module map is owned by alignment.
 - Aln13 pairs with Core rule 3.4 (make assumptions visible) — alignment is where assumptions are surfaced and resolved.
 - Aln14 specializes Core rule 3.7 (stop on high-risk decisions) for the planning side.
 - Aln8 receives the upstream output of `ide` (gr_idea.md Idea6): grilling targets the 3–6 goals, not the raw brief.

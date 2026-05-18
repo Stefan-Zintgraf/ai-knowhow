@@ -97,8 +97,8 @@ During Refactor, no test is added, removed, weakened, or made to assert somethin
 - §3.5 / C8 (No Speculative Design): TDD4 enforces minimum-code Green; adding code for unwritten tests is the same anti-pattern.
 - §3.19 / M1 (Deep Modules): Refactor step (TDD5) is the natural moment to deepen shallow modules surfaced by the test pressure.
 - `gr_brownfield.md`: refactor of legacy code requires characterization tests as the Red.
-- `gr_review.md` (Rev4 reads tests first): reviewer verifies the loop was followed, not just that tests exist.
-- `gr_alignment.md`: behaviors agreed in `aln` are the unit of one Red — if alignment is vague, TDD7 surfaces it immediately.
+- `gr_rev.md` (Rev4 reads tests first): reviewer verifies the loop was followed, not just that tests exist.
+- `gr_algn.md`: behaviors agreed in `aln` are the unit of one Red — if alignment is vague, TDD7 surfaces it immediately.
 
 ---
 

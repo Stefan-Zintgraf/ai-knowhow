@@ -52,7 +52,7 @@ A simple structure inspired by these sources:
 - `agent-rules/gr_typescript.md` — TypeScript implementation rules
 - `agent-rules/gr_bash.md` — Bash implementation rules
 - `agent-rules/gr_architecture.md` — architecture and boundary rules
-- `agent-rules/gr_review.md` — review behavior and checklist rules
+- `agent-rules/gr_rev.md` — review behavior and checklist rules
 - `.github/copilot-instructions.md` or equivalent — tells the agent which guardrails to load during implementation and review
 
 ## Recommended use by phase
@@ -71,7 +71,7 @@ Use ADRs as the main source of truth for architectural rules, module boundaries,
 
 ### Review phase
 
-Use a review checklist repo as the structural base, then adapt it into a `gr_review.md` file that requires:
+Use a review checklist repo as the structural base, then adapt it into a `gr_rev.md` file that requires:
 
 - loading the applicable language and architecture guardrails before reviewing
 - checking tests before implementation

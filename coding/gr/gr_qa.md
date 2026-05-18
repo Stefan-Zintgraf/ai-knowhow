@@ -103,7 +103,7 @@ Forbidden:
 
 ### Q10. Read the Seam, Not the Internals (Gray-Box QA)
 
-For modules built under the gray-box labor partition (gr_modules.md M3a), the default human QA read is the **seam**: the public interface, the boundary tests, and user-visible behavior against the PRD acceptance criteria. Internals are not read line-by-line by default.
+For modules built under the gray-box labor partition (gr_mod.md M3a), the default human QA read is the **seam**: the public interface, the boundary tests, and user-visible behavior against the PRD acceptance criteria. Internals are not read line-by-line by default.
 
 The lever is cognitive-load reduction. The human's QA budget is spent on:
 
@@ -113,7 +113,7 @@ The lever is cognitive-load reduction. The human's QA budget is spent on:
 
 Internals are read only when a finding points there, or when M11 depth heuristics flag suspicion (test-boundary leakage, public-API parameter bloat, exported helpers that exist only for tests).
 
-Q10 does **not** weaken `rev` (gr_review.md). `rev` still inspects the diff including internals. Gray-box reduces the human QA read, not the agent review read — the two roles diverge here intentionally.
+Q10 does **not** weaken `rev` (gr_rev.md). `rev` still inspects the diff including internals. Gray-box reduces the human QA read, not the agent review read — the two roles diverge here intentionally.
 
 Forbidden:
 
@@ -152,10 +152,10 @@ Forbidden:
 
 ## Notes on Interaction with Other Guardrails
 
-- Pairs with `gr_review.md` — `rev` checks the diff, `qa` checks the running behavior. Both are required for user-visible changes (cross-reference: Rev13).
+- Pairs with `gr_rev.md` — `rev` checks the diff, `qa` checks the running behavior. Both are required for user-visible changes (cross-reference: Rev13).
 - Findings routed to `iss` re-enter the standard issue flow with HITL/AFK tagging per `gr_governance.md`.
-- Recurring findings feed `gr_modules.md` / `ica` (Q8): module boundaries and test boundaries may need rework.
-- Cross-reference: `gr_alignment.md` — visual taste and domain judgment surfaced during `aln` are the same dimensions verified during `qa`.
+- Recurring findings feed `gr_mod.md` / `ica` (Q8): module boundaries and test boundaries may need rework.
+- Cross-reference: `gr_algn.md` — visual taste and domain judgment surfaced during `aln` are the same dimensions verified during `qa`.
 
 ---
 

@@ -71,7 +71,7 @@ The goal list lives only long enough to seed `aln`. Once `aln` produces the desi
 
 ## Notes on Interaction with Other Guardrails
 
-- Precedes [gr_alignment.md](gr_alignment.md). Idea6 is the explicit hand-off.
+- Precedes [gr_algn.md](gr_algn.md). Idea6 is the explicit hand-off.
 - Idea5 extends Aln8 (brief as input) one phase earlier.
 - Idea3 (negative goals) feeds Aln15 (negative decisions captured).
 - Idea4 (HITL) follows the same hard floor as Aln1, Gov5a.

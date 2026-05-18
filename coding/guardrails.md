@@ -119,17 +119,17 @@ When the agent believes a user instruction violates a guardrail, contradicts evi
 ### 3.17 Push for Reviewer, Pull for Implementer
 I
 Fires: Plan=low, Implement=medium, Verify=high
-Coding-standard and guardrail detail documents are **pulled** on demand by the implementer (kept out of the always-on context) and **pushed** into the reviewer's context up front. Always-on context is kept minimal so work starts in the smart zone. See [gr/gr_operational.md](gr/gr_operational.md) (Op14a, Op14b) and [gr/gr_review.md](gr/gr_review.md).
+Coding-standard and guardrail detail documents are **pulled** on demand by the implementer (kept out of the always-on context) and **pushed** into the reviewer's context up front. Always-on context is kept minimal so work starts in the smart zone. See [gr/gr_operational.md](gr/gr_operational.md) (Op14a, Op14b) and [gr/gr_rev.md](gr/gr_rev.md).
 
 ### 3.18 Review Runs in a Fresh Context
 
 Fires: Plan=none, Implement=low, Verify=high
-Review of a change is performed in a context that does not contain the implementer's prior conversation, plan, or scratch reasoning. Same-context self-review is forbidden because it produces self-justification, not review. See [gr/gr_review.md](gr/gr_review.md) (Rev1).
+Review of a change is performed in a context that does not contain the implementer's prior conversation, plan, or scratch reasoning. Same-context self-review is forbidden because it produces self-justification, not review. See [gr/gr_rev.md](gr/gr_rev.md) (Rev1).
 
 ### 3.19 Prefer Deep Modules
 
 Fires: Plan=high, Implement=medium, Verify=high
-Modules expose small interfaces and hide significant functionality. Shallow modules with many small pieces and tangled cross-dependencies are an anti-pattern, especially because AI tends to default to width. Module-shape decisions are made in alignment/PRD, checked explicitly in review. See [gr/gr_modules.md](gr/gr_modules.md).
+Modules expose small interfaces and hide significant functionality. Shallow modules with many small pieces and tangled cross-dependencies are an anti-pattern, especially because AI tends to default to width. Module-shape decisions are made in alignment/PRD, checked explicitly in review. See [gr/gr_mod.md](gr/gr_mod.md).
 
 ### 3.20 Declare Autonomy: HITL vs AFK
 
@@ -139,7 +139,7 @@ Every task is labeled human-in-the-loop or AFK at the start. `aln` and `prd` are
 ### 3.21 Reach Alignment Before Planning Artifacts
 
 Fires: Plan=high, Implement=low, Verify=none
-Before a PRD, issue decomposition, or implementation begins, the agent and human reach a shared **design concept** via a grilling pass: one question at a time, branches walked, hidden constraints (security, permissions, retention, migrations, observability, API compat, concurrency) explicitly raised. The PRD summarizes alignment; it does not replace it. See [gr/gr_alignment.md](gr/gr_alignment.md).
+Before a PRD, issue decomposition, or implementation begins, the agent and human reach a shared **design concept** via a grilling pass: one question at a time, branches walked, hidden constraints (security, permissions, retention, migrations, observability, API compat, concurrency) explicitly raised. The PRD summarizes alignment; it does not replace it. See [gr/gr_algn.md](gr/gr_algn.md).
 
 ### 3.22 Strict Test-Driven Development (TDD)
 
@@ -169,12 +169,12 @@ When decomposing a PRD into tasks, the agent must structure the plan as an issue
 ### 3.27 Retire Research Artifacts
 
 Fires: Plan=high, Implement=low, Verify=low
-Sprint-scoped research files (`research/<topic>.md`) are cached external knowledge, not durable documentation. They must be **deleted** when the sprint or feature closes — stale research actively misleads future agent runs because it looks authoritative but reflects yesterday's API or codebase. Distinct from 3.24 (PRDs move to external trackers); research files live in the working tree briefly, then are removed outright. Enforcement: every `research/<topic>.md` declares a single `owner-issue: #NNN` (the PRD/feature epic) in its Res4 provenance header; pre-commit lint rejects a research file without the field. Retirement trigger = owner issue closes → the same PR that closes the feature deletes the file, verified by Q11 in `qa`. See [gr/gr_research.md](gr/gr_research.md).
+Sprint-scoped research files (`research/<topic>.md`) are cached external knowledge, not durable documentation. They must be **deleted** when the sprint or feature closes — stale research actively misleads future agent runs because it looks authoritative but reflects yesterday's API or codebase. Distinct from 3.24 (PRDs move to external trackers); research files live in the working tree briefly, then are removed outright. Enforcement: every `research/<topic>.md` declares a single `owner-issue: #NNN` (the PRD/feature epic) in its Res4 provenance header; pre-commit lint rejects a research file without the field. Retirement trigger = owner issue closes → the same PR that closes the feature deletes the file, verified by Q11 in `qa`. See [gr/gr_res.md](gr/gr_res.md).
 
 ### 3.28 Prototype Hard-to-Reverse Decisions
 
 Fires: Plan=high, Implement=low, Verify=low
-When grilling cannot resolve a design decision in words AND either (a) the decision is hard / expensive to reverse once code lands, OR (b) the wrong-choice cost vastly exceeds the cost of building 2–3 throwaway variants, the agent enters phase `pro`: produce 2–3 disposable variants (FE/UX, architecture, or integration — one flavor per invocation), let the human pick, record rejected variants as negative decisions, **delete the sandbox before** production impl begins. Agent does not self-judge. `pro` is HITL by construction. See [gr/gr_prototype.md](gr/gr_prototype.md).
+When grilling cannot resolve a design decision in words AND either (a) the decision is hard / expensive to reverse once code lands, OR (b) the wrong-choice cost vastly exceeds the cost of building 2–3 throwaway variants, the agent enters phase `pro`: produce 2–3 disposable variants (FE/UX, architecture, or integration — one flavor per invocation), let the human pick, record rejected variants as negative decisions, **delete the sandbox before** production impl begins. Agent does not self-judge. `pro` is HITL by construction. See [gr/gr_proto.md](gr/gr_proto.md).
 
 ### 3.29 Right-Size the Workflow (Phase-Skip Mode)
 
@@ -189,7 +189,7 @@ The plan → execute → QA loop (`iss → ral|par → qa → fix-now → iss` o
 ### 3.31 Gray-Box Labor Partition
 
 Fires: Plan=high, Implement=high, Verify=high
-Deep modules are built under a default labor partition: **human owns the interface and boundary tests; agent owns the internals; source stays visible** (gray, not black — the human may step in but does not have to). Partition applies by default to AFK-eligible work (Gov5a); HITL work requires the agent to **ask** which partition variant to use — silent assumption is forbidden. QA consequence: human reads the seam (interface + boundary tests + AC), not internals line-by-line; `rev` of internals is unchanged. See [gr/gr_modules.md](gr/gr_modules.md) (M3a) and [gr/gr_qa.md](gr/gr_qa.md) (Q10).
+Deep modules are built under a default labor partition: **human owns the interface and boundary tests; agent owns the internals; source stays visible** (gray, not black — the human may step in but does not have to). Partition applies by default to AFK-eligible work (Gov5a); HITL work requires the agent to **ask** which partition variant to use — silent assumption is forbidden. QA consequence: human reads the seam (interface + boundary tests + AC), not internals line-by-line; `rev` of internals is unchanged. See [gr/gr_mod.md](gr/gr_mod.md) (M3a) and [gr/gr_qa.md](gr/gr_qa.md) (Q10).
 
 ### 3.32 Distill the Brief into 3–6 Goals (Idea Phase)
 
@@ -278,19 +278,19 @@ Detail: [gr/gr_operational.md](gr/gr_operational.md)
 
 Purpose: protect codebase shape against shallow-module drift. Prefer deep modules with small interfaces hiding significant functionality.
 Apply when: a module is created, split, merged, or restructured; a PRD proposes a module map; review surfaces tangled cross-dependencies; architecture-improvement (`ica`) is run.
-Detail: [gr/gr_modules.md](gr/gr_modules.md)
+Detail: [gr/gr_mod.md](gr/gr_mod.md)
 
 ### 4.14 Review
 
 Purpose: define how a code-review pass is conducted in the smart zone, with standards pushed into context and module depth checked explicitly.
 Apply when: a change is ready for review (`rev` phase); after an AFK loop produces commits; when a human asks the agent to review a diff or branch.
-Detail: [gr/gr_review.md](gr/gr_review.md)
+Detail: [gr/gr_rev.md](gr/gr_rev.md)
 
 ### 4.15 Alignment
 
 Purpose: reach a shared design concept with the human before any planning artifact is written. Grilling produces alignment; PRD only summarizes it.
 Apply when: a new feature, change, or vague backlog item enters the workflow (`aln` phase); before any PRD, issue decomposition, or implementation begins.
-Detail: [gr/gr_alignment.md](gr/gr_alignment.md)
+Detail: [gr/gr_algn.md](gr/gr_algn.md)
 
 ### 4.16 Test-Driven Development
 
@@ -302,7 +302,7 @@ Detail: [gr/gr_tdd.md](gr/gr_tdd.md)
 
 Purpose: cache hard-to-recover external knowledge into a sprint-scoped artifact so downstream agent runs don't re-explore from a fresh context window — and retire the artifact before it rots.
 Apply when: phase `res` is entered; `aln` grilling surfaces an external-dependency unknown (third-party API, uncommon SDK, unfamiliar codebase region) the agent must answer with facts; review (`rev`) of work that consumed a `research.md`.
-Detail: [gr/gr_research.md](gr/gr_research.md)
+Detail: [gr/gr_res.md](gr/gr_res.md)
 
 ### 4.19 Idea
 
@@ -314,7 +314,7 @@ Detail: [gr/gr_idea.md](gr/gr_idea.md)
 
 Purpose: resolve hard-to-reverse design decisions by building 2–3 throwaway variants and letting the human pick, instead of pretending grilling can settle every ambiguity.
 Apply when: phase `pro` is entered; `aln` grilling stalls on a decision and the agent considers whether the Pro1 trigger (irreversibility OR cost asymmetry) holds; `res` surfaces a question only a build-to-learn spike can answer; review (`rev`) of work that consumed a prototype (verify sandbox deleted, human picked, no fabricated integration responses).
-Detail: [gr/gr_prototype.md](gr/gr_prototype.md)
+Detail: [gr/gr_proto.md](gr/gr_proto.md)
 
 ---
 

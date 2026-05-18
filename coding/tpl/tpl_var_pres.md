@@ -2,7 +2,7 @@
 
 Purpose: present 2–3 prototype variants to the human picker with observable facts only. Enforces Pro4 (no agent self-judging) by schema: there is no `recommendation` field. Subjective preference language in body forbidden — see [Body Rules](#body-rules).
 
-Source: [`gr/gr_prototype.md`](../gr/gr_prototype.md) Pro2, Pro4, Pro7. Emitted by W14e prototype skill (A9). Consumed by human in `pro` step 5; rejected variants flow into Aln15 negative-decision capture (W14d).
+Source: [`gr/gr_proto.md`](../gr/gr_proto.md) Pro2, Pro4, Pro7. Emitted by W14e prototype skill (A9). Consumed by human in `pro` step 5; rejected variants flow into Aln15 negative-decision capture (W14d).
 
 Format: YAML frontmatter (machine-parseable schema) + markdown body (human-readable context). Skill owns the YAML. Human edits body only.
 
@@ -10,7 +10,7 @@ Format: YAML frontmatter (machine-parseable schema) + markdown body (human-reada
 
 ## File Naming
 
-`prototype/<topic-slug>/variants.md` inside the sandbox directory (sandbox deleted at `pro` exit per Pro3). `topic-slug` matches the unresolved-decision restatement from `wf_prototype.md` step 1.
+`prototype/<topic-slug>/variants.md` inside the sandbox directory (sandbox deleted at `pro` exit per Pro3). `topic-slug` matches the unresolved-decision restatement from `wf_proto.md` step 1.
 
 ---
 
@@ -147,5 +147,5 @@ Implementation deferred until skill substrate (D1) settled. Schema and rules are
 ## Notes on Interaction
 
 - Emitted by: W14e (A9 prototype skill).
-- Consumed by: human (Pro4 picker); the caller phase (Pro5 caller-persists) — `aln` reads C6 and writes Aln15 + Aln12 (intake contract: gr_alignment.md Aln15 "Intake from `pro`"), `res` appends facts to `research/<topic>.md`, `prd` cites in implementation-decisions; reviewer (`rev`) verifies Pro3/Pro4/Pro7/Pro8 against this artifact. Read order: caller reads C6 **before** Pro3 deletes the sandbox.
+- Consumed by: human (Pro4 picker); the caller phase (Pro5 caller-persists) — `aln` reads C6 and writes Aln15 + Aln12 (intake contract: gr_algn.md Aln15 "Intake from `pro`"), `res` appends facts to `research/<topic>.md`, `prd` cites in implementation-decisions; reviewer (`rev`) verifies Pro3/Pro4/Pro7/Pro8 against this artifact. Read order: caller reads C6 **before** Pro3 deletes the sandbox.
 - Retired with sandbox at `pro` exit (Pro3). The `decision_outcome` block migrates to the alignment transcript / PRD implementation-decisions section before deletion (Pro5).

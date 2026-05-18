@@ -36,7 +36,7 @@ If neither holds, prototype is over-engineering. Resolve in `aln` and pick.
 
 Prototype variants fall into one of three flavors. Same phase, same discipline, different artifact:
 
-- **Front-end / UX** — layout, interaction, information density. Variants live behind a temporary route or switchable UI. See [`wf/wf_prototype.md`](../wf/wf_prototype.md) §"FE Variant".
+- **Front-end / UX** — layout, interaction, information density. Variants live behind a temporary route or switchable UI. See [`wf/wf_proto.md`](../wf/wf_proto.md) §"FE Variant".
 - **Architecture** — module shape, sync vs. async, queue vs. direct call, storage shape. Variants are throwaway skeleton impls that exercise the shape, not the full feature.
 - **Integration** — external-service shape (third-party API actual payload, webhook firing order, rate-limit behavior). Variants are spike scripts hitting the real (or sandbox) service.
 
@@ -56,11 +56,11 @@ The agent produces 2–3 variants. The human (or domain expert) picks. Agent doe
 
 Agent may flag observable facts about each variant (LOC, dependency added, latency measured) but stops short of "I recommend B".
 
-Artifact shape: [`tpl/tpl_variant_presentation.md`](../tpl/tpl_variant_presentation.md) (C6). Schema omits `recommendation`/`preferred`/`best`/`score` fields; body vocabulary blocks subjective terms. Pro4 is enforced by template, not by reviewer convention alone.
+Artifact shape: [`tpl/tpl_var_pres.md`](../tpl/tpl_var_pres.md) (C6). Schema omits `recommendation`/`preferred`/`best`/`score` fields; body vocabulary blocks subjective terms. Pro4 is enforced by template, not by reviewer convention alone.
 
 ### Pro5. Output Feeds Aln / Res / Prd — Caller Persists
 
-The chosen direction is the output. **`pro` emits exactly one artifact: the C6 variant doc ([`tpl/tpl_variant_presentation.md`](../tpl/tpl_variant_presentation.md)) with the chosen variant marked and `captured_responses` populated where applicable.** `pro` does not edit any other phase's files. The caller reads C6 on return and updates its own artifacts:
+The chosen direction is the output. **`pro` emits exactly one artifact: the C6 variant doc ([`tpl/tpl_var_pres.md`](../tpl/tpl_var_pres.md)) with the chosen variant marked and `captured_responses` populated where applicable.** `pro` does not edit any other phase's files. The caller reads C6 on return and updates its own artifacts:
 
 - **`aln` caller** — reads C6, updates Aln12 module map with the chosen shape, appends rejected variants to Aln15 as negative decisions.
 - **`res` caller** — reads C6, appends the chosen variant's facts (e.g., `captured_responses`) to `research/<topic>.md` under its existing `owner-issue` (Res4) header.
@@ -113,7 +113,7 @@ Not pulled for: implementation work where the prototype phase already closed and
 ## Notes on Interaction with Other Guardrails
 
 - Replaces the deleted Aln17 (FE-only prototype rule). Aln1 (HITL) still applies because `pro` is HITL by construction (Pro6).
-- Distinct from `res` (gr_research.md): research = capture facts; prototype = explore design by building. `res` may invoke `pro` when only a spike can produce the fact. `pro` may produce facts as a side effect, which then live in research, not in the prototype sandbox.
+- Distinct from `res` (gr_res.md): research = capture facts; prototype = explore design by building. `res` may invoke `pro` when only a spike can produce the fact. `pro` may produce facts as a side effect, which then live in research, not in the prototype sandbox.
 - Pro3 mirrors 3.27 / Res3 (retire ephemeral artifacts) and Doc11 / 3.24 (retire PRDs). Same anti-rot logic, different artifact shape.
 - Pro6 specializes Gov5a (HITL declaration) — `pro` is one of the canonical HITL phases alongside `aln` and `prd`.
 - Output paths (Pro5) parallel Aln12 (module map) and Aln15 (negative decisions) — prototype outcomes are alignment outcomes, just produced by building instead of grilling.

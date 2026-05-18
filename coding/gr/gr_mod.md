@@ -63,7 +63,7 @@ During `aln` and `prd` phases, the agent proposes and the human approves a **mod
 
 ### M7. Review Phase Checks Module Depth Explicitly
 
-Code review (cross-reference: gr_review.md) must explicitly assess:
+Code review (cross-reference: gr_rev.md) must explicitly assess:
 
 - Did the change deepen a module, leave depth unchanged, or shallowen it?
 - Were new files added that expose narrow interfaces over small internals?
@@ -109,5 +109,5 @@ When designing, implementing, or reviewing a module, the agent relies on these h
 
 - Reinforces **A4** (preserve module boundaries) and **A3** (no bypass of abstraction).
 - Constrains **A10** (no speculative extension points) — a deep module is not a speculative extension point; it is a deliberate hiding of complexity behind a contract.
-- Feeds **gr_review.md** — depth is one of the review dimensions.
-- Feeds **gr_alignment.md** and **gr_governance.md** — module-shape decisions are HITL planning concerns, not AFK implementation concerns.
+- Feeds **gr_rev.md** — depth is one of the review dimensions.
+- Feeds **gr_algn.md** and **gr_governance.md** — module-shape decisions are HITL planning concerns, not AFK implementation concerns.

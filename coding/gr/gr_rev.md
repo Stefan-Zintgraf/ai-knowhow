@@ -56,7 +56,7 @@ If the project maintains an auto-generated API overview file (e.g., `public_api.
 
 ### Rev6. Check Module Depth Explicitly
 
-The reviewer applies the module-depth dimension from [gr_modules.md](gr_modules.md), explicitly referencing the heuristics in M11:
+The reviewer applies the module-depth dimension from [gr_mod.md](gr_mod.md), explicitly referencing the heuristics in M11:
 
 - Did the change deepen a module, leave depth unchanged, or shallowen it?
 - For new/greenfield modules: does the module expose a narrow interface relative to its internal complexity (e.g., high LOC ratio, low parameter count)?
@@ -67,7 +67,7 @@ Shallow-module drift is flagged. A diff that adds many small files with dense im
 
 ### Rev7. Check Hidden-Constraint Coverage
 
-The reviewer explicitly checks classes of concern that grilling often misses (cross-reference: gr_alignment.md):
+The reviewer explicitly checks classes of concern that grilling often misses (cross-reference: gr_algn.md):
 
 - Security (auth, secrets, input validation, PII).
 - Permissions and authorization paths.
@@ -113,7 +113,7 @@ Where the operating environment supports model selection, review uses a model at
 
 ### Rev13. Manual QA Is Still Required for User-Visible Behavior
 
-Automated agent review does not replace human QA for UI, UX, or domain-judgment-sensitive changes (cross-reference: gr_alignment.md — visual taste / domain judgment remain human concerns).
+Automated agent review does not replace human QA for UI, UX, or domain-judgment-sensitive changes (cross-reference: gr_algn.md — visual taste / domain judgment remain human concerns).
 
 ---
 
@@ -135,7 +135,7 @@ Automated agent review does not replace human QA for UI, UX, or domain-judgment-
 ## Notes on Interaction with Other Guardrails
 
 - Inverts the push/pull default of `gr_operational.md`: implementer pulls, reviewer is pushed.
-- Pairs with `gr_modules.md` (Rev6) — module depth is a first-class review dimension.
-- Pairs with `gr_alignment.md` (Rev7) — hidden constraints surfaced in grilling become a review checklist.
+- Pairs with `gr_mod.md` (Rev6) — module depth is a first-class review dimension.
+- Pairs with `gr_algn.md` (Rev7) — hidden constraints surfaced in grilling become a review checklist.
 - Reinforces `gr_operational.md` Op13 (no fabrication) and Op14 (read before write) as positive checks during review (Rev8).
 - Reinforces `gr_governance.md` Gov12 (disagree visibly) for the reviewer role (Rev10).

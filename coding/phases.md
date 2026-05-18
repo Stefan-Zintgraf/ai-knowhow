@@ -18,11 +18,11 @@ Reach alignment / shared design concept between human and agent before any plann
 
 ### res — Research (Optional)
 
-Cache hard-to-recover external knowledge (third-party APIs, uncommon services, unfamiliar codebase regions) into a sprint-scoped `research/<topic>.md` so downstream agent runs don't re-explore from a fresh context window. Optional: only triggered when `aln` surfaces external-dependency unknowns the agent must answer with facts. Artifact is **deleted at sprint close** (see `gr/gr_research.md` Res3) — distinct from PRDs which move to external trackers.
+Cache hard-to-recover external knowledge (third-party APIs, uncommon services, unfamiliar codebase regions) into a sprint-scoped `research/<topic>.md` so downstream agent runs don't re-explore from a fresh context window. Optional: only triggered when `aln` surfaces external-dependency unknowns the agent must answer with facts. Artifact is **deleted at sprint close** (see `gr/gr_res.md` Res3) — distinct from PRDs which move to external trackers.
 
 ### pro — Prototype (Optional)
 
-Resolve a hard-to-reverse design decision by building 2–3 throwaway variants and letting the human pick. Optional: only triggered when grilling cannot resolve the decision in words AND the Pro1 gate holds (irreversibility OR cost asymmetry — wrong-choice cost >> 2–3 throwaway variants). Three flavors: FE/UX, architecture, integration (see `gr/gr_prototype.md` Pro2). Entry from `aln` (design ambiguity) or `res` (build-to-learn spike). Sandbox code is **deleted before** production impl (Pro3). HITL by construction (Pro6).
+Resolve a hard-to-reverse design decision by building 2–3 throwaway variants and letting the human pick. Optional: only triggered when grilling cannot resolve the decision in words AND the Pro1 gate holds (irreversibility OR cost asymmetry — wrong-choice cost >> 2–3 throwaway variants). Three flavors: FE/UX, architecture, integration (see `gr/gr_proto.md` Pro2). Entry from `aln` (design ambiguity) or `res` (build-to-learn spike). Sandbox code is **deleted before** production impl (Pro3). HITL by construction (Pro6).
 
 ### prd — Destination Doc
 
@@ -97,9 +97,9 @@ ide → aln → [res?] → [pro?] → prd → iss → (ral | par) → qa ─┬�
 
 `ide` produces 3–6 major goals from the raw brief. Collapses to a one-line confirmation when the upstream brief already names goals explicitly (per 3.29). Output is folded into the PRD's Goals section; no in-tree artifact survives.
 
-`res` is optional and fires only when `aln` surfaces external-dependency unknowns (see `gr/gr_research.md` Apply When). `res` may also fire mid-`aln` if grilling cannot proceed without the facts.
+`res` is optional and fires only when `aln` surfaces external-dependency unknowns (see `gr/gr_res.md` Apply When). `res` may also fire mid-`aln` if grilling cannot proceed without the facts.
 
-`pro` is optional and fires only when grilling cannot resolve a design decision in words AND the Pro1 gate holds (irreversibility OR cost asymmetry — see `gr/gr_prototype.md`). Entry from `aln` (design ambiguity) or `res` (build-to-learn spike). `pro` returns a chosen direction; rejected variants are recorded as Aln15 negative decisions.
+`pro` is optional and fires only when grilling cannot resolve a design decision in words AND the Pro1 gate holds (irreversibility OR cost asymmetry — see `gr/gr_proto.md`). Entry from `aln` (design ambiguity) or `res` (build-to-learn spike). `pro` returns a chosen direction; rejected variants are recorded as Aln15 negative decisions.
 
 `ral` and `par` are alternative modes of the same implementation step, chosen per task. Not both at once.
 

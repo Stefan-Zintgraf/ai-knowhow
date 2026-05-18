@@ -98,7 +98,7 @@ Rationale: attention-relationship cost grows sharply with tokens. Large persiste
 The default delivery of coding standards and guardrail detail documents depends on the agent's role:
 
 - **Implementer (`ral`, `par`, ad-hoc implementation)** — standards are **pulled**: retrieved on demand when the routing step (`guardrails.md` §5) selects a category. The implementer does not load every detail document by default.
-- **Reviewer (`rev`)** — standards are **pushed**: the routed detail documents are loaded into the reviewer's context up front, because review compares the diff against the standards (cross-reference: gr_review.md Rev2).
+- **Reviewer (`rev`)** — standards are **pushed**: the routed detail documents are loaded into the reviewer's context up front, because review compares the diff against the standards (cross-reference: gr_rev.md Rev2).
 - **Aligner (`aln`) and planner (`prd`, `iss`)** — standards are pulled on demand, biased toward planning-relevant categories (governance, architecture, modules, alignment).
 
 A change to a standard updates the pulled detail document; the implementer picks up the change on the next routing pass. A reviewer setup explicitly re-loads the pushed set per review session.
