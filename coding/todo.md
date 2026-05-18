@@ -79,33 +79,34 @@ Source documents:
 
 ## Workflows
 
-Source: `videos/matt_pocock_full_walkthrough_workflow_gpt55pro.md` §"Workflows and Methods" (12 items, W1–W12).
+Source: `videos/matt_pocock_full_walkthrough_workflow_gpt55pro.md` §"Workflows and Methods" (12 items, W1–W12). Extensions from the 7-phases doc add `res` (W13), `pro` (W14/W14a–e), and `ide` (W15).
 
 Pocock's 12 items mix **phases** (sequential delivery steps), **techniques** (used inside a phase), **execution modes** (variants of an impl phase), and **rules/conventions** (cross-cutting). Categorization summary:
 
-Order below: items with **no new skill required** first, then items that **need a new skill**.
+Order below follows the typical phase sequence from `phases.md` §4: `aln → res → pro → prd → iss → ral/par → qa`, then cross-phase (`rev`, `ica`), then cross-cutting standards.
 
 | #    | Pocock title               | Category                   | Status          | skill     | hook | Pocock reference skill                              | Maps to                                                                 |
 | ---- | -------------------------- | -------------------------- | --------------- | --------- | ---- | --------------------------------------------------- | ----------------------------------------------------------------------- |
-| W6   | Agentic TDD                | Technique                  | done            | no        | rcmd | —                                                   | `gr/gr_tdd.md` + §4.16 routing                                          |
+| W15  | Idea Phase                 | **NEW Phase**              | wip             | yes (new) | no   | none — Pocock phase 1 (7-phases doc)                | `ide` added, `gr_idea.md` drafted, §3.32 + §4.19 added                  |
+| W1   | Grilled Design Concept     | Phase                      | todo            | yes (poc) | no   | "grill me" skill                                    | `aln` (exists)                                                          |
+| W13  | Research Caching           | Phase (optional)           | wip             | yes (new) | yes  | none named — Pocock phase 2 + `research.md` cache   | `res` added, `gr_research.md` drafted, §3.27 + §4.17 added              |
 | W14a | Sandbox Retirement         | Enforcement (W14)          | todo            | no        | yes  | none                                                | adapt W13's `owner-issue`+Q11 to directories                            |
 | W14b | Variant Template           | Template (C6, W14)         | done            | no        | no   | none                                                | C6 = [tpl/tpl_variant_presentation.md](tpl/tpl_variant_presentation.md) |
 | W14c | Res→Pro Fact Persistence   | Decision (D-new, W14)      | done            | no        | no   | none                                                | `res`/`pro` boundary                                                    |
 | W14d | Rejected-Variant→grill-me  | Wiring (W14)               | done (contract) | no        | no   | none                                                | A1 (`grill-me`) integration                                             |
 | W14e | Prototype Skill            | **NEW Phase** / Skill (A9) | wip             | yes (new) | no   | none (Pocock phase 3)                               | `pro` added, `gr_prototype.md` + `wf/wf_prototype.md`                   |
-| W12a | Review Standards Sources   | Manual / Audit             | todo            | no        | no   | —                                                   | `standards_guardrails_sources.md`                                       |
-| W12b | Standards Descriptions     | Rule/Convention            | todo            | rcmd      | no   | —                                                   | Op14b + `gr/` description quality + skill preconditions                 |
-| W12c | Standards Hook Enforcement | Rule/Convention            | todo            | no        | rcmd | —                                                   | B1 routing-step enforcer                                                |
-| W1   | Grilled Design Concept     | Phase                      | todo            | yes (poc) | no   | "grill me" skill                                    | `aln` (exists)                                                          |
 | W2   | PRD                        | Phase                      | todo            | yes (poc) | no   | "write a PRD" skill                                 | `prd` (exists)                                                          |
 | W3   | Issue DAG                  | Phase                      | todo            | yes (poc) | no   | "PRD to issues" skill                               | `iss` (exists)                                                          |
 | W4   | Ralph Once Loop            | Execution mode             | todo            | yes (poc) | no   | `/ralph` skill (`~/.claude/skills/ralph/`)          | variant of `ral`                                                        |
 | W5   | AFK Implementation Loop    | Phase                      | blocked         | yes (new) | rcmd | none — `afk.sh` loop script (not a skill)           | `ral` (exists), D4 open                                                 |
-| W7   | Fresh-Context Review       | Phase                      | todo            | yes (new) | rcmd | none named — "fresh-context automated review"       | `rev` (exists)                                                          |
-| W8   | Manual QA                  | **NEW Phase**              | wip             | yes (new) | no   | none — human-driven phase in Pocock's walkthrough   | `qa` added, `gr_qa.md` drafted                                          |
-| W9   | Deep-Module Architecture   | Phase/Initiative           | todo            | yes (poc) | no   | "improve codebase architecture" skill               | `ica` (exists), D7 open                                                 |
 | W10  | Parallel Agents            | Execution mode             | blocked         | yes (new) | no   | none — Sand Castle orchestration tool (not a skill) | `par` (exists), substrate TBD                                           |
-| W13  | Research Caching           | Phase (optional)           | wip             | yes (new) | yes  | none named — Pocock phase 2 + `research.md` cache   | `res` added, `gr_research.md` drafted, §3.27 + §4.17 added              |
+| W6   | Agentic TDD                | Technique                  | done            | no        | rcmd | —                                                   | `gr/gr_tdd.md` + §4.16 routing                                          |
+| W8   | Manual QA                  | **NEW Phase**              | wip             | yes (new) | no   | none — human-driven phase in Pocock's walkthrough   | `qa` added, `gr_qa.md` drafted                                          |
+| W7   | Fresh-Context Review       | Phase                      | todo            | yes (new) | rcmd | none named — "fresh-context automated review"       | `rev` (exists)                                                          |
+| W9   | Deep-Module Architecture   | Phase/Initiative           | todo            | yes (poc) | no   | "improve codebase architecture" skill               | `ica` (exists), D7 open                                                 |
+| W12a | Review Standards Sources   | Manual / Audit             | todo            | no        | no   | —                                                   | `standards_guardrails_sources.md`                                       |
+| W12b | Standards Descriptions     | Rule/Convention            | todo            | rcmd      | no   | —                                                   | Op14b + `gr/` description quality + skill preconditions                 |
+| W12c | Standards Hook Enforcement | Rule/Convention            | todo            | no        | rcmd | —                                                   | B1 routing-step enforcer                                                |
 
 Each item below: **what exists**, **what's missing**, **next step**. Detail per item handled in a fresh chat context.
 
@@ -184,14 +185,24 @@ Beyond the 12 items, the orchestration that chains them (e.g., `grill-me` → `w
 - Maps to: A9 (new skill slot); source docs `gr/gr_prototype.md`, `wf/wf_prototype.md`.
 - Dependency: W14a (sandbox retirement) and W14b (variant template) should be resolved first or in parallel.
 
+### W15. Idea Phase
+
+- Status: **wip** (phase + core rule + detail doc done; skill pending).
+- Category: **Phase** — code `ide`. Sequential, **first** phase before `aln`. HITL only (Idea4). Output is ephemeral — folded into PRD Goals section (Idea7); no in-tree artifact.
+- Pocock reference: phase 1 of the 7-phases doc (see [the-7-phases-of-ai-driven-development.md](the-7-phases-of-ai-driven-development.md)) — no named Pocock skill.
+- Exists: phase `ide` in [phases.md](phases.md); core rule 3.32 + routing §4.19 in [guardrails.md](guardrails.md); detail doc [gr/gr_idea.md](gr/gr_idea.md) (Idea1–Idea7).
+- Missing: skill `distill-idea` (new **A11**) — distills brief / ticket / Slack note into 3–6 major goals, strips detail leaks (Idea2), captures negative goals (Idea3), HITL by construction (Idea4); collapse handling per 3.29 when upstream brief already names goals explicitly (one-line confirmation instead of full pass).
+- No template needed (Idea7 — ephemeral, no in-tree artifact; output feeds A1 `grill-me` directly and folds into A2 `write-prd` Goals section).
+- Next: build A11 skill; wire as front of skill chain (A11 → A1 grill-me → A2 write-prd → ...).
+
 ### W13. Research Caching
 
 - Status: **wip** (phase + core rule + detail doc + retirement enforcement done; skill, template pending).
 - Category: **Phase (optional)** — code `res`. Optional sequential between `aln` and `prd`; can also fire mid-`aln` when grilling stalls on external-dependency facts.
 - Pocock reference: phase 2 of the 7-phases doc (see [the-7-phases-of-ai-driven-development.md](the-7-phases-of-ai-driven-development.md)) — no named Pocock skill.
 - Exists: phase `res` in [phases.md](phases.md); core rule 3.27 + routing §4.17 in [guardrails.md](guardrails.md); detail doc [gr/gr_research.md](gr/gr_research.md); subagent dispatch B10 (existing); retirement enforcement = `owner-issue` provenance field (Res4) + pre-commit lint + `qa` Q11 merge-gate check (resolved 2026-05-18, see `consider_7_phases_todo.md` Item 8).
-- Missing: skill `do-research` (new A9?) — gathers facts via subagent, writes `research/<topic>.md` with Res4 provenance header; template (new C6?) for the research file shape including the `owner-issue` field; decision on whether `iss` decomposition should reference the research file path explicitly; pre-commit lint implementation (mechanical, deferred to substrate decision D1).
-- Next: build A9 + C6; wire B10 dispatch into A1 (`grill-me`) so alignment can spawn research without leaving `aln`; implement the `owner-issue` lint once skill substrate (D1) is settled.
+- Missing: skill `do-research` (new **A10** — A9 taken by W14e prototype) — gathers facts via subagent, writes `research/<topic>.md` with Res4 provenance header; template (new **C7** — C6 taken by W14b variant template) for the research file shape including the `owner-issue` field; decision on whether `iss` decomposition should reference the research file path explicitly; pre-commit lint implementation (mechanical, deferred to substrate decision D1).
+- Next: build A10 + C7; wire B10 dispatch into A1 (`grill-me`) so alignment can spawn research without leaving `aln`; implement the `owner-issue` lint once skill substrate (D1) is settled.
 
 ### W12a. Review Standards Guardrails Sources
 
