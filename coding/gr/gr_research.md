@@ -68,7 +68,13 @@ If a different feature needs facts from an existing (or already-retired) researc
 
 ### Res10. Invoke `pro` for Build-to-Learn Facts
 
-When a research question can only be answered by building (e.g., the actual shape of a third-party webhook payload, real latency of an integration under realistic load, observed behavior of a rate limiter), `res` invokes phase `pro` instead of speculating. The integration-flavor variant (gr_prototype.md Pro2) hits the real or vendor-sandbox service and captures observed responses; the captured facts then flow back into the research file. Distinction: `res` decides "we need facts"; `pro` is one tool `res` uses when only a spike produces those facts. Spike code itself is throwaway (Pro3) and does not survive into the research file — only the captured facts do.
+When a research question can only be answered by building (e.g., the actual shape of a third-party webhook payload, real latency of an integration under realistic load, observed behavior of a rate limiter), `res` invokes phase `pro` instead of speculating. The integration-flavor variant (gr_prototype.md Pro2) hits the real or vendor-sandbox service and captures observed responses.
+
+**Handoff is caller-persists.** `pro` returns the C6 variant artifact ([`tpl/tpl_variant_presentation.md`](../tpl/tpl_variant_presentation.md)) with `captured_responses` populated per variant; on return, **`res` reads that artifact and appends the chosen variant's facts to `research/<topic>.md`** under the existing `owner-issue` (Res4) header. `pro` does not write `research/<topic>.md` itself — this keeps `pro` caller-agnostic and keeps file ownership inside `res`.
+
+Concrete example. `aln` grilling for a Stripe webhook feature stalls on actual payload shape. `res` opens, drafts `research/stripe-webhook.md` with `owner-issue: #142`, source links, date — but the payload section reads "TBD — needs spike". `res` invokes `pro` (integration flavor). `pro` produces 2–3 spike variants hitting Stripe's sandbox, captures real responses, fills `captured_responses` in the C6 artifact, deletes the sandbox (Pro3). `res` resumes, reads the C6 artifact, appends the chosen variant's captured payload + headers + observed error codes to `research/stripe-webhook.md`'s payload section, citing `pro` outcome date. `owner-issue: #142` unchanged. Sprint closes → file deleted (Res3).
+
+Distinction: `res` decides "we need facts"; `pro` is one tool `res` uses when only a spike produces those facts. Spike code itself is throwaway (Pro3) and does not survive into the research file — only the captured facts do.
 
 ---
 

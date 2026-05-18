@@ -97,6 +97,20 @@ If during PRD writing, issue decomposition, or implementation, a contradiction o
 
 Decisions to *not* do something are recorded explicitly in the alignment artifacts and carried forward into the PRD's out-of-scope section. Negative decisions are how scope is defended later.
 
+**Sources of negative decisions:**
+
+1. **In-session rejections** — answers the human gave during grilling that ruled an option out.
+2. **Rejected prototype variants** — when `aln` invoked `pro` and the human picked a winner, the rejected variants (from C6 `decision_outcome.rejected` + `rationale_by_human`) become negative decisions here.
+
+**Intake from `pro` (caller-persists per Pro5).** On `aln` resume after `pro` exit, the alignment agent (A1 `grill-me` when built):
+
+1. Reads the C6 variant artifact ([`tpl/tpl_variant_presentation.md`](../tpl/tpl_variant_presentation.md)) at `<sandbox_path>/variants.md` **before sandbox deletion**. This must happen before Pro3 deletes the sandbox; A1 fails closed if C6 is unreadable or `decision_outcome.chosen` is null.
+2. For each id in `decision_outcome.rejected`: appends an Aln15 entry citing the variant `summary`, the observable facts that made it lose, and `rationale_by_human` if present.
+3. Updates Aln12 module map per the chosen variant's shape.
+4. Signals to `pro` that capture is complete, which unblocks Pro3 sandbox deletion.
+
+**Replay on later `aln` sessions.** Existing Aln15 entries are loaded as grilling context. A1 does not re-propose options already recorded as negative decisions — it cites the prior rejection (with rationale) if the human reopens the branch, rather than walking it fresh.
+
 ### Aln16. Visualize the Decision Tree
 
 During the grilling session, the agent maintains and displays a visual map of the decision tree (e.g., a Mermaid `graph TD`). The graph shows the root goal, walked branches (decisions made), and pending branches (unresolved questions). This keeps the human oriented and exposes missed constraints.

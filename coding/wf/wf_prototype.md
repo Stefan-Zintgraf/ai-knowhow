@@ -44,13 +44,13 @@ Three flavors (Pro2). Pick one per `pro` invocation — do not mix:
 2. Pick the flavor (FE / Architecture / Integration). One only.
 3. Generate **2–3 variants** (Pro4). Each variant is independently runnable in the sandbox. No variant is marked "preferred" by the agent.
 4. Run the hidden-constraint check (Pro7) per variant — security, perms, retention, migrations, observability, API compat, concurrency. Flag or replace any variant that quietly violates a class.
-5. Present variants to the human / domain expert. For each variant, supply observable facts only (LOC, dependency delta, latency measured, captured response). No agent recommendation.
+5. Present variants to the human / domain expert using the [variant presentation template](../tpl/tpl_variant_presentation.md) (C6). For each variant, supply observable facts only (LOC, dependency delta, latency measured, captured response). Template schema and body rules forbid recommendation/preference language — Pro4 is mechanically enforced, not convention.
 6. Human picks. Capture chosen direction **and** rejected variants (rejected variants become Aln15 negative decisions).
-7. Feed the chosen direction back:
-   - to `aln` (Aln12 module map updated, Aln15 negative decisions recorded), or
-   - to `res` (if `pro` was invoked from research — record the chosen shape as fact), or
-   - directly to `prd` (PRD implementation-decisions section cites the prototype outcome).
-8. **Delete the sandbox** (Pro3). Deletion is a precondition for exiting `pro`. No prototype code survives into production impl.
+7. Feed the chosen direction back. **`pro` emits one artifact — the C6 variant doc (chosen variant marked, `captured_responses` populated where applicable) — and does not write any other phase's files. The caller reads C6 and updates its own artifacts:**
+   - `aln` caller → updates Aln12 module map, appends rejected variants to Aln15.
+   - `res` caller → appends facts to `research/<topic>.md` under its existing `owner-issue` header.
+   - `prd` caller → cites the prototype outcome in PRD implementation-decisions; rejected variants go to PRD's rejected-alternatives section or Aln15.
+8. **Delete the sandbox** (Pro3). Deletion is a precondition for exiting `pro`. Ordering: human fills `decision_outcome` → caller reads C6 and persists to its own artifacts (step 7) → caller signals capture complete → sandbox deleted. If caller capture fails (C6 unreadable, decision_outcome incomplete), `pro` does NOT delete — fail closed. No prototype code survives into production impl.
 
 ---
 

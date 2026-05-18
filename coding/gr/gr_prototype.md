@@ -48,21 +48,27 @@ Variants are **disposable**. Code lives in a clearly-marked sandbox (route, bran
 
 Deletion is a precondition for exiting `pro`. Tracked the same way `res` artifacts are retired (3.27, Res3).
 
+**Ordering with caller capture (Pro5).** The C6 variant artifact lives inside the sandbox (`<sandbox_path>/variants.md`). The caller must read and persist its facts (Pro5) **before** sandbox deletion — otherwise `decision_outcome.rejected` and `rationale_by_human` are lost. Deletion sequence: (1) human fills `decision_outcome`; (2) caller reads C6 and writes its own artifacts (Aln15 / `research/<topic>.md` / PRD section); (3) caller signals capture complete; (4) `pro` deletes sandbox. Step 2 failing closed blocks step 4.
+
 ### Pro4. 2–3 Variants, No Self-Judging
 
 The agent produces 2–3 variants. The human (or domain expert) picks. Agent does **not** declare a winner. Reason: prototype variants are taste-impositions — agent has no calibrated taste over arch tradeoffs, UX, or integration ergonomics in this codebase. Self-judging defeats the phase.
 
 Agent may flag observable facts about each variant (LOC, dependency added, latency measured) but stops short of "I recommend B".
 
-### Pro5. Output Feeds Aln / Res / Prd
+Artifact shape: [`tpl/tpl_variant_presentation.md`](../tpl/tpl_variant_presentation.md) (C6). Schema omits `recommendation`/`preferred`/`best`/`score` fields; body vocabulary blocks subjective terms. Pro4 is enforced by template, not by reviewer convention alone.
 
-The chosen direction is the output. It feeds back:
+### Pro5. Output Feeds Aln / Res / Prd — Caller Persists
 
-- to `aln` (Aln12 module map updated; Aln15 captures rejected variants as negative decisions).
-- to `res` (if `pro` was invoked from `res` — research file records the chosen shape as fact).
-- to `prd` (PRD's implementation-decisions section cites the prototype outcome).
+The chosen direction is the output. **`pro` emits exactly one artifact: the C6 variant doc ([`tpl/tpl_variant_presentation.md`](../tpl/tpl_variant_presentation.md)) with the chosen variant marked and `captured_responses` populated where applicable.** `pro` does not edit any other phase's files. The caller reads C6 on return and updates its own artifacts:
 
-Rejected variants are recorded as negative decisions so a future agent does not re-propose them.
+- **`aln` caller** — reads C6, updates Aln12 module map with the chosen shape, appends rejected variants to Aln15 as negative decisions.
+- **`res` caller** — reads C6, appends the chosen variant's facts (e.g., `captured_responses`) to `research/<topic>.md` under its existing `owner-issue` (Res4) header.
+- **`prd` caller** — reads C6, cites the prototype outcome in the PRD's implementation-decisions section; appends rejected variants to PRD's rejected-alternatives section if present, else to Aln15.
+
+Why caller-persists is symmetric across all three callers: `pro` stays caller-agnostic (no conditional write-mode per caller); each phase keeps ownership of its file conventions (module-map format, Res4 header, PRD section structure) instead of `pro` having to know all three; one handoff surface (C6) instead of three.
+
+Rejected variants are recorded as negative decisions so a future agent does not re-propose them. The caller — not `pro` — performs that recording.
 
 ### Pro6. Not AFK
 
