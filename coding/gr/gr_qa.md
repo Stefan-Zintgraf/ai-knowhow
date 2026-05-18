@@ -86,6 +86,56 @@ If agent throughput exceeds QA capacity, the implementation queue is paused, not
 
 Findings that repeat across slices (same category, same kind of bug) are converted into automated tests during `ica` or as part of the fix-now follow-up. QA is for taste; recurring mechanical failures should not need human eyes.
 
+### Q9. Loop Convergence Is a Human Verdict
+
+The plan → execute → QA loop (`iss → ral|par → qa → fix-now → iss` or pass) terminates on an **explicit human verdict**, not on a mechanized checklist. The human declares `pass` or `pass-with-backlog` (Q6) when both hold:
+
+1. **Zero fix-now findings remain.** Every finding triaged fix-now per Q5 has been resolved and re-QA'd.
+2. **PRD intent is met in the human's judgment.** Where acceptance criteria exist, they are weighed; where they don't, the human judges whether the slice delivers the user-visible behavior the alignment + PRD called for. `pass-with-backlog` is allowed — open backlog findings do not block convergence.
+
+Mechanized convergence (e.g., hard gate on a typed acceptance-criteria checklist tied to the PRD template) is **deliberately deferred** — see todo.md D9. Until D9 is decided, the verdict stays with the human.
+
+Forbidden:
+
+- Passing while fix-now findings remain unresolved.
+- Looping indefinitely seeking zero findings of any kind — backlog findings are not blockers (Q5).
+- Silently downgrading a fix-now finding to backlog to force a pass. Triage is logged (Q4) and visible.
+
+### Q10. Read the Seam, Not the Internals (Gray-Box QA)
+
+For modules built under the gray-box labor partition (gr_modules.md M3a), the default human QA read is the **seam**: the public interface, the boundary tests, and user-visible behavior against the PRD acceptance criteria. Internals are not read line-by-line by default.
+
+The lever is cognitive-load reduction. The human's QA budget is spent on:
+
+1. Does the seam contract match the PRD intent?
+2. Do the boundary tests cover the user paths Q2 requires?
+3. Does the running slice meet the acceptance criteria (Q9 verdict inputs)?
+
+Internals are read only when a finding points there, or when M11 depth heuristics flag suspicion (test-boundary leakage, public-API parameter bloat, exported helpers that exist only for tests).
+
+Q10 does **not** weaken `rev` (gr_review.md). `rev` still inspects the diff including internals. Gray-box reduces the human QA read, not the agent review read — the two roles diverge here intentionally.
+
+Forbidden:
+
+- Treating gray-box as license to skip `rev` of internals.
+- Declaring `pass` (Q9) without having read the seam — the seam read is mandatory; the internals read is conditional.
+- Applying Q10 to modules not built under M3a (e.g., HITL co-authored modules where the partition variant was (ii) or (iii)).
+
+### Q11. Retire Orphaned Ephemeral Artifacts Before Merge
+
+`qa` is the merge gate, so it is the right place to verify that sprint-scoped artifacts retire on the same PR that closes their owner. Two checks, mechanical:
+
+1. **Research files (3.27 / Res3 / Res4).** For each `research/<topic>.md` present in the working tree on this PR's branch, read its `owner-issue: #NNN` header. If that issue is being closed by this PR (closes keyword, manual close, or already closed), the PR **must** delete the file. A research file whose owner closed without the file being deleted is a fail-now finding under Q5, not backlog.
+2. **PRD / plan paths (3.24 / Doc11).** Verify no path matching `prd/**`, `**/PRD-*.md`, or `**/*_prd.md` exists in the diff or in the tree. PRD bodies live in the owning issue, never in the repo. Any such path is a fail-now finding.
+
+Both checks are agent-runnable in seconds (lint + issue-state read); they appear on the Q6 QA output as a single line ("ephemeral-artifact retirement: clean / dirty"). If the human is operating gray-box (Q10), Q11 is still mandatory — orphan retirement is a seam concern.
+
+Forbidden:
+
+- Merging a PR that closes the owner issue while the research file survives.
+- "We'll delete the file in a follow-up PR" — the deletion belongs in the same PR (Res3).
+- Adding a new `research/*.md` without an `owner-issue` header to silence the lint (fabricated owner = Op13).
+
 ---
 
 ## Anti-Patterns

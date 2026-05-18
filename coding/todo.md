@@ -18,8 +18,10 @@ Source documents:
 - [Workflows](#workflows)
   - No new skill needed:
     - [W6. Agentic TDD](#w6-agentic-tdd)
-    - [W11. Front-End Prototype](#w11-front-end-prototype)
+    - [W11. Front-End Prototype (superseded by W14)](#w11-front-end-prototype)
     - [W12. Coding Standards Push/Pull](#w12-coding-standards-pushpull)
+    - [W13. Research Caching](#w13-research-caching)
+    - [W14. Prototype Phase (broadened scope)](#w14-prototype-phase-broadened-scope)
   - New skill needed:
     - [W1. Grilled Design Concept](#w1-grilled-design-concept)
     - [W2. PRD](#w2-prd)
@@ -76,20 +78,22 @@ Pocock's 12 items mix **phases** (sequential delivery steps), **techniques** (us
 
 Order below: items with **no new skill required** first, then items that **need a new skill**.
 
-| #           | Pocock title               | Category         | Status  | New skill?      | Pocock reference skill                              | Maps to                        |
-| ----------- | -------------------------- | ---------------- | ------- | --------------- | --------------------------------------------------- | ------------------------------ |
-| W6          | Agentic TDD                | Technique        | done    | no (guardrail)  | —                                                   | `gr/gr_tdd.md` + §4.16 routing |
-| W11         | Front-End Prototype        | Technique        | done    | no (rule Aln17) | —                                                   | inside `aln` — Aln17           |
-| PreW12, W12 | Coding Standards push/pull | Rule/Convention  | todo    | no              | —                                                   | guardrail Op14b (exists)       |
-| W1          | Grilled Design Concept     | Phase            | todo    | yes (A1)        | "grill me" skill                                    | `aln` (exists)                 |
-| W2          | PRD                        | Phase            | todo    | yes (A2)        | "write a PRD" skill                                 | `prd` (exists)                 |
-| W3          | Issue DAG                  | Phase            | todo    | yes (A3)        | "PRD to issues" skill                               | `iss` (exists)                 |
-| W4          | Ralph Once Loop            | Execution mode   | todo    | yes (A4)        | `/ralph` skill (`~/.claude/skills/ralph/`)          | variant of `ral`               |
-| W5          | AFK Implementation Loop    | Phase            | blocked | yes (A4)        | none — `afk.sh` loop script (not a skill)           | `ral` (exists), D4 open        |
-| W7          | Fresh-Context Review       | Phase            | todo    | yes (A6)        | none named — "fresh-context automated review"       | `rev` (exists)                 |
-| W8          | Manual QA                  | **NEW Phase**    | wip     | yes (A8)        | none — human-driven phase in Pocock's walkthrough   | `qa` added, `gr_qa.md` drafted |
-| W9          | Deep-Module Architecture   | Phase/Initiative | todo    | yes (A7)        | "improve codebase architecture" skill               | `ica` (exists), D7 open        |
-| W10         | Parallel Agents            | Execution mode   | blocked | yes (A5)        | none — Sand Castle orchestration tool (not a skill) | `par` (exists), substrate TBD  |
+| #           | Pocock title               | Category         | Status     | New skill?     | Pocock reference skill                              | Maps to                                                    |
+| ----------- | -------------------------- | ---------------- | ---------- | -------------- | --------------------------------------------------- | ---------------------------------------------------------- |
+| W6          | Agentic TDD                | Technique        | done       | no (guardrail) | —                                                   | `gr/gr_tdd.md` + §4.16 routing                             |
+| W11         | Front-End Prototype        | Technique        | superseded | n/a            | —                                                   | promoted to phase `pro` — see W14                          |
+| W14         | Prototype Phase            | **NEW Phase**    | wip        | yes (A9?)      | none (Pocock phase 3)                               | `pro` added, `gr_prototype.md` + `wf/wf_prototype.md`      |
+| PreW12, W12 | Coding Standards push/pull | Rule/Convention  | todo       | no             | —                                                   | guardrail Op14b (exists)                                   |
+| W1          | Grilled Design Concept     | Phase            | todo       | yes (A1)       | "grill me" skill                                    | `aln` (exists)                                             |
+| W2          | PRD                        | Phase            | todo       | yes (A2)       | "write a PRD" skill                                 | `prd` (exists)                                             |
+| W3          | Issue DAG                  | Phase            | todo       | yes (A3)       | "PRD to issues" skill                               | `iss` (exists)                                             |
+| W4          | Ralph Once Loop            | Execution mode   | todo       | yes (A4)       | `/ralph` skill (`~/.claude/skills/ralph/`)          | variant of `ral`                                           |
+| W5          | AFK Implementation Loop    | Phase            | blocked    | yes (A4)       | none — `afk.sh` loop script (not a skill)           | `ral` (exists), D4 open                                    |
+| W7          | Fresh-Context Review       | Phase            | todo       | yes (A6)       | none named — "fresh-context automated review"       | `rev` (exists)                                             |
+| W8          | Manual QA                  | **NEW Phase**    | wip        | yes (A8)       | none — human-driven phase in Pocock's walkthrough   | `qa` added, `gr_qa.md` drafted                             |
+| W9          | Deep-Module Architecture   | Phase/Initiative | todo       | yes (A7)       | "improve codebase architecture" skill               | `ica` (exists), D7 open                                    |
+| W10         | Parallel Agents            | Execution mode   | blocked    | yes (A5)       | none — Sand Castle orchestration tool (not a skill) | `par` (exists), substrate TBD                              |
+| W13         | Research Caching           | Phase (optional) | wip        | no (yet)       | none named — Pocock phase 2 + `research.md` cache   | `res` added, `gr_research.md` drafted, §3.27 + §4.17 added |
 
 Each item below: **what exists**, **what's missing**, **next step**. Detail per item handled in a fresh chat context.
 
@@ -110,14 +114,29 @@ Beyond the 12 items, the orchestration that chains them (e.g., `grill-me` → `w
 
 ### W11. Front-End Prototype
 
-- Status: **done** (Aln17 added to `gr_alignment.md`).
-- Category: **Technique** (used inside `aln`).
-- Artifacts:
-  - [`gr/gr_alignment.md`](gr/gr_alignment.md) Aln17 — short rule: prototype decision made in `aln`, scope-limited to genuinely visual ambiguity, output feeds Aln12/Aln15.
-  - [`wf/wf_fe_prototype.md`](wf/wf_fe_prototype.md) — full workflow: when/inputs/steps/outputs/tradeoffs/failure modes. First entry in the new `wf/` folder (see todo.md preamble).
-- Resolves: D8 (artifact form = rule + workflow doc, not skill).
-- Side-effect: seeds the `workflow.md` + `wf/` split foreshadowed in the workflows section preamble. `workflow.md` index doc not yet written.
-- Follow-up: when more workflow docs land (W6 TDD already detailed inline in `gr/gr_tdd.md` — different pattern), decide whether to retro-create `workflow.md` index.
+- Status: **superseded** by W14 (2026-05-17). Aln17 deleted; prototype promoted from `aln`-technique to first-class phase `pro` with broadened scope (FE + architecture + integration). All historical context now lives in W14.
+- Historical note: originally landed 2026-05-15 as Aln17 + `wf/wf_fe_prototype.md`, scope-limited to genuinely visual ambiguity. Pocock's 7-phases doc made prototype a phase (not a technique) and covered arch + external-service shape — gap closed in W14. `wf_fe_prototype.md` renamed to `wf_prototype.md`.
+
+### W14. Prototype Phase (broadened scope)
+
+- Status: **wip** (phase + core rule + detail doc + workflow doc done; skill, retirement enforcement, integration with `aln`/`res` skills pending).
+- Category: **Phase (optional)** — code `pro`. Optional sequential between `aln`/`res` and `prd`; entry from either `aln` (design ambiguity) or `res` (build-to-learn spike). HITL only (Pro6).
+- Pocock reference: phase 3 of the 7-phases doc (see [the-7-phases-of-ai-driven-development.md](the-7-phases-of-ai-driven-development.md)) — "Prototype as Taste-Imposition Step" + "Prototype Variant Generation". No named Pocock skill.
+- Exists: phase `pro` in [phases.md](phases.md); core rule 3.28 + routing §4.18 + parallel-table row in [guardrails.md](guardrails.md); detail doc [gr/gr_prototype.md](gr/gr_prototype.md) (Pro1–Pro8); workflow doc [wf/wf_prototype.md](wf/wf_prototype.md) covering all three flavors; cross-ref Res10 in [gr/gr_research.md](gr/gr_research.md).
+- Trigger gate (Pro1): irreversibility OR cost asymmetry. Replaces the deleted Aln17 "genuinely visual" gate.
+- Flavors (Pro2): FE/UX, architecture, integration — one flavor per `pro` invocation.
+- Missing: skill (new A9? — `prototype` skill that asks Pro1 questions, generates 2–3 variants, runs Pro7 hidden-constraint check, presents to human, captures Aln15 negative decisions, enforces Pro3 deletion); retirement enforcement for prototype sandboxes — likely mirror of W13's resolved mechanism (`owner-issue` field on sandbox dir + `qa` Q11-style check that fails if sandbox path survives merge), but sandbox = directory not single file, so apply with care; variant template (new C-entry?) for presenting variants to humans with observable-facts-only framing (Pro4); decision on whether `pro` invoked from `res` writes its captured facts directly into the `research/<topic>.md` file or returns them for `res` to persist.
+- Next: build prototype skill; design sandbox retirement enforcement by adapting W13's `owner-issue` + Q11 pattern (see `consider_7_phases_todo.md` Item 8) to directories; flesh out the rejected-variant capture format and wire it into A1 (`grill-me`) so prototype output feeds back into alignment without leaving the alignment skill.
+- Resolves: D8-bis (prototype as phase, not technique). Pocock alignment confirmed.
+
+### W13. Research Caching
+
+- Status: **wip** (phase + core rule + detail doc + retirement enforcement done; skill, template pending).
+- Category: **Phase (optional)** — code `res`. Optional sequential between `aln` and `prd`; can also fire mid-`aln` when grilling stalls on external-dependency facts.
+- Pocock reference: phase 2 of the 7-phases doc (see [the-7-phases-of-ai-driven-development.md](the-7-phases-of-ai-driven-development.md)) — no named Pocock skill.
+- Exists: phase `res` in [phases.md](phases.md); core rule 3.27 + routing §4.17 in [guardrails.md](guardrails.md); detail doc [gr/gr_research.md](gr/gr_research.md); subagent dispatch B10 (existing); retirement enforcement = `owner-issue` provenance field (Res4) + pre-commit lint + `qa` Q11 merge-gate check (resolved 2026-05-18, see `consider_7_phases_todo.md` Item 8).
+- Missing: skill `do-research` (new A9?) — gathers facts via subagent, writes `research/<topic>.md` with Res4 provenance header; template (new C6?) for the research file shape including the `owner-issue` field; decision on whether `iss` decomposition should reference the research file path explicitly; pre-commit lint implementation (mechanical, deferred to substrate decision D1).
+- Next: build A9 + C6; wire B10 dispatch into A1 (`grill-me`) so alignment can spawn research without leaving `aln`; implement the `owner-issue` lint once skill substrate (D1) is settled.
 
 ### Pre-W12. Review standards guardrails sources
 
@@ -360,12 +379,13 @@ Beyond the 12 items, the orchestration that chains them (e.g., `grill-me` → `w
 
 - D1. Skill substrate — Claude Code skills only, or also `AGENTS.md`-style instructions, or both? Affects how push/pull is implemented.
 - D2. Reviewer process — confirmed: same process, fresh context (current). Reassess once Sand-Castle-style orchestration is in scope.
-- D3. PRD retention — keep in repo (risk: doc rot) vs. close in issue tracker. Default position: do not keep PRDs in working tree; archive via closed issues.
+- D3. **Resolved** (2026-05-17, enforcement closed 2026-05-18) — answered by guardrail 3.24: PRDs are stored externally (e.g. GitHub Issues) and closed when done; not retained in working tree. Same shape extended to research files by 3.27 (deleted at sprint/feature close). Enforcement: pre-commit lint (PRD paths forbidden in-tree; research files require `owner-issue` field) + `qa` Q11 merge-gate check verifies owner-issue close triggers research deletion. See `consider_7_phases_todo.md` Item 8.
 - D4. AFK sandbox — pick a sandboxing approach (Docker, Windows job objects, worktree-only). Affects Gov11 and `ralph-loop` precondition.
 - D5. Model selection per role — confirm pattern (stronger model for review, faster for implementation) and how it is enforced.
 - D6. Token-status visibility — adopt a status-line / token-meter so context proximity to dumb zone is visible (Pocock Experiment 1).
 - D7. Proactive `ica` before feature work — Pocock's #1 recommendation: run `improve-codebase-architecture` *before* starting new feature work, not only reactively. Currently tracked as a skill (A7) and phase (`ica` in `phases.md`), but no guardrail mandates or suggests running it proactively. Decision: guardrail-level rule, workflow guidance, or leave as skill-level suggestion?
 - D8. **Resolved** (2026-05-15) — added as Aln17 in `gr/gr_alignment.md`. Throwaway 2–3 FE prototypes when visual/UX ambiguity blocks alignment; decision made in `aln`. Skill form rejected (over-prescription risk).
+- D9. QA loop convergence — currently human-verdict (3.30 / Q9). Decide later whether to add a mechanized option: typed acceptance-criteria checklist tied to PRD template C1, hard-gated. Postponed until C1 lands and a few QA sessions are observed. Trigger to revisit: repeated drift in pass verdicts or AFK-mode runs needing gate-able criteria.
 
 ---
 

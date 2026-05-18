@@ -8,9 +8,21 @@ Each phase is backed by a concrete skill, command, or template. The agent is nev
 
 ## 1. Sequential Phases
 
+### ide — Idea
+
+Distill a raw brief, backlog item, or stakeholder ask into **3–6 major goals** that anchor the rest of the pipeline. No details (no module map, no APIs, no UX specifics, no acceptance criteria). Negative goals welcome. HITL only. Output feeds `aln` grilling; it does not replace it. Ephemeral — folded into the PRD's Goals section once `prd` lands; no in-tree artifact. Collapsible (3.29) when the upstream artifact already names goals explicitly.
+
 ### aln — Alignment
 
 Reach alignment / shared design concept between human and agent before any planning artifact exists.
+
+### res — Research (Optional)
+
+Cache hard-to-recover external knowledge (third-party APIs, uncommon services, unfamiliar codebase regions) into a sprint-scoped `research/<topic>.md` so downstream agent runs don't re-explore from a fresh context window. Optional: only triggered when `aln` surfaces external-dependency unknowns the agent must answer with facts. Artifact is **deleted at sprint close** (see `gr/gr_research.md` Res3) — distinct from PRDs which move to external trackers.
+
+### pro — Prototype (Optional)
+
+Resolve a hard-to-reverse design decision by building 2–3 throwaway variants and letting the human pick. Optional: only triggered when grilling cannot resolve the decision in words AND the Pro1 gate holds (irreversibility OR cost asymmetry — wrong-choice cost >> 2–3 throwaway variants). Three flavors: FE/UX, architecture, integration (see `gr/gr_prototype.md` Pro2). Entry from `aln` (design ambiguity) or `res` (build-to-learn spike). Sandbox code is **deleted before** production impl (Pro3). HITL by construction (Pro6).
 
 ### prd — Destination Doc
 
@@ -54,7 +66,10 @@ Scan the repo for opportunities to deepen modules / consolidate test boundaries.
 
 | Phase | Bucket(s)                             |
 | ----- | ------------------------------------- |
+| ide   | Plan                                  |
 | aln   | Plan                                  |
+| res   | Plan                                  |
+| pro   | Plan                                  |
 | prd   | Plan                                  |
 | iss   | Plan                                  |
 | ral   | Implement                             |
@@ -70,13 +85,21 @@ Scan the repo for opportunities to deepen modules / consolidate test boundaries.
 ## 4. Phase Sequence (Typical)
 
 ```
-aln → prd → iss → (ral | par) → qa ─┬─ pass → done
-                   ▲                 │
-                   └─ fix-now ◄──────┘
-                   └─ backlog ─ done (issue filed for later)
-                                    ^
-                                    └── rev and ica may run at any point
+ide → aln → [res?] → [pro?] → prd → iss → (ral | par) → qa ─┬─ pass → done
+              ▲        ▲                   ▲                 │
+              │        │                   └─ fix-now ◄──────┘
+              │        │                   └─ backlog ─ done (issue filed for later)
+              │        │                                     ^
+              │        │                                     └── rev and ica may run at any point
+              │        └─ may also be invoked from res (build-to-learn spike)
+              └─ may also fire mid-aln when grilling stalls on facts
 ```
+
+`ide` produces 3–6 major goals from the raw brief. Collapses to a one-line confirmation when the upstream brief already names goals explicitly (per 3.29). Output is folded into the PRD's Goals section; no in-tree artifact survives.
+
+`res` is optional and fires only when `aln` surfaces external-dependency unknowns (see `gr/gr_research.md` Apply When). `res` may also fire mid-`aln` if grilling cannot proceed without the facts.
+
+`pro` is optional and fires only when grilling cannot resolve a design decision in words AND the Pro1 gate holds (irreversibility OR cost asymmetry — see `gr/gr_prototype.md`). Entry from `aln` (design ambiguity) or `res` (build-to-learn spike). `pro` returns a chosen direction; rejected variants are recorded as Aln15 negative decisions.
 
 `ral` and `par` are alternative modes of the same implementation step, chosen per task. Not both at once.
 

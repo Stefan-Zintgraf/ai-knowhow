@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(findstr /N /R \"aln prd iss ral par qa rev ica res\" c:\\\\PROJ\\\\ai-knowhow\\\\coding\\\\AI_Coding_Workflow.md)",
+      "Bash(findstr /V \"^$\")"
+    ]
+  }
+}

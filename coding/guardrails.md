@@ -34,7 +34,7 @@ Weakness in any factor creates risk. The guardrails address **Constraints**; the
 
 Apply to every AI-assisted planning or implementation task. Each entry is a headline plus a one-line rule. Detail and nuance live in the referenced category document.
 
-**Phase relevance.** Each rule carries a `Fires:` line showing how strongly the rule applies in each workflow bucket. Values: `none`, `low`, `medium`, `high`. Buckets are **Plan**, **Implement**, **Verify**. Workflow phases (aln, prd, iss, ral, par, rev, ica) and their mapping to these buckets are defined in [phases.md](phases.md). A rule never disappears — `none` means the rule rarely produces decisions in that bucket, not that it can be ignored.
+**Phase relevance.** Each rule carries a `Fires:` line showing how strongly the rule applies in each workflow bucket. Values: `none`, `low`, `medium`, `high`. Buckets are **Plan**, **Implement**, **Verify**. Workflow phases (ide, aln, res, pro, prd, iss, ral, par, qa, rev, ica) and their mapping to these buckets are defined in [phases.md](phases.md). A rule never disappears — `none` means the rule rarely produces decisions in that bucket, not that it can be ignored.
 
 ### 3.1 Minimize Scope
 
@@ -117,7 +117,7 @@ Fires: Plan=high, Implement=high, Verify=high
 When the agent believes a user instruction violates a guardrail, contradicts evidence, or risks regression, it states the disagreement with reasoning before complying. Silent compliance is forbidden. See [gr/gr_governance.md](gr/gr_governance.md).
 
 ### 3.17 Push for Reviewer, Pull for Implementer
-
+I
 Fires: Plan=low, Implement=medium, Verify=high
 Coding-standard and guardrail detail documents are **pulled** on demand by the implementer (kept out of the always-on context) and **pushed** into the reviewer's context up front. Always-on context is kept minimal so work starts in the smart zone. See [gr/gr_operational.md](gr/gr_operational.md) (Op14a, Op14b) and [gr/gr_review.md](gr/gr_review.md).
 
@@ -154,7 +154,7 @@ Tasks must be sliced vertically (crossing UI, API, DB layers) to deliver testabl
 ### 3.24 Prevent Documentation Rot (Retire PRDs)
 
 Fires: Plan=high, Implement=low, Verify=none
-Old PRDs and plans must not be kept indefinitely in the repository files where they can mislead future agents. Store journey documents and PRDs externally (e.g. GitHub Issues) and close them when done. See [gr/gr_documentation.md](gr/gr_documentation.md).
+Old PRDs and plans must not be kept indefinitely in the repository files where they can mislead future agents. Store journey documents and PRDs externally (e.g. GitHub Issues) and close them when done. Enforcement: paths matching `prd/**`, `**/PRD-*.md`, or `**/*_prd.md` are forbidden in the working tree (pre-commit lint); the PRD body lives in the owning issue, not in the repo. See [gr/gr_documentation.md](gr/gr_documentation.md).
 
 ### 3.25 Clear Context Over Compaction
 
@@ -164,7 +164,37 @@ The agent must start fresh sessions (clear context) instead of summarizing long 
 ### 3.26 Plan via Dependency Graphs (DAGs)
 
 Fires: Plan=high, Implement=none, Verify=none
-When decomposing a PRD into tasks, the agent must create an issue DAG (Directed Acyclic Graph) with explicit blocking relationships. Sequential multi-phase plans are forbidden because they serialize work. Each issue must be independently grabbable. See [gr/gr_governance.md](gr/gr_governance.md).
+When decomposing a PRD into tasks, the agent must structure the plan as an issue DAG (Directed Acyclic Graph) of independently grabbable issues with explicit blocking edges. What is forbidden is **plan shape that bakes in forced ordering not justified by real blocking edges** ("Phase 1, Phase 2, Phase 3" lists). **Execution mode is orthogonal:** sequential execution over a DAG (single-agent `ral`) is allowed and often preferred; parallel execution (`par`) is a bonus when blocking edges permit. See [gr/gr_governance.md](gr/gr_governance.md).
+
+### 3.27 Retire Research Artifacts
+
+Fires: Plan=high, Implement=low, Verify=low
+Sprint-scoped research files (`research/<topic>.md`) are cached external knowledge, not durable documentation. They must be **deleted** when the sprint or feature closes — stale research actively misleads future agent runs because it looks authoritative but reflects yesterday's API or codebase. Distinct from 3.24 (PRDs move to external trackers); research files live in the working tree briefly, then are removed outright. Enforcement: every `research/<topic>.md` declares a single `owner-issue: #NNN` (the PRD/feature epic) in its Res4 provenance header; pre-commit lint rejects a research file without the field. Retirement trigger = owner issue closes → the same PR that closes the feature deletes the file, verified by Q11 in `qa`. See [gr/gr_research.md](gr/gr_research.md).
+
+### 3.28 Prototype Hard-to-Reverse Decisions
+
+Fires: Plan=high, Implement=low, Verify=low
+When grilling cannot resolve a design decision in words AND either (a) the decision is hard / expensive to reverse once code lands, OR (b) the wrong-choice cost vastly exceeds the cost of building 2–3 throwaway variants, the agent enters phase `pro`: produce 2–3 disposable variants (FE/UX, architecture, or integration — one flavor per invocation), let the human pick, record rejected variants as negative decisions, **delete the sandbox before** production impl begins. Agent does not self-judge. `pro` is HITL by construction. See [gr/gr_prototype.md](gr/gr_prototype.md).
+
+### 3.29 Right-Size the Workflow (Phase-Skip Mode)
+
+Fires: Plan=high, Implement=low, Verify=low
+The full pipeline is scale-invariant — trivial tasks **collapse** each phase to seconds rather than skip phases by default. Skipping is allowed only via an explicit mode selected at task entry, coupled to the HITL/AFK label: **AFK → (c) agent decides skips** (gated by Gov5a eligibility); **HITL → agent asks** the human to pick (a) full / (b) human-skips / (c) agent-skips. Unlabeled tasks default to HITL-ask. When (b) or (c) would skip a phase that gates a tripwire surface — public API, schema, auth, security, safety-critical, concurrency, broad architecture — the agent **must** flag and wait. Silent skipping is forbidden. See [gr/gr_governance.md](gr/gr_governance.md) (Gov5b).
+
+### 3.30 Converge the QA Loop on Human Verdict
+
+Fires: Plan=none, Implement=low, Verify=high
+The plan → execute → QA loop (`iss → ral|par → qa → fix-now → iss` or pass) terminates on an explicit human verdict, not a mechanized checklist. Pass requires (a) zero fix-now findings remaining and (b) PRD intent met in the human's judgment; `pass-with-backlog` is allowed — backlog findings do not block convergence. Silent downgrading of fix-now → backlog to force a pass is forbidden. Mechanized convergence (typed AC-checklist gate) is deferred (todo.md D9). See [gr/gr_qa.md](gr/gr_qa.md) (Q9).
+
+### 3.31 Gray-Box Labor Partition
+
+Fires: Plan=high, Implement=high, Verify=high
+Deep modules are built under a default labor partition: **human owns the interface and boundary tests; agent owns the internals; source stays visible** (gray, not black — the human may step in but does not have to). Partition applies by default to AFK-eligible work (Gov5a); HITL work requires the agent to **ask** which partition variant to use — silent assumption is forbidden. QA consequence: human reads the seam (interface + boundary tests + AC), not internals line-by-line; `rev` of internals is unchanged. See [gr/gr_modules.md](gr/gr_modules.md) (M3a) and [gr/gr_qa.md](gr/gr_qa.md) (Q10).
+
+### 3.32 Distill the Brief into 3–6 Goals (Idea Phase)
+
+Fires: Plan=high, Implement=none, Verify=none
+Before `aln` grilling begins, the agent distills the incoming brief / backlog item / stakeholder ask into **3–6 major goals** (phase `ide`). No details (no module map, no APIs, no UX specifics, no acceptance criteria). Negative goals welcome. HITL only — agent proposes, human edits. Output anchors `aln` but does not replace it. Ephemeral: folded into the PRD's Goals section, no in-tree artifact. Collapsible (3.29) when the upstream brief already names goals explicitly. See [gr/gr_idea.md](gr/gr_idea.md).
 
 ---
 
@@ -267,6 +297,24 @@ Detail: [gr/gr_alignment.md](gr/gr_alignment.md)
 Purpose: enforce the Red-Green-Refactor loop, false-green verification, and mock discipline that keep an autonomous implementation loop honest.
 Apply when: any task in `ral` / `par` that produces or modifies executable logic; reviews (`rev`) that must verify the loop was followed; bug fixes (failing reproduction test first); legacy refactors (characterization tests first).
 Detail: [gr/gr_tdd.md](gr/gr_tdd.md)
+
+### 4.17 Research
+
+Purpose: cache hard-to-recover external knowledge into a sprint-scoped artifact so downstream agent runs don't re-explore from a fresh context window — and retire the artifact before it rots.
+Apply when: phase `res` is entered; `aln` grilling surfaces an external-dependency unknown (third-party API, uncommon SDK, unfamiliar codebase region) the agent must answer with facts; review (`rev`) of work that consumed a `research.md`.
+Detail: [gr/gr_research.md](gr/gr_research.md)
+
+### 4.19 Idea
+
+Purpose: distill a raw brief into 3–6 major goals that anchor `aln` grilling, without leaking detail into the pre-design phase.
+Apply when: phase `ide` is entered; a brief, Slack note, ticket, or vague backlog item enters the workflow; before any `aln` grilling begins.
+Detail: [gr/gr_idea.md](gr/gr_idea.md)
+
+### 4.18 Prototype
+
+Purpose: resolve hard-to-reverse design decisions by building 2–3 throwaway variants and letting the human pick, instead of pretending grilling can settle every ambiguity.
+Apply when: phase `pro` is entered; `aln` grilling stalls on a decision and the agent considers whether the Pro1 trigger (irreversibility OR cost asymmetry) holds; `res` surfaces a question only a build-to-learn spike can answer; review (`rev`) of work that consumed a prototype (verify sandbox deleted, human picked, no fabricated integration responses).
+Detail: [gr/gr_prototype.md](gr/gr_prototype.md)
 
 ---
 
@@ -408,9 +456,15 @@ Several core rules in §3 are also stated in a `gr/gr_*.md` detail document. Bot
 | 3.21 Reach Alignment Before Planning Artifacts | Aln1–Aln6          |
 | 3.22 Strict Test-Driven Development (TDD)      | TDD1, TDD2         |
 | 3.23 Enforce Vertical Slices                   | Gov1a              |
-| 3.24 Prevent Documentation Rot                 | Doc11              |
+| 3.24 Prevent Documentation Rot                 | Doc11, Q11         |
 | 3.25 Clear Context Over Compaction             | Op15               |
 | 3.26 Plan via Dependency Graphs (DAGs)         | Gov1b              |
+| 3.27 Retire Research Artifacts                 | Res1, Res3, Res4, Q11 |
+| 3.28 Prototype Hard-to-Reverse Decisions       | Pro1, Pro3, Pro4   |
+| 3.29 Right-Size the Workflow (Phase-Skip Mode) | Gov5b              |
+| 3.30 Converge the QA Loop on Human Verdict     | Q9                 |
+| 3.31 Gray-Box Labor Partition                  | M3a, Q10           |
+| 3.32 Distill the Brief into 3–6 Goals          | Idea1–Idea7        |
 
 **Convention.** §3 entries stay short (headline + one-line rule). Longer prose, nuance, and anti-patterns live in the detail doc. Drift surface is then limited to the headline and one-liner.
 

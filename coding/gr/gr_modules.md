@@ -31,6 +31,24 @@ When designing or proposing a module, name and shape its public interface first.
 
 Callers know the module's shape, behavior, and contract. They do not know its internals. The agent must not reach past the public interface (cross-reference: A4 module boundaries, A3 no bypass).
 
+### M3a. Gray-Box Labor Partition
+
+Default partition for a deep module, building on M3:
+
+- **Human owns the interface** — name, signature, contract, error states (cross-reference: M2, Doc12).
+- **Human owns the boundary tests** — written before implementation, locked to public behavior (cross-reference: M5, TDD2).
+- **Agent owns the internals** — implementation inside the module is delegated. The agent's job is to make the boundary tests pass without leaking implementation past the seam.
+- **Source stays visible.** Gray, not black: the human may step in to apply taste, enforce constraints, or optimize a bottleneck, but does not have to.
+
+**Coupling to autonomy label (3.20 / Gov5a):**
+
+- **AFK-eligible work** — partition applies by default. The agent implements internals without per-step human review; boundary tests are the feedback loop.
+- **HITL work** — partition is not automatic. The agent **must ask** the human to pick: (i) full gray-box (human writes iface + tests, agent fills), (ii) co-author iface and tests then agent fills, or (iii) joint authorship throughout. Silent assumption of partition is forbidden.
+
+The QA consequence is in gr_qa.md Q10: human QA reads the seam (interface + boundary tests + AC), not internals line-by-line. `rev` of internals is unchanged — gray-box reduces the human QA read, not the agent review read.
+
+Cross-reference: M2 (interface first), M3 (gray-box discipline), M5 (boundary tests), M6 (module map in `aln`/`prd`), Gov5a (AFK eligibility), Q10 (seam-only QA read).
+
 ### M4. Anti-Pattern: Shallow Modules with Tangled Dependencies
 
 Avoid: many small files each exposing many small pieces, with dense cross-module arrows. This forces every consumer (human or agent) to trace a dependency graph to understand what one call does. It also produces unclear mocking decisions in tests.

@@ -61,7 +61,7 @@ When the grilling needs facts about the existing codebase, the agent uses a suba
 
 ### Aln8. Treat Stakeholder Brief as Input, Not Truth
 
-The original brief (Slack message, ticket, email) is the prompt for alignment — not the alignment itself. The agent does not implement directly from a brief. Grilling is mandatory before any planning artifact is written.
+The original brief (Slack message, ticket, email) is the prompt for alignment — not the alignment itself. The agent does not implement directly from a brief. Grilling is mandatory before any planning artifact is written. The brief is normally distilled into 3–6 major goals during the upstream `ide` phase (cross-reference: gr_idea.md Idea1) — `aln` grills against those goals, not against the raw brief.
 
 ### Aln9. Length of Grilling Is Open-Ended
 
@@ -101,18 +101,6 @@ Decisions to *not* do something are recorded explicitly in the alignment artifac
 
 During the grilling session, the agent maintains and displays a visual map of the decision tree (e.g., a Mermaid `graph TD`). The graph shows the root goal, walked branches (decisions made), and pending branches (unresolved questions). This keeps the human oriented and exposes missed constraints.
 
-### Aln17. Throwaway Front-End Prototypes for Visual Ambiguity
-
-When alignment hits a visual or UX decision that cannot be resolved in words (layout, interaction shape, information density), the agent proposes generating 2–3 disposable front-end prototypes as alignment input. The **decision to prototype is made during `aln`**, not deferred to implementation.
-
-Procedure, inputs, outputs, and failure modes are defined in [`wf/wf_fe_prototype.md`](../wf/wf_fe_prototype.md). Key bindings to alignment:
-
-- Prototype output feeds back into grilling — chosen direction becomes a normal alignment outcome (Aln12 module map; Aln15 negative decisions for rejected variants).
-- Prototype code is throwaway. Deletion before production impl is mandatory.
-- Human / domain expert drives variant selection — agent does not self-judge mature FE quality.
-
-Applies only when the ambiguity is genuinely visual. Backend, data, or contract decisions are resolved by grilling, not by prototypes.
-
 ---
 
 ## Anti-Patterns
@@ -138,3 +126,4 @@ Applies only when the ambiguity is genuinely visual. Backend, data, or contract 
 - Aln12 feeds gr_modules.md M6 — module map is owned by alignment.
 - Aln13 pairs with Core rule 3.4 (make assumptions visible) — alignment is where assumptions are surfaced and resolved.
 - Aln14 specializes Core rule 3.7 (stop on high-risk decisions) for the planning side.
+- Aln8 receives the upstream output of `ide` (gr_idea.md Idea6): grilling targets the 3–6 goals, not the raw brief.
