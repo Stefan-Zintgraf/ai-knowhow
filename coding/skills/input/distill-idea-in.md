@@ -9,107 +9,81 @@ phase: ide
 status: todo
 workflow_ref: W15
 depends_on: []
-feeds_into: [A1-grill-me]
+feeds_into: [A1]  # A1 grill-me consumes the goal list as grilling target
 ```
-
----
 
 ## Scope
 
-The skill does **one** thing: turn a raw brief into a confirmed list of 3–6 major goals, then report success.
+Distill a raw brief, backlog item, Slack note, ticket, or vague stakeholder ask into a list of **3–6 major goals** that will anchor downstream `aln` grilling.
 
-The skill does **not**:
+Does NOT:
 
-- Manage phase transitions or name downstream phases in its output.
-- Hand off to, invoke, or describe `aln`, `prd`, or any other phase.
-- Decide whether the workflow proceeds.
-
-Phase orchestration is the caller's job. The skill's return is just: the goal list, plus a success signal.
-
----
+- Produce module map, file paths, API shapes, UX specifics, acceptance criteria, tech choices, or effort estimates (those belong to `aln` / `prd` / `iss`).
+- Write any file to the working tree (output is ephemeral per Idea7).
+- Run any grilling, research, or design step itself — it only frames goals.
+- Decide whether to invoke `ide` at all, or what phase comes next (that is the caller's / phase-orchestration concern).
+- Run AFK / Ralph-loop / autonomous mode — HITL only by construction.
 
 ## Self-Containment Mandate
 
-The output skill must run **without** `gr/gr_idea.md`, `phases.md`, or `guardrails.md` in context or on disk. Every rule the skill needs at runtime must be **inlined** into the skill file. No links to source docs. No "see X" references. The skill is a leaf artifact.
-
-Source docs below are author-time scaffolding only — read them, distill them, embed the distilled content into the skill.
-
----
+The compiled runtime skill MUST run with only its own file in context — no source-document lookups. Every Hard Rule, behavior step, forbidden-token list, and collapse-mode trigger from the sources below MUST be inlined verbatim into the compiled skill. The compiled skill must not contain "see gr/gr_idea.md" / "see guardrails.md" / "per §3.32" references. Source docs are author-time scaffolding only.
 
 ## Source Documents (author-time only)
 
-| File | Relevant sections |
-|------|-------------------|
-| `gr/gr_idea.md` | Idea1, Idea2, Idea3, Idea4, Idea5, Idea7 (Idea6 is phase-coupling — skip), Anti-Patterns |
-| `guardrails.md` | §3.32 (substance of the rule — strip phase-routing language) |
-
-Note: `phases.md` and §3.29 / §4.19 are phase-management concerns. Out of scope for this skill — do not embed.
-
----
+| File            | Relevant sections                                |
+| --------------- | ------------------------------------------------ |
+| `gr/gr_idea.md` | Apply When; Idea1–Idea7; Anti-Patterns; Notes    |
+| `phases.md`     | §1 `ide — Idea`; §4 sequence diagram (ide → aln) |
+| `guardrails.md` | §3.32 (idea); §4.19 (routing); §3.29 (collapse)  |
 
 ## Content That Must Be Embedded in the Output Skill
 
 ### Rules (inline as Hard Rules, no source references)
 
-1. Output is **3–6 major goals**.
-2. **No details**: no module names, file paths, API shapes, UX specifics, acceptance criteria, tech choices, or effort/timeline estimates.
-3. **Negative goals are first-class** and count toward the 3–6 budget when they materially shape the work.
-4. **HITL only** — no AFK execution. Wait for explicit human acceptance.
-5. **Brief is input, not output** — even a clean brief gets restated as a goal list.
-6. **Artifact written to `plan/<WI>/idea.md`** — on human acceptance, persist the confirmed goal list. `<WI>` is a unique work-item slug (e.g. `ai_mail`, `fix_crash_abc`). The skill prompts the human for `<WI>`, suggesting a slug derived from the brief; the human confirms or overrides. Create the directory if missing. No writes on failure.
-
----
+1. Output is a list of **between 3 and 6 major goals** — never fewer than 3, never more than 6.
+2. Fewer than 3 candidate goals → the brief is too narrow for goal framing; report that the work should go directly to `aln` with the raw brief and stop.
+3. More than 6 candidate goals → decompose or merge before presenting; do not present a >6 list and ask the human to trim.
+4. Each goal names *what the work must serve*, never *how*.
+5. Forbidden in goal text: module names, file paths, API shapes, UX specifics (screens, components, layouts), acceptance criteria, tech choices (library X, pattern Y), effort or timeline estimates.
+6. If a detail leaks from the brief, strip it from the goal and note it once as "deferred to aln/prd" — do not silently retain.
+7. Explicit non-goals (negative goals) are first-class and count toward the 3–6 budget when they materially shape the work.
+8. HITL only. The skill proposes; the human edits, accepts, or rejects. Never finalize without explicit human acceptance.
+9. The original brief is **input**, not output. Even a well-written brief gets restated as a 3–6 goal list — the act of distilling surfaces missing goals and unstated assumptions.
+10. The goal list is the *starter* for downstream grilling, not a substitute. Do not produce design content, PRD content, issue content, or any artifact beyond the goal list itself.
+11. The goal list is **ephemeral**. Do not write `idea/<topic>.md`, `plan/<WI>/idea.md`, or any other in-tree file. Output is conversational only.
+12. **Collapse mode.** If the upstream artifact (memo, ticket body, PRD draft) already names 3–6 explicit goals, do NOT run a full distillation pass. Quote the existing goals back in a one-line confirmation, ask the human to accept or amend, and stop.
 
 ## Skill Behaviors
 
-In order:
-
-1. **Pre-structured-input check (hybrid).**
-   Heuristically scan the input for a candidate goal list (3–6 outcome-shaped bullets, no detail leakage). If it fires, ask the human: "Input already looks like 3–6 goals: [list]. Treat as the confirmed goal list, or run full distillation?" If the human picks "treat as confirmed," skip to step 6 with that list. Otherwise proceed. If the heuristic does not fire, proceed silently.
-
-2. **Distillation pass.**
-   Read the raw input (Slack note, ticket, email, transcript, freeform brief). Produce a draft list of 3–6 major goals. Each names *what the work must serve*, not *how*.
-
-3. **Detail-leak strip.**
-   Remove from the draft any goal containing module names, file paths, API shapes, UX specifics, acceptance criteria, tech choices, or estimates. Append a one-line note per stripped item: "Stripped detail: [item]."
-
-4. **Negative goal capture.**
-   Identify explicit exclusions in the brief ("not a mobile app", "no real-time updates"). Promote them to the goal list as negative goals.
-
-5. **Count gate.**
-   If draft count < 3: report that the brief may be too narrow for goal-shaped framing and return without a goal list (success=false, reason="under-budget"). If draft count > 6: prompt the human to merge or drop goals before proceeding.
-
-6. **HITL accept.**
-   Present the draft list to the human for edit / accept / reject. Do not finalize until the human explicitly accepts. Forbidden: auto-accepting, treating brief acknowledgement as acceptance.
-
-7. **Work-item slug + write.**
-   Derive a candidate `<WI>` slug from the brief (short, snake_case, e.g. `ai_mail`, `fix_crash_abc`). Prompt the human: "Work-item slug? Suggested: `<slug>`." Accept confirm or override. Create `plan/<WI>/` if missing. Write the confirmed goal list to `plan/<WI>/idea.md`.
-
-8. **Return.**
-   Emit:
-   - The confirmed goal list (numbered, one line each).
-   - Path written: `plan/<WI>/idea.md`.
-   - A success signal: `status: ok` plus one-line summary ("Produced N goals from brief.").
-   On failure (under-budget, human rejected, no acceptance reached), write nothing and emit `status: not_produced` plus the reason. No phase names. No "next step" language.
-
----
+1. Read the raw brief (provided inline, pasted, or referenced by the human).
+2. **Collapse check.** Scan the brief for an explicit goal list of 3–6 items. If found: quote them back verbatim, ask the human to confirm/amend in one turn, stop on acceptance. Skip steps 3–7.
+3. **Distill.** Read the brief and identify the small set of intents (positive + negative) the work must serve. Strip every implementation detail per Rule 5; for each stripped detail, hold it for the closing "deferred to aln/prd" note.
+4. **Size.** If candidates < 3, report "too narrow for goal framing; proceed to `aln` with the brief directly" and stop. If candidates > 6, merge / decompose internally to land in [3, 6] before presenting.
+5. **Present.** Show the proposed 3–6 goal list to the human, with each goal one sentence, no nested bullets, no detail. Mark negative goals explicitly (e.g. "Non-goal: …"). Append the one-line "deferred to aln/prd" note if any details were stripped.
+6. **HITL.** Wait for explicit human accept / edit / reject. Iterate on edits. Do not assume silence = acceptance.
+7. **Return.** On accept, emit the final goal list as the skill's return value (conversational text). Do not write any file. Do not invoke `aln` or any other phase — return control to the caller.
 
 ## Constraints (must appear as Hard Rules inside the skill)
 
-- **No detail leakage**: enumerated forbidden items above.
-- **Single artifact**: on accept, write the goal list to `plan/<WI>/idea.md` and nowhere else. `<WI>` is human-confirmed before write. No writes on failure.
-- **HITL only**: explicit human acceptance required.
-- **No phase orchestration**: the skill does not name, invoke, or hand off to other phases or skills. Output is the goal list and a status signal — nothing more.
-
----
+- MUST produce between 3 and 6 goals, inclusive.
+- MUST NOT include module names, file paths, API shapes, UX specifics, acceptance criteria, tech choices, or effort/timeline estimates in any goal.
+- MUST treat the brief as input, not output — restate even when the brief reads well.
+- MUST surface negative goals as first-class entries when they materially shape the work.
+- MUST be HITL — no AFK, no Ralph loop, no autonomous acceptance.
+- MUST NOT write any file in the working tree — output is conversational only.
+- MUST detect the collapse case (existing 3–6 explicit goals in upstream artifact) and short-circuit to a one-line confirmation.
+- MUST stop and report "proceed to `aln` directly with the brief" when fewer than 3 goal candidates are found — do not pad.
+- MUST NOT produce design, PRD, issue, or research content; MUST NOT invoke or recommend a next phase beyond returning the goal list.
 
 ## Output Format (for the generated skill)
 
-The output skill (`skills/output/distill-idea.md`) must be a Claude Code SKILL.md — a single self-contained markdown prompt file that:
+The compiled runtime skill MUST contain, in order:
 
-- Opens with a one-paragraph role statement: this skill distills a raw brief into 3–6 major goals and returns them. It does not manage workflow phases.
-- Contains an inlined **Hard Rules** block (the six rules above plus the four Constraints, brief imperative form). No "see guardrails.md §X" references.
-- Has an ordered **Steps** section mapping to the 7 behaviors above (one sentence per step; expand only where ambiguity would cause wrong behavior).
-- Has a **Return** section specifying the success/failure signal shape.
-- Does **not** link to `gr/gr_idea.md`, `phases.md`, or `guardrails.md`. Does **not** mention `aln`, `prd`, or any other phase token.
-- Passes the test: if the skill file were the only file in the repo, an agent reading it could still execute correctly.
+1. A one-paragraph role statement naming the skill, the phase (`ide`), and the single deliverable (3–6 major goals; ephemeral; HITL).
+2. A `## Hard Rules` block enumerating every constraint above as imperative statements, with no references to external documents.
+3. A `## Steps` section mirroring the Skill Behaviors above (collapse check first, then distill / size / present / HITL / return).
+4. A `## Return` section specifying the conversational return shape: a numbered list of goals (with negatives marked), optionally followed by the single "deferred to aln/prd" line.
+
+Forbidden tokens in the compiled skill (must not appear anywhere in its body): `see gr/`, `see guardrails.md`, `per §`, `idea/<topic>.md`, `plan/`, `status_idea.md`, `AFK`, `ralph`, any reference to writing a file.
+
+No planning-artifact outputs — this skill produces no `plan/<WI>/<artifact>.md`, no `status_<artifact>.md`, no `open`/`wip`/`done` state machine. The goal list lives only in the conversation and is consumed by the caller (typically `grill-me` / A1) which folds it later into the PRD.

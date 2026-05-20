@@ -3,12 +3,18 @@
 ## Flow
 
 ```
-skills/input/<name>-in.md  →  /compile-skill  →  skills/output/<name>.md  →  .claude/skills/<name>/SKILL.md
+/draft-skill-input  →  skills/input/<name>-in.md  →  /compile-skill  →  skills/output/<name>.md  →  .claude/skills/<name>/SKILL.md
 ```
 
-## 1. Write the Authoring Prompt (`skills/input/<name>-in.md`)
+## 1. Draft the Authoring Prompt (`skills/input/<name>-in.md`)
 
-See `skills/input/distill-idea-in.md` as the reference example. Key sections:
+Two paths:
+
+**a) From project docs** — run `/draft-skill-input`. It asks which `todo.md` item (W##/A##/B##/C##) or free-text purpose, suggests a kebab-case name for confirmation, reads only the source docs listed for that target (`phases.md` entry, relevant `gr/*.md`, `guardrails.md` §3 cross-refs), classifies planning-artifact vs not, and produces the draft. HITL accept required before write. Clobber-gated on existing files (Reopen / Self-check only).
+
+**b) Hand-authored** — write it yourself using `skills/input/distill-idea-in.md` as the reference example.
+
+Key sections (either path):
 
 - **Metadata** — skill_id, phase, depends_on, feeds_into
 - **Scope** — one thing it does; explicit list of what it does NOT do
@@ -19,7 +25,7 @@ See `skills/input/distill-idea-in.md` as the reference example. Key sections:
 
 **Planning-artifact skills** (produce `idea.md`, PRD, ticket, etc.) must also specify:
 - Artifact path: `plan/<WI>/<file>.md`, `<WI>` human-confirmed slug
-- `status.md` emitted on every successful write (`wip` by default; `done` only on explicit human confirm)
+- `status_<artifact>.md` emitted on every successful write (`wip` by default; `done` only on explicit human confirm)
 
 ## 2. Compile
 

@@ -62,7 +62,10 @@ Source documents:
   - [C2. Issue template with HITL/AFK tag and blocking edges](#c2-issue-template-with-hitlafk-tag-and-blocking-edges)
   - [C3. Review output template](#c3-review-output-template)
   - [C4. Alignment-transcript artifact format](#c4-alignment-transcript-artifact-format)
+  - [C5. QA notes template](#c5-qa-notes-template)
   - [C6. Prototype variant presentation template](#c6-prototype-variant-presentation-template)
+  - [C7. Research file template](#c7-research-file-template)
+  - [C8. Idea file template](#c8-idea-file-template)
 - [D. Open Questions / Decisions Before Building](#d-open-questions--decisions-before-building)
 - [E. Validation / Experiments (from Pocock doc)](#e-validation--experiments-from-pocock-doc)
 
@@ -80,7 +83,26 @@ Source documents:
 ### work items
 
 - [x] compile-skill 
-- [ ] debug-skill (without the link)
+- [ ] test-skill (without the link)
+- [ ] draft skill
+
+    Output Format (for the generated skill)
+    The compiled runtime skill MUST contain, in order:
+
+    A one-paragraph role statement naming the skill, the phase (ide), and the single deliverable (3–6 major goals; ephemeral; HITL).
+    A ## Hard Rules block enumerating every constraint above as imperative statements, with no references to external documents.
+    A ## Steps section mirroring the Skill Behaviors above (collapse check first, then distill / size / present / HITL / return).
+    A ## Return section specifying the conversational return shape: a numbered list of goals (with negatives marked), optionally followed by the single "deferred to aln/prd" line.
+    Forbidden tokens in the compiled skill (must not appear anywhere in its body): see gr/, see guardrails.md, per §, idea/<topic>.md, plan/, status_idea.md, AFK, ralph, any reference to writing a file.
+
+    No planning-artifact outputs — this skill produces no plan/<WI>/<artifact>.md, no status_<artifact>.md, no open/wip/done state machine. The goal list lives only in the conversation and is consumed by the caller (typically grill-me / A1) which folds it later into the PRD.
+
+#### corrections
+  - no phase names
+  
+
+
+
 
 ### Workflows table
 
@@ -156,6 +178,7 @@ Source documents:
 | C5  | QA notes template                 | todo   | —                                          | [gr_qa.md](gr/gr_qa.md)                        | A8                      | W8           |
 | C6  | Prototype variant template        | done   | [tpl/tpl_var_pres.md](tpl/tpl_var_pres.md) | [gr_proto.md](gr/gr_proto.md) Pro4, Pro7, Pro8 | A9, A1 (rejected carry) | W14b         |
 | C7  | Research file template            | todo   | —                                          | [gr_res.md](gr/gr_res.md) Res4                 | A10                     | W13          |
+| C8  | Idea file template                | done   | [tpl/tpl_idea.md](tpl/tpl_idea.md)         | [gr_idea.md](gr/gr_idea.md) Idea7              | A11, A1, A2, A6, A8     | W15          |
 
 ---
 
@@ -247,11 +270,11 @@ Beyond the 12 items, the orchestration that chains them (e.g., `grill-me` → `w
 ### W15. Idea Phase
 
 - Status: **wip** (phase + core rule + detail doc done; skill pending).
-- Category: **Phase** — code `ide`. Sequential, **first** phase before `aln`. HITL only (Idea4). Output is ephemeral — folded into PRD Goals section (Idea7); no in-tree artifact.
+- Category: **Phase** — code `ide`. Sequential, **first** phase before `aln`. HITL only (Idea4). Output is `plan/<WI>/idea.md` + `plan/<WI>/status_idea.md` (Idea7); retired with `plan/<WI>/` at WI close per 3.33. PRD Goals section folds it but does not replace it.
 - Pocock reference: phase 1 of the 7-phases doc (see [the-7-phases-of-ai-driven-development.md](the-7-phases-of-ai-driven-development.md)) — no named Pocock skill.
 - Exists: phase `ide` in [phases.md](phases.md); core rule 3.32 + routing §4.19 in [guardrails.md](guardrails.md); detail doc [gr/gr_idea.md](gr/gr_idea.md) (Idea1–Idea7).
-- Missing: skill `distill-idea` (new **A11**) — distills brief / ticket / Slack note into 3–6 major goals, strips detail leaks (Idea2), captures negative goals (Idea3), HITL by construction (Idea4); collapse handling per 3.29 when upstream brief already names goals explicitly (one-line confirmation instead of full pass).
-- No template needed (Idea7 — ephemeral, no in-tree artifact; output feeds A1 `grill-me` directly and folds into A2 `write-prd` Goals section).
+- Missing: skill `distill-idea` (new **A11**) — distills brief / ticket / Slack note into 3–6 major goals, strips detail leaks (Idea2), captures negative goals (Idea3), HITL by construction (Idea4); collapse handling per 3.29 when upstream brief already names goals explicitly (one-line confirmation instead of full pass); writes `plan/<WI>/idea.md` + `plan/<WI>/status_idea.md` per Idea7.
+- Template **C8** (`tpl/tpl_idea.md`) for `idea.md` + `status_idea.md` shape — consumed by A1/A2/A6/A8 + Q11 lint, so canonical shape lives outside the skill.
 - Next: build A11 skill; wire as front of skill chain (A11 → A1 grill-me → A2 write-prd → ...).
 
 ### W13. Research Caching
@@ -515,6 +538,18 @@ Beyond the 12 items, the orchestration that chains them (e.g., `grill-me` → `w
 - Artifact: [`tpl/tpl_var_pres.md`](tpl/tpl_var_pres.md).
 - Purpose: machine-parseable shape for prototype variant output (Pro2/Pro4/Pro7/Pro8). Skill (W14e/A9) emits; human picker consumes.
 - Slot: C5 reserved for W8 QA notes template; C6 is the next free slot.
+
+### C8. Idea file template
+
+- Status: **done** (2026-05-20).
+- Artifact: [`tpl/tpl_idea.md`](tpl/tpl_idea.md).
+- Purpose: single parse target for downstream consumers (A1 grill-me reads goals to anchor grilling; A2 write-prd folds into PRD Goals section; A6 review verifies coverage; A8 qa runs Q11 retirement lint).
+- Shape: pair of files under `plan/<WI>/` — `idea.md` (markdown body, no frontmatter, `# Goals` heading, numbered 3–6 entries with `Non-goal:` prefix for negatives, optional `Stripped detail:` lines) + `status_idea.md` (frontmatter only: `status`, `updated`, `owner-issue`).
+- Source: [gr_idea.md](gr/gr_idea.md) Idea7; retirement [guardrails.md](guardrails.md) §3.33; Q11 lint [gr_qa.md](gr/gr_qa.md).
+- Used by: A11 (emits), A1, A2, A6, A8 (consume); Q11 lint (status_idea.md frontmatter).
+- Workflow ref: W15.
+- Pattern parallel: mirrors C6 (variant template) — paired machine-shape + human-body, `owner-issue` provenance, owner-close retirement.
+- Next: A11 skill rewrite (`distill-idea-in.md` → recompile `distill-idea.md`) references this template instead of inlining the shape.
 
 ---
 

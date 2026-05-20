@@ -14,7 +14,7 @@ Origin: Pocock — "Idea" is phase 1 of the 7-phase pipeline. Local placement: p
 - A backlog item is vague enough that `aln` would not know where to start grilling.
 - Before any `aln` grilling, `res` research, or planning artifact is produced.
 
-Skip when: the upstream artifact already names 3–6 explicit goals (e.g. a written product memo). In that case `ide` collapses to a one-line confirmation, per 3.29 (collapse, not skip).
+Skip when: the upstream artifact already names 3–6 explicit goals (e.g. a written product memo). In that case `ide` collapses to a one-line confirmation, per 3.29 (collapse, not skip) — the confirmed list is still written to `plan/<WI>/idea.md` per Idea7; collapse short-circuits the distillation work, not the artifact.
 
 ---
 
@@ -52,9 +52,23 @@ The original brief (Slack, ticket, email) is the raw material the agent distills
 
 The goal list is the *starter* for grilling, not a substitute for it. `aln` walks every branch of every goal. An agent that reads a goal list and jumps to `prd` violates 3.21. The goal list narrows what `aln` grills over; it does not shortcut the grilling.
 
-### Idea7. Ephemeral
+### Idea7. Persisted to `plan/<WI>/idea.md`
 
-The goal list lives only long enough to seed `aln`. Once `aln` produces the design concept and `prd` summarizes it, the goal list is folded into the PRD (typically as the "Goals" or "Objectives" section) and the standalone artifact is discarded. No `idea/<topic>.md` files in the working tree.
+The confirmed goal list is written to `plan/<WI>/idea.md`. `<WI>` is a human-confirmed snake_case slug (e.g. `ai_mail`, `fix_crash_abc`) — single artifact per WI, never a shared `idea.md`, never multiple idea files under one WI. Downstream phases (`aln`, `prd`, `iss`, ...) read this file as the anchor for goals; PRD Goals section folds it but does not replace it.
+
+Companion status file: `plan/<WI>/status_idea.md` with frontmatter:
+
+```
+---
+status: open|wip|done
+updated: <YYYY-MM-DD>
+owner-issue: #NNN   # the WI's owning issue/PR; anchors 3.33 retirement
+---
+```
+
+Refresh `updated:` on every run. Default `status: wip` on a successful artifact write. Human-only `done` — never auto-flip. On reopen, flip `done → wip` (never back to `open`). `owner-issue:` is mandatory — `status_idea.md` is the WI anchor; sibling artifacts under `plan/<WI>/` inherit the same owner, so the field is set once here. On failure runs (under-budget, human rejected, no human acceptance), write nothing — no `idea.md`, no `status_idea.md`.
+
+Retirement: the goal list is WI-scoped, not durable. Deleted with the rest of `plan/<WI>/` at WI close per 3.33 — same retirement model as 3.27 (research). Persistence is bounded; documentation-rot risk that 3.24 (PRD) and 3.27 (research) address is handled here by 3.33's close-time deletion, not by avoiding the artifact altogether.
 
 ---
 
@@ -65,7 +79,9 @@ The goal list lives only long enough to seed `aln`. Once `aln` produces the desi
 - Letting implementation detail (module names, API shapes) leak into the goal list.
 - Treating the goal list as the design — jumping from `ide` straight to `prd`.
 - Running `ide` AFK / via Ralph loop.
-- Keeping the goal list in the repo after the PRD lands.
+- Writing the goal list anywhere other than `plan/<WI>/idea.md` — no `idea/<topic>.md`, no shared `idea.md`, no scattered locations. Single canonical path per WI.
+- Auto-flipping `status_idea.md` to `done`. Human-only `done`.
+- Leaving `plan/<WI>/` behind after the WI closes (3.33 violation).
 
 ---
 
@@ -75,4 +91,4 @@ The goal list lives only long enough to seed `aln`. Once `aln` produces the desi
 - Idea5 extends Aln8 (brief as input) one phase earlier.
 - Idea3 (negative goals) feeds Aln15 (negative decisions captured).
 - Idea4 (HITL) follows the same hard floor as Aln1, Gov5a.
-- Idea7 (ephemeral) follows the same shape as 3.24 (PRD retire) and 3.27 (research retire), but no in-tree artifact ever exists, so no lint or Q11 gate is needed.
+- Idea7 (persisted to `plan/<WI>/idea.md`) follows the same retirement model as 3.27 (research): in-tree, WI-scoped, deleted at WI close. Enforcement = 3.33 + Q11 merge-gate check that `plan/<WI>/` is gone when the WI's PR closes. Distinct from 3.24 (PRD), which goes external entirely.

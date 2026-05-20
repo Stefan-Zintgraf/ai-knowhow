@@ -194,7 +194,12 @@ Deep modules are built under a default labor partition: **human owns the interfa
 ### 3.32 Distill the Brief into 3–6 Goals (Idea Phase)
 
 Fires: Plan=high, Implement=none, Verify=none
-Before `aln` grilling begins, the agent distills the incoming brief / backlog item / stakeholder ask into **3–6 major goals** (phase `ide`). No details (no module map, no APIs, no UX specifics, no acceptance criteria). Negative goals welcome. HITL only — agent proposes, human edits. Output anchors `aln` but does not replace it. Ephemeral: folded into the PRD's Goals section, no in-tree artifact. Collapsible (3.29) when the upstream brief already names goals explicitly. See [gr/gr_idea.md](gr/gr_idea.md).
+Before `aln` grilling begins, the agent distills the incoming brief / backlog item / stakeholder ask into **3–6 major goals** (phase `ide`). No details (no module map, no APIs, no UX specifics, no acceptance criteria). Negative goals welcome. HITL only — agent proposes, human edits. Output anchors `aln` but does not replace it. Persisted to `plan/<WI>/idea.md` with companion `plan/<WI>/status_idea.md` (`status: open|wip|done`) so downstream phases can read the anchor; retired with the rest of `plan/<WI>/` at WI close (3.33). Collapsible (3.29) when the upstream brief already names goals explicitly. See [gr/gr_idea.md](gr/gr_idea.md).
+
+### 3.33 Retire Idea Artifacts
+
+Fires: Plan=high, Implement=low, Verify=low
+Idea goal files (`plan/<WI>/idea.md`) and their companion `plan/<WI>/status_idea.md` are WI-scoped anchor artifacts, not durable documentation. They must be **deleted** when the work-item closes — stale idea files actively mislead future agent runs because they look authoritative but reflect yesterday's understanding of the work. Distinct from 3.24 (PRDs move to external trackers) and parallel to 3.27 (research files retire on owner-issue close): idea files live in `plan/<WI>/` for the WI lifecycle, then are removed outright with the rest of `plan/<WI>/`. Enforcement: every `plan/<WI>/idea.md` is paired with `plan/<WI>/status_idea.md`; the same PR that closes the WI deletes `plan/<WI>/`, verified by Q11 in `qa`. Human-only `done` on `status_idea.md` — never auto-flip. See [gr/gr_idea.md](gr/gr_idea.md).
 
 ---
 

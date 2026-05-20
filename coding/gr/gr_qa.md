@@ -123,18 +123,20 @@ Forbidden:
 
 ### Q11. Retire Orphaned Ephemeral Artifacts Before Merge
 
-`qa` is the merge gate, so it is the right place to verify that sprint-scoped artifacts retire on the same PR that closes their owner. Two checks, mechanical:
+`qa` is the merge gate, so it is the right place to verify that sprint-scoped artifacts retire on the same PR that closes their owner. Three checks, mechanical:
 
 1. **Research files (3.27 / Res3 / Res4).** For each `research/<topic>.md` present in the working tree on this PR's branch, read its `owner-issue: #NNN` header. If that issue is being closed by this PR (closes keyword, manual close, or already closed), the PR **must** delete the file. A research file whose owner closed without the file being deleted is a fail-now finding under Q5, not backlog.
 2. **PRD / plan paths (3.24 / Doc11).** Verify no path matching `prd/**`, `**/PRD-*.md`, or `**/*_prd.md` exists in the diff or in the tree. PRD bodies live in the owning issue, never in the repo. Any such path is a fail-now finding.
+3. **Idea / plan-WI directories (3.33 / Idea7).** For each `plan/<WI>/` present in the working tree on this PR's branch, read `plan/<WI>/status_idea.md` for its `owner-issue: #NNN` header. If that issue is being closed by this PR, the PR **must** delete the entire `plan/<WI>/` directory (idea.md, all status_*.md files, every sibling artifact). A `plan/<WI>/` whose owner closed without the directory being deleted is a fail-now finding under Q5, not backlog. A `plan/<WI>/` without `status_idea.md` (anchor missing) is also a fail-now finding — every WI directory must carry an idea anchor.
 
-Both checks are agent-runnable in seconds (lint + issue-state read); they appear on the Q6 QA output as a single line ("ephemeral-artifact retirement: clean / dirty"). If the human is operating gray-box (Q10), Q11 is still mandatory — orphan retirement is a seam concern.
+All three checks are agent-runnable in seconds (lint + issue-state read); they appear on the Q6 QA output as a single line ("ephemeral-artifact retirement: clean / dirty"). If the human is operating gray-box (Q10), Q11 is still mandatory — orphan retirement is a seam concern.
 
 Forbidden:
 
-- Merging a PR that closes the owner issue while the research file survives.
-- "We'll delete the file in a follow-up PR" — the deletion belongs in the same PR (Res3).
-- Adding a new `research/*.md` without an `owner-issue` header to silence the lint (fabricated owner = Op13).
+- Merging a PR that closes the owner issue while the research file or `plan/<WI>/` directory survives.
+- "We'll delete the file in a follow-up PR" — the deletion belongs in the same PR (Res3, 3.33).
+- Adding a new `research/*.md` or `plan/<WI>/status_idea.md` without an `owner-issue` header to silence the lint (fabricated owner = Op13).
+- Partial retirement: deleting `plan/<WI>/idea.md` while leaving sibling `plan/<WI>/<other>.md` files behind. The whole directory retires together.
 
 ---
 
