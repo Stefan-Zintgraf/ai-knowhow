@@ -77,6 +77,11 @@ Source documents:
 - `done` — implemented and tested.
 - `blocked` — needs a decision first.
 
+### work items
+
+- [x] compile-skill 
+- [ ] debug-skill (without the link)
+
 ### Workflows table
 
 | #    | Pocock title               | Category                   | Status          | skill | hook   | Pocock reference skill                     | Maps to                               |
