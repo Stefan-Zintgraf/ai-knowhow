@@ -1,11 +1,11 @@
 ---
 name: distill-idea
 description: Distill a raw brief into 3–6 major goals and persist the confirmed list to plan/<WI>/idea.md. Use at the very start of a new work-item.
-compiled-against: compile-skill v1.2.0
+compiled-against: compile-skill v2.1.0
 source: skills/input/distill-idea-in.md
 source-sha256: 160f1e413c1fc32325f5859e8725b017989418a038723eecc17a740be931a66a
 source-modified: 2026-05-20 10:11
-compiled: 2026-05-20 11:02
+compiled: 2026-05-20 14:57
 ---
 
 # Skill: distill-idea
@@ -30,14 +30,14 @@ This skill distills a raw brief into 3–6 major goals and writes the confirmed 
 
 7. **Work-item slug + write.** Derive a candidate `<WI>` slug from the brief (short, snake_case, e.g. `ai_mail`, `fix_crash_abc`). Prompt the human: "Work-item slug? Suggested: `<slug>`." Accept confirm or override. Create `plan/<WI>/` if missing. Write the confirmed goal list to `plan/<WI>/idea.md`.
 
-8. **Status update.** Write/update `plan/<WI>/status.md` with frontmatter:
+8. **Status update.** Write/update `plan/<WI>/status_idea.md` with frontmatter:
    ```
    ---
    status: wip
    updated: <today YYYY-MM-DD>
    ---
    ```
-   Rules: (a) refresh `updated:` to today on every run; (b) default `status: wip` after a successful artifact write; (c) if you judge the goal list complete and final, ask the human "mark done?" — flip to `done` only on explicit yes, never auto-flip; (d) preserve an existing `done` unless the human explicitly reopens — on reopen, flip `done → wip` (never back to `open`). On failure runs (no artifact written), do not create or modify `status.md`.
+   Rules: (a) refresh `updated:` to today on every run; (b) default `status: wip` after a successful artifact write; (c) ask the human "mark done?" at the end of every run UNLESS it is absolutely obvious and undoubtable that the artifact is still open/wip (e.g. under-budget failure, human rejected the draft, no human acceptance reached, count gate not passed) — in those clear-incomplete cases skip the prompt; flip to `done` only on explicit human yes, never auto-flip; (d) preserve an existing `done` unless the human explicitly reopens — on reopen, flip `done → wip` (never back to `open`). On failure runs (no artifact written), do not create or modify `status_idea.md`.
 
 9. **Return.** Emit the confirmed goal list (numbered, one line each), the path written, plus the success signal — see Return section.
 
@@ -51,7 +51,7 @@ This skill distills a raw brief into 3–6 major goals and writes the confirmed 
 - HITL only. No AFK execution. Wait for explicit human acceptance.
 - The brief is input, not output — even a clean brief gets restated as a goal list.
 - Single artifact. On accept, write the goal list to `plan/<WI>/idea.md` and nowhere else. `<WI>` is human-confirmed before write. No writes on failure.
-- Always emit/update `plan/<WI>/status.md` alongside a successful artifact write per the status spec in Step 8. Human-only `done`. Never auto-flip.
+- Always emit/update `plan/<WI>/status_idea.md` alongside a successful artifact write per the status spec in Step 8. One status file per artifact — never a shared `status.md`. Human-only `done`. Never auto-flip.
 - No phase orchestration. Do not name, invoke, or hand off to other phases or skills. Output is the goal list and a status signal — nothing more.
 
 ---
@@ -62,11 +62,11 @@ On success:
 
 - The confirmed goal list, numbered, one line each.
 - Path written: `plan/<WI>/idea.md`.
-- Status file: `plan/<WI>/status.md` (`status: wip` unless human confirmed `done`).
+- Status file: `plan/<WI>/status_idea.md` (`status: wip` unless human confirmed `done`).
 - `status: ok` plus a one-line summary: "Produced N goals from brief."
 
 On failure (under-budget, human rejected, no acceptance reached):
 
-- Write nothing (no `idea.md`, no `status.md`).
+- Write nothing (no `idea.md`, no `status_idea.md`).
 - `status: not_produced` plus the reason.
 - No phase names. No "next step" language.

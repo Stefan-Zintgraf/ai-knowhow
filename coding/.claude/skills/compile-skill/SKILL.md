@@ -1,7 +1,7 @@
 ---
 name: compile-skill
 description: Compile an authoring prompt at skills/input/<name>-in.md into a self-contained Claude Code skill file at skills/output/<name>.md. Use when user says "compile skill", "build skill from input", or references a skills/input/*-in.md file to generate.
-version: 1.2.0
+version: 2.1.0
 ---
 
 Generate `skills/output/<name>.md` from `skills/input/<name>-in.md`.
@@ -35,7 +35,8 @@ No third option. No `cancel` / `proceed` / `skip`. Human cancels via Esc — tha
     - Return section missing one bullet from new spec's list → **surgical** (missing clause inside existing section).
     - Output contains "see skills/input/foo-in.md §3" → **surgical** (stale pointer; spec forbids back-references).
     - Forbidden token from input appears in output → **surgical** (forbidden-token leak).
-    - Planning-artifact skill has no `status.md` emission block, new spec mandates it → **reopen-required** (missing mandatory section).
+    - Planning-artifact skill has no `status_<artifact>.md` emission block, new spec mandates it → **reopen-required** (missing mandatory section).
+    - Output emits shared `status.md` instead of artifact-scoped `status_<artifact>.md` → **reopen-required** (changed artifact path).
     - Output writes artifact to repo root; new spec mandates `plan/<WI>/` → **reopen-required** (changed artifact path).
     - Output orchestrates a downstream phase that input explicitly excluded → **reopen-required** (scope-boundary violation).
     - New spec drops the old "Args" section entirely; output still has one → **reopen-required** (removed feature).
@@ -68,7 +69,7 @@ Resolved in Preflight Gate A. See above.
 
    **Planning-artifact skills** (skills whose purpose is to produce a planning file — idea, goals, alignment, PRD, design, ticket, etc.): the generated skill MUST write its artifact to `plan/<WI>/<filename>.md`, where `<WI>` is a unique work-item slug (e.g. `ai_mail`, `fix_crash_abc`). The skill MUST prompt the human for `<WI>`, suggesting a slug derived from the brief; the human confirms or overrides. Create the `plan/<WI>/` directory if missing. Never write planning artifacts to repo root or any other location.
 
-   **Status tracking.** Every planning-artifact skill MUST also write/update `plan/<WI>/status.md` on every run. Format:
+   **Status tracking.** Every planning-artifact skill MUST also write/update its OWN dedicated status file `plan/<WI>/status_<artifact>.md` on every run, where `<artifact>` is the basename of the artifact the skill produces (e.g. `distill-idea` → `idea.md` → `status_idea.md`; a `write-prd` skill → `prd.md` → `status_prd.md`). One status file per planning artifact — never a shared `status.md`. Format:
    ```
    ---
    status: open | wip | done
@@ -80,7 +81,7 @@ Resolved in Preflight Gate A. See above.
    - `wip` — skill ran, artifact drafted or partial. Default on first skill run.
    - `done` — set ONLY after explicit human confirmation. Skill may propose `done` when it judges the artifact complete, but MUST ask the human to confirm before flipping. Never auto-flip.
 
-   On every run the generated skill MUST: (a) refresh the `updated:` date to today, (b) set `status: wip` by default, (c) if it believes work complete, ask human "mark done?" and only flip on yes, (d) preserve an existing `done` unless human explicitly reopens — on reopen, flip `done → wip` (never back to `open`).
+   On every run the generated skill MUST: (a) refresh the `updated:` date to today, (b) set `status: wip` by default, (c) ask the human "mark done?" at end of every run UNLESS it is absolutely obvious and undoubtable that the artifact is still open/wip (e.g. under-budget failure, human rejected the draft, no human acceptance reached, count gate not passed) — in those clear-incomplete cases skip the prompt, (d) preserve an existing `done` unless human explicitly reopens — on reopen, flip `done → wip` (never back to `open`). Never auto-flip to `done` without explicit human yes.
 
 4. **Inline everything.** Embed any rule the skill needs at runtime. Strip all "see X", "per guardrails §Y", file-path pointers to author-time source docs. The output must execute correctly as the only file in the repo.
 
@@ -100,7 +101,7 @@ Resolved in Preflight Gate A. See above.
    - Every "must / must not" clause from the input is present as a Hard Rule or Step.
    - Format requirements and forbidden tokens honored.
    - Output is leaf — no links to input or author-time docs.
-   - If planning-artifact skill: writes to `plan/<WI>/<filename>.md` AND emits `plan/<WI>/status.md` per Status tracking spec (open/wip/done state machine, human-only `done`, reopen flips `done → wip`).
+   - If planning-artifact skill: writes to `plan/<WI>/<filename>.md` AND emits `plan/<WI>/status_<artifact>.md` (artifact-scoped, never shared `status.md`) per Status tracking spec (open/wip/done state machine, human-only `done`, reopen flips `done → wip`).
    - Scope boundaries from input respected (no introduced handoffs/orchestration).
 
    If human approves fixing a failed item: apply a **surgical edit** targeting only the failing clause. Never trigger a full recompile from this path — manual edits to the output must be preserved. If multiple fails require sweeping changes, report that and ask the human to choose `reopen` instead.
@@ -130,4 +131,4 @@ If both spec drift and input drift fire, combine into a single warning.
 - Forbidden tokens declared in input stay out of the output verbatim.
 - HITL on overwrite. Never silently replace an existing output file.
 - No invention. If the input is silent on a section, omit it — do not pad with generic skill boilerplate.
-- Planning-artifact skills MUST emit `plan/<WI>/status.md` per the Status tracking spec above. Non-planning skills MUST NOT.
+- Planning-artifact skills MUST emit `plan/<WI>/status_<artifact>.md` (one per artifact, never shared `status.md`) per the Status tracking spec above. Non-planning skills MUST NOT.
