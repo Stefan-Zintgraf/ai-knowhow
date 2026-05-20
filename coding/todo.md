@@ -83,23 +83,20 @@ Source documents:
 ### work items
 
 - [x] compile-skill 
-- [ ] test-skill (without the link)
-- [ ] draft skill
+- [x] test-skill (without the link)
+- [ ] draft-skill skill
+  Prompt: 
+  Run the draft-skill-input skill to create a new skill input file distill-idea-in.md for the W15 row in todo.md.
+  The skill input file then shall be compiled using the compile-skill skill which creates the distill-idea.md output file.
+  Compare it with the reference distill-idea-ref.md file and adjust the draft-skill-input skill if possible to make the match perfect.
+  Finally, the distill-idea.md skill shall be tested using the test-skill skill with the following input: 
+  AI-driven mail handling. Goals: search mails by NL prompt, draft replies, use mail content as a knowledge base for Q&A.
 
-    Output Format (for the generated skill)
-    The compiled runtime skill MUST contain, in order:
 
-    A one-paragraph role statement naming the skill, the phase (ide), and the single deliverable (3–6 major goals; ephemeral; HITL).
-    A ## Hard Rules block enumerating every constraint above as imperative statements, with no references to external documents.
-    A ## Steps section mirroring the Skill Behaviors above (collapse check first, then distill / size / present / HITL / return).
-    A ## Return section specifying the conversational return shape: a numbered list of goals (with negatives marked), optionally followed by the single "deferred to aln/prd" line.
-    Forbidden tokens in the compiled skill (must not appear anywhere in its body): see gr/, see guardrails.md, per §, idea/<topic>.md, plan/, status_idea.md, AFK, ralph, any reference to writing a file.
 
-    No planning-artifact outputs — this skill produces no plan/<WI>/<artifact>.md, no status_<artifact>.md, no open/wip/done state machine. The goal list lives only in the conversation and is consumed by the caller (typically grill-me / A1) which folds it later into the PRD.
 
-#### corrections
-  - no phase names
-  
+
+ 
 
 
 
