@@ -86,8 +86,14 @@ Source documents:
 - [x] test-skill (without the link)
 - [x] draft-skill skill
   Prompt: 
-  Run the draft-skill-input skill to create a new skill input file distill-idea-in.md for the W15 row in todo.md.
-  The skill input file then shall be compiled using the compile-skill skill which creates the distill-idea.md output file.
+  You must draft a new skill file based on a specific row in the todo.md workflows table.
+  Ask the user which entry (row) of this table to process first.
+  Then you need to confirm the name of the newly created skill, for example myskill
+  Next, run the draft-skill-input skill to create a new skill input file [myskill]-in.md for the requested row in todo.md.
+  If the skill input file already exists, stop with an error message.
+  The skill input file then shall be compiled using the compile-skill skill which creates the [myskill].md output file.
+ 
+ 
   Compare it with the reference distill-idea-ref.md file and adjust the draft-skill-input skill if possible to make the match perfect.
   Finally, the distill-idea.md skill shall be tested using the test-skill skill with the following input: 
   AI-driven mail handling. Goals: search mails by NL prompt, draft replies, use mail content as a knowledge base for Q&A.
