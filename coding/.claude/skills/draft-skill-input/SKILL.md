@@ -48,6 +48,16 @@ No third option. No `cancel` / `proceed` / `skip`. Human cancels via Esc.
    - Do NOT load every `gr/*.md`. Only the ones the target references.
    - For each `gr/<file>.md`, identify which numbered rules are phase-coupling (mention phase tokens, hand-offs, routing) and mark them for the Step 6 strip — do NOT carry them into Rules.
 
+4a. **Read referenced Pocock SKILL.md bodies (mandatory).** For the target row, identify every Pocock reference skill named in the row's "Pocock reference skill" column AND any names embedded in the per-item "Pocock skill as additional input" line. Resolve each name to its current path via the `todo.md` section "Pocock skill index (authoritative names, May 2026)". Read the **full SKILL.md body** at `..\skills-plugins\matt_pocock_skills\skills\<category>\<name>\SKILL.md` (relative to the project root `c:/PROJ/ai-knowhow/coding/`).
+
+   Rules for this step:
+   - Walkthrough excerpts are **historical-only** when a current Pocock skill exists. The current SKILL.md is the source of truth; walkthrough phrasing only supplements when no current Pocock skill covers the topic.
+   - If a Pocock reference name in todo.md does not resolve in the Pocock index (rename / drop / split), STOP and ask the human — do not silently substitute.
+   - If multiple Pocock skills are cited for one row (e.g. W1 cites both `grill-me` and `grill-with-docs`, W3 cites `to-issues` + `triage`), load **all** named bodies before drafting.
+   - List each loaded Pocock SKILL.md path in the draft's `## Source Documents (author-time only)` table, marked `(Pocock reference — author-time only, do not embed wholesale)`.
+   - Do NOT copy Pocock rules verbatim into our Rules section. Treat Pocock content as **comparison material**: where our `gr/*.md` already covers a rule, prefer ours; where Pocock has substantive coverage our `gr/*.md` lacks AND it survives the Step 6 phase-strip, surface the gap to the human in Step 8 — flag it, do not silently adopt.
+   - Reconciliation rule: if Pocock SKILL.md and our `gr/*.md` directly contradict, the draft must NOT silently pick one. List the contradiction in Step 8 review output for human decision.
+
 5. **Classify: planning-artifact or not.** Default: **planning-artifact**. Almost every phase skill writes a single canonical file under `plan/<WI>/<artifact>.md` + `plan/<WI>/status_<artifact>.md` with the open/wip/done state machine (Idea7-style; see also 3.27, 3.33). The draft input file MUST include:
    - the artifact filename (`plan/<WI>/<artifact>.md`),
    - the status file (`plan/<WI>/status_<artifact>.md`) with full frontmatter spec — `status: open|wip|done`, `updated: <YYYY-MM-DD>`, `owner-issue: #NNN` on the anchor artifact (idea); inherited by siblings,
@@ -97,6 +107,7 @@ No third option. No `cancel` / `proceed` / `skip`. Human cancels via Esc.
    - Failure outcomes use `status: not_produced` + `reason:` language exclusively.
    - Collapse-mode (if present) offers human an explicit choice; no silent quote-back-and-confirm.
    - Template section order and `---` separators preserved.
+   - **Pocock SKILL.md coverage**: every Pocock skill named in the target todo.md row appears in the draft's Source Documents table, marked author-time-only. Any contradiction with our `gr/*.md` is explicitly listed for human review (not silently resolved).
    
    If any fail and human approves: apply surgical edits. If multiple sweeping fails: ask human to choose `Reopen` instead.
 
