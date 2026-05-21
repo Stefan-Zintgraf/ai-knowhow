@@ -20,17 +20,18 @@ This skill distills a raw brief into 3–6 major goals and writes the confirmed 
 
 2. **Distillation pass.** Read the raw input (Slack note, ticket, email, transcript, freeform brief). Produce a draft list of 3–6 major goals. Each names *what the work must serve*, not *how*. One sentence per goal. No nested bullets. No prose paragraphs.
 
-3. **Detail-leak strip.** Remove from each draft goal any module name, file path, API shape, UX specific, acceptance criterion, tech choice, or estimate. Append a one-line note per stripped item using the exact format: `Stripped detail: <item>` (one per item, no phase names).
+3. **Detail-leak strip.** Remove from each draft goal any module name, file path, API shape, UX specific, acceptance criterion, tech choice, or estimate. Append a one-line note per stripped item using the exact format: `Stripped detail: <item>` (one per item, no phase names — never "deferred to <phase>").
 
 4. **Negative goal capture.** Identify explicit exclusions in the brief ("not a mobile app", "no real-time updates", "no migration from system X"). Promote them to the goal list as negative goals using the `Non-goal: ` prefix (capital N, space after colon). They count toward the 3–6 budget when they materially shape the work.
 
-5. **Count gate.** If draft count < 3: return `status: not_produced` with `reason: under-budget` and a one-line note that the brief may be too narrow for goal-shaped framing. If draft count > 6: prompt the human to merge or drop goals before proceeding.
+5. **Count gate.** If draft count < 3: return `status: not_produced` with `reason: under-budget` and a one-line note that the brief may be too narrow for goal-shaped framing. Forbidden phrases in the failure string: any phase token, `proceed to <phase>`, `deferred to <phase>`, `next phase`. If draft count > 6: prompt the human to merge or drop goals before proceeding.
 
 6. **HITL accept.** Present the draft list to the human for edit / accept / reject. Do not finalize until the human explicitly accepts. Forbidden: auto-accepting, treating brief acknowledgement as acceptance.
 
 7. **Work-item slug + owner-issue + write.** Derive a candidate `<WI>` slug from the brief (short, snake_case — e.g. `ai_mail`, `fix_crash_abc`). Prompt the human: "Work-item slug? Suggested: `<slug>`." Accept confirm or override. Then prompt: "Owner issue (e.g. `#123`)?" — required; the WI anchor. If the human has no issue number yet, accept a placeholder `#TBD` and explicitly warn that Q11 merge-gate retirement enforcement will fail until replaced. Create `plan/<WI>/` if missing. Write the confirmed goal list to `plan/<WI>/idea.md` under the literal heading `# Goals`, numbered entries, one sentence each.
 
 8. **Status update.** Write/update `plan/<WI>/status_idea.md` with frontmatter:
+   
    ```
    ---
    status: open | wip | done
@@ -38,6 +39,7 @@ This skill distills a raw brief into 3–6 major goals and writes the confirmed 
    owner-issue: <#NNN or #TBD>
    ---
    ```
+   
    Rules: (a) refresh `updated:` to today on every run; (b) default `status: wip` after a successful artifact write; (c) ask the human "mark done?" at end of every run UNLESS it is absolutely obvious and undoubtable that the artifact is still open/wip (e.g. under-budget failure, human rejected the draft, no human acceptance reached, count gate not passed) — in those clear-incomplete cases skip the prompt; flip to `done` only on explicit human yes, never auto-flip; (d) preserve an existing `done` unless the human explicitly reopens — on reopen, flip `done → wip` (never back to `open`). On failure runs (no artifact written), do not create or modify `status_idea.md`.
 
 9. **Return.** Emit the confirmed goal list (numbered, one line each), the path written, plus the success signal — see Return section.
@@ -71,3 +73,4 @@ On failure (under-budget, human rejected, no acceptance reached):
 
 - Write nothing (no `idea.md`, no `status_idea.md`).
 - `status: not_produced` plus the reason.
+- No phase names. No "next step" / "proceed to" / "deferred to" language anywhere in the failure string.

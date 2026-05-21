@@ -45,6 +45,32 @@ Copy compiled output to `.claude/skills/<name>/SKILL.md`.
 
 ---
 
+## One-Shot Full Loop
+
+Chain draft → compile → test in a single prompt. Agent runs all three skills end-to-end, from `todo.md` row to tested artifact.
+
+**Template:**
+
+```
+Run the draft-skill-input skill to create a new skill input file <name>-in.md for the <W##|A##|B##|C##> row in todo.md.
+The skill input file then shall be compiled using the compile-skill skill which creates the <name>.md output file.
+Finally, the <name>.md skill shall be tested using the test-skill skill with the following input:
+<test input here>
+```
+
+**Example (W15 → distill-idea):**
+
+```
+Run the draft-skill-input skill to create a new skill input file distill-idea-in.md for the W15 row in todo.md.
+The skill input file then shall be compiled using the compile-skill skill which creates the distill-idea.md output file.
+Finally, the distill-idea.md skill shall be tested using the test-skill skill with the following input:
+AI-driven mail handling. Goals: search mails by NL prompt, draft replies, use mail content as a knowledge base for Q&A.
+```
+
+HITL gates still fire at each stage — accept/edit before each handoff. No auto-accept.
+
+---
+
 ## Critical Rules
 
 - Compiled skill is a **leaf artifact** — no links to `gr/`, `phases.md`, `guardrails.md`, or the input file
