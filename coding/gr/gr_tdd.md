@@ -107,7 +107,7 @@ During Refactor, no test is added, removed, weakened, or made to assert somethin
 TDD detail is **pulled**, not always-on. Pull triggers:
 
 1. **Routing index entry §4.16** in [guardrails.md](../guardrails.md) — any task whose routing identifies "Test-Driven Development" loads this file. Routing happens before implementation per §5.
-2. **Skill precondition (A4 `ralph-loop`)** — the skill prompt loads `gr_tdd.md` on entry to `ral`, before the first test or src edit, since AFK loops cannot be trusted to route on their own.
+2. **Skill precondition (A4 `afk-loop`)** — the skill prompt loads `gr_tdd.md` on entry to `ral`, before the first test or src edit, since AFK loops cannot be trusted to route on their own.
 3. **Reviewer push (Rev2, Op14b)** — `rev` pushes this file into context up front to verify the loop was followed.
 
 If a task in `ral` / `par` proceeds without this file pulled, it is a routing violation — stop, declare routing, then continue.

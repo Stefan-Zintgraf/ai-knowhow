@@ -5,7 +5,7 @@ Purpose: canonical shape for the `ide`-phase output — the 3–6 major goals th
 Source: [`gr/gr_idea.md`](../gr/gr_idea.md) Idea1–Idea7; retirement [`guardrails.md`](../guardrails.md) §3.33.
 
 Emitted by: `distill-idea` skill (A11, W15).
-Consumed by: `grill-me` (A1, anchors grilling), `write-prd` (A2, folds into PRD Goals section), `review` (A6, verifies coverage), `qa` (A8, Q11 retirement lint).
+Consumed by: `align-concept` (A1, anchors grilling), `compose-prd` (A2, folds into PRD Goals section), `review` (A6, verifies coverage), `qa` (A8, Q11 retirement lint).
 
 Format: two paired files per work-item, both under `plan/<WI>/`. The idea file is markdown-only (no frontmatter); the status file is frontmatter-only (no body required).
 
@@ -104,8 +104,8 @@ owner-issue: "#NNN"
 
 ## Notes on Interaction
 
-- `grill-me` (A1) reads `idea.md` to anchor the grilling target. The goal list narrows what `aln` grills over; it does not shortcut grilling (Idea6).
-- `write-prd` (A2) folds the goal list into the PRD's Goals/Objectives section. PRD does not replace `idea.md` — both coexist until WI close (3.33 retires both: PRD via 3.24 external move, idea via 3.33 directory delete).
+- `align-concept` (A1) reads `idea.md` to anchor the grilling target. The goal list narrows what `aln` grills over; it does not shortcut grilling (Idea6).
+- `compose-prd` (A2) folds the goal list into the PRD's Goals/Objectives section. PRD does not replace `idea.md` — both coexist until WI close (3.33 retires both: PRD via 3.24 external move, idea via 3.33 directory delete).
 - `review` (A6) verifies the PRD's Goals section faithfully reflects `idea.md` (no drift, no silent narrowing).
 - `qa` (A8) Q11 #3 enforces 3.33 retirement at merge time.
 - Pattern parallel: `tpl_idea.md` (this) ↔ `tpl_var_pres.md` (C6) — both pair a machine-readable shape with a human-editable body, both carry an `owner-issue` provenance field, both retire on owner close.

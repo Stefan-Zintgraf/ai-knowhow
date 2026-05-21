@@ -69,7 +69,7 @@ Resolved in Preflight Gate A. See above.
 
    **Planning-artifact skills** (skills whose purpose is to produce a planning file — idea, goals, alignment, PRD, design, ticket, etc.): the generated skill MUST write its artifact to `plan/<WI>/<filename>.md`, where `<WI>` is a unique work-item slug (e.g. `ai_mail`, `fix_crash_abc`). The skill MUST prompt the human for `<WI>`, suggesting a slug derived from the brief; the human confirms or overrides. Create the `plan/<WI>/` directory if missing. Never write planning artifacts to repo root or any other location.
 
-   **Status tracking.** Every planning-artifact skill MUST also write/update its OWN dedicated status file `plan/<WI>/status_<artifact>.md` on every run, where `<artifact>` is the basename of the artifact the skill produces (e.g. `distill-idea` → `idea.md` → `status_idea.md`; a `write-prd` skill → `prd.md` → `status_prd.md`). One status file per planning artifact — never a shared `status.md`. Format:
+   **Status tracking.** Every planning-artifact skill MUST also write/update its OWN dedicated status file `plan/<WI>/status_<artifact>.md` on every run, where `<artifact>` is the basename of the artifact the skill produces (e.g. `distill-idea` → `idea.md` → `status_idea.md`; a `compose-prd` skill → `prd.md` → `status_prd.md`). One status file per planning artifact — never a shared `status.md`. Format:
    ```
    ---
    status: open | wip | done

@@ -102,7 +102,7 @@ Decisions to *not* do something are recorded explicitly in the alignment artifac
 1. **In-session rejections** — answers the human gave during grilling that ruled an option out.
 2. **Rejected prototype variants** — when `aln` invoked `pro` and the human picked a winner, the rejected variants (from C6 `decision_outcome.rejected` + `rationale_by_human`) become negative decisions here.
 
-**Intake from `pro` (caller-persists per Pro5).** On `aln` resume after `pro` exit, the alignment agent (A1 `grill-me` when built):
+**Intake from `pro` (caller-persists per Pro5).** On `aln` resume after `pro` exit, the alignment agent (A1 `align-concept` when built):
 
 1. Reads the C6 variant artifact ([`tpl/tpl_var_pres.md`](../tpl/tpl_var_pres.md)) at `<sandbox_path>/variants.md` **before sandbox deletion**. This must happen before Pro3 deletes the sandbox; A1 fails closed if C6 is unreadable or `decision_outcome.chosen` is null.
 2. For each id in `decision_outcome.rejected`: appends an Aln15 entry citing the variant `summary`, the observable facts that made it lose, and `rationale_by_human` if present.

@@ -67,7 +67,7 @@ No third option. No `cancel` / `proceed` / `skip`. Human cancels via Esc.
    **The strip applies to Rules, Behaviors, Constraints, Return shape, AND every piece of prose in the draft — including failure messages, stripped-detail notes, collapse-mode prompts, and example return strings.** Common leak patterns to hunt and rewrite:
    - "proceed to `<phase>` directly" → `status: not_produced, reason: <short>`.
    - "deferred to `<phase>`" / "deferred to `<phase>/<phase>`" → "Stripped detail: `<item>`" (per item, no phase name).
-   - "feeds into `<phase>`" / "hands off to `<phase>`" → name the consuming skill (`A1 grill-me`) or drop entirely.
+   - "feeds into `<phase>`" / "hands off to `<phase>`" → name the consuming skill (`A1 align-concept`) or drop entirely.
    - "next phase is `<phase>`" → drop; return-to-caller is silent.
    - Collapse-mode that silently quotes back upstream goals → must offer the human an explicit choice ("treat as confirmed, or run full pass?") — never silent short-circuit.
 
