@@ -113,7 +113,25 @@ No third option. No `cancel` / `proceed` / `skip`. Human cancels via Esc.
 
 10. **Write.** On human acceptance, write `skills/input/<name>-in.md`. No other writes. On reopen path: overwrite existing. On self-check-only path: apply only approved surgical fixes.
 
-11. **Return.** One-line summary: path written + section/rule/step counts + planning-artifact flag + self-check result. On rejection or failure: emit nothing written and reason.
+11. **Compile (post-draft chain, opt-in).** After a successful write in Step 10, ask the human via `AskUserQuestion`: "Compile `skills/input/<name>-in.md` now via `compile-skill`?" Options (in this order — default is the second):
+    - `Compile now` — invoke the `compile-skill` skill → produces `skills/output/<name>.md`. Required precondition for Step 12.
+    - `Skip compile (default)` — exit pipeline after draft; Step 12 is skipped regardless of `-ref.md` presence.
+
+    Skipped entirely on self-check-only path unless the human explicitly requests a recompile.
+
+12. **Reference reconciliation (generic-only).** Precondition: Step 11 produced `skills/output/<name>.md`. If Step 11 was `Skip compile`, skip this step entirely — no diff, no prompt, no log entry. Otherwise, if `skills/output/<name>-ref.md` exists:
+    - Diff `skills/output/<name>.md` against `skills/output/<name>-ref.md`.
+    - Present each delta to the human with two readings side-by-side:
+      - **Specific reading** — what the delta means if treated as a `<name>`-only fix (forbidden to apply).
+      - **Generic reading** — what pattern-level improvement to `draft-skill-input/SKILL.md` or `template_skill_in.md` would cover this delta for any future skill (e.g. missing section type, ordering rule, phrasing convention, classification heuristic, template gap).
+    - Human decides per delta whether the generic reading is real or whether the delta is `<name>`-specific noise. Do not apply a heuristic; ask.
+    - Via `AskUserQuestion` per delta, options:
+      - `Apply generic edit` — patch SKILL.md and/or template with the generic reading. HITL on the exact edit text. Forbidden: embedding `<name>`'s name, domain, source docs, or rule wording.
+      - `Discard as skill-specific` — log and move on.
+      - `Skip reconciliation` — abort remaining deltas, exit.
+    - If no `-ref.md` exists, skip silently.
+
+13. **Return.** One-line summary: drafted path + compiled path (if Step 11 ran) + reconciliation outcome (none / skipped / N edits-applied) + section/rule/step counts + planning-artifact flag + self-check result. On rejection or failure: emit nothing written and reason.
 
 ## Hard Rules
 

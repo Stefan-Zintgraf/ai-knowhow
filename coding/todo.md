@@ -115,32 +115,8 @@ Enforcement: `draft-skill-input` Step 4 (source-doc reading) is extended to incl
 - [x] compile-skill 
 - [x] test-skill (without the link)
 - [x] draft-skill skill
-  Prompt: 
-  You must draft a new skill file based on a specific row in the todo.md workflows table.
-  Ask the user which entry (row) of this table to process first.
-  Then you need to confirm the name of the newly created skill, for example myskill
-  Next, run the draft-skill-input skill to create a new skill input file [myskill]-in.md for the requested row in todo.md.
-  If the skill input file already exists, stop with an error message.
-  The skill input file then shall be compiled using the compile-skill skill which creates the [myskill].md output file.
-
-  **Authoring rule (added 2026-05-21):** before drafting, also load the SKILL.md bodies of every Pocock reference skill named in the target row's "Pocock reference skill" column. Use the [Pocock skill index](#pocock-skill-index-authoritative-names-may-2026) for current paths under `..\skills-plugins\matt_pocock_skills\`. Walkthrough excerpts are historical-only when a current Pocock skill exists; current SKILL.md is authoritative. This is enforced inside `draft-skill-input` Step 4.
-
-  Compare it with the reference distill-idea-ref.md file and adjust the draft-skill-input skill if possible to make the match perfect.
-  Finally, the distill-idea.md skill shall be tested using the test-skill skill with the following input: 
-  AI-driven mail handling. Goals: search mails by NL prompt, draft replies, use mail content as a knowledge base for Q&A.
-
-
-
-
-the Pocock skills are located in ..\skills-plugins\matt_pocock_skills. The todo.md and related documents refer to some of them. Please review and update the documents (some skills may have been renamed or become ambigous like grill-me and  grill-with-docs, maybe other skills not mentioned in todo.md may make sense to consider etc). 
-Update todo.md and related documents in a way that when new skills are created, the content of these skills has also to be considered. the draft-skill skill may also have to be updated to reflect this requirement.
-
-
-
-
-
- 
-
+- [ ] Update workflow/guardrails/skills-to-use based on: https://www.youtube.com/watch?v=6BB6exR8Zd8
+- [ ] Call draft-skill-input for all missing (or to be updated) skills
 
 
 
