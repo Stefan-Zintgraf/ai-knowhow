@@ -116,7 +116,7 @@ Enforcement: `draft-skill-input` Step 4 (source-doc reading) is extended to incl
 - [x] compile-skill 
 - [x] test-skill (without the link)
 - [x] draft-skill skill
-- [ ] coding_workflow: idea.md regeneration documentation (separate file) + re-generate
+- [ ] coding_workflow: idea.md regeneration test (see idea_recreation.md)
 - [ ] re-run grill-with-docs pocock original skill with this repo, check result
 - [~] Update workflow/guardrails/skills-to-use based on: https://www.youtube.com/watch?v=6BB6exR8Zd8 
   - [x] **partial (2026-05-21)**: doc layer landed 
