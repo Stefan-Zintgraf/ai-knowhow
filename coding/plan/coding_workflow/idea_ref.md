@@ -11,11 +11,13 @@
 Origin: distilled from Matt Pocock YouTube videos; current folder content built on that distillation.
 
 Anchor documents:
+
 - [todo.md](../../todo.md) — current list of work items (skills, hooks, templates, open decisions).
 - [guardrails.md](../../guardrails.md) — core rules + routing index to detail docs under [gr/](../../gr/).
 - [phases.md](../../phases.md) — phase definitions referenced by guardrails' `Fires:` lines.
 
 Stripped detail (not part of goals; kept here for traceability):
+
 - Stripped detail: phase names (ide/aln/res/pro/prd/iss/ral/par/qa/rev/ica).
 - Stripped detail: specific skill slots (A1–A11, B1–B10, C1–C8).
 - Stripped detail: substrate decisions (skill format D1, sandbox D4).
@@ -33,7 +35,6 @@ A /grill-with-docs session on 2026-05-22 settled 12 design contracts (C1–C12) 
 - **`guardrails.md` §3.29 rewritten** to point at `ide`-owned mode selection.
 
 The pre-migration capture (the "Settled Contracts (2026-05-22)" section that briefly lived in this file) is preserved in `git log` around 2026-05-22 for traceability.
-
 
 # Regeneration
 

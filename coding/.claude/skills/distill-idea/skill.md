@@ -3,74 +3,93 @@ name: distill-idea
 description: Distill a raw brief into 3–6 major goals and persist the confirmed list to plan/<WI>/idea.md. Use at the very start of a new work-item.
 compiled-against: compile-skill v2.1.0
 source: skills/input/distill-idea-in.md
-source-sha256: f0ce9d4900480e8ca37715f2baf4480ef27529866097851a1885e4c16a553c31
-source-modified: 2026-05-20 16:53
-compiled: 2026-05-20 16:53
+source-sha256: 58112c64b89771a01191b985fedd0be7cd893fcfef34732de25cdeefcbefef01
+source-modified: 2026-05-22 14:40
+compiled: 2026-05-22 14:46
 ---
 
-# Skill: distill-idea
-
-This skill distills a raw brief into 3–6 major goals and writes the confirmed list to `plan/<WI>/idea.md`. It does not manage workflow phases, name downstream work, or decide whether anything proceeds.
-
----
-
-## Steps
-
-1. **Pre-structured-input check.** Heuristically scan the input for a candidate goal list (3–6 outcome-shaped bullets, no detail leakage). If it fires, ask the human via an explicit choice prompt: "Input already looks like 3–6 goals: [list]. Treat as the confirmed goal list, or run full distillation?" — never silently quote-back-and-confirm. If "treat as confirmed", skip to step 6 with that list. Otherwise proceed. If the heuristic does not fire, proceed silently.
-
-2. **Distillation pass.** Read the raw input (Slack note, ticket, email, transcript, freeform brief). Produce a draft list of 3–6 major goals. Each names *what the work must serve*, not *how*. One sentence per goal. No nested bullets. No prose paragraphs.
-
-3. **Detail-leak strip.** Remove from each draft goal any module name, file path, API shape, UX specific, acceptance criterion, tech choice, or estimate. Append a one-line note per stripped item using the exact format: `Stripped detail: <item>` (one per item, no phase names — never "deferred to <phase>").
-
-4. **Negative goal capture.** Identify explicit exclusions in the brief ("not a mobile app", "no real-time updates", "no migration from system X"). Promote them to the goal list as negative goals using the `Non-goal: ` prefix (capital N, space after colon). They count toward the 3–6 budget when they materially shape the work.
-
-5. **Count gate.** If draft count < 3: return `status: not_produced` with `reason: under-budget` and a one-line note that the brief may be too narrow for goal-shaped framing. Forbidden phrases in the failure string: any phase token, `proceed to <phase>`, `deferred to <phase>`, `next phase`. If draft count > 6: prompt the human to merge or drop goals before proceeding.
-
-6. **HITL accept.** Present the draft list to the human for edit / accept / reject. Do not finalize until the human explicitly accepts. Forbidden: auto-accepting, treating brief acknowledgement as acceptance.
-
-7. **Work-item slug + owner-issue + write.** Derive a candidate `<WI>` slug from the brief (short, snake_case — e.g. `ai_mail`, `fix_crash_abc`). Prompt the human: "Work-item slug? Suggested: `<slug>`." Accept confirm or override. Then prompt: "Owner issue (e.g. `#123`)?" — required; the WI anchor. If the human has no issue number yet, accept a placeholder `#TBD` and explicitly warn that Q11 merge-gate retirement enforcement will fail until replaced. Create `plan/<WI>/` if missing. Write the confirmed goal list to `plan/<WI>/idea.md` under the literal heading `# Goals`, numbered entries, one sentence each.
-
-8. **Status update.** Write/update `plan/<WI>/status_idea.md` with frontmatter:
-   
-   ```
-   ---
-   status: open | wip | done
-   updated: <today YYYY-MM-DD>
-   owner-issue: <#NNN or #TBD>
-   ---
-   ```
-   
-   Rules: (a) refresh `updated:` to today on every run; (b) default `status: wip` after a successful artifact write; (c) ask the human "mark done?" at end of every run UNLESS it is absolutely obvious and undoubtable that the artifact is still open/wip (e.g. under-budget failure, human rejected the draft, no human acceptance reached, count gate not passed) — in those clear-incomplete cases skip the prompt; flip to `done` only on explicit human yes, never auto-flip; (d) preserve an existing `done` unless the human explicitly reopens — on reopen, flip `done → wip` (never back to `open`). On failure runs (no artifact written), do not create or modify `status_idea.md`.
-
-9. **Return.** Emit the confirmed goal list (numbered, one line each), the path written, plus the success signal — see Return section.
-
----
+This skill distills a brief (Slack note, ticket, email, stakeholder ask, backlog item) into 3–6 major goals and persists the confirmed list as `plan/<WI>/idea.md` paired with `plan/<WI>/status_idea.md`. It does not manage workflow phases, pick modes, emit or label issues, dispatch exploration subagents, decompose goals into tasks, write acceptance criteria, touch `CONTEXT.md` / ADRs / PRDs, or retire artifacts. Output is two file paths plus a status signal — nothing more.
 
 ## Hard Rules
 
-- Output is 3–6 major goals.
-- No detail leakage: no module names, file paths, API shapes, UX specifics (screens, components, layouts), acceptance criteria, tech choices (library X, pattern Y), or effort/timeline estimates inside any goal.
-- Negative goals are first-class and count toward the 3–6 budget when they materially shape the work. Prefix exactly `Non-goal: `.
-- HITL only. No AFK execution. Wait for explicit human acceptance.
-- The brief is input, not output — even a clean brief gets restated as a goal list.
-- Single canonical artifact. On accept, write the goal list to `plan/<WI>/idea.md` and nowhere else. `<WI>` is a human-confirmed snake_case slug. No `idea/<topic>.md`, no shared `idea.md`, no `<WI>.md` at the repo root. No writes on failure.
-- Status file paired. Always emit/update `plan/<WI>/status_idea.md` alongside a successful artifact write per the spec in Step 8. One status file per artifact — never a shared `status.md`. Human-only `done`. Never auto-flip.
-- `owner-issue:` is mandatory in `status_idea.md` frontmatter — the WI anchor. Prompt the human; accept `#TBD` only with an explicit warning that Q11 merge-gate will fail until replaced.
-- No phase orchestration. Do not name, invoke, or hand off to other skills. Output is the goal list, the artifact path, and a status signal — nothing more.
+1. **3–6 entries, strict.** Successful return has between 3 and 6 numbered entries inclusive. Negative goals count toward the budget when they materially shape the work. Under-budget → clear-incomplete; over-budget → block until the human merges or decomposes.
+2. **No details in any goal.** Forbidden inside any goal body: module names, file paths, API shapes, UX specifics (screens, components, layouts), acceptance criteria, tech choices (library X, pattern Y), effort or timeline estimates. A goal names *what the work must serve*, not *how*.
+3. **Negative goals are first-class.** Capture explicit non-goals as numbered entries prefixed exactly `Non-goal: ` (capital N, space after the colon).
+4. **HITL only.** No AFK / loop execution. Agent proposes, human edits / accepts / rejects. No write without explicit human acceptance. Acknowledgement or silence is not acceptance.
+5. **Brief is input, not output.** Even a well-written brief is restated as the 3–6 goal list. Do not pass the brief through verbatim.
+6. **One sentence per goal. No nested bullets. No prose paragraphs.** Heading is literally `# Goals`.
+7. **Single canonical path.** Artifact is exactly `plan/<WI>/idea.md` paired with `plan/<WI>/status_idea.md`. Never a shared `idea.md`, never multiple idea files under one `<WI>`, never any other location (no `idea/<topic>.md`, no `<WI>.md` at repo root).
+8. **`owner-issue` mandatory** on `status_idea.md` frontmatter. Prompt the human at write-time. Accept `#TBD` only with an explicit warning that downstream merge-gate retirement enforcement will fail until replaced.
+9. **No phase orchestration.** Do not name, invoke, route to, or hand off to other phases or skills. Do not pick or change a workflow mode. Do not search or create issues. Do not retire your own artifact.
+10. **No silent collapse.** When the pre-structured-input heuristic fires, give the human an explicit choice between "treat as confirmed" and "full pass" — never silent quote-back-and-confirm.
+11. **Strip-leak notes use exact format.** For each forbidden detail removed from a goal, append one line below the numbered list using exactly `Stripped detail: <item>`. No phase names in the line. Never write `deferred to <anywhere>` or any orchestration token.
+12. **Forbidden phrasings.** Never emit anywhere in skill output, prompts, or return strings: `proceed to <phase>`, `deferred to <phase>`, `hand off to <phase>`, `feeds into <phase>`, `next phase`.
+13. **Status file paired with artifact.** On failure runs (no `idea.md` written), do NOT create or modify `status_idea.md`. Status file never exists without a paired `idea.md`.
 
----
+## Steps
+
+1. **Pre-structured-input check.** Scan the brief for an already-shaped goal list (numbered list with 3–6 entries, no forbidden detail per Rule 2). If it fires, ask the human via an explicit choice: "Input already looks like a goal list: [render the detected list verbatim]. Treat as confirmed, or run full distillation pass?" If "treat as confirmed", carry the detected list into Step 5 unchanged. If "full pass", continue with Step 2. If the heuristic does not fire, continue silently.
+
+2. **Distill candidate goals.** Read the brief end to end. Surface the small set of intents the work must serve — what would make it succeed or fail. Restate each as one sentence. Aim for 3–6. Mark non-goals with `Non-goal: ` prefix.
+
+3. **Detail-leak strip.** Remove any forbidden detail (Rule 2) from each goal sentence. For every item stripped, append a line under the numbered list using exactly: `Stripped detail: <item>`. One line per stripped item.
+
+4. **Count gate.**
+   - **Under-budget** (fewer than 3 entries after strip): return `status: not_produced` with `reason: too narrow for goal-shaped framing — fewer than 3 distinct major goals identified`. Do not write any files. Do not name a downstream destination.
+   - **Over-budget** (more than 6 entries): prompt the human to merge or decompose entries. Do not write until the count is between 3 and 6 inclusive.
+
+5. **HITL accept.** Present the candidate list (numbered, with any `Non-goal:` and `Stripped detail:` lines) to the human for edit / accept / reject. Do not finalize until the human explicitly accepts. Treating acknowledgement or silence as acceptance is forbidden.
+
+6. **Work-item slug + owner-issue prompts.** Derive a candidate `<WI>` slug from the brief (short, snake_case — e.g. `ai_mail`, `fix_crash_abc`, `add_oauth_provider`). Prompt: "Work-item slug? Suggested: `<slug>`." Accept confirm or override. Then prompt: "Owner issue (e.g. `#123`)?" — required. If the human has no number yet, accept the placeholder `#TBD` and warn explicitly that downstream merge-gate retirement enforcement will fail until the placeholder is replaced.
+
+7. **Artifact write.** Create `plan/<WI>/` if missing. Write `plan/<WI>/idea.md` in this exact shape:
+
+   ```markdown
+   # Goals
+
+   1. <goal sentence>
+   2. <goal sentence>
+   3. Non-goal: <explicit exclusion sentence>
+   4. <goal sentence>
+
+   Stripped detail: <item>
+   Stripped detail: <item>
+   ```
+
+   Plain markdown — no YAML frontmatter. Heading literally `# Goals`. Numbering contiguous (1, 2, 3, …). `Non-goal: ` prefix exact. `Stripped detail:` lines (if any) live below the numbered list.
+
+8. **Status file write.** Write `plan/<WI>/status_idea.md` with frontmatter only (body optional and ignored):
+
+   ```markdown
+   ---
+   status: open | wip | done
+   updated: <today YYYY-MM-DD>
+   owner-issue: "#NNN"
+   ---
+   ```
+
+   State machine:
+   - (a) Refresh `updated:` to today on every run, regardless of whether `status:` changes.
+   - (b) Default `status: wip` on a successful artifact write from `open` or first-write.
+   - (c) Ask the human "mark done?" at the end of every successful run UNLESS the run is clear-incomplete (under-budget failure, human rejected, no acceptance reached) — in those cases skip the prompt. Flip to `done` only on explicit human yes. Never auto-flip.
+   - (d) Preserve existing `done` unless the human explicitly reopens. On reopen, flip `done → wip` (never back to `open`).
+   - (e) On failure runs (no `idea.md` written), do NOT create or modify `status_idea.md`.
+
+9. **Return.**
+   - **Success:** emit the written `plan/<WI>/idea.md` path, the written `plan/<WI>/status_idea.md` path, and a one-line summary: `status: ok` plus `goals: <N>` (count) plus `mode: <distilled|confirmed>` (full pass vs pre-structured shortcut).
+   - **Failure** (under-budget, human rejected, no acceptance reached): emit `status: not_produced` plus the reason. No phase names anywhere in the failure string. None of the forbidden phrasings from Hard Rule 12.
 
 ## Return
 
 On success:
+```
+plan/<WI>/idea.md
+plan/<WI>/status_idea.md
+status: ok | goals: <N> | mode: <distilled|confirmed>
+```
 
-- The confirmed goal list, numbered, one line each.
-- Path written: `plan/<WI>/idea.md`.
-- Status file: `plan/<WI>/status_idea.md` (`status: wip` unless human confirmed `done`).
-- `status: ok` plus a one-line summary: "Produced N goals from brief."
-
-On failure (under-budget, human rejected, no acceptance reached):
-
-- Write nothing (no `idea.md`, no `status_idea.md`).
-- `status: not_produced` plus the reason.
-- No phase names. No "next step" / "proceed to" / "deferred to" language anywhere in the failure string.
+On failure:
+```
+status: not_produced
+reason: <short reason — no phase names, no forbidden phrasings>
+```

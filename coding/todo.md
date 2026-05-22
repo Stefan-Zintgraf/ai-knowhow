@@ -117,6 +117,20 @@ Enforcement: `draft-skill-input` Step 4 (source-doc reading) is extended to incl
 - [x] test-skill (without the link)
 - [x] draft-skill skill
 - [ ] coding_workflow: idea.md regeneration test (see idea_recreation.md)
+  - [ ] /make-skill skill:  closed-loop drafting, compiling, testing skill iteration
+     - change in todo.md, guardrails.md, gr_xxxx.md etc.
+     - /draft-skill-input A11/A1/...  --> skill/input/XXX-in.md
+     - /compile-skill A11/A1/...  --> skill/output/XXX.md
+     - check if all requirements from todo.md, guardrails.md, gr_xxxx.md etc. are fulfilled (check item by item, especially the ones in the gr_XXX.md documents)
+     - if something is missing: adjust /draft-skill-input skill or update input files (in case of updating input files, human confirmation is required)
+     - if ok, then test the new skill using the test-skill skill
+       - pre-condition: test files for the skill exist
+       - test files are located in skills/test/XXXX (XXXX is the skill name)
+       - input files given to the skill are input000.md, input001.md, etc.
+       - result files that are a reference to the skill output are output000.md, output001.md, etc.
+       - test shall then check if the generated output matches the test output files
+       - if test fails, fix with same strategy as for the draft/compile step
+
 - [ ] re-run grill-with-docs pocock original skill with this repo, check result
 - [~] Update workflow/guardrails/skills-to-use based on: https://www.youtube.com/watch?v=6BB6exR8Zd8 
   - [x] **partial (2026-05-21)**: doc layer landed 
@@ -681,3 +695,4 @@ Deprecated (do NOT reference, kept in `skills/deprecated/`): `design-an-interfac
 - E3. Vertical vs horizontal slicing — implement one feature both ways, compare rework.
 - E4. Push vs pull standards — measure standards violations per PR before/after.
 - E5. Module-depth refactor — run `arch-review` on the repo, measure test-boundary count and cross-module import count before/after.
+- E6. **Deferred decision — `draft-skill-input` Step 6 strip default.** Today Step 6 defaults to strip phase-management rules from the source `gr/*.md`. This serves most skills but silently loses rules a phase-owning entry skill legitimately owns (Idea8 triage, Idea9 issue invariant, Idea10 budget, Idea11 transitions). Current workaround: for `distill-idea` only, the input is hand-tuned against a `_ref` baseline (`skills/input/distill-idea-in_ref.md`). Upgrade trigger: as soon as a second phase skill is identified as phase-owning-orchestration, switch `draft-skill-input` to the **hybrid** design — add `ownership: phase-only | phase-owns-orchestration` flag to each `todo.md` skill row; flagged skills get default-include + per-rule HITL classify in Step 6; unflagged skills keep today's default-strip. Measure (when triggered): per-skill rule-coverage delta between fresh draft and `_ref` baseline, by `IdeaN`/`AlnN`/etc. anchor.
