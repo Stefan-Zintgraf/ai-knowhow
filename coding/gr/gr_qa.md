@@ -138,6 +138,31 @@ Forbidden:
 - Adding a new `research/*.md` or `plan/<WI>/status_idea.md` without an `owner-issue` header to silence the lint (fabricated owner = Op13).
 - Partial retirement: deleting `plan/<WI>/idea.md` while leaving sibling `plan/<WI>/<other>.md` files behind. The whole directory retires together.
 
+### Q12. Mode-Dependent `qa` Shape
+
+The `qa` phase has three shapes determined by the mode `ide` selected (gr_idea.md Idea8). All three terminate on an explicit human verdict (Q9). The shape difference is the **scope of the verification act**, not the rigor of the verdict.
+
+**`direct-edit` mode — folded `qa`.**
+
+`qa` is not invoked as a separate phase. The verification record produced under TDD11 (gr_tdd.md) — existing-tests-green-pre/post for carve-out A, or lint + spell-check + HITL eyeball for carve-out B — **is** the `qa` step. The human's confirmation of that record is the Q9 verdict. The verdict is recorded on the GH issue body, not in a separate `qa` notes file. Q11 retirement checks still apply if the WI later expanded to include `plan/<N>_<slug>/` artifacts; if no folder exists, Q11 checks 1 and 3 are no-ops, check 2 still runs.
+
+**`mini` mode — short `qa`.**
+
+The human walks the new behavior on the running slice. Q1–Q3 still apply (runnable, user-path-not-only-happy-path, surface tests cannot judge). Q6 output is compressed: verdict + slice exercised + findings (each with triage decision) recorded inline on the GH issue body under a `## QA` heading, not in a separate notes file. Q11 retirement checks all run.
+
+**`full` mode — full `qa`.**
+
+The complete `qa` per Q1–Q11 above. C5 QA notes template (see todo.md) is used. Findings routed to `iss` per Q5.
+
+**Forbidden:**
+
+- Silently skipping `qa` in `direct-edit` mode because "the issue is small." The verification record substitutes for the phase invocation; it does not eliminate it.
+- Treating the folded `direct-edit` `qa` as license to skip TDD11 verification (carve-out A or B). The verification is the substitution; without it, there is no `qa`.
+- Promoting a `mini` `qa` to "informal" — Q1–Q3 are mandatory regardless of mode.
+- Using the wrong shape for the mode. Mode is on the issue label (`mode:*` per Idea9); the agent reads it before starting `qa`.
+
+**Mode-change during `qa`.** If `qa` surfaces a finding that retroactively invalidates the mode pick (e.g., a fix-now finding shows the change has wider blast radius than `direct-edit` allowed), the agent halts per 3.37 and proposes mode upgrade via Idea11. The current `qa` cycle is suspended; on upgrade, full `qa` resumes from the start.
+
 ---
 
 ## Anti-Patterns

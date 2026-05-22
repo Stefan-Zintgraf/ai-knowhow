@@ -81,3 +81,27 @@ This mode stacks with other active skills/modes. Activation of another skill/mod
 the best version of an office-based team, what specifically is missing that 
 remote can't replicate?
 </response>
+
+# Agent skills
+
+## Issue tracker
+
+GitHub Issues on `Stefan-Zintgraf/ai-knowhow` via `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+## Triage labels
+
+Default vocabulary: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+## Domain docs
+
+Single-context: one `CONTEXT.md` + `docs/adr/` at repo root. See `docs/agents/domain.md`.
+
+## Frozen reference files
+
+Files matching `*Ref.md`, `*-ref.md`, or `*_ref.md` = frozen baseline snapshots, kept for diffing against future regenerations.
+
+Rules (repo-wide):
+- Do not read, edit, or cite these files.
+- Do not feed them to skills as input.
+- Do not create new ones without explicit user permission.
+- Treat as absent during all agent work.

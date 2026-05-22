@@ -10,11 +10,12 @@ Origin: Pocock — "Idea" is phase 1 of the 7-phase pipeline. Local placement: p
 
 ## Apply When
 
+- **Every** task entering the workflow. `ide` is the only always-entered phase (Idea8). It owns the entry-triage decision, not just goal distillation.
 - A new feature, change, or initiative enters the workflow from a brief, Slack note, ticket, email, or verbal ask.
 - A backlog item is vague enough that `aln` would not know where to start grilling.
 - Before any `aln` grilling, `res` research, or planning artifact is produced.
 
-Skip when: the upstream artifact already names 3–6 explicit goals (e.g. a written product memo). In that case `ide` collapses to a one-line confirmation, per 3.29 (collapse, not skip) — the confirmed list is still written to `plan/<WI>/idea.md` per Idea7; collapse short-circuits the distillation work, not the artifact.
+Skip when: never. `ide` is the entry phase and always runs. What collapses is what `ide` *does* after triage (per Idea8): for `direct-edit` mode, distillation is skipped; for `mini`/`full`, distillation runs. The upstream-artifact-names-goals shortcut (per 3.29 collapse) reduces distillation to a one-line confirmation but does not skip the phase itself.
 
 ---
 
@@ -52,9 +53,15 @@ The original brief (Slack, ticket, email) is the raw material the agent distills
 
 The goal list is the *starter* for grilling, not a substitute for it. `aln` walks every branch of every goal. An agent that reads a goal list and jumps to `prd` violates 3.21. The goal list narrows what `aln` grills over; it does not shortcut the grilling.
 
-### Idea7. Persisted to `plan/<WI>/idea.md`
+### Idea7. Persisted to `plan/<N>_<slug>/idea.md`
 
-The confirmed goal list is written to `plan/<WI>/idea.md`. `<WI>` is a human-confirmed snake_case slug (e.g. `ai_mail`, `fix_crash_abc`) — single artifact per WI, never a shared `idea.md`, never multiple idea files under one WI. Downstream phases (`aln`, `prd`, `iss`, ...) read this file as the anchor for goals; PRD Goals section folds it but does not replace it.
+The confirmed goal list is written to `plan/<N>_<slug>/idea.md`. `<N>` is the GH issue number assigned at issue-emit time (Idea9); `<slug>` is kebab-case from the issue title, stopwords stripped, truncated ≤40 chars. Single artifact per WI, never a shared `idea.md`, never multiple idea files under one WI. Downstream phases (`aln`, `prd`, `iss`, ...) read this file as the anchor for goals; PRD Goals section folds it but does not replace it.
+
+**Mode-dependent persistence (per Idea8):**
+- `full` and `mini` modes — create `plan/<N>_<slug>/idea.md` + `status_idea.md` as defined below.
+- `direct-edit` mode — **no `plan/<N>_<slug>/` files created.** The GH issue body carries the brief verbatim and the verification record; that is the complete WI record. Retirement (3.33) does not apply because no files exist. No `status_idea.md` flip needed.
+
+Slug collision: if two open issues would generate the same slug after truncation, suffix `-2`, `-3` and surface to human at folder-create time.
 
 Companion status file: `plan/<WI>/status_idea.md` with frontmatter:
 
@@ -70,6 +77,76 @@ Refresh `updated:` on every run. Default `status: wip` on a successful artifact 
 
 Retirement: the goal list is WI-scoped, not durable. Deleted with the rest of `plan/<WI>/` at WI close per 3.33 — same retirement model as 3.27 (research). Persistence is bounded; documentation-rot risk that 3.24 (PRD) and 3.27 (research) address is handled here by 3.33's close-time deletion, not by avoiding the artifact altogether.
 
+### Idea8. Triage and Mode Selection (Entry Decision)
+
+`ide` is the entry phase for **every** task. Its first act, before any goal distillation, is to triage the incoming brief and pick a workflow mode. Three modes:
+
+- **`direct-edit`** — `ide` → `ral` → `qa`. Skips `aln`/`prd`/`iss`. No `plan/<N>_<slug>/` files; issue body is the record. TDD exemption may apply per TDD11.
+- **`mini`** — `ide` → `aln`(collapsed per Aln19) → `ral` → `qa`. Issue + `plan/<N>_<slug>/idea.md` + collapsed `aln` artifacts.
+- **`full`** — `ide` → `aln` → [`res`?] → [`pro`?] → `prd` → `iss` → `ral`\|`par` → `qa`. Full pipeline.
+
+**Triage matrix (4 axes).** The agent scores each axis with the human present (HITL per Idea4):
+
+| Axis | Values |
+| --- | --- |
+| Design ambiguity | none / some / lots |
+| Blast radius | local (≤1 file, no public API) / module / system |
+| Reversibility | trivial / costly / hard |
+| Existing test coverage | covers it / partial / none |
+
+**Decision rule:**
+
+- All-low (no ambiguity, local, trivial, fully covered) → **`direct-edit`**.
+- Any one axis at medium (some ambiguity OR module-scope OR partial coverage OR costly reversibility) → **`mini`**.
+- Any axis at high (lots of ambiguity OR system blast OR hard-reverse OR uncovered behavior change) → **`full`**.
+- **Tripwire override**: any task touching a tripwire surface (the 3.29 list — public API, schema, auth, security, safety-critical logic, concurrency, broad architecture) forces **`full`** regardless of axis scores.
+
+**HITL pick is mandatory.** The agent proposes a mode + axis scores + reason; the human confirms or overrides. Silent auto-pick is forbidden (Idea4, 3.16). Exploration budget for triage-time codebase reads: see Idea10.
+
+**Idea8 collapse:** for `direct-edit`, distillation (Idea1) is skipped entirely — the brief verbatim is the implicit single goal recorded on the issue. For `mini`/`full`, distillation proceeds per Idea1.
+
+### Idea9. Issue Invariant: Exactly One Issue Before Any `ral`
+
+Before any `ral` invocation, **exactly one GH issue exists** for the WI. Emitter depends on mode (Idea8):
+
+- `direct-edit`, `mini` — `ide` emits the issue.
+- `full` — `iss` emits issue(s); `ide` emits no issue, only the `plan/<N>_<slug>/idea.md` anchor.
+
+**Dedupe protocol (before any issue create).** Agent runs `gh issue list --state open --search "<key terms from brief>"`, displays top 3–5 matches, human picks:
+
+- **new** — create new issue via `gh issue create --title --body --label ready-for-agent`; capture `#N` via `--json number`.
+- **link to #N** — reuse existing folder `plan/N_<existing-slug>/` if present, else create with current slug.
+- **abort** — `ide` exits; no issue, no folder; clean state.
+
+**Folder creation:** after issue create, `mkdir plan/<N>_<slug>/` for `mini`/`full`; for `direct-edit`, no folder.
+
+**`plan/INDEX.md`** is auto-regenerated from `gh issue list --state open` + folder listing — never hand-maintained.
+
+Mode is recorded on the issue body and as a label (`mode:direct-edit` / `mode:mini` / `mode:full`) so downstream automation can read it without parsing body text.
+
+### Idea10. `ide`-Time Exploration Budget
+
+The agent may need light codebase exploration during triage (Idea8) to score the 4 axes honestly. Mechanism: dispatch B10 (subagent-for-exploration, see gr_algn.md Aln7) with a **strict budget cap of ≤5 file reads, summary only**.
+
+Budget rule:
+
+- Within budget → score axes, propose mode.
+- Budget exceeded → **auto-recommend mode upgrade to `mini`**. Rationale: a task whose triage needs deeper exploration is not direct-edit. Surface this to the human as a triage finding.
+
+No edits during `ide` exploration. No deep reads. The B10 dispatch follows the same isolated-context discipline as in `aln` (Aln7) — main context stays clean.
+
+### Idea11. Mode Transitions: Symmetric, Human-Approved Either Way
+
+Once a mode is picked in `ide`, it can be changed (upgrade or downgrade) under these rules:
+
+- **Either direction may be proposed by either party.** Agent may suggest upgrade ("touched auth — should we move to full?") or downgrade ("scope shrunk after grilling — could collapse to mini?"). Human may suggest either direction at any point.
+- **Human approves either direction.** No mode change without explicit human acceptance.
+- **Silent change is forbidden** (extension of 3.16 disagree-visibly). Equally forbidden: silently *not* surfacing a mode change the agent believes is warranted.
+- **Mid-task upgrade trigger** — see core rule 3.37 (tripwire discovery): agent halts, does not edit, surfaces to human; human picks (i) approve narrow edit with reasoning logged on issue, or (ii) re-enter `ide` for mode re-triage.
+- **Audit trail**: every mode change is recorded on the GH issue body (old mode → new mode + reason + who proposed). The `mode:*` label is updated on the issue.
+
+`mini` → `full` auto-recommendation triggers (during `aln`): Adr1 ADR-worthy decision surfaces; >3 unresolved questions after first grilling round; Pro1 prototype gate hits. Agent surfaces; human approves the upgrade.
+
 ---
 
 ## Anti-Patterns
@@ -79,9 +156,14 @@ Retirement: the goal list is WI-scoped, not durable. Deleted with the rest of `p
 - Letting implementation detail (module names, API shapes) leak into the goal list.
 - Treating the goal list as the design — jumping from `ide` straight to `prd`.
 - Running `ide` AFK / via Ralph loop.
-- Writing the goal list anywhere other than `plan/<WI>/idea.md` — no `idea/<topic>.md`, no shared `idea.md`, no scattered locations. Single canonical path per WI.
+- Writing the goal list anywhere other than `plan/<N>_<slug>/idea.md` — no `idea/<topic>.md`, no shared `idea.md`, no scattered locations. Single canonical path per WI.
 - Auto-flipping `status_idea.md` to `done`. Human-only `done`.
-- Leaving `plan/<WI>/` behind after the WI closes (3.33 violation).
+- Leaving `plan/<N>_<slug>/` behind after the WI closes (3.33 violation).
+- Picking a mode silently (Idea8 violation) — mode pick is HITL by construction.
+- Skipping the triage step on "obviously trivial" tasks — every entry runs triage, even if it resolves in one turn.
+- Creating duplicate issues by skipping the Idea9 dedupe search.
+- Exceeding the Idea10 exploration budget without auto-recommending a mode upgrade.
+- Silent mode change (Idea11 violation) — either direction needs HITL approval and an audit trail.
 
 ---
 

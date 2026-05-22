@@ -76,6 +76,31 @@ Tests added in the same change as the implementation, with no recorded Red phase
 
 During Refactor, no test is added, removed, weakened, or made to assert something new. If a refactor surfaces a missing behavior, finish the refactor first (tests still green), then open a new Red for the missing behavior.
 
+### TDD11. Direct-Edit Mode Exemption
+
+When `ide` selects `direct-edit` mode (gr_idea.md Idea8), the Red-Green-Refactor floor may be relaxed under two named carve-outs, both **HITL-confirmed** and recorded on the GH issue body. No silent skip.
+
+**Carve-out A — Behavior-bearing change with sufficient existing tests.**
+
+- Pre-condition: existing tests cover the changed behavior. Human confirms sufficiency.
+- Verification: run the relevant existing test suite **green before** the edit and **green after** the edit. Record both runs on the issue (commands + pass status).
+- TDD1–TDD10 are otherwise unchanged — if any test fails or coverage gap surfaces during the change, the carve-out is voided and a Red must be authored before continuing.
+
+**Carve-out B — Behavior-free change** (documentation, comments, formatting, message-only string edits with no logic effect).
+
+- Verification floor: **lint + spell-check where configured** + **HITL eyeball mandatory always**.
+- Recording: `lint:pass / spell-check:pass / visual:human-confirmed` on the issue.
+- Degraded tooling: if lint or spell-check is not configured in the repo, the absence is not a blocker, but the HITL eyeball remains mandatory.
+
+**Forbidden:**
+
+- Applying TDD11 silently. The carve-out must be declared on the issue with the mode label (`mode:direct-edit`) and the carve-out type (A or B).
+- Using carve-out A when existing test coverage is partial or absent — partial coverage is a `mini`/`full` signal per Idea8 axis matrix.
+- Using carve-out B for any change that alters runtime behavior, including config values, environment variables, or build-pipeline changes (these are behavior-bearing).
+- Mid-edit scope creep that pushes a TDD11 task out of `direct-edit` mode without re-entering `ide` for mode re-triage (3.37).
+
+**Mode re-triage trigger.** If during a TDD11 task the agent discovers the change is behavior-bearing in a way carve-out A does not cover (e.g., uncovered edge case surfaced), agent halts per 3.37 and surfaces the gap to the human for mode re-triage.
+
 ---
 
 ## Anti-Patterns

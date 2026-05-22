@@ -35,6 +35,7 @@ npx skills@latest add mattpocock/skills
 2. Pick the skills you want, and which coding agents you want to install them on. **Make sure you select `/setup-matt-pocock-skills`**.
 
 3. Run `/setup-matt-pocock-skills` in your agent. It will:
+   
    - Ask you which issue tracker you want to use (, Linear, or local files)
    - Ask you what labels you apply to ticks when you triage them (`/triage` uses labels)
    - Ask you where you want to save any docs we create
@@ -48,7 +49,7 @@ I built these skills as a way to fix common failure modes I see with Claude Code
 ### #1: The Agent Didn't Do What I Want
 
 > "No-one knows exactly what they want"
->
+> 
 > David Thomas & Andrew Hunt, [The Pragmatic Programmer](https://www.amazon.co.uk/Pragmatic-Programmer-Anniversary-Journey-Mastery/dp/B0833F1T3V)
 
 **The Problem**. The most common failure mode in software development is misalignment. You think the dev knows what you want. Then you see what they've built - and you realize it didn't understand you at all.
@@ -65,7 +66,7 @@ These are my most popular skills. They help you align with the agent before you 
 ### #2: The Agent Is Way Too Verbose
 
 > With a ubiquitous language, conversations among developers and expressions of the code are all derived from the same domain model.
->
+> 
 > Eric Evans, [Domain-Driven-Design](https://www.amazon.co.uk/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)
 
 **The Problem**: At the start of a project, devs and the people they're building the software for (the domain experts) are usually speaking different languages.
@@ -94,7 +95,7 @@ It's hard to explain how powerful this is. It might be the single coolest techni
 
 > [!TIP]
 > A shared language has many other benefits than reducing verbosity:
->
+> 
 > - **Variables, functions and files are named consistently**, using the shared language
 > - As a result, the **codebase is easier to navigate** for the agent
 > - The agent also **spends fewer tokens on thinking**, because it has access to a more concise language
@@ -102,7 +103,7 @@ It's hard to explain how powerful this is. It might be the single coolest techni
 ### #3: The Code Doesn't Work
 
 > "Always take small, deliberate steps. The rate of feedback is your speed limit. Never take on a task that’s too big."
->
+> 
 > David Thomas & Andrew Hunt, [The Pragmatic Programmer](https://www.amazon.co.uk/Pragmatic-Programmer-Anniversary-Journey-Mastery/dp/B0833F1T3V)
 
 **The Problem**: Let's say that you and the agent are aligned on what to build. What happens when the agent _still_ produces crap?
@@ -120,11 +121,11 @@ For debugging, I've also built a **[`/diagnose`](./skills/engineering/diagnose/S
 ### #4: We Built A Ball Of Mud
 
 > "Invest in the design of the system _every day_."
->
+> 
 > Kent Beck, [Extreme Programming Explained](https://www.amazon.co.uk/Extreme-Programming-Explained-Embrace-Change/dp/0321278658)
 
 > "The best modules are deep. They allow a lot of functionality to be accessed through a simple interface."
->
+> 
 > John Ousterhout, [A Philosophy Of Software Design](https://www.amazon.co.uk/Philosophy-Software-Design-2nd/dp/173210221X)
 
 **The Problem**: Most apps built with agents are complex and hard to change. Because agents can radically speed up coding, they also accelerate software entropy. Codebases get more complex at an unprecedented rate.

@@ -14,7 +14,7 @@ Distill a raw brief, backlog item, or stakeholder ask into **3–6 major goals**
 
 ### aln — Alignment
 
-Reach alignment / shared design concept between human and agent before any planning artifact exists.
+Reach alignment / shared design concept between human and agent before any planning artifact exists. **Document-anchored** per Aln17 (Pocock's `/grill-with-docs`): reads `context.md` (the ubiquitous-language glossary, gr_domain_language.md L8) at session start via the `CLAUDE.md` pointer (L9), updates it in-session as terms emerge or shift, and drafts ADRs (`docs/adr/NNNN-<slug>.md` per gr_adr.md / 3.34) for any decision crossing the Adr1 threshold. Byproducts of `aln` therefore include: alignment transcript, module map (Aln12), `context.md` diffs, and zero or more new ADRs.
 
 ### res — Research (Optional)
 
