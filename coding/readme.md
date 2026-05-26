@@ -13,7 +13,7 @@ Develop a reusable system of guardrails and a phased planning workflow that cons
 | [ai_coding_challenges.md](ai_coding_challenges.md) | Problem motivation — risks of coding agents in brownfield systems |
 | [guardrails.md](guardrails.md) | Core rules + routing index to `gr/` detail docs |
 | [phases.md](phases.md) | Phase definitions (`ide → aln → res → pro → prd → iss → ral/par → qa → rev → ica`) |
-| [todo.md](todo.md) | Operationalization tracker — skills, hooks, templates status |
+| [coding_plan.md](coding_plan.md) | Operationalization tracker — skills, hooks, templates status |
 
 ## Folder Structure
 
@@ -26,4 +26,4 @@ skills/  skill authoring: input/ (prompts), output/ (compiled skills)
 
 ## Status
 
-Guardrail docs and phases: largely complete. Skills operationalizing the phases: in progress — see `todo.md`.
+Guardrail docs and phases: largely complete. Skills operationalizing the phases: in progress — see `coding_plan.md`.

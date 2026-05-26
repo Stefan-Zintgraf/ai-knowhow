@@ -154,11 +154,19 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
 
 **Follow-up checklist (fresh session):**
 
-- [ ] Add A-table row **A12. `/phase`** (subcommands `enter` / `exit` / `status`; sole writer of `phase_status.md` + `plan/ACTIVE`). Source doc: this section. Workflow ref: W15a.
-- [ ] Add A-table row **A13. `/triage-idea`** (Idea8 entry triage + Idea11 mid-WI re-triage; `--remode` flag for standalone use). Source doc: `gr/gr_idea.md` Idea8–Idea11. Workflow ref: W15, W15a.
-- [ ] Add C-table row **`tpl_phase_status.md`** at `tpl/tpl_phase_status.md` — frontmatter + `Current` block schema + history-section format (B-style, reverse-chrono). Used by: A12, A13. Workflow ref: W15a.
-- [ ] Add D-table open question: **Idea7 `status_idea.md` migration** — fold into `phase_status.md` (tentative) vs. coexist with pointer. Blocks A12 schema lock-in.
-- [ ] Update B1 row in B-table — narrow scope to "belt-and-suspenders hook: warn if phase skill ran without `/phase` call in same turn." Source: this section.
+- [x] Add A-table row **A12. `/phase`** (subcommands `enter` / `exit` / `status`; sole writer of `phase_status.md` + `plan/ACTIVE`). Source doc: this section. Workflow ref: W15a.
+- [x] Add A-table row **A13. `/triage-idea`** (Idea8 entry triage + Idea11 mid-WI re-triage; `--remode` flag for standalone use). Source doc: `gr/gr_idea.md` Idea8–Idea11. Workflow ref: W15, W15a.
+- [x] Add C-table row **`tpl_phase_status.md`** at `tpl/tpl_phase_status.md` — frontmatter + `Current` block schema + history-section format (B-style, reverse-chrono). Used by: A12, A13. Workflow ref: W15a.
+- [x] Add D-table open question: **Idea7 `status_idea.md` migration** — fold into `phase_status.md` (tentative) vs. coexist with pointer. Blocks A12 schema lock-in.
+- [x] Update B1 row in B-table — narrow scope to "belt-and-suspenders hook: warn if phase skill ran without `/phase` call in same turn." Source: this section.
+
+- [x] Ideas to maybe add into gr_idea.md → added as Idea12 (Concept Sharpening). Kept 5 fields (problem, target user, core value, key assumptions, open questions) as persistent Context section in idea.md. Dropped 4 fields (working title, pitch = ephemeral; smallest useful version = Idea2 violation; current alternatives = res phase). "What makes it interesting" merged into core value.
+
+- [ ] in PRD or Issues phase: enforce to split the idea into reasonable independent modules 
+  - maybe workflow then will be applied to each of the modules
+  - check if free or open source solutions exist that make sense to integrate (solutions to enhance, libraries etc.)
+
+
 - [ ] Create test cases at `skills/test/phase/` (paired `inputNNN.md` / `outputNNN.md` per `skills/test/distill-idea/` convention) covering: `enter` with legal mode, `enter` with mode mismatch (must reject), `exit` without required artifacts (must reject), `status` read on fresh WI, `status` read with tripwire_halt set, transition into optional phase (`res`/`pro` gate flags).
 - [ ] Build A12 (`/phase`) end-to-end via `/make-skill phase` (chains `draft-skill-input` → `compile-skill` → test against `skills/test/phase/`, loops until pass). Source docs: this section, `gr/gr_idea.md`, `phases.md` §4, `guardrails.md` §3.37.
 - [ ] Create test cases at `skills/test/triage-idea/` covering: 4-axis scoring on a trivial brief (expect `direct-edit`), tripwire surface in brief (expect `full`), `--remode` mid-WI upgrade with audit-trail append, HITL ack absent (must reject silent pick), Idea10 exploration-budget overflow (expect auto-recommend `mini`).
@@ -172,10 +180,10 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
 - [ ] coding_workflow: idea.md regeneration test (see idea_recreation.md)
   
   - [wip] /make-skill skill:  closed-loop drafting, compiling, testing skill iteration
-    - change in todo.md, guardrails.md, gr_xxxx.md etc.
+    - change in coding_plan.md, guardrails.md, gr_xxxx.md etc.
     - /draft-skill-input A11/A1/...  --> skill/input/XXX-in.md
     - /compile-skill A11/A1/...  --> skill/output/XXX.md
-    - check if all requirements from todo.md, guardrails.md, gr_xxxx.md etc. are fulfilled (check item by item, especially the ones in the gr_XXX.md documents)
+    - check if all requirements from coding_plan.md, guardrails.md, gr_xxxx.md etc. are fulfilled (check item by item, especially the ones in the gr_XXX.md documents)
     - if something is missing: adjust /draft-skill-input skill or update input files (in case of updating input files, human confirmation is required)
     - if ok, then test the new skill using the test-skill skill
       - pre-condition: test files for the skill exist
@@ -270,12 +278,14 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
 | A8  | `qa`            | `qa`  | wip     | [gr_qa.md](gr/gr_qa.md)                                      | W8           | A4, C5 (template)             |
 | A6  | `review`        | `rev` | todo    | [gr_rev.md](gr/gr_rev.md)                                    | W7           | B2, B3, B6, B7                |
 | A7  | `arch-review`   | `ica` | todo    | [gr_mod.md](gr/gr_mod.md)                                    | W9           | D7 (proactive vs reactive)    |
+| A12 | `phase`         | —     | todo    | coding_plan.md §"Phase Transition Mechanism"                         | W15a         | —                             |
+| A13 | `triage-idea`   | `ide` | todo    | [gr_idea.md](gr/gr_idea.md) Idea8–Idea11                     | W15, W15a    | A12                           |
 
 ### Cross-Cutting Skills / Hooks table
 
 | #   | Name                             | Form            | Status | Source doc                                                          | Applies to          | Used by         |
 | --- | -------------------------------- | --------------- | ------ | ------------------------------------------------------------------- | ------------------- | --------------- |
-| B1  | `routing-step-enforcer`          | hook (pre-task) | todo   | [guardrails.md §5](guardrails.md)                                   | all phases          | all impl skills |
+| B1  | `routing-step-enforcer`          | hook (pre-task) | todo   | [guardrails.md §5](guardrails.md); coding_plan.md §"Phase Transition Mechanism" | `ral`,`par` (narrowed) | A4, A5 (belt-and-suspenders: warn if phase skill ran without `/phase` call in same turn) |
 | B2  | `push-standards-to-reviewer`     | skill           | todo   | [gr_rev.md](gr/gr_rev.md) Rev2; Op14b                               | `rev`               | A6              |
 | B3  | `fresh-context-for-review`       | hook            | todo   | [gr_rev.md](gr/gr_rev.md) Rev1; 3.18                                | `rev`               | A6              |
 | B4  | `hitl-afk-label-gate`            | hook (pre-task) | todo   | [guardrails.md](guardrails.md) Gov5a, 3.20                          | `iss`, `ral`, `par` | A3, A4, A5      |
@@ -299,6 +309,7 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
 | C6  | Prototype variant template        | done   | [tpl/tpl_var_pres.md](tpl/tpl_var_pres.md) | [gr_proto.md](gr/gr_proto.md) Pro4, Pro7, Pro8 | A9, A1 (rejected carry) | W14b         |
 | C7  | Research file template            | todo   | —                                          | [gr_res.md](gr/gr_res.md) Res4                 | A10                     | W13          |
 | C8  | Idea file template                | done   | [tpl/tpl_idea.md](tpl/tpl_idea.md)         | [gr_idea.md](gr/gr_idea.md) Idea7              | A11, A1, A2, A6, A8     | W15          |
+| C9  | Phase status template             | todo   | `tpl/tpl_phase_status.md`                  | coding_plan.md §"Phase Transition Mechanism"          | A12, A13                 | W15a         |
 
 ---
 
@@ -600,6 +611,22 @@ Beyond the 12 items, the orchestration that chains them (e.g., `align-concept` �
 - Behavior: scans codebase for shallow-module opportunities, proposes consolidations behind deeper interfaces, prioritizes by testability gap.
 - Source: `gr/gr_mod.md`, workflow doc §1:21:08–1:23:04. Pocock skill as additional input: load `improve-codebase-architecture` SKILL.md body (`skills/engineering/improve-codebase-architecture/SKILL.md`) + walkthrough excerpt — feed into `draft-skill-input` when authoring.
 
+### A12. `phase` skill (cross-phase infrastructure)
+
+- Status: todo.
+- Behavior: subcommands `enter` / `exit` / `status`. Sole writer of `phase_status.md` + `plan/ACTIVE`. Checks on enter: mode legal for phase? Previous phase exited cleanly? Tripwire-halt clear? Checks on exit: phase-required artifacts present? HITL ack recorded? `status` is read-only, computes `next_phase` from inputs against `phases.md` §4 chains.
+- Source: coding_plan.md §"Phase Transition Mechanism"; `phases.md` §4; `guardrails.md` §3.37.
+- Workflow ref: W15a.
+- Template: C9 (`tpl/tpl_phase_status.md`).
+
+### A13. `triage-idea` skill (phase: `ide`)
+
+- Status: todo.
+- Behavior: Idea8 entry triage (4-axis scoring: design ambiguity, blast radius, reversibility, existing test coverage; tripwire surfaces force `full`; HITL approves mode) + Idea11 mid-WI re-triage. `--remode` flag for standalone use (e.g., after 3.37 tripwire halt — no re-distillation needed). Outputs mode selection (`direct-edit` / `mini` / `full`) with audit trail.
+- Source: `gr/gr_idea.md` Idea8–Idea11; `guardrails.md` §3.29, §3.37.
+- Workflow ref: W15, W15a.
+- Depends on: A12 (`/phase` must exist for `enter`/`exit` calls).
+
 ---
 
 ## B. Cross-Cutting Skills / Hooks
@@ -607,8 +634,9 @@ Beyond the 12 items, the orchestration that chains them (e.g., `align-concept` �
 ### B1. Routing-step enforcer
 
 - Status: todo.
-- Behavior: before any planning or implementation, emit the required routing block (`guardrails.md` §5) — relevant categories with reasons, considered-but-excluded with reasons.
-- Form: pre-task hook or prompt-prefix skill.
+- Behavior: **narrowed** — belt-and-suspenders hook: warn if a phase skill (A-row) ran without a `/phase` call in the same turn. Primary enforcement now lives in A12 (`/phase`); B1 is the safety net, not the primary gate.
+- Form: pre-task hook.
+- Source: coding_plan.md §"Phase Transition Mechanism".
 
 ### B2. Push-standards-to-reviewer
 
@@ -733,6 +761,7 @@ Beyond the 12 items, the orchestration that chains them (e.g., `align-concept` �
 - D7. Proactive `ica` before feature work — Pocock's #1 recommendation: run `improve-codebase-architecture` *before* starting new feature work, not only reactively. Currently tracked as a skill (A7) and phase (`ica` in `phases.md`), but no guardrail mandates or suggests running it proactively. Decision: guardrail-level rule, workflow guidance, or leave as skill-level suggestion?
 - D8. **Resolved** (2026-05-15) — added as Aln17 in `gr/gr_algn.md`. Throwaway 2–3 FE prototypes when visual/UX ambiguity blocks alignment; decision made in `aln`. Skill form rejected (over-prescription risk).
 - D9. QA loop convergence — currently human-verdict (3.30 / Q9). Decide later whether to add a mechanized option: typed acceptance-criteria checklist tied to PRD template C1, hard-gated. Postponed until C1 lands and a few QA sessions are observed. Trigger to revisit: repeated drift in pass verdicts or AFK-mode runs needing gate-able criteria.
+- D10. **Idea7 `status_idea.md` migration** — fold into `phase_status.md` (tentative) vs. coexist with pointer. Tentative decision: fold, with Idea7 rewritten to point at `phase_status.md`'s `Current` block. Blocks A12 schema lock-in. Source: coding_plan.md §"Phase Transition Mechanism".
 
 ---
 
@@ -764,4 +793,4 @@ Deprecated (do NOT reference, kept in `skills/deprecated/`): `design-an-interfac
 - E3. Vertical vs horizontal slicing — implement one feature both ways, compare rework.
 - E4. Push vs pull standards — measure standards violations per PR before/after.
 - E5. Module-depth refactor — run `arch-review` on the repo, measure test-boundary count and cross-module import count before/after.
-- E6. **Deferred decision — `draft-skill-input` Step 6 strip default.** Today Step 6 defaults to strip phase-management rules from the source `gr/*.md`. This serves most skills but silently loses rules a phase-owning entry skill legitimately owns (Idea8 triage, Idea9 issue invariant, Idea10 budget, Idea11 transitions). Current workaround: for `distill-idea` only, the input is hand-tuned against a `_ref` baseline (`skills/input/distill-idea-in_ref.md`). Upgrade trigger: as soon as a second phase skill is identified as phase-owning-orchestration, switch `draft-skill-input` to the **hybrid** design — add `ownership: phase-only | phase-owns-orchestration` flag to each `todo.md` skill row; flagged skills get default-include + per-rule HITL classify in Step 6; unflagged skills keep today's default-strip. Measure (when triggered): per-skill rule-coverage delta between fresh draft and `_ref` baseline, by `IdeaN`/`AlnN`/etc. anchor.
+- E6. **Deferred decision — `draft-skill-input` Step 6 strip default.** Today Step 6 defaults to strip phase-management rules from the source `gr/*.md`. This serves most skills but silently loses rules a phase-owning entry skill legitimately owns (Idea8 triage, Idea9 issue invariant, Idea10 budget, Idea11 transitions). Current workaround: for `distill-idea` only, the input is hand-tuned against a `_ref` baseline (`skills/input/distill-idea-in_ref.md`). Upgrade trigger: as soon as a second phase skill is identified as phase-owning-orchestration, switch `draft-skill-input` to the **hybrid** design — add `ownership: phase-only | phase-owns-orchestration` flag to each `coding_plan.md` skill row; flagged skills get default-include + per-rule HITL classify in Step 6; unflagged skills keep today's default-strip. Measure (when triggered): per-skill rule-coverage delta between fresh draft and `_ref` baseline, by `IdeaN`/`AlnN`/etc. anchor.

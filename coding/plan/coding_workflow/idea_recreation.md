@@ -35,7 +35,7 @@ Anchor docs (read these in full before distilling):
   - gr/gr_proto.md, gr/gr_res.md, gr/gr_mod.md, gr/gr_rev.md,
     gr/gr_adr.md, gr/gr_domain_language.md, gr/gr_governance.md
   - phases.md (phase definitions and sequence)
-  - todo.md (work-item state — W1–W17, A1–A11, B1–B11, C1–C8, D1–D9)
+  - coding_plan.md (work-item state — W1–W17, A1–A11, B1–B11, C1–C8, D1–D9)
 
 Brief (verbatim):
   Define an end-to-end AI coding workflow covering greenfield and
@@ -69,7 +69,7 @@ Three steps. Steps 1 and 2 hand-off via files; step 3 is Path A.
 
 Inputs (read in full):
 
-- `todo.md` — especially the W15 "Contracts settled" block and Pocock skill index.
+- `coding_plan.md` — especially the W15 "Contracts settled" block and Pocock skill index.
 - `phases.md` — `ide` phase §1.
 - `guardrails.md` — §3.32 idea, §3.29 mode selection, §3.37 tripwire.
 - `gr/gr_idea.md` — Idea1–Idea11.

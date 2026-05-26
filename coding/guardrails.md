@@ -184,7 +184,7 @@ The full pipeline is scale-invariant — trivial tasks **collapse** phases rathe
 ### 3.30 Converge the QA Loop on Human Verdict
 
 Fires: Plan=none, Implement=low, Verify=high
-The plan → execute → QA loop (`iss → ral|par → qa → fix-now → iss` or pass) terminates on an explicit human verdict, not a mechanized checklist. Pass requires (a) zero fix-now findings remaining and (b) PRD intent met in the human's judgment; `pass-with-backlog` is allowed — backlog findings do not block convergence. Silent downgrading of fix-now → backlog to force a pass is forbidden. Mechanized convergence (typed AC-checklist gate) is deferred (todo.md D9). See [gr/gr_qa.md](gr/gr_qa.md) (Q9).
+The plan → execute → QA loop (`iss → ral|par → qa → fix-now → iss` or pass) terminates on an explicit human verdict, not a mechanized checklist. Pass requires (a) zero fix-now findings remaining and (b) PRD intent met in the human's judgment; `pass-with-backlog` is allowed — backlog findings do not block convergence. Silent downgrading of fix-now → backlog to force a pass is forbidden. Mechanized convergence (typed AC-checklist gate) is deferred (coding_plan.md D9). See [gr/gr_qa.md](gr/gr_qa.md) (Q9).
 
 ### 3.31 Gray-Box Labor Partition
 

@@ -1,6 +1,6 @@
 ---
 name: make-skill
-description: Closed-loop drafting, compiling, and verifying a single skill end-to-end. Wraps draft-skill-input → compile-skill → requirements verification → targeted fix, looping until the compiled skill satisfies every requirement in its source docs (todo.md, guardrails.md, gr/*.md). Use when user says "make skill", "build skill end-to-end", "redo skill from changed docs", or "/make-skill <name>".
+description: Closed-loop drafting, compiling, and verifying a single skill end-to-end. Wraps draft-skill-input → compile-skill → requirements verification → targeted fix, looping until the compiled skill satisfies every requirement in its source docs (coding_plan.md, guardrails.md, gr/*.md). Use when user says "make skill", "build skill end-to-end", "redo skill from changed docs", or "/make-skill <name>".
 version: 1.2.1
 ---
 
@@ -8,16 +8,16 @@ Orchestrate a full skill build: draft input → compile output → verify agains
 
 ## Preflight (run BEFORE Step 1 — non-negotiable gates)
 
-**Gate A — Resolve target.** If `<name>` (or todo.md row id like `A11`, `A1`) is missing, call `AskUserQuestion`:
+**Gate A — Resolve target.** If `<name>` (or coding_plan.md row id like `A11`, `A1`) is missing, call `AskUserQuestion`:
 - "Which skill do you want to make?" with two option shapes:
-  - `Pick from todo.md` — list every `todo`/`wip` row in the Workflows / Phase Skills / Cross-Cutting / Templates tables of `todo.md`.
-  - `By name` — free-text kebab-case skill name (must resolve to a row in `todo.md` OR be flagged as new).
+  - `Pick from coding_plan.md` — list every `todo`/`wip` row in the Workflows / Phase Skills / Cross-Cutting / Templates tables of `coding_plan.md`.
+  - `By name` — free-text kebab-case skill name (must resolve to a row in `coding_plan.md` OR be flagged as new).
 - Resolve to: `skill_id` (e.g. `A11`), kebab-case `<name>` (e.g. `distill-idea`), and the row's source-doc list.
 
 **Gate B — State scan.** Without writing anything, record presence of:
 - `skills/input/<name>-in.md` (exists / absent)
 - `skills/output/<name>.md` (exists / absent)
-- Recent edits to any source doc listed for the row (`todo.md`, `guardrails.md`, every `gr/<file>.md` named in the row's Source doc column or per-item detail block) — use `git status` + `git log --since='30 days ago' -- <path>` to detect drift.
+- Recent edits to any source doc listed for the row (`coding_plan.md`, `guardrails.md`, every `gr/<file>.md` named in the row's Source doc column or per-item detail block) — use `git status` + `git log --since='30 days ago' -- <path>` to detect drift.
 
 Frozen reference files (matching `*Ref.md`, `*-ref.md`, `*_ref.md`) are out of scope — do not read, edit, or cite. Treat as absent.
 
@@ -40,7 +40,7 @@ No `cancel` / `proceed` / `skip`. Human cancels via Esc.
 
 1. **Resolve target and mode** — handled by Preflight A–C.
 
-2. **Load source-doc set.** From `todo.md`, extract the row's `Source doc` column entries and every `gr/<file>.md` referenced in the per-item detail block. Add `todo.md` itself (the row text is a requirement source) and the substantive sections of `guardrails.md` referenced in the row. Do NOT load `phases.md` routing or `guardrails.md` §4.x routing / §3.29 collapse-mode — those are caller concerns, not skill content. List the resolved set back to the human before proceeding.
+2. **Load source-doc set.** From `coding_plan.md`, extract the row's `Source doc` column entries and every `gr/<file>.md` referenced in the per-item detail block. Add `coding_plan.md` itself (the row text is a requirement source) and the substantive sections of `guardrails.md` referenced in the row. Do NOT load `phases.md` routing or `guardrails.md` §4.x routing / §3.29 collapse-mode — those are caller concerns, not skill content. List the resolved set back to the human before proceeding.
 
 3. **Branch on mode.**
    - `Full build` → Step 4 (draft) → Step 5 (compile) → Step 6 (verify) → Step 7 (fix loop).
@@ -48,7 +48,7 @@ No `cancel` / `proceed` / `skip`. Human cancels via Esc.
    - `Recompile only` → Step 5 → Step 6 → Step 7.
    - `Verify only` → Step 6 (read-only) → Step 7 (surgical-only path).
 
-4. **Draft.** Invoke `draft-skill-input` with `<name>` (or todo.md row id). That skill owns its own HITL gates (name confirm, clobber check, source-doc strip, self-check, write). Do not duplicate them here. On its `Skip compile` exit, surface that to the human — Step 5 will still run unless the human aborts.
+4. **Draft.** Invoke `draft-skill-input` with `<name>` (or coding_plan.md row id). That skill owns its own HITL gates (name confirm, clobber check, source-doc strip, self-check, write). Do not duplicate them here. On its `Skip compile` exit, surface that to the human — Step 5 will still run unless the human aborts.
 
 5. **Compile.** Invoke `compile-skill` with `<name>`. That skill owns its own gates (clobber, drift, self-check). Capture: written path, version stamp, self-check pass/fail summary. If `compile-skill` errored or wrote nothing, stop and report.
 
@@ -58,7 +58,7 @@ No `cancel` / `proceed` / `skip`. Human cancels via Esc.
    - **Missing** — substantive requirement absent from output AND not eligible for the strip.
    - **Contradicted** — output says something incompatible with the source doc.
    
-   Print a per-source-doc table: `gr/<file>.md — N covered / M stripped / K missing / J contradicted`. Required: walk `gr/*.md` rule-by-rule (the row's anchor docs), not just spot-check. `todo.md` row text and `guardrails.md` substantive sections get the same treatment.
+   Print a per-source-doc table: `gr/<file>.md — N covered / M stripped / K missing / J contradicted`. Required: walk `gr/*.md` rule-by-rule (the row's anchor docs), not just spot-check. `coding_plan.md` row text and `guardrails.md` substantive sections get the same treatment.
 
 6a. **Run fixture tests (only if Step 6 clean).** If Step 6 had any missing or contradicted, skip this step — fix coverage first. Otherwise:
    - **Pre-condition check.** Look for `skills/test/<name>/`. If absent → log "no fixture tests defined" and skip to Step 7 with tests recorded as `skipped`. Do NOT fail the build for missing fixtures; absence is allowed.
@@ -73,7 +73,7 @@ No `cancel` / `proceed` / `skip`. Human cancels via Esc.
    - **A. Output-only surgical fix** — the missing clause is present in the input file but was dropped by `compile-skill`. Action: re-run `compile-skill` self-check path; if it persists, log as a `compile-skill` bug — surface to human, do NOT hand-patch `skills/output/<name>.md`.
    - **B. Input-file gap** — the input file itself is missing the requirement. Action: `AskUserQuestion` with options `Re-draft via draft-skill-input` (preferred — regenerates from source docs) / `Hand-edit input file` (requires explicit human consent to bypass the tool-managed rule) / `Defer this gap` (log + continue). On `Re-draft`, return to Step 4. On `Hand-edit`, the human edits — this skill does not write `skills/input/*` itself.
    - **C. Drafting-skill pattern gap** — multiple skills would hit the same gap because `draft-skill-input` or its template doesn't ask for / preserve this kind of requirement. Action: surface a one-line *generic* edit proposal for `draft-skill-input/skill.md` or `template_skill_in.md`. `AskUserQuestion`: `Apply generic edit to draft-skill-input` / `Treat as <name>-specific (go to B)` / `Defer`. Forbidden: embedding `<name>`'s name, domain, source docs, or rule wording in the generic edit.
-   - **D. Source-doc gap** — the requirement the human expected isn't actually in any source doc. Action: stop and report — this is a docs-layer issue, not a skill-build issue. The human decides whether to update `gr/<file>.md` / `guardrails.md` / `todo.md` first.
+   - **D. Source-doc gap** — the requirement the human expected isn't actually in any source doc. Action: stop and report — this is a docs-layer issue, not a skill-build issue. The human decides whether to update `gr/<file>.md` / `guardrails.md` / `coding_plan.md` first.
    - **E. Fixture-test divergence** (from Step 6a). Sub-classify per failing fixture:
      - **E1. Skill output drift** — skill behaves differently than the reference expects. Likely needs recompile (after re-draft if input changed) or a real fix path A/B/C. Route to the appropriate sub-classifier.
      - **E2. Stale reference** — the reference `output<NNN>.md` no longer reflects the intended skill behavior (source docs evolved). `AskUserQuestion`: `Update reference output<NNN>.md` (human-confirmed, write to `skills/test/<name>/output<NNN>.md`) / `Treat as E1 instead` / `Defer`. Reference updates are the ONLY hand-writes this skill performs under `skills/test/`.

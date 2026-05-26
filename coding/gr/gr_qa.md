@@ -93,7 +93,7 @@ The plan → execute → QA loop (`iss → ral|par → qa → fix-now → iss` o
 1. **Zero fix-now findings remain.** Every finding triaged fix-now per Q5 has been resolved and re-QA'd.
 2. **PRD intent is met in the human's judgment.** Where acceptance criteria exist, they are weighed; where they don't, the human judges whether the slice delivers the user-visible behavior the alignment + PRD called for. `pass-with-backlog` is allowed — open backlog findings do not block convergence.
 
-Mechanized convergence (e.g., hard gate on a typed acceptance-criteria checklist tied to the PRD template) is **deliberately deferred** — see todo.md D9. Until D9 is decided, the verdict stays with the human.
+Mechanized convergence (e.g., hard gate on a typed acceptance-criteria checklist tied to the PRD template) is **deliberately deferred** — see coding_plan.md D9. Until D9 is decided, the verdict stays with the human.
 
 Forbidden:
 
@@ -152,7 +152,7 @@ The human walks the new behavior on the running slice. Q1–Q3 still apply (runn
 
 **`full` mode — full `qa`.**
 
-The complete `qa` per Q1–Q11 above. C5 QA notes template (see todo.md) is used. Findings routed to `iss` per Q5.
+The complete `qa` per Q1–Q11 above. C5 QA notes template (see coding_plan.md) is used. Findings routed to `iss` per Q5.
 
 **Forbidden:**
 

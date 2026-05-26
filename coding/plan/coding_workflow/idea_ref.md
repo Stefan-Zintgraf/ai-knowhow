@@ -12,7 +12,7 @@ Origin: distilled from Matt Pocock YouTube videos; current folder content built 
 
 Anchor documents:
 
-- [todo.md](../../todo.md) — current list of work items (skills, hooks, templates, open decisions).
+- [coding_plan.md](../../coding_plan.md) — current list of work items (skills, hooks, templates, open decisions).
 - [guardrails.md](../../guardrails.md) — core rules + routing index to detail docs under [gr/](../../gr/).
 - [phases.md](../../phases.md) — phase definitions referenced by guardrails' `Fires:` lines.
 

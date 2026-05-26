@@ -10,7 +10,7 @@
 
 Two paths:
 
-**a) From project docs** — run `/draft-skill-input`. It asks which `todo.md` item (W##/A##/B##/C##) or free-text purpose, suggests a kebab-case name for confirmation, reads only the source docs listed for that target (`phases.md` entry, relevant `gr/*.md`, `guardrails.md` §3 cross-refs), classifies planning-artifact vs not, and produces the draft. HITL accept required before write. Clobber-gated on existing files (Reopen / Self-check only).
+**a) From project docs** — run `/draft-skill-input`. It asks which `coding_plan.md` item (W##/A##/B##/C##) or free-text purpose, suggests a kebab-case name for confirmation, reads only the source docs listed for that target (`phases.md` entry, relevant `gr/*.md`, `guardrails.md` §3 cross-refs), classifies planning-artifact vs not, and produces the draft. HITL accept required before write. Clobber-gated on existing files (Reopen / Self-check only).
 
 **b) Hand-authored** — write it yourself using `skills/input/distill-idea-in.md` as the reference example.
 
@@ -47,12 +47,12 @@ Copy compiled output to `.claude/skills/<name>/SKILL.md`.
 
 ## One-Shot Full Loop
 
-Chain draft → compile → test in a single prompt. Agent runs all three skills end-to-end, from `todo.md` row to tested artifact.
+Chain draft → compile → test in a single prompt. Agent runs all three skills end-to-end, from `coding_plan.md` row to tested artifact.
 
 **Template:**
 
 ```
-Run the draft-skill-input skill to create a new skill input file <name>-in.md for the <W##|A##|B##|C##> row in todo.md.
+Run the draft-skill-input skill to create a new skill input file <name>-in.md for the <W##|A##|B##|C##> row in coding_plan.md.
 The skill input file then shall be compiled using the compile-skill skill which creates the <name>.md output file.
 Finally, the <name>.md skill shall be tested using the test-skill skill with the following input:
 <test input here>
@@ -61,7 +61,7 @@ Finally, the <name>.md skill shall be tested using the test-skill skill with the
 **Example (W15 → distill-idea):**
 
 ```
-Run the draft-skill-input skill to create a new skill input file distill-idea-in.md for the W15 row in todo.md.
+Run the draft-skill-input skill to create a new skill input file distill-idea-in.md for the W15 row in coding_plan.md.
 The skill input file then shall be compiled using the compile-skill skill which creates the distill-idea.md output file.
 Finally, the distill-idea.md skill shall be tested using the test-skill skill with the following input:
 AI-driven mail handling. Goals: search mails by NL prompt, draft replies, use mail content as a knowledge base for Q&A.

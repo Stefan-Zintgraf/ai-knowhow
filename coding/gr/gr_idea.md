@@ -135,6 +135,47 @@ Budget rule:
 
 No edits during `ide` exploration. No deep reads. The B10 dispatch follows the same isolated-context discipline as in `aln` (Aln7) — main context stays clean.
 
+### Idea12. Concept Sharpening (Sub-Brief Input)
+
+When the incoming input is a **vague notion** rather than a formed brief — no clear problem statement, no identifiable user, no articulated value — the agent runs a structured sharpening step before Idea1 goal distillation.
+
+**Trigger:** agent judges the input too thin for direct goal extraction. Surfaced to the human: "Input looks sub-brief — running concept sharpening before goal distillation." Human may override ("skip, just distill").
+
+**Sharpening produces five fields:**
+
+| Field | What it captures |
+| --- | --- |
+| Problem | Why does this need to exist? |
+| Target user | Who is this for? |
+| Core value | What makes it worth doing? |
+| Key assumptions | What are we taking for granted? |
+| Open questions | What don't we know yet? |
+
+**Ephemeral intermediates (not persisted):** working title and one-sentence pitch help the conversation converge but carry no independent value once goals are distilled. Working title feeds the issue title (Idea9); pitch is consumed by distillation.
+
+**Persistence:** the five fields are written as a **Context** section at the top of `idea.md`, above the goal list. No separate file — Idea7's single-artifact rule holds. Structure:
+
+```markdown
+## Context
+
+**Problem:** ...
+**Target user:** ...
+**Core value:** ...
+**Key assumptions:** ...
+**Open questions:** ...
+
+## Goals
+
+1. ...
+2. ...
+```
+
+When input is already a formed brief, Idea12 is skipped — Idea1 runs directly and `idea.md` contains only the Goals section.
+
+**Idea2 applies to Idea12 output.** The five fields name *what* and *why*, never *how*. If implementation detail leaks into any field, the agent strips it (same discipline as Idea2).
+
+**Downstream value:** `aln` reads the Context section to ground its grilling — problem and target-user framing prevents drift. Key assumptions and open questions seed grilling branches directly (cross-ref Aln8, Aln15).
+
 ### Idea11. Mode Transitions: Symmetric, Human-Approved Either Way
 
 Once a mode is picked in `ide`, it can be changed (upgrade or downgrade) under these rules:
@@ -164,6 +205,8 @@ Once a mode is picked in `ide`, it can be changed (upgrade or downgrade) under t
 - Creating duplicate issues by skipping the Idea9 dedupe search.
 - Exceeding the Idea10 exploration budget without auto-recommending a mode upgrade.
 - Silent mode change (Idea11 violation) — either direction needs HITL approval and an audit trail.
+- Running Idea12 sharpening on a well-formed brief — wastes a turn when goals can be distilled directly.
+- Letting "smallest useful version," market research, or feature lists into the Idea12 fields — those belong to `aln`/`res`/`prd`.
 
 ---
 
@@ -174,3 +217,4 @@ Once a mode is picked in `ide`, it can be changed (upgrade or downgrade) under t
 - Idea3 (negative goals) feeds Aln15 (negative decisions captured).
 - Idea4 (HITL) follows the same hard floor as Aln1, Gov5a.
 - Idea7 (persisted to `plan/<WI>/idea.md`) follows the same retirement model as 3.27 (research): in-tree, WI-scoped, deleted at WI close. Enforcement = 3.33 + Q11 merge-gate check that `plan/<WI>/` is gone when the WI's PR closes. Distinct from 3.24 (PRD), which goes external entirely.
+- Idea12 Context section feeds `aln` directly: problem/target-user ground the grilling, key assumptions + open questions seed branches (Aln8, Aln15).
