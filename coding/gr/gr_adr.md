@@ -20,6 +20,7 @@ Origin: Pocock — "language sharpening does not capture every important decisio
 ## Rules
 
 ### Adr1. Three-Part Threshold
+Skills: align-concept, review
 
 Write an ADR only when **all three** hold:
 
@@ -30,18 +31,22 @@ Write an ADR only when **all three** hold:
 If any one fails, do not write an ADR. Interchangeable choices, easily-reversible refactors, and routine style choices are out of scope. ADR noise dilutes signal.
 
 ### Adr2. ADRs Are Durable, In-Tree
+Skills: align-concept
 
 ADRs live at `docs/adr/NNNN-<kebab-slug>.md` where `NNNN` is a zero-padded monotonic integer (`0001`, `0002`, …). They are **not retired** like PRDs (3.24) or research files (3.27). An ADR persists as long as the decision it documents is in force; it is **superseded** by a later ADR, never deleted silently.
 
 ### Adr3. ADRs Are Distinct From Aln15 Negative Decisions
+Skills: align-concept
 
 Aln15 captures rejected options (the road not taken) inside the alignment transcript. An ADR captures the *chosen* non-obvious decision and its rationale, in a separately discoverable file. The two are complementary, not interchangeable. A single decision may produce both (a chosen variant ADR + several rejected-variant Aln15 entries).
 
 ### Adr4. ADRs Are Distinct From the PRD
+Skills: align-concept, compose-prd
 
 The PRD summarizes alignment (Aln13). It states the chosen solution. The ADR explains *why* a specific surprising choice was made — typically a sub-decision inside the PRD scope that a casual reader of the PRD would not understand from the PRD alone. PRDs retire externally; ADRs stay.
 
 ### Adr5. Required Sections
+Skills: align-concept, subagent-for-artifact-drafting
 
 Every ADR has, in order:
 
@@ -55,22 +60,27 @@ Every ADR has, in order:
 Optional sections: `Date`, `Related ADRs`, `Related Aln15 entries`, `References`.
 
 ### Adr6. Author at Decision Time, Not Retroactively (When Possible)
+Skills: align-concept
 
 Prefer drafting the ADR in the same session the decision is made (typically `aln` per Aln17). Retroactive ADRs authored in `rev` are allowed and important — but in-session capture is higher fidelity.
 
 ### Adr7. Supersede, Don't Mutate
+Skills: align-concept
 
 When a decision is reversed or replaced, the original ADR's `Status` flips to `superseded by NNNN` and a new ADR is written referencing it. The original body is not edited (other than the status line). This preserves the historical trail.
 
 ### Adr8. Agent May Draft, Human Must Accept
+Skills: align-concept
 
 ADRs are HITL artifacts. The agent drafts (in `aln` per Aln17, or in `rev` when surfacing a gap) and presents to the human. Status flips from `proposed` → `accepted` only on explicit human acceptance. Silent commits of `accepted` ADRs are forbidden.
 
 ### Adr9. ADRs Are a Pull-Source for Implementation
+Skills: afk-loop, arch-review
 
 When `ral`/`par` touches code that an ADR governs, the implementer pulls the ADR into context (per 3.17 / Op14b). Routing (§5 of guardrails.md) should surface the ADR when its topic matches the task. ADR filenames carry the slug so grep is reliable.
 
 ### Adr10. Review Verifies ADR Coverage
+Skills: review
 
 `rev` (gr_rev.md) checks: did any decision in the diff cross the Adr1 threshold without an ADR? If yes, the reviewer flags it and either drafts the missing ADR or routes back to `aln`.
 

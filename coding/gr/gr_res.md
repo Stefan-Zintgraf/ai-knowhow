@@ -18,20 +18,24 @@ Source: Pocock 7-phases workflow, phase 2 (Research). See [the-7-phases-of-ai-dr
 ## Rules
 
 ### Res1. Research Is Sprint-Scoped
+Skills: do-research
 
 Research artifacts exist only for the duration of the sprint / feature they serve. They are not long-lived documentation. Their job ends when the feature ships.
 
 ### Res2. Cache in a Known Location
+Skills: do-research
 
 Research lives at `research/<topic>.md` (or `research.md` for a single-topic sprint) in the repo working tree. Agents read it; humans skim it. One canonical path so downstream skills can find it without guessing.
 
 ### Res3. Retire at Sprint Close (Prevent Rot)
+Skills: do-research, qa
 
 When the feature ships (or sprint closes), the research file is **deleted** in the same PR that closes the work. Stale research actively misleads future agent runs because it looks authoritative but reflects yesterday's API or yesterday's codebase. Parallel to Doc11 (PRD retirement) but distinct: PRDs move to external trackers, research files are deleted outright.
 
 Trigger: the `owner-issue` (Res4) closes. The PR that closes that issue must delete the file. `qa` verifies in Q11 before merge; pre-commit lint rejects research files missing the `owner-issue` field (so no orphan can be authored). No GitHub Action, no webhook — the gate is human + lint, and `qa` is mandatory before merge anyway.
 
 ### Res4. Mark Provenance, Date, and Owner Issue
+Skills: do-research
 
 Each research file opens with a header containing:
 
@@ -43,30 +47,37 @@ Each research file opens with a header containing:
 A reader (human or agent) can then judge staleness at a glance and a lint can verify owner provenance mechanically.
 
 ### Res5. Facts Over Speculation
+Skills: do-research
 
 Research captures **observed facts** — API responses, schema shapes, error codes, code locations, function signatures actually present in the source. Speculation, recommended approaches, or design opinions belong in the PRD, not in research. This keeps research stable across alignment iterations.
 
 ### Res6. No Fabrication
+Skills: do-research
 
 Op13 applies in full. A research file that invents API endpoints, config keys, or symbols is worse than no research file — it launders fabrication into "verified context." If a fact cannot be confirmed against a primary source (docs, code, response capture), it is flagged as an open question, not stated.
 
 ### Res7. Reference, Don't Duplicate
+Skills: do-research
 
 If authoritative docs exist (OpenAPI spec, generated types, schema files), the research file links to them rather than copying. Copies drift; links don't.
 
 ### Res8. Scope Tight
+Skills: do-research
 
 Research covers only what the current sprint needs. A "while I'm here, let me document the whole API" pass produces a sprawling file that rots faster and obscures the relevant subset. One topic per file; one sprint per file.
 
 ### Res9. Subagent for Exploration
+Skills: do-research, subagent-for-exploration
 
 Research is typically gathered by a subagent (see B10) with an isolated context window, returning a summary the main agent persists. Caller's context stays clean; expensive exploration happens once.
 
 ### Res10a. Cross-Feature Reuse: Copy Facts, Don't Share Files
+Skills: do-research
 
 If a different feature needs facts from an existing (or already-retired) research file, **copy the relevant facts** into the new feature's `research/<topic>.md` under its own `owner-issue`. Do not share-own a single file across features, do not symlink, do not resurrect a deleted file. Each act of copying forces the writer to ask "is this fact still true today?" — which is the entire point of sprint-scoping. Facts durable enough to outlive multiple features belong in code comments, ADRs (Doc8), or generated docs (Doc5), not in `research/`.
 
 ### Res10. Invoke `pro` for Build-to-Learn Facts
+Skills: do-research, prototype
 
 When a research question can only be answered by building (e.g., the actual shape of a third-party webhook payload, real latency of an integration under realistic load, observed behavior of a rate limiter), `res` invokes phase `pro` instead of speculating. The integration-flavor variant (gr_proto.md Pro2) hits the real or vendor-sandbox service and captures observed responses.
 

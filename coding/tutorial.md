@@ -71,6 +71,33 @@ HITL gates still fire at each stage — accept/edit before each handoff. No auto
 
 ---
 
+## Guardrail Change Workflow
+
+When a guardrail is created or changed (`gr/*.md`, `guardrails.md`, `phases.md`), affected skills need updating. Run in order:
+
+### Step 1 — Update rule-skill map
+
+> `/update-rule-skill-map`
+
+Rebuilds the map of which guardrail rules bind to which skills. Identifies skills affected by the changed guardrail.
+
+### Step 2 — Regenerate test fixtures
+
+> `/draft-skill-tests <name>` (for each affected skill)
+
+Re-derives test scenarios from the updated source docs. Presents new/changed fixture pairs for HITL approval before writing to `skills/test/<name>/`.
+
+### Step 3 — Rebuild the skill
+
+> `/make-skill <name>` (for each affected skill)
+
+If skill exists: recompiles from the existing `skills/input/<name>-in.md` and overwrites `skills/output/<name>.md` + `.claude/skills/<name>/SKILL.md`.
+If skill is new: full draft → compile → install loop (same as One-Shot Full Loop above).
+
+HITL gates fire at each step — no auto-accept.
+
+---
+
 ## Critical Rules
 
 - Compiled skill is a **leaf artifact** — no links to `gr/`, `phases.md`, `guardrails.md`, or the input file

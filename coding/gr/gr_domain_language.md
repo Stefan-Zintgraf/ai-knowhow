@@ -16,34 +16,42 @@ Purpose: protect meaning. The same concept must have one name everywhere — in 
 ## Rules
 
 ### L1. Use Defined Terms Exactly
+Skills: align-concept
 
 Terms from the project's glossary or ubiquitous language are used verbatim. No casual variation, abbreviation, or translation.
 
 ### L2. No Forbidden Synonyms
+Skills: align-concept
 
 If a term is the canonical one (e.g. "Order"), synonyms ("Purchase", "Transaction") must not appear for the same concept. Synonyms used for *different* concepts must be defined and distinguished.
 
 ### L3. Separate Domain Terms from Technical Terms
+Skills: align-concept
 
 A domain concept ("Invoice") is not named after a technical artifact ("InvoiceDTO", "InvoiceRow") in the domain layer. Technical suffixes belong to technical layers only.
 
 ### L4. Naming Reflects Behavior, Not Storage
+Skills: align-concept
 
 Names describe what the concept means in the domain, not how it is stored or transported.
 
 ### L5. Renaming Is a Domain Change
+Skills: align-concept
 
 Renaming a domain term is not cosmetic. It must propagate consistently across code, tests, APIs, docs, UI, and messages — or not happen at all.
 
 ### L6. Introduce New Terms Explicitly
+Skills: align-concept
 
 If a new domain term is needed, the agent flags it and proposes a definition rather than silently inventing one.
 
 ### L7. Match Language Across Bounded Contexts Deliberately
+Skills: align-concept
 
 The same word may legitimately mean different things in different bounded contexts. The agent must not unify them by accident.
 
 ### L8. `context.md` Is the Ubiquitous-Language Artifact
+Skills: align-concept
 
 The project's ubiquitous language lives in a durable in-tree file `context.md` at the root of each bounded context. One bounded context → one `context.md`. A single-domain repo has exactly one at the repo root; a monorepo with multiple bounded contexts has one per context, forming a **context map** (DDD strategic design). Each `context.md`:
 
@@ -59,6 +67,7 @@ Origin: Pocock — `/grill-with-docs` is built around a `context.md` per bounded
 Note: this project's working directory does not (yet) have a `context.md` because it is a meta-repo (guardrails + skill authoring), not a domain product. The L8 convention applies prospectively to projects this guardrail set governs.
 
 ### L9. CLAUDE.md Points to the Domain Docs
+Skills: align-concept
 
 When `context.md` (or a context map) exists in a repo, the local `CLAUDE.md` (or equivalent agent-instruction file) must contain an explicit pointer to it — path and one-line role description ("Domain glossary; read before any planning or implementation; update in-session when terms emerge or shift"). Skills that read domain language (notably A1 `align-concept` per Aln17) rely on the pointer to find the artifact reliably across repos.
 

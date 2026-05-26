@@ -26,22 +26,27 @@ Review is performed by the **same agent process** running with a **fresh context
 ## Rules
 
 ### Rev1. Review Runs in a Fresh Context
+Skills: review, fresh-context-for-review
 
 The reviewer agent must start with a context that does not contain the implementer's prior conversation, plan, or scratch reasoning. If the same session implemented the change, the context is cleared (or a new session is started) before the review begins. Reviewing inside the implementer's own context is forbidden — it produces self-justification, not review.
 
 ### Rev2. Standards Are Pushed, Not Pulled
+Skills: review, push-standards-to-reviewer
 
 For review, the relevant guardrail documents and coding standards are loaded into the reviewer's context up front (push), not retrieved on demand. The reviewer compares the diff against the standards, so the standards must be present. This is the inverse of the implementer rule (cross-reference: gr_operational.md push/pull rule).
 
 ### Rev3. Routing Still Applies — and Is Pushed
+Skills: review
 
 The reviewer performs the routing step from `guardrails.md` §5: which guardrail categories apply to this diff. Unlike the implementer, the reviewer loads the routed detail documents into context before reading the diff.
 
 ### Rev4. Review Order: Tests First, Then Code
+Skills: review
 
 The reviewer reads tests before reading the implementation. Tests describe intended behavior and reveal cheating (e.g. assertions that match whatever the code happens to do). Reading code first biases the reviewer toward accepting the code's implicit definition of correctness.
 
 ### Rev5. Verify Behavior, Not Just Style
+Skills: review
 
 The review must include a behavior check, not only a style check:
 
@@ -51,10 +56,12 @@ The review must include a behavior check, not only a style check:
 - Are all newly exported public APIs properly documented with standard, machine-readable docstrings (per `Doc12`) to guarantee successful auto-generation of API docs?
 
 ### Rev5a. API Snapshot Comparison
+Skills: review
 
 If the project maintains an auto-generated API overview file (e.g., `public_api.md`), the reviewer must run the generation script to produce a fresh snapshot. If the new snapshot differs from the committed one, the reviewer explicitly flags that a public API boundary has changed. Per `Gov3`, public API changes require explicit human approval. If approved, the updated snapshot must be included in the diff.
 
 ### Rev6. Check Module Depth Explicitly
+Skills: review, module-depth-check
 
 The reviewer applies the module-depth dimension from [gr_mod.md](gr_mod.md), explicitly referencing the heuristics in M11:
 
@@ -66,6 +73,7 @@ The reviewer applies the module-depth dimension from [gr_mod.md](gr_mod.md), exp
 Shallow-module drift is flagged. A diff that adds many small files with dense imports is suspect by default.
 
 ### Rev7. Check Hidden-Constraint Coverage
+Skills: review, hidden-constraint-checklist
 
 The reviewer explicitly checks classes of concern that grilling often misses (cross-reference: gr_algn.md):
 
@@ -79,10 +87,12 @@ The reviewer explicitly checks classes of concern that grilling often misses (cr
 A "not applicable" verdict is stated, not assumed.
 
 ### Rev8. Check for Fabrication
+Skills: review, fabrication-check
 
 The reviewer treats every code-level claim in the diff and its commit messages as suspect until verified: function names, imported symbols, config keys, error codes, file paths, library APIs. Op13 (no fabrication) is applied as a positive check during review, not assumed.
 
 ### Rev9. Check Scope Discipline
+Skills: review
 
 The diff must match the agreed scope. The reviewer flags:
 
@@ -93,10 +103,12 @@ The diff must match the agreed scope. The reviewer flags:
 - Silent abstraction additions or removals.
 
 ### Rev10. Reviewer Disagrees Visibly
+Skills: review
 
 If the diff appears wrong, risky, or in violation of a guardrail, the reviewer states the disagreement clearly and refuses to rubber-stamp. Reaffirmation rules from Gov12 apply — including the hard-stop exception for safety-critical, destructive, or high-risk decisions.
 
 ### Rev11. Reviewer Output Format
+Skills: review
 
 Review output is structured:
 
@@ -108,10 +120,12 @@ Review output is structured:
 - **Module-depth assessment:** deepened / unchanged / shallowened, with rationale.
 
 ### Rev12. Use a Stronger Model When Available
+Skills: review
 
 Where the operating environment supports model selection, review uses a model at least as capable as the implementer's. Pocock's pattern: stronger model for review (Opus-class), faster model for implementation (Sonnet-class). The principle generalizes: review needs more reasoning headroom because it must reconstruct intent from artifacts.
 
 ### Rev13. Manual QA Is Still Required for User-Visible Behavior
+Skills: review, qa
 
 Automated agent review does not replace human QA for UI, UX, or domain-judgment-sensitive changes (cross-reference: gr_algn.md — visual taste / domain judgment remain human concerns).
 

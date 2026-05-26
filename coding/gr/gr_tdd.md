@@ -34,26 +34,32 @@ One trip around the loop = one tightly-scoped behavior. Multiple behaviors = mul
 ## Rules
 
 ### TDD1. Red Before Green
+Skills: afk-loop
 
 The agent writes a failing test before writing implementation code. Writing tests after the implementation is forbidden — a test that has never been red proves nothing about the code under it.
 
 ### TDD2. Prove the Red is Real (No False Greens)
+Skills: afk-loop
 
 If a newly written test passes immediately, treat it as a false green — framework misconfiguration, test-filtering, wrong path, or a tautological assertion. Intentionally break the assertion (e.g. `expect(true).toBe(false)`), rerun, and confirm the framework actually executes and fails the file. Restore the real assertion before continuing.
 
 ### TDD3. Red Must Fail for the Right Reason
+Skills: afk-loop
 
 A test that fails because of a syntax error, missing import, or unrelated exception is not a valid Red. The failure message must point at the behavior under test. If the failure cause is wrong, fix the test before writing implementation.
 
 ### TDD4. Green Means Minimum Code
+Skills: afk-loop
 
 In the Green step, write only enough code to satisfy the current failing test. Adding code for tests not yet written is speculation (cross-ref §3.5 / C8). Each additional behavior gets its own Red first.
 
 ### TDD5. Refactor Is Mandatory, Not Optional
+Skills: afk-loop
 
 Green is not done. After Green, refactor with tests staying green: rename for clarity, remove duplication, deepen modules where shallow ones emerged (cross-ref §3.19 / M1). Skipping the Refactor step is the most common failure mode of agentic TDD — it produces working code that decays into shallow-module sprawl over many loop iterations.
 
 ### TDD6. Mock Discipline
+Skills: afk-loop
 
 - **Mock external surfaces only** — network, filesystem, clock, randomness, third-party SDKs.
 - **Do not mock code you own.** If owned code is hard to test without mocks, the design is wrong; fix the design, not the test.
@@ -61,22 +67,27 @@ Green is not done. After Green, refactor with tests staying green: rename for cl
 - Prefer fakes / in-memory implementations over mocks when the surface is non-trivial.
 
 ### TDD7. One Failing Test at a Time
+Skills: afk-loop, prd-to-dag
 
 The agent does not stack multiple failing tests and then implement. One Red, one Green, one Refactor, then the next Red. Batching breaks the "fails for the right reason" check and lets unrelated failures hide each other.
 
 ### TDD8. TDD Applies to Frontend and Visual Tasks
+Skills: afk-loop, prd-to-dag
 
 Frontend and visual work is not exempt. Use component tests, browser automation, snapshot tests with intentional change-review, or visual-regression tooling. "It's just UI" is not a reason to skip Red.
 
 ### TDD9. No Retroactive Tests
+Skills: afk-loop
 
 Tests added in the same change as the implementation, with no recorded Red phase, are treated as documentation, not verification. They do not satisfy §3.6 / T1. In review, the absence of an observed Red is a finding.
 
 ### TDD10. Refactor Step Must Not Change Behavior
+Skills: afk-loop
 
 During Refactor, no test is added, removed, weakened, or made to assert something new. If a refactor surfaces a missing behavior, finish the refactor first (tests still green), then open a new Red for the missing behavior.
 
 ### TDD11. Direct-Edit Mode Exemption
+Skills: afk-loop, triage-idea
 
 When `ide` selects `direct-edit` mode (gr_idea.md Idea8), the Red-Green-Refactor floor may be relaxed under two named carve-outs, both **HITL-confirmed** and recorded on the GH issue body. No silent skip.
 

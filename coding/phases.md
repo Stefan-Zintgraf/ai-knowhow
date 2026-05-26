@@ -9,38 +9,47 @@ Each phase is backed by a concrete skill, command, or template. The agent is nev
 ## 1. Sequential Phases
 
 ### ide — Idea
+Skills: distill-idea, triage-idea
 
 Distill a raw brief, backlog item, or stakeholder ask into **3–6 major goals** that anchor the rest of the pipeline. No details (no module map, no APIs, no UX specifics, no acceptance criteria). Negative goals welcome. HITL only. Output feeds `aln` grilling; it does not replace it. Ephemeral — folded into the PRD's Goals section once `prd` lands; no in-tree artifact. Collapsible (3.29) when the upstream artifact already names goals explicitly.
 
 ### aln — Alignment
+Skills: align-concept
 
 Reach alignment / shared design concept between human and agent before any planning artifact exists. **Document-anchored** per Aln17 (Pocock's `/grill-with-docs`): reads `context.md` (the ubiquitous-language glossary, gr_domain_language.md L8) at session start via the `CLAUDE.md` pointer (L9), updates it in-session as terms emerge or shift, and drafts ADRs (`docs/adr/NNNN-<slug>.md` per gr_adr.md / 3.34) for any decision crossing the Adr1 threshold. Byproducts of `aln` therefore include: alignment transcript, module map (Aln12), `context.md` diffs, and zero or more new ADRs.
 
 ### res — Research (Optional)
+Skills: do-research
 
 Cache hard-to-recover external knowledge (third-party APIs, uncommon services, unfamiliar codebase regions) into a sprint-scoped `research/<topic>.md` so downstream agent runs don't re-explore from a fresh context window. Optional: only triggered when `aln` surfaces external-dependency unknowns the agent must answer with facts. Artifact is **deleted at sprint close** (see `gr/gr_res.md` Res3) — distinct from PRDs which move to external trackers.
 
 ### pro — Prototype (Optional)
+Skills: prototype
 
 Resolve a hard-to-reverse design decision by building 2–3 throwaway variants and letting the human pick. Optional: only triggered when grilling cannot resolve the decision in words AND the Pro1 gate holds (irreversibility OR cost asymmetry — wrong-choice cost >> 2–3 throwaway variants). Three flavors: FE/UX, architecture, integration (see `gr/gr_proto.md` Pro2). Entry from `aln` (design ambiguity) or `res` (build-to-learn spike). Sandbox code is **deleted before** production impl (Pro3). HITL by construction (Pro6).
 
 ### prd — Destination Doc
+Skills: compose-prd
 
 Summarize the alignment into a destination document — problem, solution, user stories, implementation decisions, testing decisions, **out-of-scope** items, proposed module map.
 
 ### iss — Issue Decomposition
+Skills: prd-to-dag
 
 Decompose the PRD into independently grabbable issues with explicit blocking edges and AFK/human-in-loop tags.
 
 ### ral — Ralph Loop (Single-Agent Implementation)
+Skills: afk-loop
 
 Sequential AFK implementation. Run a single agent that picks the next available issue, implements it via TDD, runs feedback loops, and commits.
 
 ### par — Parallel Loop
+Skills: parallel-loop
 
 Parallelize implementation across multiple agents.
 
 ### qa — Manual QA
+Skills: qa
 
 Human-driven check of a runnable slice. Reintroduces taste, product judgment, and real-world behavior verification after agent implementation. Mandatory checkpoint after `ral` / `par`. Findings are triaged by the human into either fix-now issues (loop back to `iss`) or backlog issues (slice still passes).
 
@@ -51,10 +60,12 @@ Human-driven check of a runnable slice. Reintroduces taste, product judgment, an
 These are not steps in the sequence. They may run alongside, between, or after any sequential phase.
 
 ### rev — Review
+Skills: review
 
 Have an agent review code — fresh context, in the smart zone, not the dumb zone.
 
 ### ica — Improve Codebase Architecture
+Skills: arch-review
 
 Scan the repo for opportunities to deepen modules / consolidate test boundaries.
 
@@ -142,6 +153,7 @@ Each phase is backed by one or more skills. The `/phase` skill (A12) orchestrate
 | `ica` | `/arch-review` (A7)                       | [gr_mod.md](gr/gr_mod.md)           | Cross-phase — may run alongside any sequential phase                  |
 
 ### Transition protocol: `/phase` (A12)
+Skills: phase
 
 A single orchestration skill owns all phase state. Phase skills never write `phase_status.md` or `plan/ACTIVE` directly.
 

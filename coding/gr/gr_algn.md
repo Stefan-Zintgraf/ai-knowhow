@@ -21,26 +21,32 @@ Origin: Pocock — "misalignment is the main issue when working with AI." Grilli
 ## Rules
 
 ### Aln1. Alignment Is Strictly Human-in-the-Loop
+Skills: align-concept
 
 The `aln` phase is never AFK. The human must be present and engaged. Ralph loops, parallel agents, and unattended runs are forbidden during alignment. This is the hard floor on alignment autonomy (cross-reference: gr_governance.md Gov5, autonomy tiers).
 
 ### Aln2. One Question at a Time
+Skills: align-concept
 
 The grilling agent asks one question per turn. Multi-question batches force the human to context-switch and produce shallow answers. The discipline is patience: each branch of the design tree is walked, not jumped over.
 
 ### Aln3. Walk Every Branch of the Design Tree
+Skills: align-concept
 
 Grilling is exhaustive over decisions, not over topics. Every branch with a real decision must be walked. Branches that look obvious are still explicitly checked because "obvious" is where misalignment hides.
 
 ### Aln4. Recommend an Answer per Question
+Skills: align-concept
 
 For every question, the agent offers a recommended answer with reasoning. This is not optional. A question without a recommendation is a quiz; a question with a recommendation is a design conversation. The human accepts, modifies, or rejects.
 
 ### Aln5. Resolve Dependencies One by One
+Skills: align-concept
 
 When question B depends on question A, A is resolved before B is asked. The agent does not ask speculative questions whose framing assumes an unresolved earlier decision.
 
 ### Aln6. Hidden-Constraint Checklist
+Skills: align-concept, hidden-constraint-checklist
 
 Before grilling closes, the agent explicitly raises constraints commonly missed by stakeholders. The sweep fires **always at close**, regardless of whether the topic plausibly engaged a class — the checklist's value is defeating agent judgment about which classes apply. For each class, the human must answer one of three outcomes:
 
@@ -62,6 +68,7 @@ Classes:
 Silent omission of a class is forbidden.
 
 ### Aln7. Subagent for Codebase Exploration
+Skills: align-concept, subagent-for-exploration
 
 When the grilling needs facts about the existing codebase, the agent uses a subagent with an isolated context that explores and reports a summary back. The grilling agent's main context is not polluted with raw exploration output. This keeps the alignment conversation in the smart zone.
 
@@ -73,6 +80,7 @@ When the grilling needs facts about the existing codebase, the agent uses a suba
 Speculative deep-scans at start are forbidden — the proactive brief is narrow on purpose. Threads grilling will pull are not yet known; over-fetching defeats context minimization.
 
 ### Aln8. Treat Stakeholder Brief as Input, Not Truth
+Skills: align-concept
 
 The original brief (Slack message, ticket, email) is the prompt for alignment — not the alignment itself. The agent does not implement directly from a brief. Grilling is mandatory before any planning artifact is written. The brief is normally distilled into 3–6 major goals during the upstream `ide` phase (cross-reference: gr_idea.md Idea1) — `aln` grills against those goals, not against the raw brief.
 
@@ -83,10 +91,12 @@ The original brief (Slack message, ticket, email) is the prompt for alignment �
 3. **Close-time coverage report.** At session close (before Aln6 sweep), A1 emits a coverage report: each goal-id → which branches covered it; uncovered goals are listed explicitly. Any uncovered goal blocks close until the human accepts a "skip, with reason" downgrade.
 
 ### Aln9. Length of Grilling Is Open-Ended
+Skills: align-concept
 
 A grilling session may run dozens or even ~100 questions. The agent does not shortcut the session to "be helpful." The transcript is the asset. If the human signals fatigue, the agent offers to pause and resume, not to skip remaining branches.
 
 ### Aln10. Pair with the Right Human
+Skills: align-concept
 
 The agent flags which kind of human is needed for which question type:
 
@@ -97,22 +107,27 @@ The agent flags which kind of human is needed for which question type:
 When the wrong human is in the loop, the agent says so rather than pushing through.
 
 ### Aln11. Domain Transcripts May Be Fed In
+Skills: align-concept
 
 When a domain-expert meeting transcript or written source-of-truth exists, the agent may feed it into the grilling session to validate or generate questions against it. This is an input to grilling, not a replacement.
 
 ### Aln12. Module Map Is an Alignment Output
+Skills: align-concept
 
 By the end of alignment, the agent and human agree on a proposed **module map** (cross-reference: gr_mod.md M6): which modules will be touched, which are new, what each new module's public interface looks like. Module-shape decisions belong here, not in implementation. The proposed map must be explicitly reviewed for depth (ensuring narrow interfaces) during the alignment/PRD review phase before implementation begins.
 
 ### Aln13. PRD Summarizes Alignment, Does Not Replace It
+Skills: align-concept, compose-prd
 
 The PRD that follows alignment is a destination document — a summary. It is not the source of truth for the design concept. Skipping deep PRD review is acceptable only when the grilling session is genuinely complete; this is a judgment call, not a default (cross-reference: open question in workflow doc on PRD review safety).
 
 ### Aln14. Stop and Re-Align on Discovery
+Skills: align-concept
 
 If during PRD writing, issue decomposition, or implementation, a contradiction or missed branch surfaces, the agent stops and routes back to `aln`. Alignment debt is paid at discovery time, not at QA time.
 
 ### Aln15. Negative Decisions Are Captured
+Skills: align-concept
 
 Decisions to *not* do something are recorded explicitly in the alignment artifacts and carried forward into the PRD's out-of-scope section. Negative decisions are how scope is defended later.
 
@@ -131,10 +146,12 @@ Decisions to *not* do something are recorded explicitly in the alignment artifac
 **Replay on later `aln` sessions.** Existing Aln15 entries are loaded as grilling context. A1 does not re-propose options already recorded as negative decisions — it cites the prior rejection (with rationale) if the human reopens the branch, rather than walking it fresh.
 
 ### Aln16. Visualize the Decision Tree
+Skills: align-concept
 
 During the grilling session, the agent maintains and displays a visual map of the decision tree (e.g., a Mermaid `graph TD`). The graph shows the root goal, walked branches (decisions made), and pending branches (unresolved questions). This keeps the human oriented and exposes missed constraints.
 
 ### Aln17. Grill With Docs — Maintain `context.md` and Draft ADRs In-Session
+Skills: align-concept, subagent-for-artifact-drafting
 
 Grilling is **document-anchored**, not purely conversational. The alignment agent reads and updates the durable domain docs during the session — Pocock's `/grill-with-docs` pattern.
 
@@ -162,6 +179,7 @@ Grilling is **document-anchored**, not purely conversational. The alignment agen
 **When to skip.** Aln17 does not apply when there is no codebase yet (per Pocock's rule of thumb: codebase → grill-with-docs, no codebase → plain grill). For a brand-new repo, the very first `aln` session bootstraps `context.md` as an output rather than reading it as input — even early-stage projects benefit because that is precisely when shared language is established. The bootstrap output also includes the `CLAUDE.md` pointer (L9).
 
 ### Aln18. Alignment Transcript Artifact (C4)
+Skills: align-concept
 
 Every `aln` session produces a paired artifact under `plan/<WI>/`, mirroring the C8 idea-file shape (gr_idea.md Idea7):
 
@@ -175,6 +193,7 @@ Every `aln` session produces a paired artifact under `plan/<WI>/`, mirroring the
 **Distinct from `context.md` and ADRs.** `context.md` and ADRs are durable, in-tree, survive WI close. The transcript records *the session that produced them*; it retires with the WI.
 
 ### Aln19. Collapsed `aln` for `mini` Mode
+Skills: align-concept
 
 When `ide` selects `mini` mode (gr_idea.md Idea8), `aln` runs in a collapsed profile that preserves irreversibility-protection rules and reduces ceremony rules. The collapse is not a skip — it is a documented shorter shape. Silent skipping of any Aln rule outside this collapse is forbidden (3.16, Idea11).
 

@@ -31,10 +31,12 @@ Manual QA does not replace automated review (`rev`); it complements it. `rev` ch
 ## Rules
 
 ### Q1. Slice Must Be Runnable Before QA Begins
+Skills: qa
 
 QA does not start until the slice runs end-to-end in a real or near-real environment. A slice that compiles but cannot be exercised by a human is not ready for `qa` — it returns to `ral` / `par` for completion.
 
 ### Q2. Exercise the User Path, Not Only the Happy Path
+Skills: qa
 
 The human must walk at least one realistic user persona's full path through the new behavior, including:
 
@@ -46,6 +48,7 @@ The human must walk at least one realistic user persona's full path through the 
 Happy-path-only QA is an anti-pattern (Pocock failure mode #1).
 
 ### Q3. Inspect Surface That Tests Cannot Judge
+Skills: qa
 
 The human explicitly checks dimensions automated tests do not cover well:
 
@@ -56,10 +59,12 @@ The human explicitly checks dimensions automated tests do not cover well:
 - Migration / schema effects visible in the running system.
 
 ### Q4. Every Finding Becomes an Issue
+Skills: qa
 
 No finding is patched ad hoc. Each finding is filed as an issue and triaged. Inline fixes during QA bypass the workflow and lose traceability (Pocock failure mode #2).
 
 ### Q5. Human Triages Each Finding: Fix-Now or Backlog
+Skills: qa
 
 For each finding, the human decides:
 
@@ -70,6 +75,7 @@ For each finding, the human decides:
 Default when in doubt: **fix-now** for safety-critical, destructive, data-integrity, or user-trust-affecting findings; **backlog** for cosmetic or polish items.
 
 ### Q6. QA Output Format
+Skills: qa
 
 QA output is structured:
 
@@ -79,14 +85,17 @@ QA output is structured:
 - **Coverage gaps**: dimensions or paths the QA pass did not exercise (so they are not silently treated as covered).
 
 ### Q7. QA Throughput Must Not Lag Implementation Throughput
+Skills: qa
 
 If agent throughput exceeds QA capacity, the implementation queue is paused, not the QA queue (Pocock failure mode #3). Unreviewed slices are not allowed to stack into a hard-to-QA batch.
 
 ### Q8. Recurring QA Categories Become Automated Tests
+Skills: qa
 
 Findings that repeat across slices (same category, same kind of bug) are converted into automated tests during `ica` or as part of the fix-now follow-up. QA is for taste; recurring mechanical failures should not need human eyes.
 
 ### Q9. Loop Convergence Is a Human Verdict
+Skills: qa
 
 The plan → execute → QA loop (`iss → ral|par → qa → fix-now → iss` or pass) terminates on an **explicit human verdict**, not on a mechanized checklist. The human declares `pass` or `pass-with-backlog` (Q6) when both hold:
 
@@ -102,6 +111,7 @@ Forbidden:
 - Silently downgrading a fix-now finding to backlog to force a pass. Triage is logged (Q4) and visible.
 
 ### Q10. Read the Seam, Not the Internals (Gray-Box QA)
+Skills: qa
 
 For modules built under the gray-box labor partition (gr_mod.md M3a), the default human QA read is the **seam**: the public interface, the boundary tests, and user-visible behavior against the PRD acceptance criteria. Internals are not read line-by-line by default.
 
@@ -122,6 +132,7 @@ Forbidden:
 - Applying Q10 to modules not built under M3a (e.g., HITL co-authored modules where the partition variant was (ii) or (iii)).
 
 ### Q11. Retire Orphaned Ephemeral Artifacts Before Merge
+Skills: qa
 
 `qa` is the merge gate, so it is the right place to verify that sprint-scoped artifacts retire on the same PR that closes their owner. Three checks, mechanical:
 
@@ -139,6 +150,7 @@ Forbidden:
 - Partial retirement: deleting `plan/<WI>/idea.md` while leaving sibling `plan/<WI>/<other>.md` files behind. The whole directory retires together.
 
 ### Q12. Mode-Dependent `qa` Shape
+Skills: qa
 
 The `qa` phase has three shapes determined by the mode `ide` selected (gr_idea.md Idea8). All three terminate on an explicit human verdict (Q9). The shape difference is the **scope of the verification act**, not the rigor of the verdict.
 

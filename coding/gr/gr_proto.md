@@ -22,6 +22,7 @@ Skip when: ambiguity is purely about facts (use `res`), purely about scope (reso
 ## Rules
 
 ### Pro1. Trigger Gate — Irreversibility or Cost Asymmetry
+Skills: prototype
 
 `pro` fires only when **at least one** holds:
 
@@ -33,6 +34,7 @@ If neither holds, prototype is over-engineering. Resolve in `aln` and pick.
 **Why:** the old Aln17 used "genuinely visual" as the gatekeeper. Widening prototype scope to architecture and integration removes that bright line — a replacement gate is needed or the phase swallows every fuzzy decision.
 
 ### Pro2. Three Flavors, One Phase
+Skills: prototype
 
 Prototype variants fall into one of three flavors. Same phase, same discipline, different artifact:
 
@@ -43,6 +45,7 @@ Prototype variants fall into one of three flavors. Same phase, same discipline, 
 A single `pro` invocation handles one flavor. Mixing flavors in one prototype = back to grilling.
 
 ### Pro3. Throwaway by Construction
+Skills: prototype
 
 Variants are **disposable**. Code lives in a clearly-marked sandbox (route, branch, folder) and is **deleted before** `prd`/`iss` writes production code from the chosen direction. Prototype code never silently becomes the production impl — that path produces low-quality production code and erases the throwaway discipline.
 
@@ -51,6 +54,7 @@ Deletion is a precondition for exiting `pro`. Tracked the same way `res` artifac
 **Ordering with caller capture (Pro5).** The C6 variant artifact lives inside the sandbox (`<sandbox_path>/variants.md`). The caller must read and persist its facts (Pro5) **before** sandbox deletion — otherwise `decision_outcome.rejected` and `rationale_by_human` are lost. Deletion sequence: (1) human fills `decision_outcome`; (2) caller reads C6 and writes its own artifacts (Aln15 / `research/<topic>.md` / PRD section); (3) caller signals capture complete; (4) `pro` deletes sandbox. Step 2 failing closed blocks step 4.
 
 ### Pro4. 2–3 Variants, No Self-Judging
+Skills: prototype
 
 The agent produces 2–3 variants. The human (or domain expert) picks. Agent does **not** declare a winner. Reason: prototype variants are taste-impositions — agent has no calibrated taste over arch tradeoffs, UX, or integration ergonomics in this codebase. Self-judging defeats the phase.
 
@@ -59,6 +63,7 @@ Agent may flag observable facts about each variant (LOC, dependency added, laten
 Artifact shape: [`tpl/tpl_var_pres.md`](../tpl/tpl_var_pres.md) (C6). Schema omits `recommendation`/`preferred`/`best`/`score` fields; body vocabulary blocks subjective terms. Pro4 is enforced by template, not by reviewer convention alone.
 
 ### Pro5. Output Feeds Aln / Res / Prd — Caller Persists
+Skills: prototype
 
 The chosen direction is the output. **`pro` emits exactly one artifact: the C6 variant doc ([`tpl/tpl_var_pres.md`](../tpl/tpl_var_pres.md)) with the chosen variant marked and `captured_responses` populated where applicable.** `pro` does not edit any other phase's files. The caller reads C6 on return and updates its own artifacts:
 
@@ -71,14 +76,17 @@ Why caller-persists is symmetric across all three callers: `pro` stays caller-ag
 Rejected variants are recorded as negative decisions so a future agent does not re-propose them. The caller — not `pro` — performs that recording.
 
 ### Pro6. Not AFK
+Skills: prototype
 
 `pro` is HITL by construction — Pro4 requires a human picker. AFK promotion is forbidden (Gov5a). Same constraint as `aln`.
 
 ### Pro7. Hidden-Constraint Review on Variant Set
+Skills: prototype, hidden-constraint-checklist
 
 Before showing variants to the human, the agent checks each variant against the hidden-constraint classes (security, permissions, retention, migrations, observability, API compat, concurrency — same checklist as Aln6 / Rev7). A variant that quietly violates a hidden constraint must be flagged or replaced before selection, otherwise the human picks aesthetics over correctness.
 
 ### Pro8. No Fabrication in Integration Spikes
+Skills: prototype, fabrication-check
 
 Op13 applies in full. An integration prototype that invents API responses, mocks endpoints the real service does not expose, or fakes payloads it did not actually capture launders fabrication into "verified shape." Spikes hit the real (or vendor-sandbox) service and capture observed responses, or they are not integration prototypes.
 

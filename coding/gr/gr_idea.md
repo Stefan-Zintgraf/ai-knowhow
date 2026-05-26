@@ -22,10 +22,12 @@ Skip when: never. `ide` is the entry phase and always runs. What collapses is wh
 ## Rules
 
 ### Idea1. Output Is 3–6 Major Goals
+Skills: distill-idea
 
 The `ide` phase produces a short list — between **3 and 6** major goals. Fewer than 3 means the brief is too narrow for goal-shaped framing (probably a direct task — go to `aln` with the brief). More than 6 means the goals are not yet major (decompose or merge before leaving `ide`).
 
 ### Idea2. No Details
+Skills: distill-idea
 
 A goal in `ide` names *what the work must serve*, not *how*. Forbidden in `ide` output:
 
@@ -38,22 +40,27 @@ A goal in `ide` names *what the work must serve*, not *how*. Forbidden in `ide` 
 Details belong to `aln` (concept), `prd` (specification), or `iss` (tasks). If a detail leaks into `ide`, the agent strips it and notes it as "deferred to aln/prd."
 
 ### Idea3. Negative Goals Are Welcome
+Skills: distill-idea
 
 Explicit non-goals are first-class in `ide` and count toward the 3–6 budget when they materially shape the work. Examples: "not a mobile app," "no real-time updates," "no migration from system X." Negative goals here become Aln15 negative decisions later.
 
 ### Idea4. HITL Only
+Skills: distill-idea, triage-idea
 
 `ide` is human-in-the-loop. The agent proposes a goal list from the brief; the human edits, accepts, or rejects. AFK / Ralph loops are forbidden during `ide` — the same reason `aln` is HITL-only (Aln1, Gov5a): the goal set anchors every later phase, so a wrong anchor compounds.
 
 ### Idea5. Brief Is Input, Not Output
+Skills: distill-idea
 
 The original brief (Slack, ticket, email) is the raw material the agent distills. The brief is **not** the `ide` output. Even a well-written brief gets restated as a 3–6 goal list, because the act of distilling surfaces missing goals and unstated assumptions. Cross-reference: Aln8 (treat brief as input, not truth) — Idea5 extends Aln8 one step earlier.
 
 ### Idea6. Output Feeds `aln`, Does Not Replace It
+Skills: distill-idea
 
 The goal list is the *starter* for grilling, not a substitute for it. `aln` walks every branch of every goal. An agent that reads a goal list and jumps to `prd` violates 3.21. The goal list narrows what `aln` grills over; it does not shortcut the grilling.
 
 ### Idea7. Persisted to `plan/<N>_<slug>/idea.md`
+Skills: distill-idea
 
 The confirmed goal list is written to `plan/<N>_<slug>/idea.md`. `<N>` is the GH issue number assigned at issue-emit time (Idea9); `<slug>` is kebab-case from the issue title, stopwords stripped, truncated ≤40 chars. Single artifact per WI, never a shared `idea.md`, never multiple idea files under one WI. Downstream phases (`aln`, `prd`, `iss`, ...) read this file as the anchor for goals; PRD Goals section folds it but does not replace it.
 
@@ -78,6 +85,7 @@ Refresh `updated:` on every run. Default `status: wip` on a successful artifact 
 Retirement: the goal list is WI-scoped, not durable. Deleted with the rest of `plan/<WI>/` at WI close per 3.33 — same retirement model as 3.27 (research). Persistence is bounded; documentation-rot risk that 3.24 (PRD) and 3.27 (research) address is handled here by 3.33's close-time deletion, not by avoiding the artifact altogether.
 
 ### Idea8. Triage and Mode Selection (Entry Decision)
+Skills: triage-idea
 
 `ide` is the entry phase for **every** task. Its first act, before any goal distillation, is to triage the incoming brief and pick a workflow mode. Three modes:
 
@@ -106,6 +114,7 @@ Retirement: the goal list is WI-scoped, not durable. Deleted with the rest of `p
 **Idea8 collapse:** for `direct-edit`, distillation (Idea1) is skipped entirely — the brief verbatim is the implicit single goal recorded on the issue. For `mini`/`full`, distillation proceeds per Idea1.
 
 ### Idea9. Issue Invariant: Exactly One Issue Before Any `ral`
+Skills: triage-idea
 
 Before any `ral` invocation, **exactly one GH issue exists** for the WI. Emitter depends on mode (Idea8):
 
@@ -125,6 +134,7 @@ Before any `ral` invocation, **exactly one GH issue exists** for the WI. Emitter
 Mode is recorded on the issue body and as a label (`mode:direct-edit` / `mode:mini` / `mode:full`) so downstream automation can read it without parsing body text.
 
 ### Idea10. `ide`-Time Exploration Budget
+Skills: triage-idea
 
 The agent may need light codebase exploration during triage (Idea8) to score the 4 axes honestly. Mechanism: dispatch B10 (subagent-for-exploration, see gr_algn.md Aln7) with a **strict budget cap of ≤5 file reads, summary only**.
 
@@ -136,6 +146,7 @@ Budget rule:
 No edits during `ide` exploration. No deep reads. The B10 dispatch follows the same isolated-context discipline as in `aln` (Aln7) — main context stays clean.
 
 ### Idea12. Concept Sharpening (Sub-Brief Input)
+Skills: distill-idea
 
 When the incoming input is a **vague notion** rather than a formed brief — no clear problem statement, no identifiable user, no articulated value — the agent runs a structured sharpening step before Idea1 goal distillation.
 
@@ -177,6 +188,7 @@ When input is already a formed brief, Idea12 is skipped — Idea1 runs directly 
 **Downstream value:** `aln` reads the Context section to ground its grilling — problem and target-user framing prevents drift. Key assumptions and open questions seed grilling branches directly (cross-ref Aln8, Aln15).
 
 ### Idea11. Mode Transitions: Symmetric, Human-Approved Either Way
+Skills: triage-idea
 
 Once a mode is picked in `ide`, it can be changed (upgrade or downgrade) under these rules:
 

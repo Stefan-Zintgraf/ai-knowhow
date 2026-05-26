@@ -39,6 +39,7 @@ Three flavors (Pro2). Pick one per `pro` invocation — do not mix:
 ---
 
 ## Steps
+Skills: prototype
 
 1. Restate the decision in one sentence. Verify Pro1 (irreversibility or cost asymmetry). If neither holds, exit `pro` and resolve in `aln`.
 2. Pick the flavor (FE / Architecture / Integration). One only.
