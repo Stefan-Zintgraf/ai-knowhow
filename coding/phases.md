@@ -118,3 +118,51 @@ Mode is recorded as a label on the GH issue (`mode:direct-edit` / `mode:mini` / 
 `ral` and `par` are alternative modes of the same implementation step, chosen per task. Not both at once.
 
 `qa` is mandatory after `ral` / `par`. Outcome routing is human-decided per finding: fix-now findings loop back to `iss`; backlog findings are filed but do not block.
+
+---
+
+## 5. Phase–Skill Binding
+
+Each phase is backed by one or more skills. The `/phase` skill (A12) orchestrates transitions — no phase skill writes `phase_status.md` or `plan/ACTIVE` directly.
+
+### Skill map
+
+| Phase | Primary skill(s)                          | Guardrail source                     | Notes                                                                 |
+| ----- | ----------------------------------------- | ------------------------------------ | --------------------------------------------------------------------- |
+| `ide` | `/triage-idea` (A13) + `/distill-idea` (A11) | [gr_idea.md](gr/gr_idea.md)         | Triage (Idea8–11) runs first; distillation (Idea1–5,7,12) follows for `mini`/`full` only |
+| `aln` | `/align-concept` (A1)                     | [gr_algn.md](gr/gr_algn.md)         | Collapsed per Aln19 in `mini` mode                                    |
+| `res` | `/do-research` (A10)                      | [gr_res.md](gr/gr_res.md)           | Optional — fires when `aln` surfaces external unknowns                |
+| `pro` | `/prototype` (A9)                         | [gr_proto.md](gr/gr_proto.md)       | Optional — Pro1 gate (irreversibility or cost asymmetry)              |
+| `prd` | `/compose-prd` (A2)                       | [gr_algn.md](gr/gr_algn.md)         |                                                                       |
+| `iss` | `/prd-to-dag` (A3)                        | [gr_tdd.md](gr/gr_tdd.md)           |                                                                       |
+| `ral` | `/afk-loop` (A4)                          | [gr_tdd.md](gr/gr_tdd.md)           |                                                                       |
+| `par` | `/parallel-loop` (A5)                     | —                                    | Blocked — substrate TBD                                               |
+| `qa`  | `/qa` (A8)                                | [gr_qa.md](gr/gr_qa.md)             |                                                                       |
+| `rev` | `/review` (A6)                            | [gr_rev.md](gr/gr_rev.md)           | Cross-phase — may run alongside any sequential phase                  |
+| `ica` | `/arch-review` (A7)                       | [gr_mod.md](gr/gr_mod.md)           | Cross-phase — may run alongside any sequential phase                  |
+
+### Transition protocol: `/phase` (A12)
+
+A single orchestration skill owns all phase state. Phase skills never write `phase_status.md` or `plan/ACTIVE` directly.
+
+| Subcommand       | What it does                                                                                                  |
+| ---------------- | ------------------------------------------------------------------------------------------------------------- |
+| `/phase enter <code>` | Guards entry: mode legal for this phase? Previous phase exited cleanly? Tripwire-halt clear? Writes `phase_status.md`. |
+| `/phase exit <code>`  | Guards exit: phase-required artifacts present? HITL ack recorded? Updates `phase_status.md` history.          |
+| `/phase status`       | Read-only. Computes `next_phase` from `mode` + `current_phase` + flags (`needs_research`, `pro_gate_tripped`) against §4 chains. |
+
+State file: `plan/<WI>/phase_status.md` (template: `tpl/tpl_phase_status.md`). Active-WI pointer: `plan/ACTIVE`.
+
+### `ide` phase call sequence by mode
+
+```
+direct-edit:  /phase enter ide → /triage-idea →                     /phase exit ide
+mini / full:  /phase enter ide → /triage-idea → /distill-idea →     /phase exit ide
+mid-WI re-triage (Idea11):  /triage-idea --remode  (standalone, no phase enter/exit)
+```
+
+### Belt-and-suspenders: B1 hook
+
+B1 (`routing-step-enforcer`) warns if a phase skill ran but no `/phase` call followed in the same turn. Secondary enforcement — `/phase` is primary.
+
+Full skill definitions, dependency edges, and build status: see `coding_plan.md` §"Phase Skills table".
