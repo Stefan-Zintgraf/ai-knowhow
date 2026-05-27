@@ -215,11 +215,15 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
     4. any stale compiled skills → `/make-skill <name>` (list all)
     5. all skills current → find first `- [ ]` item in coding_plan.md work items section, print it as next step
   - **output format**: sections (Current WI, Skill Freshness, Next Action); each stale item one line with the exact command to fix it
-  
-- [ ] re-create skills in output/skills (because of artifacts output folder dynamic now)
-  - phase, next: test-skill phase
-  - triage-idea: test-skill triage-idea
-  - distill-idea: test-skill distill-idea
+
+
+- [~] re-create skills in output/skills (because of artifacts output folder dynamic now)
+  - [x] phase, next: test-skill phase, DONE
+  - [ ] adjust test-skill skill: 
+     - [ ] provide option to keep human out of the loop (test success/fail judged by AI agent)
+     - [ ] when human is in the loop, provide option to keep human out of the loop for remaining tests
+  - [ ] triage-idea: test-skill triage-idea
+  - [ ] distill-idea: test-skill distill-idea
 
 
 - [ ] check the workflow, specifically phases/idea - seems to be inconsistend or strange (start with triage instead of distill)
