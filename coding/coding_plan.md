@@ -217,6 +217,10 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
   - **output format**: sections (Current WI, Skill Freshness, Next Action); each stale item one line with the exact command to fix it
   
 - [ ] re-create skills in output/skills (because of artifacts output folder dynamic now)
+  - phase, next: test-skill phase
+  - triage-idea: test-skill triage-idea
+  - distill-idea: test-skill distill-idea
+
 
 - [ ] check the workflow, specifically phases/idea - seems to be inconsistend or strange (start with triage instead of distill)
 
