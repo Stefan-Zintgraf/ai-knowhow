@@ -84,7 +84,7 @@ Skills: align-concept
 
 The original brief (Slack message, ticket, email) is the prompt for alignment — not the alignment itself. The agent does not implement directly from a brief. Grilling is mandatory before any planning artifact is written. The brief is normally distilled into 3–6 major goals during the upstream `ide` phase (cross-reference: gr_idea.md Idea1) — `aln` grills against those goals, not against the raw brief.
 
-**Goal-anchor contract.** A1 consumes `plan/<WI>/idea.md` (C8) at session start with three obligations:
+**Goal-anchor contract.** A1 consumes `<artifacts>/<WI>/idea.md` (C8) at session start with three obligations:
 
 1. **Verbatim anchor.** A1 presents the 3–6 goals to the human verbatim before the first grilling question and asks for confirmation. Goals are the tree-roots; negative goals (gr_idea.md Idea3) become guardrails grilling will not cross.
 2. **Per-branch goal-tag.** Every grilling branch opened during the session is tagged with the goal-id it serves, recorded in the alignment transcript (Aln18). Branches that map to no goal are a signal grilling has drifted — A1 surfaces this to the human, who either reframes the branch to a goal or downgrades it.
@@ -171,7 +171,7 @@ Grilling is **document-anchored**, not purely conversational. The alignment agen
 
 **At session close.**
 
-9. The alignment transcript (Aln18, `plan/<WI>/algn_transcript.md`) records: (a) which `context.md` entries were added or changed (with diffs or links), (b) which ADRs were drafted/accepted with their NNNN ids, (c) which existing ADRs constrained decisions in the session.
+9. The alignment transcript (Aln18, `<artifacts>/<WI>/algn_transcript.md`) records: (a) which `context.md` entries were added or changed (with diffs or links), (b) which ADRs were drafted/accepted with their NNNN ids, (c) which existing ADRs constrained decisions in the session.
 10. `context.md` diffs and new ADRs are committed alongside the alignment transcript, not as a separate later cleanup pass. Documentation rot starts the moment maintenance is deferred.
 
 **Distinct from Aln15.** Aln15 captures rejected options (the road not taken). Aln17 maintains the chosen-language and chosen-rationale layers. A single decision can produce all three artifacts: an Aln15 negative-decision entry, a `context.md` term update, and an ADR.
@@ -181,12 +181,12 @@ Grilling is **document-anchored**, not purely conversational. The alignment agen
 ### Aln18. Alignment Transcript Artifact (C4)
 Skills: align-concept
 
-Every `aln` session produces a paired artifact under `plan/<WI>/`, mirroring the C8 idea-file shape (gr_idea.md Idea7):
+Every `aln` session produces a paired artifact under `<artifacts>/<WI>/`, mirroring the C8 idea-file shape (gr_idea.md Idea7):
 
-- `plan/<WI>/algn_transcript.md` — markdown body. Sections: chronological Q&A log (one question + recommendation + human answer per entry, tagged with goal-id per Aln8); resolved decisions block; Aln15 rejected options; B5/Aln6 hidden-constraint sweep result (per-class outcome); B10/Aln7 sub-agent returns referenced inline; Aln17 in-session `context.md` and ADR-draft references (with NNNN ids).
-- `plan/<WI>/status_algn_transcript.md` — frontmatter only: `status: wip|done`, `updated`, `owner-issue`. `done` is human-only — never auto-flip.
+- `<artifacts>/<WI>/algn_transcript.md` — markdown body. Sections: chronological Q&A log (one question + recommendation + human answer per entry, tagged with goal-id per Aln8); resolved decisions block; Aln15 rejected options; B5/Aln6 hidden-constraint sweep result (per-class outcome); B10/Aln7 sub-agent returns referenced inline; Aln17 in-session `context.md` and ADR-draft references (with NNNN ids).
+- `<artifacts>/<WI>/status_algn_transcript.md` — frontmatter only: `status: wip|done`, `updated`, `owner-issue`. `done` is human-only — never auto-flip.
 
-**Lifecycle.** WI-scoped, not durable. The transcript is the *source* artifact; the PRD (composed by A2 per Aln13) is its *destination summary*. Retired with the rest of `plan/<WI>/` at WI close (Core rule 3.36, parallel to 3.33 idea retirement and 3.27 research retirement). Same PR that closes the WI deletes `plan/<WI>/`, verified by `qa` Q11.
+**Lifecycle.** WI-scoped, not durable. The transcript is the *source* artifact; the PRD (composed by A2 per Aln13) is its *destination summary*. Retired with the rest of `<artifacts>/<WI>/` at WI close (Core rule 3.36, parallel to 3.33 idea retirement and 3.27 research retirement). Same PR that closes the WI deletes `<artifacts>/<WI>/`, verified by `qa` Q11.
 
 **Consumers.** A2 (`compose-prd`) reads the transcript to summarize into the destination PRD; A6 (`review`) reads it to verify Rev7 hidden-constraint coverage and Adr10 ADR coverage; A8 / Q11 lint reads `status_algn_transcript.md` frontmatter.
 
@@ -214,7 +214,7 @@ When `ide` selects `mini` mode (gr_idea.md Idea8), `aln` runs in a collapsed pro
 
 **Skipped (with explicit substitute):**
 
-- **Aln18 transcript artifact** — no separate `plan/<N>_<slug>/algn_transcript.md` file. The 1–3 questions, recommendations, answers, and Aln6 sweep result are written **inline in the GH issue body** under a `## Alignment` heading. The issue is the transcript for `mini` mode. `status_algn_transcript.md` is not created.
+- **Aln18 transcript artifact** — no separate `<artifacts>/<N>_<slug>/algn_transcript.md` file. The 1–3 questions, recommendations, answers, and Aln6 sweep result are written **inline in the GH issue body** under a `## Alignment` heading. The issue is the transcript for `mini` mode. `status_algn_transcript.md` is not created.
 
 **Auto-upgrade triggers.** During collapsed `aln`, if any of the following surfaces, the agent stops and proposes upgrade to `full` mode per Idea11:
 
@@ -223,7 +223,7 @@ When `ide` selects `mini` mode (gr_idea.md Idea8), `aln` runs in a collapsed pro
 - Pro1 prototype gate (irreversibility OR cost asymmetry — see gr_proto.md).
 - Aln6 hidden-constraint sweep marks any class `missing` that requires deep grilling to resolve.
 
-The human approves the upgrade per Idea11. If approved, the work already done in collapsed `aln` is preserved — the inline issue-body transcript is migrated into a freshly created `plan/<N>_<slug>/algn_transcript.md` (Aln18) and grilling resumes in full shape.
+The human approves the upgrade per Idea11. If approved, the work already done in collapsed `aln` is preserved — the inline issue-body transcript is migrated into a freshly created `<artifacts>/<N>_<slug>/algn_transcript.md` (Aln18) and grilling resumes in full shape.
 
 **Forbidden:**
 

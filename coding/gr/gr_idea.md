@@ -59,18 +59,18 @@ Skills: distill-idea
 
 The goal list is the *starter* for grilling, not a substitute for it. `aln` walks every branch of every goal. An agent that reads a goal list and jumps to `prd` violates 3.21. The goal list narrows what `aln` grills over; it does not shortcut the grilling.
 
-### Idea7. Persisted to `plan/<N>_<slug>/idea.md`
+### Idea7. Persisted to `<artifacts>/<N>_<slug>/idea.md`
 Skills: distill-idea
 
-The confirmed goal list is written to `plan/<N>_<slug>/idea.md`. `<N>` is the GH issue number assigned at issue-emit time (Idea9); `<slug>` is kebab-case from the issue title, stopwords stripped, truncated ≤40 chars. Single artifact per WI, never a shared `idea.md`, never multiple idea files under one WI. Downstream phases (`aln`, `prd`, `iss`, ...) read this file as the anchor for goals; PRD Goals section folds it but does not replace it.
+The confirmed goal list is written to `<artifacts>/<N>_<slug>/idea.md`. `<N>` is the GH issue number assigned at issue-emit time (Idea9); `<slug>` is kebab-case from the issue title, stopwords stripped, truncated ≤40 chars. Single artifact per WI, never a shared `idea.md`, never multiple idea files under one WI. Downstream phases (`aln`, `prd`, `iss`, ...) read this file as the anchor for goals; PRD Goals section folds it but does not replace it.
 
 **Mode-dependent persistence (per Idea8):**
-- `full` and `mini` modes — create `plan/<N>_<slug>/idea.md` + `status_idea.md` as defined below.
-- `direct-edit` mode — **no `plan/<N>_<slug>/` files created.** The GH issue body carries the brief verbatim and the verification record; that is the complete WI record. Retirement (3.33) does not apply because no files exist. No `status_idea.md` flip needed.
+- `full` and `mini` modes — create `<artifacts>/<N>_<slug>/idea.md` + `status_idea.md` as defined below.
+- `direct-edit` mode — **no `<artifacts>/<N>_<slug>/` files created.** The GH issue body carries the brief verbatim and the verification record; that is the complete WI record. Retirement (3.33) does not apply because no files exist. No `status_idea.md` flip needed.
 
 Slug collision: if two open issues would generate the same slug after truncation, suffix `-2`, `-3` and surface to human at folder-create time.
 
-Companion status file: `plan/<WI>/status_idea.md` with frontmatter:
+Companion status file: `<artifacts>/<WI>/status_idea.md` with frontmatter:
 
 ```
 ---
@@ -80,17 +80,17 @@ owner-issue: #NNN   # the WI's owning issue/PR; anchors 3.33 retirement
 ---
 ```
 
-Refresh `updated:` on every run. Default `status: wip` on a successful artifact write. Human-only `done` — never auto-flip. On reopen, flip `done → wip` (never back to `open`). `owner-issue:` is mandatory — `status_idea.md` is the WI anchor; sibling artifacts under `plan/<WI>/` inherit the same owner, so the field is set once here. On failure runs (under-budget, human rejected, no human acceptance), write nothing — no `idea.md`, no `status_idea.md`.
+Refresh `updated:` on every run. Default `status: wip` on a successful artifact write. Human-only `done` — never auto-flip. On reopen, flip `done → wip` (never back to `open`). `owner-issue:` is mandatory — `status_idea.md` is the WI anchor; sibling artifacts under `<artifacts>/<WI>/` inherit the same owner, so the field is set once here. On failure runs (under-budget, human rejected, no human acceptance), write nothing — no `idea.md`, no `status_idea.md`.
 
-Retirement: the goal list is WI-scoped, not durable. Deleted with the rest of `plan/<WI>/` at WI close per 3.33 — same retirement model as 3.27 (research). Persistence is bounded; documentation-rot risk that 3.24 (PRD) and 3.27 (research) address is handled here by 3.33's close-time deletion, not by avoiding the artifact altogether.
+Retirement: the goal list is WI-scoped, not durable. Deleted with the rest of `<artifacts>/<WI>/` at WI close per 3.33 — same retirement model as 3.27 (research). Persistence is bounded; documentation-rot risk that 3.24 (PRD) and 3.27 (research) address is handled here by 3.33's close-time deletion, not by avoiding the artifact altogether.
 
 ### Idea8. Triage and Mode Selection (Entry Decision)
 Skills: triage-idea
 
 `ide` is the entry phase for **every** task. Its first act, before any goal distillation, is to triage the incoming brief and pick a workflow mode. Three modes:
 
-- **`direct-edit`** — `ide` → `ral` → `qa`. Skips `aln`/`prd`/`iss`. No `plan/<N>_<slug>/` files; issue body is the record. TDD exemption may apply per TDD11.
-- **`mini`** — `ide` → `aln`(collapsed per Aln19) → `ral` → `qa`. Issue + `plan/<N>_<slug>/idea.md` + collapsed `aln` artifacts.
+- **`direct-edit`** — `ide` → `ral` → `qa`. Skips `aln`/`prd`/`iss`. No `<artifacts>/<N>_<slug>/` files; issue body is the record. TDD exemption may apply per TDD11.
+- **`mini`** — `ide` → `aln`(collapsed per Aln19) → `ral` → `qa`. Issue + `<artifacts>/<N>_<slug>/idea.md` + collapsed `aln` artifacts.
 - **`full`** — `ide` → `aln` → [`res`?] → [`pro`?] → `prd` → `iss` → `ral`\|`par` → `qa`. Full pipeline.
 
 **Triage matrix (4 axes).** The agent scores each axis with the human present (HITL per Idea4):
@@ -119,17 +119,17 @@ Skills: triage-idea
 Before any `ral` invocation, **exactly one GH issue exists** for the WI. Emitter depends on mode (Idea8):
 
 - `direct-edit`, `mini` — `ide` emits the issue.
-- `full` — `iss` emits issue(s); `ide` emits no issue, only the `plan/<N>_<slug>/idea.md` anchor.
+- `full` — `iss` emits issue(s); `ide` emits no issue, only the `<artifacts>/<N>_<slug>/idea.md` anchor.
 
 **Dedupe protocol (before any issue create).** Agent runs `gh issue list --state open --search "<key terms from brief>"`, displays top 3–5 matches, human picks:
 
 - **new** — create new issue via `gh issue create --title --body --label ready-for-agent`; capture `#N` via `--json number`.
-- **link to #N** — reuse existing folder `plan/N_<existing-slug>/` if present, else create with current slug.
+- **link to #N** — reuse existing folder `<artifacts>/N_<existing-slug>/` if present, else create with current slug.
 - **abort** — `ide` exits; no issue, no folder; clean state.
 
-**Folder creation:** after issue create, `mkdir plan/<N>_<slug>/` for `mini`/`full`; for `direct-edit`, no folder.
+**Folder creation:** after issue create, `mkdir <artifacts>/<N>_<slug>/` for `mini`/`full`; for `direct-edit`, no folder.
 
-**`plan/INDEX.md`** is auto-regenerated from `gh issue list --state open` + folder listing — never hand-maintained.
+**`<artifacts>/INDEX.md`** is auto-regenerated from `gh issue list --state open` + folder listing — never hand-maintained.
 
 Mode is recorded on the issue body and as a label (`mode:direct-edit` / `mode:mini` / `mode:full`) so downstream automation can read it without parsing body text.
 
@@ -209,9 +209,9 @@ Once a mode is picked in `ide`, it can be changed (upgrade or downgrade) under t
 - Letting implementation detail (module names, API shapes) leak into the goal list.
 - Treating the goal list as the design — jumping from `ide` straight to `prd`.
 - Running `ide` AFK / via Ralph loop.
-- Writing the goal list anywhere other than `plan/<N>_<slug>/idea.md` — no `idea/<topic>.md`, no shared `idea.md`, no scattered locations. Single canonical path per WI.
+- Writing the goal list anywhere other than `<artifacts>/<N>_<slug>/idea.md` — no `idea/<topic>.md`, no shared `idea.md`, no scattered locations. Single canonical path per WI.
 - Auto-flipping `status_idea.md` to `done`. Human-only `done`.
-- Leaving `plan/<N>_<slug>/` behind after the WI closes (3.33 violation).
+- Leaving `<artifacts>/<N>_<slug>/` behind after the WI closes (3.33 violation).
 - Picking a mode silently (Idea8 violation) — mode pick is HITL by construction.
 - Skipping the triage step on "obviously trivial" tasks — every entry runs triage, even if it resolves in one turn.
 - Creating duplicate issues by skipping the Idea9 dedupe search.
@@ -228,5 +228,5 @@ Once a mode is picked in `ide`, it can be changed (upgrade or downgrade) under t
 - Idea5 extends Aln8 (brief as input) one phase earlier.
 - Idea3 (negative goals) feeds Aln15 (negative decisions captured).
 - Idea4 (HITL) follows the same hard floor as Aln1, Gov5a.
-- Idea7 (persisted to `plan/<WI>/idea.md`) follows the same retirement model as 3.27 (research): in-tree, WI-scoped, deleted at WI close. Enforcement = 3.33 + Q11 merge-gate check that `plan/<WI>/` is gone when the WI's PR closes. Distinct from 3.24 (PRD), which goes external entirely.
+- Idea7 (persisted to `<artifacts>/<WI>/idea.md`) follows the same retirement model as 3.27 (research): in-tree, WI-scoped, deleted at WI close. Enforcement = 3.33 + Q11 merge-gate check that `<artifacts>/<WI>/` is gone when the WI's PR closes. Distinct from 3.24 (PRD), which goes external entirely.
 - Idea12 Context section feeds `aln` directly: problem/target-user ground the grilling, key assumptions + open questions seed branches (Aln8, Aln15).

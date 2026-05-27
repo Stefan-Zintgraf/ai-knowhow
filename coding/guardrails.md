@@ -194,12 +194,12 @@ Deep modules are built under a default labor partition: **human owns the interfa
 ### 3.32 Distill the Brief into 3–6 Goals (Idea Phase)
 
 Fires: Plan=high, Implement=none, Verify=none
-Before `aln` grilling begins, the agent distills the incoming brief / backlog item / stakeholder ask into **3–6 major goals** (phase `ide`). No details (no module map, no APIs, no UX specifics, no acceptance criteria). Negative goals welcome. HITL only — agent proposes, human edits. Output anchors `aln` but does not replace it. Persisted to `plan/<WI>/idea.md` with companion `plan/<WI>/status_idea.md` (`status: open|wip|done`) so downstream phases can read the anchor; retired with the rest of `plan/<WI>/` at WI close (3.33). Collapsible (3.29) when the upstream brief already names goals explicitly. See [gr/gr_idea.md](gr/gr_idea.md).
+Before `aln` grilling begins, the agent distills the incoming brief / backlog item / stakeholder ask into **3–6 major goals** (phase `ide`). No details (no module map, no APIs, no UX specifics, no acceptance criteria). Negative goals welcome. HITL only — agent proposes, human edits. Output anchors `aln` but does not replace it. Persisted to `<artifacts>/<WI>/idea.md` with companion `<artifacts>/<WI>/status_idea.md` (`status: open|wip|done`) so downstream phases can read the anchor; retired with the rest of `<artifacts>/<WI>/` at WI close (3.33). Collapsible (3.29) when the upstream brief already names goals explicitly. See [gr/gr_idea.md](gr/gr_idea.md).
 
 ### 3.33 Retire Idea Artifacts
 
 Fires: Plan=high, Implement=low, Verify=low
-Idea goal files (`plan/<WI>/idea.md`) and their companion `plan/<WI>/status_idea.md` are WI-scoped anchor artifacts, not durable documentation. They must be **deleted** when the work-item closes — stale idea files actively mislead future agent runs because they look authoritative but reflect yesterday's understanding of the work. Distinct from 3.24 (PRDs move to external trackers) and parallel to 3.27 (research files retire on owner-issue close): idea files live in `plan/<WI>/` for the WI lifecycle, then are removed outright with the rest of `plan/<WI>/`. Enforcement: every `plan/<WI>/idea.md` is paired with `plan/<WI>/status_idea.md`; the same PR that closes the WI deletes `plan/<WI>/`, verified by Q11 in `qa`. Human-only `done` on `status_idea.md` — never auto-flip. See [gr/gr_idea.md](gr/gr_idea.md).
+Idea goal files (`<artifacts>/<WI>/idea.md`) and their companion `<artifacts>/<WI>/status_idea.md` are WI-scoped anchor artifacts, not durable documentation. They must be **deleted** when the work-item closes — stale idea files actively mislead future agent runs because they look authoritative but reflect yesterday's understanding of the work. Distinct from 3.24 (PRDs move to external trackers) and parallel to 3.27 (research files retire on owner-issue close): idea files live in `<artifacts>/<WI>/` for the WI lifecycle, then are removed outright with the rest of `<artifacts>/<WI>/`. Enforcement: every `<artifacts>/<WI>/idea.md` is paired with `<artifacts>/<WI>/status_idea.md`; the same PR that closes the WI deletes `<artifacts>/<WI>/`, verified by Q11 in `qa`. Human-only `done` on `status_idea.md` — never auto-flip. See [gr/gr_idea.md](gr/gr_idea.md).
 
 ### 3.34 Capture Non-Obvious Decisions as ADRs
 
@@ -209,7 +209,7 @@ Decisions that are (a) **hard to reverse**, (b) **surprising without context**, 
 ### 3.36 Retire Alignment Transcripts
 
 Fires: Plan=high, Implement=low, Verify=low
-Alignment transcripts (`plan/<WI>/algn_transcript.md`) and their companion `plan/<WI>/status_algn_transcript.md` are WI-scoped session artifacts, not durable documentation. They must be **deleted** when the work-item closes — stale transcripts actively mislead future agent runs because they reflect yesterday's understanding of the work. Distinct from 3.24 (PRDs move to external trackers) and parallel to 3.33 (idea files retire on WI close) and 3.27 (research retires on owner-issue close): the transcript is the *source* artifact, the PRD composed by A2 is its *destination summary*. Enforcement: every `plan/<WI>/algn_transcript.md` is paired with `plan/<WI>/status_algn_transcript.md`; the same PR that closes the WI deletes `plan/<WI>/`, verified by Q11 in `qa`. Human-only `done` on `status_algn_transcript.md` — never auto-flip. See [gr/gr_algn.md](gr/gr_algn.md) Aln18.
+Alignment transcripts (`<artifacts>/<WI>/algn_transcript.md`) and their companion `<artifacts>/<WI>/status_algn_transcript.md` are WI-scoped session artifacts, not durable documentation. They must be **deleted** when the work-item closes — stale transcripts actively mislead future agent runs because they reflect yesterday's understanding of the work. Distinct from 3.24 (PRDs move to external trackers) and parallel to 3.33 (idea files retire on WI close) and 3.27 (research retires on owner-issue close): the transcript is the *source* artifact, the PRD composed by A2 is its *destination summary*. Enforcement: every `<artifacts>/<WI>/algn_transcript.md` is paired with `<artifacts>/<WI>/status_algn_transcript.md`; the same PR that closes the WI deletes `<artifacts>/<WI>/`, verified by Q11 in `qa`. Human-only `done` on `status_algn_transcript.md` — never auto-flip. See [gr/gr_algn.md](gr/gr_algn.md) Aln18.
 
 ### 3.37 Tripwire Discovery Forces Halt and Mode Re-Triage
 
@@ -331,7 +331,7 @@ Detail: [gr/gr_res.md](gr/gr_res.md)
 
 ### 4.19 Idea
 
-Purpose: entry phase. Triages incoming work into one of three modes (`direct-edit` / `mini` / `full`) via the 4-axis matrix (Idea8); for `mini`/`full` modes also distills the brief into 3–6 major goals anchoring `aln` grilling; emits the GH issue and bootstraps `plan/<N>_<slug>/` for `mini`/`full` (Idea9).
+Purpose: entry phase. Triages incoming work into one of three modes (`direct-edit` / `mini` / `full`) via the 4-axis matrix (Idea8); for `mini`/`full` modes also distills the brief into 3–6 major goals anchoring `aln` grilling; emits the GH issue and bootstraps `<artifacts>/<N>_<slug>/` for `mini`/`full` (Idea9).
 Apply when: **every** task entering the workflow — `ide` always runs. Triggered by a brief, Slack note, ticket, vague backlog item, or any direct ask; before any downstream phase begins.
 Detail: [gr/gr_idea.md](gr/gr_idea.md) (Idea1–Idea11)
 

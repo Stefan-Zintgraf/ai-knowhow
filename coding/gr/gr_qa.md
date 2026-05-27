@@ -138,16 +138,16 @@ Skills: qa
 
 1. **Research files (3.27 / Res3 / Res4).** For each `research/<topic>.md` present in the working tree on this PR's branch, read its `owner-issue: #NNN` header. If that issue is being closed by this PR (closes keyword, manual close, or already closed), the PR **must** delete the file. A research file whose owner closed without the file being deleted is a fail-now finding under Q5, not backlog.
 2. **PRD / plan paths (3.24 / Doc11).** Verify no path matching `prd/**`, `**/PRD-*.md`, or `**/*_prd.md` exists in the diff or in the tree. PRD bodies live in the owning issue, never in the repo. Any such path is a fail-now finding.
-3. **Idea / plan-WI directories (3.33 / Idea7).** For each `plan/<WI>/` present in the working tree on this PR's branch, read `plan/<WI>/status_idea.md` for its `owner-issue: #NNN` header. If that issue is being closed by this PR, the PR **must** delete the entire `plan/<WI>/` directory (idea.md, all status_*.md files, every sibling artifact). A `plan/<WI>/` whose owner closed without the directory being deleted is a fail-now finding under Q5, not backlog. A `plan/<WI>/` without `status_idea.md` (anchor missing) is also a fail-now finding — every WI directory must carry an idea anchor.
+3. **Idea / plan-WI directories (3.33 / Idea7).** For each `<artifacts>/<WI>/` present in the working tree on this PR's branch, read `<artifacts>/<WI>/status_idea.md` for its `owner-issue: #NNN` header. If that issue is being closed by this PR, the PR **must** delete the entire `<artifacts>/<WI>/` directory (idea.md, all status_*.md files, every sibling artifact). A `<artifacts>/<WI>/` whose owner closed without the directory being deleted is a fail-now finding under Q5, not backlog. A `<artifacts>/<WI>/` without `status_idea.md` (anchor missing) is also a fail-now finding — every WI directory must carry an idea anchor.
 
 All three checks are agent-runnable in seconds (lint + issue-state read); they appear on the Q6 QA output as a single line ("ephemeral-artifact retirement: clean / dirty"). If the human is operating gray-box (Q10), Q11 is still mandatory — orphan retirement is a seam concern.
 
 Forbidden:
 
-- Merging a PR that closes the owner issue while the research file or `plan/<WI>/` directory survives.
+- Merging a PR that closes the owner issue while the research file or `<artifacts>/<WI>/` directory survives.
 - "We'll delete the file in a follow-up PR" — the deletion belongs in the same PR (Res3, 3.33).
-- Adding a new `research/*.md` or `plan/<WI>/status_idea.md` without an `owner-issue` header to silence the lint (fabricated owner = Op13).
-- Partial retirement: deleting `plan/<WI>/idea.md` while leaving sibling `plan/<WI>/<other>.md` files behind. The whole directory retires together.
+- Adding a new `research/*.md` or `<artifacts>/<WI>/status_idea.md` without an `owner-issue` header to silence the lint (fabricated owner = Op13).
+- Partial retirement: deleting `<artifacts>/<WI>/idea.md` while leaving sibling `<artifacts>/<WI>/<other>.md` files behind. The whole directory retires together.
 
 ### Q12. Mode-Dependent `qa` Shape
 Skills: qa
@@ -156,7 +156,7 @@ The `qa` phase has three shapes determined by the mode `ide` selected (gr_idea.m
 
 **`direct-edit` mode — folded `qa`.**
 
-`qa` is not invoked as a separate phase. The verification record produced under TDD11 (gr_tdd.md) — existing-tests-green-pre/post for carve-out A, or lint + spell-check + HITL eyeball for carve-out B — **is** the `qa` step. The human's confirmation of that record is the Q9 verdict. The verdict is recorded on the GH issue body, not in a separate `qa` notes file. Q11 retirement checks still apply if the WI later expanded to include `plan/<N>_<slug>/` artifacts; if no folder exists, Q11 checks 1 and 3 are no-ops, check 2 still runs.
+`qa` is not invoked as a separate phase. The verification record produced under TDD11 (gr_tdd.md) — existing-tests-green-pre/post for carve-out A, or lint + spell-check + HITL eyeball for carve-out B — **is** the `qa` step. The human's confirmation of that record is the Q9 verdict. The verdict is recorded on the GH issue body, not in a separate `qa` notes file. Q11 retirement checks still apply if the WI later expanded to include `<artifacts>/<N>_<slug>/` artifacts; if no folder exists, Q11 checks 1 and 3 are no-ops, check 2 still runs.
 
 **`mini` mode — short `qa`.**
 

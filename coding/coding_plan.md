@@ -123,17 +123,19 @@ Enforcement: `draft-skill-input` Step 4 (source-doc reading) is extended to incl
 
 Source: discussion settling how a fresh session learns "where we are + what's next" and how phase/mode transitions are recorded. Closes the gap noted while reading `phases.md`: mode-triage (Idea8) had no skill — `distill-idea` explicitly carves out Idea8–11 as caller concern.
 
+**Artifacts folder convention.** All artifact paths in this document (and in `phases.md`, `guardrails.md`, `gr/*.md`, `tpl/*.md`) use `<artifacts>/` as the root folder for WI artifacts, the ACTIVE pointer, and INDEX.md. `<artifacts>` defaults to `plan` but is caller-supplied — skills receive it as an optional input parameter and pass it through to file operations. When no folder is given, `plan` is used.
+
 **Settled decisions:**
 
-- **State file**: `plan/<WI>/phase_status.md` — B-style (mutable `Current` block + reverse-chronological history, newest on top). Schema lives in a new template (see C-row below).
+- **State file**: `<artifacts>/<WI>/phase_status.md` — B-style (mutable `Current` block + reverse-chronological history, newest on top). Schema lives in a new template (see C-row below).
 - **`Current` block fields**: `wi`, `issue`, `mode`, `current_phase`, `phase_status` (in-progress | blocked | awaiting-hitl | exited), `entered_at`, `next_phase` (computed at read), `blockers`, `tripwire_halt`, `last_actor`.
 - **`next_phase` = hybrid**: file stores inputs only (`mode`, `current_phase`, `phase_status`, optional flags like `needs_research`, `pro_gate_tripped`); the value is computed at read time by `/phase status` against `phases.md` §4 chains. No persisted pointer = no drift.
-- **Active-WI pointer**: `plan/ACTIVE` — single-line file containing `<N>_<slug>` or sentinel `<none>` (never absent). Written by agent at issue emission (Idea9). Cleared to `<none>` at WI close as part of the 3.33 retirement ritual. Q11 merge-gate lint: pointer must be empty OR point to an existing `plan/<N>_<slug>/` at PR-merge time. Worktree-scoped iff a worktree exists, else repo-global.
-- **Write discipline**: a single dedicated skill `/phase` owns all writes to `phase_status.md` + `plan/ACTIVE`. Phase skills never touch these files directly; they call `/phase enter <code>` and `/phase exit <code>`. Centralizes schema, lint, HITL ack, tripwire-halt guard.
-- **Fresh-session UX**: explicit — human runs `/phase status` to surface "current_phase, next_phase, blockers". No SessionStart hook, no CLAUDE.md auto-read (keeps always-on context cost low per Op14a). The skill reads `plan/ACTIVE` → reads that WI's `phase_status.md` → computes `next_phase`.
+- **Active-WI pointer**: `<artifacts>/ACTIVE` — single-line file containing `<N>_<slug>` or sentinel `<none>` (never absent). Written by agent at issue emission (Idea9). Cleared to `<none>` at WI close as part of the 3.33 retirement ritual. Q11 merge-gate lint: pointer must be empty OR point to an existing `<artifacts>/<N>_<slug>/` at PR-merge time. Worktree-scoped iff a worktree exists, else repo-global.
+- **Write discipline**: a single dedicated skill `/phase` owns all writes to `phase_status.md` + `<artifacts>/ACTIVE`. Phase skills never touch these files directly; they call `/phase enter <code>` and `/phase exit <code>`. Centralizes schema, lint, HITL ack, tripwire-halt guard.
+- **Fresh-session UX**: explicit — human runs `/phase status` to surface "current_phase, next_phase, blockers". No SessionStart hook, no CLAUDE.md auto-read (keeps always-on context cost low per Op14a). The skill reads `<artifacts>/ACTIVE` → reads that WI's `phase_status.md` → computes `next_phase`.
 - **Idea8/Idea11 ownership**: a new `/triage-idea` skill (Idea8 = entry triage, Idea11 = mid-WI re-triage). Reusable: re-triage after 3.37 tripwire halt calls `/triage-idea --remode` alone, no re-distillation. Reverses the original carve-out only in the sense that Idea8–11 now have a skill home — `distill-idea` keeps its single responsibility (goal distillation).
 - **Resulting `ide` chain by mode**:
-  - direct-edit: `/phase enter ide` → `/triage-idea` → `/phase exit ide` (no `plan/<WI>/` created; issue body is the record).
+  - direct-edit: `/phase enter ide` → `/triage-idea` → `/phase exit ide` (no `<artifacts>/<WI>/` created; issue body is the record).
   - mini / full: `/phase enter ide` → `/triage-idea` → `/distill-idea` → `/phase exit ide`.
   - mid-WI re-triage (Idea11): `/triage-idea --remode` standalone.
 
@@ -142,7 +144,7 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
 - **A-table**: `A12. /phase` (subcommands enter/exit/status) — covers W15a below. `A13. /triage-idea` — covers Idea8 + Idea11; called from `/phase enter ide` and standalone mid-WI.
 - **B-table**: B1 routing-step-enforcer remains valid but its scope narrows — `/phase` skill is primary enforcement; B1 becomes the belt-and-suspenders hook that nags when a phase skill exits without calling `/phase exit`.
 - **C-table**: `Cn. phase_status.md template` (`tpl/tpl_phase_status.md`) — frontmatter + `Current` block schema + history-section format.
-- **W-table**: **W15a. Phase Transition Mechanism** — implements `/phase`, `/triage-idea`, `plan/ACTIVE` contract, `tpl_phase_status.md`. W15 reverts from `done` → `wip` (Idea8–11 skill home now in scope under W15a; `distill-idea` rework already pending from 2026-05-22 follow-up above).
+- **W-table**: **W15a. Phase Transition Mechanism** — implements `/phase`, `/triage-idea`, `<artifacts>/ACTIVE` contract, `tpl_phase_status.md`. W15 reverts from `done` → `wip` (Idea8–11 skill home now in scope under W15a; `distill-idea` rework already pending from 2026-05-22 follow-up above).
 - **D-table**: open question — does `status_idea.md` (Idea7) get folded into `phase_status.md`, or do both coexist with a pointer? Tentative: fold, with Idea7 rewritten to point at `phase_status.md`'s `Current` block.
 
 **Enforcement chain (target):**
@@ -154,7 +156,7 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
 
 **Follow-up checklist (fresh session):**
 
-- [x] Add A-table row **A12. `/phase`** (subcommands `enter` / `exit` / `status`; sole writer of `phase_status.md` + `plan/ACTIVE`). Source doc: this section. Workflow ref: W15a.
+- [x] Add A-table row **A12. `/phase`** (subcommands `enter` / `exit` / `status`; sole writer of `phase_status.md` + `<artifacts>/ACTIVE`). Source doc: this section. Workflow ref: W15a.
 - [x] Add A-table row **A13. `/triage-idea`** (Idea8 entry triage + Idea11 mid-WI re-triage; `--remode` flag for standalone use). Source doc: `gr/gr_idea.md` Idea8–Idea11. Workflow ref: W15, W15a.
 - [x] Add C-table row **`tpl_phase_status.md`** at `tpl/tpl_phase_status.md` — frontmatter + `Current` block schema + history-section format (B-style, reverse-chrono). Used by: A12, A13. Workflow ref: W15a.
 - [x] Add D-table open question: **Idea7 `status_idea.md` migration** — fold into `phase_status.md` (tentative) vs. coexist with pointer. Blocks A12 schema lock-in.
@@ -172,9 +174,9 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
 - [x] visualize phase chains
   - render `phases.md` §4 sequence as an interactive diagram (not static ASCII)
   - show per-phase skill status (todo/wip/done/blocked) from `coding_plan.md` Phase Skills table
-  - highlight current phase from `plan/ACTIVE` + `phase_status.md` `Current` block
+  - highlight current phase from `<artifacts>/ACTIVE` + `phase_status.md` `Current` block
   - show optional phases (`res`, `pro`) as conditional branches, gated by their entry flags (`needs_research`, `pro_gate_tripped`)
-  - **lightest viable form**: a single-file HTML page (`phase-diagram.html` in repo root, next to `phases.md`) generated by a skill that reads `phases.md` + `coding_plan.md` + `plan/ACTIVE` — no server, no framework, open in browser
+  - **lightest viable form**: a single-file HTML page (`phase-diagram.html` in repo root, next to `phases.md`) generated by a skill that reads `phases.md` + `coding_plan.md` + `<artifacts>/ACTIVE` — no server, no framework, open in browser
   - **blocked by**: A12 (`/phase`) for live state; usable before A12 as a static build-progress view
 
 - [x] create status skill
@@ -186,7 +188,7 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
     2. wire into a `/status` skill that: parses Phase Skills table → builds `-SkillsJson` → invokes scripts → formats dashboard markdown
     3. register as user-invocable skill in CLAUDE.md
   - **scripts** (all emit JSON, all deterministic — see spec for full interfaces):
-    - `Get-ActiveWI.ps1` — reads `plan/ACTIVE` + `phase_status.md` YAML frontmatter → `{wi, current_phase, phase_status, mode, blockers, tripwire_halt, error}`
+    - `Get-ActiveWI.ps1` — reads `<artifacts>/ACTIVE` + `phase_status.md` YAML frontmatter → `{wi, current_phase, phase_status, mode, blockers, tripwire_halt, error}`
     - `Get-SkillFreshness.ps1` — git timestamp comparison: source docs vs `skills/output/<name>.md` and `skills/input/<name>-in.md` → per-skill `{stale_compiled, stale_input, cmd}`
     - `Get-MapAndTestFreshness.ps1` — rule-skill map staleness (`gr/*.md` vs `skills/rule_skill_map.md`) + test fixture staleness (`skills/test/<name>/` vs source docs)
     - `Get-NextAction.ps1` — consumes outputs of above 3 scripts → priority-ordered action list
@@ -195,8 +197,8 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
     - format final dashboard as markdown (sections: Current WI, Skill Freshness, Next Action)
     - handle "A12 not yet built" warning: check `skills/output/phase.md` existence; if missing, skip WI block + print warning
   - **current WI + phase** (requires A12):
-    - read `plan/ACTIVE` → resolve `plan/<WI>/phase_status.md` → print `current_phase`, `phase_status`, `mode`, `blockers`, `tripwire_halt`
-    - if `plan/ACTIVE` = `<none>`: report "no active WI — run `/triage-idea` to start"
+    - read `<artifacts>/ACTIVE` → resolve `<artifacts>/<WI>/phase_status.md` → print `current_phase`, `phase_status`, `mode`, `blockers`, `tripwire_halt`
+    - if `<artifacts>/ACTIVE` = `<none>`: report "no active WI — run `/triage-idea` to start"
     - if A12 not yet built: skip this block, print warning
   - **skill freshness check** — for each skill listed in coding_plan.md Phase Skills table:
     - compare `git log -1 --format=%aI` of its source docs (`gr/*.md`, `wf/*.md`, `phases.md`) vs `skills/output/<name>.md`
@@ -214,6 +216,9 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
     5. all skills current → find first `- [ ]` item in coding_plan.md work items section, print it as next step
   - **output format**: sections (Current WI, Skill Freshness, Next Action); each stale item one line with the exact command to fix it
   
+- [ ] re-create skills in output/skills (because of artifacts output folder dynamic now)
+
+- [ ] check the workflow, specifically phases/idea - seems to be inconsistend or strange (start with triage instead of distill)
 
 - [ ] create/update test files for triage-idea
 
@@ -229,7 +234,7 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
 - [ ] Create test cases at `skills/test/triage-idea/` covering: 4-axis scoring on a trivial brief (expect `direct-edit`), tripwire surface in brief (expect `full`), `--remode` mid-WI upgrade with audit-trail append, HITL ack absent (must reject silent pick), Idea10 exploration-budget overflow (expect auto-recommend `mini`).
 - [ ] Build A13 (`/triage-idea`) end-to-end via `/make-skill triage-idea` (chains `draft-skill-input` → `compile-skill` → test against `skills/test/triage-idea/`, loops until pass). Source docs: `gr/gr_idea.md` Idea8–11, `guardrails.md` §3.29 + §3.37, this section.
 - [ ] Draft `tpl/tpl_phase_status.md` (the template itself, not the C-row tracking it).
-- [ ] Define `plan/ACTIVE` Q11 merge-gate lint rule — add to `gr/gr_qa.md` (Q11 family) or wherever merge-gate checks live.
+- [ ] Define `<artifacts>/ACTIVE` Q11 merge-gate lint rule — add to `gr/gr_qa.md` (Q11 family) or wherever merge-gate checks live.
 - [ ] Re-check `distill-idea-in.md` carve-out (L23, L51): with A13 now owning Idea8–11, the carve-out language stays valid — confirm no rewording needed when redrafting per 2026-05-22 follow-up above.
 
 ---
@@ -272,6 +277,9 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
 
 - [x] /grill-with-docs session 2026-05-22 — entry-triage design settled (C1–C12). **Migrated to detail docs** same session: Idea8/9/10/11 (`gr/gr_idea.md`), TDD11 (`gr/gr_tdd.md`), Aln19 (`gr/gr_algn.md`), Q12 (`gr/gr_qa.md`), new core rule §3.37 + amended §3.22/§3.29 + §9 parallel rows (`guardrails.md`). `plan/coding_workflow/idea.md` cleaned (Settled Contracts section replaced with pointer); `idea_ref.md` re-snapshotted from the cleaned file as the distill-idea baseline.
 
+- [x] run-skill stores output in `./skills/run/plan/` (caller-supplied `<artifacts>` = `./skills/run/plan`)
+
+
 - [ ] **Follow-up from 2026-05-22 contracts:** redraft `skills/input/distill-idea-in.md` via `draft-skill-input` against the *updated* anchor docs (Idea8–Idea11 now in gr_idea.md); recompile via `compile-skill`. Diff new `distill-idea` output against `plan/coding_workflow/idea_ref.md` to assess skill-chain determinism. The skill's job is goal distillation; if its output diverges from the goals in `idea_ref.md`, that is the signal — not whether C1–C12 appear in the output (they live in detail docs now, not in `idea.md`).
 
 - [ ] implement all required skills,hooks,templates including related test files and, if needed, additional workflow files etc. for the below workflow table 
@@ -293,7 +301,7 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
 | W15  | Idea Phase                     | **NEW Phase**              | wip             | A11, A13 | —          | none — Pocock phase 1 (7-phases doc)         | `ide` added, `gr_idea.md` drafted,    |
 |      |                                |                            |                 |          |            |                                              | §3.32 + §4.19 added; Idea8/11 home    |
 |      |                                |                            |                 |          |            |                                              | now in A13 (`/triage-idea`)           |
-| W15a | Phase Transition Mechanism     | **NEW Infra**              | todo            | A12, A13 | B1 (later) | none                                         | `/phase` skill + `plan/ACTIVE` +      |
+| W15a | Phase Transition Mechanism     | **NEW Infra**              | todo            | A12, A13 | B1 (later) | none                                         | `/phase` skill + `<artifacts>/ACTIVE` +      |
 |      |                                |                            |                 |          |            |                                              | `tpl_phase_status.md`; see section    |
 |      |                                |                            |                 |          |            |                                              | "Phase Transition Mechanism" above    |
 | W1   | Grilled Design Concept         | Phase                      | todo            | A1       | —          | `grill-me` + `grill-with-docs`               | `aln` (exists)                        |
@@ -476,17 +484,17 @@ Beyond the 12 items, the orchestration that chains them (e.g., `align-concept` �
   - **4-axis triage matrix** — design ambiguity, blast radius, reversibility, existing test coverage; tripwire surfaces (3.29 list) force `full`. HITL approves mode. (C3)
   - **TDD exemption** — direct-edit may skip TDD if existing tests sufficient + HITL confirm; behavior-free changes verified by lint + spell-check + HITL eyeball. Amends 3.22 / TDD3. (C4)
   - **Issue invariant** — exactly one issue exists before any `ral`; `ide` emits for direct-edit/mini, `iss` for full. (C5)
-  - **`plan/<WI>/` scales with mode** — direct-edit creates no files (issue is the record); mini/full create `plan/<N>_<slug>/`. (C6)
+  - **`<artifacts>/<WI>/` scales with mode** — direct-edit creates no files (issue is the record); mini/full create `<artifacts>/<N>_<slug>/`. (C6)
   - **Tripwire mid-task → halt + HITL** — candidate core rule 3.37; agent halts, does not edit, human picks narrow-with-approval or re-enter `ide`. (C7)
   - **Collapsed `aln` for mini** — keeps Aln6 sweep + Aln17 context.md/ADR; reduces grilling to 1–3 questions; skips Aln18 transcript file. Auto-upgrades to full on Adr1/Pro1/>3 unresolved. (C8)
-  - **`<WI>` = `<N>_<slug>`** — N = GH issue number, slug from title; dedupe via `gh issue list --search` shown to human before create; `plan/INDEX.md` auto-generated. (C9)
+  - **`<WI>` = `<N>_<slug>`** — N = GH issue number, slug from title; dedupe via `gh issue list --search` shown to human before create; `<artifacts>/INDEX.md` auto-generated. (C9)
   - **`ide`-time exploration** — B10 reused with ≤5-read budget; budget exceeded → mode upgrade to mini. (C10)
   - **`qa` shape by mode** — direct-edit folds qa into ral's verification record; mini = short qa; full = full qa. (C11)
   - **Mode transitions** — symmetric: either direction, either party may propose, HITL approves either direction. Silent change AND silent suppression both forbidden (3.16). (C12)
-- Category: **Phase** — code `ide`. Sequential, **first** phase before `aln`. HITL only (Idea4). Output is `plan/<WI>/idea.md` + `plan/<WI>/status_idea.md` (Idea7); retired with `plan/<WI>/` at WI close per 3.33. PRD Goals section folds it but does not replace it. **Note (2026-05-22):** for `direct-edit` mode the GH issue body replaces `idea.md` — no `plan/<WI>/` files created (C6).
+- Category: **Phase** — code `ide`. Sequential, **first** phase before `aln`. HITL only (Idea4). Output is `<artifacts>/<WI>/idea.md` + `<artifacts>/<WI>/status_idea.md` (Idea7); retired with `<artifacts>/<WI>/` at WI close per 3.33. PRD Goals section folds it but does not replace it. **Note (2026-05-22):** for `direct-edit` mode the GH issue body replaces `idea.md` — no `<artifacts>/<WI>/` files created (C6).
 - Pocock reference: phase 1 of the 7-phases doc (see [the-7-phases-of-ai-driven-development.md](the-7-phases-of-ai-driven-development.md)) — no named Pocock skill.
 - Exists: phase `ide` in [phases.md](phases.md); core rule 3.32 + routing §4.19 in [guardrails.md](guardrails.md); detail doc [gr/gr_idea.md](gr/gr_idea.md) (Idea1–Idea7).
-- Missing: skill `distill-idea` (new **A11**) — distills brief / ticket / Slack note into 3–6 major goals, strips detail leaks (Idea2), captures negative goals (Idea3), HITL by construction (Idea4); collapse handling per 3.29 when upstream brief already names goals explicitly (one-line confirmation instead of full pass); writes `plan/<WI>/idea.md` + `plan/<WI>/status_idea.md` per Idea7.
+- Missing: skill `distill-idea` (new **A11**) — distills brief / ticket / Slack note into 3–6 major goals, strips detail leaks (Idea2), captures negative goals (Idea3), HITL by construction (Idea4); collapse handling per 3.29 when upstream brief already names goals explicitly (one-line confirmation instead of full pass); writes `<artifacts>/<WI>/idea.md` + `<artifacts>/<WI>/status_idea.md` per Idea7.
 - Template **C8** (`tpl/tpl_idea.md`) for `idea.md` + `status_idea.md` shape — consumed by A1/A2/A6/A8 + Q11 lint, so canonical shape lives outside the skill.
 - Next: build A11 skill; wire as front of skill chain (A11 → A1 align-concept → A2 compose-prd → ...).
 
@@ -531,7 +539,7 @@ Beyond the 12 items, the orchestration that chains them (e.g., `align-concept` �
 - Category: **Phase**.
 - Pocock reference skills: **`grill-me`** (`skills/productivity/grill-me/SKILL.md`) — generic Socratic stress-test; **`grill-with-docs`** (`skills/engineering/grill-with-docs/SKILL.md`) — same but reads `CONTEXT.md` / `docs/adr/` and updates them inline. A1 needs **both bodies**: `grill-me` for the questioning loop, `grill-with-docs` for the doc-anchored module-map update (Aln12).
 - Walkthrough excerpt: §0:13:45–0:21:43 (gamification brief demo) — historical only.
-- Exists: phase `aln` (`phases.md`); guardrail set `gr/gr_algn.md` (incl. **Aln17 — `/grill-with-docs` pattern**: stream-write `context.md` + B11 sub-agent ADR drafting; **Aln18** — alignment transcript artifact `plan/<WI>/algn_transcript.md`); skill A1 `align-concept` listed; doc-layer contracts `gr/gr_adr.md` and `gr_domain_language.md` L8+L9 (W16 + W17); core rule 3.36 (retire alignment transcripts).
+- Exists: phase `aln` (`phases.md`); guardrail set `gr/gr_algn.md` (incl. **Aln17 — `/grill-with-docs` pattern**: stream-write `context.md` + B11 sub-agent ADR drafting; **Aln18** — alignment transcript artifact `<artifacts>/<WI>/algn_transcript.md`); skill A1 `align-concept` listed; doc-layer contracts `gr/gr_adr.md` and `gr_domain_language.md` L8+L9 (W16 + W17); core rule 3.36 (retire alignment transcripts).
 - Contracts settled (this round, /grill-with-docs session 2026-05-21):
   - **idea.md consumption (Aln8 extended):** verbatim anchor + per-branch goal-tag + close-time coverage report; uncovered goals block close.
   - **Aln6 / B5 hidden-constraint sweep:** always fires at close; three outcomes (covered / not-applicable / missing); `missing` blocks close.
@@ -540,7 +548,7 @@ Beyond the 12 items, the orchestration that chains them (e.g., `align-concept` �
   - **Aln17 #5 context.md write:** stream-write, one diff per change, HITL accept per change; no batching.
   - **Aln17 #6 ADR gate:** ask first ("ADR-worthy?") on plausible Adr1 hit; draft on yes.
   - **Aln17 #7 ADR drafting:** dispatch B11 sub-agent with verbatim-rationale brief; synchronous wait; grilling pauses until draft returns.
-  - **C4 transcript artifact (Aln18):** `plan/<WI>/algn_transcript.md` + `plan/<WI>/status_algn_transcript.md`; retire with WI per 3.36.
+  - **C4 transcript artifact (Aln18):** `<artifacts>/<WI>/algn_transcript.md` + `<artifacts>/<WI>/status_algn_transcript.md`; retire with WI per 3.36.
   - **AFK domain-transcript path (Aln11):** dropped — `aln` is HITL-only per 3.20; Aln11 transcripts are HITL inputs only, not an AFK execution path.
 - Missing: skill implementation (A1) wiring the settled contracts above; B5, B10, B11 sub-skills/hooks; C4 artifact lint. Note: existing `skills/input/align-concept-in.noPocockRef.md` and `skills/output/*.md` deliberately not touched (user constraint) — future `align-concept-in.md` will fold the settled contracts in.
 - Pocock skill as additional input: load **both** SKILL.md bodies (`grill-me` + `grill-with-docs`) and the walkthrough excerpt when authoring A1 via `draft-skill-input` → `compile-skill`.
@@ -681,7 +689,7 @@ Beyond the 12 items, the orchestration that chains them (e.g., `align-concept` �
 ### A12. `phase` skill (cross-phase infrastructure)
 
 - Status: todo.
-- Behavior: subcommands `enter` / `exit` / `status`. Sole writer of `phase_status.md` + `plan/ACTIVE`. Checks on enter: mode legal for phase? Previous phase exited cleanly? Tripwire-halt clear? Checks on exit: phase-required artifacts present? HITL ack recorded? `status` is read-only, computes `next_phase` from inputs against `phases.md` §4 chains.
+- Behavior: subcommands `enter` / `exit` / `status`. Sole writer of `phase_status.md` + `<artifacts>/ACTIVE`. Checks on enter: mode legal for phase? Previous phase exited cleanly? Tripwire-halt clear? Checks on exit: phase-required artifacts present? HITL ack recorded? `status` is read-only, computes `next_phase` from inputs against `phases.md` §4 chains.
 - Source: coding_plan.md §"Phase Transition Mechanism"; `phases.md` §4; `guardrails.md` §3.37.
 - Workflow ref: W15a.
 - Template: C9 (`tpl/tpl_phase_status.md`).
@@ -790,10 +798,10 @@ Beyond the 12 items, the orchestration that chains them (e.g., `align-concept` �
 ### C4. Alignment-transcript artifact format
 
 - Status: **contract settled (2026-05-21)**; lint hook pending.
-- Decision: **repo, WI-scoped, retire-with-WI** — parallel to C8 (idea file). Paired files under `plan/<WI>/`: `algn_transcript.md` (body) + `status_algn_transcript.md` (frontmatter: `status: wip|done`, `updated`, `owner-issue`). Retired with `plan/<WI>/` at WI close per Core rule 3.36 (added 2026-05-21), verified by Q11 lint.
+- Decision: **repo, WI-scoped, retire-with-WI** — parallel to C8 (idea file). Paired files under `<artifacts>/<WI>/`: `algn_transcript.md` (body) + `status_algn_transcript.md` (frontmatter: `status: wip|done`, `updated`, `owner-issue`). Retired with `<artifacts>/<WI>/` at WI close per Core rule 3.36 (added 2026-05-21), verified by Q11 lint.
 - Rationale: transcript is the *source* artifact (A2 / A6 / A8 consume it); PRD composed by A2 is its *destination summary* per Aln13. Agent consumption is cheaper against a local repo file than via issue-tracker API. Pattern parallels C8 (idea.md) exactly — paired body + status frontmatter, `owner-issue` provenance, WI-lifetime retirement.
 - Source: `gr/gr_algn.md` Aln18; `guardrails.md` §3.36 + §9 parallel row.
-- Used by: A1 (emits), A2 / A6 / A8 (consume); Q11 lint (`status_algn_transcript.md` frontmatter + `plan/<WI>/` deletion check).
+- Used by: A1 (emits), A2 / A6 / A8 (consume); Q11 lint (`status_algn_transcript.md` frontmatter + `<artifacts>/<WI>/` deletion check).
 - Next: A1 emit-path during build; Q11 lint extension to cover `algn_transcript.md` shape (mechanical, after skill substrate D1 settled).
 
 ### C6. Prototype variant presentation template
@@ -808,7 +816,7 @@ Beyond the 12 items, the orchestration that chains them (e.g., `align-concept` �
 - Status: **done** (2026-05-20).
 - Artifact: [`tpl/tpl_idea.md`](tpl/tpl_idea.md).
 - Purpose: single parse target for downstream consumers (A1 align-concept reads goals to anchor grilling; A2 compose-prd folds into PRD Goals section; A6 review verifies coverage; A8 qa runs Q11 retirement lint).
-- Shape: pair of files under `plan/<WI>/` — `idea.md` (markdown body, no frontmatter, `# Goals` heading, numbered 3–6 entries with `Non-goal:` prefix for negatives, optional `Stripped detail:` lines) + `status_idea.md` (frontmatter only: `status`, `updated`, `owner-issue`).
+- Shape: pair of files under `<artifacts>/<WI>/` — `idea.md` (markdown body, no frontmatter, `# Goals` heading, numbered 3–6 entries with `Non-goal:` prefix for negatives, optional `Stripped detail:` lines) + `status_idea.md` (frontmatter only: `status`, `updated`, `owner-issue`).
 - Source: [gr_idea.md](gr/gr_idea.md) Idea7; retirement [guardrails.md](guardrails.md) §3.33; Q11 lint [gr_qa.md](gr/gr_qa.md).
 - Used by: A11 (emits), A1, A2, A6, A8 (consume); Q11 lint (status_idea.md frontmatter).
 - Workflow ref: W15.

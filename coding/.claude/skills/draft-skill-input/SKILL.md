@@ -58,9 +58,9 @@ No third option. No `cancel` / `proceed` / `skip`. Human cancels via Esc.
    - Do NOT copy Pocock rules verbatim into our Rules section. Treat Pocock content as **comparison material**: where our `gr/*.md` already covers a rule, prefer ours; where Pocock has substantive coverage our `gr/*.md` lacks AND it survives the Step 6 phase-strip, surface the gap to the human in Step 8 — flag it, do not silently adopt.
    - Reconciliation rule: if Pocock SKILL.md and our `gr/*.md` directly contradict, the draft must NOT silently pick one. List the contradiction in Step 8 review output for human decision.
 
-5. **Classify: planning-artifact or not.** Default: **planning-artifact**. Almost every phase skill writes a single canonical file under `plan/<WI>/<artifact>.md` + `plan/<WI>/status_<artifact>.md` with the open/wip/done state machine (Idea7-style; see also 3.27, 3.33). The draft input file MUST include:
-   - the artifact filename (`plan/<WI>/<artifact>.md`),
-   - the status file (`plan/<WI>/status_<artifact>.md`) with full frontmatter spec — `status: open|wip|done`, `updated: <YYYY-MM-DD>`, `owner-issue: #NNN` on the anchor artifact (idea); inherited by siblings,
+5. **Classify: planning-artifact or not.** Default: **planning-artifact**. Almost every phase skill writes a single canonical file under `<artifacts>/<WI>/<artifact>.md` + `<artifacts>/<WI>/status_<artifact>.md` with the open/wip/done state machine (Idea7-style; see also 3.27, 3.33). The draft input file MUST include:
+   - the artifact filename (`<artifacts>/<WI>/<artifact>.md`),
+   - the status file (`<artifacts>/<WI>/status_<artifact>.md`) with full frontmatter spec — `status: open|wip|done`, `updated: <YYYY-MM-DD>`, `owner-issue: #NNN` on the anchor artifact (idea); inherited by siblings,
    - an explicit **owner-issue prompt at write-time** in the artifact-write step — required field; `#TBD` placeholder allowed only with a warning that merge-gate retirement enforcement will fail until replaced,
    - the state-machine rules: refresh `updated:` every run, default `wip` on write, human-only `done`, never auto-flip, `done → wip` on reopen, no writes on failure.
 

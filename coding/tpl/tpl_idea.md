@@ -7,22 +7,22 @@ Source: [`gr/gr_idea.md`](../gr/gr_idea.md) Idea1–Idea7; retirement [`guardrai
 Emitted by: `distill-idea` skill (A11, W15).
 Consumed by: `align-concept` (A1, anchors grilling), `compose-prd` (A2, folds into PRD Goals section), `review` (A6, verifies coverage), `qa` (A8, Q11 retirement lint).
 
-Format: two paired files per work-item, both under `plan/<WI>/`. The idea file is markdown-only (no frontmatter); the status file is frontmatter-only (no body required).
+Format: two paired files per work-item, both under `<artifacts>/<WI>/`. The idea file is markdown-only (no frontmatter); the status file is frontmatter-only (no body required).
 
 ---
 
 ## File Naming
 
 ```
-plan/<WI>/idea.md           # the goal list
-plan/<WI>/status_idea.md    # WI anchor: status + owner-issue
+<artifacts>/<WI>/idea.md           # the goal list
+<artifacts>/<WI>/status_idea.md    # WI anchor: status + owner-issue
 ```
 
 `<WI>` is a human-confirmed snake_case slug, derived from the brief and confirmed via HITL before the first write. Examples: `ai_mail`, `fix_crash_abc`, `add_oauth_provider`. Single `idea.md` per WI — never a shared `idea.md`, never multiple idea files under one WI.
 
 ---
 
-## `plan/<WI>/idea.md` Shape
+## `<artifacts>/<WI>/idea.md` Shape
 
 Plain markdown. No YAML frontmatter. Body structure:
 
@@ -50,7 +50,7 @@ Stripped detail: <another>
 
 ---
 
-## `plan/<WI>/status_idea.md` Shape
+## `<artifacts>/<WI>/status_idea.md` Shape
 
 Frontmatter only. Body optional and ignored by consumers.
 
@@ -68,7 +68,7 @@ owner-issue: "#NNN"
 | ------------- | -------- | --------------------------------------------------------------------------------------- |
 | `status`      | yes      | `open` = placeholder created, no artifact yet; `wip` = artifact written; `done` = human accepted as complete. |
 | `updated`     | yes      | ISO date. Refreshed on every run of the skill, regardless of state change.              |
-| `owner-issue` | yes      | The WI's owning external issue (GitHub / Linear / etc.) — anchors 3.33 retirement. Sibling artifacts under `plan/<WI>/` inherit this owner; do not duplicate the field in sibling status files. |
+| `owner-issue` | yes      | The WI's owning external issue (GitHub / Linear / etc.) — anchors 3.33 retirement. Sibling artifacts under `<artifacts>/<WI>/` inherit this owner; do not duplicate the field in sibling status files. |
 
 ### State Machine
 
@@ -82,18 +82,18 @@ owner-issue: "#NNN"
 
 ## Retirement (3.33)
 
-`plan/<WI>/` retires as a unit when the WI's owner-issue closes:
+`<artifacts>/<WI>/` retires as a unit when the WI's owner-issue closes:
 
-1. The PR that closes the owner-issue MUST delete the entire `plan/<WI>/` directory in the same diff.
-2. `qa` runs the Q11 check #3: walks every `plan/<WI>/` in the working tree, reads `status_idea.md` owner-issue, fails the merge if the owner is closing and the directory survives.
-3. Partial retirement is a fail-now finding — deleting `idea.md` while leaving sibling artifacts (or vice versa) under `plan/<WI>/` blocks the merge.
+1. The PR that closes the owner-issue MUST delete the entire `<artifacts>/<WI>/` directory in the same diff.
+2. `qa` runs the Q11 check #3: walks every `<artifacts>/<WI>/` in the working tree, reads `status_idea.md` owner-issue, fails the merge if the owner is closing and the directory survives.
+3. Partial retirement is a fail-now finding — deleting `idea.md` while leaving sibling artifacts (or vice versa) under `<artifacts>/<WI>/` blocks the merge.
 
 ---
 
 ## Anti-Patterns
 
-- Writing the goal list to any path other than `plan/<WI>/idea.md` — no `idea/<topic>.md`, no shared `idea.md`, no `<WI>.md` at the repo root.
-- Inlining the goal list into the PRD without first writing `plan/<WI>/idea.md` — downstream skills (A1, A6, A8) expect the file at the canonical path.
+- Writing the goal list to any path other than `<artifacts>/<WI>/idea.md` — no `idea/<topic>.md`, no shared `idea.md`, no `<WI>.md` at the repo root.
+- Inlining the goal list into the PRD without first writing `<artifacts>/<WI>/idea.md` — downstream skills (A1, A6, A8) expect the file at the canonical path.
 - Adding YAML frontmatter to `idea.md`. The pair is split deliberately: idea body is human-edited markdown; status is machine-parsed frontmatter.
 - Adding a body to `status_idea.md`. Consumers read frontmatter only.
 - Auto-flipping `status` to `done` after a successful write. Human-only `done`.

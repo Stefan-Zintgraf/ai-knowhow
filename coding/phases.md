@@ -114,13 +114,13 @@ ide → aln → [res?] → [pro?] → prd → iss → (ral | par) → qa ─┬�
 
 `ide` triages every entering task into one of three modes (per Idea8):
 
-- **`direct-edit`** — `ide → ral → qa`. No `plan/<N>_<slug>/` folder; issue body is the record.
-- **`mini`** — `ide → aln`(collapsed per Aln19) `→ ral → qa`. Issue + `plan/<N>_<slug>/idea.md` + collapsed `aln` artifacts.
+- **`direct-edit`** — `ide → ral → qa`. No `<artifacts>/<N>_<slug>/` folder; issue body is the record.
+- **`mini`** — `ide → aln`(collapsed per Aln19) `→ ral → qa`. Issue + `<artifacts>/<N>_<slug>/idea.md` + collapsed `aln` artifacts.
 - **`full`** — the diagram above.
 
 Mode is recorded as a label on the GH issue (`mode:direct-edit` / `mode:mini` / `mode:full`) and may be changed mid-WI per Idea11.
 
-`ide` produces 3–6 major goals from the raw brief. Collapses to a one-line confirmation when the upstream brief already names goals explicitly (per 3.29). For `mini`/`full`, the goal list is persisted as `plan/<N>_<slug>/idea.md` (per Idea7) — the WI anchor that downstream phases read; PRD Goals fold it but do not replace it, and the artifact retires with `plan/<N>_<slug>/` at WI close (3.33). For `direct-edit`, no `plan/<N>_<slug>/` is created — the GH issue body carries the brief.
+`ide` produces 3–6 major goals from the raw brief. Collapses to a one-line confirmation when the upstream brief already names goals explicitly (per 3.29). For `mini`/`full`, the goal list is persisted as `<artifacts>/<N>_<slug>/idea.md` (per Idea7) — the WI anchor that downstream phases read; PRD Goals fold it but do not replace it, and the artifact retires with `<artifacts>/<N>_<slug>/` at WI close (3.33). For `direct-edit`, no `<artifacts>/<N>_<slug>/` is created — the GH issue body carries the brief.
 
 `res` is optional and fires only when `aln` surfaces external-dependency unknowns (see `gr/gr_res.md` Apply When). `res` may also fire mid-`aln` if grilling cannot proceed without the facts.
 
@@ -134,7 +134,7 @@ Mode is recorded as a label on the GH issue (`mode:direct-edit` / `mode:mini` / 
 
 ## 5. Phase–Skill Binding
 
-Each phase is backed by one or more skills. The `/phase` skill (A12) orchestrates transitions — no phase skill writes `phase_status.md` or `plan/ACTIVE` directly.
+Each phase is backed by one or more skills. The `/phase` skill (A12) orchestrates transitions — no phase skill writes `phase_status.md` or `<artifacts>/ACTIVE` directly.
 
 ### Skill map
 
@@ -155,7 +155,7 @@ Each phase is backed by one or more skills. The `/phase` skill (A12) orchestrate
 ### Transition protocol: `/phase` (A12)
 Skills: phase
 
-A single orchestration skill owns all phase state. Phase skills never write `phase_status.md` or `plan/ACTIVE` directly.
+A single orchestration skill owns all phase state. Phase skills never write `phase_status.md` or `<artifacts>/ACTIVE` directly.
 
 | Subcommand       | What it does                                                                                                  |
 | ---------------- | ------------------------------------------------------------------------------------------------------------- |
@@ -163,7 +163,7 @@ A single orchestration skill owns all phase state. Phase skills never write `pha
 | `/phase exit <code>`  | Guards exit: phase-required artifacts present? HITL ack recorded? Updates `phase_status.md` history.          |
 | `/phase status`       | Read-only. Computes `next_phase` from `mode` + `current_phase` + flags (`needs_research`, `pro_gate_tripped`) against §4 chains. |
 
-State file: `plan/<WI>/phase_status.md` (template: `tpl/tpl_phase_status.md`). Active-WI pointer: `plan/ACTIVE`.
+State file: `<artifacts>/<WI>/phase_status.md` (template: `tpl/tpl_phase_status.md`). Active-WI pointer: `<artifacts>/ACTIVE`.
 
 ### `ide` phase call sequence by mode
 

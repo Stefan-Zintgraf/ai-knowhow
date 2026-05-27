@@ -83,10 +83,10 @@ In order:
    Present the draft to the human for edit / accept / reject. Do not finalize until the human explicitly accepts. Forbidden: auto-accepting, treating acknowledgement as acceptance.
 
 7. **Artifact write** (if planning-artifact).
-   Derive a candidate `<WI>` slug from the input (short, snake_case — e.g. `ai_mail`, `fix_crash_abc`). Prompt the human: "Work-item slug? Suggested: `<slug>`." Accept confirm or override. Then prompt: "Owner issue (e.g. `#123`)?" — required; the WI anchor for 3.33 retirement. If the human has no issue number yet, accept a placeholder `#TBD` and explicitly warn that Q11 merge-gate retirement enforcement will fail until replaced. Create `plan/<WI>/` if missing. Write the confirmed output to `plan/<WI>/<artifact>.md`.
+   Derive a candidate `<WI>` slug from the input (short, snake_case — e.g. `ai_mail`, `fix_crash_abc`). Prompt the human: "Work-item slug? Suggested: `<slug>`." Accept confirm or override. Then prompt: "Owner issue (e.g. `#123`)?" — required; the WI anchor for 3.33 retirement. If the human has no issue number yet, accept a placeholder `#TBD` and explicitly warn that Q11 merge-gate retirement enforcement will fail until replaced. Create `<artifacts>/<WI>/` if missing. Write the confirmed output to `<artifacts>/<WI>/<artifact>.md`.
 
 8. **Status file write** (if planning-artifact).
-   Write/update `plan/<WI>/status_<artifact>.md` with frontmatter:
+   Write/update `<artifacts>/<WI>/status_<artifact>.md` with frontmatter:
    ```
    ---
    status: open|wip|done

@@ -1,5 +1,6 @@
 param(
-    [string]$RepoRoot = "."
+    [string]$RepoRoot = ".",
+    [string]$ArtifactsRoot = "plan"
 )
 
 $ErrorActionPreference = "Stop"
@@ -8,7 +9,7 @@ function Out-Result($hash) {
     $hash | ConvertTo-Json -Compress
 }
 
-$activePath = Join-Path $RepoRoot "plan/ACTIVE"
+$activePath = Join-Path $RepoRoot "$ArtifactsRoot/ACTIVE"
 
 if (-not (Test-Path $activePath)) {
     Out-Result @{ found = $false; wi = $null; current_phase = $null; phase_status = $null; mode = $null; blockers = @(); tripwire_halt = $false; entered_at = $null; last_actor = $null; error = "no_active_file" }
@@ -22,7 +23,7 @@ if ($wi -eq "<none>" -or $wi -eq "") {
     exit 0
 }
 
-$phaseStatusPath = Join-Path $RepoRoot "plan/$wi/phase_status.md"
+$phaseStatusPath = Join-Path $RepoRoot "$ArtifactsRoot/$wi/phase_status.md"
 
 if (-not (Test-Path $phaseStatusPath)) {
     Out-Result @{ found = $true; wi = $wi; current_phase = $null; phase_status = $null; mode = $null; blockers = @(); tripwire_halt = $false; entered_at = $null; last_actor = $null; error = "phase_status_missing" }
