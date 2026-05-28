@@ -156,7 +156,7 @@ The `qa` phase has three shapes determined by the mode `ide` selected (gr_idea.m
 
 **`direct-edit` mode — folded `qa`.**
 
-`qa` is not invoked as a separate phase. The verification record produced under TDD11 (gr_tdd.md) — existing-tests-green-pre/post for carve-out A, or lint + spell-check + HITL eyeball for carve-out B — **is** the `qa` step. The human's confirmation of that record is the Q9 verdict. The verdict is recorded on the GH issue body, not in a separate `qa` notes file. Q11 retirement checks still apply if the WI later expanded to include `<artifacts>/<N>_<slug>/` artifacts; if no folder exists, Q11 checks 1 and 3 are no-ops, check 2 still runs.
+`qa` is not invoked as a separate phase. The verification record produced under TDD11 (gr_tdd.md) — existing-tests-green-pre/post for carve-out A, or lint + spell-check + HITL eyeball for carve-out B — **is** the `qa` step. The human's confirmation of that record is the Q9 verdict. The verdict is recorded on the GH issue body, not in a separate `qa` notes file. Q11 retirement checks still apply if the WI later expanded to include `<artifacts>/<slug>/` artifacts; if no folder exists, Q11 checks 1 and 3 are no-ops, check 2 still runs.
 
 **`mini` mode — short `qa`.**
 

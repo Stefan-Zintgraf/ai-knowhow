@@ -6,7 +6,6 @@ Provided state:
 **plan/3_fix-button-color/phase_status.md:**
 ---
 wi: 3_fix-button-color
-issue: 3
 mode: direct-edit
 current_phase: ide
 phase_status: exited

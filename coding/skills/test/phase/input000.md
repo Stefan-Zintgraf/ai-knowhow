@@ -6,7 +6,6 @@ Provided state (files on disk at invocation time):
 **plan/7_add-dark-mode/phase_status.md:**
 ---
 wi: 7_add-dark-mode
-issue: 7
 mode: mini
 current_phase: ide
 phase_status: exited

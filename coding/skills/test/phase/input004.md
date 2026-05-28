@@ -6,7 +6,6 @@ Provided state:
 **plan/5_refactor-auth/phase_status.md:**
 ---
 wi: 5_refactor-auth
-issue: 5
 mode: mini
 current_phase: aln
 phase_status: blocked

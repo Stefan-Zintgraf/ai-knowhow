@@ -114,13 +114,13 @@ ide → aln → [res?] → [pro?] → prd → iss → (ral | par) → qa ─┬�
 
 `ide` triages every entering task into one of three modes (per Idea8):
 
-- **`direct-edit`** — `ide → ral → qa`. No `<artifacts>/<N>_<slug>/` folder; issue body is the record.
-- **`mini`** — `ide → aln`(collapsed per Aln19) `→ ral → qa`. Issue + `<artifacts>/<N>_<slug>/idea.md` + collapsed `aln` artifacts.
+- **`direct-edit`** — `ide → ral → qa`. No `<artifacts>/<slug>/` folder; issue body is the record.
+- **`mini`** — `ide → aln`(collapsed per Aln19) `→ ral → qa`. Issue + `<artifacts>/<slug>/idea.md` + collapsed `aln` artifacts.
 - **`full`** — the diagram above.
 
 Mode is recorded as a label on the GH issue (`mode:direct-edit` / `mode:mini` / `mode:full`) and may be changed mid-WI per Idea11.
 
-`ide` produces 3–6 major goals from the raw brief. Collapses to a one-line confirmation when the upstream brief already names goals explicitly (per 3.29). For `mini`/`full`, the goal list is persisted as `<artifacts>/<N>_<slug>/idea.md` (per Idea7) — the WI anchor that downstream phases read; PRD Goals fold it but do not replace it, and the artifact retires with `<artifacts>/<N>_<slug>/` at WI close (3.33). For `direct-edit`, no `<artifacts>/<N>_<slug>/` is created — the GH issue body carries the brief.
+`ide` produces 3–6 major goals from the raw brief. Collapses to a one-line confirmation when the upstream brief already names goals explicitly (per 3.29). For `mini`/`full`, the goal list is persisted as `<artifacts>/<slug>/idea.md` (per Idea7) — the WI anchor that downstream phases read; PRD Goals fold it but do not replace it, and the artifact retires with `<artifacts>/<slug>/` at WI close (3.33). For `direct-edit`, no `<artifacts>/<slug>/` is created — the GH issue body carries the brief.
 
 `res` is optional and fires only when `aln` surfaces external-dependency unknowns (see `gr/gr_res.md` Apply When). `res` may also fire mid-`aln` if grilling cannot proceed without the facts.
 

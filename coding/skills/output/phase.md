@@ -1,14 +1,14 @@
 ---
 compiled-against: compile-skill v2.1.0
 source: skills/input/phase-in.md
-source-sha256: 045c53f9ef8e49be673a8519ddfd18056571f1784611aa1c3994b625b5b66a56
-source-modified: 2026-05-27 11:53
-compiled: 2026-05-27 11:58
+source-sha256: c15b586b158e74c3af0ba3e7b805d692d0c61cb79dee7ed2640ab52719444e24
+source-modified: 2026-05-28 12:00
+compiled: 2026-05-28 12:00
 ---
 
 # `/phase` — Phase Transition Orchestrator
 
-This skill orchestrates phase transitions for a work item (WI) via four subcommands: `enter`, `exit`, `status`, and `resolve-tripwire`. It is the **sole writer** of `<artifacts>/<WI>/phase_status.md` and `<artifacts>/ACTIVE` (`<artifacts>` is an optional parameter defaulting to `plan`). No other skill or agent writes these files — phase skills call `/phase enter <code>` before starting their work and `/phase exit <code>` when done. The skill does not execute phase work, produce planning artifacts, decide workflow mode, or invoke other skills.
+This skill orchestrates phase transitions for a work item (WI) via five subcommands: `enter`, `exit`, `status`, `resolve-tripwire`, and `close`. It is the **sole writer** of `<artifacts>/<WI>/phase_status.md` and `<artifacts>/ACTIVE` (`<artifacts>` is an optional parameter defaulting to `plan`). No other skill or agent writes these files — phase skills call `/phase enter <code>` before starting their work and `/phase exit <code>` when done; `close` flips `<artifacts>/ACTIVE` to `<none>` at WI close. The skill does not execute phase work, produce planning artifacts, decide workflow mode, or invoke other skills.
 
 ## Hard Rules
 
@@ -16,7 +16,6 @@ This skill orchestrates phase transitions for a work item (WI) via four subcomma
 2. **B-style state file.** `<artifacts>/<WI>/phase_status.md` has a mutable `Current` block at the top and a reverse-chronological `## History` section (newest on top).
 3. **Current block schema.** Exactly these fields:
    - `wi` — work-item folder name (`<N>_<slug>`)
-   - `issue` — GH issue number (`#NNN`)
    - `mode` — `direct-edit` | `mini` | `full`
    - `current_phase` — active phase code, or empty if between phases
    - `phase_status` — `in-progress` | `blocked` | `awaiting-hitl` | `exited`
@@ -41,15 +40,16 @@ This skill orchestrates phase transitions for a work item (WI) via four subcomma
 11. **History immutability.** Once a history entry is appended, it is never modified or deleted.
 12. **No artifact production.** `/phase` writes only `phase_status.md` and `<artifacts>/ACTIVE` — no planning artifacts, no issues, no code.
 13. **No skill invocation.** `/phase` does not call other skills; it is called by them.
+14. **WI close clears `<artifacts>/ACTIVE`.** `/phase close` is the sole operation that flips `<artifacts>/ACTIVE` from `<N>_<slug>` to `<none>`. Refuses unless `phase_status` = `exited` AND `current_phase` is the terminal legal phase for `mode` AND `tripwire_halt` = `false`. Appends a `close` history entry, sets `last_actor: human`. Does NOT delete `<artifacts>/<WI>/` — folder retirement is a separate ritual owned by a different skill.
 
 ## Steps
 
-1. **Parse subcommand.** Accept one of: `enter <code>`, `exit <code>`, `status`, `resolve-tripwire <reason>`. If unrecognized, return `status: error, reason: unknown subcommand "<input>"`.
+1. **Parse subcommand.** Accept one of: `enter <code>`, `exit <code>`, `status`, `resolve-tripwire <reason>`, `close`. If unrecognized, return `status: error, reason: unknown subcommand "<input>"`.
 
 2. **Resolve active WI.** Read `<artifacts>/ACTIVE`.
    - If `<none>` and subcommand is `status`: report "no active WI" and return `status: ok, wi: none`.
    - If `<none>` and subcommand is `enter`, `exit`, or `resolve-tripwire`: return `status: error, reason: no active WI — set <artifacts>/ACTIVE first`.
-   - Otherwise: read `<artifacts>/<WI>/phase_status.md`. If the file is absent and the subcommand is `enter` (first phase of the WI), create it with a default Current block — populate `wi` and `issue` from `<artifacts>/ACTIVE` context, set `phase_status: exited` so the "previous exited" guard passes on first entry, set `tripwire_halt: false`, `needs_research: false`, `pro_gate_tripped: false`.
+   - Otherwise: read `<artifacts>/<WI>/phase_status.md`. If the file is absent and the subcommand is `enter` (first phase of the WI), create it with a default Current block — populate `wi` from `<artifacts>/ACTIVE`, take `mode` and `current_phase` from the `enter` arguments, set `phase_status: exited` so the "previous exited" guard passes on first entry, set `tripwire_halt: false`, `needs_research: false`, `pro_gate_tripped: false`.
 
 3. **Execute subcommand.**
 
@@ -118,7 +118,27 @@ This skill orchestrates phase transitions for a work item (WI) via four subcomma
 
    g. **Return** `status: ok, tripwire_resolved: true`.
 
-4. **Write state file.** For `enter`, `exit`, and `resolve-tripwire`: rewrite the Current block in-place; append history entry at the top of `## History`. For `status`: no writes.
+   ### `close`
+
+   a. **Active WI present.** If `<artifacts>/ACTIVE` = `<none>`, return `status: rejected, reason: no active WI to close`.
+
+   b. **Tripwire-halt clear.** If `tripwire_halt` = `true`, return `status: rejected, reason: tripwire halt active — call /phase resolve-tripwire <reason> before close`.
+
+   c. **Phase exited.** If `phase_status` ≠ `exited`, return `status: rejected, reason: current phase <current_phase> is <phase_status>, not exited`.
+
+   d. **Terminal phase.** Look up the mode's legal-phase sequence in the Mode-Phase Legality table. If `current_phase` is not the last entry of that sequence (i.e. `qa` in all current modes), return `status: rejected, reason: current phase <current_phase> is not the terminal phase for mode <mode>`.
+
+   e. **Append history entry.** Add at the top of `## History`: `<timestamp> | close | <mode>`.
+
+   f. **Update Current block.** Set `last_actor: human`.
+
+   g. **Write** `<artifacts>/<WI>/phase_status.md`.
+
+   h. **Overwrite** `<artifacts>/ACTIVE` with the literal string `<none>`.
+
+   i. **Return** `status: ok, closed: <wi>`.
+
+4. **Write state file.** For `enter`, `exit`, `resolve-tripwire`, and `close`: rewrite the Current block in-place; append history entry at the top of `## History`. For `close`, additionally overwrite `<artifacts>/ACTIVE` with `<none>`. For `status`: no writes.
 
 ## Mode-Phase Legality
 
@@ -177,6 +197,7 @@ Each subcommand returns a structured signal:
 - `status` (normal): `status: ok` + full Current block fields + computed `next_phase`
 - `status` (tripwire active): `status: ok, halted: true` + blockers + resolution options (no `next_phase`)
 - `resolve-tripwire`: `status: ok, tripwire_resolved: true`
+- `close`: `status: ok, closed: <wi>`
 
 **Rejection** (guard failed):
 - `status: rejected, reason: <specific guard that failed>`

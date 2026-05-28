@@ -331,7 +331,7 @@ Detail: [gr/gr_res.md](gr/gr_res.md)
 
 ### 4.19 Idea
 
-Purpose: entry phase. Triages incoming work into one of three modes (`direct-edit` / `mini` / `full`) via the 4-axis matrix (Idea8); for `mini`/`full` modes also distills the brief into 3–6 major goals anchoring `aln` grilling; emits the GH issue and bootstraps `<artifacts>/<N>_<slug>/` for `mini`/`full` (Idea9).
+Purpose: entry phase. Triages incoming work into one of three modes (`direct-edit` / `mini` / `full`) via the 4-axis matrix (Idea8); for `mini`/`full` modes also distills the brief into 3–6 major goals anchoring `aln` grilling; emits the GH issue and bootstraps `<artifacts>/<slug>/` for `mini`/`full` (Idea9).
 Apply when: **every** task entering the workflow — `ide` always runs. Triggered by a brief, Slack note, ticket, vague backlog item, or any direct ask; before any downstream phase begins.
 Detail: [gr/gr_idea.md](gr/gr_idea.md) (Idea1–Idea11)
 

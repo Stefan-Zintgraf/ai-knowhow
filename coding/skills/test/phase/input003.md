@@ -6,7 +6,6 @@ Provided state:
 **plan/12_payment-gateway/phase_status.md:**
 ---
 wi: 12_payment-gateway
-issue: 12
 mode: full
 current_phase: aln
 phase_status: exited

@@ -6,7 +6,6 @@ Provided state:
 **plan/9_redesign-onboarding/phase_status.md:**
 ---
 wi: 9_redesign-onboarding
-issue: 9
 mode: mini
 current_phase: ide
 phase_status: in-progress

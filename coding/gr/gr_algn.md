@@ -214,7 +214,7 @@ When `ide` selects `mini` mode (gr_idea.md Idea8), `aln` runs in a collapsed pro
 
 **Skipped (with explicit substitute):**
 
-- **Aln18 transcript artifact** — no separate `<artifacts>/<N>_<slug>/algn_transcript.md` file. The 1–3 questions, recommendations, answers, and Aln6 sweep result are written **inline in the GH issue body** under a `## Alignment` heading. The issue is the transcript for `mini` mode. `status_algn_transcript.md` is not created.
+- **Aln18 transcript artifact** — no separate `<artifacts>/<slug>/algn_transcript.md` file. The 1–3 questions, recommendations, answers, and Aln6 sweep result are written **inline in the GH issue body** under a `## Alignment` heading. The issue is the transcript for `mini` mode. `status_algn_transcript.md` is not created.
 
 **Auto-upgrade triggers.** During collapsed `aln`, if any of the following surfaces, the agent stops and proposes upgrade to `full` mode per Idea11:
 
@@ -223,7 +223,7 @@ When `ide` selects `mini` mode (gr_idea.md Idea8), `aln` runs in a collapsed pro
 - Pro1 prototype gate (irreversibility OR cost asymmetry — see gr_proto.md).
 - Aln6 hidden-constraint sweep marks any class `missing` that requires deep grilling to resolve.
 
-The human approves the upgrade per Idea11. If approved, the work already done in collapsed `aln` is preserved — the inline issue-body transcript is migrated into a freshly created `<artifacts>/<N>_<slug>/algn_transcript.md` (Aln18) and grilling resumes in full shape.
+The human approves the upgrade per Idea11. If approved, the work already done in collapsed `aln` is preserved — the inline issue-body transcript is migrated into a freshly created `<artifacts>/<slug>/algn_transcript.md` (Aln18) and grilling resumes in full shape.
 
 **Forbidden:**
 

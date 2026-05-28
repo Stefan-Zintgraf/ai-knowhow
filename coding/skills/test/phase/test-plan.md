@@ -5,8 +5,8 @@ source_docs:
   - phases.md
   - guardrails.md
   - gr/gr_idea.md
-source_docs_hash: 61f91f6015ce8d45a023b998e22cf1054c5c4571
-generated: 2026-05-27
+source_docs_hash: 7b500a52
+generated: 2026-05-28
 ---
 
 # Test Plan: phase
@@ -85,6 +85,30 @@ generated: 2026-05-27
 - **Output:** `output008.md`
 - [x] Pass
 
+### 009 — close from terminal phase clears plan/ACTIVE and appends close history row
+
+- **Category:** happy-path
+- **Requirements:** PTM1 ([coding_plan.md](coding_plan.md)), PTM2 ([coding_plan.md](coding_plan.md)), PTM5 ([coding_plan.md](coding_plan.md)), PTM-close ([coding_plan.md](coding_plan.md) L133–L134)
+- **Input:** `input009.md`
+- **Output:** `output009.md`
+- [x] Pass
+
+### 010 — close rejected because current_phase is not the terminal phase for mode
+
+- **Category:** rejection
+- **Requirements:** PTM-close terminal-phase guard ([coding_plan.md](coding_plan.md) L133–L134), PTM7 ([coding_plan.md](coding_plan.md) / [phases.md](phases.md)), PTM1 ([coding_plan.md](coding_plan.md))
+- **Input:** `input010.md`
+- **Output:** `output010.md`
+- [x] Pass
+
+### 011 — close rejected because phase_status is in-progress, not exited
+
+- **Category:** rejection
+- **Requirements:** PTM-close exited guard ([coding_plan.md](coding_plan.md) L133–L134), PTM1 ([coding_plan.md](coding_plan.md)), PTM2 ([coding_plan.md](coding_plan.md))
+- **Input:** `input011.md`
+- **Output:** `output011.md`
+- [x] Pass
+
 ## Manual Tests
 
 ### M000 — phase skills do not write phase_status.md or plan/ACTIVE directly
@@ -115,19 +139,6 @@ generated: 2026-05-27
 - **Pass criteria:** GH issue body contains resolution record; `tripwire_halt` cleared only after human decision; no silent scope expansion occurred
 - [ ] Pass
 
-### M002 — enter in direct-edit mode triggers Idea9 issue dedupe search before ral
-
-- **Category:** happy-path
-- **Requirements:** Idea9 ([gr_idea.md](gr/gr_idea.md))
-- **Why manual:** requires live `gh issue list` search with real GH state and a human picking from deduplication results — cannot be deterministically simulated in a fixture
-- **Test procedure:**
-  1. Enter `ide` phase for a `direct-edit` WI
-  2. Observe that the skill runs `gh issue list --search "<key terms>"` and surfaces top 3-5 matches
-  3. Human picks "new issue" or selects an existing one
-  4. Confirm exactly one issue exists before any `ral` invocation
-- **Pass criteria:** dedupe search runs before issue creation; human selects or creates exactly one issue; mode label `mode:direct-edit` applied to the issue
-- [ ] Pass
-
 ## Untestable Requirements
 
 None. All requirements covered by automated or manual tests above.
@@ -138,23 +149,25 @@ None. All requirements covered by automated or manual tests above.
 
 | Requirement | Test(s) |
 |-------------|---------|
-| PTM1 | 000, 001, 007, M000 |
-| PTM2 | 000, 001, 007 |
+| PTM1 | 000, 001, 007, 009, 010, 011, M000 |
+| PTM2 | 000, 001, 007, 009, 011 |
 | PTM3 | 000 |
 | PTM4 | 003 |
-| PTM5 | 000 |
+| PTM5 | 000, 009 |
 | PTM6 | 002 |
-| PTM7 (mode-legal) | 000, 005 |
+| PTM7 (mode-legal) | 000, 005, 010 |
 | PTM7 (prev-exited) | 000 |
 | PTM7 (tripwire-halt) | 008 |
 | PTM8 (artifacts) | 001, 006 |
 | PTM8 (HITL ack) | 001 |
 | PTM9 | 002, 003, 004 |
+| PTM-close (terminal-phase guard) | 009, 010 |
+| PTM-close (exited guard) | 009, 011 |
+| PTM-close (ACTIVE clear) | 009 |
 | PH4.2 | 003 |
 | PH4.3 | 003 |
 | PH4.4 | 005 |
 | PH5.3 | M000 |
 | G3.37 | 004, 007, 008, M001 |
 | Idea8 | 005 |
-| Idea9 | M002 |
 | Idea11 | M001 |

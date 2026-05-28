@@ -128,9 +128,9 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
 **Settled decisions:**
 
 - **State file**: `<artifacts>/<WI>/phase_status.md` — B-style (mutable `Current` block + reverse-chronological history, newest on top). Schema lives in a new template (see C-row below).
-- **`Current` block fields**: `wi`, `issue`, `mode`, `current_phase`, `phase_status` (in-progress | blocked | awaiting-hitl | exited), `entered_at`, `next_phase` (computed at read), `blockers`, `tripwire_halt`, `last_actor`.
+- **`Current` block fields**: `wi`, `mode`, `current_phase`, `phase_status` (in-progress | blocked | awaiting-hitl | exited), `entered_at`, `next_phase` (computed at read), `blockers`, `tripwire_halt`, `last_actor`. **No `issue` field** — issue numbers (when they exist) live on GH itself, surfaced via `gh issue list --search "<WI>"` or the `owner-issue` provenance field in artifact frontmatter. Rationale: in `full` mode the issue is not created until `iss` (post-PRD); a brand-new idea may have no GH repo at all; the `to-issues` skill is the canonical issue creator. Storing the number on `phase_status.md` forced a chicken/egg dance and an artificial pre-`iss` issue stub. Resolved 2026-05-28.
 - **`next_phase` = hybrid**: file stores inputs only (`mode`, `current_phase`, `phase_status`, optional flags like `needs_research`, `pro_gate_tripped`); the value is computed at read time by `/phase status` against `phases.md` §4 chains. No persisted pointer = no drift.
-- **Active-WI pointer**: `<artifacts>/ACTIVE` — single-line file containing `<N>_<slug>` or sentinel `<none>` (never absent). Written by agent at issue emission (Idea9). Cleared to `<none>` at WI close as part of the 3.33 retirement ritual. Q11 merge-gate lint: pointer must be empty OR point to an existing `<artifacts>/<N>_<slug>/` at PR-merge time. Worktree-scoped iff a worktree exists, else repo-global.
+- **Active-WI pointer**: `<artifacts>/ACTIVE` — single-line file containing the WI folder name (see WI-naming note below) or sentinel `<none>` (never absent). Written by agent at WI bootstrap (first `/phase enter ide`, before any issue exists). Cleared to `<none>` at WI close as part of the 3.33 retirement ritual. Q11 merge-gate lint: pointer must be empty OR point to an existing `<artifacts>/<WI>/` at PR-merge time. Worktree-scoped iff a worktree exists, else repo-global.
 - **Write discipline**: a single dedicated skill `/phase` owns all writes to `phase_status.md` + `<artifacts>/ACTIVE`. Phase skills never touch these files directly; they call `/phase enter <code>` and `/phase exit <code>`. Centralizes schema, lint, HITL ack, tripwire-halt guard.
 - **Fresh-session UX**: explicit — human runs `/phase status` to surface "current_phase, next_phase, blockers". No SessionStart hook, no CLAUDE.md auto-read (keeps always-on context cost low per Op14a). The skill reads `<artifacts>/ACTIVE` → reads that WI's `phase_status.md` → computes `next_phase`.
 - **Idea8/Idea11 ownership**: a new `/triage-idea` skill (Idea8 = entry triage, Idea11 = mid-WI re-triage). Reusable: re-triage after 3.37 tripwire halt calls `/triage-idea --remode` alone, no re-distillation. Reverses the original carve-out only in the sense that Idea8–11 now have a skill home — `distill-idea` keeps its single responsibility (goal distillation).
@@ -219,14 +219,27 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
 
 - [~] re-create skills in output/skills (because of artifacts output folder dynamic now)
   - [x] phase, next: test-skill phase, DONE
-  - [ ] adjust test-skill skill: 
-     - [ ] provide option to keep human out of the loop (test success/fail judged by AI agent)
-     - [ ] when human is in the loop, provide option to keep human out of the loop for remaining tests
+  - [x] adjust test-skill skill: 
+     - [x] provide option to keep human out of the loop (test success/fail judged by AI agent)
+     - [x] when human is in the loop, provide option to keep human out of the loop for remaining tests
+     - [x] adjust make-skill to automatically use the option to keep the human out of the loop (to automate the whole process)
+  - [x] gh issue problem (chicken/egg?) — **resolved 2026-05-28**: `issue` field dropped from `phase_status.md` Current block schema. Issue numbers live on GH; phase skill no longer tracks them. See settled-decisions update above.
+    - [x] **follow-up resolved 2026-05-28**: `<WI>` = `<slug>` (slug-only). Issue number resolved via `status_idea.md` `owner-issue:` frontmatter (set at `ide` for direct-edit/mini, at `iss` for full); `<artifacts>/INDEX.md` auto-regenerates the slug→issue map. C9 + C6 rewritten in this file; gr_idea.md (Idea7/8/9), gr_algn.md (Aln19), gr_qa.md (Q11 ref), phases.md, guardrails.md §4.19 updated. **Action**: rerun `/make-skill distill-idea` + `/make-skill triage-idea` + `/make-skill phase` to propagate to compiled skills (current `skills/output/phase.md`, `skills/input/phase-in.md`, `skills/input/distill-idea-in.md` still encode `<N>_<slug>`).
+  - [ ] Next step: rerun /make-skill distill-idea, /make-skill triage-idea, /make-skill phase to propagate to compiled skills.
+  - [ ] check what would be the skill sequence to execute on a new idea (phase, triage-idea, distill-idea, ...)
+    - [ ] adjust it, if it makes no sense or is confusing (/phase next?)
   - [ ] triage-idea: test-skill triage-idea
   - [ ] distill-idea: test-skill distill-idea
 
 
 - [ ] check the workflow, specifically phases/idea - seems to be inconsistend or strange (start with triage instead of distill)
+
+- [ ] auto-workflow mode
+  - [ ] define hard and soft dependencies (which item in grXXX depends on what item in grYYY etc.)
+  - [ ] what kind of decision (Project Manager, Customer, Financial Guy, Prototyper, ...)
+  - [ ] who makes the final decision for the next step
+  - [ ] types of artifacts and decisions (create issue, implement issue, test issue, QA, create plan, alignment, idea refining, ...)
+  - [ ] no skills, but dynamically created set of items (from grXXX etc.) for next step (e.g. create issue, create planning aritfact, ...)
 
 - [ ] create/update test files for triage-idea
 
@@ -492,10 +505,10 @@ Beyond the 12 items, the orchestration that chains them (e.g., `align-concept` �
   - **4-axis triage matrix** — design ambiguity, blast radius, reversibility, existing test coverage; tripwire surfaces (3.29 list) force `full`. HITL approves mode. (C3)
   - **TDD exemption** — direct-edit may skip TDD if existing tests sufficient + HITL confirm; behavior-free changes verified by lint + spell-check + HITL eyeball. Amends 3.22 / TDD3. (C4)
   - **Issue invariant** — exactly one issue exists before any `ral`; `ide` emits for direct-edit/mini, `iss` for full. (C5)
-  - **`<artifacts>/<WI>/` scales with mode** — direct-edit creates no files (issue is the record); mini/full create `<artifacts>/<N>_<slug>/`. (C6)
+  - **`<artifacts>/<WI>/` scales with mode** — direct-edit creates no files (issue is the record); mini/full create `<artifacts>/<slug>/`. (C6)
   - **Tripwire mid-task → halt + HITL** — candidate core rule 3.37; agent halts, does not edit, human picks narrow-with-approval or re-enter `ide`. (C7)
   - **Collapsed `aln` for mini** — keeps Aln6 sweep + Aln17 context.md/ADR; reduces grilling to 1–3 questions; skips Aln18 transcript file. Auto-upgrades to full on Adr1/Pro1/>3 unresolved. (C8)
-  - **`<WI>` = `<N>_<slug>`** — N = GH issue number, slug from title; dedupe via `gh issue list --search` shown to human before create; `<artifacts>/INDEX.md` auto-generated. (C9)
+  - **`<WI>` = `<slug>`** — slug-only folder name (kebab-case from brief title or, when available, GH issue title; stopwords stripped; ≤40 chars; collision suffix `-2`, `-3`). Folder name does not encode the issue number — issue is resolved via `status_idea.md` `owner-issue:` frontmatter (set at `ide` for direct-edit/mini, at `iss` for full). Dedupe via `gh issue list --search` shown to human before any issue create; `<artifacts>/INDEX.md` auto-generated as the slug→issue map. (C9)
   - **`ide`-time exploration** — B10 reused with ≤5-read budget; budget exceeded → mode upgrade to mini. (C10)
   - **`qa` shape by mode** — direct-edit folds qa into ral's verification record; mini = short qa; full = full qa. (C11)
   - **Mode transitions** — symmetric: either direction, either party may propose, HITL approves either direction. Silent change AND silent suppression both forbidden (3.16). (C12)

@@ -59,14 +59,14 @@ Skills: distill-idea
 
 The goal list is the *starter* for grilling, not a substitute for it. `aln` walks every branch of every goal. An agent that reads a goal list and jumps to `prd` violates 3.21. The goal list narrows what `aln` grills over; it does not shortcut the grilling.
 
-### Idea7. Persisted to `<artifacts>/<N>_<slug>/idea.md`
+### Idea7. Persisted to `<artifacts>/<slug>/idea.md`
 Skills: distill-idea
 
-The confirmed goal list is written to `<artifacts>/<N>_<slug>/idea.md`. `<N>` is the GH issue number assigned at issue-emit time (Idea9); `<slug>` is kebab-case from the issue title, stopwords stripped, truncated ≤40 chars. Single artifact per WI, never a shared `idea.md`, never multiple idea files under one WI. Downstream phases (`aln`, `prd`, `iss`, ...) read this file as the anchor for goals; PRD Goals section folds it but does not replace it.
+The confirmed goal list is written to `<artifacts>/<slug>/idea.md`. `<slug>` is kebab-case derived from the brief title (or, for `direct-edit`/`mini` where the issue lands at `ide`, the GH issue title), stopwords stripped, truncated ≤40 chars. The folder name does **not** encode the GH issue number — the issue is resolved via `status_idea.md` `owner-issue:` frontmatter (set at `ide` for direct-edit/mini, populated at `iss` for `full`). Single artifact per WI, never a shared `idea.md`, never multiple idea files under one WI. Downstream phases (`aln`, `prd`, `iss`, ...) read this file as the anchor for goals; PRD Goals section folds it but does not replace it.
 
 **Mode-dependent persistence (per Idea8):**
-- `full` and `mini` modes — create `<artifacts>/<N>_<slug>/idea.md` + `status_idea.md` as defined below.
-- `direct-edit` mode — **no `<artifacts>/<N>_<slug>/` files created.** The GH issue body carries the brief verbatim and the verification record; that is the complete WI record. Retirement (3.33) does not apply because no files exist. No `status_idea.md` flip needed.
+- `full` and `mini` modes — create `<artifacts>/<slug>/idea.md` + `status_idea.md` as defined below.
+- `direct-edit` mode — **no `<artifacts>/<slug>/` files created.** The GH issue body carries the brief verbatim and the verification record; that is the complete WI record. Retirement (3.33) does not apply because no files exist. No `status_idea.md` flip needed.
 
 Slug collision: if two open issues would generate the same slug after truncation, suffix `-2`, `-3` and surface to human at folder-create time.
 
@@ -80,7 +80,7 @@ owner-issue: #NNN   # the WI's owning issue/PR; anchors 3.33 retirement
 ---
 ```
 
-Refresh `updated:` on every run. Default `status: wip` on a successful artifact write. Human-only `done` — never auto-flip. On reopen, flip `done → wip` (never back to `open`). `owner-issue:` is mandatory — `status_idea.md` is the WI anchor; sibling artifacts under `<artifacts>/<WI>/` inherit the same owner, so the field is set once here. On failure runs (under-budget, human rejected, no human acceptance), write nothing — no `idea.md`, no `status_idea.md`.
+Refresh `updated:` on every run. Default `status: wip` on a successful artifact write. Human-only `done` — never auto-flip. On reopen, flip `done → wip` (never back to `open`). `owner-issue:` is the WI's authoritative issue pointer — set to `#N` once the issue lands (at `ide` for `direct-edit`/`mini`, at `iss` for `full`); until then it is `pending` and `iss` is responsible for populating it. `status_idea.md` is the WI anchor; sibling artifacts under `<artifacts>/<WI>/` inherit the same owner, so the field is set once here. On failure runs (under-budget, human rejected, no human acceptance), write nothing — no `idea.md`, no `status_idea.md`.
 
 Retirement: the goal list is WI-scoped, not durable. Deleted with the rest of `<artifacts>/<WI>/` at WI close per 3.33 — same retirement model as 3.27 (research). Persistence is bounded; documentation-rot risk that 3.24 (PRD) and 3.27 (research) address is handled here by 3.33's close-time deletion, not by avoiding the artifact altogether.
 
@@ -89,8 +89,8 @@ Skills: triage-idea
 
 `ide` is the entry phase for **every** task. Its first act, before any goal distillation, is to triage the incoming brief and pick a workflow mode. Three modes:
 
-- **`direct-edit`** — `ide` → `ral` → `qa`. Skips `aln`/`prd`/`iss`. No `<artifacts>/<N>_<slug>/` files; issue body is the record. TDD exemption may apply per TDD11.
-- **`mini`** — `ide` → `aln`(collapsed per Aln19) → `ral` → `qa`. Issue + `<artifacts>/<N>_<slug>/idea.md` + collapsed `aln` artifacts.
+- **`direct-edit`** — `ide` → `ral` → `qa`. Skips `aln`/`prd`/`iss`. No `<artifacts>/<slug>/` files; issue body is the record. TDD exemption may apply per TDD11.
+- **`mini`** — `ide` → `aln`(collapsed per Aln19) → `ral` → `qa`. Issue + `<artifacts>/<slug>/idea.md` + collapsed `aln` artifacts.
 - **`full`** — `ide` → `aln` → [`res`?] → [`pro`?] → `prd` → `iss` → `ral`\|`par` → `qa`. Full pipeline.
 
 **Triage matrix (4 axes).** The agent scores each axis with the human present (HITL per Idea4):
@@ -119,15 +119,15 @@ Skills: triage-idea
 Before any `ral` invocation, **exactly one GH issue exists** for the WI. Emitter depends on mode (Idea8):
 
 - `direct-edit`, `mini` — `ide` emits the issue.
-- `full` — `iss` emits issue(s); `ide` emits no issue, only the `<artifacts>/<N>_<slug>/idea.md` anchor.
+- `full` — `iss` emits issue(s); `ide` emits no issue, only the `<artifacts>/<slug>/idea.md` anchor.
 
 **Dedupe protocol (before any issue create).** Agent runs `gh issue list --state open --search "<key terms from brief>"`, displays top 3–5 matches, human picks:
 
 - **new** — create new issue via `gh issue create --title --body --label ready-for-agent`; capture `#N` via `--json number`.
-- **link to #N** — reuse existing folder `<artifacts>/N_<existing-slug>/` if present, else create with current slug.
+- **link to #N** — reuse the existing folder if one is already mapped to `#N` in `<artifacts>/INDEX.md` (its `owner-issue:` in `status_idea.md` = `#N`); else create with the current slug and populate `owner-issue: #N`.
 - **abort** — `ide` exits; no issue, no folder; clean state.
 
-**Folder creation:** after issue create, `mkdir <artifacts>/<N>_<slug>/` for `mini`/`full`; for `direct-edit`, no folder.
+**Folder creation:** for `mini`, `mkdir <artifacts>/<slug>/` after issue create and write `owner-issue: #N` into `status_idea.md`. For `full`, `mkdir <artifacts>/<slug>/` at `ide` before any issue exists; `owner-issue:` is left blank/`pending` in `status_idea.md` and populated by `iss` when the issue lands. For `direct-edit`, no folder.
 
 **`<artifacts>/INDEX.md`** is auto-regenerated from `gh issue list --state open` + folder listing — never hand-maintained.
 
@@ -209,9 +209,9 @@ Once a mode is picked in `ide`, it can be changed (upgrade or downgrade) under t
 - Letting implementation detail (module names, API shapes) leak into the goal list.
 - Treating the goal list as the design — jumping from `ide` straight to `prd`.
 - Running `ide` AFK / via Ralph loop.
-- Writing the goal list anywhere other than `<artifacts>/<N>_<slug>/idea.md` — no `idea/<topic>.md`, no shared `idea.md`, no scattered locations. Single canonical path per WI.
+- Writing the goal list anywhere other than `<artifacts>/<slug>/idea.md` — no `idea/<topic>.md`, no shared `idea.md`, no scattered locations. Single canonical path per WI.
 - Auto-flipping `status_idea.md` to `done`. Human-only `done`.
-- Leaving `<artifacts>/<N>_<slug>/` behind after the WI closes (3.33 violation).
+- Leaving `<artifacts>/<slug>/` behind after the WI closes (3.33 violation).
 - Picking a mode silently (Idea8 violation) — mode pick is HITL by construction.
 - Skipping the triage step on "obviously trivial" tasks — every entry runs triage, even if it resolves in one turn.
 - Creating duplicate issues by skipping the Idea9 dedupe search.

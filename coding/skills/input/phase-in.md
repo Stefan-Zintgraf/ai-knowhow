@@ -16,7 +16,7 @@ feeds_into: [A1-align-concept, A2-compose-prd, A3-prd-to-dag, A4-afk-loop, A5-pa
 
 ## Scope
 
-The skill does **one** thing: orchestrate phase transitions by managing `<artifacts>/<WI>/phase_status.md` and `<artifacts>/ACTIVE` via four subcommands (`enter`, `exit`, `status`, `resolve-tripwire`).
+The skill does **one** thing: orchestrate phase transitions by managing `<artifacts>/<WI>/phase_status.md` and `<artifacts>/ACTIVE` via five subcommands (`enter`, `exit`, `status`, `resolve-tripwire`, `close`).
 
 `<artifacts>` is an optional input parameter, defaulting to `plan`. The skill accepts it and passes it through to all file operations.
 
@@ -79,7 +79,6 @@ Note: `gr/gr_idea.md` rules are annotated for `distill-idea` and `triage-idea`, 
 
 3. **Current block schema.** Exactly these fields:
    - `wi` — work-item folder name (`<N>_<slug>`)
-   - `issue` — GH issue number (`#NNN`)
    - `mode` — `direct-edit` | `mini` | `full`
    - `current_phase` — phase code currently active (or empty if between phases)
    - `phase_status` — `in-progress` | `blocked` | `awaiting-hitl` | `exited`
@@ -110,6 +109,8 @@ Note: `gr/gr_idea.md` rules are annotated for `distill-idea` and `triage-idea`, 
 9. **Tripwire halt blocks all entry; only `resolve-tripwire` clears it.** When `tripwire_halt: true`, `/phase enter` refuses all transitions. Human must call `/phase resolve-tripwire <reason>` — supplying the explicit decision (approve narrow edit or re-triage rationale). Resolution sets `tripwire_halt: false`, appends the decision to history, and updates the GH issue body.
 
 10. **History entries immutable.** Once appended, never modified or deleted. History is the audit trail.
+
+11. **WI close clears `<artifacts>/ACTIVE`.** `/phase close` is the sole operation that flips `<artifacts>/ACTIVE` from `<N>_<slug>` to `<none>`. Refuses unless `phase_status` = `exited` AND `current_phase` is the terminal legal phase for `mode` AND `tripwire_halt` = `false`. Appends a `close` history entry and sets `last_actor: human`. Does NOT delete `<artifacts>/<WI>/` — folder retirement is a separate ritual owned by a different skill.
 
 ### Reference Tables (inline verbatim in output skill)
 
@@ -159,12 +160,12 @@ Given `mode`, `current_phase` (with `phase_status: exited`), and flags:
 
 In order:
 
-1. **Parse subcommand.** Accept: `enter <code>`, `exit <code>`, `status`, `resolve-tripwire <reason>`. Unrecognized → return `status: error, reason: unknown subcommand "<input>"`.
+1. **Parse subcommand.** Accept: `enter <code>`, `exit <code>`, `status`, `resolve-tripwire <reason>`, `close`. Unrecognized → return `status: error, reason: unknown subcommand "<input>"`.
 
 2. **Resolve active WI.** Read `<artifacts>/ACTIVE`.
    - If `<none>` + subcommand `status` → report "no active WI" and return `status: ok, wi: none`.
    - If `<none>` + subcommand `enter`, `exit`, or `resolve-tripwire` → return `status: error, reason: no active WI — set <artifacts>/ACTIVE first`.
-   - Otherwise → read `<artifacts>/<WI>/phase_status.md`. If absent and subcommand is `enter` (first phase of WI), create with default Current block (fields from `<artifacts>/ACTIVE` + the `enter` arguments; `phase_status: exited` initially so the enter-guard "previous exited" check passes).
+   - Otherwise → read `<artifacts>/<WI>/phase_status.md`. If absent and subcommand is `enter` (first phase of WI), create with default Current block (`wi` from `<artifacts>/ACTIVE`; `mode` + `current_phase` from `enter` arguments; `phase_status: exited` initially so the enter-guard "previous exited" check passes; `tripwire_halt`, `needs_research`, `pro_gate_tripped` default `false`).
 
 3. **Branch on subcommand.**
 
@@ -198,7 +199,18 @@ In order:
    - Update GH issue body: append `Tripwire halt resolved: <reason>` via `gh issue edit --body-file` or `gh issue comment`.
    - Return `status: ok, tripwire_resolved: true`.
 
-4. **Write state file.** For `enter`, `exit`, and `resolve-tripwire`: rewrite Current block in-place; append history entry at top of `## History` section.
+   **`close`:**
+   - Verify `<artifacts>/ACTIVE` ≠ `<none>`. If already `<none>` → `status: rejected, reason: no active WI to close`.
+   - Verify `tripwire_halt` = `false`. If `true` → `status: rejected, reason: tripwire halt active — call /phase resolve-tripwire <reason> before close`.
+   - Verify `phase_status` = `exited`. If not → `status: rejected, reason: current phase <current_phase> is <phase_status>, not exited`.
+   - Verify `current_phase` is the terminal legal phase for `mode` (last entry in that mode's legal-phase sequence — `qa` in all current modes). If not → `status: rejected, reason: current phase <current_phase> is not the terminal phase for mode <mode>`.
+   - Append history entry: `<timestamp> | close | <mode>`.
+   - Update Current block: `last_actor: human`.
+   - Write `<artifacts>/<WI>/phase_status.md`.
+   - Overwrite `<artifacts>/ACTIVE` with the literal string `<none>`.
+   - Return `status: ok, closed: <wi>`.
+
+4. **Write state file.** For `enter`, `exit`, `resolve-tripwire`, and `close`: rewrite Current block in-place; append history entry at top of `## History` section. For `close`, additionally overwrite `<artifacts>/ACTIVE` with `<none>`.
 
 ---
 
@@ -213,6 +225,7 @@ In order:
 - **`<artifacts>/ACTIVE` always exists**: contains `<N>_<slug>` or `<none>`, never absent.
 - **HITL phases enforce ack**: exit from HITL-only phases requires recorded human acceptance.
 - **No artifact production beyond state files**: `/phase` writes only `phase_status.md` and `<artifacts>/ACTIVE`.
+- **WI close clears ACTIVE**: `close` is the sole operation that writes `<none>` to `<artifacts>/ACTIVE`; refuses unless terminal phase exited cleanly with tripwire clear.
 - **No skill invocation**: `/phase` does not call other skills; it is called by them.
 
 ---
@@ -221,7 +234,7 @@ In order:
 
 The output skill (`skills/output/phase.md`) must be a Claude Code SKILL.md — a single self-contained markdown prompt file that:
 
-- Opens with a one-paragraph role statement: this skill orchestrates phase transitions via four subcommands (`enter`, `exit`, `status`, `resolve-tripwire`) and is the sole writer of `phase_status.md` and `<artifacts>/ACTIVE`.
+- Opens with a one-paragraph role statement: this skill orchestrates phase transitions via five subcommands (`enter`, `exit`, `status`, `resolve-tripwire`, `close`) and is the sole writer of `phase_status.md` and `<artifacts>/ACTIVE`.
 - Contains an inlined **Hard Rules** block (Rules + Constraints above, brief imperative form). No "see doc §X" references.
 - Has an ordered **Steps** section mapping to Behaviors above.
 - Inlines the three reference tables (mode-phase legality, phase-required artifacts, next-phase computation) verbatim — core lookup data.
@@ -232,4 +245,4 @@ The output skill (`skills/output/phase.md`) must be a Claude Code SKILL.md — a
 
 ---
 
-**Open question (D10):** `status_idea.md` migration. Tentative: fold into `phase_status.md` Current block. If resolved differently, the Current block schema (Rule 3) needs revision. Current draft follows the tentative "fold" answer.
+**Resolved 2026-05-28:** `issue` field dropped from the Current block schema. Issue numbers live on GH itself — surfaced via `gh issue list --search "<WI>"` or the `owner-issue` provenance field in artifact frontmatter. Rationale: `full` mode emits its issue at `iss` (post-PRD), so a pre-`iss` issue field forced a chicken/egg dance. D10 (`status_idea.md` migration into `phase_status.md`) tentative answer "fold" still stands.

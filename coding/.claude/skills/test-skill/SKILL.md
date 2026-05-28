@@ -22,6 +22,12 @@ Execute a skill from `skills/output/` inline in the current conversation, option
 - **All checked** → ask human: "All tests previously passed. Run again?" — yes → uncheck all items in `test-plan.md`, proceed; no → exit, keep checkmarks.
 - **Some/all unchecked** → proceed with unchecked tests only.
 
+**Gate E — Judge mode (fixture mode only).** Unless the caller passed `auto_judge: true` (e.g. invoked from `make-skill`), ask via `AskUserQuestion`:
+- `Human-in-the-loop (default)` — human confirms every verdict (current behavior, with opt-out offer after first test).
+- `Auto-judge` — LLM judge verdict is accepted automatically; no human confirmation per test.
+
+Record the choice as `judge_mode` (`hitl` or `auto`). When `auto_judge: true` is passed by the caller, skip the question and set `judge_mode = auto`.
+
 ## Steps — Freeform Mode
 
 1. **Locate skill.** Read `skills/output/<name>.md`. If absent, stop and report missing file.
@@ -87,7 +93,17 @@ Execute a skill from `skills/output/` inline in the current conversation, option
       - The evaluation reasoning.
       - Verdict: PASS or FAIL with specific criteria cited.
 
-   k. **Human confirms.**
+   k. **Verdict resolution.** Branch on `judge_mode`:
+
+      **If `judge_mode = auto`:** Accept the LLM judge verdict directly. PASS → check the item in `test-plan.md` (`- [x] Pass`). FAIL → item stays unchecked. No human prompt. Continue to next test.
+
+      **If `judge_mode = hitl`:** Present verdict to human for confirmation.
+      - If this is NOT the first test in the run, skip straight to confirmation (the opt-out offer was already made or declined).
+      - If this IS the first test in the run AND more unchecked tests remain, use `AskUserQuestion` with three options:
+        - `Approve` — confirm this verdict, keep human-in-the-loop for remaining tests.
+        - `Approve + auto-judge remaining` — confirm this verdict, switch `judge_mode = auto` for all subsequent tests.
+        - `Reject` — override to FAIL.
+      - For subsequent tests (or if only one test): standard two-option confirm/reject.
       - Human approves PASS → check the item in `test-plan.md` (`- [x] Pass`). Write the file.
       - Human rejects (overrides to FAIL, or confirms FAIL) → item stays unchecked. Continue to next test.
 
@@ -112,5 +128,5 @@ Execute a skill from `skills/output/` inline in the current conversation, option
 - **Setup/teardown are declared in test-plan.md, not invented.** The harness only runs setup/teardown steps that appear in the test entry. Never infer additional setup.
 - **Teardown is mandatory after setup.** If a test declares setup, it must declare teardown. The harness always runs teardown, even on failure or early exit.
 - **LLM-as-judge must show reasoning** — never silently pass or fail. Human always sees the evaluation logic before confirming.
-- **Human has final say** — LLM judge proposes verdict, human confirms or overrides. No auto-pass.
+- **Human has final say in HITL mode** — when `judge_mode = hitl`, LLM judge proposes verdict, human confirms or overrides. In `auto` mode, LLM verdict is accepted directly. Auto mode requires explicit opt-in (Gate E question or caller flag).
 - **Staleness warning is mandatory** — never skip Gate C in fixture mode. Proceeding with stale tests is allowed only after human acknowledges.
