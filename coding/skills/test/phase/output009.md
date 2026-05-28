@@ -2,7 +2,7 @@
 
 ## Requirements Tested
 - PTM1 (coding_plan.md §PTM): `/phase` is sole writer — close writes phase_status.md AND plan/ACTIVE
-- PTM5 (coding_plan.md §PTM): plan/ACTIVE flips from `<N>_<slug>` to `<none>` only via `/phase close`
+- PTM5 (coding_plan.md §PTM): plan/ACTIVE flips from `<slug>` to `<none>` only via `/phase close`
 - PTM-close (coding_plan.md §PTM L133–L134): close guards — phase_status=exited, current_phase is terminal-for-mode, tripwire_halt=false; all three pass here
 - PTM2 (coding_plan.md §PTM): B-style file preserved — history row appended, prior rows unchanged
 

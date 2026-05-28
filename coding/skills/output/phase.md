@@ -15,7 +15,7 @@ This skill orchestrates phase transitions for a work item (WI) via five subcomma
 1. **Sole writer.** Only `/phase` writes `phase_status.md` and `<artifacts>/ACTIVE`. Phase skills never modify phase state directly.
 2. **B-style state file.** `<artifacts>/<WI>/phase_status.md` has a mutable `Current` block at the top and a reverse-chronological `## History` section (newest on top).
 3. **Current block schema.** Exactly these fields:
-   - `wi` — work-item folder name (`<N>_<slug>`)
+   - `wi` — work-item folder name (`<slug>`)
    - `mode` — `direct-edit` | `mini` | `full`
    - `current_phase` — active phase code, or empty if between phases
    - `phase_status` — `in-progress` | `blocked` | `awaiting-hitl` | `exited`
@@ -26,7 +26,7 @@ This skill orchestrates phase transitions for a work item (WI) via five subcomma
    - `needs_research` — `true` | `false` (gate flag for optional `res` phase)
    - `pro_gate_tripped` — `true` | `false` (gate flag for optional `pro` phase)
 4. **`next_phase` never persisted.** Always computed at read time from `mode` + `current_phase` + `phase_status` + flags. Writing it would cause drift.
-5. **`<artifacts>/ACTIVE` always exists.** Single-line file: `<N>_<slug>` (active WI) or literal `<none>`. Never absent. Worktree-scoped if a worktree exists, else repo-global.
+5. **`<artifacts>/ACTIVE` always exists.** Single-line file: `<slug>` (active WI) or literal `<none>`. Never absent. Worktree-scoped if a worktree exists, else repo-global.
 6. **`<artifacts>` parameter.** Accepted as optional input; defaults to `plan`; passed through to all file operations without exception.
 7. **Enter guards.** `/phase enter <code>` checks three conditions before allowing entry:
    - Mode-phase legality (see table below).
@@ -40,7 +40,7 @@ This skill orchestrates phase transitions for a work item (WI) via five subcomma
 11. **History immutability.** Once a history entry is appended, it is never modified or deleted.
 12. **No artifact production.** `/phase` writes only `phase_status.md` and `<artifacts>/ACTIVE` — no planning artifacts, no issues, no code.
 13. **No skill invocation.** `/phase` does not call other skills; it is called by them.
-14. **WI close clears `<artifacts>/ACTIVE`.** `/phase close` is the sole operation that flips `<artifacts>/ACTIVE` from `<N>_<slug>` to `<none>`. Refuses unless `phase_status` = `exited` AND `current_phase` is the terminal legal phase for `mode` AND `tripwire_halt` = `false`. Appends a `close` history entry, sets `last_actor: human`. Does NOT delete `<artifacts>/<WI>/` — folder retirement is a separate ritual owned by a different skill.
+14. **WI close clears `<artifacts>/ACTIVE`.** `/phase close` is the sole operation that flips `<artifacts>/ACTIVE` from `<slug>` to `<none>`. Refuses unless `phase_status` = `exited` AND `current_phase` is the terminal legal phase for `mode` AND `tripwire_halt` = `false`. Appends a `close` history entry, sets `last_actor: human`. Does NOT delete `<artifacts>/<WI>/` — folder retirement is a separate ritual owned by a different skill.
 
 ## Steps
 

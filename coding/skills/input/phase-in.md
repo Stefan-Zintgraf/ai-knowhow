@@ -78,7 +78,7 @@ Note: `gr/gr_idea.md` rules are annotated for `distill-idea` and `triage-idea`, 
 2. **State file: `<artifacts>/<WI>/phase_status.md`, B-style.** Mutable `Current` block at the top + reverse-chronological `## History` section (newest entry on top). Current block = single source of truth for live phase state; history entries are immutable once appended.
 
 3. **Current block schema.** Exactly these fields:
-   - `wi` — work-item folder name (`<N>_<slug>`)
+   - `wi` — work-item folder name (`<slug>`)
    - `mode` — `direct-edit` | `mini` | `full`
    - `current_phase` — phase code currently active (or empty if between phases)
    - `phase_status` — `in-progress` | `blocked` | `awaiting-hitl` | `exited`
@@ -91,7 +91,7 @@ Note: `gr/gr_idea.md` rules are annotated for `distill-idea` and `triage-idea`, 
 
 4. **`next_phase` is computed, never stored.** Derived at read time by `/phase status` from `mode` + `current_phase` + `phase_status` + flags against the inlined phase chain definitions. Writing it would cause drift.
 
-5. **`<artifacts>/ACTIVE` pointer.** Single-line file containing `<N>_<slug>` (active WI) or literal `<none>`. Must always exist — never absent. Worktree-scoped if a worktree exists, else repo-global. `<artifacts>` defaults to `plan`.
+5. **`<artifacts>/ACTIVE` pointer.** Single-line file containing `<slug>` (active WI) or literal `<none>`. Must always exist — never absent. Worktree-scoped if a worktree exists, else repo-global. `<artifacts>` defaults to `plan`.
 
 6. **Enter guards.** `/phase enter <code>` checks three conditions:
    - **Mode-phase legality** — phase code must be valid for current mode (inlined legality table).
@@ -110,7 +110,7 @@ Note: `gr/gr_idea.md` rules are annotated for `distill-idea` and `triage-idea`, 
 
 10. **History entries immutable.** Once appended, never modified or deleted. History is the audit trail.
 
-11. **WI close clears `<artifacts>/ACTIVE`.** `/phase close` is the sole operation that flips `<artifacts>/ACTIVE` from `<N>_<slug>` to `<none>`. Refuses unless `phase_status` = `exited` AND `current_phase` is the terminal legal phase for `mode` AND `tripwire_halt` = `false`. Appends a `close` history entry and sets `last_actor: human`. Does NOT delete `<artifacts>/<WI>/` — folder retirement is a separate ritual owned by a different skill.
+11. **WI close clears `<artifacts>/ACTIVE`.** `/phase close` is the sole operation that flips `<artifacts>/ACTIVE` from `<slug>` to `<none>`. Refuses unless `phase_status` = `exited` AND `current_phase` is the terminal legal phase for `mode` AND `tripwire_halt` = `false`. Appends a `close` history entry and sets `last_actor: human`. Does NOT delete `<artifacts>/<WI>/` — folder retirement is a separate ritual owned by a different skill.
 
 ### Reference Tables (inline verbatim in output skill)
 
@@ -222,7 +222,7 @@ In order:
 - **Tripwire blocks all**: `tripwire_halt: true` blocks ALL `enter` calls; only `resolve-tripwire` clears it.
 - **History immutability**: history entries are append-only.
 - **`next_phase` never persisted**: always computed at read time.
-- **`<artifacts>/ACTIVE` always exists**: contains `<N>_<slug>` or `<none>`, never absent.
+- **`<artifacts>/ACTIVE` always exists**: contains `<slug>` or `<none>`, never absent.
 - **HITL phases enforce ack**: exit from HITL-only phases requires recorded human acceptance.
 - **No artifact production beyond state files**: `/phase` writes only `phase_status.md` and `<artifacts>/ACTIVE`.
 - **WI close clears ACTIVE**: `close` is the sole operation that writes `<none>` to `<artifacts>/ACTIVE`; refuses unless terminal phase exited cleanly with tripwire clear.
