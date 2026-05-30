@@ -65,8 +65,8 @@ Skills: distill-idea
 The confirmed goal list is written to `<artifacts>/<slug>/idea.md`. `<slug>` is kebab-case derived from the brief title (or, for `direct-edit`/`mini` where the issue lands at `ide`, the GH issue title), stopwords stripped, truncated ≤40 chars. The folder name does **not** encode the GH issue number — the issue is resolved via `status_idea.md` `owner-issue:` frontmatter (set at `ide` for direct-edit/mini, populated at `iss` for `full`). Single artifact per WI, never a shared `idea.md`, never multiple idea files under one WI. Downstream phases (`aln`, `prd`, `iss`, ...) read this file as the anchor for goals; PRD Goals section folds it but does not replace it.
 
 **Mode-dependent persistence (per Idea8):**
-- `full` and `mini` modes — create `<artifacts>/<slug>/idea.md` + `status_idea.md` as defined below.
-- `direct-edit` mode — **no `<artifacts>/<slug>/` files created.** The GH issue body carries the brief verbatim and the verification record; that is the complete WI record. Retirement (3.33) does not apply because no files exist. No `status_idea.md` flip needed.
+- `full` and `mini` modes — create `<artifacts>/<slug>/idea.md` + `status_idea.md` as defined below (in addition to the `triage-decision.json` audit file `/triage-idea` mints at bootstrap).
+- `direct-edit` mode — **no `idea.md` and no `status_idea.md` created.** The `<artifacts>/<slug>/` folder exists (minted by `/triage-idea` per [ADR-0001](../docs/adr/0001-phase-bootstrap-sequence.md)) but holds only `triage-decision.json` (audit). The GH issue body carries the brief verbatim and the verification record; that is the complete WI work record. Retirement (3.33) applies to the audit folder at WI close.
 
 Slug collision: if two open issues would generate the same slug after truncation, suffix `-2`, `-3` and surface to human at folder-create time.
 
@@ -89,7 +89,7 @@ Skills: triage-idea
 
 `ide` is the entry phase for **every** task. Its first act, before any goal distillation, is to triage the incoming brief and pick a workflow mode. Three modes:
 
-- **`direct-edit`** — `ide` → `ral` → `qa`. Skips `aln`/`prd`/`iss`. No `<artifacts>/<slug>/` files; issue body is the record. TDD exemption may apply per TDD11.
+- **`direct-edit`** — `ide` → `ral` → `qa`. Skips `aln`/`prd`/`iss`. `<artifacts>/<slug>/` exists with `triage-decision.json` only (audit); GH issue body is the work record. TDD exemption may apply per TDD11.
 - **`mini`** — `ide` → `aln`(collapsed per Aln19) → `ral` → `qa`. Issue + `<artifacts>/<slug>/idea.md` + collapsed `aln` artifacts.
 - **`full`** — `ide` → `aln` → [`res`?] → [`pro`?] → `prd` → `iss` → `ral`\|`par` → `qa`. Full pipeline.
 

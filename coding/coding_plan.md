@@ -134,10 +134,11 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
 - **Write discipline**: a single dedicated skill `/phase` owns all writes to `phase_status.md` + `<artifacts>/ACTIVE`. Phase skills never touch these files directly; they call `/phase enter <code>` and `/phase exit <code>`. Centralizes schema, lint, HITL ack, tripwire-halt guard.
 - **Fresh-session UX**: explicit — human runs `/phase status` to surface "current_phase, next_phase, blockers". No SessionStart hook, no CLAUDE.md auto-read (keeps always-on context cost low per Op14a). The skill reads `<artifacts>/ACTIVE` → reads that WI's `phase_status.md` → computes `next_phase`.
 - **Idea8/Idea11 ownership**: a new `/triage-idea` skill (Idea8 = entry triage, Idea11 = mid-WI re-triage). Reusable: re-triage after 3.37 tripwire halt calls `/triage-idea --remode` alone, no re-distillation. Reverses the original carve-out only in the sense that Idea8–11 now have a skill home — `distill-idea` keeps its single responsibility (goal distillation).
-- **Resulting `ide` chain by mode**:
-  - direct-edit: `/phase enter ide` → `/triage-idea` → `/phase exit ide` (no `<artifacts>/<WI>/` created; issue body is the record).
-  - mini / full: `/phase enter ide` → `/triage-idea` → `/distill-idea` → `/phase exit ide`.
-  - mid-WI re-triage (Idea11): `/triage-idea --remode` standalone.
+- **Resulting `ide` chain by mode** (**superseded 2026-05-28** by [ADR-0001](docs/adr/0001-phase-bootstrap-sequence.md) — `/phase enter ide` / `/phase exit ide` pattern dropped; replaced by two-command bootstrap + `/phase next` default verb. Below is the **current** chain):
+  - bootstrap (all modes): `/phase` → `"run: /triage-idea"` → `/triage-idea` (mints `<slug>/`, writes pending payload + `<artifacts>/.pending-bootstrap` pointer) → `/phase` (consumes pending, persists ACTIVE + phase_status, prints next paste-ready command).
+  - direct-edit: after consume, `/phase` prints `"run: /phase next"` → advances to `ral` (no distill, no `aln`); `<slug>/` holds only `triage-decision.json` (audit).
+  - mini / full: after consume, `/phase` prints `"run: /distill-idea <slug>"` → `/distill-idea <slug>` writes `<slug>/idea.md` → `/phase next` → advances to `aln`.
+  - mid-WI re-triage (Idea11): `/phase` → `"run: /triage-idea --remode <slug>"` → `/triage-idea --remode <slug>` (writes `<slug>/.pending-retriage.json`) → `/phase` (consumes, renames to `retriage-decision-<ts>.json`).
 
 **New rows to add (tracking only — bodies not built yet):**
 
@@ -217,7 +218,7 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
   - **output format**: sections (Current WI, Skill Freshness, Next Action); each stale item one line with the exact command to fix it
 
 
-- [~] re-create skills in output/skills (because of artifacts output folder dynamic now)
+- [x] re-create skills in output/skills (because of artifacts output folder dynamic now)
   - [x] phase, next: test-skill phase, DONE
   - [x] adjust test-skill skill: 
      - [x] provide option to keep human out of the loop (test success/fail judged by AI agent)
@@ -225,14 +226,33 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
      - [x] adjust make-skill to automatically use the option to keep the human out of the loop (to automate the whole process)
   - [x] gh issue problem (chicken/egg?) — **resolved 2026-05-28**: `issue` field dropped from `phase_status.md` Current block schema. Issue numbers live on GH; phase skill no longer tracks them. See settled-decisions update above.
     - [x] **follow-up resolved 2026-05-28**: `<WI>` = `<slug>` (slug-only). Issue number resolved via `status_idea.md` `owner-issue:` frontmatter (set at `ide` for direct-edit/mini, at `iss` for full); `<artifacts>/INDEX.md` auto-regenerates the slug→issue map. C9 + C6 rewritten in this file; gr_idea.md (Idea7/8/9), gr_algn.md (Aln19), gr_qa.md (Q11 ref), phases.md, guardrails.md §4.19 updated. **Action**: rerun `/make-skill distill-idea` + `/make-skill triage-idea` + `/make-skill phase` to propagate to compiled skills (current `skills/output/phase.md`, `skills/input/phase-in.md`, `skills/input/distill-idea-in.md` still encode `<N>_<slug>`).
-  - [ ] Next step: rerun /make-skill distill-idea, /make-skill triage-idea, /make-skill phase to propagate to compiled skills.
-  - [ ] check what would be the skill sequence to execute on a new idea (phase, triage-idea, distill-idea, ...)
-    - [ ] adjust it, if it makes no sense or is confusing (/phase next?)
-  - [ ] triage-idea: test-skill triage-idea
-  - [ ] distill-idea: test-skill distill-idea
+  - [x] check what would be the skill sequence to execute on a new idea (phase, triage-idea, distill-idea, ...) — **resolved 2026-05-28** in [docs/adr/0001-phase-bootstrap-sequence.md](docs/adr/0001-phase-bootstrap-sequence.md). Locked: `/phase next` default verb; two-command bootstrap; `/phase` sole writer of state only; `/triage-idea` pure-ish (mints `<slug>/` + writes pending payload + bootstrap pointer); distill takes slug as arg; C6 relaxed (direct-edit also gets `<slug>/` containing only `triage-decision.json`). Propagates to: A12/A13 behavior rows (below), C6 line in W15 contracts, `phases.md` §5 ide call sequence, `gr/gr_idea.md` Idea7 + Idea8 persistence notes.
+
+- [ ] **ADR-0001 follow-up** — propagate locked phase-bootstrap contracts ([docs/adr/0001-phase-bootstrap-sequence.md](docs/adr/0001-phase-bootstrap-sequence.md)) into compiled skills + fixtures + template. Run in a fresh session.
+  - [ ] flip ADR-0001 status `proposed → accepted` (per Adr8 — HITL acceptance)
+  - [ ] redraft `skills/input/phase-in.md` to encode: `next` default verb, two-command bootstrap, pending-payload consumer (`<artifacts>/.pending-bootstrap` + `<slug>/.pending-{triage,retriage}.json`), internal skill-signature registry, paste-ready next-command output, defined failure modes (pointer/payload mismatch). Then `/make-skill phase` to recompile + retest.
+  - [ ] redraft `skills/input/triage-idea-in.md` to encode: pure-function shape (no `phase_status.md` / `ACTIVE` writes), slug minting for **all** modes (including direct-edit per C6 relaxation), pending payload + bootstrap pointer write, `--remode <slug>` flag writing `.pending-retriage.json`. Then `/make-skill triage-idea`.
+  - [ ] redraft `skills/input/distill-idea-in.md` to accept `<slug>` as required positional arg (no `phase_status.md` peek). Then `/make-skill distill-idea`.
+  - [ ] update `skills/test/phase/` fixtures to cover new bootstrap scenarios: (a) `ACTIVE=<none>` → "run: /triage-idea" stop, (b) pending payload present → consume + persist + print next, (c) direct-edit consume → "run: /phase next" (skip to ral), (d) mini/full consume → "run: /distill-idea <slug>", (e) `--remode` consume → rename to `retriage-decision-<ts>.json`, (f) pointer present + payload missing → defined error, (g) payload present + pointer missing → defined error, (h) multiple pending payloads → defined error.
+  - [ ] update `skills/test/triage-idea/` fixtures: slug minting + folder creation for all three modes (including direct-edit creating `<slug>/` with audit-only contents), pending+pointer file shape verification, `--remode` path (no slug minting, slug-arg required).
+  - [ ] draft `tpl/tpl_phase_status.md` (C9) — frontmatter + `Current` block schema + reverse-chrono history. Reference ADR-0001 in notes (state-only ownership, no artifact fields).
+  - [ ] update B1 hook spec — "pending scratch file exists" = deferred-commit (OK), not violation. Only warn when phase skill ran AND no pending file left AND no `/phase` call followed.
+  - [ ] verify side-effect: `gr/gr_algn.md` Aln19 (collapsed `aln` for `mini`) — confirm entry path "via `/phase next`" still reads correctly after the bootstrap rewrite.
+  - [ ] verify side-effect: `gr/gr_qa.md` Q11 merge-gate — confirm `<artifacts>/ACTIVE` lint still phrased as "pointer empty OR points at existing `<slug>/`" (unchanged by ADR-0001 but worth a re-read).
+
+- [ ] **Meta-analysis follow-up (BMAD / bmad-builder & AIUP)** — see [meta_analysis.md](meta_analysis.md). Surfaced by the `ai-mail` framework-selection discussion; a build-vs-borrow assessment for this project's builder + method layers. Key frame: BMB competes only with the *builder* layer, AIUP only with the artifact-producing *method* phases.
+  - [ ] MA1 — borrow-vs-author gap analysis of unbuilt A-skills (A1–A10): mark *borrow* (aiup-core `/entity-model`, `/use-case-spec`; Pocock `grill-me`, `to-prd`, `to-issues`, `review`, `prototype`, `tdd`, `ralph`) vs. *author via toolchain*. See [meta_analysis.md](meta_analysis.md) §"Recommended actions" MA1.
+  - [ ] MA2 — study bmad-builder Module Builder + "Build Your First Module" as a blueprint for the generic-workflow-builder track (L319–325) before designing `domain.yaml`. Borrow structure, do **not** adopt the tool. See meta_analysis.md MA2.
+  - [ ] MA3 — read aiup-core `/entity-model` + `/use-case-spec` SKILL.md bodies; evaluate as ready-made artifact producers for the `prd`/`iss` neighborhood (A2/A3) instead of authoring from scratch. See meta_analysis.md MA3.
+  - [ ] MA4 — record the "no wholesale BMAD/BMB adoption" decision as a D-item or ADR (paradigm clash with Op14a/pull-not-push + loss of compiled-and-tested-skill model; builder layer already mature). See meta_analysis.md MA4.
+  - [ ] MA5 — scope-control: define the "good-enough cut line" — the minimal phase-skill set that makes the framework usable end-to-end on one real project; defer the rest. Re-checks framework size vs. Pareto/fun/no-overkill goals. See meta_analysis.md MA5.
+  
+- [ ] how does speckit, openspec, tessl, humanlayer stuff fit?
+
+- [ ] next step
 
 
-- [ ] check the workflow, specifically phases/idea - seems to be inconsistend or strange (start with triage instead of distill)
+- [ ] run test workflow according to existing skills
 
 - [ ] auto-workflow mode
   - [ ] define hard and soft dependencies (which item in grXXX depends on what item in grYYY etc.)
@@ -505,7 +525,7 @@ Beyond the 12 items, the orchestration that chains them (e.g., `align-concept` �
   - **4-axis triage matrix** — design ambiguity, blast radius, reversibility, existing test coverage; tripwire surfaces (3.29 list) force `full`. HITL approves mode. (C3)
   - **TDD exemption** — direct-edit may skip TDD if existing tests sufficient + HITL confirm; behavior-free changes verified by lint + spell-check + HITL eyeball. Amends 3.22 / TDD3. (C4)
   - **Issue invariant** — exactly one issue exists before any `ral`; `ide` emits for direct-edit/mini, `iss` for full. (C5)
-  - **`<artifacts>/<WI>/` scales with mode** — direct-edit creates no files (issue is the record); mini/full create `<artifacts>/<slug>/`. (C6)
+  - **`<artifacts>/<WI>/` scales with mode** — all modes get a `<slug>/` folder (minted by `/triage-idea`), but its contents scale: direct-edit holds only `triage-decision.json` (audit only — issue body is the work record); mini adds `idea.md` + collapsed `aln` artifacts; full adds the complete pipeline outputs. (C6, **relaxed 2026-05-28** per [ADR-0001](docs/adr/0001-phase-bootstrap-sequence.md) — was "direct-edit creates no files".)
   - **Tripwire mid-task → halt + HITL** — candidate core rule 3.37; agent halts, does not edit, human picks narrow-with-approval or re-enter `ide`. (C7)
   - **Collapsed `aln` for mini** — keeps Aln6 sweep + Aln17 context.md/ADR; reduces grilling to 1–3 questions; skips Aln18 transcript file. Auto-upgrades to full on Adr1/Pro1/>3 unresolved. (C8)
   - **`<WI>` = `<slug>`** — slug-only folder name (kebab-case from brief title or, when available, GH issue title; stopwords stripped; ≤40 chars; collision suffix `-2`, `-3`). Folder name does not encode the issue number — issue is resolved via `status_idea.md` `owner-issue:` frontmatter (set at `ide` for direct-edit/mini, at `iss` for full). Dedupe via `gh issue list --search` shown to human before any issue create; `<artifacts>/INDEX.md` auto-generated as the slug→issue map. (C9)
@@ -710,18 +730,27 @@ Beyond the 12 items, the orchestration that chains them (e.g., `align-concept` �
 ### A12. `phase` skill (cross-phase infrastructure)
 
 - Status: todo.
-- Behavior: subcommands `enter` / `exit` / `status`. Sole writer of `phase_status.md` + `<artifacts>/ACTIVE`. Checks on enter: mode legal for phase? Previous phase exited cleanly? Tripwire-halt clear? Checks on exit: phase-required artifacts present? HITL ack recorded? `status` is read-only, computes `next_phase` from inputs against `phases.md` §4 chains.
-- Source: coding_plan.md §"Phase Transition Mechanism"; `phases.md` §4; `guardrails.md` §3.37.
+- Behavior: subcommands `next` (default verb) / `enter` / `exit` / `status`. Sole writer of `phase_status.md` + `<artifacts>/ACTIVE` (state only — phase skills own their artifacts). Holds an internal **skill-signature registry** (one row per A-table skill: name + arg shape) used to format paste-ready next-step commands.
+  - `/phase` (no arg) and `/phase next` — reads `ACTIVE` + `phase_status.md`, computes `next_phase` against `phases.md` §4 chains, prints full paste-ready command for next step. When `ACTIVE = <none>`, prints `"no active WI. run: /triage-idea"` and stops (two-command bootstrap — `/phase` does **not** invoke other skills).
+  - **Pending payload consumer** — on each invocation, checks `<artifacts>/.pending-bootstrap` (root pointer) and `<slug>/.pending-triage.json` / `<slug>/.pending-retriage.json`. On find: persists `ACTIVE` + `phase_status.md`, renames pending to `<slug>/triage-decision.json` (or `retriage-decision-<ts>.json`), deletes the bootstrap pointer.
+  - `/phase enter <code>` — recovery/jump escape hatch (e.g., re-entering `aln` after a 3.37 tripwire halt). Not the everyday verb. Checks: mode legal for phase? Previous phase exited cleanly? Tripwire-halt clear?
+  - `/phase exit <code>` — checks: phase-required artifacts present? HITL ack recorded? Updates `phase_status.md` history.
+  - `/phase status` — read-only.
+  - Defined failure modes: pointer present + payload missing → error + ask human; payload present + pointer missing → ditto; multiple `<slug>/.pending-*.json` → error.
+- Source: [docs/adr/0001-phase-bootstrap-sequence.md](docs/adr/0001-phase-bootstrap-sequence.md); coding_plan.md §"Phase Transition Mechanism"; `phases.md` §4; `guardrails.md` §3.37.
 - Workflow ref: W15a.
 - Template: C9 (`tpl/tpl_phase_status.md`).
 
 ### A13. `triage-idea` skill (phase: `ide`)
 
 - Status: todo.
-- Behavior: Idea8 entry triage (4-axis scoring: design ambiguity, blast radius, reversibility, existing test coverage; tripwire surfaces force `full`; HITL approves mode) + Idea11 mid-WI re-triage. `--remode` flag for standalone use (e.g., after 3.37 tripwire halt — no re-distillation needed). Outputs mode selection (`direct-edit` / `mini` / `full`) with audit trail.
-- Source: `gr/gr_idea.md` Idea8–Idea11; `guardrails.md` §3.29, §3.37.
+- Behavior: **near-pure function** — runs the Idea8 entry triage (4-axis scoring: design ambiguity, blast radius, reversibility, existing test coverage; tripwire surfaces force `full`; HITL approves mode) and Idea11 mid-WI re-triage via `--remode <slug>`. Does **not** touch `phase_status.md` or `<artifacts>/ACTIVE` (those are A12's exclusive territory).
+  - **Bootstrap call** (`/triage-idea`): derives slug from the brief (kebab-case, stopwords stripped, ≤40 chars, collision suffix `-2`/`-3`), mints `<artifacts>/<slug>/`, writes `<artifacts>/<slug>/.pending-triage.json` (payload: `mode`, `slug`, `owner_issue`, axis scores, rationale) + `<artifacts>/.pending-bootstrap` (one-line pointer = slug). Prints `"now run: /phase"`.
+  - **Re-triage call** (`/triage-idea --remode <slug>`): runs 4-axis pass again with HITL; writes `<artifacts>/<slug>/.pending-retriage.json`. Prints `"now run: /phase"`. No slug minting (slug already exists).
+  - Slug minting applies to **all** modes including `direct-edit` (per C6 relaxation in [ADR-0001](docs/adr/0001-phase-bootstrap-sequence.md)) — direct-edit's `<slug>/` holds only `triage-decision.json` after A12 consumes the pending payload.
+- Source: [docs/adr/0001-phase-bootstrap-sequence.md](docs/adr/0001-phase-bootstrap-sequence.md); `gr/gr_idea.md` Idea8–Idea11; `guardrails.md` §3.29, §3.37.
 - Workflow ref: W15, W15a.
-- Depends on: A12 (`/phase` must exist for `enter`/`exit` calls).
+- Depends on: A12 (consumes the pending payload triage emits).
 
 ---
 

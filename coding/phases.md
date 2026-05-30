@@ -114,7 +114,7 @@ ide → aln → [res?] → [pro?] → prd → iss → (ral | par) → qa ─┬�
 
 `ide` triages every entering task into one of three modes (per Idea8):
 
-- **`direct-edit`** — `ide → ral → qa`. No `<artifacts>/<slug>/` folder; issue body is the record.
+- **`direct-edit`** — `ide → ral → qa`. `<artifacts>/<slug>/` folder exists (minted by `/triage-idea`) but holds only `triage-decision.json` (audit); GH issue body is the work record. (Per [ADR-0001](docs/adr/0001-phase-bootstrap-sequence.md) — C6 relaxed for symmetric audit footprint.)
 - **`mini`** — `ide → aln`(collapsed per Aln19) `→ ral → qa`. Issue + `<artifacts>/<slug>/idea.md` + collapsed `aln` artifacts.
 - **`full`** — the diagram above.
 
@@ -155,23 +155,42 @@ Each phase is backed by one or more skills. The `/phase` skill (A12) orchestrate
 ### Transition protocol: `/phase` (A12)
 Skills: phase
 
-A single orchestration skill owns all phase state. Phase skills never write `phase_status.md` or `<artifacts>/ACTIVE` directly.
+A single orchestration skill owns all phase **state** (`phase_status.md` + `<artifacts>/ACTIVE`). Phase skills own their own **artifacts** (`idea.md`, ADRs, PRD, `research/*.md`, ...) but never touch state files. Design rationale and full contract list: [ADR-0001](docs/adr/0001-phase-bootstrap-sequence.md).
 
 | Subcommand       | What it does                                                                                                  |
 | ---------------- | ------------------------------------------------------------------------------------------------------------- |
-| `/phase enter <code>` | Guards entry: mode legal for this phase? Previous phase exited cleanly? Tripwire-halt clear? Writes `phase_status.md`. |
+| `/phase` or `/phase next` | **Default verb.** Reads `ACTIVE` + `phase_status.md`, computes `next_phase` against §4 chains, prints **full paste-ready command** for the next step. Also consumes any pending payload (`<artifacts>/.pending-bootstrap` + `<slug>/.pending-{triage,retriage}.json`) before computing. When `ACTIVE = <none>`, prints `"no active WI. run: /triage-idea"` and stops (two-command bootstrap — `/phase` never invokes other skills). |
+| `/phase enter <code>` | **Recovery / jump escape hatch** (not the everyday verb). Guards entry: mode legal for this phase? Previous phase exited cleanly? Tripwire-halt clear? Writes `phase_status.md`. |
 | `/phase exit <code>`  | Guards exit: phase-required artifacts present? HITL ack recorded? Updates `phase_status.md` history.          |
-| `/phase status`       | Read-only. Computes `next_phase` from `mode` + `current_phase` + flags (`needs_research`, `pro_gate_tripped`) against §4 chains. |
+| `/phase status`       | Read-only. Same computation as `next`, without the consume step.                                              |
 
-State file: `<artifacts>/<WI>/phase_status.md` (template: `tpl/tpl_phase_status.md`). Active-WI pointer: `<artifacts>/ACTIVE`.
+State file: `<artifacts>/<WI>/phase_status.md` (template: `tpl/tpl_phase_status.md`). Active-WI pointer: `<artifacts>/ACTIVE`. Internal skill-signature registry: one row per A-table skill (name + arg shape), used to format paste-ready commands.
 
-### `ide` phase call sequence by mode
+### `ide` phase call sequence (all modes)
 
 ```
-direct-edit:  /phase enter ide → /triage-idea →                     /phase exit ide
-mini / full:  /phase enter ide → /triage-idea → /distill-idea →     /phase exit ide
-mid-WI re-triage (Idea11):  /triage-idea --remode  (standalone, no phase enter/exit)
+Bootstrap:
+  1. /phase                          → "no active WI. run: /triage-idea"
+  2. /triage-idea                    → HITL 4-axis pass. Mints <artifacts>/<slug>/.
+                                       Writes <slug>/.pending-triage.json + <artifacts>/.pending-bootstrap.
+                                       Prints: "now run: /phase"
+  3. /phase                          → Consumes pending. Persists ACTIVE + phase_status.
+                                       Moves pending → <slug>/triage-decision.json (audit).
+                                       Prints next paste-ready command per mode:
+                                         direct-edit → "run: /phase next"   (advances straight to ral)
+                                         mini / full → "run: /distill-idea <slug>"
+
+  4. (mini/full only) /distill-idea <slug>  → Writes <slug>/idea.md.
+                                              Prints: "now run: /phase next"
+  5. /phase next                            → ide → aln transition (mode chain continues).
+
+Mid-WI re-triage (Idea11):
+  /phase                       → "run: /triage-idea --remode <slug>"
+  /triage-idea --remode <slug> → Writes <slug>/.pending-retriage.json.
+  /phase                       → Consumes; moves to retriage-decision-<ts>.json.
 ```
+
+Per [ADR-0001](docs/adr/0001-phase-bootstrap-sequence.md): `/phase enter ide` / `/phase exit ide` is **not used** for the standard bootstrap — the prior `enter ide → triage → exit ide` pattern had a chicken/egg guard problem (mode unknown until triage runs) and produced empty-phase ceremony for `direct-edit`.
 
 ### Belt-and-suspenders: B1 hook
 
