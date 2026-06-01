@@ -34,26 +34,32 @@ One trip around the loop = one tightly-scoped behavior. Multiple behaviors = mul
 ## Rules
 
 ### TDD1. Red Before Green
+Skills: afk-loop
 
 The agent writes a failing test before writing implementation code. Writing tests after the implementation is forbidden — a test that has never been red proves nothing about the code under it.
 
 ### TDD2. Prove the Red is Real (No False Greens)
+Skills: afk-loop
 
 If a newly written test passes immediately, treat it as a false green — framework misconfiguration, test-filtering, wrong path, or a tautological assertion. Intentionally break the assertion (e.g. `expect(true).toBe(false)`), rerun, and confirm the framework actually executes and fails the file. Restore the real assertion before continuing.
 
 ### TDD3. Red Must Fail for the Right Reason
+Skills: afk-loop
 
 A test that fails because of a syntax error, missing import, or unrelated exception is not a valid Red. The failure message must point at the behavior under test. If the failure cause is wrong, fix the test before writing implementation.
 
 ### TDD4. Green Means Minimum Code
+Skills: afk-loop
 
 In the Green step, write only enough code to satisfy the current failing test. Adding code for tests not yet written is speculation (cross-ref §3.5 / C8). Each additional behavior gets its own Red first.
 
 ### TDD5. Refactor Is Mandatory, Not Optional
+Skills: afk-loop
 
 Green is not done. After Green, refactor with tests staying green: rename for clarity, remove duplication, deepen modules where shallow ones emerged (cross-ref §3.19 / M1). Skipping the Refactor step is the most common failure mode of agentic TDD — it produces working code that decays into shallow-module sprawl over many loop iterations.
 
 ### TDD6. Mock Discipline
+Skills: afk-loop
 
 - **Mock external surfaces only** — network, filesystem, clock, randomness, third-party SDKs.
 - **Do not mock code you own.** If owned code is hard to test without mocks, the design is wrong; fix the design, not the test.
@@ -61,20 +67,50 @@ Green is not done. After Green, refactor with tests staying green: rename for cl
 - Prefer fakes / in-memory implementations over mocks when the surface is non-trivial.
 
 ### TDD7. One Failing Test at a Time
+Skills: afk-loop, prd-to-dag
 
 The agent does not stack multiple failing tests and then implement. One Red, one Green, one Refactor, then the next Red. Batching breaks the "fails for the right reason" check and lets unrelated failures hide each other.
 
 ### TDD8. TDD Applies to Frontend and Visual Tasks
+Skills: afk-loop, prd-to-dag
 
 Frontend and visual work is not exempt. Use component tests, browser automation, snapshot tests with intentional change-review, or visual-regression tooling. "It's just UI" is not a reason to skip Red.
 
 ### TDD9. No Retroactive Tests
+Skills: afk-loop
 
 Tests added in the same change as the implementation, with no recorded Red phase, are treated as documentation, not verification. They do not satisfy §3.6 / T1. In review, the absence of an observed Red is a finding.
 
 ### TDD10. Refactor Step Must Not Change Behavior
+Skills: afk-loop
 
 During Refactor, no test is added, removed, weakened, or made to assert something new. If a refactor surfaces a missing behavior, finish the refactor first (tests still green), then open a new Red for the missing behavior.
+
+### TDD11. Direct-Edit Mode Exemption
+Skills: afk-loop, triage-idea
+
+When `ide` selects `direct-edit` mode (gr_idea.md Idea8), the Red-Green-Refactor floor may be relaxed under two named carve-outs, both **HITL-confirmed** and recorded on the GH issue body. No silent skip.
+
+**Carve-out A — Behavior-bearing change with sufficient existing tests.**
+
+- Pre-condition: existing tests cover the changed behavior. Human confirms sufficiency.
+- Verification: run the relevant existing test suite **green before** the edit and **green after** the edit. Record both runs on the issue (commands + pass status).
+- TDD1–TDD10 are otherwise unchanged — if any test fails or coverage gap surfaces during the change, the carve-out is voided and a Red must be authored before continuing.
+
+**Carve-out B — Behavior-free change** (documentation, comments, formatting, message-only string edits with no logic effect).
+
+- Verification floor: **lint + spell-check where configured** + **HITL eyeball mandatory always**.
+- Recording: `lint:pass / spell-check:pass / visual:human-confirmed` on the issue.
+- Degraded tooling: if lint or spell-check is not configured in the repo, the absence is not a blocker, but the HITL eyeball remains mandatory.
+
+**Forbidden:**
+
+- Applying TDD11 silently. The carve-out must be declared on the issue with the mode label (`mode:direct-edit`) and the carve-out type (A or B).
+- Using carve-out A when existing test coverage is partial or absent — partial coverage is a `mini`/`full` signal per Idea8 axis matrix.
+- Using carve-out B for any change that alters runtime behavior, including config values, environment variables, or build-pipeline changes (these are behavior-bearing).
+- Mid-edit scope creep that pushes a TDD11 task out of `direct-edit` mode without re-entering `ide` for mode re-triage (3.37).
+
+**Mode re-triage trigger.** If during a TDD11 task the agent discovers the change is behavior-bearing in a way carve-out A does not cover (e.g., uncovered edge case surfaced), agent halts per 3.37 and surfaces the gap to the human for mode re-triage.
 
 ---
 
@@ -97,8 +133,8 @@ During Refactor, no test is added, removed, weakened, or made to assert somethin
 - §3.5 / C8 (No Speculative Design): TDD4 enforces minimum-code Green; adding code for unwritten tests is the same anti-pattern.
 - §3.19 / M1 (Deep Modules): Refactor step (TDD5) is the natural moment to deepen shallow modules surfaced by the test pressure.
 - `gr_brownfield.md`: refactor of legacy code requires characterization tests as the Red.
-- `gr_review.md` (Rev4 reads tests first): reviewer verifies the loop was followed, not just that tests exist.
-- `gr_alignment.md`: behaviors agreed in `aln` are the unit of one Red — if alignment is vague, TDD7 surfaces it immediately.
+- `gr_rev.md` (Rev4 reads tests first): reviewer verifies the loop was followed, not just that tests exist.
+- `gr_algn.md`: behaviors agreed in `aln` are the unit of one Red — if alignment is vague, TDD7 surfaces it immediately.
 
 ---
 
@@ -107,7 +143,7 @@ During Refactor, no test is added, removed, weakened, or made to assert somethin
 TDD detail is **pulled**, not always-on. Pull triggers:
 
 1. **Routing index entry §4.16** in [guardrails.md](../guardrails.md) — any task whose routing identifies "Test-Driven Development" loads this file. Routing happens before implementation per §5.
-2. **Skill precondition (A4 `ralph-loop`)** — the skill prompt loads `gr_tdd.md` on entry to `ral`, before the first test or src edit, since AFK loops cannot be trusted to route on their own.
+2. **Skill precondition (A4 `afk-loop`)** — the skill prompt loads `gr_tdd.md` on entry to `ral`, before the first test or src edit, since AFK loops cannot be trusted to route on their own.
 3. **Reviewer push (Rev2, Op14b)** — `rev` pushes this file into context up front to verify the loop was followed.
 
 If a task in `ral` / `par` proceeds without this file pulled, it is a routing violation — stop, declare routing, then continue.

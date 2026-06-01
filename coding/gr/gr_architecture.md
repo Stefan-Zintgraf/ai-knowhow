@@ -59,7 +59,7 @@ No interfaces, plugin hooks, or generalized base classes added "in case" — onl
 
 ### A11. Prefer Deep Modules
 
-Module depth is a first-class architecture concern: prefer small interfaces hiding significant functionality over many narrow modules with tangled cross-dependencies. Module-shape decisions belong in alignment/PRD, not in implementation. See [gr_modules.md](gr_modules.md) for the full rule set; the review phase checks depth explicitly (see [gr_review.md](gr_review.md) Rev6).
+Module depth is a first-class architecture concern: prefer small interfaces hiding significant functionality over many narrow modules with tangled cross-dependencies. Module-shape decisions belong in alignment/PRD, not in implementation. See [gr_mod.md](gr_mod.md) for the full rule set; the review phase checks depth explicitly (see [gr_rev.md](gr_rev.md) Rev6).
 
 ---
 
@@ -70,4 +70,4 @@ Module depth is a first-class architecture concern: prefer small interfaces hidi
 - Adding a generic `BaseService` or `Manager` because "we might need it."
 - Breaking a public API signature without versioning or migration note.
 - Reaching into another module's private files because the public interface is "inconvenient."
-- Adding many small files with mutual imports instead of a single deeper module (see [gr_modules.md](gr_modules.md) M4).
+- Adding many small files with mutual imports instead of a single deeper module (see [gr_mod.md](gr_mod.md) M4).

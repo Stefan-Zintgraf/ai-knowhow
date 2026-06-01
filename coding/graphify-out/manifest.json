@@ -1,0 +1,597 @@
+{
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\settings.json": {
+    "mtime": 1779884516.167167,
+    "ast_hash": "5d6ecd96cf065b16e8bb9fbf5d7d8f0d",
+    "semantic_hash": "5d6ecd96cf065b16e8bb9fbf5d7d8f0d"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\settings.local.json": {
+    "mtime": 1779267942.3761442,
+    "ast_hash": "eeb2c9739cd1cb2fd5d02ac71ccdc2c6",
+    "semantic_hash": "eeb2c9739cd1cb2fd5d02ac71ccdc2c6"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\skills\\status\\Get-ActiveWI.ps1": {
+    "mtime": 1779874609.443468,
+    "ast_hash": "285b29463205525372ef03747794b8d7",
+    "semantic_hash": "285b29463205525372ef03747794b8d7"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\skills\\status\\Get-MapAndTestFreshness.ps1": {
+    "mtime": 1779869561.0784864,
+    "ast_hash": "2e8aa24b4e2af8668ea01ef45eff7acd",
+    "semantic_hash": "2e8aa24b4e2af8668ea01ef45eff7acd"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\skills\\status\\Get-NextAction.ps1": {
+    "mtime": 1779869561.0944912,
+    "ast_hash": "a49367ca5fc96b0f360b46247a6d5032",
+    "semantic_hash": "a49367ca5fc96b0f360b46247a6d5032"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\skills\\status\\Get-SkillFreshness.ps1": {
+    "mtime": 1779869561.0607257,
+    "ast_hash": "36f157c8b0c5ace76150f6e78a2e605c",
+    "semantic_hash": "36f157c8b0c5ace76150f6e78a2e605c"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\skills\\status\\skills.json": {
+    "mtime": 1779869831.159148,
+    "ast_hash": "5a5b0e35b89221851cf1c6ca3ef60490",
+    "semantic_hash": "5a5b0e35b89221851cf1c6ca3ef60490"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.vscode\\settings.json": {
+    "mtime": 1778852047.285583,
+    "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
+    "semantic_hash": "99914b932bd37a50b983c5e7c90ae93b"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\ai_coding_challenges.md": {
+    "mtime": 1778687408.519869,
+    "ast_hash": "5a292231a360571ef812ca243d9295e3",
+    "semantic_hash": "5a292231a360571ef812ca243d9295e3"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\AI_Coding_Workflow.md": {
+    "mtime": 1778690525.4514697,
+    "ast_hash": "b9920dd0457b97bc06ce4e02f2101eb8",
+    "semantic_hash": "b9920dd0457b97bc06ce4e02f2101eb8"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\CLAUDE.md": {
+    "mtime": 1779884516.1661615,
+    "ast_hash": "540e3f9c289a3c4e7614bc4aaa54d640",
+    "semantic_hash": "540e3f9c289a3c4e7614bc4aaa54d640"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\coding_plan.md": {
+    "mtime": 1779876117.2222886,
+    "ast_hash": "b041005f1c128081737b492ce5ab1af9",
+    "semantic_hash": "b041005f1c128081737b492ce5ab1af9"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\guardrails.md": {
+    "mtime": 1779874256.2954838,
+    "ast_hash": "ff3f83852b75add4171c7a6f1ad4feb8",
+    "semantic_hash": "ff3f83852b75add4171c7a6f1ad4feb8"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\phase-diagram.html": {
+    "mtime": 1779868005.089453,
+    "ast_hash": "5b2da4cd720addd0007baf3d80feb582",
+    "semantic_hash": "5b2da4cd720addd0007baf3d80feb582"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\phases.md": {
+    "mtime": 1779874214.4265907,
+    "ast_hash": "19101eec8c1d27dadd379c5c3a06787e",
+    "semantic_hash": "19101eec8c1d27dadd379c5c3a06787e"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\readme.md": {
+    "mtime": 1779872242.8417873,
+    "ast_hash": "07a316be7600f11957bd891b2e5936eb",
+    "semantic_hash": "07a316be7600f11957bd891b2e5936eb"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\standards_guardrails_sources.md": {
+    "mtime": 1779100309.7559443,
+    "ast_hash": "32b36f9c0eb505aff50111114df404f5",
+    "semantic_hash": "32b36f9c0eb505aff50111114df404f5"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\tutorial.md": {
+    "mtime": 1779872412.546506,
+    "ast_hash": "7eae637701929e994b051113688877ec",
+    "semantic_hash": "7eae637701929e994b051113688877ec"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\CLAUDE.md": {
+    "mtime": 1779884559.796527,
+    "ast_hash": "ca9f29d7f866e7417052de3e1b9f9e8f",
+    "semantic_hash": "ca9f29d7f866e7417052de3e1b9f9e8f"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\skills\\compile-skill\\SKILL.md": {
+    "mtime": 1779874587.2879899,
+    "ast_hash": "a8965a09e5f4e4c07de3b0b2fe486b41",
+    "semantic_hash": "a8965a09e5f4e4c07de3b0b2fe486b41"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\skills\\draft-skill-input\\skill.md": {
+    "mtime": 1779874582.715202,
+    "ast_hash": "a732eebd65acb756b7ccbb0577872cbf",
+    "semantic_hash": "a732eebd65acb756b7ccbb0577872cbf"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\skills\\draft-skill-input\\template_skill_in.md": {
+    "mtime": 1779874594.896832,
+    "ast_hash": "877262cd349f456da440c697655b89c9",
+    "semantic_hash": "877262cd349f456da440c697655b89c9"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\skills\\draft-skill-tests\\skill.md": {
+    "mtime": 1779789968.0727139,
+    "ast_hash": "0fd8ce93330ff5a18a12f0f37d2a4bd8",
+    "semantic_hash": "0fd8ce93330ff5a18a12f0f37d2a4bd8"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\skills\\graphify\\SKILL.md": {
+    "mtime": 1779884516.1611629,
+    "ast_hash": "e065bdafac4ca689ffd4e353ffd71160",
+    "semantic_hash": "e065bdafac4ca689ffd4e353ffd71160"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\skills\\make-skill\\skill.md": {
+    "mtime": 1779786078.999293,
+    "ast_hash": "0f85dc86ae8bf2f3d3d9788cd6606a33",
+    "semantic_hash": "0f85dc86ae8bf2f3d3d9788cd6606a33"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\skills\\run-skill\\skill.md": {
+    "mtime": 1779874468.1384928,
+    "ast_hash": "48a33f79fc51ba0e4befdee29880517c",
+    "semantic_hash": "48a33f79fc51ba0e4befdee29880517c"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\skills\\status\\latest_status.md": {
+    "mtime": 1779869934.5921843,
+    "ast_hash": "15d92270c4f9a21a11db6f20c3494761",
+    "semantic_hash": "15d92270c4f9a21a11db6f20c3494761"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\skills\\status\\skill.md": {
+    "mtime": 1779869597.339513,
+    "ast_hash": "ad9f8d253fc54d52285f313e0c20ebe3",
+    "semantic_hash": "ad9f8d253fc54d52285f313e0c20ebe3"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\skills\\test-skill\\SKILL.md": {
+    "mtime": 1779800647.3774726,
+    "ast_hash": "8c6b86059226c4f637faf43e95c2a92c",
+    "semantic_hash": "8c6b86059226c4f637faf43e95c2a92c"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\.claude\\skills\\update-rule-skill-map\\skill.md": {
+    "mtime": 1779803482.370062,
+    "ast_hash": "6c086d8ce2ce9bbe781da46c50c217c8",
+    "semantic_hash": "6c086d8ce2ce9bbe781da46c50c217c8"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\docs\\agents\\domain.md": {
+    "mtime": 1779380612.2124448,
+    "ast_hash": "39ab51eb45bcf3fc62713953acbaf5f4",
+    "semantic_hash": "39ab51eb45bcf3fc62713953acbaf5f4"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\docs\\agents\\issue-tracker.md": {
+    "mtime": 1779380612.1814046,
+    "ast_hash": "17c36a36e7bcda4dc814bda9bfa13438",
+    "semantic_hash": "17c36a36e7bcda4dc814bda9bfa13438"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\docs\\agents\\triage-labels.md": {
+    "mtime": 1779380612.1971228,
+    "ast_hash": "85409347dbf487c8a25c9dac59708b83",
+    "semantic_hash": "85409347dbf487c8a25c9dac59708b83"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_adr.md": {
+    "mtime": 1779803047.668726,
+    "ast_hash": "8de0c5cbc621ae3793e44d14f70ec763",
+    "semantic_hash": "8de0c5cbc621ae3793e44d14f70ec763"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_algn.md": {
+    "mtime": 1779874323.2960725,
+    "ast_hash": "d3c1c2b911930fffcdc757a61322563f",
+    "semantic_hash": "d3c1c2b911930fffcdc757a61322563f"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_architecture.md": {
+    "mtime": 1779100309.6412673,
+    "ast_hash": "3e4fbf51b846c46214010d4f6d1d8059",
+    "semantic_hash": "3e4fbf51b846c46214010d4f6d1d8059"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_brownfield.md": {
+    "mtime": 1778753981.1655052,
+    "ast_hash": "1d32d36a69c92db62a79f0725f933c3e",
+    "semantic_hash": "1d32d36a69c92db62a79f0725f933c3e"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_coding_style.md": {
+    "mtime": 1778745398.302971,
+    "ast_hash": "23f4f1cbe99ffa2a0e9c7083b2d709aa",
+    "semantic_hash": "23f4f1cbe99ffa2a0e9c7083b2d709aa"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_ddd.md": {
+    "mtime": 1778744478.5254428,
+    "ast_hash": "1fc6b6ffa1a2a15fbc52f1432bc2ffc4",
+    "semantic_hash": "1fc6b6ffa1a2a15fbc52f1432bc2ffc4"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_dependencies.md": {
+    "mtime": 1778744583.3168886,
+    "ast_hash": "52b37f095f41822238d37b38623a20c2",
+    "semantic_hash": "52b37f095f41822238d37b38623a20c2"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_documentation.md": {
+    "mtime": 1779091356.5797503,
+    "ast_hash": "ebb677f41810e9e92492235edb43ab3f",
+    "semantic_hash": "ebb677f41810e9e92492235edb43ab3f"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_domain_language.md": {
+    "mtime": 1779803060.315181,
+    "ast_hash": "e31be00e825ec469f84aa97b3b15fe97",
+    "semantic_hash": "e31be00e825ec469f84aa97b3b15fe97"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_governance.md": {
+    "mtime": 1779100309.6508021,
+    "ast_hash": "c308b7cb55fbfbb8c44e95b58402eae1",
+    "semantic_hash": "c308b7cb55fbfbb8c44e95b58402eae1"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_greenfield.md": {
+    "mtime": 1778744545.874741,
+    "ast_hash": "c84e28741facaa2e7c323e93b190ef86",
+    "semantic_hash": "c84e28741facaa2e7c323e93b190ef86"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_idea.md": {
+    "mtime": 1779874291.1118758,
+    "ast_hash": "01206ca28e229505518761aed933c2ae",
+    "semantic_hash": "01206ca28e229505518761aed933c2ae"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_mod.md": {
+    "mtime": 1779803032.8309212,
+    "ast_hash": "d8c080ea1c764532a14d41749c85c3d7",
+    "semantic_hash": "d8c080ea1c764532a14d41749c85c3d7"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_operational.md": {
+    "mtime": 1779100309.67496,
+    "ast_hash": "30ca98da4982216527e26d24d68c6748",
+    "semantic_hash": "30ca98da4982216527e26d24d68c6748"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_proto.md": {
+    "mtime": 1779802957.387629,
+    "ast_hash": "1a1aa977f23434705085b41d045f6c47",
+    "semantic_hash": "1a1aa977f23434705085b41d045f6c47"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_qa.md": {
+    "mtime": 1779874332.1784105,
+    "ast_hash": "4cb27f4cdfbe3b19d772605002e07704",
+    "semantic_hash": "4cb27f4cdfbe3b19d772605002e07704"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_res.md": {
+    "mtime": 1779802946.5578094,
+    "ast_hash": "8e21d7206b07d182336ae21f5d80b6db",
+    "semantic_hash": "8e21d7206b07d182336ae21f5d80b6db"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_rev.md": {
+    "mtime": 1779803014.8940394,
+    "ast_hash": "ea25fb9040caa493c9067a6bd3658ff6",
+    "semantic_hash": "ea25fb9040caa493c9067a6bd3658ff6"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_security_compliance.md": {
+    "mtime": 1778744522.3980796,
+    "ast_hash": "faf605e600267655652de19375364f0e",
+    "semantic_hash": "faf605e600267655652de19375364f0e"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_tdd.md": {
+    "mtime": 1779802971.216313,
+    "ast_hash": "53e4e6a1d91ca4193efc58b821363a4d",
+    "semantic_hash": "53e4e6a1d91ca4193efc58b821363a4d"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\gr\\gr_testing_verification.md": {
+    "mtime": 1778861718.9648702,
+    "ast_hash": "c72444cb9b36dcc746b58623ff0e3d2e",
+    "semantic_hash": "c72444cb9b36dcc746b58623ff0e3d2e"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\plan\\coding_workflow\\idea.md": {
+    "mtime": 1779454546.3630574,
+    "ast_hash": "00fbc5ccb292e04b88d3c33362fe549a",
+    "semantic_hash": "00fbc5ccb292e04b88d3c33362fe549a"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\plan\\coding_workflow\\idea_recreation.md": {
+    "mtime": 1779786079.0076325,
+    "ast_hash": "20ab6043f7ad1663ba83fa1ee2ec21d9",
+    "semantic_hash": "20ab6043f7ad1663ba83fa1ee2ec21d9"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\plan\\coding_workflow\\idea_ref.md": {
+    "mtime": 1779786079.0018687,
+    "ast_hash": "8cb286ebffc851702845a35910aa430b",
+    "semantic_hash": "8cb286ebffc851702845a35910aa430b"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\plan\\coding_workflow\\status_idea.md": {
+    "mtime": 1779454565.9128299,
+    "ast_hash": "4e686eae175917067ec1cec0fb6bcf0f",
+    "semantic_hash": "4e686eae175917067ec1cec0fb6bcf0f"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\plan\\coding_workflow\\skills\\status\\script-interfaces.md": {
+    "mtime": 1779868635.5641448,
+    "ast_hash": "cca51e0135724245a6ad58ee7b57c3e5",
+    "semantic_hash": "cca51e0135724245a6ad58ee7b57c3e5"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\input\\distill-idea-in.md": {
+    "mtime": 1779458875.181633,
+    "ast_hash": "859d32fa83cc421ca2559924bf245d76",
+    "semantic_hash": "859d32fa83cc421ca2559924bf245d76"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\input\\phase-in.md": {
+    "mtime": 1779875635.631951,
+    "ast_hash": "05234bd62b174516d2832d6567475c5a",
+    "semantic_hash": "05234bd62b174516d2832d6567475c5a"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\input\\log\\phase_000.md": {
+    "mtime": 1779822691.6736755,
+    "ast_hash": "2b7b342125b3ed472ebfc5fe86ab019b",
+    "semantic_hash": "2b7b342125b3ed472ebfc5fe86ab019b"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\output\\phase.md": {
+    "mtime": 1779875964.6724174,
+    "ast_hash": "667d611a35275d8be840eb45d24e6fea",
+    "semantic_hash": "667d611a35275d8be840eb45d24e6fea"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\output\\log\\phase_000.md": {
+    "mtime": 1779822701.9492147,
+    "ast_hash": "e125820a3b3d50a90c61201a3ac8a45b",
+    "semantic_hash": "e125820a3b3d50a90c61201a3ac8a45b"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\run\\plan\\ai_mail\\idea.md": {
+    "mtime": 1779289279.3576567,
+    "ast_hash": "4af910782fc72f57bfac82e0488330d6",
+    "semantic_hash": "4af910782fc72f57bfac82e0488330d6"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\run\\plan\\ai_mail\\status_idea.md": {
+    "mtime": 1779289348.184848,
+    "ast_hash": "9ac7d66c154c88fe674be2c9ee61aca5",
+    "semantic_hash": "9ac7d66c154c88fe674be2c9ee61aca5"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\input000.md": {
+    "mtime": 1779787532.195915,
+    "ast_hash": "4b8601d810c66b8df75f0f4fa32865a5",
+    "semantic_hash": "4b8601d810c66b8df75f0f4fa32865a5"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\input001.md": {
+    "mtime": 1779787541.7075365,
+    "ast_hash": "a3696706f5c8e4bb78a1853f361a7b37",
+    "semantic_hash": "a3696706f5c8e4bb78a1853f361a7b37"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\input002.md": {
+    "mtime": 1779787551.167446,
+    "ast_hash": "0324bd93955e0d35fe723a8347f9a8f3",
+    "semantic_hash": "0324bd93955e0d35fe723a8347f9a8f3"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\input003.md": {
+    "mtime": 1779787561.3776436,
+    "ast_hash": "57037fe5c04db9cf5e3b13530a8f8467",
+    "semantic_hash": "57037fe5c04db9cf5e3b13530a8f8467"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\input004.md": {
+    "mtime": 1779787572.3093984,
+    "ast_hash": "1d98d7e98472cf380a7f12b47506647c",
+    "semantic_hash": "1d98d7e98472cf380a7f12b47506647c"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\input005.md": {
+    "mtime": 1779787582.9902444,
+    "ast_hash": "679d351b4fb028ab4cdae165e9d1fb02",
+    "semantic_hash": "679d351b4fb028ab4cdae165e9d1fb02"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\input006.md": {
+    "mtime": 1779799950.8116844,
+    "ast_hash": "00d479a69647cf23107c7677fe459329",
+    "semantic_hash": "00d479a69647cf23107c7677fe459329"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\input007.md": {
+    "mtime": 1779800700.21542,
+    "ast_hash": "e388fb5d24480f5f5bd4cced3fbfad60",
+    "semantic_hash": "e388fb5d24480f5f5bd4cced3fbfad60"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\input008.md": {
+    "mtime": 1779800715.9994164,
+    "ast_hash": "619aa183e38885efc2503c82a14f74af",
+    "semantic_hash": "619aa183e38885efc2503c82a14f74af"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\input009.md": {
+    "mtime": 1779800730.0578914,
+    "ast_hash": "13938a1a2a9a5bfcf3cdc6e7869d7499",
+    "semantic_hash": "13938a1a2a9a5bfcf3cdc6e7869d7499"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\output000.md": {
+    "mtime": 1779790399.0632646,
+    "ast_hash": "8b5dae5248a191d61e101efb5a8f6e08",
+    "semantic_hash": "8b5dae5248a191d61e101efb5a8f6e08"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\output001.md": {
+    "mtime": 1779789137.1670954,
+    "ast_hash": "f9a365758efaf05cbf9b88163c595d15",
+    "semantic_hash": "f9a365758efaf05cbf9b88163c595d15"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\output002.md": {
+    "mtime": 1779789147.079563,
+    "ast_hash": "b3d81f34d3c607c465614d9e53a5ba3e",
+    "semantic_hash": "b3d81f34d3c607c465614d9e53a5ba3e"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\output003.md": {
+    "mtime": 1779789152.66095,
+    "ast_hash": "5d48d95a6798321f4ad8aa5385cf14e8",
+    "semantic_hash": "5d48d95a6798321f4ad8aa5385cf14e8"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\output004.md": {
+    "mtime": 1779789160.8592124,
+    "ast_hash": "89df3ebee6868c3e537b41454c8988c8",
+    "semantic_hash": "89df3ebee6868c3e537b41454c8988c8"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\output005.md": {
+    "mtime": 1779789164.2009976,
+    "ast_hash": "8d2c2eb0501b073663758e50e993ea73",
+    "semantic_hash": "8d2c2eb0501b073663758e50e993ea73"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\output006.md": {
+    "mtime": 1779799966.6064045,
+    "ast_hash": "a2c5734e31f2c23b8ed5c495f139e2db",
+    "semantic_hash": "a2c5734e31f2c23b8ed5c495f139e2db"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\output007.md": {
+    "mtime": 1779800712.1185474,
+    "ast_hash": "ed359751336d9e48c92eeb92734725ba",
+    "semantic_hash": "ed359751336d9e48c92eeb92734725ba"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\output008.md": {
+    "mtime": 1779800725.9287076,
+    "ast_hash": "a5150d04b795cc1971514c1a795c4642",
+    "semantic_hash": "a5150d04b795cc1971514c1a795c4642"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\output009.md": {
+    "mtime": 1779800737.0784602,
+    "ast_hash": "edf5307c081dd62cb7286c26b7493ff3",
+    "semantic_hash": "edf5307c081dd62cb7286c26b7493ff3"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\distill-idea\\test-plan.md": {
+    "mtime": 1779801787.0356383,
+    "ast_hash": "246131a3ee2497e5024f91aedd1034d2",
+    "semantic_hash": "246131a3ee2497e5024f91aedd1034d2"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\phase\\input000.md": {
+    "mtime": 1779820408.4288294,
+    "ast_hash": "e4be1a79d09d28cfe8e41382b4e495e4",
+    "semantic_hash": "e4be1a79d09d28cfe8e41382b4e495e4"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\phase\\input001.md": {
+    "mtime": 1779820426.0177455,
+    "ast_hash": "542527f59576f7962553231592f9eec9",
+    "semantic_hash": "542527f59576f7962553231592f9eec9"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\phase\\input002.md": {
+    "mtime": 1779820438.82655,
+    "ast_hash": "1e9caa87c264338c6d7e6f82c6baf0b1",
+    "semantic_hash": "1e9caa87c264338c6d7e6f82c6baf0b1"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\phase\\input003.md": {
+    "mtime": 1779820452.5945392,
+    "ast_hash": "cc6c1d3a833c1bc2dd651df7c37a5d20",
+    "semantic_hash": "cc6c1d3a833c1bc2dd651df7c37a5d20"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\phase\\input004.md": {
+    "mtime": 1779820467.8065586,
+    "ast_hash": "10c22d9cbda99a00ea16084667b92b13",
+    "semantic_hash": "10c22d9cbda99a00ea16084667b92b13"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\phase\\input005.md": {
+    "mtime": 1779820484.96285,
+    "ast_hash": "a19033767e1b97d9cc2447a77b76cb5a",
+    "semantic_hash": "a19033767e1b97d9cc2447a77b76cb5a"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\phase\\input006.md": {
+    "mtime": 1779820499.522089,
+    "ast_hash": "4217e836c9ffdf3847cf64d703ec8080",
+    "semantic_hash": "4217e836c9ffdf3847cf64d703ec8080"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\phase\\output000.md": {
+    "mtime": 1779820420.048218,
+    "ast_hash": "d815349c75291a9616286812681105b2",
+    "semantic_hash": "d815349c75291a9616286812681105b2"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\phase\\output001.md": {
+    "mtime": 1779820433.767548,
+    "ast_hash": "fbd18058797b0b2ebe1f112cab4f2e1a",
+    "semantic_hash": "fbd18058797b0b2ebe1f112cab4f2e1a"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\phase\\output002.md": {
+    "mtime": 1779820446.2805996,
+    "ast_hash": "55b91e9bf6d9efea3cbffa0024a0af56",
+    "semantic_hash": "55b91e9bf6d9efea3cbffa0024a0af56"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\phase\\output003.md": {
+    "mtime": 1779820461.4672177,
+    "ast_hash": "6398938eb843c405675154d00f47c323",
+    "semantic_hash": "6398938eb843c405675154d00f47c323"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\phase\\output004.md": {
+    "mtime": 1779820478.7578933,
+    "ast_hash": "ac0fafd219a6eaa8d8cf1720284ff408",
+    "semantic_hash": "ac0fafd219a6eaa8d8cf1720284ff408"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\phase\\output005.md": {
+    "mtime": 1779820493.978898,
+    "ast_hash": "02e0d97a259eae73953206b9e7b2e3f5",
+    "semantic_hash": "02e0d97a259eae73953206b9e7b2e3f5"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\phase\\output006.md": {
+    "mtime": 1779820506.3774865,
+    "ast_hash": "ef11e34fca765baaa39b9bb50527a7b4",
+    "semantic_hash": "ef11e34fca765baaa39b9bb50527a7b4"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\phase\\test-plan.md": {
+    "mtime": 1779820546.9897738,
+    "ast_hash": "ef4d77d8ed8afa746e73830aeb13b03a",
+    "semantic_hash": "ef4d77d8ed8afa746e73830aeb13b03a"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\triage-idea\\input000.md": {
+    "mtime": 1779801614.0715792,
+    "ast_hash": "c2e30ac3937f26272f58f899d366b8c0",
+    "semantic_hash": "c2e30ac3937f26272f58f899d366b8c0"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\triage-idea\\input001.md": {
+    "mtime": 1779801618.8757207,
+    "ast_hash": "6d6489752425e89788e3811d6cbf818a",
+    "semantic_hash": "6d6489752425e89788e3811d6cbf818a"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\triage-idea\\input002.md": {
+    "mtime": 1779801624.412765,
+    "ast_hash": "7514512e616433383a88861766039525",
+    "semantic_hash": "7514512e616433383a88861766039525"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\triage-idea\\input003.md": {
+    "mtime": 1779801629.7735925,
+    "ast_hash": "0acaf254cc02ecc020dc0ac898391f13",
+    "semantic_hash": "0acaf254cc02ecc020dc0ac898391f13"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\triage-idea\\input004.md": {
+    "mtime": 1779801636.2492006,
+    "ast_hash": "57d6921c4fff0baec4580f4183eda14b",
+    "semantic_hash": "57d6921c4fff0baec4580f4183eda14b"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\triage-idea\\input005.md": {
+    "mtime": 1779801645.8373363,
+    "ast_hash": "6bdfc6b654e72ab232d46a3a57dfe100",
+    "semantic_hash": "6bdfc6b654e72ab232d46a3a57dfe100"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\triage-idea\\output000.md": {
+    "mtime": 1779801617.8282056,
+    "ast_hash": "5ac2160b594e4d5b2070aec020907548",
+    "semantic_hash": "5ac2160b594e4d5b2070aec020907548"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\triage-idea\\output001.md": {
+    "mtime": 1779801623.0086086,
+    "ast_hash": "d5de03627077877e57360df92f5b3a5a",
+    "semantic_hash": "d5de03627077877e57360df92f5b3a5a"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\triage-idea\\output002.md": {
+    "mtime": 1779801628.7289968,
+    "ast_hash": "ea58fbb5e4b92b8f6ba822182241cd6b",
+    "semantic_hash": "ea58fbb5e4b92b8f6ba822182241cd6b"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\triage-idea\\output003.md": {
+    "mtime": 1779801634.3526282,
+    "ast_hash": "dc0de5179bd6fea47eab7b096e9930d1",
+    "semantic_hash": "dc0de5179bd6fea47eab7b096e9930d1"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\triage-idea\\output004.md": {
+    "mtime": 1779801641.0166223,
+    "ast_hash": "13b9fa86585ca5c309c2c3e21dccc379",
+    "semantic_hash": "13b9fa86585ca5c309c2c3e21dccc379"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\triage-idea\\output005.md": {
+    "mtime": 1779801647.7901423,
+    "ast_hash": "993515e4fe8bcd210e7c8fefa48f83e5",
+    "semantic_hash": "993515e4fe8bcd210e7c8fefa48f83e5"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\skills\\test\\triage-idea\\test-plan.md": {
+    "mtime": 1779801672.9386356,
+    "ast_hash": "30811bb78441c1d17395fc8c4ea17716",
+    "semantic_hash": "30811bb78441c1d17395fc8c4ea17716"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\tpl\\tpl_idea.md": {
+    "mtime": 1779874310.7560894,
+    "ast_hash": "2578e4f87058aa9c15673765a286f2d2",
+    "semantic_hash": "2578e4f87058aa9c15673765a286f2d2"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\tpl\\tpl_test_plan.md": {
+    "mtime": 1779789906.4893477,
+    "ast_hash": "eb6778964a415909f9d8112899190485",
+    "semantic_hash": "eb6778964a415909f9d8112899190485"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\tpl\\tpl_var_pres.md": {
+    "mtime": 1779100370.079975,
+    "ast_hash": "5151bdba332f244c772e2cc631b2af4a",
+    "semantic_hash": "5151bdba332f244c772e2cc631b2af4a"
+  },
+  "C:\\PROJ\\ai-knowhow\\coding\\wf\\wf_proto.md": {
+    "mtime": 1779803061.7767355,
+    "ast_hash": "505133f39d342038eccb5bb0b45919b7",
+    "semantic_hash": "505133f39d342038eccb5bb0b45919b7"
+  }
+}

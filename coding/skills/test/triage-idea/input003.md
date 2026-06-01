@@ -1,0 +1,1 @@
+Add a new optional field "middle_name" to the public user profile API endpoint GET /api/v2/users/:id. The field already exists in the database users table but is not exposed in the API response. Just add it to the serializer. The endpoint has full test coverage including contract tests.

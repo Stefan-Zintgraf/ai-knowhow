@@ -34,7 +34,7 @@ Weakness in any factor creates risk. The guardrails address **Constraints**; the
 
 Apply to every AI-assisted planning or implementation task. Each entry is a headline plus a one-line rule. Detail and nuance live in the referenced category document.
 
-**Phase relevance.** Each rule carries a `Fires:` line showing how strongly the rule applies in each workflow bucket. Values: `none`, `low`, `medium`, `high`. Buckets are **Plan**, **Implement**, **Verify**. Workflow phases (aln, prd, iss, ral, par, rev, ica) and their mapping to these buckets are defined in [phases.md](phases.md). A rule never disappears — `none` means the rule rarely produces decisions in that bucket, not that it can be ignored.
+**Phase relevance.** Each rule carries a `Fires:` line showing how strongly the rule applies in each workflow bucket. Values: `none`, `low`, `medium`, `high`. Buckets are **Plan**, **Implement**, **Verify**. Workflow phases (ide, aln, res, pro, prd, iss, ral, par, qa, rev, ica) and their mapping to these buckets are defined in [phases.md](phases.md). A rule never disappears — `none` means the rule rarely produces decisions in that bucket, not that it can be ignored.
 
 ### 3.1 Minimize Scope
 
@@ -117,19 +117,19 @@ Fires: Plan=high, Implement=high, Verify=high
 When the agent believes a user instruction violates a guardrail, contradicts evidence, or risks regression, it states the disagreement with reasoning before complying. Silent compliance is forbidden. See [gr/gr_governance.md](gr/gr_governance.md).
 
 ### 3.17 Push for Reviewer, Pull for Implementer
-
+I
 Fires: Plan=low, Implement=medium, Verify=high
-Coding-standard and guardrail detail documents are **pulled** on demand by the implementer (kept out of the always-on context) and **pushed** into the reviewer's context up front. Always-on context is kept minimal so work starts in the smart zone. See [gr/gr_operational.md](gr/gr_operational.md) (Op14a, Op14b) and [gr/gr_review.md](gr/gr_review.md).
+Coding-standard and guardrail detail documents are **pulled** on demand by the implementer (kept out of the always-on context) and **pushed** into the reviewer's context up front. Always-on context is kept minimal so work starts in the smart zone. See [gr/gr_operational.md](gr/gr_operational.md) (Op14a, Op14b) and [gr/gr_rev.md](gr/gr_rev.md).
 
 ### 3.18 Review Runs in a Fresh Context
 
 Fires: Plan=none, Implement=low, Verify=high
-Review of a change is performed in a context that does not contain the implementer's prior conversation, plan, or scratch reasoning. Same-context self-review is forbidden because it produces self-justification, not review. See [gr/gr_review.md](gr/gr_review.md) (Rev1).
+Review of a change is performed in a context that does not contain the implementer's prior conversation, plan, or scratch reasoning. Same-context self-review is forbidden because it produces self-justification, not review. See [gr/gr_rev.md](gr/gr_rev.md) (Rev1).
 
 ### 3.19 Prefer Deep Modules
 
 Fires: Plan=high, Implement=medium, Verify=high
-Modules expose small interfaces and hide significant functionality. Shallow modules with many small pieces and tangled cross-dependencies are an anti-pattern, especially because AI tends to default to width. Module-shape decisions are made in alignment/PRD, checked explicitly in review. See [gr/gr_modules.md](gr/gr_modules.md).
+Modules expose small interfaces and hide significant functionality. Shallow modules with many small pieces and tangled cross-dependencies are an anti-pattern, especially because AI tends to default to width. Module-shape decisions are made in alignment/PRD, checked explicitly in review. See [gr/gr_mod.md](gr/gr_mod.md).
 
 ### 3.20 Declare Autonomy: HITL vs AFK
 
@@ -139,12 +139,12 @@ Every task is labeled human-in-the-loop or AFK at the start. `aln` and `prd` are
 ### 3.21 Reach Alignment Before Planning Artifacts
 
 Fires: Plan=high, Implement=low, Verify=none
-Before a PRD, issue decomposition, or implementation begins, the agent and human reach a shared **design concept** via a grilling pass: one question at a time, branches walked, hidden constraints (security, permissions, retention, migrations, observability, API compat, concurrency) explicitly raised. The PRD summarizes alignment; it does not replace it. See [gr/gr_alignment.md](gr/gr_alignment.md).
+Before a PRD, issue decomposition, or implementation begins, the agent and human reach a shared **design concept** via a grilling pass: one question at a time, branches walked, hidden constraints (security, permissions, retention, migrations, observability, API compat, concurrency) explicitly raised. The PRD summarizes alignment; it does not replace it. See [gr/gr_algn.md](gr/gr_algn.md).
 
 ### 3.22 Strict Test-Driven Development (TDD)
 
 Fires: Plan=low, Implement=high, Verify=high
-The agent must write failing tests before writing implementation code (Red-Green-Refactor), including for frontend/visual tasks. Writing tests after the fact is forbidden. See [gr/gr_tdd.md](gr/gr_tdd.md).
+The agent must write failing tests before writing implementation code (Red-Green-Refactor), including for frontend/visual tasks. Writing tests after the fact is forbidden. **Exemption:** in `direct-edit` mode (per 3.29 / gr_idea.md Idea8), TDD may be relaxed under HITL-confirmed carve-outs: carve-out A (behavior-bearing change with sufficient existing tests, run green pre/post) or carve-out B (behavior-free change, verified by lint + spell-check + HITL eyeball). Silent application of either carve-out is forbidden. See [gr/gr_tdd.md](gr/gr_tdd.md) TDD1–TDD11.
 
 ### 3.23 Enforce Vertical Slices
 
@@ -154,7 +154,7 @@ Tasks must be sliced vertically (crossing UI, API, DB layers) to deliver testabl
 ### 3.24 Prevent Documentation Rot (Retire PRDs)
 
 Fires: Plan=high, Implement=low, Verify=none
-Old PRDs and plans must not be kept indefinitely in the repository files where they can mislead future agents. Store journey documents and PRDs externally (e.g. GitHub Issues) and close them when done. See [gr/gr_documentation.md](gr/gr_documentation.md).
+Old PRDs and plans must not be kept indefinitely in the repository files where they can mislead future agents. Store journey documents and PRDs externally (e.g. GitHub Issues) and close them when done. Enforcement: paths matching `prd/**`, `**/PRD-*.md`, or `**/*_prd.md` are forbidden in the working tree (pre-commit lint); the PRD body lives in the owning issue, not in the repo. See [gr/gr_documentation.md](gr/gr_documentation.md).
 
 ### 3.25 Clear Context Over Compaction
 
@@ -164,7 +164,62 @@ The agent must start fresh sessions (clear context) instead of summarizing long 
 ### 3.26 Plan via Dependency Graphs (DAGs)
 
 Fires: Plan=high, Implement=none, Verify=none
-When decomposing a PRD into tasks, the agent must create an issue DAG (Directed Acyclic Graph) with explicit blocking relationships. Sequential multi-phase plans are forbidden because they serialize work. Each issue must be independently grabbable. See [gr/gr_governance.md](gr/gr_governance.md).
+When decomposing a PRD into tasks, the agent must structure the plan as an issue DAG (Directed Acyclic Graph) of independently grabbable issues with explicit blocking edges. What is forbidden is **plan shape that bakes in forced ordering not justified by real blocking edges** ("Phase 1, Phase 2, Phase 3" lists). **Execution mode is orthogonal:** sequential execution over a DAG (single-agent `ral`) is allowed and often preferred; parallel execution (`par`) is a bonus when blocking edges permit. See [gr/gr_governance.md](gr/gr_governance.md).
+
+### 3.27 Retire Research Artifacts
+
+Fires: Plan=high, Implement=low, Verify=low
+Sprint-scoped research files (`research/<topic>.md`) are cached external knowledge, not durable documentation. They must be **deleted** when the sprint or feature closes — stale research actively misleads future agent runs because it looks authoritative but reflects yesterday's API or codebase. Distinct from 3.24 (PRDs move to external trackers); research files live in the working tree briefly, then are removed outright. Enforcement: every `research/<topic>.md` declares a single `owner-issue: #NNN` (the PRD/feature epic) in its Res4 provenance header; pre-commit lint rejects a research file without the field. Retirement trigger = owner issue closes → the same PR that closes the feature deletes the file, verified by Q11 in `qa`. See [gr/gr_res.md](gr/gr_res.md).
+
+### 3.28 Prototype Hard-to-Reverse Decisions
+
+Fires: Plan=high, Implement=low, Verify=low
+When grilling cannot resolve a design decision in words AND either (a) the decision is hard / expensive to reverse once code lands, OR (b) the wrong-choice cost vastly exceeds the cost of building 2–3 throwaway variants, the agent enters phase `pro`: produce 2–3 disposable variants (FE/UX, architecture, or integration — one flavor per invocation), let the human pick, record rejected variants as negative decisions, **delete the sandbox before** production impl begins. Agent does not self-judge. `pro` is HITL by construction. See [gr/gr_proto.md](gr/gr_proto.md).
+
+### 3.29 Right-Size the Workflow (Mode Selection in `ide`)
+
+Fires: Plan=high, Implement=low, Verify=low
+The full pipeline is scale-invariant — trivial tasks **collapse** phases rather than skip them silently. Mode selection is the named entry-triage decision owned by the `ide` phase (gr_idea.md Idea8): the agent proposes one of three modes — `direct-edit` (`ide`→`ral`→`qa`), `mini` (`ide`→`aln`-collapsed→`ral`→`qa`), `full` (full pipeline) — based on the 4-axis matrix (design ambiguity, blast radius, reversibility, existing test coverage); the human confirms. **Tripwire surfaces** — public API, schema, auth, security, safety-critical, concurrency, broad architecture — force `full` regardless of axis scores. Mid-task tripwire discovery triggers 3.37 halt. Silent mode pick or silent mode change is forbidden. See [gr/gr_idea.md](gr/gr_idea.md) Idea8 + Idea11 and [gr/gr_governance.md](gr/gr_governance.md) (Gov5b).
+
+### 3.30 Converge the QA Loop on Human Verdict
+
+Fires: Plan=none, Implement=low, Verify=high
+The plan → execute → QA loop (`iss → ral|par → qa → fix-now → iss` or pass) terminates on an explicit human verdict, not a mechanized checklist. Pass requires (a) zero fix-now findings remaining and (b) PRD intent met in the human's judgment; `pass-with-backlog` is allowed — backlog findings do not block convergence. Silent downgrading of fix-now → backlog to force a pass is forbidden. Mechanized convergence (typed AC-checklist gate) is deferred (coding_plan.md D9). See [gr/gr_qa.md](gr/gr_qa.md) (Q9).
+
+### 3.31 Gray-Box Labor Partition
+
+Fires: Plan=high, Implement=high, Verify=high
+Deep modules are built under a default labor partition: **human owns the interface and boundary tests; agent owns the internals; source stays visible** (gray, not black — the human may step in but does not have to). Partition applies by default to AFK-eligible work (Gov5a); HITL work requires the agent to **ask** which partition variant to use — silent assumption is forbidden. QA consequence: human reads the seam (interface + boundary tests + AC), not internals line-by-line; `rev` of internals is unchanged. See [gr/gr_mod.md](gr/gr_mod.md) (M3a) and [gr/gr_qa.md](gr/gr_qa.md) (Q10).
+
+### 3.32 Distill the Brief into 3–6 Goals (Idea Phase)
+
+Fires: Plan=high, Implement=none, Verify=none
+Before `aln` grilling begins, the agent distills the incoming brief / backlog item / stakeholder ask into **3–6 major goals** (phase `ide`). No details (no module map, no APIs, no UX specifics, no acceptance criteria). Negative goals welcome. HITL only — agent proposes, human edits. Output anchors `aln` but does not replace it. Persisted to `<artifacts>/<WI>/idea.md` with companion `<artifacts>/<WI>/status_idea.md` (`status: open|wip|done`) so downstream phases can read the anchor; retired with the rest of `<artifacts>/<WI>/` at WI close (3.33). Collapsible (3.29) when the upstream brief already names goals explicitly. See [gr/gr_idea.md](gr/gr_idea.md).
+
+### 3.33 Retire Idea Artifacts
+
+Fires: Plan=high, Implement=low, Verify=low
+Idea goal files (`<artifacts>/<WI>/idea.md`) and their companion `<artifacts>/<WI>/status_idea.md` are WI-scoped anchor artifacts, not durable documentation. They must be **deleted** when the work-item closes — stale idea files actively mislead future agent runs because they look authoritative but reflect yesterday's understanding of the work. Distinct from 3.24 (PRDs move to external trackers) and parallel to 3.27 (research files retire on owner-issue close): idea files live in `<artifacts>/<WI>/` for the WI lifecycle, then are removed outright with the rest of `<artifacts>/<WI>/`. Enforcement: every `<artifacts>/<WI>/idea.md` is paired with `<artifacts>/<WI>/status_idea.md`; the same PR that closes the WI deletes `<artifacts>/<WI>/`, verified by Q11 in `qa`. Human-only `done` on `status_idea.md` — never auto-flip. See [gr/gr_idea.md](gr/gr_idea.md).
+
+### 3.34 Capture Non-Obvious Decisions as ADRs
+
+Fires: Plan=high, Implement=low, Verify=medium
+Decisions that are (a) **hard to reverse**, (b) **surprising without context**, and (c) the result of a **real tradeoff** with downstream consequences are captured as Architectural Decision Records at `docs/adr/NNNN-<slug>.md`. Distinct from Aln15 negative decisions (rejected options live in the alignment transcript) and from PRDs (PRDs state *what*, ADRs explain *why* for sub-decisions). ADRs are durable, in-tree, and superseded — never silently deleted — when reversed. ADRs may be drafted during `aln` (per Aln17 in-session), surfaced during `rev` (when review finds a surprising choice with no rationale), or produced by `ica`. Routing (§5) must surface relevant ADRs when their topic matches the task; the implementer pulls them on demand (3.17). See [gr/gr_adr.md](gr/gr_adr.md).
+
+### 3.36 Retire Alignment Transcripts
+
+Fires: Plan=high, Implement=low, Verify=low
+Alignment transcripts (`<artifacts>/<WI>/algn_transcript.md`) and their companion `<artifacts>/<WI>/status_algn_transcript.md` are WI-scoped session artifacts, not durable documentation. They must be **deleted** when the work-item closes — stale transcripts actively mislead future agent runs because they reflect yesterday's understanding of the work. Distinct from 3.24 (PRDs move to external trackers) and parallel to 3.33 (idea files retire on WI close) and 3.27 (research retires on owner-issue close): the transcript is the *source* artifact, the PRD composed by A2 is its *destination summary*. Enforcement: every `<artifacts>/<WI>/algn_transcript.md` is paired with `<artifacts>/<WI>/status_algn_transcript.md`; the same PR that closes the WI deletes `<artifacts>/<WI>/`, verified by Q11 in `qa`. Human-only `done` on `status_algn_transcript.md` — never auto-flip. See [gr/gr_algn.md](gr/gr_algn.md) Aln18.
+
+### 3.37 Tripwire Discovery Forces Halt and Mode Re-Triage
+
+Fires: Plan=high, Implement=high, Verify=medium
+When the agent discovers a tripwire surface (3.29 list — public API, schema, auth, security, safety-critical, concurrency, broad architecture) mid-task after a non-`full` mode was selected in `ide`, the agent **halts, does not edit**, and surfaces the discovery on the GH issue body. The human picks: (i) approve narrow edit with explicit reasoning recorded on the issue, or (ii) re-enter `ide` for mode re-triage per Idea11. Either path is logged on the issue body — silent expansion of scope under a too-small mode is forbidden. Specialization of 3.7 (stop on high-risk decisions) for the scope-mode dimension. See [gr/gr_idea.md](gr/gr_idea.md) Idea11 and [gr/gr_governance.md](gr/gr_governance.md).
+
+### 3.35 Maintain `context.md` and CLAUDE.md Pointer
+
+Fires: Plan=high, Implement=medium, Verify=low
+Each bounded context has a `context.md` at its root that defines the project's ubiquitous-language terms; a monorepo with multiple contexts forms a context map of many `context.md` files. The local `CLAUDE.md` (or equivalent agent-instruction file) carries an explicit pointer to the domain docs so agents — notably A1 `align-concept` per Aln17 — find them reliably. `context.md` is **read at session start, updated in-session under HITL accept** (Aln17), and durable (not retired like PRDs per 3.24 or research per 3.27). See [gr/gr_domain_language.md](gr/gr_domain_language.md) L8 and L9.
 
 ---
 
@@ -248,25 +303,49 @@ Detail: [gr/gr_operational.md](gr/gr_operational.md)
 
 Purpose: protect codebase shape against shallow-module drift. Prefer deep modules with small interfaces hiding significant functionality.
 Apply when: a module is created, split, merged, or restructured; a PRD proposes a module map; review surfaces tangled cross-dependencies; architecture-improvement (`ica`) is run.
-Detail: [gr/gr_modules.md](gr/gr_modules.md)
+Detail: [gr/gr_mod.md](gr/gr_mod.md)
 
 ### 4.14 Review
 
 Purpose: define how a code-review pass is conducted in the smart zone, with standards pushed into context and module depth checked explicitly.
 Apply when: a change is ready for review (`rev` phase); after an AFK loop produces commits; when a human asks the agent to review a diff or branch.
-Detail: [gr/gr_review.md](gr/gr_review.md)
+Detail: [gr/gr_rev.md](gr/gr_rev.md)
 
 ### 4.15 Alignment
 
 Purpose: reach a shared design concept with the human before any planning artifact is written. Grilling produces alignment; PRD only summarizes it.
 Apply when: a new feature, change, or vague backlog item enters the workflow (`aln` phase); before any PRD, issue decomposition, or implementation begins.
-Detail: [gr/gr_alignment.md](gr/gr_alignment.md)
+Detail: [gr/gr_algn.md](gr/gr_algn.md)
 
 ### 4.16 Test-Driven Development
 
 Purpose: enforce the Red-Green-Refactor loop, false-green verification, and mock discipline that keep an autonomous implementation loop honest.
 Apply when: any task in `ral` / `par` that produces or modifies executable logic; reviews (`rev`) that must verify the loop was followed; bug fixes (failing reproduction test first); legacy refactors (characterization tests first).
 Detail: [gr/gr_tdd.md](gr/gr_tdd.md)
+
+### 4.17 Research
+
+Purpose: cache hard-to-recover external knowledge into a sprint-scoped artifact so downstream agent runs don't re-explore from a fresh context window — and retire the artifact before it rots.
+Apply when: phase `res` is entered; `aln` grilling surfaces an external-dependency unknown (third-party API, uncommon SDK, unfamiliar codebase region) the agent must answer with facts; review (`rev`) of work that consumed a `research.md`.
+Detail: [gr/gr_res.md](gr/gr_res.md)
+
+### 4.19 Idea
+
+Purpose: entry phase. Triages incoming work into one of three modes (`direct-edit` / `mini` / `full`) via the 4-axis matrix (Idea8); for `mini`/`full` modes also distills the brief into 3–6 major goals anchoring `aln` grilling; emits the GH issue and bootstraps `<artifacts>/<slug>/` for `mini`/`full` (Idea9).
+Apply when: **every** task entering the workflow — `ide` always runs. Triggered by a brief, Slack note, ticket, vague backlog item, or any direct ask; before any downstream phase begins.
+Detail: [gr/gr_idea.md](gr/gr_idea.md) (Idea1–Idea11)
+
+### 4.18 Prototype
+
+Purpose: resolve hard-to-reverse design decisions by building 2–3 throwaway variants and letting the human pick, instead of pretending grilling can settle every ambiguity.
+Apply when: phase `pro` is entered; `aln` grilling stalls on a decision and the agent considers whether the Pro1 trigger (irreversibility OR cost asymmetry) holds; `res` surfaces a question only a build-to-learn spike can answer; review (`rev`) of work that consumed a prototype (verify sandbox deleted, human picked, no fabricated integration responses).
+Detail: [gr/gr_proto.md](gr/gr_proto.md)
+
+### 4.20 Architectural Decision Records (ADRs)
+
+Purpose: capture the *why* of non-obvious, hard-to-reverse, tradeoff-heavy decisions so future agents and humans don't relitigate them.
+Apply when: a decision that meets the Adr1 threshold (hard-to-reverse AND surprising AND real tradeoff) is made during `aln`, `prd`, `rev`, or `ica`; reviewing a diff whose rationale isn't obvious from code, `context.md`, or the PRD; touching code an existing ADR governs (implementer pulls the ADR per 3.17).
+Detail: [gr/gr_adr.md](gr/gr_adr.md)
 
 ---
 
@@ -406,11 +485,22 @@ Several core rules in §3 are also stated in a `gr/gr_*.md` detail document. Bot
 | 3.19 Prefer Deep Modules                       | M1, A11            |
 | 3.20 Declare Autonomy: HITL vs AFK             | Gov5a              |
 | 3.21 Reach Alignment Before Planning Artifacts | Aln1–Aln6          |
-| 3.22 Strict Test-Driven Development (TDD)      | TDD1, TDD2         |
+| 3.22 Strict Test-Driven Development (TDD)      | TDD1, TDD2, TDD11  |
 | 3.23 Enforce Vertical Slices                   | Gov1a              |
-| 3.24 Prevent Documentation Rot                 | Doc11              |
+| 3.24 Prevent Documentation Rot                 | Doc11, Q11         |
 | 3.25 Clear Context Over Compaction             | Op15               |
 | 3.26 Plan via Dependency Graphs (DAGs)         | Gov1b              |
+| 3.27 Retire Research Artifacts                 | Res1, Res3, Res4, Q11 |
+| 3.28 Prototype Hard-to-Reverse Decisions       | Pro1, Pro3, Pro4   |
+| 3.29 Right-Size the Workflow (Mode Selection)  | Gov5b, Idea8       |
+| 3.30 Converge the QA Loop on Human Verdict     | Q9                 |
+| 3.31 Gray-Box Labor Partition                  | M3a, Q10           |
+| 3.32 Distill the Brief into 3–6 Goals          | Idea1–Idea7        |
+| 3.37 Tripwire Discovery Forces Halt + Re-Triage | Idea11             |
+| 3.33 Retire Idea Artifacts                     | Idea7, Q11         |
+| 3.34 Capture Non-Obvious Decisions as ADRs     | Adr1–Adr10, Aln17  |
+| 3.35 Maintain `context.md` and CLAUDE.md Pointer | L8, L9, Aln17    |
+| 3.36 Retire Alignment Transcripts              | Aln18, Q11         |
 
 **Convention.** §3 entries stay short (headline + one-line rule). Longer prose, nuance, and anti-patterns live in the detail doc. Drift surface is then limited to the headline and one-liner.
 

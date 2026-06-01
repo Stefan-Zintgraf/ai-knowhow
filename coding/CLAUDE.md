@@ -81,3 +81,37 @@ This mode stacks with other active skills/modes. Activation of another skill/mod
 the best version of an office-based team, what specifically is missing that 
 remote can't replicate?
 </response>
+
+# Agent skills
+
+## Issue tracker
+
+GitHub Issues on `Stefan-Zintgraf/ai-knowhow` via `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+## Triage labels
+
+Default vocabulary: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+## Domain docs
+
+Single-context: one `CONTEXT.md` + `docs/adr/` at repo root. See `docs/agents/domain.md`.
+
+## Frozen reference files
+
+Files matching `*Ref.md`, `*-ref.md`, or `*_ref.md` = frozen baseline snapshots, kept for diffing against future regenerations.
+
+Rules (repo-wide):
+- Do not read, edit, or cite these files.
+- Do not feed them to skills as input.
+- Do not create new ones without explicit user permission.
+- Treat as absent during all agent work.
+
+## graphify
+
+This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
+
+Rules:
+- For codebase questions, first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
+- If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
+- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
+- After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).

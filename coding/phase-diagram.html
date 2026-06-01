@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phase Chain Diagram</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --border: #30363d;
+    --text: #c9d1d9;
+    --text-muted: #8b949e;
+    --accent: #58a6ff;
+    --green: #3fb950;
+    --yellow: #d29922;
+    --red: #f85149;
+    --purple: #bc8cff;
+    --orange: #d18616;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  h1 { font-size: 1.4rem; margin-bottom: 0.3rem; }
+  .subtitle { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 2rem; }
+
+  .diagram { position: relative; padding: 2rem 0; }
+
+  .chain {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-wrap: nowrap;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+
+  .phase-node {
+    position: relative;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    min-width: 110px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+    z-index: 2;
+  }
+  .phase-node:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(88, 166, 255, 0.15);
+  }
+  .phase-node.active {
+    border-color: var(--green);
+    box-shadow: 0 0 12px rgba(63, 185, 80, 0.3);
+  }
+
+  .phase-code {
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+  .phase-name {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    margin-top: 0.2rem;
+  }
+
+  .status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 0.4rem;
+  }
+  .status-todo   .status-dot { background: var(--text-muted); }
+  .status-wip    .status-dot { background: var(--yellow); }
+  .status-done   .status-dot { background: var(--green); }
+  .status-blocked .status-dot { background: var(--red); }
+
+  .arrow {
+    display: flex;
+    align-items: center;
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    padding: 0 0.15rem;
+    z-index: 1;
+    user-select: none;
+  }
+  .arrow svg { width: 32px; height: 16px; }
+  .arrow svg line, .arrow svg polyline {
+    stroke: var(--border);
+    stroke-width: 2;
+    fill: none;
+  }
+
+  .optional-branch {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .optional-label {
+    font-size: 0.65rem;
+    color: var(--orange);
+    background: rgba(209, 134, 22, 0.12);
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+  }
+  .phase-node.optional { border-style: dashed; border-color: var(--orange); }
+  .phase-node.optional:hover { border-color: var(--accent); }
+
+  .gate-label {
+    font-size: 0.6rem;
+    color: var(--text-muted);
+    max-width: 100px;
+    text-align: center;
+    margin-top: 0.2rem;
+    line-height: 1.2;
+  }
+
+  .fork-node {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .fork-label {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+
+  .qa-outcomes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-left: 0.3rem;
+  }
+  .outcome {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .outcome.pass { background: rgba(63, 185, 80, 0.15); color: var(--green); }
+  .outcome.fix  { background: rgba(248, 81, 73, 0.15); color: var(--red); }
+  .outcome.backlog { background: rgba(139, 148, 158, 0.15); color: var(--text-muted); }
+
+  .cross-phase {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .cross-phase-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .cross-phase .phase-node { min-width: 90px; }
+
+  .tooltip {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    width: 260px;
+    z-index: 100;
+    font-size: 0.78rem;
+    line-height: 1.5;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    pointer-events: none;
+  }
+  .phase-node:hover .tooltip { display: block; }
+  .tooltip .tt-row { display: flex; justify-content: space-between; margin-bottom: 0.3rem; }
+  .tooltip .tt-label { color: var(--text-muted); }
+  .tooltip .tt-value { font-weight: 600; }
+  .tooltip .tt-desc { color: var(--text-muted); margin-top: 0.4rem; border-top: 1px solid var(--border); padding-top: 0.4rem; }
+
+  .legend {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    flex-wrap: wrap;
+  }
+  .legend-item { display: flex; align-items: center; gap: 0.4rem; }
+  .legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  .modes-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: var(--surface);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .modes-section h2 { font-size: 1rem; margin-bottom: 0.8rem; }
+  .mode-chain {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .mode-label {
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 0.8rem;
+    font-weight: 600;
+    min-width: 100px;
+    color: var(--purple);
+  }
+  .mode-phase {
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 0.78rem;
+    padding: 0.2rem 0.5rem;
+    background: rgba(88, 166, 255, 0.08);
+    border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+  .mode-arrow {
+    color: var(--text-muted);
+    padding: 0 0.3rem;
+    font-size: 0.9rem;
+  }
+  .mode-phase.collapsed { opacity: 0.5; border-style: dashed; }
+
+  .no-active {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+  }
+</style>
+</head>
+<body>
+
+<h1>Phase Chain — Full Mode</h1>
+<div class="subtitle">Interactive view of phases.md §4 sequence &bull; skill status from coding_plan.md</div>
+<div class="no-active" id="active-msg">No active work item (plan/ACTIVE not found)</div>
+
+<div class="diagram">
+  <div class="chain" id="main-chain"></div>
+  <div class="cross-phase" id="cross-phase"></div>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:var(--text-muted)"></div> todo</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--yellow)"></div> wip</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--green)"></div> done</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--red)"></div> blocked</div>
+  <div class="legend-item" style="margin-left:1rem;"><span style="border:2px dashed var(--orange);padding:0 6px;border-radius:4px;font-size:0.7rem;">dashed</span> optional phase</div>
+  <div class="legend-item"><span style="border:2px solid var(--green);padding:0 6px;border-radius:4px;font-size:0.7rem;">glow</span> active phase</div>
+</div>
+
+<div class="modes-section">
+  <h2>Mode Chains</h2>
+  <div class="mode-chain">
+    <span class="mode-label">direct-edit</span>
+    <span class="mode-phase">ide</span><span class="mode-arrow">→</span>
+    <span class="mode-phase">ral</span><span class="mode-arrow">→</span>
+    <span class="mode-phase">qa</span>
+  </div>
+  <div class="mode-chain">
+    <span class="mode-label">mini</span>
+    <span class="mode-phase">ide</span><span class="mode-arrow">→</span>
+    <span class="mode-phase collapsed">aln</span><span class="mode-arrow">→</span>
+    <span class="mode-phase">ral</span><span class="mode-arrow">→</span>
+    <span class="mode-phase">qa</span>
+  </div>
+  <div class="mode-chain">
+    <span class="mode-label">full</span>
+    <span class="mode-phase">ide</span><span class="mode-arrow">→</span>
+    <span class="mode-phase">aln</span><span class="mode-arrow">→</span>
+    <span class="mode-phase" style="opacity:0.5">[res?]</span><span class="mode-arrow">→</span>
+    <span class="mode-phase" style="opacity:0.5">[pro?]</span><span class="mode-arrow">→</span>
+    <span class="mode-phase">prd</span><span class="mode-arrow">→</span>
+    <span class="mode-phase">iss</span><span class="mode-arrow">→</span>
+    <span class="mode-phase">ral|par</span><span class="mode-arrow">→</span>
+    <span class="mode-phase">qa</span>
+  </div>
+</div>
+
+<script>
+const phases = [
+  { code: 'ide', name: 'Idea',           skills: [{id:'A11',name:'distill-idea',status:'todo'},{id:'A13',name:'triage-idea',status:'todo'}], desc: 'Distill raw brief into 3–6 major goals. Triage into direct-edit / mini / full.' },
+  { code: 'aln', name: 'Alignment',      skills: [{id:'A1',name:'align-concept',status:'todo'}], desc: 'Reach shared design concept between human and agent. Document-anchored grilling.' },
+  { code: 'res', name: 'Research',        skills: [{id:'A10',name:'do-research',status:'todo'}], optional: true, gate: 'needs_research', desc: 'Cache hard-to-recover external knowledge. Fires when aln surfaces unknowns.' },
+  { code: 'pro', name: 'Prototype',       skills: [{id:'A9',name:'prototype',status:'todo'}], optional: true, gate: 'pro_gate_tripped', desc: 'Build 2–3 throwaway variants to resolve hard-to-reverse design decisions.' },
+  { code: 'prd', name: 'Destination Doc', skills: [{id:'A2',name:'compose-prd',status:'todo'}], desc: 'Summarize alignment into PRD: problem, solution, stories, decisions, scope.' },
+  { code: 'iss', name: 'Issues',          skills: [{id:'A3',name:'prd-to-dag',status:'todo'}], desc: 'Decompose PRD into independently grabbable issues with blocking edges.' },
+  { code: 'ral', name: 'Ralph Loop',      skills: [{id:'A4',name:'afk-loop',status:'todo'}], fork: true, forkAlt: 'par', desc: 'Sequential AFK implementation via single agent.' },
+  { code: 'par', name: 'Parallel Loop',   skills: [{id:'A5',name:'parallel-loop',status:'blocked'}], fork: true, forkWith: 'ral', desc: 'Parallel implementation across multiple agents. Substrate TBD.' },
+  { code: 'qa',  name: 'Manual QA',       skills: [{id:'A8',name:'qa',status:'wip'}], desc: 'Human-driven check after implementation. Findings → fix-now or backlog.', terminal: true },
+];
+
+const crossPhase = [
+  { code: 'rev', name: 'Review',    skills: [{id:'A6',name:'review',status:'todo'}], desc: 'Agent code review — fresh context. May run alongside any sequential phase.' },
+  { code: 'ica', name: 'Arch Review', skills: [{id:'A7',name:'arch-review',status:'todo'}], desc: 'Scan repo for module deepening / test boundary consolidation opportunities.' },
+];
+
+const arrowSvg = `<svg viewBox="0 0 32 16"><line x1="0" y1="8" x2="24" y2="8"/><polyline points="20,3 26,8 20,13"/></svg>`;
+
+function worstStatus(skills) {
+  const order = ['blocked','todo','wip','done'];
+  let worst = 3;
+  for (const s of skills) {
+    const i = order.indexOf(s.status);
+    if (i < worst) worst = i;
+  }
+  return order[worst];
+}
+
+function buildTooltip(p) {
+  let html = '';
+  for (const s of p.skills) {
+    html += `<div class="tt-row"><span class="tt-label">${s.id}</span><span class="tt-value">${s.name}</span></div>`;
+    html += `<div class="tt-row"><span class="tt-label">status</span><span class="tt-value status-${s.status}"><span class="status-dot"></span> ${s.status}</span></div>`;
+  }
+  if (p.gate) html += `<div class="tt-row"><span class="tt-label">gate</span><span class="tt-value" style="color:var(--orange)">${p.gate}</span></div>`;
+  html += `<div class="tt-desc">${p.desc}</div>`;
+  return html;
+}
+
+function renderNode(p) {
+  const s = worstStatus(p.skills);
+  const cls = ['phase-node', `status-${s}`];
+  if (p.optional) cls.push('optional');
+
+  let inner = `<div class="phase-code">${p.code}</div>`;
+  inner += `<div class="phase-name">${p.name}</div>`;
+  inner += `<span class="status-dot"></span>`;
+  inner += `<div class="tooltip">${buildTooltip(p)}</div>`;
+
+  const node = document.createElement('div');
+
+  if (p.optional) {
+    const wrap = document.createElement('div');
+    wrap.className = 'optional-branch';
+    wrap.innerHTML = `<div class="optional-label">optional</div>`;
+    const n = document.createElement('div');
+    n.className = cls.join(' ');
+    n.innerHTML = inner;
+    wrap.appendChild(n);
+    wrap.innerHTML += `<div class="gate-label">${p.gate}</div>`;
+    return wrap;
+  }
+
+  node.className = cls.join(' ');
+  node.innerHTML = inner;
+  return node;
+}
+
+function renderArrow() {
+  const a = document.createElement('div');
+  a.className = 'arrow';
+  a.innerHTML = arrowSvg;
+  return a;
+}
+
+const chain = document.getElementById('main-chain');
+
+const showPar = false;
+for (let i = 0; i < phases.length; i++) {
+  const p = phases[i];
+  if (p.code === 'par') continue;
+
+  if (p.code === 'ral') {
+    const fork = document.createElement('div');
+    fork.className = 'fork-node';
+    const ralNode = renderNode(p);
+    const parNode = renderNode(phases.find(x => x.code === 'par'));
+    fork.innerHTML = `<div style="display:flex;flex-direction:column;gap:0.3rem;align-items:center;">`;
+    fork.firstChild.appendChild(ralNode);
+    fork.firstChild.innerHTML += `<div class="fork-label">— or —</div>`;
+    fork.firstChild.appendChild(parNode);
+    fork.firstChild.innerHTML += `</div>`;
+    chain.appendChild(fork);
+  } else if (p.terminal) {
+    chain.appendChild(renderNode(p));
+    const outcomes = document.createElement('div');
+    outcomes.className = 'qa-outcomes';
+    outcomes.innerHTML = `
+      <div class="outcome pass">✓ pass → done</div>
+      <div class="outcome fix">↻ fix-now → iss</div>
+      <div class="outcome backlog">▸ backlog → issue filed</div>
+    `;
+    chain.appendChild(renderArrow());
+    chain.appendChild(outcomes);
+  } else {
+    chain.appendChild(renderNode(p));
+  }
+
+  if (i < phases.length - 1 && p.code !== 'par' && !p.terminal) {
+    let next = phases[i+1];
+    if (next.code === 'par') next = phases[i+2] || null;
+    if (next) chain.appendChild(renderArrow());
+  }
+}
+
+const cp = document.getElementById('cross-phase');
+cp.innerHTML = `<div class="cross-phase-label">cross-phase</div>`;
+const cpInner = document.createElement('div');
+cpInner.style.display = 'flex';
+cpInner.style.gap = '1rem';
+for (const p of crossPhase) {
+  cpInner.appendChild(renderNode(p));
+}
+cp.appendChild(cpInner);
+cp.innerHTML += `<div style="font-size:0.72rem;color:var(--text-muted);margin-left:auto;">may run alongside any sequential phase</div>`;
+</script>
+</body>
+</html>

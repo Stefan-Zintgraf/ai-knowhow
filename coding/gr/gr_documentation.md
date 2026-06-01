@@ -58,6 +58,8 @@ Follow the project's existing structure, tone, and Markdown conventions. Don't i
 
 Old PRDs and implementation plans must not be kept indefinitely in the repository files. Stale documentation can actively poison the context of future agents. Store journey documents and PRDs in external systems (e.g., GitHub Issues) and close them when the work is complete to preserve architectural history without polluting the active codebase.
 
+Enforcement: PRD bodies are forbidden in the working tree entirely — no tree artifact exists to "retire," so the gate is "prevent it from being authored in-tree in the first place." Pre-commit lint rejects paths matching `prd/**`, `**/PRD-*.md`, or `**/*_prd.md`; the canonical PRD location is the owning GitHub Issue. `qa` Q11 verifies the same condition at the merge gate as a belt-and-braces check. (Distinct from Res3 research retirement, where the artifact legitimately lives in-tree during the sprint and must be deleted on owner-issue close.)
+
 ### Doc12. Document Public Interfaces (APIs)
 
 Any function, class, or type exported for cross-module or external consumption constitutes a "Public API." While internal implementation comments should be rare (`Doc6`), every public API must have a clear docstring/comment defining its behavioral contract, expected inputs, and error states. This documentation serves as the "cognitive handle" for both humans and agents. The project should maintain an auto-generated snapshot file (e.g., `public_api.md` generated via Python/AST script). Agents must not manually edit this file; instead, it is regenerated to objectively detect public API drift during review.

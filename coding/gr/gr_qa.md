@@ -31,10 +31,12 @@ Manual QA does not replace automated review (`rev`); it complements it. `rev` ch
 ## Rules
 
 ### Q1. Slice Must Be Runnable Before QA Begins
+Skills: qa
 
 QA does not start until the slice runs end-to-end in a real or near-real environment. A slice that compiles but cannot be exercised by a human is not ready for `qa` — it returns to `ral` / `par` for completion.
 
 ### Q2. Exercise the User Path, Not Only the Happy Path
+Skills: qa
 
 The human must walk at least one realistic user persona's full path through the new behavior, including:
 
@@ -46,6 +48,7 @@ The human must walk at least one realistic user persona's full path through the 
 Happy-path-only QA is an anti-pattern (Pocock failure mode #1).
 
 ### Q3. Inspect Surface That Tests Cannot Judge
+Skills: qa
 
 The human explicitly checks dimensions automated tests do not cover well:
 
@@ -56,10 +59,12 @@ The human explicitly checks dimensions automated tests do not cover well:
 - Migration / schema effects visible in the running system.
 
 ### Q4. Every Finding Becomes an Issue
+Skills: qa
 
 No finding is patched ad hoc. Each finding is filed as an issue and triaged. Inline fixes during QA bypass the workflow and lose traceability (Pocock failure mode #2).
 
 ### Q5. Human Triages Each Finding: Fix-Now or Backlog
+Skills: qa
 
 For each finding, the human decides:
 
@@ -70,6 +75,7 @@ For each finding, the human decides:
 Default when in doubt: **fix-now** for safety-critical, destructive, data-integrity, or user-trust-affecting findings; **backlog** for cosmetic or polish items.
 
 ### Q6. QA Output Format
+Skills: qa
 
 QA output is structured:
 
@@ -79,12 +85,95 @@ QA output is structured:
 - **Coverage gaps**: dimensions or paths the QA pass did not exercise (so they are not silently treated as covered).
 
 ### Q7. QA Throughput Must Not Lag Implementation Throughput
+Skills: qa
 
 If agent throughput exceeds QA capacity, the implementation queue is paused, not the QA queue (Pocock failure mode #3). Unreviewed slices are not allowed to stack into a hard-to-QA batch.
 
 ### Q8. Recurring QA Categories Become Automated Tests
+Skills: qa
 
 Findings that repeat across slices (same category, same kind of bug) are converted into automated tests during `ica` or as part of the fix-now follow-up. QA is for taste; recurring mechanical failures should not need human eyes.
+
+### Q9. Loop Convergence Is a Human Verdict
+Skills: qa
+
+The plan → execute → QA loop (`iss → ral|par → qa → fix-now → iss` or pass) terminates on an **explicit human verdict**, not on a mechanized checklist. The human declares `pass` or `pass-with-backlog` (Q6) when both hold:
+
+1. **Zero fix-now findings remain.** Every finding triaged fix-now per Q5 has been resolved and re-QA'd.
+2. **PRD intent is met in the human's judgment.** Where acceptance criteria exist, they are weighed; where they don't, the human judges whether the slice delivers the user-visible behavior the alignment + PRD called for. `pass-with-backlog` is allowed — open backlog findings do not block convergence.
+
+Mechanized convergence (e.g., hard gate on a typed acceptance-criteria checklist tied to the PRD template) is **deliberately deferred** — see coding_plan.md D9. Until D9 is decided, the verdict stays with the human.
+
+Forbidden:
+
+- Passing while fix-now findings remain unresolved.
+- Looping indefinitely seeking zero findings of any kind — backlog findings are not blockers (Q5).
+- Silently downgrading a fix-now finding to backlog to force a pass. Triage is logged (Q4) and visible.
+
+### Q10. Read the Seam, Not the Internals (Gray-Box QA)
+Skills: qa
+
+For modules built under the gray-box labor partition (gr_mod.md M3a), the default human QA read is the **seam**: the public interface, the boundary tests, and user-visible behavior against the PRD acceptance criteria. Internals are not read line-by-line by default.
+
+The lever is cognitive-load reduction. The human's QA budget is spent on:
+
+1. Does the seam contract match the PRD intent?
+2. Do the boundary tests cover the user paths Q2 requires?
+3. Does the running slice meet the acceptance criteria (Q9 verdict inputs)?
+
+Internals are read only when a finding points there, or when M11 depth heuristics flag suspicion (test-boundary leakage, public-API parameter bloat, exported helpers that exist only for tests).
+
+Q10 does **not** weaken `rev` (gr_rev.md). `rev` still inspects the diff including internals. Gray-box reduces the human QA read, not the agent review read — the two roles diverge here intentionally.
+
+Forbidden:
+
+- Treating gray-box as license to skip `rev` of internals.
+- Declaring `pass` (Q9) without having read the seam — the seam read is mandatory; the internals read is conditional.
+- Applying Q10 to modules not built under M3a (e.g., HITL co-authored modules where the partition variant was (ii) or (iii)).
+
+### Q11. Retire Orphaned Ephemeral Artifacts Before Merge
+Skills: qa
+
+`qa` is the merge gate, so it is the right place to verify that sprint-scoped artifacts retire on the same PR that closes their owner. Three checks, mechanical:
+
+1. **Research files (3.27 / Res3 / Res4).** For each `research/<topic>.md` present in the working tree on this PR's branch, read its `owner-issue: #NNN` header. If that issue is being closed by this PR (closes keyword, manual close, or already closed), the PR **must** delete the file. A research file whose owner closed without the file being deleted is a fail-now finding under Q5, not backlog.
+2. **PRD / plan paths (3.24 / Doc11).** Verify no path matching `prd/**`, `**/PRD-*.md`, or `**/*_prd.md` exists in the diff or in the tree. PRD bodies live in the owning issue, never in the repo. Any such path is a fail-now finding.
+3. **Idea / plan-WI directories (3.33 / Idea7).** For each `<artifacts>/<WI>/` present in the working tree on this PR's branch, read `<artifacts>/<WI>/status_idea.md` for its `owner-issue: #NNN` header. If that issue is being closed by this PR, the PR **must** delete the entire `<artifacts>/<WI>/` directory (idea.md, all status_*.md files, every sibling artifact). A `<artifacts>/<WI>/` whose owner closed without the directory being deleted is a fail-now finding under Q5, not backlog. A `<artifacts>/<WI>/` without `status_idea.md` (anchor missing) is also a fail-now finding — every WI directory must carry an idea anchor.
+
+All three checks are agent-runnable in seconds (lint + issue-state read); they appear on the Q6 QA output as a single line ("ephemeral-artifact retirement: clean / dirty"). If the human is operating gray-box (Q10), Q11 is still mandatory — orphan retirement is a seam concern.
+
+Forbidden:
+
+- Merging a PR that closes the owner issue while the research file or `<artifacts>/<WI>/` directory survives.
+- "We'll delete the file in a follow-up PR" — the deletion belongs in the same PR (Res3, 3.33).
+- Adding a new `research/*.md` or `<artifacts>/<WI>/status_idea.md` without an `owner-issue` header to silence the lint (fabricated owner = Op13).
+- Partial retirement: deleting `<artifacts>/<WI>/idea.md` while leaving sibling `<artifacts>/<WI>/<other>.md` files behind. The whole directory retires together.
+
+### Q12. Mode-Dependent `qa` Shape
+Skills: qa
+
+The `qa` phase has three shapes determined by the mode `ide` selected (gr_idea.md Idea8). All three terminate on an explicit human verdict (Q9). The shape difference is the **scope of the verification act**, not the rigor of the verdict.
+
+**`direct-edit` mode — folded `qa`.**
+
+`qa` is not invoked as a separate phase. The verification record produced under TDD11 (gr_tdd.md) — existing-tests-green-pre/post for carve-out A, or lint + spell-check + HITL eyeball for carve-out B — **is** the `qa` step. The human's confirmation of that record is the Q9 verdict. The verdict is recorded on the GH issue body, not in a separate `qa` notes file. Q11 retirement checks still apply if the WI later expanded to include `<artifacts>/<slug>/` artifacts; if no folder exists, Q11 checks 1 and 3 are no-ops, check 2 still runs.
+
+**`mini` mode — short `qa`.**
+
+The human walks the new behavior on the running slice. Q1–Q3 still apply (runnable, user-path-not-only-happy-path, surface tests cannot judge). Q6 output is compressed: verdict + slice exercised + findings (each with triage decision) recorded inline on the GH issue body under a `## QA` heading, not in a separate notes file. Q11 retirement checks all run.
+
+**`full` mode — full `qa`.**
+
+The complete `qa` per Q1–Q11 above. C5 QA notes template (see coding_plan.md) is used. Findings routed to `iss` per Q5.
+
+**Forbidden:**
+
+- Silently skipping `qa` in `direct-edit` mode because "the issue is small." The verification record substitutes for the phase invocation; it does not eliminate it.
+- Treating the folded `direct-edit` `qa` as license to skip TDD11 verification (carve-out A or B). The verification is the substitution; without it, there is no `qa`.
+- Promoting a `mini` `qa` to "informal" — Q1–Q3 are mandatory regardless of mode.
+- Using the wrong shape for the mode. Mode is on the issue label (`mode:*` per Idea9); the agent reads it before starting `qa`.
+
+**Mode-change during `qa`.** If `qa` surfaces a finding that retroactively invalidates the mode pick (e.g., a fix-now finding shows the change has wider blast radius than `direct-edit` allowed), the agent halts per 3.37 and proposes mode upgrade via Idea11. The current `qa` cycle is suspended; on upgrade, full `qa` resumes from the start.
 
 ---
 
@@ -102,10 +191,10 @@ Findings that repeat across slices (same category, same kind of bug) are convert
 
 ## Notes on Interaction with Other Guardrails
 
-- Pairs with `gr_review.md` — `rev` checks the diff, `qa` checks the running behavior. Both are required for user-visible changes (cross-reference: Rev13).
+- Pairs with `gr_rev.md` — `rev` checks the diff, `qa` checks the running behavior. Both are required for user-visible changes (cross-reference: Rev13).
 - Findings routed to `iss` re-enter the standard issue flow with HITL/AFK tagging per `gr_governance.md`.
-- Recurring findings feed `gr_modules.md` / `ica` (Q8): module boundaries and test boundaries may need rework.
-- Cross-reference: `gr_alignment.md` — visual taste and domain judgment surfaced during `aln` are the same dimensions verified during `qa`.
+- Recurring findings feed `gr_mod.md` / `ica` (Q8): module boundaries and test boundaries may need rework.
+- Cross-reference: `gr_algn.md` — visual taste and domain judgment surfaced during `aln` are the same dimensions verified during `qa`.
 
 ---
 

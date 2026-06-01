@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(findstr /N /R \"aln prd iss ral par qa rev ica res\" c:\\\\PROJ\\\\ai-knowhow\\\\coding\\\\AI_Coding_Workflow.md)",
+      "Bash(findstr /V \"^$\")",
+      "Bash(mkdir -p \"c:\\\\PROJ\\\\ai-knowhow\\\\coding\\\\skills\\\\input\" \"c:\\\\PROJ\\\\ai-knowhow\\\\coding\\\\skills\\\\output\")",
+      "Bash(Get-ChildItem \"c:\\\\PROJ\\\\ai-knowhow\\\\coding\\\\.claude\\\\\" -Force)",
+      "Bash(dir \"c:\\\\PROJ\\\\ai-knowhow\\\\coding\\\\.claude\" /a)"
+    ],
+    "additionalDirectories": [
+      "c:\\PROJ\\ai-knowhow\\coding\\skills"
+    ]
+  }
+}
