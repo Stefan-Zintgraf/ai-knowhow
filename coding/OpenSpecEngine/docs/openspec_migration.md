@@ -31,6 +31,12 @@ This migration is its **own standalone project** at `C:\PROJ\ai-knowhow\coding\O
   "update the skillfactory docs", "made generic in place"). Such items instead **create the generic
   OpenSpecEngine equivalent** from the read-only ai-mail original. The only ai-mail file this effort
   touches is a one-line back-pointer already added to its `todo.md`.
+- **No OpenSpec fork (ADR-0007):** the OpenSpec npm package is consumed as a **stock dependency and is
+  never forked or patched**. Every adjustment lives on OpenSpec's officially-supported customization
+  surface — custom `schema.yaml` + `templates/` (`openspec schema fork`), `openspec/config.yaml`
+  (`context`/`rules`/`schema`), profile selection, and the regenerated thin skills. Behaviour OpenSpec
+  lacks natively (e.g. a hard archive-time gate) is layered *around* the CLI as an external tool (git
+  hook / CI), not by editing its source.
 
 ---
 
@@ -113,6 +119,13 @@ ADR gate, no FR↔UC coverage). So the lenses are net-new value OpenSpec does no
 `openspec schema init <name>` / `openspec schema validate <name>` / `openspec schema which`. The whole
 point of OPSX over legacy OpenSpec was to move the workflow *out of TypeScript* into editable
 YAML+Markdown (`docs/opsx.md` "Why This Exists"). That is exactly the seam a migration needs.
+
+> **Errata 2026-06-10 (ADR-0007):** these mechanisms (`schema fork`/`init`/`validate`/`which`, templates,
+> `config.yaml`, profile selection) are the **complete** allowed adjustment surface — the OpenSpec package
+> is never forked or patched. Where the plan needs behaviour OpenSpec lacks natively (the hard `review`
+> gate, §9.1 / M2-A6), it **wraps the CLI externally** (git hook / CI); it never edits the `Validator`
+> (a fixed Zod class with no plugin point). Native engine behaviour the plan *exploits* (ordering via
+> `requires`; the heading-string delta-merge key, ADR-0003) is not a fork. See ADR-0007.
 
 ## 2 · The ai-mail skillset, classified by how it migrates
 
@@ -406,9 +419,10 @@ the **driver keeps Part A sequencing**.
 > cargo-culting.
 
 > **Decisions (prerequisites — drafted 2026-06-09, NOT yet ratified).** These forks are each **ADR-worthy**
-> and **captured as ADRs in `OpenSpecEngine/docs/adr/0001–0006`**. **⚠ All six are `proposed`, not
+> and **captured as ADRs in `OpenSpecEngine/docs/adr/0001–0007`**. **⚠ All seven entered as `proposed`, not
 > `accepted`** — 0001–0005 were authored by a free-style prompt and never grilled; 0006 (dogfood OpenSpec
-> for the build) was reasoned deliberately but still wants grilling. They fix Milestone 1's schema shape, so
+> for the build) was reasoned deliberately but still wants grilling; 0007 (no fork of OpenSpec) was added
+> 2026-06-10 from a direct project constraint. They fix Milestone 1's schema shape, so
 > **`M1-P0` must ratify or amend them (flip `proposed → accepted`) before Part A authoring begins.** D-DEC6
 > additionally gates `M1-P1` (the dogfood envelope). The summaries below are the *draft* positions entering
 > that grill:
@@ -476,7 +490,7 @@ sub-agents, driver owns sequencing**; lens re-creation = **`/make-skill` chain**
 ### Milestone 1 · Part 0 — alignment + build-envelope bootstrap (human-in-the-loop)
 
 **- [ ] M1-P0 · Grill the migration decisions → produce `CONTEXT.md` + ratify/amend ADRs**
-- **Files:** `OpenSpecEngine/docs/CONTEXT.md` (new), `docs/adr/0001–0006` (amend in place + flip Status if grilling moves them).
+- **Files:** `OpenSpecEngine/docs/CONTEXT.md` (new), `docs/adr/0001–0007` (amend in place + flip Status if grilling moves them).
 - **Why:** ADRs 0001–0005 were authored by a **free-style prompt** and 0006 deliberately but unratified —
   **none grilled** — and **`CONTEXT.md` was never produced**, yet every downstream node
   `instruction`/`template` (M1-A2/A3) and the `context`/`rules` digest (M1-A4) must use the project glossary
@@ -488,9 +502,10 @@ sub-agents, driver owns sequencing**; lens re-creation = **`/make-skill` chain**
   amended) — §3 + §9 (DEC1/4/5), §6 + §7 + §8 (DEC2/3/4), §1 + §4 as glossary-source reads. One question
   at a time; surface unstated assumptions (hit hardest on DEC1 retire-`workflow.md` and DEC5 fuse-refactor;
   don't rubber-stamp DEC2/3/4; DEC6 is the only un-free-styled ADR). Extend the ubiquitous-language
-  glossary in `CONTEXT.md` with the terms *this* ADR sharpens (cumulative target across all six sessions:
+  glossary in `CONTEXT.md` with the terms *this* ADR sharpens (cumulative target across all seven sessions:
   schema, node, artifact, lens, change, milestone, delta-spec, fail-closed gate, EXPANDED profile, OPSX,
-  envelope, driver, spine). Amend the ADR if the grill moves it, or leave a one-line ratified note if it
+  envelope, driver, spine, officially-supported customization / no-fork surface). Amend the ADR if the
+  grill moves it, or leave a one-line ratified note if it
   survives; then flip its checklist box to `[x]` and **stop** — the next ADR is a separate fresh session.
 - **ADR ratification progress** (the fresh-session agent reads this to pick the next ADR; flip the box
   when that ADR's grill completes, and record the outcome inline):
@@ -500,6 +515,7 @@ sub-agents, driver owns sequencing**; lens re-creation = **`/make-skill` chain**
   - [ ] 0004 · Adopt delta/specs model (10-node Basic)
   - [ ] 0005 · Fuse genericity refactor with migration (Option D)
   - [ ] 0006 · Dogfood OpenSpec for the build (envelope + Part B)
+  - [ ] 0007 · No fork of OpenSpec — officially-supported customization only
 - **Cross-ADR carry-overs** (reconciliations one grill owes a *later* ADR. The fresh-session agent MUST
   read the entries tagged to its selected ADR **before** grilling, address them during the session, then
   strike them through `~~like this~~` with a one-line outcome. When *your* amendment creates a new work
@@ -515,6 +531,11 @@ sub-agents, driver owns sequencing**; lens re-creation = **`/make-skill` chain**
     `### Requirement: FR-### — <name>` shape. The 0004 grill must reconcile the `specs`-node heading shape to
     ID-only, and confirm the reword path is a plain `MODIFIED` (no `RENAMED`, since the ID — the match key —
     never changes).
+  - → **0007:** ADR-0007 (drafted 2026-06-10 from the no-fork project constraint) withdrew the
+    "`openspec validate` extension" option from M2-A6 and amended ADR-0001's archive-enforcement consequence
+    to external-wrapper-only (git hook / CI). The 0007 grill must confirm this reconciliation holds — that
+    no other unit assumes an engine-internal gate, and that "engine-enforced" in 0001–0006 reads as
+    "external wrapper" except for the genuinely-native cases (ordering; the ADR-0003 heading match key).
 - **Prompt (paste verbatim in a fresh session).** `grill-with-docs` grills "a plan/design in the
   conversation" — a fresh session has none, so the subject must be handed to it explicitly:
 
@@ -544,7 +565,7 @@ sub-agents, driver owns sequencing**; lens re-creation = **`/make-skill` chain**
   note AT the defect (e.g. `> **Errata 2026-06-10:** superseded by ADR-000X — …`) pointing to
   the governing ADR — do NOT rewrite the analysis in place.
 
-  WRITE TARGETS: docs/adr/0001–0006 (+ docs/adr/0007 if a new decision surfaces) and
+  WRITE TARGETS: docs/adr/0001–0007 (+ docs/adr/0008 if a new decision surfaces) and
   docs/CONTEXT.md. The openspec_migration.md §1–§10 ANALYSIS is frozen — only a dated errata note may
   be appended (see ERRATA). EXCEPTION: the M1-P0 "ADR ratification progress" checklist and "Cross-ADR
   carry-overs" list are LIVE process state — flip your box and add/strike carry-over entries there.
@@ -555,15 +576,18 @@ sub-agents, driver owns sequencing**; lens re-creation = **`/make-skill` chain**
      refactor + migration) — double-transcription claim; DEC6 (dogfood OpenSpec for the build) —
      the only deliberately-reasoned ADR, still unratified. DEC2/DEC3/DEC4: no rubber-stamp —
      DEC3 path-A reversibility (§7 A-vs-B), DEC4 delta-reshaping cost (§9.2), DEC2 Pure-first
-     vs hidden Milestone-2 rework (§8 "sequenced, not chosen").
+     vs hidden Milestone-2 rework (§8 "sequenced, not chosen"). DEC7 (no fork) — does the
+     external-wrapper gate (git hook / CI) actually deliver the §9.1 rigor, or is an
+     engine-internal gate worth a maintained fork after all? Confirm no other unit assumes an
+     in-engine gate.
   2. As terms sharpen, write/extend the ubiquitous-language glossary in docs/CONTEXT.md (create if
-     absent), adding the terms THIS ADR sharpens. Cumulative target across the six sessions:
+     absent), adding the terms THIS ADR sharpens. Cumulative target across the seven sessions:
      schema, node, artifact, lens, change, milestone, delta-spec, fail-closed gate,
-     EXPANDED profile, OPSX, envelope, driver, spine.
+     EXPANDED profile, OPSX, envelope, driver, spine, officially-supported customization / no-fork surface.
   3. When the decision survives, flip its ADR Status proposed→accepted and add a
      "ratified via grill <current date>" note. When it moves, amend the ADR's Decision +
      Consequences inline. If the grill surfaces a hard-to-reverse decision not already in
-     0001–0006, draft docs/adr/0007. THEN flip this ADR's box to [x] in the M1-P0 "ADR
+     0001–0007, draft docs/adr/0008. THEN flip this ADR's box to [x] in the M1-P0 "ADR
      ratification progress" checklist and STOP — the next ADR is a separate fresh session.
   4. Write the ADR LEAN — it is re-read cold later, so keep ONLY: the decision, why, rejected
      alternatives with reasons, and consequences a future maintainer must not re-litigate. CUT process
@@ -583,7 +607,7 @@ sub-agents, driver owns sequencing**; lens re-creation = **`/make-skill` chain**
   amended with the surfaced consequence; its `proposed → accepted` flip is done where it survives; its box in
   the *ADR ratification progress* checklist is flipped to `[x]`; `CONTEXT.md` exists and has been extended
   with the terms that ADR sharpened; no part of that decision left merely asserted.
-- **POST (unit complete):** M1-P0 is done only when **all six** checklist boxes are `[x]` (six fresh
+- **POST (unit complete):** M1-P0 is done only when **all seven** checklist boxes are `[x]` (seven fresh
   sessions) and `CONTEXT.md` covers the cumulative load-bearing terms.
 
 **- [ ] M1-P1 · Switch the build onto OpenSpec — bootstrap the dogfood change envelope (DEC6)**
@@ -594,7 +618,7 @@ sub-agents, driver owns sequencing**; lens re-creation = **`/make-skill` chain**
   `<spine-name>` schema authored by Part A — keep the two OpenSpec contexts in separate folders and name
   them explicitly (ADR-0006 §Consequences).
 - **Change:** `openspec init` (this is where `M1-A0`'s init folds in); `/opsx:new <build-change>`; write
-  `design.md` as a **pointer** to `openspec_migration.md` §1–§10 + `docs/adr/0001–0006` (restate nothing —
+  `design.md` as a **pointer** to `openspec_migration.md` §1–§10 + `docs/adr/0001–0007` (restate nothing —
   Doc5); transcribe the M1 (then M2) work items into `tasks.md` as the checklist. Record the reconciliation
   rule: **the markdown Orchestration rule is authoritative for Part A "what's next" and "done"; `tasks.md`
   mirrors status** — one source of truth per unit, no drift. Part B units (`M1-B*`) and `/opsx:apply`/
@@ -753,16 +777,20 @@ Adds the `prd` projection (`spec-to-prd`), `to-issues`, `triage`, and `tracker-t
 > *honest-discipline* — "fail-closed" is instruction wording only, since OpenSpec treats dependencies as
 > "enablers, not gates" and will not block `/opsx:archive` on a failed review. This unit hardens that for the
 > product spine, where (unlike the build, DEC6) there is no cold-sub-agent driver enforcing POST-pass.
-- **Files:** an archive-time enforcement mechanism — a git pre-commit/pre-push hook, a CI step, or an
-  `openspec validate` extension (decide which during the unit; keep it generic — no project paths).
+- **Files:** an archive-time enforcement mechanism **external to OpenSpec** — a git pre-commit/pre-push
+  hook or a CI step (decide which during the unit; keep it generic — no project paths). **Not** an
+  `openspec validate` extension: OpenSpec's `Validator` is a fixed Zod class with no plugin point, so
+  adding a rule there would fork the package — forbidden (ADR-0007). The wrapper reads the `review` node's
+  result and blocks the commit/merge *around* the CLI.
 - **Change:** add a real blocker so a `review.md` reporting `BREAKS FOUND (N)` or any uncovered in-scope FR
   **prevents** `/opsx:archive` (or fails the merge), converting the §9.1 rigor from instruction wording into
-  an actual gate. Generic; the check reads the `review` node's PASS/PARTIAL/BREAKS result, not a hard-coded
-  path. Do **not** weaken OpenSpec's "enablers, not gates" default for *ordering* — this gate is the single
-  quality exception, applied only at archive.
+  an actual gate **layered around the CLI (never inside it)**. Generic; the check reads the `review` node's
+  PASS/PARTIAL/BREAKS result, not a hard-coded path. Do **not** weaken OpenSpec's "enablers, not gates"
+  default for *ordering* — this gate is the single quality exception, applied only at archive.
 - **POST:** a seeded failing `review` demonstrably blocks archive/merge; a passing one does not; the gate is
-  generic and documented as the engine-enforced counterpart to the M1 honest-discipline `review` node;
-  ADR-0001's deferred-hook consequence is satisfied.
+  generic and documented as the **externally-enforced** counterpart (a wrapper around the CLI, no OpenSpec
+  fork — ADR-0007) to the M1 honest-discipline `review` node; ADR-0001's deferred-hook consequence is
+  satisfied.
 
 ### Milestone 2 · Part B — wire & validate
 

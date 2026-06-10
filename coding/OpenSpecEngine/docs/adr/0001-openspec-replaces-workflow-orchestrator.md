@@ -40,9 +40,11 @@ proven, then archived.
   not engine behaviour, and the soft between-step reviews are `/opsx:continue` *stops*, not forced
   reviews. This also drops `create_skills.md`'s "flip the box only after POST passes" (DEC6 keeps that
   driver for the build's Part A; the product spine has none).
-- **Real archive-time enforcement is deferred to M2** (`openspec_migration.md` M2-A6: a hook / CI /
-  `openspec validate` extension that blocks archive on a failed `review`). Out of M1 scope by choice —
-  adding it now fights the "enablers, not gates" grain and isn't needed to prove the engine. M1 ships
-  honest-discipline; M2 hardens it.
+- **Real archive-time enforcement is deferred to M2** (`openspec_migration.md` M2-A6: an external git
+  hook / CI step that reads the `review` result and blocks the commit/merge on a failed `review`). Out of
+  M1 scope by choice — adding it now fights the "enablers, not gates" grain and isn't needed to prove the
+  engine. M1 ships honest-discipline; M2 hardens it. **Amended 2026-06-10 (ADR-0007):** the enforcement is
+  an *external wrapper only*; the earlier "`openspec validate` extension" option is withdrawn — extending
+  the `Validator` would fork OpenSpec, which the project forbids.
 - `schema.yaml` must be named the authoritative sequence exactly once; `workflow.md` /
   `skills_overview.md` / `artifacts.md` are annotated, not deleted.

@@ -42,6 +42,14 @@ _Avoid_: continue-mode, step mode
 The single authoritative source of "what's next." Post-DEC1 this is `schema.yaml` + the OpenSpec CLI,
 **replacing** ai-mail's hand-written `workflow.md`. There must be exactly one.
 
+**Officially-supported customization (no-fork surface)**:
+The complete set of adjustments OpenSpec sanctions without touching its source: custom `schema.yaml` +
+`templates/` (`openspec schema fork`), `openspec/config.yaml` (`context`/`rules`/`schema`), profile
+selection, and the regenerated thin skills. The migration uses **only** this surface — the OpenSpec
+package is never forked or patched (ADR-0007). Behaviour OpenSpec lacks is wrapped *around* the CLI (git
+hook / CI), never patched in.
+_Avoid_: fork, patch, plugin (OpenSpec has no validation-plugin point)
+
 ### The authoring chain (Level 1)
 
 **Spine**:
@@ -98,7 +106,8 @@ _Avoid_: spec delta, diff-spec
 **Fail-closed gate**:
 A check that **blocks** progress until it passes (no "document the gap and move on"). In M1 the
 `review` node is fail-closed *as discipline only* — its instruction says block, but OpenSpec
-("enablers, not gates") will not enforce it. Engine-enforcement is deferred to M2-A6 (ADR-0001).
+("enablers, not gates") will not enforce it. Hard enforcement is deferred to M2-A6 — an **external**
+git hook / CI wrapper around the CLI, since OpenSpec is never forked (ADR-0001, ADR-0007).
 _Avoid_: validation, soft gate (a soft review is a *stop*, not a gate)
 
 **`review` node**:

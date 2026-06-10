@@ -72,4 +72,4 @@ engine) and keeps the fail-closed driver where the migration's value lives.
 - A negative dogfood result is a **first-class outcome**: if driving the build through the OPSX change feels
   worse than the markdown driver, that is direct signal on 0001 (retire `workflow.md`) and should feed back
   into the P0 grill.
-- This decision is added to the `M1-P0` grill scope (now six ADRs: 0001–0006).
+- This decision is added to the `M1-P0` grill scope (now seven ADRs: 0001–0007).

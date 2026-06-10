@@ -13,14 +13,18 @@ refactor so everything created here is project-agnostic.
   **ai-mail is never modified.**
 - **Writes:** everything new — the OpenSpec schema, `config.yaml`, the generic skills, and this project's
   own docs — is **created here, under `OpenSpecEngine/`**.
+- **No OpenSpec fork (ADR-0007):** OpenSpec is a **stock dependency, never forked or patched**. All
+  adjustments use its officially-supported surface (custom `schema.yaml` + `templates/`, `config.yaml`,
+  profile); behaviour OpenSpec lacks is wrapped *around* the CLI (git hook / CI), not patched into it.
 
 ## Contents
 
 - [`docs/openspec_migration.md`](docs/openspec_migration.md) — the full analysis, the
   two-milestone work-item plan (Milestone 1 Basic / Pure → Milestone 2 Full / Hybrid), and Appendix B
   concrete node YAML. **Authoritative plan.**
-- [`docs/adr/`](docs/adr/) — the five accepted architecture decisions (DEC1–DEC5) that shape the
-  migration.
+- [`docs/adr/`](docs/adr/) — the architecture decisions (DEC1–DEC7) that shape the migration. They
+  entered as `proposed` and are ratified one-per-session at `M1-P0`; see each ADR's **Status** line for
+  its current state.
 
 ## Status
 
