@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"name": "OpenSpecEngine",
+			"path": "."
+		},
+		{
+			"name": "ai-mail",
+			"path": "../../../ai-mail"
+		},
+		{
+			"name": "OpenSpec.1.4.1",
+			"path": "../../../github/OpenSpec.1.4.1"
+		},
+		{
+			"name": "intent-driven-dev",
+			"path": "../../../github/intent-driven-dev"
+		},
+		{
+			"name": "matt_pocock_skills",
+			"path": "../../skills-plugins/matt_pocock_skills"
+		},
+		{
+			"path": "../../../github/aiup"
+		}
+	],
+	"settings": {}
+}
