@@ -20,7 +20,7 @@ refactor so everything created here is project-agnostic.
 ## Contents
 
 - [`docs/openspec_migration.md`](docs/openspec_migration.md) — the full analysis, the
-  two-milestone work-item plan (Milestone 1 Basic / Pure → Milestone 2 Full / Hybrid), and Appendix B
+  accreting-milestone work-item plan (M1 Basic/Pure first; later milestones add deferred capability), and Appendix B
   concrete node YAML. **Authoritative plan.**
 - [`docs/adr/`](docs/adr/) — the architecture decisions (DEC1–DEC7) that shape the migration. They
   entered as `proposed` and are ratified one-per-session at `M1-P0`; see each ADR's **Status** line for

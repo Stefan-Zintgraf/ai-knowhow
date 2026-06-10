@@ -72,16 +72,16 @@ This migration is its **own standalone project** at `C:\PROJ\ai-knowhow\coding\O
    blocks, ai-mail's traceability hinges on **stable `FR/NFR/UC/BR/ADR` IDs**; (c) OpenSpec is
    **delta/brownfield**-first, ai-mail is **greenfield-spine**-first. None is a blocker; each needs a
    deliberate decision (see §9).
-6. **Recommendation: stage it as two milestones, fused with the genericity refactor.** Build a project-agnostic
+6. **Recommendation: stage it as accreting milestones, fused with the genericity refactor.** Build a project-agnostic
    **custom schema** that hosts the ai-mail authoring chain on OpenSpec's engine, inject guardrails via
    `config.yaml`, keep the lenses as composed skills. **Milestone 1 (Basic) = Pure OpenSpec** — the spine
    runs fully in-repo (`tasks.md` + `/opsx:apply` + `/opsx:archive` merging deltas into `openspec/specs/`),
-   no GitHub tracker; this proves the engine on the smallest surface. **Milestone 2 (Full) = Hybrid** —
-   layer the GitHub execution bridge (`spec-to-prd`/`to-issues`/`tracker-trace-check`/`triage`) on the
-   proven Basic spine. **Run the migration as ONE project-agnostic pass with the in-flight genericity
+   no GitHub tracker; this proves the engine on the smallest surface. **M2 and beyond** — add capability
+   deferred from M1 (e.g. the GitHub execution bridge: `spec-to-prd`/`to-issues`/`tracker-trace-check`/`triage`);
+   further milestones may follow as scope grows. **Run the migration as ONE project-agnostic pass with the in-flight genericity
    refactor** (`skill_genericity_review.md`, `domain-requirements`, `declare-milestone`) — DEC5 = Option D:
    migrating a skill into a generic OpenSpec node *is* making it generic, so the two efforts fuse and there
-   is no double-transcription (§10). The two-milestone split is itself the Pareto / one-slice discipline the
+   is no double-transcription (§10). The accreting-milestone structure is itself the Pareto / one-slice discipline the
    skillset preaches, applied to its own migration.
 
 ---
@@ -272,15 +272,11 @@ by `tracker-trace-check`). OpenSpec has **no tracker** — "done" = `archive` me
   loses the issue-tracker/triage machinery and the `ready-for-agent` AFK loop. Only worth it if the
   GitHub tracker is not actually load-bearing.
 
-> **Errata 2026-06-10:** the "two milestone" framing below is governed by ADR-0002, which ratifies it as an
-> *open-ended* accreting-milestone series (M1, M2, M3…), not a fixed pair — M2 is the *remainder* past M1's
-> smallest slice. In-repo `apply`/`archive` is the canonical "done"; the GitHub bridge is additive.
-
 **Resolution (DEC2): sequenced, not chosen.** **Milestone 1 (Basic) adopts Pure** (smallest surface — the
 spine on OpenSpec, in-repo, no tracker; `spec-to-prd`/`to-issues`/`tracker-trace-check`/`triage` are out of
-scope). **Milestone 2 (Full) adds the Hybrid GitHub bridge** on top of the proven Basic spine. So Pure is
-not a rejected option — it is the first slice; Hybrid is the second. The two-milestone work-item plan below
-is organised this way.
+scope). **M2 (next milestone) adds capability deferred from M1** — currently: the Hybrid GitHub bridge and
+the engine-enforced review gate; the two are independent and need not ship together. Further milestones may
+follow. The accreting-milestone work-item plan below is organised this way.
 
 ## 9 · The honest tensions (what the migration costs)
 
@@ -312,7 +308,7 @@ Target architecture:
 - `config.yaml` = guardrail digest (`context`) + per-artifact gr subsets (`rules`), §5.
 - Lenses = unchanged portable skills, referenced from `instruction`s; `trace-check` also a `review` node, §4.
 - `milestone` ≡ `change`; N+1 via delta specs + archive, §6. Stable IDs kept in templates, §7.
-- GitHub execution tracker (`spec-to-prd`/`to-issues`) is **Milestone 2 (Full)** only; **Milestone 1
+- GitHub execution tracker (`spec-to-prd`/`to-issues`) is **M2** only; **Milestone 1
   (Basic)** executes in-repo via `tasks.md` + `/opsx:apply`. OpenSpec owns the spine throughout, §8.
 - `review-skills`/`refactor-skills` are **out of scope** — not migrated, not adjusted. They keep operating
   on the remaining lens SKILL.md files; the dissolved authoring nodes' QA moves to `openspec schema
@@ -443,7 +439,7 @@ the **driver keeps Part A sequencing**.
 >   the kept `/setup-matt-pocock-skills`.
 > - **D-DEC2 · Tracker boundary — ✅ DECIDED (2026-06-09): sequenced, not chosen.** **Milestone 1
 >   (Basic) = Pure** (in-repo; `spec-to-prd`/`to-issues`/`tracker-trace-check`/`triage` out of scope);
->   **Milestone 2 (Full) = Hybrid** (adds the GitHub bridge on the proven Basic spine). §8.
+>   **M2 (next milestone)** adds deferred capability (GitHub bridge, engine-enforced review gate) on the proven Basic spine; further milestones may follow. §8.
 > - **D-DEC3 · ID convention — ✅ DECIDED (2026-06-09): keep stable IDs.** `FR/NFR/UC/BR/ADR-###` IDs are
 >   carried verbatim in the templates (`### Requirement: FR-### — <name>`); the lenses discover ID patterns
 >   so traceability keeps working unchanged. §7.
