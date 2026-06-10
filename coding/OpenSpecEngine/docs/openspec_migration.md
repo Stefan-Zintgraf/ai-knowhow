@@ -255,6 +255,10 @@ by `tracker-trace-check`). OpenSpec has **no tracker** — "done" = `archive` me
   loses the issue-tracker/triage machinery and the `ready-for-agent` AFK loop. Only worth it if the
   GitHub tracker is not actually load-bearing.
 
+> **Errata 2026-06-10:** the "two milestone" framing below is governed by ADR-0002, which ratifies it as an
+> *open-ended* accreting-milestone series (M1, M2, M3…), not a fixed pair — M2 is the *remainder* past M1's
+> smallest slice. In-repo `apply`/`archive` is the canonical "done"; the GitHub bridge is additive.
+
 **Resolution (DEC2): sequenced, not chosen.** **Milestone 1 (Basic) adopts Pure** (smallest surface — the
 spine on OpenSpec, in-repo, no tracker; `spec-to-prd`/`to-issues`/`tracker-trace-check`/`triage` are out of
 scope). **Milestone 2 (Full) adds the Hybrid GitHub bridge** on top of the proven Basic spine. So Pure is
@@ -487,7 +491,7 @@ sub-agents, driver owns sequencing**; lens re-creation = **`/make-skill` chain**
 - **ADR ratification progress** (the fresh-session agent reads this to pick the next ADR; flip the box
   when that ADR's grill completes, and record the outcome inline):
   - [x] 0001 · OpenSpec replaces `workflow.md` as orchestrator — ratified + amended 2026-06-10 (honest-discipline gate; hook → M2-A6)
-  - [ ] 0002 · Two-milestone Basic/Pure → Full/Hybrid
+  - [x] 0002 · Sequence as accreting milestones (M1 Basic/Pure first) — ratified + amended 2026-06-10 (open-ended milestone series, not fixed at two; in-repo `apply`/`archive` is canonical "done", GitHub is additive; M2-A6 reconciled)
   - [ ] 0003 · Keep stable FR/NFR/UC/BR/ADR IDs in templates
   - [ ] 0004 · Adopt delta/specs model (10-node Basic)
   - [ ] 0005 · Fuse genericity refactor with migration (Option D)
@@ -496,10 +500,12 @@ sub-agents, driver owns sequencing**; lens re-creation = **`/make-skill` chain**
   read the entries tagged to its selected ADR **before** grilling, address them during the session, then
   strike them through `~~like this~~` with a one-line outcome. When *your* amendment creates a new work
   item or changes another ADR's scope, **append** a new entry here tagged to that ADR):
-  - → **0002:** M2-A6 (the deferred archive-time enforcement hook, added when ADR-0001 was ratified
+  - ~~→ **0002:** M2-A6 (the deferred archive-time enforcement hook, added when ADR-0001 was ratified
     2026-06-10) is a new Milestone-2 work item that ADR-0002's M2 scope does not yet list. The 0002 grill
-    must reconcile this — the hook is arguably a third M2 concern alongside the GitHub bridge. Amend
-    ADR-0002's Decision/Consequences if it agrees.
+    must reconcile this — the hook is arguably a third M2 concern alongside the GitHub bridge.~~ Reconciled
+    2026-06-10: ADR-0002 reframed — M2 is the *remainder* milestone (everything deferred past M1's smallest
+    slice), so M2-A6 lands by definition and needs no special pleading; ADR-0002 now names it as one of two
+    independent M2 items (bridge + engine-enforced gate), the gate not tracker-dependent.
 - **Prompt (paste verbatim in a fresh session).** `grill-with-docs` grills "a plan/design in the
   conversation" — a fresh session has none, so the subject must be handed to it explicitly:
 

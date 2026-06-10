@@ -60,6 +60,22 @@ The orchestrating session that runs one cold sub-agent per unit, strictly sequen
 checkbox only after that unit's POST self-check passes. Fail-closed by construction. DEC6 keeps the
 driver for the build's Part A.
 
+### Milestones & changes
+
+**Milestone**:
+A sequenced Pareto slice of the migration — the in-scope capability one planning loop ships. Milestones
+form an **open-ended series** (M1, M2, M3…), not a fixed count: M1 is the smallest proven slice (the Pure
+in-repo spine); each later milestone adds capability deferred from the smaller slice. The spine accretes
+via delta-specs and never forks (ADR-0002). ≡ **change**.
+_Avoid_: phase, release, sprint
+
+**Change**:
+The OpenSpec unit a milestone maps to: a self-contained `openspec/changes/<change>/` folder.
+`/opsx:archive` merges its delta-specs into `openspec/specs/`. `milestone ≡ change` is the conceptual
+bridge (§6); opening a new change for milestone N+1 is what lets the spec accrete instead of re-running
+the chain.
+_Avoid_: PR, ticket, issue
+
 ### Rigor & gating
 
 **Fail-closed gate**:
