@@ -228,6 +228,21 @@ Source: discussion settling how a fresh session learns "where we are + what's ne
     - [x] **follow-up resolved 2026-05-28**: `<WI>` = `<slug>` (slug-only). Issue number resolved via `status_idea.md` `owner-issue:` frontmatter (set at `ide` for direct-edit/mini, at `iss` for full); `<artifacts>/INDEX.md` auto-regenerates the slug→issue map. C9 + C6 rewritten in this file; gr_idea.md (Idea7/8/9), gr_algn.md (Aln19), gr_qa.md (Q11 ref), phases.md, guardrails.md §4.19 updated. **Action**: rerun `/make-skill distill-idea` + `/make-skill triage-idea` + `/make-skill phase` to propagate to compiled skills (current `skills/output/phase.md`, `skills/input/phase-in.md`, `skills/input/distill-idea-in.md` still encode `<N>_<slug>`).
   - [x] check what would be the skill sequence to execute on a new idea (phase, triage-idea, distill-idea, ...) — **resolved 2026-05-28** in [docs/adr/0001-phase-bootstrap-sequence.md](docs/adr/0001-phase-bootstrap-sequence.md). Locked: `/phase next` default verb; two-command bootstrap; `/phase` sole writer of state only; `/triage-idea` pure-ish (mints `<slug>/` + writes pending payload + bootstrap pointer); distill takes slug as arg; C6 relaxed (direct-edit also gets `<slug>/` containing only `triage-decision.json`). Propagates to: A12/A13 behavior rows (below), C6 line in W15 contracts, `phases.md` §5 ide call sequence, `gr/gr_idea.md` Idea7 + Idea8 persistence notes.
 
+
+- [ ] Information/experience from ai-mail
+  - General brainstorming (ai recommended method, using pareto), created painlist_acontis/private.md and 00-foundation.md, updated todo.md
+  - AI generates docs/vision.md based on these files according to the aiup vision.md template
+  - Another brainstorming on vision.md goals (Assumption Reversal): 01-foundation.md
+  - /requirements --> docs/requriements.md
+  - Optional: review docs/requirements.md
+  - /grill-with-docs --> docs/CONTEXT.md + docs/adr/####-$$$$$$.md (does also review vision.md and requirements.md etc.)
+  - human review docs/requirements.md
+  - challenge the FR-### items in requirement.md using a good model with thinking and optionally apply the Pareto principle (e.g. to move some features to a later step)     
+  - in case of significant changes in requirements.md: grill-with-docs again (only in respect to the changes):
+    /grill-with-docs Grill me ONLY about the change set in `git diff HEAD~1 HEAD`. Treat that diff as the entire plan; read other files only to check consistency, never as new grill subjects.
+
+
+
 - [ ] **ADR-0001 follow-up** — propagate locked phase-bootstrap contracts ([docs/adr/0001-phase-bootstrap-sequence.md](docs/adr/0001-phase-bootstrap-sequence.md)) into compiled skills + fixtures + template. Run in a fresh session.
   - [ ] flip ADR-0001 status `proposed → accepted` (per Adr8 — HITL acceptance)
   - [ ] redraft `skills/input/phase-in.md` to encode: `next` default verb, two-command bootstrap, pending-payload consumer (`<artifacts>/.pending-bootstrap` + `<slug>/.pending-{triage,retriage}.json`), internal skill-signature registry, paste-ready next-command output, defined failure modes (pointer/payload mismatch). Then `/make-skill phase` to recompile + retest.
