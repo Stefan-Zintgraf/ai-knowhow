@@ -486,12 +486,20 @@ sub-agents, driver owns sequencing**; lens re-creation = **`/make-skill` chain**
   survives; then flip its checklist box to `[x]` and **stop** — the next ADR is a separate fresh session.
 - **ADR ratification progress** (the fresh-session agent reads this to pick the next ADR; flip the box
   when that ADR's grill completes, and record the outcome inline):
-  - [ ] 0001 · OpenSpec replaces `workflow.md` as orchestrator
+  - [x] 0001 · OpenSpec replaces `workflow.md` as orchestrator — ratified + amended 2026-06-10 (honest-discipline gate; hook → M2-A6)
   - [ ] 0002 · Two-milestone Basic/Pure → Full/Hybrid
   - [ ] 0003 · Keep stable FR/NFR/UC/BR/ADR IDs in templates
   - [ ] 0004 · Adopt delta/specs model (10-node Basic)
   - [ ] 0005 · Fuse genericity refactor with migration (Option D)
   - [ ] 0006 · Dogfood OpenSpec for the build (envelope + Part B)
+- **Cross-ADR carry-overs** (reconciliations one grill owes a *later* ADR. The fresh-session agent MUST
+  read the entries tagged to its selected ADR **before** grilling, address them during the session, then
+  strike them through `~~like this~~` with a one-line outcome. When *your* amendment creates a new work
+  item or changes another ADR's scope, **append** a new entry here tagged to that ADR):
+  - → **0002:** M2-A6 (the deferred archive-time enforcement hook, added when ADR-0001 was ratified
+    2026-06-10) is a new Milestone-2 work item that ADR-0002's M2 scope does not yet list. The 0002 grill
+    must reconcile this — the hook is arguably a third M2 concern alongside the GitHub bridge. Amend
+    ADR-0002's Decision/Consequences if it agrees.
 - **Prompt (paste verbatim in a fresh session).** `grill-with-docs` grills "a plan/design in the
   conversation" — a fresh session has none, so the subject must be handed to it explicitly:
 
@@ -522,8 +530,9 @@ sub-agents, driver owns sequencing**; lens re-creation = **`/make-skill` chain**
   the governing ADR — do NOT rewrite the analysis in place.
 
   WRITE TARGETS: docs/adr/0001–0006 (+ docs/adr/0007 if a new decision surfaces) and
-  docs/CONTEXT.md. openspec_migration.md is NOT rewritten — only a dated errata note may be
-  appended (see ERRATA).
+  docs/CONTEXT.md. The openspec_migration.md §1–§10 ANALYSIS is frozen — only a dated errata note may
+  be appended (see ERRATA). EXCEPTION: the M1-P0 "ADR ratification progress" checklist and "Cross-ADR
+  carry-overs" list are LIVE process state — flip your box and add/strike carry-over entries there.
 
   GOALS:
   1. One question at a time. Pressure-test the SELECTED decision only. Sharpest angle per ADR:
@@ -541,6 +550,15 @@ sub-agents, driver owns sequencing**; lens re-creation = **`/make-skill` chain**
      Consequences inline. If the grill surfaces a hard-to-reverse decision not already in
      0001–0006, draft docs/adr/0007. THEN flip this ADR's box to [x] in the M1-P0 "ADR
      ratification progress" checklist and STOP — the next ADR is a separate fresh session.
+  4. Write the ADR LEAN — it is re-read cold later, so keep ONLY: the decision, why, rejected
+     alternatives with reasons, and consequences a future maintainer must not re-litigate. CUT process
+     narration — grill mechanics, dates beyond the one-line ratified note, repo paths, and any evidence
+     already in openspec_migration.md (cite it by § instead of restating — Doc5). The Status line carries
+     the ratified/amended note; do NOT add a multi-line ratification banner.
+  5. CARRY-OVERS — BEFORE grilling, read the M1-P0 "Cross-ADR carry-overs" list and address every entry
+     tagged to YOUR ADR, then strike it through with its outcome. If your amendment adds a work item or
+     changes another ADR's scope, APPEND a carry-over entry tagged to the affected later ADR so it is
+     reconciled when that ADR is grilled.
 
   CONSTRAINTS: OpenSpecEngine is the only write target. ai-mail (C:\PROJ\ai-mail) and
   coding/gr are read-only sources — never edit them. This is a planning-only grill: no
@@ -714,6 +732,22 @@ Adds the `prd` projection (`spec-to-prd`), `to-issues`, `triage`, and `tracker-t
   config to Full.
 - **POST:** docs describe the two-staged done + the milestone/change/GitHub-Milestone mapping; `prd` node
   present in the Full schema; `rules:` keys still valid.
+
+**- [ ] M2-A6 · Make the fail-closed `review` gate engine-enforced (ADR-0001 deferred hook)**
+> Added at M1-P0 ratification of ADR-0001 (grill 2026-06-10). M1 ships the `review` node as
+> *honest-discipline* — "fail-closed" is instruction wording only, since OpenSpec treats dependencies as
+> "enablers, not gates" and will not block `/opsx:archive` on a failed review. This unit hardens that for the
+> product spine, where (unlike the build, DEC6) there is no cold-sub-agent driver enforcing POST-pass.
+- **Files:** an archive-time enforcement mechanism — a git pre-commit/pre-push hook, a CI step, or an
+  `openspec validate` extension (decide which during the unit; keep it generic — no project paths).
+- **Change:** add a real blocker so a `review.md` reporting `BREAKS FOUND (N)` or any uncovered in-scope FR
+  **prevents** `/opsx:archive` (or fails the merge), converting the §9.1 rigor from instruction wording into
+  an actual gate. Generic; the check reads the `review` node's PASS/PARTIAL/BREAKS result, not a hard-coded
+  path. Do **not** weaken OpenSpec's "enablers, not gates" default for *ordering* — this gate is the single
+  quality exception, applied only at archive.
+- **POST:** a seeded failing `review` demonstrably blocks archive/merge; a passing one does not; the gate is
+  generic and documented as the engine-enforced counterpart to the M1 honest-discipline `review` node;
+  ADR-0001's deferred-hook consequence is satisfied.
 
 ### Milestone 2 · Part B — wire & validate
 

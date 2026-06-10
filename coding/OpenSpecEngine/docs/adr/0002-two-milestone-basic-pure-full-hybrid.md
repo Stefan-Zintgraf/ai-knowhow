@@ -4,6 +4,9 @@
 
 > Not yet grilled — authored by a free-style prompt (2026-06-09), not via `grill-with-docs`. Status reset
 > `accepted → proposed`; awaits ratification or amendment at `M1-P0` (see `openspec_migration.md`).
+>
+> **Before ratifying:** see the M1-P0 "Cross-ADR carry-overs" list in `openspec_migration.md` — there is a
+> pending reconciliation tagged to this ADR (M2 scope vs. M2-A6). That list is the single source of detail.
 
 ## Context
 
