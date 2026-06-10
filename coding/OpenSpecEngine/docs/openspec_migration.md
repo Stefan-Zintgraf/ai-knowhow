@@ -235,6 +235,10 @@ OpenSpec specs use `### Requirement: <name>` (no numeric IDs); ai-mail's `trace-
   `### Requirement: FR-001 — <name>` is legal and free. Crucially, the ai-mail lenses already **discover
   id patterns from the files** (`trace-check` "discovers conventions rather than assuming them"), so they
   keep working against OpenSpec-housed artifacts with **no change**. Cost: near-zero.
+  > **Errata 2026-06-10 (ADR-0003):** the heading shape is governed by ADR-0003 — the `### Requirement:`
+  > heading is the **bare `FR-###`** (human name in the body), not `FR-### — <name>`. OpenSpec keys delta
+  > merges on the whole heading string, so making it the ID alone is what makes the never-reuse invariant
+  > engine-enforced and reword a plain `MODIFIED`. The `— <name>` form here is superseded.
 - **(B) Adopt named requirements, rebuild traceability around names.** Aligns with vanilla OpenSpec and
   its `verify`, but throws away the ID-based traceability the whole AIUP chain is built on. Cost: high.
 
@@ -492,7 +496,7 @@ sub-agents, driver owns sequencing**; lens re-creation = **`/make-skill` chain**
   when that ADR's grill completes, and record the outcome inline):
   - [x] 0001 · OpenSpec replaces `workflow.md` as orchestrator — ratified + amended 2026-06-10 (honest-discipline gate; hook → M2-A6)
   - [x] 0002 · Sequence as accreting milestones (M1 Basic/Pure first) — ratified + amended 2026-06-10 (open-ended milestone series, not fixed at two; in-repo `apply`/`archive` is canonical "done", GitHub is additive; M2-A6 reconciled)
-  - [ ] 0003 · Keep stable FR/NFR/UC/BR/ADR IDs in templates
+  - [x] 0003 · Keep stable FR/NFR/UC/BR/ADR IDs in templates — ratified + amended 2026-06-10 (heading is the bare `FR-###`, name in body → ID is OpenSpec's delta match key; never-reuse becomes engine-enforced, reword = plain MODIFIED; `— <name>` heading shape superseded)
   - [ ] 0004 · Adopt delta/specs model (10-node Basic)
   - [ ] 0005 · Fuse genericity refactor with migration (Option D)
   - [ ] 0006 · Dogfood OpenSpec for the build (envelope + Part B)
@@ -506,6 +510,11 @@ sub-agents, driver owns sequencing**; lens re-creation = **`/make-skill` chain**
     2026-06-10: ADR-0002 reframed — M2 is the *remainder* milestone (everything deferred past M1's smallest
     slice), so M2-A6 lands by definition and needs no special pleading; ADR-0002 now names it as one of two
     independent M2 items (bridge + engine-enforced gate), the gate not tracker-dependent.
+  - → **0004:** ADR-0003 (grill 2026-06-10) moved the requirement heading to the **bare `FR-###`** (name in
+    body), making the ID OpenSpec's delta match key. ADR-0004's Decision + Appendix B still draft the
+    `### Requirement: FR-### — <name>` shape. The 0004 grill must reconcile the `specs`-node heading shape to
+    ID-only, and confirm the reword path is a plain `MODIFIED` (no `RENAMED`, since the ID — the match key —
+    never changes).
 - **Prompt (paste verbatim in a fresh session).** `grill-with-docs` grills "a plan/design in the
   conversation" — a fresh session has none, so the subject must be handed to it explicitly:
 
@@ -796,6 +805,10 @@ review-skills / refactor-skills       →    OUT OF SCOPE — unchanged; still r
 
 Build reference for `M1-A2` / `M1-A3`. **Generic** — project specifics arrive via `config.yaml`, never the
 schema. Not final wording.
+
+> **Errata 2026-06-10 (ADR-0003):** every `### Requirement: FR-### — <name>` below (the `specs`-node
+> instruction and the `templates/requirements.md` sketch) is superseded — the heading is the **bare
+> `FR-###`**, with the human name as the first body line. See ADR-0003.
 
 **`requirements` node** — DEC3: stable IDs in the catalog.
 

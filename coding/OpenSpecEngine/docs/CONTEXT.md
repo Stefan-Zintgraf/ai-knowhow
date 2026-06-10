@@ -76,6 +76,23 @@ bridge (§6); opening a new change for milestone N+1 is what lets the spec accre
 the chain.
 _Avoid_: PR, ticket, issue
 
+### Requirements & traceability
+
+**Stable ID**:
+A `FR/NFR/C/UC/BR/ADR-###` identifier that is the **permanent identity** of a requirement (or use case,
+business rule, decision): assigned once, **never reused** for the project's lifetime, carried verbatim
+into artifacts. Traceability and the lenses key on it. Per ADR-0003 the `### Requirement:` heading **is**
+the bare `FR-###` (the human name lives in the body), so the ID is OpenSpec's delta match key.
+_Avoid_: name, slug, requirement title (those are the mutable label, not the identity)
+
+**Delta-spec**:
+A change-folder `specs/<capability>/spec.md` file written as `## ADDED / MODIFIED / REMOVED / RENAMED
+Requirements` operations against the accumulated `openspec/specs/`. `/opsx:archive` merges it, so the
+source of truth accretes instead of being re-authored. The `specs` node generates these (ADR-0004).
+OpenSpec matches each delta to an existing requirement by the **whole heading string** — which is why
+ADR-0003 makes that heading the stable ID.
+_Avoid_: spec delta, diff-spec
+
 ### Rigor & gating
 
 **Fail-closed gate**:
