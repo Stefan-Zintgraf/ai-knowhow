@@ -508,7 +508,7 @@ sub-agents, driver owns sequencing**; lens re-creation = **`/make-skill` chain**
   - [x] 0001 · OpenSpec replaces `workflow.md` as orchestrator — ratified + amended 2026-06-10 (honest-discipline gate; hook → M2-A6)
   - [x] 0002 · Sequence as accreting milestones (M1 Basic/Pure first) — ratified + amended 2026-06-10 (open-ended milestone series, not fixed at two; in-repo `apply`/`archive` is canonical "done", GitHub is additive; M2-A6 reconciled)
   - [x] 0003 · Keep stable FR/NFR/UC/BR/ADR IDs in templates — ratified + amended 2026-06-10 (heading is the bare `FR-###`, name in body → ID is OpenSpec's delta match key; never-reuse becomes engine-enforced, reword = plain MODIFIED; `— <name>` heading shape superseded)
-  - [ ] 0004 · Adopt delta/specs model (10-node Basic)
+  - [x] 0004 · Adopt delta/specs model (10-node Basic) — ratified + amended 2026-06-10 (heading reconciled to bare `FR-###`, `RENAMED` invalid → reword = `MODIFIED`; `tasks` requires `[use-cases-spec, testing]` not `specs` — that pair spans all req types, FR via use-cases + NFR/C via testing; `docs/artifacts.md` created)
   - [ ] 0005 · Fuse genericity refactor with migration (Option D)
   - [ ] 0006 · Dogfood OpenSpec for the build (envelope + Part B)
   - [ ] 0007 · No fork of OpenSpec — officially-supported customization only
@@ -522,16 +522,22 @@ sub-agents, driver owns sequencing**; lens re-creation = **`/make-skill` chain**
     2026-06-10: ADR-0002 reframed — M2 is the *remainder* milestone (everything deferred past M1's smallest
     slice), so M2-A6 lands by definition and needs no special pleading; ADR-0002 now names it as one of two
     independent M2 items (bridge + engine-enforced gate), the gate not tracker-dependent.
-  - → **0004:** ADR-0003 (grill 2026-06-10) moved the requirement heading to the **bare `FR-###`** (name in
+  - ~~→ **0004:** ADR-0003 (grill 2026-06-10) moved the requirement heading to the **bare `FR-###`** (name in
     body), making the ID OpenSpec's delta match key. ADR-0004's Decision + Appendix B still draft the
     `### Requirement: FR-### — <name>` shape. The 0004 grill must reconcile the `specs`-node heading shape to
     ID-only, and confirm the reword path is a plain `MODIFIED` (no `RENAMED`, since the ID — the match key —
-    never changes).
+    never changes).~~ Reconciled 2026-06-10: ADR-0004 Decision dropped `— <name>` (bare `FR-###`); added a
+    Consequence that `RENAMED` is invalid for requirements (reword = plain `MODIFIED`). Appendix B already
+    carried the ADR-0003 heading errata — no further change needed there.
   - → **0007:** ADR-0007 (drafted 2026-06-10 from the no-fork project constraint) withdrew the
     "`openspec validate` extension" option from M2-A6 and amended ADR-0001's archive-enforcement consequence
     to external-wrapper-only (git hook / CI). The 0007 grill must confirm this reconciliation holds — that
     no other unit assumes an engine-internal gate, and that "engine-enforced" in 0001–0006 reads as
     "external wrapper" except for the genuinely-native cases (ordering; the ADR-0003 heading match key).
+  - → **0007:** ADR-0004 (grill 2026-06-10) confirmed `tasks` and `review` are **parallel branches** —
+    `tasks` requires `[use-cases-spec, testing]`, not `review`, so "review before apply" is driver/HITL
+    discipline, **not** a `requires` edge. This is one more unit that does **not** assume an in-engine gate;
+    the 0007 grill should fold it into its "no other unit assumes an in-engine gate" confirmation.
 - **Prompt (paste verbatim in a fresh session).** `grill-with-docs` grills "a plan/design in the
   conversation" — a fresh session has none, so the subject must be handed to it explicitly:
 

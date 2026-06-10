@@ -1,9 +1,6 @@
 # Adopt OpenSpec's Delta/Specs Model — 10-Node Basic Schema (DEC4)
 
-**Status:** proposed
-
-> Not yet grilled — authored by a free-style prompt (2026-06-09), not via `grill-with-docs`. Status reset
-> `accepted → proposed`; awaits ratification or amendment at `M1-P0` (see `openspec_migration.md`).
+**Status:** accepted — ratified + amended via grill 2026-06-10 (heading is bare `FR-###`, no `RENAMED`; `tasks` derives from `[use-cases-spec, testing]`, not `specs`)
 
 ## Context
 
@@ -19,9 +16,9 @@ Pure (ADR 0002) — with no GitHub tracker, `openspec/specs/` is the only possib
 
 **Adopt the delta/specs model.** The behaviour-contract layer becomes a dedicated **`specs` node**
 (`generates: "specs/**/*.md"`) that projects each in-scope FR + its use-case scenarios into
-`### Requirement: FR-### — <name>` / `#### Scenario` delta specs, which accrete into `openspec/specs/`
+`### FR-###` / `#### Scenario` delta specs, which accrete into `openspec/specs/`
 on archive. This makes **Milestone 1 a 10-node schema** (the `specs` node sits between `use-cases-spec`
-and `review`; `review` and `tasks` depend on it). Milestone N+1 is then a delta change
+and `review`, and `review` depends on it). Milestone N+1 is then a delta change
 (`ADDED`/`MODIFIED`/`REMOVED`) against the accumulated truth, replacing ai-mail's "re-run the whole
 chain per milestone."
 
@@ -42,3 +39,10 @@ chain per milestone."
   planning artifacts; only the behaviour contract is expressed as deltas.
 - The `specs` node has no 1:1 SKILL.md — its `instruction` is the FR + use-case-scenario → delta-spec
   projection.
+- `RENAMED` is not a valid delta operation for requirements — the heading is the stable ID (`FR-###`)
+  and never changes; only `ADDED`, `MODIFIED`, `REMOVED` apply.
+- `tasks` requires `[use-cases-spec, testing]`, **not** `specs`: that pair is the minimal set spanning
+  all requirement types — FR behaviour via `use-cases-spec` (the forward FR→UC coverage invariant puts
+  every in-scope FR in a use case), NFR/C thresholds via `testing`. `specs` is an FR-only,
+  delta-compressed projection and would silently drop NFR/C. `tasks` and `review` are therefore parallel
+  branches; "review before apply" is driver/HITL discipline, not a `requires` edge (ADR-0001).

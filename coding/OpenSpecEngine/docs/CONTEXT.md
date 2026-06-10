@@ -94,12 +94,19 @@ the bare `FR-###` (the human name lives in the body), so the ID is OpenSpec's de
 _Avoid_: name, slug, requirement title (those are the mutable label, not the identity)
 
 **Delta-spec**:
-A change-folder `specs/<capability>/spec.md` file written as `## ADDED / MODIFIED / REMOVED / RENAMED
+A change-folder `specs/<capability>/spec.md` file written as `## ADDED / MODIFIED / REMOVED
 Requirements` operations against the accumulated `openspec/specs/`. `/opsx:archive` merges it, so the
 source of truth accretes instead of being re-authored. The `specs` node generates these (ADR-0004).
 OpenSpec matches each delta to an existing requirement by the **whole heading string** — which is why
-ADR-0003 makes that heading the stable ID.
-_Avoid_: spec delta, diff-spec
+ADR-0003 makes that heading the stable ID. `RENAMED` is **not** a valid operation here: the heading is
+the `FR-###` ID and never changes, so a human-name reword is a plain `MODIFIED` (ADR-0004).
+_Avoid_: spec delta, diff-spec, RENAMED (not valid for ID-headed requirements)
+
+**`specs` node**:
+The one authoring node with no 1:1 SKILL.md — its `instruction` *is* the projection of each in-scope
+`FR-###` + its use-case scenarios into delta-specs (`### FR-###` / `#### Scenario`). The only node whose
+output accretes into `openspec/specs/` on archive. FR-only and delta-compressed, so it is **not** a
+source for `tasks` (which needs NFR/C too — see [[delta-spec]], ADR-0004).
 
 ### Rigor & gating
 
