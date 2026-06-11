@@ -9,7 +9,11 @@
       "Bash(git remote get-url origin)",
       "Bash(git checkout:*)",
       "Bash(git ls-tree:*)",
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "Bash(winget install *)",
+      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" auth git-credential get)",
+      "Bash(git config *)",
+      "Bash(git remote *)"
     ]
   }
 }
