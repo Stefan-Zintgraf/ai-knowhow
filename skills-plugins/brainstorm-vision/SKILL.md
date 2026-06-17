@@ -39,11 +39,36 @@ These principles always hold, whether or not a brief was supplied — the skill 
 
 The session ends when the user signals it ("done", "that's enough", "wrap up"), **or** when the coach judges that breadth is exhausted — new questions only produce restatements of use-cases already captured, not genuinely new territory. When the coach senses that point, it **offers** to wrap up (once, gently — never forces it; a divergent session shouldn't be cut short while ideas are still flowing).
 
-On wrap-up: re-read the file, read the vision and the full use-case list back to the user for a final sanity pass, invite cuts/merges/sharpening, then **finalize** — strip any `## Resume notes` section and rename `<name>.wip.md` → `<name>.md` so the final artifact obeys the two-sections-only format — and rename the steering flag to `_off` (see below).
+**Wrap-up is a two-step gate — never jump straight to finalizing.**
 
-A session can also be **paused** mid-flight and resumed in a later sitting. See Pause and resume.
+**Step 1 — Architecture-significance sweep (automatic).** Before finalizing, run a completeness backstop: are there use-cases still missing that would be *expensive to discover after building starts* — the ones that quietly decide architecture, software design, platform/language, or the data model? Run it without being asked; see Architecture-significance sweep. It's a generative lens, not an architecture discussion — it surfaces missing **use-cases**, captured as ordinary plain-language bullets, and no architecture notes enter the file. New use-cases re-open brief divergence on those axes; keep sweeping until that lens, too, only restates what's already captured. When it does, the session is **ready to finalize** — say so, then move to step 2.
+
+**Step 2 — Finalize.** Re-read the file, read the vision and the full use-case list back to the user for a final sanity pass, invite cuts/merges/sharpening, then **finalize** — strip any `## Resume notes` section and rename `<name>.wip.md` → `<name>.md` so the final artifact obeys the two-sections-only format — and rename the steering flag to `_off` (see below).
+
+A session can also be **paused** mid-flight and resumed in a later sitting — including at the "ready to finalize" milestone between the two steps. See Pause and resume.
 
 </session-end>
+
+<architecture-significance-sweep>
+
+Step 1 of the wrap-up gate, and the last completeness backstop before finalizing. The vision stayed deliberately out of architecture — but some user needs, if they only surface *after* building has begun, force expensive rework of one-way-door decisions: the overall architecture, the software design, the platform/language, the data model. This sweep catches the use-cases behind those decisions while changing them is still free.
+
+**It is a lens, not a layer.** Think in architecturally-loaded terms privately; capture only what an ordinary user would say. Everything kept is still a plain user-POV use-case ("As someone …, I can finally …") — never a note about offline-sync, schemas, hosting, or tenancy. Scope discipline holds in full; you are only aiming the divergence at corners that are cheap to decide now and dear to change later.
+
+**Method.** Walk the high-leverage corners below — and read `architecture-significance-lens.md` for the full list with example phrasings. For each, ask yourself: *is there a user whose need on this axis we haven't captured yet?* If so, offer one candidate use-case in plain language and let the user keep, sharpen, or drop it.
+
+- **Offline / flaky connection** — can someone need to act with no network?
+- **More than one person** — sharing, delegation, handoff, two people at once on one thing.
+- **Scale & history** — a massive pile, or years of the past, not just today's.
+- **Privacy & where data lives** — someone who can't let their data leave their device or reach a vendor.
+- **Across devices & channels** — start on one, continue on another.
+- **Other people's tools** — must work with what the user already has; data in and out.
+- **Acting on the user's behalf** — doing things while the user is away, not just showing them.
+- **Reach** — other languages, regions, regulations, abilities.
+
+These overlap the three breadth axes (emotion / kinds of user / lifecycle) but cut a different way. Keep going until this lens, too, only restates use-cases already captured — **that** repetition is the signal step 1 is done and the session is ready to finalize.
+
+</architecture-significance-sweep>
 
 <pause-and-resume>
 
@@ -51,7 +76,7 @@ A vision session can span multiple sittings. The working file keeps its `.wip.md
 
 **Resuming (at session start).** Before proposing a new path, look in the output directory (default `docs/brainstorming/`) for an existing `*.wip.md`. If one exists, **always ask the user** what to do — never auto-continue. Name the file and its topic, then offer the choice:
 
-- **Resume it** — read the whole file (vision, use-cases, and the `## Resume notes` if present), play back in two or three sentences where you left off and what's still open, then continue from there. Don't re-elicit settled ground.
+- **Resume it** — read the whole file (vision, use-cases, and the `## Resume notes` if present), play back in two or three sentences where you left off and what's still open, then continue from there. Don't re-elicit settled ground. If the notes say the session is **ready to finalize** (the step-1 sweep is already done), go straight to step 2 — unless use-cases changed since the sweep, which warrants a quick re-sweep of the affected axes first.
 - **Start fresh** — leave that file untouched and begin a new `.wip.md` for the new topic.
 
 If there are several `*.wip.md` files, list them and ask which (if any) to resume.
@@ -59,7 +84,7 @@ If there are several `*.wip.md` files, list them and ask which (if any) to resum
 **Pausing (on request — "pause", "stop for now", "let's continue later").**
 
 1. Make sure the `.wip.md` is current (vision + use-cases written, per the file format).
-2. Add or refresh a `## Resume notes` section at the end, capturing just enough session state to pick up cleanly: which breadth axes (emotion / kinds of user / lifecycle) are well covered vs. thin, threads left open, the next question you would have asked, and whether the provisional vision still feels right.
+2. Add or refresh a `## Resume notes` section at the end, capturing just enough session state to pick up cleanly: which breadth axes (emotion / kinds of user / lifecycle) are well covered vs. thin, threads left open, the next question you would have asked, and whether the provisional vision still feels right. If you've reached the wrap-up gate, also record how far the step-1 architecture-significance sweep got — which of its dimensions are covered vs. open — and, if it's complete, that the session is **ready to finalize** (so resuming can skip straight to step 2). This is where the "ready to finalize" state lives when a session pauses between the two steps.
 3. Turn scope steering OFF — a pause is a mini session-end (see the steering hook).
 4. Tell the user the file path and that re-invoking the skill will resume from it. Then stop.
 
