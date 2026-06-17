@@ -128,7 +128,7 @@ Keep it light — one short exchange, then back to diverging on the vision. The 
 
 <scope-steering-hook>
 
-Some repos ship a `UserPromptSubmit` hook that re-injects the scope boundary every turn so it never fades over a long session. It is gated by a flag file in the **current git submodule's root** (`$CLAUDE_PROJECT_DIR`), toggled by renaming:
+Some repos ship a `UserPromptSubmit` hook that re-injects the scope boundary every turn so it never fades over a long session. This counters **context rot** — as the conversation grows, a steer given once near the top loses salience even while still technically in context (the model keeps the words but quietly down-weights them); re-stating it at the end of each prompt restores it to the highest-attention position. (It also survives compaction, when the original may be summarized away entirely — but rot is the everyday reason, present from turn one.) It is gated by a flag file in the **current git submodule's root** (`$CLAUDE_PROJECT_DIR`), toggled by renaming:
 
 - `brainstorm_scope_boundary_on.md` → steering ON
 - `brainstorm_scope_boundary_off.md` → steering OFF (resting state)
