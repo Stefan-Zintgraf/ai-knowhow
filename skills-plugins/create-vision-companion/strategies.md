@@ -1,25 +1,12 @@
 # Vision → Planning: Conversion Strategies
 
-> **Status: working draft, to be refined in a later session.**
->
-> **What this is.** A catalogue of the strategies for converting a finalized
-> `*-foundation-vision.md` (a human, divergent, plain-language press-release +
-> flat use-case list) into the **planning-phase document bundle** an AI agent
-> uses to produce architecture, requirements, and an implementation plan.
->
-> This is the *methodology* behind the concrete plan in
-> [ai-friendly-vision-plan.md](ai-friendly-vision-plan.md) and the pilot bundle it
-> produced (`ai-mail.pocock/docs/brainstorming/ai-mail-vision-ai-spec/`). The plan
-> says *what to build for ai-mail*; this file says *why those strategies, and what
-> recognized practice each rests on*.
->
-> Created: 2026-06-19.
+**What this is.** The methodology for converting a finalized
+`*-foundation-vision.md` (a human, divergent, plain-language press-release, a flat
+use-case list, and an optional parking-lot of out-of-scope items) into the
+**planning-phase companion bundle** an AI agent uses to produce architecture,
+requirements, and an implementation plan.
 
----
-
-## 0. How the conversion was decided (the meta-strategy)
-
-There is **no single official, named methodology** for this. The approach is a
+There is no single official, named methodology for this. The approach is a
 **synthesis of recognized building blocks, driven by a structural diagnosis** of
 what makes a vision document hard for a build-phase agent to consume. The chain:
 
@@ -30,17 +17,10 @@ what makes a vision document hard for a build-phase agent to consume. The chain:
 3. **Bind it all with a traceability spine** so nothing is invented and nothing
    is lost, and the original vision stays the single source of truth.
 
-> **To refine later:** decide whether to additionally conform the output to a
-> *formally citable* standard (see §4). Right now the bundle is principled but
-> bespoke.
->
-> **Refinement 2026-06-19:** reviewed against the `agent-rules-books` rule-sets
-> (`pocock/agent-rules-books/`). Only the **strategic-design layer** was folded in
-> — DDD subdomains + context mapping (new S7), with APOSD and Clean Architecture
-> cited as anchors for principles S1/S5/§1 already applied implicitly. Tactical
-> DDD, Clean Architecture mechanics, data-intensive design, and all
-> code-construction/operations rule-sets were deliberately **deferred** — see the
-> altitude fence in §2a.
+The output is principled but bespoke. It does not yet conform to a formally
+citable standard (see §5 for candidates), and it deliberately borrows only the
+**strategic-design layer** of the source disciplines — see the altitude fence in
+§2a.
 
 ---
 
@@ -62,23 +42,31 @@ Token count isn't the bottleneck; structure is. The emotional framing is cheap
 insurance against locally-clever, globally-wrong design choices. So the strategy
 is **derive a companion bundle, never edit the vision down.**
 
-> **Anchor (added in refinement):** this is exactly Ousterhout's thesis in *A
-> Philosophy of Software Design* — *complexity is structural, not size*; the cost
-> that matters is **cognitive load** (how many facts a reader must hold at once),
-> not line count. The four gaps above are the document forms of his named
-> complexity symptoms: D1 ≈ *change amplification / repeated reasoning*, D2/D3 ≈
-> *high cognitive load*, D4 ≈ *hidden dependencies*. So "don't compress, restructure"
-> is the SoD principle applied to a document. (Ref: APOSD, §5.)
+**Companion principle — total coverage.** The companion set, not the vision, is
+the working input to the next phase, so *every* item in the vision must resolve to
+at least one place in the bundle: each press-release claim, each use-case (`UC#`),
+and each parked item (`BV#`). Nothing in the vision may be left without a home —
+an item with no companion location would silently vanish from the build phase. The
+vision stays canonical for arbitration (S6); the bundle stays complete enough to
+stand on its own.
+
+This is Ousterhout's thesis in *A Philosophy of Software Design* — *complexity is
+structural, not size*; the cost that matters is **cognitive load** (how many facts
+a reader must hold at once), not line count. The four gaps are the document forms
+of his named complexity symptoms: D1 ≈ *change amplification / repeated
+reasoning*, D2/D3 ≈ *high cognitive load*, D4 ≈ *hidden dependencies*. "Don't
+compress, restructure" is the Separation-of-Design principle applied to a
+document. (Ref: APOSD, §5.)
 
 ---
 
 ## 2. The strategies (one per gap) and the practice each rests on
 
-Each strategy is a recognized practice. They were **assembled**, not lifted from
+Each strategy is a recognized practice. They are **assembled**, not lifted from
 one combined standard.
 
 ### S1 — Factor cross-cutting constraints into an invariants doc  *(answers D1)*
-Pull the rules that touch every capability (approval gate, non-destructive,
+Pull the rules that touch every capability (e.g. approval gate, non-destructive,
 transparency, audit, ownership, progressive autonomy, boundaries, acts-in-real-name)
 into a single document, stated once, referenced by ID everywhere else.
 - **Rests on:** *Cross-cutting concerns* — the scattering/tangling problem that
@@ -97,7 +85,7 @@ capability (+ noted secondaries); list actors separately.
 - **Rests on:** *Use-case / actor modelling* (UML/RUP lineage); the actor split
   also echoes DDD *bounded contexts* (each actor relationship is a candidate
   context boundary, e.g. single-user vs. team/manager).
-- **Now sharpened by S7:** the clustering used to be a free *reading* of the list.
+- **Sharpened by S7:** the clustering is otherwise a free *reading* of the list.
   S7 makes it more repeatable — classify each cluster's subdomain (Core / Supporting
   / Generic) and name the relationship at each actor boundary using DDD's context-map
   vocabulary. S2 produces the clusters; S7 classifies and connects them.
@@ -112,7 +100,7 @@ Use these terms in all downstream code, schemas, and docs.
   (a) **one concept gets one term, and one term does not carry two meanings inside a
   context** — so the glossary is per-context, not global; (b) the *same word in
   different contexts is potentially a different concept* — translate at the boundary
-  rather than forcing one shared definition. For a single-context pilot this collapses
+  rather than forcing one shared definition. For a single-context vision this collapses
   to one glossary, but the rule is what scales it when team/manager contexts split off.
 - **Refs:** [DDD Reference PDF (Evans)](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf) ·
   DDD Distilled (Vernon), §5
@@ -146,7 +134,7 @@ use-case ID; if a derived doc and the vision disagree, the vision wins.
 - **Rests on:** the general *single-source-of-truth* discipline; the specific
   layering here is bespoke.
 
-### S7 — Classify subdomains and map context relationships  *(answers D2 depth; partly answers the phasing gap)*
+### S7 — Classify subdomains and map context relationships  *(deepens D2; partly answers the phasing gap)*
 On top of the S2 capability map, add two pieces of **strategic-design** structure
 from DDD — the layer that lives at the planning altitude, *not* tactical DDD:
 
@@ -156,10 +144,9 @@ from DDD — the layer that lives at the planning altitude, *not* tactical DDD:
      and design effort here.
    - *Supporting* = needed but not differentiating; keep simple.
    - *Generic* = solved problems (auth, storage); prefer buy/adopt over modelling.
-   This is the single most useful thing the books add: it converts the flat,
-   priority-free map into an **investment/attention ordering** without smuggling
-   MVP-scoping or tech into the vision (the vision stays priority-free; the
-   *classification* is a derived, citable judgment).
+   This converts the flat, priority-free map into an **investment/attention
+   ordering** without smuggling MVP-scoping or tech into the vision (the vision
+   stays priority-free; the *classification* is a derived, citable judgment).
 
 2. **Context-map relationships.** Where S2 noted that each actor relationship is a
    *candidate* context boundary, S7 names the relationship with DDD's vocabulary —
@@ -177,83 +164,96 @@ from DDD — the layer that lives at the planning altitude, *not* tactical DDD:
   strategic half; Vernon, *DDD Distilled*). **Explicitly excludes** tactical
   patterns (Aggregates, Entities, Value Objects, Domain Events, Application
   Services) — those are downstream of planning and would violate the
-  no-architecture-in-the-vision discipline. See the fence in §3a.
+  no-architecture-in-the-vision discipline. See the fence in §2a.
 - **Refs:** [Wikipedia: DDD](https://en.wikipedia.org/wiki/Domain-driven_design) ·
   DDD Distilled (Vernon), §5 ·
   [DDD Reference PDF (Evans)](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)
 
+### S8 — Route every parked item to its downstream phase; drop nothing  *(coverage strategy)*
+The vision may carry a parking lot of out-of-scope items (`BV1…`) — integrations
+and other-tool interop, hard constraints (offline, privacy, scale), tech/platform
+leanings, MVP/scoping calls, remembered edge cases. These are precisely the
+build-phase thinking the vision deliberately kept out, captured so it isn't lost.
+Many visions park nothing and have no `BV` items at all; when they exist, the
+companion set is now the main input to the phase that consumes them, so none may
+be dropped. Route each `BV` item by type, **citing it by `BV` ID**:
+
+- **Cross-cutting constraints the build must honor** (e.g. must-work-offline,
+  data-stays-on-device, scale) → fold into the **invariants doc (S1)** as
+  first-class invariants, cited by `BV` ID alongside any asserting `UC` IDs.
+- **Everything else** (integrations, tech/platform leanings, scoping calls, edge
+  cases) → a dedicated holding doc (`parking-lot.md` / `deferred-inputs.md`), each
+  item tagged with the downstream phase that consumes it (architecture / design /
+  scoping). The bundle **preserves and routes** these; per the altitude fence
+  (§2a) it does **not** design from them or promote them into the capability map.
+
+Every `BV` item must land in exactly one of these homes — the same no-orphans rule
+S4 applies to use-cases, extended to the parking lot.
+- **Rests on:** the RTM coverage discipline (S4) extended to parked items, bounded
+  by the altitude fence (§2a).
+
 ---
 
-## 2a. The altitude fence (what was deliberately left out)
+## 2a. The altitude fence (what to leave out)
 
-The enhancement pulls only the **strategic-design** layer from the DDD books and
-the *principles* (not the rules) from APOSD and Clean Architecture. Everything
-below was evaluated and **deliberately deferred to a later phase**, because it
-operates at the code-construction or runtime altitude and would contradict the
-vision's no-tech/no-architecture discipline if pulled in now:
+The method pulls only the **strategic-design** layer from DDD and the *principles*
+(not the rules) from APOSD and Clean Architecture. Everything below operates at
+the code-construction or runtime altitude and would contradict the vision's
+no-tech/no-architecture discipline if pulled into the bundle — defer it to the
+phase the bundle *feeds*:
 
-| Deferred to | Source | Why not now |
-|-------------|--------|-------------|
+| Deferred to | Source | Why not in the bundle |
+|-------------|--------|-----------------------|
 | Architecture phase | Tactical DDD (Aggregates, Entities, Value Objects, Domain Events, Application Services — *Implementing DDD*) | Implementation shape; downstream of the capability/subdomain map. |
 | Architecture phase | Clean Architecture *rules* (dependency rule, ports/adapters, composition root) | Only the *policy-independence principle* is at-altitude (see S1); the mechanics are downstream. |
-| Architecture phase | Designing Data-Intensive Applications (ownership, consistency, event flow, schema evolution) | Genuinely relevant to ai-mail's invariants, but feeds the *architecture docs the bundle produces*, not the conversion method. |
-| Build / review phase | Clean Code, Code Complete, PEAA, Refactoring, Refactoring.Guru, Release It!, Working Effectively with Legacy Code | Code-construction or production-operations altitude; no code or running system exists yet. |
+| Architecture phase | Designing Data-Intensive Applications (ownership, consistency, event flow, schema evolution) | Feeds the *architecture docs the bundle produces*, not the conversion method. |
+| Build / review phase | Clean Code, Code Complete, PEAA, Refactoring, Release It!, Working Effectively with Legacy Code | Code-construction or production-operations altitude; no code or running system exists yet. |
+
+**Standing rule: borrow only the strategic-design layer.** When tempted to pull a
+tactical pattern (an Aggregate boundary, a port, a consistency model) into the
+planning bundle, that is altitude leakage — it belongs to the phase the bundle
+*feeds*, not the conversion. Parked (`BV#`) tech/architecture leanings are subject
+to the same fence: the bundle **carries them forward** to the phase that consumes
+them (S8), it does not act on them.
 
 ---
 
-## 3. What is bespoke judgment, not standard
+## 3. Where judgment is required (not standard)
 
-Be honest about where discretion replaced rule — these are the parts most worth
-refining later:
+These parts are discretion, not rule — flag them as judgment calls in the output:
 
 - **The specific clusters, the primary/secondary assignments, and the exact set
   of invariants** are a *reading* of the source use-cases, not an output of any
   method. S7's subdomain classification and context-map vocabulary make the
-  clustering *more* repeatable (two readers now share a fixed taxonomy and a
-  Core/Supporting/Generic test) but do **not** make it deterministic — what counts
-  as the Core Domain is still a judgment call.
-- **Refusing to compress the emotional vision** is a deliberate call, not a
-  documented practice — the opposite (terse specs) is arguably more conventional.
-  (APOSD's cognitive-load argument is the principled defense, but the call predates
-  the citation.)
+  clustering *more* repeatable (a fixed taxonomy and a Core/Supporting/Generic
+  test) but not deterministic — what counts as the Core Domain is still a judgment
+  call.
+- **Refusing to compress the emotional vision** is a deliberate call; the opposite
+  (terse specs) is arguably more conventional. APOSD's cognitive-load argument is
+  the principled defense.
 - **The exact bundle shape** (which files, the README load-order) is assembled
   judgment, not a named template.
 
-### 3a. The altitude fence as a standing rule
-
-Beyond the per-doc judgment above, the enhancement adds one *integrity* rule worth
-stating explicitly: **borrow only the strategic-design layer.** When a later session
-is tempted to pull a tactical pattern (an Aggregate boundary, a port, a consistency
-model) into the planning bundle, that is altitude leakage — it belongs to the phase
-the bundle *feeds*, not the conversion. The §2a fence is the record of what was
-consciously left out and where it goes next.
-
 ---
 
-## 4. Open questions to resolve when refining
+## 4. Considerations when scaling beyond a single vision
 
-1. **Adopt a formal, citable standard on top?** Candidates to evaluate:
-   - **ISO/IEC/IEEE 29148** — requirements engineering (would formalize the
-     requirements/traceability side).
-   - **arc42** — architecture documentation template (would formalize the
-     downstream architecture docs the bundle feeds).
-   - **C4 model** — for the architecture-diagram layer later.
-   Decide whether conforming buys enough to be worth the rigidity.
-2. **How prescriptive should the clustering method be?** *(partly resolved by S7.)*
-   S7 adds a fixed taxonomy — subdomain class (Core/Supporting/Generic) + context-map
-   relationship — that makes clustering more repeatable across runs and visions.
-   Remaining open: whether to add explicit *heuristics* for drawing the initial
-   cluster lines (S2), which is still a free reading.
-3. **A machine-readable layer?** The pilot is markdown-first. When a real
-   programmatic consumer appears, mirror the index as YAML/JSON.
-4. **Priority / phasing.** *(partly resolved by S7.)* The vision stays
-   priority-free, but S7's Core/Supporting/Generic classification is itself a derived
-   *attention/investment* ordering — a soft prioritization that doesn't touch the
-   vision. Remaining open: whether a separate, harder *phasing/roadmap* artifact
-   (sequence, MVP cut) belongs in this pipeline or in the planning phase after it.
-5. **Generalize into a companion skill?** If these strategies hold up across more
-   than the ai-mail pilot, fold them into a `vision-to-spec` skill so every
-   foundation vision gets the same treatment.
+- **Clustering heuristics (S2).** S7 fixes a taxonomy (subdomain class +
+  context-map relationship) that makes clustering more repeatable. Drawing the
+  initial cluster lines is still a free reading; explicit heuristics for that step
+  could tighten it further.
+- **A machine-readable layer.** The bundle is markdown-first. When a real
+  programmatic consumer appears, mirror the traceability index as YAML/JSON.
+- **Priority / phasing.** The vision stays priority-free; S7's
+  Core/Supporting/Generic classification is itself a derived *attention/investment*
+  ordering — a soft prioritization that doesn't touch the vision. A harder
+  *phasing/roadmap* artifact (sequence, MVP cut) belongs in the planning phase
+  *after* this pipeline, not in the bundle.
+- **Formal standards.** Whether to conform the output to a formally citable
+  standard is a trade-off of rigor vs. rigidity. Candidates: **ISO/IEC/IEEE 29148**
+  (requirements engineering — formalizes the requirements/traceability side),
+  **arc42** (architecture documentation template — formalizes the downstream
+  architecture docs the bundle feeds), **C4 model** (architecture diagrams, later).
 
 ---
 
@@ -266,5 +266,4 @@ consciously left out and where it goes next.
 - Requirements Traceability Matrix: [Perforce](https://www.perforce.com/resources/alm/requirements-traceability-matrix) · [Jama](https://www.jamasoftware.com/requirements-management-guide/requirements-traceability/what-is-traceability-12/)
 - Separation of Concerns / SRP: [SoC](https://en.wikipedia.org/wiki/Separation_of_concerns) · [SRP](https://en.wikipedia.org/wiki/Single-responsibility_principle)
 - Use-case modelling: [Wikipedia: Use case](https://en.wikipedia.org/wiki/Use_case)
-- Book rule-sets used (strategic-design layer only): `pocock/agent-rules-books/` — `domain-driven-design-distilled`, `domain-driven-design`, `a-philosophy-of-software-design`, `clean-architecture`. See §2a for what was deferred and why.
-- Candidate formal standards (to evaluate): ISO/IEC/IEEE 29148 (requirements), arc42 (architecture docs), C4 model (diagrams)
+- Candidate formal standards: ISO/IEC/IEEE 29148 (requirements), arc42 (architecture docs), C4 model (diagrams)
