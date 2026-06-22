@@ -1,10 +1,12 @@
 # Output templates
 
-The markdown skeleton for each of the seven companion files. These are *shapes*,
-not fill-in forms — adapt headings and prose to the product, but keep the columns,
-the ID schemes, and the cross-links. Every derived claim cites ≥1 `UC`. The
+The markdown skeleton for each companion file — seven core files, plus
+`deferred-inputs.md` when the vision parks `BV` items. These are *shapes*, not
+fill-in forms — adapt headings and prose to the product, but keep the columns, the
+ID schemes, and the cross-links. Every derived claim cites ≥1 `UC` (or `BV`). The
 ai-mail pilot (`ai-mail.pocock/docs/brainstorming/ai-mail-vision-ai-spec/`) is the
-worked reference for files 1–6; file 7 (subdomains/context-map) is new with S7.
+worked reference for files 1–6; files 7–8 (subdomains/context-map, deferred-inputs)
+are newer (S7, S8).
 
 Replace `<product>` / `<product-slug>` and the bracketed placeholders throughout.
 
@@ -35,10 +37,11 @@ the vision without re-deriving its structure each run.
 | [capability-map.md](capability-map.md) | The <n> UCs clustered into capabilities (`CAP1…`) | …shaping modules/services or scoping a feature area. |
 | [subdomains-and-context-map.md](subdomains-and-context-map.md) | Core/Supporting/Generic + context relationships | …deciding where to concentrate design effort and how contexts integrate. |
 | [uc-index.md](uc-index.md) | Traceability spine: every UC → actor · capability · invariants · normalized intent | …you need to trace a requirement back to a UC, or forward from a UC. |
+| [deferred-inputs.md](deferred-inputs.md) *(only if the vision parked `BV` items)* | Parked `BV` items routed to the phase that consumes them | …planning architecture or scope and you need the deferred build-phase inputs. |
 
 ## Suggested load order by task
 
-- **Whole-system architecture:** invariants → glossary → capability-map → subdomains-and-context-map → actors.
+- **Whole-system architecture:** invariants → glossary → capability-map → subdomains-and-context-map → actors → deferred-inputs (if present).
 - **Requirements for one capability:** invariants → glossary → that `CAP` section → its UC rows in uc-index → the cited UCs in the vision.
 - **Where to invest design effort:** subdomains-and-context-map (Core first).
 - **Reviewing coverage / traceability:** uc-index (it links everything).
@@ -239,3 +242,31 @@ Rules: one row per UC, **100% coverage**, every row has a primary CAP and an
 actor. The `Src` link points at the UC's actual line in the vision. The normalized
 intent is the single sanctioned compression — never restate an invariant verbatim
 here; reference it by `INV` id.
+
+---
+
+## 8. `deferred-inputs.md` — routed parking-lot items (S8)
+
+*Only when the vision has a `## Beyond the vision (parking lot)` section with `BV`
+items. Cross-cutting `BV` constraints (offline, on-device, scale) go to
+`invariants.md` instead — they are not repeated here.*
+
+```markdown
+# Deferred inputs — parked items routed downstream
+
+The vision deliberately kept build-phase thinking out of scope and parked it as
+`BV` items. This file **preserves and routes** those items so none is lost; it does
+**not** design from them or promote them into capabilities (altitude fence). Each
+row is tagged with the phase that consumes it.
+
+> Cross-cutting `BV` constraints are recorded as invariants — see
+> [invariants.md](invariants.md). Everything else lives here.
+
+| BV | Src | Item | Type | Consumed by |
+|----|-----|------|------|-------------|
+| BV1 | [L<n>](../<product-slug>-foundation-vision.md#L<n>) | <one-line restatement> | integration / tech-leaning / scoping / edge-case | architecture / design / scoping |
+```
+
+Rules: every `BV` item lands in exactly one home — an `INV` (cross-cutting) or one
+row here. Zero parked orphans. The `Src` link points at the `BV` item's line in the
+vision. Route and tag only; do not expand into design.

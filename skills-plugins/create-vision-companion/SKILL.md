@@ -7,7 +7,7 @@ description: Convert a finalized foundation vision (a `*-foundation-vision.md` �
 
 Turn a **finalized** foundation vision into a **derived companion set** — a small bundle of structured markdown docs a build-phase agent (architecture / requirements / planning) can consume without re-deriving the vision's structure every run.
 
-The vision is written for a *human*: narrative, emotional, one flat use-case list, plain language, no structure. That's correct for what it is — but it creates four frictions for a planning agent (cross-cutting rules restated everywhere, no clustering, no shared terminology, no traceability). This skill resolves each with one recognized practice, **without ever editing the vision down**. The strategies (S1–S7) and their rationale live in [strategies.md](strategies.md); the exact output shapes live in [templates.md](templates.md). Read both before drafting.
+The vision is written for a *human*: narrative, emotional, one flat use-case list, plain language, no structure. That's correct for what it is — but it creates four frictions for a planning agent (cross-cutting rules restated everywhere, no clustering, no shared terminology, no traceability). This skill resolves each with one recognized practice, **without ever editing the vision down**. The strategies (S1–S8) and the method live in [strategies.md](strategies.md); the exact output shapes live in [templates.md](templates.md). Read both before drafting.
 
 Run this **conversationally, phase by phase**: draft one artifact, show it, take the user's cuts/merges, write it, then move to the next. Don't draft the whole bundle in one shot.
 
@@ -22,7 +22,7 @@ Run this **conversationally, phase by phase**: draft one artifact, show it, take
 
 <the-bundle>
 
-Output goes in a tidy subfolder **parallel to the vision**: `docs/brainstorming/<product-slug>-vision-ai-spec/`. Seven files, each owning exactly one concern (S5):
+Output goes in a tidy subfolder **parallel to the vision**: `docs/brainstorming/<product-slug>-vision-ai-spec/`. Seven core files, each owning exactly one concern (S5), plus `deferred-inputs.md` when the vision parks `BV` items (S8):
 
 | File | Concern | Strategy |
 |------|---------|----------|
@@ -33,8 +33,9 @@ Output goes in a tidy subfolder **parallel to the vision**: `docs/brainstorming/
 | `capability-map.md` | The flat UCs clustered into capabilities (`CAP1…`); one **primary** per UC | S2 |
 | `subdomains-and-context-map.md` | Each capability tagged Core/Supporting/Generic + DDD context relationships at actor boundaries | S7 |
 | `uc-index.md` | **Traceability spine**: every UC → actor · capability(+secondaries) · invariants · source line · normalized one-liner | S4 |
+| `deferred-inputs.md` *(only if the vision parks `BV` items)* | Non-cross-cutting parked items (`BV…`) routed to the phase that consumes them; **not** promoted into capabilities | S8 |
 
-A worked reference bundle exists at `ai-mail/ai-mail.pocock/docs/brainstorming/ai-mail-vision-ai-spec/` (the pilot — note it predates S7, so it has no `subdomains-and-context-map.md`).
+A worked reference bundle exists at `ai-mail/ai-mail.pocock/docs/brainstorming/ai-mail-vision-ai-spec/` (the pilot — note it predates S7 and S8, so it has no `subdomains-and-context-map.md` or `deferred-inputs.md`).
 
 </the-bundle>
 
@@ -55,14 +56,15 @@ The non-negotiables (full rationale in [strategies.md](strategies.md)):
 Phase by phase. After each, **re-read the vision from disk** (the user may edit between turns), present the draft, take feedback, write the file, then continue.
 
 - **Phase 0 — Setup & conventions.** Confirm the input vision and the output folder. Lock the ID schemes (`UC`/`BV` already in the vision; new `INV`, `CAP`). Confirm the vision is finalized and will stay untouched. Note coverage target: 100% of UCs land in the index.
-- **Phase 1 — Invariants (S1) → `invariants.md`.** Sweep every UC; collect the cross-cutting constraints restated across many; dedupe into `INV1…` with statement, what-it-means-for-the-build, and representative asserting UCs. Invent nothing — every INV is cited by ≥1 UC.
+- **Phase 1 — Invariants (S1) → `invariants.md`.** Sweep every UC; collect the cross-cutting constraints restated across many; dedupe into `INV1…` with statement, what-it-means-for-the-build, and representative asserting UCs. Invent nothing — every INV is cited by ≥1 UC. If the vision parks `BV` items, also fold any cross-cutting `BV` constraints (e.g. must-work-offline, data-stays-on-device, scale) into `INV…`, cited by `BV` ID (S8).
 - **Phase 2 — Glossary (S3) → `glossary.md`.** One canonical term per concept; list the vision's synonyms each absorbs. Feed the project's `CONTEXT.md` ubiquitous-language convention if one exists.
 - **Phase 3 — Actors (S2) → `actors.md`.** Distinct *relationships to the product* (drive tenancy/permissions) as actor codes; personas (UX flavours, not architecture) listed separately.
 - **Phase 4 — Capability map (S2) → `capability-map.md`.** Cluster the flat UCs into `CAP1…`; each UC gets **one primary** capability (note secondaries for the index). Per capability: intent, member UCs, key entities (glossary terms), leaned-on invariants. Flag UCs that resist clustering — they're a gap-check on the vision.
 - **Phase 5 — Subdomains & context map (S7) → `subdomains-and-context-map.md`.** Tag each capability **Core / Supporting / Generic** with rationale (a derived attention/investment ordering — *not* MVP scoping). Name the DDD relationship at each actor/external boundary (Partnership, Shared Kernel, Customer/Supplier, Conformist, ACL, Open Host, Published Language, Separate Ways) with who owns the language and whether translation is needed. Every row cites UC IDs. **Strategic design only — no tactical patterns.**
 - **Phase 6 — UC index (S4) → `uc-index.md`.** One row per UC: id · source-line link · actor(s) · primary CAP · secondaries · INVs · normalized one-liner. This is the spine — it must reconcile every prior file.
-- **Phase 7 — README + consistency/gap pass → `README.md`.** Write the map + per-task load order + the vision-wins rule. Then run the quality gates below; resolve orphans, unused invariants, synonym collisions, mis-clustered UCs.
-- **Phase 8 — Human review & finalize.** Read the bundle back; invite cuts/merges/sharpening; finalize.
+- **Phase 7 — Parking lot (S8) → `deferred-inputs.md`.** *Skip if the vision parks no `BV` items.* Cross-cutting `BV` constraints already went to `invariants.md` in Phase 1; route every remaining `BV` item here, tagged with the phase that consumes it (architecture / design / scoping). Preserve and route — do **not** design from them or promote them into the capability map (altitude fence).
+- **Phase 8 — README + consistency/gap pass → `README.md`.** Write the map + per-task load order + the vision-wins rule. Then run the quality gates below; resolve orphans, unused invariants, synonym collisions, mis-clustered UCs, unrouted `BV` items.
+- **Phase 9 — Human review & finalize.** Read the bundle back; invite cuts/merges/sharpening; finalize.
 
 > **Fan-out option (opt-in only).** Per-UC tagging, per-cluster drafting, and adversarial consistency checks make this a good multi-agent Workflow candidate. Only run one if the user explicitly opts in; otherwise execute the phases inline.
 
@@ -70,10 +72,11 @@ Phase by phase. After each, **re-read the vision from disk** (the user may edit 
 
 <quality-gates>
 
-Before finalizing (Phase 7), verify:
+Before finalizing (Phase 8), verify:
 
 - **Vision unchanged** — byte-identical source; the bundle only added files.
 - **Total coverage** — 100% of UCs in `uc-index.md`, each with ≥1 capability and ≥1 actor. Zero orphans.
+- **Parked items routed** — every `BV` item lands in exactly one home: an `INV` (cross-cutting) or a `deferred-inputs.md` entry tagged with its consuming phase. Zero parked orphans.
 - **Invariants factored** — no invariant restated verbatim in a normalized line or capability description; referenced by `INV` id. Every `INV` cited by ≥1 UC.
 - **Single language** — every concept has exactly one canonical glossary term; known synonyms mapped to it.
 - **Bidirectional links resolve** — pick any UC and trace it forward and back.
