@@ -22,7 +22,7 @@ Run this **conversationally, phase by phase**: draft one artifact, show it, take
 
 <the-bundle>
 
-Output goes in a tidy subfolder **parallel to the vision**: `docs/brainstorming/<product-slug>-vision-ai-spec/`. Seven core files, each owning exactly one concern (S5), plus `deferred-inputs.md` when the vision parks `BV` items (S8):
+Output goes in a tidy subfolder **parallel to the vision**, with a **fixed name** that never changes across sittings or re-runs: `docs/brainstorming/<product-slug>-vision-ai-spec/`. A small `_status.md` file inside the folder carries the build state (`in-progress` vs `finalized`) and the resume notes — it is the marker that distinguishes a paused build from a finished one (see Pause and resume) and survives into the finalized bundle. Seven core files, each owning exactly one concern (S5), plus `deferred-inputs.md` when the vision parks `BV` items (S8):
 
 | File | Concern | Strategy |
 |------|---------|----------|
@@ -53,9 +53,9 @@ The non-negotiables (full rationale in [strategies.md](strategies.md)):
 
 <workflow>
 
-Phase by phase. After each, **re-read the vision from disk** (the user may edit between turns), present the draft, take feedback, write the file, then continue.
+Phase by phase. After each, **re-read the vision from disk** (the user may edit between turns), present the draft, take feedback, write the file, update `_status.md`, then **offer a checkpoint pause** (pause and continue fresh next sitting) before moving on — see Pause and resume.
 
-- **Phase 0 — Setup & conventions.** Confirm the input vision and the output folder. Lock the ID schemes (`UC`/`BV` already in the vision; new `INV`, `CAP`). Confirm the vision is finalized and will stay untouched. Note coverage target: 100% of UCs land in the index.
+- **Phase 0 — Setup & conventions.** First look in the output directory for an existing `<product-slug>-vision-ai-spec/` and branch on its `_status.md` (see Pause and resume for `in-progress`, and Re-running for `finalized`); ask before continuing either way. For a new build: confirm the input vision and the output folder, then create the folder and seed `_status.md` (status `in-progress`, empty phase checklist). Lock the ID schemes (`UC`/`BV` already in the vision; new `INV`, `CAP`). Confirm the vision is finalized and will stay untouched. Note coverage target: 100% of UCs land in the index.
 - **Phase 1 — Invariants (S1) → `invariants.md`.** Sweep every UC; collect the cross-cutting constraints restated across many; dedupe into `INV1…` with statement, what-it-means-for-the-build, and representative asserting UCs. Invent nothing — every INV is cited by ≥1 UC. If the vision parks `BV` items, also fold any cross-cutting `BV` constraints (e.g. must-work-offline, data-stays-on-device, scale) into `INV…`, cited by `BV` ID (S8).
 - **Phase 2 — Glossary (S3) → `glossary.md`.** One canonical term per concept; list the vision's synonyms each absorbs. Feed the project's `CONTEXT.md` ubiquitous-language convention if one exists.
 - **Phase 3 — Actors (S2) → `actors.md`.** Distinct *relationships to the product* (drive tenancy/permissions) as actor codes; personas (UX flavours, not architecture) listed separately.
@@ -64,11 +64,60 @@ Phase by phase. After each, **re-read the vision from disk** (the user may edit 
 - **Phase 6 — UC index (S4) → `uc-index.md`.** One row per UC: id · source-line link · actor(s) · primary CAP · secondaries · INVs · normalized one-liner. This is the spine — it must reconcile every prior file.
 - **Phase 7 — Parking lot (S8) → `deferred-inputs.md`.** *Skip if the vision parks no `BV` items.* Cross-cutting `BV` constraints already went to `invariants.md` in Phase 1; route every remaining `BV` item here, tagged with the phase that consumes it (architecture / design / scoping). Preserve and route — do **not** design from them or promote them into the capability map (altitude fence).
 - **Phase 8 — README + consistency/gap pass → `README.md`.** Write the map + per-task load order + the vision-wins rule. Then run the quality gates below; resolve orphans, unused invariants, synonym collisions, mis-clustered UCs, unrouted `BV` items.
-- **Phase 9 — Human review & finalize.** Read the bundle back; invite cuts/merges/sharpening; finalize.
+- **Phase 9 — Human review & finalize.** Read the bundle back; invite cuts/merges/sharpening; then **finalize** — set `_status.md` to `finalized`, record the date (and, if a re-run, what this pass changed), and stamp `built-with-hash` with the skill fingerprint (recipe in Re-running). The folder name does not change.
 
 > **Fan-out option (opt-in only).** Per-UC tagging, per-cluster drafting, and adversarial consistency checks make this a good multi-agent Workflow candidate. Only run one if the user explicitly opts in; otherwise execute the phases inline.
 
 </workflow>
+
+<pause-and-resume>
+
+A companion build can span multiple sittings, and **each phase is a clean checkpoint** — one self-contained artifact derived from the frozen vision. State lives in **`_status.md` inside the bundle folder** (the folder name never changes). While the build is unfinished its `status` is `in-progress` and it carries the resume notes, so a bundle whose `_status.md` reads `in-progress` *is* a paused, resumable build — even if a previous sitting ended abruptly. At finalize the same file flips to `finalized` (Phase 9); the resume notes become a historical record.
+
+`_status.md` holds: the `status` line; a **phase checklist** (each phase → done/open + the file it wrote); any flagged judgment calls awaiting the user (clusterings, primary/secondary assignments, Core/Supporting/Generic tags); open threads; and the next phase to run.
+
+**Offer a checkpoint pause after every phase (whenever reasonable).** Because the next phase re-reads the vision from disk anyway, continuing in a **fresh context loses almost nothing** and avoids the quality drift of a long session. After writing each phase's file and updating `_status.md`, offer — once, gently — to pause and continue fresh in a new sitting, then stop or continue per the user's call. Don't nag: skip the offer on trivial phases (e.g. an empty Phase 7) or when the user clearly wants momentum.
+
+**Resuming (at session start — part of Phase 0).** Before setting up a new build, look in the output directory (default `docs/brainstorming/`) for the bundle folder and read its `_status.md`. If `status` is `in-progress`, **always ask** — never auto-continue. Name the folder and its product, then offer the choice:
+
+- **Resume it** — read `_status.md` and the files already written, re-read the vision from disk, play back in two or three sentences which phases are done and what's still open, then continue from the first unfinished phase. Don't redo settled phases.
+- **Start fresh** — confirm first (this overwrites the in-progress work), then reset `_status.md` and rebuild from Phase 0.
+
+(If `status` is `finalized`, this is a re-run — see Re-running on a finalized vision.)
+
+**Pausing (on request — "pause", "stop for now", "let's continue later" — or when a per-phase offer is accepted).**
+
+1. Make sure the current phase's file is written — don't pause mid-artifact; finish or discard the in-flight draft first.
+2. Update `_status.md` (phase checklist, open judgment calls, open threads, next phase).
+3. Tell the user the folder path and that re-invoking the skill resumes from it. Then stop.
+
+</pause-and-resume>
+
+<re-running-on-a-finalized-vision>
+
+The skill is meant to be **run again on the same vision** — to upgrade a bundle after the skill itself improved, or to review/iterate the bundle with a stronger model (e.g. Ralph-looping). The vision stays frozen and canonical throughout (S6); a re-run only ever revises the *derived* files.
+
+**Detecting skill drift (the hash check).** A finalized bundle records `built-with-hash` in `_status.md` — a fingerprint of the skill's output-shaping files at build time. At Phase 0, recompute it **from the skill's own directory** and compare. The recipe (reproducible because `git hash-object` normalizes and follows symlinks to real content):
+
+```
+git hash-object SKILL.md strategies.md templates.md | git hash-object --stdin
+```
+
+- **Matches** → the skill is unchanged since this bundle was built; no upgrade is warranted (a re-run would only be a Review/iterate pass).
+- **Differs, or no `built-with-hash` recorded** (bundles built before this mechanism) → the skill content changed since the build; **recommend an Upgrade re-run**. The hash only says *that* something changed — fall back to the structural diff (file set, ID schemes, template shapes vs. the current `templates.md`) to decide *which* phases to re-run.
+
+(The recipe hashes the three files that determine output. It assumes they're byte-stable as installed; a pure whitespace/line-ending-only change can flip the hash, which is harmless — the structural diff then finds nothing to do.)
+
+**Confirm before re-opening.** When Phase 0 finds a bundle whose `_status.md` is `finalized`, do **not** silently start editing. State that a finalized companion set already exists, report the hash-check result (in sync / drifted), and ask the user to confirm a re-open. Only on confirmation: flip `_status.md` back to `in-progress`, record that a re-run started (date + reason), and proceed. If the user declines, stop.
+
+Once confirmed, ask which kind of re-run this is:
+
+- **Upgrade to current method** (the skill changed). Diff what's on disk against the bundle the *current* skill produces: missing files (e.g. an old bundle predating S7/S8 has no `subdomains-and-context-map.md` or `deferred-inputs.md`), missing IDs, stale templates. Re-run only the affected phases to fill the gaps; leave still-correct artifacts as they are. Re-run the Phase 8 consistency/gap pass at the end so the whole set reconciles.
+- **Review / iterate** (stronger model, looping). Hold the structure and re-examine the existing artifacts for quality — sharper clusters, tighter invariants, cleaner glossary, missed traceability — phase by phase. Each pass still ends with the Phase 8 gates and a `finalized` flip; resume notes in `_status.md` carry what changed so successive loops compound rather than thrash.
+
+Either way the rules still bind: derive-never-replace, 100% UC coverage, bidirectional traceability, the altitude fence, and flagged judgment calls. Finalize as in Phase 9 (flip `_status.md` back to `finalized`, recording what this pass changed).
+
+</re-running-on-a-finalized-vision>
 
 <quality-gates>
 

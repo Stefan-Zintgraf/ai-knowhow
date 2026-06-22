@@ -270,3 +270,68 @@ row is tagged with the phase that consumes it.
 Rules: every `BV` item lands in exactly one home — an `INV` (cross-cutting) or one
 row here. Zero parked orphans. The `Src` link points at the `BV` item's line in the
 vision. Route and tag only; do not expand into design.
+
+---
+
+## 9. `_status.md` — build state & resume notes (meta, not part of the bundle)
+
+A small bookkeeping file inside the folder. It tracks whether the build is paused
+or finished, lets a later sitting resume cleanly, and lets a re-run detect that a
+finalized set already exists (see Pause and resume / Re-running in `SKILL.md`). The
+folder name never changes; this file is the marker. It persists into the finalized
+bundle as a build log.
+
+```markdown
+# Build status — <Product> vision companion
+
+- **status:** in-progress | finalized
+- **vision:** [<product-slug>-foundation-vision.md](../<product-slug>-foundation-vision.md)
+- **started:** <YYYY-MM-DD>
+- **finalized:** <YYYY-MM-DD or —>
+- **built-with-hash:** <skill fingerprint, stamped at finalize — see below>
+- **next phase:** <Phase N — name, or "—" when finalized>
+
+## Phases
+
+| Phase | Status | File(s) written |
+|-------|--------|-----------------|
+| 0 Setup | done | _status.md |
+| 1 Invariants | done | invariants.md |
+| 2 Glossary | done | glossary.md |
+| 3 Actors | open | — |
+| 4 Capability map | open | — |
+| 5 Subdomains & context map | open | — |
+| 6 UC index | open | — |
+| 7 Parking lot | open / n/a | — |
+| 8 README + gap pass | open | — |
+| 9 Review & finalize | open | — |
+
+## Open judgment calls (awaiting the user)
+
+- [ ] <e.g. CAP3 vs CAP5 split for UC12 — flagged in capability-map.md>
+
+## Open threads / next question
+
+- <the thread you'd pick up first on resume>
+
+## Run log
+
+- <YYYY-MM-DD> started build.
+- <YYYY-MM-DD> finalized.
+- <YYYY-MM-DD> re-opened for <upgrade to current method | review/iterate>: <what changed>.
+```
+
+Rules: update it at the end of every phase and on pause. Flip `status` to
+`finalized` only at Phase 9. On a confirmed re-run, flip back to `in-progress` and
+append a run-log line stating the reason.
+
+`built-with-hash` is a fingerprint of the skill's output-shaping files, stamped at
+finalize and re-checked at Phase 0 to detect skill drift (see Re-running in
+`SKILL.md`). Compute it from the skill's own directory:
+
+```
+git hash-object SKILL.md strategies.md templates.md | git hash-object --stdin
+```
+
+A mismatch (or a missing field on an older bundle) means the skill changed since
+this bundle was built → recommend an upgrade re-run.
