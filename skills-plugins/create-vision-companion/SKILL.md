@@ -1,6 +1,7 @@
 ---
 name: create-vision-companion
 description: Convert a finalized foundation vision (a `*-foundation-vision.md` — press-release vision + flat use-case list) into an AI-friendly companion set — invariants, glossary, actors, capability map, subdomain/context map, and a use-case traceability index — that a build-phase agent uses for architecture, requirements, and planning. Use when the user has a finalized product vision / use-case list and wants to prepare it for the build phase, mentions a "vision companion", "AI-friendly spec", or "vision-to-planning", or passes a `*-foundation-vision.md` to operationalize. This is the phase *after* the brainstorm-vision skill.
+disable-model-invocation: true
 ---
 
 <what-to-do>
