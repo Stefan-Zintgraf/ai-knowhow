@@ -102,7 +102,7 @@ language. Present only if at least one item was parked.
 
 <reaching-saturation>
 
-Keep diverging until **saturation** (see Framing): the three breadth axes are genuinely covered and fresh questions only restate use-cases already captured. That is the completion criterion for this phase — and only then does the session become ready to wrap.
+**Saturation** (defined in Framing) is the completion criterion for this phase — and only then does the session become ready to wrap.
 
 When you reach saturation (or the user signals done), return to `SKILL.md` step 3: offer to wrap up, and once agreed, read [`finalizing.md`](finalizing.md). Do not open it before saturation.
 
