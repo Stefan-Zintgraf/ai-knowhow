@@ -21,7 +21,7 @@ It runs in two phases, split across files so each carries only its own weight �
    - Before starting anything new, look in the output directory (default `docs/brainstorming/`) for prior work — see Pause and resume.
    - Settle the topic: if the user passed a brief/foundation file (or one is open), read it, treat its topic and goal as already chosen, confirm in one line, and begin — don't re-elicit what the brief settled. Otherwise ask once what product or problem we're opening up.
 
-2. **Diverge.** Read [`brainstorming.md`](brainstorming.md) and run the interview. Stay here — this *is* the session. Keep generating until **saturation** (defined there): the three breadth axes are genuinely covered and fresh questions only restate use-cases already captured.
+2. **Diverge.** Read [`brainstorming.md`](brainstorming.md) and run the interview. Stay here — this *is* the session. Keep generating until **saturation** (defined there).
 
 3. **Wrap up — only at saturation.** The session ends when the user signals it ("done", "that's enough", "wrap up") **or** when you judge breadth has reached saturation. When you sense saturation, **offer** to wrap up once, gently — never force it; a divergent session shouldn't be cut short while ideas are still flowing. Once wrap-up is agreed, read [`finalizing.md`](finalizing.md) and follow its two-step gate.
 
