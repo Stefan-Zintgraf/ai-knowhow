@@ -4,11 +4,13 @@ The divergent phase: run the interview and fill the vision file. Stay here until
 
 <the-interview>
 
-Ask **one question at a time**. For each, offer your own recommended answer or a provocation — don't just interrogate. Drive breadth across three axes so the vision isn't quietly narrowed to one persona or one moment:
+Ask **one question at a time**. For each, offer your own recommended answer or a provocation — don't just interrogate. Drive breadth across three axes so the vision isn't quietly narrowed to one persona or one moment. The axis *labels* hold for any product; re-populate the examples for its audience — consumer/prosumer end-users, a technical or no-UI product (library, stack, protocol, infra, API), or internal/developer tooling:
 
-- **Emotion** — what people feel (overwhelm, dread, guilt, relief, delight).
-- **Kinds of user** — the swamped pro, the freelancer, the parent, the student, the novice.
-- **The whole lifecycle** — before / arrival / acting / finding again / what should have been automatic.
+- **Emotion** — what people feel. Consumer: overwhelm, dread, guilt, relief, delight. Technical: trust, risk, the fear of a 3am line-down, certification anxiety, the confidence of a thing that comes up right the first time. For an experiential product (a game, a toy, a creative tool) the desired feeling *is* the goal — wonder, tension, triumph, flow — not a problem to be removed.
+- **Kinds of user** — the whole stakeholder chain, not one persona. Consumer: the swamped pro, the freelancer, the parent, the student, the novice. Technical: the evaluator running a PoC, the integrator, the maintainer debugging in the field, the buyer who signs off, the downstream operator who never sees the product directly.
+- **The whole lifecycle** — before / arrival / acting / finding again / what should have been automatic. For a technical product this is the adoption arc: evaluate → integrate → bring-up → ship / certify → operate → debug in the field → port → maintain.
+
+These three are the **default coverage set — the floor, not the ceiling.** If the product has its own natural axis of breadth the three don't capture, name it and drive it too: the range of things a creative tool lets people *make*, the two *sides* of a marketplace, the *environments* a library gets embedded in, the *moods* a game plays in. Actively look for it — don't just rotate the three.
 
 When an answer sounds like "the thing we were already going to build," push past it explicitly.
 
@@ -18,9 +20,10 @@ When an answer sounds like "the thing we were already going to build," push past
 
 These principles always hold, whether or not a brief was supplied — the skill must work the same with no foundation file at all.
 
-- **Clean slate.** Forget the implementation, the platform, and every earlier decision. Nothing from a prior session or sibling artifact is a precondition. Start from the *person and their problem*, not from a feature someone already picked.
+- **Clean slate.** Forget the implementation, the platform, and every earlier decision. Nothing from a prior session or sibling artifact is a precondition. Start from the *person and their problem or desire*, not from a feature someone already picked.
+- **Two shapes of value.** A product either *relieves a pain* or *fulfils a desire / creates an experience* — often some of both. Most tools sit on the pain side ("I can finally stop suffering X"); games, toys, entertainment, and creative products sit on the desire side ("I get to feel / make / explore Y"). Don't force an experiential product into problem-relief grammar — name the desire directly.
 - **Push past the obvious.** The first answer is usually "the thing we were already going to build." The magic is in the later ideas, the ones that only surface once the easy answers are spent — keep going. The first handful of use-cases are the warm-up, not the answer; treat them as the floor. Don't anchor to a fixed count (a small product may have few use-cases, a broad one many) — instead keep generating until **saturation**: the point where the three breadth axes are genuinely covered and fresh questions only restate use-cases already captured. Saturation is both the floor for going wide *and* the signal the session is ready to wrap.
-- **The audience test.** The output must be readable by a typical, non-technical end user. If a relative who is not in the field couldn't follow it, it's pitched wrong. Plain language, human benefit, no jargon.
+- **The audience test.** The output must be readable by the product's target audience without the team's *internal* jargon — plain language, human benefit, no implementation. Pick the right floor of comprehension: for consumer software it's a relative who isn't in the field; for a technical or no-UI product it's a peer engineer or the buyer evaluating you, not an insider on the build team. If that reader couldn't follow it, it's pitched wrong.
 
 </framing>
 
@@ -34,7 +37,7 @@ Maintain one markdown file. By default, propose a path under `docs/brainstorming
 
 <scope-discipline>
 
-The **vision and use-cases** are plain language an ordinary user would nod at — not something an engineer could build from.
+The **vision and use-cases** are plain language the target audience would nod at — the benefit in their terms, not something an engineer could build from.
 
 **Keep these OUT of the vision and use-cases** (they don't disappear — the important ones go to the parking lot; see below):
 
@@ -80,7 +83,7 @@ where this product already won. Plain language; no jargon, no features list.
 
 ## Use-cases
 
-- **UC1.** As someone overwhelmed by <the problem>, I can finally …
+- **UC1.** As <a kind of user> facing <the problem> / wanting <the experience>, I can finally … / I get to …
 - **UC2.** As a <kind of user>, I can finally …
 - **UC3.** As a <kind of user>, I can finally …
 
