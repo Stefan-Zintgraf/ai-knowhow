@@ -8,12 +8,9 @@ disable-model-invocation: true
 
 Run a relentless, one-question-at-a-time brainstorming session that opens up the **widest possible high-level vision** of a product, captured in a single living markdown file with two parts: a **press-release vision** and a growing list of **user-POV use-cases** ("as someone …, I can finally …").
 
-The session is **divergent**: push past the obvious first answers — the good ideas live in the territory you reach only after the easy ones are spent. Works for any product, software preferred.
+The session is **divergent**: push past the obvious first answers. Works for any product, software preferred.
 
-This skill runs in two phases, split across files so each phase carries only its own weight:
-
-- **Diverge** — the whole brainstorm. Read [`brainstorming.md`](brainstorming.md) and stay in it until the vision reaches **saturation**.
-- **Finalize** — the wrap-up gate. Read [`finalizing.md`](finalizing.md) **only once saturation is reached**. Don't read it earlier and don't finalize early: a divergent session dies if you rush it toward its exit.
+It runs in two phases, split across files so each carries only its own weight — **Diverge** ([`brainstorming.md`](brainstorming.md)), then **Finalize** ([`finalizing.md`](finalizing.md)) — sequenced below.
 
 </what-this-is>
 
@@ -55,7 +52,7 @@ If there are several candidates, list them and ask which (if any) to resume or e
 
 <scope-steering-hook>
 
-Some repos ship a `UserPromptSubmit` hook that re-injects the scope boundary every turn so it never fades over a long session. This counters **context rot** — as the conversation grows, a steer given once near the top loses salience even while still technically in context (the model keeps the words but quietly down-weights them); re-stating it at the end of each prompt restores it to the highest-attention position. (It also survives compaction, when the original may be summarized away entirely — but rot is the everyday reason, present from turn one.) It is gated by a flag file in the **current git submodule's root** (`$CLAUDE_PROJECT_DIR`), toggled by renaming:
+Some repos ship a `UserPromptSubmit` hook that re-injects the scope boundary every turn so it never fades over a long session (it counters **context rot** — a steer given once loses salience as the conversation grows, even while still in context). It is gated by a flag file in the **current git submodule's root** (`$CLAUDE_PROJECT_DIR`), toggled by renaming:
 
 - `brainstorm_scope_boundary_on.md` → steering ON
 - `brainstorm_scope_boundary_off.md` → steering OFF (resting state)
@@ -67,7 +64,7 @@ Both names are git-ignored local state, so on a fresh clone neither may exist.
 - if `brainstorm_scope_boundary_off.md` exists → rename it to `brainstorm_scope_boundary_on.md`;
 - else if neither exists → create `brainstorm_scope_boundary_on.md` (contents irrelevant; only its existence matters).
 
-The hook fires at prompt-submit, so steering kicks in from the turn *after* this — fine; the kickoff turn doesn't need it. This skill carries the same discipline self-contained, so it works even in repos without the hook.
+This skill carries the same scope discipline self-contained, so it works even in repos without the hook.
 
 **At session end** — and equally when the session is **paused** — rename `brainstorm_scope_boundary_on.md` back to `brainstorm_scope_boundary_off.md` so steering doesn't bleed into unrelated work. **Resuming** a paused session re-runs the same start logic, turning it back ON.
 

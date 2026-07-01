@@ -6,7 +6,7 @@ Read this **only once the divergent phase has reached saturation** (see [`brains
 
 Wrap-up is a **two-step gate — never jump straight to finalizing.**
 
-- **Step 1 — Architecture-significance sweep (automatic).** Before finalizing, run the sweep without being asked — the last completeness backstop. See below. When it reaches saturation the session is **ready to finalize** — say so, then move to step 2.
+- **Step 1 — Architecture-significance sweep (automatic).** Before finalizing, run the sweep without being asked. See below. When it reaches saturation the session is **ready to finalize** — say so, then move to step 2.
 - **Step 2 — Finalize.** Re-read the file, read the vision, the full use-case list, and any parked items back to the user for a final sanity pass, invite cuts/merges/sharpening, then **finalize**:
   - strip any `## Resume notes` section;
   - rename `<name>.wip.md` → `<name>.md` so the final artifact obeys the format (Vision and Use-cases, plus the `## Beyond the vision (parking lot)` section if anything was parked);

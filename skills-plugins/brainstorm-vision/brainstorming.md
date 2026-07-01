@@ -58,11 +58,11 @@ A vision session keeps throwing off ideas that aren't vision or use-cases — an
 2. Give **two pros and two cons** of capturing it — is it important enough to write down for a later phase, or just noise that would clutter the parking lot?
 3. **The human decides. Always.** If yes, append it to the parking-lot section, numbered (`BV1`, `BV2`, …); if no, let it go and return to the vision.
 
-Keep it light — one short exchange, then back to diverging on the vision. The parking lot must never become the session; the vision and use-cases are still the point.
+Keep it light — one short exchange, then back to diverging. The parking lot must never become the session.
 
-**You may raise items too.** If you notice an architecture- or integration-significant idea the user hasn't named, surface it yourself with the same challenge (one line + two pros + two cons) and let the human decide. Never decide for them.
+**You may raise items too.** If you notice an architecture- or integration-significant idea the user hasn't named, surface it yourself with the same challenge (one line + two pros + two cons).
 
-**What belongs here.** Exactly the things scope discipline keeps out of the vision (integrations, architecture/data-flow instincts, tech/platform/vendor leanings, MVP/scoping calls, hard constraints, edge cases). Each is a terse note for a later phase — **the plain-language audience test does *not* apply here.** Engineer's shorthand is fine, because this section is explicitly for the build phase, not the end user.
+**What belongs here.** Exactly the things scope discipline keeps out of the vision (integrations, architecture/data-flow instincts, tech/platform/vendor leanings, MVP/scoping calls, hard constraints, edge cases). Each is a terse note for a later phase, in engineer's shorthand — **the plain-language audience test does *not* apply here.**
 
 **Not the same as the architecture-significance sweep** (step 1 of wrap-up, in [`finalizing.md`](finalizing.md)). That sweep uses architecture as a *lens* to surface missing **use-cases**, phrased in plain user language. The parking lot is the opposite: it captures genuine out-of-scope items, *as themselves*, the moment they come up mid-session. Both can run in one session — don't conflate them.
 
@@ -94,16 +94,12 @@ language. Present only if at least one item was parked.
 - **BV2.** …
 ```
 
-(Examples are placeholders — fill them with the actual product's users and problem.)
-
 **Two sections are mandatory — Vision and Use-cases.** A third, **`## Beyond the vision (parking lot)`**, appears only if the human chose to park at least one item; omit it entirely when empty. (A paused `.wip.md` may also carry a `## Resume notes` section — working state, stripped at finalize. No other metadata, TOC, or design notes.) Keep the use-case list **flat** — one running list in the order ideas arrived, no grouping or headings (clustering would sneak structure into a list that's meant to stay loose and divergent); the parking lot is likewise a flat, numbered running list. Number items continuously (`UC1…`, `BV1…`) and never renumber on insert — append new items at the end so existing numbers stay stable references. Avoid adding obvious near-duplicates; if a new idea restates an existing one, sharpen the existing bullet instead. Before every write, **re-read the file from disk** — the user may have edited, reordered, or cut items between turns; preserve their changes. Append or edit in place on request; never silently overwrite.
 
 </file-format>
 
 <reaching-saturation>
 
-**Saturation** (defined in Framing) is the completion criterion for this phase — and only then does the session become ready to wrap.
-
-When you reach saturation (or the user signals done), return to `SKILL.md` step 3: offer to wrap up, and once agreed, read [`finalizing.md`](finalizing.md). Do not open it before saturation.
+When you reach **saturation** (defined in Framing) or the user signals done, return to `SKILL.md` step 3: offer to wrap up, and once agreed, read [`finalizing.md`](finalizing.md). Don't open it before saturation.
 
 </reaching-saturation>
