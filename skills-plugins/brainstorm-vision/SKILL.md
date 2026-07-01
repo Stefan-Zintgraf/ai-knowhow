@@ -1,6 +1,7 @@
 ---
 name: brainstorm-vision
-description: Conversational brainstorming coach for a wide, high-level product vision — a press-release-style vision plus human, user-POV use-cases — captured in a living markdown file. Keeps architecture, tech, modules, and MVP scoping out of the vision itself, but parks such ideas in a separate numbered list (with a quick pros/cons challenge) rather than dropping them. Use when the user wants to brainstorm a product vision, run a divergent or "foundation" vision session, explore what a product could be at a high level, or passes a brainstorming brief/foundation file.
+description: Coach a divergent product-vision brainstorm, captured as a press-release vision plus user-POV use-cases.
+disable-model-invocation: true
 ---
 
 <what-to-do>
@@ -30,20 +31,20 @@ When an answer sounds like "the thing we were already going to build," push past
 These principles always hold, whether or not a brief was supplied — the skill must work the same with no foundation file at all.
 
 - **Clean slate.** Forget the implementation, the platform, and every earlier decision. Nothing from a prior session or sibling artifact is a precondition. Start from the *person and their problem*, not from a feature someone already picked.
-- **Push past the obvious.** The first answer is usually "the thing we were already going to build." The magic is in the later ideas, the ones that only surface once the easy answers are spent — keep going. The first handful of use-cases are the warm-up, not the answer; treat them as the floor. Don't anchor to a fixed count (a small product may have few use-cases, a broad one many) — instead keep generating until the three breadth axes are genuinely covered and fresh questions only produce restatements of what's already captured. *That* repetition is the signal you've gone wide enough, and it's the same signal that the session is ready to wrap.
+- **Push past the obvious.** The first answer is usually "the thing we were already going to build." The magic is in the later ideas, the ones that only surface once the easy answers are spent — keep going. The first handful of use-cases are the warm-up, not the answer; treat them as the floor. Don't anchor to a fixed count (a small product may have few use-cases, a broad one many) — instead keep generating until **saturation**: the point where the three breadth axes are genuinely covered and fresh questions only restate use-cases already captured. Saturation is both the floor for going wide *and* the signal the session is ready to wrap.
 - **The audience test.** The output must be readable by a typical, non-technical end user. If a relative who is not in the field couldn't follow it, it's pitched wrong. Plain language, human benefit, no jargon.
 
 </framing>
 
 <session-end>
 
-The session ends when the user signals it ("done", "that's enough", "wrap up"), **or** when the coach judges that breadth is exhausted — new questions only produce restatements of use-cases already captured, not genuinely new territory. When the coach senses that point, it **offers** to wrap up (once, gently — never forces it; a divergent session shouldn't be cut short while ideas are still flowing).
+The session ends when the user signals it ("done", "that's enough", "wrap up"), **or** when the coach judges breadth has reached **saturation** (see Framing). When the coach senses that point, it **offers** to wrap up (once, gently — never forces it; a divergent session shouldn't be cut short while ideas are still flowing).
 
 **Wrap-up is a two-step gate — never jump straight to finalizing.**
 
-**Step 1 — Architecture-significance sweep (automatic).** Before finalizing, run a completeness backstop: are there use-cases still missing that would be *expensive to discover after building starts* — the ones that quietly decide architecture, software design, platform/language, or the data model? Run it without being asked; see Architecture-significance sweep. It's a generative lens, not an architecture discussion — it surfaces missing **use-cases**, captured as ordinary plain-language bullets, and no architecture notes enter the file. New use-cases re-open brief divergence on those axes; keep sweeping until that lens, too, only restates what's already captured. When it does, the session is **ready to finalize** — say so, then move to step 2.
+**Step 1 — Architecture-significance sweep (automatic).** Before finalizing, run the sweep without being asked — the last completeness backstop. See Architecture-significance sweep. When it reaches saturation the session is **ready to finalize** — say so, then move to step 2.
 
-**Step 2 — Finalize.** Re-read the file, read the vision, the full use-case list, and any parked items back to the user for a final sanity pass, invite cuts/merges/sharpening, then **finalize** — strip any `## Resume notes` section and rename `<name>.wip.md` → `<name>.md` so the final artifact obeys the format (Vision and Use-cases, plus the `## Beyond the vision (parking lot)` section if anything was parked) — and rename the steering flag to `_off` (see below).
+**Step 2 — Finalize.** Re-read the file, read the vision, the full use-case list, and any parked items back to the user for a final sanity pass, invite cuts/merges/sharpening, then **finalize** — strip any `## Resume notes` section and rename `<name>.wip.md` → `<name>.md` so the final artifact obeys the format (Vision and Use-cases, plus the `## Beyond the vision (parking lot)` section if anything was parked). If use-cases changed since step 1, reconcile the `<slug>-architecture-lens.md` artifact's `UC<n>` cross-references so they still point at the right use-cases. Then rename the steering flag to `_off` (see below).
 
 A session can also be **paused** mid-flight and resumed in a later sitting — including at the "ready to finalize" milestone between the two steps. See Pause and resume.
 
@@ -55,18 +56,11 @@ Step 1 of the wrap-up gate, and the last completeness backstop before finalizing
 
 **It is a lens, not a layer.** Think in architecturally-loaded terms privately; capture only what an ordinary user would say. Everything kept is still a plain user-POV use-case ("As someone …, I can finally …") — never a note about offline-sync, schemas, hosting, or tenancy. Scope discipline holds in full; you are only aiming the divergence at corners that are cheap to decide now and dear to change later. (If the sweep surfaces a genuine architecture *constraint* rather than a use-case — something the build phase must honour — that's a parking-lot item, not a use-case; run the parking-lot challenge on it instead. See Parking lot.)
 
-**Method.** Walk the high-leverage corners below — and read `architecture-significance-lens.md` for the full list with example phrasings. For each, ask yourself: *is there a user whose need on this axis we haven't captured yet?* If so, offer one candidate use-case in plain language and let the user keep, sharpen, or drop it.
+**Method — build the product's lens, then walk it.**
 
-- **Offline / flaky connection** — can someone need to act with no network?
-- **More than one person** — sharing, delegation, handoff, two people at once on one thing.
-- **Scale & history** — a massive pile, or years of the past, not just today's.
-- **Privacy & where data lives** — someone who can't let their data leave their device or reach a vendor.
-- **Across devices & channels** — start on one, continue on another.
-- **Other people's tools** — must work with what the user already has; data in and out.
-- **Acting on the user's behalf** — doing things while the user is away, not just showing them.
-- **Reach** — other languages, regions, regulations, abilities.
+1. **Build the lens (explicit, reviewed, saved).** Open `architecture-significance-lens-template.md` — the seed, not the product's lens. Its invariant is the one-way-door test — *which decisions are cheap now and expensive to discover after building starts?* Using the template's example clusters as seeds, derive the axis list for *this specific* product: pick the closest cluster, then close by asking the invariant of the product to catch the defining door no cluster names (a hypervisor's core/device partitioning, a simulator's fidelity-vs-speed). **Play the derived axes back to the user** — keep/sharpen/drop — so the lens is reviewed, not improvised. Do this only now, at wrap-up: deriving it earlier would pull architecture thinking into the divergent phase and anchor the vision. Write the agreed lens to a **separate build-phase artifact**, `<output-dir>/<slug>-architecture-lens.md` (engineer shorthand, like the parking lot — *not* end-user language) — but if that file already exists (a resumed or re-opened session), **read it first and extend/reconcile it**, never overwrite. It is a sibling of the vision file and a handoff to the next phase; it **never** enters the vision file's Vision/Use-cases sections, which stay pure.
 
-These overlap the three breadth axes (emotion / kinds of user / lifecycle) but cut a different way. Keep going until this lens, too, only restates use-cases already captured — **that** repetition is the signal step 1 is done and the session is ready to finalize.
+2. **Walk the lens.** For each agreed axis, ask yourself: *is there a user whose need on this axis we haven't captured yet?* If so, offer one candidate use-case in plain language and let the user keep, sharpen, or drop it — new use-cases re-open brief divergence on those axes. These axes overlap the three breadth axes (emotion / kinds of user / lifecycle) but cut a different way. Keep sweeping until the lens reaches **saturation** — that's the signal step 1 is done and the session is ready to finalize.
 
 </architecture-significance-sweep>
 
@@ -74,17 +68,18 @@ These overlap the three breadth axes (emotion / kinds of user / lifecycle) but c
 
 A vision session can span multiple sittings. The working file keeps its `.wip.md` suffix for as long as the session is unfinished, so an on-disk `*.wip.md` in the output directory *is* a paused, resumable session — even if the previous sitting ended abruptly without a clean pause.
 
-**Resuming (at session start).** Before proposing a new path, look in the output directory (default `docs/brainstorming/`) for an existing `*.wip.md`. If one exists, **always ask the user** what to do — never auto-continue. Name the file and its topic, then offer the choice:
+**Resuming or extending (at session start).** Before proposing a new path, look in the output directory (default `docs/brainstorming/`) for prior work — both `*.wip.md` (a paused session) **and** finalized `*-foundation-vision.md` (a completed vision that can be re-opened to add use-cases). If any exist, **always ask the user** what to do — never auto-continue. Name the file(s) and topic(s), then offer the choice:
 
-- **Resume it** — read the whole file (vision, use-cases, and the `## Resume notes` if present), play back in two or three sentences where you left off and what's still open, then continue from there. Don't re-elicit settled ground. If the notes say the session is **ready to finalize** (the step-1 sweep is already done), go straight to step 2 — unless use-cases changed since the sweep, which warrants a quick re-sweep of the affected axes first.
-- **Start fresh** — leave that file untouched and begin a new `.wip.md` for the new topic.
+- **Resume a paused session** (`*.wip.md`) — read the whole file (vision, use-cases, and the `## Resume notes` if present), play back in two or three sentences where you left off and what's still open, then continue from there. Don't re-elicit settled ground. If the notes say the session is **ready to finalize** (the step-1 sweep is already done), go straight to step 2 — unless use-cases changed since the sweep, which warrants a quick re-sweep of the affected axes first.
+- **Extend a finished vision** (`*-foundation-vision.md`) — re-open it: rename it back to `<name>.wip.md`, turn scope steering ON, and continue appending use-cases from where it stands (continuous numbering — never renumber existing items). At the next wrap-up its `<slug>-architecture-lens.md` is reconciled if present, or generated from scratch if absent (e.g. a vision finalized before the lens artifact existed).
+- **Start fresh** — leave existing files untouched and begin a new `.wip.md` for the new topic.
 
-If there are several `*.wip.md` files, list them and ask which (if any) to resume.
+If there are several candidates, list them and ask which (if any) to resume or extend.
 
 **Pausing (on request — "pause", "stop for now", "let's continue later").**
 
 1. Make sure the `.wip.md` is current (vision + use-cases written, per the file format).
-2. Add or refresh a `## Resume notes` section at the end, capturing just enough session state to pick up cleanly: which breadth axes (emotion / kinds of user / lifecycle) are well covered vs. thin, threads left open, the next question you would have asked, and whether the provisional vision still feels right. If you've reached the wrap-up gate, also record how far the step-1 architecture-significance sweep got — which of its dimensions are covered vs. open — and, if it's complete, that the session is **ready to finalize** (so resuming can skip straight to step 2). This is where the "ready to finalize" state lives when a session pauses between the two steps.
+2. Add or refresh a `## Resume notes` section at the end, capturing just enough session state to pick up cleanly: which breadth axes (emotion / kinds of user / lifecycle) are well covered vs. thin, threads left open, the next question you would have asked, and whether the provisional vision still feels right. If you've reached the wrap-up gate, note how far the step-1 sweep got — which axes in the `<slug>-architecture-lens.md` artifact are covered vs. open (the artifact itself holds the axes; don't duplicate them here) — and, if it's complete, that the session is **ready to finalize** (so resuming can skip straight to step 2). This is where the "ready to finalize" state lives when a session pauses between the two steps.
 3. Turn scope steering OFF — a pause is a mini session-end (see the steering hook).
 4. Tell the user the file path and that re-invoking the skill will resume from it. Then stop.
 
@@ -120,7 +115,7 @@ Keep it light — one short exchange, then back to diverging on the vision. The 
 
 **You may raise items too.** If you notice an architecture- or integration-significant idea the user hasn't named, surface it yourself with the same challenge (one line + two pros + two cons) and let the human decide. Never decide for them.
 
-**What belongs here.** Exactly the things the scope boundary keeps out of the vision: integrations and other-tool interop, architecture/data-flow instincts, technology/platform/vendor leanings, MVP/scoping calls, hard constraints (offline, privacy, scale), edge cases worth remembering. Each is a terse note for a later phase — **the plain-language audience test does *not* apply here.** Engineer's shorthand is fine, because this section is explicitly for the build phase, not the end user.
+**What belongs here.** Exactly the things scope discipline keeps out of the vision (integrations, architecture/data-flow instincts, tech/platform/vendor leanings, MVP/scoping calls, hard constraints, edge cases). Each is a terse note for a later phase — **the plain-language audience test does *not* apply here.** Engineer's shorthand is fine, because this section is explicitly for the build phase, not the end user.
 
 **Not the same as the architecture-significance sweep.** That sweep (step 1 of wrap-up) uses architecture as a *lens* to surface missing **use-cases**, phrased in plain user language, and keeps architecture notes out of the file. The parking lot is the opposite: it captures genuine out-of-scope items, *as themselves*, the moment they come up mid-session. Both can run in one session — don't conflate them.
 
@@ -175,5 +170,20 @@ language. Present only if at least one item was parked.
 (Examples are placeholders — fill them with the actual product's users and problem.)
 
 **Two sections are mandatory — Vision and Use-cases.** A third, **`## Beyond the vision (parking lot)`**, appears only if the human chose to park at least one item (see Parking lot); omit it entirely when empty. (A paused `.wip.md` may also carry a `## Resume notes` section — working state, stripped at finalize; see Pause and resume. No other metadata, TOC, or design notes.) Keep the use-case list **flat** — one running list in the order ideas arrived, no grouping or headings (clustering would sneak structure into a list that's meant to stay loose and divergent); the parking lot is likewise a flat, numbered running list. Number items continuously (`UC1…`, `BV1…`) and never renumber on insert — append new items at the end so existing numbers stay stable references. Avoid adding obvious near-duplicates; if a new idea restates an existing one, sharpen the existing bullet instead. Before every write, **re-read the file from disk** — the user may have edited, reordered, or cut items between turns; preserve their changes. Append or edit in place on request; never silently overwrite.
+
+**The architecture-lens artifact (`<slug>-architecture-lens.md`)** is a *separate* sibling file, written at wrap-up (step 1), never mixed into the vision file. It holds the product's derived one-way-door axes for the build phase — engineer shorthand, **not** end-user language (same audience as the parking lot). One flat section:
+
+```markdown
+# <Product> — Architecture lens
+
+Derived at vision wrap-up. The one-way-door axes for this product — decisions
+cheap to make now, expensive to discover after building starts — each with the
+user need behind it. Build-phase handoff; not part of the vision.
+
+- **<axis>** — <the one-way-door decision it forces> · surfaced by UC<n>, UC<n>
+- …
+```
+
+Cross-reference each axis to the use-case numbers it surfaced (`UC<n>`) so the lens ties back to the vision's use-cases without restating them.
 
 </file-format>

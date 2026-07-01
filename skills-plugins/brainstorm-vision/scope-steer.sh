@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# UserPromptSubmit hook: re-inject the AI-Mail brainstorm scope steer on every
+# UserPromptSubmit hook: re-inject the brainstorm scope steer on every
 # prompt, so it never fades from context over a long session.
 #
 # Gated by a flag file in the repo root. The flag is always present and toggled
