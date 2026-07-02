@@ -11,7 +11,7 @@ Wrap-up is a **two-step gate — never jump straight to finalizing.**
   - strip any `## Resume notes` section;
   - rename `<name>.wip.md` → `<name>.md` so the final artifact obeys the format (Vision and Use-cases, plus the `## Beyond the vision (parking lot)` section if anything was parked);
   - if use-cases changed since step 1, reconcile the `<slug>-architecture-lens.md` artifact's `UC<n>` cross-references so they still point at the right use-cases;
-  - rename the steering flag to `_off` (see the Scope-steering hook in `SKILL.md`).
+  - rename the steering flag to `_off` (see [`scope-steering.md`](scope-steering.md)).
 
 </wrap-up-gate>
 

@@ -103,6 +103,6 @@ language. Present only if at least one item was parked.
 
 <reaching-saturation>
 
-When you reach **saturation** (defined in Framing) or the user signals done, return to `SKILL.md` step 3: offer to wrap up, and once agreed, read [`finalizing.md`](finalizing.md). Don't open it before saturation.
+When you reach **saturation** (defined in Framing) or the user signals done, return to `SKILL.md` step 3: offer to wrap up, and once agreed, follow its fresh-session handoff — **don't read [`finalizing.md`](finalizing.md) inline**; the next, clean session runs the finalize gate. Don't open it before saturation either.
 
 </reaching-saturation>
