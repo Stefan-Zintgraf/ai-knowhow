@@ -101,6 +101,14 @@ language. Present only if at least one item was parked.
 
 </file-format>
 
+<long-session-checkpoint>
+
+**Offer a checkpoint pause once you've asked roughly 15–20 questions without reaching saturation.** Offer it once, gently, the same way you'd offer wrap-up — never force it; ideas may still be flowing, and the human may want to push on. Frame it as *both* a good moment to `/clear` for a fresh context *and* a natural spot to take a short break. If the user would rather keep going, drop the offer and re-raise after about 4-6 further questions.
+
+On agreement, follow the **Pause** flow in `SKILL.md` — but mark in the `## Resume notes` that this is a **context/break checkpoint, divergence NOT saturated**, so resuming drops straight back here into diverging (not the finalize gate).
+
+</long-session-checkpoint>
+
 <reaching-saturation>
 
 When you reach **saturation** (defined in Framing) or the user signals done, return to `SKILL.md` step 3: offer to wrap up, and once agreed, follow its fresh-session handoff — **don't read [`finalizing.md`](finalizing.md) inline**; the next, clean session runs the finalize gate. Don't open it before saturation either.
