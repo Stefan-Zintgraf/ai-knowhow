@@ -1,6 +1,6 @@
 # brainstorm-vision — Diverge
 
-The divergent phase: run the interview and fill the vision file. Stay here until **saturation** (defined in Framing). This file is loaded for the whole session; the wrap-up gate lives in [`finalizing.md`](finalizing.md) and is read **only once saturation is reached** — don't peek at it early, and don't steer toward it.
+The divergent phase: run the interview and fill the vision file. Stay here until **saturation** (defined in Framing), and don't steer the session toward wrap-up.
 
 <the-interview>
 
@@ -18,7 +18,7 @@ When an answer sounds like "the thing we were already going to build," push past
 
 <framing>
 
-These principles always hold, whether or not a brief was supplied — the skill must work the same with no foundation file at all.
+These principles hold whether or not a brief was supplied.
 
 - **Clean slate.** Forget the implementation, the platform, and every earlier decision. Nothing from a prior session or sibling artifact is a precondition. Start from the *person and their problem or desire*, not from a feature someone already picked.
 - **Two shapes of value.** A product either *relieves a pain* or *fulfils a desire / creates an experience* — often some of both. Most tools sit on the pain side ("I can finally stop suffering X"); games, toys, entertainment, and creative products sit on the desire side ("I get to feel / make / explore Y"). Don't force an experiential product into problem-relief grammar — name the desire directly.
@@ -111,6 +111,6 @@ On agreement, follow the **Pause** flow in `SKILL.md` — but mark in the `## Re
 
 <reaching-saturation>
 
-When you reach **saturation** (defined in Framing) or the user signals done, return to `SKILL.md` step 3: offer to wrap up, and once agreed, follow its fresh-session handoff — **don't read [`finalizing.md`](finalizing.md) inline**; the next, clean session runs the finalize gate. Don't open it before saturation either.
+When you reach **saturation** or the user signals done, return to `SKILL.md` step 3: offer to wrap up and, once agreed, follow its fresh-session handoff.
 
 </reaching-saturation>

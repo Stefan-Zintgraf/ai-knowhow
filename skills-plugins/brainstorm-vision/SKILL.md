@@ -10,15 +10,15 @@ Run a relentless, one-question-at-a-time brainstorming session that opens up the
 
 The session is **divergent**: push past the obvious first answers. Works for any product, software preferred.
 
-It runs in two phases, split across files so each carries only its own weight — **Diverge** ([`brainstorming.md`](brainstorming.md)), then **Finalize** ([`finalizing.md`](finalizing.md)) — sequenced below.
+It runs in two phases — **Diverge** ([`brainstorming.md`](brainstorming.md)), then **Finalize** ([`finalizing.md`](finalizing.md)) — sequenced below.
 
 </what-this-is>
 
 <sequencing>
 
 1. **Start the session.**
-   - Read [`scope-steering.md`](scope-steering.md), turn scope steering **ON**, then **verify the hook actually fires** — don't assume renaming the flag was enough (run its A/B/C checks). If verification fails, tell the user what's broken and ask whether to continue anyway before proceeding.
-   - Before starting anything new, look in the output directory (default `docs/brainstorming/`) for prior work — see Pause and resume.
+   - Read [`scope-steering.md`](scope-steering.md), turn scope steering **ON**, and run its A/B/C verification checks (it covers what to do on a failed check).
+   - Before starting anything new, check for prior work to resume — see Pause and resume.
    - Settle the topic: if the user passed a brief/foundation file (or one is open), read it, treat its topic and goal as already chosen, confirm in one line, and begin — don't re-elicit what the brief settled. Otherwise ask once what product or problem we're opening up.
 
 2. **Diverge.** Read [`brainstorming.md`](brainstorming.md) and run the interview. Stay here — this *is* the session. Keep generating until **saturation** (defined there).
