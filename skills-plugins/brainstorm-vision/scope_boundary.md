@@ -1,6 +1,8 @@
-<!-- Injected every prompt by scope-steer.sh while flag `brainstorm_scope_boundary_on.md` exists. Live steer — keep terse. -->
+<!-- Injected every prompt by scope-steer.sh while flag `brainstorm_scope_boundary_on.md` exists. Live steer — keep terse. Refresh the Anchor line below on each climb (new `S<n>`). -->
 
 **DIVERGENT vision session.** Capture = press-release vision points (`V1…`, under a short narrative lead-in) + plain-language user use-cases ("as someone …, I can finally…"). Not a design.
+
+**Anchor (current scope):** `S1` — the product's core job. Diverge here; an idea *above* the anchor is a scope signal → park it (don't climb mid-session).
 
 **Out of the vision points/use-cases:** architecture, modules/seams, tech/platform/vendor, MVP/scoping, edge cases.
 
