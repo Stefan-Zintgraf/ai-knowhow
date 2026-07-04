@@ -29,17 +29,17 @@ These principles hold whether or not a brief was supplied.
 
 <capture>
 
-Maintain one markdown file. By default, propose a path under `docs/brainstorming/` (e.g. `docs/brainstorming/<product-slug>-foundation-vision.md`) and let the user confirm or override it; remember the chosen path for the session. While the session is unfinished the working file carries a `.wip.md` suffix (`<product-slug>-foundation-vision.wip.md`); it is renamed to drop `.wip` only at final wrap-up (see [`finalizing.md`](finalizing.md)). It has exactly two parts: a **press-release-style vision** and a growing list of **human use-cases** — see the file format below. Append as items firm up; mention it in passing, don't interrupt with save dialogs.
+Maintain one markdown file. By default, propose a path under `docs/brainstorming/` (e.g. `docs/brainstorming/<product-slug>-foundation-vision.md`) and let the user confirm or override it; remember the chosen path for the session. While the session is unfinished the working file carries a `.wip.md` suffix (`<product-slug>-foundation-vision.wip.md`); it is renamed to drop `.wip` only at final wrap-up (see [`finalizing.md`](finalizing.md)). It has exactly two parts: a list of **press-release-style vision points** (`V1`, `V2`, …, under a short narrative lead-in) and a growing list of **human use-cases** — see the file format below. Append as items firm up; mention it in passing, don't interrupt with save dialogs.
 
-**Vision and use-cases co-evolve.** The vision is not a summary of the use-cases — it's the same picture at a different altitude (the narrative whole, the feeling of the world after the product won). Sketch a *provisional* vision early as a loose north star — one rough paragraph is fine — and keep it explicitly editable. Let accumulating use-cases push it around; the use-cases reveal what the vision is really about. Finalize the vision at wrap-up, not before.
+**Vision points and use-cases co-evolve.** The vision points are not a summary of the use-cases — they're the same picture at a different altitude (the narrative whole, the feeling of the world after the product won). Keep each point **terse — a punchy fragment is good, often better than a full sentence.** What separates a vision point from a use-case is **altitude, not length**: a vision point speaks to the whole-world feeling, a use-case pins one persona's specific need. Don't pad points into long self-contained sentences — the short narrative lead-in above the list carries the voice and altitude, so the points themselves can stay dense. Sketch a *provisional* vision early as a loose north star — one rough lead-in paragraph plus a few rough points is fine — and keep it explicitly editable. Let accumulating use-cases push it around; the use-cases reveal what the vision is really about. Finalize the vision points at wrap-up, not before.
 
 </capture>
 
 <scope-discipline>
 
-The **vision and use-cases** are plain language the target audience would nod at — the benefit in their terms, not something an engineer could build from.
+The **vision points and use-cases** are plain language the target audience would nod at — the benefit in their terms, not something an engineer could build from.
 
-**Keep these OUT of the vision and use-cases** (they don't disappear — the important ones go to the parking lot; see below):
+**Keep these OUT of the vision points and use-cases** (they don't disappear — the important ones go to the parking lot; see below):
 
 - architecture / data flows ("the system fetches/parses/indexes…")
 - modules / services / layers / seams — not even a coarse map
@@ -47,7 +47,7 @@ The **vision and use-cases** are plain language the target audience would nod at
 - MVP / v1 / Must-Should-Could / "what ships first" / tracer bullets
 - edge cases / detailed requirements
 
-**Rudder, not muzzle.** Let wild, half-formed ideas breathe in the *conversation* — that's where novelty comes from. The Vision and Use-cases sections stay pure: when an out-of-scope idea is about to land *there*, name the drift in one line and restate the user-facing benefit as a use-case. But don't throw the idea itself away — if it's worth keeping for a later phase, park it. Never halt to lecture.
+**Rudder, not muzzle.** Let wild, half-formed ideas breathe in the *conversation* — that's where novelty comes from. The Vision points and Use-cases sections stay pure: when an out-of-scope idea is about to land *there*, name the drift in one line and restate the user-facing benefit as a use-case. But don't throw the idea itself away — if it's worth keeping for a later phase, park it. Never halt to lecture.
 
 </scope-discipline>
 
@@ -76,10 +76,16 @@ Keep it light — one short exchange, then back to diverging. The parking lot mu
 ```markdown
 # <Product> — Foundation Vision
 
-## Vision (press release)
+## Vision points (press release)
 
-A few short paragraphs from the user's point of view, set in the future
-where this product already won. Plain language; no jargon, no features list.
+A short narrative lead-in — one or two sentences from the user's point of
+view, set in the future where this product already won. It sets the altitude
+and the feeling for the points below. Plain language; no jargon, no features list.
+
+- **V1.** A terse, punchy point in the future-won voice — the whole-world feeling
+  after the product won. Fragments are good; no jargon or feature/implementation lines.
+- **V2.** …
+- **V3.** …
 
 ## Use-cases
 
@@ -97,7 +103,7 @@ language. Present only if at least one item was parked.
 - **BV2.** …
 ```
 
-**Two sections are mandatory — Vision and Use-cases.** A third, **`## Beyond the vision (parking lot)`**, appears only if the human chose to park at least one item; omit it entirely when empty. (A paused `.wip.md` may also carry a `## Resume notes` section — working state, stripped at finalize. No other metadata, TOC, or design notes.) Keep the use-case list **flat** — one running list in the order ideas arrived, no grouping or headings (clustering would sneak structure into a list that's meant to stay loose and divergent); the parking lot is likewise a flat, numbered running list. Number items continuously (`UC1…`, `BV1…`) and never renumber on insert — append new items at the end so existing numbers stay stable references. Avoid adding obvious near-duplicates; if a new idea restates an existing one, sharpen the existing bullet instead. Before every write, **re-read the file from disk** — the user may have edited, reordered, or cut items between turns; preserve their changes. Append or edit in place on request; never silently overwrite.
+**Two sections are mandatory — Vision points and Use-cases.** A third, **`## Beyond the vision (parking lot)`**, appears only if the human chose to park at least one item; omit it entirely when empty. (A paused `.wip.md` may also carry a `## Resume notes` section — working state, stripped at finalize. No other metadata, TOC, or design notes.) Keep the use-case list **flat** — one running list in the order ideas arrived, no grouping or headings (clustering would sneak structure into a list that's meant to stay loose and divergent); the parking lot is likewise a flat, numbered running list. Number items continuously (`V1…`, `UC1…`, `BV1…`) and never renumber on insert — append new items at the end so existing numbers stay stable references. Avoid adding obvious near-duplicates; if a new idea restates an existing one, sharpen the existing bullet instead. **Within a single use-case, keep it to one persona and one relief** — cut restated destination lists and duplicate metaphors that say the same thing twice, and don't double the "with my approval" guardrail. Tighten *redundancy*, never *voice*: this is a press-release doc read whole (by humans and agents alike), so the warm wording is load-bearing and every redundant word is a token paid 95× over — trim repetition, not the human register. Before every write, **re-read the file from disk** — the user may have edited, reordered, or cut items between turns; preserve their changes. Append or edit in place on request; never silently overwrite.
 
 </file-format>
 

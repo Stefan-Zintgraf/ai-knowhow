@@ -1,12 +1,12 @@
 ---
 name: brainstorm-vision
-description: Coach a divergent product-vision brainstorm, captured as a press-release vision plus user-POV use-cases.
+description: Coach a divergent product-vision brainstorm, captured as press-release vision points plus user-POV use-cases.
 disable-model-invocation: true
 ---
 
 <what-this-is>
 
-Run a relentless, one-question-at-a-time brainstorming session that opens up the **widest possible high-level vision** of a product, captured in a single living markdown file with two parts: a **press-release vision** and a growing list of **user-POV use-cases** ("as someone …, I can finally …").
+Run a relentless, one-question-at-a-time brainstorming session that opens up the **widest possible high-level vision** of a product, captured in a single living markdown file with two parts: a list of **press-release vision points** (`V1`, `V2`, …) and a growing list of **user-POV use-cases** ("as someone …, I can finally …").
 
 The session is **divergent**: push past the obvious first answers. Works for any product, software preferred.
 
