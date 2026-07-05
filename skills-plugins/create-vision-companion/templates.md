@@ -1,12 +1,14 @@
 # Output templates
 
-The markdown skeleton for each companion file — seven core files, plus
+The markdown skeleton for each companion file — eight core files, plus
 `deferred-inputs.md` when the vision parks `BV` items. These are *shapes*, not
 fill-in forms — adapt headings and prose to the product, but keep the columns, the
-ID schemes, and the cross-links. Every derived claim cites ≥1 `UC` (or `BV`). The
-ai-mail pilot (`ai-mail.pocock/docs/brainstorming/ai-mail-vision-ai-spec/`) is the
-worked reference for files 1–6; files 7–8 (subdomains/context-map, deferred-inputs)
-are newer (S7, S8).
+ID schemes, and the cross-links. Every derived claim cites ≥1 `S`/`V`/`UC` (or `BV`).
+The ai-mail pilot (`ai-mail.pocock/docs/brainstorming/ai-mail-vision-ai-spec/`) is
+the worked reference for the six original files (README, invariants, glossary,
+actors, capability-map, uc-index); the later additions —
+subdomains-and-context-map (S7), deferred-inputs (S8), and vision-index (S9) — are
+shown here only as templates.
 
 Replace `<product>` / `<product-slug>` and the bracketed placeholders throughout.
 
@@ -23,9 +25,14 @@ exists so a build-phase agent (architecture, requirements, planning) can consume
 the vision without re-deriving its structure each run.
 
 > **The vision is the single source of truth.** These files are derived from it
-> and cite back by UC ID (`UC1…UC<n>`). They never replace or contradict it. If a
-> derived file and the vision disagree, the vision wins — fix the derived file.
-> Do **not** edit the vision to match these.
+> and cite back by stable ID (`UC`, `V`, `S`, `BV`). They never replace or
+> contradict it. If a derived file and the vision disagree, the vision wins — fix
+> the derived file. Do **not** edit the vision to match these.
+
+A **sibling** file, [<product-slug>-architecture-lens.md](../<product-slug>-architecture-lens.md)
+(emitted by the `brainstorm-vision` skill), carries the build phase's one-way-door
+axes — including the *generalization door* behind this vision's **horizon**. It is
+the other half of this handoff; `vision-index.md` cites it rather than duplicating it.
 
 ## Files
 
@@ -37,13 +44,15 @@ the vision without re-deriving its structure each run.
 | [capability-map.md](capability-map.md) | The <n> UCs clustered into capabilities (`CAP1…`) | …shaping modules/services or scoping a feature area. |
 | [subdomains-and-context-map.md](subdomains-and-context-map.md) | Core/Supporting/Generic + context relationships | …deciding where to concentrate design effort and how contexts integrate. |
 | [uc-index.md](uc-index.md) | Traceability spine: every UC → actor · capability · invariants · normalized intent | …you need to trace a requirement back to a UC, or forward from a UC. |
+| [vision-index.md](vision-index.md) | Press-release spine: scope ladder (`S#`) + each vision point (`V#`) traced to UCs/capabilities | …checking the build still serves the promised vision, or where the scope boundary/horizon sits. |
 | [deferred-inputs.md](deferred-inputs.md) *(only if the vision parked `BV` items)* | Parked `BV` items routed to the phase that consumes them | …planning architecture or scope and you need the deferred build-phase inputs. |
 
 ## Suggested load order by task
 
-- **Whole-system architecture:** invariants → glossary → capability-map → subdomains-and-context-map → actors → deferred-inputs (if present).
+- **Whole-system architecture:** invariants → glossary → vision-index (scope boundary) → capability-map → subdomains-and-context-map → actors → deferred-inputs (if present).
 - **Requirements for one capability:** invariants → glossary → that `CAP` section → its UC rows in uc-index → the cited UCs in the vision.
 - **Where to invest design effort:** subdomains-and-context-map (Core first).
+- **Checking the vision is served / where the boundary sits:** vision-index (unrealized-promise flags; the horizon).
 - **Reviewing coverage / traceability:** uc-index (it links everything).
 
 ## How this was built & its limits
@@ -110,7 +119,11 @@ canonical term, not distinct concepts.
 ```
 
 Rules: exactly one canonical term per concept; every known synonym mapped to one.
-If the project has a `CONTEXT.md` ubiquitous-language section, reconcile with it.
+Sweep the `## Vision scope` and `## Vision points` sections too, not just the UC list
+(the anchor often names the product's *raison d'être* most sharply). Keep the
+scope-ladder structural terms — *scope item, anchor, horizon, sibling vision* — **out**
+of this glossary; they belong in `vision-index.md`'s header. If the project has a
+`CONTEXT.md` ubiquitous-language section, reconcile with it.
 
 ---
 
@@ -159,6 +172,7 @@ Cross-cutting needs are **invariants**, not capabilities — see
 ### CAP1 — <name>
 <one-paragraph intent, using glossary terms in italics>
 - **UCs:** <UC list>
+- **Serves:** <V list — the press-release promises this capability keeps; back-filled from vision-index.md (S9). A capability that serves no `V#` is candidate gold-plating — flag it.>
 - **Key entities:** <glossary terms>
 - **Leans on:** <INV list>
 
@@ -230,12 +244,13 @@ leans on, and a **normalized intent** one-liner. The one-liner is the *only* pla
 text is compressed — repeated invariant boilerplate is factored out to `INV`
 references; read the cited source line for the full original.
 
-- **Actor** → [actors.md](actors.md) · **CAP** → [capability-map.md](capability-map.md) · **INV** → [invariants.md](invariants.md)
+- **Actor** → [actors.md](actors.md) · **CAP** → [capability-map.md](capability-map.md) · **INV** → [invariants.md](invariants.md) · **Scope** → [vision-index.md](vision-index.md)
 - **Src** links the UC's line in the vision. Coverage: all <n> UCs present, each with a primary capability and an actor.
+- **Scope** is the UC's *native rung* — the lowest scope item (`S#`) among the vision points it realizes; `—` if it realizes none (flag such a UC in vision-index.md).
 
-| UC | Src | Actor | Primary | Also | INV | Normalized intent |
-|----|-----|-------|---------|------|-----|-------------------|
-| UC1 | [L<n>](../<product-slug>-foundation-vision.md#L<n>) | <CODE> | CAP<n> | <CAP or —> | <INV list or —> | <one-line intent, invariant boilerplate factored out> |
+| UC | Src | Scope | Actor | Primary | Also | INV | Normalized intent |
+|----|-----|-------|-------|---------|------|-----|-------------------|
+| UC1 | [L<n>](../<product-slug>-foundation-vision.md#L<n>) | S<n> | <CODE> | CAP<n> | <CAP or —> | <INV list or —> | <one-line intent, invariant boilerplate factored out> |
 ```
 
 Rules: one row per UC, **100% coverage**, every row has a primary CAP and an
@@ -245,7 +260,65 @@ here; reference it by `INV` id.
 
 ---
 
-## 8. `deferred-inputs.md` — routed parking-lot items (S8)
+## 8. `vision-index.md` — the press-release layer, traced (S9)
+
+*Always present.* The **scope ladder** and the **press-release vision points**,
+mapped to the derived UC/capability layer. The altitude-up sibling of `uc-index.md`:
+where that traces *requirements*, this traces *promises* and marks the scope boundary.
+
+```markdown
+# Vision index — the press-release layer, traced
+
+Derived from the `## Vision scope` and `## Vision points` sections of
+[<product-slug>-foundation-vision.md](../<product-slug>-foundation-vision.md). Two
+layers the flat UC list doesn't carry: the **scope ladder** (how far the product's
+ambition climbs, and where it deliberately stops) and the **vision points** (the
+press-release promises each cluster of UCs must keep).
+
+> Scope terms used here — **scope item** (`S#`, a rung of ambition), **anchor** (the
+> top in-scope rung), **horizon** (the next rung up, deliberately excluded),
+> **sibling vision** (the fork that would live beyond the horizon) — describe the
+> vision's *boundary*, not the product's domain; they are **not** glossary terms.
+> The `S#` ladder is a **boundary/altitude** axis, **not** a priority or build order.
+
+## Scope ladder
+
+| S# | Rung (plain) | In scope? | Capabilities native here | Representative UCs |
+|----|--------------|-----------|--------------------------|--------------------|
+| S1 | <the concrete job> | yes | CAP<n>… | UC<n>… |
+| S<n> | <the anchor rung> · **anchor** | yes | … | … |
+| — | *Horizon:* <the excluded rung> | **no** | — | — |
+
+*Horizon / sibling vision:* <one line>. The build phase treats this as a
+**generalization one-way door** — see
+[<product-slug>-architecture-lens.md](../<product-slug>-architecture-lens.md) (the
+sibling handoff); it is **not** re-derived here.
+
+## Vision points → realization
+
+Each press-release point mapped to the scope item it sits under, the UCs that realize
+it, its primary capability, and a coverage check.
+
+| V# | S# | Promise | Realized by (UCs) | Primary CAP | Coverage |
+|----|----|---------|-------------------|-------------|----------|
+| V1 | S1 | <terse promise> | UC<n>… | CAP<n> | ok |
+| V<n> | S<n> | <…> | — | — | ⚠ unrealized — flag |
+
+## Notes / judgment calls
+
+- **Unrealized promises** (a `V#` no UC delivers) and **unpromised capabilities** (a
+  `CAP` no `V#` names) are surfaced here for the human — never silently reconciled by
+  editing the vision (S6).
+```
+
+Rules: every `V#` appears with its `S#` and its realizing UCs (or a flagged coverage
+gap); every `S#` rung is on the ladder with the **anchor** marked and the **horizon**
+recorded; the horizon **cites** `<product-slug>-architecture-lens.md` rather than
+restating it. Every claim cites `S`/`V`/`UC` IDs.
+
+---
+
+## 9. `deferred-inputs.md` — routed parking-lot items (S8)
 
 *Only when the vision has a `## Beyond the vision (parking lot)` section with `BV`
 items. Cross-cutting `BV` constraints (offline, on-device, scale) go to
@@ -273,7 +346,7 @@ vision. Route and tag only; do not expand into design.
 
 ---
 
-## 9. `_status.md` — build state & resume notes (meta, not part of the bundle)
+## 10. `_status.md` — build state & resume notes (meta, not part of the bundle)
 
 A small bookkeeping file inside the folder. It tracks whether the build is paused
 or finished, lets a later sitting resume cleanly, and lets a re-run detect that a
@@ -301,10 +374,11 @@ bundle as a build log.
 | 3 Actors | open | — |
 | 4 Capability map | open | — |
 | 5 Subdomains & context map | open | — |
-| 6 UC index | open | — |
-| 7 Parking lot | open / n/a | — |
-| 8 README + gap pass | open | — |
-| 9 Review & finalize | open | — |
+| 6 Vision index | open | — |
+| 7 UC index | open | — |
+| 8 Parking lot | open / n/a | — |
+| 9 README + gap pass | open | — |
+| 10 Review & finalize | open | — |
 
 ## Open judgment calls (awaiting the user)
 
@@ -322,7 +396,7 @@ bundle as a build log.
 ```
 
 Rules: update it at the end of every phase and on pause. Flip `status` to
-`finalized` only at Phase 9. On a confirmed re-run, flip back to `in-progress` and
+`finalized` only at Phase 10. On a confirmed re-run, flip back to `in-progress` and
 append a run-log line stating the reason.
 
 `built-with-hash` is a fingerprint of the skill's output-shaping files, stamped at

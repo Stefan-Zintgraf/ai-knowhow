@@ -1,9 +1,10 @@
 # Vision → Planning: Conversion Strategies
 
 **What this is.** The method for converting a finalized `*-foundation-vision.md`
-(a human, plain-language press-release vision, a flat use-case list, and an optional
-parking-lot of out-of-scope `BV` items) into the **planning-phase companion bundle** a
-build-phase agent uses to produce architecture, requirements, and an implementation plan.
+(a human, plain-language press-release vision — **scope items** `S#` and **vision
+points** `V#` — a flat use-case list, and an optional parking-lot of out-of-scope
+`BV` items) into the **planning-phase companion bundle** a build-phase agent uses to
+produce architecture, requirements, and an implementation plan.
 
 Three principles govern every decision below:
 
@@ -16,8 +17,9 @@ Three principles govern every decision below:
   derived doc and the vision disagree, the vision wins; fix the derived doc.
 - **Total coverage — drop nothing.** The bundle, not the vision, is the working input to
   the next phase, so *every* item in the vision must resolve to at least one place in the
-  bundle: each use-case (`UC#`) and each parked item (`BV#`). An item with no home would
-  silently vanish from the build.
+  bundle: each use-case (`UC#`), each vision point (`V#`, mapped to its realizing UCs or a
+  flagged coverage gap), each scope item (`S#`, placed on the ladder), and each parked item
+  (`BV#`). An item with no home would silently vanish from the build.
 
 The provenance — the recognized practices and the book/web sources each strategy draws on,
 plus open gaps — lives in [strategies_sources.md](strategies_sources.md). This file carries
@@ -39,6 +41,7 @@ once), not line count, which is why the response to every gap is *restructure*, 
 | D2 | No clustering — a long flat list of use-cases | Agent must re-cluster every run, possibly differently each time | S2, S7 |
 | D3 | No consistent terminology — one concept named many ways | No ubiquitous language to carry into code/schemas; ambiguity | S3 |
 | D4 | No traceability — stable IDs exist but map to nothing | Can't trace a requirement back to intent, or forward from a use-case | S4 |
+| D5 | The press-release layer — scope ladder (`S#`) and vision points (`V#`) — is dropped entirely | Agent can't tell which promise a capability serves, or where the scope boundary/horizon sits | S9 |
 
 ---
 
@@ -64,6 +67,13 @@ term, and one term carries one meaning within a context**; the *same word in a d
 context may be a different concept*, so the glossary is per-context. A single-context vision
 collapses to one glossary — the per-context rule is what scales it when team/manager contexts
 split off.
+
+Sweep the **whole** vision for concepts, not just the use-case list: the `## Vision scope`
+and `## Vision points` sections often name the product's *raison d'être* more sharply than any
+single use-case (e.g. the anchor's "obligation that asks something of you though no message
+ever arrived"). But keep the vision's **scope-ladder structural terms** — *scope item, anchor,
+horizon, sibling vision* — **out** of the product glossary: they describe the vision's
+*boundary*, not the product's domain, and are defined in `vision-index.md`'s header (S9).
 
 ### S4 — Build a traceability index — the spine  *(D4)*
 One row per use-case → actor · capability · invariants · normalized one-liner · link back to
@@ -122,6 +132,37 @@ ID**:
 Every `BV` item lands in exactly one home — the no-orphans rule of S4, extended to the
 parking lot.
 
+### S9 — Trace the press-release layer: scope ladder + vision points  *(D5)*
+The vision opens with two ID'd layers above the flat UC list: **scope items** (`S1…Sn`, the
+abstraction ladder from the concrete job up to the **anchor**, plus a recorded **horizon** —
+the deliberately-excluded **sibling vision**) and **vision points** (`V1…Vn`, the press-release
+promises, grouped under scope items but numbered in *arrival* order, so "which V's are under
+S2" is not obvious from the source). Both are strategic-altitude and both are otherwise
+discarded. Preserve them as one derived spine — the altitude-up sibling of the UC index (S4) —
+in a single `vision-index.md`:
+
+1. **Scope ladder.** Record each rung `S#` with the capabilities/UCs native to it, mark the
+   **anchor**, and record the **horizon** as a **generalization one-way door**. Do *not*
+   re-derive its architectural consequences: cross-reference the `<slug>-architecture-lens.md`
+   sibling artifact (see the lens note below). The ladder is a **boundary/altitude** axis,
+   **never** a priority or phasing order (§2a).
+2. **Vision-point traceability.** Map each `V#` → its scope item · the UCs that realize it ·
+   its primary capability · a coverage flag. A vision point that maps to **no** UC is an
+   **unrealized promise**; a capability that serves **no** vision point is candidate
+   **gold-plating** — both are free consistency checks on the vision, flagged for the human,
+   never silently "fixed" by editing the vision (S6).
+
+Cross-wire the rest of the bundle so the layer isn't siloed: the UC index (S4) carries the
+`S#` native rung each UC inherits (the lowest `S#` among the vision points it realizes); the
+capability map (S2) names, per capability, the `V#` it **serves**. Every claim cites `S`/`V`/
+`UC` IDs; invent nothing.
+
+**The architecture-lens is a sibling, not part of this bundle.** `brainstorm-vision` emits
+`<slug>-architecture-lens.md` — the one-way-door axes for the build phase, whose *generalization
+door* is exactly this horizon rung. It is the other half of the same handoff. **Acknowledge and
+cite it** (in the README, and in the horizon row of `vision-index.md`); do **not** duplicate its
+axes into the bundle.
+
 ---
 
 ## 2a. The altitude fence — strategic-design only
@@ -139,8 +180,15 @@ to the phase the bundle *feeds*:
 
 **Standing rule:** when tempted to pull a tactical pattern (an Aggregate boundary, a port, a
 consistency model) into the bundle, that is altitude leakage — it belongs to the phase the
-bundle *feeds*. The only soft ordering allowed in the bundle is S7's Core/Supporting/Generic
-classification; a hard phasing/roadmap belongs to the planning phase *after* this pipeline.
+bundle *feeds*. The only soft *priority* ordering allowed in the bundle is S7's
+Core/Supporting/Generic classification (the S9 scope ladder is a **boundary/altitude** axis,
+not a priority order); a hard phasing/roadmap belongs to the planning phase *after* this
+pipeline.
+
+**Scope rungs are not a roadmap.** The `S#` ladder in `vision-index.md` (S9) records the
+vision's outer *boundary* and its generalization door — how far the ambition climbs and where
+it deliberately stops — an altitude ordering, not a build order. Reading `S1 → S<n>` as phases
+is the same altitude leak as smuggling in an MVP cut.
 
 ---
 
@@ -155,6 +203,9 @@ Flag these as judgment calls in the output so the human can overrule:
 - **Refusing to compress the emotional vision** is deliberate; terser specs are more
   conventional but lose the global-context insurance.
 - **The exact bundle shape** (which files, the README load-order) is assembled judgment.
+- **Vision-point → UC mappings and the coverage flags** (an *unrealized promise*, a
+  *gold-plated capability*) are a reading of the vision; surface them for the human — the fix
+  is always the human's call, never a silent bundle edit (S6, S9).
 
 ---
 
@@ -165,5 +216,5 @@ Flag these as judgment calls in the output so the human can overrule:
 - **A machine-readable layer.** The bundle is markdown-first. When a real programmatic
   consumer appears, mirror the traceability index as YAML/JSON.
 - **Priority / phasing.** The vision stays priority-free; S7's Core/Supporting/Generic is the
-  only soft ordering. A hard phasing/roadmap belongs in the planning phase *after* this
-  pipeline, not in the bundle.
+  only soft *priority* ordering (S9's scope ladder records *boundary*, not priority). A hard
+  phasing/roadmap belongs in the planning phase *after* this pipeline, not in the bundle.
