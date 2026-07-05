@@ -1,6 +1,6 @@
 # Scope-steering hook
 
-Some repos ship a `UserPromptSubmit` hook that re-injects the scope boundary every turn so it never fades over a long session (it counters **context rot** — a steer given once loses salience as the conversation grows, even while still in context). The steer text is a **static template** (`scope_boundary.md`); the hook fills its anchor placeholder each turn by reading the current **anchor** live from the session's `.wip.md` `## Vision scope`. So a scope **climb** touches only the `.wip.md` — **nothing in the skill folder ever changes when the scope changes.** It is gated by a flag file in the **current git submodule's root** (`$CLAUDE_PROJECT_DIR`), toggled by renaming:
+Some repos ship a `UserPromptSubmit` hook that re-injects the scope boundary every turn so it never fades over a long session. The steer text is a **static template** (`scope_boundary.md`); the hook fills its anchor placeholder each turn by reading the current **anchor** live from the session's `.wip.md` `## Vision scope`. So a scope **climb** touches only the `.wip.md` — **nothing in the skill folder ever changes when the scope changes.** It is gated by a flag file in the **current git submodule's root** (`$CLAUDE_PROJECT_DIR`), toggled by renaming:
 
 - `brainstorm_scope_boundary_on.md` → steering ON
 - `brainstorm_scope_boundary_off.md` → steering OFF (resting state)

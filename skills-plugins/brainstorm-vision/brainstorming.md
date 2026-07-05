@@ -57,7 +57,7 @@ Maintain one markdown file. By default, propose a path under `docs/brainstorming
 
 <parking-lot>
 
-A vision session keeps throwing off ideas that aren't vision or use-cases — an integration worth having, an architectural instinct, a hard "this has to work offline" constraint, a hunch about what v1 should be. Dropping them loses good thinking the *next* phase (architecture, design, scoping) would want. So instead of forbidding them, catch the important ones in the **parking lot** — without polluting the vision or use-cases.
+A vision session keeps throwing off ideas that aren't vision or use-cases — an integration worth having, an architectural instinct, a hard "this has to work offline" constraint, a hunch about what v1 should be. Catch the important ones in the **parking lot** — without polluting the vision or use-cases.
 
 **The challenge protocol.** When a non-vision item surfaces — whether the **user** raises it or **you** do — don't silently redirect *and* don't silently capture. Briefly challenge whether it's worth parking:
 
@@ -140,7 +140,7 @@ language. Present only if at least one item was parked.
 - Every **vision point** sits under **exactly one** scope item. A point that genuinely spans all rungs (an **all-rung invariant**, e.g. AI-Mail's "you're always in charge") belongs under the **anchor** item — the widest in-scope rung — not duplicated.
 - **Use-cases** stay a **flat, continuously-numbered list** (`UC1…`) in the order ideas arrived, no grouping or headings — the divergent looseness is load-bearing; scope structure lives in the vision points only. The **parking lot** is likewise a flat, numbered running list (`BV1…`). Never renumber on insert — append at the end so existing numbers stay stable references.
 
-Avoid adding obvious near-duplicates; if a new idea restates an existing one, sharpen the existing bullet instead. **Within a single use-case, keep it to one persona and one relief** — cut restated destination lists and duplicate metaphors that say the same thing twice, and don't double any already mentioned guardrails. Tighten *redundancy*, never *voice*: this is a press-release doc read whole (by humans and agents alike), so the warm wording is load-bearing and every redundant word is a token paid 95× over — trim repetition, not the human register. Before every write, **re-read the file from disk** — the user may have edited, reordered, or cut items between turns; preserve their changes. Append or edit in place on request; never silently overwrite.
+Avoid adding obvious near-duplicates; if a new idea restates an existing one, sharpen the existing bullet instead. **Within a single use-case, keep it to one persona and one relief** — cut restated destination lists and duplicate metaphors that say the same thing twice, and don't double any already mentioned guardrails. Tighten *redundancy*, never *voice*: this is a press-release doc read whole (by humans and agents alike), so the warm wording is load-bearing — trim repetition, not the human register. Before every write, **re-read the file from disk** — the user may have edited, reordered, or cut items between turns; preserve their changes. Append or edit in place on request; never silently overwrite.
 
 </file-format>
 

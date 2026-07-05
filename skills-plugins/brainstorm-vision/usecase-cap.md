@@ -1,10 +1,10 @@
 # Use-case cap — hard-stop hook
 
-The **use-case cap** (see [`GLOSSARY.md`](GLOSSARY.md)) is enforced by a second `UserPromptSubmit` hook, `usecase-cap.sh`, alongside the scope-steer hook. Where scope-steering only *re-injects text*, this hook is a **hard gate**: on reaching the cap it exits with code **2**, which makes Claude Code **discard the human's prompt** (the model never sees it) and show the hook's message to the user. That is what makes "ignore any further commands" real rather than advisory.
+The **use-case cap** (see [`GLOSSARY.md`](GLOSSARY.md)) is enforced by a second `UserPromptSubmit` hook, `usecase-cap.sh`, alongside the scope-steer hook. Where scope-steering only *re-injects text*, this hook is a **hard gate**: on reaching the cap it exits with code **2**, which makes Claude Code **discard the human's prompt** (the model never sees it) and show the hook's message to the user.
 
-Two properties make it robust against the failure modes soft self-enforcement had:
+Two properties make it robust:
 
-- **The hook counts, not the model.** Every turn it counts `UC…` lines in the `.wip.md` on disk and subtracts a **baseline** (the count when this sitting began). `delta = current − baseline` = use-cases added *this sitting*. Because it is recomputed from the file each turn, the count can't rot out of context.
+- **The hook counts, not the model.** Every turn it counts `UC…` lines in the `.wip.md` on disk and subtracts a **baseline** (the count when this sitting began). `delta = current − baseline` = use-cases added *this sitting*, recomputed from the file each turn.
 - **Session-scoped lock, so resume never deadlocks.** When the cap is hit the hook writes the current `session_id` to a lock file and blocks every further prompt *in that session*. After `/clear`, the new session has a different id: its first prompt passes (the lock is stale and dropped), the skill resets the baseline, and enforcement resumes from the next turn. You must start a fresh sitting to continue — exactly the intended pause.
 
 ## Files (all in `$CLAUDE_PROJECT_DIR`, local state — gitignore them)
