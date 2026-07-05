@@ -18,17 +18,6 @@ max_new_use_cases: 10
 warn_before: 3
 ```
 
-**What "newly added" counts.** Only **use-cases** (`UC…`) appended during the current
-sitting — the run since the session started or was last resumed. Use-cases carried in
-from a prior sitting don't count; the counter resets to zero on every resume. Vision
-points, parking-lot items, and edits to existing use-cases don't count.
-
-**The single checkpoint control.** This cap is the *only* mid-session checkpoint
-mechanism — it replaces the old question-count checkpoint offer entirely. When off, the
-session simply runs to natural saturation with no automatic pause.
-
-**How it's enforced.** Not by self-discipline — by a hard `UserPromptSubmit` hook
-(`usecase-cap.sh`; see [`usecase-cap.md`](usecase-cap.md)). At the cap it makes Claude
-Code **discard further prompts** in the current session and tells the human to `/clear`
-and re-invoke to start a fresh sitting. The count is recomputed from the `.wip.md` on
-disk every turn, so it can't be argued around or lost to context rot.
+**Full semantics and enforcement mechanics:** see the **Use-case cap** entry in
+[`GLOSSARY.md`](GLOSSARY.md) and [`usecase-cap.md`](usecase-cap.md) — this file holds only
+the human-edited values.

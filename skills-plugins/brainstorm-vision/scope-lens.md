@@ -2,8 +2,6 @@
 
 The **scope lens** (see [`GLOSSARY.md`](GLOSSARY.md)) pass for a saturated **divergence** session. It runs at **every** **saturation**, once wrap-up is agreed, **before** any finalize handoff — never jump from saturation straight to [`finalizing.md`](finalizing.md). Only a **closed** **ladder** proceeds to the wrap-up gate.
 
-Like [`finalizing.md`](finalizing.md), this doc is read in a **fresh context** at the point it runs, not inline during divergence — reading the climb machinery mid-session would anchor the diverge phase toward the widest framing before the concrete one is exhausted.
-
 <one-rung-proposal>
 
 **Propose exactly one rung — never a ladder.**

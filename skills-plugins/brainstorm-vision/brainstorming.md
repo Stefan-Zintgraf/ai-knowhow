@@ -1,10 +1,10 @@
 # brainstorm-vision — Diverge
 
-The **divergence** phase (see [`GLOSSARY.md`](GLOSSARY.md)): run the interview and fill the vision file. Stay here until **saturation** (see [`GLOSSARY.md`](GLOSSARY.md)), and don't steer the session toward wrap-up.
+The **divergence** phase: run the interview and fill the vision file. Stay here until **saturation**, and don't steer the session toward wrap-up. Bolded terms are defined in [`GLOSSARY.md`](GLOSSARY.md).
 
 <the-interview>
 
-Ask **one question at a time**. For each, offer your own recommended answer or a provocation — don't just interrogate. Drive the three **breadth axes** (see [`GLOSSARY.md`](GLOSSARY.md)) so the vision isn't quietly narrowed to one persona or one moment. The axis *labels* hold for any product; re-populate the examples for its audience — consumer/prosumer end-users, a technical or no-UI product (library, stack, protocol, infra, API), or internal/developer tooling:
+Ask **one question at a time**. For each, offer your own recommended answer or a provocation — don't just interrogate. Drive the three **breadth axes** so the vision isn't quietly narrowed to one persona or one moment. The axis *labels* hold for any product; re-populate the examples for its audience — consumer/prosumer end-users, a technical or no-UI product (library, stack, protocol, infra, API), or internal/developer tooling:
 
 - **Emotion** — what people feel. Consumer: overwhelm, dread, guilt, relief, delight. Technical: trust, risk, the fear of a 3am line-down, certification anxiety, the confidence of a thing that comes up right the first time. For an experiential product (a game, a toy, a creative tool) the desired feeling *is* the goal — wonder, tension, triumph, flow — not a problem to be removed.
 - **Kinds of user** — the whole stakeholder chain, not one persona. Consumer: the swamped pro, the freelancer, the parent, the student, the novice. Technical: the evaluator running a PoC, the integrator, the maintainer debugging in the field, the buyer who signs off, the downstream operator who never sees the product directly.
@@ -14,7 +14,7 @@ The **breadth axes** are the **floor, not the ceiling**: if the product has its 
 
 When an answer sounds like "the thing we were already going to build," push past it explicitly.
 
-**Re-entered passes are focused.** After a **climb** (see [`GLOSSARY.md`](GLOSSARY.md)) the session re-enters divergence at a new **rung**. Walk the **breadth axes** over the *new rung's territory — the delta — only*; do not re-run them over ground already **saturated** at lower rungs. Revisit an existing item only where the wider frame genuinely re-frames it: move it to the new **scope item**'s group and **keep its number**.
+**Re-entered passes are focused.** After a **climb** the session re-enters divergence at a new **rung**. Walk the **breadth axes** over the *new rung's territory — the delta — only*; do not re-run them over ground already **saturated** at lower rungs. Revisit an existing item only where the wider frame genuinely re-frames it: move it to the new **scope item**'s group and **keep its number**.
 
 </the-interview>
 
@@ -24,24 +24,24 @@ These principles hold whether or not a brief was supplied.
 
 - **Clean slate.** Forget the implementation, the platform, and every earlier decision. Nothing from a prior session or sibling artifact is a precondition. Start from the *person and their problem or desire*, not from a feature someone already picked.
 - **Two shapes of value.** A product either *relieves a pain* or *fulfils a desire / creates an experience* — often some of both. Most tools sit on the pain side ("I can finally stop suffering X"); games, toys, entertainment, and creative products sit on the desire side ("I get to feel / make / explore Y"). Don't force an experiential product into problem-relief grammar — name the desire directly.
-- **Push past the obvious.** The magic is in the later ideas, the ones that only surface once the easy answers are spent — keep going. The first handful of use-cases are the warm-up, not the answer; treat them as the floor. Don't anchor to a fixed count (a small product may have few use-cases, a broad one many) — instead keep generating until **saturation** (see [`GLOSSARY.md`](GLOSSARY.md)), checked per **anchor**.
+- **Push past the obvious.** The magic is in the later ideas, the ones that only surface once the easy answers are spent — keep going. The first handful of use-cases are the warm-up, not the answer; treat them as the floor. Don't anchor to a fixed count (a small product may have few use-cases, a broad one many) — instead keep generating until **saturation**, checked per **anchor**.
 - **The audience test.** The output must be readable by the product's target audience without the team's *internal* jargon — plain language, human benefit, no implementation. Pick the right floor of comprehension: for consumer software it's a relative who isn't in the field; for a technical or no-UI product it's a peer engineer or the buyer evaluating you, not an insider on the build team. If that reader couldn't follow it, it's pitched wrong.
 
 </framing>
 
 <capture>
 
-Maintain one markdown file. By default, propose a path under `docs/brainstorming/` (e.g. `docs/brainstorming/<product-slug>-foundation-vision.md`) and let the user confirm or override it; remember the chosen path for the session. While the session is unfinished the working file carries a **`.wip.md`** suffix (see [`GLOSSARY.md`](GLOSSARY.md)); it is renamed to drop `.wip` only at final wrap-up (see [`finalizing.md`](finalizing.md)). It holds a `## Vision scope` section, a list of **vision points (press release)** grouped under **scope items**, and a growing flat list of **use-cases** — see the file format below. Append as items firm up; mention it in passing, don't interrupt with save dialogs.
+Maintain one markdown file. By default, propose a path under `docs/brainstorming/` (e.g. `docs/brainstorming/<product-slug>-foundation-vision.md`) and let the user confirm or override it; remember the chosen path for the session. While the session is unfinished the working file carries a **`.wip.md`** suffix; it is renamed to drop `.wip` only at final wrap-up (see [`finalizing.md`](finalizing.md)). It holds a `## Vision scope` section, a list of **vision points (press release)** grouped under **scope items**, and a growing flat list of **use-cases** — see the file format below. Append as items firm up; mention it in passing, don't interrupt with save dialogs.
 
-**File each new point under its scope item as it lands.** A **vision point** sits under exactly one **scope item** (see [`GLOSSARY.md`](GLOSSARY.md)); on the first pass — before any **climb** — everything is filed under `S1`. Grouping never renumbers: a point keeps its `V`-number for the life of the file (see *Numbering & sorting* below).
+**File each new point under its scope item as it lands.** A **vision point** sits under exactly one **scope item**; on the first pass — before any **climb** — everything is filed under `S1`. Grouping never renumbers: a point keeps its `V`-number for the life of the file (see *Numbering & sorting* below).
 
-**Vision points and use-cases co-evolve.** The **vision points** are not a summary of the **use-cases** — they're the same picture at a different altitude (the narrative whole, the feeling of the world after the product won). Keep each point **terse — a punchy fragment is good, often better than a full sentence**; the short narrative lead-in above the list carries the voice and altitude, so the points themselves can stay dense. Sketch a **provisional vision** (see [`GLOSSARY.md`](GLOSSARY.md)) early as a loose north star — one rough lead-in paragraph plus a few rough points is fine — and keep it explicitly editable. Let accumulating use-cases push it around; the use-cases reveal what the vision is really about. Finalize the vision points at wrap-up, not before.
+**Vision points and use-cases co-evolve.** The **vision points** are not a summary of the **use-cases** — they're the same picture at a different altitude (the narrative whole, the feeling of the world after the product won). Keep each point **terse — a punchy fragment is good, often better than a full sentence**; the short narrative lead-in above the list carries the voice and altitude, so the points themselves can stay dense. Sketch a **provisional vision** early as a loose north star — one rough lead-in paragraph plus a few rough points is fine — and keep it explicitly editable. Let accumulating use-cases push it around; the use-cases reveal what the vision is really about. Finalize the vision points at wrap-up, not before.
 
 </capture>
 
 <scope-discipline>
 
-**Scope discipline** (see [`GLOSSARY.md`](GLOSSARY.md)) keeps the **vision points** and **use-cases** in plain language the target audience would nod at — the benefit in their terms, not something an engineer could build from.
+**Scope discipline.**
 
 **Keep these OUT of the vision points and use-cases** (they don't disappear — the important ones go to the **parking lot**; see below):
 
@@ -57,7 +57,7 @@ Maintain one markdown file. By default, propose a path under `docs/brainstorming
 
 <parking-lot>
 
-A vision session keeps throwing off ideas that aren't vision or use-cases — an integration worth having, an architectural instinct, a hard "this has to work offline" constraint, a hunch about what v1 should be. Dropping them loses good thinking the *next* phase (architecture, design, scoping) would want. So instead of forbidding them, catch the important ones in the **parking lot** (see [`GLOSSARY.md`](GLOSSARY.md)) — without polluting the vision or use-cases.
+A vision session keeps throwing off ideas that aren't vision or use-cases — an integration worth having, an architectural instinct, a hard "this has to work offline" constraint, a hunch about what v1 should be. Dropping them loses good thinking the *next* phase (architecture, design, scoping) would want. So instead of forbidding them, catch the important ones in the **parking lot** — without polluting the vision or use-cases.
 
 **The challenge protocol.** When a non-vision item surfaces — whether the **user** raises it or **you** do — don't silently redirect *and* don't silently capture. Briefly challenge whether it's worth parking:
 
@@ -69,7 +69,7 @@ Keep it light — one short exchange, then back to diverging. The parking lot mu
 
 **You may raise items too.** If you notice an architecture- or integration-significant idea the user hasn't named, surface it yourself with the same challenge (one line + two pros + two cons).
 
-**Scope signals — altitude drift, not scope creep.** A mid-**divergence** idea that doesn't fit the current **anchor** is a **scope signal** (see [`GLOSSARY.md`](GLOSSARY.md)) — a pull *up* a **rung**, not an out-of-scope aside. **Never climb mid-divergence.** Name it in one line, run the challenge protocol above, and if the human parks it, tag the entry `(scope signal)` so the **scope lens** finds it as evidence for the next **climb / close**. Then back to diverging at the current anchor.
+**Scope signals.** **Never climb mid-divergence.** Name it in one line, run the challenge protocol above, and if the human parks it, tag the entry `(scope signal)` so the **scope lens** finds it as evidence for the next **climb / close**. Then back to diverging at the current anchor.
 
 **What belongs here.** Exactly the things **scope discipline** keeps out of the vision. Each is a terse note for a later phase, in engineer's shorthand — **the plain-language audience test does *not* apply here.**
 
@@ -146,14 +146,10 @@ Avoid adding obvious near-duplicates; if a new idea restates an existing one, sh
 
 <use-case-cap>
 
-**The checkpoint pause is governed by the configurable use-case cap** — set in [`config.md`](config.md) (`max_new_use_cases`, `warn_before`) and enforced by a **hard hook** (`usecase-cap.sh`; mechanics in [`usecase-cap.md`](usecase-cap.md)). The cap counts **use-cases** newly appended during the *current sitting* — the run since the session started or was last resumed; carried-in use-cases, vision points, parking-lot items, and edits don't count. The counter resets on every resume.
+**The checkpoint pause is governed by the configurable use-case cap** — set in [`config.md`](config.md) (`max_new_use_cases`, `warn_before`) and enforced by a **hard hook** (mechanics in [`usecase-cap.md`](usecase-cap.md)). Your job around it:
 
-The hook computes the count itself from the `.wip.md` on disk every turn (so it can't rot out of context) against a **baseline** you record at sitting start — see the state-file duty in the sequencing/resume steps of `SKILL.md` and in [`usecase-cap.md`](usecase-cap.md). It is not a rule you enforce from memory; it enforces itself. Your job around it:
-
-- **Heed the advance notice.** Inside the warn window (`max_new_use_cases − warn_before` reached) the hook injects a heads-up; relay it to the partner in one line — *"`warn_before` more use-cases and I'll hard-pause us for a fresh-context checkpoint."* This is what `warn_before` governs: **when** they're informed of the coming termination. `warn_before: 0` skips the notice.
-- **Pause gracefully at the cap.** On the turn that brings the count to `max_new_use_cases`, finish capturing that use-case, write the **`## Resume notes`** (see [`GLOSSARY.md`](GLOSSARY.md)) marked **context/break checkpoint, divergence NOT saturated**, follow the **Pause** flow in `SKILL.md`, and stop. If you don't, the hook **hard-blocks the next prompt anyway** (the human is told to `/clear` and re-invoke), and resume reconstructs from the `.wip.md` — but graceful notes make resume cleaner. Resuming drops back into diverging with a fresh sitting and a reset counter (not the scope lens or finalize gate).
-
-When `max_new_use_cases` is off (or [`config.md`](config.md) is absent), there is no cap — the hook stays silent and the session runs to natural **saturation**, with no automatic checkpoint.
+- **Heed the advance notice.** Inside the warn window the hook injects a heads-up; relay it to the partner in one line — *"`warn_before` more use-cases and I'll hard-pause us for a fresh-context checkpoint."*
+- **Pause gracefully at the cap.** On the turn that brings the count to `max_new_use_cases`, finish capturing that use-case, write the **`## Resume notes`** marked **context/break checkpoint, divergence NOT saturated**, follow the **Pause** flow in `SKILL.md`, and stop. If you don't, the hook hard-blocks the next prompt anyway and resume reconstructs from the `.wip.md` — but graceful notes make resume cleaner.
 
 </use-case-cap>
 

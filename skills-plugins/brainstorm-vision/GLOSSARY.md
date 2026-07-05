@@ -1,11 +1,8 @@
 # brainstorm-vision — Glossary
 
-The skill's **domain model**: one authoritative home for its full vocabulary. Every other
-file **bolds the term and points here** rather than restating it. This is disclosed
-reference — loaded on demand, self-contained — so it costs nothing until reached.
-
-Terms are grouped by the axis they serve. Each guard/failure term sits beside the lever it
-protects. **Bold** marks a cross-reference to another entry.
+The skill's **domain model**: one authoritative home for its full vocabulary. Terms are
+grouped by the axis they serve. Each guard/failure term sits beside the lever it protects.
+**Bold** marks a cross-reference to another entry.
 
 ---
 
@@ -29,13 +26,10 @@ protects. **Bold** marks a cross-reference to another entry.
   future-won voice, capturing the whole-world feeling after the product won, under a short
   narrative lead-in. Fragments are good. What separates it from a **use-case** is *altitude,
   not length*: a vision point speaks to the narrative whole, a use-case pins one persona's
-  need. Numbered continuously and **never renumbered** — numbers are references, not positions.
-  Sorted under **scope items** (grouped, not renumbered); a point spanning all rungs lives
-  under the **anchor**.
+  need. Numbering and grouping mechanics live in `brainstorming.md`'s *Numbering & sorting*.
 - **Use-case** — a plain-language, user-POV need ("As <a kind of user> …, I can finally … /
-  I get to …"), numbered `UC1…` continuously and never renumbered. Kept as **one flat list**
-  in arrival order — the loose, unsorted shape is load-bearing and deliberately *not* grouped
-  by **scope item**.
+  I get to …", numbered `UC1…`). Kept as **one flat list** in arrival order — the loose,
+  unsorted shape is load-bearing. Mechanics in `brainstorming.md`'s *Numbering & sorting*.
 - **Provisional vision** — the loose north-star draft (one rough lead-in paragraph plus a few
   rough **vision points**) sketched early and kept explicitly editable. Accumulating
   **use-cases** push it around; it is finalized only at the **wrap-up gate**, never before.
@@ -54,7 +48,7 @@ protects. **Bold** marks a cross-reference to another entry.
 
 ---
 
-## Scope & altitude — climbing the abstraction ladder (new)
+## Scope & altitude — climbing the abstraction ladder
 
 Every product vision is a special case of a higher abstraction level, and that higher level
 *pulls* on a divergent session. These terms make each climb a *reviewed decision*, discovered
@@ -93,22 +87,20 @@ widest framing before the concrete one is exhausted.
   **anchor** in plain language and recommends **climb** or **close**, honestly. Mirrors the
   sweep structurally (a deliberate, reviewed pass). Reuses the skill's existing **lens** word
   so the two phases link for free.
-- **Generalization door** *(new cross-cutting sweep dimension)* — the **horizon** **rung**
+- **Generalization door** *(cross-cutting sweep dimension)* — the **horizon** **rung**
   treated as a **one-way door**: if the declined rung ever becomes real, which decisions made
-  for the **anchor** become expensive? (AI-Mail, horizon = "a trusted chief-of-staff for your
-  whole life", the declined rung above the "everything that asks something of you" anchor: a
-  data model shaped around incoming items to handle vs. one representing your whole life and
-  acting on your goals unprompted.) Added to the **architecture-significance sweep**'s
-  cross-cutting spine.
+  for the **anchor** become expensive? (E.g. a task manager whose horizon is "runs your whole
+  work life" but whose anchor is "tracks your open tasks": a data model shaped around discrete
+  tasks vs. one representing goals and acting on them unprompted.) Added to the
+  **architecture-significance sweep**'s cross-cutting spine.
 
 ---
 
 ## Wrap-up — the two-step finalize gate
 
 - **Wrap-up gate** — the two-step gate that ends a saturated session; never jump straight to
-  finalizing. Step 1 is the **architecture-significance sweep**; step 2 is finalize (read-back,
-  strip **resume notes**, rename `*.wip.md` → `*.md`, reconcile references, turn the steering
-  flag off). Reached only once the **ladder** is **closed** and the sweep surfaced no
+  finalizing. Step 1 is the **architecture-significance sweep**; step 2 is finalize (mechanics
+  in `finalizing.md`). Reached only once the **ladder** is **closed** and the sweep surfaced no
   scope-significant use-case that reopened it.
 - **Architecture-significance sweep** — step 1 of the **wrap-up gate**, the last completeness
   backstop. Uses architecture as a *lens, not a layer*: think in architecturally-loaded terms
@@ -131,27 +123,14 @@ widest framing before the concrete one is exhausted.
   drop `.wip` only at final finalize.
 - **Resume notes** — a `## Resume notes` section holding just enough session state to pick up
   cleanly; stripped at finalize. It marks which of **four** states the session is in, which
-  determines where a resume re-enters:
-
-  | Resume-notes state | Resume enters |
-  |---|---|
-  | checkpoint / break, **divergence** not saturated | diverge, same **anchor** |
-  | **scope widened to `S<n>`** | diverge, focused on the new **rung** |
-  | **divergence** saturated, wrap-up agreed, **ladder** open | **scope lens** |
-  | ready to finalize (sweep done) | finalize step 2 |
-- **Scope steering** — a `UserPromptSubmit` hook (gated by a flag file, toggled on/off by
-  rename) that re-injects the scope boundary every turn to counter **context rot**. Turned ON
-  at session start, OFF at every pause/session-end. Its steer text also carries the current
-  **anchor** — read live each turn from the `.wip.md` `## Vision scope`, so a **climb** needs
-  no edit to any skill file (`scope_boundary.md` is a static template with an anchor
-  placeholder). Mechanics live in `scope-steering.md` / `scope_boundary.md` / `scope-steer.sh`.
+  determines where a resume re-enters — see the table in `SKILL.md`'s Pause and resume section.
+- **Scope steering** — a hook that re-injects the scope boundary (carrying the current
+  **anchor**) every turn to counter **context rot**. Turned ON at session start, OFF at every
+  pause/session-end. Mechanics live in `scope-steering.md` / `scope_boundary.md` /
+  `scope-steer.sh`.
 - **Use-case cap** *(guard: bounds a single sitting)* — the sole mid-session checkpoint
-  control: a hard, human-configured limit (in `config.md`, key `max_new_use_cases`) that
-  **enforces** a checkpoint **pause** once that many **use-cases** have been newly added in the
-  current sitting (counter resets on every resume). Its companion key `warn_before` sets **when**
-  the brainstorm partner is told the auto-pause is coming (how many use-cases ahead of the cap).
-  Not self-enforced: a hard `UserPromptSubmit` hook (`usecase-cap.sh`, mechanics in
-  `usecase-cap.md`) counts `UC` lines in the `.wip.md` every turn and, at the cap, **exit-2
-  discards further prompts** in that session until the human `/clear`s and resumes a fresh
-  sitting — beating both an indifferent transcript and **context rot**. Off / absent = no cap;
-  the session runs to natural **saturation** with no automatic pause.
+  control: a hard, human-configured limit (in `config.md`, key `max_new_use_cases`, with a
+  companion `warn_before` for advance notice) that enforces a checkpoint **pause** once that
+  many **use-cases** have been newly added in the current sitting. Off / absent = no cap; the
+  session runs to natural **saturation** with no automatic pause. Enforcement mechanics live in
+  `usecase-cap.md` / `usecase-cap.sh`.
