@@ -1,6 +1,6 @@
 # Scope-steering hook
 
-Some repos ship a `UserPromptSubmit` hook that re-injects the scope boundary every turn so it never fades over a long session (it counters **context rot** — a steer given once loses salience as the conversation grows, even while still in context). It is gated by a flag file in the **current git submodule's root** (`$CLAUDE_PROJECT_DIR`), toggled by renaming:
+Some repos ship a `UserPromptSubmit` hook that re-injects the scope boundary every turn so it never fades over a long session (it counters **context rot** — a steer given once loses salience as the conversation grows, even while still in context). The steer text is a **static template** (`scope_boundary.md`); the hook fills its anchor placeholder each turn by reading the current **anchor** live from the session's `.wip.md` `## Vision scope`. So a scope **climb** touches only the `.wip.md` — **nothing in the skill folder ever changes when the scope changes.** It is gated by a flag file in the **current git submodule's root** (`$CLAUDE_PROJECT_DIR`), toggled by renaming:
 
 - `brainstorm_scope_boundary_on.md` → steering ON
 - `brainstorm_scope_boundary_off.md` → steering OFF (resting state)
@@ -20,7 +20,7 @@ Some repos ship a `UserPromptSubmit` hook that re-injects the scope boundary eve
     bash "$CLAUDE_PROJECT_DIR/.claude/skills/brainstorm-vision/scope-steer.sh" </dev/null
   ```
 
-  Empty output or an error → the script, its path, or `scope_boundary.md` is broken.
+  Empty output or an error → the script, its path, or `scope_boundary.md` is broken. The output should carry a resolved **Anchor (current scope):** line and contain **no** literal `{{ANCHOR}}` placeholder — if the placeholder survives, the hook couldn't locate the `.wip.md` (it will still fire, pointing the model at `## Vision scope` as a fallback).
 - **C — live firing (next turn, best-effort).** A and B prove the wiring is correct on disk, but the *running* session only loads hooks at startup — if settings.json was edited after launch, it won't fire until a restart. So on the user's **first reply**, check whether the steer text was actually re-injected into that turn's context. If A+B passed but the steer didn't appear, tell the user the session predates the hook and needs a Claude Code restart.
 
 **On any failed check:** name which check failed, note that this skill still enforces scope discipline inline (so the session is safe — just more exposed to context rot over a long session), and ask whether to **continue anyway** or **fix the hook first**. Don't silently proceed.

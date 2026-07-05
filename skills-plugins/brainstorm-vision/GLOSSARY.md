@@ -141,9 +141,10 @@ widest framing before the concrete one is exhausted.
   | ready to finalize (sweep done) | finalize step 2 |
 - **Scope steering** — a `UserPromptSubmit` hook (gated by a flag file, toggled on/off by
   rename) that re-injects the scope boundary every turn to counter **context rot**. Turned ON
-  at session start, OFF at every pause/session-end. Its steer text now also carries the current
-  **anchor**, refreshed on each **climb**. Mechanics live in `scope-steering.md` /
-  `scope_boundary.md` / `scope-steer.sh`.
+  at session start, OFF at every pause/session-end. Its steer text also carries the current
+  **anchor** — read live each turn from the `.wip.md` `## Vision scope`, so a **climb** needs
+  no edit to any skill file (`scope_boundary.md` is a static template with an anchor
+  placeholder). Mechanics live in `scope-steering.md` / `scope_boundary.md` / `scope-steer.sh`.
 - **Use-case cap** *(guard: bounds a single sitting)* — the sole mid-session checkpoint
   control: a hard, human-configured limit (in `config.md`, key `max_new_use_cases`) that
   **enforces** a checkpoint **pause** once that many **use-cases** have been newly added in the

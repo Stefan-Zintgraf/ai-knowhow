@@ -26,7 +26,7 @@ Like [`finalizing.md`](finalizing.md), this doc is read in a **fresh context** a
 3. Re-file any parked **scope signals** that now fit *inside* the new anchor — promote each from the **parking lot** into a proper **use-case** or **vision point** at its natural altitude (keep numbers; file points under the anchor group).
 4. **Pause** — this is the skill's fresh-context move, identical in shape to the finalize handoff:
    - Write `## Resume notes` marking **"scope widened to `S<n>`, divergence NOT saturated at the new scope — resume re-enters diverge focused on the new rung"**.
-   - Turn **scope steering** OFF (see [`scope-steering.md`](scope-steering.md)) — a pause is a mini session-end. Its steer text carries the anchor, so it is refreshed to the new `S<n>` when the resumed session turns steering back ON.
+   - Turn **scope steering** OFF (see [`scope-steering.md`](scope-steering.md)) — a pause is a mini session-end. No steer edit is needed: the per-turn steer reads the anchor live from `## Vision scope` (updated in steps 1–2 above), so it reflects the new `S<n>` automatically when the resumed session turns steering back ON.
    - Tell the user the file path and to `/clear` (or open a new session) and re-invoke the skill, then **stop**. The fresh session resumes straight into a **focused** divergence at the new rung.
 
 Do not read [`finalizing.md`](finalizing.md) on a climb — a climbed ladder is still open.
