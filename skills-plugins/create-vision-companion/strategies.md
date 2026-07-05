@@ -117,7 +117,7 @@ the language → translation needed?). Every row cites `UC` IDs.
 ### S8 — Route every parked item to its downstream phase; drop nothing  *(coverage)*
 The vision may carry a parking lot of out-of-scope `BV` items — integrations, hard
 constraints (offline, privacy, scale), tech/platform leanings, MVP/scoping calls, edge
-cases: precisely the build-phase thinking the vision deliberately kept out. Many visions park
+cases: the build-phase thinking the vision deliberately kept out. Many visions park
 nothing; when `BV` items exist, none may be dropped. Route each by type, **citing it by `BV`
 ID**:
 

@@ -6,11 +6,11 @@ disable-model-invocation: true
 
 <what-to-do>
 
-Turn a **finalized** foundation vision into a **derived companion set** — a small bundle of structured markdown docs a build-phase agent (architecture / requirements / planning) can consume without re-deriving the vision's structure every run.
+Turn a **finalized** foundation vision into a **derived companion set** — a bundle of structured markdown docs a build-phase agent (architecture / requirements / planning) can consume without re-deriving the vision's structure every run.
 
-The vision is written for a *human*: narrative, emotional, one flat use-case list, plain language, no structure. That's correct for what it is — but it creates frictions for a planning agent, each resolved with one recognized practice, **without ever editing the vision down**. The diagnosis, the strategies (S1–S9), and the method live in [strategies.md](strategies.md); the exact output shapes live in [templates.md](templates.md). Read strategies.md before drafting; pull each phase's template section as you draft it.
+The vision is written for a human — narrative, one flat use-case list, no structure — which creates frictions for a planning agent, each resolved by one practice **without editing the vision down**. The strategies (S1–S9) and method live in [strategies.md](strategies.md); the output shapes in [templates.md](templates.md). Read strategies.md before drafting; pull each phase's template section as you draft it.
 
-This is an **AFK run**: autonomous, single batch, no human in the inner loop. Work phase by phase, but each phase is **run twice**: a *draft* pass by the builder, then an **adversarial critic pass in a separate sub-agent** that re-reads the vision from disk and audits the drafted artifact against it (see the workflow). The critic auto-fixes clear defects and logs residual judgment calls, each with a confidence tag, to `decisions.md`. After all phases, a **whole-bundle critic** (another fresh sub-agent) audits the finished set against the frozen vision into `critic-report.md`, iterating until clean or a cap. The human enters exactly twice: mid-run only for a **hard blocker** (see Phase 0 — the run halts and surfaces it rather than producing a doomed bundle), and at the very end (Phase 10) to review `decisions.md` (the low-confidence calls) and `critic-report.md`, then gate the finalize.
+This is an **AFK run**: autonomous, single batch, no human in the inner loop. Each phase runs twice: a *draft* pass by the builder, then an **adversarial critic pass in a separate sub-agent** that re-reads the vision from disk and audits the draft against it. The critic auto-fixes clear defects and logs residual judgment calls, each with a confidence tag, to `decisions.md`. After all phases, a **whole-bundle critic** (another fresh sub-agent) audits the finished set against the frozen vision into `critic-report.md`, iterating until clean or a cap. The human enters twice: mid-run only for a **hard blocker** (Phase 0), and at the end (Phase 10) to review `decisions.md` and `critic-report.md` and gate the finalize.
 
 **Stepping mode.** If the user asks to run with debugging/stepping, or the bundle's `_status.md` carries `debug: on`, read [debug.md](debug.md) — it suspends the AFK rule with a per-phase halt.
 
@@ -25,7 +25,7 @@ This is an **AFK run**: autonomous, single batch, no human in the inner loop. Wo
 
 <the-bundle>
 
-Output goes in a tidy subfolder **parallel to the vision**, with a **fixed name** that never changes across sittings or re-runs: `docs/brainstorming/<product-slug>-vision-ai-spec/`. A small `_status.md` file inside the folder carries the build state (`in-progress` vs `finalized`) and the resume notes — it is the marker that distinguishes a paused build from a finished one (see Pause and resume) and survives into the finalized bundle. Eight core files, each owning exactly one concern (S5), plus `deferred-inputs.md` when the vision parks `BV` items (S8), plus two **review artifacts** (`decisions.md`, `critic-report.md`) the human reads at the end:
+Output goes in a subfolder **parallel to the vision**, with a **fixed name** that never changes across sittings or re-runs: `docs/brainstorming/<product-slug>-vision-ai-spec/`. A `_status.md` file inside the folder carries the build state (`in-progress` vs `finalized`) and resume notes (see Pause and resume). Eight core files, each owning one concern (S5), plus `deferred-inputs.md` when the vision parks `BV` items (S8), plus two **review artifacts** (`decisions.md`, `critic-report.md`) the human reads at the end:
 
 | File | Concern | Strategy |
 |------|---------|----------|
@@ -41,7 +41,7 @@ Output goes in a tidy subfolder **parallel to the vision**, with a **fixed name*
 | `decisions.md` *(review artifact)* | The judgment log: every reading the builder made, alternative rejected, **confidence** tag, cites; the human reviews the low-confidence rows | — |
 | `critic-report.md` *(review artifact)* | Findings from the whole-bundle critic sub-agent audited against the frozen vision; the human adjudicates residuals | — |
 
-A worked reference bundle exists at `ai-mail/ai-mail.pocock/docs/brainstorming/ai-mail-vision-ai-spec/` (the pilot — an early build predating S8–S9, so it has no `deferred-inputs.md` or `vision-index.md` yet; its upgrade re-run adds them).
+A worked reference bundle exists at `ai-mail/ai-mail.pocock/docs/brainstorming/ai-mail-vision-ai-spec/` (an early pilot predating S8–S9, so no `deferred-inputs.md` or `vision-index.md` yet).
 
 </the-bundle>
 
@@ -52,9 +52,9 @@ The non-negotiables (full rationale in [strategies.md](strategies.md)):
 - **Derive, never replace (S6).** The vision stays byte-identical and canonical. The bundle only *adds* files. Every derived claim cites ≥1 stable ID (`UC`/`V`/`S`/`BV`) (no invented requirements; nothing dropped). If a derived doc and the vision disagree, the vision wins — fix the derived doc.
 - **Don't compress the vision — restructure.** Token count isn't the bottleneck; structure is. The only legitimate compression is the *normalized one-liner* per UC in the index, and only by factoring repeated invariant boilerplate out to `INV` references. The rich original sentence stays in the vision.
 - **The altitude fence (§2a).** Borrow only the **strategic-design** layer. No tactical DDD (Aggregates, Entities, ports/adapters, consistency models), no tech/platform, no MVP/phasing — those belong to the phase this bundle *feeds*. Pulling them in is altitude leakage.
-- **Bidirectional traceability or it didn't happen.** capability→UCs, UC→capability, invariant→UCs, vision-point→UCs, UC→scope all resolve. No orphans on either side.
-- **Flag judgment calls.** The clusters, the primary/secondary assignments, the exact invariant set, and the Core/Supporting/Generic tags are *readings* of the vision, not mechanical outputs. Because no human watches the inner loop, every such reading is logged to `decisions.md` with a **confidence** tag; the low-confidence ones are what the human adjudicates at the end. Nothing is silently collapsed.
-- **The critic is independent or it's theatre.** Each critic pass runs in a **separate sub-agent** with a fresh context: it re-reads the vision from disk and sees the *artifact*, never the builder's reasoning. A same-context self-review inherits the misreading it's meant to catch — don't do it.
+- **Bidirectional traceability.** capability→UCs, UC→capability, invariant→UCs, vision-point→UCs, UC→scope all resolve. No orphans on either side.
+- **Flag judgment calls.** The clusters, primary/secondary assignments, the invariant set, and the Core/Supporting/Generic tags are *readings* of the vision, not mechanical outputs. Every such reading is logged to `decisions.md` with a **confidence** tag; the human adjudicates the low-confidence ones at the end. Nothing is silently collapsed.
+- **The critic is independent.** Each critic pass runs in a **separate sub-agent** with a fresh context: it re-reads the vision from disk and sees the *artifact*, never the builder's reasoning. A same-context self-review inherits the misreading it's meant to catch.
 
 </principles>
 
@@ -69,7 +69,7 @@ An AFK run to the end; the human enters only at Phase 10 (or on a hard blocker).
 Checkpoint pauses between *sittings* still work (see Pause and resume); they are not review gates.
 
 - **Phase 0 — Setup & blocker check.** First look in the output directory for an existing `<product-slug>-vision-ai-spec/` and branch on its `_status.md` (see Pause and resume for `in-progress`, and Re-running for `finalized`); ask before continuing either way. For a new build: confirm the input vision and the output folder, then create the folder and seed `_status.md` (status `in-progress`, empty phase checklist) and an empty `decisions.md`. Lock the ID schemes (`S`/`V`/`UC`/`BV` already in the vision; new `INV`, `CAP`). Note coverage targets: 100% of UCs in the index, every `V#` traced (or its gap flagged), every `S#` on the ladder with the anchor and horizon recorded.
-  - **Hard-blocker check — halt and surface immediately if any hold** (these are the *only* mid-run human interrupts; don't spend ~9 sub-agent spawns on a doomed bundle): (a) the vision isn't finalized — a `.wip.md` (already a stop, per Inputs); (b) the vision **self-contradicts irreconcilably** and a reading can't be chosen without inventing intent; (c) a **mechanical gate is structurally unmeetable** (e.g. a UC no actor or capability can own → 100% coverage impossible). Record the blocker in `_status.md` and stop. Anything short of a blocker is logged to `decisions.md` and carried to the end, not surfaced now.
+  - **Hard-blocker check — halt and surface immediately if any hold** (the *only* mid-run human interrupts): (a) the vision isn't finalized — a `.wip.md` (already a stop, per Inputs); (b) the vision **self-contradicts irreconcilably** and a reading can't be chosen without inventing intent; (c) a **mechanical gate is structurally unmeetable** (e.g. a UC no actor or capability can own → 100% coverage impossible). Record the blocker in `_status.md` and stop. Anything short of a blocker is logged to `decisions.md` and carried to the end, not surfaced now.
 - **Phase 1 — Invariants (S1) → `invariants.md`.** Sweep every UC; collect the cross-cutting constraints restated across many; dedupe into `INV1…` with statement, what-it-means-for-the-build, and representative asserting UCs. If the vision parks `BV` items, also fold any cross-cutting `BV` constraints (e.g. must-work-offline, data-stays-on-device, scale) into `INV…`, cited by `BV` ID (S8).
 - **Phase 2 — Glossary (S3) → `glossary.md`.** One canonical term per concept; list the vision's synonyms each absorbs. Feed the project's `CONTEXT.md` ubiquitous-language convention if one exists.
 - **Phase 3 — Actors (S2) → `actors.md`.** Distinct *relationships to the product* (drive tenancy/permissions) as actor codes; personas (UX flavours, not architecture) listed separately.
@@ -79,9 +79,9 @@ Checkpoint pauses between *sittings* still work (see Pause and resume); they are
 - **Phase 7 — UC index (S4) → `uc-index.md`.** One row per UC: id · source-line link · **scope (`S#`, from Phase 6)** · actor(s) · primary CAP · secondaries · INVs · normalized one-liner. This is the spine — it must reconcile every prior file.
 - **Phase 8 — Parking lot (S8) → `deferred-inputs.md`.** *Skip if the vision parks no `BV` items.* Cross-cutting `BV` constraints already went to `invariants.md` in Phase 1; route every remaining `BV` item here, tagged with the phase that consumes it (architecture / design / scoping). Preserve and route — do **not** design from them or promote them into the capability map (altitude fence).
 - **Phase 9 — README + mechanical gate pass → `README.md`.** Write the map + per-task load order + the vision-wins rule; acknowledge the `<slug>-architecture-lens.md` sibling. Then run the **mechanical** quality gates below **unattended**: coverage, bidirectional links, INV-cited, zero orphans, parked-items routed. A green pass needs no human. A red gate is auto-fixed if the fix is unambiguous; if a gate is *structurally* unmeetable it is a hard blocker (Phase 0) — halt and surface.
-- **Phase 10 — Whole-bundle critic → human review → finalize.** Spawn the **whole-bundle critic** (a fresh sub-agent over the frozen vision and the entire finished set) → write `critic-report.md`. It catches *cross-phase* compounding the per-phase critics couldn't see (a glossary term collapsed in Phase 2 that mis-clusters in Phase 4, etc.). **Iterate**: apply clear fixes and re-spawn until the report comes back clean or a cap (default 3 passes) is hit; unresolved items stay in `critic-report.md`. **Only now does the human enter** — reviewing exactly `decisions.md` (low-confidence calls) and `critic-report.md` (residuals). Apply their cuts/merges, then **finalize**: set `_status.md` to `finalized`, record the date (and, if a re-run, what this pass changed), and stamp `built-with-hash` with the skill fingerprint (recipe in Re-running). The folder name does not change. *(With zero open low-confidence decisions and a clean critic report, this review is a rubber-stamp — but the human still gates the finalize.)*
+- **Phase 10 — Whole-bundle critic → human review → finalize.** Spawn the **whole-bundle critic** (a fresh sub-agent over the frozen vision and the entire finished set) → write `critic-report.md`. It catches *cross-phase* compounding the per-phase critics couldn't see (a glossary term collapsed in Phase 2 that mis-clusters in Phase 4, etc.). **Iterate**: apply clear fixes and re-spawn until the report comes back clean or a cap (default 3 passes) is hit; unresolved items stay in `critic-report.md`. **Only now does the human enter** — reviewing `decisions.md` (low-confidence calls) and `critic-report.md` (residuals). Apply their cuts/merges, then **finalize**: set `_status.md` to `finalized`, record the date (and, if a re-run, what this pass changed), and stamp `built-with-hash` with the skill fingerprint (recipe in Re-running). The folder name does not change.
 
-> **Critic fan-out is required** (see Principles). The builder additionally *may* fan out per-UC tagging or per-cluster drafting; that part stays optional.
+> **Critic fan-out is required** (see Principles). The builder *may* additionally fan out per-UC tagging or per-cluster drafting; that stays optional.
 
 </workflow>
 
@@ -91,7 +91,7 @@ A companion build can span multiple sittings, and **each phase is a clean checkp
 
 `_status.md` holds: the `status` line; a **phase checklist** (each phase → done/open, its critic-pass state, and the file it wrote); a running count of open low-confidence entries in `decisions.md`; any recorded hard blocker; open threads; and the next phase to run.
 
-Checkpointing is about *sittings*, not review — this is an AFK run. Because each phase is a self-contained artifact off the frozen vision, the run can be safely interrupted (context limit, a Ralph-loop boundary, the machine stopping) and resumed later with almost no loss; keep `_status.md` current after every phase.
+The run can be safely interrupted (context limit, Ralph-loop boundary, machine stopping) and resumed with almost no loss; keep `_status.md` current after every phase.
 
 **Resuming (at session start — part of Phase 0).** Before setting up a new build, look in the output directory (default `docs/brainstorming/`) for the bundle folder and read its `_status.md`. If `status` is `in-progress`, **always ask** — never auto-continue. Name the folder and its product, then offer the choice:
 
@@ -110,7 +110,7 @@ Checkpointing is about *sittings*, not review — this is an AFK run. Because ea
 
 <re-running-on-a-finalized-vision>
 
-The skill is meant to be **run again on the same vision** — to upgrade a bundle after the skill itself improved, or to review/iterate the bundle with a stronger model (e.g. Ralph-looping). The vision stays frozen and canonical throughout (S6); a re-run only ever revises the *derived* files.
+The skill is meant to be **run again on the same vision** — to upgrade a bundle after the skill itself improved, or to review/iterate the bundle with a stronger model (e.g. Ralph-looping). The vision stays frozen and canonical throughout (S6); a re-run revises only the *derived* files.
 
 **Detecting skill drift (the hash check).** A finalized bundle records `built-with-hash` in `_status.md` — a fingerprint of the skill's output-shaping files at build time. At Phase 0, recompute it **from the skill's own directory** and compare. The recipe (reproducible because `git hash-object` normalizes and follows symlinks to real content):
 
@@ -121,7 +121,7 @@ git hash-object SKILL.md strategies.md templates.md | git hash-object --stdin
 - **Matches** → the skill is unchanged since this bundle was built; no upgrade is warranted (a re-run would only be a Review/iterate pass).
 - **Differs, or no `built-with-hash` recorded** (bundles built before this mechanism) → the skill content changed since the build; **recommend an Upgrade re-run**. The hash only says *that* something changed — fall back to the structural diff (file set, ID schemes, template shapes vs. the current `templates.md`) to decide *which* phases to re-run.
 
-(The recipe hashes the three files that determine output. It assumes they're byte-stable as installed; a pure whitespace/line-ending-only change can flip the hash, which is harmless — the structural diff then finds nothing to do.)
+(A pure whitespace/line-ending-only change can flip the hash harmlessly — the structural diff then finds nothing to do.)
 
 **Confirm before re-opening.** When Phase 0 finds a bundle whose `_status.md` is `finalized`, do **not** silently start editing. State that a finalized companion set already exists, report the hash-check result (in sync / drifted), and ask the user to confirm a re-open. Only on confirmation: flip `_status.md` back to `in-progress`, record that a re-run started (date + reason), and proceed. If the user declines, stop.
 
