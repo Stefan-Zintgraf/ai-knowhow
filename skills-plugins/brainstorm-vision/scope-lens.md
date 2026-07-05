@@ -22,10 +22,7 @@ The **scope lens** (see [`GLOSSARY.md`](GLOSSARY.md)) pass for a saturated **div
 1. Append the rung as the next **scope item** `S<n>` in `## Vision scope` — it becomes the new **anchor**. Append-only, never renumber (see the format rules in [`brainstorming.md`](brainstorming.md)).
 2. Update the anchor lead-in of `## Vision scope` to name the new anchor.
 3. Re-file any parked **scope signals** that now fit *inside* the new anchor — promote each from the **parking lot** into a proper **use-case** or **vision point** at its natural altitude (keep numbers; file points under the anchor group).
-4. **Pause** — this is the skill's fresh-context move, identical in shape to the finalize handoff:
-   - Write `## Resume notes` marking **"scope widened to `S<n>`, divergence NOT saturated at the new scope — resume re-enters diverge focused on the new rung"**.
-   - Turn **scope steering** OFF (see [`scope-steering.md`](scope-steering.md)) — a pause is a mini session-end. No steer edit is needed: the per-turn steer reads the anchor live from `## Vision scope` (updated in steps 1–2 above), so it reflects the new `S<n>` automatically when the resumed session turns steering back ON.
-   - Tell the user the file path and to `/clear` (or open a new session) and re-invoke the skill, then **stop**. The fresh session resumes straight into a **focused** divergence at the new rung.
+4. **Pause** — write `## Resume notes` marking **"scope widened to `S<n>`, divergence NOT saturated at the new scope — resume re-enters diverge focused on the new rung"**, then do the **fresh-context handoff** ([`SKILL.md`](SKILL.md) step 3).
 
 Do not read [`finalizing.md`](finalizing.md) on a climb — a climbed ladder is still open.
 
@@ -42,9 +39,6 @@ Do not read [`finalizing.md`](finalizing.md) on a climb — a climbed ladder is 
 
 <completion-criterion>
 
-The scope-lens pass ends **only** when **one** **rung** has been proposed in plain language **and** the human has explicitly chosen **climb** or **close**. Not "the scope feels right" — that is fuzzy and gives way to **premature completion** (declaring scope settled just to reach finalize).
-
-- On **climb**, the pause is a real context boundary: the finalize steps ahead are hidden, so there is no lookahead to rush toward.
-- On **close**, the **horizon** line being written **is** the proof the pass is done.
+The scope-lens pass ends **only** when **one** **rung** has been proposed in plain language **and** the human has explicitly chosen **climb** or **close**. Not "the scope feels right" — that is fuzzy and gives way to **premature completion** (declaring scope settled just to reach finalize). On **close**, the **horizon** line being written **is** the proof the pass is done.
 
 </completion-criterion>
