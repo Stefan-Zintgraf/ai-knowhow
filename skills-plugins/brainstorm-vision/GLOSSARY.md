@@ -1,7 +1,6 @@
 # brainstorm-vision — Glossary
 
-The skill's **domain model** — one authoritative home for its vocabulary, grouped by the axis
-each term serves. Each guard/failure term sits beside the lever it protects. **Bold** = a
+The skill's **domain model** — one authoritative home for its vocabulary. **Bold** = a
 cross-reference to another entry.
 
 ---

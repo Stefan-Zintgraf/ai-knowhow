@@ -10,7 +10,7 @@ Some repos ship a `UserPromptSubmit` hook that re-injects the scope boundary eve
 - if `brainstorm_scope_boundary_off.md` exists → rename it to `brainstorm_scope_boundary_on.md`;
 - else if neither exists → create `brainstorm_scope_boundary_on.md` (contents irrelevant; only its existence matters).
 
-**Verify (right after turning ON, at session start).** Renaming the flag proves nothing about the hook. Run these checks autonomously — no need to ask the user unless one fails:
+**Verify (right after turning ON, at session start).** Run these checks autonomously — no need to ask the user unless one fails:
 
 - **A — registration (static).** Read `$CLAUDE_PROJECT_DIR/.claude/settings.json` and confirm a `UserPromptSubmit` entry whose command references `scope-steer.sh`. Absent → the hook isn't installed in this repo (fresh clones may lack it).
 - **B — script self-test (dynamic).** With the flag ON, run the script once with empty stdin and confirm it emits the steer (non-empty stdout containing the sentinel `DIVERGENT vision session`):

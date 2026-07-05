@@ -7,7 +7,7 @@ The **scope lens** (see [`GLOSSARY.md`](GLOSSARY.md)) pass for a saturated **div
 **Propose exactly one rung — never a ladder.**
 
 1. **Privately** consider what the current **anchor** is a special case of — the next level of abstraction up. Draw on the accumulated **scope signals** parked with the `(scope signal)` tag and on any **use-cases** already straining the anchor (needs the current scope can't quite hold). These are the evidence for where the vision *wants* to grow.
-2. Pick the **one** most natural next **rung**. One only. Never present a full **ladder**, never sketch two rungs "to compare" — a full ladder drafted here anchors the divergence just as drafting it up front would.
+2. Pick the **one** most natural next **rung**. One only. Never present a full **ladder**, never sketch two rungs "to compare".
 3. Present that rung in **plain language**, with a *taste of the territory* it would unlock: two or three one-line sketches of the kind of **use-case** that becomes possible once the anchor widens to it. Enough for the human to feel the reach, not a diverged list.
 4. Recommend **climb** or **close** — honestly, on the evidence. Say which you'd pick and why; the strength of the scope signals is the tell.
 
@@ -24,7 +24,7 @@ The **scope lens** (see [`GLOSSARY.md`](GLOSSARY.md)) pass for a saturated **div
 3. Re-file any parked **scope signals** that now fit *inside* the new anchor — promote each from the **parking lot** into a proper **use-case** or **vision point** at its natural altitude (keep numbers; file points under the anchor group).
 4. **Pause** — write `## Resume notes` marking **"scope widened to `S<n>`, divergence NOT saturated at the new scope — resume re-enters diverge focused on the new rung"**, then do the **fresh-context handoff** ([`SKILL.md`](SKILL.md) step 3).
 
-Do not read [`finalizing.md`](finalizing.md) on a climb — a climbed ladder is still open.
+Do not read [`finalizing.md`](finalizing.md) on a climb.
 
 </climb>
 

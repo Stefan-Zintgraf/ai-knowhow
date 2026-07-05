@@ -4,8 +4,8 @@ The **use-case cap** (see [`GLOSSARY.md`](GLOSSARY.md)) is enforced by a second 
 
 Two properties make it robust:
 
-- **The hook counts, not the model.** Every turn it counts `UC…` lines in the `.wip.md` on disk and subtracts a **baseline** (the count when this sitting began). `delta = current − baseline` = use-cases added *this sitting*, recomputed from the file each turn.
-- **Session-scoped lock, so resume never deadlocks.** When the cap is hit the hook writes the current `session_id` to a lock file and blocks every further prompt *in that session*. After `/clear`, the new session has a different id: its first prompt passes (the lock is stale and dropped), the skill resets the baseline, and enforcement resumes from the next turn. You must start a fresh sitting to continue — exactly the intended pause.
+- **The hook counts, not the model.** Every turn it counts `UC…` lines in the `.wip.md` on disk and subtracts a **baseline** (the count when this sitting began); `delta = current − baseline` = use-cases added *this sitting*.
+- **Session-scoped lock.** When the cap is hit the hook writes the current `session_id` to a lock file and blocks every further prompt *in that session*. After `/clear`, the new session has a different id: its first prompt passes (the lock is stale and dropped), the skill resets the baseline, and enforcement resumes from the next turn.
 
 ## Files (all in `$CLAUDE_PROJECT_DIR`, local state — gitignore them)
 
