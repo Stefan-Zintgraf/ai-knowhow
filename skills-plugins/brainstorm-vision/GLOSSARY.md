@@ -149,4 +149,8 @@ widest framing before the concrete one is exhausted.
   **enforces** a checkpoint **pause** once that many **use-cases** have been newly added in the
   current sitting (counter resets on every resume). Its companion key `warn_before` sets **when**
   the brainstorm partner is told the auto-pause is coming (how many use-cases ahead of the cap).
-  Off / absent = no cap; the session runs to natural **saturation** with no automatic pause.
+  Not self-enforced: a hard `UserPromptSubmit` hook (`usecase-cap.sh`, mechanics in
+  `usecase-cap.md`) counts `UC` lines in the `.wip.md` every turn and, at the cap, **exit-2
+  discards further prompts** in that session until the human `/clear`s and resumes a fresh
+  sitting — beating both an indifferent transcript and **context rot**. Off / absent = no cap;
+  the session runs to natural **saturation** with no automatic pause.

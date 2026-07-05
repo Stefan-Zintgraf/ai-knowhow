@@ -146,14 +146,14 @@ Avoid adding obvious near-duplicates; if a new idea restates an existing one, sh
 
 <use-case-cap>
 
-**The checkpoint pause is governed by the configurable use-case cap** — read from [`config.md`](config.md) at session start (`max_new_use_cases`, `warn_before`). It counts **use-cases** newly appended during the *current sitting* — the run since the session started or was last resumed; carried-in use-cases, vision points, parking-lot items, and edits don't count. The counter resets to zero on every resume.
+**The checkpoint pause is governed by the configurable use-case cap** — set in [`config.md`](config.md) (`max_new_use_cases`, `warn_before`) and enforced by a **hard hook** (`usecase-cap.sh`; mechanics in [`usecase-cap.md`](usecase-cap.md)). The cap counts **use-cases** newly appended during the *current sitting* — the run since the session started or was last resumed; carried-in use-cases, vision points, parking-lot items, and edits don't count. The counter resets on every resume.
 
-With `max_new_use_cases` set (non-zero):
+The hook computes the count itself from the `.wip.md` on disk every turn (so it can't rot out of context) against a **baseline** you record at sitting start — see the state-file duty in the sequencing/resume steps of `SKILL.md` and in [`usecase-cap.md`](usecase-cap.md). It is not a rule you enforce from memory; it enforces itself. Your job around it:
 
-- **Inform the partner in advance.** When the count reaches `max_new_use_cases − warn_before` newly-added use-cases, tell them once in one line that the session will auto-pause for a checkpoint soon (e.g. *"heads up — `warn_before` more use-cases and I'll pause us for a fresh-context checkpoint"*). This is what `warn_before` governs: **when** they're informed of the coming termination. With `warn_before: 0`, skip the advance notice.
-- **Enforce the pause at the cap.** The turn that brings the count to `max_new_use_cases`, finish capturing that use-case, then **stop diverging and pause** — don't merely offer. Follow the **Pause** flow in `SKILL.md`, marking the **`## Resume notes`** (see [`GLOSSARY.md`](GLOSSARY.md)) as a **context/break checkpoint, divergence NOT saturated**, so resuming drops straight back into diverging with a fresh sitting and a reset counter (not the scope lens or finalize gate).
+- **Heed the advance notice.** Inside the warn window (`max_new_use_cases − warn_before` reached) the hook injects a heads-up; relay it to the partner in one line — *"`warn_before` more use-cases and I'll hard-pause us for a fresh-context checkpoint."* This is what `warn_before` governs: **when** they're informed of the coming termination. `warn_before: 0` skips the notice.
+- **Pause gracefully at the cap.** On the turn that brings the count to `max_new_use_cases`, finish capturing that use-case, write the **`## Resume notes`** (see [`GLOSSARY.md`](GLOSSARY.md)) marked **context/break checkpoint, divergence NOT saturated**, follow the **Pause** flow in `SKILL.md`, and stop. If you don't, the hook **hard-blocks the next prompt anyway** (the human is told to `/clear` and re-invoke), and resume reconstructs from the `.wip.md` — but graceful notes make resume cleaner. Resuming drops back into diverging with a fresh sitting and a reset counter (not the scope lens or finalize gate).
 
-When `max_new_use_cases` is off (or [`config.md`](config.md) is absent), there is no cap — the session runs to natural **saturation**, with no automatic checkpoint.
+When `max_new_use_cases` is off (or [`config.md`](config.md) is absent), there is no cap — the hook stays silent and the session runs to natural **saturation**, with no automatic checkpoint.
 
 </use-case-cap>
 

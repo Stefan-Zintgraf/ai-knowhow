@@ -18,7 +18,7 @@ Its rhythm is a loop, not a funnel: **diverge** → **scope lens** → (climb �
 
 1. **Start the session.**
    - Read [`scope-steering.md`](scope-steering.md), turn scope steering **ON**, and run its A/B/C verification checks (it covers what to do on a failed check).
-   - Read [`config.md`](config.md) for the session limits (`max_new_use_cases`, `warn_before`) — the **use-case cap** enforced in [`brainstorming.md`](brainstorming.md). A missing file or blank/`off` value means no cap. Re-read it on every resume: the cap counts use-cases added per *sitting*, so the counter resets each time.
+   - Read [`config.md`](config.md) for the session limits (`max_new_use_cases`, `warn_before`) — the **use-case cap**, hard-enforced by the `usecase-cap.sh` hook. If a cap is set, read [`usecase-cap.md`](usecase-cap.md), run its A/B verification checks, and — once the `.wip.md` path is settled — write the `brainstorm_usecase_cap.state` file (`WIP=` + `BASELINE=` current `UC` count, 0 for a brand-new file). A missing file or blank/`off` value means no cap; skip the state file. The counter is per *sitting* — re-do this baseline reset on every resume (see Pause and resume).
    - Before starting anything new, check for prior work to resume — see Pause and resume.
    - Settle the topic: if the user passed a brief/foundation file (or one is open), read it, treat its topic and goal as already chosen, confirm in one line, and begin — don't re-elicit what the brief settled. Otherwise ask once what product or problem we're opening up.
    - Once the topic is settled, write the `## Vision scope` section with a single **scope item** `S1` — the product's job in one plain line. This is the starting **anchor**. Draft, mention, or hint at **no** further **ladder** — the next **rung** is discovered later, by the **scope lens**, one at a time.
@@ -52,7 +52,7 @@ A vision session can span multiple sittings. The working file keeps a **`.wip.md
   | *divergence saturated, wrap-up agreed, ladder open* | the **scope lens** ([`scope-lens.md`](scope-lens.md)) |
   | *ready to finalize, sweep done, ladder closed* | finalize step 2 of [`finalizing.md`](finalizing.md) — unless use-cases changed since the sweep, which warrants a quick re-sweep of the affected axes first |
 
-  Distinguish the third from the fourth carefully: **wrap-up agreed, ladder open** goes to the scope lens (which may still **climb**); only a **ladder closed** goes to finalize. Turn scope steering back ON on resume (its steer carries the current **anchor**).
+  Distinguish the third from the fourth carefully: **wrap-up agreed, ladder open** goes to the scope lens (which may still **climb**); only a **ladder closed** goes to finalize. Turn scope steering back ON on resume (its steer carries the current **anchor**). **If a use-case cap is configured, reset the cap baseline first thing** — rewrite `brainstorm_usecase_cap.state` with `BASELINE=` the current `UC` count in the `.wip.md`, giving this new sitting a fresh budget (see [`usecase-cap.md`](usecase-cap.md)). The hook allows exactly one prompt for this reset before it starts counting again.
 - **Extend a finished vision** (`*-foundation-vision.md`) — re-open it: rename it back to `<name>.wip.md`, turn scope steering ON, and continue appending **use-cases** from where it stands (continuous numbering — never renumber existing items). A re-open goes back through the finalize gate afterwards.
 - **Start fresh** — leave existing files untouched and begin a new `.wip.md` for the new topic.
 
