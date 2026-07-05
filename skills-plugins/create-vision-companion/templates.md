@@ -1,7 +1,8 @@
 # Output templates
 
 The markdown skeleton for each companion file — eight core files, plus
-`deferred-inputs.md` when the vision parks `BV` items. These are *shapes*, not
+`deferred-inputs.md` when the vision parks `BV` items, plus three meta/review files
+(`_status.md`, `decisions.md`, `critic-report.md`). These are *shapes*, not
 fill-in forms — adapt headings and prose to the product, but keep the columns, the
 ID schemes, and the cross-links. Every derived claim cites ≥1 `S`/`V`/`UC` (or `BV`).
 The ai-mail pilot (`ai-mail.pocock/docs/brainstorming/ai-mail-vision-ai-spec/`) is
@@ -98,8 +99,7 @@ and data-model decision must honour all of these.
 - <how invariants combine, e.g. "INV1 + INV2 together imply a propose→review→apply pipeline">
 ```
 
-Rules: every `INV` is cited by ≥1 UC (no invented constraints). State each once;
-nothing here is per-feature.
+Rules: state each once; nothing here is per-feature.
 
 ---
 
@@ -363,26 +363,27 @@ bundle as a build log.
 - **finalized:** <YYYY-MM-DD or —>
 - **built-with-hash:** <skill fingerprint, stamped at finalize — see below>
 - **next phase:** <Phase N — name, or "—" when finalized>
+- **blocker:** <— | the hard blocker that halted the run (Phase 0); build stops until resolved>
+- **open low-confidence decisions:** <n — count of unreviewed rows in decisions.md>
 
 ## Phases
 
-| Phase | Status | File(s) written |
-|-------|--------|-----------------|
-| 0 Setup | done | _status.md |
-| 1 Invariants | done | invariants.md |
-| 2 Glossary | done | glossary.md |
-| 3 Actors | open | — |
-| 4 Capability map | open | — |
-| 5 Subdomains & context map | open | — |
-| 6 Vision index | open | — |
-| 7 UC index | open | — |
-| 8 Parking lot | open / n/a | — |
-| 9 README + gap pass | open | — |
-| 10 Review & finalize | open | — |
+`Draft` = artifact written · `Critic` = per-phase critic sub-agent has run and its
+fixes/flags applied (n/a for phases 0, 9, 10).
 
-## Open judgment calls (awaiting the user)
-
-- [ ] <e.g. CAP3 vs CAP5 split for UC12 — flagged in capability-map.md>
+| Phase | Draft | Critic | File(s) written |
+|-------|-------|--------|-----------------|
+| 0 Setup & blocker check | done | n/a | _status.md, decisions.md |
+| 1 Invariants | done | done | invariants.md |
+| 2 Glossary | done | done | glossary.md |
+| 3 Actors | open | open | — |
+| 4 Capability map | open | open | — |
+| 5 Subdomains & context map | open | open | — |
+| 6 Vision index | open | open | — |
+| 7 UC index | open | open | — |
+| 8 Parking lot | open / n/a | open / n/a | — |
+| 9 README + mechanical gates | open | n/a | README.md |
+| 10 Whole-bundle critic → review → finalize | open | n/a | critic-report.md |
 
 ## Open threads / next question
 
@@ -400,12 +401,72 @@ Rules: update it at the end of every phase and on pause. Flip `status` to
 append a run-log line stating the reason.
 
 `built-with-hash` is a fingerprint of the skill's output-shaping files, stamped at
-finalize and re-checked at Phase 0 to detect skill drift (see Re-running in
-`SKILL.md`). Compute it from the skill's own directory:
+finalize and re-checked at Phase 0 to detect skill drift — recipe and semantics in
+Re-running in `SKILL.md`.
 
-```
-git hash-object SKILL.md strategies.md templates.md | git hash-object --stdin
+---
+
+## 11. `decisions.md` — the judgment log (review artifact)
+
+The concentrated record of every *reading* the builder made, so the human reviews
+the interpretation layer in one place instead of watching every phase. Seeded empty
+in Phase 0; appended to whenever a phase's critic pass leaves a call unsettled. The
+human reads the **low-confidence** rows at Phase 10. A mechanical fact never belongs
+here — only judgment.
+
+```markdown
+# Decisions & assumptions — <Product> vision companion
+
+Every row is a *reading* of the frozen vision, not a fact in it. `confidence`:
+**low** = the human should look; **med/high** = logged for audit. All cite ≥1 stable ID.
+
+| ID | Phase | Decision (the reading taken) | Alternative rejected | Confidence | Cites | Reviewed |
+|----|-------|------------------------------|----------------------|------------|-------|----------|
+| D1 | 2 | "thread" ≡ "conversation" → one term **Thread** | keep them distinct | low | UC4, UC9 | [ ] |
+| D2 | 4 | UC12 primary = CAP3 | CAP5 primary | low | UC12 | [ ] |
+| D3 | 1 | INV4 "offline-first" is cross-cutting | scope to CAP2 only | med | UC3, UC7, BV2 | [ ] |
+| D4 | 6 | V4 has no realizing UC → flagged unrealized promise | force-fit to UC10 | high | V4 | [ ] |
+
+## Notes
+
+- Low-confidence rows are the Phase-10 review surface; check the box when adjudicated.
+- Never resolve a low-confidence row by editing the vision (S6) — fix the derived file.
 ```
 
-A mismatch (or a missing field on an older bundle) means the skill changed since
-this bundle was built → recommend an upgrade re-run.
+---
+
+## 12. `critic-report.md` — whole-bundle critic findings (review artifact)
+
+Written in Phase 10 by the **whole-bundle critic sub-agent** (fresh context, the
+frozen vision + the entire finished set, never the builder's reasoning). It catches
+*cross-phase* compounding the per-phase critics couldn't see. Iterated: clear
+findings are fixed and the critic re-spawned until clean or the cap (default 3). What
+remains is the human's to adjudicate alongside `decisions.md`.
+
+```markdown
+# Critic report — <Product> vision companion
+
+- **critic passes run:** <n> (cap 3)
+- **status:** clean | residual findings below
+- **audited against:** [<product-slug>-foundation-vision.md](../<product-slug>-foundation-vision.md) @ <byte-identical>
+
+## Findings
+
+| # | Severity | Where | Finding | Cites | Disposition |
+|---|----------|-------|---------|-------|-------------|
+| F1 | high | uc-index.md UC7 | normalized one-liner drops the "without leaving the thread" constraint → meaning drift | UC7 | fixed pass 2 |
+| F2 | med | capability-map.md CAP4 | UC15 clustered under CAP4 but its actor/intent fits CAP2 | UC15 | **open — human** |
+| F3 | low | subdomains-and-context-map.md | CAP6 tagged Supporting; arguably Core given INV2 | UC9, INV2 | **open — human** |
+
+## Cross-phase checks
+
+- **Dropped/invented:** every UC in the vision appears once in uc-index; nothing invented. ✓/✗
+- **Meaning drift:** each normalized line still means its source sentence. ✓/✗
+- **Language:** no glossary term split or merged wrongly across files. ✓/✗
+- **Altitude:** no tactical/tech/MVP leak in any file. ✓/✗
+- **Promises:** unrealized-promise / unpromised-capability flags present, not reconciled by editing the vision. ✓/✗
+
+## Residuals for the human
+
+- <the F# rows marked "open — human", one line each — this is half the Phase-10 review surface>
+```

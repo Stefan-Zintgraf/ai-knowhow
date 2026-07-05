@@ -52,7 +52,7 @@ Pull the rules that touch many capabilities (e.g. approval gate, non-destructive
 transparency, audit, ownership, progressive autonomy, acts-in-real-name) into one document,
 stated **once**, referenced by `INV` ID everywhere else. State them as **tech-free business
 policy** — no framework, storage, or transport commitment — exactly as the vision keeps tech
-out. Every `INV` is cited by ≥1 `UC`; invent nothing.
+out.
 
 ### S2 — Cluster use-cases into a capability map  *(D2)*
 Group the flat list into capabilities; assign each use-case **one primary** capability (note
