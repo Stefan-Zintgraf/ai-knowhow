@@ -144,3 +144,9 @@ widest framing before the concrete one is exhausted.
   at session start, OFF at every pause/session-end. Its steer text now also carries the current
   **anchor**, refreshed on each **climb**. Mechanics live in `scope-steering.md` /
   `scope_boundary.md` / `scope-steer.sh`.
+- **Use-case cap** *(guard: bounds a single sitting)* — the sole mid-session checkpoint
+  control: a hard, human-configured limit (in `config.md`, key `max_new_use_cases`) that
+  **enforces** a checkpoint **pause** once that many **use-cases** have been newly added in the
+  current sitting (counter resets on every resume). Its companion key `warn_before` sets **when**
+  the brainstorm partner is told the auto-pause is coming (how many use-cases ahead of the cap).
+  Off / absent = no cap; the session runs to natural **saturation** with no automatic pause.

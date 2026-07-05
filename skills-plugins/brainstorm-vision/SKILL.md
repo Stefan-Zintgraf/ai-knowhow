@@ -18,6 +18,7 @@ Its rhythm is a loop, not a funnel: **diverge** → **scope lens** → (climb �
 
 1. **Start the session.**
    - Read [`scope-steering.md`](scope-steering.md), turn scope steering **ON**, and run its A/B/C verification checks (it covers what to do on a failed check).
+   - Read [`config.md`](config.md) for the session limits (`max_new_use_cases`, `warn_before`) — the **use-case cap** enforced in [`brainstorming.md`](brainstorming.md). A missing file or blank/`off` value means no cap. Re-read it on every resume: the cap counts use-cases added per *sitting*, so the counter resets each time.
    - Before starting anything new, check for prior work to resume — see Pause and resume.
    - Settle the topic: if the user passed a brief/foundation file (or one is open), read it, treat its topic and goal as already chosen, confirm in one line, and begin — don't re-elicit what the brief settled. Otherwise ask once what product or problem we're opening up.
    - Once the topic is settled, write the `## Vision scope` section with a single **scope item** `S1` — the product's job in one plain line. This is the starting **anchor**. Draft, mention, or hint at **no** further **ladder** — the next **rung** is discovered later, by the **scope lens**, one at a time.

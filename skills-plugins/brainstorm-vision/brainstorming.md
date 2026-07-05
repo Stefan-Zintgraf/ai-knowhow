@@ -144,13 +144,18 @@ Avoid adding obvious near-duplicates; if a new idea restates an existing one, sh
 
 </file-format>
 
-<long-session-checkpoint>
+<use-case-cap>
 
-**Offer a checkpoint pause once you've asked roughly 15–20 questions without reaching saturation.** Offer it once, gently, the same way you'd offer wrap-up — never force it; ideas may still be flowing, and the human may want to push on. Frame it as *both* a good moment to `/clear` for a fresh context *and* a natural spot to take a short break. If the user would rather keep going, drop the offer and re-raise after about 4-6 further questions.
+**The checkpoint pause is governed by the configurable use-case cap** — read from [`config.md`](config.md) at session start (`max_new_use_cases`, `warn_before`). It counts **use-cases** newly appended during the *current sitting* — the run since the session started or was last resumed; carried-in use-cases, vision points, parking-lot items, and edits don't count. The counter resets to zero on every resume.
 
-On agreement, follow the **Pause** flow in `SKILL.md` — but mark in the **`## Resume notes`** (see [`GLOSSARY.md`](GLOSSARY.md)) that this is a **context/break checkpoint, divergence NOT saturated**, so resuming drops straight back here into diverging (not the scope lens or finalize gate).
+With `max_new_use_cases` set (non-zero):
 
-</long-session-checkpoint>
+- **Inform the partner in advance.** When the count reaches `max_new_use_cases − warn_before` newly-added use-cases, tell them once in one line that the session will auto-pause for a checkpoint soon (e.g. *"heads up — `warn_before` more use-cases and I'll pause us for a fresh-context checkpoint"*). This is what `warn_before` governs: **when** they're informed of the coming termination. With `warn_before: 0`, skip the advance notice.
+- **Enforce the pause at the cap.** The turn that brings the count to `max_new_use_cases`, finish capturing that use-case, then **stop diverging and pause** — don't merely offer. Follow the **Pause** flow in `SKILL.md`, marking the **`## Resume notes`** (see [`GLOSSARY.md`](GLOSSARY.md)) as a **context/break checkpoint, divergence NOT saturated**, so resuming drops straight back into diverging with a fresh sitting and a reset counter (not the scope lens or finalize gate).
+
+When `max_new_use_cases` is off (or [`config.md`](config.md) is absent), there is no cap — the session runs to natural **saturation**, with no automatic checkpoint.
+
+</use-case-cap>
 
 <reaching-saturation>
 
