@@ -5,11 +5,6 @@ The markdown skeleton for each companion file — eight core files, plus
 (`_status.md`, `decisions.md`, `critic-report.md`). These are *shapes*, not
 fill-in forms — adapt headings and prose to the product, but keep the columns, the
 ID schemes, and the cross-links. Every derived claim cites ≥1 `S`/`V`/`UC` (or `BV`).
-The ai-mail pilot (`ai-mail.pocock/docs/brainstorming/ai-mail-vision-ai-spec/`) is
-the worked reference for the six original files (README, invariants, glossary,
-actors, capability-map, uc-index); the later additions —
-subdomains-and-context-map (S7), deferred-inputs (S8), and vision-index (S9) — are
-shown here only as templates.
 
 Replace `<product>` / `<product-slug>` and the bracketed placeholders throughout.
 
