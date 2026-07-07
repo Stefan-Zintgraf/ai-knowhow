@@ -39,6 +39,43 @@ Maintain one markdown file. By default, propose a path under `docs/brainstorming
 
 </capture>
 
+<term-sightings>
+
+**Term sightings are a sidecar, not a glossary.** When a live answer reveals a genuine
+concept conflation or synonym drift that could make you double-count a use-case, ask one
+short clarifying question — that turn's single question, not one bolted onto a divergence
+prompt — then return to divergence ("you called this both a commitment and an obligation —
+same thing, or is one something you promised and the other something the world expects?").
+Only for terms that affect meaning: no taxonomy, no canonicalizing the product language.
+
+When the distinction matters, append a note to `<output-dir>/<slug>-term-sightings.md`
+(beside the `.wip.md` / finalized vision), in this shape:
+
+```markdown
+# <Product> — Term sightings
+
+Non-canonical notes from the brainstorm — hints for later processing, not the ubiquitous
+language. The foundation vision remains the source of truth.
+
+- **<term A> / <term B>** — <human clarification, or the open ambiguity, in one line>.
+  Seen around: UC<n>, V<n> (or "current discussion" if not numbered yet).
+```
+
+The header says it: a **best-effort hint**, never source of truth. So:
+
+- Keep it sparse — only terms that affect meaning or duplicate detection; never aim for
+  completeness. (Semantic sibling of the near-duplicate check in *Numbering & sorting*:
+  that catches use-cases that restate each other; this catches one concept wearing two
+  words across distinct use-cases.)
+- If the user hasn't clarified, record the open ambiguity — don't invent a reading.
+- Read the file before writing; append or sharpen in place, preserving user edits. Never
+  name it `glossary.md` or fold it into the vision.
+- **On resume, reconcile before diverging** — drop sightings the vision has since settled,
+  merge duplicates, sharpen the rest. Reconcile only, never expand. This re-arms the watch
+  for the sitting.
+
+</term-sightings>
+
 <scope-discipline>
 
 **Scope discipline.**

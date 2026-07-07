@@ -11,6 +11,7 @@ Wrap-up is a **two-step gate — never jump straight to finalizing.**
   - **Walk the scope section:** every **vision point** sits under the right `S<n>` **scope item**, no scope item is empty, and the `*Beyond the horizon:*` line is present. Fix any point filed under the wrong item (keep its number).
   - strip any `## Resume notes` section;
   - rename `<name>.wip.md` → `<name>.md` so the final artifact obeys the format (`## Vision scope`, grouped Vision points, flat Use-cases, plus the `## Beyond the vision (parking lot)` section if anything was parked);
+  - leave any sibling `<slug>-term-sightings.md` sidecar in place, but do **not** merge it into the finalized vision; it is a non-canonical hint for companion derivation, not part of the vision format;
   - if use-cases **or scope items** changed since step 1, reconcile the `<slug>-architecture-lens.md` artifact's `UC<n>` **and** `S<n>` cross-references so they still point at the right use-cases and scope items;
   - rename the steering flag to `_off` (see [`scope-steering.md`](scope-steering.md)).
 

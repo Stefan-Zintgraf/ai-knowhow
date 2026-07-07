@@ -41,6 +41,11 @@ cross-reference to another entry.
   two pros/two cons + the human decides). Unlike the **architecture-significance sweep** (which
   surfaces *use-cases*), the parking lot captures out-of-scope items the moment they arise.
   Appears only if at least one item was parked.
+- **Term sightings** *(sidecar, not glossary)* — sparse, non-canonical notes in
+  `<slug>-term-sightings.md` for live concept conflations or synonym drift that could affect
+  meaning or cause duplicate **use-cases**. The coach may ask one short clarification, then
+  returns to **divergence**. The file is only a hint for the later companion; the finalized
+  vision remains the source of truth and the companion re-derives the real glossary.
 
 ---
 

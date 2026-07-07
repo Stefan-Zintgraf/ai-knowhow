@@ -41,15 +41,19 @@ restated verbatim in a later normalized line or capability description (referenc
 
 ## Phase 2 — `glossary.md` (S3)
 
-**Builder reads:** strategies §S3 · templates §3 · vision · the project's `CONTEXT.md`
-ubiquitous-language convention if one exists · `invariants.md`.
+**Builder reads:** strategies §S3 · templates §3 · vision · optional sibling
+`<product-slug>-term-sightings.md` if present (**hint only, not source of truth**) ·
+the project's `CONTEXT.md` ubiquitous-language convention if one exists · `invariants.md`.
 **Derive:** one canonical term per concept; list the vision synonyms each absorbs. Sweep the
 *whole* vision — including `## Vision scope` and `## Vision points`, which often name the
-product's reason-for-being most sharply.
+product's reason-for-being most sharply. Use term sightings only to focus review on likely
+splits/merges; accept a sighting only if the frozen vision itself supports it.
 
 **Critic checks (judgment → `decisions.md`):**
 - **Single language** — every concept has exactly one canonical term; known synonyms mapped to
   it; none wrongly split (one concept forced into two terms) or merged (two concepts collapsed).
+- Any term-sightings sidecar was treated as a hint, not evidence: no canonical term, synonym, or
+  definition rests on the sidecar alone.
 - The vision's scope-ladder structural terms — *scope item, anchor, horizon, sibling vision* —
   are kept **out** of the product glossary (they describe the vision's boundary, not the domain;
   they live in `vision-index.md`'s header).

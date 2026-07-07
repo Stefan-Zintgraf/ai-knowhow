@@ -26,7 +26,7 @@ Its rhythm is a loop, not a funnel: **diverge** → **scope lens** → (climb �
 2. **Diverge.** Read [`brainstorming.md`](brainstorming.md) and run the interview. Stay here — this *is* the session. Keep generating until **saturation** (defined there).
 
 3. **Wrap up — only at saturation.** The session ends when the user signals it ("done", "that's enough", "wrap up") **or** when you judge breadth has reached **saturation**. When you sense saturation, **offer** to wrap up once, gently — never force it; a divergent session shouldn't be cut short while ideas are still flowing. Once wrap-up is agreed, the next phase is the **scope lens** ([`scope-lens.md`](scope-lens.md)) — **not** finalize. **Hand off to a fresh session — do not read [`scope-lens.md`](scope-lens.md) or [`finalizing.md`](finalizing.md) inline:**
-   - make the `.wip.md` current (**vision points** + **use-cases** written, per [`brainstorming.md`](brainstorming.md));
+   - make the `.wip.md` current (**vision points** + **use-cases** written, per [`brainstorming.md`](brainstorming.md)); if any non-canonical `<slug>-term-sightings.md` notes were captured, make that sidecar current too;
    - **replace** the `## Resume notes` section (see Pause and resume for the snapshot rule) with a single block marking **divergence saturated, wrap-up agreed, ladder open — resume runs the scope lens ([`scope-lens.md`](scope-lens.md))**;
    - do the **fresh-context handoff** (defined just below).
 
@@ -44,7 +44,7 @@ A vision session can span multiple sittings. The working file keeps a **`.wip.md
 
 **Resuming or extending (at session start).** Before proposing a new path, look in the output directory (default `docs/brainstorming/`) for prior work — both `*.wip.md` (a paused session) **and** finalized `*-foundation-vision.md` (a completed vision that can be re-opened to add use-cases). If any exist, **always ask the user** what to do — never auto-continue. Name the file(s) and topic(s), then offer the choice:
 
-- **Resume a paused session** (`*.wip.md`) — read the whole file (`## Vision scope`, **vision points**, **use-cases**, and the **`## Resume notes`** if present), play back in two or three sentences where you left off and what's still open, then continue. Don't re-elicit settled ground. The `## Resume notes` marks which of **four** states the session is in — that decides where you re-enter:
+- **Resume a paused session** (`*.wip.md`) — read the whole file (`## Vision scope`, **vision points**, **use-cases**, and the **`## Resume notes`** if present), plus the sibling `<slug>-term-sightings.md` sidecar if it exists (non-canonical hints only — **reconcile** it before diverging, per [`brainstorming.md`](brainstorming.md)'s term-sightings). Play back in two or three sentences where you left off and what's still open, then continue. Don't re-elicit settled ground. The `## Resume notes` marks which of **four** states the session is in — that decides where you re-enter:
 
   | `## Resume notes` marker | Re-enter at |
   |---|---|
@@ -54,14 +54,14 @@ A vision session can span multiple sittings. The working file keeps a **`.wip.md
   | *ready to finalize, sweep done, ladder closed* | finalize step 2 of [`finalizing.md`](finalizing.md) — unless use-cases changed since the sweep, which warrants a quick re-sweep of the affected axes first |
 
   Distinguish the third from the fourth carefully: **wrap-up agreed, ladder open** goes to the scope lens (which may still **climb**); only a **ladder closed** goes to finalize. Turn scope steering back ON on resume (its steer carries the current **anchor**). **If a use-case cap is configured, reset the cap baseline first thing** — rewrite `brainstorm_usecase_cap.state` with `BASELINE=` the current `UC` count in the `.wip.md`, giving this new sitting a fresh budget (see [`usecase-cap.md`](usecase-cap.md)). The hook allows exactly one prompt for this reset before it starts counting again.
-- **Extend a finished vision** (`*-foundation-vision.md`) — re-open it: rename it back to `<name>.wip.md`, turn scope steering ON, and continue appending **use-cases** from where it stands (continuous numbering — never renumber existing items). A re-open goes back through the finalize gate afterwards.
+- **Extend a finished vision** (`*-foundation-vision.md`) — re-open it: rename it back to `<name>.wip.md`, read and **reconcile** any sibling `<slug>-term-sightings.md` sidecar (per [`brainstorming.md`](brainstorming.md)'s term-sightings), turn scope steering ON, and continue appending **use-cases** from where it stands (continuous numbering — never renumber existing items). A re-open goes back through the finalize gate afterwards.
 - **Start fresh** — leave existing files untouched and begin a new `.wip.md` for the new topic.
 
 If there are several candidates, list them and ask which (if any) to resume or extend.
 
 **Pausing (on request — "pause", "stop for now", "let's continue later").**
 
-1. Make sure the `.wip.md` is current (`## Vision scope` + **vision points** + **use-cases** written, per the file format in [`brainstorming.md`](brainstorming.md)).
+1. Make sure the `.wip.md` is current (`## Vision scope` + **vision points** + **use-cases** written, per the file format in [`brainstorming.md`](brainstorming.md)); if any term sightings were captured, make sure the sibling `<slug>-term-sightings.md` sidecar is current too.
 2. **Replace** the **`## Resume notes`** section at the end with a single current-state snapshot — not a running log. Resume notes describe where to pick up *now*; the vision points and use-cases are the durable record, so don't keep a per-sitting changelog here. Carry forward only what's still true and **drop any superseded content** — old derived ladders, "next climb" pointers already climbed, prior-sitting progress blocks now folded into the current summary, and any re-open retrofit block (this rule owns it too). Capture just enough state to pick up cleanly, marking which of the **four** states above the session is in (see the table): which **breadth axes** are well covered vs. thin, threads left open, the next question you would have asked, whether the **provisional vision** still feels right, and — on a mid-climb pause — that scope widened to `S<n>`. If you've reached the wrap-up gate, note how far the sweep got (which axes in the `<slug>-architecture-lens.md` artifact are covered vs. open — the artifact holds the axes; don't duplicate them here) and whether the ladder is **open** (scope lens still pending) or **closed** and **ready to finalize**.
 
    **Safety — when to prune.** Only ever delete resume-note content *here*, at the pause/wrap-up write, where the block you delete is superseded in the same step by the one you write. Never prune at resume-*start* (read time): until this new snapshot is written, the old note is the only crash breadcrumb, so read it and re-establish context first, then let the next pause/wrap-up write replace it.

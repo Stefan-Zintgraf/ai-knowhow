@@ -354,6 +354,7 @@ bundle as a build log.
 
 - **status:** in-progress | finalized
 - **vision:** [<product-slug>-foundation-vision.md](../<product-slug>-foundation-vision.md)
+- **term-sightings:** [<product-slug>-term-sightings.md](../<product-slug>-term-sightings.md) | none (hint only, not source of truth)
 - **started:** <YYYY-MM-DD>
 - **finalized:** <YYYY-MM-DD or —>
 - **built-with-hash:** <skill fingerprint, stamped at finalize — see below>
