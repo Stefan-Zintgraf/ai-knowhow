@@ -7,8 +7,8 @@ While active, the AFK rule is *suspended*: after **every** phase completes (its 
 1. State which phase just finished, the file(s) it wrote, and any residuals it logged to `decisions.md`.
 2. Ask the human exactly this choice before continuing:
    - **Continue, keep debugging on** — proceed to the next phase, then halt again after it.
-   - **Continue, turn debugging off** — set `debug: off` in `_status.md`, then run the remaining phases straight through to Phase 10 with no further per-phase halts.
+   - **Continue, turn debugging off** — set `debug: off` in `_status.md`, then run the remaining phases straight through to Phase 12 with no further per-phase halts (the Phase 11 human review still applies).
    - **Stop here** — pause the build (follow Pause and resume in `SKILL.md`).
 3. Only act after the human answers. Turning debugging off mid-run takes effect immediately — the *next* phase and all after it run without halting.
 
-Hard blockers (Phase 0) and the Phase 10 human review still apply regardless of the flag. The per-phase halt is *in addition to* those, not a replacement.
+Hard blockers (Phase 0) and the Phase 11 human review still apply regardless of the flag. The per-phase halt is *in addition to* those, not a replacement.

@@ -12,14 +12,15 @@ each pass its own targeted checklist instead of a flat, whole-skill gate list.
   and returns a short summary.
 - **Critic sub-agent** for Phase *N* loads: the frozen vision · the drafted artifact · the
   prior-phase artifacts · this file's **§ Phase N critic checks**. It never sees the builder's
-  reasoning. It auto-fixes clear defects in place, logs low-confidence residuals to
+  reasoning. It auto-fixes clear defects in place, logs unresolved residuals to
   `decisions.md` with a confidence tag, and returns a short summary.
 
 Gates are of two kinds (unchanged from the skill's contract): **mechanical** gates are
 decidable by inspection — the Phase 9 builder runs the full set unattended, and each producing
 phase pre-checks the ones it can; **judgment** gates are *readings* a critic audits, residuals
-to `decisions.md` / `critic-report.md` for the human's single end review. Don't ask the human to
-verify a mechanical gate; don't let a builder self-certify a judgment gate.
+routed to `decisions.md` for the human's single end review (Phase 11), with the critic's own
+findings also recorded in `critic-report.md`. Don't ask the human to verify a mechanical gate;
+don't let a builder self-certify a judgment gate.
 
 ---
 
@@ -80,7 +81,7 @@ placeholder.
 
 **Critic checks (judgment → `decisions.md`):**
 - **Right readings** — the clusters and the primary/secondary assignments are defensible against
-  the vision; low-confidence ones logged, not silently settled.
+  the vision; unresolved ones logged, not silently settled.
 - Every UC has exactly one primary capability; unclusterable UCs are flagged (not force-fit).
 - No tactical patterns / tech in capability intent (altitude).
 
@@ -185,6 +186,8 @@ a short pass/fail summary; the orchestrator only updates `_status.md`.
 **Reads:** the frozen vision · the entire finished set. Writes `critic-report.md` and applies
 its own clear fixes in place. Iterate (default cap 3 passes) until clean; unresolved items stay
 in `critic-report.md`. Catches *cross-phase* compounding the per-phase critics could not see.
+**Every residual human-judgment finding is also appended to `decisions.md`** (unconfirmed, with a
+confidence tag and cites), so Phase 11 reviews one unified surface. **Does not finalize.**
 
 **Bundle-wide judgment checks:**
 - **Cross-phase compounding** — a reading settled in one phase that mis-propagates into a later
@@ -196,3 +199,57 @@ in `critic-report.md`. Catches *cross-phase* compounding the per-phase critics c
 - **Promises reconciled, not edited** — unrealized-promise / unpromised-capability flags are
   surfaced across the set, never reconciled by touching the vision.
 - **Independently loadable** — each doc still stands alone with glossary + invariants.
+
+---
+
+## Phase 11 — item-by-item `decisions.md` review (human gate)
+
+*The single human-in-the-loop gate; not a sub-agent pass — the orchestrator runs it directly with
+the human.* Every earlier phase's residual readings (per-phase critics **and** the Phase 10
+whole-bundle critic) are now collected as rows in `decisions.md`. Walk them **one row at a time**.
+
+**For each row, present:** the reading taken · the alternative rejected · confidence · cites
+(`UC`/`V`/`S`/`INV`/`BV`), then take the human's adjudication. Do **not** batch rows.
+There is exactly one active row and exactly one adjudication prompt at a time.
+Review unresolved rows in confidence order: all `low` rows first, then `medium`, then `high`.
+Within each confidence band, preserve the row order already present in `decisions.md`.
+
+- If the human **accepts** the reading as-is → set the row's **Confidence** to **`confirmed`**.
+- If the human **changes** it (a cut, merge, reword, re-cluster, re-tag) → **spawn an edit
+  sub-agent** to apply the change to the affected companion artifact(s); the orchestrator does not
+  edit artifacts itself. Update the row to record the reading actually taken, then set its
+  **Confidence** to **`confirmed`**.
+- If the human asks a **counter-question**, asks for more context, challenges the framing, or gives
+  a partial answer → answer the question, then re-present the **same row** for adjudication. Do not
+  mark the row confirmed, spawn edits, ask about another row, or treat the counter-question as an
+  adjudication.
+- Never resolve a row by editing the **vision** (S6) — fix the derived file.
+
+**Exit gate (mechanical):** **every row in `decisions.md` has `Confidence = confirmed`** — zero rows left
+with `low` / `medium` / `high` confidence. Update `_status.md` after each adjudication (the open-decisions count and the next
+unreviewed row) so the review resumes cleanly across sittings.
+
+---
+
+## Phase 12 — critic reconcile → finalize
+
+**Reads:** the frozen vision · the entire set as left by Phase 11 (all decisions `confirmed`).
+Re-spawn the **whole-bundle critic** (fresh sub-agent) to **update `critic-report.md`** so it
+reflects the Phase 11 changes — the confirmed `decisions.md` rows and any artifact edits they
+triggered — and to reconcile any companion files those edits touched. It applies its own clear
+fixes in place.
+
+**Checks:**
+- **`critic-report.md` reflects the confirmed state** — each prior finding shows its disposition
+  (fixed / accepted-by-human / superseded); no finding still points at a since-edited artifact.
+- **No new unconfirmed reading is left dangling** — if this pass surfaces a *new* human-judgment
+  residual, append it to `decisions.md` (unconfirmed) and **loop back to Phase 11** for that row
+  before finalizing; do not confirm it on the human's behalf.
+- **Mechanical gates still green** (Phase 9 set) after the Phase 11 edits — coverage, bidirectional
+  links, INV-cited, parked-items routed, every `V#`/`S#` present, vision byte-unchanged.
+
+**Finalize (only here):** flip `_status.md` to `finalized`, record the date (and, if a re-run,
+what this pass changed), stamp `built-with-hash`, and **(re)write `vision-manifest.md`** — the
+per-ID fingerprint of the frozen vision that lets the next re-run diff which items changed and scope
+itself (both recipes in [re-running.md](re-running.md); manifest shape in [templates.md](templates.md) §13). The
+folder name does not change. **The bundle is finished only when this phase completes.**

@@ -1,8 +1,8 @@
 # Output templates
 
 The markdown skeleton for each companion file — eight core files, plus
-`deferred-inputs.md` when the vision parks `BV` items, plus three meta/review files
-(`_status.md`, `decisions.md`, `critic-report.md`). These are *shapes*, not
+`deferred-inputs.md` when the vision parks `BV` items, plus four meta/review files
+(`_status.md`, `decisions.md`, `critic-report.md`, `vision-manifest.md`). These are *shapes*, not
 fill-in forms — adapt headings and prose to the product, but keep the columns, the
 ID schemes, and the cross-links. Every derived claim cites ≥1 `S`/`V`/`UC` (or `BV`).
 
@@ -360,12 +360,12 @@ bundle as a build log.
 - **built-with-hash:** <skill fingerprint, stamped at finalize — see below>
 - **next phase:** <Phase N — name, or "—" when finalized>
 - **blocker:** <— | the hard blocker that halted the run (Phase 0); build stops until resolved>
-- **open low-confidence decisions:** <n — count of unreviewed rows in decisions.md>
+- **open decisions:** <n — count of rows in decisions.md whose Confidence is not confirmed>
 
 ## Phases
 
 `Draft` = artifact written · `Critic` = per-phase critic sub-agent has run and its
-fixes/flags applied (n/a for phases 0, 9, 10).
+fixes/flags applied (n/a for phases 0, 9, 10, 11, 12).
 
 | Phase | Draft | Critic | File(s) written |
 |-------|-------|--------|-----------------|
@@ -379,7 +379,9 @@ fixes/flags applied (n/a for phases 0, 9, 10).
 | 7 UC index | open | open | — |
 | 8 Parking lot | open / n/a | open / n/a | — |
 | 9 README + mechanical gates | open | n/a | README.md |
-| 10 Whole-bundle critic → review → finalize | open | n/a | critic-report.md |
+| 10 Whole-bundle critic | open | n/a | critic-report.md, decisions.md |
+| 11 decisions.md review (human) — all rows have Confidence `confirmed` | open | n/a | decisions.md (+ artifacts the human's calls touch) |
+| 12 Critic reconcile → finalize | open | n/a | critic-report.md, _status.md |
 
 ## Open threads / next question
 
@@ -389,12 +391,14 @@ fixes/flags applied (n/a for phases 0, 9, 10).
 
 - <YYYY-MM-DD> started build.
 - <YYYY-MM-DD> finalized.
-- <YYYY-MM-DD> re-opened for <upgrade to current method | review/iterate>: <what changed>.
+- <YYYY-MM-DD> re-opened for <upgrade to current method | review/iterate | vision-diff (scoped)>: <what changed>.
 ```
 
-Rules: update it at the end of every phase and on pause. Flip `status` to
-`finalized` only at Phase 10. On a confirmed re-run, flip back to `in-progress` and
-append a run-log line stating the reason.
+Rules: update it at the end of every phase and on pause — including after each row
+adjudicated in the Phase 11 review, so it resumes mid-review. Flip `status` to
+`finalized` only at Phase 12 (after every `decisions.md` row has Confidence `confirmed`). On a
+confirmed re-run, flip back to `in-progress` and append a run-log line stating the
+reason and whether it is a review re-run or a from-scratch rebuild.
 
 `built-with-hash` is a fingerprint of the skill's output-shaping files, stamped at
 finalize and re-checked at Phase 0 to detect skill drift — recipe and semantics in
@@ -406,27 +410,39 @@ Re-running in `SKILL.md`.
 
 The concentrated record of every *reading* the builder made, so the human reviews
 the interpretation layer in one place instead of watching every phase. Seeded empty
-in Phase 0; appended to whenever a phase's critic pass leaves a call unsettled. The
-human reads the **low-confidence** rows at Phase 10. A mechanical fact never belongs
+in Phase 0; appended to whenever a phase's critic pass leaves a call unsettled —
+including the Phase 10 whole-bundle critic, which routes its residual human-judgment
+findings here too. This is the **single review surface** the human works through
+**item by item in Phase 11**, confirming each row. A mechanical fact never belongs
 here — only judgment.
 
 ```markdown
 # Decisions & assumptions — <Product> vision companion
 
-Every row is a *reading* of the frozen vision, not a fact in it. `confidence`:
-**low** = the human should look; **med/high** = logged for audit. All cite ≥1 stable ID.
+Every row is a *reading* of the frozen vision, not a fact in it. `Confidence`:
+**low** = the human should look; **medium/high** = logged for audit but still
+unresolved; **confirmed** = the human reviewed this row and accepted the reading
+(as-is, or as edited — the row records what was actually taken). All cite ≥1
+stable ID.
 
-| ID | Phase | Decision (the reading taken) | Alternative rejected | Confidence | Cites | Reviewed |
-|----|-------|------------------------------|----------------------|------------|-------|----------|
-| D1 | 2 | "thread" ≡ "conversation" → one term **Thread** | keep them distinct | low | UC4, UC9 | [ ] |
-| D2 | 4 | UC12 primary = CAP3 | CAP5 primary | low | UC12 | [ ] |
-| D3 | 1 | INV4 "offline-first" is cross-cutting | scope to CAP2 only | med | UC3, UC7, BV2 | [ ] |
-| D4 | 6 | V4 has no realizing UC → flagged unrealized promise | force-fit to UC10 | high | V4 | [ ] |
+| ID | Phase | Decision (the reading taken) | Alternative rejected | Confidence | Cites |
+|----|-------|------------------------------|----------------------|------------|-------|
+| D1 | 2 | "thread" ≡ "conversation" → one term **Thread** | keep them distinct | low | UC4, UC9 |
+| D2 | 4 | UC12 primary = CAP3 | CAP5 primary | low | UC12 |
+| D3 | 1 | INV4 "offline-first" is cross-cutting | scope to CAP2 only | medium | UC3, UC7, BV2 |
+| D4 | 6 | V4 has no realizing UC → flagged unrealized promise | force-fit to UC10 | confirmed | V4 |
 
 ## Notes
 
-- Low-confidence rows are the Phase-10 review surface; check the box when adjudicated.
-- Never resolve a low-confidence row by editing the vision (S6) — fix the derived file.
+- **Phase 11 is the review**: walk every row one at a time; keep exactly one row active
+  and ask exactly one adjudication question. Review unresolved rows in confidence order:
+  all `low` rows first, then `medium`, then `high`; preserve table order within each
+  confidence band. If the human asks a counter-question or gives a partial answer,
+  answer it and return to the same row; do not advance or infer a decision. Set
+  `Confidence` to `confirmed` only once adjudicated. The phase completes only when
+  **no row has `low`, `medium`, or `high` confidence**.
+- Never resolve a row by editing the vision (S6) — fix the derived file; a change that
+  alters the reading is written back into the row before it is confirmed.
 ```
 
 ---
@@ -436,8 +452,10 @@ Every row is a *reading* of the frozen vision, not a fact in it. `confidence`:
 Written in Phase 10 by the **whole-bundle critic sub-agent** (fresh context, the
 frozen vision + the entire finished set, never the builder's reasoning). It catches
 *cross-phase* compounding the per-phase critics couldn't see. Iterated: clear
-findings are fixed and the critic re-spawned until clean or the cap (default 3). What
-remains is the human's to adjudicate alongside `decisions.md`.
+findings are fixed and the critic re-spawned until clean or the cap (default 3). Its
+residual human-judgment findings are also routed into `decisions.md` for the Phase 11
+review, then **re-run in Phase 12** to update this report against the confirmed state
+(each finding's disposition reconciled) before the bundle finalizes.
 
 ```markdown
 # Critic report — <Product> vision companion
@@ -466,3 +484,33 @@ remains is the human's to adjudicate alongside `decisions.md`.
 
 - <the F# rows marked "open — human", one line each — this is half the Phase-10 review surface>
 ```
+
+---
+
+## 13. `vision-manifest.md` — per-ID vision fingerprint (meta, written at finalize)
+
+A per-ID fingerprint of the frozen vision, written at Phase 12 alongside the
+`built-with-hash` stamp. Its sole job is to let the *next* re-run diff **which** vision
+items changed (not merely *that* the file changed) so the run can scope itself to the
+changed IDs' closure rather than re-deriving all of them — see Re-running in `SKILL.md`.
+One row per stable ID; the hash is over that ID's source block in the vision.
+
+```markdown
+# Vision manifest — <Product> vision companion
+
+- **vision:** [<product-slug>-foundation-vision.md](../<product-slug>-foundation-vision.md)
+- **built:** <YYYY-MM-DD> (regenerated at every finalize, incl. re-runs)
+
+| ID | Hash |
+|----|------|
+| S1 | <hash> |
+| V1 | <hash> |
+| UC1 | <hash> |
+| … | … |
+| BV1 | <hash> |
+```
+
+Rules: cover **every** `S`/`V`/`UC`/`BV` ID in the vision — a missing ID would read as a
+removal on the next diff. Regenerate the whole file at each finalize so it always matches
+the vision the bundle was last reconciled against. Never edit the vision to make hashes
+line up (S6).
