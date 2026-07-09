@@ -1,255 +1,47 @@
-# Phase rubrics — builder brief + critic checklist
+# Rubric contract
 
-The per-phase brief the orchestrator points sub-agents at, so no sub-agent ever
-loads `SKILL.md`. Each phase (1–8) is the same two-sub-agent loop; this file gives
-each pass its own targeted checklist instead of a flat, whole-skill gate list.
+This is the shared contract for all phase rubric files. It is intentionally small: load it with the phase-specific rubric file, then use only the section for the phase being run.
 
-**How to use.**
+Phase-specific rubrics:
 
-- **Builder sub-agent** for Phase *N* loads: the frozen vision · this file's **§ Phase N**
-  · the strategy it names in [strategies.md](strategies.md) · its template section in
-  [templates.md](templates.md) · the already-finalized prior-phase files. It drafts to disk
-  and returns a short summary.
-- **Critic sub-agent** for Phase *N* loads: the frozen vision · the drafted artifact · the
-  prior-phase artifacts · this file's **§ Phase N critic checks**. It never sees the builder's
-  reasoning. It auto-fixes clear defects in place, logs unresolved residuals to
-  `decisions.md` with a confidence tag, and returns a short summary.
+- Phases 1-8: [rubrics-1-8.md](rubrics-1-8.md)
+- Phases 9-12: [rubrics-9-12.md](rubrics-9-12.md)
 
-Gates are of two kinds (unchanged from the skill's contract): **mechanical** gates are
-decidable by inspection — the Phase 9 builder runs the full set unattended, and each producing
-phase pre-checks the ones it can; **judgment** gates are *readings* a critic audits, residuals
-routed to `decisions.md` for the human's single end review (Phase 11), with the critic's own
-findings also recorded in `critic-report.md`. Don't ask the human to verify a mechanical gate;
-don't let a builder self-certify a judgment gate.
+No sub-agent loads `SKILL.md`. The orchestrator briefs sub-agents with the relevant rubric file, strategy section, template section, and artifact paths.
 
----
+## Sub-agent use
 
-## Phase 1 — `invariants.md` (S1)
+For a producing phase, the builder sub-agent loads:
 
-**Builder reads:** strategies §S1 · templates §2 · vision (incl. any `BV`). No prior files.
-**Derive:** sweep every UC; collect the cross-cutting constraints restated across many; dedupe
-into `INV1…` with statement, what-it-means-for-the-build, and representative asserting UCs. Fold
-any cross-cutting `BV` constraint (offline, data-on-device, scale) into `INV…` cited by `BV` ID
-(S8). State each as tech-free business policy.
+- the frozen vision
+- this file
+- the phase section in `rubrics-1-8.md` or `rubrics-9-12.md`
+- the strategy section named by that phase
+- the matching template section
+- already-finalized prior-phase files
 
-**Critic checks (judgment → `decisions.md`):**
-- The invariant *set* is defensible against the vision — each `INV` is genuinely cross-cutting
-  (touches many UCs), not a single-UC rule promoted by mistake.
-- Each `INV` is stated tech-free — no framework/storage/transport commitment (altitude).
+It drafts to disk and returns only a short summary.
 
-**Pre-check (mechanical, re-run in Phase 9):** every `INV` will be citable by ≥1 UC; no `INV`
-restated verbatim in a later normalized line or capability description (reference by `INV` id).
+For a critic phase, the critic sub-agent loads:
 
-## Phase 2 — `glossary.md` (S3)
+- the frozen vision
+- this file
+- the drafted artifact or finished bundle
+- the prior-phase artifacts needed by the phase
+- the phase's critic/checklist section in `rubrics-1-8.md` or `rubrics-9-12.md`
 
-**Builder reads:** strategies §S3 · templates §3 · vision · optional sibling
-`<product-slug>-term-sightings.md` if present (**hint only, not source of truth**) ·
-the project's `CONTEXT.md` ubiquitous-language convention if one exists · `invariants.md`.
-**Derive:** one canonical term per concept; list the vision synonyms each absorbs. Sweep the
-*whole* vision — including `## Vision scope` and `## Vision points`, which often name the
-product's reason-for-being most sharply. Use term sightings only to focus review on likely
-splits/merges; accept a sighting only if the frozen vision itself supports it.
+It never sees the builder's reasoning. It auto-fixes clear defects in place, logs unresolved residuals to `decisions.md` with a confidence tag, and returns only a short summary.
 
-**Critic checks (judgment → `decisions.md`):**
-- **Single language** — every concept has exactly one canonical term; known synonyms mapped to
-  it; none wrongly split (one concept forced into two terms) or merged (two concepts collapsed).
-- Any term-sightings sidecar was treated as a hint, not evidence: no canonical term, synonym, or
-  definition rests on the sidecar alone.
-- The vision's scope-ladder structural terms — *scope item, anchor, horizon, sibling vision* —
-  are kept **out** of the product glossary (they describe the vision's boundary, not the domain;
-  they live in `vision-index.md`'s header).
+## Gate types
 
-## Phase 3 — `actors.md` (S2)
+Mechanical gates are decidable by inspection. They run unattended. A green pass needs no human; an unambiguous failure is auto-fixed in place; a structurally unmeetable mechanical gate is a hard blocker and must halt the run.
 
-**Builder reads:** strategies §S2 · templates §4 · vision.
-**Derive:** distinct *relationships to the product* (which drive tenancy/permissions) as actor
-codes; personas (UX flavours) listed separately.
+Judgment gates are readings of the vision. A critic audits them adversarially. Residual judgment calls are logged to `decisions.md` for the single human review in Phase 11. Do not ask the human to verify a mechanical gate, and do not let a builder self-certify a judgment gate.
 
-**Critic checks (judgment → `decisions.md`):**
-- Actor types are genuine relationship/permission boundaries, not personas in disguise.
-- Personas are UX flavours only — no architecture or permission logic smuggled in (altitude).
+## Decision rows
 
-## Phase 4 — `capability-map.md` (S2)
+Each unresolved judgment row in `decisions.md` uses `Confidence` of `low`, `medium`, or `high`. `confirmed` in the Confidence column is the resolved marker: the human has reviewed the row and accepted the reading as-is or as edited.
 
-**Builder reads:** strategies §S2 · templates §5 · vision · `glossary.md` · `actors.md` ·
-`invariants.md`.
-**Derive:** cluster the flat UCs into `CAP1…`; each UC gets **one primary** capability (note
-secondaries for the index). Per capability: intent, member UCs, key entities (glossary terms),
-leaned-on invariants. Flag UCs that resist clustering — a gap-check on the vision.
-**Cross-phase:** the per-capability `Serves: V#` line is **back-filled in Phase 6**; leave a
-placeholder.
+Rows are not resolved silently. If a human-directed change affects companion artifacts, a sub-agent applies it. The orchestrator does not edit artifacts itself during review.
 
-**Critic checks (judgment → `decisions.md`):**
-- **Right readings** — the clusters and the primary/secondary assignments are defensible against
-  the vision; unresolved ones logged, not silently settled.
-- Every UC has exactly one primary capability; unclusterable UCs are flagged (not force-fit).
-- No tactical patterns / tech in capability intent (altitude).
-
-## Phase 5 — `subdomains-and-context-map.md` (S7)
-
-**Builder reads:** strategies §S7 · templates §6 · vision · `capability-map.md`.
-**Derive:** tag each capability **Core / Supporting / Generic** with rationale (a derived
-attention/investment ordering — *not* MVP scoping). Name the DDD relationship at each
-actor/external boundary from the fixed vocabulary — Partnership, Shared Kernel,
-Customer/Supplier, Conformist, ACL, Open Host, Published Language, Separate Ways — with who owns
-the language and whether translation is needed. Every row cites UC IDs.
-
-**Critic checks (judgment → `decisions.md`):**
-- **Right readings** — the Core/Supporting/Generic tags and the context-map relationships are
-  defensible against the vision.
-- **Altitude held (sharpest here)** — strategic design only; **no** tactical patterns
-  (Aggregates, Entities, ports/adapters, consistency models), no tech/platform.
-- Rationale reads as attention/investment ordering, never an MVP cut or phasing.
-
-**Pre-check (mechanical):** every row cites ≥1 UC.
-
-## Phase 6 — `vision-index.md` (S9)
-
-**Builder reads:** strategies §S9 · templates §8 · vision · `capability-map.md`.
-**Derive:** record the scope ladder (`S1…Sn`, anchor marked; the **horizon** noted as a
-generalization one-way door that *cross-references* `<slug>-architecture-lens.md`, not
-re-derived); map every `V#` → scope · realizing UCs · primary capability · coverage flag. Then
-**back-fill** the `Serves: V#` line into `capability-map.md`. Fix each UC's **native rung** `S#`
-(the lowest `S#` among the vision points it realizes) — Phase 7 carries it into the index.
-
-**Critic checks (judgment → `decisions.md`):**
-- **Promises reconciled, not edited** — flag every **unrealized promise** (`V#` no UC delivers)
-  and every **unpromised capability** (`CAP` no `V#` names); the fix is always the human's, never
-  a silent edit of the vision (S6).
-- The horizon **cites** the `<slug>-architecture-lens.md` sibling and does not re-derive its
-  axes (altitude).
-- The scope ladder is read as a **boundary/altitude** axis — never a priority or phasing order.
-
-**Pre-check (mechanical):** the `Serves: V#` back-fill is actually written into
-`capability-map.md`; every `V#` maps to its `S#`; every `S#` is on the ladder.
-
-## Phase 7 — `uc-index.md` (S4)
-
-**Builder reads:** strategies §S4 · templates §7 · vision · **all** prior artifacts.
-**Derive:** one row per UC: id · source-line link · scope (`S#`, from Phase 6) · actor(s) ·
-primary CAP · secondaries · INVs · normalized one-liner. This is the spine — it must reconcile
-every prior file. The *only* legitimate compression is the normalized one-liner, and only by
-factoring repeated invariant boilerplate out to `INV` references.
-
-**Critic checks (judgment → `decisions.md`):**
-- **No meaning drift** — each normalized one-liner still means what its source UC sentence means.
-
-**Pre-check (mechanical, re-run in Phase 9):** 100% of UCs present, each with ≥1 capability and
-≥1 actor, zero orphans; pick any UC and trace it forward and back (bidirectional links resolve).
-
-## Phase 8 — `deferred-inputs.md` (S8)
-
-**Builder reads:** strategies §S8 · templates §9 · vision (`BV` items) · `invariants.md`.
-**Skip entirely if the vision parks no `BV` items.**
-**Derive:** cross-cutting `BV` constraints already went to `invariants.md` in Phase 1; route
-every remaining `BV` item here, tagged with the phase that consumes it (architecture / design /
-scoping). Preserve and route — do **not** design from them or promote them into the capability
-map.
-
-**Critic checks (judgment → `decisions.md`):**
-- No `BV` item is promoted into a capability or designed from (altitude fence).
-
-**Pre-check (mechanical):** every `BV` item lands in exactly one home — an `INV` or one
-`deferred-inputs.md` entry tagged with its consuming phase. Zero parked orphans, nothing dropped.
-
----
-
-## Phase 9 — `README.md` + full mechanical gate sweep
-
-**Builder reads:** templates §1 · the whole finished set.
-**Derive:** write `README.md` — the map + per-task load order + the vision-wins rule,
-acknowledging the `<slug>-architecture-lens.md` sibling. Then run the **full mechanical
-checklist below, unattended**. A green pass needs no human. An unambiguous failure is auto-fixed
-in place. A *structurally* unmeetable gate is a hard blocker → halt and surface (Phase 0). Return
-a short pass/fail summary; the orchestrator only updates `_status.md`.
-
-**Mechanical gates (complete set — run every one):**
-- **Vision unchanged** — byte-identical source; the bundle only added files.
-- **Total coverage** — 100% of UCs in `uc-index.md`, each with ≥1 capability and ≥1 actor. Zero
-  orphans.
-- **Parked items routed** — every `BV` item lands in exactly one home: an `INV` (cross-cutting)
-  or a `deferred-inputs.md` entry tagged with its consuming phase. Zero parked orphans.
-- **Every `V#` and `S#` present** — every `V#` maps to its `S#` and ≥1 realizing UC *or* a
-  flagged coverage gap; every `S#` rung is on the ladder with the anchor marked and the horizon
-  recorded; the horizon cites `<slug>-architecture-lens.md` (not re-derived).
-- **Invariants cited** — every `INV` cited by ≥1 UC; no invariant restated verbatim in a
-  normalized line or capability description (referenced by `INV` id instead).
-- **Bidirectional links resolve** — pick any UC and trace it forward and back.
-
-**Critic check (judgment → `decisions.md`):**
-- **Independently loadable** — each doc makes sense loaded alone with the glossary + invariants.
-
----
-
-## Phase 10 — whole-bundle critic (cross-phase)
-
-**Reads:** the frozen vision · the entire finished set. Writes `critic-report.md` and applies
-its own clear fixes in place. Iterate (default cap 3 passes) until clean; unresolved items stay
-in `critic-report.md`. Catches *cross-phase* compounding the per-phase critics could not see.
-**Every residual human-judgment finding is also appended to `decisions.md`** (unconfirmed, with a
-confidence tag and cites), so Phase 11 reviews one unified surface. **Does not finalize.**
-
-**Bundle-wide judgment checks:**
-- **Cross-phase compounding** — a reading settled in one phase that mis-propagates into a later
-  one (e.g. a glossary term collapsed in Phase 2 that mis-clusters capabilities in Phase 4).
-- **Single language across the whole bundle** — the glossary's canonical terms are used
-  consistently in every file; no synonym re-introduced downstream.
-- **Altitude held everywhere** — no tactical pattern, tech/platform choice, or MVP/phasing
-  leaked into *any* file.
-- **Promises reconciled, not edited** — unrealized-promise / unpromised-capability flags are
-  surfaced across the set, never reconciled by touching the vision.
-- **Independently loadable** — each doc still stands alone with glossary + invariants.
-
----
-
-## Phase 11 — item-by-item `decisions.md` review (human gate)
-
-*The single human-in-the-loop gate; not a sub-agent pass — the orchestrator runs it directly with
-the human.* Every earlier phase's residual readings (per-phase critics **and** the Phase 10
-whole-bundle critic) are now collected as rows in `decisions.md`. Walk them **one row at a time**.
-
-**For each row, present:** the reading taken · the alternative rejected · confidence · cites
-(`UC`/`V`/`S`/`INV`/`BV`), then take the human's adjudication. Do **not** batch rows.
-There is exactly one active row and exactly one adjudication prompt at a time.
-Review unresolved rows in confidence order: all `low` rows first, then `medium`, then `high`.
-Within each confidence band, preserve the row order already present in `decisions.md`.
-
-- If the human **accepts** the reading as-is → set the row's **Confidence** to **`confirmed`**.
-- If the human **changes** it (a cut, merge, reword, re-cluster, re-tag) → **spawn an edit
-  sub-agent** to apply the change to the affected companion artifact(s); the orchestrator does not
-  edit artifacts itself. Update the row to record the reading actually taken, then set its
-  **Confidence** to **`confirmed`**.
-- If the human asks a **counter-question**, asks for more context, challenges the framing, or gives
-  a partial answer → answer the question, then re-present the **same row** for adjudication. Do not
-  mark the row confirmed, spawn edits, ask about another row, or treat the counter-question as an
-  adjudication.
-- Never resolve a row by editing the **vision** (S6) — fix the derived file.
-
-**Exit gate (mechanical):** **every row in `decisions.md` has `Confidence = confirmed`** — zero rows left
-with `low` / `medium` / `high` confidence. Update `_status.md` after each adjudication (the open-decisions count and the next
-unreviewed row) so the review resumes cleanly across sittings.
-
----
-
-## Phase 12 — critic reconcile → finalize
-
-**Reads:** the frozen vision · the entire set as left by Phase 11 (all decisions `confirmed`).
-Re-spawn the **whole-bundle critic** (fresh sub-agent) to **update `critic-report.md`** so it
-reflects the Phase 11 changes — the confirmed `decisions.md` rows and any artifact edits they
-triggered — and to reconcile any companion files those edits touched. It applies its own clear
-fixes in place.
-
-**Checks:**
-- **`critic-report.md` reflects the confirmed state** — each prior finding shows its disposition
-  (fixed / accepted-by-human / superseded); no finding still points at a since-edited artifact.
-- **No new unconfirmed reading is left dangling** — if this pass surfaces a *new* human-judgment
-  residual, append it to `decisions.md` (unconfirmed) and **loop back to Phase 11** for that row
-  before finalizing; do not confirm it on the human's behalf.
-- **Mechanical gates still green** (Phase 9 set) after the Phase 11 edits — coverage, bidirectional
-  links, INV-cited, parked-items routed, every `V#`/`S#` present, vision byte-unchanged.
-
-**Finalize (only here):** flip `_status.md` to `finalized`, record the date (and, if a re-run,
-what this pass changed), stamp `built-with-hash`, and **(re)write `vision-manifest.md`** — the
-per-ID fingerprint of the frozen vision that lets the next re-run diff which items changed and scope
-itself (both recipes in [re-running.md](re-running.md); manifest shape in [templates.md](templates.md) §13). The
-folder name does not change. **The bundle is finished only when this phase completes.**
+Never resolve a decision by editing the frozen vision. If a derived file disagrees with the vision, the derived file changes.
