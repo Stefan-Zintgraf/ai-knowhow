@@ -23,6 +23,12 @@ a short pass/fail summary; the orchestrator only updates `_status.md`.
 - **Every `V#` and `S#` present** - every `V#` maps to its `S#` and >=1 realizing UC *or* a
   flagged coverage gap; every `S#` rung is on the ladder with the anchor marked and the horizon
   recorded; the horizon cites `<slug>-architecture-lens.md` (not re-derived).
+- **Promise coverage** - every `UC#` is in exactly one state: either it realizes >=1 `V#`, is
+  absent from `Unpromised UCs`, and has a non-`-` scope; or it realizes no `V#`, appears exactly
+  once under `Unpromised UCs`, and has `Scope = -`. Every unpromised-UC entry has a filled
+  `Reason no V# fits`; the Core-gate always requires a `decisions.md` row when its primary CAP
+  is Core, while a Supporting/Generic entry may have one when the Phase 6 critic escalated a
+  doubtful reason. No `Unpromised UCs` row cites a nonexistent UC or CAP.
 - **Invariants cited** - every `INV` cited by >=1 UC; no invariant restated verbatim in a
   normalized line or capability description (referenced by `INV` id instead).
 - **Bidirectional links resolve** - pick any UC and trace it forward and back.
@@ -47,8 +53,8 @@ confidence tag and cites), so Phase 11 reviews one unified surface. **Does not f
   consistently in every file; no synonym re-introduced downstream.
 - **Altitude held everywhere** - no tactical pattern, tech/platform choice, or MVP/phasing
   leaked into *any* file.
-- **Promises reconciled, not edited** - unrealized-promise / unpromised-capability flags are
-  surfaced across the set, never reconciled by touching the vision.
+- **Promises reconciled, not edited** - the three coverage signals (S9) are surfaced across
+  the set, never reconciled by touching the vision.
 - **Independently loadable** - each doc still stands alone with glossary + invariants.
 
 ---
@@ -96,12 +102,14 @@ fixes in place.
 - **No new unconfirmed reading is left dangling** - if this pass surfaces a *new* human-judgment
   residual, append it to `decisions.md` (unconfirmed) and **loop back to Phase 11** for that row
   before finalizing; do not confirm it on the human's behalf.
-- **Mechanical gates still green** (Phase 9 set) after the Phase 11 edits - coverage, bidirectional
-  links, INV-cited, parked-items routed, every `V#`/`S#` present, vision byte-unchanged.
+- **Mechanical gates still green** (Phase 9 set) after the Phase 11 edits - coverage, promise
+  coverage, bidirectional links, INV-cited, parked-items routed, every `V#`/`S#` present, vision
+  byte-unchanged. (Re-running the Core-gate here catches the flip case: a capability re-tagged
+  Supporting -> Core in Phase 11 makes its unpromised UCs fail the gate, gain their rows, and
+  loop back to Phase 11 via the no-dangling-reading check.)
 
 **Finalize (only here):** flip `_status.md` to `finalized`, record the date (and, if a re-run,
 what this pass changed), stamp `built-with-hash`, and **(re)write `vision-manifest.md`** - the
 per-ID fingerprint of the frozen vision that lets the next re-run diff which items changed and scope
 itself (both recipes in [re-running.md](re-running.md); manifest shape in [templates.md](templates.md) section 13). The
 folder name does not change. **The bundle is finished only when this phase completes.**
-

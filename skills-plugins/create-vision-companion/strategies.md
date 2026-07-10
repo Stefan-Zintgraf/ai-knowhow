@@ -147,10 +147,17 @@ in a single `vision-index.md`:
    sibling artifact (see the lens note below). The ladder is a **boundary/altitude** axis,
    **never** a priority or phasing order (section 2a).
 2. **Vision-point traceability.** Map each `V#` -> its scope item - the UCs that realize it  - 
-   its primary capability - a coverage flag. A vision point that maps to **no** UC is an
-   **unrealized promise**; a capability that serves **no** vision point is candidate
-   **gold-plating** - both are free consistency checks on the vision, flagged for the human,
-   never silently "fixed" by editing the vision (S6).
+   its primary capability - a coverage flag. The `V# <-> UC#/CAP#` relation reads both ways,
+   yielding the three **coverage signals**: an **unrealized promise** (a `V#` no UC realizes),
+   an **unpromised capability** (a `CAP#` no `V#` names - candidate gold-plating), and an
+   **unpromised UC** (a `UC#` that realizes no `V#`). All three are free consistency checks on
+   the vision, surfaced for human review, never silently "fixed" by editing the vision (S6).
+   An unpromised UC additionally carries `Scope = -` in the UC index (S4) and a row in
+   `vision-index.md`'s `Unpromised UCs` section. The **Core-gate** always requires a
+   `decisions.md` row when its primary capability is tagged Core (S7). Supporting/Generic
+   work is definitionally not expected to carry press-release promises, so its recorded
+   `Reason no V# fits` is normally the whole record; the Phase 6 critic escalates doubtful
+   reasons to `decisions.md`.
 
 Cross-wire the rest of the bundle so the layer isn't siloed: the UC index (S4) carries the
 `S#` native rung each UC inherits (the lowest `S#` among the vision points it realizes); the
@@ -203,9 +210,13 @@ Flag these as judgment calls in the output so the human can overrule:
 - **Refusing to compress the emotional vision** is deliberate; terser specs are more
   conventional but lose the global-context insurance.
 - **The exact bundle shape** (which files, the README load-order) is assembled judgment.
-- **Vision-point -> UC mappings and the coverage flags** (an *unrealized promise*, a
-  *gold-plated capability*) are a reading of the vision; surface them for the human - the fix
-  is always the human's call, never a silent bundle edit (S6, S9).
+- **Vision-point -> UC mappings and the three coverage signals (S9)** are a reading of the
+  vision; surface them for the human - the fix is always the human's call, never a silent
+  bundle edit (S6, S9). When an unpromised UC reaches Phase 11 through the Core-gate or a
+  critic escalation, it resolves to one of: a missing promise (candidate `V#` in a future
+  vision revision), supporting/generic work (fine as-is), or out-of-scope (candidate
+  parking-lot move in a future vision revision). Record the outcome in its decisions row;
+  never silently convert it to `BV#` (the frozen vision owns `BV` IDs).
 
 ---
 

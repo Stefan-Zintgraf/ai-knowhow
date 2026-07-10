@@ -97,9 +97,10 @@ matches); do not pick for the user:
     sub-agents with *only* that scope, leaving untouched artifacts as they are:
     - a **modified/added `UC`** -> its `uc-index.md` row, the `capability-map.md` cluster it sits in
       (re-open the cluster's siblings, since one UC can re-shape a boundary), the `V#` coverage flag
-      it realizes in `vision-index.md`, and - only if it introduces or drops one - an actor
+      it realizes (or its `Unpromised UCs` row) in `vision-index.md`, and - only if it introduces or drops one - an actor
       (`actors.md`), term (`glossary.md`), or cross-cutting constraint (`invariants.md`);
-    - a **removed `UC`** -> drop its row and re-check its old cluster/`V#` for a new orphan or gap;
+    - a **removed `UC`** -> drop its row and re-check its old cluster/`V#` and any
+      `Unpromised UCs` row for a new orphan or gap;
     - a **changed `V#`/`S#`** -> the `vision-index.md` spine rows it anchors and any UC whose native
       rung moves; a **changed `BV`** -> `deferred-inputs.md` (or `invariants.md` if cross-cutting).
 

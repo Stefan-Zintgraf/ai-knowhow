@@ -241,7 +241,7 @@ references; read the cited source line for the full original.
 
 - **Actor** -> [actors.md](actors.md) - **CAP** -> [capability-map.md](capability-map.md) - **INV** -> [invariants.md](invariants.md) - **Scope** -> [vision-index.md](vision-index.md)
 - **Src** links the UC's line in the vision. Coverage: all <n> UCs present, each with a primary capability and an actor.
-- **Scope** is the UC's *native rung* - the lowest scope item (`S#`) among the vision points it realizes; ` - ` if it realizes none (flag such a UC in vision-index.md).
+- **Scope** is the UC's *native rung* - the lowest scope item (`S#`) among the vision points it realizes; `-` if it realizes none - valid only when the same UC appears under `Unpromised UCs` in [vision-index.md](vision-index.md).
 
 | UC | Src | Scope | Actor | Primary | Also | INV | Normalized intent |
 |----|-----|-------|-------|---------|------|-----|-------------------|
@@ -299,10 +299,23 @@ it, its primary capability, and a coverage check.
 | V1 | S1 | <terse promise> | UC<n>... | CAP<n> | ok |
 | V<n> | S<n> | <...> | - | - | WARNING unrealized - flag |
 
+## Unpromised UCs
+
+Use-cases realizing no press-release vision point - preserved, not force-fit.
+Each keeps `Scope = -` in [uc-index.md](uc-index.md). Those in a **Core**
+capability always carry a `decisions.md` row for the Phase 11 review. For
+Supporting/Generic ones the `Reason no V# fits` column is normally the whole
+record; the Phase 6 critic escalates doubtful reasons to `decisions.md`.
+
+| UC | Primary CAP | Reason no V# fits |
+|----|-------------|-------------------|
+| UC<n> | CAP<n> | <short reading> |
+
 ## Notes / judgment calls
 
-- **Unrealized promises** (a `V#` no UC delivers) and **unpromised capabilities** (a
-  `CAP` no `V#` names) are surfaced here for the human - never silently reconciled by
+- The three **coverage signals** (S9) - an **unrealized promise** (a `V#` no UC delivers),
+  an **unpromised capability** (a `CAP` no `V#` names), an **unpromised UC** (a `UC#`
+  realizing no `V#`) - are surfaced here for the human - never silently reconciled by
   editing the vision (S6).
 ```
 
@@ -431,6 +444,7 @@ stable ID.
 | D2 | 4 | UC12 primary = CAP3 | CAP5 primary | low | UC12 |
 | D3 | 1 | INV4 "offline-first" is cross-cutting | scope to CAP2 only | medium | UC3, UC7, BV2 |
 | D4 | 6 | V4 has no realizing UC -> flagged unrealized promise | force-fit to UC10 | confirmed | V4 |
+| D5 | 6 | UC17 (in Core CAP4) realizes no V# -> unpromised UC | force-fit to V3 | low | UC17, CAP4 |
 
 ## Notes
 
@@ -478,7 +492,7 @@ review, then **re-run in Phase 12** to update this report against the confirmed 
 - **Meaning drift:** each normalized line still means its source sentence. yes/no
 - **Language:** no glossary term split or merged wrongly across files. yes/no
 - **Altitude:** no tactical/tech/MVP leak in any file. yes/no
-- **Promises:** unrealized-promise / unpromised-capability flags present, not reconciled by editing the vision. yes/no
+- **Promises:** unrealized-promise / unpromised-UC / unpromised-capability flags present, not reconciled by editing the vision. yes/no
 
 ## Residuals for the human
 

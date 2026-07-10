@@ -51,33 +51,51 @@ Mapping) — it is *this bundle's* job, not the tactical/architecture phase's. O
 
 ## How to fix
 
-### Fix 1 — enforce exactly one relationship pattern per boundary
-- **`strategies.md` S7 part 2:** state that each boundary gets **exactly one** pattern from the
-  fixed vocabulary (they are mutually exclusive), and add the decision rule:
-  > *Any boundary where the foreign payload is wrapped/translated into our own model = **ACL**.
-  > A boundary where we genuinely adopt the upstream model with no translation = **Conformist**.
-  > Choosing the relationship is a strategic decision made here; only its implementation is
-  > deferred to the architecture phase.*
-  A composite boundary that genuinely differs by direction may name **read vs write separately**
-  (e.g. "ACL to read; Customer/Supplier to write") — that is two boundaries, not one hybrid tag.
-- **`templates.md` Context-map section (line ~221):** change the example cell from
-  `Conformist / ACL` to a single value (e.g. `ACL`) and add a note: "one pattern per row; no
-  `X + Y` hybrids."
+Leading word for all three sites: the relationship vocabulary is an **enum** — a closed set,
+exactly one value per boundary. One token carries "mutually exclusive, no hybrids, no free-form
+labels" everywhere it appears.
 
-### Fix 2 — add a Phase 5 critic gate
-- **`rubrics-1-8.md` Phase 5 critic checks:** add a gate, e.g.
-  > *Each context-map boundary carries **exactly one** relationship pattern from the fixed
-  > vocabulary. Reject any contradictory/hybrid label (e.g. `Conformist + ACL`) — resolve it to
-  > the single correct pattern via the S7 decision rule and log the call to `decisions.md`.*
+### Fix 1 — `strategies.md` S7 part 2: the enum rule + decision rule (single source of truth)
+State that the vocabulary is an **enum**: each boundary takes exactly one value (the patterns
+are mutually exclusive responses to a boundary), and add the decision rule:
+> *Any boundary where the foreign payload is wrapped/translated into our own model = **ACL**.
+> A boundary where we genuinely adopt the upstream model with no translation = **Conformist**.
+> Choosing the relationship is a strategic decision made here; only its implementation is
+> deferred to the architecture phase.*
 
-### Fix 3 — require a pattern legend (independently-loadable)
-- **`templates.md` Context-map section:** require the output file to include a one-line-per-
-  pattern **legend** defining each DDD relationship pattern it uses, so the file stands alone.
-- Optionally add a matching bullet to the Phase 5 / Phase 9 "independently loadable" checks.
+A boundary that genuinely differs by direction is **two rows** (e.g. "ACL to read;
+Customer/Supplier to write"), never one hybrid tag. The rule lives **only here**; the template
+and rubric conform to it or point at it — they do not restate it.
+
+### Fix 2 — `templates.md` section 6: conforming example + shipped legend
+- Change the example cell (line ~221) from `Conformist / ACL` to a single value (`ACL`).
+  No accompanying rule text — the rule is Fix 1's; a corrected example plus the enum
+  pre-check (Fix 3) covers the template's share.
+- Add a **Legend** block to the skeleton with the eight one-line pattern definitions
+  **pre-written verbatim** (builder deletes unused rows, or keeps all eight). Shipping the
+  text instead of requiring the builder to write it removes generation variance, makes the
+  file independently loadable, and puts the Conformist/ACL one-liners — which encode the
+  decision rule — at the point of use. (Method vocabulary, so it stays out of `glossary.md`,
+  which holds the *product's* ubiquitous language.)
+
+### Fix 3 — `rubrics-1-8.md` Phase 5: extend the mechanical pre-check (not a new critic gate)
+"Exactly one pattern" is decidable by inspection, so it belongs in the existing
+**Pre-check (mechanical)** line, not a judgment gate. Extend it:
+- every `Relationship` cell is **exactly one enum value** (no `/`, `+`, or free-form text);
+- no row pairs `Conformist` with `Translation needed? = yes` (translation ⟹ ACL, per S7);
+- the legend covers every pattern used.
+
+No new critic gate: whether the single value chosen is *right* is the existing
+**Right readings** gate, now decidable via the S7 rule. When a hybrid is resolved, the
+`decisions.md` row must cite **every** affected boundary, not a subset.
+
+### Non-fix
+The "independently loadable" gate exists only in Phases 9/10 (`rubrics-9-12.md`) — Phase 5 has
+none, and none is needed: the legend lives in the template skeleton (Fix 2) and its presence is
+mechanically pre-checked (Fix 3), so the generic Phase 9/10 gate needs no new bullet.
 
 ## Cross-reference
 
 Surfaced while reviewing **decision row 24** of the `ai-mail-vision-ai-spec` bundle
 (`docs/brainstorming/ai-mail-vision-ai-spec/`). Row 24 only cited 3 of the 6 affected
-boundaries — a reminder that the fix should also make the builder cite **every** affected
-boundary when it logs such a call, not a subset.
+boundaries — the origin of Fix 3's cite-every-boundary clause.
