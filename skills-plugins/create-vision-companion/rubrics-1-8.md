@@ -82,7 +82,11 @@ the language and whether translation is needed. Every row cites UC IDs.
   (Aggregates, Entities, ports/adapters, consistency models), no tech/platform.
 - Rationale reads as attention/investment ordering, never an MVP cut or phasing.
 
-**Pre-check (mechanical):** every row cites >=1 UC.
+**Pre-check (mechanical):** every row cites >=1 UC; every `Relationship` cell is exactly one
+enum value (no `/`, `+`, or free-form text - see S7); no row pairs `Conformist` with
+`Translation needed? = yes` (translation implies ACL, per S7); the legend covers every pattern
+used. When a hybrid is resolved, the `decisions.md` row must cite **every** affected boundary,
+not a subset.
 
 ## Phase 6 - `vision-index.md` (S9)
 

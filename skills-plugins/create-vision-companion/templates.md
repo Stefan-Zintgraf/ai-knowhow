@@ -218,7 +218,22 @@ whether translation is needed.
 | Boundary | Relationship | Who owns the language | Translation needed? | UCs |
 |----------|--------------|-----------------------|---------------------|-----|
 | <e.g. single-user <-> team/manager> | <type> | <which side> | <yes/no + what> | <UC list> |
-| <e.g. product <-> external mail provider> | Conformist / ACL | <side> | <...> | <UCs> |
+| <e.g. product <-> external mail provider> | ACL | <side> | <...> | <UCs> |
+
+### Legend
+
+DDD context-map patterns used above (method vocabulary - stays out of
+`glossary.md`, which holds the *product's* language). Delete unused rows, or
+keep all eight.
+
+- **Partnership** - two contexts succeed or fail together; teams coordinate planning and integration jointly.
+- **Shared Kernel** - two contexts share a small, jointly-owned subset of the model; changes require both teams' agreement.
+- **Customer/Supplier** - upstream plans with downstream's needs on its backlog; downstream has real influence.
+- **Conformist** - downstream adopts the upstream model wholesale, with no translation layer; the foreign model enters our context.
+- **Anticorruption Layer (ACL)** - downstream builds a translation layer so the foreign model does *not* enter our context.
+- **Open Host Service** - upstream exposes a general-purpose protocol/API for many consumers rather than per-consumer integrations.
+- **Published Language** - integration via a well-documented shared interchange language (often paired with Open Host Service).
+- **Separate Ways** - no integration; the contexts solve their needs independently.
 
 ## Notes
 

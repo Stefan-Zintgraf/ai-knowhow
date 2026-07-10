@@ -1,6 +1,6 @@
 # FIX: `subdomains-and-context-map.md` allows contradictory paired context-map labels
 
-**Status:** open — deferred fix (do NOT fix mid-run; captured during a Phase 11 review, 2026-07-09).
+**Status:** fixed 2026-07-10 — all three fixes applied to `strategies.md` (S7 enum + decision rule), `templates.md` (single-value example + shipped legend), `rubrics-1-8.md` (Phase 5 mechanical pre-check extended). (Captured during a Phase 11 review, 2026-07-09.)
 **Affected output file:** `subdomains-and-context-map.md` (the S7 artifact).
 **Severity:** medium — produces a self-contradictory strategic-design tag and an un-loadable file, both survive the per-phase critic today.
 

@@ -106,9 +106,16 @@ altitude only, *not* tactical patterns (see the fence in section 2a):
    judgment; the vision stays priority-free.
 2. **Context-map relationships.** Name the relationship at each actor/external boundary with
    the standard vocabulary - **Partnership, Shared Kernel, Customer/Supplier, Conformist,
-   Anticorruption Layer (ACL), Open Host Service, Published Language, Separate Ways**. Each
-   choice carries explicit ownership and translation duties downstream (e.g. the boundary
-   with an external mail provider -> likely Conformist or ACL).
+   Anticorruption Layer (ACL), Open Host Service, Published Language, Separate Ways**. This
+   vocabulary is an **enum**: each boundary takes exactly one value - the patterns are
+   mutually exclusive responses to a boundary; no hybrids (`Conformist / ACL`), no `+`, no
+   free-form labels. Decision rule: any boundary where the foreign payload is
+   wrapped/translated into our own model = **ACL**; a boundary where we genuinely adopt the
+   upstream model with no translation = **Conformist**. Choosing the relationship is a
+   strategic decision made *here*; only its implementation (adapters/facades/translators) is
+   deferred to the architecture phase. A boundary that genuinely differs by direction is
+   **two rows** (e.g. ACL to read; Customer/Supplier to write), never one hybrid tag. Each
+   choice carries explicit ownership and translation duties downstream.
 
 Output: a short `subdomains-and-context-map.md` - a table (capability -> subdomain class ->
 rationale -> `UC` IDs) plus a context-relationship list (boundary -> relationship -> who owns
