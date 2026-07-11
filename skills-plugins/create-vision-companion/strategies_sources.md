@@ -24,7 +24,7 @@ occurs, and section C lists the web sources.
 
 ## How to read this file
 
-- **Local repo root:** `C:/PROJ/github/pocock/agent-rules-books/` (a separate git repo  - 
+- **Local repo root:** `C:/PROJ/github/agent-rules-books/` (a separate git repo  - 
   the README calls these "AI agent rules / skills distilled from programming books").
   Each book ships three tool-agnostic variants: `....md` (**full**, canonical),
   `....mini.md` (**recommended working version**), `....nano.md` (compact). Citations below
