@@ -75,9 +75,9 @@ Start with users, their environment, and their workflows. Observation, interview
 
 **Reference:** [Design thinking — Wikipedia](https://en.wikipedia.org/wiki/Design_thinking).
 
-**Agent rule sets:** -
+**Agent rule sets:** Design Thinking (Double Diamond) — [`tommyjepsen/awesome-ux-skills`](https://github.com/tommyjepsen/awesome-ux-skills/blob/main/double-diamond.md), a Claude Code skill pack for UX and AI-product design; its `double-diamond.md` skill covers the Discover → Define → Develop → Deliver process with per-phase guidance, deliverables, and pitfalls. The same pack's `ux-research-methods.md`, `empathy-mapping.md`, `ux-personas.md`, and `journey-mapping.md` skills are also relevant to user-centered design generally.
 
-**Books:** -
+**Books:** *The Design of Everyday Things* — Don Norman; *Change by Design* — Tim Brown.
 
 ### 2.2 Jobs to Be Done
 
@@ -87,11 +87,11 @@ Define the progress a user seeks rather than starting from a feature list. This 
 
 **Example:** design invoicing around “get paid promptly without chasing clients.”
 
-**Reference:** -
+**Reference:** [Jobs to Be Done Theory — Christensen Institute](https://www.christenseninstitute.org/theory/jobs-to-be-done/).
 
-**Agent rule sets:** -
+**Agent rule sets:** [`wondelai/skills`](https://github.com/wondelai/skills/tree/main/jobs-to-be-done) includes a dedicated Jobs to Be Done skill covering the three job dimensions, forces of progress, Big/Little Hire, and non-obvious competition (see also [§2.1](#21-user-centered-design-and-design-thinking) and [§4.1](#41-clean-and-hexagonal-architecture) for this pack's other skills).
 
-**Books:** -
+**Books:** *Competing Against Luck* — Clayton M. Christensen, Taddy Hall, Karen Dillon, David S. Duncan.
 
 ### 2.3 Lean Startup
 
@@ -103,9 +103,9 @@ Identify risky assumptions and test them with the smallest useful experiment. Ev
 
 **Reference:** [Lean startup — Wikipedia](https://en.wikipedia.org/wiki/Lean_startup).
 
-**Agent rule sets:** -
+**Agent rule sets:** [`wondelai/skills`](https://github.com/wondelai/skills/tree/main/lean-startup) includes a dedicated Lean Startup skill covering Build-Measure-Learn, MVP types, leap-of-faith assumptions, innovation accounting, and pivot/persevere decisions (same pack as [§2.2](#22-jobs-to-be-done)).
 
-**Books:** -
+**Books:** *The Lean Startup* — Eric Ries.
 
 ### 2.4 Use-case-driven design
 
@@ -119,7 +119,7 @@ Describe the goals of actors and their interactions with the system. Use cases m
 
 **Agent rule sets:** -
 
-**Books:** -
+**Books:** *Object-Oriented Software Engineering: A Use Case Driven Approach* — Ivar Jacobson; *Writing Effective Use Cases* — Alistair Cockburn.
 
 ### 2.5 Requirements engineering
 
@@ -131,9 +131,9 @@ Specify capabilities, constraints, interfaces, and quality attributes. Requireme
 
 **Reference:** [Requirements engineering — Wikipedia](https://en.wikipedia.org/wiki/Requirements_engineering).
 
-**Agent rule sets:** -
+**Agent rule sets:** [`RafaelGorski/Problem-Based-SRS`](https://github.com/RafaelGorski/Problem-Based-SRS), an Agent Skill implementing a peer-reviewed Problem-Based SRS methodology that traces Customer Problems → Customer Needs → Functional/Non-Functional Requirements, aligned with ISO/IEC/IEEE 29148:2018, with a traceability-validation step.
 
-**Books:** -
+**Books:** *Software Requirements* (3rd ed.) — Karl Wiegers, Joy Beatty.
 
 ## 3. Domain and behavioral modeling
 
@@ -169,9 +169,9 @@ Explore a domain or workflow collaboratively by mapping events, commands, polici
 
 **Reference:** [EventStorming — Wikipedia](https://en.wikipedia.org/wiki/Event_storming).
 
-**Agent rule sets:** -
+**Agent rule sets:** [`lagz0ne/design-skill`](https://github.com/lagz0ne/design-skill), a Claude Code plugin implementing a five-phase EventStorming-based design process (Requirements → Big Picture → Processes → Data/Flows → Integration) that produces a navigable `docs/design-catalog/` of Mermaid diagrams.
 
-**Books:** -
+**Books:** *Introducing EventStorming* — Alberto Brandolini.
 
 ### 3.3 Structured analysis and state modeling
 
@@ -181,11 +181,11 @@ Model processes, data flows, state transitions, and functional decomposition. Th
 
 **Example:** model a vending machine through payment, selection, dispensing, refund, and fault states.
 
-**Reference:** -
+**Reference:** [Structured analysis — Wikipedia](https://en.wikipedia.org/wiki/Structured_analysis); [Finite-state machine — Wikipedia](https://en.wikipedia.org/wiki/Finite-state_machine).
 
 **Agent rule sets:** -
 
-**Books:** -
+**Books:** *Structured Analysis and System Specification* — Tom DeMarco; *Practical UML Statecharts in C/C++* — Miro Samek.
 
 ## 4. Architectural styles and boundaries
 
@@ -215,9 +215,9 @@ Organize code around end-to-end capabilities rather than broad technical layers.
 
 **Example:** keep the command, validation, persistence, and endpoint for “cancel booking” together.
 
-**Reference:** -
+**Reference:** [Vertical Slice Architecture — Jimmy Bogard](https://www.jimmybogard.com/vertical-slice-architecture/), the 2018 post that coined and popularized the term. (Wikipedia's "Vertical slice" article covers an unrelated project-management/game-dev concept, not this pattern.)
 
-**Agent rule sets:** [`codewithmukesh/dotnet-claude-kit`](https://github.com/codewithmukesh/dotnet-claude-kit) offers Vertical Slice Architecture as one of four architectures its questionnaire-driven agent can recommend for a .NET project, alongside Clean Architecture, DDD, and Modular Monolith (see [§3.1](#31-domain-driven-design) and [§4.1](#41-clean-and-hexagonal-architecture)).
+**Agent rule sets:** [`codewithmukesh/dotnet-claude-kit`](https://github.com/codewithmukesh/dotnet-claude-kit) offers Vertical Slice Architecture as one of four architectures its questionnaire-driven agent can recommend for a .NET project, alongside Clean Architecture, DDD, and Modular Monolith (see [§3.1](#31-domain-driven-design) and [§4.1](#41-clean-and-hexagonal-architecture)). [`VladislavFurdak/dotnet-architecture-skills`](https://github.com/VladislavFurdak/dotnet-architecture-skills) offers `dotnet-vsa-webapi`, a skill dedicated specifically to Vertical Slice Architecture for ASP.NET Core Minimal APIs (feature-first folders, FluentValidation, Result-based flow), alongside a separate DDD-focused skill in the same repo.
 
 **Books:** -
 
@@ -263,11 +263,11 @@ Place deterministic transformations in a pure core and isolate I/O and other sid
 
 **Example:** calculate prices with pure functions while a shell reads orders and persists results.
 
-**Reference:** -
+**Reference:** [Boundaries — Gary Bernhardt (talk)](https://www.destroyallsoftware.com/talks/boundaries), the talk that popularized the pattern; Bernhardt's own follow-up screencast is titled "Functional Core, Imperative Shell."
 
-**Agent rule sets:** -
+**Agent rule sets:** Functional Core, Imperative Shell — [`NeoLabHQ/context-engineering-kit`](https://github.com/NeoLabHQ/context-engineering-kit/blob/master/plugins/ddd/rules/functional-core-imperative-shell.md), one rule in that repo's `ddd` plugin bundle.
 
-**Books:** -
+**Books:** *Grokking Simplicity* — Eric Normand, whose split of calculations (pure), actions (effects), and data covers the same distinction under different names.
 
 ### 5.3 Data-oriented design
 
@@ -281,7 +281,7 @@ Design around data layout, access patterns, and transformations. Representation 
 
 **Agent rule sets:** -
 
-**Books:** -
+**Books:** *Data-Oriented Design* — Richard Fabian.
 
 ### 5.4 Data-intensive and distributed data design
 
@@ -317,7 +317,7 @@ Prefer explicit composition, middleware, decorators, or higher-order functions w
 
 **Agent rule sets:** -
 
-**Books:** -
+**Books:** *AspectJ in Action* (2nd ed.) — Ramnivas Laddad.
 
 ## 6. API and library design
 
@@ -333,7 +333,7 @@ Design from the consumer’s perspective. Define inputs, outputs, failure behavi
 
 Consumer examples, contract tests, and small coherent interfaces reveal whether an API is understandable. Internal patterns should support the contract rather than leak through it.
 
-**Reference:** -
+**Reference:** [Design-first vs. code-first API development — OpenAPI Initiative](https://learn.openapis.org/introduction.html).
 
 **Agent rule sets:** A Philosophy of Software Design (deep modules, simple interfaces, information hiding) — [local](C:/PROJ/github/agent-rules-books/a-philosophy-of-software-design/) · [GitHub](https://github.com/ciembor/agent-rules-books/tree/main/a-philosophy-of-software-design).
 
@@ -355,9 +355,9 @@ Property-based testing, static analysis, type systems, simulation, and fault inj
 
 **Reference:** [Formal methods — Wikipedia](https://en.wikipedia.org/wiki/Formal_methods).
 
-**Agent rule sets:** -
+**Agent rule sets:** [`apache/cassandra`](https://github.com/apache/cassandra/tree/trunk/.claude/skills/tla-plus) ships a portable TLA+ specification and model-checking skill (write/run TLA+ and PlusCal specs, invoke the TLC model checker, map counterexamples back to code) inside its own `.claude/skills/`, generic enough to reuse outside that project; [`trailofbits/skills`](https://github.com/trailofbits/skills/tree/main/plugins/property-based-testing) offers a property-based-testing plugin (a property catalog — roundtrip, invariant, idempotence, commutativity — plus a decision tree for when to reach for PBT) as an assurance technique alongside formal specification.
 
-**Books:** -
+**Books:** *Specifying Systems* — Leslie Lamport; *Practical TLA+* — Hillel Wayne.
 
 ## 8. Operational and resilience design
 

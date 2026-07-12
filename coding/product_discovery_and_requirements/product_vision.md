@@ -1,0 +1,104 @@
+# Product Vision
+
+**Status:** First draft
+
+A product vision describes the future change the product is intended to create. It aligns discovery without freezing a feature list or prescribing an architecture.
+
+## Questions the vision should answer
+
+- Who experiences the problem or opportunity?
+- In what situation does it arise?
+- What progress should become possible?
+- Why does that change matter to users and to the organization?
+- What makes this product distinct?
+- Which principles must guide trade-offs?
+- What is outside the intended product?
+- What evidence would show that the vision is becoming real?
+
+## Recommended structure
+
+### 1. Context
+
+Describe the present situation and why it deserves attention. Separate observed facts from interpretations and assumptions.
+
+### 2. Actors and beneficiaries
+
+Identify users, customers, operators, administrators, regulators, and affected non-users. Do not collapse people with different goals into a generic “user.”
+
+### 3. Desired change
+
+Describe the improved future from the actor's point of view. Prefer outcomes over solution language.
+
+### 4. Value and differentiation
+
+Explain why the change is valuable and why the proposed product could provide it better than current alternatives, including manual work and doing nothing.
+
+### 5. Product principles
+
+Record durable rules that guide later choices, for example:
+
+- The user remains in control of consequential actions.
+- Every automated decision can be explained and audited.
+- The product should fit the existing workflow before asking users to replace it.
+
+### 6. Scope boundaries
+
+State what the product intends to become, what it will not become, and which adjacent opportunities are explicitly deferred.
+
+### 7. Outcomes and signals
+
+Define outcome measures, guardrail measures, and qualitative signals. Avoid treating shipped features or usage alone as proof of value.
+
+## Lightweight vision template
+
+```markdown
+# <Product> Foundation Vision
+
+## Present situation
+<Who is struggling, in what context, and what evidence do we have?>
+
+## Desired future
+<What becomes easier, safer, faster, or newly possible?>
+
+## Actors
+<Actor — goal — current obstacle>
+
+## Value proposition
+<Why this change matters and why this approach is promising>
+
+## Product principles
+- ...
+
+## In scope
+- ...
+
+## Outside the vision
+- ...
+
+## Outcomes and signals
+- Outcome: ...
+  Signal: ...
+  Guardrail: ...
+
+## Critical assumptions
+- ...
+```
+
+## Ways to develop the vision
+
+- **Vision narrative:** tell a concrete before-and-after story from a user's viewpoint.
+- **Press release:** announce the future product in plain language and explain why it matters.
+- **Jobs to Be Done:** phrase the stable progress sought independently of a particular solution.
+- **Product principles workshop:** turn recurring trade-offs into explicit decision rules.
+- **Premortem:** imagine the product failed and expose assumptions or missing constraints.
+
+## Completion checks
+
+- A reader can explain the intended user change without reciting features.
+- Important actors and conflicting interests are visible.
+- Evidence, assumptions, and aspirations are distinguishable.
+- Principles are specific enough to resolve a real trade-off.
+- Scope exclusions prevent obvious interpretations that would derail discovery.
+- Success signals describe changed outcomes, with guardrails against harmful optimization.
+
+The vision should be stable enough to orient work but revisable when its underlying evidence changes.

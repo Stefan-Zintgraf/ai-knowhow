@@ -12,25 +12,33 @@ Terms used throughout this document are defined in [glossary.md](./glossary.md).
   1. [ciembor/agent-rules-books](#ciembor-agent-rules-books)
   2. [ZLStas/skills](#zlstas-skills)
   3. [addyosmani/agent-skills](#addyosmani-agent-skills)
+- [Product-Discovery / UX-Focused](#product-discovery--ux-focused)
+  4. [tommyjepsen/awesome-ux-skills](#tommyjepsen-awesome-ux-skills)
+- [Requirements-Engineering-Focused](#requirements-engineering-focused)
+  5. [RafaelGorski/Problem-Based-SRS](#rafaelgorski-problem-based-srs)
 - [Domain-Driven Design–Focused](#domain-driven-designfocused)
-  4. [ForceInjection/domain-driven-design-skills](#forceinjection-domain-driven-design-skills)
-  5. [zudochkin/go-clean-ddd-skill](#zudochkin-go-clean-ddd-skill)
+  6. [ForceInjection/domain-driven-design-skills](#forceinjection-domain-driven-design-skills)
+  7. [zudochkin/go-clean-ddd-skill](#zudochkin-go-clean-ddd-skill)
+- [EventStorming-Focused](#eventstorming-focused)
+  8. [lagz0ne/design-skill](#lagz0ne-design-skill)
 - [Clean Architecture–Focused](#clean-architecturefocused)
-  6. [nathankim0/clean-architecture-skills](#nathankim0-clean-architecture-skills)
-  7. [codewithmukesh/dotnet-claude-kit](#codewithmukesh-dotnet-claude-kit)
+  9. [nathankim0/clean-architecture-skills](#nathankim0-clean-architecture-skills)
+  10. [codewithmukesh/dotnet-claude-kit](#codewithmukesh-dotnet-claude-kit)
+  11. [VladislavFurdak/dotnet-architecture-skills](#vladislavfurdak-dotnet-architecture-skills)
 - [Broad / Multi-Framework Collections](#broad--multi-framework-collections)
-  8. [SebastienDegodez/copilot-instructions](#sebastiendegodez-copilot-instructions)
-  9. [wondelai/skills](#wondelai-skills)
-  10. [danmestas/agent-skills](#danmestas-agent-skills)
+  12. [SebastienDegodez/copilot-instructions](#sebastiendegodez-copilot-instructions)
+  13. [wondelai/skills](#wondelai-skills)
+  14. [danmestas/agent-skills](#danmestas-agent-skills)
+  15. [NeoLabHQ/context-engineering-kit](#neolabhq-context-engineering-kit)
 - [Refactoring-Focused](#refactoring-focused)
-  11. [MuhiminOsim/code-refactoring-skill](#muhiminosim-code-refactoring-skill)
+  16. [MuhiminOsim/code-refactoring-skill](#muhiminosim-code-refactoring-skill)
 - [Process / SDLC Tooling](#process--sdlc-tooling)
-  12. [arozumenko/sdlc-skills](#arozumenko-sdlc-skills)
+  17. [arozumenko/sdlc-skills](#arozumenko-sdlc-skills)
 - [Discovery Indexes](#discovery-indexes)
-  13. [VoltAgent/awesome-agent-skills](#voltagent-awesome-agent-skills)
-  14. [kodustech/awesome-agent-skills](#kodustech-awesome-agent-skills)
-  15. [github/awesome-copilot](#github-awesome-copilot)
-  16. [Source Books Referenced](#16-source-books-referenced)
+  18. [VoltAgent/awesome-agent-skills](#voltagent-awesome-agent-skills)
+  19. [kodustech/awesome-agent-skills](#kodustech-awesome-agent-skills)
+  20. [github/awesome-copilot](#github-awesome-copilot)
+  21. [Source Books Referenced](#21-source-books-referenced)
 - [Recommended evaluation order](#recommended-evaluation-order)
 - [Suggested combined setup](#suggested-combined-setup)
 
@@ -112,11 +120,43 @@ Its premise is close to this document's framing of *The Pragmatic Programmer* ru
 
 ---
 
+## Product-Discovery / UX-Focused
+
+<a id="tommyjepsen-awesome-ux-skills"></a>
+
+### 4. `tommyjepsen/awesome-ux-skills`
+
+GitHub:
+https://github.com/tommyjepsen/awesome-ux-skills
+
+A collection of 19 UX and AI-product-design skills for Claude Code, installed via a script into `~/.claude/skills/`. It spans UX research and strategy (research-method selection, personas, empathy maps, journey maps, storyboards, and a Double Diamond design-thinking skill covering Discover → Define → Develop → Deliver), UI analysis and improvement (design review, accessibility/WCAG, Nielsen heuristics, visual-craft rules, cognitive load, feature prioritization), and AI-specific product-design patterns (human-in-the-loop, AI branding, input patterns, trust signals, onboarding). Each skill is a single well-developed file rather than a stub.
+
+This is the first repository in this document's list focused on product discovery and UX rather than code structure — an earlier stage of the [pragmatic sequence for a new product](./software_design.md#11-a-pragmatic-sequence-for-a-new-product) than the DDD, Clean Architecture, and refactoring repositories below.
+
+**Software design methods referenced:** User-centered design and Design Thinking (§2.1) — via its Double Diamond skill — plus broader UX research and product-discovery practice not otherwise covered in this document.
+
+---
+
+## Requirements-Engineering-Focused
+
+<a id="rafaelgorski-problem-based-srs"></a>
+
+### 5. `RafaelGorski/Problem-Based-SRS`
+
+GitHub:
+https://github.com/RafaelGorski/Problem-Based-SRS
+
+An AgentSkill (AgentSkills-standard / Claude Code Plugins format, compatible with Claude Code, Claude.ai, GitHub Copilot, and others) implementing "Problem-Based SRS," a peer-reviewed requirements-engineering methodology that forces every requirement to trace back to a customer problem: Business Context → Customer Problems (classified Obligation/Expectation/Hope) → Customer Needs → Functional Requirements, with a traceability-validation step that checks the chain end-to-end. Requirement-writing guidance aligns with ISO/IEC/IEEE 29148:2018 and RFC 2119/8174 normative keywords.
+
+**Software design methods referenced:** Requirements engineering (§2.5) — problem-to-requirement traceability and functional/non-functional requirement structuring.
+
+---
+
 ## Domain-Driven Design–Focused
 
 <a id="forceinjection-domain-driven-design-skills"></a>
 
-### 4. `ForceInjection/domain-driven-design-skills`
+### 6. `ForceInjection/domain-driven-design-skills`
 
 GitHub:
 https://github.com/ForceInjection/domain-driven-design-skills
@@ -145,7 +185,7 @@ For Domain-Driven Design work, this is one of the most relevant companions to `a
 
 <a id="zudochkin-go-clean-ddd-skill"></a>
 
-### 5. `zudochkin/go-clean-ddd-skill`
+### 7. `zudochkin/go-clean-ddd-skill`
 
 GitHub:
 https://github.com/zudochkin/go-clean-ddd-skill
@@ -166,11 +206,26 @@ The main limitation is that its implementation guidance and templates are Go-spe
 
 ---
 
+## EventStorming-Focused
+
+<a id="lagz0ne-design-skill"></a>
+
+### 8. `lagz0ne/design-skill`
+
+GitHub:
+https://github.com/lagz0ne/design-skill
+
+A Claude Code plugin ("system-design") that walks a request through five progressive-elaboration phases — Requirements, Big Picture (an EventStorming timeline of color-coded events, commands, and actors), Processes (aggregates and policies), Data & Flows (ERDs, state charts, sequence diagrams), and Integration — assembling a navigable `docs/design-catalog/` of Mermaid diagrams. Distinct from the book-distilled and DDD-workflow repositories above in that its organizing technique is EventStorming itself rather than a book or a DDD tactical-pattern checklist.
+
+**Software design methods referenced:** [EventStorming](./software_design.md#32-eventstorming), plus incidental Mermaid-based ERD/state-chart/sequence-diagram output that touches structured analysis and state modeling ([§3.3](./software_design.md#33-structured-analysis-and-state-modeling)).
+
+---
+
 ## Clean Architecture–Focused
 
 <a id="nathankim0-clean-architecture-skills"></a>
 
-### 6. `nathankim0/clean-architecture-skills`
+### 9. `nathankim0/clean-architecture-skills`
 
 GitHub:
 https://github.com/nathankim0/clean-architecture-skills
@@ -194,7 +249,7 @@ This is a good choice when you want actionable architecture and refactoring revi
 
 <a id="codewithmukesh-dotnet-claude-kit"></a>
 
-### 7. `codewithmukesh/dotnet-claude-kit`
+### 10. `codewithmukesh/dotnet-claude-kit`
 
 GitHub:
 https://github.com/codewithmukesh/dotnet-claude-kit
@@ -214,11 +269,24 @@ A useful aspect is that its architecture guidance explicitly discourages applyin
 
 ---
 
+<a id="vladislavfurdak-dotnet-architecture-skills"></a>
+
+### 11. `VladislavFurdak/dotnet-architecture-skills`
+
+GitHub:
+https://github.com/VladislavFurdak/dotnet-architecture-skills
+
+Two Claude Code skills for .NET: `dotnet-vsa-webapi`, dedicated specifically to [Vertical Slice Architecture](./software_design.md#42-vertical-slice-architecture) for ASP.NET Core Minimal APIs (feature-first folders, FluentValidation, Result-based flow, Aspire/PostgreSQL setup, deliberately avoiding MediatR as an unnecessary abstraction), and `dotnet-aspnet-ddd-core-logic`, a separate DDD-focused skill. Narrower in scope than `codewithmukesh/dotnet-claude-kit`'s multi-architecture questionnaire above, but more detailed on Vertical Slice Architecture specifically — a good pairing when VSA is already the chosen architecture rather than one of several options being weighed.
+
+**Software design methods referenced:** Vertical Slice Architecture (§4.2), Domain-Driven Design.
+
+---
+
 ## Broad / Multi-Framework Collections
 
 <a id="sebastiendegodez-copilot-instructions"></a>
 
-### 8. `SebastienDegodez/copilot-instructions`
+### 12. `SebastienDegodez/copilot-instructions`
 
 GitHub:
 https://github.com/SebastienDegodez/copilot-instructions
@@ -245,25 +313,27 @@ Its C# plugin combines architectural guidance, DDD, CQRS, testing, setup scripts
 
 <a id="wondelai-skills"></a>
 
-### 9. `wondelai/skills`
+### 13. `wondelai/skills`
 
 GitHub:
 https://github.com/wondelai/skills
 
-A broader "business & engineering frameworks as AI agent skills" repository (agentskills.io-compatible: Claude, Claude Code, Claude Cowork, Codex, Cursor, and others) spanning roughly 50 skills, two of which map directly onto this document's territory:
+A broader "business & engineering frameworks as AI agent skills" repository (agentskills.io-compatible: Claude, Claude Code, Claude Cowork, Codex, Cursor, and others) spanning roughly 50 skills, four of which map directly onto this document's territory:
 
 - A **clean-architecture** skill that structures software around the [Dependency Rule](./glossary.md#dependency-rule) (dependencies point inward from frameworks → use cases → entities), covering component principles, boundaries, and [SOLID](./glossary.md#solid-principles).
 - A **domain-driven-design** skill covering [bounded contexts](./glossary.md#bounded-context), [aggregates](./glossary.md#aggregate), [ubiquitous language](./glossary.md#strategic-ddd), entities vs. value objects, domain events, and context-mapping strategies.
+- A **jobs-to-be-done** skill covering the three job dimensions, forces of progress, Big/Little Hire, and non-obvious competition — citing *Competing Against Luck* by Christensen, Hall, Dillon, and Duncan (see [§2.2](./software_design.md#22-jobs-to-be-done)).
+- A **lean-startup** skill covering Build-Measure-Learn, MVP types, leap-of-faith assumptions, innovation accounting, and pivot/persevere — citing *The Lean Startup* and *The Startup Way* by Eric Ries (see [§2.3](./software_design.md#23-lean-startup)).
 
-Unlike the dedicated DDD and Clean Architecture repositories above, this one packages both inside a much larger, non-software-specific skill library — closer in spirit to `danmestas/agent-skills` than to `ForceInjection` or `nathankim0`, but with noticeably more detailed coverage of the two methods it does address.
+Unlike the dedicated DDD and Clean Architecture repositories above, this one packages all four inside a much larger, non-software-specific skill library — closer in spirit to `danmestas/agent-skills` than to `ForceInjection` or `nathankim0`, but with noticeably more detailed coverage of the methods it does address.
 
-**Software design methods referenced:** [Clean Architecture](./glossary.md#hexagonal--clean-architecture) ([Dependency Rule](./glossary.md#dependency-rule), [SOLID principles](./glossary.md#solid-principles), component principles), [Domain-Driven Design](./glossary.md#domain-driven-design-ddd) (bounded contexts, aggregates, ubiquitous language, context mapping) — two modules inside a much wider, non-software-specific framework pack.
+**Software design methods referenced:** [Clean Architecture](./glossary.md#hexagonal--clean-architecture) ([Dependency Rule](./glossary.md#dependency-rule), [SOLID principles](./glossary.md#solid-principles), component principles), [Domain-Driven Design](./glossary.md#domain-driven-design-ddd) (bounded contexts, aggregates, ubiquitous language, context mapping), Jobs to Be Done (§2.2), Lean Startup (§2.3) — four modules inside a much wider, non-software-specific framework pack.
 
 ---
 
 <a id="danmestas-agent-skills"></a>
 
-### 10. `danmestas/agent-skills`
+### 14. `danmestas/agent-skills`
 
 GitHub:
 https://github.com/danmestas/agent-skills
@@ -281,11 +351,24 @@ It is less tightly grounded in named books, but structurally similar as a reusab
 
 ---
 
+<a id="neolabhq-context-engineering-kit"></a>
+
+### 15. `NeoLabHQ/context-engineering-kit`
+
+GitHub:
+https://github.com/NeoLabHQ/context-engineering-kit
+
+Hand-crafted Claude Code skills for improving agent output quality, also compatible with OpenCode, Cursor, Antigravity, and Gemini CLI, organized as installable plugins (`ddd`, `tdd`, `sadd`, `fpf`, `kaizen`, `tech-stack`, and others) rather than one-repo-per-book. Its `ddd` plugin bundles 14 rules spanning Clean Architecture, separation of concerns, [functional core/imperative shell](./software_design.md#52-functional-core-imperative-shell), command-query separation, explicit control/data flow and side effects, domain-specific naming, and several general code-quality conventions (early return, function/file size limits, least astonishment, call-site honesty, library-first, avoid duplication, boy scout rule).
+
+**Software design methods referenced:** Functional core, imperative shell (§5.2), plus Clean Architecture and general code-quality discipline alongside its `ddd` plugin's name.
+
+---
+
 ## Refactoring-Focused
 
 <a id="muhiminosim-code-refactoring-skill"></a>
 
-### 11. `MuhiminOsim/code-refactoring-skill`
+### 16. `MuhiminOsim/code-refactoring-skill`
 
 GitHub:
 https://github.com/MuhiminOsim/code-refactoring-skill
@@ -304,7 +387,7 @@ None of the repositories above package a dedicated, cross-agent refactoring work
 
 <a id="arozumenko-sdlc-skills"></a>
 
-### 12. `arozumenko/sdlc-skills`
+### 17. `arozumenko/sdlc-skills`
 
 GitHub:
 https://github.com/arozumenko/sdlc-skills
@@ -321,7 +404,7 @@ Larger directories for discovering more skills, rather than repositories dedicat
 
 <a id="voltagent-awesome-agent-skills"></a>
 
-### 13. `VoltAgent/awesome-agent-skills`
+### 18. `VoltAgent/awesome-agent-skills`
 
 GitHub:
 https://github.com/VoltAgent/awesome-agent-skills
@@ -344,7 +427,7 @@ This is useful for discovering additional focused repositories beyond architectu
 
 <a id="kodustech-awesome-agent-skills"></a>
 
-### 14. `kodustech/awesome-agent-skills`
+### 19. `kodustech/awesome-agent-skills`
 
 GitHub:
 https://github.com/kodustech/awesome-agent-skills
@@ -355,7 +438,7 @@ A smaller catalogue focused primarily on reusable `SKILL.md` projects for softwa
 
 <a id="github-awesome-copilot"></a>
 
-### 15. `github/awesome-copilot`
+### 20. `github/awesome-copilot`
 
 GitHub:
 https://github.com/github/awesome-copilot
@@ -368,37 +451,52 @@ Worth checking when a team's coding standards already live in Copilot instructio
 
 ---
 
-<a id="16-source-books-referenced"></a>
+<a id="21-source-books-referenced"></a>
 
-## 16. Source Books Referenced
+## 21. Source Books Referenced
 
-Real, purchasable books (physical or Kindle) named anywhere in this document, [software_design.md](./software_design.md), or [strategic_tactical_design.md](./strategic_tactical_design.md) — not papers, blog posts, or free-standing whitepapers/PDFs (e.g. Vernon's *Effective Aggregate Design* series or the InfoQ *DDD Quickly* minibook are excluded on that basis, as is `ciembor/agent-rules-books`' `refactoring-guru` rule set, which distills a website rather than a single named book). Sorted alphabetically by title.
+Real, purchasable books (physical, Kindle, or an equivalent standard ebook edition) named anywhere in this document, [software_design.md](./software_design.md), or [strategic_tactical_design.md](./strategic_tactical_design.md) — not papers, blog posts, or free-standing whitepapers/PDFs (e.g. Vernon's *Effective Aggregate Design* series or the InfoQ *DDD Quickly* minibook are excluded on that basis, as is `ciembor/agent-rules-books`' `refactoring-guru` rule set, which distills a website rather than a single named book). Sorted alphabetically by title.
 
-The **Related repositories** column lists every repository *in this document's list of 15* that ties its content to that specific book — not only `ciembor/agent-rules-books`. Only three repositories name individual books at all ([§1 `ciembor/agent-rules-books`](#ciembor-agent-rules-books), [§2 `ZLStas/skills`](#zlstas-skills), [§3 `addyosmani/agent-skills`](#addyosmani-agent-skills)); the other twelve reference design *methods* (DDD, Clean Architecture, refactoring, …) without naming a specific book, so they never appear in this column. `(planned)` marks a book that is an open "good first issue" on `ZLStas/skills` rather than a shipped skill yet.
+The **Related repositories** column lists every repository *in this document's list of 20* that ties its content to that specific book — not only `ciembor/agent-rules-books`. Only four repositories name individual books at all ([§1 `ciembor/agent-rules-books`](#ciembor-agent-rules-books), [§2 `ZLStas/skills`](#zlstas-skills), [§3 `addyosmani/agent-skills`](#addyosmani-agent-skills), [§13 `wondelai/skills`](#wondelai-skills)); the other sixteen reference design *methods* (DDD, Clean Architecture, refactoring, …) without naming a specific book, so they never appear in this column. `(planned)` marks a book that is an open "good first issue" on `ZLStas/skills` rather than a shipped skill yet.
 
 | Book                                              | Author(s)                                                  | Referenced in                                                   | Related repositories                                                                                   |
 | ------------------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | *A Philosophy of Software Design* (2nd ed.)       | John Ousterhout                                            | software_design.md, strategic_tactical_design.md, this document | [`ciembor/agent-rules-books`](#ciembor-agent-rules-books); [`ZLStas/skills`](#zlstas-skills) (planned) |
 | *Accelerate*                                      | Nicole Forsgren, Jez Humble, Gene Kim                      | this document                                                   | [`ZLStas/skills`](#zlstas-skills) (planned)                                                            |
+| *AspectJ in Action* (2nd ed.)                      | Ramnivas Laddad                                            | software_design.md                                              | —                                                                                                      |
 | *Building Evolutionary Architectures*             | Neal Ford, Rebecca Parsons, Patrick Kua                    | software_design.md                                              | —                                                                                                      |
+| *Change by Design*                                 | Tim Brown                                                  | software_design.md                                              | —                                                                                                      |
 | *Clean Architecture*                              | Robert C. Martin                                           | software_design.md, this document                               | [`ciembor/agent-rules-books`](#ciembor-agent-rules-books); [`ZLStas/skills`](#zlstas-skills) (planned) |
 | *Clean Code*                                      | Robert C. Martin                                           | software_design.md, strategic_tactical_design.md, this document | [`ciembor/agent-rules-books`](#ciembor-agent-rules-books); [`ZLStas/skills`](#zlstas-skills)           |
 | *Code Complete*                                   | Steve McConnell                                            | software_design.md, this document                               | [`ciembor/agent-rules-books`](#ciembor-agent-rules-books)                                              |
+| *Competing Against Luck*                           | Clayton M. Christensen, Taddy Hall, Karen Dillon, David S. Duncan | software_design.md                                       | [`wondelai/skills`](#wondelai-skills)                                                                  |
+| *Data-Oriented Design*                             | Richard Fabian                                             | software_design.md                                              | —                                                                                                      |
 | *Designing Data-Intensive Applications*           | Martin Kleppmann                                           | software_design.md, this document                               | [`ciembor/agent-rules-books`](#ciembor-agent-rules-books)                                              |
 | *Domain-Driven Design* ("Blue Book")              | Eric Evans                                                 | software_design.md, strategic_tactical_design.md, this document | [`ciembor/agent-rules-books`](#ciembor-agent-rules-books); [`ZLStas/skills`](#zlstas-skills)           |
 | *Domain-Driven Design Distilled*                  | Vaughn Vernon                                              | software_design.md, strategic_tactical_design.md, this document | [`ciembor/agent-rules-books`](#ciembor-agent-rules-books)                                              |
 | *Effective Kotlin*                                | Marcin Moskała                                             | this document                                                   | [`ZLStas/skills`](#zlstas-skills)                                                                      |
 | *Fundamentals of Software Architecture*           | Mark Richards, Neal Ford                                   | strategic_tactical_design.md                                    | —                                                                                                      |
+| *Grokking Simplicity*                              | Eric Normand                                               | software_design.md                                              | —                                                                                                      |
 | *Implementing Domain-Driven Design* ("Red Book")  | Vaughn Vernon                                              | software_design.md, strategic_tactical_design.md, this document | [`ciembor/agent-rules-books`](#ciembor-agent-rules-books)                                              |
+| *Introducing EventStorming*                        | Alberto Brandolini                                         | software_design.md                                              | —                                                                                                      |
 | *Learning Domain-Driven Design*                   | Vlad Khononov                                              | strategic_tactical_design.md                                    | —                                                                                                      |
+| *Object-Oriented Software Engineering: A Use Case Driven Approach* | Ivar Jacobson                              | software_design.md                                              | —                                                                                                      |
 | *Patterns of Enterprise Application Architecture* | Martin Fowler                                              | software_design.md, strategic_tactical_design.md, this document | [`ciembor/agent-rules-books`](#ciembor-agent-rules-books)                                              |
+| *Practical TLA+*                                   | Hillel Wayne                                               | software_design.md                                              | —                                                                                                      |
+| *Practical UML Statecharts in C/C++* (2nd ed.)     | Miro Samek                                                 | software_design.md                                              | —                                                                                                      |
 | *Refactoring*                                     | Martin Fowler                                              | software_design.md, this document                               | [`ciembor/agent-rules-books`](#ciembor-agent-rules-books)                                              |
 | *Release It!*                                     | Michael T. Nygard                                          | software_design.md, this document                               | [`ciembor/agent-rules-books`](#ciembor-agent-rules-books)                                              |
 | *Software Architecture: The Hard Parts*           | Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani | strategic_tactical_design.md                                    | —                                                                                                      |
 | *Software Engineering at Google*                  | Titus Winters, Tom Manshreck, Hyrum Wright                 | software_design.md, this document                               | [`addyosmani/agent-skills`](#addyosmani-agent-skills)                                                  |
+| *Software Requirements* (3rd ed.)                  | Karl Wiegers, Joy Beatty                                   | software_design.md                                              | —                                                                                                      |
+| *Specifying Systems*                               | Leslie Lamport                                             | software_design.md                                              | —                                                                                                      |
+| *Structured Analysis and System Specification*     | Tom DeMarco                                                | software_design.md                                              | —                                                                                                      |
 | *Team Topologies*                                 | Matthew Skelton, Manuel Pais                               | strategic_tactical_design.md                                    | —                                                                                                      |
+| *The Design of Everyday Things*                    | Don Norman                                                 | software_design.md                                              | —                                                                                                      |
+| *The Lean Startup*                                 | Eric Ries                                                  | software_design.md                                              | [`wondelai/skills`](#wondelai-skills)                                                                  |
 | *The Pragmatic Programmer*                        | David Thomas, Andrew Hunt                                  | software_design.md, this document                               | [`ciembor/agent-rules-books`](#ciembor-agent-rules-books); [`ZLStas/skills`](#zlstas-skills) (planned) |
 | *Working Effectively with Legacy Code*            | Michael Feathers                                           | software_design.md, strategic_tactical_design.md, this document | [`ciembor/agent-rules-books`](#ciembor-agent-rules-books)                                              |
+| *Writing Effective Use Cases*                      | Alistair Cockburn                                          | software_design.md                                              | —                                                                                                      |
 
 ---
 
