@@ -9,6 +9,8 @@ The phrase "strategic and tactical design" is used in **two quite different sens
 
 They are unrelated in origin. Skip to whichever you need.
 
+Terms used throughout this document are defined in [glossary.md](./glossary.md), a shared glossary also used by [software_design.md](./software_design.md).
+
 ---
 
 ## Table of Contents
@@ -16,15 +18,15 @@ They are unrelated in origin. Skip to whichever you need.
 - [Part 1 — General Software Design Foundations](#part-1--general-software-design-foundations)  
 - [Part 2 — Ousterhout: Strategic vs. Tactical Programming](#part-2--ousterhout-strategic-vs-tactical-programming)  
 - [Part 3 — Domain-Driven Design: Strategic and Tactical Design](#part-3--domain-driven-design-strategic-and-tactical-design)  
-  - [Strategic DDD](#strategic-ddd)  
-  - [Tactical DDD](#tactical-ddd)  
+  - [3.1 Strategic DDD](#31-strategic-ddd)  
+  - [3.2 Tactical DDD](#32-tactical-ddd)  
 - [Part 4 — Comparing the Ousterhout and DDD Meanings](#part-4--comparing-the-ousterhout-and-ddd-meanings)  
 - [Part 5 — Practical Modelling Tools & Canvases](#part-5--practical-modelling-tools--canvases)  
 - [Part 6 — Curated Link Collections](#part-6--curated-link-collections)  
 - [Part 7 — Books](#part-7--books)  
-- [Suggested Reading Paths](#suggested-reading-paths)  
-- [Glossary](#glossary)  
-- [Verification Log](#verification-log)
+- [8. Suggested Reading Paths](#8-suggested-reading-paths)  
+- [9. Glossary](#9-glossary)  
+- [10. Verification Log](#10-verification-log)
 
 ---
 
@@ -45,7 +47,7 @@ These sit underneath both senses of "strategic/tactical" and are worth reading r
 | ⚠️  | arc42 architecture documentation template                                       | [https://arc42.org/](https://arc42.org/)                                                                                                                                                                                                                                                                                                                                                                                                                                                         | German-origin, widely used in DE/AT/CH. Pairs well with ADRs.                                                                                                                                                 |
 | ⚠️  | Architecture Decision Records                                                   | [https://adr.github.io/](https://adr.github.io/)                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Lightweight way to record *why*, which is what strategic design is really about.                                                                                                                              |
 
-### Example — AI-Mail
+### 1.1 Example — AI-Mail
 
 The [AI-Mail vision](C:/PROJ/ai-mail/ai-mail.pocock/docs/brainstorming/ai-mail-foundation-vision.md) spans inboxes, chat, documents, silent obligations, AI models, approvals, and audit.
 
@@ -64,7 +66,7 @@ This does not prescribe a complete architecture. It identifies decisions likely 
 
 The distinction comes from Chapter 3, "Working Code Isn't Enough," in John Ousterhout's *A Philosophy of Software Design*. It describes two mindsets for approaching any programming task.
 
-### Tactical programming
+### 2.1 Tactical programming
 
 Tactical programming optimises for the fastest path to working code. The developer implements the next feature or fix with minimal attention to the system's future structure.
 
@@ -76,7 +78,7 @@ Key concepts:
 - **Tactical tornado** — a highly productive developer who ships quickly while leaving complexity for teammates to absorb.
 - **Legitimate tactical work** — disposable prototypes and reversible experiments can justify short-term design, provided the shortcut is named and contained.
 
-### Strategic programming
+### 2.2 Strategic programming
 
 Strategic programming treats working code as insufficient. The goal is a system that remains easy to understand and change, achieved through continual design investment rather than a single upfront design phase.
 
@@ -89,13 +91,13 @@ Key concepts:
 - **Define errors out of existence** — simplify semantics so fewer exceptional conditions can arise.
 - **Complexity reduction** — judge designs by whether they reduce change amplification, cognitive load, and unknown unknowns.
 
-### Economics and controversy
+### 2.3 Economics and controversy
 
 Tactical work starts faster. If complexity keeps accumulating, productivity falls and strategic work overtakes it. The crossover is less certain for an early startup racing to learn or for code intended to be discarded.
 
 Ousterhout argues that some agile, TDD, Clean Code, and "generalise later" practices can encourage tactical programming. Many practitioners disagree; the Ousterhout–Martin debate below presents the tension directly.
 
-### Example — AI-Mail
+### 2.4 Example — AI-Mail
 
 Suppose AI-Mail must add a second email provider and a new language model while preserving the rule that no message is sent without the user's approval.
 
@@ -111,7 +113,7 @@ A strategic implementation invests in deep modules with narrow contracts:
 
 The tactical version may be appropriate for a throwaway provider spike. The strategic version is appropriate for the long-lived product described by the vision because trust rules and integrations will compound.
 
-### Links
+### 2.5 Links
 
 | ✓   | Resource                                            | URL                                                                                                                                                                    | Notes                                                                                                                                                  |
 |:--- |:--------------------------------------------------- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -138,7 +140,7 @@ The tactical version may be appropriate for a throwaway provider spike. The stra
 
 DDD uses "strategic" and "tactical" for two scopes of domain modelling. Strategic design finds the model boundaries and language; tactical design implements behaviour inside one boundary.
 
-### Strategic DDD
+### 3.1 Strategic DDD
 
 Strategic DDD answers **"what?"** and **"why?"**: what problem is being solved, where modelling effort matters, and where different models and languages must remain separate.
 
@@ -148,26 +150,29 @@ Evans' own three-point summary of DDD: focus on the core domain; explore models 
 
 Key concepts: **Domain, Subdomain (core / supporting / generic), Bounded Context, Ubiquitous Language, Context Map, Anti-Corruption Layer, Shared Kernel, Conformist, Open Host Service, Published Language.**
 
-| ✓   | Resource                                                      | URL                                                                                                                                                                                                                                                          | Notes                                                                                                                                                                   |
-|:--- |:------------------------------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ✅   | Eric Evans, **DDD Reference**                                 | [https://www.domainlanguage.com/ddd/reference/](https://www.domainlanguage.com/ddd/reference/)                                                                                                                                                               | Every definition and pattern from the 2004 book in summary form, plus three patterns that postdate it. CC-BY 4.0. The single best free artefact.                        |
-| ✅   | — direct PDF                                                  | [https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD\_Reference\_2015-03.pdf](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)                                                                                 | \~50 pages. Keep it open while modelling.                                                                                                                               |
-| ✅   | Domain Language, DDD resources hub                            | [https://www.domainlanguage.com/ddd/](https://www.domainlanguage.com/ddd/)                                                                                                                                                                                   | Includes the "Manager's Guided Tour" (skim the Blue Book in a few hours) and a paper on four strategies for starting DDD in a legacy estate.                            |
-| ✅   | Fowler, *Bounded Context*                                     | [https://martinfowler.com/bliki/BoundedContext.html](https://martinfowler.com/bliki/BoundedContext.html)                                                                                                                                                     | Also *UbiquitousLanguage*, *DomainDrivenDesign*, *AnemicDomainModel*. Short, sharp definitions.                                                                         |
-| ✅   | ddd-crew, **free-ddd-learning-resources**                     | [https://github.com/ddd-crew/free-ddd-learning-resources](https://github.com/ddd-crew/free-ddd-learning-resources)                                                                                                                                           | Maintained index of everything else that's free. Start here for breadth.                                                                                                |
-| ✅   | Vaadin, *DDD Part 1: Strategic DDD*                           | [https://vaadin.com/blog/ddd-part-1-strategic-domain-driven-design](https://vaadin.com/blog/ddd-part-1-strategic-domain-driven-design)                                                                                                                       | Readable walkthrough. Honest warning against finding bounded contexts for their own sake — start with one core domain, one context, and let the rest reveal themselves. |
-| ⚠️  | Vaadin, *DDD Part 2: Tactical DDD*                            | [https://vaadin.com/blog/ddd-part-2-tactical-domain-driven-design](https://vaadin.com/blog/ddd-part-2-tactical-domain-driven-design)                                                                                                                         | Direct continuation. (Title confirmed via Part 1; exact URL unverified.)                                                                                                |
-| ✅   | ddd-crew, **context-mapping**                                 | [https://github.com/ddd-crew/context-mapping](https://github.com/ddd-crew/context-mapping)                                                                                                                                                                   | The relationship patterns with diagrams and a decision guide.                                                                                                           |
-| ✅   | Khononov, *Learning DDD* — Part I preview                     | [https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/part01.html](https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/part01.html)                                                                 | Strategic \= what/why, tactical \= how.                                                                                                                                 |
-| ✅   | VirtualDDD, *When to invest in strategic vs. tactical design* | [https://virtualddd.com/sessions/when-to-invest-in-strategic-design-and-when-in-tactical-design/](https://virtualddd.com/sessions/when-to-invest-in-strategic-design-and-when-in-tactical-design/)                                                           | Corrective for people who met DDD as a programming discipline first.                                                                                                    |
-| ✅   | Jakub Lambrych, *Strategic Design Explained*                  | [https://medium.com/@lambrych/domain-driven-design-ddd-strategic-design-explained-55e10b7ecc0f](https://medium.com/@lambrych/domain-driven-design-ddd-strategic-design-explained-55e10b7ecc0f)                                                               | Frames strategic patterns as problem space, tactical as the transition to solution space, with Bounded Context as the vehicle between them.                             |
-| ✅   | Mosharraf Hossain, *DDD Demystified*                          | [https://medium.com/@mail2mhossain/domain-driven-design-demystified-strategic-tactical-and-implementation-layers-dad829be18f0](https://medium.com/@mail2mhossain/domain-driven-design-demystified-strategic-tactical-and-implementation-layers-dad829be18f0) | Adds a third "implementation layer" and a banking case study.                                                                                                           |
-| ✅   | Nick Tune's blog                                              | [https://medium.com/nick-tune-tech-strategy-blog](https://medium.com/nick-tune-tech-strategy-blog)                                                                                                                                                           | Probably the best working writer on socio-technical / strategic DDD today. Origin of the Bounded Context Canvas.                                                        |
-| ✅   | archi-lab.io, DDD course pages                                | [https://www.archi-lab.io/infopages/ddd/ddd-crew-bounded-context.html](https://www.archi-lab.io/infopages/ddd/ddd-crew-bounded-context.html)                                                                                                                 | A German university course's practical guide to chaining the ddd-crew methods together. Includes a commented literature list.                                           |
-| ⚠️  | Team Topologies                                               | [https://teamtopologies.com/](https://teamtopologies.com/)                                                                                                                                                                                                   | Not DDD, but the standard companion — bounded contexts and team boundaries want to agree.                                                                               |
-| ⚠️  | *Domain-Driven Design Quickly* (InfoQ, free)                  | [https://www.infoq.com/minibooks/domain-driven-design-quickly/](https://www.infoq.com/minibooks/domain-driven-design-quickly/)                                                                                                                               | \~100-page free summary of the Blue Book, incl. an Evans interview. Widely recommended as a first taste.                                                                |
+| ✓   | Resource                                                        | URL                                                                                                                                                                                                                                                          | Notes                                                                                                                                                                   |
+|:--- |:--------------------------------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ✅   | Eric Evans, **DDD Reference**                                   | [https://www.domainlanguage.com/ddd/reference/](https://www.domainlanguage.com/ddd/reference/)                                                                                                                                                               | Every definition and pattern from the 2004 book in summary form, plus three patterns that postdate it. CC-BY 4.0. The single best free artefact.                        |
+| ✅   | — direct PDF                                                    | [https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD\_Reference\_2015-03.pdf](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)                                                                                 | \~50 pages. Keep it open while modelling.                                                                                                                               |
+| ✅   | Domain Language, DDD resources hub                              | [https://www.domainlanguage.com/ddd/](https://www.domainlanguage.com/ddd/)                                                                                                                                                                                   | Includes the "Manager's Guided Tour" (skim the Blue Book in a few hours) and a paper on four strategies for starting DDD in a legacy estate.                            |
+| ✅   | Fowler, *Bounded Context*                                       | [https://martinfowler.com/bliki/BoundedContext.html](https://martinfowler.com/bliki/BoundedContext.html)                                                                                                                                                     | Also *UbiquitousLanguage*, *DomainDrivenDesign*, *AnemicDomainModel*. Short, sharp definitions.                                                                         |
+| ✅   | ddd-crew, **free-ddd-learning-resources**                       | [https://github.com/ddd-crew/free-ddd-learning-resources](https://github.com/ddd-crew/free-ddd-learning-resources)                                                                                                                                           | Maintained index of everything else that's free. Start here for breadth.                                                                                                |
+| ✅   | Vaadin, *DDD Part 1: Strategic DDD*                             | [https://vaadin.com/blog/ddd-part-1-strategic-domain-driven-design](https://vaadin.com/blog/ddd-part-1-strategic-domain-driven-design)                                                                                                                       | Readable walkthrough. Honest warning against finding bounded contexts for their own sake — start with one core domain, one context, and let the rest reveal themselves. |
+| ⚠️  | Vaadin, *DDD Part 2: Tactical DDD*                              | [https://vaadin.com/blog/ddd-part-2-tactical-domain-driven-design](https://vaadin.com/blog/ddd-part-2-tactical-domain-driven-design)                                                                                                                         | Direct continuation. (Title confirmed via Part 1; exact URL unverified.)                                                                                                |
+| ✅   | ddd-crew, **context-mapping**                                   | [https://github.com/ddd-crew/context-mapping](https://github.com/ddd-crew/context-mapping)                                                                                                                                                                   | The relationship patterns with diagrams and a decision guide.                                                                                                           |
+| ✅   | Khononov, *Learning DDD* — Part I preview                       | [https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/part01.html](https://www.oreilly.com/library/view/learning-domain-driven-design/9781098100124/part01.html)                                                                 | Strategic \= what/why, tactical \= how.                                                                                                                                 |
+| ✅   | VirtualDDD, *When to invest in strategic vs. tactical design*   | [https://virtualddd.com/sessions/when-to-invest-in-strategic-design-and-when-in-tactical-design/](https://virtualddd.com/sessions/when-to-invest-in-strategic-design-and-when-in-tactical-design/)                                                           | Corrective for people who met DDD as a programming discipline first.                                                                                                    |
+| ✅   | Jakub Lambrych, *Strategic Design Explained*                    | [https://medium.com/@lambrych/domain-driven-design-ddd-strategic-design-explained-55e10b7ecc0f](https://medium.com/@lambrych/domain-driven-design-ddd-strategic-design-explained-55e10b7ecc0f)                                                               | Frames strategic patterns as problem space, tactical as the transition to solution space, with Bounded Context as the vehicle between them.                             |
+| ✅   | Mosharraf Hossain, *DDD Demystified*                            | [https://medium.com/@mail2mhossain/domain-driven-design-demystified-strategic-tactical-and-implementation-layers-dad829be18f0](https://medium.com/@mail2mhossain/domain-driven-design-demystified-strategic-tactical-and-implementation-layers-dad829be18f0) | Adds a third "implementation layer" and a banking case study.                                                                                                           |
+| ✅   | Nick Tune's blog                                                | [https://medium.com/nick-tune-tech-strategy-blog](https://medium.com/nick-tune-tech-strategy-blog)                                                                                                                                                           | Probably the best working writer on socio-technical / strategic DDD today. Origin of the Bounded Context Canvas.                                                        |
+| ✅   | archi-lab.io, DDD course pages                                  | [https://www.archi-lab.io/infopages/ddd/ddd-crew-bounded-context.html](https://www.archi-lab.io/infopages/ddd/ddd-crew-bounded-context.html)                                                                                                                 | A German university course's practical guide to chaining the ddd-crew methods together. Includes a commented literature list.                                           |
+| ⚠️  | Team Topologies                                                 | [https://teamtopologies.com/](https://teamtopologies.com/)                                                                                                                                                                                                   | Not DDD, but the standard companion — bounded contexts and team boundaries want to agree.                                                                               |
+| ⚠️  | *Domain-Driven Design Quickly* (InfoQ, free)                    | [https://www.infoq.com/minibooks/domain-driven-design-quickly/](https://www.infoq.com/minibooks/domain-driven-design-quickly/)                                                                                                                               | \~100-page free summary of the Blue Book, incl. an Evans interview. Widely recommended as a first taste.                                                                |
+| ✅   | ForceInjection, **domain-driven-design-skills** (agent skill)   | [https://github.com/ForceInjection/domain-driven-design-skills](https://github.com/ForceInjection/domain-driven-design-skills)                                                                                                                               | Interactive, technology-neutral coding-agent workflow: Discovery → Strategic Design → Tactical Design → Validation → Specification Bridging. Work in progress.          |
+| ✅   | wondelai, **skills** — domain-driven-design skill (agent skill) | [https://github.com/wondelai/skills](https://github.com/wondelai/skills)                                                                                                                                                                                     | Technology-neutral bounded contexts, aggregates, ubiquitous language, and context-mapping strategies, packaged inside a much larger, non-DDD-specific skill pack.       |
+| ✅   | SebastienDegodez, **copilot-instructions** (agent skill)        | [https://github.com/SebastienDegodez/copilot-instructions](https://github.com/SebastienDegodez/copilot-instructions)                                                                                                                                         | C#/.NET-specific: DDD paired with Clean Architecture, CQRS, a specification-pattern skill, and sociable application-layer testing.                                      |
 
-### Tactical DDD
+### 3.2 Tactical DDD
 
 Tactical DDD answers **"how?"**: how behaviour inside one bounded context is modelled and implemented.
 
@@ -197,6 +202,7 @@ Key building blocks:
 | ✅   | SAP, *How to develop aggregates*                            | [https://github.com/SAP/curated-resources-for-domain-driven-design/blob/main/blog/0004-how-to-develop-aggregates.md](https://github.com/SAP/curated-resources-for-domain-driven-design/blob/main/blog/0004-how-to-develop-aggregates.md) | Includes the healthy reminder that tactical patterns are tools, not a compliance checklist — you can write good software without using every one.                                                                                                                                                                                                                                                                 |
 | ✅   | James Hickey, *What are DDD aggregates?*                    | [https://www.jamesmichaelhickey.com/domain-driven-design-aggregates/](https://www.jamesmichaelhickey.com/domain-driven-design-aggregates/)                                                                                               | Starts from what an aggregate *is not*. Good antidote to jargon overload.                                                                                                                                                                                                                                                                                                                                         |
 | ⚠️  | Fowler, *Event Sourcing*                                    | [https://martinfowler.com/eaaDev/EventSourcing.html](https://martinfowler.com/eaaDev/EventSourcing.html)                                                                                                                                 | Often paired with tactical DDD; not required by it.                                                                                                                                                                                                                                                                                                                                                               |
+| ✅   | zudochkin, **go-clean-ddd-skill** (agent skill)             | [https://github.com/zudochkin/go-clean-ddd-skill](https://github.com/zudochkin/go-clean-ddd-skill)                                                                                                                                       | Interactive coding-agent DDD modelling loop covering bounded contexts, aggregates, invariants, and domain events, with Go-specific templates and code generation.                                                                                                                                                                                                                                                 |
 
 **Three common traps.**
 
@@ -204,7 +210,7 @@ Key building blocks:
 2. *Aggregates everywhere* — generic and supporting subdomains often deserve a transaction script or plain CRUD. Reserve the expensive patterns for the core domain.  
 3. *Write models as read models* — using aggregates to serve UI queries. Keep queries independent of aggregate boundaries.
 
-### Example — AI-Mail
+### 3.3 Example — AI-Mail
 
 The [AI-Mail vision](C:/PROJ/ai-mail/ai-mail.pocock/docs/brainstorming/ai-mail-foundation-vision.md) requires domain distinctions that a single universal "email" model would blur.
 
@@ -234,7 +240,7 @@ Simple provider synchronisation and read-only queries need not use aggregates. T
 
 The two vocabularies use the same labels for different axes. They can reinforce each other, but they are not competing definitions and do not form a single strategic-to-tactical pipeline.
 
-### Same words, different axes
+### 4.1 Same words, different axes
 
 **Ousterhout's axis is investment over time.** It asks how a developer approaches any design task: optimise for immediate delivery, or spend some effort now to reduce future complexity?
 
@@ -249,7 +255,7 @@ This makes the two distinctions orthogonal. Strategic DDD can be done with a rus
 
 The bottom-left cell is not automatically bad. A reversible experiment can be a rational tactical move. The danger is treating a temporary shortcut as a durable design without naming or revisiting it.
 
-### What they have in common
+### 4.2 What they have in common
 
 Both reject “the code works” as a sufficient definition of good software. They care about the cost of understanding and changing a system after its first release.
 
@@ -261,7 +267,7 @@ Both treat names and concepts as design tools. Ousterhout wants interfaces that 
 
 Both are compatible with incremental learning. Neither requires predicting the final system upfront. Their useful form is repeated discovery, design, implementation, and correction.
 
-### What does not map
+### 4.3 What does not map
 
 | Question                 | Ousterhout                                                                                | DDD                                                                                                  |
 |:------------------------ |:----------------------------------------------------------------------------------------- |:---------------------------------------------------------------------------------------------------- |
@@ -279,7 +285,7 @@ DDD's tactical patterns are not a substitute for good code design. An aggregate 
 
 Conversely, a well-designed deep module may have no DDD role at all. A compression library, device driver, parser, or scheduling engine can benefit greatly from Ousterhout without having a business domain model.
 
-### Ambiguities and category errors
+### 4.4 Ambiguities and category errors
 
 **“Strategic” does not always mean architecture.** Ousterhout's strategic programming also applies to a small method or class. DDD strategic design can affect architecture, but begins with domain distinctions rather than technology choices.
 
@@ -293,7 +299,7 @@ Conversely, a well-designed deep module may have no DDD role at all. A compressi
 
 **More design is not always more strategic.** Speculative abstractions, universal models, and pattern-heavy frameworks can create the very cognitive load Ousterhout wants to remove.
 
-### Which concepts fit which problems?
+### 4.5 Which concepts fit which problems?
 
 | Product or problem                                           | Ousterhout concepts                                                                                     | Strategic DDD                                                                                            | Tactical DDD                                                                                                        |
 |:------------------------------------------------------------ |:------------------------------------------------------------------------------------------------------- |:-------------------------------------------------------------------------------------------------------- |:------------------------------------------------------------------------------------------------------------------- |
@@ -310,7 +316,7 @@ Domain complexity and software complexity are separate variables. DDD mainly add
 
 The expected lifetime and cost of change determine the level of Ousterhout-style investment. Domain differentiation and rule complexity determine the level of DDD investment.
 
-### How to combine them
+### 4.6 How to combine them
 
 1. **Classify the problem.** Estimate product lifetime, reversibility, software complexity, domain complexity, and business differentiation. Do not infer one from another.
 2. **Use strategic DDD to choose where modelling matters.** Identify the core domain, language boundaries, context relationships, and ownership. Keep this lightweight when the domain is simple or still unknown.
@@ -323,7 +329,7 @@ A useful shorthand is: **DDD helps decide what must be modelled together and wha
 
 Neither vocabulary is a maturity ladder. “Strategic” is not always superior, and “tactical” is not always inferior. The right choice depends on what is uncertain, expensive, differentiating, and likely to change.
 
-### Combined example — AI-Mail
+### 4.7 Combined example — AI-Mail
 
 Consider an invoice email with changed bank details. AI-Mail must understand the request, detect possible fraud, prepare a payment, obtain explicit approval, execute safely, and preserve an audit trail.
 
@@ -374,15 +380,31 @@ Where DDD stops being reading and starts being work. All free, all CC-licensed, 
 
 When this file is no longer enough.
 
-| ✓   | Collection                                                                                                                        | URL                                                                                                                                    |
-|:--- |:--------------------------------------------------------------------------------------------------------------------------------- |:-------------------------------------------------------------------------------------------------------------------------------------- |
-| ✅   | ardalis / **awesome-ddd**                                                                                                         | [https://github.com/ardalis/awesome-ddd](https://github.com/ardalis/awesome-ddd)                                                       |
-| ✅   | heynickc / awesome-ddd (fork with extra courses)                                                                                  | [https://github.com/heynickc/awesome-ddd](https://github.com/heynickc/awesome-ddd)                                                     |
-| ✅   | mehdihadeli / **awesome-software-architecture**                                                                                   | [https://github.com/mehdihadeli/awesome-software-architecture](https://github.com/mehdihadeli/awesome-software-architecture)           |
-| ✅   | ddd-crew / free-ddd-learning-resources                                                                                            | [https://github.com/ddd-crew/free-ddd-learning-resources](https://github.com/ddd-crew/free-ddd-learning-resources)                     |
-| ✅   | SAP / curated-resources-for-domain-driven-design                                                                                  | [https://github.com/SAP/curated-resources-for-domain-driven-design](https://github.com/SAP/curated-resources-for-domain-driven-design) |
-| ✅   | socadk / design-practice-repository                                                                                               | [https://github.com/socadk/design-practice-repository](https://github.com/socadk/design-practice-repository)                           |
-| ✅   | ciembor / **agent-rules-books** — design books (APoSD, DDD, PoEAA, WELC, Clean Code, …) distilled into actionable agent rule sets | [https://github.com/ciembor/agent-rules-books](https://github.com/ciembor/agent-rules-books)                                           |
+| ✓   | Collection                                                                                                                                                                                                                          | URL                                                                                                                                    |
+|:--- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:-------------------------------------------------------------------------------------------------------------------------------------- |
+| ✅   | ardalis / **awesome-ddd**                                                                                                                                                                                                           | [https://github.com/ardalis/awesome-ddd](https://github.com/ardalis/awesome-ddd)                                                       |
+| ✅   | heynickc / awesome-ddd (fork with extra courses)                                                                                                                                                                                    | [https://github.com/heynickc/awesome-ddd](https://github.com/heynickc/awesome-ddd)                                                     |
+| ✅   | mehdihadeli / **awesome-software-architecture**                                                                                                                                                                                     | [https://github.com/mehdihadeli/awesome-software-architecture](https://github.com/mehdihadeli/awesome-software-architecture)           |
+| ✅   | ddd-crew / free-ddd-learning-resources                                                                                                                                                                                              | [https://github.com/ddd-crew/free-ddd-learning-resources](https://github.com/ddd-crew/free-ddd-learning-resources)                     |
+| ✅   | SAP / curated-resources-for-domain-driven-design                                                                                                                                                                                    | [https://github.com/SAP/curated-resources-for-domain-driven-design](https://github.com/SAP/curated-resources-for-domain-driven-design) |
+| ✅   | socadk / design-practice-repository                                                                                                                                                                                                 | [https://github.com/socadk/design-practice-repository](https://github.com/socadk/design-practice-repository)                           |
+| ✅   | ciembor / **agent-rules-books** — design books (APoSD, DDD, PoEAA, WELC, Clean Code, …) distilled into actionable agent rule sets                                                                                                   | [https://github.com/ciembor/agent-rules-books](https://github.com/ciembor/agent-rules-books)                                           |
+| ✅   | ZLStas / **skills** — closest direct alternative to `agent-rules-books`: book-based skills as slash commands, agents, and installers for Python, TypeScript, Rust, JVM, architecture, data engineering                              | [https://github.com/ZLStas/skills](https://github.com/ZLStas/skills)                                                                   |
+| ✅   | nathankim0 / **clean-architecture-skills** — Clean Architecture reviews, dependency-rule validation, SOLID, Kent Beck-style simple design, code-smell detection                                                                     | [https://github.com/nathankim0/clean-architecture-skills](https://github.com/nathankim0/clean-architecture-skills)                     |
+| ✅   | ForceInjection / **domain-driven-design-skills** — end-to-end DDD agent workflow: discovery → strategic → tactical → validation → spec bridging                                                                                     | [https://github.com/ForceInjection/domain-driven-design-skills](https://github.com/ForceInjection/domain-driven-design-skills)         |
+| ✅   | zudochkin / **go-clean-ddd-skill** — interactive DDD modelling agent skill, Go-specific implementation and code generation                                                                                                          | [https://github.com/zudochkin/go-clean-ddd-skill](https://github.com/zudochkin/go-clean-ddd-skill)                                     |
+| ✅   | SebastienDegodez / **copilot-instructions** — instructions, prompts, skills, and agent personas incl. DDD, Clean Architecture, and CQRS; strongest for C#/.NET                                                                      | [https://github.com/SebastienDegodez/copilot-instructions](https://github.com/SebastienDegodez/copilot-instructions)                   |
+| ✅   | codewithmukesh / **dotnet-claude-kit** — .NET-oriented skills for DDD, Clean Architecture, and architecture assessment; explicitly warns against over-applying either where complexity doesn't justify it                           | [https://github.com/codewithmukesh/dotnet-claude-kit](https://github.com/codewithmukesh/dotnet-claude-kit)                             |
+| ✅   | danmestas / **agent-skills** — mixed collection of design, testing, DevOps, and project-management agent skills                                                                                                                     | [https://github.com/danmestas/agent-skills](https://github.com/danmestas/agent-skills)                                                 |
+| ✅   | VoltAgent / **awesome-agent-skills** — large curated index of agent skills across Claude Code, Codex, Cursor, Copilot, Gemini CLI, OpenCode, Windsurf                                                                               | [https://github.com/VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)                                 |
+| ✅   | kodustech / **awesome-agent-skills** — smaller catalogue focused on reusable `SKILL.md` projects for software engineering                                                                                                           | [https://github.com/kodustech/awesome-agent-skills](https://github.com/kodustech/awesome-agent-skills)                                 |
+| ✅   | wondelai / **skills** — Clean Architecture (Dependency Rule, SOLID) and DDD (bounded contexts, aggregates, ubiquitous language) skills inside a ~50-skill business/engineering framework pack, agentskills.io-compatible            | [https://github.com/wondelai/skills](https://github.com/wondelai/skills)                                                               |
+| ✅   | MuhiminOsim / **code-refactoring-skill** — enforced, cross-agent five-phase refactoring workflow (intake → diagnose → plan → execute → wrap-up) with a stricter introduce → redirect → remove sub-protocol for architectural change | [https://github.com/MuhiminOsim/code-refactoring-skill](https://github.com/MuhiminOsim/code-refactoring-skill)                         |
+| ✅   | addyosmani / **agent-skills** — 24 full-lifecycle engineering skills grounded in *Software Engineering at Google*, installable into 70+ agents                                                                                      | [https://github.com/addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)                                               |
+| ✅   | github / **awesome-copilot** — GitHub's official Copilot instructions/agents/skills collection; includes a `review-and-refactor` skill that enforces a project's own `.github/instructions/*.md` standards                          | [https://github.com/github/awesome-copilot](https://github.com/github/awesome-copilot)                                                 |
+| ⚠️  | arozumenko / **sdlc-skills** — SDLC agents/skills (Jira/Atlassian integration, shared skill registry); process and tooling automation rather than a design method                                                                   | [https://github.com/arozumenko/sdlc-skills](https://github.com/arozumenko/sdlc-skills)                                                 |
+
+For a comparison of these against `agent-rules-books`, a recommended evaluation order, and a "software design methods referenced" breakdown per repository, see [`agent-rules-github-repositories.md`](./agent-rules-github-repositories.md).
 
 ---
 
@@ -406,7 +428,7 @@ Several of these books are also distilled into actionable, tool-agnostic rule se
 
 ---
 
-## Suggested Reading Paths
+## 8. Suggested Reading Paths
 
 **If you meant Ousterhout (\~4 hours):**
 
@@ -431,44 +453,13 @@ Several of these books are also distilled into actionable, tool-agnostic rule se
 
 ---
 
-## Glossary
+## 9. Glossary
 
-### Ousterhout sense
-
-- **Tactical programming** — short-term mindset; get the feature working, defer design.  
-- **Strategic programming** — investment mindset; working code is not enough.  
-- **Tactical tornado** — high-output developer who leaves complexity for others.  
-- **Deep module** — simple interface, substantial implementation. The goal.  
-- **Shallow module** — interface nearly as complex as implementation. No leverage.  
-- **Classitis** — the belief that more, smaller classes is always better.  
-- **Change amplification** — one conceptual change requires edits in many places.  
-- **Cognitive load** — how much a developer must know to make a change safely.  
-- **Unknown unknowns** — you cannot tell which code must change. The worst symptom.  
-- **Design it twice** — produce two candidate designs before choosing.
-
-### DDD sense
-
-- **Domain** — a sphere of knowledge, influence, or activity; the problem space.  
-- **Subdomain** — a slice of it: core (differentiating), supporting, or generic.  
-- **Bounded Context** — a boundary within which a model and its language are consistent.  
-- **Ubiquitous Language** — the shared, precise vocabulary inside one bounded context.  
-- **Context Map** — the relationships between bounded contexts and their teams.  
-- **Anti-Corruption Layer (ACL)** — translation layer protecting a model from a foreign one.  
-- **Entity** — identity persists through state change; mutable.  
-- **Value Object** — equality by value; immutable.  
-- **Aggregate** — a consistency boundary with a single root; enforces invariants.  
-- **Aggregate Root** — the only object outside references may point to.  
-- **Invariant** — a rule the aggregate guarantees at every transaction boundary.  
-- **Corrective Policy** — the compensating logic you need when an invariant is relaxed.  
-- **Repository** — collection-like access to aggregates.  
-- **Domain Event** — something meaningful that happened, named in the past tense.  
-- **Domain Service** — domain logic belonging to no single entity or value object.  
-- **Application Service** — orchestrates a use case; holds no domain logic.  
-- **Transaction Script** — procedural business logic; the right choice for simple subdomains.
+Terms from both senses of "strategic and tactical design" — Ousterhout's and DDD's — are defined in the shared [glossary.md](./glossary.md): the [Ousterhout / A Philosophy of Software Design](./glossary.md#a-philosophy-of-software-design-ousterhout) section, and the [Domain-Driven Design](./glossary.md#domain-driven-design-ddd) section (split into [Strategic DDD](./glossary.md#strategic-ddd) and [Tactical DDD](./glossary.md#tactical-ddd)).
 
 ---
 
-## Verification Log
+## 10. Verification Log
 
 Checked 10 July 2026 against live search results.
 
