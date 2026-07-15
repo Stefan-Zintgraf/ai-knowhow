@@ -1,8 +1,10 @@
 # Product Discovery and Requirements Engineering
 
-**Status:** First draft
+**Status:** Second draft
 
 This collection covers the work that determines **what outcomes and observable behavior are worth creating** before and alongside software design. Software design then determines how to structure software that provides that behavior reliably and remains changeable.
+
+Terms used across the collection are defined in the [glossary](./glossary.md).
 
 There is no single universal phase name. In this collection:
 
@@ -10,56 +12,86 @@ There is no single universal phase name. In this collection:
 - **Product definition** turns evidence and strategy into a coherent scope and set of capabilities.
 - **Requirements engineering** makes required behavior, qualities, interfaces, and constraints explicit and verifiable.
 - **Domain discovery** exposes the language, rules, events, and boundaries of the problem domain.
+- **Validation and feedback** measures released behavior against intended outcomes and reopens earlier decisions.
 
 These activities overlap and repeat. They are not a one-time handoff to design.
 
 ## The lifecycle
 
+The vision is a slow-changing anchor. Discovery, definition, and requirements form a fast loop that runs continuously or in short cycles. Delivery consumes coherent slices from that loop, and validation feeds evidence back into every earlier stage.
+
 ```text
-Vision and strategy
-        ↓
-Product discovery
-  users, problems, outcomes, assumptions
-        ↓
-Product definition
-  scope, capabilities, journeys, priorities
-        ↓
-Requirements and domain discovery
-  use cases, rules, constraints, quality attributes
-        ↓
-Software design
-  boundaries, architecture, interfaces, data
-        ↓
-Implementation and validation
-        ↺ evidence feeds back into earlier decisions
+Product vision  (slow-changing anchor)
+        │  revised only when evidence breaks it
+        ▼
+┌───────────────────────────────────────────────────┐
+│  Discovery–definition–requirements loop (fast)    │
+│                                                   │
+│   Product discovery                               │
+│     users, problems, outcomes, assumptions        │
+│   Product definition                              │
+│     scope, capabilities, journeys, priorities     │
+│   Requirements and domain discovery               │
+│     use cases, rules, constraints,                │
+│     quality-attribute scenarios                   │
+└───────────────────────────────────────────────────┘
+        │  coherent slice with success and stop criteria
+        ▼
+Software design → implementation → release
+        │
+        ▼
+Validation and feedback
+  outcome measures, guardrails, incidents, operational evidence
+        ↺  reopens vision, opportunities, scope, or requirements
 ```
+
+Two clarifications the diagram cannot show:
+
+- **Quality attributes start early.** Qualities that could change the architecture are among the riskiest assumptions, so their discovery begins during product discovery. The requirements stage sharpens them into measurable scenarios; it does not begin them.
+- **Not every topic enters at the top.** A greenfield product enters at the vision; a rework enters from validation evidence; a compliance mandate enters at requirements. See [Lifecycle tailoring](./lifecycle_tailoring.md) for entry points and how to size the lifecycle for a specific topic.
 
 ## Documents
 
+Start with [Lifecycle tailoring](./lifecycle_tailoring.md) when applying this collection to a specific topic: it selects the entry point, stages, artifacts, cadence, and decision authority.
+
+Stage documents, in lifecycle order:
+
 1. [Product vision](./product_vision.md) — establish direction, target users, intended change, principles, and boundaries.
 2. [Product discovery](./product_discovery.md) — investigate opportunities and test risky assumptions.
-3. [Requirements engineering](./requirements_engineering.md) — elicit, analyze, specify, validate, and manage requirements.
-4. [Use cases and story mapping](./use_cases_and_story_mapping.md) — describe behavior around actor goals and coherent journeys.
-5. [Domain discovery](./domain_discovery.md) — uncover terminology, rules, events, invariants, and candidate boundaries.
-6. [Quality attributes](./quality_attributes.md) — make security, reliability, performance, usability, and other qualities concrete.
-7. [Resources](./resources.md) — books, standards, repositories, and practical tools.
+3. [Product definition](./product_definition.md) — select opportunities, shape scope and capabilities, prioritize, and cut a coherent release.
+4. [Requirements engineering](./requirements_engineering.md) — elicit, analyze, specify, validate, and manage requirements.
+5. [Use cases and story mapping](./use_cases_and_story_mapping.md) — describe behavior around actor goals and coherent journeys.
+6. [Domain discovery](./domain_discovery.md) — uncover terminology, rules, events, invariants, and candidate boundaries.
+7. [Quality attributes](./quality_attributes.md) — make security, reliability, performance, usability, and other qualities concrete.
+8. [Validation and feedback](./validation_and_feedback.md) — measure released behavior against intended outcomes and decide what to reopen.
+
+Reference documents:
+
+- [Lifecycle tailoring](./lifecycle_tailoring.md) — derive a specific lifecycle for a specific topic.
+- [Glossary](./glossary.md) — method terms used across the collection.
+- [Resources](./resources.md) — reading order, technique index, and adoption criteria. Stage-specific examples, references, agent rule sets, and books live in each stage document's **Further material** section.
 
 ## A pragmatic workflow
 
-1. Frame a provisional vision and name the desired outcome.
-2. Identify the people involved and observe their present situation.
-3. Map opportunities and assumptions; test the riskiest ones cheaply.
-4. Describe critical journeys and use cases, including failure paths.
-5. Discover domain language, policies, events, and invariants.
-6. Specify quality attributes and external constraints as measurable scenarios.
-7. Select a small, coherent release that can test the next important belief.
-8. Carry requirements and evidence into design, delivery, and measurement.
-9. Revisit earlier decisions when evidence changes.
+The lifecycle above is the structural model — which stages exist and how evidence flows between them. A workflow is one ordered path through it. The steps below are a sensible default for a first pass; after that, the loop repeats at the cadence chosen during tailoring rather than restarting from step 1.
+
+1. Classify the topic and tailor the lifecycle: entry point, stages, cadence, decision authority.
+2. Frame a provisional vision and name the desired outcome.
+3. Identify the people involved and observe their present situation.
+4. Map opportunities and assumptions; test the riskiest ones cheaply.
+5. Define scope: select opportunities, capabilities, and priorities for the next release.
+6. Describe critical journeys and use cases, including failure paths.
+7. Discover domain language, policies, events, and invariants.
+8. Specify quality attributes and external constraints as measurable scenarios.
+9. Cut a small, coherent release that can test the next important belief.
+10. Carry requirements and evidence into design, delivery, and measurement.
+11. Measure outcomes and guardrails after release; reopen earlier decisions when evidence changes.
 
 ## Minimum useful discovery package
 
 For a small product, avoid producing documents merely for completeness. A useful minimum is:
 
+- Lifecycle one-pager: entry point, stages in use, cadence, decision owners
 - One-page product vision
 - Named target users or actors and their desired outcomes
 - Current journey or problem narrative based on evidence
@@ -80,5 +112,6 @@ Design can begin incrementally when the team can answer:
 - Which failures and edge cases matter?
 - Which quality attributes could change the architecture?
 - What evidence supports the scope, and which assumptions remain open?
+- How will the outcome and its guardrails be observed after release?
 
 Uncertainty is acceptable. Hidden uncertainty is not.

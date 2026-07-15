@@ -1,8 +1,10 @@
 # Quality Attributes
 
-**Status:** First draft
+**Status:** Second draft
 
-Quality attributes describe how well a system must behave under meaningful conditions. They frequently shape architecture more strongly than functional requirements, so the important ones must be discovered early.
+Quality attributes describe how well a system must behave under meaningful conditions. They frequently shape architecture more strongly than functional requirements, so the important ones must be discovered early: start during [product discovery](./product_discovery.md), where architecture-changing qualities belong among the riskiest assumptions. The requirements stage sharpens them into measurable scenarios; it does not begin them.
+
+Terms used here are defined in the [glossary](./glossary.md).
 
 “Fast,” “secure,” and “scalable” are aspirations, not actionable requirements. Express qualities as scenarios with measurable responses and explicit trade-offs.
 
@@ -99,4 +101,17 @@ Include the system's human and organizational operation:
 - Conflicting qualities have explicit priorities or trade-offs.
 - A verification method exists for each critical scenario.
 - Architectural decisions can trace back to these scenarios.
+
+## Further material
+
+**Examples:**
+
+- A payments team builds a utility tree expecting latency to dominate. Ranking scenarios by business impact and uncertainty instead puts *auditability* at the top — a regulator can fine them, slow searches cannot — and the first architectural spike targets the audit trail, not the cache.
+- A cart-and-checkout system records the trade-off explicitly: the cart tolerates eventual consistency (a briefly stale item count is harmless), checkout requires strong consistency (double-charging is not). One sentence of recorded rationale prevents the "why is this inconsistent?" debate from recurring.
+
+**References:** [arc42 quality model](https://quality.arc42.org/); [List of system quality attributes — Wikipedia](https://en.wikipedia.org/wiki/List_of_system_quality_attributes); [Threat Modeling — OWASP](https://owasp.org/www-community/Threat_Modeling).
+
+**Agent rule sets:** [`45ck/software-architecture-skills`](https://github.com/45ck/software-architecture-skills) — platform-neutral pack of 14 skills including `quality-attribute-scenario-writer`, `tradeoff-analysis-writer`, and `architecture-risk-assessor`, with templates and examples; [`DavidROliverBA/Daves-Claude-Code-Skills`](https://github.com/DavidROliverBA/Daves-Claude-Code-Skills) — architecture and analysis skills covering non-functional requirements management, change impact, and scenario comparison, several using multi-agent parallel analysis.
+
+**Books:** *Software Architecture in Practice* — Len Bass, Paul Clements, Rick Kazman; *Release It!* — Michael T. Nygard; *Threat Modeling* — Adam Shostack.
 

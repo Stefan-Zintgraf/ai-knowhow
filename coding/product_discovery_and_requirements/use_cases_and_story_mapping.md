@@ -1,8 +1,10 @@
 # Use Cases and Story Mapping
 
-**Status:** First draft
+**Status:** Second draft
 
 Use cases and story maps describe product behavior from the perspective of people or external systems trying to achieve goals. They connect discovery to delivery without prematurely deciding internal architecture.
+
+Terms used here are defined in the [glossary](./glossary.md).
 
 ## When to use each tool
 
@@ -77,6 +79,8 @@ Write steps as intentions and observable responsibilities. “System validates t
 
 The first release should be coherent, not merely small. A narrow end-to-end journey often teaches more than completing one technical layer.
 
+Steps 7 and 8 are the instrument of [product definition](./product_definition.md): record the resulting scope, priorities, hypothesis, and success/stop criteria in its definition one-pager.
+
 ## From use case to acceptance examples
 
 Turn important paths and rules into concrete examples:
@@ -109,4 +113,17 @@ Examples clarify requirements but do not replace the broader purpose and variati
 - Quality concerns are linked where they affect the interaction.
 - The story map shows an end-to-end journey and explicit release boundaries.
 - Each planned slice has an outcome or learning purpose.
+
+## Further material
+
+**Examples:**
+
+- A library writes the use case "Borrow an item." The extensions — borrower has unpaid fines, item is reserved by someone else, item returns damaged — surface three business rules that existed only in the head of the front-desk staff and had never been written down.
+- An HR team maps the employee-onboarding journey. The walking-skeleton slice "one new hire, IT equipment only" exposes a handoff between HR and IT that no single stakeholder owned — invisible in the flat backlog, obvious on the map.
+
+**References:** [The New Backlog — Jeff Patton](https://www.jpattonassociates.com/the-new-backlog/); [Use case — Wikipedia](https://en.wikipedia.org/wiki/Use_case); [Example Mapping introduction — Cucumber](https://cucumber.io/blog/bdd/example-mapping-introduction/).
+
+**Agent rule sets:** [`rohanpatriot/product-skills`](https://github.com/rohanpatriot/product-skills) — includes a `story-mapping` skill (Patton) that builds maps, slices releases, and escapes the flat-backlog trap; [`deanpeters/Product-Manager-Skills`](https://github.com/deanpeters/Product-Manager-Skills) — includes a `user-story-mapping` skill that asks whose journey is being mapped, then builds backbone → tasks → slices. Use cases proper (Cockburn-style, with extensions and guarantees) have no well-made agent rule set yet.
+
+**Books:** *Writing Effective Use Cases* — Alistair Cockburn; *User Story Mapping* — Jeff Patton, Peter Economy; *Specification by Example* — Gojko Adzic.
 

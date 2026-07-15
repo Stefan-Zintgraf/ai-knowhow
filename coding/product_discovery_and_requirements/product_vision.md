@@ -1,8 +1,10 @@
 # Product Vision
 
-**Status:** First draft
+**Status:** Second draft
 
 A product vision describes the future change the product is intended to create. It aligns discovery without freezing a feature list or prescribing an architecture.
+
+Terms used here are defined in the [glossary](./glossary.md).
 
 ## Questions the vision should answer
 
@@ -47,7 +49,7 @@ State what the product intends to become, what it will not become, and which adj
 
 ### 7. Outcomes and signals
 
-Define outcome measures, guardrail measures, and qualitative signals. Avoid treating shipped features or usage alone as proof of value.
+Define outcome measures, guardrail measures, and qualitative signals. Avoid treating shipped features or usage alone as proof of value. These measures are what [validation and feedback](./validation_and_feedback.md) checks after release — a vision whose outcomes cannot be observed cannot be validated.
 
 ## Lightweight vision template
 
@@ -102,3 +104,16 @@ Define outcome measures, guardrail measures, and qualitative signals. Avoid trea
 - Success signals describe changed outcomes, with guardrails against harmful optimization.
 
 The vision should be stable enough to orient work but revisable when its underlying evidence changes.
+
+## Further material
+
+**Examples:**
+
+- A field-service startup writes a one-page vision: solo electricians lose their evenings to paperwork; the intended change is "the invoice is sent before the van leaves the driveway," with the principle "never make the tradesperson learn accounting vocabulary." The principle later settles a real dispute about whether to expose VAT ledger codes in the UI.
+- A team drafts an internal press release announcing the finished product two years out. Writing the customer quote proves impossible without the word "dashboard" — a signal that the vision is feature-shaped rather than outcome-shaped, and needs another pass.
+
+**References:** [Product Vision Board — Roman Pichler](https://www.romanpichler.com/tools/product-vision-board/); [Product Vision FAQ — Silicon Valley Product Group](https://www.svpg.com/product-vision-faq/); [Amazon Working Backwards — product-frameworks.com](https://www.product-frameworks.com/Amazon-Working-Backwards.html).
+
+**Agent rule sets:** [`deanpeters/Product-Manager-Skills`](https://github.com/deanpeters/Product-Manager-Skills) — battle-tested PM skill framework (workflow, interactive, and foundation tiers) including a `press-release` skill that applies Amazon Working Backwards to clarify the vision before any spec; [`phuryn/pm-skills`](https://github.com/phuryn/pm-skills) — large, actively maintained PM skill marketplace covering vision, strategy, and positioning alongside discovery and launch.
+
+**Books:** *Inspired* — Marty Cagan; *Working Backwards* — Colin Bryar, Bill Carr; *Strategize* — Roman Pichler.

@@ -1,8 +1,10 @@
 # Product Discovery
 
-**Status:** First draft
+**Status:** Second draft
 
 Product discovery reduces uncertainty about whether a problem is worth solving, for whom, and which solution direction is desirable, usable, viable, and feasible. Its output is evidence and decisions—not merely ideas or a backlog.
+
+Terms used here are defined in the [glossary](./glossary.md).
 
 ## Four recurring risks
 
@@ -12,6 +14,8 @@ Product discovery reduces uncertainty about whether a problem is worth solving, 
 - **Viability:** Does it work for the business, operations, policy, ethics, and legal environment?
 
 ## Discovery loop
+
+How often the loop runs — continuously, in timeboxed cycles, or between gates — is a tailoring decision; see [lifecycle tailoring](./lifecycle_tailoring.md).
 
 ### 1. Frame an outcome
 
@@ -58,7 +62,7 @@ Define success, failure, and inconclusive criteria before running the test.
 
 ### 7. Decide and record
 
-Proceed, adapt, pause, or abandon. Record evidence strength, remaining uncertainty, and the next decision—not just experiment results.
+Proceed, adapt, pause, or abandon. Record evidence strength, remaining uncertainty, and the next decision—not just experiment results. Selected opportunities and tested solution directions feed [product definition](./product_definition.md), where they are committed into scope.
 
 ## Discovery artifacts
 
@@ -119,4 +123,17 @@ Inconclusive: ...
 - Alternative solutions were considered.
 - The next release or experiment has success and guardrail measures.
 - Remaining uncertainty is carried forward rather than disguised as certainty.
+
+## Further material
+
+**Examples:**
+
+- A team framed the outcome "raise trial-to-paid conversion," ran weekly customer interviews, and organized findings in an Opportunity Solution Tree. The riskiest assumption — "users understand the pricing model by day 3" — was tested with a fake-door pricing page before any billing code was written.
+- Instead of asking "would you use an automated reminder feature?", an interviewer asks "walk me through the last time you chased an unpaid invoice." The concrete story reveals that reminders are already automated through the bank app; the real pain is reconciling partial payments — an opportunity no feature request had mentioned.
+
+**References:** [Opportunity Solution Trees — Teresa Torres, Product Talk](https://www.producttalk.org/opportunity-solution-tree/); [Product Discovery — Silicon Valley Product Group](https://www.svpg.com/product-discovery/); [Framework for Innovation / Double Diamond — Design Council](https://www.designcouncil.org.uk/our-resources/framework-for-innovation/).
+
+**Agent rule sets:** [`rohanpatriot/product-skills`](https://github.com/rohanpatriot/product-skills) — four skills built from the source texts, including `continuous-discovery` (Torres) and `jobs-to-be-done` (Moesta switch interviews, forces diagrams); [`jacksoncalling/argo-continuous-discovery`](https://github.com/jacksoncalling/argo-continuous-discovery) — a folder-based operator for the full Continuous Discovery Habits workflow, from outcome through opportunity extraction to assumption tests, with interview-quality coaching; [`assimovt/productskills`](https://github.com/assimovt/productskills) — compact, opinionated skills (Mom Test, JTBD, opportunity mapping), 50–150 lines each.
+
+**Books:** *Continuous Discovery Habits* — Teresa Torres; *The Mom Test* — Rob Fitzpatrick; *Testing Business Ideas* — David J. Bland, Alexander Osterwalder.
 

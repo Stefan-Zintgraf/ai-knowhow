@@ -1,8 +1,10 @@
 # Domain Discovery
 
-**Status:** First draft
+**Status:** Second draft
 
 Domain discovery builds a shared understanding of the real-world concepts, language, rules, events, and organizational boundaries the software must respect. It is especially valuable when business behavior is complex or terminology differs across groups.
+
+Terms used here are defined in the [glossary](./glossary.md). Note the distinction: the domain glossary produced by this stage records the *project's* domain language; the collection glossary defines the *method's* terms.
 
 Domain discovery precedes and informs domain modeling. Its purpose is learning; the first diagram is not the final architecture.
 
@@ -100,4 +102,17 @@ An **invariant** must remain true within a defined consistency boundary. Not eve
 - Context-specific meanings and ownership are explicit.
 - Candidate boundaries explain what changes together and why.
 - Discoveries trace into product behavior and requirements.
+
+## Further material
+
+**Examples:**
+
+- During an EventStorming session, the event `Payment authorized` collects a hotspot sticker: finance explains that authorizations above a threshold go through a manual fraud review nobody in engineering knew existed. The review becomes an explicit policy with its own actor, instead of a surprise discovered in production.
+- Example mapping of the rule "returned goods are refunded at purchase price" produces the counterexample "price changed between purchase and return during a promotion." The single rule splits into two — refund basis and promotion adjustment — each with its own owner.
+
+**References:** [EventStorming](https://www.eventstorming.com/); [Domain-Driven Design Reference — Eric Evans](https://www.domainlanguage.com/ddd/reference/); [Domain Storytelling](https://domainstorytelling.org/).
+
+**Agent rule sets:** [`ddd-crew/ddd-starter-modelling-process`](https://github.com/ddd-crew/ddd-starter-modelling-process) — scaffold from business model and discovery toward context boundaries and code; [`ForceInjection/domain-driven-design-skills`](https://github.com/ForceInjection/domain-driven-design-skills) — agent workflow from discovery through strategic and tactical design, validation, and specification bridging; [`lagz0ne/design-skill`](https://github.com/lagz0ne/design-skill) — a five-phase EventStorming-based design process (Requirements → Big Picture → Processes → Data/Flows → Integration) producing a navigable catalog of Mermaid diagrams.
+
+**Books:** *Introducing EventStorming* — Alberto Brandolini; *Learning Domain-Driven Design* — Vlad Khononov; *Domain Storytelling* — Stefan Hofer, Henning Schwentner.
 

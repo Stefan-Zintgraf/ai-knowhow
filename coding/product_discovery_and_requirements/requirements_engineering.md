@@ -1,8 +1,10 @@
 # Requirements Engineering
 
-**Status:** First draft
+**Status:** Second draft
 
 Requirements engineering is the disciplined work of eliciting, analyzing, specifying, validating, and managing what a system must achieve and the conditions under which it must operate. ISO/IEC/IEEE 29148 is the principal international standard.
+
+Terms used here are defined in the [glossary](./glossary.md).
 
 Requirements should preserve intent while leaving design freedom where no constraint is justified.
 
@@ -70,7 +72,7 @@ Trace rationale as well as identifiers. Otherwise teams know that two items are 
 
 ## Prioritization
 
-Consider:
+Release-level prioritization — which opportunities and capabilities to pursue — happens during [product definition](./product_definition.md). The criteria below apply when ordering requirements within already-committed scope:
 
 - Contribution to desired outcomes
 - Risk reduction and learning value
@@ -100,4 +102,17 @@ Changing a requirement is not failure; unmanaged change is. For consequential ch
 - Conflicts and assumptions are visible.
 - Each important requirement has a viable verification method.
 - The set is understandable to product, domain, design, engineering, and test participants.
+
+## Further material
+
+**Examples:**
+
+- A medical-device team traces every requirement to a hazard-analysis entry and an acceptance test. When an auditor asks why the alarm latency limit is 3 seconds, the trace answers with the clinical rationale instead of a shrug — and when the limit changes, the affected tests are found mechanically.
+- "The dashboard shall be fast" is repaired into "When a clinician opens the ward dashboard over hospital Wi-Fi, the system shall render current vitals within 2 seconds at the 95th percentile" — vague aspiration becomes a verifiable requirement with trigger, condition, and measure.
+
+**References:** [ISO/IEC/IEEE 29148:2018 — Requirements engineering](https://www.iso.org/standard/72089.html); [EARS — Easy Approach to Requirements Syntax](https://alistairmavin.com/ears/); [Volere Requirements Specification Template](https://www.volere.org/templates/volere-requirements-specification-template/).
+
+**Agent rule sets:** [`RafaelGorski/Problem-Based-SRS`](https://github.com/RafaelGorski/Problem-Based-SRS) — an Agent Skill implementing a peer-reviewed Problem-Based SRS methodology tracing Customer Problems → Customer Needs → Functional/Non-Functional Requirements, aligned with ISO/IEC/IEEE 29148:2018, with a traceability-validation step. Classic requirements engineering is otherwise thinly covered by agent skills; the PM-oriented packs listed under [product definition](./product_definition.md) stop at the PRD level.
+
+**Books:** *Software Requirements* (3rd ed.) — Karl Wiegers, Joy Beatty; *Mastering the Requirements Process* — Suzanne Robertson, James Robertson; *Discovering Requirements* — Ian Alexander, Ljerka Beus-Dukic.
 
