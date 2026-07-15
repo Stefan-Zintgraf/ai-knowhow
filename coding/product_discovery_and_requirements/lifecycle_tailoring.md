@@ -92,13 +92,15 @@ The cadence also sets the [validation review](./validation_and_feedback.md#revie
 
 Every consequential decision type needs exactly one named owner. Unowned decisions default to "continue," which is how discovery loops run forever and scope only grows.
 
+Use [Collaboration and decision ownership](./collaboration_and_decision_ownership.md) to distinguish the accountable owner from required contributors, specialist authorities, formal approvers, and facilitators. A joint product-trio review still needs one named decision owner.
+
 | Decision | Typical owner |
 | --- | --- |
-| Change the vision or its scope boundaries | Product lead with sponsor |
-| Proceed / adapt / pause / abandon after an experiment | Product trio (product, design, engineering) |
+| Change the vision or its scope boundaries | Product lead; sponsor approval where required |
+| Proceed / adapt / pause / abandon after an experiment | Product lead, after product-trio review |
 | Cut or defer scope from a release | Product lead |
 | Accept or reject a requirement change | Requirement owner named in the change record |
-| Release go / no-go | Delivery lead with operations |
+| Release go / no-go | Delivery or service owner, after operations review |
 | Reopen an earlier decision after validation evidence | Owner of the reopened artifact |
 
 Name an escalation path for disagreements, and record each decision in the decision log with the evidence and its strength.
@@ -151,4 +153,5 @@ Optional: ...
 - Ceremony matches risk, irreversibility, and regulation — per driver, not uniformly.
 - One cycle has a defined decision output.
 - Every consequential decision type has one named owner and an escalation path.
+- Required contributors, specialist authorities, and formal approvers are named where applicable.
 - The tailoring itself has a revisit trigger.

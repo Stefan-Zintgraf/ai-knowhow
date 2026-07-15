@@ -2,7 +2,7 @@
 
 **Status:** First draft — for discussion
 
-**Revision contract:** Before this plan advances beyond draft, apply the ordered edits and pass the contribution-coverage gate in [Existing GitHub Skillsets — Fit Analysis](./github_skillsets.md#7-plan-adjustment-and-contribution-coverage-contract). The seven per-skill contribution ledgers beside that analysis are part of the acceptance evidence.
+**Revision contract:** Before this plan advances beyond draft, apply the ordered edits and pass the contribution-coverage gate in the [skillset plan update plan](./skillset_plan_update_plan.md) (derived from the [GitHub skillsets fit analysis](./github_skillsets.md)). The seven per-skill contribution ledgers beside that analysis are part of the acceptance evidence.
 
 ## 1. Goal
 
@@ -52,6 +52,7 @@ Every method document in the parent folder must be consumed by at least one skil
 | --- | --- | --- |
 | [overview.md](../overview.md) | `tailor-lifecycle` | The lifecycle model, the pragmatic workflow, the minimum useful discovery package, the readiness-for-design checklist (the loop's exit criterion) |
 | [lifecycle_tailoring.md](../lifecycle_tailoring.md) | `tailor-lifecycle` | Entry-point classification, ceremony drivers, stage/artifact selection, cadence models, decision-authority table, one-pager template |
+| [collaboration_and_decision_ownership.md](../collaboration_and_decision_ownership.md) | all skills | One named accountable owner per consequential decision; required contributors and specialist authorities; cross-functional participation; architecture-overlap, escalation, and reopening rules |
 | [product_vision.md](../product_vision.md) | `brainstorm-vision` (adjust), `define-release` | Vision template sections → the finalize stubs (§5.1); **completion checks → the finalize gate**; scope-boundaries section → `define-release`'s scope check |
 | [product_discovery.md](../product_discovery.md) | `discover-product` | The 7-step discovery loop as phase structure, four risk classes, experiment-card template, failure modes → guardrails, completion checks → wrap-up gate |
 | [product_definition.md](../product_definition.md) | `define-release` | The 7 core activities as phase structure, one-pager template → `REL<n>-definition.md`, prioritization criteria, failure modes → guardrails, completion checks → gate |

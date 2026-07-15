@@ -16,6 +16,8 @@ There is no single universal phase name. In this collection:
 
 These activities overlap and repeat. They are not a one-time handoff to design.
 
+The lifecycle also does not divide work by department. Product, design, engineering, domain experts, and governance specialists participate where their evidence and authority are needed; one named person remains accountable for each consequential decision. See [Collaboration and decision ownership](./collaboration_and_decision_ownership.md).
+
 ## The lifecycle
 
 The vision is a slow-changing anchor. Discovery, definition, and requirements form a fast loop that runs continuously or in short cycles. Delivery consumes coherent slices from that loop, and validation feeds evidence back into every earlier stage.
@@ -68,6 +70,7 @@ Stage documents, in lifecycle order:
 Reference documents:
 
 - [Lifecycle tailoring](./lifecycle_tailoring.md) — derive a specific lifecycle for a specific topic.
+- [Collaboration and decision ownership](./collaboration_and_decision_ownership.md) - default accountability, required participation, specialist authority, and skillset implications across the lifecycle.
 - [Glossary](./glossary.md) — method terms used across the collection.
 - [Resources](./resources.md) — reading order, technique index, and adoption criteria. Stage-specific examples, references, agent rule sets, and books live in each stage document's **Further material** section.
 
@@ -105,6 +108,8 @@ For a small product, avoid producing documents merely for completeness. A useful
 ## Readiness for software design
 
 Design can begin incrementally when the team can answer:
+
+Readiness is a team property, not a product-management sign-off. Use [Collaboration and decision ownership](./collaboration_and_decision_ownership.md) to ensure the answers include the necessary product, design, engineering, domain, and specialist judgment.
 
 - Whose outcome are we improving, and how will improvement be recognized?
 - Which behavior is essential now, and which is deliberately deferred?

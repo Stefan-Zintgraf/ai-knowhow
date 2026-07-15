@@ -90,7 +90,7 @@ For each file record repository/URL, pinned commit/tag/release, path, date, lice
 | [Glossary](../glossary.md) | Use outcome, evidence, opportunity, solution, assumption, experiment, signal, success, guardrail, and stop criteria consistently | Terminology audit passes; add canonical solution-candidate terminology if needed |
 | [Overview](../overview.md) | Support the minimum useful discovery package and carry evidence toward readiness for design | End-to-end topic retains visible uncertainty and evidence-supported scope |
 | [Lifecycle tailoring](../lifecycle_tailoring.md) | Read `lifecycle-onepager.md`, respect selected artifacts/cadence/authority, and record deliberate deviation | Low- and high-ceremony fixtures pass |
-| [GitHub skillset analysis](./github_skillsets.md) | Apply all relevant integration items, all three gap corrections, dependency rules, source audit, and validation | Ledger has no undecided row |
+| [GitHub skillset analysis](./github_skillsets.md) + [update plan](./skillset_plan_update_plan.md) | Apply all relevant integration items, all three gap corrections, dependency rules, source audit, and validation | Ledger has no undecided row |
 | [Skillset plan](./prod_discovery_requirements_skillset_plan.md) | Seed from vision/companion; maintain proprietary IDs; call internal skills only through defined handoffs; end with lifecycle-aware next step | End-to-end trace/handover tests pass |
 
 ## Required artifact and trace contract
