@@ -123,7 +123,7 @@ Examples clarify requirements but do not replace the broader purpose and variati
 
 **References:** [The New Backlog — Jeff Patton](https://www.jpattonassociates.com/the-new-backlog/); [Use case — Wikipedia](https://en.wikipedia.org/wiki/Use_case); [Example Mapping introduction — Cucumber](https://cucumber.io/blog/bdd/example-mapping-introduction/).
 
-**Agent rule sets:** [`rohanpatriot/product-skills`](https://github.com/rohanpatriot/product-skills) — includes a `story-mapping` skill (Patton) that builds maps, slices releases, and escapes the flat-backlog trap; [`deanpeters/Product-Manager-Skills`](https://github.com/deanpeters/Product-Manager-Skills) — includes a `user-story-mapping` skill that asks whose journey is being mapped, then builds backbone → tasks → slices. Use cases proper (Cockburn-style, with extensions and guarantees) have no well-made agent rule set yet.
+**Agent rule sets:** [`huntsyea/product-skills`](https://github.com/huntsyea/product-skills) (formerly `rohanpatriot/product-skills`) — includes a `story-mapping` skill (Patton) that builds maps, slices releases, and escapes the flat-backlog trap; [`deanpeters/Product-Manager-Skills`](https://github.com/deanpeters/Product-Manager-Skills) — includes a `user-story-mapping` skill that asks whose journey is being mapped, then builds backbone → tasks → slices. Use cases proper (Cockburn-style, with extensions and guarantees) have no well-made agent rule set yet.
 
 **Books:** *Writing Effective Use Cases* — Alistair Cockburn; *User Story Mapping* — Jeff Patton, Peter Economy; *Specification by Example* — Gojko Adzic.
 
