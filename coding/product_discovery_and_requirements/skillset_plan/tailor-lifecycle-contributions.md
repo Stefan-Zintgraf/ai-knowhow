@@ -75,7 +75,7 @@ For every inspected source, record repository and canonical URL, pinned commit/t
 | Lifecycle tailoring — completion checks | Use all six checks as the judgment-based finalize rubric | Scored finalize report contains one result per check |
 | [Resources](../resources.md) | Use the practical technique index to map uncertainty to stages/techniques; apply the evaluation rule | Fixtures show recommendations vary by uncertainty and never select artifacts just for completeness |
 | [Glossary](../glossary.md) | Use canonical method vocabulary | Terminology audit passes |
-| [GitHub skillset analysis](./github_skillsets.md) + [update plan](./skillset_plan_update_plan.md) | Apply external dependency policy, handover UX, re-entry pattern, linter use, source audit, and validation strategy | Contribution ledger has no undecided item |
+| [GitHub skillset analysis](./github_skillsets.md) + [revision contract](./skillset_plan_update_plan.md) | Apply external dependency policy, handover UX, re-entry pattern, linter use, source audit, and validation strategy | Contribution ledger has no undecided item |
 | [Skillset plan](./prod_discovery_requirements_skillset_plan.md) | Remain a short interview producing one file; record deliberate skips; control downstream handover; be respected by later skills | End-to-end reference run confirms later skills read and follow the one-pager |
 
 ## Objective authoring coverage gate

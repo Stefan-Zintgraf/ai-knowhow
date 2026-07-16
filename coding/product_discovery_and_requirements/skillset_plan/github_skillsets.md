@@ -1,6 +1,6 @@
 # Existing GitHub Skillsets — Fit Analysis
 
-**Status:** Revised draft — decision input for the [skillset plan](./prod_discovery_requirements_skillset_plan.md); the actionable consequences (plan gaps and revision contract) live in [skillset_plan_update_plan.md](./skillset_plan_update_plan.md)
+**Status:** Revised draft — decision input for the [skillset plan](./prod_discovery_requirements_skillset_plan.md); the actionable consequences live in the [revision contract](./skillset_plan_update_plan.md)
 **Question answered:** Can the agent rule sets referenced in the stage docs' *Further material* sections replace, shorten, or improve the proprietary skillset planned for the discovery–definition–requirements loop — and how should we continue?
 
 All 14 referenced repositories were inspected (README + structure) as of 2026-07-15.
@@ -183,5 +183,5 @@ Grouped by the lifecycle stage whose doc references them. Verdict vocabulary: **
 
 ## 6. Actionable follow-up (moved)
 
-The three plan gaps this comparison exposed, the plan-adjustment and contribution-coverage contract, the ordered plan edits, and the coverage gate now live in [skillset_plan_update_plan.md](./skillset_plan_update_plan.md). Open that file when revising the skillset plan; this analysis remains the evidence base behind it.
+The actionable consequences of this comparison — the ordered plan edits (including the three gap closures: solution alternatives, deterministic linter, regression validation), the contribution-coverage contract, and the acceptance gate — now live in the [revision contract](./skillset_plan_update_plan.md). Open that file when revising the skillset plan; this analysis remains the evidence base behind it, and the full gap narratives are preserved in its git history.
 

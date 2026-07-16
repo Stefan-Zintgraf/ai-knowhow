@@ -2,7 +2,7 @@
 
 **Status:** First draft — for discussion
 
-**Revision contract:** Before this plan advances beyond draft, apply the ordered edits and pass the contribution-coverage gate in the [skillset plan update plan](./skillset_plan_update_plan.md) (derived from the [GitHub skillsets fit analysis](./github_skillsets.md)). The seven per-skill contribution ledgers beside that analysis are part of the acceptance evidence.
+**Revision contract:** Before this plan advances beyond draft, apply the ordered edits and pass the contribution-coverage gate in the [skillset plan revision contract](./skillset_plan_update_plan.md) (derived from the [GitHub skillsets fit analysis](./github_skillsets.md)). The seven per-skill contribution ledgers beside that analysis are part of the acceptance evidence.
 
 ## 1. Goal
 
