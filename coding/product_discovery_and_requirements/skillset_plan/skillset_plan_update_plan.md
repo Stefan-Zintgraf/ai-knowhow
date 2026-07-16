@@ -92,7 +92,7 @@ Items are ordered. Items 1–3 close the §1 gaps; items 4–8 ensure the extern
    - Reserve `SOL` in `create-vision-companion`'s Phase 0 ID inventory.
    - Re-anchor `ASM#`: assumptions cite the `SOL#` they belong to, or `OPP#` for genuinely solution-independent assumptions; `EXP#` cards test `ASM`s in the context of a named `SOL` when applicable.
    - Add “alternative solutions were considered” to the wrap-up gate. Refuse to rank solution assumptions when only one direction exists unless an explicit `DEC#` records why alternatives were not viable.
-   - Update the artifact table, method-doc coverage table, traceability description, loop diagram, discovery phase description, linter rules, and reference-topic scoring rubric together.
+   - Update the artifact table, method-doc coverage table, traceability description, loop diagram, discovery phase description, linter rules, and reference-topic scoring rubric together. Keep the product-discovery row of the [resources.md reference map](../resources.md#reference-map) in sync: it now names solution alternatives and experiments and cites their lineage (Torres ideation, Bland/Osterwalder, Lean Startup, Mom Test); any further change to the discovery concept set must update that row in the same edit.
 2. **Close Gap 2 — add a workspace linter as a first-class component:**
    - Specify a deterministic script, not an LLM skill, that parses the companion bundle and loop workspace.
    - At minimum check ID uniqueness/format, reserved-family collisions, dangling and invalid upward citations, orphaned spine artifacts, `EV` rows without human-supplied source/date/strength, `SOL`/`ASM`/`EXP` relationship validity, `REL`s without hypothesis/success/guardrail/stop criteria, `REQ`s without verification method or explicit open marker, `QAS`s without measurable stimulus/response, and reserved-name collisions.
@@ -171,5 +171,7 @@ The final coverage review should produce a short change map: contribution ID →
 ### 2.5 Scope and housekeeping
 
 Stage-doc housekeeping (the moved `huntsyea/product-skills` URL and deanpeters license annotation) was applied directly on 2026-07-15 and needs no further action.
+
+The product-discovery row of the [resources.md reference map](../resources.md#reference-map) was applied directly on 2026-07-16: its label previously omitted solution alternatives and experiments (both first-class in the method doc's loop and in this plan's Gap 1 and item 6), and its lineage omitted Bland/Osterwalder's *Testing Business Ideas* (assumption mapping, experiment card), *The Lean Startup* (validated learning, pre-declared criteria), and *The Mom Test* (past-behavior evidence discipline). The row now names all stage concepts and cites their grounding; the non-build-alternatives widening beyond Torres is flagged in its assessment as a deliberate collection choice. No further action beyond the sync rule in item 1.
 
 The 14 repositories inspected for the fit analysis define the external source universe for this revision. The plan may discover additional sources later, but doing so reopens the relevant ledgers rather than bypassing them. The plan and method docs remain authoritative where external advice conflicts with the proprietary spine or the chosen lifecycle.
