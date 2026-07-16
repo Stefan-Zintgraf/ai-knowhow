@@ -84,7 +84,7 @@ This is an **authoring-time audit**, never a runtime fetch. Distilled material i
 
 ### 2.3 Ordered plan edits
 
-Items are ordered. Items 1–3 close the §1 gaps; items 4–8 ensure the external contributions survive the transition from analysis to plan and then to authored skills; item 9 operationalizes the new cross-cutting method contract.
+Items are ordered. Items 1–3 close the §1 gaps; items 4–8 ensure the external contributions survive the transition from analysis to plan and then to authored skills; items 9–10 operationalize the cross-cutting method contracts (decision ownership; vision stability).
 
 1. **Close Gap 1 — add solution alternatives to `discover-product` (§5.4 of the plan):**
    - Insert a “generate alternatives” phase between opportunity mapping and assumption exposure, per method doc step 4. Require multiple materially different directions, including process, policy, manual-service, and no-build options where plausible.
@@ -125,6 +125,7 @@ Items are ordered. Items 1–3 close the §1 gaps; items 4–8 ensure the extern
    - Give each accepted ledger row a plan location and planned skill-file destination.
    - When a skill is authored, replace planned evidence with the actual file/section/test reference.
    - Treat method-doc changes, donor-version changes, and altered artifact schemas as triggers to reopen the affected ledger rows and rerun their gates.
+   - Make [overview.md](../overview.md) a post-authoring deliverable: once the skills are authored, reconcile the collection's entry document — the lifecycle diagram and clarifications, documents list, pragmatic workflow, and minimum useful discovery package — with what was actually built (skill set, artifact schema including the strategy section, ceremony-gated roadmap, `SOL#`, one-pagers, and linter). The skillset update is not complete while overview.md describes a different method than the skills enforce; reconcile any other method doc the implementation diverged from at the same time.
 
 9. **Operationalize collaboration and decision ownership:**
    - Extend `lifecycle-onepager.md` so each consequential decision or stage names one accountable owner, required contributors, specialist authorities, formal approvers, escalation path, and evidence-based reopen trigger; role groups alone are not valid accountable owners.
@@ -133,6 +134,14 @@ Items are ordered. Items 1–3 close the §1 gaps; items 4–8 ensure the extern
    - Preserve collaborative authorship while keeping decision authority explicit: accountability does not imply sole authorship, and consultation does not imply joint accountability.
    - Add reference-topic cases that fail on a group-only owner, missing required specialist or engineering input, a department-boundary handoff, or refusal to reopen upstream artifacts when design or operational evidence invalidates them.
    - Keep these rules inside existing lifecycle and skill artifacts; do not create a standalone ownership skill or mandatory runtime document.
+
+10. **Operationalize vision stability — vision vs. strategy, vision pivots vs. discovery pivots:**
+   - Use the glossary terms in skill prose and artifacts: an adapt decision in `discover-product` or a reopening from `validate-release` is a **discovery pivot** — routine, and never a silent edit of the vision.
+   - Gate vision changes as **vision pivots**: `brainstorm-vision` and `create-vision-companion` may revise the vision only through an explicit `DEC#` citing the evidence that invalidates the intended future or target need; routine findings must first be routed to opportunities, solutions, scope, or strategy.
+   - Extend item 7's `validate-release` backtracking triggers accordingly: only "evidence contradicts a foundational assumption" maps to the vision; all other routes reopen downstream artifacts.
+   - Give **product strategy** its recorded home: a thin ordered-outcomes section in the vision companion (with `create-vision-companion` reserving the corresponding fields or ID family). `discover-product` and `define-release` check opportunity selection against it; reordering it on evidence is a routine discovery pivot, requiring no vision-pivot gate. No standalone strategy skill or stage.
+   - Make the **product roadmap** a ceremony-gated optional artifact: `tailor-lifecycle` decides adoption per the ceremony drivers (coordination cost, sponsor communication, product lifetime) and records adoption or skip in the lifecycle one-pager; when adopted, `define-release` maintains it as an outcome-based rolling now/next/later view. The linter rejects roadmap entries that name features or dates without an outcome; low-ceremony topics must not be forced to produce one.
+   - Add reference-topic cases: a failed experiment wrongly escalated into a vision rewrite (must be refused and rerouted downstream), a genuinely vision-invalidating finding that passes the vision-pivot gate with its `DEC#` and evidence recorded, a low-ceremony topic that correctly skips the roadmap, and a high-coordination topic that adopts and maintains it.
 
 ### 2.4 Coverage gate for accepting the revised plan
 
@@ -152,6 +161,8 @@ The revised skillset plan may advance from draft only when all of the following 
 - [ ] Every consequential decision represented by the plan has one named accountable owner plus applicable contributors, specialist authorities, approvers, escalation path, and reopen trigger; a department or role group alone is not accepted as the owner.
 - [ ] Reference-topic validation covers group-only ownership, missing specialist or engineering participation, department-boundary handoffs, and evidence-driven reopening during design or operation.
 - [ ] The ownership rules remain cross-cutting requirements of existing skills and artifacts; no standalone skill or mandatory runtime artifact has been introduced.
+- [ ] Vision changes are gated as vision pivots (explicit `DEC#` citing invalidating evidence) in every skill that can touch the vision; discovery and validation findings route downstream first as discovery pivots; product strategy is recorded as a thin ordered-outcomes layer in the vision companion and checked during opportunity selection; the product roadmap is ceremony-gated via `tailor-lifecycle` and outcome-based, rolling, and feature/date-free when adopted; and reference-topic validation covers a wrongly escalated vision rewrite, a genuine vision pivot, a roadmap skip on a low-ceremony topic, and a roadmap adoption on a high-coordination topic.
+- [ ] The plan schedules a post-authoring reconciliation of [overview.md](../overview.md) (and any other affected method docs) against the implemented skillset, and completion of the skillset update is gated on the entry document accurately reflecting the achieved results.
 - [ ] A final coverage review compares the revised plan against the fit analysis's §§2, 3, and 5, the §1 gaps above, and all seven ledgers and records zero unexplained omissions.
 - [ ] All links in the planning bundle resolve after its move into `skillset_plan/`.
 

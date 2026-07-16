@@ -4,6 +4,8 @@
 
 A product vision describes the future change the product is intended to create. It aligns discovery without freezing a feature list or prescribing an architecture.
 
+The vision is not the product strategy: the vision names the destination, the strategy the path — which outcomes, segments, and opportunities to pursue in which order. Strategy changes far more often than the vision. Record it as a thin ordered-outcomes layer alongside the vision (see [Strategy and roadmap](#strategy-and-roadmap) below); it is exercised through opportunity selection and prioritization in [product discovery](./product_discovery.md) and [product definition](./product_definition.md).
+
 Terms used here are defined in the [glossary](./glossary.md).
 
 ## Questions the vision should answer
@@ -84,7 +86,17 @@ Define outcome measures, guardrail measures, and qualitative signals. Avoid trea
 
 ## Critical assumptions
 - ...
+
+## Strategy (ordered outcomes)
+1. <outcome — target segment — why this order>
+2. ...
 ```
+
+## Strategy and roadmap
+
+The strategy section of the vision one-pager answers "what beyond the next slice": an ordered list of the outcomes and target segments on the path to the vision. Reordering it when discovery or validation evidence demands is a routine discovery pivot, not a vision pivot.
+
+Where coordination cost, sponsor communication, or product lifetime warrants the ceremony, expand the strategy into a **product roadmap**: an outcome-based, rolling now/next/later view, revised as evidence arrives. Never commit features and dates. Whether to adopt the roadmap artifact at all is a [lifecycle tailoring](./lifecycle_tailoring.md) decision; low-ceremony topics skip it and rely on the strategy list and the decision log's recorded deferrals.
 
 ## Ways to develop the vision
 
@@ -103,7 +115,7 @@ Define outcome measures, guardrail measures, and qualitative signals. Avoid trea
 - Scope exclusions prevent obvious interpretations that would derail discovery.
 - Success signals describe changed outcomes, with guardrails against harmful optimization.
 
-The vision should be stable enough to orient work but revisable when its underlying evidence changes.
+The vision should be stable enough to orient work but revisable when its underlying evidence changes. Expect frequent discovery pivots — changed opportunities, solutions, scope, and strategy — under a stable vision; a vision pivot is rare and corresponds to evidence that invalidates the intended future or target need, not to a weak feature or a failed experiment.
 
 ## Further material
 

@@ -20,7 +20,7 @@ The lifecycle also does not divide work by department. Product, design, engineer
 
 ## The lifecycle
 
-The vision is a slow-changing anchor. Discovery, definition, and requirements form a fast loop that runs continuously or in short cycles. Delivery consumes coherent slices from that loop, and validation feeds evidence back into every earlier stage.
+The vision is a slow-changing anchor; a thin product strategy recorded alongside it — ordered outcomes and target segments — names the path toward it and is revised as evidence arrives. Discovery, definition, and requirements form a fast loop that runs continuously or in short cycles. Delivery consumes coherent slices from that loop, and validation feeds evidence back into every earlier stage.
 
 ```text
 Product vision  (slow-changing anchor)
@@ -47,7 +47,9 @@ Validation and feedback
         ↺  reopens vision, opportunities, scope, or requirements
 ```
 
-Two clarifications the diagram cannot show:
+Three clarifications the diagram cannot show:
+
+- **Most pivots are discovery pivots.** Evidence normally changes opportunities, solutions, scope, or strategy — routine course corrections under a stable vision. A vision pivot, revising the intended future itself, is rare and requires evidence that invalidates the target need.
 
 - **Quality attributes start early.** Qualities that could change the architecture are among the riskiest assumptions, so their discovery begins during product discovery. The requirements stage sharpens them into measurable scenarios; it does not begin them.
 - **Not every topic enters at the top.** A greenfield product enters at the vision; a rework enters from validation evidence; a compliance mandate enters at requirements. See [Lifecycle tailoring](./lifecycle_tailoring.md) for entry points and how to size the lifecycle for a specific topic.

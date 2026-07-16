@@ -8,7 +8,7 @@ Terms used here are defined in the [glossary](./glossary.md).
 
 ## Inputs
 
-- [Product vision](./product_vision.md): direction, principles, and scope boundaries
+- [Product vision](./product_vision.md) and its strategy: direction, principles, scope boundaries, and the ordered outcomes the next investment should serve
 - [Discovery](./product_discovery.md) evidence: opportunities, tested assumptions, experiment results
 - [Domain discovery](./domain_discovery.md) outputs where they exist: capability map, domain glossary
 - Constraints: dates, budgets, contracts, platform commitments
@@ -17,7 +17,7 @@ Terms used here are defined in the [glossary](./glossary.md).
 
 ### 1. Select opportunities
 
-Choose which validated opportunities the next investment addresses. Record which opportunities are deferred and why — an unrecorded deferral gets re-litigated in every planning conversation.
+Choose which validated opportunities the next investment addresses. Check the selection against the strategy's ordered outcomes: a selection that fights the strategy needs a strategy conversation (and a roadmap update where one exists), not silent reordering. Record which opportunities are deferred and why — an unrecorded deferral gets re-litigated in every planning conversation.
 
 ### 2. Define capabilities
 

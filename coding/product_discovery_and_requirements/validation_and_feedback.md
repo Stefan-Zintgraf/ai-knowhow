@@ -36,6 +36,8 @@ Route each finding to the decision it challenges. Typical routes:
 | Repeated audit or compliance findings | [Requirements](./requirements_engineering.md) and their traceability |
 | Evidence contradicts a foundational assumption | [Product vision](./product_vision.md) itself |
 
+All routes but the last are discovery pivots — routine course corrections within a stable vision. Only the last is a vision pivot, and it should be rare: route a finding downstream first, and challenge the vision only when the evidence invalidates the intended future or target need itself.
+
 ## Decide and record
 
 Apply the same discipline as discovery decisions: **persevere, adapt, pause, or retire** — with evidence strength recorded in the decision log. Reopening a decision is the feedback loop working, not a failure.

@@ -62,7 +62,7 @@ Define success, failure, and inconclusive criteria before running the test.
 
 ### 7. Decide and record
 
-Proceed, adapt, pause, or abandon. Record evidence strength, remaining uncertainty, and the next decision—not just experiment results. Selected opportunities and tested solution directions feed [product definition](./product_definition.md), where they are committed into scope.
+Proceed, adapt, pause, or abandon. An adapt decision is a discovery pivot — changing the opportunity or solution direction within a stable vision; it is routine and does not reopen the vision. Record evidence strength, remaining uncertainty, and the next decision—not just experiment results. Selected opportunities and tested solution directions feed [product definition](./product_definition.md), where they are committed into scope.
 
 ## Discovery artifacts
 

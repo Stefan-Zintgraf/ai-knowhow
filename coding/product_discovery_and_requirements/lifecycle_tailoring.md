@@ -76,6 +76,8 @@ Then weight the stages by where the dominant uncertainty sits (the [practical te
 | Contractual or regulated completeness | [Requirements engineering](./requirements_engineering.md) |
 | Whether shipped work created value | [Validation and feedback](./validation_and_feedback.md) |
 
+The product roadmap is the canonical ceremony-gated artifact: adopt it only when coordination cost, sponsor communication, or product lifetime warrants it, keep it outcome-based and rolling (now/next/later, never features and dates), and let low-ceremony topics rely on the vision's strategy list and the decision log instead.
+
 Record skipped stages with the reason. A deliberate skip is a decision; a silent skip is a blind spot.
 
 ## Step 4 — Choose the cadence
