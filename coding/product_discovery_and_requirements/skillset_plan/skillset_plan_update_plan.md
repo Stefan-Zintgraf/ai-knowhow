@@ -45,9 +45,49 @@ For every `distill` row, audit each donor file during authoring and record:
 
 Never fetch third-party repositories at runtime. Vendor distilled material with provenance. Version-pin callable specialists. Treat unlicensed material as reference-only. Do not copy or distill CC BY-NC-SA material from `deanpeters/Product-Manager-Skills`.
 
+## Execution model (orchestration)
+
+This revision is executed by an **orchestrator** (the main session) that dispatches every unit of work to a **fresh-context sub-agent**. The orchestrator holds no working state beyond this contract; it dispatches tasks, integrates returned results, enforces the reference-map sync rule, and runs the acceptance gate. **The orchestrator performs no analysis or authoring itself** — its only direct edits are trivial integration bookkeeping (e.g. moving a returned digest into place). Every substantive read, decision, or edit happens inside a sub-agent that starts cold with only its scoped inputs.
+
+### Task envelope
+
+Each sub-agent is dispatched with an explicit envelope:
+
+- **Reads** — the exact files it may open (its own ledger/artifact plus named static reference/method docs). It may not open files outside this set.
+- **Writes** — the exact output path(s) it owns. It may write nowhere else.
+- **Done-definition** — the concrete artifact or edit that completes the task, including the reference-map row(s) to sync.
+- **Return** — a short structured summary the orchestrator uses to gate the next step (no raw file dumps).
+
+### Phase 0 — analysis fan-out (PARALLEL, read-only)
+
+The following run **concurrently**. Safe because each reads its own ledger plus unchanging shared reference docs and writes **only its own unique digest file** — no shared-file writes, no write/read overlap, only concurrent reads of static docs. Digests are written under `analysis/` and treated as frozen inputs by the write phase.
+
+| Agent | Reads | Writes |
+| --- | --- | --- |
+| Ledger audit ×7 (one per ledger) | that ledger + cited method docs | `analysis/<skill>-ledger.md` |
+| Distill donor audit | vendored donor material + provenance sources | `analysis/distill-provenance.md` |
+| Fit-analysis mapping | `github_skillsets.md` §§2, 5.1 | `analysis/fit-map.md` |
+
+The orchestrator dispatches all Phase 0 agents together and waits for every digest before starting Phase 1. No Phase 0 agent may touch the target plan, `resources.md`, `overview.md`, method docs (write), or skill files.
+
+### Phase 1 — ordered updates (SEQUENTIAL, one write-phase sub-agent per update)
+
+Each numbered update below is one fresh-context sub-agent. They run **strictly one at a time** because they share write targets — the **shared-write set**:
+
+- `prod_discovery_requirements_skillset_plan.md` (the target plan)
+- `../resources.md` (reference map)
+- `../overview.md` and affected method docs (updates 8–10)
+- affected skill / lifecycle-onepager files (updates 9–10)
+
+No two write-phase sub-agents may run at once, since each may edit the target plan and reference map. Each write-phase sub-agent receives: this contract, the relevant Phase 0 digest(s), and its task envelope; it applies exactly one numbered update, syncs the reference-map row(s), and returns a summary. The orchestrator verifies the return and the shared-write files are consistent before dispatching the next update.
+
+### Phase 2 — acceptance gate (SEQUENTIAL sub-agent)
+
+The final review (see [Acceptance gate](#acceptance-gate)) runs as its own fresh-context sub-agent with read access to the full bundle, producing the `contribution ID → plan section → skill file/test` mapping and the gate verdict. The orchestrator does not self-certify.
+
 ## Ordered updates
 
-Apply these in order. For any edit—including these updates and later revisions—that changes a lifecycle element's first-class concepts, grounding, or deliberate deviations, update that element's row in the [resources.md reference map](../resources.md#reference-map) in the same change. This map-wide rule applies to every row, including the cross-cutting collaboration-and-decision-ownership row.
+Apply these in order, each as one Phase 1 write-phase sub-agent per the task envelope above. For any edit—including these updates and later revisions—that changes a lifecycle element's first-class concepts, grounding, or deliberate deviations, update that element's row in the [resources.md reference map](../resources.md#reference-map) in the same change. This map-wide rule applies to every row, including the cross-cutting collaboration-and-decision-ownership row.
 
 ### 1. Add solution alternatives to `discover-product`
 
