@@ -1,10 +1,26 @@
 # Plan review brief — product-loop skillset
 
+> **CLOSED — all seven findings resolved and applied. Archived; not an input to authoring.**
+>
+> This brief is kept as the record of what was decided and why. **Three of its findings rest on source attributions that proved wrong** — read the dispositions below before trusting any claim in the body. Everything it asked for has been applied to the plan and the method docs; the verification greps under *Working notes* are inverted by design and no longer describe the current state.
+>
+> | ID | Disposition |
+> | --- | --- |
+> | `REV-01` | **Resolved — premise corrected.** O/E/H is not "donor-derived or invented": it is `RafaelGorski/Problem-Based-SRS` (MIT, `pattern`/adapt), accepted as `DR-EXT-06`/`SR-EXT-04`. Defined as method in [product_definition.md](../../product_definition.md), added to [glossary.md](../../glossary.md), grounded in [resources.md](../../resources.md). |
+> | `REV-02` | **Resolved — attribution wrong, and a real bug found.** `Rich` never appeared in `resources.md`; the rubric is `jacksoncalling/argo-continuous-discovery` (`DP-008`, unverified license → `pattern`-only, so its wording *must not* be copied). The written entry also graded source quality and sample representativeness with one label, making **Rich unreachable**. Axes split; re-grounded to Fitzpatrick and Bland & Osterwalder; defined as method in [product_discovery.md](../../product_discovery.md). |
+> | `REV-03` | **Resolved — reframed.** The lens was not merely unspecified, it was routed against [quality_attributes.md](../../quality_attributes.md):5, which places architecture-changing qualities at *discovery*. The plan's own §5.4 already agreed. Lens deleted; `QAS#` seeded from the foundation vision plus discovery's feasibility `ASM#`/`EV#`. |
+> | `REV-04` | **Resolved — differently.** Renaming "companion" → "vision spine" was rejected: method docs name zero skillset artifacts, and "vision spine" is plan-only vocabulary. The clause was de-skilled instead, keeping the `DEC#` and accountable-owner obligations. Update-10 stripped. |
+> | `REV-05` | **Resolved — not accepted.** §3.3 does *not* carry provenance independently; its table is keyed to the `distill` surface only. The coverage axis was re-founded on the per-skill source/dependency manifests (§3.2's own "realizing record"). Five axes restored. |
+> | `REV-06` | **Resolved per entry.** *Instrumentation* ratified unchanged. *Solution direction* corrected — it contradicted `LNT-07`'s own `DEC#` exception. *Analysis plan* is not from `validation_and_feedback.md`; it is `florianbonnet14/ThePowerOfAnalytics_ClaudeSkills` (`VR-EXT-03`, no stated license), now given a method home and grounded to Kohavi/Tang/Xu. |
+> | `REV-07` | **Resolved — kept and reconciled.** [github_skillsets.md](../github_skillsets.md) stays: it is the only live record behind §3.2's license hard rules and the `pattern`-mode donors §3.3 omits. Its retired vocabulary and two dangling links were reconciled. |
+>
+> **The lesson worth carrying forward:** `REV-01`, `REV-02`, and `REV-06`'s *Analysis plan* were one defect wearing three masks — a linter check (`LNT-15`/`LNT-16`, `LNT-06`/`LNT-18`, `LNT-17`) resting on vocabulary that lived only in the plan. All three took the same fix: define in the owning method doc, add to the glossary, ground in the reference map. Every corrected attribution was recoverable from this archive — the brief was written without reading it.
+
 Seven findings the plan cannot answer for itself.
 
 The discovery–definition–requirements skillset plan was renamed, de-referenced, and stripped of history. That pass surfaced problems it had no authority to fix. Each finding below names what is wrong, where, and the decision it waits on.
 
-**Scope:** [prod_discovery_requirements_skillset_plan.md](./prod_discovery_requirements_skillset_plan.md) · [../glossary.md](../glossary.md)
+**Scope:** [prod_discovery_requirements_skillset_plan.md](../prod_discovery_requirements_skillset_plan.md) · [../glossary.md](../../glossary.md)
 
 Findings carry stable IDs so a review pass can report against them (`REV-03 resolved`), mirroring the plan's own `LNT-xx` / `RTS-xx` discipline. Severity is the reviewer's claim, not the plan's:
 

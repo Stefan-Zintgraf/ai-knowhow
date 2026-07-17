@@ -1,6 +1,6 @@
 # Existing GitHub Skillsets — Fit Analysis
 
-**Status:** Revised draft — decision input for the [skillset plan](./prod_discovery_requirements_skillset_plan.md); the actionable consequences live in the [revision contract](./skillset_plan_update_plan.md)
+**Status:** Revised draft — decision input for the [skillset plan](./prod_discovery_requirements_skillset_plan.md); the actionable consequences now live in that plan itself
 **Question answered:** Can the agent rule sets referenced in the stage docs' *Further material* sections replace, shorten, or improve the proprietary skillset planned for the discovery–definition–requirements loop — and how should we continue?
 
 All 14 referenced repositories were inspected (README + structure) as of 2026-07-15.
@@ -11,14 +11,14 @@ A candidate is measured against what the [plan](./prod_discovery_requirements_sk
 
 | # | Criterion | Why it is load-bearing |
 | --- | --- | --- |
-| C1 | **Traceability spine** — artifacts cite upward into the companion's IDs (`S/V/UC/BV/INV/CAP`) and extend them (`ASM/EV/OPP/EXP/REL/REQ/QAS/DEC`) | Design principle 3; the loop's whole value is that every requirement answers "why" mechanically |
+| C1 | **Traceability spine** — artifacts cite upward into the vision spine's IDs (`S/V/UC/BV/INV/CAP`) and extend them (`ASM/EV/OPP/EXP/REL/REQ/QAS/DEC`) | Design principle 3; the loop's whole value is that every requirement answers "why" mechanically |
 | C2 | **Repo-artifact workspace** — durable markdown artifacts in the product repo (`docs/product/<topic>/`), not chat output | Design principle 2; artifacts must survive the session and feed the next skill |
 | C3 | **Two skill modes** — interview where the human supplies evidence/judgment; AFK derive (builder/critic + `decisions.md`) where content is restructured | Design principle 1 |
 | C4 | **Method-doc fidelity** — consumes *this collection's* stage docs (templates → output shapes, completion checks → gates, failure modes → guardrails) | Design principle 6 |
 | C5 | **Tailored ceremony** — degrades to the minimum useful package; skipped stages recorded, not silent | Design principle 5 |
 | C6 | **License & maintenance** — usable in this context, alive, not a link-rot risk | Practical |
 
-No external pack satisfies C1 — that is the headline finding. C1 is also the criterion that cannot be bolted on from outside: it requires knowing the companion bundle's ID scheme.
+No external pack satisfies C1 — that is the headline finding. C1 is also the criterion that cannot be bolted on from outside: it requires knowing the vision spine's ID scheme.
 
 ## 2. Per-skillset analysis
 
@@ -29,10 +29,10 @@ Grouped by the lifecycle stage whose doc references them. Verdict vocabulary: **
 #### `deanpeters/Product-Manager-Skills` — 56 skills, 3 tiers (workflow / interactive / component)
 
 - **What it is:** The most mature PM pack found: pedagogic skills with named failure modes, an "Adaptive Decision Ladder" interview pattern, active releases (v0.82, 2026-07). `press-release` (Amazon Working Backwards), `discovery-process`, `opportunity-solution-tree`, `user-story-mapping`, `prd-development`.
-- **Fit:** The interactive tier is the same interview mode as `brainstorm-vision`/`grill-me` (C3 ✓). But output is coaching + documents for a human PM, with no ID scheme (C1 ✗), no repo-artifact convention (C2 ✗), and its frameworks (Working Backwards, MITRE ITK) overlap but do not equal our method docs (C4 ✗).
+- **Fit:** The interactive tier is the same interview mode as `establish-vision`/`grill-me` (C3 ✓). But output is coaching + documents for a human PM, with no ID scheme (C1 ✗), no repo-artifact convention (C2 ✗), and its frameworks (Working Backwards, MITRE ITK) overlap but do not equal our method docs (C4 ✗).
 - **Benefit over proprietary:** battle-tested question sequences and failure-mode catalogs we would otherwise have to invent; the three-tier taxonomy is a ready answer to plan open question 3 (skill granularity).
 - **Disadvantage:** **CC BY-NC-SA 4.0 — non-commercial, share-alike.** Distilling its content into our skills would contaminate them with the share-alike clause; commercial use is off the table. Interaction-heavy skills also don't compose into an AFK pipeline.
-- **Verdict:** **pattern + reference.** Take the tier taxonomy and the "press-release as vision stress test" idea (optional `brainstorm-vision` micro-phase). Do **not** copy content (license).
+- **Verdict:** **pattern + reference.** Take the tier taxonomy and the "press-release as vision stress test" idea (optional `establish-vision` micro-phase). Do **not** copy content (license).
 
 #### `phuryn/pm-skills` — 68 skills, 42 commands, 9 plugins (MIT)
 
@@ -55,7 +55,7 @@ Grouped by the lifecycle stage whose doc references them. Verdict vocabulary: **
 #### `jacksoncalling/argo-continuous-discovery` — folder-based discovery operator
 
 - **What it is:** A workspace (not a skill): five phase folders each with own CONTEXT.md, accumulating artifacts (interview snapshots, experiment cards, an interactive `tree.html`). Interview-quality assessment (story vs. opinion), opportunity confidence *capped by interview quality*, explicit human gate before solutioning, routing decisions (add/merge/escalate/park).
-- **Fit:** Closest in *spirit* to the plan of anything reviewed: durable artifacts (C2 ✓), human gates (C3 ✓), coaching guardrails (C4-adjacent). But it is a competing workspace layout, not a component — adopting it means adopting its folder scheme and `tree.html` instead of the companion-ID'd markdown artifacts (C1 ✗). Single-outcome per instance; demo-grade maturity (community-challenge project, ships with demo data) (C6 ⚠).
+- **Fit:** Closest in *spirit* to the plan of anything reviewed: durable artifacts (C2 ✓), human gates (C3 ✓), coaching guardrails (C4-adjacent). But it is a competing workspace layout, not a component — adopting it means adopting its folder scheme and `tree.html` instead of the vision-spine-ID'd markdown artifacts (C1 ✗). Single-outcome per instance; demo-grade maturity (community-challenge project, ships with demo data) (C6 ⚠).
 - **Benefit over proprietary:** three mechanisms worth stealing outright: (1) the interview-quality rubric (Rich/Mixed/Thin) as the `EV#` strength model, (2) confidence capped by evidence quality — "three weak interviews don't equal one good one", (3) the routing decision table for extracted opportunities.
 - **Verdict:** **pattern.** Fold those three mechanisms into `discover-product`; do not adopt the operator.
 
@@ -72,9 +72,9 @@ Grouped by the lifecycle stage whose doc references them. Verdict vocabulary: **
 #### `shinpr/claude-code-discover` — plugin: 8 recipes + 5 context-separated agents (MIT)
 
 - **What it is:** The only pack that shares the plan's *core thesis*: product context (hypotheses with success/failure criteria, validation results, PRDs with per-story confidence, rejected alternatives) lives **in the repo beside the code** so the coding agent sees it. Artifacts under `docs/product|discovery|prd/` with an auto-maintained `INDEX.md`; PRD user stories trace to hypothesis files; hands off to a sibling implementation-workflow plugin.
-- **Fit:** C2 ✓ emphatically; C3 ✓ (its `hypothesis-verifier` runs in a separate context *without seeing the author's expectations* — a cleaner builder/critic separation than ours). But it is a **whole competing pipeline**: its own artifact taxonomy, PRD-shaped output, its own vision/persona/blueprint stages (blueprint + prototypes belong to our future *design* skillset), no vision-companion spine, no use cases, no QAS, no requirements engineering (C1/C4 ✗). Adopting it means adopting its lifecycle — that is option (a) below, with the quality loss the plan forbids.
+- **Fit:** C2 ✓ emphatically; C3 ✓ (its `hypothesis-verifier` runs in a separate context *without seeing the author's expectations* — a cleaner builder/critic separation than ours). But it is a **whole competing pipeline**: its own artifact taxonomy, PRD-shaped output, its own vision/persona/blueprint stages (blueprint + prototypes belong to our future *design* skillset), no vision spine, no use cases, no QAS, no requirements engineering (C1/C4 ✗). Adopting it means adopting its lifecycle — that is option (a) below, with the quality loss the plan forbids.
 - **Benefit over proprietary:** answers plan open question 4 directly — the AFK-safe part of `specify-requirements` is exactly what a context-separated critic that hasn't seen the builder's expectations can verify. Its hypothesis-file format (assumption statement, success/failure criteria, confidence per risk dimension, time budget) is a better `EXP#` card than our sketch. `INDEX.md` auto-maintenance validates the `discovery-seeds.md` idea.
-- **Verdict:** **pattern (strongest single donor).** Steal: hypothesis-file format → `experiments/EXP<n>.md`; verifier context separation → `specify-requirements` review gate; INDEX discipline → companion `discovery-seeds.md`.
+- **Verdict:** **pattern (strongest single donor).** Steal: hypothesis-file format → `experiments/EXP<n>.md`; verifier context separation → `specify-requirements` review gate; INDEX discipline → the vision spine's `discovery-seeds.md`.
 
 ### 2.4 Requirements engineering
 
@@ -95,7 +95,7 @@ Grouped by the lifecycle stage whose doc references them. Verdict vocabulary: **
 #### `DavidROliverBA/Daves-Claude-Code-Skills` — 42 skills, BA/architecture + Obsidian vault
 
 - **Fit:** `nfr-capture` (ISO 25010, measurable acceptance criteria) and `nfr-review` (completeness/measurability/feasibility via 3 parallel agents) overlap `specify-requirements`' QAS work. Deeply coupled to an Obsidian-vault ecosystem (frontmatter schemas, tag taxonomies) we don't run (C2 mismatch).
-- **Verdict:** **pattern.** The nfr-review dimensions (complete? measurable? feasible?) become `specify-requirements`' QAS gate checks. The multi-agent fan-out review pattern is already ours via `create-vision-companion`.
+- **Verdict:** **pattern.** The nfr-review dimensions (complete? measurable? feasible?) become `specify-requirements`' QAS gate checks. The multi-agent fan-out review pattern is already ours via `derive-vision-spine`.
 
 #### `ddd-crew/ddd-starter-modelling-process` — process documentation (CC BY 4.0)
 
@@ -128,7 +128,7 @@ Grouped by the lifecycle stage whose doc references them. Verdict vocabulary: **
 
 ## 3. Cross-cutting findings
 
-1. **Nobody has the spine.** No external pack writes artifacts that cite a vision-companion ID scheme, and none could — C1 is inherently proprietary. Everything downstream of that (definition citing evidence, requirements citing capabilities, validation reopening specific artifacts) is the plan's unique value and survives every comparison.
+1. **Nobody has the spine.** No external pack writes artifacts that cite a vision-spine ID scheme, and none could — C1 is inherently proprietary. Everything downstream of that (definition citing evidence, requirements citing capabilities, validation reopening specific artifacts) is the plan's unique value and survives every comparison.
 2. **The ecosystem divides into coaches and pipelines.** Coaches (deanpeters, huntsyea, assimovt) teach a human through an interview and leave no durable artifact. Pipelines (shinpr, Problem-Based-SRS, ForceInjection) produce repo artifacts but each imposes its own taxonomy that collides with ours and with each other. Mixing two pipelines is worse than owning one.
 3. **The best material is reference content, not orchestration.** The distilled source-text `references/` files (huntsyea), compact guardrails (assimovt), and rubrics (argo) plug into design principle 6's distill-at-authoring-time mechanism perfectly — they shortcut *writing* the proprietary skills without replacing them.
 4. **Requirements engineering remains the thin spot** — confirmed. One serious skill exists (Problem-Based-SRS) and it's spine-incompatible. `specify-requirements` has no buy option.
@@ -139,7 +139,7 @@ Grouped by the lifecycle stage whose doc references them. Verdict vocabulary: **
 
 | Option (from the decision request) | Assessment |
 | --- | --- |
-| **(a) Adjust lifecycle/workflow to fit an existing skillset** | Only `shinpr/claude-code-discover` offers a coherent enough lifecycle to adjust toward. Cost: lose the vision-companion spine, use cases, QAS, and RE rigor — a real quality loss, which the option explicitly excludes. **Rejected.** |
+| **(a) Adjust lifecycle/workflow to fit an existing skillset** | Only `shinpr/claude-code-discover` offers a coherent enough lifecycle to adjust toward. Cost: lose the vision spine, use cases, QAS, and RE rigor — a real quality loss, which the option explicitly excludes. **Rejected.** |
 | **(d) Only use existing skills** | Fails C1 everywhere and C4 almost everywhere; two+ packs cannot be composed because their artifact taxonomies collide (finding 2). **Rejected.** |
 | **(e) Enhance existing skills to fill the gaps** | Means maintaining forks of several third-party repos and pushing our ID scheme into codebases that don't want it; upstream drift makes every fork a liability; blocked outright for deanpeters (share-alike). **Rejected as primary strategy** (PR-ing small fixes upstream is still fine). |
 | **(b) Keep proprietary skillsets, use existing ones as input/enhancement** | Matches finding 3. Low risk, keeps the spine, and the plan already works this way (`prototype`, `domain-modeling` reuse). **Adopted — as part of (c).** |
@@ -157,7 +157,7 @@ Grouped by the lifecycle stage whose doc references them. Verdict vocabulary: **
 
 | Proprietary skill | External input | Mode |
 | --- | --- | --- |
-| `brainstorm-vision` (adjust) | deanpeters `press-release` idea (Working Backwards as vision stress test) | pattern (optional finalize micro-phase) |
+| `establish-vision` (adjust) | deanpeters `press-release` idea (Working Backwards as vision stress test) | pattern (optional finalize micro-phase) |
 | `discover-product` | huntsyea `continuous-discovery` + `jobs-to-be-done` references | distill |
 | `discover-product` | assimovt `user-interview`, `problem-validation`, `experiment-design` | distill (guardrails) |
 | `discover-product` | argo: interview-quality rubric (Rich/Mixed/Thin), confidence capped by evidence quality, opportunity routing table | pattern |
@@ -183,5 +183,5 @@ Grouped by the lifecycle stage whose doc references them. Verdict vocabulary: **
 
 ## 6. Actionable follow-up (moved)
 
-The actionable consequences of this comparison — the ordered plan edits (including the three gap closures: solution alternatives, deterministic linter, regression validation), the contribution-coverage contract, and the acceptance gate — now live in the [revision contract](./skillset_plan_update_plan.md). Open that file when revising the skillset plan; this analysis remains the evidence base behind it, and the full gap narratives are preserved in its git history.
+The actionable consequences of this comparison — the ordered plan edits (including the three gap closures: solution alternatives, deterministic linter, regression validation), the contribution-coverage contract, and the acceptance gate — have been folded into the [skillset plan](./prod_discovery_requirements_skillset_plan.md) itself. This analysis remains the evidence base behind them; the full gap narratives are preserved in git history.
 

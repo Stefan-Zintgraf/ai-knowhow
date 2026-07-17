@@ -45,6 +45,14 @@ Prioritize capabilities and release slices, not individual stories — story-lev
 
 Any labeling method (MoSCoW, WSJF, buy-a-feature) is a communication device; the criteria above do the actual work. Every "must" needs a stated consequence explaining why it is mandatory, and ties are broken by learning value — prefer the item that reduces the most uncertainty.
 
+Classify each mandatory scope driver by the consequence of not meeting it:
+
+- **Obligation** — an external party imposes a defined penalty: a law, regulation, contract, or binding commitment. The consequence is named and verifiable ("the data-residency clause voids the enterprise contract"), and it is what makes the item mandatory. An obligation whose consequence nobody can state is not an obligation.
+- **Expectation** — no external penalty, but stakeholders or users will judge the release as incomplete or broken without it. The consequence is reputational or behavioral ("submitters abandon the form"), not contractual.
+- **Hope** — someone wants it and nothing measurable happens if it is absent. A hope is not mandatory; the classification exists so it can be argued down out of the mandatory set rather than smuggled through as a "must."
+
+The classification is only worth its cost because the consequence is what gets argued, not the label. An unclassified "must," or an obligation with no consequence recorded, is the failure this catches.
+
 ### 6. Cut the release and name its hypothesis
 
 Select a thin, coherent, end-to-end slice and state the belief it tests. Define success criteria, guardrail measures, and stop criteria before work starts. A release without a hypothesis can only be judged by whether it shipped.
@@ -111,6 +119,7 @@ Stop: ...
 - Deferred and rejected items are recorded with reasons.
 - Opportunity selection follows the strategy order or cites the `DEC#` that records a reorder or exception.
 - Priorities are justified by criteria, not by rank position alone.
+- Every mandatory scope driver is classified obligation, expectation, or hope, and each obligation records the consequence that makes it mandatory.
 - The release is a coherent journey with a named hypothesis.
 - Success, guardrail, and stop criteria exist before work starts.
 - Product, engineering, and domain participants describe the scope identically.

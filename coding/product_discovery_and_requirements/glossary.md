@@ -48,7 +48,7 @@ Software-design and DDD terminology is defined in [`../software_design/glossary.
 
 **Evidence** — Observed behavior, data, or documented fact, deliberately distinguished from opinion, preference, and hypothetical enthusiasm. Evidence strength is recorded alongside decisions.
 
-**Evidence strength** — The graded quality of the evidence behind a decision: **Rich** (the real actor's behavior observed under real stakes), **Mixed** (a partial, proxy, or reported observation), or **Thin** (opinion, hypothetical, or a single unrepresentative account). Strength caps the confidence a decision may claim, and volume never substitutes for it — many Thin items remain Thin. Recorded on every evidence item and cited by the decisions resting on it.
+**Evidence strength** — The graded source quality of a *single* evidence item: **Rich** (the real actor's own behavior, observed under real stakes), **Mixed** (a partial, proxy, or reported observation — behavior recounted rather than seen, a stand-in actor, or a setting without real stakes), or **Thin** (opinion, preference, stated intent, or hypothetical enthusiasm). The grade turns on what was observed and under what stakes, never on how many items agree: strength is a property of the row, while representativeness is judged at the decision that cites it. Strength caps the confidence a decision may claim and volume never lifts the cap — many Thin items remain Thin, and one Rich item is Rich but may still not generalize. Recorded on every evidence item and cited by the decisions resting on it. See [product discovery](./product_discovery.md).
 
 **Experiment card** — A one-page plan for a test: the decision it informs, the assumption, the method, the support/refute/inconclusive criteria, and the result.
 
@@ -81,6 +81,8 @@ Software-design and DDD terminology is defined in [`../software_design/glossary.
 **Minimal guarantee** — What remains true for stakeholders even when a use case fails (e.g., no partial charge, an audit record exists).
 
 **Minimum useful discovery package** — The smallest artifact set worth producing for a small product; defined in the [overview](./overview.md).
+
+**Obligation / expectation / hope** — The three classes of mandatory scope driver, separated by the consequence of not meeting the item: an **obligation** carries a defined external penalty (law, regulation, contract, binding commitment) and records the consequence that makes it mandatory; an **expectation** carries a reputational or behavioral consequence but no external penalty; a **hope** carries no measurable consequence and is therefore not mandatory at all. The consequence, not the label, is what gets argued. See [product definition](./product_definition.md).
 
 **Opportunity** — A user need, pain point, desire, or obstacle that could be addressed. Kept deliberately separate from proposed solutions. Selecting some and deferring others — with reasons recorded — is the first act of product definition.
 
@@ -116,7 +118,7 @@ Software-design and DDD terminology is defined in [`../software_design/glossary.
 
 **Signal** — A qualitative or leading indication that an outcome is moving. Weaker than an outcome measure; useful earlier.
 
-**Solution direction** — A materially distinct way of addressing an opportunity — including process, policy, manual-service, and no-build options, not only software. Discovery generates several before committing to one; a single direction on the table means alternatives were never explored. Rejected and parked directions are kept with their reasons.
+**Solution direction** — A materially distinct way of addressing an opportunity — including process, policy, manual-service, and no-build options, not only software. Discovery generates several before committing to one; a single direction on the table is not by itself proof that alternatives went unexplored, but it stands only behind a recorded decision (`DEC#`) explaining why alternatives are not viable. Rejected and parked directions are kept with their reasons.
 
 **Specialist authority** — A contributor whose qualified judgment governs a particular concern, such as legal interpretation, security acceptance, or domain policy. An accountable owner can prioritize business risk but cannot overrule a specialist authority within its concern.
 

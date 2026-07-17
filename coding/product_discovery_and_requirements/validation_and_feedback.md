@@ -21,6 +21,8 @@ Instrumentation is a requirement, not an afterthought. Define during [product de
 
 Schedule the first outcome review, with a named owner, **before** the release ships; otherwise it happens only after a crisis. Subsequent reviews follow the loop cadence chosen during [lifecycle tailoring](./lifecycle_tailoring.md). Guardrails are monitored continuously, not only at reviews.
 
+Write and timestamp the review's **analysis plan** before any result is inspected: the review question and its decision owner, the criteria precommitted at release definition (unchanged), metric definitions, population and time window, evidence sources, known limitations and confounders, and the decision rules. Written afterwards, it invites reading the result back into the criteria. Changing the plan once results are visible is legitimate only as a dated `DEC#` that records the change and leaves the original visible.
+
 ## What evidence can reopen
 
 Route each finding to the decision it challenges. Typical routes:
@@ -57,6 +59,7 @@ Retiring scope is a first-class outcome: it needs transition requirements (migra
 ## Completion checks
 
 - Every release hypothesis has a scheduled review with a named owner, set before shipping.
+- Each review's analysis plan is written and timestamped before any result is inspected; a post-hoc change cites a dated `DEC#` and leaves the original visible.
 - Outcome and guardrail measures are observable in production.
 - Each significant finding is routed: a named decision is reopened, or perseverance is recorded with rationale.
 - A vision re-entry is used only for a foundational contradiction and cites the explicit `DEC#`; every other finding is labeled and routed as a discovery pivot.

@@ -98,7 +98,7 @@ Keep strategy thin: an ordered list of *outcome — target segment — why this 
 
 ## Strategy and roadmap
 
-The strategy section of the vision one-pager answers "what beyond the next slice": an ordered list of the outcomes and target segments on the path to the vision. Reordering it when discovery or validation evidence demands is a routine discovery pivot, not a vision pivot; record the reorder as a `DEC#`, update the section through its accountable human owner, and refresh the derived companion index.
+The strategy section of the vision one-pager answers "what beyond the next slice": an ordered list of the outcomes and target segments on the path to the vision. Reordering it when discovery or validation evidence demands is a routine discovery pivot, not a vision pivot; record the reorder as a `DEC#` and update the section through its accountable human owner.
 
 Where coordination cost, sponsor communication, or product lifetime warrants the ceremony, expand the strategy into a **product roadmap**: an outcome-based, rolling now/next/later view, revised as evidence arrives. Never commit features and dates. Whether to adopt the roadmap artifact at all is a [lifecycle tailoring](./lifecycle_tailoring.md) decision; low-ceremony topics skip it and rely on the strategy list and the decision log's recorded deferrals.
 

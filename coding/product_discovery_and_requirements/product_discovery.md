@@ -34,9 +34,17 @@ Use several sources where practical:
 
 Ask about actual situations and choices. Hypothetical enthusiasm is weak evidence.
 
+Grade every evidence item for source quality as it is logged, along one axis — what was observed, and under what stakes:
+
+- **Rich** — the real actor's own behavior, observed under real stakes: what they actually did, in their actual situation, where the choice cost them something.
+- **Mixed** — a partial, proxy, or reported observation: behavior recounted rather than seen, a stand-in actor, or a setting with no real stakes.
+- **Thin** — opinion, preference, stated intent, or hypothetical enthusiasm. What someone says they would do is Thin however confidently they say it.
+
+The grade belongs to the item, not to the pile. Volume does not promote a grade — many Thin items remain Thin — and a single Rich observation stays Rich, though whether it generalizes is argued where the decision cites it, not by restating its strength. Strength caps the confidence any decision may claim on it.
+
 ### 3. Map opportunities
 
-Organize user needs, pain points, desires, and obstacles beneath the desired outcome. An Opportunity Solution Tree is one useful structure. Keep opportunities separate from proposed solutions. Check a targeted opportunity against the vision's thin ordered-outcomes strategy: selecting against the recorded order needs an explicit `DEC#` recording the exception or strategy reorder, never silent divergence. A strategy reorder is a discovery pivot applied by the strategy section's accountable human owner, followed by a refresh of its derived companion index.
+Organize user needs, pain points, desires, and obstacles beneath the desired outcome. An Opportunity Solution Tree is one useful structure. Keep opportunities separate from proposed solutions. Check a targeted opportunity against the vision's thin ordered-outcomes strategy: selecting against the recorded order needs an explicit `DEC#` recording the exception or strategy reorder, never silent divergence. A strategy reorder is a discovery pivot applied by the strategy section's accountable human owner.
 
 ### 4. Generate alternatives
 
@@ -120,6 +128,7 @@ Inconclusive: ...
 - The intended outcome and selected opportunity are explicit.
 - The selected opportunity follows the strategy's ordered outcomes or has an explicit `DEC#` recording the exception or reorder.
 - The major assumptions are visible and ranked.
+- Every evidence item carries its source, its date, and a strength grade.
 - Evidence is adequate for the size and reversibility of the next investment.
 - Alternative solutions were considered.
 - The next release or experiment has success and guardrail measures.
