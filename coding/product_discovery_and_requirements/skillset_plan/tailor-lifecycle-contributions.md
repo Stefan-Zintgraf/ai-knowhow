@@ -44,6 +44,8 @@ Contribution IDs are stable. New findings receive new IDs; existing IDs must not
 | TL-014 | Handover follows tailoring, not a hard-coded order | Proprietary method plus phuryn UX pattern | Pattern | Derive the suggested next stage from entry point and selected stages | Adapt | No external dependency | Rework starts from validation evidence, mandate from requirements, and fast-follow from definition |
 | TL-015 | One owner per consequential decision and explicit escalation | Proprietary method; externally reinforced workflow discipline | Policy | Do not accept group labels or missing ownership where one accountable owner is required; record escalation | Adopt | Proprietary | Ownership validator/rubric detects missing, ambiguous, or multiple owners |
 | TL-016 | Deliberate stage selection by uncertainty | Proprietary method plus compact-coach comparison | Policy | Recommend stages and artifacts only when they reduce an important uncertainty or improve a consequential decision | Adopt | Proprietary | Technique-routing fixtures vary by dominant uncertainty and avoid completeness-driven artifact selection |
+| TL-M01 | Seven-field decision-authority record; a group or department is never an accountable owner | [collaboration_and_decision_ownership.md](../collaboration_and_decision_ownership.md) ("Tailoring the defaults", decision language) — method-owned, revision-contract update 9 | Method-owned policy | Extend the one-pager decision-authority section beyond `<decision type> — <owner>` to all seven fields — one named accountable owner, required contributors, specialist authorities, formal approvers, evidence required to decide, escalation path, evidence-based reopen trigger; the interview elicits them; finalize blocks on a missing field or a group-only owner (plan §5.3) | Adopt | Proprietary method doc; no external license | Golden-file/schema test on the extended one-pager decision-authority section; finalize/ownership-validator fixture refuses a group-only owner or missing approver field (regression scenario RTS-07; boundary handoffs scored by RTS-09) |
+| TL-M02 | Early specialist participation where specialist evidence is material; no fabricated specialist evidence | [collaboration_and_decision_ownership.md](../collaboration_and_decision_ownership.md) ("Collaboration across the lifecycle", core rules 4–5) — method-owned, revision-contract update 9 | Method-owned policy | The tailoring interview asks which specialist evidence (engineering, design, operations, security, compliance, domain, other) is material for the topic and names the required contributors and specialist authorities in the one-pager; downstream skills gate on them; design/architecture decisions stay under engineering authority (plan §5.3, §7) | Adopt | Proprietary method doc; no external license | One-pager fixture names specialist authorities per decision type; missing required specialist/engineering input is detected and refused downstream (regression scenario RTS-08) |
 
 ## Focused external source-audit manifest
 
@@ -62,21 +64,21 @@ For every inspected source, record repository and canonical URL, pinned commit/t
 
 ## Method-document coverage ledger
 
-| Method source | Required coverage in `tailor-lifecycle` | Verification |
-| --- | --- | --- |
-| [Overview](../overview.md) | Preserve the lifecycle model; use the pragmatic workflow only as a default; support the minimum useful discovery package; retain readiness-for-design as the eventual exit criterion | Fixtures cover every entry point and both low- and high-ceremony variants; output never implies that every topic begins at vision |
-| [Lifecycle tailoring](../lifecycle_tailoring.md) — Step 1 | Classify greenfield, new capability, improvement/rework, mandate, fast-follow, and technical/platform topics by where uncertainty sits | One fixture per entry point; each includes rationale |
-| Lifecycle tailoring — Step 2 | Size ceremony independently by harm, irreversibility, regulation/contract, coordination cost, lifetime, and genuine uncertainty | Mixed-risk fixture applies extra ceremony only to the high-risk concern |
-| Lifecycle tailoring — Step 3 | Select stages and artifacts because they reduce uncertainty or improve a decision; preserve the mandatory minimum | Output always contains actors/outcome, visible risky assumptions, success/stop criteria, and consequential decision logging |
-| Lifecycle tailoring — Step 4 | Select continuous, timeboxed, or gated cadence and define what one cycle produces | Finalize rejects a cadence that gives time only but no tested assumption and recorded decision |
-| Lifecycle tailoring — Step 5 | Assign exactly one owner to each consequential decision type and name an escalation path | Finalize reports missing, ambiguous, or multiply-owned decisions |
-| Lifecycle tailoring — one-pager template | Produce every template section using the non-colliding name `lifecycle-onepager.md` | Golden-file/schema test verifies all sections |
-| Lifecycle tailoring — failure modes | Guard against excessive ceremony, mandate-equals-no-discovery, habitual entry point, evidence-free greenfield, stale tailoring, unowned stop decisions, and document-review gates | Every failure mode maps to a prompt guardrail or acceptance fixture |
-| Lifecycle tailoring — completion checks | Use all six checks as the judgment-based finalize rubric | Scored finalize report contains one result per check |
-| [Resources](../resources.md) | Use the practical technique index to map uncertainty to stages/techniques; apply the evaluation rule | Fixtures show recommendations vary by uncertainty and never select artifacts just for completeness |
-| [Glossary](../glossary.md) | Use canonical method vocabulary | Terminology audit passes |
-| [GitHub skillset analysis](./github_skillsets.md) + [revision contract](./skillset_plan_update_plan.md) | Apply external dependency policy, handover UX, re-entry pattern, linter use, source audit, and validation strategy | Contribution ledger has no undecided item |
-| [Skillset plan](./prod_discovery_requirements_skillset_plan.md) | Remain a short interview producing one file; record deliberate skips; control downstream handover; be respected by later skills | End-to-end reference run confirms later skills read and follow the one-pager |
+| ID | Method source | Required coverage in `tailor-lifecycle` | Verification |
+| --- | --- | --- | --- |
+| TL-MTH-01 | [Overview](../overview.md) | Preserve the lifecycle model; use the pragmatic workflow only as a default; support the minimum useful discovery package; retain readiness-for-design as the eventual exit criterion | Fixtures cover every entry point and both low- and high-ceremony variants; output never implies that every topic begins at vision |
+| TL-MTH-02 | [Lifecycle tailoring](../lifecycle_tailoring.md) — Step 1 | Classify greenfield, new capability, improvement/rework, mandate, fast-follow, and technical/platform topics by where uncertainty sits | One fixture per entry point; each includes rationale |
+| TL-MTH-03 | Lifecycle tailoring — Step 2 | Size ceremony independently by harm, irreversibility, regulation/contract, coordination cost, lifetime, and genuine uncertainty | Mixed-risk fixture applies extra ceremony only to the high-risk concern |
+| TL-MTH-04 | Lifecycle tailoring — Step 3 | Select stages and artifacts because they reduce uncertainty or improve a decision; preserve the mandatory minimum | Output always contains actors/outcome, visible risky assumptions, success/stop criteria, and consequential decision logging |
+| TL-MTH-05 | Lifecycle tailoring — Step 4 | Select continuous, timeboxed, or gated cadence and define what one cycle produces | Finalize rejects a cadence that gives time only but no tested assumption and recorded decision |
+| TL-MTH-06 | Lifecycle tailoring — Step 5 | Assign exactly one owner to each consequential decision type and name an escalation path | Finalize reports missing, ambiguous, or multiply-owned decisions |
+| TL-MTH-07 | Lifecycle tailoring — one-pager template | Produce every template section using the non-colliding name `lifecycle-onepager.md` | Golden-file/schema test verifies all sections |
+| TL-MTH-08 | Lifecycle tailoring — failure modes | Guard against excessive ceremony, mandate-equals-no-discovery, habitual entry point, evidence-free greenfield, stale tailoring, unowned stop decisions, and document-review gates | Every failure mode maps to a prompt guardrail or acceptance fixture |
+| TL-MTH-09 | Lifecycle tailoring — completion checks | Use all eight checks as the judgment-based finalize rubric, including both the explicit, justified roadmap adopt/skip check and the check that required contributors, specialist authorities, and formal approvers are named where applicable | Scored finalize report contains one result per check; the roadmap result uses the paired RTS-13 variants, with LNT-14 applied when the roadmap is adopted |
+| TL-MTH-10 | [Resources](../resources.md) | Use the practical technique index to map uncertainty to stages/techniques; apply the evaluation rule | Fixtures show recommendations vary by uncertainty and never select artifacts just for completeness |
+| TL-MTH-11 | [Glossary](../glossary.md) | Use canonical method vocabulary | Terminology audit passes |
+| TL-MTH-12 | [GitHub skillset analysis](./github_skillsets.md) + [revision contract](./skillset_plan_update_plan.md) | Apply external dependency policy, handover UX, re-entry pattern, linter use, source audit, and validation strategy | Contribution ledger has no undecided item |
+| TL-MTH-13 | [Skillset plan](./prod_discovery_requirements_skillset_plan.md) | Remain a short interview producing one file; record deliberate skips; control downstream handover; be respected by later skills | End-to-end reference run confirms later skills read and follow the one-pager |
 
 ## Objective authoring coverage gate
 
@@ -88,12 +90,12 @@ For every inspected source, record repository and canonical URL, pinned commit/t
 - [ ] The source-audit manifest records repository, pinned revision/release, inspected paths, date, license, findings, disposition, and verification.
 - [ ] No CC BY-NC-SA material from `deanpeters/Product-Manager-Skills` was copied, distilled, or bundled.
 - [ ] Every method-coverage row links to a concrete instruction, reference file, guardrail, fixture, or validator.
-- [ ] All six lifecycle-tailoring completion checks appear in the finalize rubric.
+- [ ] All eight lifecycle-tailoring completion checks appear in the finalize rubric (per the current [lifecycle_tailoring.md](../lifecycle_tailoring.md) list, including explicit, justified roadmap adoption/skip and named contributors/specialist authorities/approvers); the paired RTS-13 variants cover the roadmap decision and LNT-14 applies to the adopted variant.
 - [ ] Every lifecycle-tailoring failure mode has an implemented guardrail and at least one test.
 - [ ] Fixtures cover all six entry-point classes.
 - [ ] Fixtures cover low, mixed, and high ceremony.
 - [ ] A mixed-risk fixture demonstrates per-driver rather than uniform ceremony.
-- [ ] A valid one-pager includes entry rationale, selected stages, skipped stages with reasons, artifacts, cadence and decision output, authority, success/stop criteria, and a concrete revisit trigger.
+- [ ] A valid one-pager includes entry rationale, selected stages, skipped stages with reasons, an explicit and justified roadmap adopt/skip decision, artifacts, cadence and decision output, authority, success/stop criteria, and a concrete revisit trigger.
 - [ ] Every consequential decision type has exactly one owner and an escalation path.
 - [ ] Handover derives the next skill from the selected lifecycle and names the required input artifact.
 - [ ] The shared deterministic linter runs during finalize and surfaces its failures accurately.
@@ -116,4 +118,42 @@ Any unchecked item blocks “authoring complete.”
 - `SOL#`, evidence scoring, opportunity routing, and experiment cards belong to `discover-product`.
 - Requirements trace validation belongs to the shared linter and `specify-requirements`; this skill runs only applicable shared checks.
 - DDD tactical design, architecture, EventStorming, and interface skills remain deferred to the future design skillset.
-- Whether out-of-order execution warns or refuses is a plan-level decision; the implemented behavior must be explicit and tested.
+- Whether out-of-order execution warns or refuses is a plan-level decision; the implemented behavior must be explicit and tested. *(Decided in the plan, §4.1: refuse silent violations; warn-and-record legitimate recorded deviations.)*
+
+## Plan-to-authoring traceability (revision-contract update 8)
+
+Maps every accepted row to its plan location and **planned** skill-file destination (paths relative to the future `skills/tailor-lifecycle/` directory; the skill is not authored yet). Governing rules — replace-planned-with-actual, reopen, date capture, post-authoring reconciliation — are in [plan §3.3](./prod_discovery_requirements_skillset_plan.md). **Date capture:** no row records a pinned commit/retrieval date yet; the source-audit manifest above is executed at authoring time, and capturing repository URL, inspected files, commit/tag or retrieval date, and verified license for every external source is an explicit authoring-time task (plan §3.3).
+
+| Row | Plan § | Planned destination (path/section) |
+| --- | --- | --- |
+| TL-001 | §4.1, §5.3 | Handover section of `SKILL.md` (entry skill, enabled stages, reason, input artifact) |
+| TL-002 | §5.3 | `SKILL.md` overall shape: short component-selecting interview workflow |
+| TL-003 | §5.3 | Interview phase sub-file: adaptive depth, 10–15-question target, recorded deepening reason |
+| TL-004 | §5.3 | Default-path rules: minimum-ceremony package; low-risk fixture |
+| TL-005 | §4.2, §5.3 | One-pager template's revisit-trigger section: concrete evidence conditions naming the reconsidered decision |
+| TL-006 | §2.2, §5.3 | Finalize step invoking the shared `lint-workspace` script (LNT-05, LNT-13) |
+| TL-007 | §2.2, §5.3 | Finalize report: deterministic results separated from judgment rubric |
+| TL-008 | §6, §5.3 | Inclusion in the reference-topic regression run (RTS-01/02/13) |
+| TL-009 | §3.2, §5.3 | Skill dependency/source manifest per the external-dependency policy |
+| TL-010 | §3.2, §3.3, §5.3 | Executed source-audit manifest (the six-repo table above) with full provenance fields |
+| TL-011 | §5.3 | Canonical method terminology across prompts/output; terminology review |
+| TL-012 | §5.3 | Output contract: sole output `lifecycle-onepager.md`; file-output test |
+| TL-013 | §4.1, §5.3 | Skipped-stage recording in the one-pager template + finalize failure when a stage is neither selected nor skipped |
+| TL-014 | §4.1, §5.3 | Handover derivation rules (rework→validation evidence, mandate→requirements, fast-follow→definition) |
+| TL-015 | §5.3 | One-pager decision-authority section + ownership validator (one named owner, escalation, group labels rejected) |
+| TL-016 | §5.3 | Stage/artifact recommendation rules: uncertainty-driven selection; technique-routing fixtures |
+| TL-MTH-01 | §2.1, §4, §5.3, §6 | `SKILL.md` section **Lifecycle model and exit criterion**; `fixtures/lifecycle-entry-points` verifies all six entry classes, low/high ceremony, and that vision is not a universal start (RTS-01/RTS-02) |
+| TL-MTH-02 | §2.1, §4, §5.3, §6 | `SKILL.md` section **Entry-point classification**; `fixtures/entry-points` provides one rationale-bearing case for greenfield, capability, rework, mandate, fast-follow, and platform |
+| TL-MTH-03 | §2.1, §5.3, §6 | `SKILL.md` section **Ceremony sizing**; `fixtures/mixed-risk-ceremony` proves per-driver depth instead of uniform ceremony (RTS-01/RTS-13) |
+| TL-MTH-04 | §2.1, §5.3, §6 | `SKILL.md` section **Stage and artifact selection** plus `references/lifecycle-onepager-template.md`; `fixtures/stage-selection` verifies the mandatory minimum and fails a stage neither selected nor reasoned as skipped (RTS-02/RTS-13) |
+| TL-MTH-05 | §2.1, §5.3 | `SKILL.md` section **Cadence and cycle output**; `fixtures/cadence-decision-output` rejects a cadence with elapsed time but no tested assumption and recorded decision |
+| TL-MTH-06 | §2.1, §5.3, §6 | `SKILL.md` section **Decision authority** plus the one-pager authority fields; `fixtures/decision-authority` rejects missing, ambiguous, multiple, or group-only owners and missing escalation (RTS-07/RTS-09) |
+| TL-MTH-07 | §2 (artifact table), §2.1, §2.2 (LNT-05, LNT-13, LNT-14), §5.3 | `references/lifecycle-onepager-template.md` with every method section and roadmap adopt/skip field; `fixtures/lifecycle-onepager-golden` verifies schema/name and the RTS-13 paired variants |
+| TL-MTH-08 | §2.1, §5.3 | `references/finalize-rubric.md` section **Failure-mode guardrails**; `fixtures/lifecycle-failure-modes` contains one adversarial case for each of the seven listed failures |
+| TL-MTH-09 | §2.1, §5.3, §6 (axis 1) | `references/finalize-rubric.md` section **Lifecycle completion checks**; `fixtures/finalize-eight-checks` requires one scored result for each of the eight checks and keeps deterministic results separate; its roadmap result runs the paired RTS-13 variants and applies LNT-14 to the adopted variant |
+| TL-MTH-10 | §2.1, §5.3 | `SKILL.md` section **Technique routing by uncertainty**; `fixtures/dominant-uncertainty-routing` proves recommendations vary by uncertainty and rejects completeness-only selection |
+| TL-MTH-11 | §2.1, §5.3 | `SKILL.md` section **Method terminology contract**; `fixtures/terminology-audit` checks canonical lifecycle, workflow, entry-point, cadence, outcome, evidence, success/stop, and authority meanings |
+| TL-MTH-12 | §2.1, §§3.2–3.3, §5.3, §6 (axis 2) | `references/source-audit-manifest.md` plus `SKILL.md` authoring gate; `fixtures/contribution-coverage` fails an undecided row, missing provenance field, live fetch, or unpinned call |
+| TL-MTH-13 | §2.1, §4.1, §5.3, §6 | `SKILL.md` sections **Output contract**, **Finalize**, and **Handover**; reference-topic fixture `fixtures/tailored-downstream-handover` proves later skills read the one-pager and honor skips/order (RTS-01/RTS-02/RTS-13) |
+| TL-M01 | §5.3 | One-pager template: seven-field decision-authority section; interview phase eliciting all seven fields; finalize ownership validator refusing a missing field or group-only owner (RTS-07) |
+| TL-M02 | §5.3 | Interview phase: specialist-participation question; named contributor/specialist-authority fields in the one-pager that downstream ownership gates read (RTS-08) |

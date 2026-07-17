@@ -36,7 +36,7 @@ Ask about actual situations and choices. Hypothetical enthusiasm is weak evidenc
 
 ### 3. Map opportunities
 
-Organize user needs, pain points, desires, and obstacles beneath the desired outcome. An Opportunity Solution Tree is one useful structure. Keep opportunities separate from proposed solutions.
+Organize user needs, pain points, desires, and obstacles beneath the desired outcome. An Opportunity Solution Tree is one useful structure. Keep opportunities separate from proposed solutions. Check a targeted opportunity against the vision's thin ordered-outcomes strategy: selecting against the recorded order needs an explicit `DEC#` recording the exception or strategy reorder, never silent divergence. A strategy reorder is a discovery pivot applied by the strategy section's accountable human owner, followed by a refresh of its derived companion index.
 
 ### 4. Generate alternatives
 
@@ -62,7 +62,7 @@ Define success, failure, and inconclusive criteria before running the test.
 
 ### 7. Decide and record
 
-Proceed, adapt, pause, or abandon. An adapt decision is a discovery pivot — changing the opportunity or solution direction within a stable vision; it is routine and does not reopen the vision. Record evidence strength, remaining uncertainty, and the next decision—not just experiment results. Selected opportunities and tested solution directions feed [product definition](./product_definition.md), where they are committed into scope.
+Proceed, adapt, pause, or abandon. An adapt decision is a discovery pivot — changing the opportunity, solution direction, scope, or strategy within a stable vision; it is routine, must not silently edit the vision, and does not by itself reopen the vision. Record evidence strength, remaining uncertainty, and the next decision—not just experiment results. Only evidence invalidating the intended future or target need may be routed to a vision re-entry, and that route requires an explicit `DEC#` citing the evidence; a failed experiment or weak feature is rerouted to the lowest challenged downstream artifact. Selected opportunities and tested solution directions feed [product definition](./product_definition.md), where they are committed into scope.
 
 ## Discovery artifacts
 
@@ -118,6 +118,7 @@ Inconclusive: ...
 ## Completion checks for an increment
 
 - The intended outcome and selected opportunity are explicit.
+- The selected opportunity follows the strategy's ordered outcomes or has an explicit `DEC#` recording the exception or reorder.
 - The major assumptions are visible and ranked.
 - Evidence is adequate for the size and reversibility of the next investment.
 - Alternative solutions were considered.
@@ -136,4 +137,3 @@ Inconclusive: ...
 **Agent rule sets:** [`huntsyea/product-skills`](https://github.com/huntsyea/product-skills) (formerly `rohanpatriot/product-skills`) — four skills built from the source texts, including `continuous-discovery` (Torres) and `jobs-to-be-done` (Moesta switch interviews, forces diagrams); [`jacksoncalling/argo-continuous-discovery`](https://github.com/jacksoncalling/argo-continuous-discovery) — a folder-based operator for the full Continuous Discovery Habits workflow, from outcome through opportunity extraction to assumption tests, with interview-quality coaching; [`assimovt/productskills`](https://github.com/assimovt/productskills) — compact, opinionated skills (Mom Test, JTBD, opportunity mapping), 50–150 lines each.
 
 **Books:** *Continuous Discovery Habits* — Teresa Torres; *The Mom Test* — Rob Fitzpatrick; *Testing Business Ideas* — David J. Bland, Alexander Osterwalder.
-

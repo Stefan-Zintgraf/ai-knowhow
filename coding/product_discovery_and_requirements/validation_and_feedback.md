@@ -34,9 +34,9 @@ Route each finding to the decision it challenges. Typical routes:
 | Incidents, operational pain, support burden | [Quality-attribute scenarios](./quality_attributes.md) |
 | Terminology confuses users or support | Domain glossary and [domain model](./domain_discovery.md) |
 | Repeated audit or compliance findings | [Requirements](./requirements_engineering.md) and their traceability |
-| Evidence contradicts a foundational assumption | [Product vision](./product_vision.md) itself |
+| Evidence contradicts a foundational actor, outcome, value, principle, or boundary assumption | [Product vision](./product_vision.md) itself — only through an explicit `DEC#` citing the invalidating evidence |
 
-All routes but the last are discovery pivots — routine course corrections within a stable vision. Only the last is a vision pivot, and it should be rare: route a finding downstream first, and challenge the vision only when the evidence invalidates the intended future or target need itself.
+All routes but the last are discovery pivots — routine course corrections within a stable vision. Only the last is a vision pivot, and it should be rare: route a finding to the lowest challenged downstream artifact first, and challenge the vision only when the evidence invalidates the intended future or target need itself. The vision route is blocked without the explicit `DEC#`; validation routes the finding and never edits the vision. A failed release, failed experiment, or weak feature is not sufficient vision-pivot evidence.
 
 ## Decide and record
 
@@ -59,6 +59,7 @@ Retiring scope is a first-class outcome: it needs transition requirements (migra
 - Every release hypothesis has a scheduled review with a named owner, set before shipping.
 - Outcome and guardrail measures are observable in production.
 - Each significant finding is routed: a named decision is reopened, or perseverance is recorded with rationale.
+- A vision re-entry is used only for a foundational contradiction and cites the explicit `DEC#`; every other finding is labeled and routed as a discovery pivot.
 - Decisions are logged with the evidence and its strength.
 - Retired scope is handled through transition requirements.
 - The loop's cadence matches the tailored lifecycle, not ad-hoc urgency.

@@ -112,7 +112,8 @@ An **invariant** must remain true within a defined consistency boundary. Not eve
 
 **References:** [EventStorming](https://www.eventstorming.com/); [Domain-Driven Design Reference — Eric Evans](https://www.domainlanguage.com/ddd/reference/); [Domain Storytelling](https://domainstorytelling.org/).
 
-**Agent rule sets:** [`ddd-crew/ddd-starter-modelling-process`](https://github.com/ddd-crew/ddd-starter-modelling-process) — scaffold from business model and discovery toward context boundaries and code; [`ForceInjection/domain-driven-design-skills`](https://github.com/ForceInjection/domain-driven-design-skills) — agent workflow from discovery through strategic and tactical design, validation, and specification bridging; [`lagz0ne/design-skill`](https://github.com/lagz0ne/design-skill) — a five-phase EventStorming-based design process (Requirements → Big Picture → Processes → Data/Flows → Integration) producing a navigable catalog of Mermaid diagrams.
+**Human modelling-process reference:** [`ddd-crew/ddd-starter-modelling-process`](https://github.com/ddd-crew/ddd-starter-modelling-process) — a human eight-step DDD process and canvas set, not an agent rule set. It remains reference material for canonical domain work and the future design skillset; CC BY 4.0 attribution is required if content is ever used, and this plan schedules no copying or distillation.
+
+**Agent rule sets:** [`ForceInjection/domain-driven-design-skills`](https://github.com/ForceInjection/domain-driven-design-skills) — agent workflow from discovery through strategic and tactical design, validation, and specification bridging; [`lagz0ne/design-skill`](https://github.com/lagz0ne/design-skill) — a five-phase EventStorming-based design process (Requirements → Big Picture → Processes → Data/Flows → Integration) producing a navigable catalog of Mermaid diagrams.
 
 **Books:** *Introducing EventStorming* — Alberto Brandolini; *Learning Domain-Driven Design* — Vlad Khononov; *Domain Storytelling* — Stefan Hofer, Henning Schwentner.
-

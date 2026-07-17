@@ -17,7 +17,7 @@ It may restructure, index, cross-reference, classify, and flag readings of the f
 - place loop artifacts inside the vision bundle;
 - adopt a third-party artifact taxonomy.
 
-Every contribution below must end in an explicit disposition: **adopt**, **adapt**, **reference**, **defer**, or **reject**. Authoring is incomplete while any contribution remains merely “under consideration.”
+Every contribution below must end in an explicit disposition: **adopt**, **adapt**, **call**, **reject**, or **defer**. Authoring is incomplete while any contribution remains merely “under consideration.”
 
 ## 2. External-contribution ledger
 
@@ -33,7 +33,7 @@ Every contribution below must end in an explicit disposition: **adopt**, **adapt
 | VC-E08 | `phuryn/pm-skills` | Command-chaining UX | pattern | On successful finalize, name the appropriate next lifecycle stage—normally `discover-product` for greenfield—and point to `discovery-seeds.md` as its starting input | **adopt** | MIT; no runtime dependency | Final-response fixture includes bundle path, open-decision state, discovery-seed path, and next skill |
 | VC-E09 | `jacksoncalling/argo-continuous-discovery` | Durable artifacts, explicit human gates, and routing rather than silent reconciliation | pattern | Preserve durable status/review files and the Phase 11 human gate. Coverage gaps become routed discovery seeds or judgment rows; they are never silently repaired by editing the vision | **adopt** as a corroborating pattern | License must be verified before copying; no copied material required | Fixture shows an unrealized promise and low-confidence reading surviving into visible review/seed artifacts |
 | VC-E10 | `DavidROliverBA/Daves-Claude-Code-Skills` | Parallel independent reviews for completeness, measurability, and feasibility | pattern + reference | Retain independent multi-agent review as a structural quality pattern. Do not import NFR content; the companion’s critics use companion-specific rubrics | **adopt** as corroboration of the existing critic architecture | License not established in [`github_skillsets.md`](./github_skillsets.md); mechanism only | Review architecture is documented; no Dave-specific templates or Obsidian schema appear |
-| VC-E11 | `deanpeters/Product-Manager-Skills` | Press-release layer as a way to preserve the product promise | reference | Preserve `V#` promises and their realization coverage in `vision-index.md`; do not copy or call the external skill | **reference** only; upstream input belongs to `brainstorm-vision` | CC BY-NC-SA 4.0; no distillation | `vision-index.md` retains every `V#` and flags unrealized promises; no external content is included |
+| VC-E11 | `deanpeters/Product-Manager-Skills` | Press-release layer as a way to preserve the product promise | reference | Preserve the proprietary `V#` promise and realization-coverage mechanism in `vision-index.md`; do not copy, distill, or call the external skill | **Reject** — no incorporation from this source; upstream vision input belongs to `brainstorm-vision` | CC BY-NC-SA 4.0; no copying or distillation | `vision-index.md` retains every `V#` and flags unrealized promises using the proprietary mechanism; no external content or dependency is included |
 | VC-E12 | Cross-cutting finding in [`github_skillsets.md`](./github_skillsets.md) | Third-party pipelines impose competing taxonomies | pattern | Keep one proprietary bundle and ID spine. External mechanisms may improve validation but may not introduce PRD, CP/CN/FR, or third-party workspace structures | **adopt** | N/A | Schema inventory contains only the planned proprietary artifacts and IDs |
 | VC-E13 | Cross-cutting finding in [`github_skillsets.md`](./github_skillsets.md) | Runtime dependencies are fragile; vendored content and calls require provenance/version control | pattern | The companion has no runtime third-party calls or live fetches. Pattern sources are recorded with repository, license, and retrieval date | **adopt** | Recheck provenance before skill release | Dependency inventory and source ledger pass review |
 | VC-E14 | Cross-cutting finding in [`github_skillsets.md`](./github_skillsets.md) | The whole skillset needs end-to-end validation, not only prose completion checks | pattern | Treat the authoring gate and fixture matrix below as release-blocking | **adopt** | Proprietary test design | CI or repeatable local validation produces pass/fail evidence for every gate |
@@ -79,6 +79,8 @@ The companion must reject:
 - collisions caused by reruns or migrations.
 
 `DEC` is reserved for the loop’s decision log. The companion’s existing local judgment IDs must therefore be clearly scoped as bundle-review IDs or renamed if ambiguity remains; the plan must make this distinction mechanical rather than relying on context.
+
+Strategy creates no ID family and therefore does not change this reserved-family list. Phase 0 instead reserves the `vision-index.md` strategy field set — ordered outcome, target segment, ordering rationale, and cited `V#`/`S#` — for derived indexing only.
 
 ### 3.3 `glossary.md` → `domain-glossary.md`
 
@@ -126,6 +128,8 @@ No planned adjustment may place `assumptions.md`, `evidence-log.md`, `opportunit
 | VC-M08 | [`glossary.md`](../glossary.md) | Keep method vocabulary distinct from the product’s ubiquitous language | Rename the bundle artifact; use method terms consistently in orchestration and seed types; never merge the method glossary into the product glossary | Naming and terminology lint; no artifact collision remains |
 | VC-M09 | [`validation_and_feedback.md`](../validation_and_feedback.md) | Outcome and guardrail gaps must remain observable because later validation depends on them | Surface missing or weak outcome/guardrail definitions as discovery seeds or coverage findings | Fixture with a usage-only “success” statement produces a visible outcome-quality seed |
 | VC-M10 | [`resources.md`](../resources.md) | Adopt artifacts and techniques only when they reduce uncertainty or improve a consequential decision | Every companion file and new seed category states its consumer and decision purpose; no file exists merely for completeness | Bundle README and template review show a consumer and purpose for each file |
+| VC-M11 | [`product_vision.md`](../product_vision.md) — Strategy (ordered outcomes); revision-contract update 10 | Derive and index the strategy field set without owning, reordering, or rewriting it; reserve fields rather than a new ID family | Round-trip the ordered entries into `vision-index.md`, including their `V#`/`S#` citations; absent or `OPEN:` strategy becomes a visible coverage finding and seed consumed by discovery/definition (plan §2, §5.2) | Populated, stubbed, and absent fixtures; omitting a present strategy section fails bundle completeness; index order matches the source exactly |
+| VC-M12 | [`product_vision.md`](../product_vision.md) — vision stability; revision-contract update 10 | Discovery pivots route to seeds/judgment rows and never edit the vision; a vision-pivot rebuild requires an explicit loop `DEC#` citing invalidating evidence | Deepen the derived-only gate and vision-drift route: require the external loop `DEC#` before user-confirmed full rebuild, keep `DEC` reserved, and refuse/reroute all routine findings (plan §4, §5.2) | RTS-11 refuses a rewrite attempt without valid grounds; RTS-12 permits rebuild only with the cited `DEC#`; foundation vision stays byte-identical during derivation |
 
 ## 5. Authoring coverage gate
 
@@ -138,12 +142,13 @@ The adjusted `create-vision-companion` skill is complete only when all condition
 - Every deferral names its receiving skill.
 - Every exclusion records a reason.
 - Every source has repository, license status, and retrieval date.
-- No contribution remains “pending audit” at skill release; a failed license/depth audit converts the item to reference, defer, or reject.
+- No contribution remains “pending audit” at skill release; a failed license/depth audit converts the item to defer or reject.
 
 ### 5.2 Bundle-schema completeness
 
 - `domain-glossary.md` replaces `glossary.md` everywhere.
 - `discovery-seeds.md` is present and linked from `README.md`.
+- `vision-index.md` carries the source strategy order and field set, or exposes its absent/`OPEN:` state; it never rewrites the strategy.
 - All existing companion files remain owned by exactly one concern.
 - Templates, phase tables, rubrics, status tracking, rerun guidance, and tests agree on the exact file set.
 - The skill fingerprint includes every output-shaping file changed by this adjustment.
@@ -160,6 +165,7 @@ Mechanical validation proves:
 - unrealized promises, unpromised UCs, and unpromised capabilities remain explicitly visible;
 - every discovery seed cites at least one valid ID;
 - reserved loop ID families are absent from companion-derived artifacts;
+- strategy is indexed as reserved fields under existing vision IDs, never as a new ID family;
 - no duplicate or malformed ID survives;
 - no source ID is silently renumbered during rerun.
 
@@ -174,6 +180,7 @@ The whole-bundle critic confirms:
 - no third-party taxonomy was introduced;
 - every derived interpretation either follows mechanically or appears in the human review surface;
 - the foundation vision remains byte-identical for the duration of the run.
+- a vision-pivot rebuild is not offered without an explicit external loop `DEC#` citing intended-future/target-need-invalidating evidence; routine findings are routed as seeds or judgment rows.
 
 ### 5.5 Builder/critic independence gate
 
@@ -199,7 +206,7 @@ A documented matrix routes at least:
 | Parking-lot routing defect | Deferred-inputs phase |
 | Discovery-seed classification or citation defect | Discovery-seeds phase |
 | Cross-phase inconsistency | Minimal owning closure, followed by global Phase 9 and whole-bundle critic |
-| Vision drift affecting many or renumbered IDs | User-confirmed full rebuild |
+| Vision drift affecting many or renumbered IDs | User-confirmed full rebuild only after an explicit external loop `DEC#` cites evidence invalidating the intended future or target need; otherwise route to seeds/judgment rows |
 | Skill-method drift | User-confirmed upgrade review or rebuild |
 
 No failure route may end in an unspecified “review later.”
@@ -225,6 +232,9 @@ At minimum, repeatable fixtures cover:
 15. a changed skill fingerprint with unchanged vision;
 16. a critic residual requiring Phase 11 human confirmation;
 17. a discovery seed that attempts to invent evidence or prescribe a solution and is rejected.
+18. populated, stubbed, and absent strategy sections whose derived index preserves order and exposes gaps;
+19. a failed experiment proposed as vision drift, refused and routed as a discovery pivot (RTS-11); and
+20. genuine invalidating evidence plus external `DEC#`, permitting the user-confirmed rebuild (RTS-12).
 
 ### 5.8 Handoff gate
 
@@ -262,3 +272,35 @@ Changes to consumed method docs or to any output-shaping skill file trigger a le
 | `florianbonnet14/ThePowerOfAnalytics_ClaudeSkills` | Validation-analysis planning only; no stated license, so no distillation |
 
 These exclusions preserve the companion’s narrow role: a trustworthy, derived, mechanically checked bridge from the vision into the proprietary lifecycle spine.
+
+## 7. Plan-to-authoring traceability (revision-contract update 8)
+
+Maps every accepted row to its plan location and **planned** skill-file destination (paths relative to `skills-plugins/create-vision-companion/`; the adjustment is not authored yet). Governing rules — replace-planned-with-actual, reopen, date capture, post-authoring reconciliation — are in [plan §3.3](./prod_discovery_requirements_skillset_plan.md). **Date capture:** no external row here records a commit/retrieval date yet; capturing repository URL, inspected files, retrieval date, and verified license for every external row is an authoring-time task (plan §3.3; realizes VC-E13's source-ledger duty).
+
+| Row | Plan § | Planned destination (path/section) |
+| --- | --- | --- |
+| VC-E01 | §5.2 | New derived template + builder phase for `discovery-seeds.md`; README load-order; bundle-completeness check |
+| VC-E02 | §5.2 | Orchestrator contract (`SKILL.md`) + critic-brief templates; leakage tests |
+| VC-E03 | Defer → `discover-product` | — (seed-schema prohibition of `EXP#`/method/budget/criteria lands with VC-E01's template) |
+| VC-E04 | §2.2 (LNT-01–05, LNT-13), §5.2 | Phase 9 gate wiring to the shared `lint-workspace` script |
+| VC-E05 | §4.2, §5.2 | Backtracking/re-entry matrix reference file (ledger §5.6) |
+| VC-E06 | §6, §5.2 | Fixture/mutation-test suite (fresh build, upgrade, vision diff, failure recovery) |
+| VC-E07 | §5.2 | File-responsibility map; new rules in owning sub-files |
+| VC-E08 | §4.1, §5.2 | Finalize/handoff section (ledger §5.8 fields) |
+| VC-E09 | §5.2 | `_status.md`/review-file handling + Phase 11 human-gate instructions |
+| VC-E10 | §5.2 | Documented multi-critic review architecture with companion-specific rubrics |
+| VC-E11 | Reject | — no destination; no source content or dependency is incorporated, and the `V#` promise-coverage duty in `vision-index.md` remains proprietary |
+| VC-E12 | §5.2 | Schema inventory (proprietary artifacts/IDs only); taxonomy guardrail |
+| VC-E13 | §3.1 (routing exclusions), §3.2, §5.2 | Dependency inventory + pattern-source ledger (repo, license, retrieval date) |
+| VC-E14 | §5.2, §6 | Release-blocking authoring gate + the 17-scenario matrix (ledger §5.7) feeding the §6 regression run |
+| VC-M01, VC-M02 | §2.1, §5.2 | Coverage-check rubrics + seed/judgment routing in the derivation phases |
+| VC-M03 | §2.1, §5.2 | README load-order + final handoff naming downstream consumers |
+| VC-M04 | §2.1, §5.2 | Start-gate: finalized vision required; one-pager respected |
+| VC-M05 | §2.1, §5.2 | Seed-schema rules in the `discovery-seeds.md` template (no loop-ID promotion) |
+| VC-M06 | §2.1, §5.2 | `domain-glossary.md` rename across all sub-files (ledger §3.3) + hypothesis labelling |
+| VC-M07 | §2.1, §5.2 | Architecture-lens routing; no invented `QAS#` |
+| VC-M08 | §2.1, §5.2 | Method-vocabulary use in orchestration/seed types; naming lint |
+| VC-M09 | §2.1, §5.2 | Outcome/guardrail-gap coverage findings + seeds |
+| VC-M10 | §2.1, §5.2 | Per-file consumer/purpose statements in README/templates |
+| VC-M11 | §2, §2.1, §5.2 | `vision-index.md` strategy field-set derivation, source-order round-trip, and populated/stubbed/absent fixtures |
+| VC-M12 | §4, §5.2 | Derived-only/backtracking gates requiring external `DEC#` for rebuild; RTS-11/RTS-12 fixtures |

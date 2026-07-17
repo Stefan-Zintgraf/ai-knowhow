@@ -9,6 +9,7 @@ Terms used here are defined in the [glossary](./glossary.md).
 ## Inputs
 
 - [Product vision](./product_vision.md) and its strategy: direction, principles, scope boundaries, and the ordered outcomes the next investment should serve
+- [Lifecycle tailoring](./lifecycle_tailoring.md): whether the optional roadmap was adopted or skipped, and why
 - [Discovery](./product_discovery.md) evidence: opportunities, tested assumptions, experiment results
 - [Domain discovery](./domain_discovery.md) outputs where they exist: capability map, domain glossary
 - Constraints: dates, budgets, contracts, platform commitments
@@ -17,7 +18,7 @@ Terms used here are defined in the [glossary](./glossary.md).
 
 ### 1. Select opportunities
 
-Choose which validated opportunities the next investment addresses. Check the selection against the strategy's ordered outcomes: a selection that fights the strategy needs a strategy conversation (and a roadmap update where one exists), not silent reordering. Record which opportunities are deferred and why — an unrecorded deferral gets re-litigated in every planning conversation.
+Choose which validated opportunities the next investment addresses. Check the selection against the strategy's ordered outcomes: a selection that fights the strategy needs an explicit `DEC#` recording a strategy reorder or a deliberate exception (and a roadmap update where one exists), not silent reordering or divergence. Strategy reordering is a discovery pivot, never a silent vision edit. Record which opportunities are deferred and why — an unrecorded deferral gets re-litigated in every planning conversation.
 
 ### 2. Define capabilities
 
@@ -51,6 +52,10 @@ Select a thin, coherent, end-to-end slice and state the belief it tests. Define 
 ### 7. Record the decisions
 
 Log what was selected, deferred, and rejected, with the supporting evidence and its strength. These entries are what [validation and feedback](./validation_and_feedback.md) later reopens.
+
+## Optional rolling roadmap
+
+Maintain a roadmap only when `lifecycle-onepager.md` records its adoption. The view is outcome-based and rolling: **now** mirrors the committed release outcome, while **next** and **later** reflect the strategy's remaining ordered outcomes. Revise it as evidence arrives; feature-only and date-only entries are invalid. When tailoring records a skip, create no roadmap and let the vision strategy plus decision log carry the ordering and deferrals. This conditional view may live in the product's existing planning surface; this method introduces no mandatory roadmap file.
 
 ## Definition one-pager template
 
@@ -104,10 +109,12 @@ Stop: ...
 
 - Every in-scope capability traces to an opportunity and its evidence.
 - Deferred and rejected items are recorded with reasons.
+- Opportunity selection follows the strategy order or cites the `DEC#` that records a reorder or exception.
 - Priorities are justified by criteria, not by rank position alone.
 - The release is a coherent journey with a named hypothesis.
 - Success, guardrail, and stop criteria exist before work starts.
 - Product, engineering, and domain participants describe the scope identically.
+- If the lifecycle one-pager adopts a roadmap, its now/next/later entries are outcome-based and current; if it skips one, no downstream step requires it.
 
 ## Further material
 

@@ -20,7 +20,7 @@ The lifecycle also does not divide work by department. Product, design, engineer
 
 ## The lifecycle
 
-The vision is a slow-changing anchor; a thin product strategy recorded alongside it — ordered outcomes and target segments — names the path toward it and is revised as evidence arrives. Discovery, definition, and requirements form a fast loop that runs continuously or in short cycles. Delivery consumes coherent slices from that loop, and validation feeds evidence back into every earlier stage.
+The vision is a slow-changing anchor; a thin product strategy recorded alongside it — ordered outcomes and target segments — names the path toward it and is revised as evidence arrives. Strategy is an ordered field set in the foundation vision, not a separate stage or mandatory document. Discovery, definition, and requirements form a fast loop that runs continuously or in short cycles. Delivery consumes coherent slices from that loop, and validation feeds evidence back into every earlier stage.
 
 ```text
 Product vision  (slow-changing anchor)
@@ -49,7 +49,8 @@ Validation and feedback
 
 Three clarifications the diagram cannot show:
 
-- **Most pivots are discovery pivots.** Evidence normally changes opportunities, solutions, scope, or strategy — routine course corrections under a stable vision. A vision pivot, revising the intended future itself, is rare and requires evidence that invalidates the target need.
+- **Most pivots are discovery pivots.** Evidence normally changes opportunities, solutions, scope, or strategy — routine course corrections under a stable vision that must not silently edit the vision. A vision pivot, revising the intended future itself, is rare and requires an explicit `DEC#` citing evidence that invalidates the intended future or target need. Routine findings are routed to the lowest challenged downstream artifact first.
+- **The roadmap is optional.** Lifecycle tailoring records adoption or skip from coordination cost, sponsor-communication need, and product lifetime. When adopted, product definition maintains an outcome-based rolling now/next/later view; low-ceremony topics use the vision's strategy and decision log without a roadmap.
 
 - **Quality attributes start early.** Qualities that could change the architecture are among the riskiest assumptions, so their discovery begins during product discovery. The requirements stage sharpens them into measurable scenarios; it does not begin them.
 - **Not every topic enters at the top.** A greenfield product enters at the vision; a rework enters from validation evidence; a compliance mandate enters at requirements. See [Lifecycle tailoring](./lifecycle_tailoring.md) for entry points and how to size the lifecycle for a specific topic.

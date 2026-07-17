@@ -44,6 +44,7 @@ Scale ceremony with these drivers, not with organizational habit:
 - **Irreversibility** — how costly it is to change course after committing
 - **Regulation and contract** — externally imposed completeness and evidence obligations
 - **Coordination cost** — number of teams, organizations, and external parties involved
+- **Sponsor communication** — whether sponsors need a durable view beyond the next committed slice
 - **Product lifetime** — how long the decisions must hold
 - **Genuine uncertainty** — how much is actually unknown, versus merely undocumented
 
@@ -76,7 +77,7 @@ Then weight the stages by where the dominant uncertainty sits (the [practical te
 | Contractual or regulated completeness | [Requirements engineering](./requirements_engineering.md) |
 | Whether shipped work created value | [Validation and feedback](./validation_and_feedback.md) |
 
-The product roadmap is the canonical ceremony-gated artifact: adopt it only when coordination cost, sponsor communication, or product lifetime warrants it, keep it outcome-based and rolling (now/next/later, never features and dates), and let low-ceremony topics rely on the vision's strategy list and the decision log instead.
+The product roadmap is the canonical ceremony-gated artifact. Record an explicit **adopt** or **skip** decision in the lifecycle one-pager, based on coordination cost, sponsor communication, and product lifetime. When adopted, `define-release` maintains an outcome-based rolling now/next/later view (never features and dates); when skipped, low-ceremony topics rely on the vision's strategy list and the decision log instead, and no downstream stage may demand a roadmap.
 
 Record skipped stages with the reason. A deliberate skip is a decision; a silent skip is a blind spot.
 
@@ -124,12 +125,22 @@ Name an escalation path for disagreements, and record each decision in the decis
 ## Artifacts
 Mandatory: ...
 Optional: ...
+Roadmap: <adopt / skip — coordination-cost, sponsor-communication, or product-lifetime reason>
 
 ## Cadence
 <Model, cycle length, what one cycle must produce, review ritual>
 
-## Decision authority
-- <decision type> — <owner>
+## Consequential decisions and stages
+Repeat this block for every consequential decision type and stage in use:
+
+### <decision type or stage>
+- Accountable owner: <one named person; never a group or department>
+- Required contributors: <named people and the contribution/evidence required from each>
+- Specialist authorities: <named qualified authorities, or `None — <reason>`>
+- Formal approvers: <named required approvers, or `None — <reason>`>
+- Evidence required: <evidence and strength needed to decide or complete the stage>
+- Escalation path: <named person/path and triggering condition>
+- Evidence-based reopen trigger: <event or evidence that reopens this decision or stage>
 
 ## Success and stop criteria for the next investment
 - ...
@@ -152,6 +163,7 @@ Optional: ...
 
 - The entry point matches where the real uncertainty sits.
 - Skipped stages are recorded with reasons.
+- Roadmap adoption or skip is explicit and justified by coordination cost, sponsor communication, or product lifetime.
 - Ceremony matches risk, irreversibility, and regulation — per driver, not uniformly.
 - One cycle has a defined decision output.
 - Every consequential decision type has one named owner and an escalation path.

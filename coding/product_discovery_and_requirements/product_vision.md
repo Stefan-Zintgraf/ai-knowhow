@@ -53,6 +53,10 @@ State what the product intends to become, what it will not become, and which adj
 
 Define outcome measures, guardrail measures, and qualitative signals. Avoid treating shipped features or usage alone as proof of value. These measures are what [validation and feedback](./validation_and_feedback.md) checks after release — a vision whose outcomes cannot be observed cannot be validated.
 
+### 8. Strategy (ordered outcomes)
+
+Keep strategy thin: an ordered list of *outcome — target segment — why this order*. Each entry cites the `V#`/`S#` vision items it serves. The list is a field set inside the foundation vision rather than a new ID family, standalone strategy artifact, skill, or lifecycle stage; a legitimately unresolved list is an explicit `OPEN:` section.
+
 ## Lightweight vision template
 
 ```markdown
@@ -94,7 +98,7 @@ Define outcome measures, guardrail measures, and qualitative signals. Avoid trea
 
 ## Strategy and roadmap
 
-The strategy section of the vision one-pager answers "what beyond the next slice": an ordered list of the outcomes and target segments on the path to the vision. Reordering it when discovery or validation evidence demands is a routine discovery pivot, not a vision pivot.
+The strategy section of the vision one-pager answers "what beyond the next slice": an ordered list of the outcomes and target segments on the path to the vision. Reordering it when discovery or validation evidence demands is a routine discovery pivot, not a vision pivot; record the reorder as a `DEC#`, update the section through its accountable human owner, and refresh the derived companion index.
 
 Where coordination cost, sponsor communication, or product lifetime warrants the ceremony, expand the strategy into a **product roadmap**: an outcome-based, rolling now/next/later view, revised as evidence arrives. Never commit features and dates. Whether to adopt the roadmap artifact at all is a [lifecycle tailoring](./lifecycle_tailoring.md) decision; low-ceremony topics skip it and rely on the strategy list and the decision log's recorded deferrals.
 
@@ -115,7 +119,7 @@ Where coordination cost, sponsor communication, or product lifetime warrants the
 - Scope exclusions prevent obvious interpretations that would derail discovery.
 - Success signals describe changed outcomes, with guardrails against harmful optimization.
 
-The vision should be stable enough to orient work but revisable when its underlying evidence changes. Expect frequent discovery pivots — changed opportunities, solutions, scope, and strategy — under a stable vision; a vision pivot is rare and corresponds to evidence that invalidates the intended future or target need, not to a weak feature or a failed experiment.
+The vision should be stable enough to orient work but revisable when its underlying evidence changes. Expect frequent discovery pivots — changed opportunities, solutions, scope, and strategy — under a stable vision; they must not silently edit the vision. A vision pivot is rare and is permitted only through an explicit `DEC#` citing evidence that invalidates the intended future or target need, not a weak feature or failed experiment. The vision workflow cites that loop decision; it does not fabricate it.
 
 ## Further material
 
