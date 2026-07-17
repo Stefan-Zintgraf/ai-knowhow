@@ -14,6 +14,8 @@ Software-design and DDD terminology is defined in [`../software_design/glossary.
 
 **Actor** — A role interacting with the system (a person or an external system), not necessarily one named individual. Different goals mean different actors; do not collapse them into a generic "user."
 
+**Analysis plan** — The plan for a validation review, written and timestamped before any result is inspected: the review question and its decision owner, the precommitted criteria, metric definitions, population and time window, evidence sources, known limitations and confounders, and the decision rules. Written afterwards, it invites reading the result back into the criteria. See [validation and feedback](./validation_and_feedback.md).
+
 **Approver** — A formally required signatory in a contractual, regulatory, funding, or organizational governance process. Approval does not replace the accountable owner.
 
 **Assumption** — Something that must be true for a solution to succeed, classified by the four discovery risks (value, usability, feasibility, viability) and ranked by importance and lack of evidence.
@@ -46,6 +48,8 @@ Software-design and DDD terminology is defined in [`../software_design/glossary.
 
 **Evidence** — Observed behavior, data, or documented fact, deliberately distinguished from opinion, preference, and hypothetical enthusiasm. Evidence strength is recorded alongside decisions.
 
+**Evidence strength** — The graded quality of the evidence behind a decision: **Rich** (the real actor's behavior observed under real stakes), **Mixed** (a partial, proxy, or reported observation), or **Thin** (opinion, hypothetical, or a single unrepresentative account). Strength caps the confidence a decision may claim, and volume never substitutes for it — many Thin items remain Thin. Recorded on every evidence item and cited by the decisions resting on it.
+
 **Experiment card** — A one-page plan for a test: the decision it informs, the assumption, the method, the support/refute/inconclusive criteria, and the result.
 
 **Extension** — An alternative or failure path of a use case, numbered against the step of the main success scenario where it branches.
@@ -59,6 +63,8 @@ Software-design and DDD terminology is defined in [`../software_design/glossary.
 **Guardrail measure** — A measure of harm that must not occur while an outcome is being optimized (e.g., support load, churn, error rate). Every outcome measure should have guardrails.
 
 **Hotspot** — A marked disagreement, unknown, delay, or risk on a domain map, kept visible instead of resolved prematurely.
+
+**Instrumentation** — The means by which an outcome or guardrail will actually be observed once released, decided when the measure is defined rather than after shipping. An outcome nobody can observe cannot be judged, so instrumentation is specified as a requirement alongside the behavior it measures. See [validation and feedback](./validation_and_feedback.md).
 
 **Invariant** — A rule that must remain true at all times within a defined consistency boundary. Stricter than a business rule.
 
@@ -109,6 +115,8 @@ Software-design and DDD terminology is defined in [`../software_design/glossary.
 **Scenario** — One path through a use case.
 
 **Signal** — A qualitative or leading indication that an outcome is moving. Weaker than an outcome measure; useful earlier.
+
+**Solution direction** — A materially distinct way of addressing an opportunity — including process, policy, manual-service, and no-build options, not only software. Discovery generates several before committing to one; a single direction on the table means alternatives were never explored. Rejected and parked directions are kept with their reasons.
 
 **Specialist authority** — A contributor whose qualified judgment governs a particular concern, such as legal interpretation, security acceptance, or domain policy. An accountable owner can prioritize business risk but cannot overrule a specialist authority within its concern.
 
