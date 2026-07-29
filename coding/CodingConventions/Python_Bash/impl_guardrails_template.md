@@ -142,9 +142,11 @@ Every implementation completion report must include:
 ---
 
 ## Revision History
+
 <!-- Latest entries first. Add new rows directly below the header row. -->
+
 <!-- Same-day revisions: append .2, .3, ... to the date (e.g. 2026-02-20.2). -->
 
-| Date | Change |
-|------|--------|
+| Date       | Change                                                                                                                                                                                                                        |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 2026-02-20 | Generalized from SBOM-specific guardrails into a reusable project template. Added section numbers (G1-G6, G2.x, G4.x). Made Bash sections conditional. Replaced concrete filenames with placeholders. Marked optional topics. |
